@@ -590,8 +590,7 @@ void ProcessDialogEvent()
 		break;
 
 		case "trade_1":
-			ok = (rColony.from_sea == "") || (Pchar.location.from_sea == rColony.from_sea);
-			if (sti(Pchar.Ship.Type) != SHIP_NOTUSED && ok)
+			if (CheckShipMooredInColony(rColony))
 			{
 				NextDiag.CurrentNode = NextDiag.TempNode;
 				DialogExit();
@@ -772,8 +771,7 @@ void ProcessDialogEvent()
 			dialog.text = NPCharRepPhrase(npchar,
 					StringFromKey("Common_Store_313"),
 					StringFromKey("Common_Store_314"));
-			ok = (rColony.from_sea == "") || (Pchar.location.from_sea == rColony.from_sea);
-			if (sti(Pchar.Ship.Type) != SHIP_NOTUSED && ok)
+			if (CheckShipMooredInColony(rColony))
 			{
 				/*if (CheckAttribute(pchar, "CargoQuest.iQuantityGoods"))
 				{

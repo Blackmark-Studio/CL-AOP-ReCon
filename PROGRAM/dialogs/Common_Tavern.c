@@ -424,9 +424,7 @@ void ProcessDialogEvent()
 		break;
 
 		case "crew hire":
-			ok = (rColony.from_sea == "") || (Pchar.location.from_sea == rColony.from_sea);
-			ok = sti(Pchar.Ship.Type) != SHIP_NOTUSED && ok;
-
+			ok = CheckShipMooredInColony(rColony);
 			if (!ok)
 			{
 				Dialog.text = StringFromKey("Common_Tavern_120");
@@ -986,8 +984,7 @@ void ProcessDialogEvent()
 
 		//эскорт-пассажиры
 		case "work":
-			ok = (rColony.from_sea == "") || (Pchar.location.from_sea == rColony.from_sea);
-			if (sti(Pchar.Ship.Type) != SHIP_NOTUSED && ok)
+			if (CheckShipMooredInColony(rColony))
 			{
 				if (sti(NPChar.nation) != PIRATE && GetNationRelation2MainCharacter(sti(NPChar.nation)) == RELATION_ENEMY)
 				{

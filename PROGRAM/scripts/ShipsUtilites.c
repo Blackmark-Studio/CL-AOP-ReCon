@@ -1334,6 +1334,15 @@ bool CheckShipMoored()
 	return false;
 }
 
+// check that ship is moored in the specified colony
+bool CheckShipMooredInColony(ref colonyRef)
+{
+	if (!CheckShip(Pchar))
+		return false;
+
+	return (colonyRef.from_sea == "") || (Pchar.location.from_sea == colonyRef.from_sea);
+}
+
 bool CheckSelfRepairConditions()
 {
 	if (pchar.location != pchar.location.from_sea) return false;

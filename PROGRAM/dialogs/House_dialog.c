@@ -501,8 +501,8 @@ void ProcessDialogEvent()
 				// лесник . если забыл с собой корабль то никак.
 				i = FindColony(npchar.City);
 				if (i != -1) rColony = GetColonyByIndex(i);
-				ok = (rColony.from_sea == "") || (pchar.location.from_sea == rColony.from_sea);
-				if (sti(pchar.Ship.Type) != SHIP_NOTUSED && ok)
+
+				if (CheckShipMooredInColony(rColony))
 				{
 					dialog.text = StringFromKey("House_dialog_170");
 					link.l1 = StringFromKey("House_dialog_171");
@@ -603,8 +603,8 @@ void ProcessDialogEvent()
 				// лесник . если нет корабля то и товар не забрать
 				i = FindColony(npchar.City);
 				if (i != -1) rColony = GetColonyByIndex(i);
-				ok = (rColony.from_sea == "") || (pchar.location.from_sea == rColony.from_sea);
-				if (sti(pchar.Ship.Type) != SHIP_NOTUSED && ok)
+
+				if (CheckShipMooredInColony(rColony))
 				{
 					dialog.text = StringFromKey("House_dialog_193"); //krizis
 					link.l1 = StringFromKey("House_dialog_194");

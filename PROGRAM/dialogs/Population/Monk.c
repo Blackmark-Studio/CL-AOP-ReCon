@@ -51,8 +51,7 @@ void ProcessDialogEvent()
 					DeleteAttribute(npchar, "talker"); //снимаем говорилку
 					break;
 				}
-				bool ok = (rColony.from_sea == "") || (Pchar.location.from_sea == rColony.from_sea);
-				if (ok && sti(Pchar.Ship.Type) != SHIP_NOTUSED && CheckAttribute(npchar, "quest.passenger") && !CheckAttribute(pchar, "GenQuest.Monkpassenger") && sti(RealShips[sti(Pchar.Ship.Type)].Class) != 7 && 7 - sti(RealShips[sti(Pchar.Ship.Type)].Class) < 4)//монах-пассажир
+				if (CheckShipMooredInColony(rColony) && CheckAttribute(npchar, "quest.passenger") && !CheckAttribute(pchar, "GenQuest.Monkpassenger") && sti(RealShips[sti(Pchar.Ship.Type)].Class) != 7 && 7 - sti(RealShips[sti(Pchar.Ship.Type)].Class) < 4)//монах-пассажир
 				{
 					dialog.text = StringFromKey("Monk_4", pchar);
 					link.l1 = StringFromKey("Monk_5");

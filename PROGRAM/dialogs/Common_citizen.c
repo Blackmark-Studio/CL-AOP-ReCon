@@ -122,8 +122,7 @@ void ProcessDialogEvent()
 			{
 				NPChar.quest.meeting = "1";
 
-				bool ok = (rColony.from_sea == "") || (Pchar.location.from_sea == rColony.from_sea); // проверка наличия корабля в порту
-				if (ok && sti(Pchar.Ship.Type) != SHIP_NOTUSED && CheckAttribute(npchar, "quest.passenger") && !CheckAttribute(pchar, "GenQuest.Townpassenger") && sti(RealShips[sti(Pchar.Ship.Type)].Class) != 7)//горожанин-пассажир
+				if (CheckShipMooredInColony(rColony) && CheckAttribute(npchar, "quest.passenger") && !CheckAttribute(pchar, "GenQuest.Townpassenger") && sti(RealShips[sti(Pchar.Ship.Type)].Class) != 7) //горожанин-пассажир
 				{
 					dialog.text = StringFromKey("Common_citizen_25", GetAddress_Form(NPChar));
 					link.l1 = StringFromKey("Common_citizen_26", GetAddress_FormToNPC(NPChar));

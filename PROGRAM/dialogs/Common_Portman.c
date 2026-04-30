@@ -728,8 +728,7 @@ void ProcessDialogEvent()
 			{
 				rColony = GetColonyByIndex(iTest);
 			}
-			ok = (rColony.from_sea == "") || (Pchar.location.from_sea == rColony.from_sea);
-			if (sti(Pchar.Ship.Type) != SHIP_NOTUSED && ok)
+			if (CheckShipMooredInColony(rColony))
 			{
 				if (sti(NPChar.nation) != PIRATE && GetNationRelation2MainCharacter(sti(NPChar.nation)) == RELATION_ENEMY)
 				{
