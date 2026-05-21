@@ -43,3 +43,12 @@ No way, darling, just a bit of forgetfulness...
 Beliz_Waitress_12 {
 No, no questions at all...
 }
+Beliz_Waitress_13 {
+Do you happen to know where Carla is right now?
+}
+Beliz_Waitress_14 {
+Uh... No. You better ask around the townspeople. I am sure they will definitely be able to tell you something.
+}
+Beliz_Waitress_15 {
+Alright, gorgeous, I will be on my way.
+}

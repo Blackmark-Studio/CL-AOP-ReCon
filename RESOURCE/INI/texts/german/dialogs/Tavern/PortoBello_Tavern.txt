@@ -44,7 +44,7 @@ PortoBello_Tavern_14 {
 Hören Sie, haben Sie einen Freibeuter namens François Gontier gesehen? Er war vor Kurzem in Ihrer Stadt.
 }
 PortoBello_Tavern_15 {
-Hör zu, Rolando, weißt du, wo ich Albert Sievert finden kann—den Kapitän der Brigg "Strela"?
+Hör zu, Rolando, weißt du, wo ich Albert Sievert finden kann—den Kapitän der Brigantine "Arrow"?
 }
 PortoBello_Tavern_16 {
 Nein, ich weiß es nicht. Er war nicht in der Taverne, und ich habe ihn auch nicht in der Stadt gesehen.

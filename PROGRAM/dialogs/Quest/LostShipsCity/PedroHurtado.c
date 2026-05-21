@@ -625,7 +625,7 @@ void ProcessDialogEvent()
 			DialogExit();
 			NextDiag.CurrentNode = "drink_wait";
 			pchar.questTemp.LSC.Drink = "begin";
-			pchar.questTemp.LSC.Drink.Chance = rand(100); // итог бухалова
+			//pchar.questTemp.LSC.Drink.Chance = rand(100); // итог бухалова
 
 			SetFunctionTimerCondition("LSC_DrinkOver", 0, 0, 3, false); // 3 дня
 			AddQuestRecord("LSC_Drink", "1");

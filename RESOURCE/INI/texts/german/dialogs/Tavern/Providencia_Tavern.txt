@@ -28,3 +28,27 @@ Ja, wirklich, zum dritten Mal...
 Providencia_Tavern_8 {
 Ja, also...
 }
+Providencia_Tavern_9 {
+Hast du Hugo Sageschreck hier gesehen?
+}
+Providencia_Tavern_10 {
+Er war hier. Einige englische Kopfgeldjäger kamen wegen ihm, aber er ist rechtzeitig durch die Hintertür entwischt.
+}
+Providencia_Tavern_11 {
+Wohin ist er gegangen?
+}
+Providencia_Tavern_12 {
+Mmm... Für 1.000 Pesos zeige ich dir den Weg.
+}
+Providencia_Tavern_13 {
+Hier, nimm dein Geld. Also, wohin ist er gegangen?
+}
+Providencia_Tavern_14 {
+Ich habe im Moment nicht so viel Geld.
+}
+Providencia_Tavern_15 {
+Er hat Kurs auf La Vega genommen, such ihn dort.
+}
+Providencia_Tavern_16 {
+Danke, bis zum nächsten Mal.
+}

@@ -657,12 +657,13 @@ string GetPriorGun()
 	string sPistol = GetCharacterEquipByGroup(xi_refCharacter, GUN_ITEM_TYPE);
 	string sMusket = GetCharacterEquipByGroup(xi_refCharacter, MUSKET_ITEM_TYPE);
 	bool bMusPrior = MusketPriority(xi_refCharacter);
+	bool bIsMusket = StrEndsWith(sPrevNode, "_MUSKET");
 
 	if (sPistol != "")
 	{
-		if (sMusket == "" || and(!bMusPrior, !StrEndsWith(sPrevNode, "_MUSKET")) || and(StrEndsWith(sPrevNode, "_GUN"), !StrEndsWith(sPrevNode, "_MUSKET")))
+		if (sMusket == "" || and(!bMusPrior, !bIsMusket) || and(StrEndsWith(sPrevNode, "_GUN"), !bIsMusket))
 			return sPistol;
-		else if (sMusket != "" && or(bMusPrior, StrEndsWith(sPrevNode, "_MUSKET")))
+		else if (sMusket != "" && or(bMusPrior, bIsMusket))
 			return sMusket;
 	}
 	else if (sMusket != "")

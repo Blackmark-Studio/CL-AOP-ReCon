@@ -129,13 +129,13 @@ Ascold_33_f {
 Ah, qual é! Eu só estava brincando! Isso nunca nem passou pela minha cabeça...
 }
 Ascold_34 {
-O trabalho está feito—hora de comemorar...
+Negócio fechado! Agora vamos molhar essa conquista!
 }
 Ascold_35_m {
-Não, não vou lavar nada. Por que você não me diz logo—o que você quer com esse traste? Já quebrei a cabeça tentando entender e até agora nada. Totalmente inútil e nojento.
+Molhar? Não vou lavar nada. Por que você não me diz logo—o que você quer com esse traste? Já quebrei a cabeça tentando entender e até agora nada. Totalmente inútil e nojento.
 }
 Ascold_35_f {
-Não, não estou lavando nada. Mas me diga, por que você quer esse traste? Já quebrei a cabeça com isso e ainda não entendi. É uma coisa totalmente inútil e nojenta.
+Molhar? Não, não estou lavando nada. Mas me diga, por que você quer esse traste? Já quebrei a cabeça com isso e ainda não entendi. É uma coisa totalmente inútil e nojenta.
 }
 Ascold_36 {
 Bem, isso depende do ponto de vista. Este pó, assim como outros itens dos cultos nativos, são encomendados de mim por um renomado estudioso europeu, Pierre de la Fontaine. Estou aqui como seu agente de confiança. No geral, estou bastante satisfeito. De la Fontaine paga minha casa e minhas despesas. E para cada pequeno artefato que consigo encontrar para ele aqui, ele me paga um bônus generoso.

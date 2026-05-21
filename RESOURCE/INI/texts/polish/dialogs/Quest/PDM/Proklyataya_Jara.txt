@@ -23,7 +23,7 @@ Proklyataya_Jara_7 {
 Tak, to naprawdę obrzydliwe... Może mogę jakoś pomóc?
 }
 Proklyataya_Jara_8 {
-Och, dziękuję wam, @<GetAddress_Form>! Jedyne, o czym teraz marzę, to choćby mały łyk wina. Oczywiście nie powinienem pić na służbie, ale jednak... Czy nie zgodzilibyście się przynieść mi butelkę wina? Mógłbym wam nawet za to zapłacić.
+Och, dziękuję wam, @<GetAddress_Form>! Jedyne, o czym teraz marzę, to choćby mały łyk wina. Oczywiście nie powinienem pić na służbie, ale jednak... Czy nie zechciałby pan przynieść mi butelki wina z naszej miejscowej tawerny? U karczmarza Jerome'a jest ono po prostu wyśmienite... Mógłbym wam nawet za to zapłacić.
 }
 Proklyataya_Jara_9 {
 Wiem, jak trudny bywa czasem obowiązek... Przyniosę ci butelkę wina.
@@ -59,10 +59,10 @@ Proklyataya_Jara_18 {
 Nie martw się o pieniądze – z przyjemnością to dla ciebie zrobiłem.
 }
 Proklyataya_Jara_19_m {
-500 piastrów. Prosiłem o wino niezbyt drogie, ale wygląda na to, że w waszej tawernie rządzi były pirat, ten @<GetFullName>.
+1000 piastrów. Prosiłem o wino niezbyt drogie, ale wygląda na to, że w waszej tawernie rządzi były pirat, ten @<GetFullName>.
 }
 Proklyataya_Jara_19_f {
-500 piastrów. Prosiłam o wino niezbyt drogie, ale wygląda na to, że w waszej tawernie rządzi były pirat, ten @<GetFullName>.
+1000 piastrów. Prosiłam o wino niezbyt drogie, ale wygląda na to, że w waszej tawernie rządzi były pirat, ten @<GetFullName>.
 }
 Proklyataya_Jara_20 {
 Jest pan bardzo dobrym człowiekiem. Będzie mi miło służyć panu, jeśli będzie pan czegoś potrzebował.
@@ -71,7 +71,7 @@ Proklyataya_Jara_21 {
 Dzięki, przyjacielu. Do zobaczenia.
 }
 Proklyataya_Jara_22 {
-500 piastrów? Ojej, to przecież połowa mojej pensji... I co ja teraz zrobię?
+1000 piastrów? Ojej, to przecież połowa mojej pensji... I co ja teraz zrobię?
 }
 Proklyataya_Jara_23 {
 Powinieneś był pomyśleć o tym wcześniej. Teraz musisz zapłacić.
@@ -101,7 +101,7 @@ Proklyataya_Jara_30_f {
 Co?! Chcecie, żebym i wam kupiła wina?
 }
 Proklyataya_Jara_31 {
-Cóż, szczerze mówiąc, nie jestem wielkim miłośnikiem wina. Ale odrobina rumu by mi nie zaszkodziła.
+Cóż, szczerze mówiąc, nie jestem wielkim miłośnikiem wina. Ale kropla rumu z tawerny Jerome'a by mi nie zaszkodziła.
 }
 Proklyataya_Jara_32_m {
 Cóż, nie można cię nazwać nieśmiałym chłopakiem... No dobrze. Szczerze mówiąc, sam jestem zaskoczony własną pobłażliwością, ale kupię ci rum. Poczekaj tu na mnie.

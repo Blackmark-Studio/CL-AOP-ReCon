@@ -10,10 +10,10 @@ void ProcessDialogEvent()
 	makearef(Link, Dialog.Links);
 	makearef(NextDiag, NPChar.Dialog);
 
-	int Plata1 = 14000 * MOD_SKILL_ENEMY_RATE * 0.21;
-	int Plata2 = 14000 * MOD_SKILL_ENEMY_RATE * 0.31;
+	int Plata1 = 34000 * MOD_SKILL_ENEMY_RATE * 0.21;
+	int Plata2 = 34000 * MOD_SKILL_ENEMY_RATE * 0.31;
 
-	pchar.PDM_NK_Plata2.Money = 14000 * MOD_SKILL_ENEMY_RATE * 0.31;
+	pchar.PDM_NK_Plata2.Money = 35000 * MOD_SKILL_ENEMY_RATE * 0.31;
 
 	int Sila = 25 + MOD_SKILL_ENEMY_RATE * 2.8;
 	int DopHP = 40 + MOD_SKILL_ENEMY_RATE * 10;
@@ -27,7 +27,7 @@ void ProcessDialogEvent()
 			DialogExit();
 		break;
 
-		case "First time":                            //Автор Sinistra
+		case "First time": //Автор Sinistra
 			PlayVoice("Voice\" + VoiceGetLanguage() + "\PDM\Chto_vi_hoteli.wav");
 			dialog.text = StringFromKey("Neputyovy_kaznachey_1");
 			link.l1 = StringFromKey("Neputyovy_kaznachey_2", pchar.name);
@@ -75,7 +75,7 @@ void ProcessDialogEvent()
 			link.l1.go = "exit";
 			NextDiag.TempNode = "Fickler_7";
 
-			sld = GetCharacter(NPC_GenerateCharacter("PDM_NK_Viktor", "officer_11", "man", "man", sti(pchar.rank) - 3 + MOD_SKILL_ENEMY_RATE, PIRATE, -1, true));
+			sld = GetCharacter(NPC_GenerateCharacter("PDM_NK_Viktor", "officer_20", "man", "man", sti(pchar.rank) - 1 + MOD_SKILL_ENEMY_RATE, PIRATE, -1, true));
 			sld.name = FindPersonalName("PDM_NK_Viktor_name");
 			sld.lastname = FindPersonalName("PDM_NK_Viktor_lastname");
 			FreeSitLocator("Villemstad_tavern", "sit12");
@@ -137,18 +137,18 @@ void ProcessDialogEvent()
 
 		case "Viktor_5":
 			dialog.text = StringFromKey("Neputyovy_kaznachey_29", FindMoneyString(Plata1));
-			link.l1 = StringFromKey("Neputyovy_kaznachey_30");
-			link.l1.go = "Viktor_Bitva";
 			if (sti(pchar.Money) >= Plata2)
 			{
-				link.l2 = StringFromKey("Neputyovy_kaznachey_31", FindMoneyString(Plata1));
-				link.l2.go = "Zaplati_ED";
+				link.l1 = StringFromKey("Neputyovy_kaznachey_31", FindMoneyString(Plata1));
+				link.l1.go = "Zaplati_ED";
 			}
 			else
 			{
-				link.l2 = StringFromKey("Neputyovy_kaznachey_32", FindMoneyString(Plata1));
-				link.l2.go = "Zaplati_ED";
+				link.l1 = StringFromKey("Neputyovy_kaznachey_32", FindMoneyString(Plata1));
+				link.l1.go = "Zaplati_ED";
 			}
+			link.l2 = StringFromKey("Neputyovy_kaznachey_30");
+			link.l2.go = "Viktor_Bitva";
 			link.l3 = StringFromKey("Neputyovy_kaznachey_33");
 			link.l3.go = "Konec";
 			NextDiag.TempNode = "Viktor_VernulsyDengi";
@@ -156,18 +156,23 @@ void ProcessDialogEvent()
 
 		case "Zaplati_ED":
 			dialog.text = StringFromKey("Neputyovy_kaznachey_34", Plata1, Plata2);
-			link.l1 = StringFromKey("Neputyovy_kaznachey_35");
-			link.l1.go = "Viktor_Bitva";
 			if (sti(pchar.Money) >= Plata2)
 			{
-				link.l2 = StringFromKey("Neputyovy_kaznachey_36");
-				link.l2.go = "Zaplati_2";
+				link.l1 = StringFromKey("Neputyovy_kaznachey_36");
+				link.l1.go = "Zaplati_2";
 			}
 			else
 			{
-				link.l2 = StringFromKey("Neputyovy_kaznachey_37", FindMoneyString(Plata2));
-				link.l2.go = "exit";
+				link.l1 = StringFromKey("Neputyovy_kaznachey_37", FindMoneyString(Plata2));
+				link.l1.go = "exit";
 			}
+			if (GetCharacterSkill(pchar, "Commerce") >= 35 || GetCharacterSPECIAL(pchar, "Charisma") >= 5 && sti(pchar.Money) >= Plata1)
+			{
+				link.l2 = StringFromKey("Neputyovy_kaznachey_57");
+				link.l2.go = "Zaplati_1";
+			}
+			link.l3 = StringFromKey("Neputyovy_kaznachey_35");
+			link.l3.go = "Viktor_Bitva";
 			NextDiag.TempNode = "Viktor_VernulsyDengi";
 			AddQuestRecord("PDM_Neputyovy_kaznachey", "2");
 			AddQuestUserData("PDM_Neputyovy_kaznachey", "sMoney", FindMoneyString(sti(pchar.PDM_NK_Plata2.Money)));
@@ -198,11 +203,30 @@ void ProcessDialogEvent()
 			NextDiag.TempNode = "Zaplati_ND";
 		break;
 
+		case "Zaplati_1":
+			AddMoneyToCharacter(pchar, -sti(Plata1));
+			AddCharacterExpToSkill(pchar, "Leadership", 120);
+			AddCharacterExpToSkill(pchar, "Commerce", 250);
+			AddCharacterExpToSkill(pchar, "Sneak", 150);
+			sld = CharacterFromID("PDM_NK_Viktor");
+			sld.dialog.filename = "Quest\PDM\Neputyovy_kaznachey.c";
+			sld.dialog.currentnode = "Viktor_Poka";
+			sld.lifeday = 0;
+			RemoveLandQuestMark_Main(sld, "PDM_Neputyovy_kaznachey");
+			sld = CharacterFromID("Andreas_Fickler");
+			sld.dialog.filename = "Quest\PDM\Neputyovy_kaznachey.c";
+			sld.dialog.currentnode = "Fickler_11";
+			AddLandQuestMark_Main(sld, "PDM_Neputyovy_kaznachey");
+			AddQuestRecord("PDM_Neputyovy_kaznachey", "3");
+			AddQuestUserData("PDM_Neputyovy_kaznachey", "sSex", GetSexPhrase("", "а"));
+			DialogExit();
+		break;
+
 		case "Zaplati_2":
 			AddMoneyToCharacter(pchar, -sti(Plata2));
-			AddCharacterExpToSkill(pchar, "Leadership", 150);
-			AddCharacterExpToSkill(pchar, "Commerce", 220);
-			AddCharacterExpToSkill(pchar, "Sneak", 150);
+			AddCharacterExpToSkill(pchar, "Leadership", 160);
+			AddCharacterExpToSkill(pchar, "Commerce", 150);
+			AddCharacterExpToSkill(pchar, "Fortune", 50);
 			sld = CharacterFromID("PDM_NK_Viktor");
 			sld.dialog.filename = "Quest\PDM\Neputyovy_kaznachey.c";
 			sld.dialog.currentnode = "Viktor_Poka";
@@ -255,12 +279,12 @@ void ProcessDialogEvent()
 			link.l1.go = "fight_right_now";
 			sld = CharacterFromID("PDM_NK_Viktor");
 			sld.SaveItemsForDead = true;
-			AddMoneyToCharacter(sld, 15000);
+			AddMoneyToCharacter(sld, 2500);
 			GiveItem2Character(sld, "Litsenzia");
 			GiveItem2Character(sld, "mineral9");
-			AddItems(sld, "jewelry1", rand(7) + 2);
-			AddItems(sld, "jewelry3", rand(7) + 2);
-			AddItems(sld, "jewelry6", 1);
+			AddItems(sld, "lamp", 1);
+			AddItems(sld, "indian17", 1);
+			AddItems(sld, "spyglass2", 1);
 
 			PChar.quest.PDM_NK_Viktor.win_condition.l1 = "NPC_Death";
 			PChar.quest.PDM_NK_Viktor.win_condition.l1.character = "PDM_NK_Viktor";
@@ -305,19 +329,24 @@ void ProcessDialogEvent()
 			sld.Dialog.Filename = "Officer_Man.c";
 			AddDialogExitQuestFunction("LandEnc_OfficerHired");
 			Pchar.questTemp.HiringOfficerIDX = GetCharacterIndex(sld.id);
-			ChangeCharacterReputation(sld, 80);
-			sld.rank = 10;
-			SetSPECIAL(sld, 4, 6, 4, 10, 10, 7, 6);
-			SetSelfSkill(sld, 5, 5, 5, 5, 5);
-			SetShipSkill(sld, 30, 60, 5, 5, 5, 5, 5, 5, 30);
+			ChangeCharacterReputation(sld, 40);
+			sld.rank = 8;
+			SetSPECIAL(sld, 1, 2, 2, 6, 10, 2, 1);   //(Сила, Воспр, Выносл, Обаяние, Обуч, Реак, Удача)
+			SetSelfSkill(sld, 5, 5, 5, 5, 1);        //(ЛО, СО, ТО, пистолеты, фортуна)
+			SetShipSkill(sld, 5, 45, 1, 1, 1, 1, 1, 1, 1);    //(лидер, торг, точн, пушки, навиг, ремонт, аборд, защита, скрыт)
 			sld.loyality = MAX_LOYALITY;
 			sld.CompanionDisable = true;
-			sld.AllowedPosts = "treasurer,doctor";
+			sld.AllowedPosts = "treasurer";
 			SetCharacterPerk(sld, "BasicCommerce");
+			SetCharacterPerk(sld, "ArtOfDeals");
+			SetCharacterPerk(sld, "QuickCalculation");
 			SetCharacterPerk(sld, "AdvancedCommerce");
+			//черты
+			SetCharacterPerk(sld, "Monomania");
+			SetCharacterPerk(sld, "Stuttering");
+			SetCharacterPerk(sld, "NoCaptain");
 			sld.greeting = "GR_Andreas_Fickler";
 			LAi_SetImmortal(sld, false);
-			sld.HalfImmortal = true;
 		break;
 
 		case "Fickler_NeNujen":
@@ -335,10 +364,10 @@ void ProcessDialogEvent()
 			sld = CharacterFromID("Andreas_Fickler");
 			SetCharacterRemovable(sld, true);
 			sld.Payment = true;
-			//sld.quest.OfficerPrice = sti(pchar.rank)*50; TODO_salary
 			sld.OfficerWantToGo.DontGo = true;
-			LAi_SetActorType(sld);
-			LAi_ActorRunToLocation(sld, "reload", "reload1", "", "", "", "", -1);
+			//sld.quest.OfficerPrice = sti(pchar.rank)*50; TODO_salary
+			//LAi_SetActorType(sld);
+			//LAi_ActorRunToLocation(sld, "reload", "reload2_back", "", "", "", "", -1);
 			NextDiag.CurrentNode = NextDiag.TempNode;
 			AddQuestRecord("PDM_Neputyovy_kaznachey", "5");
 			AddQuestUserData("PDM_Neputyovy_kaznachey", "sSex", GetSexPhrase("ся", "ась"));

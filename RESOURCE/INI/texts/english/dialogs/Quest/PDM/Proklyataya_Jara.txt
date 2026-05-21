@@ -23,7 +23,7 @@ Proklyataya_Jara_7 {
 Yes, that's just revolting... Maybe I can help you somehow?
 }
 Proklyataya_Jara_8 {
-Oh, thank you, @<GetAddress_Form>! Right now, all I can dream of is just a small sip of wine. Of course, I’m not supposed to drink while on duty, but still... Would you be willing to bring me a bottle of wine? I could even pay you for it.
+Oh, thank you, @<GetAddress_Form>! Right now, all I can dream of is just a small sip of wine. Of course, I’m not supposed to drink while on duty, but still... Would you mind bringing me a bottle of wine from our local tavern? Jerome the innkeeper's wine is simply sublime... I could even pay you for it.
 }
 Proklyataya_Jara_9 {
 I know how heavy duty can weigh on you sometimes... I'll bring you a bottle of wine.
@@ -59,10 +59,10 @@ Proklyataya_Jara_18 {
 Don’t worry about the money — I was glad to do this for you.
 }
 Proklyataya_Jara_19_m {
-500 piastres. I asked for a wine that wasn’t too expensive, but it seems your tavern is run by a former pirate, that @<GetFullName>.
+1000 piastres. I asked for a wine that wasn’t too expensive, but it seems your tavern is run by a former pirate, that @<GetFullName>.
 }
 Proklyataya_Jara_19_f {
-500 piastres. I asked for a wine that wasn’t too expensive, but it seems your tavern is run by a former pirate, that @<GetFullName>.
+1000 piastres. I asked for a wine that wasn’t too expensive, but it seems your tavern is run by a former pirate, that @<GetFullName>.
 }
 Proklyataya_Jara_20 {
 You’re a very kind person. I’ll be glad to serve you if you ever need anything.
@@ -71,7 +71,7 @@ Proklyataya_Jara_21 {
 Thanks, mate. See you around.
 }
 Proklyataya_Jara_22 {
-500 piastres? Oh, but that's half my wages... What am I supposed to do now?
+1000 piastres? Oh, but that's half my wages... What am I supposed to do now?
 }
 Proklyataya_Jara_23 {
 You should’ve thought of that sooner. Now it’s time to pay.
@@ -101,7 +101,7 @@ Proklyataya_Jara_30_f {
 What?! You want me to buy wine for you too?
 }
 Proklyataya_Jara_31 {
-Well, to tell the truth, I’m not much of a wine lover. But I wouldn’t mind a drop of rum.
+Well, to tell the truth, I’m not much of a wine lover. But a drop of rum from Jerome's tavern wouldn't hurt me.
 }
 Proklyataya_Jara_32_m {
 Well, you can’t exactly be called a shy lad... All right then. Honestly, I’m a bit baffled by my own soft heart, but I’ll buy you some rum. Wait for me here.

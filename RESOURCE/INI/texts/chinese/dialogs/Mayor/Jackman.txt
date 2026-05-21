@@ -185,7 +185,7 @@ Jackman_45 {
 原来如此……这可不是什么好消息……到底怎么回事？
 }
 Jackman_46_m {
-我是在Morgan的宅邸里杀了他的……你看，这事儿挺尴尬的。是Morgan让我处理John Avery，结果他竟然是Morgan的心腹。
+我是在Morgan的宅邸里杀了他的……你看，这事儿挺不光彩的。是他让我处理John Avery，结果John其实是Morgan的心腹。
 }
 Jackman_46_f {
 我是在Morgan的宅邸里杀了他的……你看，这事儿挺不光彩的。是他让我处理John Avery，结果John其实是Morgan的心腹。

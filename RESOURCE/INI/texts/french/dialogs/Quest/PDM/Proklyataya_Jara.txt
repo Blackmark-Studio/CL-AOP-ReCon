@@ -23,7 +23,7 @@ Proklyataya_Jara_7 {
 Oui, c’est vraiment répugnant… Peut-être que je peux vous aider d’une façon ou d’une autre?
 }
 Proklyataya_Jara_8 {
-Oh, merci, @<GetAddress_Form>! En ce moment, tout ce dont je rêve, c’est d’une petite gorgée de vin. Bien sûr, je ne devrais pas boire en service, mais quand même... Pourriez-vous m’apporter une bouteille de vin? Je pourrais même vous la payer.
+Oh, merci, @<GetAddress_Form>! En ce moment, tout ce dont je rêve, c’est d’une petite gorgée de vin. Bien sûr, je ne devrais pas boire en service, mais quand même... Voudriez-vous m'apporter une bouteille de vin de notre taverne locale ? Celui de l'aubergiste Jérôme est tout simplement divin... Je pourrais même vous la payer.
 }
 Proklyataya_Jara_9 {
 Je sais que les responsabilités peuvent parfois peser lourd... Je t’apporterai une bouteille de vin.
@@ -59,10 +59,10 @@ Proklyataya_Jara_18 {
 Ne t’en fais pas pour l’argent — j’étais content de faire ça pour toi.
 }
 Proklyataya_Jara_19_m {
-500 piastres. J’ai demandé un vin pas trop cher, mais on dirait que votre taverne est tenue par un ancien pirate, ce @<GetFullName>.
+1000 piastres. J’ai demandé un vin pas trop cher, mais on dirait que votre taverne est tenue par un ancien pirate, ce @<GetFullName>.
 }
 Proklyataya_Jara_19_f {
-500 piastres. J’avais demandé un vin pas trop cher, mais il semble que votre taverne soit tenue par un ancien pirate, ce @<GetFullName>.
+1000 piastres. J’avais demandé un vin pas trop cher, mais il semble que votre taverne soit tenue par un ancien pirate, ce @<GetFullName>.
 }
 Proklyataya_Jara_20 {
 Vous êtes quelqu’un de très aimable. Je serai ravi de vous aider si jamais vous avez besoin de quoi que ce soit.
@@ -71,7 +71,7 @@ Proklyataya_Jara_21 {
 Merci, l’ami. À bientôt.
 }
 Proklyataya_Jara_22 {
-500 piastres? Mais c’est la moitié de mon salaire… Qu’est-ce que je vais faire maintenant?
+1000 piastres? Mais c’est la moitié de mon salaire… Qu’est-ce que je vais faire maintenant?
 }
 Proklyataya_Jara_23 {
 Tu aurais dû y penser plus tôt. Maintenant, il faut payer.
@@ -101,7 +101,7 @@ Proklyataya_Jara_30_f {
 Quoi?! Tu veux aussi que j’achète du vin pour toi?
 }
 Proklyataya_Jara_31 {
-Eh bien, pour être honnête, je ne suis pas vraiment amateur de vin. Mais un peu de rhum ne me dérangerait pas.
+Eh bien, pour être honnête, je ne suis pas vraiment amateur de vin. Mais une goutte de rhum de la taverne de Jérôme ne me ferait pas de mal.
 }
 Proklyataya_Jara_32_m {
 Eh bien, on ne peut pas dire que tu sois un garçon timide... Très bien. Franchement, je m’étonne moi-même d’avoir le cœur aussi tendre, mais je vais t’acheter du rhum. Attends-moi ici.

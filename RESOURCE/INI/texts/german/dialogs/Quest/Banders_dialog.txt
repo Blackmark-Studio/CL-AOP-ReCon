@@ -56,7 +56,7 @@ Banders_dialog_13 {
 Du bist ja ganz schön frech. Und dein Freund hat behauptet, seine Kumpel wären großzügig.
 }
 Banders_dialog_14 {
-Also, hör zu. Ich habe verlässliche Informationen, dass in den nächsten @<FindDaysString> zwei @<pchar> Handelsschiffe – '@<pchar>' und '@<pchar>' – vor der Küste von @<pchar> unterwegs sein werden, ihre Laderäume voll mit . Du könntest versuchen, sie abzufangen.
+Also, hör zu. Ich habe verlässliche Informationen, dass in den nächsten @<FindDaysString> zwei @<pchar> Handelsschiffe – '@<pchar>' und '@<pchar>' – vor der Küste von @<pchar> unterwegs sein werden, ihre Laderäume voll mit @<pchar>. Du könntest versuchen, sie abzufangen.
 }
 Banders_dialog_15_m {
 Ausgezeichnet! Es scheint, als hätte es sich gelohnt, meinen Anteil mit dir zu teilen.
@@ -65,7 +65,7 @@ Banders_dialog_15_f {
 Ausgezeichnet! Es scheint, als hätte es sich gelohnt, meinen Anteil mit dir zu teilen.
 }
 Banders_dialog_16 {
-Also, hör zu. Ich habe verlässliche Informationen, dass in den nächsten @<FindDaysString> zwei @<pchar>-Handelsschiffe – '@<pchar>' und '@<pchar>' – vor der Küste von @<pchar> unterwegs sein werden, ihre Laderäume randvoll. Du könntest versuchen, sie abzufangen.
+Also, hör zu. Ich habe verlässliche Informationen, dass in den nächsten @<FindDaysString> zwei @<pchar> Handelsschiffe – '@<pchar>' und '@<pchar>' – vor der Küste von @<pchar> unterwegs sein werden, ihre Laderäume voll mit @<pchar>. Du könntest versuchen, sie abzufangen.
 }
 Banders_dialog_17_m {
 Ausgezeichnet! Es scheint, als hätte es sich doch gelohnt, meinen Anteil mit dir zu teilen.

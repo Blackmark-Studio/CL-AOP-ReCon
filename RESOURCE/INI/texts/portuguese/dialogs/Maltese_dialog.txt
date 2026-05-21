@@ -7,9 +7,7 @@ Sim, claro, oficial.
 Maltese_dialog_3 {
 Tenho um assunto para discutir com você, oficial. Acho que vai achar interessante. Um dos seus soldados, Jory, tentou comprar vinho na cidade usando-me como intermediário. Sabendo dos seus regulamentos...
 }
-Maltese_dialog_4 {
-O quê?! Eu proibi estritamente o consumo de bebida em um local estratégico! Muito bem, ele vai pagar por isso. Pela sua vigilância, vou te recompensar com 5.000 piastras, e Jory vai passar três dias no cárcere.
-}
+Maltese_dialog_4 {O quê?! Eu proibi terminantemente o consumo de álcool em um posto estratégico! Pois bem, ele pagará por isso. Por sua vigilância cívica, eu o recompenso com o soldo mensal de Jori, e ele passará três dias na prisão militar. Isso servirá de lição para os outros! E como prova de minha gratidão pessoal — aceite minha antiga espada de soldado da nossa ordem, vinda do meu arsenal particular. É improvável que você consiga outra igual em qualquer outro lugar, Capitão.}
 Maltese_dialog_5 {
 Obrigado, @<GetFullName>. É nosso dever conjunto pôr fim a essas violações.
 }

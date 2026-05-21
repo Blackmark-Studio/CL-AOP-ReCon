@@ -23,7 +23,7 @@ Proklyataya_Jara_7 {
 Sí, eso es realmente repugnante... ¿Quizás pueda ayudarte de alguna manera?
 }
 Proklyataya_Jara_8 {
-Oh, gracias, @<GetAddress_Form>. Ahora mismo, lo único que deseo es un pequeño sorbo de vino. Claro, no debería beber estando de servicio, pero aun así... ¿Podrías traerme una botella de vino? Incluso podría pagarte por ella.
+Oh, gracias, @<GetAddress_Form>. Ahora mismo, lo único que deseo es un pequeño sorbo de vino. Claro, no debería beber estando de servicio, pero aun así... ¿Estaríais dispuesto a traerme una botella de vino de nuestra taberna local? El del tabernero Jerome es sencillamente espectacular... Incluso podría pagarte por ella.
 }
 Proklyataya_Jara_9 {
 Sé que a veces el deber puede ser una carga... Te traeré una botella de vino.
@@ -59,10 +59,10 @@ Proklyataya_Jara_18 {
 No te preocupes por el dinero, me alegró hacerlo por ti.
 }
 Proklyataya_Jara_19_m {
-500 piastras. Pedí un vino que no fuera demasiado caro, pero parece que tu taberna la dirige un ex pirata, ese @<GetFullName>.
+1000 piastras. Pedí un vino que no fuera demasiado caro, pero parece que tu taberna la dirige un ex pirata, ese @<GetFullName>.
 }
 Proklyataya_Jara_19_f {
-500 piastras. Pedí un vino que no fuera demasiado caro, pero parece que tu taberna la dirige un ex pirata, ese @<GetFullName>.
+1000 piastras. Pedí un vino que no fuera demasiado caro, pero parece que tu taberna la dirige un ex pirata, ese @<GetFullName>.
 }
 Proklyataya_Jara_20 {
 Eres una persona muy amable. Estaré encantado de ayudarte si alguna vez necesitas algo.
@@ -101,7 +101,7 @@ Proklyataya_Jara_30_f {
 ¿Qué? ¿También quieres que te compre vino?
 }
 Proklyataya_Jara_31 {
-Bueno, la verdad es que no soy muy aficionado al vino. Pero no me molestaría un poco de ron.
+Bueno, la verdad es que no soy muy aficionado al vino. Pero una gota de ron de la taberna de Jerôme no me vendría mal.
 }
 Proklyataya_Jara_32_m {
 Bueno, no se puede decir que seas un muchacho tímido... Está bien. La verdad, me sorprende lo blando que soy, pero te invitaré un poco de ron. Espérame aquí.

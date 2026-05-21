@@ -151,7 +151,7 @@ InfoMessages_149 {Otrzymano lunetę}
 InfoMessages_150 {Otrzymałeś 25 szmaragdów}
 InfoMessages_151 {Otrzymałeś skrzynię złota}
 InfoMessages_152 {@<sAttr> zbliża się do ciebie.}
-InfoMessages_153 {Otrzymałeś dwie butelki, z których jedna jest teraz TWOJA.}
+InfoMessages_153 {Otrzymałeś przepis na 'Sangaree'.}
 InfoMessages_154 {Przekazano @<iSmallPearl> małych pereł.}
 InfoMessages_155 {Przekazano @<iBigPearl> duże perły.}
 InfoMessages_156 {Otrzymano @<iSmallPearl> małych pereł.}

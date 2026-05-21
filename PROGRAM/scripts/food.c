@@ -163,7 +163,7 @@ void DailyEatCrewUpdate()
 
     DeleteAttribute(mainCh, "GenQuest.Hunter2Pause");  // boal бойня в форте кончилась - ОЗГи вернулись
 	
-	if (GetOfficersPerkUsing(pchar, "Capellan1")) AddCrewMorale(mainCh, 2); //Jason, влияние корабельного капеллана на мораль
+	if (GetOfficersPerkUsing(pchar, "Capellan1", false)) AddCrewMorale(mainCh, 2); //Jason, влияние корабельного капеллана на мораль
 
 	////////////////      ЕДА     /////////////////
 	if (bNoEatNoRats) return; // betatest
@@ -260,6 +260,7 @@ void DailyEatCrewUpdateForShip(ref rChar, bool IsCompanionTraveler) // IsCompani
 					cn = 1;
 				
 				RemoveCharacterGoodsSelf(rChar, GOOD_MEDICAMENT, cn);
+				iGoodMeds -= cn;
 			}
 		}
 		if (iGoodMeds < 16)

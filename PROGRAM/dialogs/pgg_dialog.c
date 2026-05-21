@@ -776,7 +776,7 @@ void ProcessDialogEvent()
 								StringFromKey("pgg_dialog_290"),
 								StringFromKey("pgg_dialog_291"))),
 						StringFromKey("pgg_dialog_295", RandPhraseSimple(
-								StringFromKey("pgg_dialog_293"),
+								StringFromKey("pgg_dialog_293", npchar),
 								StringFromKey("pgg_dialog_294"))));
 			link.l1 = RandSwear();
 			link.l1.go = "exit_2";
@@ -794,6 +794,7 @@ void ProcessDialogEvent()
 			PChar.GenQuest.PGG_Quest.Stage = 0;
 			PChar.GenQuest.PGG_Quest.PGGid = NPChar.id;
 
+			Group_DeleteGroup("PGGQuest");
 			Group_AddCharacter("PGGQuest", NPChar.id);
 			Group_SetGroupCommander("PGGQuest", NPChar.id);
 			Group_SetAddress("PGGQuest", Islands[GetCharacterCurrentIsland(PChar)].id, "Quest_Ships", "Quest_Ship_1");
@@ -1267,7 +1268,7 @@ void ProcessDialogEvent()
 				PChar.GenQuest.PGG_Quest.Goods.Part = MakeInt(sti(PChar.GenQuest.PGG_Quest.Goods.Taken) / i);
 				if (CheckAttribute(NPChar, "PGGAi.ActiveQuest"))
 				{
-					Dialog.Text = StringFromKey("pgg_dialog_430", Dialog.Text) + PCharRepPhrase(
+					Dialog.Text = StringFromKey("pgg_dialog_430", Dialog.Text) + " " + PCharRepPhrase(
 								StringFromKey("pgg_dialog_428"),
 								StringFromKey("pgg_dialog_429"));
 				}
@@ -1342,10 +1343,12 @@ void ProcessDialogEvent()
 		case "Exit_Quest_1_Failed":
 			if (sti(PChar.GenQuest.PGG_Quest.Stage) != -1)
 			{
+				sld = CharacterFromID(PChar.GenQuest.PGG_Quest.PGGid);
 				AddMoneyToCharacter(PChar, -(sti(PChar.GenQuest.PGG_Quest.FailedPaySum)));
 				AddQuestRecord("Gen_PGGQuest1", "q1_FailPay");
 				AddQuestUserData("Gen_PGGQuest1", "sSex", GetSexPhrase("", "а"));
 				AddQuestUserData("Gen_PGGQuest1", "sSex1", GetSexPhrase("ен", "на"));
+				AddQuestUserData("Gen_PGGQuest1", "sPsName", GetFullName(sld));
 			}
 			CloseQuestHeader("Gen_PGGQuest1");
 			RemoveCharacterCompanion(pchar, NPChar);
@@ -1402,6 +1405,7 @@ void ProcessDialogEvent()
 			PChar.GenQuest.PGG_Quest.GrpID = "PGGTmp";
 			chrDisableReloadToLocation = true;
 
+			Group_DeleteGroup("PGGQuest");
 			Group_AddCharacter("PGGQuest", NPChar.id);
 			Group_SetGroupCommander("PGGQuest", NPChar.id);
 			Group_SetAddress("PGGQuest", PChar.GenQuest.PGG_Quest.GrpLocation, "Quest_Ships", PChar.GenQuest.PGG_Quest.GrpLoc);

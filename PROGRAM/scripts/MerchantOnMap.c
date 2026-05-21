@@ -359,7 +359,7 @@ void CaptureMerchant(string temp)
     {
         qind = 6;
         Log_TestInfo("TRADER_TRAP!!!");
-        string stext1 = StringFromKey("Common_rumours_150", NationNameSK(sti(MerPrm.ination)));
+        string stext1 = StringFromKey("Common_rumours_150", GetFullName(pchar), NationNameSK(sti(MerPrm.ination)));
         string stext2 = StringFromKey("Common_rumours_151", GetFullName(pchar), NationNameSK(sti(MerPrm.ination)));
         AddSimpleRumour(stext1, sti(MerPrm.ination)+10, 30, 3);
         AddSimpleRumour(stext2, sti(MerPrm.ination), 30, 3);

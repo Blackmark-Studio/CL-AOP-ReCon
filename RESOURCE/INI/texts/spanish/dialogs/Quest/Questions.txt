@@ -494,7 +494,7 @@ Questions_140 {
 No, no lo creo...
 }
 Questions_141 {
-Esta es una estatua que otorga una habilidad extraordinaria para mejorar las reparaciones del barco. Está escondida en una bahía cerca de Portobelo. La bahía se llama Chiriquí Lagoon. Busca bien por la zona y no temas mojarte los pies. ¡Buena suerte, capitán!
+Este es un cofre de herramientas de carpintería que antaño permitía reparar bajeles con mucha mayor eficacia. Fue enterrado en una caleta cerca de Portobelo: la Laguna Chiriqui. Registrad bien la zona y no temáis mojaros las botas. Quién sabe, tal vez parte de este equipo aún sea útil... ¡Buena suerte, capitán!
 }
 Questions_142 {
 Sabes, esto en realidad es muy útil para un capitán. Gracias.

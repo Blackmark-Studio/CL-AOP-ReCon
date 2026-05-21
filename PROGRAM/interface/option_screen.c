@@ -1312,6 +1312,7 @@ void GetControlsStatesData()
 void SetAlwaysRun(bool bRun)
 {
 	InterfaceStates.alwaysrun = bRun;
+	pchar.alwaysrun = bRun;
 }
 
 void procKeyChange()

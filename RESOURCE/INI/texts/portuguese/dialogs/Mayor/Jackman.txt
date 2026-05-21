@@ -185,10 +185,10 @@ Jackman_45 {
 Então é assim... Não são as melhores notícias... Como isso aconteceu?
 }
 Jackman_46_m {
-Matei ele na residência de Morgan... Veja, é uma história bastante desagradável. A mando de Morgan, eliminei John Avery, mas descobri que ele era um dos homens de confiança de Morgan.
+Matei ele na residência de Morgan... Veja, é uma história bastante desagradável. A mando de Goodly, eliminei John Avery, mas descobri que ele era um dos homens de confiança de Morgan.
 }
 Jackman_46_f {
-Matei ele na residência de Morgan... Veja, é uma história bastante desagradável. Por ordem dele, cuidei de John Avery, mas descobri que ele era um dos homens de confiança de Morgan.
+Matei ele na residência de Morgan... Veja, é uma história bastante desagradável. A mando de Goodly, eliminei John Avery, mas descobri que ele era um dos homens de confiança de Morgan.
 }
 Jackman_47 {
 O Avery também morreu, foi?

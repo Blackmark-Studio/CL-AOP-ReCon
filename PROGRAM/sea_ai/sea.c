@@ -28,6 +28,7 @@
 #include "battle_interface\BattleInterface.c"
 
 #event_handler("Sea_FirstInit", "Sea_FirstInit");
+#event_handler("Sea_FirstInit0", "Sea_FirstInit0");
 #event_handler("SeaLoad_GetPointer", "SeaLoad_GetPointer");
 
 #define PLAYER_GROUP	"OurGroup"
@@ -565,7 +566,7 @@ void SeaLogin(ref Login)
 	bTornado = sti(WeatherParams.Tornado);
 	if (bStorm)
 	{
-		iStormLockSeconds = 60;
+		iStormLockSeconds = 60 + rand(120);
 	}
 
 	// Island
@@ -1209,7 +1210,7 @@ void SeaLogin(ref Login)
 		deleteAttribute(pchar, "sneak");
 	}*/
 	
-	PostEvent("Sea_FirstInit", 1);
+	PostEvent("Sea_FirstInit0", 1);
 }
 
 void Sea_LoginGroup(string sGroupID)
@@ -1385,6 +1386,12 @@ void Sea_LoginGroup(string sGroupID)
 	bSeaQuestGroupHere = true;
 
 	Sea_AddGroup2TaskList(sGroupID);
+}
+
+// AlexBlade - for prevents execution Sea_FirstInit on same frame
+void Sea_FirstInit0()
+{
+    PostEvent("Sea_FirstInit", 1);
 }
 
 void Sea_FirstInit()
@@ -1633,7 +1640,7 @@ void Sea_Load()
 		
 	PostEvent(SHIP_CHECK_RELOAD_ENABLE, 1);	
 	SetSchemeForSea();
-	PostEvent("Sea_FirstInit", 1);
+	PostEvent("Sea_FirstInit0", 1);
 
 	DeleteAttribute(&oSeaSave, "");
 	bSeaLoad = false;

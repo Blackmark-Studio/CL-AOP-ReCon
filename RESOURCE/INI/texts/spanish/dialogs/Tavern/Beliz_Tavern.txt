@@ -79,3 +79,66 @@ Je, @<GetAddress_Form>, esos no son confesores. ¡Esos padres santos son monjes 
 Beliz_Tavern_22 {
 Ah, ya veo cómo es. Bueno, gracias, amigo.
 }
+Beliz_Tavern_23 {
+Busco a una chica... llamada Carla la Alegre, según creo. ¿Dónde puedo encontrarla?
+}
+Beliz_Tavern_24 {
+Busco a una chica... llamada Carla la Alegre, según creo. ¿Dónde puedo encontrarla?
+}
+Beliz_Tavern_25 {
+No conozco a ninguna Carla. Y aquí no ofrecemos otros servicios que no sean comida o bebida. ¿Deseáis tomar algo?
+}
+Beliz_Tavern_26 {
+No, gracias. Me marcho.
+}
+Beliz_Tavern_27 {
+¡Ya os he dicho que aquí no hay ninguna Carla!
+}
+Beliz_Tavern_28 {
+¡Está acusada de brujería! ¿Sabes lo que eso significa? ¡Que es una bruja! Si la encubres, arderás en la misma hoguera que ella. ¿Está claro? La gente la ha visto entrar en tu taberna en repetidas ocasiones. ¿Y bien? ¿Vas a seguir negándolo, o...?
+}
+Beliz_Tavern_29 {
+¡Oh, tened piedad de mí, @<GetAddress_Form>! No quería quebrantar la ley — es solo que... apenas llego a fin de mes... No tuve otra opción que permitir que las rameras trajeran aquí a sus clientes. ¡Además, en este rincón olvidado ni siquiera hay un burdel decente!
+}
+Beliz_Tavern_30 {
+Bueno, supongo que un par de miles de pesos podrían mitigar tu culpa. Pero necesito saber dónde está.
+}
+Beliz_Tavern_31 {
+Tus miserables quejas no me interesan. Solo quiero saber dónde está.
+}
+Beliz_Tavern_32 {
+¡Oh, @<GetAddress_Form> — vais a arruinarme a mí y a mi negocio! ¡Tengo que pagarle al recaudador de impuestos el próximo mes! ¡Dos mil, eso es simplemente imposible! ¡Me habéis amenazado con morir en la hoguera, y ahora queréis que muera de hambre!
+}
+Beliz_Tavern_33 {
+No eres más que un miserable pecador... En fin, dime dónde está Carla y te dejaré en paz. Que el Señor te perdone.
+}
+Beliz_Tavern_34 {
+Has encubierto a enemigos públicos en tu taberna, así que tendrás que pagar, de una forma u otra.
+}
+Beliz_Tavern_35 {
+¡Oh, habéis destruido mi vida! Está bien, llevados el oro, ¡pero maldito seáis para siempre!
+}
+Beliz_Tavern_36 {
+¡Piensa en tu destino, miserable pecador! Si no me dices dónde está Carla, tus gritos desde las mazmorras del gobernador perturbarán a los habitantes de Belice durante mucho tiempo.
+}
+Beliz_Tavern_37_m {
+¡Sí, sí, estuvo aquí! Pero zarpó hace poco con un capitán. Cuando me dijo que se marchaba, casi me eché a llorar. Una chica tan buena encontró por fin su destino. Su capitán era un hombre de verdad, justo como vos; igual de fuerte y valiente...
+}
+Beliz_Tavern_37_f {
+¡Sí, sí, estuvo aquí! Pero zarpó hace poco con un capitán. Cuando me dijo que se marchaba, casi me eché a llorar. Una chica tan buena encontró por fin su destino. Su capitán era un hombre fuerte y valiente, justo como vos...
+}
+Beliz_Tavern_38 {
+¿Cómo se llamaba?
+}
+Beliz_Tavern_39 {
+Miguel Cuenda, por lo que recuerdo. Zarpó y se llevó a Carla con él. Y... perdonadme, @<GetAddress_Form> — os ruego que no le digáis que fui yo quien la delató. No quiero que maldiga mi nombre para siempre...
+}
+Beliz_Tavern_40 {
+No se lo diré. Pero debes decirme hacia dónde se dirigieron.
+}
+Beliz_Tavern_41 {
+Recuerdo que mencionó algo sobre una colonia; española, por supuesto... Creo que se trataba de Santo Domingo.
+}
+Beliz_Tavern_42 {
+Te creo. Pero recuerda: debes cuidar bien de tu sucia pero, por desgracia, inmortal alma. ¡Que os vaya bien!
+}

@@ -91,23 +91,6 @@ void InitInterface_RS(string iniName, ref itemsRef, string faceID)
 
 		iSetCharIDToCharactersArroy(itemsRef); // Не нужно это, но и не помешает
 		bBoxUsed = false;
-
-		// boal -->
-		if (!CheckAttribute(itemsRef, "HoldEquip") && CheckAttribute(itemsRef, "rank"))
-		{
-			if (sti(itemsRef.rank) < sti(refCharacter.rank)) // только, если ранг больше
-			{
-                // ~!mu MUSKET_ITEM_TYPE
-				RemoveCharacterEquip(itemsRef, GUN_ITEM_TYPE);
-				if (!IsEquipCharacterByItem(itemsRef, "unarmed"))
-				{
-					RemoveCharacterEquip(itemsRef, BLADE_ITEM_TYPE);
-				}
-
-				RemoveCharacterEquip(itemsRef, CIRASS_ITEM_TYPE); //броня 081004 boal
-			}
-		}
-		// boal <--
 	}
 
 	// evganat - энциклопедия
@@ -484,7 +467,7 @@ void ProcessCancelExit()
 void IDoExit(int exitCode)
 {
 	ref arCurChar;
-	string sCurArroyID;
+	string sCurArroyID, sGun;
 	// boal проверка на перегруз 21.01.2004 -->
 	CheckAndSetOverloadMode(GetMainCharacter());
 	// boal 21.01.2004 <--
@@ -512,7 +495,6 @@ void IDoExit(int exitCode)
 
 				if (CheckAttribute(arCurChar, "skill.Pistol") && GetCharacterSkill(arCurChar, "Pistol") > 0.1)
 				{
-					string sGun;
 					if (CheckAttribute(arCurChar, "MushForever"))
 					{
 						sGun = FindCharacterItemByGroup(arCurChar, MUSKET_ITEM_TYPE);
@@ -522,11 +504,6 @@ void IDoExit(int exitCode)
 					{
 						sGun = FindCharacterItemByGroup(arCurChar, GUN_ITEM_TYPE);
 						EquipCharacterByItem(arCurChar, sGun);
-						if (and(!CheckAttribute(arCurChar, "HoldEquip") || arCurChar.HoldEquip == false, sti(arCurChar.rank) < sti(refCharacter.rank)))
-						{
-							LAi_SetCharacterUseBullet(arCurChar, GUN_ITEM_TYPE, LAi_GetCharacterBulletType(arCurChar, GUN_ITEM_TYPE));
-							LAi_GunSetUnload(arCurChar, GUN_ITEM_TYPE);
-						}
 					}
 				}
 
@@ -587,7 +564,7 @@ void IDoExit(int exitCode)
 	LAi_SetPlayerType(PChar); // Возвращаем тип игрока
 
 	// evganat - пасха
-	if (!CheckAttribute(pchar, "quest.easter.checkskeleton"))
+	if (!CheckAttribute(pchar, "questTemp.easter.checkskeleton"))
 		EasterCheckSkeleton();
 
 	if (CheckAttribute(&TEV, "LootCollector.Run"))
@@ -835,7 +812,7 @@ void FillCharactersScroll()
 {
 	int i, _curCharIdx;
 	string attributeName;
-	bool bOk, bOfficer;
+	bool bOfficer, bOk = false;
 	bool bCabin = Pchar.SystemInfo.CabinType == pchar.location;
 	string sCharID = "";
 	int nListSize = 1;

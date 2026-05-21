@@ -260,7 +260,7 @@ int LocationInitQuestLocations(int n)
 	locations[n].id = "EstateOffice";
 	locations[n].id.label = "Cabinet";
 	locations[n].filespath.models = "locations\EstateRooms\EstateOffice";
-	locations[n].image = "loading\EstateRoomN.tga";
+	locations[n].image = "loading\EstateOut.tga";
 	//Sound
 	locations[n].type = "residence";
 	//Models

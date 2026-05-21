@@ -44,7 +44,7 @@ PortoBello_Tavern_14 {
 Escucha, ¿has visto a un corsario llamado François Gontier? Estuvo en tu ciudad hace poco.
 }
 PortoBello_Tavern_15 {
-Escucha, Rolando, ¿sabes dónde puedo encontrar a Albert Sievert, el capitán del bergantín "Strela"?
+Escucha, Rolando, ¿sabes dónde puedo encontrar a Albert Sievert, el capitán del bergantín "Arrow"?
 }
 PortoBello_Tavern_16 {
 No, no lo sé. No ha estado en la taberna, y tampoco lo he visto en el pueblo.

@@ -147,7 +147,7 @@ void ProcessDialogEvent()
 		break;
 
 		case "Tichingitu_hire":
-			ChangeIndianRelation(2.0);
+			ChangeIndianRelation(3.0);
 			NextDiag.CurrentNode = "Hired";
 			DeleteAttribute(pchar, "questTemp.Tichingitu");
 

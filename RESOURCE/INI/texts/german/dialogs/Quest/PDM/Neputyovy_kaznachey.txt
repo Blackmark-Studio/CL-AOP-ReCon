@@ -44,7 +44,7 @@ Neputyovy_kaznachey_15 {
 Ich weiß es nicht. Mir wird schon etwas einfallen. Warte hier auf mich.
 }
 Neputyovy_kaznachey_16 {
-Kapitän Vitor! Oh, Sie sind es... Sie haben mir einen ganz schönen Schrecken eingejagt. H-h-haben Sie V-v-ictor gesehen?
+Kapitän Victor! Oh, Sie sind es... Sie haben mir einen ganz schönen Schrecken eingejagt. H-h-haben Sie V-v-ictor gesehen?
 }
 Neputyovy_kaznachey_17 {
 Noch nicht. Aber keine Sorge – ich kümmere mich um ihn.
@@ -62,10 +62,10 @@ Neputyovy_kaznachey_21 {
 Du! Hey, du! Hast du hier irgendwo einen schmächtigen, dämlichen Kassenwart namens Andreas gesehen? Wegen ihm bin ich pleite! Schmarotzer! Ich bring ihn um! Er hat mich ruiniert!
 }
 Neputyovy_kaznachey_22 {
-Na, na, na. Du bist also Vitor Bretier.
+Na, na, na. Du bist also Victor Bretier.
 }
 Neputyovy_kaznachey_23 {
-Ja, ich bin Vitor. Und dieser räudige Köter hat mit diesen verdammten Pulverfässern mein halbes Schiff in Brand gesetzt! Ich werde ihm die Haut abziehen!
+Ja, ich bin Victor. Und dieser räudige Köter hat mit diesen verdammten Pulverfässern mein halbes Schiff in Brand gesetzt! Ich werde ihm die Haut abziehen!
 }
 Neputyovy_kaznachey_24 {
 Beruhige dich, Freund. Andreas steht unter meinem Schutz.
@@ -107,16 +107,16 @@ Neputyovy_kaznachey_34 {
 Habe ich @<Plata1> gesagt? Nein, das war ein Fehler! Mindestens @<Plata2>!
 }
 Neputyovy_kaznachey_35 {
-Du hast ganz schön viel Mut, Vitor! Ich würde dich eher in Stücke schneiden, als Andreas etwas antun zu lassen.
+Du hast ganz schön viel Mut, Victor! Ich würde dich eher in Stücke schneiden, als Andreas etwas antun zu lassen.
 }
 Neputyovy_kaznachey_36 {
-Hier, nimm dein Geld. Amüsier dich, Vitor.
+Hier, nimm dein Geld. Amüsier dich, Victor.
 }
 Neputyovy_kaznachey_37 {
 Ich bringe dir @<FindMoneyString>. Aber denk daran – eine Salve meines Schiffs macht aus deiner Nussschale ein Sieb, also rühr Andreas nicht an!
 }
 Neputyovy_kaznachey_38 {
-Du hast ganz schön viel Mut, Vitor! Ich würde dich eher in Stücke schneiden, als dich Andreas auch nur anfassen lassen.
+Du hast ganz schön viel Mut, Victor! Ich würde dich eher in Stücke schneiden, als dich Andreas auch nur anfassen lassen.
 }
 Neputyovy_kaznachey_39 {
 In Ordnung, sobald ich das Geld habe, komme ich vorbei.
@@ -143,7 +143,7 @@ Neputyovy_kaznachey_45 {
 @<FindMoneyString>. Hier, bitte.
 }
 Neputyovy_kaznachey_46 {
-Ich habe im Moment nicht so viel Geld, Vitor, aber ich komme später zurück und bezahle für Andreas.
+Ich habe im Moment nicht so viel Geld, Victor, aber ich komme später zurück und bezahle für Andreas.
 }
 Neputyovy_kaznachey_47 {
 Ich habe es satt, wegen deiner dämlichen Fracht durch das ganze Archipel zu rennen. Du hättest deinen Hintern längst selbst dorthin bewegen und dir hundertmal das Geld verdienen können, du alter Sturkopf!
@@ -155,7 +155,7 @@ Neputyovy_kaznachey_49 {
 Weniger reden, mehr handeln!
 }
 Neputyovy_kaznachey_50 {
-K-k-kapitän @<pchar>! Oh, Sie sind es, @<GetAddress_Form>! Sie haben mich e-erschreckt. Haben Sie schon mit V-Vitor gesprochen?
+K-k-kapitän @<pchar>! Oh, Sie sind es, @<GetAddress_Form>! Sie haben mich e-erschreckt. Haben Sie schon mit V-Victor gesprochen?
 }
 Neputyovy_kaznachey_51 {
 Ja. Er wird dir keine Probleme mehr machen. Du kannst beruhigt zu deiner „Sea Gull“ zurückkehren.
@@ -174,4 +174,7 @@ Danke, K-Kapitän! Sie w-werden das nicht bereuen!
 }
 Neputyovy_kaznachey_56 {
 Willkommen an Bord, Andreas.
+}
+Neputyovy_kaznachey_57 {
+Nein. Du hast deinen Preis bereits genannt. Denk daran – jedes zusätzliche Wort erhöht das Risiko des Untergangs deines Schiffes. Schöne Zeit noch, Viktor.
 }

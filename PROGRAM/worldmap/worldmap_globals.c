@@ -110,7 +110,7 @@ void Map_CreateBattle(string characterID, int iEnemyNation, int TimeOut)
 void Map_ReleaseQuestEncounter(string characterID)
 {
 	//Просматриваем список создаваемых
-	aref encs, at;
+	aref encs, at, enc;
 	string aname;
 	makearef(encs, worldMap.addQuestEncounters);
 	int num = GetAttributesNum(encs);
@@ -138,17 +138,16 @@ void Map_ReleaseQuestEncounter(string characterID)
 	//Просматриваем список созданных
 	makearef(encs, worldMap.encounters);
 	num = GetAttributesNum(encs);
-	for(i = 0; i < num; i++)
+	for(i = num-1; i >= 0; i--)
 	{
-		aref enc = GetAttributeN(encs, i);
-		if(CheckAttribute(enc, "quest.chrID") == 0) continue;
+		enc = GetAttributeN(encs, i);
+		if(!CheckAttribute(enc, "quest.chrID")) continue;
 		if(enc.quest.chrID == characterID)
-		{
+        {
 			wdmDeleteLoginEncounter(GetAttributeName(enc));
-		}
-        num--; //fix
-        i--;
+        }
 	}
+
 	worldMap.deleteUpdate = "";
 }
 

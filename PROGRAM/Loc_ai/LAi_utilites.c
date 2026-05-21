@@ -355,7 +355,7 @@ void CreateCitizens(aref loc)
 	}
 	// грузчики <--
 	//--> возможная генерация квестодателя на розыск капитанов
-	if (CheckAttribute(loc, "questSeekCap") && GetCharacterIndex("QuestCitiz_" + loc.fastreload) == -1)
+	if (GetCharacterIndex(colonies[iColony].id + "_Priest") && CheckAttribute(loc, "questSeekCap") && GetCharacterIndex("QuestCitiz_" + loc.fastreload) == -1)
 	{
 		string sModel, sSex, sAnimation, sGr;	
 		if (rand(1))
@@ -551,7 +551,7 @@ void CreateCitizens(aref loc)
 					{
 						chr.dialog.filename = "Population\Nobleman.c";
 						chr.greeting = "noble_male";
-						if (rand(11) > 9 && GetCharacterIndex("QuestCitiz_" + loc.fastreload) == -1)
+						if (GetCharacterIndex(chr.city + "_Priest") >= 0 && rand(11) > 9 && GetCharacterIndex("QuestCitiz_" + loc.fastreload) == -1)
 						{	//поисковый генератор
 							chr.id = "QuestCitiz_" + loc.fastreload;
 							chr.dialog.filename = "Quest\ForAll_dialog.c";
@@ -570,12 +570,12 @@ void CreateCitizens(aref loc)
 							chr.quest.donation = "true"; //клянчит деньги
 							AddLandQuestMark_Gen_WithCondition(chr, "Nobledonation", "Gen_Nobelman_Donation_QuestMarkCondition");
 						}
-						if (rand(11) == 5 && GetCharacterIndex(chr.city + "_usurer") >= 0)
+						if (GetCharacterIndex(chr.city + "_usurer") >= 0 && rand(11) == 5)
 						{
 							chr.quest.lombard = "true"; //семейная реликвия
 							AddLandQuestMark_Gen_WithCondition(chr, "Noblelombard", "Gen_Nobelman_Lombard_Begin_QuestMarkCondition");
 						}
-						if (rand(11) == 7)
+						if (GetCharacterIndex(chr.city + "_Priest") >= 0 && rand(11) == 7)
 						{
 							chr.quest.slaves = "true"; //привезти рабов
 							AddLandQuestMark_Gen_WithCondition(chr, "Nobleslaves", "Gen_Nobelman_Slaves_Begin_QuestMarkCondition");
@@ -627,7 +627,10 @@ void CreateCitizens(aref loc)
 				}
 			}
 
-			bool generateAffairOfHonor = loc.type == "town" && CheckForAffairOfHonor(loc, iColony);
+			bool generateAffairOfHonor = loc.type == "town" && CanGenerateAffairOfHonor(loc, iColony);
+			bool _isChurchLoginTime = IsLoginTime();
+			// Для правильной усадки в церкви нужно генерить персов только в отведенное время
+			if (loc.type == "church" && !_isChurchLoginTime) return;
 
 			for (i = 0; i < iCitizQty; i++) // Горожане
 			{
@@ -692,7 +695,6 @@ void CreateCitizens(aref loc)
 						}
 
 						generateAffairOfHonor = false; // Чтобы по двести раз не генерило квестодателей
-						TEV.HasAffairOfHonor = "1";
 						Log_TestInfo("Сгенерилось дело чести");
 					}
 				}
@@ -774,8 +776,7 @@ void CreateHabitues(aref loc)
 			int i, n, k;
 			bool pirate_town = iNation == PIRATE && !sti(Colonies[iColony].HeroOwn);
 
-			//Coffee
-			bool generateAffairOfHonor = CheckForAffairOfHonor(loc, iColony) && !CheckAttribute(PChar, "QuestTemp.AffairOfHonor.CoatHonor");
+			bool generateAffairOfHonor = CanGenerateAffairOfHonor(loc, iColony) && !CheckAttribute(PChar, "QuestTemp.AffairOfHonor.CoatHonor");
 			slai_group = GetNationNameByType(iNation)  + "_citizens";
 			
 			arrayNPCModelHow = 0;
@@ -834,7 +835,6 @@ void CreateHabitues(aref loc)
 						CreateModel(iChar, "milit_off", MAN);
 						Characters_RefreshModel(chr); // Jason: рефрешить модель обязательно
 						generateAffairOfHonor = false; // Чтобы по двести раз не генерило квестодателей
-						TEV.HasAffairOfHonor = "1";
 						Log_TestInfo("Сгенерилось дело чести");
 						// квест-метки
 						RemoveLandQuestMarksToFantom(chr);
@@ -1458,6 +1458,7 @@ void CreatePearlVillage(aref loc)
 			if (model[iMassive] != "")
 			{
 				chr = GetCharacter(NPC_GenerateCharacter("WorkMan"+iPrefix+"_"+i, model[iMassive], "man", "man", 7, iPearNation, 30, false));
+				chr.indian = "1";
 				SetLandQuestMarksToFantom(chr, "Pearl_WorkMan"); // фантом будет с квест-метками
 				chr.dialog.Filename = "Pearl_dialog.c";
 				chr.dialog.currentnode = "PearlMan";
@@ -2416,7 +2417,7 @@ void CreateSecretFort()
 	LAi_group_MoveCharacter(sld, slai_group);
 	ChangeCharacterAddressGroup(sld, "Secret_Fort_Ammo", "soldiers", "soldier" + (1 + rand(2)));
 
-	// > бродяга в таверне за стойкой
+	// > бродяга в таверне за стойкой TODO > функционал
 	iRank = sti(pchar.rank) + 5 + MOD_SKILL_ENEMY_RATE * 2;
 	sld = GetCharacter(NPC_GenerateCharacter("Secret_Fort_Tavern_Barman", "prison_6", "man", "man", iRank, PIRATE, -1, true));
 	FantomMakeCoolFighter(sld, iRank + 5, 70, 70, BLADE_LONG, GUN_COMMON, 100);
@@ -2431,7 +2432,7 @@ void CreateSecretFort()
 	CreateSecretFortNPC();
 }
 
-// KZ > заселение форта в джунглях временными NPC, выполняется раз в неделю
+// KZ > заселение форта в джунглях временными NPC, выполняется раз в 7-10 дней
 void CreateSecretFortNPC()
 {
 	ref sld;
@@ -2517,6 +2518,7 @@ void CreateSecretFortNPC()
 		sld.greeting = "Gr_poorman";
 	}
 
+	TEV.SecretFortUnlocked = "";
 	SaveEventStartTime("CreateSecretFortNPC");
 }
 
@@ -2604,11 +2606,10 @@ void SetNPCModelUniq(ref chr, string sType, int iSex)
 	arrayNPCModelHow++;
 }
 
-bool CheckForAffairOfHonor(aref loc, int iColony)
+bool CanGenerateAffairOfHonor(aref loc, int iColony)
 {
-	//HardCoffee ref условий генерации, вытащить рандом из цикла
-	//Добавил атрибут HasAffairOfHonor для отслеживания уже имеющегося квеста, чтобы не проверять все условия, если квест уже есть
-	if (CheckAttribute(&TEV, "HasAffairOfHonor") && TEV.HasAffairOfHonor == "1") return false;
+	//HardCoffee ref условий генерации
+	if (GetCharacterIndex("AffairOfHonor_QuestMan") != -1) return false;
 	if (pchar.questTemp.CapBloodLine == "1") return false;
 	if (Colonies[iColony].HeroOwn == "1") return false;
 	if (Colonies[iColony].id == "PortRoyal") return false;
@@ -2636,10 +2637,6 @@ bool CheckForAffairOfHonor(aref loc, int iColony)
 
 	pchar.questTemp.AffairOfHonor.LighthouseId = Colony_GetLighthouseId(loc.fastreload);
 	if (PChar.QuestTemp.AffairOfHonor.LighthouseId == "") return false;
-
-	// TODO: не понимаю, для чего это условие. Квест вроде как должен генерироваться 7 раз
-	// после первой генерации создастся этот нпс и уже никуда не пропадёт, или нет?
-	if (GetCharacterIndex("AffairOfHonor_QuestMan") != -1) return false;
 
 	if (!CheckAttribute(PChar, "QuestTemp.AffairOfHonor.FinishCount"))
 	{

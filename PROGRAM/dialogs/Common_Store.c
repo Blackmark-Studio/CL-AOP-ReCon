@@ -847,8 +847,8 @@ void ProcessDialogEvent()
 				}
 				if (pchar.questTemp.BlueBird == "returnMoney" && pchar.questTemp.BlueBird.traiderId == npchar.id && sti(pchar.questTemp.BlueBird.count) > 0)
 				{
-					link.l1 = StringFromKey("Common_Store_334");
-					link.l1.go = "RBlueBird_retMoney_1";
+					link.l0 = StringFromKey("Common_Store_334");
+					link.l0.go = "RBlueBird_retMoney_1";
 				}
 				if (pchar.questTemp.BlueBird == "finish" && pchar.questTemp.BlueBird.traiderId == npchar.id)
 				{
@@ -964,15 +964,22 @@ void ProcessDialogEvent()
 						aref arFracht; makearef(arFracht, TEV.CT);
 						iTmp = 0; cn = 0;
 
-						for (i = 0; i < 3; i++)
+						RecalculateSquadronCargoLoad(pchar); // fix неверное место
+
+						for (i = 1; i <= 3; i++)
 						{
-							attrL = i + 1;
+							attrL = "" + i;
 
 							// > невраждебная торговцу нация
 							sTemp = "Nation." + attrL;
 							arFracht.(sTemp) = GenerateNationTrade(sti(NPChar.nation), false);
 							if (sti(arFracht.(sTemp)) >= 0) cn++;
-							else break;
+							else
+							{
+								arFracht.(sTemp) = GenerateNationTrade(sti(NPChar.nation), true);
+								if (sti(arFracht.(sTemp)) >= 0) cn++;
+								else break;
+							}
 
 							// > целевой магазин
 							sTemp = "StoreMan." + attrL;
@@ -1015,7 +1022,7 @@ void ProcessDialogEvent()
 							arFracht.StoredGoods = arFracht.StoredGoods + " " + arFracht.(sTemp);
 
 							// > кол-во товара
-							arFracht.Quantity.(attrL) = GetSquadronFreeSpace(pchar, sti(arFracht.(sTemp))) - sti(Goods[sti(arFracht.(sTemp))].Units) - 10;
+							arFracht.Quantity.(attrL) = GetSquadronFreeSpace(pchar, sti(arFracht.(sTemp))) - (sti(Goods[sti(arFracht.(sTemp))].Units) * 2) - 10;
 
 							// > целевой остров
 							sTemp = "Island." + attrL;
@@ -1052,8 +1059,6 @@ void ProcessDialogEvent()
 						{
 							if (iTmp > 2)
 							{
-								RecalculateSquadronCargoLoad(pchar); // fix неверное место
-
 								if (sti(arFracht.Quantity.1) < 100 || sti(arFracht.Quantity.2) < 100 || sti(arFracht.Quantity.3) < 100) // это в шт. товара
 								{
 									dialog.text = NPCharRepPhrase(npchar,
@@ -1068,10 +1073,10 @@ void ProcessDialogEvent()
 								{
 									dialog.text = StringFromKey("Common_Store_375");
 
-									for (i = 0; i < 3; i++)
+									for (i = 1; i <= 3; i++)
 									{
-										sTemp = i + 1;
-										attrL = "l" + (i + 1);
+										sTemp = "" + i;
+										attrL = "l" + i;
 										link.(attrL) = StringFromKey("Common_Store_376", FindMoneyString(sti(arFracht.Money.(sTemp))), GetGoodsNameAlt(sti(arFracht.Goods.(sTemp))), FindQtyString(sti(arFracht.Quantity.(sTemp))), XI_ConvertString("Colony" + Characters[sti(arFracht.storeMan.(sTemp))].city + "Acc"), arFracht.Island.(sTemp).Name.(sTemp), FindDaysString(makeint(sti(arFracht.Expire.(sTemp)))));
 										link.(attrL).go = "exit_trade_" + sTemp;
 									}
@@ -1123,7 +1128,7 @@ void ProcessDialogEvent()
 								}
 								else
 								{
-									iQuantityGoods = iQuantityGoods - rand(makeint(iQuantityGoods / 3)) - sti(Goods[iTradeGoods].Units) - 10;
+									iQuantityGoods = iQuantityGoods - rand(makeint(iQuantityGoods * 0.3)) - sti(Goods[iTradeGoods].Units) - 10;
 									iMoney = makeint((iQuantityGoods * sti(Goods[iTradeGoods].Weight) / sti(Goods[iTradeGoods].Units)) * (4 + rand(3) + GetSummonSkillFromNameToOld(pchar, SKILL_COMMERCE)) + 0.5);
 
 									pchar.CargoQuest.iTradeGoods = iTradeGoods;

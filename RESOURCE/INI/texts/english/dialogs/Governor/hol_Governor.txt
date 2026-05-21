@@ -956,7 +956,7 @@ hol_Governor_266 {
 Hmm... Not bad, I suppose...
 }
 hol_Governor_267 {
-I think so too. Capture at least four ships, bring them to Curaçao, to the port of Willemstad, and hand them over to me personally. For each ship you deliver, you'll be paid 100,000 coins. Do you think you're up to the task?
+I think so too. Capture at least four ships, bring them to Curaçao, to the port of Willemstad, and hand them over to me personally. For each ship you deliver, you'll be paid 200,000 coins. Do you think you're up to the task?
 }
 hol_Governor_268 {
 I suppose so.

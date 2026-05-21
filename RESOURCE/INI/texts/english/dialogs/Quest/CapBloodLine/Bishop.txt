@@ -1404,7 +1404,7 @@ Bishop_468 {
 Recently, some doctor sent by the buyer came to see me... looks like the deal is about to go through.
 }
 Bishop_469 {
-Calm down, Nicholas. The gold meant to buy you has already passed to me as inheritance. You’re coming with us tomorrow night.
+Calm down, Nicholas. The silver coins meant to buy you has already passed to me as inheritance. You’re coming with us tomorrow night.
 }
 Bishop_470 {
 I can hardly wait for tomorrow night!

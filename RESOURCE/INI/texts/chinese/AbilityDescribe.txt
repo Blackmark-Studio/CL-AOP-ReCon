@@ -245,7 +245,7 @@ perkSailingProfessional
 SeaDogProfessional {海上霸主}
 perkSeaDogProfessional
 {
-即使是最顽固的冒险者和强盗，见到海上霸主的旗帜也不敢轻举妄动。在世界地图上可防止普通敌方舰队的袭击。
+看到这面长旗，即使是最臭名昭著的冒险家和强盗也不敢挑战命运。这项终极能力会让某些分舰队无视你的舰队，大幅提高敌舰投降的几率，并开启一系列独特的机会。
 ~
 如果舰队中有低级别船只，该能力将失效。
 ~
@@ -274,6 +274,10 @@ Investor {投资大师}
 perkInvestor {掌握金融机制可使角色将银行存款利率提高1%，获得额外收益。}
 ProfessionalCommerce {专业贸易}
 perkProfessionalCommerce {所有交易享受额外-15#sProfessionalCommerce#%折扣，并获得+15%售出加成。}
+CrewSalaryOptimization		{全面审计}
+perkCrewSalaryOptimization	{角色以铁腕手段整顿船舶财务。通过对船员份额的巧妙调整和杜绝任何不必要的开支，舰队中船员的工资成本降低了40%，且不会降低纪律性。
+~
+仅主角可用。}
 Carpenter {基础修理}
 perkCarpenter
 {
@@ -468,6 +472,15 @@ perkSlaveTraderTrait
 Duelist {著名决斗者}
 DuelistFem {著名决斗者}
 perkDuelist {与单一敌人近战时，造成伤害+5%，受到伤害-5%，无论有无队友。}
+InquisitionBlessing         {审判庭的祝福}
+perkInquisitionBlessing     {从首席审判官安东尼奥·德·索萨那里获得的宗教审判所特别庇护。
+~
+内心坚定不移的信念以神圣之力充盈角色的每一次打击，对怪物、亡灵和印第安人的伤害提高20%。}
+
+WitchCharm                  {巫术馈赠}
+perkWitchCharm              {从卡拉那里获得的特殊魔法礼物，作为将她从审判庭火刑柱上救下的奖励。
+~
+白巫女的明亮魔法如同一面无形的盾牌覆在角色身上，抵御恶意，使受到的来自怪物、亡灵和印第安人的伤害降低20%。}
 HighwaySmuggler {老练的走私者}
 perkHighwaySmuggler {此人熟知许多秘密航线，多次走私，屡次瞒过官府和执法者。}
 Schemer {算计者}
@@ -492,6 +505,38 @@ OneLegMan {独腿}
 perkOneLegMan {角色失去了一条腿，但并未丧失战斗技巧。}
 SaveLoadAbuser {骗子}
 perkSaveLoadAbuser {一位臭名昭著的赌徒，尽管在欺诈上屡屡得手，却因不被他人信任，成为赌坛中的孤独者。}
+Monomania                {偏执狂}
+perkMonomania             {该角色对自己的手艺有着狂热的奉献精神，但在其狭隘兴趣之外的任何事情上都显得无能为力。
+~
+在某一特定职业中的独特天赋赋予其显著的基础加成，但在其他活动领域，该角色几乎变得毫无用处。}
+
+Stuttering               {口吃}
+perkStuttering            {一种言语障碍，导致角色很难清晰且迅速地表达自己的想法。
+~
+降低魅力的基础值，并对商业和领导力造成惩罚。}
+
+Redskin                  {原住民}
+perkRedskin               {该角色在丛林深处长大，完全不知道欧洲船只上的生活是如何运作的。
+~
+由于完全缺乏航海知识，无法将其任命为与船只管理相关的军官职务。然而，作为一名忠诚的接舷战人员，他将是不可或缺的。}
+
+NoCaptain                {随从}
+perkNoCaptain             {该角色完全缺乏领导才能，对整艘船及其船员的责任会让其陷入恐慌。
+~
+无法将其任命为舰队中的同伴（独立船只的船长）。同时，他仍然可以在你的指挥下有效地担任普通军官。}
+
+MusketeerOnly            {坚定射手}
+perkMusketeerOnly         {该角色只承认火药和铅弹的力量，完全不会（或原则上拒绝）手持任何冷兵器。在战斗中，他只能使用火枪。}
+
+WeaponBonding             {武器羁绊}
+perkHumphreyGunmaster      {该角色对自己的独特武器有着深厚的精神依恋。
+~
+这种性格特征使该角色无法使用任何其他武器，但在使用其专属武器时，无人能敌。}
+
+DuglasSchool             {火枪手特训}
+perkDuglasSchool          {该角色接受过旧世界精英射击学校复杂且罕见的教学法培训。
+~
+只有那些完美掌握了这一罕见经典基础的人，才能使用罕见和实验性的火枪品种。}
 Energaiser {精力充沛}
 perkEnergaiser {角色正处于体能巅峰，体力恢复速度提升至1.5倍。}
 LoyalOff {忠诚}

@@ -456,7 +456,7 @@ float LAi_GetCharacterMaxHP(aref chr)
 	if (max_hp < 0.0)
 		max_hp = 0.0;
 	
-	if (IsFighter(chr) && GetOfficersPerkUsing(pchar, "PersonalCare"))
+	if (IsFighter(chr) && CheckCharacterPerk(pchar, "PersonalCare"))
 		bonus += max_hp * 0.2;
 	
 	if (CheckCharacterPerk(chr, "HPPlus"))
@@ -1245,6 +1245,8 @@ void LAi_AllCharactersUpdate(float dltTime)
 			LAi_ProcessCheckMinHP(chr);
 			//Проверка на смерть
 			LAi_CheckKillCharacter(chr);
+			//Проверка на поднятие тревоги
+			LAi_ProcessCheckAlarm(chr);
 
 //--> Восстановление зарядов огнестрельного оружия
 			float charge, dltcharge;
@@ -1523,3 +1525,28 @@ int GetGunCharges(ref rChar, string sGun)
 
 	return iResult;
 }
+
+//HardCoffee реакция нпс на поднятие тревоги на локации -->
+void LAi_SetCheckAlarm(ref rChr, string sFunc)
+{
+    rChr.chr_ai.alarmFunc = sFunc;
+}
+
+void LAi_ProcessCheckAlarm(ref rChr)
+{
+	if (!CheckAttribute(rChr, "chr_ai.alarmFunc")) return;
+
+	if (LAi_grp_playeralarm > 0)
+	{
+		string sFunc = rChr.chr_ai.alarmFunc;
+		if (sFunc != "" && sFunc != "error") call sFunc();
+
+		DeleteAttribute(rChr, "chr_ai.alarmFunc");
+	}
+}
+
+void LAi_RemoveCheckAlarm(ref rChr)
+{
+	DeleteAttribute(rChr, "chr_ai.alarmFunc");
+}
+// <-- реакция нпс на поднятие тревоги на локации

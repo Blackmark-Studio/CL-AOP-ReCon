@@ -83,7 +83,7 @@ FortFrance_Tavern_24 {
 Eh bien, c’est parfait, mais je n’ai besoin que d’une seule bouteille. Combien en voulez-vous?
 }
 FortFrance_Tavern_25 {
-Oh, @<GetAddress_Form>, je suis certain que vous saurez apprécier toute la valeur de ce nectar divin! Vous pouvez avoir une bouteille de mon vin vieilli exquis pour seulement 200 piastres!
+Oh, @<GetAddress_Form>, je suis certain que vous saurez apprécier toute la valeur de ce nectar divin! Vous pouvez avoir une bouteille de mon vin vieilli exquis pour seulement 700 piastres!
 }
 FortFrance_Tavern_26 {
 Je vais prendre le vin, @<npchar>. Mais avec des prix pareils, tu n’auras pas beaucoup de clients.
@@ -101,7 +101,7 @@ FortFrance_Tavern_30 {
 Non, je n’en ai pas envie. Et j’espère qu’un esprit aussi brillant que le vôtre saura apprécier l’ironie de la situation : j’achète cette bouteille de vin, raffinée et coûteuse, pour un simple soldat français. Adieu, @<npchar>.
 }
 FortFrance_Tavern_31 {
-Vous tromper? Hé hé hé, @<GetAddress_Form>, vous plaisantez, j’espère. Bien sûr, en France, on pourrait acheter une bouteille de Bourgogne pour 200 piastres. Mais la Martinique, ce n’est pas la France, n’est-ce pas? Hé hé hé!
+Vous tromper? Hé hé hé, @<GetAddress_Form>, vous plaisantez, j’espère. Bien sûr, en France, on pourrait acheter une bouteille de Bourgogne pour 700 piastres. Mais la Martinique, ce n’est pas la France, n’est-ce pas? Hé hé hé!
 }
 FortFrance_Tavern_32 {
 Donne-moi ce fichu vin, et par pitié, arrête de rire!
@@ -122,17 +122,62 @@ FortFrance_Tavern_36 {
 C’est vraiment absurde… Attends! Tu peux remplir ces bouteilles de vin vides avec du rhum du tonneau! Voilà! Aucun problème…
 }
 FortFrance_Tavern_37 {
-Vraiment, vous êtes presque un génie, capitaine. Vous avez tout à fait raison, je peux le faire... Mais j’espère que vous comprenez qu’il s’agit de services exclusifs, particuliers... la bouteille est lavée et séchée à la main, voyez-vous... Je peux vendre du rhum en bouteille à mon client pour... 200 pièces! Hé hé hé!
+Vraiment, vous êtes presque un génie, capitaine. Vous avez tout à fait raison, je peux le faire... Mais j’espère que vous comprenez qu’il s’agit de services exclusifs, particuliers... la bouteille est lavée et séchée à la main, voyez-vous... Je peux vendre du rhum en bouteille à mon client pour... 300 pièces! Hé hé hé!
 }
 FortFrance_Tavern_38 {
-Tu as perdu la tête, @<npchar>. 200 pièces pour du rhum bon marché? Hors de question! Au revoir!
+Tu as perdu la tête, @<npchar>. 300 pièces pour du rhum bon marché? Hors de question! Au revoir!
 }
 FortFrance_Tavern_39 {
-Très bien! Tu m’as vraiment bien fait rire, petit malin. Voilà ton argent. Donne-moi le rhum. Tu as bien mérité ton or.
+Très bien! Tu m’as vraiment bien fait rire, petit malin. Voilà ton argent. Donne-moi le rhum.
 }
 FortFrance_Tavern_40 {
-Merci, @<GetAddress_Form>. Donnez-moi juste un instant.\nVoici votre baril de rhum, réparti en DEUX bouteilles, capitaine. Je les ai même attachées avec des rubans roses rien que pour vous... Oh, hé hé hé...
+Merci, @<GetAddress_Form>. Donnez-moi juste un instant\nVoici votre bouteille de rhum, Capitaine. J'aurais peut-être dû l'entourer de rubans roses... Oh, hé-hé-hé...
 }
 FortFrance_Tavern_41 {
 Fais attention, @<npchar>, un de ces jours tu vas finir par mourir de rire. Je crois que si je ne pars pas maintenant, c’est exactement ce qui va m’arriver. Adieu.
+}
+FortFrance_Tavern_42 {
+Jérôme, je viens au sujet de cette boisson que tu vends aux gardes...
+}
+FortFrance_Tavern_43 {
+Écoute, Jérôme, tu vois bien que je veux faire un cadeau à quelqu'un. Fais-moi une fleur, tu es un brave homme après tout !
+}
+FortFrance_Tavern_44 {
+Je n'ai même pas de quoi me payer de la rdaille pour l'instant, alors ton vin... Je repasserai plus tard.
+}
+FortFrance_Tavern_45 {
+Hé, hé, hé ! Vous savez y faire pour convaincre, capitaine. Soit... Vous m'avez démasqué... Je vais mettre ma cupidité de côté, car je suis un brave homme ! Hé, hé, hé ! Rien que pour vous, je laisse la bouteille à 450 piastres, mais n'allez pas en parler à la garde locale ! Hé, hé, hé !
+}
+FortFrance_Tavern_46 {
+Ah, voilà qui change la donne, Jérôme. Tope là !
+}
+FortFrance_Tavern_47 {
+Hélas, je n'ai pas autant d'argent, Jérôme. Nous battrons le rappel de cette conversation plus tard.
+}
+FortFrance_Tavern_48 {
+À qui ?.. Ah, vous parlez de ces pauvres diables fraîchement débarqués de l'Ordre de Malte ? Hé, hé, hé... Par une chaleur aussi étouffante, le vin ordinaire ou le rhum ne leur seront d'aucun secours — ils ne feraient que cuire plus vite au soleil. Hé, hé, hé...
+}
+FortFrance_Tavern_49 {
+C'est bien vrai... Mais alors, je n'y comprends plus rien. Ils ont catégoriquement refusé le vin et le rhum ordinaires, exigeant précisément ton breuvage. Quel est le secret ?
+}
+FortFrance_Tavern_50 {
+Hé, hé, hé ! Tout simplement parce que j'ai mon propre breuvage spécial, qui étouffe la soif et redonne de la vigueur. Ça s'appelle le Sangaree. Et tous les gardes français d'ici en sont fous de ce délicieux breuvage. Hé, hé, hé.\nQuant à ces deux-là... Eh bien, apparemment, ils essaient de copier ma recette, mais ils n'ont pas le tour de main nécessaire ! Hé, hé, hé...
+}
+FortFrance_Tavern_51 {
+Dis-moi, Jérôme. Puisque j'ai eu la chance de laisser une coquette somme à ce comptoir récemment, peut-être pourrions-nous trouver un terrain d'entente ? Ce serait aimable à toi, en guise de remerciement, de partager la recette de ton fameux 'Sangaree'. Je promets de ne pas la donner aux gardes et de la réserver à mon usage personnel.
+}
+FortFrance_Tavern_52 {
+Argh ! Vu ce que m'a coûté ton alcool, cette recette devrait m'être gravée sur un lingot d'or. Accouche un peu et dis-moi exactement comment tu mélanges ton poison ! Sinon, je vais aller raconter au commandant de l'Ordre de Malte que toi, le rigolo, tu saoules ses soldats pendant leur service !
+}
+FortFrance_Tavern_53 {
+Vous me plaisez de plus en plus ! Promettez-moi seulement de ne pas ouvrir une boutique avec cette boisson juste en face de la mienne. Hé, hé, hé.\nBon, qu'il en soit ainsi ! Tout le secret réside dans les bonnes proportions. Hé, hé, hé. Retenez bien : deux mesures de vin rouge bien frais pour une mesure de rhum fort... Quoique, je vais vous noter tout ça moi-même ! Hé, hé, hé... Attendez.\nTenez, prenez vite ! Le principal, c'est de le servir bien froid ! Hé, hé, hé !
+}
+FortFrance_Tavern_54 {
+Voilà qui est parfait. Ça me sera très utile ! Merci pour ta confiance, Jérôme.
+}
+FortFrance_Tavern_55 {
+Moins fort, malheureux ! Pourquoi tout de suite les grands mots et les menaces ? Bon, d'accord, étouffez-vous donc avec cette recette. Je vous écris ça tout de suite... Voyons,\net prendre deux bouteilles de vin frais pour une portion de rhum\nTenez, prenez ça vite. Et reprenez votre argent, mais ne braillez pas ainsi dans toute la taverne !
+}
+FortFrance_Tavern_56 {
+C'est bien mieux comme ça. C'est un plaisir de faire affaire avec toi, Jérôme.
 }

@@ -129,13 +129,13 @@ Ascold_33_f {
 Oh, allez! Je plaisantais seulement! Ça ne m’a même pas effleuré l’esprit...
 }
 Ascold_34 {
-Le travail est terminé—il est temps de fêter ça...
+L'affaire est réglée ! Il ne nous reste plus qu'à arroser ça !
 }
 Ascold_35_m {
-Non, je ne vais rien laver. Dis-moi plutôt : qu’est-ce que tu veux faire avec ce truc? J’ai beau y réfléchir, je ne comprends toujours pas. C’est complètement inutile et dégoûtant.
+L'arroser ? Je ne vais rien laver du tout. Dis-moi plutôt : qu’est-ce que tu veux faire avec ce truc? J’ai beau y réfléchir, je ne comprends toujours pas. C’est complètement inutile et dégoûtant.
 }
 Ascold_35_f {
-Non, je ne lave rien. Mais dis-moi, pourquoi tu veux ce truc? Je me suis creusé la tête et je ne comprends toujours pas. C’est complètement inutile et dégoûtant.
+L'arroser ? Je ne vais rien laver du tout. Mais dis-moi, pourquoi tu veux ce truc? Je me suis creusé la tête et je ne comprends toujours pas. C’est complètement inutile et dégoûtant.
 }
 Ascold_36 {
 Eh bien, tout dépend du point de vue. Cette poudre, ainsi que d’autres objets issus des cultes indigènes, me sont commandés par un éminent érudit européen, Pierre de la Fontaine. Je suis ici en tant qu’agent de confiance. Dans l’ensemble, j’en suis plutôt satisfait. De la Fontaine paie ma maison et mes frais de subsistance. Et pour chaque petit artefact que je parviens à lui dénicher ici, il m’offre une prime très généreuse.

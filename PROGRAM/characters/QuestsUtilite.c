@@ -1270,9 +1270,9 @@ void SetQuestAboardCabin_CheckCaptain(ref refChar) {
 	{
 		if (!CheckCharacterItem(pchar, "SkullAztec"))
 		{
+			refChar.undead = "1";
 			LAi_RemoveCheckMinHP(refChar);
-			refChar.model = "skeletcap";
-			refChar.model.animation = "man";
+			refChar.model = "Danielle_Sheppard_D";
 			FaceMaker(refChar);
 			SetNewModelToChar(refChar);
 		}
@@ -1636,11 +1636,9 @@ void IsabellaInit()
 	LAi_NoRebirthEnable(ch);
 	ch.DontClearDead = true;  // не убирать труп
 	ch.greeting = "Gr_Atilla";
-    if (pchar.sex != "woman")
-    {
-        AddLandQuestmark_Main(ch, "Romantic_Line");
-        AddMapQuestMark_Major("Pirates_town", "Romantic_Line", "RomanticLine_Begin_WDMQuestMarkCondition");
-    }
+	// проверка на pchar.sex != "woman" здесь не работает, добавляем для всех
+	AddLandQuestMark_Main_WithCondition(ch, "Romantic_Line", "RomanticLine_Begin_QuestMarkCondition");
+	AddMapQuestMark_Major("Pirates_town", "Romantic_Line", "RomanticLine_Begin_WDMQuestMarkCondition");
 	// Злой муж
 	ch = GetCharacter(NPC_GenerateCharacter("Husband", "portman_6", "man", "man", 22, PIRATE, -1, false));	
 	ch.name 	= FindPersonalName("Husband_name");
@@ -1684,19 +1682,37 @@ void SetIsabellaTalker(string qName)
 void PDMQuestsInit()
 {
 	if (!GetDLCenabled(PDM_QUESTS)) return;
+	if (CheckAttribute(&TEV, "PDMQuestsInit") && TEV.PDMQuestsInit == "complete") return;
 
 	ref sld;
+	int i;
 
 	//******Проклятый идол Sinistra******
 	//Джеймс Кэллоу
 	pchar.quest.PDM_CI_SpawnJC.win_condition.l1 = "Rank";
-	pchar.quest.PDM_CI_SpawnJC.win_condition.l1.value = 3;
+	pchar.quest.PDM_CI_SpawnJC.win_condition.l1.value = 1;
 	pchar.quest.PDM_CI_SpawnJC.win_condition.l1.operation = ">=";
 	PChar.quest.PDM_CI_SpawnJC.win_condition = "PDM_CI_SpawnJC";
 
-	//******Проклятая жара Sinistra******
+	//******Невыносимая жара Sinistra******
 	//Стражники
-	sld = GetCharacter(NPC_GenerateCharacter("PDM_PJ_Strajnik_1", "elite_fra_9q", "man", "manKSM", 10, FRANCE, -1, false));
+	for (i = 0; i < TOTAL_CHARACTERS; i++) //уберём уже существующих, если загрузились с сохранения
+	{
+		sld = &Characters[i];
+		if (!CheckAttribute(sld, "location")) continue;
+		if (sld.location != "FortFrance_town") continue;
+		if (!CheckAttribute(sld, "location.locator")) continue;
+		if (sld.location.locator == "special1" || sld.location.locator == "special2")
+		{
+		    if (HasSubStr(sld.id, "GenChar"))
+			{
+				ChangeCharacterAddressGroup(sld, "none", "none", "none");
+				LAi_KillCharacter(sld);
+				sld.lifeday = 0;
+			}
+		}
+	}
+	sld = GetCharacter(NPC_GenerateCharacter("PDM_PJ_Strajnik_1", "elite_fra_6", "man", "man", 10, FRANCE, -1, false));
 	sld.name	= FindPersonalName("PDM_PJ_Strajnik_1_name");
 	sld.lastname	= "";
 	//sld.greeting = "soldier_common"; TODO вместе с согласование воспроизведения звуков
@@ -1713,7 +1729,7 @@ void PDMQuestsInit()
 	AddLandQuestMark_Main(sld, "PDM_Proklyataya_Jara");
 	AddMapQuestMark_Major("FortFrance_town", "PDM_Proklyataya_Jara", "");
 
-	sld = GetCharacter(NPC_GenerateCharacter("PDM_PJ_Strajnik_2", "Elite_fra_3", "man", "man", 10, FRANCE, -1, false));
+	sld = GetCharacter(NPC_GenerateCharacter("PDM_PJ_Strajnik_2", "elite_fra_1", "man", "man", 10, FRANCE, -1, false));
 	sld.name	= FindPersonalName("PDM_PJ_Strajnik_2_name");
 	sld.lastname	= "";
 	//sld.greeting = "soldier_common"; TODO вместе с согласование воспроизведения звуков
@@ -1726,7 +1742,7 @@ void PDMQuestsInit()
 	pchar.quest.PDM_Aler.win_condition.l1 = "NPC_Death"; //индикатор для генерации
 	pchar.quest.PDM_Aler.win_condition.l1.character = "PDM_PJ_Strajnik_2";
 	ChangeCharacterAddressGroup(sld,"FortFrance_town","soldiers","special1");
-	
+
 	//******Потерянное кольцо Sinistra******
 	//Жозефина Лодет
 	sld = GetCharacter(NPC_GenerateCharacter("Josephine_Lodet", "JosefinLodet", "woman", "towngirl2", 10, FRANCE, -1, false));
@@ -1746,9 +1762,42 @@ void PDMQuestsInit()
 	//******Непутёвый казначей Sinistra******
 	//Андреас Фиклер
 	pchar.quest.PDM_NK_Nachalo.win_condition.l1 = "Rank";
-	pchar.quest.PDM_NK_Nachalo.win_condition.l1.value = 3;
+	pchar.quest.PDM_NK_Nachalo.win_condition.l1.value = 1;
 	pchar.quest.PDM_NK_Nachalo.win_condition.l1.operation = ">=";
 	PChar.quest.PDM_NK_Nachalo.win_condition = "PDM_NK_Nachalo";
+
+	//******Клан Ламбрини******
+	//Октавио Ламбрини
+	sld = GetCharacter(NPC_GenerateCharacter("PDM_Octavio_Lambrini", "Octavio_Lambrini", "man", "man", 10, PIRATE, -1, true));
+	sld.name	= FindPersonalName("PDM_Octavio_Lambrini_name");
+	sld.lastname	= FindPersonalName("PDM_Octavio_Lambrini_lastname");
+	sld.Dialog.Filename = "Quest\PDM\Clan_Lambrini.c";
+	LAi_SetSitType(sld);
+	LAi_group_MoveCharacter(sld, "PIRATE_CITIZENS");
+	ChangeCharacterAddressGroup(sld,"PortSpein_tavern","sit","sit_front2");
+	AddLandQuestMark_Main(sld, "PDM_Clan_Lambrini");
+    AddMapQuestMark_Major("PortSpein_town", "PDM_Clan_Lambrini", "");
+
+	//******Прокажённая******
+	//Бартоломью Ольстер
+	pchar.quest.PDM_ONV_Nachalo.win_condition.l1 = "Rank";
+	pchar.quest.PDM_ONV_Nachalo.win_condition.l1.value = 1;
+	pchar.quest.PDM_ONV_Nachalo.win_condition.l1.operation = ">=";
+	PChar.quest.PDM_ONV_Nachalo.function = "PDM_ONV_Nachalo";
+
+	//******"Остепенившийся пират******
+	//Хьюго Лесопилка
+	sld = GetCharacter(NPC_GenerateCharacter("Hugo_Lesopilka", "officer_18", "man", "man", 10, PIRATE, -1, true));
+	sld.name	= FindPersonalName("Hugo_Lesopilka_name");
+	sld.lastname	= FindPersonalName("Hugo_Lesopilka_lastname");
+	sld.Dialog.Filename = "Quest\PDM\Lesopilka.c";
+	LAi_SetSitType(sld);
+	LAi_SetImmortal(sld, true);
+	ChangeCharacterAddressGroup(sld,"Providencia_tavern","sit","sit5");
+	AddLandQuestMark_Main(sld, "PDM_Lesopilka");
+    AddMapQuestMark_Major("Providencia_town", "PDM_Lesopilka", "");
+
+    TEV.PDMQuestsInit = "complete";
 }
 
 // Сопровождение флейта "Орион" - Инициализация
@@ -1913,6 +1962,7 @@ void OfficerMushketerInit()
 	// черты
 	SetCharacterPerk(sld, "Energaiser");
 	SetCharacterPerk(sld, "Rebel");
+	SetCharacterPerk(sld, "MusketeerOnly");
 	LAi_NPC_EquipPerk(sld, "fantom");
     LAi_SetWarriorType(sld);
 	LAi_warrior_DialogEnable(sld, true);
@@ -1955,6 +2005,7 @@ void OfficerMushketerInit()
 	// черты
 	SetCharacterPerk(sld, "Energaiser");
 	SetCharacterPerk(sld, "Honest");
+	SetCharacterPerk(sld, "MusketeerOnly");
 	LAi_NPC_EquipPerk(sld, "fantom");
     LAi_SetWarriorType(sld);
     LAi_warrior_DialogEnable(sld, true);
@@ -2045,6 +2096,7 @@ void SetSkeletonsToLocation(aref _location)
 	for(int i = 0; i < num; i++)
 	{
 		sld = GetCharacter(NPC_GenerateCharacter("Skelet"+_location.index+"_"+i, "Skel"+(rand(3)+1), "skeleton", "man", iRank, PIRATE, 1, true));
+		sld.skeleton = "1";
 		//если квест по зачистке от нечисти - скелетов делаем круче
 		if (CheckAttribute(_location, "DestroyGhost"))
 		{
@@ -2444,6 +2496,19 @@ bool CheckLetterForQuest(ref itmRef)
             pchar.questTemp.LSC.Ring.ReadCapBook = "true";
 		}
 		SetFormatedItemText("RingCapBook");
+		return true;
+	}
+	
+	if (itmRef.id == "LesopilkaLog")
+	{
+		if (!CheckAttribute(itmRef, "read"))
+		{
+			itmRef.read = true;
+			itmRef.describe = "itmdescr_LesopilkaLog";
+            pchar.questTemp.PDM_Lesopilka_ReadBook = "true";
+			PDM_Lesopilka_Treasures_ReadLog();
+		}
+		SetFormatedItemText("LesopilkaLog");
 		return true;
 	}
 

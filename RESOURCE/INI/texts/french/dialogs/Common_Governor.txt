@@ -14,7 +14,7 @@ Common_Governor_4 {
 @<LinkRandPhrase>
 }
 Common_Governor_5_m {
-Qu’est-ce que tu veux, vaurien?! Mes soldats sont déjà à tes trousses — tu n’iras pas loin, joli garçon. Allez, monte à l’étage!
+Que veux-tu, vaurien? Mes soldats sont déjà à tes trousses — tu n’iras pas loin, sale pirate!
 }
 Common_Governor_5_f {
 Que veux-tu, misérable?! Mes soldats sont déjà à tes trousses — tu n’iras pas loin, vaurien!

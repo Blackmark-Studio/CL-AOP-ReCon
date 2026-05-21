@@ -774,7 +774,19 @@ type = normal
 
 ;ПЕРЕМЕЩЕНИЯ ==============================================================
 ;Ходьба вперёд
-[back walk]
+[walk]
+	speed = 2.1
+	loop = true
+	type = normal
+	start_time = 4202
+	end_time = 4236
+	data = "Blend time", "0.4"		; sec
+	data = "Walk speed", "1.5"		; m/sec
+	data = "Turn speed", "5.5"		; rad/sec
+	event = "LStep", 4207, normal
+	event = "RStep", 4226, normal
+
+[forward walk]
 	speed = 2.1
 	loop = true
 	type = normal
@@ -1510,13 +1522,7 @@ type = normal
 	event = "SndAlliace_N_afraid", 2625, normal
 
 ;ПОКЛОН ДАМЕ ------------------------------------------------------------------------------------------------------------------------------------
-;[Poklon] - ЗАГЛУШКА
-	loop = true
-	type = normal
-	start_time = 2524
-	end_time = 2624
-	speed = 2.
-	data = "Blend time", "0.4"		; sec
+;[Poklon] - --------------ОТСУТСТВУЕТ
 
 ; ЛЕЖИТ неподвижно лицом вниз --------------------------------------------------------------------------------------------------------
 [lay_1]

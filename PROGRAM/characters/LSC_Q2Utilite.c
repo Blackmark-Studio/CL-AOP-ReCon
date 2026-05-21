@@ -131,6 +131,7 @@ void SelAllPerksToChar(ref _ch, bool _isOfficer)
 	_ch.perks.list.PriceRecon = "1";
 	_ch.perks.list.Investor = "1";
 	_ch.perks.list.ProfessionalCommerce = "1";
+	_ch.perks.list.CrewSalaryOptimization = "1";
 	
 	if(_isOfficer) // У офов есть доп. перки
 	{
@@ -216,8 +217,7 @@ void RemoveAllCharacterItems(ref _ch, bool _removemoney)
 	if(_ch == GetMainCharacter())
 	{
 		StoreEquippedMaps(_ch);
-		_ch.MapsAtlasCount = 0;
-	}	
+	}
 	RemoveCharacterEquip(_ch, BLADE_ITEM_TYPE);
 	RemoveCharacterEquip(_ch, GUN_ITEM_TYPE);
     RemoveCharacterEquip(_ch, MUSKET_ITEM_TYPE);
@@ -402,7 +402,7 @@ string IslandGetLocationFromType(string _island, string _type)
 	for(i=1; i<MAX_LOCATIONS; i++)
 	{
 		makeref(rLoc, locations[i]);
-		if(HasSubStr(rLoc.id, _type) && rLoc.islandId == _island)
+		if(rLoc.type == _type && CheckAttribute(rLoc, "islandIdAreal") && rLoc.islandIdAreal == _island)
 		{
 			iMaxLoc[iRandLoc] = i;
 			iRandLoc++;
@@ -526,6 +526,11 @@ void initStartState2Character(ref ch)
     ch.GenQuest.Find_Merchant.lastspeak_date = "";
     ch.GenQuest.ConvoyPassenger = ""; //структура недовольных по квесту доставки пассажира
 
+	// ==> Стираем квест метки на глобальной карте (чтобы избежать ненужного дублирования)
+	if (CheckAttribute(&TEV, "MapQuestMarks"))
+    {
+        DeleteAttribute(&TEV, "MapQuestMarks");
+    }
 	// ==> состояние квеста текущей линейки
 	ch.questTemp.State = "";
 	// ==> кол-во дней ожидания выдачи следующего квеста губером, стандарт - два дня
@@ -537,7 +542,7 @@ void initStartState2Character(ref ch)
 	// ==> проверка не посещение борделей после свадьбы
 	pchar.RomanticQuest.HorseCheck = -1;
 	// ==> Количество карт в навигационном атласе
-	ch.MapsAtlasCount = 0;
+	ResetMapMakerAtlas();
 	// ==> Номер пиратского флага (берётся из текстуры персональных флагов ГГ)
 	ch.Flags.Pirate = 3;
 	// ==> Квест Аскольда.
@@ -552,8 +557,6 @@ void initStartState2Character(ref ch)
 	SelectSlavetraderRendom(); //это непосредственно выбор
 	// ==> квест Изабеллы
 	IsabellaInit();
-	// ==> Квесты Проклятие Дальних Морей
-	PDMQuestsInit();
 	// ==> Квест Сопровождение флейта 'Орион'
 	Andre_Abel_Quest_Init();
 	// ==>  флаги и иниты бергларов 
@@ -1707,6 +1710,8 @@ void PoormansInit()
 	LAi_SetSitType(sld);
 	sld.greeting = "cit_common";
     sld.MushForever = ""; // Использовать только мушкет
+	LAi_SetHP(sld, 270.0, 270.0); // Задано НР.
+	SetCharacterPerk(sld, "HPPlus");
 	SetCharacterPerk(sld, "AdvancedDefense");
 	SetCharacterPerk(sld, "Ciras");
 	SetCharacterPerk(sld, "Tireless");
@@ -1717,16 +1722,15 @@ void PoormansInit()
 	SetCharacterPerk(sld, "GunProfessional");
 	//черты
 	SetCharacterPerk(sld, "Energaiser");
-	//SetCharacterPerk(sld, "DuglasSchool");
 	SetCharacterPerk(sld, "LoyalOff");
-	//SetCharacterPerk(sld, "Honest"); <- надо ли?
+	SetCharacterPerk(sld, "MusketeerOnly");
+	SetCharacterPerk(sld, "DuglasSchool");
+	SetCharacterPerk(sld, "WeaponBonding");
 
 	DeleteAttribute(sld, "Items");
 	GiveItem2Character(sld, "unarmed");
 	EquipCharacterbyItem(sld, "unarmed");
 	sld.HoldEquip = true; // не отдавать оружие (для мушкетёров)
-	LAi_SetHP(sld, 276.0, 276.0); // Задано НР.
-	SetCharacterPerk(sld, "HPPlus");
 	AddLandQuestMark_Main(sld, "SeekDoubleMushket");
 	AddMapQuestMark_Major("PortSpein_town", "SeekDoubleMushket", "SeekDoubleMushket_Begin_WDMQuestMarkCondition");
 }
@@ -1977,8 +1981,62 @@ string GetQuestNationsCity(int _nation)
 			}
 		}
 	}
-	if (howStore == 0) return "none";
+	if (howStore < 1) return GetColonyStartOwner(_nation, "tavernkeeper,usurer", 2);
 	iRes = storeArray[idRand("GetQuestNationsCity_" + _nation, howStore-1)];
+	return colonies[iRes].id;
+}
+
+// KZ > выбираем колонию по нации, основываясь на стартовых данных игры, а не на текущем положении дел (игрок может захватить все колонии нужной нации и засофтлочить себе квесты)
+string GetColonyStartOwner(int _nation, string sNPC, int iRandType)
+{
+	Restrictor(&_nation, 0, 4);
+	Restrictor(&iRandType, 0, 2);
+
+	sNPC = stripblank(sNPC);
+	int i, q, n, iRes, iNPC = KZ|Symbol(sNPC, ",");
+    int storeArray[MAX_COLONIES];
+    int howStore = 0;
+
+	for (n = 0; n < MAX_COLONIES; n++)
+	{
+		if (colonies[n].smuggling_nation != "none" && colonies[n].id != "Panama" && sti(colonies[n].smuggling_nation) == _nation && GetArealByLocation(loadedLocation) != GetArealByCityName(colonies[n].id))
+		{
+			if (sNPC != "") // > если необходимо наличие конкретного NPC-статика (несколько указывать через запятую)
+			{
+				q = -1;
+
+				for (i = 0; i <= iNPC; i++)
+				{
+					// NPC-статики: Mayor, Priest, tavernkeeper, waitress, trader, shipyarder, usurer, PortMan, Hostess, Smuggler, GlavSklad, bankvault, Lightman, Cemeteryman
+					if (GetCharacterIndex(colonies[n].id + "_" + GetSubStr(sNPC, ",", i)) > 0)
+						q++;
+					else
+						q--;
+				}
+
+				if (q >= iNPC)
+				{
+					storeArray[howStore] = n;
+					howStore++;
+				}
+			}
+			else
+			{
+				storeArray[howStore] = n;
+				howStore++;
+			}
+		}
+	}
+
+	if (howStore < 1) return SelectColonyExt(pchar, "B", "5", 0, "Panama", iRandType, "");
+
+	switch (iRandType)
+	{
+		case 0: iRes = storeArray[rand(howStore - 1)]; break;
+		case 1: iRes = storeArray[dRand(howStore - 1)]; break;
+		case 2: iRes = storeArray[idRand("GetColonyStartOwner" + _nation, howStore - 1)]; break;
+	}
+
 	return colonies[iRes].id;
 }
 
@@ -2070,7 +2128,7 @@ string SelectColonyExt(ref rChar, string sColonyType, string sNations, int iRela
 		}
 	}
 
-	if (howStore <= 0)
+	if (howStore < 1)
 	{
 		howStore = defStore;
 		ArrayClear(&storeArray);
@@ -2154,19 +2212,23 @@ ref CheckLSCCitizen()
 	sSeeked = GetStrSmallRegister(dialogEditStrings[3]);
 	if (sSeeked == StringFromKey("LSC_Q2Utilite_74") || sSeeked == StringFromKey("LSC_Q2Utilite_75"))
 	{
-		return characterFromId("LSCMayor");
+		return CharacterFromId("LSCMayor");
 	}
 	if (sSeeked == StringFromKey("LSC_Q2Utilite_76") || sSeeked == StringFromKey("LSC_Q2Utilite_77") || sSeeked == StringFromKey("LSC_Q2Utilite_78") || sSeeked == StringFromKey("LSC_Q2Utilite_79") || sSeeked == StringFromKey("LSC_Q2Utilite_80") || sSeeked == StringFromKey("LSC_Q2Utilite_81"))
 	{
-		return characterFromId("LSCBarmen");
+		return CharacterFromId("LSCBarmen");
 	}
 	if (sSeeked == StringFromKey("LSC_Q2Utilite_82") || sSeeked == StringFromKey("LSC_Q2Utilite_83"))
 	{
-		return characterFromId("LSCwaitress");
+		return CharacterFromId("LSCwaitress");
 	}
 	if (sSeeked == StringFromKey("LSC_Q2Utilite_84") || sSeeked == StringFromKey("LSC_Q2Utilite_85"))
 	{
-		return characterFromId("Mechanic");
+		rCharacter = CharacterFromId("Mechanic");
+		if (CheckAttribute(rCharacter, "quest.money"))
+			return rCharacter;
+		else
+			return &NullCharacter;
 	}
 	for(int n=0; n<MAX_CHARACTERS; n++)
 	{
@@ -2470,6 +2532,107 @@ void CitizSeekCap_writeQuestBook(ref rid)
 			AddQuestUserData(sTitle, "sAreal", StringFromKey("InfoMessages_6", XI_ConvertString(GetIslandNameByCity(sld.quest.targetCity) + "Pre")));
 		}
 	}
+}
+
+//Создаём мушкетерского кэпа
+void SetMushketCapitainInWorld(bool bRumourCreate)
+{
+	//создаем кэпов
+	int Rank = sti(pchar.rank) + 15;
+	if (Rank > 30) Rank = 30;
+	ref sld = GetCharacter(NPC_GenerateCharacter("MushketCap", "citiz_58", "man", "man", Rank, PIRATE, -1, true)); //watch_quest_moment //вариант officer_26
+	sld.name = FindPersonalName("MushketCap_name");
+	sld.lastname = FindPersonalName("MushketCap_lastname");
+	SetCaptanModelByEncType(sld, "pirate");
+	FantomMakeCoolSailor(sld, SHIP_BRIGQEEN, FindPersonalName("MushketCap_ship"), CANNON_TYPE_CULVERINE_LBS24, 65, 60, 60);
+	FantomMakeCoolFighter(sld, 20, 55, 55, "blade34", "pistol2", 80);
+	sld.Ship.Mode = "pirate";
+	DeleteAttribute(sld, "SinkTenPercent");
+	DeleteAttribute(sld, "SaveItemsForDead");
+	DeleteAttribute(sld, "DontClearDead");
+	DeleteAttribute(sld, "AboardToFinalDeck");
+	DeleteAttribute(sld, "DontRansackCaptain");
+	sld.AlwaysSandbankManeuver = true;
+	sld.AnalizeShips = true;  //анализировать вражеские корабли при выборе таска
+	sld.DontRansackCaptain = true; //не сдаваться
+	sld.WatchFort = true; //видеть форты
+	SetCharacterPerk(sld, "FastReload");
+	SetCharacterPerk(sld, "HullDamageUp");
+	SetCharacterPerk(sld, "SailsDamageUp");
+	SetCharacterPerk(sld, "CrewDamageUp");
+	SetCharacterPerk(sld, "CriticalShoot");
+	SetCharacterPerk(sld, "LongRangeShoot");
+	SetCharacterPerk(sld, "CannonProfessional");
+	SetCharacterPerk(sld, "ShipDefenseProfessional");
+	SetCharacterPerk(sld, "ShipTurnRateUp");
+	SetCharacterPerk(sld, "StormProfessional");
+	SetCharacterPerk(sld, "SwordplayProfessional");
+	SetCharacterPerk(sld, "AdvancedDefense");
+	SetCharacterPerk(sld, "CriticalHit");
+	SetCharacterPerk(sld, "MusketsShoot");
+	SetCharacterPerk(sld, "Sliding");
+	SetCharacterPerk(sld, "Tireless");
+	SetCharacterPerk(sld, "HardHitter");
+	SetCharacterPerk(sld, "GunProfessional");
+	//в морскую группу кэпа
+	string sGroup = "MushketCapShip";
+	Group_FindOrCreateGroup(sGroup);
+	Group_SetTaskAttackInMap(sGroup, PLAYER_GROUP);
+	Group_LockTask(sGroup);
+	Group_AddCharacter(sGroup, sld.id);
+	Group_SetGroupCommander(sGroup, sld.id);
+	SetRandGeraldSail(sld, sti(sld.Nation));
+	sld.quest = "InMap"; //личный флаг искомого кэпа
+	sld.city = "PortRoyal"; //определим колонию, из бухты которой с мушкетом выйдет
+	sld.cityShore = GetIslandRandomShoreId(GetArealByCityName(sld.city));
+	sld.quest.targetCity = SelectAnyColony(sld.city); //определим колонию, в бухту которой он придет
+	sld.quest.targetShore = GetIslandRandomShoreId(GetArealByCityName(sld.quest.targetCity));
+	pchar.questTemp.Mushket.Shore = GetIslandRandomShoreId(GetArealByCityName(sld.quest.targetCity));
+	Log_TestInfo("Кэп с мушкетом вышел из: " + sld.city + " и направился в: " + sld.quest.targetShore + "");
+	//==> на карту
+	sld.mapEnc.type = "trade";
+	//выбор типа кораблика на карте
+	// sld.mapEnc.worldMapShip = "quest_ship";
+	sld.mapEnc.worldMapShip = "BrigantineShip";
+	sld.mapEnc.Name = FindPersonalName("MushketCap_mapEnc");
+	int daysQty = GetMaxDaysFromColony2Colony(sld.quest.targetCity, sld.city) + 5; //дней доехать даем с запасом
+	Map_CreateTrader(sld.cityShore, sld.quest.targetShore, sld.id, daysQty);
+	// прерывания по квесту
+	pchar.quest.SeekDoubleMushket_Capture.win_condition.l1 = "Character_Capture";
+	pchar.quest.SeekDoubleMushket_Capture.win_condition.l1.character = "MushketCap";
+	pchar.quest.SeekDoubleMushket_Capture.function = "SeekDoubleMushket_Capture";
+
+	pchar.quest.SeekDoubleMushket_GroupDeath.win_condition.l1 = "Group_Death";
+	pchar.quest.SeekDoubleMushket_GroupDeath.win_condition.l1.group = "MushketCapShip";
+	pchar.quest.SeekDoubleMushket_GroupDeath.function = "SeekDoubleMushket_GroupDeath";
+	//заносим Id кэпа в базу нпс-кэпов
+	string sTemp = sld.id;
+	NullCharacter.capitainBase.(sTemp).quest = "mushket"; //идентификатор квеста
+	NullCharacter.capitainBase.(sTemp).questGiver = "none"; //запомним Id квестодателя для затирки в случае чего
+	NullCharacter.capitainBase.(sTemp).Tilte1 = "SeekDoubleMushket"; //заголовок квестбука
+	NullCharacter.capitainBase.(sTemp).Tilte2 = "SeekDoubleMushket"; //имя квеста в квестбуке
+	NullCharacter.capitainBase.(sTemp).checkTime = daysQty + 5;
+	NullCharacter.capitainBase.(sTemp).checkTime.control_day = GetDataDay();
+	NullCharacter.capitainBase.(sTemp).checkTime.control_month = GetDataMonth();
+	NullCharacter.capitainBase.(sTemp).checkTime.control_year = GetDataYear();
+	if (bRumourCreate)
+	{
+	    //пускаем слух
+		SetMushketFromSeaToMap_AddRumour(daysQty);
+	}
+}
+
+void SetMushketFromSeaToMap_AddRumour(int daysQty)
+{
+	ref sld = characterFromId("MushketCap");
+
+	if (CheckAttribute(&TEV, "MushketCapShipRumourId")) DeleteRumor(FindRumour(sti(TEV.MushketCapShipRumourId)));
+	string sRumourName = GetRandName(NAMETYPE_VIP, NAME_NOM);
+    TEV.MushketCapShipRumourId = AddSimpleRumour(LinkRandPhrase(
+        StringFromKey("Common_rumours_39", XI_ConvertString(sld.quest.targetShore + "Gen")),
+        StringFromKey("Common_rumours_40", XI_ConvertString(sld.quest.targetShore + "Gen")),
+        StringFromKey("Common_rumours_41", generateRandomNameToShip(1), sRumourName, XI_ConvertString(sld.quest.targetShore + "Gen"))
+    ), 777, daysQty, 1);
 }
 
 //плавание мушкетерского кэпа
@@ -3138,6 +3301,7 @@ void LoginDeadmansGod()
 	LAi_LockFightMode(pchar, false);
 	LAi_LocationFightDisable(loadedLocation, true);
 	ref sld = GetCharacter(NPC_GenerateCharacter("DeadmansGod", "mictlantecuhtli", "skeleton", "man", 100, PIRATE, 0, true));
+	sld.undead = "1";
     FantomMakeCoolFighter(sld, 100, 100, 100, "maquahuitl", "pistol5", 3000);
 	sld.name = FindPersonalName("DeadmansGod_name");
 	sld.lastname = "";
@@ -3199,6 +3363,7 @@ void LoginShotgunGuards()
 		for (i=1; i<=8; i++)
 		{
 			sld = GetCharacter(NPC_GenerateCharacter("AztecWarrior_"+i, "AztecWarrior"+(rand(4)+1), "skeleton", "man", 30, PIRATE, 0, true));
+			sld.undead = "1";
 			FantomMakeCoolFighter(sld, 30, 90, 90, "maquahuitl", "", 100);
 			LAi_SetWarriorType(sld);
 			LAi_group_MoveCharacter(sld, "Teno_CollierGroup");

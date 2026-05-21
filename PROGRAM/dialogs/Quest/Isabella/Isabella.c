@@ -1475,7 +1475,7 @@ void ProcessDialogEvent()
 				if (CheckCharacterItem(pchar, "jewelry" + i))
 				{
 					sTemp = "l" + iTemp;
-					link.(sTemp) = XI_ConvertString("jewelry" + i + "Gen") + ".";
+					link.(sTemp) = GetItemName("jewelry" + i) + "."; // Вместо XI_ConvertString используем GetItemName
 					link.(sTemp).go = "NewLife_jewelry_" + i;
 					iTemp++;
 				}

@@ -394,7 +394,7 @@ void CheckIslandChange()
 			{
                 WeatherParams.Tornado 	= isTornado;
                 WeatherParams.Storm 	= true;
-                iStormLockSeconds 		= 60;
+                iStormLockSeconds 		= 60 + rand(120);
                 Seafoam.storm 			= "true";
                 Whr_UpdateWeather();
                 SetSchemeForSea();

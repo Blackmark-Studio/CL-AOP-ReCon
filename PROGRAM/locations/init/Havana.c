@@ -604,7 +604,7 @@ int LocationInitHavana(int n)
 	locations[n].id = "Havana_townhall";
 	locations[n].id.label = "Townhall";
 	locations[n].filespath.models = "locations\inside\Residence01";
-	locations[n].image = "loading\inside\residence.tga";
+	locations[n].image = "loading\inside\Residence01.tga";
 	//Town sack
 	locations[n].townsack = "Havana";
 	locations[n].lockWeather = "Inside";
@@ -1121,7 +1121,7 @@ int LocationInitHavana(int n)
 	/////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Havana_KeepersHouse";
 	locations[n].id.label = "KeepersHouse";
-	locations[n].image = "loading\inside\mediumhouse10.tga";
+	locations[n].image = "loading\inside\SmallHouse_inside.tga";
 	//Town sack
 	locations[n].townsack = "Havana";
 	locations[n].lockWeather = "Inside";
@@ -1453,7 +1453,7 @@ int LocationInitHavana(int n)
 	
 	locations[n].id = "Mayak10_Lighthouseroom";
 	locations[n].id.label = "House";
-	locations[n].image = "loading\inside\mediumhouse10.tga";
+	locations[n].image = "loading\inside\mediumhouse09.tga";
 	//Town sack
 	locations[n].townsack = "Havana";
 	locations[n].islandId = "Cuba2";

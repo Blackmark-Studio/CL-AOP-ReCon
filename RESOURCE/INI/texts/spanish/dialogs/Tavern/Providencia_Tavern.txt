@@ -28,3 +28,27 @@ Sí, de verdad, por tercera vez...
 Providencia_Tavern_8 {
 Sí, bueno...
 }
+Providencia_Tavern_9 {
+¿No has visto por aquí a Hugo?
+}
+Providencia_Tavern_10 {
+Estuvo aquí. Unos cazarrecompensas ingleses vinieron a por él, pero logró escabullirse por la puerta trasera justo a tiempo.
+}
+Providencia_Tavern_11 {
+¿Hacia dónde se dirigió?
+}
+Providencia_Tavern_12 {
+Mmm... Por 1000 pesos os indicaré el camino.
+}
+Providencia_Tavern_13 {
+Toma, aquí tienes tu dinero. ¿Y bien, hacia dónde se dirigió?
+}
+Providencia_Tavern_14 {
+No tengo tanto dinero ahora mismo.
+}
+Providencia_Tavern_15 {
+Puso rumbo a La Vega, buscadlo allí.
+}
+Providencia_Tavern_16 {
+Gracias, hasta la vista.
+}

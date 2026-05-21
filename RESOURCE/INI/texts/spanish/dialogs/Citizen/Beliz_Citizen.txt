@@ -28,3 +28,36 @@ Está bien... nos vemos.
 Beliz_Citizen_9 {
 Entonces, otra pregunta.
 }
+Beliz_Citizen_10 {
+Disculpe, ¿no ha visto a Carla la Alegre?
+}
+Beliz_Citizen_11 {
+¿Y no sabrá dónde está Carla la Alegre?
+}
+Beliz_Citizen_12 {
+@<RandPhraseSimple>
+}
+Beliz_Citizen_13 {
+Se lo digo yo, @<GetAddress_Form> ¡esa bruja ha hechizado a todos en esta ciudad! ¡Toda la gente de bien debería ir directa al gobernador y decirle que es una bruja malvada y que deberían quemarla a fuego lento!
+}
+Beliz_Citizen_14 {
+¿Carla? ¿Qué sabe de ella?
+}
+Beliz_Citizen_15 {
+¿Yo? ¡Yo sé que es una fuente de pecado mortal para cualquier hombre de esta ciudad! ¡Debemos poner fin a este libertinaje!
+}
+Beliz_Citizen_16 {
+El gobernador me ha ordenado capturar a esa bruja; quiere interrogarla personalmente. ¿Sabe dónde puedo encontrarla?
+}
+Beliz_Citizen_17_m {
+Suele llevar a sus víctimas a la taberna. ¡Que Dios le bendiga, capitán! ¡Vaya allí y saque a esa serpiente de su nido! Es usted un hombre valiente, @<GetAddress_Form>. ¡Es una vergüenza para nuestra ciudad que esa bruja ande suelta haciendo lo que le da la gana!
+}
+Beliz_Citizen_17_f {
+Suele llevar a sus víctimas a la taberna. ¡Que Dios la bendiga, capitán! ¡Vaya allí y saque a esa serpiente de su nido! Es usted una mujer valiente, @<GetAddress_Form>. ¡Es una vergüenza para nuestra ciudad que esa bruja ande suelta haciendo lo que le da la gana!
+}
+Beliz_Citizen_18 {
+Nos encargaremos de esa bruja, no lo dude.
+}
+Beliz_Citizen_19 {
+Vaya. ¿Así que es usted el único hombre de la ciudad que no utiliza los servicios de Carla? ¡Ay, pobrecito! Ahora se entiende por qué no tiene sentido del humor. Ja, ja. Pero tengo que interrumpir nuestra conversación. Adiós.
+}

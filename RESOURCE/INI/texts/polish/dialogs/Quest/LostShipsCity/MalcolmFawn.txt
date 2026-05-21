@@ -329,13 +329,13 @@ MalcolmFawn_90_m {
 Dobrze. Ale znalazłem jeszcze coś, co może cię zainteresować, poszukiwaczu skrytek. Spójrz, na stole leżał dziennik okrętowy. Historia w nim opisana jest bardzo smutna... Ale teraz dotyczy także nas: gdzieś w ładowni ukryto całą skrzynię złota! Przeczytaj sam!
 }
 MalcolmFawn_90_f {
-Dobrze. Ale znalazłam jeszcze coś, co może cię zainteresować, poszukiwaczu skrytek. Spójrz, na stole leżał dziennik pokładowy. Historia w nim opisana jest bardzo smutna... Ale teraz dotyczy także nas: gdzieś w ładowni ukryta jest cała skrzynia złota! Przeczytaj sam!
+Dobrze. Ale znalazłam jeszcze coś, co może cię zainteresować, poszukiwaczu skrytek. Spójrz, na stole leżał dziennik okrętowy. Historia w nim opisana jest bardzo smutna... Ale teraz dotyczy także nas: gdzieś w ładowni ukryta jest cała skrzynia złota! Przeczytaj sam!
 }
 MalcolmFawn_91_m {
-Dobrze. Ale znalazłem jeszcze coś — dziennik pokładowy kapitana tego statku.
+Dobrze. Ale znalazłem jeszcze coś — dziennik okrętowy kapitana tego statku.
 }
 MalcolmFawn_91_f {
-Dobrze. Ale znalazłam jeszcze coś — dziennik pokładowy kapitana tego statku.
+Dobrze. Ale znalazłam jeszcze coś — dziennik okrętowy kapitana tego statku.
 }
 MalcolmFawn_92 {
 Dobrze, nie mam nic przeciwko takiemu układowi, hehe. No to co, wracamy?

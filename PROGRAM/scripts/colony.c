@@ -1229,6 +1229,10 @@ void SetCaptureTownByNation(string sColony, int iNation)
 	// флаг на карте
 	sColony = sColony + "_town";
 	worldMap.labels.(sColony).icon = iNation;
+	if (IsEntity(&worldmap))
+	{
+	    SendMessage(&worldMap,"l",MSG_WORLDMAP_UPDATE_LABELS);
+	}
 	AddFortNation(sti(Colonies[iColony].nation), -1);
 	j = sti(Colonies[iColony].nation);
  	AddFortNation(iNation, 1);
@@ -1324,6 +1328,10 @@ void SetCaptureTownByHero(string sColony)
 	// флаг на карте
 	sColony = sColony + "_town";
 	worldMap.labels.(sColony).icon = iNation;
+	if (IsEntity(&worldmap))
+	{
+	    SendMessage(&worldMap,"l",MSG_WORLDMAP_UPDATE_LABELS);
+	}
 	AddFortNation(sti(Colonies[iColony].nation), -1);
 	j = sti(Colonies[iColony].nation);
  	AddFortNation(iNation, 1);

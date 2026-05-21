@@ -22,7 +22,7 @@ void Duel_Prepare_Fight()
 		LAi_SetPlayerType(pchar);
 		LAi_PlaceCharInTavern(pchar);
 		npchar.location = "Clone_location";
-		LAi_PlaceCharInTavern(npchar);
+//		LAi_PlaceCharInTavern(npchar); // не работает - перенёс в прерывание
 		PChar.Quest.Duel_Fight_Right_Now.win_condition.l1 = "Location";
 		PChar.Quest.Duel_Fight_Right_Now.win_condition.l1.Location = "Clone_location";
 		PChar.Quest.Duel_Fight_Right_Now.function = "Duel_Fight_Right_Now";
@@ -55,7 +55,7 @@ void Duel_Prepare_Fight()
 				sld = GetCharacter(NPC_GenerateCharacter("Berglar_Duel_"+i, sModel, "man", "man", iTemp, PIRATE, 1, true));
 				SetNPCModelUniq(sld, GetModelType(sModel), MAN);
 				sld.location = "Clone_location";
-				LAi_PlaceCharInTavern(sld);
+//				LAi_PlaceCharInTavern(sld); не работает - перенёс в прерывание
 				SetFantomParamHunter(sld);
 				LAi_SetWarriorType(sld);
 				LAi_group_MoveCharacter(sld, "DUEL_FIGHTER");
@@ -158,8 +158,30 @@ void Duel_Talk_Off_Town(string qName)
 void Duel_Fight_Right_Now(string qName)
 {
 	bool bOk = false;
-	ref sld = &Locations[FindLocation(pchar.location)];
+	int i, chIdx = 0;
+	ref sld;
 
+	if (CheckAttribute(LoadedLocation, "type") && LoadedLocation.type == "clone")
+	{
+		if (CheckAttribute(PChar,"questTemp.duel.enemy"))
+		{
+			sld = CharacterFromID(pchar.questTemp.duel.enemy);
+			LAi_PlaceCharInTavern(sld);
+		}
+		if (CheckAttribute(PChar,"questTemp.duel.enemyQty")) // если не один
+		{
+			for (i = 0; i < sti(PChar.questTemp.duel.enemyQty); i++)
+			{
+				chIdx = GetCharacterIndex("Berglar_Duel_"+i);
+				if (chIdx != -1)
+				{
+					LAi_PlaceCharInTavern(&Characters[chIdx]);
+				}
+			}
+		}
+	}
+
+	sld = &Locations[FindLocation(pchar.location)];
 	//запоминаем запрет на оружие в локации
 	if (CheckAttribute(sld, "noFight"))
 	{
@@ -280,9 +302,18 @@ void Duel_Move_OpponentBack(string qName)
 	DeleteAttribute(&locations[FindLocation(pchar.questTemp.duel.place)], "DisableEncounters");
 	//чистим аттрибуты
 	Log_TestInfo("Duel: POST CHECK!");
-	DeleteAttribute(pchar, "quest.duel_move_opponent2place");
-	DeleteAttribute(pchar, "quest.Duel_CheckSituation");
-	DeleteAttribute(pchar, "quest.Duel_Talk_Off_Town");
+	if (CheckAttribute(pchar, "quest.duel_move_opponent2place"))
+	{
+	    pchar.quest.duel_move_opponent2place.over = "yes";
+	}
+	if (CheckAttribute(pchar, "quest.Duel_CheckSituation"))
+	{
+	    pchar.quest.Duel_CheckSituation.over = "yes";
+	}
+	if (CheckAttribute(pchar, "quest.Duel_Talk_Off_Town"))
+	{
+	    pchar.quest.Duel_Talk_Off_Town.over = "yes";
+	}
 	DeleteAttribute(pchar, "questTemp.Duel");
 	DeleteAttribute(npchar, "BackUp");
 }

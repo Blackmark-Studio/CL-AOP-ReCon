@@ -441,7 +441,7 @@ void ProcessDialogEvent()
 			pchar.questTemp.MC = "toByeBye"; //флаг квеста
 			RemoveLandQuestMarkToFantoms_Main("DesMoinesHead", "MagicCity");
 			RemoveLandQuestMark_Main(CharacterFromId("Maracaibo_tavernkeeper"), "MagicCity");
-			AddLandQuestMarkToFantoms_Main("Incquisitor", "MagicCity", "");
+			AddLandQuestMark_Main(CharacterFromID("Santiago_Inquisitor"), "MagicCity");
 		break;
 
 		case "DMSkelHead_8":

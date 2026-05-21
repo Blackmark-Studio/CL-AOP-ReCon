@@ -236,16 +236,16 @@ Tortuga_Brothel_62 {
 Reaction
 }
 Tortuga_Brothel_63 {
-Charisma
+Allure
 }
 Tortuga_Brothel_64 {
-Learning ability
+Talent
 }
 Tortuga_Brothel_65 {
 Endurance
 }
 Tortuga_Brothel_66 {
-Good fortune
+Luck
 }
 Tortuga_Brothel_67 {
 Strength, a good choice. Well then, let’s get those muscles ready—and make the change. No point in waiting, let’s start right away.
@@ -266,22 +266,22 @@ Tortuga_Brothel_72 {
 Getting started with what?
 }
 Tortuga_Brothel_73_m {
-Charm? Hmm, good choice, handsome! Well then, let’s get that pretty face with those rugged features ready—and make the change. No point in waiting, let’s get started right away.
+Allure? Hmm, good choice, handsome! Well then, let’s get that pretty face with those rugged features ready—and make the change. No point in waiting, let’s get started right away.
 }
 Tortuga_Brothel_73_f {
-Charm? Hm, good choice, gorgeous! Well then, let’s get that pretty face ready with some irresistible features—and make the change. No point in waiting, let’s get started right away.
+Allure? Hm, good choice, gorgeous! Well then, let’s get that pretty face ready with some irresistible features—and make the change. No point in waiting, let’s get started right away.
 }
 Tortuga_Brothel_74 {
 What are we getting started on?
 }
 Tortuga_Brothel_75 {
-Intellect, a fine choice. Well then, let’s prepare some fresh brains—and make the switch. Don’t worry, your memories will stay with you. I suppose there’s no point in waiting, let’s begin right away.
+Talent, a fine choice. Well then, let’s prepare some fresh brains—and make the switch. Don’t worry, your memories will stay with you. I suppose there’s no point in waiting, let’s begin right away.
 }
 Tortuga_Brothel_76 {
 Getting started with what?
 }
 Tortuga_Brothel_77 {
-Agility, good. Well then, let's prepare some new ultra-flexible ligaments—and get to work. I suppose there's no point in waiting, let's begin right away.
+Reaction, good. Well then, let's prepare some new ultra-flexible ligaments—and get to work. I suppose there's no point in waiting, let's begin right away.
 }
 Tortuga_Brothel_78 {
 Getting started with what?

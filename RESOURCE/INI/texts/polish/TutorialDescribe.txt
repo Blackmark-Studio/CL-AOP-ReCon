@@ -280,7 +280,7 @@ Używaj skrótów klawiszowych, aby przybliżać mapę i otwierać atlas.
 WorldMap_controlsimg1 {WMapCameraSwitch}
 WorldMap_controlsimg2 {WMapForward}
 WorldMap_controlsimg3 {MapView}
-Logbook_title {Dziennik pokładowy i dokumenty}
+Logbook_title {Dziennik okrętowy i dokumenty}
 Logbook_descr
 {
 Każde zadanie, które podejmujesz, jest zapisywane w "Dzienniku". Warto uważnie czytać dialogi i wpisy w dzienniku — często zawierają kluczowe informacje i wskazówki.

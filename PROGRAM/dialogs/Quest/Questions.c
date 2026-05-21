@@ -517,7 +517,7 @@ void ProcessDialogEvent()
 					break;
 				}
 			}
-			if (iNation == 5) //если со всеми в мире, то генерим лицензию случайной нации сроком 40 дней
+			if (iNation == 5 || pchar.BaseNation == PIRATE) // если пират или со всеми в мире, то генерим лицензию случайной нации сроком 40 дней
 			{
 				iNation = rand(3);
 			}

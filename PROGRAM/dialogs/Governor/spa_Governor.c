@@ -328,8 +328,6 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 					bWorldAlivePause = false; // Конец линейки
 					RemoveLandQuestmark_Main(npchar, "Spa_Line");
 					RemoveMapQuestmark("Havana_town", "Spa_Line");
-
-					Achievment_Set(ACH_Na_sluzhbe_Ispanii);
 				break;
 			}
 		break;
@@ -444,16 +442,7 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 			pchar.questTemp.State = "Inquisition_toDeSouza";
 			AddQuestRecord("Spa_Line_2_Inquisition", "1");
 			SaveCurrentQuestDateParam("questTemp");
-			sld = GetCharacter(NPC_GenerateCharacter("AntonioDeSouza", "priest", "man", "man", 10, SPAIN, -1, false));
-			sld.name = FindPersonalName("AntonioDeSouza_name");
-			sld.lastname = FindPersonalName("AntonioDeSouza_lastname");
-			sld.model.animation = "man_B";
-			sld.Dialog.Filename = "Quest\AntonioDeSouza.c";
-			sld.greeting = "Gr_padre";
-			LAi_SetHuberType(sld);
-			LAi_group_MoveCharacter(sld, "SPAIN_CITIZENS");
-			ChangeCharacterAddressGroup(sld, "Santiago_Incquisitio", "sit", "armchair1");
-			AddLandQuestmark_Main(sld, "Spa_Line");
+			AddLandQuestmark_Main(CharacterFromID("Santiago_Inquisitor"), "Spa_Line");
 			AddLandQuestmark_Main(CharacterFromID("Santiago_Priest"), "Spa_Line");
 			RemoveLandQuestmark_Main(npchar, "Spa_Line");
 		break;
@@ -837,9 +826,13 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 			sld = characterFromID("Edward Mansfield");
 			sld.name = FindPersonalName("EdwardMansfield_name");
 			sld.lastname = FindPersonalName("EdwardMansfield_lastname");
+			sld.sex = "man";
 			sld.model.animation = "man";
 			sld.model = "officer_28";
-			sld.Sp5LaVegaAttackDone = true;
+			sld.City = "LaVega";
+			sld.greeting = "spa_gov_common";
+			sld.nation = SPAIN;
+			sld.quest.type = "hovernor";
 			sld.quest.meeting = "0";
 			sld.id = "LaVega_Mayor";
 			sld.Dialog.Filename = "Common_Mayor.c";
@@ -847,6 +840,15 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 			sld.from_sea = "LaVega_town";
 			sld.Default.nation = SPAIN;
 			sld.Default.BoardLocation = "LaVega_ExitTown";
+			sld.watchBoxes = true;
+			sld.standUp = true; //вставать и нападать на врага
+			LAi_SetHuberType(sld);
+			LAi_RemoveLoginTime(sld);
+			LAi_SetImmortal(sld, true);
+			LAi_group_MoveCharacter(sld, "SPAIN_CITIZENS");
+			sld.Dialog.CurrentNode = "First time";
+			DeleteAttribute(sld, "Dialog.TempNode");
+			sld.Sp5LaVegaAttackDone = "1";
 			FaceMaker(sld);
 			ChangeCharacterAddressGroup(sld, "LaVega_townhall", "sit", "sit1");
 			AddTitleNextRate(sti(NPChar.nation), 2);
@@ -862,7 +864,6 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 			sld = GetColonyRefByID("LaVega");
 			sld.Default.BoardLocation = "LaVega_ExitTown";
 			sld.from_sea = "LaVega_town";
-			sld.smuggling_nation = SPAIN; //неисп. вообще-то
 			//Появляется контрик
 			sld = GetCharacter(NPC_GenerateCharacter("LaVega_Smuggler", "citiz_21", "man", "man", 10, SPAIN, -1, false));
 			sld.name = UpperFirst(XI_ConvertString("WhoSmuggler"));
@@ -877,8 +878,7 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 			sld.greeting = "Gr_Smuggler Agent";
 			//<-- Rosarak New LaVega fixes
 
-			AddSimpleRumour(
-				StringFromKey("spa_Governor_226"), SPAIN, 5, 1);
+			AddSimpleRumour(StringFromKey("spa_Governor_226"), SPAIN, 5, 1);
 		break;
 		//********************** Квест №6, Разведка на Тортуге. ************************
 		case "Step_6_1":
@@ -1577,6 +1577,7 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 			//слухи
 			AddSimpleRumour(
 				StringFromKey("spa_Governor_363"), SPAIN, 5, 1);
+			Achievment_Set(ACH_Na_sluzhbe_Ispanii);
 		break;
 
 		// Квест Шарпа

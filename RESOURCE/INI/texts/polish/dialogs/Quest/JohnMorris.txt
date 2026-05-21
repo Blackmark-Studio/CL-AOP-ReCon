@@ -215,10 +215,10 @@ JohnMorris_56 {
 Oczywiście!
 }
 JohnMorris_57_m {
-No i jak, kapitanie? Zdobyłeś dziennik pokładowy tego drania Greya?
+No i jak, kapitanie? Zdobyłeś dziennik okrętowy tego drania Greya?
 }
 JohnMorris_57_f {
-No i jak, kapitanie? Zdobyłaś dziennik pokładowy tego drania Greya?
+No i jak, kapitanie? Zdobyłaś dziennik okrętowy tego drania Greya?
 }
 JohnMorris_58 {
 Są dwie wiadomości i obie dobre, co rzadko się zdarza. Kapitan Grey odszedł na tamten świat. A jego dziennik — proszę, masz go tutaj.

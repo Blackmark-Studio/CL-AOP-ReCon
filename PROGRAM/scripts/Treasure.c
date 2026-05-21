@@ -160,7 +160,6 @@ void FillMapForTreasure(ref item)
 
 void FillBoxForTreasure(ref item, int i)
 {
-	int iCraft = 0;
 	// определяем тип
 	switch (i)
 	{
@@ -223,13 +222,12 @@ void FillBoxForTreasure(ref item, int i)
             	item.BoxTreasure.mushket_poor = 1;
 	        }
 
-			iCraft = drand(15); // ~25%
-			switch (iCraft)
+			switch (drand(4))
 			{
-				case  4:	item.BoxTreasure.lamp = 1;				break;
-				case  6:	item.BoxTreasure.mortar_and_pestle = 1;	break;
-				case  9:	item.BoxTreasure.bullet_mold = 1;		break;
-				case 11:	item.BoxTreasure.crucible = 1;			break;
+				case 1:	item.BoxTreasure.lamp = 1;				break;
+				case 2:	item.BoxTreasure.mortar_and_pestle = 1;	break;
+				case 3:	item.BoxTreasure.bullet_mold = 1;		break;
+				case 4:	item.BoxTreasure.crucible = 1;			break;
 			}
 
 			GenerateMapsTreasure(item, 35, 70);
@@ -272,27 +270,40 @@ void FillBoxForTreasure(ref item, int i)
 	        {
             	item.BoxTreasure.mushket = 1;
 	        }
+			if (rand(2) == 1)
+	        {
+            	item.BoxTreasure.mineral11 = 1 + rand(6);
+	        }
+			if (rand(2) == 1)
+	        {
+            	item.BoxTreasure.mineral12 = 1 + rand(6);
+	        }
+			if (rand(2) == 1)
+	        {
+            	item.BoxTreasure.mineral13 = 1 + rand(6);
+	        }
+			if (rand(2) == 1)
+	        {
+            	item.BoxTreasure.mineral14 = 1 + rand(6);
+	        }
+			if (rand(2) == 1)
+	        {
+            	item.BoxTreasure.mineral16 = 1 + rand(7);
+	        }
 			GenerateMapsTreasure(item, 25, 50);
 
-			iCraft = drand(19); // ~20-25%
-			switch (iCraft)
+			switch (drand(6))
 			{
-				case  0:
+				case	1:
 					if (!isMultiObjectKnown("recipe_fulminate_silver"))
 						item.BoxTreasure.recipe_fulminate_silver = 1;
+					else item.BoxTreasure.fulminate_silver = makeint(1 + GetFortuneBonus(1));
 				break;
-				//case  3:	item.BoxTreasure.carpenter_kit = 1;		break;
-				case  7:	item.BoxTreasure.tailor_kit = 1;		break;
-				case  8:	item.BoxTreasure.mechanic_kit = 1;		break;
-				case 14:	item.BoxTreasure.alchemy_kit = 1;		break;
-			}
-
-			iCraft = drand(14); // ~20%
-			switch (iCraft)
-			{
-				case  2:	item.BoxTreasure.ethanol = 1;			break;
-				case 10:	item.BoxTreasure.nitric_acid = 1;		break;
-				case 13:	item.BoxTreasure.fulminate_silver = 1;	break;
+				case	2:	item.BoxTreasure.ethanol = 1 + drand(2);		break;
+				case	3:	item.BoxTreasure.tailor_kit = 1;				break;
+				case	4:	item.BoxTreasure.nitric_acid = 1 + drand(2);	break;
+				case	5:	item.BoxTreasure.mechanic_kit = 1;				break;
+				case	6:	item.BoxTreasure.alchemy_kit = 1;				break;
 			}
 	    break;
 	    // bad
@@ -748,7 +759,7 @@ void Set_TreasureBarrel()
 
 	makearef(trBarrel, nulChr.GenQuest.Barrel);
 	int irand;
-	if(CheckCharacterPerk(pchar, "HawkEye"))
+	if (GetOfficersPerkUsing(pchar, "HawkEye", false))
 	{
 		irand = drand(100);
 	}
@@ -804,13 +815,18 @@ void Set_TreasureBarrel()
 				}
 			break;
 		}
-		irand = drand(39);
+		irand = drand(19);
 		switch (irand)
 		{
-			case  9:	trBarrel.items.lamp = 1;				break;
-			case 19:	trBarrel.items.mortar_and_pestle = 1;	break;
-			case 29:	trBarrel.items.bullet_mold = 1;			break;
-			case 39:	trBarrel.items.crucible = 1;			break;
+            case  1:	trBarrel.items.mineral11 = 1 + drand(2);	break;
+            case  3:	trBarrel.items.mineral12 = 1 + drand(2);	break;
+            case  5:	trBarrel.items.mineral13 = 1 + drand(2);	break;
+            case  7:	trBarrel.items.mineral14 = 1 + drand(2);	break;
+            case  9:	trBarrel.items.mineral16 = 1 + drand(2);	break;
+			case 10:	trBarrel.items.crucible = 1;				break;
+			case 11:	trBarrel.items.lamp = 1;					break;
+			case 15:	trBarrel.items.mortar_and_pestle = 1;		break;
+			case 19:	trBarrel.items.bullet_mold = 1;				break;
 		}
 
 		irand = drand(35);

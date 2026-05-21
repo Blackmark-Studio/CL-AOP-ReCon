@@ -28,3 +28,27 @@ Tak, rzeczywiście już trzeci raz...
 Providencia_Tavern_8 {
 No tak...
 }
+Providencia_Tavern_9 {
+Nie widziałeś tu gdzieś Hugo Tartaka?
+}
+Providencia_Tavern_10 {
+Był tutaj. Przyszli po niego angielscy łowcy nagród, ale w porę wymknął się tylnymi drzwiami.
+}
+Providencia_Tavern_11 {
+Gdzie się skierował?
+}
+Providencia_Tavern_12 {
+Mmm... Za 1000 pesos wskażę ci drogę.
+}
+Providencia_Tavern_13 {
+Trzymaj, oto twoje pieniądze. Więc gdzie się skierował?
+}
+Providencia_Tavern_14 {
+Nie mam teraz przy sobie tylu pieniędzy.
+}
+Providencia_Tavern_15 {
+Obrał kurs na La Vegę, szukaj go tam.
+}
+Providencia_Tavern_16 {
+Dzięki, do zobaczenia.
+}

@@ -26,7 +26,7 @@ LeifEricson_6 {
 Und was wird mit meinem Körper geschehen?
 }
 LeifEricson_7 {
-Erledigen Sie Ihre Arbeit, Freibeuter.
+Erledigen Sie Ihre Arbeit, Korsar.
 }
 LeifEricson_8 {
 In Ordnung, Leif.
@@ -44,13 +44,13 @@ LeifEricson_11_f {
 Ich habe sie nicht, ich habe sie nicht gefunden...
 }
 LeifEricson_12 {
-Jetzt lasse ich dich frei. Du kannst gehen; der Weg hinaus ist offen.
+Jetzt lasse ich dich frei. Du kannst gehen, der Weg hinaus ist offen.
 }
 LeifEricson_13 {
 Danke. Ich hoffe, wir sehen uns nicht wieder.
 }
 LeifEricson_14 {
-Leb wohl, Freibeuter ...
+Leb wohl, Korsar ...
 }
 LeifEricson_15 {
 Leb wohl, Leif.
@@ -80,19 +80,19 @@ LeifEricson_20 {
 Wie heißt du, und wer bist du? Antworte, dann bleibst du am Leben.
 }
 LeifEricson_21 {
-Mein Name ist @<GetFullName>. Ich bin Freibeuter.
+Mein Name ist @<GetFullName>. Ich bin Korsar.
 }
 LeifEricson_22 {
 Ist das nicht ein bisschen hochtrabend für einen schäbigen alten Schädel?
 }
 LeifEricson_23 {
-Was bedeutet „privateer“?
+Was bedeutet „Korsar“?
 }
 LeifEricson_24 {
-Ein Freibeuter ist ein Korsar... ein Bukanier, ein Pirat...
+Ein Freibeuter ist ein Pirat...
 }
 LeifEricson_25 {
-Was ist ein „Filibuster“, ein „Pirat“?
+Was ist ein „Pirat“?
 }
 LeifEricson_26_m {
 Nun, wie soll ich es sagen... Ich bin ein freier Seemann und ein freier Kämpfer. Ich habe mein eigenes Schiff und tue, was ich für richtig halte.
@@ -101,7 +101,7 @@ LeifEricson_26_f {
 Nun, wie soll ich das sagen... Ich bin ein freier Seemann und ein ungebundener Vogel. Ich habe mein eigenes Schiff und tue, was ich will.
 }
 LeifEricson_27_m {
-Ha-ha! Du und ich sind Blutsbrüder! Es freut mich, dass ein Gleichgesinnter meinen Plan ausgeführt hat. Das ist ein gutes Omen für mich...
+Ha-ha! Du und ich sind im Geiste Brüder! Es freut mich, dass ein Gleichgesinnter meinen Plan ausgeführt hat. Das ist ein gutes Omen für mich...
 }
 LeifEricson_27_f {
 Ha-ha! Du und ich sind aus demselben Holz geschnitzt! Es freut mich, dass ein Gleichgesinnter meinen Plan ausgeführt hat. Das ist ein gutes Omen für mich...

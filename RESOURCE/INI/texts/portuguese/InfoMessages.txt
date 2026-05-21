@@ -151,7 +151,7 @@ InfoMessages_149 {Luneta recebida}
 InfoMessages_150 {Você recebeu 25 esmeraldas}
 InfoMessages_151 {Você recebeu um baú de ouro}
 InfoMessages_152 {@<sAttr> está vindo até você.}
-InfoMessages_153 {Você recebeu duas garrafas, uma delas agora é SUA.}
+InfoMessages_153 {Você recebeu a receita de 'Sangaree'.}
 InfoMessages_154 {Entregou @<iSmallPearl> pequenas pérolas.}
 InfoMessages_155 {Entregou @<iBigPearl> pérolas grandes.}
 InfoMessages_156 {Recebidas @<iSmallPearl> pequenas pérolas.}

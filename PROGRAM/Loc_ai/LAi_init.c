@@ -105,6 +105,11 @@ void LocAi_Init(ref loc)
 					Characters[idx].location = pchar.location;
 					Characters[idx].location.group = "officers";
 					Characters[idx].location.locator = pchar.location.locator + "_" + locIndex;
+					// если ГГ в reload[d]_back, меняем на reload[d]
+					if (StrStartsWith(pchar.location.locator, "reload") && StrEndsWith(pchar.location.locator, "_back"))
+					{
+						Characters[idx].location.locator = strcut(pchar.location.locator,0,6) + "_" + locIndex;
+					}
 					locIndex = locIndex + 1;
 				}
 				else

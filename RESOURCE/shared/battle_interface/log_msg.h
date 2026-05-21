@@ -9,8 +9,9 @@
 #define LI_CLEAR_STRINGS 45028       // ""
 // "s..." for different messages "SetTimeScale", float fScale
 #define LI_OTHER_MSG 45029
-#define LOG_ADD_PIC 45030
+#define LOG_ADD_PIC 45030 // "sll" strLog, IconIndex, iArrIdx
 #define LOG_TIME_SPEED 45031
 #define LOG_LEVEL_UP 45032
 #define LOG_REFRESH_PIC 45033
+#define LOG_CLEAR_ACTIVE_STAGES 45034 //"eee" First, Second, Third
 #define LI_MSG_TUTORIAL_SHOW 46108

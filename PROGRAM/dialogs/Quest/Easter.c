@@ -199,10 +199,10 @@ void ProcessDialogEvent()
 
 		case "Atlaua_refusal":
 			dialog.text = StringFromKey("Easter_38", pchar);
-			if (!CheckAttribute(pchar, "quest.easter.atlaua_date"))
+			if (!CheckAttribute(pchar, "questTemp.easter.atlaua_date"))
 			{
 				AddQuestRecord("EasterGods", "AtlauaDate");
-				pchar.quest.easter.atlaua_date = 1;
+				pchar.questTemp.easter.atlaua_date = 1;
 			}
 			link.l1 = StringFromKey("Easter_39");
 			link.l1.go = "exit";
@@ -221,10 +221,10 @@ void ProcessDialogEvent()
 				link.l2.go = "Atlaua_refusal";
 				break;
 			}
-			if (!CheckAttribute(pchar, "quest.easter.atlaua_bonuslist"))
+			if (!CheckAttribute(pchar, "questTemp.easter.atlaua_bonuslist"))
 			{
 				AddQuestRecord("EasterGods", "AtlauaBonusList");
-				pchar.quest.easter.atlaua_bonuslist = 1;
+				pchar.questTemp.easter.atlaua_bonuslist = 1;
 			}
 			dialog.text = StringFromKey("Easter_43");
 			if (!CheckAttribute(rShip, "atlaua_bonus.HP") || rShip.atlaua_bonus.HP != "full")
@@ -270,10 +270,10 @@ void ProcessDialogEvent()
 				case "SpeedRate":    sBonus = StringFromKey("Easter_56");            sItems = StringFromKey("Easter_57");    npchar.curitemstype = "indian8";    break;
 				case "TurnRate":    sBonus = StringFromKey("Easter_58");    sItems = StringFromKey("Easter_59");            npchar.curitemstype = "indian13";    break;
 			}
-			if (!CheckAttribute(pchar, "quest.easter.atlaua_Priceinfo." + sAttr))
+			if (!CheckAttribute(pchar, "questTemp.easter.atlaua_Priceinfo." + sAttr))
 			{
 				AddQuestRecord("EasterGods", "AtlauaPriceInfo" + sAttr);
-				pchar.quest.easter.atlaua_priceinfo.(sAttr) = 1;
+				pchar.questTemp.easter.atlaua_priceinfo.(sAttr) = 1;
 			}
 			iGems = 10 + sti(rShip.atlaua_bonus.(sAttr)) * 10;
 			iItems = 5 + sti(rShip.atlaua_bonus.(sAttr)) * 5;
@@ -314,10 +314,10 @@ void ProcessDialogEvent()
 				// по 10%
 			}
 			sTemp = StringFromKey("Easter_63");
-			if (!CheckAttribute(pchar, "quest.easter.atlaua_priceinfo"))
+			if (!CheckAttribute(pchar, "questTemp.easter.atlaua_priceinfo"))
 			{
 				AddQuestRecord("EasterGods", "AtlauaPriceInfo");
-				pchar.quest.easter.atlaua_priceinfo = 1;
+				pchar.questTemp.easter.atlaua_priceinfo = 1;
 			}
 			if (!CheckAttribute(rShip, "atlaua_bonus"))
 				rShip.atlaua_bonus = 0;
@@ -417,11 +417,11 @@ void ProcessDialogEvent()
 
 		case "Xiuhtecuhtli_refusal_powder":
 			dialog.text = StringFromKey("Easter_88", pchar);
-			if (!CheckAttribute(pchar, "quest.easter.xiuhtecuhtli_date"))
+			if (!CheckAttribute(pchar, "questTemp.easter.xiuhtecuhtli_date"))
 			{
 				AddQuestRecord("EasterGods", "XiuhtecuhtliPowderDate");
 				AddQuestUserData("EasterGods", "sSex", GetSexPhrase("", "а"));
-				pchar.quest.easter.xiuhtecuhtli_date = 1;
+				pchar.questTemp.easter.xiuhtecuhtli_date = 1;
 			}
 			link.l1 = StringFromKey("Easter_89");
 			link.l1.go = "exit";
@@ -430,10 +430,10 @@ void ProcessDialogEvent()
 
 		case "Xiuhtecuhtli_refusal":
 			dialog.text = StringFromKey("Easter_90", pchar);
-			if (!CheckAttribute(pchar, "quest.easter.xiuhtecuhtli_date"))
+			if (!CheckAttribute(pchar, "questTemp.easter.xiuhtecuhtli_date"))
 			{
 				AddQuestRecord("EasterGods", "XiuhtecuhtliDate");
-				pchar.quest.easter.xiuhtecuhtli_date = 1;
+				pchar.questTemp.easter.xiuhtecuhtli_date = 1;
 			}
 			link.l1 = StringFromKey("Easter_91");
 			link.l1.go = "exit";
@@ -672,10 +672,10 @@ void ProcessDialogEvent()
 			if (GetCharacterShipClass(pchar) > 2)
 				sTemp = " " + StringFromKey("Easter_134");
 			dialog.text = StringFromKey("Easter_135", pchar, npchar.powder_remain.goods, npchar.powder_remain.items, sTemp);
-			if (!CheckAttribute(pchar, "quest.easter.xiuhtecuhtli_deal"))
+			if (!CheckAttribute(pchar, "questTemp.easter.xiuhtecuhtli_deal"))
 			{
 				AddQuestRecord("EasterGods", "XiuhtecuhtliDeal");
-				pchar.quest.easter.xiuhtecuhtli_deal = 1;
+				pchar.questTemp.easter.xiuhtecuhtli_deal = 1;
 			}
 			if (GetCharacterItem(pchar, "GunPowder") >= sti(npchar.powder_remain.items) && GetSquadronGoods(pchar, GOOD_POWDER) >= sti(npchar.powder_remain.goods))
 			{
@@ -780,7 +780,7 @@ void ProcessDialogEvent()
 		break;
 
 		case "Xolotl_noslaves_yes":
-			pchar.quest.easter.xolotl_noslaves = 1;
+			pchar.questTemp.easter.xolotl_noslaves = 1;
 			dialog.text = StringFromKey("Easter_162", pchar);
 			link.l1 = StringFromKey("Easter_163");
 			link.l1.go = "Xolotl_3";
@@ -805,7 +805,7 @@ void ProcessDialogEvent()
 		break;
 
 		case "Xolotl_5":
-			if (CheckAttribute(pchar, "quest.easter.xolotl_noslaves"))
+			if (CheckAttribute(pchar, "questTemp.easter.xolotl_noslaves"))
 			{
 				AddQuestRecord("EasterGods", "XolotlInfoNoSlaves");
 				AddQuestUserData("EasterGods", "sSex", GetSexPhrase("ся", "ась"));
@@ -860,7 +860,7 @@ void ProcessDialogEvent()
 			sTemp2 = "";
 			sTemp3 = "";
 			// проверка рабов
-			if (!CheckAttribute(pchar, "quest.easter.xolotl_noslaves"))
+			if (!CheckAttribute(pchar, "questTemp.easter.xolotl_noslaves"))
 			{
 				if (GetSquadronGoods(pchar, GOOD_SLAVES) < iCannons * 50)
 				{
@@ -875,14 +875,14 @@ void ProcessDialogEvent()
 				}
 			}
 			// древесина
-			if (GetSquadronGoods(pchar, sti(pchar.quest.easter.xolotl_lumber)) < iCannons * 100)
+			if (GetSquadronGoods(pchar, sti(pchar.questTemp.easter.xolotl_lumber)) < iCannons * 100)
 			{
-				sTemp2 = StringFromKey("Easter_182", GetStrSmallRegister(XI_ConvertString(Goods[sti(pchar.quest.easter.xolotl_lumber)].Name + "Gen")));
+				sTemp2 = StringFromKey("Easter_182", GetStrSmallRegister(XI_ConvertString(Goods[sti(pchar.questTemp.easter.xolotl_lumber)].Name + "Gen")));
 			}
 			// материя
-			if (GetSquadronGoods(pchar, sti(pchar.quest.easter.xolotl_material)) < iCannons * 200)
+			if (GetSquadronGoods(pchar, sti(pchar.questTemp.easter.xolotl_material)) < iCannons * 200)
 			{
-				sTemp3 = StringFromKey("Easter_183", GetStrSmallRegister(XI_ConvertString(Goods[sti(pchar.quest.easter.xolotl_material)].Name + "Gen")));
+				sTemp3 = StringFromKey("Easter_183", GetStrSmallRegister(XI_ConvertString(Goods[sti(pchar.questTemp.easter.xolotl_material)].Name + "Gen")));
 			}
 			if (sTemp != "" || sTemp2 != "" || sTemp3 != "")
 			{
@@ -894,7 +894,7 @@ void ProcessDialogEvent()
 			}
 			else
 			{
-				if (!CheckAttribute(pchar, "quest.easter.xolotl_noslaves"))
+				if (!CheckAttribute(pchar, "questTemp.easter.xolotl_noslaves"))
 				{
 					RemoveCharacterGoods(pchar, GOOD_SLAVES, iCannons * 50);
 				}
@@ -903,8 +903,8 @@ void ProcessDialogEvent()
 					RemoveCharacterGoods(pchar, GOOD_COFFEE, iCannons * 200);
 					RemoveCharacterGoods(pchar, GOOD_TOBACCO, iCannons * 200);
 				}
-				RemoveCharacterGoods(pchar, sti(pchar.quest.easter.xolotl_lumber), iCannons * 100);
-				RemoveCharacterGoods(pchar, sti(pchar.quest.easter.xolotl_material), iCannons * 200);
+				RemoveCharacterGoods(pchar, sti(pchar.questTemp.easter.xolotl_lumber), iCannons * 100);
+				RemoveCharacterGoods(pchar, sti(pchar.questTemp.easter.xolotl_material), iCannons * 200);
 				SetCharacterGoods(pchar, GOOD_CANNON_48, iCannons + GetCargoGoods(pchar, GOOD_CANNON_48));
 				dialog.text = StringFromKey("Easter_187");
 				link.l1 = StringFromKey("Easter_188");
@@ -992,10 +992,10 @@ void ProcessDialogEvent()
 		break;
 
 		case "Huitzilopochtli_refusal":
-			if (!CheckAttribute(pchar, "quest.easter.huitzilopochtli_date"))
+			if (!CheckAttribute(pchar, "questTemp.easter.huitzilopochtli_date"))
 			{
 				AddQuestRecord("EasterGods", "HuitzilopochtliDate");
-				pchar.quest.easter.huitzilopochtli_date = 1;
+				pchar.questTemp.easter.huitzilopochtli_date = 1;
 			}
 			dialog.text = StringFromKey("Easter_208");
 			link.l1 = StringFromKey("Easter_209");
@@ -1129,10 +1129,10 @@ void ProcessDialogEvent()
 				npchar.speed.gems = 60;
 				npchar.speed.money = 400000;
 				npchar.speed.bladetype = "good";
-				if (!CheckAttribute(pchar, "quest.easter.damage2info"))
+				if (!CheckAttribute(pchar, "questTemp.easter.damage2info"))
 				{
 					AddQuestRecord("EasterGods", "HuitzilopochtliSpeedInfo2");
-					pchar.quest.easter.damage2info = 1;
+					pchar.questTemp.easter.damage2info = 1;
 				}
 				dialog.text = StringFromKey("Easter_228");
 				link.l1 = StringFromKey("Easter_229");
@@ -1194,7 +1194,7 @@ void ProcessDialogEvent()
 			{
 				if (sti(chr.easter.damage.(sItems)) < 2)
 				{
-					if (!CheckAttribute(pchar, "quest.easter.huitzilopochtli_damage2"))
+					if (!CheckAttribute(pchar, "questTemp.easter.huitzilopochtli_damage2"))
 					{
 						AddQuestRecord("EasterGods", "HuitzilopochtliDamageInfo2");
 					}

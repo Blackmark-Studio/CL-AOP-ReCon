@@ -481,3 +481,9 @@ Proszę przyjąć. Dziękuję za wykonaną pracę.
 Common_Shipyard_135 {
 Nie ma za co...
 }
+Common_Shipyard_136 {
+Nie widzę waszego statku w porcie, kapitanie @<GetFullName>...
+}
+Common_Shipyard_137 {
+Kapitanie, proszę zacumować statek w porcie i potem przyjść.
+}

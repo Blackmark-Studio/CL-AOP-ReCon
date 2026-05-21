@@ -956,7 +956,7 @@ hol_Governor_266 {
 Hm... Całkiem nieźle, chyba...
 }
 hol_Governor_267 {
-Też tak uważam. Przejmijcie co najmniej cztery okręty, przyprowadźcie je na Curaçao, do portu Willemstad, i oddajcie je osobiście mnie. Za każdy przekazany okręt otrzymacie 100000 monet. Jak sądzicie, podołacie temu zadaniu?
+Też tak uważam. Przejmijcie co najmniej cztery okręty, przyprowadźcie je na Curaçao, do portu Willemstad, i oddajcie je osobiście mnie. Za każdy przekazany okręt otrzymacie 200000 monet. Jak sądzicie, podołacie temu zadaniu?
 }
 hol_Governor_268 {
 Myślę, że tak.

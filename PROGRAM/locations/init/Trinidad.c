@@ -606,7 +606,7 @@ int LocationInitTrinidad(int n)
 	locations[n].id = "PortSpein_townhall";
 	locations[n].id.label = "Townhall";
 	locations[n].filespath.models = "locations\inside\Residence01";
-	locations[n].image = "loading\inside\residence.tga";
+	locations[n].image = "loading\inside\Residence01.tga";
 	//Town sack
 	locations[n].townsack = "PortSpein";
 	locations[n].lockWeather = "Inside";
@@ -832,7 +832,7 @@ int LocationInitTrinidad(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "PortSpein_houseH3";
 	locations[n].id.label = "Room";
-	locations[n].image = "loading\inside\mediumhouse10.tga";
+	locations[n].image = "loading\inside\mediumhouse03.tga";
 	//Town sack
 	locations[n].townsack = "PortSpein";
 	locations[n].lockWeather = "Inside";
@@ -1091,7 +1091,7 @@ int LocationInitTrinidad(int n)
 	
 	locations[n].id = "Mayak1_Lighthouseroom";
 	locations[n].id.label = "House";
-	locations[n].image = "loading\inside\mediumhouse10.tga";
+	locations[n].image = "loading\inside\mediumhouse05.tga";
 	//Town sack
 	locations[n].townsack = "PortSpein";
 	locations[n].islandId = "Trinidad";

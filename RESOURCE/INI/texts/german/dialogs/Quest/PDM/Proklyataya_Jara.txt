@@ -23,7 +23,7 @@ Proklyataya_Jara_7 {
 Ja, das ist wirklich widerlich... Vielleicht kann ich dir irgendwie helfen?
 }
 Proklyataya_Jara_8 {
-Oh, danke, @<GetAddress_Form>! Im Moment träume ich nur von einem kleinen Schluck Wein. Natürlich darf ich im Dienst eigentlich nicht trinken, aber trotzdem... Würdest du mir eine Flasche Wein bringen? Ich könnte dir sogar etwas dafür bezahlen.
+Oh, danke, @<GetAddress_Form>! Im Moment träume ich nur von einem kleinen Schluck Wein. Natürlich darf ich im Dienst eigentlich nicht trinken, aber trotzdem... Wärt Ihr so freundlich, mir eine Flasche Wein aus unserer hiesigen Taverne zu bringen? Der Wein von Wirt Jerome ist einfach köstlich... Ich könnte dir sogar etwas dafür bezahlen.
 }
 Proklyataya_Jara_9 {
 Ich weiß, wie sehr die Pflicht manchmal auf einem lasten kann... Ich bringe dir eine Flasche Wein mit.
@@ -59,10 +59,10 @@ Proklyataya_Jara_18 {
 Mach dir keine Sorgen ums Geld — ich habe das gern für dich getan.
 }
 Proklyataya_Jara_19_m {
-500 Piaster. Ich habe um einen nicht zu teuren Wein gebeten, aber anscheinend wird eure Taverne von einem ehemaligen Piraten geführt, diesem @<GetFullName>.
+1000 Piaster. Ich habe um einen nicht zu teuren Wein gebeten, aber anscheinend wird eure Taverne von einem ehemaligen Piraten geführt, diesem @<GetFullName>.
 }
 Proklyataya_Jara_19_f {
-500 Piastres. Ich habe um einen nicht zu teuren Wein gebeten, aber anscheinend wird eure Taverne von einem ehemaligen Piraten geführt, diesem @<GetFullName>.
+1000 Piastres. Ich habe um einen nicht zu teuren Wein gebeten, aber anscheinend wird eure Taverne von einem ehemaligen Piraten geführt, diesem @<GetFullName>.
 }
 Proklyataya_Jara_20 {
 Sie sind ein sehr freundlicher Mensch. Ich helfe Ihnen gerne, falls Sie einmal etwas brauchen.
@@ -71,7 +71,7 @@ Proklyataya_Jara_21 {
 Danke, mein Freund. Bis bald.
 }
 Proklyataya_Jara_22 {
-500 Piaster? Aber das ist doch die Hälfte meines Lohns... Was soll ich jetzt tun?
+1000 Piaster? Aber das ist doch die Hälfte meines Lohns... Was soll ich jetzt tun?
 }
 Proklyataya_Jara_23 {
 Daran hättest du früher denken sollen. Jetzt ist es Zeit, zu bezahlen.
@@ -101,7 +101,7 @@ Proklyataya_Jara_30_f {
 Was?! Du willst, dass ich auch noch Wein für dich kaufe?
 }
 Proklyataya_Jara_31 {
-Um ehrlich zu sein, bin ich kein großer Weinliebhaber. Aber gegen einen Schluck Rum hätte ich nichts einzuwenden.
+Um ehrlich zu sein, bin ich kein großer Weinliebhaber.  Aber ein Tropfen Rum aus Jeromes Taverne würde mir nicht schaden.
 }
 Proklyataya_Jara_32_m {
 Nun, schüchtern kann man dich wirklich nicht nennen... Na gut. Ehrlich gesagt wundere ich mich selbst über mein weiches Herz, aber ich spendiere dir etwas Rum. Warte hier auf mich.

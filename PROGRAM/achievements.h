@@ -15,10 +15,10 @@
 #define ACH_Ya_uedu_zhit_v_London		14 // Пройти Пиратскую нац. линейку
 #define ACH_Kapitan_estet				15 // Измените внешний вид своего корабля
 #define ACH_Urca_de_Lima				16 // Успешно завершить кв. 'Испанский золотой флот'
-#define ACH_Proklyataya_zhara			17 // Пройти кв. 'Проклятая Жара' DLC Legend is Back
-#define ACH_Neputyovyy_kaznachey		18 // Пройти кв. 'Непутёвый казначей' DLC Legend is Back
-#define ACH_Proklyatyy_idol				19 // Пройти кв. 'Проклятый идол' DLC Legend is Back
-#define ACH_Poteryannoe_koltso			20 // Пройти кв. 'Кольцо Жозефины Лодет' DLC Legend is Back
+#define ACH_Proklyataya_zhara			17 // Пройти кв. 'Невыносимая жара' DLC Sea Dogs
+#define ACH_Neputyovyy_kaznachey		18 // Пройти кв. 'Непутёвый казначей' DLC Sea Dogs
+#define ACH_Proklyatyy_idol				19 // Пройти кв. 'Проклятый идол' DLC Sea Dogs
+#define ACH_Poteryannoe_koltso			20 // Пройти кв. 'Кольцо Жозефины Лодет' DLC Sea Dogs
 
 #define ACH_Ostrov_Spravedlivosti		21 // Попасть в Локо Риферте (Город потерянных кораблей)
 #define ACH_Spasshiysya					22 // Выбраться из Города потерянных кораблей
@@ -66,4 +66,8 @@
 
 #define ACH_Pustit_ko_dnu_III			61 // Потопить (орудиями или абордажем) 500 кораблей
 #define ACH_Krysa						62 // Кинуть Малькольма Фауна на табак
-#define ACH_MyParrot					63 // Саппорт пак // взаимодействовать с попугаем
+#define ACH_MyParrot					63 // Взаимодействовать с попугаем из DLC Support Pack
+#define ACH_Clan_Lambrini				64 // Пройти кв. 'Клан Ламбрини' DLC Sea Dogs
+#define ACH_Lesopilka					65 // Пройти кв. 'Остепенившийся пират' DLC Sea Dogs
+#define ACH_Ohota_na_vedmu				66 // Пройти кв. 'Прокажённая' DLC Sea Dogs
+

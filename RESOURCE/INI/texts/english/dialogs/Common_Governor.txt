@@ -14,7 +14,7 @@ Common_Governor_4 {
 @<LinkRandPhrase>
 }
 Common_Governor_5_m {
-What do you want, scoundrel?! My soldiers are already on your trail—you won’t get far, pretty boy. Come on, let’s go upstairs!
+What do you want, scoundrel?! My soldiers are already on your trail—you won’t get far, filthy pirate!
 }
 Common_Governor_5_f {
 What do you want, you wretch?! My soldiers are already on your trail—you won’t get far, scoundrel!

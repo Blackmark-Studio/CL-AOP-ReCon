@@ -430,3 +430,21 @@ Eh bien, faites amener ce ladrón immédiatement—je suis impatient de commence
 AntonioDeSouza_94 {
 Très bien, monseigneur.
 }
+AntonioDeSouza_95 {
+Monseigneur, je sais qu'il y a ici une sorcière nommée Carla, une ancienne prostituée du port. Par ses arts sombres, elle a déjà tué deux personnes : le capitaine Miguel Cuenda et le bon hidalgo Bartholomew, qui est mort avant d'avoir pu se repentir. Il était au service du gouverneur de Belize. Je prie Dieu pour que la Sainte Inquisition la punisse pour ses actes coupables.
+}
+AntonioDeSouza_96_m {
+Monseigneur, j'ai affaire à vous. Ne refusez pas une minute d'attention à un fervent catholique.
+}
+AntonioDeSouza_96_f {
+Monseigneur, j'ai affaire à vous. Ne refusez pas une minute d'attention à une fervente catholique.
+}
+AntonioDeSouza_97_m {
+Ah, que ton âme soit éternellement bénie pour ton action juste, mon fils. Nous allons nous occuper de cette sorcière. Ton zèle sera récompensé par ma bénédiction personnelle.\nDe plus, mon fils, tu assisteras personnellement au supplice de cette engeance de sorcière brûlant dans le feu sacré de l'Inquisition.
+}
+AntonioDeSouza_97_f {
+Ah, que ton âme soit éternellement bénie pour ton action juste, ma fille. Nous allons nous occuper de cette sorcière. Ton zèle sera récompensé par ma bénédiction personnelle.\nDe plus, ma fille, tu assisteras personnellement au supplice de cette engeance de sorcière brûlant dans le feu sacré de l'Inquisition.
+}
+AntonioDeSouza_98 {
+Je l'espère, monseigneur.
+}

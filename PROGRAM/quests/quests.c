@@ -99,7 +99,7 @@ bool CheckQuestRecordEx(aref qref,string textId,string RefQuestID)
 
 	if( CheckAttribute(qref,"Text") )
 	{
-		trace("Text found");
+		//trace("Text found");
 		makearef(arTextList,qref.Text);
 		q = GetAttributesNum(arTextList);
 		for(n=0; n<q; n++)
@@ -108,12 +108,12 @@ bool CheckQuestRecordEx(aref qref,string textId,string RefQuestID)
 			GetDateAndText( GetAttributeValue(arCurText), &str_date,&str_text,&str_refquest );
 			if(textId==str_text && RefQuestID==str_refquest)
 			{
-				trace("Text found again");
+				//trace("Text found again");
 				return true;
 			}
 		}
 	}
-	trace("Text NOT found again");
+	//trace("Text NOT found again");
 	return false;
 }
 bool CheckQuestRecord(aref qref,string textId)
@@ -340,11 +340,30 @@ void AddQuestUserDataForTitle(string idQuest, string strID, string strData)
 		SetQuestHeader(idQuest);
 	}
 	string tmpStr = "";
+	string part1, part2;
+	string sTemplate = "@<"+strID+">";
 	if( CheckAttribute(pchar,"QuestInfo."+idQuest+".UserData") )
 	{
 		tmpStr = pchar.QuestInfo.(idQuest).UserData;
 	}
-	pchar.QuestInfo.(idQuest).UserData = tmpStr + "@<"+strID+">" + strData;
+
+	// Если уже есть данные по ключу - заменим
+	int iFindPos = findSubStr(tmpStr, sTemplate, 0);
+	if (iFindPos >= 0)
+	{
+		int iFindPosEnd = findSubStr(tmpStr, "@<", iFindPos + strlen(sTemplate));
+		part1 = strcut(tmpStr, 0, iFindPos + strlen(sTemplate) - 1);
+		part2 = "";
+		if (iFindPosEnd >= 0)
+		{
+			part2 = strcut(tmpStr, iFindPosEnd, strlen(tmpStr) - 1);
+		}
+		pchar.QuestInfo.(idQuest).UserData = part1 + strData + part2;
+	}
+	else
+	{
+		pchar.QuestInfo.(idQuest).UserData = tmpStr + sTemplate + strData;
+	}
 }
 void AddQuestUserData(string idQuest, string strID, string strData)
 {
@@ -1812,6 +1831,13 @@ bool isLocationFreeForQuests(string loc_id)
 	int  i, nQuestsNum;
 	bool bEnableEncounters = true;
 	ref  chr;
+
+	if (loc_id == "")
+	{
+		Log_TestInfo("ERROR isLocationFreeForQuests: loc_id is empty");
+		Trace("ERROR isLocationFreeForQuests: loc_id is empty");
+		return false;
+	}
 
 	makearef(quests, PChar.Quest);
 	nQuestsNum = GetAttributesNum(quests);

@@ -505,7 +505,7 @@ int LocationInitSantiago(int n)
 	locations[n].id = "Santiago_townhall";
 	locations[n].id.label = "Townhall";
 	locations[n].filespath.models = "locations\inside\Residence03";
-	locations[n].image = "loading\inside\residence.tga";
+	locations[n].image = "loading\inside\Residence03.tga";
 	//Town sack
 	locations[n].townsack = "Santiago";
 	locations[n].lockWeather = "Inside";
@@ -955,24 +955,27 @@ int LocationInitSantiago(int n)
 	locations[n].islandIdAreal = "Cuba1";
 	//Models
 	//Always
-	locations[n].filespath.models = "locations\Outside\Jungles\Jungle5";
-	Locations[n].models.always.jungle = "jungle5";	
-	Locations[n].models.always.locators = "jungle5_locators";		
-	Locations[n].models.always.grassPatch = "jungle5_grass";
-	Locations[n].models.always.grassPatch.texture = "grass\grassshore.tga.tx";	
+	locations[n].filespath.models = "locations\Outside\Jungles\jungle13";
+	Locations[n].models.always.jungle = "jungle13";
+	Locations[n].models.always.rope = "Jungle13_Rope";
+	Locations[n].models.always.locators = "jungle13_locators";
+	Locations[n].models.always.grassPatch = "jungle13_grass";
+	Locations[n].models.always.grassPatch.texture = "grass\grassshore.tga.tx";
 	Locations[n].models.always.l1 = "plan1";
 	Locations[n].models.always.l1.level = 9;
-	Locations[n].models.always.l1.tech = "LocationModelBlend";
+	Locations[n].models.always.l1.tech = "DLightModel";
 	Locations[n].models.always.l2 = "plan2";
 	Locations[n].models.always.l2.level = 8;
-	Locations[n].models.always.l2.tech = "LocationModelBlend";
+	Locations[n].models.always.l2.tech = "DLightModel";
 	Locations[n].models.always.l3 = "plan3";
 	Locations[n].models.always.l3.level = 7;
-	Locations[n].models.always.l3.tech = "LocationModelBlend";	
+	Locations[n].models.always.l3.tech = "DLightModel";
 	//Day
-	locations[n].models.day.charactersPatch = "jungle5_patch";
+	locations[n].models.day.charactersPatch = "jungle13_patch";
+	//locations[n].models.day.charactersPatch = "Jungle_SP2_patch";
 	//Night
-	locations[n].models.night.charactersPatch = "jungle5_patch";	
+	locations[n].models.night.charactersPatch = "jungle13_patch";
+	//locations[n].models.night.charactersPatch = "Jungle_SP2_patch";
 	//Environment
 	locations[n].environment.weather = "true";
 	locations[n].environment.sea = "false";
@@ -1147,7 +1150,7 @@ int LocationInitSantiago(int n)
 	
 	locations[n].id = "Mayak9_Lighthouseroom";
 	locations[n].id.label = "House";
-	locations[n].image = "loading\inside\mediumhouse10.tga";
+	locations[n].image = "loading\inside\mediumhouse05.tga";
 	//Town sack
 	locations[n].townsack = "Santiago";
 	locations[n].islandId = "Cuba1";

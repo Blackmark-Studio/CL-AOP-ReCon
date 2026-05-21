@@ -1304,6 +1304,89 @@ void SetAlchemyRecipeKnown(string Recipe)
 	pchar.alchemy.(Recipe).isKnown = true;
 }
 
+// > инициализации рецептуры по алхимии
+//	result - что хотим получить (после знака ":" - сколько; отсутствие заданного кол-ва считается за 1)
+//	components - необходимые компоненты (после знака ":" - сколько, пример: "bullet:7, GunPowder:14"; отсутствие заданного кол-ва считается за 1)
+//	инструменты (не удаляются при крафте) можно выделить дописав после их id ":tool", пример: "bullet:2, crucible:tool, bullet_mold:tool, lamp:tool", кол-во указывать не нужно - всегда требуется только 1 шт. инструмента
+//	для визуального удобства везде можно писать с пробелами, они потрутся автоматически
+void InitAlchemyComponents(string result, string components)
+{
+	int iQty = 1;
+	result = stripblank(result);
+	components = stripblank(components);
+
+	if (HasStr(result, ":"))
+	{
+		iQty = sti(FindStringAfterChar(result, ":"));
+		result = FindStringBeforeChar(result, ":");
+	}
+
+	Restrictor(&iQty, 1, "");
+
+	ref rItem = ItemsFromID(result);
+	rItem.craft = true;
+	rItem.craft.id = result;
+	rItem.craft.components = components;
+	rItem.craft.qty = iQty;
+
+	// > пометим, что есть что
+	int n, q = KZ|Symbol(components, ",");
+	string sA, sB, sItem = components;
+
+	for (n = 0; n <= q; n++)
+	{
+		if (q > 0)
+			sItem = GetSubStr(components, ",", n);
+
+		if (HasStr(sItem, ":"))
+		{
+			sA = FindStringAfterChar(sItem, ":");
+			sB = FindStringBeforeChar(sItem, ":");
+			rItem = ItemsFromID(sB);
+
+			if (HasStrEx(sA, "tool,cat", "|"))
+			{
+				if (HasStr(sA, "tool"))
+					rItem.craft.tool = true;		// > инструмент
+				else
+					rItem.craft.catalyst = true;	// > катализатор // TODO
+			}
+			else
+				rItem.craft.ingredient = true;		// > ингредиент
+		}
+		else
+		{
+			rItem = ItemsFromID(sItem);
+			rItem.craft.ingredient = true;			// > ингредиент
+		}
+	}
+}
+
+// > рецептура по алхимии
+void InitAlchemyCraft()
+{
+	//						result: qty			components
+	InitAlchemyComponents("grapeshot", 			"bullet:5, crucible:tool, bullet_mold:tool");											// "Картечь"
+	InitAlchemyComponents("cartridge", 			"bullet, GunPowder");																	// "Бумажный патрон"
+	InitAlchemyComponents("harpoon:2", 			"mineral14, mineral11, mechanic_kit:tool");												// "Стрела"
+	InitAlchemyComponents("GunEchin:3", 		"GunPowder:6, mineral3, mineral16, mechanic_kit:tool, crucible:tool, lamp:tool");		// "Ежовый заряд"
+
+	InitAlchemyComponents("petard", 			"mineral13, GunPowder:10, mineral3, mineral12, mechanic_kit:tool");						// "Петарда"
+	InitAlchemyComponents("grenade", 			"mineral13, GunPowder:10, bullet:15, mineral3, mineral12, mechanic_kit:tool");			// "Граната"
+
+	InitAlchemyComponents("GunPowder_colt", 	"GunPowder:4, mortar_and_pestle:tool");													// "Револьверный порох"
+	InitAlchemyComponents("bullet_colt", 		"bullet:4, crucible:tool, bullet_mold:tool, lamp:tool");								// "Револьверная пуля"
+	InitAlchemyComponents("GunCap_colt:15", 	"mineral13, fulminate_silver, mechanic_kit:tool, crucible:tool, lamp:tool");			// "Капсюли"
+	InitAlchemyComponents("cartridge_colt", 	"bullet_colt, GunPowder_colt, mineral3, tailor_kit:tool");								// "Револьверный картридж"
+
+	InitAlchemyComponents("fulminate_silver",	"jewelry17, nitric_acid, ethanol, alchemy_kit:tool, lamp:tool");						// "Гремучее серебро"
+
+	InitAlchemyComponents("migraine_potion",	"herb_matricaria, herb_zingiber:2, mortar_and_pestle:tool, lamp:tool");					// "Лекарство от мигрени"
+	InitAlchemyComponents("potion1",			"herb_matricaria, herb_zingiber, potion5, mortar_and_pestle:tool");						// "Лечебное зелье"
+
+	InitAlchemyComponents("potionsangari:2", 	"potionwine:2, potionrum, indian4");													// Коктейль "Сангари" (2 вина + 1 ром)
+}
+
 // KZ > Вернуть конкретные предметы на труп rChar при его обыске
 void AddKeepItems(ref rChar)
 {

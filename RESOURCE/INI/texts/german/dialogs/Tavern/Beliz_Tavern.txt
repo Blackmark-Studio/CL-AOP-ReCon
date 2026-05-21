@@ -79,3 +79,66 @@ Heh, @<GetAddress_Form>, das sind keine Beichtväter. Diese ehrwürdigen Väter 
 Beliz_Tavern_22 {
 Ah, ich verstehe schon. Na gut, danke dir, mein Freund.
 }
+Beliz_Tavern_23 {
+Ich suche ein Mädchen... namens Lustige Carla, glaube ich. Wo kann ich sie finden?
+}
+Beliz_Tavern_24 {
+Ich suche ein Mädchen... namens Lustige Carla, glaube ich. Wo kann ich sie finden?
+}
+Beliz_Tavern_25 {
+Ich kenne keine Carla. Und wir bieten hier keine anderen Dienstleistungen an außer Speis und Trank. Wünschen Sie etwas zu trinken?
+}
+Beliz_Tavern_26 {
+Nein, danke. Ich gehe dann.
+}
+Beliz_Tavern_27 {
+Ich habe Ihnen bereits gesagt, dass es hier keine Carla gibt!
+}
+Beliz_Tavern_28 {
+Sie wird der Hexerei beschuldigt! Weißt du, was das bedeutet? Dass sie eine Hexe ist! Wenn du sie deckst, wirst du auf demselben Scheiterhaufen brennen wie sie. Ist das klar? Die Leute haben gesehen, wie sie wiederholt deine Taverne betreten hat. Also, wirst du es weiter leugnen, oder...?
+}
+Beliz_Tavern_29 {
+Oh, habt Erbarmen mit mir, @<GetAddress_Form>! Ich wollte das Gesetz nicht brechen — es ist nur... ich komme kaum über die Runden... Ich hatte keine andere Wahl, als den Huren zu erlauben, ihre Kunden hierherzubringen. Außerdem gibt es in unserem Kaff nicht einmal ein anständiges Bordell!
+}
+Beliz_Tavern_30 {
+Nun, ich denke, ein paar Tausend Pesos könnten deine Schuld lindern. Aber ich muss wissen, wo sie ist.
+}
+Beliz_Tavern_31 {
+Deine erbärmlichen Klagen interessieren mich nicht. Ich will nur wissen, wo sie ist.
+}
+Beliz_Tavern_32 {
+Oh, @<GetAddress_Form> — Sie ruinieren mich und mein Geschäft! Ich muss nächsten Monat den Steuereintreiber bezahlen! Zweitausend, das ist einfach unmöglich! Sie haben mir mit dem Feuertod gedroht, und jetzt wollen Sie, dass ich verhungere?!
+}
+Beliz_Tavern_33 {
+Du bist nichts als ein erbärmlicher Sünder... Nun gut, sag mir, wo Carla ist, und ich lasse dich in Ruhe. Möge der Herr dir vergeben.
+}
+Beliz_Tavern_34 {
+Du hast Staatsfeinde in deiner Taverne versteckt — du wirst also so oder so bezahlen müssen.
+}
+Beliz_Tavern_35 {
+Oh, Sie haben mein Leben zerstört! Gut, nehmen Sie das Gold — aber Sie werden auf ewig verflucht sein!
+}
+Beliz_Tavern_36 {
+Denk an dein Schicksal, erbärmlicher Sünder! Wenn du mir nicht sagst, wo Carla ist, werden deine Schreie aus dem Kerker des Gouverneurs die Einwohner von Belize noch lange Zeit beunruhigen.
+}
+Beliz_Tavern_37_m {
+Ja, ja, sie war hier! Aber sie ist vor Kurzem mit einem Kapitän weggesegelt. Als sie mir erzählte, dass sie geht, hätte ich fast geheult. So ein gutes Mädchen hat endlich ihr Schicksal gefunden. Ihr Kapitän war ein echter Mann, genau wie Sie — ebenso stark und mutig...
+}
+Beliz_Tavern_37_f {
+Ja, ja, sie war hier! Aber sie ist vor Kurzem mit einem Kapitän weggesegelt. Als sie mir erzählte, dass sie geht, hätte ich fast geheult. So ein gutes Mädchen hat endlich ihr Schicksal gefunden. Ihr Kapitän war ein starker und mutiger Mann, genau wie Sie...
+}
+Beliz_Tavern_38 {
+Wie hieß er?
+}
+Beliz_Tavern_39 {
+Miguel Cuenda, soweit ich mich erinnere. Er ist weggesegelt und hat Carla mitgenommen. Und... verzeihen Sie mir, @<GetAddress_Form> — ich bitte Sie inständig, ihr nicht zu sagen, dass ich sie verraten habe. Ich möchte nicht, dass sie meinen Namen auf ewig verflucht...
+}
+Beliz_Tavern_40 {
+Ich werde es ihr nicht sagen. Aber du musst mir sagen, wohin sie gegangen sind.
+}
+Beliz_Tavern_41 {
+Ich erinnere mich, dass sie etwas von einer Kolonie erwähnt hat — einer spanischen natürlich... Ich glaube, es war die Rede von Santo Domingo.
+}
+Beliz_Tavern_42 {
+Ich glaube dir. Aber denk daran — du solltest dich gut um deine schmutzige, aber leider unsterbliche Seele kümmern. Alles Gute!
+}

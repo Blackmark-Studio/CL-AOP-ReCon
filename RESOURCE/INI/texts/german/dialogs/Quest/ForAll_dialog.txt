@@ -3044,7 +3044,7 @@ ForAll_dialog_810 {
 Keine Sorge, ich lasse nicht zu, dass dir jemand etwas antut!
 }
 ForAll_dialog_811 {
-Ihr habt im selben Regiment gedient
+Ah, da sind Sie ja, gnädige Frau! Was, schon wieder ein Verehrer, wie ich sehe? Wann werden Sie endlich zur Ruhe kommen? Wahrscheinlich nie... Gehen Sie doch ins Bordell arbeiten, dort gehören Sie hin...
 }
 ForAll_dialog_812 {
 Ah, da sind Sie ja, gnädige Frau! Und wer ist das bei Ihnen? Noch eine Freundin aus dem Bordell? Ich würde sagen, genau dorthin gehören Sie...

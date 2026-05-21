@@ -3044,7 +3044,7 @@ ForAll_dialog_810 {
 No te preocupes, no dejaré que nadie te haga daño.
 }
 ForAll_dialog_811 {
-sirvieron en el mismo regimiento
+Ah, ahí está usted, señora. ¿Qué, otro admirador, según veo? ¿Cuándo se calmará de una vez? Probablemente nunca... Vaya a trabajar a un burdel, que es su lugar...
 }
 ForAll_dialog_812 {
 ¡Ah, ahí está usted, señora! ¿Y quién la acompaña? ¿Otra amiga del burdel? Diría que es justo donde pertenece...

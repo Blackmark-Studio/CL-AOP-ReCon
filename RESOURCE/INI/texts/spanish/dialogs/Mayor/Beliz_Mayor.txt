@@ -91,3 +91,15 @@ No dudo ni por un segundo que todo esto sucederá. He escuchado las historias.\n
 Beliz_Mayor_28 {
 Acaba de salvar su vida y su salud. Felicidades, y que siga bien en el futuro también, señor.
 }
+Beliz_Mayor_29 {
+Os recuerdo que habíais pedido entregar a la justicia a la mujer relacionada con el asesinato de vuestro secretario, Bartholomew Olster.
+}
+Beliz_Mayor_30 {
+Oh, sí, recibí una carta del santo padre sobre esa criatura diabólica y su destino. Habéis hecho un buen trabajo, capitán. Os agradezco de todo corazón vuestra ayuda en este asunto. Supongo que no fue nada fácil encontrarla. Os ofrezco una modesta recompensa por la cabeza de esa bruja: 15 000 piastras y mi gratitud personal.
+}
+Beliz_Mayor_31 {
+¡Gracias, señor gobernador! Acepto la recompensa. Adiós.
+}
+Beliz_Mayor_32 {
+¡Capitán, dicen que habéis logrado atrapar a la bruja, Carla la Alegre! ¡¿Es eso verdad?! ¡¡Increíble!!
+}

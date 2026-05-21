@@ -15,14 +15,14 @@ void ProcessDialogEvent()
 			dialog.text = StringFromKey("Maltese_dialog_1", UpperFirst(GetAddress_Form(NPChar)));
 			link.l1 = StringFromKey("Maltese_dialog_2");
 			link.l1.go = "exit";
-			if (CheckAttribute(pchar, "questTemp.PDM_PJ_SS"))    //Квест "Проклятая жара"
+			if (CheckAttribute(pchar, "questTemp.PDM_PJ_SS"))    //Квест "Невыносимая жара"
 			{
 				link.l1 = StringFromKey("Maltese_dialog_3");
 				link.l1.go = "PDM_PJ_SS_1";
 			}
 		break;
 
-		//******************** Квест "Проклятая жара" ******************
+		//******************** Квест "Невыносимая жара" ******************
 		case "PDM_PJ_SS_1":
 			dialog.text = StringFromKey("Maltese_dialog_4");
 			link.l1 = StringFromKey("Maltese_dialog_5", GetFullName(NPChar));
@@ -31,7 +31,8 @@ void ProcessDialogEvent()
 			DeleteAttribute(pchar, "questTemp.PDM_PJ_KV");
 			RemoveLandQuestMark_Main(CharacterFromID("FortFrance_tavernkeeper"), "PDM_Proklyataya_Jara");
 			RemoveLandQuestMarkToFantoms_Main("Maltie_officer", "PDM_Proklyataya_Jara");
-			AddMoneyToCharacter(pchar, 5000);
+			AddMoneyToCharacter(pchar, 2500);
+			GiveItem2Character(pchar, "blade_maltes");
 		break;
 
 		case "PDM_PJ_SS_2":

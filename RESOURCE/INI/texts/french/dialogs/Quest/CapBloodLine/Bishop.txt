@@ -1404,7 +1404,7 @@ Bishop_468 {
 Récemment, un médecin envoyé par l’acheteur est venu me voir… on dirait que l’affaire va bientôt se conclure.
 }
 Bishop_469 {
-Calme-toi, Nicholas. L’or destiné à t’acheter m’est déjà revenu en héritage. Tu viens avec nous demain soir.
+Calme-toi, Nicholas. L'argent destiné à t’acheter m’est déjà revenu en héritage. Tu viens avec nous demain soir.
 }
 Bishop_470 {
 J'ai hâte d'être à demain soir !

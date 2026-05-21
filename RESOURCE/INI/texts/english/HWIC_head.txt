@@ -1,0 +1,39 @@
+HWIC_head_1 {
+Greetings. I am very busy right now, so speak up — do you have business with me?
+}
+HWIC_head_2 {
+Here is the thing... One of the pirates wants to enter your service. He is willing to pay 20,000 pesos for an opportunity that will allow him to work for you.
+}
+HWIC_head_3 {
+I wanted to know how everything went with Hugo?
+}
+HWIC_head_4 {
+No, no, pay no mind to me. I am already leaving.
+}
+HWIC_head_5 {
+Who is this man?
+}
+HWIC_head_6 {
+His name is Hugo Lumbersaw. He...
+}
+HWIC_head_7 {
+Do you understand that this man is an abominable pirate and a brutal killer? I will never allow such a man to be on our registry of captains.
+}
+HWIC_head_8_m {
+But he is not dangerous... I have seen him, he is just a tired old man, and his greatest desire is to sleep in a comfortable bed. He is ready to retire and is looking for a safe haven where he will be allowed to live in peace.
+}
+HWIC_head_8_f {
+But he is not dangerous... I have seen her, he is just a tired old man, and his greatest desire is to sleep in a comfortable bed. He is ready to retire and is looking for a safe haven where he will be allowed to live in peace.
+}
+HWIC_head_9 {
+Hmm... If you say so, perhaps you are right. I will trust you on this matter, @<pchar>. Besides, he could be useful to us as a consultant on anti-piracy operations. Very well.\nI have this contract form which you will take and hand over to him, Captain. Hugo must report to me immediately upon receiving it to sign all the necessary paperwork. And this is mandatory, you must understand this, Captain. I will notify the local authorities of his arrival. Now, allow me to return to my business.
+}
+HWIC_head_10 {
+Of course, @<GetFullName>! Goodbye!
+}
+HWIC_head_11 {
+Oh, thank you very much, @<GetAddress_Form> @<pchar>. He is a very brave and experienced captain. Our enemies have already lost half a dozen ships. He is also a magnificent storyteller. His tales of the old days draw crowds in the tavern! Now, if you will excuse me, I must ask you to leave.
+}
+HWIC_head_12 {
+All the best to you!
+}

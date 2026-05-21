@@ -3044,7 +3044,7 @@ ForAll_dialog_810 {
 Don’t worry, I won’t let anyone hurt you!
 }
 ForAll_dialog_811 {
-you served in the same regiment
+Ah, there you are, madam! What, another admirer, I see? When will you ever calm down? Probably never... Go work in a brothel, that's where you belong...
 }
 ForAll_dialog_812 {
 Ah, there you are, madam! Oh, and who’s that with you? Another friend from the brothel? I’d say that’s just where you belong...

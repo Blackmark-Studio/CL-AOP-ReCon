@@ -70,7 +70,6 @@ void ActiveF10Control()
 	{
 		DeleteAttributeEx(&TEV, "Music.KeepPlaying,Music.ForceKeepPlaying");
 		StopSound(musicID, 500);
-		ReleaseSound(musicID);
 		
 		if (and(bSeaActive, !bAbordageStarted) || IsEntity(&worldMap))
 		{

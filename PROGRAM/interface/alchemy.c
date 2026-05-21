@@ -85,8 +85,8 @@ void ProcessCancelExit()
 
 void IDoExit(int exitCode)
 {
-	aref curItem, arItem, arChests, rootItems;
-	int j, iItemsQty, iQty, iRoot, iRes;
+	aref curItem, arItem, arChests, rootItems, arBoxes;
+	int j, k, iItemQty, iRoot, iRes;
 	string sBox, sItem;
 
 	makearef(rootItems, alchemy.Items);
@@ -98,8 +98,8 @@ void IDoExit(int exitCode)
 
 		if (Items_FindItem(GetAttributeName(curItem), &arItem) >= 0)
 		{
-			iItemsQty = sti(GetAttributeValue(curItem));
-			AddItems(pchar, arItem.id, iItemsQty);
+			iItemQty = sti(GetAttributeValue(curItem));
+			AddItems(pchar, arItem.id, iItemQty);
 		}
 	}
 
@@ -110,21 +110,29 @@ void IDoExit(int exitCode)
 	{
 		curItem = GetAttributeN(rootItems, j);
 
-		if (Items_FindItem(GetAttributeName(curItem), &arItem) >= 0 && CheckAttributeMass(&arItem, "CabinItems", "Box,Qty", "&"))
+		if (Items_FindItem(GetAttributeName(curItem), &arItem) >= 0 && CheckAttribute(&arItem, "CabinItems.Qty"))
 		{
-			iItemsQty = sti(GetAttributeValue(curItem));
-			sBox = arItem.CabinItems.Box;
-			iQty = sti(arItem.CabinItems.Qty);
-			sItem = arItem.id;
+			makearef(arBoxes, arItem.CabinItems.Qty);
+			iItemQty = sti(GetAttributeValue(curItem));
 
-			iRes = iQty;
+			for (k = 0; k < GetAttributesNum(arBoxes); k++)
+			{
+				if (iItemQty <= 0) break;
 
-			if (iItemsQty - iQty < 0)
-				iRes = iItemsQty;
+				sBox = GetAttributeName(GetAttributeN(arBoxes, k));
+				sItem = arItem.id;
+				iRes = sti(arItem.CabinItems.Qty.(sBox));
 
-			makearef(arChests, locations[FindLocation(Get_My_Cabin())].(sBox));
-			arChests.Items.(sItem) = (sti(GetAttrValue(arChests, "Items." + sItem)) + iRes);
-			pchar.Items.(sItem) = (sti(GetAttrValue(pchar, "Items." + sItem)) - iRes);
+				if (iItemQty - iRes < 0)
+					iRes = iItemQty;
+
+				iItemQty -= iRes;
+
+				makearef(arChests, locations[FindLocation(Get_My_Cabin())].(sBox));
+				arChests.Items.(sItem) = (sti(GetAttrValue(arChests, "Items." + sItem)) + iRes);
+				pchar.Items.(sItem) = (sti(GetAttrValue(pchar, "Items." + sItem)) - iRes);
+			}
+
 			DeleteAttribute(&arItem, "CabinItems");
 		}
 	}
@@ -257,7 +265,7 @@ void FillItemsScroll()
 	{
 		makeref(itm, Items[n]);
 
-		if (CheckAttribute(itm, "id") && CheckAttribute(itm, "craft") && itm.craft == true && or(bBettaTestMode, isMultiObjectKnown(itm.id)))
+		if (CheckAttribute(itm, "id") && CheckAttribute(itm, "craft") && itm.craft == "1" && or(bBettaTestMode, isMultiObjectKnown(itm.id)))
 		{
 			sAttr = "pic" + (m + 1);
 			arTable.(sAttr).itemId = itm.id;
@@ -324,6 +332,7 @@ void AddToTable(ref rItem)
 	string sItmId, sAttr, sList, sItmUse = XI_ConvertString("Component");
 	string sTmp = "*";
 	int n, i, q, iNum, iLeftQty, iRightQty, iQty, iChests, iconSize = 46;
+	int iAlchemyItems, iPcharItems;
 	ref itm;
 	aref arTable;
 
@@ -371,14 +380,22 @@ void AddToTable(ref rItem)
 				sAttr = FindStringBeforeChar(sAttr, ":");
 			}
 
+			if (CheckCharacterPerk(pchar, "Alchemy") && StrEndsWith(sAttr, "_kit"))
+				continue;
+
 			GrabCabinItems(sAttr);
 			itm = ItemsFromId(sAttr);
 
+			iPcharItems = GetCharacterItem(pchar, itm.id);
+			iAlchemyItems = GetCharacterItem(alchemy, itm.id);
+
 			// > инструменты при наличии сразу перекидываем вправо
-			if (CheckAttribute(itm, "craft.tool") && GetCharacterItem(pchar, itm.id) > 0 && GetCharacterItem(alchemy, itm.id) < 1)
+			if (or(CheckAttribute(itm, "craft.tool"), HasStr(sTmp, "tool")) && iPcharItems > 0 && iAlchemyItems < 1)
 			{
 				RemoveItems(pchar, itm.id, 1);
 				AddItems(alchemy, itm.id, 1);
+				iPcharItems--;
+				iAlchemyItems++;
 			}
 
 			sList = "tr" + n;
@@ -398,7 +415,7 @@ void AddToTable(ref rItem)
 			arTable.td1.color = iGreen;
 			//arTable.td2.color = iGreen;
 
-			if (GetCharacterItem(pchar, itm.id) < iQty && GetCharacterItem(alchemy, itm.id) < iQty)
+			if (iPcharItems < iQty && iAlchemyItems < iQty)
 			{
 				arTable.td1.color = iRed;
 				//arTable.td2.color = iRed;
@@ -410,7 +427,7 @@ void AddToTable(ref rItem)
 			if (iLeftQty < iQty && iRightQty < iQty)
 				arTable.td3.color = iRed;
 
-			if (GetCharacterItem(alchemy, itm.id) >= iQty)
+			if (iAlchemyItems >= iQty)
 				arTable.td5.color = iGreen;
 
 			arTable.td2.str = sItmUse;
@@ -454,8 +471,7 @@ void GrabCabinItems(string _sAttr)
 
 		if (CheckAttribute(arChests, "Items." + _sAttr))
 		{
-			rItm.CabinItems.Box = "" + sBox;
-			rItm.CabinItems.Qty = "" + arChests.Items.(_sAttr);
+			rItm.CabinItems.Qty.(sBox) = "" + arChests.Items.(_sAttr);
 			pchar.Items.(_sAttr) = sti(GetAttrValue(pchar, "Items." + _sAttr)) + sti(arChests.Items.(_sAttr));
 			arChests.Items.(_sAttr) = "0";
 		}
@@ -505,6 +521,8 @@ int CheckAlchemy(string sItemID, bool bCheck)
 
 	ref rItem = ItemsFromID(sItemID);
 	int i, iNum, iReq, itmQty, Qty = 0;
+	int iAlchemyItems = 0;
+	int iPCharItems = 0;
 	string sAttr, sItmId, sTmp;
 	bool bOk = false;
 	bool bTool = false;
@@ -537,12 +555,15 @@ int CheckAlchemy(string sItemID, bool bCheck)
 			}
 		}
 
+		iAlchemyItems = GetCharacterFreeItem(alchemy, sAttr);
+		iPCharItems = GetCharacterFreeItem(pchar, sAttr);
+
 		if (!bTool)
 		{
 			if (bCheck)
-				itmQty = makeint((GetCharacterFreeItem(alchemy, sAttr) + GetCharacterFreeItem(pchar, sAttr)) / iReq);
+				itmQty = makeint((iAlchemyItems + iPCharItems) / iReq);
 			else
-				itmQty = makeint(GetCharacterFreeItem(alchemy, sAttr) / iReq);
+				itmQty = makeint(iAlchemyItems / iReq);
 
 			if (itmQty > 0)
 			{
@@ -565,7 +586,7 @@ int CheckAlchemy(string sItemID, bool bCheck)
 		}
 		else
 		{
-			if (GetCharacterFreeItem(alchemy, sAttr) >= iReq || and(GetCharacterFreeItem(alchemy, sAttr) + GetCharacterFreeItem(pchar, sAttr) >= iReq, bCheck))
+			if (iAlchemyItems >= iReq || and(iAlchemyItems + iPCharItems >= iReq, bCheck))
 				bOk = true;
 			else
 			{
@@ -622,7 +643,7 @@ void onGetAllBtnClick()
 	}
 
 	AddItems(pchar, sCurItem, Qty * sti(rItem.craft.qty));
-	WaitDate("", 0, 0, 0, 0, 5 + (3 * (Qty - 1)));
+	WaitDate("", 0, 0, 0, 0, 5 + (2 * Qty));
 
 	AddToTable(ItemsFromId(sCurItem));
 	SetItemsName(1);
@@ -633,7 +654,6 @@ void onGetAllBtnClick()
 	GameInterface.TABLE_LIST.select = 1;
 
 	sTmp = ColorText(GetConvertStr(rItem.name, "ItemsDescribe.txt"), "goldenrod"); // > красиво, но багует
-	//	sTmp = GetConvertStr(rItem.name, "ItemsDescribe.txt");
 
 	PlaySound("Important_item");
 	SetFormatedText("RESULT_DONE", XI_ConvertString("CraftItDone") + " " + Qty * sti(rItem.craft.qty) + XI_ConvertString("pcs") + " " + XI_ConvertString("CraftItem") + " : \n\n" + sTmp);
@@ -724,10 +744,10 @@ void QTY_CREATE_UPDATE(string sItem)
 
 void CalcMe(ref rChar, ref rStore)
 {
-	int i, iNum, iReq, iC, iS;
+	int i, iNum, iReq, iPcharItems, iAlchemyItems;
 	string sAttr, sItmId, sTmp = "*";
 
-	ref rItem    = ItemsFromId(sCurItem);
+	ref rItem = ItemsFromId(sCurItem);
 
 	sItmId = rItem.craft.components;
 	iNum = KZ|Symbol(sItmId, ",");
@@ -752,15 +772,15 @@ void CalcMe(ref rChar, ref rStore)
 			}
 		}
 
-		iC = GetCharacterFreeItem(rChar, sAttr);
-		iS = GetCharacterFreeItem(rStore, sAttr);
+		iPcharItems = GetCharacterFreeItem(rChar, sAttr);
+		iAlchemyItems = GetCharacterFreeItem(rStore, sAttr);
 
-		if (!HasStrEx(sTmp, "tool,cat", "|") && iC >= 1)
+		if (!HasStrEx(sTmp, "tool,cat", "|") && iPcharItems >= 1)
 		{
-			if (and(iC > 0, iC < iReq) || and(iResult < 1, CheckAttribute(rStore, "id") && rStore.id == pchar.id))
-				iReq = iC;
+			if (and(iPcharItems > 0, iPcharItems < iReq) || and(iResult < 1, CheckAttribute(rStore, "id") && rStore.id == pchar.id))
+				iReq = iPcharItems;
 			if (CheckAttribute(rChar, "id") && rChar.id == pchar.id && iResult > 1)
-				iReq = iResult * iReq - iS;
+				iReq = iResult * iReq - iAlchemyItems;
 
 			AddItems(rStore, sAttr, iReq);
 			RemoveItems(rChar, sAttr, iReq);
@@ -776,7 +796,6 @@ void OnHeaderClick()
 	int iCol = GetEventData();
 
 	if (sNode == "TABLE_LIST") SortAlchemyTable(iCol, false, sNode);
-
 }
 
 void SortAlchemyTable(int column, bool preserveState, string tableName)
@@ -972,7 +991,6 @@ void Tutorial_ProcCommand()
 			case "TUTORIAL_B_OK2": CloseAlchemyTutorial(); break;
 		}
 	}
-
 }
 
 void Tutorial_ShowInfoWindow()

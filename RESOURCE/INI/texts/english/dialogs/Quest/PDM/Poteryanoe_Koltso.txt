@@ -263,8 +263,11 @@ Poteryanoe_Koltso_69_f {
 Life doesn’t end here, madam. I think you should find your relatives—I’m sure they miss you dearly. Farewell.
 }
 Poteryanoe_Koltso_70 {
-Hold on, hold on, @<GetAddress_Form>. You’ve earned a reward. Here, take 5,000 coins and 10 diamonds. They’re yours now.
+Hold on, hold on, @<GetAddress_Form>. You’ve earned a reward. Take all the money I have on me and all my jewelry. They are yours now. Thank you, captain. Thank you...
 }
 Poteryanoe_Koltso_71 {
 Thank you very much, ma’am.
+}
+Poteryanoe_Koltso_72 {
+This ring belongs to a very old woman who lost her only son... A very unfortunate old woman who has gone mad and who reminds you of your mother. And this ring was taken from her son's dead body. I just want to return it to its true owner. Think for yourself, will such a magical ring bring you happiness?
 }

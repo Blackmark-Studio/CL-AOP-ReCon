@@ -410,6 +410,18 @@ void LAi_ActorRunToLocatorNoCheck(aref chr, string group, string locator, string
 	LAi_ActorRunToLocator(chr, group, locator, quest, timeout);
 }
 
+// Указать актёру переместиться в заданную точку
+void LAi_ActorMoveToPoint(aref chr, bool run, float x, float y, float z, string quest, float timeout)
+{
+    string locator = chr.id;
+    loadedLocation.locators.temp.(locator).x = x;
+    loadedLocation.locators.temp.(locator).y = y;
+    loadedLocation.locators.temp.(locator).z = z;
+    chr.ToPointForced = "";
+	if (run) LAi_ActorRunToLocatorNoCheck(chr, "temp", locator, quest, timeout);
+    else LAi_ActorGoToLocatorNoCheck(chr, "temp", locator, quest, timeout);
+}
+
 //Указать актёру идти в заданную локацию
 void LAi_ActorGoToLocationNoCheck(aref chr, string groupExit, string locatorExit, string locID, string groupEnter, string locatorEnter, string quest, float timeout)
 {
@@ -647,6 +659,22 @@ void LAi_ActorSetLayMode(aref chr)
     chr.actions.fightdead.d1    = "Lay_2";
     chr.actions.dead.d1		    = "Lay_2"; //fix
 	EndChangeCharacterActions(chr);
+}
+
+//Установить анимацию сидячего на земле персонажа
+void LAi_ActorSetGroundSitMode(aref chr)
+{
+	if(LAi_type_actor_Error(chr, false)) return;
+	chr.chr_ai.type.mode = "groundSit";
+	LAi_SetSitPoorAnimation(chr);
+}
+
+//Установить анимацию сидячего губернатора
+void LAi_ActorSetHuberMode(aref chr)
+{
+	if(LAi_type_actor_Error(chr, false)) return;
+	chr.chr_ai.type.mode = "sit";
+	LAi_SetHuberSitAnimation(chr);
 }
 
 //------------------------------------------------------------------------------------------

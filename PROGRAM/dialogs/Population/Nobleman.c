@@ -390,7 +390,7 @@ void ProcessDialogEvent()
 			AddQuestRecord("Noblelombard", "4");
 			AddQuestUserData("Noblelombard", "sName", pchar.GenQuest.Noblelombard.Name);
 			CloseQuestHeader("Noblelombard");
-			DeleteAttribute(Pchar, "quest.noblelombard");
+			DeleteAttribute(Pchar, "questTemp.noblelombard");
 			DeleteAttribute(Pchar, "GenQuest.Noblelombard");
 			RemoveLandQuestMark_Gen(npchar, "Noblelombard");
 		break;

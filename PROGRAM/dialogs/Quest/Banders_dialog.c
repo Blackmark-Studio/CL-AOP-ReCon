@@ -82,7 +82,7 @@ void ProcessDialogEvent()
 					pchar.questTemp.jailCanMove.Deliver.ShipName1 = GenerateRandomNameToShip(sti(pchar.questTemp.jailCanMove.Deliver.Nation));
 					pchar.questTemp.jailCanMove.Deliver.ShipName2 = GenerateRandomNameToShip(sti(pchar.questTemp.jailCanMove.Deliver.Nation));
 
-					dialog.text = StringFromKey("Banders_dialog_14", FindDaysString(sti(pchar.questTemp.jailCanMove.Deliver.terms)), pchar.questTemp.jailCanMove.Deliver.Island.Areal, pchar.questTemp.jailCanMove.Deliver.add1, pchar.questTemp.jailCanMove.Deliver.ShipName1, pchar.questTemp.jailCanMove.Deliver.ShipName2);
+					dialog.text = StringFromKey("Banders_dialog_14", FindDaysString(sti(pchar.questTemp.jailCanMove.Deliver.terms)), pchar.questTemp.jailCanMove.Deliver.Island.Areal, pchar.questTemp.jailCanMove.Deliver.add1, pchar.questTemp.jailCanMove.Deliver.ShipName1, pchar.questTemp.jailCanMove.Deliver.ShipName2, pchar.questTemp.jailCanMove.Deliver.Goods);
 					link.l1 = StringFromKey("Banders_dialog_15", pchar);
 					link.l1.go = "Step_lay";
 				break;
@@ -95,7 +95,7 @@ void ProcessDialogEvent()
 					pchar.questTemp.jailCanMove.Deliver.ShipName1 = GenerateRandomNameToShip(sti(pchar.questTemp.jailCanMove.Deliver.Nation));
 					pchar.questTemp.jailCanMove.Deliver.ShipName2 = GenerateRandomNameToShip(sti(pchar.questTemp.jailCanMove.Deliver.Nation));
 
-					dialog.text = StringFromKey("Banders_dialog_16", FindDaysString(sti(pchar.questTemp.jailCanMove.Deliver.terms)), pchar.questTemp.jailCanMove.Deliver.Island.Areal, pchar.questTemp.jailCanMove.Deliver.add1, pchar.questTemp.jailCanMove.Deliver.ShipName1, pchar.questTemp.jailCanMove.Deliver.ShipName2);
+					dialog.text = StringFromKey("Banders_dialog_16", FindDaysString(sti(pchar.questTemp.jailCanMove.Deliver.terms)), pchar.questTemp.jailCanMove.Deliver.Island.Areal, pchar.questTemp.jailCanMove.Deliver.add1, pchar.questTemp.jailCanMove.Deliver.ShipName1, pchar.questTemp.jailCanMove.Deliver.ShipName2, pchar.questTemp.jailCanMove.Deliver.Goods);
 					link.l1 = StringFromKey("Banders_dialog_17", pchar);
 					link.l1.go = "Step_trader";
 				break;

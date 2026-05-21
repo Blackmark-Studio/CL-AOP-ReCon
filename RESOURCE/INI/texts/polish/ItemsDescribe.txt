@@ -237,8 +237,8 @@ itmname_patent_por {Portugalski list kaperski}
 itmdescr_patent_por {List kaperski wydany przez kancelarię Jego Ekscelencji Vasco Mascarenhasa, potwierdzający twoją służbę dla Portugalii. Zobowiązuje cię do obrony interesów państwa i utrzymania statku zgodnie z przepisami marynarki.}
 itmname_OpenBook {Dziennik okrętowy Richarda Sawkinsa}
 itmdescr_OpenBook {Niedbale prowadzony dziennik okrętowy, pełen chaotycznych myśli starego łajdaka. Taki dokument nawigacyjny wzbudziłby litość u każdego szanującego się kapitana.}
-itmname_ShipsJournal {Dziennik pokładowy kapitana Graya}
-itmdescr_ShipsJournal {Dziennik pokładowy kapitana Graya.}
+itmname_ShipsJournal {Dziennik okrętowy kapitana Graya}
+itmdescr_ShipsJournal {Dziennik okrętowy kapitana Graya.}
 itmname_PortmansBook {Zagubiony dziennik okrętowy}
 itmdescr_PortmansBook {Dziennik okrętowy zapomniany przez roztargnionego kapitana u jednego z urzędników portowych. Trzeba go zwrócić.}
 itmname_LogbookLSC {Wysłużony dziennik okrętowy}
@@ -246,13 +246,13 @@ itmdescr_LogbookLSC {Wysłużony dziennik okrętowy, trzeba go przeczytać.}
 itmdescr_LogbookLSCReading {Wpisy w dzienniku okrętowym są ledwo czytelne, a papier przemókł. Da się odczytać tylko kilka słów: „sztorm”, „Tizer”, „okropny”, „fort”, „przeklęty”, „wyspa”, „kraby”, „port”.}
 itmdescr_LogbookLSCDecrypted {Do zwykłego dziennika pokładowego dodano stronę z odszyfrowaniem.}
 itmdescr_LogbookLSCDecryptedReading {Ten dziennik może być tylko przynętą, ale równie dobrze kluczem do czegoś większego. Tylko czas pokaże, do czego naprawdę służy ten przedmiot.}
-itmname_RingCapBook {Dziennik pokładowy „Santa Lucia”}
+itmname_RingCapBook {Dziennik okrętowy „Santa Lucia”}
 itmdescr_RingCapBook
 {
-Dziennik pokładowy pinasy 'Santa Lucia'.
+Dziennik okrętowy pinasy 'Santa Lucia'.
 Warto przeczytać – zapiski najpewniej prowadzone były aż do samego zatonięcia statku.
 }
-itmdescr_RingCapBookRead {Dziennik pokładowy pinasy 'Santa Lucia'.}
+itmdescr_RingCapBookRead {Dziennik okrętowy pinasy 'Santa Lucia'.}
 itmtext_RingCapBook
 {
 ... z Caracas popłynęliśmy wzdłuż wybrzeża do indiańskiej osady, która zbierała dla mnie koprę osobiście. Przyjaźń z Indianami bardzo się opłaca. Będę kupował od nich koprę, omijając wszelkie handlowe narzuty pośredników...
@@ -265,6 +265,15 @@ itmtext_RingCapBook
 ... to coś niesamowitego! Nigdy nie widziałem tyle złota! Były tam samorodki wielkości gęsiego jaja! Nawet połowa tych bogactw wystarczyłaby mi do końca życia. Wawaya protestowała, ale udało mi się ją przekonać. Nawet podwoiłem wysokość daru, by uspokoić ukochaną...
 ... dopiero po dwóch tygodniach ja, mój pierwszy oficer i kwatermistrz dostarczyliśmy indiańskie złoto na wybrzeże krytą furą. Nikt inny na statku o tym nie wie – nie ufam marynarzom. Poza tym załoga jest zirytowana długim postojem przy dzikim brzegu, gdzie schowałem 'Santa Lucia', by uniknąć pościgu ojca Wawayi...
 ... nocą we trójkę przenieśliśmy złoto na statek i ukryliśmy je w jednej ze skrzyń, wyrzucając nadmiar kopry za burtę. Przykryliśmy złoto grubą warstwą kopry – żaden marynarz nie domyśli się, co kryje ta niepozorna skrzynia. Wreszcie wypływamy. Jeszcze tylko kilka tygodni – i moja słodka Wawaya oraz ja dotrzemy do Nowej Hiszpanii i pobierzemy się w kościele. Jesteśmy sobie przeznaczeni i będziemy razem, póki śmierć nas nie rozłączy...
+}
+itmname_LesopilkaLog {Dziennik pokładowy}
+itmdescr_LesopilkaLog
+{
+Dziennik pokładowy w czerwonej okładce, zawierający informacje o przewożonym ładunku.
+}
+itmtext_LesopilkaLog
+{
+... Podjąłem decyzję, że na czas naprawy statku przeniesiemy część skarbów na wyspę. Na wszelki wypadek. Nasz okręt jest teraz bardzo narażony i nie mogę zagwarantować, że zdołam obronić cenny ładunek. Jeśli nagle nadciągną piraci, na wyspie znajduje się dogodna pozycja, z której podejmiemy walkę...
 }
 itmname_unarmed {Nieuzbrojony}
 itmdescr_unarmed {Umiejętność obrony siebie przy użyciu jedynej pewnej broni: własnych pięści.}
@@ -441,7 +450,7 @@ Gładkolufowa broń ładowana od wylotu z bardziej niezawodnym mechanizmem niż 
 ~
 Wymaga perka 'Szkolenie muszkietera'.
 }
-itmname_mushket_H2 {Ekskluzywny dubeltowy muszkiet}
+itmname_mushket_H2 {Muszkiet dwulufowy}
 itmdescr_mushket_H2
 {
 Dwulufowy muszkiet z zamkiem skałkowym wykonany na zamówienie. Wyjątkowe dzieło sztuki rusznikarskiej. Mimo wysokiej ceny konstrukcja jest nieco przestarzała. Jednak przy całej swojej sile i skuteczności ten wspaniały karabin wymaga od właściciela pewnych umiejętności i doświadczenia.
@@ -455,7 +464,7 @@ Rodowa broń palna Tichinguita. Unikalny egzemplarz stworzony na bazie indiańsk
 ~
 Wymaga perka 'Szkolenie Muszkietera'.
 }
-itmname_mushket2x2 {Muszkiet dwulufowy}
+itmname_mushket2x2 {Ekskluzywny dubeltowy muszkiet}
 itmdescr_mushket2x2
 {
 Arcydzieło rusznikarstwa z Saint-Etienne. To właśnie Francuzi stworzyli dwulufową broń gwintowaną, udoskonalając zamek baterii. Użycie tej broni jest niemożliwe bez szkolenia w wojskowej szkole Starego Świata.
@@ -634,6 +643,8 @@ itmname_potionrum {Butelka rumu}
 itmdescr_potionrum {Żaden rum nie powali takiego pirata jak ty, więc pij śmiało... A przy okazji, jeśli jesteś ranny, alkohol w nim pomoże leczyć rany i zapobiec zakażeniu.}
 itmname_potionwine {Wyśmienite wino}
 itmdescr_potionwine {Jedno z najlepszych francuskich win na Karaibach. Jego relaksujące działanie pomoże ci odzyskać siły i zapobiegnie infekcji.}
+itmname_potionsangari {Sangaree}
+itmdescr_potionsangari {Orzeźwiający napój alkoholowy. Połączenie czerwonego wina i mocnego rumu, doprawione sekretnymi składnikami, idealnie gasi pragnienie w nieznośnym upale. Napój krzepi i dodaje sił, nie powodując tak ciężkiego upojenia jak czysty alkohol.}
 itmname_jewelry1 {Szafir}
 itmdescr_jewelry1 {Rzadki niebieski szafir wydobywany z głębi hiszpańskiego wicekrólestwa Nowej Granady. Według plotek kamienie te znajdują się w kopalniach w pobliżu Quito lub w Andach, gdzie ich barwę porównuje się do najgłębszych wód Oceanu Spokojnego.}
 itmname_jewelry2 {Diament}
@@ -880,6 +891,11 @@ itmname_recipe_migraine_potion {Instrukcja (Wywar na migrenę)}
 itmdescr_recipe_migraine_potion {Instrukcja przygotowania Mikstury na migrenę.}
 itmname_recipe_potion1 {Instrukcja (Mikstura Lecznicza)}
 itmdescr_recipe_potion1 {Instrukcja przygotowania Mikstury Leczniczej.}
+itmname_recipe_potionsangari {Przepis na napój „Sangaree”}
+itmdescr_recipe_potionsangari
+{
+Kartka papieru zapisana pośpiesznym pismem. Szczegółowo opisuje technologię mieszania wina i rumu w celu uzyskania idealnego „Sangaree”. Pozwala na samodzielne przygotowanie napoju przy posiadaniu niezbędnych składników i zestawu alchemicznego.
+}
 itmname_Mineral2 {Lutnia}
 itmdescr_Mineral2 {Popularny instrument strunowy. Utalentowany lutnista potrafi często podnieść morale wśród żołnierzy lub marynarzy.}
 itmname_Mineral3 {Świeca}
@@ -999,13 +1015,6 @@ itmname_PDM_PJ_Vino {Butelka wina}
 itmdescr_PDM_PJ_Vino {Butelka wykwintnego, drogiego wina do dostarczenia żołnierzowi.}
 itmname_PDM_PJ_Rom {Butelka rumu}
 itmdescr_PDM_PJ_Rom {Butelka taniego rumu do dostarczenia żołnierzowi.}
-itmname_PDM_PJ_BsRL {Butelka z różową wstążką}
-itmdescr_PDM_PJ_BsRL
-{
-Butelka z starannie zawiązaną różową wstążką.
-* * *
-Pasywna: +2 Szczęście, +2 Handel, -2 Skradanie.
-}
 itmname_DesMoinesLocies {Rutier Des Moines}
 itmdescr_DesMoinesLocies {Szczegółowe wskazówki żeglugowe dotyczące bezpiecznej nawigacji i kotwiczenia wzdłuż wybrzeży osady Des Moines.}
 itmname_letter_A {Zapieczętowany list}
@@ -1053,7 +1062,7 @@ itmname_instrument1 {Doskonała piła}
 itmdescr_instrument1
 {
 Proste narzędzie używane przez pokolenia cieśli okrętowych. Ten egzemplarz wyróżnia się wyjątkowo wygodnym uchwytem, co pozwala na szybkie i precyzyjne cięcia. Z takim przyrządem doświadczony cieśla może pracować godzinami bez zmęczenia.
-+10 Naprawy
+Pasywne: +5 Naprawa.
 }
 
 itmname_strangeNoteLSC	{Dziwna notatka}
@@ -1064,4 +1073,18 @@ Skrawek pergaminu z bazgrołami
 itmtext_strangeNoteLSC
 {
 Chciałbym udać się w objęcia lądu dla morza, aby ujrzeć w nich koniec wszelkiego istnienia.
+}
+
+itmname_TizerJournal   {Dziennik Daniela Tudora}
+itmdescr_TizerJournal
+{
+Ciężki dziennik w skórzanej oprawie z zamkiem. Na okładce wytłoczono:\n„Własność Daniela Gabrielo Tudora”.\nLektura takich wspomnień zajmie sporo czasu.
+}
+itmtext_TizerJournal
+{
+Wielu głupców szuka Wyspy Sprawiedliwości, polegając na kompasie lub wiedzy kartograficznej. Ale tej wyspy nigdy nie będzie na mapach, a igła kompasu oszaleje, gdy tylko zbliżysz się do przeklętych raf.
+Wyspa nie przyjmuje tych, którzy przybywają z próżnej ciekawości lub chciwości. Aby trafić w objęcia lądu z morza, trzeba oddać się na łaskę żywiołów, pozostając w całkowitej niepewności co do losu swej duszy i ciała.
+Tylko przez ryk wielkiego sztormu, tylko przez trzask łamiących się masztów i nieuchronne rozbicie statku otwiera się droga.
+Morze samo zdecyduje, co z tobą zrobić — najważniejsze to nie opierać się jego potędze. A największa zagadka wyspy brzmi: Wyspa odrzuca armady.
+Ten, kto odważy się na ten krok, musi zrobić go sam. Bez załogi. Bez wiernych towarzyszy za plecami. Tylko ty i gniew oceanu. W przeciwnym razie ich wszystkich czeka zguba...
 }

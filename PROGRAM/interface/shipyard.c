@@ -1112,7 +1112,7 @@ void DoSellShip(bool _refresh)
 		AddMoneyToCharacter(pchar, sellPrice);
 		AddCharacterExpToSkill(pchar, "Commerce", sellPrice / 1600.0);
 
-		if (GetOfficersPerkUsing(chref, "QuickCalculation")) iTime /= 2;
+		if (GetOfficersPerkUsing(chref, "QuickCalculation", false)) iTime /= 2;
 		WaitDate("", 0, 0, 0, 0, iTime);
 
 		Statistic_AddValue(pchar, "SellShip", 1);
@@ -1224,7 +1224,7 @@ void DoBuyShip()
 
 	AddCharacterExpToSkill(pchar, "Commerce", iBuyMoney / 700.0);
 
-	if (GetOfficersPerkUsing(xi_refCharacter, "QuickCalculation")) iTime /= 2;
+	if (GetOfficersPerkUsing(xi_refCharacter, "QuickCalculation", false)) iTime /= 2;
 	WaitDate("", 0, 0, 0, 0, iTime);
 
 	Statistic_AddValue(pchar, "BuyShip", 1);

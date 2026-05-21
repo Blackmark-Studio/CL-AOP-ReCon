@@ -185,7 +185,7 @@ Jackman_45 {
 So ist das also... Keine gute Nachricht... Wie ist das passiert?
 }
 Jackman_46_m {
-Ich habe ihn in Morgans Residenz getötet... Wissen Sie, es ist eine ziemlich unangenehme Geschichte. Auf Morgans Befehl habe ich mich um John Avery gekümmert, aber es stellte sich heraus, dass er einer von Morgans Vertrauten war.
+Ich habe ihn in Morgans Residenz getötet... Wissen Sie, es ist eine ziemlich unangenehme Geschichte. Auf Goodly Befehl habe ich mich um John Avery gekümmert, aber es stellte sich heraus, dass er einer von Morgans Vertrauten war.
 }
 Jackman_46_f {
 Ich habe ihn in Morgans Residenz getötet... Es ist eine ziemlich unangenehme Geschichte. Auf seinen Befehl hin habe ich mich um John Avery gekümmert, aber es stellte sich heraus, dass er einer von Morgans Vertrauten war.

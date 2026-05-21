@@ -434,6 +434,7 @@ void ProcessDialogEvent()
 			if (IsCharacterPerkOn(Pchar, "WildCaribbean"))
 			{
 				sld = GetCharacter(NPC_GenerateCharacter("PDM_Pinki_Skelet", "skel2", "skeleton", "man", sti(pchar.rank), PIRATE, -1, true));
+				sld.skeleton = "1";
 				sld.name = FindPersonalName("PDM_Pinki_Skelet_name");
 				sld.lastname = FindPersonalName("PDM_Pinki_Skelet_lastname");
 				sld.SaveItemsForDead = true;
@@ -456,6 +457,7 @@ void ProcessDialogEvent()
 				{
 					sTemp = "skel" + (rand(3) + 1);
 					sld = GetCharacter(NPC_GenerateCharacter("PDM_PI_skel_" + i, sTemp, "skeleton", "man", sti(pchar.rank), PIRATE, -1, true));
+					sld.skeleton = "1";
 					LAi_SetActorType(sld);
 					LAi_LoginInCaptureTown(sld, true);
 					sld.lifeday = 1;
@@ -466,6 +468,7 @@ void ProcessDialogEvent()
 				{
 					sTemp = "skel" + (rand(3) + 1);
 					sld = GetCharacter(NPC_GenerateCharacter("PDM_PI_skel_" + i, sTemp, "skeleton", "man", sti(pchar.rank), PIRATE, -1, true));
+					sld.skeleton = "1";
 					LAi_SetActorType(sld);
 					LAi_LoginInCaptureTown(sld, true);
 					sld.lifeday = 1;
@@ -476,6 +479,7 @@ void ProcessDialogEvent()
 				{
 					sTemp = "skel" + (rand(3) + 1);
 					sld = GetCharacter(NPC_GenerateCharacter("PDM_PI_skel_" + i, sTemp, "skeleton", "man", sti(pchar.rank), PIRATE, -1, true));
+					sld.skeleton = "1";
 					LAi_SetActorType(sld);
 					LAi_LoginInCaptureTown(sld, true);
 					sld.lifeday = 1;
@@ -869,10 +873,12 @@ void ProcessDialogEvent()
 			ChangeCharacterAddressGroup(sld, "Tortuga_Town", "none", "");
 
 			sld = GetCharacter(NPC_GenerateCharacter("PDM_PI_Skel_Rostov", "skel2", "skeleton", "man", 2, PIRATE, -1, true));
+			sld.skeleton = "1";
 			sld.name = FindPersonalName("whouserers");
 			sld.lastname = "";
 			ChangeCharacterAddressGroup(sld, "Tortuga_Bank", "barmen", "stay");
 			sld = GetCharacter(NPC_GenerateCharacter("PDM_PI_Bandity_2", "skel4", "skeleton", "man", 2, PIRATE, -1, true));
+			sld.skeleton = "1";
 			ChangeCharacterAddressGroup(sld, "Tortuga_Bank", "reload", "reload2");
 
 			DialogExit();

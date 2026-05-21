@@ -28,3 +28,27 @@ Providencia_Tavern_7 {
 Providencia_Tavern_8 {
 Да уж...
 }
+Providencia_Tavern_9 {
+Ты не видел здесь Хьюго Лесопилку?
+}
+Providencia_Tavern_10 {
+Он был здесь, за ним пришли английские охотники за головами, он вовремя ускользнул через чёрный ход.
+}
+Providencia_Tavern_11 {
+Куда он направился?
+}
+Providencia_Tavern_12 {
+Ммм... За 1000 песо я подскажу дорогу.
+}
+Providencia_Tavern_13 {
+Вот, держи свои деньги. Так куда он направился?
+}
+Providencia_Tavern_14 {
+У меня сейчас нет столько денег.
+}
+Providencia_Tavern_15 {
+Он взял курс на Ла Вегу, ищи его там.
+}
+Providencia_Tavern_16 {
+Спасибо, до встречи.
+}

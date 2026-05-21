@@ -28,8 +28,8 @@
 
 // indexes for items` array
 // evganat - энциклопедия, прибавил по два
-#define TOTAL_ITEMS				1179 		// Warship 08.05.09 - Новая система предметов
-#define ITEMS_QUANTITY			580  		// не забываем менять номер
+#define TOTAL_ITEMS				1182 		// Warship 08.05.09 - Новая система предметов
+#define ITEMS_QUANTITY			583  		// не забываем менять номер
 #define MAX_BUTTONS				64
 #define RANDITEMS_QUANTITY		45
 #define BUTTON_ACTIVATION_TIME	1000

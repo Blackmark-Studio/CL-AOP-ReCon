@@ -1051,7 +1051,10 @@ We've already discussed everything, haven't we?
 pgg_dialog_292 {
 @<RandPhraseSimple>
 }
-pgg_dialog_293 {
+pgg_dialog_293_m {
+Go your own way, I'm busy.
+}
+pgg_dialog_293_f {
 Go your own way, I'm busy.
 }
 pgg_dialog_294 {
@@ -1244,13 +1247,13 @@ pgg_dialog_347 {
 In @<FindDaysString>, the caravan will be gone and we won’t be able to catch them anymore.
 }
 pgg_dialog_348 {
-We have exactly @<FindDaysString> days to cut them down and grab the loot!
+We have exactly @<FindDaysString> to cut them down and grab the loot!
 }
 pgg_dialog_349 {
 @<RandPhraseSimple>
 }
 pgg_dialog_350 {
-We have @<FindDaysString> days at our disposal for the whole operation.
+We have @<FindDaysString> at our disposal for the whole operation.
 }
 pgg_dialog_351 {
 We’d better hurry, @<PChar>. We only have @<FindDaysString> left.
@@ -1526,7 +1529,7 @@ pgg_dialog_427 {
 Well done, Captain! The loot amounts to @<PChar> @<PChar>.
 }
 pgg_dialog_428 {
-My share
+My share:
 }
 pgg_dialog_429 {
 The share allotted to my ship —

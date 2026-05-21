@@ -81,7 +81,7 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 			dialog.text = StringFromKey("LeFransua_Mayor_24", pchar);
 			link.l1 = StringFromKey("LeFransua_Mayor_25");
 			link.l1.go = "exit";
-			SetMushketCapitainInWorld();
+			SetMushketCapitainInWorld(false);
 			pchar.questTemp.mushket2x2_stid = true;
 			SaveCurrentQuestDateParam("questTemp.mushket2x2_stid");
 			AddQuestRecord("SeekDoubleMushket", "2_2");
@@ -183,7 +183,7 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 			pchar.GenQuest.CaptainComission.ShipName1 = GenerateRandomNameToShip(sti(NPChar.nation));
 			pchar.GenQuest.CaptainComission.ShipName2 = GenerateRandomNameToShip(sti(NPChar.nation));
 			pchar.GenQuest.CaptainComission.UnknownPirateName = "l" + rand(GetNamesCount(NAMETYPE_ORIG) - 1);
-			dialog.text = StringFromKey("LeFransua_Mayor_49", GetName(NAMETYPE_ORIG, pchar.GenQuest.CaptainComission.UnknownPirateName, NAME_NOM), XI_ConvertString(pchar.GenQuest.CaptainComission.Island.Shore + "Gen"), pchar.GenQuest.CaptainComission.ShipName1, pchar.GenQuest.CaptainComission.ShipName2, XI_ConvertString(pchar.GenQuest.CaptainComission.Island + "Pre"));
+			dialog.text = StringFromKey("LeFransua_Mayor_49", GetName(NAMETYPE_ORIG, pchar.GenQuest.CaptainComission.UnknownPirateName, NAME_NOM), XI_ConvertString(pchar.GenQuest.CaptainComission.Island.Shore + "Gen"), pchar.GenQuest.CaptainComission.ShipName1, pchar.GenQuest.CaptainComission.ShipName2, XI_ConvertString(pchar.GenQuest.CaptainComission.Island + "Dat"));
 			link.l1 = StringFromKey("LeFransua_Mayor_50");
 			link.l1.go = "CapComission2_2_3";
 		break;
@@ -444,88 +444,6 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 		break;
 	}
 	UnloadSegment(NPChar.FileDialog2);  // если где-то выход внутри switch  по return не забыть сделать анлод
-}
-
-void SetMushketCapitainInWorld()
-{
-	//создаем кэпов
-	int Rank = sti(pchar.rank) + 15;
-	if (Rank > 30) Rank = 30;
-	ref sld = GetCharacter(NPC_GenerateCharacter("MushketCap", "citiz_58", "man", "man", Rank, PIRATE, -1, true)); //watch_quest_moment //вариант officer_26
-	sld.name = FindPersonalName("MushketCap_name");
-	sld.lastname = FindPersonalName("MushketCap_lastname");
-	SetCaptanModelByEncType(sld, "pirate");
-	FantomMakeCoolSailor(sld, SHIP_BRIGQEEN, FindPersonalName("MushketCap_ship"), CANNON_TYPE_CULVERINE_LBS24, 65, 60, 60);
-	FantomMakeCoolFighter(sld, 20, 55, 55, "blade34", "pistol2", 80);
-	sld.Ship.Mode = "pirate";
-	DeleteAttribute(sld, "SinkTenPercent");
-	DeleteAttribute(sld, "SaveItemsForDead");
-	DeleteAttribute(sld, "DontClearDead");
-	DeleteAttribute(sld, "AboardToFinalDeck");
-	DeleteAttribute(sld, "DontRansackCaptain");
-	sld.AlwaysSandbankManeuver = true;
-	sld.AnalizeShips = true;  //анализировать вражеские корабли при выборе таска
-	sld.DontRansackCaptain = true; //не сдаваться
-	sld.WatchFort = true; //видеть форты
-	SetCharacterPerk(sld, "FastReload");
-	SetCharacterPerk(sld, "HullDamageUp");
-	SetCharacterPerk(sld, "SailsDamageUp");
-	SetCharacterPerk(sld, "CrewDamageUp");
-	SetCharacterPerk(sld, "CriticalShoot");
-	SetCharacterPerk(sld, "LongRangeShoot");
-	SetCharacterPerk(sld, "CannonProfessional");
-	SetCharacterPerk(sld, "ShipDefenseProfessional");
-	SetCharacterPerk(sld, "ShipTurnRateUp");
-	SetCharacterPerk(sld, "StormProfessional");
-	SetCharacterPerk(sld, "SwordplayProfessional");
-	SetCharacterPerk(sld, "AdvancedDefense");
-	SetCharacterPerk(sld, "CriticalHit");
-	SetCharacterPerk(sld, "MusketsShoot");
-	SetCharacterPerk(sld, "Sliding");
-	SetCharacterPerk(sld, "Tireless");
-	SetCharacterPerk(sld, "HardHitter");
-	SetCharacterPerk(sld, "GunProfessional");
-	//в морскую группу кэпа
-	string sGroup = "MushketCapShip";
-	Group_FindOrCreateGroup(sGroup);
-	Group_SetTaskAttackInMap(sGroup, PLAYER_GROUP);
-	Group_LockTask(sGroup);
-	Group_AddCharacter(sGroup, sld.id);
-	Group_SetGroupCommander(sGroup, sld.id);
-	SetRandGeraldSail(sld, sti(sld.Nation));
-	sld.quest = "InMap"; //личный флаг искомого кэпа
-	sld.city = "PortRoyal"; //определим колонию, из бухты которой с мушкетом выйдет
-	sld.cityShore = GetIslandRandomShoreId(GetArealByCityName(sld.city));
-	sld.quest.targetCity = SelectAnyColony(sld.city); //определим колонию, в бухту которой он придет
-	sld.quest.targetShore = GetIslandRandomShoreId(GetArealByCityName(sld.quest.targetCity));
-	pchar.questTemp.Mushket.Shore = GetIslandRandomShoreId(GetArealByCityName(sld.quest.targetCity));
-	Log_TestInfo("Кэп с мушкетом вышел из: " + sld.city + " и направился в: " + sld.quest.targetShore + "");
-	//==> на карту
-	sld.mapEnc.type = "trade";
-	//выбор типа кораблика на карте
-	// sld.mapEnc.worldMapShip = "quest_ship";
-	sld.mapEnc.worldMapShip = "BrigantineShip";
-	sld.mapEnc.Name = FindPersonalName("MushketCap_mapEnc");
-	int daysQty = GetMaxDaysFromColony2Colony(sld.quest.targetCity, sld.city) + 5; //дней доехать даем с запасом
-	Map_CreateTrader(sld.cityShore, sld.quest.targetShore, sld.id, daysQty);
-	// прерывания по квесту
-	pchar.quest.SeekDoubleMushket_Capture.win_condition.l1 = "Character_Capture";
-	pchar.quest.SeekDoubleMushket_Capture.win_condition.l1.character = "MushketCap";
-	pchar.quest.SeekDoubleMushket_Capture.function = "SeekDoubleMushket_Capture";
-
-	pchar.quest.SeekDoubleMushket_GroupDeath.win_condition.l1 = "Group_Death";
-	pchar.quest.SeekDoubleMushket_GroupDeath.win_condition.l1.group = "MushketCapShip";
-	pchar.quest.SeekDoubleMushket_GroupDeath.function = "SeekDoubleMushket_GroupDeath";
-	//заносим Id кэпа в базу нпс-кэпов
-	string sTemp = sld.id;
-	NullCharacter.capitainBase.(sTemp).quest = "mushket"; //идентификатор квеста
-	NullCharacter.capitainBase.(sTemp).questGiver = "none"; //запомним Id квестодателя для затирки в случае чего
-	NullCharacter.capitainBase.(sTemp).Tilte1 = "SeekDoubleMushket"; //заголовок квестбука
-	NullCharacter.capitainBase.(sTemp).Tilte2 = "SeekDoubleMushket"; //имя квеста в квестбуке
-	NullCharacter.capitainBase.(sTemp).checkTime = daysQty + 5;
-	NullCharacter.capitainBase.(sTemp).checkTime.control_day = GetDataDay();
-	NullCharacter.capitainBase.(sTemp).checkTime.control_month = GetDataMonth();
-	NullCharacter.capitainBase.(sTemp).checkTime.control_year = GetDataYear();
 }
 
 void SelectSouthshore()

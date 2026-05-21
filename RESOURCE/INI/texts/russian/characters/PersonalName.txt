@@ -581,7 +581,7 @@ PDM_Pinki_Skelet_name {Пинкамина}
 PDM_Pinki_Skelet_lastname {Пай}
 PDM_Pinki_Skelet2_name {Дэйв}
 PDM_Pinki_Skelet2_lastname {Пироужн}
-PDM_NK_Viktor_name {Витор}
+PDM_NK_Viktor_name {Виктор}
 PDM_NK_Viktor_lastname {Бретье}
 FernandoGonsales_name {Фернандо}
 FernandoGonsales_lastname {Гонсалес}
@@ -597,3 +597,24 @@ Slave_name {Винарик}
 SecretFortCommander_name {Юстино}
 SecretFortCommander_lastname {де Коэлью}
 SecretFortGuard_name {Анджело}
+
+Tiburon_ship {Тибурон}
+Stormbreaker_ship {Бурелом}
+HWIC_head_name {Маттиас}
+HWIC_head_lastname {Бек}
+PDM_secretary_name {Бартоломью}
+PDM_secretary_lastname {Ольстер}
+PDM_ONV_Carla_name {Карла}
+PDM_ONV_Carla_lastname {Весёлая}
+PDM_Octavio_Lambrini_name {Октавио}
+PDM_Octavio_Lambrini_lastname {Ламбрини}
+Hugo_Lesopilka_name {Хьюго}
+Hugo_Lesopilka_lastname {Лесопилка}
+PDM_Odli_name {Томас}
+PDM_Odli_lastname {Одли}
+PDM_ONV_Silino_Sav_name {Силино}
+PDM_ONV_Silino_Sav_lastname {Сэв}
+PDM_ONW_Inqizitor_name {Инквизитор}
+PDM_CL_Pokupatel_name {Джеймс}
+PDM_CL_Pokupatel_lastname {Баллантре}
+PDM_Octavio_Lambrini_Clone_name {Ламбрини и незнакомец}

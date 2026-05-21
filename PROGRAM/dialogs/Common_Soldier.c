@@ -30,7 +30,7 @@ void ProcessDialogEvent()
 	switch (Dialog.CurrentNode)
 	{
 		case "Exit":
-			sTemp = npchar.location;
+			//sTemp = npchar.location;
 			//			if (HasSubStr(sTemp, "_townhall")) AddDialogExitQuest("MainHeroFightModeOff"); // не актуально
 			NextDiag.CurrentNode = NextDiag.TempNode;
 			DeleteAttribute(NPChar, "IWantAskYou");
@@ -107,67 +107,37 @@ void ProcessDialogEvent()
 					link.l2.go = CheckSneakByGuards(iNPCharnation);
 					link.l2 = DeceptionChance_TextWrapper(link.l2);
 				}
-				/*if (GetNationRelation2MainCharacter(sti(NPChar.nation)) == RELATION_ENEMY && sti(NPChar.nation) != PIRATE)
+				//HardCoffee с начала проверяем гг на врага, потом, если всё норм, беседуем по этому квесту
+				else if (CheckAttribute(pchar, "GenQuest.EncGirl.MeetSoldiers"))
 				{
-					// заглушка на пирата
-					if (sti(pchar.nation) == PIRATE)
+					LAi_TemporaryBlindGuards();
+					if ("1" == pchar.GenQuest.EncGirl.MeetSoldiers)
 					{
-						dialog.text = RandPhraseSimple(StringFromKey("Common_Soldier_1", GetSexPhrase(StringFromKey("SexPhrase_54"),StringFromKey("SexPhrase_55"))), StringFromKey("Common_Soldier_2", GetSexPhrase(StringFromKey("SexPhrase_54"),StringFromKey("SexPhrase_55"))));
-						link.l1 = RandPhraseSimple(StringFromKey("Common_Soldier_3"), StringFromKey("Common_Soldier_4"));
-						link.l1.go = "fight";
+						dialog.text = StringFromKey("Common_Soldier_78", pchar.GenQuest.EncGirl.name);
+						link.l1 = StringFromKey("Common_Soldier_79", pchar);
+						link.l1.go = "GirlEnc_1";
+						DeleteAttribute(pchar, "GenQuest.EncGirl.MeetSoldiers");
 						break;
 					}
-					dialog.text = RandPhraseSimple(StringFromKey("Common_Soldier_6"), StringFromKey("Common_Soldier_5", GetSexPhrase(StringFromKey("SexPhrase_54"),StringFromKey("SexPhrase_55"))));
-					link.l1 = RandPhraseSimple(StringFromKey("Common_Soldier_7"), StringFromKey("Common_Soldier_8"));
-					link.l1.go = "fight";
-					// ==> eddy. Засада, если опознали в инквизиции.
-					if (Pchar.location == "Santiago_Incquisitio") StartIncquisitioAttack();
-				}
-				else
-				{
-					// eddy. проверяем, не казачок ли -->
-					if (GetNationRelation(sti(NPChar.nation), GetBaseHeroNation()) == RELATION_ENEMY && sti(NPChar.nation) != PIRATE)
+					if ("2" == pchar.GenQuest.EncGirl.MeetSoldiers)
 					{
-						if (loadedLocation.id == "Santiago_Incquisitio") dialog.text = StringFromKey("Common_Soldier_9");
-						else dialog.text = RandPhraseSimple(StringFromKey("Common_Soldier_9"), StringFromKey("Common_Soldier_10"));
-
-						//==> по лицензии
-						if (CheckNationLicence(sti(npchar.nation)))
-						{
-							link.l1 = StringFromKey("Common_Soldier_11", GetRusNameNationLicence(sti(npchar.nation)));
-							link.l1.go = "LicenceOk";
-							if (HasSubStr(pchar.location.from_sea, "_town")) //если причалил в городе
-							{
-								link.l2 = StringFromKey("Common_Soldier_12", NationNameGenitive(sti(pchar.nation)));
-							}
-							else //если причалил не в городе
-							{
-								link.l2 = StringFromKey("Common_Soldier_13", GetSexPhrase("",StringFromKey("SexEnding_1")), XI_ConvertString(GetIslandNameByCity(npchar.city)+"Gen"), NationNameGenitive(sti(pchar.nation)));
-							}
-							link.l2.go = CheckSneakByGuards(sti(npchar.nation));
-						}
-						else
-						{
-							//==> по флагу
-							// заглушка на пирата
-							if (sti(pchar.nation) == PIRATE)
-							{
-								dialog.text = RandPhraseSimple(StringFromKey("Common_Soldier_14", GetSexPhrase(StringFromKey("SexPhrase_54"),StringFromKey("SexPhrase_55"))), StringFromKey("Common_Soldier_15", GetSexPhrase(StringFromKey("SexPhrase_54"),StringFromKey("SexPhrase_55"))));
-								link.l1 = RandPhraseSimple(StringFromKey("Common_Soldier_16"), StringFromKey("Common_Soldier_17"));
-								link.l1.go = "fight";
-								break;
-							}
-							if (HasSubStr(pchar.location.from_sea, "_town")) //если причалил в городе
-							{
-								link.l1 = StringFromKey("Common_Soldier_18", NationNameGenitive(sti(pchar.nation)));
-							}
-							else //если причалил не в городе
-							{
-								link.l1 = StringFromKey("Common_Soldier_19", GetSexPhrase("",StringFromKey("SexEnding_1")), XI_ConvertString(GetIslandNameByCity(npchar.city)+"Gen"), NationNameGenitive(sti(pchar.nation)));
-							}
-							link.l1.go = CheckSneakByGuards(sti(npchar.nation));
-						}
-					}*/
+						dialog.text = StringFromKey("Common_Soldier_80");
+						link.l1 = StringFromKey("Common_Soldier_81");
+						link.l1.go = "GirlEnc_2";
+						DeleteAttribute(pchar, "GenQuest.EncGirl.MeetSoldiers");
+						break;
+					}
+					else
+					{
+						NextDiag.CurrentNode = NextDiag.TempNode;
+						//EncGirl_CloseQuestExit("close"); //HardCoffee TODO:
+						//EncGirl_CloseQuestExit_func("");
+						log_info("ERROR: pchar.GenQuest.EncGirl.MeetSoldiers");
+						trace("ERROR: pchar.GenQuest.EncGirl.MeetSoldiers");
+						DialogExit();
+						break;
+					}
+				}
 				else
 				{
 					if (iNPCharnation == PIRATE)
@@ -310,28 +280,7 @@ void ProcessDialogEvent()
 						link.l1.go = "exit";
 						break;
 					}
-					//<-- зачарованный город 
-					// --> девица в джунглях
-					if (rand(2) == 1 && CheckAttribute(pchar, "GenQuest.EncGirl") && CheckAttribute(pchar, "GenQuest.EncGirl.MeetSoldiers"))
-					{
-						if (sti(pchar.GenQuest.EncGirl.MeetSoldiers) == 1)
-						{
-							dialog.text = StringFromKey("Common_Soldier_78", pchar.GenQuest.EncGirl.name);
-							link.l1 = StringFromKey("Common_Soldier_79", pchar);
-							link.l1.go = "GirlEnc_1";
-							DeleteAttribute(pchar, "GenQuest.EncGirl.MeetSoldiers");
-							break;
-						}
-						if (sti(pchar.GenQuest.EncGirl.MeetSoldiers) == 2)
-						{
-							dialog.text = StringFromKey("Common_Soldier_80");
-							link.l1 = StringFromKey("Common_Soldier_81");
-							link.l1.go = "GirlEnc_2";
-							DeleteAttribute(pchar, "GenQuest.EncGirl.MeetSoldiers");
-							break;
-						}
-					}
-					// <-- девица в джунглях
+					//<-- зачарованный город
 
 					switch (rand(10))
 					{
@@ -445,8 +394,7 @@ void ProcessDialogEvent()
 						StringFromKey("Common_Soldier_123", GetAddress_Form(pchar))));
 			link.l1 = StringFromKey("Common_Soldier_125");
 			link.l1.go = "exit";
-			TEV.BlindGuards = "1"; //HardCoffee Это для гвардов, так как они стоят по двое, чтобы 2 раза не доказывать одно и то же
-			Lai_MethodDelay("GuardCanSeeAgain", 5.0 + Rand(5));
+			LAi_TemporaryBlindGuards();
 			if (CheckAttribute(NPChar, "IWantAskYou")) //HardCoffee ref exp
 			{
 				DeleteAttribute(NPChar, "IWantAskYou");

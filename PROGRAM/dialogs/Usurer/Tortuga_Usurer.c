@@ -99,6 +99,7 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 			if (iPhrase == 2)
 			{
 				sld = GetCharacter(NPC_GenerateCharacter("PDM_PI_Bandit_1", "skel1", "skeleton", "man", sti(pchar.rank), PIRATE, -1, true));
+				sld.skeleton = "1";
 				ChangeCharacterAddressGroup(sld, pchar.location, "reload", "reload1");
 				LAi_SetActorType(sld);
 				sld.dialog.filename = "Quest\PDM\Cursed_Idol.c";

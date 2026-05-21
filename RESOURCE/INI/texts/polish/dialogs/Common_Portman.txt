@@ -401,7 +401,7 @@ Common_Portman_111_f {
 Zrozumiałam. Do widzenia.
 }
 Common_Portman_112 {
-Miałeś odnaleźć kapitana o imieniu @<npchar> i zwrócić mu dziennik pokładowy. Udało ci się to?
+Miałeś odnaleźć kapitana o imieniu @<npchar> i zwrócić mu dziennik okrętowy. Udało ci się to?
 }
 Common_Portman_113 {
 Nie, jeszcze się nie udało...

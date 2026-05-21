@@ -593,6 +593,7 @@ void SetSchemeForMap()
 int musicID = -1;
 int boardM = -1;
 int interfaceCommandSound = -1;
+int notificationSound = -1;
 
 void FadeOutMusic(int _time)
 {
@@ -700,26 +701,28 @@ void StopMusic()
 	DeleteAttribute(&TEV, "Music.Volume");
 	StopSound(musicID, 0);
 
-	if (!CheckAttribute(&TEV, "Music.KeepPlaying"))
+	// > TODO restart OR keep playing
+/*	if (!CheckAttribute(&TEV, "Music.KeepPlaying"))
 	{
 		ReleaseSound(musicID);
 		musicID = -1;
-	}
+	}*/
 }
 
-void PlayMusic(string name)
+void PlayMusic(string _sTrackName, int _iFadeTime)
 {
-	float volume = 0.5; // режем громкость вдвое, иммитируя нормализацию
+	float fTrackVolume = 0.5; // > режем громкость вдвое, иммитируя нормализацию
 
+	Restrictor(&_iFadeTime, 0, 10000);
 	StopMusic();
 
 	if (CheckAttribute(&TEV, "Music.LoopTrack"))
 	{
-		musicID = SendMessage(&Sound, "lslllllllf", MSG_SOUND_PLAY, name, SOUND_MP3_STEREO, VOLUME_MUSIC, true, true, false, 0, MUSIC_CHANGE_TIME, volume);
+		musicID = SendMessage(&Sound, "lslllllllf", MSG_SOUND_PLAY, _sTrackName, SOUND_MP3_STEREO, VOLUME_MUSIC, true, true, false, _iFadeTime, MUSIC_CHANGE_TIME, fTrackVolume);
 		DeleteAttribute(&TEV, "Music.LoopTrack");
 	}
 	else
-		musicID = SendMessage(&Sound, "lsllllllf", MSG_SOUND_PLAY, name, SOUND_MP3_STEREO, VOLUME_MUSIC, true, false, false, 0, volume);
+		musicID = SendMessage(&Sound, "lsllllllf", MSG_SOUND_PLAY, _sTrackName, SOUND_MP3_STEREO, VOLUME_MUSIC, true, false, false, _iFadeTime, fTrackVolume);
 
 	KZ|MusicRestart(musicID);
 }
@@ -793,7 +796,7 @@ void Sound_OnAlarm(bool _alarmed)
 {
 	alarmed = _alarmed;
 
-	if (alarmed == oldAlarmed || pchar.location == "UnderWater")
+	if (alarmed == oldAlarmed || pchar.location == "UnderWater" || CheckAttribute(&TEV, "Music.QuestMusic"))
 		return;
 
 	DeleteAttribute(&TEV, "Music.KeepPlaying");
@@ -836,18 +839,20 @@ void ResetSound()
 	else
 	{
 		if (!CheckAttribute(&TEV, "Music.CurrentTrack"))
-			TEV.Music.CurrentTrack = KZ|Select("");
+			KZ|Select("");
+		else
+		{
+			if (!CheckAttribute(&TEV, "Music.Volume"))
+				TEV.Music.Volume = "0.5";
 
-		if (!CheckAttribute(&TEV, "Music.Volume"))
-			TEV.Music.Volume = "0.5";
-
-		musicID = SendMessage(&Sound, "lsllllllf", MSG_SOUND_PLAY, TEV.Music.CurrentTrack, SOUND_MP3_STEREO, VOLUME_MUSIC, false, false, true, 500, stf(TEV.Music.Volume));
-		SendMessage(&Sound, "ll", MSG_SOUND_RESTART, musicID);
+			musicID = SendMessage(&Sound, "lsllllllf", MSG_SOUND_PLAY, TEV.Music.CurrentTrack, SOUND_MP3_STEREO, VOLUME_MUSIC, false, false, true, 500, stf(TEV.Music.Volume));
+			SendMessage(&Sound, "ll", MSG_SOUND_RESTART, musicID);
+		}
 	}
 
 	alarmed = false;
 	seaAlarmed = false;
-	DeleteAttributeMass(&TEV, "Music", "Volume,ForceKeepPlaying,ForcePlayTrack,LoopTrack");
+	DeleteAttributeMass(&TEV, "Music", "Volume,ForceKeepPlaying,ForcePlayTrack,LoopTrack,QuestMusic");
 }
 
 void LoadSceneSound()
@@ -866,9 +871,9 @@ void KZ|Music(string track)
 	DelEventHandler("MusicUpdateSea", "KZ|MusicUpdateSea");
 
 	aref arFader;
-	if (GetEntity(arFader, "fader"))
+	if (!CheckAttribute(&TEV, "Music.ForcePlayTrack") && GetEntity(arFader, "fader"))
 	{
-		KZ|MusicRefresh(true);
+		KZ|MusicRefresh(1000);
 		return;
 	}
 
@@ -890,7 +895,7 @@ void KZ|Music(string track)
 		TEV.Music.CurrentTrack = track;
 	}
 
-	KZ|MusicRefresh(false);
+	KZ|MusicRefresh(0);
 
 	TEV.Music.Volume = volume;
 }
@@ -901,15 +906,15 @@ void KZ|MusicRestart(int iTrackID)
 	SendMessage(&Sound, "lll", MSG_SOUND_RESUME, iTrackID, MUSIC_CHANGE_TIME);
 }
 
-void KZ|MusicRefresh(bool bQuick)
+void KZ|MusicRefresh(int iRefreshTime)
 {
 	int iTime = 8000;
 	float fTime = 8.0;
 
-	if (bQuick)
+	if (iRefreshTime > 0)
 	{
-		iTime = 1000;
-		fTime = 1.0;
+		iTime = iRefreshTime;
+		fTime = makefloat(iRefreshTime * 0.001);
 	}
 
 	if (and(bSeaActive, !bAbordageStarted) || IsEntity(&worldMap) || CheckAttribute(&TEV, "MAINMENU") || CurrentInterface == INTERFACE_MAINMENU)
@@ -1838,6 +1843,7 @@ void KZ|Folder()
 		XI_CreateFolder(s + "Ascold");
 		XI_CreateFolder(s + "Morgan");
 		XI_CreateFolder(dir + "Special\DesMoines");
+		XI_CreateFolder(dir + "Special\Quest\PDM");
 
 		i++;
 	}

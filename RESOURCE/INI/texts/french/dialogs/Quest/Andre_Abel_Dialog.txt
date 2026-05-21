@@ -1,5 +1,5 @@
 Andre_Abel_Dialog_1 {
-Salutations à vous, capitaine...
+Oh, c'est vous, capitaine ?!
 }
 Andre_Abel_Dialog_2 {
 Ravi de vous voir, Capitaine.
@@ -8,10 +8,10 @@ Andre_Abel_Dialog_3 {
 @<RandPhraseSimple>
 }
 Andre_Abel_Dialog_4_m {
-Hmm, je ne vous ai jamais vu auparavant. On se connaît? Le barman a dit que vous aviez eu des ennuis et que vous aviez besoin d'une escorte.
+Hmm, je ne vous ai jamais vu auparavant. On se connaît? On dirait que tu as des ennuis..
 }
 Andre_Abel_Dialog_4_f {
-Hmm, je ne vous ai jamais vu auparavant. Est-ce qu’on se connaît? Le barman a dit que vous aviez eu des ennuis et que vous aviez besoin d’une escorte.
+Hmm, je ne vous ai jamais vu auparavant. Est-ce qu’on se connaît? On dirait que tu as des ennuis...
 }
 Andre_Abel_Dialog_5 {
 Désolé, je serai à toi dans un instant—je ne peux pas parler pour l’instant.

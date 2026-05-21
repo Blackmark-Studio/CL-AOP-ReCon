@@ -946,6 +946,31 @@ void SetHuberAnimation(ref character)
 	character.actions.HitNoFight = "HitNoFightSit";
 }
 
+void TeleportCharacterToLocatorIgnoreCollision(ref chr, string group, string locator)
+{
+	aref aloc;
+	makearef(aloc, loadedLocation.locators.(group).(locator));
+	
+	float x = stf(aloc.x);
+	float y = stf(aloc.y);
+	float z = stf(aloc.z);
+	
+	float vz = stf(aloc.vz.z);
+	float vx = stf(aloc.vz.x);
+	float l = vx * vx + vz * vz;
+	if (l > 0.0000001) {
+		vz = acos(vz / sqrt(l));
+	} else {
+		vz = l;
+	}
+
+	if (vx < 0) {
+		vz = -vz;
+	}
+	
+	TeleportCharacterToPosAy(chr, x, y, z, vz);
+}
+
 // складывает строки, если не пустые
 string StrConCheck(string str1, string str2)
 {

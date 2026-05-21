@@ -618,7 +618,7 @@ int LocationInitPortPax(int n)
 	locations[n].id = "PortPax_townhall";
 	locations[n].id.label = "Townhall";
 	locations[n].filespath.models = "locations\inside\Residence04";
-	locations[n].image = "loading\inside\residence.tga";
+	locations[n].image = "loading\inside\Residence04.tga";
 	//Town sack
 	locations[n].townsack = "PortPax";
 	locations[n].lockWeather = "Inside";
@@ -935,7 +935,7 @@ int LocationInitPortPax(int n)
 	
 	locations[n].id = "Mayak7_Lighthouseroom";
 	locations[n].id.label = "House";
-	locations[n].image = "loading\inside\mediumhouse10.tga";
+	locations[n].image = "loading\inside\mediumhouse09.tga";
 	//Town sack
 	locations[n].townsack = "Portpax";
 	locations[n].islandId = "Hispaniola2";

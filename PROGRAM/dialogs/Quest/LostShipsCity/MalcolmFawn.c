@@ -759,10 +759,29 @@ void ProcessDialogEvent()
 		break;
 
 		case "drink_9":
-		//железная воля даёт волю к победе в спортивном мероприятии
+			/* перки не влияют больше на шанс
+			//железная воля даёт волю к победе в спортивном мероприятии
+
 			if (CheckCharacterPerk(pchar, "IronWill")) pchar.questTemp.LSC.Drink.Chance = sti(pchar.questTemp.LSC.Drink.Chance) + 30;
 			//отменное здоровье поможет больше выпить
-			if (CheckCharacterPerk(pchar, "Medic")) pchar.questTemp.LSC.Drink.Chance = sti(pchar.questTemp.LSC.Drink.Chance) + 30;
+			if (CheckCharacterPerk(pchar, "Medic")) pchar.questTemp.LSC.Drink.Chance = sti(pchar.questTemp.LSC.Drink.Chance) + 30;*/
+
+			// Считаем сумму Силы и Выносливости
+			iTemp = GetCharacterSPECIAL(pchar, "Strength") + GetCharacterSPECIAL(pchar, "Endurance");
+
+			// Вычисляем процент успеха от 5% (минималка) до 100%
+			int iWinChance = 5;
+			if (iTemp >= 20)
+			{
+				iWinChance = 100;
+			}
+			else if (iTemp > 6)
+			{
+				iWinChance = 5 + ((iTemp - 6) * 95) / 14;
+			}
+
+			// Записываем наш итоговый шанс в процентах
+			pchar.questTemp.LSC.Drink.Chance = iWinChance;
 
 			DialogExit();
 			pchar.questTemp.LSC.Drink = "go";

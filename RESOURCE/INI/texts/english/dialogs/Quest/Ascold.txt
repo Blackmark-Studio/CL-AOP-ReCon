@@ -129,10 +129,10 @@ Ascold_33_f {
 Oh, come on! I was just joking! It never even crossed my mind...
 }
 Ascold_34 {
-The job’s done—time to celebrate...
+The matter's settled! Now need to wash this success down...
 }
 Ascold_35_m {
-Nah, I’m not washing anything. Why don’t you tell me instead—what do you even want with that junk? I’ve racked my brains over it and still can’t figure it out. Absolutely useless and disgusting thing.
+Nah, I’m not washing anything. Instead, why don’t you tell me instead—what do you even want with that junk? I’ve racked my brains over it and still can’t figure it out. Absolutely useless and disgusting thing.
 }
 Ascold_35_f {
 No, I’m not washing anything. But you tell me, why do you even want that junk? I’ve racked my brains over it and still can’t figure it out. It’s a completely useless and disgusting thing.

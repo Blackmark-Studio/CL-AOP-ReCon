@@ -7,9 +7,7 @@ Tak, oczywiście, oficerze.
 Maltese_dialog_3 {
 Mam do pana sprawę, oficerze. Myślę, że to pana zainteresuje. Jeden z pańskich żołnierzy, Jory, próbował za moim pośrednictwem kupić wino w mieście. Znając wasze zasady...
 }
-Maltese_dialog_4 {
-Co?! Surowo zabroniłem picia alkoholu na obiekcie strategicznym! No cóż, poniesie za to konsekwencje. Za twoją czujność nagradzam cię kwotą 5000 piastrów, a Jory trafi na trzy dni do aresztu.
-}
+Maltese_dialog_4 {Co?! Surowo zabroniłem picia w obiekcie strategicznym! Cóż, zapłaci mi za to. Za waszą obywatelską czujność nagradzam was miesięcznym żołdem Joriego, a jego samego wyślę na trzy dni do aresztu. To będzie nauczka dla reszty! I jeszcze na znak mojej osobistej wdzięczności — weźcie mój stary miecz żołnierski naszego zakonu z mojego prywatnego arsenału. Mało prawdopodobne, byście mogli zdobyć go gdziekolwiek indziej, kapitanie.}
 Maltese_dialog_5 {
 Dziękuję, @<GetFullName>. Powstrzymywanie takich naruszeń to nasz wspólny obowiązek.
 }

@@ -44,7 +44,7 @@ Neputyovy_kaznachey_15 {
 Nie wiem. Coś wymyślę. Poczekaj tu na mnie.
 }
 Neputyovy_kaznachey_16 {
-Kapitanie Vitor! Ach, to pan... Przestraszył mnie pan niemal na śmierć. W-w-widział pan W-w-iktora?
+Kapitanie Victor! Ach, to pan... Przestraszył mnie pan niemal na śmierć. W-w-widział pan W-w-iktora?
 }
 Neputyovy_kaznachey_17 {
 Jeszcze nie. Ale nie martw się – zajmę się nim.
@@ -62,10 +62,10 @@ Neputyovy_kaznachey_21 {
 Ty! Ej, ty! Nie widziałeś tu gdzieś okularnika, bezmózgiego skarbnika o imieniu Andreas? To przez niego jestem spłukany! Pasożyt! Zabiję go! Zrujnował mnie!
 }
 Neputyovy_kaznachey_22 {
-No proszę, no proszę. Ty jesteś Vitor Bretier.
+No proszę, no proszę. Ty jesteś Victor Bretier.
 }
 Neputyovy_kaznachey_23 {
-Tak, to ja, Vitor. A ten śmierdzący pies podpalił połowę mojego statku tymi cholernymi beczkami prochu! Obdzieram go ze skóry żywcem!
+Tak, to ja, Victor. A ten śmierdzący pies podpalił połowę mojego statku tymi cholernymi beczkami prochu! Obdzieram go ze skóry żywcem!
 }
 Neputyovy_kaznachey_24 {
 Spokojnie, przyjacielu. Andreas jest pod moją ochroną.
@@ -107,16 +107,16 @@ Neputyovy_kaznachey_34 {
 Powiedziałem @<Plata1>? Nie, pomyliłem się! Przynajmniej @<Plata2>!
 }
 Neputyovy_kaznachey_35 {
-Aleś się rozzuchwalił, Vitor! Już prędzej potnę cię na drobne kawałki, niż pozwolę skrzywdzić Andreasa.
+Aleś się rozzuchwalił, Victor! Już prędzej potnę cię na drobne kawałki, niż pozwolę skrzywdzić Andreasa.
 }
 Neputyovy_kaznachey_36 {
-Proszę, oto twoje pieniądze. Miłego spędzania czasu, Vitor.
+Proszę, oto twoje pieniądze. Miłego spędzania czasu, Victor.
 }
 Neputyovy_kaznachey_37 {
 Przyniosę ci @<FindMoneyString>. Ale pamiętaj — jeden salwa z mojego okrętu zamieni twoją łajbę w sito, więc nawet nie waż się tknąć Andreasa!
 }
 Neputyovy_kaznachey_38 {
-Ty chyba oszalałeś, Vitor! Prędzej potnę cię na drobne kawałki, niż pozwolę skrzywdzić Andreasa.
+Ty chyba oszalałeś, Victor! Prędzej potnę cię na drobne kawałki, niż pozwolę skrzywdzić Andreasa.
 }
 Neputyovy_kaznachey_39 {
 Dobrze, jak tylko będę mieć pieniądze, zajrzę do ciebie.
@@ -174,4 +174,7 @@ Dziękuję, k-kapitanie! Nie pożałuje pan tego!
 }
 Neputyovy_kaznachey_56 {
 Witamy na pokładzie, Andreas.
+}
+Neputyovy_kaznachey_57 {
+Nie. Już podałeś swoją cenę. Pamiętaj – każde dodatkowe słowo zwiększa ryzyko zagłady twojego statku. Miłego spędzania czasu, Viktor.
 }

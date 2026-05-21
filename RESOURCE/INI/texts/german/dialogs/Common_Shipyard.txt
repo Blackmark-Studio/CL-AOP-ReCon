@@ -481,3 +481,9 @@ Hier, bitte. Danke für Ihre Arbeit.
 Common_Shipyard_135 {
 Mach dir nichts draus...
 }
+Common_Shipyard_136 {
+Ich sehe Ihr Schiff nicht im Hafen, Captain @<GetFullName>...
+}
+Common_Shipyard_137 {
+Kapitän, machen Sie das Schiff im Hafen fest und kommen Sie danach.
+}

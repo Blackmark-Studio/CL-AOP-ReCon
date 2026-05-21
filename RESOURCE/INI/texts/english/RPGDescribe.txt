@@ -55,7 +55,7 @@ Affects the increase in HP and the carry weight per rank.
 Luck_hint
 {
 Success: helps where nothing else is useful. Too high or too low an attribute will affect the character in one way or another.
-The defining attribute for such skills as: 'Firearms', 'Fortune' and 'Stealth'.
+The defining attribute for such skills as: 'Firearms', 'Luck' and 'Stealth'.
 ~
 Affects various game events and the amount of loot.
 }

@@ -672,7 +672,9 @@ bool LoadLocation(ref loc)
 	}
 	if (loc.type == "residence") //eddy. в резиденции нельзя дебоширить
 	{
-		if (!IsLocationCaptured(loc.id) && !CheckAttribute(loc, "boarding"))// захват города
+		// В резиденции можно драться, когда идёт захват города
+		// или стоит флаг TEV.ResidenceFightTemp (по квестовым нуждам)
+		if (!IsLocationCaptured(loc.id) && !CheckAttribute(loc, "boarding") && !CheckAttribute(&TEV, "ResidenceFightTemp"))
 		{
 			loc.noFight = "1";
 		}
@@ -864,6 +866,10 @@ bool UnloadLocation(aref loc)
 	if (CheckAttribute(loc, "type") && loc.type == "residence")
 	{
 		LAi_LocationFightDisable(loc, false);
+		if (CheckAttribute(&TEV, "ResidenceFightTemp"))
+		{
+		    DeleteAttribute(&TEV, "ResidenceFightTemp");
+		}
 	}
 
 	DelEventHandler("Control Activation","locCameraSwitch");

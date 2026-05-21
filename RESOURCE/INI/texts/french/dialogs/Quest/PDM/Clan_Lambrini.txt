@@ -1,0 +1,489 @@
+Clan_Lambrini_1_m {
+Hé, l'ami ! C'est ma table, et je ne cherche pas de compagnie.
+}
+Clan_Lambrini_1_f {
+Hé, ma fille ! C'est ma table, et je ne cherche pas de compagnie.
+}
+Clan_Lambrini_2 {
+Mais tu l'as déjà TROUVÉE. Alors, parlons un peu.
+}
+Clan_Lambrini_3 {
+Je ne veux pas te déranger. Adieu.
+}
+Clan_Lambrini_4 {
+Quoi ? Tu oses déranger Octavio Lambrini ? Pour qui te prends-tu ?
+}
+Clan_Lambrini_5 {
+Ignoscite mihi. Permettez-moi de me présenter — @<GetFullName>. Capitaine, noble bandit, médecin et la terreur de tous les Espagnols. Et le nom de 'Lambrini' ne me dit rien.
+}
+Clan_Lambrini_6 {
+Je m'appelle @<GetFullName>. J'ai grandi dans une famille respectée d'un officier de la garde royale, durant les dernières années du règne du roi Louis XIII. Mais, comme tu peux le voir, j'ai troqué les manières parisiennes contre la jungle de cet archipel à la recherche de la vraie vie. Et la famille 'Lambrini' ne figure pas sur mes listes d'honorables messieurs.
+}
+Clan_Lambrini_7 {
+Je suis @<GetFullName>. Autrefois, je rêvais d'un commerce honnête, mais les réalités d'ici m'ont appris qu'une lame et des canons convainquent bien mieux que des discours arrogants. Et ton nom de 'Lambrini' ne me revient en mémoire que par fragments.
+}
+Clan_Lambrini_8 {
+Devant toi se tient @<GetFullName>. J'ai écrit les lois qui régissent la Confrérie de la Côte, et mes cicatrices sont la meilleure preuve que je ne crains pas le danger. En revanche, qui est ce 'Lambrini' reste un mystère pour moi.
+}
+Clan_Lambrini_9 {
+Mon nom est @<GetFullName>. J'apprécie le savoir et le pouvoir qu'il confère, et je suis ici pour mordre la vie à pleines dents. Ton nom, Lambrini, ne fait visiblement pas partie des connaissances qui ont de la valeur à mes yeux.
+}
+Clan_Lambrini_10_m {
+Doucement ! Mon nom est @<GetFullName>. Capitaine, noble bandit et celui qui a envoyé un certain navire fantôme noir par le fond. Et le nom de 'Lambrini' ne me dit rien.
+}
+Clan_Lambrini_10_f {
+Doucement ! Mon nom est @<GetFullName>. Capitaine, noble bandite et celle qui a envoyé un certain navire fantôme noir par le fond. Et le nom de 'Lambrini' ne me dit rien.
+}
+Clan_Lambrini_11_m {
+Mon nom est @<GetFullName> — je suis le fils du célèbre pirate, Nicholas Sharp. Et le nom de 'Lambrini' ne me dit rien.
+}
+Clan_Lambrini_11_f {
+Mon nom est @<GetFullName> — je suis la fille du célèbre pirate, Nicholas Sharp. Et le nom de 'Lambrini' ne me dit rien.
+}
+Clan_Lambrini_12 {
+Je m'appelle @<GetFullName>. Tout le monde sait que je suis un homme d'honneur et qu'on peut me faire confiance. Et le nom de 'Lambrini' ne me dit rien.
+}
+Clan_Lambrini_13 {
+Je m'appelle @<GetFullName>. Et à la seule évocation de mon nom, tout le monde se met à trembler et à fuir de tous côtés. Et le nom de 'Lambrini' ne me dit rien.
+}
+Clan_Lambrini_14_m {
+Je suis @<pchar>, capitaine et mercenaire. Et je ne me souviens pas trop de toi.
+}
+Clan_Lambrini_14_f {
+Je suis @<pchar>, capitaine et mercenaire. Et je ne me souviens pas trop de toi.
+}
+Clan_Lambrini_15 {
+Ah, tu es donc ce fameux médecin qui a sauvé la ville des Espagnols et s'est évadé des plantations de la Barbade en échappant au colonel Bishop ! Incroyable ! Si tu es vraiment aussi doué qu'on le dit, alors on peut discuter.
+}
+Clan_Lambrini_16 {
+Le fils d'un officier de la garde royale française dans mes parages ? Bien sûr, j'ai entendu parler de toi — c'est bien toi qui es sorti vainqueur de ce duel à seulement 14 ans ? Eh bien, les aventuriers de ta trempe m'intéressent.
+}
+Clan_Lambrini_17 {
+Un jeune noble qui a troqué les balances marchandes contre un sabre d'abordage ? Audacieux. J'ai entendu parler de toi et de tes succès. Je pense que nous aurons de quoi discuter.
+}
+Clan_Lambrini_18 {
+Ça par exemple ! Bart le Slasheur en personne ?! Et où de diable t'étais-tu caché ? Bon, nous avons tous besoin de faire profil bas parfois... Assieds-toi, Bart.
+}
+Clan_Lambrini_19 {
+Cette fameuse femme capitaine qui a survécu à la trahison de Beltrop et a glissé entre les griffes du Masque ? On peut sans doute discuter.
+}
+Clan_Lambrini_20 {
+Quelqu'un qui croit que le savoir et les compétences sont la voie vers la véritable puissance. Ta passion pour la richesse et ton esprit vif me sont connus. Parlons affaires.
+}
+Clan_Lambrini_21 {
+Le grand @<GetFullName> ? Ici, à Trinidad ? Mille sabords ! Si tu es vraiment aussi doué, comme le disent les légendes, alors on peut discuter.
+}
+Clan_Lambrini_22_m {
+Tu dis que le sang de ce fameux Nicholas Sharp coule dans tes veines ? Pas mal ! J'ai connu ton père il y a bien longtemps, à l'époque où les Lambrini ont dû s'installer sur cette île. Ton père était un homme bien. Si tu es ne serait-ce qu'à moitié aussi doué que lui, on peut discuter.
+}
+Clan_Lambrini_22_f {
+Tu dis que le sang de ce fameux Nicholas Sharp coule dans tes veines ? Pas mal ! J'ai connu ton père il y a bien longtemps, à l'époque où les Lambrini ont dû s'installer sur cette île. Ton père était un homme bien. Si tu es ne serait-ce qu'à moitié aussi doué que lui, on peut discuter.
+}
+Clan_Lambrini_23 {
+@<GetFullName> ? Oui, j'ai entendu parler de toi. Si tu es vraiment aussi talentueux que l'on dit, on peut discuter.
+}
+Clan_Lambrini_24 {
+Que fais-tu ?
+}
+Clan_Lambrini_25_m {
+C'est ton problème, mon garçon. La famille Lambrini est très connue sur ces îles. Tu ferais mieux de te tenir à l'écart.
+}
+Clan_Lambrini_25_f {
+C'est ton problème, ma fille. La famille Lambrini est très connue sur ces îles. Tu ferais mieux de te tenir à l'écart.
+}
+Clan_Lambrini_26_m {
+D'accord, je repasserai plus tard, quand je serai plus connu. (Réputation basse ou haute requise)
+}
+Clan_Lambrini_26_f {
+D'accord, je repasserai plus tard, quand je serai plus connue. (Réputation basse ou haute requise)
+}
+Clan_Lambrini_27 {
+Ma famille et moi menons nos affaires dans tout l'archipel des Caraïbes. Nos profits sont importants car nous évitons de payer des taxes lourdes sur nos cargaisons. Certains nous appellent des contrebandiers.
+}
+Clan_Lambrini_28 {
+Tu as mentionné ta famille — de qui s'agit-il ?
+}
+Clan_Lambrini_29 {
+Ah ! La famille est une question très importante pour les Lambrini. Nous sommes venus de Sicile dans le Nouveau Monde il y a quarante ans. À l'époque, mon père dirigeait nos opérations ici. Après sa mort, je suis devenu le chef de la famille. Maintenant, je travaille avec mes fils — Fabio et Emilio, et mon neveu, Cesario.
+}
+Clan_Lambrini_30 {
+Je cherche du travail. As-tu des propositions ?
+}
+Clan_Lambrini_31 {
+Oui. Il y a un problème avec lequel tu pourrais nous aider.
+}
+Clan_Lambrini_32 {
+J'écoute.
+}
+Clan_Lambrini_33 {
+Nous sommes des contrebandiers. Et, bien que la majeure partie de la garde côtière ne voie pas d'inconvénient à faire affaire avec nous, un homme honnête parmi eux peut causer pas mal d'ennuis. Oui, on peut s'entendre avec la plupart d'entre eux. Mais il y a une exception. Ce type, Thomas Audley, possède un magnifique navire nommé le 'Tiburon'. Et ce salaud ne prend pas de pots-de-vin ! Ce qui fait que nous ne pouvons pas mener nos affaires à Tobago.
+}
+Clan_Lambrini_34_m {
+Et tu veux que je me débarrasse de lui ?
+}
+Clan_Lambrini_34_f {
+Et tu veux que je me débarrasse de lui ?
+}
+Clan_Lambrini_35 {
+Ce n'est pas si important. Tue-le, cloue-le à ton beaupré, donne-le à manger aux requins, lance des pirates à ses trousses ou achète-le — peu importe. Mais nous ne pouvons pas ignorer un morceau aussi savoureux que Tobago. Beaucoup de nos fournisseurs ont commencé à éviter cette île. Ils ont peur de cet Anglais — et non sans raison. Débrouille-toi juste pour liquider ce type d'une manière ou d'une autre.
+}
+Clan_Lambrini_36 {
+Combien ?
+}
+Clan_Lambrini_37 {
+Je te donnerai @<Plata1> piastres. Et sache-le — personne ne marchande avec Lambrini !
+}
+Clan_Lambrini_38_m {
+D'accord.
+}
+Clan_Lambrini_38_f {
+D'accord.
+}
+Clan_Lambrini_39 {
+Ça ne m'intéresse pas, Octavio. Si tu es ne serait-ce qu'à moitié aussi fort que tu le prétends, tu t'occuperas de ce type toi-même. Adieu.
+}
+Clan_Lambrini_40_m {
+Yo-ho, mon garçon ! Tu parles comme un(e) vrai(e) @<GetFullName>. Peu de mots, beaucoup d'action. Va — et reviens quand tu te seras occupé de lui.
+}
+Clan_Lambrini_40_f {
+Yo-ho, ma fille ! Tu parles comme un(e) vrai(e) @<GetFullName>. Peu de mots, beaucoup d'action. Va — et reviens quand tu te seras occupé de lui.
+}
+Clan_Lambrini_41 {
+À la prochaine, Octavio.
+}
+Clan_Lambrini_42_m {
+Alors, mon garçon — tu lui as réglé son compte à ce ver de terre de Thomas ?
+}
+Clan_Lambrini_42_f {
+Alors, ma fille — tu lui as réglé son compte à ce ver de terre de Thomas ?
+}
+Clan_Lambrini_43 {
+Je lui arracherai les yeux, n'en doute pas. Mais chaque chose en son temps.
+}
+Clan_Lambrini_44_m {
+Alors je te donne du temps, mon garçon, mais souviens-toi — les Lambrini ne sont pas réputés pour leur patience.
+}
+Clan_Lambrini_44_f {
+Alors je te donne du temps, ma fille, mais souviens-toi — les Lambrini ne sont pas réputés pour leur patience.
+}
+Clan_Lambrini_45 {
+Sois-en sûr — je ne te ferai pas attendre longtemps. Adieu.
+}
+Clan_Lambrini_46 {
+Que vouliez-vous, @<GetAddress_Form> ?
+}
+Clan_Lambrini_47 {
+Vous vous appelez Thomas Audley — et vous faites partie de la garde côtière ?
+}
+Clan_Lambrini_48_m {
+Oui. Et qui êtes-vous ?
+}
+Clan_Lambrini_48_f {
+Oui. Et qui êtes-vous ?
+}
+Clan_Lambrini_49 {
+Mon nom est @<GetFullName>.
+}
+Clan_Lambrini_50 {
+Oui, oui, j'ai entendu parler de vous... Pourquoi êtes-vous ici ?
+}
+Clan_Lambrini_51 {
+Quelqu'un veut vous tuer.
+}
+Clan_Lambrini_52 {
+La famille Lambrini vous passe le bonjour !
+}
+Clan_Lambrini_53 {
+Je dois y aller.
+}
+Clan_Lambrini_54 {
+Quittez mon navire immédiatement !
+}
+Clan_Lambrini_55 {
+Je m'en vais déjà.
+}
+Clan_Lambrini_56_m {
+Alors, mon garçon — j'espère que tu l'as liquidé, ce ver de terre de Thomas ?
+}
+Clan_Lambrini_56_f {
+Alors, ma fille — j'espère que tu l'as liquidé, ce ver de terre de Thomas ?
+}
+Clan_Lambrini_57 {
+Oui. J'ai réussi à l'aborder près de l'île de Tobago. Ce misérable salaud m'a supplié de lui faire grâce, mais ses prières ont été vaines.
+}
+Clan_Lambrini_58 {
+Heu... J'ai réussi à le liquider définitivement. Il a supplié, mais... bon, il ne te dérangera plus.
+}
+Clan_Lambrini_59 {
+Oui. J'ai réussi à l'aborder près de l'île de Tobago. Ce misérable salaud m'a supplié de lui faire grâce, mais ses prières ont été vaines.
+}
+Clan_Lambrini_60_m {
+Ha, mon garçon ! Tu aurais dû m'apporter sa tête en guise de preuve. Ça aurait fait un sacré souvenir. Mais je te crois quand même. Voilà tes @<Plata1>. Et tous mes ennuis sont derrière moi.
+}
+Clan_Lambrini_60_f {
+Ha, ma fille ! Tu aurais dû m'apporter sa tête en guise de preuve. Ça aurait fait un sacré souvenir. Mais je te crois quand même. Voilà tes @<Plata1>. Et tous mes ennuis sont derrière moi.
+}
+Clan_Lambrini_61 {
+Oui, maintenant personne ne t'empêchera de commercer près de Tobago, Octavio. Adieu.
+}
+Clan_Lambrini_62_m {
+Attends, mon garçon ! Gagner de l'argent est un bon savoir-faire, mais je suis un contrebandier chevronné et je peux t'apprendre les subtilités du camouflage en mer en utilisant les pavillons d'autres puissances. Quelle nation t'intéresse ?
+}
+Clan_Lambrini_62_f {
+Attends, ma fille ! Gagner de l'argent est un bon savoir-faire, mais je suis un contrebandier chevronné et je peux t'apprendre les subtilités du camouflage en mer en utilisant les pavillons d'autres puissances. Quelle nation t'intéresse ?
+}
+Clan_Lambrini_63 {
+Apprends-moi à naviguer sous le pavillon de l'Angleterre.
+}
+Clan_Lambrini_64 {
+J'ai besoin du pavillon de la France pour que leurs patrouilles ne fassent pas attention à moi.
+}
+Clan_Lambrini_65 {
+Les Espagnols possèdent toute la Terre Ferme... Dis-moi comment naviguer en mer sous le pavillon de l'Espagne.
+}
+Clan_Lambrini_66 {
+Je veux avoir la possibilité de mener des affaires dans les colonies de Hollande.
+}
+Clan_Lambrini_67 {
+Octavio, je sais déjà tout ça sans toi. Merci.
+}
+Clan_Lambrini_68 {
+Je pense que je me débrouillerai sans tes conseils ni tes astuces, Octavio. Je n'en ai pas besoin.
+}
+Clan_Lambrini_69 {
+Je vais te donner des instructions sur la façon de te comporter correctement à l'horizon face aux autres navires et sur les signaux spéciaux à émettre. Tu pourras désormais utiliser le pavillon de l'Angleterre.
+}
+Clan_Lambrini_70 {
+Merci, Octavio !
+}
+Clan_Lambrini_71 {
+Je vais te donner des instructions sur la façon de te comporter correctement à l'horizon face aux autres navires et sur les signaux spéciaux à émettre. Tu pourras désormais utiliser le pavillon de la France.
+}
+Clan_Lambrini_72 {
+Merci, Octavio !
+}
+Clan_Lambrini_73 {
+Je vais te donner des instructions sur la façon de te comporter correctement à l'horizon face aux autres navires et sur les signaux spéciaux à émettre. Tu pourras désormais utiliser le pavillon de l'Espagne.
+}
+Clan_Lambrini_74 {
+Merci, Octavio !
+}
+Clan_Lambrini_75 {
+Je vais te donner des instructions sur la façon de te comporter correctement à l'horizon face aux autres navires et sur les signaux spéciaux à émettre. Tu pourras désormais utiliser le pavillon de la Hollande.
+}
+Clan_Lambrini_76 {
+Merci, Octavio !
+}
+Clan_Lambrini_77 {
+Oui... Je vois que tu sais déjà comment utiliser les pavillons de tous les États. Dans ce cas, je n'ai plus rien à t'apprendre là-dessus.
+}
+Clan_Lambrini_78 {
+Ça en a l'air.
+}
+Clan_Lambrini_79_m {
+Le plus important, n'oublie pas — arborer le torchon d'un État ne suffit pas pour passer pour l'un des leurs. L'important ici, c'est de savoir bien se camoufler et agir discrètement, pour que personne ne te démasque ni ne t'attrape. Crois-en les paroles du vieux Lambrini. Salut, mon garçon !
+}
+Clan_Lambrini_79_f {
+Le plus important, n'oublie pas — arborer le torchon d'un État ne suffit pas pour passer pour l'un des leurs. L'important ici, c'est de savoir bien se camoufler et agir discrètement, pour que personne ne te démasque ni ne t'attrape. Crois-en les paroles du vieux Lambrini. Salut, ma fille !
+}
+Clan_Lambrini_80 {
+Adieu.
+}
+Clan_Lambrini_81_m {
+Tu ne m'as pas l'air très sûr de toi en disant tout ça, mon garçon. Mais je ne peux plus rester assis à ne rien faire... Dès que tes informations seront confirmées, tu recevras ta récompense. En attendant, je vais m'occuper de mes affaires.\nEt maintenant, file d'ici avant que je ne regrette d'avoir eu affaire à toi.
+}
+Clan_Lambrini_81_f {
+Tu ne m'as pas l'air très sûre de toi en disant tout ça, ma fille. Mais je ne peux plus rester assis à ne rien faire... Dès que tes informations seront confirmées, tu recevras ta récompense. En attendant, je vais m'occuper de mes affaires.\nEt maintenant, file d'ici avant que je ne regrette d'avoir eu affaire à toi.
+}
+Clan_Lambrini_82 {
+Comme tu voudras...
+}
+Clan_Lambrini_83 {
+Ah, @<pchar> ! Je te félicite de nous avoir débarrassés de ce ver de terre de Thomas ! D'ici peu, j'ai l'intention de signer des contrats avec des clients très avantageux.
+}
+Clan_Lambrini_84 {
+Bonne chance !
+}
+Clan_Lambrini_85 {
+Va-t'en ! J'ai besoin de réfléchir à un truc...
+}
+Clan_Lambrini_86 {
+D'accord...
+}
+Clan_Lambrini_87 {
+Et alors ? Si vous vouliez me faire une surprise, c'est raté. Lambrini veut me tuer, mais après tout, les autres contrebandiers ne s'en priveraient pas non plus.
+}
+Clan_Lambrini_88_m {
+Je suis venu à vous avec une proposition.
+}
+Clan_Lambrini_88_f {
+Je suis venue à vous avec une proposition.
+}
+Clan_Lambrini_89 {
+Ah ça non. Je ne prends pas de pots-de-vin de la part de marchands comme vous. Et je ne manquerai pas de vous dénoncer au gouverneur et au commandant du fort de Port-of-Spain.
+}
+Clan_Lambrini_90_m {
+Vous m'avez mal compris. Que diriez-vous si je vous offrais l'opportunité de capturer ou de couler le navire de Lambrini ?
+}
+Clan_Lambrini_90_f {
+Vous m'avez mal comprise. Que diriez-vous si je vous offrais l'opportunité de capturer ou de couler le navire de Lambrini ?
+}
+Clan_Lambrini_91 {
+Eh bien, adieu alors.
+}
+Clan_Lambrini_92 {
+Je donnerais ma main droite pour ça. Mais c'est impossible, hélas. Il semble avoir déjà acheté tous les commandants et soldats des Caraïbes. Que puis-je faire tout seul ?
+}
+Clan_Lambrini_93_m {
+Lambrini m'a proposé de l'aider à se débarrasser de vous. Il est sûr qu'il ne s'en sortira pas tout seul avec vous, mais moi, je pourrais le faire.
+}
+Clan_Lambrini_93_f {
+Lambrini m'a proposé de l'aider à se débarrasser de vous. Il est sûr qu'il ne s'en sortira pas tout seul avec vous, mais moi, je pourrais le faire.
+}
+Clan_Lambrini_94 {
+Si vous travaillez pour des contrebandiers, alors nous n'avons rien à nous dire, @<GetAddress_Form>. Adieu.
+}
+Clan_Lambrini_95 {
+Heu, attendez — vous ne m'avez même pas écouté(e). Je peux dire à Lambrini que j'ai coulé votre navire. Après cela, tôt ou tard, il naviguera jusqu'ici, pensant qu'il ne risque plus rien. Et vous pourrez lui tendre un piège dans la baie, ou à proximité.
+}
+Clan_Lambrini_96 {
+Adieu alors.
+}
+Clan_Lambrini_97 {
+Curieux... Ce plan pourrait fonctionner, @<GetAddress_Form> @<pchar>. Et si c'est le cas, je ferai en sorte que notre gouverneur vous récompense généreusement !
+}
+Clan_Lambrini_98 {
+Et combien pensez-vous que le gouverneur pourrait offrir pour la tête de Lambrini ?
+}
+Clan_Lambrini_99 {
+Eh bien, il vaudrait mieux le lui demander en personne... Je suppose environ @<Plata2>. Nos revenus ont beaucoup baissé ces derniers temps à cause des contrebandiers.
+}
+Clan_Lambrini_100 {
+Je think que @<Plata2> est un paiement suffisant. Donc, je vais dire à Octavio Lambrini qu'on en a fini avec vous... Quand il naviguera jusqu'ici, nous le pincerons. Qu'est-ce qui pourrait être plus simple ?
+}
+Clan_Lambrini_101 {
+Désolé, capitaine — vous me proposez seulement @<Plata2> piastres ? C'est impossible. Pardonnez-moi, mais je crois que je vais y aller.
+}
+Clan_Lambrini_102 {
+Parfait ! Informez alors Lambrini de ma mort. Après cela, je vous attendrai à l'église de 9 heures du matin à 2 heures de l'après-midi. Nous verrons ce qu'il y a lieu de faire ensuite.
+}
+Clan_Lambrini_103 {
+Prenez soin de vous, monsieur. Bonne chance !
+}
+Clan_Lambrini_104 {
+Parfait ! Informez alors Lambrini de ma mort. Après cela, je vous attendrai à l'église de 9 heures du matin à 2 heures de l'après-midi. Nous verrons ce qu'il y a lieu de faire ensuite.
+}
+Clan_Lambrini_105 {
+Prenez soin de vous, monsieur. Bonne chance !
+}
+Clan_Lambrini_106 {
+@<TimeGreeting>, @<GetAddress_Form>, comment ça s'est passé ?
+}
+Clan_Lambrini_107 {
+D'une manière ou d'une autre, il semble qu'Octavio Lambrini ait cru à votre mort. J'ai de forts soupçons qu'il ne tardera pas à exercer activement son activité.
+}
+Clan_Lambrini_108 {
+Excellent. Les fournisseurs des contrebandiers traînent généralement à la taverne — vous devez donc vous y rendre et garder un œil sur Octavio. De mon côté, je vais préparer un accueil chaleureux. Bonne continuation — soyez prudent(e), @<GetAddress_Form>.
+}
+Clan_Lambrini_109 {
+D'accord, je vais le surveiller à la taverne. Bonne chance à vous aussi.
+}
+Clan_Lambrini_110 {
+Alors, @<GetAddress_Form>, avez-vous vu Lambrini à la taverne ?
+}
+Clan_Lambrini_111_m {
+Pas encore, j'allais justement m'y rendre.
+}
+Clan_Lambrini_111_f {
+Pas encore, j'allais justement m'y rendre.
+}
+Clan_Lambrini_112 {
+... Pourquoi donc ?
+}
+Clan_Lambrini_113 {
+Je veux vendre quelque chose qu'aucun marchand de cette île n'achèterait. Ma cale contient une cargaison de rêve ! Des montagnes d'acajou, imagine un peu.
+}
+Clan_Lambrini_114 {
+Je знаю qu'on peut faire affaire avec toi. Nous t'attendrons dans un endroit appelé le cap Galera.
+}
+Clan_Lambrini_115 {
+Je viendrai à coup sûr.
+}
+Clan_Lambrini_116 {
+@<UpperFirst> @<pchar>, vous êtes de retour. Avez-vous vu quelque chose d'intéressant ?
+}
+Clan_Lambrini_117 {
+J'ai réussi à surprendre la conversation de Lambrini avec un capitaine qui s'apprête à vendre une cargaison illégale et coûteuse — de l'acajou. Ne devrions-nous pas aller à la taverne et cueillir Octavio à vif ?
+}
+Clan_Lambrini_118 {
+Non ! Nous le prendrons en flagrant délit. Ils vont tous se rassembler dans la baie avec cette précieuse marchandise, en se croyant en sécurité. C'est là que nous surgirons pour arrêter tout le monde ainsi que la cargaison. Avez-vous réussi à découvrir le lieu où se fera la transaction ?
+}
+Clan_Lambrini_119 {
+Lambrini a parlé du cap Galera.
+}
+Clan_Lambrini_120 {
+Excellent ! Nous allons les prendre par surprise et lancer un raid à la fois depuis la jungle et par la mer. Mon second viendra facilement à bout du navire d'Octavio, pendant que nous leur couperons toute retraite sur terre.
+}
+Clan_Lambrini_121 {
+Alors, en avant.
+}
+Clan_Lambrini_122 {
+J'ai besoin de me préparer.
+}
+Clan_Lambrini_123 {
+Êtes-vous prêt(e) à prendre la route ?
+}
+Clan_Lambrini_124 {
+Oui, bien sûr.
+}
+Clan_Lambrini_125 {
+Pas encore.
+}
+Clan_Lambrini_126 {
+J'ai peine à croire que nous allons bientôt y mettre un terme. Nous partons à l'instant même.
+}
+Clan_Lambrini_127 {
+En avant !
+}
+Clan_Lambrini_128 {
+Et qui cela peut-il bien être... Je vous salue, officier !
+}
+Clan_Lambrini_129 {
+Il semblerait qu'il se passe quelque chose d'illégal ici.
+}
+Clan_Lambrini_130 {
+Non, non, mes amis et moi nous reposons juste au bord de la mer. Vous comprenez, n'est-ce pas ? Je...
+}
+Clan_Lambrini_131 {
+Pas cette fois, Octavio. Tu es enfin pris en flagrant délit. Je sais qui tu es. Et tu devines déjà qui je suis... Celui que tu désirais si ardemment voir mort il y a peu. Messieurs, vous n'échapperez pas à la justice. Suivez-nous au bureau du commandant — vous êtes tous en état d'arrestation et votre marchandise est confisquée !
+}
+Clan_Lambrini_132_m {
+Sois maudit, Thomas Audley ! Et toi aussi, gamin. J'ai toujours suspecté que tu étais un rat de l'armée !
+}
+Clan_Lambrini_132_f {
+Sois maudit, Thomas Audley ! Et toi aussi, gamine. J'ai toujours suspecté que tu étais un rat de l'armée !
+}
+Clan_Lambrini_133 {
+Ne t'emporte pas pour rien, Lambrini. Toi et ta famille êtes fichus si vous résistez. D'après mes informations, votre navire sera intercepté d'une minute à l'autre par nos vaisseaux. N'attendez aucun secours — rends-toi et tu sauveras quelques vies aujourd'hui.
+}
+Clan_Lambrini_134 {
+Mon Emilio n'est pas de taille pour eux ! Les gars, je n'ai pas l'intention de pourrir en prison pour mes vieux jours ! On va tous vous enterrer ici, petits soldats !
+}
+Clan_Lambrini_135 {
+J'espérais bien que tu dirais ça.
+}
+Clan_Lambrini_136 {
+Je n'arrive pas à y croire, nous avons réussi ! Votre plan a fonctionné à merveille. Dès que le navire de Lambrini, mené par ses fils, s'est approché de l'île, mon brick a surgi de derrière la falaise, et après quelques salves de mitraille, tout était fini. Le second et l'équipage ont abordé le bâtiment des contrebandiers, combat au cours duquel les fils d'Octavio y ont laissé leur tête brûlée.\nVous pouvez regagner la ville l'esprit tranquille, mes hommes vont s'occuper de tout ce désordre.
+}
+Clan_Lambrini_137 {
+Félicitations, Thomas. Ainsi, Octavio Lambrini et même ses fils sont morts. Et je soupçonne que vous avez quelque chose pour moi...
+}
+Clan_Lambrini_138 {
+Oh, oui. Je me souviens de mes promesses, señor capitaine. Voici votre argent — @<Plata2> en argent, comme convenu. Prenez-le, vous l'avez bien mérité.
+}
+Clan_Lambrini_139_m {
+Merci, Thomas — vous êtes un homme de parole, tout comme je le pensais. Bonne continuation.
+}
+Clan_Lambrini_139_f {
+Merci, Thomas — vous êtes un homme de parole, tout comme je le pensais. Bonne continuation.
+}

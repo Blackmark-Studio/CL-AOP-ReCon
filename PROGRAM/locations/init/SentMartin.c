@@ -560,7 +560,7 @@ int LocationInitSentMartin(int n)
 	locations[n].id = "Marigo_townhall";
 	locations[n].id.label = "Townhall";
 	locations[n].filespath.models = "locations\inside\Residence02";
-	locations[n].image = "loading\inside\residence.tga";
+	locations[n].image = "loading\inside\Residence02.tga";
 	//Town sack
 	locations[n].townsack = "Marigo";
 	locations[n].lockWeather = "Inside";
@@ -959,7 +959,7 @@ int LocationInitSentMartin(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Marigo_RoomHouseF1";
 	locations[n].id.label = "Room";
-	locations[n].image = "loading\inside\mediumhouse10.tga";
+	locations[n].image = "loading\inside\mediumhouse05.tga";
 	//Town sack
 	locations[n].townsack = "Marigo";
 	locations[n].lockWeather = "Inside";

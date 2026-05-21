@@ -129,13 +129,13 @@ Ascold_33_f {
 Ach, komm schon! Ich habe doch nur Spaß gemacht! Daran habe ich wirklich nie gedacht...
 }
 Ascold_34 {
-Der Auftrag ist erledigt – Zeit zum Feiern...
+Die Sache ist geritzt! Das müssen wir ordentlich begießen!
 }
 Ascold_35_m {
-Nein, ich wasche gar nichts. Sag du mir lieber – was willst du eigentlich mit diesem Kram? Ich habe mir den Kopf darüber zerbrochen und komme trotzdem nicht drauf. Absolut nutzloses und widerliches Zeug.
+Begießen? Ich werde hier gar nichts waschen. Sag du mir lieber – was willst du eigentlich mit diesem Kram? Ich habe mir den Kopf darüber zerbrochen und komme trotzdem nicht drauf. Absolut nutzloses und widerliches Zeug.
 }
 Ascold_35_f {
-Nein, ich wasche gar nichts. Aber sag du mir mal, warum willst du diesen Kram überhaupt haben? Ich habe mir den Kopf darüber zerbrochen und komme trotzdem nicht dahinter. Das ist doch völlig nutzlos und widerlich.
+Begießen? Ich werde hier gar nichts waschen. Aber sag du mir mal, warum willst du diesen Kram überhaupt haben? Ich habe mir den Kopf darüber zerbrochen und komme trotzdem nicht dahinter. Das ist doch völlig nutzlos und widerlich.
 }
 Ascold_36 {
 Nun, das kommt darauf an, wie man es betrachtet. Dieses Pulver und andere Gegenstände aus den einheimischen Kulten werden von einem bekannten europäischen Gelehrten, Pierre de la Fontaine, bei mir in Auftrag gegeben. Ich bin hier als sein vertrauenswürdiger Vertreter. Alles in allem bin ich ziemlich zufrieden. De la Fontaine bezahlt mein Haus und meinen Lebensunterhalt. Und für jedes kleine Artefakt, das ich hier für ihn finde, zahlt er mir einen sehr großzügigen Bonus.

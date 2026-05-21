@@ -845,7 +845,7 @@ Spa_Line_5_LaVegaAttack.3
 La Vega została zdobyta, garnizon i mieszkańcy wymordowani. Edward Mansfield poległ z mojej ręki.
 Teraz — do Santiago, do Jimeneza!
 }
-Spa_Line_5_LaVegaAttack.4 {Otrzymano nagrodę w wysokości stu tysięcy piastrów od miasta Santiago. Dobry interes...}
+Spa_Line_5_LaVegaAttack.4 {Otrzymano nagrodę w wysokości stu dwudziestu pięciu tysięcy piastrów od miasta Santiago. Dobry interes...}
 Spa_Line_6_TakeMessangeer {Przechwycenie posłańca gubernatora generalnego Holandii}
 Spa_Line_6_TakeMessangeer.1 {Muszę ponownie potajemnie dostać się na Tortugę i przechwycić posłańca od holenderskiego gubernatora generalnego Petera Stuyvesanta. Muszę zdobyć korespondencję dyplomatyczną między Holendrami a Francuzami. List uwierzytelniający od Holenderskiej Kompanii Zachodnioindyjskiej na dostawę ładunku zapewni mi swobodny wstęp do portu Tortuga.}
 Spa_Line_6_TakeMessangeer.2 {Pełnomocnictwo od Dutch West India Company, tak przezornie przekazane mi przez Don Juana, czyni cuda. Mistrz portu zgodził się mi pomóc; teraz muszę poczekać na jego posłańca, który poinformuje mnie o przybyciu wysłannika holenderskiego gubernatora generalnego.}
@@ -981,7 +981,7 @@ Fra_Line_8_ThreeCorsairs.2 {Próbowali mnie aresztować! To nie takie proste, ja
 Fra_Line_8_ThreeCorsairs.3 {Zamiast płacić swoim wasalom, Król Słońce załatwia swoje sprawy ich kosztem! To nie jest najlepsze zlecenie, jakie kiedykolwiek otrzymałem. Będę musiał spotkać się z piratami: Morganem na Jamajce, Jackmanem na Bermudach i Morrisem na Trynidadzie i Tobago. Muszę ich przekonać, by nie brali udziału w wojnie przeciwko Holendrom.}
 Fra_Line_8_ThreeCorsairs.4 {Morgan wyciągnął ode mnie sporą sumę, ale w walce nie weźmie udziału.}
 Fra_Line_8_ThreeCorsairs.5 {Jackman sam nie zamierzał brać udziału w tej wojnie.}
-Fra_Line_8_ThreeCorsairs.6 {Aby przekonać Morrisa, by nie brał udziału w wojnie, muszę zdobyć dziennik pokładowy pewnego kapitana Greya, który kręci się gdzieś po Port Royal.}
+Fra_Line_8_ThreeCorsairs.6 {Aby przekonać Morrisa, by nie brał udziału w wojnie, muszę zdobyć dziennik okrętowy pewnego kapitana Greya, który kręci się gdzieś po Port Royal.}
 Fra_Line_8_ThreeCorsairs.7 {Morris nie będzie pracował dla Mediforda — dopilnowałem tego.}
 Fra_Line_8_ThreeCorsairs.8 {A więc po tych wszystkich przygodach zostałem @<sSex>... Ale wygląda na to, że majątek będę musiał zdobyć sam. Cóż, wielu przez całe życie szuka sposobu, by dostać się do wyższych sfer francuskiego społeczeństwa. Muszę jednak przyznać, że nigdy nie miałem tak nieopłacalnego przedsięwzięcia!}
 Fra_Line_9_GuardPortPax {Odpieranie ataku Hiszpanów na Port-au-Prince}

@@ -762,7 +762,7 @@ Hol_Line_8_SeekBible.8 {在卡塔赫纳附近，我遇到五艘西班牙舰船�
 Hol_Line_8_SeekBible.9 {我从Laurens de Graaf那里买到了一张标有宝藏位置的地图。我要找的那本书就在那个宝藏里。}
 Hol_Line_8_SeekBible.10 {因为成功找到了那本书，我得到了整整一百万！！！太棒了。}
 Hol_Line_9_TakeThreeShips {夺取四艘一等战列舰——Manowars}
-Hol_Line_9_TakeThreeShips.1 {我接到了总督的新任务，而且相当特别。正如你所知，荷兰目前在建造大型战舰方面遇到了困难，所以我需要夺取四艘一级战列舰（主力舰），把它们带到库拉索港，交付给荷兰舰队。这可不容易，但每艘船我都能得到20万枚金币。}
+Hol_Line_9_TakeThreeShips.1 {我接到了总督的新任务，而且相当特别。正如你所知，荷兰目前在建造大型战舰方面遇到了困难，所以我需要夺取四艘一级战列舰（主力舰），把它们带到库拉索港，交付给荷兰舰队。这可不容易，但每艘船我都能得到20万银币。}
 Hol_Line_9_TakeThreeShips.2
 {
 已交付给Stuyvesant的船只：@<QtyTook>。
@@ -872,7 +872,7 @@ Spa_Line_5_LaVegaAttack.3
 拉韦加已被攻占，守军和居民全数被屠杀。爱德华·曼斯菲尔德死在我手下。
 现在——前往圣地亚哥，去找希梅内斯！
 }
-Spa_Line_5_LaVegaAttack.4 {已收到圣地亚哥城悬赏的十万比阿斯特。不错的买卖……}
+Spa_Line_5_LaVegaAttack.4 {已收到来自圣地亚哥城的十二万五千皮亚斯特赏金。不错的交易……}
 Spa_Line_6_TakeMessangeer {截获荷兰总督的信使}
 Spa_Line_6_TakeMessangeer.1 {我需要再次秘密潜入Tortuga，截获荷兰总督Peter Stuyvesant派来的信使。必须拿到荷兰人与法国人之间的外交信件。一份荷兰西印度公司签发的货物运输介绍信将让我畅通无阻地进入Tortuga港口。}
 Spa_Line_6_TakeMessangeer.2 {多亏了唐·胡安如此周到地为我准备的荷兰西印度公司的委托书，一切进展顺利。港口主管已经同意协助我，现在我只需等待他的信使通知荷兰总督特使的到来。}

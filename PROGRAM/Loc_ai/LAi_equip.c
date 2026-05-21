@@ -54,8 +54,7 @@ void LAi_NPC_Equip(ref chr, int rank, bool isWeapons, bool isGun)
 	// boal выдаем пистоль -->
 	if (isGun)
 	{
-		if (CheckAttribute(chr, "PhantomType") && chr.PhantomType == "native") return; //Jason
-		if (CheckAttribute(chr, "PhantomType") && chr.PhantomType == "slave") return;  //Jason
+		if (CheckAttribute(chr, "PhantomType") && or(chr.PhantomType == "native", chr.PhantomType == "slave")) return; //Jason
 		if (CheckAttribute(chr, "model") && StrStartsWith(chr.model, "draugr")) return;  //AlexBlade - Драуграм не выдаем
 
 		string sGun = LAi_NPC_EquipGunSelection(chr);
@@ -161,7 +160,7 @@ string LAi_NPC_EquipBladeSelection(ref chr)
 		return GetBladeByNpcType(COOL_BLADE);
 	if (HasStr(chr.model, "off_") || HasStr(chr.model, "officer_")) // офицерским солдатам даем бело-синее
 		return GetBladeByNpcType(OFFICER_BLADE);
-	if (CheckAttribute(chr, "model") && HasStrEx(chr.model, "miskito_,canib_,indsair,aztecWarrior", "|")) //индейцам индейское
+	if (CheckAttribute(chr, "indian")) //индейцам индейское
 		return GetBladeByNpcType(INDIAN_BLADE);
 	if (CheckAttribute(chr, "model") && StrStartsWith(chr.model, "draugr")) //викингам викингское
 		return GetBladeByNpcType(VIKING_BLADE);
@@ -180,7 +179,7 @@ string LAi_NPC_EquipBladeSelection(ref chr)
 //функция подбора пистолетов (НЕ мушкетов), условия по моделям и проч вести тут
 string LAi_NPC_EquipGunSelection(ref chr)
 {
-	if (rand(1000) < MOD_SKILL_ENEMY_RATE * chr.rank * 8)
+	if (rand(1000) < MOD_SKILL_ENEMY_RATE * sti(chr.rank) * 8)
 	{
 		if (CheckAttribute(chr, "quest.officertype"))  // для офицеров выдаем по их навыкам
 			return LAi_NPC_EquipGunSelection_Officer(chr);
@@ -205,7 +204,7 @@ string LAi_NPC_EquipGunSelection(ref chr)
 //функция подбора мушкетов, условия по моделям и проч вести тут
 string LAi_NPC_EquipMushketSelection(ref chr)
 {
-	if (CheckAttribute(chr, "model") && HasStrEx(chr.model, "miskito_,canib_,indsair,aztecWarrior", "|")) //индейцам плохое (затычка на будущее, вдруг такое будет)
+	if (CheckAttribute(chr, "indian")) //индейцам плохое (затычка на будущее, вдруг такое будет)
 		return GetMushketByNpcType(POOR_GUN);
 	if (CheckAttribute(chr, "PhantomType") && chr.PhantomType == "slave") //беглым рабам плохое (затычка на будущее, вдруг такое будет)
 		return GetMushketByNpcType(POOR_GUN);
@@ -219,8 +218,10 @@ string LAi_NPC_EquipGunSelection_Officer(ref npchar)
 	if (!CheckAttribute(Npchar, "quest.officertype_fighter") ||
 	Npchar.quest.officertype_fighter != "fighter_p")
 	{
-		return LAi_NPC_EquipGunSelection(sti(npchar.rank));
+		return GetGunByNpcType(ORDINARY_GUN);
 	}
+
+	string sItemId = "pistol1";
 
 	int Rank = sti(npchar.rank);
 	int iRnd = rand(2);
@@ -230,29 +231,31 @@ string LAi_NPC_EquipGunSelection_Officer(ref npchar)
 	switch (iRnd)
 	{
 		case 0:
-			return "pistol1";
+			sItemId = "pistol1";
 		break;
 
 		case 1:
-			return "pistol2";
+			sItemId = "pistol2";
 		break;
 
 		case 2:
-			return "pistol3";
+			sItemId = "pistol3";
 		break;
 
 		case 3:
-			return "pistol6";
+			sItemId = "pistol6";
 		break;
 
 		case 4:
-			return "pistol4";
+			sItemId = "pistol4";
 		break;
 
 		case 5:
-			return "pistol5";
+			sItemId = "pistol5";
 		break;
 	}
+
+	return GetGeneratedItem(sItemId);
 }
 
 string LAi_NPC_EquipBladeSelection_Officer(ref npchar)

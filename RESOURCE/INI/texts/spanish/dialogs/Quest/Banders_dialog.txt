@@ -56,7 +56,7 @@ Banders_dialog_13 {
 Qué descarado eres. Y tu amigo decía que sus compañeros eran generosos.
 }
 Banders_dialog_14 {
-Bien, escucha. Tengo información confiable de que en los próximos @<FindDaysString>, dos barcos mercantes de @<pchar>, '@<pchar>' y '@<pchar>', estarán frente a la costa de @<pchar>, con sus bodegas llenas de . Podrías intentar interceptarlos.
+Bien, escucha. Tengo información confiable de que en los próximos @<FindDaysString>, dos barcos mercantes de @<pchar>, '@<pchar>' y '@<pchar>', estarán frente a la costa de @<pchar>, con sus bodegas llenas de @<pchar>. Podrías intentar interceptarlos.
 }
 Banders_dialog_15_m {
 ¡Excelente! Parece que valió la pena compartir mi dinero contigo.
@@ -65,7 +65,7 @@ Banders_dialog_15_f {
 ¡Excelente! Parece que no fue en vano compartir mi dinero contigo.
 }
 Banders_dialog_16 {
-Muy bien, escucha. Tengo información confiable de que en los próximos @<FindDaysString>, dos barcos mercantes de @<pchar> — '@<pchar>' y '@<pchar>' — estarán frente a la costa de @<pchar>, con las bodegas repletas. Podrías intentar interceptarlos.
+Muy bien, escucha. Tengo información confiable de que en los próximos @<FindDaysString>, dos barcos mercantes de @<pchar> — '@<pchar>' y '@<pchar>' — estarán frente a la costa de @<pchar>, con las bodegas llenas de @<pchar>. Podrías intentar interceptarlos.
 }
 Banders_dialog_17_m {
 ¡Excelente! Parece que compartir mi dinero contigo no fue en vano.

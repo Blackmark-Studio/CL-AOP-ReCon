@@ -483,3 +483,9 @@ Common_Shipyard_134 {
 Common_Shipyard_135 {
 没什么……
 }
+Common_Shipyard_136 {
+我没在港口看到你的船，@<GetFullName>船长。
+}
+Common_Shipyard_137 {
+船长，请将船停靠在港口，然后过来。
+}

@@ -147,7 +147,7 @@ JohnMorris_ship {Lagune}
 MushketCap_name {Albert}
 MushketCap_lastname {Zivert}
 MushketCap_ship {Flèche}
-MushketCap_mapEnc {Brick "Arrow"}
+MushketCap_mapEnc {Brigantin "Arrow"}
 GiveKeyMan_name {Hill}
 GiveKeyMan_lastname {Coin}
 LSCMayor_name {Chad}
@@ -275,8 +275,8 @@ CapGobart_name {Capitaine}
 CapGobart_lastname {Hobart}
 Bridgetown_Mayor_name {Gouverneur}
 Bridgetown_Mayor_lastname {Stede}
-Bishop_name {Colonel}
-Bishop_lastname {Évêque}
+Bishop_name {Colonelle}
+Bishop_lastname {Bishop}
 Griffin_name {Ed}
 Griffin_lastname {Griffon}
 Hells_name {Tobias}
@@ -288,9 +288,9 @@ Volverston_lastname {Wolverstone}
 Hugtorp_name {Nathaniel}
 Hugtorp_lastname {Hagthorp}
 Dieke_name {Nicholas}
-Dieke_lastname {Digue}
+Dieke_lastname {Dyke}
 Ogl_name {Ned}
-Ogl_lastname {Reluquer}
+Ogl_lastname {Ogle}
 Slave_Quest_name {Sandro}
 Slave_Quest_lastname {Thorne}
 Nettl_name {James}
@@ -581,7 +581,7 @@ PDM_Pinki_Skelet_name {Pinkamina}
 PDM_Pinki_Skelet_lastname {Ration}
 PDM_Pinki_Skelet2_name {Dave}
 PDM_Pinki_Skelet2_lastname {Pyrogin}
-PDM_NK_Viktor_name {Vitor}
+PDM_NK_Viktor_name {Victor}
 PDM_NK_Viktor_lastname {Le rasage}
 FernandoGonsales_name {Fernando}
 FernandoGonsales_lastname {Gonzales}
@@ -597,3 +597,23 @@ Slave_name {Winarick}
 SecretFortCommander_name {Justino}
 SecretFortCommander_lastname {de Coelho}
 SecretFortGuard_name {Angelo}
+Tiburon_ship {Tiburon}
+Stormbreaker_ship {Chablis}
+HWIC_head_name {Matthias}
+HWIC_head_lastname {Beck}
+PDM_secretary_name {Bartholomew}
+PDM_secretary_lastname {Ulster}
+PDM_ONV_Carla_name {Carla}
+PDM_ONV_Carla_lastname {Joyeuse}
+PDM_Octavio_Lambrini_name {Ottavio}
+PDM_Octavio_Lambrini_lastname {Lambrini}
+Hugo_Lesopilka_name {Hugo}
+Hugo_Lesopilka_lastname {Scie}
+PDM_Odli_name {Thomas}
+PDM_Odli_lastname {Audley}
+PDM_ONV_Silino_Sav_name {Silino}
+PDM_ONV_Silino_Sav_lastname {Sev}
+PDM_ONW_Inqizitor_name {Inquisiteur}
+PDM_CL_Pokupatel_name {James}
+PDM_CL_Pokupatel_lastname {Ballantrae}
+PDM_Octavio_Lambrini_Clone_name {Lambrini et l'Inconnu}

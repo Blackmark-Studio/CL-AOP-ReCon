@@ -43,3 +43,12 @@ Keine Chance, Liebling, nur ein bisschen Vergesslichkeit...
 Beliz_Waitress_12 {
 Nein, keine Fragen ...
 }
+Beliz_Waitress_13 {
+Weißt du zufällig, wo Carla gerade ist?
+}
+Beliz_Waitress_14 {
+Äh... Nein. Fragen Sie lieber die Stadtbewohner. Ich bin mir sicher, dass sie Ihnen bestimmt etwas sagen können.
+}
+Beliz_Waitress_15 {
+Gut, meine Schöne, ich gehe dann mal.
+}

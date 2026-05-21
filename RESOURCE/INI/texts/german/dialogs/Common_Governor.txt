@@ -14,7 +14,7 @@ Common_Governor_4 {
 @<LinkRandPhrase>
 }
 Common_Governor_5_m {
-Was willst du, Schurke?! Meine Soldaten sind dir bereits auf den Fersen – du kommst nicht weit, Schönling. Los, gehen wir nach oben!
+Was willst du, Halunke?! Meine Soldaten sind dir bereits auf den Fersen – du kommst nicht weit, dreckiger Pirat!
 }
 Common_Governor_5_f {
 Was willst du, du Elender?! Meine Soldaten sind dir bereits auf den Fersen – du kommst nicht weit, Halunke!

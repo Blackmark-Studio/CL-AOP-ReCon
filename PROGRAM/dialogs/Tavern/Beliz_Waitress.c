@@ -19,6 +19,19 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 						StringFromKey("Beliz_Waitress_11"),
 						StringFromKey("Beliz_Waitress_12"), npchar, Dialog.CurrentNode);
 			link.l1.go = "exit";
+			if(CheckAttribute(pchar, "questTemp.PDM_ONV_Detectiv_Oficiantka_Beliz"))
+			{
+				link.l1 = StringFromKey("Beliz_Waitress_13");
+				link.l1.go = "PDM_ONV_WOMAN";
+			}
+		break;
+		
+//========================== Квест "Прокажённая" ==================================
+		case "PDM_ONV_WOMAN":
+			dialog.text = StringFromKey("Beliz_Waitress_14");
+			link.l1 = StringFromKey("Beliz_Waitress_15");
+			link.l1.go = "exit";
+			DeleteAttribute(pchar, "questTemp.PDM_ONV_Detectiv_Oficiantka_Beliz");
 		break;
 	}
 	UnloadSegment(NPChar.FileDialog2);  // если где-то выход внутри switch  по return не забыть сделать анлод

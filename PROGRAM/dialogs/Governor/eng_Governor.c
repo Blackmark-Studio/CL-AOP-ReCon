@@ -398,8 +398,6 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 					bWorldAlivePause = false; // Конец линейки
 					RemoveLandQuestmark_Main(npchar, "Eng_Line");
 					RemoveMapQuestmark("PortRoyal_town", "Eng_Line");
-
-					Achievment_Set(ACH_Na_sluzhbe_Anglii);
 				break;
 			}
 		break;
@@ -1286,6 +1284,7 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 			LAi_NoRebirthEnable(npchar);
 			//LAi_SetActorType(npchar);
 			//LAi_ActorAfraid(npchar, pchar, false);
+			TEV.ResidenceFightTemp = true; // при save/load сохранять состаяние в LAi_LocationFightDisable
 
 			LAi_group_Register("EnemyFight");
 			float locx, locy, locz;
@@ -1300,6 +1299,7 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 					sld = &Characters[idx];
 					if (sld.chr_ai.type == "guardian")
 					{
+						DeleteAttribute(sld, "City"); // fix
 						LAi_NoRebirthEnable(sld);
 						LAi_CharacterReincarnation(sld, false, false);
 						LAi_group_MoveCharacter(sld, "EnemyFight");
@@ -1327,6 +1327,7 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 			//слухи
 			AddSimpleRumour(
 				StringFromKey("eng_Governor_259"), ENGLAND, 5, 1);
+			AddDialogExitQuest("MainHeroFightModeOn");
 		break;
 
 		case "Step_12_5":
@@ -1350,6 +1351,7 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 			bWorldAlivePause = false; // Конец линейки
 			RemoveLandQuestmark_Main(npchar, "Eng_Line");
 			RemoveMapQuestmark("PortRoyal_town", "Eng_Line");
+			Achievment_Set(ACH_Na_sluzhbe_Anglii);
 		break;
 
 	}

@@ -155,7 +155,7 @@ void Andre_Abel_Quest_Battle_With_Pirates_Squadron(string sQuest)	// Выпол�
 		
 		rChar = GetCharacter(NPC_GenerateCharacter("Andre_Abel_Quest_Pirate_" + i, sModel, "man", "man", 15, PIRATE, -1, true));
 		FantomMakeCoolFighter(rChar, 35, 40, 35, "blade24", "pistol3", 10);
-		FantomMakeCoolSailor(rChar, RandShipFromPcharSquadron(), sShipName, CANNON_TYPE_LBS_BY_SHIP, 75, 70, 65);
+		FantomMakeCoolSailor(rChar, RandShipFromPcharSquadron(), sShipName, CANNON_TYPE_LBS_BY_SHIP, 50, 45, 40);
 		rChar.name = sName;
 		rChar.Lastname = sLastName;
 		rChar.Abordage.Enable = true; //  Включено разрешение на абордаж пиратских кораблей. Konstrush
@@ -348,13 +348,13 @@ void Andre_Abel_Quest_In_Prison()	// В тюрьме...
 	rChar.Lastname = FindPersonalName("Martin_Bleker_lastname");
 	LAi_SetStayType(rChar);
 	RemoveAllCharacterItems(rChar, true);
+	LAi_SetRolyPoly(rChar, true); //неваляха
 	rChar = CharacterFromID("Andre_Abel_Quest_Guard_1");
 	rChar.LifeDay = 0;
 	ChangeCharacterAddressGroup(rChar, "none", "", ""); // Убираем гвардейца из резиденции
 	
 	PChar.QuestTemp.JailCanMove = false; // Если было - уберем
 	PChar.QuestTemp.Andre_Abel_Quest_In_Prison = true;
-	LAi_SetRolyPoly(rChar, true); //неваляха
 
 	// Запоминаем тип экипированного оружия
 	Andre_Abel_Quest_RememberBladeFencingType();
@@ -725,7 +725,6 @@ void AffairOfHonor_TimeIsLeft(string _quest)
 	DeleteAttribute(PChar, "QuestTemp.AffairOfHonor." + AffairOfHonor_GetCurQuest() + ".Started");
 	
 	CloseQuestHeader("AffairOfHonor");
-	TEV.HasAffairOfHonor = "0";
 	
 	Log_TestInfo("Дело чести: время вышло");
 }
@@ -786,7 +785,6 @@ void AffairOfHonor_KillChar(string _quest)
 	}
 	
 	CloseQuestHeader("AffairOfHonor");
-	TEV.HasAffairOfHonor = "0";
 	
 	SetFunctionTimerCondition("AffairOfHonor_DayAfterDuel", 0, 0, 1, false);
 	
@@ -1146,7 +1144,8 @@ void GhostShipInit()
 {
 	ref sld;
 	//============> Капитан призрака
-	sld = GetCharacter(NPC_GenerateCharacter("GhostCapt", "skeletcap", "skeleton", "man", 55, PIRATE, -1, true));
+	sld = GetCharacter(NPC_GenerateCharacter("GhostCapt", "VanderDecken", "skeleton", "man", 55, PIRATE, -1, true));
+	sld.skeleton = "1";
 	sld.dialog.filename      = "Quest\GhostShip_dialog.c";
 	sld.dialog.currentnode   = "GhostCapt";
 	sld.name 	= FindPersonalName("GhostCapt_name");
@@ -1201,6 +1200,7 @@ void QuestArmT102()
 {
 	ref sld;
 	sld = GetCharacter(NPC_GenerateCharacter("T102", "skelT", "man", "man_B", 55, PIRATE, 0, false));
+	sld.skeleton = "1";
 	sld.dialog.filename = "Quest\T102_dialog.c";
     
 	sld.name = "Terminator";

@@ -3,7 +3,12 @@ void ProcessDialogEvent()
 	ref NPChar, sld, location;
 	aref Link, NextDiag;
 	string sTemp, sTemp1, str, str1;
-	int s1, s2, s3, s4, s5, p1, iColony;
+	int s1, s2, s3, s4, s5, p1, iColony, iCrewFuckPrice, iCrewQty = GetCrewQuantity(pchar); // > матросы на остальных кораблях эскадры: "Ну да, ну да. Пошли мы нахер." TODO
+
+	if (iCrewQty > 0)
+		iCrewFuckPrice = iCrewQty * 30;
+	else
+		iCrewFuckPrice = 1;
 
 	DeleteAttribute(&Dialog, "Links");
 
@@ -74,7 +79,7 @@ void ProcessDialogEvent()
 				link.l1 = StringFromKey("Common_Brothel_23");
 				link.l1.go = "exit";
 				link.l2 = StringFromKey("Common_Brothel_24", pchar);
-				link.l2.go = "quests";//(перессылка в файл города)
+				link.l2.go = "quests"; //(перессылка в файл города)
 				break;
 			}
 			if (npchar.questChurch == "taken")
@@ -151,8 +156,11 @@ void ProcessDialogEvent()
 			}
 			link.l2 = StringFromKey("Common_Brothel_44", npchar.name);
 			link.l2.go = "Hostess_1";
-			link.l3 = StringFromKey("Common_Brothel_45", pchar);
-			link.l3.go = "ForCrew";
+			if (CheckShip(pchar) && iCrewQty > 0)
+			{
+				link.l3 = StringFromKey("Common_Brothel_45", pchar);
+				link.l3.go = "ForCrew";
+			}
 			link.l4 = StringFromKey("Common_Brothel_46");
 			if (CheckCharacterItem(pchar, "CaptainBook") && !CheckAttribute(pchar, "questTemp.different.GiveShipLetters.speakBrothelMadam"))
 			{
@@ -403,7 +411,7 @@ void ProcessDialogEvent()
 		break;
 		//==> команда
 		case "ForCrew":
-			dialog.text = StringFromKey("Common_Brothel_84", pchar, FindMoneyString(GetCrewQuantity(pchar) * 30));
+			dialog.text = StringFromKey("Common_Brothel_84", pchar, FindMoneyString(iCrewFuckPrice));
 			link.l1 = StringFromKey("Common_Brothel_85", pchar);
 			link.l1.go = "ForCrew_1";
 			link.l2 = StringFromKey("Common_Brothel_86");
@@ -411,10 +419,9 @@ void ProcessDialogEvent()
 		break;
 
 		case "ForCrew_1":
-			if (sti(Pchar.money) >= GetCrewQuantity(pchar) * 30 && GetCrewQuantity(pchar) > 0)
+			if (sti(Pchar.money) >= iCrewFuckPrice)
 			{
-				AddMoneyToCharacter(Pchar, -makeint(GetCrewQuantity(pchar) * 30));
-
+				AddMoneyToCharacter(Pchar, -makeint(iCrewFuckPrice));
 				AddCrewMorale(Pchar, 10);
 				LAi_Fade("", "");
 				AddTimeToCurrent(5 + rand(1), rand(30));

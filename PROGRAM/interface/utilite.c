@@ -1009,15 +1009,10 @@ string GetItemDescribe(int iGoodIndex)
 		{
 			describeStr += " " + ColorText(LanguageConvertString(lngFileID, "energy value"), "import");
 
-			if (arItm.id == "potionrum")
-				describeStr += " +20";
+			if (stf(arItm.potion.energy) >= 0)
+				describeStr += " +" + sti(arItm.potion.energy);
 			else
-			{
-				if (stf(arItm.potion.energy) >= 0)
-					describeStr += " +" + sti(arItm.potion.energy);
-				else
-					describeStr += " " + sti(arItm.potion.energy);
-			}
+				describeStr += " " + sti(arItm.potion.energy);
 		}
 
 		if (CheckAttribute(arItm, "potion.antidote") && sti(arItm.potion.antidote) > 0)

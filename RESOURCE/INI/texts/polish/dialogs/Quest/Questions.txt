@@ -494,7 +494,7 @@ Questions_140 {
 Nie, raczej nie...
 }
 Questions_141 {
-To posąg, który daje niezwykłą możliwość sprawniejszego przeprowadzania napraw statku. Jest ukryty w zatoce niedaleko Portobelo. Ta zatoka nazywa się Laguna Chiriquí. Rozejrzyj się tam uważnie i nie bój się zamoczyć nóg. Powodzenia, kapitanie!
+To skrzynia z narzędziami ciesielskimi, które niegdyś pozwalały znacznie sprawniej naprawiać statek. Została zakopana w zatoce niedaleko Portobelo — to Chiriqui Lagoon. Przeszukajcie tam wszystko dokładnie i nie bójcie się zamoczyć butów. Być może część tych wspaniałych narzędzi wciąż nadaje się do użytku... Powodzenia, kapitanie!
 }
 Questions_142 {
 Wiesz, to naprawdę przydatna rzecz dla kapitana. Dziękuję ci.

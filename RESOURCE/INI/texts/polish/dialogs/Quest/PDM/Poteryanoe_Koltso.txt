@@ -263,8 +263,11 @@ Poteryanoe_Koltso_69_f {
 Życie się nie kończy, madame. Myślę, że powinna pani odnaleźć swoich bliskich — jestem pewna, że bardzo za panią tęsknią. Do widzenia.
 }
 Poteryanoe_Koltso_70 {
-Chwileczkę, chwileczkę, @<GetAddress_Form>. Należy się panu/pani nagroda. Proszę, oto 5000 monet i 10 diamentów. Teraz są pańskie.
+Chwileczkę, chwileczkę, @<GetAddress_Form>. Należy się panu/pani nagroda. Weź wszystkie pieniądze, które mam przy sobie, i całą moją biżuterię. Teraz należą do ciebie. Dziękuję ci, kapitanie. Dziękuję...
 }
 Poteryanoe_Koltso_71 {
 Bardzo dziękuję, madam.
+}
+Poteryanoe_Koltso_72 {
+Ten pierścień należy do bardzo starej kobiety, która straciła swojego jedynego syna... Bardzo nieszczęśliwej starej kobiety, która oszalała i która przypomina ci twoją matkę. A ten pierścień został zdjęty z martwego ciała jej syna. Chcę go tylko zwrócić prawowitej właścicielce. Pomyśl sama, czy taki magiczny pierścień przyniósłby ci szczęście?
 }

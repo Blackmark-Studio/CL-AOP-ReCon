@@ -277,3 +277,15 @@ Jestem niezmiernie wdzięczny, Wasza Świątobliwość!
 Incquistors_dialog_73_f {
 Jestem ogromnie wdzięczna, Wasza Świątobliwość!
 }
+Incquistors_dialog_74 {
+Ojcze Święty, działam z upoważnienia gubernatora Belize i tropię pewną czarownicę. Wiem, że tutaj, w Santiago, w tawernie pracuje wiedźma o imieniu Carla, była portowa prostytutka. Swoją mroczną magią zabiła już dwóch ludzi – kapitana Miguela Cuendę oraz dobrego hidalgo Bartholomewa, który zmarł, zanim zdążył się wyspowiadać. Był sługą gubernatora Belize. Modlę się do Boga, aby Święta Inkwizycja ukarała ją za jej grzeszne czyny.
+}
+Incquistors_dialog_75_m {
+Ach, niech twoja dusza będzie na wieki błogosławiona za twój prawy czyn, mój synu. Zajmiemy się tą wiedźmą. Twój zapał zostanie nagrodzony moim osobistym błogosławieństwem.\nCo więcej, mój synu, będziesz osobiście świadkiem tego, jak to wiedźmie pomiotło płonie w świętym ogniu Inkwizycji.
+}
+Incquistors_dialog_75_f {
+Ach, niech twoja dusza będzie na wieki błogosławiona za twój prawy czyn, moja córko. Zajmiemy się tą wiedźmą. Twój zapał zostanie nagrodzony moim osobistym błogosławieństwem.\nCo więcej, moja córko, będziesz osobiście świadkiem tego, jak to wiedźmie pomiotło płonie w świętym ogniu Inkwizycji.
+}
+Incquistors_dialog_76 {
+To dla mnie zaszczyt, ojcze święty.
+}

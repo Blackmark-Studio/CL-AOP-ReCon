@@ -129,13 +129,13 @@ Ascold_33_f {
 Co ty! Przecież tylko żartowałam! Nawet przez myśl mi to nie przeszło...
 }
 Ascold_34 {
-Robota skończona, teraz można to uczcić...
+Sprawa załatwiona! Teraz trzeba to oblać!
 }
 Ascold_35_m {
-Nie, nie będę niczego myć. Lepiej powiedz mi, po co ci to świństwo? Tyle się nad tym głowiłem, a i tak nie zrozumiałem. Zupełnie bezużyteczna i obrzydliwa rzecz.
+Oblać? Nie, nie będę niczego myć. Lepiej powiedz mi, po co ci to świństwo? Tyle się nad tym głowiłem, a i tak nie zrozumiałem. Zupełnie bezużyteczna i obrzydliwa rzecz.
 }
 Ascold_35_f {
-Nie, nie będę niczego myć. Lepiej powiedz mi, po co ci to świństwo? Tyle się nad tym głowiłam, a i tak nie zrozumiałam. Zupełnie bezużyteczna i obrzydliwa rzecz.
+Oblać? Nie, nie będę niczego myć. Lepiej powiedz mi, po co ci to świństwo? Tyle się nad tym głowiłam, a i tak nie zrozumiałam. Zupełnie bezużyteczna i obrzydliwa rzecz.
 }
 Ascold_36 {
 No cóż, to zależy, jak na to spojrzeć. Ten proszek i podobne przedmioty kultu Indian zamawia u mnie znany w Europie uczony Pierre de la Fontaine. Jestem tu jako jego zaufany przedstawiciel. W zasadzie jestem całkiem zadowolony. De la Fontaine opłaca wynajem domu i moje utrzymanie. A za każdy taki przedmiot, który tu dla niego znajduję na zamówienie, płaci mi naprawdę bardzo dobrze.

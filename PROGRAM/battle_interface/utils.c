@@ -405,9 +405,11 @@ void GetTextureUVForShip(int nShipType, ref rLeft, ref rTop, ref rRight, ref rBo
 		int nV = BI_intNRetValue[0] / 16;
 		int nH = BI_intNRetValue[0] - nV * 16;
 		fLeft = stf(nH) * 0.0625;
-		fTop = stf(nV) * 0.0625;//0.25;
+//		fTop = stf(nV) * 0.0625;//0.25;
+		fTop = stf(nV) * 0.125;
 		fRight = fLeft + 0.0625;
-		fBottom = fTop + 0.0625;//0.25;
+//		fBottom = fTop + 0.0625;//0.25;
+		fBottom = fTop + 0.125;
 	}
 
 	rLeft = fLeft;
@@ -459,7 +461,7 @@ bool CheckInstantRepairCondition(ref chref)
 {
 //boal -->
     if (CheckOfficersPerk(chref,"InstantRepair")) return false;  // уже в деле
-    if (!GetOfficersPerkUsing(chref,"InstantRepair")) return false;  // можно включить?
+    if (!GetOfficersPerkUsing(chref,"InstantRepair", false)) return false;  // можно включить?
 //boal <--
 
 	float chrShipHP = GetHullPercent(chref);

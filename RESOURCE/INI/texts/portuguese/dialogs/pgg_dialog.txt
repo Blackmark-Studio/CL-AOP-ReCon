@@ -1051,7 +1051,10 @@ Já conversamos sobre tudo, não foi?
 pgg_dialog_292 {
 @<RandPhraseSimple>
 }
-pgg_dialog_293 {
+pgg_dialog_293_m {
+Siga seu caminho, estou ocupado.
+}
+pgg_dialog_293_f {
 Siga seu caminho, estou ocupado.
 }
 pgg_dialog_294 {
@@ -1244,13 +1247,13 @@ pgg_dialog_347 {
 Em @<FindDaysString>, a caravana terá partido e não poderemos mais alcançá-los.
 }
 pgg_dialog_348 {
-Temos exatamente @<FindDaysString> dias para derrotá-los e pegar o saque!
+Temos exatamente @<FindDaysString> para derrotá-los e pegar o saque!
 }
 pgg_dialog_349 {
 @<RandPhraseSimple>
 }
 pgg_dialog_350 {
-Temos @<FindDaysString> dias à nossa disposição para toda a operação.
+Temos @<FindDaysString> à nossa disposição para toda a operação.
 }
 pgg_dialog_351 {
 É melhor a gente se apressar, @<PChar>. Só restam @<FindDaysString>.
@@ -1526,7 +1529,7 @@ pgg_dialog_427 {
 Muito bem, Capitão! O saque totaliza @<PChar> @<PChar>.
 }
 pgg_dialog_428 {
-Minha parte
+Minha parte:
 }
 pgg_dialog_429 {
 A parte destinada ao meu navio —

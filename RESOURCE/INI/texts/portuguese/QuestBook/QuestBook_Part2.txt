@@ -875,7 +875,7 @@ Spa_Line_5_LaVegaAttack.3
 La Vega foi tomada, o quartel e os moradores massacrados. Edward Mansfield caiu pela minha mão.
 Agora—para Santiago, até Jimenez!
 }
-Spa_Line_5_LaVegaAttack.4 {Uma recompensa de cem mil piastras da cidade de Santiago foi recebida. Um bom negócio...}
+Spa_Line_5_LaVegaAttack.4 {Uma recompensa de cento e vinte e cinco mil piastras da cidade de Santiago foi recebida. Um bom negócio...}
 Spa_Line_6_TakeMessangeer {Interceptando o Mensageiro do Governador-Geral Holandês}
 Spa_Line_6_TakeMessangeer.1 {Preciso me infiltrar secretamente em Tortuga novamente e interceptar o mensageiro do Governador-Geral holandês Peter Stuyvesant. Devo obter a correspondência diplomática entre os holandeses e os franceses. Uma carta de credenciamento da Dutch West India Company para entrega de carga me garantirá entrada livre no porto de Tortuga.}
 Spa_Line_6_TakeMessangeer.2 {A procuração da Dutch West India Company, tão cuidadosamente providenciada por Don Juan, faz maravilhas. O mestre do porto concordou em me ajudar; agora preciso aguardar o mensageiro dele, que me informará sobre a chegada do enviado do governador-geral holandês.}

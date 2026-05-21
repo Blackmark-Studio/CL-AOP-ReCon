@@ -143,13 +143,13 @@ Minentown_mayor_41 {
 Nie mogę go wam wydać... Nawet jeśli to rozkaz Jego Ekscelencji, ponieważ on znajduje się poza...
 }
 Minentown_mayor_42 {
-Nie martwcie się tak – potrzebuję go tylko po to, żeby pokazał mi miejsce rytuału.
+Nie martw się tak bardzo - potrzebuję go tylko po to, żeby pokazał mi miejsce rytuału.
 }
 Minentown_mayor_43 {
-Nie mogę go wam wydać... Nawet jeśli to rozkaz Jego Ekscelencji, ponieważ on znajduje się poza...
+I po co ci to?
 }
 Minentown_mayor_44 {
-Nie martwcie się tak – potrzebuję go tylko po to, by wskazał miejsce rytuału. Musimy go wyeliminować w pierwszej kolejności, inaczej osunięcia będą się powtarzać.
+Rzecz w tym, że to miejsce rytuału trzeba oczyścić w pierwszej kolejności, inaczej zawały będą trwać.
 }
 Minentown_mayor_45 {
 Nie bardzo wierzę w te wszystkie magiczne sztuczki, ale skoro tak mówicie, niech już tak będzie.

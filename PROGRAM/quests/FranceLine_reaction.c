@@ -4564,6 +4564,7 @@ void FranceLineQuestComplete(string sQuestName, string qname)
 			for(i=1;i<3;i++)
 			{
 				chr2 = GetCharacter(NPC_GenerateCharacter("FL_indian_"+i, "aztecWarrior"+i, "man", "man", 1, PIRATE, -1, false));
+				chr2.indian = "1";
 				FantomMakeCoolFighter(chr2, sti(pchar.rank), 30, 30, "blade11", "", 0);
 				ChangeCharacterAddressGroup(chr2, pchar.location, "goto", "goto5");
 				LAi_SetActorType(chr2);

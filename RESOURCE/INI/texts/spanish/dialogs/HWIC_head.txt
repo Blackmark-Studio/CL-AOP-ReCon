@@ -1,0 +1,39 @@
+HWIC_head_1 {
+Os saludo. Estoy muy ocupado en este momento, así que hablad claro: ¿tenéis algún asunto conmigo?
+}
+HWIC_head_2 {
+El caso es que... uno de los piratas quiere entrar a vuestro servicio. Está dispuesto a pagar 20 000 pesos por una oportunidad que le permita trabajar para vos.
+}
+HWIC_head_3 {
+¿Me gustaría saber cómo os fue con Hugo?
+}
+HWIC_head_4 {
+No, no, no me hagáis caso. Ya me marcho.
+}
+HWIC_head_5 {
+¿Quién es ese hombre?
+}
+HWIC_head_6 {
+Se llama Hugo el Aserradero. Él...
+}
+HWIC_head_7 {
+¿Os dais cuenta de que ese hombre es un pirata infame y un asesino despiadado? Jamás permitiré que un individuo así figure en nuestro registro de capitanes.
+}
+HWIC_head_8_m {
+Pero ya no es peligroso... Lo he visto, es solo un viejo cansado y su mayor deseo es dormir en una cama cómoda. Está listo para retirarse y busca un puerto seguro donde le permitan vivir en paz.
+}
+HWIC_head_8_f {
+Pero ya no es peligroso... Lo he visto, es solo un viejo cansado y su mayor deseo es dormir en una cama cómoda. Está listo para retirarse y busca un puerto seguro donde le permitan vivir en paz.
+}
+HWIC_head_9 {
+Hum... Si vos lo decís, tal vez tengáis razón. Confiaré en vos en este asunto, @<pchar>. Además, podría sernos útil como asesor en la lucha contra la piratería. De acuerdo.\nAquí tengo este formulario para la formalización del contrato, tomadlo y entregádselo, capitán. Hugo deberá presentarse ante mí inmediatamente después de recibirlo para firmar todos los documentos de trabajo necesarios. Y esto es obligatorio, debéis entenderlo, capitán. Avisaré a las autoridades locales de su comparecencia. Ahora, permitidme volver a mis asuntos.
+}
+HWIC_head_10 {
+¡Por supuesto, @<GetFullName>! ¡Adiós!
+}
+HWIC_head_11 {
+Oh, os quedo muy agradecido, @<GetAddress_Form> @<pchar>. Es un capitán muy valiente y experimentado. Nuestros enemigos ya han perdido media docena de barcos. Y además es un narrador magnífico. ¡Sus historias de los viejos tiempos reúnen a multitudes en la taberna! Ahora, si me disculpáis, os pediré que me dejéis.
+}
+HWIC_head_12 {
+¡Que os vaya bien!
+}

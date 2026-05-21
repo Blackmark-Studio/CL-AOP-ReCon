@@ -19,6 +19,13 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 						StringFromKey("Beliz_Mayor_11"),
 						StringFromKey("Beliz_Mayor_12", GetAddress_FormToNPC(NPChar)), npchar, Dialog.CurrentNode);
 			link.l1.go = "exit";
+			// Квест "Прокажённая" -->
+			if (CheckAttribute(pchar, "questTemp.PDM_ONV_VedmaKaznena"))
+			{
+				link.l1 = StringFromKey("Beliz_Mayor_29");
+				link.l1.go = "PDM_ONV_VedmaKaznena";
+			}
+			// Квест "Прокажённая" <--
 		break;
 
 		case "Cupture_after":
@@ -115,6 +122,32 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 			InterfaceStates.Buttons.Save.enable = false;
 			chrDisableReloadToLocation = true;
 		break;
+		
+		// Квест "Прокажённая" -->
+		case "PDM_ONV_VedmaKaznena":
+            dialog.text = StringFromKey("Beliz_Mayor_30");
+            link.l1 = StringFromKey("Beliz_Mayor_31");
+            link.l1.go = "PDM_ONV_Nagrada";
+			AddMoneyToCharacter(pchar, 15000);
+        break;
+
+		case "PDM_ONV_Nagrada":
+			DialogExit();
+			
+			AddQuestRecord("PDM_Ohota_na_vedmu", "15");
+			if (LanguageGetLanguage() == "russian") AddQuestUserData("PDM_Ohota_na_vedmu", "sSex", GetSexPhrase("","а"));
+			CloseQuestHeader("PDM_Ohota_na_vedmu");
+			DeleteAttribute(pchar, "questTemp.PDM_ONV_VedmaKaznena");
+			AddCharacterExpToSkill(pchar, "Leadership", 300);
+			ChangeCharacterReputation(pchar, 5);
+			ChangeCharacterNationReputation(pchar, SPAIN, 15);
+			AddSimpleRumour(StringFromKey("Beliz_Mayor_32"),SPAIN,7,1);
+			RemoveLandQuestmark_Main(CharacterFromID("Beliz_Mayor"), "PDM_Ohota_na_vedmu");
+			RemoveMapQuestMark("Beliz_town", "PDM_Ohota_na_vedmu");
+			pchar.questTemp.PDM_ONW_Completed = "Spain";
+			Achievment_Set(ACH_Ohota_na_vedmu);
+        break;
+		// Квест "Прокажённая" <--
 
 	}
 	UnloadSegment(NPChar.FileDialog2);  // если где-то выход внутри switch  по return не забыть сделать анлод

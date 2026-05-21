@@ -270,6 +270,15 @@ itmtext_RingCapBook
 ... já é o décimo homem a cair, acometido por uma febre repentina. Os marinheiros estão resmungando. O contramestre mal consegue manter a disciplina. Esta noite, o corpo do primeiro morto pela doença foi lançado ao mar. A água doce está começando a faltar. Deus, mande-nos vento!
 ... finalmente, uma brisa fresca encheu nossas velas. Mas há pouca alegria — um terço da tripulação está delirando de febre. Esta noite
 }
+itmname_LesopilkaLog {Diário de Bordo}
+itmdescr_LesopilkaLog
+{
+Um diário de bordo com capa vermelha, contendo informações sobre a carga transportada.
+}
+itmtext_LesopilkaLog
+{
+... Tomei a decisão de que, durante os reparos no navio, moveremos parte dos tesouros para a ilha. Por precaução. Nosso navio está muito vulnerável agora e não posso garantir que conseguirei proteger a valiosa carga. Se os piratas aparecerem de repente, há uma posição vantajosa na ilha de onde lutaremos...
+}
 itmname_unarmed {Desarmado}
 itmdescr_unarmed {A habilidade de se defender usando a única arma que você sempre tem: seus punhos.}
 itmname_blade5 {Adaga de aparar}
@@ -445,7 +454,7 @@ Uma arma de cano liso e carregamento pela boca, com um mecanismo mais confiável
 ~
 Requer a vantagem 'Treinamento de Mosqueteiro'.
 }
-itmname_mushket_H2 {Mosquete duplo exclusivo}
+itmname_mushket_H2 {Mosquete de dois canos}
 itmdescr_mushket_H2
 {
 Mosquete de dois canos com pederneira, feito sob encomenda. Uma obra exclusiva da arte da artilharia. Apesar do alto custo, o design é um pouco ultrapassado. No entanto, com toda sua potência e eficácia, esta magnífica carabina exige certa habilidade e experiência de seu dono.
@@ -459,7 +468,7 @@ Arma de fogo ancestral de Tichinguit. Um exemplar único criado a partir de uma 
 ~
 Requer a vantagem 'Treinamento de Mosqueteiro'.
 }
-itmname_mushket2x2 {Mosquete de dois canos}
+itmname_mushket2x2 {Mosquete duplo exclusivo}
 itmdescr_mushket2x2
 {
 Uma obra-prima da artilharia de Saint-Etienne. Foram os franceses que criaram a arma de cano duplo raiado ao aprimorar o mecanismo de bateria. É impossível usar essa arma sem treinamento em uma escola militar do Velho Mundo.
@@ -638,6 +647,8 @@ itmname_potionrum {Garrafa de rum}
 itmdescr_potionrum {Nenhum rum é forte o bastante para derrubar um pirata como você, então beba sem medo... Aliás, se estiver ferido, o álcool contido nele pode ajudar a curar feridas e prevenir infecções.}
 itmname_potionwine {Vinho excelente}
 itmdescr_potionwine {Um dos melhores vinhos franceses do Caribe. Seu efeito relaxante ajuda a recuperar as forças e previne infecções.}
+itmname_potionsangari {Sangaree}
+itmdescr_potionsangari {Bebida alcoólica refrescante. A combinação de vinho tinto e rum forte, temperada com ingredientes secretos, é ideal para saciar a sede no calor insuportável. A bebida revigora e dá forças, sem causar a embriaguez pesada do álcool puro.}
 itmname_jewelry1 {Safira}
 itmdescr_jewelry1 {Um raro safira azul extraído das profundezas do Vice-Reino Espanhol de Nova Granada. Dizem que essas gemas são encontradas em minas próximas a Quito ou nos Andes, onde sua cor é comparada às águas mais profundas do Oceano Pacífico.}
 itmname_jewelry2 {Diamante}
@@ -885,6 +896,11 @@ itmname_recipe_migraine_potion {Instruções (Decocção para Enxaqueca)}
 itmdescr_recipe_migraine_potion {Instruções para preparar a Poção de Enxaqueca.}
 itmname_recipe_potion1 {Instrução (Poção de Cura)}
 itmdescr_recipe_potion1 {Instruções para preparar uma Poção de Cura.}
+itmname_recipe_potionsangari {Receita de "Sangaree"}
+itmdescr_recipe_potionsangari
+{
+Um pedaço de papel escrito com letra apressada. Detalha a técnica de mistura de vinho e rum para obter o "Sangaree" perfeito. Permite preparar esta bebida por conta própria, desde que possua os ingredientes necessários e um kit de alquimia.
+}
 itmname_Mineral2 {Alaúde}
 itmdescr_Mineral2 {Um instrumento musical de cordas muito popular. Um talentoso tocador de alaúde pode elevar o moral de soldados ou marinheiros.}
 itmname_Mineral3 {Vela}
@@ -1004,13 +1020,6 @@ itmname_PDM_PJ_Vino {Garrafa de vinho}
 itmdescr_PDM_PJ_Vino {Uma garrafa de vinho requintado e caro para ser entregue a um soldado.}
 itmname_PDM_PJ_Rom {Garrafa de rum}
 itmdescr_PDM_PJ_Rom {Uma garrafa de rum barato para ser entregue a um soldado.}
-itmname_PDM_PJ_BsRL {Garrafa com Fita Rosa}
-itmdescr_PDM_PJ_BsRL
-{
-Uma garrafa com uma fita rosa delicadamente amarrada.
-* * *
-Passivo: +2 Sorte, +2 Comércio, -2 Furtividade.
-}
 itmname_DesMoinesLocies {Roteiro de Des Moines}
 itmdescr_DesMoinesLocies {Instruções detalhadas de navegação segura e ancoragem ao longo das costas do assentamento Des Moines.}
 itmname_letter_A {Carta Selada}
@@ -1058,7 +1067,7 @@ itmname_instrument1 {Serra Fina}
 itmdescr_instrument1
 {
 Uma ferramenta simples utilizada por gerações de carpinteiros navais. Este exemplar possui uma empunhadura excepcionalmente confortável, permitindo cortes rápidos e precisos. Com um instrumento assim, um carpinteiro experiente pode trabalhar por horas sem se cansar.
-+10 Reparo
+Passivo: +5 Reparo.
 }
 
 itmname_strangeNoteLSC	{O bilhete estranho}
@@ -1069,4 +1078,18 @@ Um pedaço de pergaminho com rabiscos
 itmtext_strangeNoteLSC
 {
 Eu gostaria de partir para o abraço da terra ao mar, para ver nele o fim de toda a existência.
+}
+
+itmname_TizerJournal   {Diário de Daniel Tudor}
+itmdescr_TizerJournal
+{
+Um diário pesado encadernado em couro com fechadura. Na capa está gravado:\n"Propriedade de Daniel Gabrielo Tudor".\nA leitura de tais memórias levará bastante tempo.
+}
+itmtext_TizerJournal
+{
+Muitos tolos buscam a Ilha da Justiça, confiando em uma bússola ou em conhecimentos cartográficos. Mas esta ilha jamais estará nos mapas, e a agulha da bússola enlouquecerá assim que alguém se aproximar dos recifes amaldiçoados.
+A ilha não aceita aqueles que vêm por curiosidade ociosa ou ganância. Para alcançar o abraço da terra vindo do mar, é preciso entregar-se à mercê dos elementos, permanecendo em total ignorância sobre o que será de sua alma e de seu corpo.
+Somente através do rugido de uma grande tempestade, somente através do estalo de mastros se quebrando e do inevitável naufrágio, o caminho se revela.
+O próprio mar decidirá o que fazer com você — o principal é não resistir à sua força. E o maior mistério da ilha: a Ilha rejeita armadas.
+Aquele que decidir dar este passo deve fazê-lo sozinho. Sem tripulação. Sem companheiros leais às costas. Apenas você e a fúria do oceano. Caso contrário, a perdição aguardará a todos...
 }

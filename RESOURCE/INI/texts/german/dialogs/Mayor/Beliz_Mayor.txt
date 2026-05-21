@@ -91,3 +91,15 @@ Ich zweifle keine Sekunde daran, dass all das geschehen wird. Ich habe die Gesch
 Beliz_Mayor_28 {
 Sie haben gerade Ihr Leben und Ihre Gesundheit gerettet. Glückwunsch, und mögen Sie auch in Zukunft wohlauf bleiben, Señor.
 }
+Beliz_Mayor_29 {
+Ich erinnere Sie daran, dass Sie darum gebeten hatten, die Frau der Justiz zu übergeben, die mit dem Mord an Ihrem Sekretär, Bartholomew Olster, in Verbindung steht.
+}
+Beliz_Mayor_30 {
+Oh, ja, ich habe einen Brief vom heiligen Vater über diese teuflische Kreatur und ihr Schicksal erhalten. Sie haben gute Arbeit geleistet, Kapitän. Ich danke Ihnen von ganzem Herzen für Ihre Hilfe in dieser Angelegenheit. Ich nehme an, es war nicht leicht, sie zu finden. Ich biete eine bescheidene Belohnung für den Kopf dieser Hexe – 15.000 Piaster und meinen persönlichen Dank.
+}
+Beliz_Mayor_31 {
+Danke, Herr Gouverneur! Ich nehme diese Belohnung an. Auf Wiedersehen.
+}
+Beliz_Mayor_32 {
+Kapitän, man erzählt sich, dass es Ihnen gelungen ist, die Hexe, die Lustige Carla, zu fangen! Ist das wirklich wahr?! Unglaublich!!
+}

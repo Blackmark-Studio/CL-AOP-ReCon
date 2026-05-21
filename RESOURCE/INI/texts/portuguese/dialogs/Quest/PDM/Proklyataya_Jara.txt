@@ -23,7 +23,7 @@ Proklyataya_Jara_7 {
 Sim, isso é realmente revoltante... Talvez eu possa te ajudar de alguma forma?
 }
 Proklyataya_Jara_8 {
-Ah, obrigado, @<GetAddress_Form>! Agora, tudo o que eu consigo sonhar é com um pequeno gole de vinho. Claro, não devo beber enquanto estou de serviço, mas mesmo assim... Você poderia me trazer uma garrafa de vinho? Eu até poderia te pagar por isso.
+Ah, obrigado, @<GetAddress_Form>! Agora, tudo o que eu consigo sonhar é com um pequeno gole de vinho. Claro, não devo beber enquanto estou de serviço, mas mesmo assim... Você não aceitaria me trazer uma garrafa de vinho da nossa taverna local? O vinho do taverneiro Jerome é simplesmente fantástico... Eu até poderia te pagar por isso.
 }
 Proklyataya_Jara_9 {
 Eu sei como as responsabilidades podem pesar às vezes... Vou trazer uma garrafa de vinho para você.
@@ -59,10 +59,10 @@ Proklyataya_Jara_18 {
 Não se preocupe com o dinheiro — fiquei feliz em fazer isso por você.
 }
 Proklyataya_Jara_19_m {
-500 piastras. Pedi um vinho que não fosse caro, mas parece que sua taverna é administrada por um ex-pirata, aquele @<GetFullName>.
+1000 piastras. Pedi um vinho que não fosse caro, mas parece que sua taverna é administrada por um ex-pirata, aquele @<GetFullName>.
 }
 Proklyataya_Jara_19_f {
-500 piastras. Pedi um vinho que não fosse caro, mas parece que sua taverna é administrada por um ex-pirata, esse @<GetFullName>.
+1000 piastras. Pedi um vinho que não fosse caro, mas parece que sua taverna é administrada por um ex-pirata, esse @<GetFullName>.
 }
 Proklyataya_Jara_20 {
 Você é uma pessoa muito gentil. Ficarei feliz em ajudá-lo se precisar de algo.
@@ -71,7 +71,7 @@ Proklyataya_Jara_21 {
 Valeu, amigo. Até mais.
 }
 Proklyataya_Jara_22 {
-500 piastres? Mas isso é metade do meu salário... O que eu faço agora?
+1000 piastres? Mas isso é metade do meu salário... O que eu faço agora?
 }
 Proklyataya_Jara_23 {
 Você devia ter pensado nisso antes. Agora chegou a hora de pagar.
@@ -101,7 +101,7 @@ Proklyataya_Jara_30_f {
 O quê?! Você também quer que eu compre vinho pra você?
 }
 Proklyataya_Jara_31 {
-Bem, para falar a verdade, não sou muito fã de vinho. Mas não recusaria um pouco de rum.
+Bem, para falar a verdade, não sou muito fã de vinho. Mas uma gota de rum da taverna do Jerome não me faria mal.
 }
 Proklyataya_Jara_32_m {
 Bem, não dá para dizer que você seja um rapaz tímido... Tudo bem então. Para ser sincero, fico até surpreso com meu próprio coração mole, mas vou te comprar um pouco de rum. Espere por mim aqui.

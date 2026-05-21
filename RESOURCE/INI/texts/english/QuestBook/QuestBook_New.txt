@@ -1,8 +1,8 @@
 PDM_Neputyovy_kaznachey {Wayward Treasurer}
 PDM_Neputyovy_kaznachey.1 {On the streets of Willemstad, I met a frightened man. His name is Andreas Fickler. He told me that his former captain wants to kill him for damaging his ship and cargo. Right now, the captain is drinking in the tavern out of anger.}
-PDM_Neputyovy_kaznachey.2 {Vitor Bretier demanded @<sMoney> as compensation for the damage caused to his ship and cargo.}
-PDM_Neputyovy_kaznachey.3 {I paid Vitor Bretier the specified amount. Now Andreas Fickler is safe.}
-PDM_Neputyovy_kaznachey.4 {I had to kill Vitor Bretier. Now Andreas Fickler is no longer in danger.}
+PDM_Neputyovy_kaznachey.2 {Victor Bretier demanded @<sMoney> as compensation for the damage caused to his ship and cargo.}
+PDM_Neputyovy_kaznachey.3 {I paid Victor Bretier the specified amount. Now Andreas Fickler is safe.}
+PDM_Neputyovy_kaznachey.4 {I had to kill Victor Bretier. Now Andreas Fickler is no longer in danger.}
 PDM_Neputyovy_kaznachey.5 {Andreas Fickler asked to become my treasurer, and I agreed.}
 PDM_Neputyovy_kaznachey.6 {Andreas Fickler asked to become my treasurer, but I refused.}
 PDM_Neputyovy_kaznachey.7 {Because of the treasurer, Victor Bretier suffered heavy financial losses, and I decided not to get involved in their conflict.}
@@ -13,13 +13,15 @@ PDM_Poteryanoe_Koltso.3 {The ring is with a girl named Francesca, who is quite p
 PDM_Poteryanoe_Koltso.4 {I took the ring from Francesca. Now I can return to Port-au-Prince and give the ring to Josephine Lodet.}
 PDM_Poteryanoe_Koltso.5 {While we were making love, I managed to secretly take the ring from Francesca. Now I can return to Port-au-Prince and give the ring to Josephine Lodet.}
 PDM_Poteryanoe_Koltso.6 {I returned the ring to the elderly woman. It seems she remembered a moment from her past and started to come to her senses. I hope she’ll be all right.}
-PDM_Proklyataya_Jara {Cursed Heat}
+PDM_Proklyataya_Jara {Unbearable heat}
 PDM_Proklyataya_Jara.1 {The guard asked me to buy him a bottle of wine. He’s terribly thirsty because he’s standing right under the blazing sun. He didn’t say where I could buy wine, but I suppose I can get it at the local tavern. Or should I report this incident to his commander, who should be at the Order of Malta?}
 PDM_Proklyataya_Jara.2 {I have the bottle of wine. I should bring it to the thirsty guard as soon as possible.}
 PDM_Proklyataya_Jara.3 {After I brought the guard some wine, his partner, seeing this blatant breach of discipline, instead of turning in his drunken friend, asks us to buy a bottle of rum...}
 PDM_Proklyataya_Jara.4 {I have the bottle of rum. Time to take it to the second guard.}
-PDM_Proklyataya_Jara.5 {Now drunken guards watch over our peace.}
-PDM_Proklyataya_Jara.6 {For my vigilance and honesty, the commander of the Maltese Order rewarded me with money.}
+PDM_Proklyataya_Jara.5 {Now drunken guards are watching over our peace... The poor fellows were so exhausted by the heat they gulped it all down in a minute. I wonder why they specifically ask for Jerome's brew and refuse regular alcohol? I should drop by the tavern and find out what's going on.}
+PDM_Proklyataya_Jara.6 {For my vigilance and honesty, the Commander of the Order of Malta paid me a handsome reward and also gifted me a fine Maltese Knight's sword from his own arsenal.}
+PDM_Proklyataya_Jara.7 {Jerome turned out to be a reasonable fellow. Appreciating my generosity, he shared the secret of his famous "Sangaree" cocktail. As it turns out, it's all about the right proportion of chilled red wine and rum. Now that the recipe is in my collection, I can prepare this refreshing drink for my own needs.}
+PDM_Proklyataya_Jara.8 {That old snickering fox Jerome didn't want to give up the secret of his swill, but a few choice words and a mention of the guards quickly loosened his tongue. He gave me the "Sangaree" recipe and even returned the money for my previous purchases, just to be left in peace. Well, the recipe is mine, and the rest doesn't matter.}
 PDM_Cursed_Idol {Cursed Idol}
 PDM_Cursed_Idol.1 {In the La Vega tavern, I met a pirate captain named James Callow. He told me that he had recently taken a golden statuette of some deity from a poor native, and that ever since then misfortune has been dogging him. He asked me to present this idol to the leader of the pirate settlement of Providencia — Edward Collier. }
 PDM_Cursed_Idol.2 {It worked! Collier took the idol from me for 1,000 coins. I hope this does the trick and the idol stays with the leader of the pirate settlement. I should hurry back to James with the good news.}
@@ -34,6 +36,197 @@ PDM_Cursed_Idol.9 {I decided, though it wasn’t easy, to get rid of the idol. N
 PDM_Cursed_Idol.10 {I need to find the moneylender in Tortuga to give him the golden statuette. If I hesitate, who knows what trouble I might bring upon myself.}
 PDM_Cursed_Idol.11 {At last! The cursed idol is dealt with. Time to return to James with the good news.}
 PDM_Cursed_Idol.12 {James was so happy that he kept his promise and agreed to become my officer.}
+PDM_Clan_Lambrini
+{
+Clan Lambrini
+}
+
+PDM_Clan_Lambrini.1
+{
+In Port of Spain, Trinidad, I met an Italian smuggler named Ottavio Lambrini. He offered to have me eliminate an honest Englishman serving in the coast guard in Port of Spain, by any means necessary. My target is Thomas Audley, and his ship is called the 'Tiburon'.
+}
+
+PDM_Clan_Lambrini.2
+{
+Thomas Audley has been eliminated. Now I must return to Lambrini for the promised reward.
+}
+
+PDM_Clan_Lambrini.3
+{
+I have decided to turn Lambrini over to the coast guard and make a deal with Thomas Audley – the only honest coast guard captain in Port of Spain. I will tell Lambrini that Thomas is dead, and the unsuspecting smuggler will walk right into the hands of the coast guard captain.
+}
+
+PDM_Clan_Lambrini.4
+{
+I managed to convince Ottavio Lambrini that the coast guard captain had been killed by me. The smuggler took the bait. Now I need to talk to Thomas, who will be waiting for me in the Port of Spain church from 9 a.m. to 2 p.m.
+}
+
+PDM_Clan_Lambrini.5
+{
+I need to observe what Ottavio will do at the tavern. Surely he will try to resume his operations.
+}
+
+PDM_Clan_Lambrini.6
+{
+I managed to overhear Lambrini's conversation with his client about an upcoming deal. Now I need to talk to Thomas in the church during the previously arranged hours.
+}
+
+PDM_Clan_Lambrini.7
+{
+I failed to deceive Ottavio Lambrini into believing that the coast guard captain was killed by me, so the reward is lost to me. Although it seems the smuggler still took the bait. Now I need to talk to Thomas, who will be waiting for me in the Port of Spain church from 9 a.m. to 2 p.m.
+}
+
+PDM_Clan_Lambrini.8
+{
+With my help, the Lambrini clan seems to have ceased to exist entirely and no longer threatens honest trade on Trinidad and Tobago. Other smugglers will remember this... Still, Thomas Audley did not deceive me and paid me the promised reward for Ottavio's head.
+}
+
+PDM_Ohota_na_vedmu
+{
+The Leper Woman
+}
+
+PDM_Ohota_na_vedmu.1
+{
+On the street, a man named Bartholomew Ulster approached me. He was looking for some Carla from the tavern.
+}
+
+PDM_Ohota_na_vedmu.2
+{
+Merry Carla became very alarmed upon learning that Bartholomew Ulster was looking for her. She immediately ran off in an unknown direction. Perhaps I should report all this to the local governor?
+}
+
+PDM_Ohota_na_vedmu.3
+{
+A Spanish guardsman refused me entry to the governor's residence in Belize. The governor's security is clearly heightened. What happened there? I need to find another way in...
+}
+
+PDM_Ohota_na_vedmu.4
+{
+In the room, I discovered the body of a man. Moving closer, I identified him as Bartholomew Ulster, the very man who was looking for Carla. I need to inform the governor of all this. I hope he will listen to me...
+}
+
+PDM_Ohota_na_vedmu.5
+{
+The governor of Belize has tasked me with investigating the murder of his secretary, Bartholomew Ulster. He was found strangled in his bed. Not long ago, I had met Bartholomew – he was asking about a girl named Carla in the town square. I think I need to find this girl – perhaps she knows something.
+}
+
+PDM_Ohota_na_vedmu.6
+{
+The tavern keeper said he didn't know who Carla is. That is strange, since she worked there not long ago... I have no evidence to prove otherwise. I need to talk to the townspeople and find out information about Carla.
+}
+
+PDM_Ohota_na_vedmu.7
+{
+A man on the street told me that he had seen Carla at the tavern. He suspects that she is a witch. I should search for her in the tavern, and also threaten the innkeeper with holy justice – maybe then he will tell me something about Carla.
+}
+
+PDM_Ohota_na_vedmu.8
+{
+I extracted information about Carla from the innkeeper. He said she sailed to the Spanish colony of Santo Domingo.
+}
+
+PDM_Ohota_na_vedmu.11
+{
+This story of Merry Carla is becoming more and more mysterious. I met the boatswain from the ship from which Carla had fled. He believes Carla is a witch, because his captain, Miguel Cuenda, died shortly after taking her aboard. The crew was against having a woman on board, but he didn't listen to them. The captain died just as the ship entered the harbor of Santiago. At that same moment, Carla mysteriously vanished from the ship. So searching for her in Santo Domingo is useless... I need to head to Santiago.
+}
+
+PDM_Ohota_na_vedmu.12
+{
+I met this witch Carla again. It was a rather strange encounter. She told me her story, and I understood that she is innocent. Perhaps I will go to hell for it, but I let her go. She presented me with a gift. What exactly happened, I did not understand, but I began to feel much happier. It was the strangest gift of my life...
+}
+
+PDM_Ohota_na_vedmu.13
+{
+I need to find an inquisitor in Santiago to have the witch burned at the stake. I think for such a matter, I should approach the chief inquisitor.
+}
+
+PDM_Ohota_na_vedmu.14
+{
+I told the inquisitor that Carla is a witch. He promised to take care of the matter and kept his promise. She was soon burned at the stake. I should inform the governor of Belize about the successful completion of the task.
+}
+
+PDM_Ohota_na_vedmu.15
+{
+The governor of Belize richly rewarded me for completing the task.
+}
+
+PDM_Lesopilka
+{
+The Reformed Pirate
+}
+
+PDM_Lesopilka.1
+{
+I met an old pirate named Hugo Lumbersaw. He told me that he would like to obtain a letter of marque, but he has made enemies of almost all nations. So the only way for him to cease being an outlaw is to enter the service of a trading company. Perhaps I could put in a good word for him with the director of the Dutch West India Company – for this, he promised me 10,000 piastres. I set course for Willemstad.
+}
+
+PDM_Lesopilka.2
+{
+Matthias Beck gave me a contract offer for Hugo. I need to return to Providence to deliver the document to him.
+}
+
+PDM_Lesopilka.3
+{
+The tavern keeper told me, for 1,000 gold coins, that English bounty hunters had found Hugo, and he had to flee. He is currently in La Vega.
+}
+
+PDM_Lesopilka.4
+{
+Hugo was overjoyed when I handed him the document. In the future, I should visit Matthias Beck and inquire about how the meeting with Hugo went.
+}
+
+PDM_Lesopilka.5
+{
+Matthias Beck says that Lumbersaw serves the Dutch West India Company quite well. He is an experienced soldier, and his tales of his pirate past draw crowds of listeners to the Willemstad tavern. I should pay this old man a personal visit... surely he often strolls through the streets of Willemstad.
+}
+
+PDM_Lesopilka.6
+{
+I spoke with my friend Lumbersaw. He told me something interesting. A heavy galleon under the English flag is anchored off the island of Dominica. Its rigging and hull are damaged. If no one beats me to it, I can seize its treasures!
+}
+
+PDM_Lesopilka.6.1
+{
+In the captain's cabin, I found the ship's log that belonged to the captain of the ship "@<sShip>". I should study it.
+}
+
+PDM_Lesopilka.6.2
+{
+Hugo Lumbersaw brought me the ship's log that belonged to the captain of the ship "@<sShip>". I should study it.
+}
+
+PDM_Lesopilka.7
+{
+According to the murdered captain's log, a quarter of the treasure was moved and hidden on the island during the ship's repairs. This was done so that if pirates tried to seize the ship and its riches, they wouldn't get everything. If I want to take all the remaining treasures, I need to land on the island and search the jungle. Clearly, the rest of the treasure is there.
+}
+
+PDM_Lesopilka.8
+{
+I wasn't fast enough. The English galleon was repaired and sailed for Europe. Or perhaps someone else captured it.
+}
+
+PDM_Lesopilka.9
+{
+The English soldiers on the shore offered us resistance, but we prevailed. Now we need to find the grotto where the remaining treasures might have been hidden.
+}
+
+PDM_Lesopilka.10
+{
+While I was delaying, the English on the island managed to hide the treasure elsewhere. Now I'll never get it!
+}
+
+PDM_Lesopilka.11
+{
+Incredibly, the treasures were indeed moved to the grotto! Hugo and I even allowed ourselves a moment of weakness and, on his advice, sprawled out royally right on that enormous mountain of gold and jewels. While we rested, Lumbersaw vividly recounted to me the tale of how he earned his nickname in his youth by managing to chop down the masts of both the enemy ship and his own in one fell swoop.
+
+Hugo and his assistant have already taken their share of the loot. Well, now it's time for me to take my share of this wealth and take Lumbersaw back to Willemstad.
+}
+
+PDM_Lesopilka.12
+{
+All matters are settled, and the treasure has been successfully divided. Old Hugo finally hit the biggest jackpot of his life in his twilight years! I think that now, Lumbersaw can finally hang up his axe and retire in peace, the retirement he had dreamed of for so long. It was a damned interesting and unforgettable adventure.
+}
 JusticeOnSale {Captured Smuggler}
 JusticeOnSale.1 {I agreed to help the gang of smugglers free their captain, who is imprisoned in @<cityName>. I hope the promised reward is worth it. The smugglers will be waiting at @<Shore>. I need to talk to the commandant... Or maybe turn the whole gang of these scoundrels over to the authorities?}
 JusticeOnSale.1_1 {Perhaps getting involved with criminals isn’t the best idea. I decided to teach them a lesson in fencing.}
@@ -732,4 +925,15 @@ Let the mixture steep just until the powder settles completely at the bottom, th
 
 Components: Matricaria, Ginger Root, Grapes.
 Tools: Mortar and pestle.
+}
+Recipe.potionsangari
+{
+"Sangaree"
+****************
+This drink is a salvation for any traveler under the scorching Caribbean sun.
+
+To prepare it, take two bottles of good red wine and one portion of strong rum. Mix the liquids thoroughly in a deep vessel. My main secret is not to overdo it with the rum, otherwise the drink will lose its refreshing lightness. If available, a drop of lime juice or a pinch of nutmeg can be added for flavor balance.
+
+Ingredients: Wine (2), Rum (1).
+Tools: Mortar and Pestle.
 }

@@ -151,7 +151,7 @@ InfoMessages_149 {Longue-vue reçue}
 InfoMessages_150 {Vous avez reçu 25 émeraudes}
 InfoMessages_151 {Vous avez reçu un coffre d’or}
 InfoMessages_152 {@<sAttr> vient vers vous.}
-InfoMessages_153 {Vous avez reçu deux bouteilles, dont l’une est désormais à VOUS.}
+InfoMessages_153 {Vous avez reçu la recette du 'Sangaree'.}
 InfoMessages_154 {Donné @<iSmallPearl> petites perles.}
 InfoMessages_155 {Donné @<iBigPearl> grosses perles.}
 InfoMessages_156 {Reçu @<iSmallPearl> petites perles.}

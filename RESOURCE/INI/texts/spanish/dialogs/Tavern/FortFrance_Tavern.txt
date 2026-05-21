@@ -83,7 +83,7 @@ FortFrance_Tavern_24 {
 Bueno, eso está muy bien, pero solo necesito una botella. ¿Cuánto quieres por ella?
 }
 FortFrance_Tavern_25 {
-Oh, @<GetAddress_Form>, estoy seguro de que sabrás apreciar el verdadero valor de este néctar divino. ¡Puedes llevarte una botella de mi exquisito vino añejo por solo 200 piastras!
+Oh, @<GetAddress_Form>, estoy seguro de que sabrás apreciar el verdadero valor de este néctar divino. ¡Puedes llevarte una botella de mi exquisito vino añejo por solo 700 piastras!
 }
 FortFrance_Tavern_26 {
 Me llevo el vino, @<npchar>. Pero con esos precios, no tendrás muchos clientes.
@@ -101,7 +101,7 @@ FortFrance_Tavern_30 {
 No, no quiero. Y espero que alguien tan ingenioso como tú pueda apreciar la ironía de la situación: estoy comprando esta botella de vino caro y fino para un simple soldado francés. Adiós, @<npchar>.
 }
 FortFrance_Tavern_31 {
-¿Engañarte? Je, je, je, @<GetAddress_Form>, debes estar bromeando. Claro, en Francia podrías comprar una botella de Borgoña por 200 piastras. Pero Martinique no está en Francia, ¿verdad? ¡Je, je, je!
+¿Engañarte? Je, je, je, @<GetAddress_Form>, debes estar bromeando. Claro, en Francia podrías comprar una botella de Borgoña por 700 piastras. Pero Martinique no está en Francia, ¿verdad? ¡Je, je, je!
 }
 FortFrance_Tavern_32 {
 Dame ese maldito vino y, por el amor de Dios, deja de reírte.
@@ -122,17 +122,62 @@ FortFrance_Tavern_36 {
 Esto es una tontería... ¡Espera! Puedes llenar esas botellas vacías de vino con ron del barril. ¡Listo! No hay ningún problema...
 }
 FortFrance_Tavern_37 {
-De verdad, capitán, casi es usted un genio. Tiene toda la razón, puedo hacerlo... Pero espero que entienda que se trata de un servicio exclusivo, especial... la botella se lava y se seca a mano, ¿sabe?... Puedo venderle a mi cliente ron embotellado por... ¡200 monedas! Je, je, je.
+De verdad, capitán, casi es usted un genio. Tiene toda la razón, puedo hacerlo... Pero espero que entienda que se trata de un servicio exclusivo, especial... la botella se lava y se seca a mano, ¿sabe?... Puedo venderle a mi cliente ron embotellado por... ¡300 monedas! Je, je, je.
 }
 FortFrance_Tavern_38 {
-Has perdido la cabeza, @<npchar>. ¿200 monedas por ron barato? ¡Ni pensarlo! ¡Adiós!
+Has perdido la cabeza, @<npchar>. ¿300 monedas por ron barato? ¡Ni pensarlo! ¡Adiós!
 }
 FortFrance_Tavern_39 {
-¡Muy bien! De verdad me has hecho reír, bribón. Aquí tienes tu dinero. Dame el ron. Sin duda te has ganado tu oro.
+¡Muy bien! De verdad me has hecho reír, bribón. Aquí tienes tu dinero. Dame el ron.
 }
 FortFrance_Tavern_40 {
-Gracias, @<GetAddress_Form>. Dame un momento.\nAquí tienes tu barril de ron, dividido en DOS botellas, capitán. Incluso las até con cintas rosas solo para ti... Oh, je, je, je...
+Gracias, @<GetAddress_Form>. Dame un momento\nAquí tenéis vuestra botella de ron, capitán. Tal vez debería haberla adornado con lazos rosas... Oh, je-je-je...
 }
 FortFrance_Tavern_41 {
 Cuidado, @<npchar>, un día de estos te vas a morir de tanto reír. Creo que si no me voy ahora, eso es justo lo que me pasará. Adiós.
+}
+FortFrance_Tavern_42 {
+Jerome, vengo por ese trago que le vendes a la guardia...
+}
+FortFrance_Tavern_43 {
+Escucha, Jerome, ya ves que quiero hacerle un regalo a otra persona. ¡Hazme una rebaja, que al fin y al cabo eres un buen tipo!
+}
+FortFrance_Tavern_44 {
+Ahora mismo no tengo dinero ni para el aguachirle más barato, mucho menos para tu vino. Pasaré más tarde.
+}
+FortFrance_Tavern_45 {
+¡Je, je, je! Sí que sabéis persuadir, capitán. Sea... Me habéis pillado... ¡Dejaré a un lado mi codicia, después de todo soy un buen tipo! ¡Je, je, je! Solo para vos, os dejaré la botella por 450 piastras, ¡pero no le vayáis con el cuento a la guardia local! ¡Je, je, je!
+}
+FortFrance_Tavern_46 {
+Eso es hablar de otro modo, Jerome. ¡Trato hecho!
+}
+FortFrance_Tavern_47 {
+Por desgracia, no tengo tanto dinero, Jerome. Volveremos a hablar de esto más adelante.
+}
+FortFrance_Tavern_48 {
+¿A quiénes?.. ¡Ah!, ¿os referís a esos pobres diablos recién llegados de la Orden de Malta? Je, je, je... Con este calor tan insoportable, el vino común o el ron no les servirán de nada; solo conseguirán asarse más rápido bajo el sol. Je, je, je...
+}
+FortFrance_Tavern_49 {
+Es verdad... Pero entonces no entiendo nada. Se negaron en redondo a tomar vino o ron común, exigiendo precisamente tu bebida. ¿Cuál es el misterio?
+}
+FortFrance_Tavern_50 {
+¡Je, je, je! Y eso es porque tengo mi propia bebida especial, que apaga la sed y devuelve las energías. Se llama Sangaree. Y todos los guardias franceses de por aquí están locos por este delicioso elixir. Je, je, je.\nY esos dos... Bueno, por lo visto intentan copiar mi receta, ¡pero es que no conocen la técnica adecuada! Je, je, je...
+}
+FortFrance_Tavern_51 {
+Escucha, Jerome. Ya que hace poco tuve la fortuna de dejar una buena suma de dinero en esta barra, ¿no podríamos llegar a un buen acuerdo? Estaría bien que, como muestra de agradecimiento, compartieras la receta de tu 'Sangaree'. Prometo no dársela a la guardia y usarla solo para consumo propio.
+}
+FortFrance_Tavern_52 {
+¡Argh! Teniendo en cuenta lo que he pagado por tu alcohol, esta receta debería estarme grabada en un lingote de oro. ¡Suelta ya cómo mezclas exactamente ese brebaje tuyo! ¡O de lo contrario le diré al comandante de la Orden de Malta que tú, graciosillo, estás emborrachando a sus soldados en pleno servicio!
+}
+FortFrance_Tavern_53 {
+¡Cada vez me caéis mejor! Solo prometedme que no vais a abrir una botica con esta bebida justo enfrente de la mía. Je, je, je.\n¡Está bien, sea! Todo el secreto está en las proporciones correctas. Je, je, je. Recordad: dos partes de vino tinto frío por una parte de ron fuerte... ¡Qué demonios, os lo apuntaré yo mismo! Je, je, je... Un momento.\n¡Tomad, guardadlo rápido! ¡Lo principal es servirlo bien frío! ¡Je, je, je!
+}
+FortFrance_Tavern_54 {
+Así está bien. ¡Me vendrá muy bien! Gracias por la confianza, Jerome.
+}
+FortFrance_Tavern_55 {
+¡Chitón, insensato! ¿A qué viene amenazarme así de repente? Está bien, está bien, atragantaos con la receta. Ahora mismo os lo escribo... A ver,\ny tomar dos botellas de vino frío con una porción de ron\nTomad, lleváoslo rápido. ¡Y recuperad vuestro dinero, pero no gritéis así por toda la taberna!
+}
+FortFrance_Tavern_56 {
+Mucho mejor. Es un placer hacer negocios contigo, Jerome.
 }

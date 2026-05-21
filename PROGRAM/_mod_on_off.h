@@ -1,7 +1,7 @@
-#define VERSION_NUM      99940
-#define VERSION_NUM_PRE  99940
+#define VERSION_NUM      99941
+#define VERSION_NUM_PRE  99941
 
-#define VERSION_NUMBER1       " ver. 1.0.3 (30.03.2026)" // version build
+#define VERSION_NUMBER1       " ver. 1.1.0 (19.05.2026)" // version build
 #define VERSION_NUMBER2       "" // extra DLC
 #define VERSION_NUMBER3       "Seaward&BMS&ReCon" // Devteam
 

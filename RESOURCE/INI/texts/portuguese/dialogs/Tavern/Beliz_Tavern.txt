@@ -79,3 +79,66 @@ Heh, @<GetAddress_Form>, esses não são confessores. Aqueles padres são monges
 Beliz_Tavern_22 {
 Ah, entendi como é. Então, obrigado, meu amigo.
 }
+Beliz_Tavern_23 {
+Estou procurando uma moça... chamada Alegre Carla, eu acho. Onde posso encontrá-la?
+}
+Beliz_Tavern_24 {
+Estou procurando uma moça... chamada Alegre Carla, eu acho. Onde posso encontrá-la?
+}
+Beliz_Tavern_25 {
+Não conheço nenhuma Carla. E aqui não oferecemos outros serviços além de comida e bebida. Vai desejar algo para beber?
+}
+Beliz_Tavern_26 {
+Não, obrigado. Eu já vou indo.
+}
+Beliz_Tavern_27 {
+Eu já lhe disse que não tem nenhuma Carla aqui!
+}
+Beliz_Tavern_28 {
+Ela é acusada de bruxaria! Você sabe o que isso significa? Significa que ela é uma bruxa! Se você a acobertar, vai queimar na mesma fogueira que ela. Ficou claro? As pessoas a viram entrar repetidas vezes na sua taverna. E então — vai continuar negando ou...?
+}
+Beliz_Tavern_29 {
+Oh, tenha piedade de mim, @<GetAddress_Form>! Eu não queria quebrar a lei — é só que... mal estou conseguindo pagar as contas... Não tive outra escolha senão deixar as meretrizes trazerem os clientes para cá. Além do mais, nesse nosso fim de mundo não tem nem um bordel decente!
+}
+Beliz_Tavern_30 {
+Bem, eu acho que uns dois mil pesos podem atenuar a sua culpa. Mas preciso saber onde ela está.
+}
+Beliz_Tavern_31 {
+Suas queixas miseráveis não me interessam. Só quero saber onde ela está.
+}
+Beliz_Tavern_32 {
+Oh, @<GetAddress_Form> — o senhor vai arruinar a mim e ao meu negócio! Tenho que pagar o cobrador de impostos no mês que vem! Dois mil, isso é simplesmente impossível! O senhor me ameaçou de morte na fogueira, e agora quer que eu morra de fome?!
+}
+Beliz_Tavern_33 {
+Você não passa de um pecador miserável... Pois bem, diga-me onde está a Carla e eu o deixarei em paz. Que o Senhor o perdoe.
+}
+Beliz_Tavern_34 {
+Você acobertou inimigos públicos na sua taverna — então vai ter que pagar de um jeito ou de outro.
+}
+Beliz_Tavern_35 {
+Oh, o senhor destruiu a minha vida! Está bem, leve o ouro — mas o senhor será amaldiçoado para sempre!
+}
+Beliz_Tavern_36 {
+Pense no seu destino, pecador miserável! Se não me disser onde está a Carla, os seus gritos nas masmorras do governador vão perturbar os moradores de Belize por muito tempo.
+}
+Beliz_Tavern_37_m {
+Sim, sim, ela esteve aqui! Mas zarpou há pouco tempo com um capitão. Quando ela me disse que estava indo embora, eu quase desatei a chorar. Uma moça tão boa finalmente encontrou o seu destino. O capitão dela era um homem de verdade, bem como o senhor — forte e corajoso...
+}
+Beliz_Tavern_37_f {
+Sim, sim, ela esteve aqui! Mas zarpou há pouco tempo com um capitão. Quando ela me disse que estava indo embora, eu quase desatei a chorar. Uma moça tão boa finalmente encontrou o seu destino. O capitão dela era um homem forte e corajoso, bem como o senhor...
+}
+Beliz_Tavern_38 {
+Qual era o nome dele?
+}
+Beliz_Tavern_39 {
+Miguel Cuenda, pelo que me lembro. Ele zarpou e levou a Carla com ele. E... perdoe-me, @<GetAddress_Form> — peço-lhe que não conte para ela que fui eu quem a delatou. Não quero que ela amaldiçoe o meu nome para sempre...
+}
+Beliz_Tavern_40 {
+Não vou contar. Mas você deve me dizer para onde eles foram.
+}
+Beliz_Tavern_41 {
+Lembro-me de ela ter falado algo sobre uma colônia — espanhola, é claro... Acho que se tratava de Santo Domingo.
+}
+Beliz_Tavern_42 {
+Eu acredito em você. Mas lembre-se — é bom cuidar muito bem da sua alma imunda, mas, infelizmente, imortal. Tudo de bom!
+}

@@ -3,6 +3,7 @@
 int nCurScrollNum;
 ref xi_refCharacter;
 ref refNPCPortman;
+ref refWarehouse;
 int shipIndex;
 
 int nCurScrollOfficerNum;
@@ -798,10 +799,27 @@ void ShowMsgGiveMenu()
 		{
 			SendMessage(&GameInterface, "lslll", MSG_INTERFACE_MSG_TO_NODE, "MSG_BIG_GOOD_CHECKBOX", 2, 1, true);
 			SendMessage(&GameInterface, "lslll", MSG_INTERFACE_MSG_TO_NODE, "MSG_BIG_CREW_CHECKBOX", 2, 1, true);
-
-			//TODO включить когда появятся пакгаузы
 			SendMessage(&GameInterface, "lslll", MSG_INTERFACE_MSG_TO_NODE, "MSG_BIG_GOOD_CHECKBOX", 5, 3, true);
 
+			if (CheckAttribute(refNPCPortman, "City") || refNPCPortman.id == "Secret_Fort_Commander")
+			{
+				if (refNPCPortman.id == "Secret_Fort_Commander")
+					refWarehouse = refNPCPortman;
+				else
+					refWarehouse = CharacterFromID(refNPCPortman.City + "_GlavSklad");
+
+				if (CheckAttribute(refWarehouse, "Storage.Activate") || refWarehouse.id == "Secret_Fort_Commander")
+				{
+					int iStorageUsed;
+					if (refWarehouse.id == "Secret_Fort_Commander") iStorageUsed = SHIP_STORE;
+					else iStorageUsed = GetStorage(refWarehouse.City);
+					int cargoShip = GetCargoLoad(xi_refCharacter);
+					int warehouseCargo = 50000 - GetStorageUsedWeight(&Stores[iStorageUsed]);
+
+					if (cargoShip < warehouseCargo)
+						SendMessage(&GameInterface, "lslll", MSG_INTERFACE_MSG_TO_NODE, "MSG_BIG_GOOD_CHECKBOX", 5, 3, false);
+				}
+			}
 			if (GetCrewQuantity(xi_refCharacter) == 0)
 			{
 				SendMessage(&GameInterface, "lslll", MSG_INTERFACE_MSG_TO_NODE, "MSG_BIG_CREW_CHECKBOX", 5, 1, true);
@@ -1420,14 +1438,14 @@ void DoGiveShip()
 
 		if (GoodState == "Store") SellGoods(chref);
 		if (GoodState == "Ship") MoveGoodsToPchar(chref);
-		if (GoodState == "Warehouse") SellGoods(chref);
+		if (GoodState == "Warehouse") SendGoodsToWarehouse(chref);
 		SetCrewQuantity(chref, 0);
 
 		refNPCPortman.MoneyForShip = dockPrice;
 		int iFullPrice = iSalaryRequirement + dockPrice;
 		AddMoneyToCharacter(pchar, -dockPrice);
 
-		if (GetOfficersPerkUsing(chref, "QuickCalculation")) iTime /= 2;
+		if (GetOfficersPerkUsing(chref, "QuickCalculation", false)) iTime /= 2;
 		WaitDate("", 0, 0, 0, 0, iTime);
 
 		/////////////////////////////////////////////////////////////
@@ -1529,7 +1547,7 @@ void DoTakeShip()
 	DeleteAttribute(refNPCPortman, "BakCrew");
 
 	int iTime = 30;
-	if (GetOfficersPerkUsing(pchar, "QuickCalculation")) iTime /= 2;
+	if (GetOfficersPerkUsing(pchar, "QuickCalculation", false)) iTime /= 2;
 	WaitDate("", 0, 0, 0, 0, iTime);
 
 	FillPortManShip(refNPCPortman, sShipId);
@@ -1843,6 +1861,23 @@ int SendOptCrewToShip(ref chref, ref chreff, int crewnum)
 		}
 	}
 	return crewn;
+}
+
+void SendGoodsToWarehouse(ref chref)
+{
+	int iStorageUsed, iShipQ, iUnits, iStoreQty, iStorePrice;
+
+	if (refWarehouse.id == "Secret_Fort_Commander") iStorageUsed = SHIP_STORE;
+	else iStorageUsed = GetStorage(refWarehouse.City);
+
+	for (int iGoodIndex = 0; iGoodIndex < GOODS_QUANTITY; iGoodIndex++)
+	{
+		iShipQ = GetCargoGoods(chref, iGoodIndex);
+		if (iShipQ <= 0) continue;
+
+		SetStorageGoods(&Stores[iStorageUsed], iGoodIndex, GetStorageGoodsQuantity(&Stores[iStorageUsed], iGoodIndex) + iShipQ);
+		RemoveCharacterGoods(chref, iGoodIndex, iShipQ);
+	}
 }
 
 void OnHeaderClick()

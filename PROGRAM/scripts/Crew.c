@@ -100,13 +100,12 @@ float SalaryCoeff_GetSetting(string _param)
 int GetSalaryForShip(ref chref)
 {
     int i, cn, iMax;
-    ref mchref, offref;
+    ref offref;
     int nPaymentQ = 0;
-    mchref = GetMainCharacter();
 	float SalaryCoeff = GetSalaryCoeff();
 
-	float nLeaderShip = GetSummonSkillFromNameToOld(mchref,SKILL_LEADERSHIP);
-	float nCommerce   = GetSummonSkillFromNameToOld(mchref,SKILL_COMMERCE);
+	float nLeaderShip = GetSummonSkillFromNameToOld(pchar, SKILL_LEADERSHIP);
+	float nCommerce   = GetSummonSkillFromNameToOld(pchar, SKILL_COMMERCE);
 
 	if (!GetRemovable(chref) && sti(chref.index) != GetMainCharacterIndex()) return 0; // считаем только своих, а то всяких сопровождаемых кормить!!!
 	
@@ -116,12 +115,12 @@ int GetSalaryForShip(ref chref)
     // теперь самого капитана и его офицеров (тут  главный герой не считается) так что пассажиров и оффицеров ниже
     if(CheckAttribute(chref, "index") && sti(chref.index) != GetMainCharacterIndex())
     {
-        nPaymentQ += makeint(SalaryCoeff * GetMoneyForOfficer(chref)*2/(nLeaderShip + nCommerce) );
+        nPaymentQ += makeint(SalaryCoeff * GetMoneyForOfficer(chref) * 2 / (nLeaderShip + nCommerce));
         // офицеры
-        for(i = 1; i < 4; i++)
+        for (i = 1; i < 4; i++)
 	    {
 	        cn = GetOfficersIndex(chref, i);
-		    if( cn > 0 )
+		    if (cn > 0)
 		    {
 			    offref = GetCharacter(cn);
 			    if (GetRemovable(offref)) // считаем только своих, а то вских сопровождаемых кормить!!!
@@ -131,22 +130,22 @@ int GetSalaryForShip(ref chref)
 			}
 		}
 	}
-	if(CheckAttribute(chref, "index") && sti(chref.index) == GetMainCharacterIndex()) // все пассажиры и офицеры для гл героя
+	if (CheckAttribute(chref, "index") && sti(chref.index) == GetMainCharacterIndex()) // все пассажиры и офицеры для гл героя
 	{
-        iMax = GetPassengersQuantity(mchref);
-		for(i=0; i < iMax; i++)
+        iMax = GetPassengersQuantity(pchar);
+		for (i = 0; i < iMax; i++)
         {
-            cn = GetPassenger(mchref,i);
-            if(cn != -1)
+            cn = GetPassenger(pchar, i);
+            if (cn != -1)
             {
-                if(!IsCompanion(GetCharacter(cn)))
+                if (!IsCompanion(GetCharacter(cn)))
                 {
                     offref = GetCharacter(cn);
                     if (GetRemovable(offref) || CheckAttribute(offref, "Capellan")) // считаем только своих, а то вских сопровождаемых кормить!!!
 			        {
-                        if(CheckAttribute(offref,"prisoned"))
+                        if (CheckAttribute(offref,"prisoned"))
     		            {
-    			            if(sti(offref.prisoned) == true) continue;
+    			            if (sti(offref.prisoned) == true) continue;
     		            }
     			        nPaymentQ += makeint(SalaryCoeff * GetMoneyForOfficerFull(offref));
 			        }
@@ -158,15 +157,16 @@ int GetSalaryForShip(ref chref)
 }
 
 //Получение зп по матросам
-int GetSalaryForCrew(ref chref, int crewQuantity) {
-	ref mchref = GetMainCharacter();
-	float nLeaderShip = GetSummonSkillFromNameToOld(mchref,SKILL_LEADERSHIP);
-	float nCommerce   = GetSummonSkillFromNameToOld(mchref,SKILL_COMMERCE);
+int GetSalaryForCrew(ref chref, int crewQuantity)
+{
+	float nLeaderShip = GetSummonSkillFromNameToOld(pchar, SKILL_LEADERSHIP);
+	float nCommerce   = GetSummonSkillFromNameToOld(pchar, SKILL_COMMERCE);
 	int nPaymentQ = 0;
 	float shClass = GetCharacterShipClass(chref);
-	if (shClass < 1) shClass = 7;
-	float fExp = (GetCrewExp(chref, "Sailors") + GetCrewExp(chref, "Cannoners") + GetCrewExp(chref, "Soldiers")) / 100.0; // средний коэф опыта 0..3
-	nPaymentQ = makeint( GetSalaryCoeff() * fExp * stf((0.5 + MOD_SKILL_ENEMY_RATE/5.0)*200*crewQuantity)/stf(shClass) * (1.05 - (nLeaderShip + nCommerce)/ 40.0) );
+	if (shClass < 1 || shClass > 7) shClass = 7;
+	float fExp = (GetCrewExp(chref, "Sailors") + GetCrewExp(chref, "Cannoners") + GetCrewExp(chref, "Soldiers")) * 0.01; // средний коэф опыта 0..3
+	nPaymentQ = makeint(GetSalaryCoeff() * fExp * stf((0.5 + MOD_SKILL_ENEMY_RATE * 0.2) * 200 * crewQuantity) / stf(shClass) * (1.05 - (nLeaderShip + nCommerce) * 0.025));
+	if (nPaymentQ > 0 && CheckCharacterPerk(pchar, "CrewSalaryOptimization")) nPaymentQ = makeint(nPaymentQ * 0.6);
 	return nPaymentQ;
 }
 
@@ -391,7 +391,7 @@ void MunityOnShip(string _stat)
 	Statistic_AddValue(pchar, _stat, 1);
 	MakeCloneShipDeck(pchar, true); // подмена палубы
 	i = FindLocation("Ship_deck");
-	Locations[i].image = "loading\Mutiny_512.tga"; // это клоновая локация, вернется само при перетирании другим
+	Locations[i].image = "loading\Mutiny.tga"; // это клоновая локация, вернется само при перетирании другим
 	DoQuestReloadToLocation("Ship_deck", "reload", "reload1", "Munity_on_Ship");
 }
 /* 20.01.08 Дележ добычи =======================================================================

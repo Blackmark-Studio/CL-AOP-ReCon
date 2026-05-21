@@ -14,7 +14,7 @@ Common_Governor_4 {
 @<LinkRandPhrase>
 }
 Common_Governor_5_m {
-O que você quer, canalha?! Meus soldados já estão no seu encalço — você não vai longe, bonitão. Vamos, suba!
+O que você quer, canalha?! Meus soldados já estão no seu encalço — você não vai longe, pirata imundo!
 }
 Common_Governor_5_f {
 O que você quer, seu miserável?! Meus soldados já estão no seu encalço — você não vai longe, canalha!

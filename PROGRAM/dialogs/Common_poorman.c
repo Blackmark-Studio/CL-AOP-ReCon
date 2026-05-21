@@ -586,7 +586,7 @@ void ProcessDialogEvent()
 						StringFromKey("Common_poorman_177"),
 						StringFromKey("Common_poorman_178"), "block", 0, npchar, Dialog.CurrentNode);
 			link.l1 = HeroStringReactionRepeat(
-						StringFromKey("Common_poorman_179", pchar),
+						StringFromKey("Common_poorman_179", npchar),
 						StringFromKey("Common_poorman_180"),
 						StringFromKey("Common_poorman_181"),
 						StringFromKey("Common_poorman_182"), npchar, Dialog.CurrentNode);

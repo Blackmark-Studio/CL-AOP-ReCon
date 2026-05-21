@@ -1,0 +1,280 @@
+Lesopilka_1 {
+Qué lástima, qué lástima. ¡Oh, maldita sea!
+}
+Lesopilka_2 {
+¿Qué estás murmurando para ti mismo?
+}
+Lesopilka_3 {
+Me llamo Hugo. Hugo Sierrasierra. Veo que tú también eres capitán. ¿Me concederías una hora para escuchar mi historia?
+}
+Lesopilka_4 {
+No me importa.
+}
+Lesopilka_5 {
+Bueno, no, en realidad. Prefiero pasar mi hora en otro lugar.
+}
+Lesopilka_6_m {
+Escucha: me he vuelto demasiado viejo para llevar una vida de pirata. El robo y la lucha son juegos para los jóvenes, ¿sabes? Ya no quiero arriesgar mi pellejo, y quiero navegar tranquilo, sin sobresaltarme al ver otros barcos. Pero el problema es que no tengo a dónde ir. Todos quieren ahorcarme, ¿sabes? Pero he pensado algo, muchacho.
+Estoy pensando en conseguirme una patente de corso, entrar al servicio y ganar algo de dinero, pero los malditos fuertes empiezan a disparar en cuanto me acerco a cualquier puerto, y no puedo llegar al gobernador para hacerle una oferta. Los ingleses o los franceses me ahorcarán en cuanto me tengan en sus manos: tienen órdenes de matarme en cuanto asome la nariz. Creo que podría entrar al servicio de los españoles o los holandeses, pero no puedo entrar en sus malditos puertos, ¡me abrirían fuego de inmediato!
+Y todos esos malditos, los llamados diplomáticos en las tabernas piratas, cobran precios tan altos que no podría ganar eso en toda mi vida...
+}
+Lesopilka_6_f {
+Escucha: me he vuelto demasiado viejo para llevar una vida de pirata. El robo y la lucha son juegos para los jóvenes, ¿sabes? Ya no quiero arriesgar mi pellejo, y quiero navegar tranquilo, sin sobresaltarme al ver otros barcos. Pero el problema es que no tengo a dónde ir. Todos quieren ahorcarme, ¿sabes? Pero he pensado algo, muchacha.
+Estoy pensando en conseguirme una patente de corso, entrar al servicio y ganar algo de dinero, pero los malditos fuertes empiezan a disparar en cuanto me acerco a cualquier puerto, y no puedo llegar al gobernador para hacerle una oferta. Los ingleses o los franceses me ahorcarán en cuanto me tengan en sus manos: tienen órdenes de matarme en cuanto asome la nariz. Creo que podría entrar al servicio de los españoles o los holandeses, pero no puedo entrar en sus malditos puertos, ¡me abrirían fuego de inmediato!
+Y todos esos malditos, los llamados diplomáticos en las tabernas piratas, cobran precios tan altos que no podría ganar eso en toda mi vida...
+}
+Lesopilka_7 {
+¿Qué hay de la Hermandad?
+}
+Lesopilka_8 {
+¿Qué hay de la Compañía Holandesa de las Indias Occidentales?
+}
+Lesopilka_9 {
+Lo siento, Hugo, pero no puedo ayudarte. Te deseo suerte. Adiós.
+}
+Lesopilka_10_m {
+¡La Hermandad! No pertenezco a ella, ¡y nunca lo haré! Ellos hacen reglas para la piratería – reglas, ¿has oído? ¡Reglas para piratas! Nunca he oído semejante disparate. Te digo la verdad, muchacho, la Hermandad es solo una banda de cretinos sin cerebro que se juntaron para estorbarnos a los marineros libres.
+}
+Lesopilka_10_f {
+¡La Hermandad! No pertenezco a ella, ¡y nunca lo haré! Ellos hacen reglas para la piratería – reglas, ¿has oído? ¡Reglas para piratas! Nunca he oído semejante disparate. Te digo la verdad, muchacha, la Hermandad es solo una banda de cretinos sin cerebro que se juntaron para estorbarnos a los marineros libres.
+}
+Lesopilka_11 {
+¿Qué hay de la Compañía Holandesa de las Indias Occidentales?
+}
+Lesopilka_12 {
+Mmm... Después de todo, es tu opinión. Bueno, entonces me temo que no puedo ofrecerte nada más. Hasta luego.
+}
+Lesopilka_13 {
+¿La Compañía Holandesa de las Indias Occidentales? Ja, creo que es una buena idea. ¡Realmente puedes ayudarme!
+}
+Lesopilka_14 {
+¿Qué necesito hacer?
+}
+Lesopilka_15_m {
+Eres un corsario, ¿no? Puedes entrar en un puerto holandés, y los cañones del fuerte no mandarán tu artilugio al fondo, ¿verdad? Entonces puedes interceder por mí ante el director de la oficina en Willemstad, ¿no? Solo dile que estoy dispuesto a ofrecer 20,000 piastras y que estoy listo para jurar servirle fielmente.
+}
+Lesopilka_15_f {
+Eres una corsaria, ¿no? Puedes entrar en un puerto holandés, y los cañones del fuerte no mandarán tu artilugio al fondo, ¿verdad? Entonces puedes interceder por mí ante el director de la oficina en Willemstad, ¿no? Solo dile que estoy dispuesto a ofrecer 20,000 piastras y que estoy listo para jurar servirle fielmente.
+}
+Lesopilka_16_m {
+En realidad, podría hacerlo, pero para ser honesto, ¿qué gano yo con esto?
+}
+Lesopilka_16_f {
+En realidad, podría hacerlo, pero para ser honesta, ¿qué gano yo con esto?
+}
+Lesopilka_17 {
+Te compadezco, Hugo, pero no tengo tiempo para esto ahora. Nos vemos.
+}
+Lesopilka_18_m {
+Como digas, muchacho. Encontraré a otra persona para este trabajo.
+}
+Lesopilka_18_f {
+Como digas, muchacha. Encontraré a otra persona para este trabajo.
+}
+Lesopilka_19 {
+Nos vemos.
+}
+Lesopilka_20 {
+¡Dinero, por supuesto! Puedo pagarte 10,000 piastras. ¿Qué dices?
+}
+Lesopilka_21_m {
+Me parece bien. Acepto. Intentaré conseguirte un documento de la Compañía Holandesa de las Indias Occidentales a cambio de las piastras.
+}
+Lesopilka_21_f {
+Me parece bien. Acepto. Intentaré conseguirte un documento de la Compañía Holandesa de las Indias Occidentales a cambio de las piastras.
+}
+Lesopilka_22 {
+Debes estar bromeando. ¿Diez mil por un trabajo tan difícil y peligroso? Trato no hecho.
+}
+Lesopilka_23 {
+¡Eso es un buen hombre! Vientos favorables, capitán. Solo puedo esperarte aquí un par de meses. Si no has vuelto para entonces, probablemente ya esté colgando de una horca.
+}
+Lesopilka_24 {
+Nos vemos.
+}
+Lesopilka_25_m {
+Bueno, @<pchar> – ¿y dónde está ese documento que prometiste traerme?
+}
+Lesopilka_25_f {
+Bueno, @<pchar> – ¿y dónde está ese documento que prometiste traerme?
+}
+Lesopilka_26 {
+¡Oh, sí, funcionó! @<GetFullName> dijo que te invita a visitarlo a su residencia tan pronto como sea posible – con tus veinte mil, por supuesto. Y ahora, supongo, ¿también me debes diez mil piastras?
+}
+Lesopilka_27 {
+Perdóname, Hugo, pero aún no lo tengo.
+}
+Lesopilka_28_m {
+¡Son noticias increíbles, muchacho! ¡Increíbles! Aquí tienes tus piastras, y con ellas mi gratitud. @<GetFullName>, ¿dijiste? ¡Entonces necesito ir a Willemstad... Giraré el timón en esa dirección de inmediato!
+}
+Lesopilka_28_f {
+¡Son noticias increíbles, muchacha! ¡Increíbles! Aquí tienes tus piastras, y con ellas mi gratitud. @<GetFullName>, ¿dijiste? ¡Entonces necesito ir a Willemstad... Giraré el timón en esa dirección de inmediato!
+}
+Lesopilka_29 {
+Buena suerte, Hugo. Espero volver a verte.
+}
+Lesopilka_30_m {
+¡Ah, muchacho! ¿De vuelta otra vez, eh? Bueno, necesito ir a ver a ese Matthias Beck... Después de beber un par de jarras por ti y por mi nuevo hogar, ¡Holanda!
+}
+Lesopilka_30_f {
+¡Ah, muchacha! ¿De vuelta otra vez, eh? Bueno, necesito ir a ver a ese Matthias Beck... Después de beber un par de jarras por ti y por mi nuevo hogar, ¡Holanda!
+}
+Lesopilka_31 {
+Gracias por tus amables palabras, Hugo. Te dejo celebrar tu nombramiento.
+}
+Lesopilka_32 {
+¡Ah, eres tú de nuevo, capitán @<pchar>! ¡Me alegro de verte!
+}
+Lesopilka_33 {
+¡Oh, viejo Sierrasierra! ¿Y qué tal tu vida honesta?
+}
+Lesopilka_34_m {
+Muy bien, gracias. Te digo que los otros capitanes holandeses al principio desconfiaban de mí, pero les mostré un par de trucos de lucha, y ahora todos somos mejores amigos.
+¡Ja! Escucha, @<pchar>, como agradecimiento por lo que has hecho por mí, tengo un buen consejo para ti. Acércate y escucha.
+Sé dónde puedes conseguir buena mercancía, muy buena mercancía. Verás, @<pchar>, uno de mis viejos, eh, conocidos, que es pirata, ¿sabes?... Bueno, me dijo que un barco inglés cargado de oro y plata fue atrapado por una tormenta y ahora está siendo reparado cerca de Dominica.
+}
+Lesopilka_34_f {
+Muy bien, gracias. Te digo que los otros capitanes holandeses al principio desconfiaban de mí, pero les mostré un par de trucos de lucha, y ahora todos somos mejores amigos.
+¡Ja! Escucha, @<pchar>, como agradecimiento por lo que has hecho por mí, tengo un buen consejo para ti. Acércate y escucha.
+Sé dónde puedes conseguir buena mercancía, muy buena mercancía. Verás, @<pchar>, uno de mis viejos, eh, conocidos, que es pirata, ¿sabes?... Bueno, me dijo que un barco inglés cargado de oro y plata fue atrapado por una tormenta y ahora está siendo reparado cerca de Dominica.
+}
+Lesopilka_35 {
+¿Y?
+}
+Lesopilka_36 {
+¿Qué? ¿Estás tonto, @<pchar>? ¡Ese galeón contiene toda una fortuna!
+}
+Lesopilka_37 {
+Ah. Entiendo. ¿Así que vuelves a las andadas?..
+}
+Lesopilka_38 {
+¡Ahora todo es oficial! El barco está anclado cerca de Dominica – lo conoces: una isla pequeña entre Guadalupe y Barbados. Mi conocido dijo que vio cómo reparaban este barco después de una terrible tormenta: su aparejo estaba dañado, si se puede llamar así a su ausencia total, y su casco también está dañado. Dijo que el barco apenas puede moverse. Sin un astillero, las reparaciones parecen que llevarán mucho tiempo, así que está, por así decirlo, atascado allí, esperando que un capitán venga y lo capture.
+}
+Lesopilka_39 {
+¿Por qué no lo capturas tú?
+}
+Lesopilka_40_m {
+Ah, ¿crees que te estoy tendiendo una trampa? No, muchacho: mi barco no es lo suficientemente fuerte para capturar ese galeón, y además, soy demasiado viejo para cambiar de barco. Conozco cada clavo y cada tabla de mi 'Felicia', y no quiero abandonarla. Así que, muchacho, la presa fácil es tuya si quieres tomarla. Hmm.
+Incluso teniendo en cuenta que el galeón está muy dañado, no recomendaría atacarlo con una lugre o un balandro.
+}
+Lesopilka_40_f {
+Ah, ¿crees que te estoy tendiendo una trampa? No, muchacha: mi barco no es lo suficientemente fuerte para capturar ese galeón, y además, soy demasiado viejo para cambiar de barco. Conozco cada clavo y cada tabla de mi 'Felicia', y no quiero abandonarla. Así que, muchacha, la presa fácil es tuya si quieres tomarla. Hmm.
+Incluso teniendo en cuenta que el galeón está muy dañado, no recomendaría atacarlo con una lugre o un balandro.
+}
+Lesopilka_41 {
+Bien. Hugo, ¿estás seguro de que no quieres venir conmigo en esta aventura? Si realmente hay tanto oro, definitivamente mereces una parte por la valiosa información.
+}
+Lesopilka_42 {
+Mi Felicia está siendo reparada ahora mismo, y siempre está bajo la estricta vigilancia de la Compañía Holandesa. Pero... Si insistes, estoy listo para venir contigo como acompañante. Solo pediré permiso a esos burócratas de la oficina y estaré en tu barco.
+}
+Lesopilka_43 {
+¿Dices que el barco está anclado frente a Dominica? Entonces debemos prepararnos muy bien para esta aventura. Suerte para nosotros.
+}
+Lesopilka_44 {
+¡Ah! ¿Te gustaría tomar algo conmigo, @<pchar>?
+}
+Lesopilka_45 {
+Ahora no, Hugo. ¡Pero gracias!
+}
+Lesopilka_46_m {
+¿Entonces en qué pierdes el tiempo, muchacho? ¡Ve y toma ese galeón antes de que se vaya!
+}
+Lesopilka_46_f {
+¿Entonces en qué pierdes el tiempo, muchacha? ¡Ve y toma ese galeón antes de que se vaya!
+}
+Lesopilka_47 {
+Tienes razón, Hugo.
+}
+Lesopilka_48_m {
+¡Esa sí que fue una pelea, muchacho! Parece que hemos roto sus fuerzas principales, así que ahora, creo, nadie nos molestará.
+}
+Lesopilka_48_f {
+¡Esa sí que fue una pelea, muchacha! Parece que hemos roto sus fuerzas principales, así que ahora, creo, nadie nos molestará.
+}
+Lesopilka_49 {
+Como siempre tienes razón, Hugo. ¡Vamos a buscar el tesoro!
+}
+Lesopilka_50_m {
+Oh-ho, muchacho. Recogí esta cosita del barco que se hundía. Creo que te interesará.
+}
+Lesopilka_50_f {
+Oh-ho, muchacha. Recogí esta cosita del barco que se hundía. Creo que te interesará.
+}
+Lesopilka_51 {
+Es el diario de navegación del capitán del barco '@<FindPersonalName>'. Debería estudiarlo. Gracias, Hugo, puedes irte.
+}
+Lesopilka_52_m {
+¡Virgen Santísima... No he visto tanto oro en un solo lugar en toda mi vida! ¿Sabes, muchacho? Siempre he tenido un sueño tonto desde niño: enterrarme en un montón de tesoros como ese y simplemente tumbarme en él sin pensar en nada. ¡Te sugiero que lo intentes también!
+}
+Lesopilka_52_f {
+¡Virgen Santísima... No he visto tanto oro en un solo lugar en toda mi vida! ¿Sabes, muchacha? Siempre he tenido un sueño tonto desde niña: enterrarme en un montón de tesoros como ese y simplemente tumbarme en él sin pensar en nada. ¡Te sugiero que lo intentes también!
+}
+Lesopilka_53 {
+¿Tumbarse sobre oro? Hugo, ¿eres en el fondo un viejo dragón que escupe fuego y guarda su tesoro? No es tan agradable como crees – las monedas son frías y duras...
+}
+Lesopilka_54_m {
+¡Ja! Para un momento como este, se puede soportar. ¡Vamos, muchacho, no seas aguafiestas, túmbate a mi lado! ¿Cuándo volverás a tener la oportunidad de descansar sobre un montón de oro así?
+}
+Lesopilka_54_f {
+¡Ja! Para un momento como este, se puede soportar. ¡Vamos, muchacha, no seas aguafiestas, túmbate a mi lado! ¿Cuándo volverás a tener la oportunidad de descansar sobre un montón de oro así?
+}
+Lesopilka_55 {
+Está bien, está bien, me convenciste. Probemos tu 'terapia de dragón'...
+}
+Lesopilka_56 {
+¡Eso es espíritu! Túmbate, ponte cómodo...
+}
+Lesopilka_57 {
+(Tumbarse sobre el montón de oro)
+}
+Lesopilka_58 {
+Bueno, ¿qué tal? ¿Te sientes como el dueño del Caribe?
+}
+Lesopilka_59 {
+¿Sabes? Es bastante duro, pero es... eh... agradable para la espalda, si se puede decir así. Escucha, Hugo, aquí estamos tumbados, descansando, y se me ocurre algo. Nos conocemos desde hace tiempo, pero todavía no sé... ¿Por qué te apodaron Sierrasierra? Eres un pirata, no un carpintero. ¡Ja, ja, ja!
+}
+Lesopilka_60_m {
+¡Oh, esa es una historia antigua y muy divertida, muchacho! En mi juventud, era muy impulsivo y blandía mi hacha de abordaje a izquierda y derecha con tanta furia que solo astillas y serrín volaban de mis enemigos. ¡Pero mi 'hazaña' principal ocurrió durante un abordaje especialmente reñido...
+}
+Lesopilka_60_f {
+¡Oh, esa es una historia antigua y muy divertida, muchacha! En mi juventud, era muy impulsivo y blandía mi hacha de abordaje a izquierda y derecha con tanta furia que solo astillas y serrín volaban de mis enemigos. ¡Pero mi 'hazaña' principal ocurrió durante un abordaje especialmente reñido...
+}
+Lesopilka_61 {
+¿Y qué hiciste?
+}
+Lesopilka_62 {
+En el fragor de la batalla, vi el palo mayor del barco enemigo, que ya había sido dañado significativamente por nuestras balas de cadena. Sin pensarlo dos veces, decidí 'rematarlo' con mi hacha, matando accidentalmente a algún pobre desgraciado español en el proceso. ¿Y qué crees? ¡Golpeé tan fuerte que este enorme mástil cayó, derribando todos los demás mástiles del enemigo... y al mismo tiempo, enterró bajo los escombros las jarcias y los mástiles de nuestro propio barco! Ambos nos quedamos sin velas en medio del océano. Desde entonces, los muchachos empezaron a llamarme Hugo Sierrasierra. ¡Ja, ja, ja!
+}
+Lesopilka_63 {
+¡Ja, ja, ja! Bueno, Hugo, realmente eres todo un leñador. Está bien, hemos descansado sobre el tesoro – ya es suficiente, es hora de recoger el botín y volver.
+}
+Lesopilka_64_m {
+Eso es verdad... Ay, me gusta ser un pirata reformado. La vida mejora, muchacho.
+}
+Lesopilka_64_f {
+Eso es verdad... Ay, me gusta ser un pirata reformado. La vida mejora, muchacha.
+}
+Lesopilka_65 {
+Ciertamente, Hugo... Muy bien. Este montón es para ti, yo me encargo del resto.
+}
+Lesopilka_66_m {
+¡Ja, muchacho, sabía que lo lograrías!
+}
+Lesopilka_66_f {
+¡Ja, muchacha, sabía que lo lograrías!
+}
+Lesopilka_67 {
+Gracias, Hugo. Obtuve todo este tesoro solo gracias a ti.
+}
+Lesopilka_68 {
+¡Ah! ¿Te gustaría beber algo conmigo, @<pchar>?
+}
+Lesopilka_69 {
+Lo siento, Hugo, tengo asuntos pendientes. Quizás en otra ocasión. ¡Adiós!
+}
+Lesopilka_70 {
+¡Ah! ¿Te gustaría beber algo conmigo, @<pchar>?
+}
+Lesopilka_71 {
+Lo siento, Hugo, tengo asuntos pendientes. Quizás en otra ocasión. ¡Adiós!
+}

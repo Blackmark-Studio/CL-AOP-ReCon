@@ -229,7 +229,7 @@ void LAi_type_priest_Ask(aref chr)
 		animation = "dialog_stay5";
 		break;
 	}
-	LAi_tmpl_ani_PlayAnimation(chr, animation, -1.0);
+	LAi_tmpl_ani_PlayAnimation(chr, animation, 10.0);
 	//Выбираем проигрываемый звук
 	LAi_CharacterPlaySound(chr, "priest");
 }

@@ -1053,7 +1053,10 @@ pgg_dialog_291 {
 pgg_dialog_292 {
 @<RandPhraseSimple>
 }
-pgg_dialog_293 {
+pgg_dialog_293_m {
+你走你的吧，俺忙着呢。
+}
+pgg_dialog_293_f {
 你走你的吧，俺忙着呢。
 }
 pgg_dialog_294 {

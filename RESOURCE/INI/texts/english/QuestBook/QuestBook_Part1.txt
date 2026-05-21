@@ -180,7 +180,7 @@ Pir_Line_3_KillLoy.13 {Chasing again. Once more. At least I know where to sail t
 Pir_Line_3_KillLoy.14
 {
 It seems I’ve picked up Low’s trail. From the rumors I’ve heard, barges, schooners, luggers, and sloops have been disappearing near Cumana. People blame a certain brig. I have a feeling it’s Low—the pattern is just too familiar. Like a jackal, he preys on those weaker than himself.
-Looks like I’ll have to lure this hyena out. To do that, I’ll need to head out to sea near Cumana in a lugger or sloop and sail around for a while. I really hope Low takes the bait and attacks...
+Looks like I’ll have to lure this hyena out. To do this, I need to put to sea near Cumana on a ship of a similar class and try to sail it alone. I really hope Low takes the bait and attacks...
 }
 Pir_Line_3_KillLoy.15
 {
@@ -687,7 +687,7 @@ TheStarsAlignedISS.3 {
 Damn it! After Teaser fired in the cellar, something exploded... There's no one around... How long have I been lying here? My head is splitting... The innkeeper’s body is still warm, so it can’t have been that long. Sounds like the whole city is awake outside—the noise is something else. I need to get out to the streets and figure out what to do next.
 }
 TheStarsAlignedISS.4 {
-I can barely muster the strength to write this entry. Damn maroons! We barely escaped death’s grip... And yet, we made it out alive and well. Although Teaser looked quite unwell last time I saw him. Not just physically, but mentally too. He thinks he’s someone else and talks like some kind of soldier. I should check on him in the wardroom.
+I can barely muster the strength to write this entry. Damn maroons! We barely escaped death’s grip... And yet, we made it out alive and well. Although Teaser looked quite unwell last time I saw him. Not just physically, but mentally too. He thinks he’s someone else and talks like some kind of soldier.
 }
 TheStarsAlignedISS.5 {
 Teaser is in pretty bad shape, but at least he’s alive and not in chains of the Dutch West India Company.
@@ -787,7 +787,7 @@ Time to pay the bartender a visit — I think he’s finally ripe for it.
 ISS_MainLine.6 {The tavern owner, Hill Brynner, arranged to meet me after midnight in his makeshift cellar. It’s one of the cabins on this very ship; to get there, I need to go out on deck and head to the stern.}
 ISS_MainLine.7 {Hill Brynner sent me to the fluyt 'Fernando Diffindur', which used to be a frequent visitor to Teaser Dan. According to the tavern owner, that's where I might find something to prove my words are true.}
 ISS_MainLine.8 {I need to find a certain André Labor, a carpenter, in the City. According to Hill Brunner, he was the one who helped Teaser Dan build the vessel that allowed him to reach the mainland.}
-ISS_MainLine.9 {I @<sSex> with him. André arranged to meet me in the cabin of the corvette 'Protector'.}
+ISS_MainLine.9 {I found the carpenter and carefully talked to him. André arranged to meet me in the cabin of the corvette 'Protector'.}
 ISS_MainLine.10 {That scoundrel André Labor brought a militiaman to talk to me! I’ll have to draw my weapon. Damn it!}
 ISS_MainLine.11
 {

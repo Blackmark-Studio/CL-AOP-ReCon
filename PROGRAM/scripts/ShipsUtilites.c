@@ -1044,6 +1044,9 @@ int GetShipPriceByType(int st, ref _shipyard)
 // ГГ продаёт корабль // HardCoffee ref
 int GetShipSellPrice(ref _chr, ref _shipyard)
 {
+	if (!CheckAttribute(_shipyard, "ShipCostRate"))
+		_shipyard.ShipCostRate = 0.8 + frnd() * 0.4;
+
 	int iShipType = GetCharacterShipType(_chr);
 	float fPrice = makefloat(GetShipPriceByType(iShipType, _shipyard));
 
@@ -1314,24 +1317,192 @@ bool CheckShipMoored()
 {
 	if (!CheckShip(pchar))
 		return false;
-	
-	if (pchar.location == pchar.location.from_sea || HasStr(pchar.location, pchar.location.from_sea))
-		return true;
-	
+
 	if (CheckAttribute(loadedLocation, "fastreload"))
 	{
-		int iColony = FindColony(loadedLocation.fastreload);
-		
-		if (iColony >= 0)
+		ref rColony = &Colonies[FindColony(loadedLocation.fastreload)];
+
+		if (rColony.from_sea == "" || pchar.location.from_sea == rColony.from_sea)
+			return true;
+	}
+
+	return false;
+}
+
+// > есть ли у chr корабль
+bool CheckShip(ref chr)
+{
+	return GetCharacterShipType(chr) != SHIP_NOTUSED;
+}
+
+// > метод вернёт случайный тип корабля, который +/- соответствует наибольшему по классу кораблю в эскадре ГГ
+// > TODO деление на Merchant и War
+int RandShipFromPcharSquadron()
+{
+	int result = rand(5) + 5;
+	int cn, ShipCompanionClass, iShipClass = sti(RealShips[sti(pchar.Ship.Type)].Class);
+	ref rChar;
+	
+	if (iShipClass > 5 && CheckAttribute(&TEV, "Andre_Abel_Quest_Battle_With_Pirates_Squadron"))
+		iShipClass = 5;
+	
+	// код от Zendayo > фикс жульничества с эскадрой и пересадкой в бою
+	for (int comp=1; comp<COMPANION_MAX; comp++)
+	{
+		cn = GetCompanionIndex(pchar, comp);
+		if(cn != -1)
 		{
-			ref rColony = GetColonyByIndex(iColony);
+			rChar = &characters[cn];
+			ShipCompanionClass = sti(RealShips[sti(rChar.ship.type)].Class);
+			if (ShipCompanionClass < iShipClass && rChar.id != "Andre_Abel")
+			{
+				iShipClass = ShipCompanionClass;
+			}
+		}
+	}
+	// <
+	
+	switch (iShipClass)
+	{
+		case 1: result = SHIP_LINESHIP + rand(3); break;
+		case 2: result = SHIP_GALEON_H + rand(2); break;
+		case 3: result = SHIP_CORVETTE_L + rand(3); break;
+		case 4: result = SHIP_BRIGANTINE + rand(4); break;
+		case 5: result = SHIP_SCHOONER_W + rand(3); break;
+		case 6: result = SHIP_LUGGER_W + rand(3); break;
+		case 7: result = SHIP_WAR_TARTANE + rand(2); break;
+	}
+	
+	return result;
+}
+
+// > метод вернёт лучший или худший класс корабля в эскадре ГГ (onlyBots true - только корабли компаньонов; false - ГГ тоже)
+int GetPcharSquadronShipClass(bool bWorst, bool onlyBots)
+{
+	int npc, iTempClass, iShipClass = sti(RealShips[sti(pchar.Ship.Type)].Class);
+	ref rChar;
+	
+	for (int shipsQty = 0; shipsQty < COMPANION_MAX; shipsQty++)
+	{
+		if (onlyBots && shipsQty == 0)
+			shipsQty++;
+		
+		npc = GetCompanionIndex(pchar, shipsQty);
+		
+		if (npc >= 0)
+		{
+			rChar = &characters[npc];
+			iTempClass = sti(RealShips[sti(rChar.ship.type)].Class);
 			
-			if ((rColony.from_sea == "") || (pchar.location.from_sea == rColony.from_sea))
-				return true;
+			if (bWorst)
+			{
+				if (iTempClass > iShipClass)
+					iShipClass = iTempClass;
+			}
+			else
+			{
+				if (iTempClass < iShipClass)
+					iShipClass = iTempClass;
+			}
 		}
 	}
 	
-	return false;
+	Restrictor(&iShipClass, 1, 7);
+	
+	return iShipClass;
+}
+
+// > метод проверяет корабли в эскадре ГГ по типу "торговый" или "боевой"; если торговых больше, значит эскадра "торговая" (false), если равенство или военных больше, то "боевая" (true)
+bool GetPcharSquadronType()
+{
+	int i, iChar, warShips = 0; int tradeShips = 0;
+	ref rChar, rShip;
+	
+	for (i = 0; i < COMPANION_MAX; i++)
+	{
+		iChar = GetCompanionIndex(pchar, i);
+		
+		if (iChar >= 0)
+		{
+			rChar = &characters[iChar];
+			rShip = &RealShips[sti(rChar.Ship.Type)];
+			
+			if (CheckAttribute(rShip, "Type.Merchant") && sti(rShip.Type.Merchant) > 0)
+			{
+				if (CheckAttribute(rShip, "Type.War") && sti(rShip.Type.War) > 0) // < универсал
+					warShips++;
+				else
+					tradeShips++;
+			}
+			else
+			{
+				if (CheckAttribute(rShip, "Type.War") && sti(rShip.Type.War) > 0)
+					warShips++;
+			}
+		}
+	}
+	
+	if (warShips == 0 && tradeShips == 0) // < баркас&Co
+		return false;
+	
+	if (tradeShips > warShips)
+		return false;
+	
+	return true;
+}
+
+// > метод вернёт средний класс кораблей в эскадре ГГ
+int GetPcharSquadronAverageClass(bool onlyBots)
+{
+	int i, iChar, result = 0;
+	ref rChar, rShip;
+	
+	for (i = 0; i < COMPANION_MAX; i++)
+	{
+		if (onlyBots && i == 0)
+			i++;
+		
+		iChar = GetCompanionIndex(pchar, i);
+		
+		if (iChar >= 0)
+		{
+			rChar = &characters[iChar];
+			
+			if (!CheckShip(rChar))
+			{
+				result += 7;
+				continue;
+			}
+			
+			rShip = &RealShips[sti(rChar.Ship.Type)];
+			
+			if (CheckAttribute(rShip, "Class"))
+				result += sti(rShip.Class);
+		}
+	}
+	
+	result = round_near(makefloat(result) / GetCompanionQuantity(pchar));
+	Restrictor(&result, 1, 7);
+	
+	return result;
+}
+
+// > метод ставит на корабль перса подходящий калибр орудий; TODO > дополнить позже на +\- шага калибра
+int SetShipSuitableCannons(int iShipType, string sCannonType)
+{
+	sCannonType = stripblank(sCannonType);
+	
+	if (!StrHasStr(sCannonType, "cannon,culverine", 1))
+	{
+		sCannonType = "cannon";
+		
+		if (rand(1))
+			sCannonType = "culverine";
+	}
+	
+	ref rShip = GetRealShip(iShipType);
+	int iCaliber = sti(rShip.MaxCaliber);
+	return GetCannonByTypeAndCaliber(sCannonType, iCaliber);
 }
 
 bool CheckSelfRepairConditions()

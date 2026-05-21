@@ -194,7 +194,7 @@ void LAi_type_warrior_CharacterUpdate(aref chr, float dltTime)
 							if (CheckAttribute(chr, "watchBoxes.exitDisable")) chrDisableReloadToLocation = true;
 						}
 						//в ГПК не даем спокойно шариться в погребах резиденции Чада
-						else if (chr.location == "SanAugustineResidence" && pchar.chr_ai.tmpl != LAI_TMPL_DIALOG && !CheckAttribute(chr, "HiredDate"))
+						else if (chr.location == "SanAugustineResidence" && pchar.chr_ai.tmpl != LAI_TMPL_DIALOG && !CheckAttribute(chr, "HiredDate") && chr.id != "Ment_6")
 						{
                             float locx, locy, locz;
                             GetCharacterPos(pchar, &locx, &locy, &locz);

@@ -592,7 +592,7 @@ int LocationInitBeliz(int n)
 	locations[n].id = "Beliz_townhall";
 	locations[n].id.label = "Townhall";
 	locations[n].filespath.models = "locations\inside\Residence01";
-	locations[n].image = "loading\inside\residence.tga";
+	locations[n].image = "loading\inside\Residence01.tga";
 	//Town sack
 	locations[n].townsack = "Beliz";
 	locations[n].lockWeather = "Inside";
@@ -1642,7 +1642,7 @@ int LocationInitBeliz(int n)
 
 	locations[n].id = "Secret_Fort_Hut";
     locations[n].id.label = "House";
-    locations[n].image = "loading\inside\littlehut1.tga";
+    locations[n].image = "loading\inside\littlehut.tga";
     //Town sack
     locations[n].islandId = "Mein";
     //Sound

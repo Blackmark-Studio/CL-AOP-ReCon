@@ -10,7 +10,7 @@ void ProcessDialogEvent()
 	int iShipClass = GetCharacterShipClass(PChar); // Если корабля нет, вернёт 7 (лодка)
 	int iRank = sti(PChar.rank);
 
-	bool ok;
+	bool bShipMoored = CheckShipMoored();
 
 	DeleteAttribute(&Dialog, "Links");
 
@@ -27,12 +27,14 @@ void ProcessDialogEvent()
 		ProcessCommonDialog(NPChar, Link, NextDiag);
 		UnloadSegment(NPChar.FileDialog2);
 	}
+
 	// вызов диалога по городам <--
 	int iTest = FindColony(NPChar.City); // город магазина
 	if (iTest != -1)
 	{
 		rColony = GetColonyByIndex(iTest);
 	}
+
 	//Выбор компаньонов для интерфейса кастомизаци корабля
 	sTemp = Dialog.CurrentNode;
 	if (HasSubStr(sTemp, "Pick_"))
@@ -43,38 +45,7 @@ void ProcessDialogEvent()
 		DialogExit();
 		LaunchShipCustomizeScreen(npchar, sld);
 	}
-	/* //HardCoffee отключаю, так как введён новый интерфейс кастомизации корабля -->
-	// генератор парусов по кейсу -->
-	string attrLoc   = Dialog.CurrentNode;
-  	if (HasSubStr(attrLoc, "SailsColorIdx_"))
- 	{
-        i = findsubstr(attrLoc, "_" , 0);
-	 	NPChar.SailsColorIdx = strcut(attrLoc, i+1, strlen(attrLoc)-1); // индех в конце
- 	    Dialog.CurrentNode = "SailsColorDone";
- 	}
- 	if (HasSubStr(attrLoc, "SailsTypeChooseIDX_"))
- 	{
-        i = findsubstr(attrLoc, "_" , 0);
-	 	NPChar.SailsTypeChooseIDX = strcut(attrLoc, i+1, strlen(attrLoc)-1); // индех в конце
- 	    Dialog.CurrentNode = "SailsTypeChoose2";
- 	}
- 	// генератор парусов по кейсу <--
 
-	// --->>> ZhilyaevDm 15.11.22 перекраска кораблей с нац хуллами
-	if (HasSubStr(attrLoc, "HullColorIdx_"))
-	{
-		i = findsubstr(attrLoc, "_", 0);
-		NPChar.HullColorIdx = strcut(attrLoc, i + 1, strlen(attrLoc) - 1); // индех в конце
-		Dialog.CurrentNode = "HullColorDone";
-	}
-	if (HasSubStr(attrLoc, "HullTypeChooseIDX_"))
-	{
-		i = findsubstr(attrLoc, "_", 0);
-		NPChar.HullTypeChooseIDX = strcut(attrLoc, i + 1, strlen(attrLoc) - 1); // индех в конце
-		Dialog.CurrentNode = "HullTypeChoose2";
-	}
-	// <<<--- ZhilyaevDm
-	*/ //HardCoffee отключаю, так как введён новый интерфейс кастомизации корабля <--
 	switch (Dialog.CurrentNode)
 	{
 		case "Exit":
@@ -169,11 +140,12 @@ void ProcessDialogEvent()
 			{
 				//--->> квест украсть чертеж на верфи
 				//дача квеста
-				if (rand(1) && pchar.questTemp.different == "free" && GetNpcQuestPastDayWOInit(npchar, "questShipyardsMap") > 7 && !CheckAttribute(pchar, "questTemp.different.ShipyardsMap") && GetSummonSkillFromName(pchar, SKILL_SNEAK) > 25)
+				if (drand(2) == 1 && pchar.questTemp.different == "free" && GetEventPastTime("questShipyardsMap", "day") > 7 && GetNpcQuestPastDayWOInit(npchar, "questShipyardsMap") > 30 && !CheckAttribute(pchar, "questTemp.different.ShipyardsMap") && GetSummonSkillFromName(pchar, SKILL_SNEAK) > 25)
 				{
 					dialog.text = StringFromKey("Common_Shipyard_24");
 					link.l1 = StringFromKey("Common_Shipyard_25");
 					link.l1.go = "ShipyardsMap_1";
+					SaveEventStartTime("questShipyardsMap");
 					SaveCurrentNpcQuestDateParam(npchar, "questShipyardsMap");
 					break;
 				}
@@ -441,14 +413,21 @@ void ProcessDialogEvent()
 		break;
 
 		case "shipyard":
-			NextDiag.CurrentNode = NextDiag.TempNode;
-			DialogExit();
-			LaunchShipyard(npchar);
+			if (!CheckShip(Pchar) || bShipMoored)
+			{
+				NextDiag.CurrentNode = NextDiag.TempNode;
+				DialogExit();
+				LaunchShipyard(npchar);
+			}
+			else
+			{
+				ShipyardRestrictDialog(Link, NPChar);
+				break;
+			}
 		break;
 
 		case "Cannons":
-			ok = (rColony.from_sea == "") || (Pchar.location.from_sea == rColony.from_sea);
-			if (sti(Pchar.Ship.Type) != SHIP_NOTUSED && ok)
+			if (bShipMoored)
 			{
 				NextDiag.CurrentNode = NextDiag.TempNode;
 				DialogExit();
@@ -456,27 +435,13 @@ void ProcessDialogEvent()
 			}
 			else
 			{
-				dialog.text = NPCharRepPhrase(npchar,
-						pcharrepphrase(
-								StringFromKey("Common_Shipyard_78"),
-								StringFromKey("Common_Shipyard_79")),
-						pcharrepphrase(
-								StringFromKey("Common_Shipyard_80", GetFullName(pchar)),
-								StringFromKey("Common_Shipyard_81")));
-				link.l1 = NPCharRepPhrase(npchar,
-						pcharrepphrase(
-								StringFromKey("Common_Shipyard_82", RandSwear()),
-								StringFromKey("Common_Shipyard_83", pchar, GetFullName(npchar))),
-						pcharrepphrase(
-								StringFromKey("Common_Shipyard_84"),
-								StringFromKey("Common_Shipyard_85")));
-				link.l1.go = "exit";
+				ShipyardRestrictDialog(Link, NPChar);
+				break;
 			}
 		break;
 
 		case "ShipCustomize":
-			ok = (rColony.from_sea == "") || (Pchar.location.from_sea == rColony.from_sea);
-			if (sti(Pchar.Ship.Type) != SHIP_NOTUSED && ok)
+			if (bShipMoored)
 			{
 				dialog.text = StringFromKey("Common_Shipyard_86");
 				for (i = 0; i < GetCompanionQuantity(PChar); i++)
@@ -495,289 +460,10 @@ void ProcessDialogEvent()
 			}
 			else
 			{
-				dialog.text = NPCharRepPhrase(npchar,
-						StringFromKey("Common_Shipyard_88"),
-						StringFromKey("Common_Shipyard_89"));
-				link.l1 = pcharrepphrase(
-							StringFromKey("Common_Shipyard_90", RandSwear()),
-							StringFromKey("Common_Shipyard_91", pchar, GetFullName(npchar)));
-				link.l1.go = "exit";
+				ShipyardRestrictDialog(Link, NPChar);
+				break;
 			}
 		break;
-		/*
-				case "ShipCustomize":
-					DialogExit();
-					LaunchShipCustomizeScreen(npchar, pchar);
-				break;
-		*//* //HardCoffee отключаю так как появился интерфейс кастомизации
-		case "SailsGerald":
-            ok = (rColony.from_sea == "") || (Pchar.location.from_sea == rColony.from_sea);
-		    if (sti(Pchar.Ship.Type) != SHIP_NOTUSED && ok)
-			{
-			    dialog.text = "Сменить цвет парусов стоит " +
-				              FindMoneyString(GetSailsTuningPrice(Pchar, npchar, SAILSCOLOR_PRICE_RATE))+
-							  ", поставить новый герб стоит " +
-							  FindMoneyString(GetSailsTuningPrice(Pchar, npchar, SAILSGERALD_PRICE_RATE)) +
-							  ", цена смены типа парусины зависит от материала.";
-							  
-			    link.l1 = "Выбрать новый цвет.";
-			    link.l1.go = "SailsColorChoose";
-			    link.l2 = "Изобразить новый герб.";
-			    link.l2.go = "SailsGeraldChoose";
-			    
-				// Паруса ЛГ
-				if(!CheckForFlyingDuchmanSails(PChar))
-				{
-					link.l3 = "Изменить материал парусов."; // Материал изменить нельзя, если стоят паруса ЛГ
-					link.l3.go = "SailsTypeChoose";
-					link.l4 = "Я хочу установить устрашающие паруса, как на легендарном корабле-призраке!";
-					link.l4.go = "FlyingDutchmanSails";
-				}
-				else
-				{
-					link.l4 = "Я хочу убрать устрашающие паруса.";
-					link.l4.go = "FlyingDutchmanSails_Clear";
-				}
-				
-			    Link.l9 = "Я " + GetSexPhrase("передумал", "передумала") +".";
-				Link.l9.go = "exit";
-			}
-			else
-			{
-			    dialog.text = NPCharRepPhrase(npchar, pcharrepphrase("Дуришь меня? А где же твой корабль? У пирса его нет!",
-				                                                     "Клянусь дьяволом, тебе не обмануть меня! У пирса нет твоего корабля!"),
-													  pcharrepphrase("Я не вижу вашего корабля в порту, капитан " +GetFullName(pchar)+ ". А за ваш камзол я готов дать лишь пару медных монет.",
-													                 "Капитан, паруса - это такая самая большая-большая тряпка, которая висит высоко-высоко на корабле на таком длинном деревянном бревне. Привяжите свой корабль возле города и я вам её покажу."));
-				link.l1 = NPCharRepPhrase(npchar, pcharrepphrase(RandSwear()+"Какая неприятность!!! Ладно, старый проныра, ещё увидимся!",
-				                                                 "Я не " + GetSexPhrase("хотел", "хотела") +" вас обмануть " +GetFullName(npchar)+ ", корабль на другой стороне острова."),
-												  pcharrepphrase("Огромное спасибо, я мигом.",
-												                 "Спасибо за совет, обязательно им воспользуюсь."));
-			    link.l1.go = "exit";
-			}
-		break;
-		
-		// Warship 16.06.09 Паруса ЛГ
-		case "FlyingDutchmanSails":
-			if(iShipClass < 4)
-			{
-				iSumm = (10 / iShipClass) * iRank * MOD_SKILL_ENEMY_RATE * 10; // Цена за установку парусов
-				dialog.text = "Да, я как раз придумал интересную геометрию паруса: он напоминает рваный, чтобы книппели и ядра наносили меньший ущерб. Его, кстати, можно пошить из ненового сукна. Думаю, для вашего корабля такой комплект будет стоить " + FindMoneyString(iSumm) + ".";
-				
-				if(sti(PChar.money) >= iSumm)
-				{
-					Link.l1 = "Отлично! Меня это устраивает.";
-					Link.l1.go = "FlyingDutchmanSails_SetDuchman";
-				}
-				
-				Link.l2 = "Какая несуразная цена! Забудьте об этом.";
-				Link.l2.go = "exit";
-			}
-			else
-			{
-				dialog.text = "На Вашем судне такие паруса будут выглядеть потешно. Подыщите более внушительный корабль...";
-				Link.l1 = "Буду искать, куда деваться-то...";
-				Link.l1.go = "exit";
-			}
-		break;
-		
-		case "FlyingDutchmanSails_SetDuchman":
-			iSumm = (10 / iShipClass) * iRank * MOD_SKILL_ENEMY_RATE * 10; // Цена за установку парусов
-			
-			AddMoneyToCharacter(PChar, -iSumm);
-			
-			dialog.text = "Замечательно. Всё сделаем в лучшем виде.";
-			Link.l1 = "Спасибо.";
-			Link.l1.go = "exit";
-			
-			SetShipSailsFromFile(PChar, "ships/parus_common_torn.tga"); // Паруса ЛГ
-			
-			WaitDate("", 0, 0, 0, 1, 30);
-		break;
-		
-		// Убрать паруса ЛГ
-		case "FlyingDutchmanSails_Clear":
-			iSumm = (10 / iShipClass) * iRank * MOD_SKILL_ENEMY_RATE * 10; // Цена за установку парусов
-			
-			dialog.text = "Ну, убрать так убрать. Это обойдётся тебе в " + FindMoneyString(iSumm) + ".";
-			
-			if(sti(PChar.money) >= iSumm)
-			{
-				Link.l1 = "Отлично! Меня это устраивает.";
-				Link.l1.go = "FlyingDutchmanSails_SetNormal";
-			}
-			
-			Link.l2 = "Какая несуразная цена! Забудьте об этом.";
-			Link.l2.go = "exit";
-		break;
-		
-		case "FlyingDutchmanSails_SetNormal":
-			rRealShip = GetRealShip(sti(PChar.Ship.Type));
-			
-			iSumm = (10 / iShipClass) * iRank * MOD_SKILL_ENEMY_RATE * 10; // Цена за установку парусов
-			
-			AddMoneyToCharacter(PChar, -iSumm);
-			
-			dialog.text = "Замечательно. Всё сделаем в лучшем виде.";
-			Link.l1 = "Спасибо.";
-			Link.l1.go = "exit";
-			
-			DeleteAttribute(rRealShip, "EmblemedSails.normalTex");
-			
-			WaitDate("", 0, 0, 0, 1, 30);
-		break;
-		*/ //HardCoffee отключаю так как появился интерфейс кастомизации <--
-		/* HardCoffee отключаю так как появился интерфейс кастомизации -->
-				case "SailsTypeChoose":
-					dialog.text = "Какой новый тип парусины ставим? У тебя сейчас паруса из материала '" + GetSailsType(sti(RealShips[sti(Pchar.Ship.Type)].ship.upgrades.sails)) + "'.";
-
-					Link.l1 = GetSailsType(1) + ".";
-					Link.l1.go = "SailsTypeChooseIDX_1";
-					Link.l2 = GetSailsType(2)  + ".";
-					Link.l2.go = "SailsTypeChooseIDX_2";
-					Link.l3 = GetSailsType(3)  + ".";
-					Link.l3.go = "SailsTypeChooseIDX_3";
-
-					attrLoc = "l" + sti(RealShips[sti(Pchar.Ship.Type)].ship.upgrades.sails);
-					DeleteAttribute(Link, attrLoc);
-
-					Link.l99 = "Я " + GetSexPhrase("передумал", "передумала") +".";
-					Link.l99.go = "exit";
-				break;
-
-				case "SailsTypeChoose2":
-					NPChar.SailsTypeMoney = GetSailsTypePrice(sti(RealShips[sti(Pchar.Ship.Type)].ship.upgrades.sails),
-															  sti(NPChar.SailsTypeChooseIDX),
-															  stf(NPChar.ShipCostRate),
-															  sti(RealShips[sti(Pchar.Ship.Type)].Price));
-
-					dialog.text = "У тебя сейчас паруса из материала '" + GetSailsType(sti(RealShips[sti(Pchar.Ship.Type)].ship.upgrades.sails)) +
-								  "', ты " + GetSexPhrase("выбрал", "выбрала") +" тип ткани '"+ GetSailsType(sti(NPChar.SailsTypeChooseIDX))+
-								  "'. Стоимость замены " + FindMoneyString(sti(NPChar.SailsTypeMoney)) +". Меняем?";
-
-					if (sti(NPChar.SailsTypeMoney) <= sti(Pchar.Money))
-					{
-						Link.l1 = "Да.";
-						Link.l1.go = "SailsTypeChooseDone";
-					}
-					Link.l99 = "Нет.";
-					Link.l99.go = "exit";
-				break;
-
-				case "SailsTypeChooseDone":
-					AddMoneyToCharacter(Pchar, -sti(NPChar.SailsTypeMoney));
-					dialog.text = "Замечательно! Всё сделаем в лучшем виде.";
-					Link.l9 = "Спасибо.";
-					Link.l9.go = "exit";
-
-					RealShips[sti(Pchar.Ship.Type)].ship.upgrades.sails = sti(NPChar.SailsTypeChooseIDX);
-					WaitDate("",0,0,0, 1, 30);
-				break;
-
-				// --->>> ZhilyaevDm 15.11.22 перекраска кораблей с нац хуллами. Диалог.
-				case "HullTypeChoose":
-					dialog.text = "Корпус твоего корабля окрашен в " + GetHullType(sti(RealShips[sti(Pchar.Ship.Type)].ship.upgrades.hull)) + ". В какие цвета хочешь его перекрасить? ";
-
-					Link.l1 = "В " + GetHullType(1) + ".";
-					Link.l1.go = "HullTypeChooseIDX_1";
-					Link.l2 = "В " + GetHullType(2) + ".";
-					Link.l2.go = "HullTypeChooseIDX_2";
-					Link.l3 = "В " + GetHullType(3) + ".";
-					Link.l3.go = "HullTypeChooseIDX_3";
-					Link.l4 = "В " + GetHullType(4) + ".";
-					Link.l4.go = "HullTypeChooseIDX_4";
-
-					attrLoc = "l" + sti(RealShips[sti(Pchar.Ship.Type)].ship.upgrades.hull);
-					DeleteAttribute(Link, attrLoc);
-
-					Link.l99 = "Я " + GetSexPhrase("передумал", "передумала") + ".";
-					Link.l99.go = "exit";
-					break;
-
-				case "HullTypeChoose2":
-					NPChar.HullTypeMoney = GetHullTypePrice(stf(NPChar.ShipCostRate), sti(RealShips[sti(Pchar.Ship.Type)].Price));
-
-					dialog.text = "Так, у тебя сейчас корпус выкрашен в " + GetHullType(sti(RealShips[sti(Pchar.Ship.Type)].ship.upgrades.hull)) +
-						", ты " + GetSexPhrase("выбрал", "выбрала") + " " + GetHullType(sti(NPChar.HullTypeChooseIDX)) +
-						". Стоимость перекраски " + FindMoneyString(sti(NPChar.HullTypeMoney)) + ". Меняем?";
-
-					if (sti(NPChar.HullTypeMoney) <= sti(Pchar.Money))
-					{
-						Link.l1 = "Да, меняем.";
-						Link.l1.go = "HullTypeChooseDone";
-					}
-					Link.l99 = "Знаете, я подумаю.";
-					Link.l99.go = "exit";
-					break;
-
-				case "HullTypeChooseDone":
-					AddMoneyToCharacter(Pchar, -sti(NPChar.HullTypeMoney));
-					dialog.text = "Замечательно! Всё сделаем в лучшем виде.";
-					Link.l9 = "Спасибо.";
-					Link.l9.go = "exit";
-
-					RealShips[sti(Pchar.Ship.Type)].ship.upgrades.hull = sti(NPChar.HullTypeChooseIDX);
-					WaitDate("", 0, 0, 0, 1, 30);
-					break;
-				// <<<--- ZhilyaevDm
-
-				case "SailsColorChoose":
-					if (GetSailsTuningPrice(Pchar, npchar, SAILSCOLOR_PRICE_RATE) <= sti(Pchar.Money))
-					{
-						dialog.text = "Какой цвет ставим? Цена " + FindMoneyString(GetSailsTuningPrice(Pchar, npchar, SAILSCOLOR_PRICE_RATE)) + ".";
-						for (i = 0; i < SAILS_COLOR_QUANTITY; i++)
-						{
-							if (CheckSailsColor(Pchar, i))
-							{
-								attrLoc = "l" + i;
-								Link.(attrLoc) = XI_ConvertString(SailsColors[i].name);
-								Link.(attrLoc).go = "SailsColorIdx_" + i;
-							}
-						}
-						Link.l99 = "Я " + GetSexPhrase("передумал", "передумала") +".";
-						Link.l99.go = "exit";
-					}
-					else
-					{
-						dialog.text = "Приходи, когда деньги будут.";
-						Link.l9 = "Хорошо.";
-						Link.l9.go = "exit";
-					}
-				break;
-
-				case "SailsColorDone":
-					AddMoneyToCharacter(Pchar, -GetSailsTuningPrice(Pchar, npchar, SAILSCOLOR_PRICE_RATE));
-					dialog.text = "Договорились. Красим паруса в "+ GetStrSmallRegister(XI_ConvertString(SailsColors[sti(NPChar.SailsColorIdx)].name)) +" цвет.";
-					Link.l9 = "Спасибо.";
-					Link.l9.go = "exit";
-
-					SetSailsColor(Pchar, sti(NPChar.SailsColorIdx));
-					WaitDate("",0,0,0, 1, 30);
-				break;
-
-				case "SailsGeraldChoose":
-					if(GetSailsTuningPrice(Pchar, npchar, SAILSGERALD_PRICE_RATE) <= sti(Pchar.Money))
-					{
-						if(CheckSailsGerald(Pchar) && CanSetSailsGerald(PChar)) // Warship fix 04.06.09
-						{
-							NextDiag.CurrentNode = NextDiag.TempNode;
-							DialogExit();
-							LaunchSailsGeraldScreen(npchar);
-						}
-						else
-						{
-							dialog.text = "К сожалению, на твой корабль нельзя установить герб.";
-							Link.l9 = "Жаль.";
-							Link.l9.go = "exit";
-						}
-					}
-					else
-					{
-						dialog.text = "Приходи, когда деньги будут.";
-						Link.l9 = "Хорошо.";
-						Link.l9.go = "exit";
-					}
-				break;
-		*/ //HardCoffee отключаю, так как появился интерфейс кастомизации корабля <--
 		// квест украсть чертеж на верфи
 		case "ShipyardsMap_1":
 			dialog.text = StringFromKey("Common_Shipyard_92");
@@ -967,7 +653,6 @@ void ProcessDialogEvent()
 			CloseQuestHeader("ShipyardsMap");
 			DeleteAttribute(pchar, "questTemp.different.ShipyardsMap");
 		break;
-
 	}
 }
 
@@ -993,90 +678,26 @@ string findShipyardCity(ref NPChar)
 	nation = storeArray[rand(howStore - 1)];
 	return colonies[nation].id;
 }
-/* //HardCoffee отключаю, так как появился интерфейс кастомизации -->
-// проверка какой уже цвет есть
-bool CheckSailsColor(ref chr, int col)
+
+void ShipyardRestrictDialog(aref arLink, ref rChar)
 {
-	int    st = GetCharacterShipType(chr);
-	ref    shref;
-	
-	if (st != SHIP_NOTUSED)
-	{
-		shref = GetRealShip(st);
-		st = -1;
-		if (!CheckAttribute(shref, "ShipSails.SailsColor"))  st = 0; // нету - это белый
-		if (CheckAttribute(shref, "SailsColorIdx"))  st = sti(shref.SailsColorIdx);
-		if (st == col) return false;
-	}
-	return true;		
+	int iNode = 136;
+	if (Dialog.CurrentNode == "Cannons")
+		iNode = 80;
+
+	dialog.text = NPCharRepPhrase(rChar,
+			pcharrepphrase(
+					StringFromKey("Common_Shipyard_78"),
+					StringFromKey("Common_Shipyard_79")),
+			pcharrepphrase(
+					StringFromKey("Common_Shipyard_" + iNode, GetFullName(pchar)),
+					StringFromKey("Common_Shipyard_" + (iNode + 1))));
+	arLink.l1 = NPCharRepPhrase(rChar,
+			pcharrepphrase(
+					StringFromKey("Common_Shipyard_82", RandSwear()),
+					StringFromKey("Common_Shipyard_83", pchar, GetFullName(rChar))),
+			pcharrepphrase(
+					StringFromKey("Common_Shipyard_84"),
+					StringFromKey("Common_Shipyard_85")));
+	arLink.l1.go = "exit";
 }
-
-bool CheckSailsGerald(ref chr)
-{
-    int    st = GetCharacterShipType(chr);
-	ref    shref;
-	if (st != SHIP_NOTUSED)
-	{
-		shref = GetRealShip(st);
-		if (CheckAttribute(shref, "GeraldSails"))  return true;
-	}
-	return false;
-}
-
-string GetSailsType(int _type)
-{
-	switch (_type)
-	{
-	    case 1 : return "Пенька";  break;
-	    case 2 : return "Лён";     break;
-	    case 3 : return "Хлопок";  break;
-	}
-	return "Пенька";
-}
-
-int GetSailsTypePrice(int _asis, int _tobe, float _shipCostRate, int _price)
-{
-	int ret;
-	ret = _tobe - _asis;
-	
-	if (ret < 0) ret = 0;
-	
-	return makeint((ret*_price*0.05 + _price*0.05)*_shipCostRate / 10) * 10;
-}
-
-// Warship Ghdjthrf на паруса ЛГ
-bool CheckForFlyingDuchmanSails(ref _char)
-{
-	ref realShip;
-	int shipType = sti(_char.Ship.Type);
-	
-	if(shipType == SHIP_NOTUSED) return false;
-
-	realShip = GetRealShip(shipType);
-
-	if(CheckAttribute(realShip, "EmblemedSails.normalTex") && realShip.EmblemedSails.normalTex == "ships/parus_common_torn.tga")
-	{
-		return true;
-	}
-
-	return false;
-}
-
-// --->>> ZhilyaevDm 15.11.22 перекраска кораблей с нац хуллами
-string GetHullType(int _type)
-{
-	switch (_type)
-	{
-	case 1: return "цвета британского королевского флота";			break;
-	case 2: return "цвета французского военного флота";				break;
-	case 3: return "военные цвета флота испанского королевства";	break;
-	case 4: return "цвета кораблей голландской компании";			break;
-	}
-	return "английские военные цвета";
-}
-
-int GetHullTypePrice(float _shipCostRate, int _price)
-{
-	return makeint((_price * 0.05 + _price * 0.05) * _shipCostRate/4) * 10;
-}
-// <<<--- ZhilyaevDm */ //HardCoffee отключаю, так как появился интерфейс кастомизации <--

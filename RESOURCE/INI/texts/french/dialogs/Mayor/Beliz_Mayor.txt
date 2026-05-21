@@ -91,3 +91,15 @@ Je ne doute pas un instant que tout cela arrivera. J’ai entendu les histoires.
 Beliz_Mayor_28 {
 Vous venez de sauver votre vie et votre santé. Félicitations, et je vous souhaite de rester en bonne santé à l’avenir, señor.
 }
+Beliz_Mayor_29 {
+Je vous rappelle que vous aviez demandé à livrer à la justice la femme liée au meurtre de votre secrétaire, Bartholomew Olster.
+}
+Beliz_Mayor_30 {
+Oh, oui, j'ai reçu une lettre du Saint-Père concernant cette créature diabolique et son destin. Vous avez fait du bon travail, capitaine. Je vous remercie du fond du cœur pour votre aide dans cette affaire. J'imagine qu'il n'a pas été facile de la trouver. Je vous propose une modeste récompense pour la tête de cette sorcière : 15 000 piastres et ma gratitude personnelle.
+}
+Beliz_Mayor_31 {
+Merci, monsieur le gouverneur ! J'accepte cette récompense. Au revoir.
+}
+Beliz_Mayor_32 {
+Capitaine, on dit que vous avez réussi à attraper la sorcière, la Joyeuse Carla ! Est-ce vraiment vrai ?! Incroyable !!
+}

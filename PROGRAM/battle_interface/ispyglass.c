@@ -306,10 +306,8 @@ void FillISpyGlassParameters()
 	// AlexBlade - Если перейдете на текстуры CL (4096*512), используйте этот расчет ->
 	// objISpyGlass.lens.pos = (nHCenter-sti(showWindow.bottom)*4)+","+(sti(showWindow.top)-1)+","+(nHCenter+sti(showWindow.bottom)*4)+","+showWindow.bottom;
 
-	float fBaseScale = stf(showWindow.width) / 1310.0 / 1.2 * fHtRatio;
-
 	int iIconScale, iTmpOffset, iVoffset, iHoffset;
-	int iFrameLeft, iFrameTop, iFrameRight, iFrameBottom;
+	int iFrameLeft, iFrameTop, iFrameRight, iFrameBottom, iFrameCenterX, iFrameCenterY;
 	int iIconLeft, iIconTop, iIconRight, iIconBottom;
 	int iTextH, iTextV;
 
@@ -322,100 +320,96 @@ void FillISpyGlassParameters()
 	//LEFT, TOP, RIGHT, BOTTOM
 	//ship portrait-->
 	//frame
-	iIconScale = 100; //Размер рамки корабля // 114 new ui
-	iFrameTop = sti(showWindow.top) + RecalculateVIconScaled(15, fHtRatio); //отступ сверху
-	iFrameBottom = iFrameTop + RecalculateVIconScaled(iIconScale, fHtRatio);
-	iFrameLeft = sti(showWindow.left) + RecalculateHIconScaled(10, fHtRatio); //отступ слева
-	iFrameRight = iFrameLeft + RecalculateHIconScaled(iIconScale, fHtRatio);
+	iIconScale = RecalculateVIconScaled(178, fHtRatio); //Размер рамки корабля
+	iFrameLeft = sti(showWindow.left) + RecalculateHIconScaled(16, fHtRatio); //отступ слева
+	iFrameTop = sti(showWindow.top) + RecalculateVIconScaled(23, fHtRatio); //отступ сверху
+	iFrameRight = iFrameLeft + iIconScale;
+	iFrameBottom = iFrameTop + iIconScale;
+	iFrameCenterX = makeint((iFrameRight + iFrameLeft) * 0.5);
+	iFrameCenterY = makeint((iFrameBottom + iFrameTop) * 0.5);
 
-	objISpyGlass.shipsign.back.texture = "battle_interface\spyglass\ShipBackIcon_Spyglass.tga";
+	objISpyGlass.shipsign.back.texture = "battle_interface\ShipBackIcon.tga";
 	objISpyGlass.shipsign.back.pos = iFrameLeft +"," +iFrameTop +"," +iFrameRight +"," +iFrameBottom;
 
-	iVoffset = RecalculateVIconScaled(26, fHtRatio); //Скукожить портрет корабля по вертикали // 24 new ui
-	iHoffset = RecalculateHIconScaled(20, fHtRatio); //Скукожить портрет корабля по горизонтали // 18 new ui
-	iTmpOffset = RecalculateVIconScaled(4, fHtRatio); //Сместить портрет корабля вверх // 10 new ui
-	objISpyGlass.shipsign.ship.pos = its(iFrameLeft + iHoffset) +"," +its(iFrameTop - iTmpOffset + iVoffset) + "," +its(iFrameRight - iHoffset)+"," +its(iFrameBottom - iTmpOffset - iVoffset);
-	objISpyGlass.shipsign.ship.uv = "0,0,0.0,1.0";
+	iIconScale = makeint(0.685 * iIconScale * 0.5); //0.5 Размер портрета корабля
+	iVoffset = RecalculateVIconScaled(-16, fHtRatio); //Сместить портрет корабля по вертикали
+	iHoffset = RecalculateHIconScaled(1, fHtRatio);
+	objISpyGlass.shipsign.ship.pos = its(iFrameCenterX - iIconScale + iHoffset) +"," +its(iFrameCenterY - iIconScale + iVoffset) + "," +
+									its(iFrameCenterX + iIconScale + iHoffset)+"," +its(iFrameCenterY + iIconScale + iVoffset);
+	objISpyGlass.shipsign.ship.uv = "0,0,1.0,1.0";
 
 	//Надписи корабля
 	//Надписей возле портретов корабля и капитана может быть 2 - эта штука их отцентрует
-	objISpyGlass.frameTextVoffset = RecalculateVIconScaled(11, fHtRatio);
+	objISpyGlass.frameTextVoffset = RecalculateVIconScaled(17, fHtRatio);
 
-	iHoffset = iFrameRight + RecalculateHIconScaled(7, fHtRatio); // Отступ типа корабля от рамки вправо
-	iVoffset = iFrameBottom - (iFrameBottom - iFrameTop) * 0.5 - RecalculateVIconScaled(20, fHtRatio); //найдём середину рамки по вертикали
+	iHoffset = iFrameRight + RecalculateHIconScaled(11, fHtRatio); // Отступ типа корабля от рамки вправо
+	iVoffset = iFrameBottom - (iFrameBottom - iFrameTop) * 0.5 - RecalculateVIconScaled(31, fHtRatio); //найдём середину рамки по вертикали
 	objISpyGlass.text.shipType.font = sTextFont;
 	objISpyGlass.text.shipType.pos = iHoffset +"," +iVoffset;
 	objISpyGlass.text.shipType.align = "left";
 	objISpyGlass.text.shipType.color = iTextColor;
-	objISpyGlass.text.shipType.scale = fBaseScale * 1.5;
+	objISpyGlass.text.shipType.scale = fHtRatio * 1.5;
 
 	objISpyGlass.text.shipType.font = sTextFont;
 	objISpyGlass.text.shipMode.pos = iHoffset +"," +iVoffset;
 	objISpyGlass.text.shipMode.align = "left";
 	objISpyGlass.text.shipMode.color = iTextColor;
-	objISpyGlass.text.shipMode.scale = fBaseScale * 1.2;
+	objISpyGlass.text.shipMode.scale = fHtRatio * 1.2;
 
-	iHoffset = iFrameRight * 0.5 + iFrameLeft - RecalculateHIconScaled(3, fHtRatio); //Смещение имени корабля и команды относительно центра рамки
+	iHoffset = iFrameRight * 0.5 + iFrameLeft - RecalculateHIconScaled(5, fHtRatio); //Смещение имени корабля и команды относительно центра рамки
 	objISpyGlass.text.shipName.font = sTextFont;
-	//objISpyGlass.text.shipName.pos = iHoffset +"," +its(iFrameBottom - RecalculateVIconScaled(36, fHtRatio)); //uew ui
-	objISpyGlass.text.shipName.pos = iHoffset +"," +its(iFrameBottom - RecalculateVIconScaled(0, fHtRatio));
+	objISpyGlass.text.shipName.pos = iHoffset +"," +its(iFrameBottom - RecalculateVIconScaled(55, fHtRatio));
 	objISpyGlass.text.shipName.align = "center";
 	objISpyGlass.text.shipName.color = iTextColor;
-	objISpyGlass.text.shipName.scale = fBaseScale * 1.5; //1.2  //uew ui
+	objISpyGlass.text.shipName.scale = fHtRatio * 1.2;
 
 	objISpyGlass.text.crew.font = sTextFont;
-	//objISpyGlass.text.crew.pos = iHoffset +"," +its(iFrameBottom - RecalculateVIconScaled(21, fHtRatio));
-	objISpyGlass.text.crew.pos = iHoffset +"," +its(iFrameBottom - RecalculateVIconScaled(24, fHtRatio));
+	objISpyGlass.text.crew.pos = iHoffset +"," +its(iFrameBottom - RecalculateVIconScaled(33, fHtRatio));
 	objISpyGlass.text.crew.align = "center";
 	objISpyGlass.text.crew.color = iTextColor;
-	objISpyGlass.text.crew.scale = fBaseScale * 1.5;
+	objISpyGlass.text.crew.scale = fHtRatio * 1.5;
 
 	// hp sp bar
-/* //new ui
-	iIconScale = RecalculateHIconScaled(36, fHtRatio); //ширина полосок хп и паруса
-	iIconTop = iFrameTop + RecalculateVIconScaled(6, fHtRatio); //Отступ полосок от рамки сверху
-	iIconBottom = iFrameBottom - RecalculateVIconScaled(35, fHtRatio); //Отступ полосок от рамки снизу
-	iIconLeft = iFrameLeft + RecalculateHIconScaled(5, fHtRatio); //Отступ полоски хп от левого края рамки корабля
-	iIconRight = iFrameRight - RecalculateHIconScaled(5, fHtRatio);  //Отступ полоски парусов от правого края рамки корабля
-*/
+	iIconScale = RecalculateHIconScaled(76, fHtRatio); //ширина полосок хп и паруса
+	iIconTop = iFrameTop + RecalculateVIconScaled(11, fHtRatio); //Отступ полосок от рамки сверху
+	iIconBottom = iFrameBottom - RecalculateVIconScaled(55, fHtRatio); //Отступ полосок от рамки снизу
+	iIconLeft = iFrameLeft + RecalculateHIconScaled(3, fHtRatio); //Отступ полоски хп от левого края рамки корабля
+	iIconRight = iFrameRight - RecalculateHIconScaled(3, fHtRatio);  //Отступ полоски парусов от правого края рамки корабля
 
-	iIconScale = RecalculateHIconScaled(55, fHtRatio); //ширина полосок хп и паруса
-	iIconTop = iFrameTop + RecalculateVIconScaled(10, fHtRatio); //Отступ полосок от рамки сверху
-	iIconBottom = iFrameBottom - RecalculateVIconScaled(0, fHtRatio); //Отступ полосок от рамки снизу
-	iIconLeft = iFrameLeft + RecalculateHIconScaled(0, fHtRatio); //Отступ полоски хп от левого края рамки корабля
-	iIconRight = iFrameRight - RecalculateHIconScaled(0, fHtRatio);  //Отступ полоски парусов от правого края рамки корабля
-
-	objISpyGlass.shipsign.hp.texture = "battle_interface\spyglass\ShipState_Spyglass.tga";
+	objISpyGlass.shipsign.hp.texture = "battle_interface\ShipState.tga";
 	objISpyGlass.shipsign.hp.pos = iIconLeft +"," +iIconTop +"," +its(iIconLeft + iIconScale) +"," +iIconBottom;
-	objISpyGlass.shipsign.hp.uv = "0.0,0.0,0.5,1.0";
-	objISpyGlass.shipsign.sp.texture = "battle_interface\spyglass\ShipState_Spyglass.tga";
+	objISpyGlass.shipsign.hp.uv = "0.0,0.0625,0.5,0.6875";
+	objISpyGlass.shipsign.sp.texture = "battle_interface\ShipState.tga";
 	objISpyGlass.shipsign.sp.pos = its(iIconRight - iIconScale) +"," +iIconTop +"," +iIconRight +"," +iIconBottom;
-	objISpyGlass.shipsign.sp.uv = "0.5,0.0,1.0,1.0";
+	objISpyGlass.shipsign.sp.uv = "0.5,0.0625,1.0,0.6875";
 
 	// shipclass
-	objISpyGlass.shipsign.class.texture = "battle_interface\spyglass\ShipClass_Spyglass.tga";
-	//objISpyGlass.shipsign.class.pos = iFrameLeft +"," +iFrameTop + "," +iFrameRight  +"," +its(iFrameTop + RecalculateVIconScaled(16, fHtRatio)); //new ui
-	objISpyGlass.shipsign.class.pos = iFrameLeft +"," +its(iFrameTop + RecalculateVIconScaled(3, fHtRatio)) + "," +iFrameRight  +"," +its(iFrameTop + RecalculateVIconScaled(20, fHtRatio));
+	iIconScale = RecalculateHIconScaled(100, fHtRatio); // 0.5 ширины полоски класса
+	iIconTop = iFrameTop - RecalculateVIconScaled(9, fHtRatio);
+	iIconBottom = iIconTop + RecalculateVIconScaled(50, fHtRatio);
+	iTmpOffset = iFrameCenterX + RecalculateHIconScaled(1, fHtRatio);
+	objISpyGlass.shipsign.class.texture = "battle_interface\ShipClass.tga";
+	objISpyGlass.shipsign.class.pos = its(iTmpOffset - iIconScale) +"," +iIconTop + "," +its(iTmpOffset + iIconScale) +"," +iIconBottom;
 
-	objISpyGlass.shipClassUVarray.uv0 = "0.0,0.0,1.0,0.125";
-	objISpyGlass.shipClassUVarray.uv1 = "0.0,0.125,1.0,0.25";
-	objISpyGlass.shipClassUVarray.uv2 = "0.0,0.25,1.0,0.375";
-	objISpyGlass.shipClassUVarray.uv3 = "0.0,0.375,1.0,0.5";
-	objISpyGlass.shipClassUVarray.uv4 = "0.0,0.5,1.0,0.625";
-	objISpyGlass.shipClassUVarray.uv5 = "0.0,0.625,1.0,0.75";
+	objISpyGlass.shipClassUVarray.uv0 = "0.125,0.0,0.25,1.0";
+	objISpyGlass.shipClassUVarray.uv1 = "0.25,0.0,0.375,1.0";
+	objISpyGlass.shipClassUVarray.uv2 = "0.375,0.0,0.5,1.0";
+	objISpyGlass.shipClassUVarray.uv3 = "0.5,0.0,0.625,1.0";
+	objISpyGlass.shipClassUVarray.uv4 = "0.625,0.0,0.75,1.0";
+	objISpyGlass.shipClassUVarray.uv5 = "0.75,0.0,0.875,1.0";
 	//<-- ship portrait
 
-	iIconScale = 36; //Размер значков //42 new ui
+	iIconScale = 66; //Размер значков
 	iVoffset = RecalculateVIconScaled(iIconScale, fHtRatio);
 	iHoffset = RecalculateHIconScaled(iIconScale, fHtRatio);
-	iIconTop = iFrameBottom + RecalculateVIconScaled(27, fHtRatio); //отступ первого значка от рамки корабля //10 new ui
-	iIconLeft = iFrameRight * 0.5 + iFrameLeft - iHoffset * 0.5 - RecalculateHIconScaled(4, fHtRatio); //расположить левый край значка относительно центра рамки
+	iIconTop = iFrameBottom + RecalculateVIconScaled(10, fHtRatio); //отступ первого значка от рамки корабля
+	iIconLeft = makeint(iFrameCenterX - iHoffset * 0.5) + RecalculateHIconScaled(2, fHtRatio); //расположить левый край значка относительно центра рамки
 	iIconRight = iIconLeft + iHoffset;
 	iIconBottom = iIconTop + iVoffset;
 
-	iTextH = iIconRight + RecalculateHIconScaled(10, fHtRatio); //Отступ текста от значка
-	iTextV = iVoffset * 0.5 + RecalculateVIconScaled(10, fHtRatio); //отцентровать вертикальное положение текста по значку
-	iTmpOffset = RecalculateVIconScaled(10, fHtRatio); //расстояние между значками //15 new ui
+	iTextH = iIconRight + RecalculateHIconScaled(16, fHtRatio); //Отступ текста от значка
+	iTextV = iVoffset * 0.5 + RecalculateVIconScaled(15, fHtRatio); //отцентровать вертикальное положение текста по значку
+	iTmpOffset = RecalculateVIconScaled(23, fHtRatio); //расстояние между значками
 
 	//Это массив позиций значков, будет нужно для ребаланса труб
 	// и чтобы небыло пустых пространств, когда смотрим на форт, у форта нет состояния парусов и трюма
@@ -442,7 +436,7 @@ void FillISpyGlassParameters()
 	//далее позиция для текста применится относительно позиции значка
 
 	sAlign = "left";
-	sIconTexture = "battle_interface\spyglass\Icons_Spyglass.tga";
+	sIconTexture = "battle_interface\LIST_ICON2.tga";
 	//паруса, скорость
 	objISpyGlass.info.sailState.texture = sIconTexture;
 	//objISpyGlass.info.sailState.pos = objISpyGlass.iconPositionArray.p0;
@@ -456,7 +450,7 @@ void FillISpyGlassParameters()
 	objISpyGlass.text.speed.font = sTextFont;
 	objISpyGlass.text.speed.align = sAlign;
 	objISpyGlass.text.speed.color = iTextColor;
-	objISpyGlass.text.speed.scale = fBaseScale * fIconsFontScale;
+	objISpyGlass.text.speed.scale = fHtRatio * fIconsFontScale;
 
 	//distance
 	objISpyGlass.info.distance.texture = sIconTexture;
@@ -466,7 +460,7 @@ void FillISpyGlassParameters()
 	objISpyGlass.text.distance.font = sTextFont;
 	objISpyGlass.text.distance.align = sAlign;
 	objISpyGlass.text.distance.color = iTextColor;
-	objISpyGlass.text.distance.scale = fBaseScale * fIconsFontScale;
+	objISpyGlass.text.distance.scale = fHtRatio * fIconsFontScale;
 
 	//Cannons
 	//так как у картинки орудий возможны две надписи - эта штука орпределяет растояние между ними
@@ -479,12 +473,12 @@ void FillISpyGlassParameters()
 	objISpyGlass.text.cannonsType.font = sTextFont;
 	objISpyGlass.text.cannonsType.align = sAlign;
 	objISpyGlass.text.cannonsType.color = iTextColor;
-	objISpyGlass.text.cannonsType.scale = fBaseScale * fIconsFontScale;
+	objISpyGlass.text.cannonsType.scale = fHtRatio * fIconsFontScale;
 
 	objISpyGlass.text.cannonsQty.font = sTextFont;
 	objISpyGlass.text.cannonsQty.align = sAlign;
 	objISpyGlass.text.cannonsQty.color = iTextColor;
-	objISpyGlass.text.cannonsQty.scale = fBaseScale * fIconsFontScale;
+	objISpyGlass.text.cannonsQty.scale = fHtRatio * fIconsFontScale;
 
 	//Hold
 	objISpyGlass.info.hold.texture = sIconTexture;
@@ -494,7 +488,7 @@ void FillISpyGlassParameters()
 	objISpyGlass.text.hold.font = sTextFont;
 	objISpyGlass.text.hold.align = sAlign;
 	objISpyGlass.text.hold.color = iTextColor;
-	objISpyGlass.text.hold.scale = fBaseScale * fIconsFontScale;
+	objISpyGlass.text.hold.scale = fHtRatio * fIconsFontScale;
 
 	//Charge
 	objISpyGlass.info.charge.texture = sIconTexture;
@@ -509,10 +503,10 @@ void FillISpyGlassParameters()
 	objISpyGlass.text.chargeType.font = sTextFont;
 	objISpyGlass.text.chargeType.align = sAlign;
 	objISpyGlass.text.chargeType.color = iTextColor;
-	objISpyGlass.text.chargeType.scale = fBaseScale * fIconsFontScale;
+	objISpyGlass.text.chargeType.scale = fHtRatio * fIconsFontScale;
 
 	//Nation
-	iIconScale = 220; //256 new ui
+	iIconScale = 400;
 	iIconLeft = iFrameLeft + RecalculateHIconScaled(0, fHtRatio); //Отступ флага слева
 	iIconRight = RecalculateHIconScaled(iIconScale, fHtRatio);
 	iIconBottom = sti(showWindow.bottom) + RecalculateHIconScaled(iIconScale, fHtRatio) / 6;
@@ -549,49 +543,49 @@ void FillISpyGlassParameters()
 	//Captain -->
 	//LEFT, TOP, RIGHT, BOTTOM
 	//frame
-	iIconScale = 100; //Размер рамки капитана //112 new ui
-	iFrameTop = sti(showWindow.top) + RecalculateVIconScaled(12, fHtRatio); //отступ сверху
+	iIconScale = 175; //Размер рамки капитана
+	iFrameTop = sti(showWindow.top) + RecalculateVIconScaled(19, fHtRatio); //отступ сверху
 	iFrameBottom = iFrameTop + RecalculateVIconScaled(iIconScale, fHtRatio);
-	iFrameRight = sti(showWindow.right) - RecalculateHIconScaled(10, fHtRatio); //отступ слева
+	iFrameRight = sti(showWindow.right) - RecalculateHIconScaled(16, fHtRatio); //отступ слева
 	iFrameLeft = iFrameRight - RecalculateHIconScaled(iIconScale, fHtRatio);
 	objISpyGlass.captain.back.pos = iFrameLeft +"," +iFrameTop +"," +iFrameRight +"," +iFrameBottom;
 	//face
-	iVoffset = RecalculateVIconScaled(8, fHtRatio); // Mask size
-	iHoffset = RecalculateHIconScaled(8, fHtRatio);
+	iVoffset = RecalculateVIconScaled(13, fHtRatio); // Mask size
+	iHoffset = RecalculateHIconScaled(13, fHtRatio);
 	objISpyGlass.captain.faceMask.pos = its(iFrameLeft + iHoffset) +"," +its(iFrameTop + iVoffset) +"," +its(iFrameRight - iHoffset) +"," +its(iFrameBottom - iVoffset);
 	objISpyGlass.captain.faceMask.texture = "battle_interface\CharFaceMask.tga";
 	objISpyGlass.captain.faceMask.uv = "0,0,1.0,1.0";
 
-	iVoffset = RecalculateVIconScaled(17, fHtRatio); //Скукожить портрет по вертикали
-	iHoffset = RecalculateHIconScaled(17, fHtRatio); //Скукожить портрет по горизонтали
+	iVoffset = RecalculateVIconScaled(27, fHtRatio); //Скукожить портрет по вертикали
+	iHoffset = RecalculateHIconScaled(27, fHtRatio); //Скукожить портрет по горизонтали
 	objISpyGlass.captain.face.pos = its(iFrameLeft + iHoffset) +"," +its(iFrameTop + iVoffset) +"," +its(iFrameRight - iHoffset) +"," +its(iFrameBottom - iVoffset);
 
-	iVoffset = iFrameBottom - (iFrameBottom - iFrameTop) * 0.5 - RecalculateVIconScaled(24, fHtRatio); //найти центр рамки по вертикали
-	objISpyGlass.captext.capname.pos = its(iFrameLeft - RecalculateHIconScaled(7, fHtRatio)) +"," +its(iFrameTop + iVoffset);
+	iVoffset = iFrameBottom - (iFrameBottom - iFrameTop) * 0.5 - RecalculateVIconScaled(38, fHtRatio); //найти центр рамки по вертикали
+	objISpyGlass.captext.capname.pos = its(iFrameLeft - RecalculateHIconScaled(11, fHtRatio)) +"," +its(iFrameTop + iVoffset);
 	objISpyGlass.captext.capname.font = sTextFont;
 	objISpyGlass.captext.capname.align = "right";
 	objISpyGlass.captext.capname.color = iTextColor;
-	objISpyGlass.captext.capname.scale = fBaseScale * 1.5;
+	objISpyGlass.captext.capname.scale = fHtRatio * 1.5;
 
 	objISpyGlass.captext.shoot.pos = objISpyGlass.captext.capname.pos;
 	objISpyGlass.captext.shoot.font = sTextFont;
 	objISpyGlass.captext.shoot.align = "right";
 	objISpyGlass.captext.shoot.color = iTextColor;
-	objISpyGlass.captext.shoot.scale = fBaseScale * 1.2;
+	objISpyGlass.captext.shoot.scale = fHtRatio * 1.2;
 
 	sAlign = "right";
 	sIconTexture =  "interfaces\icons_spec.tga";
-	iIconScale = 42; //Размер значков перков
+	iIconScale = 66; //Размер значков перков
 	iVoffset = RecalculateVIconScaled(iIconScale, fHtRatio);
 	iHoffset = RecalculateHIconScaled(iIconScale, fHtRatio);
-	iIconTop = iFrameBottom + RecalculateVIconScaled(10, fHtRatio); //отступ первого значка от рамки капитана
-	iIconLeft = iFrameLeft - (iFrameLeft - iFrameRight) * 0.5 - iHoffset * 0.5 + RecalculateHIconScaled(2, fHtRatio); //расположить левый край значка относительно центра рамки
+	iIconTop = iFrameBottom + RecalculateVIconScaled(16, fHtRatio); //отступ первого значка от рамки капитана
+	iIconLeft = iFrameLeft - (iFrameLeft - iFrameRight) * 0.5 - iHoffset * 0.5 + RecalculateHIconScaled(3, fHtRatio); //расположить левый край значка относительно центра рамки
 	iIconRight = iIconLeft + iHoffset;
 	iIconBottom = iIconTop + iVoffset;
 
-	iTextH = iIconleft - RecalculateHIconScaled(10, fHtRatio); //Отступ текста от значка
-	iTextV = iVoffset * 0.5 + RecalculateVIconScaled(10, fHtRatio); //отцентровать вертикальное положение текста по значку
-	iTmpOffset = RecalculateVIconScaled(5, fHtRatio); //расстояние между значками
+	iTextH = iIconleft - RecalculateHIconScaled(16, fHtRatio); //Отступ текста от значка
+	iTextV = iVoffset * 0.5 + RecalculateVIconScaled(16, fHtRatio); //отцентровать вертикальное положение текста по значку
+	iTmpOffset = RecalculateVIconScaled(8, fHtRatio); //расстояние между значками
 
 	//navigation
 	objISpyGlass.captain.navigation.pos = iIconLeft +"," +iIconTop + "," +iIconRight +"," +iIconBottom;
@@ -605,7 +599,7 @@ void FillISpyGlassParameters()
 	objISpyGlass.captext.navigation.font = sTextFont;
 	objISpyGlass.captext.navigation.align = sAlign;
 	objISpyGlass.captext.navigation.color = iTextColor;
-	objISpyGlass.captext.navigation.scale = fBaseScale * fIconsFontScale;
+	objISpyGlass.captext.navigation.scale = fHtRatio * fIconsFontScale;
 
 	//accuracy // орудия
 	objISpyGlass.captain.accuracy.pos = iIconLeft +"," +iIconTop + "," +iIconRight +"," +iIconBottom;
@@ -619,7 +613,7 @@ void FillISpyGlassParameters()
 	objISpyGlass.captext.accuracy.font = sTextFont;
 	objISpyGlass.captext.accuracy.align = sAlign;
 	objISpyGlass.captext.accuracy.color = iTextColor;
-	objISpyGlass.captext.accuracy.scale = fBaseScale * fIconsFontScale;
+	objISpyGlass.captext.accuracy.scale = fHtRatio * fIconsFontScale;
 
 	//Cannons
 	objISpyGlass.captain.cannon.pos = iIconLeft +"," +iIconTop + "," +iIconRight +"," +iIconBottom;
@@ -633,7 +627,7 @@ void FillISpyGlassParameters()
 	objISpyGlass.captext.cannon.font = sTextFont;
 	objISpyGlass.captext.cannon.align = sAlign;
 	objISpyGlass.captext.cannon.color = iTextColor;
-	objISpyGlass.captext.cannon.scale = fBaseScale * fIconsFontScale;
+	objISpyGlass.captext.cannon.scale = fHtRatio * fIconsFontScale;
 
 	//board
 	objISpyGlass.captain.boarding.pos = iIconLeft +"," +iIconTop + "," +iIconRight +"," +iIconBottom;
@@ -647,7 +641,7 @@ void FillISpyGlassParameters()
 	objISpyGlass.captext.boarding.font = sTextFont;
 	objISpyGlass.captext.boarding.align = sAlign;
 	objISpyGlass.captext.boarding.color = iTextColor;
-	objISpyGlass.captext.boarding.scale = fBaseScale * fIconsFontScale;
+	objISpyGlass.captext.boarding.scale = fHtRatio * fIconsFontScale;
 
 	//defence
 	objISpyGlass.captain.defence.pos = iIconLeft +"," +iIconTop + "," +iIconRight +"," +iIconBottom;
@@ -660,7 +654,7 @@ void FillISpyGlassParameters()
 
 	objISpyGlass.captext.defence.align = sAlign;
 	objISpyGlass.captext.defence.color = iTextColor;
-	objISpyGlass.captext.defence.scale = fBaseScale * fIconsFontScale;
+	objISpyGlass.captext.defence.scale = fHtRatio * fIconsFontScale;
 	// <-- Captain
 }
 

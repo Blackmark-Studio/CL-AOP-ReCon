@@ -149,9 +149,8 @@ void WorldSituationsUpdate()
 		
 		case 10:
 			DailyStoreMoneyUpdate();
-			DeleteAttributeEx(&TEV, "SkladManIsDead,ArtOfDeals");
-			DeleteAttribute(&TEV, "BlindGuards");
-			if (GetEventPastTime("CreateSecretFortNPC", "day") >= 7 && !StrHasStr(pchar.location, "Secret_Fort,Secret_Fort_Tavern,Secret_Fort", true))
+			DeleteAttributeEx(&TEV, "SkladManIsDead,ArtOfDeals,BlindGuards");
+			if (CheckAttribute(&TEV, "SecretFortUnlocked") && GetEventPastTime("CreateSecretFortNPC", "day") > (7 + rand(3)) && !StrStartsWith(pchar.location, "Secret_Fort"))
 				CreateSecretFortNPC();
 		break;
 	}

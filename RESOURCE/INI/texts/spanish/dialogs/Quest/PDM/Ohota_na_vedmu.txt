@@ -1,0 +1,241 @@
+Ohota_na_vedmu_1_m {
+Saludos, señor. Me llamo Bartholomew Ulster. Por cierto, ¿no habéis visto a Carla, la chica de la taberna? Ha desaparecido...
+}
+Ohota_na_vedmu_1_f {
+Saludos, señora. Me llamo Bartholomew Ulster. Por cierto, ¿no habéis visto a Carla, la chica de la taberna? Ha desaparecido...
+}
+Ohota_na_vedmu_2 {
+No, no sé quién es, y mucho menos dónde está. Pero tenéis acento inglés – decidme, ¿cómo llegasteis aquí?
+}
+Ohota_na_vedmu_3 {
+No lo sé. Quizá deberíais buscar en la taberna – sería lógico. Pero yo tengo otras cosas que hacer ahora.
+}
+Ohota_na_vedmu_4 {
+Lo siento, pero no puedo hablar con vos ahora mismo. ¡Necesito encontrar a Carla!
+}
+Ohota_na_vedmu_5 {
+En ese caso, adiós.
+}
+Ohota_na_vedmu_6_m {
+¿Qué buscas aquí, guapo? ¿Placeres, supongo? Me llamo Carla, o Carla la Alegre, como me llama la mayoría de los hombres en esta ciudad. ¿Y cómo te llamas, señor?
+}
+Ohota_na_vedmu_6_f {
+¿Qué buscas aquí, guapa? ¿Placeres, supongo? Me llamo Carla, o Carla la Alegre, como me llama la mayoría de los hombres en esta ciudad. ¿Y cómo te llamas, señor?
+}
+Ohota_na_vedmu_7 {
+Puedes llamarme @<pchar>, querida. Pero creo que hay otra persona en esta ciudad que busca placeres. Lo vi en la plaza – parece que no puede esperar para conocerte.
+}
+Ohota_na_vedmu_8_m {
+¿Qué? ¿Bartholomew? Pero pensé que él... Ah, da igual... ¿Sabes qué, guapo? Acabo de recordar que estoy un poco ocupada hoy. Pero haremos todo lo que queramos en otra ocasión – cuando esté más libre. Por cierto, tienes unas piernas muy bonitas.
+}
+Ohota_na_vedmu_8_f {
+¿Qué? ¿Bartholomew? Pero pensé que él... Ah, da igual... ¿Sabes qué, guapa? Acabo de recordar que estoy un poco ocupada hoy. Pero haremos todo lo que queramos en otra ocasión – cuando esté más libre. Por cierto, tienes unas piernas muy bonitas.
+}
+Ohota_na_vedmu_9 {
+Eh... Gracias. Pasaré a verte más tarde.
+}
+Ohota_na_vedmu_10 {
+Lo siento, @<GetAddress_Form>, pero tengo orden de no dejar entrar a nadie.
+}
+Ohota_na_vedmu_11 {
+Como vos digáis, oficial.
+}
+Ohota_na_vedmu_12 {
+@<UpperFirst>, será mejor que habléis con el gobernador.
+}
+Ohota_na_vedmu_13 {
+Gracias, así lo haré.
+}
+Ohota_na_vedmu_14 {
+¿Quién sois? ¿Qué hacéis aquí? ¡Explicaos inmediatamente!
+}
+Ohota_na_vedmu_15_m {
+¡Señor Gobernador! Me llamo @<GetFullName>. Perdonad que haya entrado sin permiso, pero noté una actividad sospechosa en vuestra ciudad y decidí satisfacer mi curiosidad. En una de las habitaciones de vuestra residencia, encontré un cadáver...
+}
+Ohota_na_vedmu_15_f {
+¡Señor Gobernador! Me llamo @<GetFullName>. Perdonad que haya entrado sin permiso, pero noté una actividad sospechosa en vuestra ciudad y decidí satisfacer mi curiosidad. En una de las habitaciones de vuestra residencia, encontré un cadáver...
+}
+Ohota_na_vedmu_16 {
+Hum... Cosas extrañas están sucediendo aquí, capitán. Mi brazo derecho, mi secretario, fue encontrado muerto en su habitación. Alguien lo estranguló en su propia cama, sus manos estaban apretadas alrededor de su garganta y sus ojos estaban desorbitados. Pero no hay marcas de cuerda ni de dedos en su cuello. No sé qué significa todo esto. Es una terrible tragedia.
+}
+Ohota_na_vedmu_17 {
+Qué historia más extraña. Pero, ¿cómo es que un inglés se convirtió en vuestro secretario?
+}
+Ohota_na_vedmu_18 {
+Guardias, dejadnos solos. Y ordenad a alguien que se ocupe del cuerpo de Bartholomew.
+}
+Ohota_na_vedmu_19 {
+El gobierno inglés lo exilió. Presentaron falsas acusaciones contra él. Era un hombre muy noble, de carácter excelente. Nos conocimos hace quince años en Europa. Entonces era un joven diplomático, nos veíamos en la corte. Uno de mis agentes se topó con él en Port Royal. Lo echaron a la calle después de acusarlo de malversación. Despojado de su título, aceptó convertirse en mi secretario.
+}
+Ohota_na_vedmu_20 {
+Creo que lo encontré. ¿Bartholomew, decís? Nos encontramos en la plaza; buscaba a una chica de la taberna llamada Carla.
+}
+Ohota_na_vedmu_21 {
+¿Una chica de taberna? Eso es muy extraño. Era un hombre noble, como he dicho, no podía tener nada que ver con una mujer de esa reputación.
+}
+Ohota_na_vedmu_22 {
+Señor Gobernador, ¿qué opináis de su muerte? ¿Quién pudo haberlo matado?
+}
+Ohota_na_vedmu_23 {
+Son intrigas de los enemigos de la corona española, supongo. Pero no puedo nombrar a nadie en concreto...
+}
+Ohota_na_vedmu_24 {
+Espero, señor Gobernador, que este enigma pueda resolverse. Pero tengo asuntos importantes, y si me lo permitís, me iré...
+}
+Ohota_na_vedmu_25 {
+Esperad... En realidad, sí, @<pchar>. Dijisteis que el pobre Bartholomew buscaba a una chica de taberna llamada Carla, ¿no? ¿No la traeríais ante mí? Podría enviar a buscarla, pero eso generaría una ola de rumores. Quizá podríais resolver este asunto con más discreción. Tomaré la investigación de este asesinato bajo mi control personal.
+}
+Ohota_na_vedmu_26 {
+Está bien, señor Gobernador, si la encuentro, la traeré aquí.
+}
+Ohota_na_vedmu_27 {
+Lo siento, compadezco vuestra pérdida, pero este trabajo no es para mí.
+}
+Ohota_na_vedmu_28 {
+Qué lástima, entonces no os entretengo más.
+}
+Ohota_na_vedmu_29 {
+¡Adiós!
+}
+Ohota_na_vedmu_30 {
+Os ruego que abandonéis mi despacho, tengo mucho trabajo.
+}
+Ohota_na_vedmu_31 {
+Ya me voy.
+}
+Ohota_na_vedmu_32_m {
+¿Quién eres tú, muchacho? ¿Y qué diablos quieres?
+}
+Ohota_na_vedmu_32_f {
+¿Quién eres tú, muchacha? ¿Y qué diablos quieres?
+}
+Ohota_na_vedmu_33_m {
+Pensé que eras un comerciante que quizá necesitara un escolta... Pero parece que me equivoqué.
+}
+Ohota_na_vedmu_33_f {
+Pensé que eras un comerciante que quizá necesitara un escolta... Pero parece que me equivoqué.
+}
+Ohota_na_vedmu_34_m {
+Sí, amigo, te equivocaste. Soy Silino Sev, un contramaestre desempleado. Ayer, un cretino sin cerebro me ofreció trabajar como leñador. ¿Sabes lo que le pasó?
+}
+Ohota_na_vedmu_34_f {
+Sí, querida, te equivocaste. Soy Silino Sev, un contramaestre desempleado. Ayer, un cretino sin cerebro me ofreció trabajar como leñador. ¿Sabes lo que le pasó?
+}
+Ohota_na_vedmu_35 {
+Ya veo... Pero sentémonos a tomar un trago de ron y me cuentas tu historia.
+}
+Ohota_na_vedmu_36 {
+Te contaré lo que me pasó – pero no es un cuento de hadas interesante para niños. Todo sucedió por culpa de esa maldita bruja que el capitán recogió en Belice. Te digo, si no se hubiera involucrado con esa bruja, estaría vivo ahora. Pero siempre fue demasiado terco. Podía discutir con el mismísimo diablo, nuestro buen viejo Miguel.
+Pero después de que esa mujer subiera a bordo, cambió. Sí, cambió. Se secó como un arenque. Le dijimos que no se llevara a esa mujer – entre los marineros se dice que una mujer a bordo trae mala suerte... cuando hay una mujer a bordo, espera problemas.
+Y todo por culpa de esa Carla...
+}
+Ohota_na_vedmu_37 {
+¡Espera! ¿Dijiste que se llama Carla? El gobernador de Belice está buscando a esta mujer. ¡Cree que podría estar implicada en el asesinato!
+}
+Ohota_na_vedmu_38 {
+Sí, el gobernador tiene razón. Esa maldita bruja mató a nuestro capitán. Estaba más muerto que un bacalao. Nuestro barco se dirigía a Santo Domingo, pero nuestro capitán enfermó. Ordenó cambiar el rumbo y dirigirse a la colonia más cercana – Santiago. Acabábamos de entrar en el puerto cuando lo encontramos muerto en su camarote. Nos apresuramos a buscar a la maldita bruja, pero había desaparecido misteriosamente. Después, retomamos el rumbo a Santo Domingo. Y ahora soy un contramaestre desempleado. Ese idiota del primer oficial cumplió la última voluntad del capitán al pie de la letra, vendió nuestro cacharro y donó todo el dinero a la Iglesia.
+}
+Ohota_na_vedmu_39 {
+¡Qué criatura infernal es esa mujer! Ya ha destruido a dos personas. Hay que detenerla.
+}
+Ohota_na_vedmu_40 {
+¡Buena suerte, capitán, en su búsqueda!
+}
+Ohota_na_vedmu_41 {
+La encontraré. ¡Adiós!
+}
+Ohota_na_vedmu_42 {
+¡Buena suerte, capitán, en su búsqueda!
+}
+Ohota_na_vedmu_43 {
+La encontraré. ¡Adiós!
+}
+Ohota_na_vedmu_44 {
+¡Oh, querida! ¿Qué haces esta noche? ¿O ahora mismo?
+}
+Ohota_na_vedmu_45 {
+¡Descarada bruja! ¿Te permites continuar con tus prácticas impías y tentar a los honrados españoles a servir al diablo? ¡Se me ha ordenado llevarte ante la justicia!
+}
+Ohota_na_vedmu_46 {
+¿Q-qué decís? N-n-no s-sé de ningún crimen.
+}
+Ohota_na_vedmu_47 {
+¿Crees que podrás probar tu inocencia negando lo evidente? Tengo un testigo: el contramaestre Silino Sev. Está dispuesto a declarar que eres una bruja.
+}
+Ohota_na_vedmu_48 {
+¡Miguel Cuenda murió en su barco cerca de Santiago! Y aún descubriremos qué papel tan repugnante desempeñó tu brujería en la terrible muerte de Bartholomew Ulster en Belice. Y... No, he cambiado de opinión. Encontraré a alguien con autoridad sobre ti aquí mismo, en esta ciudad. La Inquisición me escuchará – y mis palabras bastarán para castigarte.
+}
+Ohota_na_vedmu_49 {
+Sé que la muerte de Miguel fue mi culpa... Pero no podía hacer nada – tenía que deshacerme de ese bastardo de Bartholomew. Pero cuando finalmente pronunció su maldición – supe que todo había terminado. Miguel estaba condenado. Lo amaba...
+}
+Ohota_na_vedmu_50 {
+Espera. No he entendido nada. ¿Qué maldición? ¿Amabas a quién?
+}
+Ohota_na_vedmu_51 {
+Bartholomew Ulster lanzó un hechizo mortal sobre Miguel. Intenté salvar a Miguel durante todo el viaje a Santiago, pero... en vano. Mi fuerza simplemente no fue suficiente para disipar su poderosa magia. Solo era una aprendiz, que nunca estaba destinada a superar al maestro.
+}
+Ohota_na_vedmu_52 {
+¿Entonces confiesas que eres una bruja?
+}
+Ohota_na_vedmu_53 {
+Sí. Bartholomew Ulster fue mi mentor en el arte de la hechicería. Notó el Don en mí cuando solo tenía catorce años. Entonces solo era una niña tonta que no entendía lo que hacía. No era guapa, pero me enseñó a conquistar los corazones de los hombres, y me convertí en una simple prostituta barata. Me utilizó para sonsacar secretos a los clientes; me sometió a todas las humillaciones que pudiera imaginar. Ya no podía vivir más – era demasiado fuerte...
+Pero cuando conocí a Miguel, pensé que tenía una oportunidad... Me enamoré de ese valiente capitán... pero Bartholomew dijo que si intentaba huir, le diría a los sacerdotes que era una bruja, y me quemarían en la hoguera. Se lo conté todo a Miguel. Y él decidió que debíamos matar a Ulster. Mi Don era demasiado débil para vencerlo mágicamente, y no soy más que una mujer débil. Pero Miguel me infundió fe.
+}
+Ohota_na_vedmu_54 {
+¿Pero cómo pasasteis junto a los guardias?
+}
+Ohota_na_vedmu_55 {
+Eso fue lo más sencillo. Les eché una poción para dormir en la bebida... y se durmieron como bebés. Después, nos escabullimos hasta el dormitorio de ese monstruo con aspecto humano. Pero no dormía, como esperábamos. Creo que puso un hechizo de protección en la puerta, que lo despertó. Miguel se abalanzó sobre él, pero ese canalla consiguió usar magia. Herido, Miguel luchó contra el hechicero y finalmente lo asfixió con una almohada.
+Intenté salvar a Miguel durante todo el viaje a Santiago. Pero cuando cayó muerto sobre la cubierta, tuve que huir del barco. La tripulación estaba furiosa – yo era la única mujer a bordo, a quien el capitán no había permitido tocar. Durante la travesía, se habían enfurecido como una jauría de perros salvajes.
+}
+Ohota_na_vedmu_56 {
+¿Y qué pasó después?
+}
+Ohota_na_vedmu_57 {
+No sabía qué hacer. Todo lo que quería era huir de mi pasado. Cuando llegué aquí, no tenía dinero, y volví al único oficio que conozco...
+}
+Ohota_na_vedmu_58 {
+Lo único importante en todo esto es que eres una bruja. Así que te entregaré a la Inquisición.
+}
+Ohota_na_vedmu_59 {
+Creo que no habéis cometido ningún crimen, Carla. Sois libre.
+}
+Ohota_na_vedmu_60_m {
+Oh, señor – sois muy noble. Permítame deciros una cosa. Todo el mundo cree que la brujería es una práctica que desagrada a Dios. Pero yo os digo que es simplemente un Don, o una Habilidad, como cualquier otra...
+}
+Ohota_na_vedmu_60_f {
+Oh, señorita – sois muy noble. Permítame deciros una cosa. Todo el mundo cree que la brujería es una práctica que desagrada a Dios. Pero yo os digo que es simplemente un Don, o una Habilidad, como cualquier otra...
+}
+Ohota_na_vedmu_61 {
+Como deseéis, @<GetAddress_Form>. Mi vida ya no significa nada para mí – no he visto misericordia, no he ganado amor – sería extraño esperar justicia.
+}
+Ohota_na_vedmu_62 {
+¡No intentes compadecerme, maldita bruja! ¡Arderás en el fuego!
+}
+Ohota_na_vedmu_63 {
+Y recibid mi Don. La suerte os acompañará desde este día.
+}
+Ohota_na_vedmu_64 {
+¡Buena suerte, Carla! Adiós.
+}
+Ohota_na_vedmu_65_m {
+Gracias, buen @<GetAddress_Form>, ¡no olvidaré vuestra nobleza!
+}
+Ohota_na_vedmu_65_f {
+Gracias, buena @<GetAddress_Form>, ¡no olvidaré vuestra nobleza!
+}
+Ohota_na_vedmu_66 {
+¡Buena suerte, Carla!
+}
+Ohota_na_vedmu_67 {
+Mi vida ya no vale nada... Pero no desperdiciaré ni un minuto de lo que queda en hablar con vos.
+}
+Ohota_na_vedmu_68 {
+¡Arderás en el fuego, asquerosa bruja!
+}
+Ohota_na_vedmu_69 {
+Se te acusa de brujería y adoración al diablo. Y según la santa madre iglesia, estás condenada a ser quemada en la hoguera. In nomine Patris, et Filii et Spiritus Sancti. Amen.
+}
+Ohota_na_vedmu_70 {
+Sargento, cumplid con vuestro deber.
+}

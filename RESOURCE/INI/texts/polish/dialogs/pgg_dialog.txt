@@ -1051,7 +1051,10 @@ Przecież już wszystko omówiliśmy, prawda?
 pgg_dialog_292 {
 @<RandPhraseSimple>
 }
-pgg_dialog_293 {
+pgg_dialog_293_m {
+Idź swoją drogą, jestem zajęty.
+}
+pgg_dialog_293_f {
 Idź swoją drogą, jestem zajęty.
 }
 pgg_dialog_294 {
@@ -1244,13 +1247,13 @@ pgg_dialog_347 {
 Za @<FindDaysString> karawana odejdzie i nie będziemy już w stanie ich dogonić.
 }
 pgg_dialog_348 {
-Mamy dokładnie @<FindDaysString> dni, żeby ich wykończyć i zgarnąć łup!
+Mamy dokładnie @<FindDaysString>, żeby ich wykończyć i zgarnąć łup!
 }
 pgg_dialog_349 {
 @<RandPhraseSimple>
 }
 pgg_dialog_350 {
-Mamy do dyspozycji @<FindDaysString> dni na całą operację.
+Mamy do dyspozycji @<FindDaysString> na całą operację.
 }
 pgg_dialog_351 {
 Powinniśmy się pospieszyć, @<PChar>. Mamy tylko @<FindDaysString> czasu.
@@ -1526,7 +1529,7 @@ pgg_dialog_427 {
 Świetna robota, kapitanie! Łup wyniósł @<PChar> @<PChar>.
 }
 pgg_dialog_428 {
-Mój udział
+Mój udział:
 }
 pgg_dialog_429 {
 Udział przypadający na mój statek —

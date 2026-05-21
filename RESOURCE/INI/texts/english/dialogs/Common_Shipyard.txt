@@ -481,3 +481,9 @@ Here you go. Thank you for your work.
 Common_Shipyard_135 {
 Think nothing of it...
 }
+Common_Shipyard_136 {
+I don’t see your ship in the harbor, Captain @<GetFullName>...
+}
+Common_Shipyard_137 {
+Dock the ship in the port and come over afterwards, Captain.
+}

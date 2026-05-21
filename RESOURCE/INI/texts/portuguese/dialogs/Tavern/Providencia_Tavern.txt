@@ -28,3 +28,27 @@ Sim, é sério, pela terceira vez...
 Providencia_Tavern_8 {
 É, bem...
 }
+Providencia_Tavern_9 {
+Você não viu o Hugo Serraria por aqui?
+}
+Providencia_Tavern_10 {
+Ele estava aqui. Uns caçadores de recompensas ingleses vieram atrás dele, mas ele conseguiu escapar pela porta dos fundos bem a tempo.
+}
+Providencia_Tavern_11 {
+Para onde ele foi?
+}
+Providencia_Tavern_12 {
+Mmm... Por 1.000 pesos eu te mostro o caminho.
+}
+Providencia_Tavern_13 {
+Aqui, pegue o seu dinheiro. Então, para onde ele foi?
+}
+Providencia_Tavern_14 {
+Eu não tenho tanto dinheiro comigo agora.
+}
+Providencia_Tavern_15 {
+Ele rumou para La Vega, procure por ele lá.
+}
+Providencia_Tavern_16 {
+Obrigado, até a próxima.
+}

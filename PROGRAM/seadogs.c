@@ -19,6 +19,7 @@
 #include "store\storeutilite.c"
 #include "dialog.c"
 #include "quests\quests.c"
+//#include "quests\EncGirl_Functions.c"
 #include "islands\islands.c"
 #include "colonies\colonies.c"
 #include "reload.c"
@@ -404,13 +405,13 @@ void LoadGame()
 	TimeScaleCounter = 0;
 
     string loadScr="";
-    switch (rand(5))
+    switch (rand(4))
     {
         case 0 :
-			loadScr = "loading\start_loading.tga";
+			loadScr = "loading\Escape_Town.tga";
 		break;
 		case 1 :
-			loadScr = "loading\Standsea_" + rand(6) + ".tga";
+			loadScr = "loading\Standsea_" + rand(3) + ".tga";
 		break;
 		case 2 :
 			loadScr = "loading\lookat.tga";
@@ -420,9 +421,6 @@ void LoadGame()
 		break;
 		case 4 :
 			loadScr = "loading\rescue.tga";
-		break;
-		case 5 :
-			loadScr = "loading\voyage.tga";
 		break;
 	}
 	
@@ -724,6 +722,9 @@ void OnLoad()
 	ReloadProgressUpdate();
 
 	QuestsInit();
+	ReloadProgressUpdate();
+
+	PDMQuestsInit();
 	ReloadProgressUpdate();
 	
 	InitTeleport();
@@ -1284,8 +1285,7 @@ void ProcessControls()
 			case "MapView":
 				if (or(bSeaActive && !bAbordageStarted, bLandInterfaceStart && !LAi_IsFightMode(pchar)) || IsEntity(&worldmap))
 				{ // изврат - но по другому никак
-//					if(CheckCharacterItem(PChar, "MapsAtlas") && pchar.MapsAtlasCount > 0)
-					if(CheckCharacterItem(PChar, "MapsAtlas"))
+					if (CheckCharacterItem(PChar, "MapsAtlas"))
 						LaunchMapViewScreen();
 				}
 			break;
@@ -1589,12 +1589,14 @@ bool CheckPossibleProcessInterfaceKey()
 	}
 	if (bDisableCharacterMenu)
 	{
-		Log_SetStringToLog(XI_ConvertString("You can`t launch menu"));
+		if (!CheckAttribute(&TEV, "StopTimeScale"))
+			Log_SetStringToLog(XI_ConvertString("You can`t launch menu"));
 		return false;
 	}
 	if (bAbordageStarted && !bCabinStarted && !bDeckBoatStarted)
 	{
-		Log_SetStringToLog(XI_ConvertString("You can`t launch menu"));
+		if (!CheckAttribute(&TEV, "StopTimeScale"))
+			Log_SetStringToLog(XI_ConvertString("You can`t launch menu"));
 		return false;
 	}
 	
@@ -1736,7 +1738,7 @@ void GameOver(string sName)
 		break;
 
 		case "mainmenu":
-			sP += "Start_Loading";
+			sP += "preparelogo";
 		break;
 	}
 

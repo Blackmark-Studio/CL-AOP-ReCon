@@ -1,0 +1,280 @@
+Lesopilka_1 {
+Wie schade, wie schade. Oh, verdammt nochmal!
+}
+Lesopilka_2 {
+Was murmelst du da vor dich hin?
+}
+Lesopilka_3 {
+Mein Name ist Hugo. Hugo Sageschreck. Ich sehe, dass du auch ein Kapitän bist. Würdest du eine Stunde erübrigen, um mir meine Geschichte anzuhören?
+}
+Lesopilka_4 {
+Von mir aus.
+}
+Lesopilka_5 {
+Nun, nein, eigentlich nicht. Ich verbringe meine Stunde lieber woanders.
+}
+Lesopilka_6_m {
+Hör zu: Ich bin zu alt geworden, um das Leben eines Piraten zu führen. Raub und Kämpfe sind was für die Jugend, verstehst du? Ich will meine Haut nicht mehr riskieren und will ruhig segeln, ohne bei jedem anderen Schiff zusammenzuzucken. Aber das Problem ist, ich kann nirgendwo hin. Jeder will mich aufhängen, weißt du? Aber ich habe mir etwas ausgedacht, Junge.
+Ich denke darüber nach, mir einen Kaperbrief zu besorgen, in Dienst zu treten und etwas Geld zu verdienen, aber die verdammten Forts eröffnen sofort das Feuer, sobald ich mich einem Hafen nähere, und ich kann nicht zum Gouverneur gelangen, um ihm ein Angebot zu machen. Die Engländer oder Franzosen werden mich hängen, sobald ich in ihre Hände falle: Sie haben den Befehl, mich zu töten, sobald ich meine Nase herausstecke. Ich glaube, ich könnte in den Dienst der Spanier oder Holländer treten, aber ich kann ihre verdammten Häfen nicht anlaufen – sie würden sofort das Feuer auf mich eröffnen!
+Und all diese verdammten, sogenannten Diplomaten in Piratenkneipen verlangen solche Preise, dass ich das in meinem ganzen Leben nicht verdienen könnte...
+}
+Lesopilka_6_f {
+Hör zu: Ich bin zu alt geworden, um das Leben eines Piraten zu führen. Raub und Kämpfe sind was für die Jugend, verstehst du? Ich will meine Haut nicht mehr riskieren und will ruhig segeln, ohne bei jedem anderen Schiff zusammenzuzucken. Aber das Problem ist, ich kann nirgendwo hin. Jeder will mich aufhängen, weißt du? Aber ich habe mir etwas ausgedacht, Mädchen.
+Ich denke darüber nach, mir einen Kaperbrief zu besorgen, in Dienst zu treten und etwas Geld zu verdienen, aber die verdammten Forts eröffnen sofort das Feuer, sobald ich mich einem Hafen nähere, und ich kann nicht zum Gouverneur gelangen, um ihm ein Angebot zu machen. Die Engländer oder Franzosen werden mich hängen, sobald ich in ihre Hände falle: Sie haben den Befehl, mich zu töten, sobald ich meine Nase herausstecke. Ich glaube, ich könnte in den Dienst der Spanier oder Holländer treten, aber ich kann ihre verdammten Häfen nicht anlaufen – sie würden sofort das Feuer auf mich eröffnen!
+Und all diese verdammten, sogenannten Diplomaten in Piratenkneipen verlangen solche Preise, dass ich das in meinem ganzen Leben nicht verdienen könnte...
+}
+Lesopilka_7 {
+Was ist mit der Bruderschaft?
+}
+Lesopilka_8 {
+Was ist mit der Niederländischen Westindien-Kompanie?
+}
+Lesopilka_9 {
+Es tut mir leid, Hugo, aber ich kann dir nicht helfen. Ich wünsche dir viel Glück. Leb wohl.
+}
+Lesopilka_10_m {
+Die Bruderschaft! Ich gehöre nicht dazu und werde es nie! Sie machen Regeln für die Piraterie – Regeln, hast du gehört? Regeln für Piraten! So einen Unsinn habe ich noch nie gehört. Ich sage dir ganz ehrlich, Junge, die Bruderschaft ist nur eine Bande hirnloser Idioten, die zusammengekommen sind, um uns freien Seeleuten im Weg herumzustehen.
+}
+Lesopilka_10_f {
+Die Bruderschaft! Ich gehöre nicht dazu und werde es nie! Sie machen Regeln für die Piraterie – Regeln, hast du gehört? Regeln für Piraten! So einen Unsinn habe ich noch nie gehört. Ich sage dir ganz ehrlich, Mädchen, die Bruderschaft ist nur eine Bande hirnloser Idioten, die zusammengekommen sind, um uns freien Seeleuten im Weg herumzustehen.
+}
+Lesopilka_11 {
+Was ist mit der Niederländischen Westindien-Kompanie?
+}
+Lesopilka_12 {
+Hmm... Das ist schließlich deine Meinung. Nun, dann fürchte ich, kann ich dir nichts weiter anbieten. Bis später.
+}
+Lesopilka_13 {
+Die Niederländische Westindien-Kompanie? Ha, ich finde, das ist eine gute Idee. Du kannst mir wirklich helfen!
+}
+Lesopilka_14 {
+Was muss ich tun?
+}
+Lesopilka_15_m {
+Du bist ein Kaperfahrer, nicht wahr? Du kannst einen holländischen Hafen anlaufen, und die Kanonen des Forts werden deinen Pott nicht auf den Grund schicken, oder? Dann kannst du ein gutes Wort für mich bei dem Direktor der Niederlassung in Willemstad einlegen, nicht wahr? Sag ihm einfach, dass ich bereit bin, 20.000 Piaster zu bieten, und dass ich bereit bin, ihm treu zu dienen.
+}
+Lesopilka_15_f {
+Du bist eine Kaperfahrerin, nicht wahr? Du kannst einen holländischen Hafen anlaufen, und die Kanonen des Forts werden deinen Pott nicht auf den Grund schicken, oder? Dann kannst du ein gutes Wort für mich bei dem Direktor der Niederlassung in Willemstad einlegen, nicht wahr? Sag ihm einfach, dass ich bereit bin, 20.000 Piaster zu bieten, und dass ich bereit bin, ihm treu zu dienen.
+}
+Lesopilka_16_m {
+Eigentlich könnte ich das tun, aber um ehrlich zu sein, was habe ich davon?
+}
+Lesopilka_16_f {
+Eigentlich könnte ich das tun, aber um ehrlich zu sein, was habe ich davon?
+}
+Lesopilka_17 {
+Du tust mir leid, Hugo, aber ich habe gerade keine Zeit dafür. Bis dann.
+}
+Lesopilka_18_m {
+Wie du meinst, Junge. Ich werde jemand anderen für diesen Job finden.
+}
+Lesopilka_18_f {
+Wie du meinst, Mädchen. Ich werde jemand anderen für diesen Job finden.
+}
+Lesopilka_19 {
+Bis dann.
+}
+Lesopilka_20 {
+Geld, natürlich! Ich kann dir 10.000 Piaster zahlen. Was sagst du?
+}
+Lesopilka_21_m {
+Das ist in Ordnung für mich. Ich bin einverstanden. Ich werde versuchen, dir ein Dokument der Niederländischen Westindien-Kompanie zu besorgen, im Austausch für die Piaster.
+}
+Lesopilka_21_f {
+Das ist in Ordnung für mich. Ich bin einverstanden. Ich werde versuchen, dir ein Dokument der Niederländischen Westindien-Kompanie zu besorgen, im Austausch für die Piaster.
+}
+Lesopilka_22 {
+Du machst wohl Witze. Zehntausend für so eine schwierige und gefährliche Aufgabe? Kommt nicht in Frage.
+}
+Lesopilka_23 {
+Das ist ein guter Mann! Günstigen Wind, Kapitän. Ich kann nur ein paar Monate hier auf dich warten. Wenn du bis dahin nicht zurück bist, werde ich wahrscheinlich am Galgen baumeln.
+}
+Lesopilka_24 {
+Bis dann.
+}
+Lesopilka_25_m {
+Also, @<pchar> – wo ist das Dokument, das du mir bringen wolltest?
+}
+Lesopilka_25_f {
+Also, @<pchar> – wo ist das Dokument, das du mir bringen wolltest?
+}
+Lesopilka_26 {
+Oh ja, es hat geklappt! @<GetFullName> sagte, er lade dich ein, ihn so bald wie möglich in seiner Residenz zu besuchen – natürlich mit deinen zwanzigtausend. Und jetzt schuldest du mir wohl auch zehntausend Piaster, nehme ich an?
+}
+Lesopilka_27 {
+Vergib mir, Hugo, aber ich habe es noch nicht.
+}
+Lesopilka_28_m {
+Das sind ja großartige Neuigkeiten, Junge! Großartig! Hier sind deine Piaster, und nimm damit auch meinen Dank. @<GetFullName>, hast du gesagt? Also muss ich nach Willemstad... Ich werde sofort das Ruder in diese Richtung herumreißen!
+}
+Lesopilka_28_f {
+Das sind ja großartige Neuigkeiten, Mädchen! Großartig! Hier sind deine Piaster, und nimm damit auch meinen Dank. @<GetFullName>, hast du gesagt? Also muss ich nach Willemstad... Ich werde sofort das Ruder in diese Richtung herumreißen!
+}
+Lesopilka_29 {
+Viel Glück, Hugo. Hoffentlich sehen wir uns wieder.
+}
+Lesopilka_30_m {
+Ach, Junge! Schon wieder zurück, was? Nun, ich muss zu diesem Matthias Beck gehen... Nachdem ich ein paar Krüge auf dich und meine neue Heimat, Holland, getrunken habe!
+}
+Lesopilka_30_f {
+Ach, Mädchen! Schon wieder zurück, was? Nun, ich muss zu diesem Matthias Beck gehen... Nachdem ich ein paar Krüge auf dich und meine neue Heimat, Holland, getrunken habe!
+}
+Lesopilka_31 {
+Danke für die freundlichen Worte, Hugo. Ich lasse dich deine Ernennung feiern.
+}
+Lesopilka_32 {
+Ach, du bist es wieder, Kapitän @<pchar>! Schön, dich zu sehen!
+}
+Lesopilka_33 {
+Oh, alter Sageschreck! Und wie ist dein ehrliches Leben?
+}
+Lesopilka_34_m {
+Sehr gut, danke. Ich kann dir sagen, die anderen holländischen Kapitäne waren zuerst misstrauisch mir gegenüber, aber ich habe ihnen ein paar Kampftricks gezeigt, und jetzt sind wir alle beste Freunde.
+Ha! Hör zu, @<pchar>, als Dank für das, was du für mich getan hast, habe ich einen guten Rat für dich. Komm näher heran und hör zu.
+Ich weiß, wo du gute Ware bekommen kannst, sehr gute Ware. Weißt du, @<pchar>, einer meiner alten, äh, Bekannten, der ein Pirat ist, weißt du... nun, er hat mir erzählt, dass ein englisches Schiff voll Gold und Silber in einen schlimmen Sturm geraten ist und jetzt bei Dominica repariert wird.
+}
+Lesopilka_34_f {
+Sehr gut, danke. Ich kann dir sagen, die anderen holländischen Kapitäne waren zuerst misstrauisch mir gegenüber, aber ich habe ihnen ein paar Kampftricks gezeigt, und jetzt sind wir alle besten Freunde.
+Ha! Hör zu, @<pchar>, als Dank für das, was du für mich getan hast, habe ich einen guten Rat für dich. Komm näher heran und hör zu.
+Ich weiß, wo du gute Ware bekommen kannst, sehr gute Ware. Weißt du, @<pchar>, einer meiner alten, äh, Bekannten, der ein Pirat ist, weißt du... nun, er hat mir erzählt, dass ein englisches Schiff voll Gold und Silber in einen schlimmen Sturm geraten ist und jetzt bei Dominica repariert wird.
+}
+Lesopilka_35 {
+Und?
+}
+Lesopilka_36 {
+Was? Bist du dumm, @<pchar>? In dieser Galeone steckt ein Vermögen!
+}
+Lesopilka_37 {
+Aha. Ich verstehe. Du fällst also wieder in alte Gewohnheiten zurück?..
+}
+Lesopilka_38 {
+Jetzt ist alles offiziell! Das Schiff liegt vor Anker bei Dominica – du kennst es: eine kleine Insel zwischen Guadeloupe und Barbados. Mein Bekannter sagte, er habe gesehen, wie dieses Schiff nach einem schlimmen Sturm repariert wurde – seine Takelage war beschädigt, wenn man das bei völligem Fehlen so nennen kann, und auch sein Rumpf ist beschädigt. Er sagte, das Schiff könne sich kaum bewegen. Ohne eine Werft wird die Reparatur wohl lange dauern, also sitzt es dort sozusagen fest und wartet nur auf einen Kapitän, der kommt und es erobert.
+}
+Lesopilka_39 {
+Warum eroberst du es nicht selbst?
+}
+Lesopilka_40_m {
+Aha, du denkst also, ich locke dich in eine Falle, was? Nein, Junge: Mein Schiff ist nicht stark genug, um diese Galeone zu erobern, und außerdem bin ich zu alt, um das Schiff zu wechseln. Ich kenne jeden Nagel und jede Planke auf meiner 'Felicia' und will sie nicht aufgeben. Also, Junge, die leichte Beute ist dein, wenn du sie nehmen willst! Hmm.
+Selbst wenn man bedenkt, dass die Galeone stark beschädigt ist, würde ich dennoch nicht empfehlen, mit einer Lugger oder einer Sloop auf sie loszugehen.
+}
+Lesopilka_40_f {
+Aha, du denkst also, ich locke dich in eine Falle, was? Nein, Mädchen: Mein Schiff ist nicht stark genug, um diese Galeone zu erobern, und außerdem bin ich zu alt, um das Schiff zu wechseln. Ich kenne jeden Nagel und jede Planke auf meiner 'Felicia' und will sie nicht aufgeben. Also, Mädchen, die leichte Beute ist dein, wenn du sie nehmen willst! Hmm.
+Selbst wenn man bedenkt, dass die Galeone stark beschädigt ist, würde ich dennoch nicht empfehlen, mit einer Lugger oder einer Sloop auf sie loszugehen.
+}
+Lesopilka_41 {
+Gut. Hugo, willst du wirklich nicht mit mir auf dieses Abenteuer kommen? Wenn da wirklich so viel Gold ist, verdienst du auf jeden Fall einen Anteil für die wertvollen Informationen.
+}
+Lesopilka_42 {
+Meine Felicia wird gerade repariert, und sie steht ständig unter der strengen Aufsicht der holländischen Kompanie. Aber... Wenn du darauf bestehst, bin ich bereit, als Begleiter mit dir zu kommen. Ich werde nur diese Bürokraten im Büro um Erlaubnis bitten und dann auf deinem Schiff sein.
+}
+Lesopilka_43 {
+Das Schiff liegt vor Dominica auf Reede, sagst du? Dann müssen wir uns sehr gut auf dieses Abenteuer vorbereiten. Viel Glück uns.
+}
+Lesopilka_44 {
+Ah! Möchtest du etwas mit mir trinken, @<pchar>?
+}
+Lesopilka_45 {
+Nicht jetzt, Hugo. Aber danke!
+}
+Lesopilka_46_m {
+Worauf verschwendest du dann deine Zeit, Junge? Geh und nimm dir diese Galeone, bevor sie wegfährt!
+}
+Lesopilka_46_f {
+Worauf verschwendest du dann deine Zeit, Mädchen? Geh und nimm dir diese Galeone, bevor sie wegfährt!
+}
+Lesopilka_47 {
+Du hast recht, Hugo.
+}
+Lesopilka_48_m {
+Das war ein Kampf, Junge! Es scheint, wir haben ihre Hauptkräfte gebrochen, also wird uns jetzt, glaube ich, keiner mehr stören.
+}
+Lesopilka_48_f {
+Das war ein Kampf, Mädchen! Es scheint, wir haben ihre Hauptkräfte gebrochen, also wird uns jetzt, glaube ich, keiner mehr stören.
+}
+Lesopilka_49 {
+Du hast wie immer recht, Hugo. Los, suchen wir den Schatz!
+}
+Lesopilka_50_m {
+Oh-ho, Junge. Ich habe dieses Ding hier vom sinkenden Schiff aufgelesen. Ich glaube, das interessiert dich.
+}
+Lesopilka_50_f {
+Oh-ho, Mädchen. Ich habe dieses Ding hier vom sinkenden Schiff aufgelesen. Ich glaube, das interessiert dich.
+}
+Lesopilka_51 {
+Das ist das Logbuch des Kapitäns vom Schiff '@<FindPersonalName>'. Ich sollte es studieren. Danke, Hugo, du kannst gehen.
+}
+Lesopilka_52_m {
+Heilige Jungfrau... Ich habe in meinem ganzen Leben noch nie so viel Gold an einem einzigen Ort gesehen! Weißt du, Junge, ich hatte seit meiner Kindheit immer einen dummen Traum – mich in einen solchen Goldhaufen zu vergraben und einfach drauf zu liegen, ohne an irgendetwas zu denken. Ich rate dir, das auch zu versuchen!
+}
+Lesopilka_52_f {
+Heilige Jungfrau... Ich habe in meinem ganzen Leben noch nie so viel Gold an einem einzigen Ort gesehen! Weißt du, Mädchen, ich hatte seit meiner Kindheit immer einen dummen Traum – mich in einen solchen Goldhaufen zu vergraben und einfach drauf zu liegen, ohne an irgendetwas zu denken. Ich rate dir, das auch zu versuchen!
+}
+Lesopilka_53 {
+Auf Gold liegen? Hugo, bist du im Herzen ein alter feuerspeiender Drache, der seinen Schatz bewacht? Es ist nicht so angenehm, wie du denkst – die Münzen sind kalt und hart...
+}
+Lesopilka_54_m {
+Ha! Für so einen Moment kann man das ertragen. Komm schon, Junge, sei kein Spielverderber, leg dich neben mich! Wann wirst du jemals wieder die Chance haben, auf einem solchen Goldhaufen zu ruhen?
+}
+Lesopilka_54_f {
+Ha! Für so einen Moment kann man das ertragen. Komm schon, Mädchen, sei kein Spielverderber, leg dich neben mich! Wann wirst du jemals wieder die Chance haben, auf einem solchen Goldhaufen zu ruhen?
+}
+Lesopilka_55 {
+Schon gut, schon gut, du hast mich überzeugt. Lass uns deine 'Drachen-Therapie' ausprobieren...
+}
+Lesopilka_56 {
+So wird's gemacht! Leg dich hin, mach es dir bequem...
+}
+Lesopilka_57 {
+(Lege mich auf den Goldhaufen)
+}
+Lesopilka_58 {
+Na, wie ist es? Fühlst du dich wie der Herr der Karibik?
+}
+Lesopilka_59 {
+Weißt du, es ist ziemlich hart, aber es ist... ähm... angenehm für den Rücken, wenn man das so sagen kann. Hör zu, Hugo, hier liegen wir und ruhen uns aus, und mir kommt etwas in den Sinn. Wir kennen uns schon lange, aber ich weiß immer noch nicht... Warum hat man dich Sageschreck genannt? Du bist doch ein Pirat, kein Zimmermann. Ha-ha-ha!
+}
+Lesopilka_60_m {
+Oh, das ist eine alte und sehr lustige Geschichte, Junge! In meiner Jugend war ich heißblütig und schwang mein Entermesser mit solcher Wut links und rechts, dass nur Splitter und Sägemehl von meinen Feinden flogen! Aber meine größte 'Tat' ereignete sich während eines besonders heißen Entergefechts...
+}
+Lesopilka_60_f {
+Oh, das ist eine alte und sehr lustige Geschichte, Mädchen! In meiner Jugend war ich heißblütig und schwang mein Entermesser mit solcher Wut links und rechts, dass nur Splitter und Sägemehl von meinen Feinden flogen! Aber meine größte 'Tat' ereignete sich während eines besonders heißen Entergefechts...
+}
+Lesopilka_61 {
+Und was hast du da angerichtet?
+}
+Lesopilka_62 {
+In der Hitze des Gefechts entdeckte ich den Großmast des feindlichen Schiffes, der durch unsere Kettenkugeln bereits erheblich beschädigt war. Ohne lange zu überlegen, beschloss ich, ihn mit meiner Axt 'endgültig zu erledigen', wobei ich dabei auch noch so einen armen spanischen Kerl niederhieb. Und was glaubst du? Ich schlug so zu, dass dieser riesige Mast umfiel und alle anderen Masten des Feindes mitriss... und gleichzeitig unsere eigene Takelage und Masten unter den Trümmern begrub! Wir waren beide mitten im Ozean ohne Segel. Seitdem nennen mich die Jungs Hugo Sageschreck. Ha-ha-ha!
+}
+Lesopilka_63 {
+Ha-ha-ha! Nun, Hugo, du bist wirklich ein ziemlicher Holzfäller. Also gut, wir haben uns auf dem Schatz ausgeruht – das reicht, Zeit, die Beute einzusammeln und zurückzukehren.
+}
+Lesopilka_64_m {
+Das stimmt zwar... Ach, ich mag es, ein gesetzestreuer Pirat zu sein. Das Leben wird besser, Junge.
+}
+Lesopilka_64_f {
+Das stimmt zwar... Ach, ich mag es, ein gesetzestreuer Pirat zu sein. Das Leben wird besser, Mädchen.
+}
+Lesopilka_65 {
+Allerdings, Hugo... Also gut. Dieser Haufen ist dein Anteil, den Rest nehme ich.
+}
+Lesopilka_66_m {
+Ha, Junge, ich wusste, dass du es schaffen würdest!
+}
+Lesopilka_66_f {
+Ha, Mädchen, ich wusste, dass du es schaffen würdest!
+}
+Lesopilka_67 {
+Danke, Hugo. All diesen Schatz habe ich nur dir zu verdanken.
+}
+Lesopilka_68 {
+Ah! Möchtest du etwas mit mir trinken, @<pchar>?
+}
+Lesopilka_69 {
+Tut mir leid, Hugo, ich habe noch unerledigte Geschäfte. Vielleicht ein anderes Mal. Leb wohl!
+}
+Lesopilka_70 {
+Ah! Möchtest du etwas mit mir trinken, @<pchar>?
+}
+Lesopilka_71 {
+Tut mir leid, Hugo, ich habe noch unerledigte Geschäfte. Vielleicht ein anderes Mal. Leb wohl!
+}

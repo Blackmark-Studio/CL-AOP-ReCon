@@ -1051,7 +1051,10 @@ Nous avons déjà tout discuté, n'est-ce pas?
 pgg_dialog_292 {
 @<RandPhraseSimple>
 }
-pgg_dialog_293 {
+pgg_dialog_293_m {
+Va où tu veux, je suis occupé.
+}
+pgg_dialog_293_f {
 Va où tu veux, je suis occupé.
 }
 pgg_dialog_294 {
@@ -1244,13 +1247,13 @@ pgg_dialog_347 {
 Dans @<FindDaysString>, la caravane sera partie et nous ne pourrons plus les rattraper.
 }
 pgg_dialog_348 {
-Nous avons exactement @<FindDaysString> jours pour les éliminer et rafler le butin!
+Nous avons exactement @<FindDaysString> pour les éliminer et rafler le butin!
 }
 pgg_dialog_349 {
 @<RandPhraseSimple>
 }
 pgg_dialog_350 {
-Nous disposons de @<FindDaysString> jours pour toute l’opération.
+Nous disposons de @<FindDaysString> pour toute l’opération.
 }
 pgg_dialog_351 {
 Nous ferions mieux de nous dépêcher, @<PChar>. Il ne nous reste plus que @<FindDaysString>.
@@ -1526,7 +1529,7 @@ pgg_dialog_427 {
 Bien joué, Capitaine! Le butin s’élève à @<PChar> @<PChar>.
 }
 pgg_dialog_428 {
-Ma part
+Ma part:
 }
 pgg_dialog_429 {
 La part attribuée à mon navire —

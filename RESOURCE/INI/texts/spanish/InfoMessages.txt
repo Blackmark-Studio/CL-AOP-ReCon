@@ -151,7 +151,7 @@ InfoMessages_149 {Catalejo recibido}
 InfoMessages_150 {Has recibido 25 esmeraldas}
 InfoMessages_151 {Has recibido un cofre de oro}
 InfoMessages_152 {@<sAttr> viene hacia ti.}
-InfoMessages_153 {Has recibido dos botellas, una de las cuales ahora es TUYA.}
+InfoMessages_153 {Has recibido la receta de 'Sangaree'.}
 InfoMessages_154 {Entregaste @<iSmallPearl> perlas pequeñas.}
 InfoMessages_155 {Entregaste @<iBigPearl> perlas grandes.}
 InfoMessages_156 {Recibido @<iSmallPearl> perlas pequeñas.}

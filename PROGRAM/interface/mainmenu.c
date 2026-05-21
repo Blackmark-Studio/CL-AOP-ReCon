@@ -41,6 +41,7 @@ void InitInterface(string iniName)
 	SetEventHandler("ShowChangesWindow", "ShowChangesWindow", 0);
 	SetEventHandler("HideChangesWindow", "HideChangesWindow", 0);
 	SetEventHandler("ShowPreorderURL", "ShowPreorderURL", 0);
+	SetEventHandler("ShowDlcURL", "ShowDlcURL", 0);
 	SetEventHandler("ShowDiscordQRCodeWindow", "ShowDiscordQRCodeWindow", 0);
 	SetEventHandler("ShowVKQRCodeWindow", "ShowVKQRCodeWindow", 0);
 	SetEventHandler("HideQRCodeWindow", "HideQRCodeWindow", 0);
@@ -94,6 +95,7 @@ void InitInterface(string iniName)
 	{
 		SetNodeUsing("BTN_STEAM_URL", false);
 	}
+	SetNodeUsing("BTN_DLC_URL", true);
 
 	if (!MusicIsPlaying())
 		KZ|Random("Menu");
@@ -180,6 +182,7 @@ void IDoExit(int exitCode, bool bClear)
 	DelEventHandler("ShowChangesWindow", "ShowChangesWindow");
 	DelEventHandler("HideChangesWindow", "HideChangesWindow");
 	DelEventHandler("ShowPreorderURL", "ShowPreorderURL");
+	DelEventHandler("ShowDlcURL", "ShowDlcURL");
 	DelEventHandler("ShowDiscordQRCodeWindow", "ShowDiscordQRCodeWindow");
 	DelEventHandler("ShowVKQRCodeWindow", "ShowVKQRCodeWindow");
 	DelEventHandler("HideQRCodeWindow", "HideQRCodeWindow");
@@ -251,31 +254,22 @@ void ShowPreorderURL()
 {
     GameOverlayToWebPage("https://store.steampowered.com/app/3549020/Caribbean_Legend_Age_of_Pirates/");
     //ShellExecuteOpenURL("https://store.steampowered.com/app/3549020/Caribbean_Legend_Age_of_Pirates/");
+    //ShellExecuteOpenURL("https://steamcommunity.com/app/2230980/workshop/");
+}
+
+void ShowDlcURL()
+{
+    GameOverlayToWebPage("https://store.steampowered.com/dlc/3549020");
 }
 
 void ShowDiscordQRCodeWindow()
 {
-GameOverlayToWebPage("https://discord.com/invite/Kz7XBQxBQa");
-//ShellExecuteOpenURL("https://steamcommunity.com/app/2230980/workshop/");
-/*	HideChangesWindow();
-
-	XI_WindowShow("QR_WINDOW", true);
-	XI_WindowDisable("QR_WINDOW", false);
-
-	SetNodeUsing("QR_DISCORD", true);
-	SetNodeUsing("QR_VK", false);*/
+	ShellExecuteOpenURL("https://discord.com/invite/Kz7XBQxBQa");
 }
 
 void ShowVKQRCodeWindow()
 {
-GameOverlayToWebPage("https://vk.com/reconteam");
-/*	HideChangesWindow();
-
-	XI_WindowShow("QR_WINDOW", true);
-	XI_WindowDisable("QR_WINDOW", false);
-
-	SetNodeUsing("QR_VK", true);
-	SetNodeUsing("QR_DISCORD", false);*/
+	ShellExecuteOpenURL("https://vk.com/reconteam");
 }
 
 void HideQRCodeWindow()

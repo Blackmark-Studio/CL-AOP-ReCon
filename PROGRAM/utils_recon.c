@@ -1,183 +1,4 @@
 
-// > метод вернёт случайный тип корабля, который +/- соответствует наибольшему по классу кораблю в эскадре ГГ
-// > TODO деление на Merchant и War
-int RandShipFromPcharSquadron()
-{
-	int result = rand(5) + 5;
-	int cn, ShipCompanionClass, iShipClass = sti(RealShips[sti(pchar.Ship.Type)].Class);
-	ref rChar;
-	
-	if (iShipClass > 5 && CheckAttribute(&TEV, "Andre_Abel_Quest_Battle_With_Pirates_Squadron"))
-		iShipClass = 5;
-	
-	// код от Zendayo > фикс жульничества с эскадрой и пересадкой в бою
-	for (int comp=1; comp<COMPANION_MAX; comp++)
-	{
-		cn = GetCompanionIndex(pchar, comp);
-		if(cn != -1)
-		{
-			rChar = &characters[cn];
-			ShipCompanionClass = sti(RealShips[sti(rChar.ship.type)].Class);
-			if (ShipCompanionClass < iShipClass && rChar.id != "Andre_Abel")
-			{
-				iShipClass = ShipCompanionClass;
-			}
-		}
-	}
-	// <
-	
-	switch (iShipClass)
-	{
-		case 1: result = SHIP_LINESHIP + rand(3); break;
-		case 2: result = SHIP_GALEON_H + rand(2); break;
-		case 3: result = SHIP_CORVETTE_L + rand(3); break;
-		case 4: result = SHIP_BRIGANTINE + rand(4); break;
-		case 5: result = SHIP_SCHOONER_W + rand(3); break;
-		case 6: result = SHIP_LUGGER_W + rand(3); break;
-		case 7: result = SHIP_WAR_TARTANE + rand(2); break;
-	}
-	
-	return result;
-}
-
-// > метод вернёт лучший или худший класс корабля в эскадре ГГ (onlyBots true - только корабли компаньонов; false - ГГ тоже)
-int GetPcharSquadronShipClass(bool bWorst, bool onlyBots)
-{
-	int npc, iTempClass, iShipClass = sti(RealShips[sti(pchar.Ship.Type)].Class);
-	ref rChar;
-	
-	for (int shipsQty = 0; shipsQty < COMPANION_MAX; shipsQty++)
-	{
-		if (onlyBots && shipsQty == 0)
-			shipsQty++;
-		
-		npc = GetCompanionIndex(pchar, shipsQty);
-		
-		if (npc >= 0)
-		{
-			rChar = &characters[npc];
-			iTempClass = sti(RealShips[sti(rChar.ship.type)].Class);
-			
-			if (bWorst)
-			{
-				if (iTempClass > iShipClass)
-					iShipClass = iTempClass;
-			}
-			else
-			{
-				if (iTempClass < iShipClass)
-					iShipClass = iTempClass;
-			}
-		}
-	}
-	
-	Restrictor(&iShipClass, 1, 7);
-	
-	return iShipClass;
-}
-
-// > метод проверяет корабли в эскадре ГГ по типу "торговый" или "боевой"; если торговых больше, значит эскадра "торговая" (false), если равенство или военных больше, то "боевая" (true)
-bool GetPcharSquadronType()
-{
-	int i, iChar, warShips = 0; int tradeShips = 0;
-	ref rChar, rShip;
-	
-	for (i = 0; i < COMPANION_MAX; i++)
-	{
-		iChar = GetCompanionIndex(pchar, i);
-		
-		if (iChar >= 0)
-		{
-			rChar = &characters[iChar];
-			rShip = &RealShips[sti(rChar.Ship.Type)];
-			
-			if (CheckAttribute(rShip, "Type.Merchant") && sti(rShip.Type.Merchant) > 0)
-			{
-				if (CheckAttribute(rShip, "Type.War") && sti(rShip.Type.War) > 0) // < универсал
-					warShips++;
-				else
-					tradeShips++;
-			}
-			else
-			{
-				if (CheckAttribute(rShip, "Type.War") && sti(rShip.Type.War) > 0)
-					warShips++;
-			}
-		}
-	}
-	
-	if (warShips == 0 && tradeShips == 0) // < баркас&Co
-		return false;
-	
-	if (tradeShips > warShips)
-		return false;
-	
-	return true;
-}
-
-// > метод вернёт средний класс кораблей в эскадре ГГ
-int GetPcharSquadronAverageClass(bool onlyBots)
-{
-	int i, iChar, result = 0;
-	ref rChar, rShip;
-	
-	for (i = 0; i < COMPANION_MAX; i++)
-	{
-		if (onlyBots && i == 0)
-			i++;
-		
-		iChar = GetCompanionIndex(pchar, i);
-		
-		if (iChar >= 0)
-		{
-			rChar = &characters[iChar];
-			
-			if (!CheckShip(rChar))
-			{
-				result += 7;
-				continue;
-			}
-			
-			rShip = &RealShips[sti(rChar.Ship.Type)];
-			
-			if (CheckAttribute(rShip, "Class"))
-				result += sti(rShip.Class);
-		}
-	}
-	
-	result = round_near(makefloat(result) / GetCompanionQuantity(pchar));
-	Restrictor(&result, 1, 7);
-	
-	return result;
-}
-
-// > метод ставит на корабль перса подходящий калибр орудий; TODO > дополнить позже на +\- шага калибра
-int SetShipSuitableCannons(int iShipType, string sCannonType)
-{
-	sCannonType = stripblank(sCannonType);
-	
-	if (!StrHasStr(sCannonType, "cannon,culverine", 1))
-	{
-		sCannonType = "cannon";
-		
-		if (rand(1))
-			sCannonType = "culverine";
-	}
-	
-	ref rShip = GetRealShip(iShipType);
-	int iCaliber = sti(rShip.MaxCaliber);
-	return GetCannonByTypeAndCaliber(sCannonType, iCaliber);
-}
-
-// > есть ли у chr корабль
-bool CheckShip(ref chr)
-{
-	if (GetCharacterShipType(chr) != SHIP_NOTUSED)
-		return true;
-	
-	return false;
-}
-
 // > получить активный кейс анимации персонажа chr
 string GetCharCurAni(ref chr)
 {
@@ -496,7 +317,7 @@ bool CheckFighters(ref chr)
 	for (int i = 1; i < 4; i++)
 	{
 		string sTemp = "id" + i;
-		if (arOfficer.(sTemp) == chr.index)
+		if (arOfficer.(sTemp) == chr.index && IsEntity(&chr))
 			return true;
 	}
 	
@@ -1355,8 +1176,9 @@ void HKT_Button(string sHKB) // быстрый переход
 {
 	int curLocIdx;
 	string sFind = FindStringAfterChar(sHKB, "_");
+	string sTxt = XI_ConvertString("There is no way there now");
 	bool bOk = true;
-	
+
 	curLocIdx = FindLoadedLocation();
 
 	string outGroupName = GetLocFromFastReloadTable(curLocIdx, sFind);
@@ -1394,12 +1216,11 @@ void HKT_Button(string sHKB) // быстрый переход
 		
 		return;
 	}
-	
-	bOk = (sHKB == "AltModeFastTravel_port") && (pchar.location == pchar.location.from_sea);
-	if (pchar.location == outGroupName || bOk)
-		LogSound(XI_ConvertString("You are already there"), "knopka");
-	else
-		LogSound(XI_ConvertString("There is no way there now"), "knopka");
+
+	if (or(pchar.location == outGroupName, pchar.location == pchar.location.from_sea && sHKB == "AltModeFastTravel_port"))
+		sTxt = XI_ConvertString("You are already there");
+
+	LogSound(sTxt, "knopka");
 }
 
 void ModifyTextInfo() // belamour обновление всплывающей подсказки
@@ -1409,15 +1230,15 @@ void ModifyTextInfo() // belamour обновление всплывающей п
 		float fHtRatio = GetScreenScale();
 		string sLine2 = SetModifyTextColor(1);
 		string sLine3 = SetModifyTextColor(2);
-		int iOffset = 170;
-		
+		int iOffset = 0;
+
 		int c2 = strlen(sLine2);
 		int c3 = strlen(sLine3);
 
-		int k1 = c3 - c2;
 		int k2 = 0;
 		int k3 = 0;
 
+		// KZ > TODO use TaskWindow
 		if (!or(c2 == 55 && c3 == 62, c2 == 55 && c3 == 60))
 		{
 			if (!IsDay())
@@ -1456,7 +1277,7 @@ void ModifyTextInfo() // belamour обновление всплывающей п
 					k2 -= 2;
 					k3 -= 1;
 				}
-				else if (c3 == 62)
+				else if (c3 == 61 || c3 == 62)
 					k2 -= 2;
 				else if (c3 == 64)
 				{
@@ -1482,20 +1303,21 @@ void ModifyTextInfo() // belamour обновление всплывающей п
 					k3 += 4;
 				}
 			}
-			else if (c2 == 56 && c3 == 67)
+			else if (c2 == 56 && or(c3 == 67, c3 == 69))
 				k3 += 3;
-
 		}
-		else if (c2 == 55 && c3 == 62)
-			k2 -= 1;
+		else if (c2 == 55)
+		{
+			if (c3 == 60) k3 -= 1;
+			else if (c3 == 62) k2 -= 1;
+		}
 
-		// > пусть лучше будет всегда в одном месте
-		// aref arChar; makearef(arChar, objLandInterface.data.icons.id0);
-		// if (arChar.HideStates == 0) iOffset = 180;
+		aref arChar; makearef(arChar, objLandInterface.data.icons.id0);
+		if (arChar.HideStates == 0) iOffset = 230;
 
-		SetNewTextInfoEx("AltModificatorLine1", -1.0, XI_ConvertString("ft_Help"), sti(showWindow.left) + RecalculateHIcon(makeint((iOffset + 325) * fHtRatio)), RecalculateVIcon(makeint(20 * fHtRatio)), "interface_normal", 1.1 * fHtRatio, argb(243,254,252,169));
-		SetNewTextInfoEx("AltModificatorLine2", -1.0, sLine2, sti(showWindow.left) + RecalculateHIcon(makeint((iOffset + 342 + k2) * fHtRatio)), RecalculateVIcon(makeint(42 * fHtRatio)), "interface_normal", 1.1 * fHtRatio, argb(255,255,255,255));
-		SetNewTextInfoEx("AltModificatorLine3", -1.0, sLine3, sti(showWindow.left) + RecalculateHIcon(makeint((iOffset + 364 + k3) * fHtRatio)), RecalculateVIcon(makeint(64 * fHtRatio)), "interface_normal", 1.1 * fHtRatio, argb(255,255,255,255));
+		SetNewTextInfoEx("AltModificatorLine1", -1.0, XI_ConvertString("ft_Help"), sti(showWindow.left) + RecalculateHIcon(makeint((iOffset + 325) * fHtRatio)), RecalculateVIcon(makeint(30 * fHtRatio)), "interface_normal", 1.1 * fHtRatio, argb(243,254,252,169));
+		SetNewTextInfoEx("AltModificatorLine2", -1.0, sLine2, sti(showWindow.left) + RecalculateHIcon(makeint((iOffset + 342 + k2) * fHtRatio)), RecalculateVIcon(makeint(52 * fHtRatio)), "interface_normal", 1.1 * fHtRatio, argb(255,255,255,255));
+		SetNewTextInfoEx("AltModificatorLine3", -1.0, sLine3, sti(showWindow.left) + RecalculateHIcon(makeint((iOffset + 364 + k3) * fHtRatio)), RecalculateVIcon(makeint(74 * fHtRatio)), "interface_normal", 1.1 * fHtRatio, argb(255,255,255,255));
 	}
 	else
 		ModifyTextHide();

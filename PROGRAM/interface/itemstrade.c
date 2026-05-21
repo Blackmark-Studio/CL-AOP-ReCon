@@ -917,7 +917,7 @@ void TransactionOK()
 	if (CheckOfficer("treasurer"))
 		iTime /= 2;
 
-	if (GetOfficersPerkUsing(refCharacter, "QuickCalculation"))
+	if (GetOfficersPerkUsing(refCharacter, "QuickCalculation", false))
 		iTime /= 2;
 
 	Restrictor(&iTime, 1, 30);
@@ -1184,6 +1184,8 @@ int GetTradeItemPrice(int itmIdx, int tradeType)
 
 		if (CheckOfficersPerk(pchar, "ProfessionalCommerce")) skillModify += 0.15;
 		else if (CheckOfficersPerk(pchar, "AdvancedCommerce")) skillModify += 0.1;
+
+		if (StrEndsWith(refStoreChar.id, "_usurer") && StrStartsWith(Items[itmIdx].id, "jewelry")) skillModify += 0.1; // > ростовщики покупают бижу на 10% дороже
 	}
 
 	return makeint(makefloat(itmprice) * skillModify);

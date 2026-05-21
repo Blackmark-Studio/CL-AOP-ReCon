@@ -200,14 +200,14 @@ bool LAi_CharacterLogin(aref chr, string locID)
 //			chr.chr_ai.group = "";
 //		}
 //	}
-	if(CheckAttribute(chr, "currentquest"))
-	{
-		CheckQuestForCharacter(chr);
-		if(chr.chr_ai.type == LAI_TYPE_CITIZEN)
-		{
-			chr.chr_ai.group = "";
-		}
-	}
+//	if(CheckAttribute(chr, "currentquest"))
+//	{
+//		CheckQuestForCharacter(chr);
+//		if(chr.chr_ai.type == LAI_TYPE_CITIZEN)
+//		{
+//			chr.chr_ai.group = "";
+//		}
+//	}
 	return true;
 }
 

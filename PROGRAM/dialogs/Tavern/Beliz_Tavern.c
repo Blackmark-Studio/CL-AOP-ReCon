@@ -21,6 +21,16 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 				link.l1 = StringFromKey("Beliz_Tavern_10", pchar);
 				link.l1.go = "Step_F7_1";
 			}
+			if(CheckAttribute(pchar, "questTemp.PDM_ONV_Detectiv_Tavern_NET"))
+            {
+                link.l1 = StringFromKey("Beliz_Tavern_23");
+                link.l1.go = "PDM_ONV_Sprashivaem_Pro_Karlu_NeZnaet";
+            }
+			if(CheckAttribute(pchar, "questTemp.PDM_ONV_Detectiv_Tavern_DA"))
+            {
+                link.l1 = StringFromKey("Beliz_Tavern_24");
+                link.l1.go = "PDM_ONV_Sprashivaem_Pro_Karlu";
+            }
 		break;
 		//******************** Фр.линейка, квест №7. Спасение Рока Бразильца ******************
 		case "Step_F7_1":
@@ -46,6 +56,69 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 			link.l1 = StringFromKey("Beliz_Tavern_22");
 			link.l1.go = "exit";
 			RemoveLandQuestmark_Main(npchar, "Fra_Line");
+		break;
+		//******************** Квест "Прокажённая" ******************
+		case "PDM_ONV_Sprashivaem_Pro_Karlu_NeZnaet":
+			dialog.text = StringFromKey("Beliz_Tavern_25");
+			Link.l1 = StringFromKey("Beliz_Tavern_26");
+			Link.l1.go = "exit";
+			DeleteAttribute(pchar, "questTemp.PDM_ONV_Detectiv_Tavern_NET");
+			AddQuestRecord("PDM_Ohota_na_vedmu", "6");
+			AddQuestUserData("PDM_Ohota_na_vedmu", "sSex", GetSexPhrase("","а"));
+			pchar.questTemp.PDM_ONV_Detectiv_Jiteli_Beliz = true;
+			pchar.questTemp.PDM_ONV_Detectiv_Oficiantka_Beliz = true;
+			RemoveLandQuestmark_Main(CharacterFromID("Beliz_tavernkeeper"), "PDM_Ohota_na_vedmu");
+		break;
+
+		case "PDM_ONV_Sprashivaem_Pro_Karlu":
+			dialog.text = StringFromKey("Beliz_Tavern_27");
+			Link.l1 = StringFromKey("Beliz_Tavern_28");
+			Link.l1.go = "PDM_ONV_SPKarlu_2";
+			RemoveLandQuestmark_Main(CharacterFromID("Beliz_tavernkeeper"), "PDM_Ohota_na_vedmu");
+		break;
+
+		case "PDM_ONV_SPKarlu_2":
+			dialog.text = StringFromKey("Beliz_Tavern_29", GetAddress_Form(NPChar));
+			Link.l1 = StringFromKey("Beliz_Tavern_30");
+			Link.l1.go = "PDM_ONV_SPKarlu_3";
+			Link.l2 = StringFromKey("Beliz_Tavern_31");
+			Link.l2.go = "PDM_ONV_SPKarlu_5";
+		break;
+
+		case "PDM_ONV_SPKarlu_3":
+			dialog.text = StringFromKey("Beliz_Tavern_32", GetAddress_Form(NPChar));
+			Link.l1 = StringFromKey("Beliz_Tavern_33");
+			Link.l1.go = "PDM_ONV_SPKarlu_5";
+			Link.l2 = StringFromKey("Beliz_Tavern_34");
+			Link.l2.go = "PDM_ONV_SPKarlu_4";
+		break;
+
+		case "PDM_ONV_SPKarlu_4":
+			dialog.text = StringFromKey("Beliz_Tavern_35");
+			Link.l1 = StringFromKey("Beliz_Tavern_36");
+			Link.l1.go = "PDM_ONV_SPKarlu_5";
+			ChangeCharacterReputation(pchar, -2);
+			AddMoneyToCharacter(pchar, 2000);
+		break;
+
+		case "PDM_ONV_SPKarlu_5":
+			dialog.text = StringFromKey("Beliz_Tavern_37", pchar);
+			Link.l1 = StringFromKey("Beliz_Tavern_38");
+			Link.l1.go = "PDM_ONV_SPKarlu_6";
+		break;
+
+		case "PDM_ONV_SPKarlu_6":
+			dialog.text = StringFromKey("Beliz_Tavern_39", GetAddress_Form(NPChar));
+			Link.l1 = StringFromKey("Beliz_Tavern_40");
+			Link.l1.go = "PDM_ONV_SPKarlu_7";
+			DeleteAttribute(pchar, "questTemp.PDM_ONV_Detectiv_Tavern_DA");
+		break;
+
+		case "PDM_ONV_SPKarlu_7":
+			dialog.text = StringFromKey("Beliz_Tavern_41");
+			Link.l1 = StringFromKey("Beliz_Tavern_42");
+			Link.l1.go = "exit";
+			AddDialogExitQuestFunction("PDM_ONW_SilinoSpawn");
 		break;
 	}
 	UnloadSegment(NPChar.FileDialog2);  // если где-то выход внутри switch  по return не забыть сделать анлод

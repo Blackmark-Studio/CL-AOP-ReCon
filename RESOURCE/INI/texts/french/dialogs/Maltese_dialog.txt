@@ -8,7 +8,7 @@ Maltese_dialog_3 {
 J’ai une affaire à discuter avec vous, officier. Je pense que cela pourrait vous intéresser. L’un de vos soldats, Jory, a essayé d’acheter du vin en ville en passant par moi. Sachant quelles sont vos règles...
 }
 Maltese_dialog_4 {
-Quoi?! J’ai formellement interdit de boire sur un site stratégique! Très bien, il va le regretter. Pour ta vigilance, je t’accorde 5 000 piastres, et Jory passera trois jours au cachot.
+Quoi?! J’ai formellement interdit de boire sur un site stratégique! Très bien, il va le regretter. Pour votre vigilance citoyenne, je vous récompense par le versement de la solde mensuelle de Jori, tandis que lui passera trois jours au cachot. Cela servira de leçon aux autres ! Et en signe de ma gratitude personnelle, prenez cette vieille épée de soldat de notre ordre dans mon arsenal privé. Il est peu probable que vous puissiez en obtenir une ailleurs, Capitaine.
 }
 Maltese_dialog_5 {
 Merci, @<GetFullName>. Il est de notre devoir commun de mettre fin à de telles violations.

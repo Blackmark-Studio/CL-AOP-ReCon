@@ -191,208 +191,173 @@ void GiveItemToTrader(aref ch)
 	
 	// TODO перенести типажи лоточников из ККС
 	// > Ростовщики, TODO мб, добавить им что-нибудь оккультное, индейские побрякушки и т.д.?
-	if (HasStr(ch.id, "_usurer"))
+	if (StrEndsWith(ch.id, "_usurer"))
 	{
-		irand = drand(24);
-		// > тир 0, очень редко в ассортименте, вещи со статами, шансы: ~40% на общий прок и ~25-33% индивидуальный; TODO дополнить
-		if (irand >= 15)
-		{
-			if (rand(3) == 1) AddItems(ch, "jewelry4", 1 + rand(1));	// "Изумруд" (+10 лидерство)
-			if (rand(3) == 1) AddItems(ch, "jewelry15", 1 + rand(1));	// "Изумрудные подвески" (+10 к скрытности)
-			if (rand(2) == 1) AddItems(ch, "jewelry9", 1 + rand(1));	// "Бронзовый крестик" (+10 к везению)
-			if (rand(2) == 1) AddItems(ch, "jewelry8", 1 + rand(1));	// "Бронзовое кольцо" (+10 к везению)
-		}
-		
-		// > тир 1, редко в ассортименте, шансы: ~60% на общий прок и 33% индивидуальный; TODO дополнить
-		if (irand >= 10)
-		{
-			if (rand(3) == 1) AddItems(ch, "jewelry2", 1 + rand(4));	// "Алмаз"
-			if (rand(3) == 1) AddItems(ch, "jewelry3", 1 + rand(4));	// "Рубин"
-			if (rand(3) == 1) AddItems(ch, "jewelry1", 1 + rand(4));	// "Сапфир"
-			
-			// > жемчужины пореже, чем у смотрителей маяков
-			if (rand(5) == 4) AddItems(ch, "jewelry11", 1 + rand(2));	// "Большая жемчужина"
-			if (rand(4) == 3) AddItems(ch, "jewelry12", 1 + rand(4));	// "Маленькая жемчужина"
-		}
-		
+		// > тир 1, редко в ассортименте
+		if (rand(5) == 1) AddItems(ch, "jewelry2", 1 + rand(4));		// "Алмаз"
+		if (rand(5) == 1) AddItems(ch, "jewelry3", 1 + rand(4));		// "Рубин"
+		if (rand(5) == 1) AddItems(ch, "jewelry4", 1 + rand(4));		// "Рубин"
+		if (rand(5) == 1) AddItems(ch, "jewelry1", 1 + rand(4));		// "Сапфир"
+		if (rand(5) == 1) AddItems(ch, "jewelry18", 1 + rand(4));		// "Золотое кольцо с рубином"
+		if (rand(5) == 1) AddItems(ch, "jewelry15", 1 + rand(4));		// "Изумрудные подвески"
+
 		// > тир 2, часто в ассортименте
-		if (rand(3) == 1) AddItems(ch, "jewelry18", 1 + rand(5));		// "Золотое кольцо с рубином"
-		if (rand(3) == 1) AddItems(ch, "jewelry5", 1 + rand(5));		// "Золотой слиток"
-		if (rand(3) == 1) AddItems(ch, "jewelry7", 1 + rand(5));		// "Золотое кольцо с изумрудом"
+		if (rand(3) == 0) AddItems(ch, "jewelry5", 1 + rand(5));		// "Золотой самородок"
 		if (rand(3) == 1) AddItems(ch, "jewelry14", 1 + rand(5));		// "Золотая брошь"
-		if (rand(3) == 1) AddItems(ch, "jewelry10", 1 + rand(5));		// "Золотое кольцо с сапфиром"
-		if (rand(3) == 1) AddItems(ch, "jewelry13", 1 + rand(5));		// "Камея"
-		
+		if (rand(3) == 2) AddItems(ch, "jewelry7", 1 + rand(5));		// "Золотое кольцо с изумрудом"
+		if (rand(3) == 3) AddItems(ch, "jewelry10", 1 + rand(5));		// "Золотое кольцо с сапфиром"
+		if (rand(3) == 2) AddItems(ch, "jewelry13", 1 + rand(5));		// "Камея"
+		if (rand(3) == 1) AddItems(ch, "jewelry17", 1 + rand(5));		// "Серебряный самородок"
+		if (rand(3) == 0) AddItems(ch, "jewelry6", 1 + rand(5));		// "Серебряное кольцо с сапфиром"
+
 		// > тир 3, очень часто в ассортименте
-		if (rand(1)) AddItems(ch, "jewelry17", 1 + rand(6));			// "Серебряный слиток"
-		if (rand(1)) AddItems(ch, "jewelry6", 1 + rand(6));				// "Серебряное кольцо с сапфиром"
-		
+		if (rand(1)) AddItems(ch, "jewelry8", 1 + rand(5));				// "Бронзовое кольцо"	(+1 Везение)
+		if (rand(1)) AddItems(ch, "jewelry9", 1 + rand(5));				// "Бронзовый крестик"	(+1 Везение)
+
 		// есть всегда
 		AddItems(ch, "jewelry16", 3 + rand(6));							// "Ожерелье"
 		return;
 	}
 	
 	// > Смотрители маяков
-	if (HasStr(ch.id, "_Lightman"))
+	if (StrEndsWith(ch.id, "_Lightman"))
 	{
-		irand = drand(99);
+		irand = rand(10);
+
+		if (rand(3) == 1) AddItems(ch, "mineral12", 1 + rand(3));		// "Верёвка"
+		if (rand(2) == 1) AddItems(ch, "mineral11", 1 + rand(5));		// "Точильный камень"
+		if (rand(2) == 1) AddItems(ch, "mineral13", 1 + rand(5));		// "Бронзовый котелок"
+
+		if (rand(3) == 3) AddItems(ch, "indian2", 1);					// "Пугающая фигурка" (-1 лидерство)
+		if (rand(3) == 1) AddItems(ch, "indian1", 1);					// "Оберег Тлальчитонатиу"
+		if (rand(3) == 1) AddItems(ch, "indian3", 1);					// "Нефритовая маска"
+		if (rand(3) == 3) AddItems(ch, "indian5", 1);					// "Двойная маска"
+		if (rand(3) == 1) AddItems(ch, "jewelry8", 1 + rand(1));		// "Бронзовое кольцо" (+1 к везению)
+		if (rand(3) == 1) AddItems(ch, "jewelry9", 1 + rand(1));		// "Бронзовый крестик" (+1 к везению)
+
 		
-		// > тир 0, полезные или редкие предметы, шансы: ~40% на общий прок и ~17% индивидуальный; TODO дополнить
-		if (irand >= 59)
+		if (rank > 2 && irand >= 3)										// < качество poor
 		{
-			if (rand(5) == 5) AddItems(ch, "indian2", 1);				// "Пугающая фигурка" (-10 лидерство)
-			if (rand(5) == 5) AddItems(ch, "indian5", 1);				// "Двойная маска" (+10 скрытность)
+			// > лёгкое холодное оружие
+			if (rand(1)) GenerateAndAddItems(ch, "blade5", 1);			// "Дага"
+			if (rand(1)) GenerateAndAddItems(ch, "blade2", 1);			// "Венецианская шпага"
+
+			// > среднее холодное оружие
+			if (rand(1)) GenerateAndAddItems(ch, "blade1", 1);			// "Канонирский тесак"
+			if (rand(1)) GenerateAndAddItems(ch, "blade4", 1);			// "Кавалерийская сабля"
 		}
-		
-		// > тир 1, полезные предметы с + к статам, шансы: ~60% на общий прок и ~25-30% индивидуальный; TODO дополнить
-		if (irand >= 39)
-		{
-			if (rand(3) == 1) AddItems(ch, "indian1", 1);				// "Оберег Тлальчитонатиу" (+10 лидерство и скрытность, -20 пистолеты)
-			if (rand(3) == 1) AddItems(ch, "indian3", 1);				// "Нефритовая маска" (+10 торговля)
-			if (rand(2) == 1) AddItems(ch, "jewelry8", 1 + rand(1));	// "Бронзовое кольцо" (+10 к везению)
-			if (rand(2) == 1) AddItems(ch, "jewelry9", 1 + rand(1));	// "Бронзовый крестик" (+10 к везению)
-		}
-		
-		// > лёгкое холодное оружие
-		if (rank > 2 && irand >= 19)									// < качество poor, шанс ~80% при ранге ГГ 3+
-		{
-			GenerateAndAddItems(ch, "blade5", 1);						// "Дага"
-			GenerateAndAddItems(ch, "blade2", 1);						// "Венецианская шпага"
-		}
-		if (rank > 4 && irand >= 39)									// < качество ordinary, шанс ~60% при ранге ГГ 5+
+		if (rank > 4 && irand >= 4)										// < качество ordinary
 		{
 			GenerateAndAddItems(ch, "blade6", 1);						// "Дворянка"
 			if (drand(1)) GenerateAndAddItems(ch, "blade9", 1);			// "Сайдсворд"
 		}
-		if (rank > 9 && irand >= 59)									// < качество good, шанс ~40% при ранге ГГ 10+
+		if (rank > 6 && irand >= 6)										// < качество good
 		{
 			GenerateAndAddItems(ch, "blade19", 1);						// "Маринера"
 			if (drand(1)) GenerateAndAddItems(ch, "blade22", 1);		// "Конкилья"
 		}
-		
-		// > среднее холодное оружие
-		if (rank > 6 && irand >= 29)									// < качество poor, шанс ~70% при ранге ГГ 7+
-		{
-			GenerateAndAddItems(ch, "blade1", 1);						// "Канонирский тесак"
-			GenerateAndAddItems(ch, "blade4", 1);						// "Кавалерийская сабля"
-		}
-		if (rank > 11 && irand >= 49)									// < качество ordinary, шанс ~50% при ранге ГГ 12+
+		if (rank > 6 && irand >= 4)										// < качество ordinary
 		{
 			GenerateAndAddItems(ch, "blade6", 1);						// "Дворянка"
 		}
-		if (rank > 14 && irand >= 69)									// < качество good, шанс ~30% при ранге ГГ 15+
+		if (rank > 9 && irand >= 5)										// < качество good
 		{
 			GenerateAndAddItems(ch, "blade7", 1);						// "Бильбо"
 		}
-		
-		if (rank > 9 && CheckAttribute(&TEV, "GipsyFortuneBonus"))
-		{
-			if (rand(3) == 3) AddItems(ch, "spyglass3", 1);				// "Хорошая подзорная труба", шанс ~25% при ранге ГГ 10+ и только с бонусом от гадания цыганки за 5000
-		}
-		
-		// > тир 2, частый ассортимент, индивидуальный шанс ~33-50%
-		if (rank > 4)
-		{
-			if (rand(3) == 3) AddItems(ch, "spyglass2", 1);				// "Обычная подзорная труба", шанс ~25% при ранге ГГ 5+
-		}
-		
-		if (rand(1)) AddItems(ch, "potionrum", 1 + rand(2));			// "Бутылка рома"
-		if (rand(1)) AddItems(ch, "jewelry12", 1 + rand(6));			// "Маленькая жемчужина"
-		if (rand(2) == 1) AddItems(ch, "jewelry11", 1 + rand(4));		// "Большая жемчужина"
-		if (rand(1)) AddItems(ch, "spyglass1", 1);						// "Дешёвая подзорная труба"
-		
-		// > тир 3, филлерный мусор, то, что есть всегда, шанс 100%
-		AddItems(ch, "mineral6", 2 + rand(4));							// "Коралл"
+
+		if (rand(3) == 3) AddItems(ch, "spyglass3", 1);					// "Обычная подзорная труба"
+		if (rand(1)) AddItems(ch, "potionrum", 1 + rand(3));			// "Бутылка рома"
+		if (rand(1)) AddItems(ch, "jewelry12", 1 + rand(9));			// "Маленькая жемчужина"
+		if (rand(1)) AddItems(ch, "jewelry11", 1 + rand(5));			// "Большая жемчужина"
+		if (rand(1)) AddItems(ch, "spyglass2", 1);						// "Дешёвая подзорная труба"
+
+		// > травы
+		if (rand(2) == 0) AddItems(ch, "herb_zingiber", 1 + rand(2));	// "Корень имбиря"
+		if (rand(2) == 1) AddItems(ch, "herb_matricaria", 1 + rand(2));	// "Матрикария"
+		if (rand(2) == 2) AddItems(ch, "herb_ginseng", 1 + rand(2));	// "Женьшень"
+
+		// > филлерный мусор, то, что есть всегда, шанс 100%
+		AddItems(ch, "mineral6", 2 + rand(5));							// "Коралл"
 		return;
 	}
 	
 	// > Смотрители кладбищ
-	if (HasStr(ch.id, "_Cemeteryman"))
+	if (StrEndsWith(ch.id, "_Cemeteryman"))
 	{
-		irand = drand(99);
-		
-		// > тир 0, полезные или редкие предметы, шансы: ~40% на общий прок и ~17-20% индивидуальный; TODO дополнить
-		if (irand >= 59)
+		irand = rand(10);
+
+		// > тир 1, полезные предметы с + к статам и для крафта, шансы: ~60% на общий прок и ~25-30% индивидуальный; TODO дополнить
+		if (irand >= 5)
 		{
-			if (rand(5) == 5) AddItems(ch, "indian2", 1);				// "Пугающая фигурка" (-10 лидерство)
-				
-			if (CheckAttribute(&TEV, "GipsyFortuneBonus"))
-			{
-				if (rand(4) == 4) AddItems(ch, "indian17", 1);			// "Тельная ладанка" (+10 скрытность), ~20% и только с бонусом от гадания цыганки за 5000
-			}
+			if (rand(2) == 1) AddItems(ch, "indian17", 1);				// "Тельная ладанка" (+3 скрытность)
+			if (rand(2) == 1) AddItems(ch, "jewelry8", 1 + rand(1));	// "Бронзовое кольцо" (+1 к везению)
+			if (rand(2) == 1) AddItems(ch, "jewelry9", 1 + rand(1));	// "Бронзовый крестик" (+1 к везению)
 		}
-		
-		// > тир 1, полезные предметы с + к статам, шансы: ~60% на общий прок и ~25-30% индивидуальный; TODO дополнить
-		if (irand >= 39)
+
+		if (rand(3) == 1) AddItems(ch, "mineral12", 1 + rand(3));		// "Верёвка"
+		if (rand(2) == 1) AddItems(ch, "mineral14", 1 + rand(5));		// "Ножницы"
+		if (rand(2) == 1) AddItems(ch, "mineral16", 1 + rand(5));		// "Гвозди"
+
+		if (rank > 4 && irand >= 3)										// < качество poor
 		{
-			if (rand(3) == 1) AddItems(ch, "indian10", 1);				// "Оберег Эхекатля" (+20 пистолеты, +10 меткость, -20 скрытность)
-			if (rand(3) == 1) AddItems(ch, "indian7", 1);				// "Идол Великой Матери" (+10 к везению)
-			if (rand(2) == 1) AddItems(ch, "jewelry8", 1 + rand(1));	// "Бронзовое кольцо" (+10 к везению)
-			if (rand(2) == 1) AddItems(ch, "jewelry9", 1 + rand(1));	// "Бронзовый крестик" (+10 к везению)
-		}
-		
-		// > среднее холодное оружие
-		if (rank > 6 && irand >= 29)									// < качество poor, шанс ~70% при ранге ГГ 7+
-		{
-			GenerateAndAddItems(ch, "topor3", 1);						// "Клевец"
-			GenerateAndAddItems(ch, "blade3", 1);						// "Катласс"
-		}
-		if (rank > 11 && irand >= 49)									// < качество ordinary, шанс ~50% при ранге ГГ 12+
-		{
+			// > среднее холодное оружие
+			if (rand(1)) GenerateAndAddItems(ch, "topor3", 1);			// "Клевец"
+			if (rand(1)) GenerateAndAddItems(ch, "blade3", 1);			// "Катласс"
 			
+			// > тяжёлое холодное оружие
+			if (rand(1)) GenerateAndAddItems(ch, "blade10", 1);			// "Фальшион"
+			if (rand(1)) GenerateAndAddItems(ch, "blade35", 1);			// "Корделас"
+			if (rand(1)) GenerateAndAddItems(ch, "topor1", 1);			// "Боевой топор"
+			if (rand(1)) GenerateAndAddItems(ch, "blade17", 1);			// "Клеймор"
+		}
+		if (rank > 6 && irand >= 4)										// < качество ordinary
+		{
 			GenerateAndAddItems(ch, "blade12", 1);						// "Катцбальгер"
 			
-			if (drand(1) && CheckAttribute(&TEV, "GipsyFortuneBonus"))
-				GenerateAndAddItems(ch, "blade18", 1);					// "Хангер", < ~50% и только с бонусом от гадания цыганки за 5000
+			if (CheckAttribute(&TEV, "GipsyFortuneBonus"))
+				GenerateAndAddItems(ch, "blade18", 1);					// "Хангер"
 		}
-		if (rank > 14 && irand >= 69)									// < качество good, шанс ~30% при ранге ГГ 15+
+		if (rank > 9 && irand >= 6)										// < качество good
 		{
-			if (drand(1) && CheckAttribute(&TEV, "GipsyFortuneBonus") && rand(3) == 3)
+			if (CheckAttribute(&TEV, "GipsyFortuneBonus"))
 			{
 				if (rand(1))
-					GenerateAndAddItems(ch, "blade31", 1);				// "Шамшир" < ~25% и только с бонусом от гадания цыганки за 5000
+					GenerateAndAddItems(ch, "blade31", 1);				// "Шамшир"
 				else
-					GenerateAndAddItems(ch, "blade34", 1);				// "Скаллоп" < ~25% и только с бонусом от гадания цыганки за 5000
+					GenerateAndAddItems(ch, "blade34", 1);				// "Скаллоп"
 			}
 		}
-		
-		// > тяжёлое холодное оружие
-		if (rank > 9 && irand >= 39)									// < качество poor, шанс ~60% при ранге ГГ 10+
+
+		if (rank > 6 && irand >= 4)										// < качество ordinary
 		{
-			GenerateAndAddItems(ch, "blade10", 1);						// "Фальшион"
-			GenerateAndAddItems(ch, "blade35", 1);						// "Корделас"
-			GenerateAndAddItems(ch, "topor1", 1);						// "Боевой топор"
-			if (drand(1)) GenerateAndAddItems(ch, "blade17", 1);		// "Клеймор"
+			if (rand(1)) GenerateAndAddItems(ch, "blade8", 1);			// "Госсемесер"
 		}
-		
-		if (rank > 14 && irand >= 59)									// < качество ordinary, шанс ~40% при ранге ГГ 15+
+
+		if (rank > 9 && irand >= 5)										// < качество good
 		{
-			if (drand(1)) GenerateAndAddItems(ch, "blade8", 1);			// "Госсемесер"
+			if (rand(1)) GenerateAndAddItems(ch, "blade15", 1);			// "Сторта"
+			if (rand(1)) GenerateAndAddItems(ch, "blade21", 1);			// "Бастард"
+			if (rand(1)) GenerateAndAddItems(ch, "topor2", 1);			// "Рейтарский чекан"
 		}
-		
-		if (rank > 19 && irand >= 79)									// < качество good, шанс ~20% при ранге ГГ 20+
-		{
-			if (drand(1))
-			{
-				GenerateAndAddItems(ch, "blade15", 1);					// "Сторта"
-				GenerateAndAddItems(ch, "blade21", 1);					// "Бастард"
-				GenerateAndAddItems(ch, "topor2", 1);					// "Рейтарский чекан"
-			}
-		}
-		
+
 		// > тир 2
-		if (rand(2) == 2) AddItems(ch, "potion5", 1 + rand(4));			// "Виноград"
-		if (rand(3) == 3) AddItems(ch, "potionwine", 1 + rand(2));		// "Отличное вино"
-		if (rand(4) == 4) AddItems(ch, "potion3", 1 + rand(1));			// "Противоядие"
-		
+		if (rand(1)) AddItems(ch, "potion5", 1 + rand(4));				// "Виноград"
+		if (rand(2) == 1) AddItems(ch, "potionwine", 1 + rand(2));		// "Отличное вино"
+		if (rand(3) == 1) AddItems(ch, "potion3", 1 + rand(1));			// "Противоядие"
+
 		// > тир 3
 		if (rand(1)) AddItems(ch, "indian8", 1 + rand(3));
-		
-		// филлерный мусор, то, что есть всегда, шанс 100%
+
+		// > травы
+		if (rand(1)) AddItems(ch, "herb_zingiber", 1 + rand(4));		// "Корень имбиря"
+		if (rand(1)) AddItems(ch, "herb_matricaria", 1 + rand(4));		// "Матрикария"
+		if (rand(1)) AddItems(ch, "herb_ginseng", 1 + rand(4));			// "Женьшень"
+
+		// филлерный мусор, то, что есть всегда
 		AddItems(ch, "mineral7", 1 + rand(1));							// "Трубка"
 		return;
 	}
-	
+
 	// издевательство -->
     if(rank == 1 && rand(5) == 1) AddItems(ch, "sculMa3", 1);
 	if(rank == 1 && rand(10) == 1 && !CheckMainHeroTotem("Totem_13")) AddItems(ch, "Totem_13", 1);
@@ -429,46 +394,49 @@ void GiveItemToTrader(aref ch)
 	//<-- дача карты ГПК в магазин Йоста 
 
 	// > КРАФТ: рецепты и предметы
+	if (rand(4) == 4) AddItems(ch, "mineral12", 1 + rand(1));	// "Верёвка"
 	if (ch.sex == "man")
 	{
 		if (rank >= 5)
 		{
-			itemID = "crucible";
-			if (rand(9) == 2)
-				AddItems(ch, itemID, 1);
+			if (rand(3) == 3)
+				AddItems(ch, "crucible", 1);
 
-			itemID = "bullet_mold";
-			if (rand(9) == 2)
-				AddItems(ch, itemID, 1);
+			if (rand(3) == 2)
+				AddItems(ch, "bullet_mold", 1);
 
 			itemID = "recipe_cartridge";
-			if (rand(9) == 2 && !isMultiObjectKnown(itemID))
+			if (rand(3) == 1 && !isMultiObjectKnown(itemID))
 				AddItems(ch, itemID, 1);
 
 			itemID = "recipe_harpoon";
-			if (rand(9) == 2 && !isMultiObjectKnown(itemID))
+			if (rand(3) == 0 && !isMultiObjectKnown(itemID))
 				AddItems(ch, itemID, 1);
 		}
+
+		if (rand(3) == 3) AddItems(ch, "mineral11", 1 + rand(2));	// "Точильный камень"
+		if (rand(3) == 3) AddItems(ch, "mineral16", 1 + rand(2));	// "Гвозди"
 	}
 	else if (ch.sex == "woman")
 	{
 		if (rank >= 5)
 		{
-			itemID = "mortar_and_pestle";
-			if (rand(9) == 3)
-				AddItems(ch, itemID, 1);
+			if (rand(3) == 3)
+				AddItems(ch, "mortar_and_pestle", 1);
 
-			itemID = "lamp";
-			if (rand(9) == 3)
-				AddItems(ch, itemID, 1);
+			if (rand(3) == 2)
+				AddItems(ch, "lamp", 1);
 
 			if (rank >= 7)
 			{
 				itemID = "recipe_potion1";
-				if (rand(9) == 3 && !isMultiObjectKnown(itemID))
+				if (rand(3) == 1 && !isMultiObjectKnown(itemID))
 					AddItems(ch, itemID, 1);
 			}
 		}
+
+		if (rand(3) == 3) AddItems(ch, "mineral14", 1 + rand(2));	// "Ножницы"
+		if (rand(3) == 3) AddItems(ch, "mineral13", 1 + rand(2));	// "Бронзовый котелок"
 	}
 	// < КРАФТ
 
@@ -1379,6 +1347,10 @@ string SelectQuestShoreLocation()
 		while(TargetLocation == "" && i < 10)
 		{
 			TargetLocation = GetIslandRandomFreeShoreId(CurIsland.id);
+			if (TargetLocation == "")
+			{
+			    break;
+			}
 			if (!isLocationFreeForQuests(TargetLocation)) 
 			{
 				TargetLocation = ""; i++;
@@ -1408,6 +1380,10 @@ string SelectQuestShoreLocationFromSea(string CurIsland)
 		while(TargetLocation == "" && i < 10)
 		{
 			TargetLocation = GetIslandRandomFreeShoreId(rIsland.id);
+			if (TargetLocation == "")
+			{
+			    break;
+			}
 			if (!isLocationFreeForQuests(TargetLocation)) 
 			{
 				TargetLocation = ""; i++;
@@ -2021,15 +1997,20 @@ void FreeSitLocator(string location, string locator)
 
 	ref rCharacter; //ищем
 	int n;
+	bool bOk = false;
+	float locx, locy, locz;
+	string sLocator = "";
 
 	for (n=0; n<MAX_CHARACTERS; n++)
 	{
+		bOk = false;
 		makeref(rCharacter,Characters[n]);
 		if (CheckAttribute(rCharacter, "location"))
 		{
             if (rCharacter.location == location && rCharacter.location.locator == locator)
             {
             	ChangeCharacterAddressGroup(rCharacter, "none", "none", "none"); // в никуда
+            	bOk = true;
             }
             else
             {
@@ -2037,8 +2018,23 @@ void FreeSitLocator(string location, string locator)
             	{
             		//Если загруженны, то выйдем из локации
 					LogoffCharacter(rCharacter);
+					bOk = true;
             	}
             }
+            if (bOk && IsEntity(rCharacter))
+			{
+				GetCharacterPos(rCharacter, &locx, &locy, &locz);
+
+				sLocator = LAi_FindNearestLocator("tables", locx, locy, locz);
+				if (sLocator != "")
+				{
+					TeleportCharacterToLocator(rCharacter, "tables", sLocator);
+				}
+				else
+				{
+					TeleportCharacterToPos(rCharacter, locx-0.8, locy, locz-0.8);
+				}
+			}
 		}
     }
 }
@@ -3216,4 +3212,26 @@ void ConvertPinctadaToPearlItems(ref chr, ref iSmall, ref iBig)
 
     if (MOD_BETTATESTMODE == "On")
         Log_TestInfo("Обмен жемчужниц: pinctadaQty: " +pinctadaQty +" iSmall: " +iSmall +" iBig: " +iBig);
+}
+
+bool CharacterIsAlive(string id) 
+{
+	int idx = GetCharacterIndex(id);
+	if (idx < 0) return false;
+
+	return !CharacterIsDead(&characters[idx]);
+}
+
+bool CharacterIsHere(string id)
+{
+	int idx = GetCharacterIndex(id);
+	if (idx < 0) return false;
+
+	ref sld = &characters[idx];
+	if (sld.location == pchar.location && !LAi_IsDead(sld))
+	{
+		return true;
+	}
+
+    return false;
 }

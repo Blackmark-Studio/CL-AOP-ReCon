@@ -43,3 +43,12 @@ De ninguna manera, cariño, solo un poco de olvido...
 Beliz_Waitress_12 {
 No, ninguna pregunta...
 }
+Beliz_Waitress_13 {
+¿No sabrás por casualidad dónde está Carla ahora mismo?
+}
+Beliz_Waitress_14 {
+Eh... No. Mejor preguntad a los habitantes de la ciudad. Estoy segura de que ellos sabrán deciros algo.
+}
+Beliz_Waitress_15 {
+Está bien, preciosa, me marcho.
+}

@@ -71,6 +71,9 @@ void InitInterface(string iniName)
     
     npchar = GetCharacter(sti(pchar.GenQuest.Cards.npcharIdx));
 
+	iMoneyP = sti(pchar.Money); // mitrokosta теперь смотрим на реальные деньги только в начале и в конце
+	iMoneyN = sti(npchar.Money);
+
 	int iPlayMode;
 
 	if (iRate < 500) iPlayMode = 1;
@@ -150,7 +153,7 @@ void InitInterface(string iniName)
 	CreateString(true,"MoneyLose", "", "INTERFACE_ULTRASMALL",COLOR_NORMAL, 785, 314, SCRIPT_ALIGN_LEFT,1.0);
 	CreateString(true,"MoneyDiff", "", "INTERFACE_ULTRASMALL",COLOR_NORMAL, 785, 329, SCRIPT_ALIGN_LEFT,1.0);
 	CreateString(true,"TimePassed", "", "INTERFACE_ULTRASMALL",COLOR_NORMAL, 785, 344, SCRIPT_ALIGN_LEFT,1.0);
-	
+	CreateString(true,"CountCardsPlayer", "", "INTERFACE_ULTRASMALL",COLOR_NORMAL, 390, 365, SCRIPT_ALIGN_CENTER,1.5);
     CreateString(true,"Beta_P", "", "INTERFACE_ULTRASMALL",COLOR_NORMAL, 380, 370, SCRIPT_ALIGN_LEFT,1.0);
     CreateString(true,"Beta_N", "", "INTERFACE_ULTRASMALL",COLOR_NORMAL, 380, 210, SCRIPT_ALIGN_LEFT,1.0);
     CreateString(true,"Beta_Next", "", "INTERFACE_ULTRASMALL",COLOR_NORMAL, 230, 310, SCRIPT_ALIGN_LEFT,1.0);
@@ -182,10 +185,7 @@ void Exit()
 	if (!openExit)
 	{
 		PlaySound("uplata");
-		TEV.Gambling.pcharMoney = pchar.money;
-		TEV.Gambling.LoseMoney = sti(TEV.Gambling.LoseMoney) + (sti(TEV.Gambling.pcharMoney) - iMoneyP);
-		AddMoneyToCharacter(pchar, -(sti(pchar.Money) - iMoneyP));
-		AddMoneyToCharacter(npchar, iChest - (sti(npchar.Money) - iMoneyN));
+		TEV.Gambling.LoseMoney = sti(TEV.Gambling.LoseMoney) + (money_i * iRate);
 	}
 	else
 	{
@@ -197,7 +197,10 @@ void Exit()
 				DoQuestCheckDelay("exit_sit", 0.6);
 		}
 	}
-	
+
+	AddMoneyToCharacter(pchar, iMoneyP - sti(pchar.Money)); // mitrokosta раздача денег теперь в конце
+	AddMoneyToCharacter(npchar, iMoneyN - sti(npchar.Money));
+
 	TEV.Stats.Gambling.Cards.LoseMoney = sti(TEV.Stats.Gambling.Cards.LoseMoney) + sti(TEV.Gambling.LoseMoney);
 	TEV.Stats.Gambling.Cards.WinMoney = sti(TEV.Stats.Gambling.Cards.WinMoney) + sti(TEV.Gambling.WinMoney);
 	
@@ -206,7 +209,7 @@ void Exit()
 	TEV.Gambling.Diff.Plus = "";
 	TEV.Gambling.DiffAll.Plus = "";
 	
-	if (CheckCharacterPerk(pchar, "HawkEye"))
+	if (GetOfficersPerkUsing(pchar, "HawkEye", true))
 	{
 		Log_Info(XI_ConvertString("BoalGameCardWin") + ": " + iHeroWin + " (" + GetStrSmallRegister(XI_ConvertString("Total")) + " " + (Statistic_AddValue(Pchar, "GameCards_Win", 0) + iHeroWin) + ")");
 		Log_Info(XI_ConvertString("BoalGameLose") + ": " + iHeroLose + " (" + GetStrSmallRegister(XI_ConvertString("Total")) + " " + (Statistic_AddValue(Pchar, "GameCards_Lose", 0) + iHeroLose) + ")");
@@ -569,27 +572,25 @@ void RedrawCards()
 }
 void RedrawDeck()
 {
-    // монетки с запасом
-    int i;
-    for (i=35; i>=0; i--)
+	// монетки с запасом
+	int i;
+	for (i=35; i>=0; i--)
 	{
-        CreateImage("Money_"+i,"","", 0, 0, 0, 0);
-        CreateImage("PCard"+i, "", "", 0, 0, 0, 0);
+        CreateImage("Money_" + i, "", "", 0, 0, 0, 0);
+        CreateImage("PCard" + i, "", "", 0, 0, 0, 0);
 	}
 	money_i = 0; // индекс монетки
-    moneyOp_i = 0;
-    iChest = 0; // на кону
-    
-    iMoneyP = sti(pchar.Money);
-    iMoneyN = sti(npchar.Money);
-    ShowMoney();
-    
-    // тасуем карты
-    PackShake();
-    howPchar  = 0; // карты на руках
-    howNpchar = 0;
-    SetNextTip();
-    BetaInfo();
+	moneyOp_i = 0;
+	iChest = 0; // на кону
+
+	ShowMoney();
+
+	// тасуем карты
+	PackShake();
+	howPchar  = 0; // карты на руках
+	howNpchar = 0;
+	SetNextTip();
+	BetaInfo();
 }
 
 void SetNextTip()
@@ -658,14 +659,10 @@ void BetaInfo()
         GameInterface.strings.Beta_WinLose = "Beta Win " + (Statistic_AddValue(Pchar, "GameCards_Win", 0)+iHeroWin) + " Lose " + (Statistic_AddValue(Pchar, "GameCards_Lose", 0)+iHeroLose);
     }
 	
-	SetFormatedText("B_TEXT_2", "");
-	CreateImage("IMAGE_HAWKEYE_PERK", "PERK_ENABLE", "HawkEye", 0, 0, 0, 0);
-	
-	if (CheckCharacterPerk(pchar, "HawkEye") && CountCardsP() > 0)
-	{
-		CreateImage("IMAGE_HAWKEYE_PERK", "PERK_ENABLE", "HawkEye", 375, 367, 390, 383);
-		SetFormatedText("B_TEXT_2", "" + CountCardsP());
-	}
+	if (CountCardsP() > 0)
+		GameInterface.strings.CountCardsPlayer = "" + CountCardsP();
+	else
+		GameInterface.strings.CountCardsPlayer = "";
 	
 	int iDiff = sti(TEV.Gambling.WinMoney) - sti(TEV.Gambling.LoseMoney);
 	string sDiff = "";
@@ -776,7 +773,7 @@ bool CheckGame()
         
         if (CheckNextGame() && rand(10) < 10) // есть деньги на игру
         {
-            sTemp += NewStr() + RandPhraseSimple(XI_ConvertString("BoalGameCheckGame_3"),XI_ConvertString("BoalGameCheckGame_4"));
+            sTemp += NewStr() + RandPhraseSimple(XI_ConvertString("BoalGameCheckGame_3"), XI_ConvertString("BoalGameCheckGame_4"));
         }
         else
         {
@@ -791,7 +788,7 @@ bool CheckGame()
     }
     else
     {
-		bool bChecker = (GetCharacterSPECIAL(pchar, SPECIAL_P) > 3) || (CheckCharacterPerk(pchar, "HawkEye"));
+		bool bChecker = (GetCharacterSPECIAL(pchar, SPECIAL_P) > 3) || (GetOfficersPerkUsing(pchar, "HawkEye", true));
         ok1 = (CountCardsN() > 16) && (CountCardsN() <22);
         // жухло!!!!! -->
         if (!bChecker && GetCharacterSkillToOld(pchar, SKILL_FORTUNE) < rand(12))
@@ -867,20 +864,16 @@ void NewGameBegin()
 
 void EndGameCount(int who)
 {
-	TEV.Gambling.pcharMoney = pchar.Money;
-	
     openExit = true;
     if (who == 1) // ГГ
     {
-        TEV.Gambling.WinMoney = sti(TEV.Gambling.WinMoney) + (iChest - (sti(TEV.Gambling.pcharMoney) - iMoneyP));
-		AddMoneyToCharacter(pchar, iChest - (sti(pchar.Money) - iMoneyP));
-        AddMoneyToCharacter(npchar,  -(sti(npchar.Money) - iMoneyN));
+		iMoneyP += iChest;
+		TEV.Gambling.WinMoney = sti(TEV.Gambling.WinMoney) + (iChest - (money_i * iRate));
     }
     else
     {
-		TEV.Gambling.LoseMoney = sti(TEV.Gambling.LoseMoney) + (sti(TEV.Gambling.pcharMoney) - iMoneyP);
-		AddMoneyToCharacter(pchar, -(sti(pchar.Money) - iMoneyP));
-        AddMoneyToCharacter(npchar, iChest - (sti(npchar.Money) - iMoneyN));
+		iMoneyN += iChest;
+		TEV.Gambling.LoseMoney = sti(TEV.Gambling.LoseMoney) + (iChest - (moneyOp_i * iRate));
     }
 }
 
@@ -888,23 +881,23 @@ void OpenCards()
 {
     string sTemp;
 	SetFormatedText("B_TEXT_1", "");
-    if (CountCardsP() > makefloat(CountCardsN() + 0.1*dir_i_start)) // преимущество тому, кто сдает (те ходит последним)
+    if (CountCardsP() > makefloat(CountCardsN() + 0.1 * dir_i_start)) // преимущество тому, кто сдает (те ходит последним)
     {
         EndGameCount(1);
-        sTemp = RandSwear() + " " + XI_ConvertString("BoalGameOpenCards_1")+ GetLangSexPhrase("","а") +". " + UpperFirst(XI_ConvertString("BoalGameOpenCards_2")) +" " + CountCardsP() +", " + XI_ConvertString("BoalGameOpenCards_3") + " " + CountCardsN()+"." ;
+        sTemp = RandSwear() + " " + XI_ConvertString("BoalGameOpenCards_1") + GetLangSexPhrase("","а") + ". " + UpperFirst(XI_ConvertString("BoalGameOpenCards_2")) + " " + CountCardsP() + ", " + XI_ConvertString("BoalGameOpenCards_3") + " " + CountCardsN() + "." ;
         iHeroWin++;
     }
     else
     {
         EndGameCount(-1);
-        sTemp = XI_ConvertString("BoalGameOpenCards_4") + " " + XI_ConvertString("BoalGameOpenCards_3") + " " + CountCardsN() +", " + XI_ConvertString("BoalGameOpenCards_2") +" " + CountCardsP()+". " + XI_ConvertString("BoalGameOpenCards_5");
+        sTemp = XI_ConvertString("BoalGameOpenCards_4") + " " + XI_ConvertString("BoalGameOpenCards_3") + " " + CountCardsN() + ", " + XI_ConvertString("BoalGameOpenCards_2") + " " + CountCardsP() + ". " + XI_ConvertString("BoalGameOpenCards_5");
         iHeroLose++;
     }
 	SetCardTip("");
     if (CheckNextGame() && rand(10) < 10) // есть деньги на игру
     {
 		SetCardTip("action");
-        sTemp += NewStr() + RandPhraseSimple(XI_ConvertString("BoalGameCheckGame_3"),XI_ConvertString("BoalGameCheckGame_4"));
+        sTemp += NewStr() + RandPhraseSimple(XI_ConvertString("BoalGameCheckGame_3"), XI_ConvertString("BoalGameCheckGame_4"));
         bStartGame = 2;
     }
     else
@@ -921,8 +914,8 @@ void OpenCards()
 bool CheckNextGame()
 {
     bool ret = true;
-    if (iRate*3 > iMoneyN) ret = false;
-    if (iRate*3 > iMoneyP) ret = false;
+    if (iRate * 3 > iMoneyN) ret = false;
+    if (iRate * 3 > iMoneyP) ret = false;
     
     return ret;
 }

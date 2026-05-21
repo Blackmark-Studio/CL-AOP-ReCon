@@ -268,6 +268,15 @@ itmtext_RingCapBook
 ... die Flaute hält nun schon den dritten Tag an. Die 'Santa Lucia' bewegt sich kaum, und wir haben noch nicht einmal die Breite von Jamaika erreicht. Ich sehe die schrägen Blicke, die die abergläubischen Matrosen meiner schönen Wawaya zuwerfen – sie halten ihre Anwesenheit an Bord für ein schlechtes Omen...
 ... heute hat einer der Matrosen, als er Rattengift im Laderaum auslegte, ein Fläschchen Arsen direkt ins Fass mit Trinkwasser fallen lassen. Wie ihm das gelungen ist, bleibt mir ein Rätsel. Fünfzig Gallonen Frischwasser sind verdorben. Die Flaute hält an. Meine Geliebte betet zu ihren Göt
 }
+itmname_LesopilkaLog {Logbuch}
+itmdescr_LesopilkaLog
+{
+Ein Logbuch mit einem roten Einband, in dem Informationen über die transportierte Ladung aufgezeichnet sind.
+}
+itmtext_LesopilkaLog
+{
+... Ich habe beschlossen, dass wir für die Dauer der Schiffsreparatur einen Teil der Schätze auf die Insel bringen. Nur für den Fall. Unser Schiff ist im Moment sehr verwundbar und ich kann nicht garantieren, dass ich die wertvolle Ladung schützen kann. Sollten plötzlich Piraten auftauchen, gibt es auf der Insel eine günstige Position, von der aus wir den Kampf aufnehmen werden...
+}
 itmname_unarmed {Unbewaffnet}
 itmdescr_unarmed {Die Fähigkeit, sich mit der einen Waffe zu verteidigen, die man immer bei sich trägt: den eigenen Fäusten.}
 itmname_blade5 {Parierdolch}
@@ -442,7 +451,7 @@ Eine glattläufige Vorderladerwaffe mit einem zuverlässigeren Mechanismus als d
 ~
 Erfordert den Vorteil 'Musketierausbildung'.
 }
-itmname_mushket_H2 {Exklusive doppelläufige Muskete}
+itmname_mushket_H2 {Doppelläufige Muskete}
 itmdescr_mushket_H2
 {
 Ein doppelläufiges Steinschlossgewehr, eigens angefertigt. Ein exklusives Meisterwerk der Büchsenmacherkunst. Trotz seines hohen Preises ist das Design etwas veraltet. Doch bei all seiner Kraft und Wirksamkeit verlangt diese außergewöhnliche Karabinerflinte vom Besitzer einiges an Können und Erfahrung.
@@ -456,7 +465,7 @@ Tichinguits familiäre Feuerwaffe. Ein einzigartiges Exemplar, gefertigt aus ein
 ~
 Erfordert den Vorteil 'Musketier-Ausbildung'.
 }
-itmname_mushket2x2 {Doppelläufige Muskete}
+itmname_mushket2x2 {Exklusive Doppelläufige Muskete}
 itmdescr_mushket2x2
 {
 Ein Meisterwerk der Saint-Etienne-Waffenschmiedekunst. Die Franzosen waren es, die durch die Verbesserung des Batteriezündschlosses die doppelläufige Büchse erschufen. Ohne Ausbildung an einer Militärschule der Alten Welt ist der Umgang mit dieser Waffe unmöglich.
@@ -635,6 +644,8 @@ itmname_potionrum {Flasche Rum}
 itmdescr_potionrum {Kein Rum kann einen Piraten wie dich umhauen, also trink ruhig weiter... Übrigens: Wenn du verletzt bist, hilft der Alkohol darin, Wunden zu heilen und Infektionen vorzubeugen.}
 itmname_potionwine {Ausgezeichneter Wein}
 itmdescr_potionwine {Einer der besten französischen Weine in der Karibik. Seine entspannende Wirkung hilft dir, neue Kraft zu schöpfen und Infektionen vorzubeugen.}
+itmname_potionsangari {Sangaree}
+itmdescr_potionsangari {Ein erfrischendes alkoholisches Getränk. Die Kombination aus Rotwein und starkem Rum, verfeinert mit geheimen Zutaten, löscht den Durst bei unerträglicher Hitze perfekt. Das Getränk belebt und spendet Kraft, ohne den schweren Rausch von reinem Alkohol zu verursachen.}
 itmname_jewelry1 {Saphir}
 itmdescr_jewelry1 {Ein seltener blauer Saphir, der aus den Tiefen des spanischen Vizekönigreichs Neugranada stammt. Gerüchten zufolge werden diese Edelsteine in Minen bei Quito oder in den Anden gefunden, wo ihre Farbe mit den tiefsten Wassern des Pazifiks verglichen wird.}
 itmname_jewelry2 {Diamant}
@@ -881,6 +892,11 @@ itmname_recipe_migraine_potion {Anleitung (Dekokt gegen Migräne)}
 itmdescr_recipe_migraine_potion {Anleitung zur Herstellung eines Migräne-Heiltranks.}
 itmname_recipe_potion1 {Anleitung (Heiltrank)}
 itmdescr_recipe_potion1 {Anleitung zur Herstellung eines Heiltranks.}
+itmname_recipe_potionsangari {Rezept für „Sangaree“}
+itmdescr_recipe_potionsangari
+{
+Ein mit hastiger Handschrift beschriebener Zettel. Er erläutert ausführlich die Technik des Mischens von Wein und Rum für den perfekten „Sangaree“. Ermöglicht es, das Getränk bei vorhandenen Zutaten und Alchemie-Set selbst herzustellen.
+}
 itmname_Mineral2 {Laute}
 itmdescr_Mineral2 {Ein beliebtes Zupfinstrument. Ein talentierter Lautenspieler kann oft die Moral von Soldaten oder Seeleuten heben.}
 itmname_Mineral3 {Kerze}
@@ -1000,13 +1016,6 @@ itmname_PDM_PJ_Vino {Flasche Wein}
 itmdescr_PDM_PJ_Vino {Eine Flasche erlesenen, teuren Weins, die an einen Soldaten geliefert werden soll.}
 itmname_PDM_PJ_Rom {Flasche Rum}
 itmdescr_PDM_PJ_Rom {Eine Flasche billiger Rum, die an einen Soldaten geliefert werden soll.}
-itmname_PDM_PJ_BsRL {Flasche mit rosa Schleife}
-itmdescr_PDM_PJ_BsRL
-{
-Eine Flasche mit einer ordentlich gebundenen rosa Schleife.
-* * *
-Passiv: +2 Glück, +2 Handel, -2 Tarnung.
-}
 itmname_DesMoinesLocies {Des Moines Rutier}
 itmdescr_DesMoinesLocies {Detaillierte Segelanweisungen für sichere Navigation und Ankerplätze entlang der Küste der Siedlung Des Moines.}
 itmname_letter_A {Versiegelter Brief}
@@ -1054,7 +1063,7 @@ itmname_instrument1 {Feine Säge}
 itmdescr_instrument1
 {
 Ein unkompliziertes Werkzeug, das von Generationen von Schiffszimmerleuten verwendet wurde. Dieses Exemplar liegt besonders angenehm in der Hand und ermöglicht schnelle, präzise Schnitte. Mit einem solchen Instrument kann ein erfahrener Zimmermann stundenlang arbeiten, ohne zu ermüden.
-+10 Reparieren
+Passiv: +5 Reparieren.
 }
 
 itmname_strangeNoteLSC	{Die seltsame Notiz}
@@ -1065,4 +1074,18 @@ Ein Stück Pergament mit Gekritzel
 itmtext_strangeNoteLSC
 {
 Ich möchte mich in die Umarmung des Landes für das Meer begeben, um darin das Ende aller Existenz zu sehen.
+}
+
+itmname_TizerJournal   {Daniel Tudors Tagebuch}
+itmdescr_TizerJournal
+{
+Ein schweres, ledergebundenes Tagebuch mit einem Schloss. Auf dem Einband ist eingeprägt:\n„Eigentum von Daniel Gabrielo Tudor“.\nDas Lesen solcher Memoiren wird geraume Zeit in Anspruch nehmen.
+}
+itmtext_TizerJournal
+{
+Viele Narren suchen die Insel der Gerechtigkeit und verlassen sich dabei auf einen Kompass oder kartografische Kenntnisse. Doch diese Insel wird niemals auf Karten verzeichnet sein, und die Kompassnadel wird verrücktspielen, sobald man sich den verfluchten Riffen nähert.
+Die Insel akzeptiert jene nicht, die aus müßiger Neugier oder Habgier kommen. Um die Umarmung des Landes vom Meer aus zu erreichen, muss man sich der Gnade der Elemente ausliefern und in völliger Unwissenheit darüber bleiben, was mit Seele und Leib geschehen wird.
+Nur durch das Gebrüll eines gewaltigen Sturms, nur durch das Krachen brechender Masten und einen unvermeidlichen Schiffbruch offenbart sich der Pfad.
+Das Meer selbst wird entscheiden, was mit dir geschieht – das Wichtigste ist, seiner Macht keinen Widerstand zu leisten. Und das größte Rätsel der Insel: Die Insel weist Armadas ab.
+Wer sich zu diesem Schritt entschließt, muss ihn allein tun. Ohne Mannschaft. Ohne treue Kameraden im Rücken. Nur du und der Zorn des Ozeans. Andernfalls wird sie alle der Untergang erwarten...
 }

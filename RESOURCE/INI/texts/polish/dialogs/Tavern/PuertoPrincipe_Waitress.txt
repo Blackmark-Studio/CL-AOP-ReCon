@@ -77,7 +77,7 @@ PuertoPrincipe_Waitress_23 {
 To po co mi zawracasz głowę?!
 }
 PuertoPrincipe_Waitress_24 {
-Mówię ci przecież, że wiem, jak się dowiedzieć. Słuchaj więc uważnie. Richard jest bardzo skrupulatny, wszystko zapisuje w swoim dzienniku pokładowym. Musisz zdobyć ten dziennik, to wszystko.
+Mówię ci przecież, że wiem, jak się dowiedzieć. Słuchaj więc uważnie. Richard jest bardzo skrupulatny, wszystko zapisuje w swoim dzienniku. Musisz zdobyć ten dziennik, to wszystko.
 }
 PuertoPrincipe_Waitress_25 {
 Ha! Może jeszcze powiesz mi, jak to zrobić?

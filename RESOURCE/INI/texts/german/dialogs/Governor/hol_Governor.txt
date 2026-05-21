@@ -956,7 +956,7 @@ hol_Governor_266 {
 Hm... Nicht schlecht, würde ich sagen...
 }
 hol_Governor_267 {
-Das denke ich auch. Erobern Sie mindestens vier Schiffe, bringen Sie sie nach Curaçao in den Hafen von Willemstad und übergeben Sie sie mir persönlich. Für jedes gelieferte Schiff erhalten Sie 100.000 Münzen. Glauben Sie, dass Sie dieser Aufgabe gewachsen sind?
+Das denke ich auch. Erobern Sie mindestens vier Schiffe, bringen Sie sie nach Curaçao in den Hafen von Willemstad und übergeben Sie sie mir persönlich. Für jedes gelieferte Schiff erhalten Sie 200.000 Münzen. Glauben Sie, dass Sie dieser Aufgabe gewachsen sind?
 }
 hol_Governor_268 {
 Ich denke schon.

@@ -868,29 +868,21 @@ void ProcessDialogEvent()
 		break;
 
 		case "ConvoyAreYouSure_PU":
-			CommonGenerator("QuestTrader");
 			dialog.text = StringFromKey("Common_Portman_184", RandPhraseSimple(
 						StringFromKey("Common_Portman_182"),
 						StringFromKey("Common_Portman_183")));
 			Link.l1 = StringFromKey("Common_Portman_185");
 			Link.l1.go = "exit";
-			pchar.quest.destination = FindDestinationCity(npchar, sti(TEV.ArtOfDeals.PortOffice.Convoy) + 1);
-			pchar.ConvoyQuest.City = npchar.city;
-			AddDialogExitQuest("prepare_for_convoy_quest");
-			SaveCurrentNpcQuestDateParam(npchar, "work_date_PU");
+			CommonGeneratorConvoyAndPassenger(NPChar, "QuestTrader");
 		break;
 
 		case "PassangerAreYouSure_PU":
-			CommonGenerator("QuestPassanger");
 			dialog.text = StringFromKey("Common_Portman_188", RandPhraseSimple(
 						StringFromKey("Common_Portman_186"),
 						StringFromKey("Common_Portman_187")));
 			Link.l1 = StringFromKey("Common_Portman_189");
 			Link.l1.go = "exit";
-			TEV.GenQuest_DestinationCity = FindDestinationCity(npchar, sti(TEV.ArtOfDeals.PortOffice.Passenger) + 1);
-			pchar.GenQuest.GetPassenger_City = npchar.city;
-			AddDialogExitQuest("prepare_for_passenger_quest");
-			SaveCurrentNpcQuestDateParam(npchar, "work_date_PU");
+			CommonGeneratorConvoyAndPassenger(NPChar, "QuestPassanger");
 		break;
 
 		case "PortmanQuest_NF":
@@ -1182,7 +1174,7 @@ void ProcessDialogEvent()
 
 		case "BurntShip19":
 			sld = &Characters[GetCompanionIndex(PChar, sti(NPChar.Quest.BurntShip.ShipCompanionIndex))];
-			cn = GetShipSellPrice(sld, CharacterFromID(NPChar.city + "_Portmaner")) * 2;
+			cn = GetShipSellPrice(sld, CharacterFromID(NPChar.city + "_Portman")) * 2;
 			rRealShip = GetRealShip(GetCharacterShipType(sld));
 			if (sti(rRealShip.Stolen)) cn *= 3;
 
@@ -2321,15 +2313,6 @@ string GenQuestPortman_GenerateGem() // камни
 		break;
 	}
 	return itemID;
-}
-
-void CommonGenerator(string sCharID)
-{
-	dialogDisable = true;
-	ref chr = characterFromID(sCharID);
-
-	if (GetCharacterIndex(chr.id) >= 0)
-		ChangeCharacterAddressGroup(characterFromID(sCharID), "none", "", "");
 }
 
 // evganat - отношение портмана

@@ -135,6 +135,7 @@ void ProcessDialogEvent()
 				}
 				link.l2 = StringFromKey("GenQuests_Dialog_32");
 				link.l2.go = "ReasonToFast_Hunter3";
+				break;
 			}
 
 			if (NPChar.id == "PirateOnUninhabited_0")
@@ -146,6 +147,7 @@ void ProcessDialogEvent()
 				link.l1.go = "PiratesOnUninhabited_3";
 				link.l2 = StringFromKey("GenQuests_Dialog_37", pchar);
 				link.l2.go = "PiratesOnUninhabited_1";
+				break;
 			}
 
 			if (NPChar.id == "ShipWreck_0")
@@ -157,10 +159,12 @@ void ProcessDialogEvent()
 				link.l1.go = "ShipWreck_2";
 				link.l2 = StringFromKey("GenQuests_Dialog_42", pchar);
 				link.l2.go = "ShipWreck_1";
+				break;
 			}
 
 			if (NPChar.id == "Convict_0")
 			{
+				pchar.GenQuest.Convict.ShoreLocation = SelectQuestShoreLocation();
 				dialog.text = StringFromKey("GenQuests_Dialog_46", LinkRandPhrase(
 							StringFromKey("GenQuests_Dialog_43", GetAddress_Form(pchar)),
 							StringFromKey("GenQuests_Dialog_44", pchar),
@@ -170,11 +174,15 @@ void ProcessDialogEvent()
 							StringFromKey("GenQuests_Dialog_48"),
 							StringFromKey("GenQuests_Dialog_49")));
 				link.l1.go = "Convict_0End";
-				link.l2 = StringFromKey("GenQuests_Dialog_54", LinkRandPhrase(
-							StringFromKey("GenQuests_Dialog_51"),
-							StringFromKey("GenQuests_Dialog_52"),
-							StringFromKey("GenQuests_Dialog_53")));
-				link.l2.go = "Convict_Begin";
+				if (pchar.GenQuest.Convict.ShoreLocation != "")
+				{
+					link.l2 = StringFromKey("GenQuests_Dialog_54", LinkRandPhrase(
+								StringFromKey("GenQuests_Dialog_51"),
+								StringFromKey("GenQuests_Dialog_52"),
+								StringFromKey("GenQuests_Dialog_53")));
+					link.l2.go = "Convict_Begin";
+				}
+				break;
 			}
 
 			// "Правосудие на продажу" (Warship, Rosarak)
@@ -197,6 +205,7 @@ void ProcessDialogEvent()
 							StringFromKey("GenQuests_Dialog_58", pchar),
 							StringFromKey("GenQuests_Dialog_59")));
 				link.l2.go = "JusticeOnSale_2";
+				break;
 			}
 		break;
 
@@ -1275,11 +1284,11 @@ void ProcessDialogEvent()
 
 		// Генератор "Каторжане"
 		case "Convict_0End":
-			DialogExit();
 			pchar.GenQuest.Convict = "close";
 			chrDisableReloadToLocation = false;
 			ChangeCharacterReputation(pchar, -1);
-			AddDialogExitQuestFunction("Convict_DialogDisable");
+			AddDialogExitQuestFunction("Convict_ConvictsRunAway");
+			DialogExit();
 		break;
 
 		case "Convict_Begin":
@@ -1309,11 +1318,10 @@ void ProcessDialogEvent()
 						StringFromKey("GenQuests_Dialog_317")));
 			link.l2.go = "Convict_14";
 			Convict_GetMineType();
-			pchar.GenQuest.Convict.ShoreLocation = SelectQuestShoreLocation();
 		break;
 
 		case "Convict_11":
-			dialog.text = StringFromKey("GenQuests_Dialog_319", GetStrSmallRegister(XI_ConvertString("MineType" + pchar.GenQuest.Convict.MineType + "Gen")));
+			dialog.text = StringFromKey("GenQuests_Dialog_319", GetStrSmallRegister(XI_ConvertString("MineType" + pchar.GenQuest.Convict.MineType + "Dat")));
 			if (GetFreeCrewQuantity(pchar) >= sti(pchar.GenQuest.Convict.ConvictQty))
 			{
 				link.l1 = StringFromKey("GenQuests_Dialog_320");
@@ -1324,7 +1332,7 @@ void ProcessDialogEvent()
 		break;
 
 		case "Convict_12":
-			dialog.text = StringFromKey("GenQuests_Dialog_322", GetStrSmallRegister(XI_ConvertString("MineType" + pchar.GenQuest.Convict.MineType + "Gen")));
+			dialog.text = StringFromKey("GenQuests_Dialog_322", GetStrSmallRegister(XI_ConvertString("MineType" + pchar.GenQuest.Convict.MineType + "Dat")));
 			if (sti(pchar.money) >= 3000)
 			{
 				link.l1 = StringFromKey("GenQuests_Dialog_323");
@@ -1366,44 +1374,36 @@ void ProcessDialogEvent()
 			AddCharacterExpToSkill(pchar, "Leadership", 30);
 			AddCharacterExpToSkill(pchar, "Commerce", 60);
 			iTemp = drand(3);
-			if (iTemp <= 1)
-			{
-				dialog.text = StringFromKey("GenQuests_Dialog_333");
-				link.l1 = StringFromKey("GenQuests_Dialog_334");
-				link.l1.go = "exit";
-				pchar.GenQuest.Convict = "close";
-				AddDialogExitQuestFunction("Convict_DialogDisable");
-				AddDialogExitQuest("OpenTheDoors");
-			}
 			if (iTemp == 2)
 			{
 				dialog.text = StringFromKey("GenQuests_Dialog_335");
 				link.l1 = StringFromKey("GenQuests_Dialog_336");
-				link.l1.go = "exit";
-				pchar.GenQuest.Convict = "close";
 				GiveItem2Character(pchar, pchar.GenQuest.Convict.Item);
-				AddDialogExitQuestFunction("Convict_DialogDisable");
-				AddDialogExitQuest("OpenTheDoors");
 				AddCharacterExpToSkill(pchar, "Fortune", 30);
 			}
-			if (iTemp == 3)
+			else if (iTemp == 3)
 			{
 				pchar.GenQuest.Find_Merchant.lastspeak_date = LastSpeakDate();
 				GenerateMerchant();
 				makeref(MerPrm, MerchantParam);
 				dialog.text = StringFromKey("GenQuests_Dialog_337", MerPrm.QuestGoodsIdx, MerPrm.ShipName, MerPrm.nation);
 				link.l1 = StringFromKey("GenQuests_Dialog_338");
-				link.l1.go = "exit";
-				pchar.GenQuest.Convict = "close";
 				AddQuestRecord("Convict", "7");
 				AddQuestUserData("Convict", "sShipName", MerPrm.ShipName);
 				AddQuestUserData("Convict", "sGoodName", MerPrm.QuestGoodsIdx);
 				CloseQuestHeader("Convict");
 				SetFunctionExitFromLocationCondition("Convict_LocExit", pchar.location, false);
-				AddDialogExitQuestFunction("Convict_DialogDisable");
-				AddDialogExitQuest("OpenTheDoors");
 				AddCharacterExpToSkill(pchar, "Sneak", 30);
 			}
+			else
+			{
+				dialog.text = StringFromKey("GenQuests_Dialog_333");
+				link.l1 = StringFromKey("GenQuests_Dialog_334");
+			}
+			link.l1.go = "exit";
+			pchar.GenQuest.Convict = "close";
+			AddDialogExitQuestFunction("Convict_ConvictsRunAway");
+			AddDialogExitQuest("OpenTheDoors");
 		break;
 
 		case "Convict_12_2":
@@ -1424,7 +1424,7 @@ void ProcessDialogEvent()
 			link.l1 = StringFromKey("GenQuests_Dialog_344");
 			link.l1.go = "exit";
 			pchar.GenQuest.Convict = "close";
-			AddDialogExitQuestFunction("Convict_DialogDisable");
+			AddDialogExitQuestFunction("Convict_ConvictsRunAway");
 			AddDialogExitQuest("OpenTheDoors");
 		break;
 
@@ -1446,7 +1446,7 @@ void ProcessDialogEvent()
 			}
 			link.l1.go = "exit";
 			pchar.GenQuest.Convict = "close";
-			AddDialogExitQuestFunction("Convict_DialogDisable");
+			AddDialogExitQuestFunction("Convict_ConvictsRunAway");
 			AddDialogExitQuest("OpenTheDoors");
 		break;
 
@@ -1458,11 +1458,7 @@ void ProcessDialogEvent()
 			{
 				dialog.text = StringFromKey("GenQuests_Dialog_349");
 				link.l1 = StringFromKey("GenQuests_Dialog_350");
-				link.l1.go = "exit";
-				pchar.GenQuest.Convict = "close";
 				GiveItem2Character(pchar, pchar.GenQuest.Convict.Item);
-				AddDialogExitQuestFunction("Convict_DialogDisable");
-				AddDialogExitQuest("OpenTheDoors");
 				AddCharacterExpToSkill(pchar, "Fortune", 30);
 			}
 			else
@@ -1472,17 +1468,17 @@ void ProcessDialogEvent()
 				makeref(MerPrm, MerchantParam);
 				dialog.text = StringFromKey("GenQuests_Dialog_351", MerPrm.QuestGoodsIdx, MerPrm.ShipName, MerPrm.nation);
 				link.l1 = StringFromKey("GenQuests_Dialog_352");
-				link.l1.go = "exit";
-				pchar.GenQuest.Convict = "close";
 				AddQuestRecord("Convict", "7");
 				AddQuestUserData("Convict", "sShipName", MerPrm.ShipName);
 				AddQuestUserData("Convict", "sGoodName", MerPrm.QuestGoodsIdx);
 				CloseQuestHeader("Convict");
 				SetFunctionExitFromLocationCondition("Convict_LocExit", pchar.location, false);
-				AddDialogExitQuestFunction("Convict_DialogDisable");
-				AddDialogExitQuest("OpenTheDoors");
 				AddCharacterExpToSkill(pchar, "Sneak", 30);
 			}
+			link.l1.go = "exit";
+			pchar.GenQuest.Convict = "close";
+			AddDialogExitQuestFunction("Convict_ConvictsRunAway");
+			AddDialogExitQuest("OpenTheDoors");
 		break;
 
 		case "Convict_12_1_End":
@@ -1530,7 +1526,7 @@ void ProcessDialogEvent()
 		break;
 
 		case "Convict_11_2":
-			dialog.text = StringFromKey("GenQuests_Dialog_362", GetStrSmallRegister(XI_ConvertString("MineType" + pchar.GenQuest.Convict.MineType + "Gen")));
+			dialog.text = StringFromKey("GenQuests_Dialog_362", GetStrSmallRegister(XI_ConvertString("MineType" + pchar.GenQuest.Convict.MineType + "Dat")));
 			link.l1 = StringFromKey("GenQuests_Dialog_363", XI_ConvertString(pchar.GenQuest.Convict.ShoreLocation + "Pre"));
 			link.l1.go = "Convict_11_4";
 			link.l2 = StringFromKey("GenQuests_Dialog_364", pchar);
@@ -1579,9 +1575,9 @@ void ProcessDialogEvent()
 			AddQuestUserData("Convict", "sShoreName", XI_ConvertString(pchar.GenQuest.Convict.ShoreLocation + "Gen"));
 			SetFunctionTimerCondition("Convict_SetTimerMeet", 0, 0, 1, false);
 			locations[FindLocation(pchar.GenQuest.Convict.ShoreLocation)].DisableEncounters = true;
-			DialogExit();
-			AddDialogExitQuestFunction("Convict_DialogDisable");
+			AddDialogExitQuestFunction("Convict_ConvictsRunAway");
 			AddDialogExitQuest("OpenTheDoors");
+			DialogExit();
 		break;
 
 		case "Convict_11_7":
@@ -1811,6 +1807,7 @@ void ProcessDialogEvent()
 				AddQuestRecord("Convict", "10");
 				CloseQuestHeader("Convict");
 				SetFunctionExitFromLocationCondition("Convict_LocExit", pchar.location, false);
+				AddDialogExitQuestFunction("Convict_ConvictsRunAway");
 			}
 			if (pchar.GenQuest.Convict == "ToMayak")
 			{
@@ -1821,10 +1818,10 @@ void ProcessDialogEvent()
 				SetFunctionExitFromLocationCondition("Convict_LocExit", pchar.location, false);
 				SetFunctionLocationCondition("Convict_OnMayak", pchar.GenQuest.Convict.Mayak, true);
 				locations[FindLocation(pchar.GenQuest.Convict.Mayak)].DisableEncounters = true;
+				AddDialogExitQuestFunction("Convict_DialogDisable");
 			}
-			DialogExit();
-			AddDialogExitQuestFunction("Convict_DialogDisable");
 			AddDialogExitQuest("OpenTheDoors");
+			DialogExit();
 		break;
 
 		case "Convict_16_3":
@@ -3257,7 +3254,10 @@ void ProcessDialogEvent()
 
 		case "CaptainComission_305":
 			sTemp = GetStrSmallRegister(XI_ConvertString(GetBaseShipParamFromType(sti(pchar.GenQuest.CaptainComission.ShipTypeVictim), "Name") + "Gen"));
-			dialog.text = StringFromKey("GenQuests_Dialog_723", NationNameGenitive(sti(pchar.GenQuest.CaptainComission.Nation)), sTemp, pchar.GenQuest.CaptainComission.VictimShipName, GetStrSmallRegister(XI_ConvertString(Goods[sti(pchar.GenQuest.CaptainComission.Goods)].Name + "Ins")));
+			if (LanguageGetLanguage() == "russian")
+				dialog.text = StringFromKey("GenQuests_Dialog_723", NationNameGenitive(sti(pchar.GenQuest.CaptainComission.Nation)), sTemp, pchar.GenQuest.CaptainComission.VictimShipName, GetStrSmallRegister(XI_ConvertString(Goods[sti(pchar.GenQuest.CaptainComission.Goods)].Name + "Ins")), sTemp, sTemp);
+			else
+				dialog.text = StringFromKey("GenQuests_Dialog_723", NationNameGenitive(sti(pchar.GenQuest.CaptainComission.Nation)), sTemp, pchar.GenQuest.CaptainComission.VictimShipName, GetStrSmallRegister(XI_ConvertString(Goods[sti(pchar.GenQuest.CaptainComission.Goods)].Name + "Ins")));
 			link.l1 = StringFromKey("GenQuests_Dialog_724");
 			link.l1.go = "CaptainComission_307";
 		break;
@@ -3961,7 +3961,10 @@ void ProcessDialogEvent()
 
 		case "CaptainComission_375":
 			sTemp = GetStrSmallRegister(XI_ConvertString(GetBaseShipParamFromType(sti(pchar.GenQuest.CaptainComission.ShipTypeVictim), "Name") + "Gen"));
-			dialog.text = StringFromKey("GenQuests_Dialog_841", NationNameGenitive(sti(pchar.GenQuest.CaptainComission.Nation)), sTemp, pchar.GenQuest.CaptainComission.VictimShipName, GetStrSmallRegister(XI_ConvertString(Goods[sti(pchar.GenQuest.CaptainComission.Goods)].Name + "Ins")));
+			if (LanguageGetLanguage() == "russian")
+				dialog.text = StringFromKey("GenQuests_Dialog_841", NationNameGenitive(sti(pchar.GenQuest.CaptainComission.Nation)), sTemp, pchar.GenQuest.CaptainComission.VictimShipName, GetStrSmallRegister(XI_ConvertString(Goods[sti(pchar.GenQuest.CaptainComission.Goods)].Name + "Ins")), sTemp, sTemp);
+			else
+				dialog.text = StringFromKey("GenQuests_Dialog_841", NationNameGenitive(sti(pchar.GenQuest.CaptainComission.Nation)), sTemp, pchar.GenQuest.CaptainComission.VictimShipName, GetStrSmallRegister(XI_ConvertString(Goods[sti(pchar.GenQuest.CaptainComission.Goods)].Name + "Ins")));
 			link.l1 = StringFromKey("GenQuests_Dialog_842");
 			link.l1.go = "CaptainComission_376";
 		break;
@@ -5893,6 +5896,7 @@ void ProcessDialogEvent()
 			dialog.text = StringFromKey("GenQuests_Dialog_1151", pchar);
 			link.l1 = StringFromKey("GenQuests_Dialog_1152", pchar);
 			link.l1.go = "PiratesOnUninhabited_52";
+			RemovePassenger(pchar, npchar);
 		break;
 
 		case "PiratesOnUninhabited_52":
@@ -6327,13 +6331,6 @@ void ProcessDialogEvent()
 			PChar.Quest.JusticeOnSale_LocationExit.win_condition.l1.location = PChar.location;
 			PChar.Quest.JusticeOnSale_LocationExit.function = "JusticeOnSale_LocationExit";
 		break;
-
-		//Дебаг обнажёнки
-		/*case "CitizenNotBlade": //HardCoffee ref
-			dialog.text = StringFromKey("GenQuests_Dialog_1115", NPCharSexPhrase(StringFromKey("SexEnding_17"),StringFromKey("SexEnding_18")));
-			link.l1 = LinkRandPhrase(StringFromKey("GenQuests_Dialog_1116"), StringFromKey("GenQuests_Dialog_1117"), StringFromKey("GenQuests_Dialog_1118"));
-			link.l1.go = "exit";
-		break;*/
 
 		case "Exit":
 			NextDiag.CurrentNode = NextDiag.TempNode;

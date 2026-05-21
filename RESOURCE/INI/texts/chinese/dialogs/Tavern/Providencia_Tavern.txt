@@ -28,3 +28,27 @@ Providencia_Tavern_7 {
 Providencia_Tavern_8 {
 嗯，也是……
 }
+Providencia_Tavern_9 {
+你看见“锯木厂”雨果了吗？
+}
+Providencia_Tavern_10 {
+他刚才确实在这儿。后来英国的赏金猎人来抓他，幸好他及时从后门溜走了。
+}
+Providencia_Tavern_11 {
+他往哪儿去了？
+}
+Providencia_Tavern_12 {
+嗯……给我1000比索，我就给你指条路。
+}
+Providencia_Tavern_13 {
+给，拿去吧。那他到底往哪儿去了？
+}
+Providencia_Tavern_14 {
+我手头现在没那么多钱。
+}
+Providencia_Tavern_15 {
+他乘船往拉维加去了，去那儿找他吧。
+}
+Providencia_Tavern_16 {
+谢了，回头见。
+}

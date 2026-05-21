@@ -1,5 +1,5 @@
 Andre_Abel_Dialog_1 {
-Greetings to you, captain...
+Oh, is that you, Captain?!
 }
 Andre_Abel_Dialog_2 {
 Glad to see you, Captain.
@@ -8,10 +8,10 @@ Andre_Abel_Dialog_3 {
 @<RandPhraseSimple>
 }
 Andre_Abel_Dialog_4_m {
-Hmm, I haven't seen you before. Do we know each other? The bartender said you got into some trouble and need an escort.
+Hmm, I haven't seen you before. Do we know each other? You look like you've run into some trouble...
 }
 Andre_Abel_Dialog_4_f {
-Hmm, I haven't seen you before. Do we know each other? The bartender said you got into some trouble and need an escort.
+Hmm, I haven't seen you before. Do we know each other? You look like you've run into some trouble...
 }
 Andre_Abel_Dialog_5 {
 Sorry, mate, I’ll be with you soon—can’t talk right now.

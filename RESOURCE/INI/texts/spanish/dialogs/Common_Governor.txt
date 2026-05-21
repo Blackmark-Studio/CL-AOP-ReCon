@@ -14,7 +14,7 @@ Common_Governor_4 {
 @<LinkRandPhrase>
 }
 Common_Governor_5_m {
-¿Qué quieres, canalla? Mis soldados ya están tras de ti; no llegarás muy lejos, guapito. Vamos, subamos.
+¿Qué quieres, canalla? ¡Mis soldados ya están tras de ti—no llegarás lejos, sucio pirata!
 }
 Common_Governor_5_f {
 ¿Qué quieres, desgraciado? ¡Mis soldados ya están tras de ti, no llegarás lejos, canalla!

@@ -1,5 +1,5 @@
 Andre_Abel_Dialog_1 {
-Witam pana, kapitanie...
+O, то wy, kapitanie?!
 }
 Andre_Abel_Dialog_2 {
 Miło pana/panią widzieć, kapitanie/kapitanko.
@@ -8,10 +8,10 @@ Andre_Abel_Dialog_3 {
 @<RandPhraseSimple>
 }
 Andre_Abel_Dialog_4_m {
-Hm, nie widziałem cię tu wcześniej. Znamy się? Barman mówił, że masz kłopoty i potrzebujesz eskorty.
+Hm, nie widziałem cię tu wcześniej. Znamy się? Wyglądasz, jakbyś wpadł w jakieś kłopoty...
 }
 Andre_Abel_Dialog_4_f {
-Hm, nie widziałam cię tu wcześniej. Znamy się? Barman powiedział, że wpadłeś w kłopoty i potrzebujesz eskorty.
+Hm, nie widziałam cię tu wcześniej. Znamy się? Wyglądasz, jakbyś wpadł w jakieś kłopoty...
 }
 Andre_Abel_Dialog_5 {
 Wybacz, przyjacielu, podejdę do ciebie za chwilę, teraz nie mogę poświęcić ci uwagi.

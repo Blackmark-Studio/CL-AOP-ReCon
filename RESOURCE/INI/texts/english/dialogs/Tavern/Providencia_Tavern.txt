@@ -28,3 +28,27 @@ Yeah, really, for the third time...
 Providencia_Tavern_8 {
 Yeah, well...
 }
+Providencia_Tavern_9 {
+Have you seen Hugo Lumbersaw around here?
+}
+Providencia_Tavern_10 {
+He was here. Some English bounty hunters came looking for him, but he managed to slip out through the back door just in time.
+}
+Providencia_Tavern_11 {
+Where did he head?
+}
+Providencia_Tavern_12 {
+Mmm... For 1,000 pesos, I will point you in the right direction.
+}
+Providencia_Tavern_13 {
+Here, take your money. So, where did he head?
+}
+Providencia_Tavern_14 {
+I do not have that much money on me right now.
+}
+Providencia_Tavern_15 {
+He set sail for La Vega, look for him there.
+}
+Providencia_Tavern_16 {
+Thanks, see you around.
+}

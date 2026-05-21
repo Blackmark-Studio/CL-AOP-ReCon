@@ -750,7 +750,7 @@ int LocationInitTortuga(int n)
 	locations[n].id = "Tortuga_townhall";
 	locations[n].id.label = "Townhall";
 	locations[n].filespath.models = "locations\inside\Residence01";
-	locations[n].image = "loading\inside\residence.tga";
+	locations[n].image = "loading\inside\Residence01.tga";
 	//Town sack
 	locations[n].townsack = "Tortuga";
 	locations[n].lockWeather = "Inside";
@@ -982,7 +982,7 @@ int LocationInitTortuga(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Tortuga_houseZ3";
 	locations[n].id.label = "house";
-	locations[n].image = "loading\inside\mediumhouse10.tga";
+	locations[n].image = "loading\inside\mediumhouse02.tga";
 	//Town sack
 	locations[n].townsack = "Tortuga";
 	locations[n].lockWeather = "Inside";
@@ -1312,7 +1312,7 @@ int LocationInitTortuga(int n)
 	/////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Tortuga_KeepersHouse";
 	locations[n].id.label = "KeepersHouse";
-	locations[n].image = "loading\inside\mediumhouse10.tga";
+	locations[n].image = "loading\inside\SmallHouse_inside.tga";
 	locations[n].KeepersHouse = true;
 	//Town sack
 	locations[n].townsack = "Tortuga";
@@ -1638,7 +1638,7 @@ int LocationInitTortuga(int n)
 	
 	locations[n].id = "Mayak6_Lighthouseroom";
 	locations[n].id.label = "House";
-	locations[n].image = "loading\inside\mediumhouse10.tga";
+	locations[n].image = "loading\inside\mediumhouse09.tga";
 	//Town sack
 	locations[n].townsack = "Tortuga";
 	locations[n].islandId = "Tortuga";

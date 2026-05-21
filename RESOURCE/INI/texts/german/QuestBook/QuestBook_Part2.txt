@@ -867,7 +867,7 @@ Spa_Line_5_LaVegaAttack.3
 La Vega wurde eingenommen, Garnison und Bewohner wurden niedergemetzelt. Edward Mansfield fiel durch meine Hand.
 Jetzt – nach Santiago, zu Jimenez!
 }
-Spa_Line_5_LaVegaAttack.4 {Eine Belohnung von einhunderttausend Piastern aus der Stadt Santiago ist eingegangen. Ein gutes Geschäft...}
+Spa_Line_5_LaVegaAttack.4 {Eine Belohnung von einhundertfünfundzwanzigtausend Piastern aus der Stadt Santiago ist eingegangen. Ein gutes Geschäft...}
 Spa_Line_6_TakeMessangeer {Abfangen des Boten des niederländischen Generalgouverneurs}
 Spa_Line_6_TakeMessangeer.1 {Ich muss erneut heimlich nach Tortuga gelangen und den Boten des niederländischen Generalgouverneurs Peter Stuyvesant abfangen. Ich soll die diplomatische Korrespondenz zwischen den Niederländern und den Franzosen in meinen Besitz bringen. Ein Beglaubigungsschreiben der Dutch West India Company für eine Warenlieferung verschafft mir ungehinderten Zugang zum Hafen von Tortuga.}
 Spa_Line_6_TakeMessangeer.2 {Die Vollmacht der Dutch West India Company, die mir Don Juan so vorausschauend ausgestellt hat, wirkt Wunder. Der Hafenmeister hat sich bereit erklärt, mir zu helfen; jetzt muss ich auf seinen Boten warten, der mich über die Ankunft des Gesandten des niederländischen Generalgouverneurs informieren wird.}

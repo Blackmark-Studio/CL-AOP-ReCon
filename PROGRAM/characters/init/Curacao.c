@@ -291,5 +291,29 @@ int CreateCuracaoCharacters(int n)
 	ch.Storage = true;
 	n = n + 1;
 	
+	makeref(ch,Characters[n]);			//глава ГВИК
+	ch.id		= "HWIC_head";
+	ch.name 	= FindPersonalName("HWIC_head_name");
+	ch.lastname = FindPersonalName("HWIC_head_lastname");
+	ch.model	= "huber_1";
+	ch.model.animation = "man";
+	ch.sex = "man";
+	ch.City = "Villemstad";
+	ch.location = "Villemstad_Residence_GVIK";
+	ch.location.group = "sit";
+	ch.location.locator = "sit1";
+	ch.Dialog.Filename = "HWIC_head.c";
+	ch.dialog.currentnode = "First time";
+	ch.greeting = "official";
+	ch.nation = HOLLAND;
+	ch.standUp = true;
+	LAi_SetOwnerType(ch);
+	LAi_group_MoveCharacter(ch, "HOLLAND_CITIZENS");
+	LAi_SetImmortal(ch, true);
+	LAi_SetHuberType(ch);
+	LAi_SetLoginTime(ch, 6.0, 21.99);
+	SetFantomParamFromRank(ch, 20, true);
+	n = n + 1;
+	
 	return n;
 }

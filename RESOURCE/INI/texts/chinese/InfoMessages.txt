@@ -151,7 +151,7 @@ InfoMessages_149 {获得望远镜}
 InfoMessages_150 {你获得了25颗祖母绿}
 InfoMessages_151 {你获得了一箱黄金}
 InfoMessages_152 {@<sAttr> 正朝你走来。}
-InfoMessages_153 {你收到了两瓶酒，其中一瓶现在归你所有。}
+InfoMessages_153 {你已获得“桑格利酒”的配方。}
 InfoMessages_154 {已交付@<iSmallPearl>小珍珠。}
 InfoMessages_155 {交付了@<iBigPearl>颗大珍珠。}
 InfoMessages_156 {获得@<iSmallPearl>颗小珍珠。}

@@ -637,7 +637,7 @@ int LocationInitJamaica(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "PortRoyal_townhall";
 	locations[n].id.label = "Townhall";
-	locations[n].image = "loading\inside\residence.tga";
+	locations[n].image = "loading\inside\Residence03.tga";
 	//Town sack
 	locations[n].townsack = "PortRoyal";
 	locations[n].lockWeather = "Inside";
@@ -1129,7 +1129,7 @@ int LocationInitJamaica(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "PortRoyal_MH12";
 	locations[n].id.label = "Room";
-	locations[n].image = "loading\inside\flamhouse.tga";
+	locations[n].image = "loading\inside\mediumhouse12.tga";
 	//Town sack
 	locations[n].townsack = "PortRoyal";
 	locations[n].lockWeather = "Inside";
@@ -1206,11 +1206,11 @@ int LocationInitJamaica(int n)
 	n = n + 1;
 
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	// Средний дом 9 с заменённой стенкой
+	// Средний дом 8 (9 с заменённой стенкой)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "PortRoyal_MH9_2";
 	locations[n].id.label = "House";
-	locations[n].image = "loading\inside\hut.tga";
+	locations[n].image = "loading\inside\mediumhouse08.tga";
 	locations[n].MustSetReloadBack = true;
 	//Town sack
 	locations[n].townsack = "PortRoyal";
@@ -1220,7 +1220,7 @@ int LocationInitJamaica(int n)
 	locations[n].fastreload = "PortRoyal";
  	locations[n].islandId = "Jamaica";
 	//Models
-	locations[n].filespath.models = "locations\inside\mediumhouse09_2";
+	locations[n].filespath.models = "locations\inside\mediumhouse08";
 	//Always
 	locations[n].models.always.house = "mediumhouse09";
 	locations[n].models.always.house.level = 65538;
@@ -1252,7 +1252,7 @@ int LocationInitJamaica(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "PortRoyal_BigHouse6";
  	locations[n].id.label = "House";
-	locations[n].image = "loading\inside\mediumhouse01.tga";
+	locations[n].image = "loading\inside\BigHouse06.tga";
  	//Town sack
 	locations[n].townsack = "PortRoyal";
 	locations[n].lockWeather = "Inside";
@@ -1507,7 +1507,7 @@ int LocationInitJamaica(int n)
 	/////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "PortRoyal_KeepersHouse";
 	locations[n].id.label = "KeepersHouse";
-	locations[n].image = "loading\inside\mediumhouse10.tga";
+	locations[n].image = "loading\inside\SmallHouse_inside.tga";
 	locations[n].KeepersHouse = true;
 	//Town sack
 	locations[n].townsack = "PortRoyal";
@@ -2504,7 +2504,7 @@ int LocationInitJamaica(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Smallhome_K3";
 	locations[n].id.label = "House";
-	locations[n].image = "loading\inside\mediumhouse10.tga";
+	locations[n].image = "loading\inside\SmallHouse_inside.tga";
 	//Town sack
 	locations[n].townsack = "FortOrange";
 	locations[n].lockWeather = "Inside";
@@ -2544,7 +2544,7 @@ int LocationInitJamaica(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Smallhome_K2";
 	locations[n].id.label = "House";
-	locations[n].image = "loading\inside\flamhouse.tga";
+	locations[n].image = "loading\inside\Smallhome.tga";
 	locations[n].MustSetReloadBack = true;
  	//Town sack
 	locations[n].townsack = "FortOrange";
@@ -2585,7 +2585,7 @@ int LocationInitJamaica(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "FOrange_Hut3";
 	locations[n].id.label = "House";
-	locations[n].image = "loading\inside\smallhouse.tga";
+	locations[n].image = "loading\inside\Hut3.tga";
 	locations[n].MustSetReloadBack = true;
 	//Town sack
 	locations[n].townsack = "FortOrange";
@@ -3088,12 +3088,12 @@ int LocationInitJamaica(int n)
 	locations[n].reload.l2.label = "Town";
 	n = n + 1;
 	
-	/////////////////// Резиденция ////////////////////////////////////////////////////////////////////////////////////////////
+	/////////////////// Резиденция (комната 3) ////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Mine_residence";
 	locations[n].id.label = "MineTown_residence";
 	locations[n].MustSetReloadBack = true;
 	locations[n].DisableEncounters = true;
-	locations[n].image = "loading\inside\SmallResidence.tga";
+	locations[n].image = "loading\inside\mediumhouse12.tga";
 	//Town sack
 	locations[n].townsack = "FortOrange";
 	locations[n].lockWeather = "Inside";
@@ -3135,7 +3135,7 @@ int LocationInitJamaica(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Smallhome02_K2";
 	locations[n].id.label = "House";
-	locations[n].image = "loading\inside\smallhouse.tga";
+	locations[n].image = "loading\inside\Smallhome.tga";
  	//Town sack
 	locations[n].townsack = "FortOrange";
 	locations[n].lockWeather = "Inside";
@@ -3283,7 +3283,7 @@ int LocationInitJamaica(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "SmallHouse_Jungle";
 	locations[n].id.label = "House";
-	locations[n].image = "loading\inside\mediumhouse01.tga";
+	locations[n].image = "loading\inside\SmallHouse_inside.tga";
 	locations[n].islandId = "Jamaica";
 	locations[n].Realm = "FortOrange";
 	//Town sack

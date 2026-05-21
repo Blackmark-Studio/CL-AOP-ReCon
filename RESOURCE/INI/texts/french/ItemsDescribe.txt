@@ -268,6 +268,15 @@ itmtext_RingCapBook
 ... le calme plat dure depuis trois jours. La ‘Santa Lucia’ avance à peine, et nous n’avons même pas encore atteint la latitude de la Jamaïque. Je vois les regards en coin que les marins ignorants lancent à ma belle Wawaya – ils considèrent sa présence à bord comme un mauvais présage...
 ... aujourd’hui, un marin, en disposant du poison pour rats dans la cale, a laissé tomber un flacon d’arsenic directement dans le tonneau d’eau potable. Comment il a fait, cela m’échappe encore. Cinquante gallons d’eau douce sont perdus. Le calme pers
 }
+itmname_LesopilkaLog {Journal de bord}
+itmdescr_LesopilkaLog
+{
+Un journal de bord avec une couverture rouge, contenant des informations sur la cargaison transportée.
+}
+itmtext_LesopilkaLog
+{
+... J'ai pris la décision que, pendant la réparation du navire, nous transférerions une partie des trésors sur l'île. Au cas où. Notre navire est très vulnérable en ce moment et je ne peux pas garantir que je serai en mesure de protéger cette précieuse cargaison. Si jamais des pirates débarquent, il y a une position avantageuse sur l'île d'où nous livrerons bataille...
+}
 itmname_unarmed {Non armé}
 itmdescr_unarmed {L’art de se défendre avec la seule arme dont on dispose toujours : ses poings.}
 itmname_blade5 {Dague de parade}
@@ -443,7 +452,7 @@ Un fusil à canon lisse à chargement par la bouche, doté d’un mécanisme plu
 ~
 Nécessite l’avantage « Entraînement de mousquetaire ».
 }
-itmname_mushket_H2 {Mousquet exclusif à double canon}
+itmname_mushket_H2 {Mousquet à deux canons}
 itmdescr_mushket_H2
 {
 Un mousquet à deux canons à silex fabriqué sur commande. Une pièce d’exception de l’art armurier. Malgré son prix élevé, sa conception est quelque peu dépassée. Pourtant, avec toute sa puissance et son efficacité, cette remarquable carabine exige de son propriétaire une certaine habileté et de l’expérience.
@@ -457,7 +466,7 @@ Arme à feu ancestrale de Tichinguit. Un exemplaire unique issu d’un fusil ind
 ~
 Nécessite l’avantage « Entraînement de mousquetaire ».
 }
-itmname_mushket2x2 {Mousquet à deux canons}
+itmname_mushket2x2 {Mousquet exclusif à deux canons}
 itmdescr_mushket2x2
 {
 Chef-d'œuvre de l’armurerie de Saint-Étienne. Ce sont les Français qui ont créé l’arme rayée à double canon en perfectionnant la platine à batterie. Impossible d’utiliser cette arme sans une formation militaire dans l’Ancien Monde.
@@ -636,6 +645,8 @@ itmname_potionrum {Bouteille de rhum}
 itmdescr_potionrum {Aucun rhum ne saurait terrasser un pirate comme vous, alors buvez sans hésiter... Au fait, si vous êtes blessé, l’alcool qu’il contient peut aider à soigner vos plaies et prévenir l’infection.}
 itmname_potionwine {Excellent vin}
 itmdescr_potionwine {L’un des meilleurs vins français des Caraïbes. Son effet relaxant vous aidera à retrouver vos forces et à prévenir les infections.}
+itmname_potionsangari {Sangaree}
+itmdescr_potionsangari {Une boisson alcoolisée rafraîchissante. Ce mélange de vin rouge et de rhum fort, agrémenté d'ingrédients secrets, désaltère idéalement par temps de canicule. Il tonifie et redonne des forces sans provoquer l'ivresse pesante de l'alcool pur.}
 itmname_jewelry1 {Saphir}
 itmdescr_jewelry1 {Un rare saphir bleu extrait des profondeurs de la vice-royauté espagnole de Nouvelle-Grenade. On raconte que ces pierres précieuses proviennent de mines près de Quito ou dans les Andes, où leur couleur est comparée aux eaux les plus profondes de l’océan Pacifique.}
 itmname_jewelry2 {Diamant}
@@ -882,6 +893,11 @@ itmname_recipe_migraine_potion {Instructions (Décoction contre la migraine)}
 itmdescr_recipe_migraine_potion {Instructions pour préparer une potion contre la migraine.}
 itmname_recipe_potion1 {Notice (Potion de soin)}
 itmdescr_recipe_potion1 {Instructions pour préparer une potion de soin.}
+itmname_recipe_potionsangari {Recette du « Sangaree »}
+itmdescr_recipe_potionsangari
+{
+Un morceau de papier griffonné à la hâte. Il détaille la technique de mélange du vin et du rhum pour obtenir un « Sangaree » parfait. Permet de préparer cette boisson soi-même avec les ingrédients nécessaires et un nécessaire d'alchimie.
+}
 itmname_Mineral2 {Luth}
 itmdescr_Mineral2 {Un instrument de musique à cordes très apprécié. Un joueur de luth talentueux peut souvent remonter le moral des soldats ou des marins.}
 itmname_Mineral3 {Bougie}
@@ -1001,13 +1017,6 @@ itmname_PDM_PJ_Vino {Bouteille de vin}
 itmdescr_PDM_PJ_Vino {Une bouteille de vin exquis et coûteux à livrer à un soldat.}
 itmname_PDM_PJ_Rom {Bouteille de rhum}
 itmdescr_PDM_PJ_Rom {Une bouteille de rhum bon marché à livrer à un soldat.}
-itmname_PDM_PJ_BsRL {Bouteille avec un ruban rose}
-itmdescr_PDM_PJ_BsRL
-{
-Une bouteille ornée d’un ruban rose soigneusement noué.
-* * *
-Passif : +2 Chance, +2 Commerce, -2 Furtivité.
-}
 itmname_DesMoinesLocies {Routier de Des Moines}
 itmdescr_DesMoinesLocies {Instructions détaillées pour naviguer en toute sécurité et mouiller le long des côtes de la colonie de Des Moines.}
 itmname_letter_A {Lettre scellée}
@@ -1055,7 +1064,7 @@ itmname_instrument1 {Scie fine}
 itmdescr_instrument1
 {
 Un outil simple utilisé par des générations de charpentiers. Cet exemplaire possède une prise en main exceptionnellement confortable, permettant des coupes rapides et précises. Avec un tel instrument, un charpentier chevronné peut travailler des heures sans fatigue.
-+10 Réparation
+Passif : +5 Réparation.
 }
 
 itmname_strangeNoteLSC	{Le mot étrange}
@@ -1066,4 +1075,18 @@ Un morceau de parchemin avec des gribouillis
 itmtext_strangeNoteLSC
 {
 J'aimerais me rendre dans l'étreinte de la terre sur la mer, pour y voir la fin de toute existence.
+}
+
+itmname_TizerJournal   {Journal de Daniel Tudor}
+itmdescr_TizerJournal
+{
+Un lourd journal relié en cuir avec une serrure. Sur la couverture est gravé :\n« Propriété de Daniel Gabrielo Tudor ».\nLa lecture de tels mémoires prendra pas mal de temps.
+}
+itmtext_TizerJournal
+{
+Bien des sots cherchent l'Île de la Justice en se fiant à une boussole ou à des connaissances cartographiques. Mais cette île ne figurera jamais sur aucune carte, et l'aiguille de la boussole deviendra folle dès que l'on s'approchera des récifs maudits.
+L'île n'accepte pas ceux qui viennent par curiosité oisive ou par cupidité. Pour atteindre l'étreinte de la terre depuis la mer, il faut s'abandonner à la merci des éléments, dans l'ignorance totale de ce qu'il adviendra de son âme et de son corps.
+Ce n'est qu'à travers le rugissement d'une grande tempête, le craquement des mâts qui se brisent et l'inévitable naufrage que le chemin s'ouvre.
+La mer décidera elle-même de ton sort — l'essentiel est de ne pas résister à sa force. Et le plus grand mystère de l'île : l'Île rejette les armadas.
+Celui qui décide de franchir ce pas doit le faire seul. Sans équipage. Sans fidèles compagnons derrière lui. Rien que toi et la fureur de l'océan. Sinon, la mort les attendra tous...
 }

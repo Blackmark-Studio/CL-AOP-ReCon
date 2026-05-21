@@ -1,0 +1,39 @@
+HWIC_head_1 {
+Seid gegrüßt. Ich bin momentan sehr beschäftigt, also kommen Sie gleich zur Sache – haben Sie ein Anliegen?
+}
+HWIC_head_2 {
+Es ist so... Einer der Piraten möchte in Ihre Dienste treten. Er ist bereit, 20.000 Pesos für eine Gelegenheit zu zahlen, die es ihm ermöglicht, für Sie zu arbeiten.
+}
+HWIC_head_3 {
+Ich wollte mich erkundigen, wie es bei Ihnen mit Hugo gelaufen ist?
+}
+HWIC_head_4 {
+Nein, nein, beachten Sie mich gar nicht. Ich gehe schon wieder.
+}
+HWIC_head_5 {
+Wer ist dieser Mann?
+}
+HWIC_head_6 {
+Sein Name ist Hugo Sageschreck. Er...
+}
+HWIC_head_7 {
+Ist Ihnen eigentlich klar, dass dieser Mann ein abscheulicher Pirat und ein grausamer Mörder ist? Ich werde niemals zulassen, dass ein solcher Mann in unserem Kapitänsregister geführt wird.
+}
+HWIC_head_8_m {
+Aber er ist nicht gefährlich... Ich habe ihn gesehen, er ist nur ein müder alter Mann, dessen größter Wunsch es ist, in einem bequemen Bett zu schlafen. Er will sich zur Ruhe setzen und sucht dafür einen sicheren Hafen, wo er in Frieden leben kann.
+}
+HWIC_head_8_f {
+Aber er ist nicht gefährlich... Ich habe ihn gesehen, er ist nur ein müder alter Mann, dessen größter Wunsch es ist, in einem bequemen Bett zu schlafen. Er will sich zur Ruhe setzen und sucht dafür einen sicheren Hafen, wo er in Frieden leben kann.
+}
+HWIC_head_9 {
+Hm... Wenn Sie das sagen, haben Sie vielleicht recht. Ich werde Ihnen in dieser Angelegenheit vertrauen, @<pchar>. Außerdem könnte er uns als Berater bei der Bekämpfung der Piraterie von Nutzen sein. Also gut.\nIch habe hier dieses Formular für die vertragliche Verpflichtung. Nehmen Sie es und übergeben Sie es ihm, Kapitän. Hugo muss unverzüglich nach Erhalt bei mir erscheinen, um alle notwendigen Arbeitsdokumente zu unterzeichnen. Und das ist zwingend erforderlich, das müssen Sie verstehen, Kapitän. Ich werde die örtlichen Behörden über sein Erscheinen informieren. Nun erlauben Sie mir, mich wieder meinen Aufgaben zuzuwenden.
+}
+HWIC_head_10 {
+Natürlich, @<GetFullName>! Auf Wiedersehen!
+}
+HWIC_head_11 {
+Oh, vielen Dank, @<GetAddress_Form> @<pchar>. Er ist ein sehr tapferer und erfahrener Kapitän. Unsere Feinde haben bereits ein halbes Dutzend Schiffe verloren. Zudem ist er ein hervorragender Geschichtenerzähler. Seine Erzählungen aus alten Zeiten locken Scharen von Zuhörern in die Taverne! Wenn Sie mich nun entschuldigen würden, muss ich Sie bitten, mich zu verlassen.
+}
+HWIC_head_12 {
+Alles Gute für Sie!
+}

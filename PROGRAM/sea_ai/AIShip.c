@@ -3305,6 +3305,7 @@ void Ship_EndStorm()
 	WhrCreateSkyEnvironment();
 	WhrCreateSeaEnvironment();
 	Seafoam.storm = "false"; // убираем буруны
+	sSeaSoundPostfix = "";  // убираем штормовые звуки squeak_sea
     FillWeatherData(iCurWeatherNum, iBlendWeatherNum);
 	Weather.isDone = "";
 	ResetSoundScheme();

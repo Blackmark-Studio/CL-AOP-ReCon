@@ -277,3 +277,15 @@ Merci infiniment, Votre Sainteté!
 Incquistors_dialog_73_f {
 Je vous suis très reconnaissant, Votre Sainteté!
 }
+Incquistors_dialog_74 {
+Mon Saint-Père, j'agis sur ordre du gouverneur de Belize et je traque une sorcière. Je sais qu'ici, à Santiago, une sorcière nommée Carla, une ancienne prostituée du port, travaille dans la taverne. Par ses arts sombres, elle a déjà tué deux personnes : le capitaine Miguel Cuenda et le bon hidalgo Bartholomew, qui est mort avant d'avoir pu se repentir. Il était au service du gouverneur de Belize. Je prie Dieu pour que la Sainte Inquisition la punisse pour ses actes coupables.
+}
+Incquistors_dialog_75_m {
+Ah, que ton âme soit éternellement bénie pour ton action juste, mon fils. Nous allons nous occuper de cette sorcière. Ton zèle sera récompensé par ma bénédiction personnelle.\nDe plus, mon fils, tu मिळाला assisteras personnellement au supplice de cette engeance de sorcière brûlant dans le feu sacré de l'Inquisition.
+}
+Incquistors_dialog_75_f {
+Ah, que ton âme soit éternellement bénie pour ton action juste, ma fille. Nous allons nous occuper de cette sorcière. Ton zèle sera récompensé par ma bénédiction personnelle.\nDe plus, ma fille, tu assisteras personnellement au supplice de cette engeance de sorcière brûlant dans le feu sacré de l'Inquisition.
+}
+Incquistors_dialog_76 {
+Ce sera un honneur, mon Saint-Père.
+}

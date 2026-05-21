@@ -167,9 +167,9 @@ bool GetCharacterPerkUsing(ref chref, string perkName)
 	return true;
 }
 
-bool GetOfficersPerkUsing(ref chref, string perkName)
+bool GetOfficersPerkUsing(ref chref, string perkName, bool bOnline)
 { // boal препишем внутрянку под новых офов, че в к3 не было? не ведаю.
-	string  sOfficerType;	
+	string  sOfficerType, sFighter = "id";
 	ref   offc;	   
 	bool  ok = false; // boal fix 25.03.05 проверка на запрет
 	bool  okDelay = true;
@@ -177,14 +177,19 @@ bool GetOfficersPerkUsing(ref chref, string perkName)
 	if (GetCharacterPerkUsing(chref, perkName)) {return true;} // босс отдельно
 	if (!CheckAttribute(chref,"perks.list."+perkName) && CheckAttribute(chref, "Fellows"))  // у гг нет перка вообще, тогда смотрим офов, иначе выход
 	{
-		for(int i=1; i<=6; i++)
+		for(int i=1; i<=9; i++)
 		{
 			sOfficerType = GetOfficerTypeByNum(i);
 			if (CheckAttribute(&ChrPerksList, "list." + perkName + ".OfficerType") && ChrPerksList.list.(perkName).OfficerType == sOfficerType)
 			{
-				cn = sti(chref.Fellows.Passengers.(sOfficerType));
+				if (i <= 6)
+					cn = sti(chref.Fellows.Passengers.(sOfficerType));
+				else
+					cn = GetOfficersIndex(pchar, i - 6);
+
 				if (cn<0) {continue;}
 				offc = &Characters[cn];
+				if (sOfficerType == "fighter" && bOnline && !IsEntity(offc)) continue;
 				if (CheckAttribute(offc, "perks.list."+perkName) )          ok = true;
 				if (CheckAttribute(offc, "perks.list."+perkName+".delay") ) okDelay = false;
 				//if (GetCharacterPerkUsing(chref, perkName) return true;
@@ -551,23 +556,9 @@ void SetHawkEye(ref loc)
 	float fTemp, x, y, z, up;
 	string sGroup, sLocator;
 	if (CheckAttribute(loc, "id") && loc.id == "Temple_round") return;
-	if (CheckCharacterPerk(pchar, "HawkEye"))
+	if (GetOfficersPerkUsing(pchar, "HawkEye", true))
 	{
 		enableHE = true;
-	}
-	else
-	{
-		if(!CheckAttribute(loc, "DisableOfficers"))
-		{
-			for (i=1; i<=3; i++)
-			{
-				iOff = GetOfficersIndex(pchar, i);
-				if(iOff != -1 && IsEntity(&characters[iOff]) && CheckCharacterPerk(&characters[iOff], "HawkEye"))
-				{
-					enableHE = true;
-				}
-			}
-		}
 	}
 	if (!enableHE) return;
     for (i = 0; i < ITEMS_QUANTITY; i++)
@@ -632,8 +623,8 @@ void SetWildCaribbean()
 	SetSphereToLocation(n, "cavernMedium1");
 	n = FindLocation("Curacao_Cave");
 	SetSphereToLocation(n, "cavernMedium2");
-	n = FindLocation("Dominica_Grot");
-	SetSphereToLocation(n, "grotto2");
+//	n = FindLocation("Dominica_Grot");
+//	SetSphereToLocation(n, "GrotI");
 	n = FindLocation("Guadeloupe_Cave");
 	SetSphereToLocation(n, "cavernBig1");
 	n = FindLocation("Jamaica_Grot");
@@ -786,47 +777,68 @@ bool IsOfficersPerkAcquired(ref chref, string perkName)
 	return ok;
 }
 
-// KZ > обновить / удалить активные морские перки у офицеров ГГ
+// KZ > обновить / удалить активные морские перки у офицеров и компаньонов ГГ
 void RefreshActiveSeaPerks(bool bRestart)
 {
 	if (sti(InterfaceStates.Launched) == 1) return;
 
-	int q = GetPassengersQuantity(pchar);
+	int i, iComp, q = GetPassengersQuantity(pchar);
+	ref rChar;
 
 	if (q > 0)
 	{
-		ref rChar;
-		int i, j, iPerks;
-		aref arPerksRoot, arPerk;
-		string sPerk;
-
 		for (i = 0; i < q; i++)
 		{
 			rChar = &Characters[GetPassenger(pchar, i)];
 
 			if (IsOfficerRemovable(rChar))
+				RefreshActiveSeaPerksFunc(rChar, bRestart);
+		}
+	}
+
+	q = GetCompanionQuantity(pchar);
+
+	if (q > 1)
+	{
+		for (i = 1; i <= q; i++)
+		{
+			iComp = GetCompanionIndex(pchar, i);
+
+			if (iComp >= 0)
 			{
-				makearef(arPerksRoot, rChar.perks.list);
-				iPerks = GetAttributesNum(arPerksRoot);
+				rChar = GetCharacter(iComp);
 
-				for (j = 0; j < iPerks; j++)
-				{
-					arPerk = GetAttributeN(arPerksRoot, j);
-					sPerk = GetAttributeName(arPerk);
-
-					if (IsSeaActivePerk(sPerk))
-					{
-						if (bRestart)
-						{
-							DelPerkFromActiveList(sPerk);
-							DeleteAttributeEx(arPerk, "active,delay");
-							PostEvent("evntPerkAgainUsable", 1);							
-						}
-						else
-							PostEvent("evntChrPerkDelay", 50, "sl", sPerk, sti(rChar.index));
-					}
-				}
+				if (GetShipRemovable(rChar) && GetRemovable(rChar))
+					RefreshActiveSeaPerksFunc(rChar, bRestart);
 			}
+		}
+	}
+}
+
+void RefreshActiveSeaPerksFunc(ref _rChar, bool _bRestart)
+{
+	int j, iPerks;
+	aref arPerksRoot, arPerk;
+	string sPerk;
+
+	makearef(arPerksRoot, _rChar.perks.list);
+	iPerks = GetAttributesNum(arPerksRoot);
+
+	for (j = 0; j < iPerks; j++)
+	{
+		arPerk = GetAttributeN(arPerksRoot, j);
+		sPerk = GetAttributeName(arPerk);
+
+		if (IsSeaActivePerk(sPerk))
+		{
+			if (_bRestart)
+			{
+				DelPerkFromActiveList(sPerk);
+				DeleteAttributeEx(arPerk, "active,delay");
+				PostEvent("evntPerkAgainUsable", 1);							
+			}
+			else
+				PostEvent("evntChrPerkDelay", 50, "sl", sPerk, sti(_rChar.index));
 		}
 	}
 }

@@ -1,0 +1,241 @@
+Ohota_na_vedmu_1_m {
+Greetings, sir. My name is Bartholomew Ulster. By the way, have you seen Carla, the girl from the tavern? She's disappeared somewhere...
+}
+Ohota_na_vedmu_1_f {
+Greetings, lady. My name is Bartholomew Ulster. By the way, have you seen Carla, the girl from the tavern? She's disappeared somewhere...
+}
+Ohota_na_vedmu_2 {
+No, I don't know who she is, and even less where she is. But you have an English accent – tell me, how did you get here?
+}
+Ohota_na_vedmu_3 {
+I don't know. Perhaps you should look in the tavern – that would be logical. And I have other things to do right now.
+}
+Ohota_na_vedmu_4 {
+I'm sorry, but I can't talk to you right now. I need to find Carla!
+}
+Ohota_na_vedmu_5 {
+In that case, goodbye.
+}
+Ohota_na_vedmu_6_m {
+What are you looking for here, handsome? Pleasures, I presume? My name is Carla, or Merry Carla, as most men in this town call me. And what is your name, sir?
+}
+Ohota_na_vedmu_6_f {
+What are you looking for here, beautiful? Pleasures, I presume? My name is Carla, or Merry Carla, as most men in this town call me. And what is your name, sir?
+}
+Ohota_na_vedmu_7 {
+You can call me @<pchar>, darling. But I believe there is another person in this town looking for pleasure. I saw him in the square – he seems eager to meet you.
+}
+Ohota_na_vedmu_8_m {
+What? Bartholomew? But I thought he... Ah, never mind... You know what, handsome – I just remembered I'm a bit busy today. But we can do everything we want another time – when I'm freer. You have very nice legs, by the way.
+}
+Ohota_na_vedmu_8_f {
+What? Bartholomew? But I thought he... Ah, never mind... You know what, beautiful – I just remembered I'm a bit busy today. But we can do everything we want another time – when I'm freer. You have very nice legs, by the way.
+}
+Ohota_na_vedmu_9 {
+Uh... Thank you. I'll stop by later.
+}
+Ohota_na_vedmu_10 {
+I'm sorry, @<GetAddress_Form>, but I have orders not to let anyone in.
+}
+Ohota_na_vedmu_11 {
+As you wish, officer.
+}
+Ohota_na_vedmu_12 {
+@<UpperFirst>, you'd better speak with the governor.
+}
+Ohota_na_vedmu_13 {
+Thank you, I will.
+}
+Ohota_na_vedmu_14 {
+Who are you? What are you doing here?! Explain yourself immediately!
+}
+Ohota_na_vedmu_15_m {
+Governor! My name is @<GetFullName>. Forgive me for entering without permission, but I noticed suspicious activity in your town and decided to indulge my curiosity. In one of the rooms of your residence, I found a body...
+}
+Ohota_na_vedmu_15_f {
+Governor! My name is @<GetFullName>. Forgive me for entering without permission, but I noticed suspicious activity in your town and decided to indulge my curiosity. In one of the rooms of your residence, I found a body...
+}
+Ohota_na_vedmu_16 {
+Hmm... Strange things are happening here, captain. My right hand, my secretary, was found dead in his room. Someone strangled him right in his bed, his hands were clenched around his throat, and his eyes were bulging. But there are no marks of a rope or fingers on his neck. I don't know what it all means. It's a terrible tragedy.
+}
+Ohota_na_vedmu_17 {
+What a strange story. But how did it happen that an Englishman became your secretary?
+}
+Ohota_na_vedmu_18 {
+Guards, leave us. And order someone to take care of Bartholomew's body.
+}
+Ohota_na_vedmu_19 {
+The English government exiled him. They brought false accusations against him. He was a very noble man with a fine character. We met fifteen years ago in Europe. He was a young diplomat then; we met at court. One of my agents ran into him in Port Royal. He was thrown out onto the street after being accused of embezzlement. Stripped of his title, he agreed to become my secretary.
+}
+Ohota_na_vedmu_20 {
+I believe I met him. Bartholomew, you say? We met in the square; he was looking for a girl from the tavern named Carla.
+}
+Ohota_na_vedmu_21 {
+A girl from the tavern? That is very strange. He was a noble man, as I said; he could have nothing to do with a woman of such reputation.
+}
+Ohota_na_vedmu_22 {
+Governor, what do you think about his death? Who could have killed him?
+}
+Ohota_na_vedmu_23 {
+It is the intrigue of the enemies of the Spanish Crown, I presume. But I cannot name anyone specific...
+}
+Ohota_na_vedmu_24 {
+I hope this mystery can be solved, Governor. But I have important matters, and if you will allow me, I will take my leave...
+}
+Ohota_na_vedmu_25 {
+Wait... Actually, yes, @<pchar>. You said poor Bartholomew was looking for a girl from the tavern named Carla, didn't you? Would you bring her to me? I could send for her, but it would create a wave of rumors. Perhaps you could handle this matter more discreetly. I will take the investigation of this murder under my personal control.
+}
+Ohota_na_vedmu_26 {
+Alright, Governor, if I find her, of course, I will bring her here.
+}
+Ohota_na_vedmu_27 {
+I'm sorry, I deeply sympathize with your loss, but this job is not for me.
+}
+Ohota_na_vedmu_28 {
+What a pity, then I will not keep you.
+}
+Ohota_na_vedmu_29 {
+Goodbye!
+}
+Ohota_na_vedmu_30 {
+Please leave my office, I have a lot of work.
+}
+Ohota_na_vedmu_31 {
+I'm leaving.
+}
+Ohota_na_vedmu_32_m {
+Who are you, lad? And what the hell do you want?
+}
+Ohota_na_vedmu_32_f {
+Who are you, girl? And what the hell do you want?
+}
+Ohota_na_vedmu_33_m {
+I thought you were a trader who might need an escort... But it seems I was mistaken.
+}
+Ohota_na_vedmu_33_f {
+I thought you were a trader who might need an escort... But it seems I was mistaken.
+}
+Ohota_na_vedmu_34_m {
+Yes, buddy, you were mistaken. I'm Silino Sev, an unemployed boatswain. Yesterday, some brainless thug offered me a job as a lumberjack. Know what happened to him?
+}
+Ohota_na_vedmu_34_f {
+Yes, sweetheart, you were mistaken. I'm Silino Sev, an unemployed boatswain. Yesterday, some brainless thug offered me a job as a lumberjack. Know what happened to him?
+}
+Ohota_na_vedmu_35 {
+I see... But let's sit down over a mug of rum, and you can tell me your story.
+}
+Ohota_na_vedmu_36 {
+I'll tell you what happened to me – but it's not an interesting fairy tale for children. It all happened because of that damned witch the captain picked up in Belize. I'll tell you, if he hadn't gotten involved with that witch, he'd be alive now. But he was always too stubborn. He could argue with the devil himself, our good old Miguel.
+But after that woman came on board, he changed. Yes, he changed. He shriveled up like a dried fish. We told him not to take that woman with him – sailors believe a woman on board brings bad luck... when there's a woman on board, expect trouble.
+And so because of that Carla...
+}
+Ohota_na_vedmu_37 {
+Wait! You said her name is Carla? The governor of Belize is looking for this woman. He believes she may be involved in the murder!
+}
+Ohota_na_vedmu_38 {
+Yes, the governor is right. That damned witch killed our captain. He was as dead as a doornail. Our ship was heading to Santo Domingo, but our captain fell ill. He gave the order to change course and head to the nearest colony – Santiago. We had just entered port when we found him dead in his cabin. We rushed to find the damned witch, but she mysteriously vanished. After that, we set course for Santo Domingo again. And now I'm an unemployed boatswain. That blockhead first mate carried out the captain's last will to the letter, sold our tub, and donated all the money to the Church.
+}
+Ohota_na_vedmu_39 {
+What a hellish creature that woman is! She has already destroyed two people. She must be stopped.
+}
+Ohota_na_vedmu_40 {
+Good luck to you, Captain, in finding her!
+}
+Ohota_na_vedmu_41 {
+I will find her. Goodbye!
+}
+Ohota_na_vedmu_42 {
+Good luck to you, Captain, in finding her!
+}
+Ohota_na_vedmu_43 {
+I will find her. Goodbye!
+}
+Ohota_na_vedmu_44 {
+Oh, darling! What are you doing this evening? Or right now?
+}
+Ohota_na_vedmu_45 {
+Impudent witch! You allow yourself to continue your unholy practices and tempt honest Spaniards to serve the devil!? I am ordered to bring you to justice!
+}
+Ohota_na_vedmu_46 {
+Wh-what are you saying? I d-d-don't know anything about any crimes.
+}
+Ohota_na_vedmu_47 {
+You think you can prove your innocence by denying the obvious? I have a witness – Boatswain Silino Sev. He is ready to testify that you are a witch.
+}
+Ohota_na_vedmu_48 {
+Miguel Cuenda died on his ship near Santiago! And we will yet find out what vile role your sorcery played in the terrible death of Bartholomew Ulster in Belize. And... No, I've changed my mind. I will find authority over you right here in this town. The Inquisition will hear me – and my word will be enough to punish you.
+}
+Ohota_na_vedmu_49 {
+I know that Miguel's death was my fault... But I couldn't do anything – I had to get rid of that bastard Bartholomew. But when he finally uttered his curse – I knew it was over. Miguel was doomed. I loved him...
+}
+Ohota_na_vedmu_50 {
+Wait. I didn't understand a thing. What curse? Loved whom?
+}
+Ohota_na_vedmu_51 {
+Bartholomew Ulster cast a deadly spell on Miguel. I tried to save Miguel the whole way to Santiago, but... in vain. My strength simply wasn't enough to dispel his powerful magic. I was just an apprentice, never meant to surpass the master.
+}
+Ohota_na_vedmu_52 {
+So you confess that you are a witch?
+}
+Ohota_na_vedmu_53 {
+Yes. Bartholomew Ulster was my mentor in the art of sorcery. He noticed the Gift in me when I was just fourteen. I was just a foolish girl back then who didn't understand what she was doing. I wasn't beautiful, but he taught me how to conquer men's hearts, and I became nothing more than a cheap prostitute. He used me to pry secrets from clients; he put me through every humiliation I could imagine. I just couldn't live anymore – he was too strong...
+But when I met Miguel, I thought I had a chance... I fell in love with that brave captain... but Bartholomew said that if I tried to run away, he would tell the priests I was a witch, and they would burn me at the stake. I told Miguel everything. And he decided that we should kill Ulster. My Gift was too weak to defeat him magically, and I am just a weak woman. But Miguel instilled faith in me.
+}
+Ohota_na_vedmu_54 {
+But how did you get past the guards?
+}
+Ohota_na_vedmu_55 {
+That was the easiest part. I put a sleeping potion in their drink... and they fell asleep like babies. After that, we crept into the bedroom of that monster in human form. But he wasn't asleep, as we had hoped. I think he put a protection ward on the door, which woke him up. Miguel lunged at him, but that scoundrel managed to use magic. Wounded Miguel fought the sorcerer and finally suffocated him with a pillow.
+I tried to save Miguel the whole way to Santiago. But when he fell dead on the deck, I had to flee the ship. The crew was furious – I was the only woman on board, whom the captain had not allowed anyone to touch. As we sailed, they became enraged like a pack of wild dogs.
+}
+Ohota_na_vedmu_56 {
+And what happened then?
+}
+Ohota_na_vedmu_57 {
+I didn't know what to do. All I wanted was to escape my past. When I arrived here, I had no money, and I returned to the only trade I know...
+}
+Ohota_na_vedmu_58 {
+The only important thing in all this is that you are a witch. So I will hand you over to the Inquisition.
+}
+Ohota_na_vedmu_59 {
+I believe you have committed no crime, Carla. You are free.
+}
+Ohota_na_vedmu_60_m {
+Oh, sir – you are very noble. Let me tell you something. Everyone thinks that witchcraft is a practice displeasing to God. But I tell you, it is simply a Gift, or a Skill, like any other...
+}
+Ohota_na_vedmu_60_f {
+Oh, lady – you are very noble. Let me tell you something. Everyone thinks that witchcraft is a practice displeasing to God. But I tell you, it is simply a Gift, or a Skill, like any other...
+}
+Ohota_na_vedmu_61 {
+As you wish, @<GetAddress_Form>. My life means nothing to me anymore – I have seen no mercy, gained no love – it would be strange to expect justice.
+}
+Ohota_na_vedmu_62 {
+Don't try to pity me, damned witch! You will burn in fire!
+}
+Ohota_na_vedmu_63 {
+And accept my Gift. Fortune will favor you from this day on.
+}
+Ohota_na_vedmu_64 {
+Good luck to you, Carla! Goodbye.
+}
+Ohota_na_vedmu_65_m {
+Thank you, kind @<GetAddress_Form>, I will not forget your nobility!
+}
+Ohota_na_vedmu_65_f {
+Thank you, kind @<GetAddress_Form>, I will not forget your nobility!
+}
+Ohota_na_vedmu_66 {
+Good luck to you, Carla!
+}
+Ohota_na_vedmu_67 {
+My life is worth nothing anymore... But I will not waste even a minute of its remainder talking to you.
+}
+Ohota_na_vedmu_68 {
+You will burn in fire, foul witch!
+}
+Ohota_na_vedmu_69 {
+You are accused of witchcraft and devil worship. And according to Holy Mother Church, you are sentenced to be burned at the stake. In nomine Patris, et Filii et Spiritus Sancti. Amen.
+}
+Ohota_na_vedmu_70 {
+Sergeant, do your duty.
+}

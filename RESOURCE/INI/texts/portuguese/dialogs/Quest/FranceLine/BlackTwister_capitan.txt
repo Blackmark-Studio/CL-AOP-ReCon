@@ -8,7 +8,7 @@ BlackTwister_capitan_3 {
 Pode me perguntar qualquer coisa, eu conto tudo. Só não me mate!
 }
 BlackTwister_capitan_4 {
-Não foi o seu navio que abordou o brigantim de Jean-Jacques Garnier perto da ilha?
+Não foi o seu navio que abordou o brigantina de Jean-Jacques Garnier perto da ilha?
 }
 BlackTwister_capitan_5 {
 Aconteceu.

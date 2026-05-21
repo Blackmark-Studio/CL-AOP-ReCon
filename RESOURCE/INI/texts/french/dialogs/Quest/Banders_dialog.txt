@@ -56,7 +56,7 @@ Banders_dialog_13 {
 Quel culot tu as. Et ton ami prétendait que ses compagnons étaient généreux.
 }
 Banders_dialog_14 {
-Très bien, écoute. J'ai des informations fiables : dans les @<FindDaysString> prochains jours, deux navires marchands de @<pchar> — '@<pchar>' et '@<pchar>' — seront au large de @<pchar>, leurs cales remplies de . Tu pourrais essayer de les intercepter.
+Très bien, écoute. J'ai des informations fiables : dans les @<FindDaysString> prochains jours, deux navires marchands de @<pchar> — '@<pchar>' et '@<pchar>' — seront au large de @<pchar>, leurs cales remplies de @<pchar>. Tu pourrais essayer de les intercepter.
 }
 Banders_dialog_15_m {
 Excellent! On dirait que partager ma bourse avec toi en valait la peine.
@@ -65,7 +65,7 @@ Banders_dialog_15_f {
 Excellent! On dirait que partager mon argent avec toi n’a pas été vain.
 }
 Banders_dialog_16 {
-Très bien, écoute. J'ai des informations fiables : dans les @<FindDaysString> prochains jours, deux navires marchands de @<pchar> — '@<pchar>' et '@<pchar>' — seront au large de @<pchar>, leurs cales bien remplies. Tu pourrais essayer de les intercepter.
+Très bien, écoute. J'ai des informations fiables : dans les @<FindDaysString> prochains jours, deux navires marchands de @<pchar> — '@<pchar>' et '@<pchar>' — seront au large de @<pchar>, leurs cales remplies de @<pchar>. Tu pourrais essayer de les intercepter.
 }
 Banders_dialog_17_m {
 Excellent! On dirait que partager mon argent avec toi n’a pas été vain.

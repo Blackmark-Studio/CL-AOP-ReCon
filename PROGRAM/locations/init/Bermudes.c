@@ -300,7 +300,7 @@ int LocationInitBermudes(int n)
 	locations[n].id = "Pirates_townhall";
 	locations[n].id.label = "Townhall";
 	locations[n].filespath.models = "locations\inside\Residence05";
-	locations[n].image = "loading\inside\pirateresidence.tga";
+	locations[n].image = "loading\inside\Residence05.tga";
 	//Town sack
 	locations[n].townsack = "Pirates";
 	locations[n].lockWeather = "Inside";

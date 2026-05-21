@@ -2878,6 +2878,10 @@ void CaptainComission_GetPirateIsland()
 	pchar.GenQuest.CaptainComission.PiratesCity = CityId;
 	pchar.GenQuest.CaptainComission.PirateId = PirateId;
 	pchar.GenQuest.CaptainComission.PirateName = ChangeNameCase(NAMETYPE_MAIN, GetFullName(sld), NAME_NOM);
+	if (PirateId == "Jackman" && CheckAttribute(&Names, "Pirates.Main.l4.Nom"))
+	{
+		pchar.GenQuest.CaptainComission.PirateName = Names.Pirates.Main.l4.Nom; // Jackman fix
+	}
 }
 
 void CaptainComission_GetFamilyType()
@@ -3104,9 +3108,6 @@ void CaptainComission_SlaveEscape(string qName)
 	AddItems(sld, sEquipItem, 1);
 	EquipCharacterByItem(sld, sEquipItem);
 	CaptainComission_ReturnPlantatorDialogNode();
-	DeleteAttribute(pchar, "GenQuest.CaptainComission.SlaveEscapeLocation");
-	DeleteAttribute(pchar, "GenQuest.CaptainComission.SlaveEscapeReload");
-	DeleteAttribute(pchar, "GenQuest.CaptainComission.SlaveEscapePlantationNation");
 
 	LAi_SetStayType(sld);
 	locator = GetAttributeName(GetAttributeN(grp, 1));
@@ -3151,9 +3152,9 @@ void CaptainComission_GeneratePatrol()
 	ref pLoc, chr;
 	string str;
 	int iRank, i, num;
-	int iNation = GetCityNation("Bridgetown");
+	int iNation = sti(pchar.GenQuest.CaptainComission.SlaveEscapePlantationNation);
 
-	pLoc = &locations[FindLocation("Mayak2")];
+	pLoc = loadedLocation;
 	
 	str = "Patrol"+ pLoc.index + "_";
 	string sGroup = "PatrolGroup_" + pLoc.index; //имя группы
@@ -3185,7 +3186,11 @@ void CaptainComission_GeneratePatrol()
 	LAi_group_SetRelation(sGroup, LAI_GROUP_PLAYER, LAI_GROUP_ENEMY);
 	LAi_group_FightGroups(sGroup, LAI_GROUP_PLAYER, true);
 	LAi_group_SetCheckFunction(sGroup, "CaptainComission_ExitFromMayak");
-	LAi_group_SetCheck(sGroup, "OpenTheDoors"); 	
+	LAi_group_SetCheck(sGroup, "OpenTheDoors");
+
+	DeleteAttribute(pchar, "GenQuest.CaptainComission.SlaveEscapeLocation");
+	DeleteAttribute(pchar, "GenQuest.CaptainComission.SlaveEscapeReload");
+	DeleteAttribute(pchar, "GenQuest.CaptainComission.SlaveEscapePlantationNation");
 }
 
 void CaptainComission_ExitFromMayak(string qName)
@@ -4820,6 +4825,36 @@ void Convict_DialogDisable()
 		sld = CharacterFromID("Convict_" + i);
 		LAi_CharacterDisableDialog(sld);
 		LAi_SetStayType(sld);
+	}
+}
+
+void Convict_ConvictsRunAway() //HardCoffee
+{
+    ref rChr;
+    float locx, locy, locz;
+	GetCharacterPos(pchar, &locx, &locy, &locz);
+	string sTemp;
+	aref arLocator;
+	
+	if (pchar.GenQuest.Convict == "ToShore" && FindLocator(loadedlocation.id, "boat", &arLocator, true))
+		sTemp = "boat";
+	else
+		sTemp = LAi_FindNearestFreeLocator("reload", locx, locy, locz);
+
+	for (int i = 0; i < sti(pchar.GenQuest.Convict.ConvictQty); i++)
+	{
+		rChr = CharacterFromID("Convict_" + i);
+		if (rChr.id == NullCharacter.id) continue;
+		if (sTemp == "")
+		{
+			LAi_SetCitizenType(rChr);
+		}
+		else
+		{
+			LAi_SetActorType(rChr);
+			LAi_ActorRunToLocationNoCheck(rChr, "reload", sTemp, "none", "", "", "OpenTheDoors", 30.0);
+		}
+		rChr.chr_ai.disableDlg = "1";
 	}
 }
 

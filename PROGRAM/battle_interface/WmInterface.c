@@ -330,47 +330,47 @@ void WM_SetParameterData()
 	BattleInterface.wm_sign.fontid					= "interface_normal_smallscale";
 //	BattleInterface.wm_sign.fontcolor				= argb(255,255,255,168); //argb(255,255,255,255);
 	BattleInterface.wm_sign.fontcolor				= argb(255,255,255,255);
-	BattleInterface.wm_sign.fontscale				= 0.28 * fHtRatio;
-    BattleInterface.wm_sign.fontoffset       = RecalculateHIcon(makeint(-14 * fHtRatio))+","+RecalculateVIcon(makeint(17 * fHtRatio));
+	BattleInterface.wm_sign.fontscale				= 0.26 * fHtRatio;
+    BattleInterface.wm_sign.fontoffset       		= RecalculateHIcon(makeint(-4 * fHtRatio))+","+RecalculateVIcon(makeint(42 * fHtRatio));
 
 	BattleInterface.wm_sign.shipnamefontid			= "interface_normal_smallscale";
 	BattleInterface.wm_sign.shipnamefontcolor		= argb(255,255,255,255);
-	BattleInterface.wm_sign.shipnamefontscale		= 0.28 * fHtRatio;
-    BattleInterface.wm_sign.shipnamefontoffset       = RecalculateHIcon(makeint(-14 * fHtRatio))+","+RecalculateVIcon(makeint(40 * fHtRatio));
+	BattleInterface.wm_sign.shipnamefontscale		= 0.26 * fHtRatio;
+    BattleInterface.wm_sign.shipnamefontoffset       = RecalculateHIcon(makeint(-4 * fHtRatio))+","+RecalculateVIcon(makeint(26 * fHtRatio));
 
 	BattleInterface.wm_sign.backtexturename			= "battle_interface\ShipBackIcon.tga.tx";
 	BattleInterface.wm_sign.backcolor				= argb(255,128,128,128);
 	BattleInterface.wm_sign.backuv					= "0.0,0.0,1.0,1.0";
-	BattleInterface.wm_sign.backoffset				= RecalculateHIcon(makeint(-2 * fHtRatio))+","+RecalculateVIcon(makeint(-2 * fHtRatio)); //"0.0,0.0";
-	BattleInterface.wm_sign.backiconsize			= RecalculateHIcon(makeint(128 * fHtRatio))+","+RecalculateVIcon(makeint(128 * fHtRatio));
+	BattleInterface.wm_sign.backoffset				= RecalculateHIcon(makeint(-4 * fHtRatio))+","+RecalculateVIcon(makeint(8 * fHtRatio)); //"0.0,0.0";
+	BattleInterface.wm_sign.backiconsize			= RecalculateHIcon(makeint(106 * fHtRatio))+","+RecalculateVIcon(makeint(106 * fHtRatio));
 
 	BattleInterface.wm_sign.shipstatetexturename	= "battle_interface\ShipState.tga.tx";
 	BattleInterface.wm_sign.shipstatecolor			= argb(255,128,128,128);
-	BattleInterface.wm_sign.shiphpuv				= "0.0,0.109,0.5,0.6875";
-    BattleInterface.wm_sign.shiphpoffset			= RecalculateHIcon(makeint(-32 * fHtRatio))+","+RecalculateVIcon(makeint(-13 * fHtRatio));
-	BattleInterface.wm_sign.shipspoffset			= RecalculateHIcon(makeint(32 * fHtRatio))+","+RecalculateVIcon(makeint(-13 * fHtRatio));
+	BattleInterface.wm_sign.shiphpuv				= "0.0,0.0625,0.5,0.6875";
+    BattleInterface.wm_sign.shiphpoffset			= RecalculateHIcon(makeint(-30 * fHtRatio))+","+RecalculateVIcon(makeint(-6 * fHtRatio));
+	BattleInterface.wm_sign.shipspoffset			= RecalculateHIcon(makeint(22 * fHtRatio))+","+RecalculateVIcon(makeint(-6 * fHtRatio));
 	
-    BattleInterface.wm_sign.shiphpiconsize			= RecalculateHIcon(makeint(64 * fHtRatio))+","+RecalculateVIcon(makeint(74 * fHtRatio));
-	BattleInterface.wm_sign.shipspiconsize			= RecalculateHIcon(makeint(64 * fHtRatio))+","+RecalculateVIcon(makeint(74 * fHtRatio));
-	BattleInterface.wm_sign.shipspuv				= "0.5,0.109,1.0,0.6875";
+    BattleInterface.wm_sign.shiphpiconsize			= RecalculateHIcon(makeint(54 * fHtRatio))+","+RecalculateVIcon(makeint(67 * fHtRatio));
+	BattleInterface.wm_sign.shipspiconsize			= RecalculateHIcon(makeint(54 * fHtRatio))+","+RecalculateVIcon(makeint(67 * fHtRatio));
+	BattleInterface.wm_sign.shipspuv				= "0.5,0.0625,1.0,0.6875";
 
 	BattleInterface.wm_sign.shipclasstexturename	= "battle_interface\ShipClass.tga.tx";
-	BattleInterface.wm_sign.shipclasscolor			= argb(255,102,102,102); //argb(255,128,128,128);
+	BattleInterface.wm_sign.shipclasscolor			= argb(255,128,128,128); //argb(255,128,128,128);
 	BattleInterface.wm_sign.shipclassuv				= "0.0,0.0,1.0,1.0";
-    BattleInterface.wm_sign.shipclassoffset			= RecalculateHIcon(makeint(-14 * fHtRatio))+","+RecalculateVIcon(makeint(-52 * fHtRatio));
+    BattleInterface.wm_sign.shipclassoffset			= RecalculateHIcon(makeint(-3 * fHtRatio))+","+RecalculateVIcon(makeint(-37 * fHtRatio));
 	
-    BattleInterface.wm_sign.shipclassiconsize		= RecalculateHIcon(makeint(64 * fHtRatio))+","+RecalculateVIcon(makeint(16 * fHtRatio));
+    BattleInterface.wm_sign.shipclassiconsize		= RecalculateHIcon(makeint(115 * fHtRatio))+","+RecalculateVIcon(makeint(29 * fHtRatio));
 
 	BattleInterface.wm_sign.gunchargeprogress		= "0.0625, 0.219, 0.359, 0.5, 0.641, 0.781, 0.983";
 
 	BattleInterface.wm_sign.shiptexturename			= "battle_interface\ship_icons2.tga.tx";
 	BattleInterface.wm_sign.shipcolor				= argb(255,128,128,128);
 	
-    BattleInterface.wm_sign.shipoffset				= RecalculateHIcon(makeint(-14 * fHtRatio))+","+RecalculateVIcon(makeint(-12 * fHtRatio));
+    BattleInterface.wm_sign.shipoffset				= RecalculateHIcon(makeint(-3 * fHtRatio))+","+RecalculateVIcon(makeint(-2 * fHtRatio));
 
-    BattleInterface.wm_sign.shipiconsize			= RecalculateHIcon(makeint(64 * fHtRatio))+","+RecalculateVIcon(makeint(64 * fHtRatio));
+    BattleInterface.wm_sign.shipiconsize			= RecalculateHIcon(makeint(72 * fHtRatio))+","+RecalculateVIcon(makeint(72 * fHtRatio));
 
-    BattleInterface.wm_sign.commandlistverticaloffset = -40 * fHtRatio;
+    BattleInterface.wm_sign.commandlistverticaloffset = -20 * fHtRatio;
 
     BattleInterface.wm_sign.iconoffset1 = RecalculateHIcon(makeint(70 * fHtRatio))+","+RecalculateVIcon(makeint(70 * fHtRatio));
 	BattleInterface.wm_sign.iconoffset2 = RecalculateHIcon(makeint(70 * fHtRatio))+","+RecalculateVIcon(makeint(198 * fHtRatio));
@@ -381,7 +381,7 @@ void WM_SetParameterData()
 
 	BattleInterface.CommandList.CommandMaxIconQuantity = 8;
 	BattleInterface.CommandList.CommandIconSpace = 1;
-	BattleInterface.CommandList.CommandIconLeft = makeint(108 * fHtRatio);//157; boal
+	BattleInterface.CommandList.CommandIconLeft = makeint(128 * fHtRatio);//157; boal
 	BattleInterface.CommandList.CommandIconWidth = RecalculateHIcon(makeint(48 * fHtRatio));
 	BattleInterface.CommandList.CommandIconHeight = RecalculateVIcon(makeint(48 * fHtRatio));
 
@@ -463,16 +463,18 @@ void WM_SetShipData()
 			signattr = "sign" + i;
 			BattleInterface.wm_sign.(signattr).leftprogress = GetHullPercent(&Characters[cn]) * 0.01;
 			BattleInterface.wm_sign.(signattr).rightprogress = GetSailPercent(&Characters[cn]) * 0.01;
-			BattleInterface.wm_sign.(signattr).starprogress = GetStarProgressByValue( GetCharacterShipClass(&Characters[cn]) );
+			GetStarProgressByValue(GetCharacterShipClass(&Characters[cn]), &uvleft, &uvtop, &uvright, &uvbottom);
+			BattleInterface.wm_sign.(signattr).starprogress = uvleft+","+uvtop + "," + uvright+","+uvbottom;
 			GetTextureUVForShip( sti(RealShips[sti(characters[cn].Ship.Type)].basetype), &uvleft,&uvtop, &uvright,&uvbottom);
 			BattleInterface.wm_sign.(signattr).faceuv = uvleft+","+uvtop + "," + uvright+","+uvbottom;
 			BattleInterface.wm_sign.(signattr).text = GetCrewQuantity(&Characters[cn]);
+			BattleInterface.wm_sign.(signattr).shipname = Characters[cn].Ship.Name;
 			i++;
 		}
 	}
 }
 
-float GetStarProgressByValue(int n)
+float DEPRECATED__GetStarProgressByValue(int n)
 {
 	float f = 0.0;
 	switch( n )
@@ -485,6 +487,23 @@ float GetStarProgressByValue(int n)
 	case 6: f = 0.983; break;
 	}
 	return f;
+}
+
+//belamour присвоить uv классу корабля (замена progressbar)
+void GetStarProgressByValue(int n, ref rLeft, ref rTop, ref rRight, ref rBottom)
+{
+	float fLeft = 0.0;
+	float fRight = 0.0;
+
+	float pw = 1.0/8.0;
+
+	fLeft = pw*n;
+    fRight = fLeft + pw;
+
+	rLeft = fLeft;
+    rTop = 0.0;
+    rRight = fRight;
+    rBottom = 1.0;
 }
 
 void ControlsMapDesc()

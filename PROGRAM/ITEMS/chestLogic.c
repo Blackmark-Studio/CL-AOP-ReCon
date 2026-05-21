@@ -568,6 +568,19 @@ void FillAboardCabinBox(ref _location, ref _npchar)
 		_location.box1.items.jewelry18 = rand(100);
         ok = false;
 	}
+	//Квест "Остепенившийся пират", английский галеон у Доминики, драгоценности
+	if (_npchar.id == "PDM_Lesopilka_Galeon")
+	{
+        DeleteAttribute(_location, "box1");
+        _location.box1.money = 10000;
+		_location.box1.items.jewelry1 = 20+rand(10);
+        _location.box1.items.jewelry2 = 20+rand(10);
+        _location.box1.items.jewelry3 = 30+rand(10);
+        _location.box1.items.jewelry4 = 30+rand(10);
+        _location.box1.items.jewelry5 = rand(80);
+		_location.box1.items.LesopilkaLog = 1;
+        ok = false;
+	}
 	//Шарп, морская дуэль после первого похода
 	if (_npchar.id == "Sharp" && CheckAttribute(PChar, "questTemp.Sharp") && PChar.questTemp.Sharp == "FirstPearlNotPay")
 	{
@@ -825,7 +838,7 @@ bool FillSecretBox(ref location, string boxName)
             	location.(boxName).items.spyglass3 = 1;
             break;
             case "Shore46": //Cumana
-            	location.(boxName).items.STATUE1 = 1;
+            	location.(boxName).items.instrument1 = 1;
             break;
             case "Tortuga_Cave": //Port o Prece (PortPax) Квест 'Пиратская мода' (Вызволение из плена мужа горожанки)
 				location.(boxName).items.suit_2 = 1;
@@ -839,7 +852,7 @@ bool FillSecretBox(ref location, string boxName)
 			case "CommonStoneHouse": //Bridgetown - BloodLine
 				location.(boxName).items.indian1 = 1;
 				location.(boxName).items.EngTradeLicence = 1;
-				location.(boxName).money = 7500;
+				location.(boxName).money = 8500;
 			break;
 			location.(boxName).difficult = -2; //Default заглушка для локаций с одинаковыми локаторами, чтобы не залезли в сундук
 			return false;

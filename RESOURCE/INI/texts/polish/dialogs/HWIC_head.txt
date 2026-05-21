@@ -1,0 +1,39 @@
+HWIC_head_1 {
+Witam was. Jestem teraz bardzo zajęty, więc mówcie od razu – macie do mnie jakąś sprawę?
+}
+HWIC_head_2 {
+Taka sprawa... Jeden z piratów chce wstąpić do was na służbę. Jest gotów zapłacić 20 000 pesos za możliwość, która pozwoli mu dla was pracować.
+}
+HWIC_head_3 {
+Chciałbym się dowiedzieć, jak wam poszło z Hugo?
+}
+HWIC_head_4 {
+Nie, nie, nie zwracajcie na mnie uwagi. Już wychodzę.
+}
+HWIC_head_5 {
+Kim jest ten człowiek?
+}
+HWIC_head_6 {
+Nazywa się Hugo Tartak. On...
+}
+HWIC_head_7 {
+Czy zdajecie sobie sprawę, że ten człowiek to potworny pirat i bezwzględny morderca? Nigdy nie pozwolę, aby ktoś taki znalazł się w naszym rejestrze kapitanów.
+}
+HWIC_head_8_m {
+Ale on nie jest niebezpieczny... Widziałem go, to po prostu zmęczony starzec, a jego największym pragnieniem jest przespać się w wygodnym łóżku. Jest gotów odejść na emeryturę i szuka bezpiecznej przystani, gdzie pozwolą mu żyć w spokoju.
+}
+HWIC_head_8_f {
+Ale on nie jest niebezpieczny... Widziałem go, to po prostu zmęczony starzec, a jego największym pragnieniem jest przespać się w wygodnym łóżku. Jest gotów odejść na emeryturę i szuka bezpiecznej przystani, gdzie pozwolą mu żyć w spokoju.
+}
+HWIC_head_9 {
+Hym... Skoro tak mówicie – być może macie rację. Zaufam wam w tej sprawie, @<pchar>. Poza tym może nam się przydać jako konsultant do walki z piractwem. A zatem...\nMam tutaj ten formularz kontraktu, który weźmiecie i przekażecie mu, kapitanie. Hugo musi niezwłocznie stawić się u mnie po jego otrzymaniu, aby podpisać wszystkie niezbędne dokumenty pracownicze. I jest to bezwzględnie obowiązkowe, musicie to zrozumieć, kapitanie. Powiadomię lokalne władze o jego przybyciu. A teraz pozwólcie, że wrócę do moich spraw.
+}
+HWIC_head_10 {
+Oczywiście, @<GetFullName>! Do widzenia!
+}
+HWIC_head_11 {
+Och, ogromnie dziękuję, @<GetAddress_Form> @<pchar>. To bardzo mężny i doświadczony kapitan. Nasi wrogowie stracili już pół tuzina okrętów. Jest również genialnym gawędziarzem. Jego opowieści o dawnych czasach gromadzą tłumy w tawernie! A teraz, jeśli mi wybaczycie, poproszę was o opuszczenie mojego gabinetu.
+}
+HWIC_head_12 {
+Wszystkiego dobrego!
+}

@@ -1404,7 +1404,7 @@ Bishop_468 {
 Recentemente, um médico enviado pelo comprador veio me ver... parece que o negócio está prestes a ser fechado.
 }
 Bishop_469 {
-Calma, Nicholas. O ouro que seria usado para comprar você já passou para mim como herança. Você vai conosco amanhã à noite.
+Calma, Nicholas. O dinheiro que seria usado para comprar você já passou para mim como herança. Você vai conosco amanhã à noite.
 }
 Bishop_470 {
 Mal posso esperar pela noite de amanhã!

@@ -753,7 +753,7 @@ void LAi_ReloadEndFade()
 		ref mchar       = GetMainCharacter();
 		float fDefenceSkill = 0.9 + MakeFloat(GetSummonSkillFromName(mchar, SKILL_DEFENCE)) / SKILL_MAX;
 		int deadCrew    = makeint((boarding_player_base_crew - crew) / fDefenceSkill + 0.3); // бонус выжившим
-		if (GetOfficersPerkUsing(pchar, "Capellan2")) deadCrew = makeint(deadCrew/2); //Jason, капеллан на борту - потери в 2 раза меньше
+		if (GetOfficersPerkUsing(pchar, "Capellan2", false)) deadCrew = makeint(deadCrew*0.5); //Jason, капеллан на борту - потери в 2 раза меньше
 		int deadCrewWOMedic = makeint(boarding_player_base_crew - crew); // без бонуса
 		float leaderSkill = GetSummonSkillFromNameToOld(mchar, SKILL_LEADERSHIP);
 		int iTemp;
@@ -1806,14 +1806,14 @@ void LootCollectorTransferItemsToShip(bool privateBox)
 	string sTemp, sAttr;
 	int i, j, n, iBoxes;
 	
-	bool perkEnabled = CheckCharacterPerk(pchar, "HawkEye");
+	bool perkEnabled = GetOfficersPerkUsing(pchar, "HawkEye", false);
 	
 	if (CheckAttribute(pchar, "Fellows.Passengers.boatswain"))
 	{
 		if (sti(pchar.Fellows.Passengers.boatswain) >= 0)
 		{
 			ref npchar = GetCharacter(sti(pchar.Fellows.Passengers.boatswain));
-			perkEnabled = CheckCharacterPerk(pchar, "HawkEye") || CheckCharacterPerk(npchar, "HawkEye");
+			perkEnabled = perkEnabled || CheckCharacterPerk(npchar, "HawkEye");
 		}
 	}
 	
@@ -2174,14 +2174,14 @@ void LootCollectorRandItems()
 	string itemID;
 	ref itemRef, locRef = &locations[FindLocation("My_Deck")];
 	bool encouragementLoot = false;
-	bool perkEnabled = CheckCharacterPerk(pchar, "HawkEye");
+	bool perkEnabled = GetOfficersPerkUsing(pchar, "HawkEye", false);
 	
 	if (CheckAttribute(pchar, "Fellows.Passengers.boatswain"))
 	{
 		if (sti(pchar.Fellows.Passengers.boatswain) >= 0)
 		{
 			ref npchar = GetCharacter(sti(pchar.Fellows.Passengers.boatswain));
-			perkEnabled = CheckCharacterPerk(pchar, "HawkEye") || CheckCharacterPerk(npchar, "HawkEye");
+			perkEnabled = perkEnabled || CheckCharacterPerk(npchar, "HawkEye");
 		}
 	}
 	

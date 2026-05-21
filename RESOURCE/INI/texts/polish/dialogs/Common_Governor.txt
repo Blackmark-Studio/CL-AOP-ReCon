@@ -14,7 +14,7 @@ Common_Governor_4 {
 @<LinkRandPhrase>
 }
 Common_Governor_5_m {
-Czego chcesz, łajdaku?! Moi żołnierze już są na twoim tropie, daleko nie uciekniesz, przystojniaku, chodź, idziemy na górę!
+Czego chcesz, łajdaku?! Moi żołnierze już ruszyli twoim tropem, daleko nie uciekniesz, brudny piracie!
 }
 Common_Governor_5_f {
 Czego chcesz, łajdaczko?! Moi żołnierze już są na twoim tropie, daleko nie uciekniesz, nikczemnico!

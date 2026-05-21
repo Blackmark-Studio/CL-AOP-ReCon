@@ -3044,7 +3044,7 @@ ForAll_dialog_810 {
 Não se preocupe, não vou deixar ninguém te machucar!
 }
 ForAll_dialog_811 {
-vocês serviram no mesmo regimento
+Ah, aí está você, senhora! O quê, mais um admirador, pelo que vejo? Quando é que você vai se acalmar de uma vez? Provavelmente nunca... Vá trabalhar num bordel, lá é o seu lugar...
 }
 ForAll_dialog_812 {
 Ah, aí está você, madame! E quem está com você? Mais uma amiga do bordel? Acho que é lá mesmo que você deveria estar...

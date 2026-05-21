@@ -245,7 +245,7 @@ Aumenta la velocidad del barco en un 20#sSailingProfessional_speed#% y la maniob
 SeaDogProfessional {Señor de los Mares}
 perkSeaDogProfessional
 {
-Incluso los aventureros y bandidos más temerarios no se atreven a tentar a la suerte al ver la bandera del Amo de los Mares. Evita los ataques de escuadrones enemigos regulares en el mapa global.
+Al ver este banderín, incluso los aventureros y bandidos más empedernidos no se atreven a tentar a la suerte. Su habilidad definitiva obliga a ciertas escuadras a ignorar tu flota, aumenta drásticamente la probabilidad de rendición de los barcos enemigos y abre una serie de oportunidades únicas.
 ~
 La habilidad no funcionará si hay barcos de clase baja en el escuadrón.
 ~
@@ -274,6 +274,10 @@ Investor {Maestro de inversiones}
 perkInvestor {El conocimiento de los mecanismos financieros permite al personaje aumentar la tasa de depósito bancario en un 1%, generando ingresos adicionales.}
 ProfessionalCommerce {Comercio profesional}
 perkProfessionalCommerce {Descuento extra de -15#sProfessionalCommerce#% y bonificación de +15% en todas las operaciones comerciales.}
+CrewSalaryOptimization		{Auditoría total}
+perkCrewSalaryOptimization	{El personaje pone orden en la contabilidad del barco con mano de hierro. Gracias a una revisión magistral de las partes de la tripulación y a la eliminación de cualquier gasto innecesario, el costo de los salarios de la tripulación en la escuadra se reduce en un 40 % sin pérdida de disciplina.
+~
+Disponible solo para el personaje principal.}
 Carpenter {Reparación básica}
 perkCarpenter
 {
@@ -467,6 +471,15 @@ Otorga una tirada de salvación del 50% para suprimir posibles revueltas de escl
 Duelist {Duelista Renombrado}
 DuelistFem {Duelista Renombrado}
 perkDuelist {+5% de daño infligido y -5% de daño recibido en combate cuerpo a cuerpo contra un solo enemigo, sin importar la cantidad de aliados.}
+InquisitionBlessing         {Bendición de la Inquisición}
+perkInquisitionBlessing     {Patrocinio especial de la Santa Inquisición, recibido del Inquisidor Jefe Antonio de Souza.
+~
+Una fe interior inquebrantable llena cada golpe del personaje con poder sagrado, aumentando el daño contra monstruos, no-muertos e indios en un 20%.}
+
+WitchCharm                  {Don de bruja}
+perkWitchCharm              {Un don mágico especial de Carla, recibido como recompensa por salvarla de las hogueras de la Inquisición.
+~
+Los brillantes encantamientos de la bruja blanca se posan sobre el personaje como un escudo invisible que lo protege de malas intenciones, reduciendo el daño recibido de monstruos, no-muertos e indios en un 20%.}
 HighwaySmuggler {Contrabandista experimentado}
 perkHighwaySmuggler {Este hombre conoce muchas rutas secretas y ha participado repetidamente en el contrabando, engañando a la ley y a sus guardianes.}
 Schemer {Conspirador}
@@ -491,6 +504,38 @@ OneLegMan {Cojitranco}
 perkOneLegMan {El personaje perdió una pierna, pero no perdió sus habilidades de combate.}
 SaveLoadAbuser {Estafador}
 perkSaveLoadAbuser {Un jugador notorio que, a pesar de su éxito en el engaño, es desconfiado por los demás, lo que lo convierte en un solitario en el mundo del juego.}
+Monomania                {Monomanía}
+perkMonomania             {El personaje es fanáticamente devoto a su oficio, pero absolutamente indefenso en todo lo que escape a su estrecho interés.
+~
+Un talento único en una profesión específica le otorga un beneficio base significativo, pero el personaje se vuelve prácticamente inútil en todas las demás áreas de actividad.}
+
+Stuttering               {Tartamudez}
+perkStuttering            {Un defecto del habla que dificulta al personaje expresar sus pensamientos de forma clara y rápida.
+~
+Reduce el valor base de Carisma y aplica penalizaciones al Comercio y al Liderazgo.}
+
+Redskin                  {Indígena}
+perkRedskin               {Este personaje creció en lo profundo de la selva y no tiene idea de cómo funciona la vida en un barco europeo.
+~
+Debido a una total falta de conocimientos marítimos, no se le puede asignar a puestos de oficial relacionados con la gestión del barco. Sin embargo, como tripulante de abordaje leal, será indispensable.}
+
+NoCaptain                {Subordinado}
+perkNoCaptain             {Este personaje carece por completo de cualidades de liderazgo, y la responsabilidad de un barco entero y su tripulación lo sumerge en el pánico.
+~
+El personaje no puede ser asignado como compañero (capitán de un barco independiente) en la flotilla. No obstante, aún puede servir eficazmente como oficial normal bajo tu mando.}
+
+MusketeerOnly            {Tirador convencido}
+perkMusketeerOnly         {El personaje solo reconoce el poder de la pólvora y el plomo, siendo completamente incapaz (o negándose por principio) de empuñar cualquier arma blanca. En combate, solo puede utilizar un mosquete.}
+
+WeaponBonding             {Vínculo con el arma}
+perkHumphreyGunmaster      {El personaje siente un profundo apego mental hacia su arma única.
+~
+Este rasgo de carácter no le permite utilizar ninguna otra arma, pero en el manejo de su arma personal no tiene rival.}
+
+DuglasSchool             {Instrucción especial de mosquetero}
+perkDuglasSchool          {El personaje ha recibido formación según una metodología compleja y poco común de las escuelas de tiro de élite del Viejo Mundo.
+~
+Solo aquellos que dominen a la perfección esta base clásica tan poco común serán capaces de utilizar tipos de mosquetes raros y experimentales.}
 Energaiser {Energizante}
 perkEnergaiser {El personaje está en el máximo de sus capacidades físicas, por lo que la energía se recupera 1,5 veces más rápido.}
 LoyalOff {Lealtad}

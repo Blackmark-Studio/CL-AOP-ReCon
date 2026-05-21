@@ -9101,3 +9101,116 @@ data = "Turn speed", "5.5"
 	speed = 1.0
 	loop = false
 	event = "Blade to hand", 5183, normal
+
+
+
+; Анимация стояния с факелом
+[torch_stand]
+	speed = 1.0
+	loop = true
+	type = normal
+	start_time = 35331
+	end_time = 35381
+	data = "Blend time", "0.2"		; sec
+	data = "Probability", "1.0"
+
+[torch_fire]
+	start_time = 31082
+	end_time = 31389
+	speed = 2.14
+	type = normal
+	loop = false
+	data = "Blend time", "0.1"		; sec
+
+
+;=============================Анимации сцены с сокровищами===============================
+;ГГ стоит перед горой золота - диалог
+[gold_1_1]
+	start_time = 37078
+	end_time = 37322
+	speed = 2.0
+	type = normal
+	loop = true
+	data = "Blend time", "0.1"		; sec
+
+;ГГ смотрит, как офицер ложится на гору золота
+[gold_1_2]
+	start_time = 37322
+	end_time = 37811
+	speed = 2.0
+	type = normal
+	loop = false
+	data = "Blend time", "0.1"		; sec
+
+;Диалог стоя с лежащим офицером
+[gold_1_3]
+	start_time = 37811
+	end_time = 38091
+	speed = 1.3
+	type = normal
+	loop = true
+	data = "Blend time", "0.1"		; sec
+
+;ГГ ложится рядом
+[gold_1_4]
+	start_time = 38091
+	end_time = 38298
+	speed = 2.0
+	type = normal
+	loop = false
+	data = "Blend time", "0.1"		; sec
+
+;Диалог лежащего ГГ
+[gold_1_5]
+	start_time = 38298
+	end_time = 38770
+	speed = 2.0
+	type = normal
+	loop = true
+	data = "Blend time", "0.1"		; sec
+
+
+;Офицер стоит перед горой золота - диалог
+[gold_2_1]
+	start_time = 35385
+	end_time = 35629
+	speed = 2.0
+	type = normal
+	loop = true
+	data = "Blend time", "0.1"		; sec
+
+;Офицер ложится на гору золота
+[gold_2_2]
+	start_time = 35629
+	end_time = 36118
+	speed = 2.0
+	type = normal
+	loop = false
+	data = "Blend time", "0.1"		; sec
+
+;Диалог лежа с ГГ, пока тот стоит
+[gold_2_3]
+	start_time = 36118
+	end_time = 36398
+	speed = 1.3
+	type = normal
+	loop = true
+	data = "Blend time", "0.1"		; sec
+
+;Анимация, пока ГГ ложится рядом
+[gold_2_4]
+	start_time = 36398
+	end_time = 36605
+	speed = 2.0
+	type = normal
+	loop = false
+	data = "Blend time", "0.1"		; sec
+
+;Диалог с рядом лежащим ГГ
+[gold_2_5]
+	start_time = 36605
+	end_time = 37077
+	speed = 2.0
+	type = normal
+	loop = true
+	data = "Blend time", "0.1"		; sec

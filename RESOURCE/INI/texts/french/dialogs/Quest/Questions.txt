@@ -494,7 +494,7 @@ Questions_140 {
 Non, je ne crois pas...
 }
 Questions_141 {
-Ceci est une statue qui confère une capacité extraordinaire pour améliorer les réparations du navire. Elle est cachée dans une baie près de Portobelo. La baie s’appelle Chiriquí Lagoon. Explorez la zone avec attention, et n’ayez pas peur de vous mouiller les pieds. Bonne chance, Capitaine!
+Voici un coffre d'outils de charpentier qui permettait autrefois de réparer un navire bien plus efficacement. Il fut enterré dans une baie près de Portobelo : la lagune de Chiriquí. Fouillez bien les lieux et ne craignez pas de vous mouiller les bottes. Qui sait, peut-être qu'une partie de ce matériel est encore en bon état... Bonne chance, Capitaine !
 }
 Questions_142 {
 Tu sais, c’est vraiment très utile pour un capitaine. Merci.

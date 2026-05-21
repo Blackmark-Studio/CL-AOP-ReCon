@@ -9,7 +9,7 @@ int LocationInitPearl(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     Locations[n].id = "Pearl_town_1";
 	locations[n].id.label = "Village";
-	Locations[n].image = "loading\towns\pearl1.tga";
+	Locations[n].image = "loading\towns\pearl.tga";
 	locations[n].pearlVillage = true;
 	locations[n].carrier = true;
 	//Sound
@@ -80,7 +80,7 @@ int LocationInitPearl(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "PearlTown1_Townhall";
 	locations[n].id.label = "House";
-	locations[n].image = "loading\inside\mediumhouse10.tga";
+	locations[n].image = "loading\inside\mediumhouse02.tga";
 	//Town sack
 	locations[n].townsack = "Pearl_town_2";
 	locations[n].lockWeather = "Inside";
@@ -708,7 +708,7 @@ int LocationInitPearl(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     Locations[n].id = "Pearl_town_2";
 	locations[n].id.label = "Village";
-	locations[n].image = "loading\towns\pearl1.tga";
+	locations[n].image = "loading\towns\pearl.tga";
 	locations[n].pearlVillage = true;
 	locations[n].carrier = true;
 	//Sound
@@ -779,7 +779,7 @@ int LocationInitPearl(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "PearlTown2_Townhall";
 	locations[n].id.label = "House";
-	locations[n].image = "loading\inside\mediumhouse10.tga";
+	locations[n].image = "loading\inside\mediumhouse02.tga";
 	//Town sack
 	locations[n].townsack = "Pearl_town_2";
 	locations[n].lockWeather = "Inside";

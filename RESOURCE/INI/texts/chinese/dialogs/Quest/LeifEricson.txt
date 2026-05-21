@@ -50,7 +50,7 @@ LeifEricson_13 {
 谢谢。希望咱们别再见面了。
 }
 LeifEricson_14 {
-再见了，私掠者……
+再见了，私掠船……
 }
 LeifEricson_15 {
 再见，Leif。
@@ -80,19 +80,19 @@ LeifEricson_20 {
 你叫什么名字？你是谁？老实说，能保你一命。
 }
 LeifEricson_21 {
-我叫@<GetFullName>，是一名私掠船长。
+我叫 @<GetFullName>。我是个私掠者。
 }
 LeifEricson_22 {
-这口气是不是太高贵了点，配你这破烂骷髅？
+对于一个肮脏的老骷髅头来说，这语气是不是有点太崇高了？
 }
 LeifEricson_23 {
-“privateer”是什么意思？
+“私掠者”是什么意思？
 }
 LeifEricson_24 {
-私掠船就是海盗……是掠夺者，是强盗……
+私掠者就是海盗……
 }
 LeifEricson_25 {
-“filibuster”和“pirate”是什么意思？
+什么是“海盗”？
 }
 LeifEricson_26_m {
 怎么说呢……俺是自由的水手，也是自由的战士。俺有自己的船，想干啥就干啥。

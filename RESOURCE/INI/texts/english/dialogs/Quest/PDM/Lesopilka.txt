@@ -1,0 +1,280 @@
+Lesopilka_1 {
+What a pity, what a pity. Oh, damn it all!
+}
+Lesopilka_2 {
+What are you muttering to yourself?
+}
+Lesopilka_3 {
+My name is Hugo. Hugo Lumbersaw. I see that you're a captain too. Would you spare an hour to listen to my story?
+}
+Lesopilka_4 {
+I don't mind.
+}
+Lesopilka_5 {
+Well, no, actually. I'd rather spend an hour somewhere else.
+}
+Lesopilka_6_m {
+Here, listen: I've gotten too old to live the life of a pirate. Robbery and fighting are games for the young, you know? I don't want to risk my hide anymore, and I want to sail peacefully, without flinching at the sight of other ships. But the problem is, I have nowhere to go. Everyone wants to hang me, you know? But I've thought of something, lad.
+I'm thinking of getting myself a letter of marque, entering service and earning some money, but the damned forts start shooting as soon as I approach any port, and I can't reach the governor to make him an offer. The English or French will hang me as soon as I'm in their hands: they have orders to kill me the moment I poke my nose out. I think I could enter the service of the Spanish or Dutch, but I can't enter their damned ports – they'd immediately open fire on me!
+And all those damned, so-called diplomats in pirate taverns charge such prices that I couldn't earn that much in a lifetime...
+}
+Lesopilka_6_f {
+Here, listen: I've gotten too old to live the life of a pirate. Robbery and fighting are games for the young, you know? I don't want to risk my hide anymore, and I want to sail peacefully, without flinching at the sight of other ships. But the problem is, I have nowhere to go. Everyone wants to hang me, you know? But I've thought of something, lass.
+I'm thinking of getting myself a letter of marque, entering service and earning some money, but the damned forts start shooting as soon as I approach any port, and I can't reach the governor to make him an offer. The English or French will hang me as soon as I'm in their hands: they have orders to kill me the moment I poke my nose out. I think I could enter the service of the Spanish or Dutch, but I can't enter their damned ports – they'd immediately open fire on me!
+And all those damned, so-called diplomats in pirate taverns charge such prices that I couldn't earn that much in a lifetime...
+}
+Lesopilka_7 {
+What about the Brotherhood?
+}
+Lesopilka_8 {
+What about the Dutch West India Company?
+}
+Lesopilka_9 {
+I'm sorry, Hugo, but I can't help you. I wish you luck. Farewell.
+}
+Lesopilka_10_m {
+The Brotherhood! I'm not part of it, and I never will be! They make rules for piracy – rules, did you hear that? Rules for pirates! I've never heard such nonsense. I'll tell you straight, lad, the Brotherhood is just a gang of brainless idiots who got together to get under the feet of us free sailors.
+}
+Lesopilka_10_f {
+The Brotherhood! I'm not part of it, and I never will be! They make rules for piracy – rules, did you hear that? Rules for pirates! I've never heard such nonsense. I'll tell you straight, lass, the Brotherhood is just a gang of brainless idiots who got together to get under the feet of us free sailors.
+}
+Lesopilka_11 {
+What about the Dutch West India Company?
+}
+Lesopilka_12 {
+Hmm... It's your opinion, after all. Well, then I'm afraid I can't offer you anything else. See you later.
+}
+Lesopilka_13 {
+The Dutch West India Company? Ha, I think that's a good idea. You really can help me!
+}
+Lesopilka_14 {
+What do I need to do?
+}
+Lesopilka_15_m {
+You're a privateer, aren't you? You can enter a Dutch port, and the fort's cannons won't send your tub to the bottom, right? So you can put in a good word for me with the director of the office in Willemstad, can't you? Just tell him that I'm ready to offer 20,000 piastres, and I'm ready to swear to serve him faithfully.
+}
+Lesopilka_15_f {
+You're a privateer, aren't you? You can enter a Dutch port, and the fort's cannons won't send your tub to the bottom, right? So you can put in a good word for me with the director of the office in Willemstad, can't you? Just tell him that I'm ready to offer 20,000 piastres, and I'm ready to swear to serve him faithfully.
+}
+Lesopilka_16_m {
+Actually, I could do it, but to be honest, what's in it for me?
+}
+Lesopilka_16_f {
+Actually, I could do it, but to be honest, what's in it for me?
+}
+Lesopilka_17 {
+I feel for you, Hugo, but I don't have time for this right now. See you.
+}
+Lesopilka_18_m {
+As you say, lad. I'll find someone else for this job.
+}
+Lesopilka_18_f {
+As you say, lass. I'll find someone else for this job.
+}
+Lesopilka_19 {
+See you.
+}
+Lesopilka_20 {
+Money, of course! I can pay you 10,000 piastres. What do you say?
+}
+Lesopilka_21_m {
+That works for me. I agree. I'll try to get you a Dutch West India Company document in exchange for the piastres.
+}
+Lesopilka_21_f {
+That works for me. I agree. I'll try to get you a Dutch West India Company document in exchange for the piastres.
+}
+Lesopilka_22 {
+You must be joking. Ten thousand for such a difficult and dangerous job? No deal.
+}
+Lesopilka_23 {
+That's a good man! Fair winds to you, captain. I can only wait here for a couple of months. If you haven't returned by then, I'll probably be swinging from a gallows.
+}
+Lesopilka_24 {
+See you.
+}
+Lesopilka_25_m {
+So, @<pchar> – where is that document you promised to bring me?
+}
+Lesopilka_25_f {
+So, @<pchar> – where is that document you promised to bring me?
+}
+Lesopilka_26 {
+Oh yes, it worked out! @<GetFullName> said he invites you to visit him at his residence as soon as possible – with your twenty thousand, of course. And now, I suppose, you also owe me ten thousand piastres?
+}
+Lesopilka_27 {
+Forgive me, Hugo, but I don't have it yet.
+}
+Lesopilka_28_m {
+That's amazing news, lad! Amazing! Here are your piastres, and with them my gratitude. @<GetFullName>, you said? So I need to go to Willemstad... I'll turn the helm in that direction immediately!
+}
+Lesopilka_28_f {
+That's amazing news, lass! Amazing! Here are your piastres, and with them my gratitude. @<GetFullName>, you said? So I need to go to Willemstad... I'll turn the helm in that direction immediately!
+}
+Lesopilka_29 {
+Good luck, Hugo. Hope to see you again.
+}
+Lesopilka_30_m {
+Ah, lad! Back again, eh? Well, I need to go see this Matthias Beck... After I drink a couple of mugs to you and my new home, Holland!
+}
+Lesopilka_30_f {
+Ah, lass! Back again, eh? Well, I need to go see this Matthias Beck... After I drink a couple of mugs to you and my new home, Holland!
+}
+Lesopilka_31 {
+Thanks for the kind words, Hugo. I'll leave you to celebrate your appointment.
+}
+Lesopilka_32 {
+Ah, it's you again, Captain @<pchar>! Glad to see you!
+}
+Lesopilka_33 {
+Oh, old Lumbersaw! And how is your honest life?
+}
+Lesopilka_34_m {
+Very well, thank you. I'll tell you, the other Dutch captains were suspicious of me at first, but I showed them a few fighting tricks, and now we're all best friends.
+Ha! Listen, @<pchar>, as thanks for what you've done for me, I have some good advice for you. Come closer and listen.
+I know where you can get some good goods, very good goods. You see, @<pchar>, one of my old, uh, acquaintances, who is a pirate, you know... well, he told me that an English ship filled with gold and silver got caught in a bad storm and is now being repaired near Dominica.
+}
+Lesopilka_34_f {
+Very well, thank you. I'll tell you, the other Dutch captains were suspicious of me at first, but I showed them a few fighting tricks, and now we're all best friends.
+Ha! Listen, @<pchar>, as thanks for what you've done for me, I have some good advice for you. Come closer and listen.
+I know where you can get some good goods, very good goods. You see, @<pchar>, one of my old, uh, acquaintances, who is a pirate, you know... well, he told me that an English ship filled with gold and silver got caught in a bad storm and is now being repaired near Dominica.
+}
+Lesopilka_35 {
+So?
+}
+Lesopilka_36 {
+What? Are you stupid, @<pchar>? That galleon holds a fortune!
+}
+Lesopilka_37 {
+Ah. I see. Back to your old ways, are you?..
+}
+Lesopilka_38 {
+It's all official now! The ship is anchored near Dominica – you know it: a small island between Guadeloupe and Barbados. My acquaintance said he saw this ship being repaired after a terrible storm – its rigging was damaged, if you can call its complete absence that, and its hull is also damaged. He said the ship can barely move. Without a shipyard, repairs seem like they'll take a long time, so it's, you could say, stuck there, just waiting for a captain to come and capture it.
+}
+Lesopilka_39 {
+Why don't you capture it yourself?
+}
+Lesopilka_40_m {
+Ah, you think I'm leading you into a trap, do you? No, lad: my ship isn't strong enough to capture that galleon, and besides, I'm too old to change ships. I know every nail and every plank on my 'Felicia', and I don't want to abandon her. So, lad, the easy prey is yours if you want to take it! Hmm.
+Even considering the galleon is badly damaged, I still wouldn't recommend going after it in a lugger or a sloop.
+}
+Lesopilka_40_f {
+Ah, you think I'm leading you into a trap, do you? No, lass: my ship isn't strong enough to capture that galleon, and besides, I'm too old to change ships. I know every nail and every plank on my 'Felicia', and I don't want to abandon her. So, lass, the easy prey is yours if you want to take it! Hmm.
+Even considering the galleon is badly damaged, I still wouldn't recommend going after it in a lugger or a sloop.
+}
+Lesopilka_41 {
+Good. Hugo, are you sure you don't want to come with me on this adventure? If there really is that much gold, you definitely deserve a share for the valuable information.
+}
+Lesopilka_42 {
+My Felicia is being repaired right now, and she's always under the close watch of the Dutch Company. But... If you insist, I'm ready to come with you as an escort. I'll just ask permission from those office bureaucrats, and I'll be on your ship.
+}
+Lesopilka_43 {
+The ship is anchored off Dominica, you say? Then we need to prepare very well for this adventure. Good luck to us.
+}
+Lesopilka_44 {
+Ah! Care for a drink with me, @<pchar>?
+}
+Lesopilka_45 {
+Not now, Hugo. But thanks!
+}
+Lesopilka_46_m {
+Then what are you wasting your time for, lad? Go and take that galleon before it sails away!
+}
+Lesopilka_46_f {
+Then what are you wasting your time for, lass? Go and take that galleon before it sails away!
+}
+Lesopilka_47 {
+You're right, Hugo.
+}
+Lesopilka_48_m {
+That was some fight, lad! Seems we've broken their main forces, so now, I think, no one will bother us.
+}
+Lesopilka_48_f {
+That was some fight, lass! Seems we've broken their main forces, so now, I think, no one will bother us.
+}
+Lesopilka_49 {
+You're right as always, Hugo. Let's go find the treasure!
+}
+Lesopilka_50_m {
+Oh-ho, lad. I picked this little thing up from the sinking ship. I think you'll be interested.
+}
+Lesopilka_50_f {
+Oh-ho, lass. I picked this little thing up from the sinking ship. I think you'll be interested.
+}
+Lesopilka_51 {
+It's the captain's log from the ship '@<FindPersonalName>'. I should study it. Thanks, Hugo, you can go.
+}
+Lesopilka_52_m {
+Holy Virgin... I've never seen so much gold in one place in my whole life! You know, lad, I've always had one silly dream since childhood – to bury myself in a pile of treasure like that and just lie on it, thinking about nothing. I suggest you try it too!
+}
+Lesopilka_52_f {
+Holy Virgin... I've never seen so much gold in one place in my whole life! You know, lass, I've always had one silly dream since childhood – to bury myself in a pile of treasure like that and just lie on it, thinking about nothing. I suggest you try it too!
+}
+Lesopilka_53 {
+Lie on gold? Hugo, are you secretly an old fire-breathing dragon guarding your hoard? It's not as pleasant as you think – the coins are cold and hard...
+}
+Lesopilka_54_m {
+Ha! One can endure that for a moment like this. Come on, lad, don't be a buzzkill, lie down next to me! When else will you get a chance to rest on such a pile of gold?
+}
+Lesopilka_54_f {
+Ha! One can endure that for a moment like this. Come on, lass, don't be a buzzkill, lie down next to me! When else will you get a chance to rest on such a pile of gold?
+}
+Lesopilka_55 {
+Alright, alright, you've convinced me. Let's try your 'dragon therapy'...
+}
+Lesopilka_56 {
+That's the spirit! Lie down, make yourself comfortable...
+}
+Lesopilka_57 {
+(Lie down on the pile of gold)
+}
+Lesopilka_58 {
+Well, how is it? Do you feel like the master of the Caribbean?
+}
+Lesopilka_59 {
+You know, it's pretty hard, but it's... erm... nice on the back, if you could say that. Listen, Hugo, here we are lying, resting, and something came to my mind. We've known each other for a long time, but I still don't know... Why were you nicknamed Lumbersaw? You're a pirate, not a carpenter. Ha-ha-ha!
+}
+Lesopilka_60_m {
+Oh, that's an old and very funny story, lad! In my youth, I was hot-headed and swung my boarding axe left and right with such fury that only splinters and sawdust flew from my enemies! But my main 'deed' happened during a particularly fierce boarding action...
+}
+Lesopilka_60_f {
+Oh, that's an old and very funny story, lass! In my youth, I was hot-headed and swung my boarding axe left and right with such fury that only splinters and sawdust flew from my enemies! But my main 'deed' happened during a particularly fierce boarding action...
+}
+Lesopilka_61 {
+And what did you do?
+}
+Lesopilka_62 {
+In the heat of battle, I spotted the mainmast of the enemy ship, which had already been significantly damaged by our chain shot. Without thinking twice, I decided to 'finish it off' with my axe, accidentally cutting down some poor Spanish fellow in the process. And what do you think? I swung so hard that this huge mast fell, bringing down all the other masts of the enemy... and at the same time, it buried our own ship's rigging and masts under the wreckage! We were both left without sails in the middle of the ocean. That's when the lads started calling me Hugo Lumbersaw. Ha-ha-ha!
+}
+Lesopilka_63 {
+Ha-ha-ha! Well, Hugo, you really are quite the lumberjack. Alright, we've rested on the treasure — that's enough, time to gather the loot and head back.
+}
+Lesopilka_64_m {
+That's true... Ah, I like being a reformed pirate. Life is getting better, lad.
+}
+Lesopilka_64_f {
+That's true... Ah, I like being a reformed pirate. Life is getting better, lass.
+}
+Lesopilka_65 {
+Indeed, Hugo... Alright. This pile is your share, and I'll take the rest.
+}
+Lesopilka_66_m {
+Ha, lad, I knew you could do it!
+}
+Lesopilka_66_f {
+Ha, lass, I knew you could do it!
+}
+Lesopilka_67 {
+Thanks, Hugo. I only got all this treasure because of you.
+}
+Lesopilka_68 {
+Ah! Care for a drink with me, @<pchar>?
+}
+Lesopilka_69 {
+Sorry, Hugo, I have unfinished business. Maybe another time. Farewell!
+}
+Lesopilka_70 {
+Ah! Care for a drink with me, @<pchar>?
+}
+Lesopilka_71 {
+Sorry, Hugo, I have unfinished business. Maybe another time. Farewell!
+}

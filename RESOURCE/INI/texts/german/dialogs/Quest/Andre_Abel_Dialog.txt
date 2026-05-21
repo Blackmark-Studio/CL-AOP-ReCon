@@ -1,5 +1,5 @@
 Andre_Abel_Dialog_1 {
-Seien Sie gegrüßt, Kapitän...
+Oh, seid Ihr das, Kapitän?!
 }
 Andre_Abel_Dialog_2 {
 Schön, Sie zu sehen, Captain.
@@ -8,10 +8,10 @@ Andre_Abel_Dialog_3 {
 @<RandPhraseSimple>
 }
 Andre_Abel_Dialog_4_m {
-Hm, ich habe dich hier noch nie gesehen. Kennen wir uns? Der Barkeeper meinte, du hättest Ärger gehabt und brauchst eine Begleitung.
+Hm, ich habe dich hier noch nie gesehen. Kennen wir uns? Du siehst aus, als wärst du in Schwierigkeiten geraten...
 }
 Andre_Abel_Dialog_4_f {
-Hm, ich habe dich hier noch nie gesehen. Kennen wir uns? Der Barkeeper meinte, du hättest Ärger gehabt und brauchst eine Begleitung.
+Hm, ich habe dich hier noch nie gesehen. Kennen wir uns? Du siehst aus, als wärst du in Schwierigkeiten geraten...
 }
 Andre_Abel_Dialog_5 {
 Tut mir leid, Kumpel, ich bin gleich bei dir—kann jetzt nicht reden.

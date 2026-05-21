@@ -39,7 +39,7 @@ int InitItems()
 	// >-----------------------------------------------------> WEAPONS >---------------------------------------------------->
 
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	//													ЛЕГКОЕ ОРУЖИЕ
+	//													ЛЁГКОЕ ОРУЖИЕ
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	// предмет исключён из обычного спавна при: rare <= 0.0 или quality "excellent"/"unique"
 	//																						block						minlevel	dmg_min.min.gen			dmg_max.max.gen			quality
@@ -72,27 +72,27 @@ int InitItems()
 	n = InitBlades(n,	"blade37",		7,	"ITEMS_21",	"Fencing",		9.0,	47.0,	14,	2,	4.8,	150,	0.1,	0,	10,	1,	7.0,	11.0,	44.0,	49.0,	3.5,	4.5,	"poor", 		"common");					// "Мачете"
 	n = InitBlades(n,	"topor3",		8,	"ITEMS_10",	"Fencing",		9.0,	50.0,	14,	2,	5.2,	150,	0.01,	1,	10,	1,	6.0,	14.0,	48.0,	55.0,	4.7,	5.9,	"poor", 		"common");					// "Клевец"
 	n = InitBlades(n,	"blade3",		8,	"ITEMS_6",	"Fencing",		10.0,	49.0,	60,	5,	5.2,	200,	0.1,	0,	10,	1,	7.0,	12.0,	45.0,	50.0,	4.5,	5.4,	"poor", 		"common,solder");			// "Катласс"
-	n = InitBlades(n,	"blade7",		13,	"ITEMS_6",	"Fencing",		13.0,	53.0,	18,	5,	4.6,	250,	0.1,	1,	10,	1,	12.0,	15.0,	52.0,	58.0,	4.0,	4.8,	"ordinary", 	"common,officer,solder");	// "Бильбо"
-	n = InitBlades(n,	"blade12",		5,	"ITEMS_3",	"Fencing",		13.0,	54.0,	30,	20,	4.7,	300,	0.1,	1,	10,	1,	12.0,	15.0,	52.0,	58.0,	4.1,	5.0,	"ordinary", 	"common,officer");			// "Катцбальгер"
-	n = InitBlades(n,	"blade18",		11,	"ITEMS_3",	"Fencing",		14.0,	54.0,	35,	35,	4.8,	400,	0.001,	1,	10,	1,	12.0,	15.0,	52.0,	58.0,	4.5,	5.0,	"ordinary", 	"common,officer");			// "Хангер"
-	n = InitBlades(n,	"topor5",		8,	"ITEMS_21",	"Fencing",	    10.0,	57.0,	50,	2,	5.3,	500,	0.0,	0,	10,	1,	9.0,	15.0,	56.0,	61.0,	5.0,	5.9,	"ordinary", 	"indian");					// "Томагавк"
-	n = InitBlades(n,	"blade_maltes",	5,	"ITEMS_14",	"Fencing",	    16.0,	55.0,	25,	30,	4.4,	600,	0.1,	1,	10,	1,	15.0,	17.0,	54.0,	56.0,	4.6,	5.2,	"ordinary", 	"common,officer");			// "Мальтийский меч"
+	n = InitBlades(n,	"blade7",		13,	"ITEMS_6",	"Fencing",		13.0,	53.0,	18,	5,	4.5,	250,	0.1,	1,	10,	1,	12.0,	14.0,	52.0,	55.0,	4.0,	4.6,	"ordinary", 	"common,officer,solder");	// "Бильбо"
+	n = InitBlades(n,	"blade12",		5,	"ITEMS_3",	"Fencing",		13.0,	54.0,	30,	20,	4.0,	300,	0.1,	1,	10,	1,	11.0,	15.0,	51.0,	56.0,	3.9,	4.2,	"ordinary", 	"common,officer");			// "Катцбальгер"
+	n = InitBlades(n,	"blade18",		11,	"ITEMS_3",	"Fencing",		13.0,	54.0,	35,	35,	4.8,	400,	0.1,	1,	10,	1,	10.0,	16.0,	52.0,	57.0,	4.5,	4.8,	"ordinary", 	"common,officer");			// "Хангер"
+	n = InitBlades(n,	"topor5",		8,	"ITEMS_21",	"Fencing",	    10.0,	57.0,	50,	2,	5.3,	500,	0.0,	0,	10,	1,	9.0,	15.0,	54.0,	60.0,	5.0,	5.7,	"ordinary", 	"indian");					// "Томагавк"
+	n = InitBlades(n,	"blade_maltes",	5,	"ITEMS_14",	"Fencing",	    17.0,	57.0,	30,	30,	4.4,	700,	0.001,	5,	10,	1,	16.0,	18.0,	56.0,	58.0,	4.3,	4.5,	"good", 	"officer");			// "Мальтийский меч"
 
-	n = InitBlades(n,	"blade31",		3,	"ITEMS_10",	"Fencing",		20.0,	61.0,	50,	65,	4.7,	800,	0.001,	1,	15,	1,	18.0,	23.0,	60.0,	63.0,	4.6,	4.8,	"good", 		"officer,cool");			// "Шамшир"
-	n = InitBlades(n,	"blade34",		5,	"ITEMS_10",	"Fencing",		20.0,	61.0,	90,	70,	4.6,	1000,	0.0001,	1,	15,	1,	18.0,	23.0,	60.0,	63.0,	4.6,	4.8,	"good", 		"officer,cool");			// "Скаллоп"
-	n = InitBlades(n,	"blade30",		2,	"ITEMS_10",	"Fencing",		22.0,	67.0,	55,	40,	4.2,	1200,	0.001,	1,	15,	1,	20.0,	25.0,	65.0,	70.0,	4.1,	4.5,	"excellent", 	"cool");					// "Нобиль"
+	n = InitBlades(n,	"blade31",		3,	"ITEMS_10",	"Fencing",		23.0,	64.0,	50,	65,	4.7,	800,	0.001,	1,	15,	1,	18.0,	25.0,	59.0,	65.0,	4.6,	4.8,	"good", 		"officer,cool");			// "Шамшир"
+	n = InitBlades(n,	"blade34",		5,	"ITEMS_10",	"Fencing",		20.0,	61.0,	90,	70,	4.4,	1000,	0.001,	1,	15,	1,	19.0,	22.0,	60.0,	63.0,	4.3,	4.5,	"good", 		"officer,cool");			// "Скаллоп"
+	n = InitBlades(n,	"blade30",		2,	"ITEMS_10",	"Fencing",		22.0,	67.0,	55,	40,	4.2,	1200,	0.0001,	1,	15,	1,	20.0,	25.0,	65.0,	70.0,	4.1,	4.5,	"excellent", 	"cool");					// "Нобиль"
 	n = InitBlades(n,	"blade24",		5,	"ITEMS_8",	"Fencing",		22.0,	67.0,	58,	45,	4.3,	1500,	0.001,	1,	15,	1,	20.0,	25.0,	65.0,	70.0,	4.1,	4.5,	"excellent", 	"cool");					// "Скьявона"
 	n = InitBlades(n,	"blade25",		1,	"ITEMS_8",	"Fencing",		23.0,	67.0,	60,	70,	4.2,	1700,	0.0001,	1,	15,	1,	20.0,	25.0,	65.0,	70.0,	4.1,	4.5,	"excellent", 	"cool");					// "Карабела"
 	n = InitBlades(n,	"blade32",		4,	"ITEMS_10",	"Fencing",		26.0,	68.0,	90,	92,	4.3,	3000,	0.0001,	1,	15,	1,	24.0,	27.0,	67.0,	72.0,	4.2,	4.6,	"excellent", 	"cool");					// "Фламберж"
 	n = InitBlades(n,	"blade26",		2,	"ITEMS_8",	"Fencing",		24.0,	73.0,	88,	72,	4.2,	2500,	0.0001,	1,	5,	1,	22.0,	26.0,	72.0,	74.0,	4.1,	4.3,	"unique", 		"");						// "Паппенхаймер"
-	n = InitBlades(n,	"RapierReCon",  4,	"ITEMS_15",	"Fencing",		20.0,	57.0,	40,	72,	4.0,	2000,	0.0001,	1,	1,	1,	20.0,	21.0,	56.0,	58.0,	3.9,	4.1,	"unique", 		"");						// "DLC Support Pack"
+	n = InitBlades(n,	"RapierReCon",  4,	"ITEMS_15",	"Fencing",		20.0,	57.0,	40,	72,	3.9,	2000,	0.0001,	1,	1,	1,	20.0,	21.0,	56.0,	58.0,	3.8,	4.1,	"unique", 		"");						// "DLC Support Pack"
 
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	//													ТЯЖЁЛОЕ ОРУЖИЕ
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	//
 	//										picIndex											block						minlevel	dmg_min.min.gen			dmg_max.max.gen			quality
-	//					id								blade type						piercing		price					price.gen			dmg_max.min.gen			weight.max.gen
+	//					id									blade type						piercing		price					price.gen			dmg_max.min.gen			weight.max.gen
 	//			index							picTexture					dmg_min	dmg_max			weight			rare		qty.gen			dmg_min.max.gen			weight.min.gen					wType
 	n = InitBlades(n,	"blade10",			3,	"ITEMS_3",	"FencingHeavy",	9.5,	50.0,	65,	25,	9.3,	300,	0.1,	1,	10,	1,	8.0,	10.0,	45.0,	57.0,	8.8,	9.5,	"poor", 		"common,solder");		// "Фальшион"
 	n = InitBlades(n,	"blade35",			10,	"ITEMS_10",	"FencingHeavy",	8.5,	53.0,	50,	10,	9.0,	350,	0.1,	1,	10,	1,	8.0,	9.0,	48.0,	60.0,	8.3,	9.0,	"poor", 		"common,solder");		// "Корделас"
@@ -236,6 +236,8 @@ int InitItems()
 	n = InitQuestItems(n,	"HolFakeLicence",		13,	"ITEMS_4",	0,		0.1,	"",			"",			""); // фальш патент
 	n = InitQuestItems(n,	"strangeNoteLSC",		10,	"ITEMS_4",	0,		0.1,	"",			"",			READING_ITEM_TYPE); //записка тизера
 	n = InitQuestItems(n,	"TizerJournal",			6,	"ITEMS_9",	0,		0.2,	"",			"",			""); // дневник Тизера (становится читабельным позже по квесту)
+	n = InitQuestItems(n,	"recon_potion",			3,	"ITEMS_15",	0,		0.4,	"balsam",	"",			""); // ром "ReConstruction"
+	n = InitQuestItems(n,	"instrument1",			10,	"ITEMS_15",	0,		0.2,	"ToolBox",	"",			""); // отличная пила (+5 починка)
 
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	//	далее начинаются квестовые предметы, заюзаные в локаторах item
@@ -253,6 +255,8 @@ int InitItems()
 	n = InitQuestItemsLocator(n,	"MayorsRing",		2,			"ITEMS_9",		0,		0.3,	"RingSimGold",	"",			-1,		"",					 "",	   "",			"",						"");
 	n = InitQuestItemsLocator(n,	"UsurersJew",		2,			"ITEMS_2",		0,		0.1,	"Diamond",		"",			-1,		"",					 "",	   "",			"",						"");
 	n = InitQuestItemsLocator(n,	"OpenBook",			8,			"ITEMS_4",		0,		0.2,	"OpenBook",		"",			0,		"",					 "",	   "",			"item1",				"PuertoPrincipe_townhall");
+	n = InitQuestItemsLocator(n,	"LesopilkaDoc",		3,			"ITEMS_4",		0,		0.2,	"OpenBook",		"",			0,		"",					 "",	   "",			"",			 			"");
+	n = InitQuestItemsLocator(n,	"LesopilkaLog",		9,			"ITEMS_1",		0,		0.2,	"OpenBook",		"",			-1,		"",	  READING_ITEM_TYPE,	   "",			"",			 			"");
 	n = InitQuestItemsLocator(n,	"Ladder",			12,			"ITEMS_12",		0,		5.0,	"Ladder",		"",			-1,		"",					 "",	   "",			"",						"");
 	n = InitQuestItemsLocator(n,	"key1",				13,			"ITEMS_12",		0,		0.0,	"keysimple",	"",			-1,		"",					 "",	   "",			"",						"");
 	n = InitQuestItemsLocator(n,	"key2",				14,			"ITEMS_12",		0,		0.0,	"keymiddle",	"",			-1,		"",					 "",	   "",			"",						"");
@@ -271,7 +275,6 @@ int InitItems()
 	n = InitQuestItemsLocator(n,	"key_drink",		13,			"ITEMS_12",		0,		0.1,	"keymiddle",	"",			1,		"VelascoBank",		 "",	   "key1",		"",						"");
 	n = InitQuestItemsLocator(n,	"admiralKey",		15,			"ITEMS_12",		0,		0.0,	"keygrand",		"",			-1,		"",					 "",	   "",			"",						"");
 	n = InitQuestItemsLocator(n,	"letter_LSC_1",		16,			"ITEMS_4",		0,		0.1,	"letter",		"",			-1,		"",	  READING_ITEM_TYPE,	   "",			"",						"");
-	n = InitQuestItemsLocator(n,	"recon_potion",		3,  		"ITEMS_15",		0,		0.4,	"balsam",		"",			-1,		"",					 "",	   "",			"",						"");
 
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	//													ТОТЕМЫ
@@ -335,8 +338,8 @@ int InitItems()
 	n = InitMaps(n,		"map_panama",		3,	"ITEMS_13",	(rand(8)+7)*1200,	0.2,	0.0,	"panama",		"",				0);		// "Карта Панамы"
 	n = InitMaps(n,		"map_maracaibo",	15,	"ITEMS_11",	(rand(8)+9)*1250,	0.2,	0.0,	"maracaibo",	"",				0);		// "Карта центра Мэйна"
 	n = InitMaps(n,		"map_cumana",		6,	"ITEMS_11",	(rand(8)+7)*1400,	0.2,	0.0,	"cumana",		"",				0);		// "Карта Куманы"
-	n = InitMaps(n,		"map_providence",	5,	"ITEMS_13",	(rand(8)+9)*1250,	0.2,	0.0,	"OldProvidence","",				0);		// "Карта Олд Провиденс"
-	n = InitMaps(n,		"map_LSC",			10,	"ITEMS_13",	200000,				0.2,	0.0,	"LostShipsCity","",				0);		// "Карта ГПК"
+	n = InitMaps(n,		"map_providence",	9,	"ITEMS_15",	(rand(8)+9)*1350,	0.2,	0.0,	"OldProvidence","",				0);		// "Карта Олд Провиденс"
+	n = InitMaps(n,		"map_LSC",			10,	"ITEMS_13",	200000,				0.2,	0.0,	"LostShipsCity","cabin_map",	0);		// "Карта ГПК"
 	n = InitMaps(n,		"map_full",			2,	"ITEMS_7",	0,					0.4,	0.0,	"none",			"MapRead",		1);		// "Карта сокровищ"
 	n = InitMaps(n,		"map_part1",		1,	"ITEMS_7",	0,					0.2,	0.0,	"none",			"MapRead",		1);		// "Часть карты сокровищ"
 	n = InitMaps(n,		"map_part2",		3,	"ITEMS_7",	0,					0.2,	0.0,	"none",			"MapRead",		1);		// "Часть карты сокровищ"
@@ -362,13 +365,14 @@ int InitItems()
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	//
 	//			index	id				picIndex	picTexture	price	weight	pic		tex		health	healthSpeed	energy	energySpeed	drunk	drunkTime	rare	model			antidot	sound	minlevel
-	n = InitPotions(n,	"potion1",		7,			"ITEMS_1",	100,	0.8,	21,		0,		40.0,	5.0,		0.0,	0.0,		0.0,	0.0,		0.2,	"potion",		0,		"",		0);		// "Лечебное зелье"
-	n = InitPotions(n,	"potion2",		1,			"ITEMS_1",	500,	1.0,	22,		0,		150.0,	8.0,		0.0,	0.0,		0.0,	0.0,		0.1,	"potionbig",	0,		"",		1);		// "Эликсир"
-	n = InitPotions(n,	"potion3",		5,			"ITEMS_1",	200,	0.4,	23,		0,		0.0,	0.0,		0.0,	0.0,		0.0,	0.0,		0.1,	"Antidote",		1,		"",		1);		// "Противоядие"
-	n = InitPotions(n,	"potion4",		4,			"ITEMS_1",	900,	0.4,	24,		0,		130.0,	8.0,		0.0,	0.0,		0.0,	0.0,		0.1,	"balsam",		1,		"",		1);		// "Микстура"
-	n = InitPotions(n,	"potionrum",	3,			"ITEMS_1",	150,	2.0,	25,		0,		50.0,	5.0,		20.0,	10.0,		51.0,	5600.0,		0.01,	"vodka",		1,		"",		1);		// "Бутылка рома"
-	n = InitPotions(n,	"potionwine",	6,			"ITEMS_1",	500,	1.5,	26,		0,		175.0,	7.0,		0.0,	0.0,		15.0,	8000.0,		0.05,	"balsam",		0,		"",		1);		// "Отличное вино"
-	n = InitPotions(n,	"potion5",		12,			"ITEMS_7",	30,		0.4,	27,		0,		25.0,	5.0,		0.0,	0.0,		0.0,	0.0,		0.1,	"balsam",		0,		"",		1);		// "Виноград"
+	n = InitPotions(n,	"potion1",		7,			"ITEMS_1",	100,	0.4,	21,		0,		40.0,	5.0,		0.0,	0.0,		0.0,	0.0,		0.2,	"potion",		0,		"",		0);		// "Лечебное зелье"
+	n = InitPotions(n,	"potion2",		1,			"ITEMS_1",	500,	1.0,	22,		0,		150.0,	7.0,		0.0,	0.0,		0.0,	0.0,		0.1,	"potionbig",	0,		"",		1);		// "Эликсир"
+	n = InitPotions(n,	"potion3",		5,			"ITEMS_1",	200,	0.3,	23,		0,		0.0,	0.0,		0.0,	0.0,		0.0,	0.0,		0.1,	"Antidote",		1,		"",		1);		// "Противоядие"
+	n = InitPotions(n,	"potion4",		4,			"ITEMS_1",	700,	0.8,	24,		0,		100.0,	9.0,		0.0,	0.0,		0.0,	0.0,		0.1,	"balsam",		1,		"",		1);		// "Микстура"
+	n = InitPotions(n,	"potionrum",	3,			"ITEMS_1",	150,	2.0,	25,		0,		50.0,	5.0,		20.0,	10.0,		50.0,	5600.0,		0.01,	"vodka",		1,		"",		1);		// "Бутылка рома"
+	n = InitPotions(n,	"potionwine",	6,			"ITEMS_1",	500,	1.5,	26,		0,		175.0,	7.0,		0.0,	0.0,		10.0,	1120.0,		0.05,	"balsam",		0,		"",		1);		// "Отличное вино"
+	n = InitPotions(n,	"potion5",		12,			"ITEMS_7",	30,		0.4,	27,		0,		25.0,	5.0,		0.0,	0.0,		0.0,	0.0,		0.2,	"balsam",		0,		"",		1);		// "Виноград"
+	n = InitPotions(n,	"potionsangari",4,			"ITEMS_14",	900,	1.5,	26,		0,		145.0,	6.0,		10.0,	5.0,		15.0,	1700.0,		0.001,	"balsam",		0,		"",		7);		// "Сангари"
 
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	//													ДРАГОЦЕННОСТИ, БИЖУТЕРИЯ
@@ -473,6 +477,7 @@ int InitItems()
 
 	n = InitAlchemyRecipies(n,	"recipe_migraine_potion",	"migraine_potion",	1000);		// рецепт "Лекарство от мигрени"
 	n = InitAlchemyRecipies(n,	"recipe_potion1",			"potion1",			5000);		// рецепт "Лечебное зелье"
+	n = InitAlchemyRecipies(n,	"recipe_potionsangari",		"potionsangari",	5000);		// рецепт "Сангари"
 
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	//													ФИЛЛЕРНЫЙ МУСОР
@@ -491,10 +496,10 @@ int InitItems()
 	n = InitMinerals(	n,	"mineral10",16,	"ITEMS_9",	10,		1,		0.1,	"pursel",	0);		// "Мешочек соли"
 	n = InitMinerals(	n,	"mineral11",1,	"ITEMS_9",	90,		1,		0.1,	"pursel",	0);		// "Точильный камень"
 	n = InitMinerals(	n,	"mineral12",9,	"ITEMS_9",	75,		1,		0.1,	"pursel",	0);		// "Верёвка"
-	n = InitMinerals(	n,	"mineral13",15,	"ITEMS_9",	145,	1,		0.1,	"pursel",	0);		// "Медный котелок"
+	n = InitMinerals(	n,	"mineral13",15,	"ITEMS_9",	145,	1,		0.1,	"pursel",	0);		// "Бронзовый котелок"
 	n = InitMinerals(	n,	"mineral14",14,	"ITEMS_10",	200,	1,		0.1,	"pursel",	0);		// "Ножницы"
 	n = InitMinerals(	n,	"mineral15",15,	"ITEMS_10",	20,		1,		0.1,	"pursel",	0);		// "Старая амфора"
-	n = InitMinerals(	n,	"mineral16",5,	"ITEMS_15",	10,		1,		0.01,	"pursel",	0);		// "Гвозди"
+	n = InitMinerals(	n,	"mineral16",5,	"ITEMS_15",	10,		1,		0.1,	"pursel",	0);		// "Гвозди"
 
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	//													ХРУСТАЛЬНЫЕ ЧЕРЕПА ТОЛЬТЕКОВ
@@ -502,9 +507,9 @@ int InitItems()
 	//
 	//									picTexture
 	//			index	id			picIndex		price	minlevel
-	n = InitToltecs(n,	"sculMa1",	11,	"ITEMS_9",	50000,	6);		// "Белый хрустальный череп"	(+5 Абордаж)
+	n = InitToltecs(n,	"sculMa1",	11,	"ITEMS_9",	90000,	6);		// "Белый хрустальный череп"	(+5 Абордаж)
 	n = InitToltecs(n,	"sculMa2",	12,	"ITEMS_9",	70000,	4);		// "Розовый хрустальный череп"	(+5 Орудия)
-	n = InitToltecs(n,	"sculMa3",	13,	"ITEMS_9",	90000,	1);		// "Голубой хрустальный череп"	(+5 Защита) (Полный комплект: +10 Навигация, Орудия, Абордаж и Защита)
+	n = InitToltecs(n,	"sculMa3",	13,	"ITEMS_9",	50000,	1);		// "Голубой хрустальный череп"	(+5 Защита) (Полный комплект: +10 Навигация, Орудия, Абордаж и Защита)
 
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	//													ИНДЕЙСКИЕ ИДОЛЫ
@@ -512,21 +517,21 @@ int InitItems()
 	//
 	//								picIndex
 	//			 index	id				picTexture	price	weight	rare	model		minlevel
-	n = InitTrinkets(n,	"Statue1",	15,	"ITEMS_1",	6500,	20.0,	0.001,	"stat1",	1);		// "Статуэтка Шочипилли"		(+10 Починка)
-	n = InitTrinkets(n,	"indian1",	1,	"ITEMS_5",	2530,	3.0,	0.005,	"pursel",	2);		// "Оберег Тлальчитонатиу"		(+10 Лидерство и Скрытность, -20 Огнестрельное оружие)
-	n = InitTrinkets(n,	"indian2",	2,	"ITEMS_5",	640,	1.0,	0.05,	"pursel",	1);		// "Пугающая фигурка"			(-10 Лидерство)
-	n = InitTrinkets(n,	"indian3",	3,	"ITEMS_5",	500,	0.6,	0.05,	"pursel",	1);		// "Нефритовая маска"			(+10 Коммерция)
-	n = InitTrinkets(n,	"indian5",	5,	"ITEMS_5",	550,	1.5,	0.05,	"sapphire",	3);		// "Двойная маска"				(+10 Скрытность)
-	n = InitTrinkets(n,	"indian6",	6,	"ITEMS_5",	2010,	1.0,	0.005,	"sapphire",	2);		// "Амулет Шиукоатля"			(+10 Среднее оружие)
-	n = InitTrinkets(n,	"indian7",	7,	"ITEMS_5",	1550,	3.6,	0.03,	"sapphire",	4);		// "Идол Великой Матери"		(+10 Везение)
-	n = InitTrinkets(n,	"indian10",	10,	"ITEMS_5",	1110,	2.0,	0.03,	"sapphire",	7);		// "Оберег Эхекатля"			(+20 Огнестрельное оружие, +10 Меткость, -20 Скрытность)
+	n = InitTrinkets(n,	"Statue1",	15,	"ITEMS_1",	25500,	20.0,	0.001,	"stat1",	1);		// "Статуэтка Шочипилли"
+	n = InitTrinkets(n,	"indian1",	1,	"ITEMS_5",	3530,	3.0,	0.005,	"pursel",	2);		// "Оберег Тлальчитонатиу"
+	n = InitTrinkets(n,	"indian2",	2,	"ITEMS_5",	640,	1.0,	0.05,	"pursel",	1);		// "Пугающая фигурка"			(-1 Лидерство)
+	n = InitTrinkets(n,	"indian3",	3,	"ITEMS_5",	500,	0.6,	0.05,	"pursel",	1);		// "Нефритовая маска"
+	n = InitTrinkets(n,	"indian5",	5,	"ITEMS_5",	550,	1.5,	0.05,	"sapphire",	3);		// "Двойная маска"
+	n = InitTrinkets(n,	"indian6",	6,	"ITEMS_5",	2010,	1.0,	0.005,	"sapphire",	2);		// "Амулет Шиукоатля"
+	n = InitTrinkets(n,	"indian7",	7,	"ITEMS_5",	2550,	3.6,	0.03,	"sapphire",	4);		// "Идол Великой Матери"
+	n = InitTrinkets(n,	"indian10",	10,	"ITEMS_5",	2010,	2.0,	0.03,	"sapphire",	7);		// "Оберег Эхекатля"
 	n = InitTrinkets(n,	"indian11",	11,	"ITEMS_5",	50000,	1.0,	0.0,	"stat1",	5);		// "Крысиный бог"
-	n = InitTrinkets(n,	"indian12",	12,	"ITEMS_5",	5230,	10.0,	0.001,	"sapphire",	7);		// "Кубок-тотем Тепейоллотля"	(+10 Тяжёлое оружие)
-	n = InitTrinkets(n,	"indian14",	14,	"ITEMS_5",	2210,	3.0,	0.005,	"pursel",	5);		// "Чаша Ололиуки"				(+20 Коммерция, -20 Лидерство)
-	n = InitTrinkets(n,	"indian15",	15,	"ITEMS_5",	1500,	30.0,	0.005,	"sapphire",	3);		// "Базальтовая голова"			(+10 Лидерство и Защита, -10 Везение)
-	n = InitTrinkets(n,	"indian17",	10,	"ITEMS_9",	550,	2.0,	0.05,	"sapphire",	1);		// "Тельная ладанка"			(+10 Скрытность)
-	n = InitTrinkets(n,	"indian18",	11,	"ITEMS_7",	10075,	2.0,	0.001,	"pursel",	1);		// "Идол Атлауа"				(+5 Навигация, -10 Скрытность)
-	n = InitTrinkets(n,	"indian19",	13,	"ITEMS_7",	10950,	2.0,	0.001,	"pursel",	1);		// "Статуэтка Тлалока"			(+5 Меткость, +5 Орудия, -10 Скрытность)
+	n = InitTrinkets(n,	"indian12",	12,	"ITEMS_5",	15030,	10.0,	0.001,	"sapphire",	7);		// "Кубок-тотем Тепейоллотля"
+	n = InitTrinkets(n,	"indian14",	14,	"ITEMS_5",	3210,	3.0,	0.005,	"pursel",	5);		// "Чаша Ололиуки"
+	n = InitTrinkets(n,	"indian15",	15,	"ITEMS_5",	3500,	30.0,	0.005,	"sapphire",	3);		// "Базальтовая голова"
+	n = InitTrinkets(n,	"indian17",	10,	"ITEMS_9",	550,	2.0,	0.05,	"sapphire",	1);		// "Тельная ладанка"			(+3 Скрытность)
+	n = InitTrinkets(n,	"indian18",	11,	"ITEMS_7",	25075,	2.0,	0.001,	"pursel",	1);		// "Идол Атлауа"				(+5 Навигация, -10 Скрытность)
+	n = InitTrinkets(n,	"indian19",	13,	"ITEMS_7",	25950,	2.0,	0.001,	"pursel",	1);		// "Статуэтка Тлалока"			(+5 Меткость, +5 Орудия, -10 Скрытность)
 	n = InitTrinkets(n,	"indian20",	14,	"ITEMS_7",	50750,	2.0,	0.001,	"pursel",	1);		// "Церемониальный нож"			(+10 Лидерство, -5 Везение)
 	n = InitTrinkets(n,	"indian21",	15,	"ITEMS_7",	50025,	2.0,	0.001,	"sapphire",	1);		// "Церемониальный сосуд"		(+10 Лидерство, -5 Скрытность)
 	n = InitTrinkets(n,	"indian22",	16,	"ITEMS_7",	80005,	2.0,	0.001,	"pursel",	1);		// "Голова воина племени майя"	(+10 Защита, +5 Лёгкое оружие, -10 Лидерство и Везение)
@@ -946,87 +951,6 @@ int InitAlchemyIngredients(int idx, string id, int picIndex, string picTexture, 
 	return idx + 1;
 }
 
-// > инициализации рецептуры по алхимии
-//	result - что хотим получить (после знака ":" - сколько; отсутствие заданного кол-ва считается за 1)
-//	components - необходимые компоненты (после знака ":" - сколько, пример: "bullet:7, GunPowder:14"; отсутствие заданного кол-ва считается за 1)
-//	инструменты (не удаляются при крафте) можно выделить дописав после их id ":tool", пример: "bullet:2, crucible:tool, bullet_mold:tool, lamp:tool", кол-во указывать не нужно - всегда требуется только 1 шт. инструмента
-//	для визуального удобства везде можно писать с пробелами, они потрутся автоматически
-void InitAlchemyComponents(string result, string components)
-{
-	int iQty = 1;
-	result = stripblank(result);
-	components = stripblank(components);
-
-	if (HasStr(result, ":"))
-	{
-		iQty = sti(FindStringAfterChar(result, ":"));
-		result = FindStringBeforeChar(result, ":");
-	}
-
-	Restrictor(&iQty, 1, "");
-
-	ref rItem = ItemsFromID(result);
-	rItem.craft = true;
-	rItem.craft.id = result;
-	rItem.craft.components = components;
-	rItem.craft.qty = iQty;
-
-	// > пометим, что есть что
-	int n, q = KZ|Symbol(components, ",");
-	string sA, sB, sItem = components;
-
-	for (n = 0; n <= q; n++)
-	{
-		if (q > 0)
-			sItem = GetSubStr(components, ",", n);
-
-		if (HasStr(sItem, ":"))
-		{
-			sA = FindStringAfterChar(sItem, ":");
-			sB = FindStringBeforeChar(sItem, ":");
-			rItem = ItemsFromID(sB);
-
-			if (HasStrEx(sA, "tool,cat", "|"))
-			{
-				if (HasStr(sA, "tool"))
-					rItem.craft.tool = true;		// > инструмент
-				else
-					rItem.craft.catalyst = true;	// > катализатор // TODO
-			}
-			else
-				rItem.craft.ingredient = true;		// > ингредиент
-		}
-		else
-		{
-			rItem = ItemsFromID(sItem);
-			rItem.craft.ingredient = true;			// > ингредиент
-		}
-	}
-}
-
-// > рецептура по алхимии
-void InitAlchemyCraft()
-{
-	//						result: qty			components
-	InitAlchemyComponents("grapeshot", 			"bullet:5, crucible:tool, bullet_mold:tool");											// "Картечь"
-	InitAlchemyComponents("cartridge", 			"bullet, GunPowder");																	// "Бумажный патрон"
-	InitAlchemyComponents("harpoon", 			"mineral14, mineral11, mechanic_kit:tool");												// "Стрела"
-	InitAlchemyComponents("GunEchin", 			"GunPowder:2, mineral3, mineral16, mechanic_kit:tool, crucible:tool, lamp:tool");		// "Ежовый заряд"
-
-	InitAlchemyComponents("petard", 			"mineral13, GunPowder:10, mineral3, mineral12, mechanic_kit:tool");						// "Петарда"
-	InitAlchemyComponents("grenade", 			"mineral13, GunPowder:10, bullet:15, mineral3, mineral12, mechanic_kit:tool");			// "Граната"
-
-	InitAlchemyComponents("GunPowder_colt:10", 	"GunPowder:10, fulminate_silver");														// "Револьверный порох"
-	InitAlchemyComponents("bullet_colt", 		"bullet:2, crucible:tool, bullet_mold:tool, lamp:tool");								// "Револьверная пуля"
-	InitAlchemyComponents("GunCap_colt:5", 		"GunPowder_colt:2, mineral3, mineral13, mechanic_kit:tool, crucible:tool, lamp:tool");	// "Капсюли"
-	InitAlchemyComponents("cartridge_colt", 	"bullet_colt, GunPowder_colt, mineral3, tailor_kit:tool");								// "Револьверный картридж"
-
-	InitAlchemyComponents("fulminate_silver",	"jewelry17, nitric_acid, ethanol, alchemy_kit:tool, lamp:tool");						// "Гремучее серебро"
-
-	InitAlchemyComponents("migraine_potion",	"herb_matricaria, herb_zingiber:2, mortar_and_pestle:tool, lamp:tool");					// "Лекарство от мигрени"
-	InitAlchemyComponents("potion1",			"herb_matricaria, herb_zingiber, potion5, mortar_and_pestle:tool");						// "Лечебное зелье"
-}
-
 // > инициализации рецептов
 int InitAlchemyRecipies(int idx, string id, string result, int Price)
 {
@@ -1036,11 +960,11 @@ int InitAlchemyRecipies(int idx, string id, string result, int Price)
 	recipe.result 		= result;
 	recipe.groupID		= READING_ITEM_TYPE;
 	recipe.name			= "itmname_" + id;
-	recipe.describe		= "itmdescr_" + id;		
+	recipe.describe		= "itmdescr_" + id;
 	recipe.model		= "letter";
 	recipe.picTexture	= "ITEMS_33";
 	recipe.picIndex		= 16;
-	recipe.price		= Price;	
+	recipe.price		= Price;
 	recipe.rare 		= 0.0001;
 	recipe.minlevel 	= 1;
 	recipe.Weight 		= 0.1;
@@ -1307,6 +1231,9 @@ void InitItemsRarity()
 	SetItemRarity(	"mineral8",		"Solder",		0.1,	1,	1);
 	SetItemRarity(	"mineral9",		"Solder",		0.1,	1,	1);
 	SetItemRarity(	"mineral10",	"Solder",		0.001,	1,	5);
+	SetItemRarity(	"mineral11",	"Solder",		0.05,	1,	1);
+	SetItemRarity(	"mineral13",	"Solder",		0.025,	1,	1);
+	SetItemRarity(	"mineral16",	"Solder",		0.025,	1,	2);
 	SetItemRarity(	"indian1",		"Solder",		0.001,	1,	1);
 	SetItemRarity(	"indian2",		"Solder",		0.02,	1,	1);
 	SetItemRarity(	"indian12",		"Solder",		0.001,	1,	1);
@@ -1338,6 +1265,10 @@ void InitItemsRarity()
 	SetItemRarity(	"mineral8",		"Warrior",		0.1,	1,	1);
 	SetItemRarity(	"mineral9",		"Warrior",		0.2,	1,	1);
 	SetItemRarity(	"mineral10",	"Warrior",		0.001,	1,	5);
+	SetItemRarity(	"mineral11",	"Warrior",		0.05,	1,	1);
+	SetItemRarity(	"mineral13",	"Warrior",		0.025,	1,	1);
+	SetItemRarity(	"mineral14",	"Warrior",		0.025,	1,	1);
+	SetItemRarity(	"mineral16",	"Warrior",		0.025,	1,	2);
 	SetItemRarity(	"indian1",		"Warrior",		0.001,	1,	1);
 	SetItemRarity(	"indian2",		"Warrior",		0.05,	1,	1);
 	SetItemRarity(	"indian3",		"Warrior",		0.01,	1,	1);
@@ -1406,6 +1337,7 @@ void InitItemsRarity()
 	SetItemRarity(	"mineral8",		"Monster",		0.1,	1,	1);
 	SetItemRarity(	"mineral9",		"Monster",		0.1,	1,	3);
 	SetItemRarity(	"mineral10",	"Monster",		0.001,	1,	3);
+	SetItemRarity(	"mineral12",	"Monster",		0.025,	1,	1);
 	SetItemRarity(	"Statue1",		"Monster",		0.005,	1,	1);
 	SetItemRarity(	"indian1",		"Monster",		0.03,	1,	1);
 	SetItemRarity(	"indian2",		"Monster",		0.03,	1,	3);
@@ -1447,6 +1379,7 @@ void InitItemsRarity()
 	SetItemRarity(	"mineral5",		"Citizen",		0.1,	1,	1);
 	SetItemRarity(	"mineral6",		"Citizen",		0.1,	1,	1);
 	SetItemRarity(	"mineral7",		"Citizen",		0.1,	1,	1);
+	SetItemRarity(	"mineral14",	"Citizen",		0.05,	1,	1);
 	SetItemRarity(	"indian3",		"Citizen",		0.1,	1,	1);
 	SetItemRarity(	"indian4",		"Citizen",		0.1,	1,	1);
 	SetItemRarity(	"indian5",		"Citizen",		0.1,	1,	1);
@@ -1468,6 +1401,7 @@ void InitItemsRarity()
 	SetItemRarity(	"jewelry12",	"Citizen",		0.15,	1,	15);
 	SetItemRarity(	"jewelry17",	"Citizen",		0.1,	1,	1);
 
+	SetItemRarity(	"mineral14",	"Citizen_f",	0.05,	1,	1);
 	SetItemRarity(	"indian3",		"Citizen_f",	0.1,	1,	1);
 	SetItemRarity(	"indian4",		"Citizen_f",	0.1,	1,	1);
 	SetItemRarity(	"indian5",		"Citizen_f",	0.1,	1,	1);

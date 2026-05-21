@@ -956,7 +956,7 @@ hol_Governor_266 {
 Hmm... Nada mal, eu diria...
 }
 hol_Governor_267 {
-Também acho. Capture pelo menos quatro navios, traga-os para Curaçao, para o porto de Willemstad, e entregue-os pessoalmente a mim. Para cada navio entregue, você receberá 100.000 moedas. Acha que está à altura da tarefa?
+Também acho. Capture pelo menos quatro navios, traga-os para Curaçao, para o porto de Willemstad, e entregue-os pessoalmente a mim. Para cada navio entregue, você receberá 200.000 moedas. Acha que está à altura da tarefa?
 }
 hol_Governor_268 {
 Acho que sim.

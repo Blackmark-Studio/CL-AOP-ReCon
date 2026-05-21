@@ -91,3 +91,15 @@ Não duvido nem por um segundo que tudo isso vai acontecer. Já ouvi as históri
 Beliz_Mayor_28 {
 Você acabou de salvar sua vida e sua saúde. Parabéns, e que continue bem no futuro também, señor.
 }
+Beliz_Mayor_29 {
+Lembro-lhe que o senhor pediu para entregar à justiça a mulher envolvida no assassinato do seu secretário, Bartholomew Olster.
+}
+Beliz_Mayor_30 {
+Oh, sim, recebi uma carta do santo padre sobre essa criatura diabólica e o destino dela. Você fez um bom trabalho, capitão. Agradeço-lhe de todo o coração pela ajuda neste caso. Imagino que não tenha sido fácil encontrá-la. Ofereço uma modesta recompensa pela cabeça dessa bruxa — 15.000 piastras e os meus agradecimentos pessoais.
+}
+Beliz_Mayor_31 {
+Obrigado, senhor governador! Eu aceito a recompensa. Até logo.
+}
+Beliz_Mayor_32 {
+Capitão, dizem que você conseguiu capturar a bruxa, a Alegre Carla! Será que é verdade mesmo?! Inacreditável!!
+}

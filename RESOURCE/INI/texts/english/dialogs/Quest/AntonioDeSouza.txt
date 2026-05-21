@@ -430,3 +430,21 @@ Well then, have this ladrón brought to me at once—I can’t wait to begin the
 AntonioDeSouza_94 {
 Very well, monsignor.
 }
+AntonioDeSouza_95 {
+Monsignor, I know that a witch named Carla, a former port prostitute, works here. With her dark arts, she has already killed two people — Captain Miguel Cuenda and the good hidalgo Bartholomew, who died before he could repent. He was a servant of the Governor of Belize. I pray to God that the Holy Inquisition will punish her for her sinful deeds.
+}
+AntonioDeSouza_96_m {
+Monsignor, I have business with you. Do not deny a devout Catholic a minute of your attention.
+}
+AntonioDeSouza_96_f {
+Monsignor, I have business with you. Do not deny a devout Catholic a minute of your attention.
+}
+AntonioDeSouza_97_m {
+Ah, may your soul be eternally blessed for your righteous deed, my son. We will take care of this witch. Your zeal will be rewarded with my personal blessing.\nIn addition, my son, you will personally witness the witch-spawn burn in the sacred fire of the Inquisition.
+}
+AntonioDeSouza_97_f {
+Ah, may your soul be eternally blessed for your righteous deed, my daughter. We will take care of this witch. Your zeal will be rewarded with my personal blessing.\nIn addition, my daughter, you will personally witness the witch-spawn burn in the sacred fire of the Inquisition.
+}
+AntonioDeSouza_98 {
+I hope so, monsignor.
+}

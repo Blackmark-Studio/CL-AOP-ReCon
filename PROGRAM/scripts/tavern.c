@@ -57,3 +57,18 @@ void TavernWaitDate_LSC(string date)
 	RefreshLandTime();
 	// boal <--
 }
+
+void TavernWaitDateEx(int number)
+{
+	int iTime, iAddTime, iTmp;
+	iTime = sti(environment.time);
+	if (iTime >= 21) iAddTime = 24 - iTime + number;
+	if (iTime < number) iAddTime = number - iTime;
+	if (iTime >= number && iTime < 21) iAddTime = 24  + number - iTime;
+	StoreDayUpdate();
+	WaitDate("",0,0,0,iAddtime,0);
+	RecalculateJumpTable();
+	RefreshWeather();
+	RefreshLandTime();
+	CreateWeatherEnvironment();
+}

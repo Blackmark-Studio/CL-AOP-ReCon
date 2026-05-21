@@ -1,6 +1,6 @@
 void ProcessDialogEvent()
 {
-	ref NPChar;
+	ref NPChar, sld;
 	aref Link, NextDiag;
 	DeleteAttribute(&Dialog, "Links");
 
@@ -43,14 +43,6 @@ void ProcessDialogEvent()
 			}
 			else
 			{
-				if (pchar.questTemp.MC == "toByeBye" && HasSubStr(npchar.id, "Incquisitor_"))
-				{
-					dialog.text = StringFromKey("Incquistors_dialog_19");
-					link.l1 = StringFromKey("Incquistors_dialog_20", pchar);
-					link.l1.go = "MCIncq";
-					pchar.questTemp.MC = "Incquisitio";
-					break;
-				}
 
 				dialog.text = NPCStringReactionRepeat(
 							StringFromKey("Incquistors_dialog_23", RandPhraseSimple(
@@ -71,6 +63,11 @@ void ProcessDialogEvent()
 									StringFromKey("Incquistors_dialog_34"),
 									StringFromKey("Incquistors_dialog_35"))), npchar, Dialog.CurrentNode);
 				link.l1.go = DialogGoNodeRepeat("exit", "none", "none", "NoMoreTalkExit", npchar, Dialog.CurrentNode);
+				if (CheckAttribute(pchar, "questTemp.PDM_ONV_OhotaNaVedmu") && npchar.chr_ai.type != "guardian")
+				{
+					link.l2 = StringFromKey("Incquistors_dialog_74");
+					link.l2.go = "PDM_ONW_Inqizitor_1";
+				}
 			}
 
 			if (CheckAttribute(npchar, "protector.CheckAlways")) //гарды на камерах
@@ -164,32 +161,25 @@ void ProcessDialogEvent()
 			link.l1 = StringFromKey("Incquistors_dialog_65");
 			link.l1.go = "exit";
 		break;
+		
+		//**************************** Прокажённая ********************************
+		case "PDM_ONW_Inqizitor_1":
+			dialog.text = StringFromKey("Incquistors_dialog_75", pchar);
+			link.l1 = StringFromKey("Incquistors_dialog_76");
+			link.l1.go = "PDM_ONW_Inqizitor_2";
+			DeleteAttribute(pchar, "questTemp.PDM_ONV_OhotaNaVedmu");
+		break;
 
-		//**************************** сдаём зачарованный Дес-Мойнес ********************************
-		case "MCIncq":
-			dialog.text = StringFromKey("Incquistors_dialog_66", pchar);
-			link.l1 = StringFromKey("Incquistors_dialog_67");
-			link.l1.go = "MCIncq_1";
-		break;
-		case "MCIncq_1":
-			dialog.text = StringFromKey("Incquistors_dialog_68");
-			link.l1 = StringFromKey("Incquistors_dialog_69");
-			link.l1.go = "MCIncq_2";
-		break;
-		case "MCIncq_2":
-			dialog.text = StringFromKey("Incquistors_dialog_70", pchar);
-			link.l1 = StringFromKey("Incquistors_dialog_71", pchar);
-			link.l1.go = "MCIncq_3";
-		break;
-		case "MCIncq_3":
-			dialog.text = StringFromKey("Incquistors_dialog_72", pchar);
-			link.l1 = StringFromKey("Incquistors_dialog_73", pchar);
-			link.l1.go = "exit";
-			AddMoneyToCharacter(pchar, 10000);
-			ChangeCharacterReputation(pchar, -10);
-			CloseQuestHeader("MagicCity");
-			RemoveLandQuestMarkToFantoms_Main("Incquisitor", "MagicCity");
-			Achievment_Set(ACH_Ya_vizhu_myortvykh_lyudey);
+		case "PDM_ONW_Inqizitor_2":
+			DialogExit();
+			
+			sld = GetCharacter(CreateCharacterClone(npchar, -1));
+			sld.id = "PDM_ONW_Inqizitor";
+			
+			locations[FindLocation("Cuba_jungle_01")].DisableEncounters = true;
+			// TavernWaitDate("wait_night");
+			TavernWaitDateEx(22);
+			DoFunctionReloadToLocation("Cuba_jungle_01", "goto", "goto4", "PDM_ONW_Kino_1");
 		break;
 
 		//замечение по обнаженному оружию

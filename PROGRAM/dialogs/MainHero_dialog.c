@@ -469,12 +469,12 @@ void ProcessDialogEvent()
 			}
 
 			// evganat - пасха
-			if (CheckAttribute(pchar, "quest.easter.xolotl_shore") && !bDisableMapEnter && pchar.location == Get_My_Cabin() && !CheckAttribute(pchar, "quest.easter.xolotl_incabin"))
+			if (CheckAttribute(pchar, "questTemp.easter.xolotl_shore") && !bDisableMapEnter && pchar.location == Get_My_Cabin() && !CheckAttribute(pchar, "questTemp.easter.xolotl_incabin"))
 			{
 				link.l13 = StringFromKey("MainHero_dialog_67");
 				link.l13.go = "Xolotl_summon";
 			}
-			if (CheckAttribute(pchar, "quest.easter.xolotl_shore") && Whr_IsStorm())
+			if (CheckAttribute(pchar, "questTemp.easter.xolotl_shore") && Whr_IsStorm())
 			{
 				link.l14 = StringFromKey("MainHero_dialog_68");
 				link.l14.go = "WhereIsXolotl";
@@ -605,13 +605,13 @@ void ProcessDialogEvent()
 
 		// evganat - пасха
 		case "WhereIsXolotl":
-			dialog.text = StringFromKey("MainHero_dialog_82", XI_ConvertString(pchar.quest.easter.xolotl_shore + "Pre"));
+			dialog.text = StringFromKey("MainHero_dialog_82", XI_ConvertString(pchar.questTemp.easter.xolotl_shore + "Pre"));
 			link.l1 = "";
 			link.l1.go = "exit";
 		break;
 
 		case "Xolotl_summon":
-			if (CheckAttribute(pchar, "quest.easter.xolotl_shore") && pchar.NearestLandLocatorInRadius == pchar.quest.easter.xolotl_shore)
+			if (CheckAttribute(pchar, "questTemp.easter.xolotl_shore") && pchar.NearestLandLocatorInRadius == pchar.questTemp.easter.xolotl_shore)
 			{
 				EasterSummonXolotl();
 				DialogExit_Self();

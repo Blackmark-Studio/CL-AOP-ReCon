@@ -140,16 +140,16 @@ Minentown_mayor_40 {
 That's not all... Regarding your would-be priest.
 }
 Minentown_mayor_41 {
-I cannot hand him over to you... Even if it is His Excellency's order, as he is outside...
+I cannot hand him over to you... Even if it is His Excellency's order, as he is under...
 }
 Minentown_mayor_42 {
 Don't worry so much - I only need him to show me the location of the ritual.
 }
 Minentown_mayor_43 {
-I cannot hand him over to you... Even if it is His Excellency's order, as he is outside...
+And why would you need that?
 }
 Minentown_mayor_44 {
-Don't worry so much - I only need him to show me the location of the ritual. He must be dealt with first, otherwise the cave-ins will continue.
+The thing is, this ritual location must be purify firsty, otherwise the cave-ins will continue.
 }
 Minentown_mayor_45 {
 I don't really believe in all these magical machinations, but if you say so, let it be so.

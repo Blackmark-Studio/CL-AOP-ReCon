@@ -28,3 +28,36 @@ Très bien... à bientôt.
 Beliz_Citizen_9 {
 Alors, une autre question.
 }
+Beliz_Citizen_10 {
+Excusez-moi, auriez-vous vu Carla la Joyeuse ?
+}
+Beliz_Citizen_11 {
+Et vous ne savez pas où se trouve Carla la Joyeuse ?
+}
+Beliz_Citizen_12 {
+@<RandPhraseSimple>
+}
+Beliz_Citizen_13 {
+Je vous le dis, @<GetAddress_Form> — cette sorcière a envoûté tout le monde dans cette ville ! Tous les gens de bien devraient aller droit chez le gouverneur et lui déclarer que c'est une sorcière maléfique, et qu'elle devrait être brûlée à petit feu !
+}
+Beliz_Citizen_14 {
+Carla ? Que savez-vous d'elle ?
+}
+Beliz_Citizen_15 {
+Moi ? Je sais qu'elle est une source de péché mortel pour tous les hommes de cette ville ! Nous devons mettre fin à cette débauche !
+}
+Beliz_Citizen_16 {
+Le gouverneur m'a ordonné de capturer cette sorcière — il veut l'interroger personnellement. Savez-vous où je peux la trouver ?
+}
+Beliz_Citizen_17_m {
+Elle amène généralement ses victimes à la taverne. Que Dieu vous bénisse, capitaine ! Allez-y et délogez ce serpent de son nid ! Vous êtes un homme courageux, @<GetAddress_Form>. C'est une honte pour notre ville que cette sorcière se promène et fasse tout ce qui lui plaît !
+}
+Beliz_Citizen_17_f {
+Elle amène généralement ses victimes à la taverne. Que Dieu vous bénisse, capitaine ! Allez-y et délogez ce serpent de son nid ! Vous êtes une femme courageuse, @<GetAddress_Form>. C'est une honte pour notre ville que cette sorcière se promène et fasse tout ce qui lui plaît !
+}
+Beliz_Citizen_18 {
+Nous allons nous occuper de cette sorcière, n'en doutez pas.
+}
+Beliz_Citizen_19 {
+Alors comme ça, vous êtes le seul homme de la ville à ne pas recourir aux services de Carla ? Oh, mon pauvre ! Tout s'explique maintenant, je comprends pourquoi vous n'avez aucun sens de l'humour. Ha-ha. Mais je dois écourter notre conversation — au revoir.
+}

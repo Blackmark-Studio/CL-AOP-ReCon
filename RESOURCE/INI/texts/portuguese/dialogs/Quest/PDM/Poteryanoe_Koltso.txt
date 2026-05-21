@@ -263,8 +263,11 @@ Poteryanoe_Koltso_69_f {
 A vida não termina aqui, senhora. Acho que a senhora deveria procurar seus parentes — tenho certeza de que sentem muito a sua falta. Adeus.
 }
 Poteryanoe_Koltso_70 {
-Espere, espere, @<GetAddress_Form>. Você merece uma recompensa. Aqui, pegue 5.000 moedas e 10 diamantes. Agora são seus.
+Espere, espere, @<GetAddress_Form>. Você merece uma recompensa. Pegue todo o dinheiro que tenho comigo e todas as minhas joias. Agora são seus. Obrigado, capitão. Obrigado...
 }
 Poteryanoe_Koltso_71 {
 Muito obrigado, senhora.
+}
+Poteryanoe_Koltso_72 {
+Este anel pertence a uma mulher muito velha que perdeu seu único filho... Uma mulher muito infeliz, que enlouqueceu e que te lembra sua mãe. E este anel foi tirado do corpo morto do filho dela. Eu só quero devolvê-lo à sua verdadeira dona. Pense por si mesma, será que um anel tão mágico assim te traria felicidade?
 }

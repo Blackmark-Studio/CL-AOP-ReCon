@@ -345,18 +345,19 @@ void LAi_type_citizen_Attacked(aref chr, aref by)
 	//HardCoffee костыль для гуляющих в джунглях (у них не было реакции на атаку, если атаковать со спины)
 	if (LAi_IsSetBale(chr)) return;
 
-	if (HasStrMass(chr.id, "Walker,WalkerGirl", ",", "|"))
+	if (HasStrMass(chr.id, "Walker,WalkerGirl,CangGirl", ",", "|"))
 	{
 		LAi_SetActorType(chr);
 		string sTemp = "";
 		float locx, locy, locz;
 		GetCharacterPos(chr, &locx, &locy, &locz);
-		sTemp = LAi_FindNearestFreeLocator("reload", locx, locy, locz);
-		if (sTemp == "") sTemp = LAi_FindNearestFreeLocator("reload1_back", locx, locy, locz);
+		sTemp = LAi_FindNearestFreeLocator("reload1_back", locx, locy, locz);
+		if (sTemp == "") sTemp = LAi_FindNearestLocator("reload", locx, locy, locz);
 		if (sTemp != "")
 		{
-			LAi_ActorRunToLocation(chr, "reload", sTemp, "none", "", "","OpenTheDoors", -1.0);
-			//HardCoffee TODO ещё вот сюда снижение репы добавить, если атакованный сможет скрыться
+			lAi_SetActorTypeNoGroup(chr);
+			LAi_ActorRunToLocationNoCheck(chr, "reload", sTemp, "none", "", "","", -1.0);
+			//HardCoffee TODO добавить снижение репы, если атакованный сможет скрыться
 		}
 		else LAi_tmpl_afraid_SetAfraidCharacter(chr, by, true);
 	}

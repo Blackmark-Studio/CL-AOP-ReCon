@@ -149,7 +149,7 @@ void ProcessDialogEvent()
 			link.l1 = StringFromKey("Mayor_32", pchar);
 			link.l1.go = "FT_5";
 			//если выполнена нац. линейка
-			if (CheckAttribute(pchar, "questTemp.State.EndOfQuestLine"))
+			if (CheckAttrValue(pchar, "questTemp.State", "EndOfQuestLine"))
 			{
 				link.l2 = StringFromKey("Mayor_33", pchar);
 				link.l2.go = "FT_5";
@@ -367,6 +367,13 @@ void ProcessDialogEvent()
 			}
 			else
 			{
+				//блочим двери ведущие не туда
+				LocatorReloadEnterDisable("SanAugustineResidence", "reload4", true);
+				LocatorReloadEnterDisable("SanAugustineResidence", "reload7", true);
+				LocatorReloadEnterDisable("SanAugustineResidence", "reload8", true);
+				LocatorReloadEnterDisable("FleuronTavern", "reload3", true);
+				LocatorReloadEnterDisable("FleuronTavern", "reload4", true);
+				LocatorReloadEnterDisable("FleuronTavern", "reload5", true);
 				pchar.quest.LSCNarvalAssault.win_condition.l1 = "ExitFromLocation";
 				pchar.quest.LSCNarvalAssault.win_condition.l1.location = pchar.location;
 				pchar.quest.LSCNarvalAssault.function = "LSCNarvalAssault";

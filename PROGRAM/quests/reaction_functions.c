@@ -463,18 +463,16 @@ void BlueBird_endCaveScript(string qName)
 	pchar.quest.BlueBird_seaBattle.function = "BlueBird_seaBattle";	
 }
 
-void BlueBird_seaBattle(string qName)
+void BlueBird_seaBattle(string qName) // ребалансим пацана
 {
 	LAi_group_Delete("EnemyFight");
 	group_DeleteGroup("BlueBird_Group");
-	ref sld = GetCharacter(NPC_GenerateCharacter("BlueBirdCapitain", "Sandro_Thorne", "man", "man", 20, PIRATE, 30, true)); // Сандро Торн Konstrush
+	ref sld = GetCharacter(NPC_GenerateCharacter("BlueBirdCapitain", "Sandro_Thorne", "man", "man", 18, PIRATE, 30, true)); // Сандро Торн Konstrush
 	sld.name 	= FindPersonalName("BlueBirdCapitain_name");
-    sld.lastname = FindPersonalName("BlueBirdCapitain_lastname");
+	sld.lastname = FindPersonalName("BlueBirdCapitain_lastname");
 	sld.dialog.filename = "Quest\ForAll_dialog.c";
 	sld.dialog.currentnode = "BlueBirdCapitain";
 	sld.greeting = "Gr_OliverTrast";
-	FantomMakeCoolFighter(sld, 30, 70, 70, "blade34", "pistol6", 100);
-	FantomMakeCoolSailor(sld, SHIP_XebekVML, FindPersonalName("BlueBirdCapitain_ship"), CANNON_TYPE_CULVERINE_LBS16, 80, 60, 70);
 	DeleteAttribute(sld, "AboardToFinalDeck");
 	sld.AlwaysSandbankManeuver = true;
 	sld.SaveItemsForDead = true;
@@ -483,25 +481,43 @@ void BlueBird_seaBattle(string qName)
 	sld.DontRansackCaptain = true;
 	SetCharacterPerk(sld, "SailsDamageUp");
 	SetCharacterPerk(sld, "CrewDamageUp");
-	SetCharacterPerk(sld, "CriticalShoot");
-	SetCharacterPerk(sld, "LongRangeShoot");
-	SetCharacterPerk(sld, "SwordplayProfessional");
+	SetCharacterPerk(sld, "BasicAttack");
+	SetCharacterPerk(sld, "HardHitter");
+	SetCharacterPerk(sld, "AdvancedAttack");
 	SetCharacterPerk(sld, "AdvancedDefense");
-	SetCharacterPerk(sld, "CriticalHit");
-	SetCharacterPerk(sld, "Sliding");
-	SetCharacterPerk(sld, "LootCollection");
-	SetCharacterPerk(sld, "MusketsShoot");
+	SetCharacterPerk(sld, "Gunman");
+	GiveItem2Character(sld, "spyglass3");
 	GiveItem2Character(sld, "indian5");
 	GiveItem2Character(sld, "jewelry15");
-	GiveItem2Character(sld, "incas_collection");
-	RemoveItems(sld, "spyglass3", 1);
-	GiveItem2Character(sld, "spyglass4");
-	EquipCharacterbyItem(sld, "spyglass4");
-	sld.ship.Crew.Morale = 75;
-	ChangeCrewExp(sld, "Sailors", 100);
-	ChangeCrewExp(sld, "Cannoners", 65);
-	ChangeCrewExp(sld, "Soldiers", 70);
-	
+	sld.ship.Crew.Morale = 45;
+	ChangeCrewExp(sld, "Sailors", 50);
+	ChangeCrewExp(sld, "Cannoners", 45);
+	ChangeCrewExp(sld, "Soldiers", 45);
+	if (MOD_SKILL_ENEMY_RATE >= 10)
+	{
+		FantomMakeCoolFighter(sld, 70, 60, 60, "blade34", "pistol6", 100);
+		FantomMakeCoolSailor(sld, SHIP_XebekVML, FindPersonalName("BlueBirdCapitain_ship"), CANNON_TYPE_CULVERINE_LBS16, 80, 60, 70);
+		SetCharacterPerk(sld, "CriticalShoot");
+		SetCharacterPerk(sld, "LongRangeShoot");
+		SetCharacterPerk(sld, "SwordplayProfessional");
+		SetCharacterPerk(sld, "CriticalHit");
+		SetCharacterPerk(sld, "Sliding");
+		SetCharacterPerk(sld, "LootCollection");
+		SetCharacterPerk(sld, "MusketsShoot");
+		GiveItem2Character(sld, "incas_collection");
+		RemoveItems(sld, "spyglass3", 1);
+		GiveItem2Character(sld, "spyglass4");
+		EquipCharacterbyItem(sld, "spyglass4");
+		sld.ship.Crew.Morale = 75;
+		ChangeCrewExp(sld, "Sailors", 100);
+		ChangeCrewExp(sld, "Cannoners", 65);
+		ChangeCrewExp(sld, "Soldiers", 70);
+	}
+	else
+	{
+		FantomMakeSmallSailor(sld, SHIP_XebekVML, FindPersonalName("BlueBirdCapitain_ship"), CANNON_TYPE_CULVERINE_LBS16, 40, 30, 35, 35, 25);
+	}
+
 	Group_AddCharacter("BlueBird_Group", "BlueBirdCapitain");
 	Group_SetType("BlueBird_Group", "pirate");
 	Group_SetGroupCommander("BlueBird_Group", "BlueBirdCapitain");
@@ -680,7 +696,19 @@ void Sharp_loginNearIsland(string qName)
 		LAi_group_MoveCharacter(sld, LAI_GROUP_PLAYER_OWN);
 		Group_AddCharacter("Sharp_Group", "Sharp");			
 		Group_SetGroupCommander("Sharp_Group", "Sharp");
-		Group_SetAddress("Sharp_Group", pchar.questTemp.Sharp.Island, "quest_ships", "quest_ship_"+(rand(1)+1));
+		float x, y, z;
+		string locator = "";
+		// если вышли у мыса Негрил - дадим ближайший локатор
+		if (pchar.questTemp.Sharp.Island == "Jamaica" && pchar.location.locator == "reload_3")
+		{
+			FindIslandLocatorXYZ(pchar.questTemp.Sharp.Island, pchar.location.locator, &x, &y, &z);
+			locator = GetSeaQuestShipNearestLocator(GetIslandByID(pchar.questTemp.Sharp.Island), "Quest_ships", x, y, z);
+		}
+		if (locator == "")
+		{
+		    locator = "quest_ship_"+(rand(1)+1);
+		}
+		Group_SetAddress("Sharp_Group", pchar.questTemp.Sharp.Island, "quest_ships", locator);
 		Group_SetTaskRunaway("Sharp_Group", PLAYER_GROUP);
 		pchar.Quest.Sharp_landOver1.win_condition.l1 = "Location_Type";
 		pchar.Quest.Sharp_landOver1.win_condition.l1.location_type = "town";
@@ -2490,13 +2518,33 @@ void PiratesLine_q3_SeaWolfAgain(string qName)
 
 void PiratesLine_q3_over(string qName)
 {
+	int i, iCap, iShip;
+	bool bOk = false;
 	pchar.quest.PiratesLine_q3_over1.over = "yes";
 	pchar.quest.PiratesLine_q3_over2.over = "yes";
 	if (GetCharacterIndex("EdwardLoy") == -1)
 	{
 		//HardCoffee реф дилогов Моргана
 		pchar.QuestTemp.PirLine_quests_task = "PL_Q3_GoodWork";
-		if (sti(RealShips[sti(pchar.ship.type)].basetype) == SHIP_BRIGSW)
+
+		for (i = 0; i < COMPANION_MAX; i++)
+		{
+			iCap = GetCompanionIndex(pchar, i);
+			if (iCap >= 0)
+			{
+				iShip = sti(characters[iCap].ship.type);
+				if (iShip != SHIP_NOTUSED)
+				{
+					if (sti(RealShips[iShip].basetype) == SHIP_BRIGSW)
+					{
+						bOk = true;
+						break;
+					}
+				}
+			}
+		}
+
+		if (bOk)
 		{
 			AddQuestRecord("Pir_Line_3_KillLoy", "17");
 			pchar.questTemp.piratesLine.T1 = "KillLoy_GoodWork"; //выполнено все, бриг захвачен
@@ -3647,6 +3695,7 @@ void PQ8_jungle_04(string qName)
         if (i==14 || i==16) sTemp = "indsair2";
 		else sTemp = "indsar1";
 		sld = GetCharacter(NPC_GenerateCharacter("IndEnemy_"+i, sTemp, "man", "man", Rank, SPAIN, -1, true)); //TODO анимация
+		sld.indian = "1";
 		FantomMakeCoolFighter(sld, Rank, 90, 90, "topor2", "", 5);
         LAi_SetWarriorType(sld);
         LAi_group_MoveCharacter(sld, "EnemyFight");
@@ -4024,7 +4073,7 @@ void PQ8_MorganInPanama_1(string qName)
 	//делаем видимым ключ
 	ref sld = ItemsFromID("keyPanama");
 	sld.shown = true;
-	sld.startLocation = "Panama_prison";
+	sld.startLocation = "Panama_ammo";
 	sld.startLocator = "item1";
 	//Моргана в город и на диалог
 	GetCharacterPos(pchar, &locx, &locy, &locz);
@@ -4539,6 +4588,7 @@ void SeekShip_checkAbordage(string qName) //кэп-вор успешно або�
 				RealShips[sti(sld.Ship.Type)].basetype == rCharacter.quest.PortmansSeekShip.shipTape)
 			{
 				bOk = true;
+				break;
 			}
 		}
 	}	
@@ -4869,6 +4919,7 @@ void SetMushketFromSeaToMap(string qName)
 	//в морскую группу кэпа
 	string sGroup = "MushketCapShip";
 	Group_FindOrCreateGroup(sGroup);
+	Group_SetAddressNone(sGroup);
 	Group_SetTaskAttackInMap(sGroup, PLAYER_GROUP);
 	Group_LockTask(sGroup);
 	Group_AddCharacter(sGroup, sld.id);
@@ -4888,13 +4939,7 @@ void SetMushketFromSeaToMap(string qName)
 	int daysQty = GetMaxDaysFromColony2Colony(sld.quest.targetCity, sld.city)+5; //дней доехать даем с запасом
 	Map_CreateTrader(sld.cityShore, sld.quest.targetShore, sld.id, daysQty);
 	//пускаем слух
-	if (CheckAttribute(&TEV, "MushketCapShipRumourId")) DeleteRumor(FindRumour(sti(TEV.MushketCapShipRumourId)));
-	string sRumourName = GetRandName(NAMETYPE_VIP, NAME_NOM);
-    TEV.MushketCapShipRumourId = AddSimpleRumour(LinkRandPhrase(
-        StringFromKey("Common_rumours_39", XI_ConvertString(sld.quest.targetShore + "Gen")),
-        StringFromKey("Common_rumours_40", XI_ConvertString(sld.quest.targetShore + "Gen")),
-        StringFromKey("Common_rumours_41", generateRandomNameToShip(1), sRumourName, XI_ConvertString(sld.quest.targetShore + "Gen"))
-    ), 777, daysQty, 1);
+	SetMushketFromSeaToMap_AddRumour(daysQty);
 	//меняем сроки проверки по Id кэпа в базе нпс-кэпов
 	string sTemp = sld.id;
 	NullCharacter.capitainBase.(sTemp).checkTime = daysQty + 5;
@@ -5811,6 +5856,12 @@ void BattleInShoreLSC(string qName)
 			ChangeCharacterAddress(sld, "none", "");
 		}
 	}
+	sld = CharacterFromID(pchar.questTemp.LSC.StarsAlignedCompanion);
+	if (sld.sex == "woman")
+		sld.dialog.filename = "Officer_Girl.c";
+	else
+		sld.dialog.filename = "Officer_Man.c";
+	sld.dialog.CurrentNode = "hired";
 	DeleteAttribute(pchar, "questTemp.LSC.StarsAlignedCompanion");
 
 	//просто слоны
@@ -5907,6 +5958,7 @@ void AfterStarsAlignedFuncLSC_1(string qName)
 	QuestToSeaLogin_Launch();
 	ref sld = CharacterFromID("TitherDenLSC");
 	AddPassenger(pchar, sld, false);
+	SetCharacterRemovable(sld, false);
 	for (int i = 0; i<MAX_CHARACTERS; i++)
 	{
 		makeref(sld, characters[i]);
@@ -6296,6 +6348,8 @@ void LSC_openMasterHouse(string qName)
 	//делаем видимым ключ
 	ref sld = ItemsFromID("keyQuestLSC");
 	sld.shown = true;
+	sld = CharacterFromId("GiveKeyMan");
+	ChangeCharacterAddressGroup(sld, "none", "", "");
 	pchar.quest.LSC_enterMasterHouse.win_condition.l1 = "location";
 	pchar.quest.LSC_enterMasterHouse.win_condition.l1.location = "Villemstad_houseSp5";
 	pchar.quest.LSC_enterMasterHouse.function = "LSC_enterMasterHouse";	
@@ -7716,7 +7770,6 @@ void LSC_admiralTakeAll()
 	RemoveCharacterEquip(pchar, PATENT_ITEM_TYPE);
 	RemoveCharacterEquip(pchar, CIRASS_ITEM_TYPE);
 	RemoveCharacterEquip(pchar, MAPS_ITEM_TYPE);
-	pchar.MapsAtlasCount = 0; 	
 	//сносим все предметы, кроме квестовых -->
     aref arItems;
 	string sName;
@@ -7855,6 +7908,13 @@ void LSCNarvalAssault(string qName)
     pchar.questTemp.LSC.qtyOfficers = 0; //max 3
     pchar.questTemp.LSC.qtyDeadNarvals = 0; //max 7
     chrDisableReloadToLocation = true;
+	//открываем закрытые двери
+	LocatorReloadEnterDisable("SanAugustineResidence", "reload4", false);
+	LocatorReloadEnterDisable("SanAugustineResidence", "reload7", false);
+	LocatorReloadEnterDisable("SanAugustineResidence", "reload8", false);
+	LocatorReloadEnterDisable("FleuronTavern", "reload3", false);
+	LocatorReloadEnterDisable("FleuronTavern", "reload4", false);
+	LocatorReloadEnterDisable("FleuronTavern", "reload5", false);
     //перемещение штурмовиков
     for (i = 1 ; i < 4; i++)
     {
@@ -8858,6 +8918,7 @@ void LSC_closeLine(string qName)
 	DeleteAttribute(pchar, "MermanTimer");
 	DeleteAttribute(pchar, "GenQuest.CannotWait");
 	DeleteAttribute(pchar, "questTemp.FindMapLSC");
+	RemoveItems(pchar, "RingCapBook", 1);
 	AddQuestRecord("ISS_MainLine", "65");
 	AddQuestUserData("ISS_MainLine", "sSex", GetSexPhrase("","а"));
 	CloseQuestHeader("ISS_MainLine");
@@ -8878,6 +8939,8 @@ void LSC_closeLine(string qName)
 	DeleteAttribute(pchar, "questTemp.LSC"); //много мусора, надо бы почистить
 	pchar.questTemp.LSC = "over";
 	pchar.questTemp.LSC.checkBoxes = false;
+	if (CheckAttribute(&TEV, "QuestTemp.deadHoum"))
+		DeleteAttribute(&TEV, "QuestTemp.deadHoum");
 	DeleteAttribute(pchar, "GenQuest.CannotWait");
 	//проверим наличие займа у банкира ГПК
 	ref sld = characterFromId("LSC_Usurer");
@@ -9346,8 +9409,12 @@ void LSC_DrinkGo(string qName) // бухалово
 	bDisableCharacterMenu = true; //лоченые интерфейсы
 	locCameraRotateAroundHero(0.0, 2.0, 0.0, 0.005, 0.0, 2.0, 0.0, 1700);
 	DoQuestFunctionDelay("LSC_DrinkResult", 32.5);
-	if (sti(pchar.questTemp.LSC.Drink.Chance) > 80) pchar.questTemp.LSC.Drink.Result = 1;
-	else pchar.questTemp.LSC.Drink.Result = 2;
+
+	// Если случайное число (0-99) строго меньше нашего процента - это успех
+	if (rand(99) < sti(pchar.questTemp.LSC.Drink.Chance))
+		pchar.questTemp.LSC.Drink.Result = 1;
+	else
+		pchar.questTemp.LSC.Drink.Result = 2;
 }
 
 void LSC_DrinkResult(string qName) // итоги
@@ -9561,9 +9628,17 @@ void LSC_MentosAttackOnCasperMovie_6(string qName) //начинается руб
     sld = CharacterFromId("Ment_6");
     LAi_SetWarriorTypeNoGroup(sld);
 
-    LAi_group_SetRelation(LAI_GROUP_BRDENEMY, LAI_GROUP_PLAYER, LAI_GROUP_ENEMY);
-    LAi_group_FightGroups(LAI_GROUP_BRDENEMY, LAI_GROUP_PLAYER, true);
-    LAi_group_SetCheck(LAI_GROUP_BRDENEMY, "LSC_ClearCasperDeckWaitRolyPoly");
+	if (LSC_CheckDeceasedCaspers() == 0)
+	{
+		DoQuestFunctionDelay("LSC_MentosAttackOnCasper_AdditionalHelp", 0.1);
+		DoQuestCheckDelay("LSC_ClearCasperDeck", 5.0);
+	}
+	else
+	{
+		LAi_group_SetRelation(LAI_GROUP_BRDENEMY, LAI_GROUP_PLAYER, LAI_GROUP_ENEMY);
+		LAi_group_FightGroups(LAI_GROUP_BRDENEMY, LAI_GROUP_PLAYER, true);
+		LAi_group_SetCheck(LAI_GROUP_BRDENEMY, "LSC_ClearCasperDeckWaitRolyPoly");
+	}
 
     LAi_QuestFader.oldSaveState = true;
 	EndQuestMovie();
@@ -10105,6 +10180,7 @@ void Teno_startInShore_2()
 	LAi_ActorRunToLocation(sld, "reload", "sea", "none", "", "", "CanFightCurLocation", 10.0);
 	//Ставим вождя
 	sld = GetCharacter(NPC_GenerateCharacter("Montesuma", "Aztec", "man", "man", 50, PIRATE, -1, true));
+	sld.undead = "1";
 	FantomMakeCoolFighter(sld, 50, 100, 100, "maquahuitl", "", 500);
 	sld.name = FindPersonalName("Montesuma_name");
 	sld.lastname = "";
@@ -10145,6 +10221,7 @@ void Teno_createAztecTwin(string qName)
 {
 	//генерим близнецов
 	ref sld = GetCharacter(NPC_GenerateCharacter("AztecCitizen_1", "AztecCitizen1", "man", "man", 15, PIRATE, -1, false));
+	sld.indian = "1";
 	sld.name = FindPersonalName("AztecCitizen_1_name");
 	sld.lastname = "";
 	sld.dialog.filename   = "Quest\Tenochtitlan\AztecCitizens.c";
@@ -10157,6 +10234,7 @@ void Teno_createAztecTwin(string qName)
 	ChangeCharacterAddressGroup(sld, "Tenochtitlan", "goto", "goto23");
 	
 	sld = GetCharacter(NPC_GenerateCharacter("AztecCitizen_2", "AztecCitizen2", "man", "man", 15, PIRATE, -1, false));
+	sld.indian = "1";
 	sld.name = FindPersonalName("AztecCitizen_2_name");
 	sld.lastname = "";
 	sld.dialog.filename   = "Quest\Tenochtitlan\AztecCitizens.c";
@@ -11940,7 +12018,7 @@ ref GenerateWinterwoodByLeveling()
 	if (rank > 10)
 		rank = 10;
 	bool bEquip = MOD_SKILL_ENEMY_RATE < 10; // не экипировать только на "невозможном"
-	ref sld = GetCharacter(NPC_GenerateCharacter("Winterwood", "citiz_22", "man", "man", rank, PIRATE, 3, bEquip)); //watch_quest_moment потом уникальную модельку konstrush
+	ref sld = GetCharacter(NPC_GenerateCharacter("Winterwood", "citiz_22", "man", "man", rank, PIRATE, 3, bEquip));
 	if (MOD_SKILL_ENEMY_RATE >= 10)
 	{
     	FantomMakeCoolFighter(sld, 7, 25, 20, "blade10", "pistol3", 10);
@@ -13060,7 +13138,10 @@ void CapBloodLine_ShipTakeGate_GoAway(string qName)
 
 void CapBloodLine_ShipTakeGate_Reset()
 {
-	DeleteAttribute(pchar, "quest.CapBloodLine_ShipTakeGate");
+	if (CheckAttribute(pchar, "quest.CapBloodLine_ShipTakeGate.over"))
+	{
+	    DeleteAttribute(pchar, "quest.CapBloodLine_ShipTakeGate.over");
+	}
 
 	pchar.quest.CapBloodLine_ShipTakeGate.win_condition.l1 = "locator";
 	pchar.quest.CapBloodLine_ShipTakeGate.win_condition.l1.location = "Bridgetown_town";
@@ -14970,13 +15051,15 @@ void Slavetrader_Bonanza(string qName)//cоздание индейцев
     {
 		if (i == 2 || i == 4 || i == 6 || i == 8)
         {
-			sld = GetCharacter(NPC_GenerateCharacter("Indian"+i, "indsar1", "man", "man", 25, PIRATE, 0, true));                    
+			sld = GetCharacter(NPC_GenerateCharacter("Indian"+i, "indsar1", "man", "man", 25, PIRATE, 0, true));
+			sld.indian = "1";
             FantomMakeCoolFighter(sld, 25, 80, 100, "topor2", "pistol3", 100);
 		}	
 		else
         {
 			sld = GetCharacter(NPC_GenerateCharacter("Indian"+i, "indsair2", "man", "man", 35, PIRATE, 0, true));
 		}
+		sld.indian = "1";
         LAi_SetWarriorType(sld);
         LAi_group_MoveCharacter(sld, "EnemyFight");
         GetCharacterPos(pchar, &locx, &locy, &locz);
@@ -14985,6 +15068,7 @@ void Slavetrader_Bonanza(string qName)//cоздание индейцев
         ChangeCharacterAddressGroup(sld, "Shore18", "goto", sTemp);
     }
 	sld = GetCharacter(NPC_GenerateCharacter("Nabuki", "mummy", "man", "man", 25, PIRATE, 0, true));
+	sld.indian = "1";
     sld.name 	= FindPersonalName("Nabuki_name");
     sld.lastname = FindPersonalName("Nabuki_lastname");
 	FantomMakeCoolFighter(sld, 60, 100, 100, "maquahuitl", "pistol4", 100);
@@ -16416,6 +16500,7 @@ void Headhunter_HoumAttack_AfterBattle(string qName)//реакция на поб
     pchar.quest.Headhunter_DieHard.over = "yes";
 	AddQuestRecord("Headhunt", "7");
 	pchar.questTemp.Headhunter = "hunt_houm_yes";
+	if (pchar.questTemp.LSC != "over") TEV.QuestTemp.deadHoum = true;
 
     AddLandQuestMark_Main(CharacterFromID("LeFransua_tavernkeeper"), "Headhunt");
 }
@@ -16663,7 +16748,7 @@ void Headhunter_HalenOver_2(string qName)//пересидели на Кюрас�
 	if(CheckAttribute(pchar, "quest.Headhunter_inRoom"))
 	{
 		LocatorReloadEnterDisable("Villemstad_tavern", "reload2_back", true);
-		DeleteAttribute(pchar, "quest.Headhunter_inRoom");
+		pchar.quest.Headhunter_inRoom.over = "yes";
 	}
 	AddQuestRecord("Headhunt", "29_1");
 	AddQuestUserData("Headhunt", "sSex", GetSexPhrase("","ась"));
@@ -16784,7 +16869,7 @@ void Headhunter_SeabattleInPort(string qName)//создание корвета �
 	ref sld;
 	Group_FindOrCreateGroup("Halen_frigate");//создать группу
 	Group_SetType("Halen_frigate", "war");//тип группы
-		
+
 	if (GetCharacterIndex("Halen") == -1)
 	{
 		sld = GetCharacter(NPC_GenerateCharacter("Halen1", "officer_26", "man", "man", 25, HOLLAND, -1, true)); //watch_quest_moment
@@ -16822,13 +16907,13 @@ void Headhunter_SeabattleInPort(string qName)//создание корвета �
 	FantomMakeCoolFighter(sld, 35, 60, 60, "blade15", "pistol2", 90);//создание фантома кэпа
 	sld.Ship.Mode = "war";
 	Group_AddCharacter("Halen_frigate", "Halen_helper");//добавление в группу
-		
+
 	// ==> стравливание
 	Group_SetGroupCommander("Halen_frigate", "Halen1");
 	Group_SetTaskAttack("Halen_frigate", PLAYER_GROUP);
 	Group_SetAddress("Halen_frigate", "Curacao", "quest_ships", "Quest_ship_2");
 	Group_LockTask("Halen_frigate");
-			
+
     // ==> прерывание на убиение эскадры
     pchar.quest.Headhunter_AfterBattle.win_condition.l1 = "Group_Death";
 	pchar.quest.Headhunter_AfterBattle.win_condition.l1.group = "Halen_frigate";
@@ -16837,13 +16922,13 @@ void Headhunter_SeabattleInPort(string qName)//создание корвета �
     pchar.quest.Headhunter_DieHard.function = "Headhunter_Halen_frigate_DieHard";//это слинял
 }
 
-
 void Headhunter_Halen_frigate_DieHard(string qName)//ушли на карту
 {
-	pchar.quest.Headhunter_HalenOver_3.over = "yes";
+	DeleteQuestCheck("Headhunter_HalenOver_3");
+	DeleteQuestCheck("Headhunter_DieHard");
+	DeleteQuestCheck("Headhunter_Halen_fight");
 	Group_DeleteGroup("Halen_frigate");
     Island_SetReloadEnableGlobal("Curacao", true);
-    pchar.quest.Headhunter_AfterBattle.over = "yes";
 	if (GetCharacterIndex("Halen") == -1 || GetCharacterIndex("Halen1") == -1)
 	{
 		AddQuestRecord("Headhunt", "31");
@@ -16863,10 +16948,11 @@ void Headhunter_Halen_frigate_DieHard(string qName)//ушли на карту
 
 void Headhunter_Halen_frigate_AfterBattle(string qName)//потопили корвет
 {
-	pchar.quest.Headhunter_HalenOver_3.over = "yes";
+	DeleteQuestCheck("Headhunter_HalenOver_3");
+	DeleteQuestCheck("Headhunter_DieHard");
+	DeleteQuestCheck("Headhunter_Halen_fight");
 	Group_DeleteGroup("Halen_frigate");
 	Island_SetReloadEnableGlobal("Curacao", true);
-    pchar.quest.Headhunter_DieHard.over = "yes";
 	AddQuestRecord("Headhunt", "31");
 	pchar.questTemp.Headhunter = "hunt_halen_yes";
 	ChangeCharacterHunterScore(PChar, "holhunter", 30);
@@ -17105,6 +17191,1534 @@ void PDM_PI_Callow_na_dno(string qName)
 
 //Sinistra Проклятый идол <--
 
+//Клан Ламбрини -->
+void PDM_CL_OdliSpawn()
+{
+	ref sld = GetCharacter(NPC_GenerateCharacter("PDM_Odli", "navy_off_eng_4", "man", "man", 10, ENGLAND, -1, false));
+	sld.name = FindPersonalName("PDM_Odli_name");
+	sld.lastname = FindPersonalName("PDM_Odli_lastname");
+	sld.Dialog.Filename = "Quest\PDM\Clan_Lambrini.c";
+	sld.DeckDialogNode = "Antonio_1_1";
+	FantomMakeCoolFighter(sld, 10, 40, 40, "blade19", "pistol2", 0);
+	sld.SaveItemsForDead = true;
+	FantomMakeCoolSailor(sld, RandShipFromPcharSquadron(), FindPersonalName("Tiburon_ship"), CANNON_TYPE_LBS_BY_SHIP, 40, 30, 45);
+	sld.DontRansackCaptain = true;
+	sld.SinkTenPercent = false;
+	sld.SaveItemsForDead = true;
+	sld.DontClearDead = true;
+	sld.AnalizeShips = true;
+	Group_FindOrCreateGroup("PDM_CL_Ship");
+	Group_SetType("PDM_CL_Ship", "war");
+	Group_AddCharacter("PDM_CL_Ship", "PDM_Odli");
+
+	Group_SetGroupCommander("PDM_CL_Ship", "PDM_Odli");
+	Group_SetTaskAttack("PDM_CL_Ship", PLAYER_GROUP);
+	Group_SetAddress("PDM_CL_Ship", "Trinidad", "quest_ships", "Quest_ships_1");
+	Group_LockTask("PDM_CL_Ship");
+
+	PChar.quest.PDM_CL_Odli_Ubit.win_condition.l1 = "NPC_Death";
+	PChar.quest.PDM_CL_Odli_Ubit.win_condition.l1.character = "PDM_Odli";
+	PChar.quest.PDM_CL_Odli_Ubit.function = "PDM_CL_Odli_Ubit";
+}
+
+void PDM_CL_Odli_Ubit(string qName)
+{
+	ref sld = CharacterFromID("PDM_Octavio_Lambrini");
+	sld.Dialog.Filename = "Quest\PDM\Clan_Lambrini.c";
+	sld.dialog.currentnode   = "Octavio_2_1";
+	AddLandQuestMark_Main(sld, "PDM_Clan_Lambrini");
+	AddQuestRecord("PDM_Clan_Lambrini", "2");
+	if (LanguageGetLanguage() == "russian") AddQuestUserData("PDM_Clan_Lambrini", "sSex", GetSexPhrase("ен","на"));
+}
+
+void PDM_CL_Ubrat_Lodku(string qName)
+{
+	ref sld = CharacterFromID("PDM_Odli");
+	sld.nonTable = true;
+	LAi_SetSitType(sld);
+	sld.Dialog.Filename = "Quest\PDM\Clan_Lambrini.c";
+	sld.dialog.currentnode   = "Antonio_2_1";
+	ChangeCharacterAddressGroup(sld, "PortSpein_church", "sit", "sit16");
+	LAi_SetLoginTime(sld, 9.0, 14.00);
+	DeleteAttribute(sld, "ship");
+	sld.ship.type = SHIP_NOTUSED;
+	AddLandQuestMark_Main(sld, "PDM_Clan_Lambrini");
+} 
+
+void PDM_CL_ClientSpawnInTavern()
+{
+	ref sld;
+	/*if (CharacterIsAlive("PDM_CL_Pokupatel")) //если в будущем захочется пгг
+	{
+		sld = CharacterFromID("PDM_CL_Pokupatel");
+	}
+	else
+	{*/
+	sld = GetCharacter(NPC_GenerateCharacter("PDM_CL_Pokupatel", "JamesB", "man", "man", 10, PIRATE, -1, true));
+	sld.name	= FindPersonalName("PDM_CL_Pokupatel_name");
+	sld.lastname	= FindPersonalName("PDM_CL_Pokupatel_lastname");
+	//}
+	LAi_SetSitType(sld);
+	LAi_group_MoveCharacter(sld, "PIRATE_CITIZENS");
+	ChangeCharacterAddressGroup(sld, "PortSpein_tavern", "sit", "sit_base2");
+}
+
+void PDM_CL_TavernKino(string qName)
+{
+	StartQuestMovie(true, false, true);
+	LAi_FadeEx(0.0, 2.0, 1.0, "", "PDM_CL_TavernKino_2", "");
+	LAi_SetStayType(pchar);
+	ChangeCharacterAddressGroup(pchar, PChar.location, "waitress", "barmen");
+	ClearActiveStageNotifications();
+}
+
+void PDM_CL_TavernKino_2(string qName)
+{
+	locCameraFromToPos(-6.75, 0.92, -1.27, true, -6.90, -0.95, 1.83);
+	
+	ref sld = GetCharacter(CreateCharacterClone(CharacterFromID("PDM_Octavio_Lambrini"), 0));
+	sld.id = "PDM_Octavio_Lambrini_Clone";
+	sld.name = FindPersonalName("PDM_Octavio_Lambrini_Clone_name");
+	sld.lastname = "";
+	ChangeCharacterAddressGroup(sld, PChar.location, "goto", "goto3");
+	sld.Dialog.Filename = "Quest\PDM\Clan_Lambrini.c";
+	sld.dialog.currentnode = "Octavio_4_1";
+	LAi_SetActorType(sld);
+	LAi_ActorDialog(sld, pchar, "", 0, 0);
+}
+
+void PDM_CL_TavernKino_3()
+{
+	locCameraSleep(true);
+	ref sld = CharacterFromID("PDM_Octavio_Lambrini_Clone");
+	ChangeCharacterAddressGroup(sld, "none", "", "");
+	LAi_FadeEx(1.0, 0.5, 1.0, "", "PDM_CL_TavernKino_4", "");
+}
+
+void PDM_CL_TavernKino_4(string qName)
+{
+	locCameraSleep(false);
+	EndQuestMovie();
+	locCameraFollowEx(true);
+	LAi_SetPlayerType(pchar);
+	
+	ref sld = characterFromID("PDM_Octavio_Lambrini");
+	LAi_CharacterDisableDialog(sld);
+	
+	sld = CharacterFromID("PDM_CL_Pokupatel");
+	ChangeCharacterAddressGroup(sld, "none", "", "");
+
+	sld = CharacterFromID("PDM_Odli");
+	sld.Dialog.Filename = "Quest\PDM\Clan_Lambrini.c";
+	sld.dialog.currentnode   = "Antonio_5_1";
+	AddLandQuestMark_Main(sld, "PDM_Clan_Lambrini");
+
+	AddQuestRecord("PDM_Clan_Lambrini", "6");
+}
+
+void PDM_CL_OnShore()
+{
+	int i;
+	string sTemp;
+	LocatorReloadEnterDisable("Shore60", "reload1_back", true);
+	LocatorReloadEnterDisable("Shore60", "boat", true);
+
+	ref sld = CharacterFromID("PDM_Odli");
+	LAi_SetActorType(sld);
+	ChangeCharacterAddressGroup(sld, "Shore60", "officers", "reload1_1");
+	LAi_group_MoveCharacter(sld, LAI_GROUP_PLAYER);
+
+	for (i=1; i<=11; i++)	//англичане
+	{
+		sTemp = "navy_eng_"+(rand(7)+1);
+		sld = GetCharacter(NPC_GenerateCharacter("PDM_CL_EngFriend_"+i, sTemp, "man", "man", sti(pchar.rank), ENGLAND, -1, true));
+		FantomMakeCoolFighter(sld, sti(pchar.rank), 30, 30, "blade10", "", 20);
+		LAi_SetActorType(sld);
+		LAi_CharacterDisableDialog(sld);
+		LAi_group_MoveCharacter(sld, LAI_GROUP_PLAYER);
+		ChangeCharacterAddressGroup(sld, "Shore60", "reload",  "reload1_back");
+	}
+
+	for (i=1; i<=3; i++)	//пираты м контрабандисты 1
+	{
+		sTemp = "citiz_2"+(rand(8)+1);
+		sld = GetCharacter(NPC_GenerateCharacter("PDM_CL_PirEnemy_"+i, sTemp, "man", "man", sti(pchar.rank), PIRATE, -1, true));
+		// FantomMakeCoolFighter(sld, sti(pchar.rank), 30, 30, "blade10", "", 20);
+		LAi_SetActorType(sld);
+		LAi_group_MoveCharacter(sld, "PDM_CL_PirEnemy_Status");
+		ChangeCharacterAddressGroup(sld, "Shore60", "smugglers",  "smuggler0"+i);
+	}
+
+	for (i=4; i<=7; i++)	//пираты м контрабандисты 2
+	{
+		sTemp = "citiz_2"+(rand(8)+1);
+		sld = GetCharacter(NPC_GenerateCharacter("PDM_CL_PirEnemy_"+i, sTemp, "man", "man", sti(pchar.rank), PIRATE, -1, true));
+		// FantomMakeCoolFighter(sld, sti(pchar.rank), 30, 30, "blade10", "", 20);
+		LAi_SetActorType(sld);
+		LAi_group_MoveCharacter(sld, "PDM_CL_PirEnemy_Status");
+		ChangeCharacterAddressGroup(sld, "Shore60", "goto",  "goto4");
+	}
+
+	for (i=8; i<=11; i++)	//пираты м контрабандисты 3
+	{
+		sTemp = "citiz_2"+(rand(8)+1);
+		sld = GetCharacter(NPC_GenerateCharacter("PDM_CL_PirEnemy_"+i, sTemp, "man", "man", sti(pchar.rank), PIRATE, -1, true));
+		// FantomMakeCoolFighter(sld, sti(pchar.rank), 30, 30, "blade10", "", 20);
+		LAi_SetActorType(sld);
+		LAi_group_MoveCharacter(sld, "PDM_CL_PirEnemy_Status");
+		ChangeCharacterAddressGroup(sld, "Shore60", "goto",  "goto2");
+	}
+	
+	for (i=12; i<=15; i++)	//пираты м контрабандисты 4
+	{
+		sTemp = "citiz_2"+(rand(8)+1);
+		sld = GetCharacter(NPC_GenerateCharacter("PDM_CL_PirEnemy_"+i, sTemp, "man", "man", sti(pchar.rank), PIRATE, -1, true));
+		// FantomMakeCoolFighter(sld, sti(pchar.rank), 30, 30, "blade10", "", 20);
+		LAi_SetActorType(sld);
+		LAi_group_MoveCharacter(sld, "PDM_CL_PirEnemy_Status");
+		ChangeCharacterAddressGroup(sld, "Shore60", "goto",  "goto8");
+	}
+
+	DoFunctionReloadToLocation("Shore60", "goto", "goto11", "PDM_CL_OnShore_2");
+	AddGeometryToLocation("Shore60", "smg");
+	pchar.location.from_sea = "Shore60";
+
+	sld = characterFromID("PDM_Octavio_Lambrini");
+	sld.rank = sti(pchar.rank);
+	sld.SaveItemsForDead = true;
+	AddItems(sld, "jewelry1", rand(20)+20);
+	AddItems(sld, "jewelry2", rand(20)+20);
+	AddItems(sld, "jewelry3", rand(20)+20);
+	AddItems(sld, "jewelry4", rand(20)+20);
+	AddItems(sld, "jewelry5", rand(20)+20);
+	AddItems(sld, "blade9", 1);
+
+	LAi_SetActorType(sld);
+	LAi_group_MoveCharacter(sld, "PDM_CL_PirEnemy_Status");
+	ChangeCharacterAddressGroup(sld, "Shore60", "goto", "goto1");
+
+	sld = CharacterFromID("PDM_CL_Pokupatel");
+	sld.rank = sti(pchar.rank);
+	sld.SaveItemsForDead = true;
+	LAi_SetActorType(sld);
+	AddMoneyToCharacter(sld, 50000);
+	AddItems(sld, "suit_1", 1);
+	AddItems(sld, "map_normal", 1);
+	LAi_SetActorType(sld);
+	LAi_group_MoveCharacter(sld, "PDM_CL_PirEnemy_Status");
+	ChangeCharacterAddressGroup(sld, "Shore60", "goto", "goto3");
+}
+
+void PDM_CL_OnShore_2()
+{
+	ref sld;
+	int i;
+	for (i=1; i<=3; i++)
+	{
+		sld = characterFromID("PDM_CL_PirEnemy_"+i);
+		CharacterTurnByChr(sld, characterFromID("PDM_CL_Pokupatel"));
+	}
+	for (i=4; i<=11; i++)
+	{
+		sld = characterFromID("PDM_CL_PirEnemy_"+i);
+		CharacterTurnByChr(sld, characterFromID("PDM_Octavio_Lambrini"));
+	}
+	for (i=12; i<=15; i++)
+	{
+		sld = characterFromID("PDM_CL_PirEnemy_"+i);
+		CharacterTurnToLoc(sld, "goto", "goto9");
+	}
+	CharacterTurnByChr(characterFromID("PDM_CL_Pokupatel"), characterFromID("PDM_Octavio_Lambrini"));
+	CharacterTurnByChr(characterFromID("PDM_Octavio_Lambrini"), characterFromID("PDM_CL_Pokupatel"));
+		
+	StartQuestMovie(true, false, true);
+	LAi_FadeEx(0.0, 2.0, 1.0, "", "", "PDM_CL_OnShore_3");
+	locCameraFromToPos(-6.58, 2.23, 11.20, true, -4.42, 0.36, 6.60);
+	
+	for (i=1; i<=11; i++)
+	{
+		sld = characterFromID("PDM_CL_EngFriend_"+i);
+		LAi_SetActorType(sld);
+		LAi_ActorFollow(sld, pchar, "", -1);
+	}
+	sld = characterFromID("PDM_Odli");
+	LAi_SetActorType(sld);
+	LAi_ActorFollow(sld, pchar, "", -1);
+}
+
+void PDM_CL_OnShore_3(string qName)
+{
+	DoQuestFunctionDelay("PDM_CL_OnShore_4", 2.0);
+}
+
+void PDM_CL_OnShore_4(string qName)
+{
+	ref sld;
+	locCameraFromToPos(5.27, 2.24, -4.16, true, 7.17, 1.06, -7.36);
+	DoQuestFunctionDelay("PDM_CL_OnShore_5", 2.2);
+	
+	sld = characterFromID("PDM_Octavio_Lambrini");
+	LAi_ActorAnimation(sld, "dialog_stay9", "", 10.0);
+	
+	sld = CharacterFromID("PDM_CL_Pokupatel");
+	LAi_ActorAnimation(sld, "dialog_stay14", "", 10.0);
+}
+
+void PDM_CL_OnShore_5(string qName)
+{
+	ref sld;
+	int i;
+	locCameraFromToPos(-11.19, 3.58, 1.51, true, -12.37, 2.56, -2.99);
+	
+	LAi_SetActorType(pchar);
+	LAi_ActorMoveToPoint(pchar, true, 3.01, 1.0, -6.76, "PDM_CL_OnShore_7", -1);
+	
+	for (i=1; i<=11; i++)
+	{
+		sld = characterFromID("PDM_CL_EngFriend_"+i);
+		LAi_SetActorType(sld);
+		LAi_ActorMoveToPoint(sld, true, -1.01, 1.0, -5.76, "", -1);
+	}
+	sld = characterFromID("PDM_Odli");
+	LAi_SetActorType(sld);
+	LAi_ActorMoveToPoint(sld, true, 3.01, 1.0, -5.76, "", -1);
+	DoQuestFunctionDelay("PDM_CL_OnShore_6", 4.0);
+	
+	CharacterTurnByPoint(characterFromID("PDM_CL_Pokupatel"), 3.01, 1.0, -5.76);
+	CharacterTurnByPoint(characterFromID("PDM_Octavio_Lambrini"), 3.01, 1.0, -6.76);
+}
+
+void PDM_CL_OnShore_6(string qName)
+{
+	locCameraFromToPos(1.02, 2.40, -4.00, true, 2.85, 0.78, -5.63);
+}
+
+void PDM_CL_OnShore_7()
+{
+	LAi_SetPlayerType(pchar);
+	ref sld = CharacterFromID("PDM_Octavio_Lambrini");
+	sld.Dialog.Filename = "Quest\PDM\Clan_Lambrini.c";
+	sld.dialog.currentnode   = "Pokupatel_6_1";
+	LAi_CharacterEnableDialog(sld);
+	LAi_SetActorType(sld);
+	LAi_ActorDialogNow(sld, Pchar, "", -1);
+}
+
+void PDM_CL_OnShore_8()
+{
+	ref sld;
+	int i;
+	EndQuestMovie();
+	locCameraFollowEx(true);
+	LAi_SetFightMode(pchar, true);
+	
+	for (i=1; i<=15; i++)	//пираты и контрабандисты
+	{
+		sld = CharacterFromID("PDM_CL_PirEnemy_"+i);
+		LAi_SetWarriorType(sld);
+		LAi_group_MoveCharacter(sld, "PDM_CL_PirEnemy_Status");
+	}
+	for (i=1; i<=11; i++)	//англичане
+	{
+		sld = CharacterFromID("PDM_CL_EngFriend_"+i);
+		LAi_SetWarriorType(sld);
+		LAi_group_MoveCharacter(sld, LAI_GROUP_PLAYER);
+		sld.lifeday = 0;
+	}
+
+	sld = CharacterFromID("PDM_Octavio_Lambrini");
+	LAi_SetWarriorType(sld);
+	LAi_group_MoveCharacter(sld, "PDM_CL_PirEnemy_Status");
+
+	sld = CharacterFromID("PDM_CL_Pokupatel");
+	LAi_SetWarriorType(sld);
+	LAi_group_MoveCharacter(sld, "PDM_CL_PirEnemy_Status");
+
+	sld = CharacterFromID("PDM_Odli");
+	LAi_SetWarriorType(sld);
+	LAi_group_MoveCharacter(sld, LAI_GROUP_PLAYER);
+	sld.QuestImmortal = true;
+
+	LAi_group_SetRelation("PDM_CL_PirEnemy_Status", LAI_GROUP_PLAYER, LAI_GROUP_ENEMY);
+	LAi_group_FightGroups("PDM_CL_PirEnemy_Status", LAI_GROUP_PLAYER, false);
+	LAi_group_SetCheckFunction("PDM_CL_PirEnemy_Status", "PDM_CL_FinishFight");
+}
+
+void PDM_CL_FinishFight(string qName)
+{
+	LAi_SetFightMode(pchar, false);
+
+	ref sld = CharacterFromID("PDM_Odli");
+	LAi_SetActorType(sld);
+	LAi_ActorDialog(sld, pchar, "", -1, 0);
+	sld.lifeday = 0;
+	sld.Dialog.Filename = "Quest\PDM\Clan_Lambrini.c";
+	sld.dialog.currentnode   = "Antonio_8_1";
+}
+
+void PDM_CL_FinalNagrada()
+{
+	SetFunctionExitFromLocationCondition("PDM_CL_ExitInSea", PChar.location, false);
+	LocatorReloadEnterDisable("Shore60", "boat", false);
+	
+	AddCharacterExpToSkill(pchar, "Leadership", 200);
+	AddCharacterExpToSkill(pchar, "FencingL", 200);
+	AddCharacterExpToSkill(pchar, "FencingS", 200);
+	AddCharacterExpToSkill(pchar, "FencingH", 200);
+	AddCharacterExpToSkill(pchar, "Pistol", 100);
+	ChangeCharacterNationReputation(pchar, ENGLAND, 10);
+	ChangeCharacterReputation(pchar, 15);
+	
+	RemoveMapQuestMark("PortSpein_town", "PDM_Clan_Lambrini");
+	CloseQuestHeader("PDM_Clan_Lambrini");
+}
+
+void PDM_CL_ExitInSea(string qName)
+{
+	LocatorReloadEnterDisable("Shore60", "reload1_back", false);
+}
+//Клан Ламбрини <--
+
+//Прокажённая -->
+void PDM_ONV_Nachalo(string qName)
+{
+	ref sld;
+	sld = GetCharacter(NPC_GenerateCharacter("PDM_secretary", "citiz_13", "man", "man", 10, SPAIN, -1, false));
+	sld.name = FindPersonalName("PDM_secretary_name");
+	sld.lastname = FindPersonalName("PDM_lastname");
+	LAi_SetCitizenType(sld);
+	sld.dialog.filename   = "Quest\PDM\Ohota_na_vedmu.c";
+	sld.dialog.currentnode   = "First_time";
+	sld.City = "Beliz";
+	LAi_SetLoginTime(sld, 6.0, 21.99);
+	sld.talker = 7;
+	sld.nation = SPAIN;
+	LAi_SetImmortal(sld, true);
+	LAi_group_MoveCharacter(sld, "SPAIN_CITIZENS");
+	ChangeCharacterAddressGroup(sld,"Beliz_town","goto","goto5");
+	AddLandQuestMark_Main(sld, "PDM_Ohota_na_vedmu");
+	AddMapQuestMark_Major("Beliz_town", "PDM_Ohota_na_vedmu", "");
+}
+
+void PDM_ONV_InRoom(string qName)
+{
+	ref sld;
+	sld = CharacterFromID("PDM_secretary");
+	//ChangeCharacterAddressGroup(sld,"Beliz_TownhallRoom","goto","goto9");
+	ChangeCharacterAddressGroup(sld, "CommonBedroom", "barmen", "stay");
+	LAi_SetImmortal(sld, true);
+	LAi_SetActorType(sld);
+	LAi_ActorSetLayMode(sld);
+	
+	QuestPointerToLoc("Beliz_townhallroom", "reload", "reload2");
+	LocatorReloadEnterDisable("Beliz_TownhallRoom", "reload2", false);
+
+	PChar.quest.PDM_ONV_InRoomTrup.win_condition.l1 = "locator";
+	PChar.quest.PDM_ONV_InRoomTrup.win_condition.l1.location = "CommonBedroom";
+	PChar.quest.PDM_ONV_InRoomTrup.win_condition.l1.locator_group = "reload";
+	PChar.quest.PDM_ONV_InRoomTrup.win_condition.l1.locator = "reload1";
+	PChar.quest.PDM_ONV_InRoomTrup.function = "PDM_ONV_InRoomTrup";
+	
+	sld = CharacterFromID("PDM_ONV_Guard");
+	sld.lifeday = 0;
+}
+
+void PDM_ONV_InRoomTrup(string qName)
+{
+	AddQuestRecord("PDM_Ohota_na_vedmu", "4");
+	if (LanguageGetLanguage() == "russian") AddQuestUserData("PDM_Ohota_na_vedmu", "sSex", GetSexPhrase("","а"));
+	
+	QuestPointerDelLoc("Beliz_townhallroom", "reload", "reload2");
+	QuestPointerToLoc("Beliz_townhallroom", "reload", "reload1");
+	LocatorReloadEnterDisable("Beliz_TownhallRoom", "reload1", false);
+	
+	PChar.quest.PDM_ONV_townhall.win_condition.l1 = "location";
+	PChar.quest.PDM_ONV_townhall.win_condition.l1.location = "Beliz_TownhallRoom";
+	PChar.quest.PDM_ONV_townhall.function = "PDM_ONV_townhall";
+}
+
+void PDM_ONV_townhall(string qName)
+{
+	ref sld;
+	int i;
+	sld = CharacterFromID("Beliz_Mayor");
+	SaveOldDialog(sld);
+	sld.dialog.filename   = "Quest\PDM\Ohota_na_vedmu.c";
+	sld.dialog.currentnode   = "DialogWithHuber";
+	AddLandQuestMark_Main(sld, "PDM_Ohota_na_vedmu");
+
+	for (i=1; i<=2; i++)
+	{
+		sld = GetCharacter(NPC_GenerateCharacter("PDM_ONV_SoldatGub_"+i, "guard_spa_"+i, "man", "man", 10, SPAIN, -1, true));
+		sld.city = "Beliz";
+		if (i==1) ChangeCharacterAddressGroup(sld, "Beliz_townhall", "goto", "governor1");
+		else ChangeCharacterAddressGroup(sld, "Beliz_townhall", "goto", "goto6");
+		sld.dialog.filename   = "Quest\PDM\Ohota_na_vedmu.c";
+		sld.dialog.currentnode   = "SoldatInTownHall";
+		LAi_SetOwnerType(sld);
+		LAi_SetImmortal(sld, true);
+		LAi_group_MoveCharacter(sld, "SPAIN_CITIZENS");
+	}
+}
+
+void PDM_ONV_ReadyToWork(string qName)
+{
+	LAi_SetPlayerType(pchar);
+	StartInstantDialogNoType("Beliz_Mayor", "DialogWithHuber_7", "Quest\PDM\Ohota_na_vedmu.c");
+}
+
+void PDM_ONV_FreeMove()
+{
+	LocatorReloadEnterDisable("Beliz_Townhall", "reload1_back", false);
+	LocatorReloadEnterDisable("Beliz_Townhall", "reload3", true);
+
+	PChar.quest.PDM_ONV_TookQuest.win_condition.l1 = "location";
+	PChar.quest.PDM_ONV_TookQuest.win_condition.l1.location = "Beliz_town";
+	PChar.quest.PDM_ONV_TookQuest.function = "PDM_ONW_BelizReset";
+}
+
+void PDM_ONW_BelizReset(string qName)
+{
+	LocatorReloadEnterDisable("Beliz_town", "reload3_back", false);
+	LocatorReloadEnterDisable("Beliz_TownhallRoom", "reload2", false);
+	LocatorReloadEnterDisable("Beliz_TownhallRoom", "reload3", false);
+	LocatorReloadEnterDisable("Beliz_Townhall", "reload3", false);
+	LocatorReloadEnterDisable("Beliz_townhall", "reload2", false);
+	
+	QuestPointerDelLoc("Beliz_town", "reload", "reloadR1");
+	QuestPointerDelLoc("Beliz_townhallroom", "reload", "reload1");
+	ref sld = &Locations[FindLocation("Beliz_TownhallRoom")];
+	sld.locators_radius.goto.goto9 = 0.5;
+	sld.id.label = "TownhallRoom"; //возвращает работников в спальни
+
+	sld = CharacterFromID("Beliz_Mayor");
+	RestoreOldDialog(sld);
+}
+
+void PDM_ONW_SilinoSpawn()
+{
+	AddQuestRecord("PDM_Ohota_na_vedmu", "8");
+	if (LanguageGetLanguage() == "russian") AddQuestUserData("PDM_Ohota_na_vedmu", "sSex", GetSexPhrase("","а"));
+
+	ref sld = GetCharacter(NPC_GenerateCharacter("PDM_ONV_Silino_Sav", "officer_24", "man", "man", 10, SPAIN, -1, false));
+	sld.name = FindPersonalName("PDM_ONV_Silino_Sav_name");
+	sld.lastname = FindPersonalName("PDM_ONV_Silino_Sav_lastname");
+	sld.city = "SantoDomingo";
+	FreeSitLocator("SantoDomingo_tavern", "sit_base2");
+	ChangeCharacterAddressGroup(sld,"SantoDomingo_tavern","sit","sit_base2");
+	LAi_SetSitType(sld);
+	sld.dialog.filename   = "Quest\PDM\Ohota_na_vedmu.c";
+	sld.dialog.currentnode   = "DialogWithSilino_1";
+	pchar.questTemp.PDM_ONV_SantoDomingo = true;
+	AddLandQuestMark_Main(sld, "PDM_Ohota_na_vedmu");
+	AddMapQuestMark_Major("SantoDomingo_town", "PDM_Ohota_na_vedmu", "");
+	RemoveMapQuestMark("Beliz_town", "PDM_Ohota_na_vedmu");
+}
+
+void PDM_ONW_RoadToSantiago()
+{
+	ref sld = CharacterFromID("PDM_ONV_Silino_Sav");
+	sld.lifeday = 0;
+
+	AddQuestRecord("PDM_Ohota_na_vedmu", "11");
+	if (LanguageGetLanguage() == "russian") AddQuestUserData("PDM_Ohota_na_vedmu", "sSex", GetSexPhrase("","а"));
+
+	ChangeCharacterAddressGroup(pchar, PChar.location, "tables", "stay2");
+	LAi_SetPlayerType(pchar);
+	locCameraFollowEx(true);
+
+	sld = CharacterFromID("PDM_ONV_Carla");
+	sld.city = "Santiago";
+	sld.dialog.filename   = "Quest\PDM\Ohota_na_vedmu.c";
+	sld.dialog.currentnode   = "Carla_Final_1";
+	ChangeCharacterAddressGroup(sld, "Santiago_tavern", "goto", "goto4");
+	LAi_SetWaitressType(sld);
+	LAi_group_MoveCharacter(sld, "SPAIN_CITIZENS");
+	AddLandQuestMark_Main(sld, "PDM_Ohota_na_vedmu");
+	AddMapQuestMark_Major("Santiago_town", "PDM_Ohota_na_vedmu", "");
+	RemoveMapQuestMark("SantoDomingo_town", "PDM_Ohota_na_vedmu");
+}
+
+void PDM_ONW_Kino_1()
+{
+	ref sld;
+	int i;
+	StartQuestMovie(true, false, true);
+
+	LAi_FadeEx(0.0, 2.0, 1.0, "", "PDM_ONW_Kino_2", "");
+	LAi_SetStayType(pchar);
+	
+	// расставляем людей
+	TeleportCharacterToPosAy(pchar, 19.64, 18.80, -111.19, 2.50);
+	
+	sld = CharacterFromID("PDM_ONW_Inqizitor");
+	sld.lifeday = 0;
+	ChangeCharacterAddressGroup(sld, "Cuba_jungle_01", "reload",  "reload1");
+	TeleportCharacterToPosAy(sld, 21.80, 18.80, -113.30, 2.50);
+	
+	sld = CharacterFromID("PDM_ONV_Carla");
+	sld.lifeday = 0;
+	ChangeCharacterAddressGroup(sld, PChar.location, "quest", "quest1");
+	LAi_SetActorType(sld);
+	LAi_ActorAnimation(sld, "execution_1", "", 1.8);
+	
+	sld = GetCharacter(CreateCharacterClone(CharacterFromID("PDM_ONW_Inqizitor"), 0));
+	sld.id = "Invisible";
+	sld.name = FindPersonalName("PDM_ONW_Inqizitor_name");
+	sld.lastname = "";
+	ChangeCharacterAddressGroup(sld, "Cuba_jungle_01", "goto", "goto4");
+	
+	for (i=1; i<=4; i++)
+	{
+		sld = GetCharacter(NPC_GenerateCharacter("PDM_ONV_InquisitionGuard_"+i, "elite_spa_3", "man", "man", sti(pchar.rank), SPAIN, 0, true));
+		LAi_SetActorType(sld);
+		LAi_group_MoveCharacter(sld, "SPAIN_CITIZENS");
+		ChangeCharacterAddressGroup(sld, "Cuba_jungle_01", "reload",  "reload1");
+		LAi_CharacterDisableDialog(sld);
+		
+		if (i==1) TeleportCharacterToPosAy(sld, 20.00, 18.80, -113.10, 2.50);
+		else if (i==2) TeleportCharacterToPosAy(sld, 22.00, 18.80, -111.62, 2.50);
+		else if (i==3) TeleportCharacterToPosAy(sld, 23.20, 2.00, -120.15, 0.50);
+		else if (i==4)
+		{
+			TeleportCharacterToPosAy(sld, 27.00, 2.00, -118.00, -1.20);
+			SendMessage(sld, "lslssl", MSG_CHARACTER_EX_MSG, "TieItem", 1, "HandsItems\Fakel", "Saber_hand", 1); // держит факел
+			LAi_ActorAnimation(sld, "torch_stand", "", 1.8);
+		}
+	}
+	
+	//Мирные жители
+	for (i=1; i<=9; i++)
+	{
+		sld = GetCharacter(NPC_GenerateCharacter("PDM_ONV_Citizen_"+i, "citiz_"+i, "man", "man", sti(pchar.rank), SPAIN, 0, false));
+		LAi_SetActorType(sld);
+		LAi_group_MoveCharacter(sld, "SPAIN_CITIZENS");
+		ChangeCharacterAddressGroup(sld, "Cuba_jungle_01", "reload",  "reload1");
+		if (i==1) TeleportCharacterToPosAy(sld, 21.77, 18.80, -109.00, 2.80);
+		else if (i==2) TeleportCharacterToPosAy(sld, 20.36, 18.80, -107.21, 2.50);
+		else if (i==3) TeleportCharacterToPosAy(sld, 19.15, 18.80, -108.80, 2.50);
+		else if (i==4) TeleportCharacterToPosAy(sld, 20.27, 18.80, -108.61, 2.50);
+		else if (i==5) TeleportCharacterToPosAy(sld, 22.69, 18.80, -110.16, 3.00);
+		else if (i==6) TeleportCharacterToPosAy(sld, 18.83, 18.80, -109.77, 2.50);
+		else if (i==7) TeleportCharacterToPosAy(sld, 19.84, 18.80, -109.99, 2.50);
+		else if (i==8) TeleportCharacterToPosAy(sld, 21.20, 18.80, -109.97, 2.65);
+		else if (i==9) TeleportCharacterToPosAy(sld, 18.14, 18.80, -110.66, 2.30);
+	}
+}
+
+void PDM_ONW_Kino_2(string qName)
+{
+	// locCameraFlyToPositionLookToPoint(27.45, 21.31, -124.83, 21.79, 20.50, -121.00, 24.69, 20.10, -117.79, -1.0, 10000/GetDeltaTime());
+	locCameraFlyToPositionLookToPoint(22.45, 20.66, -126.00, 20.02, 20.38, -115.00, 24.69, 20.50, -117.79, -1.0, 10000/GetDeltaTime());
+	Pchar.FuncCameraFly = "PDM_ONW_Kino_3";
+}
+
+void PDM_ONW_Kino_3()
+{
+	locCameraFlyToPositionLookToPoint(23.04, 20.72, -115.81, 22.73, 20.60, -115.20, 21.89, 20.26, -113.43, -1.0, 10000/GetDeltaTime());
+	Pchar.FuncCameraFly = "";
+	DoQuestFunctionDelay("PDM_ONW_Kino_4", 3.0);
+}
+
+void PDM_ONW_Kino_4(string qName)
+{
+	locCameraResetState();
+	locCameraFlyToPositionLookToPoint(23.16, 21.44, -116.19, 23.79, 21.29, -116.61, 24.82, 21.04, -117.32, -1.0, 10000/GetDeltaTime());
+	Pchar.FuncCameraFly = "";
+	DoQuestFunctionDelay("PDM_ONW_Kino_5", 5.0);
+	ref sld = CharacterFromID("PDM_ONV_Carla");
+	LAi_ActorAnimation(sld, "execution_2", "", 1.8);
+}
+
+void PDM_ONW_Kino_5(string qName)
+{
+	locCameraResetState();
+	locCameraFromToPos(21.48, 20.54, -111.64, true, 22.54, 18.87, -113.95);
+	
+	ref sld = CharacterFromID("Invisible");
+	sld.dialog.filename   = "Quest\PDM\Ohota_na_vedmu.c";
+	sld.dialog.currentnode   = "Inqizitor_1";
+	LAi_SetActorType(sld);
+	LAi_ActorDialogNow(sld, Pchar, "", -1);
+	
+	sld = CharacterFromID("PDM_ONV_Carla");
+	LAi_ActorAnimation(sld, "execution_1", "", 1.8);
+	
+	//if (LanguageGetLanguage() == "russian") PlaySound("Quest\Witch\Inkvizitor.wav");
+}
+
+void PDM_ONW_Kino_6()
+{
+	// locCameraFromToPos(24.48, 21.13, -113.41, true, 24.73, 19.21, -115.82);
+	locCameraFlyToPositionLookToPoint(26.85, 20.77, -112.18, 21.18, 20.90, -116.15, 24.90, 20.50, -117.44, -1.0, 17000/GetDeltaTime());
+	Pchar.FuncCameraFly = "";
+	
+	ref sld = CharacterFromID("PDM_ONV_InquisitionGuard_4");
+	TeleportCharacterToPosAy(sld, 26.50, 2.00, -118.70, -1.20);
+	LAi_ActorAnimation(sld, "torch_fire", "", 1.8);
+	
+	DoQuestFunctionDelay("PDM_ONW_Kino_6_1", 1.0);
+	DoQuestFunctionDelay("PDM_ONW_Kino_7", 3.0);
+	
+	KZ|Mute(1);
+}
+
+void PDM_ONW_Kino_6_1(string qName)
+{
+	PlaySound("Quest\Witch\Music.wav");
+	PlaySound("Quest\Witch\piple.wav");
+}
+
+void PDM_ONW_Kino_7(string qName)
+{
+	CreateLocationParticles("shipfire", "quest", "quest1", -3.5, 0, 0, "");
+	
+	ref sld = CharacterFromID("PDM_ONV_Carla");
+	LAi_ActorAnimation(sld, "execution_3", "", 1.8);
+	
+	PlaySound("Quest\Witch\fire.wav");
+	
+	DoQuestFunctionDelay("PDM_ONW_Kino_7_1", 1.0);
+	DoQuestFunctionDelay("PDM_ONW_Kino_8", 7.0);
+}
+
+void PDM_ONW_Kino_7_1(string qName)
+{
+	PlaySound("Quest\Witch\scream.wav");
+}
+
+void PDM_ONW_Kino_8(string qName)
+{
+	CreateLocationParticles("shipfire", "quest", "quest1", 0, 0, 0, "");
+	locCameraResetState();
+	locCameraFlyToPositionLookToPoint(75.08, 16.98, -136.01, 76.71, 16.85, -136.62, 25.80, 20.92, -117.77, -1.0, 15000/GetDeltaTime());
+	Pchar.FuncCameraFly = "";
+	DoQuestFunctionDelay("PDM_ONW_Kino_9", 6.0);
+}
+
+void PDM_ONW_Kino_9(string qName)
+{
+	LAi_FadeEx(1.0, 0.0, 0.0, "PDM_ONW_Kino_10", "", "");
+}
+
+void PDM_ONW_Kino_10(string qName)
+{
+	LAi_SetPlayerType(pchar);
+	EndQuestMovie();
+	locCameraResetState();
+	locCameraFollowEx(true);
+
+	// временный фикс вылета
+	ref sld = CharacterFromID("PDM_ONV_InquisitionGuard_4");
+	LAi_UntieItemFromCharacter(sld, 1);
+	// <--
+
+	DoFunctionReloadToLocation("Santiago_Incquisitio", "goto", "goto28", "PDM_ONW_BackToHuber");
+}
+
+void PDM_ONW_BackToHuber()
+{
+	AddQuestRecord("PDM_Ohota_na_vedmu", "14");
+	AddQuestUserData("PDM_Ohota_na_vedmu", "sSex", GetSexPhrase("","а"));
+	pchar.questTemp.PDM_ONV_VedmaKaznena = true;
+	SetCharacterPerk(pchar, "InquisitionBlessing");
+	
+	QuestPointerDelLoc("Santiago_town", "reload", "basement1");
+	RemoveLandQuestmark_Main(CharacterFromID("Santiago_Inquisitor"), "PDM_Ohota_na_vedmu");
+	
+	AddLandQuestMark_Main(CharacterFromID("Beliz_Mayor"), "PDM_Ohota_na_vedmu");
+	AddMapQuestMark_Major("Beliz_town", "PDM_Ohota_na_vedmu", "");
+	RemoveMapQuestMark("Santiago_town", "PDM_Ohota_na_vedmu");
+	
+	locations[FindLocation("Cuba_jungle_01")].DisableEncounters = false;
+}
+
+//Прокажённая <--
+
+//Остепенившийся пират -->
+void PDM_Lesopilka_GVIK_InviteHugo()
+{
+	SetQuestHeader("PDM_Lesopilka");
+	AddQuestRecord("PDM_Lesopilka", "1");
+	if (LanguageGetLanguage() == "russian") AddQuestUserData("PDM_Lesopilka", "sSex", GetSexPhrase("","а"));
+	
+	pchar.questTemp.PDM_Lesopilka_GVIK = "InviteHugo";
+	
+	RemoveLandQuestmark_Main(CharacterFromID("Hugo_Lesopilka"), "PDM_Lesopilka");
+	AddLandQuestMark_Main(CharacterFromID("HWIC_head"), "PDM_Lesopilka");
+	AddMapQuestMark_Major("Villemstad_town", "PDM_Lesopilka", "");
+	RemoveMapQuestMark("Providencia_town", "PDM_Lesopilka");
+}
+
+void PDM_Lesopilka_GVIK_TookDocument()
+{
+	AddQuestRecord("PDM_Lesopilka", "2");
+	AddQuestUserData("PDM_Lesopilka", "sSex", GetSexPhrase("","а"));
+	
+	pchar.questTemp.PDM_Lesopilka_GVIK = "TookDocument";
+	
+	ref sld = CharacterFromID("Hugo_Lesopilka");
+	ChangeCharacterAddressGroup(sld,"none","","");
+	
+	RemoveLandQuestmark_Main(CharacterFromID("HWIC_head"), "PDM_Lesopilka");
+	AddLandQuestMark_Main(CharacterFromID("Providencia_tavernkeeper"), "PDM_Lesopilka");
+	AddMapQuestMark_Major("Providencia_town", "PDM_Lesopilka", "");
+	RemoveMapQuestMark("Villemstad_town", "PDM_Lesopilka");
+}
+
+void PDM_Lesopilka_GVIK_RoadToLaVega()
+{
+	AddQuestRecord("PDM_Lesopilka", "3");
+	
+	pchar.questTemp.PDM_Lesopilka_GVIK = "LaVega";
+	
+	ref sld = CharacterFromID("Hugo_Lesopilka");
+	ChangeCharacterAddressGroup(sld,"LaVega_Tavern","sit","sit5");
+	
+	RemoveLandQuestmark_Main(CharacterFromID("Providencia_tavernkeeper"), "PDM_Lesopilka");
+	RemoveMapQuestMark("Providencia_town", "PDM_Lesopilka");
+	AddLandQuestMark_Main(CharacterFromID("Hugo_Lesopilka"), "PDM_Lesopilka");
+	AddMapQuestMark_Major("LaVega_town", "PDM_Lesopilka", "");
+}
+
+void PDM_Lesopilka_GVIK_HugoHappy()
+{
+	AddQuestRecord("PDM_Lesopilka", "4");
+	if (LanguageGetLanguage() == "russian") AddQuestUserData("PDM_Lesopilka", "sSex", GetSexPhrase("","а"));
+	
+	PChar.quest.PDM_HugoSeaHavana.win_condition.l1 = "EnterToSea";
+	Pchar.quest.PDM_HugoSeaHavana.function = "PDM_Lesopilka_GVIK_HugoLeave";
+	
+	pchar.questTemp.PDM_Lesopilka_GVIK = "AcceptHugo";
+	
+	RemoveLandQuestmark_Main(CharacterFromID("Hugo_Lesopilka"), "PDM_Lesopilka");
+	RemoveMapQuestMark("LaVega_town", "PDM_Lesopilka");
+	AddLandQuestMark_Main(CharacterFromID("HWIC_head"), "PDM_Lesopilka");
+	AddMapQuestMark_Major("Villemstad_town", "PDM_Lesopilka", "");
+}
+
+void PDM_Lesopilka_GVIK_HugoLeave(string qName)
+{
+	ref sld = CharacterFromID("Hugo_Lesopilka");
+	ChangeCharacterAddressGroup(sld,"none","","");
+}
+
+void PDM_Lesopilka_GVIK_HugoAccept()
+{
+	AddQuestRecord("PDM_Lesopilka", "5");
+	if (LanguageGetLanguage() == "russian") AddQuestUserData("PDM_Lesopilka", "sSex", GetSexPhrase("","а"));
+	
+	pchar.questTemp.PDM_Lesopilka_GVIK = "Final";
+	
+	ref sld = CharacterFromID("Hugo_Lesopilka");
+	sld.dialog.filename   = "Quest\PDM\Lesopilka.c";
+	sld.dialog.currentnode   = "Novoe_Zadanie_1";
+	ChangeCharacterAddressGroup(sld,"Villemstad_Town","goto","goto20");
+	LAi_SetLoginTime(sld, 6.0, 21.99);
+	LAi_SetCitizenType(sld);
+	LAi_group_MoveCharacter(sld, "SPAIN_CITIZENS");
+	
+	RemoveLandQuestmark_Main(CharacterFromID("HWIC_head"), "PDM_Lesopilka");
+	AddLandQuestMark_Main(CharacterFromID("Hugo_Lesopilka"), "PDM_Lesopilka");
+}
+
+void PDM_Lesopilka_Treasures_NewQuest()
+{
+	AddQuestRecord("PDM_Lesopilka", "6");
+	if (LanguageGetLanguage() == "russian") AddQuestUserData("PDM_Lesopilka", "sSex", GetSexPhrase("","а"));
+
+	ref sld = GetCharacter(NPC_GenerateCharacter("PDM_Lesopilka_Galeon", "off_eng_1", "man", "man", sti(pchar.rank), ENGLAND, -1, true));
+	//FantomMakeCoolSailor(sld, SHIP_GALEON_L, FindPersonalName("Stormbreaker_ship"), CANNON_TYPE_CANNON_LBS24, 20, 20, 50);
+	FantomMakeSmallSailor(sld, SHIP_GALEON_L, FindPersonalName("Stormbreaker_ship"), CANNON_TYPE_CANNON_LBS12, 40, 25, 15, 15, 15);
+	FantomMakeCoolFighter(sld, sti(pchar.rank), 20, 20, "blade22", "pistol2", 35);
+	//GiveItem2Character(sld, "cirass1");
+	//EquipCharacterByItem(sld, "cirass1");
+	AddCharacterGoodsSimple(sld, GOOD_GOLD, 200 + rand(400));
+	AddCharacterGoodsSimple(sld, GOOD_SILVER, 200 + rand(400));
+	AddCharacterGoodsSimple(sld, GOOD_WEAPON, 200);
+	SetShipSkill(sld, 20, 20, 25, 15, 40, 30, 15, 15, 15);
+	sld.ship.Crew.Morale = 25;
+	sld.ship.masts.mast3 = 1;
+	sld.ship.masts.mast2 = 1;
+	sld.ship.masts.mast1 = 1;
+	sld.ship.HP = sti(sld.ship.HP) / 3.5;
+	sld.DontRansackCaptain = true;
+
+	Group_FindOrCreateGroup("PDM_Lesopilka_Fleet");
+	Group_SetType("PDM_Lesopilka_Fleet", "war");
+	Group_AddCharacter("PDM_Lesopilka_Fleet", "PDM_Lesopilka_Galeon");
+
+	Group_SetGroupCommander("PDM_Lesopilka_Fleet", "PDM_Lesopilka_Galeon");
+	Group_SetTaskAttack("PDM_Lesopilka_Fleet", PLAYER_GROUP);
+	Group_SetAddress("PDM_Lesopilka_Fleet", "Dominica", "quest_ships", "Quest_ship_2");
+	Group_LockTask("PDM_Lesopilka_Fleet");
+
+	SetFunctionTimerCondition("PDM_Lesopilka_Treasures_Timer", 0, 0, 30, false);
+
+	PChar.quest.PDM_Lesopilka_Treasures_Win.win_condition.l1 = "NPC_Death";
+	PChar.quest.PDM_Lesopilka_Treasures_Win.win_condition.l1.character = "PDM_Lesopilka_Galeon";
+	PChar.quest.PDM_Lesopilka_Treasures_Win.function = "PDM_Lesopilka_Treasures_Win";
+
+	PChar.quest.PDM_Lesopilka_Treasures_FoundLog.win_condition.l1 = "item";
+	PChar.quest.PDM_Lesopilka_Treasures_FoundLog.win_condition.l1.item = "LesopilkaLog";
+	PChar.quest.PDM_Lesopilka_Treasures_FoundLog.function = "PDM_Lesopilka_Treasures_FoundLog";
+	
+	RemoveLandQuestmark_Main(CharacterFromID("Hugo_Lesopilka"), "PDM_Lesopilka");
+	RemoveMapQuestMark("Villemstad_town", "PDM_Lesopilka");
+	AddMapQuestMark_Major("Dominica", "PDM_Lesopilka", "");
+	
+	sld = CharacterFromID("Hugo_Lesopilka");
+	LAi_RemoveLoginTime(sld);
+	AddPassenger(pchar, sld, false);
+	SetCharacterRemovable(sld, false);
+}
+
+void PDM_Lesopilka_Treasures_Timer(string qName)
+{
+	ref sld;
+	AddQuestRecord("PDM_Lesopilka", "8");
+	if (LanguageGetLanguage() == "russian") AddQuestUserData("PDM_Lesopilka", "sSex", GetSexPhrase("","а"));
+	CloseQuestHeader("PDM_Lesopilka");
+	
+	sld = CharacterFromID("PDM_Lesopilka_Galeon");
+	sld.lifeday = 0;
+	
+	sld = CharacterFromID("Hugo_Lesopilka");
+	sld.lifeday = 0;
+	RemovePassenger(pchar, sld);
+	
+	DeleteQuestCondition("PDM_Lesopilka_Treasures_Win");
+	DeleteQuestCondition("PDM_Lesopilka_Treasures_FoundLog");
+}
+
+void PDM_Lesopilka_Treasures_Win(string qName)
+{
+	ref sld;
+	if (!CheckCharacterItem(PChar, "LesopilkaLog"))
+	{
+		pchar.GenQuest.CabinLock = true;
+		Island_SetReloadEnableGlobal("Dominica", false);
+		bQuestDisableMapEnter = true;
+		
+		DoQuestFunctionDelay("PDM_Lesopilka_Treasures_InCabin", 2.5);
+	}
+	DeleteQuestCondition("PDM_Lesopilka_Treasures_Timer");
+	
+	Island_SetReloadEnableLocal("Dominica", "reload_1", false);
+	Island_SetReloadEnableLocal("Dominica", "reload_2", false);
+}
+
+void PDM_Lesopilka_Treasures_InCabin(string qName)
+{
+	ref sld;
+	DeleteAttribute(pchar, "GenQuest.CabinLock");
+	pchar.GenQuest.DontSetCabinOfficer = true;
+	chrDisableReloadToLocation = true;
+	Sea_CabinStartNow();
+	
+	sld = CharacterFromID("Hugo_Lesopilka");
+	ChangeCharacterAddressGroup(sld, Get_My_Cabin(), "rld", "loc1");
+	DoQuestFunctionDelay("PDM_Lesopilka_Treasures_InCabin_2", 1.8);
+	
+	DeleteQuestCondition("PDM_Lesopilka_Treasures_FoundLog");
+}
+
+void PDM_Lesopilka_Treasures_InCabin_2(string qName)
+{
+	ref sld;
+	sld = CharacterFromID("Hugo_Lesopilka");
+	sld.dialog.filename   = "Quest\PDM\Lesopilka.c";
+	sld.dialog.currentnode   = "InCabin_1";
+	LAi_SetActorType(sld);
+	LAi_ActorDialog(sld, pchar, "", -1, 0);
+}
+
+void PDM_Lesopilka_Treasures_InCabin_DlgExit()
+{
+	ref sld;
+	DeleteAttribute(pchar, "GenQuest.DontSetCabinOfficer");
+	Island_SetReloadEnableGlobal("Dominica", true);
+	chrDisableReloadToLocation = false;
+	
+	sld = CharacterFromID("Hugo_Lesopilka");
+	LAi_SetActorType(sld);
+	LAi_ActorGoToLocation(sld, "reload", "reload1", "", "", "", "", -1);
+	sld.location = "None";
+	AddQuestRecord("PDM_Lesopilka", "6.2");
+	AddQuestUserData("PDM_Lesopilka", "sShip", FindPersonalName("Stormbreaker_ship"));
+}
+
+void PDM_Lesopilka_Treasures_FoundLog(string qName)
+{
+	AddQuestRecord("PDM_Lesopilka", "6.1");
+	AddQuestUserData("PDM_Lesopilka", "sShip", FindPersonalName("Stormbreaker_ship"));
+	if (LanguageGetLanguage() == "russian") AddQuestUserData("PDM_Lesopilka", "sSex", GetSexPhrase("ёл","ла"));
+}
+
+void PDM_Lesopilka_Treasures_ReadLog()
+{
+	AddQuestRecord("PDM_Lesopilka", "7");
+	if (LanguageGetLanguage() == "russian") AddQuestUserData("PDM_Lesopilka", "sSex", GetSexPhrase("","а"));
+	DeleteQuestCondition("PDM_Lesopilka_Treasures_Win");
+	DeleteQuestCondition("PDM_Lesopilka_Treasures_Timer");
+
+	PChar.quest.PDM_Lesopilka_Treasures_BeforeFight_Shore26.win_condition.l1 = "location";
+	PChar.quest.PDM_Lesopilka_Treasures_BeforeFight_Shore26.win_condition.l1.location = "Shore26";
+	PChar.quest.PDM_Lesopilka_Treasures_BeforeFight_Shore26.function = "PDM_Lesopilka_Treasures_BeforeFight";
+	PChar.quest.PDM_Lesopilka_Treasures_BeforeFight_Shore27.win_condition.l1 = "location";
+	PChar.quest.PDM_Lesopilka_Treasures_BeforeFight_Shore27.win_condition.l1.location = "Shore27";
+	PChar.quest.PDM_Lesopilka_Treasures_BeforeFight_Shore27.function = "PDM_Lesopilka_Treasures_BeforeFight";
+	
+	bQuestDisableMapEnter = false;
+	PChar.quest.PDM_Lesopilka_Treasures_Leave.win_condition.l1 = "MapEnter";
+	PChar.quest.PDM_Lesopilka_Treasures_Leave.function = "PDM_Lesopilka_Treasures_Leave";
+	
+	Island_SetReloadEnableLocal("Dominica", "reload_1", true);
+	Island_SetReloadEnableLocal("Dominica", "reload_2", true);
+}
+
+void PDM_Lesopilka_Treasures_Leave(string qName)
+{
+	ref sld = CharacterFromID("Hugo_Lesopilka");
+	sld.lifeday = 0;
+	RemovePassenger(pchar, sld);
+	
+	DeleteQuestCondition("PDM_Lesopilka_Treasures_Fight");
+	AddQuestRecord("PDM_Lesopilka", "10");
+	if (LanguageGetLanguage() == "russian") AddQuestUserData("PDM_Lesopilka", "sSex", GetSexPhrase("","а"));
+	CloseQuestHeader("PDM_Lesopilka");
+	TakeItemFromCharacter(pchar, "LesopilkaLog");
+	Island_SetReloadEnableLocal("Dominica", "reload_1", true);
+	Island_SetReloadEnableLocal("Dominica", "reload_2", true);
+}
+
+void PDM_Lesopilka_Treasures_BeforeFight(string qName)
+{
+	ref sld, loc;
+	int i;
+	string sTemp;
+	
+	if (PChar.location == "Shore26") pchar.questTemp.PDM_Lesopilka_Treasures = "Shore26";
+	if (PChar.location == "Shore27") pchar.questTemp.PDM_Lesopilka_Treasures = "Shore27";
+	DeleteQuestCondition("PDM_Lesopilka_Treasures_BeforeFight_Shore26");
+	DeleteQuestCondition("PDM_Lesopilka_Treasures_BeforeFight_Shore27");
+	QuestPointerToLoc("Shore26", "reload", "reload1_back");
+	QuestPointerToLoc("Shore27", "reload", "reload1_back");
+	LocatorReloadEnterDisable("Shore26", "boat", true);
+	LocatorReloadEnterDisable("Shore27", "boat", true);
+	TakeItemFromCharacter(pchar, "LesopilkaLog");
+	PChar.GenQuest.HunterLongPause = true;
+	
+	PChar.quest.PDM_Lesopilka_Treasures_Kino_1.win_condition.l1 = "location";
+	PChar.quest.PDM_Lesopilka_Treasures_Kino_1.win_condition.l1.location = "Dominica_jungle_01";
+	PChar.quest.PDM_Lesopilka_Treasures_Kino_1.function = "PDM_Lesopilka_Treasures_Kino_1";
+	
+	loc = &Locations[FindLocation("Dominica_jungle_01")];
+	loc.models.always.jungle_outpost = "jungle6_outpost";
+	loc.models.always.jungle_outpost.tech = "DLightModel";
+	loc.models.always.locators = "jungle6_outpost_locators";
+	loc.models.day.charactersPatch = "jungle6_outpost_patch";
+	loc.models.night.charactersPatch = "jungle6_outpost_patch";
+	
+	loc = &Locations[FindLocation("Dominica_Grot")];
+	loc.models.always.GrotI_gold = "GrotI_gold";
+	loc.models.day.charactersPatch = "GrotI_gold_patch";
+	loc.models.night.charactersPatch = "GrotI_gold_patch";
+	loc.models.always.locators = "GrotI_gold_locators";
+	loc.locators_radius.box.private1 = 2.0;
+	loc.locators_radius.box.box1 = 0.0;
+	loc.private1.items.incas_collection = 3;
+	loc.private1.items.Chest = 20;
+	loc.private1.items.jewelry5 = 50;
+	loc.private1.items.jewelry17 = 50;
+	loc.private1.items.jewelry1 = rand(10)+5;
+	loc.private1.items.jewelry3 = rand(10)+5;
+	loc.private1.items.jewelry4 = rand(10)+5;
+	
+	sld = CharacterFromID("Hugo_Lesopilka");
+	ChangeCharacterAddressGroup(sld, pchar.location, "goto",  "goto8");
+	LAi_SetActorType(sld);
+	LAi_ActorFollow(sld, pchar, "", -1);
+	LAi_group_MoveCharacter(sld, LAI_GROUP_PLAYER);
+	
+	//------------------------наши матросы-------------------
+	for (i=1; i<=18; i++)
+    {
+		sTemp = "citiz_3"+(rand(8)+1);
+		if (i==6) sTemp = "citiz_30";
+		sld = GetCharacter(NPC_GenerateCharacter("OurSailor_"+i, sTemp, "man", "man", sti(pchar.rank), HOLLAND, -1, true));
+		ChangeCharacterAddressGroup(sld, pchar.location, "goto",  "goto8");
+		LAi_SetActorType(sld);
+		LAi_ActorFollow(sld, pchar, "", -1);
+		LAi_group_MoveCharacter(sld, LAI_GROUP_PLAYER);
+	}
+	for (i=19; i<=22; i++)
+    {
+		sld = GetCharacter(NPC_GenerateCharacter("OurSailor_"+i, "mush_ctz_"+(rand(2)+4), "man", "mushketer", sti(pchar.rank), HOLLAND, -1, false));
+		ChangeCharacterAddressGroup(sld, pchar.location, "goto",  "goto8");
+		LAi_SetWarriorType(sld);
+		LAi_SetActorType(sld);
+		LAi_ActorFollow(sld, pchar, "", -1);
+		LAi_group_MoveCharacter(sld, LAI_GROUP_PLAYER);
+	}
+}
+
+void PDM_Lesopilka_Treasures_Kino_1(string qName)
+{
+	ref sld;
+	int i;
+	string sTemp;
+	
+	Log_Clear();
+	bDisableCharacterMenu = true;
+	chrDisableReloadToLocation = true;
+	LAi_SetActorType(pchar);
+	sld = CharacterFromID("Hugo_Lesopilka");
+	if (CheckAttribute(pchar, "questTemp.PDM_Lesopilka_Treasures") && pchar.questTemp.PDM_Lesopilka_Treasures == "Shore26")
+	{
+		ChangeCharacterAddressGroup(sld, pchar.location, "reload",  "reload2");
+	}
+	if (CheckAttribute(pchar, "questTemp.PDM_Lesopilka_Treasures") && pchar.questTemp.PDM_Lesopilka_Treasures == "Shore27")
+	{
+		ChangeCharacterAddressGroup(sld, pchar.location, "reload",  "reload1");
+	}
+	
+//----------------------враги-------------------------
+	for (i=1; i<=6; i++)
+    {
+        sTemp = "navy_eng_"+(rand(7)+1);
+		if (i==6) sTemp = "off_eng_1";
+ 		sld = GetCharacter(NPC_GenerateCharacter("EngEnemy_"+i, sTemp, "man", "man", sti(pchar.rank), ENGLAND, 0, true));
+		LAi_SetActorType(sld);
+        ChangeCharacterAddressGroup(sld, pchar.location, "quest",  "quest8");
+	}
+	for (i=7; i<=12; i++)
+    {
+		sTemp = "navy_eng_"+(rand(7)+1);
+ 		sld = GetCharacter(NPC_GenerateCharacter("EngEnemy_"+i, sTemp, "man", "man", sti(pchar.rank), ENGLAND, 0, true));
+		LAi_SetActorType(sld);
+        ChangeCharacterAddressGroup(sld, pchar.location, "quest",  "quest10");
+	}
+	// for (i=13; i<=18; i++)
+    // {
+		// sTemp = "navy_eng_"+(rand(7)+1);
+ 		// sld = GetCharacter(NPC_GenerateCharacter("EngEnemy_"+i, sTemp, "man", "man", sti(pchar.rank), ENGLAND, 0, true));
+		// LAi_SetActorType(sld);
+        // ChangeCharacterAddressGroup(sld, pchar.location, "quest",  "quest10");
+	// }
+	for (i=1; i<=7; i++)
+    {
+ 		sld = GetCharacter(NPC_GenerateCharacter("EngEnemy_Mushket_"+i, "navy_mush_eng_"+(rand(2)+1), "man", "mushketer", sti(pchar.rank), ENGLAND, 0, false));
+		sld.MusketerDistance = 0;
+		LAi_SetWarriorType(sld);
+        ChangeCharacterAddressGroup(sld, pchar.location, "quest",  "quest"+i);
+	}
+	
+	StartQuestMovie(true, false, true);
+	LAi_FadeEx(0.0, 2.0, 1.0, "", "PDM_Lesopilka_Treasures_Kino_1_1", "");
+}
+
+void PDM_Lesopilka_Treasures_Kino_1_1(string qName)
+{
+	// locCameraFlyToPositionLookToPoint(-2.02, 6.82, 1.39, -2.17, 6.75, 1.25, -4.36, 5.74, -1.21, -1.0, 5000/GetDeltaTime());
+	locCameraFlyToPositionLookToPoint(-3.07, 6.65, 0.92, -3.18, 6.53, 0.69, -4.17, 6.04, -1.33, -1.0, 5000/GetDeltaTime());
+	Pchar.FuncCameraFly = "PDM_Lesopilka_Treasures_Kino_2";
+	
+	TEV.Music.QuestMusic = "Music\Special\Quest\PDM\Fight_01.mp3";
+	PlayMusic(TEV.Music.QuestMusic, 1000);
+}
+
+void PDM_Lesopilka_Treasures_Kino_2(string qName)
+{
+	locCameraFlyToPositionLookToPoint(2.19, 4.71, -14.83, 0.78, 4.45, -11.77, -3.98, 3.39, -1.35, -1.0, 5000/GetDeltaTime());
+	Pchar.FuncCameraFly = "PDM_Lesopilka_Treasures_Kino_3";
+}
+
+void PDM_Lesopilka_Treasures_Kino_3()
+{
+	locCameraFlyToPositionLookToPoint(5.15, 0.68, 4.90, -0.10, 1.45, 9.39, -4.03, 3.65, 0.50, -1.0, 5000/GetDeltaTime());
+	Pchar.FuncCameraFly = "PDM_Lesopilka_Treasures_Kino_4";
+}
+
+void PDM_Lesopilka_Treasures_Kino_4()
+{
+	locCameraFlyToPositionLookToPoint(-14.25, 1.61, -9.11, -14.96, 1.51, -8.81, -20.03, 0.79, -6.67, -1.0, 7000/GetDeltaTime());
+	Pchar.FuncCameraFly = "";
+	
+	ref sld = CharacterFromID("EngEnemy_6");
+	LAi_ActorAnimation(sld, "dialog_stay10", "", 10.0);
+	
+	DoQuestFunctionDelay("PDM_Lesopilka_Treasures_Kino_5", 2.5);
+}
+
+void PDM_Lesopilka_Treasures_Kino_5(string qName)
+{
+	LAi_FadeEx(1.0, 0.5, 1.0, "PDM_Lesopilka_Treasures_Kino_6", "PDM_Lesopilka_Treasures_Fight", "");
+}
+
+void PDM_Lesopilka_Treasures_Kino_6(string qName)
+{
+	locCameraResetState();
+	locCameraFollowEx(true);
+}
+
+void PDM_Lesopilka_Treasures_Fight(string qName)
+{
+	EndQuestMovie();
+	LAi_SetPlayerType(pchar);
+	
+	ref sld;
+	int i;
+	string sTemp = "PDM_Lesopilka_Treasures_Fight_EnemyGroup";
+	
+	LAi_SetPlayerType(pchar);
+	LAi_SetFightMode(pchar, true);
+	bDisableCharacterMenu = false;
+	
+	sld = CharacterFromID("Hugo_Lesopilka");
+	LAi_SetImmortal(sld, false);
+	sld.QuestImmortal = true;
+	LAi_SetWarriorType(sld);
+	LAi_group_MoveCharacter(sld, LAI_GROUP_PLAYER);
+	
+//------------------------наши матросы-------------------
+	for (i=1; i<=22; i++)
+	{
+		sld = CharacterFromID("OurSailor_"+i);
+		if (CheckAttribute(pchar, "questTemp.PDM_Lesopilka_Treasures") && pchar.questTemp.PDM_Lesopilka_Treasures == "Shore26")
+		{
+			ChangeCharacterAddressGroup(sld, pchar.location, "officers",  "reload2_2");
+		}
+		if (CheckAttribute(pchar, "questTemp.PDM_Lesopilka_Treasures") && pchar.questTemp.PDM_Lesopilka_Treasures == "Shore27")
+		{
+			ChangeCharacterAddressGroup(sld, pchar.location, "goto",  "goto2");
+		}
+	}
+	
+	for (i=1; i<=18; i++)
+	{
+		sld = CharacterFromID("OurSailor_"+i);
+		LAi_SetWarriorType(sld);
+		LAi_CharacterDisableDialog(sld);
+		LAi_group_MoveCharacter(sld, LAI_GROUP_PLAYER);
+	}
+	for (i=19; i<=22; i++)
+	{
+		sld = CharacterFromID("OurSailor_"+i);
+		sld.MusketerDistance = 5;
+		LAi_SetWarriorType(sld);
+		LAi_CharacterDisableDialog(sld);
+		LAi_group_MoveCharacter(sld, LAI_GROUP_PLAYER);
+	}
+
+//----------------------враги-------------------------
+	for (i=1; i<=7; i++)
+	{
+		sld = CharacterFromID("EngEnemy_Mushket_"+i);
+		LAi_SetWarriorType(sld);
+        LAi_group_MoveCharacter(sld, sTemp);
+	}
+	LAi_group_SetRelation(sTemp, LAI_GROUP_PLAYER, LAI_GROUP_ENEMY);
+	LAi_group_FightGroups(sTemp, LAI_GROUP_PLAYER, false);
+	LAi_group_SetCheckFunction(sTemp, "PDM_Lesopilka_Treasures_WinInJungle");
+	
+	DoQuestFunctionDelay("PDM_Lesopilka_Treasures_Fight_2", 5.0);
+}
+
+void PDM_Lesopilka_Treasures_Fight_2(string qName)
+{
+	ref sld;
+	int i;
+	for (i=1; i<=12; i++)
+	{
+		sld = CharacterFromID("EngEnemy_"+i);
+		LAi_SetWarriorType(sld);
+        LAi_group_MoveCharacter(sld, "PDM_Lesopilka_Treasures_Fight_EnemyGroup"); 
+	}
+	
+	DoQuestFunctionDelay("PDM_Lesopilka_Treasures_Fight_3", 5.0);
+}
+
+void PDM_Lesopilka_Treasures_Fight_3(string qName)
+{
+	ref sld;
+	int i;
+	string sTemp;
+	for (i=19; i<=24; i++)
+    {
+		sTemp = "navy_eng_"+(rand(7)+1);
+ 		sld = GetCharacter(NPC_GenerateCharacter("EngEnemy_"+i, sTemp, "man", "man", sti(pchar.rank), ENGLAND, 0, true));
+		LAi_SetWarriorType(sld);
+		LAi_group_MoveCharacter(sld, "PDM_Lesopilka_Treasures_Fight_EnemyGroup");
+        ChangeCharacterAddressGroup(sld, pchar.location, "reload",  "reload3");
+	}
+}
+
+void PDM_Lesopilka_Treasures_WinInJungle(string qName)
+{
+	StopMusic();
+	DeleteAttribute(&TEV, "Music.QuestMusic");
+	LAi_group_Delete("PDM_Lesopilka_Treasures_Fight_EnemyGroup");
+	alarmed = 0;
+	ref sld;
+	sld = CharacterFromID("Hugo_Lesopilka");
+	DeleteAttribute(sld, "QuestImmortal");
+	LAi_SetImmortal(sld, true);
+	sld.dialog.filename   = "Quest\PDM\Lesopilka.c";
+	sld.dialog.currentnode   = "WinOnJungle_1";
+	LAi_SetActorTypeNoGroup(sld);
+	LAi_ActorDialog(sld, pchar, "", -1, 0);
+	KZ|Select("");
+}
+
+void PDM_Lesopilka_Treasures_GoToGrot(string qName)
+{
+	ref sld;
+	int i;
+	sld = CharacterFromID("Hugo_Lesopilka");
+	LAi_SetActorTypeNoGroup(sld);
+	LAi_ActorFollowEverywhere(sld, "", -1);
+	
+	for (i=1; i<=22; i++)
+	{
+		if (CharacterIsAlive("OurSailor_"+i))
+		{
+			sld = CharacterFromID("OurSailor_"+i);
+			sld.lifeday = 0;
+		}
+	}
+	
+	chrDisableReloadToLocation = false;
+	
+	AddQuestRecord("PDM_Lesopilka", "9");
+	
+	QuestPointerToLoc("Dominica_Jungle_01", "reload", "reload3_back");
+	QuestPointerToLoc("Dominica_CaveEntrance", "reload", "reload1_back");
+	
+	SetFunctionLocationCondition("PDM_Lesopilka_Treasures_InGrot", "Dominica_Grot", false);
+}
+
+void PDM_Lesopilka_Treasures_InGrot(string qName)
+{
+	Log_Clear();
+	bDisableCharacterMenu = true;
+	ref sld;
+	StartQuestMovie(true, false, true);
+	LAi_FadeEx(0.0, 2.0, 1.0, "", "PDM_Lesopilka_Treasures_InGrot_2", "");
+	
+	LAi_SetStayType(pchar);
+	TeleportCharacterToPos(pchar, 50.00, -5.22, 50.00);
+	
+	sld = CharacterFromID("Hugo_Lesopilka");
+	LAi_type_actor_Reset(sld);
+	LAi_SetActorType(sld);
+	TeleportCharacterToPos(sld, 50.00, -5.22, 50.00);
+	
+	sld = GetCharacter(CreateCharacterClone(pchar, 0));
+	sld.id = "PDM_GG_Clone";
+	ChangeCharacterAddressGroup(sld, PChar.location, "goto", "goto1");
+	LAi_SetActorType(sld);
+	
+	sld = GetCharacter(CreateCharacterClone(CharacterFromID("Hugo_Lesopilka"), 0));
+	sld.id = "PDM_Lesopilka_Clone";
+	ChangeCharacterAddressGroup(sld, PChar.location, "goto", "goto1");
+	LAi_SetActorType(sld);
+
+	TEV.Music.QuestMusic = "Music\Colony\Town\Pirate\Day\Prt_Town_sd1.ogg";
+	PlayMusic(TEV.Music.QuestMusic, 1000);
+}
+
+void PDM_Lesopilka_Treasures_InGrot_2(string qName)
+{
+	locCameraFlyToPositionLookToPoint(5.92, -0.10, 1.87, 5.61, -0.05, 2.59, 4.54, 0.09, 5.10, -1.0, 5000/GetDeltaTime());
+	Pchar.FuncCameraFly = "PDM_Lesopilka_Treasures_InGrot_3";
+}
+
+void PDM_Lesopilka_Treasures_InGrot_3()
+{
+	ref sld;
+	locCameraFromToPos(2.71, -0.02, 7.95, true, 3.15, -1.14, 3.84);
+	
+	sld = CharacterFromID("PDM_GG_Clone");
+	LAi_ActorGoToLocatorNoCheck(sld, "quest", "quest1", "PDM_Lesopilka_Treasures_InGrot_3_1", -1);
+	
+	sld = CharacterFromID("PDM_Lesopilka_Clone");
+	LAi_ActorGoToLocatorNoCheck(sld, "quest", "quest2", "", -1);
+	
+	DoQuestFunctionDelay("PDM_Lesopilka_Treasures_InGrot_4", 6.0);
+}
+
+void PDM_Lesopilka_Treasures_InGrot_4(string qName)
+{
+	LAi_FadeEx(1.0, 0.0, 1.0, "", "PDM_Lesopilka_Treasures_InGrot_5", "");
+}
+
+void PDM_Lesopilka_Treasures_InGrot_5(string qName)
+{
+	ref sld;
+	// locCameraFromToPos(5.02, 1.67, 2.11, true, 4.88, -0.78, 4.25);
+	locCameraFromToPos(6.71, 0.72, 7.69, true, 4.34, -1.04, 5.17);
+	
+	sld = CharacterFromID("PDM_GG_Clone");
+	TeleportCharacterToLocatorIgnoreCollision(sld, "quest", "quest1");
+	LAi_ActorAnimation(sld, "gold_1_1", "", 1.8);
+	
+	sld = CharacterFromID("PDM_Lesopilka_Clone");
+	TeleportCharacterToLocatorIgnoreCollision(sld, "quest", "quest2");
+	LAi_ActorAnimation(sld, "gold_2_1", "", 1.8);
+	
+	sld = CharacterFromID("Hugo_Lesopilka");
+	sld.dialog.filename   = "Quest\PDM\Lesopilka.c";
+	sld.dialog.currentnode   = "InGrot_1";
+	LAi_ActorDialogNow(sld, Pchar, "", -1);
+}
+
+void PDM_Lesopilka_Treasures_InGrot_6(string qName)
+{
+	locCameraFromToPos(6.18, 1.98, 2.29, true, 4.95, -1.00, 4.44);
+	
+	ref sld;
+	
+	sld = CharacterFromID("PDM_GG_Clone");
+	LAi_ActorAnimation(sld, "gold_1_4", "", 10.8);
+	
+	sld = CharacterFromID("PDM_Lesopilka_Clone");
+	LAi_ActorAnimation(sld, "gold_2_2", "", 10.8);
+	
+	DoQuestFunctionDelay("PDM_Lesopilka_Treasures_InGrot_6_1", 1.5);
+}
+
+void PDM_Lesopilka_Treasures_InGrot_6_1(string qName)
+{
+	locCameraFromToPos(7.04, 2.00, 6.23, true, 4.68, -1.00, 4.93);
+	
+	DoQuestFunctionDelay("PDM_Lesopilka_Treasures_InGrot_7", 2.5);
+}
+
+void PDM_Lesopilka_Treasures_InGrot_7(string qName)
+{
+	locCameraFromToPos(5.71, 1.61, 2.57, true, 4.78, -1.00, 4.13);
+	
+	DoQuestFunctionDelay("PDM_Lesopilka_Treasures_InGrot_8", 2.0);
+}
+
+void PDM_Lesopilka_Treasures_InGrot_8(string qName)
+{
+	LAi_FadeEx(1.0, 0.0, 1.0, "", "PDM_Lesopilka_Treasures_InGrot_9", "");
+}
+
+void PDM_Lesopilka_Treasures_InGrot_9(string qName)
+{
+	locCameraFromToPos(4.66, 2.14, 3.31, true, 4.66, -1.00, 4.65);
+
+	ref sld;
+	
+	sld = CharacterFromID("PDM_GG_Clone");
+	LAi_ActorAnimation(sld, "gold_1_5", "", 10.8);
+	
+	sld = CharacterFromID("PDM_Lesopilka_Clone");
+	LAi_ActorAnimation(sld, "gold_2_5", "", 10.8);
+	
+	sld = CharacterFromID("Hugo_Lesopilka");
+	sld.dialog.filename   = "Quest\PDM\Lesopilka.c";
+	sld.dialog.currentnode   = "InGrot_11";
+	LAi_ActorDialogNow(sld, Pchar, "", -1);
+}
+
+void PDM_Lesopilka_Treasures_InGrot_10(string qName)
+{
+	LAi_FadeEx(1.0, 1.0, 1.0, "PDM_Lesopilka_Treasures_InGrot_11", "PDM_Lesopilka_Treasures_InGrot_12", "");
+	locCameraSleep(true);
+}
+
+void PDM_Lesopilka_Treasures_InGrot_11(string qName)
+{
+	ref sld;
+	locCameraSleep(false);
+	sld = CharacterFromID("PDM_GG_Clone");
+	ChangeCharacterAddressGroup(sld, "none", "", "");
+	
+	sld = CharacterFromID("PDM_Lesopilka_Clone");
+	ChangeCharacterAddressGroup(sld, "none", "", "");
+	
+	sld = CharacterFromID("Hugo_Lesopilka");
+	ChangeCharacterAddressGroup(sld, "none", "", "");
+	
+	ChangeCharacterAddressGroup(pchar, PChar.location, "quest", "quest4");
+}
+
+void PDM_Lesopilka_Treasures_InGrot_12(string qName)
+{
+	EndQuestMovie();
+	LAi_SetPlayerType(pchar);
+	locCameraFollowEx(true);
+	
+	PChar.quest.PDM_Lesopilka_Treasures_BackToVillemstad.win_condition.l1 = "MapEnter";
+	PChar.quest.PDM_Lesopilka_Treasures_BackToVillemstad.function = "PDM_Lesopilka_Treasures_BackToVillemstad";
+	
+	RemoveMapQuestMark("Dominica", "PDM_Lesopilka");
+	AddMapQuestMark_Major("Villemstad_town", "PDM_Lesopilka", "");
+	QuestPointerDelLoc("Shore26", "reload", "reload1_back");
+	QuestPointerDelLoc("Shore27", "reload", "reload1_back");
+	QuestPointerDelLoc("Dominica_Jungle_01", "reload", "reload3_back");
+	QuestPointerDelLoc("Dominica_CaveEntrance", "reload", "reload1_back");
+	LocatorReloadEnterDisable("Shore26", "boat", false);
+	LocatorReloadEnterDisable("Shore27", "boat", false);
+	DeleteQuestCondition("PDM_Lesopilka_Treasures_Leave");
+	bDisableCharacterMenu = false;
+}
+
+void PDM_Lesopilka_Treasures_BackToVillemstad(string qName)
+{
+	DeleteAttribute(pchar, "GenQuest.HunterLongPause");
+	ref loc;
+	
+	loc = &Locations[FindLocation("Dominica_jungle_01")];
+	DeleteAttribute(&Locations[loc], "models.always.jungle_outpost");	
+	loc.models.always.locators = "jungle6_locators";		
+	loc.models.day.charactersPatch = "jungle6_patch";
+	loc.models.night.charactersPatch = "jungle6_patch";
+	
+	loc = &Locations[FindLocation("Dominica_Grot")];
+	DeleteAttribute(&Locations[loc], "models.always.GrotI_gold");	
+	loc.models.day.charactersPatch = "GrotI_patch";
+	loc.models.night.charactersPatch = "GrotI_patch";
+	loc.models.always.locators = "GrotI_locators";
+	loc.locators_radius.box.box1 = 0.5;
+	
+	PChar.quest.PDM_Lesopilka_Treasures_Final.win_condition.l1 = "location";
+	PChar.quest.PDM_Lesopilka_Treasures_Final.win_condition.l1.location = "Villemstad_town";
+	PChar.quest.PDM_Lesopilka_Treasures_Final.function = "PDM_Lesopilka_Treasures_Final";
+}
+
+void PDM_Lesopilka_Treasures_Final(string qName)
+{
+	chrDisableReloadToLocation = true;
+	ref sld;
+	sld = CharacterFromID("Hugo_Lesopilka");
+	sld.dialog.filename   = "Quest\PDM\Lesopilka.c";
+	sld.dialog.currentnode   = "Final_1";
+	ChangeCharacterAddressGroup(sld, "Villemstad_town", "quest", "quest1");
+	LAi_SetActorTypeNoGroup(sld);
+	LAi_ActorDialog(sld, pchar, "", -1, 0);
+}
+
+void PDM_Lesopilka_Treasures_Final_2(string qName)
+{
+	chrDisableReloadToLocation = false;
+	ref sld;
+	sld = CharacterFromID("Hugo_Lesopilka");
+	RemovePassenger(pchar, sld);
+	sld.City = "Villemstad";
+	sld.location = "None";
+	LAi_SetCitizenType(sld);
+	LAi_group_MoveCharacter(sld, "HOLLAND_CITIZENS");
+	CloseQuestHeader("PDM_Lesopilka");
+	RemoveMapQuestMark("Villemstad_town", "PDM_Lesopilka");
+}
+
+//Остепенившийся пират <--
+
 void StartInstantDialogNoType(string id, string node, string fileName)
 {
 	DialogExit();
@@ -17171,10 +18785,10 @@ void SetTichingituJail() //ставим Тичингиту
 	sld.dialog.currentnode = "Tichingitu";
 	sld.rank = 12;
 	sld.HeroModel = "Tichingitu,Tichingitu_1,Tichingitu_2,Tichingitu_3,Tichingitu_4,Tichingitu_5";
-	LAi_SetHP(sld, 140.0, 140.0);
-	SetSPECIAL(sld, 4, 9, 5, 5, 10, 8, 8);
-	SetSelfSkill(sld, 70, 20, 20, 50, 20);
-    SetShipSkill(sld, 5, 5, 2, 5, 1, 2, 1, 1, 10);
+	LAi_SetHP(sld, 145.0, 145.0);
+	SetSPECIAL(sld, 6, 9, 7, 3, 9, 7, 6); //(Сила, Воспр, Выносл, Обаяние, Обуч, Реак, Удача)
+	SetSelfSkill(sld, 70, 10, 10, 50, 20);  //(ЛО, СО, ТО, огнестрел, фортуна)
+    SetShipSkill(sld, 5, 5, 2, 5, 1, 2, 1, 1, 30); //(лидер, торг, точн, пушки, навиг, ремонт, аборд, защита, скрыт)
 	SetCharacterPerk(sld, "Tireless");
 	SetCharacterPerk(sld, "BasicDefense");
 	SetCharacterPerk(sld, "CriticalHit");
@@ -17184,6 +18798,10 @@ void SetTichingituJail() //ставим Тичингиту
 	//черты
 	SetCharacterPerk(sld, "Energaiser");
 	SetCharacterPerk(sld, "LoyalOff");
+	SetCharacterPerk(sld, "Redskin");
+	SetCharacterPerk(sld, "NoCaptain");
+	SetCharacterPerk(sld, "MusketeerOnly");
+	SetCharacterPerk(sld, "WeaponBonding");
 	GiveItem2Character(sld, "unarmed");
 	sld.equip.blade = "unarmed";
 	sld.equip.gun = "";
@@ -17213,6 +18831,7 @@ void SetIndiansToLocation(string qName)
 	for(int i = 0; i < num; i++)
 	{
 		sld = GetCharacter(NPC_GenerateCharacter("Indian_"+_location.index+"_"+i, "AztecWarrior"+(rand(4)+1), "man", "man", iRank, PIRATE, 1, true));
+		sld.indian = "1";
 		//один кулфайтер, типо босс. остальные послабже, но не лохи
 		if (i == 0) FantomMakeCoolFighter(sld, sti(pchar.rank)+5, 90, 90, LinkRandPhrase(RandPhraseSimple("blade23","blade25"), RandPhraseSimple("blade30","blade26"), RandPhraseSimple("blade24","blade13")), RandPhraseSimple("pistol6", "pistol3"), MOD_SKILL_ENEMY_RATE*4);
 		else SetFantomParamHunter(sld);
@@ -17251,7 +18870,7 @@ void AddSimpleRumourToAllNations(string sText, int iTime, int iQty)
 
 void EasterCheckSkeleton()
 {
-	DeleteAttribute(pchar, "quest.easter");
+	DeleteAttribute(pchar, "questTemp.easter");
 	return;
 	if(pchar.location != "Cumana_deadlock")
 		return;
@@ -17261,15 +18880,16 @@ void EasterCheckSkeleton()
 	if(CheckAttribute(&locations[i],"private1.items.mineral8") && sti(locations[i].private1.items.mineral8) >= 10)
 	{
 		EasterGenerateIndian();
-		pchar.quest.easter.checkskeleton = 1;
+		pchar.questTemp.easter.checkskeleton = 1;
 	}
 }
 
 void EasterGenerateIndian()
 {
-	DeleteAttribute(pchar, "quest.easter");
+	DeleteAttribute(pchar, "questTemp.easter");
 	return;
 	ref sld = GetCharacter(NPC_GenerateCharacter("Huahuantli", "Huahuantli", "skeleton", "man", 100, PIRATE, -1, false));
+	sld.undead = "1";
 	sld.name = FindPersonalName("Huahuantli_name");	// покровитель мёртвых воинов, будет возмущаться по поводу осквернения тела павшего воина
 	sld.lastname = "";
 	LAi_SetActorType(sld);
@@ -17283,7 +18903,7 @@ void EasterGenerateIndian()
 
 void EasterOpenPassage()
 {
-	DeleteAttribute(pchar, "quest.easter");
+	DeleteAttribute(pchar, "questTemp.easter");
 	return;
 	int i = FindLocation("Cumana_deadlock");
 	DeleteAttribute(&Locations[i],"models.always.l4");
@@ -17293,7 +18913,7 @@ void EasterOpenPassage()
 
 void EasterReload()
 {
-	DeleteAttribute(pchar, "quest.easter");
+	DeleteAttribute(pchar, "questTemp.easter");
 	return;
 	float locx, locy, locz;
 	GetCharacterPos(pchar, &locx, &locy, &locz);
@@ -17310,10 +18930,11 @@ void EasterReload()
 
 void EasterGenerateGods()
 {
-	DeleteAttribute(pchar, "quest.easter");
+	DeleteAttribute(pchar, "questTemp.easter");
 	return;
 	ref sld;
 	sld = GetCharacter(NPC_GenerateCharacter("Atlaua", "Atlaua", "skeleton", "man", 100, PIRATE, -1, false));
+	sld.undead = "1";
 	sld.name = FindPersonalName("Atlaua_name");	// бог воды
 	sld.lastname = "";
 	LAi_group_MoveCharacter(sld, LAI_GROUP_ACTOR);
@@ -17324,6 +18945,7 @@ void EasterGenerateGods()
 	sld.dialog.currentnode = "Atlaua_1";
 	
 	sld = GetCharacter(NPC_GenerateCharacter("Xiuhtecuhtli", "Xiuhtecuhtli", "skeleton", "man", 100, PIRATE, -1, false));
+	sld.undead = "1";
 	sld.name = FindPersonalName("Xiuhtecuhtli_name");	// бог огня
 	sld.lastname = "";
 	LAi_group_MoveCharacter(sld, LAI_GROUP_ACTOR);
@@ -17334,6 +18956,7 @@ void EasterGenerateGods()
 	sld.dialog.currentnode = "Xiuhtecuhtli_1";
 	
 	sld = GetCharacter(NPC_GenerateCharacter("Huitzilopochtli", "Huitzilopochtli", "skeleton", "man", 100, PIRATE, -1, false));
+	sld.undead = "1";
 	sld.name = FindPersonalName("Huitzilopochtli_name");	// бог войны
 	sld.lastname = "";
 	LAi_SetStayType(sld);
@@ -17348,7 +18971,7 @@ void EasterGenerateGods()
 
 void EasterGodDissapear()
 {
-	DeleteAttribute(pchar, "quest.easter");
+	DeleteAttribute(pchar, "questTemp.easter");
 	return;
 	ref sld;
 	sld = characterFromId("Atlaua");	
@@ -17358,14 +18981,14 @@ void EasterGodDissapear()
 	sld = characterFromId("Huitzilopochtli");	
 	ChangeCharacterAddressGroup(sld, "none", "", "");
 	
-	pchar.quest.easter.gods = 1;	// после первого исчезновения начнут появляться по расписанию.
+	pchar.questTemp.easter.gods = 1;	// после первого исчезновения начнут появляться по расписанию.
 }
 
 void EasterCheckGodDay()
 {
-	DeleteAttribute(pchar, "quest.easter");
+	DeleteAttribute(pchar, "questTemp.easter");
 	return;
-	if(!CheckAttribute(pchar, "quest.easter.gods"))
+	if(!CheckAttribute(pchar, "questTemp.easter.gods"))
 		return;
 	ref sld;
 	switch(GetDataDay())
@@ -17402,10 +19025,11 @@ void EasterCheckGodDay()
 
 void EasterGenerateXolotl()
 {
-	DeleteAttribute(pchar, "quest.easter");
+	DeleteAttribute(pchar, "questTemp.easter");
 	return;
 	ref sld;
 	sld = GetCharacter(NPC_GenerateCharacter("Xolotl", "Xolotl", "skeleton", "man", 100, PIRATE, -1, false));
+	sld.undead = "1";
 	sld.name = FindPersonalName("Xolotl_name");	// проводник в подземное царство
 	sld.lastname = "";
 	LAi_group_MoveCharacter(sld, LAI_GROUP_ACTOR);
@@ -17418,17 +19042,17 @@ void EasterGenerateXolotl()
 
 void EasterXolotlMove()
 {
-	DeleteAttribute(pchar, "quest.easter");
+	DeleteAttribute(pchar, "questTemp.easter");
 	return;
 	// умный рандом
 	int i;
-	if(!CheckAttribute(pchar,"quest.easter.xolotl_shore"))
+	if(!CheckAttribute(pchar,"questTemp.easter.xolotl_shore"))
 	{
 		i = rand(2)+1;
 	}
 	else
 	{
-		switch(sti(strright(pchar.quest.easter.xolotl_shore, 1)))
+		switch(sti(strright(pchar.questTemp.easter.xolotl_shore, 1)))
 		{
 			case 1:		i = rand(1)+2;		break;
 			case 2:		i = 2*rand(1)+1;	break;
@@ -17436,13 +19060,13 @@ void EasterXolotlMove()
 		}
 	}
 	string sShore = "Shore_ship"+i;
-	pchar.quest.easter.xolotl_shore = sShore;
+	pchar.questTemp.easter.xolotl_shore = sShore;
 	// в бухте разбитого корыта сандал с шёлком, в заливе гибели красное дерево с хлопком, на мысе несбывшихся надежд чёрное дерево с кожей
 	switch(i)
 	{
-		case 1:		pchar.quest.easter.xolotl_lumber = GOOD_SANDAL;		pchar.quest.easter.xolotl_material = GOOD_SILK;		break;
-		case 2:		pchar.quest.easter.xolotl_lumber = GOOD_MAHOGANY;	pchar.quest.easter.xolotl_material = GOOD_COTTON;	break;
-		case 3:		pchar.quest.easter.xolotl_lumber = GOOD_EBONY;		pchar.quest.easter.xolotl_material = GOOD_LEATHER;	break;
+		case 1:		pchar.questTemp.easter.xolotl_lumber = GOOD_SANDAL;		pchar.questTemp.easter.xolotl_material = GOOD_SILK;		break;
+		case 2:		pchar.questTemp.easter.xolotl_lumber = GOOD_MAHOGANY;	pchar.questTemp.easter.xolotl_material = GOOD_COTTON;	break;
+		case 3:		pchar.questTemp.easter.xolotl_lumber = GOOD_EBONY;		pchar.questTemp.easter.xolotl_material = GOOD_LEATHER;	break;
 	}
 	
 	SetFunctionTimerCondition("EasterXolotlMove", 0, 1, 0, true);
@@ -17450,7 +19074,7 @@ void EasterXolotlMove()
 
 void EasterSummonXolotl()
 {
-	DeleteAttribute(pchar, "quest.easter");
+	DeleteAttribute(pchar, "questTemp.easter");
 	return;
 	ref sld = CharacterFromId("Xolotl");
 	if(Get_My_Cabin() == "My_Cabin" || Get_My_Cabin() == "My_CabineFDM" || Get_My_Cabin() == "My_Cabin_Huge" || Get_My_Cabin() == "My_Cabin_Quest")
@@ -17483,17 +19107,17 @@ void EasterSummonXolotl()
 	}
 	
 	
-	pchar.quest.easter.xolotl_incabin = 1;
+	pchar.questTemp.easter.xolotl_incabin = 1;
 }
 
 void EasterDissapearXolotl()
 {
-	DeleteAttribute(pchar, "quest.easter");
+	DeleteAttribute(pchar, "questTemp.easter");
 	return;
 	ref sld;
 	sld = CharacterFromId("Xolotl");
 	ChangeCharacterAddressGroup(sld, "none", "", "");
-	DeleteAttribute(pchar,"quest.easter.xolotl_incabin");
+	DeleteAttribute(pchar,"questTemp.easter.xolotl_incabin");
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -17677,7 +19301,7 @@ void Noblelombard_Over(string qName) //время вышло
 	if (CheckAttribute(pchar, "GenQuest.Noblelombard.Regard")) AddQuestRecord("Noblelombard", "3");
 	else AddQuestRecord("Noblelombard", "2");
 	CloseQuestHeader("Noblelombard");
-	DeleteAttribute(pchar, "quest.noblelombard");
+	DeleteAttribute(pchar, "questTemp.noblelombard");
 	DeleteAttribute(pchar, "GenQuest.Noblelombard");
 }
 

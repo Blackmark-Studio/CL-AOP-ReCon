@@ -281,6 +281,15 @@ itmtext_RingCapBook
 
 ……已经有第十个人倒下，突如其来的热病肆虐。水手们怨声载道。大副几乎难
 }
+itmname_LesopilkaLog {航海日志}
+itmdescr_LesopilkaLog
+{
+一本红皮航海日志，里面记录了关于所运载货物的信息。
+}
+itmtext_LesopilkaLog
+{
+……我决定在修理船只期间，将部分宝藏转移到岛上。以防万一。我们的船现在非常脆弱，我无法保证能够保护好这批珍贵的货物。如果海盗突然来袭，岛上有一个有利地形，我们可以从那里展开反击……
+}
 itmname_unarmed {徒手}
 itmdescr_unarmed {用你永远拥有的武器——拳头，保护自己的本领。}
 itmname_blade5 {副手匕首}
@@ -456,7 +465,7 @@ itmdescr_mushket_flint
 ~
 需要“火枪手训练”特质。
 }
-itmname_mushket_H2 {独家双管火枪}
+itmname_mushket_H2 {双管火枪}
 itmdescr_mushket_H2
 {
 定制的双管燧发枪，一件独特的枪械艺术品。尽管价格昂贵，设计却略显过时。然而，这支威力强大、性能卓越的精美卡宾枪，对持有者的技巧和经验有一定要求。
@@ -470,7 +479,7 @@ Tichinguit家族的传世火器。由一支印第安枪改造而成的独特武�
 ~
 需要“火枪手训练”特质。
 }
-itmname_mushket2x2 {双管火枪}
+itmname_mushket2x2 {独家双管火枪}
 itmdescr_mushket2x2
 {
 圣艾蒂安枪械工艺的杰作。正是法国人通过改进电池式火帽，创造了双管线膛枪。没有在旧大陆军事学院受过训练，无法使用此武器。
@@ -649,6 +658,8 @@ itmname_potionrum {朗姆酒瓶}
 itmdescr_potionrum {没有哪种朗姆酒能让你这样的海盗倒下，所以尽管畅饮吧……对了，如果你受伤了，酒精还能帮助愈合伤口，预防感染。}
 itmname_potionwine {上等葡萄酒}
 itmdescr_potionwine {加勒比海地区最优质的法国葡萄酒之一。其放松效果有助于恢复体力，并预防感染。}
+itmname_potionsangari {桑格里}
+itmdescr_potionsangari {清爽的酒精饮品。红葡萄酒与烈性朗姆酒的结合，辅以秘密配料，是绝佳的解暑渴之物。此饮品能提神助兴、增添体力，且不会像纯酒那样导致严重的醉酒感。}
 itmname_jewelry1 {蓝宝石}
 itmdescr_jewelry1 {一颗罕见的蓝色蓝宝石，产自西班牙新格拉纳达总督辖区的深处。传闻这些宝石在基多附近或安第斯山脉的矿井中被发现，其色泽被比作太平洋最深处的海水。}
 itmname_jewelry2 {钻石}
@@ -896,6 +907,11 @@ itmname_recipe_migraine_potion {说明（偏头痛药剂）}
 itmdescr_recipe_migraine_potion {偏头痛药剂的制作说明。}
 itmname_recipe_potion1 {说明（治疗药水）}
 itmdescr_recipe_potion1 {治疗药水制作说明}
+itmname_recipe_potionsangari {“桑格里”饮品配方}
+itmdescr_recipe_potionsangari
+{
+一张字迹潦草的纸条。上面详细记录了混合葡萄酒和朗姆酒以调制完美“桑格里”的技术。只要拥有必要配料和炼金套装，即可自行制作此饮品。
+}
 itmname_Mineral2 {鲁特琴}
 itmdescr_Mineral2 {一种流行的弹拨乐器。技艺高超的鲁特琴演奏者常能提升士兵或水手的士气。}
 itmname_Mineral3 {蜡烛}
@@ -1015,13 +1031,6 @@ itmname_PDM_PJ_Vino {葡萄酒瓶}
 itmdescr_PDM_PJ_Vino {一瓶精致昂贵的葡萄酒，要送给士兵。}
 itmname_PDM_PJ_Rom {朗姆酒瓶}
 itmdescr_PDM_PJ_Rom {一瓶要送给士兵的廉价朗姆酒。}
-itmname_PDM_PJ_BsRL {粉色丝带瓶}
-itmdescr_PDM_PJ_BsRL
-{
-一瓶系着粉色丝带的瓶子。
-* * *
-被动：+2运气，+2商业，-2潜行。
-}
 itmname_DesMoinesLocies {德莫因航路图}
 itmdescr_DesMoinesLocies {德莫因定居点沿岸安全航行与锚泊的详细指引。}
 itmname_letter_A {密封信件}
@@ -1069,7 +1078,8 @@ itmname_instrument1 {优质锯}
 itmdescr_instrument1
 {
 一款由历代造船工匠使用的简洁工具。这把工具握感极为舒适，能让切割动作迅速而精准。有了它，经验丰富的木匠也能长时间劳作而不觉疲惫。
-+10 修理
+
+被动：+5 修理。
 }
 
 itmname_strangeNoteLSC	{奇怪的便条}
@@ -1080,4 +1090,18 @@ itmdescr_strangeNoteLSC
 itmtext_strangeNoteLSC
 {
 我想前往陆地对大海的拥抱中，去目睹万物的终结。
+}
+
+itmname_TizerJournal   {丹尼尔·都铎的日记}
+itmdescr_TizerJournal
+{
+一本厚重的带锁皮革封面日记。封面上压印着：\n“丹尼尔·加布里埃洛·都铎之私产”\n阅读这些回忆录将花费不少时间。
+}
+itmtext_TizerJournal
+{
+许多愚人依靠指南针或地图学知识寻找正义岛。但这张岛屿永远不会出现在地图上，只要一靠近那些该死的礁石，指南针的指针就会发疯。
+这座岛不接纳那些出于闲散的好奇心或贪婪而来的人。若想从海上投向陆地的怀抱，必须委身于自然元素的仁慈，对他魂与肉体的命运一无所知。
+只有穿过大风暴的怒吼，只有穿过桅杆折断的碎裂声和不可避免的海难，道路才会显现。
+大海将决定如何处置你——最重要的是不要抵抗它的力量。而这座岛最大的谜团是：正义岛拒绝舰队。
+凡决定迈出这一步的人，必须独自行动。没有船员，没有忠诚的伙伴在身后。只有你和大海的愤怒。否则，所有人迎来的都将是毁灭……
 }

@@ -712,7 +712,15 @@ itmtext_RingCapBook
 ... the gunpowder has run out. I have only four charges left in a pair of double-barreled pistols. I sit down at the table and prepare to meet my death, as befits a white man and a ship's captain. Through the cabin window, I see a storm approaching on the horizon. It will be very strong...
 ... they are breaking down the door. In a few minutes, it will all be over, and I will meet my sweet Wawaya again in a better world. I am writing these lines thinking of her. Was she right, and is all this punishment for sacrilege? The chain of events that led to the tragedy looks like a curse. 'The gods are taking revenge'! The crate with gold... who will it belong to after this...
 }
-
+itmname_LesopilkaLog {Ship's Log}
+itmdescr_LesopilkaLog
+{
+A ship's log with a red cover, containing information about the transported cargo.
+}
+itmtext_LesopilkaLog
+{
+... I have decided that while the ship is being repaired, we will move part of the treasure to the island. Just in case. Our ship is very vulnerable right now, and I cannot guarantee that I will be able to protect the valuable cargo. If pirates suddenly raid us, there is an advantageous position on the island from which we will give battle...
+}
 ; ================================================================================================================
 ; ==================================================== EQUIPMENT ====================================================
 ; ================================================================================================================
@@ -1157,7 +1165,7 @@ A smoothbore muzzle-loading gun with a more reliable mechanism than the old matc
 Requires the 'Musketeer Training' perk.
 }
 
-itmname_mushket_H2 {Exclusive double-barreled musket}
+itmname_mushket_H2 {Double-barreled musket}
 itmdescr_mushket_H2
 {
 A made-to-order double barreled musket with a flintlock. An exclusive work of gunsmithing art. Despite the high cost, the design is somewhat outdated. However, with all its power and effectiveness, this marvelous carbine requires a certain amount of skill and experience from its owner.
@@ -1173,7 +1181,7 @@ Tichinguit's ancestral firearm. A unique specimen created from an Indian gun. It
 Requires 'Musketeer Training' perk.
 }
 
-itmname_mushket2x2	{Double-barreled musket}
+itmname_mushket2x2	{Exclusive double-barreled musket}
 itmdescr_mushket2x2
 {
 A masterpiece of Saint-Etienne gunsmithing. It was the French who created the double-barreled rifled weapon by improving the battery lock. It is impossible to use this weapon without training in a military school of the Old World.
@@ -1477,6 +1485,12 @@ itmname_potionwine	{Excellent wine}
 itmdescr_potionwine
 {
 Some of the best French wine in the Caribbean. Its relaxing effect will help you restore your strength and prevent infection.
+}
+
+itmname_potionsangari {Sangaree}
+itmdescr_potionsangari
+{
+A refreshing alcoholic beverage. This combination of red wine and strong rum, seasoned with secret ingredients, is perfect for quenching thirst in the unbearable heat. The drink invigorates and restores strength without causing the heavy intoxication of pure alcohol.
 }
 
 ; ============================================== GEMS, PRECIOUS ==============================================
@@ -2032,6 +2046,12 @@ itmdescr_recipe_potion1
 Instructions on how to make a Healing Potion.
 }
 
+itmname_recipe_potionsangari {Recipe for "Sangaree"}
+itmdescr_recipe_potionsangari
+{
+A scrap of paper covered in hurried handwriting. It details the technique for mixing wine and rum to create the perfect "Sangaree". It allows you to prepare this drink yourself, provided you have the necessary ingredients and an alchemy kit.
+}
+
 ; ============================================ ORDINARY ITEMS =================================================
 
 itmname_Mineral2	{Lute}
@@ -2297,14 +2317,6 @@ itmdescr_PDM_PJ_Rom
 A bottle of cheap rum to be delivered to a soldier.
 }
 
-itmname_PDM_PJ_BsRL {Bottle with a Pink Ribbon}
-itmdescr_PDM_PJ_BsRL
-{
-A bottle with a neatly tied pink ribbon.
-* * *
-Passive: +2 Luck, +2 Commerce, -2 Stealth.
-}
-
 itmname_DesMoinesLocies {Des Moines Rutier}
 itmdescr_DesMoinesLocies
 {
@@ -2392,9 +2404,8 @@ P.
 itmname_instrument1 {Fine Saw}
 itmdescr_instrument1
 {
-(not used yet)
 A straightforward tool employed by generations of shipwrights. This particular specimen features an exceptionally comfortable grip, allowing for swift and precise cuts. With such an instrument, a seasoned carpenter may toil for hours without fatigue.
-+10 Repair
+Passive: +5 Repair.
 }
 
 itmname_strangeNoteLSC	{The strange note}
@@ -2407,4 +2418,16 @@ itmtext_strangeNoteLSC
 I would like to journey into the land's embrace of the sea, to witness the end of all existence within it.
 }
 
-
+itmname_TizerJournal   {Daniel Tudor's Diary}
+itmdescr_TizerJournal
+{
+A heavy leather-bound diary with a lock. The cover is embossed with:\n"Property of Daniel Gabrielo Tudor".\nReading such memoirs will take a considerable amount of time.
+}
+itmtext_TizerJournal
+{
+Many fools seek the Island of Justice, relying on a compass or cartographic knowledge. But this island will never be on maps, and a compass needle will go mad the moment one nears the cursed reefs.
+The island does not accept those who come out of idle curiosity or greed. To reach the embrace of land from the sea, one must deliver themselves to the mercy of the elements, remaining in total ignorance of what will become of their soul and body.
+Only through the roar of a great storm, only through the crack of breaking masts and an inevitable shipwreck is the path revealed.
+The sea itself will decide what to do with you — the main thing is not to resist its power. And the island's greatest mystery: the Island rejects armadas.
+He who decides to take this step must take it alone. Without a crew. Without loyal comrades behind his back. Only you and the wrath of the ocean. Otherwise, only death awaits them all...
+}

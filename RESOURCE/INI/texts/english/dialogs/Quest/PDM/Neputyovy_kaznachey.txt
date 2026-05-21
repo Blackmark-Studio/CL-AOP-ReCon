@@ -44,7 +44,7 @@ Neputyovy_kaznachey_15 {
 I don't know. I'll think of something. Wait for me here.
 }
 Neputyovy_kaznachey_16 {
-Captain Vitor! Oh, it’s you, right... You s-scared me half to death. H-h-have you seen V-v-ictor?
+Captain Victor! Oh, it’s you, right... You s-scared me half to death. H-h-have you seen V-v-ictor?
 }
 Neputyovy_kaznachey_17 {
 Not yet. But don’t worry—I’ll take care of him.
@@ -62,10 +62,10 @@ Neputyovy_kaznachey_21 {
 You! Hey, you! Have you seen a bespectacled, brainless treasurer named Andreas around here? He’s the reason I’m broke! Parasite! I’ll kill him! He ruined me!
 }
 Neputyovy_kaznachey_22 {
-Well, well, well. You’re Vitor Bretier.
+Well, well, well. You’re Victor Bretier.
 }
 Neputyovy_kaznachey_23 {
-Yeah, I’m Vitor. And that mangy mutt set half my ship on fire with those damned powder kegs! I’ll skin him alive!
+Yeah, I’m Victor. And that mangy mutt set half my ship on fire with those damned powder kegs! I’ll skin him alive!
 }
 Neputyovy_kaznachey_24 {
 Calm down, mate. Andreas is under my protection.
@@ -107,16 +107,16 @@ Neputyovy_kaznachey_34 {
 Did I say @<Plata1>? No, that was a mistake! At the very least, @<Plata2>!
 }
 Neputyovy_kaznachey_35 {
-You’ve got some nerve, Vitor! I’d sooner cut you to pieces than let you harm Andreas.
+You’ve got some nerve, Victor! I’d sooner cut you to pieces than let you harm Andreas.
 }
 Neputyovy_kaznachey_36 {
-Here, take your money. Enjoy yourself, Vitor.
+Here, take your money. Enjoy yourself, Victor.
 }
 Neputyovy_kaznachey_37 {
 I'll bring you @<FindMoneyString>. But remember—one broadside from my ship will turn your tub into a sieve, so don’t lay a finger on Andreas!
 }
 Neputyovy_kaznachey_38 {
-You’ve got some nerve, Vitor! I’d sooner cut you to pieces than let you lay a finger on Andreas.
+You’ve got some nerve, Victor! I’d sooner cut you to pieces than let you lay a finger on Andreas.
 }
 Neputyovy_kaznachey_39 {
 Alright, as soon as I have the money, I'll drop by.
@@ -143,7 +143,7 @@ Neputyovy_kaznachey_45 {
 @<FindMoneyString>. Here you go.
 }
 Neputyovy_kaznachey_46 {
-I don't have that kind of money right now, Vitor, but I'll come back later and pay for Andreas.
+I don't have that kind of money right now, Victor, but I'll come back later and pay for Andreas.
 }
 Neputyovy_kaznachey_47 {
 I’m sick of running all over the archipelago for your stupid cargo. You could’ve hauled your own backside out there and earned some coin yourself a hundred times over by now, you old stump!
@@ -155,7 +155,7 @@ Neputyovy_kaznachey_49 {
 Less talk, more action!
 }
 Neputyovy_kaznachey_50 {
-C-c-captain @<pchar>! Oh, it’s you, @<GetAddress_Form>! You s-scared me. Have you already spoken to V-Vitor?
+C-c-captain @<pchar>! Oh, it’s you, @<GetAddress_Form>! You s-scared me. Have you already spoken to V-Victor?
 }
 Neputyovy_kaznachey_51 {
 Yes. He won’t bother you anymore. You can safely return to your ‘Sea Gull’.
@@ -174,4 +174,7 @@ Thank you, c-captain! You w-w-won't regret this!
 }
 Neputyovy_kaznachey_56 {
 Welcome aboard, Andreas.
+}
+Neputyovy_kaznachey_57 {
+No. You've already named your price. Remember - every extra word increases the risk of your ship's destruction. Have a nice time, Viktor.
 }

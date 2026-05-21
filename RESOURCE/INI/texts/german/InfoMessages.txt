@@ -151,7 +151,7 @@ InfoMessages_149 {Fernrohr erhalten}
 InfoMessages_150 {Du hast 25 Smaragde erhalten}
 InfoMessages_151 {Du hast eine Truhe mit Gold erhalten}
 InfoMessages_152 {@<sAttr> kommt zu dir.}
-InfoMessages_153 {Du hast zwei Flaschen erhalten, von denen eine jetzt DIR gehört.}
+InfoMessages_153 {Du hast das Rezept für 'Sangaree' erhalten.}
 InfoMessages_154 {@<iSmallPearl> kleine Perlen gegeben.}
 InfoMessages_155 {@<iBigPearl> große Perlen gegeben.}
 InfoMessages_156 {@<iSmallPearl> kleine Perlen erhalten.}

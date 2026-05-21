@@ -647,7 +647,7 @@ int LocationInitProvidence(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Providencia_SecBrRoom";
 	locations[n].id.label = "Room";
-	locations[n].image = "loading\inside\BigHouse03.tga";
+	locations[n].image = "loading\inside\Residence07.tga";
  	//Town sack
 	locations[n].townsack = "Providencia";
 	locations[n].lockWeather = "Inside";
@@ -911,7 +911,7 @@ int LocationInitProvidence(int n)
 	locations[n].id = "Providencia_Hut3_Kns";
 	locations[n].filespath.models = "locations\inside\Hut3";
 	locations[n].id.label = "House";
-	locations[n].image = "loading\inside\smallhouse.tga";
+	locations[n].image = "loading\inside\Hut3.tga";
 	locations[n].MustSetReloadBack = true;
 	//Town sack
 	locations[n].townsack = "Providencia";
@@ -952,7 +952,7 @@ int LocationInitProvidence(int n)
 	locations[n].id = "Providencia_HouseHut1";
 	locations[n].filespath.models = "locations\inside\Hut1_KNS";
 	locations[n].id.label = "House";
-	locations[n].image = "loading\inside\littleHut1.tga";
+	locations[n].image = "loading\inside\littlehut.tga";
 	//Town sack
 	locations[n].townsack = "Providencia";
 	locations[n].lockWeather = "Inside";

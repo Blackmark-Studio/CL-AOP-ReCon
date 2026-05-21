@@ -490,7 +490,7 @@ int LocationInitGuadeloupe(int n)
 	locations[n].id = "BasTer_townhall";
 	locations[n].id.label = "Townhall";
 	locations[n].filespath.models = "locations\inside\Residence04";
-	locations[n].image = "loading\inside\residence.tga";
+	locations[n].image = "loading\inside\Residence04.tga";
 	//Town sack
 	locations[n].townsack = "BasTer";
 	locations[n].lockWeather = "Inside";
@@ -746,7 +746,7 @@ int LocationInitGuadeloupe(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "BasTer_houseF1";
 	locations[n].id.label = "Olone House";
-	locations[n].image = "loading\inside\mediumhouse10.tga";
+	locations[n].image = "loading\inside\mediumhouse02.tga";
 	//Town sack
 	locations[n].townsack = "BasTer";
 	locations[n].lockWeather = "Inside";
@@ -1106,7 +1106,7 @@ int LocationInitGuadeloupe(int n)
 	
 	locations[n].id = "Mayak4_Lighthouseroom";
 	locations[n].id.label = "House";
-	locations[n].image = "loading\inside\mediumhouse10.tga";
+	locations[n].image = "loading\inside\mediumhouse09.tga";
 	//Town sack
 	locations[n].townsack = "Baster";
 	locations[n].islandId = "Guadeloupe";

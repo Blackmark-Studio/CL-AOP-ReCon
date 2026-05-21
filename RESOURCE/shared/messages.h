@@ -280,6 +280,8 @@
 #define MSG_WORLDMAP_WIND_UI_SET_SHOW 31152 // "ll" status
 // Update WdmWindUI on the map: wind, date, moral, supplies, coordinates, flag
 #define MSG_WORLDMAP_UPDATE 31153 // "l"
+// Update labels on islands
+#define MSG_WORLDMAP_UPDATE_LABELS 31154 // "l"
 
 // ============================================================================================
 // Effects

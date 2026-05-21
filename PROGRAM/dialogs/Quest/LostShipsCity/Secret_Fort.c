@@ -263,6 +263,7 @@ void ProcessDialogEvent()
 			rItem = ItemsFromID("TizerJournal");
 			rItem.groupID = READING_ITEM_TYPE;
 			AddQuestRecord("ISS_PoorsMurder", "37");
+			RemoveItems(pchar, "strangeNoteLSC", 1);
 		break;
 
 		/////	ТРЕТИЙ КВЕСТОВЫЙ ДИАЛОГ С ГЛАВНЫМ

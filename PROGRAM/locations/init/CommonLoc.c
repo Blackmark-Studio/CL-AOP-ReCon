@@ -234,7 +234,7 @@ int LocationInitCommonLoc(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "CommonRoom_MH2";
 	locations[n].id.label = "house";
-	locations[n].image = "loading\inside\mediumhouse10.tga";
+	locations[n].image = "loading\inside\mediumhouse02.tga";
 	locations[n].MustSetReloadBack = true;
 	//Town sack
 	locations[n].townsack = "";
@@ -275,7 +275,7 @@ int LocationInitCommonLoc(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "CommonRoom_MH3";
 	locations[n].id.label = "Room";
-	locations[n].image = "loading\inside\mediumhouse10.tga";
+	locations[n].image = "loading\inside\mediumhouse03.tga";
 	locations[n].MustSetReloadBack = true;
 	//Town sack
 	locations[n].townsack = "";
@@ -316,7 +316,7 @@ int LocationInitCommonLoc(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "CommonRoom_MH4";
 	locations[n].id.label = "Room";
-	locations[n].image = "loading\inside\mediumhouse10.tga";
+	locations[n].image = "loading\inside\mediumhouse04.tga";
 	locations[n].MustSetReloadBack = true;
 	//Town sack
 	locations[n].townsack = "";
@@ -357,7 +357,7 @@ int LocationInitCommonLoc(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "CommonRoom_MH5";
 	locations[n].id.label = "Room";
-	locations[n].image = "loading\inside\mediumhouse10.tga";
+	locations[n].image = "loading\inside\mediumhouse05.tga";
 	locations[n].MustSetReloadBack = true;
 	//Town sack
 	locations[n].townsack = "";
@@ -442,7 +442,7 @@ int LocationInitCommonLoc(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "CommonRoom_MH9";
 	locations[n].id.label = "House";
-	locations[n].image = "loading\inside\mediumhouse10.tga";
+	locations[n].image = "loading\inside\mediumhouse09.tga";
 	locations[n].MustSetReloadBack = true;
 	//Town sack
 	locations[n].townsack = "";
@@ -526,7 +526,7 @@ int LocationInitCommonLoc(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "CommonRoom_MH12";
 	locations[n].id.label = "House";
-	locations[n].image = "loading\inside\mediumhouse10.tga";
+	locations[n].image = "loading\inside\mediumhouse13.tga";
 	locations[n].MustSetReloadBack = true;
 	//Town sack
 	locations[n].townsack = "";
@@ -710,7 +710,7 @@ int LocationInitCommonLoc(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "CommonTwoFloorHouse"; //с комнатой из ПКМ на втором этаже
 	locations[n].id.label = "House";
-	locations[n].image = "loading\inside\largehouse01.tga";
+	locations[n].image = "loading\inside\Doubleflour_house.tga";
 	locations[n].MustSetReloadBack = true;
 	//Town sack
 	locations[n].townsack = "";
@@ -763,7 +763,7 @@ int LocationInitCommonLoc(int n)
 	//////////////////////////  комната на 2 этаже из ПКМ.
 	locations[n].id = "CommonTwoFloorRoom";
 	locations[n].id.label = "Room";
-	locations[n].image = "loading\inside\mediumhouse10.tga";
+	locations[n].image = "loading\inside\LH_Floor2.tga";
 	locations[n].MustSetReloadBack = true;
 	//Town sack
 	locations[n].townsack = "";
@@ -809,7 +809,7 @@ int LocationInitCommonLoc(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "CommonTripleFloorHouse"; //с комнатой из ПКМ на втором этаже
 	locations[n].id.label = "House";
-	locations[n].image = "loading\inside\largehouse01.tga";
+	locations[n].image = "loading\inside\Doubleflour_house.tga";
 	locations[n].MustSetReloadBack = true;
 	//Town sack
 	locations[n].townsack = "";
@@ -909,7 +909,7 @@ int LocationInitCommonLoc(int n)
 	//////////////////////////  комната на 3 этаже из ПКМ.
 	locations[n].id = "CommonTripleFloorRoom";
 	locations[n].id.label = "Room";
-	locations[n].image = "loading\inside\mediumhouse10.tga";
+	locations[n].image = "loading\inside\LH_Floor2.tga";
 	locations[n].MustSetReloadBack = true;
 	//Town sack
 	locations[n].townsack = "";

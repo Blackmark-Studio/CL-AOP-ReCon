@@ -417,7 +417,7 @@ void RepairStatShow(string sHullLim, string sMastLim, string sSailLim)
 		SendMessage(&GameInterface, "lslll", MSG_INTERFACE_MSG_TO_NODE, "REPAIR_QTY_H", 8, 0, argb(255, 128, 255, 255));
 
 	//Справа
-	SetFormatedText("REPAIR_HULL_R_STR", XI_ConvertString("RepairCost") +"\n" +GetStrSmallRegister(XI_ConvertString("PlanksAcc")) +" " + FindQtyString(xi_refCharacter.repair.hull_cost)
+	SetFormatedText("REPAIR_HULL_R_STR", XI_ConvertString("RepairCost") +"\n" +GetStrSmallRegister(XI_ConvertString("PlanksAcc")) +" " +FindQtyString(sti(xi_refCharacter.repair.hull_cost))
 		+ "\n" + XI_ConvertString("RepairTime") +"\n" +RepairWindowGetTime(sti(xi_refCharacter.repair.hull_time), false));
 	SendMessage(&GameInterface, "lsl", MSG_INTERFACE_MSG_TO_NODE, "REPAIR_HULL_R_STR", 5);
 
@@ -449,7 +449,7 @@ void RepairStatShow(string sHullLim, string sMastLim, string sSailLim)
 		SendMessage(&GameInterface, "lslll", MSG_INTERFACE_MSG_TO_NODE, "REPAIR_QTY_M", 8, 0, argb(255, 128, 255, 255));
 
 	//Справа
-	SetFormatedText("REPAIR_MAST_R_STR", XI_ConvertString("RepairCost") + "\n" +GetStrSmallRegister(XI_ConvertString("PlanksAcc")) +" " + FindQtyString(xi_refCharacter.repair.mast_cost)
+	SetFormatedText("REPAIR_MAST_R_STR", XI_ConvertString("RepairCost") + "\n" +GetStrSmallRegister(XI_ConvertString("PlanksAcc")) +" " +FindQtyString(sti(xi_refCharacter.repair.mast_cost))
 		+ "\n" + XI_ConvertString("RepairTime") + "\n" + RepairWindowGetTime(sti(xi_refCharacter.repair.mast_time), false));
 	SendMessage(&GameInterface, "lsl", MSG_INTERFACE_MSG_TO_NODE, "REPAIR_MAST_R_STR", 5);
 
@@ -481,7 +481,7 @@ void RepairStatShow(string sHullLim, string sMastLim, string sSailLim)
 		SendMessage(&GameInterface, "lslll", MSG_INTERFACE_MSG_TO_NODE, "REPAIR_QTY_S", 8, 0, argb(255, 128, 255, 255));
 
 	//Справа
-	SetFormatedText("REPAIR_SAIL_R_STR", XI_ConvertString("RepairCost") + "\n" + GetStrSmallRegister(XI_ConvertString("Sailcloth")) +" " + FindQtyString(xi_refCharacter.repair.sail_cost)
+	SetFormatedText("REPAIR_SAIL_R_STR", XI_ConvertString("RepairCost") + "\n" + GetStrSmallRegister(XI_ConvertString("Sailcloth")) +" " +FindQtyString(sti(xi_refCharacter.repair.sail_cost))
 		+ "\n" + XI_ConvertString("RepairTime") + "\n" + RepairWindowGetTime(sti(xi_refCharacter.repair.sail_time), false));
 	SendMessage(&GameInterface, "lsl", MSG_INTERFACE_MSG_TO_NODE, "REPAIR_SAIL_R_STR", 5);
 

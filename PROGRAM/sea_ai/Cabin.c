@@ -211,7 +211,7 @@ void Return2SeaAfterCabin()
 	EndBattleLandInterface();
 
 	// evganat - фикс Шолотля
-	if(CheckAttribute(pchar, "quest.easter.xolotl_incabin"))
+	if(CheckAttribute(pchar, "questTemp.easter.xolotl_incabin"))
         EasterDissapearXolotl();
 
     // вышли из каюты, пока сидели
@@ -384,7 +384,7 @@ void Cabin_ReloadEndFadeAfter() //Загружаем следующую лока
 void Sea_DeckBoatStartNow(ref _iShipsCharacter)
 {
 	string boat_pic = "loading\boat_" + rand(2) + ".tga";	
-	if(CheckAttribute(pchar, "TownEscape")) boat_pic = "loading\Start_Loading.tga";
+	if(CheckAttribute(pchar, "TownEscape")) boat_pic = "loading\Escape_Town.tga";
 	
 	if (!bAbordageStarted)
 	{
@@ -1070,7 +1070,7 @@ void Sea_DeckBoatLoad_ForQuest(int charIndex)
 void Sea_DeckBoatLoad_ForQuest_StartNow(ref _iShipsCharacter)
 {
 	string boat_pic = "loading\boat_" + rand(2) + ".tga";	
-	if(CheckAttribute(pchar, "TownEscape")) boat_pic = "loading\Start_Loading.tga";
+	if(CheckAttribute(pchar, "TownEscape")) boat_pic = "loading\Escape_Town.tga";
 	
 	if (!bAbordageStarted)
 	{

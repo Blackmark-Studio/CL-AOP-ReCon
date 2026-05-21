@@ -202,6 +202,11 @@ void LAi_type_guardian_CharacterUpdate(aref chr, float dltTime)
 								LAi_SoldierTestControl(chr, false, true);
 								return;
 							}
+							//Квестовая проверка блудницы в джунглях
+							else if (CheckAttribute(pchar, "GenQuest.EncGirl.MeetSoldiers") && idRand(chr.id +"EncGirlMeetSoldiers", 2) == 0)
+							{
+								LAi_SoldierAboutToAsk(chr, false);
+							}
 							else return; //TODO: Посмотреть KZ, если ГГ рядом и не вызывает подозрений, то стражнику не надо возвращаться на пост? (следующий if)
 						}
 						else
@@ -571,7 +576,13 @@ void LAi_SoldierAboutToAsk(ref rSld, bool bFightMode) //HardCoffee TODO: при�
 	LAi_tmpl_SetDialog(rSld, pchar, -1.0);
 }
 
-void GuardCanSeeAgain()
+void LAi_TemporaryBlindGuards() //HardCoffee Это для гвардов, так как они стоят по двое, чтобы 2 раза не доказывать одно и то же
+{
+	TEV.BlindGuards = "1";
+	Lai_MethodDelay("LAi_GuardCanSeeAgain", 10.0 + makefloat(Rand(15)));
+}
+
+void LAi_GuardCanSeeAgain()
 {
     DeleteAttribute(&TEV, "BlindGuards");
 }

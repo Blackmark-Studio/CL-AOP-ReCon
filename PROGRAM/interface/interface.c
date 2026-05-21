@@ -1629,14 +1629,14 @@ int RecalculateVIcon(int curVSize)
 	return makeint(stf(showWindow.aspectRatio) * curVSize);
 }
 
-int RecalculateHIconScaled(int curHSize, float fHtRatio)
+int RecalculateHIconScaled(float curHSize, float fHtRatio)
 {
-	return makeint(stf(showWindow.scale)*curHSize / 1.2 * fHtRatio);
+	return makeint(curHSize * fHtRatio);
 }
 
-int RecalculateVIconScaled(int curVSize, float fHtRatio)
+int RecalculateVIconScaled(float curVSize, float fHtRatio)
 {
-	return makeint(stf(showWindow.scale)*stf(showWindow.aspectRatio)*curVSize / 1.2 * fHtRatio);
+	return makeint(stf(showWindow.aspectRatio) * curVSize * fHtRatio);
 }
 
 string GetVideoFileName(string baseName, bool isLocale)
@@ -2152,15 +2152,33 @@ string GetCurLocationName()
 
 string GetPlayTime()
 {
-	int hours = sti( InterfaceStates.GameTime.hour );
+	int minutes = sti(InterfaceStates.GameTime.hour) * 60 + sti(InterfaceStates.GameTime.min);
+	return "" + minutes;
+}
+
+string ParsePlayTime(string sText)
+{
+	if (HasStr(sText, "hours"))
+	{
+	    return sText; // old format
+	}
+
+	return ParsePlayTime_NewFormat(sText);
+}
+
+string ParsePlayTime_NewFormat(string sText)
+{
+	int minutes = sti(sText);
+	int hours = minutes / 60;
 	int days = hours / 24;
-	hours = hours - days*24;
+	hours = hours % 24;
+	minutes = minutes % 60;
 
 	string sPlayTime = "";
 	if( days>0 ) {
-		sPlayTime = days + "days - ";
+		sPlayTime = days + " " + XI_ConvertString("daysSL") + " ";
 	}
-	sPlayTime += InterfaceStates.GameTime.hour + " hours " + InterfaceStates.GameTime.min + " min.";
+	sPlayTime += hours + " " + XI_ConvertString("hours") + " " + minutes + " "+ XI_ConvertString("min");
 	return sPlayTime;
 }
 

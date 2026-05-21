@@ -328,9 +328,11 @@ void ProcessDialogEvent()
 			LocatorReloadEnterDisable("Villemstad_town", "houseSp5", true);
 			npchar.location = "none";
 			AddQuestRecord("ISS_PoorsMurder", "6");
+			RemoveLandQuestMark_Main(npchar, "ISS_PoorsMurder");
 
 			// возможность забрать ранее отданные предателю деньги
 			sld = CharacterFromID("GiveKeyMan");
+			sld.dialog.currentnode = "PortmansCap_inDeck_over";
 			AddMoneyToCharacter(sld, sti(npchar.quest.price));
 			sld.SaveItemsForDead = true;
 		break;

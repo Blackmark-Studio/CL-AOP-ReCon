@@ -28,3 +28,27 @@ Oui, vraiment, pour la troisième fois...
 Providencia_Tavern_8 {
 Ouais, bon...
 }
+Providencia_Tavern_9 {
+Tu n'as pas vu Hugo dans le coin ?
+}
+Providencia_Tavern_10 {
+Il était là. Des chasseurs de primes anglais sont venus le chercher, mais il a réussi à s'esquiver par la porte de derrière juste à temps.
+}
+Providencia_Tavern_11 {
+Où est-il parti ?
+}
+Providencia_Tavern_12 {
+Mmm... Pour 1 000 pesos, je t'indiquerai le chemin.
+}
+Providencia_Tavern_13 {
+Tiens, voilà ton argent. Alors, où est-il parti ?
+}
+Providencia_Tavern_14 {
+Je n'ai pas autant d'argent sur moi pour l'instant.
+}
+Providencia_Tavern_15 {
+Il a mis le cap sur La Vega, cherche-le là-bas.
+}
+Providencia_Tavern_16 {
+Merci, à la prochaine.
+}

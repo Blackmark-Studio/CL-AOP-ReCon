@@ -578,7 +578,7 @@ int LocationInitSantaCatalina(int n)
 	locations[n].id = "SantaCatalina_townhall";
 	locations[n].id.label = "Townhall";
 	locations[n].filespath.models = "locations\inside\Residence01";
-	locations[n].image = "loading\inside\residence.tga";
+	locations[n].image = "loading\inside\Residence01.tga";
 	//Town sack
 	locations[n].townsack = "SantaCatalina";
 	locations[n].lockWeather = "Inside";

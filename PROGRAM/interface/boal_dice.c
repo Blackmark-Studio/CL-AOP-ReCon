@@ -82,6 +82,9 @@ void InitInterface(string iniName)
 
 	npchar = GetCharacter(sti(pchar.GenQuest.Dice.npcharIdx));
 
+	iMoneyP = sti(pchar.Money); // mitrokosta реальные деньги смотрим только в начале и в конце
+	iMoneyN = sti(npchar.Money);
+
 	int i, iPlayMode;
 	if (iRate < 200) iPlayMode = 1;
 	else if (iRate < 500) iPlayMode = 2;
@@ -175,7 +178,7 @@ void InitInterface(string iniName)
 	CreateString(true,"Beta_WinLose", "", "INTERFACE_ULTRASMALL",COLOR_NORMAL, 530, 555, SCRIPT_ALIGN_LEFT,1.0);
 	iHeroLose = 0;
 	iHeroWin  = 0;
-	iTurnGame = 1;
+	iTurnGame = 0;
 	// новая игра
 	SaveCurrentQuestDateParam("StartGameSession");
 	NewGameBegin(true);
@@ -199,11 +202,11 @@ void Exit()
 	if (!openExit)
 	{
 		PlaySound("uplata");
-		TEV.Gambling.pcharMoney = pchar.money;
-		TEV.Gambling.LoseMoney = sti(TEV.Gambling.LoseMoney) + (sti(TEV.Gambling.pcharMoney) - iMoneyP);
-		AddMoneyToCharacter(pchar, -(sti(pchar.Money) - iMoneyP));
-		AddMoneyToCharacter(npchar, iChest - (sti(npchar.Money) - iMoneyN));
+		TEV.Gambling.LoseMoney = sti(TEV.Gambling.LoseMoney) + (money_i * iRate);
 	}
+
+	AddMoneyToCharacter(pchar, iMoneyP - sti(pchar.Money)); // mitrokosta раздача денег теперь в конце
+	AddMoneyToCharacter(npchar, iMoneyN - sti(npchar.Money));
 
 	TEV.Stats.Gambling.Dice.LoseMoney = sti(TEV.Stats.Gambling.Dice.LoseMoney) + sti(TEV.Gambling.LoseMoney);
 	TEV.Stats.Gambling.Dice.WinMoney = sti(TEV.Stats.Gambling.Dice.WinMoney) + sti(TEV.Gambling.WinMoney);
@@ -213,7 +216,7 @@ void Exit()
 	TEV.Gambling.Diff.Plus = "";
 	TEV.Gambling.DiffAll.Plus = "";
 
-	if (CheckCharacterPerk(pchar, "HawkEye"))
+	if (GetOfficersPerkUsing(pchar, "HawkEye", true))
 	{
 		Log_Info(XI_ConvertString("BoalGameDiceWin") + ": " + iHeroWin + " (" + GetStrSmallRegister(XI_ConvertString("Total")) + " " + (Statistic_AddValue(Pchar, "GameDice_Win", 0) + iHeroWin) + ")");
 		Log_Info(XI_ConvertString("BoalGameLose") + ": " + iHeroLose + " (" + GetStrSmallRegister(XI_ConvertString("Total")) + " " + (Statistic_AddValue(Pchar, "GameDice_Lose", 0) + iHeroLose) + ")");
@@ -294,7 +297,6 @@ void ProcessCommandExecute()
 					dir_i = -dir_i_start;
 					dir_i_start = dir_i;
 					ClearDiceOnTable();
-					iTurnGame++;
 					NewGameBegin(true);
 				}
 				else
@@ -470,7 +472,7 @@ void RedrawDeck(bool _newGame, bool _clearDice)
 	{
 		for (i=55; i>=0; i--)
 		{
-			CreateImage("Money_"+i,"","", 0, 0, 0, 0);
+			CreateImage("Money_" + i ,"", "", 0, 0, 0, 0);
 		}
 		money_i = 0; // индекс монетки
 		moneyOp_i = 0;
@@ -479,28 +481,15 @@ void RedrawDeck(bool _newGame, bool _clearDice)
 	// место под кубики
 	if (_clearDice)
 	{
-		for(i = 1; i <= 5; i++)
+		for (i = 1; i <= 5; i++)
 		{
 			SetNodeUsing("HeroDice" + i, false);
 			SetNodeUsing("CompDice" + i, false);
 		}
 	}
-	iMoneyP = sti(pchar.Money);
-	iMoneyN = sti(npchar.Money);
+
 	ShowMoney();
-
-	SetNextTip();
 	BetaInfo();
-}
-
-void SetNextTip()
-{
-	if (dir_i == 1)
-	{
-	}
-	else
-	{
-	}
 }
 
 void BetaInfo()
@@ -593,6 +582,7 @@ void ShowMoney()
 
 void NewGameBegin(bool _newGame)
 {
+	iTurnGame++;
 	InitDiceState();
 	RedrawDeck(_newGame, true); // новая игра
 	bStartGame = 0;
@@ -618,27 +608,21 @@ void NewGameBegin(bool _newGame)
 // деньги в карман
 void EndGameCount(int who)
 {
-	TEV.Gambling.pcharMoney = pchar.Money;
 	//openExit = true;
 	if (who == 1) // ГГ
 	{
-		TEV.Gambling.WinMoney = sti(TEV.Gambling.WinMoney) + (iChest - (sti(TEV.Gambling.pcharMoney) - iMoneyP));
-		AddMoneyToCharacter(pchar, iChest - (sti(pchar.Money) - iMoneyP));
-		AddMoneyToCharacter(npchar,	 -(sti(npchar.Money) - iMoneyN));
+		iMoneyP += iChest;
+		TEV.Gambling.WinMoney = sti(TEV.Gambling.WinMoney) + (iChest - (money_i * iRate));
 	}
-	if (who == -1)
+	else if (who == -1)
 	{
-		TEV.Gambling.LoseMoney = sti(TEV.Gambling.LoseMoney) + (sti(TEV.Gambling.pcharMoney) - iMoneyP);
-		AddMoneyToCharacter(pchar, -(sti(pchar.Money) - iMoneyP));
-		AddMoneyToCharacter(npchar, iChest - (sti(npchar.Money) - iMoneyN));
+		iMoneyN += iChest;
+		TEV.Gambling.LoseMoney = sti(TEV.Gambling.LoseMoney) + (iChest - (moneyOp_i * iRate));
 	}
-	if (who == 0)// ничья
+	else if (who == 0)// ничья
 	{
-		AddMoneyToCharacter(pchar, -(sti(pchar.Money) - iMoneyP));
-		AddMoneyToCharacter(npchar, -(sti(npchar.Money) - iMoneyN));
+		//
 	}
-	iMoneyP = sti(pchar.Money);
-	iMoneyN = sti(npchar.Money);
 }
 
 // проверить деньги для след игры
@@ -1238,7 +1222,7 @@ void ContinueGame()
 	{
 		dir_i		= -dir_i_start;
 		dir_i_start = dir_i;
-		NewGameBegin(false);
+		NewGameBegin(true);
 	}
 	else
 	{
@@ -1375,7 +1359,7 @@ void CompTurn()
 		}
 
 		// супер жухло!!!!! -->
-		if (sti(DiceState.Comp.Result.Type) > sti(DiceState.Hero.Result.Type) && (GetCharacterSkillToOld(pchar, SKILL_FORTUNE) + CheckCharacterPerk(pchar, "HawkEye")) < rand(12) && rand(4) > 1)
+		if (sti(DiceState.Comp.Result.Type) > sti(DiceState.Hero.Result.Type) && (GetCharacterSkillToOld(pchar, SKILL_FORTUNE) + GetOfficersPerkUsing(pchar, "HawkEye", true)) < rand(12) && rand(4) > 1)
 		{
 			//navy --> счетчик жульничеств
 			if (!CheckAttribute(npchar, "Quest.DiceCheats")) npchar.Quest.DiceCheats = 0;

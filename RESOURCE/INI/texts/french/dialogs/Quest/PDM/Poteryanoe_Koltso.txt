@@ -263,8 +263,11 @@ Poteryanoe_Koltso_69_f {
 La vie ne s’arrête pas ici, madame. Je pense que vous devriez retrouver vos proches—je suis certain qu’ils vous manquent beaucoup. Adieu.
 }
 Poteryanoe_Koltso_70 {
-Attendez, attendez, @<GetAddress_Form>. Vous avez bien mérité une récompense. Tenez, prenez 5 000 pièces et 10 diamants. Ils sont à vous maintenant.
+Attendez, attendez, @<GetAddress_Form>. Vous avez bien mérité une récompense. Prenez tout l'argent que j'ai sur moi et tous mes bijoux. Ils sont à vous maintenant. Merci, capitaine. Merci...
 }
 Poteryanoe_Koltso_71 {
 Merci beaucoup, madame.
+}
+Poteryanoe_Koltso_72 {
+Cette bague appartient à une très vieille femme qui a perdu son fils unique... Une très malheureuse vieille femme qui est devenue folle et qui te rappelle ta mère. Et cette bague a été prise sur le corps mort de son fils. Je veux juste la rendre à sa véritable propriétaire. Penses-y par toi-même, une telle bague magique te rendra-t-elle heureux ?
 }

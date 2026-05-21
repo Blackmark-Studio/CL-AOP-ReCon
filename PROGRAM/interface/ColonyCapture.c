@@ -748,7 +748,7 @@ void TransactionOK()
 	if (CheckOfficer("treasurer"))
 		iTIme /= 2;
 	
-	if (GetOfficersPerkUsing(refCharacter, "QuickCalculation"))
+	if (GetOfficersPerkUsing(refCharacter, "QuickCalculation", false))
 		iTIme /= 2;
 	
 	WaitDate("", 0, 0, 0, 0, iTIme);

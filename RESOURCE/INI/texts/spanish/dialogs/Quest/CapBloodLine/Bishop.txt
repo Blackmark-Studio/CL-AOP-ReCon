@@ -1405,7 +1405,7 @@ Bishop_468 {
 Hace poco vino a verme un médico enviado por el comprador... parece que el trato está a punto de cerrarse.
 }
 Bishop_469 {
-Cálmate, Nicholas. El oro destinado a comprarte ya me fue entregado como herencia. Mañana por la noche vienes con nosotros.
+Cálmate, Nicholas. El dinero destinado a comprarte ya me fue entregado como herencia. Mañana por la noche vienes con nosotros.
 }
 Bishop_470 {
 ¡No puedo esperar a que llegue mañana por la noche!

@@ -391,3 +391,41 @@ void GetNearestQuestShipLocatorByLocation(string sLocId)
         }
     }
 }
+
+void CommonGeneratorConvoyAndPassenger(ref _NPChar, string _sCharID)
+{
+	dialogDisable = true;
+	string sTemp, sQuestGiver = "Tavern";
+
+	if (StrEndsWith(_NPChar.id, "_PortMan"))
+		sQuestGiver = "PortOffice";
+
+	if (GetCharacterIndex(_sCharID) >= 0)
+		ChangeCharacterAddressGroup(characterFromID(_sCharID), "none", "", "");
+
+	if (!CheckAttribute(&TEV, "ArtOfDeals." + sQuestGiver + ".Colony"))
+		TEV.ArtOfDeals.(sQuestGiver).Colony = "Panama";
+
+	sTemp = TEV.ArtOfDeals.(sQuestGiver).Colony;
+
+	if (_sCharID == "QuestTrader")
+	{
+		pchar.quest.destination = FindDestinationCity(_NPChar, sti(TEV.ArtOfDeals.(sQuestGiver).Convoy) + 1, sTemp);
+		TEV.ArtOfDeals.(sQuestGiver).Colony = TEV.ArtOfDeals.(sQuestGiver).Colony + "," + pchar.quest.destination;
+		pchar.ConvoyQuest.City = _NPChar.city;
+		AddDialogExitQuest("prepare_for_convoy_quest");
+	}
+	else if (_sCharID == "QuestPassanger")
+	{
+		TEV.GenQuest_DestinationCity = FindDestinationCity(_NPChar, sti(TEV.ArtOfDeals.(sQuestGiver).Passenger) + 1, sTemp);
+		pchar.GenQuest.GetPassenger_City = _NPChar.city;
+		TEV.ArtOfDeals.(sQuestGiver).Colony = TEV.ArtOfDeals.(sQuestGiver).Colony + "," + TEV.GenQuest_DestinationCity;
+		AddDialogExitQuest("prepare_for_passenger_quest");
+	}
+
+	sTemp = "work_date";
+	if (sQuestGiver == "PortOffice")
+		sTemp += "_PU";
+
+	SaveCurrentNpcQuestDateParam(_NPChar, sTemp);
+}

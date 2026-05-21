@@ -590,7 +590,7 @@ int LocationInitBarbados(int n)
     locations[n].id = "Bridgetown_townhall";
     locations[n].id.label = "Townhall";
     locations[n].filespath.models = "locations\inside\Residence01";
-    locations[n].image = "loading\inside\residence.tga";
+    locations[n].image = "loading\inside\Residence01.tga";
     //Town sack
     locations[n].townsack = "Bridgetown";
     locations[n].lockWeather = "Inside";
@@ -962,7 +962,7 @@ int LocationInitBarbados(int n)
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     locations[n].id = "Bridgetown_Hut1";
     locations[n].id.label = "House";
-    locations[n].image = "loading\inside\littlehut1.tga";
+    locations[n].image = "loading\inside\littlehut.tga";
     //Town sack
     locations[n].townsack = "Bridgetown";
     locations[n].islandId = "Barbados";
@@ -1318,7 +1318,7 @@ int LocationInitBarbados(int n)
     locations[n].id = "Bridgetown_Plantation_S2";
     locations[n].filespath.models = "locations\inside\Hut1_KNS";
     locations[n].id.label = "House";
-    locations[n].image = "loading\inside\littlehut1.tga";
+    locations[n].image = "loading\inside\littlehut.tga";
     //Town sack
     locations[n].townsack = "Bridgetown";
     locations[n].islandId = "Barbados";
@@ -1350,10 +1350,10 @@ int LocationInitBarbados(int n)
     locations[n].reload.l1.label = "Plantation";
     n = n + 1;
 
-    ///////////////////////// Бытовка /////////////////////////
+    ///////////////////////// Домик /////////////////////////
     locations[n].id = "Bridgetown_Plantation_G1";
     locations[n].id.label = "House";
-    locations[n].image = "loading\inside\mediumhouse10.tga";
+    locations[n].image = "loading\inside\mediumhouse05.tga";
     //Town sack
     locations[n].townsack = "Bridgetown";
     locations[n].islandId = "Barbados";
@@ -1389,10 +1389,10 @@ int LocationInitBarbados(int n)
     locations[n].reload.l1.label = "Plantation";
     n = n + 1;
 
-    ///////////////////////// Бытовка /////////////////////////
+    ///////////////////////// Домик /////////////////////////
     locations[n].id = "Bridgetown_Plantation_G2";
     locations[n].id.label = "House";
-    locations[n].image = "loading\inside\mediumhouse10.tga";
+    locations[n].image = "loading\inside\mediumhouse09.tga";
     //Town sack
     locations[n].townsack = "Bridgetown";
     locations[n].islandId = "Barbados";
@@ -1432,7 +1432,7 @@ int LocationInitBarbados(int n)
     locations[n].id = "Bridgetown_Plantation_G3";
     locations[n].filespath.models = "locations\inside\Hut5";
     locations[n].id.label = "House";
-    locations[n].image = "loading\inside\hibara.tga";
+    locations[n].image = "loading\inside\Hut5.tga";
     //Town sack
     locations[n].townsack = "Bridgetown";
     locations[n].islandId = "Barbados";
@@ -1463,7 +1463,7 @@ int LocationInitBarbados(int n)
     locations[n].id = "Bridgetown_Plantation_G4";
     locations[n].filespath.models = "locations\inside\Hut4";
     locations[n].id.label = "House";
-    locations[n].image = "loading\inside\littlehut1.tga";
+    locations[n].image = "loading\inside\Hut4.tga";
     //Town sack
     locations[n].townsack = "Bridgetown";
     locations[n].islandId = "Barbados";
@@ -1493,7 +1493,7 @@ int LocationInitBarbados(int n)
     locations[n].id = "Bridgetown_Plantation_G5";
     locations[n].filespath.models = "locations\inside\Hut4";
     locations[n].id.label = "House";
-    locations[n].image = "loading\inside\littlehut1.tga";
+    locations[n].image = "loading\inside\Hut4.tga";
     //Town sack
     locations[n].townsack = "Bridgetown";
     locations[n].islandId = "Barbados";
@@ -1524,7 +1524,7 @@ int LocationInitBarbados(int n)
     locations[n].id = "Bridgetown_Plantation_G6";
     locations[n].filespath.models = "locations\inside\Hut2";
     locations[n].id.label = "House";
-    locations[n].image = "loading\inside\hibara.tga";
+    locations[n].image = "loading\inside\Hut2.tga";
     //Town sack
     locations[n].townsack = "Bridgetown";
     locations[n].islandId = "Barbados";
@@ -1560,7 +1560,7 @@ int LocationInitBarbados(int n)
     locations[n].id = "Bridgetown_Plantation_G7";
     locations[n].filespath.models = "locations\inside\Hut5";
     locations[n].id.label = "House";
-    locations[n].image = "loading\inside\hibara.tga";
+    locations[n].image = "loading\inside\Hut5.tga";
     //Town sack
     locations[n].townsack = "Bridgetown";
     locations[n].islandId = "Barbados";
@@ -1593,7 +1593,7 @@ int LocationInitBarbados(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Plantation_F1";
 	locations[n].id.label = "House";
-	locations[n].image = "loading\inside\largehouse02.tga";
+	locations[n].image = "loading\inside\mediumhouse11.tga";
 	//Town sack
     locations[n].townsack = "Bridgetown";
     locations[n].islandId = "Barbados";
@@ -1732,7 +1732,7 @@ int LocationInitBarbados(int n)
 
     locations[n].id = "Mayak2_Lighthouseroom";
     locations[n].id.label = "House";
-    locations[n].image = "loading\inside\mediumhouse10.tga";
+    locations[n].image = "loading\inside\mediumhouse05.tga";
     //Town sack
     locations[n].townsack = "Bridgetown";
     locations[n].islandId = "Barbados";

@@ -28,3 +28,36 @@ Alright then... see you.
 Beliz_Citizen_9 {
 Then another question.
 }
+Beliz_Citizen_10 {
+Excuse me, have you seen Merry Carla?
+}
+Beliz_Citizen_11 {
+Do you happen to know where Merry Carla is?
+}
+Beliz_Citizen_12 {
+@<RandPhraseSimple>
+}
+Beliz_Citizen_13 {
+I'm telling you, @<GetAddress_Form>—that witch has bewitched everyone in this town! All decent folk should go straight to the governor and tell him she's an evil witch who should be burned at a slow fire!
+}
+Beliz_Citizen_14 {
+Carla? What do you know about her?
+}
+Beliz_Citizen_15 {
+Me? I know she is a source of deadly sin for every man in this town! We must put an end to this debauchery!
+}
+Beliz_Citizen_16 {
+The governor ordered me to seize this witch—he wants to question her personally. Do you know where I can find her?
+}
+Beliz_Citizen_17_m {
+She usually brings her victims to the tavern. God bless you, Captain! Go there and drag that snake out of her nest! You are a brave man, @<GetAddress_Form>. It's a disgrace to our town that this witch walks around doing whatever she pleases!
+}
+Beliz_Citizen_17_f {
+She usually brings her victims to the tavern. God bless you, Captain! Go there and drag that snake out of her nest! You are a brave woman, @<GetAddress_Form>. It's a disgrace to our town that this witch walks around doing whatever she pleases!
+}
+Beliz_Citizen_18 {
+We will take care of this witch, don't you worry.
+}
+Beliz_Citizen_19 {
+Right. So you're the only man in town who doesn't use Carla's services? Oh, you poor soul! Now it's clear why you lack a sense of humor. Ha-ha. But I must cut our conversation short—goodbye.
+}

@@ -83,7 +83,7 @@ FortFrance_Tavern_24 {
 Que ótimo, mas eu preciso de apenas uma garrafa. Quanto você quer por ela?
 }
 FortFrance_Tavern_25 {
-Ah, @<GetAddress_Form>, tenho certeza de que você vai apreciar o verdadeiro valor desse néctar divino! Você pode levar uma garrafa do meu vinho envelhecido e requintado por apenas 200 piastras!
+Ah, @<GetAddress_Form>, tenho certeza de que você vai apreciar o verdadeiro valor desse néctar divino! Você pode levar uma garrafa do meu vinho envelhecido e requintado por apenas 700 piastras!
 }
 FortFrance_Tavern_26 {
 Vou levar o vinho, @<npchar>. Mas com esses preços, você não vai conseguir muitos clientes.
@@ -101,7 +101,7 @@ FortFrance_Tavern_30 {
 Não, não quero. E espero que alguém tão espirituoso quanto você consiga perceber a ironia da situação—estou comprando esta garrafa de vinho caro e refinado para um simples soldado francês. Adeus, @<npchar>.
 }
 FortFrance_Tavern_31 {
-Te enganar? Heh-heh-heh, @<GetAddress_Form>, você só pode estar brincando. Claro, na França você compraria uma garrafa de Borgonha por 200 piastras. Mas Martinique não fica na França, não é? Heh-heh-heh!
+Te enganar? Heh-heh-heh, @<GetAddress_Form>, você só pode estar brincando. Claro, na França você compraria uma garrafa de Borgonha por 700 piastras. Mas Martinique não fica na França, não é? Heh-heh-heh!
 }
 FortFrance_Tavern_32 {
 Me dê esse maldito vinho e, pelo amor de Deus, pare com essas risadinhas!
@@ -122,17 +122,62 @@ FortFrance_Tavern_36 {
 Isso é a maior bobagem... Espere! Você pode encher essas garrafas de vinho vazias com rum do barril! Pronto! Nenhum problema...
 }
 FortFrance_Tavern_37 {
-De fato, você é quase um gênio, capitão. Tem toda razão, eu posso fazer isso... Mas espero que entenda que são serviços exclusivos, especiais... a garrafa é lavada e seca à mão, veja bem... Posso vender rum engarrafado para meu cliente por... 200 moedas! Heh-heh-heh!
+De fato, você é quase um gênio, capitão. Tem toda razão, eu posso fazer isso... Mas espero que entenda que são serviços exclusivos, especiais... a garrafa é lavada e seca à mão, veja bem... Posso vender rum engarrafado para meu cliente por... 300 moedas! Heh-heh-heh!
 }
 FortFrance_Tavern_38 {
-Você perdeu o juízo, @<npchar>. 200 moedas por rum barato? De jeito nenhum! Até logo!
+Você perdeu o juízo, @<npchar>. 300 moedas por rum barato? De jeito nenhum! Até logo!
 }
 FortFrance_Tavern_39 {
-Muito bem, então! Você realmente me fez rir, seu malandro. Aqui está o seu dinheiro. Entregue o rum. Você com certeza merece o ouro.
+Muito bem, então! Você realmente me fez rir, seu malandro. Aqui está o seu dinheiro. Entregue o rum.
 }
 FortFrance_Tavern_40 {
-Obrigado, @<GetAddress_Form>. Só um instante.\nAqui está seu barril de rum, dividido em DUAS garrafas, capitão. Até amarrei com fitas cor-de-rosa só pra você... Ah, heh-heh-heh...
+Obrigado, @<GetAddress_Form>. Espere só um instantinho\nAqui está sua garrafa de rum, Capitão. Talvez eu devesse ter amarrado com fitinhas cor-de-rosa... Ah, he-he-he..
 }
 FortFrance_Tavern_41 {
 Cuidado, @<npchar>, um dia desses você ainda vai morrer de tanto rir. Acho que, se eu não for agora, é exatamente isso que vai acontecer comigo. Adeus.
+}
+FortFrance_Tavern_42 {
+Jerome, eu vim tratar daquela bebida que você vende para os guardas...
+}
+FortFrance_Tavern_43 {
+Escute, Jerome, você está vendo que eu quero dar um presente para outra pessoa. Faça um desconto, afinal você é um bom sujeito!
+}
+FortFrance_Tavern_44 {
+Eu não tenho dinheiro nem para a pinga mais barata agora, quanto mais para o seu vinho. Passo mais tarde.
+}
+FortFrance_Tavern_45 {
+Heh-heh-heh! O senhor sim sabe como convencer alguém, capitão. Que seja... Você me pegou... Vou deixar a minha ganância de lado, afinal eu sou um bom sujeito! Heh-heh-heh! Só para você, faço a garrafa por 450 piastras, mas não vá dar com a língua nos dentes para a guarda local! Heh-heh-heh!
+}
+FortFrance_Tavern_46 {
+Agora sim estamos falando a mesma língua, Jerome. Fechado!
+}
+FortFrance_Tavern_47 {
+Infelizmente não tenho tanto dinheiro, Jerome. Voltaremos a este assunto mais tarde.
+}
+FortFrance_Tavern_48 {
+Para quem?.. Ah, você está falando daqueles coitados recém-chegados da Ordem de Malta? Heh-heh-heh... Com um calor insuportável desses, vinho comum ou rum certamente não vão ajudá-los — só vão fazer com que cozinhem no sol mais rápido. Heh-heh-heh...
+}
+FortFrance_Tavern_49 {
+É verdade... Mas então eu não entendo mais nada. Eles recusaram categoricamente o vinho e o rum comuns, exigindo justamente a sua bebida. Qual é o sentido disso?
+}
+FortFrance_Tavern_50 {
+Heh-heh-heh! E isso é tudo porque eu tenho a minha própria bebida especial, que sacia a sede e recupera as energias. Chama-se Sangaree. E todos os guardas franceses daqui são loucos por essa maravilhosa bebida. Heh-heh-heh.\nE aqueles dois... Bem, pelo visto, estão tentando copiar a minha receita, só que eles não conhecem a técnica correta! Heh-heh-heh...
+}
+FortFrance_Tavern_51 {
+Escute, Jerome. Já que eu tive a sorte de deixar uma boa quantia de dinheiro neste balcão recentemente, quem sabe não podemos chegar a um acordo amigável? Seria ótimo se, como agradecimento, você compartilhasse a receita do seu 'Sangaree'. Prometo não repassar para os guardas e usar apenas para fins pessoais.
+}
+FortFrance_Tavern_52 {
+Argh! Considerando o quanto foi pago pelo seu álcool — esta receita deveria vir gravada para mim em uma barra de ouro. Vá destilando logo como exatamente você mistura essa sua beberagem! Se não, eu vou contar para o comandante da Ordem de Malta que você, engraçadinho, está embriagando os soldados dele em pleno posto de serviço!
+}
+FortFrance_Tavern_53 {
+Estou gostando cada vez mais do senhor! Só me prometa que não vai abrir uma birosca com essa bebida bem na frente da minha. Heh-heh-heh.\nTudo bem, que assim seja! O segredo todo está nas proporções certas. Heh-heh-heh. Guarde aí: duas partes de vinho tinto gelado para uma parte de rum forte... Quer saber, eu mesmo vou escrever tudo para você! Heh-heh-heh... Só um momento.\nAqui, pegue logo! O principal é servir bem gelado! Heh-heh-heh!
+}
+FortFrance_Tavern_54 {
+Agora sim. Isso vai me ser muito útil! Obrigado pela confiança, Jerome.
+}
+FortFrance_Tavern_55 {
+Fale baixo, seu louco! Para que vir com ameaças logo de cara? Está bem, está bem, engula essa receita. Vou escrever tudo agora... Vejamos,\ne pegar duas garrafas de vinho gelado com uma porção de rum\nAqui, pegue logo. E leve o seu dinheiro de volta, só não grite desse jeito na taverna inteira!
+}
+FortFrance_Tavern_56 {
+Assim está melhor. É um prazer fazer negócios com você, Jerome.
 }

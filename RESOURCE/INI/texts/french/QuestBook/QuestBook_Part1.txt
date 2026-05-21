@@ -172,7 +172,7 @@ Pir_Line_3_KillLoy.13 {Encore une poursuite. Une fois de plus. Au moins, cette f
 Pir_Line_3_KillLoy.14
 {
 Il semble que j’aie retrouvé la piste de Low. D’après les rumeurs, des barges, goélettes, luggers et sloops disparaissent près de Cumana. On accuse une certaine brigantine. J’ai le sentiment que c’est Low—le mode opératoire est trop familier. Comme un chacal, il s’en prend à plus faible que lui.
-On dirait que je vais devoir attirer cette hyène hors de sa tanière. Pour cela, il me faudra prendre la mer près de Cumana à bord d’un lugger ou d’un sloop et patrouiller un moment. J’espère vraiment que Low mordra à l’hameçon et attaquera...
+On dirait que je vais devoir attirer cette hyène hors de sa tanière. Pour cela, je dois prendre la mer près de Cumana sur un navire de classe similaire et essayer de naviguer seul. J’espère vraiment que Low mordra à l’hameçon et attaquera...
 }
 Pir_Line_3_KillLoy.15
 {
@@ -644,7 +644,7 @@ TheStarsAlignedISS.2 {Merde ! Quelqu’un a attaqué la mine... Depuis combien d
 TheStarsAlignedISS.3 {
 Merde ! Après le coup de feu de Teaser à la cave, quelque chose a explosé... Il n’y a personne autour... Depuis combien de temps suis-je allongé ici ? J’ai la tête qui éclate... Le corps de l’aubergiste est encore chaud, donc ça ne fait pas si longtemps. On dirait que toute la ville est réveillée dehors—le vacarme est incroyable. Il faut que je sorte dans la rue et que je voie quoi faire ensuite.}
 TheStarsAlignedISS.4 {
-J’ai à peine la force d’écrire ces lignes. Maudits marrons ! Nous avons échappé de justesse à la mort… Et pourtant, nous nous en sommes sortis vivants et indemnes. Même si Teaser avait l’air bien mal en point la dernière fois que je l’ai vu. Pas seulement physiquement, mais mentalement aussi. Il se prend pour quelqu’un d’autre et parle comme un soldat. Je devrais aller le voir dans la salle commune.}
+J’ai à peine la force d’écrire ces lignes. Maudits marrons ! Nous avons échappé de justesse à la mort… Et pourtant, nous nous en sommes sortis vivants et indemnes. Même si Teaser avait l’air bien mal en point la dernière fois que je l’ai vu. Pas seulement physiquement, mais mentalement aussi. Il se prend pour quelqu’un d’autre et parle comme un soldat.}
 TheStarsAlignedISS.5 {
 Teaser est dans un sale état, mais au moins il est vivant et pas enchaîné par la Compagnie néerlandaise des Indes occidentales.}
 
@@ -737,7 +737,7 @@ ISS_MainLine.5 {Il est temps d’aller voir le barman — je pense qu’il est e
 ISS_MainLine.6 {Le propriétaire de la taverne, Hill Brynner, m’a donné rendez-vous après minuit dans sa cave improvisée. Il s’agit de l’une des cabines de ce même navire ; pour m’y rendre, je dois sortir sur le pont et me diriger vers la poupe.}
 ISS_MainLine.7 {Hill Brynner m’a envoyé vers le flûte 'Fernando Diffindur', qui était autrefois un visiteur régulier chez Teaser Dan. D’après le tenancier de la taverne, c’est là que je pourrais trouver de quoi prouver la véracité de mes propos.}
 ISS_MainLine.8 {Je dois retrouver un certain André Labor, charpentier, dans la Ville. D'après Hill Brunner, c'est lui qui a aidé Teaser Dan à construire l'embarcation qui lui a permis de rejoindre le continent.}
-ISS_MainLine.9 {Je @<sSex> avec lui. André m'a donné rendez-vous dans la cabine du corvette 'Protector'.}
+ISS_MainLine.9 {J'ai trouvé le charpentier et j'ai discuté prudemment avec lui. André m'a donné rendez-vous dans la cabine du corvette 'Protector'.}
 ISS_MainLine.10 {Ce vaurien d’André Labor m’a amené un milicien pour me parler ! Je vais devoir dégainer mon arme. Fichu sort !}
 ISS_MainLine.11
 {
@@ -1030,7 +1030,7 @@ LSC_Ring {Le secret de la 'Santa Lucia'}
 LSC_Ring.1
 {
 Malcolm Fawn, un ancien contrebandier, m’a proposé une expédition vers l’anneau extérieur des navires, où il a repéré une autre pinasse “encore intacte” et suggéré qu’on fouille ses compartiments à la recherche de trésors. Le hic, c’est que la cale du navire est envahie par des “crabes géants”, et Malcolm en a une peur bleue. Ma mission : débarrasser le navire de ces crabes. Quoi de plus simple ? Nous partagerons tout ce que nous trouverons à parts égales.
-L’expédition est prévue pour demain à 8h du matin. Je dois me présenter sur la “pont incliné” — l’épave à demi submergée derrière Port-au-Prince. C’est là que commencera notre périple vers l’anneau extérieur.
+L’expédition est prévue pour demain à 8h du matin. Je dois me présenter sur la “pont incliné” — l’épave à demi submergée derrière San Augustine. C’est là que commencera notre périple vers l’anneau extérieur.
 }
 LSC_Ring.2 {J'ai mis trop de temps, et Malcolm Fawn, ayant perdu espoir de m'attendre, est parti. Hélas, l'expédition vers l'anneau extérieur est annulée...}
 LSC_Ring.3 {Notre aventure commence ! Nous partons en mer vers l’anneau extérieur. Malcolm me guidera jusqu’à la pinasse, mais il faudra que je me débrouille seul avec les crabes—Fawn ne pourra rien pour moi ici.}

@@ -143,13 +143,13 @@ Minentown_mayor_41 {
 Ich kann ihn euch nicht aushändigen... Selbst wenn es der Befehl Seiner Exzellenz ist, da er sich außerhalb befindet...
 }
 Minentown_mayor_42 {
-Keine Sorge – ich brauche ihn nur, um mir den Ort des Rituals zu zeigen.
+Keine Sorge - ich brauche ihn nur, um mir den Ort des Rituals zeigen zu lassen.
 }
 Minentown_mayor_43 {
-Ich kann ihn euch nicht aushändigen... Selbst wenn es der Befehl Seiner Exzellenz ist, da er sich außerhalb befindet...
+Und wozu brauchen Sie das?
 }
 Minentown_mayor_44 {
-Keine Sorge – ich brauche ihn nur, um mir den Ort des Rituals zu zeigen. Er muss zuerst erledigt werden, sonst gehen die Einstürze weiter.
+Die Sache ist die, dass dieser Ritualort zuerst gereinigt werden muss, sonst werden die Einstürze weitergehen.
 }
 Minentown_mayor_45 {
 Ich glaube nicht wirklich an all diese magischen Machenschaften, aber wenn ihr das sagt, dann soll es so sein.

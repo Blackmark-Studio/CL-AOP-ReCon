@@ -185,10 +185,10 @@ Jackman_45 {
 Alors c’est comme ça... Pas la meilleure des nouvelles... Comment cela est-il arrivé?
 }
 Jackman_46_m {
-Je l’ai tué dans la résidence de Morgan... Vous voyez, c’est une histoire plutôt fâcheuse. Sur ordre de Morgan, je me suis occupé de John Avery, mais il s’est avéré qu’il faisait partie des hommes de confiance de Morgan.
+Je l’ai tué dans la résidence de Morgan... Vous voyez, c’est une histoire plutôt fâcheuse. Sur ordre de Goodly, je me suis occupé de John Avery, mais il s’est avéré qu’il faisait partie des hommes de confiance de Morgan.
 }
 Jackman_46_f {
-Je l’ai tué dans la résidence de Morgan... Vous voyez, c’est une histoire plutôt fâcheuse. Sur ses ordres, je me suis occupé de John Avery, mais il s’est avéré qu’il faisait partie des hommes de confiance de Morgan.
+Je l’ai tué dans la résidence de Morgan... Vous voyez, c’est une histoire plutôt fâcheuse. Sur ordre de Goodly, je me suis occupé de John Avery, mais il s’est avéré qu’il faisait partie des hommes de confiance de Morgan.
 }
 Jackman_47 {
 Avery est mort lui aussi, c’est ça?

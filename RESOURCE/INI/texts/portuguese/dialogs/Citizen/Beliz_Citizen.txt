@@ -28,3 +28,36 @@ Tudo bem então... até mais.
 Beliz_Citizen_9 {
 Então, outra pergunta.
 }
+Beliz_Citizen_10 {
+Com licença, você viu a Carla Alegre?
+}
+Beliz_Citizen_11 {
+E você não sabe onde está a Carla Alegre?
+}
+Beliz_Citizen_12 {
+@<RandPhraseSimple>
+}
+Beliz_Citizen_13 {
+Eu lhe digo, @<GetAddress_Form> — essa bruxa enfeitiçou todo mundo nesta cidade! Todas as pessoas de bem deveriam ir direto ao governador e dizer a ele que ela é uma bruxa má e que deveria ser queimada em fogo brando!
+}
+Beliz_Citizen_14 {
+Carla? O que você sabe sobre ela?
+}
+Beliz_Citizen_15 {
+Eu? Eu sei que ela é uma fonte de pecado mortal para qualquer homem nesta cidade! Devemos pôr fim a essa libertinagem!
+}
+Beliz_Citizen_16 {
+O governador me ordenou capturar essa bruxa — ele quer interrogá-la pessoalmente. Você sabe onde posso encontrá-la?
+}
+Beliz_Citizen_17_m {
+Ela costuma levar suas vítimas para a taverna. Deus o abençoe, capitão! Vá até lá e tire essa cobra do ninho! Você é um homem corajoso, @<GetAddress_Form>. É uma vergonha para a nossa cidade que essa bruxa ande por aí fazendo o que bem entende!
+}
+Beliz_Citizen_17_f {
+Ela costuma levar suas vítimas para a taverna. Deus a abençoe, capitão! Vá até lá e tire essa cobra do ninho! Você é uma mulher corajosa, @<GetAddress_Form>. É uma vergonha para a nossa cidade que essa bruxa ande por aí fazendo o que bem entende!
+}
+Beliz_Citizen_18 {
+Nós cuidaremos dessa bruxa, não tenha dúvida.
+}
+Beliz_Citizen_19 {
+Ora, ora. Então você é o único homem na cidade que não usa os serviços da Carla? Ah, coitado! Agora está claro por que você não tem senso de humor. Ha-ha. Mas preciso interromper nossa conversa — adeus.
+}

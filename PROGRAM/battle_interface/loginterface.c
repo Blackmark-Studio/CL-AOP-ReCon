@@ -12,7 +12,8 @@ bool   bYesBoardStatus;
 string g_ActiveActionName;
 
 #define NOTIFICATIONS_SPEED 0.03
-object Notifications[9];
+#define MAX_NOTIFICATIONS 9
+object Notifications[MAX_NOTIFICATIONS];
 int notificationsQty = -1;
 
 #event_handler("blieGetMsgIconRoot","BI_GetMsgIconRoot");
@@ -37,7 +38,7 @@ void InitLogInterface()
 	LayerAddObject(SEA_EXECUTE,&ILogAndActions,-257);
 	LayerAddObject(SEA_REALIZE,&ILogAndActions,-1);
 
-	for(int i = 0; i < 9; i++)
+	for(int i = 0; i < MAX_NOTIFICATIONS; i++)
 	{
 		DeleteAttribute(&Notifications[i],"printing");
 		DeleteAttribute(&Notifications[i],"str");
@@ -281,6 +282,11 @@ void Notification(string strLog, string ability)
 		case "Pinctada": IconIndex = 129; break;
 		case "BigPearl": IconIndex = 130; break;
 		case "SmallPearl": IconIndex = 131; break;
+		case "migraine_potion": IconIndex = 132; break;
+		case "zingiber": IconIndex = 133; break;
+		case "matricaria": IconIndex = 134; break;
+		case "ginseng": IconIndex = 135; break;
+
 
 		case "Powder": IconIndex = 144; break;
         case "Balls": IconIndex = 145; break;
@@ -398,7 +404,7 @@ void Notification(string strLog, string ability)
 	    IconIndex = 239;
 	}
 
-	if(notificationsQty < 8)
+	if(notificationsQty < MAX_NOTIFICATIONS - 1)
 	{
 		notificationsQty++;
 		Notifications[notificationsQty].str = strLog;
@@ -418,7 +424,7 @@ void PushNotification()
 			if(!CheckAttribute(&Notifications[i],"printing"))
 			{
 				Notifications[i].printing = true;
-				Pic_Info( Notifications[i].str, makeint(Notifications[i].index));
+				Pic_Info(Notifications[i].str, makeint(Notifications[i].index), i);
 				//log_info(" Not "+Notifications[i].str+ " " +stf(Notifications[i].lt));
 			}
 			Notifications[i].lt = stf(Notifications[i].lt) - MakeFloat(GetDeltaTime()) * 0.001;
@@ -442,7 +448,7 @@ void PushNotification()
 			if(!CheckAttribute(&Notifications[i],"printing"))
 			{
 				Notifications[i].printing = true;
-				Pic_Info( Notifications[i].str, makeint(Notifications[i].index));
+				Pic_Info(Notifications[i].str, makeint(Notifications[i].index), i);
 			}
 			Notifications[i].lt = stf(Notifications[i].lt) - MakeFloat(GetDeltaTime()) * 0.001;
 			if(stf(Notifications[i].lt) < 0.1)
@@ -464,7 +470,7 @@ void PushNotification()
 			if(!CheckAttribute(&Notifications[i],"printing"))
 			{
 				Notifications[i].printing = true;
-				Pic_Info( Notifications[i].str, makeint(Notifications[i].index));
+				Pic_Info(Notifications[i].str, makeint(Notifications[i].index), i);
 			}
 			Notifications[i].lt = stf(Notifications[i].lt) - MakeFloat(GetDeltaTime()) * 0.001;
 			if(stf(Notifications[i].lt) < 0.1)
@@ -479,12 +485,52 @@ void PushNotification()
 	if(CheckAttribute(&Notifications[7],"lt")) return;
 	if(CheckAttribute(&Notifications[8],"lt")) return;
 
-	for(i = 0; i < 9; i++)
+	for(i = 0; i < MAX_NOTIFICATIONS; i++)
 	{
 		DeleteAttribute(&Notifications[i],"printing");
 	}
 	notificationsQty = -1;
-	DelEventHandler("frame","PushNotification");
+	DelEventHandler("frame", "PushNotification");
+}
+
+void ClearActiveStageNotifications() //HardCoffee убрать отображаемые соообщения и отобразить те, которые на очереди
+{
+	PushNotification();
+
+	ref rNote;
+	int i, iFirst, iSecond, iThird;
+	SendMessage(&ILogAndActions, "leee", LOG_CLEAR_ACTIVE_STAGES, &iFirst, &iSecond, &iThird);
+	//LOG_CLEAR_ACTIVE_STAGES отправляет индексы массива Notifications, отображаемых на данный момент сообщений в лог
+	// по дефолту возвращает -1 !!
+	// очищает отображаемые сообщения
+	for (i = 0; i < MAX_NOTIFICATIONS; i++)
+	{
+		rNote = &Notifications[i];
+		if (i == iFirst || i == iSecond || i == iThird)
+		{
+			if (CheckAttribute(rNote, "index"))
+			{
+				DeleteAttribute(rNote, "str");
+				DeleteAttribute(rNote, "index");
+				DeleteAttribute(rNote, "lt");
+			}
+		}
+		DeleteAttribute(rNote, "printing");
+	}
+
+	PushNotification();
+}
+
+void ClearAllNotifications() //очитстить лог сообщений
+{
+	int i, iFirst, iSecond, iThird;
+	SendMessage(&ILogAndActions, "leee", LOG_CLEAR_ACTIVE_STAGES, &iFirst, &iSecond, &iThird);
+	for (i = 0; i < MAX_NOTIFICATIONS; i++)
+	{
+		DeleteAttribute(&Notifications[i], "");
+	}
+	notificationsQty = -1;
+	DelEventHandler("frame", "PushNotification");
 }
 
 bool ShowExpNotifications()
@@ -501,9 +547,9 @@ bool ShowExpNotifications()
 	return true;
 }
 
-void Pic_Info(string strLog, int IconIndex)
+void Pic_Info(string strLog, int IconIndex, int iArrIdx)
 {
-	SendMessage(&ILogAndActions,"lsl", LOG_ADD_PIC, strLog, IconIndex);
+	SendMessage(&ILogAndActions,"lsll", LOG_ADD_PIC, strLog, IconIndex, iArrIdx);
 }
 
 void TimeScale_Info(string strLog)
@@ -735,19 +781,19 @@ void CreateSeaActionsEnvironment()
 	ILogAndActions.ActiveActionsBack.width = RecalculateHIcon(makeint(100 * fHtRatio)); // ширина текcтуры также зависит от длины текста
 	ILogAndActions.ActiveActionsBack.height = RecalculateVIcon(makeint(50 * fHtRatio));
 	ILogAndActions.ActiveActionsBack.centr = sti(showWindow.right)/2; // центр текстуры по Х
-	ILogAndActions.ActiveActionsBack.top = sti(showWindow.bottom) - RecalculateVIcon(makeint(205 * fHtRatio));
+	ILogAndActions.ActiveActionsBack.top = sti(showWindow.bottom) - RecalculateVIcon(makeint(225 * fHtRatio));
 	ILogAndActions.ActiveActionsBack.color = argb(192,32,32,32);
 
 	ILogAndActions.ActiveActions.text2.font = "interface_normal";
 	ILogAndActions.ActiveActions.text2.scale = 1.3 * fHtRatio;
 	ILogAndActions.ActiveActions.text2.pos.x = sti(showWindow.right)/2;
-	ILogAndActions.ActiveActions.text2.pos.y = sti(showWindow.bottom) - RecalculateVIcon(makeint(192 * fHtRatio));
+	ILogAndActions.ActiveActions.text2.pos.y = sti(showWindow.bottom) - RecalculateVIcon(makeint(212 * fHtRatio));
 	ILogAndActions.ActiveActions.text2.text = XI_ConvertString("for_quick_action");
 
 	ILogAndActions.ActiveActions.text1.font = "keyboard_symbol";
 	ILogAndActions.ActiveActions.text1.scale = 1.1 * fHtRatio;
 	ILogAndActions.ActiveActions.text1.pos.x = sti(showWindow.right)/2;
-	ILogAndActions.ActiveActions.text1.pos.y = sti(showWindow.bottom) - RecalculateVIcon(makeint(198 * fHtRatio));
+	ILogAndActions.ActiveActions.text1.pos.y = sti(showWindow.bottom) - RecalculateVIcon(makeint(218 * fHtRatio));
 
 	iTmp = sti(showWindow.right)/2;
 	iTmp2 = sti(showWindow.bottom) - RecalculateVIcon(makeint(200 * fHtRatio));

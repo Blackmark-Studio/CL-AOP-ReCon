@@ -25,6 +25,10 @@ void ProcessDialogEvent()
 		break;
 
 		case "First time":
+			TEV.CT.BLADETYPE = SKILL_FENCING;
+			if (GetCharacterEquipByGroup(pchar, BLADE_ITEM_TYPE) != "")
+				TEV.CT.BLADETYPE = Items[FindItem(GetCharacterEquipByGroup(pchar, BLADE_ITEM_TYPE))].FencingType;
+
 			chrDisableReloadToLocation = false;
 			LAi_LockFightMode(pchar, false);
 			dialog.text = StringFromKey("Smuggler_Guards_dialog_3", RandPhraseSimple(
@@ -49,7 +53,7 @@ void ProcessDialogEvent()
 				Link.l2.go = "TryingToGiveBribe";
 			}
 			Link.l3 = StringFromKey("Smuggler_Guards_dialog_6");
-			if (makeint(Pchar.reputation) <= 25 && GetSummonSkillFromNameToOld(Pchar, SKILL_FENCING) >= 8)
+			if (makeint(Pchar.reputation) <= 25 && GetSummonSkillFromNameToOld(Pchar, TEV.CT.BLADETYPE) >= 8)
 			{
 				Link.l3.go = "GettingLostFromHere";
 			}
@@ -57,7 +61,6 @@ void ProcessDialogEvent()
 			{
 				Link.l3.go = "howDareYou";
 			}
-
 		break;
 
 		case "ThisTimeFree":
@@ -201,7 +204,7 @@ void ProcessDialogEvent()
 
 		case "GettingLostFromHere":
 			PlayerRPGCheck_Reputation_NotifyPass(false, false);
-			PlayerRPGCheck_Skill_NotifyPass(SKILL_FENCING);
+			PlayerRPGCheck_Skill_NotifyPass(TEV.CT.BLADETYPE);
 			dialog.text = StringFromKey("Smuggler_Guards_dialog_26");
 			Link.l1 = StringFromKey("Smuggler_Guards_dialog_27");
 			Link.l1.go = "GettingLostFromHere_1";
@@ -235,7 +238,7 @@ void ProcessDialogEvent()
 			{
 				PlayerRPGCheck_Reputation_NotifyFail("bad");
 			}
-			PlayerRPGCheck_Skill_NotifyFail(SKILL_FENCING, false);
+			PlayerRPGCheck_Skill_NotifyFail(TEV.CT.BLADETYPE, false);
 			dialog.text = StringFromKey("Smuggler_Guards_dialog_30");
 			Link.l1 = StringFromKey("Smuggler_Guards_dialog_31");
 			Link.l1.go = "ThisTimeFree_fight";

@@ -79,3 +79,66 @@ Heh, @<GetAddress_Form>, to przecież nie spowiednicy. Ci święci ojcowie to wa
 Beliz_Tavern_22 {
 No cóż, wszystko jasne. Dziękuję ci, przyjacielu.
 }
+Beliz_Tavern_23 {
+Szukam dziewczyny... o imieniu chyba Wesoła Carla. Gdzie mogę ją znaleźć?
+}
+Beliz_Tavern_24 {
+Szukam dziewczyny... o imieniu chyba Wesoła Carla. Gdzie mogę ją znaleźć?
+}
+Beliz_Tavern_25 {
+Nie znam żadnej Carli. I nie świadczymy tutaj innych usług poza jedzeniem i piciem. Życzycie sobie coś do picia?
+}
+Beliz_Tavern_26 {
+Nie, dziękuję. Już idę.
+}
+Beliz_Tavern_27 {
+Mówiłem już wam, że nie ma tu żadnej Carli!
+}
+Beliz_Tavern_28 {
+Jest oskarżona o czary! Czy ty wiesz, co to oznacza? To, że jest wiedźmą! Jeśli będziesz ją ukrywał, spłoniesz na tym samym stosie co ona. Jasne? Ludzie widzieli, jak wielokrotnie wchodziła do twojej tawerny. Więc jak — będziesz się zapierał, czy...?
+}
+Beliz_Tavern_29 {
+Och, litości, @<GetAddress_Form>! Nie chciałem złamać prawa — po prostu... ledwo wiążę koniec z końcem... Nie miałem innego wyjścia, jak pozwolić dziwkom przyprowadzać tu klientów. Poza tym na tym naszym zadupiu nie ma nawet przyzwoitego zamtuza!
+}
+Beliz_Tavern_30 {
+Cóż, sądzę, że para tysięcy może złagodzić twoją winę. Ale muszę wiedzieć, gdzie ona jest.
+}
+Beliz_Tavern_31 {
+Twoje żałosne skargi mnie nie interesują. Chcę tylko wiedzieć, gdzie ona jest.
+}
+Beliz_Tavern_32 {
+Och, @<GetAddress_Form> — zrujnujecie mnie i mój interes! Muszę zapłacić poborcy podatkowemu w przyszłym miesiącu! Dwa tysiące, to po prostu niemożliwe! Groziliście mi śmiercią na stosie, a teraz chcecie, żebym umarł z głodu?!
+}
+Beliz_Tavern_33 {
+Jesteś tylko nędznym grzesznikiem... No dobrze, powiedz mi, gdzie jest Carla, a cię zostawię. Niech Pan ci przebaczy.
+}
+Beliz_Tavern_34 {
+Ukrywałeś wroga publicznego w swojej tawernie — więc tak czy inaczej będziesz musiał zapłacić.
+}
+Beliz_Tavern_35 {
+Och, zniszczyliście mi życie! Dobrze, bierzcie złoto — ale będziecie przeklęci na wieki!
+}
+Beliz_Tavern_36 {
+Pomyśl o swoim losie, nędzny grzeszniku! Jeśli nie powiesz mi, gdzie jest Carla, twoje krzyki z gubernatorskiego lochu będą długo niepokoić mieszkańców Belize.
+}
+Beliz_Tavern_37_m {
+Tak, tak, była tutaj! Ale odpłynęła niedawno z pewnym kapitanem. Kiedy powiedziała mi, że wyjeżdża, prawie się rozpłakałem. Taka dobra dziewczyna znalazła w końcu swoje przeznaczenie. Jej kapitan był prawdziwym mężczyzną, zupełnie jak wy — tak samo silny i odważny...
+}
+Beliz_Tavern_37_f {
+Tak, tak, była tutaj! Ale odpłynęła niedawno z pewnym kapitanem. Kiedy powiedziała mi, że wyjeżdża, prawie się rozpłakałem. Taka dobra dziewczyna znalazła w końcu swoje przeznaczenie. Jej kapitan był silnym i odważnym człowiekiem, zupełnie jak wy...
+}
+Beliz_Tavern_38 {
+Jak się nazywał?
+}
+Beliz_Tavern_39 {
+Miguel Cuenda, o ile pamiętam. Odpłynął i zabrał Carlę ze sobą. I... wybaczcie mi, @<GetAddress_Form> — błagam was, nie mówcie jej, że to ja na nią doniosłem. Nie chcę, żeby na wieki przeklinała moje imię...
+}
+Beliz_Tavern_40 {
+Nie powiem jej. Ale musisz mi powiedzieć, dokąd się skierowali.
+}
+Beliz_Tavern_41 {
+Pamiętam, że wspominała coś o jakiejś kolonii — hiszpańskiej, rzecz jasna... Chyba była mowa o Santo Domingo.
+}
+Beliz_Tavern_42 {
+Wierzę ci. Ale pamiętaj — musisz dobrze zadbać o swoją brudną, lecz niestety nieśmiertelną duszę. Wszystkiego dobrego!
+}

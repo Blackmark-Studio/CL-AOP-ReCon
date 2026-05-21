@@ -245,7 +245,7 @@ Zwiększa prędkość statku o 20#sSailingProfessional_speed#% i manewrowość o
 SeaDogProfessional {Postrach Mórz}
 perkSeaDogProfessional
 {
-Nawet zatwardziali awanturnicy i rozbójnicy nie odważą się kusić losu, widząc banderę Władcy Mórz. Zapobiega atakom zwykłych wrogich eskadr na mapie globalnej.
+Widząc ten proporzec, nawet najbardziej zatwardziali awanturnicy i zbójcy nie odważą się kusić losu. Umiejętność ostateczna sprawia, że niektóre eskadry ignorują twoją flotę, wielokrotnie zwiększa szansę na kapitulację wrogich statków i otwiera szereg unikalnych możliwości.
 ~
 Umiejętność nie działa, jeśli w eskadrze znajdują się okręty niskiej klasy.
 ~
@@ -274,6 +274,10 @@ Investor {Mistrz Inwestycji}
 perkInvestor {Znajomość mechanizmów finansowych pozwala postaci zwiększyć oprocentowanie lokaty bankowej o 1%, zapewniając dodatkowy dochód.}
 ProfessionalCommerce {Profesjonalny handel}
 perkProfessionalCommerce {Dodatkowe -15#sProfessionalCommerce#% zniżki i +15% premii przy wszystkich operacjach handlowych.}
+CrewSalaryOptimization		{Całkowity audyt}
+perkCrewSalaryOptimization	{Postać żelazną ręką zaprowadza porządek w okrętowej księgowości. Dzięki mistrzowskiemu przeglądowi udziałów załogi i wyeliminowaniu wszelkich zbędnych wydatków, koszty wypłat dla załogi w eskadrze spadają o 40% bez utraty dyscypliny.
+~
+Dostępne tylko dla głównego bohatera.}
 Carpenter {Podstawowa naprawa}
 perkCarpenter
 {
@@ -468,6 +472,15 @@ Daje 50% szansy na odparcie potencjalnego buntu niewolników.
 Duelist {Sławny Szermierz}
 DuelistFem {Sławny pojedynkowicz}
 perkDuelist {+5% zadawanych obrażeń, -5% otrzymywanych obrażeń w walce wręcz przeciwko jednemu przeciwnikowi, liczba sojuszników nie ma znaczenia.}
+InquisitionBlessing         {Błogosławieństwo Inkwizycji}
+perkInquisitionBlessing     {Specjalne patronat Świętej Inkwizycji, otrzymany od Głównego Inkwizytora Antonio de Souzy.
+~
+Wewnętrzna niezachwiana wiara napełnia każdy cios postaci świętą mocą, zwiększając obrażenia przeciw potworom, nieumarłym i Indianom o 20%.}
+
+WitchCharm                  {Czarownicy dar}
+perkWitchCharm              {Specjalny magiczny dar od Carli, otrzymany w nagrodę za uratowanie jej przed stosami Inkwizycji.
+~
+Jasne czary białej czarownicy spoczywają na postaci jako niewidzialna tarcza, która chroni ją przed złymi zamiarami, zmniejszając otrzymywane obrażenia od potworów, nieumarłych i Indian o 20%.}
 HighwaySmuggler {Doświadczony przemytnik}
 perkHighwaySmuggler {Ten człowiek zna wiele tajnych szlaków i wielokrotnie zajmował się przemytem, oszukując prawo i jego stróżów.}
 Schemer {Intrygant}
@@ -492,6 +505,38 @@ OneLegMan {Jednonogi}
 perkOneLegMan {Postać straciła jedną nogę, ale nie utraciła umiejętności walki.}
 SaveLoadAbuser {Oszust}
 perkSaveLoadAbuser {Sławny hazardzista, który mimo sukcesów w oszustwach budzi nieufność innych, przez co pozostaje samotnikiem w świecie gier losowych.}
+Monomania                {Monomania}
+perkMonomania             {Postać jest fanatycznie oddana swojemu rzemiosłu, ale absolutnie bezradna we wszystkim, co wykracza poza jej wąskie zainteresowania.
+~
+Unikalny talent w jednej konkretnej profesji zapewnia znaczny bonus bazowy, jednak w pozostałych sferach działalności postać staje się praticamente bezużyteczna.}
+
+Stuttering               {Jąkanie się}
+perkStuttering            {Wada wymowy, przez którą postaci trudno jest jasno i szybko wyrażać swoje myśli.
+~
+Obniża bazową wartość Charyzmy oraz nakłada kary do Handlu i Przywództwa.}
+
+Redskin                  {Tubylec}
+perkRedskin               {Ta postać wychowała się w głębi dżungli i nie ma pojęcia, jak wygląda życie na europejskim okręcie.
+~
+Z powodu całkowitego braku wiedzy morskiej nie można jej mianować na stanowiska oficerskie związane z zarządzaniem statkiem. Za to jako lojalny członek grupy abordażowej będzie niezastąpiona.}
+
+NoCaptain                {Podwładny}
+perkNoCaptain             {Ta postać nie ma absolutnie żadnych cech przywódczych, a odpowiedzialność za cały okręt i jego załogę wpędza ją w panikę.
+~
+Postaci nie można mianować kompanem (kapitanem osobnego okrętu) w eskadrze. Wciąż jednak może skutecznie służyć jako zwykły oficer pod Twoim dowództwem.}
+
+MusketeerOnly            {Zdeklarowany strzelec}
+perkMusketeerOnly         {Postać uznaje tylko siłę prochu i ołowiu, zupełnie nie potrafiąc (lub zasadniczo odmawiając) trzymania w ręku jakiejkolwiek broni białej. W walce może używać wyłącznie muszkietu.}
+
+WeaponBonding             {Więź z bronią}
+perkHumphreyGunmaster      {Postać odczuwa głębokie psychiczne przywiązanie do swojej unikalnej broni.
+~
+Ta cecha charakteru nie pozwala postaci na używanie jakiejkolwiek innej broni, ale w posługiwaniu się swoją osobistą bronią nie ma sobie równych.}
+
+DuglasSchool             {Specjalne szkolenie muszkieterskie}
+perkDuglasSchool          {Postać przeszła szkolenie według złożonej i rzadkiej metody elitarnych szkół strzeleckich Starego Świata.
+~
+Tylko ci, którzy do perfekcji opanowali te rzadkie klasyczne podstawy, są w stanie używać rzadkich i eksperymentalnych rodzajów muszkietów.}
 Energaiser {Energetyczny}
 perkEnergaiser {Postać znajduje się u szczytu swoich możliwości fizycznych, dzięki czemu energia odnawia się 1,5 razy szybciej.}
 LoyalOff {Lojalność}

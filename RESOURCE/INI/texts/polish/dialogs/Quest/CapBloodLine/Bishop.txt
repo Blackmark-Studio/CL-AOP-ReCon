@@ -1403,7 +1403,7 @@ Bishop_468 {
 Niedawno przyszedł do mnie jakiś lekarz od kupca, oglądał mnie... wygląda na to, że transakcja wkrótce dojdzie do skutku.
 }
 Bishop_469 {
-Uspokój się, Nicholas. Złoto przeznaczone na twój wykup już przeszło na mnie w spadku. Jutro w nocy wyruszasz z nami.
+Uspokój się, Nicholas. Pieniądze przeznaczone na twój wykup już przeszło na mnie w spadku. Jutro w nocy wyruszasz z nami.
 }
 Bishop_470 {
 Nie mogę się doczekać jutrzejszej nocy!

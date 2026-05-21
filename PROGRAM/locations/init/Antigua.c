@@ -533,7 +533,7 @@ int LocationInitAntigua(int n)
 	locations[n].id = "SentJons_townhall";
 	locations[n].id.label = "Townhall";
 	locations[n].filespath.models = "locations\inside\Residence01";
-	locations[n].image = "loading\inside\residence.tga";
+	locations[n].image = "loading\inside\Residence01.tga";
 	//Town sack
 	locations[n].townsack = "SentJons";
 	locations[n].lockWeather = "Inside";

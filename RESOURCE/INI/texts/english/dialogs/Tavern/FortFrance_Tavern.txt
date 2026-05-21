@@ -83,7 +83,7 @@ FortFrance_Tavern_24 {
 Well, that's just wonderful, but I only need one bottle. How much do you want for it?
 }
 FortFrance_Tavern_25 {
-Oh, @<GetAddress_Form>, I’m sure you’ll taste the true worth of this divine nectar! You can have a bottle of my exquisite aged wine for just 200 piastres!
+Oh, @<GetAddress_Form>, I’m sure you’ll taste the true worth of this divine nectar! You can have a bottle of my exquisite aged wine for just 700 piastres!
 }
 FortFrance_Tavern_26 {
 I’ll take the wine, @<npchar>. But with prices like yours, you won’t get many customers.
@@ -101,7 +101,7 @@ FortFrance_Tavern_30 {
 No, I don't want to. And I hope that a fountain of wit like yourself can appreciate the irony of the situation—I’m buying this bottle of fine, expensive wine for an ordinary French soldier. Farewell, @<npchar>.
 }
 FortFrance_Tavern_31 {
-Cheat you? Heh-heh-heh, @<GetAddress_Form>, you must be joking. Sure, in France you could buy a bottle of Burgundy for 200 piastres. But Martinique isn’t in France, is it? Heh-heh-heh!
+Cheat you? Heh-heh-heh, @<GetAddress_Form>, you must be joking. Sure, in France you could buy a bottle of Burgundy for 700 piastres. But Martinique isn’t in France, is it? Heh-heh-heh!
 }
 FortFrance_Tavern_32 {
 Give me that damned wine, and for the love of God, stop that giggling!
@@ -122,17 +122,62 @@ FortFrance_Tavern_36 {
 This is the silliest nonsense... Wait! You can fill those empty wine bottles with rum from the barrel! There you go! No problem at all...
 }
 FortFrance_Tavern_37 {
-Truly, you’re almost a genius, captain. You’re absolutely right, I can do it... But I hope you realize these are exclusive, special services... the bottle is washed and dried by hand, you see... I can sell my client bottled rum for... 200 coins! Heh-heh-heh!
+Truly, you’re almost a genius, captain. You’re absolutely right, I can do it... But I hope you realize these are exclusive, special services... the bottle is washed and dried by hand, you see... I can sell my client bottled rum for... 300 coins! Heh-heh-heh!
 }
 FortFrance_Tavern_38 {
-You’ve lost your mind, @<npchar>. 200 coins for cheap rum? No way! Goodbye!
+You’ve lost your mind, @<npchar>. 300 coins for cheap rum? No way! Goodbye!
 }
 FortFrance_Tavern_39 {
-All right then! You really gave me a good laugh, you rascal. Here’s your money. Hand over the rum. You’ve certainly earned your gold.
+All right then! You really gave me a good laugh, you rascal. Here’s your money. You’ve certainly earned it. And give me this rum already.
 }
 FortFrance_Tavern_40 {
-Thank you, @<GetAddress_Form>. Just give me one moment.\nHere’s your barrel of rum, split into TWO bottles, captain. I even tied them up with pink ribbons just for you... Oh, heh-heh-heh...
+Thank you, @<GetAddress_Form>. Just give me one moment.\nHere is your bottle of rum, Captain. Perhaps I should have tied it with pink ribbons... Oh, hee-hee-hee...
 }
 FortFrance_Tavern_41 {
 Careful, @<npchar>, one of these days you’ll just laugh yourself to death. I think if I don’t leave now, that’s exactly what’ll happen. Farewell.
+}
+FortFrance_Tavern_42 {
+Jerome, I am here about that drink you sell to the guards...
+}
+FortFrance_Tavern_43 {
+Look, Jerome, you can see that I want to make a gift for another person. Give me a discount, you are a good fellow after all!
+}
+FortFrance_Tavern_44 {
+I do not even have money for cheap swill right now, let alone your wine. I will drop by later.
+}
+FortFrance_Tavern_45 {
+Heh-heh-heh! You certainly know how to persuade someone, Captain. Very well... You caught me... I will push my greed aside, for I am a good fellow! Heh-heh-heh! Only for you, I will let a bottle go for 450 piastres, just do not blab about it to the local guards! Heh-heh-heh!
+}
+FortFrance_Tavern_46 {
+Now that is a different conversation, Jerome. It is a deal!
+}
+FortFrance_Tavern_47 {
+Alas, I do not have that much money, Jerome. We will return to this conversation later.
+}
+FortFrance_Tavern_48 {
+To whom?.. Ah, you mean those newly arrived poor devils from the Order of Malta? Heh-heh-heh... In this unbearable heat, regular wine or rum certainly won't help them — they will just bake under the sun faster. Heh-heh-heh...
+}
+FortFrance_Tavern_49 {
+That is true... But then I do not understand anything. They flatly refused regular wine and rum, demanding specifically your drink. What is the point?
+}
+FortFrance_Tavern_50 {
+Heh-heh-heh! That is all because I have my own special drink that both quenches thirst and boosts energy. It is called Sangaree. And all the French guards here are crazy about this beautiful drink. Heh-heh-heh.\nAnd those two... Well, apparently, they are trying to replicate my recipe, but they just do not know the right technique! Heh-heh-heh...
+}
+FortFrance_Tavern_51 {
+Listen, Jerome. Since I was fortunate enough to leave a substantial amount of money at this counter recently, maybe we can come to an amicable agreement? It would be nice if, as a gesture of gratitude, you shared the recipe for your 'Sangaree'. I promise not to give it to the guards and to use it only for personal purposes.
+}
+FortFrance_Tavern_52 {
+Argh! Considering how much was paid for your alcohol — this recipe should be engraved for me on a gold bar. Tell me right now exactly how you mix this swill of yours! Or else I will tell the Commander of the Order of Malta that you, joker, are intoxicating his soldiers on duty!
+}
+FortFrance_Tavern_53 {
+I am liking you more and more! Just promise not to open a shop with this drink right across from mine. Heh-heh-heh.\nAlright, so be it! The whole secret lies in the right proportions. Heh-heh-heh. Remember: two parts of chilled red wine to one part of strong rum... Actually, I will write it down for you myself! Heh-heh-heh... Give me a moment.\nHere, take it quickly! The main thing is to serve it cold! Heh-heh-heh!
+}
+FortFrance_Tavern_54 {
+Now that is useful. This will come in handy! Thanks for the trust, Jerome.
+}
+FortFrance_Tavern_55 {
+Quiet down, you madman! Why resort to threats right away? Alright, alright, choke on this recipe. I will write everything down now... Let's see,\nand take two bottles of chilled wine with one portion of rum\nHere, take it quickly. And take your money back, just do not yell like that across the whole tavern!
+}
+FortFrance_Tavern_56 {
+That is much better. Pleasure doing business with you, Jerome.
 }

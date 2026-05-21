@@ -1635,19 +1635,28 @@ bool ReplaceItem(ref _refTakingCharacter,ref _refGivingCharacter,string itemName
 
 bool TakeNItems(ref _refCharacter, string itemName, int n)
 {
+    return TakeNItemsNotification(_refCharacter, itemName, n, "", "", "");
+}
+//HardCoffee возможность добавить кастомные картинки и сообщения в лог
+bool TakeNItemsNotification(ref _refCharacter, string itemName, int n, string sNotification, string sIconName, string sSound)
+{
+	// sNotification == "default" пропустит проверку на стоимость предмета и позволит воспроизвести сообщение, картинку и звук по умолчанию
+	// если sNotification или sIconName или sSound == "" то они будут использованы по умолчанию (в том случае если предмет квестовый или sNotification == "default")
+	// если sNotification == "noMessage" то в сообщении будет только звук
+	// если sSound == "noSound" то в сообщении не будет звука
 	int q;
 	aref arItm;
 	
-	if(Items_FindItem(itemName, &arItm) < 0)
+	if (Items_FindItem(itemName, &arItm) < 0)
 	{
 		trace("TakeNItems warning - can't find " + itemName + " item");
 		return false;
 	}
 	
 	
-	if(CheckAttribute(arItm, "gold"))
+	if (CheckAttribute(arItm, "gold"))
 	{
-		if(CheckAttribute(_refCharacter,"Money"))
+		if (CheckAttribute(_refCharacter, "Money"))
 		{
 			q = sti(_refCharacter.Money);
 		}
@@ -1669,41 +1678,58 @@ bool TakeNItems(ref _refCharacter, string itemName, int n)
 	}
 	
 	//блокируем получения тотемов вторично
-	if(n > 0 && HasSubStr(itemName, "Totem_") && GetCharacterItem(_refCharacter,itemName) > 0 && !CheckAttribute(arItm, "shown.used"))
+	if (n > 0 && HasSubStr(itemName, "Totem_") && GetCharacterItem(_refCharacter,itemName) > 0 && !CheckAttribute(arItm, "shown.used"))
 	{
 		return true;
 	}
 	
-	if(n > 0 && HasSubStr(itemName, "map_part") && GetCharacterItem(_refCharacter,itemName) > 0)
+	if (n > 0 && HasSubStr(itemName, "map_part") && GetCharacterItem(_refCharacter,itemName) > 0)
 	{
 		return true;
 	}
-	
-	if(CheckAttribute(arItm, "price") && sti(arItm.price) == 0)
+	//HardCoffee TODO: отрефакторить
+	bool isQuestItem = false;
+	if (sNotification == "default") isQuestItem = true;
+	// Warship. Для нового интерфейса обмена - проверка на золото
+	if (!isQuestItem) isQuestItem = sNotification == "" && CheckAttribute(arItm, "price") && sti(arItm.price) == 0 && arItm.ID != "Gold"
+		&& CheckAttribute(_refCharacter,"index") && sti(_refCharacter.index) == GetMainCharacterIndex() && IsEntity(_refCharacter);
+
+	if (isQuestItem)
 	{
-		if(arItm.ID != "Gold") // Warship. Для нового интерфейса обмена - проверка на золото
+		if (n > 0)
 		{
-			if(CheckAttribute(_refCharacter,"index") && sti(_refCharacter.index) == GetMainCharacterIndex() && IsEntity(_refCharacter))
+			if (pchar.chr_ai.type == "player" && !LAi_IsDead(pchar))
 			{
-				if(n > 0)
+				if (sNotification == "" || sNotification == "default")
 				{
-                    if (pchar.chr_ai.type == "player" && !LAi_IsDead(pchar))
-                    {
-                        notification(XI_ConvertString("You take item")+": "+GetConvertStr(arItm.name, "ItemsDescribe.txt"), "BoxPlus");
-                    }
-					AddMsgToCharacter(_refCharacter, MSGICON_GETITEM);
-					PlayStereoSound("interface\important_item.wav");
+					sNotification = XI_ConvertString("You take item")+": "+GetConvertStr(arItm.name, "ItemsDescribe.txt");
+					if (n > 1)
+						sNotification = sNotification +" (" +n +" " +XI_ConvertString("pcs") +")";
 				}
-				
-				if(n < 0)
+
+				if (sIconName == "")
+					sIconName = "BoxPlus";
+			}
+
+			AddMsgToCharacter(_refCharacter, MSGICON_GETITEM);
+		}
+		else if (n < 0)
+		{
+			if (dialogrun)
+			{
+				if (sNotification == ""|| sNotification == "default")
 				{
-                    if (dialogrun)
-                    {
-                        notification(XI_ConvertString("You give item")+": "+GetConvertStr(arItm.name, "ItemsDescribe.txt"), "BoxMinus");
-                    }
+					sNotification = XI_ConvertString("You give item")+": "+GetConvertStr(arItm.name, "ItemsDescribe.txt");
+					if (n < -1)
+						sNotification = sNotification +" (" +abs(n) +" " +XI_ConvertString("pcs") +")";
 				}
+
+				if (sIconName == "")
+					sIconName = "BoxMinus";
 			}
 		}
+		if (sSound == "")
+			sSound = "interface\important_item.wav";
 	}
 	
 	q = GetCharacterItem(_refCharacter, itemName);
@@ -1721,48 +1747,12 @@ bool TakeNItems(ref _refCharacter, string itemName, int n)
 		
 		_refCharacter.Items.(itemName) = q + n;
 	}
-    // ТОЛЬКО ДОБАВЛЕННОЕ ЛОГИРОВАНИЕ (начало) - вдруг пригодится Konstrush
-    /*if (sti(_refCharacter.index) == GetMainCharacterIndex())
-    {
-        if (n != 0) // Только если реально было изменение
-        {
-            // Получаем локализованное название предмета (если возможно)
-            string localizedName = GetItemName(itemName); // или XI_ConvertString(itemName)
-            if (localizedName == "") // Если локализации нет, используем исходное имя
-            {
-                localizedName = itemName;
-            }
-            string logMsg;
-            if (n > 0)
-            {
-                logMsg = "Получено: " + localizedName + " (x" + n + ")";
-            }
-            else
-            {
-                logMsg = "Потрачено: " + localizedName + " (x" + abs(n) + ")";
-            }
-            Log_Info(logMsg);
-            if (n > 0)
-            {
-                PlaySound("interface\important_item.wav");
-            }
-        }
-    }*/
-    // КОНЕЦ ДОБАВЛЕННОГО ЛОГИРОВАНИЯ
+
+    if (sNotification != "" && sNotification != "default" && sNotification != "noMessage")
+		notification(sNotification, sIconName);
+	if (sSound != "" && sSound != "noSound")
+		notificationSound = PlayStereoSound(sSound);
 	return true;
-}
-
-// Добавляет предмет и автоматически пишет в лог в формате "Название (хКол-во)" Konstrush
-void GiveItemWithLog(ref character, string itemID, int quantity)
-{
-    // Получаем название предмета (из локализации)
-    string itemName = GetItemName(itemID);
-
-    // Формируем сообщение в лог
-    string logMsg = StringFromKey("InfoMessages_240", itemName, quantity);
-
-    // Добавляем предмет и аписываем в лог (категория "Important_item" или другая по желанию)
-    AddItemLog(character, itemID, ""+quantity, logMsg, "Important_item");
 }
 
 // > методы из CSP
@@ -2269,6 +2259,7 @@ bool IsEquipCharacterByMap(ref chref, string itemID)
 	
 	return false;
 }
+
 // получить суммарный вес экипированных предметов в зависимости от группы -> нужно для атласа карт
 float GetEquippedItemsWeight(ref chref, string groupID)
 {
@@ -2492,21 +2483,6 @@ void SetEquipedItemToCharacter(ref chref, string groupID, string itemID)
 				LAi_BladeEnergyType(chref, GetEnergyBladeDrain(stf(arItm.Weight)) );  // энергоемкость от веса
 			}
 		break;
-		// --> ugeen 18.06.09   - увеличиваем счетчик карт в атласе	
-		case MAPS_ITEM_TYPE:	
-			if(CheckAttribute(chref, "MapsAtlasCount"))
-			{
-				if(CheckAttribute(arItm, "MapIsland"))
-				{
-					chref.MapsAtlasCount = sti(chref.MapsAtlasCount) + 1;
-					if(sti(chref.MapsAtlasCount) == MAPS_IN_ATLAS && !CheckCharacterPerk(chref, "MapMaker"))  // даем скрытый перк если собрали все карты островов
-					{
-						SetCharacterPerk(chref, "MapMaker");
-					}	
-				}	
-			}			
-		break;	
-		// <-- ugeen
 	}
 }
 
@@ -2883,10 +2859,11 @@ bool isShipInside(string _id)
 
     return ret;
 }
+
 void  Set_My_Cabin()
 {
-    int     n,i;
-    string  sTemp, newCab, sBox;
+    int     n, i;
+    string  sTemp, newCab;
     ref     rShip;
 
     int nShipType = GetCharacterShipType(pchar);
@@ -2903,51 +2880,85 @@ void  Set_My_Cabin()
     if (Pchar.SystemInfo.CabinType != newCab)
     {
         if (Pchar.SystemInfo.CabinType != "")
-        {
-            // переселить предметы
-            ref     loc, locTo;
-            aref    arFromBox;
-            aref    curItem;
-	        string  attr;
+		{
+			// переселить предметы
+			ref		loc, locTo;
+			aref	arFromBox, curItem, al, boxTo;
+			string	attr, time, sat = "";
 
-            loc   = &locations[FindLocation(Pchar.SystemInfo.CabinType)];
-            locTo = &locations[FindLocation(newCab)];
-			
-            for (n = 1; n <= 4; n++)
-            {
-                sTemp = "box" + n;
-				sBox = sTemp;
-				locTo.(sBox).money = 0;
-				
-				if (or(n > 1 && StrHasStr(newCab, "My_Cabin_Small3", 1), n > 3 && !StrHasStr(newCab, "My_Cabin_Medium,My_Cabin_Quest,My_CabineFDM", 1)))
-					sBox = "box1";
-				
-                if (CheckAttribute(loc, sTemp + ".money"))
-                {
-                    locTo.(sBox).money = sti(locTo.(sBox).money) + sti(loc.(sTemp).money);
-                }
-                makearef(arFromBox, loc.(sTemp).items);
-                for(i=0; i<GetAttributesNum(arFromBox); i++)
-                {
-                    curItem = GetAttributeN(arFromBox, i);
-                    attr = GetAttributeName(curItem);
-                    if (attr != "")
-                    {
-                        if (!CheckAttribute(locTo, sBox + ".items." + attr))
-                        {
-                            locTo.(sBox).items.(attr) = 0;
-                        }
-                        locTo.(sBox).items.(attr) = makeint(sti(locTo.(sBox).items.(attr)) + makeint(GetAttributeValue(curItem)));
-                    }
-                }
-                // del
-        		DeleteAttribute(loc, sTemp + ".items");
-        	    loc.(sTemp).items = "";
-        	    loc.(sTemp) = Items_MakeTime(0, 0, 1, 2024);
-        	    loc.(sTemp).money = 0;
-            }
-        }
+			loc		= &locations[FindLocation(Pchar.SystemInfo.CabinType)];
+			locTo	= &locations[FindLocation(newCab)];
+
+			if (IsDay())
+				time = "day";
+			else
+				time = "night";
+
+			if (CheckAttribute(locTo, "models." + time + ".locators"))
+				sat = "models." + time + ".locators";
+			else if (CheckAttribute(locTo, "models.always.locators"))
+				sat = "models.always.locators";
+
+			if (sat != "")
+			{
+				CreateEntity(locTo, "location");
+
+				if (CheckAttribute(locTo, "filespath.models"))
+					SendMessage(locTo, "ls", MSG_LOCATION_MODELSPATH, locTo.filespath.models);
+
+				LocLoadModel(locTo, sat, "");
+				SendMessage(locTo, "l", MSG_LOCATION_UPDATELOCATORS);
+			}
+
+			// полная зачистка
+			for (n = 1; n <= 4; n++)
+			{
+				sTemp = "box" + n;
+				DeleteAttribute(locTo, sTemp + ".items");
+				locTo.(sTemp).items = "";
+				locTo.(sTemp) = Items_MakeTime(0, 0, 1, 2003);
+				locTo.(sTemp).money = 0;
+			}
+
+			for (n = 1; n <= 4; n++)
+			{
+				sTemp = "box" + n;
+
+				if (FindLocator(locTo.id, sTemp, &al, true))
+					makearef(boxTo, locTo.(sTemp));
+				else
+					makearef(boxTo, locTo.box1);
+
+				if (CheckAttribute(loc, sTemp + ".money"))
+					boxTo.money = sti(boxTo.money) + sti(loc.(sTemp).money);
+
+				makearef(arFromBox, loc.(sTemp).items);
+				for (i = 0; i < GetAttributesNum(arFromBox); i++)
+				{
+					curItem = GetAttributeN(arFromBox, i);
+					attr = GetAttributeName(curItem);
+
+					if (attr != "")
+					{
+						if (!CheckAttribute(boxTo, "items." + attr))
+							boxTo.items.(attr) = 0;
+
+						boxTo.items.(attr) = makeint(sti(boxTo.items.(attr)) + makeint(GetAttributeValue(curItem)));
+					}
+				}
+				// del
+				DeleteAttribute(loc, sTemp + ".items");
+				loc.(sTemp).items = "";
+				loc.(sTemp) = Items_MakeTime(0, 0, 1, 2003);
+				loc.(sTemp).money = 0;
+			}
+
+			if (sat != "")
+				DeleteClass(locTo);
+		}
+
         Pchar.SystemInfo.CabinType = newCab;
+
         n = FindLocation("My_Deck");
         if (n != -1)
         {
@@ -2962,6 +2973,7 @@ void  Set_My_Cabin()
                 Locations[n].reload.l1.emerge = "reload_hold";
             }
         }
+
         n = FindLocation(Pchar.SystemInfo.CabinType);
         if (n != -1)
         {
@@ -2976,18 +2988,17 @@ void  Set_My_Cabin()
                 Locations[n].reload.l1.emerge = "reload_cabin";
             }
         }
+
         n = FindLocation("My_Deck_Medium");
         if (n != -1)
-        {
             Locations[n].reload.l1.go = Pchar.SystemInfo.CabinType;
-        }
+
 		n = FindLocation("My_Orlop");
 		if (n != -1)
-		{
 			Locations[n].reload.l1.go = Pchar.SystemInfo.CabinType;
-		}
     }
 }
+
 // есть ли патент
 bool isMainCharacterPatented()
 {
@@ -3477,25 +3488,38 @@ void EquipCharacterByAtlas(ref chref)
 // проверим наличие атласа и карты в нём
 bool CheckMapForEquipped(ref refCh, string itemID)
 {
-	int   idLngFile;
 	ref   arItem;
 
 	arItem = ItemsFromID(itemID);
 
-	if(sti(refCh.index) == GetMainCharacterIndex() && CheckCharacterItem(refCh, arItem.id))
+	if (sti(refCh.index) == GetMainCharacterIndex() && CheckCharacterItem(refCh, arItem.id))
 	{
-		if(!CheckCharacterItem(refCh, "MapsAtlas")) { // тривиальная проверка на наличие атласа - если его нет,  то получите и распишитесь
+		if (!CheckCharacterItem(refCh, "MapsAtlas")) // тривиальная проверка на наличие атласа - если его нет,  то получите и распишитесь
+		{
 			GiveItem2Character(refCh, "MapsAtlas");
 			EquipCharacterByAtlas(refCh);
 		}
-		if(!IsEquipCharacterByMap(refCh, itemID)) { // проверяем, экипирован ли ГГ  этой картой
+
+		if (!IsEquipCharacterByMap(refCh, itemID)) // проверяем, экипирован ли ГГ  этой картой
+		{
 			EquipCharacterByItem(refCh, itemID);
+			ResetMapMakerAtlas();
+
+			if (CheckAttribute(arItem, "MapIsland") && !ArrayIsEqualValue(&arMapMakerAtlas, itemID))
+			{
+				ArrayAddValue(&arMapMakerAtlas, itemID);
+
+				if ((GetArraySize(&arMapMakerAtlas) - 2) == MAPS_IN_ATLAS && !CheckCharacterPerk(refCh, "MapMaker")) // даем скрытый перк если собрали все карты островов
+					SetCharacterPerk(refCh, "MapMaker");
+			}
+
 			notification(StringFromKey("InfoMessages_185", GetConvertStr(arItem.name, "ItemsDescribe.txt")), "MapsAtlas");
 			arItem = ItemsFromID("MapsAtlas");
 			arItem.Weight = GetEquippedItemsWeight(refCh, MAPS_ITEM_TYPE);
 		}
 		else return false;
 	}
+
 	return true;
 }
 
@@ -3531,40 +3555,45 @@ void StoreEquippedMaps(ref refCh)
     aref arItems;
 	string  sName, groupID;
 	ref rLoc;
-	
-	if (CheckAttribute( refCh, "Stored.Maps")) DeleteAttribute(refCh, "Stored.Maps");
+
+	if (CheckAttribute(refCh, "Stored.Maps"))
+		DeleteAttribute(refCh, "Stored.Maps");
+
 	makearef(arItems, refCh.items);
-    int	Qty = GetAttributesNum(arItems);
-	
-	for (int a = 0; a < Qty; a++)
+    int	a, Qty = GetAttributesNum(arItems);
+
+	for (a = 0; a < Qty; a++)
     {
         sName = GetAttributeName(GetAttributeN(arItems, a));
 		rLoc = ItemsFromID(sName);
-		if(CheckAttribute(rLoc, "GroupID"))
+		if (CheckAttribute(rLoc, "GroupID"))
 		{
 			groupID = rLoc.groupID;
-			if(groupID == MAPS_ITEM_TYPE)
+			if (groupID == MAPS_ITEM_TYPE)
 			{
-				if(IsEquipCharacterByMap(refCh, rLoc.id))  
-				// проверяем, экипирован ли ГГ  этой картой
+				if (IsEquipCharacterByMap(refCh, rLoc.id)) // проверяем, экипирован ли ГГ  этой картой
 				{
 					refCh.Stored.Maps.(sName) = refCh.items.(sName);
+					ArrayRemoveValue(&arMapMakerAtlas, rLoc.id);
 				}
-			}	
-		}	
+			}
+		}
     }
+
+	ResetMapMakerAtlas();
 }
 
 void RestoreEquippedMaps(ref refCh)
 {
     aref arItems;
 	string sName;
-	
-	if (!CheckAttribute( refCh, "Stored.Maps")) return;
-	
+
+	if (!CheckAttribute(refCh, "Stored.Maps")) return;
+
 	makearef(arItems, refCh.Stored.Maps);
-    int Qty = GetAttributesNum(arItems);
-    for (int a = 0; a < Qty; a++)
+    int a, Qty = GetAttributesNum(arItems);
+
+    for (a = 0; a < Qty; a++)
     {
         sName = GetAttributeName(GetAttributeN(arItems, a));
 		TakeNItems(refCh, sName, 1);
@@ -3574,6 +3603,16 @@ void RestoreEquippedMaps(ref refCh)
 }
 // <-- ugeen
 
+void ResetMapMakerAtlas()
+{
+	if (GetArraySize(&arMapMakerAtlas) <= 2)
+	{
+		SetArraySize(&arMapMakerAtlas, 2);
+		arMapMakerAtlas[0] = "hello";
+		arMapMakerAtlas[1] = "world";
+	}
+}
+
 void OfficersHold()
 {
 	int idx;
@@ -3582,6 +3621,8 @@ void OfficersHold()
 		idx = GetOfficersIndex(PChar,i);
 		if (idx != -1) {
 			ref offchar = GetCharacter(idx);
+			if (CheckAttribute(offchar, "chr_ai.type") && offchar.chr_ai.type == LAI_TYPE_INJURE)
+				continue;
 			SetCharacterTask_Stay(offchar);
 		}
 	}
@@ -3595,6 +3636,8 @@ void OfficersFollow()
 		idx = GetOfficersIndex(PChar,i);
 		if (idx != -1) {
 			ref offchar = GetCharacter(idx);
+			if (CheckAttribute(offchar, "chr_ai.type") && offchar.chr_ai.type == LAI_TYPE_INJURE)
+				continue;
 			LAi_tmpl_SetFollow(offchar, GetMainCharacter(), -1.0);
 		}
 	}

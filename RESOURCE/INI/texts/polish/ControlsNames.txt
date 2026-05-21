@@ -30,7 +30,7 @@ TelescopeOut {Wyjdź z widoku lunety}
 TelescopeZoom {Przybliż/oddal}
 Interface {Menu postaci}
 CharacterShipMenu {Menu statku postaci}
-LogbookMenu {Menu dziennika pokładowego}
+LogbookMenu {Menu dziennika okrętowego}
 ItemsMenu {Menu przedmiotów}
 NationsMenu {Menu nacji}
 MainMenu {Menu główne}

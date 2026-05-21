@@ -589,7 +589,7 @@ int LocationInitMaracaibo(int n)
 	locations[n].id = "Maracaibo_townhall";
 	locations[n].id.label = "Townhall";
 	locations[n].filespath.models = "locations\inside\Residence04";
-	locations[n].image = "loading\inside\residence.tga";
+	locations[n].image = "loading\inside\Residence04.tga";
 	//Town sack
 	locations[n].townsack = "Maracaibo";
 	Locations[n].lockWeather = "Inside";
@@ -1247,7 +1247,7 @@ int LocationInitMaracaibo(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     Locations[n].id = "DesMoines_town";
 	locations[n].id.label = "DesMoines";
-	Locations[n].image = "loading\towns\pearl1.tga";
+	Locations[n].image = "loading\towns\pearl.tga";
 	//Sound
 	locations[n].type = "jungle";
 	locations[n].islandId = "Mein";

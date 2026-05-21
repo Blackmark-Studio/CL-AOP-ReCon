@@ -103,7 +103,7 @@ void LAi_type_patrol_CharacterUpdate(aref chr, float dltTime)
 			if (time < 0) time = 0; //HardCoffee обнулим таймер, чтоб не уходил в сильный минус
 			chr.chr_ai.type.checkPatrol = time;
 
-			if (time <= 0.0)
+			if (true) //if (time <= 0.0) //Чтобы адекватно реагировал на оружие и квесты
 			{
 				//Анализируем окружающих персонажей
 				if (isDay() || GetRelation2BaseNation(sti(chr.nation)) != RELATION_ENEMY)
@@ -137,7 +137,7 @@ void LAi_type_patrol_CharacterUpdate(aref chr, float dltTime)
 							LAi_SoldierTestControl(chr, true, false);
 							return;
 						}
-						else if (stf(chr.chr_ai.type.checkPatrol) <= 0.0)
+						else if (time <= 0.0)
 						{
 							LAi_SoldierTestControl(chr, false, false);
 							return;

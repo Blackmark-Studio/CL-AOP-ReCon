@@ -1191,7 +1191,7 @@ void ProcessDialogEvent()
 			dialog.text = StringFromKey("Bishop_235");
 			link.l1 = StringFromKey("Bishop_236");
 			link.l1.go = "DStep_6";
-			GiveItem2Character(Pchar, "migraine_potion");
+			TakeNItemsNotification(pchar, "migraine_potion", 1, "", "migraine_potion", "");
 			Pchar.questTemp.CapBloodLine.sLocator = "houseSp1";
 			Pchar.questTemp.CapBloodLine.iTime = -1;
 		break;
@@ -1252,15 +1252,16 @@ void ProcessDialogEvent()
 			dialog.text = StringFromKey("Bishop_249");
 			link.l1 = StringFromKey("Bishop_250");
 			link.l1.go = "DStep_8";
-			GiveItemWithLog(Pchar, "recipe_migraine_potion", 1);
+			ClearActiveStageNotifications();
+			TakeNItemsNotification(pchar, "recipe_migraine_potion", 1, "default", "Document", "noSound");
 		break;
 
 		case "DStep_8":
 			dialog.text = StringFromKey("Bishop_251");
 			link.l1 = StringFromKey("Bishop_252");
 			link.l1.go = "Exit_Away";
-			GiveItemWithLog(Pchar, "lamp", 1);
-			GiveItemWithLog(Pchar, "mortar_and_pestle", 1);
+			TakeNItemsNotification(pchar, "lamp", 1, "default", "", "");
+			TakeNItemsNotification(pchar, "mortar_and_pestle", 1, "default", "", "noSound");
 			AddDialogExitQuestFunction("Tutorial_BloodPrologue_Alchemy_Delay");
 		break;
 
@@ -1559,7 +1560,6 @@ void ProcessDialogEvent()
 			link.l1 = StringFromKey("Bishop_309");
 			link.l1.go = "GRStep_7_1";
 			// Вариант торга доступен только при Charisma >= 4
-			//			if (GetCharacterSPECIAL(pchar, SPECIAL_C) >= 4)
 			if (PlayerRPGCheck_SPECIAL(SPECIAL_C, 4))
 			{
 				link.l2 = StringFromKey("Bishop_310");

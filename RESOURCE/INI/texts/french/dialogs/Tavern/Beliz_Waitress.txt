@@ -43,3 +43,12 @@ Pas du tout, ma chérie, juste un peu d’étourderie...
 Beliz_Waitress_12 {
 Non, aucune question...
 }
+Beliz_Waitress_13 {
+Tu ne saurais pas où se trouve Carla en ce moment ?
+}
+Beliz_Waitress_14 {
+Euh... Non. Tu ferais mieux de demander aux habitants de la ville. Je pense qu'ils sauront sûrement te dire quelque chose.
+}
+Beliz_Waitress_15 {
+D'accord, ma belle, je m'en vais.
+}

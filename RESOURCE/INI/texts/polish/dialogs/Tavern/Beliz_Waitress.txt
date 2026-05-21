@@ -43,3 +43,12 @@ Ależ skąd, kochanie, skleroza...
 Beliz_Waitress_12 {
 Nie, nie ma sprawy...
 }
+Beliz_Waitress_13 {
+Nie wiesz może, gdzie jest teraz Carla?
+}
+Beliz_Waitress_14 {
+Eee... Nie. Lepiej popytajcie mieszkańców miasta. Myślę, że oni na pewno coś wam powiedzą.
+}
+Beliz_Waitress_15 {
+Dobrze, ślicznotko, już idę.
+}

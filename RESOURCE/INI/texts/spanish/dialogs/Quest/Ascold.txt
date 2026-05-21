@@ -130,13 +130,13 @@ Ascold_33_f {
 ¡Vamos, hombre! ¡Solo estaba bromeando! Ni siquiera se me pasó por la cabeza...
 }
 Ascold_34 {
-El trabajo está hecho, es hora de celebrar...
+¡Asunto arreglado! ¡Ahora tenemos que remojarlo!
 }
 Ascold_35_m {
-No, no voy a lavar nada. Mejor dime tú—¿para qué quieres esa porquería? Le he dado mil vueltas y sigo sin entenderlo. Es algo totalmente inútil y asqueroso.
+¿Remojarlo? No pienso lavar nada. Mejor dime tú—¿para qué quieres esa porquería? Le he dado mil vueltas y sigo sin entenderlo. Es algo totalmente inútil y asqueroso.
 }
 Ascold_35_f {
-No, no estoy lavando nada. Pero dime, ¿para qué quieres esa porquería? Le he dado muchas vueltas y todavía no lo entiendo. Es algo totalmente inútil y asqueroso.
+¿Remojarlo? No pienso lavar nada. Pero dime, ¿para qué quieres esa porquería? Le he dado muchas vueltas y todavía no lo entiendo. Es algo totalmente inútil y asqueroso.
 }
 Ascold_36 {
 Bueno, eso depende de cómo se mire. Este polvo, y otros objetos similares de los cultos nativos, me los encarga un reconocido erudito europeo, Pierre de la Fontaine. Estoy aquí como su agente de confianza. En general, estoy bastante satisfecho. De la Fontaine paga mi casa y mis gastos. Y por cada pequeño artefacto que logro encontrarle aquí, me da una bonificación muy generosa.

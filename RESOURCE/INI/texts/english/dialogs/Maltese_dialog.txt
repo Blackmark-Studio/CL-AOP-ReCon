@@ -8,7 +8,7 @@ Maltese_dialog_3 {
 I have a matter to discuss with you, officer. I think you’ll find it interesting. One of your soldiers, Jory, tried to buy wine in town through me as a go-between. Knowing your regulations...
 }
 Maltese_dialog_4 {
-What?! I strictly forbade drinking at a strategic site! Well then, he’ll pay for this. For your vigilance, I’m rewarding you with 5,000 piastres, and Jory will spend three days in the brig.
+What?! I strictly forbade drinking at a strategic site! Well then, he’ll pay for this. For your civic vigilance, I reward you with Jori's monthly wages, and he will spend three days in the guardhouse. This shall serve as a lesson to the rest! And as a token of my personal gratitude — take my old soldier's sword of our order from my private arsenal. You are unlikely to find its like anywhere else, Captain.
 }
 Maltese_dialog_5 {
 Thank you, @<GetFullName>. It's our shared duty to put a stop to such violations.

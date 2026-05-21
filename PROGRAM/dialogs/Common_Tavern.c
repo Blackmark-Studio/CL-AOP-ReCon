@@ -605,7 +605,7 @@ void ProcessDialogEvent()
 			//zagolski. начальный квест пирата
 			if (CheckAttribute(pchar, "questTemp.pirateStartQuest") &&
 			pchar.questTemp.pirateStartQuest == "1" &&
-			or(GetArealByCityName(npchar.city) == pchar.questTemp.pirateStartQuest.Areal, StrStartsWith(pchar.questTemp.pirateStartQuest.Areal, "Hispaniola")) &&
+			or(GetArealByCityName(npchar.city) == pchar.questTemp.pirateStartQuest.Areal, StrStartsWith(pchar.questTemp.pirateStartQuest.Areal, "Hispaniola") && StrStartsWith(GiveArealByLocation(loadedlocation), "Hispaniola")) &&
 			npchar.city != pchar.questTemp.pirateStartQuest.City)
 			{
 				if (!CheckAttribute(pchar, "questTemp.pirateStartQuest.TavernInfo"))
@@ -1145,31 +1145,23 @@ void ProcessDialogEvent()
 		break;
 
 		case "ConvoyAreYouSure":
-			CommonGenerator("QuestTrader");
 			dialog.text = StringFromKey("Common_Tavern_290", LinkRandPhrase(
 						StringFromKey("Common_Tavern_287", pchar),
 						StringFromKey("Common_Tavern_288", pchar),
 						StringFromKey("Common_Tavern_289", pchar)));
 			Link.l1 = StringFromKey("Common_Tavern_291");
 			Link.l1.go = "exit";
-			pchar.quest.destination = FindDestinationCity(npchar, sti(TEV.ArtOfDeals.Tavern.Convoy) + 1);
-			pchar.ConvoyQuest.City = npchar.city;
-			AddDialogExitQuest("prepare_for_convoy_quest");
-			SaveCurrentNpcQuestDateParam(npchar, "work_date");
+			CommonGeneratorConvoyAndPassenger(NPChar, "QuestTrader");
 		break;
 
 		case "PassangerAreYouSure":
-			CommonGenerator("QuestPassanger");
 			dialog.text = StringFromKey("Common_Tavern_295", LinkRandPhrase(
 						StringFromKey("Common_Tavern_292", pchar),
 						StringFromKey("Common_Tavern_293", pchar),
 						StringFromKey("Common_Tavern_294", pchar)));
 			Link.l1 = StringFromKey("Common_Tavern_296");
 			Link.l1.go = "exit";
-			TEV.GenQuest_DestinationCity = FindDestinationCity(npchar, sti(TEV.ArtOfDeals.Tavern.Passenger) + 1);
-			pchar.GenQuest.GetPassenger_City = npchar.city;
-			AddDialogExitQuest("prepare_for_passenger_quest");
-			SaveCurrentNpcQuestDateParam(npchar, "work_date");
+			CommonGeneratorConvoyAndPassenger(NPChar, "QuestPassanger");
 		break;
 
 		case "Exit":
@@ -1796,17 +1788,5 @@ void ProcessDialogEvent()
 			pchar.questTemp.Headhunter = "hunt_carlos_fight";
 		break;
 		//ОЗГ
-	}
-}
-
-void CommonGenerator(string sCharID)
-{
-	dialogDisable = true;
-	ref chr;
-
-	if (GetCharacterIndex(sCharID) >= 0)
-	{
-		chr = characterFromID(sCharID);
-		ChangeCharacterAddressGroup(chr, "none", "", "");
 	}
 }

@@ -430,3 +430,21 @@ Muito bem, tragam esse ladrón até mim imediatamente — mal posso esperar para
 AntonioDeSouza_94 {
 Muito bem, monsenhor.
 }
+AntonioDeSouza_95 {
+Monsenhor, sei que há aqui uma brupa chamada Carla, uma antiga prostituta do porto. Com suas artes sombrias, ela já matou duas pessoas — o Capitão Miguel Cuenda e o bom fidalgo Bartholomew, que morreu antes de poder se arrepender. Ele era um servo do governador de Belize. Rogo a Deus para que a Santa Inquisição a puna por seus atos pecaminosos.
+}
+AntonioDeSouza_96_m {
+Monsenhor, tenho um assunto a tratar com o senhor. Não negue um minuto de atenção a um católico fervoroso.
+}
+AntonioDeSouza_96_f {
+Monsenhor, tenho um assunto a tratar com o senhor. Não negue um minuto de atenção a uma católica fervorosa.
+}
+AntonioDeSouza_97_m {
+Ah, que a sua alma seja eternamente abençoada pelo seu ato virtuoso, meu filho. Nós cuidaremos dessa bruxa. Seu zelo será recompensado com a minha bênção pessoal.\nAlém disso, meu filho, você testemunhará pessoalmente essa cria de bruxa queimar no fogo sagrado da Inquisição.
+}
+AntonioDeSouza_97_f {
+Ah, que a sua alma seja eternamente abençoada pelo seu ato virtuoso, minha filha. Nós cuidaremos dessa bruxa. Seu zelo será recompensado com a minha bênção pessoal.\nAlém disso, minha filha, você testemunhará pessoalmente essa cria de bruxa queimar no fogo sagrado da Inquisição.
+}
+AntonioDeSouza_98 {
+Assim espero, monsenhor.
+}

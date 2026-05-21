@@ -121,17 +121,20 @@ void ProcessDialogEvent()
 			dialog.text = StringFromKey("Poteryanoe_Koltso_27");
 			link.l1 = StringFromKey("Poteryanoe_Koltso_28");
 			link.l1.go = "Volshebnoe";
-			link.l2 = StringFromKey("Poteryanoe_Koltso_29");
-			link.l2.go = "Obichnoe";
+			if (GetCharacterSPECIAL(pchar, "Charisma") >= 3) //чисто мем конечно
+			{
+				link.l2 = StringFromKey("Poteryanoe_Koltso_29");
+				link.l2.go = "Obichnoe";
+			}
 		break;
 
 		case "Obichnoe":
 			dialog.text = StringFromKey("Poteryanoe_Koltso_30");
 			link.l1 = StringFromKey("Poteryanoe_Koltso_31");
 			link.l1.go = "Pomenyt";
-			AddCharacterExpToSkill(pchar, "Leadership", 250);
-			AddCharacterExpToSkill(pchar, "Sneak", 250);
-			ChangeCharacterReputation(pchar, 5);
+			AddCharacterExpToSkill(pchar, "Leadership", 50);
+			AddCharacterExpToSkill(pchar, "Sneak", 200);
+			ChangeCharacterReputation(pchar, -5); //за обман
 			LAi_CharacterDisableDialog(npchar);
 			npchar.lifeday = 0;
 			RemoveLandQuestMark_Main(npchar, "PDM_Poteryanoe_Koltso");
@@ -147,6 +150,29 @@ void ProcessDialogEvent()
 			dialog.text = StringFromKey("Poteryanoe_Koltso_32");
 			link.l1 = StringFromKey("Poteryanoe_Koltso_33");
 			link.l1.go = "Kupit";
+
+			if (GetCharacterSPECIAL(pchar, "Charisma") >= 4)
+			{
+				link.l2 = StringFromKey("Poteryanoe_Koltso_72");
+				link.l2.go = "Ubedil";
+			}
+		break;
+
+		case "Ubedil":
+			dialog.text = StringFromKey("Poteryanoe_Koltso_30");
+			link.l1 = StringFromKey("Poteryanoe_Koltso_31");
+			link.l1.go = "Pomenyt";
+			AddCharacterExpToSkill(pchar, "Leadership", 300);
+			ChangeCharacterReputation(pchar, 5);
+			LAi_CharacterDisableDialog(npchar);
+			npchar.lifeday = 0;
+			RemoveLandQuestMark_Main(npchar, "PDM_Poteryanoe_Koltso");
+
+			DeleteAttribute(pchar, "questTemp.PDM_PK_UvestiNaVerh");
+			RemoveLandQuestMark_Main(CharacterFromID("SantoDomingo_Hostess"), "PDM_Poteryanoe_Koltso");
+			GiveItem2Character(PChar, "PDM_PK_Koltso");
+			AddQuestRecord("PDM_Poteryanoe_Koltso", "4");
+			AddQuestUserData("PDM_Poteryanoe_Koltso", "sSex", GetSexPhrase("", "а"));
 		break;
 
 		case "Kupit":
@@ -283,9 +309,10 @@ void ProcessDialogEvent()
 			sld.dialog.currentnode = "PosleTraha";
 
 			AddCharacterExpToSkill(pchar, "Sneak", 300);
-			AddCharacterExpToSkill(pchar, "Leadership", 100);
-			AddCharacterExpToSkill(pchar, "Fortune", 100);
+			AddCharacterExpToSkill(pchar, "Leadership", 200);
+			AddCharacterExpToSkill(pchar, "Fortune", 150);
 			AddCharacterHealth(pchar, 10);
+			ChangeCharacterReputation(pchar, -2);
 
 			AddQuestRecord("PDM_Poteryanoe_Koltso", "5");
 			AddQuestUserData("PDM_Poteryanoe_Koltso", "sSex", GetSexPhrase("", "а"));
@@ -339,11 +366,19 @@ void ProcessDialogEvent()
 			dialog.text = StringFromKey("Poteryanoe_Koltso_70", GetAddress_Form(NPChar));
 			link.l1 = StringFromKey("Poteryanoe_Koltso_71");
 			link.l1.go = "Nagrada";
-			AddMoneyToCharacter(pchar, 5000);
-			TakeNItems(PChar, "jewelry2", 10);
-			AddCharacterExpToSkill(pchar, "Sailing", 100);
-			AddCharacterExpToSkill(pchar, "Leadership", 100);
-			ChangeCharacterReputation(pchar, 2);
+			AddMoneyToCharacter(pchar, 5735);
+			TakeNItems(PChar, "jewelry7", 2);
+			TakeNItems(PChar, "jewelry10", 1);
+			TakeNItems(PChar, "jewelry13", 1);
+			TakeNItems(PChar, "jewelry14", 2);
+			TakeNItems(PChar, "jewelry15", 1);
+			TakeNItems(PChar, "jewelry18", 2);
+
+			AddCharacterExpToSkill(pchar, "Sailing", 400);
+			AddCharacterExpToSkill(pchar, "Sneak", 400);
+			AddCharacterExpToSkill(pchar, "Fortune", 200);
+			ChangeCharacterReputation(pchar, 15);
+			ChangeCharacterNationReputation(pchar, FRANCE, 7);
 		break;
 
 		case "Nagrada":

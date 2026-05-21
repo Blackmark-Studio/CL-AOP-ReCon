@@ -808,7 +808,7 @@ void ShowInfoWindow()
 				sText1 += XI_ConvertString("Maneuver") + ": " + FloatToString(stf(refBaseShip.TurnRate), 2) + "\n";
 				sText1 += XI_ConvertString("AgainstWind") + ": " + FloatToString(stf(refBaseShip.WindAgainstSpeed), 2) + "\n";
 				sText1 += XI_ConvertString("Capacity") + ": " + refBaseShip.Capacity + "\n";
-				sText1 += XI_ConvertString("Crew") + ": " + refBaseShip.MinCrew +" / " + refBaseShip.OptCrew + "\n";
+				sText1 += XI_ConvertString("Crew") + ": " + refBaseShip.MinCrew +" / " + refBaseShip.OptCrew + " / " + refBaseShip.MaxCrew + "\n";
 				sText1 += XI_ConvertString("sCannons") + ": " + XI_ConvertString("caliber" + refBaseShip.MaxCaliber) + "\n";
 				picW = 128;
 				picH = 128;
@@ -1399,7 +1399,7 @@ void FillPriceListTown(string _tabName)
 				rCity = GetColonyByIndex(FindColony(CityId));
 				StoreNum = GetStorage(CityId);
 				refStorage = &stores[StoreNum];
-				if (n == 0) firstId = rCity.id;
+				if (n == 0) firstId = CityId;
 				GameInterface.(_tabName).(row).UserData.CityID = rCity.id;
 				GameInterface.(_tabName).(row).UserData.CityIDX = cn;
 				GameInterface.(_tabName).(row).UserData.IsBank = 0;
@@ -1446,7 +1446,7 @@ void FillPriceListTown(string _tabName)
 				rCity = GetColonyByIndex(FindColony(CityId));
 				StoreNum = GetStorage(CityId);
 				refStorage = &stores[StoreNum];
-				if (n == 0) firstId = rCity.id;
+				if (n == 0) firstId = CityId;
 				GameInterface.(_tabName).(row).UserData.CityID = rCity.id;
 				GameInterface.(_tabName).(row).UserData.CityIDX = cn;
 				GameInterface.(_tabName).(row).UserData.IsBank = 1;
@@ -1523,7 +1523,7 @@ void FillPriceList(string _tabName, string attr1, string isBank)
 		{
 			if (attr1 == "Secret_Fort") StoreNum = SHIP_STORE;
 			else StoreNum = GetStorage(attr1);
-			if (StoreNum > 0)
+			if (StoreNum >= 0)
 			{
 				refStorage = &stores[StoreNum];
 
@@ -1573,7 +1573,7 @@ void FillPriceList(string _tabName, string attr1, string isBank)
 		{
 			if (attr1 == "Secret_Fort") StoreNum = SHIP_STORE;
 			else StoreNum = GetStorage(attr1);
-			if (StoreNum > 0)
+			if (StoreNum >= 0)
 			{
 				refStorage = &stores[StoreNum];
 				for (i = 0; i < GOODS_QUANTITY; i++)

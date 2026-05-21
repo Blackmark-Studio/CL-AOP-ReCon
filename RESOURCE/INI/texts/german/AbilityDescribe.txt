@@ -245,7 +245,7 @@ Erhöht die Schiffsgeschwindigkeit um 20#sSailingProfessional_speed#% und die Ma
 SeaDogProfessional {Herrscher der Meere}
 perkSeaDogProfessional
 {
-Selbst eingefleischte Abenteurer und Banditen wagen es nicht, ihr Glück zu versuchen, wenn sie die Flagge des Meisters der Meere sehen. Verhindert Angriffe regulärer feindlicher Geschwader auf der Weltkarte.
+Beim Anblick dieses Wimpels wagen selbst die berüchtigtsten Abenteurer und Räuber nicht, ihr Schicksal herauszufordern. Diese ultimative Fähigkeit zwingt bestimmte Geschwader, Ihre Flotte zu ignorieren, erhöht die Kapitulationswahrscheinlichkeit feindlicher Schiffe um ein Vielfaches und eröffnet eine Reihe einzigartiger Möglichkeiten.
 ~
 Die Fähigkeit funktioniert nicht, wenn sich Schiffe niedriger Klassen im Geschwader befinden.
 ~
@@ -274,6 +274,10 @@ Investor {Investment-Meister}
 perkInvestor {Kenntnis finanzieller Mechanismen ermöglicht es dem Charakter, den Zinssatz für Bankeinlagen um 1 % zu erhöhen und zusätzliches Einkommen zu erzielen.}
 ProfessionalCommerce {Professioneller Handel}
 perkProfessionalCommerce {Zusätzlicher -15#sProfessionalCommerce#% Rabatt und +15% Verkaufsbonus bei allen Handelsgeschäften.}
+CrewSalaryOptimization		{Totalaudit}
+perkCrewSalaryOptimization	{Der Charakter bringet mit eiserner Faust Ordnung in die Schiffsbuchhaltung. Dank einer meisterhaften Überprüfung der Mannschaftsanteile und der Unterbindung aller unnötigen Ausgaben sinken die Kosten für die Besoldung der Crew im Geschwader um 40%, ohne dass die Disziplin leidet.
+~
+Nur für den Hauptcharakter verfügbar.}
 Carpenter {Grundreparatur}
 perkCarpenter
 {
@@ -468,6 +472,15 @@ Gewährt einen zusätzlichen 50% Rettungswurf, um mögliche Sklavenaufstände zu
 Duelist {Berühmter Duellant}
 DuelistFem {Berühmter Duellant}
 perkDuelist {+5% verursachter Schaden, -5% erhaltener Schaden im Nahkampf gegen einen Gegner, Anzahl der Verbündeten ist unerheblich.}
+InquisitionBlessing         {Segen der Inquisition}
+perkInquisitionBlessing     {Besondere Schirmherrschaft der Heiligen Inquisition, erhalten vom Oberinquisitor Antonio de Souza.
+~
+Innerer unerschütterlicher Glaube erfüllt jeden Schlag des Charakters mit heiliger Kraft und erhöht den Schaden gegen Monster, Untote und Indianer um 20%.}
+
+WitchCharm                  {Hexengabe}
+perkWitchCharm              {Eine besondere magische Gabe von Carla, erhalten als Belohnung dafür, sie vor den Scheiterhaufen der Inquisition gerettet zu haben.
+~
+Die hellen Zauber der weißen Hexe legen sich als unsichtbarer Schild um den Charakter, der ihn vor bösen Absichten schützt und den erlittenen Schaden von Monstern, Untoten und Indianern um 20% reduziert.}
 HighwaySmuggler {Erfahrener Schmuggler}
 perkHighwaySmuggler {Dieser Mann kennt viele geheime Wege und hat wiederholt Schmuggel betrieben, wobei er das Gesetz und seine Hüter getäuscht hat.}
 Schemer {Intrigant}
@@ -492,6 +505,38 @@ OneLegMan {Einbeinig}
 perkOneLegMan {Die Figur hat ein Bein verloren, aber ihre Kampffähigkeiten nicht eingebüßt.}
 SaveLoadAbuser {Betrüger}
 perkSaveLoadAbuser {Ein berüchtigter Spieler, dem trotz seines Erfolgs im Betrügen von anderen misstraut wird, was ihn zu einem Einzelgänger in der Welt des Glücksspiels macht.}
+Monomania                {Monomanie}
+perkMonomania             {Der Charakter ist seinem Handwerk fanatisch ergeben, aber in allem, was über sein enges Interesse hinausgeht, absolut hilflos.
+~
+Ein einzigartiges Talent in einem bestimmten Beruf gewährt einen erheblichen Basisbonus, jedoch wird der Charakter in allen anderen Tätigkeitsbereichen praktisch nutzlos.}
+
+Stuttering               {Stottern}
+perkStuttering            {Ein Sprachfehler, der es dem Charakter erschwert, seine Gedanken klar und schnell auszudrücken.
+~
+Verringert den Basiswert für Charisma und verleiht Abzüge auf Handel und Führung.}
+
+Redskin                  {Indigener}
+perkRedskin               {Dieser Charakter ist tief im Dschungel aufgewachsen und hat keine Ahnung, wie das Leben auf einem europäischen Schiff funktioniert.
+~
+Aufgrund völlig fehlender Seefahrtskenntnisse kann er nicht auf Offiziersposten berufen werden, die mit der Schiffsführung zu tun haben. Als treuer Enterer ist er jedoch unersetzlich.}
+
+NoCaptain                {Mitläufer}
+perkNoCaptain             {Diesem Charakter fehlt es völlig an Führungsqualitäten, und die Verantwortung für ein ganzes Schiff und seine Besatzung versetzt ihn in Panik.
+~
+Der Charakter kann nicht als Gefährte (Kapitän eines separaten Schiffes) im Geschwader eingesetzt werden. Er kann jedoch weiterhin effektiv als normaler Offizier unter Ihrem Kommando dienen.}
+
+MusketeerOnly            {Überzeugter Schütze}
+perkMusketeerOnly         {Der Charakter erkennt nur die Macht von Pulver und Blei an und ist völlig unfähig (oder weigert sich aus Prinzip), eine Nahkampfwaffe in den Händen zu halten. Im Kampf kann er ausschließlich eine Muskete verwenden.}
+
+WeaponBonding             {Waffenbindung}
+perkHumphreyGunmaster      {Der Charakter spürt eine tiefe mentale Bindung zu seiner einzigartigen Waffe.
+~
+Diese Charaktereigenschaft erlaubt es dem Charakter nicht, eine andere Waffe zu benutzen, aber im Umgang mit seiner persönlichen Waffe ist er unübertroffen.}
+
+DuglasSchool             {Musketier-Spezialausbildung}
+perkDuglasSchool          {Der Charakter wurde nach einer komplexen und seltenen Methodik der Elite-Schützenschulen der Alten Welt ausgebildet.
+~
+Nur wer diese seltene klassische Basis perfekt beherrscht, ist in der Lage, seltene und experimentelle Musketenarten einzusetzen.}
 Energaiser {Energiegeladen}
 perkEnergaiser {Die Figur befindet sich auf dem Höhepunkt ihrer körperlichen Leistungsfähigkeit, wodurch sich die Energie 1,5-mal schneller regeneriert.}
 LoyalOff {Loyalität}

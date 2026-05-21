@@ -26,7 +26,7 @@ LeifEricson_6 {
 And what will happen to my body?
 }
 LeifEricson_7 {
-Do your job, privateer.
+Do your job, corsair.
 }
 LeifEricson_8 {
 Alright, Leif.
@@ -44,13 +44,13 @@ LeifEricson_11_f {
 I don't have them, I didn't find them...
 }
 LeifEricson_12 {
-Now I set you free. You may go; the way out is clear.
+Now I set you free. The way out is clear! You may go now.
 }
 LeifEricson_13 {
 Thank you. I hope we won't meet again.
 }
 LeifEricson_14 {
-Farewell, privateer...
+Farewell, corsair...
 }
 LeifEricson_15 {
 Farewell, Leif.
@@ -80,25 +80,25 @@ LeifEricson_20 {
 What’s your name, and who are you? Answer, and you’ll live.
 }
 LeifEricson_21 {
-My name is @<GetFullName>. I’m a privateer.
+My name is @<GetFullName>. I’m a corsair.
 }
 LeifEricson_22 {
 Isn’t that a bit lofty a tone for a mangy old skull?
 }
 LeifEricson_23 {
-What does "privateer" mean?
+What does "corsair" mean?
 }
 LeifEricson_24 {
-A privateer is a corsair... a buccaneer, a pirate...
+A corsair is a pirate...
 }
 LeifEricson_25 {
-What is a "filibuster," a "pirate"?
+What is a "pirate"?
 }
 LeifEricson_26_m {
 Well, how can I put it... I’m a free sailor and a free warrior. I have my own ship, and I do what I see fit.
 }
 LeifEricson_26_f {
-Well, how can I put it... I’m a free sailor and a wild bird. I’ve got my own ship and I do as I please.
+Well, how can I put it... I’m a free sailor and a free bird. I’ve got my own ship and I do as I please.
 }
 LeifEricson_27_m {
 Ha-ha! You and I are blood brothers! I’m glad it was a kindred spirit who carried out my plan. That’s a sign of great fortune for me...
@@ -200,7 +200,7 @@ LeifEricson_51 {
 (thinking) If only I could get out of this crypt, I’m not hauling anything back here—find some fool for that... (aloud) Fine, can I go now?
 }
 LeifEricson_52_m {
-Basically, yes. Just one ti-i-iny little thing, so you’ll come back a bit sooner.\nFor a while, I’ll take your body, and you’ll get mine. Just for a while, too.
+Basically, yes. Just one ti-i-iny little thing, so you’ll come back a little faster\nFor a while, I’ll take your body, and you’ll get mine. Just for a while, too.
 }
 LeifEricson_52_f {
 In short, yes. Just one ti-i-iny little thing left, so you’ll hurry back.\nFor a while, I’ll take your body, and you’ll get mine. Just for a while, too.

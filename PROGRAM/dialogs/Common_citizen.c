@@ -167,7 +167,7 @@ void ProcessDialogEvent()
 			}
 			else
 			{
-				if (!CheckAttribute(NPChar, "CitizenFindItem.NoQuest") && rand(5) == 1 && NPChar.sex == "woman" && !CheckAttribute(PChar, "GenQuest.CitizenFindItem.StartQuest") && CheckAttribute(NPChar, "City"))
+				if (!CheckAttribute(NPChar, "CitizenFindItem.NoQuest") && rand(5) == 1 && NPChar.sex == "woman" && !CheckAttribute(PChar, "GenQuest.CitizenFindItem.StartQuest") && !CheckAttrValue(NPChar, "City", "Charles"))
 				{
 					dialog.Text = StringFromKey("Common_citizen_50");
 					link.l1 = StringFromKey("Common_citizen_54", LinkRandPhrase(

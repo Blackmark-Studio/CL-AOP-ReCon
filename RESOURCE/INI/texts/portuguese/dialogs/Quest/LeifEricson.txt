@@ -44,7 +44,7 @@ LeifEricson_11_f {
 Eu não os tenho, não os encontrei...
 }
 LeifEricson_12 {
-Agora estou te libertando. Pode ir; o caminho está livre.
+Agora estou te libertando. Pode ir, o caminho está livre.
 }
 LeifEricson_13 {
 Obrigado. Espero que não nos encontremos novamente.
@@ -86,13 +86,13 @@ LeifEricson_22 {
 Não é um tom um pouco pretensioso para um crânio velho e surrado?
 }
 LeifEricson_23 {
-O que significa "privateer"?
+O que significa "corsário"?
 }
 LeifEricson_24 {
-Um corsário é um corsário... um bucaneiro, um pirata...
+Um corsário é um pirata...
 }
 LeifEricson_25 {
-O que é um "filibusteiro", um "pirata"?
+O que é um "pirata"?
 }
 LeifEricson_26_m {
 Bem, como posso dizer... Sou um marinheiro livre e um guerreiro livre. Tenho meu próprio navio e faço o que acho certo.

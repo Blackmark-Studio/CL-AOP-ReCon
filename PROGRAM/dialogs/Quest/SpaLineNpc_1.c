@@ -175,7 +175,7 @@ void ProcessDialogEvent()
 			QuestAboardCabinDialogQuestSurrender();
 			DialogExit();
 			RemoveLandQuestmark_Main(npchar, "Spa_Line");
-			AddLandQuestmark_Main(CharacterFromID("AntonioDeSouza"), "Spa_Line");
+			AddLandQuestmark_Main(CharacterFromID("Santiago_Inquisitor"), "Spa_Line");
 		break;
 		//********************************* Расследование убийства. Квест №4 **********************************
 		case "Step_S4_1":
@@ -249,7 +249,7 @@ void ProcessDialogEvent()
 			LAi_group_SetCheck(LAI_GROUP_TmpEnemy, "Sp5LaVegaAttack_AfterFight");
 			NPChar.LifeDay = 0;
 			SaveCurrentNpcQuestDateParam(NPChar, "LifeTimeCreate");
-			SetReturn_Gover_Dialog_Exit(NPChar);
+//			SetReturn_Gover_Dialog_Exit(NPChar);
 			DialogExit();
 			AddDialogExitQuest("MainHeroFightModeOn");
 		break;

@@ -26,7 +26,7 @@ LeifEricson_6 {
 A co stanie się z moim ciałem?
 }
 LeifEricson_7 {
-Rób swoje, kaprze.
+Rób swoje, korsarz.
 }
 LeifEricson_8 {
 Dobrze, Leif.
@@ -50,7 +50,7 @@ LeifEricson_13 {
 Dziękuję. Mam nadzieję, że już się nie spotkamy.
 }
 LeifEricson_14 {
-Żegnaj, korsarzu...
+Żegnaj, korsarz...
 }
 LeifEricson_15 {
 Żegnaj, Leif.
@@ -86,13 +86,13 @@ LeifEricson_22 {
 Czy to nie za wyniosły ton jak na taką obdrapaną czaszkę?
 }
 LeifEricson_23 {
-Co znaczy „kaper”?
+Co znaczy „korsarz”?
 }
 LeifEricson_24 {
-Kaper to korsarz... Filibuster, pirat...
+Korsarz jest pirat...
 }
 LeifEricson_25 {
-Czym jest „filibuster”, „pirat”?
+Czym jest „pirat”?
 }
 LeifEricson_26_m {
 No cóż, jak ci to wytłumaczyć... Jestem wolnym marynarzem i wolnym wojownikiem. Mam własny statek i robię to, co uważam za słuszne.

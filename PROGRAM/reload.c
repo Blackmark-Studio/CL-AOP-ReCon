@@ -225,7 +225,7 @@ int Reload(aref reload_group, string locator_name, string current_location)
 		//SendMessage(&reload_fader, "ls", FADER_PICTURE0, "interfaces\card_desk.tga");
 		if(!CheckAttribute(pchar, "todeck"))
 		{
-			SendMessage(&reload_fader, "ls",FADER_PICTURE0,"loading\Standsea_" + rand(6) + ".tga");
+			SendMessage(&reload_fader, "ls",FADER_PICTURE0,"loading\Standsea_" + rand(3) + ".tga");
 		}
 		else
 		{
@@ -312,7 +312,7 @@ void ReloadStartFade()
 				ref rLocIn = &locations[reload_location_index];
 				ref rLocOut = &locations[reload_cur_location_index];
 
-				if (CheckAttribute(&TEV, "Music.CurrentTrack"))
+				if (CheckAttribute(&TEV, "Music.CurrentTrack") && CheckAttributeEx(rLocOut, "type,id.label", "&") && CheckAttributeEx(rLocIn, "type,id.label", "&"))
 				{
 					if (bSeaActive)
 					{

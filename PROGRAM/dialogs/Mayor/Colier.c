@@ -251,7 +251,7 @@ void ProcessDialogEvent()
 				if (charIdx != -1)
 				{
 					ok = CheckAttribute(&characters[charIdx], "prisoned") && sti(characters[charIdx].prisoned) == true;
-					if (!ok && GetRemovable(&characters[charIdx]))
+					if (!ok && !CheckAttribute(&characters[charIdx], "CompanionDisable") && GetRemovable(&characters[charIdx]))
 					{
 						sAttr = "l" + i;
 						sProf = " ";

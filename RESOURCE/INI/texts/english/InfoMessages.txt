@@ -151,7 +151,7 @@ InfoMessages_149 {Spyglass received}
 InfoMessages_150 {You received 25 emeralds}
 InfoMessages_151 {You received a chest of gold}
 InfoMessages_152 {@<sAttr> is coming to you.}
-InfoMessages_153 {You received two bottles, one of which is now YOURS.}
+InfoMessages_153 {You have received the recipe for 'Sangaree'.}
 InfoMessages_154 {Gave @<iSmallPearl> small pearls.}
 InfoMessages_155 {Gave @<iBigPearl> large pearls.}
 InfoMessages_156 {Received @<iSmallPearl> small pearls.}

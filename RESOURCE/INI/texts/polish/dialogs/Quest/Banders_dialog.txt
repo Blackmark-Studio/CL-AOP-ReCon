@@ -56,7 +56,7 @@ Banders_dialog_13 {
 Ale z ciebie bezczelny. A twój kumpel mówił, że ma hojnych przyjaciół.
 }
 Banders_dialog_14 {
-Dobrze, słuchaj. Mam pewne informacje, że w ciągu najbliższych @<FindDaysString> u wybrzeży @<pchar> będą dwa kupieckie statki @<pchar> — '@<pchar>' i '@<pchar>', z ładowniami pełnymi . Możesz spróbować je przechwycić.
+Dobrze, słuchaj. Mam pewne informacje, że w ciągu najbliższych @<FindDaysString> u wybrzeży @<pchar> będą dwa kupieckie statki @<pchar> — '@<pchar>' i '@<pchar>', z ładowniami pełnymi @<pchar>. Możesz spróbować je przechwycić.
 }
 Banders_dialog_15_m {
 Świetnie! Wygląda na to, że nie na darmo podzieliłem się z tobą pieniędzmi.
@@ -65,7 +65,7 @@ Banders_dialog_15_f {
 Świetnie! Wygląda na to, że nie na darmo podzieliłam się z tobą pieniędzmi.
 }
 Banders_dialog_16 {
-Dobrze, słuchaj. Mam pewne informacje, że w ciągu najbliższych @<FindDaysString> u wybrzeży @<pchar> będą dwa kupieckie statki @<pchar> — '@<pchar>' i '@<pchar>', z ładowniami pełnymi . Możesz spróbować je przechwycić.
+Dobrze, słuchaj. Mam pewne informacje, że w ciągu najbliższych @<FindDaysString> u wybrzeży @<pchar> będą dwa kupieckie statki @<pchar> — '@<pchar>' i '@<pchar>', z ładowniami pełnymi @<pchar>. Możesz spróbować je przechwycić.
 }
 Banders_dialog_17_m {
 Świetnie! Wygląda na to, że nie na darmo podzieliłem się z tobą pieniędzmi.

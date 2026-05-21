@@ -186,32 +186,32 @@ void wdmCreateWindInterface()
 	
 	worldMap.sky.texture = "Interfaces/Worldmap/sky.tga";
 	worldMap.sky.maskTexture = "Interfaces/Worldmap/sky_mask.tga";
-	worldMap.sky.leftPos = sti(showWindow.right) - RecalculateHIcon(makeint(144 * fHtRatio));
+	worldMap.sky.leftPos = sti(showWindow.right) - RecalculateHIcon(makeint(214 * fHtRatio));
 	worldMap.sky.topPos = sti(showWindow.top) + RecalculateVIcon(makeint(7 * fHtRatio));
-	worldMap.sky.width = 128 * fHtRatio;
-	worldMap.sky.height = 128 * fHtRatio;
+	worldMap.sky.width = 195 * fHtRatio;
+	worldMap.sky.height = 195 * fHtRatio;
 	worldMap.sky.color = argb(255, 255, 255, 255);
 	
 	worldMap.windPointer.texture = "Interfaces/Worldmap/wind_pointer.tga";
-	worldMap.windPointer.leftPos = sti(showWindow.right) - RecalculateHIcon(makeint(96 * fHtRatio));
-	worldMap.windPointer.topPos = sti(showWindow.top) + RecalculateVIcon(makeint(7 * fHtRatio));
-	worldMap.windPointer.width = 32 * fHtRatio;
-	worldMap.windPointer.height = 128 * fHtRatio;
+	worldMap.windPointer.leftPos = sti(showWindow.right) - RecalculateHIcon(makeint(135 * fHtRatio));
+	worldMap.windPointer.topPos = sti(showWindow.top) + RecalculateVIcon(makeint(35 * fHtRatio));
+	worldMap.windPointer.width = 37 * fHtRatio;
+	worldMap.windPointer.height = 145 * fHtRatio;
 	worldMap.windPointer.color = argb(255, 255, 255, 255);
 	
 	worldMap.windBar.texture = "Interfaces/Worldmap/bar.tga";
 	worldMap.windBar.maskTexture = "Interfaces/Worldmap/bar_mask.tga";
-	worldMap.windBar.leftPos = sti(showWindow.right) - RecalculateHIcon(makeint(144 * fHtRatio));
-	worldMap.windBar.topPos = sti(showWindow.top) + RecalculateVIcon(makeint(72 * fHtRatio));
-	worldMap.windBar.width = 128 * fHtRatio;
-	worldMap.windBar.height = 128 * fHtRatio;
+	worldMap.windBar.leftPos = sti(showWindow.right) - RecalculateHIcon(makeint(194 * fHtRatio));
+	worldMap.windBar.topPos = sti(showWindow.top) + RecalculateVIcon(makeint(112 * fHtRatio));
+	worldMap.windBar.width = 155 * fHtRatio;
+	worldMap.windBar.height = 155 * fHtRatio;
 	worldMap.windBar.color = argb(255, 255, 255, 255);
 	
 	worldMap.frame.texture = "Interfaces/Worldmap/back.tga";
-	worldMap.frame.leftPos = sti(showWindow.right) - RecalculateHIcon(makeint(144 * fHtRatio));
+	worldMap.frame.leftPos = sti(showWindow.right) - RecalculateHIcon(makeint(214 * fHtRatio));
 	worldMap.frame.topPos = sti(showWindow.top) + RecalculateVIcon(makeint(7 * fHtRatio));
-	worldMap.frame.width = 128 * fHtRatio;
-	worldMap.frame.height = 256 * fHtRatio;
+	worldMap.frame.width = 195 * fHtRatio;
+	worldMap.frame.height = 390 * fHtRatio;
 	worldMap.frame.color = argb(255, 255, 255, 255);
 
 	// TODO New UI by Maksim
@@ -222,35 +222,35 @@ void wdmCreateWindInterface()
 	worldMap.windText.pos.y = sti(showWindow.top) + makeint(127.0 * fHtRatio);
 	
 	worldMap.dateText.font = "interface_normal";
-	worldMap.dateText.scale = 1.0 * fHtRatio;
+	worldMap.dateText.scale = 1.2 * fHtRatio;
 	worldMap.dateText.color = argb(255, 255, 255, 255);
-	worldMap.dateText.pos.x = sti(showWindow.right) - RecalculateHIcon(makeint(80 * fHtRatio));
-	worldMap.dateText.pos.y = RecalculateVIcon(makeint(162 * fHtRatio));
+	worldMap.dateText.pos.x = sti(showWindow.right) - RecalculateHIcon(makeint(115 * fHtRatio));
+	worldMap.dateText.pos.y = RecalculateVIcon(makeint(210 * fHtRatio));
 	
 	worldMap.morale.texture = "Interfaces/Worldmap/morale.tga";
 	worldMap.morale.barTexture = "Interfaces/Worldmap/morale_bar.tga";
 	worldMap.morale.maskTexture = "Interfaces/Worldmap/morale_mask.tga";
-	worldMap.morale.leftPos = sti(showWindow.right) - RecalculateHIcon(makeint(144 * fHtRatio));
-	worldMap.morale.topPos = sti(showWindow.top) + RecalculateVIcon(makeint(198 * fHtRatio));
-	worldMap.morale.width = 128 * fHtRatio;
-	worldMap.morale.height = 64 * fHtRatio;
+	worldMap.morale.leftPos = sti(showWindow.right) - RecalculateHIcon(makeint(196 * fHtRatio));
+	worldMap.morale.topPos = sti(showWindow.top) + RecalculateVIcon(makeint(240 * fHtRatio));
+	worldMap.morale.width = 156 * fHtRatio;
+	worldMap.morale.height = 156 * fHtRatio;
 	worldMap.morale.color = argb(255, 255, 255, 255);
 	
 	worldMap.foodText.font = "interface_normal";
-	worldMap.foodText.scale = 1.0 * fHtRatio;
+	worldMap.foodText.scale = 1.2 * fHtRatio;
 	worldMap.foodText.color = argb(255, 255, 255, 255);
-	worldMap.foodText.pos.x = sti(showWindow.right) - RecalculateHIcon(makeint(104 * fHtRatio));
-	worldMap.foodText.pos.y = RecalculateVIcon(makeint(258 * fHtRatio));
+	worldMap.foodText.pos.x = sti(showWindow.right) - RecalculateHIcon(makeint(150 * fHtRatio));
+	worldMap.foodText.pos.y = RecalculateVIcon(makeint(362 * fHtRatio));
 	
 	worldMap.rumText.font = "interface_normal";
-	worldMap.rumText.scale = 1.0 * fHtRatio;
+	worldMap.rumText.scale = 1.2 * fHtRatio;
 	worldMap.rumText.color = argb(255, 255, 255, 255);
-	worldMap.rumText.pos.x = sti(showWindow.right) - RecalculateHIcon(makeint(54 * fHtRatio));
-	worldMap.rumText.pos.y = RecalculateVIcon(makeint(258 * fHtRatio));
+	worldMap.rumText.pos.x = sti(showWindow.right) - RecalculateHIcon(makeint(84 * fHtRatio));
+	worldMap.rumText.pos.y = RecalculateVIcon(makeint(362 * fHtRatio));
 	
 	worldMap.nationFlag.texture = "Interfaces/Worldmap/WorldMapEnsigns.tga";
-	worldMap.nationFlag.leftPos = sti(showWindow.right) - RecalculateHIcon(makeint(112 * fHtRatio));
-	worldMap.nationFlag.topPos = sti(showWindow.top) + RecalculateVIcon(makeint(298 * fHtRatio));
+	worldMap.nationFlag.leftPos = sti(showWindow.right) - RecalculateHIcon(makeint(147 * fHtRatio));
+	worldMap.nationFlag.topPos = sti(showWindow.top) + RecalculateVIcon(makeint(414 * fHtRatio));
 	worldMap.nationFlag.width = 64 * fHtRatio;
 	worldMap.nationFlag.height = 64 * fHtRatio;
 

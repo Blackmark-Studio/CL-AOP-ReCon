@@ -638,7 +638,7 @@ void ExitHideBlade() //задержка для выхода из CitizenNotBlade
 }
 
 //Поиск города назначения для эскортов у портманов и трактирщиков
-string FindDestinationCity(ref NPChar, int iDelta)
+string FindDestinationCity(ref NPChar, int iDelta, string sExcludeColony)
 {
 	int n, nation, storeArray[MAX_COLONIES], howStore = 0;
 
@@ -651,6 +651,7 @@ string FindDestinationCity(ref NPChar, int iDelta)
 		//if (GetNationRelation(sti(npchar.nation), sti(colonies[n].nation)) == RELATION_ENEMY) continue;
 		if (sti(colonies[n].nation) == PIRATE) continue;
 		if (GetIslandNameByCity(npchar.city) == colonies[n].islandLable) continue;
+		if (StrHasStr(colonies[n].id, sExcludeColony, 1)) continue;
 		//если добраться нельзя, то не добавляем
 		if (GetMaxDaysFromColony2Colony(npchar.city, colonies[n].id) == -1) continue;
 		storeArray[howStore] = n;

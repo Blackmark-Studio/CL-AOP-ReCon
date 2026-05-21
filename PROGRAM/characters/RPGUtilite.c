@@ -195,8 +195,13 @@ int ApplayNavyPenalty(ref _refCharacter, string skillName, int sumSkill)
     {
         int sailSkill;
         int needSkill;
+
+		//в ГПК не пенальтим
+		if (CheckAttribute(_refCharacter, "questTemp.LSC.IgnoreShipStatPenalty"))
+			return sumSkill;
+
         // общее умение навигации
-        if(CheckAttribute(_refCharacter, "TempSailing"))
+        if (CheckAttribute(_refCharacter, "TempSailing"))
         	sailSkill = _refCharacter.TempSailing;
         else sailSkill = GetSummonSkillFromNameSimple(_refCharacter, SKILL_SAILING);
 
@@ -210,7 +215,7 @@ int ApplayNavyPenalty(ref _refCharacter, string skillName, int sumSkill)
 	        if (sumSkill < 1) sumSkill = 1;
         }
     }
-    return  sumSkill;
+    return sumSkill;
 }
 // пенальти в скилы
 int ApplayNavyPenaltyToSkill(ref _refCharacter, string skillName, int sumSkill)
@@ -220,8 +225,12 @@ int ApplayNavyPenaltyToSkill(ref _refCharacter, string skillName, int sumSkill)
         int sailSkill;
         int needSkill;
 
+		//в ГПК не пенальтим
+		if (CheckAttribute(_refCharacter, "questTemp.LSC.IgnoreShipStatPenalty"))
+			return sumSkill;
+
 		// общее умение навигации
-		if(CheckAttribute(_refCharacter, "TempSailing"))
+		if (CheckAttribute(_refCharacter, "TempSailing"))
         	sailSkill = _refCharacter.TempSailing;
         else sailSkill = GetSummonSkillFromNameSimple(_refCharacter, SKILL_SAILING);
 
@@ -235,7 +244,7 @@ int ApplayNavyPenaltyToSkill(ref _refCharacter, string skillName, int sumSkill)
 	        if (sumSkill < 1) sumSkill = 1;
         }
     }
-    return  sumSkill;
+    return sumSkill;
 }
 // с пенальти и вещами +1
 int GetCharacterSPECIAL(ref _refCharacter, string skillName)
@@ -285,18 +294,20 @@ int GetCharacterSPECIALSimple(ref _refCharacter, string skillName)
         skillN = skillN + GetHealthNum(_refCharacter) - 6; // max -5
     }
     // boal учет вещей -->
-    /*if (IsCompanion(_refCharacter) || IsOfficer(_refCharacter))
+    if (IsMainCharacter(_refCharacter) || IsCompanion(_refCharacter) || IsOfficer(_refCharacter))
     {
-        // бронзовый крест +1 удача
     	//skillN = skillN + SetCharacterSkillByItem(_refCharacter, skillName, SKILL_SNEAK, "jewelry9", 1);
 
-    	// нельзя  Иначе рекурсия без выхода
+    	//TO: Konstrush раскомментить по необходимости
+		//skillN = skillN + SetCharacterSkillByEquipedItem(_refCharacter, skillName, SPECIAL_C, "suit_3", 1);
+
+/*    	// нельзя  Иначе рекурсия без выхода
     	if (GetItemsWeight(_refCharacter) > GetMaxItemsWeight(_refCharacter))
     	{
   	        skillN -=2;
     	}
-    	// boal учет перегруза 19.01.2004 <--
-	} */
+    	// boal учет перегруза 19.01.2004 <--*/
+	}
 	// boal <--
 	if (skillN <= 1) skillN = 1;
 	if( skillN > SPECIAL_MAX ) skillN = SPECIAL_MAX;
@@ -789,6 +800,33 @@ int SetCharacterSkillByItem(ref _refCharacter, string _skillName, string _itemSk
 	return iRetValue;
 }
 
+//HardCoffee учёт экипированных предметов
+int SetCharacterSkillByEquipedItem(ref rChr, string _skillName, string _itemSkillName, string itemID, int _addValue)
+{
+	if (_skillName != _itemSkillName) return 0;
+
+	aref arItm;
+	if (Items_FindItem(itemID, &arItm) < 0) return 0;
+	if (!CheckAttribute(arItm, "groupID")) return 0;
+	if (!CheckCharacterItem(rChr, itemID)) return 0;
+
+	string sGroupID = arItm.groupID;
+	if (!CheckAttribute(rChr, "equip." +sGroupID)) return 0;
+	if (itemID == rChr.equip.(sGroupID)) return _addValue;
+	return 0;
+}
+
+//HardCoffee учёт перков
+int SetCharacterSkillByPerk(ref _refCharacter, string _skillName, string _perkSkillName, string _perk, int _addValue)
+{
+	if (_skillName == _perkSkillName && CheckCharacterPerk(_refCharacter, _perk))
+	{
+		return _addValue;
+	}
+
+	return 0;
+}
+
 int SetCharacterSkillBySculArtefact(ref _refCharacter, string _skillName)
 {
     if (_skillName == SKILL_CANNONS || _skillName == SKILL_DEFENCE || _skillName == SKILL_GRAPPLING || _skillName == SKILL_SAILING)
@@ -898,6 +936,11 @@ int GetCharacterSkillSimple(ref _refCharacter, string skillName)
                 skillN = skillN + 5*(GetHealthNum(_refCharacter) - 6); // max -5
             }
         }
+
+        //перки
+        skillN = skillN + SetCharacterSkillByPerk(_refCharacter, skillName, SKILL_LEADERSHIP, "Stuttering", -5);
+		skillN = skillN + SetCharacterSkillByPerk(_refCharacter, skillName, SKILL_COMMERCE, "Stuttering", -5);
+
 		// РЕЛИГИОЗНЫЕ ПРЕДМЕТЫ
         // Бронзовый крестик
     	skillN = skillN + SetCharacterSkillByItem(_refCharacter, skillName, SKILL_FORTUNE, "jewelry9", 1);
@@ -1032,6 +1075,9 @@ int GetCharacterSkillSimple(ref _refCharacter, string skillName)
     	skillN = skillN + SetCharacterSkillByItem(_refCharacter, skillName, SKILL_FORTUNE, "PDM_PJ_BsRL", 2);
 		skillN = skillN + SetCharacterSkillByItem(_refCharacter, skillName, SKILL_COMMERCE, "PDM_PJ_BsRL", 2);
 		skillN = skillN + SetCharacterSkillByItem(_refCharacter, skillName, SKILL_SNEAK, "PDM_PJ_BsRL", -2);
+
+		//  itmname_instrument1	{Отличная пила} (+5 ремонт)
+		skillN = skillN + SetCharacterSkillByItem(_refCharacter, skillName, SKILL_REPAIR, "instrument1", 5);
 	
 		// Warship 25.10.08 Новый учет одежды
 		skillN += SetCharacterSkillBySuit(_refCharacter, skillName);
@@ -2062,6 +2108,10 @@ void ChangeAttributesFromCharacter(ref CopyChref, ref PastChref, bool _dialogCop
 	if (CheckAttribute(PastChref, "skill.freespecial"))
 		CopyChref.skill.freespecial = PastChref.skill.freespecial;
 
+	//переносим неваляшковость
+	if (CheckAttribute(PastChref, "chr_ai.roly_poly"))
+		CopyChref.chr_ai.roly_poly = true;
+
     // SPECIAL
     DeleteAttribute(CopyChref, "SPECIAL");
     CopyChref.SPECIAL = "";
@@ -2282,6 +2332,15 @@ void initNewMainCharacter()
 	string sTemp;
 	int    iTmp, i;
 
+	//HardCoffee Начальный дневной рандом dRand и временный dRandEx
+	g_sDayRand = Rand(32768);
+	TEV.dRandEx.last = "0";
+	for (i = 1; i <= 10; i++) //TODO: избавиться от dRandEx
+	{
+		sTemp = ""+i;
+		TEV.dRandEx.(sTemp) = Rand(32768);
+	}
+
     setNewMainCharacter(ch, startHeroType);
     // контроль версий -->
     InitMigrations();
@@ -2440,7 +2499,7 @@ void initNewMainCharacter()
 	else
 	{
 		SetCharacterPerk(pchar, "Gunman");
-		SetCharacterPerk(pchar, "LongRangeGrappling");
+		SetCharacterPerk(pchar, "SelfRepair");
 	}
 	SetCharacterPerk(pchar, "Energaiser"); // скрытый перк даёт 1.5 к приросту энергии, дается ГГ и боссам уровней
     SetBonusPush(ch, true);
@@ -2469,7 +2528,6 @@ void initNewMainCharacter()
 	pchar.ship.HP = sti(pchar.ship.HP) - makeint(sti(pchar.ship.HP)/2);
 
 	//Tutorial - НАЧАЛО ИГРЫ
-	TEV.HasAffairOfHonor = "0"; //HardCoffee отслеживать выдачу этого квеста
 	if (startHeroType == 1) //21/07/07 homo для Блада даем другое начало
     {
         pchar.quest.Tut_start.win_condition.l1          = "location";
@@ -2507,15 +2565,7 @@ void initNewMainCharacter()
 	// Важно: функция MaryCelesteInit() должна быть тут, а не в initStartState2Character()
 	// т.к. в ней идет выборка колоний, которые в функции initStartState2Character() ещё не инитились
 	MaryCelesteInit(); // Warship 07.07.09 Пасхалка "Мэри Селест"
-
-	//HardCoffee Начальный дневной рандом dRand и временный dRandEx
-	g_sDayRand = Rand(32768);
-	TEV.dRandEx.last = "0";
-	for (i = 1; i <= 10; i++) //TODO: избавиться от dRandEx
-	{
-		sTemp = ""+i;
-		TEV.dRandEx.(sTemp) = Rand(32768);
-	}
+	PDMQuestsInit(); // ==> Квесты Проклятие Дальних Морей
 }
 
 void initMainCharacterItem()

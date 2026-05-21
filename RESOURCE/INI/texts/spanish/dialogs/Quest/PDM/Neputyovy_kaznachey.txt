@@ -44,7 +44,7 @@ Neputyovy_kaznachey_15 {
 No lo sé. Ya se me ocurrirá algo. Espérame aquí.
 }
 Neputyovy_kaznachey_16 {
-¡Capitán Vitor! Ah, eres tú... Me diste un buen susto. ¿H-h-has visto a V-v-ictor?
+¡Capitán Victor! Ah, eres tú... Me diste un buen susto. ¿H-h-has visto a V-v-ictor?
 }
 Neputyovy_kaznachey_17 {
 Todavía no. Pero no te preocupes, yo me encargaré de él.
@@ -62,10 +62,10 @@ Neputyovy_kaznachey_21 {
 ¡Tú! ¡Oye, tú! ¿Has visto por aquí a un tesorero llamado Andreas, con gafas y sin cerebro? ¡Él es la razón de que esté en la ruina! ¡Parásito! ¡Voy a matarlo! ¡Me arruinó!
 }
 Neputyovy_kaznachey_22 {
-Vaya, vaya. Así que tú eres Vitor Bretier.
+Vaya, vaya. Así que tú eres Victor Bretier.
 }
 Neputyovy_kaznachey_23 {
-Sí, soy Vitor. ¡Y ese perro sarnoso prendió fuego a la mitad de mi barco con esos malditos barriles de pólvora! ¡Lo voy a despellejar vivo!
+Sí, soy Victor. ¡Y ese perro sarnoso prendió fuego a la mitad de mi barco con esos malditos barriles de pólvora! ¡Lo voy a despellejar vivo!
 }
 Neputyovy_kaznachey_24 {
 Cálmate, amigo. Andreas está bajo mi protección.
@@ -107,16 +107,16 @@ Neputyovy_kaznachey_34 {
 ¿Dije @<Plata1>? ¡No, eso fue un error! ¡Por lo menos, @<Plata2>!
 }
 Neputyovy_kaznachey_35 {
-¡Tienes mucho valor, Vitor! Prefiero hacerte pedazos antes que dejar que le hagas daño a Andreas.
+¡Tienes mucho valor, Victor! Prefiero hacerte pedazos antes que dejar que le hagas daño a Andreas.
 }
 Neputyovy_kaznachey_36 {
-Toma, aquí tienes tu dinero. Disfruta, Vitor.
+Toma, aquí tienes tu dinero. Disfruta, Victor.
 }
 Neputyovy_kaznachey_37 {
 Te traeré @<FindMoneyString>. Pero recuerda: un solo cañonazo de mi barco convertirá tu bote en un colador, así que no le pongas un dedo encima a Andreas.
 }
 Neputyovy_kaznachey_38 {
-¡Tienes mucho valor, Vitor! Prefiero hacerte pedazos antes que dejar que toques a Andreas.
+¡Tienes mucho valor, Victor! Prefiero hacerte pedazos antes que dejar que toques a Andreas.
 }
 Neputyovy_kaznachey_39 {
 Muy bien, en cuanto tenga el dinero, pasaré por aquí.
@@ -143,7 +143,7 @@ Neputyovy_kaznachey_45 {
 @<FindMoneyString>. Aquí tienes.
 }
 Neputyovy_kaznachey_46 {
-No tengo esa cantidad de dinero ahora, Vitor, pero volveré más tarde y pagaré por Andreas.
+No tengo esa cantidad de dinero ahora, Victor, pero volveré más tarde y pagaré por Andreas.
 }
 Neputyovy_kaznachey_47 {
 Estoy harto de recorrer todo el archipiélago por tu maldita carga. Ya podrías haber ido tú mismo y ganado unas monedas cien veces, viejo tronco.
@@ -155,7 +155,7 @@ Neputyovy_kaznachey_49 {
 ¡Menos charla, más acción!
 }
 Neputyovy_kaznachey_50 {
-¡C-c-capitán @<pchar>! Ah, eres tú, @<GetAddress_Form>! Me a-asustaste. ¿Ya hablaste con V-Vitor?
+¡C-c-capitán @<pchar>! Ah, eres tú, @<GetAddress_Form>! Me a-asustaste. ¿Ya hablaste con V-Victor?
 }
 Neputyovy_kaznachey_51 {
 Sí. Ya no te molestará. Puedes regresar tranquilo a tu ‘Sea Gull’.
@@ -174,4 +174,7 @@ Neputyovy_kaznachey_55 {
 }
 Neputyovy_kaznachey_56 {
 Bienvenido a bordo, Andreas.
+}
+Neputyovy_kaznachey_57 {
+	No. Ya has dado tu precio. Recuerda – cada palabra de más aumenta el riesgo de destrucción de tu barco. Que tengas un buen rato, Viktor.
 }

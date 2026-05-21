@@ -54,12 +54,6 @@ void InitInterface_BB(string iniName, bool isSave, bool isMainMenu)
 		SendMessage(&GameInterface, "lsls", MSG_INTERFACE_MSG_TO_NODE, "BTN_SAVELOAD", 0, "Save");
 	}
 
-	// by default first save is selected
-	SendMessage(&GameInterface, "lsll", MSG_INTERFACE_MSG_TO_NODE, "SAVEIMG1", 5, true);
-	SendMessage(&GameInterface, "lslll", MSG_INTERFACE_MSG_TO_NODE, "SAVENOTES", 3, 1, argb(255, 255, 255, 255));
-	SendMessage(&GameInterface, "lslll", MSG_INTERFACE_MSG_TO_NODE, "SAVENOTES", 3, 2, argb(255, 255, 255, 255));
-	SendMessage(&GameInterface, "lslll", MSG_INTERFACE_MSG_TO_NODE, "SAVENOTES", 3, 3, argb(255, 255, 255, 255));
-
 	FillProfileList();
 	FindScrshotClass();
 	InitSaveObjList();
@@ -116,7 +110,28 @@ void SetCurrentProfile(string sProfileName)
 	if (!bThisSave) SelectSaveImage(0);
 	SetClickable("SAVESCROLL", g_nSaveQuantity > MAX_SAVE_SLOTS);
 	// show profile name
-	SendMessage(&GameInterface, "lslls", MSG_INTERFACE_MSG_TO_NODE, "SAVEINFO", 1, 1, "#" + XI_ConvertString("ProfileName") + ": " + currentProfile);
+	string profNameText = "#" + XI_ConvertString("ProfileName") + ": " + currentProfile;
+	int textWidth = GetStringWidth(profNameText, "interface_button", 0.95);
+	int iconOffset = -3;
+	int i = 1;
+	while (textWidth > 200)
+	{
+	    profNameText = strcut(profNameText, 0, strlen(profNameText)-(1+i));
+	    textWidth = GetStringWidth(profNameText, "interface_button", 0.95);
+	    i++;
+	}
+	if (i > 1)
+	{
+	    profNameText += "...";
+	    iconOffset = 0;
+	}
+	SendMessage(&GameInterface, "lslls", MSG_INTERFACE_MSG_TO_NODE, "SAVEINFO", 1, 1, profNameText);
+	// set icon pos
+	float foffsetX, foffsetY;
+	GetXYWindowOffset(&foffsetX, &foffsetY);
+
+	int posLeft = 771+makeint(foffsetX + textWidth * 0.5) + iconOffset;
+	SendMessage(&GameInterface, "lslllll", MSG_INTERFACE_MSG_TO_NODE, "PROFILE_PIC", 0, posLeft,170+makeint(foffsetY),posLeft + 20,190+makeint(foffsetY));
 	SSI("1000");
 }
 
@@ -340,6 +355,8 @@ void SaveLoadCurrentIntoSlot()
 			// нет такой ячейки с записью
 			return;
 		}
+		if (!IsActualSaveVersion(&g_oSaveList[g_nCurrentSaveIndex - g_nFirstSaveIndex]))
+			return;
 		if (bIsGameProcessNow)
 		{
 			// в данный момент уже идет игра?
@@ -516,6 +533,11 @@ void SetSelecting(int nSlot, bool bSelect)
 	else
 	{
 		nColor = argb(255, 148, 148, 148);
+	}
+	if (!IsActualSaveVersion(&g_oSaveList[nSlot]))
+	{
+		if (bSelect) nColor = argb(255, 204, 0, 0);
+		else nColor = argb(255, 102, 0, 0);
 	}
 	SendMessage(&GameInterface, "lsll", MSG_INTERFACE_MSG_TO_NODE, sNodeName, 5, bSelect);
 	SendMessage(&GameInterface, "lslll", MSG_INTERFACE_MSG_TO_NODE, "SAVENOTES", 3, nSlot * 3 + 1, nColor);
@@ -700,8 +722,8 @@ void ShowDataForSave(int nSlot, string picname, int picpointer, string strdata)
 
 	if (strdata != "")
 	{
-		string facestr, locName, timeStr, language, playtime, curship;
-		if (ParseSaveData(strdata, &facestr, &locName, &timeStr, &language, &playtime, &curship))
+		string facestr, locName, timeStr, language, playtime, curship, saveVer;
+		if (ParseSaveData(strdata, &facestr, &locName, &timeStr, &language, &playtime, &curship, &saveVer))
 		{
 			int iLen = 30;
 			if (strlen(locName) > iLen)
@@ -713,6 +735,7 @@ void ShowDataForSave(int nSlot, string picname, int picpointer, string strdata)
 			g_oSaveList[nSlot].faceinfo = facestr;
 			g_oSaveList[nSlot].playtime = playtime;
 			g_oSaveList[nSlot].curship = curship;
+			g_oSaveList[nSlot].saveVer = saveVer;
 		}
 		else
 		{
@@ -720,6 +743,7 @@ void ShowDataForSave(int nSlot, string picname, int picpointer, string strdata)
 			SendMessage(&GameInterface, "lslls", MSG_INTERFACE_MSG_TO_NODE, "SAVENOTES", 1, nSlot * 3 + 2, "#No Time");
 			g_oSaveList[nSlot].faceinfo = "";
 			g_oSaveList[nSlot].playtime = "";
+			g_oSaveList[nSlot].saveVer = "";
 		}
 	}
 	else
@@ -728,7 +752,12 @@ void ShowDataForSave(int nSlot, string picname, int picpointer, string strdata)
 		SendMessage(&GameInterface, "lslls", MSG_INTERFACE_MSG_TO_NODE, "SAVENOTES", 1, nSlot * 3 + 2, "#No Time");
 		g_oSaveList[nSlot].faceinfo = "";
 		g_oSaveList[nSlot].playtime = "";
+		g_oSaveList[nSlot].saveVer = "";
 	}
+	if (nSlot == 0)
+		SetSelecting(nSlot, true);
+	else
+		SetSelecting(nSlot, false);
 
 	if ((g_nCurrentSaveIndex - g_nFirstSaveIndex) == nSlot)
 	{
@@ -865,7 +894,7 @@ void PressEsc()
 		ProcExitProfile();
 }
 
-bool ParseSaveData(string fullSaveData, ref facestr, ref locationStr, ref timeStr, ref languageID, ref playtime, ref curship)
+bool ParseSaveData(string fullSaveData, ref facestr, ref locationStr, ref timeStr, ref languageID, ref playtime, ref curship, ref saveVer)
 {
 	string lastStr;
 	if (!GetNextSubStr(fullSaveData, locationStr, &lastStr, "@")) return false;
@@ -873,7 +902,8 @@ bool ParseSaveData(string fullSaveData, ref facestr, ref locationStr, ref timeSt
 	if (!GetNextSubStr(lastStr, timeStr, &lastStr, "@")) return false;
 	if (!GetNextSubStr(lastStr, playtime, &lastStr, "@")) return false;
 	if (!GetNextSubStr(lastStr, curship, &lastStr, "@")) return false;
-	GetNextSubStr(lastStr, languageID, &lastStr, "@");
+	if (!GetNextSubStr(lastStr, languageID, &lastStr, "@")) return false;
+	if (!GetNextSubStr(lastStr, saveVer, &lastStr, "@")) return false;
 	return true;
 }
 
@@ -1235,8 +1265,8 @@ void ReloadSaveInfo()
 		info = g_oSaveList[nSlot].faceinfo;
 		if (g_oSaveList[nSlot].playtime != "")
 		{
-			playtime = "#" + XI_ConvertString("Play Time") + ": " + g_oSaveList[nSlot].playtime;
-			XI_MakeNode("RESOURCE\INI\interfaces\save_load.ini", "PICTURE", "GAMETIME_PIC", 12000);
+			playtime = "#" + XI_ConvertString("Play Time") + ": " + ParsePlayTime(g_oSaveList[nSlot].playtime);
+			XI_MakeNode("RESOURCE\INI\interfaces\save_load.ini", "PICTURE", "GAMETIME_PIC", 120);
 		}
 		else
 		{
@@ -1247,7 +1277,26 @@ void ReloadSaveInfo()
 	ShowFaceInfo(info);
 	if (nSlot >= 0 && nSlot < MAX_SAVE_SLOTS && CheckAttribute(&g_oSaveList[nSlot], "curship")) SSI(g_oSaveList[nSlot].curship);
 	else SetNewPicture("SHIP_ICON", "");
+	int textWidth = GetStringWidth(playtime, "interface_button", 0.95);
+	int iconOffset = -3;
+	int i = 1;
+	while (textWidth > 200)
+	{
+	    playtime = strcut(playtime, 0, strlen(playtime)-(1+i));
+	    textWidth = GetStringWidth(playtime, "interface_button", 0.95);
+	    i++;
+	}
+	if (i > 1)
+	{
+	    playtime += "...";
+	    iconOffset = 0;
+	}
 	SendMessage(&GameInterface, "lslls", MSG_INTERFACE_MSG_TO_NODE, "SAVEINFO", 1, 2, playtime);
+	// set icon pos
+	float foffsetX, foffsetY;
+	GetXYWindowOffset(&foffsetX, &foffsetY);
+	int posLeft = 771+makeint(foffsetX + textWidth * 0.5) + iconOffset;
+	SendMessage(&GameInterface, "lslllll", MSG_INTERFACE_MSG_TO_NODE, "GAMETIME_PIC", 0, posLeft,210+makeint(foffsetY),posLeft + 19,229+makeint(foffsetY));
 
 	if (info == "")
 	{
@@ -1258,7 +1307,10 @@ void ReloadSaveInfo()
 	{
 		SetSelectable("BTN_SAVELOAD", true);
 		SetSelectable("BTN_DELETE", true);
+		if (!IsActualSaveVersion(&g_oSaveList[nSlot]))
+			SetSelectable("BTN_SAVELOAD", bThisSave);
 	}
+
 }
 
 void ScrollPosChange()
@@ -1301,4 +1353,18 @@ void SaveLoad()
 	}
 
 	SaveLoadCurrentIntoSlot();
+}
+
+bool IsActualSaveVersion(ref saveSlot)
+{
+	if (!CheckAttribute(saveSlot, "saveVer"))
+		return true;
+	if (saveSlot.saveVer != "")
+	{
+		if (saveSlot.saveVer != "SaveVer=" + VERSION_NUM_PRE)
+		{
+			return false;
+		}
+	}
+	return true;
 }

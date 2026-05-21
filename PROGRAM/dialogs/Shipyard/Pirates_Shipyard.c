@@ -16,6 +16,20 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 	int cannonAllWorkPrice, cannonQWorkPrice, cannonWorkPrice, capacityWorkPrice, SpeedRateWorkPrice, MaxCrewWorkPrice, TurnRateWorkPrice, HPWorkPrice, WindAgainstWorkPrice;
 	float shipSpeedRate, shipTurnRate, shipWindAgainst;
 
+	int amount;
+	ref shTo, chTo;
+	string sTemp;
+	string s1;
+
+	if (HasSubStr(Dialog.CurrentNode, "ship_tuning_start|"))
+	{
+		string attrL = Dialog.CurrentNode;
+		int index = findsubstr(attrL, "|", 0);
+		chTo = &characters[GetCompanionIndex(pchar, sti(strcut(attrL, index + 1, strlen(attrL) - 1)))];
+		NPChar.SelectedShip.Type = chTo.ship.type;
+		Dialog.CurrentNode = "ship_tuning_start";
+	}
+
 	if (CheckAttribute(NPChar, "SelectedShip.Type") && sti(NPChar.SelectedShip.Type) != SHIP_NOTUSED)
 	{
 		cannonQ = sti(RealShips[sti(NPChar.SelectedShip.Type)].CannonsQuantity);
@@ -166,20 +180,6 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 
 		if (cannonMatherial2 < 1) cannonMatherial2 = 1;
 		if (quantityMatherial2 < 1) quantityMatherial2 = 1;
-	}
-
-	int amount;
-	ref shTo, chTo;
-	string sTemp;
-	string s1;
-
-	if (HasSubStr(Dialog.CurrentNode, "ship_tuning_start|"))
-	{
-		string attrL = Dialog.CurrentNode;
-		int index = findsubstr(attrL, "|", 0);
-		chTo = &characters[GetCompanionIndex(pchar, sti(strcut(attrL, index + 1, strlen(attrL) - 1)))];
-		NPChar.SelectedShip.Type = chTo.ship.type;
-		Dialog.CurrentNode = "ship_tuning_start";
 	}
 
 	int j;

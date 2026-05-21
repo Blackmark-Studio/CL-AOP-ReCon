@@ -225,37 +225,24 @@ int LocationInitDominica(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Dominica_Grot";
 	locations[n].id.label = "Grot";
-    locations[n].image = "loading\inside\cave.tga";
+	locations[n].image = "loading\inside\Grotto.tga";
 	//Sound
 	locations[n].type = "Cave";
 	locations[n].islandId = "Dominica";
 	locations[n].onUninhabitedIsland = true;
 	//Models
 	//Always
-	locations[n].filespath.models = "locations\inside\grotto2";
-	locations[n].models.always.grotto2 = "grotto2";
-	locations[n].models.always.grotto2.sea_reflection = 1;
-	locations[n].models.always.grotto2alpha = "grotto2_alpha";
-	Locations[n].models.always.grotto2alpha.tech = "LocationWindows";	
-	locations[n].models.always.grotto2alpha.level = 65532;	
-	locations[n].models.always.locators = "grotto2_locators";	
+	locations[n].filespath.models = "locations\inside\GrotI";
+	locations[n].models.always.GrotI = "GrotI";
+	locations[n].models.always.locators = "GrotI_locators";
 
-	// EvgAnat - "дикие Карибы", убираем дефолтные сферы
-	locations[n].locators_radius.item.duhi1 = 0.0;
-	
-/*	Locations[n].models.always.rays = "grotto2_rays";
-	Locations[n].models.always.rays.level = 49;
-	Locations[n].models.always.rays.tech= "LocVisRays";
-	Locations[n].models.always.rays.uvslide.u1 = -0.03;
-	Locations[n].models.always.rays.uvslide.v1 = -0.03;	*/
 	//Day
-	locations[n].models.day.charactersPatch = "grotto2_patch";
+	locations[n].models.day.charactersPatch = "GrotI_patch";
 	//Night
-	locations[n].models.night.charactersPatch = "grotto2_patch";
+	locations[n].models.night.charactersPatch = "GrotI_patch";
 	//Environment
 	locations[n].environment.weather = "true";
-	locations[n].environment.sea = "true";
-	locations[n].environment.weather.rain = false;
+	locations[n].environment.sea = "false";
 	//Reload map
 	locations[n].reload.l1.name = "reload1_back";
 	locations[n].reload.l1.go = "Dominica_CaveEntrance";

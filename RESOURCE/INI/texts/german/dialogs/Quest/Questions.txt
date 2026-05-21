@@ -494,7 +494,7 @@ Questions_140 {
 Nein, ich glaube nicht...
 }
 Questions_141 {
-Dies ist eine Statue, die eine außergewöhnliche Fähigkeit zur Verbesserung von Schiffsreparaturen verleiht. Sie ist in einer Bucht nahe Portobelo versteckt. Die Bucht heißt Chiriquí Lagoon. Durchsuche die Gegend sorgfältig und scheue dich nicht, nasse Füße zu bekommen. Viel Glück, Captain!
+Dies ist eine Kiste mit Zimmermannswerkzeugen, mit denen Schiffe einst weitaus effizienter repariert werden konnten. Sie wurde in einer Bucht in der Nähe von Portobelo vergraben — der Chiriquí-Lagune. Sucht dort alles sorgfältig ab und scheut euch nicht, nasse Füße zu bekommen. Vielleicht ist ein Teil dieser hervorragenden Werkzeuge noch intakt... Viel Glück, Kapitän!
 }
 Questions_142 {
 Weißt du, das ist für einen Kapitän wirklich praktisch. Danke.

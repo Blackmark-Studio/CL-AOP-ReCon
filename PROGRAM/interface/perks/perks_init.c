@@ -17,7 +17,7 @@ void extrnInitPerks()
 	InitPerk("BasicDefense",			"self",		"",											0,			0,				0,			0,		"",				0,		0,		0,		0,			""); // Основы защиты
 	InitPerk("AdvancedDefense",			"self",		"BasicDefense",								0,			0,				0,			0,		"",				0,		0,		0,		0,			""); // Эксперт защиты
 	InitPerk("Ciras",					"self",		"AdvancedDefense",							0,			0,				0,			0,		"",				0,		0,		0,		0,			""); // Кираса
-	InitPerk("HPPlus",					"self",		"AdvancedDefense",							0,			0,				0,			0,		"",				0,		0,		0,		0,			""); // Растущая жизнь
+	InitPerk("HPPlus",					"self",		"",											0,			0,				0,			0,		"",				0,		0,		0,		0,			""); // Растущая жизнь
 	/// Атака > Холодное оружие
 	InitPerk("BasicAttack",				"self",		"",											0,			0,				0,			0,		"",				0,		0,		0,		0,			""); // Основы атаки
 	InitPerk("AdvancedAttack",			"self",		"BasicAttack,CriticalHit",					0,			0,				0,			0,		"",				0,		0,		0,		0,			""); // Эксперт атаки
@@ -41,13 +41,13 @@ void extrnInitPerks()
 	InitPerk("DevilsEye",				"self",		"Shoottech,GunProfessional",				0,			0,				0,			0,		"",				0,		0,		0,		0,			""); // Глаз дьявола
 	/// Персональные >
 	InitPerk("Grus",					"self",		"",											0,			0,				0,			0,		"",				0,		0,		0,		0,			""); // Дополнительный вес
-	InitPerk("Medic",					"self",		"AdvancedDefense",							0,			0,				1,			0,		"",				0,		0,		0,		0,			""); // Отменное здоровье
+	InitPerk("Medic",					"self",		"HPPlus",									0,			0,				1,			0,		"",				0,		0,		0,		0,			""); // Отменное здоровье
 	InitPerk("ByWorker",				"self",		"",											0,			0,				0,			1,		"",				1,		0,		0,		0,			""); // Совместитель
 	InitPerk("ByWorker2",				"self",		"ByWorker",									0,			0,				0,			1,		"",				1,		0,		0,		0,			""); // Совместитель-универсал
 	InitPerk("Alchemy",					"self",		"",											0,			0,				1,			0,		"",				0,		0,		0,		0,			""); // Алхимия
 	InitPerk("SharedExperience",		"self",		"",											0,			0,				1,			0,		"",				0,		0,		0,		0,			""); // Обмен опытом
 	InitPerk("ShipEscape",				"self",		"",											0,			0,				0,			0,		"",				0,		0,		0,		0,			""); // Спасение на шлюпке
-	InitPerk("Trustworthy",				"self",		"AdvancedCommerce",							0,			0,				1,			0,		"",				0,		0,		0,		0,			""); // Искусство обмана
+	InitPerk("Trustworthy",				"self",		"",											0,			0,				1,			0,		"",				0,		0,		0,		0,			""); // Искусство обмана
 	InitPerk("HawkEye",					"self",		"",											0,			0,				0,			0,		"fighter",		0,		0,		0,		0,			""); // Глаз Алмаз
 	InitPerk("NachoPuncher",			"self",		"",											0,			0,				1,			0,		"",				0,		0,		0,		0,			""); // Кулачный Бой
 	InitPerk("DrunkenMaster",			"self",		"NachoPuncher",								0,			0,				1,			0,		"",				0,		0,		0,		0,			""); // Пьяный мастер
@@ -66,8 +66,8 @@ void extrnInitPerks()
 	InitPerk("Troopers",				"ship",		"",											0,			0,				0,			0,		"boatswain",	0,		0,		0,		0,			""); // Высадка десанта союзных кораблей
 	InitPerk("IronWill",				"ship",		"",											0,			0,				0,			0,		"boatswain",	0,		0,		0,		0,			""); // Железная воля
 	InitPerk("LongRangeGrappling",		"ship",		"",											0,			0,				0,			0,		"boatswain",	0,		0,		0,		0,			""); // Абордаж с большого расстояния
-	InitPerk("Mentor",					"ship",		"",											0,			0,				0,			0,		"boatswain",	0,		0,		0,		0,			""); // Наставник
-	InitPerk("LootCollection",			"ship",		"",											0,			0,				0,			0,		"boatswain",	0,		0,		0,		0,			""); // Быстрый сбор трофеев
+	InitPerk("Mentor",					"ship",		"IronWill",									0,			0,				0,			0,		"boatswain",	0,		0,		0,		0,			""); // Наставник
+	InitPerk("LootCollection",			"ship",		"Mentor",									0,			0,				0,			0,		"boatswain",	0,		0,		0,		0,			""); // Быстрый сбор трофеев
 	InitPerk("MusketsShoot",			"ship",		"IronWill,LongRangeGrappling",				0,			0,				0,			0,		"boatswain",	0,		0,		0,		0,			""); // Мушкетный залп
 	InitPerk("GrapplingProfessional",	"ship",		"LongRangeGrappling,MusketsShoot",			0,			0,				0,			0,		"boatswain",	0,		0,		0,		0,			""); // Мастерский абордаж
 	/// Казначей >
@@ -78,7 +78,8 @@ void extrnInitPerks()
 	InitPerk("Packer",					"ship",		"AdvancedCommerce",							0,			0,				0,			0,		"treasurer",	0,		0,		0,		0,			""); // Упаковка грузов
 	InitPerk("PriceRecon",				"ship",		"AdvancedCommerce,ArtOfDeals",				0,			0,				0,			0,		"treasurer",	0,		0,		0,		0,			""); // Ценовая разведка
 	InitPerk("Investor",				"ship",		"AdvancedCommerce,ArtOfDeals",				0,			0,				0,			0,		"treasurer",	0,		0,		0,		0,			""); // Мастерство вкладов
-	InitPerk("ProfessionalCommerce",	"ship",		"Investor,PriceRecon",				        0,			0,				0,			0,		"treasurer",	0,		0,		0,		0,			""); // Профессиональная торговля
+	InitPerk("ProfessionalCommerce",	"ship",		"Investor,PriceRecon,Packer",				0,			0,				0,			0,		"treasurer",	0,		0,		0,		0,			""); // Профессиональная торговля
+	InitPerk("CrewSalaryOptimization",	"ship",		"ProfessionalCommerce",				        0,			0,				1,			0,		"",				0,		0,		0,		0,			""); // Тотальный аудит
 	/// Канонир >
 	InitPerk("FastReload",				"ship",		"",											0,			0,				0,			0,		"cannoner",		0,		0,		0,		0,			""); // Быстрая перезарядка
 	InitPerk("ImmediateReload",			"ship",		"FastReload",								300,		60,				0,			0,		"cannoner",		0,		0,		0,		0,			""); // Предварительная перезарядка
@@ -138,8 +139,11 @@ void extrnInitPerks()
 	InitPerk("Merman",					"trait",	"",			0,			0,				0,			0,		"",			0,		0,		0,		0,			"self,static,prize");			// Пловец > В 2 раза увеличена скорость плавания за 5 минут мучения в водах ГПК
 	InitPerk("SlaveTraderTrait",		"trait",	"",			0,			0,				0,			0,		"",			0,		0,		0,		0,			"self,static,prize");			// Гроза невольников > Наценка X% при продаже рабов, бонусы на плантации за завершение квеста "Работорговец"
 	InitPerk("Duelist",					"trait",	"",			0,			0,				0,			0,		"",			0,		0,		1,		0,			"self,static,prize");			// Записной дуэлянт > +5% наносимого, -5% входящего урона на дуэли радиус поиска противников 15 метров за выполнение пяти "Дел чести"
+	InitPerk("InquisitionBlessing",		"trait",	"",			0,			0,				0,			0,		"",			0,		0,		0,		0,			"self,static,prize");			// Благословение инквизиции > +20% урона по монстрам, нежити и индейцам
+	InitPerk("WitchCharm",				"trait",	"",			0,			0,				0,			0,		"",			0,		0,		0,		0,			"self,static,prize");			// Ведьмовский оберег > -20% получаемого урона от монстров, нежити и индейцев
+
 	/// ОСОБЕННОСТИ ПЕРСОНАЖЕЙ
-	InitPerk("Schemer",					"trait",	"",			0,			0,				0,			0,		"",			0,		0,		0,		0,			"self,static,prize");			// Махинатор (Даётся после прохождения квеста Табак Малькольма на успешную концовку) Возможность торговать контрабандой в составе эскадры, а так же на кораблях третьего класса.
+	InitPerk("Schemer",					"trait",	"",			0,			0,				0,			0,		"",			0,		0,		0,		0,			"self,static,prize");			// Махинатор > Возможность торговать контрабандой в составе эскадры, а так же на кораблях третьего класса.
 	InitPerk("HighwaySmuggler",			"trait",	"",			0,			0,				0,			0,		"",			0,		0,		0,		0,			"self,static,spec");			// Черта Малькольма Фауна, функционала нет
 	InitPerk("BasePirate",				"trait",	"",			0,			0,				0,			0,		"",			0,		0,		0,		0,			"self,static,spec");			// Посредник > Бонусы за стартовую нацию пиратов (сейчас это только возможность купить контрабанду в магазине)
 	InitPerk("Energaiser",				"trait",	"",			0,			0,				0,			0,		"",			0,		0,		0,		0,			"self,static,spec");			// Энергичность > Ускорение восстановления энергии в 1.5 раза, даётся ГГ, некоторым офицерам и боссам
@@ -150,13 +154,22 @@ void extrnInitPerks()
 	InitPerk("Nobleman",				"trait",	"",			0,			0,				0,			0,		"",			0,		0,		1,		0,			"self,static,spec");			// Дворянин > Метка для соотв статуса
 	InitPerk("OneLegMan",				"trait",	"",			0,			0,				0,			0,		"",			0,		0,		0,		0,			"self,static,spec");			// Одноногий > Метка для Леклерка с его анимацией ходьбы
 	InitPerk("SaveLoadAbuser",			"trait",	"",			0,			0,				0,			0,		"",			0,		0,		0,		0,			"self,static,spec,negative");	// Шулерство > Для любителей S/L
+	InitPerk("Monomania",				"trait",	"",			0,			0,				0,			0,		"",			0,		0,		0,		0,			"self,static,spec");			// Мономания
+	InitPerk("Stuttering",				"trait",	"",			0,			0,				0,			0,		"",			0,		0,		0,		0,			"self,static,spec,negative");	// Заикание
+	InitPerk("Redskin",					"trait",	"",			0,			0,				0,			0,		"",			0,		0,		0,		0,			"self,static,spec");			// Индеец
+	InitPerk("NoCaptain",				"trait",	"",			0,			0,				0,			0,		"",			0,		0,		0,		0,			"self,static,spec");			// Ведомый
+	InitPerk("MusketeerOnly",			"trait",	"",			0,			0,				0,			0,		"",			0,		0,		0,		0,			"self,static,spec");			// Убеждённый стрелок
+	InitPerk("WeaponBonding",			"trait",	"",			0,			0,				0,			0,		"",			0,		0,		0,		0,			"self,static,spec");			// Оружейная привязанность
+	InitPerk("DuglasSchool",			"trait",	"",			0,			0,				0,			0,		"",			0,		0,		0,		0,			"self,static,spec");			// Мушкетерская спецподготовка
+
+
 	/// ЧЕРТЫ ХАРАКТЕРА
 	InitPerk("Honest",					"trait",	"",			0,			0,				0,			0,		"",			0,		0,		1,		0,			"self,static,temper");			// Порядочность > Метка для NPC с "good" alignment
 	InitPerk("Rebel",					"trait",	"",			0,			0,				0,			0,		"",			0,		0,		1,		0,			"self,static,temper");			// Бунтарство > Метка для NPC с "bad" alignment
 	InitPerk("Bully",					"trait",	"",			0,			0,				0,			0,		"",			0,		0,		0,		0,			"self,dynamic,temper,negative");// Бретёрство > Для активных драчунов; посетители таверны отказываются выпивать примерно 2 месяца
 	InitPerk("Dignity",					"trait",	"",			0,			0,				0,			0,		"",			0,		0,		0,		0,			"self,static");					// Достоинство > Блокирует кулачный бой
 
-	/// TODO: Отдельные бонусы для Авантюриста, Торговца и Корсара,
+
 	/// черта Дугласа на навык стрельбы из двуствольного,
 	/// черта Тичингиту, Шеппард, Блекера и т.д. с кратким описанием
 }

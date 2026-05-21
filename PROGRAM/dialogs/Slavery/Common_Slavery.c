@@ -153,8 +153,7 @@ void ProcessCommonSlavery(ref NPChar, aref Link, aref NextDiag)
 			dialog.text = StringFromKey("Common_Slavery_56");
 			link.l1 = StringFromKey("Common_Slavery_57");
 			link.l1.go = "plantation_exit";
-			TEV.BlindGuards = "1"; //HardCoffee Это для гвардов, так как они стоят по двое, чтобы 2 раза не доказывать одно и то же
-			Lai_MethodDelay("GuardCanSeeAgain", 10.0 + Rand(5));
+			LAi_TemporaryBlindGuards();
 			if (CheckAttribute(NPChar, "IWantAskYou")) //HardCoffee ref exp
 			{
 				DeleteAttribute(NPChar, "IWantAskYou");
@@ -169,8 +168,7 @@ void ProcessCommonSlavery(ref NPChar, aref Link, aref NextDiag)
 		break;
 
 		case "plantation_repeat":
-			TEV.BlindGuards = "1";
-			Lai_MethodDelay("GuardCanSeeAgain", 10.0 + Rand(5));
+			LAi_TemporaryBlindGuards();
 			dialog.text = StringFromKey("Common_Slavery_58");
 			link.l1 = "...";
 			link.l1.go = "plantation_exit";

@@ -424,7 +424,6 @@ void ProcessDialogEvent()
 		case "Andre_Abel_Quest_Hol_Gov_Node_Allure_2":
 			dialog.text = StringFromKey("Common_Governor_99");
 			link.l1 = StringFromKey("Common_Governor_100", pchar);
-			//			if (GetCharacterSPECIAL(pchar, SPECIAL_C) >= 8)
 			if (PlayerRPGCheck_SPECIAL(SPECIAL_C, 8))
 			{
 				link.l1.go = "Andre_Abel_Quest_Hol_Gov_Node_AllureSuccess";

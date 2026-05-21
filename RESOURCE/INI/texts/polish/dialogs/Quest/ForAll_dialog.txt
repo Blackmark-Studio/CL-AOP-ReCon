@@ -3044,7 +3044,7 @@ ForAll_dialog_810 {
 Nie martw się, nie pozwolę cię skrzywdzić!
 }
 ForAll_dialog_811 {
-służyliście w tym samym pułku
+A, oto i pani! Co, kolejny wielbiciel, jak widzę? Kiedy wreszcie się uspokoisz? Prawdopodobnie nigdy... Idź pracować do burdelu, tam twoje miejsce...
 }
 ForAll_dialog_812 {
 A, to pani! Och, a kto to stoi obok pani? Kolejna koleżanka z burdelu? Myślę, że tam właśnie jest pani miejsce...

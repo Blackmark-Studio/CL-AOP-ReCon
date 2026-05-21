@@ -229,9 +229,8 @@ void ProcessDialogEvent()
 			link.l1.go = "FirstWaves_1";
 		break;
 		case "FirstWaves_1":
-			int iTemp = GetCharacterIndex("Houm");
 			dialog.text = StringFromKey("JohnCoxon_58");
-			if (iTemp == -1 || LAi_IsDead(&characters[iTemp]))
+			if (CheckAttribute(&TEV, "QuestTemp.deadHoum"))
 			{
 				link.l1 = StringFromKey("JohnCoxon_59");
 				link.l1.go = "FirstWaves_2";

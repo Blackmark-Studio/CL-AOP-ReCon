@@ -172,7 +172,7 @@ Pir_Line_3_KillLoy.13 {Znów pościg. Po raz kolejny. Przynajmniej tym razem wie
 Pir_Line_3_KillLoy.14
 {
 Wygląda na to, że trafiłem na trop Lowa. Z plotek wynika, że w okolicach Cumany znikają barki, szkunery, luggery i slupy. Ludzie obwiniają pewnego briga. Mam przeczucie, że to Low—ten schemat jest zbyt znajomy. Jak szakalu, poluje na słabszych od siebie.
-Wygląda na to, że będę musiał wywabić tę hienę. Żeby to zrobić, muszę wypłynąć w morze w pobliżu Cumany na luggerze lub slupie i trochę się pokręcić. Mam nadzieję, że Low połknie przynętę i zaatakuje...
+Wygląda na to, że będę musiał wywabić tę hienę. Aby to zrobić, muszę wypłynąć w morze w pobliżu Cumany na podobnej klasie statku i spróbować pływać nim samotnie. Mam nadzieję, że Low połknie przynętę i zaatakuje...
 }
 Pir_Line_3_KillLoy.15
 {
@@ -341,7 +341,7 @@ Church_NightGuard.5 {Udało mi się doczekać kościelnych złodziei! Obawiam si
 PortmansBook_Delivery {Zlecenie mistrza portu @<sCity>. Dogoń kapitana o imieniu @<sCapName>}
 PortmansBook_Delivery.1
 {
-Mistrz portu w @<sCity> zlecił mi drobne zadanie. Kapitan @<sShipTypeName> „@<sShipName>” zapomniał dziennika pokładowego w urzędzie portowym. Muszę dogonić tego roztargnionego kapitana o imieniu @<sCapName> i oddać mu dziennik.
+Mistrz portu w @<sCity> zlecił mi drobne zadanie. Kapitan @<sShipTypeName> „@<sShipName>” zapomniał dziennika okrętowego w urzędzie portowym. Muszę dogonić tego roztargnionego kapitana o imieniu @<sCapName> i oddać mu dziennik.
 Według mistrza portu, @<sCapName2> udał się do @<sTargetCity>@<sAreal>.
 }
 PortmansBook_Delivery.2 {Udało mi się złapać tego głupca na morzu w drodze do @<sTargetCity>. Zadanie naczelnika portu w @<sCity> zostało wykonane.}
@@ -647,7 +647,7 @@ TheStarsAlignedISS.3 {
 Cholera! Po strzale Teasera w piwnicy coś wybuchło... Wokół nikogo nie ma... Jak długo tu leżę? Głowa mi pęka... Ciało karczmarza jest jeszcze ciepłe, więc nie mogło minąć dużo czasu. Wygląda na to, że całe miasto już nie śpi—ten hałas jest niesamowity. Muszę wyjść na ulicę i zdecydować, co dalej.
 }
 TheStarsAlignedISS.4 {
-Ledwo mam siłę, by napisać ten wpis. Przeklęci maronowie! Ledwo uszliśmy śmierci... A jednak wyszliśmy z tego cali i zdrowi. Choć Teaser ostatnio wyglądał bardzo kiepsko. I to nie tylko fizycznie, ale też psychicznie. Wydaje mu się, że jest kimś innym i mówi jak jakiś żołnierz. Powinienem zajrzeć do niego w mesie.
+Ledwo mam siłę, by napisać ten wpis. Przeklęci maronowie! Ledwo uszliśmy śmierci... A jednak wyszliśmy z tego cali i zdrowi. Choć Teaser ostatnio wyglądał bardzo kiepsko. I to nie tylko fizycznie, ale też psychicznie. Wydaje mu się, że jest kimś innym i mówi jak jakiś żołnierz.
 }
 TheStarsAlignedISS.5 {
 Teaser jest w kiepskim stanie, ale przynajmniej żyje i nie jest w kajdanach Holenderskiej Kompanii Zachodnioindyjskiej.
@@ -743,7 +743,7 @@ ISS_MainLine.5 {Czas odwiedzić barmana — myślę, że wreszcie do tego dojrza
 ISS_MainLine.6 {Właściciel tawerny, Hill Brynner, umówił się ze mną po północy w swojej prowizorycznej piwnicy. To jedna z kajut na tym samym statku; żeby się tam dostać, muszę wyjść na pokład i skierować się na rufę.}
 ISS_MainLine.7 {Hill Brynner wysłał mnie na fluit 'Fernando Diffindur', który niegdyś często zawijał do Teaser Dan. Według właściciela tawerny, właśnie tam mogę znaleźć coś, co potwierdzi prawdziwość moich słów.}
 ISS_MainLine.8 {Muszę odnaleźć w Mieście pewnego André Labora, cieślę. Według Hilla Brunnera to właśnie on pomógł Teaserowi Danowi zbudować łódź, która pozwoliła mu dotrzeć na stały ląd.}
-ISS_MainLine.9 {Jestem @<sSex> z nim. André umówił się ze mną w kajucie korwety 'Protector'.}
+ISS_MainLine.9 {Znalazłem cieślę i ostrożnie z nim porozmawiałem. André umówił się ze mną w kajucie korwety 'Protector'.}
 ISS_MainLine.10 {Ten łajdak André Labor przyprowadził do mnie milicjanta na rozmowę! Będę musiał sięgnąć po broń. Do diabła!}
 ISS_MainLine.11
 {
@@ -1036,7 +1036,7 @@ LSC_Ring {Tajemnica „Santa Lucia”}
 LSC_Ring.1
 {
 Malcolm Fawn, były przemytnik, zaproponował mi wyprawę na zewnętrzny pierścień statków, gdzie znalazł kolejny „nieograbiony” pinas i zasugerował, żebyśmy przeszukali jego pomieszczenia w poszukiwaniu kosztowności. Problem w tym, że ładownię statku opanowały „gigantyczne kraby”, a Malcolm się ich boi. Moim zadaniem jest pozbyć się krabów. Co może być prostszego? Wszystko, co znajdziemy na statku, dzielimy po równo.
-Wyprawa zaplanowana jest na jutro, na godzinę 8 rano. Powinienem pojawić się na „krzywym pokładzie” — półzatopionym statku za Port-au-Prince. Tam zacznie się nasza podróż na zewnętrzny pierścień.
+Wyprawa zaplanowana jest na jutro, na godzinę 8 rano. Powinienem pojawić się na „krzywym pokładzie” — półzatopionym statku za San Augustine. Tam zacznie się nasza podróż na zewnętrzny pierścień.
 }
 LSC_Ring.2 {Spędziłem zbyt dużo czasu, a Malcolm Fawn, tracąc nadzieję na mój powrót, odszedł. Niestety, wyprawa na zewnętrzny pierścień zostaje odwołana...}
 LSC_Ring.3 {Nasza wyprawa się rozpoczęła! Wypływamy na zewnętrzny pierścień. Malcolm zaprowadzi mnie do pinasy, ale z krabami będę musiał poradzić sobie sam—Fawn tu nie pomoże.}

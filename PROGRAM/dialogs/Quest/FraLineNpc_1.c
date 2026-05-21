@@ -890,6 +890,7 @@ void ProcessDialogEvent()
 			//слухи
 			AddSimpleRumour(
 				StringFromKey("FraLineNpc_1_193", pchar), sti(npchar.nation), 5, 1);
+			Achievment_Set(ACH_Na_sluzhbe_Frantsii);
 		break;
 	}
 }

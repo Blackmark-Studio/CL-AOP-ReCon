@@ -1,5 +1,5 @@
 Andre_Abel_Dialog_1 {
-Saudações a você, capitão...
+Oh, é você, Capitão?!
 }
 Andre_Abel_Dialog_2 {
 Fico feliz em vê-lo, Capitão.
@@ -8,10 +8,10 @@ Andre_Abel_Dialog_3 {
 @<RandPhraseSimple>
 }
 Andre_Abel_Dialog_4_m {
-Hmm, não te vi por aqui antes. Nós nos conhecemos? O barman disse que você se meteu em problemas e precisa de escolta.
+Hmm, não te vi por aqui antes. Nós nos conhecemos? Parece que você se meteu em problemas..
 }
 Andre_Abel_Dialog_4_f {
-Hmm, não te vi por aqui antes. Nós nos conhecemos? O barman disse que você se meteu em problemas e precisa de escolta.
+Hmm, não te vi por aqui antes. Nós nos conhecemos? Parece que você se meteu em problemas..
 }
 Andre_Abel_Dialog_5 {
 Desculpe, amigo, já falo com você—não posso conversar agora.

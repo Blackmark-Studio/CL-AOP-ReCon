@@ -1,0 +1,39 @@
+HWIC_head_1 {
+Je vous salue. Je soyis très occupé en ce moment, alors venez-en au fait : avez-vous affaire à moi ?
+}
+HWIC_head_2 {
+Voilà le topo... Un pirate souhaite entrer à votre service. Il est prêt à payer 20 000 pesos pour obtenir une opportunité qui lui permettrait de travailler pour vous.
+}
+HWIC_head_3 {
+J'aimerais savoir comment les choses se sont passées avec Hugo ?
+}
+HWIC_head_4 {
+Non, non, ne faites pas attention à moi. Je m'en vais déjà.
+}
+HWIC_head_5 {
+Qui est cet homme ?
+}
+HWIC_head_6 {
+Il s'appelle Hugo la Scierie. Il...
+}
+HWIC_head_7 {
+Réalisez-vous que cet homme est un pirate infâme et un tueur cruel ? Jamais je ne permettrai qu'un tel individu figure sur notre registre de capitaines.
+}
+HWIC_head_8_m {
+Mais il n'est pas dangereux... Je l'ai vu, ce n'est qu'un vieil homme fatigué, et son plus grand désir est de dormir dans un lit douillet. Il est prêt à prendre sa retraite et cherche un havre de paix où on lui fichera la paix.
+}
+HWIC_head_8_f {
+Mais il n'est pas dangereux... Je l'ai vu, ce n'est qu'un vieil homme fatigué, et son plus grand désir est de dormir dans un lit douillet. Il est prêt à prendre sa retraite et cherche un havre de paix où on lui fichera la paix.
+}
+HWIC_head_9 {
+Hum... Si vous le dites, vous avez peut-être raison. Je vous fais confiance dans cette affaire, @<pchar>. De plus, il pourrait nous être utile comme conseiller pour lutter contre la piraterie. Soit.\nJ'ai ici ce formulaire d'engagement que vous allez prendre et lui remettre, capitaine. Hugo devra se présenter à moi immédiatement après l'avoir reçu pour signer tous les documents de travail nécessaires. C'est une obligation absolue, vous devez le comprendre, capitaine. J'avertirai les autorités locales de sa venue. À présent, permettez-moi de retourner à mes affaires.
+}
+HWIC_head_10 {
+Bien sûr, @<GetFullName> ! Au revoir !
+}
+HWIC_head_11 {
+Oh, merci infiniment, @<GetAddress_Form> @<pchar>. C'est un capitaine très courageux et expérimenté. Nos ennemis ont déjà perdu une demi-douzaine de navires. C'est aussi un conteur hors pair. Ses histoires du temps jadis rassemblent les foules à la taverne ! Maintenant, si vous voulez bien m'excuser, je vous demande de prendre congé.
+}
+HWIC_head_12 {
+Je vous souhaite une bonne continuation !
+}

@@ -956,7 +956,7 @@ hol_Governor_266 {
 Hmm... No está mal, supongo...
 }
 hol_Governor_267 {
-Yo también lo creo. Captura al menos cuatro barcos, llévalos a Curaçao, al puerto de Willemstad, y entrégamelos personalmente. Por cada barco que entregues, recibirás 100,000 monedas. ¿Crees que puedes con el encargo?
+Yo también lo creo. Captura al menos cuatro barcos, llévalos a Curaçao, al puerto de Willemstad, y entrégamelos personalmente. Por cada barco que entregues, recibirás 200,000 monedas. ¿Crees que puedes con el encargo?
 }
 hol_Governor_268 {
 Supongo que sí.

@@ -106,7 +106,12 @@ void locCameraSleep(bool isSleep)
 
 void locCameraSwitch()
 {
-	if(locCameraEnableFree == false) return;
+	if(locCameraEnableFree == false)
+	{
+		LAi_CharacterEnableDialog(pchar);
+		return;
+	}
+	LAi_CharacterDisableDialog(pchar);
 	string controlName = GetEventData();
 	if(controlName != "ChrCamCameraSwitch") return;
 	if(locCameraCurMode != LOCCAMERA_FREE)

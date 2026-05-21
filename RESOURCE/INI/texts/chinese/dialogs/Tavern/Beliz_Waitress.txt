@@ -43,3 +43,12 @@ Beliz_Waitress_11 {
 Beliz_Waitress_12 {
 没事，没什么要问的……
 }
+Beliz_Waitress_13 {
+你知不知道卡拉现在人在哪儿？
+}
+Beliz_Waitress_14 {
+呃……不知道。你最好去问问城里的居民。我想他们肯定能给你透露点消息。
+}
+Beliz_Waitress_15 {
+好的，美女，那我就先走了。
+}

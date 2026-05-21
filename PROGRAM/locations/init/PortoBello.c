@@ -613,7 +613,7 @@ int LocationInitPortoBello(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "PortoBello_townhall";
 	locations[n].id.label = "Townhall";
-	locations[n].image = "loading\inside\residence.tga";
+	locations[n].image = "loading\inside\Residence02.tga";
 	//Town sack
 	locations[n].townsack = "PortoBello";
 	locations[n].lockWeather = "Inside";
@@ -834,7 +834,7 @@ int LocationInitPortoBello(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "PortoBello_houseF2";
 	locations[n].id.label = "House";
-	locations[n].image = "loading\inside\mediumhouse10.tga";
+	locations[n].image = "loading\inside\mediumhouse02.tga";
 	//Town sack
 	locations[n].townsack = "PortoBello";
 	locations[n].lockWeather = "Inside";

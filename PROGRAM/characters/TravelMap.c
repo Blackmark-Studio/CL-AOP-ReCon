@@ -80,7 +80,7 @@ void InitTravelMap()
 	// Hispaniola1
 	NullCharacter.TravelMap.Islands.Hispaniola1.Shore.t0	= "shore33";
 	NullCharacter.TravelMap.Islands.Hispaniola1.Shore.t1	= "Mayak8";
-	NullCharacter.TravelMap.Islands.Hispaniola1.Shore.t2	= "shore34";
+	NullCharacter.TravelMap.Islands.Hispaniola1.Shore.t2	= "shore32";
 	// Hispaniola2
 	NullCharacter.TravelMap.Islands.Hispaniola2.Shore.t0	= "shore34";  
 	NullCharacter.TravelMap.Islands.Hispaniola2.Shore.t1	= "Mayak7";

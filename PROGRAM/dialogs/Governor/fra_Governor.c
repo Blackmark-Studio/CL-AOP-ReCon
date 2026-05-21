@@ -318,8 +318,6 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 					bWorldAlivePause = false; // Конец линейки
 					RemoveLandQuestmark_Main(npchar, "Fra_Line");
 					RemoveMapQuestmark("Tortuga_town", "Fra_Line");
-
-					Achievment_Set(ACH_Na_sluzhbe_Frantsii);
 				break;
 			}
 		break;

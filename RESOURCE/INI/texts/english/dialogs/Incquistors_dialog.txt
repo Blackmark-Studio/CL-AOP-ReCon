@@ -277,3 +277,15 @@ Much obliged, Your Holiness!
 Incquistors_dialog_73_f {
 Most grateful, Your Holiness!
 }
+Incquistors_dialog_74 {
+Holy Father, I am acting on behalf of the Governor of Belize, tracking down a sorceress. I know that a witch named Carla, a former port prostitute, works here in the Santiago tavern. With her dark arts, she has already killed two people — Captain Miguel Cuenda and the good hidalgo Bartholomew, who died before he could repent. He was a servant of the Governor of Belize. I pray to God that the Holy Inquisition will punish her for her sinful deeds.
+}
+Incquistors_dialog_75_m {
+Ah, may your soul be eternally blessed for your righteous deed, my son. We will take care of this witch. Your zeal will be rewarded with my personal blessing.\nIn addition, my son, you will personally witness the witch-spawn burn in the sacred fire of the Inquisition.
+}
+Incquistors_dialog_75_f {
+Ah, may your soul be eternally blessed for your righteous deed, my daughter. We will take care of this witch. Your zeal will be rewarded with my personal blessing.\nIn addition, my daughter, you will personally witness the witch-spawn burn in the sacred fire of the Inquisition.
+}
+Incquistors_dialog_76 {
+I would be honored, Holy Father.
+}

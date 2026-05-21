@@ -498,7 +498,7 @@ int LocationInitCaracas(int n)
 	locations[n].id = "Caracas_townhall";
 	locations[n].id.label = "Townhall";
 	locations[n].filespath.models = "locations\inside\residence03";
-	locations[n].image = "loading\inside\residence.tga";
+	locations[n].image = "loading\inside\Residence03.tga";
 	//Town sack
 	locations[n].townsack = "Caracas";
 	locations[n].lockWeather = "Inside";

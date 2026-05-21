@@ -375,6 +375,7 @@ void ProcessDialogEvent()
 			pchar.questTemp.LSC.immersions.pinion = false; //флаг найденной шестерёнки
 			AddQuestRecord("ISS_MainLine", "36");
 			pchar.Ship.Type = GenerateShipExt(SHIP_CORVETTE_QUEST, false, pchar);
+			pchar.questTemp.LSC.IgnoreShipStatPenalty = true;
 			SetBaseShipData(pchar);
 			pchar.Ship.name = FindPersonalName("LSC_ship");
 			pchar.Ship.Cannons.Type = CANNON_TYPE_CANNON_LBS24;

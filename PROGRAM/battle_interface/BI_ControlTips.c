@@ -96,8 +96,8 @@ void InitSeaTips(int iIconSize, int iPosY)
 			BattleInterface.textinfo.TurnKey.font = "keyboard_symbol";
 			BattleInterface.textinfo.TurnKey.scale = fTipKeyScale;
 			BattleInterface.textinfo.TurnKey.color = iTipKeyColor;
-			BattleInterface.textinfo.TurnKey.pos.x = iPosX + iDeltaX;
-			BattleInterface.textinfo.TurnKey.pos.y = iPosY + iDeltaY;
+			BattleInterface.textinfo.TurnKey.pos.x = iPosX + iDeltaX + makeint(0 * fHtRatio);
+			BattleInterface.textinfo.TurnKey.pos.y = iPosY + iDeltaY + makeint(6 * fHtRatio);
 			BattleInterface.textinfo.TurnKey.text = GetKeyCodeImg("hk_perk1");
 		}
 
@@ -112,8 +112,8 @@ void InitSeaTips(int iIconSize, int iPosY)
 			BattleInterface.textinfo.ImmReloadKey.font = "keyboard_symbol";
 			BattleInterface.textinfo.ImmReloadKey.scale = fTipKeyScale;
 			BattleInterface.textinfo.ImmReloadKey.color = iTipKeyColor;
-			BattleInterface.textinfo.ImmReloadKey.pos.x = iPosX + iDeltaY;
-			BattleInterface.textinfo.ImmReloadKey.pos.y = iPosY + iDeltaX;
+			BattleInterface.textinfo.ImmReloadKey.pos.x = iPosX + iDeltaY + makeint(2 * fHtRatio);
+			BattleInterface.textinfo.ImmReloadKey.pos.y = iPosY + iDeltaX + makeint(-3 * fHtRatio);
 			BattleInterface.textinfo.ImmReloadKey.text = GetKeyCodeImg("hk_perk2");
 		}
 		if (IsSeaPerkAcquired(objSeaPerkShower.SegmentsInfo.Right))
@@ -128,7 +128,7 @@ void InitSeaTips(int iIconSize, int iPosY)
 			BattleInterface.textinfo.InstantRepKey.scale = fTipKeyScale;
 			BattleInterface.textinfo.InstantRepKey.color = iTipKeyColor;
 			BattleInterface.textinfo.InstantRepKey.pos.x = iPosX - iDeltaY;
-			BattleInterface.textinfo.InstantRepKey.pos.y = iPosY + iDeltaX;
+			BattleInterface.textinfo.InstantRepKey.pos.y = iPosY + iDeltaX + makeint(-3 * fHtRatio);
 			BattleInterface.textinfo.InstantRepKey.text = GetKeyCodeImg("hk_perk3");
 		}
 		if (IsSeaPerkAcquired(objSeaPerkShower.SegmentsInfo.Down))
@@ -143,7 +143,7 @@ void InitSeaTips(int iIconSize, int iPosY)
 			BattleInterface.textinfo.LightRepKey.scale = fTipKeyScale;
 			BattleInterface.textinfo.LightRepKey.color = iTipKeyColor;
 			BattleInterface.textinfo.LightRepKey.pos.x = iPosX - iDeltaX;
-			BattleInterface.textinfo.LightRepKey.pos.y = iPosY - iDeltaY;
+			BattleInterface.textinfo.LightRepKey.pos.y = iPosY - iDeltaY + makeint(-6 * fHtRatio);
 			BattleInterface.textinfo.LightRepKey.text = GetKeyCodeImg("hk_perk4");
 		}
 // кнопки перков <--

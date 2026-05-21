@@ -1468,3 +1468,28 @@ data = "Turn speed", "1.0"		; rad/sec
 loop = false
 event = "LStep", 3252, normal
 event = "RStep", 3244, normal
+
+
+;Анимации сжигания ведьмы для квеста
+
+;Просто стоит
+[execution_1]
+start_time = 6662
+end_time = 6756
+data = "Blend time", "0.2"		; sec
+loop = true
+
+;Смотрит по сторонам
+[execution_2]
+start_time = 6756
+end_time = 6831
+data = "Blend time", "0.2"		; sec
+loop = true
+
+;Корчится от боли
+[execution_3]
+start_time = 6831
+end_time = 6942
+data = "Blend time", "0.2"		; sec
+loop = true
+

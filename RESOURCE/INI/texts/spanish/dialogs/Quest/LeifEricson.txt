@@ -44,7 +44,7 @@ LeifEricson_11_f {
 No los tengo, no los encontré...
 }
 LeifEricson_12 {
-Ahora te dejo en libertad. Puedes irte; el camino está despejado.
+Ahora te dejo en libertad. Puedes irte, el camino está despejado.
 }
 LeifEricson_13 {
 Gracias. Espero que no volvamos a encontrarnos.
@@ -86,19 +86,19 @@ LeifEricson_22 {
 ¿No es un tono demasiado altivo para una calavera andrajosa?
 }
 LeifEricson_23 {
-¿Qué significa "privateer"?
+¿Qué significa "corsario"?
 }
 LeifEricson_24 {
-Un corsario es un filibustero... un bucanero, un pirata...
+Un corsario es un pirata...
 }
 LeifEricson_25 {
-¿Qué es un "filibustero", un "pirata"?
+¿Qué es un "pirata"?
 }
 LeifEricson_26_m {
 Bueno, cómo decirlo... Soy un marinero libre y un guerrero libre. Tengo mi propio barco y hago lo que considero correcto.
 }
 LeifEricson_26_f {
-Bueno, cómo decirlo... Soy un marinero libre y un espíritu indomable. Tengo mi propio barco y hago lo que quiero.
+Bueno, cómo decirlo... Soy un marinero libre y un espíritu libre. Tengo mi propio barco y hago lo que quiero.
 }
 LeifEricson_27_m {
 ¡Ja, ja! ¡Tú y yo somos hermanos de sangre! Me alegra que haya sido un alma afín quien llevó a cabo mi plan. Eso es una señal de buena fortuna para mí...

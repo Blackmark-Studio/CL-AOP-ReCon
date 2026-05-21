@@ -202,7 +202,7 @@ void ProcessDialogEvent()
 
 			//-->> дача квеста найти потерянный драгоценный камень
 			//HardCoffee пример использования нового idRand. В качестве уникального идентификатора взят id персонажа, с дополнительной припиской "gem" - то есть, квест на поиск камня
-			if (idRand(npchar.id + "gem", 1) && pchar.questTemp.different == "free" && !CheckAttribute(npchar, "quest.usurersJewel") && GetNpcQuestPastDayWOInit(npchar, "usurersJewel") > 7 && !CheckAttribute(pchar, "questTemp.different.SeekUsurersJewel") && npchar.city != "Charles" && !CheckAttribute(npchar, "quest.slave"))
+			if (idRand(npchar.id + "gem", 1) && pchar.questTemp.different == "free" && !CheckAttribute(npchar, "quest.usurersJewel") && GetNpcQuestPastDayWOInit(npchar, "usurersJewel") > 7 && !CheckAttribute(pchar, "questTemp.different.SeekUsurersJewel") && !CheckAttrValue(npchar, "City", "Charles") && !CheckAttribute(npchar, "quest.slave"))
 			{
 				dialog.text = StringFromKey("Common_Usurer_43");
 				link.l1 = StringFromKey("Common_Usurer_44");
@@ -261,7 +261,6 @@ void ProcessDialogEvent()
 				{
 					link.l7 = StringFromKey("Common_Usurer_59");
 					link.l7.go = "ISS_takeDeposit";
-					DeleteAttribute(pchar, "questTemp.LSC.usurerId");
 				}
 			}
 			//квесты мэра, проникновение во враждебный город
@@ -335,7 +334,7 @@ void ProcessDialogEvent()
 				link.l11.go = "ShipLetters_Usurer1";
 			}
 			//--> семейная реликвия
-			if (CheckAttribute(pchar, "GenQuest.Noblelombard") && npchar.city == pchar.GenQuest.Noblelombard.City && !CheckAttribute(pchar, "quest.noblelombard"))
+			if (CheckAttribute(pchar, "GenQuest.Noblelombard") && npchar.city == pchar.GenQuest.Noblelombard.City && !CheckAttribute(pchar, "questTemp.noblelombard"))
 			{
 				link.l12 = StringFromKey("Common_Usurer_72", pchar.GenQuest.Noblelombard.Name);
 				link.l12.go = "Noblelombard";
@@ -665,7 +664,7 @@ void ProcessDialogEvent()
 			link.l1.go = "StepPL5Third_3";
 		break;
 		case "StepPL5Third_3":
-			pchar.questTemp.piratesLine.Q5.city_4 = GetQuestNationsCity(Holland);
+			pchar.questTemp.piratesLine.Q5.city_4 = GetQuestNationsCity(HOLLAND);
 			dialog.text = StringFromKey("Common_Usurer_140", XI_ConvertString("Colony" + pchar.questTemp.piratesLine.Q5.city_4));
 			link.l1 = StringFromKey("Common_Usurer_141");
 			link.l1.go = "StepPL5Third_4";
@@ -738,6 +737,7 @@ void ProcessDialogEvent()
 			DeleteAttribute(npchar, "PLQ5Money");
 			ChangeCharacterReputation(pchar, -50);
 			ChangeCharacterNationReputation(pchar, sti(NPChar.nation), -20);
+			RemoveLandQuestmark_Main(npchar, "Pir_Line");
 		break;
 
 		case "StepPL5End_1":
@@ -760,6 +760,7 @@ void ProcessDialogEvent()
 			AddMoneyToCharacter(pchar, -45000);
 			ChangeCharacterReputation(pchar, 10);
 			ChangeCharacterNationReputation(pchar, sti(NPChar.nation), 5);
+			RemoveLandQuestmark_Main(npchar, "Pir_Line");
 		break;
 		case "StepPL5End_4":
 			dialog.text = StringFromKey("Common_Usurer_165", pchar);
@@ -2910,7 +2911,7 @@ void ProcessDialogEvent()
 			}
 			link.l4 = StringFromKey("Common_Usurer_636");
 			link.l4.go = "Noblelombard_4";
-			pchar.quest.noblelombard = "true";
+			pchar.questTemp.noblelombard = "true";
 			RemoveLandQuestMark_Gen(npchar, "Noblelombard");
 		break;
 
@@ -3003,7 +3004,7 @@ void ProcessDialogEvent()
 			AddQuestUserData("Noblelombard", "sName", pchar.GenQuest.Noblelombard.Name);
 			CloseQuestHeader("Noblelombard");
 			DeleteAttribute(Pchar, "GenQuest.Noblelombard");
-			DeleteAttribute(Pchar, "quest.noblelombard");
+			DeleteAttribute(Pchar, "questTemp.noblelombard");
 			RemoveLandQuestMark_Gen(npchar, "Noblelombard");
 		break;
 
@@ -3015,7 +3016,7 @@ void ProcessDialogEvent()
 			AddQuestUserData("Noblelombard", "sName", pchar.GenQuest.Noblelombard.Name);
 			CloseQuestHeader("Noblelombard");
 			DeleteAttribute(Pchar, "GenQuest.Noblelombard");
-			DeleteAttribute(Pchar, "quest.noblelombard");
+			DeleteAttribute(Pchar, "questTemp.noblelombard");
 			RemoveLandQuestMark_Gen(npchar, "Noblelombard");
 		break;
 		//<-- семейная реликвия		
@@ -3216,7 +3217,7 @@ void ProcessDialogEvent()
 			NPChar.pinctadosMakeADeal = "1";
 			NextDiag.CurrentNode = NextDiag.TempNode;
 			int iTime = GetSquadronGoods(pchar, GOOD_PINCTADA) / sti(Goods[GOOD_PINCTADA].Units);
-			if (GetOfficersPerkUsing(pchar, "QuickCalculation")) iTime /= 2;
+			if (GetOfficersPerkUsing(pchar, "QuickCalculation", false)) iTime /= 2;
 			if (iTime < 1) iTime = 1;
 			int iSmall = 0;
 			int iBig = 0;

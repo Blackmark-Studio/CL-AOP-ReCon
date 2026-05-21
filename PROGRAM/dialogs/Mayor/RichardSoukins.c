@@ -82,6 +82,7 @@ void ProcessDialogEvent()
 			DialogExit();
 			NextDiag.CurrentNode = NextDiag.TempNode;
 			LAi_group_Attack(NPChar, Pchar);
+			LAi_LocationFightDisable(loadedLocation, false);
 			AddDialogExitQuest("MainHeroFightModeOn");
 		break;
 

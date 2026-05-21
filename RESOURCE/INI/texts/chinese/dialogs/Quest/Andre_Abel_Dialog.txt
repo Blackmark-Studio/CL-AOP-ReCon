@@ -1,5 +1,5 @@
 Andre_Abel_Dialog_1 {
-向你问好，船长……
+哦，是你吗，船长？！
 }
 Andre_Abel_Dialog_2 {
 很高兴见到你，船长。
@@ -8,7 +8,7 @@ Andre_Abel_Dialog_3 {
 @<RandPhraseSimple>
 }
 Andre_Abel_Dialog_4_m {
-嗯，我以前没见过你。咱们认识吗？酒保说你惹上点麻烦，需要人护送。
+嗯，我以前没见过你。咱们认识吗？你看起来像是遇到了麻烦……
 }
 Andre_Abel_Dialog_4_f {
 嗯，我以前没见过你。咱们认识吗？酒保说你惹上了点麻烦，需要人护送。

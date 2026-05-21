@@ -733,9 +733,30 @@ void CreatMinetown(aref loc)
 	aref st;
 	string slai_group, sType;
 	slai_group = GetNationNameByType(iNation)  + "_citizens";
-	
+
+	//количество рабов в рудниках
+	if (pchar.questTemp.LSC == "over") num = rand(5) + 5;
+	else num = 0;
 	arrayNPCModelHow = 0;
-	num = rand(3) + 7; //количество
+	for (i = 0; i < num; i++)
+	{
+		chr = GetCharacter(NPC_GenerateCharacter("Slave_"+i, "slave_"+(rand(8)+1), "man", "man", 7, iNation, 2, false));
+		SetNPCModelUniq(chr, "convict", MAN);
+		chr.dialog.filename = "Slavery\Minetown_dialog.c";
+		chr.dialog.currentnode = "plantation_slave";
+		chr.greeting = "Gr_slave";
+		chr.CityType = "citizen";
+		chr.city = Colonies[iColony].id;
+
+		ChangeCharacterAddress(chr, "Orange_mines", "goto" + (i + 1));
+		LAi_SetCitizenType(chr);
+		LAi_group_MoveCharacter(chr, slai_group);
+	}
+
+	//количество рабов на поверхности
+	if (pchar.questTemp.LSC == "over") num = rand(3) + 1;
+	else num = rand(3) + 7;
+	arrayNPCModelHow = 0;
 	for (i = 0; i < num; i++)
 	{
 		chr = GetCharacter(NPC_GenerateCharacter("Slave_"+i, "slave_"+(rand(8)+1), "man", "man", 7, iNation, 2, false));
@@ -751,10 +772,13 @@ void CreatMinetown(aref loc)
 		LAi_SetCitizenType(chr);
 		LAi_group_MoveCharacter(chr, slai_group);
 	}
+
 	// солдаты -->
 	if (checkAttribute(loc, "soldiers") && CheckAttribute(loc, "locators.soldiers"))
 	{
- 		for (i=1; i<=3; i++)
+		if (pchar.questTemp.LSC == "over") num = 5;
+		else num = 3;
+ 		for (i = 1; i <= num; i++)
 		{
 			if(iNation == PIRATE)
 			{
@@ -796,7 +820,10 @@ void CreatMinetown(aref loc)
 			{
 				LAi_group_MoveCharacter(chr, slai_group);
 			}
-			ChangeCharacterAddressGroup(chr, pchar.location, "soldiers", "soldier"+i);
+			if (i < 4)
+				ChangeCharacterAddressGroup(chr, pchar.location, "soldiers", "soldier" + i);
+			else
+				ChangeCharacterAddressGroup(chr, "Orange_mines", "quest", "mushketer" + (i - 3));
 		}
 	}
 	// солдаты <--
@@ -889,6 +916,7 @@ void CreatUnderwater(aref loc)
 				if (iTemp == -1)
 				{
 					sld = GetCharacter(NPC_GenerateCharacter("Crab_"+i, "crabBig", "crab", "crabBig", 40+(MOD_SKILL_ENEMY_RATE), PIRATE, -1, false));
+					sld.monster = "1";
 					GiveItem2Character(sld, "unarmed");
 					EquipCharacterbyItem(sld, "unarmed");
 					LAi_SetWarriorType(sld);
@@ -985,7 +1013,8 @@ void CreatTenochtitlanInside(aref loc)
 				if (model[iMassive] != "")
 				{
 					chr = GetCharacter(NPC_GenerateCharacter("AztecWarrior"+loc.index+"_"+i, model[iMassive], "skeleton", "man", warriorRank, PIRATE, 0, true));
-					SetFantomParamFromRank(chr, warriorRank, true);					
+					chr.undead = "1";
+					SetFantomParamFromRank(chr, warriorRank, true);
 					while (FindCharacterItemByGroup(chr, BLADE_ITEM_TYPE) != "")
 					{
 						TakeItemFromCharacter(chr, FindCharacterItemByGroup(chr, BLADE_ITEM_TYPE));
@@ -1042,7 +1071,8 @@ void CreatTenochtitlanInside(aref loc)
 					if (model[iMassive] != "")
 					{
 						chr = GetCharacter(NPC_GenerateCharacter("AztecWarrior"+loc.index+"_"+n+""+i, model[iMassive], "skeleton", "man", warriorRank, PIRATE, 0, true));
-						SetFantomParamFromRank(chr, 15, true);					
+						chr.undead = "1";
+						SetFantomParamFromRank(chr, 15, true);
 						while (FindCharacterItemByGroup(chr, BLADE_ITEM_TYPE) != "")
 						{
 							TakeItemFromCharacter(chr, FindCharacterItemByGroup(chr, BLADE_ITEM_TYPE));
@@ -1098,12 +1128,12 @@ void CreatDesMoines(aref loc)
 				model[4] = "citiz_47";
 				model[5] = "shipowner_2";
 				model[6] = "shipowner_13";
-				model[7] = "pirate_3";
+				model[7] = "milit_spa_5";
 				model[8] = "trader_4";
 				model[9] = "barmen_6";
 				sSex = "man";
 				sNode = "DMCitiz";
-				sModel = "Hobart";
+				sModel = "citiz_15";
 				bImmortal = false;
 			}
 			else
@@ -1117,12 +1147,12 @@ void CreatDesMoines(aref loc)
 					model[4] = "citiz_47";
 					model[5] = "shipowner_2";
 					model[6] = "shipowner_13";
-					model[7] = "pirate_3";
+					model[7] = "milit_spa_5";
 					model[8] = "trader_4";
 					model[9] = "barmen_6";
 					sSex = "man";
 					sNode = "DMCitiz";
-					sModel = "Hobart";
+					sModel = "citiz_15";
 					bImmortal = false;
 				}
 				else
@@ -1139,7 +1169,7 @@ void CreatDesMoines(aref loc)
 					model[9] = "skel2";
 					sSex = "skeleton";
 					sNode = "DMSkel";
-					sModel = "skeletcap";
+					sModel = "SkeletD";
 					bImmortal = true;
 				}
 			}
@@ -1150,6 +1180,10 @@ void CreatDesMoines(aref loc)
 				if (model[iMassive] != "")
 				{
 					chr = GetCharacter(NPC_GenerateCharacter("MCCitiz_"+i, model[iMassive], sSex, "man", 15, SPAIN, 0, true));
+					if (sSex == "skeleton")
+						chr.skeleton = "1";
+					else
+						DeleteAttribute(chr, "skeleton");
 					chr.dialog.filename = "Quest\MagicCity.c";
 					chr.dialog.currentnode = sNode;
 					chr.greeting = "cit_common";
@@ -1170,7 +1204,7 @@ void CreatDesMoines(aref loc)
 			{	
 				sSex = "man";
 				sNode = "DMCitiz";
-				sModel = "Hobart";
+				sModel = "citiz_15";
 				bImmortal = false;
 			}
 			else
@@ -1179,19 +1213,23 @@ void CreatDesMoines(aref loc)
 				{
 					sSex = "man";
 					sNode = "DMCitiz";
-					sModel = "Hobart";
+					sModel = "citiz_15";
 					bImmortal = false;
 				}
 				else
 				{
 					sSex = "skeleton";
 					sNode = "DMSkel";
-					sModel = "skeletcap";
+					sModel = "SkeletD";
 					bImmortal = true;
 				}
 			}
 			//глава поселения
 			chr = GetCharacter(NPC_GenerateCharacter("DesMoinesHead", sModel, sSex, "man", 25, SPAIN, 0, true));
+			if (sSex == "skeleton")
+				chr.skeleton = "1";
+			else
+				DeleteAttribute(chr, "skeleton");
 			chr.name = FindPersonalName("DesMoinesHead_name");
 			chr.lastname = FindPersonalName("DesMoinesHead_lastname");
 			chr.dialog.filename = "Quest\MagicCity.c";

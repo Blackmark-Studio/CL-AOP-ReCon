@@ -1,0 +1,39 @@
+HWIC_head_1 {
+Saudações. Estou muito ocupado agora, então vá direto ao assunto — você tem negócios comigo?
+}
+HWIC_head_2 {
+O caso é o seguinte... Um dos piratas deseja entrar para o seu serviço. Ele está disposto a pagar 20.000 pesos por uma oportunidade que lhe permita trabalhar para você.
+}
+HWIC_head_3 {
+Gostaria de saber como foram as coisas entre você e o Hugo?
+}
+HWIC_head_4 {
+Não, não, não repare em mim. Já estou de saída.
+}
+HWIC_head_5 {
+Quem é esse homem?
+}
+HWIC_head_6 {
+O nome dele é Hugo Serraria. Ele...
+}
+HWIC_head_7 {
+Você tem noção de que este homem é um pirata abominável e um assassino cruel? Eu jamais permitirei que um homem como esse conste no nosso registro de capitães.
+}
+HWIC_head_8_m {
+Mas ele não é perigoso... Eu o vi, é apenas um velho cansado, e seu maior desejo é dormir em uma cama confortável. Ele está pronto para se aposentar e busca um porto seguro onde permitam que ele viva em paz.
+}
+HWIC_head_8_f {
+Mas ele não é perigoso... Eu o vi, é apenas um velho cansado, e seu maior desejo é dormir em uma cama confortável. Ele está pronto para se aposentar e busca um porto seguro onde permitam que ele viva em paz.
+}
+HWIC_head_9 {
+Hum... Se você diz, talvez tenha razão. Vou confiar em você neste assunto, @<pchar>. Além disso, ele pode ser útil para nós como consultor no combate à pirataria. Muito bem.\nTenho aqui este formulário para a abertura de contrato, que você levará e entregará a ele, capitão. Hugo deverá se apresentar a mim imediatamente após recebê-lo para assinar todos os documentos de trabalho necessários. E isso é obrigatório, você precisa entender, capitão. Vou alertar as autoridades locais sobre a vinda dele. Agora, permita-me voltar aos meus negócios.
+}
+HWIC_head_10 {
+Claro, @<GetFullName>! Até logo!
+}
+HWIC_head_11 {
+Oh, muito obrigado, @<GetAddress_Form> @<pchar>. Ele é un capitão muito corajoso e experiente. Nossos inimigos já perderam meia dúzia de navios. Sem falar que ele é um excelente contador de histórias. Seus contos sobre os velhos tempos reúnem multidões na taverna! Agora, se me der licença, vou pedir que se retire.
+}
+HWIC_head_12 {
+Tudo de bom para você!
+}

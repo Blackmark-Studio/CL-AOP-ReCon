@@ -165,6 +165,7 @@ void II_ExecuteCommand_Land()
 			trace("Команда 105 - призыв 1 враждебного персонажа (скелет).");
 			
 			RandChar = GetCharacter(NPC_GenerateCharacter("RandSkeleton_" + rand(999), "Skel" + (1 + rand(3)), "skeleton", "man", iRank, PIRATE, -1, true));
+			RandChar.skeleton = "1";
 			LAi_SetWarriorType(RandChar);
 			LAi_group_MoveCharacter(RandChar, "EnemyFight");
 			ChangeCharacterAddressGroup(RandChar, pchar.location, "goto", "goto1");

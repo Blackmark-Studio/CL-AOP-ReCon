@@ -56,7 +56,7 @@ Banders_dialog_13 {
 What a cheeky one you are. And your friend claimed his mates were generous.
 }
 Banders_dialog_14 {
-Alright, listen. I've got reliable information that in the next @<FindDaysString>, two @<pchar> merchant ships — '@<pchar>' and '@<pchar>' — will be off the coast of @<pchar>, their holds packed with . You could try to intercept them.
+Alright, listen. I've got reliable information that in the next @<FindDaysString>, two @<pchar> merchant ships — '@<pchar>' and '@<pchar>' — will be off the coast of @<pchar>, their holds packed with @<pchar>. You could try to intercept them.
 }
 Banders_dialog_15_m {
 Excellent! Looks like sharing my coin with you was worth it.
@@ -65,7 +65,7 @@ Banders_dialog_15_f {
 Excellent! Looks like sharing my coin with you wasn't for nothing.
 }
 Banders_dialog_16 {
-Alright, listen. I've got reliable information that in the next @<FindDaysString>, two @<pchar> merchant ships — '@<pchar>' and '@<pchar>' — will be off the coast of @<pchar>, their holds packed full. You could try to intercept them.
+Alright, listen. I've got reliable information that in the next @<FindDaysString>, two @<pchar> merchant ships — '@<pchar>' and '@<pchar>' — will be off the coast of @<pchar>, their holds packed with @<pchar>. You could try to intercept them.
 }
 Banders_dialog_17_m {
 Excellent! Looks like sharing my coin with you wasn’t for nothing.

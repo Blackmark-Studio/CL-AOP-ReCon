@@ -246,5 +246,24 @@ int CreateSantiagoCharacters(int n)
 	ch.Storage = true;
 	n = n + 1;
 	
+	makeref(ch,Characters[n]);			//Глава инквизиции
+	ch.id		= "Santiago_Inquisitor";
+	ch.model	= "priest";
+	ch.model.animation = "man_B";
+	ch.name 	= FindPersonalName("AntonioDeSouza_name");
+	ch.lastname = FindPersonalName("AntonioDeSouza_lastname");
+	ch.sex = "man";
+	ch.City = "Santiago";
+	ch.location	= "Santiago_Incquisitio";
+	ch.location.group = "sit";
+	ch.location.locator = "armchair1";
+	ch.Dialog.Filename = "Quest\AntonioDeSouza.c";
+	ch.nation = SPAIN;
+	ch.greeting = "Gr_padre";
+	LAi_SetHuberType(ch);
+	LAi_group_MoveCharacter(ch, "SPAIN_CITIZENS");
+	LAi_SetImmortal(ch, true);
+	n = n + 1;
+	
 	return n;
 }

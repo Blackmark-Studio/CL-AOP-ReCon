@@ -122,7 +122,7 @@ int LocationInitPuertoPrincipe(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "PuertoPrincipe_town";
 	locations[n].id.label = "Street";
-	locations[n].image = "loading\towns\pearl1.tga";
+	locations[n].image = "loading\towns\pearl.tga";
 	locations[n].worldmap = "PuertoPrincipe_town";
 	locations[n].citizens = true;
 	locations[n].soldiers = true;
@@ -399,7 +399,7 @@ int LocationInitPuertoPrincipe(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "PuertoPrincipe_townhall";
 	locations[n].id.label = "Townhall";
-	locations[n].image = "loading\inside\pirateresidence.tga";
+	locations[n].image = "loading\inside\smallresidence.tga";
 	//Town sack
 	locations[n].townsack = "PuertoPrincipe";
 	locations[n].lockWeather = "Inside";

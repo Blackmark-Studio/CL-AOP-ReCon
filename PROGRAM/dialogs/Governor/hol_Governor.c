@@ -313,7 +313,7 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 							link.l1.go = "Step_9_6";
 							DeleteAttribute(pchar, "questTemp.QtyShips");
 						}
-						AddMoneyToCharacter(pchar, makeint(100000 * tempQty));
+						AddMoneyToCharacter(pchar, makeint(200000 * tempQty));
 					}
 				break;
 				case "SpaAttackCuracao_GoodWork":
@@ -351,8 +351,6 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 					bWorldAlivePause = false; // Конец линейки
 					RemoveLandQuestmark_Main(npchar, "Hol_Line");
 					RemoveMapQuestmark("Villemstad_town", "Hol_Line");
-
-					Achievment_Set(ACH_Na_sluzhbe_Gollandii);
 				break;
 			}
 		break;
@@ -1561,6 +1559,7 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 			//слухи
 			AddSimpleRumour(
 				StringFromKey("hol_Governor_329"), HOLLAND, 5, 1);
+			Achievment_Set(ACH_Na_sluzhbe_Gollandii);
 		break;
 
 		//********************** Французская линейка. Квест №2, доставка письма д'Ожерона. ************************

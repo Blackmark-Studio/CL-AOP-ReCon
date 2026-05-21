@@ -390,7 +390,13 @@ bool LAi_group_ValidateTarget(aref chr, aref trg)
 //Враг ли данный персонаж
 bool LAi_group_IsEnemy(aref chr, aref trg)
 {
-	return (SendMessage(&LAi_grp_relations, "sii", "IsEnemy", chr, trg) != 0);
+	if (SendMessage(&LAi_grp_relations, "sii", "IsEnemy", chr, trg) != 0)
+	{
+		//HardCoffee чтобы не атаковали сопровождаемую TODO: может сюда вообще всех QuestFollower посадить?
+		if ("CangGirl" == trg.id) return false;
+		return true;
+	}
+	return false;
 }
 
 //------------------------------------------------------------------------------------------

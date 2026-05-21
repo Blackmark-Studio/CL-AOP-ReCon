@@ -86,19 +86,19 @@ LeifEricson_22 {
 N’est-ce pas un ton un peu prétentieux pour un vieux crâne miteux?
 }
 LeifEricson_23 {
-Que signifie « privateer »?
+Que signifie « corsaire »?
 }
 LeifEricson_24 {
-Un corsaire, c’est un flibustier... un boucanier, un pirate...
+Un corsaire, c’est un pirate...
 }
 LeifEricson_25 {
-Qu’est-ce qu’un « filibustier », un « pirate »?
+Qu’est-ce qu’un « pirate »?
 }
 LeifEricson_26_m {
 Eh bien, comment dire... Je suis un marin libre et un guerrier libre. J’ai mon propre navire, et je fais ce que je juge bon.
 }
 LeifEricson_26_f {
-Eh bien, comment dire... Je suis un marin libre, un oiseau sauvage. J’ai mon propre navire et je fais ce que je veux.
+Eh bien, comment dire... Je suis un marin libre, un oiseau libre. J’ai mon propre navire et je fais ce que je veux.
 }
 LeifEricson_27_m {
 Ha ha! Toi et moi, nous sommes frères de sang! Je suis heureux que ce soit une âme sœur qui ait mené mon plan à bien. C’est un grand signe de chance pour moi...

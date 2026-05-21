@@ -143,13 +143,13 @@ Minentown_mayor_41 {
 Je ne peux pas vous le livrer... Même si c'est l'ordre de Son Excellence, car il se trouve en dehors...
 }
 Minentown_mayor_42 {
-Ne vous inquiétez pas tant – j'ai seulement besoin de lui pour me montrer l'emplacement du rituel.
+Ne vous inquiétez pas trop - j'ai seulement besoin de lui pour qu'il me montre l'emplacement du rituel.
 }
 Minentown_mayor_43 {
-Je ne peux pas vous le livrer... Même si c'est l'ordre de Son Excellence, car il se trouve en dehors...
+Et pourquoi en auriez-vous besoin ?
 }
 Minentown_mayor_44 {
-Ne vous inquiétez pas tant – j'ai seulement besoin de lui pour me montrer l'emplacement du rituel. Il doit être éliminé en premier, sinon les éboulements continueront.
+Le fait est que ce lieu de rituel doit être purifié en premier, sinon les éboulements continueront.
 }
 Minentown_mayor_45 {
 Je ne crois pas vraiment à toutes ces machinations magiques, mais si vous le dites, qu'il en soit ainsi.

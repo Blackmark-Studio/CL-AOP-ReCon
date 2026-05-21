@@ -269,6 +269,15 @@ itmtext_RingCapBook
 ... hoy, uno de los marineros, mientras ponía veneno para ratas en la bodega, dejó caer un frasco de arsénico justo en el barril de agua potable. Aún no entiendo cómo lo logró. Cincuenta galones de agua dulce se han echado a perder. La calma continúa. Mi amada reza a sus dioses pidiendo perdón: cree sinceramente que esto es un castigo por el oro robado...
 ... ya es el décimo hombre que cae, víctima de una fiebre repentina. Los marineros murmuran. El contramaestre apenas mantiene la disciplina. Esta tarde, el cuerpo del primero en morir por la enfermedad fue arrojado al mar. El agua dulce empieza a
 }
+itmname_LesopilkaLog {Diario de navegación}
+itmdescr_LesopilkaLog
+{
+Un diario de navegación con portada de color rojo, en el que se registra información sobre la carga transportada.
+}
+itmtext_LesopilkaLog
+{
+... He tomado la decisión de que, mientras se repara el barco, trasladaremos parte de los tesoros a la isla. Por si acaso. Nuestro barco es muy vulnerable ahora mismo y no puedo garantizar que sea capaz de proteger la valiosa carga. Si de repente aparecen piratas, hay una posición ventajosa en la isla desde la que les presentaremos batalla...
+}
 itmname_unarmed {Desarmado}
 itmdescr_unarmed {La habilidad de defenderte usando el arma que siempre tienes: tus propios puños.}
 itmname_blade5 {Daga de parada}
@@ -443,7 +452,7 @@ Un arma de avancarga de ánima lisa con un mecanismo más fiable que el antiguo 
 ~
 Requiere la destreza 'Entrenamiento de Mosquetero'.
 }
-itmname_mushket_H2 {Mosquete de dos cañones exclusivo}
+itmname_mushket_H2 {Mosquete de dos cañones}
 itmdescr_mushket_H2
 {
 Mosquete de doble cañón hecho a medida con llave de chispa. Una obra exclusiva de arte armero. A pesar de su alto costo, el diseño está algo anticuado. Sin embargo, con toda su potencia y eficacia, esta magnífica carabina exige cierta destreza y experiencia a su dueño.
@@ -457,7 +466,7 @@ Arma de fuego ancestral de Tichinguit. Una pieza única creada a partir de un fu
 ~
 Requiere la destreza 'Entrenamiento de Mosquetero'.
 }
-itmname_mushket2x2 {Mosquete de dos cañones}
+itmname_mushket2x2 {Mosquete de dos cañones exclusivo}
 itmdescr_mushket2x2
 {
 Una obra maestra de la armería de Saint-Etienne. Fueron los franceses quienes crearon el arma rayada de doble cañón al perfeccionar el cierre de batería. Es imposible usar esta arma sin formación en una escuela militar del Viejo Mundo.
@@ -636,6 +645,8 @@ itmname_potionrum {Botella de ron}
 itmdescr_potionrum {Ningún ron puede tumbar a un pirata como tú, así que bébelo sin miedo... Por cierto, si estás herido, el alcohol que contiene puede ayudarte a curar las heridas y prevenir infecciones.}
 itmname_potionwine {Vino excelente}
 itmdescr_potionwine {Uno de los mejores vinos franceses del Caribe. Su efecto relajante te ayudará a recuperar fuerzas y prevenir infecciones.}
+itmname_potionsangari {Sangaree}
+itmdescr_potionsangari {Bebida alcohólica refrescante. La combinación de vino tinto y ron fuerte, aderezada con ingredientes secretos, es ideal para saciar la sed en el calor insoportable. La bebida anima y da fuerzas sin causar una embriaguez tan pesada como el alcohol puro.}
 itmname_jewelry1 {Zafiro}
 itmdescr_jewelry1 {Un raro zafiro azul extraído de las profundidades del Virreinato español de Nueva Granada. Se rumorea que estas gemas se encuentran en minas cerca de Quito o en los Andes, donde su color se compara con las aguas más profundas del Océano Pacífico.}
 itmname_jewelry2 {Diamante}
@@ -882,6 +893,11 @@ itmname_recipe_migraine_potion {Instrucciones (Decocción para la migraña)}
 itmdescr_recipe_migraine_potion {Instrucciones para preparar una poción para la migraña.}
 itmname_recipe_potion1 {Instrucción (Poción de curación)}
 itmdescr_recipe_potion1 {Instrucciones para preparar una Poción de Curación.}
+itmname_recipe_potionsangari {Receta de "Sangaree"}
+itmdescr_recipe_potionsangari
+{
+Un trozo de papel escrito con letra apresurada. Detalla la tecnología para mezclar vino y ron y obtener el "Sangaree" perfecto. Permite preparar esta bebida por cuenta propia si se dispone de los ingredientes necesarios y un equipo de alquimia.
+}
 itmname_Mineral2 {Laúd}
 itmdescr_Mineral2 {Un instrumento musical de cuerda muy popular. Un talentoso intérprete de laúd puede elevar la moral de soldados o marineros.}
 itmname_Mineral3 {Vela}
@@ -1001,13 +1017,6 @@ itmname_PDM_PJ_Vino {Botella de vino}
 itmdescr_PDM_PJ_Vino {Una botella de vino exquisito y costoso para entregar a un soldado.}
 itmname_PDM_PJ_Rom {Botella de ron}
 itmdescr_PDM_PJ_Rom {Una botella de ron barato para entregar a un soldado.}
-itmname_PDM_PJ_BsRL {Botella con cinta rosa}
-itmdescr_PDM_PJ_BsRL
-{
-Una botella con una cinta rosa atada con esmero.
-* * *
-Pasivo: +2 Suerte, +2 Comercio, -2 Sigilo.
-}
 itmname_DesMoinesLocies {Rutero de Des Moines}
 itmdescr_DesMoinesLocies {Instrucciones detalladas de navegación segura y fondeo a lo largo de las costas del asentamiento de Des Moines.}
 itmname_letter_A {Carta sellada}
@@ -1055,7 +1064,7 @@ itmname_instrument1 {Sierra fina}
 itmdescr_instrument1
 {
 Una herramienta sencilla utilizada por generaciones de carpinteros navales. Este ejemplar destaca por su empuñadura excepcionalmente cómoda, que permite cortes rápidos y precisos. Con un instrumento así, un carpintero experimentado puede trabajar durante horas sin fatigarse.
-+10 Reparación
+Pasivo: +5 Reparación.
 }
 
 itmname_strangeNoteLSC	{La nota extraña}
@@ -1066,4 +1075,18 @@ Un trozo de pergamino con garabatos
 itmtext_strangeNoteLSC
 {
 Me gustaría adentrarme en el abrazo de la tierra al mar, para ver en él el fin de toda existencia.
+}
+
+itmname_TizerJournal   {Diario de Daniel Tudor}
+itmdescr_TizerJournal
+{
+Un pesado diario encuadernado en cuero con cerradura. En la portada está grabado:\n"Propiedad de Daniel Gabrielo Tudor".\nLa lectura de tales memorias llevará bastante tiempo.
+}
+itmtext_TizerJournal
+{
+Muchos necios buscan la Isla de la Justicia confiando en una brújula o en conocimientos cartográficos. Pero esta isla nunca aparecerá en los mapas, y la aguja de la brújula se volverá loca en cuanto uno se acerque a los arrecifes malditos.
+La isla no acepta a quienes vienen por curiosidad o codicia. Para alcanzar el abrazo de la tierra desde el mar, uno debe entregarse a la merced de los elementos, permaneciendo en total ignorancia de lo que será de su alma y de su cuerpo.
+Solo a través del rugido de una gran tormenta, solo a través del crujido de los mástiles rompiéndose y el inevitable naufragio, se revela el camino.
+El mar mismo decidirá qué hacer contigo; lo principal es no resistirse a su fuerza. Y el mayor misterio de la isla: la Isla rechaza las armadas.
+Aquel que se decida a dar este paso debe hacerlo solo. Sin tripulación. Sin compañeros leales a su espalda. Solo tú y la furia del océano. De lo contrario, a todos les aguardará la perdición...
 }

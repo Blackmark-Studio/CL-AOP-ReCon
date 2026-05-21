@@ -182,7 +182,10 @@ void QuestComplete(string sQuestName, string qname)
 			if (!CheckAttribute(&TEV, "GUARDS")) break;
 			if (CheckAttribute(&TEV, "GUARDS.group"))
 			{
-				DeleteAttribute(pchar, "quest.Battle_Hunters_Escape");
+				if (CheckAttribute(pchar, "quest.Battle_Hunters_Escape"))
+				{
+				    pchar.quest.Battle_Hunters_Escape.over = "yes";
+				}
 				LAi_group_SetRelation(LAI_GROUP_PLAYER, TEV.GUARDS.group, LAI_GROUP_NEITRAL);
 			}
 			DeleteAttribute(&TEV, "GUARDS");
@@ -1757,7 +1760,10 @@ void QuestComplete(string sQuestName, string qname)
 			}
 
 			DeleteAttribute(pchar, "GenQuest.EncGirl"); //трем нацию и имя
-			DeleteAttribute(pchar, "quest.LandEnc_RapersBadExit");
+			if (CheckAttribute(pchar, "quest.LandEnc_RapersBadExit"))
+			{
+				pchar.quest.LandEnc_RapersBadExit.over = "yes";
+			}
 		break;
 
 		case "EncGirl_Massacre": //Rosarak. Прерывание за резню (beta)
@@ -3765,6 +3771,7 @@ void QuestComplete(string sQuestName, string qname)
 			for (i = 1; i <= 7; i++)
 			{
 				sld = GetCharacter(NPC_GenerateCharacter("Skelet" + i, "Skel" + (rand(3) + 1), "skeleton", "man", 25, PIRATE, 0, true));
+				sld.skeleton = "1";
 				if (i == 2)
 				{
 					sld.name = FindPersonalName("MorrisWillamsSkelet_name");
@@ -4181,7 +4188,7 @@ void QuestComplete(string sQuestName, string qname)
 			FaceMaker(sld);
 			SetGovenourToCity(ENGLAND, "PortRoyal");
 			AddQuestRecord("Eng_Line_12_ColonelLinch", "3");
-			LAi_SetHuberStayType(sld);
+//			LAi_SetHuberStayType(sld);
 			LAi_SetImmortal(sld, false);
 			LAi_SetImmortal(characterFromID("PortRoyal_Mayor"), false);
 			AddLandQuestmark_Main(CharacterFromID("eng_guber"), "Eng_Line");
@@ -5210,6 +5217,7 @@ void QuestComplete(string sQuestName, string qname)
 			for (i = 1; i <= 40; i++)
 			{
 				sld = GetCharacter(NPC_GenerateCharacter("Skelet" + i, "Skel" + (rand(3) + 1), "skeleton", "man", 1, PIRATE, 0, true));
+				sld.skeleton = "1";
 				sld.rank = 1;
 				sld.skill.Fencing = 1;
 				sld.skill.Pistol = 1;
@@ -6354,16 +6362,16 @@ void QuestComplete(string sQuestName, string qname)
 			for (i = 1; i <= 5; i++)
 			{
 				Model = "Sold_spa_" + (rand(7) + 9);
-				sTemp = 18;
+				iRank = 18;
 				attrName = "SpaFighter" + i;
 				if (i == 1)
 				{
 					Model = "off_spa_5";
-					sTemp = 23;
+					iRank = 23;
 					attrName = "DeLeiva";
 				}
-				sld = GetCharacter(NPC_GenerateCharacter(attrName, Model, "man", "man", sTemp, SPAIN, 0, true));
-				FantomMakeCoolFighter(sld, sTemp, 70, 50, BLADE_LONG, "pistol2", 40);
+				sld = GetCharacter(NPC_GenerateCharacter(attrName, Model, "man", "man", iRank, SPAIN, 0, true));
+				FantomMakeCoolFighter(sld, iRank, 70, 50, BLADE_LONG, "pistol2", 40);
 				LAi_SetWarriorType(sld);
 				if (i == 1)
 				{
@@ -7775,6 +7783,7 @@ void QuestComplete(string sQuestName, string qname)
 			LAi_LocationFightDisable(&Locations[FindLocation("Guadeloupe_Cave")], true);
 			LAi_LocationDisableMonstersGen("Guadeloupe_Cave", true);
 			sld = GetCharacter(NPC_GenerateCharacter("LeifEricson", "Leif_Erikson", "skeleton", "man", 100, PIRATE, -1, true));
+			sld.skeleton = "1";
 			FantomMakeCoolFighter(sld, 100, 100, 100, "vikingHeroSword", "", 3000);
 			sld.name = FindPersonalName("LeifEricson_name");
 			sld.lastname = FindPersonalName("LeifEricson_lastname");
@@ -8208,6 +8217,7 @@ void QuestComplete(string sQuestName, string qname)
 			//готовим локу выхода из города
 			LAi_LocationDisableOfficersGen("FortOrange_ExitTown", true);
 			pchar.GenQuest.Enc2Pause = true;
+			if (!CheckAttribute(pchar, "questTemp.Azzy.Immortal")) LAi_SetImmortal(pchar, false);
 			for (i = 0; i<MAX_CHARACTERS; i++)
 			{
 				makeref(sld, characters[i]);
@@ -8961,6 +8971,7 @@ void QuestComplete(string sQuestName, string qname)
 		break;
 
 		case "TheStarsAlignedLSC_21":
+			SetBan("Looting,Exchange", 1);
 			if (pchar.questTemp.LSC == "MayorFiledLSC") iTemp = 3;
 			else iTemp = 6;
 			for (i = 0; i < iTemp; i++)
@@ -9468,6 +9479,7 @@ void QuestComplete(string sQuestName, string qname)
 		break;
 
 		case "TheStarsAlignedLSC_48":
+			SetBan("Looting,Exchange", 0);
 			LAi_FadeEx(0.0, 2.0, 1.8, "AfterStarsAlignedFuncLSC_1", "AfterStarsAlignedFuncLSC_2", "AfterStarsAlignedFuncLSC_3");
 		break;
 
@@ -9564,15 +9576,15 @@ void QuestComplete(string sQuestName, string qname)
 			//распространим слухи
 			sld = CharacterFromId("LSCBarmen");
 			sld.myselfRumour = AddSimpleRumourCityTip(StringFromKey("Common_rumours_50"), "LostShipsCity", 10, 1, "LSC", "");
-			sld.myselfRumour = AddSimpleRumourCityTip(StringFromKey("Common_rumours_51"), "LostShipsCity", 10, 1, "LSC", "");
-			sld.myselfRumour = AddSimpleRumourCityTip(StringFromKey("Common_rumours_52"), "LostShipsCity", 10, 1, "LSC", "");
-			sld.myselfRumour = AddSimpleRumourCityTip(StringFromKey("Common_rumours_53"), "LostShipsCity", 10, 1, "LSC", "");
-			sld.myselfRumour = AddSimpleRumourCityTip(StringFromKey("Common_rumours_54"), "LostShipsCity", 10, 1, "LSC", "");
-			sld.myselfRumour = AddSimpleRumourCityTip(StringFromKey("Common_rumours_55"), "LostShipsCity", 10, 1, "LSC", "");
-			sld.myselfRumour = AddSimpleRumourCityTip(StringFromKey("Common_rumours_56"), "LostShipsCity", 10, 1, "LSC", "");
-			sld.myselfRumour = AddSimpleRumourCityTip(StringFromKey("Common_rumours_57"), "LostShipsCity", 10, 1, "LSC", "");
-			sld.myselfRumour = AddSimpleRumourCityTip(StringFromKey("Common_rumours_58"), "LostShipsCity", 10, 1, "LSC", "");
-			sld.myselfRumour = AddSimpleRumourCityTip(StringFromKey("Common_rumours_59"), "LostShipsCity", 10, 1, "LSC", "");
+			sld.myselfRumour = sld.myselfRumour + "," + AddSimpleRumourCityTip(StringFromKey("Common_rumours_51"), "LostShipsCity", 10, 1, "LSC", "");
+			sld.myselfRumour = sld.myselfRumour + "," + AddSimpleRumourCityTip(StringFromKey("Common_rumours_52"), "LostShipsCity", 10, 1, "LSC", "");
+			sld.myselfRumour = sld.myselfRumour + "," + AddSimpleRumourCityTip(StringFromKey("Common_rumours_53"), "LostShipsCity", 10, 1, "LSC", "");
+			sld.myselfRumour = sld.myselfRumour + "," + AddSimpleRumourCityTip(StringFromKey("Common_rumours_54"), "LostShipsCity", 10, 1, "LSC", "");
+			sld.myselfRumour = sld.myselfRumour + "," + AddSimpleRumourCityTip(StringFromKey("Common_rumours_55"), "LostShipsCity", 10, 1, "LSC", "");
+			sld.myselfRumour = sld.myselfRumour + "," + AddSimpleRumourCityTip(StringFromKey("Common_rumours_56"), "LostShipsCity", 10, 1, "LSC", "");
+			sld.myselfRumour = sld.myselfRumour + "," + AddSimpleRumourCityTip(StringFromKey("Common_rumours_57"), "LostShipsCity", 10, 1, "LSC", "");
+			sld.myselfRumour = sld.myselfRumour + "," + AddSimpleRumourCityTip(StringFromKey("Common_rumours_58"), "LostShipsCity", 10, 1, "LSC", "");
+			sld.myselfRumour = sld.myselfRumour + "," + AddSimpleRumourCityTip(StringFromKey("Common_rumours_59"), "LostShipsCity", 10, 1, "LSC", "");
 		break;
 
 		case "LSC_MentRefresh": // стабилизация ментов после убийства нарвалов
@@ -9753,6 +9765,7 @@ void QuestComplete(string sQuestName, string qname)
 			for (i = 1; i <= 10; i++)
 			{
 				sld = GetCharacter(NPC_GenerateCharacter("CrabInside_" + i, "crabBig", "crab", "crabBig", iRank, PIRATE, -1, false));
+				sld.monster = "1";
 				sld.name = FindPersonalName("CrabInside_name");
 				sld.lastname = "";
 				GiveItem2Character(sld, "unarmed");
@@ -9801,6 +9814,7 @@ void QuestComplete(string sQuestName, string qname)
 			for (i = 2; i <= 7; i++)
 			{
 				sld = GetCharacter(NPC_GenerateCharacter("CrabDeck_" + i, "crabBig", "crab", "crabBig", iRank, PIRATE, -1, false));
+				sld.monster = "1";
 				sld.name = FindPersonalName("CrabInside_name");
 				sld.lastname = "";
 				GiveItem2Character(sld, "unarmed");
@@ -11020,6 +11034,11 @@ void QuestComplete(string sQuestName, string qname)
 			LocatorReloadEnterDisable("Villemstad_town", "reload33", false);
 			LocatorReloadEnterDisable("Villemstad_town", "reload1_back", false);
 			LocatorReloadEnterDisable("Villemstad_town", "reload2_back", false);
+
+			pchar.quest.Headhunter_Halen_fight.win_condition.l1 = "NPC_Death";
+			pchar.quest.Headhunter_Halen_fight.win_condition.l1.character = "Halen";
+			pchar.quest.Headhunter_Halen_fight.win_condition = "Headhunter_HalenDeadInTown";
+
 			iTemp = GetCharacterIndex("Halen");
 			if (iTemp != -1)
 			{
@@ -11034,7 +11053,10 @@ void QuestComplete(string sQuestName, string qname)
 		break;
 
 		case "Headhunter_HalenOut":
-			DeleteAttribute(pchar, "quest.Headhunter_SeekHalen");
+			if (CheckAttribute(pchar, "quest.Headhunter_SeekHalen"))
+			{
+			    pchar.quest.Headhunter_SeekHalen.over = "yes";
+			}
 			ChangeCharacterAddress(characterFromID("Halen"), "None", "");
 			LocatorReloadEnterDisable("Villemstad_town", "gate", false);
 			LocatorReloadEnterDisable("Villemstad_town", "reload33", false);
@@ -11043,10 +11065,20 @@ void QuestComplete(string sQuestName, string qname)
 		break;
 
 		case "Headhunter_MissHalen":
-			DeleteAttribute(pchar, "quest.Headhunter_HalenTimer");
+			if (CheckAttribute(pchar, "quest.Headhunter_HalenTimer"))
+			{
+			    pchar.quest.Headhunter_HalenTimer.over = "yes";
+			}
 			pchar.quest.Headhunter_MissHalen.win_condition.l1 = "ExitFromLocation";
 			pchar.quest.Headhunter_MissHalen.win_condition.l1.location = "Villemstad_town";
 			pchar.quest.Headhunter_MissHalen.win_condition = "Headhunter_HalenOut";
+		break;
+
+		case "Headhunter_HalenDeadInTown":
+			LocatorReloadEnterDisable("Villemstad_town", "gate", false);
+			LocatorReloadEnterDisable("Villemstad_town", "reload33", false);
+			LocatorReloadEnterDisable("Villemstad_town", "reload1_back", false);
+			LocatorReloadEnterDisable("Villemstad_town", "reload2_back", false);
 		break;
 
 		case "FindJa":
@@ -11295,6 +11327,7 @@ void QuestComplete(string sQuestName, string qname)
 			{
 				sTemp = "skel" + (rand(3) + 1);
 				sld = GetCharacter(NPC_GenerateCharacter("PDM_PI_skel_" + i, sTemp, "skeleton", "man", sti(pchar.rank), PIRATE, -1, true));
+				sld.skeleton = "1";
 				PlaceCharacter(sld, "goto", "random_free");
 				LAi_SetWarriorType(sld);
 				LAi_group_MoveCharacter(sld, "EnemyFight");
@@ -11415,11 +11448,11 @@ void QuestComplete(string sQuestName, string qname)
 		/////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 		/////////////////////////////////////////////////////////////////////////////////////////////////////////
-		////	Квест "Проклятая жара" начало				===>
+		////	Квест "Невыносимая жара" начало				===>
 		/////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 		case "PDM_PJ_Arest_0":
-			sld = GetCharacter(NPC_GenerateCharacter("PDM_PJ_Strajnik_4", "urban_fra_4", "man", "man", 10, FRANCE, -1, true));
+			sld = GetCharacter(NPC_GenerateCharacter("PDM_PJ_Strajnik_4", "sold_fra_4", "man", "man", 10, FRANCE, -1, true));
 			LAi_SetActorType(sld);
 			sld.lifeday = 0;
 			LAi_group_MoveCharacter(sld, "FRANCE_CITIZENS");
@@ -11427,7 +11460,7 @@ void QuestComplete(string sQuestName, string qname)
 			ChangeCharacterAddressGroup(sld, "FortFrance_town", "goto", "goto34");
 			LAi_ActorGoToLocator(sld, "officers", "reloadPr1_1", "", -1);
 
-			sld = GetCharacter(NPC_GenerateCharacter("PDM_PJ_Strajnik_3", "urban_fra_3", "man", "man", 10, FRANCE, -1, true));
+			sld = GetCharacter(NPC_GenerateCharacter("PDM_PJ_Strajnik_3", "sold_fra_3", "man", "man", 10, FRANCE, -1, true));
 			LAi_SetActorType(sld);
 			sld.lifeday = 0;
 			LAi_group_MoveCharacter(sld, "FRANCE_CITIZENS");
@@ -11468,6 +11501,14 @@ void QuestComplete(string sQuestName, string qname)
 
 		case "PDM_PJ_Arest_2":
 			sld = CharacterFromID("PDM_PJ_Strajnik_1");
+			// Основная ходьба
+			sld.actions.forward_walk = "prison_walk";
+			// Лестница вверх
+			sld.actions.forward_walk_stairs_up = "prison_walk";
+			// Лестница вниз
+			sld.actions.forward_walk_stairs_down = "prison_walk";
+			EndChangeCharacterActionsBlend(sld);
+
 			LAi_ActorGoToLocator(sld, "reload", "reload6_back", "", -1);
 			DoQuestCheckDelay("PDM_PJ_Arest_3", 1.0);
 		break;
@@ -11498,8 +11539,8 @@ void QuestComplete(string sQuestName, string qname)
 			chrDisableReloadToLocation = false;
 			CloseQuestHeader("PDM_Proklyataya_Jara");
 			AddQuestRecord("PDM_Proklyataya_Jara", "6");
-			AddCharacterExpToSkill(pchar, "Leadership", 130);
-			AddCharacterExpToSkill(pchar, "Sneak", 130);
+			AddCharacterExpToSkill(pchar, "Leadership", 50);
+			AddCharacterExpToSkill(pchar, "Sneak", 40);
 			Achievment_Set(ACH_Proklyataya_zhara);
 		break;
 
@@ -11514,7 +11555,7 @@ void QuestComplete(string sQuestName, string qname)
 		break;
 
 		/////////////////////////////////////////////////////////////////////////////////////////////////////////
-		////	Квест "Проклятая жара" конец					<===
+		////	Квест "Невыносимая жара" конец					<===
 		/////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 		/////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -11558,18 +11599,17 @@ void QuestComplete(string sQuestName, string qname)
 			SetCharacterPerk(sld, "Honest");
 			LAi_SetImmortal(sld, true);
 			LAi_group_MoveCharacter(sld, "HOLLAND_CITIZENS");
-			ChangeCharacterAddressGroup(sld, "Villemstad_town", "officers", "houseS2_3");
+			ChangeCharacterAddressGroup(sld, "Villemstad_town", "sit", "sit_front2");
+			LAi_SetSitType(sld);
             AddLandQuestMark_Main(sld, "PDM_Neputyovy_kaznachey");
             AddMapQuestMark_Major("Villemstad_town", "PDM_Neputyovy_kaznachey", "");
 		break;
 
 		case "PDM_NK_Viktor":
-			AddCharacterExpToSkill(pchar, "FencingLight", 100);
-			AddCharacterExpToSkill(pchar, "Fencing", 100);
-			AddCharacterExpToSkill(pchar, "FencingHeavy", 100);
-			AddCharacterExpToSkill(pchar, "Pistol", 100);
-			AddCharacterExpToSkill(pchar, "Sneak", -120);
-			AddCharacterExpToSkill(pchar, "Commerce", -100);
+			AddCharacterExpToSkill(pchar, "FencingLight", 120);
+			AddCharacterExpToSkill(pchar, "Fencing", 120);
+			AddCharacterExpToSkill(pchar, "FencingHeavy", 120);
+			AddCharacterExpToSkill(pchar, "Pistol", 120);
 
 			AddQuestRecord("PDM_Neputyovy_kaznachey", "4");
 
@@ -11580,15 +11620,26 @@ void QuestComplete(string sQuestName, string qname)
 		break;
 
 		case "PDM_NK_Litsenzia":
-			if (GetDaysContinueNationLicence(HOLLAND) < 10) GiveNationLicence(HOLLAND, 10);
-			if (GetDaysContinueNationLicence(SPAIN) < 10) GiveNationLicence(SPAIN, 10);
-			if (GetDaysContinueNationLicence(ENGLAND) < 10) GiveNationLicence(ENGLAND, 10);
-			if (GetDaysContinueNationLicence(FRANCE) < 10) GiveNationLicence(FRANCE, 10);
+			if (GetDaysContinueNationLicence(HOLLAND) < 15) GiveNationLicence(HOLLAND, 15);
+			if (GetDaysContinueNationLicence(SPAIN) < 15) GiveNationLicence(SPAIN, 15);
+			if (GetDaysContinueNationLicence(ENGLAND) < 15) GiveNationLicence(ENGLAND, 15);
+			if (GetDaysContinueNationLicence(FRANCE) < 15) GiveNationLicence(FRANCE, 15);
 			TakeItemFromCharacter(pchar, "Litsenzia");
 		break;
 
 		/////////////////////////////////////////////////////////////////////////////////////////////////////////
 		////	Квест "Непутёвый Казначей" конец			<===
+		/////////////////////////////////////////////////////////////////////////////////////////////////////////
+		
+		/////////////////////////////////////////////////////////////////////////////////////////////////////////
+		////	Квест "Клан Ламбрини" начало				===>
+		/////////////////////////////////////////////////////////////////////////////////////////////////////////
+		
+		case "PDM_CL_OnShore_7":
+			PDM_CL_OnShore_7();
+		break;
+		/////////////////////////////////////////////////////////////////////////////////////////////////////////
+		////	Квест "Клан Ламбрини" конец				<===
 		/////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 		/////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -11666,7 +11717,10 @@ void QuestComplete(string sQuestName, string qname)
 		case "Malcolm_Fawn_is_death":
 			AddQuestRecord("MalcolmsTobacco", "2");
 			CloseQuestHeader("MalcolmsTobacco");
-			DeleteAttribute(pchar, "quest.MalcolmsTobacco");
+			if (CheckAttribute(pchar, "quest.MalcolmsTobacco"))
+			{
+			    pchar.quest.MalcolmsTobacco.over = "yes";
+			}
 			DeleteAttribute(pchar, "GenQuest.Hunter2Pause");
 		break;
 		case "MalcolmTobacco_GoToStore":
@@ -11744,10 +11798,8 @@ void QuestComplete(string sQuestName, string qname)
 		case "CrackPinctados": //HardCoffee открывашка жемчужниц
 			iTemp = sti(TEV.CrackPinctadosSmall);
 			iCount = sti(TEV.CrackPinctadosBig);
-			TakeNItems(pchar, "jewelry12", iTemp);
-			LogSound_WithNotify(StringFromKey("InfoMessages_248", iTemp), "Important_item", "SmallPearl");
-			TakeNItems(pchar, "jewelry11", iCount);
-			LogSound_WithNotify(StringFromKey("InfoMessages_249", iCount), "", "BigPearl");
+			TakeNItemsNotification(pchar, "jewelry12", iTemp, StringFromKey("InfoMessages_248", iTemp), "SmallPearl", "noSound");
+			TakeNItemsNotification(pchar, "jewelry11", iCount, StringFromKey("InfoMessages_249", iCount), "BigPearl", "Important_item");
 			DeleteAttribute(&TEV, "CrackPinctadosSmall");
 			DeleteAttribute(&TEV, "CrackPinctadosBig");
 		break;
@@ -11835,8 +11887,8 @@ void WaitNextHours(string qName)
 	pchar.locy = locy;
 	pchar.locz = locz;
 	sHour = StringFromKey("InfoMessages_23");
-	if (sti(pchar.quest.waithours) == 1)    sHour = StringFromKey("InfoMessages_14");
-	if (sti(pchar.quest.waithours) == 24)    sHour = StringFromKey("InfoMessages_24");
+	if (sti(TEV.WaitHours) == 1)    sHour = StringFromKey("InfoMessages_14");
+	if (sti(TEV.WaitHours) == 24)    sHour = StringFromKey("InfoMessages_24");
 	if (isShipInside(pchar.location))
 	{
 		SetLaunchFrameFormParam(sHour, "", 0.1, 2.0);
@@ -11847,16 +11899,16 @@ void WaitNextHours(string qName)
 		SetLaunchFrameReloadLocationParam(pchar.location, "goto", LAi_FindNearestFreeLocator2Pchar("goto"), "LocTeleport");
 	}
 
-	WaitDate("", 0, 0, 0, sti(pchar.quest.waithours), 0);
+	WaitDate("", 0, 0, 0, sti(TEV.WaitHours), 0);
 
 	if (bTime == IsDay())
 		TEV.Music.ForceKeepPlaying = "";
 
 	//ожидание снимает алкоголь... 2 часа = кружка
-	LAi_DawnWaitAlcoholState(sti(pchar.quest.waithours) * 900);
+	LAi_DawnWaitAlcoholState(sti(TEV.WaitHours) * 900);
 
 	LaunchFrameForm();
-	DeleteAttribute(pchar, "quest.waithours");
+	DeleteAttribute(&TEV, "WaitHours");
 	RefreshLandTime();
 	RecalculateJumpTable();
 	Whr_UpdateWeather();
@@ -12068,7 +12120,7 @@ void WaitNextDays(string qName)
 	pchar.locy = locy;
 	pchar.locz = locz;
 	sDay = StringFromKey("InfoMessages_219");
-	if (sti(pchar.quest.waithours) == 1)
+	if (sti(TEV.WaitHours) == 1)
 		sDay = StringFromKey("InfoMessages_24");
 	if (isShipInside(pchar.location))
 	{
@@ -12079,15 +12131,15 @@ void WaitNextDays(string qName)
 		SetLaunchFrameFormParam(sDay, "Reload_To_Location", 0.1, 2.0);
 		SetLaunchFrameReloadLocationParam(pchar.location, "goto", LAi_FindNearestFreeLocator2Pchar("goto"), "LocTeleport");
 	}
-	for (int i = 0; i < sti(pchar.quest.waithours); i++)
+	for (int i = 0; i < sti(TEV.WaitHours); i++)
 		WaitDate("", 0, 0, 1, 0, 0);
 
 	if (bTime == IsDay())
 		TEV.Music.ForceKeepPlaying = "";
 
-	LAi_DawnWaitAlcoholState(sti(pchar.quest.waithours) * 21600);
+	LAi_DawnWaitAlcoholState(sti(TEV.WaitHours) * 21600);
 	LaunchFrameForm();
-	DeleteAttribute(pchar,"quest.waithours");
+	DeleteAttribute(&TEV, "WaitHours");
 	RefreshLandTime();
 	RecalculateJumpTable();
 	Whr_UpdateWeather();
@@ -12104,7 +12156,7 @@ void WaitNextMinutes(string qName)
 	pchar.locy = locy;
 	pchar.locz = locz;
 	sMin = StringFromKey("InfoMessages_220");
-	if (sti(pchar.quest.waithours) == 60) sMin = StringFromKey("InfoMessages_14");
+	if (sti(TEV.WaitHours) == 60) sMin = StringFromKey("InfoMessages_14");
 	if (isShipInside(pchar.location))
 	{
 		SetLaunchFrameFormParam(sMin, "", 0.1, 2.0);
@@ -12115,16 +12167,16 @@ void WaitNextMinutes(string qName)
 		SetLaunchFrameReloadLocationParam(pchar.location, "goto", LAi_FindNearestFreeLocator2Pchar("goto"), "LocTeleport");
 	}
 
-	WaitDate("", 0, 0, 0, 0, sti(pchar.quest.waithours));
+	WaitDate("", 0, 0, 0, 0, sti(TEV.WaitHours));
 
 	if (bTime == IsDay())
 		TEV.Music.ForceKeepPlaying = "";
 
 	//ожидание снимает алкоголь... 2 часа = кружка
-	LAi_DawnWaitAlcoholState(sti(pchar.quest.waithours) * 15);
+	LAi_DawnWaitAlcoholState(sti(TEV.WaitHours) * 15);
 
 	LaunchFrameForm();
-	DeleteAttribute(pchar, "quest.waithours");
+	DeleteAttribute(&TEV, "WaitHours");
 	RefreshLandTime();
 	RecalculateJumpTable();
 	Whr_UpdateWeather();

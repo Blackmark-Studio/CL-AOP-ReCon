@@ -30,7 +30,7 @@ void LoginCharactersInLocation(ref loc)
 	{
         DelBakSkillAttr(&Characters[i]); // boal оптимизация скилов
         ClearCharacterExpRate(&Characters[i]);
-        LoginCharacter(&Characters[i], locID);
+		LoginCharacter(&Characters[i], locID);
 	}
 	LocAi_PostInit(loc);
 	// boal dead can be searched 14.12.2003 -->

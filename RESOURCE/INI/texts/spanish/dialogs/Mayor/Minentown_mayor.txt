@@ -143,13 +143,13 @@ Minentown_mayor_41 {
 No puedo entregárselo... Incluso si es la orden de Su Excelencia, ya que se encuentra fuera...
 }
 Minentown_mayor_42 {
-No se preocupe tanto – solo lo necesito para que me muestre el lugar del ritual.
+No se preocupe tanto - solo lo necesito para que me muestre el lugar del ritual.
 }
 Minentown_mayor_43 {
-No puedo entregárselo... Incluso si es la orden de Su Excelencia, ya que se encuentra fuera...
+¿Y para qué lo necesita?
 }
 Minentown_mayor_44 {
-No se preocupe tanto – solo lo necesito para que me muestre el lugar del ritual. Debe ser eliminado primero, de lo contrario los derrumbes continuarán.
+La cuestión es que ese lugar del ritual debe ser purificado primero, de lo contrario los derrumbes continuarán.
 }
 Minentown_mayor_45 {
 No creo mucho en todas estas maquinaciones mágicas, pero si usted lo dice, que así sea.

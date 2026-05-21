@@ -245,7 +245,7 @@ Augmente la vitesse du navire de 20#sSailingProfessional_speed#% et la manœuvra
 SeaDogProfessional {Maître des Mers}
 perkSeaDogProfessional
 {
-Même les aventuriers et brigands les plus endurcis n’osent tenter leur chance en voyant le pavillon du Maître des Mers. Empêche les attaques des escadrons ennemis ordinaires sur la carte globale.
+À la vue de ce fanion, même les aventuriers et brigands les plus endurcis n'osent pas tenter le diable. Cette capacité ultime force certaines escadres à ignorer votre flotte, multiplie les chances de reddition des navires ennemis et débloque une série d'opportunités uniques.
 ~
 La capacité ne fonctionne pas si des navires de bas rang sont présents dans l’escadre.
 ~
@@ -274,6 +274,10 @@ Investor {Maître de l’investissement}
 perkInvestor {La maîtrise des mécanismes financiers permet au personnage d’augmenter le taux de dépôt bancaire de 1 %, offrant ainsi un revenu supplémentaire.}
 ProfessionalCommerce {Commerce professionnel}
 perkProfessionalCommerce {Réduction supplémentaire de -15#sProfessionalCommerce#% et bonus de vente de +15% sur toutes les opérations commerciales.}
+CrewSalaryOptimization		{Audit total}
+perkCrewSalaryOptimization	{Le personnage met de l'ordre dans la comptabilité du navire d'une main de fer. Grâce à une révision magistrale des parts de l'équipage et à l'élimination de toutes les dépenses superflues, le coût des salaires de l'équipage dans l'escadre est réduit de 40 % sans perte de discipline.
+~
+Disponible uniquement pour le personnage principal.}
 Carpenter {Réparation de base}
 perkCarpenter
 {
@@ -468,6 +472,15 @@ Accorde un jet de sauvegarde de 50 % pour réprimer une éventuelle révolte d�
 Duelist {Duelliste renommé}
 DuelistFem {Duelliste renommé}
 perkDuelist {+5% de dégâts infligés, -5% de dégâts subis en combat rapproché contre un seul ennemi, le nombre d’alliés n’a pas d’importance.}
+InquisitionBlessing         {Bénédiction de l'Inquisition}
+perkInquisitionBlessing     {Patronage spécial de la Sainte Inquisition, reçu du Grand Inquisiteur Antonio de Souza.
+~
+Une foi intérieure inébranlable remplit chaque coup du personnage d'une puissance sacrée, augmentant les dégâts contre les monstres, les morts-vivants et les Indiens de 20%.}
+
+WitchCharm                  {Don de la sorcière}
+perkWitchCharm              {Un don magique spécial de Carla, reçu en récompense de l'avoir sauvée des bûchers de l'Inquisition.
+~
+Les charmes lumineux de la sorcière blanche recouvrent le personnage d'un bouclier invisible qui le protège des mauvaises intentions, réduisant les dégâts subis des monstres, des morts-vivants et des Indiens de 20%.}
 HighwaySmuggler {Contrebandier chevronné}
 perkHighwaySmuggler {Cet homme connaît de nombreux passages secrets et s’est livré à plusieurs reprises à la contrebande, trompant la loi et ses gardiens.}
 Schemer {Magouilleur}
@@ -492,6 +505,38 @@ OneLegMan {Unijambiste}
 perkOneLegMan {Le personnage a perdu une jambe, mais n’a pas perdu ses talents de combattant.}
 SaveLoadAbuser {Escroc}
 perkSaveLoadAbuser {Un joueur notoire qui, malgré son talent pour la tromperie, suscite la méfiance des autres et reste un solitaire dans le monde du jeu.}
+Monomania                {Monomanie}
+perkMonomania             {Le personnage est fanatiquement dévoué à son métier, mais totalement impuissant dans tout ce qui dépasse son intérêt étroit.
+~
+Un talent unique dans une profession spécifique lui accorde un bonus de base important, mais le personnage devient pratiquement inutile dans tous les autres domaines d'activité.}
+
+Stuttering               {Bégaiement}
+perkStuttering            {Un trouble de l'élocution qui empêche le personnage d'exprimer ses pensées de manière claire et rapide.
+~
+Réduit la valeur de base du Charisme et inflige des pénalités au Commerce et au Commandement.}
+
+Redskin                  {Autochtone}
+perkRedskin               {Ce personnage a grandi au cœur de la jungle et n'a aucune idée du fonctionnement de la vie à bord d'un navire européen.
+~
+En raison d'un manque total de connaissances maritimes, il est impossible de le nommer à des postes d'officiers liés à la gestion du navire. En revanche, en tant qu'abordeur fidèle, il sera indispensable.}
+
+NoCaptain                {Suiveur}
+perkNoCaptain             {Ce personnage manque totalement de qualités de leader, et la responsabilité de tout un navire et de son équipage le plonge dans la panique.
+~
+Le personnage ne peut pas être nommé compagnon (capitaine d'un navire distinct) dans l'escadre. Cependant, il peut toujours servir efficacement comme officier régulier sous vos ordres.}
+
+MusketeerOnly            {Mousquetaire convaincu}
+perkMusketeerOnly         {Le personnage ne reconnaît que la puissance de la poudre et du plomb, étant totalement incapable (ou refusant par principe) de tenir une arme blanche. Au combat, il ne peut utiliser qu'un mousquet.}
+
+WeaponBonding             {Lien avec l'arme}
+perkHumphreyGunmaster      {Le personnage ressent un attachement mental profond pour son arme unique.
+~
+Ce trait de caractère empêche le personnage d'utiliser toute autre arme, mais il est sans égal dans le maniement de son arme personnelle.}
+
+DuglasSchool             {Entraînement spécial de mousquetaire}
+perkDuglasSchool          {Le personnage a suivi une formation selon une méthodologie complexe et rare des écoles de tir d'élite de l'Ancien Monde.
+~
+Seuls ceux qui maîtrisent parfaitement cette base classique rare sont capables d'utiliser des types de mousquets rares et expérimentaux.}
 Energaiser {Énergisant}
 perkEnergaiser {Le personnage est au sommet de ses capacités physiques, ce qui permet à l'énergie de se régénérer 1,5 fois plus vite.}
 LoyalOff {Loyauté}

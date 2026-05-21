@@ -2,9 +2,10 @@ void InitInterface_gm(string iniName)
 {
 	GameInterface.title = "titleGameMenu";
 
+	SetTimeScale(0.0);
 //	locCameraSleep(true);
 	StartAboveForm(true); // для рестарта Land Interface
-	EngineLayersOffOn(false);
+	EngineLayersOffOn(true);
 
 	SendMessage(&GameInterface,"ls",MSG_INTERFACE_INIT,iniName);
 

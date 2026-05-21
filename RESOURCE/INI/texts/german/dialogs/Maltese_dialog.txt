@@ -8,7 +8,7 @@ Maltese_dialog_3 {
 Ich habe eine Angelegenheit mit Ihnen zu besprechen, Offizier. Ich denke, Sie werden sie interessant finden. Einer Ihrer Soldaten, Jory, hat versucht, über mich als Vermittler Wein in der Stadt zu kaufen. Da ich Ihre Vorschriften kenne...
 }
 Maltese_dialog_4 {
-Was?! Ich habe das Trinken an einem strategisch wichtigen Ort ausdrücklich verboten! Nun gut, das wird er büßen. Für deine Wachsamkeit erhältst du 5.000 Piaster, und Jory verbringt drei Tage im Arrest.
+Was?! Ich habe Alkohol an einem strategischen Objekt strengstens untersagt! Nun, er wird dafür bezahlen. Für Eure bürgerliche Wachsamkeit belohne ich Euch mit Joris Monatssold, und ihn selbst werde ich für drei Tage in den Arrest schicken. Das wird den anderen eine Lehre sein! Und als Zeichen meiner persönlichen Anerkennung — nehmt mein altes Soldaten-Schwert unseres Ordens aus meinem privaten Arsenal. Es ist unwahrscheinlich, dass Ihr so etwas anderswo bekommt, Kapitän.
 }
 Maltese_dialog_5 {
 Danke, @<GetFullName>. Es ist unsere gemeinsame Pflicht, solche Verstöße zu unterbinden.

@@ -956,7 +956,7 @@ hol_Governor_266 {
 Hmm... Pas mal, je suppose...
 }
 hol_Governor_267 {
-Je le pense aussi. Capturez au moins quatre navires, amenez-les à Curaçao, au port de Willemstad, et remettez-les-moi en personne. Pour chaque navire livré, vous recevrez 100 000 pièces. Pensez-vous être à la hauteur?
+Je le pense aussi. Capturez au moins quatre navires, amenez-les à Curaçao, au port de Willemstad, et remettez-les-moi en personne. Pour chaque navire livré, vous recevrez 200 000 pièces. Pensez-vous être à la hauteur?
 }
 hol_Governor_268 {
 Je suppose que oui.

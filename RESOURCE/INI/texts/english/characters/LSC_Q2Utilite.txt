@@ -185,7 +185,7 @@ LSC_Q2Utilite_65 {
 Captain, there are rumors that a pirate brigantine is currently docked at @<XI_ConvertString>. Locals saw pirates coming ashore and loading something onto their ship.
 }
 LSC_Q2Utilite_66 {
-Can you imagine? A slave came limping into our town. All bruised and sick. He says he escaped from the pirate brigantine 'Strela' when it was docked at @<XI_ConvertString>. My advice to you, Captain: don't go there, what if the brigantine is still there?
+Can you imagine? A slave came limping into our town. All bruised and sick. He says he escaped from the pirate brigantine 'Arrow' when it was docked at @<XI_ConvertString>. My advice to you, Captain: don't go there, what if the brigantine is still there?
 }
 LSC_Q2Utilite_67 {
 Everyone's talking about the monk @<sRumourName> now. He loved the spring at @<XI_ConvertString>. Says the water there is holy! It would instantly cure all his ailments. Nonsense, of course—my stye didn't go away after drinking that water.\n Anyway... The last time he came back from there, he was furious. Said there were devils—whether with arrows or with crossbows—holding a sabbath and desecrating everything. He took his hammer and went to drive them out. It's been three days now, and he hasn't returned...

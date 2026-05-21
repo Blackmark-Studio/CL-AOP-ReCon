@@ -176,7 +176,7 @@ Pir_Line_3_KillLoy.13 {Perseguição de novo. Mais uma vez. Pelo menos agora sei
 Pir_Line_3_KillLoy.14
 {
 Parece que encontrei o rastro de Low. Pelos rumores que ouvi, barcaças, escunas, luggers e sloops têm desaparecido perto de Cumana. As pessoas culpam um certo brigue. Tenho a sensação de que é o Low—o padrão é muito familiar. Como um chacal, ele ataca quem é mais fraco que ele.
-Parece que vou ter que atrair essa hiena. Para isso, preciso ir ao mar perto de Cumana em um lugger ou sloop e navegar por um tempo. Espero mesmo que Low morda a isca e ataque...
+Parece que vou ter que atrair essa hiena. Para fazer isso, preciso ir para o mar perto de Cumana em um navio de classe semelhante e tentar navegar sozinho. Espero mesmo que Low morda a isca e ataque...
 }
 Pir_Line_3_KillLoy.15
 {
@@ -651,7 +651,7 @@ TheStarsAlignedISS.3 {
 Droga! Depois que Teaser atirou no porão, algo explodiu... Não tem ninguém por perto... Quanto tempo será que fiquei aqui? Minha cabeça está latejando... O corpo do estalajadeiro ainda está quente, então não deve ter passado muito tempo. Parece que a cidade inteira já acordou lá fora—o barulho está intenso. Preciso sair para as ruas e decidir o que fazer agora.
 }
 TheStarsAlignedISS.4 {
-Mal consigo reunir forças para escrever esta entrada. Malditos marrons! Escapamos por pouco das garras da morte... E ainda assim, saímos vivos e bem. Embora o Teaser não parecesse nada bem da última vez que o vi. Não só fisicamente, mas mentalmente também. Ele acha que é outra pessoa e fala como um soldado. Preciso ver como ele está no salão.
+Mal consigo reunir forças para escrever esta entrada. Malditos marrons! Escapamos por pouco das garras da morte... E ainda assim, saímos vivos e bem. Embora o Teaser não parecesse nada bem da última vez que o vi. Não só fisicamente, mas mentalmente também. Ele acha que é outra pessoa e fala como um soldado.
 }
 TheStarsAlignedISS.5 {
 Teaser está em um estado bem ruim, mas pelo menos está vivo e não está nas correntes da Companhia Holandesa das Índias Ocidentais.
@@ -747,7 +747,7 @@ ISS_MainLine.5 {Hora de fazer uma visita ao barman — acho que ele finalmente e
 ISS_MainLine.6 {O dono da taverna, Hill Brynner, marcou de me encontrar depois da meia-noite em seu porão improvisado. Fica em uma das cabines deste próprio navio; para chegar lá, preciso sair para o convés e seguir até a popa.}
 ISS_MainLine.7 {Hill Brynner me enviou ao fluyt 'Fernando Diffindur', que costumava visitar o Teaser Dan com frequência. Segundo o dono da taverna, é lá que talvez eu encontre algo que comprove que estou dizendo a verdade.}
 ISS_MainLine.8 {Preciso encontrar um certo André Labor, carpinteiro, na Cidade. Segundo Hill Brunner, foi ele quem ajudou Teaser Dan a construir a embarcação que permitiu que ele chegasse ao continente.}
-ISS_MainLine.9 {Eu @<sSex> com ele. André marcou de me encontrar na cabine do couraçado 'Protector'.}
+ISS_MainLine.9 {Encontrei o carpinteiro e conversei cuidadosamente com ele. André marcou de me encontrar na cabine do couraçado 'Protector'.}
 ISS_MainLine.10 {Aquele canalha do André Labor trouxe um miliciano para falar comigo! Vou ter que sacar minha arma. Droga!}
 ISS_MainLine.11
 {
@@ -1040,7 +1040,7 @@ LSC_Ring {O Segredo da 'Santa Lucia'}
 LSC_Ring.1
 {
 Malcolm Fawn, um ex-contrabandista, me ofereceu uma viagem até o anel externo de navios, onde encontrou outra pinassa “intocada” e sugeriu que procurássemos objetos de valor em seus compartimentos. O problema é que o porão do navio foi tomado por “caranguejos gigantes”, e Malcolm tem medo deles. Minha tarefa é me livrar dos caranguejos. O que poderia ser mais fácil? Vamos dividir tudo o que encontrarmos no navio meio a meio.
-A expedição está marcada para amanhã às 8h. Devo aparecer no “convés inclinado” — o navio meio submerso atrás de Port-au-Prince. É lá que nossa jornada para o anel externo vai começar.
+A expedição está marcada para amanhã às 8h. Devo aparecer no “convés inclinado” — o navio meio submerso atrás de San Augustine. É lá que nossa jornada para o anel externo vai começar.
 }
 LSC_Ring.2 {Demorei demais, e Malcolm Fawn, sem mais esperanças de me esperar, foi embora. Infelizmente, a expedição ao anel externo está cancelada...}
 LSC_Ring.3 {Nossa jornada começou! Estamos partindo pelo mar para o anel externo. Malcolm vai me levar até a pinnace, mas terei que lidar com os caranguejos sozinho—Fawn não vai ajudar aqui.}

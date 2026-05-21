@@ -72,7 +72,7 @@ void InitInterface_RS(string iniName, ref _chr, string _type)
 		DeleteParticles();
 		CreateParticleEntity();
 		
-		PlayMusic(KZ|Random("Action\Boarding\Plunder"));
+		PlayMusic(KZ|Random("Action\Boarding\Plunder"), 1000);
 	}
 	
 	SendMessage(&GameInterface,"ls",MSG_INTERFACE_INIT,iniName);

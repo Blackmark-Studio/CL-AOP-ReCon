@@ -852,7 +852,7 @@ int LocationInitMartinique(int n)
 	locations[n].id = "FortFrance_townhall";
 	locations[n].id.label = "Townhall";
 	locations[n].filespath.models = "locations\inside\Residence01";
-	locations[n].image = "loading\inside\residence.tga";
+	locations[n].image = "loading\inside\Residence01.tga";
 	//Town sack
 	locations[n].townsack = "FortFrance";
 	locations[n].lockWeather = "Inside";
@@ -1072,7 +1072,7 @@ int LocationInitMartinique(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "FortFrance_houseK5";
 	locations[n].id.label = "House";
-	locations[n].image = "loading\inside\mediumhouse10.tga";
+	locations[n].image = "loading\inside\mediumhouse09.tga";
 	//Town sack
 	locations[n].townsack = "FortFrance";
 	locations[n].lockWeather = "Inside";
@@ -1111,11 +1111,11 @@ int LocationInitMartinique(int n)
 	n = n + 1;
 
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	// Средний дом 9 с заменённой стенкой
+	// Средний дом 8 (9 с заменённой стенкой)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "FortFrance_MH9_2";
 	locations[n].id.label = "House";
-	locations[n].image = "loading\inside\hut.tga";
+	locations[n].image = "loading\inside\mediumhouse08.tga";
 	locations[n].MustSetReloadBack = true;
 	//Town sack
 	locations[n].townsack = "FortFrance";
@@ -1125,7 +1125,7 @@ int LocationInitMartinique(int n)
 	locations[n].fastreload = "FortFrance";
 	locations[n].islandId = "Martinique";
 	//Models
-	locations[n].filespath.models = "locations\inside\mediumhouse09_2";
+	locations[n].filespath.models = "locations\inside\mediumhouse08";
 	//Always
 	locations[n].models.always.house = "mediumhouse09";
 	locations[n].models.always.house.level = 65538;
@@ -1158,7 +1158,7 @@ int LocationInitMartinique(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "FortFrance_BigHouse6";
  	locations[n].id.label = "Room";
-	locations[n].image = "loading\inside\mediumhouse01.tga";
+	locations[n].image = "loading\inside\BigHouse06.tga";
  	//Town sack
 	locations[n].townsack = "FortFrance";
 	locations[n].lockWeather = "Inside";
@@ -1302,7 +1302,7 @@ int LocationInitMartinique(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "FortFrance_Hut1";
 	locations[n].id.label = "House";
-	locations[n].image = "loading\inside\littlehut1.tga";
+	locations[n].image = "loading\inside\littlehut.tga";
 	//Town sack
 	locations[n].townsack = "FortFrance";
 	locations[n].lockWeather = "Inside";
@@ -1406,7 +1406,7 @@ int LocationInitMartinique(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "FortFrance_Hut3";
 	locations[n].id.label = "House";
-	locations[n].image = "loading\inside\hut.tga";
+	locations[n].image = "loading\inside\Hut3.tga";
 	locations[n].MustSetReloadBack = true;
 	//Town sack
 	locations[n].townsack = "FortFrance";
@@ -2245,7 +2245,7 @@ int LocationInitMartinique(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "LeFransua_townhall";
 	locations[n].id.label = "Townhall";
-	locations[n].image = "loading\inside\pirateresidence.tga";
+	locations[n].image = "loading\inside\pirateresidence01.tga";
 	//Town sack
 	locations[n].townsack = "LeFransua";
 	locations[n].lockWeather = "Inside";
@@ -2454,11 +2454,11 @@ int LocationInitMartinique(int n)
 	n = n + 1;
 
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	// Средний дом 9 с заменённой стенкой
+	// Средний дом 8 (9 с заменённой стенкой)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "LeFransua_MH9_2";
 	locations[n].id.label = "House";
-	locations[n].image = "loading\inside\mediumhouse10.tga";
+	locations[n].image = "loading\inside\mediumhouse08.tga";
 	locations[n].MustSetReloadBack = true;
 	//Town sack
 	locations[n].townsack = "LeFransua";
@@ -2468,7 +2468,7 @@ int LocationInitMartinique(int n)
 	locations[n].fastreload = "LeFransua";
 	locations[n].islandId = "Martinique";
 	//Models
-	locations[n].filespath.models = "locations\inside\mediumhouse09_2";
+	locations[n].filespath.models = "locations\inside\mediumhouse08";
 	//Always
 	locations[n].models.always.house = "mediumhouse09";
 	locations[n].models.always.house.level = 65538;

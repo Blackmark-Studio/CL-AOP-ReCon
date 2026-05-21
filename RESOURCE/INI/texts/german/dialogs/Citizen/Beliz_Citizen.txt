@@ -28,3 +28,36 @@ Na gut... bis dann.
 Beliz_Citizen_9 {
 Dann noch eine Frage.
 }
+Beliz_Citizen_10 {
+Entschuldigung, haben Sie die lustige Carla gesehen?
+}
+Beliz_Citizen_11 {
+Und wissen Sie zufällig, wo die lustige Carla steckt?
+}
+Beliz_Citizen_12 {
+@<RandPhraseSimple>
+}
+Beliz_Citizen_13 {
+Ich sage Ihnen, @<GetAddress_Form> – diese Hexe hat jeden in dieser Stadt verhext! Alle rechtschaffenen Bürger sollten direkt zum Gouverneur gehen und ihm sagen, dass sie eine böse Hexe ist und auf kleiner Flamme verbrannt werden sollte!
+}
+Beliz_Citizen_14 {
+Carla? Was wissen Sie über sie?
+}
+Beliz_Citizen_15 {
+Ich? Ich weiß, dass sie für jeden Mann in dieser Stadt eine Quelle der Todsünde ist! Wir müssen dieser Ausschweifung ein Ende setzen!
+}
+Beliz_Citizen_16 {
+Der Gouverneur hat mir befohlen, diese Hexe zu ergreifen – er will sie persönlich verhören. Wissen Sie, wo ich sie finden kann?
+}
+Beliz_Citizen_17_m {
+Sie bringt ihre Opfer normalerweise in die Taverne. Gott segne Sie, Kapitän! Gehen Sie dorthin und treiben Sie diese Schlange aus ihrem Nest! Sie sind ein tapferer Mann, @<GetAddress_Form>. Es ist eine Schande für unsere Stadt, dass diese Hexe hier frei herumläuft und tut, was sie will!
+}
+Beliz_Citizen_17_f {
+Sie bringt ihre Opfer normalerweise in die Taverne. Gott segne Sie, Kapitän! Gehen Sie dorthin und treiben Sie diese Schlange aus ihrem Nest! Sie sind eine tapfere Frau, @<GetAddress_Form>. Es ist eine Schande für unsere Stadt, dass diese Hexe hier frei herumläuft und tut, was sie will!
+}
+Beliz_Citizen_18 {
+Wir werden uns um diese Hexe kümmern, keine Sorge.
+}
+Beliz_Citizen_19 {
+Ach so. Sie sind also der einzige Mann in der Stadt, der Carlas Dienste nicht in Anspruch nimmt? Oh, Sie Ärmster! Jetzt ist klar, warum Sie keinen Humor haben. Ha-ha. Aber ich muss unser Gespräch beenden – auf Wiedersehen.
+}

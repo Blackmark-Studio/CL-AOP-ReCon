@@ -41,7 +41,7 @@ perkRush					{An active ability that increases the character's attack power by o
 ~
 Ability cooldown: 60 sec.
 ~
-Available only for the Main Character.}
+Available only to the Main Character.}
 
 SwordplayProfessional		{Professional Fencer}
 perkSwordplayProfessional	{Chance to deal critical damage increases to 15#sSwordplayProfessional_critical#%. Incoming damage to the character is reduced by 30#sSwordplayProfessional_defence#%.}
@@ -54,7 +54,7 @@ perkSecondWind				{An active ability that allows an exhausted character to catch
 ~
 Ability cooldown: 60 sec.
 ~
-Available only for the Main Character.}
+Available only to the Main Character.}
 
 Gunman 						{Basic Shooting Arts}
 perkGunman					{The character is better at handling pistols: reloading is 10% faster, and accuracy is increased by 10%.
@@ -95,12 +95,12 @@ perkSharedExperience		{The experience gained on the Main Character's skills is s
 ~
 Unlocks the ability to exchange items with officers during boarding.
 ~
-Available only for the Main Character.}
+Available only to the Main Character.}
 
 Medic						{Excellent Health}
 perkMedic					{You to restore health faster, if no serious wounds had to be endured during the day. Reduces the decrease of health if the character is wounded. Works while sailing, but slower.
 ~
-Available only for the Main Character.}
+Available only to the Main Character.}
 
 HPPlus						{Growing Health}
 perkHPPlus					{This ability increases the maximum HP of character by one additional point per each new level.
@@ -151,7 +151,7 @@ perkAlchemy
 Allows to craft items without the use of special tools such as an alchemist's chest.
 ~
 
-Available only for the Main Character.
+Available only to the Main Character.
 }
 
 							;NAVAL
@@ -248,11 +248,11 @@ SailingProfessional			{Professional Navigation}
 perkSailingProfessional		{Increases ship speed by 20#sSailingProfessional_speed#% and maneuverability by 20#sSailingProfessional_turnrate#%.}
 
 SeaDogProfessional			{Master of the Seas}
-perkSeaDogProfessional		{Even the inveterate adventurers and brigands will not dare to try their luck when they see the flag of the Master of the Seas. Prevents attacks by regular enemy squadrons on the global map.
+perkSeaDogProfessional		{At the sight of this pennant, even the most notorious adventurers and outlaws dare not tempt fate. This ultimate ability forces certain squadrons to ignore your fleet, significantly increases the chance of enemy ship surrender, and unlocks a range of unique opportunities.
 ~
 The ability will not work if there are low-class ships in the squadron.
 ~
-Available only for the Main Character.
+Available only to the Main Character.
 }
 
 							;PURSER (CLERK)
@@ -284,6 +284,11 @@ perkInvestor                {Knowledge of financial mechanisms allows the charac
 
 ProfessionalCommerce		{Professional Trading}
 perkProfessionalCommerce	{Extra -15#sProfessionalCommerce#% discount and +15% selling bonus on all trading operations.}
+
+CrewSalaryOptimization		{Total audit}
+perkCrewSalaryOptimization	{The character brings order to the ship's accounting with an iron fist. Thanks to a masterful revision of crew shares and the elimination of any unnecessary expenses, the cost of crew salaries in the squadron is reduced by 40% without any loss of discipline.
+~
+Available only to the Main Character.}
 
 							;CARPENTER
 							
@@ -331,7 +336,7 @@ The chance of receiving critical damage to a ship is reduced by 70#sShipDefenseP
 MasterOverload				{Master of Overload}
 perkMasterOverload			{The character implements the latest technologies into the ship's orlop deck design, expanding and optimizing the crew's living space capacity. Removes the penalty for reducing morale when the crew is overloaded.
 ~
-Available only for the Main Character.}
+Available only to the Main Character.}
 
 							;DOCTOR
 							
@@ -368,14 +373,14 @@ perkDoctor3					{The character, with comprehensive medical experience, can effec
 Sanitary					{Absolute Sanitary}
 perkSanitary				{The character is actively involved in educating the crew about the importance of observing sanitary standards and teaches sailors the correct methods of maintaining cleanliness. Completely eliminates the possibility of infections and diseases among sailors, allowing the crew to sail without medicines while traveling on the global map.
 ~
-Available only for the Main Character.
+Available only to the Main Character.
 ~
 Not available yet.}
 
 SeaSavior					{Savior of the Seas}
 perkSeaSavior				{The character gets the ability to rescue shipwrecked sailors while traveling on the global map, thereby periodically passively increasing the number of the crew. A successful rescue requires medicine from the ship's supplies.
 ~
-Available only for the Main Character.
+Available only to the Main Character.
 ~
 Not available yet.}
 
@@ -394,28 +399,28 @@ Not available yet.}
 FlagPir						{Pirate Flag}
 perkFlagPir					{Gives the opportunity to change your flag to the Jolly Roger.
 ~
-Available only for the Main Character.}
+Available only to the Main Character.}
 
 FlagEng						{English Flag}
 perkFlagEng					{Gives the opportunity to change your flag to the flag of England. The chance that your disguise will not work depends on stealth, number and classes of ships in the squadron and on the number of enemy ships and bounties.
 ~
-Available only for the Main Character.}
+Available only to the Main Character.}
 
 FlagFra						{French Flag}
 perkFlagFra					{Gives the opportunity to change your flag to the flag of France. The chance that your disguise will not work depends on stealth, number and classes of ships in the squadron and on the number of enemy ships and bounties.
 ~
-Available only for the Main Character.}
+Available only to the Main Character.}
 
 FlagSpa						{Spanish Flag}
 perkFlagSpa					{Gives the opportunity to change your flag to the flag of Spain. The chance that your disguise will not work depends on stealth, number and classes of ships in the squadron and on the number of enemy ships and bounties.
 ~
 
-Available only for the Main Character.}
+Available only to the Main Character.}
 
 FlagHol						{Dutch Flag}
 perkFlagHol					{Gives the opportunity to change your flag to the flag of Holland. The chance that your disguise will not work depends on stealth, number and classes of ships in the squadron and on the number of enemy ships and bounties.
 ~
-Available only for the Main Character.}
+Available only to the Main Character.}
 
 
 							;CHAPLAIN
@@ -463,6 +468,16 @@ Duelist						{Renowned Duelist}
 DuelistFem					{Renowned Duelist}
 perkDuelist					{+5% damage dealt -5% incoming damage in melee combat against one enemy, number of allies is not important.}
 
+InquisitionBlessing         {Blessing of the Inquisition}
+perkInquisitionBlessing     {Special patronage of the Holy Inquisition, received from the Chief Inquisitor Antonio de Souza.
+~
+Inner unshakable faith fills every blow of the character with holy power, increasing damage against monsters, undead, and Indians by 20%.}
+
+WitchCharm                  {Witch's Gift}
+perkWitchCharm              {A special magical gift from Carla, received as a reward for saving her from the fires of the Inquisition.
+~
+The bright charms of the white witch lay upon the character as an invisible shield that protects him from evil intent, reducing damage taken from monsters, undead, and Indians by 20%.}
+
 							;CHARACTER FEATURES}
 
 HighwaySmuggler				{Seasoned Smuggler}
@@ -494,6 +509,39 @@ perkOneLegMan				{The character lost one leg, but did not lose his fighting skil
 
 SaveLoadAbuser				{Scammer}
 perkSaveLoadAbuser			{A notorious gambler who, despite his success in deception, is distrusted by others, making him a loner in the world of gambling.}
+
+Monomania                {Monomania}
+perkMonomania             {The character is fanatically devoted to their craft, but absolutely helpless in anything outside their narrow interest.
+~
+A unique talent in one specific profession grants a significant base bonus, but the character becomes virtually useless in all other areas of activity.}
+
+Stuttering               {Stuttering}
+perkStuttering            {A speech impediment that makes it difficult for the character to express their thoughts clearly and quickly.
+~
+Reduces the base Charisma value and inflicts penalties on Commerce and Leadership.}
+
+Redskin                  {Native}
+perkRedskin               {This character grew up deep in the jungle and has no idea how life on a European vessel works.
+~
+Due to a complete lack of maritime knowledge, they cannot be appointed to officer positions related to ship management. However, as a loyal boarder, they will be indispensable.}
+
+NoCaptain                {Follower}
+perkNoCaptain             {This character completely lacks leadership qualities, and the responsibility for an entire ship and its crew throws them into a panic.
+~
+The character cannot be appointed as a companion (captain of a separate ship) in the squadron. However, they can still effectively serve as a regular officer under your command.}
+
+MusketeerOnly            {Dedicated Marksman}
+perkMusketeerOnly         {The character only recognizes the power of gunpowder and lead, completely unable (or strictly refusing) to hold any melee weapon. In combat, they can only use a musket.}
+
+WeaponBonding             {Weapon Bonding}
+perkHumphreyGunmaster      {The character feels a deep mental attachment to their unique weapon.
+~
+This trait prevents the character from using any other weapon, but they are second to none when handling their personal one.}
+
+DuglasSchool             {Advanced Musketeer Training}
+perkDuglasSchool          {The character has undergone training according to a complex and rare methodology of elite marksmanship schools of the Old World.
+~
+Only those who have perfectly mastered this rare classical foundation are capable of using rare and experimental types of muskets.}
 
 							;CHARACTERIZE TRAITS
 

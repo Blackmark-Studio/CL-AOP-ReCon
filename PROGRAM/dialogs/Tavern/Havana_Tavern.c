@@ -98,6 +98,7 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 			sld.Dialog.Filename = "Quest\AscoldNpc.c";
 			ChangeCharacterAddressGroup(sld, "Santiago_houseSp2", "goto", "goto2");
 			LAi_LocationFightDisable(&Locations[FindLocation("Santiago_houseSp2")], true);
+			RemoveLandQuestmark_Main(npchar, "Ascold");
 			AddLandQuestmark_Main(sld, "Ascold");
 			AddLandQuestmark_Main(CharacterFromID("Ascold"), "Ascold");
 		break;

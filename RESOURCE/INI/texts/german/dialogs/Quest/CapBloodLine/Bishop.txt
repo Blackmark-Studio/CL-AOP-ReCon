@@ -1404,7 +1404,7 @@ Bishop_468 {
 Kürzlich hat mich ein Arzt besucht, den der Käufer geschickt hat ... sieht so aus, als würde das Geschäft bald abgeschlossen werden.
 }
 Bishop_469 {
-Beruhige dich, Nicholas. Das Gold, das für deinen Kauf bestimmt war, ist bereits als Erbe an mich übergegangen. Morgen Nacht kommst du mit uns.
+Beruhige dich, Nicholas. Das Geld, das für deinen Kauf bestimmt war, ist bereits als Erbe an mich übergegangen. Morgen Nacht kommst du mit uns.
 }
 Bishop_470 {
 Ich kann die Nacht morgen kaum erwarten!

@@ -44,7 +44,7 @@ PortoBello_Tavern_14 {
 Listen, have you seen a privateer named François Gontier? He was in your town not long ago.
 }
 PortoBello_Tavern_15 {
-Listen, Rolando, do you know where I can find Albert Sievert—the captain of the brigantine "Strela"?
+Listen, Rolando, do you know where I can find Albert Sievert—the captain of the brigantine "Arrow"?
 }
 PortoBello_Tavern_16 {
 No, I don't know. He hasn't been to the tavern, and I haven't seen him in town either.

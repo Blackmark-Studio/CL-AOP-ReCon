@@ -172,7 +172,7 @@ Pir_Line_3_KillLoy.13 {Wieder auf der Jagd. Schon wieder. Wenigstens weiß ich d
 Pir_Line_3_KillLoy.14
 {
 Es sieht so aus, als hätte ich Lows Spur aufgenommen. Gerüchten zufolge verschwinden in der Nähe von Cumana immer wieder Barkassen, Schoner, Luggers und Schaluppen. Die Leute geben einem bestimmten Brigg die Schuld. Ich habe das Gefühl, dass es Low ist – das Muster ist einfach zu vertraut. Wie ein Schakal macht er Jagd auf Schwächere.
-Anscheinend muss ich diese Hyäne aus ihrem Versteck locken. Dazu muss ich mit einem Lugger oder einer Schaluppe vor Cumana in See stechen und eine Weile kreuzen. Ich hoffe wirklich, dass Low anbeißt und angreift ...
+Anscheinend muss ich diese Hyäne aus ihrem Versteck locken. Dazu muss ich vor der Küste von Cumana mit einem Schiff ähnlicher Klasse aufs Meer hinausfahren und versuchen, damit allein zu segeln. Ich hoffe wirklich, dass Low anbeißt und angreift ...
 }
 Pir_Line_3_KillLoy.15
 {
@@ -647,7 +647,7 @@ TheStarsAlignedISS.3 {
 Verdammt! Nachdem Teaser im Keller geschossen hat, ist etwas explodiert... Hier ist niemand... Wie lange liege ich schon hier? Mein Kopf platzt fast... Der Wirt ist noch warm, also kann es nicht allzu lange her sein. Draußen klingt es, als wäre die ganze Stadt auf den Beinen—was für ein Lärm. Ich muss raus auf die Straße und sehen, wie es weitergeht.
 }
 TheStarsAlignedISS.4 {
-Ich habe kaum die Kraft, diesen Eintrag zu schreiben. Verfluchte Maroons! Wir sind dem Tod nur knapp entkommen... Und doch haben wir es lebend und wohlbehalten geschafft. Allerdings sah Teaser beim letzten Mal ziemlich mitgenommen aus. Nicht nur körperlich, sondern auch geistig. Er hält sich für jemand anderen und spricht wie ein Soldat. Ich sollte nach ihm im Salon sehen.
+Ich habe kaum die Kraft, diesen Eintrag zu schreiben. Verfluchte Maroons! Wir sind dem Tod nur knapp entkommen... Und doch haben wir es lebend und wohlbehalten geschafft. Allerdings sah Teaser beim letzten Mal ziemlich mitgenommen aus. Nicht nur körperlich, sondern auch geistig. Er hält sich für jemand anderen und spricht wie ein Soldat.
 }
 TheStarsAlignedISS.5 {
 Teaser ist ziemlich mitgenommen, aber immerhin lebt er und sitzt nicht in den Ketten der Dutch West India Company.
@@ -742,7 +742,7 @@ ISS_MainLine.5 {Zeit, dem Barkeeper einen Besuch abzustatten – ich glaube, jet
 ISS_MainLine.6 {Der Tavernenwirt Hill Brynner hat sich mit mir nach Mitternacht in seinem provisorischen Keller verabredet. Das ist eine der Kabinen auf diesem Schiff; um dorthin zu gelangen, muss ich an Deck gehen und zum Heck laufen.}
 ISS_MainLine.7 {Hill Brynner hat mich zur Fluyt 'Fernando Diffindur' geschickt, die früher oft bei Teaser Dan anlegte. Laut dem Tavernenbesitzer könnte ich dort etwas finden, das meine Worte bestätigt.}
 ISS_MainLine.8 {Ich muss einen gewissen André Labor, einen Zimmermann, in der Stadt finden. Laut Hill Brunner war er es, der Teaser Dan beim Bau des Schiffs geholfen hat, mit dem dieser das Festland erreichen konnte.}
-ISS_MainLine.9 {Ich @<sSex> mit ihm. André hat ein Treffen mit mir in der Kajüte der Korvette 'Protector' vereinbart.}
+ISS_MainLine.9 {Ich fand den Zimmermann und sprach vorsichtig mit ihm. André hat ein Treffen mit mir in der Kajüte der Korvette 'Protector' vereinbart.}
 ISS_MainLine.10 {Dieser Halunke André Labor hat einen Milizionär mitgebracht, um mit mir zu reden! Ich muss wohl zur Waffe greifen. Verdammt!}
 ISS_MainLine.11
 {
@@ -1035,7 +1035,7 @@ LSC_Ring {Das Geheimnis der 'Santa Lucia'}
 LSC_Ring.1
 {
 Malcolm Fawn, ein ehemaliger Schmuggler, hat mir eine Fahrt zum äußeren Schiffsring angeboten, wo er eine weitere „unberaubte“ Pinasse entdeckt hat. Er schlug vor, gemeinsam die Abteile nach Wertvollem zu durchsuchen. Der Haken: Im Laderaum haben sich „Riesenkrebse“ eingenistet, vor denen Malcolm Angst hat. Meine Aufgabe ist es, die Krebse loszuwerden. Was könnte einfacher sein? Alles, was wir auf dem Schiff finden, teilen wir fünfzig-fünfzig.
-Die Expedition ist für morgen um 8 Uhr morgens angesetzt. Ich soll am „schiefen Deck“ erscheinen – dem halb versunkenen Schiff hinter Port-au-Prince. Dort beginnt unsere Reise zum äußeren Ring.
+Die Expedition ist für morgen um 8 Uhr morgens angesetzt. Ich soll am „schiefen Deck“ erscheinen – dem halb versunkenen Schiff hinter San Augustine. Dort beginnt unsere Reise zum äußeren Ring.
 }
 LSC_Ring.2 {Ich habe zu viel Zeit verloren, und Malcolm Fawn hat, die Hoffnung auf meine Rückkehr aufgegeben, das Warten beendet und ist gegangen. Leider fällt die Expedition zum äußeren Ring aus ...}
 LSC_Ring.3 {Unsere Reise hat begonnen! Wir stechen in See zum äußeren Ring. Malcolm bringt mich zur Pinasse, aber mit den Krabben muss ich allein fertigwerden – Fawn wird mir hier nicht helfen können.}
@@ -1069,7 +1069,7 @@ Wenn es mir gelingt, dieses Gewehr zu finden, wird Humphrey meiner Crew als Offi
 SeekDoubleMushket.2
 {
 Offenbar wurde Humphreys Schiff von einem sehr ungewöhnlichen Korsaren, Albert Sievert, angegriffen. Er gehört nicht zur Bruderschaft der Küste, daher kann man ihn nicht über die Piraten finden. Jackman sagte, dass Sievert immer auf See ist und zwischen den Buchten der Inseln segelt.
-Jackman hat mir geraten, vorbeifahrende Schiffe genau zu beobachten. Ich muss die Brigg 'Arrow' finden.
+Jackman hat mir geraten, vorbeifahrende Schiffe genau zu beobachten. Ich muss die Brigantine 'Arrow' finden.
 }
 SeekDoubleMushket.2_2
 {
@@ -1077,8 +1077,8 @@ Anscheinend wurde Humphreys Schiff von einem sehr ungewöhnlichen Korsaren, Albe
 Rogers empfahl mir, mit Rolando Pizarro zu sprechen, einem ehemaligen Piraten, der jetzt eine Taverne in Portobelo besitzt. Er hatte früher mit Sievert zu tun und weiß vielleicht etwas über ihn. Außerdem sollte ich vorbeifahrende Schiffe genau beobachten. Ich muss die Brigg ‘Arrow’ finden.
 }
 SeekDoubleMushket.3 {Es ist mir gelungen, Humphrey Douglas seine Muskete zurückzubringen. Jetzt ist Humphrey mein Offizier, was ziemlich gut ist.}
-SeekDoubleMushket.4 {Von Rolando Pizarro habe ich erfahren, dass die Brigantine 'Arrow' zu einem Ort namens @<sShore> aufgebrochen ist. Ich muss so schnell wie möglich dorthin gelangen...}
-SeekDoubleMushket.5 {Rolando Pizarro verlangte ganze 100.000 Piaster für Informationen über die 'Arrow'. So viel Geld hatte ich nicht. Dann muss ich das Briggs selbst suchen.}
+SeekDoubleMushket.4 {Von Rolando Pizarro habe ich erfahren, dass die Brigantine „Arrow“ zu einem Ort namens @<sShore> aufgebrochen ist. Ich muss so schnell wie möglich dorthin gelangen...}
+SeekDoubleMushket.5 {Rolando Pizarro verlangte ganze 100.000 Piaster für Informationen über die „Arrow“. So viel Geld hatte ich nicht. Dann muss ich das Briggs selbst suchen.}
 SeekDoubleMushket.6 {Rolando Pizarro verlangte ganze 100.000 Piaster für Informationen über die „Arrow“. Ich habe abgelehnt. Für so viel Geld finde ich diese Brigg selbst.}
 SeekDoubleMushket.7 {Was für ein Pech! Ich war zu lange unterwegs nach Portobelo. Rolando kannte die Bucht, in der ich die 'Arrow' hätte finden können, aber die Zeit ist verloren – jetzt gibt es dort keine Spur mehr von ihr. Ich muss wohl selbst weitersuchen...}
 SeekDoubleMushket.10 {Die gesuchte Brigantine ist verschwunden. Jetzt werde ich das Doppellaufgewehr nicht mehr bekommen.}

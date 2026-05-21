@@ -1,6 +1,6 @@
 PDM_Neputyovy_kaznachey {Nieudolny kwatermistrz}
 PDM_Neputyovy_kaznachey.1 {Na ulicach Willemstad spotkałem przestraszonego mężczyznę. Nazywa się Andreas Fickler. Powiedział mi, że jego były kapitan chce go zabić za uszkodzenie statku i ładunku. W tej chwili kapitan pije w tawernie ze złości.}
-PDM_Neputyovy_kaznachey.2 {Vitor Bretier zażądał @<sMoney> jako odszkodowania za szkody wyrządzone jego statkowi i ładunkowi.}
+PDM_Neputyovy_kaznachey.2 {Victor Bretier zażądał @<sMoney> jako odszkodowania za szkody wyrządzone jego statkowi i ładunkowi.}
 PDM_Neputyovy_kaznachey.3 {Zapłaciłem Vitorowi Bretierowi ustaloną kwotę. Teraz Andreas Fickler jest bezpieczny.}
 PDM_Neputyovy_kaznachey.4 {Musiałem zabić Vitora Bretiera. Teraz Andreas Fickler nie jest już w niebezpieczeństwie.}
 PDM_Neputyovy_kaznachey.5 {Andreas Fickler poprosił, by zostać moim kwatermistrzem, a ja się zgodziłem.}
@@ -13,13 +13,15 @@ PDM_Poteryanoe_Koltso.3 {Pierścień ma dziewczyna o imieniu Francesca, która c
 PDM_Poteryanoe_Koltso.4 {Zabrałem pierścień od Franceski. Teraz mogę wrócić do Port-au-Prince i przekazać pierścień Josephine Lodet.}
 PDM_Poteryanoe_Koltso.5 {Kiedy kochaliśmy się, udało mi się niepostrzeżenie zdjąć pierścień z Franceski. Teraz mogę wrócić do Port-au-Prince i przekazać pierścień Josephine Lodet.}
 PDM_Poteryanoe_Koltso.6 {Oddałem pierścień starszej kobiecie. Wygląda na to, że przypomniała sobie chwilę ze swojej przeszłości i zaczęła odzyskiwać przytomność. Mam nadzieję, że wszystko z nią będzie dobrze.}
-PDM_Proklyataya_Jara {Przeklęty upał}
+PDM_Proklyataya_Jara {Nieznośny upał}
 PDM_Proklyataya_Jara.1 {Strażnik poprosił mnie, żebym kupił mu butelkę wina. Strasznie chce mu się pić, bo stoi prosto pod palącym słońcem. Nie powiedział, gdzie można kupić wino, ale przypuszczam, że dostanę je w miejscowej tawernie. A może powinienem zgłosić ten incydent jego dowódcy, który powinien być w Zakonie Maltańskim?}
 PDM_Proklyataya_Jara.2 {Mam butelkę wina. Powinienem jak najszybciej zanieść ją spragnionemu strażnikowi.}
 PDM_Proklyataya_Jara.3 {Gdy przyniosłem strażnikowi wino, jego partner, widząc to jawne naruszenie dyscypliny, zamiast wydać pijanego kolegę, prosi nas o kupno butelki rumu...}
 PDM_Proklyataya_Jara.4 {Mam butelkę rumu. Czas zanieść ją drugiemu strażnikowi.}
-PDM_Proklyataya_Jara.5 {Teraz nasz spokój strzegą pijani strażnicy.}
-PDM_Proklyataya_Jara.6 {Za czujność i uczciwość otrzymałem nagrodę pieniężną od dowódcy Zakonu Maltańskiego.}
+PDM_Proklyataya_Jara.5 {Teraz pijani strażnicy pilnują naszego spokoju... Biedacy byli tak wycieńczeni upałem, że wychlali wszystko w minutę. Ciekawe, dlaczego proszą o trunek akurat od Jerome'a, a odmawiają zwykłego alkoholu? Muszę zajrzeć do karczmarza i dowiedzieć się, o co w tym chodzi.}
+PDM_Proklyataya_Jara.6 {Za moją czujność i uczciwość komandor Zakonu Maltańskiego wypłacił mi godziwą nagrodę pieniężną, a także podarował ze swojego arsenału zacny miecz rycerzy maltańskich.}
+PDM_Proklyataya_Jara.7 {Jerome okazał się całkiem ugodowym chłopem. Doceniając moją szczodrość, podzielił się sekretem swojego słynnego koktajlu „Sangaree”. Jak się okazało, wszystko sprowadza się do odpowiednich proporcji schłodzonego czerwonego wina i rumu. Teraz ten przepis jest w mojej kolekcji i mogę sam przyrządzać ten orzeźwiający napój.}
+PDM_Proklyataya_Jara.8 {Stary, chichoczący lis Jerome nie chciał wydać tajemnicy swoich pomyj, ale parę męskich słów i wspomnienie o straży szybko rozwiązały mu język. Oddał mi przepis na „Sangaree”, a nawet zwrócił pieniądze za poprzednie zakupy, bylebym dał mu spokój. Cóż, przepis mam, reszta nieważna.}
 PDM_Cursed_Idol {Przeklęty idol}
 PDM_Cursed_Idol.1 {W tawernie w La Vega spotkałem pirackiego kapitana o imieniu James Callow. Opowiedział mi, że niedawno zabrał biednemu tubylcowi złotą figurkę jakiegoś bóstwa i od tamtej pory prześladuje go pech. Poprosił mnie, żebym przekazał tego idola przywódcy pirackiej osady Providencia — Edwardowi Collierowi.}
 PDM_Cursed_Idol.2 {Udało się! Collier wziął ode mnie idol za 1000 monet. Mam nadzieję, że to wystarczy i idol zostanie u przywódcy pirackiej osady. Powinienem jak najszybciej wrócić do Jamesa z dobrą wiadomością.}
@@ -34,6 +36,197 @@ PDM_Cursed_Idol.9 {Zdecydowałem się, choć nie było to łatwe, pozbyć się i
 PDM_Cursed_Idol.10 {Muszę odnaleźć lichwiarza na Tortudze i wręczyć mu złotą figurkę. Jeśli będę zwlekać, kto wie, jakie kłopoty mogę sobie ściągnąć.}
 PDM_Cursed_Idol.11 {Wreszcie! Przeklęty idol został unieszkodliwiony. Czas wracać do Jamesa z dobrą nowiną.}
 PDM_Cursed_Idol.12 {James był tak szczęśliwy, że dotrzymał obietnicy i zgodził się zostać moim oficerem.}
+PDM_Clan_Lambrini
+{
+Klan Lambrini
+}
+
+PDM_Clan_Lambrini.1
+{
+W Port-of-Spain na Trynidadzie spotkałem włoskiego przemytnika imieniem Ottavio Lambrini. Zaproponował mi, że wyeliminuję uczciwego Anglika służącego w straży przybrzeżnej w Port-of-Spain, wszelkimi dostępnymi sposobami. Moją celem jest Thomas Audley, a jego statek nazywa się 'Tiburon'.
+}
+
+PDM_Clan_Lambrini.2
+{
+Thomas Audley został wyeliminowany. Teraz muszę wrócić do Lambriniego po obiecaną nagrodę.
+}
+
+PDM_Clan_Lambrini.3
+{
+Postanowiłem wydać Lambriniego straży przybrzeżnej i zawrzeć umowę z Thomasem Audleyem – jedynym uczciwym kapitanem straży przybrzeżnej w Port-of-Spain. Powiem Lambriniemu, że Thomas nie żyje, a niczego niepodejrzewający przemytnik wpadnie prosto w ręce kapitana straży przybrzeżnej.
+}
+
+PDM_Clan_Lambrini.4
+{
+Udało mi się przekonać Ottavia Lambriniego, że kapitan straży przybrzeżnej został przeze mnie zabity. Przemytnik połknął przynętę. Teraz muszę porozmawiać z Thomasem, który będzie czekał na mnie w kościele w Port-of-Spain od 9 rano do 14.
+}
+
+PDM_Clan_Lambrini.5
+{
+Muszę obserwować, co będzie robił Ottavio w tawernie. Z pewnością spróbuje wznowić swoją działalność.
+}
+
+PDM_Clan_Lambrini.6
+{
+Udało mi się podsłuchać rozmowę Lambriniego z jego klientem o zbliżającej się transakcji. Teraz muszę porozmawiać z Thomasem w kościele o wyznaczonych wcześniej godzinach.
+}
+
+PDM_Clan_Lambrini.7
+{
+Nie udało mi się oszukać Ottavia Lambriniego, że kapitan straży przybrzeżnej został przeze mnie zabity, więc nagroda jest dla mnie stracona. Wygląda jednak na to, że przemytnik mimo to połknął przynętę. Teraz muszę porozmawiać z Thomasem, który będzie czekał na mnie w kościele w Port-of-Spain od 9 rano do 14.
+}
+
+PDM_Clan_Lambrini.8
+{
+Przy mojej pomocy klan Lambrinich wydaje się całkowicie przestać istnieć i nie zagraża już uczciwemu handlowi na Trynidadzie i Tobago. Inni przemytnicy będą mi to jeszcze pamiętać... Niemniej Thomas Audley mnie nie oszukał i wypłacił mi obiecaną nagrodę za głowę Ottavia.
+}
+
+PDM_Ohota_na_vedmu
+{
+Trędowata
+}
+
+PDM_Ohota_na_vedmu.1
+{
+Na ulicy podszedł do mnie mężczyzna imieniem Bartholomew Ulster. Szukał jakiejś Carli z tawerny.
+}
+
+PDM_Ohota_na_vedmu.2
+{
+Wesoła Carla bardzo się zaniepokoiła, gdy dowiedziała się, że szuka jej Bartholomew Ulster. Natychmiast uciekła w nieznanym kierunku. Może powinienem zgłosić to wszystko miejscowemu gubernatorowi?
+}
+
+PDM_Ohota_na_vedmu.3
+{
+Hiszpański gwardzista nie wpuścił mnie do rezydencji gubernatora Belize. Ochrona gubernatora jest wyraźnie wzmocniona. Co tam się stało? Muszę dostać się tam inną drogą...
+}
+
+PDM_Ohota_na_vedmu.4
+{
+W pokoju znalazłem zwłoki mężczyzny. Podchodząc bliżej, zidentyfikowałem go jako Bartholomewa Ulstera, tego samego, który szukał Carli. Muszę o tym wszystkim powiadomić gubernatora. Mam nadzieję, że mnie wysłucha...
+}
+
+PDM_Ohota_na_vedmu.5
+{
+Gubernator Belize zlecił mi przeprowadzenie śledztwa i dowiedzenie się, kto zabił jego sekretarza, Bartholomewa Ulstera. Znaleziono go uduszonego w łóżku. Jeszcze niedawno spotkałem Bartholomewa – pytał na rynku o dziewczynę o imieniu Carla. Myślę, że powinienem znaleźć tę dziewczynę – może ona coś wie.
+}
+
+PDM_Ohota_na_vedmu.6
+{
+Karczmarz powiedział, że nie wie, kim jest Carla. Choć to dziwne, bo pracowała tu niedawno... Nie mam dowodów, by stwierdzić inaczej. Muszę porozmawiać z mieszkańcami miasta i wyciągnąć informacje o Carli.
+}
+
+PDM_Ohota_na_vedmu.7
+{
+Jakiś mężczyzna na ulicy powiedział mi, że widział Carlę w tawernie. Podejrzewa, że jest czarownicą. Powinienem poszukać jej w tawernie, a przy okazji zagrozić karczmarzowi świętą sprawiedliwością – może wtedy powie mi coś o Carli.
+}
+
+PDM_Ohota_na_vedmu.8
+{
+Wyciągnąłem z karczmarza informacje o Carli. Powiedział, że odpłynęła do hiszpańskiej kolonii Santo Domingo.
+}
+
+PDM_Ohota_na_vedmu.11
+{
+Ta historia z Wesołą Carlą staje się coraz bardziej tajemnicza. Spotkałem bosmana ze statku, z którego Carla uciekła. Uważa on Carlę za czarownicę, ponieważ jego kapitan, Miguel Cuenda, zmarł wkrótce po zabraniu jej na pokład. Załoga była przeciwna kobiecie na statku, ale on ich nie słuchał. Kapitan zmarł w momencie, gdy statek wpływał do portu w Santiago. W tym samym momencie Carla tajemniczo zniknęła ze statku. Więc szukanie jej w Santo Domingo jest bezcelowe... Muszę udać się do Santiago.
+}
+
+PDM_Ohota_na_vedmu.12
+{
+Znów spotkałem tę czarownicę, Carlę. To było dość dziwne spotkanie. Opowiedziała mi swoją historię, a ja zrozumiałem, że jest niewinna. Być może pójdę za to do piekła, ale pozwoliłem jej odejść. Obdarowała mnie darem. Co dokładnie się stało, nie zrozumiałem, ale zacząłem czuć się znacznie szczęśliwszy. To był najdziwniejszy prezent w moim życiu...
+}
+
+PDM_Ohota_na_vedmu.13
+{
+Muszę znaleźć inkwizytora w Santiago, aby spalić czarownicę na stosie. Myślę, że w takiej sprawie powinienem zwrócić się do głównego inkwizytora.
+}
+
+PDM_Ohota_na_vedmu.14
+{
+Powiedziałem inkwizytorowi, że Carla jest czarownicą. Obiecał, że zajmie się tą sprawą i dotrzymał słowa. Wkrótce została spalona na stosie. Muszę zgłosić gubernatorowi Belize pomyślne wykonanie zadania.
+}
+
+PDM_Ohota_na_vedmu.15
+{
+Gubernator Belize hojnie mnie wynagrodził za wykonanie zadania.
+}
+
+PDM_Lesopilka
+{
+Ustatkowany pirat
+}
+
+PDM_Lesopilka.1
+{
+Spotkałem starego pirata imieniem Hugo Tartara. Opowiedział mi, że chciałby otrzymać list kaperski, ale naraził się prawie wszystkim narodom. Jedynym sposobem, aby przestać być banitą, jest wstąpienie na służbę do kompanii handlowej. Być może uda mi się wstawić za nim u dyrektora Holenderskiej Kompanii Zachodnioindyjskiej – za to obiecał mi 10 000 piastrów. Kieruję się na Willemstad.
+}
+
+PDM_Lesopilka.2
+{
+Matthias Beck wydał mi ofertę kontraktu dla Hugo. Muszę wrócić do Providence, aby wręczyć mu dokument.
+}
+
+PDM_Lesopilka.3
+{
+Karczmarz powiedział mi za 1000 złotych, że angielscy łowcy nagłów znaleźli Hugo i musiał uciekać. Obecnie przebywa w La Vega.
+}
+
+PDM_Lesopilka.4
+{
+Hugo bardzo się ucieszył, gdy wręczyłem mu dokument. W przyszłości powinienem odwiedzić Matthiasa Becka i zapytać, jak przebiegło spotkanie z Hugo.
+}
+
+PDM_Lesopilka.5
+{
+Koris Gerritsz mówi, że Tartara całkiem nieźle służy Holenderskiej Kompanii Zachodnioindyjskiej. Jest doświadczonym żołnierzem, a jego opowieści o pirackiej przeszłości przyciągają rzesze słuchaczy do tawerny w Willemstad. Powinienem osobiście odwiedzić tego starca... z pewnością często spaceruje po ulicach Willemstad.
+}
+
+PDM_Lesopilka.6
+{
+Rozmawiałem z moim przyjacielem Tartarą. Opowiedział mi ciekawą rzecz. Ciężki galeon pod angielską banderą stoi na kotwicy w pobliżu wyspy Dominika. Jego takielunek i kadłub są uszkodzone. Jeśli nikt mnie nie ubiegnie, będę mógł zawładnąć jego skarbami!
+}
+
+PDM_Lesopilka.6.1
+{
+W kajucie kapitana znalazłem dziennik pokładowy, który należał do kapitana statku "@<sShip>". Warto go przestudiować.
+}
+
+PDM_Lesopilka.6.2
+{
+Hugo Tartara przyniósł mi dziennik pokładowy, który należał do kapitana statku "@<sShip>". Warto go przestudiować.
+}
+
+PDM_Lesopilka.7
+{
+Z dziennika zamordowanego kapitana wynika, że podczas remontu statku jedna czwarta skarbu została przeniesiona i ukryta na wyspie. Zrobiono to na wypadek, gdyby piraci próbowali przejąć statek i jego bogactwa, aby nie dostali wszystkiego. Jeśli chcę zabrać wszystkie pozostałe skarby, muszę wylądować na wyspie i przeszukać dżunglę. Oczywiście, reszta skarbu jest właśnie tam.
+}
+
+PDM_Lesopilka.8
+{
+Nie zdążyłem. Angielski galeon został naprawiony i odpłynął do Europy. Albo ktoś inny go zdobył.
+}
+
+PDM_Lesopilka.9
+{
+Angielscy żołnierze na brzegu stawili nam opór, ale my zwyciężyliśmy. Teraz musimy znaleźć grotę, w której mogły zostać ukryte pozostałe skarby.
+}
+
+PDM_Lesopilka.10
+{
+Gdy zwlekałem, Anglicy na wyspie zdążyli ukryć skarb gdzie indziej. Teraz nigdy go nie dostanę!
+}
+
+PDM_Lesopilka.11
+{
+Niewiarygodne, ale skarby rzeczywiście zostały przeniesione do groty! Hugo i ja pozwoliliśmy sobie nawet na chwilę słabości i, za jego radą, rozciągnęliśmy się po królewsku bezpośrednio na tej ogromnej górze złota i klejnotów. Gdy odpoczywaliśmy, Tartara w barwnych szczegółach opowiedział mi historię o tym, jak w młodości zdobył swój przydomek, potrafiąc jednym zamachem ściąć maszty zarówno wrogiego, jak i własnego statku.
+
+Hugo i jego pomocnik już zabrali swoją część łupu. Cóż, teraz czas, abym ja zabrał swoją część tego bogactwa i odwiózł Tartarę z powrotem do Willemstad.
+}
+
+PDM_Lesopilka.12
+{
+Wszystkie sprawy załatwione, a skarb został pomyślnie podzielony. Stary Hugo w końcu zgarnął główną wygraną swojego życia na stare lata! Myślę, że Tartara może teraz spokojnie ostatecznie zawiesić swój topór na kołku i odejść na zasłużony odpoczynek, o którym tak długo marzył. To było cholernie interesujące i niezapomniane przygoda.
+}
 JusticeOnSale {Pojmany przemytnik}
 JusticeOnSale.1 {Zgodziłem się pomóc bandzie przemytników uwolnić ich kapitana, który jest uwięziony w @<cityName>. Mam nadzieję, że obiecana nagroda jest tego warta. Przemytnicy będą czekać na @<Shore>. Muszę porozmawiać z komendantem... A może oddać całą tę bandę łajdaków władzom?}
 JusticeOnSale.1_1 {Może angażowanie się z przestępcami to nie jest najlepszy pomysł. Postanowiłem dać im lekcję szermierki.}
@@ -707,5 +900,16 @@ Weź kiść białych winogron o wadze około 5-6 uncji, rozgnieć owoce na miazg
 Pozostaw do naciągnięcia, aż proszek całkowicie opadnie na dno, następnie ostrożnie odcedź klarowną część eliksiru przez czystą tkaninę.
 
 Składniki: Maruna, Korzeń imbiru, Winogrona.
+Narzędzia: Moździerz i tłuczek.
+}
+Recipe.potionsangari
+{
+„Sangaree”
+****************
+Ten napój to ratunek dla każdego podróżnika w palącym słońcu Karaibów.
+
+Do przygotowania weź dwie butelki dobrego czerwonego wina i jedną porcję mocnego rumu. Dokładnie wymieszaj płyny w głębokim naczyniu. Moim głównym sekretem jest to, by nie przesadzić z rumem, inaczej napój straci swoją orzeźwiającą lekkość. W miarę możliwości można dodać kroplę soku z limonki lub szczyptę gałki muszkatołowej dla równowagi smaku.
+
+Składniki: Wino (2), Rum (1).
 Narzędzia: Moździerz i tłuczek.
 }

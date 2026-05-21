@@ -430,3 +430,21 @@ Also gut, lasst mir diesen Ladrón sofort vorführen – ich kann es kaum erwart
 AntonioDeSouza_94 {
 Sehr wohl, Monsignore.
 }
+AntonioDeSouza_95 {
+Monseigneur, ich weiß, dass es hier eine Hexe namens Carla gibt, eine ehemalige Hafenprostituierte. Mit ihrer dunklen Kunst hat sie bereits zwei Menschen getötet – Kapitän Miguel Cuenda und den guten Hidalgo Bartholomew, der starb, bevor er bereuen konnte. Er war ein Diener des Gouverneurs von Belize. Ich bete zu Gott, dass die Heilige Inquisition sie für ihre sündhaften Taten bestraft.
+}
+AntonioDeSouza_96_m {
+Monseigneur, ich habe ein Anliegen an Euch. Verwehrt einem eifrigen Katholiken nicht eine Minute Eurer Aufmerksamkeit.
+}
+AntonioDeSouza_96_f {
+Monseigneur, ich habe ein Anliegen an Euch. Verwehrt einer eifrigen Katholikin nicht eine Minute Eurer Aufmerksamkeit.
+}
+AntonioDeSouza_97_m {
+Ah, möge deine Seele für deine rechtschaffene Tat auf ewig gesegnet sein, mein Sohn. Wir werden uns um diese Hexe kümmern. Dein Eifer wird mit meinem persönlichen Segen belohnt.\nZudem, mein Sohn, wirst du persönlich miterleben, wie die Hexenbrut im heiligen Feuer der Inquisition verbrennt.
+}
+AntonioDeSouza_97_f {
+Ah, möge deine Seele für deine rechtschaffene Tat auf ewig gesegnet sein, meine Tochter. We werden uns um diese Hexe kümmern. Dein Eifer wird mit meinem persönlichen Segen belohnt.\nZudem, meine Tochter, wirst du persönlich miterleben, wie die Hexenbrut im heiligen Feuer der Inquisition verbrennt.
+}
+AntonioDeSouza_98 {
+Ich hoffe es, Monseigneur.
+}

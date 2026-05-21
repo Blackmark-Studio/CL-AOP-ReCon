@@ -600,7 +600,7 @@ void ProcessDialogEvent()
 			dialog.text = StringFromKey("Jackman_134");
 			link.l1 = StringFromKey("Jackman_135");
 			link.l1.go = "exit";
-			SetMushketCapitainInWorld();
+			SetMushketCapitainInWorld(true);
 			AddQuestRecord("SeekDoubleMushket", "2");
 
 			RemoveLandQuestMark_Main(CharacterFromID("LeFransua_Mayor"), "SeekDoubleMushket");
@@ -608,18 +608,6 @@ void ProcessDialogEvent()
 		break;
 
 		//*************************** Квест "Сопровождение флейта "Орион"" **********************
-		/* //HardCoffee отключаю для тестов возможности выбрать квестовую реплику в начале
-		case "Andre_Abel_Quest_Jackman_Dialog_1":
-			dialog.text = "Что тебе от меня нужно, " + pchar.name + "?";
-			link.l1 = "Я по делу, Джекмен...";
-			link.l1.go = "Andre_Abel_Quest_Jackman_Dialog_2";
-		break;
-			
-		case "Andre_Abel_Quest_Jackman_Dialog_2":
-			dialog.text = "Выкладывай, что у тебя за дело.";
-			link.l1 = "Даже не знаю как начать... В общем, я думаю, ты помнишь торговца по имени Андре Абель?";
-			link.l1.go = "Andre_Abel_Quest_Jackman_Dialog_3";
-		break;*/
 
 		case "Andre_Abel_Quest_Jackman_Dialog_3":
 			pchar.QuestTemp.AndreAbelQuest = true;
@@ -771,7 +759,7 @@ void ProcessDialogEvent()
 			pchar.GenQuest.CaptainComission.ShipName1 = GenerateRandomNameToShip(sti(NPChar.nation));
 			pchar.GenQuest.CaptainComission.ShipName2 = GenerateRandomNameToShip(sti(NPChar.nation));
 			pchar.GenQuest.CaptainComission.UnknownPirateName = "l" + rand(GetNamesCount(NAMETYPE_ORIG) - 1);
-			sLoc = XI_ConvertString(pchar.GenQuest.CaptainComission.Island + "Pre");
+			sLoc = XI_ConvertString(pchar.GenQuest.CaptainComission.Island + "Dat");
 			dialog.text = StringFromKey("Jackman_173", GetName(NAMETYPE_ORIG, pchar.GenQuest.CaptainComission.UnknownPirateName, NAME_NOM), XI_ConvertString(pchar.GenQuest.CaptainComission.Island.Shore + "Gen"), pchar.GenQuest.CaptainComission.ShipName1, pchar.GenQuest.CaptainComission.ShipName2, sLoc);
 			link.l1 = StringFromKey("Jackman_174");
 			link.l1.go = "CapComission2_2_3";
@@ -998,95 +986,6 @@ void ProcessDialogEvent()
 		break;
 		// <<<<<<<<<<<<============= блок нод angry =============================
 	}
-}
-
-void SetMushketCapitainInWorld()
-{
-	//создаем кэпов
-	int Rank = sti(pchar.rank) + 15;
-	if (Rank > 30) Rank = 30;
-	ref sld = GetCharacter(NPC_GenerateCharacter("MushketCap", "citiz_58", "man", "man", Rank, PIRATE, -1, true)); //watch_quest_moment //вариант officer_26
-	sld.name = FindPersonalName("MushketCap_name");
-	sld.lastname = FindPersonalName("MushketCap_lastname");
-	SetCaptanModelByEncType(sld, "pirate");
-	FantomMakeCoolSailor(sld, SHIP_BRIGQEEN, FindPersonalName("MushketCap_ship"), CANNON_TYPE_CULVERINE_LBS24, 100, 100, 100);
-	FantomMakeCoolFighter(sld, 20, 50, 50, "blade34", "pistol2", 50);
-	sld.Ship.Mode = "pirate";
-	DeleteAttribute(sld, "SinkTenPercent");
-	DeleteAttribute(sld, "SaveItemsForDead");
-	DeleteAttribute(sld, "DontClearDead");
-	DeleteAttribute(sld, "AboardToFinalDeck");
-	DeleteAttribute(sld, "DontRansackCaptain");
-	sld.AlwaysSandbankManeuver = true;
-	sld.AnalizeShips = true;  //анализировать вражеские корабли при выборе таска
-	sld.DontRansackCaptain = true; //не сдаваться
-	sld.WatchFort = true; //видеть форты
-	SetCharacterPerk(sld, "FastReload");
-	SetCharacterPerk(sld, "HullDamageUp");
-	SetCharacterPerk(sld, "SailsDamageUp");
-	SetCharacterPerk(sld, "CrewDamageUp");
-	SetCharacterPerk(sld, "CriticalShoot");
-	SetCharacterPerk(sld, "LongRangeShoot");
-	SetCharacterPerk(sld, "CannonProfessional");
-	SetCharacterPerk(sld, "ShipDefenseProfessional");
-	SetCharacterPerk(sld, "ShipTurnRateUp");
-	SetCharacterPerk(sld, "StormProfessional");
-	SetCharacterPerk(sld, "SwordplayProfessional");
-	SetCharacterPerk(sld, "AdvancedDefense");
-	SetCharacterPerk(sld, "CriticalHit");
-	SetCharacterPerk(sld, "MusketsShoot");
-	SetCharacterPerk(sld, "Sliding");
-	SetCharacterPerk(sld, "Tireless");
-	SetCharacterPerk(sld, "HardHitter");
-	SetCharacterPerk(sld, "GunProfessional");
-	//в морскую группу кэпа
-	string sGroup = "MushketCapShip";
-	Group_FindOrCreateGroup(sGroup);
-	Group_SetTaskAttackInMap(sGroup, PLAYER_GROUP);
-	Group_LockTask(sGroup);
-	Group_AddCharacter(sGroup, sld.id);
-	Group_SetGroupCommander(sGroup, sld.id);
-	SetRandGeraldSail(sld, sti(sld.Nation));
-	sld.quest = "InMap"; //личный флаг искомого кэпа
-	sld.city = "PortRoyal"; //определим колонию, из бухты которой с мушкетом выйдет
-	sld.cityShore = GetIslandRandomShoreId(GetArealByCityName(sld.city));
-	sld.quest.targetCity = SelectAnyColony(sld.city); //определим колонию, в бухту которой он придет
-	sld.quest.targetShore = GetIslandRandomShoreId(GetArealByCityName(sld.quest.targetCity));
-	pchar.questTemp.Mushket.Shore = GetIslandRandomShoreId(GetArealByCityName(sld.quest.targetCity));
-	Log_TestInfo("Кэп с мушкетом вышел из: " + sld.city + " и направился в: " + sld.quest.targetShore + "");
-	//==> на карту
-	sld.mapEnc.type = "trade";
-	//выбор типа кораблика на карте
-	// sld.mapEnc.worldMapShip = "quest_ship";
-	sld.mapEnc.worldMapShip = "BrigantineShip";
-	sld.mapEnc.Name = FindPersonalName("MushketCap_mapEnc");
-	int daysQty = GetMaxDaysFromColony2Colony(sld.quest.targetCity, sld.city) + 5; //дней доехать даем с запасом
-	Map_CreateTrader(sld.cityShore, sld.quest.targetShore, sld.id, daysQty);
-	// прерывания по квесту
-	pchar.quest.SeekDoubleMushket_Capture.win_condition.l1 = "Character_Capture";
-	pchar.quest.SeekDoubleMushket_Capture.win_condition.l1.character = "MushketCap";
-	pchar.quest.SeekDoubleMushket_Capture.function = "SeekDoubleMushket_Capture";
-
-	pchar.quest.SeekDoubleMushket_GroupDeath.win_condition.l1 = "Group_Death";
-	pchar.quest.SeekDoubleMushket_GroupDeath.win_condition.l1.group = "MushketCapShip";
-	pchar.quest.SeekDoubleMushket_GroupDeath.function = "SeekDoubleMushket_GroupDeath";
-	//заносим Id кэпа в базу нпс-кэпов
-	string sTemp = sld.id;
-	NullCharacter.capitainBase.(sTemp).quest = "mushket"; //идентификатор квеста
-	NullCharacter.capitainBase.(sTemp).questGiver = "none"; //запомним Id квестодателя для затирки в случае чего
-	NullCharacter.capitainBase.(sTemp).Tilte1 = "SeekDoubleMushket"; //заголовок квестбука
-	NullCharacter.capitainBase.(sTemp).Tilte2 = "SeekDoubleMushket"; //имя квеста в квестбуке
-	NullCharacter.capitainBase.(sTemp).checkTime = daysQty + 5;
-	NullCharacter.capitainBase.(sTemp).checkTime.control_day = GetDataDay();
-	NullCharacter.capitainBase.(sTemp).checkTime.control_month = GetDataMonth();
-	NullCharacter.capitainBase.(sTemp).checkTime.control_year = GetDataYear();
-	//пускаем слух
-	string sRumourName = GetRandName(NAMETYPE_VIP, NAME_NOM);
-	TEV.MushketCapShipRumourId = AddSimpleRumour(
-				StringFromKey("Jackman_224", LinkRandPhrase(
-						StringFromKey("Jackman_221", XI_ConvertString(sld.quest.targetShore + "Gen")),
-						StringFromKey("Jackman_222", XI_ConvertString(sld.quest.targetShore + "Gen")),
-						StringFromKey("Jackman_223", generateRandomNameToShip(1), sRumourName, XI_ConvertString(sld.quest.targetShore + "Gen")))), 777, daysQty, 1);
 }
 
 void JackmanBeginPhrases(aref link, ref NPChar)

@@ -435,7 +435,7 @@ void StartSceneExecute(aref character)
 	break;
 
 	case "PlayMusic":
-		PlayMusic(scnref.name);
+		PlayMusic(scnref.name, 1000);
 		PostEvent("qprocTaskEnd",1,"a",character); // !!!
 		return;
 	break;

@@ -328,6 +328,7 @@ void LAi_PlaceCharInTavern(ref chr)
 	makearef(aloc1, loadedLocation.locators.tables.(loc1));
 	makearef(aloc2, loadedLocation.locators.goto.(loc2));
 	float dist1, dist2;
+	dist1 = 0.0; dist2 = 0.0;
 	for (int i = 0; i <= 1; i++)
 	{
 		aref loc;
@@ -582,7 +583,17 @@ void LAi_CheckKillCharacter(aref chr)
 				}
 			}
 		}
-
+		
+		// Квестовое бессмертие, персонаж садится на землю
+		if(CheckAttribute(chr, "QuestImmortal"))
+		{
+			chr.chr_ai.hp = 10.0 + LAi_GetCharacterMaxHP(chr) * 0.5;
+			LAi_SetActorType(chr);
+			LAi_ActorSetGroundSitMode(chr);
+			LAi_group_MoveCharacter(chr, LAI_GROUP_ACTOR);
+			return;
+		}
+		
 		//Убиваем, если смертен
 		if(CheckAttribute(chr, "chr_ai.immortal"))
 		{
@@ -680,10 +691,18 @@ ref LAi_CreateFantomCharacterEx(string model, string ani, string group, string l
 	}
 	// fix <--
 	// AlexBlade Настройкп драугров
-	if(CheckAttribute(chr, "model") && StrStartsWith(chr.model, "draugr"))
+	if(CheckAttribute(chr, "model"))
 	{
-		chr.Ghost = 0.6;
-		chr.sex = "skeleton";
+		if (StrStartsWith(chr.model, "draugr"))
+		{
+			chr.Ghost = 0.6;
+			chr.sex = "skeleton";
+		}
+		else if (StrStartsWith(chr.model, "skel"))
+		{
+			chr.skeleton = "1";
+			chr.sex = "skeleton";
+		}
 	}
 	chr.FaceId = "0";
 	chr.headModel = "h_" + chr.model;

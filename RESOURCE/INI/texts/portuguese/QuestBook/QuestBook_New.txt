@@ -1,8 +1,8 @@
 PDM_Neputyovy_kaznachey {Tesoureiro Desgarrado}
 PDM_Neputyovy_kaznachey.1 {Nas ruas de Willemstad, encontrei um homem assustado. Seu nome é Andreas Fickler. Ele me contou que seu antigo capitão quer matá-lo por ter danificado seu navio e carga. Neste momento, o capitão está bebendo na taverna de raiva.}
-PDM_Neputyovy_kaznachey.2 {Vitor Bretier exigiu @<sMoney> como compensação pelos danos causados ao seu navio e carga.}
-PDM_Neputyovy_kaznachey.3 {Paguei a quantia combinada a Vitor Bretier. Agora Andreas Fickler está seguro.}
-PDM_Neputyovy_kaznachey.4 {Tive que matar Vitor Bretier. Agora Andreas Fickler não corre mais perigo.}
+PDM_Neputyovy_kaznachey.2 {Victor Bretier exigiu @<sMoney> como compensação pelos danos causados ao seu navio e carga.}
+PDM_Neputyovy_kaznachey.3 {Paguei a quantia combinada a Victor Bretier. Agora Andreas Fickler está seguro.}
+PDM_Neputyovy_kaznachey.4 {Tive que matar Victor Bretier. Agora Andreas Fickler não corre mais perigo.}
 PDM_Neputyovy_kaznachey.5 {Andreas Fickler pediu para ser meu tesoureiro, e eu aceitei.}
 PDM_Neputyovy_kaznachey.6 {Andreas Fickler pediu para ser meu tesoureiro, mas eu recusei.}
 PDM_Neputyovy_kaznachey.7 {Por causa do purser, Victor Bretier sofreu grandes perdas financeiras, e eu decidi não me envolver no conflito deles.}
@@ -18,8 +18,10 @@ PDM_Proklyataya_Jara.1 {O guarda me pediu para comprar uma garrafa de vinho para
 PDM_Proklyataya_Jara.2 {Estou com a garrafa de vinho. Melhor levá-la ao guarda sedento o quanto antes.}
 PDM_Proklyataya_Jara.3 {Depois que levei vinho para o guarda, o parceiro dele, ao ver essa clara quebra de disciplina, em vez de denunciar o amigo bêbado, pede para comprarmos uma garrafa de rum...}
 PDM_Proklyataya_Jara.4 {Estou com a garrafa de rum. Hora de levá-la ao segundo guarda.}
-PDM_Proklyataya_Jara.5 {Agora guardas bêbados vigiam nossa paz.}
-PDM_Proklyataya_Jara.6 {Pela minha vigilância e honestidade, o comandante da Ordem de Malta me recompensou com dinheiro.}
+PDM_Proklyataya_Jara.5 {Agora guardas bêbados vigiam nossa paz... Os coitados estavam tão exaustos pelo calor que entornaram tudo em um minuto. Pergunto-me por que pedem especificamente a bebida de Jerome e recusam álcool comum? Preciso dar um pulo na taverna e descobrir o que está acontecendo.}
+PDM_Proklyataya_Jara.6 {Por minha vigilância e honestidade, o Comandante da Ordem de Malta pagou-me uma boa recompensa em dinheiro e também me presenteou com uma bela espada de cavaleiro maltês de seu próprio arsenal.}
+PDM_Proklyataya_Jara.7 {Jerome revelou-se um sujeito bastante razoável. Apreciando minha generosidade, ele compartilhou o segredo de seu famoso coquetel "Sangaree". Como se viu, tudo depende da proporção correta de vinho tinto gelado e rum. Agora esta receita está em minha coleção e posso preparar a bebida refrescante para minhas próprias necessidades.}
+PDM_Proklyataya_Jara.8 {A velha raposa risonha do Jerome não queria entregar o segredo da sua zurrapa, mas algumas palavras rudes e a menção aos guardas rapidamente soltaram sua língua. Ele me deu a receita do "Sangaree" e até devolveu o dinheiro das compras anteriores, só para eu deixá-lo em paz. Bem, a receita é minha, o resto não importa.}
 PDM_Cursed_Idol {Ídolo Amaldiçoado}
 PDM_Cursed_Idol.1 {Na taverna de La Vega, encontrei um capitão pirata chamado James Callow. Ele me contou que recentemente pegou uma estatueta dourada de alguma divindade de um pobre nativo, e que desde então o azar não o larga. Ele me pediu para entregar esse ídolo ao líder do assentamento pirata de Providencia — Edward Collier.}
 PDM_Cursed_Idol.2 {Deu certo! Collier pegou o ídolo de mim por 1.000 moedas. Espero que isso resolva e o ídolo fique com o líder do assentamento pirata. É melhor eu voltar logo para James com as boas notícias.}
@@ -34,6 +36,197 @@ PDM_Cursed_Idol.9 {Decidi, embora não tenha sido fácil, me livrar do ídolo. N
 PDM_Cursed_Idol.10 {Preciso encontrar o agiota em Tortuga para entregar a estatueta de ouro. Se eu demorar, quem sabe que problemas posso arranjar para mim mesmo.}
 PDM_Cursed_Idol.11 {Finalmente! O ídolo amaldiçoado foi eliminado. Hora de voltar para James com as boas notícias.}
 PDM_Cursed_Idol.12 {James ficou tão feliz que cumpriu a promessa e aceitou se tornar meu oficial.}
+PDM_Clan_Lambrini
+{
+Clã Lambrini
+}
+
+PDM_Clan_Lambrini.1
+{
+Em Porto Espanha, em Trinidad, encontrei um contrabandista italiano chamado Ottavio Lambrini. Ele me propôs eliminar um honesto inglês que serve na guarda costeira em Porto Espanha, por qualquer meio necessário. Meu alvo é Thomas Audley, e seu navio se chama 'Tiburon'.
+}
+
+PDM_Clan_Lambrini.2
+{
+Thomas Audley foi eliminado. Agora devo retornar a Lambrini para receber a recompensa prometida.
+}
+
+PDM_Clan_Lambrini.3
+{
+Decidi entregar Lambrini à guarda costeira e fazer um acordo com Thomas Audley – o único capitão honesto da guarda costeira em Porto Espanha. Direi a Lambrini que Thomas está morto, e o contrabandista, sem suspeitar, cairá direto nas mãos do capitão da guarda costeira.
+}
+
+PDM_Clan_Lambrini.4
+{
+Consegui convencer Ottavio Lambrini de que o capitão da guarda costeira foi morto por mim. O contrabandista mordeu a isca. Agora preciso falar com Thomas, que estará me esperando na igreja de Porto Espanha das 9h às 14h.
+}
+
+PDM_Clan_Lambrini.5
+{
+Preciso observar o que Ottavio fará na taverna. Certamente ele tentará retomar suas atividades.
+}
+
+PDM_Clan_Lambrini.6
+{
+Consegui ouvir uma conversa de Lambrini com seu cliente sobre um negócio iminente. Agora preciso falar com Thomas na igreja nos horários previamente combinados.
+}
+
+PDM_Clan_Lambrini.7
+{
+Não consegui enganar Ottavio Lambrini para que acreditasse que o capitão da guarda costeira foi morto por mim, então a recompensa está perdida para mim. Embora pareça que o contrabandista ainda assim mordeu a isca. Agora preciso falar com Thomas, que estará me esperando na igreja de Porto Espanha das 9h às 14h.
+}
+
+PDM_Clan_Lambrini.8
+{
+Com a minha ajuda, o clã Lambrini parece ter deixado de existir completamente e já não ameaça o comércio honesto em Trindade e Tobago. Outros contrabandistas vão se lembrar disso... Ainda assim, Thomas Audley não me enganou e me pagou a recompensa prometida pela cabeça de Ottavio.
+}
+
+PDM_Ohota_na_vedmu
+{
+A Leprosa
+}
+
+PDM_Ohota_na_vedmu.1
+{
+Na rua, um homem chamado Bartholomew Ulster aproximou-se de mim. Ele estava procurando por uma tal Carla da taverna.
+}
+
+PDM_Ohota_na_vedmu.2
+{
+Carla, a Alegre, ficou muito alarmada ao saber que Bartholomew Ulster estava procurando por ela. Ela imediatamente fugiu em uma direção desconhecida. Talvez eu deva relatar tudo isso ao governador local?
+}
+
+PDM_Ohota_na_vedmu.3
+{
+Um guarda espanhol me impediu de entrar na residência do governador em Belize. A segurança do governador está claramente reforçada. O que aconteceu lá? Preciso encontrar outra maneira de entrar...
+}
+
+PDM_Ohota_na_vedmu.4
+{
+No quarto, encontrei o corpo de um homem. Ao me aproximar, identifiquei-o como Bartholomew Ulster, o mesmo homem que estava procurando por Carla. Preciso informar o governador sobre tudo isso. Espero que ele me escute...
+}
+
+PDM_Ohota_na_vedmu.5
+{
+O governador de Belize me deu a tarefa de investigar o assassinato de seu secretário, Bartholomew Ulster. Ele foi encontrado estrangulado em sua cama. Há pouco tempo, eu tinha encontrado Bartholomew – ele estava perguntando na praça da cidade sobre uma garota chamada Carla. Acho que preciso encontrar essa garota – talvez ela saiba de algo.
+}
+
+PDM_Ohota_na_vedmu.6
+{
+O taverneiro disse que não sabe quem é Carla. Isso é estranho, já que ela trabalhou aqui não faz muito tempo... Não tenho provas para afirmar o contrário. Preciso conversar com os moradores da cidade para obter informações sobre Carla.
+}
+
+PDM_Ohota_na_vedmu.7
+{
+Um homem na rua me disse que viu Carla na taverna. Ele suspeita que ela seja uma bruxa. Devo procurá-la na taverna, e também ameaçar o estalajadeiro com a justiça divina – talvez então ele me diga algo sobre Carla.
+}
+
+PDM_Ohota_na_vedmu.8
+{
+Extraí informações sobre Carla do estalajadeiro. Ele disse que ela navegou para a colônia espanhola de São Domingos.
+}
+
+PDM_Ohota_na_vedmu.11
+{
+Esta história de Carla, a Alegre, está se tornando cada vez mais misteriosa. Encontrei o contramestre do navio do qual Carla fugiu. Ele acredita que Carla é uma bruxa, porque seu capitão, Miguel Cuenda, morreu pouco depois de levá-la a bordo. A tripulação era contra ter uma mulher a bordo, mas ele não os ouviu. O capitão morreu no momento em que o navio entrava no porto de Santiago. No mesmo momento, Carla desapareceu misteriosamente do navio. Então, procurá-la em São Domingos é inútil... Preciso ir para Santiago.
+}
+
+PDM_Ohota_na_vedmu.12
+{
+Encontrei essa bruxa, Carla, novamente. Foi um encontro bastante estranho. Ela me contou sua história, e eu entendi que ela é inocente. Talvez eu vá para o inferno por isso, mas deixei-a ir. Ela me presenteou com um dom. O que exatamente aconteceu, eu não entendi, mas comecei a me sentir muito mais feliz. Foi o presente mais estranho da minha vida...
+}
+
+PDM_Ohota_na_vedmu.13
+{
+Preciso encontrar um inquisidor em Santiago para queimar a bruxa na fogueira. Acho que para tal assunto, devo procurar o inquisidor-chefe.
+}
+
+PDM_Ohota_na_vedmu.14
+{
+Contei ao inquisidor que Carla é uma bruxa. Ele prometeu cuidar do assunto e cumpriu sua promessa. Ela logo foi queimada na fogueira. Devo informar ao governador de Belize sobre a conclusão bem-sucedida da tarefa.
+}
+
+PDM_Ohota_na_vedmu.15
+{
+O governador de Belize me recompensou generosamente por completar a tarefa.
+}
+
+PDM_Lesopilka
+{
+O Pirata Reformado
+}
+
+PDM_Lesopilka.1
+{
+Encontrei um velho pirata chamado Hugo Serras. Ele me contou que gostaria de obter uma carta de corso, mas que se tornou inimigo de quase todas as nações. Então, a única maneira de deixar de ser um fora-da-lei é entrar ao serviço de uma companhia de comércio. Talvez eu consiga dar um bom conselho para ele junto ao diretor da Companhia Holandesa das Índias Ocidentais – por isso, ele me prometeu 10.000 piastras. Ponho o rumo para Willemstad.
+}
+
+PDM_Lesopilka.2
+{
+Matthias Beck me entregou uma oferta de contrato para Hugo. Preciso retornar a Providence para entregar o documento a ele.
+}
+
+PDM_Lesopilka.3
+{
+O taverneiro me contou, por 1.000 moedas de ouro, que caçadores de recompensas ingleses encontraram Hugo, e ele teve que fugir. Ele está atualmente em La Vega.
+}
+
+PDM_Lesopilka.4
+{
+Hugo ficou muito feliz quando lhe entreguei o documento. No futuro, devo visitar Matthias Beck e perguntar como foi o encontro com Hugo.
+}
+
+PDM_Lesopilka.5
+{
+Koris Gerritsz diz que Serras serve muito bem a Companhia Holandesa das Índias Ocidentais. Ele é um soldado experiente, e suas histórias sobre seu passado pirata atraem multidões de ouvintes para a taverna de Willemstad. Devo visitar este velho pessoalmente... certamente ele costuma passear pelas ruas de Willemstad.
+}
+
+PDM_Lesopilka.6
+{
+Conversei com meu amigo Serras. Ele me contou algo interessante. Um pesado galeão sob bandeira inglesa está ancorado ao largo da ilha de Dominica. Sua cordoalha e casco estão danificados. Se ninguém me vencer, poderei apoderar-me de seus tesouros!
+}
+
+PDM_Lesopilka.6.1
+{
+Na cabine do capitão, encontrei o diário de bordo que pertencia ao capitão do navio "@<sShip>". Vale a pena estudá-lo.
+}
+
+PDM_Lesopilka.6.2
+{
+Hugo Serras trouxe-me o diário de bordo que pertencia ao capitão do navio "@<sShip>". Vale a pena estudá-lo.
+}
+
+PDM_Lesopilka.7
+{
+De acordo com o diário do capitão assassinado, um quarto do tesouro foi movido e escondido na ilha durante os reparos do navio. Isso foi feito para que, se os piratas tentassem tomar o navio e suas riquezas, eles pelo menos não ficassem com tudo. Se eu quiser tomar todos os tesouros restantes, preciso desembarcar na ilha e vasculhar a selva. Obviamente, o resto do tesouro está lá.
+}
+
+PDM_Lesopilka.8
+{
+Não fui rápido o suficiente. O galeão inglês foi reparado e partiu para a Europa. Ou talvez outro o tenha capturado.
+}
+
+PDM_Lesopilka.9
+{
+Os soldados ingleses na costa nos ofereceram resistência, mas nós prevalecemos. Agora precisamos encontrar a gruta onde os tesouros restantes podem ter sido escondidos.
+}
+
+PDM_Lesopilka.10
+{
+Enquanto eu demorava, os ingleses na ilha conseguiram esconder o tesouro em outro lugar. Agora nunca mais o pegarei!
+}
+
+PDM_Lesopilka.11
+{
+Inacreditável, os tesouros foram realmente movidos para a gruta! Hugo e eu até nos permitimos um momento de fraqueza e, por seu conselho, nos espreguiçamos regiamente bem naquela enorme montanha de ouro e joias. Enquanto descansávamos, Serras contou-me vividamente a história de como ganhou seu apelido na juventude, conseguindo derrubar com um só golpe os mastros do navio inimigo e do seu próprio.
+
+Hugo e seu assistente já pegaram sua parte do saque. Bem, agora é hora de eu pegar minha parte desta riqueza e levar Serras de volta a Willemstad.
+}
+
+PDM_Lesopilka.12
+{
+Todos os assuntos estão resolvidos e o tesouro foi dividido com sucesso. O velho Hugo finalmente conseguiu o maior golpe de sua vida em seus anos de declínio! Acho que agora Serras pode, com a consciência tranquila, pendurar definitivamente o machado e se aposentar, no descanso merecido com que tanto sonhou. Foi uma aventura muito interessante e inesquecível.
+}
 JusticeOnSale {Contrabandista Capturado}
 JusticeOnSale.1 {Concordei em ajudar a quadrilha de contrabandistas a libertar seu capitão, que está preso em @<cityName>. Espero que a recompensa prometida valha a pena. Os contrabandistas vão me esperar em @<Shore>. Preciso falar com o comandante... Ou talvez entregar toda essa quadrilha de canalhas para as autoridades?}
 JusticeOnSale.1_1 {Talvez se envolver com criminosos não seja a melhor ideia. Decidi dar uma lição de esgrima neles.}
@@ -708,4 +901,15 @@ Deixe a mistura em infusão apenas até que o pó assente completamente no fundo
 
 Componentes: Matricária, Raiz de Gengibre, Uvas.
 Ferramentas: Almofariz e pilão.
+}
+Recipe.potionsangari
+{
+"Sangaree"
+****************
+Esta bebida é a salvação para qualquer viajante sob o sol escaldante do Caribe.
+
+Para preparar, use duas garrafas de um bom vinho tinto e uma dose de rum forte. Misture bem os líquidos em um recipiente fundo. Meu principal segredo é não exagerar no rum, caso contrário a bebida perderá sua leveza refrescante. Se disponível, pode-se adicionar uma gota de suco de lima ou uma pitada de noz-moscada para equilibrar o sabor.
+
+Componentes: Vinho (2), Rum (1).
+Ferramentas: Almofariz e pistilo.
 }

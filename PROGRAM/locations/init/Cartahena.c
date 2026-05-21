@@ -583,7 +583,7 @@ int LocationInitCartahena(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Cartahena_townhall";
 	locations[n].id.label = "Townhall";
-	locations[n].image = "loading\inside\residence.tga";
+	locations[n].image = "loading\inside\Residence01.tga";
 	//Town sack
 	locations[n].townsack = "Cartahena";
 	locations[n].lockWeather = "Inside";
@@ -890,7 +890,7 @@ int LocationInitCartahena(int n)
 	
 	locations[n].id = "Mayak11_Lighthouseroom";
 	locations[n].id.label = "House";
-	locations[n].image = "loading\inside\mediumhouse10.tga";
+	locations[n].image = "loading\inside\mediumhouse05.tga";
 	//Town sack
 	locations[n].townsack = "Cartahena";
 	locations[n].islandId = "Cartahena";

@@ -285,7 +285,7 @@ void WaitProcess(int _iHour)
 		if (iCurrentTime >= 7 && iCurrentTime < 21) iAddTime = 24 + 7 - iCurrentTime;
 	}
 
-	pchar.quest.waithours = iAddtime;
+	TEV.WaitHours = iAddtime;
 
 	if (days == true)
 	{

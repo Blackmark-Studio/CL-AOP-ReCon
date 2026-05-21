@@ -27,6 +27,19 @@ void ProcessDialogEvent()
 						StringFromKey("AntonioDeSouza_8"), npchar, Dialog.CurrentNode);
 			link.l1.go = "exit";
 			//>>>>>>>>>>>>========= Разброс диалогов =====================
+			if (CheckAttribute(pchar, "questTemp.PDM_ONV_OhotaNaVedmu"))	//Квест "Прокажённая"
+			{
+				link.l1 = StringFromKey("AntonioDeSouza_95");
+				link.l1.go = "PDM_ONW_Inqizitor_1";
+				break;
+			}
+			if (pchar.questTemp.MC == "toByeBye")	//Квест "Зачарованный город"
+			{
+				link.l1 = StringFromKey("AntonioDeSouza_96", pchar);
+				link.l1.go = "MCIncq";
+				pchar.questTemp.MC = "Incquisitio";
+				break;
+			}
 			if (pchar.questTemp.State == "Inquisition_toDeSouza")//Квест №2, базар с гл.Инквизитором
 			{
 				dialog.text = StringFromKey("AntonioDeSouza_9", pchar);
@@ -351,8 +364,6 @@ void ProcessDialogEvent()
 			dialog.text = StringFromKey("AntonioDeSouza_93");
 			link.l1 = StringFromKey("AntonioDeSouza_94");
 			link.l1.go = "exit";
-			NPChar.LifeDay = 10;
-			SaveCurrentNpcQuestDateParam(NPChar, "LifeTimeCreate");
 			AddQuestRecord("Spa_Line_3_RockBrasilian", "6");
 			pchar.questTemp.State = "TakeRockBras_RockGiven";
 			sld = characterFromId("RockBrasilian");
@@ -360,6 +371,50 @@ void ProcessDialogEvent()
 			sld.LifeDay = 0; // уберем нпс
 			RemoveLandQuestmark_Main(npchar, "Spa_Line");
 			AddLandQuestmark_Main(CharacterFromID("spa_guber"), "Spa_Line");
+		break;
+		//********************************* Квест "Прокажённая" **********************************
+		case "PDM_ONW_Inqizitor_1":
+			dialog.text = StringFromKey("AntonioDeSouza_97", pchar);
+			link.l1 = StringFromKey("AntonioDeSouza_98");
+			link.l1.go = "PDM_ONW_Inqizitor_2";
+			DeleteAttribute(pchar, "questTemp.PDM_ONV_OhotaNaVedmu");
+		break;
+
+		case "PDM_ONW_Inqizitor_2":
+			DialogExit();
+			
+			sld = GetCharacter(CreateCharacterClone(CharacterFromID("Incquisitor_1"), -1));
+			sld.id = "PDM_ONW_Inqizitor";
+			
+			locations[FindLocation("Cuba_jungle_01")].DisableEncounters = true;
+			TavernWaitDateEx(22);
+			DoFunctionReloadToLocation("Cuba_jungle_01", "goto", "goto4", "PDM_ONW_Kino_1");
+		break;
+		//**************************** сдаём зачарованный Дес-Мойнес ********************************
+		case "MCIncq":
+			dialog.text = StringFromKey("Incquistors_dialog_66", pchar);
+			link.l1 = StringFromKey("Incquistors_dialog_67");
+			link.l1.go = "MCIncq_1";
+		break;
+		case "MCIncq_1":
+			dialog.text = StringFromKey("Incquistors_dialog_68");
+			link.l1 = StringFromKey("Incquistors_dialog_69");
+			link.l1.go = "MCIncq_2";
+		break;
+		case "MCIncq_2":
+			dialog.text = StringFromKey("Incquistors_dialog_70", pchar);
+			link.l1 = StringFromKey("Incquistors_dialog_71", pchar);
+			link.l1.go = "MCIncq_3";
+		break;
+		case "MCIncq_3":
+			dialog.text = StringFromKey("Incquistors_dialog_72", pchar);
+			link.l1 = StringFromKey("Incquistors_dialog_73", pchar);
+			link.l1.go = "exit";
+			AddMoneyToCharacter(pchar, 10000);
+			ChangeCharacterReputation(pchar, -10);
+			CloseQuestHeader("MagicCity");
+			RemoveLandQuestmark_Main(CharacterFromID("Santiago_Inquisitor"), "MagicCity");
+			Achievment_Set(ACH_Ya_vizhu_myortvykh_lyudey);
 		break;
 	}
 }

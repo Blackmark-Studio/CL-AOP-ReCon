@@ -27,9 +27,10 @@ void ProcessDialogEvent()
 
 		case "Mne_Jarko_1":
 			dialog.text = StringFromKey("Proklyataya_Jara_3");
-			MakeRandomLinkOrderTwo(link,
-					StringFromKey("Proklyataya_Jara_4"), "Mne_Jarko_2",
-					StringFromKey("Proklyataya_Jara_5"), "exit");
+			link.l1 = StringFromKey("Proklyataya_Jara_4");
+			link.l1.go = "Mne_Jarko_2";
+			link.l2 = StringFromKey("Proklyataya_Jara_5");
+			link.l2.go = "exit";
 			npchar.dialog.filename = "Common_Soldier.c";
 			npchar.dialog.currentnode = "First time";
 			LAi_SetGuardianType(npchar);
@@ -44,9 +45,10 @@ void ProcessDialogEvent()
 
 		case "Mne_Jarko_3":
 			dialog.text = StringFromKey("Proklyataya_Jara_8", GetAddress_Form(NPChar));
-			MakeRandomLinkOrderTwo(link,
-					StringFromKey("Proklyataya_Jara_9"), "Mne_Jarko_4",
-					StringFromKey("Proklyataya_Jara_10"), "exit");
+			link.l1 = StringFromKey("Proklyataya_Jara_9");
+			link.l1.go = "Mne_Jarko_4";
+			link.l2 = StringFromKey("Proklyataya_Jara_10");
+			link.l2.go = "exit";
 			npchar.dialog.filename = "Common_Soldier.c";
 			npchar.dialog.currentnode = "First time";
 		break;
@@ -89,9 +91,10 @@ void ProcessDialogEvent()
 		case "Prines_Vino_2":
 			TakeItemFromCharacter(pchar, "PDM_PJ_Vino");
 			dialog.text = StringFromKey("Proklyataya_Jara_17", pchar.name);
-			MakeRandomLinkOrderTwo(link,
-					StringFromKey("Proklyataya_Jara_18"), "Prines_Vino_Drujba_1",
-					StringFromKey("Proklyataya_Jara_19", pchar, GetFullName(CharacterFromID("FortFrance_tavernkeeper"))), "Prines_Vino_Obman_1");
+			link.l1 = StringFromKey("Proklyataya_Jara_18");
+			link.l1.go = "Prines_Vino_Drujba_1";
+			link.l2 = StringFromKey("Proklyataya_Jara_19", pchar, GetFullName(CharacterFromID("FortFrance_tavernkeeper")));
+			link.l2.go = "Prines_Vino_Obman_1";
 		break;
 
 		case "Prines_Vino_Drujba_1":
@@ -103,17 +106,19 @@ void ProcessDialogEvent()
 
 		case "Prines_Vino_Obman_1":
 			dialog.text = StringFromKey("Proklyataya_Jara_22");
-			MakeRandomLinkOrderTwo(link,
-					StringFromKey("Proklyataya_Jara_23"), "Prines_Vino_Obman_2",
-					StringFromKey("Proklyataya_Jara_24"), "Prines_Vino_Drujba_1");
+			link.l1 = StringFromKey("Proklyataya_Jara_23");
+			link.l1.go = "Prines_Vino_Obman_2";
+			link.l2 = StringFromKey("Proklyataya_Jara_24");
+			link.l2.go = "Prines_Vino_Drujba_1";
 		break;
 
 		case "Prines_Vino_Obman_2":
 			dialog.text = StringFromKey("Proklyataya_Jara_25", GetFullName(CharacterFromID("FortFrance_tavernkeeper")));
 			link.l1 = StringFromKey("Proklyataya_Jara_26");
 			link.l1.go = "A_Eto_eshe_ne_vse";
-			ChangeCharacterReputation(pchar, -4);
-			AddMoneyToCharacter(pchar, 437);
+			ChangeCharacterReputation(pchar, -3);
+			AddMoneyToCharacter(pchar, 1000);
+			AddCharacterExpToSkill(pchar, "Commerce", 30);
 		break;
 
 		case "A_Eto_eshe_ne_vse":
@@ -142,9 +147,10 @@ void ProcessDialogEvent()
 
 		case "Ya_Toje_Hochu_3":
 			dialog.text = StringFromKey("Proklyataya_Jara_31");
-			MakeRandomLinkOrderTwo(link,
-					StringFromKey("Proklyataya_Jara_32", pchar), "Ya_Toje_Hochu_4",
-					StringFromKey("Proklyataya_Jara_33"), "Ya_Toje_Hochu_Proval");
+			link.l1 = StringFromKey("Proklyataya_Jara_32", pchar);
+			link.l1.go = "Ya_Toje_Hochu_4";
+			link.l2 = StringFromKey("Proklyataya_Jara_33");
+			link.l2.go = "Ya_Toje_Hochu_Proval";
 		break;
 
 		case "Ya_Toje_Hochu_Proval":
@@ -205,14 +211,14 @@ void ProcessDialogEvent()
 
 		case "Prines_Rom_4":
 			DialogExit();
-			CloseQuestHeader("PDM_Proklyataya_Jara");
-			AddQuestRecord("PDM_Proklyataya_Jara", "5");
-			AddCharacterExpToSkill(pchar, "Leadership", 170);
-			AddCharacterExpToSkill(pchar, "Commerce", 80);
 
-			sld = CharacterFromID("PDM_PJ_Strajnik_1");
+			AddQuestRecord("PDM_Proklyataya_Jara", "5");
+			AddCharacterExpToSkill(pchar, "Leadership", 150);
+			AddCharacterExpToSkill(pchar, "Sneak", 80);
+
+			sld = CharacterFromID("PDM_PJ_Strajnik_2");
 			LAi_SetActorType(sld);
-			LAi_ActorAnimation(sld, "stun_1", "", 1.0);
+			LAi_ActorAnimation(sld, "drunk", "", 1.0);
 			LAi_group_MoveCharacter(sld, "FRANCE_CITIZENS");
 			sld.City = "FortFrance";
 
@@ -221,7 +227,11 @@ void ProcessDialogEvent()
 			PChar.quest.PDM_PJ_Protrezvel.win_condition = "PDM_PJ_Protrezvel";
 
 			RemoveLandQuestMark_Main(npchar, "PDM_Proklyataya_Jara");
-			Achievment_Set(ACH_Proklyataya_zhara);
+			// Ставим флаг для диалога с Жеромом
+			pchar.questTemp.PDM_PJ_KV = "Sangari_Jerome_Talk";
+
+			// Добавляем маркер на тавернщика
+			AddLandQuestMark_Main(CharacterFromID("FortFrance_tavernkeeper"), "PDM_Proklyataya_Jara");
 		break;
 
 	}

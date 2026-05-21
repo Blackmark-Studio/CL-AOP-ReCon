@@ -56,7 +56,7 @@ Banders_dialog_13 {
 你还真够大胆的。你那朋友还说他那些兄弟很大方呢。
 }
 Banders_dialog_14 {
-好，听着。俺得到确切消息，接下来@<FindDaysString>，会有两艘@<pchar>商船——“@<pchar>”和“@<pchar>”——出现在@<pchar>附近海域，货舱里装得满满的。你可以试着截住它们。
+好，听着。俺得到确切消息，接下来@<FindDaysString>，会有两艘@<pchar>商船——“@<pchar>”和“@<pchar>”——出现在@<pchar>附近海域，货舱里装得满满的@<pchar>。你可以试着截住它们。
 }
 Banders_dialog_15_m {
 太好了！看来俺跟你分这点钱还真值了。
@@ -65,7 +65,7 @@ Banders_dialog_15_f {
 太好了！看来我跟你分的钱没白花。
 }
 Banders_dialog_16 {
-听好了，俺有确切消息，接下来@<FindDaysString>，会有两艘@<pchar>商船——‘@<pchar>’和‘@<pchar>’——在@<pchar>附近海域，货舱都装得满满的。你可以试着拦截他们。
+听好了，俺有确切消息，接下来@<FindDaysString>，会有两艘@<pchar>商船——‘@<pchar>’和‘@<pchar>’——在@<pchar>附近海域，货舱都装得满满的@<pchar>。你可以试着拦截他们。
 }
 Banders_dialog_17_m {
 太好了！看来我跟你分这点钱没白花。

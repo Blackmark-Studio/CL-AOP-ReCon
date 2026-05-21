@@ -28,3 +28,36 @@ No dobrze... to na razie.
 Beliz_Citizen_9 {
 W takim razie inne pytanie.
 }
+Beliz_Citizen_10 {
+Przepraszam, nie widziałeś Wesołej Carli?
+}
+Beliz_Citizen_11 {
+A nie wiesz, gdzie jest Wesoła Carla?
+}
+Beliz_Citizen_12 {
+@<RandPhraseSimple>
+}
+Beliz_Citizen_13 {
+Mówię ci, @<GetAddress_Form> — ta wiedźma urzekła wszystkich w tym mieście! Wszyscy porządni ludzie powinni iść prosto do gubernatora i powiedzieć mu, że to zła wiedźma i należy ją spalić na wolnym ogniu!
+}
+Beliz_Citizen_14 {
+Carla? Co o niej wiesz?
+}
+Beliz_Citizen_15 {
+Ja? Wiem, że jest źródłem grzechu śmiertelnego dla każdego mężczyzny w tym mieście! Musimy położyć kres tej rozpuście!
+}
+Beliz_Citizen_16 {
+Gubernator nakazał mi schwytać tę wiedźmę — chce ją osobiście przesłuchać. Wiesz, gdzie mogę ją znaleźć?
+}
+Beliz_Citizen_17_m {
+Zazwyczaj przyprowadza swoje ofiary do tawerny. Niech Bóg cię błogosławi, kapitanie! Idź tam i wyciągnij tego węża z gniazda! Jesteś mężnym człowiekiem, @<GetAddress_Form>. To, że ta wiedźma chodzi sobie wolno i robi, co chce, to wstyd dla naszego miasta!
+}
+Beliz_Citizen_17_f {
+Zazwyczaj przyprowadza swoje ofiary do tawerny. Niech Bóg cię błogosławi, kapitanie! Idź tam i wyciągnij tego węża z gniazda! Jesteś mężną kobietą, @<GetAddress_Form>. To, że ta wiedźma chodzi sobie wolno i robi, co chce, to wstyd dla naszego miasta!
+}
+Beliz_Citizen_18 {
+Zajmiemy się tą wiedźmą, bez obaw.
+}
+Beliz_Citizen_19 {
+A więc tak. Jesteś jedynym mężczyzną w mieście, który nie korzysta z usług Carli? O, biedaku! Teraz rozumiem, dlaczego brakuje ci poczucia humoru. Ha-ha. Ale muszę przerwać naszą rozmowę — do widzenia.
+}

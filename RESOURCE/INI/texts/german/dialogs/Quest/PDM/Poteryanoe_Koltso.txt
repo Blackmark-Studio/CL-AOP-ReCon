@@ -263,8 +263,11 @@ Poteryanoe_Koltso_69_f {
 Das Leben endet hier nicht, Madame. Ich denke, Sie sollten Ihre Verwandten aufsuchen – ich bin sicher, sie vermissen Sie sehr. Leben Sie wohl.
 }
 Poteryanoe_Koltso_70 {
-Warten Sie, warten Sie, @<GetAddress_Form>. Sie haben sich eine Belohnung verdient. Hier, nehmen Sie 5.000 Münzen und 10 Diamanten. Sie gehören jetzt Ihnen.
+Warten Sie, warten Sie, @<GetAddress_Form>. Sie haben sich eine Belohnung verdient. Nehmen Sie das ganze Geld, das ich bei mir habe, und meinen gesamten Schmuck. Er gehört jetzt Ihnen. Danke, Kapitän. Danke...
 }
 Poteryanoe_Koltso_71 {
 Vielen Dank, gnädige Frau.
+}
+Poteryanoe_Koltso_72 {
+Dieser Ring gehört einer sehr alten Frau, die ihren einzigen Sohn verloren hat... Einer sehr unglücklichen alten Frau, die verrückt geworden ist und dich an deine Mutter erinnert. Und dieser Ring wurde der Leiche ihres Sohnes weggenommen. Ich will ihn nur seiner rechtmäßigen Besitzerin zurückgeben. Überleg doch selbst, wird dir so ein magischer Ring Glück bringen?
 }

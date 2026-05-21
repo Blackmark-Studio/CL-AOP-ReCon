@@ -91,3 +91,15 @@ Nie mam co do tego najmniejszych wątpliwości, wszystko zostanie zrealizowane. 
 Beliz_Mayor_28 {
 Właśnie uratował pan swoje życie i zdrowie. Gratuluję i życzę, by tak pozostało także w przyszłości, señor.
 }
+Beliz_Mayor_29 {
+Przypominam, że prosił pan o przekazanie w ręce sprawiedliwości kobiety powiązanej z morderstwem pana sekretarza, Bartholomewa Olstera.
+}
+Beliz_Mayor_30 {
+Och, tak, otrzymałem list od ojca świętego w sprawie tego diabelskiego stworzenia i jej losu. Dobrze się spisaliście, kapitanie. Z całego serca dziękuję za pomoc w tej sprawie. Przypuszczam, że niełatwo było ją odnaleźć. Oferuję skromną nagrodę za głowę tej wiedźmy – 15 000 piastrów oraz moje osobiste podziękowania.
+}
+Beliz_Mayor_31 {
+Dziękuję, panie gubernatorze! Przyjmuję tę nagrodę. Do widzenia.
+}
+Beliz_Mayor_32 {
+Kapitanie, mówią, że udało wam się schwytać wiedźmę, Wesołą Carlę! Czy to naprawdę prawda?! Niewiarygodne!!
+}

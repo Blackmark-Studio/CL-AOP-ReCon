@@ -162,6 +162,6 @@ void BrokeMasts(ref char, bool thanHalf)
 	for (int i = start; i < end; i++)
 	{
 	    aMast = GetAttributeN(aMasts, i);
-        if (GetAttributeValue(aMast) == "0") SendMessage(pchar, "ll", MSG_SHIP_BROKE_MAST, i);
+        if (GetAttributeValue(aMast) == "0") SendMessage(char, "ll", MSG_SHIP_BROKE_MAST, i);
 	}
 }

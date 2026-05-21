@@ -185,10 +185,10 @@ Jackman_45 {
 So that's how it is... Not the best news... How did it happen?
 }
 Jackman_46_m {
-I killed him in Morgan’s residence... You see, it’s a rather unpleasant story. On Morgan’s orders, I took care of John Avery, but it turned out he was one of Morgan’s trusted men.
+I killed him in Morgan’s residence... You see, it’s a rather unpleasant story. On Goodly’s orders, I took care of John Avery, but it turned out he was one of Morgan’s trusted men.
 }
 Jackman_46_f {
-I killed him in Morgan’s residence... You see, it’s a rather unpleasant story. On his orders, I took care of John Avery, but it turned out he was one of Morgan’s trusted men.
+I killed him in Morgan’s residence... You see, it’s a rather unpleasant story. On Goodly’s orders, I took care of John Avery, but it turned out he was one of Morgan’s trusted men.
 }
 Jackman_47 {
 Avery’s dead too, is he?

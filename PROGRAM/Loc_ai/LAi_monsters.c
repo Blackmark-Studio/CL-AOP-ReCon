@@ -150,8 +150,15 @@ bool LAi_CreateShoreChest(ref location)
 
 		if (!CheckAttribute(location, "shorechest") && idRand(location.id + "_box", 99) < makeint(5 + GetFortuneBonus(2))) // KZ > гадание цыганки за 5к повышает шанс на 40%
 		{
-			string sModel = "chest_"+(idRand(location.id + "sModel", 2)+1);
-			location.num = idRand(location.id + "num", 1)+1;
+			string sModel = "chest_" + (idRand(location.id + "sModel", 2) + 1);
+
+			if (!FindFile("RESOURCE/MODELS/" + location.filespath.models, sModel + ".gm", "*.gm", true))
+			{
+				trace("LAi_CreateShoreChest > Can't find geometry file " + sModel + " in RESOURCE\MODELS\" + location.filespath.models);
+				return false;
+			}
+
+			location.num = idRand(location.id + "num", 1) + 1;
 			location.numbox = "box"+(sti(location.num));
 			location.shorechest = true;
 			location.models.always.chest = sModel;
@@ -164,7 +171,7 @@ bool LAi_CreateShoreChest(ref location)
 		if (CheckAttribute(location, "shorechest")) // есть сундук
 		{
 			DeleteAttribute(location, "box" + location.num + ".NotChest");
-			if (CheckAttribute(location, "chest_date") && GetNpcQuestPastDayParam(location, "chest_date") > 2)
+			if (CheckAttribute(location, "chest_date") && GetNpcQuestPastDayParam(location, "chest_date") > 2) // > TODO > pchar.location != location.id
 			{
 				DeleteAttributeEx(location, "shorechest,shorefill,chest_date,models.always.chest,numbox,num");
 			}
@@ -478,8 +485,8 @@ bool LAi_CreateEncounters(ref location)
 			if(rand(1)) sEncType = "war";
 			
 			//Начинаем перебирать локаторы и логинить фантомов
-			string sModel = "miskito_";
-			if(sEncType == "war") sModel = "canib_";
+			string sModel = "miskito";
+			if(sEncType == "war") sModel = "canib";
 			
 			LAi_grp_alarmactive = false;
 			LAi_group_ClearAllTargets();
@@ -491,10 +498,9 @@ bool LAi_CreateEncounters(ref location)
 			arrayNPCModelHow = 0;
 			for(i = 0; i < num; i++)
 			{
-                chr = GetCharacter(NPC_GenerateCharacterEx(str + i, sModel + (rand(5) + 1), "man", "man", iRank, PIRATE, 1, true, "native"));
-				if(sModel == "miskito_")
-					 SetNPCModelUniq(chr, "miskito", MAN);
-				else SetNPCModelUniq(chr, "canib", MAN);
+                chr = GetCharacter(NPC_GenerateCharacterEx(str + i, sModel + "_" + (rand(5) + 1), "man", "man", iRank, PIRATE, 1, true, "native"));
+				chr.indian = "1";
+				SetNPCModelUniq(chr, sModel, MAN);
                 SetFantomParamFromRank(chr, iRank, true);
                 if (iEncrnd)
                 {
@@ -986,6 +992,7 @@ void LAi_MonkeyLogin(ref location, string group, string locator)
 	if (or(GetTime() < 6.0, GetTime() > 23.0) && CheckCharacterPerk(pchar, "WildCaribbean"))
 	{
 	    chr = LAi_CreateFantomCharacterEx("monkey", "monkey", group, locator);
+		chr.skeleton = "1";
 	    chr.name = FindPersonalName("DeathMonkey_name");
 	    chr.sex = "skeleton";
         LAi_group_MoveCharacter(chr, LAI_GROUP_MONSTERS);
@@ -994,6 +1001,7 @@ void LAi_MonkeyLogin(ref location, string group, string locator)
 	else
 	{
 	    chr = LAi_CreateFantomCharacterEx("koata1", "monkey", group, locator);
+		chr.animal = "1";
 	    chr.name = FindPersonalName("Monkey_name");
 	    LAi_SetHP(chr, 10.0, 10.0); //макаки дохлые
 	    LAi_group_MoveCharacter(chr, LAI_GROUP_ACTOR);

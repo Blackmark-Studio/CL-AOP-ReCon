@@ -243,9 +243,9 @@ void CreateCharacters()
         {
 			rCharacter.reputation = (1 + rand(44) + rand(44));// репа всем горожанам
         }
-        if (CheckAttribute(rCharacter, "Dialog.Filename") && rCharacter.Dialog.Filename == "Common_Shipyard.c")
+		if (HasAttrValue(rCharacter, "Dialog.Filename", "Common_Shipyard.c,Common_Portman.c"))
 		{
-			rCharacter.ShipCostRate = 0.8 + frnd()*0.4;
+			rCharacter.ShipCostRate = 0.8 + frnd() * 0.4;
 		}
         // boal <--
 		rCharacter.FaceGroup = 0;

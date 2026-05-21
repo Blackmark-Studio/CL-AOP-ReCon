@@ -172,7 +172,8 @@ Pir_Line_3_KillLoy.13 {Otra vez persiguiendo. Una vez más. Al menos esta vez s�
 Pir_Line_3_KillLoy.14
 {
 Parece que he dado con el rastro de Low. Según los rumores que he escuchado, barcazas, goletas, luggers y balandros han estado desapareciendo cerca de Cumana. La gente culpa a cierto bergantín. Tengo la sensación de que es Low: el patrón es demasiado familiar. Como un chacal, se aprovecha de los más débiles.
-Parece que tendré que atraer a esta hiena. Para eso, tendré que salir al mar cerca de Cumana en un lugger o un balandro y navegar por la zona un tiempo. Espero de verdad que Low muerda el anzuelo y ataque...
+
+Parece que tendré que atraer a esta hiena. Para hacer esto, necesito zarpar cerca de Cumaná en un barco de una clase similar e intentar navegar solo. Espero de verdad que Low muerda el anzuelo y ataque...
 }
 Pir_Line_3_KillLoy.15
 {
@@ -647,7 +648,7 @@ TheStarsAlignedISS.3 {
 ¡Maldita sea! Después de que Teaser disparó en el sótano, algo explotó... No hay nadie cerca... ¿Cuánto tiempo llevo aquí tirado? Me parte la cabeza... El cuerpo del posadero aún está caliente, así que no debe haber pasado mucho tiempo. Parece que toda la ciudad está despierta afuera—el ruido es impresionante. Tengo que salir a la calle y ver qué hago ahora.
 }
 TheStarsAlignedISS.4 {
-Apenas tengo fuerzas para escribir esta entrada. ¡Malditos cimarrones! Apenas escapamos de las garras de la muerte... Y aun así, salimos vivos y sanos. Aunque la última vez que vi a Teaser no se veía nada bien. No solo físicamente, también mentalmente. Cree que es otra persona y habla como si fuera un soldado. Debería ir a verlo al comedor.
+Apenas tengo fuerzas para escribir esta entrada. ¡Malditos cimarrones! Apenas escapamos de las garras de la muerte... Y aun así, salimos vivos y sanos. Aunque la última vez que vi a Teaser no se veía nada bien. No solo físicamente, también mentalmente. Cree que es otra persona y habla como si fuera un soldado.
 }
 TheStarsAlignedISS.5 {
 Teaser está bastante mal, pero al menos sigue vivo y no está encadenado por la Compañía Neerlandesa de las Indias Occidentales.
@@ -742,7 +743,7 @@ ISS_MainLine.5 {Es hora de visitar al cantinero; creo que por fin está listo.}
 ISS_MainLine.6 {El dueño de la taberna, Hill Brynner, acordó encontrarse conmigo pasada la medianoche en su improvisada bodega. Es una de las cabinas de este mismo barco; para llegar, debo salir a cubierta y dirigirme hacia la popa.}
 ISS_MainLine.7 {Hill Brynner me envió al fluyt 'Fernando Diffindur', que solía ser un visitante frecuente de Teaser Dan. Según el dueño de la taberna, allí podría encontrar algo que demuestre que digo la verdad.}
 ISS_MainLine.8 {Necesito encontrar a un tal André Labor, un carpintero, en la Ciudad. Según Hill Brunner, él fue quien ayudó a Teaser Dan a construir la embarcación que le permitió llegar al continente.}
-ISS_MainLine.9 {Yo @<sSex> con él. André acordó encontrarse conmigo en el camarote del corbeta 'Protector'.}
+ISS_MainLine.9 {Encontré al carpintero y hablé cuidadosamente con él. André acordó encontrarse conmigo en el camarote del corbeta 'Protector'.}
 ISS_MainLine.10 {¡Ese canalla de André Labor trajo a un miliciano para hablar conmigo! Tendré que sacar mi arma. ¡Maldita sea!}
 ISS_MainLine.11
 {
@@ -1035,7 +1036,7 @@ LSC_Ring {El secreto de la 'Santa Lucia'}
 LSC_Ring.1
 {
 Malcolm Fawn, un excontrabandista, me ofreció un viaje al anillo exterior de barcos, donde encontró otra pinaza “sin saquear” y sugirió que revisáramos sus compartimentos en busca de objetos de valor. El problema es que la bodega del barco está ocupada por “cangrejos gigantes”, y Malcolm les tiene miedo. Mi tarea es deshacerme de los cangrejos. ¿Qué podría ser más fácil? Lo que encontremos en el barco lo repartiremos a partes iguales.
-La expedición está prevista para mañana a las 8 a. m. Debo presentarme en la “cubierta inclinada”, el barco semihundido detrás de Port-au-Prince. Desde allí comenzará nuestro viaje hacia el anillo exterior.
+La expedición está prevista para mañana a las 8 a. m. Debo presentarme en la “cubierta inclinada”, el barco semihundido detrás de San Augustine. Desde allí comenzará nuestro viaje hacia el anillo exterior.
 }
 LSC_Ring.2 {He tardado demasiado, y Malcolm Fawn, al perder la esperanza de esperarme, se marchó. Por desgracia, la expedición al anillo exterior queda cancelada...}
 LSC_Ring.3 {¡Nuestra travesía ha comenzado! Zarpamos hacia el anillo exterior. Malcolm me guiará hasta la pinaza, pero tendré que encargarme de los cangrejos por mi cuenta—Fawn no será de ayuda aquí.}

@@ -442,7 +442,8 @@ void ProcessDialogEvent()
 			link.l1 = StringFromKey("AndreLabor_152");
 			link.l1.go = "exit";
 			AddQuestRecord("ISS_MainLine", "9");
-			AddQuestUserData("ISS_MainLine", "sSex", GetSexPhrase("нашёл плотника и аккуратно переговорил", "нашла плотника и аккуратно переговорила"));
+			AddQuestUserData("ISS_MainLine", "sSex", GetSexPhrase("ёл", "ла"));
+			AddQuestUserData("ISS_MainLine", "sSex1", GetSexPhrase("", "а"));
 			pchar.questTemp.LSC = "toProtector";
 			pchar.quest.LSC_enterToProtector.win_condition.l1 = "location";
 			pchar.quest.LSC_enterToProtector.win_condition.l1.location = "ProtectorFisher";

@@ -197,6 +197,8 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 			link.l1 = StringFromKey("Villemstad_Tavern_71", pchar);
 			link.l1.go = "exit";
 			pchar.questTemp.LSC = "toMasterKeys";
+			RemoveLandQuestMark_Main(npchar, "ISS_PoorsMurder");
+			AddLandQuestMark_Main(CharacterFromID("GiveKeyMan"), "ISS_PoorsMurder");
 		break;
 
 		case "MasterKeysNM":

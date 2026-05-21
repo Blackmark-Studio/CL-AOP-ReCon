@@ -271,15 +271,35 @@ void Item_OnPickItem()
 		}
 
 		sItemId = Items[iActiveItem].id;
+		switch (sItemId)
+		{
+			case "key3":
+				sIcon = "Key";
+				sSnd = "interface\itemKey.wav";
+			break;
+			case "migraine_potion":
+				sIcon = "migraine_potion";
+			break;
+			case "herb_matricaria":
+				sIcon = "matricaria";
+				sSnd = "interface\harvestMatricaria.mp3";
+			break;
+			case "herb_zingiber":
+				sIcon = "zingiber";
+				sSnd = "interface\harvestZingiber.mp3";
+			break;
+			case "herb_ginseng":
+				sIcon = "ginseng";
+				sSnd = "interface\harvestGinseng.mp3";
+			break;
+		}
 		sItemName = LanguageConvertString(langFile, Items[iActiveItem].name);
 		// ===> перехват взятия предметов из локатора item на метод обрабоки для квестовых нужд
 		QuestCheckTakeItem(activeLocation, Items[iActiveItem].id);
 		// <===
 	}
-
-	GenerateAndAddItems(pchar, sItemId, 1);
 	SendMessage(rItemModel, "lslff", MSG_MODEL_BLEND, "blenditemlit", 1000, 1.0, 0.0);
-	LogSound_WithNotify(sMsg + " " + sItemName + "!", sSnd, sIcon);
+	TakeNItemsNotification(pchar, GetGeneratedItem(sItemId), 1, sMsg + " " + sItemName + "!", sIcon, sSnd);
 	DeleteAttribute(pchar, "activeItem");
 	LanguageCloseFile(langFile);
 }
@@ -502,7 +522,7 @@ void Items_ShowItemNew(string locator, int _itemN)
 		if (TestMode())
 			trace("Items_ShowItemNew: showing item at "+al.x+", "+al.y+", "+al.z);
 
-		if (CheckCharacterPerk(pchar, "HawkEye") && !GetBan("HerbPickup"))
+		if (!GetBan("HerbPickup") && GetOfficersPerkUsing(pchar, "HawkEye", true))
 		{
 			float x, y, z, h, up = 0.1;
 			x = al.x;
@@ -778,7 +798,7 @@ void Box_EnterToLocator(aref loc, string locName)
 			iDiff = makeint(idRand(loc.id +locName +"r1", iDiff)/4.0 +idRand(loc.id +locName +"r2", iDiff)/4.0
 			 	+idRand(loc.id +locName +"r3", iDiff)/4.0 +idRand(loc.id +locName +"r4", iDiff)/4.0 -1);
 			int iPrec = GetCharacterSPECIAL(pchar, SPECIAL_P)*10;
-			if (CheckCharacterPerk(pchar, "HawkEye")) iPrec += 10;
+			if (GetOfficersPerkUsing(pchar, "HawkEye", true)) iPrec += 10;
 			//trace(locName +"  realDiff = " +loc.(locName).difficult +"  randDiff = " +iDiff +" precision = " +iPrec);
 			Log_TestInfo(locName +"  realDiff = " +loc.(locName).difficult +"  randDiff = " +iDiff +" precision = " +iPrec);
             if (iDiff > iPrec)

@@ -1051,7 +1051,10 @@ Wir haben doch schon alles besprochen, oder?
 pgg_dialog_292 {
 @<RandPhraseSimple>
 }
-pgg_dialog_293 {
+pgg_dialog_293_m {
+Geh deinen eigenen Weg, ich habe zu tun.
+}
+pgg_dialog_293_f {
 Geh deinen eigenen Weg, ich habe zu tun.
 }
 pgg_dialog_294 {
@@ -1244,13 +1247,13 @@ pgg_dialog_347 {
 In @<FindDaysString> ist die Karawane weg, und wir können sie nicht mehr einholen.
 }
 pgg_dialog_348 {
-Wir haben genau @<FindDaysString> Tage, um sie zu erledigen und die Beute zu holen!
+Wir haben genau @<FindDaysString>, um sie zu erledigen und die Beute zu holen!
 }
 pgg_dialog_349 {
 @<RandPhraseSimple>
 }
 pgg_dialog_350 {
-Uns stehen @<FindDaysString> Tage für die gesamte Operation zur Verfügung.
+Uns stehen @<FindDaysString> für die gesamte Operation zur Verfügung.
 }
 pgg_dialog_351 {
 Wir sollten uns beeilen, @<PChar>. Uns bleiben nur noch @<FindDaysString>.
@@ -1526,7 +1529,7 @@ pgg_dialog_427 {
 Gut gemacht, Captain! Die Beute beträgt @<PChar> @<PChar>.
 }
 pgg_dialog_428 {
-Mein Anteil
+Mein Anteil:
 }
 pgg_dialog_429 {
 Der Anteil, der meinem Schiff zugeteilt wurde —

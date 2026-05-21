@@ -674,6 +674,7 @@ void FaceMaker(aref rCharacter)
 		case "Tichingitu"		:  		rCharacter.FaceId = 2013; 	break; // Тиничгиту
 		// Зачарованный город
 		case "Danielle_Sheppard":		rCharacter.FaceId = 2014; 	break; // Даниэль Шеппард
+		case "Danielle_Sheppard_D":		rCharacter.FaceId = 2014; 	break; // Даниэль Шеппард проклятая
 		// Остров Справедливости
 		case "Workman"			:		rCharacter.FaceId = 2015; 	break; // Джон Уоркман
 		
@@ -758,6 +759,7 @@ void FaceMaker(aref rCharacter)
 		
 		// Летучий Голландец
 		case "skeletcap"		:		rCharacter.FaceId = 2231; 	break; // главарь скелетов
+		case "VanderDecken"		:		rCharacter.FaceId = 2232; 	break; // Ван дер Деккен
 		
 		// Синяя Птица
 		case "Pasquale"			:		rCharacter.FaceId = 2236; 	break; // Паскаль

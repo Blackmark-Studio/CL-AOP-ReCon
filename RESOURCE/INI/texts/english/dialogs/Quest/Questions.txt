@@ -494,7 +494,7 @@ Questions_140 {
 No, I don't think so...
 }
 Questions_141 {
-This is a statue that grants an extraordinary ability to improve ship repairs. It’s hidden in a bay near Portobelo. The bay is called Chiriquí Lagoon. Search the area carefully, and don’t be afraid to get your feet wet. Good luck, Captain!
+This is a carpenter's tool chest that once made ship repairs far more efficient. It was buried in a cove near Portobelo — the Chiriqui Lagoon. Search the area carefully and don't be afraid to get your boots wet. Perhaps some of these fine tools are still in working order... Good luck, Captain!
 }
 Questions_142 {
 You know, this is actually a really handy thing for a captain. Thank you.

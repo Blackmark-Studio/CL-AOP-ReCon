@@ -6,6 +6,9 @@
 int nCurScrollOfficerNum;
 string sPrevChar = "";
 
+string arPIRATES[2];	// > массив значений PIRATES при заходе в интерфейс
+bool bFreePirates = false;	// > есть/нет свободные очки PIRATES при заходе в интерфейс
+
 void InitInterface(string iniName)
 {
     xi_refCharacter = pchar;
@@ -57,6 +60,14 @@ void InitInterface(string iniName)
     HideSkillChanger();
 	SetAlertMarks(xi_refCharacter);
 	sPrevChar = pchar.id;
+
+	for (int i = 1; i <= 7; i++)
+	{
+		SetArraySize(&arPIRATES, i);
+		arPIRATES[i - 1] = GetCharacterSPECIALSimple(pchar, GetSkillNameByIdx(i + 14));
+	}
+
+	bFreePirates = sti(xi_refCharacter.skill.FreeSPECIAL) > 0;
 }
 
 void ProcessExitCancel()
@@ -545,7 +556,6 @@ void FillSkillTables()
 	if (sti(xi_refCharacter.Skill.FreeSPECIAL) > 0)
 	{
 		SetFormatedText("STR_1", XI_ConvertString("Characteristics") + " - " + xi_refCharacter.Skill.FreeSPECIAL);
-		
     }
     else
     {
@@ -921,15 +931,15 @@ void SetSkillArrows()
             SetNodeUsing("B_SKILLUP",  true);
         }
 	}
-	ok = sti(xi_refCharacter.skill.freeskill) > 0 || sti(xi_refCharacter.skill.FreeSPECIAL) > 0;
+	ok = bFreePirates || sti(xi_refCharacter.skill.FreeSPECIAL) > 0;
 	if (ok && CurTable == "TABLE_SPECIAL")
 	{
-	    if (GetSkillValue(xi_refCharacter, SPECIAL_TYPE, GameInterface.(CurTable).(CurRow).UserData.ID) > 1)
+	    if (GetSkillValue(xi_refCharacter, SPECIAL_TYPE, GameInterface.(CurTable).(CurRow).UserData.ID) > sti(arPIRATES[iSelected - 1]))
         {
 			SendMessage(&GameInterface,"lsllllll", MSG_INTERFACE_MSG_TO_NODE,"B_SKILLDown",0, 280, 91 + 25 * (iSelected - 1), 312, 91 + 25 + 25 * (iSelected - 1), 0);
 			SetNodeUsing("B_SKILLDown", true);
         }
-        if (GetSkillValue(xi_refCharacter, SPECIAL_TYPE, GameInterface.(CurTable).(CurRow).UserData.ID) < SPECIAL_MAX)
+        if (sti(xi_refCharacter.skill.FreeSPECIAL) > 0 && GetSkillValue(xi_refCharacter, SPECIAL_TYPE, GameInterface.(CurTable).(CurRow).UserData.ID) < SPECIAL_MAX)
         {
 			SendMessage(&GameInterface,"lsllllll", MSG_INTERFACE_MSG_TO_NODE,"B_SKILLUP",0, 307, 91 + 25 * (iSelected - 1), 339, 91 + 25 + 25 * (iSelected - 1), 0);
             SetNodeUsing("B_SKILLUP",  true);
@@ -1238,7 +1248,7 @@ void AcceptAddOfficer()
 	    	    PlaceCharacter(rChar, "goto", "random_must_be_near");
 	    	}
             // TO_DO: В резиденциях при назначении абордажником только что снятого наместника
-	    	LAi_tmpl_SetFollow(rChar, GetMainCharacter(), -1.0);
+	    	LAi_tmpl_SetFollow(rChar, pchar, -1.0);
     	}
 		FillCharactersScroll();
 		GameInterface.CHARACTERS_SCROLL.current = iCurrentNode;
@@ -1326,7 +1336,7 @@ void HideSkillChanger()
 void IncreaseSkill(int _add)
 {
 	int     iValue;
-	string  sSkillName;
+	string  sSkillName, sRow = "tr" + iSelected;
 
     sSkillName = GameInterface.(CurTable).(CurRow).UserData.ID;
     if (CurTable != "TABLE_SPECIAL")
@@ -1353,6 +1363,11 @@ void IncreaseSkill(int _add)
 	    if (_add > 0)
 	    {
 	        iValue = AddSPECIALValue(xi_refCharacter, sSkillName, _add);
+			if (iValue > sti(arPIRATES[iSelected - 1]))
+			{
+				GameInterface.TABLE_SPECIAL.(sRow).td2.color = argb(255, 218, 165, 32);
+				GameInterface.TABLE_SPECIAL.(sRow).td4.color = argb(255, 255, 215, 0);
+			}
 			xi_refCharacter.skill.FreeSPECIAL = sti(xi_refCharacter.skill.FreeSPECIAL) - _add;
 	    }
 	    else return;
@@ -1365,7 +1380,7 @@ void IncreaseSkill(int _add)
 void DecreaseSkill(int _add)
 {
 	int     iValue;
-	string  sSkillName;
+	string  sSkillName, sRow = "tr" + iSelected;
 
     sSkillName = GameInterface.(CurTable).(CurRow).UserData.ID;
     if (CurTable != "TABLE_SPECIAL")
@@ -1390,6 +1405,11 @@ void DecreaseSkill(int _add)
 	    if (_add > 0)
 	    {
 	        iValue = AddSPECIALValue(xi_refCharacter, sSkillName, -_add);
+			if (iValue <= sti(arPIRATES[iSelected - 1]))
+			{
+				GameInterface.TABLE_SPECIAL.(sRow).td2.color = argb(255, 255, 255, 255);
+				GameInterface.TABLE_SPECIAL.(sRow).td4.color = argb(255, 255, 255, 255);
+			}
 			xi_refCharacter.skill.FreeSPECIAL = sti(xi_refCharacter.skill.FreeSPECIAL) + _add;
 	    }
 	    else return;
@@ -1457,7 +1477,7 @@ void FillPerksTable(string _type, bool _refresh)
 				else
 				{
 					icoGroup = "PERK_DISABLE";
-					if (and(xi_refCharacter.id == pchar.id, IsOfficersPerkAcquired(pchar, perkName)) || and(perkName == "Medic", GetOfficersPerkUsing(xi_refCharacter, "PersonalCare")))
+					if (and(xi_refCharacter.id == pchar.id, IsOfficersPerkAcquired(pchar, perkName)) || and(perkName == "Medic", GetOfficersPerkUsing(xi_refCharacter, "PersonalCare", false)))
 					{   // есть у офа, но нет у ГГ
 						iColor = argb(255,196,255,196);
 					}

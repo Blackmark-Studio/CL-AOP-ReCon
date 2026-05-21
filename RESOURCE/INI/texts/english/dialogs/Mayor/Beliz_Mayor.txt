@@ -91,3 +91,15 @@ Not for a second do I doubt that all this will come to pass. I've heard the tale
 Beliz_Mayor_28 {
 You’ve just saved your life and health. Congratulations, and may you stay well in the future too, señor.
 }
+Beliz_Mayor_29 {
+I remind you that you asked to deliver to justice the woman connected to the murder of your secretary, Bartholomew Olster.
+}
+Beliz_Mayor_30 {
+Oh, yes, I received a letter from the Holy Father regarding this devilish creature and her fate. You have done well, Captain. I thank you from the bottom of my heart for your help in this matter. I imagine it was no easy task to find her. I offer a modest reward for the head of this witch — 15,000 piastres and my personal gratitude.
+}
+Beliz_Mayor_31 {
+Thank you, Governor! I accept this reward. Goodbye.
+}
+Beliz_Mayor_32 {
+Captain, they say you managed to catch the witch, Merry Carla! Is that really true?! Incredible!!
+}

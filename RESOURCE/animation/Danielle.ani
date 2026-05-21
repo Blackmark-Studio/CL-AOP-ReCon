@@ -7161,3 +7161,49 @@ data = "Turn speed", "5.5"
 	speed = 1.0
 	loop = false
 	data = "Blend time", "0.2"		; sec
+
+;=============================Анимации сцены с сокровищами===============================
+;ГГ стоит перед горой золота - диалог
+[gold_1_1]
+	start_time = 22182
+	end_time = 22426
+	speed = 2.0
+	type = normal
+	loop = true
+	data = "Blend time", "0.1"		; sec
+
+;ГГ смотрит, как офицер ложится на гору золота
+[gold_1_2]
+	start_time = 22426
+	end_time = 22915
+	speed = 2.0
+	type = normal
+	loop = false
+	data = "Blend time", "0.1"		; sec
+
+;Диалог ГГ с лежащим офицером
+[gold_1_3]
+	start_time = 22915
+	end_time = 23195
+	speed = 1.3
+	type = normal
+	loop = true
+	data = "Blend time", "0.1"		; sec
+
+;ГГ ложится рядом
+[gold_1_4]
+	start_time = 23195
+	end_time = 23402
+	speed = 2.0
+	type = normal
+	loop = false
+	data = "Blend time", "0.1"		; sec
+
+;Диалог с рядом лежащим офицером
+[gold_1_5]
+	start_time = 23402
+	end_time = 23874
+	speed = 2.0
+	type = normal
+	loop = true
+	data = "Blend time", "0.1"		; sec

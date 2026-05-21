@@ -45,6 +45,8 @@ void ProcessDialogEvent()
 			NPChar.lifeDay = 0;
 			LAi_CharacterDisableDialog(npchar);
 			DialogExit();
+			RemoveLandQuestmark_Main(npchar, "Romantic_Line");
+			RemoveMapQuestMark("Pirates_town", "Romantic_Line");
 		break;
 
 		case "M_exit":

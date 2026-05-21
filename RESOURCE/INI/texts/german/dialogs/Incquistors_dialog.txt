@@ -277,3 +277,15 @@ Vielen Dank, Eure Heiligkeit!
 Incquistors_dialog_73_f {
 Ich danke Ihnen von Herzen, Eure Heiligkeit!
 }
+Incquistors_dialog_74 {
+Heiliger Vater, ich handle im Auftrag des Gouverneurs von Belize und spüre eine Hexenmeisterin auf. Ich weiß, dass hier in Santiago eine Hexe namens Carla, eine ehemalige Hafenprostituierte, in der Taverne arbeitet. Mit ihrer dunklen Kunst hat sie bereits zwei Menschen getötet – Kapitän Miguel Cuenda und den guten Hidalgo Bartholomew, der starb, bevor er bereuen konnte. Er war ein Diener des Gouverneurs von Belize. Ich bete zu Gott, dass die Heilige Inquisition sie für ihre sündhaften Taten bestraft.
+}
+Incquistors_dialog_75_m {
+Ah, möge deine Seele für deine rechtschaffene Tat auf ewig gesegnet sein, mein Sohn. Wir werden uns um diese Hexe kümmern. Dein Eifer wird mit meinem persönlichen Segen belohnt.\nZudem, mein Sohn, wirst du persönlich miterleben, wie die Hexenbrut im heiligen Feuer der Inquisition verbrennt.
+}
+Incquistors_dialog_75_f {
+Ah, möge deine Seele für deine rechtschaffene Tat auf ewig gesegnet sein, meine Tochter. Wir werden uns um diese Hexe kümmern. Dein Eifer wird mit meinem persönlichen Segen belohnt.\nZudem, meine Tochter, wirst du persönlich miterleben, wie die Hexenbrut im heiligen Feuer der Inquisition verbrennt.
+}
+Incquistors_dialog_76 {
+Es wäre mir eine Ehre, heiliger Vater.
+}

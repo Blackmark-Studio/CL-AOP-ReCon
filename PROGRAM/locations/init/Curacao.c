@@ -684,7 +684,7 @@ int LocationInitCuracao(int n)
 
     locations[n].id = "Villemstad_hall";
     locations[n].id.label = "Townhall";
-    locations[n].image = "loading\inside\hallresidence.tga";
+    locations[n].image = "loading\inside\Residence06.tga";
     //Town sack
     locations[n].townsack = "Villemstad";
     locations[n].lockWeather = "Inside";
@@ -756,7 +756,7 @@ int LocationInitCuracao(int n)
 
     locations[n].id = "Villemstad_townhall";
     locations[n].id.label = "Townhall";
-    locations[n].image = "loading\inside\residence.tga";
+    locations[n].image = "loading\inside\Residence07.tga";
     //Town sack
     locations[n].townsack = "Villemstad";
     locations[n].lockWeather = "Inside";
@@ -799,7 +799,7 @@ int LocationInitCuracao(int n)
     locations[n].id = "Villemstad_townhall2";
     locations[n].id.label = "Townhall";
     locations[n].filespath.models = "locations\inside\Residence02";
-    locations[n].image = "loading\inside\residence.tga";
+    locations[n].image = "loading\inside\Residence02.tga";
     //Town sack
     locations[n].townsack = "Villemstad";
     locations[n].lockWeather = "Inside";
@@ -1346,20 +1346,19 @@ int LocationInitCuracao(int n)
     locations[n].reload.l3.disable = true; //Закрыто, типа там ещё много всякого, но нас туды не пускают
 
     locations[n].reload.l4.name = "reload4";
-    locations[n].reload.l4.go = "Villemstad_houseH2";
+    locations[n].reload.l4.go = "Villemstad_Residence_GVIK";
     locations[n].reload.l4.emerge = "reload1";
     locations[n].reload.l4.autoreload = "0";
     locations[n].reload.l4.label = "residence";
-    locations[n].reload.l4.disable = true; //закрыто до нужного момента, так как должен сидеть шеф, а шефа нет
     LAi_LocationFightDisable(&locations[n], true); //в ГВИК драться нельзя
     n = n + 1;
 
     //////////////////////////////////////////////////////////////////////////////////////////////////////
     // Офис представителя Голландской Вест-Индской компании
     //////////////////////////////////////////////////////////////////////////////////////////////////////
-    locations[n].id = "Villemstad_houseH2";
+    locations[n].id = "Villemstad_Residence_GVIK";
     locations[n].id.label = "Townhall";
-    locations[n].image = "loading\inside\smallresidence.tga";
+    locations[n].image = "loading\inside\Residence08.tga";
     //Town sack
     locations[n].townsack = "Villemstad";
     locations[n].lockWeather = "Inside";
@@ -1369,20 +1368,20 @@ int LocationInitCuracao(int n)
     locations[n].islandId = "Curacao";
     locations[n].noFight = true; //до поры не даем тут драться
     //Models
-    locations[n].filespath.models = "locations\inside\SmallResidence";
+    locations[n].filespath.models = "locations\inside\Residence08";
     //Always
-    locations[n].models.always.locators = "SmallResidence_locators";
-    locations[n].models.always.house = "SmallResidence";
+    locations[n].models.always.locators = "Res08_l";
+    locations[n].models.always.house = "Res08";
     locations[n].models.always.house.level = 65538;
-    locations[n].models.always.window = "SmallResidence_windows";
+    locations[n].models.always.window = "Res08_w";
     locations[n].models.always.window.tech = "LocationWindows";
     locations[n].models.always.window.level = 65539;
     locations[n].models.always.back = "..\inside_back";
     locations[n].models.always.back.level = 65529;
     //Day
-    locations[n].models.day.charactersPatch = "SmallResidence_patch";
+    locations[n].models.day.charactersPatch = "Res08_p";
     //Night
-    locations[n].models.night.charactersPatch = "SmallResidence_patch";
+    locations[n].models.night.charactersPatch = "Res08_p";
     //Environment
     locations[n].environment.weather = "true";
     locations[n].environment.sea = "false";
@@ -1391,10 +1390,13 @@ int LocationInitCuracao(int n)
     locations[n].reload.l1.go = "GVIK";
     locations[n].reload.l1.emerge = "reload4";
     locations[n].reload.l1.autoreload = "0";
-    locations[n].reload.l1.label = "Street";
-    locations[n].locators_radius.box.box1 = 1.4;
-    locations[n].locators_radius.randitem.randitem1 = 1.0;
-    locations[n].locators_radius.item.item1 = 1.0;
+    locations[n].reload.l1.label = "GWIKshort";
+    locations[n].reload.l2.name = "reload2";
+    locations[n].reload.l2.go = "GVIK";
+    locations[n].reload.l2.emerge = "reload3";
+    locations[n].reload.l2.autoreload = "0";
+    locations[n].reload.l2.label = "GWIKshort";
+    locations[n].reload.l2.disable = true; //Закрыто, типа там ещё много всякого, но нас туды не пускают
     n = n + 1;
 
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -1551,7 +1553,7 @@ int LocationInitCuracao(int n)
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     locations[n].id = "Smallhome_K2";
     locations[n].id.label = "House";
-    locations[n].image = "loading\inside\smallhouse.tga";
+    locations[n].image = "loading\inside\Smallhome.tga";
     locations[n].MustSetReloadBack = true;
     //Town sack
     locations[n].townsack = "Villemstad";
@@ -1637,7 +1639,7 @@ int LocationInitCuracao(int n)
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     locations[n].id = "Vil_Hut3";
     locations[n].id.label = "House";
-    locations[n].image = "loading\inside\smallhouse.tga";
+    locations[n].image = "loading\inside\Hut3.tga";
     locations[n].MustSetReloadBack = true;
     //Town sack
     locations[n].townsack = "Villemstad";
@@ -1730,7 +1732,7 @@ int LocationInitCuracao(int n)
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     locations[n].id = "Vil_ResidencePKM";
     locations[n].id.label = "Residence";
-    locations[n].image = "loading\inside\BigHouse05.tga";
+    locations[n].image = "loading\inside\pirateresidence01.tga";
     //locations[n].MustSetReloadBack = true;
     //Town sack
     locations[n].townsack = "Villemstad";
@@ -1766,11 +1768,11 @@ int LocationInitCuracao(int n)
     n = n + 1;
 
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    // Средний дом 9 с ретекстуром
+    // Средний дом 8 (9 с заменённой стенкой)
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     locations[n].id = "Vil_MH9_2";
     locations[n].id.label = "House";
-    locations[n].image = "loading\inside\mediumhouse10.tga";
+    locations[n].image = "loading\inside\mediumhouse08.tga";
     locations[n].MustSetReloadBack = true;
     //Town sack
     locations[n].townsack = "Villemstad";
@@ -1780,7 +1782,7 @@ int LocationInitCuracao(int n)
     locations[n].fastreload = "Villemstad";
     locations[n].islandId = "Curacao";
     //Models
-    locations[n].filespath.models = "locations\inside\mediumhouse09_2";
+    locations[n].filespath.models = "locations\inside\mediumhouse08";
     //Always
     locations[n].models.always.house = "mediumhouse09";
     locations[n].models.always.house.level = 65538;
@@ -1996,7 +1998,7 @@ int LocationInitCuracao(int n)
     /////////////////////////////////////////////////////////////////////////////////////////////
     locations[n].id = "Villemstad_KeepersHouse";
     locations[n].id.label = "KeepersHouse";
-    locations[n].image = "loading\inside\mediumhouse10.tga";
+    locations[n].image = "loading\inside\SmallHouse_inside.tga";
     //Town sack
     locations[n].townsack = "Villemstad";
     locations[n].lockWeather = "Inside";
@@ -2971,7 +2973,7 @@ int LocationInitCuracao(int n)
     locations[n].id = "Villemstad_Plantation_S2";
     locations[n].filespath.models = "locations\inside\Hut1_KNS";
     locations[n].id.label = "House";
-    locations[n].image = "loading\inside\littlehut1.tga";
+    locations[n].image = "loading\inside\littlehut.tga";
     //Town sack
     locations[n].townsack = "Villemstad";
     locations[n].islandId = "Curacao";
@@ -3006,7 +3008,7 @@ int LocationInitCuracao(int n)
     ///////////////////////// Бытовка /////////////////////////
     locations[n].id = "Villemstad_Plantation_G1";
     locations[n].id.label = "House";
-    locations[n].image = "loading\inside\mediumhouse10.tga";
+    locations[n].image = "loading\inside\mediumhouse05.tga";
     //Town sack
     locations[n].townsack = "Villemstad";
     locations[n].islandId = "Curacao";
@@ -3045,7 +3047,7 @@ int LocationInitCuracao(int n)
     ///////////////////////// Бытовка /////////////////////////
     locations[n].id = "Villemstad_Plantation_G2";
     locations[n].id.label = "House";
-    locations[n].image = "loading\inside\mediumhouse10.tga";
+    locations[n].image = "loading\inside\mediumhouse09.tga";
     //Town sack
     locations[n].townsack = "Villemstad";
     locations[n].islandId = "Curacao";
@@ -3085,7 +3087,7 @@ int LocationInitCuracao(int n)
     locations[n].id = "Villemstad_Plantation_G3";
     locations[n].filespath.models = "locations\inside\Hut5";
     locations[n].id.label = "House";
-    locations[n].image = "loading\inside\hibara.tga";
+    locations[n].image = "loading\inside\Hut5.tga";
     //Town sack
     locations[n].townsack = "Villemstad";
     locations[n].islandId = "Curacao";
@@ -3116,7 +3118,7 @@ int LocationInitCuracao(int n)
     locations[n].id = "Villemstad_Plantation_G4";
     locations[n].filespath.models = "locations\inside\Hut4";
     locations[n].id.label = "House";
-    locations[n].image = "loading\inside\littlehut1.tga";
+    locations[n].image = "loading\inside\Hut4.tga";
     //Town sack
     locations[n].townsack = "Villemstad";
     locations[n].islandId = "Curacao";
@@ -3146,7 +3148,7 @@ int LocationInitCuracao(int n)
     locations[n].id = "Villemstad_Plantation_G5";
     locations[n].filespath.models = "locations\inside\Hut4";
     locations[n].id.label = "House";
-    locations[n].image = "loading\inside\littlehut1.tga";
+    locations[n].image = "loading\inside\Hut4.tga";
     //Town sack
     locations[n].townsack = "Villemstad";
     locations[n].islandId = "Curacao";
@@ -3177,7 +3179,7 @@ int LocationInitCuracao(int n)
     locations[n].id = "Villemstad_Plantation_G7";
     locations[n].filespath.models = "locations\inside\Hut5";
     locations[n].id.label = "House";
-    locations[n].image = "loading\inside\hibara.tga";
+    locations[n].image = "loading\inside\Hut5.tga";
     //Town sack
     locations[n].townsack = "Villemstad";
     locations[n].islandId = "Curacao";
@@ -3208,7 +3210,7 @@ int LocationInitCuracao(int n)
     ///////////// Дом из трёх комнат (комнаты 1, 2) //////////////
     locations[n].id = "Villemstad_Plantation_F1";
     locations[n].id.label = "House";
-    locations[n].image = "loading\inside\largehouse02.tga";
+    locations[n].image = "loading\inside\mediumhouse11.tga";
     //Town sack
     locations[n].townsack = "Villemstad";
     locations[n].islandId = "Curacao";

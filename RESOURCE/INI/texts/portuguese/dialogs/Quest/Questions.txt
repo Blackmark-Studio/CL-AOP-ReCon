@@ -494,7 +494,7 @@ Questions_140 {
 Não, acho que não...
 }
 Questions_141 {
-Esta é uma estátua que concede uma habilidade extraordinária para melhorar os reparos do navio. Ela está escondida em uma baía perto de Portobelo. A baía se chama Chiriquí Lagoon. Procure bem pela área e não tenha medo de se molhar. Boa sorte, Capitão!
+Este é um baú de ferramentas de carpinteiro que outrora permitia reparar navios com muito mais eficiência. Foi enterrado em uma enseada perto de Portobelo — a Chiriqui Lagoon. Vasculhe tudo cuidadosamente e não tenha medo de molhar as botas. Quem sabe parte dessas belas ferramentas ainda esteja em condições de uso... Boa sorte, Capitão
 }
 Questions_142 {
 Sabe, isso é realmente muito útil para um capitão. Obrigado.

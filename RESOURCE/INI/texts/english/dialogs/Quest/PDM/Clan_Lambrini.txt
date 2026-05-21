@@ -1,0 +1,490 @@
+Clan_Lambrini_1_m {
+Hey, pal! This is my table, and I'm not looking for company.
+}
+Clan_Lambrini_1_f {
+Hey, girl! This is my table, and I'm not looking for company.
+}
+Clan_Lambrini_2 {
+But you've already FOUND it. So let's talk.
+}
+Clan_Lambrini_3 {
+I don't want to disturb you. Goodbye.
+}
+Clan_Lambrini_4 {
+What? You dare to disturb Octavio Lambrini? Who do you think you are?
+}
+Clan_Lambrini_5 {
+Ignoscite mihi. Allow me to introduce myself—@<GetFullName>. Captain, noble rogue, doctor, and the scourge of all Spaniards. And the surname 'Lambrini' means nothing to me.
+}
+Clan_Lambrini_6 {
+My name is @<GetFullName>. I grew up in a respected family of a Royal Guard officer during the final years of King Louis XIII's reign. But, as you can see, I traded Parisian manners for the jungles of this archipelago in search of real life. And the 'Lambrini' family is not on my list of honorable gentlemen.
+}
+Clan_Lambrini_7 {
+I am @<GetFullName>. Once I dreamed of honest trade, but local realities taught me that a blade and cannons persuade much better than boastful speeches. And your surname 'Lambrini' comes to mind only in fragments.
+}
+Clan_Lambrini_8 {
+Before you is @<GetFullName>. I wrote the laws by which the Brethren of the Coast live, and my scars are the best proof that I do not fear danger. But who 'Lambrini' is remains a mystery to me.
+}
+Clan_Lambrini_9 {
+My name is @<GetFullName>. I value knowledge and the power it brings, and I'm here to take everything from this life. Your surname, Lambrini, is clearly not among the knowledge that holds value for me.
+}
+Clan_Lambrini_10_m {
+Take it easy! My name is @<GetFullName>. Captain, noble rogue, and the one who sent a certain black ghost ship to the bottom. And the name 'Lambrini' means nothing to me.
+}
+Clan_Lambrini_10_f {
+Take it easy! My name is @<GetFullName>. Captain, noble rogue, and the one who sent a certain black ghost ship to the bottom. And the name 'Lambrini' means nothing to me.
+}
+Clan_Lambrini_11_m {
+My name is @<GetFullName>—I am the son of the famous pirate, Nicholas Sharp. And the name 'Lambrini' means nothing to me.
+}
+Clan_Lambrini_11_f {
+My name is @<GetFullName>—I am the daughter of the famous pirate, Nicholas Sharp. And the name 'Lambrini' means nothing to me.
+}
+Clan_Lambrini_12 {
+My name is @<GetFullName>. Everyone knows that I am a man of honor and can be trusted. And the name 'Lambrini' means nothing to me.
+}
+Clan_Lambrini_13 {
+My name is @<GetFullName>. And at the mere mention of my name, everyone starts to tremble and scatter in all directions. And the name 'Lambrini' means nothing to me.
+}
+Clan_Lambrini_14_m {
+I am @<pchar>, captain and mercenary. And I don't seem to recall you.
+}
+Clan_Lambrini_14_f {
+I am @<pchar>, captain and mercenary. And I don't seem to recall you.
+}
+Clan_Lambrini_15 {
+Ah, so you're that same doctor who saved the town from the Spaniards and escaped the Barbados plantations from Colonel Bishop! Incredible! If you're really as good as they say, then we can have a chat.
+}
+Clan_Lambrini_16 {
+The son of a French Royal Guard officer in my parts? Of course I've heard of you—weren't you the one who emerged victorious in that duel at just 14 years old? Well, adventurers of your caliber interest me.
+}
+Clan_Lambrini_17 {
+A young nobleman who traded merchant scales for a boarding cutlass? Bold. I've heard of you and your successes. I suppose we'll have something to talk about.
+}
+Clan_Lambrini_18 {
+Well, I'll be damned! Black Bart himself?! And where on earth have you been hiding? Oh well, we all need to lie low sometimes... Take a seat, Bart.
+}
+Clan_Lambrini_19 {
+That same female captain who survived Beltrop's betrayal and slipped from the tight clutches of the Mask? I suppose we can have a chat.
+}
+Clan_Lambrini_20 {
+A person who believes that knowledge and capability are the path to true power. Your passion for wealth and sharp intellect are known even to me. Let's discuss business.
+}
+Clan_Lambrini_21 {
+The great @<GetFullName> inside Trinidad? Shiver me timbers! If you're really as good as the legends say, then we can have a chat.
+}
+Clan_Lambrini_22_m {
+You say the blood of the famous Nicholas Sharp runs in your veins? Not bad! I knew your father long ago, back when the Lambrini had to move to this island. Your father was a good man. If you're even half as good as he was, then we can have a chat.
+}
+Clan_Lambrini_22_f {
+You say the blood of the famous Nicholas Sharp runs in your veins? Not bad! I knew your father long ago, back when the Lambrini had to move to this island. Your father was a good man. If you're even half as good as he was, then we can have a chat.
+}
+Clan_Lambrini_23 {
+@<GetFullName>? Yes, I've heard of you. If you're really as good as they say, then we can have a chat.
+}
+Clan_Lambrini_24 {
+What do you do?
+}
+Clan_Lambrini_25_m {
+That's your problem, boy. The Lambrini family is well known on these islands. You'd better stay away from us.
+}
+Clan_Lambrini_25_f {
+That's your problem, girl. The Lambrini family is well known on these islands. You'd better stay away from us.
+}
+Clan_Lambrini_26_m {
+Alright, I'll come back later when I'm more well-known. (Low or high reputation required)
+}
+Clan_Lambrini_26_f {
+Alright, I'll come back later when I'm more well-known. (Low or high reputation required)
+}
+Clan_Lambrini_27 {
+My family and I do business all across the Caribbean archipelago. Our profits are large because we avoid paying burdensome taxes on our cargo. Some call us smugglers.
+}
+Clan_Lambrini_28 {
+You mentioned your family—who are they?
+}
+Clan_Lambrini_29 {
+Ah! Family is a very important matter for the Lambrini. We came to the New World from Sicily forty years ago. Back then, my father directed our operations here. After he died, I became the head of the family. Now I work with my sons—Fabio and Emilio, and my nephew, Cesario.
+}
+Clan_Lambrini_30 {
+I'm looking for work. Do you have any offers?
+}
+Clan_Lambrini_31 {
+Yes. There is a problem you can help us with.
+}
+Clan_Lambrini_32 {
+I'm listening.
+}
+Clan_Lambrini_33 {
+We are smugglers. And while most of the coast guard don't mind doing business with us, an honest man among them can cause quite a lot of trouble. Yes, most of them can be reasoned with. But one is an exception. This guy, Thomas Audley, has a fine ship called the 'Tiburon'. And the bastard doesn't take bribes! So we can't do our business on Tobago.
+}
+Clan_Lambrini_34_m {
+And you want me to get rid of him?
+}
+Clan_Lambrini_34_f {
+And you want me to get rid of him?
+}
+Clan_Lambrini_35 {
+That's not so important. Kill him, nail him to your bowsprit, feed him to the sharks, set pirates on him, or bribe him—it doesn't matter. But we can't ignore such a juicy morsel as Tobago. Many of our suppliers have started avoiding the island. They fear this Englishman—and not without reason. Just deal with this guy somehow.
+}
+Clan_Lambrini_36 {
+How much?
+}
+Clan_Lambrini_37 {
+I'll give you @<Plata1> piastres. And know this—no one bargains with Lambrini!
+}
+Clan_Lambrini_38_m {
+Agreed.
+}
+Clan_Lambrini_38_f {
+Agreed.
+}
+Clan_Lambrini_39 {
+I'm not interested, Octavio. If you're even half as tough as you claim, you can deal with this guy yourself. Goodbye.
+}
+Clan_Lambrini_40_m {
+Yo-ho, boy! You speak like a true @<GetFullName>. Few words, much action. Go—and return when you've taken care of him.
+}
+Clan_Lambrini_40_f {
+Yo-ho, girl! You speak like a true @<GetFullName>. Few words, much action. Go—and return when you've taken care of him.
+}
+Clan_Lambrini_41 {
+See you around, Octavio.
+}
+Clan_Lambrini_42_m {
+Well, boy—did you finish off that worm, Thomas?
+}
+Clan_Lambrini_42_f {
+Well, girl—did you finish off that worm, Thomas?
+}
+Clan_Lambrini_43 {
+I'll rip his eyes out, don't you doubt it. But all in good time.
+}
+Clan_Lambrini_44_m {
+Then I'll give you time, boy, but remember—the Lambrinis are not known for their patience.
+}
+Clan_Lambrini_44_f {
+Then I'll give you time, girl, but remember—the Lambrinis are not known for their patience.
+}
+Clan_Lambrini_45 {
+Rest assured—I won't keep you waiting long. Goodbye.
+}
+Clan_Lambrini_46 {
+What did you want, @<GetAddress_Form>?
+}
+Clan_Lambrini_47 {
+Your name is Thomas Audley—and you are from the coast guard?
+}
+Clan_Lambrini_48_m {
+Yes. And who are you?
+}
+Clan_Lambrini_48_f {
+Yes. And who are you?
+}
+Clan_Lambrini_49 {
+My name is @<GetFullName>.
+}
+Clan_Lambrini_50 {
+Yes, yes, I've heard something about you... Why are you here?
+}
+Clan_Lambrini_51 {
+Someone wants to kill you.
+}
+Clan_Lambrini_52 {
+The Lambrini family sends their regards!
+}
+Clan_Lambrini_53 {
+It's time for me to go.
+}
+Clan_Lambrini_54 {
+Get off my ship immediately!
+}
+Clan_Lambrini_55 {
+Leaving already.
+}
+Clan_Lambrini_56_m {
+Well, boy—I hope you finished off that worm, Thomas?
+}
+Clan_Lambrini_56_f {
+Well, girl—I hope you finished off that worm, Thomas?
+}
+Clan_Lambrini_57 {
+Yes. I managed to board him near Tobago island. The miserable bastard begged me for mercy, but his pleas were in vain.
+}
+Clan_Lambrini_58 {
+Um... I managed to finish him off for good. He begged, but... well, he won't be bothering you anymore.
+}
+Clan_Lambrini_59 {
+Yes. I managed to board him near Tobago island. The miserable bastard begged me for mercy, but his pleas were in vain.
+}
+Clan_Lambrini_60_m {
+Ha, boy! You should have brought his head as proof. That would have been a fine souvenir. But I believe you anyway. Here are your @<Plata1>. And all my problems are behind me.
+}
+Clan_Lambrini_60_f {
+Ha, girl! You should have brought his head as proof. That would have been a fine souvenir. But I believe you anyway. Here are your @<Plata1>. And all my problems are behind me.
+}
+Clan_Lambrini_61 {
+Yes, now no one will stop you from trading near Tobago, Octavio. Goodbye.
+}
+Clan_Lambrini_62_m {
+Wait, boy! Earning money is a good skill, but I'm an experienced smuggler and can teach you the intricacies of naval deception using the flags of other nations. Which nation interests you?
+}
+Clan_Lambrini_62_f {
+Wait, girl! Earning money is a good skill, but I'm an experienced smuggler and can teach you the intricacies of naval deception using the flags of other nations. Which nation interests you?
+}
+Clan_Lambrini_63 {
+Teach me to sail under the flag of England.
+}
+Clan_Lambrini_64 {
+I need the flag of France so their patrols won't pay attention to me.
+}
+Clan_Lambrini_65 {
+The Spaniards own the entire Spanish Main... Tell me how to sail the seas under the flag of Spain.
+}
+Clan_Lambrini_66 {
+I want to be able to do business in the colonies of Holland.
+}
+Clan_Lambrini_67 {
+Octavio, I know all this without you. Thanks.
+}
+Clan_Lambrini_68 {
+I think I'll manage without your advice and tips, Octavio. I don't need them.
+}
+Clan_Lambrini_69 {
+I'll give you instructions on how to behave properly on the horizon with ships and what special signals to give. Now you can use the flag of England.
+}
+Clan_Lambrini_70 {
+Thanks, Octavio!
+}
+Clan_Lambrini_71 {
+I'll give you instructions on how to behave properly on the horizon with ships and what special signals to give. Now you can use the flag of France.
+}
+Clan_Lambrini_72 {
+Thanks, Octavio!
+}
+Clan_Lambrini_73 {
+I'll give you instructions on how to behave properly on the horizon with ships and what special signals to give. Now you can use the flag of Spain.
+}
+Clan_Lambrini_74 {
+Thanks, Octavio!
+}
+Clan_Lambrini_75 {
+I'll give you instructions on how to behave properly on the horizon with ships and what special signals to give. Now you can use the flag of Holland.
+}
+Clan_Lambrini_76 {
+Thanks, Octavio!
+}
+Clan_Lambrini_77 {
+Yes... I see you already know how to use the flags of all nations. Then I have nothing more to teach you in this matter.
+}
+Clan_Lambrini_78 {
+Looks like it.
+}
+Clan_Lambrini_79_m {
+The main thing is don't forget—just slapping on a nation's rag isn't enough to pass as one of their own. What matters here is how well you know how to disguise yourself and act stealthily, so no one figures you out or catches you. Take old man Lambrini's word for it. Take care, boy!
+}
+Clan_Lambrini_79_f {
+The main thing is don't forget—just slapping on a nation's rag isn't enough to pass as one of their own. What matters here is how well you know how to disguise yourself and act stealthily, so no one figures you out or catches you. Take old man Lambrini's word for it. Take care, girl!
+}
+Clan_Lambrini_80 {
+Goodbye.
+}
+Clan_Lambrini_81_m {
+You say all this without much confidence, boy. But I can't sit idle any longer... As soon as your information is confirmed, you'll get your reward. In the meantime, I'll attend to my own affairs.\nNow run along before I regret getting involved with you in the first place.
+}
+Clan_Lambrini_81_f {
+You say all this without much confidence, girl. But I can't sit idle any longer... As soon as your information is confirmed, you'll get your reward. In the meantime, I'll attend to my own affairs.\nNow run along before I regret getting involved with you in the first place.
+}
+Clan_Lambrini_82 {
+Whatever you say...
+}
+Clan_Lambrini_83 {
+Ah, @<pchar>! I congratulate you on ridding us of that worm, Thomas! Soon I'm going to seal some contracts with very lucrative clients.
+}
+Clan_Lambrini_84 {
+Good luck!
+}
+Clan_Lambrini_85 {
+Go away! I need to think about something...
+}
+Clan_Lambrini_86 {
+Fine...
+}
+Clan_Lambrini_87 {
+And what of it? If you wanted to surprise me, you failed. Lambrini wants to kill me, though the rest of the smugglers wouldn't mind doing the same.
+}
+Clan_Lambrini_88_m {
+I came to you with a proposal.
+}
+Clan_Lambrini_88_f {
+I came to you with a proposal.
+}
+Clan_Lambrini_89 {
+No way. I don't take bribes from traders like you. And I will definitely report you to the governor and the commander of Fort Port-of-Spain.
+}
+Clan_Lambrini_90_m {
+You misunderstood me. What would you say if I gave you an opportunity to capture or sink Lambrini's ship?
+}
+Clan_Lambrini_90_f {
+You misunderstood me. What would you say if I gave you an opportunity to capture or sink Lambrini's ship?
+}
+Clan_Lambrini_91 {
+Well, goodbye then.
+}
+Clan_Lambrini_92 {
+I'd give my right hand for that. But it's impossible, alas. He seems to have already bribed every commander and soldier in the Caribbean. What can I do alone?
+}
+Clan_Lambrini_93_m {
+Lambrini asked me to help him get rid of you. He's sure he can't deal with you alone, but I could do it.
+}
+Clan_Lambrini_93_f {
+Lambrini asked me to help him get rid of you. He's sure he can't deal with you alone, but I could do it.
+}
+Clan_Lambrini_94 {
+If you work for smugglers, then we have nothing to talk about, @<GetAddress_Form>. Goodbye.
+}
+Clan_Lambrini_95 {
+Um, wait—you haven't even listened to me. I can tell Lambrini that I sank your ship. After that, he will sooner or later sail here, thinking he's no longer in danger. And you'll be able to ambush him in the bay, or near it.
+}
+Clan_Lambrini_96 {
+Goodbye then.
+}
+Clan_Lambrini_97 {
+Curious... This plan might work, @<GetAddress_Form> @<pchar>. And if it does, I'll see to it that our governor rewards you generously!
+}
+Clan_Lambrini_98 {
+And how much do you think the governor might offer for Lambrini's head?
+}
+Clan_Lambrini_99 {
+Well, that's something worth asking him personally... I suppose roughly @<Plata2>. Our revenues have dropped significantly lately because of the smugglers.
+}
+Clan_Lambrini_100 {
+I think @<Plata2> is sufficient pay. So, I will tell Octavio Lambrini that you're finished... When he sails here, we'll nab him. What could be simpler?
+}
+Clan_Lambrini_101 {
+Sorry, Captain—you're offering me only @<Plata2> piastres? That's impossible. Forgive me, but I think I'll be going.
+}
+Clan_Lambrini_102 {
+Excellent! Then report my death to Lambrini. After that, I'll be waiting for you in the church from 9 AM to 2 PM. We'll figure out what to do next.
+}
+Clan_Lambrini_103 {
+Take care of yourself, sir. Good luck!
+}
+Clan_Lambrini_104 {
+Excellent! Then report my death to Lambrini. After that, I'll be waiting for you in the church from 9 AM to 2 PM. We'll figure out what to do next.
+}
+Clan_Lambrini_105 {
+Take care of yourself, sir. Good luck!
+}
+Clan_Lambrini_106 {
+@<TimeGreeting>, @<GetAddress_Form>, how did it all go?
+}
+Clan_Lambrini_107 {
+One way or another, it seems Octavio Lambrini believed in your death. I have a suspicion that very soon he will start actively pursuing his trade.
+}
+Clan_Lambrini_108 {
+Excellent. The smugglers' suppliers usually hang around the tavern—so you need to go there and keep an eye on Octavio. Meanwhile, I'll prepare for a warm welcome. All the best—be careful, @<GetAddress_Form>.
+}
+Clan_Lambrini_109 {
+Alright, I'll keep an eye on him in the tavern. Good luck to you too.
+}
+Clan_Lambrini_110 {
+Well, @<GetAddress_Form>, have you seen Lambrini in the tavern?
+}
+Clan_Lambrini_111_m {
+Not yet, I was just heading there.
+}
+Clan_Lambrini_111_f {
+Not yet, I was just heading there.
+}
+Clan_Lambrini_112 {
+... What for?
+}
+Clan_Lambrini_113 {
+I want to sell something that no merchant on this island would buy. There's a dream cargo sitting in my hold! Mountains of mahogany wood, just think about it.
+}
+Clan_Lambrini_114 {
+I know you're someone who can be dealt with. We'll be waiting for you at a place called Cape Galera.
+}
+Clan_Lambrini_115 {
+I will definitely come.
+}
+Clan_Lambrini_116 {
+@<UpperFirst> @<pchar>, you're back. See anything interesting?
+}
+Clan_Lambrini_117 {
+I managed to overhear Lambrini's conversation with a captain who's going to sell an illegal and expensive cargo—mahogany. Maybe we should head to the tavern and catch Octavio while he's hot?
+}
+Clan_Lambrini_118 {
+No! We'll catch him red-handed. They will all gather in the bay along with the valuable cargo, thinking they are completely safe. That's when we show up and arrest everyone along with the freight. Were you able to find out the location where the deal will take place?
+}
+Clan_Lambrini_119 {
+Lambrini mentioned Cape Galera.
+}
+Clan_Lambrini_120 {
+Excellent! We'll catch them by surprise and stage a raid from both the jungle and the sea. My first mate will easily handle Octavio's ship while we cut off their escape route on land.
+}
+Clan_Lambrini_121 {
+Then forward.
+}
+Clan_Lambrini_122 {
+I need to prepare.
+}
+Clan_Lambrini_123 {
+Are you ready to set off?
+}
+Clan_Lambrini_124 {
+Yes, of course.
+}
+Clan_Lambrini_125 {
+Not yet.
+}
+Clan_Lambrini_126 {
+I can't even believe that we're about to put an end to this soon. We leave right now.
+}
+Clan_Lambrini_127 {
+Forward!
+}
+Clan_Lambrini_128 {
+And who on earth is this... Greetings, officer!
+}
+Clan_Lambrini_129 {
+It looks like something illegal is going on here.
+}
+Clan_Lambrini_130 {
+No, no, my friends and I are just relaxing by the sea. You understand, right? I...
+}
+Clan_Lambrini_131 {
+Not this time, Octavio. You are finally caught red-handed. I know who you are. And you can already guess who I am... The one you so passionately wished dead just a short while ago. Gentlemen, you will not escape justice. Follow us to the commandant's office—you are all under arrest, and your goods are confiscated!
+}
+Clan_Lambrini_132_m {
+Damn you, Thomas Audley! And damn you too, boy. I always suspected you were an army rat!
+}
+Clan_Lambrini_132_f {
+Damn you, Thomas Audley! And damn you too, girl. I always suspected you were an army rat!
+}
+Clan_Lambrini_133 {
+Don't waste your breath, Lambrini. You and your family are finished if you resist. According to my information, your ship will be intercepted by our vessels at any minute. There's no help coming—surrender, and you'll save a few lives today.
+}
+Clan_Lambrini_134 {
+My Emilio is too much for them to handle! Boys, I'm not going to rot in prison in my old age! We're going to bury you all right here, tin soldiers!
+}
+Clan_Lambrini_135 {
+I was hoping you'd say that.
+}
+Clan_Lambrini_136 {
+I can't believe it, we did it! Your plan worked absolutely brilliantly. As soon as Lambrini's ship, led by his sons, approached the island, my brig darted out from behind the cliff, and after a few volleys of grapeshot, it was all over. The first mate and the crew boarded the smugglers' vessel, during which Octavio's sons laid down their reckless heads\nYou may safely return to town, and my men will clean up all this mess.
+}
+Clan_Lambrini_137 {
+My congratulations, Thomas. So, Octavio Lambrini and even his sons are dead. And I suspect you have something for me...
+}
+Clan_Lambrini_138 {
+Oh, yes. I remember my promises, Señor Captain. Here is your money—@<Plata2> in silver, just as we agreed. Take it, you've earned it.
+}
+Clan_Lambrini_139_m {
+Thank you, Thomas—you are a man of your word, just as I thought. All the best to you.
+}
+Clan_Lambrini_139_f {
+Thank you, Thomas—you are a man of your word, just as I thought. All the best to you.
+}
+

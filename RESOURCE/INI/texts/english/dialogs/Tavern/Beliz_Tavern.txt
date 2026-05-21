@@ -79,3 +79,66 @@ Heh, @<GetAddress_Form>, these aren’t confessors. Those holy fathers are warri
 Beliz_Tavern_22 {
 Ooh, I see how it is. Well then, thank you, my friend.
 }
+Beliz_Tavern_23 {
+I am looking for a girl... named Merry Carla, I believe. Where can I find her?
+}
+Beliz_Tavern_24 {
+I am looking for a girl... named Merry Carla, I believe. Where can I find her?
+}
+Beliz_Tavern_25 {
+I do not know any Carla. And we do not provide any other services here except food or drink. Would you care for a drink?
+}
+Beliz_Tavern_26 {
+No, thank you. I am leaving.
+}
+Beliz_Tavern_27 {
+I already told you, there is no Carla here!
+}
+Beliz_Tavern_28 {
+She is accused of witchcraft! Do you know what that means? It means she is a witch! If you harbor her, you will burn at the very same stake as she does. Is that clear? People have seen her entering your tavern repeatedly. So, will you keep denying it, or...?
+}
+Beliz_Tavern_29 {
+Oh, have mercy on me, @<GetAddress_Form>! I did not want to break the law — it is just... I am barely making ends meet... I had no other choice but to let those girls bring clients here. Besides, there isn't even a decent brothel in our backwater!
+}
+Beliz_Tavern_30 {
+Well, I suppose a couple of thousand pesos could soften your guilt. But I need to know where she is.
+}
+Beliz_Tavern_31 {
+Your pathetic complaints do not interest me. I only want to know where she is.
+}
+Beliz_Tavern_32 {
+Oh, @<GetAddress_Form> — you will ruin me and my business! I have to pay the tax collector next month! Two thousand, that is simply impossible! You threatened me with death at the stake, and now you want me to starve to death?!
+}
+Beliz_Tavern_33 {
+You are nothing but a miserable sinner... Fine, tell me where Carla is, and I will leave you be. May God forgive you.
+}
+Beliz_Tavern_34 {
+You harbored enemies of the public in your tavern — so you will have to pay, one way or another.
+}
+Beliz_Tavern_35 {
+Oh, you have ruined my life! Fine, take the gold — but you will be cursed forever!
+}
+Beliz_Tavern_36 {
+Think of your fate, miserable sinner! If you do not tell me where Carla is, your screams from the governor's dungeon will disturb the citizens of Belize for a long time to come.
+}
+Beliz_Tavern_37_m {
+Yes, yes, she was here! But she sailed away recently with a captain. When she told me she was leaving, I almost burst into tears. Such a good girl finally found her destiny. Her captain was a real man, just like you — just as strong and brave...
+}
+Beliz_Tavern_37_f {
+Yes, yes, she was here! But she sailed away recently with a captain. When she told me she was leaving, I almost burst into tears. Such a good girl finally found her destiny. Her captain was a strong and brave man, just like you...
+}
+Beliz_Tavern_38 {
+What was his name?
+}
+Beliz_Tavern_39 {
+Miguel Cuenda, as far as I remember. He sailed away and took Carla with him. And... forgive me, @<GetAddress_Form> — I beg you not to tell her that it was me who informed on her. I do not want her to curse my name forever...
+}
+Beliz_Tavern_40 {
+I will not tell her. But you must tell me where they headed.
+}
+Beliz_Tavern_41 {
+I remember she mentioned something about a colony — a Spanish one, of course... I think it was Santo Domingo.
+}
+Beliz_Tavern_42 {
+I believe you. But remember — you must take good care of your filthy yet, alas, immortal soul. Farewell!
+}

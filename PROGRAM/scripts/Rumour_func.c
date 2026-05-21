@@ -268,16 +268,16 @@ bool RumourCheker(ref rRumour, string key, aref arPrm)
 	}
 	
 	if ((CheckAttribute(rRumour, "onlynation")) && sti(rRumour.onlynation) != iNation )
-	return false;
+		return false;
 	
-	if (CheckAttribute(arPrm, "myselfRumour") && arPrm.myselfRumour == rRumour.id) //mrtehon слух о самом себе
-	return false;
+	if (CheckAttribute(arPrm, "myselfRumour") && HasStrEx(rRumour.id, arPrm.myselfRumour, "|")) //mrtehon слух о самом себе
+		return false;
 	
 	if (CheckAttribute(rRumour, "sex") && arPrm.sex != rRumour.sex) //Rosarak
-	return false;
+		return false;
 	
 	if (CheckAttribute(rRumour, "group") && !RumourGroupCheck(FindRumour(rRumour.id), arPrm)) 	//Rosarak не выдавать похожие слухи
-	return false;																				//одному NPC
+		return false;																				//одному NPC
 	
     bool taverncheat = (key == "tavern") && rand(1);
 	bool rez = (rRumour.rep == "none") || (PCharRepPhrase ("bad", "good") == rRumour.rep) || (taverncheat);// и по репутации

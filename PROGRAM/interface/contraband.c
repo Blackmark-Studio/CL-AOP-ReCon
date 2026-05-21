@@ -738,7 +738,7 @@ void TransactionOK()
 		iTime /= 2;
 	}
 	
-	if (GetOfficersPerkUsing(refCharacter, "QuickCalculation"))
+	if (GetOfficersPerkUsing(refCharacter, "QuickCalculation", false))
 		iTime /= 2;
 	
 	WaitDate("", 0, 0, 0, 0, iTime);

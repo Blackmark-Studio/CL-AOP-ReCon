@@ -789,7 +789,12 @@ bool CapBloodLine_NeedMoney_Nettl_QuestMarkCondition(ref chr)
 // Изабелла
 bool RomanticLine_Begin_WDMQuestMarkCondition(string sLocId)
 {
-    return sti(pchar.rank) >= 15; // act 3
+    return sti(pchar.rank) >= 15 && pchar.sex != "woman"; // act 3
+}
+
+bool RomanticLine_Begin_QuestMarkCondition(ref chr)
+{
+    return pchar.sex != "woman";
 }
 
 bool RomanticLine_ShipToCumana_Citizen_QuestMarkCondition(ref chr)
@@ -814,7 +819,7 @@ bool PDM_Poteryanoe_Koltso_IshemKoltso_QuestMarkCondition(ref chr)
         chr.location != "SantoDomingo_church";
 }
 
-// Проклятая жара
+// Невыносимая жара
 bool PDM_Proklyataya_Jara_MaltieOfficer_QuestMarkCondition(ref chr)
 {
     return CheckAttribute(pchar, "questTemp.PDM_PJ_SS");

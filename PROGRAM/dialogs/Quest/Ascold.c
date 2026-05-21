@@ -203,7 +203,8 @@ void ProcessDialogEvent()
 
 		case "Step_10":
 			dialog.text = StringFromKey("Ascold_43");
-			if (HasPlaytestRewardNative() && !CheckAttribute(pchar, "questTemp.Tichingitu") && !CheckAttribute(npchar, "quest.Tichingitu"))
+
+			if (or(HasPlaytestRewardNative(), BIsSubscribedApp(2230980)) && !CheckAttribute(pchar, "questTemp.Tichingitu") && !CheckAttribute(npchar, "quest.Tichingitu"))
 			{
 				link.l1 = StringFromKey("Ascold_270");
 				link.l1.go = "Tichingitu_0";

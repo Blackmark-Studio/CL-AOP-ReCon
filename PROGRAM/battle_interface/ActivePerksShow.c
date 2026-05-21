@@ -436,12 +436,12 @@ void InitSeaPerkShower()
 
 	// Sea Perk shower - Тот самый "пирог"
 //	objSeaPerkShower.SeaPerkShowerPos = "970,1014"; // 888 + 82
-	objSeaPerkShower.SeaPerkShowerPos = RecalculateHIcon(sti(showWindow.right)/2 + makeint(10 * fHtRatio)) + "," + RecalculateVIcon(sti(showWindow.bottom) - makeint(66 * fHtRatio));
+	objSeaPerkShower.SeaPerkShowerPos = (sti(showWindow.right)*0.5 + RecalculateHIcon(makeint(1 * fHtRatio))) + "," + RecalculateVIcon(sti(showWindow.bottom) + makeint(-86 * fHtRatio));
 
 	objSeaPerkShower.Backtexturename = "battle_interface\BI_SeaPerkShowerBack.tga";
 	objSeaPerkShower.BackUV = "0,0,1,1";
 	objSeaPerkShower.BackOffset = RecalculateHIcon(makeint(0 * fHtRatio)) + "," + RecalculateVIcon(makeint(0 * fHtRatio));
-	objSeaPerkShower.BackIconSize = RecalculateHIcon(makeint(164 * fHtRatio)) + "," + RecalculateVIcon(makeint(164 * fHtRatio));
+	objSeaPerkShower.BackIconSize = RecalculateHIcon(makeint(170 * fHtRatio)) + "," + RecalculateVIcon(makeint(170 * fHtRatio));
 	objSeaPerkShower.BackColor = ARGB(255, 255, 255, 255);
 
 	objSeaPerkShower.Segmentstexturename = "battle_interface\BI_SeaPerkShowerSegments.tga";
@@ -449,27 +449,27 @@ void InitSeaPerkShower()
 	int defaultSegColor = ARGB(255, 255, 255, 255);
 	objSeaPerkShower.UpSegmentColor = defaultSegColor;
 //	objSeaPerkShower.UpSegmentColor = ARGB(255, 169, 169, 169);
-	objSeaPerkShower.UpSegmentUV = "0.3125,0,0.625,0.15625";
-	objSeaPerkShower.UpSegmentOffset = RecalculateHIcon(makeint(-10 * fHtRatio)) + "," + RecalculateVIcon(makeint(-54 * fHtRatio));
-	objSeaPerkShower.UpSegmentSize = RecalculateHIcon(makeint(102 * fHtRatio)) + "," + RecalculateVIcon(makeint(51 * fHtRatio));
+	objSeaPerkShower.UpSegmentUV = "0,0,0.15625,0.15625";
+	objSeaPerkShower.UpSegmentOffset = RecalculateHIcon(makeint(1 * fHtRatio)) + "," + RecalculateVIcon(makeint(-50 * fHtRatio));
+	objSeaPerkShower.UpSegmentSize = RecalculateHIcon(makeint(77 * fHtRatio)) + "," + RecalculateVIcon(makeint(77 * fHtRatio));
 	objSeaPerkShower.UpSegmentOn = false;
 
 	objSeaPerkShower.LeftSegmentColor = defaultSegColor;
-	objSeaPerkShower.LeftSegmentUV = "0,0,0.15625,0.3125";
-	objSeaPerkShower.LeftSegmentOffset = RecalculateHIcon(makeint(-54 * fHtRatio)) + "," + RecalculateVIcon(makeint(-10 * fHtRatio));
-	objSeaPerkShower.LeftSegmentSize = RecalculateHIcon(makeint(51 * fHtRatio)) + "," + RecalculateVIcon(makeint(102 * fHtRatio));
+	objSeaPerkShower.LeftSegmentUV = "0.15625,0,0.3125,0.15625";
+	objSeaPerkShower.LeftSegmentOffset = RecalculateHIcon(makeint(-41 * fHtRatio)) + "," + RecalculateVIcon(makeint(1 * fHtRatio));
+	objSeaPerkShower.LeftSegmentSize = RecalculateHIcon(makeint(77 * fHtRatio)) + "," + RecalculateVIcon(makeint(77 * fHtRatio));
 	objSeaPerkShower.LeftSegmentOn = false;
 
 	objSeaPerkShower.RightSegmentColor = defaultSegColor;
-	objSeaPerkShower.RightSegmentUV = "0.15625,0,0.3125,0.3125";
-	objSeaPerkShower.RightSegmentOffset = RecalculateHIcon(makeint(34 * fHtRatio)) + "," + RecalculateVIcon(makeint(-10 * fHtRatio));
-	objSeaPerkShower.RightSegmentSize = RecalculateHIcon(makeint(51 * fHtRatio)) + "," + RecalculateVIcon(makeint(102 * fHtRatio));
+	objSeaPerkShower.RightSegmentUV = "0.3125,0,0.46875,0.15625";
+	objSeaPerkShower.RightSegmentOffset = RecalculateHIcon(makeint(42 * fHtRatio)) + "," + RecalculateVIcon(makeint(1 * fHtRatio));
+	objSeaPerkShower.RightSegmentSize = RecalculateHIcon(makeint(77 * fHtRatio)) + "," + RecalculateVIcon(makeint(77 * fHtRatio));
 	objSeaPerkShower.RightSegmentOn = false;
 
 	objSeaPerkShower.DownSegmentColor = defaultSegColor;
-	objSeaPerkShower.DownSegmentUV = "0.3125,0.15625,0.625,0.3125";
-	objSeaPerkShower.DownSegmentOffset = RecalculateHIcon(makeint(-10 * fHtRatio)) + "," + RecalculateVIcon(makeint(34 * fHtRatio));
-	objSeaPerkShower.DownSegmentSize = RecalculateHIcon(makeint(102 * fHtRatio)) + "," + RecalculateVIcon(makeint(51 * fHtRatio));
+	objSeaPerkShower.DownSegmentUV = "0.46875,0,0.625,0.15625";
+	objSeaPerkShower.DownSegmentOffset = RecalculateHIcon(makeint(1 * fHtRatio)) + "," + RecalculateVIcon(makeint(48 * fHtRatio));
+	objSeaPerkShower.DownSegmentSize = RecalculateHIcon(makeint(77 * fHtRatio)) + "," + RecalculateVIcon(makeint(77 * fHtRatio));
 	objSeaPerkShower.DownSegmentOn = false;
 
 	objSeaPerkShower.PerkIconList.TextureSize = "1024,1024";
@@ -487,31 +487,31 @@ void InitSeaPerkShower()
 
 	objSeaPerkShower.Icontextfontid = "interface_normal_smallscale";
 
-	float defaultFontScale = 0.365 * fHtRatio;
-	objSeaPerkShower.UpPerkIconOffset = RecalculateHIcon(makeint(0 * fHtRatio)) + "," + RecalculateVIcon(makeint(0 * fHtRatio));
-	objSeaPerkShower.UpPerkIconSize = RecalculateHIcon(makeint(51 * fHtRatio)) + "," + RecalculateVIcon(makeint(51 * fHtRatio));
+	float defaultFontScale = 0.355 * fHtRatio;
+	objSeaPerkShower.UpPerkIconOffset = RecalculateHIcon(makeint(2 * fHtRatio)) + "," + RecalculateVIcon(makeint(1 * fHtRatio));
+	objSeaPerkShower.UpPerkIconSize = RecalculateHIcon(makeint(62 * fHtRatio)) + "," + RecalculateVIcon(makeint(62 * fHtRatio));
 	objSeaPerkShower.UpIconTextcolor = defaultSegColor;
 	objSeaPerkShower.UpicontextScale = defaultFontScale;
 
-	objSeaPerkShower.LeftPerkIconOffset = RecalculateHIcon(makeint(0 * fHtRatio)) + "," + RecalculateVIcon(makeint(0 * fHtRatio));
-	objSeaPerkShower.LeftPerkIconSize = RecalculateHIcon(makeint(51 * fHtRatio)) + "," + RecalculateVIcon(makeint(51 * fHtRatio));
+	objSeaPerkShower.LeftPerkIconOffset = RecalculateHIcon(makeint(2 * fHtRatio)) + "," + RecalculateVIcon(makeint(0 * fHtRatio));
+	objSeaPerkShower.LeftPerkIconSize = RecalculateHIcon(makeint(62 * fHtRatio)) + "," + RecalculateVIcon(makeint(62 * fHtRatio));
 	objSeaPerkShower.LeftIconTextcolor = defaultSegColor;
 	objSeaPerkShower.LefticontextScale = defaultFontScale;
 
 	objSeaPerkShower.RightPerkIconOffset = RecalculateHIcon(makeint(1 * fHtRatio)) + "," + RecalculateVIcon(makeint(0 * fHtRatio));
-	objSeaPerkShower.RightPerkIconSize = RecalculateHIcon(makeint(51 * fHtRatio)) + "," + RecalculateVIcon(makeint(51 * fHtRatio));
+	objSeaPerkShower.RightPerkIconSize = RecalculateHIcon(makeint(56 * fHtRatio)) + "," + RecalculateVIcon(makeint(56 * fHtRatio));
 	objSeaPerkShower.RightIconTextcolor = defaultSegColor;
 	objSeaPerkShower.RighticontextScale = defaultFontScale;
 
 	objSeaPerkShower.DownPerkIconOffset = RecalculateHIcon(makeint(0 * fHtRatio)) + "," + RecalculateVIcon(makeint(1 * fHtRatio));
-	objSeaPerkShower.DownPerkIconSize = RecalculateHIcon(makeint(51 * fHtRatio)) + "," + RecalculateVIcon(makeint(51 * fHtRatio));
+	objSeaPerkShower.DownPerkIconSize = RecalculateHIcon(makeint(57 * fHtRatio)) + "," + RecalculateVIcon(makeint(57 * fHtRatio));
 	objSeaPerkShower.DownIconTextcolor = defaultSegColor;
 	objSeaPerkShower.DownicontextScale = defaultFontScale;
 
-	objSeaPerkShower.UpIconTextOffset = RecalculateHIcon(makeint(-2 * fHtRatio)) + "," + RecalculateVIcon(makeint(-10 * fHtRatio));
-	objSeaPerkShower.LeftIconTextOffset = RecalculateHIcon(makeint(-2 * fHtRatio)) + "," + RecalculateVIcon(makeint(-10 * fHtRatio));
-	objSeaPerkShower.RightIconTextOffset = RecalculateHIcon(makeint(-2 * fHtRatio)) + "," + RecalculateVIcon(makeint(-10 * fHtRatio));
-	objSeaPerkShower.DownIconTextOffset = RecalculateHIcon(makeint(-2 * fHtRatio)) + "," + RecalculateVIcon(makeint(-10 * fHtRatio));
+	objSeaPerkShower.UpIconTextOffset = RecalculateHIcon(makeint(-2 * fHtRatio)) + "," + RecalculateVIcon(makeint(-12 * fHtRatio));
+	objSeaPerkShower.LeftIconTextOffset = RecalculateHIcon(makeint(-2 * fHtRatio)) + "," + RecalculateVIcon(makeint(-12 * fHtRatio));
+	objSeaPerkShower.RightIconTextOffset = RecalculateHIcon(makeint(-2 * fHtRatio)) + "," + RecalculateVIcon(makeint(-12 * fHtRatio));
+	objSeaPerkShower.DownIconTextOffset = RecalculateHIcon(makeint(-2 * fHtRatio)) + "," + RecalculateVIcon(makeint(-12 * fHtRatio));
 
 	objSeaPerkShower.UpIconText = "";
 	objSeaPerkShower.LeftIconText = "";

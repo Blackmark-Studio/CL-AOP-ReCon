@@ -2,14 +2,14 @@
 #include "storm-engine\messages.h"
 #include "sound.c"
 
-string savefile_info = "CL: AoP 1.0.3 (30.03.2026)";
+string savefile_info = "CL: AoP 1.1.0 (19.05.2026)";
 
 #define MAX_SHIPS_ON_SEA	32 
 #define MAX_CHARS_IN_LOC	128
 
 //DLC steam id
 #define NABOB_PACK 4238730 //Сапорт пак
-#define PDM_QUESTS 1234    //Квесты из первых корсаров
+#define PDM_QUESTS 4631460 //Квесты из первых корсаров
 
 // сетевые штучки -->
 int iRealDeltaTime = 0;
@@ -19,6 +19,7 @@ int iRealDay = 0;
 // сетевые штучки <--
 
 string g_sDayRand = ""; //HardCoffee используется движком для idRand
+string arMapMakerAtlas[2];
 
 int iGrassQuality = 0; //0 full, 1 middle, 2 low, 3 off
 

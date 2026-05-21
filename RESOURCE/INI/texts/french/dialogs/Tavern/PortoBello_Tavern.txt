@@ -44,7 +44,7 @@ PortoBello_Tavern_14 {
 Écoutez, avez-vous vu un corsaire nommé François Gontier? Il était dans votre ville il n’y a pas longtemps.
 }
 PortoBello_Tavern_15 {
-Écoute, Rolando, sais-tu où je peux trouver Albert Sievert, le capitaine de la brigantine "Strela"?
+Écoute, Rolando, sais-tu où je peux trouver Albert Sievert, le capitaine de la brigantine "Arrow"?
 }
 PortoBello_Tavern_16 {
 Non, je ne sais pas. Il n'est pas allé à la taverne, et je ne l'ai pas vu en ville non plus.

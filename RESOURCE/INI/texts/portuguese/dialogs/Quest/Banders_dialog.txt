@@ -56,7 +56,7 @@ Banders_dialog_13 {
 Você é bem atrevido. E seu amigo dizia que os companheiros dele eram generosos.
 }
 Banders_dialog_14 {
-Certo, escute. Tenho informações confiáveis de que, nos próximos @<FindDaysString>, dois navios mercantes @<pchar> — '@<pchar>' e '@<pchar>' — estarão na costa de @<pchar>, com os porões cheios de . Você pode tentar interceptá-los.
+Certo, escute. Tenho informações confiáveis de que, nos próximos @<FindDaysString>, dois navios mercantes @<pchar> — '@<pchar>' e '@<pchar>' — estarão na costa de @<pchar>, com os porões cheios de @<pchar>. Você pode tentar interceptá-los.
 }
 Banders_dialog_15_m {
 Excelente! Parece que valeu a pena dividir meu dinheiro com você.
@@ -65,7 +65,7 @@ Banders_dialog_15_f {
 Excelente! Parece que dividir minhas moedas com você valeu a pena.
 }
 Banders_dialog_16 {
-Certo, escute. Tenho informações confiáveis de que, nos próximos @<FindDaysString>, dois navios mercantes @<pchar> — '@<pchar>' e '@<pchar>' — estarão na costa de @<pchar>, com os porões cheios. Você pode tentar interceptá-los.
+Certo, escute. Tenho informações confiáveis de que, nos próximos @<FindDaysString>, dois navios mercantes @<pchar> — '@<pchar>' e '@<pchar>' — estarão na costa de @<pchar>, com os porões cheios de @<pchar>. Você pode tentar interceptá-los.
 }
 Banders_dialog_17_m {
 Excelente! Parece que dividir minhas moedas com você valeu a pena.

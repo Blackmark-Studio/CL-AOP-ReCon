@@ -25,6 +25,9 @@ float LAi_CalcDamageForBlade(aref attack, aref enemy, string attackType, bool is
 	float aSkill = LAi_GetCharacterFightLevel(attack);
 	float eSkill = LAi_GetCharacterFightLevel(enemy);
 
+	bool bPchar = IsMainCharacter(attack);
+	bool bOfficer = IsOfficer(attack);
+
 	if (CheckAttribute(attack, "equip.blade"))
 	{
 		ref rBlade = &Items[FindItem(attack.equip.blade)];
@@ -33,12 +36,12 @@ float LAi_CalcDamageForBlade(aref attack, aref enemy, string attackType, bool is
 	}
 
 	// evganat - пасха
-	if(CheckAttribute(attack, "easter.damage"))
+	if (CheckAttribute(attack, "easter.damage"))
 	{
 		string sItem = GetCharacterEquipByGroup(attack, BLADE_ITEM_TYPE);
-		if(CheckAttribute(attack, "easter.damage."+sItem))
+		if (CheckAttribute(attack, "easter.damage."+sItem))
 		{
-			switch(attack.easter.damage.(sItem))
+			switch (attack.easter.damage.(sItem))
 			{
 				case "1":	min += (min+max)*0.125;		max += (min+max)*0.125;		break;
 				case "2":	min += (min+max)*0.25;		max += (min+max)*0.25;		break;
@@ -48,19 +51,19 @@ float LAi_CalcDamageForBlade(aref attack, aref enemy, string attackType, bool is
 	
 	float bladeDmg = min + (max - min)*frandSmall(aSkill);
 	
-    if(aSkill < eSkill)
+    if (aSkill < eSkill)
 	{
 		bladeDmg = bladeDmg * (1.0 + 0.7 * (aSkill - eSkill));
 	}
 	
 	// Warship 27.08.09 Для сильных противников
 	// Если долбить совсем сильных (хардкорные абордажи), то шансов взять шип будет меньше
-	if(sti(enemy.Rank) > 50)
+	if (sti(enemy.Rank) > 50)
 	{
 		bladeDmg = bladeDmg * 45 / sti(enemy.Rank);
 	}
 	
-	if(CheckAttribute(loadedLocation, "CabinType") && sti(enemy.index) == GetMainCharacterIndex())
+	if (CheckAttribute(loadedLocation, "CabinType") && sti(enemy.index) == GetMainCharacterIndex())
 	{
 		bladeDmg = bladeDmg * (1.0 + stf(attack.rank)/100);
 	}
@@ -69,20 +72,20 @@ float LAi_CalcDamageForBlade(aref attack, aref enemy, string attackType, bool is
 	float kAttackDmg = 1.0;
 	
 	// TODO оптимизация на ветку параметров
-	switch(attackType)
+	switch (attackType)
 	{
 		case "fast":
-			if(isBlocked) kAttackDmg = 0.0;
+			if (isBlocked) kAttackDmg = 0.0;
 			else kAttackDmg = 0.7;
-			break;
+		break;
 
 		case "force":
-			if(isBlocked) kAttackDmg = 0.0;
+			if (isBlocked) kAttackDmg = 0.0;
 			else kAttackDmg = 1.0;
-			break;
+		break;
 
 		case "round":
-			if(isBlocked) kAttackDmg = 0.0;
+			if (isBlocked) kAttackDmg = 0.0;
 			else kAttackDmg = 0.6;
 			if (CheckCharacterPerk(attack, "BladeDancer"))
 			{
@@ -90,27 +93,27 @@ float LAi_CalcDamageForBlade(aref attack, aref enemy, string attackType, bool is
 				int iBonus = 0;
 				if (!ENCYCLOPEDIA_DISABLED)
 				{
-					if (attack.chr_ai.type == LAI_TYPE_OFFICER || IsMainCharacter(attack))
+					if (bPchar || bOfficer)
 						iBonus += GetParamPageBonus("BladeDancer");
 				}
 				kAttackDmg = kAttackDmg * (1.3 + 0.01 * iBonus);
 			}
-			break;
+		break;
 
 		case "break":
-			if(isBlocked) kAttackDmg = 1.0;
+			if (isBlocked) kAttackDmg = 1.0;
 			else kAttackDmg = 3.0;
-            break;
+		break;
 		
 		case "feintc":  // фикс после изучения ядра //Атакующие продолжение финта
-			if(isBlocked) kAttackDmg = 0.0;
+			if (isBlocked) kAttackDmg = 0.0;
 			else kAttackDmg = 0.8;
-            break;
+		break;
 		
 		case "feint":
-			if(isBlocked) kAttackDmg = 0.0;
+			if (isBlocked) kAttackDmg = 0.0;
 			else kAttackDmg = 0.5;
-            break;
+		break;
 	}
 	
 	if(kAttackDmg > 0)  // оптимизация boal
@@ -118,28 +121,41 @@ float LAi_CalcDamageForBlade(aref attack, aref enemy, string attackType, bool is
 		//Результирующий демедж
 		float dmg = bladeDmg * kAttackDmg;
 		
-		if(CheckCharacterPerk(attack, "HardHitter"))  
+		if (CheckCharacterPerk(attack, "HardHitter") && CheckAttribute(enemy, "chr_ai.energy"))
 		{
-			if(CheckAttribute(enemy, "chr_ai.energy"))
-			{
-				enemy.chr_ai.energy = (stf(enemy.chr_ai.energy) * 0.9); //fix
-			}
+			enemy.chr_ai.energy = (stf(enemy.chr_ai.energy) * 0.9); //fix
 		}
 		
-		if(MOD_SKILL_ENEMY_RATE < 5 && sti(enemy.index) == GetMainCharacterIndex())	
+		if (MOD_SKILL_ENEMY_RATE < 5 && sti(enemy.index) == GetMainCharacterIndex())	
 		{
-			dmg = dmg * (4.0 + MOD_SKILL_ENEMY_RATE) / 10.0;
+			dmg = dmg * (4.0 + MOD_SKILL_ENEMY_RATE) * 0.1;
 		}
 		
-		if (or(IsMainCharacter(attack), IsOfficer(attack)) && CharUseMusket(attack)) dmg *= 0.3333333; // TO_DO: Приклады-штыки
+		if (or(bPchar, bOfficer) && CharUseMusket(attack))
+			dmg *= 0.3333333; // TO_DO: Приклады-штыки
 
-        // Урон по крабам +10% при наличии Акульего Зуба
+		if (CheckCharacterPerk(attack, "BasicAttack"))
+		{
+			dmg *= 1.05;
+		}
+
+		// Урон по крабам +10% при наличии Акульего Зуба
 		if (CheckCharacterItem(attack, "shark_tooth") && CheckAttribute(enemy, "model") && enemy.model == "crabBig")
 		{
             dmg *= 1.1;
 		}
-		
-		if (CheckCharacterPerk(attack, "BasicAttack")) dmg *= 1.05;
+
+		if (CheckCharacterPerk(attack, "InquisitionBlessing"))
+		{
+			if (CheckAttributeEx(enemy, "skeleton,indian,GhostShipCrew,monster,ghost,undead", "|"))
+				dmg *= 1.2;
+		}
+
+		if (CheckCharacterPerk(enemy, "WitchCharm"))
+		{
+			if (CheckAttributeEx(attack, "skeleton,indian,GhostShipCrew,monster,ghost,undead", "|"))
+				dmg *= 0.8;
+		}
 
 		return dmg;
 	}
@@ -365,11 +381,29 @@ float LAi_GunCalcDamage(aref attack, aref enemy, string sType, int nShots)
 	if (IsCharacterPerkOn(attack, "Shoottech"))
 		dmg = dmg * 1.1;
 
-    //урон по крабам +10% при наличии Акульего Зуба
+	if (CheckCharacterPerk(attack, "DevilsEye") && rand(99) < 10)
+	{
+		dmg = dmg * 2.0;
+		Log_Info(XI_ConvertString("Critical Shot"));
+	}
+
+	//урон по крабам +10% при наличии Акульего Зуба
     if (CheckCharacterItem(attack, "shark_tooth") && CheckAttribute(enemy, "model") && enemy.model == "crabBig")
     {
         dmg = dmg * 1.1;
     }
+
+	if (CheckCharacterPerk(attack, "InquisitionBlessing"))
+	{
+		if (CheckAttributeEx(enemy, "skeleton,indian,GhostShipCrew,monster,ghost,undead", "|"))
+			dmg = dmg * 1.2;
+	}
+
+	if (CheckCharacterPerk(enemy, "WitchCharm"))
+	{
+		if (CheckAttributeEx(attack, "skeleton,indian,GhostShipCrew,monster,ghost,undead", "|"))
+			dmg = dmg * 0.8;
+	}
 
 	return dmg;
 }
@@ -743,12 +777,6 @@ void LAi_ApplyCharacterFireDamage(aref attack, aref enemy, float kDist, float fA
 	{
 		if (CheckCharacterPerk(attack, "StunningShot"))
 			Lai_CharacterChangeEnergy(enemy, -(10 + rand(5)));
-		
-		if (CheckCharacterPerk(attack, "DevilsEye") && rand(99) < 10)
-		{
-			damage *= 2;
-			Log_Info(XI_ConvertString("Critical Shot"));
-		}
 		
 		//Rosarak. Звуки попадания пуль теперь здесь; TODO: Доработать их и разделить по полам
 		string Sound = GetSexCase(enemy, "bullethit", "bullethit", "s_manhit");

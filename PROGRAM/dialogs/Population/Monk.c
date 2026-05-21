@@ -400,7 +400,12 @@ void ProcessDialogEvent()
 		case "capellan_3":
 			DialogExit();
 			LAi_SetActorType(npchar);
-			LAi_ActorGoToLocation(npchar, "reload", "reload1_back", "My_Campus", "rld", "loc1", "Monk_Capellan", -1);
+			sTemp = "reload1_back";
+			if (pchar.location == "FortOrange_town")
+			{
+			    sTemp = "reload12";
+			}
+			LAi_ActorGoToLocation(npchar, "reload", sTemp, "My_Campus", "rld", "loc1", "Monk_Capellan", 10.0);
 			pchar.questTemp.ShipCapellan.id = npchar.id;
 			DeleteAttribute(npchar, "LifeDay");
 			DeleteAttribute(npchar, "CityType"); //удалить признак фантома

@@ -874,7 +874,7 @@ Spa_Line_5_LaVegaAttack.3
 La Vega ha sido capturada, la guarnición y los habitantes masacrados. Edward Mansfield cayó por mi mano.
 Ahora, a Santiago, ¡a Jimenez!
 }
-Spa_Line_5_LaVegaAttack.4 {Se ha recibido una recompensa de cien mil piastras de la ciudad de Santiago. Un buen trato...}
+Spa_Line_5_LaVegaAttack.4 {Se ha recibido una recompensa de ciento veinticinco mil piastras de la ciudad de Santiago. Un buen trato...}
 Spa_Line_6_TakeMessangeer {Intercepción del mensajero del gobernador general holandés}
 Spa_Line_6_TakeMessangeer.1 {Debo infiltrarme de nuevo en Tortuga en secreto y interceptar al mensajero del gobernador general holandés Peter Stuyvesant. Debo conseguir la correspondencia diplomática entre los holandeses y los franceses. Una carta credencial de la Compañía Holandesa de las Indias Occidentales para la entrega de carga me permitirá entrar sin obstáculos al puerto de Tortuga.}
 Spa_Line_6_TakeMessangeer.2 {El poder notarial de la Dutch West India Company, tan cuidadosamente proporcionado por Don Juan, obra maravillas. El jefe del puerto ha aceptado ayudarme; ahora debo esperar a su mensajero, quien me avisará de la llegada del enviado del gobernador general holandés.}

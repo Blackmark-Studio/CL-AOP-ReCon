@@ -2,8 +2,8 @@ void ProcessDialogEvent()
 {
 	ref NPChar, sld;
 	aref Link, Diag;
-	int i, iRnd, iRnd1;
-	string sTemp, sGems;
+	int i, iRnd;
+	string sTemp;
 
 	DeleteAttribute(&Dialog, "Links");
 
@@ -809,8 +809,8 @@ void ProcessDialogEvent()
 
 		case "Node_209":
 			LAi_LocationDisableMonstersGen(pchar.location, false);
-			sGems = makeint(sti(pchar.GenQuest.EncGirl.price)) / 100;
-			TakeNItems(pchar, "jewelry17", sGems);
+			i = makeint(sti(pchar.GenQuest.EncGirl.price) * 0.01);
+			TakeNItems(pchar, "jewelry17", i);
 			PlaySound("Took_item");
 			EncGiglFleeAway(npchar, false);
 			pchar.quest.EncGirl_RapersExit.win_condition.l1 = "ExitFromLocation";

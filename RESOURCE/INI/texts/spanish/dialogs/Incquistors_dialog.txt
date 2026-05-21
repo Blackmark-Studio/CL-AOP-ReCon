@@ -277,3 +277,15 @@ Incquistors_dialog_73_m {
 Incquistors_dialog_73_f {
 ¡Muy agradecido, Su Santidad!
 }
+Incquistors_dialog_74 {
+Santo Padre, actúo en nombre del gobernador de Belice y estoy rastreando a una bruja. Sé que aquí, en Santiago, trabaja en la taberna una bruja llamada Carla, una antigua prostituta del puerto. Con sus artes oscuras ya ha matado a dos personas: al capitán Miguel Cuenda y al buen hidalgo Bartholomew, quien murió antes de poder confesarse. Era un sirviente del gobernador de Belice. Ruego a Dios para que la Santa Inquisición la castigue por sus pecaminosos actos.
+}
+Incquistors_dialog_75_m {
+Ah, que tu alma sea eternamente bendita por tu justa acción, hijo mío. Nos encargaremos de esta bruja. Tu celo será recompensado con mi bendición personal.\nAdemás, hijo mío, presenciarás en persona cómo ese engendro de bruja arde en el fuego sagrado de la Inquisición.
+}
+Incquistors_dialog_75_f {
+Ah, que tu alma sea eternamente bendita por tu justa acción, hija mía. Nos encargaremos de esta bruja. Tu celo será recompensado con mi bendición personal.\nAdemás, hija mía, presenciarás en persona cómo ese engendro de bruja arde en el fuego sagrado de la Inquisición.
+}
+Incquistors_dialog_76 {
+Será un honor, santo padre.
+}

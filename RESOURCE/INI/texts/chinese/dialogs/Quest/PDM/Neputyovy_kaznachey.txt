@@ -107,16 +107,16 @@ Neputyovy_kaznachey_34 {
 我说的是@<Plata1>？不，那是我说错了！至少也是@<Plata2>！
 }
 Neputyovy_kaznachey_35 {
-你胆子不小啊，Vitor！老子宁愿把你剁成碎片，也不会让你伤害Andreas。
+你胆子不小啊，Victor！老子宁愿把你剁成碎片，也不会让你伤害Andreas。
 }
 Neputyovy_kaznachey_36 {
-来，拿好你的钱。玩得开心，Vitor。
+来，拿好你的钱。玩得开心，Victor。
 }
 Neputyovy_kaznachey_37 {
 我会把@<FindMoneyString>带来给你。但你记住，俺的船只要一轮齐射，就能把你那破船打成筛子，所以别碰Andreas一根手指！
 }
 Neputyovy_kaznachey_38 {
-你胆子不小啊，Vitor！老子宁愿把你剁成碎片，也不会让你碰Andreas一根手指。
+你胆子不小啊，Victor！老子宁愿把你剁成碎片，也不会让你碰Andreas一根手指。
 }
 Neputyovy_kaznachey_39 {
 行，等俺有钱了就去找你。
@@ -143,7 +143,7 @@ Neputyovy_kaznachey_45 {
 @<FindMoneyString>。给你。
 }
 Neputyovy_kaznachey_46 {
-我现在没那么多钱，Vitor，不过我会晚点回来，把Andreas的钱付了。
+我现在没那么多钱，Victor，不过我会晚点回来，把Andreas的钱付了。
 }
 Neputyovy_kaznachey_47 {
 老子都快跑遍整个群岛了，就为了你那点破货。你自己早该动动屁股，自己去赚点钱了，老家伙！
@@ -174,4 +174,7 @@ Neputyovy_kaznachey_55 {
 }
 Neputyovy_kaznachey_56 {
 欢迎上船，Andreas。
+}
+Neputyovy_kaznachey_57 {
+不。你已经出价了。记住——每多一句话，你的船沉没的风险就增加一分。祝你玩得愉快，维克多。
 }
