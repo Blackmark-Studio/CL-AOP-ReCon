@@ -534,7 +534,7 @@ MusketeerOnly            {Dedicated Marksman}
 perkMusketeerOnly         {The character only recognizes the power of gunpowder and lead, completely unable (or strictly refusing) to hold any melee weapon. In combat, they can only use a musket.}
 
 WeaponBonding             {Weapon Bonding}
-perkHumphreyGunmaster      {The character feels a deep mental attachment to their unique weapon.
+perkWeaponBonding         {The character feels a deep mental attachment to their unique weapon.
 ~
 This trait prevents the character from using any other weapon, but they are second to none when handling their personal one.}
 

@@ -1765,7 +1765,7 @@ int GetCharacterItemCabin(ref _refCharacter,string itemName,bool ignore, bool on
 		if (Get_My_Cabin() == "" || or(!ignore, loadedLocation.id != Get_My_Cabin()) || !CheckAttribute(&locations[FindLocation(Get_My_Cabin())], "box1")) return qty;
 	}
 	aref chests;
-	int i, chestsnum = CheckCabinBoxes(locations[FindLocation(Get_My_Cabin())]);
+	int i, chestsnum = CheckCabinBoxes(&locations[FindLocation(Get_My_Cabin())]);
 	string sBox;
 	for(i = 1; i <= chestsnum; i++)
 	{
@@ -2860,7 +2860,7 @@ bool isShipInside(string _id)
     return ret;
 }
 
-void  Set_My_Cabin()
+void Set_My_Cabin()
 {
     int     n, i;
     string  sTemp, newCab;

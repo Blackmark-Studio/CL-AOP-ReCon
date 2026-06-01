@@ -1121,7 +1121,7 @@ Pirates_Shipyard_321 {
 Przypadkiem mam przy sobie całkowicie legalny komplet dokumentów okrętowych, które nie zostały jeszcze zgłoszone jako poszukiwane.
 }
 Pirates_Shipyard_322 {
-@<s1>Statek jest na wodzie i nie został wykreślony z rejestru, proszę się nie martwić. Po prostu roztargniony właściciel zdołał zgubić te dokumenty...
+@<s1> Statek jest na wodzie i nie został wykreślony z rejestru, proszę się nie martwić. Po prostu roztargniony właściciel zdołał zgubić te dokumenty...
 }
 Pirates_Shipyard_323_m {
 Proszę, pozwól mi spojrzeć! Rzeczywiście, ślady są całkiem świeże. Cóż, szczęście Ci sprzyja, panie!
@@ -1130,7 +1130,7 @@ Pirates_Shipyard_323_f {
 Proszę, pozwoli pani zerknąć! Rzeczywiście, ślady są całkiem świeże. Cóż, szczęście pani sprzyja!
 }
 Pirates_Shipyard_324 {
-@<s1>Właśnie taki zestaw był mi potrzebny, a w zamian oferuję Ci @<FindMoneyString>. Co Ty na to?
+@<s1> Właśnie taki zestaw był mi potrzebny, a w zamian oferuję Ci @<FindMoneyString>. Co Ty na to?
 }
 Pirates_Shipyard_325_m {
 To prawdziwie królewska hojność! Oczywiście, że się zgadzam!

@@ -860,7 +860,10 @@ itmdescr_mechanic_kit {Equipo necesario para pequeñas reparaciones, todo guarda
 itmname_crucible {Crisol}
 itmdescr_crucible {Un crisol diseñado para fundir metales a temperaturas muy altas.}
 itmname_bullet_mold {Molde para balas}
-itmdescr_bullet_mold {Este artefacto permite fundir balas con la forma y el tamaño adecuados para el revólver Colt.}
+itmdescr_bullet_mold
+{
+Este molde permite forjar balas a medida con la forma y el tamaño exactos que se necesiten.
+}
 itmname_mortar_and_pestle {Mortero y mano}
 itmdescr_mortar_and_pestle {Permite triturar hierbas medicinales y otros ingredientes en polvo para preparar diversas pociones. No está diseñado para moler nada más duro que una cáscara de nuez.}
 itmname_lamp {Lámpara de aceite}
@@ -1009,8 +1012,13 @@ itmname_Griffins_Weapon {Muestras de armas del señor Griffin}
 itmdescr_Griffins_Weapon {Varias espadas cortas con el nombre del maestro Griffin grabado en las hojas.}
 itmname_HugtorpRing {Anillo de bodas de Hagthorpe}
 itmdescr_HugtorpRing {El anillo de bodas de Hagthorpe, aún puesto en un dedo humano repulsivo y ya rígido.}
-itmname_shark_tooth {Amuleto Diente de Tiburón}
-itmdescr_shark_tooth {Un amuleto de diente de tiburón con las iniciales "S.D." grabadas.}
+itmname_shark_tooth	{Amuleto Diente de Tiburón}
+itmdescr_shark_tooth
+{
+Un amuleto hecho con un diente de tiburón con un grabado personalizado.
+~
+Pasivo: +10% de daño contra criaturas de las profundidades.
+}
 itmname_pinion {Rueda dentada}
 itmdescr_pinion {Un engranaje de un mecanismo de cabrestante.}
 itmname_PDM_PJ_Vino {Botella de vino}
@@ -1090,3 +1098,10 @@ Solo a través del rugido de una gran tormenta, solo a través del crujido de lo
 El mar mismo decidirá qué hacer contigo; lo principal es no resistirse a su fuerza. Y el mayor misterio de la isla: la Isla rechaza las armadas.
 Aquel que se decida a dar este paso debe hacerlo solo. Sin tripulación. Sin compañeros leales a su espalda. Solo tú y la furia del océano. De lo contrario, a todos les aguardará la perdición...
 }
+
+itmname_LesopilkaDoc    {Contrato de la Compañía Neerlandesa de las Indias Occidentales}
+itmdescr_LesopilkaDoc
+{
+Documento necesario para la inscripción en el registro de capitanes de la Compañía Neerlandesa de las Indias Occidentales.
+}
+

@@ -215,7 +215,7 @@ Pirates_Shipyard_65 {
 Vaya, vaya... veamos qué tenemos aquí... Ajá, @<XI_ConvertString>.
 }
 Pirates_Shipyard_66 {
-¡Ah! Así que este barco ha cambiado de dueño más de una vez. No me extraña que esté tan desgastado. ¿Tienes una patente de corso contigo? Es broma... vamos al grano.
+@<s1> ¡Ah! Así que este barco ha cambiado de dueño más de una vez. No me extraña que esté tan desgastado. ¿Tienes una patente de corso contigo? Es broma... vamos al grano.
 }
 Pirates_Shipyard_67_m {
 @<s1> ¿Qué te gustaría hacer con él?
@@ -428,7 +428,7 @@ Pirates_Shipyard_124 {
 ... Bien, eso debería ser todo... Puedes mejorar el calibre y comprar más cañones.
 }
 Pirates_Shipyard_125 {
-Por cierto, también puedes hacer eso en mi astillero.
+@<s1> Por cierto, también puedes hacer eso en mi astillero.
 }
 Pirates_Shipyard_126 {
 ¡Gracias! Me aseguraré de revisar todo.
@@ -518,7 +518,7 @@ Pirates_Shipyard_150 {
 @<s1> Para reforzar las troneras y las cureñas de los cañones pesados, necesitaré: madera de ébano – @<cannonMatherial1>.
 }
 Pirates_Shipyard_151 {
-Y por el trabajo, aceptaré: tesoros – @<cannonMatherial2>, cofres de oro – @<cannonMatherial3>,
+@<s1> Y por el trabajo, aceptaré: tesoros – @<cannonMatherial2>, cofres de oro – @<cannonMatherial3>,
 }
 Pirates_Shipyard_152 {
 @<s1> más @<FindMoneyString> para gastos operativos. Ya sabes, no es un trabajo sencillo... Ah, y el pago es por adelantado.
@@ -596,7 +596,7 @@ Pirates_Shipyard_172 {
 @<s1>. Para mamparos más ligeros, necesitaré: sándalo - @<capacityMatherial1>.
 }
 Pirates_Shipyard_173 {
-Como pago por mi trabajo, tomaré: pepitas de oro – @<capacityMatherial2>, cofres de oro – @<capacityMatherial3>,
+@<s1> Como pago por mi trabajo, tomaré: pepitas de oro – @<capacityMatherial2>, cofres de oro – @<capacityMatherial3>,
 }
 Pirates_Shipyard_174 {
 @<s1> más @<FindMoneyString> para gastos operativos. Eso sería todo. Ah, y el pago por adelantado.
@@ -746,7 +746,7 @@ Pirates_Shipyard_214 {
 Veamos qué se puede hacer. Ahora mismo, la tripulación máxima que puede llevar tu barco, incluyendo el exceso de capacidad, es de @<FindPeoplesString>.
 }
 Pirates_Shipyard_215 {
-@<s1> Para hamacas adicionales y forrar los cofres, necesitaré: pieles - @<MaxCrewMatherial1>.
+@<s1> Para hamacas adicionales y forrar los cofres, necesitaré: cuero - @<MaxCrewMatherial1>.
 }
 Pirates_Shipyard_216 {
 @<s1> Mi tarifa: zafiros – @<MaxCrewMatherial2>, cofres de oro – @<MaxCrewMatherial3>, más @<FindMoneyString> para gastos operativos. Eso es todo. Ah, y el pago por adelantado.
@@ -806,7 +806,7 @@ Pirates_Shipyard_230 {
 Esperando.
 }
 Pirates_Shipyard_231 {
-Aún tienes que traer: pieles - @<sti>, zafiros - @<sti>, cofres - @<sti>.
+Aún tienes que traer: cuero - @<sti>, zafiros - @<sti>, cofres - @<sti>.
 }
 Pirates_Shipyard_232 {
 De acuerdo.
@@ -824,7 +824,7 @@ Pirates_Shipyard_236 {
 @<s1> Para ponerle velas adicionales y hacerla avanzar, necesito lona: @<TurnRateMatherial1>.
 }
 Pirates_Shipyard_237 {
-Y por el trabajo, mi tarifa es: cofres de oro – @<TurnRateMatherial3>, rubíes – @<TurnRateMatherial2>, más @<FindMoneyString> para gastos. Entiende que no pienso morir en este agujero... Eso es todo. Ah, y el pago es por adelantado.
+@<s1> Y por el trabajo, mi tarifa es: cofres de oro – @<TurnRateMatherial3>, rubíes – @<TurnRateMatherial2>, más @<FindMoneyString> para gastos. Entiende que no pienso morir en este agujero... Eso es todo. Ah, y el pago es por adelantado.
 }
 Pirates_Shipyard_238 {
 De acuerdo. Acepto las condiciones. Todo lo pactado será entregado.
@@ -1121,7 +1121,7 @@ Pirates_Shipyard_321 {
 Por pura suerte, tengo un juego de papeles del barco completamente en regla, aún sin estar marcado como buscado.
 }
 Pirates_Shipyard_322 {
-La embarcación está a flote y sigue registrada, no te preocupes. Es solo que el dueño despistado de alguna manera logró perder esos papeles…
+@<s1> La embarcación está a flote y sigue registrada, no te preocupes. Es solo que el dueño despistado de alguna manera logró perder esos papeles…
 }
 Pirates_Shipyard_323_m {
 ¡Déjeme echar un vistazo! En efecto, las marcas son bastante recientes. Bien, la suerte está de su lado, señor.
@@ -1130,7 +1130,7 @@ Pirates_Shipyard_323_f {
 ¡Déjeme echar un vistazo! En efecto, las marcas son bastante recientes. Entonces, la fortuna le sonríe, señora.
 }
 Pirates_Shipyard_324 {
-@<s1>Justo necesito un juego como ese, y a cambio te ofrezco @<FindMoneyString>. ¿Qué dices?
+@<s1> Justo necesito un juego como ese, y a cambio te ofrezco @<FindMoneyString>. ¿Qué dices?
 }
 Pirates_Shipyard_325_m {
 ¡Una generosidad digna de un rey! ¡Por supuesto que acepto!

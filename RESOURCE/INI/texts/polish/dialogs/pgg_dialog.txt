@@ -1538,7 +1538,7 @@ pgg_dialog_430 {
 @<Dialog>
 }
 pgg_dialog_431 {
-Twoja część
+@<Dialog> Twoja część
 }
 pgg_dialog_432 {
 Słusznie! Łodzie już są załadowywane!

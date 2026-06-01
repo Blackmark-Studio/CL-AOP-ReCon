@@ -859,7 +859,10 @@ itmdescr_mechanic_kit {Alles, was man für kleine Reparaturen braucht, ordentlic
 itmname_crucible {Schmelztiegel}
 itmdescr_crucible {Ein Tiegel zum Schmelzen von Metallen bei sehr hohen Temperaturen.}
 itmname_bullet_mold {Kugelform}
-itmdescr_bullet_mold {Mit diesem Gerät lassen sich Kugeln in der passenden Form und Größe für den Colt-Revolver gießen.}
+itmdescr_bullet_mold
+{
+Mit dieser Gussform lassen sich Spezialkugeln in genau der gewünschten Form und Größe gießen.
+}
 itmname_mortar_and_pestle {Mörser und Stößel}
 itmdescr_mortar_and_pestle {Ermöglicht das Zerstoßen von Heilkräutern und anderen Zutaten zu Pulver für die Zubereitung verschiedener Tränke. Nicht geeignet zum Zerkleinern von etwas Härterem als einer Walnussschale.}
 itmname_lamp {Öllampe}
@@ -1008,8 +1011,13 @@ itmname_Griffins_Weapon {Waffenmuster von Mr. Griffin}
 itmdescr_Griffins_Weapon {Mehrere Degen mit dem eingravierten Namen von Meister Griffin auf den Klingen.}
 itmname_HugtorpRing {Hagthorpes Ehering}
 itmdescr_HugtorpRing {Hagthorpes Ehering, noch immer an einem abscheulichen und bereits erstarrten menschlichen Finger getragen.}
-itmname_shark_tooth {Haizahn-Amulett}
-itmdescr_shark_tooth {Ein Amulett aus Haifischzahn mit den eingravierten Initialen „S.D.“.}
+itmname_shark_tooth	{Amulett des Haifischzahns}
+itmdescr_shark_tooth
+{
+Ein Amulett aus einem Haifischzahn mit persönlicher Gravur.
+~
+Passiv: +10% Schaden gegen Tiefseekreaturen.
+}
 itmname_pinion {Zahnrad}
 itmdescr_pinion {Ein Zahnrad aus einem Windenmechanismus.}
 itmname_PDM_PJ_Vino {Flasche Wein}
@@ -1088,4 +1096,10 @@ Die Insel akzeptiert jene nicht, die aus müßiger Neugier oder Habgier kommen. 
 Nur durch das Gebrüll eines gewaltigen Sturms, nur durch das Krachen brechender Masten und einen unvermeidlichen Schiffbruch offenbart sich der Pfad.
 Das Meer selbst wird entscheiden, was mit dir geschieht – das Wichtigste ist, seiner Macht keinen Widerstand zu leisten. Und das größte Rätsel der Insel: Die Insel weist Armadas ab.
 Wer sich zu diesem Schritt entschließt, muss ihn allein tun. Ohne Mannschaft. Ohne treue Kameraden im Rücken. Nur du und der Zorn des Ozeans. Andernfalls wird sie alle der Untergang erwarten...
+}
+
+itmname_LesopilkaDoc    {Vertrag der Niederländischen Westindien-Kompanie}
+itmdescr_LesopilkaDoc
+{
+Ein Dokument, das für die Eintragung in das Kapitänsregister der Niederländischen Westindien-Kompanie erforderlich ist.
 }

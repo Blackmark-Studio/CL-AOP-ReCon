@@ -153,7 +153,22 @@ void SetNewMapPicture()
 		string itmGroup = itmRef.groupID;
 		if (itmGroup == MAPS_ITEM_TYPE)
 		{
-			SetNewPicture("MAPS_PICTURE", "interfaces\Maps\" + itmRef.imageTga + ".tga");
+			string imgFileName = itmRef.imageTga + ".tga";
+			if (LanguageGetLanguage() == "Russian")
+			{
+				SetNewPicture("MAPS_PICTURE", "interfaces\Maps\russian\" + imgFileName);
+			}
+			else
+			{
+				if (LanguageGetLanguage() == "Chinese")
+				{
+					SetNewPicture("MAPS_PICTURE", "interfaces\Maps\chinese\" + imgFileName);
+				}
+				else
+				{
+					SetNewPicture("MAPS_PICTURE", "interfaces\Maps\english\" + imgFileName);
+				}
+			}
 			pchar.showlastmap = itmRef.id;							
 		}
 	}	

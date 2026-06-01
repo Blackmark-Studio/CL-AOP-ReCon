@@ -191,7 +191,7 @@ Andre_Abel_Dialog_60 {
 Bermuda ist ziemlich weit weg… Ich gebe zu, André, unsere Chancen stehen nicht besonders gut, aber wir können es versuchen. Vielleicht ist Jackman ja gut gelaunt…
 }
 Andre_Abel_Dialog_61 {
-Verstehst du überhaupt, was du da verlangst, Andre? Jakob Fakmen ist berüchtigt für sein aufbrausendes Temperament! Die meisten Menschen bedeuten ihm nichts. Er hört nicht einmal immer auf Barone, geschweige denn auf andere... Es hat keinen Sinn – vergiss es.
+Verstehst du überhaupt, was du da verlangst, Andre? Jakob Fackman ist berüchtigt für sein aufbrausendes Temperament! Die meisten Menschen bedeuten ihm nichts. Er hört nicht einmal immer auf Barone, geschweige denn auf andere... Es hat keinen Sinn – vergiss es.
 }
 Andre_Abel_Dialog_62_m {
 Ach, wie schade... Aber du hast wahrscheinlich recht. Nein heißt nein... Leb wohl.

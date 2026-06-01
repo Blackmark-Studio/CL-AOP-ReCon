@@ -410,7 +410,7 @@ Clan_Lambrini_115 {
 Je viendrai à coup sûr.
 }
 Clan_Lambrini_116 {
-@<UpperFirst> @<pchar>, vous êtes de retour. Avez-vous vu quelque chose d'intéressant ?
+Vous êtes de retour, @<GetAddress_Form>. Avez-vous vu quelque chose d'intéressant ?
 }
 Clan_Lambrini_117 {
 J'ai réussi à surprendre la conversation de Lambrini avec un capitaine qui s'apprête à vendre une cargaison illégale et coûteuse — de l'acajou. Ne devrions-nous pas aller à la taverne et cueillir Octavio à vif ?

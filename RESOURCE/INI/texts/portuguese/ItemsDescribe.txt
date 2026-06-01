@@ -863,7 +863,7 @@ itmdescr_mechanic_kit {Todo o equipamento necessário para pequenos reparos reun
 itmname_crucible {Crisol}
 itmdescr_crucible {Um cadinho feito para derreter metais em temperaturas muito altas.}
 itmname_bullet_mold {Moldes de Bala}
-itmdescr_bullet_mold {Este dispositivo permite fundir balas no formato e tamanho corretos para o revólver Colt.}
+itmdescr_bullet_mold {Este molde permite fundir balas personalizadas no formato e tamanho exatos necessários.}
 itmname_mortar_and_pestle {Almofariz e pilão}
 itmdescr_mortar_and_pestle {Permite triturar ervas medicinais e outros ingredientes em pó para preparar diversas poções. Não foi feito para esmagar nada mais duro que uma casca de noz.}
 itmname_lamp {Lamparina}
@@ -1012,8 +1012,13 @@ itmname_Griffins_Weapon {Amostras de Armas do Sr. Griffin}
 itmdescr_Griffins_Weapon {Várias espadas curtas com o nome do Mestre Griffin gravado nas lâminas.}
 itmname_HugtorpRing {Aliança de Casamento de Hagthorpe}
 itmdescr_HugtorpRing {Aliança de casamento de Hagthorpe, ainda presa a um dedo humano horrendo e já enrijecido.}
-itmname_shark_tooth {Amuleto Dente de Tubarão}
-itmdescr_shark_tooth {Um amuleto de dente de tubarão com as iniciais "S.D." gravadas.}
+itmname_shark_tooth	{Amuleto Dente de Tubarão}
+itmdescr_shark_tooth
+{
+Um amuleto feito de dente de tubarão com uma gravação personalizada.
+~
+Passivo: +10% de dano contra criaturas das profundezas.
+}
 itmname_pinion {Engrenagem}
 itmdescr_pinion {Uma engrenagem de um mecanismo de guincho.}
 itmname_PDM_PJ_Vino {Garrafa de vinho}
@@ -1092,4 +1097,10 @@ A ilha não aceita aqueles que vêm por curiosidade ociosa ou ganância. Para al
 Somente através do rugido de uma grande tempestade, somente através do estalo de mastros se quebrando e do inevitável naufrágio, o caminho se revela.
 O próprio mar decidirá o que fazer com você — o principal é não resistir à sua força. E o maior mistério da ilha: a Ilha rejeita armadas.
 Aquele que decidir dar este passo deve fazê-lo sozinho. Sem tripulação. Sem companheiros leais às costas. Apenas você e a fúria do oceano. Caso contrário, a perdição aguardará a todos...
+}
+
+itmname_LesopilkaDoc    {Contrato da Companhia Holandesa das Índias Ocidentais}
+itmdescr_LesopilkaDoc
+{
+Documento necessário para a inclusão no registro de capitães da Companhia Holandesa das Índias Ocidentais.
 }

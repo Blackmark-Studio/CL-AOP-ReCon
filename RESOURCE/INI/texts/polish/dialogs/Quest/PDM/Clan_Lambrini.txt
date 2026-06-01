@@ -410,7 +410,7 @@ Clan_Lambrini_115 {
 Na pewno przyjdę.
 }
 Clan_Lambrini_116 {
-@<UpperFirst> @<pchar>, pan wrócił. Widział pan coś interesującego?
+Widzę, że już wróciłeś, @<GetAddress_Form>. Widział pan coś interesującego?
 }
 Clan_Lambrini_117 {
 Udało mi się podsłuchać rozmowę Lambriniego z kapitanem, który zamierza sprzedać nielegalny i drogi towar – mahoń. Może warto wybrać się do tawerny i złapać Ottavia na gorącym uczynku?

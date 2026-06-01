@@ -1364,6 +1364,7 @@ bool PGG_CheckForQuestOffer(ref chr)
 		LAi_SetActorType(chr);
 		LAi_ActorDialog(chr, pchar, "", 2.0, 0);
 		DoQuestCheckDelay("OpenTheDoors", 5.0);      // fix
+		SetFunctionExitFromLocationCondition("PGG_EndQuestOffer_Force", pchar.location, false);
 	}
 	return retVal;
 }
@@ -1996,4 +1997,12 @@ void PGG_EndQuest(ref chr)
 	DeleteAttributeEx(chr, "PGGAi.ActiveQuest,AlwaysFriend,AlwaysEnemy,Coastal_Captain");
 	LAi_group_Delete("PGGTmp");
 	CloseQuestHeader("Gen_PGGQuest1");
+}
+
+void PGG_EndQuestOffer_Force(string qName)
+{
+	if (CheckAttribute(pchar, "GenQuest.PGG_Quest"))
+	{
+		DeleteAttribute(pchar, "GenQuest.PGG_Quest");
+	}
 }

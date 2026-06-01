@@ -191,7 +191,7 @@ Andre_Abel_Dialog_60 {
 Bermuda’s a long way off... I’ll admit, André, our chances aren’t great, but we can give it a shot. Maybe Jackman will be in a good mood...
 }
 Andre_Abel_Dialog_61 {
-Do you even understand what you're asking, Andre? Jakob Fakmen is notorious for his harsh temper! Most people mean nothing to him. He doesn't always listen to barons, let alone anyone else... It's pointless—forget about it.
+Do you even understand what you're asking, Andre? Jakob Fackman is notorious for his harsh temper! Most people mean nothing to him. He doesn't always listen to barons, let alone anyone else... It's pointless—forget about it.
 }
 Andre_Abel_Dialog_62_m {
 Ah, what a pity... But you’re probably right. No means no... Farewell.

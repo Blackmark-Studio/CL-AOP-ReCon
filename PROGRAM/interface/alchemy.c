@@ -380,8 +380,8 @@ void AddToTable(ref rItem)
 				sAttr = FindStringBeforeChar(sAttr, ":");
 			}
 
-			if (CheckCharacterPerk(pchar, "Alchemy") && StrEndsWith(sAttr, "_kit"))
-				continue;
+			/*if (CheckCharacterPerk(pchar, "Alchemy") && StrEndsWith(sAttr, "_kit"))
+				continue;*/
 
 			GrabCabinItems(sAttr);
 			itm = ItemsFromId(sAttr);

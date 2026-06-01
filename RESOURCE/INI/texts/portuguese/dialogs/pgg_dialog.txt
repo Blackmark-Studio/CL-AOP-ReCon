@@ -1538,7 +1538,7 @@ pgg_dialog_430 {
 @<Dialog>
 }
 pgg_dialog_431 {
-Sua parte
+@<Dialog> Sua parte
 }
 pgg_dialog_432 {
 Justo! Eles já estão carregando os barcos!
@@ -1673,10 +1673,10 @@ pgg_dialog_473 {
 Nada mal, Capitão! O saque soma @<PChar> @<PChar>.
 }
 pgg_dialog_474 {
-Minha parte
+@<Dialog> Minha parte
 }
 pgg_dialog_475 {
-Sua parte
+@<Dialog> Sua parte
 }
 pgg_dialog_476 {
 Justo, pode me derrubar se eu estiver errado!

@@ -74,7 +74,7 @@ Common_Tavern_21 {
 I have a delicate matter to discuss with you.
 }
 Common_Tavern_22 {
-I'm looking for a man named Rafael Guinness. How can I find him?
+I'm looking for a man named Raphael Guinness. How can I find him?
 }
 Common_Tavern_23 {
 For God's sake, Captain, help me! They'll ruin everything! My tavern!

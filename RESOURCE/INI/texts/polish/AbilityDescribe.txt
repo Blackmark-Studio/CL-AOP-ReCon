@@ -529,7 +529,7 @@ MusketeerOnly            {Zdeklarowany strzelec}
 perkMusketeerOnly         {Postać uznaje tylko siłę prochu i ołowiu, zupełnie nie potrafiąc (lub zasadniczo odmawiając) trzymania w ręku jakiejkolwiek broni białej. W walce może używać wyłącznie muszkietu.}
 
 WeaponBonding             {Więź z bronią}
-perkHumphreyGunmaster      {Postać odczuwa głębokie psychiczne przywiązanie do swojej unikalnej broni.
+perkWeaponBonding         {Postać odczuwa głębokie psychiczne przywiązanie do swojej unikalnej broni.
 ~
 Ta cecha charakteru nie pozwala postaci na używanie jakiejkolwiek innej broni, ale w posługiwaniu się swoją osobistą bronią nie ma sobie równych.}
 

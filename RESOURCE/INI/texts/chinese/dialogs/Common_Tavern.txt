@@ -74,7 +74,7 @@ Common_Tavern_21 {
 我有件私事想跟你谈谈。
 }
 Common_Tavern_22 {
-我在找一个叫Rafael Guinness的人，你知道怎么能找到他吗？
+我在找一个叫Raphael Guinness的人，你知道怎么能找到他吗？
 }
 Common_Tavern_23 {
 看在上帝的份上，船长，救救我！他们会把一切都毁了！我的酒馆啊！

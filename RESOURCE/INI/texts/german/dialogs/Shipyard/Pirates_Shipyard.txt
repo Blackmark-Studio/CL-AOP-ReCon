@@ -215,7 +215,7 @@ Pirates_Shipyard_65 {
 Na, na... schauen wir mal, was wir hier haben... Aha, @<XI_ConvertString>.
 }
 Pirates_Shipyard_66 {
-Ah! Dieses Schiff hat also schon mehrmals den Besitzer gewechselt. Kein Wunder, dass es so abgenutzt ist. Hast du ein Kaperbrief dabei? Nur ein Scherz... kommen wir zur Sache.
+@<s1> Ah! Dieses Schiff hat also schon mehrmals den Besitzer gewechselt. Kein Wunder, dass es so abgenutzt ist. Hast du ein Kaperbrief dabei? Nur ein Scherz... kommen wir zur Sache.
 }
 Pirates_Shipyard_67_m {
 @<s1> Was möchtest du mit ihm tun?
@@ -428,7 +428,7 @@ Pirates_Shipyard_124 {
 ... Nun, das sollte alles sein... Du kannst das Kaliber aufrüsten und weitere Kanonen kaufen.
 }
 Pirates_Shipyard_125 {
-Übrigens, das kannst du auch in meiner Werft erledigen lassen.
+@<s1> Übrigens, das kannst du auch in meiner Werft erledigen lassen.
 }
 Pirates_Shipyard_126 {
 Danke! Ich werde alles auf jeden Fall überprüfen.
@@ -518,7 +518,7 @@ Pirates_Shipyard_150 {
 @<s1> Um die Geschützpforten und Lafetten der schweren Kanonen zu verstärken, brauche ich Ebenholz – @<cannonMatherial1>.
 }
 Pirates_Shipyard_151 {
-Und für den Auftrag nehme ich: Schätze – @<cannonMatherial2>, Truhen voller Gold – @<cannonMatherial3>,
+@<s1> Und für den Auftrag nehme ich: Schätze – @<cannonMatherial2>, Truhen voller Gold – @<cannonMatherial3>,
 }
 Pirates_Shipyard_152 {
 @<s1> plus @<FindMoneyString> für die Betriebskosten. Sie verstehen schon – das ist keine leichte Aufgabe... Ach, und die Bezahlung im Voraus.
@@ -596,7 +596,7 @@ Pirates_Shipyard_172 {
 @<s1>. Für leichtere Schotten brauche ich: Sandelholz – @<capacityMatherial1>.
 }
 Pirates_Shipyard_173 {
-Als Bezahlung für meine Arbeit nehme ich: Goldnuggets – @<capacityMatherial2>, Goldtruhen – @<capacityMatherial3>,
+@<s1> Als Bezahlung für meine Arbeit nehme ich: Goldnuggets – @<capacityMatherial2>, Goldtruhen – @<capacityMatherial3>,
 }
 Pirates_Shipyard_174 {
 @<s1> plus @<FindMoneyString> für die Betriebskosten. Das wäre alles. Ach, und die Bezahlung im Voraus.
@@ -824,7 +824,7 @@ Pirates_Shipyard_236 {
 @<s1> Für zusätzliche Segel, damit sie Fahrt aufnimmt, brauche ich: Segeltuch – @<TurnRateMatherial1>.
 }
 Pirates_Shipyard_237 {
-Und für den Auftrag verlange ich: Truhen voller Gold – @<TurnRateMatherial3>, Rubine – @<TurnRateMatherial2>, dazu @<FindMoneyString> für Auslagen. Dir ist schon klar, dass ich nicht vorhabe, in diesem Loch zu sterben... Das wäre alles. Ach, und das Geld gibt’s im Voraus.
+@<s1> Und für den Auftrag verlange ich: Truhen voller Gold – @<TurnRateMatherial3>, Rubine – @<TurnRateMatherial2>, dazu @<FindMoneyString> für Auslagen. Dir ist schon klar, dass ich nicht vorhabe, in diesem Loch zu sterben... Das wäre alles. Ach, und das Geld gibt’s im Voraus.
 }
 Pirates_Shipyard_238 {
 In Ordnung. Ich akzeptiere die Bedingungen. Alles Vereinbarte wird geliefert.
@@ -1121,7 +1121,7 @@ Pirates_Shipyard_321 {
 Durch einen glücklichen Zufall habe ich einen völlig legalen Satz Schiffspapiere – noch nicht als gesucht gemeldet.
 }
 Pirates_Shipyard_322 {
-Das Schiff ist seetüchtig und immer noch im Register eingetragen, keine Sorge. Es ist nur so, dass der zerstreute Besitzer es irgendwie geschafft hat, die Papiere zu verlieren…
+@<s1> Das Schiff ist seetüchtig und immer noch im Register eingetragen, keine Sorge. Es ist nur so, dass der zerstreute Besitzer es irgendwie geschafft hat, die Papiere zu verlieren…
 }
 Pirates_Shipyard_323_m {
 Lassen Sie mich mal sehen! Tatsächlich, die Spuren sind ziemlich frisch. Nun denn, das Glück ist auf Ihrer Seite, mein Herr!
@@ -1130,7 +1130,7 @@ Pirates_Shipyard_323_f {
 Lassen Sie mich mal sehen! Tatsächlich, die Spuren sind noch ganz frisch. Nun denn, das Glück ist Ihnen hold, gnädige Frau!
 }
 Pirates_Shipyard_324 {
-@<s1>Genau so ein Set brauche ich gerade, und im Gegenzug biete ich dir @<FindMoneyString> an. Was meinst du?
+@<s1> Genau so ein Set brauche ich gerade, und im Gegenzug biete ich dir @<FindMoneyString> an. Was meinst du?
 }
 Pirates_Shipyard_325_m {
 Wirklich königliche Großzügigkeit! Natürlich nehme ich an!

@@ -1538,7 +1538,7 @@ pgg_dialog_430 {
 @<Dialog>
 }
 pgg_dialog_431 {
-Votre part
+@<Dialog> Votre part
 }
 pgg_dialog_432 {
 Très bien! Ils chargent déjà les bateaux!
@@ -1673,10 +1673,10 @@ pgg_dialog_473 {
 Pas mal, capitaine! Le butin s’élève à @<PChar> @<PChar>.
 }
 pgg_dialog_474 {
-Ma part
+@<Dialog> Ma part
 }
 pgg_dialog_475 {
-Votre part
+@<Dialog> Votre part
 }
 pgg_dialog_476 {
 Très bien, corrige-moi si je me trompe!

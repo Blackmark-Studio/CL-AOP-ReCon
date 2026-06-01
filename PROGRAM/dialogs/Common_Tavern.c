@@ -1713,7 +1713,7 @@ void ProcessDialogEvent()
 			AddQuestRecord("Marginpassenger", "7");
 			AddQuestUserData("Marginpassenger", "sName2", pchar.GenQuest.Marginpassenger.q2Name);
 			AddQuestUserData("Marginpassenger", "sCity", XI_ConvertString("Colony" + pchar.GenQuest.Marginpassenger.City + "Acc"));
-			AddQuestUserData("Marginpassenger", "sBaron", "в Ле Франсуа, к Бартоломью Роджерсу"); //TODO: ветвление, если будет доступно смещение Роджерса
+			AddQuestUserData("Marginpassenger", "sBaron", FindCityMayorName("LeFransua")); //TODO: ветвление, если будет доступно смещение Роджерса
 			pchar.GenQuest.Marginpassenger = "cabin";
 		break;
 

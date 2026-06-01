@@ -529,7 +529,7 @@ MusketeerOnly            {Überzeugter Schütze}
 perkMusketeerOnly         {Der Charakter erkennt nur die Macht von Pulver und Blei an und ist völlig unfähig (oder weigert sich aus Prinzip), eine Nahkampfwaffe in den Händen zu halten. Im Kampf kann er ausschließlich eine Muskete verwenden.}
 
 WeaponBonding             {Waffenbindung}
-perkHumphreyGunmaster      {Der Charakter spürt eine tiefe mentale Bindung zu seiner einzigartigen Waffe.
+perkWeaponBonding         {Der Charakter spürt eine tiefe mentale Bindung zu seiner einzigartigen Waffe.
 ~
 Diese Charaktereigenschaft erlaubt es dem Charakter nicht, eine andere Waffe zu benutzen, aber im Umgang mit seiner persönlichen Waffe ist er unübertroffen.}
 

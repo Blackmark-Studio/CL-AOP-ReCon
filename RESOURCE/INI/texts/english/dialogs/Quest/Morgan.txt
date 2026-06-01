@@ -1214,7 +1214,7 @@ Morgan_311_f {
 That’s exactly what I thought when I ordered them to load the bombs.
 }
 Morgan_312 {
-Alright then, you’d best get back to your own business now. If you want to work for one of the nations, I won’t stand in your way. When you’re done, come find me and we’ll continue our partnership. Just steer clear of the English—Medford knows all too well about your exploits. He and I are, in a way, on friendly terms.
+Alright then, you’d best get back to your own business now. If you want to work for one of the nations, I won’t stand in your way. When you’re done, come find me and we’ll continue our partnership. Just steer clear of the English—Modyford knows all too well about your exploits. He and I are, in a way, on friendly terms.
 }
 Morgan_313 {
 What if I don’t want to deal with the authorities?

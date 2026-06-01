@@ -105,7 +105,7 @@ Cannons_hint
 {
 Die Kanone flink laden, heranrollen, und während das Echo der Salve noch zwischen den Schotten dröhnt, reinigen, laden, zielen, Wasser über die Kanone gießen, damit sie nicht überhitzt ... Im Gefecht zählt nur das Nötigste: laden, heranrollen, feuern!
 ~
-Hängt von Talent und Power ab (T*0.8+A*0.2).
+Hängt von Talent und Power ab (T*0.6+P*0.4).
 }
 Sailing_hint
 {

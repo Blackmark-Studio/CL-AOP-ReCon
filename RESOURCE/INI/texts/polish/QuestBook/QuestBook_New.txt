@@ -687,7 +687,7 @@ Marginpassenger.7 {No proszę! Okazuje się, że @<sName2> wyciągnął kopyta. 
 Marginpassenger.8 {Od karczmarza dowiedziałem się, że osobę, której szukam, najłatwiej znaleźć na ulicach miasta. Jednak nie powinienem szukać jej przed południem ani po dziewiątej wieczorem — wygląda na to, że w tych godzinach @<sName2> nie spotyka się z nikim.}
 Marginpassenger.9 {Okup został odebrany – @<sSum> w złocie @<sMoney>. Teraz muszę się stąd szybko ulotnić – kto wie, co moja była „zdobycz” może o mnie nagadać...}
 Marginpassenger.10 {Okup został odebrany – @<sSum> miło ciąży w mojej kieszeni. Teraz muszę szybko się stąd ulotnić — kto wie, co moja była „zdobycz” może o mnie nagadać...}
-Marginpassenger.11 {@<sName2> odmówił zapłacenia okupu. I co mam teraz zrobić z moją „zdobyczą”? Zabranie jej do @<sCity> jest zbyt niebezpieczne—nie podejmę takiego ryzyka. Lepiej udam się do @<sBaron>—podobno specjalizuje się w wyciąganiu pieniędzy od rodzin jeńców. Spróbuję sprzedać mu mojego pasażera.}
+Marginpassenger.11 {@<sName2> odmówił zapłacenia okupu. I co mam teraz zrobić z moją „zdobyczą”? Zabranie jej do @<sCity> jest zbyt niebezpieczne—nie podejmę takiego ryzyka. Lepiej ruszę do Le François, gdzie obecnie rządzi @<sBaron>. Podobno specjalizuje się w wyciąganiu pieniędzy od rodzin jeńców. Spróbuję sprzedać mu mojego pasażera.}
 Marginpassenger.12 {Otrzymano okup – @<sSum>. Niezbyt wielka nagroda za cały mój wysiłek, ale lepsze to niż nic.}
 Marginpassenger.13 {Zamiast okupu otrzymałem od @<sName> ciekawy trop. Powinienem natychmiast udać się na @<sShore>. Mam nie więcej niż tydzień.}
 Marginpassenger.14 {Spóźniłem się na @<sShore>. Kolejna zdobycz mi umknęła. Co za pech!}

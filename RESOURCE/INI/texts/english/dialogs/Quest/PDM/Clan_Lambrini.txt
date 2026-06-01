@@ -410,7 +410,7 @@ Clan_Lambrini_115 {
 I will definitely come.
 }
 Clan_Lambrini_116 {
-@<UpperFirst> @<pchar>, you're back. See anything interesting?
+You're back, @<GetAddress_Form>. See anything interesting?
 }
 Clan_Lambrini_117 {
 I managed to overhear Lambrini's conversation with a captain who's going to sell an illegal and expensive cargo—mahogany. Maybe we should head to the tavern and catch Octavio while he's hot?

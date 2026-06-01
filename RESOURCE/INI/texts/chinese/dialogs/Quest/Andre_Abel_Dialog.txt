@@ -191,7 +191,7 @@ Andre_Abel_Dialog_60 {
 Bermuda离这可不近啊……我得承认，André，我们的机会不大，但还是可以试试。说不定Jackman心情好呢……
 }
 Andre_Abel_Dialog_61 {
-你知道自己在求什么吗，Andre？Jakob Fakmen可是出了名的脾气暴躁！大多数人在他眼里根本不算什么。他连baron的话都不一定听，更别说其他人了……没意义的，别想了。
+你知道自己在求什么吗，Andre？Jakob Fackman可是出了名的脾气暴躁！大多数人在他眼里根本不算什么。他连baron的话都不一定听，更别说其他人了……没意义的，别想了。
 }
 Andre_Abel_Dialog_62_m {
 唉，真可惜……不过你说得对。不行就是不行……再见。

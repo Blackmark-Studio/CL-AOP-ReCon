@@ -105,7 +105,7 @@ Cannons_hint
 {
 Carregue o canhão com rapidez, aproxime-o e, enquanto o eco do disparo ainda ressoa entre os compartimentos, limpe, recarregue, mire, jogue água no canhão para não superaquecer... No calor da batalha, nada de excessos: carregar, aproximar, disparar!
 ~
-Depende de Talento e Poder (T*0.8+A*0.2).
+Depende de Talento e Poder (T*0.6+P*0.4).
 }
 Sailing_hint
 {

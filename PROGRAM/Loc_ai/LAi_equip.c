@@ -588,7 +588,6 @@ void ApplyPerkTemplate_Medic(ref chr, string kind, int level)
 	switch (patternNum)
 	{
 		case 0:
-			if (level >= 5) chr.perks.list.PainResistance = "1";
 			if (level >= 6) chr.perks.list.PersonalCare = "1";
 			if (level >= 7) chr.perks.list.LifeSupport = "1";
 			if (level >= 8) chr.perks.list.Prevention = "1";
@@ -599,12 +598,10 @@ void ApplyPerkTemplate_Medic(ref chr, string kind, int level)
 			if (level >= 5) chr.perks.list.LifeSupport = "1";
 			if (level >= 6) chr.perks.list.Prevention = "1";
 			if (level >= 7) chr.perks.list.Doctor3 = "1";
-			if (level >= 8) chr.perks.list.PainResistance = "1";
 			if (level >= 9) chr.perks.list.PersonalCare = "1";
 		break;
 
 		case 2:
-			if (level >= 5) chr.perks.list.PainResistance = "1";
 			if (level >= 6) chr.perks.list.LifeSupport = "1";
 			if (level >= 7) chr.perks.list.Prevention = "1";
 			if (level >= 8) chr.perks.list.Doctor3 = "1";

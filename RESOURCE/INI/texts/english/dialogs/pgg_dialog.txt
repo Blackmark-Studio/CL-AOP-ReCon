@@ -1538,7 +1538,7 @@ pgg_dialog_430 {
 @<Dialog>
 }
 pgg_dialog_431 {
-Your share
+@<Dialog> Your share
 }
 pgg_dialog_432 {
 Fair enough! They’re already loading the boats!
@@ -1673,10 +1673,10 @@ pgg_dialog_473 {
 Not bad, Captain! The loot amounts to @<PChar> @<PChar>.
 }
 pgg_dialog_474 {
-My share
+@<Dialog> My share
 }
 pgg_dialog_475 {
-Your share
+@<Dialog> Your share
 }
 pgg_dialog_476 {
 Fair enough, strike me down if I’m wrong!

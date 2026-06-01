@@ -74,7 +74,7 @@ Common_Tavern_21 {
 Tengo un asunto delicado que quiero tratar contigo.
 }
 Common_Tavern_22 {
-Busco a un hombre llamado Rafael Guinness. ¿Cómo puedo encontrarlo?
+Busco a un hombre llamado Raphael Guinness. ¿Cómo puedo encontrarlo?
 }
 Common_Tavern_23 {
 ¡Por el amor de Dios, capitán, ayúdeme! ¡Van a arruinarlo todo! ¡Mi taberna!

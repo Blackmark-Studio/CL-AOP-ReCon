@@ -263,6 +263,23 @@ void InitInterface(string iniName)
 //			argb(makeint(255/(makefloat(100)/BOUNDARIES_OPACITY)), BOUNDARIES_R, BOUNDARIES_G, BOUNDARIES_B));
 //	}
 
+	string imgFileName = "map_good.tga";
+	if (LanguageGetLanguage() == "Russian")
+	{
+		SetNewPicture("MAIN_BACK", "interfaces\Maps\russian\" + imgFileName);
+	}
+	else
+	{
+		if (LanguageGetLanguage() == "Chinese")
+		{
+			SetNewPicture("MAIN_BACK", "interfaces\Maps\chinese\" + imgFileName);
+		}
+		else
+		{
+			SetNewPicture("MAIN_BACK", "interfaces\Maps\english\" + imgFileName);
+		}
+	}
+
 	CreateString(true,"DateTime", GetDateString() + " " + GetTimeString(), FONT_CAPTION, COLOR_NORMAL, 170, 10, SCRIPT_ALIGN_CENTER, 0.8);
 	CreateString(true,"ProvisionsInfo", XI_ConvertString("Food for") + CalculateShipFood(pchar) + "/" + CalculateShipRum(pchar) + XI_ConvertString("days") +
 		" (" + XI_ConvertString("FoodAcc") + "/" + XI_ConvertString("RumAcc") + ")", FONT_CAPTION, COLOR_NORMAL, 630, 10, SCRIPT_ALIGN_CENTER, 0.8);

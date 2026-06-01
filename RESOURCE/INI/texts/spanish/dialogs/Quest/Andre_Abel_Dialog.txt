@@ -191,7 +191,7 @@ Andre_Abel_Dialog_60 {
 Bermuda está bastante lejos… Lo admito, André, no tenemos muchas posibilidades, pero podemos intentarlo. Quizás Jackman esté de buen humor…
 }
 Andre_Abel_Dialog_61 {
-¿De verdad entiendes lo que estás pidiendo, Andre? ¡Jakob Fakmen es famoso por su mal carácter! La mayoría de las personas no significan nada para él. Ni siquiera siempre escucha a los barones, mucho menos a los demás... No tiene sentido, olvídalo.
+¿De verdad entiendes lo que estás pidiendo, Andre? ¡Jakob Fackman es famoso por su mal carácter! La mayoría de las personas no significan nada para él. Ni siquiera siempre escucha a los barones, mucho menos a los demás... No tiene sentido, olvídalo.
 }
 Andre_Abel_Dialog_62_m {
 Ah, qué lástima... Pero probablemente tienes razón. No es no... Adiós.

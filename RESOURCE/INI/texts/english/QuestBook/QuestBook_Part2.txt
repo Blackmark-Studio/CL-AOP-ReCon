@@ -568,7 +568,7 @@ Eng_Line_1_Albermal {Escort of Duke Albemarle}
 Eng_Line_1_Albermal.1 {I was lucky to receive an important assignment from Sir Thomas Modyford, the governor-general of the English colonies. I need to speak with the Duke of Albemarle, who is in Modyford’s residence in a private office.}
 Eng_Line_1_Albermal.2 {The Duke of Albemarle is now assigned to my ship. My task is to deliver the Duke to the city of Saint John's, on the island of Antigua. Upon arrival in Saint John's, I must escort the Duke directly to the governor's residence. I need to be cautious: it seems Modyford has reason to believe the Spanish have started hunting for the Duke of Albemarle...}
 Eng_Line_1_Albermal.3 {As I approached Antigua, I was attacked by a Spanish fluyt. Looks like it was one of those patrols hunting for Duke Albemarle. The Spaniard is gone, and I’m anchored at St. John’s. Just one last thing to do.}
-Eng_Line_1_Albermal.4 {Medford’s task is complete, and Duke Albemarle has been safely delivered. I have Albemarle’s dispatch for Medford in my possession, so I can return to Port Royal for my well-earned reward.}
+Eng_Line_1_Albermal.4 {Modyford’s task is complete, and Duke Albemarle has been safely delivered. I have Albemarle’s dispatch for Modyford in my possession, so I can return to Port Royal for my well-earned reward.}
 Eng_Line_2_Talking {Convince the famous pirates to attack Curaçao}
 Eng_Line_2_Talking.1 {The Governor of Jamaica has tasked me with negotiating with four privateers: Edward Mansfield in the buccaneer settlement of La Vega on Hispaniola, Henry Morgan in the city of Saint John's on Antigua, Jackman on Bermuda, and John Morris on the island of Trinidad. I need to persuade them to attack the Dutch city of Curaçao.}
 Eng_Line_2_Talking.2 {I spoke with Morgan and was refused permission to attack Curaçao. The reason is that there aren’t enough forces at the moment to carry out such an operation.}
@@ -604,7 +604,7 @@ Eng_Line_4_Intelligence_Curacao.1 {I’ve received another assignment from the E
 Eng_Line_4_Intelligence_Curacao.2 {The local moneylender, Josef Nunen de Fonquesao, is exactly who I need. This man would betray anyone for money, which is just what I need.}
 Eng_Line_4_Intelligence_Curacao.3 {Josef pointed me to a corvette anchored in the roadstead at the port of Curacao and ready to set sail. I need to board her and thoroughly search the cabin.}
 Eng_Line_4_Intelligence_Curacao.4 {Damn it, Josef is asking for 100,000!!! What an appetite! But I’ll have to pay the full amount.}
-Eng_Line_4_Intelligence_Curacao.5 {I lost my temper, that scoundrel Josef got under my skin. I tried to finish him off quietly, but he called the guards. The whole city was in an uproar. Well, looks like Medford’s assignment is a failure.}
+Eng_Line_4_Intelligence_Curacao.5 {I lost my temper, that scoundrel Josef got under my skin. I tried to finish him off quietly, but he called the guards. The whole city was in an uproar. Well, looks like Modyford’s assignment is a failure.}
 Eng_Line_4_Intelligence_Curacao.6 {Damn it, I’m in a Dutch prison. They took my weapons and money, and I have no idea what to do next...}
 Eng_Line_4_Intelligence_Curacao.7
 {
@@ -660,8 +660,8 @@ You'll have to deal with a rather unsavory task: Modyford has ordered you to fin
 7. Blayvelt - Guadeloupe
 All the gold found there must be delivered to Modyford. And there should be 2,100 nuggets!
 }
-Eng_Line_7_SevenTresures.2 {Medford’s task is complete. I have found and delivered 2,100 nuggets of gold to the residence of the English governor-general.}
-Eng_Line_7_SevenTresures.3 {@<GoldQtyGaveModiford> nuggets delivered to Medford. @<GoldQtyForSeek> still to be found.}
+Eng_Line_7_SevenTresures.2 {Modyford’s task is complete. I have found and delivered 2,100 nuggets of gold to the residence of the English governor-general.}
+Eng_Line_7_SevenTresures.3 {@<GoldQtyGaveModiford> nuggets delivered to Modyford. @<GoldQtyForSeek> still to be found.}
 Eng_Line_7_SevenTresures.4 {I refused to carry out this task, as it turned into an extremely tiresome ordeal. My standing in Mediford’s eyes has been shaken...}
 Eng_Line_8_ToMansfield {To Edward Mansfeld for gold}
 Eng_Line_8_ToMansfield.1
@@ -680,7 +680,7 @@ Eng_Line_8_ToMansfield.5 {Near Santiago, I caught up with one of the galleons an
 Eng_Line_8_ToMansfield.6 {Near Santiago, I caught up with one of the galleons and boarded her. I did not find any of the stolen gold on the galleon. It is also unknown where the other two galleons that took part in the attack on the buccaneers are.}
 Eng_Line_8_ToMansfield.7 {Near Santiago, I caught up with one of the galleons and sank it. I don’t know where the other two galleons that took part in the attack on the buccaneers are.}
 Eng_Line_9_AttackSantiago {Attack on Santiago}
-Eng_Line_9_AttackSantiago.1 {Medford has ordered me to attack the Spanish city of Santiago. The city is mine to plunder. The only thing Medford wants is the governor of Santiago, José Sancho Jiménez.}
+Eng_Line_9_AttackSantiago.1 {Modyford has ordered me to attack the Spanish city of Santiago. The city is mine to plunder. The only thing Modyford wants is the governor of Santiago, José Sancho Jiménez.}
 Eng_Line_9_AttackSantiago.2 {We took Santiago by storm. Governor Jose Sancho Jimenez is my prisoner. We can return to Jamaica.}
 Eng_Line_9_AttackSantiago.3 {At the exit of Santiago Bay, we were ambushed by the squadron of Manoel Rivero Pardal, who was indeed rushing to Santiago’s aid. We fought and won; we simply had no other choice.}
 Eng_Line_9_AttackSantiago.4 {At the exit from Santiago Bay, we were ambushed by the squadron of Manoel Rivero Pardal, who was indeed hurrying to Santiago’s aid. After the assault on Santiago, I had no strength left for another serious battle. I had to escape.}
@@ -739,7 +739,7 @@ Hol_Line_3_WormEnglishPlans.10 {The moneylender doesn’t lend money to anyone! 
 Hol_Line_3_WormEnglishPlans.11 {The Picardian is also a regular at the brothel. He’s living well, that lucky devil!}
 Hol_Line_3_WormEnglishPlans.12 {Morgan didn’t say anything to me, he just threw me out.}
 Hol_Line_3_WormEnglishPlans.13 {I need to get an English officer out of prison. He has to tell me where Modyford is planning to strike.}
-Hol_Line_3_WormEnglishPlans.14 {I’ve found out everything. Medford is preparing an attack on Fort Orange. Now I need to inform Stuyvesant immediately.}
+Hol_Line_3_WormEnglishPlans.14 {I’ve found out everything. Modyford is preparing an attack on Fort Orange. Now I need to inform Stuyvesant immediately.}
 Hol_Line_4_DefenceOrange {Defend Fort Orange from the impending English attack}
 Hol_Line_4_DefenceOrange.1 {I received a new assignment from the Governor-General of the Netherlands. Now my task is to intercept the English landing expedition and save Fort Orange from being plundered.}
 Hol_Line_4_DefenceOrange.2 {The English ships have been destroyed. Now we need to scout the approaches to Fort Orange—perhaps the English managed to land troops.}
@@ -1230,8 +1230,26 @@ BerglarsGang.13 {And yet I did it! All of Austin’s gang members are finished, 
 BerglarsGang.14 {It’s done—Austin has followed his gang to the afterlife. I have to give him credit: he was quite skilled at persuading and manipulating people, but that trick didn’t work on me. The sly devil tried to equate simple murders in cellars and catacombs with privateering, appealing to my conscience! Unlike him, at sea I personally risk my neck and always give my opponents a chance to surrender—the choice between pride and life is theirs to make.}
 BerglarsGang.15 {It seems that, either in haste or by carelessness, I failed to arrive at the meeting in the dungeon on time. This opportunity is lost forever, and perhaps even an entire adventure?}
 BerglarsGang.16 {Now Austin will go to ground, and I’ll never be able to find him!}
+QM_Santiago
+{
+Location of the gifted item in Santiago
+}
+
+QM_Santiago.1
+{
+In Santiago, a certain @<sName> asked me a question. In return for the correct answer, he told me of a place where I could get an excellent weapon - @<sBladeName>. This place is a grotto on the island of Cuba, near Santiago.
+}
 QM_Port_Royal {Location of the gifted item in Port Royal}
 QM_Port_Royal.1 {In Port Royal, a woman named @<sName> told me where to find an officer's cuirass as a reward for answering her question correctly. It's hidden on Jamaica in Portland Bay.}
+QM_Cumana
+{
+Location of the gifted item in Cumana
+}
+
+QM_Cumana.1
+{
+Today in Cumana, a man named @<sName> asked me a question. In return for the correct answer, he told of an old chest of carpentry tools that would allow for more efficient ship repairs. According to him, this chest had been buried long ago in the Chiriquí Lagoon near Portobelo. He also told me not to be afraid of getting my feet wet. What did he mean by that?
+}
 QM_Port_Of_Spein {Location of the gifted item in Port of Spain}
 QM_Port_Of_Spein.1 {In Port of Spain, a man named @<sName> gave me a treasure map in exchange for answering a question. It's time to start the search!}
 QM_Port_Of_Spein.2 {In Port of Spain, a man named @<sName> answered my question by saying that in the pirate settlement of La Vega, I should go inside the fort, and to the left under the window of the stone house, a flintlock musket is hidden in the ground. I need to go and take it.}

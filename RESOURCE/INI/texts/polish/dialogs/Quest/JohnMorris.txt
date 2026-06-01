@@ -98,7 +98,7 @@ JohnMorris_24 {
 Generalny gubernator Jamajki, delikatnie mówiąc, nie jest mi przychylny. Dlatego jego zaproszenie do udziału w tej sprawie budzi we mnie poważne obawy. Coś tu jest nie tak.
 }
 JohnMorris_25 {
-Możliwe, że Medford zamienił gniew na łaskę.
+Możliwe, że Modyford zamienił gniew na łaskę.
 }
 JohnMorris_26_m {
 Słabo znasz Mediforda. Nie, nie jestem aż tak głupi, coś tu nie gra. Może szykuje się krwawa jatka, a nie mam ochoty kąpać się we krwi dla generalnego gubernatora Jamajki. Tak że beze mnie — powodzenia, korsarzu.
@@ -194,7 +194,7 @@ JohnMorris_50 {
 I co proponujesz?
 }
 JohnMorris_51 {
-Rozumiesz, dla mnie cała ta afera i tak jest korzystna. Jeśli Medford poprosi mnie o przysługę, to można uznać, że zarzuty wobec mnie zostaną wycofane. A jeśli zdołasz zdobyć dokumenty potwierdzające, że to nie ja odpowiadam za ten chaos, o który mnie oskarżają – to też dobrze. Ten drugi wariant wolę, bo nie chcę psuć stosunków z Holendrami.
+Rozumiesz, dla mnie cała ta afera i tak jest korzystna. Jeśli Modyford poprosi mnie o przysługę, to można uznać, że zarzuty wobec mnie zostaną wycofane. A jeśli zdołasz zdobyć dokumenty potwierdzające, że to nie ja odpowiadam za ten chaos, o który mnie oskarżają – to też dobrze. Ten drugi wariant wolę, bo nie chcę psuć stosunków z Holendrami.
 }
 JohnMorris_52 {
 Cóż, przysługa za przysługę. Postaram się zdobyć dokument, który cię uniewinni. Co byś mi doradził zrobić?

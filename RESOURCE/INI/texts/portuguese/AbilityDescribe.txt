@@ -529,7 +529,7 @@ MusketeerOnly            {Atirador Convicto}
 perkMusketeerOnly         {O personagem só reconhece o poder da pólvora e do chumbo, sendo completamente incapaz (ou recusando-se por princípio) de empunhar qualquer tipo de arma branca. Em combate, ele pode usar exclusivamente um mosquete.}
 
 WeaponBonding             {Vínculo com a Arma}
-perkHumphreyGunmaster      {O personagem sente um profundo apego mental à sua arma única.
+perkWeaponBonding         {O personagem sente um profundo apego mental à sua arma única.
 ~
 Esta característica de caráter não permite que o personagem use qualquer outra arma, mas no manuseio de sua arma pessoal ele não tem igual.}
 

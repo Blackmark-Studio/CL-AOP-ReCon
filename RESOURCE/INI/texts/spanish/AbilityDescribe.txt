@@ -528,7 +528,7 @@ MusketeerOnly            {Tirador convencido}
 perkMusketeerOnly         {El personaje solo reconoce el poder de la pólvora y el plomo, siendo completamente incapaz (o negándose por principio) de empuñar cualquier arma blanca. En combate, solo puede utilizar un mosquete.}
 
 WeaponBonding             {Vínculo con el arma}
-perkHumphreyGunmaster      {El personaje siente un profundo apego mental hacia su arma única.
+perkWeaponBonding         {El personaje siente un profundo apego mental hacia su arma única.
 ~
 Este rasgo de carácter no le permite utilizar ninguna otra arma, pero en el manejo de su arma personal no tiene rival.}
 

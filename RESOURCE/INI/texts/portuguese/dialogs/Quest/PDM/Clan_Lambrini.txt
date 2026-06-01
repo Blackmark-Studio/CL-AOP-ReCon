@@ -412,7 +412,7 @@ Clan_Lambrini_115 {
 Com certeza irei.
 }
 Clan_Lambrini_116 {
-@<UpperFirst> @<pchar>, você voltou. Viu algo interessante?
+Você voltou, @<GetAddress_Form>. Viu algo interessante?
 }
 Clan_Lambrini_117 {
 Consegui ouvir uma conversa entre Lambrini e um capitão que planeia vender uma mercadoria ilegal e cara – mogno. Talvez valha a pena ir à taverna e apanhar Ottavio em flagrante?

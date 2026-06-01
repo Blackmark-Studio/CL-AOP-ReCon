@@ -532,3 +532,27 @@ aref ErrorAttr()
     makearef(aError, TEV.Error);
     return aError;
 }
+
+string FindCityMayorName(string sCityId)
+{
+	string sName = "";
+	int i;
+	ref rChr;
+	for (i = 0; i < TOTAL_CHARACTERS; i++)
+	{
+		rChr = &Characters[i];
+		if (!CheckAttribute(rChr, "location")) continue;
+		if (sCityId +"_townhall" != rChr.location) continue;
+		if (!CheckAttribute(rChr, "Dialog.Filename")) continue;
+		if ("Common_Mayor.c" != rChr.Dialog.Filename) continue;
+		if (CheckAttribute(rChr, "name")) sName = rChr.name;
+		if (CheckAttribute(rChr, "lastname"))
+		{
+			if ("" != sName) sName = sName +" ";
+			sName = sName +rChr.lastname;
+		}
+		break;
+	}
+	if ("" == sName) sName = "Error can't find mayor name";
+	return sName;
+}

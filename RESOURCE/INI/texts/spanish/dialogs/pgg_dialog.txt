@@ -1539,7 +1539,7 @@ pgg_dialog_430 {
 @<Dialog>
 }
 pgg_dialog_431 {
-Tu parte
+@<Dialog> Tu parte
 }
 pgg_dialog_432 {
 ¡Está bien! ¡Ya están cargando los botes!
@@ -1674,10 +1674,10 @@ pgg_dialog_473 {
 ¡Nada mal, capitán! El botín suma @<PChar> @<PChar>.
 }
 pgg_dialog_474 {
-Mi parte
+@<Dialog> Mi parte
 }
 pgg_dialog_475 {
-Tu parte
+@<Dialog> Tu parte
 }
 pgg_dialog_476 {
 De acuerdo, ¡derríbame si me equivoco!

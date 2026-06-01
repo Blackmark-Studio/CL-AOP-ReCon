@@ -538,8 +538,8 @@ void ProcessDialogEvent()
 		break;
 
 		case "Antonio_5_1":
-			dialog.text = StringFromKey("Clan_Lambrini_116", UpperFirst(GetAddress_Form(NPChar)), pchar.name);
-			link.l1 = StringFromKey("Clan_Lambrini_117", pchar);
+			dialog.text = StringFromKey("Clan_Lambrini_116", GetAddress_Form(NPChar));
+			link.l1 = StringFromKey("Clan_Lambrini_117");
 			link.l1.go = "Antonio_5_2";
 		break;
 

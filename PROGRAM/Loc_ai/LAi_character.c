@@ -320,40 +320,40 @@ void LAi_DawnWaitAlcoholState(int iAddtime)
 {
     if (CheckAttribute(pchar, "questTemp.Rum") && CheckAttribute(pchar, "chr_ai.drunk"))
     {
-        int iTmp = sti(pchar.chr_ai.drunk);
-        iTmp -= (iAddtime * 900);
-        LAi_DawnAlcoholState(pchar, iTmp);
+        float fTmp = stf(pchar.chr_ai.drunk);
+        fTmp -= (iAddtime * 900);
+        LAi_DawnAlcoholState(pchar, fTmp);
     }
 }
 
 //функция понижения алкоголя в крови в режиме реального времени
-void LAi_DawnAlcoholState(ref chref, int iDrunk)
+void LAi_DawnAlcoholState(ref chref, float fDrunk)
 {
-    if (iDrunk < 1) LAi_SetAlcoholNormal(chref);
+    if (fDrunk < 1.0) LAi_SetAlcoholNormal(chref);
     if (CheckAttribute(chref, "chr_ai.drunk"))
     {
-        if (iDrunk < 16800) DeleteAttribute(chref, "chr_ai.drunk");
-        chref.chr_ai.drunk = iDrunk;
+        if (fDrunk < 16800.0) DeleteAttribute(chref, "chr_ai.drunk");
+        chref.chr_ai.drunk = fDrunk;
 
-        if (iDrunk < 2700) //CamShuttle = 0
+        if (fDrunk < 2700.0) //CamShuttle = 0
         {
             LAi_AlcoholDebaff(chref, 51);
             if (CheckAttribute(chref, "questTemp.Rum")) DeleteAttribute(chref, "questTemp.Rum");
             if (CheckAttribute(chref, "GenQuest.CamShuttle")) DeleteAttribute(chref, "GenQuest.CamShuttle");
         }
-        else if (iDrunk < 5600) //CamShuttle = 1
+        else if (fDrunk < 5600.0) //CamShuttle = 1
         {
             LAi_AlcoholDebaff(chref, 51);
             chref.questTemp.Rum = 2;
             chref.GenQuest.CamShuttle = 1;
         }
-        else if (iDrunk < 11200) //CamShuttle = 2
+        else if (fDrunk < 11200.0) //CamShuttle = 2
         {
             LAi_AlcoholDebaff(chref, 71);
             chref.questTemp.Rum = 4;
             chref.GenQuest.CamShuttle = 2;
         }
-        else if (iDrunk < 16800) //CamShuttle = 3
+        else if (fDrunk < 16800.0) //CamShuttle = 3
         {
             LAi_AlcoholDebaff(chref, 71);
             chref.questTemp.Rum = 6;
@@ -1168,257 +1168,238 @@ float SprintEnergyCost = 3.0;
 //Процессируем всех загруженных персонажей
 void LAi_AllCharactersUpdate(float dltTime)
 {
+	int idx;
+	aref chr_ai;
+	float charge, dltcharge, ChargeMax;
+
 	for(int i = 0; i < LAi_numloginedcharacters; i++)
 	{
-		int idx = LAi_loginedcharacters[i];
-		if(idx >= 0)
+		idx = LAi_loginedcharacters[i];
+		if (idx < 0) continue;
+
+		//Персонаж
+		ref chr = &Characters[idx];
+		if(LAi_IsDead(chr)) continue;
+		bool bIsMainChar = idx == GetMainCharacterIndex();
+		makearef(chr_ai, Characters[idx].chr_ai);
+
+		//Восcтановление жизни
+		float dlthp = LAI_DEFAULT_DLTHP;
+		if(CheckAttribute(chr_ai, "hp_dlt")) dlthp = stf(chr_ai.hp_dlt);
+		float hp = stf(chr_ai.hp) + dlthp*dltTime;
+		float oldhp = hp;
+		if(CheckAttribute(chr_ai, "hp_bottle"))
 		{
-			//Персонаж
-			aref chr_ai;
-			makearef(chr_ai, Characters[idx].chr_ai);
-			ref chr = &Characters[idx];
-			if(LAi_IsDead(chr)) continue;
-			//Восcтановление жизни
-			float dlthp = LAI_DEFAULT_DLTHP;
-			if(CheckAttribute(chr_ai, "hp_dlt")) dlthp = stf(chr_ai.hp_dlt);
-			float hp = stf(chr_ai.hp) + dlthp*dltTime;
-			float oldhp = hp;
-			if(CheckAttribute(chr_ai, "hp_bottle"))
+			float bottle = stf(chr_ai.hp_bottle);
+			if(bottle > 0)
 			{
-				float bottle = stf(chr_ai.hp_bottle);
-				if(bottle > 0)
+				//Скорость высасывания из бутылки
+				float bottledlthp = LAI_DEFAULT_DLTBLTHP;
+				if(CheckAttribute(chr_ai, "hp_dlt_bottle"))
 				{
-					//Скорость высасывания из бутылки
-					float bottledlthp = LAI_DEFAULT_DLTBLTHP;
-					if(CheckAttribute(chr_ai, "hp_dlt_bottle"))
-					{
-						bottledlthp = stf(chr_ai.hp_dlt_bottle);
-					}
-					//Количество вытянутых хп за текущий период времени
-					bottledlthp = bottledlthp*dltTime;				
-					if(bottledlthp > bottle)
-					{
-						bottledlthp = bottle;
-					}
-					bottle = bottle - bottledlthp;
-					hp = hp + bottledlthp;
-					chr_ai.hp_bottle = bottle;
-				}else{
-					//Нет больше бутылки
-					DeleteAttribute(chr_ai, "hp_bottle");
-					DeleteAttribute(chr_ai, "hp_dlt_bottle");
-					if(idx==GetMainCharacterIndex())
-						DeleteAttribute(chr, "chr_ai.usedbottlemax");
+					bottledlthp = stf(chr_ai.hp_dlt_bottle);
+				}
+				//Количество вытянутых хп за текущий период времени
+				bottledlthp *= dltTime;
+				if(bottledlthp > bottle)
+				{
+					bottledlthp = bottle;
+				}
+				hp += bottledlthp;
+				chr_ai.hp_bottle = bottle - bottledlthp;
+			}else{
+				//Нет больше бутылки
+				DeleteAttribute(chr_ai, "hp_bottle");
+				DeleteAttribute(chr_ai, "hp_dlt_bottle");
+				if(bIsMainChar)
+					DeleteAttribute(chr, "chr_ai.usedbottlemax");
+			}
+		}
+		if(CheckAttribute(chr_ai, "poison"))
+		{
+			chr_ai.poison = stf(chr_ai.poison) - dltTime;
+			if(stf(chr_ai.poison) < 0.0)
+			{
+				DeleteAttribute(chr_ai, "poison");
+			}else{
+				hp -= dltTime*2.0;
+				if (!CheckAttribute(chr_ai, "poison.hp") || hp < sti(chr_ai.poison.hp)-1.0)
+				{
+					chr_ai.poison.hp = hp;
+					SendMessage(chr, "lfff", MSG_CHARACTER_VIEWDAMAGE, hp, MakeFloat(MakeInt(chr.chr_ai.hp)), MakeFloat(MakeInt(chr.chr_ai.hp_max)));
 				}
 			}
-			if(CheckAttribute(chr_ai, "poison"))
-			{
-				chr_ai.poison = stf(chr_ai.poison) - dltTime;
-				if(stf(chr_ai.poison) <= 0.0)
-				{
-					DeleteAttribute(chr_ai, "poison");
-				}else{
-					hp = hp - dltTime*2.0;
-					if (!CheckAttribute(chr, "poison.hp") || hp < sti(chr.poison.hp)-1.0)
-					{
-						chr.poison.hp = hp;
-						SendMessage(chr, "lfff", MSG_CHARACTER_VIEWDAMAGE, hp, MakeFloat(MakeInt(chr.chr_ai.hp)), MakeFloat(MakeInt(chr.chr_ai.hp_max)));
-					}
-				}
-			}
-			//navy --> время действия бутылки
-			if(CheckAttribute(chr_ai, "drunk"))
-				LAi_DawnAlcoholState(chr, sti(chr_ai.drunk) - 1);
-			//<--
-			if(LAi_IsImmortal(chr))
-			{
-				if(hp < oldhp) hp = oldhp;
-			}
-			float maxhp = stf(chr_ai.hp_max);
-			if(hp > maxhp)
-			{
-				hp = maxhp;
-				DeleteAttribute(chr_ai, "bottle");
-			}
-			chr_ai.hp = hp;
-			//Проверка квеста на hp
-			LAi_ProcessCheckMinHP(chr);
-			//Проверка на смерть
-			LAi_CheckKillCharacter(chr);
-			//Проверка на поднятие тревоги
-			LAi_ProcessCheckAlarm(chr);
+		}
+		//navy --> время действия бутылки
+		if(CheckAttribute(chr_ai, "drunk"))
+			LAi_DawnAlcoholState(chr, stf(chr_ai.drunk) - dltTime);
+		//<--
+		if(LAi_IsImmortal(chr))
+		{
+			if(hp < oldhp) hp = oldhp;
+		}
+		float maxhp = stf(chr_ai.hp_max);
+		if(hp > maxhp)
+		{
+			hp = maxhp;
+		}
+		chr_ai.hp = hp;
+		//Проверка квеста на hp
+		LAi_ProcessCheckMinHP(chr);
+		//Проверка на смерть
+		LAi_CheckKillCharacter(chr);
+		//Проверка на поднятие тревоги
+		LAi_ProcessCheckAlarm(chr);
 
 //--> Восстановление зарядов огнестрельного оружия
-			float charge, dltcharge;
-			float ChargeMax = 0.0;
-			bool bMus = CharUseMusket(chr);
-			bool bPeace = !LAi_IsFightMode(chr);
-			bool bAiming = false;
+		bool bMus = CharUseMusket(chr);
+		bool bPeace = !LAi_CheckFightMode(chr);
+		bool bAiming = false;
 
-			if (idx == GetMainCharacterIndex())
+		if (bIsMainChar)
+		{
+			string sAimingStep;
+			SendMessage(pchar, "lse", MSG_CHARACTER_EX_MSG, "GetAimingStep", &sAimingStep);
+			if(sAimingStep != "none")
+				bAiming = true;
+			if(CheckAttribute(chr_ai, "kill_timer"))
 			{
-				string sAimingStep;
-				SendMessage(pchar, "lse", MSG_CHARACTER_EX_MSG, "GetAimingStep", &sAimingStep);
-				if(sAimingStep != "none")
-					bAiming = true;
-				if(CheckAttribute(chr_ai, "kill_timer"))
-				{
-					float killTimer = stf(chr_ai.kill_timer);
-					killTimer -= dltTime;
-					if(killTimer <= 0.0)
-						DeleteAttribute(chr_ai, "kill_timer");
-					else
-						chr_ai.kill_timer = killTimer;
-				}
-			}
-
-			if (CheckAttribute(chr_ai, "getheadshot"))
-			{
-				float headshotCD = stf(chr_ai.getheadshot);
-				headshotCD -= dltTime;
-				if(headshotCD <= 0.0)
-					DeleteAttribute(chr_ai, "getheadshot");
+				float killTimer = stf(chr_ai.kill_timer);
+				killTimer -= dltTime;
+				if(killTimer < 0.0)
+					DeleteAttribute(chr_ai, "kill_timer");
 				else
-					chr_ai.getheadshot = headshotCD;
+					chr_ai.kill_timer = killTimer;
 			}
+		}
 
-			if (!bAiming)
+		if (CheckAttribute(chr_ai, "getheadshot"))
+		{
+			float headshotCD = stf(chr_ai.getheadshot);
+			headshotCD -= dltTime;
+			if(headshotCD < 0.0)
+				DeleteAttribute(chr_ai, "getheadshot");
+			else
+				chr_ai.getheadshot = headshotCD;
+		}
+
+		if (!bAiming)
+		{
+			// Пистолет:
+			// Персонаж не держит в руках мушкет во время боя, при этом либо дозарядка разрешена, либо оружие в ножнах
+			if (!and(bMus, LAi_grp_alarmactive) && or(bRechargePistolOnLine, bPeace))
 			{
-                // Пистолет:
-                // Персонаж не держит в руках мушкет во время боя, при этом либо дозарядка разрешена, либо оружие в ножнах
-				if (!and(bMus, LAi_grp_alarmactive) && or(bRechargePistolOnLine, bPeace))
+				ChargeMax = 0.0;
+				if(CheckAttribute(chr_ai, "gun.charge_max")) ChargeMax = stf(chr_ai.gun.charge_max);
+				if(ChargeMax > 0.0)
 				{
-					if(CheckAttribute(chr_ai, "gun.charge_max")) ChargeMax = stf(chr_ai.gun.charge_max);
-					if(ChargeMax > 0.0)
+					if(sti(chr_ai.gun.chargeprc))
 					{
-						if(sti(chr_ai.gun.chargeprc))
+						charge = stf(chr_ai.gun.charge);
+						if((iGetMinPistolChargeNum(chr, "gun") - charge) > 0)
 						{
-							charge = stf(chr_ai.gun.charge);
-							if((iGetMinPistolChargeNum(chr, "gun") - charge) > 0)
-							{
-								if(!CheckAttribute(chr_ai, "gun.charge_pSkill"))
-								{	//Скорость зарядки
-									chr_ai.gun.charge_pSkill = LAi_GunReloadSpeed(chr, "gun");
-								}
-
-								dltcharge = stf(chr_ai.gun.charge_pSkill);
-
-								//Подзаряжаем пистолет
-								charge = charge + dltcharge*dltTime;
-								if(charge >= ChargeMax)
-								{
-									charge = ChargeMax;
-									chr_ai.gun.chargeprc = "0";
-									DeleteAttribute(chr_ai, "gun.charge_pSkill");
-
-									if (Characters[idx].index == GetMainCharacterIndex() && LAi_IsFightMode(pchar))
-									{
-										PlaySound("Reload");
-									}
-								}
-								chr_ai.gun.charge = charge;
+							if(!CheckAttribute(chr_ai, "gun.charge_pSkill"))
+							{	//Скорость зарядки
+								chr_ai.gun.charge_pSkill = LAi_GunReloadSpeed(chr, "gun");
 							}
+
+							dltcharge = stf(chr_ai.gun.charge_pSkill);
+
+							//Подзаряжаем пистолет
+							charge = charge + dltcharge*dltTime;
+							if(charge >= ChargeMax)
+							{
+								charge = ChargeMax;
+								chr_ai.gun.chargeprc = "0";
+								DeleteAttribute(chr_ai, "gun.charge_pSkill");
+
+								if (bIsMainChar && !bPeace)
+								{
+									PlaySound("Reload");
+								}
+							}
+							chr_ai.gun.charge = charge;
 						}
 					}
-					else chr_ai.gun.charge = "0";
 				}
-
-                // Мушкет:
-                // Персонаж либо держит мушкет в руках, либо вне боя и оружие в ножнах
-				if (and(bPeace, !LAi_grp_alarmactive) || bMus)
-				{
-					ChargeMax = 0.0;
-					if(CheckAttribute(chr_ai, "musket.charge_max")) ChargeMax = stf(chr_ai.musket.charge_max);
-					if(ChargeMax > 0.0)
-					{
-						if(sti(chr_ai.musket.chargeprc))
-						{
-							charge = stf(chr_ai.musket.charge);
-							if((iGetMinPistolChargeNum(chr, "musket") - charge) > 0)
-							{
-								if(!CheckAttribute(chr_ai, "musket.charge_pSkill"))
-								{	//Скорость зарядки
-									chr_ai.musket.charge_pSkill = LAi_GunReloadSpeed(chr, "musket");
-								}
-
-								dltcharge = stf(chr_ai.musket.charge_pSkill);
-
-								//Подзаряжаем мушкет
-								charge = charge + dltcharge*dltTime;
-								if(charge >= ChargeMax)
-								{
-									charge = ChargeMax;
-									chr_ai.musket.chargeprc = "0";
-									DeleteAttribute(chr_ai, "musket.charge_pSkill");
-
-									if (Characters[idx].index == GetMainCharacterIndex() && LAi_IsFightMode(pchar))
-									{
-										PlaySound("People Fight\reload1.wav");
-									}
-								}
-								chr_ai.musket.charge = charge;
-							}
-						}
-					}
-					else chr_ai.musket.charge = "0";
-				}
+				else chr_ai.gun.charge = "0";
 			}
+
+			// Мушкет:
+			// Персонаж либо держит мушкет в руках, либо вне боя и оружие в ножнах
+			if (and(bPeace, !LAi_grp_alarmactive) || bMus)
+			{
+				ChargeMax = 0.0;
+				if(CheckAttribute(chr_ai, "musket.charge_max")) ChargeMax = stf(chr_ai.musket.charge_max);
+				if(ChargeMax > 0.0)
+				{
+					if(sti(chr_ai.musket.chargeprc))
+					{
+						charge = stf(chr_ai.musket.charge);
+						if((iGetMinPistolChargeNum(chr, "musket") - charge) > 0)
+						{
+							if(!CheckAttribute(chr_ai, "musket.charge_pSkill"))
+							{	//Скорость зарядки
+								chr_ai.musket.charge_pSkill = LAi_GunReloadSpeed(chr, "musket");
+							}
+
+							dltcharge = stf(chr_ai.musket.charge_pSkill);
+
+							//Подзаряжаем мушкет
+							charge = charge + dltcharge*dltTime;
+							if(charge >= ChargeMax)
+							{
+								charge = ChargeMax;
+								chr_ai.musket.chargeprc = "0";
+								DeleteAttribute(chr_ai, "musket.charge_pSkill");
+
+								if (bIsMainChar && !bPeace)
+								{
+									PlaySound("People Fight\reload1.wav");
+								}
+							}
+							chr_ai.musket.charge = charge;
+						}
+					}
+				}
+				else chr_ai.musket.charge = "0";
+			}
+		}
 //<-- Восстановление зарядов огнестрельного оружия
 
-			// Восстановление энергии
-			if(CheckAttribute(chr_ai, "energy"))
+		// Восстановление энергии
+		if(CheckAttribute(chr_ai, "energy"))
+		{
+			float cEnergy = stf(chr_ai.energy);
+			float mEnergy = LAi_GetCharacterMaxEnergy(chr);
+			if(bIsMainChar && LAi_grp_alarmactive && SendMessage(pchar, "ls", MSG_CHARACTER_EX_MSG, "IsSprint") == 1)
 			{
-				float cEnergy = stf(chr_ai.energy);
-				float mEnergy = LAi_GetCharacterMaxEnergy(chr);
-				if(idx == GetMainCharacterIndex() && SendMessage(pchar, "ls", MSG_CHARACTER_EX_MSG, "IsSprint") == 1 && LAi_group_IsActivePlayerAlarm())
-				{
-					cEnergy -= dltTime * SprintEnergyCost;
-					if(cEnergy < 0.0)
-						SendMessage(pchar, "ls", MSG_CHARACTER_EX_MSG, "StopSprint");
-				}
-				else
-					cEnergy = Lai_UpdateEnergyPerDltTime(chr, stf(chr_ai.energy), dltTime);
+				cEnergy -= dltTime * SprintEnergyCost;
 				if(cEnergy < 0.0)
-					cEnergy = 0.0;
-				if(cEnergy > mEnergy)
+					SendMessage(pchar, "ls", MSG_CHARACTER_EX_MSG, "StopSprint");
+			}
+			else
+				cEnergy = Lai_UpdateEnergyPerDltTime(chr, cEnergy, dltTime);
+			if(cEnergy < 0.0)
+				cEnergy = 0.0;
+
+			if (CheckAttribute(chr_ai, "ep_bottle"))
+			{
+				float ebottle = stf(chr_ai.ep_bottle);
+				if (ebottle > 0.0)
 				{
-					DeleteAttribute(chr_ai, "ep_bottle");
-					DeleteAttribute(chr_ai, "ep_dlt_bottle");
-					cEnergy = mEnergy;
-				}				
-				if (CheckAttribute(chr_ai, "ep_bottle") && cEnergy < mEnergy)
-				{
-					float dltep = LAI_DEFAULT_DLTEP;
-					
-					if (CheckAttribute(chr_ai, "ep_dlt"))
-						dltep = stf(chr_ai.ep_dlt);
-					
-					cEnergy = stf(chr_ai.energy) + dltep*dltTime;
-					
-					float ebottle = stf(chr_ai.ep_bottle);
-					if (ebottle > 0 || cEnergy >= mEnergy)
-					{
-						//Скорость высасывания из бутылки
-						float bottledltep = LAI_DEFAULT_DLTBLTEP;
-						if (CheckAttribute(chr_ai, "ep_dlt_bottle"))
-							bottledltep = stf(chr_ai.ep_dlt_bottle);
-						
-						//Количество вытянутых ехп за текущий период времени
-						bottledltep = bottledltep*dltTime;
-						if (bottledltep > ebottle)
-							bottledltep = ebottle;
-						
-						ebottle = ebottle - bottledltep;
-						cEnergy = cEnergy + bottledltep;
-						chr_ai.ep_bottle = ebottle;
-						chr_ai.energy = chr_ai.energy + cEnergy;
-					}
-					else
-					{
-						//Нет больше бутылки
-						DeleteAttribute(chr_ai, "ep_bottle");
-						DeleteAttribute(chr_ai, "ep_dlt_bottle");
-					}
+					//Скорость высасывания из бутылки
+					float bottledltep = LAI_DEFAULT_DLTBLTEP;
+					if (CheckAttribute(chr_ai, "ep_dlt_bottle"))
+						bottledltep = stf(chr_ai.ep_dlt_bottle);
+
+					//Количество вытянутых ехп за текущий период времени
+					bottledltep *= dltTime;
+					if (bottledltep > ebottle)
+						bottledltep = ebottle;
+
+					cEnergy += bottledltep;
+					chr_ai.ep_bottle = ebottle - bottledltep;
 				}
 				else
 				{
@@ -1426,9 +1407,13 @@ void LAi_AllCharactersUpdate(float dltTime)
 					DeleteAttribute(chr_ai, "ep_bottle");
 					DeleteAttribute(chr_ai, "ep_dlt_bottle");
 				}
-				
-				chr_ai.energy = cEnergy;
 			}
+
+			if(cEnergy > mEnergy)
+			{
+				cEnergy = mEnergy;
+			}
+			chr_ai.energy = cEnergy;
 		}
 	}
 }

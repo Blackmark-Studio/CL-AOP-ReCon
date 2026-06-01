@@ -630,6 +630,7 @@ void ProcessDialogEvent()
 
 		case "quest_onStay": // ПГГ сам подходит
 			chrDisableReloadToLocation = false;
+			DeleteQuestCondition("PGG_EndQuestOffer_Force");
 			Dialog.Text = StringFromKey("pgg_dialog_231", npchar, GetFullName(PChar));
 			if (!CheckAttribute(NPChar, "meeting") || !sti(NPChar.meeting))
 			{

@@ -41,7 +41,7 @@ Determina la velocidad con la que el personaje sube de nivel y obtiene destrezas
 }
 Endurance_hint
 {
-Resistencia: supervivencia, aguante y fortaleza física.
+Resistencia: supervivencia, entereza y fortaleza física.
 Atributo clave para habilidades como: 'Reparación' y 'Defensa'.
 ~
 Afecta el aumento de HP y la capacidad de carga por rango.
@@ -105,7 +105,7 @@ Cannons_hint
 {
 Carga el cañón con destreza, acércalo y, mientras el eco de la andanada aún retumba entre los mamparos, limpia, recarga, apunta, vierte agua sobre el cañón para que no se sobrecaliente... En el fragor de la batalla no debe haber nada de más: carga, acerca, ¡fuego!
 ~
-Depende de Talento y Poder (T*0.8+A*0.2).
+Depende de Talento y Poder (T*0.6+P*0.4).
 }
 Sailing_hint
 {
@@ -141,7 +141,7 @@ Defence_hint
 {
 La capacidad de proteger a tu gente en combate, de no dejar que mueran de forma absurda y sin sentido, es tarea de un capitán y un médico experimentado. Una mayor supervivencia de la tripulación asegura que cada marinero valga por diez.
 ~
-Depende de Aguante y Atractivo (E*0.5+A*0.5).
+Depende de Entereza y Atractivo (E*0.5+A*0.5).
 }
 Sneak_hint
 {

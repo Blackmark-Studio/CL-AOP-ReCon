@@ -10,7 +10,7 @@
 #define LAI_DEFAULT_ENERGY		100.0		//Количество энергии по умолчанию
 #define LAI_DEFAULT_ENERGY_MAX	100.0		//Количество MAX энергии по умолчанию
 #define LAI_DEFAULT_DLTHP		0.1			//Скорость наростания хп в секунду
-#define LAI_DEFAULT_DLTEP		0.1			//Скорость наростания эп в секунду
+#define LAI_DEFAULT_DLTEP		1.6666667	//Скорость наростания эп в секунду
 #define LAI_DEFAULT_DLTBLTHP	5			//Скорость наростания бутылочных хп в секунду
 #define LAI_DEFAULT_DLTBLTEP	5			//Скорость наростания бутылочных эп в секунду
 #define LAI_DEFAULT_DLTCHRG		0.05		//Скорость зарядки пистолета в секунду
@@ -78,3 +78,5 @@
 
 // evganat - время сведения прицела
 #define MAX_AIMING_TIME			1.0
+// Интервал обновления состояния персонажей - 1 секунда по умолчанию
+#define LAI_UPDATE_INTERVAL		1.0

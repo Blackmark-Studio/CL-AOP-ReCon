@@ -173,7 +173,7 @@ EngLineNpc_1_40 {
 Szerokiej drogi do Anglii! Żegnajcie, sir.
 }
 EngLineNpc_1_41 {
-Jestem wam wdzięczny za bohaterstwo okazane w walce z Hiszpanami. Ale przez waszą opieszałość wszystkie moje plany legły w gruzach! Przekazuję wam list do Medforda. Idźcie, nie będę was już dłużej zatrzymywać.
+Jestem wam wdzięczny za bohaterstwo okazane w walce z Hiszpanami. Ale przez waszą opieszałość wszystkie moje plany legły w gruzach! Przekazuję wam list do Modyforda. Idźcie, nie będę was już dłużej zatrzymywać.
 }
 EngLineNpc_1_42 {
 Wszystkiego najlepszego, sir.

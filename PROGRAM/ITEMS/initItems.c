@@ -1,15 +1,16 @@
+// KZ > ref 07.04.2024
+
 int InitItems()
 {
 	InitRandItems();
 	ref itm;
 	int n;
 
-	// Заносимые предметы не должны содержать "item" в самом начале id
 	for (n = 0; n < ITEMS_QUANTITY; n++)
 	{
 		makeref(itm, Items[n]);
 		DeleteAttribute(&itm, "");
-		itm.id = "item" + (n + 1);
+		itm.id = "empty_item_" + (n + 1);
 		itm.describe = "";
 		itm.name = "";
 		itm.index = n;
@@ -76,7 +77,7 @@ int InitItems()
 	n = InitBlades(n,	"blade12",		5,	"ITEMS_3",	"Fencing",		13.0,	54.0,	30,	20,	4.0,	300,	0.1,	1,	10,	1,	11.0,	15.0,	51.0,	56.0,	3.9,	4.2,	"ordinary", 	"common,officer");			// "Катцбальгер"
 	n = InitBlades(n,	"blade18",		11,	"ITEMS_3",	"Fencing",		13.0,	54.0,	35,	35,	4.8,	400,	0.1,	1,	10,	1,	10.0,	16.0,	52.0,	57.0,	4.5,	4.8,	"ordinary", 	"common,officer");			// "Хангер"
 	n = InitBlades(n,	"topor5",		8,	"ITEMS_21",	"Fencing",	    10.0,	57.0,	50,	2,	5.3,	500,	0.0,	0,	10,	1,	9.0,	15.0,	54.0,	60.0,	5.0,	5.7,	"ordinary", 	"indian");					// "Томагавк"
-	n = InitBlades(n,	"blade_maltes",	5,	"ITEMS_14",	"Fencing",	    17.0,	57.0,	30,	30,	4.4,	700,	0.001,	5,	10,	1,	16.0,	18.0,	56.0,	58.0,	4.3,	4.5,	"good", 	"officer");			// "Мальтийский меч"
+	n = InitBlades(n,	"blade_maltes",	5,	"ITEMS_14",	"Fencing",	    17.0,	57.0,	30,	30,	4.4,	700,	0.001,	5,	10,	1,	16.0,	18.0,	56.0,	58.0,	4.3,	4.5,	"good", 		"officer");					// "Мальтийский меч"
 
 	n = InitBlades(n,	"blade31",		3,	"ITEMS_10",	"Fencing",		23.0,	64.0,	50,	65,	4.7,	800,	0.001,	1,	15,	1,	18.0,	25.0,	59.0,	65.0,	4.6,	4.8,	"good", 		"officer,cool");			// "Шамшир"
 	n = InitBlades(n,	"blade34",		5,	"ITEMS_10",	"Fencing",		20.0,	61.0,	90,	70,	4.4,	1000,	0.001,	1,	15,	1,	19.0,	22.0,	60.0,	63.0,	4.3,	4.5,	"good", 		"officer,cool");			// "Скаллоп"
@@ -237,7 +238,7 @@ int InitItems()
 	n = InitQuestItems(n,	"strangeNoteLSC",		10,	"ITEMS_4",	0,		0.1,	"",			"",			READING_ITEM_TYPE); //записка тизера
 	n = InitQuestItems(n,	"TizerJournal",			6,	"ITEMS_9",	0,		0.2,	"",			"",			""); // дневник Тизера (становится читабельным позже по квесту)
 	n = InitQuestItems(n,	"recon_potion",			3,	"ITEMS_15",	0,		0.4,	"balsam",	"",			""); // ром "ReConstruction"
-	n = InitQuestItems(n,	"instrument1",			10,	"ITEMS_15",	0,		0.2,	"ToolBox",	"",			""); // отличная пила (+5 починка)
+	n = InitQuestItems(n,	"instrument1",			10,	"ITEMS_15",	1000,	0.2,	"ToolBox",	"",			""); // отличная пила (+5 починка)
 
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	//	далее начинаются квестовые предметы, заюзаные в локаторах item

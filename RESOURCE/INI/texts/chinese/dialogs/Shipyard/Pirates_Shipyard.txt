@@ -215,7 +215,7 @@ Pirates_Shipyard_65 {
 哟哟……看看这儿都有啥……啊哈，@<XI_ConvertString>。
 }
 Pirates_Shipyard_66 {
-哎哟，这船换过好几任主了，难怪这么破。你有私掠许可证吗？开个玩笑……咱们说正事吧。
+@<s1> 哎哟，这船换过好几任主了，难怪这么破。你有私掠许可证吗？开个玩笑……咱们说正事吧。
 }
 Pirates_Shipyard_67_m {
 @<s1> 你想怎么处理他？
@@ -430,7 +430,7 @@ Pirates_Shipyard_124 {
 ……好了，应该都搞定了……你可以升级口径，也能多买几门火炮。
 }
 Pirates_Shipyard_125 {
-对了，这事儿在俺的船厂也能办。
+@<s1> 对了，这事儿在俺的船厂也能办。
 }
 Pirates_Shipyard_126 {
 谢谢！我一定会把一切都检查清楚。
@@ -520,7 +520,7 @@ Pirates_Shipyard_150 {
 @<s1> 要加固重型火炮的炮口和炮架，我需要：乌木——@<cannonMatherial1>。
 }
 Pirates_Shipyard_151 {
-至于报酬，俺要：宝藏——@<cannonMatherial2>，金箱子——@<cannonMatherial3>，
+@<s1> 至于报酬，俺要：宝藏——@<cannonMatherial2>，金箱子——@<cannonMatherial3>，
 }
 Pirates_Shipyard_152 {
 @<s1>再加上@<FindMoneyString>，算作运营开销。你明白的，这可不是件容易的事……对了，钱得先付。
@@ -598,7 +598,7 @@ Pirates_Shipyard_172 {
 @<s1>。要做轻型舱壁，我得用：檀香木 - @<capacityMatherial1>。
 }
 Pirates_Shipyard_173 {
-作为报酬，俺要拿走：金块——@<capacityMatherial2>，金箱子——@<capacityMatherial3>，
+@<s1> 作为报酬，俺要拿走：金块——@<capacityMatherial2>，金箱子——@<capacityMatherial3>，
 }
 Pirates_Shipyard_174 {
 @<s1>，再加上@<FindMoneyString>作为运营开销。应该就这些。对了，先付钱。
@@ -826,7 +826,7 @@ Pirates_Shipyard_236 {
 @<s1> 想让她多装点帆跑起来，我得要：帆布 - @<TurnRateMatherial1>。
 }
 Pirates_Shipyard_237 {
-这活儿俺的价码是：黄金箱子@<TurnRateMatherial3>个，红宝石@<TurnRateMatherial2>颗，外加@<FindMoneyString>当开销。你明白吧，俺可没打算死在这破地方……就这些。对了，钱得先付。
+@<s1> 这活儿俺的价码是：黄金箱子@<TurnRateMatherial3>个，红宝石@<TurnRateMatherial2>颗，外加@<FindMoneyString>当开销。你明白吧，俺可没打算死在这破地方……就这些。对了，钱得先付。
 }
 Pirates_Shipyard_238 {
 好，俺接受条件。约定的东西都会送到。
@@ -1123,7 +1123,7 @@ Pirates_Shipyard_321 {
 碰巧俺手上有一套完全合法的船只文件，还没被通缉。
 }
 Pirates_Shipyard_322 {
-船还在水上，也没被除名，放心吧。只是那个丢三落四的船主把文件给弄丢了……
+@<s1> 船还在水上，也没被除名，放心吧。只是那个丢三落四的船主把文件给弄丢了……
 }
 Pirates_Shipyard_323_m {
 让我看看！果然，这些痕迹很新。看来，先生您真是好运气啊！
@@ -1132,7 +1132,7 @@ Pirates_Shipyard_323_f {
 让我看看！这些痕迹确实很新。看来，女士，运气站在你这边！
 }
 Pirates_Shipyard_324 {
-@<s1>我正好需要这样一套东西，作为交换，我可以给你@<FindMoneyString>。你觉得怎么样？
+@<s1> 我正好需要这样一套东西，作为交换，我可以给你@<FindMoneyString>。你觉得怎么样？
 }
 Pirates_Shipyard_325_m {
 这可真是皇家的慷慨！我当然接受！

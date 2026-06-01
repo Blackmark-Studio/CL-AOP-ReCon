@@ -2,11 +2,18 @@
 //Update events
 //==========================================================================================
 
+float lai_update_timer = 0.0;
+
 void LAi_Character_FrameUpdate()
 {
 	float dltTime = GetEventData();
 	//Обновляем состояние персонажей
-	LAi_AllCharactersUpdate(dltTime);
+	lai_update_timer += dltTime;
+	if (lai_update_timer >= LAI_UPDATE_INTERVAL)
+	{
+	    lai_update_timer -= LAI_UPDATE_INTERVAL;
+		LAi_AllCharactersUpdate(LAI_UPDATE_INTERVAL);
+	}
 	//Задержка исполнения квестов
 	LAi_QuestDelayProcess(dltTime);
 }

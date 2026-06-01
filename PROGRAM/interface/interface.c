@@ -2036,6 +2036,7 @@ void AutoSaveContinue()
 	DelEventHandler("makescrshot","AutoSaveContinue");
 
 	string curSave = PlayerProfile.name + " AutoSave";
+	GameInterface.SavePath = "SAVE\" + PlayerProfile.name;
 	SendMessage(&GameInterface,"ls",MSG_INTERFACE_DELETE_SAVE_FILE,curSave);
 	string sSaveDescriber = GetSaveDataString(GetCurLocationName());
 

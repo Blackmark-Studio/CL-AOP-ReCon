@@ -1217,7 +1217,7 @@ Common_Usurer_357 {
 Malheureusement non, mais je l’apporterai bientôt.
 }
 Common_Usurer_358 {
-Tôt ce matin, un homme de la ville est venu me demander un prêt. Le problème, c’est qu’il m’a trompé. Il s’est fait passer pour Rafael Guinness, qui me rend souvent visite, et, pour être honnête, il lui ressemble un peu. Je lui ai prêté 30 000 piastres, mais ensuite Rafael est venu en personne et...
+Tôt ce matin, un homme de la ville est venu me demander un prêt. Le problème, c’est qu’il m’a trompé. Il s’est fait passer pour Raphael Guinness, qui me rend souvent visite, et, pour être honnête, il lui ressemble un peu. Je lui ai prêté 30 000 piastres, mais ensuite Raphael est venu en personne et...
 }
 Common_Usurer_359 {
 Vous voulez que je retrouve cette personne? Pourquoi pensez-vous qu’elle est encore en ville?

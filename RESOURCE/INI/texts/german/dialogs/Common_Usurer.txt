@@ -1217,7 +1217,7 @@ Common_Usurer_357 {
 Leider nein, aber ich bringe es bald.
 }
 Common_Usurer_358 {
-Heute früh kam ein Mann aus der Stadt zu mir und bat um ein Darlehen. Das Problem ist... er hat mich hereingelegt. Er gab sich als Rafael Guinness aus, der mich oft besucht, und ehrlich gesagt, sieht er ihm tatsächlich ein wenig ähnlich. Ich habe ihm ein Darlehen von 30.000 Piastern gegeben, aber dann kam Raf selbst vorbei und...
+Heute früh kam ein Mann aus der Stadt zu mir und bat um ein Darlehen. Das Problem ist... er hat mich hereingelegt. Er gab sich als Rafael Guinness aus, der mich oft besucht, und ehrlich gesagt, sieht er ihm tatsächlich ein wenig ähnlich. Ich habe ihm ein Darlehen von 30.000 Piastern gegeben, aber dann kam Raphael selbst vorbei und...
 }
 Common_Usurer_359 {
 Du willst, dass ich diese Person finde? Warum glaubst du, dass sie noch in der Stadt ist?

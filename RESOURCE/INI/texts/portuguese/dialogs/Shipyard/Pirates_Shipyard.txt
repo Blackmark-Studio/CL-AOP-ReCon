@@ -215,7 +215,7 @@ Pirates_Shipyard_65 {
 Ora, ora... vejamos o que temos aqui... Ahá, @<XI_ConvertString>.
 }
 Pirates_Shipyard_66 {
-Ah! Então esse navio já trocou de dono mais de uma vez. Não é à toa que está tão gasto. Tem uma carta de corso aí? Brincadeira... vamos ao que interessa.
+@<s1> Ah! Então esse navio já trocou de dono mais de uma vez. Não é à toa que está tão gasto. Tem uma carta de corso aí? Brincadeira... vamos ao que interessa.
 }
 Pirates_Shipyard_67_m {
 @<s1> O que você gostaria de fazer com ele?
@@ -428,7 +428,7 @@ Pirates_Shipyard_124 {
 ... Bem, isso deve ser tudo... Você pode melhorar o calibre e comprar mais canhões.
 }
 Pirates_Shipyard_125 {
-Aliás, você também pode fazer isso no meu estaleiro.
+@<s1> Aliás, você também pode fazer isso no meu estaleiro.
 }
 Pirates_Shipyard_126 {
 Obrigado! Vou conferir tudo, com certeza.
@@ -518,7 +518,7 @@ Pirates_Shipyard_150 {
 @<s1> Para reforçar as portas dos canhões e os suportes dos canhões pesados, vou precisar de: madeira de ébano – @<cannonMatherial1>.
 }
 Pirates_Shipyard_151 {
-E pelo trabalho, eu quero: tesouros – @<cannonMatherial2>, baús de ouro – @<cannonMatherial3>,
+@<s1> E pelo trabalho, eu quero: tesouros – @<cannonMatherial2>, baús de ouro – @<cannonMatherial3>,
 }
 Pirates_Shipyard_152 {
 @<s1> mais @<FindMoneyString> para despesas operacionais. Você entende—não é uma tarefa simples... Ah, e o pagamento é adiantado.
@@ -596,7 +596,7 @@ Pirates_Shipyard_172 {
 @<s1>. Para anteparas mais leves, vou precisar de: sândalo - @<capacityMatherial1>.
 }
 Pirates_Shipyard_173 {
-Como pagamento pelo meu trabalho, vou levar: pepitas de ouro – @<capacityMatherial2>, baús de ouro – @<capacityMatherial3>,
+@<s1> Como pagamento pelo meu trabalho, vou levar: pepitas de ouro – @<capacityMatherial2>, baús de ouro – @<capacityMatherial3>,
 }
 Pirates_Shipyard_174 {
 @<s1> mais @<FindMoneyString> para despesas operacionais. Isso deve ser tudo. Ah, e o pagamento é adiantado.
@@ -824,7 +824,7 @@ Pirates_Shipyard_236 {
 @<s1> Para velas extras e fazê-la andar, vou precisar de: lona - @<TurnRateMatherial1>.
 }
 Pirates_Shipyard_237 {
-E pelo trabalho, minha taxa é: baús de ouro – @<TurnRateMatherial3>, rubis – @<TurnRateMatherial2>, mais @<FindMoneyString> para despesas. Você entende que não pretendo morrer nesse fim de mundo... É isso. Ah, e o pagamento é adiantado.
+@<s1> E pelo trabalho, minha taxa é: baús de ouro – @<TurnRateMatherial3>, rubis – @<TurnRateMatherial2>, mais @<FindMoneyString> para despesas. Você entende que não pretendo morrer nesse fim de mundo... É isso. Ah, e o pagamento é adiantado.
 }
 Pirates_Shipyard_238 {
 Certo. Aceito os termos. Tudo o que foi combinado será entregue.
@@ -1121,7 +1121,7 @@ Pirates_Shipyard_321 {
 Por sorte, tenho um conjunto de documentos do navio totalmente legal — ainda não marcados como procurados.
 }
 Pirates_Shipyard_322 {
-A embarcação está flutuando e ainda registrada, não se preocupe. É que o dono distraído conseguiu perder esses documentos...
+@<s1> A embarcação está flutuando e ainda registrada, não se preocupe. É que o dono distraído conseguiu perder esses documentos...
 }
 Pirates_Shipyard_323_m {
 Deixe-me dar uma olhada! De fato, as marcas são bem recentes. Pois bem, a sorte está do seu lado, senhor!
@@ -1130,7 +1130,7 @@ Pirates_Shipyard_323_f {
 Deixe-me ver! De fato, as marcas são bem recentes. Pois bem, a sorte está do seu lado, senhora!
 }
 Pirates_Shipyard_324 {
-@<s1>Por acaso estou precisando exatamente de um conjunto assim, e em troca lhe ofereço @<FindMoneyString>. O que me diz?
+@<s1> Por acaso estou precisando exatamente de um conjunto assim, e em troca lhe ofereço @<FindMoneyString>. O que me diz?
 }
 Pirates_Shipyard_325_m {
 Que generosidade digna de um rei! Claro que aceito!

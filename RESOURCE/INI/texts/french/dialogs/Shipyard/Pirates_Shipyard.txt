@@ -215,7 +215,7 @@ Pirates_Shipyard_65 {
 Eh bien, voyons un peu ce que nous avons là... Ah, @<XI_ConvertString>.
 }
 Pirates_Shipyard_66 {
-Ah! Alors ce navire a déjà changé de propriétaire plusieurs fois. Pas étonnant qu’il soit si usé. Tu as une lettre de marque sur toi? Je plaisante… passons aux choses sérieuses.
+@<s1> Ah! Alors ce navire a déjà changé de propriétaire plusieurs fois. Pas étonnant qu’il soit si usé. Tu as une lettre de marque sur toi? Je plaisante… passons aux choses sérieuses.
 }
 Pirates_Shipyard_67_m {
 @<s1> Que voulez-vous faire de lui?
@@ -428,7 +428,7 @@ Pirates_Shipyard_124 {
 ... Eh bien, cela devrait être tout... Vous pouvez améliorer le calibre et acheter plus de canons.
 }
 Pirates_Shipyard_125 {
-Au fait, vous pouvez aussi faire ça dans mon chantier naval.
+@<s1> Au fait, vous pouvez aussi faire ça dans mon chantier naval.
 }
 Pirates_Shipyard_126 {
 Merci! Je vais tout vérifier.
@@ -518,7 +518,7 @@ Pirates_Shipyard_150 {
 @<s1> Pour renforcer les sabords et les affûts des canons lourds, il me faudra : du bois d’ébène – @<cannonMatherial1>.
 }
 Pirates_Shipyard_151 {
-Et pour ce travail, je prendrai : des trésors – @<cannonMatherial2>, des coffres d’or – @<cannonMatherial3>,
+@<s1> Et pour ce travail, je prendrai : des trésors – @<cannonMatherial2>, des coffres d’or – @<cannonMatherial3>,
 }
 Pirates_Shipyard_152 {
 @<s1> plus @<FindMoneyString> pour les frais de fonctionnement. Vous comprenez, ce n’est pas une mince affaire... Ah, et paiement d’avance.
@@ -596,7 +596,7 @@ Pirates_Shipyard_172 {
 @<s1>. Pour des cloisons plus légères, il me faudra : bois de santal – @<capacityMatherial1>.
 }
 Pirates_Shipyard_173 {
-En paiement pour mon travail, je prendrai : des pépites d’or – @<capacityMatherial2>, des coffres d’or – @<capacityMatherial3>,
+@<s1> En paiement pour mon travail, je prendrai : des pépites d’or – @<capacityMatherial2>, des coffres d’or – @<capacityMatherial3>,
 }
 Pirates_Shipyard_174 {
 @<s1> plus @<FindMoneyString> pour les frais d’exploitation. Ce sera tout. Ah, et paiement d’avance.
@@ -824,7 +824,7 @@ Pirates_Shipyard_236 {
 @<s1> Pour des voiles supplémentaires pour la faire avancer, il me faudra : de la toile – @<TurnRateMatherial1>.
 }
 Pirates_Shipyard_237 {
-Et pour ce travail, mon tarif est le suivant : coffres d’or – @<TurnRateMatherial3>, rubis – @<TurnRateMatherial2>, plus @<FindMoneyString> pour les frais. Tu comprends bien que je n’ai pas l’intention de mourir dans ce trou... Voilà tout. Ah, et l’argent, c’est d’avance.
+@<s1> Et pour ce travail, mon tarif est le suivant : coffres d’or – @<TurnRateMatherial3>, rubis – @<TurnRateMatherial2>, plus @<FindMoneyString> pour les frais. Tu comprends bien que je n’ai pas l’intention de mourir dans ce trou... Voilà tout. Ah, et l’argent, c’est d’avance.
 }
 Pirates_Shipyard_238 {
 Très bien. J’accepte les conditions. Tout ce qui a été convenu sera livré.
@@ -1121,7 +1121,7 @@ Pirates_Shipyard_321 {
 Par un coup de chance, il se trouve que j’ai en ma possession des papiers de bord parfaitement en règle—et ils ne sont pas encore signalés comme recherchés.
 }
 Pirates_Shipyard_322 {
-Le navire flotte toujours et figure encore au registre, ne vous en faites pas. C’est simplement que le propriétaire étourdi a réussi à égarer ces papiers…
+@<s1> Le navire flotte toujours et figure encore au registre, ne vous en faites pas. C’est simplement que le propriétaire étourdi a réussi à égarer ces papiers…
 }
 Pirates_Shipyard_323_m {
 Laissez-moi voir! En effet, les traces sont assez récentes. Eh bien, la chance vous sourit, monsieur!
@@ -1130,7 +1130,7 @@ Pirates_Shipyard_323_f {
 Laissez-moi voir! En effet, les traces sont toutes récentes. Eh bien, la chance vous sourit, madame!
 }
 Pirates_Shipyard_324 {
-@<s1>Il se trouve que j’ai justement besoin d’un tel ensemble, et en échange je vous propose @<FindMoneyString>. Qu’en dites-vous?
+@<s1> Il se trouve que j’ai justement besoin d’un tel ensemble, et en échange je vous propose @<FindMoneyString>. Qu’en dites-vous?
 }
 Pirates_Shipyard_325_m {
 Quelle générosité royale! J’accepte bien sûr!

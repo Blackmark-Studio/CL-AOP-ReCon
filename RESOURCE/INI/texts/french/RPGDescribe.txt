@@ -105,7 +105,7 @@ Cannons_hint
 {
 Chargez le canon sans tarder, ramenez-le en place et, tandis que le fracas de la salve résonne encore entre les cloisons, nettoyez, rechargez, visez, arrosez le canon pour éviter la surchauffe... Au cœur du combat, rien de superflu : charger, ramener, tirer !
 ~
-Dépend du Talent et de la Puissance (T*0.8+A*0.2).
+Dépend du Talent et de la Puissance (T*0.6+P*0.4).
 }
 Sailing_hint
 {

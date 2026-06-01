@@ -9,59 +9,72 @@ bool IsQuestUsedItem(string itmID)
 void DoCharacterUsedItem(ref chref, string itmID)
 {
 	aref arItm;
-	if( Items_FindItem(itmID,&arItm)<0 ) return;
-	TakeItemFromCharacter(chref,itmID);
+	if (Items_FindItem(itmID, &arItm) < 0) return;
+	TakeItemFromCharacter(chref, itmID);
 
-	 // Warship 13.06.09 fix - если только отравлен, а жизни полные (а такое бывает), то нечего и строку в лог выводить об прибавлении жизней
-	if(CheckAttribute(arItm,"potion.health") && LAi_GetCharacterHP(chref) < LAi_GetCharacterMaxHP(chref))
+	bool bPchar = sti(chref.index) == GetMainCharacterIndex();
+
+	// Warship 13.06.09 fix - если только отравлен, а жизни полные (а такое бывает), то нечего и строку в лог выводить об прибавлении жизней
+	if (CheckAttribute(arItm, "potion.health") && LAi_GetCharacterHP(chref) < LAi_GetCharacterMaxHP(chref))
 	{
 		LAi_UseHealthBottle(chref,stf(arItm.potion.health));
-		if(sti(chref.index)!=GetMainCharacterIndex())
+		if (bPchar)
         {
-            if(ShowCharString()) Log_Chr(chref, XI_ConvertString("Health UpLog"));
+			Log_SetStringToLog(XI_ConvertString("Health Up"));
         }
         else
         {
-            Log_SetStringToLog( XI_ConvertString("Health Up"));
+            if (ShowCharString())
+				Log_Chr(chref, XI_ConvertString("Health UpLog"));
         }
-		// boal
-		if( CheckAttribute(arItm,"potion.health.speed") )
+
+		if (CheckAttribute(arItm, "potion.health.speed"))
 		{
 			LAi_UseHealthBottleSpeed(chref, stf(arItm.potion.health.speed));
 		}
 	}
-	
+
 	if (CheckAttribute(arItm, "potion.energy") && Lai_CharacterGetEnergy(chref) < LAi_GetCharacterMaxEnergy(chref))
 	{
 		LAi_UseEnergyBottle(chref, stf(arItm.potion.energy));
-		if (sti(chref.index) == GetMainCharacterIndex())
-			Log_SetStringToLog( XI_ConvertString("Energy Up"));
-		
+		if (bPchar)
+			Log_SetStringToLog(XI_ConvertString("Energy Up"));
+		else
+		{
+			if (ShowCharString())
+				Log_Chr(chref, XI_ConvertString("Energy UpLog"));
+		}
+
 		if (CheckAttribute(arItm, "potion.energy.speed"))
+		{
 			LAi_UseEnergyBottleSpeed(chref, stf(arItm.potion.energy.speed));
+		}
 	}
-	
+
 	// Warship 13.06.09 fix - если не отравлен, то нечего и строку в лог выводить
-	if(CheckAttribute(arItm,"potion.antidote") && LAi_IsPoison(chref))
+	if (CheckAttribute(arItm, "potion.antidote") && LAi_IsPoison(chref))
 	{
 		LAi_UseAtidoteBottle(chref);
-		if(sti(chref.index)==GetMainCharacterIndex()) {
+		if (bPchar)
+		{
 			Log_SetStringToLog( XI_ConvertString("You are cured from poison") );
 		}
-		else{
-//			Log_SetStringToLog(GetFullName(chref) + XI_ConvertString("are cured from poison") );
-			if(ShowCharString()) Log_Chr(chref, XI_ConvertString("are cured from poisonLog"));
-            else Log_SetStringToLog(GetFullName(chref) + XI_ConvertString("are cured from poison") );
+		else
+		{
+			if (ShowCharString())
+				Log_Chr(chref, XI_ConvertString("are cured from poisonLog"));
+            else
+				Log_SetStringToLog(GetFullName(chref) + XI_ConvertString("are cured from poison") );
 		}
 	}
-	
+
 	//navy --> алкоголь
 	if (CheckAttribute(arItm, "potion.drunk"))
 	{
 		LAi_DrunkAlcoholPotion(chref, arItm);
-		if(sti(chref.index)==GetMainCharacterIndex())
+		if (bPchar)
 		{
-			Log_SetStringToLog( XI_ConvertString("You're get drunk") );
+			Log_SetStringToLog(XI_ConvertString("You're get drunk"));
 		}
 	}
 	//<--
@@ -1387,7 +1400,7 @@ void InitAlchemyCraft()
 	InitAlchemyComponents("potionsangari:2", 	"potionwine:2, potionrum, indian4");													// Коктейль "Сангари" (2 вина + 1 ром)
 }
 
-// KZ > Вернуть конкретные предметы на труп rChar при его обыске
+// KZ > Положить конкретные предметы на труп rChar
 void AddKeepItems(ref rChar)
 {
 	if (!CheckAttribute(rChar, "KeepItems")) return;
@@ -1406,8 +1419,13 @@ void AddKeepItems(ref rChar)
 			sItem = GetAttributeName(arItem);
 			q = sti(GetAttributeValue(arItem));
 
-			if (q > 0 && FindItem(sItem) >= 0)
-				rChar.items.(sItem) = "" + q;
+			if (q > 0)
+			{
+				if (FindItem(sItem) >= 0)
+					rChar.items.(sItem) = "" + q;
+				else
+					trace("Error AddKeepItems > can't find item: " + sItem);
+			}
 		}
 	}
 

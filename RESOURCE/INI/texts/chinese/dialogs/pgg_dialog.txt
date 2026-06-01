@@ -1537,10 +1537,10 @@ pgg_dialog_429 {
 分给俺这艘船的份额——
 }
 pgg_dialog_430 {
-请提供需要翻译的英文文本。
+@<Dialog>
 }
 pgg_dialog_431 {
-你的份儿
+@<Dialog> 你的份儿
 }
 pgg_dialog_432 {
 行吧！他们已经开始装船了！
@@ -1675,10 +1675,10 @@ pgg_dialog_473 {
 不错啊，船长！这次的战利品有@<PChar> @<PChar>。
 }
 pgg_dialog_474 {
-我的份
+@<Dialog> 我的份
 }
 pgg_dialog_475 {
-你的份儿
+@<Dialog> 你的份儿
 }
 pgg_dialog_476 {
 行吧，要是俺说错了你就劈了俺！

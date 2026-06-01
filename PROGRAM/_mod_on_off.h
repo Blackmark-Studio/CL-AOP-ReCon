@@ -1,11 +1,11 @@
 #define VERSION_NUM      99941
 #define VERSION_NUM_PRE  99941
 
-#define VERSION_NUMBER1       " ver. 1.1.0 (19.05.2026)" // version build
+#define VERSION_NUMBER1       " ver. 1.1.1 (01.06.2026)" // version build
 #define VERSION_NUMBER2       "" // extra DLC
 #define VERSION_NUMBER3       "Seaward&BMS&ReCon" // Devteam
 
-#define MOD_BETTATESTMODE     "Off"
+#define MOD_BETTATESTMODE     "On"
 #define ENCYCLOPEDIA_DISABLED 1
 #define BI_COMPARE_HEIGHT 1080
 

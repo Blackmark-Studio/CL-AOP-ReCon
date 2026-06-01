@@ -874,7 +874,10 @@ itmdescr_mechanic_kit {用于小型修理的必备工具都收纳在便携箱中
 itmname_crucible {坩埚}
 itmdescr_crucible {用于在高温下熔化金属的坩埚。}
 itmname_bullet_mold {铅弹模具}
-itmdescr_bullet_mold {这个装置可以铸造出适用于柯尔特左轮手枪的专用子弹。}
+itmdescr_bullet_mold
+{
+借助这种工具，可以铸造出所需形状和尺寸的特制子弹。
+}
 itmname_mortar_and_pestle {研钵和研杵}
 itmdescr_mortar_and_pestle {可将药草和其他原料研磨成粉，用于调制各种药剂。不适合碾碎比核桃壳更硬的东西。}
 itmname_lamp {油灯}
@@ -1023,8 +1026,13 @@ itmname_Griffins_Weapon {格里芬先生的武器样品}
 itmdescr_Griffins_Weapon {几把剑身上刻有格里芬大师名字的小剑。}
 itmname_HugtorpRing {哈格索普的结婚戒指}
 itmdescr_HugtorpRing {哈格索普的结婚戒指，依然戴在一根丑陋且已经僵硬的人类手指上。}
-itmname_shark_tooth {鲨鱼牙护身符}
-itmdescr_shark_tooth {一枚刻有“S.D.”字样的鲨鱼牙护身符。}
+itmname_shark_tooth	{鲨鱼牙护符}
+itmdescr_shark_tooth
+{
+由鲨鱼牙制成、带有姓名刻印的护身符。
+~
+被动：对深海生物造成的伤害提高10%。
+}
 itmname_pinion {齿轮}
 itmdescr_pinion {绞盘机构的齿轮。}
 itmname_PDM_PJ_Vino {葡萄酒瓶}
@@ -1104,4 +1112,10 @@ itmtext_TizerJournal
 只有穿过大风暴的怒吼，只有穿过桅杆折断的碎裂声和不可避免的海难，道路才会显现。
 大海将决定如何处置你——最重要的是不要抵抗它的力量。而这座岛最大的谜团是：正义岛拒绝舰队。
 凡决定迈出这一步的人，必须独自行动。没有船员，没有忠诚的伙伴在身后。只有你和大海的愤怒。否则，所有人迎来的都将是毁灭……
+}
+
+itmname_LesopilkaDoc    {荷兰西印度公司合约}
+itmdescr_LesopilkaDoc
+{
+登记加入荷兰西印度公司船长名录所需的证明文件。
 }

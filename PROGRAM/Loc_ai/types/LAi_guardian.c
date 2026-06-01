@@ -202,11 +202,6 @@ void LAi_type_guardian_CharacterUpdate(aref chr, float dltTime)
 								LAi_SoldierTestControl(chr, false, true);
 								return;
 							}
-							//Квестовая проверка блудницы в джунглях
-							else if (CheckAttribute(pchar, "GenQuest.EncGirl.MeetSoldiers") && idRand(chr.id +"EncGirlMeetSoldiers", 2) == 0)
-							{
-								LAi_SoldierAboutToAsk(chr, false);
-							}
 							else return; //TODO: Посмотреть KZ, если ГГ рядом и не вызывает подозрений, то стражнику не надо возвращаться на пост? (следующий if)
 						}
 						else

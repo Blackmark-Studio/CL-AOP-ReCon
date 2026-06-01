@@ -410,7 +410,7 @@ Clan_Lambrini_115 {
 Ich werde auf jeden Fall kommen.
 }
 Clan_Lambrini_116 {
-@<UpperFirst> @<pchar>, Sie sind zurück. Haben Sie etwas Interessantes gesehen?
+Sie sind zurück, @<GetAddress_Form>. Haben Sie etwas Interessantes gesehen?
 }
 Clan_Lambrini_117 {
 Es ist mir gelungen, ein Gespräch von Lambrini mit einem Kapitän zu belauschen, der vorhat, illegale und teure Ware zu verkaufen – Mahagoni. Sollten wir vielleicht in die Taverne gehen und Ottavio auf frischer Tat ertappen?

@@ -2,7 +2,7 @@
 #include "storm-engine\messages.h"
 #include "sound.c"
 
-string savefile_info = "CL: AoP 1.1.0 (19.05.2026)";
+string savefile_info = "CL: AoP 1.1.1 (01.06.2026)";
 
 #define MAX_SHIPS_ON_SEA	32 
 #define MAX_CHARS_IN_LOC	128

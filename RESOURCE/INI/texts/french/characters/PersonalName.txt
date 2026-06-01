@@ -1,7 +1,7 @@
 Bridgetown_Hostess_name {Angela}
 Bridgetown_Hostess_lastname {Jolie}
 Jackman_name {Jacob}
-Jackman_lastname {Brûlotier}
+Jackman_lastname {Fackman}
 Jackman_ship {Manchester}
 Jackman_ship2 {Fortunato}
 Pirates_tavernkeeper_name {Chanceux}

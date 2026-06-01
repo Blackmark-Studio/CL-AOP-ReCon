@@ -860,6 +860,7 @@ void ProcessDialogEvent()
 
 			sld = characterFromID("Tortuga_usurer");
 			sld.Dialog.Filename = "Common_Usurer.c";
+			RemoveLandQuestMark_Main(sld, "PDM_Cursed_Idol");
 		break;
 
 		case "Rostovshik_Fra_Off_3":

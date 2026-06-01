@@ -575,7 +575,7 @@ Eng_Line_4_Intelligence_Curacao.1 {我又接到了英国总督托马斯·莫迪�
 Eng_Line_4_Intelligence_Curacao.2 {当地的放债人Josef Nunen de Fonquesao正是我需要的人。这家伙为了钱什么都能背叛，这正合我意。}
 Eng_Line_4_Intelligence_Curacao.3 {约瑟夫指给我一艘停泊在库拉索港外锚地、随时准备起航的护卫舰。我需要登船并彻底搜查船舱。}
 Eng_Line_4_Intelligence_Curacao.4 {该死，Josef竟然要十万！胃口真大！但我只能全额支付了。}
-Eng_Line_4_Intelligence_Curacao.5 {我失去了冷静，那家伙Josef把我惹毛了。我本想悄悄解决他，结果他叫来了卫兵。整个城市都沸腾了。看来Medford的任务算是失败了。}
+Eng_Line_4_Intelligence_Curacao.5 {我失去了冷静，那家伙Josef把我惹毛了。我本想悄悄解决他，结果他叫来了卫兵。整个城市都沸腾了。看来Modyford的任务算是失败了。}
 Eng_Line_4_Intelligence_Curacao.6 {该死，我被关在荷兰人的监狱里。武器和钱都被拿走了，我完全不知道接下来该怎么办……}
 Eng_Line_4_Intelligence_Curacao.7
 {
@@ -632,7 +632,7 @@ Eng_Line_7_SevenTresures.1
 所有在这些地方找到的黄金都必须交给莫迪福德。总共应该有2100块金块！
 }
 Eng_Line_7_SevenTresures.2 {梅德福德的任务已完成。我已找到并将2100块金块送到英属总督府。}
-Eng_Line_7_SevenTresures.3 {已向Medford交付@<GoldQtyGaveModiford>块金块。还需找到@<GoldQtyForSeek>块。}
+Eng_Line_7_SevenTresures.3 {已向Modyford交付@<GoldQtyGaveModiford>块金块。还需找到@<GoldQtyForSeek>块。}
 Eng_Line_7_SevenTresures.4 {我拒绝了这个任务，因为它变成了一场极其令人疲惫的折磨。在Mediford心中的地位也因此动摇了……}
 Eng_Line_8_ToMansfield {去Edward Mansfeld换取黄金}
 Eng_Line_8_ToMansfield.1
@@ -710,7 +710,7 @@ Hol_Line_3_WormEnglishPlans.10 {放债人现在谁的钱都不借！他从皮埃
 Hol_Line_3_WormEnglishPlans.11 {皮卡第人还是妓院的常客，日子过得真不错，这家伙真走运！}
 Hol_Line_3_WormEnglishPlans.12 {摩根什么也没跟我说，就把我赶了出去。}
 Hol_Line_3_WormEnglishPlans.13 {我需要把一名英国军官从监狱救出来。他必须告诉我莫迪福德准备进攻哪里。}
-Hol_Line_3_WormEnglishPlans.14 {我已经查明一切。Medford正在准备袭击Fort Orange。现在我必须立刻通知Stuyvesant。}
+Hol_Line_3_WormEnglishPlans.14 {我已经查明一切。Modyford正在准备袭击Fort Orange。现在我必须立刻通知Stuyvesant。}
 Hol_Line_4_DefenceOrange {保卫奥兰治堡，抵御即将到来的英军进攻}
 Hol_Line_4_DefenceOrange.1 {我收到了荷兰总督的新任务。现在我的任务是拦截英国登陆远征队，拯救奥兰治要塞免遭洗劫。}
 Hol_Line_4_DefenceOrange.2 {英国舰船已被摧毁。现在我们需要侦查前往Fort Orange的通道——也许英国人已经登陆了部队。}
@@ -1201,8 +1201,26 @@ BerglarsGang.13 {我终于做到了！奥斯汀的帮派成员都被解决了，
 BerglarsGang.14 {一切都结束了——Austin已经跟着他的帮派去了另一个世界。不得不承认，他确实很擅长说服和操控人心，但这些手段对我没用。这个狡猾的家伙还试图把在地窖和墓穴里的普通杀人行为和私掠相提并论，想让我良心不安！可我和他不同，在海上我亲自冒险，总会给对手投降的机会——是选择自尊还是性命，由他们自己决定。}
 BerglarsGang.15 {看来，不管是因为匆忙还是疏忽，我都没能按时赶到地牢的会面。这次机会已经永远失去了，或许连整个冒险都因此错过了？}
 BerglarsGang.16 {现在奥斯汀会躲起来，我再也找不到他了！}
+QM_Santiago
+{
+在圣地亚哥获赠物品的地点
+}
+
+QM_Santiago.1
+{
+在圣地亚哥，一个名叫@<sName>的人问了我一个问题。作为答对奖励，他告诉了我一个能弄到绝佳武器——@<sBladeName>的地方。那个地方是古巴岛上的一个洞穴，就在圣地亚哥附近。
+}
 QM_Port_Royal {赠送物品在Port Royal的位置}
 QM_Port_Royal.1 {在Port Royal，一位名叫@<sName>的女士因为我正确回答了她的问题，告诉了我哪里可以找到军官胸甲。它藏在Jamaica的Portland Bay。}
+QM_Cumana
+{
+在库马纳获赠物品的地点
+}
+
+QM_Cumana.1
+{
+今天在库马纳，一个名叫@<sName>的男子让我回答一个问题。作为答对奖励，他透露了一个装有木工工具的老旧箱子的下落，这些工具可以用来更高效地修理船只。据他所说，这个箱子很久以前就被埋在了波托贝洛附近的基里基潟湖。他还叫我别怕弄湿脚。他这是什么意思？
+}
 QM_Port_Of_Spein {赠送物品在Port of Spain的位置}
 QM_Port_Of_Spein.1 {在西班牙港，一位名叫@<sName>的男子因为我回答了他的问题，给了我一张藏宝图。是时候开始寻找了！}
 QM_Port_Of_Spein.2 {在西班牙港，一位名叫@<sName>的男子回答我的问题时说，在海盗聚居地拉维加，应该进入要塞，在石屋窗户左侧的地面下藏有一支燧发枪。我需要去把它取出来。}

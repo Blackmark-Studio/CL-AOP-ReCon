@@ -1901,7 +1901,7 @@ int LocationInitBeliz(int n)
 	//Sound
 	locations[n].type = "jungle";
 	locations[n].islandId = "Mein";
-	locations[n].islandIdAreal = "Maracaibo";
+	locations[n].islandIdAreal = "Beliz";
 	//Models
 	//Always
 	locations[n].filespath.models = "locations\Outside\Jungles\CaveEnt2";

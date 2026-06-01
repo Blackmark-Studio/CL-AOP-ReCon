@@ -120,7 +120,7 @@ Cannons_hint
 {
 Load the cannon quickly, roll it up and while the echo of the salvo is still roaring between the bulkheads, clear, load, aim, pour water on the cannon so it doesn't overheat... In the heat of battle there should be nothing excessive: load, roll up, fire!
 ~
-Depends on Talent and Power (T*0.8+A*0.2).
+Depends on Talent and Power (T*0.6+P*0.4).
 }
 
 Sailing_hint

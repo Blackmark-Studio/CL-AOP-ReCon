@@ -143,7 +143,7 @@ Rumour_Data_48 {
 Mówią, że żołnierzom w garnizonie już od prawie roku nie przysyłają żołdu z Europy. Krążą pogłoski, że ostatnio kilku ludzi zdezerterowało z fortu. A dokąd mają pójść? Wiadomo — na trakt... Czego nam nie dają, to sami sobie weźmiemy. A uczciwy człowiek już boi się wyjść za bramę miasta.
 }
 Rumour_Data_49 {
-Mówią, że nasz gubernator znów zamówił sobie meble ze Starego Świata, do swojej posiadłości. A połowa żołnierzy w forcie chodzi prawie w łachmanach i liczy groch w zupie na sztuki.\nSłyszałem, że pewien oficer garnizonowy sprzedał rodzinne drobiazgi, kupił lugier i niedawno wypłynął w morze. Oczywiście uznali go za dezertera! Ale co mu pozostało, skoro przełożeni dbają tylko o własny interes?
+Mówią, że nasz gubernator znów zamówił sobie meble ze Starego Świata, do swojej posiadłości. A połowa żołnierzy w forcie chodzi prawie w łachmanach i liczy groch w zupie na sztuki\nMówią, że pewien oficer garnizonowy sprzedał rodzinne drobiazgi, kupił lugier i niedawno wypłynął w morze. Oczywiście uznali go za dezertera! Ale co mu pozostało, skoro przełożeni dbają tylko o własny interes?
 }
 Rumour_Data_50 {
 Chodzą słuchy, że w Europie szykuje się nowa wojna. To znaczy, że znów wzrosną podatki i cła, na szkodę uczciwemu handlowi. A zwykli ludzie ruszą na trakt, byle dalej od poborców i urzędników.\nA kto wybierze morze, będzie szukał łaski u Pani Fortuny i uciekał przed kulawą... Wojna zawsze idzie w parze z biedą i rozbojem.

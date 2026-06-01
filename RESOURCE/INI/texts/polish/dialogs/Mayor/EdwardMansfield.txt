@@ -296,7 +296,7 @@ EdwardMansfield_84_f {
 Bez wielkich słów, panienko, wiem, kim jestem. Ale naprawdę nic nie wiem o planach Mediforda. Jednak powiem ci coś innego.\nDosłownie w zeszłym tygodniu zjawił się u mnie wysłannik od Mediforda, który próbował namówić mnie na zorganizowanie wyprawy na Curaçao. Oczywiście odmówiłem. Odmówili też Morgan, Jackman i John Morris.\nWychodzi więc na to, że znany spryciarz Thomas Modyford próbował rozpocząć działania zbrojne przeciwko Niderlandom przy pomocy piratów. Przebiegły, cóż tu więcej dodać...
 }
 EdwardMansfield_85 {
-Czy to znaczy, że Medford planuje zaatakować Curaçao?
+Czy to znaczy, że Modyford planuje zaatakować Curaçao?
 }
 EdwardMansfield_86 {
 Może planować atak na Curaçao, ale zrealizować taki zamiar – raczej nie. Nie ma wystarczających sił na taką operację, a do korsarstwa próbował sięgnąć nie z dobrego życia.\nZresztą, najpewniejszą ochroną Port Royal przed Hiszpanami jest stała obecność pewnej liczby piratów na redzie Jamajki. Tak więc nie, Curaçao to dla niego teraz za wysokie progi.

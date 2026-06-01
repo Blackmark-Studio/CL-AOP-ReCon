@@ -89,7 +89,7 @@ hol_Governor_29 {
 是的，mijnheer，这我知道。
 }
 hol_Governor_30 {
-你之前的任务没完成好，别人已经成功做到了你没做到的事。现在，老子给你个机会挽回。根据我收到的消息，Medford目前还没实力在Curaçao给咱们带来大麻烦。不过，他们确实打算摧毁Jamaica那座防守薄弱的Fort Orange，就在他们眼皮底下。
+你之前的任务没完成好，别人已经成功做到了你没做到的事。现在，老子给你个机会挽回。根据我收到的消息，Modyford目前还没实力在Curaçao给咱们带来大麻烦。不过，他们确实打算摧毁Jamaica那座防守薄弱的Fort Orange，就在他们眼皮底下。
 }
 hol_Governor_31 {
 明白了……

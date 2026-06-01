@@ -149,6 +149,7 @@ void LocAi_Init(ref loc)
 	else LAi_restoreStates = false;
 	
 	LAi_IsCapturedLocation = IsLocationCaptured(loc.id);
+	lai_update_timer = LAI_UPDATE_INTERVAL;
 }
 
 //Инициализация интелекта

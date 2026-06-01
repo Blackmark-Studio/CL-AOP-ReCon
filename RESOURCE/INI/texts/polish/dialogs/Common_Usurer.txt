@@ -1217,7 +1217,7 @@ Common_Usurer_357 {
 Niestety nie, ale wkrótce przyniosę.
 }
 Common_Usurer_358 {
-Dziś rano pożyczkę wziął u mnie pewien człowiek z miasta. Problem w tym, że... mnie oszukał. Przedstawił się jako Rafael Guinness, który często do mnie zagląda, i muszę przyznać, trochę go przypominał. Pożyczyłem mu 30 000 piastrów, ale potem przyszedł prawdziwy Raf i...
+Dziś rano pożyczkę wziął u mnie pewien człowiek z miasta. Problem w tym, że... mnie oszukał. Przedstawił się jako Raphael Guinness, który często do mnie zagląda, i muszę przyznać, trochę go przypominał. Pożyczyłem mu 30 000 piastrów, ale potem przyszedł prawdziwy Raphael i...
 }
 Common_Usurer_359 {
 Chcecie, żebym odnalazł tego człowieka? Dlaczego sądzicie, że wciąż jest w mieście?

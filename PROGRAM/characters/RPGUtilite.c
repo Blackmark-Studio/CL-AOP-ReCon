@@ -559,7 +559,7 @@ void ApplayNewSkill(ref _chref, string _skill, int _addValue)
            else
            {	_chref.perks.FreePoints_self = 1;
            }
-           if (or(IsOfficer(_chref), IsCompanion(_chref)) && !CheckAttribute(pchar, "AllSelf"))
+           if (or(IsOfficer(_chref), IsCompanion(_chref)) && !CheckAttribute(_chref, "AllSelf"))
            {
                 notification(ColorTextLine(StringFromKey("InfoMessages_213", _chref, GetFullName(_chref)), "gold"), "Personal abilities");
                 if (IsMainCharacter(_chref))
@@ -588,7 +588,7 @@ void ApplayNewSkill(ref _chref, string _skill, int _addValue)
            else
            {	_chref.perks.FreePoints_ship = 1;
            }
-           if (or(IsOfficer(_chref), IsCompanion(_chref)) && !CheckAttribute(pchar, "AllShip"))
+           if (or(IsOfficer(_chref), IsCompanion(_chref)) && !CheckAttribute(_chref, "AllShip"))
            {
                 notification(ColorTextLine(StringFromKey("InfoMessages_214", _chref, GetFullName(_chref)), "gold"), "Ship abilities");
 				if (IsMainCharacter(_chref))

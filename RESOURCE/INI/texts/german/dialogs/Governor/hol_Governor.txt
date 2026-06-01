@@ -89,7 +89,7 @@ hol_Governor_29 {
 Ja, mein Herr, das weiß ich.
 }
 hol_Governor_30 {
-Du hast die vorherige Aufgabe nicht richtig abgeschlossen. Andere Mutige haben geschafft, was dir nicht gelungen ist. Jetzt gebe ich dir die Gelegenheit, dich zu bewähren. Nach den Informationen, die mir vorliegen, bin ich zu dem Schluss gekommen, dass Medford derzeit nicht die Kraft hat, uns in Curaçao ernsthaft zu gefährden. Allerdings beabsichtigen sie, das schwach befestigte Fort Orange zu zerstören, das direkt vor ihrer Nase auf Jamaika liegt.
+Du hast die vorherige Aufgabe nicht richtig abgeschlossen. Andere Mutige haben geschafft, was dir nicht gelungen ist. Jetzt gebe ich dir die Gelegenheit, dich zu bewähren. Nach den Informationen, die mir vorliegen, bin ich zu dem Schluss gekommen, dass Modyford derzeit nicht die Kraft hat, uns in Curaçao ernsthaft zu gefährden. Allerdings beabsichtigen sie, das schwach befestigte Fort Orange zu zerstören, das direkt vor ihrer Nase auf Jamaika liegt.
 }
 hol_Governor_31 {
 Ich verstehe...

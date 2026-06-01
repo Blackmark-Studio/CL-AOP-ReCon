@@ -529,7 +529,7 @@ MusketeerOnly            {Mousquetaire convaincu}
 perkMusketeerOnly         {Le personnage ne reconnaît que la puissance de la poudre et du plomb, étant totalement incapable (ou refusant par principe) de tenir une arme blanche. Au combat, il ne peut utiliser qu'un mousquet.}
 
 WeaponBonding             {Lien avec l'arme}
-perkHumphreyGunmaster      {Le personnage ressent un attachement mental profond pour son arme unique.
+perkWeaponBonding         {Le personnage ressent un attachement mental profond pour son arme unique.
 ~
 Ce trait de caractère empêche le personnage d'utiliser toute autre arme, mais il est sans égal dans le maniement de son arme personnelle.}
 

@@ -1217,7 +1217,7 @@ Common_Usurer_357 {
 Lamentablemente no, pero lo traeré pronto.
 }
 Common_Usurer_358 {
-Esta mañana temprano, un hombre del pueblo vino a pedirme un préstamo. El caso es que... me engañó. Dijo ser Rafael Guinness, que suele visitarme, y, para ser sincero, sí se le parece un poco. Le presté 30,000 piastras, pero luego el propio Raf vino y...
+Esta mañana temprano, un hombre del pueblo vino a pedirme un préstamo. El caso es que... me engañó. Dijo ser Raphael Guinness, que suele visitarme, y, para ser sincero, sí se le parece un poco. Le presté 30,000 piastras, pero luego el propio Raphael vino y...
 }
 Common_Usurer_359 {
 ¿Quieres que encuentre a esa persona? ¿Por qué crees que sigue en la ciudad?

@@ -74,7 +74,7 @@ Common_Tavern_21 {
 Mam do pana/pani jedną delikatną sprawę.
 }
 Common_Tavern_22 {
-Interesuje mnie człowiek o imieniu Rafael Guinness. Jak mogę go znaleźć?
+Interesuje mnie człowiek o imieniu Raphael Guinness. Jak mogę go znaleźć?
 }
 Common_Tavern_23 {
 Na miłość boską, kapitanie, ratujcie! Oni wszystko zniszczą! Moją tawernę!

@@ -105,7 +105,7 @@ Cannons_hint
 {
 Załaduj działo szybko, przetocz je i gdy echo salwy wciąż dudni między grodziami, oczyść, załaduj, wyceluj, polej wodą, by się nie przegrzało... W ogniu walki nie ma miejsca na zbędne ruchy: załaduj, przetocz, strzelaj!
 ~
-Zależy od Talentu i Siły (T*0.8+A*0.2).
+Zależy od Talentu i Siły (T*0.6+P*0.4).
 }
 Sailing_hint
 {

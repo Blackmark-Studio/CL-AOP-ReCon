@@ -1,3 +1,5 @@
+// KZ > ref 29.12.2023
+
 // DEFINES
 #define MUSIC_CHANGE_TIME  3000
 #define MUSIC_SILENCE_TIME 180000.0
@@ -703,10 +705,9 @@ void StopMusic()
 
 	// > TODO restart OR keep playing
 /*	if (!CheckAttribute(&TEV, "Music.KeepPlaying"))
-	{
-		ReleaseSound(musicID);
-		musicID = -1;
-	}*/
+		ReleaseSound(musicID);*/
+
+	musicID = -1;
 }
 
 void PlayMusic(string _sTrackName, int _iFadeTime)
@@ -832,7 +833,8 @@ void ResetSound()
 
 	if (!CheckAttribute(&TEV, "Music.KeepPlaying") || !CheckAttribute(&TEV, "Music.CurrentTrack"))
 	{
-		if (musicID > 0) StopSound(musicID, 0);
+		if (musicID >= 0)
+			StopSound(musicID, 0);
 		musicID = -1;
 		DeleteAttribute(&TEV, "Music.CurrentTrack");
 	}

@@ -230,11 +230,13 @@ float LAi_CalcUseEnergyForBlade(aref character, string actionType)
 
 float Lai_UpdateEnergyPerDltTime(aref chr, float curEnergy, float dltTime)
 {
-	float fMultiplier = 1.6666667;
+	float dltep = LAI_DEFAULT_DLTEP;
+	if (CheckAttribute(chr, "chr_ai.ep_dlt"))
+		dltep = stf(chr.chr_ai.ep_dlt);
 
 	if(CheckCharacterPerk(chr, "Energaiser")) // скрытый перк боссов и ГГ
 	{
-		fMultiplier = fMultiplier * 1.5;
+		dltep *= 1.5;
 	}
 	if(CheckCharacterPerk(chr, "Tireless")) 
 	{
@@ -245,19 +247,17 @@ float Lai_UpdateEnergyPerDltTime(aref chr, float curEnergy, float dltTime)
 			if (chr.chr_ai.type == LAI_TYPE_OFFICER || IsMainCharacter(chr))
 				iBonus = GetParamPageBonus("Tireless");
 		}
-		fMultiplier = fMultiplier * (1.15 + 0.01 * iBonus);
+		dltep *= 1.15 + 0.01 * iBonus;
 	}
     // честно все всем
 	/*
 	if(chr.id == pchar.id || chr.chr_ai.group == LAI_GROUP_PLAYER)
 	{
-		fMultiplier = fMultiplier * (1.0 + (0.025 * MOD_SKILL_ENEMY_RATE));
+		dltep = dltep * (1.0 + (0.025 * MOD_SKILL_ENEMY_RATE));
 	}
 	*/
-	float fEnergy;
-	fEnergy = curEnergy + dltTime * fMultiplier;
 
-	return fEnergy;
+	return curEnergy + dltTime * dltep;
 }
 
 

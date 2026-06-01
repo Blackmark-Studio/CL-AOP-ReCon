@@ -8965,6 +8965,7 @@ void LSC_closeLine(string qName)
 		LAi_SetRolyPoly(sld, true);
 	}
 	//вещи из сундука диффиндура перекладываем в сундук каюты
+	Set_My_Cabin();
 	int iLoc = FindLocation("LostShipsCity_town");
 	aref aFromBox, aToBox;
 	makearef(aFromBox, Locations[iLoc].private11);
@@ -17585,7 +17586,7 @@ void PDM_ONV_Nachalo(string qName)
 	ref sld;
 	sld = GetCharacter(NPC_GenerateCharacter("PDM_secretary", "citiz_13", "man", "man", 10, SPAIN, -1, false));
 	sld.name = FindPersonalName("PDM_secretary_name");
-	sld.lastname = FindPersonalName("PDM_lastname");
+	sld.lastname = FindPersonalName("PDM_secretary_lastname");
 	LAi_SetCitizenType(sld);
 	sld.dialog.filename   = "Quest\PDM\Ohota_na_vedmu.c";
 	sld.dialog.currentnode   = "First_time";
@@ -18212,14 +18213,14 @@ void PDM_Lesopilka_Treasures_BeforeFight(string qName)
 	PChar.quest.PDM_Lesopilka_Treasures_Kino_1.win_condition.l1 = "location";
 	PChar.quest.PDM_Lesopilka_Treasures_Kino_1.win_condition.l1.location = "Dominica_jungle_01";
 	PChar.quest.PDM_Lesopilka_Treasures_Kino_1.function = "PDM_Lesopilka_Treasures_Kino_1";
-	
+	//ставим укрепления
 	loc = &Locations[FindLocation("Dominica_jungle_01")];
 	loc.models.always.jungle_outpost = "jungle6_outpost";
 	loc.models.always.jungle_outpost.tech = "DLightModel";
 	loc.models.always.locators = "jungle6_outpost_locators";
 	loc.models.day.charactersPatch = "jungle6_outpost_patch";
 	loc.models.night.charactersPatch = "jungle6_outpost_patch";
-	
+	//ставим в грот золото
 	loc = &Locations[FindLocation("Dominica_Grot")];
 	loc.models.always.GrotI_gold = "GrotI_gold";
 	loc.models.day.charactersPatch = "GrotI_gold_patch";
@@ -18234,7 +18235,7 @@ void PDM_Lesopilka_Treasures_BeforeFight(string qName)
 	loc.private1.items.jewelry1 = rand(10)+5;
 	loc.private1.items.jewelry3 = rand(10)+5;
 	loc.private1.items.jewelry4 = rand(10)+5;
-	
+
 	sld = CharacterFromID("Hugo_Lesopilka");
 	ChangeCharacterAddressGroup(sld, pchar.location, "goto",  "goto8");
 	LAi_SetActorType(sld);
@@ -18489,7 +18490,6 @@ void PDM_Lesopilka_Treasures_GoToGrot(string qName)
 	}
 	
 	chrDisableReloadToLocation = false;
-	
 	AddQuestRecord("PDM_Lesopilka", "9");
 	
 	QuestPointerToLoc("Dominica_Jungle_01", "reload", "reload3_back");
@@ -18502,6 +18502,7 @@ void PDM_Lesopilka_Treasures_InGrot(string qName)
 {
 	Log_Clear();
 	bDisableCharacterMenu = true;
+	RemoveCharacterEquip(pchar, MUSKET_ITEM_TYPE);
 	ref sld;
 	StartQuestMovie(true, false, true);
 	LAi_FadeEx(0.0, 2.0, 1.0, "", "PDM_Lesopilka_Treasures_InGrot_2", "");
@@ -18643,7 +18644,6 @@ void PDM_Lesopilka_Treasures_InGrot_11(string qName)
 	
 	sld = CharacterFromID("Hugo_Lesopilka");
 	ChangeCharacterAddressGroup(sld, "none", "", "");
-	
 	ChangeCharacterAddressGroup(pchar, PChar.location, "quest", "quest4");
 }
 
@@ -18658,6 +18658,7 @@ void PDM_Lesopilka_Treasures_InGrot_12(string qName)
 	
 	RemoveMapQuestMark("Dominica", "PDM_Lesopilka");
 	AddMapQuestMark_Major("Villemstad_town", "PDM_Lesopilka", "");
+	QuestPointerToLoc("Dominica_Grot", "box", "private1");
 	QuestPointerDelLoc("Shore26", "reload", "reload1_back");
 	QuestPointerDelLoc("Shore27", "reload", "reload1_back");
 	QuestPointerDelLoc("Dominica_Jungle_01", "reload", "reload3_back");
@@ -18685,6 +18686,7 @@ void PDM_Lesopilka_Treasures_BackToVillemstad(string qName)
 	loc.models.night.charactersPatch = "GrotI_patch";
 	loc.models.always.locators = "GrotI_locators";
 	loc.locators_radius.box.box1 = 0.5;
+	QuestPointerDelLoc("Dominica_Grot", "box", "private1");
 	
 	PChar.quest.PDM_Lesopilka_Treasures_Final.win_condition.l1 = "location";
 	PChar.quest.PDM_Lesopilka_Treasures_Final.win_condition.l1.location = "Villemstad_town";

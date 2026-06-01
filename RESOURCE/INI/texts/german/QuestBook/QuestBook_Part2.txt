@@ -534,7 +534,7 @@ Eng_Line_1_Albermal {Eskorte des Duke Albemarle}
 Eng_Line_1_Albermal.1 {Ich hatte das Glück, einen wichtigen Auftrag von Sir Thomas Modyford, dem Generalgouverneur der englischen Kolonien, zu erhalten. Ich muss mit dem Duke of Albemarle sprechen, der sich im Privatzimmer von Modyfords Residenz aufhält.}
 Eng_Line_1_Albermal.2 {Der Duke of Albemarle ist nun meinem Schiff zugeteilt. Meine Aufgabe ist es, den Duke nach Saint John's auf der Insel Antigua zu bringen. Nach der Ankunft in Saint John's muss ich den Duke direkt zur Residenz des Gouverneurs begleiten. Ich muss vorsichtig sein: Es scheint, als hätte Modyford Grund zu der Annahme, dass die Spanier Jagd auf den Duke of Albemarle machen...}
 Eng_Line_1_Albermal.3 {Als ich mich Antigua näherte, wurde ich von einer spanischen Fluyt angegriffen. Es sah so aus, als wäre es einer dieser Patrouillen, die Jagd auf Duke Albemarle machen. Der Spanier ist verschwunden, und ich liege vor Anker in St. John’s. Nur noch eine letzte Sache bleibt zu tun.}
-Eng_Line_1_Albermal.4 {Medfords Auftrag ist erfüllt, und Duke Albemarle wurde sicher abgeliefert. Ich habe Albemarles Depesche für Medford bei mir und kann nun nach Port Royal zurückkehren, um meine wohlverdiente Belohnung zu erhalten.}
+Eng_Line_1_Albermal.4 {Modyfords Auftrag ist erfüllt, und Duke Albemarle wurde sicher abgeliefert. Ich habe Albemarles Depesche für Modyford bei mir und kann nun nach Port Royal zurückkehren, um meine wohlverdiente Belohnung zu erhalten.}
 Eng_Line_2_Talking {Überzeuge die berühmten Piraten, Curaçao anzugreifen}
 Eng_Line_2_Talking.1 {Der Gouverneur von Jamaika hat mir aufgetragen, mit vier Freibeutern zu verhandeln: Edward Mansfield in der Bukaniersiedlung La Vega auf Hispaniola, Henry Morgan in der Stadt Saint John's auf Antigua, Jackman auf Bermuda und John Morris auf der Insel Trinidad. Ich muss sie davon überzeugen, die niederländische Stadt Curaçao anzugreifen.}
 Eng_Line_2_Talking.2 {Ich habe mit Morgan gesprochen und keine Erlaubnis erhalten, Curaçao anzugreifen. Der Grund ist, dass momentan nicht genügend Kräfte für eine solche Operation zur Verfügung stehen.}
@@ -570,7 +570,7 @@ Eng_Line_4_Intelligence_Curacao.1 {Ich habe einen weiteren Auftrag vom englische
 Eng_Line_4_Intelligence_Curacao.2 {Der örtliche Geldverleiher, Josef Nunen de Fonquesao, ist genau der Mann, den ich brauche. Für Geld würde er jeden verraten – genau das ist es, was ich suche.}
 Eng_Line_4_Intelligence_Curacao.3 {Josef hat mich auf eine Korvette hingewiesen, die im Hafen von Curacao auf Reede liegt und abfahrbereit ist. Ich muss an Bord gehen und die Kajüte gründlich durchsuchen.}
 Eng_Line_4_Intelligence_Curacao.4 {Verdammt, Josef verlangt 100.000!!! Was für ein Appetit! Aber ich muss wohl den vollen Betrag zahlen.}
-Eng_Line_4_Intelligence_Curacao.5 {Ich habe die Beherrschung verloren, dieser Halunke Josef hat mich zur Weißglut gebracht. Ich wollte ihn still und leise erledigen, aber er hat die Wachen gerufen. Die ganze Stadt war in Aufruhr. Tja, Medfords Auftrag ist wohl gescheitert.}
+Eng_Line_4_Intelligence_Curacao.5 {Ich habe die Beherrschung verloren, dieser Halunke Josef hat mich zur Weißglut gebracht. Ich wollte ihn still und leise erledigen, aber er hat die Wachen gerufen. Die ganze Stadt war in Aufruhr. Tja, Modyfords Auftrag ist wohl gescheitert.}
 Eng_Line_4_Intelligence_Curacao.6 {Verdammt, ich sitze in einem niederländischen Gefängnis. Sie haben mir meine Waffen und mein Geld abgenommen, und ich habe keine Ahnung, was ich jetzt tun soll ...}
 Eng_Line_4_Intelligence_Curacao.7
 {
@@ -626,8 +626,8 @@ Du musst dich einer ziemlich unangenehmen Aufgabe stellen: Modyford hat dir befo
 7. Blayvelt – Guadeloupe
 Alles dort gefundene Gold muss an Modyford abgeliefert werden. Und es sollten 2.100 Nuggets sein!
 }
-Eng_Line_7_SevenTresures.2 {Medfords Auftrag ist erfüllt. Ich habe 2.100 Goldnuggets gefunden und in die Residenz des englischen Generalgouverneurs gebracht.}
-Eng_Line_7_SevenTresures.3 {@<GoldQtyGaveModiford> Nuggets an Medford geliefert. @<GoldQtyForSeek> noch zu finden.}
+Eng_Line_7_SevenTresures.2 {Modyfords Auftrag ist erfüllt. Ich habe 2.100 Goldnuggets gefunden und in die Residenz des englischen Generalgouverneurs gebracht.}
+Eng_Line_7_SevenTresures.3 {@<GoldQtyGaveModiford> Nuggets an Modyford geliefert. @<GoldQtyForSeek> noch zu finden.}
 Eng_Line_7_SevenTresures.4 {Ich habe mich geweigert, diese Aufgabe zu erfüllen, da sie sich zu einer äußerst ermüdenden Angelegenheit entwickelt hat. Mein Ansehen in Medifords Augen hat gelitten...}
 Eng_Line_8_ToMansfield {Zu Edward Mansfeld wegen Gold}
 Eng_Line_8_ToMansfield.1
@@ -646,7 +646,7 @@ Eng_Line_8_ToMansfield.5 {In der Nähe von Santiago holte ich eine der Galeonen 
 Eng_Line_8_ToMansfield.6 {In der Nähe von Santiago holte ich eine der Galeonen ein und enternte sie. Auf der Galeone fand ich kein gestohlenes Gold. Es ist außerdem unklar, wo sich die beiden anderen Galeonen befinden, die an dem Überfall auf die Bukaniere beteiligt waren.}
 Eng_Line_8_ToMansfield.7 {In der Nähe von Santiago habe ich einen der Galeonen eingeholt und versenkt. Wo sich die beiden anderen Galeonen befinden, die an dem Angriff auf die Bukaniere beteiligt waren, weiß ich nicht.}
 Eng_Line_9_AttackSantiago {Angriff auf Santiago}
-Eng_Line_9_AttackSantiago.1 {Medford hat mir befohlen, die spanische Stadt Santiago anzugreifen. Die Stadt darf ich nach Belieben plündern. Das Einzige, was Medford will, ist der Gouverneur von Santiago, José Sancho Jiménez.}
+Eng_Line_9_AttackSantiago.1 {Modyford hat mir befohlen, die spanische Stadt Santiago anzugreifen. Die Stadt darf ich nach Belieben plündern. Das Einzige, was Modyford will, ist der Gouverneur von Santiago, José Sancho Jiménez.}
 Eng_Line_9_AttackSantiago.2 {Wir haben Santiago im Sturm genommen. Gouverneur Jose Sancho Jimenez ist mein Gefangener. Wir können nach Jamaika zurückkehren.}
 Eng_Line_9_AttackSantiago.3 {Am Ausgang der Bucht von Santiago wurden wir von dem Geschwader von Manoel Rivero Pardal überfallen, der tatsächlich zur Hilfe für Santiago eilte. Wir kämpften und siegten; wir hatten einfach keine andere Wahl.}
 Eng_Line_9_AttackSantiago.4 {Am Ausgang der Bucht von Santiago gerieten wir in einen Hinterhalt des Geschwaders von Manoel Rivero Pardal, der tatsächlich zur Hilfe für Santiago eilte. Nach dem Sturm auf Santiago hatte ich keine Kraft mehr für eine weitere ernsthafte Schlacht. Ich musste fliehen.}
@@ -705,7 +705,7 @@ Hol_Line_3_WormEnglishPlans.10 {Der Geldverleiher leiht niemandem mehr Geld! Er 
 Hol_Line_3_WormEnglishPlans.11 {Der Picardier ist auch Stammgast im Bordell. Er lebt wirklich gut, dieser Glückspilz!}
 Hol_Line_3_WormEnglishPlans.12 {Morgan hat kein Wort zu mir gesagt, er hat mich einfach rausgeworfen.}
 Hol_Line_3_WormEnglishPlans.13 {Ich muss einen englischen Offizier aus dem Gefängnis holen. Er soll mir sagen, wo Modyford seinen Angriff plant.}
-Hol_Line_3_WormEnglishPlans.14 {Ich habe alles herausgefunden. Medford bereitet einen Angriff auf Fort Orange vor. Jetzt muss ich Stuyvesant sofort informieren.}
+Hol_Line_3_WormEnglishPlans.14 {Ich habe alles herausgefunden. Modyford bereitet einen Angriff auf Fort Orange vor. Jetzt muss ich Stuyvesant sofort informieren.}
 Hol_Line_4_DefenceOrange {Verteidige Fort Orange gegen den bevorstehenden englischen Angriff}
 Hol_Line_4_DefenceOrange.1 {Ich habe einen neuen Auftrag vom Generalgouverneur der Niederlande erhalten. Jetzt ist es meine Aufgabe, die englische Landungsexpedition abzufangen und Fort Orange vor Plünderung zu bewahren.}
 Hol_Line_4_DefenceOrange.2 {Die englischen Schiffe sind zerstört. Jetzt müssen wir die Zugänge zu Fort Orange erkunden – vielleicht ist es den Engländern gelungen, Truppen an Land zu bringen.}
@@ -1188,8 +1188,26 @@ BerglarsGang.13 {Und doch habe ich es geschafft! Alle Mitglieder von Austins Ban
 BerglarsGang.14 {Es ist vollbracht – Austin ist seiner Bande ins Jenseits gefolgt. Man muss ihm lassen: Er verstand es, Menschen zu überreden und zu manipulieren, aber bei mir zog dieser Trick nicht. Der gerissene Kerl wollte gewöhnliche Morde in Kellern und Katakomben mit dem Kaperwesen gleichsetzen und dabei mein Gewissen ansprechen! Im Gegensatz zu ihm riskiere ich auf See persönlich meinen Hals und gebe meinen Gegnern immer die Chance, sich zu ergeben – die Entscheidung zwischen Stolz und Leben liegt bei ihnen.}
 BerglarsGang.15 {Offenbar bin ich entweder aus Eile oder Unachtsamkeit nicht rechtzeitig zum Treffen im Kerker erschienen. Diese Gelegenheit ist für immer verloren – vielleicht sogar ein ganzes Abenteuer?}
 BerglarsGang.16 {Jetzt wird Austin untertauchen, und ich werde ihn nie wiederfinden!}
+QM_Santiago
+{
+Verbleib des geschenkten Gegenstands in Santiago
+}
+
+QM_Santiago.1
+{
+In Santiago hat mir ein gewisser @<sName> eine Frage gestellt. Als Belohnung für die richtige Antwort nannte er mir einen Ort, an dem ich eine hervorragende Waffe ergattern kann – @<sBladeName>. Bei diesem Ort handelt es sich um eine Grotte auf der Insel Kuba, ganz in der Nähe von Santiago.
+}
 QM_Port_Royal {Fundort des geschenkten Gegenstands in Port Royal}
 QM_Port_Royal.1 {In Port Royal hat mir eine Frau namens @<sName> für die richtige Antwort auf ihre Frage verraten, wo ich einen Offizierskürass finden kann. Er ist auf Jamaika in der Portland Bay versteckt.}
+QM_Cumana
+{
+Verbleib des geschenkten Gegenstands in Cumana
+}
+
+QM_Cumana.1
+{
+Heute hat mir in Cumana ein Mann namens @<sName> eine Frage gestellt. Als Belohnung für die richtige Antwort erzählte er von einer alten Kiste mit Zimmermannswerkzeugen, mit denen sich Schiffe effizienter reparieren ließen. Seinen Worten zufolge war diese Kiste vor langer Zeit in der Lagune von Chiriquí in der Nähe von Portobelo vergraben worden. Außerdem sagte er, ich solle keine Angst davor haben, mir die Füße nass zu machen. Was meinte er wohl damit?
+}
 QM_Port_Of_Spein {Standort des geschenkten Gegenstands in Port of Spain}
 QM_Port_Of_Spein.1 {In Port of Spain hat mir ein Mann namens @<sName> für die Beantwortung einer Frage eine Schatzkarte gegeben. Es ist Zeit, mit der Suche zu beginnen!}
 QM_Port_Of_Spein.2 {In Port of Spain hat mir ein Mann namens @<sName> auf meine Frage geantwortet, dass ich in der Piratensiedlung La Vega in das Fort gehen soll. Links unter dem Fenster des Steinhauses ist ein Steinschlossgewehr im Boden versteckt. Ich muss hingehen und es holen.}

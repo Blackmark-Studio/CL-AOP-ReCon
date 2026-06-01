@@ -497,7 +497,7 @@ void ProcessDialogEvent()
 		break;
 
 		case "Contra_GenQuest_Church_2_Contra2_2":
-			string sGenLocation = IslandGetLocationFromType(PChar.GenQuest.ChurchQuest_2.Contra_Colony, "seashore");
+			string sGenLocation = IslandGetLocationFromType(GetArealByCityName(PChar.GenQuest.ChurchQuest_2.Contra_Colony), "seashore");
 			PChar.GenQuest.ChurchQuest_2.QuestGangShore = sGenLocation;
 			PChar.GenQuest.ChurchQuest_2.BanditsInShore = true;
 			dialog.text = StringFromKey("Smuggler_Agent_dialog_99", XI_ConvertString(sGenLocation + "Pre"));

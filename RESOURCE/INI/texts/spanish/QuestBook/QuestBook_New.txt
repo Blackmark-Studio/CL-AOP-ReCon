@@ -687,7 +687,7 @@ Marginpassenger.7 {¡Vaya sorpresa! Resulta que @<sName2> ha estirado la pata. �
 Marginpassenger.8 {El posadero me dijo que la persona que busco es más fácil de encontrar en las calles de la ciudad. Sin embargo, no debo buscar antes del mediodía ni después de las nueve, ya que parece que en esos horarios @<sName2> no recibe a nadie.}
 Marginpassenger.9 {El rescate ha sido recibido: @<sSum> en oro @<sMoney>. Ahora debo salir de aquí cuanto antes; quién sabe qué podría contar mi antigua "presa" sobre mí...}
 Marginpassenger.10 {El rescate ha sido recibido: @<sSum> pesa bien en mi bolsillo. Ahora debo salir de aquí rápido—quién sabe qué podría decir mi antigua “presa” sobre mí...}
-Marginpassenger.11 {@<sName2> se negó a pagar el rescate. ¿Y ahora qué hago con mi "botín"? Llevarlo a @<sCity> es demasiado peligroso; no pienso correr ese riesgo. Mejor iré a ver a @<sBaron>, dicen que es experto en sacar dinero a los familiares de los prisioneros. Intentaré venderle a mi pasajero.}
+Marginpassenger.11 {@<sName2> se negó a pagar el rescate. ¿Y ahora qué hago con mi "botín"? Llevarlo a @<sCity> es demasiado peligroso; no pienso correr ese riesgo. Será mejor que vaya a Le François, donde @<sBaron> está al mando en este momento. Dicen que es experto en sacar dinero a los familiares de los prisioneros. Intentaré venderle a mi pasajero.}
 Marginpassenger.12 {Rescate recibido - @<sSum>. No es gran recompensa por todo mi esfuerzo, pero es mejor que nada.}
 Marginpassenger.13 {En lugar de un rescate, obtuve una pista interesante de @<sName>. Debo dirigirme a @<sShore> de inmediato. No tengo más de una semana.}
 Marginpassenger.14 {Llegué tarde a @<sShore>. Otro botín se me escapó. ¡Qué mala suerte!}

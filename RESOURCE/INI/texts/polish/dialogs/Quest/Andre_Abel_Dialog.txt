@@ -167,7 +167,7 @@ Andre_Abel_Dialog_53 {
 W skrócie... Jakieś cztery miesiące temu, w dość nieprzyjemnych okolicznościach, spotkałem się z Jackmanem...
 }
 Andre_Abel_Dialog_54 {
-Zaczekaj! Czy ty przypadkiem nie mówisz o Jacobie Fuckmanie, zwanym też Jackmanem? Tym, który rządzi bermudzkimi piratami w Skullshore, prawda?
+Zaczekaj! Czy ty przypadkiem nie mówisz o Jacobie Fakmenie, zwanym też Jackmanem? Tym, który rządzi bermudzkimi piratami w Skullshore, prawda?
 }
 Andre_Abel_Dialog_55_m {
 Właśnie o nim... Otóż Jackman, korzystając z sytuacji, zaproponował mi swoją ochronę w zamian za 50 procent wszystkich moich zysków. Odmówiłem. Po pierwsze dlatego, że to zwykły rozbój, a po drugie nie sądziłem, że Jackman sam zacznie mi stwarzać problemy. Ale się myliłem.\nMniej więcej miesiąc później, w pobliżu Gwadelupy, mój galeon został zaatakowany przez dwie szkunery pod piracką banderą. Cudem udało mi się uciec, choć musiałem wyrzucić część ładunku, żeby utrzymać prędkość. Uratowało nas to, że fort Bass-Ter zauważył nas na czas i otworzył ogień.\nJeszcze po kilku miesiącach natknąłem się na piracką eskadrę u wybrzeży Jamajki... Gdyby nie angielska fregata patrolująca te wody, nie rozmawialibyśmy teraz.\nOkoło pół miesiąca później, w składzie niewielkiego karawanu handlowego, dotarłem do Fort-de-France. Tam rozładowałem swój podniszczony galeon i sprzedałem go, licząc, że zmyli to ludzi Jackmana... Potem kupiłem i wyposażyłem fluit, wziąłem fracht do Port-au-Prince i zacząłem czekać na towarzysza podróży. Ale terminy frachtu zmusiły mnie do szukania eskorty.\nA dalej już sam wszystko wiesz...

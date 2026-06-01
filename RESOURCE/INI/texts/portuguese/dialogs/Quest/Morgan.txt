@@ -1214,7 +1214,7 @@ Morgan_311_f {
 Foi exatamente o que pensei quando mandei carregarem as bombas.
 }
 Morgan_312 {
-Certo, é melhor você cuidar dos seus próprios assuntos agora. Se quiser trabalhar para alguma das nações, não vou impedir. Quando terminar, me procure e continuamos nossa parceria. Só mantenha distância dos ingleses—Medford está bem ciente dos seus feitos. De certa forma, ele e eu somos quase amigos.
+Certo, é melhor você cuidar dos seus próprios assuntos agora. Se quiser trabalhar para alguma das nações, não vou impedir. Quando terminar, me procure e continuamos nossa parceria. Só mantenha distância dos ingleses—Modyford está bem ciente dos seus feitos. De certa forma, ele e eu somos quase amigos.
 }
 Morgan_313 {
 E se eu não quiser lidar com as autoridades?

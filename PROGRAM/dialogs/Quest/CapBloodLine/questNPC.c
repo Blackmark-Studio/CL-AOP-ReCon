@@ -333,8 +333,6 @@ void ProcessDialogEvent()
 				link.l1.go = "QSTStep_0";
 				link.l2 = StringFromKey("questNPC_92");
 				link.l2.go = "QSTStep_2";
-				// Проверка: Харизма И Сила  konstrush
-				//				if (GetCharacterSPECIAL(pchar, SPECIAL_C) >= 6 && GetCharacterSPECIAL(pchar, SPECIAL_S) >= 8)
 				if (PlayerRPGCheck_SPECIAL(SPECIAL_C, 6) && PlayerRPGCheck_SPECIAL(SPECIAL_S, 8))
 				{
 					link.l3 = StringFromKey("questNPC_93");

@@ -711,7 +711,7 @@ Marginpassenger.7 {Well, what do you know! Turns out @<sName2> has kicked the bu
 Marginpassenger.8 {From the innkeeper, I learned that the person I’m looking for is easiest to find on the city streets. However, I shouldn’t search before noon or after nine o’clock — it seems that during these times @<sName2> doesn’t meet with anyone.}
 Marginpassenger.9 {The ransom has been received – @<sSum> in gold @<sMoney>. Now I need to get out of here quickly – who knows what my former 'catch' might say about me...}
 Marginpassenger.10 {The ransom has been received – @<sSum> is a nice weight in my pocket. Now I need to get out of here quickly—who knows what my former “catch” might say about me...}
-Marginpassenger.11 {@<sName2> refused to pay the ransom. So what am I supposed to do with my "prize" now? Taking them to @<sCity> is too dangerous—I won't take that risk. I'd better go to @<sBaron> instead—rumor has it he specializes in squeezing money out of prisoners' relatives. I'll try to sell him my passenger.}
+Marginpassenger.11 {@<sName2> refused to pay the ransom. So what am I supposed to do with my "prize" now? Taking them to @<sCity> is too dangerous—I won't take that risk. I'd better head to Le François, where @<sBaron> is currently in charge. Rumor has it he specializes in squeezing money out of prisoners' relatives. I'll try to sell him my passenger.}
 Marginpassenger.12 {Ransom received - @<sSum>. Not much of a reward for all my efforts, but better than nothing.}
 Marginpassenger.13 {Instead of a ransom, I got an interesting lead from @<sName>. I should head to @<sShore> immediately. I have no more than a week.}
 Marginpassenger.14 {I was late to @<sShore>. Another prize slipped away from me. What rotten luck!}

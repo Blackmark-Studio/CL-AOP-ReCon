@@ -561,6 +561,7 @@ void ProcessDialogEvent()
 			dialog.text = StringFromKey("Common_Shipyard_113", pchar);
 			link.l1 = StringFromKey("Common_Shipyard_114");
 			link.l1.go = "fight";
+			ShipyardsMapQuestEnd(npchar, "3");
 			ChangeCharacterReputation(pchar, -1);
 			for (i = 1; i <= 5; i++)
 			{
@@ -630,15 +631,12 @@ void ProcessDialogEvent()
 			link.l2 = StringFromKey("Common_Shipyard_131");
 			link.l2.go = "Allarm_1";
 		break;
+
 		case "ShipyardsMapOk_4":
 			dialog.text = StringFromKey("Common_Shipyard_132");
 			link.l1 = StringFromKey("Common_Shipyard_133", pchar);
 			link.l1.go = "exit";
-			DeleteAttribute(pchar, "questTemp.different.ShipyardsMap");
-			AddQuestRecord("ShipyardsMap", "3");
-			AddQuestUserData("ShipyardsMap", "sSex", GetSexPhrase("", "а"));
-			AddQuestUserData("ShipyardsMap", "sCity", XI_ConvertString("Colony" + npchar.city + "Gen"));
-			CloseQuestHeader("ShipyardsMap");
+			ShipyardsMapQuestEnd(npchar, "3");
 		break;
 
 		case "ShipyardsMapOk_5":
@@ -647,11 +645,7 @@ void ProcessDialogEvent()
 			link.l1.go = "exit";
 			AddCharacterExpToSkill(pchar, "Commerce", 20);
 			ChangeCharacterReputation(pchar, 5);
-			AddQuestRecord("ShipyardsMap", "4");
-			AddQuestUserData("ShipyardsMap", "sSex", GetSexPhrase("", "а"));
-			AddQuestUserData("ShipyardsMap", "sCity", XI_ConvertString("Colony" + npchar.city + "Gen"));
-			CloseQuestHeader("ShipyardsMap");
-			DeleteAttribute(pchar, "questTemp.different.ShipyardsMap");
+			ShipyardsMapQuestEnd(npchar, "4");
 		break;
 	}
 }
@@ -700,4 +694,13 @@ void ShipyardRestrictDialog(aref arLink, ref rChar)
 					StringFromKey("Common_Shipyard_84"),
 					StringFromKey("Common_Shipyard_85")));
 	arLink.l1.go = "exit";
+}
+
+void ShipyardsMapQuestEnd(ref rChar, string sQuestNote)
+{
+	AddQuestRecord("ShipyardsMap", sQuestNote);
+	AddQuestUserData("ShipyardsMap", "sSex", GetSexPhrase("", "а"));
+	AddQuestUserData("ShipyardsMap", "sCity", XI_ConvertString("Colony" + rChar.city + "Gen"));
+	CloseQuestHeader("ShipyardsMap");
+	DeleteAttribute(pchar, "questTemp.different.ShipyardsMap");
 }

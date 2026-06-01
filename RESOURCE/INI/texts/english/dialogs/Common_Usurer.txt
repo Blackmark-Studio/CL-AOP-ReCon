@@ -1217,7 +1217,7 @@ Common_Usurer_357 {
 Unfortunately, no, but I’ll bring it soon.
 }
 Common_Usurer_358 {
-Early this morning, a man from town came to me for a loan. The thing is... he tricked me. He claimed to be Rafael Guinness, who often visits me, and, to be honest, he does look a bit like him. I gave him a loan of 30,000 piastres, but then Raf himself came by and...
+Early this morning, a man from town came to me for a loan. The thing is... he tricked me. He claimed to be Raphael Guinness, who often visits me, and, to be honest, he does look a bit like him. I gave him a loan of 30,000 piastres, but then Raphael himself came by and...
 }
 Common_Usurer_359 {
 You want me to find this person? Why do you think they're still in town?

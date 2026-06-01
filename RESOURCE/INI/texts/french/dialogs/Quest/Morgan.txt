@@ -1215,7 +1215,7 @@ Morgan_311_f {
 C’est exactement ce que j’ai pensé quand je leur ai ordonné de charger les bombes.
 }
 Morgan_312 {
-Très bien, tu ferais mieux de retourner à tes affaires maintenant. Si tu veux travailler pour l’une des nations, je ne t’en empêcherai pas. Quand tu auras terminé, viens me retrouver et nous reprendrons notre collaboration. Mais évite les Anglais—Medford est parfaitement au courant de tes exploits. Lui et moi sommes, d’une certaine façon, en bons termes.
+Très bien, tu ferais mieux de retourner à tes affaires maintenant. Si tu veux travailler pour l’une des nations, je ne t’en empêcherai pas. Quand tu auras terminé, viens me retrouver et nous reprendrons notre collaboration. Mais évite les Anglais—Modyford est parfaitement au courant de tes exploits. Lui et moi sommes, d’une certaine façon, en bons termes.
 }
 Morgan_313 {
 Et si je n’ai pas envie d’avoir affaire aux autorités?

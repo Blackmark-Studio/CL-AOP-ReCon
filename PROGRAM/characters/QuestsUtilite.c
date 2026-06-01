@@ -2577,7 +2577,7 @@ bool CheckLetterForQuest(ref itmRef)
 
 				notification(ColorTextLine(StringFromKey("InfoMessages_213", pchar, GetFullName(pchar)), "gold"), "Personal abilities");
 			}
-			else if (!HaveAllPerks(pchar, "ship"))
+			if (!HaveAllPerks(pchar, "ship"))
 			{
 				if (CheckAttribute(pchar, "perks.FreePoints_ship"))
 					pchar.perks.FreePoints_ship = sti(pchar.perks.FreePoints_ship) + 1;
@@ -2586,21 +2586,6 @@ bool CheckLetterForQuest(ref itmRef)
 
 				notification(ColorTextLine(StringFromKey("InfoMessages_213", pchar, GetFullName(pchar)), "gold"), "Ship abilities");
 			}
-
-			AddCharacterExpToSkill(pchar, SKILL_LEADERSHIP,	250);
-			AddCharacterExpToSkill(pchar, SKILL_F_LIGHT,	250);
-			AddCharacterExpToSkill(pchar, SKILL_FENCING,	250);
-			AddCharacterExpToSkill(pchar, SKILL_F_HEAVY,	250);
-			AddCharacterExpToSkill(pchar, SKILL_PISTOL,		250);
-			AddCharacterExpToSkill(pchar, SKILL_FORTUNE,	250);
-			AddCharacterExpToSkill(pchar, SKILL_SNEAK,		250);
-			AddCharacterExpToSkill(pchar, SKILL_SAILING,	250);
-			AddCharacterExpToSkill(pchar, SKILL_ACCURACY,	250);
-			AddCharacterExpToSkill(pchar, SKILL_CANNONS,	250);
-			AddCharacterExpToSkill(pchar, SKILL_GRAPPLING,	250);
-			AddCharacterExpToSkill(pchar, SKILL_DEFENCE,	250);
-			AddCharacterExpToSkill(pchar, SKILL_REPAIR,		250);
-			AddCharacterExpToSkill(pchar, SKILL_COMMERCE,	250);
 
 			sld = CharacterFromId("Secret_Fort_Commander");
 			sld.dialog.currentnode = "Commander_3_talk_1";

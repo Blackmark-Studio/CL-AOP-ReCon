@@ -96,7 +96,7 @@ itmdescr_letter_FraLineQ6 {List do Jeana Davida. Napisany własnoręcznie przez 
 itmname_Andre_Abel_Letter_1 {Zapieczętowany list do Stuyvesanta}
 itmdescr_Andre_Abel_Letter_1 {List od Henry'ego Morgana do gubernatora generalnego Curaçao, Petera Stuyvesanta.}
 itmname_Andre_Abel_Letter_2 {Zapieczętowany list do Jackmana}
-itmdescr_Andre_Abel_Letter_2 {List do Jacoba Fackmana, napisany osobiście przez Morgana, w którym Henry prosi Jackmana, by przestał ścigać Andre Abela.}
+itmdescr_Andre_Abel_Letter_2 {List do Jacoba Fakmena, napisany osobiście przez Morgana, w którym Henry prosi Jackmana, by przestał ścigać Andre Abela.}
 itmname_letter_EngLineQ8 {Zapieczętowany list do Sancho Jimeneza}
 itmdescr_letter_EngLineQ8 {List napisany po hiszpańsku, zaadresowany do gubernatora Santiago Jose Sancho Jimeneza i podpisany przez Manuela Rivero Pardala.}
 itmname_letter_HolLineQ7_2 {Zapieczętowana depesza do d'Ogerona}
@@ -858,7 +858,10 @@ itmdescr_mechanic_kit {Wszystko, czego potrzeba do drobnych napraw, zamknięte w
 itmname_crucible {Tygiel}
 itmdescr_crucible {Tygiel przeznaczony do topienia metali w bardzo wysokich temperaturach.}
 itmname_bullet_mold {Forma do odlewania kul}
-itmdescr_bullet_mold {To urządzenie umożliwia odlewanie kul o odpowiednim kształcie i rozmiarze do rewolweru Colt.}
+itmdescr_bullet_mold
+{
+Ta forma pozwala na odlewanie specjalnych kul o dokładnie takim kształcie i rozmiarze, jakich potrzebujesz.
+}
 itmname_mortar_and_pestle {Moździerz i tłuczek}
 itmdescr_mortar_and_pestle {Pozwala rozdrabniać zioła i inne składniki na proszek do przygotowywania różnych mikstur. Nie nadaje się do miażdżenia niczego twardszego niż skorupka orzecha.}
 itmname_lamp {Lampa oliwna}
@@ -1007,8 +1010,13 @@ itmname_Griffins_Weapon {Próbki broni pana Griffina}
 itmdescr_Griffins_Weapon {Kilka szpad z wygrawerowanym na głowniach imieniem mistrza Griffina.}
 itmname_HugtorpRing {Obrączka Hagthorpe'a}
 itmdescr_HugtorpRing {Obrączka Hagthorpe’a, wciąż tkwiąca na odrażającym, już zesztywniałym ludzkim palcu.}
-itmname_shark_tooth {Amulet z zębem rekina}
-itmdescr_shark_tooth {Amulet z zęba rekina z wygrawerowanymi inicjałami "S.D.".}
+itmname_shark_tooth	{Amulet 'Ząb Rekina'}
+itmdescr_shark_tooth
+{
+Amulet z wykonany z zęba rekina z grawerem imiennym.
+~
+Pasywnie: +10% obrażeń przeciw stworom głębinowym.
+}
 itmname_pinion {Trybik}
 itmdescr_pinion {Tryb z mechanizmu wyciągarki.}
 itmname_PDM_PJ_Vino {Butelka wina}
@@ -1087,4 +1095,10 @@ Wyspa nie przyjmuje tych, którzy przybywają z próżnej ciekawości lub chciwo
 Tylko przez ryk wielkiego sztormu, tylko przez trzask łamiących się masztów i nieuchronne rozbicie statku otwiera się droga.
 Morze samo zdecyduje, co z tobą zrobić — najważniejsze to nie opierać się jego potędze. A największa zagadka wyspy brzmi: Wyspa odrzuca armady.
 Ten, kto odważy się na ten krok, musi zrobić go sam. Bez załogi. Bez wiernych towarzyszy za plecami. Tylko ty i gniew oceanu. W przeciwnym razie ich wszystkich czeka zguba...
+}
+
+itmname_LesopilkaDoc    {Kontrakt Holenderskiej Kompanii Zachodnioindyjskiej}
+itmdescr_LesopilkaDoc
+{
+Dokument niezbędny do wpisania do rejestru kapitanów Holenderskiej Kompanii Zachodnioindyjskiej.
 }

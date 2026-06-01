@@ -74,10 +74,10 @@ int LocationInitDominica(int n)
 	//Models
 	//Always
 	locations[n].filespath.models = "locations\Outside\Jungles\Jungle6";
-	Locations[n].models.always.jungle = "jungle6";	
-	Locations[n].models.always.locators = "jungle6_locators";		
+	Locations[n].models.always.jungle = "jungle6";
+	Locations[n].models.always.locators = "jungle6_locators";
 	Locations[n].models.always.grassPatch = "jungle6_grass";
-	Locations[n].models.always.grassPatch.texture = "grass\grassshore.tga.tx";	
+	Locations[n].models.always.grassPatch.texture = "grass\grassshore.tga.tx";
 	Locations[n].models.always.l1 = "plan1";
 	Locations[n].models.always.l1.level = 9;
 	Locations[n].models.always.l1.tech = "LocationModelBlend";
@@ -86,11 +86,11 @@ int LocationInitDominica(int n)
 	Locations[n].models.always.l2.tech = "LocationModelBlend";
 	Locations[n].models.always.l3 = "plan3";
 	Locations[n].models.always.l3.level = 7;
-	Locations[n].models.always.l3.tech = "LocationModelBlend";	
+	Locations[n].models.always.l3.tech = "LocationModelBlend";
 	//Day
 	locations[n].models.day.charactersPatch = "jungle6_patch";
 	//Night
-	locations[n].models.night.charactersPatch = "jungle6_patch";	
+	locations[n].models.night.charactersPatch = "jungle6_patch";
 	//Environment
 	locations[n].environment.weather = "true";
 	locations[n].environment.sea = "false";

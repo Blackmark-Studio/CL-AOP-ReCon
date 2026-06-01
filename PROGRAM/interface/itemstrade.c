@@ -641,7 +641,7 @@ void FillCharactersScroll()
 
 		bOk = CheckAttribute(chr, "prisoned") && sti(chr.prisoned) == true;
 
-		if (!CheckAttribute(chr, "isquest") && !bOk && IsOfficer(chr) && CheckFighters(chr))
+		if (!CheckAttribute(chr, "isquest") && !bOk && IsOfficer(chr) && or(CheckFighters(chr), StrEndsWith(loadedlocation.id, "_bank")))
 		{
 			attributeName = "pic" + (m + 1);
 			GameInterface.CHARACTERS_SCROLL.(attributeName).character = _curCharIdx;

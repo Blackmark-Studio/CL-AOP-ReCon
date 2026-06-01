@@ -182,7 +182,7 @@ HolLineNpc_1_49_m {
 Obiecuję, że cię uwolnię. Ale najpierw muszę zdobyć potrzebne mi informacje. Chcę wiedzieć, gdzie Mediford szykuje desant.
 }
 HolLineNpc_1_49_f {
-Obiecuję, że cię uwolnię. Ale najpierw muszę zdobyć potrzebne mi informacje. Chcę wiedzieć, gdzie Medford szykuje desant.
+Obiecuję, że cię uwolnię. Ale najpierw muszę zdobyć potrzebne mi informacje. Chcę wiedzieć, gdzie Modyford szykuje desant.
 }
 HolLineNpc_1_50 {
 Holenderski fort Orange zostanie zdobyty i zniszczony.

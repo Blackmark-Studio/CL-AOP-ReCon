@@ -860,7 +860,10 @@ itmdescr_mechanic_kit {Tout le nécessaire pour de petites réparations réuni d
 itmname_crucible {Creuset}
 itmdescr_crucible {Un creuset conçu pour fondre les métaux à très haute température.}
 itmname_bullet_mold {Moule à balles}
-itmdescr_bullet_mold {Cet appareil permet de couler des balles à la forme et à la taille adaptées au revolver Colt.}
+itmdescr_bullet_mold
+{
+Cet outil permet de mouler des balles sur mesure, à la forme et à la taille exactes requises.
+}
 itmname_mortar_and_pestle {Mortier et pilon}
 itmdescr_mortar_and_pestle {Permet de réduire en poudre des herbes médicinales et d’autres ingrédients pour préparer diverses potions. Non conçu pour broyer des substances plus dures qu’une coquille de noix.}
 itmname_lamp {Lampe à huile}
@@ -1009,8 +1012,13 @@ itmname_Griffins_Weapon {Échantillons d’armes de M. Griffin}
 itmdescr_Griffins_Weapon {Plusieurs rapières portant le nom du maître Griffin gravé sur la lame.}
 itmname_HugtorpRing {Alliance de Hagthorpe}
 itmdescr_HugtorpRing {L’alliance de Hagthorpe, toujours passée à un doigt humain hideux et déjà raidi.}
-itmname_shark_tooth {Amulette Dent de Requin}
-itmdescr_shark_tooth {Un pendentif en dent de requin gravé des initiales « S.D. ».}
+itmname_shark_tooth	{Amulette Dent de Requin}
+itmdescr_shark_tooth
+{
+Un amulette en dent de requin avec une gravure personnalisée.
+~
+Passif : +10% de dégâts contre les créatures des abysses.
+}
 itmname_pinion {Roue dentée}
 itmdescr_pinion {Un engrenage provenant d’un mécanisme de treuil.}
 itmname_PDM_PJ_Vino {Bouteille de vin}
@@ -1089,4 +1097,10 @@ L'île n'accepte pas ceux qui viennent par curiosité oisive ou par cupidité. P
 Ce n'est qu'à travers le rugissement d'une grande tempête, le craquement des mâts qui se brisent et l'inévitable naufrage que le chemin s'ouvre.
 La mer décidera elle-même de ton sort — l'essentiel est de ne pas résister à sa force. Et le plus grand mystère de l'île : l'Île rejette les armadas.
 Celui qui décide de franchir ce pas doit le faire seul. Sans équipage. Sans fidèles compagnons derrière lui. Rien que toi et la fureur de l'océan. Sinon, la mort les attendra tous...
+}
+
+itmname_LesopilkaDoc    {Contrat de la Compagnie néerlandaise des Indes occidentales}
+itmdescr_LesopilkaDoc
+{
+Document nécessaire pour l'inscription au registre des capitaines de la Compagnie néerlandaise des Indes occidentales.
 }

@@ -215,7 +215,7 @@ Pirates_Shipyard_65 {
 Well, well... let's see what we have here... Aha, @<XI_ConvertString>.
 }
 Pirates_Shipyard_66 {
-Ah! So this ship’s changed hands more than once. No wonder she’s so worn. Got a letter of marque on you? Just kidding... let’s get down to business.
+@<s1> Ah! So this ship’s changed hands more than once. No wonder she’s so worn. Got a letter of marque on you? Just kidding... let’s get down to business.
 }
 Pirates_Shipyard_67_m {
 @<s1> What would you like to do with him?
@@ -428,7 +428,7 @@ Pirates_Shipyard_124 {
 ... Well, that should be everything... You can upgrade the caliber and buy more cannons.
 }
 Pirates_Shipyard_125 {
-By the way, you can get that done at my shipyard too.
+@<s1> By the way, you can get that done at my shipyard too.
 }
 Pirates_Shipyard_126 {
 Thank you! I’ll be sure to check everything.
@@ -518,7 +518,7 @@ Pirates_Shipyard_150 {
 @<s1> To reinforce the gunports and carriages of heavy cannons, I’ll need: ebony wood – @<cannonMatherial1>.
 }
 Pirates_Shipyard_151 {
-And for the job, I'll take: treasures – @<cannonMatherial2>, chests of gold – @<cannonMatherial3>,
+@<s1> And for the job, I'll take: treasures – @<cannonMatherial2>, chests of gold – @<cannonMatherial3>,
 }
 Pirates_Shipyard_152 {
 @<s1> plus @<FindMoneyString> for operating expenses. You understand—it’s no simple task... Oh, and payment up front.
@@ -596,7 +596,7 @@ Pirates_Shipyard_172 {
 @<s1>. For lighter bulkheads, I'll need: sandalwood - @<capacityMatherial1>.
 }
 Pirates_Shipyard_173 {
-As payment for my work, I’ll take: gold nuggets – @<capacityMatherial2>, chests of gold – @<capacityMatherial3>,
+@<s1> As payment for my work, I’ll take: gold nuggets – @<capacityMatherial2>, chests of gold – @<capacityMatherial3>,
 }
 Pirates_Shipyard_174 {
 @<s1> plus @<FindMoneyString> for operating expenses. That should be all. Oh, and payment up front.
@@ -824,7 +824,7 @@ Pirates_Shipyard_236 {
 @<s1> For extra sails to get her moving, I'll need: canvas - @<TurnRateMatherial1>.
 }
 Pirates_Shipyard_237 {
-And for the job, my fee is: chests of gold – @<TurnRateMatherial3>, rubies – @<TurnRateMatherial2>, plus @<FindMoneyString> for expenses. You do realize I don’t plan on dying in this dump... That’s about it. Oh, and the money’s up front.
+@<s1> And for the job, my fee is: chests of gold – @<TurnRateMatherial3>, rubies – @<TurnRateMatherial2>, plus @<FindMoneyString> for expenses. You do realize I don’t plan on dying in this dump... That’s about it. Oh, and the money’s up front.
 }
 Pirates_Shipyard_238 {
 Alright. I accept the terms. Everything agreed upon will be delivered.
@@ -1121,7 +1121,7 @@ Pirates_Shipyard_321 {
 By a stroke of luck, I happen to have a perfectly legal set of ship papers—still not flagged as wanted.
 }
 Pirates_Shipyard_322 {
-The vessel is afloat and still on the register, don’t worry. It’s just that the scatterbrained owner somehow managed to lose those papers...
+@<s1> The vessel is afloat and still on the register, don’t worry. It’s just that the scatterbrained owner somehow managed to lose those papers...
 }
 Pirates_Shipyard_323_m {
 Let me have a look! Indeed, the marks are quite fresh. Well then, fortune favors you, sir!
@@ -1130,7 +1130,7 @@ Pirates_Shipyard_323_f {
 Let me have a look! Indeed, the marks are quite fresh. Well then, fortune smiles upon you, madam!
 }
 Pirates_Shipyard_324 {
-@<s1>I happen to need just such a set, and in return I offer you @<FindMoneyString>. What do you say?
+@<s1> I happen to need just such a set, and in return I offer you @<FindMoneyString>. What do you say?
 }
 Pirates_Shipyard_325_m {
 Truly royal generosity! Of course I accept!

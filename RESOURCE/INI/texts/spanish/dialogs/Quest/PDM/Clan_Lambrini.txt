@@ -410,7 +410,7 @@ Clan_Lambrini_115 {
 Sin duda, iré.
 }
 Clan_Lambrini_116 {
-@<UpperFirst> @<pchar>, ha regresado. ¿Vio algo interesante?
+Veo que has vuelto, @<GetAddress_Form>. ¿Vio algo interesante?
 }
 Clan_Lambrini_117 {
 Logré escuchar una conversación entre Lambrini y un capitán que planea vender una mercancía ilegal y cara: caoba. ¿Quizás deberíamos ir a la taberna y atrapar a Ottavio con las manos en la masa?

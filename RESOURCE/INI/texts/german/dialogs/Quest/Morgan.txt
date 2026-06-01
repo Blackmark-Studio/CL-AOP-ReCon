@@ -1214,7 +1214,7 @@ Morgan_311_f {
 Genau das habe ich auch gedacht, als ich den Befehl gab, die Bomben zu laden.
 }
 Morgan_312 {
-In Ordnung, dann solltest du dich jetzt besser wieder um deine eigenen Angelegenheiten kümmern. Wenn du für eine der Nationen arbeiten willst, halte ich dich nicht auf. Wenn du damit fertig bist, such mich auf, und wir setzen unsere Zusammenarbeit fort. Halte dich nur von den Engländern fern—Medford weiß nur zu gut über deine Taten Bescheid. Er und ich stehen, gewissermaßen, auf gutem Fuß.
+In Ordnung, dann solltest du dich jetzt besser wieder um deine eigenen Angelegenheiten kümmern. Wenn du für eine der Nationen arbeiten willst, halte ich dich nicht auf. Wenn du damit fertig bist, such mich auf, und wir setzen unsere Zusammenarbeit fort. Halte dich nur von den Engländern fern—Modyford weiß nur zu gut über deine Taten Bescheid. Er und ich stehen, gewissermaßen, auf gutem Fuß.
 }
 Morgan_313 {
 Was, wenn ich mich nicht mit den Behörden auseinandersetzen will?

@@ -664,7 +664,7 @@ void ShowGoodsInfo(int iGoodIndex)
 	}
 
 	if (bNeedBuy)
-		SetFormatedText("QTY_RESULT", XI_ConvertString("BUY") + NewStr() + XI_ConvertString("Gold") + " " + makeint(iShipPrice * stf(GameInterface.qty_edit.str) / iUnits + 0.5) + ", " + LowerFirst(XI_ConvertString("weight")) + " " + fWeight + " " + XI_ConvertString("cwt"));
+		SetFormatedText("QTY_RESULT", XI_ConvertString("BUY") + NewStr() + XI_ConvertString("money quantity") + " " + makeint(iShipPrice * stf(GameInterface.qty_edit.str) / iUnits + 0.5) + ", " + LowerFirst(XI_ConvertString("weight")) + " " + fWeight + " " + XI_ConvertString("cwt"));
 }
 
 void TransactionOK()
@@ -793,7 +793,7 @@ void ChangeQTY_EDIT()
 				GameInterface.qty_edit.str = makeint(iWeight / fWeight * iUnits); // округдение
 			}
 			// проверка на колво доступное <--
-			SetFormatedText("QTY_RESULT", XI_ConvertString("SELL") + NewStr() + XI_ConvertString("Gold") + " " + makeint(iStorePrice * stf(GameInterface.qty_edit.str) / iUnits + 0.5) +
+			SetFormatedText("QTY_RESULT", XI_ConvertString("SELL") + NewStr() + XI_ConvertString("money quantity") + " " + makeint(iStorePrice * stf(GameInterface.qty_edit.str) / iUnits + 0.5) +
 					", " + LowerFirst(XI_ConvertString("weight")) + " " + iWeight + " " + XI_ConvertString("cwt"));
 		}
 		else
@@ -825,7 +825,7 @@ void ChangeQTY_EDIT()
 			}
 			// проверка на колво доступное <--
 
-			SetFormatedText("QTY_RESULT", XI_ConvertString("BUY") + NewStr() + XI_ConvertString("Gold") + " " + makeint(iShipPrice * stf(GameInterface.qty_edit.str) / iUnits + 0.5) +
+			SetFormatedText("QTY_RESULT", XI_ConvertString("BUY") + NewStr() + XI_ConvertString("money quantity") + " " + makeint(iShipPrice * stf(GameInterface.qty_edit.str) / iUnits + 0.5) +
 					", " + LowerFirst(XI_ConvertString("weight")) + " " + iWeight + " " + XI_ConvertString("cwt"));
 		}
 	}

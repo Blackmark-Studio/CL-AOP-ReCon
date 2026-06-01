@@ -1538,7 +1538,7 @@ pgg_dialog_430 {
 @<Dialog>
 }
 pgg_dialog_431 {
-Dein Anteil
+@<Dialog> Dein Anteil
 }
 pgg_dialog_432 {
 In Ordnung! Sie laden die Boote schon!
@@ -1673,10 +1673,10 @@ pgg_dialog_473 {
 Nicht schlecht, Captain! Die Beute beträgt @<PChar> @<PChar>.
 }
 pgg_dialog_474 {
-Mein Anteil
+@<Dialog> Mein Anteil
 }
 pgg_dialog_475 {
-Dein Anteil
+@<Dialog> Dein Anteil
 }
 pgg_dialog_476 {
 In Ordnung, dann erschlag mich, wenn ich falsch liege!

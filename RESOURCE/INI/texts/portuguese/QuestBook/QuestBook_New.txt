@@ -687,7 +687,7 @@ Marginpassenger.7 {Ora, veja só! Acontece que @<sName2> bateu as botas. E o que
 Marginpassenger.8 {O estalajadeiro me contou que a pessoa que procuro é mais fácil de encontrar nas ruas da cidade. No entanto, não devo procurá-la antes do meio-dia ou depois das nove horas — parece que nesses horários @<sName2> não recebe ninguém.}
 Marginpassenger.9 {O resgate foi recebido – @<sSum> em ouro @<sMoney>. Agora preciso sair daqui rápido – vai saber o que minha antiga 'presa' pode contar sobre mim...}
 Marginpassenger.10 {O resgate foi recebido – @<sSum> pesa bem no meu bolso. Agora preciso sair daqui rápido—vai saber o que minha antiga “presa” pode falar de mim...}
-Marginpassenger.11 {@<sName2> recusou-se a pagar o resgate. E agora, o que faço com meu "prêmio"? Levar para @<sCity> é perigoso demais—não vou correr esse risco. Melhor ir até @<sBaron>—dizem que ele é especialista em arrancar dinheiro dos parentes dos prisioneiros. Vou tentar vender meu passageiro para ele.}
+Marginpassenger.11 {@<sName2> recusou-se a pagar o resgate. E agora, o que faço com meu "prêmio"? Levar para @<sCity> é perigoso demais—não vou correr esse risco. É melhor eu ir para Le François, onde @<sBaron> está governando agora. Dizem que ele é especialista em arrancar dinheiro dos parentes dos prisioneiros. Vou tentar vender meu passageiro para ele.}
 Marginpassenger.12 {Resgate recebido - @<sSum>. Não é grande recompensa por todo meu esforço, mas é melhor que nada.}
 Marginpassenger.13 {Em vez do resgate, recebi uma pista interessante de @<sName>. Devo ir para @<sShore> imediatamente. Tenho no máximo uma semana.}
 Marginpassenger.14 {Cheguei atrasado em @<sShore>. Mais um prêmio escapou das minhas mãos. Que azar!}

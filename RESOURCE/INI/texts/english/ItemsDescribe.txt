@@ -1945,7 +1945,7 @@ A crucible made for melting metals at very high temperatures.
 itmname_bullet_mold		{Bullet Mold}
 itmdescr_bullet_mold
 {
-This contraption allows the casting of bullets sized to the correct shape and size for the Colt revolver.
+This tool allows you to mold custom bullets of the exact shape and size needed.
 }
 
 itmname_mortar_and_pestle	{Mortar and Pestle}
@@ -2296,7 +2296,9 @@ Hagthorpe's wedding ring, still worn on a hideous and already stiffened human fi
 itmname_shark_tooth {Shark Tooth Amulet}
 itmdescr_shark_tooth
 {
-A shark tooth amulet with the initials "S.D." engraved on it.
+An amulet made from a shark's tooth with a personalized engraving.
+~
+Passive: +10% damage against deep-sea creatures.
 }
 
 itmname_pinion {Cogwheel}
@@ -2430,4 +2432,10 @@ The island does not accept those who come out of idle curiosity or greed. To rea
 Only through the roar of a great storm, only through the crack of breaking masts and an inevitable shipwreck is the path revealed.
 The sea itself will decide what to do with you — the main thing is not to resist its power. And the island's greatest mystery: the Island rejects armadas.
 He who decides to take this step must take it alone. Without a crew. Without loyal comrades behind his back. Only you and the wrath of the ocean. Otherwise, only death awaits them all...
+}
+
+itmname_LesopilkaDoc    {Dutch West India Company Contract}
+itmdescr_LesopilkaDoc
+{
+A document required for registration in the Dutch West India Company's registry of captains.
 }

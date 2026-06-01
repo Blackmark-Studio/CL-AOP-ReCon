@@ -399,20 +399,27 @@ string IslandGetLocationFromType(string _island, string _type)
 	ref rLoc;
 	int i, iMaxLoc[MAX_LOCATIONS];
 	int iRandLoc = 0;
-	for(i=1; i<MAX_LOCATIONS; i++)
+	string sArealType;
+
+	for (i = 1; i < MAX_LOCATIONS; i++)
 	{
 		makeref(rLoc, locations[i]);
-		if(rLoc.type == _type && CheckAttribute(rLoc, "islandIdAreal") && rLoc.islandIdAreal == _island)
+		sArealType = "islandId";
+
+		if (CheckAttribute(rLoc, "islandIdAreal"))
+			sArealType += "Areal";
+
+		if (rLoc.type == _type && CheckAttrValue(rLoc, sArealType, _island))
 		{
 			iMaxLoc[iRandLoc] = i;
 			iRandLoc++;
 		}
 	}
-	
-	if(iRandLoc == 0)
-		return "none";
-	
-	i = iMaxLoc[rand(iRandLoc-1)];
+
+	if (iRandLoc == 0)
+		return "none"; // > TODO убрать везде эти грёбанные none
+
+	i = iMaxLoc[rand(iRandLoc - 1)];
 	return locations[i].id;
 }
 

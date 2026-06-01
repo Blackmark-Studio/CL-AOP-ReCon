@@ -529,7 +529,7 @@ MusketeerOnly            {坚定射手}
 perkMusketeerOnly         {该角色只承认火药和铅弹的力量，完全不会（或原则上拒绝）手持任何冷兵器。在战斗中，他只能使用火枪。}
 
 WeaponBonding             {武器羁绊}
-perkHumphreyGunmaster      {该角色对自己的独特武器有着深厚的精神依恋。
+perkWeaponBonding         {该角色对自己的独特武器有着深厚的精神依恋。
 ~
 这种性格特征使该角色无法使用任何其他武器，但在使用其专属武器时，无人能敌。}
 

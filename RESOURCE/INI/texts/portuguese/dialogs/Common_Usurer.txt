@@ -1217,7 +1217,7 @@ Common_Usurer_357 {
 Infelizmente, não, mas vou trazer em breve.
 }
 Common_Usurer_358 {
-Hoje de manhã cedo, um homem da cidade veio me pedir um empréstimo. O problema é que... ele me enganou. Disse que era Rafael Guinness, que costuma me visitar, e, para falar a verdade, ele até se parece um pouco com ele. Eu emprestei 30.000 piastras, mas aí o próprio Raf apareceu e...
+Hoje de manhã cedo, um homem da cidade veio me pedir um empréstimo. O problema é que... ele me enganou. Disse que era Raphael Guinness, que costuma me visitar, e, para falar a verdade, ele até se parece um pouco com ele. Eu emprestei 30.000 piastras, mas aí o próprio Raphael apareceu e...
 }
 Common_Usurer_359 {
 Você quer que eu encontre essa pessoa? Por que acha que ela ainda está na cidade?

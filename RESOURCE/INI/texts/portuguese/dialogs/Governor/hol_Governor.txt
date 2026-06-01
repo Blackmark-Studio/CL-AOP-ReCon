@@ -89,7 +89,7 @@ hol_Governor_29 {
 Sim, senhor, eu sei disso.
 }
 hol_Governor_30 {
-Você não conseguiu concluir a tarefa anterior corretamente. Outros corajosos conseguiram onde você falhou. Agora, estou lhe dando uma chance de se redimir. Com base nas informações que recebi, concluí que Medford atualmente não tem força suficiente para nos causar problemas sérios em Curaçao. No entanto, eles pretendem destruir o mal fortificado Forte Orange, que fica bem debaixo do nariz deles na Jamaica.
+Você não conseguiu concluir a tarefa anterior corretamente. Outros corajosos conseguiram onde você falhou. Agora, estou lhe dando uma chance de se redimir. Com base nas informações que recebi, concluí que Modyford atualmente não tem força suficiente para nos causar problemas sérios em Curaçao. No entanto, eles pretendem destruir o mal fortificado Forte Orange, que fica bem debaixo do nariz deles na Jamaica.
 }
 hol_Governor_31 {
 Entendi...

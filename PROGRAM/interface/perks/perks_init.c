@@ -1,3 +1,4 @@
+// KZ > ref 25.10.2024
 
 void extrnInitPerks()
 {

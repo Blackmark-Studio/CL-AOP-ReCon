@@ -1214,7 +1214,7 @@ Morgan_311_f {
 Eso fue exactamente lo que pensé cuando les ordené cargar las bombas.
 }
 Morgan_312 {
-Muy bien, será mejor que vuelvas a tus asuntos. Si quieres trabajar para alguna de las naciones, no te lo impediré. Cuando termines, ven a buscarme y seguiremos con nuestra colaboración. Solo mantente alejado de los ingleses: Medford está muy al tanto de tus hazañas. Él y yo, en cierto modo, tenemos una relación cordial.
+Muy bien, será mejor que vuelvas a tus asuntos. Si quieres trabajar para alguna de las naciones, no te lo impediré. Cuando termines, ven a buscarme y seguiremos con nuestra colaboración. Solo mantente alejado de los ingleses: Modyford está muy al tanto de tus hazañas. Él y yo, en cierto modo, tenemos una relación cordial.
 }
 Morgan_313 {
 ¿Y si no quiero tratar con las autoridades?

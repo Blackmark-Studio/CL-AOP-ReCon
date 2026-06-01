@@ -89,7 +89,7 @@ hol_Governor_29 {
 Oui, monsieur, je le sais.
 }
 hol_Governor_30 {
-Vous n’avez pas réussi à mener à bien la tâche précédente. D’autres personnes courageuses y sont parvenues là où vous avez échoué. Je vous offre maintenant une chance de vous racheter. D’après les informations dont je dispose, j’en conclus que Medford n’a actuellement pas la force de nous causer de sérieux problèmes à Curaçao. Cependant, ils ont bien l’intention de détruire le faible Fort Orange, qui se trouve juste sous leur nez en Jamaïque.
+Vous n’avez pas réussi à mener à bien la tâche précédente. D’autres personnes courageuses y sont parvenues là où vous avez échoué. Je vous offre maintenant une chance de vous racheter. D’après les informations dont je dispose, j’en conclus que Modyford n’a actuellement pas la force de nous causer de sérieux problèmes à Curaçao. Cependant, ils ont bien l’intention de détruire le faible Fort Orange, qui se trouve juste sous leur nez en Jamaïque.
 }
 hol_Governor_31 {
 Je vois...

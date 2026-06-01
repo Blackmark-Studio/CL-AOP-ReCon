@@ -89,7 +89,7 @@ hol_Governor_29 {
 Yes, mijnheer, I know that.
 }
 hol_Governor_30 {
-You failed to properly complete the previous task. Other brave souls have succeeded where you did not. Now, I’m giving you a chance to redeem yourself. Based on the information I’ve received, I’ve concluded that Medford currently lacks the strength to cause us serious trouble in Curaçao. However, they do intend to destroy the poorly fortified Fort Orange, which sits right under their noses in Jamaica.
+You failed to properly complete the previous task. Other brave souls have succeeded where you did not. Now, I’m giving you a chance to redeem yourself. Based on the information I’ve received, I’ve concluded that Modyford currently lacks the strength to cause us serious trouble in Curaçao. However, they do intend to destroy the poorly fortified Fort Orange, which sits right under their noses in Jamaica.
 }
 hol_Governor_31 {
 I see...

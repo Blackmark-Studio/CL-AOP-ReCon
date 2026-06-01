@@ -76,6 +76,7 @@ void WdmStartFade()
 	DeleteClass(&worldMap);
 	worldMap.isLoaded = "false";
 	DeleteWmInterface();
+	DelEventHandler("frame", "CheckMapCoordinateQuest");
 }
 
 void WdmEndFade()

@@ -164,6 +164,8 @@ void wdmCreateWorldMap()
 	// обновляем радиусы кораблей
 	TEV.WDM_ShipRadiusUpdate = true;
 	wdmEvent_ShipRadiusUpdate();
+	// ставим обработчик
+	SetEventHandler("frame", "CheckMapCoordinateQuest", 0);
 }
 
 // Hokkins: инициализируем все текстурки и тексты на глобалке в зависимости от скейлинга -->

@@ -191,7 +191,7 @@ Andre_Abel_Dialog_60 {
 Bermuda fica bem longe... Admito, André, nossas chances não são das melhores, mas podemos tentar. Quem sabe Jackman esteja de bom humor...
 }
 Andre_Abel_Dialog_61 {
-Você realmente entende o que está pedindo, Andre? Jakob Fakmen é conhecido pelo temperamento difícil! A maioria das pessoas não significa nada para ele. Nem sempre ele ouve os barões, imagine qualquer outra pessoa... Não adianta — esqueça isso.
+Você realmente entende o que está pedindo, Andre? Jakob Fackman é conhecido pelo temperamento difícil! A maioria das pessoas não significa nada para ele. Nem sempre ele ouve os barões, imagine qualquer outra pessoa... Não adianta — esqueça isso.
 }
 Andre_Abel_Dialog_62_m {
 Ah, que pena... Mas você provavelmente está certo. Não é não... Adeus.

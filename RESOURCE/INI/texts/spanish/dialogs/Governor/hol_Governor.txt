@@ -89,7 +89,7 @@ hol_Governor_29 {
 Sí, mijnheer, lo sé.
 }
 hol_Governor_30 {
-No lograste completar correctamente la tarea anterior. Otros valientes lo consiguieron donde tú no. Ahora te doy la oportunidad de redimirte. Según la información que he recibido, he llegado a la conclusión de que Medford actualmente no tiene la fuerza suficiente para causarnos problemas serios en Curaçao. Sin embargo, sí planean destruir el poco fortificado Fuerte Orange, que está justo ante sus ojos en Jamaica.
+No lograste completar correctamente la tarea anterior. Otros valientes lo consiguieron donde tú no. Ahora te doy la oportunidad de redimirte. Según la información que he recibido, he llegado a la conclusión de que Modyford actualmente no tiene la fuerza suficiente para causarnos problemas serios en Curaçao. Sin embargo, sí planean destruir el poco fortificado Fuerte Orange, que está justo ante sus ojos en Jamaica.
 }
 hol_Governor_31 {
 Ya veo...
