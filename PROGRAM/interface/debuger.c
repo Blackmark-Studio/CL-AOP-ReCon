@@ -42,7 +42,7 @@ void IDoExit(int exitCode)
 	DelEventHandler("ievnt_command","ProcCommand");
  	//DelEventHandler("SetScrollerPos","SetScrollerPos");
 
-	if(bSeaActive && !bBattleInterfaceLock)
+	if(bSeaActive)
     {
         RefreshBattleInterface();
     }
@@ -1412,7 +1412,6 @@ void CalculateInfoDataF18()
         Weathers[iCurWeatherNum].Wind.Speed.Min = 9.9;
     	Weathers[iCurWeatherNum].Wind.Speed.Max = 10.1;
 	} */
-	bBattleInterfaceLock = !bBattleInterfaceLock;
 	ChangeShowIntarface();
     // <
     totalInfo = totalInfo + LanguageConvertString(idLngFile,"new_string") + LanguageConvertString(idLngFile,"new_string") +

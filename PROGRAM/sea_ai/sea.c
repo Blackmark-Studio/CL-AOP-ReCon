@@ -87,6 +87,7 @@ void DeleteSeaEnvironment()
 	pchar.Ship.Stopped = true;
 	DeleteBattleInterface();
 
+	DelEventHandler("MSG_TELESCOPE_REQUEST", "Telescope_Request");
 	DelEventHandler(SHIP_BORT_FIRE, "Ship_BortFire");
 	DelEventHandler(BALL_FLY_UPDATE, "Ball_OnFlyUpdate");
 

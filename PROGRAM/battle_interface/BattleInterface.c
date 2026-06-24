@@ -79,8 +79,6 @@ int iChargeBlinks = 0;
 float fTextScale = 1.0;
 int iTextColor;
 
-bool bBattleInterfaceLock = false;
-
 #event_handler("evntRandomSailDmg","ProcessRandomSailDmg");
 //#event_handler("NextDay","ProcessDayRepair");
 #event_handler("GetSailTextureData","procGetSailTextureData");
@@ -145,6 +143,7 @@ void InitBattleInterface()
 	SetEventHandler("evntCheckEnableShip","procCheckEnableShip",0);
 	SetEventHandler("evntGetSRollSpeed","procGetSRollSpeed",0);
 	SetEventHandler("DoSailHole","ProcessSailDamage",0);
+	SetEventHandler("evntBISelect", "BI_SetSelectTip", 0);
 	SetEventHandler("evntBISelectShip","procBISelectShip",0);
 	SetEventHandler("refreshCannonsQty","BI_ShowCannonsQty",1);
 
@@ -1907,7 +1906,6 @@ void SetParameterData()
 	BI_ShowFastKeyTip("nothing");
 	if (iShowTips > CONTROL_TIPS_NONE)
 	{
-		SetEventHandler("evntBISelect", "BI_SetSelectTip", 0);
 		InitSeaTips(iIconSize, iPosY);
 	}
 //Control Tips <--

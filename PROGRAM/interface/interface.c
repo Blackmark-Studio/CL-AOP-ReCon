@@ -1192,22 +1192,6 @@ void Start_InterfaceDoExit()
 	DelEventHandler("frame", "KZ|PlayMusicInterfaceFrame");
 	if (IsPerkIntoList("TimeSpeed")) SetTimeScale(GetSeaTimeScale());
 	SetEventHandler("frame","InterfaceDoExit",1);
-	if (bSeaActive && !bAbordageStarted) //HardCoffee подсказки по управлению в море
-	{
-		if (isEntity(&BattleInterface))
-		{
-			DeleteAttribute(&objISpyGlass, "tip");
-			DeleteAttribute(&BattleInterface, "textinfo");
-			DeleteAttribute(&BattleInterface, "navigation");
-			DeleteBattleInterface();
-		}
-		if (!bBattleInterfaceLock)
-		{
-			InitBattleInterface();
-			StartBattleInterface();
-			RefreshBattleInterface();
-		}
-	}
 }
 
 extern void OSL_WriteGameOption();

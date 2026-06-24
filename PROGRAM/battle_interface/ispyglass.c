@@ -10,12 +10,12 @@ void InterfaceSpyGlassInit()
 	LayerAddObject(SEA_EXECUTE, &objISpyGlass, -1);
 	LayerAddObject(SEA_REALIZE, &objISpyGlass, -1);
 	SetEventHandler("SetTelescopeInfo", "SetSpyGlassData", 0);
-	SetEventHandler("BI_VISIBLE", "CheckInterfaceVisible", 0);
+	SetEventHandler(BI_EVENT_SET_VISIBLE, "CheckInterfaceVisible", 0);
 }
 
 void InterfaceSpyGlassRelease()
 {
-	DelEventHandler("BI_VISIBLE", "CheckInterfaceVisible");
+	DelEventHandler(BI_EVENT_SET_VISIBLE, "CheckInterfaceVisible");
 	DelEventHandler("SetTelescopeInfo", "SetSpyGlassData");
 	DelEventHandler("frame", "ZoomTelescope");
 	DeleteClass(&objISpyGlass);

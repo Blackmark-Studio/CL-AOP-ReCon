@@ -203,7 +203,7 @@ void ChangeShowIntarface()
 {
     if (bSeaActive && !bAbordageStarted)
     {
-        if (!IsEntity(&BattleInterface) && !bBattleInterfaceLock)
+        if (!IsEntity(&BattleInterface))
         {
             InitBattleInterface();
             StartBattleInterface();
