@@ -827,10 +827,10 @@ Officer_Common_214 {
 Aren’t you asking for a bit too much?
 }
 Officer_Common_215_m {
-I @<Agree>. Consider yourself part of the crew.
+@<Agree>. Consider yourself part of the crew.
 }
 Officer_Common_215_f {
-I @<Agree>, gorgeous. Consider yourself part of the crew.
+@<Agree>. Consider yourself part of the crew.
 }
 Officer_Common_216 {
 You’re not worth that kind of money. Farewell.

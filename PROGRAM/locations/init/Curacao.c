@@ -1593,7 +1593,7 @@ int LocationInitCuracao(int n)
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     locations[n].id = "Vil_Hut";
     locations[n].id.label = "House";
-    locations[n].image = "loading\inside\Hut.tga";
+    locations[n].image = "loading\inside\Hut1.tga";
     locations[n].MustSetReloadBack = true;
     //Town sack
     locations[n].townsack = "Villemstad";

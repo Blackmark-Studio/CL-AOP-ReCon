@@ -1277,7 +1277,7 @@ void ProcessDialogEvent()
 				{
 					Dialog.Text = StringFromKey("pgg_dialog_431", Dialog.Text);
 				}
-				Dialog.Text = Dialog.Text + PChar.GenQuest.PGG_Quest.Goods.Part + ".";
+				Dialog.Text = Dialog.Text + " " + PChar.GenQuest.PGG_Quest.Goods.Part + ".";
 				link.l1 = PCharRepPhrase(
 							StringFromKey("pgg_dialog_434", RandPhraseSimple(
 									StringFromKey("pgg_dialog_432"),

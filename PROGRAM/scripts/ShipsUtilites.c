@@ -1999,9 +1999,10 @@ int RefreshShipHulls(int iShip)
 	ref rShip;
 	int iShipList = 0;
 	int iHulls = 1;
-	int q = GetArraySize(&ShipsTypes);
+	int i, q = GetArraySize(&ShipsTypes);
 	string sPath = "RESOURCE/Textures/Ships/";
 	object oFolderList;
+	string sHull, arHullsList[2];
 
 	for (; iShipList < q; iShipList++)
 	{
@@ -2020,6 +2021,19 @@ int RefreshShipHulls(int iShip)
 
 		XI_FindFoldersWithoutNetsave(sPath + rShip.name + "1/Hull*", &oFolderList);
 		iHulls = GetAttributesNum(&oFolderList);
+
+		ArrayClear(&arHullsList);
+
+		for (i = 0; i < iHulls; i++)
+		{
+			sHull = GetAttributeN(&oFolderList, i);
+
+			if (!ArrayIsEqualValue(&arHullsList, sHull))
+				ArrayAddValue(&arHullsList, sHull);
+			else
+				iHulls--;
+		}
+
 		Restrictor(&iHulls, 1, "");
 		rShip.HullsAmount = iHulls;
 		if (iShip >= 0) break;
@@ -2034,5 +2048,26 @@ int GetShipHulls(string _sDir)
 	object oHullFolders;
 	DeleteAttribute(&oHullFolders, "");
 	XI_FindFoldersWithoutNetsave("RESOURCE/Textures/Ships/" + _sDir + "/Hull*", &oHullFolders);
-	return GetAttributesNum(&oHullFolders);
+
+	int i, iHulls = GetAttributesNum(&oHullFolders);
+	string sHull, arHullsList[2];
+
+	ArrayClear(&arHullsList);
+
+	for (i = 0; i < iHulls; i++)
+	{
+		sHull = GetAttributeN(&oHullFolders, i);
+
+		if (!ArrayIsEqualValue(&arHullsList, sHull))
+			ArrayAddValue(&arHullsList, sHull);
+		else
+			iHulls--;
+
+		// > TODO чек пустых папок
+		//trace("Files " + i + " : " + CheckFilesInDir("RESOURCE/Textures/Ships/" + _sDir + "/" + sHull));
+	}
+
+	Restrictor(&iHulls, 1, "");
+
+	return iHulls;
 }

@@ -186,8 +186,8 @@ FelixMendoza_name {Felix}
 FelixMendoza_lastname {Mendoza}
 RodgerWoyler_name {Roger}
 RodgerWoyler_lastname {Vowler}
-AndreLabor_name {André}
-AndreLabor_lastname {Larboard}
+AndreLabor_name {Andre}
+AndreLabor_lastname {Labor}
 StefanKleyn_name {Stefan}
 StefanKleyn_lastname {Klein}
 ThomasFlann_name {Thomas}

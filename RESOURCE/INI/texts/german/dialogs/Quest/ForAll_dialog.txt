@@ -362,7 +362,7 @@ ForAll_dialog_106 {
 Was für ein Idiot!..
 }
 ForAll_dialog_107 {
-André Labor ist ein gesetzestreuer Bürger dieser Stadt. Aber was dich betrifft, wirst du mir alles über Teaser Dan erzählen müssen, sonst wird sich morgen der Admiral um dich kümmern.
+Andre Labor ist ein gesetzestreuer Bürger dieser Stadt. Aber was dich betrifft, wirst du mir alles über Teaser Dan erzählen müssen, sonst wird sich morgen der Admiral um dich kümmern.
 }
 ForAll_dialog_108 {
 Er weiß es also noch nicht? Na, das ist ja großartig!.. Hm, ich fürchte, du wirst sterben müssen.

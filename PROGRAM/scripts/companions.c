@@ -65,12 +65,12 @@ bool Ship_AutoAbordage(ref rCharacter, float fMinEnemyDistance)
             { // победа
                 if (IsCompanion(rShipCharacter))
 			    {
-			        Log_SetStringToLog(XI_ConvertString("WhoSmuggler") + rShipCharacter.Ship.Name + XI_ConvertString("AbordageBattletotalInfo"));
+			        Log_SetStringToLog(XI_ConvertString("WhoSmuggler") + rShipCharacter.Ship.Name + " " + XI_ConvertString("AbordageBattletotalInfo"));
 			    }
 			    else
 			    {
-			        Log_SetStringToLog(XI_ConvertString("Ship") + " " + rShipCharacter.Ship.Name + XI_ConvertString("AbordageBattletotalInfo"));
-					trace(XI_ConvertString("Ship") + " " + rShipCharacter.Ship.Name + XI_ConvertString("AbordageBattletotalInfo"));
+			        Log_SetStringToLog(XI_ConvertString("Ship") + " " + rShipCharacter.Ship.Name + " " + XI_ConvertString("AbordageBattletotalInfo"));
+					trace(XI_ConvertString("Ship") + " " + rShipCharacter.Ship.Name + " " + XI_ConvertString("AbordageBattletotalInfo"));
 			    }
 			    deadCrew = sti(rCharacter.Ship.Crew.Quantity) * fEnCrewFencing / (fOurCrewFencing*1.8);
 				if (IsCompanion(rShipCharacter))
@@ -97,13 +97,13 @@ bool Ship_AutoAbordage(ref rCharacter, float fMinEnemyDistance)
             { // поражение
                 if (IsCompanion(rCharacter))
 			    {
-			        Log_SetStringToLog(XI_ConvertString("WhoSmuggler") + rCharacter.Ship.Name + XI_ConvertString("AbordageBattletotalInfo2"));
+			        Log_SetStringToLog(XI_ConvertString("WhoSmuggler") + rCharacter.Ship.Name + " " + XI_ConvertString("AbordageBattletotalInfo2"));
 					Statistic_AddValue(pchar, "Sailors_dead", sti(rCharacter.Ship.Crew.Quantity));
 			    }
 			    else
 			    {
-			        Log_SetStringToLog(XI_ConvertString("Ship") + " " + rCharacter.Ship.Name + XI_ConvertString("AbordageBattletotalInfo2"));
-					trace(XI_ConvertString("Ship") + " " + rCharacter.Ship.Name + XI_ConvertString("AbordageBattletotalInfo2"));
+			        Log_SetStringToLog(XI_ConvertString("Ship") + " " + rCharacter.Ship.Name + " " + XI_ConvertString("AbordageBattletotalInfo2"));
+					trace(XI_ConvertString("Ship") + " " + rCharacter.Ship.Name + " " + XI_ConvertString("AbordageBattletotalInfo2"));
 			    }
 			    deadCrew = sti(rShipCharacter.Ship.Crew.Quantity) * fOurCrewFencing/ (fEnCrewFencing*1.8);
 			    SetCrewQuantity(rShipCharacter, makeint(sti(rShipCharacter.Ship.Crew.Quantity) - deadCrew));
@@ -176,9 +176,9 @@ void SeaExchangeCharactersShips(ref rOneChr, ref rSecChr, bool _showLog, bool _s
 	}
 	if (_showLog)
 	{
-		Log_SetStringToLog(GetFullName(rOneChr) + XI_ConvertString("AbordageBattletotalInfo3") +
+		Log_SetStringToLog(GetFullName(rOneChr) + XI_ConvertString("AbordageBattletotalInfo3") + " " +
 						XI_ConvertString(RealShips[sti(rOneChr.Ship.Type)].BaseName) + " " + rOneChr.Ship.Name + ".");
-		trace(GetFullName(rOneChr) + XI_ConvertString("AbordageBattletotalInfo3") +
+		trace(GetFullName(rOneChr) + XI_ConvertString("AbordageBattletotalInfo3") + " " +
 						XI_ConvertString(RealShips[sti(rOneChr.Ship.Type)].BaseName) + " " + rOneChr.Ship.Name + ".");				
 	}
 }

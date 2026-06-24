@@ -600,7 +600,7 @@ void FillCharactersScroll()
 {
 	int i, _curCharIdx;
 	string attributeName;
-	bool bOk;
+	bool bOk, bLocation = StrEndsWith(loadedlocation.id, "_bank") || StrEndsWith(loadedlocation.id, "_store");
 	ref chr;
 	DeleteAttribute(&GameInterface, "CHARACTERS_SCROLL");
 
@@ -641,7 +641,7 @@ void FillCharactersScroll()
 
 		bOk = CheckAttribute(chr, "prisoned") && sti(chr.prisoned) == true;
 
-		if (!CheckAttribute(chr, "isquest") && !bOk && IsOfficer(chr) && or(CheckFighters(chr), StrEndsWith(loadedlocation.id, "_bank")))
+		if (!CheckAttribute(chr, "isquest") && !bOk && IsOfficer(chr) && or(CheckFighters(chr), bLocation))
 		{
 			attributeName = "pic" + (m + 1);
 			GameInterface.CHARACTERS_SCROLL.(attributeName).character = _curCharIdx;
@@ -673,8 +673,7 @@ void FillCharactersScroll()
 			}
 		}
 
-		if (Get_My_Cabin() == "")
-			Set_My_Cabin();
+		Set_My_Cabin();
 
 		i = FindLocation(Get_My_Cabin());
 

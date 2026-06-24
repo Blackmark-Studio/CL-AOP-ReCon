@@ -827,10 +827,10 @@ Officer_Common_214 {
 Tu n’en demandes pas un peu trop?
 }
 Officer_Common_215_m {
-J’@<Agree>. Considérez-vous comme membre de l’équipage.
+@<Agree>. Considérez-vous comme membre de l’équipage.
 }
 Officer_Common_215_f {
-Je suis d’accord, magnifique. Considère-toi comme membre de l’équipage.
+@<Agree>. Considère-toi comme membre de l’équipage.
 }
 Officer_Common_216 {
 Tu ne vaux pas une telle somme. Adieu.

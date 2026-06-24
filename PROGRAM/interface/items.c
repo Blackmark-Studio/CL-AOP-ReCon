@@ -984,7 +984,22 @@ void EquipPress()
             }
             else
             {
-            	SetNewPicture("MAP_PICTURE", "interfaces\Maps\" + itmRef.imageTga + ".tga");
+				if (LanguageGetLanguage() == "Russian")
+				{
+					SetNewPicture("MAP_PICTURE", "interfaces\Maps\russian\" + itmRef.imageTga + ".tga");
+				}
+				else
+				{
+					if (LanguageGetLanguage() == "Chinese")
+					{
+						SetNewPicture("MAP_PICTURE", "interfaces\Maps\chinese\" + itmRef.imageTga + ".tga");
+					}
+					else
+					{
+						SetNewPicture("MAP_PICTURE", "interfaces\Maps\english\" + itmRef.imageTga + ".tga");
+					}
+				}
+
             	SetFormatedText("MAP_TEXT", "");
             }
             SetFormatedText("MAP_CAPTION", XI_ConvertString("titleMapRead"));

@@ -911,7 +911,7 @@ Mentos_280 {
 No dobrze... Mam nadzieję, że wiesz o atakach, które ostatnio miały miejsce w mieście?
 }
 Mentos_281 {
-Oczywiście, przecież służę w milicji tego miasta. André Labor i milicjant, ale za nich już się zemściliśmy na narwalach.\nZ ostatnich napaści – Hill Brunner i Cécile Gallard. To starzy mieszkańcy tej wyspy. Starszych od nich już tu nie znajdziesz.
+Oczywiście, przecież służę w milicji tego miasta. Andre Labor i milicjant, ale za nich już się zemściliśmy na narwalach.\nZ ostatnich napaści – Hill Brunner i Cécile Gallard. To starzy mieszkańcy tej wyspy. Starszych od nich już tu nie znajdziesz.
 }
 Mentos_282 {
 A właśnie, że nie! Znasz może pewnego Henrika Wedekera, znanego też jako Mechanik?

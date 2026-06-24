@@ -185,7 +185,7 @@ Common_rumours_62 {
 Hill Brunner, the owner of our tavern, was found dead in his own cellar. Just like that!..
 }
 Common_rumours_63 {
-Someone’s killed Hill Brunner, the tavern keeper! First André Labor, now Hill Brunner. Hm, terrible news...
+Someone’s killed Hill Brunner, the tavern keeper! First Andre Labor, now Hill Brunner. Hm, terrible news...
 }
 Common_rumours_64 {
 Did you hear that Hilla Bryunner was killed? Stabbed right in his own wine cellar!!

@@ -786,9 +786,9 @@ Time to pay the bartender a visit — I think he’s finally ripe for it.
 }
 ISS_MainLine.6 {The tavern owner, Hill Brynner, arranged to meet me after midnight in his makeshift cellar. It’s one of the cabins on this very ship; to get there, I need to go out on deck and head to the stern.}
 ISS_MainLine.7 {Hill Brynner sent me to the fluyt 'Fernando Diffindur', which used to be a frequent visitor to Teaser Dan. According to the tavern owner, that's where I might find something to prove my words are true.}
-ISS_MainLine.8 {I need to find a certain André Labor, a carpenter, in the City. According to Hill Brunner, he was the one who helped Teaser Dan build the vessel that allowed him to reach the mainland.}
-ISS_MainLine.9 {I found the carpenter and carefully talked to him. André arranged to meet me in the cabin of the corvette 'Protector'.}
-ISS_MainLine.10 {That scoundrel André Labor brought a militiaman to talk to me! I’ll have to draw my weapon. Damn it!}
+ISS_MainLine.8 {I need to find a certain Andre Labor, a carpenter, in the City. According to Hill Brunner, he was the one who helped Teaser Dan build the vessel that allowed him to reach the mainland.}
+ISS_MainLine.9 {I found the carpenter and carefully talked to him. Andre arranged to meet me in the cabin of the corvette 'Protector'.}
+ISS_MainLine.10 {That scoundrel Andre Labor brought a militiaman to talk to me! I’ll have to draw my weapon. Damn it!}
 ISS_MainLine.11
 {
 The tavern owner, Hill Brunner, believes that I should cover my tracks, so to speak. I need to go to the galleon “Velasco,” the base of the Narwhal clan. There, in the fore cabin that serves as the clan’s storeroom, I must wait for one of the “Narwhals” and kill him. Then I am to take the Narwhal clan amulet from his body and deliver it to Admiral Chad Kapper.

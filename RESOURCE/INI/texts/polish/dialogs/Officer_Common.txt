@@ -830,7 +830,7 @@ Officer_Common_215_m {
 @<Agree>. Uważaj się za członka załogi.
 }
 Officer_Common_215_f {
-Zgadzam się, piękna. Uznaj się za członka załogi.
+@<Agree>. Uznaj się za członka załogi.
 }
 Officer_Common_216 {
 Nie jesteś wart tych pieniędzy. Żegnaj.

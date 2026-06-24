@@ -659,10 +659,10 @@ Barmen_188 {
 Tak, wygląda na to, że masz rację.
 }
 Barmen_189_m {
-Hehe, bez wątpienia! Znałem dobrze Teasera, on w życiu nie zbudowałby nawet dziurawego tratwy – do majsterkowania to on się nie nadawał. Ale skoro jednak dotarł na kontynent, to jego pomocnik na pewno zna się na okrętach.\nHa! Przecież to nasz cieśla, André Labor! Słuchaj, przyjacielu, idź do niego. Porozmawiaj z nim spokojnie, opowiedz mu o Teaserze Danu. Bo on nawet nie wie, że ten włóczęga jednak dotarł na kontynent!
+Hehe, bez wątpienia! Znałem dobrze Teasera, on w życiu nie zbudowałby nawet dziurawego tratwy – do majsterkowania to on się nie nadawał. Ale skoro jednak dotarł na kontynent, to jego pomocnik na pewno zna się na okrętach.\nHa! Przecież to nasz cieśla, Andre Labor! Słuchaj, przyjacielu, idź do niego. Porozmawiaj z nim spokojnie, opowiedz mu o Teaserze Danu. Bo on nawet nie wie, że ten włóczęga jednak dotarł na kontynent!
 }
 Barmen_189_f {
-Hehe, bez wątpienia! Znałem Teasera całkiem nieźle, on za nic na świecie nie zbudowałby nawet dziurawego tratwy – do majsterkowania miał dwie lewe ręce. Ale skoro jakoś dotarł na ląd stały, to jego pomocnik musi być prawdziwym fachowcem od okrętów.\nHa! Przecież to nasz cieśla, André Labor! Słuchaj, kapitanie, idź do niego. Porozmawiaj z nim spokojnie, opowiedz mu o Teaserze Danie. Bo on pewnie nawet nie wie, że ten włóczęga jednak dotarł na ląd!
+Hehe, bez wątpienia! Znałem Teasera całkiem nieźle, on za nic na świecie nie zbudowałby nawet dziurawego tratwy – do majsterkowania miał dwie lewe ręce. Ale skoro jakoś dotarł na ląd stały, to jego pomocnik musi być prawdziwym fachowcem od okrętów.\nHa! Przecież to nasz cieśla, Andre Labor! Słuchaj, kapitanie, idź do niego. Porozmawiaj z nim spokojnie, opowiedz mu o Teaserze Danie. Bo on pewnie nawet nie wie, że ten włóczęga jednak dotarł na ląd!
 }
 Barmen_190 {
 Czy to naprawdę konieczne? Przecież list Teasera już jest dowodem na to, co mówię.

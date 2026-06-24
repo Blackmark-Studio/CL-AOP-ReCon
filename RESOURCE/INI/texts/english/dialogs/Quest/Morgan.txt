@@ -965,7 +965,7 @@ Morgan_248_f {
 What, do you think I’ve lost my mind? Of course not! She’s up to something, trying to set me up!
 }
 Morgan_249 {
-Alright, Goodly, don’t play coy. I know everything. I questioned people close to you—they confirmed it was you who planned to get rid of @<GetMainCharacterNameGen> and Avery. You knew you couldn’t take on either of them yourself, so you schemed to have one take out the other! You also knew I’d avenge either of their deaths, so the survivor wouldn’t live long either.\nSo, that much is clear. Now tell me—who paid you for this scheme? Who wanted my people set against each other? And how much did you get for your clever little trick?
+Alright, Goodly, don’t play coy. I know everything. I questioned people close to you—they confirmed it was you who planned to get rid of @<GetMainCharacterNameDat> and Avery. You knew you couldn’t take on either of them yourself, so you schemed to have one take out the other! You also knew I’d avenge either of their deaths, so the survivor wouldn’t live long either.\nSo, that much is clear. Now tell me—who paid you for this scheme? Who wanted my people set against each other? And how much did you get for your clever little trick?
 }
 Morgan_250_m {
 Admiral, this is a misunderstanding! I've been framed! You've known me for years—are you really going to believe that whelp over me?! Why, I could wring his neck with my own hands!
@@ -1001,7 +1001,7 @@ Morgan_257 {
 First, the job needs finishing...
 }
 Morgan_258 {
-Here, take your money. Oliver! Bring 35,000 piastres for Captain @<GetMainCharacterNameGen>. Well then, luck was on your side today—one less scoundrel in the world.
+Here, take your money. Oliver! Bring 35,000 piastres for Captain @<GetMainCharacterNameDat>. Well then, luck was on your side today—one less scoundrel in the world.
 }
 Morgan_259_m {
 Yes, that's right. But I wondered, what would have happened if you hadn't conducted the investigation?

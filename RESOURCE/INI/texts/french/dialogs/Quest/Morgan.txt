@@ -966,7 +966,7 @@ Morgan_248_f {
 Quoi, tu crois que j’ai perdu la tête? Bien sûr que non! Elle prépare quelque chose, elle essaie de me piéger!
 }
 Morgan_249 {
-Très bien, Goodly, ne fais pas l’innocent. Je sais tout. J’ai interrogé des gens de ton entourage—ils m’ont confirmé que c’est toi qui as organisé l’élimination de @<GetMainCharacterNameGen> et Avery. Tu savais que tu ne pouvais pas t’en prendre à l’un ou à l’autre directement, alors tu as manigancé pour que l’un élimine l’autre! Tu savais aussi que je vengerais la mort de l’un ou de l’autre, donc le survivant n’aurait pas vécu longtemps non plus.\nVoilà ce qui est clair. Maintenant, dis-moi—qui t’a payé pour ce plan? Qui voulait que mes gens s’entretuent? Et combien as-tu touché pour ta petite ruse?
+Très bien, Goodly, ne fais pas l’innocent. Je sais tout. J’ai interrogé des gens de ton entourage—ils m’ont confirmé que c’est toi qui as organisé l’élimination de @<GetMainCharacterNameDat> et Avery. Tu savais que tu ne pouvais pas t’en prendre à l’un ou à l’autre directement, alors tu as manigancé pour que l’un élimine l’autre! Tu savais aussi que je vengerais la mort de l’un ou de l’autre, donc le survivant n’aurait pas vécu longtemps non plus.\nVoilà ce qui est clair. Maintenant, dis-moi—qui t’a payé pour ce plan? Qui voulait que mes gens s’entretuent? Et combien as-tu touché pour ta petite ruse?
 }
 Morgan_250_m {
 Amiral, c’est un malentendu! On m’a piégé! Vous me connaissez depuis des années — vous allez vraiment croire ce gamin plutôt que moi? Je pourrais lui tordre le cou de mes propres mains!
@@ -1002,7 +1002,7 @@ Morgan_257 {
 D'abord, il faut terminer le travail...
 }
 Morgan_258 {
-Tenez, prenez votre argent. Oliver! Apporte 35 000 piastres pour le capitaine @<GetMainCharacterNameGen>. Eh bien, la chance était de votre côté aujourd’hui — un vaurien de moins dans ce monde.
+Tenez, prenez votre argent. Oliver! Apporte 35 000 piastres pour le capitaine @<GetMainCharacterNameDat>. Eh bien, la chance était de votre côté aujourd’hui — un vaurien de moins dans ce monde.
 }
 Morgan_259_m {
 Oui, c’est exact. Mais je me suis demandé ce qui se serait passé si vous n’aviez pas mené l’enquête.

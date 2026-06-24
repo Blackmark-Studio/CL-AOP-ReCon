@@ -965,7 +965,7 @@ Morgan_248_f {
 O quê, você acha que eu perdi o juízo? Claro que não! Ela está aprontando alguma coisa, tentando me incriminar!
 }
 Morgan_249 {
-Muito bem, Goodly, não se faça de desentendido. Eu sei de tudo. Conversei com pessoas próximas a você — elas confirmaram que foi você quem planejou se livrar de @<GetMainCharacterNameGen> e Avery. Você sabia que não conseguiria enfrentar nenhum dos dois sozinho, então armou para que um eliminasse o outro! Também sabia que eu vingaria a morte de qualquer um deles, então o sobrevivente não duraria muito.\nIsso já está claro. Agora me diga — quem te pagou por esse plano? Quem queria que meus aliados se voltassem uns contra os outros? E quanto você ganhou por esse truque esperto?
+Muito bem, Goodly, não se faça de desentendido. Eu sei de tudo. Conversei com pessoas próximas a você — elas confirmaram que foi você quem planejou se livrar de @<GetMainCharacterNameDat> e Avery. Você sabia que não conseguiria enfrentar nenhum dos dois sozinho, então armou para que um eliminasse o outro! Também sabia que eu vingaria a morte de qualquer um deles, então o sobrevivente não duraria muito.\nIsso já está claro. Agora me diga — quem te pagou por esse plano? Quem queria que meus aliados se voltassem uns contra os outros? E quanto você ganhou por esse truque esperto?
 }
 Morgan_250_m {
 Almirante, isso é um mal-entendido! Fui incriminado! O senhor me conhece há anos — vai mesmo acreditar nesse moleque em vez de mim?! Ora, eu poderia torcer o pescoço dele com as minhas próprias mãos!
@@ -1001,7 +1001,7 @@ Morgan_257 {
 Primeiro, o trabalho precisa ser concluído...
 }
 Morgan_258 {
-Aqui, pegue seu dinheiro. Oliver! Traga 35.000 piastras para o Capitão @<GetMainCharacterNameGen>. Pois bem, a sorte esteve do seu lado hoje — menos um canalha no mundo.
+Aqui, pegue seu dinheiro. Oliver! Traga 35.000 piastras para o Capitão @<GetMainCharacterNameDat>. Pois bem, a sorte esteve do seu lado hoje — menos um canalha no mundo.
 }
 Morgan_259_m {
 Sim, isso mesmo. Mas fiquei pensando, o que teria acontecido se você não tivesse feito a investigação?

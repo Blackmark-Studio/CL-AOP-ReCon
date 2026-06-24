@@ -383,9 +383,6 @@ void ProcessDialogEvent()
 		case "PDM_ONW_Inqizitor_2":
 			DialogExit();
 			
-			sld = GetCharacter(CreateCharacterClone(CharacterFromID("Incquisitor_1"), -1));
-			sld.id = "PDM_ONW_Inqizitor";
-			
 			locations[FindLocation("Cuba_jungle_01")].DisableEncounters = true;
 			TavernWaitDateEx(22);
 			DoFunctionReloadToLocation("Cuba_jungle_01", "goto", "goto4", "PDM_ONW_Kino_1");

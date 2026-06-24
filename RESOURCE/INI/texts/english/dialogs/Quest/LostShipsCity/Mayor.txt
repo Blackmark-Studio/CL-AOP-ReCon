@@ -335,7 +335,7 @@ Mayor_77 {
 In the Protector’s cabin.
 }
 Mayor_78 {
-Did you know that a policeman and the carpenter André Labor were murdered there?
+Did you know that a policeman and the carpenter Andre Labor were murdered there?
 }
 Mayor_79_m {
 Heard...

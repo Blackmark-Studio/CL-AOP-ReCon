@@ -975,6 +975,7 @@ void ProcessDialogEvent()
 			LAi_LockFightMode(pchar, true);
 			ChangeCharacterReputation(pchar, 1);
 			EncGiglFleeAway(npchar, false);
+			DisableAllExits(true);
 			DoQuestFunctionDelay("EncGirl_SetBerglar", 5.0); //TODO: каждый раз их запускать - бред
 			DialogExit();
 		break;

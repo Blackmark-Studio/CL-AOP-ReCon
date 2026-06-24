@@ -965,7 +965,7 @@ Morgan_248_f {
 No co ty, chyba całkiem zwariowałem? Oczywiście, że nie! Ona coś kombinuje i próbuje mnie wrobić!
 }
 Morgan_249 {
-Dobrze, Goodly, nie kręć. Wszystko wiem. Przesłuchałem ludzi z twojego najbliższego otoczenia. Potwierdzili, że to ty zaplanowałeś pozbyć się @<GetMainCharacterNameGen> i Avery’ego. Wiedziałeś, że żaden z nich nie jest dla ciebie łatwym przeciwnikiem, więc wymyśliłeś, jak usunąć jednego rękami drugiego! Wiedziałeś też, że pomściłbym śmierć każdego z nich, więc i drugi nie miałby szans przeżyć.\nTo w zasadzie wszystko wyjaśnia. Lepiej powiedz mi, kto ci zapłacił za tę intrygę. Komu zależało na tym, żeby moi ludzie rzucili się sobie do gardeł?! I ile dostałeś za ten swój chytry plan?!
+Dobrze, Goodly, nie kręć. Wszystko wiem. Przesłuchałem ludzi z twojego najbliższego otoczenia. Potwierdzili, że to ty zaplanowałeś pozbyć się @<GetMainCharacterNameDat> i Avery’ego. Wiedziałeś, że żaden z nich nie jest dla ciebie łatwym przeciwnikiem, więc wymyśliłeś, jak usunąć jednego rękami drugiego! Wiedziałeś też, że pomściłbym śmierć każdego z nich, więc i drugi nie miałby szans przeżyć.\nTo w zasadzie wszystko wyjaśnia. Lepiej powiedz mi, kto ci zapłacił za tę intrygę. Komu zależało na tym, żeby moi ludzie rzucili się sobie do gardeł?! I ile dostałeś za ten swój chytry plan?!
 }
 Morgan_250_m {
 Admirale, to jakieś nieporozumienie! Zostałem oczerniony! Znasz mnie od lat, naprawdę uwierzysz temu smarkaczowi?! Przecież własnymi rękami bym go...
@@ -1001,7 +1001,7 @@ Morgan_257 {
 Najpierw trzeba dokończyć sprawę...
 }
 Morgan_258 {
-Odbierz swoje pieniądze. Oliverze! Przynieś 35 000 piastrów dla kapitana @<GetMainCharacterNameGen>. No cóż, dziś szczęście ci sprzyjało, o jednego łajdaka mniej.
+Odbierz swoje pieniądze. Oliverze! Przynieś 35 000 piastrów dla kapitana @<GetMainCharacterNameDat>. No cóż, dziś szczęście ci sprzyjało, o jednego łajdaka mniej.
 }
 Morgan_259_m {
 Tak, to prawda. Ale zastanawiałem się, co by było, gdybyś nie przeprowadził śledztwa?

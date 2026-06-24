@@ -661,10 +661,10 @@ Barmen_188 {
 Ja, du scheinst recht zu haben.
 }
 Barmen_189_m {
-Heh-heh, kein Zweifel! Ich kannte Teaser ziemlich gut – er hätte nicht mal ein leckes Floß bauen können, selbst wenn es um sein Leben gegangen wäre. Dafür hatte er einfach nicht das richtige Händchen. Aber wenn er es tatsächlich bis aufs Festland geschafft hat, dann muss sein Helfer wirklich ein echter Fachmann im Schiffbau sein, das steht fest.\nHa! Das ist doch unser Zimmermann, André Labor! Folgendes solltest du tun, Freund: Such ihn auf. Sprich ruhig und gelassen mit ihm, erzähl ihm von Teaser Dan. Wahrscheinlich weiß er gar nicht, dass der alte Vagabund es tatsächlich bis aufs Festland geschafft hat!
+Heh-heh, kein Zweifel! Ich kannte Teaser ziemlich gut – er hätte nicht mal ein leckes Floß bauen können, selbst wenn es um sein Leben gegangen wäre. Dafür hatte er einfach nicht das richtige Händchen. Aber wenn er es tatsächlich bis aufs Festland geschafft hat, dann muss sein Helfer wirklich ein echter Fachmann im Schiffbau sein, das steht fest.\nHa! Das ist doch unser Zimmermann, Andre Labor! Folgendes solltest du tun, Freund: Such ihn auf. Sprich ruhig und gelassen mit ihm, erzähl ihm von Teaser Dan. Wahrscheinlich weiß er gar nicht, dass der alte Vagabund es tatsächlich bis aufs Festland geschafft hat!
 }
 Barmen_189_f {
-Heh-heh, da gibt’s keinen Zweifel! Ich kannte Teaser ziemlich gut – er hätte nicht mal ein leckes Floß bauen können, um sein Leben zu retten, dafür waren seine Hände einfach nicht gemacht. Aber wenn er es tatsächlich bis aufs Festland geschafft hat, dann muss sein Helfer wirklich ein echter Fachmann im Schiffbau sein, keine Frage.\nHa! Das ist unser Zimmermann, André Labor! Folgendes solltest du tun, Captain: Geh zu ihm. Sprich ruhig und gelassen mit ihm, erzähl ihm von Teaser Dan. Wahrscheinlich weiß er gar nicht, dass der alte Vagabund es tatsächlich bis aufs Festland geschafft hat!
+Heh-heh, da gibt’s keinen Zweifel! Ich kannte Teaser ziemlich gut – er hätte nicht mal ein leckes Floß bauen können, um sein Leben zu retten, dafür waren seine Hände einfach nicht gemacht. Aber wenn er es tatsächlich bis aufs Festland geschafft hat, dann muss sein Helfer wirklich ein echter Fachmann im Schiffbau sein, keine Frage.\nHa! Das ist unser Zimmermann, Andre Labor! Folgendes solltest du tun, Captain: Geh zu ihm. Sprich ruhig und gelassen mit ihm, erzähl ihm von Teaser Dan. Wahrscheinlich weiß er gar nicht, dass der alte Vagabund es tatsächlich bis aufs Festland geschafft hat!
 }
 Barmen_190 {
 Ist das wirklich nötig? Schließlich beweist Tizers Brief doch schon meinen Standpunkt.
@@ -694,7 +694,7 @@ Barmen_198 {
 Hm, interessant...
 }
 Barmen_199 {
-Wie auch immer, das ist nur meine Vermutung – wir kommen später darauf zurück. Fürs Erste such André Labor auf und finde unauffällig alles heraus, was du über seine Verwicklung in die Teaser-Angelegenheit erfahren kannst.
+Wie auch immer, das ist nur meine Vermutung – wir kommen später darauf zurück. Fürs Erste such Andre Labor auf und finde unauffällig alles heraus, was du über seine Verwicklung in die Teaser-Angelegenheit erfahren kannst.
 }
 Barmen_200 {
 In Ordnung, das mache ich.
@@ -706,7 +706,7 @@ Barmen_202_m {
 Hm... Also, ich habe mit dem Zimmermann gesprochen, diesem Andre Labor, und er bat mich, zur Kajüte der Korvette 'Protector' zu gehen. Also bin ich hineingegangen, habe einfach auf ihn gewartet, nichtsahnend... Und dann bringt dieser Andre einen Milizionär mit, um mit mir zu reden! Musste sie alle ins Jenseits schicken.
 }
 Barmen_202_f {
-Hm... Also, ich habe mit dem Zimmermann gesprochen, diesem André Labor, und er bat mich, zur Kajüte der Korvette 'Protector' zu gehen. Also bin ich dort hinein, habe einfach auf ihn gewartet, ohne etwas zu ahnen... Und dann bringt dieser André einen Milizionär mit, um mit mir zu reden! Musste sie alle ins Jenseits schicken.
+Hm... Also, ich habe mit dem Zimmermann gesprochen, diesem Andre Labor, und er bat mich, zur Kajüte der Korvette 'Protector' zu gehen. Also bin ich dort hinein, habe einfach auf ihn gewartet, ohne etwas zu ahnen... Und dann bringt dieser André einen Milizionär mit, um mit mir zu reden! Musste sie alle ins Jenseits schicken.
 }
 Barmen_203_m {
 Zum Teufel! Unglaublich! Jetzt ist es endgültig vorbei für dich... Hör zu, tu mir einen Gefallen – erzähl niemandem, dass ich dich dazu angestiftet habe. Für dich ist es sowieso aus, aber ich möchte trotzdem noch am Leben bleiben...

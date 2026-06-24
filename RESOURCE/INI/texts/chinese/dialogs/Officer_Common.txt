@@ -827,10 +827,10 @@ Officer_Common_214 {
 你这要求是不是有点太高了？
 }
 Officer_Common_215_m {
-我@<Agree>。你现在就是咱们船上的一员了。
+@<Agree>。你现在就是咱们船上的一员了。
 }
 Officer_Common_215_f {
-俺@<Agree>，美女。你现在就是咱们船上的一员了。
+@<Agree>。你现在就是咱们船上的一员了。
 }
 Officer_Common_216 {
 你不值这么多钱，告辞。

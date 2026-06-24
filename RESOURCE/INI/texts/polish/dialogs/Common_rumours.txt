@@ -185,7 +185,7 @@ Common_rumours_62 {
 Hill Brunner, właściciel naszej tawerny, został znaleziony martwy w swojej piwnicy. Ot, tak!..
 }
 Common_rumours_63 {
-Ktoś zabił właściciela tawerny, Hilla Brunnera! Najpierw André Labor, a teraz Hill Brunner. Hm, straszne wieści!..
+Ktoś zabił właściciela tawerny, Hilla Brunnera! Najpierw Andre Labor, a teraz Hill Brunner. Hm, straszne wieści!..
 }
 Common_rumours_64 {
 A wiecie, że Hilla Brunnera zamordowano? Zadźgali go w jego własnej piwnicy z winem!

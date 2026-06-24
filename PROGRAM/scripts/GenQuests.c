@@ -2547,8 +2547,15 @@ void EncGirl_SetBerglar(string qName)
 	sld.greeting = "Enc_Raiders";
 	PlaceCharacter(sld, "goto", "random_must_be_near");
 	LAi_SetActorType(sld);
-	LAi_group_MoveCharacter(sld, "EnemyFight");
+	LAi_group_MoveCharacter(sld, "EncGirl_BerglarGroup");
 	LAi_ActorDialog(sld, pchar, "", 4.0, 0);
+	LAi_group_SetCheck("EncGirl_BerglarGroup", "EncGirl_BerglarGroup_Dead");
+}
+
+void EncGirl_BerglarGroup_Dead(string qName)
+{
+	LAi_group_Delete("EncGirl_BerglarGroup");
+	DisableAllExits(false);
 }
 
 void EncGirlFack_outRoom()

@@ -185,7 +185,7 @@ Common_rumours_62 {
 Hill Brunner, der Besitzer unserer Taverne, wurde tot in seinem eigenen Keller gefunden. Einfach so!..
 }
 Common_rumours_63 {
-Jemand hat Hill Brunner, den Wirt, getötet! Erst André Labor, jetzt Hill Brunner. Hm, schreckliche Nachrichten...
+Jemand hat Hill Brunner, den Wirt, getötet! Erst Andre Labor, jetzt Hill Brunner. Hm, schreckliche Nachrichten...
 }
 Common_rumours_64 {
 Hast du gehört, dass Hilla Bryunner getötet wurde? Er wurde direkt in seinem eigenen Weinkeller erstochen!

@@ -238,7 +238,7 @@ int InitItems()
 	n = InitQuestItems(n,	"strangeNoteLSC",		10,	"ITEMS_4",	0,		0.1,	"",			"",			READING_ITEM_TYPE); //записка тизера
 	n = InitQuestItems(n,	"TizerJournal",			6,	"ITEMS_9",	0,		0.2,	"",			"",			""); // дневник Тизера (становится читабельным позже по квесту)
 	n = InitQuestItems(n,	"recon_potion",			3,	"ITEMS_15",	0,		0.4,	"balsam",	"",			""); // ром "ReConstruction"
-	n = InitQuestItems(n,	"instrument1",			10,	"ITEMS_15",	1000,	0.2,	"ToolBox",	"",			""); // отличная пила (+5 починка)
+	n = InitQuestItems(n,	"instrument1",			10,	"ITEMS_15",	1000,	0.2,	"ToolBox",	"VARIETY",	""); // отличная пила (+5 починка)
 
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	//	далее начинаются квестовые предметы, заюзаные в локаторах item

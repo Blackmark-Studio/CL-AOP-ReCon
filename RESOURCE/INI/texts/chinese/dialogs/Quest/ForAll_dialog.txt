@@ -362,13 +362,13 @@ ForAll_dialog_106 {
 真是个傻瓜！
 }
 ForAll_dialog_107 {
-André Labor可是本地的守法市民。至于你，得把Teaser Dan的事全都交代清楚，不然明天就轮到海军上将来收拾你了。
+Andre Labor可是本地的守法市民。至于你，得把Teaser Dan的事全都交代清楚，不然明天就轮到海军上将来收拾你了。
 }
 ForAll_dialog_108 {
 所以他还不知道？那可真是太好了！……嗯，恐怕你得死了。
 }
 ForAll_dialog_109 {
-什么？！André，到我这来！
+什么？！Andre，到我这来！
 }
 ForAll_dialog_110 {
 哈，原来木匠也在把风？这也挺好！

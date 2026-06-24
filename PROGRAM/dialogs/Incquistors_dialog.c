@@ -63,11 +63,6 @@ void ProcessDialogEvent()
 									StringFromKey("Incquistors_dialog_34"),
 									StringFromKey("Incquistors_dialog_35"))), npchar, Dialog.CurrentNode);
 				link.l1.go = DialogGoNodeRepeat("exit", "none", "none", "NoMoreTalkExit", npchar, Dialog.CurrentNode);
-				if (CheckAttribute(pchar, "questTemp.PDM_ONV_OhotaNaVedmu") && npchar.chr_ai.type != "guardian")
-				{
-					link.l2 = StringFromKey("Incquistors_dialog_74");
-					link.l2.go = "PDM_ONW_Inqizitor_1";
-				}
 			}
 
 			if (CheckAttribute(npchar, "protector.CheckAlways")) //гарды на камерах
@@ -160,26 +155,6 @@ void ProcessDialogEvent()
 			dialog.text = StringFromKey("Incquistors_dialog_64", pchar);
 			link.l1 = StringFromKey("Incquistors_dialog_65");
 			link.l1.go = "exit";
-		break;
-		
-		//**************************** Прокажённая ********************************
-		case "PDM_ONW_Inqizitor_1":
-			dialog.text = StringFromKey("Incquistors_dialog_75", pchar);
-			link.l1 = StringFromKey("Incquistors_dialog_76");
-			link.l1.go = "PDM_ONW_Inqizitor_2";
-			DeleteAttribute(pchar, "questTemp.PDM_ONV_OhotaNaVedmu");
-		break;
-
-		case "PDM_ONW_Inqizitor_2":
-			DialogExit();
-			
-			sld = GetCharacter(CreateCharacterClone(npchar, -1));
-			sld.id = "PDM_ONW_Inqizitor";
-			
-			locations[FindLocation("Cuba_jungle_01")].DisableEncounters = true;
-			// TavernWaitDate("wait_night");
-			TavernWaitDateEx(22);
-			DoFunctionReloadToLocation("Cuba_jungle_01", "goto", "goto4", "PDM_ONW_Kino_1");
 		break;
 
 		//замечение по обнаженному оружию

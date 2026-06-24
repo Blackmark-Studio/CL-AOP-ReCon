@@ -744,7 +744,7 @@ ISS_MainLine.6 {Właściciel tawerny, Hill Brynner, umówił się ze mną po pó
 ISS_MainLine.7 {Hill Brynner wysłał mnie na fluit 'Fernando Diffindur', który niegdyś często zawijał do Teaser Dan. Według właściciela tawerny, właśnie tam mogę znaleźć coś, co potwierdzi prawdziwość moich słów.}
 ISS_MainLine.8 {Muszę odnaleźć w Mieście pewnego André Labora, cieślę. Według Hilla Brunnera to właśnie on pomógł Teaserowi Danowi zbudować łódź, która pozwoliła mu dotrzeć na stały ląd.}
 ISS_MainLine.9 {Znalazłem cieślę i ostrożnie z nim porozmawiałem. André umówił się ze mną w kajucie korwety 'Protector'.}
-ISS_MainLine.10 {Ten łajdak André Labor przyprowadził do mnie milicjanta na rozmowę! Będę musiał sięgnąć po broń. Do diabła!}
+ISS_MainLine.10 {Ten łajdak Andre Labor przyprowadził do mnie milicjanta na rozmowę! Będę musiał sięgnąć po broń. Do diabła!}
 ISS_MainLine.11
 {
 Właściciel tawerny, Hill Brunner, uważa, że powinienem zatrzeć za sobą ślady, tak to ujmując. Muszę udać się na galeon „Velasco”, będący bazą klanu Narwhal. Tam, w dziobowej kajucie pełniącej rolę magazynu klanu, mam zaczekać na jednego z „Narwali” i go zabić. Następnie muszę zabrać z jego ciała amulet klanu Narwhal i dostarczyć go admirałowi Chadowi Kapperowi.

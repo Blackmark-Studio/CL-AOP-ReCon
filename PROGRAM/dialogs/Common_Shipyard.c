@@ -145,8 +145,6 @@ void ProcessDialogEvent()
 					dialog.text = StringFromKey("Common_Shipyard_24");
 					link.l1 = StringFromKey("Common_Shipyard_25");
 					link.l1.go = "ShipyardsMap_1";
-					SaveEventStartTime("questShipyardsMap");
-					SaveCurrentNpcQuestDateParam(npchar, "questShipyardsMap");
 					break;
 				}
 				//<<--- квест украсть чертеж на верфи			
@@ -510,6 +508,7 @@ void ProcessDialogEvent()
 			link.l1.go = "ShipyardsMap_disagree";
 			link.l2 = StringFromKey("Common_Shipyard_106");
 			link.l2.go = "ShipyardsMap_agree";
+			SaveCurrentNpcQuestDateParam(npchar, "questShipyardsMap");
 		break;
 
 		case "ShipyardsMap_disagree":
@@ -518,6 +517,7 @@ void ProcessDialogEvent()
 			link.l1.go = "exit";
 			pchar.questTemp.different = "free";
 			DeleteAttribute(pchar, "questTemp.different.ShipyardsMap");
+			SaveEventStartTime("questShipyardsMap");
 		break;
 		case "ShipyardsMap_agree":
 			dialog.text = StringFromKey("Common_Shipyard_109");
@@ -703,4 +703,5 @@ void ShipyardsMapQuestEnd(ref rChar, string sQuestNote)
 	AddQuestUserData("ShipyardsMap", "sCity", XI_ConvertString("Colony" + rChar.city + "Gen"));
 	CloseQuestHeader("ShipyardsMap");
 	DeleteAttribute(pchar, "questTemp.different.ShipyardsMap");
+	SaveEventStartTime("questShipyardsMap");
 }

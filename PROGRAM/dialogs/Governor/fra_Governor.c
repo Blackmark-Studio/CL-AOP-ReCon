@@ -988,6 +988,9 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 			AddLandQuestmark_Main(CharacterFromID("Havana_tavernkeeper"), "Fra_Line");
 			AddLandQuestmark_Main(CharacterFromID("SantoDomingo_tavernkeeper"), "Fra_Line");
 			AddLandQuestmark_Main(CharacterFromID("Santiago_tavernkeeper"), "Fra_Line");
+			//==> Прячем главу инквизиции на время квеста
+			sld = CharacterFromID("Santiago_Inquisitor");
+			ChangeCharacterAddressGroup(sld, "none", "", "");
 		break;
 		case "Step_7_6":
 			dialog.text = StringFromKey("fra_Governor_236", pchar, GetAddress_Form(NPChar));
@@ -1031,6 +1034,9 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 			DialogExit();
 			AddLandQuestmark_Main_WithCondition(npchar, "Fra_Line", "StateLines_Waiting_QuestMarkCondition");
 			AddMapQuestMark_Major("Tortuga_town", "Fra_Line", "StateLines_Waiting_WDMQuestMarkCondition");
+			//==> //Возвращаем главу инквизиции на место
+			sld = CharacterFromID("Santiago_Inquisitor");
+			ChangeCharacterAddressGroup(sld, "Santiago_Incquisitio", "sit", "armchair1");
 		break;
 		case "Step_7_8":
 			dialog.text = StringFromKey("fra_Governor_242");

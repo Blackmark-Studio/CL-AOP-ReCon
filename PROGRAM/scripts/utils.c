@@ -405,13 +405,13 @@ void GiveItemToTrader(aref ch)
 			if (rand(3) == 2)
 				AddItems(ch, "bullet_mold", 1);
 
-			itemID = "recipe_cartridge";
+			itemID = "cartridge";
 			if (rand(3) == 1 && !isMultiObjectKnown(itemID))
-				AddItems(ch, itemID, 1);
+				AddItems(ch, "recipe_" + itemID, 1);
 
-			itemID = "recipe_harpoon";
+			itemID = "harpoon";
 			if (rand(3) == 0 && !isMultiObjectKnown(itemID))
-				AddItems(ch, itemID, 1);
+				AddItems(ch, "recipe_" + itemID, 1);
 		}
 
 		if (rand(3) == 3) AddItems(ch, "mineral11", 1 + rand(2));	// "Точильный камень"
@@ -429,9 +429,9 @@ void GiveItemToTrader(aref ch)
 
 			if (rank >= 7)
 			{
-				itemID = "recipe_potion1";
+				itemID = "potion1";
 				if (rand(3) == 1 && !isMultiObjectKnown(itemID))
-					AddItems(ch, itemID, 1);
+					AddItems(ch, "recipe_" + itemID, 1);
 			}
 		}
 

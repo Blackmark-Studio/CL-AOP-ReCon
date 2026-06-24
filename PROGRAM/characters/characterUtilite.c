@@ -1799,7 +1799,7 @@ void TakeNItemsCabin(ref _refCharacter,string itemName,int quant, bool onlycabin
 	}
 	aref chests;
 	ref rItem;
-	int i, chestsnum = CheckCabinBoxes(locations[FindLocation(Get_My_Cabin())]);
+	int i, chestsnum = CheckCabinBoxes(&locations[FindLocation(Get_My_Cabin())]);
 	string sBox;
 	for(i = 1; i <= chestsnum; i++)
 	{
@@ -2914,10 +2914,15 @@ void Set_My_Cabin()
 			for (n = 1; n <= 4; n++)
 			{
 				sTemp = "box" + n;
-				DeleteAttribute(locTo, sTemp + ".items");
-				locTo.(sTemp).items = "";
-				locTo.(sTemp) = Items_MakeTime(0, 0, 1, 2003);
-				locTo.(sTemp).money = 0;
+				if (FindLocator(locTo.id, sTemp, &al, true))
+				{
+					DeleteAttribute(locTo, sTemp + ".items");
+					locTo.(sTemp).items = "";
+					locTo.(sTemp) = Items_MakeTime(0, 0, 1, 2003);
+					locTo.(sTemp).money = 0;
+				}
+				else
+					DeleteAttribute(locTo, sTemp);
 			}
 
 			for (n = 1; n <= 4; n++)

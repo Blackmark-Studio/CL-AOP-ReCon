@@ -83,6 +83,7 @@ bool DialogMain(ref Character, bool bPlayerInit)
 		}
 	}
 	//Можем начинать диалог
+	TimeScaleCounter = 0;
 	DelPerkFromActiveList("TimeSpeed");
 	dialogRun = true;
 	dialogSelf = false;
@@ -123,7 +124,7 @@ void StartDialogMain()
 {
 	startDialogMainCounter++;
 	if(startDialogMainCounter < 3) return;
-	
+
 	SendMessage(pchar, "l", MSG_CHARACTER_STOPSTRAFE);
 	DelEventHandler("frame", "StartDialogMain");
 
@@ -157,12 +158,12 @@ void StartDialogMain()
 		}
 	}
 
-	object persRef = GetCharacterModel(Characters[GetMainCharacterIndex()]);
+	object persRef = GetCharacterModel(&Characters[GetMainCharacterIndex()]);
 	SendMessage(&Dialog, "lii", 0, &Characters[GetMainCharacterIndex()], &persRef);
 
-	object charRef = GetCharacterModel(Characters[makeint(CharacterRef.index)]);
+	object charRef = GetCharacterModel(&Characters[makeint(CharacterRef.index)]);
 	SendMessage(&Dialog, "lii", 1, &Characters[makeint(CharacterRef.index)], &charRef);
-	
+
 	LayerSetRealize(REALIZE);
 	LayerAddObject(REALIZE,Dialog,-1256);
 	Set_inDialog_Attributes();
@@ -225,7 +226,7 @@ void SelfDialog(ref Character)
 	Dialog.headModel = Character.headModel;
 	Dialog.gender = Character.sex;
 
-	object persRef = GetCharacterModel(Characters[GetMainCharacterIndex()]);
+	object persRef = GetCharacterModel(&Characters[GetMainCharacterIndex()]);
 	SendMessage(&Dialog, "lii", 0, Character, &persRef);
 	SendMessage(&Dialog, "lii", 1, Character, &persRef);
 	

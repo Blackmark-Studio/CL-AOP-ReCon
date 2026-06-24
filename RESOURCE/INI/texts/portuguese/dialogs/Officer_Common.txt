@@ -827,10 +827,10 @@ Officer_Common_214 {
 Você não está pedindo um pouco demais?
 }
 Officer_Common_215_m {
-Eu @<Concordo>. Considere-se parte da tripulação.
+@<Agree>. Considere-se parte da tripulação.
 }
 Officer_Common_215_f {
-Eu @<Concordo>, linda. Considere-se parte da tripulação.
+@<Agree>. Considere-se parte da tripulação.
 }
 Officer_Common_216 {
 Você não vale esse dinheiro. Adeus.

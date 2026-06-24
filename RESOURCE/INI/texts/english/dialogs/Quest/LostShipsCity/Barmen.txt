@@ -661,10 +661,10 @@ Barmen_188 {
 Yes, it seems you’re right.
 }
 Barmen_189_m {
-Heh-heh, no doubt about it! I knew Teaser pretty well—he couldn’t have built even a leaky raft if his life depended on it. He just didn’t have the hands for it. But if he actually made it to the mainland, then his helper must be a real expert in shipbuilding, that’s for sure.\nHa! Why, that’s our carpenter, André Labor! Here’s what you should do, mate: go find him. Talk to him quietly and calmly, tell him about Teaser Dan. He probably doesn’t even know that old vagabond actually made it to the mainland!
+Heh-heh, no doubt about it! I knew Teaser pretty well—he couldn’t have built even a leaky raft if his life depended on it. He just didn’t have the hands for it. But if he actually made it to the mainland, then his helper must be a real expert in shipbuilding, that’s for sure.\nHa! Why, that’s our carpenter, Andre Labor! Here’s what you should do, mate: go find him. Talk to him quietly and calmly, tell him about Teaser Dan. He probably doesn’t even know that old vagabond actually made it to the mainland!
 }
 Barmen_189_f {
-Heh-heh, no doubt about it! I knew Teaser pretty well—he couldn’t have built a leaky raft to save his life, his hands just weren’t made for it. But if he managed to reach the mainland, then his helper must be a real expert in shipbuilding, no question about it.\nHa! That’s our carpenter, André Labor! Here’s what you should do, captain: go to him. Talk to him quietly and calmly, tell him about Teaser Dan. He probably doesn’t even know that old vagabond actually made it to the mainland!
+Heh-heh, no doubt about it! I knew Teaser pretty well—he couldn’t have built a leaky raft to save his life, his hands just weren’t made for it. But if he managed to reach the mainland, then his helper must be a real expert in shipbuilding, no question about it.\nHa! That’s our carpenter, Andre Labor! Here’s what you should do, captain: go to him. Talk to him quietly and calmly, tell him about Teaser Dan. He probably doesn’t even know that old vagabond actually made it to the mainland!
 }
 Barmen_190 {
 Is that really necessary? After all, Tizer’s letter already proves my point.
@@ -694,7 +694,7 @@ Barmen_198 {
 Hmm, interesting...
 }
 Barmen_199 {
-Anyway, that's just my speculation—we'll come back to it later. For now, go find André Labor and discreetly find out everything you can about his involvement in the Teaser affair.
+Anyway, that's just my speculation—we'll come back to it later. For now, go find Andre Labor and discreetly find out everything you can about his involvement in the Teaser affair.
 }
 Barmen_200 {
 Alright, I'll do just that.
@@ -706,7 +706,7 @@ Barmen_202_m {
 Hmm... Well, I talked to the carpenter, that Andre Labor, and he asked me to go to the cabin of the corvette 'Protector'. So I went in there, just waiting for him, not suspecting a thing... And then this Andre brings a militiaman to have a word with me! Had to send them all to the next world.
 }
 Barmen_202_f {
-Hmm... Well, I talked to the carpenter, that André Labor, and he asked me to go to the cabin of the corvette 'Protector'. So I went in there, just waiting for him, not suspecting anything... And then this André brings a militiaman to have a chat with me! Had to send them all to the next world.
+Hmm... Well, I talked to the carpenter, that Andre Labor, and he asked me to go to the cabin of the corvette 'Protector'. So I went in there, just waiting for him, not suspecting anything... And then this André brings a militiaman to have a chat with me! Had to send them all to the next world.
 }
 Barmen_203_m {
 Devil take it! Unbelievable! Well, this is the end for you now... Listen, do me a favor—don’t tell anyone it was me who put you up to this. You’re done for anyway, but I’d still like to keep living...

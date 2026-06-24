@@ -52,8 +52,7 @@ bool FindFile(string sFolder, string sFileName, string sMask, bool bStrict)
 	string fileName;
 
 	DeleteAttribute(&fileFinder, "");
-	fileFinder.dir = sFolder;
-	fileFinder.mask = sMask;
+	SearchBase(&fileFinder, sFolder, sMask, "1", "0", "1");
 	CreateEntity(&fileFinder, "FINDFILESINTODIRECTORY");
 
 	makearef(fileList, fileFinder.filelist);
@@ -84,6 +83,32 @@ bool FindFile(string sFolder, string sFileName, string sMask, bool bStrict)
 	}
 
 	return false;
+}
+
+void SearchBase(object oResFinder, string sDir, string sMask, string sRecursive, string sGetPaths, string sSOP)
+{
+	oResFinder.dir = sDir;
+    oResFinder.mask = sMask;
+	oResFinder.recursive = sRecursive;
+	oResFinder.getpaths = sGetPaths;
+	oResFinder.stripOverlayPath = sSOP;
+}
+
+int CheckFilesInDir(string sDir)
+{
+	object oFileFinder;
+	aref arFileList;
+	int iFilesQty = 0;
+
+	DeleteAttribute(&oFileFinder, "");
+	oFileFinder.dir = sDir;
+	CreateEntity(&oFileFinder, "FINDFILESINTODIRECTORY");
+
+	makearef(arFileList, oFileFinder.filelist);
+	iFilesQty = GetAttributesNum(arFileList);
+	DeleteClass(&oFileFinder);
+
+	return iFilesQty;
 }
 
 // > разбивание строки "<путь к файлу>\<файл>" на "<путь к файлу>" и "<файл>"

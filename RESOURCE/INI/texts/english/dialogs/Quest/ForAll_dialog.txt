@@ -362,7 +362,7 @@ ForAll_dialog_106 {
 What an idiot!..
 }
 ForAll_dialog_107 {
-André Labor is a law-abiding citizen of this town. But as for you, you’ll have to tell me everything about Teaser Dan, or tomorrow the admiral will be dealing with you.
+Andre Labor is a law-abiding citizen of this town. But as for you, you’ll have to tell me everything about Teaser Dan, or tomorrow the admiral will be dealing with you.
 }
 ForAll_dialog_108 {
 So he doesn’t know yet? Well, that’s just wonderful!.. Hm, I’m afraid you’ll have to die.

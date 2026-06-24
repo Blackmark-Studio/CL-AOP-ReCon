@@ -741,9 +741,9 @@ Kurz gesagt, ich werde später noch einmal mit dem Tavernenwirt über Teaser Dan
 ISS_MainLine.5 {Zeit, dem Barkeeper einen Besuch abzustatten – ich glaube, jetzt ist er endlich so weit.}
 ISS_MainLine.6 {Der Tavernenwirt Hill Brynner hat sich mit mir nach Mitternacht in seinem provisorischen Keller verabredet. Das ist eine der Kabinen auf diesem Schiff; um dorthin zu gelangen, muss ich an Deck gehen und zum Heck laufen.}
 ISS_MainLine.7 {Hill Brynner hat mich zur Fluyt 'Fernando Diffindur' geschickt, die früher oft bei Teaser Dan anlegte. Laut dem Tavernenbesitzer könnte ich dort etwas finden, das meine Worte bestätigt.}
-ISS_MainLine.8 {Ich muss einen gewissen André Labor, einen Zimmermann, in der Stadt finden. Laut Hill Brunner war er es, der Teaser Dan beim Bau des Schiffs geholfen hat, mit dem dieser das Festland erreichen konnte.}
-ISS_MainLine.9 {Ich fand den Zimmermann und sprach vorsichtig mit ihm. André hat ein Treffen mit mir in der Kajüte der Korvette 'Protector' vereinbart.}
-ISS_MainLine.10 {Dieser Halunke André Labor hat einen Milizionär mitgebracht, um mit mir zu reden! Ich muss wohl zur Waffe greifen. Verdammt!}
+ISS_MainLine.8 {Ich muss einen gewissen Andre Labor, einen Zimmermann, in der Stadt finden. Laut Hill Brunner war er es, der Teaser Dan beim Bau des Schiffs geholfen hat, mit dem dieser das Festland erreichen konnte.}
+ISS_MainLine.9 {Ich fand den Zimmermann und sprach vorsichtig mit ihm. Andre hat ein Treffen mit mir in der Kajüte der Korvette 'Protector' vereinbart.}
+ISS_MainLine.10 {Dieser Halunke Andre Labor hat einen Milizionär mitgebracht, um mit mir zu reden! Ich muss wohl zur Waffe greifen. Verdammt!}
 ISS_MainLine.11
 {
 Der Tavernenbesitzer Hill Brunner ist der Meinung, dass ich meine Spuren verwischen sollte, sozusagen. Ich muss zum Galeonenschiff „Velasco“ gehen, dem Stützpunkt des Narwhal-Clans. Dort, in der vorderen Kabine, die als Lagerraum des Clans dient, soll ich auf ein Mitglied der „Narwhals“ warten und ihn töten. Anschließend muss ich dem Toten das Amulett des Narwhal-Clans abnehmen und es Admiral Chad Kapper überbringen.

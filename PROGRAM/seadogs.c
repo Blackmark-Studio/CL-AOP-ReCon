@@ -128,6 +128,17 @@ native bool SteamClearRichPresence(); // wipe out all current rich presence
 native bool BIsSubscribedApp(int uAppID); // true - user has license to specified App ID
 native bool GameOverlayToWebPageModal(string sWebPageURL); // for Call To Actions //откывает нужную ссылку в стим оверлее
 native bool HasPlaytestRewardNative(); // true - user is in Tichingitu ach list
+native int BeginCuratorCheckAsync(string sCuratorID, int iTimeOut);
+// 0 - failed to start check (offline? bad steam?)
+// 1 - check is started in background
+// 2 - check is already in progress, wait for it
+// sCuratorID must be a Steam Curator ID as a string
+// iTimeOut is a global timeout for the check in seconds
+// if the check takes longer than iTimeOut seconds - it is cancelled
+// KNOWN CURATOR IDS:
+// "45734318" - Caribbean Legend (the game franchise)
+// "35094948" - Valkyrie Initiative (the publisher)
+// Results go into the event handler defined JUST BELOW THE OTHERS
 
 #libriary "script_libriary_test"
 #libriary "dx9render_script_libriary"
@@ -141,8 +152,9 @@ native bool HasPlaytestRewardNative(); // true - user is in Tichingitu ach list
 #event_handler("CameraPosAng","ProcessCameraPosAng");
 #event_handler("SeaDogs_ClearSaveData", "ClearLocationsSaveData");
 #event_handler("StopQuestCheckProcessFreeze","ProcessStopQuestCheckProcessFreeze"); // boal 240804
+#event_handler("CuratorCheckResult","ProcessCuratorCheckResult"); // nkrapivindev 230226
 
-float fHighPrecisionDeltaTime;	
+float fHighPrecisionDeltaTime;
 
 void ProcessStopQuestCheckProcessFreeze() // boal 240804
 {
@@ -726,7 +738,7 @@ void OnLoad()
 
 	PDMQuestsInit();
 	ReloadProgressUpdate();
-	
+
 	InitTeleport();
 	ReloadProgressUpdate();
 
@@ -1950,4 +1962,28 @@ string GetLastSavePathFromCurrentProfile() {
 	}
 
 	return opt.LastSavePath;
+}
+
+void ProcessCuratorCheckResult()
+{
+    // always a lowercase english string
+    string sResult = GetEventData();
+    if (sResult == "success")
+    {
+        // user is subscribed to the curator
+        // 100% sure
+        Trace("ProcessCuratorCheckResult: Success! :D");
+    }
+    else if (sResult == "notsubscribedfailure")
+    {
+        // user is NOT subscribed to the curator
+        // 100% sure
+        Trace("ProcessCuratorCheckResult: NotSubscribedFailure! ;-(");
+    }
+    else
+    {
+        // don't know for sure.
+        // either time-out or check is broken
+        Trace("ProcessCuratorCheckResult: Unknown sResult=" + sResult);
+    }
 }

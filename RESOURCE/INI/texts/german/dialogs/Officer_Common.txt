@@ -827,10 +827,10 @@ Officer_Common_214 {
 Verlangst du nicht ein bisschen zu viel?
 }
 Officer_Common_215_m {
-Ich @<Agree>. Du bist jetzt Teil der Mannschaft.
+@<Agree>. Du bist jetzt Teil der Mannschaft.
 }
 Officer_Common_215_f {
-Ich @<Agree>, Schöne. Du gehörst jetzt zur Mannschaft.
+@<Agree>. Du gehörst jetzt zur Mannschaft.
 }
 Officer_Common_216 {
 Du bist dieses Geld nicht wert. Leb wohl.

@@ -362,7 +362,7 @@ ForAll_dialog_106 {
 Co za idiota!..
 }
 ForAll_dialog_107 {
-André Labor to praworządny obywatel miasta. A ty musisz mi wszystko opowiedzieć o Teaserze Danie, bo inaczej jutro zajmie się tobą admirał.
+Andre Labor to praworządny obywatel miasta. A ty musisz mi wszystko opowiedzieć o Teaserze Danie, bo inaczej jutro zajmie się tobą admirał.
 }
 ForAll_dialog_108 {
 Więc on jeszcze nie wie? To przecież wspaniale!.. Hm, obawiam się, że będziesz musiał umrzeć.

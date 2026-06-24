@@ -911,7 +911,7 @@ Mentos_280 {
 那好吧……你应该知道最近城里发生的袭击吧？
 }
 Mentos_281 {
-当然啦，我就是这个镇的民兵。André Labor和那位民兵——我们已经替他们报仇，把narwhals收拾了。\n最近的袭击嘛——Hill Brunner和Cécile Gallard。他们可是这岛上的老居民了，这里没人比他们更资深。
+当然啦，我就是这个镇的民兵。Andre Labor和那位民兵——我们已经替他们报仇，把narwhals收拾了。\n最近的袭击嘛——Hill Brunner和Cécile Gallard。他们可是这岛上的老居民了，这里没人比他们更资深。
 }
 Mentos_282 {
 才不是呢！你认识一个叫Henrik Wedeker、外号Mechanic的人吗？

@@ -2498,7 +2498,8 @@ void PiratesLine_q3_loginSeaWolf(string qName)
 		pchar.Quest.PiratesLine_q3_over2.win_condition.l1 = "Location_Type";
 		pchar.Quest.PiratesLine_q3_over2.win_condition.l1.location_type = "seashore";
 		pchar.quest.PiratesLine_q3_over2.function = "PiratesLine_q3_over";
-
+		Pchar.quest.PiratesLine_q3_over3.win_condition.l1 = "MapEnter";
+		pchar.quest.PiratesLine_q3_over3.function = "PiratesLine_q3_over";
 		PiratesLine_q3_RemoveQuestMarksToTavernkeepers();
 	}
 	else
@@ -2522,6 +2523,7 @@ void PiratesLine_q3_over(string qName)
 	bool bOk = false;
 	pchar.quest.PiratesLine_q3_over1.over = "yes";
 	pchar.quest.PiratesLine_q3_over2.over = "yes";
+	pchar.quest.PiratesLine_q3_over3.over = "yes";
 	if (GetCharacterIndex("EdwardLoy") == -1)
 	{
 		//HardCoffee реф дилогов Моргана
@@ -4294,7 +4296,7 @@ void WaitressFack_Enter(string qName)
 void WaitressFack_outRoom()
 {
 	// ==> Забираем клинки, пистоли и деньги.
-	ref sld;
+	ref sld = characterFromId("BerglarWairessQuest");
 	RemoveCharacterEquip(pchar, BLADE_ITEM_TYPE);
 	RemoveCharacterEquip(pchar, GUN_ITEM_TYPE);
     RemoveCharacterEquip(pchar, MUSKET_ITEM_TYPE);
@@ -5139,7 +5141,6 @@ void EnterToFortOrangeTownLSC(string qName)
 	int i, iTemp;
 
 	StopSound(musicID, 0);
-	ReleaseSound(musicID);
 	musicID = -1;
 	KZ|Random("&Action\Fight,Action");
 
@@ -5442,7 +5443,6 @@ void NightTimeOutingLSCFunc_13(string qName)
 	int i, iTemp;
 
 	StopSound(musicID, 0);
-	ReleaseSound(musicID);
 	musicID = -1;
 	KZ|Random("&Action\Fight,Action");
 
@@ -12843,8 +12843,7 @@ void StillShip(string qName)
 	{
 		SetFantomParamFromRank(chr, sti(pchar.rank) + makeint(MOD_SKILL_ENEMY_RATE*0.65), false);
 
-		ItemTakeEquip(sld, "blade22", 1);
-		ItemTakeEquip(sld, "pistol2", 1);
+		ItemTakeEquip(sld, "blade22,pistol2", 1);
 		ItemTakeEx(sld, "bullet,GunPowder", "" + (5 + makeint(MOD_SKILL_ENEMY_RATE / 2)));
 		ItemTakeEx(sld, "potion1,potion2", "" + (1 + makeint(MOD_SKILL_ENEMY_RATE / 3)) + "," + (makeint(MOD_SKILL_ENEMY_RATE / 4)));
 	}
@@ -13018,13 +13017,10 @@ void ShipGuards()
 	{
 		SetFantomParamFromRank(chr, sti(pchar.rank)+makeint(MOD_SKILL_ENEMY_RATE*0.65), false);
 
-		ItemTakeEquip(sld, "blade30", 1);
-		ItemTakeEquip(sld, "pistol3", 1);
+		ItemTakeEquip(sld, "blade30,pistol3", 1);
 		ItemTakeEx(sld, "grapeshot,GunPowder", "" + (5 + makeint(MOD_SKILL_ENEMY_RATE / 2)));
 		ItemTakeEx(sld, "potion1,potion2", "" + (1 + makeint(MOD_SKILL_ENEMY_RATE / 3)) + "," + (makeint(MOD_SKILL_ENEMY_RATE / 4)));
 	}
-	ItemTakeEquip(sld, "blade30", 1);
-	ItemTakeEquip(sld, "pistol3", 1);
 	LAi_LoginInCaptureTown(sld, true);
 	//LAi_group_MoveCharacter(sld, slai_group); fix
     LAi_SetWarriorType(sld);
@@ -17724,7 +17720,7 @@ void PDM_ONW_RoadToSantiago()
 	AddQuestRecord("PDM_Ohota_na_vedmu", "11");
 	if (LanguageGetLanguage() == "russian") AddQuestUserData("PDM_Ohota_na_vedmu", "sSex", GetSexPhrase("","а"));
 
-	ChangeCharacterAddressGroup(pchar, PChar.location, "tables", "stay2");
+	LAi_PlaceCharInTavern(pchar);
 	LAi_SetPlayerType(pchar);
 	locCameraFollowEx(true);
 
@@ -17752,7 +17748,7 @@ void PDM_ONW_Kino_1()
 	// расставляем людей
 	TeleportCharacterToPosAy(pchar, 19.64, 18.80, -111.19, 2.50);
 	
-	sld = CharacterFromID("PDM_ONW_Inqizitor");
+	sld = GetCharacter(NPC_GenerateCharacter("PDM_ONW_Inqizitor", "priest_sp1", "man", "man_B", 20, SPAIN, -1, false));
 	sld.lifeday = 0;
 	ChangeCharacterAddressGroup(sld, "Cuba_jungle_01", "reload",  "reload1");
 	TeleportCharacterToPosAy(sld, 21.80, 18.80, -113.30, 2.50);

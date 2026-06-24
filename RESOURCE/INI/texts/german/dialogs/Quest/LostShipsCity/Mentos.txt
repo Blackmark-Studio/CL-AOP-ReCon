@@ -911,7 +911,7 @@ Mentos_280 {
 Also gut... Ich hoffe, dir sind die Angriffe aufgefallen, die in letzter Zeit in der Stadt passieren?
 }
 Mentos_281 {
-Natürlich, ich diene in der Miliz dieser Stadt. André Labor und der Milizionär – wir haben uns bereits an den Narwalen für sie gerächt.\nWas die letzten Überfälle angeht – Hill Brunner und Cécile Gallard. Alteingesessene auf dieser Insel. Älter als sie ist hier niemand.
+Natürlich, ich diene in der Miliz dieser Stadt. Andre Labor und der Milizionär – wir haben uns bereits an den Narwalen für sie gerächt.\nWas die letzten Überfälle angeht – Hill Brunner und Cécile Gallard. Alteingesessene auf dieser Insel. Älter als sie ist hier niemand.
 }
 Mentos_282 {
 Oh, aber das stimmt doch nicht! Kennst du einen gewissen Henrik Wedeker, der sich Mechanic nennt?
@@ -941,7 +941,7 @@ Mentos_290 {
 Du irrst dich.
 }
 Mentos_291 {
-John, ich muss dir etwas gestehen. Der Tod von André Labor und dem Milizionär – das war meine Schuld.
+John, ich muss dir etwas gestehen. Der Tod von Andre Labor und dem Milizionär – das war meine Schuld.
 }
 Mentos_292 {
 Was? Aber— Es wurden Beweise gefunden, die die Schuld der Narwale belegen. Deinetwegen wurde der ganze Clan ausgelöscht und das Machtgleichgewicht zerstört, während mein Volk sein Leben riskiert hat! Und jetzt erwartest du, dass ich dir nach alldem helfe?

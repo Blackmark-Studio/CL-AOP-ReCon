@@ -911,7 +911,7 @@ Mentos_280 {
 Alright then... I hope you're aware of the attacks that have been happening in town lately?
 }
 Mentos_281 {
-Of course, I serve in this Town’s militia. André Labor and the militiaman—we’ve already avenged them against the narwhals.\nAs for recent attacks—Hill Brunner and Cécile Gallard. Old-timers on this island. You won’t find anyone older than them around here.
+Of course, I serve in this Town’s militia. Andre Labor and the militiaman—we’ve already avenged them against the narwhals.\nAs for recent attacks—Hill Brunner and Cécile Gallard. Old-timers on this island. You won’t find anyone older than them around here.
 }
 Mentos_282 {
 Oh, but that's not true! Do you know a certain Henrik Wedeker, who goes by the alias Mechanic?
@@ -941,7 +941,7 @@ Mentos_290 {
 You're mistaken.
 }
 Mentos_291 {
-John, there’s something I need to confess. The deaths of André Labor and the militiaman—they were my doing.
+John, there’s something I need to confess. The deaths of Andre Labor and the militiaman—they were my doing.
 }
 Mentos_292 {
 What? But— Evidence was found proving the narwhals’ guilt. Because of you, the whole clan was wiped out and the balance of power shattered, while my people risked their lives! And now you expect me to help you after all that?

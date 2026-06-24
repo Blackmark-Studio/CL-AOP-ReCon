@@ -703,7 +703,7 @@ Barmen_201 {
 O que aconteceu?
 }
 Barmen_202_m {
-Hmm... Bem, eu falei com o carpinteiro, aquele Andre Labor, e ele me pediu para ir até a cabine da corveta 'Protector'. Então fui lá, só esperando por ele, sem desconfiar de nada... E aí esse Andre aparece com um miliciano para conversar comigo! Tive que mandar todos eles para o outro mundo.
+Hmm... Bem, eu falei com o carpinteiro, aquele André Labor, e ele me pediu para ir até a cabine da corveta 'Protector'. Então fui lá, só esperando por ele, sem desconfiar de nada... E aí esse Andre aparece com um miliciano para conversar comigo! Tive que mandar todos eles para o outro mundo.
 }
 Barmen_202_f {
 Hmm... Bem, eu falei com o carpinteiro, aquele André Labor, e ele me pediu para ir até a cabine da corveta 'Protector'. Então eu fui lá, só esperando por ele, sem desconfiar de nada... E aí esse André aparece com um miliciano para conversar comigo! Tive que mandar todos eles para o outro mundo.

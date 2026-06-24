@@ -336,7 +336,7 @@ Mayor_77 {
 In der Kajüte des Protektors.
 }
 Mayor_78 {
-Wusstest du, dass dort ein Polizist und der Zimmermann André Labor ermordet wurden?
+Wusstest du, dass dort ein Polizist und der Zimmermann Andre Labor ermordet wurden?
 }
 Mayor_79_m {
 Verstanden...

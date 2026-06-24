@@ -57,14 +57,14 @@ void DoCharacterUsedItem(ref chref, string itmID)
 		LAi_UseAtidoteBottle(chref);
 		if (bPchar)
 		{
-			Log_SetStringToLog( XI_ConvertString("You are cured from poison") );
+			Log_SetStringToLog(XI_ConvertString("You are cured from poison"));
 		}
 		else
 		{
 			if (ShowCharString())
 				Log_Chr(chref, XI_ConvertString("are cured from poisonLog"));
             else
-				Log_SetStringToLog(GetFullName(chref) + XI_ConvertString("are cured from poison") );
+				Log_SetStringToLog(GetFullName(chref) + XI_ConvertString("are cured from poison"));
 		}
 	}
 
@@ -180,7 +180,6 @@ int FindPotionTypesQty(ref chref)
 	}
 	return n;
 }
-
 
 int UseBestPotion(ref chref, bool needAntidote)
 {

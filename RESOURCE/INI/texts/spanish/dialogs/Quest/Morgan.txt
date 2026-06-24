@@ -965,7 +965,7 @@ Morgan_248_f {
 ¿Qué, crees que he perdido la cabeza? ¡Por supuesto que no! ¡Ella está tramando algo, quiere tenderme una trampa!
 }
 Morgan_249 {
-Muy bien, Goodly, no te hagas el inocente. Lo sé todo. Hablé con personas cercanas a ti—me confirmaron que fuiste tú quien planeó deshacerse de @<GetMainCharacterNameGen> y Avery. Sabías que no podías enfrentarte a ninguno de los dos solo, así que tramaste que uno eliminara al otro. También sabías que yo vengaría la muerte de cualquiera de ellos, así que el que sobreviviera tampoco viviría mucho.\nEso ya está claro. Ahora dime—¿quién te pagó por esta artimaña? ¿Quién quería que mi gente se enfrentara entre sí? ¿Y cuánto recibiste por tu ingenioso truco?
+Muy bien, Goodly, no te hagas el inocente. Lo sé todo. Hablé con personas cercanas a ti—me confirmaron que fuiste tú quien planeó deshacerse de @<GetMainCharacterNameDat> y Avery. Sabías que no podías enfrentarte a ninguno de los dos solo, así que tramaste que uno eliminara al otro. También sabías que yo vengaría la muerte de cualquiera de ellos, así que el que sobreviviera tampoco viviría mucho.\nEso ya está claro. Ahora dime—¿quién te pagó por esta artimaña? ¿Quién quería que mi gente se enfrentara entre sí? ¿Y cuánto recibiste por tu ingenioso truco?
 }
 Morgan_250_m {
 ¡Almirante, esto es un malentendido! ¡Me han tendido una trampa! Me conoce desde hace años, ¿de verdad va a creerle a ese mocoso antes que a mí? ¡Podría estrangularlo con mis propias manos!
@@ -1001,7 +1001,7 @@ Morgan_257 {
 Primero, hay que terminar el trabajo...
 }
 Morgan_258 {
-Aquí tienes tu dinero. ¡Oliver! Trae 35,000 piastras para el Capitán @<GetMainCharacterNameGen>. Bueno, hoy la suerte estuvo de tu lado—hay un sinvergüenza menos en el mundo.
+Aquí tienes tu dinero. ¡Oliver! Trae 35,000 piastras para el Capitán @<GetMainCharacterNameDat>. Bueno, hoy la suerte estuvo de tu lado—hay un sinvergüenza menos en el mundo.
 }
 Morgan_259_m {
 Sí, así es. Pero me preguntaba, ¿qué habría pasado si no hubieras hecho la investigación?

@@ -1036,11 +1036,12 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 			Pchar.quest.ToMansfield_IntoTheTown.win_condition = "ToMansfield_IntoTheTown";
 			SetLocationCapturedState("LaVega_town", true);
 			//--> огонь и пламень
-			locations[FindLocation("LaVega_town")].models.always.town = "LaVega_quest";
-			locations[FindLocation("LaVega_town")].models.always.locatorsl2 = "LaVega_1_quest";
-			locations[FindLocation("LaVega_town")].models.always.locatorsl3 = "LaVega_locators_quest";
-			locations[FindLocation("LaVega_town")].models.day.charactersPatch = "LaVega_patch_day_quest";
-			locations[FindLocation("LaVega_town")].models.night.charactersPatch = "LaVega_patch_night_quest";
+			i = FindLocation("LaVega_town");
+			locations[i].models.always.town = "LaVega_quest";
+			locations[i].models.always.locatorsl2 = "LaVega_1_quest";
+			locations[i].models.always.locatorsl3 = "LaVega_locators_quest";
+			locations[i].models.day.charactersPatch = "LaVega_patch_day_quest";
+			locations[i].models.night.charactersPatch = "LaVega_patch_night_quest";
 			//<-- огонь и пламень
 			Log_QuestInfo("Форт буканьеров пуст и горит.");
 		break;
@@ -1073,20 +1074,34 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 			AddLandQuestmark_Main_WithCondition(npchar, "Eng_Line", "StateLines_Waiting_QuestMarkCondition");
 			AddMapQuestMark_Major("PortRoyal_town", "Eng_Line", "StateLines_Waiting_WDMQuestMarkCondition");
 			//--> огонь и пламень убираем
-			locations[FindLocation("LaVega_town")].models.always.town = "LaVega";
-			locations[FindLocation("LaVega_town")].models.always.locatorsl2 = "LaVega_1";
-			locations[FindLocation("LaVega_town")].models.always.locatorsl3 = "LaVega_locators";
-			locations[FindLocation("LaVega_town")].models.day.charactersPatch = "LaVega_patch_day";
-			locations[FindLocation("LaVega_town")].models.night.charactersPatch = "LaVega_patch_night";
+			i = FindLocation("LaVega_town");
+			locations[i].models.always.town = "LaVega";
+			locations[i].models.always.locatorsl2 = "LaVega_1";
+			locations[i].models.always.locatorsl3 = "LaVega_locators";
+			locations[i].models.day.charactersPatch = "LaVega_patch_day";
+			locations[i].models.night.charactersPatch = "LaVega_patch_night";
 			//<-- огонь и пламень
 			// ==> Мэнсфилд убит, теперь он будет Алистером Гудом.
 			sld = characterFromID("Edward Mansfield");
-			LAi_SetStayTypeNoGroup(sld);
 			sld.model = "DEDnoName";
 			sld.name = FindPersonalName("Edward_Mansfield2_name");
 			sld.lastname = FindPersonalName("Edward_Mansfield2_lastname");
 			SendMessage(sld, "lss", MSG_CHARACTER_SETMODEL, sld.model, sld.model.animation);
 			FaceMaker(sld);
+
+			sld.greeting = "Gr_HeadPirates";
+			sld.nation = PIRATE;
+			sld.quest.type = "hovernor";
+			SetRandSPECIAL(sld);
+			SetSelfSkill(sld, 90, 90, 90, 60, 70);
+			sld.watchBoxes = true;
+			sld.standUp = true; //вставать и нападать на врага
+			LAi_SetHuberType(sld);
+			LAi_RemoveLoginTime(sld);
+			LAi_group_MoveCharacter(sld, "PIRATE_CITIZENS");
+			LAi_SetImmortal(sld, true);
+			DeleteAttribute(sld, "Dialog.TempNode");
+
 			QuestSetCurrentNode("Edward Mansfield", "No_Mansfield_first_time");
 			ChangeCharacterAddressGroup(&characters[GetCharacterIndex("Edward Mansfield")], "LaVega_townhall", "sit", "sit1");
 			AddCharacterExpToSkill(pchar, "Fortune", 500);

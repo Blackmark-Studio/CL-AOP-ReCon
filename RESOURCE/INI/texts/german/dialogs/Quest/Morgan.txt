@@ -965,7 +965,7 @@ Morgan_248_f {
 Was, glaubst du, ich habe den Verstand verloren? Natürlich nicht! Sie führt doch etwas im Schilde und will mir eine Falle stellen!
 }
 Morgan_249 {
-Na gut, Goodly, spiel nicht den Unschuldigen. Ich weiß über alles Bescheid. Ich habe Leute aus deinem Umfeld befragt – sie haben bestätigt, dass du es warst, der den Plan gefasst hat, @<GetMainCharacterNameGen> und Avery loszuwerden. Du wusstest, dass du es mit keinem von beiden allein aufnehmen konntest, also hast du sie gegeneinander ausgespielt! Und dir war klar, dass ich den Tod von jedem von ihnen rächen würde, also hätte auch der Überlebende nicht lange gelebt.\nSo weit ist alles klar. Jetzt sag mir – wer hat dich für diesen Plan bezahlt? Wer wollte, dass meine Leute sich gegenseitig bekämpfen? Und wie viel hast du für deinen schlauen kleinen Trick bekommen?
+Na gut, Goodly, spiel nicht den Unschuldigen. Ich weiß über alles Bescheid. Ich habe Leute aus deinem Umfeld befragt – sie haben bestätigt, dass du es warst, der den Plan gefasst hat, @<GetMainCharacterNameDat> und Avery loszuwerden. Du wusstest, dass du es mit keinem von beiden allein aufnehmen konntest, also hast du sie gegeneinander ausgespielt! Und dir war klar, dass ich den Tod von jedem von ihnen rächen würde, also hätte auch der Überlebende nicht lange gelebt.\nSo weit ist alles klar. Jetzt sag mir – wer hat dich für diesen Plan bezahlt? Wer wollte, dass meine Leute sich gegenseitig bekämpfen? Und wie viel hast du für deinen schlauen kleinen Trick bekommen?
 }
 Morgan_250_m {
 Admiral, das ist ein Missverständnis! Man hat mir etwas angehängt! Sie kennen mich seit Jahren – wollen Sie diesem Bengel wirklich mehr glauben als mir?! Ich könnte ihm eigenhändig den Hals umdrehen!
@@ -1001,7 +1001,7 @@ Morgan_257 {
 Zuerst muss die Arbeit erledigt werden...
 }
 Morgan_258 {
-Hier, nimm dein Geld. Oliver! Bring 35.000 Piaster für Kapitän @<GetMainCharacterNameGen>. Nun gut, heute war dir das Glück hold – ein Halunke weniger auf der Welt.
+Hier, nimm dein Geld. Oliver! Bring 35.000 Piaster für Kapitän @<GetMainCharacterNameDat>. Nun gut, heute war dir das Glück hold – ein Halunke weniger auf der Welt.
 }
 Morgan_259_m {
 Ja, das stimmt. Aber ich habe mich gefragt, was passiert wäre, wenn du die Untersuchung nicht durchgeführt hättest.

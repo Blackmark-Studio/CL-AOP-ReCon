@@ -1,7 +1,7 @@
 void ProcessDialogEvent()
 {
 	bool bOk;
-	int i, iTemp;
+	int i, iTemp = GetCountFighters();
 	string sTitle, sGroup, sTemp, sText;
 	float locx, locy, locz;
 	ref NPChar, rItem, rChar, rLoc;
@@ -22,7 +22,6 @@ void ProcessDialogEvent()
 		/////	ВСТРЕЧА С ПАТРУЛЬНЫМИ
 		case "First time patrol":
 			PlaySpeech(pchar, GetSexCase(pchar, "Enc_Waiker", "Enc_Alert", "Enc_Waiker"));
-			iTemp = GetCountFighters();
 
 			if (GetCharacterEquipSuitID(pchar) == "Suit_1" && iTemp < 1)
 			{
@@ -54,6 +53,7 @@ void ProcessDialogEvent()
 			link.l1.go = "Patrol_1_talk_end";
 		break;
 
+		///// ВЕТКА №2
 		case "Patrol_1_talk_1b":
 			if (iTemp > 0)
 				dialog.text = StringFromKey("Secret_Fort_9");
@@ -63,7 +63,6 @@ void ProcessDialogEvent()
 			link.l1.go = "Patrol_1_talk_2b";
 		break;
 
-		///// ВЕТКА №2
 		case "Patrol_1_talk_2b":
 			dialog.text = StringFromKey("Secret_Fort_12");
 			link.l1 = StringFromKey("Secret_Fort_13");
@@ -513,7 +512,7 @@ void ProcessDialogEvent()
 		break;
 
 		////////////////////////////////////////////////////////////////////////////////////////
-		//		БРОДЯГА В АРЕНАЛЕ ФОРТА
+		//		БРОДЯГА В АРСЕНАЛЕ ФОРТА
 		////////////////////////////////////////////////////////////////////////////////////////
 		case "First time guard":
 			NextDiag.TempNode = "Second time guard";
@@ -619,7 +618,7 @@ void StoreOfficersLSC()
 
 	ref sld;
 	string sTemp, sText = "init";
-	int i, j, idx, iTemp = 0;
+	int i, j, idx;
 	bool bFighter;
 
 	string sLocatorGoto, sLocatorSit, arLocatorsGoto[2], arLocatorsSit[2];
@@ -671,7 +670,7 @@ void StoreOfficersLSC()
 				LAi_SetBarmanType(sld);
 				ChangeCharacterAddressGroup(sld, "Secret_Fort_Chapel", "barmen", "stay");
 			}
-			else if (bFighter || rand(3) == 2) // > бойцы всегда гуляют на свежем воздухе, а прочие гуляют лишь с шансом 25%
+			else if (bFighter || rand(1)) // > бойцы всегда гуляют на свежем воздухе, а прочие гуляют лишь с шансом 50% TODO > чек с максимумом офицеров
 			{
 				LAi_SetWarriorTypeNoGroup(sld);
 				ChangeCharacterAddressGroup(sld, "Secret_Fort", "goto", sLocatorGoto);
@@ -689,8 +688,10 @@ void StoreOfficersLSC()
 		else
 		{
 			//остальные просто куда-то отошли по делам
-			if (CheckAttribute(sld, "HiredDate")) TEV.StoreLSC.(sTemp).isOfficer = 1;
-			else TEV.StoreLSC.(sTemp).isOfficer = 0;
+			if (CheckAttribute(sld, "HiredDate"))
+				TEV.StoreLSC.(sTemp).isOfficer = 1;
+			else
+				TEV.StoreLSC.(sTemp).isOfficer = 0;
 			ChangeCharacterAddress(sld, "none", "");
 		}
 		RemovePassenger(pchar, sld);
@@ -743,5 +744,4 @@ void TakeBarkasLSC()
 	SetCrewQuantity(pchar, 0);
 	RecalculateCargoLoad(pchar);
 	pchar.location.from_sea = "Shore_ship2"; // корабль в бухте
-	ref rShip = &RealShips[sti(pchar.Ship.Type)];
 }

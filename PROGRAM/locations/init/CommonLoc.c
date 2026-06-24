@@ -151,7 +151,7 @@ int LocationInitCommonLoc(int n)
 	locations[n].id = "CommonHut";
 	locations[n].filespath.models = "locations\inside\Hut";
 	locations[n].id.label = "House";
-	locations[n].image = "loading\inside\hut.tga";
+	locations[n].image = "loading\inside\hut1.tga";
 	locations[n].MustSetReloadBack = true;
 	//Town sack
 	locations[n].townsack = "";

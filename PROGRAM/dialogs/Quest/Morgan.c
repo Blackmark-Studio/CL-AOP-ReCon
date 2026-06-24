@@ -1256,7 +1256,7 @@ void ProcessDialogEvent()
 
 		case "PL_Q5_talking_2":
 			sld = characterFromId("Blaze");
-			dialog.text = StringFromKey("Morgan_249", GetMainCharacterNameGen());
+			dialog.text = StringFromKey("Morgan_249", GetMainCharacterNameDat());
 			link.l1 = StringFromKey("Morgan_250", sld);
 			link.l1.go = "exit";
 			NextDiag.TempNode = "PL_Q5_end";
@@ -1289,7 +1289,7 @@ void ProcessDialogEvent()
 		break;
 
 		case "PL_Q5_afterFight":
-			dialog.text = StringFromKey("Morgan_258", GetMainCharacterNameGen());
+			dialog.text = StringFromKey("Morgan_258", GetMainCharacterNameDat());
 			link.l1 = StringFromKey("Morgan_259", pchar);
 			link.l1.go = "PL_Q5_afterFight_1";
 			AddMoneyToCharacter(PChar, 35000);

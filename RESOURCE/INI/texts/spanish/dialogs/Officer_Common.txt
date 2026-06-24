@@ -827,10 +827,10 @@ Officer_Common_214 {
 ¿No estás pidiendo demasiado?
 }
 Officer_Common_215_m {
-Estoy de acuerdo. Considérate parte de la tripulación.
+@<Agree>. Considérate parte de la tripulación.
 }
 Officer_Common_215_f {
-Estoy de acuerdo, preciosa. Considérate parte de la tripulación.
+@<Agree>. Considérate parte de la tripulación.
 }
 Officer_Common_216 {
 No vales tanto dinero. Adiós.
