@@ -1,26 +1,26 @@
 Common_NotBlade_1 {
-把你的武器收起来！
+把你的武器收起来！ 
 }
 Common_NotBlade_2 {
-行吧。
+行吧。 
 }
 Common_NotBlade_3 {
-我还是把它用在正道上吧。
+我还是把它用在正道上吧。 
 }
 Common_NotBlade_4 {
-我命令你立刻收起武器！
+我命令你立刻收起武器！ 
 }
 Common_NotBlade_5 {
-你拿着刀乱晃什么？！赶紧把武器收起来！
+你拿着刀乱晃什么？ ！ 赶紧把武器收起来！ 
 }
 Common_NotBlade_6 {
-喂，@<GetAddress_Form>，别吓到大家！把武器收起来。
+喂， @<GetAddress_Form>， 别吓到大家！ 把武器收起来。 
 }
 Common_NotBlade_7 {
 @<LinkRandPhrase>
 }
 Common_NotBlade_8 {
-好吧，我收起来了……
+好吧， 我收起来了…… 
 }
 Common_NotBlade_9_m {
 已经收起来了
@@ -29,202 +29,202 @@ Common_NotBlade_9_f {
 已经收起来了
 }
 Common_NotBlade_10 {
-听你的……
+听你的…… 
 }
 Common_NotBlade_11 {
 @<LinkRandPhrase>
 }
 Common_NotBlade_12 {
-想都别想！
+想都别想！ 
 }
 Common_NotBlade_13 {
-我现在就用上它！
+我现在就用上它！ 
 }
 Common_NotBlade_14 {
-等时候到了，我会把它拿走。
+等时候到了， 我会把它拿走。 
 }
 Common_NotBlade_15 {
 @<LinkRandPhrase>
 }
 Common_NotBlade_16 {
-我命令你立刻收起武器！
+我命令你立刻收起武器！ 
 }
 Common_NotBlade_17 {
-你在堡垒里拿着武器乱跑是想干嘛？赶紧把武器收起来！
+你在堡垒里拿着武器乱跑是想干嘛？ 赶紧把武器收起来！ 
 }
 Common_NotBlade_18_m {
-喂，伙计，别闹事了！把武器收起来。
+喂， 伙计， 别闹事了！ 把武器收起来。 
 }
 Common_NotBlade_18_f {
-喂，姑娘，别闹事了！把武器收起来。
+喂， 姑娘， 别闹事了！ 把武器收起来。 
 }
 Common_NotBlade_19 {
 @<LinkRandPhrase>
 }
 Common_NotBlade_20 {
-行。
+行。 
 }
 Common_NotBlade_21 {
-行。
+行。 
 }
 Common_NotBlade_22 {
-听你的……
+听你的…… 
 }
 Common_NotBlade_23 {
 @<LinkRandPhrase>
 }
 Common_NotBlade_24 {
-想都别想！
+想都别想！ 
 }
 Common_NotBlade_25 {
-继续做梦吧……
+继续做梦吧…… 
 }
 Common_NotBlade_26 {
-等太阳从西边出来吧。
+等太阳从西边出来吧。 
 }
 Common_NotBlade_27 {
 @<LinkRandPhrase>
 }
 Common_NotBlade_28 {
-在Des Moines，别拔着武器到处走。
+在得梅因， 别拔着武器到处走。 
 }
 Common_NotBlade_29 {
-行。
+行。 
 }
 Common_NotBlade_30 {
-行。
+行。 
 }
 Common_NotBlade_31 {
-如你所愿……
+如你所愿…… 
 }
 Common_NotBlade_32 {
 @<LinkRandPhrase>
 }
 Common_NotBlade_33_m {
-拿着武器跑的时候，小心点拐角。别吓到我，俺可容易紧张……
+拿着武器跑的时候， 小心点拐角。 别吓到我， 我可容易紧张…… 
 }
 Common_NotBlade_33_f {
-我不喜欢有人在我面前拿着武器晃来晃去，这让我害怕……
+我不喜欢有人在我面前拿着武器晃来晃去， 这让我害怕…… 
 }
 Common_NotBlade_34_m {
-明白了。
+明白了。 
 }
 Common_NotBlade_34_f {
-明白了。
+明白了。 
 }
 Common_NotBlade_35 {
-我收起来了。
+我收起来了。 
 }
 Common_NotBlade_36 {
 @<RandPhraseSimple>
 }
 Common_NotBlade_37 {
-别烦我！
+别烦我！ 
 }
 Common_NotBlade_38 {
-哎，等一下……
+哎， 等一下…… 
 }
 Common_NotBlade_39 {
-别打扰我。
+别打扰我。 
 }
 Common_NotBlade_40 {
 @<LinkRandPhrase>
 }
 Common_NotBlade_41 {
-想都别想！
+想都别想！ 
 }
 Common_NotBlade_42 {
-继续做梦吧……
+继续做梦吧…… 
 }
 Common_NotBlade_43 {
-等太阳从西边出来吧。
+等太阳从西边出来吧。 
 }
 Common_NotBlade_44 {
 @<LinkRandPhrase>
 }
 Common_NotBlade_45_m {
-听着，作为本地居民，我劝你别在这儿拔着刀走来走去。
+听着， 作为本地居民， 我劝你别在这儿拔着刀走来走去。 
 }
 Common_NotBlade_45_f {
-你知道吧，作为这个城镇的居民，我希望你别在这里拔刀走来走去。
+你知道吧， 作为这个城镇的居民， 我希望你别在这里拔刀走来走去。 
 }
 Common_NotBlade_46 {
-行。
+行。 
 }
 Common_NotBlade_47 {
-行。
+行。 
 }
 Common_NotBlade_48 {
-如你所愿……
+如你所愿…… 
 }
 Common_NotBlade_49 {
 @<LinkRandPhrase>
 }
 Common_NotBlade_50_m {
-拿着武器跑的时候，拐角处小心点。别吓到我……
+拿着武器跑的时候， 拐角处小心点。 别吓到我…… 
 }
 Common_NotBlade_50_f {
-我不喜欢有人在我面前拿着武器晃来晃去，这让我害怕……
+我不喜欢有人在我面前拿着武器晃来晃去， 这让我害怕…… 
 }
 Common_NotBlade_51_m {
-明白了。
+明白了。 
 }
 Common_NotBlade_51_f {
-明白了。
+明白了。 
 }
 Common_NotBlade_52 {
-我收起来了。
+我收起来了。 
 }
 Common_NotBlade_53 {
 @<RandPhraseSimple>
 }
 Common_NotBlade_54 {
-别烦我！
+别烦我！ 
 }
 Common_NotBlade_55 {
-哎，等等……
+哎， 等等…… 
 }
 Common_NotBlade_56 {
-别打扰我。
+别打扰我。 
 }
 Common_NotBlade_57 {
 @<LinkRandPhrase>
 }
 Common_NotBlade_58 {
-想都别想！
+想都别想！ 
 }
 Common_NotBlade_59 {
-继续做梦吧……
+继续做梦吧…… 
 }
 Common_NotBlade_60 {
-等太阳从西边出来吧。
+等太阳从西边出来吧。 
 }
 Common_NotBlade_61 {
 @<LinkRandPhrase>
 }
 Common_NotBlade_62 {
-船长，你这是闹哪样？！快把武器收起来，别惹事！
+船长， 你这是闹哪样？ ！ 快把武器收起来， 别惹事！ 
 }
 Common_NotBlade_63 {
-行。
+行。 
 }
 Common_NotBlade_64 {
-行。
+行。 
 }
 Common_NotBlade_65 {
-别担心，我已经在收拾了……
+别担心， 我已经在收拾了…… 
 }
 Common_NotBlade_66 {
 @<LinkRandPhrase>
 }
 Common_NotBlade_67 {
-别烦我。
+别烦我。 
 }
 Common_NotBlade_68 {
-你先等等。
+你先等等。 
 }
 Common_NotBlade_69 {
-不用你来指教。
+不用你来指教。 
 }
 Common_NotBlade_70 {
 @<LinkRandPhrase>

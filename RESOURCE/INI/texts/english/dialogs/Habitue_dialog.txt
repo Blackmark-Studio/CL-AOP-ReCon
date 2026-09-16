@@ -982,3 +982,9 @@ Ah, you’re not alone, I see! Well then — you’ll have company in hell!
 Habitue_dialog_295 {
 @<RandPhraseSimple>
 }
+Habitue_dialog_296 {
+Girl, bring me another drink.
+}
+Habitue_dialog_297 {
+You’ll do without.
+}

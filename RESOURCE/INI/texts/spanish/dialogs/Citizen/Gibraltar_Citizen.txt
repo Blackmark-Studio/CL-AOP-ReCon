@@ -1,0 +1,30 @@
+Gibraltar_Citizen_1 {
+¿Qué preguntas?
+}
+Gibraltar_Citizen_2 {
+¿Qué quieres?
+}
+Gibraltar_Citizen_3 {
+@<RandPhraseSimple>
+}
+Gibraltar_Citizen_4_m {
+He cambiado de opinión...
+}
+Gibraltar_Citizen_4_f {
+He cambiado de opinión...
+}
+Gibraltar_Citizen_5 {
+No tengo nada que decir por ahora.
+}
+Gibraltar_Citizen_6 {
+@<RandPhraseSimple>
+}
+Gibraltar_Citizen_7 {
+¿Estoy trabajando para una red secreta de espionaje de @<NationNameGenitive>?
+}
+Gibraltar_Citizen_8 {
+Está bien... nos vemos.
+}
+Gibraltar_Citizen_9 {
+Entonces, otra pregunta.
+}

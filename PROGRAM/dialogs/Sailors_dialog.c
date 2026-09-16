@@ -138,6 +138,7 @@ void ProcessDialogEvent()
 			CloseQuestHeader("CaptainComission2");
 			ChangeOfficersLoyality("bad_all", 1);
 			ChangeCharacterReputationABS(pchar, 4);
+			pchar.quest.CaptainComission_CapEscapeCleanup.over = "yes";
 			DeleteAttribute(pchar, "TownEscape");
 			DeleteAttribute(pchar, "GenQuest.CaptainComission.canSpeakBoatswain");
 			DeleteAttribute(pchar, "GenQuest.CaptainComission");

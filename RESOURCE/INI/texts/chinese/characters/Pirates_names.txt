@@ -1,360 +1,360 @@
-Pirates_names_1 {Alan the Butcher}
-Pirates_names_2 {Alana the Butcher}
-Pirates_names_3 {To Alan the Butcher}
-Pirates_names_4 {Alana the Butcher}
-Pirates_names_5 {Alan the Butcher}
-Pirates_names_6 {To Alan the Butcher}
-Pirates_names_7 {Alex the Grim}
-Pirates_names_8 {Alexa the Grim}
-Pirates_names_9 {To Alex the Fierce}
-Pirates_names_10 {Alexa the Grim}
-Pirates_names_11 {by Alex the Grim}
-Pirates_names_12 {To Alexei the Fierce}
-Pirates_names_13 {Armand the Grey}
-Pirates_names_14 {Arman the Grey}
-Pirates_names_15 {To Armand the Grey}
-Pirates_names_16 {Arman the Grey}
-Pirates_names_17 {by Armand the Grey}
-Pirates_names_18 {Armand Serom}
-Pirates_names_19 {Billy Anchor}
-Pirates_names_20 {Billy Anchors}
-Pirates_names_21 {Billy Anchor}
-Pirates_names_22 {Billy Anchors}
-Pirates_names_23 {Billy Anchor}
-Pirates_names_24 {Billy Anchor}
-Pirates_names_25 {Bonny Three-Feet}
-Pirates_names_26 {Bonny Three-Feet}
-Pirates_names_27 {Bonny Three-Feet}
-Pirates_names_28 {Bonny Three-Feet}
-Pirates_names_29 {Bonny Three-Feet}
-Pirates_names_30 {Bonny Three-Feet}
-Pirates_names_31 {Bruno Kolpak}
-Pirates_names_32 {Bruno Kolpaka}
-Pirates_names_33 {Bruno Kolpak}
-Pirates_names_34 {Bruno Kolpaka}
-Pirates_names_35 {Bruno Kolpakom}
-Pirates_names_36 {Bruno Kolpak}
-Pirates_names_37 {Guillermo the Rover}
-Pirates_names_38 {Guillermo the Rover}
-Pirates_names_39 {Guillermo the Rover}
-Pirates_names_40 {Guillermo the Rover}
-Pirates_names_41 {Guillermo the Rover}
-Pirates_names_42 {Guillermo the Rover}
-Pirates_names_43 {Jacob Hammer}
-Pirates_names_44 {Jacob Hammer}
-Pirates_names_45 {To Jacob Hammer}
-Pirates_names_46 {Jacob Hammer}
-Pirates_names_47 {by Jacob Hammer}
-Pirates_names_48 {Jacob Hammer}
-Pirates_names_49 {Johnny Sledge}
-Pirates_names_50 {Johnny Sledgehammers}
-Pirates_names_51 {Johnny the Sledgehammer}
-Pirates_names_52 {Johnny the Sledge}
-Pirates_names_53 {Johnny the Sledgehammer}
-Pirates_names_54 {Johnny the Sledge}
-Pirates_names_55 {Joshua the Heretic}
-Pirates_names_56 {Joshua the Heretic}
-Pirates_names_57 {Joshua the Heretic}
-Pirates_names_58 {Joshua the Heretic}
-Pirates_names_59 {Joshua the Heretic}
-Pirates_names_60 {Joshua the Heretic}
-Pirates_names_61 {Diego Coyote}
-Pirates_names_62 {Diego Coyote}
-Pirates_names_63 {Diego Coyote}
-Pirates_names_64 {Diego Coyote}
-Pirates_names_65 {Diego the Coyote}
-Pirates_names_66 {Diego Coyote}
-Pirates_names_67 {Jean the Butcher}
-Pirates_names_68 {Jeanne the Butcher}
-Pirates_names_69 {To Jean the Butcher}
-Pirates_names_70 {Jeanne the Butcher}
-Pirates_names_71 {Jean the Butcher}
-Pirates_names_72 {To Jean the Butcher}
-Pirates_names_73 {Sighted Billy}
-Pirates_names_74 {Sighted Billy}
-Pirates_names_75 {To Sighted Billy}
-Pirates_names_76 {Sighted Billy}
-Pirates_names_77 {Sighted Billy}
-Pirates_names_78 {Sighted Billy}
-Pirates_names_79 {Horses Two Peso}
-Pirates_names_80 {Horses Two Peso}
-Pirates_names_81 {Horses Two Peso}
-Pirates_names_82 {Horses Two Peso}
-Pirates_names_83 {Horses Two Peso}
-Pirates_names_84 {Horses Two Peso}
-Pirates_names_85 {Smoked Willy}
-Pirates_names_86 {Smoked Willie}
-Pirates_names_87 {To Smoked Willy}
-Pirates_names_88 {Smoked Willie}
-Pirates_names_89 {Smoked Willie}
-Pirates_names_90 {Smoked Willie}
-Pirates_names_91 {Christophe Two Pairs}
-Pirates_names_92 {Christophe Two Pairs}
-Pirates_names_93 {Christophe Two Pairs}
-Pirates_names_94 {Christophe Two Pairs}
-Pirates_names_95 {By Christoph Two-Pairs}
-Pirates_names_96 {Christophe Two Pairs}
-Pirates_names_97 {Manuel the Handsome}
-Pirates_names_98 {Manuel the Handsome}
-Pirates_names_99 {To Manuel the Handsome}
-Pirates_names_100 {Manuel the Handsome}
-Pirates_names_101 {Manuel the Handsome}
-Pirates_names_102 {Manuele the Handsome}
-Pirates_names_103 {Marvin Tsatsa}
-Pirates_names_104 {Marvina Tsatsi}
-Pirates_names_105 {To Marvin Tsatsa}
-Pirates_names_106 {Marvina Tsatsu}
-Pirates_names_107 {Marvin Tsatsa}
-Pirates_names_108 {To Marvin Tsatsa}
-Pirates_names_109 {Matt Pin}
-Pirates_names_110 {Meta Bulavki}
-Pirates_names_111 {To Matt the Pin}
-Pirates_names_112 {Meta the Pin}
-Pirates_names_113 {Matt the Pin}
-Pirates_names_114 {Mate Bulavka}
-Pirates_names_115 {Motley Jack}
-Pirates_names_116 {Patchwork Jack}
-Pirates_names_117 {To Motley Jack}
-Pirates_names_118 {Patchwork Jack}
-Pirates_names_119 {By Motley Jack}
-Pirates_names_120 {Patchwork Jack}
-Pirates_names_121 {Beggar Bruce}
-Pirates_names_122 {Bruce’s Beggars}
-Pirates_names_123 {To Beggar Bruce}
-Pirates_names_124 {Beggar Bruce}
-Pirates_names_125 {As Beggar Bruce}
-Pirates_names_126 {To Beggar Bruce}
-Pirates_names_127 {Prospero the Wise}
-Pirates_names_128 {Prospero the Wise}
-Pirates_names_129 {To Prospero the Wise}
-Pirates_names_130 {To Prospero the Wise}
-Pirates_names_131 {Prospero the Wise}
-Pirates_names_132 {Prospero the Wise}
-Pirates_names_133 {Pierre Razinya}
-Pirates_names_134 {Pierre Razini}
-Pirates_names_135 {To Pierre Razine}
-Pirates_names_136 {Pierre Razin}
-Pirates_names_137 {by Pierre Razin}
-Pirates_names_138 {Pierre Razine}
-Pirates_names_139 {Richie Splitlip}
-Pirates_names_140 {Richie the Lip}
-Pirates_names_141 {Richie the Lip}
-Pirates_names_142 {Richie the Lip}
-Pirates_names_143 {Richie the Lip-Splitter}
-Pirates_names_144 {Richie the Lip}
-Pirates_names_145 {Robert Barrel}
-Pirates_names_146 {Roberta Bochki}
-Pirates_names_147 {To Robert Bochka}
-Pirates_names_148 {Roberta the Barrel}
-Pirates_names_149 {By Robert Barrel}
-Pirates_names_150 {Robert Boake}
-Pirates_names_151 {Rody the Seasoned}
-Pirates_names_152 {Born of the Old Salt}
-Pirates_names_153 {To the Old Salt’s kin}
-Pirates_names_154 {Born of the Old Salt}
-Pirates_names_155 {Born a Seasoned Sailor}
-Pirates_names_156 {In the Old Salt’s Lineage}
-Pirates_names_157 {Blue Jack}
-Pirates_names_158 {Blue Jack}
-Pirates_names_159 {To Blue Jack}
-Pirates_names_160 {Blue Jack}
-Pirates_names_161 {Blue Jack}
-Pirates_names_162 {Blue Jack}
-Pirates_names_163 {Steve Poker}
-Pirates_names_164 {Steve the Poker}
-Pirates_names_165 {To Steve the Cooper}
-Pirates_names_166 {Steve the Poker}
-Pirates_names_167 {Steve the Poker}
-Pirates_names_168 {To Steve the Poker}
-Pirates_names_169 {Tony the Alligator}
-Pirates_names_170 {Tony the Alligator}
-Pirates_names_171 {To Tony the Alligator}
-Pirates_names_172 {Tony the Alligator}
-Pirates_names_173 {Tony the Alligator}
-Pirates_names_174 {Tony Alligatore}
-Pirates_names_175 {Smart Cesare}
-Pirates_names_176 {Cesare the Clever}
-Pirates_names_177 {To the clever Cesare}
-Pirates_names_178 {Cesare the Clever}
-Pirates_names_179 {Smart Cesare}
-Pirates_names_180 {Wise Cesare}
-Pirates_names_181 {Fabio the Sly}
-Pirates_names_182 {Fabio the Sly}
-Pirates_names_183 {Fabio Pronire}
-Pirates_names_184 {Fabio the Sly}
-Pirates_names_185 {Fabio the Sly}
-Pirates_names_186 {Fabio Pronire}
-Pirates_names_187 {Edgar the Gutsman}
-Pirates_names_188 {Edgar the Lifebiter}
-Pirates_names_189 {To Edgar the Gutsucker}
-Pirates_names_190 {Edgar the Gutsucker}
-Pirates_names_191 {Edgar the Gut-Eater}
-Pirates_names_192 {Edgar the Gutsucker}
-Pirates_names_193 {Heitor the Splinter}
-Pirates_names_194 {Eytora the Splinter}
-Pirates_names_195 {To Heitor the Splinter}
-Pirates_names_196 {Eytora the Splinter}
-Pirates_names_197 {Heitor the Splinter}
-Pirates_names_198 {Eitore Zanose}
-Pirates_names_199 {Enrique Apron}
-Pirates_names_200 {Enrique Fartuca}
-Pirates_names_201 {Enrique Fartucu}
-Pirates_names_202 {Enrique Fartuca}
-Pirates_names_203 {Enrique the Apron}
-Pirates_names_204 {Enrique Fartuke}
-Pirates_names_205 {Boatswain Billy}
-Pirates_names_206 {boatswain Billy}
-Pirates_names_207 {to Boatswain Billy}
-Pirates_names_208 {boatswain Billy’s}
-Pirates_names_209 {as boatswain Billy}
-Pirates_names_210 {boatswain Billy}
-Pirates_names_211 {Dane Ole}
-Pirates_names_212 {the Dane Ole}
-Pirates_names_213 {to the Dane Ole}
-Pirates_names_214 {the Dane Ole}
-Pirates_names_215 {by the Dane Ole}
-Pirates_names_216 {the Dane Ole}
-Pirates_names_217 {Captain Barrow}
-Pirates_names_218 {Captain Barrow}
-Pirates_names_219 {to Captain Barrow}
-Pirates_names_220 {Captain Barrow}
-Pirates_names_221 {by Captain Barrow}
-Pirates_names_222 {Captain Barrow}
-Pirates_names_223 {Little Jimmy}
-Pirates_names_224 {Little Jimmy}
-Pirates_names_225 {To little Jimmy}
-Pirates_names_226 {Little Jimmy}
-Pirates_names_227 {Little Jimmy}
-Pirates_names_228 {Little Jimmy}
-Pirates_names_229 {One-Eyed Robby}
-Pirates_names_230 {One-Eyed Robby}
-Pirates_names_231 {To One-Eyed Robby}
-Pirates_names_232 {One-Eyed Robbie}
-Pirates_names_233 {One-Eyed Robby}
-Pirates_names_234 {One-Eyed Robby}
-Pirates_names_235 {Scoundrel Pew}
-Pirates_names_236 {Rogues’ Brew}
-Pirates_names_237 {To Rogue Pew}
-Pirates_names_238 {Scoundrel Pew}
-Pirates_names_239 {Drunken Scoundrel}
-Pirates_names_240 {To Rogue Pew}
-Pirates_names_241 {Red Bob}
-Pirates_names_242 {Red Bob}
-Pirates_names_243 {To Red Bob}
-Pirates_names_244 {Red Bob}
-Pirates_names_245 {Red Bob}
-Pirates_names_246 {To Red Bob}
-Pirates_names_247 {Old Vigo}
-Pirates_names_248 {Old Vigo}
-Pirates_names_249 {To old Vigo}
-Pirates_names_250 {Old Vigo}
-Pirates_names_251 {Old Vigo}
-Pirates_names_252 {Old Vigo}
-Pirates_names_253 {Lame Lars}
-Pirates_names_254 {Lame Lars}
-Pirates_names_255 {To Lame Lars}
-Pirates_names_256 {Lame Lars}
-Pirates_names_257 {Lame Lars}
-Pirates_names_258 {Lame Lars}
-Pirates_names_259 {Black Bo}
-Pirates_names_260 {Black Bo}
-Pirates_names_261 {Black Bo}
-Pirates_names_262 {Black Bo}
-Pirates_names_263 {Black Bo}
-Pirates_names_264 {Black Bo}
-Pirates_names_265 {skipper Willy}
-Pirates_names_266 {skipper Willy}
-Pirates_names_267 {to skipper Willy}
-Pirates_names_268 {skipper Willy}
-Pirates_names_269 {by skipper Willy}
-Pirates_names_270 {skipper Willy}
-Pirates_names_271 {Michael Smith}
-Pirates_names_272 {Michael Smith}
-Pirates_names_273 {To Michael Smith}
-Pirates_names_274 {Michael Smith}
-Pirates_names_275 {by Michael Smith}
-Pirates_names_276 {Michael Smith}
-Pirates_names_277 {Matthew Dzotto}
-Pirates_names_278 {Matthew Dzotto}
-Pirates_names_279 {Matthew Dzotto}
-Pirates_names_280 {Matthew Dzotto}
-Pirates_names_281 {Matthew Dzotto}
-Pirates_names_282 {Matthew Dzotto}
-Pirates_names_283 {Timothy Gleeser}
-Pirates_names_284 {Timothy Glazer}
-Pirates_names_285 {Timothy Glazer}
-Pirates_names_286 {Timothy Glazer}
-Pirates_names_287 {Timothy Glazer}
-Pirates_names_288 {Timothy Glisere}
-Pirates_names_289 {Tony the Smith}
-Pirates_names_290 {Tony the Smith}
-Pirates_names_291 {Tony the Smith}
-Pirates_names_292 {Tony the Smith}
-Pirates_names_293 {Tony the Smith}
-Pirates_names_294 {Tony the Blacksmith}
-Pirates_names_295 {Eddie Lever}
-Pirates_names_296 {Eddie Livera}
-Pirates_names_297 {Eddie Liver}
-Pirates_names_298 {Eddie Livera}
-Pirates_names_299 {Eddie the Liver}
-Pirates_names_300 {Eddie Liveray}
-Pirates_names_301 {Lanky Snake}
-Pirates_names_302 {Lanky Snake}
-Pirates_names_303 {To Lanky Snake}
-Pirates_names_304 {Lanky Snake}
-Pirates_names_305 {Lanky Snake}
-Pirates_names_306 {Lanky Snake}
-Pirates_names_307 {Old Sparky}
-Pirates_names_308 {Old Sparky’s}
-Pirates_names_309 {To old Sparky}
-Pirates_names_310 {Old Sparky’s}
-Pirates_names_311 {Old Sparky}
-Pirates_names_312 {Old Sparky}
-Pirates_names_313 {Fat Winnie}
-Pirates_names_314 {Fat Vinny}
-Pirates_names_315 {To Fat Vinny}
-Pirates_names_316 {Fat Vinny}
-Pirates_names_317 {Fat Vinny}
-Pirates_names_318 {Fat Winnie}
-Pirates_names_319 {Scrawny Jack}
-Pirates_names_320 {Skinny Jack}
-Pirates_names_321 {To Skinny Jack}
-Pirates_names_322 {Scrawny Jack}
-Pirates_names_323 {Scrawny Jack}
-Pirates_names_324 {Scrawny Jack}
-Pirates_names_325 {Morgan}
-Pirates_names_326 {Morgana}
-Pirates_names_327 {To Morgan}
-Pirates_names_328 {Morgana}
-Pirates_names_329 {by Morgan}
-Pirates_names_330 {To Morgane}
-Pirates_names_331 {Morris}
-Pirates_names_332 {Morrisa}
-Pirates_names_333 {To Morris}
-Pirates_names_334 {Morris}
-Pirates_names_335 {by Morris}
-Pirates_names_336 {Morrissey}
-Pirates_names_337 {Sharp}
-Pirates_names_338 {Sharpa}
-Pirates_names_339 {To Sharp}
-Pirates_names_340 {Sharpa}
-Pirates_names_341 {By Sharp}
-Pirates_names_342 {Sharpe}
-Pirates_names_343 {Shark}
-Pirates_names_344 {Sharks}
-Pirates_names_345 {To Akula}
-Pirates_names_346 {The Shark}
-Pirates_names_347 {By the shark}
-Pirates_names_348 {To Akula}
-Pirates_names_349 {Jackman}
-Pirates_names_350 {Jackman}
-Pirates_names_351 {To Jackman}
-Pirates_names_352 {Jackman}
-Pirates_names_353 {By Jackman}
-Pirates_names_354 {To Jackman}
-Pirates_names_355 {Bartholomew Rogers}
-Pirates_names_356 {Bartholomew Rogers}
-Pirates_names_357 {To Bartholomew Rogers}
-Pirates_names_358 {Bartholomew Rogers}
-Pirates_names_359 {Bartholomew Rogers}
-Pirates_names_360 {Bartholomew Rogers}
+Pirates_names_1 {“屠夫”艾伦}
+Pirates_names_2 {“屠夫”艾伦}
+Pirates_names_3 {“屠夫”艾伦}
+Pirates_names_4 {“屠夫”艾伦}
+Pirates_names_5 {“屠夫”艾伦}
+Pirates_names_6 {“屠夫”艾伦}
+Pirates_names_7 {“冷酷者”亚历克斯}
+Pirates_names_8 {“冷酷者”亚历克斯}
+Pirates_names_9 {“冷酷者”亚历克斯}
+Pirates_names_10 {“冷酷者”亚历克斯}
+Pirates_names_11 {“冷酷者”亚历克斯}
+Pirates_names_12 {“冷酷者”亚历克斯}
+Pirates_names_13 {“灰发”阿尔芒}
+Pirates_names_14 {“灰发”阿尔芒}
+Pirates_names_15 {“灰发”阿尔芒}
+Pirates_names_16 {“灰发”阿尔芒}
+Pirates_names_17 {“灰发”阿尔芒}
+Pirates_names_18 {“灰发”阿尔芒}
+Pirates_names_19 {“锚手”比利}
+Pirates_names_20 {“锚手”比利}
+Pirates_names_21 {“锚手”比利}
+Pirates_names_22 {“锚手”比利}
+Pirates_names_23 {“锚手”比利}
+Pirates_names_24 {“锚手”比利}
+Pirates_names_25 {“三尺”邦尼}
+Pirates_names_26 {“三尺”邦尼}
+Pirates_names_27 {“三尺”邦尼}
+Pirates_names_28 {“三尺”邦尼}
+Pirates_names_29 {“三尺”邦尼}
+Pirates_names_30 {“三尺”邦尼}
+Pirates_names_31 {布鲁诺船长}
+Pirates_names_32 {布鲁诺船长}
+Pirates_names_33 {布鲁诺船长}
+Pirates_names_34 {布鲁诺船长}
+Pirates_names_35 {布鲁诺船长}
+Pirates_names_36 {布鲁诺船长}
+Pirates_names_37 {“流浪汉”吉列尔莫}
+Pirates_names_38 {“流浪汉”吉列尔莫}
+Pirates_names_39 {“流浪汉”吉列尔莫}
+Pirates_names_40 {“流浪汉”吉列尔莫}
+Pirates_names_41 {“流浪汉”吉列尔莫}
+Pirates_names_42 {“流浪汉”吉列尔莫}
+Pirates_names_43 {“铁锤”雅各布}
+Pirates_names_44 {“铁锤”雅各布}
+Pirates_names_45 {“铁锤”雅各布}
+Pirates_names_46 {“铁锤”雅各布}
+Pirates_names_47 {“铁锤”雅各布}
+Pirates_names_48 {“铁锤”雅各布}
+Pirates_names_49 {“大锤”强尼}
+Pirates_names_50 {“大锤”强尼}
+Pirates_names_51 {“大锤”强尼}
+Pirates_names_52 {“大锤”强尼}
+Pirates_names_53 {“大锤”强尼}
+Pirates_names_54 {“大锤”强尼}
+Pirates_names_55 {“异教徒”约书亚}
+Pirates_names_56 {“异教徒”约书亚}
+Pirates_names_57 {“异教徒”约书亚}
+Pirates_names_58 {“异教徒”约书亚}
+Pirates_names_59 {“异教徒”约书亚}
+Pirates_names_60 {“异教徒”约书亚}
+Pirates_names_61 {“土狼”迭戈}
+Pirates_names_62 {“土狼”迭戈}
+Pirates_names_63 {“土狼”迭戈}
+Pirates_names_64 {“土狼”迭戈}
+Pirates_names_65 {“土狼”迭戈}
+Pirates_names_66 {“土狼”迭戈}
+Pirates_names_67 {“屠夫”让}
+Pirates_names_68 {“屠夫”让}
+Pirates_names_69 {“屠夫”让}
+Pirates_names_70 {“屠夫”让}
+Pirates_names_71 {“屠夫”让}
+Pirates_names_72 {“屠夫”让}
+Pirates_names_73 {“慧眼”比利}
+Pirates_names_74 {“慧眼”比利}
+Pirates_names_75 {“慧眼”比利}
+Pirates_names_76 {“慧眼”比利}
+Pirates_names_77 {“慧眼”比利}
+Pirates_names_78 {“慧眼”比利}
+Pirates_names_79 {“两比索”科尼}
+Pirates_names_80 {“两比索”科尼}
+Pirates_names_81 {“两比索”科尼}
+Pirates_names_82 {“两比索”科尼}
+Pirates_names_83 {“两比索”科尼}
+Pirates_names_84 {“两比索”科尼}
+Pirates_names_85 {“熏肉”威利}
+Pirates_names_86 {“熏肉”威利}
+Pirates_names_87 {“熏肉”威利}
+Pirates_names_88 {“熏肉”威利}
+Pirates_names_89 {“熏肉”威利}
+Pirates_names_90 {“熏肉”威利}
+Pirates_names_91 {“双对儿”克里斯托夫}
+Pirates_names_92 {“双对儿”克里斯托夫}
+Pirates_names_93 {“双对儿”克里斯托夫}
+Pirates_names_94 {“双对儿”克里斯托夫}
+Pirates_names_95 {“双对儿”克里斯托夫}
+Pirates_names_96 {“双对儿”克里斯托夫}
+Pirates_names_97 {“美男子”曼努埃尔}
+Pirates_names_98 {“美男子”曼努埃尔}
+Pirates_names_99 {“美男子”曼努埃尔}
+Pirates_names_100 {“美男子”曼努埃尔}
+Pirates_names_101 {“美男子”曼努埃尔}
+Pirates_names_102 {“美男子”曼努埃尔}
+Pirates_names_103 {“臭美”马文}
+Pirates_names_104 {“臭美”马文}
+Pirates_names_105 {“臭美”马文}
+Pirates_names_106 {“臭美”马文}
+Pirates_names_107 {“臭美”马文}
+Pirates_names_108 {“臭美”马文}
+Pirates_names_109 {“大头针”马特}
+Pirates_names_110 {“大头针”马特}
+Pirates_names_111 {“大头针”马特}
+Pirates_names_112 {“大头针”马特}
+Pirates_names_113 {“大头针”马特}
+Pirates_names_114 {“大头针”马特}
+Pirates_names_115 {“花哨”杰克}
+Pirates_names_116 {“花哨”杰克}
+Pirates_names_117 {“花哨”杰克}
+Pirates_names_118 {“花哨”杰克}
+Pirates_names_119 {“花哨”杰克}
+Pirates_names_120 {“花哨”杰克}
+Pirates_names_121 {“乞丐”布鲁斯}
+Pirates_names_122 {“乞丐”布鲁斯}
+Pirates_names_123 {“乞丐”布鲁斯}
+Pirates_names_124 {“乞丐”布鲁斯}
+Pirates_names_125 {“乞丐”布鲁斯}
+Pirates_names_126 {“乞丐”布鲁斯}
+Pirates_names_127 {“智者”普罗斯佩罗}
+Pirates_names_128 {“智者”普罗斯佩罗}
+Pirates_names_129 {“智者”普罗斯佩罗}
+Pirates_names_130 {“智者”普罗斯佩罗}
+Pirates_names_131 {“智者”普罗斯佩罗}
+Pirates_names_132 {“智者”普罗斯佩罗}
+Pirates_names_133 {“呆瓜”皮埃尔}
+Pirates_names_134 {“呆瓜”皮埃尔}
+Pirates_names_135 {“呆瓜”皮埃尔}
+Pirates_names_136 {“呆瓜”皮埃尔}
+Pirates_names_137 {“呆瓜”皮埃尔}
+Pirates_names_138 {“呆瓜”皮埃尔}
+Pirates_names_139 {“大嘴巴”里奇}
+Pirates_names_140 {“大嘴巴”里奇}
+Pirates_names_141 {“大嘴巴”里奇}
+Pirates_names_142 {“大嘴巴”里奇}
+Pirates_names_143 {“大嘴巴”里奇}
+Pirates_names_144 {“大嘴巴”里奇}
+Pirates_names_145 {“酒桶”罗伯特}
+Pirates_names_146 {“酒桶”罗伯特}
+Pirates_names_147 {“酒桶”罗伯特}
+Pirates_names_148 {“酒桶”罗伯特}
+Pirates_names_149 {“酒桶”罗伯特}
+Pirates_names_150 {“酒桶”罗伯特}
+Pirates_names_151 {“兽医”罗迪}
+Pirates_names_152 {“兽医”罗迪}
+Pirates_names_153 {“兽医”罗迪}
+Pirates_names_154 {“兽医”罗迪}
+Pirates_names_155 {“兽医”罗迪}
+Pirates_names_156 {“兽医”罗迪}
+Pirates_names_157 {“忧郁”杰克}
+Pirates_names_158 {“忧郁”杰克}
+Pirates_names_159 {“忧郁”杰克}
+Pirates_names_160 {“忧郁”杰克}
+Pirates_names_161 {“忧郁”杰克}
+Pirates_names_162 {“忧郁”杰克}
+Pirates_names_163 {“火钳”斯蒂夫}
+Pirates_names_164 {“火钳”斯蒂夫}
+Pirates_names_165 {“火钳”斯蒂夫}
+Pirates_names_166 {“火钳”斯蒂夫}
+Pirates_names_167 {“火钳”斯蒂夫}
+Pirates_names_168 {“火钳”斯蒂夫}
+Pirates_names_169 {“短吻鳄”托尼}
+Pirates_names_170 {“短吻鳄”托尼}
+Pirates_names_171 {“短吻鳄”托尼}
+Pirates_names_172 {“短吻鳄”托尼}
+Pirates_names_173 {“短吻鳄”托尼}
+Pirates_names_174 {“短吻鳄”托尼}
+Pirates_names_175 {“机灵鬼”切萨雷}
+Pirates_names_176 {“机灵鬼”切萨雷}
+Pirates_names_177 {“机灵鬼”切萨雷}
+Pirates_names_178 {“机灵鬼”切萨雷}
+Pirates_names_179 {“机灵鬼”切萨雷}
+Pirates_names_180 {“机灵鬼”切萨雷}
+Pirates_names_181 {“滑头”法比奥}
+Pirates_names_182 {“滑头”法比奥}
+Pirates_names_183 {“滑头”法比奥}
+Pirates_names_184 {“滑头”法比奥}
+Pirates_names_185 {“滑头”法比奥}
+Pirates_names_186 {“滑头”法比奥}
+Pirates_names_187 {“活吞者”埃德加}
+Pirates_names_188 {“活吞者”埃德加}
+Pirates_names_189 {“活吞者”埃德加}
+Pirates_names_190 {“活吞者”埃德加}
+Pirates_names_191 {“活吞者”埃德加}
+Pirates_names_192 {“活吞者”埃德加}
+Pirates_names_193 {“刺头”埃托尔}
+Pirates_names_194 {“刺头”埃托尔}
+Pirates_names_195 {“刺头”埃托尔}
+Pirates_names_196 {“刺头”埃托尔}
+Pirates_names_197 {“刺头”埃托尔}
+Pirates_names_198 {“刺头”埃托尔}
+Pirates_names_199 {“围裙”恩里克}
+Pirates_names_200 {“围裙”恩里克}
+Pirates_names_201 {“围裙”恩里克}
+Pirates_names_202 {“围裙”恩里克}
+Pirates_names_203 {“围裙”恩里克}
+Pirates_names_204 {“围裙”恩里克}
+Pirates_names_205 {“水手长”比利}
+Pirates_names_206 {“水手长”比利}
+Pirates_names_207 {“水手长”比利}
+Pirates_names_208 {“水手长”比利}
+Pirates_names_209 {“水手长”比利}
+Pirates_names_210 {“水手长”比利}
+Pirates_names_211 {“丹麦人”奥勒}
+Pirates_names_212 {“丹麦人”奥勒}
+Pirates_names_213 {“丹麦人”奥勒}
+Pirates_names_214 {“丹麦人”奥勒}
+Pirates_names_215 {“丹麦人”奥勒}
+Pirates_names_216 {“丹麦人”奥勒}
+Pirates_names_217 {巴罗船长}
+Pirates_names_218 {巴罗船长}
+Pirates_names_219 {巴罗船长}
+Pirates_names_220 {巴罗船长}
+Pirates_names_221 {巴罗船长}
+Pirates_names_222 {巴罗船长}
+Pirates_names_223 {小吉米}
+Pirates_names_224 {小吉米}
+Pirates_names_225 {小吉米}
+Pirates_names_226 {小吉米}
+Pirates_names_227 {小吉米}
+Pirates_names_228 {小吉米}
+Pirates_names_229 {“独眼龙”罗比}
+Pirates_names_230 {“独眼龙”罗比}
+Pirates_names_231 {“独眼龙”罗比}
+Pirates_names_232 {“独眼龙”罗比}
+Pirates_names_233 {“独眼龙”罗比}
+Pirates_names_234 {“独眼龙”罗比}
+Pirates_names_235 {“人渣”普尤}
+Pirates_names_236 {“人渣”普尤}
+Pirates_names_237 {“人渣”普尤}
+Pirates_names_238 {“人渣”普尤}
+Pirates_names_239 {“人渣”普尤}
+Pirates_names_240 {“人渣”普尤}
+Pirates_names_241 {“红发”鲍勃}
+Pirates_names_242 {“红发”鲍勃}
+Pirates_names_243 {“红发”鲍勃}
+Pirates_names_244 {“红发”鲍勃}
+Pirates_names_245 {“红发”鲍勃}
+Pirates_names_246 {“红发”鲍勃}
+Pirates_names_247 {老维戈}
+Pirates_names_248 {老维戈}
+Pirates_names_249 {老维戈}
+Pirates_names_250 {老维戈}
+Pirates_names_251 {老维戈}
+Pirates_names_252 {老维戈}
+Pirates_names_253 {“瘸子”拉尔斯}
+Pirates_names_254 {“瘸子”拉尔斯}
+Pirates_names_255 {“瘸子”拉尔斯}
+Pirates_names_256 {“瘸子”拉尔斯}
+Pirates_names_257 {“瘸子”拉尔斯}
+Pirates_names_258 {“瘸子”拉尔斯}
+Pirates_names_259 {“黑脸”波}
+Pirates_names_260 {“黑脸”波}
+Pirates_names_261 {“黑脸”波}
+Pirates_names_262 {“黑脸”波}
+Pirates_names_263 {“黑脸”波}
+Pirates_names_264 {“黑脸”波}
+Pirates_names_265 {“舵手”威利}
+Pirates_names_266 {“舵手”威利}
+Pirates_names_267 {“舵手”威利}
+Pirates_names_268 {“舵手”威利}
+Pirates_names_269 {“舵手”威利}
+Pirates_names_270 {“舵手”威利}
+Pirates_names_271 {迈克尔 史密斯}
+Pirates_names_272 {迈克尔 史密斯}
+Pirates_names_273 {迈克尔 史密斯}
+Pirates_names_274 {迈克尔 史密斯}
+Pirates_names_275 {迈克尔 史密斯}
+Pirates_names_276 {迈克尔 史密斯}
+Pirates_names_277 {马修 佐托}
+Pirates_names_278 {马修 佐托}
+Pirates_names_279 {马修 佐托}
+Pirates_names_280 {马修 佐托}
+Pirates_names_281 {马修 佐托}
+Pirates_names_282 {马修 佐托}
+Pirates_names_283 {蒂莫西 格利泽}
+Pirates_names_284 {蒂莫西 格利泽}
+Pirates_names_285 {蒂莫西 格利泽}
+Pirates_names_286 {蒂莫西 格利泽}
+Pirates_names_287 {蒂莫西 格利泽}
+Pirates_names_288 {蒂莫西 格利泽}
+Pirates_names_289 {“铁匠”托尼}
+Pirates_names_290 {“铁匠”托尼}
+Pirates_names_291 {“铁匠”托尼}
+Pirates_names_292 {“铁匠”托尼}
+Pirates_names_293 {“铁匠”托尼}
+Pirates_names_294 {“铁匠”托尼}
+Pirates_names_295 {埃迪 利弗}
+Pirates_names_296 {埃迪 利弗}
+Pirates_names_297 {埃迪 利弗}
+Pirates_names_298 {埃迪 利弗}
+Pirates_names_299 {埃迪 利弗}
+Pirates_names_300 {埃迪 利弗}
+Pirates_names_301 {长脚蛇}
+Pirates_names_302 {长脚蛇}
+Pirates_names_303 {长脚蛇}
+Pirates_names_304 {长脚蛇}
+Pirates_names_305 {长脚蛇}
+Pirates_names_306 {长脚蛇}
+Pirates_names_307 {老火花}
+Pirates_names_308 {老火花}
+Pirates_names_309 {老火花}
+Pirates_names_310 {老火花}
+Pirates_names_311 {老火花}
+Pirates_names_312 {老火花}
+Pirates_names_313 {“胖子”温尼}
+Pirates_names_314 {“胖子”温尼}
+Pirates_names_315 {“胖子”温尼}
+Pirates_names_316 {“胖子”温尼}
+Pirates_names_317 {“胖子”温尼}
+Pirates_names_318 {“胖子”温尼}
+Pirates_names_319 {“瘦子”杰克}
+Pirates_names_320 {“瘦子”杰克}
+Pirates_names_321 {“瘦子”杰克}
+Pirates_names_322 {“瘦子”杰克}
+Pirates_names_323 {“瘦子”杰克}
+Pirates_names_324 {“瘦子”杰克}
+Pirates_names_325 {摩根}
+Pirates_names_326 {摩根}
+Pirates_names_327 {摩根}
+Pirates_names_328 {摩根}
+Pirates_names_329 {摩根}
+Pirates_names_330 {摩根}
+Pirates_names_331 {莫里斯}
+Pirates_names_332 {莫里斯}
+Pirates_names_333 {莫里斯}
+Pirates_names_334 {莫里斯}
+Pirates_names_335 {莫里斯}
+Pirates_names_336 {莫里斯}
+Pirates_names_337 {夏普}
+Pirates_names_338 {夏普}
+Pirates_names_339 {夏普}
+Pirates_names_340 {夏普}
+Pirates_names_341 {夏普}
+Pirates_names_342 {夏普}
+Pirates_names_343 {鲨鱼}
+Pirates_names_344 {鲨鱼}
+Pirates_names_345 {鲨鱼}
+Pirates_names_346 {鲨鱼}
+Pirates_names_347 {鲨鱼}
+Pirates_names_348 {鲨鱼}
+Pirates_names_349 {杰克曼}
+Pirates_names_350 {杰克曼}
+Pirates_names_351 {杰克曼}
+Pirates_names_352 {杰克曼}
+Pirates_names_353 {杰克曼}
+Pirates_names_354 {杰克曼}
+Pirates_names_355 {巴塞洛缪 罗杰斯}
+Pirates_names_356 {巴塞洛缪 罗杰斯}
+Pirates_names_357 {巴塞洛缪 罗杰斯}
+Pirates_names_358 {巴塞洛缪 罗杰斯}
+Pirates_names_359 {巴塞洛缪 罗杰斯}
+Pirates_names_360 {巴塞洛缪 罗杰斯}

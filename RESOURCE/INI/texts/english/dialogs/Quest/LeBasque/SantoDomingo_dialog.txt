@@ -1,0 +1,80 @@
+SantoDomingo_dialog_1 {
+Senor officer, all quiet at the gate. After that business with Jaco, the guard is keeping its eyes open.
+}
+SantoDomingo_dialog_2 {
+As it should be.
+}
+SantoDomingo_dialog_3 {
+Senor, if you've just come in from the road, you'd better report straight to the commandant. He ordered every detainee reported to him.
+}
+SantoDomingo_dialog_4 {
+I know the order.
+}
+SantoDomingo_dialog_5 {
+Senor officer, the gate patrol is at its post. We let no suspicious persons through, and fugitives are admitted only through the commandant.
+}
+SantoDomingo_dialog_6 {
+Carry on.
+}
+SantoDomingo_dialog_7 {
+Senor, the town is uneasy today. The commandant is waiting for news about that bastard who tried to reach Duval.
+}
+SantoDomingo_dialog_8 {
+He'll have it soon.
+}
+SantoDomingo_dialog_9 {
+Senor officer, the guard has been warned. If the prisoner is dangerous, take him directly to the commandant, no stops.
+}
+SantoDomingo_dialog_10 {
+That's what we'll do.
+}
+SantoDomingo_dialog_11 {
+Hey, soldier, don't linger. If you're escorting a prisoner, take him to the commandant.
+}
+SantoDomingo_dialog_12 {
+We're going now.
+}
+SantoDomingo_dialog_13 {
+Just in from the road? You look as if your patrol marched through hell itself.
+}
+SantoDomingo_dialog_14 {
+It wasn't an easy road.
+}
+SantoDomingo_dialog_15 {
+If that's the Jaco everyone's talking about, keep a tight hold on him. The commandant has wanted a word with him for some time.
+}
+SantoDomingo_dialog_16 {
+He won't get away.
+}
+SantoDomingo_dialog_17 {
+Don't chatter with the prisoner. Take him inside and hand him over as ordered.
+}
+SantoDomingo_dialog_18 {
+Understood.
+}
+SantoDomingo_dialog_19 {
+Patrol from the road? Then move. The commandant is in a foul temper today; best not keep him waiting.
+}
+SantoDomingo_dialog_20 {
+Tell him to get ready to receive the catch.
+}
+
+LeBasque_SantoDomingoJailOff_1 {
+Marceau? What the hell are you doing here? Get out immediately, or I'll have to arrest you.
+}
+
+LeBasque_SantoDomingoJailOff_2 {
+Many years have passed. No one will believe your word.
+}
+
+LeBasque_SantoDomingoJailOff_3 {
+You've always been a prudent bastard, Marceau...
+}
+
+LeBasque_SantoDomingoJailOff_4 {
+Damn it... Sergeant! Bring Duval!
+}
+
+LeBasque_SantoDomingoJailOff_5 {
+Take him and get out of my city immediately.
+}

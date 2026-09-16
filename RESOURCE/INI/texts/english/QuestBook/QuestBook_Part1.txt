@@ -258,7 +258,7 @@ Pir_Line_7_Soukins.9
 {
 I managed to get hold of Sowkins’s ship log, where he laid out the plan for the upcoming operation against the Spanish.
 Soukins learned that the Spanish are planning to transport the largest shipment of precious stones from Panama. To carry out this operation, they abandoned the usual overland route from Panama to Portobelo and the subsequent crossing of the Caribbean Sea. Instead, they plan to equip a single ship of the line, which will round Cape Horn, sail up to the fortieth parallel, then turn northeast and cross the Atlantic to reach Lisbon.
-Soukins intends to intercept this ship of the line carrying the jewels near Saint Martin. To do this, he is assembling a squadron to make sure the Spaniard doesn’t slip away. The ship is expected to pass east of Trinidad and Tobago and then head northeast to Saint Martin. I need to intercept it before Soukins does.
+Soukins intends to intercept this ship of the line carrying the jewels near Saint Martin. To do this, he is assembling a squadron to make sure the Spaniard doesn’t slip away. The ship is expected to pass east of Trinidad and then head northeast to Saint Martin. I need to intercept it before Soukins does.
 According to Soukins’s notes, in two weeks a pirate squadron will be waiting for the Spaniard near Saint Martin. I must set sail immediately and intercept the Spanish ship south of Saint Martin.
 It’s incredible that such a well-guarded secret became known to Soukins. I need to make sure no one else finds out about it and tear out the last couple of pages from the log, especially those mentioning the ship’s hold.
 }
@@ -1140,90 +1140,6 @@ SeekDoubleMushket.5 {Rolando Pizarro demanded a whole 100,000 piastres for infor
 SeekDoubleMushket.6 {Rolando Pizarro demanded a whole 100,000 piastres for information about the 'Arrow'. I refused. For that kind of money, I’ll find this brigantine myself.}
 SeekDoubleMushket.7 {What rotten luck! I took too long getting to Portobelo. Rolando knew the bay where I could find the 'Arrow', but the time is lost—now there's no trace of her there. I'll have to search on my own...}
 SeekDoubleMushket.10 {The brigantine I was looking for is gone. Now I won’t be able to get the double-barreled musket.}
-CapBloodLine_q1 {Doctor}
-CapBloodLine_q1.1 {I must report to the governor’s mansion at once and see how I can help Mrs. Steed.}
-CapBloodLine_q1.2 {Governor Steed told me that his wife is suffering from another migraine attack and cannot calm down. I think I should examine her. She is in the bedroom to the right on the second floor.}
-CapBloodLine_q1.3 {I must hurry to the port and visit Mr. Dan, the apothecary. I think he mentioned that his house is near the governor’s residence.}
-CapBloodLine_q1.4 {The governor has allocated funds for purchasing medicine. I received @<iMoney>.}
-CapBloodLine_q1.5 {The governor gave me 2,500 piastres in hand for medicine for his wife, but demanded an account upon my return...}
-CapBloodLine_q1.6 {Mr. Dan wasn’t home, so I had to find the medicine myself. Now I need to hurry back to the estate...}
-CapBloodLine_q1.7 {I waited for Mr. Dan, and he gladly shared his migraine remedy with me. Now I need to hurry back to the estate...}
-CapBloodLine_q1.8 {On my way out of the house, I ran into the apothecary and tricked him into giving me another migraine remedy.}
-CapBloodLine_q1.9 {Everything is fine; I managed to help the governor’s wife. Since it’s late and the gates to that damned Bishop plantation have long been closed, I was allowed to stay in town and given a room at the tavern. It feels so good, even for one night, to feel like a person again, not a slave...}
-CapBloodLine_q2 {Wacker’s Offer}
-CapBloodLine_q2.1 {At the apothecary’s, I met Doctor Wacker, who wants to discuss something with me away from prying eyes and ears. Tomorrow, when I have some free time, I should stop by the tavern.}
-CapBloodLine_q2.2
-{
-Morning has come. Now Bishop will find me and surely send me off somewhere for the whole day. For example, to patch up some innocent slaves he probably roughed up and punished last night over some nonsense, just out of spite because I didn’t come back before the gates closed...
-But I have to find out what Wacker wants with me. There’s no time to lose.
-}
-CapBloodLine_q2.3 {I came to the tavern, but Vaker is not here. Damn! I have to find him... I'll ask the innkeeper.}
-CapBloodLine_q2.4 {It seems I really am a significant obstacle for the esteemed Wacker and Bronson, since the possibility of my escape has become the subject of our far-from-friendly conversation. There’s no doubt that Dr. Bronson is aware of what’s going on, and Wacker coordinates all his actions with him. Still, who am I to complain—this is my only chance! I should look for Jeremy Pitt.}
-CapBloodLine_q2.5 {I managed to persuade Pitt to join this venture. Now the main thing is to recruit people, prepare everything we need, and get the money for the sloop from Wacker tomorrow. Only four of the slaves know anything about seamanship—Hagthorpe, Ogle, Wolverstone, and Nicholas Dyke. I need to talk to each of them.}
-CapBloodLine_q2.6 {It's time to head back to the tavern and talk to Wacker. Actually, there's nothing left to discuss—just collect the money for the sloop.}
-CapBloodLine_q2.7 {Doctor Wacker managed to get only 18,000 piastres. About 7,000 more are needed to buy the sloop. Well... There’s always work to be found in the port for those who look for it—whether it’s unloading at the store, errands for shady characters, or odd jobs from townsfolk. In the worst case, you can turn to the local moneylender...}
-CapBloodLine_q2.8 {I’ve gathered the required sum and sent Nettall to buy the sloop. Now all that’s left is to wait...}
-WeaponsForEscape {Weapons for the Escape}
-WeaponsForEscape.1 {Everything should be quiet, but having some weapons on hand never hurts. It's unlikely anyone in the city will sell them to me, and I just can't resort to theft at such a crucial moment... I'll have to find another way to solve this problem.}
-WeaponsForEscape.2 {The innkeeper advised me to talk to Mr. Griffin about weapons — he’s an old gunsmith who lives near the governor’s mansion.}
-WeaponsForEscape.3 {Gunsmith Griffin was brazenly robbed: a Spanish thug took his samples, with the master’s name engraved on the blades, and went to the house of the fisherman Hells. If he is caught or seen with weapons from Mr. Griffin, both will be hanged at dawn. I must immediately go after the robber and disarm him, then return everything stolen to its rightful owner. If I do this, Mr. Griffin will complete the order for boarding sabers and pistols without identifying marks by tonight for @<iMoney>.}
-WeaponsForEscape.4 {I couldn’t find common ground with the gunsmith. I wouldn’t say I’m too upset—doing business with that arrogant old man wouldn’t end well anyway. I’ll find another way to get weapons.}
-WeaponsForEscape.5 {I had no choice—the fisherman got in my way, which was the last thing I expected. Still, in a way, I should be grateful to him, since he spared me from having to fight the Spaniard. Hells had 2,000 piastres on him, some of which surely belonged to the thug. Besides that, I found a package of Griffin’s samples on the Spaniard—it’s time to return to the gunsmith.}
-WeaponsForEscape.5_1 {I was lucky – the fisherman Hells turned out to be rather agitated after the fight, but I managed to calm him down. After a brief negotiation, he allowed me to take weapon samples from the Spaniard’s corpse. I left the money found on the dead man to Hells – it was only fair, as compensation for the attack. Now I can return to the gunsmith with the bundle of samples.}
-WeaponsForEscape.6 {In an hour, I must go to Mr. Griffin for my order.}
-WeaponsForEscape.7 {In the street, I met a man who seemed to be Spanish. I don’t know how he got here, but it’s clear his intentions aren’t good. He wants something from Mr. Griffin, the gunsmith.}
-WeaponsForEscape.8 {It’s been more than ten minutes, and still no news. Clearly, I have no choice but to go back there.}
-WeaponsForEscape.9 {Mr. Griffin provided me with everything I needed as thanks for saving his life.}
-WeaponsForEscape.10 {The vendor from the market square, whose son I was lucky enough to save from an unfortunate fate, gave me a bundle with all the essentials for unforeseen situations. Luck is on my side—getting hold of a weapon in my current situation is extremely difficult. I’d even say it’s nearly impossible. But I have other problems as well...}
-WeaponsForEscape.11 {At the tavern, I had the pleasure of speaking with a smuggler who struck me as rather odd. Not only does he have the weapons I need in the right quantity, but instead of asking for a shipment of slaves in return, as one might expect, he wants some ring from the governor’s mansion. How could he know about the ring? And why is he so interested in it that he’s willing to trade weapons for it? Well, my task now is to find that ring.}
-WeaponsForEscape.12 {I couldn’t get to the governor. Unless he gives the proper order, the guards won’t let me through. And he won’t give such an order as long as he and his wife are safe. So, I need an outside pretext...}
-WeaponsForEscape.13 {Thanks to Mr. Dan’s naivety, I now have a chance to get into the residence. I won’t waste any time.}
-WeaponsForEscape.14 {Amazingly, the very ring the smuggler spoke of is right in plain sight—lying on the table. Mrs. Steed truly doesn’t wear it.}
-WeaponsForEscape.15
-{
-Fortunately, the matter was resolved with a small deception, without the need to resort to theft. Mrs. Steed gave me the ring herself, which she said she found beside her bed this morning.
-The ring itself looks completely ordinary—gold, without any gemstones—but it is incredibly heavy for its type and size.
-How did the smuggler find out about the ring? And why does he want it? Then again, is that really my concern? I should return to the tavern and collect my reward.
-}
-WeaponsForEscape.16 {The smuggler got his ring, and I got the weapon and the money. Of course, the item was quite intriguing, but I simply don’t have time to study it. In any case, the task is complete—I have the weapon.}
-HugtorpTrouble {Hagthorpe’s Problem}
-HugtorpTrouble.1 {There is a man named Stuart Winterwood in Bridgetown. All Hagthorpe needs to join me is the death of the Englishman who took everything from him and sent him into slavery. I don’t know exactly how it happened, but I have no choice—I must kill Winterwood. He can be found in the tavern or the brothel.}
-HugtorpTrouble.2 {Hagthorpe didn’t want to sail with me. His sworn enemy, Stuart Winterwood, is in the city. Once, this gentleman disgraced the old sea dog, taking everything from him: his good name, his family, his freedom. Thanks to him, Hagthorpe ended up in chains. But I managed to talk him out of his reckless plan for revenge, and he agreed to sail with me, postponing the scoundrel’s execution for now.}
-HugtorpTrouble.3 {I managed to anger Stuart Winterwood and challenge him to a duel. We'll meet one-on-one, an hour from now outside the city gates—I don't think I should be late.}
-HugtorpTrouble.4 {It was difficult, but I killed Winterwood. I don't think Stuart will need the thousand piastres he had on him anymore. I should return to Hagthorpe.}
-HugtorpTrouble.5 {After learning of Winterwood’s death, Hagthorpe agreed to join me.}
-DiekeQuest {Junior Officer Nicholas Dyke}
-DiekeQuest.1 {Colonel Bishop has chosen the worst possible moment to sell off Nicholas Dyke, who was once a junior officer. Nicholas is convinced that nothing can be done now, but... I must do whatever it takes to prevent this deal.}
-DiekeQuest.2 {The buyer is someone named Weston. I should find out who he is and where to find him as soon as possible.}
-DiekeQuest.3 {A Jamaican merchant recently arrived in town with some kind of cargo. He’s an old friend of Bishop’s. Most likely, he is Weston. I need to find his house and see what can be done.}
-DiekeQuest.4 {Charlie Weston apparently intended to get Dyke for a bargain. He has a few thousand piastres and a curious idol set aside for Bishop. I think I’ll keep all of it for myself—it might come in handy. Bishop already indulges himself enough as it is.}
-DiekeQuest.5 {Excellent! Nicholas will join us during the escape.}
-OglQuest {One-Eyed Gunner}
-OglQuest.1 {The only gunner-artillerist available to me took out a loan of 5,000 piastres from the moneylender. I simply can't set sail without Ogle—the risk is too great. I need to find the money and pay off the old man's debt.}
-OglQuest.2 {I’ve paid Ogla’s debt. I hope this settles his decision to join us.}
-OglQuest.3 {Excellent! Ogle is coming with us.}
-FishermanQuest {Fishing Spot}
-FishermanQuest.1 {Fisherman Hells gave me a job: my task is to find out what fishing spot another fisherman, Arnold Summerlight, has discovered. Hells promised me 2,000 piastres for the job.}
-FishermanQuest.2 {I managed to find out where Summerlight is fishing. Now I just need to tell Hells and get my money.}
-UsurerQuest {Nameless Debtor}
-UsurerQuest.1 {The moneylender gave me a job worth 3,000 piastres: to find an impostor within the city who took out a loan in the name of Raphael Guinness, taking advantage of the morning confusion. I don't even know where to start. The innkeeper, as always, will ask for silver in exchange for information... But who else could help me?}
-UsurerQuest.2 {I had to give the innkeeper five hundred for information about this Guinness. He told me that Raphael somehow got the money for a ship and went to close the deal. It seems the innkeeper doesn’t know him very well, since he apparently takes the impostor for the real Guinness. I should stop by the shipyard.}
-UsurerQuest.3 {I managed to play my part quite well... Why did I ever join the service instead of the theater? Terrified, the impostor—whose real name is Alex Winner—handed over all his savings to me: 55,000 piastres. I suspect some of that money belongs to the moneylender.}
-UsurerQuest.4 {Fearing justice, Raphael-Alex gave me the loan. Now I have to return the money to the moneylender and get my share, or..?}
-UsurerQuest.5 {I failed to recover the money from the moneylender—the swindler wouldn’t confess, started protesting, and hurried off into the city streets, where I can no longer find him...}
-PirateQuest {Fallen Pirate}
-PirateQuest.1 {In the store, I met a funny pirate named Jacques Nightingale... Captain Jacques Nightingale. An interesting character... But in any case, the chance to earn 1,500 piastres is also a good reason to get acquainted. I’ll get this money if I find a captain who agrees to take my new friend to Port Royal for three thousand.}
-PirateQuest.2 {The head of the port authority mentioned Captain Miner, who has just checked out for departure to Port Royal. Without mentioning Solovey’s name, I managed to get the information. Now I just need to find this John Miner somewhere in the city.}
-PirateQuest.3 {After learning the passenger’s identity, the head of the port authority told me the story of this pirate’s downfall. Giving the treasure map to his first mate, Solovey never suspected that the crew might decide to roll tobacco in it and smoke it. When they sobered up, the pirates blamed everything on Jacques, then put him ashore on an island and left him to die. By some miracle, Jacques Solovey managed to escape, but now he’s in a tough spot: he needs not only to get his ship back, but also to take revenge on the new captain. Well, I’ll wish him luck, but for now I need to speak with Captain John Miner, who has reported to the port authority that he’s bound for Port Royal and will be setting sail soon.}
-PirateQuest.4 {John Miner, captain of the 'Floating Briton', has agreed to take Jacques Nightingale to Port Royal for three thousand. All that remains is to find this pirate and inform him, then collect the money.}
-PirateQuest.5 {I got my money from Jacques the Nightingale, though he was clearly in no hurry to part with it. Quite an amusing fellow.}
-PirateQuest.6 {I couldn't find a ship to take the fallen pirate. I suppose he'll manage on his own somehow...}
-EscapeFormBarbados {Escape from Barbados}
-EscapeFormBarbados.1 {Our escape plan is on the verge of falling apart. Colonel Bishop tracked down Jeremy Pitt while he was making the final preparations for departure. I’ve decided to try to free our navigator as soon as it gets dark. By the way, Jeremy stashed some weapons in a chest between the floorboards—at the edge of the plantation; it would be good to get to it. Meanwhile, the others will sneak into the city and wait for us there, hiding at the shipyard.}
-EscapeFormBarbados.2 {I managed to rescue Pitt from Bishop’s men, but he told me that Nuttall escaped on our sloop. I need to warn Hagthorpe, Dyke, Ogle, Wolverstone, and the others before they’re all captured.}
-EscapeFormBarbados.3 {At the most desperate moment, blind chance intervened in our plans. The large ship that had been allowed to enter the bay of Bridgetown so calmly under a foreign flag turned out to be a Spanish privateer. He chose a time for the raid when there wasn’t a single warship in the bay. His ruse went so undiscovered that, without arousing suspicion, he sailed right into the bay and saluted the fort at point-blank range with a broadside from twenty cannons. By sunset, two hundred and fifty Spaniards had become the masters of Bridgetown.}
-EscapeFormBarbados.4 {Reunited with the others, we decided to try to seize a Spanish ship under the cover of night.}
-EscapeFormBarbados.5 {We managed to capture a magnificent ship from the Spanish—the 'Cinco Llagas'. Now we can finally leave Barbados and find our freedom.}
 TenochtitlanQuest {Tenochtitlan}
 TenochtitlanQuest.1 {In a bay called the Mosquito Coast, I met a Spaniard named Silvio Ricci. Shouting frantically, he advised me to get as far away from this place as possible. From his confused story, I gathered that a certain Don Esteban had organized an expedition to some Indian city, where Cortés himself had ruled 150 years ago! The expedition met a terrible end, and only Silvio Ricci survived.}
 TenochtitlanQuest.2
@@ -1380,7 +1296,7 @@ Headhunt.7 {The fight was fierce—Hannibal Holm turned out to be a tough fellow
 Headhunt.8 {The hill was too much for me. I had to run for my life. After such a disgrace, I’d better not show my face to Snakeman.}
 Headhunt.9 {The reward for destroying Holm has been received. This time, the compensation amounted to 10,000 piastres and two chests of gold.}
 Headhunt.10 {All possible deadlines for finding the pinnace 'Adelaide' have passed. The trail is lost for good. The quest has failed. It’s best not to show up in Le Francois...}
-Headhunt.11 {The third 'client' is Mathias Green, nicknamed 'Rat'. According to Snakeman, Rat is involved in numerous disappearances of merchant ships. Nothing else is known about him, and I’ll have to gather all the information myself. Snakeman named three ports from which the last three ships vanished: Willemstad on Curaçao, Cartagena on the Main, and Port of Spain on the island of Trinidad and Tobago. I should start searching there—maybe I’ll pick up his trail.}
+Headhunt.11 {The third 'client' is Mathias Green, nicknamed 'Rat'. According to Snakeman, Rat is involved in numerous disappearances of merchant ships. Nothing else is known about him, and I’ll have to gather all the information myself. Snakeman named three ports from which the last three ships vanished: Willemstad on Curaçao, Cartagena on the Main, and Port of Spain on the island of Trinidad. I should start searching there—maybe I’ll pick up his trail.}
 Headhunt.12_1 {In Cartagena, on the day the missing ship 'Happy Bride' set out on her final voyage, the following ships were present: the galleon 'San Juan Nepomasedo' and the pinnace 'Adelaide'. We continue the search.}
 Headhunt.12_2 {In Port of Spain, on the day the missing vessel set out on its final voyage, the following ships were present: the schooner Jenny, the corvette Swift, and the pinnace Adelaide. We continue the search.}
 Headhunt.12_3 {In Willemstad, on the day the missing ship 'Santa Anna' set out on its final voyage, the following ships were present: the pinnace 'Adelaide', the galleon 'Medemblink', and the frigate 'Zulthen'. We continue the search.}

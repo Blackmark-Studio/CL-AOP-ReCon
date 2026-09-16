@@ -1256,7 +1256,7 @@ void ProcessDialogEvent()
 
 		case "PL_Q5_talking_2":
 			sld = characterFromId("Blaze");
-			dialog.text = StringFromKey("Morgan_249", GetMainCharacterNameDat());
+			dialog.text = StringFromKey("Morgan_249", GetMainCharacterNameGen());
 			link.l1 = StringFromKey("Morgan_250", sld);
 			link.l1.go = "exit";
 			NextDiag.TempNode = "PL_Q5_end";
@@ -1289,7 +1289,7 @@ void ProcessDialogEvent()
 		break;
 
 		case "PL_Q5_afterFight":
-			dialog.text = StringFromKey("Morgan_258", GetMainCharacterNameDat());
+			dialog.text = StringFromKey("Morgan_258", GetMainCharacterNameGen());
 			link.l1 = StringFromKey("Morgan_259", pchar);
 			link.l1.go = "PL_Q5_afterFight_1";
 			AddMoneyToCharacter(PChar, 35000);
@@ -2090,9 +2090,6 @@ void ProcessDialogEvent()
 		//в резиденции Панамы с ключом
 		case "PL_Q8_Panama2":
 			npchar.quest.locInd = FindLocation(pchar.location);
-			sld = &locations[sti(npchar.quest.locInd)];
-			if (CheckAttribute(sld, "private1.money")) sld.private1.money = 0;
-			if (CheckAttribute(sld, "private2.money")) sld.private2.money = 0;
 			dialog.text = StringFromKey("Morgan_429", pchar);
 			link.l1 = StringFromKey("Morgan_430", pchar);
 			link.l1.go = "PL_Q8_Panama2_1";
@@ -2111,6 +2108,13 @@ void ProcessDialogEvent()
 		case "PL_Q8_Panama2_3":
 			sld = &locations[sti(npchar.quest.locInd)];
 			int iMoneyForMorgan = 50000000;
+			// > сундук могли просто открыть до прихода Моргана и не взять оттуда ни пиастра
+			if (CheckAttribute(sld, "private1.money") && sti(sld.private1.money) > 0)
+			{
+				if (!CheckAttribute(sld, "private1.items.gold")) sld.private1.items.gold = 0;
+				sld.private1.items.gold = sti(sld.private1.items.gold) + sti(sld.private1.money);
+				sld.private1.money = 0;
+			}
 			if (CheckAttribute(sld, "private1.items.gold") || sti(pchar.money) >= iMoneyForMorgan)
 			{
 				//Пасхалка, заставить Моргана делиться при высоком Восприятии и Обучаемости
@@ -2287,7 +2291,13 @@ void ProcessDialogEvent()
 			NextDiag.CurrentNode = NextDiag.TempNode;
 			AddQuestRecord("Andre_Abel_Quest", "12");
 			AddQuestUserData("Andre_Abel_Quest", "sSex", GetSexPhrase("ся", "ась"));
-			ChangeCharacterAddressGroup(CharacterFromID("Andre_Abel"), "none", "", "");
+			// > По сюжету Абеля зарежут, стирам его
+			sld = CharacterFromID("Andre_Abel");
+			ChangeCharacterAddressGroup(sld, "none", "", "");
+			SetCharacterShipLocation(sld, "");
+			LAi_CharacterDisableDialog(sld);
+			RemoveLandQuestMark_Main(sld, "Andre_Abel_Quest");
+			sld.LifeDay = 0;
 			PChar.QuestTemp.Andre_Abel_Quest_PortPax_TavernOwner_Speek = true; // Флаг для разговора с тавернщиком в Порт-о-Принсе
 			AddLandQuestMark_Main(CharacterFromID("PortPax_tavernkeeper"), "Andre_Abel_Quest");
 		break;

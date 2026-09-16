@@ -265,3 +265,83 @@ InfoMessages_247 {Parece que esta es la casa que necesito. Debería registrar to
 InfoMessages_248 {Has recibido perlas pequeñas: @<iSmall> uds.}
 InfoMessages_249 {Has recibido perlas grandes: @<iBig> uds.}
 InfoMessages_250 {Ha pasado una hora...}
+InfoMessages_251 {No hay suficiente dinero (2500)}
+InfoMessages_252 {La tarde del día siguiente...}
+InfoMessages_253 {Unas horas después...}
+InfoMessages_254 {Ha caído la noche...}
+InfoMessages_255 {Se necesita un arma cuerpo a cuerpo. Equipa una hoja.}
+InfoMessages_256 {Las campanas de alarma sonaron en la ciudad y a bordo del barco. Peter Blood y sus compañeros de infortunio no vivieron para ver el amanecer...}
+InfoMessages_257 {Has recibido un mapa del tesoro}
+InfoMessages_258 {Han pasado varias semanas...}
+InfoMessages_259 {Necesario}
+InfoMessages_260 {Comprobación no superada: cofres de oro (4)}
+InfoMessages_261 {Secreto descubierto}
+InfoMessages_262 {Insuficiente}
+InfoMessages_263 {Actual}
+InfoMessages_264 {¡El capitán está en cubierta!}
+InfoMessages_265 {La tripulación ha sido derrotada. ¡El capitán se ha quedado completamente solo!}
+InfoMessages_266 {La tripulación del barco ha sido aniquilada. ¡El capitán se ha quedado solo!}
+
+InfoMessages_267
+{
+Descartado: @<sItemName> - @<iDropQuantity> uds.
+}
+
+InfoMessages_268 {Faro de Tortuga. Algún tiempo después...}
+
+InfoMessages_269 {Pasaron treinta minutos...}
+
+InfoMessages_270 {Tomaste la carta de Raoul.}
+
+InfoMessages_271 {Puedes abandonar la mesa pulsando la tecla 'Intro'.}
+
+InfoMessages_272 {Al mismo tiempo...}
+
+InfoMessages_273 {Tiempo después, no lejos del asentamiento de La Vega...}
+
+InfoMessages_274 {40 minutos después, en casa de Michel Le Basque...}
+
+InfoMessages_275 {Algún tiempo después...}
+
+InfoMessages_276 {La carta fue enviada con éxito.}
+
+InfoMessages_277 {La noche siguiente, no lejos del campamento español...}
+
+InfoMessages_278 {Tiempo después, cerca de las Islas Caimán...}
+
+InfoMessages_279 {Han transcurrido 3 horas...}
+
+InfoMessages_280 {Pasó algún tiempo...}
+
+InfoMessages_281 {El indígena Atauco embarcó en el barco como pasajero.}
+
+InfoMessages_282 {¡Una fragata española aparece en el horizonte! Ha puesto rumbo a interceptarla.}
+
+InfoMessages_283 {Tiempo después, el barco enemigo fue inspeccionado minuciosamente. Todo lo de valor cayó en manos de los vencedores.}
+
+InfoMessages_284 {Pasaron dos días. Aparecieron velas en el horizonte...}
+
+InfoMessages_285 {Unas horas después...}
+
+InfoMessages_286 {La cabaña de Michel Le Basque. Unas horas después...}
+
+InfoMessages_287 {Pasaron varios días. Los compañeros se separaron cerca de la bahía de Aguadilla...}
+
+InfoMessages_288 {Esa misma noche...}
+
+InfoMessages_289 {Los prisioneros fueron liberados y escoltados al campamento indígena. Pasaron varias horas...}
+
+InfoMessages_290 {Han pasado dos días...}
+
+InfoMessages_291 {Esa misma mañana...}
+
+InfoMessages_292 {Al día siguiente, al mediodía...}
+
+InfoMessages_293 {Pasó una hora. Cabo de las Esperanzas Perdidas...}
+
+InfoMessages_294 {Han transcurrido 30 minutos...}
+
+InfoMessages_295 {Pasaron dos días. Todos los objetos de valor fueron cargados en barcos aliados...}
+InfoMessages_296 {Los bucaneros desaprueban}
+InfoMessages_297 {Los bucaneros aprueban}
+InfoMessages_298 {El gobernador no perdonó la larga ausencia de Peter Blood. Ese mismo día, el capataz Kent lo azotó hasta matarlo.}

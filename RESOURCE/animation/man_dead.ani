@@ -1,0 +1,94 @@
+; mitrokosta - анимка для уже лежащих трупов
+
+animation = man.an
+
+data = "Turn speed", "5.5"
+
+;DEATH - Варианты смертей в бою   =============================================
+[death_0]
+	speed = 1.5
+	type = normal
+	start_time = 6070
+	end_time = 6071	
+	loop = false	
+	data = "Blend time", "0.8"		; sec
+	data = "Probability", "1.0"
+	data = "Angle", "330.0"
+	event = "Blade to hand", 6070, normal
+
+[death_1]
+	speed = 1.5
+	type = normal
+	start_time = 6145
+	end_time = 6146	
+	loop = false	
+	data = "Blend time", "0.8"		; sec
+	data = "Probability", "1.0"
+	data = "Angle", "330.0"
+	event = "Blade to hand", 6145, normal
+	
+[death_2]
+	speed = 1.5
+	type = normal
+	start_time = 6221
+	end_time = 6222
+	loop = false
+	data = "Blend time", "2.0"		; sec
+	data = "Probability", "1.0"
+	data = "Angle", "330.0"
+	event = "Blade to hand", 6221, normal
+
+[death_3]
+	speed = 1.5
+	type = normal
+	start_time = 6280
+	end_time = 6281
+	loop = false	
+	data = "Blend time", "0.8"		; sec
+	data = "Probability", "1.0"
+	data = "Angle", "140.0"
+	event = "Blade to hand", 6280, normal
+
+
+;СМЕРТЬ - Варианты для мирных жителей =========================================
+[death_citizen_1]
+	start_time = 370
+	end_time = 371
+	loop = false
+	data = "Blend time", "0.3"		; sec
+	data = "Probability", "1.0"
+	data = "Angle", "340.0"
+	event = "Blade to belt", 370, normal
+	
+[death_citizen_2]
+	start_time = 422
+	end_time = 423
+	loop = false
+	data = "Blend time", "0.3"		; sec
+	data = "Probability", "1.0"
+	data = "Angle", "340.0"
+	event = "Blade to belt", 422, normal
+
+;Смерть из положения труса
+[death_afraid_1]
+	speed = 1.5
+	type = normal
+	start_time = 567
+	end_time = 568	
+	loop = false	
+	data = "Blend time", "0.8"		; sec
+	data = "Probability", "1.0"
+	data = "Angle", "340.0"
+	event = "Blade to belt", 567, normal
+	
+;Смерть из положения труса
+[death_afraid_2]
+	speed = 1.5
+	type = normal
+	start_time = 567
+	end_time = 568	
+	loop = false	
+	data = "Blend time", "0.8"		; sec
+	data = "Probability", "1.0"
+	data = "Angle", "340.0"
+	event = "Blade to belt", 567, normal

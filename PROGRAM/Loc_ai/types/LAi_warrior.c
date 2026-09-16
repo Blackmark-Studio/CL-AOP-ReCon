@@ -82,6 +82,23 @@ void LAi_type_warrior_Init(aref chr)
 void LAi_type_warrior_CharacterUpdate(aref chr, float dltTime)
 {
 	if (LAi_IsDead(chr)) return;
+	if (chr.chr_ai.tmpl == LAI_TMPL_DIALOG) return;
+	
+	if (CheckAttribute(chr, "FreeFighter"))
+	{
+		if (SendMessage(GetMainCharacter(), "ls", MSG_CHARACTER_EX_MSG, "CheckFightMode") == 0)
+		{
+			if (SendMessage(chr, "ls", MSG_CHARACTER_EX_MSG, "CheckFightMode") != 0) LAi_SetFightMode(chr, false);
+			if (chr.chr_ai.tmpl != LAI_TMPL_FOLLOW) LAi_tmpl_SetFollow(chr, GetMainCharacter(), -1.0); 
+			return; 
+		}
+		else
+		{
+			if (SendMessage(chr, "ls", MSG_CHARACTER_EX_MSG, "CheckFightMode") == 0) LAi_SetFightMode(chr, true);
+			if (chr.chr_ai.tmpl != LAI_TMPL_FIGHT && chr.chr_ai.tmpl != LAI_TMPL_FOLLOW) LAi_tmpl_SetFollow(chr, GetMainCharacter(), -1.0);
+		}
+	}
+
 	int trg = -1;
 	//Ссылка на ветку с параметрами
 	aref type;
@@ -248,7 +265,12 @@ void LAi_type_warrior_NeedDialog(aref chr, aref by)
 
 //Запрос на диалог, если возвратить true то в этот момент можно начать диалог
 bool LAi_type_warrior_CanDialog(aref chr, aref by)
-{	
+{
+	if (CheckAttribute(chr, "FreeFighter"))
+	{
+		if (chr.chr_ai.tmpl == LAI_TMPL_FIGHT) return false;
+		return true;
+	}
 	if(sti(chr.chr_ai.type.dialog) == 0) return false;
 	//Если просто стоим, то согласимся
 	if(chr.chr_ai.tmpl == LAI_TMPL_STAY) return true;

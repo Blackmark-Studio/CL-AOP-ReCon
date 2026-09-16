@@ -1,4 +1,4 @@
-#define GOODS_QUANTITY  52
+#define GOODS_QUANTITY  55
 
 #define GOOD_BALLS	    	0
 #define GOOD_GRAPES	    	1
@@ -34,30 +34,33 @@
 #define GOOD_FRUITS     	29
 #define GOOD_OIL        	30
 #define GOOD_BRICK      	31
+#define GOOD_SALT	      	32
+#define GOOD_MEAT			33
+#define GOOD_HIDE	    	34
 //
-#define GOOD_SLAVES     	32
-#define GOOD_GOLD       	33
-#define GOOD_SILVER	    	34
-#define GOOD_PINCTADA		35
+#define GOOD_SLAVES     	35
+#define GOOD_GOLD       	36
+#define GOOD_SILVER	    	37
+#define GOOD_PINCTADA		38
 //   cannons ............
-#define GOOD_CANNON_3   	36
-#define GOOD_CANNON_6   	37
-#define GOOD_CANNON_8    	38
-#define GOOD_CANNON_12   	39
-#define GOOD_CANNON_16   	40
-#define GOOD_CANNON_20   	41
-#define GOOD_CANNON_24   	42
-#define GOOD_CANNON_32   	43
-#define GOOD_CANNON_36   	44
-#define GOOD_CANNON_42   	45
+#define GOOD_CANNON_3   	39
+#define GOOD_CANNON_6   	40
+#define GOOD_CANNON_8    	41
+#define GOOD_CANNON_12   	42
+#define GOOD_CANNON_16   	43
+#define GOOD_CANNON_20   	44
+#define GOOD_CANNON_24   	45
+#define GOOD_CANNON_32   	46
+#define GOOD_CANNON_36   	47
+#define GOOD_CANNON_42   	48
 
-#define GOOD_CULVERINE_8  	46
-#define GOOD_CULVERINE_12 	47
-#define GOOD_CULVERINE_16 	48
-#define GOOD_CULVERINE_24 	49
-#define GOOD_CULVERINE_32 	50
+#define GOOD_CULVERINE_8  	49
+#define GOOD_CULVERINE_12 	50
+#define GOOD_CULVERINE_16 	51
+#define GOOD_CULVERINE_24 	52
+#define GOOD_CULVERINE_32 	53
 
-#define GOOD_CANNON_48   	51	//нет в продаже
+#define GOOD_CANNON_48   	54	//нет в продаже
 
 object  Goods[GOODS_QUANTITY];
 

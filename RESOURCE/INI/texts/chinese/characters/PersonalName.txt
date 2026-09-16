@@ -1,619 +1,801 @@
-Bridgetown_Hostess_name {Angela}
-Bridgetown_Hostess_lastname {Jolie}
-Jackman_name {Jacob}
-Jackman_lastname {Fackman}
-Jackman_ship {Manchester}
-Jackman_ship2 {Fortunato}
-Pirates_tavernkeeper_name {Lucky}
-Pirates_tavernkeeper_lastname {Rosin}
-Pirates_trader_name {Pascal}
-Pirates_trader_lastname {Voisier}
-Pirates_shipyarder_name {Master}
-Pirates_shipyarder_lastname {Alexus}
-Cartahena_Lightman_name {Alvarez}
-Cartahena_Lightman_lastname {Ortega}
-Villemstad_waitress_name {Tanneken}
-Villemstad_waitress_lastname {Clemens}
-Villemstad_trader_name {João}
-Villemstad_trader_lastname {Ilhayo}
-Villemstad_usurer_name {Josef Nunen}
-Villemstad_usurer_lastname {de Fonquesao}
-Villemstad_Hostess_name {Dianta}
-PortRoyal_Hostess_name {Litisia}
-HWIC_headclerk_name {Coris}
-HWIC_headclerk_lastname {Gerrits}
-Minetown_Commend_name {Laurence}
-Minetown_Commend_lastname {Turk}
-Edward_Mansfield_name {Edward}
-Edward_Mansfield_lastname {Mansfield}
-FortFrance_tavernkeeper_name {Jolly Jerome}
-FortFrance_Hostess_name {Angelica}
-LeFransua_Mayor_name {Bartholomew}
-LeFransua_Mayor_lastname {Rogers}
-Charles_Hostess_name {Vivienne}
-LeFransua_tavernkeeper_name {Snakeman}
-LeFransua_tavernkeeper_lastname {Yang}
-Charles_tavernkeeper_name {One-Eyed}
-Charles_tavernkeeper_lastname {Stede Hunter}
-BoatChar_name {Sailor}
-Skorlupka_name {Cockleshell}
-Panama_Hostess_name {Simona}
-PortoBello_tavernkeeper_name {Rolando}
-PortoBello_tavernkeeper_lastname {Pizarro}
-Providencia_Mayor_name {Edward}
-Providencia_Mayor_lastname {Collier}
-Providencia_tavernkeeper_name {Jay}
-Providencia_tavernkeeper_lastname {Turcolton}
-Providencia_trader_name {Itzhak}
-Providencia_trader_lastname {Katzman}
-Providencia_Hostess_name {Desiree}
-Providencia_Hostess_lastname {Vernon-de-Vernon}
-Richard_Soukins_name {Richard}
-Richard_Soukins_lastname {Sowkins}
-Richard_Soukins_ship {Lucky one}
-PuertoPrincipe_trader_name {John}
-PuertoPrincipe_trader_lastname {Norton}
-SantoDomingo_Hostess_name {Milantra}
-Marigo_Hostess_name {Yolanta}
-Santiago_Mayor_name {Jose}
-Santiago_Mayor_lastname {Sancho Jiménez}
-eng_guber_name {Thomas}
-eng_guber_lastname {Mediford}
-spa_guber_name {Francisco}
-spa_guber_lastname {Oregon y Gascon}
-fra_guber_name {Bertrand}
-fra_guber_lastname {d’Ogeron}
-hol_guber_name {Peter}
-hol_guber_lastname {Stuyvesant}
-Henry_Morgan_name {Henry}
-Henry_Morgan_lastname {Morgan}
-Henry_Morgan_ship {Oxford}
-Oliver_Green_name {Oliver}
-Oliver_Green_lastname {Green}
-Ascold_name {Askold}
-Isabella_name {Isabella}
-Isabella_lastname {Olivares}
-Tortuga_Hostess_name {Margarita}
-Sharp_name {Bartholomew}
-Sharp_lastname {Sharp}
-Sharp_ship {Carronade}
-Sharp_mapEnc {brig 'Sharponosets'}
-Blaze_name {Blaze}
-Blaze_lastname {Sharp}
-Blaze_ship {Swift Boar}
-BerglarSentJons_name {Waitn}
-BerglarSentJons_lastname {Orest}
-BerglarFortFrance_name {William}
-BerglarFortFrances_lastname {Krapo}
-BerglarMarigo_name {Jeff}
-BerglarMarigo_lastname {Baardgras}
-BerglarPanama_name {Pele}
-BerglarPanama_lastname {Verge}
-BerglarCartahena_name {Barrilo}
-BerglarCartahena_lastname {Jovem}
-BerglarSantaCatalina_name {Jenere}
-BerglarSantaCatalina_lastname {Giardino}
-QuetionsVillemstad_name {Irma}
-QuetionsVillemstad_lastname {Shoal}
-QuetionsPortPax_name {Liliana}
-QuetionsPortPax_lastname {Labbe}
+Bridgetown_Hostess_name {安吉拉}
+Bridgetown_Hostess_lastname {朱莉}
+Jackman_name {雅各布}
+Jackman_lastname {法克曼}
+Jackman_ship {曼彻斯特号}
+Jackman_ship2 {幸运号}
+Pirates_tavernkeeper_name {幸运儿}
+Pirates_tavernkeeper_lastname {罗辛}
+Pirates_trader_name {帕斯卡}
+Pirates_trader_lastname {沃塞尔}
+Pirates_shipyarder_name {亚历克斯}
+Pirates_shipyarder_lastname {大师}
+Cartahena_Lightman_name {阿尔瓦雷斯}
+Cartahena_Lightman_lastname {奥尔特加}
+Villemstad_waitress_name {坦妮肯}
+Villemstad_waitress_lastname {克莱门斯}
+Villemstad_trader_name {若昂}
+Villemstad_trader_lastname {伊利亚约}
+Villemstad_usurer_name {约瑟夫 努恩}
+Villemstad_usurer_lastname {德 丰克萨奥}
+Villemstad_Hostess_name {迪安塔}
+PortRoyal_Hostess_name {莉蒂西亚}
+HWIC_headclerk_name {科里斯}
+HWIC_headclerk_lastname {格里茨}
+Minetown_Commend_name {劳伦斯}
+Minetown_Commend_lastname {特克}
+Edward_Mansfield_name {爱德华}
+Edward_Mansfield_lastname {曼斯菲尔德}
+FortFrance_tavernkeeper_name {快活杰罗姆}
+FortFrance_Hostess_name {安洁丽卡}
+LeFransua_Mayor_name {巴塞洛缪}
+LeFransua_Mayor_lastname {罗杰斯}
+Charles_Hostess_name {薇薇安}
+LeFransua_tavernkeeper_name {“蛇人”}
+LeFransua_tavernkeeper_lastname {扬}
+Charles_tavernkeeper_name {“独眼龙”}
+Charles_tavernkeeper_lastname {斯蒂德 亨特}
+BoatChar_name {水手}
+Skorlupka_name {小破船}
+Panama_Hostess_name {西蒙娜}
+PortoBello_tavernkeeper_name {罗兰多}
+PortoBello_tavernkeeper_lastname {皮萨罗}
+Providencia_Mayor_name {爱德华}
+Providencia_Mayor_lastname {科利尔}
+Providencia_tavernkeeper_name {杰伊}
+Providencia_tavernkeeper_lastname {图科尔顿}
+Providencia_trader_name {伊扎克}
+Providencia_trader_lastname {卡茨曼}
+Providencia_Hostess_name {黛丝瑞}
+Providencia_Hostess_lastname {德 维农}
+Richard_Soukins_name {理查德}
+Richard_Soukins_lastname {索金斯}
+Richard_Soukins_ship {幸运儿号}
+PuertoPrincipe_trader_name {约翰}
+PuertoPrincipe_trader_lastname {诺顿}
+SantoDomingo_Hostess_name {米兰特拉}
+Marigo_Hostess_name {约兰塔}
+Santiago_Mayor_name {何塞}
+Santiago_Mayor_lastname {桑乔 希门尼斯}
+eng_guber_name {托马斯}
+eng_guber_lastname {莫迪福德}
+spa_guber_name {弗朗西斯科}
+spa_guber_lastname {奥雷贡-加斯孔}
+fra_guber_name {贝尔特朗}
+fra_guber_lastname {多热龙}
+hol_guber_name {彼得}
+hol_guber_lastname {斯特伊弗桑特}
+Henry_Morgan_name {亨利}
+Henry_Morgan_lastname {摩根}
+Henry_Morgan_ship {牛津号}
+Oliver_Green_name {奥利弗}
+Oliver_Green_lastname {格林}
+Ascold_name {阿斯科德}
+Isabella_name {伊莎贝拉}
+Isabella_lastname {奥利瓦雷斯}
+Tortuga_Hostess_name {玛格丽塔}
+Sharp_name {巴塞洛缪}
+Sharp_lastname {夏普}
+Sharp_ship {卡隆号}
+Sharp_mapEnc {双桅横帆船“夏普号”}
+Blaze_name {布雷兹}
+Blaze_lastname {夏普}
+Blaze_ship {迅猪号}
+BerglarSentJons_name {怀特}
+BerglarSentJons_lastname {奥雷斯特}
+BerglarFortFrance_name {威廉}
+BerglarFortFrances_lastname {克拉波}
+BerglarMarigo_name {杰夫}
+BerglarMarigo_lastname {巴德格拉斯}
+BerglarPanama_name {佩莱}
+BerglarPanama_lastname {贝尔赫}
+BerglarCartahena_name {巴里洛}
+BerglarCartahena_lastname {霍文}
+BerglarSantaCatalina_name {杰内雷}
+BerglarSantaCatalina_lastname {贾尔迪诺}
+QuetionsVillemstad_name {艾玛}
+QuetionsVillemstad_lastname {格伦}
+QuetionsPortPax_name {莉莉安}
+QuetionsPortPax_lastname {拉贝}
 PoorKillSponsor_name {Oliver}
 PoorKillSponsor_lastname {Trust}
-OffMushketer_name {Humphrey}
-OffMushketer_lastname {Douglas}
-QuestPirate1_name {Captain}
-QuestPirate1_lastname {Goodley}
-DeadmansGod_name {Mictlantecuhtli}
-MaximTailor_name {Maxim}
-MaximTailor_lastname {Taylor}
-MaryCelesteCapitan_name {Mary Celeste}
-EmptyShip_name {The ship is empty}
-EmptyShip_mapEnc {brigantine "Mary Celeste"}
-WheelFortunaShip_ship {Wheel of Fortune}
-Atilla_name {Atilla}
-PDM_PJ_Strajnik_1_name {Jory}
-PDM_PJ_Strajnik_2_name {Aler}
-Josephine_Lodet2_name {Old gal}
-Husband_name {Salvator}
-Husband_lastname {Olivares}
-YokoDias_name {Yoko}
-YokoDias_lastname {Diaz}
-Angellica_name {Angelica}
-Angellica_lastname {Sharp}
-OfMush1_name {Nicolas}
-OfMush1_lastname {Rimalye}
-OfMush2_name {Magnus}
-OfMush2_lastname {von Kokkai}
-BlueBirdCapitain_name {Sandro}
-BlueBirdCapitain_lastname {Thorn}
-BlueBirdCapitain_ship {Bluebird}
-Pirates_trader2_name {Benjamin}
-Pirates_trader2_lastname {Franklin}
-Emillio_name {Emilio}
-Emillio_lastname {Garcia}
-CapGoodly_name {Captain}
-CapGoodly_lastname {Goodley}
-Aivory_name {John}
-Aivory_lastname {Avery}
-Orry_name {Orri}
-Orry_lastname {Bruce}
-LeonCapitain_ship {Leon}
-LeonCapitain_mapEnc {Frigate "Leon"}
-QuestCap_PL7_ship {Elusive}
-QuestCap_PL7_mapEnc {Battleship}
-JohnMorris_name {John}
-JohnMorris_lastname {Morris}
-JohnMorris_ship {Lagoon}
-MushketCap_name {Albert}
-MushketCap_lastname {Zivert}
-MushketCap_ship {Arrow}
-MushketCap_mapEnc {Brigantine "Arrow"}
-GiveKeyMan_name {Hill}
-GiveKeyMan_lastname {Corner}
-LSCMayor_name {Chad}
-LSCMayor_lastname {Privateer}
-Ment_1_name {Jean}
-Ment_1_lastname {Burdy}
-Ment_2_name {Levis}
-Ment_2_lastname {Grommer}
-Ment_3_name {Frigate}
-Ment_3_lastname {Herring}
-Ment_4_name {Raul}
-Ment_4_lastname {Cruz}
-Ment_5_name {Gerard}
-Ment_5_lastname {Fore}
-Ment_6_name {John}
-Ment_6_lastname {Workman}
-LSCBarmen_name {Hill}
-LSCBarmen_lastname {Brunner}
-LSCwaitress_name {Armo}
-LSCwaitress_lastname {Dyulin}
-PedroHurtado_name {Pedro}
-PedroHurtado_lastname {Hurtado}
-ZhilBaru_name {Gilles}
-ZhilBaru_lastname {Baru}
-TristanBorcher_name {Tristan}
-TristanBorcher_lastname {Borcher}
-RoyelHaag_name {Royal}
-RoyelHaag_lastname {The Hague}
-DominicLegro_name {Dominic}
-DominicLegro_lastname {Legros}
-JorgeStouks_name {George}
-JorgeStouks_lastname {Stokes}
-HenryFolder_name {Henry}
-HenryFolder_lastname {Folder}
-FelixMendoza_name {Felix}
-FelixMendoza_lastname {Mendoza}
-RodgerWoyler_name {Roger}
-RodgerWoyler_lastname {Vowler}
-AndreLabor_name {Andre}
-AndreLabor_lastname {Labor}
-StefanKleyn_name {Stefan}
-StefanKleyn_lastname {Klein}
-ThomasFlann_name {Thomas}
-ThomasFlann_lastname {Flann}
-PabloBarades_name {Pablo}
-PabloBarades_lastname {Barades}
-LSC_Priest_name {padre}
-LSC_Priest_lastname {Ángel}
-SandraGomes_name {Sandra}
-SandraGomes_lastname {Gómez}
-MonikaRight_name {Monica}
-MonikaRight_lastname {Wright}
-LSC_Trader_name {Eric}
-LSC_Trader_lastname {Joost}
-LSC_PrisonerHead_name {Gabriel}
-LSC_PrisonerHead_lastname {d’Exmes}
-LSC_Prisoner1_name {Thomas}
-LSC_Prisoner1_lastname {Boyle}
-LSC_Usurer_name {Augusto}
-LSC_Usurer_lastname {Main topsail}
-Mechanic_name {Henrik}
-Mechanic_lastname {Wedeker}
-ElisTaylor_name {Alice}
-ElisTaylor_lastname {Taylor}
-OreliBertin_name {Oréli}
-OreliBertin_lastname {Bertin}
-LeaToors_name {Lea}
-LeaToors_lastname {Toors}
-ElizaCalvo_name {Eliza}
-ElizaCalvo_lastname {Calvo}
-SesilGalard_name {Cécile}
-SesilGalard_lastname {Galliard}
-MalcolmFawn_name {Malcolm}
-MalcolmFawn_lastname {Fawn}
-Narval_head_name {Thomas}
-Narval_head_lastname {Greenspy}
-Narval_1_name {Fritz}
-Narval_1_lastname {Holt}
-Narval_2_name {Roger}
-Narval_2_lastname {Adin}
-Narval_3_name {Nick}
-Narval_3_lastname {Nolty}
-Narval_4_name {Eat up}
-Narval_4_lastname {Grazid}
-Narval_5_name {Milon}
-Narval_5_lastname {Berji}
-Casper_head_name {Kasper}
-Casper_head_lastname {Longman}
-Casper_1_name {Denis}
-Casper_1_lastname {Hopfer}
-Casper_2_name {Faucher}
-Casper_2_lastname {Hecht}
-Casper_3_name {Serge}
-Casper_3_lastname {Chambon}
-Casper_4_name {Felipe}
-Casper_4_lastname {Armas}
-Casper_6_name {Juan}
-Casper_6_lastname {Kobo}
-Casper_7_name {Tagel}
-Casper_7_lastname {Edo}
-Casper_8_name {Zenon}
-Casper_8_lastname {Barrio}
-Casper_9_name {Miguel}
-Casper_9_lastname {Batis}
-Casper_10_name {Martin}
-Casper_10_lastname {Camus}
-Casper_11_name {Mark}
-Casper_11_lastname {Bishop}
-LSCBarmen2_name {Florence}
-LSCBarmen2_lastname {Slot}
-LSCwaitress2_name {Flora}
-LSCwaitress2_lastname {Prescott}
-Azzy_name {demon}
-Azzy_lastname {Azzi}
-QuestMan_Shore_name {Silvio}
-QuestMan_Shore_lastname {Ricci}
-Montesuma_name {Montezuma}
-AztecCitizen_1_name {Meshitli}
-AztecCitizen_2_name {Ahuitzotl}
-Beyns_name {Andrew}
-Beyns_lastname {Baines}
-Pitt_name {Jeremy}
-Pitt_lastname {Pitt}
-CapGobart_name {captain}
-CapGobart_lastname {Hobart}
-Bridgetown_Mayor_name {Governor}
-Bridgetown_Mayor_lastname {Stede}
-Bishop_name {Colonel}
-Bishop_lastname {Bishop}
-Griffin_name {Ed}
-Griffin_lastname {Griffin}
-Hells_name {Tobias}
-Hells_lastname {Hells}
-Quest_Smuggler_name {Dark}
-Quest_Smuggler_lastname {Identity}
-Volverston_name {Nedward}
-Volverston_lastname {Wolverstone}
-Hugtorp_name {Nathaniel}
-Hugtorp_lastname {Hagthorp}
-Dieke_name {Nicholas}
-Dieke_lastname {Dike}
-Ogl_name {Ned}
-Ogl_lastname {Ogle}
-Slave_Quest_name {Sandro}
-Slave_Quest_lastname {Thorne}
-Nettl_name {James}
-Nettl_lastname {Nettall}
-Spain_spy_name {Sergio}
-Spain_spy_lastname {Crespo}
-Winterwood_name {Stuart}
-Winterwood_lastname {Winterwood}
-Fisherman_name {Arnold}
-Fisherman_lastname {Summerlight}
-Jack_name {Jacques}
-Jack_lastname {Nightingale}
-Mainer_name {John}
-Mainer_lastname {Miner}
-Nabuki_name {Nabuki}
-Nabuki_lastname {Anaconda}
-Jimmy_name {Tamango}
-RatCap_name {François}
-RatCap_lastname {Gonthier}
-Slavetrader_name {Sven}
-Slavetrader_lastname {Karlson}
-zpqCaptain_name {Small}
-zpqCaptain_lastname {Jimmy}
-zpqCaptain_ship {Normandy}
-pSQB_Captain_name {Sirencio}
-pSQB_Captain_lastname {Begracci}
-pSQB_Captain_ship {Bacchus}
-pSQ_Captain_name {Norman}
-pSQ_Captain_lastname {Vigo}
-pSQ_Captain_ship {Septima}
-Houm_name {Hannibal}
-Houm_lastname {Hill}
-Houmn_ship {Dead Man’s Head}
-Houm_helper_name {Andre}
-Houm_helper_lastname {Tar}
-Houm_helper_ship {Rottooth}
-RatSeaOfficer_name {First Mate}
-RatSeaOfficer_lastname {Barnes}
-RatSeaOfficer_ship {Adelaide}
-Carlos_name {Carlos}
-Carlos_lastname {Cashier}
-RatOfficer_name {Matias}
-RatOfficer_lastname {Green}
-Halen_name {Martin}
-Halen_lastname {van Halen}
-Halen_ship {Fortune’s Lover}
-Halen_helper_ship {Oorzac}
-Miko_name {Miko}
-Miko_lastname {Pistolero}
-Jafar_name {Ja}
-Jafar_lastname {Preston}
-Jafar_ship {The Phantom of the Shadow}
-Tichingitu_name {Tichingitu}
-John_Coxon_name {John}
-John_Coxon_lastname {Coxswain}
-Atlaua_name {Atlaua}
-Xiuhtecuhtli_name {Xiuhtecuhtli}
-Huitzilopochtli_name {Huitzilopochtli}
-Xolotl_name {Xolotl}
-Huahuantli_name {Huauantli}
-Ostin_name {Alberto}
-Ostin_lastname {Gaodio}
-CaptainAttack_1_ship {Esunatrampa}
-CaptainAttack_1_ship2 {Orangist}
-CaptainAttack_1_ship3 {Santa Agueda}
-CaptainAttack_1_ship4 {La Rochelle}
-CaptainAttack_1_ship5 {Desdechado}
-Hoverd_Tantum_name {Goverd}
-Hoverd_Tantum_lastname {Tantum}
-Morris_Willams_name {Morris}
-Morris_Willams_lastname {Williams}
-Morris_Willams_ship {Favorite}
-Bocman_Willams_name {Alain}
-Bocman_Willams_lastname {Smith}
-Jillians_Husband_name {Tom}
-Jillians_Husband_lastname {Etterberry}
-MorrisWillamsSkelet_name {Lambert}
-MorrisWillamsSkelet_lastname {Groff}
-Dick_Manson_name {Dick}
-Dick_Manson_lastname {Manson}
-Spa_Attack_name {Manoel Rivero}
-Spa_Attack_lastname {Pardal}
-Spa_Attack_ship {Escado}
-Thomas_Linch_name {Colonel Thomas}
-Thomas_Linch_lastname {Lynch}
-Thomas_Modiford_name {Thomas}
-Thomas_Modiford_lastname {Mediford}
-EdwardMansfield_name {Captain}
-EdwardMansfield_lastname {Cooper}
-Stranger_HL7_name {Guillaume}
-Stranger_HL7_lastname {Doughty}
-LoranDeGraf_name {Laurent}
-LoranDeGraf_lastname {de Graaf}
-LoranDeGraf_ship {Cominte}
-Francisco_name {Francisco}
-Francisco_lastname {de San Agostinho}
-JansenDeFonceicao_name {Jansen Nunen}
-JansenDeFonceicao_lastname {de Fonquesao}
-JansenDeFonceicao_ship {Desperate}
-Panama_houseSp1_Room_name {Yakov Lopez}
-Panama_houseSp1_Room_lastname {de Fonseca}
-RockBrasilian_name {Fate}
-RockBrasilian_lastname {The Brazilian}
-RockBrasilian_ship {Desperate}
-AnryDEstre_name {Andre}
-AnryDEstre_lastname {d'Estrées}
-OurCaptain_1_name {Manoel}
-OurCaptain_1_lastname {Rivero Pardal}
-OurCaptain_1_ship {Squadron}
-Pir_Attack_name {Moses}
-Pir_Attack_lastname {Vauclin}
-Pir_Attack_ship {Orleans}
-Pir_Attack2_name {captain}
-Pir_Attack2_lastname {Ansel}
-Pir_Attack2_ship {Zeus}
-IsaAttackCap_ship {Enthusiastic}
-AscoldCaptainAttack_ship {Mortifero}
-AnnaDeLeiva_name {Anna Ramirez}
-AnnaDeLeiva_lastname {de Leyva}
-FraLineNpc_1_name {Jose}
-FraLineNpc_1_lastname {Ramirez de Leyva}
-Huan_name {Juan}
-Galeno_lastname {Galleon}
-DeLeivaBrother_1_name {Mario}
-DeLeivaBrother_1_lastname {Esteban de Leyva}
-DeLeivaBrother_2_name {Roberto}
-DeLeivaBrother_2_lastname {Vincenzo de Leyva}
-MigelDeValdes_name {Miguel}
-MigelDeValdes_lastname {de Valdes}
-CrabInside_name {Giant crab}
-LeifEricson_name {Leif}
-LeifEricson_lastname {Erikson}
-Slave_woman_name {Isaura}
-Ratlover_name {Jeanne}
-Ratlover_lastname {Molière}
-James_Callow_name {James}
-James_Callow_lastname {Callow}
-James_Callow_ship {Greedy Billy}
-Andreas_Fickler_name {Andreas}
-Andreas_Fickler_lastname {Fickler}
-QuetionsPortPax_MuzhPassajir_name {Vensan}
-QuetionsPortPax_MuzhPassajir_lastname {Labbe}
-FL_officer_name {Mark}
-FL_officer_lastname {Levois}
-GrammonMother_name {Rebecca}
-GrammonMother_lastname {de Grammon}
-GrammonSister_name {Natalie}
-GrammonSister_lastname {de Grammon}
-GrammonPchar_name {Michel}
-GrammonPchar_lastname {de Grammont}
-OfficerMother_name {Rebecca de Grammon}
-OfficerMother_lastname {and Marc Levois}
-tmp_soldier0_name {Soldier and}
-tmp_soldier0_lastname {Marc Lavoie}
-DorianFurnier_name {Dorian}
-DorianFurnier_lastname {Fournier}
-FL_Mary_name {Marie}
-JozephFushe_name {Joseph}
-JozephFushe_lastname {Fouché}
-FL_Petit_name {Jean}
-FL_Petit_lastname {Petit}
-FL_Pablo_name {Pablo}
-FL_Pablo_lastname {Geoffroy}
-JozephFusheFL3_1_name {Stranger}
-JozephFusheFL3_1_lastname {and Captain Fouché}
-FL_DurantePascual_name {Durante}
-FL_DurantePascual_lastname {Pascual}
-FL1_s68_name {Patrolman and}
-FL1_s68_lastname {Captain Fouché}
-FL_DuranRimber_name {Duran}
-FL_DuranRimber_lastname {Rimber}
-FL_granie_name {Jean-Jacques}
-FL_granie_lastname {Granié}
-FL2_s18_name {Jean-Jacques Granier and}
-FL2_s18_lastname {one of the bandits}
-FL2_s20_name {One of the bandits and}
-FL2_s20_lastname {Duran Rimbert}
-FL_blackTwister_captain_name {Amye}
-FL_blackTwister_captain_lastname {Alfand}
-FL_ElizabetBrulua_name {Elizabeth}
-FL_ElizabetBrulua_lastname {Brulot}
-diplomat_name {Diplomat}
-JohnDavy_name {White}
-JohnDavy_lastname {Boy}
-DesMoinesHead_name {Fernando}
-DesMoinesHead_lastname {Torres}
-Hunter_name {Bounty hunter}
-Hunter_mapEnc {Bounty hunters}
-Andre_Abel_Quest_Pirate_1_name {Christian}
-Andre_Abel_Quest_Pirate_1_lastname {Kopner}
-Andre_Abel_Quest_Pirate_1_ship {Aurora}
-Andre_Abel_Quest_Pirate_2_name {Robert}
-Andre_Abel_Quest_Pirate_2_lastname {Nedervin}
-Andre_Abel_Quest_Pirate_2_ship {Antelope}
-Andre_Abel_Quest_Pirate_3_name {Thomas}
-Andre_Abel_Quest_Pirate_3_lastname {Chambers}
-Andre_Abel_Quest_Pirate_3_ship {Susan}
-Martin_Bleker_name {Martin}
-Martin_Bleker_lastname {Blacker}
-SiegeCap_mapEnc {a squadron of warships}
-Gentlemen_mapEnc {Gentlemen of fortune}
-GhostCapt_name {Van}
-GhostCapt_lastname {der Decken}
-GhostCapt_ship {The Flying Dutchman}
-GhostCapt_mapEnc {The Flying Dutchman}
-SoleiRoyalCaptain_mapEnc {Soleil Royal}
-Sailor_name {Jim}
-Sailor_lastname {Hopkins}
-Villemstad_Cemeteryman_name {Antonio}
-Villemstad_Cemeteryman_lastname {Betancur}
-Andre_Abel_name {Andre}
-Andre_Abel_lastname {Abel}
-Andre_Abel_ship {Orion}
-QStranger_name {Alex}
-QStranger_lastname {Winner}
-Gillian_Atterbury_name {Jillian}
-Gillian_Atterbury_lastname {Etterberry}
-PDM_PK_Francheska_name {Francesca}
-PDM_PK_Francheska_lastname {Tonto}
-Josephine_Lodet_name {Josephine}
-Josephine_Lodet_lastname {Lodet}
-Albermal_name {duke}
-Albermal_lastname {Albemarle}
-Edward_Mansfield2_name {Alistair}
-Edward_Mansfield2_lastname {Good}
-Legran_name {Pierre}
-Legran_lastname {Legrand}
-Olone_name {François}
-Olone_lastname {Olonne}
-Olone_ship {Bloody Demon}
-Bonrepo_name {Marquis}
-Bonrepo_lastname {Bonrepos}
-Chumakeiro_name {Aaron Mendes}
-Chumakeiro_lastname {Chumacero}
-ServantDEstre_name {Guido}
-AntonioDeSouza_name {Antoniu}
-AntonioDeSouza_lastname {de Souza}
-JohnLids_name {John}
-JohnLids_lastname {Leeds}
-JohnLids_ship {Antwerp}
-AttackSantiago_name {Gregorio Florido}
-AttackSantiago_lastname {de Balboa}
-Himenes_name {Jose Sancho}
-Himenes_lastname {Jimenez}
-InesDeLasCierras_name {Ines}
-InesDeLasCierras_lastname {de Las Sierras}
-AntonioDeBarras_name {Antonio}
-AntonioDeBarras_lastname {de Barras}
-AntonioDeBarras_ship {Isabella}
-CaptainGay_name {Captain}
-CaptainGay_lastname {Hey}
-LizSheppard_name {Elizabeth}
-LizSheppard_lastname {Sheppard}
-DanielleOff_name {Daniel}
-DanielleOff_lastname {Sheppard}
-DanielleOff_ship {Queen}
-Danielle_mapEnc {Frigate "Queen"}
-Alan_MacLine_name {Alan}
-Alan_MacLine_lastname {MacLaine}
-EdwardLoy_name {Edward}
-EdwardLoy_lastname {Lowe}
-EdwardLoy_mapEnc {Sea wolf}
-GrunMaurits_name {Maurits}
-GrunMaurits_lastname {Shoal}
-GrunMaurits_ship {Louisa}
-KoriBoll_name {Cory}
-KoriBoll_lastname {Ball}
-KoriBoll_ship {Colossus}
-QuestPirate2_name {John}
-QuestPirate2_lastname {Bolton}
-Blad_ship {Arabella}
-Blad2_ship {Cinco Llagas}
-LSC_ship {Warhound}
-Providencia_PortMan_ship {Seville}
-MisStid_name {Mrs.}
-MisStid_lastname {Stede}
-Waker_name {doctor}
-Waker_lastname {Waker}
-Den_name {mister}
-Den_lastname {Dan}
-Weston_name {Charles}
-Weston_lastname {Weston}
-Spain_spy2_lastname {Spaniard}
-Pablo_Loco_Idol_name {Winnetou}
-Rosita_name {Rosita}
-Rosita_lastname {Fernandez}
-PDM_Pinki_Skelet_name {Pinkamina}
-PDM_Pinki_Skelet_lastname {Ration}
-PDM_Pinki_Skelet2_name {Dave}
-PDM_Pinki_Skelet2_lastname {Pyrogin}
-PDM_NK_Viktor_name {Victor}
-PDM_NK_Viktor_lastname {The shaving}
-FernandoGonsales_name {Fernando}
-FernandoGonsales_lastname {Gonzales}
-Monkey_name {Monkey}
-DeathMonkey_name {Undead monkey}
-Eddy_Black_name {Eddy}
-Eddy_Black_lastname {Black}
-Tizer_name {Tizer}
-Tizer_lastname {Den}
-Kirk_name {colonel}
-Kirk_lastname {Kirk}
-Slave_name {Winarick}
-SecretFortCommander_name {Justino}
-SecretFortCommander_lastname {de Coelho}
-SecretFortGuard_name {Angelo}
-Tiburon_ship {Tiburon}
-Stormbreaker_ship {Stormbreaker}
-HWIC_head_name {Matthias}
-HWIC_head_lastname {Beck}
-PDM_secretary_name {Bartholomew}
-PDM_secretary_lastname {Ulster}
-PDM_ONV_Carla_name {Carla}
-PDM_ONV_Carla_lastname {Merry}
-PDM_Octavio_Lambrini_name {Ottavio}
-PDM_Octavio_Lambrini_lastname {Lambrini}
-Hugo_Lesopilka_name {Hugo}
-Hugo_Lesopilka_lastname {Lumbersaw}
-PDM_Odli_name {Thomas}
-PDM_Odli_lastname {Audley}
-PDM_ONV_Silino_Sav_name {Silino}
-PDM_ONV_Silino_Sav_lastname {Sev}
-PDM_ONW_Inqizitor_name {Inquisitor}
-PDM_CL_Pokupatel_name {James}
-PDM_CL_Pokupatel_lastname {Ballantrae}
-PDM_Octavio_Lambrini_Clone_name {Lambrini and the Stranger}
+OffMushketer_name {汉弗莱}
+OffMushketer_lastname {道格拉斯}
+QuestPirate1_name {古德雷}
+QuestPirate1_lastname {船长}
+DeadmansGod_name {米克特兰堤库特里}
+MaximTailor_name {马克西姆}
+MaximTailor_lastname {泰勒}
+MaryCelesteCapitan_name {玛丽.赛勒斯特号}
+EmptyShip_name {这艘船空无一人}
+EmptyShip_mapEnc {双桅帆船“玛丽.赛勒斯特号”}
+WheelFortunaShip_ship {命运之轮号}
+Atilla_name {阿提拉}
+PDM_PJ_Strajnik_1_name {乔里}
+PDM_PJ_Strajnik_2_name {阿勒}
+Josephine_Lodet2_name {老妇人}
+Husband_name {萨尔瓦多}
+Husband_lastname {奥利瓦雷斯}
+YokoDias_name {阳子}
+YokoDias_lastname {迪亚兹}
+Angellica_name {安洁莉卡}
+Angellica_lastname {夏普}
+OfMush1_name {尼古拉}
+OfMush1_lastname {里马莱}
+OfMush2_name {马格努斯}
+OfMush2_lastname {冯 科凯}
+BlueBirdCapitain_name {桑德罗}
+BlueBirdCapitain_lastname {索恩}
+BlueBirdCapitain_ship {蓝鸟号}
+Pirates_trader2_name {本杰明}
+Pirates_trader2_lastname {富兰克林}
+Emillio_name {埃米利奥}
+Emillio_lastname {加西亚}
+CapGoodly_name {古德雷}
+CapGoodly_lastname {船长}
+Aivory_name {约翰}
+Aivory_lastname {埃弗里}
+Orry_name {奥里}
+Orry_lastname {布鲁斯}
+LeonCapitain_ship {莱昂号}
+LeonCapitain_mapEnc {护卫舰“莱昂号”}
+QuestCap_PL7_ship {迷踪号}
+QuestCap_PL7_mapEnc {战列舰}
+JohnMorris_name {约翰}
+JohnMorris_lastname {莫里斯}
+JohnMorris_ship {泻湖号}
+MushketCap_name {阿尔伯特}
+MushketCap_lastname {齐维尔特}
+MushketCap_ship {长箭号}
+MushketCap_mapEnc {快速双桅横帆船“长箭号”}
+GiveKeyMan_name {希尔}
+GiveKeyMan_lastname {科纳}
+LSCMayor_name {查德}
+LSCMayor_lastname {卡帕}
+Ment_1_name {让}
+Ment_1_lastname {贝尔迪}
+Ment_2_name {莱维斯}
+Ment_2_lastname {格罗默}
+Ment_3_name {弗里盖特}
+Ment_3_lastname {赫林}
+Ment_4_name {劳尔}
+Ment_4_lastname {克鲁兹}
+Ment_5_name {热拉尔}
+Ment_5_lastname {福尔}
+Ment_6_name {约翰}
+Ment_6_lastname {沃克曼}
+LSCBarmen_name {希尔}
+LSCBarmen_lastname {布伦纳}
+LSCwaitress_name {阿莫尔}
+LSCwaitress_lastname {杜林}
+PedroHurtado_name {佩德罗}
+PedroHurtado_lastname {乌尔塔多}
+ZhilBaru_name {吉莱斯}
+ZhilBaru_lastname {巴茹}
+TristanBorcher_name {特里斯坦}
+TristanBorcher_lastname {布彻}
+RoyelHaag_name {罗亚尔}
+RoyelHaag_lastname {丹哈格}
+DominicLegro_name {多米尼克}
+DominicLegro_lastname {勒格罗}
+JorgeStouks_name {乔治}
+JorgeStouks_lastname {斯托克斯}
+HenryFolder_name {亨利}
+HenryFolder_lastname {福尔德}
+FelixMendoza_name {菲力克斯}
+FelixMendoza_lastname {门多萨}
+RodgerWoyler_name {罗杰}
+RodgerWoyler_lastname {沃伊勒}
+AndreLabor_name {安德烈}
+AndreLabor_lastname {拉包尔}
+StefanKleyn_name {斯特凡}
+StefanKleyn_lastname {克莱因}
+ThomasFlann_name {托马斯}
+ThomasFlann_lastname {弗兰}
+PabloBarades_name {巴勃罗}
+PabloBarades_lastname {巴拉德斯}
+LSC_Priest_name {安赫尔}
+LSC_Priest_lastname {神父}
+SandraGomes_name {桑德拉}
+SandraGomes_lastname {戈麦斯}
+MonikaRight_name {莫妮卡}
+MonikaRight_lastname {莱特}
+LSC_Trader_name {埃里克}
+LSC_Trader_lastname {约斯特}
+LSC_PrisonerHead_name {加布里埃尔}
+LSC_PrisonerHead_lastname {德埃姆}
+LSC_Prisoner1_name {托马斯}
+LSC_Prisoner1_lastname {博伊勒}
+LSC_Usurer_name {奥古斯托}
+LSC_Usurer_lastname {布拉姆斯}
+Mechanic_name {亨里克}
+Mechanic_lastname {韦德克}
+ElisTaylor_name {爱丽丝}
+ElisTaylor_lastname {泰勒}
+OreliBertin_name {奥雷莉}
+OreliBertin_lastname {贝尔坦}
+LeaToors_name {莉娅}
+LeaToors_lastname {图尔斯}
+ElizaCalvo_name {埃莉莎}
+ElizaCalvo_lastname {卡尔沃}
+SesilGalard_name {塞西莉娅}
+SesilGalard_lastname {加拉尔}
+MalcolmFawn_name {马尔科姆}
+MalcolmFawn_lastname {福恩}
+Narval_head_name {托马斯}
+Narval_head_lastname {格林斯皮}
+Narval_1_name {弗里茨}
+Narval_1_lastname {霍尔特}
+Narval_2_name {罗杰}
+Narval_2_lastname {亚丁}
+Narval_3_name {尼克}
+Narval_3_lastname {诺尔蒂}
+Narval_4_name {杰里}
+Narval_4_lastname {格拉齐德}
+Narval_5_name {米隆}
+Narval_5_lastname {贝尔热}
+Casper_head_name {卡斯帕}
+Casper_head_lastname {朗曼}
+Casper_1_name {丹尼斯}
+Casper_1_lastname {霍珀}
+Casper_2_name {富歇}
+Casper_2_lastname {赫希特}
+Casper_3_name {塞尔日}
+Casper_3_lastname {香邦}
+Casper_4_name {菲利佩}
+Casper_4_lastname {阿尔马斯}
+Casper_6_name {胡安}
+Casper_6_lastname {科沃}
+Casper_7_name {塔格尔}
+Casper_7_lastname {埃多}
+Casper_8_name {泽诺}
+Casper_8_lastname {巴里奥}
+Casper_9_name {米格尔}
+Casper_9_lastname {巴蒂斯}
+Casper_10_name {马丁}
+Casper_10_lastname {加缪}
+Casper_11_name {马克}
+Casper_11_lastname {毕晓普}
+LSCBarmen2_name {弗洛伦斯}
+LSCBarmen2_lastname {斯洛特}
+LSCwaitress2_name {弗洛拉}
+LSCwaitress2_lastname {普雷斯科特}
+Azzy_name {恶魔}
+Azzy_lastname {埃兹}
+QuestMan_Shore_name {西尔维奥}
+QuestMan_Shore_lastname {里奇}
+Montesuma_name {蒙特祖玛}
+AztecCitizen_1_name {墨希特利}
+AztecCitizen_2_name {维佐特尔}
+Beyns_name {安德鲁}
+Beyns_lastname {贝恩斯}
+Pitt_name {杰里米}
+Pitt_lastname {皮特}
+CapGobart_name {霍巴特}
+CapGobart_lastname {上尉}
+Bridgetown_Mayor_name {斯蒂德}
+Bridgetown_Mayor_lastname {市长}
+Bishop_name {毕晓普}
+Bishop_lastname {上校}
+Griffin_name {埃德}
+Griffin_lastname {格里芬}
+Hells_name {托比亚斯}
+Hells_lastname {赫尔斯}
+Quest_Smuggler_name {神秘人}
+Quest_Smuggler_lastname {无名氏}
+Volverston_name {内德华}
+Volverston_lastname {沃弗斯通}
+Hugtorp_name {纳撒尼尔}
+Hugtorp_lastname {哈格索普}
+Dieke_name {尼古拉斯}
+Dieke_lastname {戴克}
+Ogl_name {内德}
+Ogl_lastname {奥格尔}
+Slave_Quest_name {桑德罗}
+Slave_Quest_lastname {索恩}
+Nettl_name {詹姆斯}
+Nettl_lastname {纳塔尔}
+Spain_spy_name {塞尔吉奥}
+Spain_spy_lastname {克雷斯波}
+Winterwood_name {斯图尔特}
+Winterwood_lastname {温特伍德}
+Fisherman_name {阿诺德}
+Fisherman_lastname {萨默莱特}
+Jack_name {杰克}
+Jack_lastname {斯派洛}
+Mainer_name {约翰}
+Mainer_lastname {迈纳}
+Nabuki_name {纳布基}
+Nabuki_lastname {安纳康达}
+Jimmy_name {塔曼戈}
+RatCap_name {弗朗索瓦}
+RatCap_lastname {贡蒂尔}
+Slavetrader_name {斯文}
+Slavetrader_lastname {卡尔森}
+zpqCaptain_name {“滑头”}
+zpqCaptain_lastname {吉米}
+zpqCaptain_ship {诺曼底号}
+pSQB_Captain_name {西伦西奥}
+pSQB_Captain_lastname {贝格拉奇}
+pSQB_Captain_ship {巴克斯号}
+pSQ_Captain_name {诺曼}
+pSQ_Captain_lastname {维戈}
+pSQ_Captain_ship {七女号}
+Houm_name {汉尼拔}
+Houm_lastname {霍尔姆}
+Houmn_ship {骸首号}
+Houm_helper_name {安德烈}
+Houm_helper_lastname {塔尔}
+Houm_helper_ship {烂牙号}
+RatSeaOfficer_name {大副}
+RatSeaOfficer_lastname {巴恩斯}
+RatSeaOfficer_ship {阿德莱德号}
+Carlos_name {卡洛斯}
+Carlos_lastname {卡西尔}
+RatOfficer_name {马蒂亚斯}
+RatOfficer_lastname {格林}
+Halen_name {马丁}
+Halen_lastname {范哈伦}
+Halen_ship {幸运情人号}
+Halen_helper_ship {奥扎克号}
+Miko_name {米科}
+Miko_lastname {皮斯托莱罗}
+Jafar_name {贾}
+Jafar_lastname {佩斯顿}
+Jafar_ship {暗影号}
+Tichingitu_name {蒂钦吉图}
+John_Coxon_name {约翰}
+John_Coxon_lastname {考克森}
+Atlaua_name {阿特拉瓦}
+Xiuhtecuhtli_name {修特库特利}
+Huitzilopochtli_name {维齐洛波奇特利}
+Xolotl_name {索洛特尔}
+Huahuantli_name {华万特利}
+Ostin_name {阿尔贝托}
+Ostin_lastname {高迪奥}
+CaptainAttack_1_ship {陷阱号}
+CaptainAttack_1_ship2 {奥兰治主义号}
+CaptainAttack_1_ship3 {圣阿格达号}
+CaptainAttack_1_ship4 {拉罗谢尔号}
+CaptainAttack_1_ship5 {不幸者号}
+Hoverd_Tantum_name {戈夫德}
+Hoverd_Tantum_lastname {坦图姆}
+Morris_Willams_name {莫里斯}
+Morris_Willams_lastname {威廉姆斯}
+Morris_Willams_ship {宠儿号}
+Bocman_Willams_name {阿兰}
+Bocman_Willams_lastname {史密斯}
+Jillians_Husband_name {汤姆}
+Jillians_Husband_lastname {阿特伯里}
+MorrisWillamsSkelet_name {兰伯特}
+MorrisWillamsSkelet_lastname {格罗夫}
+Dick_Manson_name {迪克}
+Dick_Manson_lastname {曼森}
+Spa_Attack_name {曼努埃尔 里韦罗}
+Spa_Attack_lastname {帕达尔}
+Spa_Attack_ship {埃斯库多号}
+Thomas_Linch_name {托马斯 林奇}
+Thomas_Linch_lastname {上校}
+Thomas_Modiford_name {托马斯}
+Thomas_Modiford_lastname {莫迪福德}
+EdwardMansfield_name {库珀}
+EdwardMansfield_lastname {船长}
+Stranger_HL7_name {纪尧姆}
+Stranger_HL7_lastname {道蒂}
+LoranDeGraf_name {劳伦斯}
+LoranDeGraf_lastname {德 格拉夫}
+LoranDeGraf_ship {科明特号}
+Francisco_name {弗朗西斯科}
+Francisco_lastname {德 圣阿古斯丁}
+JansenDeFonceicao_name {约瑟夫 努恩}
+JansenDeFonceicao_lastname {德 丰克萨奥}
+JansenDeFonceicao_ship {绝望号}
+Panama_houseSp1_Room_name {雅各布 洛佩斯}
+Panama_houseSp1_Room_lastname {德 丰塞卡}
+RockBrasilian_name {巴西人}
+RockBrasilian_lastname {洛克}
+RockBrasilian_ship {绝望号}
+AnryDEstre_name {安德烈}
+AnryDEstre_lastname {德雷斯特}
+OurCaptain_1_name {曼努埃尔}
+OurCaptain_1_lastname {里韦罗 帕达尔}
+OurCaptain_1_ship {埃斯库多号}
+Pir_Attack_name {摩西}
+Pir_Attack_lastname {沃克林}
+Pir_Attack_ship {奥尔良号}
+Pir_Attack2_name {安塞尔}
+Pir_Attack2_lastname {船长}
+Pir_Attack2_ship {宙斯号}
+IsaAttackCap_ship {狂喜号}
+AscoldCaptainAttack_ship {致命号}
+AnnaDeLeiva_name {安娜 拉米雷斯}
+AnnaDeLeiva_lastname {德莱瓦}
+FraLineNpc_1_name {何塞}
+FraLineNpc_1_lastname {拉米雷斯 德莱瓦}
+Huan_name {胡安}
+Galeno_lastname {盖伦}
+DeLeivaBrother_1_name {马里奥 埃斯特班}
+DeLeivaBrother_1_lastname {德莱瓦}
+DeLeivaBrother_2_name {罗伯托 文森佐}
+DeLeivaBrother_2_lastname {德莱瓦}
+MigelDeValdes_name {米格尔}
+MigelDeValdes_lastname {德 瓦尔德斯}
+CrabInside_name {巨蟹}
+LeifEricson_name {莱夫}
+LeifEricson_lastname {埃里克松}
+Slave_woman_name {伊佐拉}
+Ratlover_name {珍妮}
+Ratlover_lastname {莫里埃}
+James_Callow_name {詹姆斯}
+James_Callow_lastname {卡洛}
+James_Callow_ship {贪婪比利号}
+Andreas_Fickler_name {安德烈亚斯}
+Andreas_Fickler_lastname {菲克勒}
+QuetionsPortPax_MuzhPassajir_name {文森特}
+QuetionsPortPax_MuzhPassajir_lastname {拉贝}
+FL_officer_name {马克}
+FL_officer_lastname {勒沃斯}
+GrammonMother_name {丽贝卡}
+GrammonMother_lastname {德 格拉蒙}
+GrammonSister_name {娜塔莉}
+GrammonSister_lastname {德 格拉蒙}
+GrammonPchar_name {米歇尔}
+GrammonPchar_lastname {德 格拉蒙}
+OfficerMother_name {丽贝卡 德 格拉蒙}
+OfficerMother_lastname {和 马克 拉瓦约}
+tmp_soldier0_name {士兵 和}
+tmp_soldier0_lastname {马克 拉瓦约}
+DorianFurnier_name {多里安}
+DorianFurnier_lastname {福尼尔}
+FL_Mary_name {玛丽亚}
+JozephFushe_name {约瑟夫}
+JozephFushe_lastname {富歇}
+FL_Petit_name {让}
+FL_Petit_lastname {珀蒂}
+FL_Pablo_name {巴勃罗}
+FL_Pablo_lastname {杰弗里}
+JozephFusheFL3_1_name {陌生人}
+JozephFusheFL3_1_lastname {和 富歇船长}
+FL_DurantePascual_name {杜兰特}
+FL_DurantePascual_lastname {帕斯夸尔}
+FL1_s68_name {巡逻兵 和}
+FL1_s68_lastname {富歇船长}
+FL_DuranRimber_name {杜兰}
+FL_DuranRimber_lastname {林伯特}
+FL_granie_name {让-雅克}
+FL_granie_lastname {加尼尔}
+FL2_s18_name {让-雅克 加尼尔 和}
+FL2_s18_lastname {其中一名强盗}
+FL2_s20_name {其中一名强盗 和}
+FL2_s20_lastname {杜兰 林伯特}
+FL_blackTwister_captain_name {艾米}
+FL_blackTwister_captain_lastname {阿尔方德}
+FL_ElizabetBrulua_name {伊丽莎白}
+FL_ElizabetBrulua_lastname {布吕洛}
+diplomat_name {使节}
+JohnDavy_name {白色}
+JohnDavy_lastname {男孩}
+DesMoinesHead_name {费尔南多}
+DesMoinesHead_lastname {托雷斯}
+Hunter_name {赏金猎人}
+Hunter_mapEnc {赏金猎人们}
+Andre_Abel_Quest_Pirate_1_name {克里斯蒂安}
+Andre_Abel_Quest_Pirate_1_lastname {科普纳}
+Andre_Abel_Quest_Pirate_1_ship {极光号}
+Andre_Abel_Quest_Pirate_2_name {罗伯特}
+Andre_Abel_Quest_Pirate_2_lastname {内德文}
+Andre_Abel_Quest_Pirate_2_ship {羚羊号}
+Andre_Abel_Quest_Pirate_3_name {托马斯}
+Andre_Abel_Quest_Pirate_3_lastname {钱伯斯}
+Andre_Abel_Quest_Pirate_3_ship {苏珊号}
+Martin_Bleker_name {马丁}
+Martin_Bleker_lastname {布莱克}
+SiegeCap_mapEnc {海军中队}
+Gentlemen_mapEnc {财富绅士}
+GhostCapt_name {范}
+GhostCapt_lastname {德 戴肯}
+GhostCapt_ship {飞翔的荷兰人号}
+GhostCapt_mapEnc {飞翔的荷兰人号}
+SoleiRoyalCaptain_mapEnc {皇家太阳号}
+Sailor_name {吉米}
+Sailor_lastname {霍普金斯}
+Villemstad_Cemeteryman_name {安东尼奥}
+Villemstad_Cemeteryman_lastname {贝坦库尔}
+Andre_Abel_name {安德烈}
+Andre_Abel_lastname {阿贝尔}
+Andre_Abel_ship {俄里翁号}
+QStranger_name {亚历克斯}
+QStranger_lastname {温纳}
+Gillian_Atterbury_name {吉莉安}
+Gillian_Atterbury_lastname {阿特伯里}
+PDM_PK_Francheska_name {弗朗西丝卡}
+PDM_PK_Francheska_lastname {通托}
+Josephine_Lodet_name {约瑟芬}
+Josephine_Lodet_lastname {洛德}
+Albermal_name {阿尔伯马尔}
+Albermal_lastname {公爵}
+Edward_Mansfield2_name {阿利斯泰尔}
+Edward_Mansfield2_lastname {古德}
+Legran_name {皮埃尔}
+Legran_lastname {拉格朗}
+Olone_name {弗朗索瓦}
+Olone_lastname {奥洛奈}
+Olone_ship {血腥恶魔号}
+Bonrepo_name {邦勒波}
+Bonrepo_lastname {侯爵}
+Chumakeiro_name {亚伦 门德斯}
+Chumakeiro_lastname {丘马塞罗}
+ServantDEstre_name {圭多}
+AntonioDeSouza_name {安东尼奥}
+AntonioDeSouza_lastname {德索萨}
+JohnLids_name {约翰}
+JohnLids_lastname {利兹}
+JohnLids_ship {安特卫普号}
+AttackSantiago_name {格雷戈里奥 弗洛里多}
+AttackSantiago_lastname {德 巴尔博亚}
+Himenes_name {何塞 桑乔}
+Himenes_lastname {希门尼斯}
+InesDeLasCierras_name {伊内斯}
+InesDeLasCierras_lastname {德拉斯 西耶拉斯}
+AntonioDeBarras_name {安东尼奥}
+AntonioDeBarras_lastname {德 巴拉斯}
+AntonioDeBarras_ship {伊莎贝拉号}
+CaptainGay_name {盖伊}
+CaptainGay_lastname {船长}
+LizSheppard_name {伊丽莎白}
+LizSheppard_lastname {谢泼德}
+DanielleOff_name {丹尼尔}
+DanielleOff_lastname {谢泼德}
+DanielleOff_ship {女王号}
+Danielle_mapEnc {快速护卫舰“女王号”}
+Alan_MacLine_name {艾伦}
+Alan_MacLine_lastname {麦克莱恩}
+EdwardLoy_name {爱德华}
+EdwardLoy_lastname {洛}
+EdwardLoy_mapEnc {海狼号}
+GrunMaurits_name {毛里茨}
+GrunMaurits_lastname {格伦}
+GrunMaurits_ship {路易莎号}
+KoriBoll_name {科里}
+KoriBoll_lastname {鲍尔}
+KoriBoll_ship {巨人号}
+QuestPirate2_name {约翰}
+QuestPirate2_lastname {伯顿}
+Blad_ship {阿拉贝拉号}
+Blad2_ship {圣五伤号}
+LSC_ship {战獒号}
+Providencia_PortMan_ship {塞维利亚号}
+MisStid_name {斯蒂德}
+MisStid_lastname {夫人}
+Waker_name {瓦克}
+Waker_lastname {医生}
+Den_name {丹}
+Den_lastname {先生}
+Weston_name {查尔斯}
+Weston_lastname {韦斯顿}
+Spain_spy2_lastname {西班牙人}
+Pablo_Loco_Idol_name {维内图}
+Rosita_name {罗西塔}
+Rosita_lastname {费尔南德斯}
+PDM_Pinki_Skelet_name {黑化}
+PDM_Pinki_Skelet_lastname {碧琪}
+PDM_Pinki_Skelet2_name {戴夫}
+PDM_Pinki_Skelet2_lastname {派罗金}
+PDM_NK_Viktor_name {“剃刀”}
+PDM_NK_Viktor_lastname {维克托}
+FernandoGonsales_name {费尔南多}
+FernandoGonsales_lastname {冈萨雷斯}
+Monkey_name {猴子}
+DeathMonkey_name {不死猴}
+Eddy_Black_name {埃迪}
+Eddy_Black_lastname {布莱克}
+Tizer_name {提塞}
+Tizer_lastname {丹}
+Kirk_name {柯克}
+Kirk_lastname {上校}
+Slave_name {维纳里克}
+SecretFortCommander_name {尤斯蒂诺}
+SecretFortCommander_lastname {德 科埃略}
+SecretFortGuard_name {安杰洛}
+Tiburon_ship {鲨鱼号}
+Stormbreaker_ship {破浪号}
+HWIC_head_name {马蒂亚斯}
+HWIC_head_lastname {贝克}
+PDM_secretary_name {巴塞洛缪}
+PDM_secretary_lastname {阿尔斯特}
+PDM_ONV_Carla_name {快乐}
+PDM_ONV_Carla_lastname {卡拉}
+PDM_Octavio_Lambrini_name {奥塔维奥}
+PDM_Octavio_Lambrini_lastname {兰布里尼}
+Hugo_Lesopilka_name {“伐木工”}
+Hugo_Lesopilka_lastname {雨果}
+PDM_Odli_name {托马斯}
+PDM_Odli_lastname {奥德利}
+PDM_ONV_Silino_Sav_name {西利诺}
+PDM_ONV_Silino_Sav_lastname {塞夫}
+PDM_ONW_Inqizitor_name {审判官}
+PDM_CL_Pokupatel_name {詹姆斯}
+PDM_CL_Pokupatel_lastname {巴兰特雷}
+PDM_Octavio_Lambrini_Clone_name {兰布里尼与陌生人}
+Arabella_name {阿拉贝拉}
+Kent_name {监工}
+Kent_lastname {肯特}
+AralellaAndSlave_name {阿拉贝拉和她的仆人}
+Mary_name {玛丽}
+Mary_lastname {特雷尔}
+Governor_Stid {斯蒂德市长}
+BishopAndGardner {毕晓普上校和加德纳船长}
+BishopAndArabella {毕晓普上校和阿拉贝拉}
+CBL_Officers {致船员}
+Diego_name {迭戈}
+Miguel_name {米格尔}
+Esteban_name {埃斯特班}
+De_Espinosa_lastname {德·埃斯皮诺萨}
+Encarnacion_ship {恩卡纳西翁}
+EPL_PZD_Pilar_name {皮拉尔}
+EPL_PZD_Pilar_lastname {特尔内拉}
+EPL_PZD_Herineldo_name {赫里内尔多}
+EPL_PZD_Herineldo_lastname {加尔贝德}
+EPL_PZD_Palturs_name {帕尔图斯}
+EPL_PZD_Palturs_lastname {凯特}
+EPL_PZD_Ruud_name {鲁德}
+EPL_PZD_Ruud_lastname {布鲁尔}
+EPL_PZD_Andres_name {安德烈斯}
+EPL_PZD_Andres_lastname {福塞卡}
+EPL_PZD_Aletta_name {阿莱塔}
+EPL_PZD_Gabriel_name {加布里埃尔}
+EPL_PZD_Gabriel_lastname {德·塞古恩萨}
+EPL_Rebekka_name {丽贝卡}
+EPL_Rebekka_lastname {雷米多斯}
+EPL_Aurelio_name {奥雷利奥}
+EPL_Aurelio_lastname {塞拉诺}
+EPL_Gasten_name {加斯滕}
+EPL_Gasten_lastname {科特斯}
+EPL_Sofia_name {索菲娅}
+EPL_Sofia_lastname {德拉皮耶达}
+Remedios_lastname {雷梅迪奥斯}
+EPL_RedBull_ship {红牛}
+
+Alonso_de_Torralba_name {阿隆索}
+Alonso_de_Torralba_lastname {德·托拉尔巴}
+Esteban_Molina_name {埃斯特班}
+Esteban_Molina_lastname {莫利纳}
+Martin_Kesada_name {马丁}
+Martin_Kesada_lastname {克萨达}
+Buccaneer_trader_name {英格博格}
+Buccaneer_trader_lastname {达普库奈特}
+Buccaneer_shipyarder_1_name {夏尔}
+Buccaneer_shipyarder_1_lastname {沃邦}
+Esteban_Molina_ship {拉帕洛玛}
+Martin_Kesada_ship {圣卡塔利娜}
+Royal_SantaMarta_Cap_ship {圣罗莎}
+Royal_SanIldefonso_Cap_ship {圣伊尔德丰索}
+Royal_NuestraSenora_Cap_ship {圣母}
+Royal_SanJuan_Cap_ship {圣米格尔}
+Margarita_Prize_ship {玛格丽塔}
+Atauko_name {阿陶科}
+
+Bartolomeo_Huntsman_name {巴托洛梅奥}
+
+Bertran_Waband_lastname {波带}
+
+Bertran_Waband_name {伯特兰}
+
+Captain_Hollis_lastname {霍利斯}
+
+Captain_Hollis_name {指挥官}
+
+Daniel_Monbar_lastname {蒙巴尔}
+
+Daniel_Monbar_name {丹尼尔}
+
+Daniel_Monbar_ship {金色卡斯蒂利亚}
+Daniel_Monbar_ship_Monbarina {蒙巴里娜}
+
+Diego_de_Vargas_lastname {瓦尔加斯}
+
+Diego_de_Vargas_name {迭戈}
+
+Diego_de_Vargas_ship {圣玛格丽塔}
+
+Esteban_Ruiz_lastname {鲁伊斯}
+
+Esteban_Ruiz_name {埃斯特班}
+
+Etien_Marso_lastname {马尔索}
+
+Etien_Marso_name {艾蒂安}
+
+Etien_Marso_ship {黑背鸥}
+
+Fransua_Olone_lastname {奥隆}
+
+Fransua_Olone_name {弗朗索瓦}
+
+Fransua_Olone_ship_Fleo {弗利奥}
+
+Fransua_Olone_ship_Soledad {索莱达}
+
+Gaspar_Leru_lastname {勒鲁}
+
+Gaspar_Leru_name {加斯帕}
+
+Henry_Tessie_lastname {泰西尔}
+
+Henry_Tessie_name {亨利}
+
+Ignasio_Vela_lastname {维拉}
+
+Ignasio_Vela_name {伊格纳西奥}
+
+Inigo_Cabrera_lastname {德卡布雷拉}
+
+Inigo_Cabrera_name {伊尼戈}
+
+Keys_lagoon_Punitive_Cap_1_ship {圣地亚哥}
+
+Keys_lagoon_Punitive_Cap_2_ship {圣卡塔利娜}
+
+Keys_lagoon_Punitive_Cap_3_ship {维多利亚女王}
+
+Keys_lagoon_Punitive_Cap_4_ship {圣米格尔}
+
+Keys_lagoon_Punitive_mapEnc {唐·阿隆索·德·巴尔加斯的惩罚中队}
+
+Luc_Delacroix_lastname {德拉克罗瓦}
+
+Luc_Delacroix_name {卢克}
+
+Maracaibo_Mayor_lastname {德·塞斯佩德斯}
+
+Maracaibo_Mayor_name {罗德里戈}
+
+Mary_Belfler_lastname {贝勒弗勒}
+
+Mary_Belfler_name {玛丽}
+
+Mateo_Serrano_lastname {塞拉诺}
+
+Mateo_Serrano_name {马特奥}
+
+Mayak_Bandit_1_lastname {戴着口罩}
+
+Mayak_Bandit_1_name {人类}
+
+Mishel_le_Bask_lastname {巴斯克人}
+
+Mishel_le_Bask_name {米歇尔}
+
+Mishel_le_Bask_ship {勒雷纳尔}
+
+Old_Loren_lastname {劳伦}
+
+Old_Loren_name {渔夫}
+
+Raul_Giom_lastname {纪尧姆}
+
+Raul_Giom_name {劳尔}
+
+Rimalier_lastname {里迈勒}
+
+Rimalier_name {尼古拉斯}
+
+Royal_SanJacinto_Cap_lastname {阿拉贡}
+
+Royal_SanJacinto_Cap_name {胡安}
+
+Royal_SanJacinto_Cap_ship {圣哈辛托}
+
+Royal_matros_name {水手}
+
+Sebastian_Rohas_lastname {罗哈斯}
+
+Sebastian_Rohas_name {塞巴斯蒂安}
+
+Thomas_Arellano_lastname {德阿雷利亚诺}
+
+Thomas_Arellano_name {托马斯}
+
+Yamai_name {山井}
+
+Young_Boy_Bask_name {雅各}

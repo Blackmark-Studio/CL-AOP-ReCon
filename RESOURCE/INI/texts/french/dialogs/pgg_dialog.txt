@@ -1193,10 +1193,10 @@ pgg_dialog_331 {
 Esclaves
 }
 pgg_dialog_332 {
-, s'est arrêté non loin de @<sLoc> près de la baie de @<GetConvertStr> pour se réapprovisionner.
+, s'est arrêté non loin de @<sLoc> près de la baie de @<XI_ConvertString> pour se réapprovisionner.
 }
 pgg_dialog_333 {
-, a été pris dans une tempête près de @<sLoc> et a coulé. Mais ils ont réussi à sauver une partie de la cargaison et ont accosté dans la baie à @<GetConvertStr> Maintenant, ils attendent l’arrivée de leur escadre.
+, a été pris dans une tempête près de @<sLoc> et a coulé. Mais ils ont réussi à sauver une partie de la cargaison et ont accosté dans la baie à @<XI_ConvertString> Maintenant, ils attendent l’arrivée de leur escadre.
 }
 pgg_dialog_334 {
 Ne traîne pas, parle vite!

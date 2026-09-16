@@ -1229,7 +1229,7 @@ Common_Tavern_364 {
 Bonne continuation.
 }
 Common_Tavern_365 {
-Bien sûr, j’ai ce qu’il vous faut, Docteur Blood. Mr. Griffin, dont vous avez récemment soigné la fracture, est un ancien armurier de métier. Sa maison n’est pas loin du domaine du Gouverneur Steed—allez le voir. Je suis certain qu’il ne vous refusera pas son aide.
+Hmm... D’accord, je sais qui il vous faut. Monsieur Griffin, dont vous avez remis la fracture il n’y a pas si longtemps, est un vieil armurier de métier. Sa maison se trouve non loin de la demeure du gouverneur Steed - allez le voir. Je suis certain qu’il ne vous refusera pas.
 }
 Common_Tavern_366 {
 Bonne continuation.
@@ -1491,4 +1491,11 @@ Merci! Tu m’as vraiment aidé!
 }
 Common_Tavern_432 {
 Je dois débarquer une partie de mon équipage.
+}
+
+LeBask_TavernRoom_1 {
+Monsieur Étienne Marceau loue actuellement ma chambre et l’a payée un mois d’avance. Je crains donc de ne pouvoir rien faire pour vous, capitaine.
+}
+LeBask_TavernRoom_2 {
+Quel dommage, vraiment regrettable...
 }

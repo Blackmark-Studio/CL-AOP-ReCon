@@ -1,0 +1,42 @@
+Bucaneer_woman_1 {
+Ah, Captain! Join us!
+}
+Bucaneer_woman_2 {
+Gladly.
+}
+Bucaneer_woman_3 {
+Captain! Glad to see you in good health. May the Holy Virgin keep your ship from reefs and Spanish patrols. Come to see how we're settling in?
+}
+Bucaneer_woman_4 {
+Exactly. I see you're slowly getting used to Tortuga's free air. What do you make of life here?
+}
+Bucaneer_woman_5 {
+Hear them singing, Captain? I look at these fires, the meat roasting, drink this burning wine, and still can't believe we're no longer in that cursed mine. Tortuga is loud and rough, these hunters bellow songs across the whole island, but to me it's the finest sound in the world now. After the silence of Vargas's underground cells... all this bustle is bringing me back to life.
+}
+Bucaneer_woman_6 {
+When we sat in the dark waiting for our fate, I begged God only for a quick death. And now look around! Monsieur le Basque's men... they may look like savages with soot-blackened faces and wild dances, but they have hearts of gold. Tonight's feast isn't merely rum and merriment - it's a celebration of our freedom. We'll never forget what you did for us.
+}
+Bucaneer_woman_7 {
+Captain! Drink with us! We won't take no for an answer. You know, I used to fear this island. Tortuga always seemed a breeding ground for sin and a haven for men bound for the gallows. But after we escaped Vargas's clutches... I understood that the real monsters wear expensive coats and weave intrigues, while here among the buccaneers one can find the truest protection.
+}
+Bucaneer_woman_8 {
+Drink, be merry, and forget Vargas. This day is yours.
+}
+Bucaneer_woman_9 {
+Tortuga knows how to celebrate. Enjoy your freedom, madam.
+}
+Bucaneer_woman_10 {
+Ah, Captain. Those damned muskets need cleaning again. Mine came back from hunting wild cattle yesterday and brought a whole mountain of meat for smoking. The smell of boucan has worked itself into every dress; there's no escaping it. But we don't complain - while the smokehouses are full, no one on Tortuga goes hungry.
+}
+Bucaneer_woman_11 {
+The sea is rough today. Every time the lads raid the Spanish coast, I can't find any peace. They say the patrols have grown savage lately. I pray to the Holy Virgin that our ship passes every reef safely and returns to harbor with a rich prize.
+}
+Bucaneer_woman_12 {
+Life here isn't for the delicate, that's certain. Yesterday I mended sailcloth; today I've spent all day over the pot, washing powder soot from shirts. But we're free here. No overseers, no taxes to the Crown. As long as we have powder and strong walls, Tortuga will remain a bone in the throat of the entire Spanish Empire.
+}
+Bucaneer_woman_13 {
+Have patience. Life on Tortuga has always been hard.
+}
+Bucaneer_woman_14 {
+Don't worry. Your men know their trade.
+}

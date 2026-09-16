@@ -1193,10 +1193,10 @@ pgg_dialog_331 {
 Slaves
 }
 pgg_dialog_332 {
-, stopped not far from @<sLoc> by the bay of @<GetConvertStr> to resupply.
+, stopped not far from @<sLoc> by the bay of @<XI_ConvertString> to resupply.
 }
 pgg_dialog_333 {
-, got caught in a storm near @<sLoc> and went down. But they managed to save part of the cargo and landed in the bay at @<GetConvertStr> Now they're waiting for their squadron to arrive.
+, got caught in a storm near @<sLoc> and went down. But they managed to save part of the cargo and landed in the bay at @<XI_ConvertString> Now they're waiting for their squadron to arrive.
 }
 pgg_dialog_334 {
 Don’t stall, out with it—quickly!

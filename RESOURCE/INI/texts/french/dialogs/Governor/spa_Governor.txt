@@ -1220,7 +1220,7 @@ spa_Governor_342 {
 Très bien, Don Francisco.
 }
 spa_Governor_343 {
-Capitaine, on dit que vous avez réussi à défendre Maracaibo! Sans exagérer, c’est un véritable exploit, señor@<GetAddress_Form>!
+Capitaine, on dit que vous avez réussi à défendre Maracaibo! Sans exagérer, c’est un véritable exploit, @<GetAddress_Form>!
 }
 spa_Governor_344 {
 Très bien! Maintenant, écoutez vos ordres.\nDans le cadre de la guerre de dévolution en cours avec la France au sujet des possessions espagnoles en Hollande, notre première et plus importante mission est d’attaquer Curaçao et Saint Martin. D’après un message intercepté, nous avons appris que les Hollandais consacrent d’énormes sommes aux besoins militaires de la France.\nNous ne pouvons pas en avoir la certitude, car toute la correspondance est chiffrée de manière particulière et le sens de la lettre est entièrement différent. Néanmoins, nous devons mettre un terme à cela — la puissance commerciale hollandaise doit être brisée!\nVous devez prendre d’assaut et piller les colonies hollandaises de Willemstad sur l’île de Curaçao, et Marigot sur l’île de Saint Martin. Tout le butin saisi lors de l’opération vous revient.

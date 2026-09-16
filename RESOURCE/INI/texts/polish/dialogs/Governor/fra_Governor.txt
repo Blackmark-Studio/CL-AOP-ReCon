@@ -1270,3 +1270,52 @@ I doprowadźcie „Soleil Royal” do porządku — ma być w pełnej gotowości
 fra_Governor_313 {
 Dobrze, panie.
 }
+
+fra_Governor_314_m {
+Wasza Ekscelencjo, przybyłem z polecenia Michela le Basque’a.
+}
+fra_Governor_314_f {
+Wasza Ekscelencjo, przybyłam z polecenia Michela le Basque’a.
+}
+fra_Governor_315 {
+Doprawdy? A cóż takiego, jeśli wolno spytać, zlecił panu monsieur le Basque?
+}
+fra_Governor_316 {
+Niepokoi go los fleuty „Róża Wiatrów”. O ile nam wiadomo, spodziewaliście się jej przybycia już wczoraj.
+}
+fra_Governor_317 {
+Kapitanie, to tajemnica państwowa i nie zamierzam jej z panem omawiać. Jestem gotów przymknąć oko na to, że posiada pan takie informacje, lecz radzę nie liczyć na nic więcej.
+}
+fra_Governor_318 {
+Proszę nie brać mojej natarczywości za grubiaństwo, ale muszę wyjaśnić powody niepokoju Michela. Na tym statku znajduje się osoba, na której przybyciu zależy mu osobiście. Poza tym prosił przypomnieć, że Tortugę uważa za swój dom i zawsze będzie działał w interesie obrony wyspy.
+}
+fra_Governor_319 {
+A zatem wie, jaki ładunek znajduje się na pokładzie?
+}
+fra_Governor_320 {
+O tym nie wspominał. Podejrzewa jednak, że z zaginięciem statku może mieć coś wspólnego Diego Vargas.
+}
+fra_Governor_321 {
+Skoro już pan tu jest, rozumiem, że zamierza mi pan pomóc w poszukiwaniach statku?
+}
+fra_Governor_322 {
+Tak jest, panie gubernatorze.
+}
+fra_Governor_323 {
+Dobrze, przyjmę pańską pomoc. Statek ma przywieźć tu kolonistów i rzemieślników. Ludzi, bez których pańska placówka pozostanie kryjówką kłusowników i piratów, zamiast stać się cywilizowaną francuską osadą.
+}
+fra_Governor_324 {
+Dlatego nawet takie opóźnienie budzi niepokój. Jeśli statek rzeczywiście został zdobyty, z każdą godziną maleją szanse na odnalezienie osadników żywych.
+}
+fra_Governor_325 {
+Cieszę się, że pan to rozumie. „Róża Wiatrów” miała pojawić się przy północnym wybrzeżu już wczoraj, lecz statek się nie zjawił. Nie otrzymaliśmy ani sygnałów alarmowych, ani wieści o sztormie. Nie zamierzam stawiać garnizonu na nogi i siać paniki na podstawie samych podejrzeń. I proszę mi wierzyć, mam poważne powody do takiej powściągliwości.
+}
+fra_Governor_326 {
+Ma pan pomysł, od czego zacząć poszukiwania?
+}
+fra_Governor_327 {
+Proszę porozmawiać z moim sekretarzem, Henrim Tessierem. Zbiera meldunki z posterunków i latarni i dysponuje wszystkimi informacjami, jakie dotarły do tej pory.
+}
+fra_Governor_328 {
+Dziękuję, Wasza Ekscelencjo.
+}

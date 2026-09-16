@@ -54,6 +54,7 @@ void MoveAbelToTavern()
 	ChangeCharacterAddressGroup(rChar, "FortFrance_tavern", "sit", "sit7");
 }
 
+// > мёртвый кусок
 void Andre_Abel_Quest_1Day_Left(string sQuest)	// Провал квеста 
 {
 	ref rChar = CharacterFromID("Andre_Abel");
@@ -71,8 +72,10 @@ void Andre_Abel_Quest_2Days_Left(string sQuest)	// Провал квеста - �
 	ref rChar = CharacterFromID("Andre_Abel");
 	rChar.LifeDay = 0;
 	LAi_CharacterDisableDialog(rChar);
+	RemoveLandQuestMark_Main(rChar, "Andre_Abel_Quest");
 //	ChangeCharacterAddressGroup(rChar, "none", "", "");
 	AddQuestRecord("Andre_Abel_Quest", "2");
+	AddQuestUserData("Andre_Abel_Quest", "sSex", GetSexPhrase("","а"));
 	CloseQuestHeader("Andre_Abel_Quest");
 	DeleteAttribute(pchar,"QuestTemp.AndreAbelQuest");
 }
@@ -80,12 +83,19 @@ void Andre_Abel_Quest_2Days_Left(string sQuest)	// Провал квеста - �
 void Andre_Abel_Quest_Delete_Andre_From_Tavern(string sQuest)	// Убираем Абеля из таверны
 {
 	ref rChar = CharacterFromID("Andre_Abel");
+	// > Между разговором и выходом из таверны последний слот эскадры мог занять кто-то ещё (например конвойный торговец от тавернщика).
+	// > Оставляем Абеля на месте и повторим попытку.
+	if (GetCompanionQuantity(PChar) >= COMPANION_MAX)
+	{
+		QuestSetCurrentNode("Andre_Abel", "Andre_Abel_To_Sea_1");
+		SetFunctionExitFromLocationCondition("Andre_Abel_Quest_Delete_Andre_From_Tavern", rChar.location, false);
+		DeleteAttribute(PChar, "quest.Andre_Abel_Quest_Delete_Andre_From_Tavern.over"); // < так надо
+		return;
+	}
 	ChangeCharacterAddressGroup(rChar, "none", "", "");
-	// Присоединяем Андрэ Абеля к игроку в качестве компаньона
 	SetCompanionIndex(Pchar, -1, GetCharacterIndex(rChar.id));
 	SetCharacterRemovable(rChar, false);	// нельзя сменить
 	LAi_SetImmortal(rChar, false);	// можно убить
-//	rChar.Dialog.CurrentNode = "Andre_Abel_To_Sea_1";
 }
 
 void Andre_Abel_Quest_15_Days_Is_Left(string sQuest)	// Не успели в Порт-о-Принс за 15 дней
@@ -104,6 +114,10 @@ void Andre_Abel_Quest_15_Days_Is_Left(string sQuest)	// Не успели в П�
 	PChar.Quest.Andre_Abel_Quest_Speak_In_PortPax.over = "yes";
 	PChar.Quest.Andre_Abel_Quest_Pirates_Is_Dead.over = "yes";
 	PChar.Quest.Andre_Abel_Quest_EnterMap.over = "yes";
+	// > Абеля тут же стирают по LifeDay = 0, поэтому оба прерывания NPC_Death надо снять
+	PChar.Quest.Andre_Abel_Quest_Andre_Is_Dead_2.over = "yes";
+	PChar.Quest.Andre_Abel_Quest_Andre_Is_Dead_3.over = "yes";
+	Andre_Abel_Quest_ClearPiratesSquadron();
 }
 
 void Andre_Abel_Quest_Andre_Is_Dead(string sQuest)	// Андрэ Абеля потопили
@@ -179,8 +193,25 @@ int Andre_Abel_Quest_GetPiratesSquadronShipCount()
 {
 	if (MOD_SKILL_ENEMY_RATE < 5) return 1;
 	if (MOD_SKILL_ENEMY_RATE < 9) return 2;
-	
+
 	return 3;
+}
+
+// > Полная зачистка пиратской эскадры
+void Andre_Abel_Quest_ClearPiratesSquadron()
+{
+	int i, idx;
+	string sID;
+
+	Group_DeleteGroup("Andre_Abel_Quest_Pirates_Ships");
+
+	for (i = 1; i <= 3; i++)
+	{
+		sID = "Andre_Abel_Quest_Pirate_" + i;
+		idx = GetCharacterIndex(sID);
+		if (idx == -1) continue;
+		Characters[idx].LifeDay = 0;
+	}
 }
 
 void Andre_Abel_Quest_Andre_Is_Dead_2(string sQuest) // Абеля потопили при боевке с пиратами
@@ -189,10 +220,11 @@ void Andre_Abel_Quest_Andre_Is_Dead_2(string sQuest) // Абеля потопи�
 	AddQuestUserData("Andre_Abel_Quest", "sSex", GetSexPhrase("","ла"));
 	CloseQuestHeader("Andre_Abel_Quest");
 	DeleteAttribute(pchar,"QuestTemp.AndreAbelQuest");
-//	Island_SetReloadEnableGlobal("Hispaniola2", true);
 	PChar.Quest.Andre_Abel_Quest_Speak_In_PortPax.over = "yes";
 	PChar.Quest.Andre_Abel_Quest_Pirates_Is_Dead.over = "yes";
 	PChar.Quest.Andre_Abel_Quest_EnterMap.over = "yes";
+	PChar.Quest.Andre_Abel_Quest_15_Days_Is_Left.over = "yes";	// > иначе таймер допишет запись 4 в закрытый квест
+	Andre_Abel_Quest_ClearPiratesSquadron();
 }
 
 void Andre_Abel_Quest_EnterMap(string sQuest)	// Свалили
@@ -202,28 +234,34 @@ void Andre_Abel_Quest_EnterMap(string sQuest)	// Свалили
 	AddQuestUserData("Andre_Abel_Quest", "sSex", GetSexPhrase("","а"));
 	CloseQuestHeader("Andre_Abel_Quest");
 	DeleteAttribute(pchar,"QuestTemp.AndreAbelQuest");
-	Group_DeleteGroup("Andre_Abel_Quest_Pirates_Ships");
 	RemoveCharacterCompanion(PChar, rChar);
-//	Island_SetReloadEnableGlobal("Hispaniola2", true);
+	rChar.LifeDay = 0;
+	LAi_CharacterDisableDialog(rChar);
+	RemoveLandQuestMark_Main(rChar, "Andre_Abel_Quest");
 	PChar.Quest.Andre_Abel_Quest_Speak_In_PortPax.over = "yes";
 	PChar.Quest.Andre_Abel_Quest_Andre_Is_Dead_2.over = "yes";	// Не храним лишние прерывания
+	PChar.Quest.Andre_Abel_Quest_Andre_Is_Dead_3.over = "yes";
+	PChar.Quest.Andre_Abel_Quest_Pirates_Is_Dead.over = "yes";
+	PChar.Quest.Andre_Abel_Quest_15_Days_Is_Left.over = "yes";
+	Andre_Abel_Quest_ClearPiratesSquadron();
 }
 
 void Andre_Abel_Quest_Pirates_Is_Dead(string sQuest)	// Победили пиратскую эскадру
 {
 	AddQuestRecord("Andre_Abel_Quest", "8");
 	SetFunctionNPCDeathCondition("Andre_Abel_Quest_Andre_Is_Dead_3", "Andre_Abel", false);
-//	SetFunctionLocationCondition("Andre_Abel_Quest_Speak_In_PortPax", "PortPax_town", false);
-//	Island_SetReloadEnableGlobal("Hispaniola2", true);
 	PChar.Quest.Andre_Abel_Quest_Andre_Is_Dead_2.over = "yes";
 }
 
 void Andre_Abel_Quest_Andre_Is_Dead_3(string sQuest)	// Абеля утопил кто-то в порту
 {
 	AddQuestRecord("Andre_Abel_Quest", "5");
+	AddQuestUserData("Andre_Abel_Quest", "sSex", GetSexPhrase("","ла"));
 	CloseQuestHeader("Andre_Abel_Quest");
 	DeleteAttribute(pchar,"QuestTemp.AndreAbelQuest");
 	PChar.Quest.Andre_Abel_Quest_Speak_In_PortPax.over = "yes";
+	PChar.Quest.Andre_Abel_Quest_15_Days_Is_Left.over = "yes";
+	Andre_Abel_Quest_ClearPiratesSquadron();
 }
 
 void Andre_Abel_Quest_Speak_In_PortPax(string sQuest)	// Разговор с Абелем в порту Порт-о-Принса
@@ -242,6 +280,10 @@ void Andre_Abel_Quest_Speak_In_PortPax(string sQuest)	// Разговор с А�
 	bDisableFastReload = true;
 	chrDisableReloadToLocation = true;
 	PChar.Quest.Andre_Abel_Quest_Andre_Is_Dead_3.over = "yes";
+	PChar.Quest.Andre_Abel_Quest_Pirates_Is_Dead.over = "yes";
+	PChar.Quest.Andre_Abel_Quest_Andre_Is_Dead_2.over = "yes";
+	PChar.Quest.Andre_Abel_Quest_EnterMap.over = "yes";
+	Andre_Abel_Quest_ClearPiratesSquadron();
 }
 
 void Andre_Abel_Quest_Dialog_In_PortPax_Tavern()	// В таверне...
@@ -250,10 +292,15 @@ void Andre_Abel_Quest_Dialog_In_PortPax_Tavern()	// В таверне...
 	LAi_ActorDialogNow(rChar, PChar, "", -1);
 }
 
+void Andre_Abel_Quest_Dialog_In_PortPax_Tavern_End()
+{
+	AddQuestRecord("Andre_Abel_Quest", "10");
+	AddQuestUserData("Andre_Abel_Quest", "sSex", GetSexPhrase("ся", "ась"));
+}
+
 void Andre_Abel_Quest_After_First_Jackman_Dialog()	// Джекмен выставил игрока из своей резиденции
 {
 	AddQuestRecord("Andre_Abel_Quest", "11");
-	//QuestSetCurrentNode("Henry Morgan", "Andre_Abel_Quest_Morgan_Dialog_1");
 	pchar.QuestTemp.AndreAbelQuest = "GoTo_Morgan1";
 
 	AddLandQuestMark_Main(CharacterFromId("Henry Morgan"), "Andre_Abel_Quest");
@@ -264,9 +311,17 @@ void Andre_Abel_Quest_Curasao_10Days_Left(string sQuest)	// Не успели к
 	AddQuestRecord("Andre_Abel_Quest", "15");
 	AddQuestUserData("Andre_Abel_Quest", "sSex", GetSexPhrase("","а"));
 	TakeItemFromCharacter(PChar, "Andre_Abel_Letter_1");
-	ChangeCharacterAddressGroup(CharacterFromID("Andre_Abel"), "none", "", "");
+	ref rAbel = CharacterFromID("Andre_Abel");
+	ChangeCharacterAddressGroup(rAbel, "none", "", "");
+	SetCharacterShipLocation(rAbel, "");	// "none" тут не работает - FindLocation вернёт -1
+	LAi_CharacterDisableDialog(rAbel);
+	RemoveLandQuestMark_Main(rAbel, "Andre_Abel_Quest");
+	rAbel.LifeDay = 0;
+
+	int chIndex;
 	ref rChar = CharacterFromID("hol_guber");
-	rChar.Dialog.CurrentNode = rChar.Dialog.TempNode; // Вернём ноду диалога Ген-Губеру
+	rChar.Dialog.CurrentNode = "First time";
+	rChar.Dialog.TempNode = "First time";
     RemoveLandQuestMark_Main(rChar, "Andre_Abel_Quest");
 
 	PChar.QuestTemp.Andre_Abel_Quest_PortPax_TavernOwner_Speek = true;
@@ -274,8 +329,13 @@ void Andre_Abel_Quest_Curasao_10Days_Left(string sQuest)	// Не успели к
 
 	if(!CheckAttribute(PChar, "Quest.Andre_Abel_Quest_In_Curacao_Townhall"))
 	{
-		rChar = CharacterFromID("Andre_Abel_Quest_Guard_1");
-		rChar.LifeDay = 0;
+		chIndex = GetCharacterIndex("Andre_Abel_Quest_Guard_1");
+		if (chIndex != -1)
+		{
+			rChar = &Characters[chIndex];
+			rChar.LifeDay = 0;
+			ChangeCharacterAddressGroup(rChar, "none", "", "");
+		}
 	}
 
 	PChar.Quest.Andre_Abel_Quest_In_Curacao_Townhall.over = "yes";
@@ -297,15 +357,21 @@ void Andre_Abel_Quest_In_Curacao_Townhall(string sQuest)	// Зашли в рез
 void Andre_Abel_Quest_Curacao_Townhall_Clear(string sQuest)	// очистка резиденции Виллемстеда
 {
 	ref rChar;
-	
+
 	rChar = CharacterFromID("hol_guber");
-	rChar.Dialog.CurrentNode = rChar.Dialog.TempNode; // Вернём ноду диалога Ген-Губеру
-	
+	rChar.Dialog.CurrentNode = "First time";
+	rChar.Dialog.TempNode = "First time";
+
 	int chIndex = GetCharacterIndex("Andre_Abel_Quest_Guard_1");
 	if (chIndex != -1)
 	{
 		rChar = &Characters[chIndex];
 		rChar.LifeDay = 0; // Убираем гвардейца из резиденции
+		// > Таймер мог сработать посреди драки в резиденции
+		if (PChar.location != "Villemstad_Townhall2")
+		{
+			ChangeCharacterAddressGroup(rChar, "none", "", "");
+		}
 	}
 }
 
@@ -361,26 +427,77 @@ void Andre_Abel_Quest_In_Prison()	// В тюрьме...
 	
 	ref location = &Locations[FindLocation("Villemstad_prison")];	
 	
-	// Перекладываем предметы ГГ в сундук 
+	// Перекладываем предметы ГГ в сундук
 	aref arItems, boxItems;
 	ref rItem;
 	string sName;
+
 	makearef(arItems, PChar.items);
 	makearef(boxItems, location.box1.items);
-	int iItemsNum = GetAttributesNum(arItems);
-	for(int i=0; i<iItemsNum; i++)
+	int i, iQty, iItemsNum = GetAttributesNum(arItems);
+	for(i = 0; i < iItemsNum; i++)
 	{
 		sName = GetAttributeName(GetAttributeN(arItems, i));
 		rItem = ItemsFromID(sName);
-		if (rItem.ItemType != "QUESTITEMS")
+		// > TODO: у минералов/побрякушек/черепов ItemType не задан
+		if (!CheckAttribute(rItem, "ItemType") || rItem.ItemType != "QUESTITEMS")
 		{
-			boxItems.(sName) = PChar.items.(sName);
+			iQty = sti(PChar.items.(sName));
+			// > складываем, а не затираем: в сундуке уже могло что-то лежать
+			if (CheckAttribute(boxItems, sName)) iQty = iQty + sti(boxItems.(sName));
+			boxItems.(sName) = iQty;
+			PChar.QuestTemp.Andre_Abel_Quest_In_Prison.stash.(sName) = sti(PChar.items.(sName));
 		}
 	}
-	location.box1.money = PChar.money;	
+	PChar.QuestTemp.Andre_Abel_Quest_In_Prison.stashmoney = sti(PChar.money);
+	iQty = sti(PChar.money);
+	if (CheckAttribute(location, "box1.money")) iQty = iQty + sti(location.box1.money);
+	location.box1.money = iQty;
+	// > штамп времени не убираем
 	location.box1 = Items_MakeTime(GetTime(), GetDataDay(), GetDataMonth(), GetDataYear());
-		
-	RemoveAllCharacterItems(PChar, true);	
+
+	RemoveAllCharacterItems(PChar, true);
+}
+
+// Автовозврат конфиската при выходе из Виллемстада. Отдаём только то, что игрок не забрал из сундука сам.
+void Andre_Abel_Quest_ReturnPrisonStash()
+{
+	if (!CheckAttribute(PChar, "QuestTemp.Andre_Abel_Quest_In_Prison.stash")) return;
+
+	int iLoc = FindLocation("Villemstad_prison");
+	if (iLoc == -1) return;
+	ref location = &Locations[iLoc];
+
+	aref arStash;
+	string sName, sBoxAttr;
+	int iInBox;
+	makearef(arStash, PChar.QuestTemp.Andre_Abel_Quest_In_Prison.stash);
+	int iNum = GetAttributesNum(arStash);
+	for(int i=0; i<iNum; i++)
+	{
+		sName = GetAttributeName(GetAttributeN(arStash, i));
+		sBoxAttr = "box1.items." + sName;
+		if (!CheckAttribute(location, sBoxAttr)) continue;	// игрок уже забрал сам
+		iInBox = sti(location.box1.items.(sName));
+		if (iInBox > sti(arStash.(sName))) iInBox = sti(arStash.(sName));
+		if (iInBox < 1) continue;
+		TakeNItems(PChar, sName, iInBox);
+		DeleteAttribute(location, sBoxAttr);
+	}
+
+	if (CheckAttribute(PChar, "QuestTemp.Andre_Abel_Quest_In_Prison.stashmoney") && CheckAttribute(location, "box1.money"))
+	{
+		iInBox = sti(location.box1.money);
+		if (iInBox > sti(PChar.QuestTemp.Andre_Abel_Quest_In_Prison.stashmoney))
+		{
+			iInBox = sti(PChar.QuestTemp.Andre_Abel_Quest_In_Prison.stashmoney);
+		}
+		if (iInBox > 0)
+		{
+			AddMoneyToCharacter(PChar, iInBox);
+			location.box1.money = sti(location.box1.money) - iInBox;
+		}
+	}
 }
 
 void Andre_Abel_Quest_Runaway_From_Prison()	// По другую сторону решетки
@@ -392,8 +509,6 @@ void Andre_Abel_Quest_Runaway_From_Prison()	// По другую сторону 
 	LAi_SetOfficerType(rChar);
 
 	LAi_Group_MoveCharacter(rChar, LAI_GROUP_PLAYER);
-	//HardCoffee рефакторинг диалогов с Морганом
-	//QuestSetCurrentNode("Henry Morgan", "Andre_Abel_Quest_Morgan_Dialog_11");
 	pchar.QuestTemp.AndreAbelQuest = "GoTo_MorganPrison";
 	AddLandQuestMark_Main(CharacterFromId("Henry Morgan"), "Andre_Abel_Quest");
 	
@@ -456,6 +571,7 @@ void Andre_Abel_Quest_Liberty(string sQuest)	// Локация выхода из
 {
 	ref rChar = CharacterFromID("Martin_Bleker");
 	ChangeCharacterAddressGroup(rChar, "Villemstad_ExitTown", "goto", "goto2");
+	Andre_Abel_Quest_ReturnPrisonStash();
 	DeleteAttribute(PChar, "QuestTemp.Andre_Abel_Quest_In_Prison");
 	QuestSetCurrentNode("Martin_Bleker", "Andre_Abel_Quest_In_Liberty_1");
 	LAi_SetActorType(rChar);
@@ -468,12 +584,10 @@ void Andre_Abel_Quest_Liberty(string sQuest)	// Локация выхода из
 
 void Andre_Abel_Quest_Delete_Martin(string sQuest)	// Попрощались с Мартином
 {
-	for(int i = 1; i < 4; i++)
-	{
-		if(GetCharacterIndex("Martin_Bleker") == GetOfficersIndex(pchar, i)) return;
-	}
-	ref rChar = CharacterFromID("Martin_Bleker");
-	ChangeCharacterAddressGroup(rChar, "none", "", "");
+	int idxMartin = GetCharacterIndex("Martin_Bleker");
+	if (idxMartin == -1) return;
+	if (GetPassengerNumber(pchar, idxMartin) != -1) return;	// > нанят - не трогаем
+	ChangeCharacterAddressGroup(&Characters[idxMartin], "none", "", "");
 }
 
 void MartinRecovery(string sQuest) // Мартин поправился
@@ -1098,7 +1212,6 @@ void Survive_In_Sea_Go2Land()
     pchar.location = SelectSmugglingLocation();
     
     pchar.Health.Damg = stf(pchar.chr_ai.hp_max)*40;
-	// даёт лог в + и - AddCharacterHealth(pchar, -30);
 	Log_Info(StringFromKey("InfoMessages_117", pchar));
 	if (sti(PChar.GenQuest.GhostShip.KillMe) <= 1)
 	{

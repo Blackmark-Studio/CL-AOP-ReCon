@@ -316,3 +316,9 @@ Andre_Abel_Dialog_94 {
 Andre_Abel_Dialog_95 {
 Bonne chance à vous!... Et faites attention, ne vous faites pas prendre à nouveau.
 }
+Andre_Abel_Dialog_96 {
+Oui, les affaires ont traîné. Et maintenant ?
+}
+Andre_Abel_Dialog_97 {
+Mon escadre est pleine à craquer.
+}

@@ -1037,7 +1037,6 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 			SetLocationCapturedState("LaVega_town", true);
 			//--> огонь и пламень
 			i = FindLocation("LaVega_town");
-			locations[i].models.always.town = "LaVega_quest";
 			locations[i].models.always.locatorsl2 = "LaVega_1_quest";
 			locations[i].models.always.locatorsl3 = "LaVega_locators_quest";
 			locations[i].models.day.charactersPatch = "LaVega_patch_day_quest";
@@ -1075,7 +1074,6 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 			AddMapQuestMark_Major("PortRoyal_town", "Eng_Line", "StateLines_Waiting_WDMQuestMarkCondition");
 			//--> огонь и пламень убираем
 			i = FindLocation("LaVega_town");
-			locations[i].models.always.town = "LaVega";
 			locations[i].models.always.locatorsl2 = "LaVega_1";
 			locations[i].models.always.locatorsl3 = "LaVega_locators";
 			locations[i].models.day.charactersPatch = "LaVega_patch_day";

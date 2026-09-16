@@ -1,0 +1,36 @@
+Loren_dialog_1 {
+Capitão @<pchar>. Aceita peixe fresco?
+}
+Loren_dialog_2 {
+Por acaso nos conhecemos?
+}
+Loren_dialog_3 {
+Depende do que chama de conhecer. Já ouvi muito a seu respeito.
+}
+Loren_dialog_4_m {
+Melhor ainda. Não vim atrás de peixe. Estou esperando um... amigo. Ele deveria ter ancorado aqui ainda ontem. Na flauta “Rosa dos Ventos”.
+}
+Loren_dialog_4_f {
+Melhor ainda. Não vim atrás de peixe. Estou esperando um... amigo. Ele deveria ter ancorado aqui ainda ontem. Na flauta “Rosa dos Ventos”.
+}
+Loren_dialog_5 {
+Uma flauta... Uma daquelas embarcações barrigudas e desajeitadas de que gostam tanto na Europa. Houve uma aqui. Na noite passada.
+}
+Loren_dialog_6 {
+E os vigias do farol não a viram?
+}
+Loren_dialog_7 {
+Os vigias ficam de olho em luzes de sinalização e bandeiras. Mas aquela embarcação navegava na escuridão completa: sem lanterna na popa, sem flâmula no mastro. Arrastava-se pela costa como um espião evitando uma patrulha, aproveitando o vento só com os joanetes. No escuro quase trombou com contrabandistas — eles também navegavam sem luzes. Ainda bem: pelo menos não estragaram minha pescaria noturna.
+}
+Loren_dialog_8 {
+Para onde ela foi? Rumo às costas espanholas?
+}
+Loren_dialog_9 {
+Duvido. Meus amigos atracaram no farol, e a flauta seguiu para leste. Imagino que tenha decidido contornar a ilha e ancorar em algum ponto perto da Praia Olho de Peixe. Embora também pudesse ter virado para Michel le Basque — para visitar os bucaneiros dele.
+}
+Loren_dialog_10 {
+É pouco provável. Obrigado, Loren.
+}
+Loren_dialog_11 {
+Até mais, capitão.
+}

@@ -316,3 +316,9 @@ Andre_Abel_Dialog_94 {
 Andre_Abel_Dialog_95 {
 Good luck to you!.. And watch yourself, don’t get caught again.
 }
+Andre_Abel_Dialog_96 {
+Aye, business dragged on. So what now?
+}
+Andre_Abel_Dialog_97 {
+There isn’t a single free berth in my squadron.
+}

@@ -73,4 +73,5 @@ go_portman {Autoridad Portuaria}
 go_doctor {Médico}
 go_fenix {Plataforma Fénix}
 go_diffIndoor {Flute Diffindoor}
+go_outpost {Puesto de avanzada}
 worldmap_sea {Salir al mar}

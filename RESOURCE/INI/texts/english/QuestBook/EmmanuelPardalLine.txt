@@ -1,0 +1,164 @@
+EPL_Prologue
+{
+The beginning of something new
+}
+
+EPL_Prologue.1
+{
+After a brief argument with Rebecca, I finally managed to persuade her to get some fresh air and keep me company. Today is just the right occasion to make new acquaintances, something we can hardly afford to neglect in our less than easy circumstances.
+}
+
+EPL_Prologue.2
+{
+While we were getting ready, the local merchant and miser Gaston Cotes had already welcomed one of the newly arrived colonists with his own brand of local "hospitality". He even had the nerve to be rude to me.
+Time to teach him a lesson. After him!
+}
+
+EPL_Prologue.3
+{
+Gaston got what he deserved. I should return to town and look for the stranger. It seems she has troubles of her own as well.
+}
+
+EPL_Prologue.4
+{
+This morning turned out to be full of events. A ship arrived from the Old World, probably the first in two months, I met the new commandant, and I even took part in something resembling a duel. Not the most fearsome opponent, but at one point his thrust truly frightened me. I did not expect such agility from Gaston. I hope he did not notice my trembling hands, or that chatterbox will ruin my daredevil reputation.
+And then there is that girl with her difficult fate. A good opportunity to get rid of that scoundrel Arcadio's belongings. I need to go to Cape Isabela and retrieve them from the grotto.
+}
+
+EPL_Prologue.5
+{
+I am here. The grotto is well hidden; a passer-by is unlikely to find it by accident, but I should still stay alert.
+}
+
+EPL_Prologue.6
+{
+Someone attacked our fort. Rebecca and I waited out the assault in the grotto outside town, though a pair of attackers found us even there. It seems everything turned out all right. The sounds of battle have died down now; I need to see what is happening. Becky has probably run there already.
+}
+
+EPL_Prologue.7
+{
+This is terrible. The fort is destroyed, the only person close to me is missing, and I am forced to flee with the few survivors. Gaston is right: the governor of Santo Domingo is my only hope, but with every passing minute it becomes clearer that I may never see Becky again. This is the end of my old life.
+}
+
+EPL_Prologue.8
+{
+So, I have finally stepped onto a ship's deck. There are many civilians aboard who have lost their homes. Right now the sailors are weighing anchor, and our ship is getting under way. Off we go!
+}
+
+EPL_Prologue.9
+{
+Two pirate ships that took part in the sack of La Vega are coming straight at us. There is no point fighting them. We need to break away as quickly as possible. The civilians must not suffer.
+}
+
+EPL_Prologue.10
+{
+Our ship managed to escape the pirates. Was it my imagination, or did they deliberately let us go? Strange. In any case, I now need to set a course for Santo Domingo and tell the governor everything that happened.
+}
+
+EPL_Prologue.11
+{
+Too much time has passed. There is no point sailing to Santo Domingo, since the pirates have most likely already attacked the city. I can only hope the Spaniards repelled them, because Santo Domingo has high fortress walls and long-range guns. And what about me? I can do whatever I want now; all I need is to set a course. Forward!
+}
+
+EPL_Prologue.12
+{
+The pirates are planning to attack Santo Domingo from the land. My sister may be with them. I must be present at the battle, which will begin beyond the city gates.
+}
+
+EPL_Prologue.13
+{
+The pirates were defeated, but my sister was not among them. I should report to the governor, who ought to be in his residence now.
+}
+
+
+
+EPL_TheFirstSteps
+{
+First Steps
+}
+
+EPL_TheFirstSteps.1
+{
+I can hardly believe what has happened. Something I could only dream of became reality in an instant. I am a captain.
+And yet I am afraid. It is horrible and unfair. It seems my prayers were answered, but not by our Heavenly Father - by Mephistopheles. He granted my wish in the way he knows best: in the most treacherous and vile manner, trading my dream for my entire former life and for Becky's life.
+No, I am not going to give up yet. Before leaving for Cuba, I need to find the strength to return to La Vega. If the buccaneers have decided to settle there, I should speak to their leader. In the meantime, I will think about how to present myself and what to say so I have a chance of getting out alive.
+And then there is this barque. It floats and can even technically be called a ship, but perhaps I should spend the money I received more wisely?
+}
+
+EPL_TheFirstSteps.2
+{
+I knew Sandro Thorn had not come to La Vega by chance. His message was meant for me. And most importantly, it was sent by my father - Manuel Ribeiro Pardal. I had heard the name of that famous corsair many times, but never would I have imagined that I was his daughter... How should I introduce myself in company now? Captain @<sEmma> @<sRemedios>, or would @<sPardal> be better? I suppose it depends on whom I am speaking to. Only time will put everything in its proper place.
+}
+
+EPL_TheFirstSteps.3
+{
+That was the last straw I was trying to grasp at, but this fellow truly knows nothing. Otherwise he would have seen through me.
+What a devil. He strained every nerve to pretend he was not surprised when he heard a surname feared for hundreds of nautical miles around. I do not know how much he believed me, or whether he took any of it seriously, but it seems he decided not to take unnecessary risks - as if my father cared about me at all. Well, that can be used as a trump card up my sleeve.
+The visit to La Vega did not bring the results I expected, but it did teach me something.
+}
+
+EPL_TheFirstSteps.4
+{
+The letter with my report has been delivered, and I received the answer to my question: everything is to remain as it is. I am no longer bound by any obligations and can do whatever I want; all I need is to set a course. Forward!
+}
+
+
+
+EPL_PZD
+{
+The Noble Lady's Dressmaker
+}
+
+EPL_PZD.1
+{
+What an aristocratic bitch, deciding my company was beneath her! There is more noble blood in me than in the wife of the local governor. No, I refuse to believe this is a mere coincidence. Becky designed a dress of that cut herself; there cannot be another like it anywhere in the Caribbean.
+I need to gather my thoughts. The lady is clearly Spanish, which means she is not local. I can try to learn something about the ships that have dropped anchor here recently.
+}
+
+EPL_PZD.2
+{
+After cooling my head, I decided not to continue the search after all. I think I was simply seeing what I wanted to see. The dress really is almost like Rebecca's, but most likely she had seen a similar style somewhere before.
+}
+
+EPL_PZD.3
+{
+There is little information. It seems I really should walk along the waterfront after sunset and talk to the local workers.
+}
+
+EPL_PZD.4
+{
+So the woman is staying with the local governor, who is holding masquerade evenings that are apparently so important to him that he has abandoned all affairs of state and receives no one.
+Whatever it takes, I must get inside before that haughty woman leaves the island.
+Where can I find an outfit suitable for the occasion? If the guests really wear masks, I can use that to my advantage.
+I should ask the local moneylender or the street vendors.
+}
+
+EPL_PZD.5
+{
+I am inside. That was surprisingly easy. Finding the woman I have seen only once will be much harder. On top of that, she will be masked and most likely in costume. Somehow I also need to start a conversation and mention her dressmaker.
+}
+
+EPL_PZD.6
+{
+A pair of people in the hall are chatting casually in their bright voices. Neither sounds like the woman I am looking for.
+}
+
+EPL_PZD.7
+{
+This girl is too young, most likely one of the governor's daughters. Definitely not the woman I am looking for.
+}
+
+EPL_PZD.8
+{
+A very fortunate acquaintance with a Spanish officer who introduced himself as Gabriel de Seguenza. So this is the very captain of the galleon 'Hernal Diaz'. He promised to settle my question in exchange for a request: keep the man at the table downstairs company.
+}
+
+EPL_PZD.9
+{
+While playing dice, I did not even notice how quickly the time passed. I need to leave through the door behind the stage and go to the waterfront. Gabriel is waiting for me there.
+}
+
+EPL_PZD.10
+{
+It turned out that the dress was made by Sofia de la Piedad, the girl I met on the eve of the buccaneer attack on La Vega. I should be happy for her, but all I can feel is anger. Rebecca should have been in Sofia's place.
+}

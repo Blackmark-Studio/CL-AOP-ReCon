@@ -1,39 +1,39 @@
 Santiago_Usurer_1 {
-什么问题？
+什么问题？ 
 }
 Santiago_Usurer_2 {
-有什么需要帮忙的吗？
+有什么需要帮忙的吗？ 
 }
 Santiago_Usurer_3 {
 @<RandPhraseSimple>
 }
 Santiago_Usurer_4 {
-前阵子你想问我个问题……
+前阵子你想问我个问题…… 
 }
 Santiago_Usurer_5 {
-嗯，让我猜猜……又没什么重要的事吧？
+嗯， 让我猜猜…… 又没什么重要的事吧？ 
 }
 Santiago_Usurer_6 {
-听着，我管的是钱，不是回答问题……
+听着， 我管的是钱， 不是回答问题…… 
 }
 Santiago_Usurer_7_m {
-我改变主意了……
+我改变主意了…… 
 }
 Santiago_Usurer_7_f {
-我改变主意了……
+我改变主意了…… 
 }
 Santiago_Usurer_8 {
-我现在没什么好说的。
+我现在没什么好说的。 
 }
 Santiago_Usurer_9 {
 @<RandPhraseSimple>
 }
 Santiago_Usurer_10 {
-嗯，我的记忆好像出了点问题……
+嗯， 我的记忆好像出了点问题…… 
 }
 Santiago_Usurer_11 {
-你猜对了，抱歉……
+你猜对了， 抱歉…… 
 }
 Santiago_Usurer_12 {
-我明白……
+我明白…… 
 }

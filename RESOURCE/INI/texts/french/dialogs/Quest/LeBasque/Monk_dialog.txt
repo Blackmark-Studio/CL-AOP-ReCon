@@ -1,0 +1,111 @@
+Monk_dialog_1 {
+Ah, capitaine ! Je dois avouer que j'espérais vaguement vous croiser dans ces rues dans un état un peu plus présentable. Michel m'avait averti que nos chemins pourraient se recroiser, mais je n'aurais jamais imaginé que la lame de Vargas vous laisserait de si vilaines marques.
+}
+Monk_dialog_2 {
+Le Basque m'a dit que vous exerciez désormais ici votre ministère, Bertrand. Il a ajouté que si quelqu'un pouvait me remettre sur pied, c'était bien vous.
+}
+Monk_dialog_3 {
+Pour le pasteur des âmes, passe encore. Mais pour le médecin, c'est uniquement par la grâce d'un destin malicieux. Avant mon arrivée dans ce camp, toute la médecine locale se résumait à une pinte de rhum brûlant, une lame chauffée à blanc et le conseil amical de ne pas rendre l'âme avant l'aube. J'ai donc dû élargir quelque peu les limites de ma vocation.
+}
+Monk_dialog_4 {
+Je suis heureux de voir que les sombres cachots ne vous ont pas ôté votre sens de l'humour.
+}
+Monk_dialog_5 {
+Après ces maudites catacombes, capitaine, je savoure chaque jour où il m'est permis de soigner les blessures d'autrui au lieu d'attendre que les bourreaux castillans daignent me trancher la gorge. Et pour m'avoir tiré, moi et ces malheureuses dames, à la lumière du jour, je vous dois une dette impossible à acquitter. Appuyez-vous donc sur ce tonneau et laissez-moi voir quel souvenir feu don Alonso vous a laissé.
+}
+Monk_dialog_6 {
+Si votre art peut me remettre sur pied, je ne m'y opposerai pas.
+}
+Monk_dialog_7 {
+Merci, mais pas maintenant. J'ai besoin de reprendre un peu mes esprits.
+}
+Monk_dialog_8 {
+Je pense que, cette fois, nous pourrons nous passer de chirurgie. Mais je retiens votre généreuse proposition.
+}
+Monk_dialog_9 {
+Bonjour, capitaine. Est-ce encore le besoin d'un médecin habile qui vous amène à moi, ou avez-vous simplement décidé de passer un moment en compagnie de l'homme que vous avez eu la noblesse d'arracher aux geôles castillanes ?
+}
+Monk_dialog_10 {
+La blessure que Vargas m'a infligée me fait encore souffrir. Vous voulez bien y jeter un œil ?
+}
+Monk_dialog_11 {
+Comment trouvez-vous votre nouveau ministère parmi ces boucaniers désespérés ?
+}
+Monk_dialog_12 {
+Je n'ose vous détourner plus longtemps de vos pieux travaux. À bientôt, Bertrand.
+}
+Monk_dialog_13 {
+Comment trouvez-vous votre nouveau ministère parmi ces boucaniers désespérés ?
+}
+Monk_dialog_14 {
+Je passais par ici et j'ai voulu vous présenter mes respects. À bientôt, Bertrand.
+}
+Monk_dialog_15 {
+Mon nouveau ministère ? Ha ! Jugez vous-même : hier, un blasphémateur endurci exigeait que je bénisse son mousquet ; un autre me suppliait d'extraire une balle castillane d'un endroit fort délicat ; et un troisième, venu se confesser, s'est endormi ivre mort avant même d'arriver à son second péché mortel. Comme vous voyez, je n'ai guère le temps de m'ennuyer.
+}
+Monk_dialog_16 {
+Et vous n'avez toujours pas fui un tel troupeau ?
+}
+Monk_dialog_17 {
+Fuir ? Après les cachots dont vous m'avez tiré ? Allons donc. Ces bretteurs ont des idées singulières, pour ne pas dire sauvages, de la piété ; mais ils ne font pas pourrir des femmes dans des souterrains humides et ne marchandent pas des vies humaines pour complaire à l'Inquisition. Et puis, ici, je suis véritablement nécessaire. Pour le moment, cela me suffit amplement.
+}
+Monk_dialog_18 {
+Eh bien, on dirait que vous avez enfin trouvé votre véritable vocation.
+}
+Monk_dialog_19 {
+Ôtez votre justaucorps, capitaine. Doucement... Diable. C'est bien plus mauvais que je ne le pensais. L'acier de Tolède est entré beaucoup plus profondément, et les bords de la plaie commencent déjà à cicatriser de travers. Un simple changement de pansement ne suffira certainement pas.
+}
+Monk_dialog_20 {
+Ne tournez pas autour du pot, Bertrand. À quel point est-ce grave ?
+}
+Monk_dialog_21 {
+Assez grave pour que deux jours de plus en mer, à noyer la douleur dans le rhum au lieu de recevoir des soins convenables, vous aient obligé à chercher un prêtre pour l'extrême-onction. Je vais devoir rouvrir l'infection, laver abondamment la plaie à l'esprit-de-vin et poser des sutures serrées. Mais je jure sur ma soutane que je ne vous charcuterai pas ici, dans la poussière de la rue. Il nous faut un lit propre, de la lumière et de l'eau bouillante, sans quoi la fièvre achèvera ce que Vargas a commencé.
+}
+Monk_dialog_22 {
+Dans ce cas, inutile de chercher une chambre libre. J'ai une maison ici. Prenez vos instruments, Bertrand, et suivez-moi.
+}
+Monk_dialog_23 {
+Voilà, capitaine, vous pouvez ouvrir les yeux. Je dois reconnaître que votre lit s'est révélé fort utile : vous y avez passé trois bonnes heures dans une profonde inconscience pendant que je remettais cette plaie en ordre. Le pus est nettoyé, les bords sont rapprochés, le pansement est propre. Et je vous recommande vivement de ne pas quitter ces murs au moins aujourd'hui, ni de jouer les héros immortels.
+}
+Monk_dialog_24 {
+Trois heures ?... Voilà qui prouve que l'affaire était bien plus sérieuse que vous ne vouliez le laisser paraître. Acceptez mes remerciements, Bertrand. Je promets solennellement que mon épée ne quittera pas son fourreau avant demain matin.
+}
+Monk_dialog_25 {
+D'où sors-tu donc toujours toutes ces potions et ces herbes médicinales, Bertrand ?
+}
+Monk_dialog_26 {
+Bertrand, à propos de la culture des plantes médicinales.
+}
+Monk_dialog_27 {
+Eh... J'ai entendu dire que les jeunes têtes brûlées comme notre Jaco risquent sans cesse leur peau en courant les jungles dangereuses pour quelques racines. Alors je me suis dit : pourquoi tenter le diable quand nous pouvons tout faire pousser juste à côté ? À l'abbaye, autrefois, je m'occupais du jardin des simples et je me souviens parfaitement du métier.\nLa terre d'ici est généreuse : les pousses mûrissent vite, en seulement 5 à 8 jours. Mais retiens ceci : si tu ne récoltes pas l'ancienne plantation avant d'en refaire une, toutes les plantes laissées sur pied devront être arrachées et jetées. Il faut donc récolter à temps !
+}
+Monk_dialog_28 {
+C'est raisonnable, Bertrand. Peux-tu planter certaines plantes pour moi ?
+}
+Monk_dialog_29 {
+C'est tentant, mon père, mais je n'ai pas le temps de jouer les herboristes pour le moment.
+}
+Monk_dialog_30 {
+Mais les graines sont déjà en terre ! La patience est une grande vertu. Reviens dans une semaine environ, tout devrait être mûr d'ici là.
+}
+Monk_dialog_31 {
+Eh, ma mémoire n'est vraiment plus ce qu'elle était... Je repasserai plus tard.
+}
+Monk_dialog_32 {
+La terre est prête à être semée. Qu'allons-nous planter ? Prévoyons la récolte dans une semaine environ.
+}
+Monk_dialog_33 {
+Sème toute la parcelle de matricaire.
+}
+Monk_dialog_34 {
+Que le ginseng pousse sur cette parcelle.
+}
+Monk_dialog_35 {
+Nous allons cultiver du gingembre.
+}
+Monk_dialog_36 {
+Divise la parcelle : un peu de chaque espèce.
+}
+Monk_dialog_37 {
+Je n'ai besoin de rien pour l'instant, Bertrand. Nous en reparlerons.
+}

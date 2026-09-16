@@ -1,0 +1,514 @@
+Rimalier_dialog_1 {
+Don't move, gentlemen. One more step and, much as it pains me, I'll have to spoil your gait. And I'd hate to do that: those boots of yours look dearer than my whole shack.
+}
+Rimalier_dialog_2 {
+You have an amusing way of greeting guests. If you're Nicolas Rimalie, we didn't come to compare muskets with you. We need to talk.
+}
+Rimalier_dialog_3 {
+Talk? Splendid! It's been a while since anyone came here just to talk. And forgive my curiosity, but what is it you'd like to chat about?
+}
+Rimalier_dialog_4 {
+An old acquaintance of yours - Michel le Basque. He needs you.
+}
+Rimalier_dialog_5 {
+Michel? Ha-ha. If he's remembered me, either he's in trouble, or he's planning something that'll put everyone else in trouble.
+}
+Rimalier_dialog_6 {
+My dear sir, if all enemies had the courtesy to announce themselves in advance, I'd have moved to town long ago, worn a clean coat, and drunk my wine without looking over my shoulder.
+}
+Rimalier_dialog_7 {
+Your caution is understandable. But we've already named the man who sent us. Now it's for you to decide whether you want to talk or shoot.
+}
+Rimalier_dialog_8 {
+Ah, Captain, how stern you are. I can practically hear a sword ringing beneath every word. Very well. We can talk - I've grown tired of shooting the local gulls today anyway... Just keep your hands where I can see them. Old Rimalie may not see faces as well as he once did, but he hasn't forgotten how to shoot.
+}
+Rimalier_dialog_9 {
+Damn it, they followed your trail! Jaco, my boy, listen carefully. Beyond that fence there's an old pit under the planks... Get in there and don't poke your nose out until I call you myself. And if you hear me cursing, don't be frightened. It means I'm still alive. Even old men like me sometimes have to make an effort not to die for somebody's sake.
+}
+Rimalier_dialog_10 {
+Mortars... Well, well. What an honor. I expected hired blades, truth be told, but I didn't think they'd drag artillery along.
+}
+Rimalier_dialog_11 {
+So you knew someone would come after you?
+}
+Rimalier_dialog_12 {
+Later. See those ferns by the rocks? There, quickly.
+}
+Rimalier_dialog_13 {
+I patched that roof only yesterday. Then some fools repaired it Spanish-style with one volley. No roof - no leaks!
+}
+Rimalier_dialog_14 {
+And now they're coming to see whether you're pleased with the workmanship. Hear them?
+}
+Rimalier_dialog_15 {
+Then let's give those fish guts a proper welcome!
+}
+Rimalier_dialog_16 {
+Ha! Now that was a dance! Been a long time since I gave these old bones such a fine workout.
+}
+Rimalier_dialog_17_m {
+Glad you enjoyed it. But it isn't over yet. Not all of them joined the attack - someone must have stayed with the mortars.
+}
+Rimalier_dialog_17_f {
+Glad you enjoyed it. But it isn't over yet. Not all of them joined the attack - someone must have stayed with the mortars.
+}
+Rimalier_dialog_18 {
+Right! Come on, gentlemen. Time to settle accounts with the rest.
+}
+Rimalier_dialog_19 {
+We should check whether anyone survived over there.
+}
+Rimalier_dialog_20 {
+Nothing but corpses... And here's why: the barrel burst. Old iron, and loaded by fools besides.
+}
+Rimalier_dialog_21 {
+You flatter me, gentlemen. I did shoot one of them, but the others blew themselves up. If stupidity were worth money, they'd have mansions in Veracruz by now.
+}
+Rimalier_dialog_22 {
+I'd wager my arm someone ran toward the bay after the explosion.
+}
+Rimalier_dialog_23 {
+Vargas? I haven't heard of him in more than two years. Why would he suddenly need me?
+}
+Rimalier_dialog_24 {
+I suspect it has everything to do with le Basque.
+}
+Rimalier_dialog_25 {
+All right, go on ahead. I'll fetch Jaco and catch up. I try to keep him away from fights - his blood runs far too hot. Always dreaming of becoming a hero. If there's trouble by the shore, I'll stuff him back into that pit.
+}
+Rimalier_dialog_26 {
+So you are coming with us to Tortuga after all?
+}
+Rimalier_dialog_27 {
+Of course. Refusing after all this would be terribly impolite. Besides, I owe you my life.
+}
+Rimalier_dialog_28 {
+Then we'll meet at the path down to the bay.
+}
+Rimalier_dialog_29 {
+So he turned tail and ran? Strange... In his place, I'd have finished the job.
+}
+Rimalier_dialog_30 {
+I'm with you, little Etienne. What, did you think I wouldn't recognize you?! You've grown, I see. Well then...\nSince the chase is off, I have a better proposal. How about stopping at Le Francois on the way to Tortuga? The tavern keeper there is an old friend of mine, so he won't fob us off with swill.
+}
+Rimalier_dialog_31 {
+If both of you smell trouble, let's not tempt fate. Set course for Le Francois.
+}
+Rimalier_dialog_32 {
+Now this is what I call rum! You see why it was worth stopping at Le Francois.
+}
+Rimalier_dialog_33 {
+Strong stuff!... Listen, Nicolas. I can see you're not yourself. Something wrong?
+}
+Rimalier_dialog_34 {
+Ahem... You see, I mean to keep my word and report to Michel as promised. But first I have to settle one matter involving Jaco. Otherwise I simply won't sleep easy.
+}
+Rimalier_dialog_35 {
+What matter?
+}
+Rimalier_dialog_36 {
+The boy got himself into an ugly business, and now Mansfield's men are hunting him.
+}
+Rimalier_dialog_37 {
+Go on. What did he get mixed up in?
+}
+Rimalier_dialog_38 {
+Oh, Captain, I'll have to start from the beginning... A few weeks ago I found Jaco on the eastern coast of Hispaniola. After a storm, a piece of a longboat washed ashore, with the boy clinging to it - half-dead and covered in blood.
+}
+Rimalier_dialog_39 {
+Was his ship wrecked?
+}
+Rimalier_dialog_40 {
+If only. Mansfield's men boarded her. They came up under false colors, and when they were close enough, fired point-blank. They hanged the captain, killed part of the crew, and meant to sell the rest. That night Jaco managed to loosen his ropes and jump overboard.
+}
+Rimalier_dialog_41 {
+In the middle of the storm? He certainly doesn't lack courage.
+}
+Rimalier_dialog_42 {
+Common sense is another matter. If he doesn't learn to respect danger, I doubt he'll live to twenty-five. Anyway, I hauled him ashore, nursed him back to health, and told him to go his own way. He followed me instead.
+}
+Rimalier_dialog_43 {
+And you took him under your wing?
+}
+Rimalier_dialog_44 {
+What else was I to do? Since then I've kept him away from Mansfield's men and hoped he'd forget the past in time. But Jaco forgot nothing.
+}
+Rimalier_dialog_45 {
+He wanted revenge?
+}
+Rimalier_dialog_46 {
+Yes and no. He decided to find out who commanded that attack and what became of the survivors. And he couldn't think of a better way than going straight to Mansfield himself.
+}
+Rimalier_dialog_47 {
+So I took Jaco and moved with him to Tobago. Thought we'd buy ourselves some time there. And now Vargas is hunting me too. Hiding any longer is pointless.
+}
+Rimalier_dialog_48 {
+Then we finish the job. We get Duval out, Mansfield gets his gunner, Jaco stops being a fugitive, and you can go to le Basque with a clear conscience.
+}
+Rimalier_dialog_49 {
+Then let's finish our drinks and get aboard. It'd be a sin to pour out rum this good.
+}
+Rimalier_dialog_50 {
+Captain! Any news of Jaco? I've searched half the island for him - the little devil seems to have vanished into the earth.
+}
+Rimalier_dialog_51 {
+Jaco has been delivered safely to the settlement. Vargas's men caught him. But I think he'd better tell you the details himself.
+}
+Rimalier_dialog_52 {
+Vargas again?.. Captain, I owe you more than I can repay. Take this purse. Five thousand pesos - everything I have. I always keep my worldly goods on me. It's a small price for the boy's life, but I give it from the heart. Don't you dare refuse.
+}
+Rimalier_dialog_53 {
+A generous gift, old man. Very well, I accept your thanks.
+}
+Rimalier_dialog_54 {
+No, Nicolas. Keep your money. I'll earn more soon enough, believe me.
+}
+Rimalier_dialog_55 {
+Excellent. Now, Captain... there's one more matter I wanted to discuss with you.
+}
+Rimalier_dialog_56 {
+Judging by how tightly you're gripping that musket, you're a little nervous...
+}
+Rimalier_dialog_57_m {
+You're a stubborn one, Captain... You refuse the money, but I won't let you leave empty-handed.\nTake this sheet - my own secret recipe. There were times when even the finest buccaneer couldn't find game. Then you survive on whatever comes to hand - gulls, dead cormorants, anything! With my recipe, you can get a decent piece of meat out of any bird. Take it, you won't regret it! Well then...\nThere is one more matter I'd like to discuss with you.
+}
+Rimalier_dialog_57_f {
+You're a stubborn one, Captain... You refuse the money, but I won't let you leave empty-handed.\nTake this sheet - my own secret recipe. There were times when even the finest buccaneer couldn't find game. Then you survive on whatever comes to hand - gulls, dead cormorants, anything! With my recipe, you can get a decent piece of meat out of any bird. Take it, you won't regret it! Well then...\nThere is one more matter I'd like to discuss with you.
+}
+Rimalier_dialog_58 {
+A useful recipe. Thank you, Rimalie! Now tell me about this other matter.
+}
+Rimalier_dialog_59 {
+I've had plenty of time to think while wandering around here. Le Basque gave me a roof, but this damned land is draining the life out of me. I'm rusting like an anchor left ashore. Without the smell of sea salt and burnt powder, I'm more dead than alive.
+}
+Rimalier_dialog_60 {
+What are you getting at, Nicolas?
+}
+Rimalier_dialog_61 {
+I know you're going after Vargas. And I know there's going to be plenty of blood. Take an old man aboard, Captain. Swords are for the young and hot-blooded, but my musket can hit true at a hundred yards. Give me a place in the fighting top and I'll put down an enemy captain or gunner before their grapples ever touch our rail!
+}
+Rimalier_dialog_62 {
+A marksman like you is a gift from Providence. I'd be honored to have you aboard my ship, Nicolas.
+}
+Rimalier_dialog_63_m {
+Nicolas, with all the respect in the world for your skill... I have to refuse. You've given your best years to the sea and earned your rest. Where we're going is no pleasure cruise - it's a very dangerous undertaking.
+}
+Rimalier_dialog_63_f {
+Nicolas, with all the respect in the world for your skill... I have to refuse. You've given your best years to the sea and earned your rest. Where we're going is no pleasure cruise - it's a very dangerous undertaking.
+}
+Rimalier_dialog_64 {
+You won't regret it, Captain! My heavy lead and my loyalty are yours now. I'll fetch my bullet mold and some dry powder. Awaiting the order to sail!
+}
+Rimalier_dialog_65 {
+Welcome aboard. We sail soon.
+}
+Rimalier_dialog_66 {
+One condition, Captain: consider me stuck to you like powder soot to a gunner's fingers. Until this business is finished, you won't be rid of me. I want to settle accounts with Vargas no less than you do - if only for the roof he blasted to splinters.
+}
+Rimalier_dialog_67 {
+Very well, we have a deal... Welcome aboard. We sail soon.
+}
+Rimalier_dialog_68_m {
+No, wait. Nicolas, with all the respect in the world for your skill... I have to refuse. You've given your best years to the sea and earned your rest.
+}
+Rimalier_dialog_68_f {
+No, wait. Nicolas, with all the respect in the world for your skill... I have to refuse. You've given your best years to the sea and earned your rest.
+}
+Rimalier_dialog_69 {
+Rest is for corpses and fat merchants! And don't try to talk me out of it, Captain. I know Michel sent you after Vargas's three lieutenants. I imagine he'll send Jaco with you too, eh? You think I'll let that pup walk into Spanish lead without me watching his back?
+}
+Rimalier_dialog_70 {
+You certainly don't lack stubbornness, old man. But it'll be a real slaughter out there...
+}
+Rimalier_dialog_71 {
+Exactly why you need me! A sword is for the young and hot-headed, but my hunting musket can hit true at a hundred yards. Give me a place in the fighting top and I'll drop any enemy before he can draw steel. I'm coming with you, and that's the end of it.
+}
+Rimalier_dialog_72 {
+I surrender! Hard to argue with that. Welcome aboard, Nicolas. But when we return, you're going ashore with Jaco.
+}
+Rimalier_dialog_73 {
+Aye aye, Captain!
+}
+Rimalier_dialog_74 {
+Get aboard. We sail soon.
+}
+Rimalier_dialog_75 {
+Captain, this place reeks of an ambush from a mile away. As your officer I'll follow you into hell itself, but I advise keeping a hand on your hilt.
+}
+Rimalier_dialog_76 {
+Easy, Nicolas. Keep your eyes open and stay close.
+}
+Rimalier_dialog_77 {
+Will do. Lead on, Captain.
+}
+Rimalier_dialog_78 {
+You know, Captain, I haven't sworn myself to your flag yet. I'd much rather fight on deck or in the jungle than creep around among graves in the dark.
+}
+Rimalier_dialog_79_m {
+If you don't like it here, Nicolas, you can wait by the entrance. I can manage alone.
+}
+Rimalier_dialog_79_f {
+If you don't like it here, Nicolas, you can wait by the entrance. I can manage alone.
+}
+Rimalier_dialog_80 {
+And get a Spanish blade between your ribs in this gloom? Since I'm here, I'll watch your back.
+}
+Rimalier_dialog_81 {
+Then follow me. He should be waiting somewhere by the chapel.
+}
+Rimalier_dialog_82 {
+Look out, Captain!
+}
+Rimalier_dialog_83 {
+How deep Vargas has sunk his filthy tentacles...
+}
+Rimalier_dialog_84 {
+No doubt he was preparing to strike Tortuga, and the buccaneer settlement as well. Into the catacombs. We need to beat the truth out of their commander - where Vargas took the girl - before he slips away for good.
+}
+Rimalier_dialog_85 {
+Captain, what now?
+}
+Rimalier_dialog_86 {
+Let's go.
+}
+Rimalier_dialog_87 {
+Nicolas, back to the ship. We'll round the island and blow his tub apart with cannon fire!
+}
+Rimalier_dialog_88 {
+By the time we reach them, Vargas will already have weighed anchor. And if we open fire, Marie will be the first to pay for it.
+}
+Rimalier_dialog_89 {
+Then we go through the caves.
+}
+Rimalier_dialog_90 {
+We'll come out at the beach, swim to the schooner, climb aboard, and quietly cut down the guards. If we're lucky, they'll understand what's happening only when it's too late.
+}
+Rimalier_dialog_91 {
+Madness... But you're right. We have no other choice... Let's go.
+}
+Rimalier_dialog_92 {
+We're too late... Someone turned this ship into a slaughterhouse.
+}
+Rimalier_dialog_93 {
+Nothing but corpses. But neither Vargas nor Marie is among them. The bastard sent us after a false trail, then cut his sailors' throats so none of them could tell us anything.
+}
+Rimalier_dialog_94 {
+If he butchers his own men that easily, the girl won't have long either.
+}
+Rimalier_dialog_95 {
+If he wanted her dead, he'd have done it at once. I don't know why, but he needs her alive. Down below, Nicolas. Keep your musket ready. Let's look for survivors.
+}
+Rimalier_dialog_96 {
+We lost time... Vargas slipped away, and took the girl with him.
+}
+Rimalier_dialog_97 {
+At least now we know where he's headed.
+}
+Rimalier_dialog_98 {
+We do, but that gives me little comfort. He doesn't strike me as a beaten dog hurrying back to its hole to lick its wounds. He wants us to follow him. I smell a trap, Captain, and my nose rarely lies.
+}
+Rimalier_dialog_99_m {
+Nicolas, last time I listened to you and didn't pursue him. But this is different. We've stripped him of his treasurer and his lieutenants and ruined his plans for Tortuga. He's cornered, and this time I'm not backing down.
+}
+Rimalier_dialog_99_f {
+Nicolas, last time I listened to you and didn't pursue him. But this is different. We've stripped him of his treasurer and his lieutenants and ruined his plans for Tortuga. He's cornered, and this time I'm not backing down.
+}
+Rimalier_dialog_100 {
+I don't like this business. But I'm coming with you. After all, that scoundrel still hasn't paid for trying to kill Jaco and... for my roof.
+}
+Rimalier_dialog_101 {
+You're quite the wit, Nicolas. We weigh anchor. Now.
+}
+Rimalier_dialog_102 {
+The trail leads straight to the mine from here. But I wouldn't go in. It's too quiet...
+}
+Rimalier_dialog_103 {
+What did you expect? Drums, songs, and dancing? He ran here to hide and decide what to do next.
+}
+Rimalier_dialog_104 {
+Then why wasn't that galleon in the bay? And where are his men? If he really fled here, we'd have been met at the shore.
+}
+Rimalier_dialog_105 {
+He had no time. We're right on his heels. And the galleon most likely went to fetch more mercenaries.
+}
+Rimalier_dialog_106 {
+It's all too neat. As though someone took care to make sure nothing stopped us from walking straight into the mousetrap.
+}
+Rimalier_dialog_107_m {
+Nicolas, that bastard seized a ship full of civilians and held them prisoner. God alone knows what he meant to do with them. Haven't you wondered why almost all the prisoners were young women? I have. That's why we're going in there and finishing him.
+}
+Rimalier_dialog_107_f {
+Nicolas, that bastard seized a ship full of civilians and held them prisoner. God alone knows what he meant to do with them. Haven't you wondered why almost all the prisoners were young women? I have. That's why we're going in there and finishing him.
+}
+Rimalier_dialog_108 {
+Damn me... Lead on, Captain. Just keep your eyes open. I can feel it in my back - something's wrong here.
+}
+Rimalier_dialog_109 {
+Let's go.
+}
+Rimalier_dialog_110 {
+Captain @<pchar>, how long do you intend to rest? Will you at least tell us what you dreamed about for those three days?
+}
+Rimalier_dialog_111 {
+I appreciate your sense of humor, Nicolas, but my head is splitting.
+}
+Rimalier_dialog_112 {
+Don't judge me too harshly. I didn't want to begin with condolences. I'm glad you're finally awake.
+}
+Rimalier_dialog_113 {
+Where are Etienne and Marie?
+}
+Rimalier_dialog_114 {
+Marie is aft. She's holding together, though you can see how hard it is for her. She told Marceau that her uncle died aboard the 'Rose of the Winds'. The Spaniards left almost none of the men alive.
+}
+Rimalier_dialog_115 {
+Poor girl...
+}
+Rimalier_dialog_116 {
+Yes. We're trying to support her, but she's withdrawn into herself and won't talk. As for Marceau, he's with the treasurer calculating payments to the wounded.
+}
+Rimalier_dialog_117 {
+I hope she gets through it. How did you make it back to the shore? Were there still Vargas's men in the jungle?
+}
+Rimalier_dialog_118 {
+Oh yes. The devils were sitting in the brush waiting for their chance. But Etienne isn't easy prey. The local vultures will feast well tonight.
+}
+Rimalier_dialog_119 {
+Then we won... Devil take it, my ears are still ringing...
+}
+Rimalier_dialog_120 {
+We won. Vargas is dead, his men are finished, Marie is alive. Enough heroics for one day, I'd say.
+}
+Rimalier_dialog_121_m {
+And you're not even going to reproach me for leading us straight into a trap after you warned me?
+}
+Rimalier_dialog_121_f {
+And you're not even going to reproach me for leading us straight into a trap after you warned me?
+}
+Rimalier_dialog_122 {
+Why would I? We're alive, Vargas is dead. Nothing more to say.
+}
+Rimalier_dialog_123_m {
+Even so, I'd like to apologize. I shouldn't have walked into that snare so blindly.
+}
+Rimalier_dialog_123_f {
+Even so, I'd like to apologize. I shouldn't have walked into that snare so blindly.
+}
+Rimalier_dialog_124 {
+Fair enough. By the way, what became of Vargas's body?
+}
+Rimalier_dialog_125 {
+No need. I came with you willingly and knew perfectly well how it might end. So put it out of your mind, Captain. I bear you no grudge.
+}
+Rimalier_dialog_126 {
+Thank you, Nicolas. By the way, what became of Vargas's body?
+}
+Rimalier_dialog_127 {
+We left it to the vultures. But before we did, Vargas's blade caught Etienne's eye. We decided the trophy would serve you better. Be careful, though... There's something unnatural about the weapon - it's as if poison keeps seeping from the steel. Never seen the like in all my years...
+}
+Rimalier_dialog_128 {
+Hmm. Vargas said something about an Indian shaman before he died... It is a fine blade. My thanks to both of you. Now tell me, Nicolas - where are we anchored?
+}
+Rimalier_dialog_129 {
+Off Cayman. Taking on supplies and catching our breath. We can weigh anchor whenever you wish.\nStill, I'm no doctor, but I'd advise returning to le Basque's outpost as soon as possible. You look terrible - you need rest and care.
+}
+Rimalier_dialog_130 {
+Then that's what we'll do. Back to Tortuga without delay.
+}
+Rimalier_dialog_131 {
+Well, Captain, what do you make of this sight? Look at those cutthroats. Today they've washed, combed their hair, and are even trying to remember a few decent words. It'll last exactly until evening.
+}
+Rimalier_dialog_132 {
+You think the women who chose to stay here made the wrong choice?
+}
+Rimalier_dialog_133 {
+No, just look at them. Not long ago those fools fought over marked cards and slept beside pigs. Now they're fixing roofs, building tables, and even trying not to swear in front of the women. Never thought I'd live to see it.
+}
+Rimalier_dialog_134 {
+And you'll miss the good old knife fights and filth?
+}
+Rimalier_dialog_135 {
+Not a chance. For the first time in years this place smells good. Looks like civilization has finally reached us. It won't be the same place anymore, but I certainly won't mourn the old days.
+}
+Rimalier_dialog_136 {
+Ha-ha. Don't swear to it, Nicolas. People often convince themselves the grass was greener once.
+}
+Rimalier_dialog_137 {
+No. Some of the men can definitely be tamed, and this place will change. The rest will stay the same savages they always were.
+}
+Rimalier_dialog_138 {
+Sounds as though you'll miss the old way after all.
+}
+Rimalier_dialog_139 {
+My throat's already dry from all this philosophy, Captain. Time for a couple mugs of rum and to watch those clumsy oxen trample the poor girls' feet.
+}
+Rimalier_dialog_140 {
+Very well, Nicolas, I won't deny you the pleasure. Who knows, maybe you'll decide to dance yourself, heh-heh.
+}
+Rimalier_dialog_141 {
+At least the boatswain doesn't make you wipe your boots before sitting at the table! But... I won't lie, Captain. When you see someone repair a roof before it caves in on a man's head, you have to respect it. Those women survived Vargas's dungeons, and now they have the buccaneers standing to attention. Flint, not girls.
+}
+Rimalier_dialog_142 {
+Careful you don't grow too fond of comfort, Rimalie. Or I'll put you ashore and have you help weed their gardens.
+}
+Rimalier_dialog_143 {
+Not a chance! My place is in your fighting top, with my trusty musket for company. All this domestic bustle is good for one evening - drink some wine and remember we're not merely wild beasts. A man with something to protect fights to the death, that's true enough. So let the lads here gather strength before le Basque's business... You and I already know our trade.
+}
+Rimalier_dialog_144 {
+That's the spirit. Drink your wine, Nicolas. Great deeds await us tomorrow.
+}
+Rimalier_dialog_145 {
+Thank you, Michel. But where's Jaco? I was certain he'd be with us.
+}
+Rimalier_dialog_146 {
+Devil take me, Captain, word of the 'Margarita' outran your ship. Half of Tortuga is already dividing your silver with great enthusiasm, though none of those rags has seen a single peso. Just beware of one thing: don't start believing Fortune is chained to your mast forever. The wounded Castilians will be waiting for our next stroke. And I daresay we don't mean to disappoint them?
+}
+Rimalier_dialog_147 {
+You see straight to the heart of it, Nicolas. Maracaibo has waited far too long for our visit.
+}
+Rimalier_dialog_148 {
+Need something, Cap'n?
+}
+Rimalier_dialog_149 {
+No. Let's go.
+}
+Rimalier_dialog_150 {
+Those dogs must have tried to behave like masters here.
+}
+Rimalier_dialog_151 {
+As always. But no one even bothered to remove their corpses.
+}
+Rimalier_dialog_152 {
+A warning to anyone who comes here armed.
+}
+Rimalier_dialog_153 {
+Hmm... Let's go. This stench will give me a headache soon.
+}
+Rimalier_dialog_154 {
+Take that, bastard...
+}
+Rimalier_dialog_155 {
+Only if the Captain kicks me off the ship. Until then, I'm staying in service.
+}
+Rimalier_dialog_156 {
+Nonsense! Who would throw you out? Everyone aboard loves you. No one's managed to drink you under the table yet.
+}
+Rimalier_dialog_157 {
+Stay well, Nicolas. Perhaps we'll meet again.
+}
+
+LeBasque_Rimalier_1 {
+And so our victorious squadron scattered...
+}
+
+LeBasque_Rimalier_2 {
+Ho-ho! There's enough here for two new houses!
+}
+
+LeBasque_Rimalier_3 {
+First, I'll head to the nearest tavern and drink as much as I can. Ha-ha!
+}
+
+LeBasque_Rimalier_4 {
+A foolproof plan needs no amendments. I have the honor, gentlemen. If you need me, you know where to find me.
+}

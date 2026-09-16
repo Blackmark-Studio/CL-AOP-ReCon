@@ -1,0 +1,44 @@
+EPL_3_TheFirstSteps_dialog_1 {Por favor, comunique o erro ao suporte técnico.}
+EPL_3_TheFirstSteps_dialog_2 {Foi preciso coragem para aparecer aqui, mulher, ou foi a estupidez que não deixou você perceber as mudanças ao redor?}
+EPL_3_TheFirstSteps_dialog_3 {Meu nome é @<GetFullName>, e estou aqui justamente porque algumas coisas mudaram por aqui.}
+EPL_3_TheFirstSteps_dialog_4 {É mesmo? Fale.}
+EPL_3_TheFirstSteps_dialog_5 {Por sorte, eu estava em Santo Domingo quando seus homens fizeram aquela tentativa malsucedida de assalto. Espalhou-se pela cidade o rumor de que a Espanha ofereceu uma recompensa por duas jovens senhoras - as filhas do comandante deste forte - e pretendo encontrá-las.}
+EPL_3_TheFirstSteps_dialog_6 {Você acha que, se eu estivesse com elas, eu as entregaria?}
+EPL_3_TheFirstSteps_dialog_7 {Acho que você precisa de um intermediário para negociar. Os espanhóis não vão permitir que você se aproxime de nenhuma de suas colônias a menos de um tiro de canhão.}
+EPL_3_TheFirstSteps_dialog_8 {Eles não têm motivo para isso. Não foram meus homens que atacaram a colônia. Eu apenas aproveitei a oportunidade e ocupei uma fortificação abandonada. Um lugar vantajoso, diga-se de passagem; seria tolice ignorá-lo. Comboios ingleses e franceses passam por aqui o tempo todo, e com bom tempo dá até para avistar a costa de Tortuga.}
+EPL_3_TheFirstSteps_dialog_9 {E ainda assim, o que aconteceu com as irmãs?}
+EPL_3_TheFirstSteps_dialog_10 {Você pode pegar seus homens e vasculhar a ilha inteira, mas aposto que, se estiverem vivas, vão aparecer sozinhas. Ou pode distribuir pás e mandar verificar o cemitério fora da cidade. Comigo você não vai encontrá-las.}
+EPL_3_TheFirstSteps_dialog_11 {Ninguém ofereceria recompensa por gente morta.}
+EPL_3_TheFirstSteps_dialog_12 {Então não posso ajudar você em nada.}
+EPL_3_TheFirstSteps_dialog_13 {Voltarei aqui em outra ocasião.}
+EPL_3_TheFirstSteps_dialog_14 {Vim por ordem do governador de Santo Domingo com um relatório sobre os acontecimentos recentes em Hispaniola.}
+EPL_3_TheFirstSteps_dialog_15 {Já tenho informações sobre o que aconteceu. Os rumores, sabe, correm mais depressa que o vento por estas bandas, mas claro que lerei o relatório oficial. Aceite isto como pagamento pela entrega pontual.}
+EPL_3_TheFirstSteps_dialog_16 {Señor @<GetFullName> já me pagou a recompensa adiantada.}
+EPL_3_TheFirstSteps_dialog_17 {Considere isto como cobertura das despesas adicionais.}
+EPL_3_TheFirstSteps_dialog_18 {Não vou recusar, pois no momento estou numa situação difícil. A propósito, tenho uma pergunta de caráter mais pessoal do que oficial. Que destino espera a colônia perdida pela Espanha? Durante muito tempo ela foi o meu lar.}
+EPL_3_TheFirstSteps_dialog_19 {Nesta questão não se podem tomar decisões precipitadas. Mas posso lhe dizer com certeza que a Espanha não vai simplesmente ignorar a pilhagem sangrenta cometida pelos piratas. Mais cedo ou mais tarde, a bandeira espanhola voltará a tremular sobre La Vega e a justiça prevalecerá! Agora peço que me deixe, tenho trabalho a fazer.}
+EPL_3_TheFirstSteps_dialog_20 {Agradeço, Vossa Excelência!}
+EPL_3_TheFirstSteps_dialog_21 {
+Parabéns, @<GetFullName>. Você se tornou a heroína de Hispaniola. Seu pai teria orgulho de você.
+}
+EPL_3_TheFirstSteps_dialog_22 {
+Meu pai teria... Espere, como você me chamou?!
+}
+EPL_3_TheFirstSteps_dialog_23 {
+@<GetFullName>. Ou você achou que eu iria chamá-la de Remidos?
+}
+EPL_3_TheFirstSteps_dialog_24 {
+Você claramente sabe mais do que eu poderia imaginar, Sandro. Explique-se.
+}
+EPL_3_TheFirstSteps_dialog_25 {
+Nunca lhe pareceu estranho que seu nome se destaque um pouco entre os demais nomes espanhóis?
+}
+EPL_3_TheFirstSteps_dialog_26 {
+Minha mãe me deu esse nome porque era francesa da outra parte da ilha - Haiti. E daí?
+}
+EPL_3_TheFirstSteps_dialog_27 {
+A questão é que seu pai - Manuel Pardal - é um célebre corsário português a serviço da Coroa espanhola. Foi em homenagem a ele que lhe deram o nome Emmanuel. Mas viver com um sobrenome desses pode ser muito perigoso, por isso esconderam você bem longe de todos os perigos.\nÉ por isso que lhe trago uma mensagem de seu pai: “Desejo a você um destino muito melhor do que o meu, filha.” Agora eu cumpri meu dever; você cumprirá o seu.\nDeixo em seu navio meu amigo e médico Hopkins. Ele ainda está fraco demais para ir comigo aonde vou... Em suma, ainda não tem condições. Peço que cuide dele por algum tempo, e depois voltarei para buscá-lo. Eu encontrarei você, não se preocupe, @<GetFullName>.
+}
+EPL_3_TheFirstSteps_dialog_28 {
+Está bem, Sandro. De verdade... Preciso pensar em tudo isso. Obrigada.
+}

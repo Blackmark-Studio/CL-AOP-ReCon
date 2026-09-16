@@ -527,12 +527,12 @@ It looks like the Spanish are retreating. They can't withstand such firepower!
 ~
 Disengage from combat by increasing the distance to the enemy ship. You can see the distance to the ship through the spyglass.
 ~
-To use the spyglass, go to the deck ('Tab' by default) and hold the 'Ctrl' key (default).
+To use the spyglass, go to the deck ('Tab' by default) and press the 'Ctrl' key (default).
 ~
 When the distance to the enemy reaches 1000, you can safely leave the battlefield.
 }
 BloodPrologue_SeaEscape_controlsimg1 {Sea_CameraSwitch}
-BloodPrologue_SeaEscape_controlsimg2 {TelescopeIn}
+BloodPrologue_SeaEscape_controlsimg2 {TelescopeMode}
 
 BloodPrologue_EnterMap_title {Enter to the global map}
 BloodPrologue_EnterMap_descr

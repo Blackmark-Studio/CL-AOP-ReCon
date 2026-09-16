@@ -1,75 +1,75 @@
 Providencia_PortMan_1 {
-什么问题？
+什么问题？ 
 }
 Providencia_PortMan_2 {
-有什么需要帮忙的吗，@<GetAddress_Form>?
+有什么需要帮忙的吗， @<GetAddress_Form>?
 }
 Providencia_PortMan_3 {
 @<RandPhraseSimple>
 }
 Providencia_PortMan_4 {
-不久前，你试图问我一个问题@<GetAddress_Form>……
+不久前， 你试图问我一个问题@<GetAddress_Form>…… 
 }
 Providencia_PortMan_5 {
-你今天已经第三次提这事了……
+你今天已经第三次提这事了…… 
 }
 Providencia_PortMan_6 {
-听着，要是你不是来办港口的事儿，别拿问题来烦我。
+听着， 要是你不是来办港口的事儿， 别拿问题来烦我。 
 }
 Providencia_PortMan_7_m {
-我改主意了……
+我改主意了…… 
 }
 Providencia_PortMan_7_f {
-我改主意了……
+我改主意了…… 
 }
 Providencia_PortMan_8 {
-我现在没什么可说的。
+我现在没什么可说的。 
 }
 Providencia_PortMan_9 {
 @<RandPhraseSimple>
 }
 Providencia_PortMan_10 {
-嗯，我的记忆好像出了点问题……
+嗯， 我的记忆好像出了点问题…… 
 }
 Providencia_PortMan_11 {
-看来第三次总算成了吧……
+看来第三次总算成了吧…… 
 }
 Providencia_PortMan_12 {
-不好意思，港口的事我现在没兴趣。
+不好意思， 港口的事我现在没兴趣。 
 }
 Providencia_PortMan_13 {
-您好，@<GetAddress_Form>。咱们好像还没见过。我是@<GetFullName>，港口主管。
+您好， @<GetAddress_Form>。 咱们好像还没见过。 我是@<GetFullName>， 港务长。 
 }
 Providencia_PortMan_14 {
-Edward Collier让我来找你，谈谈船只停泊的事。
+爱德华.科利尔让我来找你， 谈谈船只停泊的事。 
 }
 Providencia_PortMan_15 {
-当然，否则我可不会让你进门。能让我看看你的证件吗？
+当然， 否则我可不会让你进门。 能让我看看你的证件吗？ 
 }
 Providencia_PortMan_16 {
-没问题，你看看吧。就只差Edward Collier的签名了。
+没问题， 你看看吧。 就只差爱德华.科利尔的签名了。 
 }
 Providencia_PortMan_17 {
-谢谢。稍等，我得仔细看看。嗯……这是Oliver的笔迹，没错。一切都没问题，你可以按标准条款使用我们这小小办事处的服务。安全有保障。
+谢谢。 稍等， 我得仔细看看。 嗯…… 这是奥利弗的笔迹， 没错。 一切都没问题， 你可以按标准条款使用我们这小小办事处的服务。 安全有保障。 
 }
 Providencia_PortMan_18 {
-请问，这里有造船厂能买船吗？
+请问， 这里有造船厂能买船吗？ 
 }
 Providencia_PortMan_19 {
-你不用担心。根据你的文件，我们会给你安排一艘替代船。稍等，我看看现在有什么可用的。\n你运气不错，正好有艘倒霉的欠债人Johnny Eight的lugger一直停在我们码头。船况一般，但对你来说应该够用了。
+你不用担心。 根据你的文件， 我们会给你安排一艘替代船。 稍等， 我看看现在有什么可用的。 \n你运气不错， 正好有艘倒霉的欠债人约翰尼.埃特的斜桁纵帆船一直停在我们码头。 船况一般， 但对你来说应该够用了。 
 }
 Providencia_PortMan_20 {
-太好了！现在我想请你帮个忙。
+太好了！ 现在我想请你帮个忙。 
 }
 Providencia_PortMan_21 {
-好吧，你找俺有啥事？
+好吧， 你找我有什么事？ 
 }
 Providencia_PortMan_22 {
-我能把我的一艘船暂时留在这儿吗？
+我能把我的一艘船暂时留在这儿吗？ 
 }
 Providencia_PortMan_23 {
-我来这儿是有别的事。
+我来这儿是有别的事。 
 }
 Providencia_PortMan_24 {
-谢谢你。咱们还会再见的。
+谢谢你。 咱们还会再见的。 
 }

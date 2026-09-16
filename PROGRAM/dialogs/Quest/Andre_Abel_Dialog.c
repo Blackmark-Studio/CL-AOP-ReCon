@@ -32,6 +32,13 @@ void ProcessDialogEvent()
 				link.l1 = StringFromKey("Andre_Abel_Dialog_4", pchar);
 				link.l1.go = "Andre_Abel_1";
 			}
+			else
+			{
+				// > Подсказка про полную эскадру
+				link.l1 = StringFromKey("Andre_Abel_Dialog_5") + " " + StringFromKey("Andre_Abel_Dialog_97");
+				link.l1.go = "exit";
+				break;
+			}
 
 			link.l2 = StringFromKey("Andre_Abel_Dialog_5");
 			link.l2.go = "exit";
@@ -66,6 +73,7 @@ void ProcessDialogEvent()
 			NextDiag.TempNode = "Andre_Abel_No_Quest";
 			RemoveLandQuestMark_Main(npchar, "Andre_Abel_Quest");
 			RemoveMapQuestMark("FortFrance_town", "Andre_Abel_Quest");
+			DeleteAttribute(pchar, "QuestTemp.AndreAbelQuest");
 		break;
 
 		case "Andre_Abel_No_Quest":
@@ -93,8 +101,6 @@ void ProcessDialogEvent()
 			SetQuestHeader("Andre_Abel_Quest");
 			AddQuestRecord("Andre_Abel_Quest", "1");
 			AddQuestUserData("Andre_Abel_Quest", "sSex", GetSexPhrase("ся", "ась"));
-			// PChar.Quest.Andre_Abel_Quest_1Day_Left.over = "yes"; // не нужно - Абель теперь генерится сразу и ждёт ГГ сколько угодно
-			PChar.QuestTemp.Andre_Abel_Quest_In_Progress = true;    // Флаг - квест начат
 			SetFunctionTimerCondition("Andre_Abel_Quest_2Days_Left", 0, 0, 2, false);
 			NextDiag.TempNode = "Andre_Abel_To_Sea_1";
 			RemoveMapQuestMark("FortFrance_town", "Andre_Abel_Quest");
@@ -150,6 +156,7 @@ void ProcessDialogEvent()
 			if (PChar.location == "FortFrance_Tavern")    // Из таверны можно было не выходить fix
 			{
 				dialog.text = StringFromKey("Andre_Abel_Dialog_35", PChar.Name);
+				link.l1 = StringFromKey("Andre_Abel_Dialog_96");
 				link.l1.go = "Andre_Abel_15Days_Left_In_FortFrance";
 				break;
 			}
@@ -194,7 +201,6 @@ void ProcessDialogEvent()
 			dialog.text = StringFromKey("Andre_Abel_Dialog_44");
 			link.l1 = StringFromKey("Andre_Abel_Dialog_45");
 			link.l1.go = "Andre_Abel_In_PortPax_2";
-			Group_DeleteGroup("Andre_Abel_Quest_Pirates_Ships"); // На всякий случай
 			AddItemLog(pchar, "jewelry17", "33", StringFromKey("InfoMessages_178"), "Important_item");
 			bDisableFastReload = false;
 			chrDisableReloadToLocation = false;
@@ -288,6 +294,8 @@ void ProcessDialogEvent()
 			NPChar.LifeDay = 0;
 			RemoveLandQuestMark_Main(npchar, "Andre_Abel_Quest");
 			NextDiag.CurrentNode = "Andre_Abel_In_PortPax_Tavern_No_Quest";
+			AddQuestRecord("Andre_Abel_Quest", "9");
+			AddQuestUserData("Andre_Abel_Quest", "sSex", GetSexPhrase("", "а"));
 			CloseQuestHeader("Andre_Abel_Quest");
 			DeleteAttribute(pchar, "QuestTemp.AndreAbelQuest");
 			LAi_SetSitType(NPChar);
@@ -327,8 +335,6 @@ void ProcessDialogEvent()
 
 		case "Andre_Abel_In_Tavern_10":
 			DialogExit();
-			AddQuestRecord("Andre_Abel_Quest", "10");
-			AddQuestUserData("Andre_Abel_Quest", "sSex", GetSexPhrase("ся", "ась"));
 			NextDiag.CurrentNode = "Andre_Abel_In_Tavern_Continue_Quest";
 			LAi_SetSitType(NPChar);
 			LAi_SetPlayerType(PChar);
@@ -337,7 +343,7 @@ void ProcessDialogEvent()
 			AddLandQuestMark_Main(CharacterFromId("Jackman"), "Andre_Abel_Quest");
 			//QuestSetCurrentNode("Jackman", "Andre_Abel_Quest_Jackman_Dialog_1");
 			RemoveLandQuestMark_Main(npchar, "Andre_Abel_Quest");
-			DoFunctionReloadToLocation("PortPax_tavern", "tables", "stay3", "");
+			DoFunctionReloadToLocation("PortPax_tavern", "tables", "stay3", "Andre_Abel_Quest_Dialog_In_PortPax_Tavern_End");
 		break;
 
 		case "Andre_Abel_In_Tavern_Continue_Quest":
@@ -388,13 +394,14 @@ void ProcessDialogEvent()
 			NPChar.LifeDay = 0;
 			RemoveLandQuestMark_Main(npchar, "Andre_Abel_Quest");
 			GiveNationLicence(sti(NPChar.LicenceNation), 50);
-			SetCharacterShipLocation(NPChar, "none");    // Уберем корабль из порта
+			SetCharacterShipLocation(NPChar, "");    // Уберем корабль из порта ("none" не работает - FindLocation вернёт -1) // > TODO: бесят меня эти none в безусловных местах в коде
 			NextDiag.CurrentNode = "Andre_Abel_In_Tavern_Quest_Complete_5";
 			AddQuestRecord("Andre_Abel_Quest", "23");
 			AddQuestUserData("Andre_Abel_Quest", "sSex", GetSexPhrase("", "а"));
 			AddQuestUserData("Andre_Abel_Quest", "sNation", XI_ConvertString(Nations[sti(NPChar.LicenceNation)].Name + "Gen"));
 			CloseQuestHeader("Andre_Abel_Quest");
 			DeleteAttribute(pchar, "QuestTemp.AndreAbelQuest");
+			DeleteAttribute(pchar, "QuestTemp.Andre_Abel_Quest_Complete");
 			Achievment_Set(ACH_Poslannik);
 		break;
 

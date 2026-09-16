@@ -6,6 +6,20 @@ extern void InitRandomShipsNames();
 
 string	sRndShpSpName[22], sRndShpEnName[21], sRndShpFrName[12], sRndShpPiName[9], sRndShpHoName[10];
 
+// KZ > отпечаток файлов, из которых собраны таблицы кораблей.
+string GetShipsFilesStamp()
+{
+	string sInit  = GetSegmentHash("ships\ships_init.c");
+	string sSails = GetSegmentHash("ships\sails_init.c");
+	string sTypes = GetSegmentHash("ships\ships.h");
+	string sGuns  = GetSegmentHash("cannons\cannons.h"); // > CANNON_TYPE_* уходят в ShipsTypes[].Cannon у каждого типа
+
+	if (sInit == "" || sSails == "" || sTypes == "" || sGuns == "")
+		return ""; // > хоть один файл не прочитался - состояние таблиц неизвестно целиком
+
+	return sInit + "|" + sSails + "|" + sTypes + "|" + sGuns;
+}
+
 void ShipsInit()
 {
 	if (LoadSegment("ships\ships_init.c"))
@@ -20,6 +34,39 @@ void ShipsInit()
 		InitSailsColors();
 		UnloadSegment("ships\sails_init.c");
 	}
+}
+
+// KZ > получить индекс типа корабля в ShipsTypes по стабильному атрибуту имени; возвращает -1 если индекс не нашли.
+int GetShipTypeIndexByName(string _sName)
+{
+	if (_sName == "")
+		return -1;
+
+	int i;
+	int iSize = GetArraySize(&ShipsTypes);
+
+	for (i = 0; i < iSize; i++)
+	{
+		if (!CheckAttribute(&ShipsTypes[i], "Name"))
+			continue;
+
+		if (ShipsTypes[i].Name == _sName)
+			return i;
+	}
+
+	return -1;
+}
+
+// KZ > стабильное имя типа корабля по индексу в ShipsTypes; возвращает "" если индекс вне диапазона.
+string GetShipTypeNameByIndex(int _iType)
+{
+	if (_iType < 0 || _iType >= GetArraySize(&ShipsTypes))
+		return "";
+
+	if (!CheckAttribute(&ShipsTypes[_iType], "Name"))
+		return "";
+
+	return ShipsTypes[_iType].Name;
 }
 
 void SetRandomNameToShip(ref rCharacter)

@@ -1,26 +1,26 @@
 Cartahena_Lighthouse_1 {
-你想干什么？
+你想干什么？ 
 }
 Cartahena_Lighthouse_2 {
-你想问啥？
+你想问什么？ 
 }
 Cartahena_Lighthouse_3 {
 @<RandPhraseSimple>
 }
 Cartahena_Lighthouse_4 {
-那你说说，@<GetAddress_Form>，你到底对什么感兴趣？
+那你说说， @<GetAddress_Form>， 你到底对什么感兴趣？ 
 }
 Cartahena_Lighthouse_5 {
-你今天已经第三次想问问题了……
+你今天已经第三次想问问题了…… 
 }
 Cartahena_Lighthouse_6 {
-够了，你把我都折腾累了。快离开我家！
+够了， 你把我都折腾累了。快离开我家！ 
 }
 Cartahena_Lighthouse_7_m {
-我改主意了……
+我改主意了…… 
 }
 Cartahena_Lighthouse_7_f {
-我改变主意了……
+我改变主意了…… 
 }
 Cartahena_Lighthouse_8 {
 我现在没什么可说的
@@ -29,14 +29,14 @@ Cartahena_Lighthouse_9 {
 @<RandPhraseSimple>
 }
 Cartahena_Lighthouse_10_m {
-哎呀，我好像忘了。不好意思……
+哎呀， 我好像忘了。不好意思…… 
 }
 Cartahena_Lighthouse_10_f {
-哎呀，我好像忘了点什么，抱歉……
+哎呀， 我好像忘了点什么， 抱歉…… 
 }
 Cartahena_Lighthouse_11 {
-是啊，第三次总该成了吧……
+是啊， 第三次总该成了吧…… 
 }
 Cartahena_Lighthouse_12 {
-对不起……
+对不起…… 
 }

@@ -281,6 +281,27 @@ void ProcessDialogEvent()
 		break;
 		//<-- задать дистанцию стрельбы
 
+		case "RoyalJackpot_AtaukoFarewell_1":
+    dialog.text = StringFromKey("Tichingitu_60");
+    link.l1 = StringFromKey("Tichingitu_61");
+    link.l1.go = "RoyalJackpot_AtaukoFarewell_2";
+break;
+
+case "RoyalJackpot_AtaukoFarewell_2":
+    dialog.text = StringFromKey("Tichingitu_62");
+    link.l1 = StringFromKey("Tichingitu_63");
+    link.l1.go = "RoyalJackpot_AtaukoFarewell_exit";
+break;
+
+case "RoyalJackpot_AtaukoFarewell_exit":
+	DialogExit();
+	AddCharacterExpToSkill(pchar, SKILL_SNEAK, 50);
+	LAi_SetOfficerType(npchar);
+	LAi_tmpl_SetFollow(npchar, GetMainCharacter(), -1.0);
+	NextDiag.CurrentNode = "Hired";
+	NextDiag.TempNode = "Hired";
+break;
+
 		case "Exit":
 			NextDiag.CurrentNode = NextDiag.TempNode;
 			DialogExit();

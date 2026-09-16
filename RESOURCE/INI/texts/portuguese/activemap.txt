@@ -2,6 +2,7 @@ CONTRABAND {Contrabando}
 EXPORT {Exportar}
 IMPORT {Importar}
 Trade_assistant {Assistente de Comércio}
+AGGRESSIVE {Alta procura}
 No_price {Sem lista de preços}
 No_profit {Nenhum negócio lucrativo}
 Distance {Distância}
@@ -20,3 +21,4 @@ nautical_miles {milhas náuticas}
 nautical_miles2 {milhas náuticas}
 TRAVEL_from {de}
 TRAVEL_to {até}
+Goods_data_date		{Dados das mercadorias em}

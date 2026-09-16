@@ -184,10 +184,10 @@ void wdmInitWorldMap()
 	worldMap.labels.Martinique.locator = "Martinique";
 	worldMap.labels.Martinique.text = CheckingTranslate(idLngFile,"Martinique");
 	
-	worldMap.labels.Mariegalante.type = "Island";
-	worldMap.labels.Mariegalante.id = "Mariegalante";
-	worldMap.labels.Mariegalante.locator = "Mariegalante";
-	worldMap.labels.Mariegalante.text = CheckingTranslate(idLngFile,"Mariegalante");
+	worldMap.labels.MarieGalante.type = "Island";
+	worldMap.labels.MarieGalante.id = "MarieGalante";
+	worldMap.labels.MarieGalante.locator = "MarieGalante";
+	worldMap.labels.MarieGalante.text = CheckingTranslate(idLngFile,"MarieGalante");
 	
 	worldMap.labels.SentMartin.type = "Island";
 	worldMap.labels.SentMartin.id = "SentMartin";
@@ -234,6 +234,11 @@ void wdmInitWorldMap()
 	worldMap.labels.Tortuga.locator = "Tortuga";
 	worldMap.labels.Tortuga.text = CheckingTranslate(idLngFile,"Tortuga");
 	
+	worldMap.labels.Tobago.type = "Island";
+	worldMap.labels.Tobago.id = "Tobago";
+	worldMap.labels.Tobago.locator = "Tobago";
+	worldMap.labels.Tobago.text = CheckingTranslate(idLngFile,"Tobago");
+	
 	worldMap.labels.Trinidad.type = "Island";
 	worldMap.labels.Trinidad.id = "Trinidad";
 	worldMap.labels.Trinidad.locator = "Trinidad";
@@ -248,6 +253,11 @@ void wdmInitWorldMap()
 	worldMap.labels.Providence.id = "Providence";
 	worldMap.labels.Providence.locator = "Providence";
 	worldMap.labels.Providence.text = CheckingTranslate(idLngFile,"Providence");
+
+	worldMap.labels.Aruba.type = "Island";
+	worldMap.labels.Aruba.id = "Aruba";
+	worldMap.labels.Aruba.locator = "Aruba";
+	worldMap.labels.Aruba.text = CheckingTranslate(idLngFile,"Aruba");
 	
 	//=========================================================================
 	//Города / Towns
@@ -307,11 +317,6 @@ void wdmInitWorldMap()
 	worldMap.labels.Caracas_town.text = CheckingTranslate(idLngFile,"Caracas_town");
 	worldMap.labels.Caracas_town.icon = SPAIN;
 	
-	worldMap.labels.Havana_town.type = "Town";
-	worldMap.labels.Havana_town.id = "Havana_town";
-	worldMap.labels.Havana_town.locator = "Havana_town";
-	worldMap.labels.Havana_town.text = CheckingTranslate(idLngFile,"Havana_town");
-	worldMap.labels.Havana_town.icon = SPAIN;
 	
 	worldMap.labels.Villemstad_town.type = "Town";
 	worldMap.labels.Villemstad_town.id = "Villemstad_town";
@@ -432,6 +437,12 @@ void wdmInitWorldMap()
 	worldMap.labels.Providencia_town.locator = "Providencia_town";
 	worldMap.labels.Providencia_town.text = CheckingTranslate(idLngFile,"Providencia_town");
 	worldMap.labels.Providencia_town.icon = PIRATE;
+
+	worldMap.labels.Gibraltar_town.type = "Town";
+	worldMap.labels.Gibraltar_town.id = "Gibraltar_town";
+	worldMap.labels.Gibraltar_town.locator = "Gibraltar_town";
+	worldMap.labels.Gibraltar_town.text = CheckingTranslate(idLngFile,"Gibraltar_town");
+	worldMap.labels.Gibraltar_town.icon = SPAIN;
 	
 	worldMap.labels.Tenotchitlan_town.type = "Town";
 	worldMap.labels.Tenotchitlan_town.id = "Tenotchitlan_town";
@@ -488,10 +499,6 @@ void wdmInitWorldMap()
 	worldMap.labels.Caracas_Fort.locator = "Caracas_Fort";
 	worldMap.labels.Caracas_Fort.text = CheckingTranslate(idLngFile,"Caracas Fort");
 
-	worldMap.labels.Havana_Fort.type = "Fort";
-	worldMap.labels.Havana_Fort.id = "Havana_Fort";
-	worldMap.labels.Havana_Fort.locator = "Havana_Fort";
-	worldMap.labels.Havana_Fort.text = CheckingTranslate(idLngFile,"Havana Fort");
 
 	worldMap.labels.Villemstad_Fort.type = "Fort";
 	worldMap.labels.Villemstad_Fort.id = "Villemstad_Fort";
@@ -922,6 +929,21 @@ void wdmInitWorldMap()
 	worldMap.labels.Shore65.locator = "Shore65";
 	worldMap.labels.Shore65.text = CheckingTranslate(idLngFile,"Shore65");
 	
+	worldMap.labels.Shore66.type = "Shore";
+	worldMap.labels.Shore66.id = "Shore66";
+	worldMap.labels.Shore66.locator = "Shore66";
+	worldMap.labels.Shore66.text = CheckingTranslate(idLngFile,"Shore66");
+
+	worldMap.labels.Shore67.type = "Shore";
+	worldMap.labels.Shore67.id = "Shore67";
+	worldMap.labels.Shore67.locator = "Shore67";
+	worldMap.labels.Shore67.text = CheckingTranslate(idLngFile,"Shore67");
+
+	worldMap.labels.Shore68.type = "Shore";
+	worldMap.labels.Shore68.id = "Shore68";
+	worldMap.labels.Shore68.locator = "Shore68";
+	worldMap.labels.Shore68.text = CheckingTranslate(idLngFile,"Shore68");
+	
 	worldMap.labels.Shore_ship1.type = "Shore";
 	worldMap.labels.Shore_ship1.id = "Shore_ship1";
 	worldMap.labels.Shore_ship1.locator = "Shoreship1";
@@ -1173,12 +1195,14 @@ void wdmInitWorldMap()
 	
 	worldMap.islands.Maracaibo.position.x = 178.51;
 	worldMap.islands.Maracaibo.position.z = -870.37;
-	worldMap.islands.Maracaibo.Maracaibo_town.position.x = 134.82;
-	worldMap.islands.Maracaibo.Maracaibo_town.position.z = -939.65;
+	worldMap.islands.Maracaibo.Maracaibo_town.position.x = 157.82;
+	worldMap.islands.Maracaibo.Maracaibo_town.position.z = -892.056;
 	worldMap.islands.Maracaibo.Shore37.position.x = 140.753;
 	worldMap.islands.Maracaibo.Shore37.position.z = -828.99;
-	worldMap.islands.Maracaibo.Shore_ship3.position.x = 198.162;
-	worldMap.islands.Maracaibo.Shore_ship3.position.z = -994.035;
+	worldMap.islands.Maracaibo.Gibraltar_town.position.x = 209.471;
+	worldMap.islands.Maracaibo.Gibraltar_town.position.z = -982.44;
+	worldMap.islands.Maracaibo.Shore_ship3.position.x = 226.384;
+	worldMap.islands.Maracaibo.Shore_ship3.position.z = -852.491;
 	
 	worldMap.islands.Beliz.position.x = -896.084;
 	worldMap.islands.Beliz.position.z = 230.227;
@@ -1251,6 +1275,8 @@ void wdmInitWorldMap()
 	worldMap.islands.Tortuga.Tortuga_town.position.z = 817.942;
 	worldMap.islands.Tortuga.Shore58.position.x = 131.064;
 	worldMap.islands.Tortuga.Shore58.position.z = 849.44;
+	worldMap.islands.Tortuga.Shore66.position.x = 47.3228;
+	worldMap.islands.Tortuga.Shore66.position.z = 869.303;
 	worldMap.islands.Tortuga.Mayak6.position.x = 103.23;
 	worldMap.islands.Tortuga.Mayak6.position.z = 812.356;
 	
@@ -1386,6 +1412,13 @@ void wdmInitWorldMap()
 	worldMap.islands.Providence.Shore64.position.z = -474.247;
 	worldMap.islands.Providence.Shore65.position.x = -497.009;
 	worldMap.islands.Providence.Shore65.position.z = -389.498;
+
+	worldMap.islands.Aruba.position.x = 166.772;
+	worldMap.islands.Aruba.position.z = -578.37;
+	worldMap.islands.Aruba.Shore67.position.x = 188.992;
+	worldMap.islands.Aruba.Shore67.position.z = -582.122;
+	worldMap.islands.Aruba.Shore68.position.x = 149.774;
+	worldMap.islands.Aruba.Shore68.position.z = -590.987;
 	
 	worldMap.islands.LostShipsCity.position.x = -938.667;
 	worldMap.islands.LostShipsCity.position.z = 938.654;

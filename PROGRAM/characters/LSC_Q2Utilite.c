@@ -506,7 +506,8 @@ void initStartState2Character(ref ch)
     
     ch.questTemp.Contraband.relation = 60;
     ch.questTemp.Indian.relation = 30; // репа у индейцев, от 0 до 100, выше 60 - друг, ниже 20 - враг
-    DeleteAttribute(ch, "quest.meeting");
+    ch.questTemp.Buccaneer.relation = 50;
+	DeleteAttribute(ch, "quest.meeting");
     ch.ShipInStock = 0; // кораблей в порту
 	ch.questTemp.abordage = 0;   // двойной абордаж
 	ch.questTemp.donate   = 0; // пожертвование церкви
@@ -518,9 +519,6 @@ void initStartState2Character(ref ch)
 
 	ch.GenQuest.BrothelCount = "0"; // счетчик посещений девочек
 	//ch.GenQuest.Hunter2Pause   = false; // признак бойни в форте на суше - не делать ОЗГов
-	ch.I_MAP_SHOW = false;  // boal карты смотрим из предметов
-	ch.CameraHoldPos = false;
-	ch.CameraShipNPC = 0;// номер компаньона для камеры 0 - ГГ
 	ch.GenQuestFort.FarLocator = true; // для методов пихания фантомов в город
 
 	// Черная жемчужина
@@ -609,7 +607,7 @@ void initStartState2Character(ref ch)
 	// ==> набор мелких квестов, дается по одному до закрытия
 	ch.questTemp.different = "free";
 	// ==> линейка Блада homo
-	ch.questTemp.CapBloodLine = true;
+	ch.questTemp.CapBloodLine = false;
 	ch.questTemp.CapBUnarmed = false; //ГГ сабля не положена - false
 	// ==> линейка Теночтитлана
 	ch.questTemp.Teno = "begin";
@@ -1908,20 +1906,26 @@ string GetSharpRumour_inCity()
 //=============== шебека Синяя Птица.  ====================
 string BlueBurd_setTradeShip()
 {
-	pchar.questTemp.BlueBird.Island = GetArealByLocation(loadedLocation);
+	string sBBCity = pchar.questTemp.BlueBird.City;
+	string sBBIsland = GetArealByLocation(loadedLocation);
+	pchar.questTemp.BlueBird.Island = sBBIsland;
 	Pchar.quest.BlueBird_loginFleut.win_condition.l1 = "location";
-	Pchar.quest.BlueBird_loginFleut.win_condition.l1.location = pchar.questTemp.BlueBird.Island;
+	Pchar.quest.BlueBird_loginFleut.win_condition.l1.location = sBBIsland;
 	Pchar.quest.BlueBird_loginFleut.function = "BlueBird_loginFleut";
-	pchar.questTemp.BlueBird.nation = colonies[FindColony(pchar.questTemp.BlueBird.City)].nation; //нация колонии, откуда кораблик
+	int iBBColony = FindColony(sBBCity);
+	if (iBBColony != -1)
+		pchar.questTemp.BlueBird.nation = colonies[iBBColony].nation; //нация колонии, откуда кораблик
+	else
+		pchar.questTemp.BlueBird.nation = rand(HOLLAND);
 	aref aName;
 	makearef(aName, pchar.questTemp.BlueBird);
 	SetRandomNameToShip(aName);
 	AddQuestRecord("Xebeca_BlueBird", "10");
-	AddQuestUserData("Xebeca_BlueBird", "sCity", XI_ConvertString("Colony" + pchar.questTemp.BlueBird.City + "Pre"));
+	AddQuestUserData("Xebeca_BlueBird", "sCity", XI_ConvertString("Colony" + sBBCity + "Pre"));
 	AddQuestUserData("Xebeca_BlueBird", "sShipName", "'" + aName.Ship.Name + "'");
-	AddQuestUserData("Xebeca_BlueBird", "sCity_2", XI_ConvertString("Colony" + pchar.questTemp.BlueBird.City + "Gen"));
-	AddQuestUserData("Xebeca_BlueBird", "sTradeName", GetFullName(characterFromId(pchar.questTemp.BlueBird.City + "_trader")));
-	AddQuestUserData("Xebeca_BlueBird", "sIsland", XI_ConvertString(pchar.questTemp.BlueBird.Island + "Gen"));
+	AddQuestUserData("Xebeca_BlueBird", "sCity_2", XI_ConvertString("Colony" + sBBCity + "Gen"));
+	AddQuestUserData("Xebeca_BlueBird", "sTradeName", GetFullName(characterFromId(sBBCity + "_trader")));
+	AddQuestUserData("Xebeca_BlueBird", "sIsland", XI_ConvertString(sBBIsland + "Gen"));
 	SaveCurrentQuestDateParam("questTemp.BlueBird");
 	return GetBlueBirdRumour_Ship(); //текст слуха
 }
@@ -1973,23 +1977,47 @@ void PiratesLineInit()
 //ищем город определённой нации, проверять наличие ростовщика и тавернщика
 string GetQuestNationsCity(int _nation)
 {
-	int n, iRes;
-    int storeArray[MAX_COLONIES];
-    int howStore = 0;
+	Restrictor(&_nation, 0, 4);
 
-	for(n=0; n<MAX_COLONIES; n++)
-	{	//не на свой остров-ареал
-		if (colonies[n].nation != "none"  && colonies[n].id != "Panama" && sti(colonies[n].nation) == _nation && GetArealByLocation(loadedLocation) != GetArealByCityName(colonies[n].id))
-		{	//GetCharacterCurrentIslandId(pchar) != GetIslandNameByCity(colonies[n].id)
-			if (GetCharacterIndex(colonies[n].id + "_tavernkeeper") > 0 && GetCharacterIndex(colonies[n].id + "_usurer") > 0)
-			{
-				storeArray[howStore] = n;
-				howStore++;
-			}
+	int n, iRes;
+	int storeArray[MAX_COLONIES];
+	int howStore = 0;
+	string sColony, sAreal, sTmp;
+	ref rColony;
+
+	sAreal = GetArealByLocation(loadedLocation);
+
+	for (n = 0; n < MAX_COLONIES; n++)
+	{
+		rColony = &colonies[n];
+
+		if (rColony.nation == "none") continue;
+		if (sti(rColony.nation) != _nation) continue;
+
+		sColony = rColony.id;
+		if (sColony == "") continue;
+		if (sColony == "Panama") continue;
+		if (sColony == "Bucaneer_outpost") continue;
+
+		sTmp = GetArealByCityName(sColony); // > не на свой остров-ареал
+		if (sTmp != "") // > пустой ареал означает, что города нет в таблице GetArealByCityName, фильтровать нечем
+		{
+			if (sTmp == sAreal)
+				continue;
 		}
+
+		// > промах GetCharacterIndex - это полный перебор массива Characters (кэша на "не найдено" в движке нет), поэтому проверки нужно разносить TODO > fix везде
+		if (GetCharacterIndex(sColony + "_tavernkeeper") < 0) continue;
+		if (GetCharacterIndex(sColony + "_usurer") < 0) continue;
+
+		storeArray[howStore] = n;
+		howStore++;
 	}
+
 	if (howStore < 1) return GetColonyStartOwner(_nation, "tavernkeeper,usurer", 2);
-	iRes = storeArray[idRand("GetQuestNationsCity_" + _nation, howStore-1)];
+
+	iRes = storeArray[idRand("GetQuestNationsCity_" + _nation, howStore - 1)];
+
 	return colonies[iRes].id;
 }
 
@@ -1999,44 +2027,78 @@ string GetColonyStartOwner(int _nation, string sNPC, int iRandType)
 	Restrictor(&_nation, 0, 4);
 	Restrictor(&iRandType, 0, 2);
 
+	int i, n, iRes, iNPC = 0;
+	int storeArray[MAX_COLONIES];
+	int howStore = 0;
+	bool bNPC;
+	string sColony, sAreal, sTmp;
+	
+	// > NPC-статики: Mayor, Priest, tavernkeeper, waitress, trader, shipyarder, usurer, PortMan, Hostess, Smuggler, GlavSklad, bankvault, Lightman, Cemeteryman
+	string aNPC[16]; // > потолок списка, статиков в колонии меньше
+	ref rColony;
+
+	// > список статиков разбираем один раз, а не заново на каждой колонии; пустые сегменты (лишняя запятая) пропускаем, раньше они гробили всю выборку
 	sNPC = stripblank(sNPC);
-	int i, q, n, iRes, iNPC = KZ|Symbol(sNPC, ",");
-    int storeArray[MAX_COLONIES];
-    int howStore = 0;
-
-	for (n = 0; n < MAX_COLONIES; n++)
+	if (sNPC != "")
 	{
-		if (colonies[n].smuggling_nation != "none" && colonies[n].id != "Panama" && sti(colonies[n].smuggling_nation) == _nation && GetArealByLocation(loadedLocation) != GetArealByCityName(colonies[n].id))
+		n = KZ|Symbol(sNPC, ",");
+		int iCurLen = strlen(&sNPC);
+		int iCurPos = 0;
+		int iCurEnd;
+
+		for (i = 0; i <= n; i++)
 		{
-			if (sNPC != "") // > если необходимо наличие конкретного NPC-статика (несколько указывать через запятую)
-			{
-				q = -1;
-
-				for (i = 0; i <= iNPC; i++)
-				{
-					// NPC-статики: Mayor, Priest, tavernkeeper, waitress, trader, shipyarder, usurer, PortMan, Hostess, Smuggler, GlavSklad, bankvault, Lightman, Cemeteryman
-					if (GetCharacterIndex(colonies[n].id + "_" + GetSubStr(sNPC, ",", i)) > 0)
-						q++;
-					else
-						q--;
-				}
-
-				if (q >= iNPC)
-				{
-					storeArray[howStore] = n;
-					howStore++;
-				}
-			}
-			else
-			{
-				storeArray[howStore] = n;
-				howStore++;
-			}
+			if (iNPC >= 16) break;
+			iCurEnd = findSubStr(&sNPC, ",", iCurPos);
+			if (iCurEnd < 0) iCurEnd = iCurLen;
+			sTmp = "";
+			if (iCurEnd > iCurPos) sTmp = strcut(&sNPC, iCurPos, iCurEnd - 1);
+			iCurPos = iCurEnd + 1;
+			if (sTmp == "") continue;
+			aNPC[iNPC] = sTmp;
+			iNPC++;
 		}
 	}
 
-	if (howStore < 1) return SelectColonyExt(pchar, "B", "5", 0, "Panama", iRandType, "");
+	sAreal = GetArealByLocation(loadedLocation);
 
+	for (n = 0; n < MAX_COLONIES; n++)
+	{
+		rColony = &colonies[n];
+
+		if (rColony.smuggling_nation == "none") continue;
+		if (sti(rColony.smuggling_nation) != _nation) continue;
+
+		sColony = rColony.id;
+		if (sColony == "") continue;
+		if (sColony == "Panama") continue;
+		if (sColony == "Bucaneer_outpost") continue;
+
+		sTmp = GetArealByCityName(sColony); // > не на свой остров-ареал
+		if (sTmp != "")
+		{
+			if (sTmp == sAreal) continue;
+		}
+
+		bNPC = true;
+		for (i = 0; i < iNPC; i++) // > если необходимо наличие конкретного NPC-статика (несколько указывать через запятую)
+		{
+			if (GetCharacterIndex(sColony + "_" + aNPC[i]) < 0)
+			{
+				bNPC = false;
+				break; // > каждый промах - полный перебор Characters, добивать список смысла нет
+			}
+		}
+		if (!bNPC) continue;
+
+		storeArray[howStore] = n;
+		howStore++;
+	}
+
+	// > тег с нацией: без него idRand за один игровой день выдаёт всем нациям один и тот же город
+	if (howStore < 1) return SelectColonyExt(pchar, "B", "5", 0, "Panama,Bucaneer_outpost", iRandType, "GetColonyStartOwnerDef" + _nation);
+
+	iRes = storeArray[0];
 	switch (iRandType)
 	{
 		case 0: iRes = storeArray[rand(howStore - 1)]; break;
@@ -2055,93 +2117,132 @@ string SelectColonyExt(ref rChar, string sColonyType, string sNations, int iRela
 //					"I" (Island) 		> только обитаемые колонии на островах;
 //					"M" (Mein) 			> только обитаемые колонии на материке;
 //					"B" (Both) 			> все стандартные обитаемые колонии на островах и на материке;
-//					"U" (Uninhabited) 	> только необитайки (Доминика, Кайман, Теркс);
+//					"U" (Uninhabited) 	> только необитайки (Доминика, Кайман, Теркс, Аруба);
 //					"S" (Special) 		> только спецколонии (ГПК, Тено, Промыслы);
 //					"" 					> вообще все колонии из Colonies_init.c
 //	sNations						> колонии каких наций задействовать: "0" - Англия, "1" - Франция, "2" - Испания, "3" - Голландия, "4" - пираты, "5" - все, кроме пиратов, "" - все нации
 //	iRelationType					> 1 - только дружественные и нейтральные к rChar колонии, 2 - только вражеские, 0 - любые
-//	sExcludeColony					> список колоний, исключённых из выборки
+//	sExcludeColony					> список колоний, исключённых из выборки (в том числе из страховочной)
 //	iRandType						> тип рандома: 0 - rand, 1 - drand, 2 - idRand
 //	sTag							> тэг для idRand
+//	> нация и отношения не применяются к колониям без нации (необитайки, спецколонии): sti("none") даёт 0, то есть Англию
+//	> вернёт "" только если по типу колонии не нашлось вообще ничего
 
 	Restrictor(&iRandType, 0, 2);
 	Restrictor(&iRelationType, 0, 2);
 	int storeArray[MAX_COLONIES]; // > склад колоний по критериям
-	int defArray[MAX_COLONIES]; // > все подходящие колонии, на случай, если в storeArray ничего не подберётся
+	int defArray[MAX_COLONIES]; // > все подходящие по типу колонии, на случай, если в storeArray ничего не подберётся
 	int howStore = 0;
 	int defStore = 0;
-	int i, j, n, iRel = RELATION_UNKNOWN;
-	string tmp = "";
+	int i, iRel, iColNation;
+	int iCharNation = ENGLAND;
+	int iAskNation = sti(sNations);
+	bool bAnyNation = false;
+	bool bNoPirates = false;
+	bool bExclude = false;
+	string sColony, sType, sLable;
 	ref rColony;
 
-	if (sColonyType != "" && !StrHasStr(sColonyType, "A,I,M,B,U,S", 1))
+	if (sColonyType != "" && !StrHasStr(sColonyType, "A,I,M,B,U,S", true))
 		sColonyType = "B";
 
-	if (sNations != "" && !StrHasStr(sNations, "0,1,2,3,4,5", 1))
+	if (sNations != "" && !StrHasStr(sNations, "0,1,2,3,4,5", true))
+	{
 		sNations = "5";
+		iAskNation = 5;
+	}
 
+	if (sNations == "") bAnyNation = true;
+	if (sNations == "5") bNoPirates = true;
+	if (sExcludeColony != "") bExclude = true;
+	if (iRelationType > 0) // > rChar трогаем только там, где он реально нужен
+	{
+		if (CheckAttribute(rChar, "nation"))
+			iCharNation = sti(rChar.nation);
+	}
+
+	// > тег обязан зависеть от всех критериев, иначе два разных вызова за один игровой день получают один и тот же индекс
 	if (iRandType == 2 && sTag == "")
-		sTag = "SelectColonyEx" + rChar.id + sColonyType;
+		sTag = "SelectColonyEx" + rChar.id + sColonyType + sNations + iRelationType;
 
 	for (i = 0; i < MAX_COLONIES; i++)
 	{
 		rColony = &Colonies[i];
 
+		sColony = rColony.id;
+		if (sColony == "") continue; // > незаполненный слот: MAX_COLONIES может быть больше, чем колоний в Colonies_init.c
+
+		// > исключения снимаем до набора defArray, иначе страховка вернёт ровно то, что просили исключить
+		if (bExclude)
+		{
+			if (StrHasStr(sExcludeColony, sColony, true))
+				continue;
+		}
+
 		if (sColonyType != "")
 		{
-			if (rColony.nation == "none")
-			{
-				if (!CheckAttribute(rColony, "type")) continue;
-				if (rColony.type == "uninhabited" && sColonyType != "A" && sColonyType != "U") continue;
-				if (rColony.type == "special" && sColonyType != "S") continue;
-			}
+			sType = "inhabited";
+			if (CheckAttribute(rColony, "type")) sType = rColony.type;
 
-			if (sColonyType == "M" && rColony.islandLable != "Mein") continue;
-			if (sColonyType == "I" && rColony.islandLable == "Mein") continue;
+			if (sColonyType == "U" && sType != "uninhabited") continue; // > только необитайки
+			if (sColonyType == "S" && sType != "special") continue; // > только спецколонии
+			if (sColonyType == "A" && sType == "special") continue; // > обитаемые и необитайки
+
+			if (sColonyType == "B" || sColonyType == "I" || sColonyType == "M")
+			{
+				if (sType != "inhabited") continue;
+
+				sLable = "";
+				if (CheckAttribute(rColony, "islandLable")) sLable = rColony.islandLable; // > у необитаек атрибута нет вовсе
+				if (sColonyType == "M" && sLable != "Mein") continue;
+				if (sColonyType == "I" && sLable == "Mein") continue;
+			}
 		}
 
 		defArray[defStore] = i;
 		defStore++;
 
-		if (sNations != "")
-		{
-			if (sNations == "5" && rColony.nation == PIRATE) continue;
-			if (sNations != "5" && sti(rColony.nation) != sti(sNations)) continue;
-		}
+		iColNation = -1;
+		if (rColony.nation != "none") iColNation = sti(rColony.nation);
 
-		if (iRelationType > 0)
+		if (iColNation < 0)
 		{
-			iRel = GetNationRelation(sti(rChar.nation), sti(rColony.nation));
-			if (iRelationType == 1 && iRel == RELATION_ENEMY) continue;
-			if (iRelationType == 2 && iRel != RELATION_ENEMY) continue;
+			// > колонии без нации подходят только под "все нации" и "все, кроме пиратов"
+			if (!bAnyNation && !bNoPirates) continue;
+		}
+		else
+		{
+			if (bNoPirates && iColNation == PIRATE) continue;
+			if (!bAnyNation && !bNoPirates && iColNation != iAskNation) continue;
+
+			if (iRelationType > 0)
+			{
+				iRel = GetNationRelation(iCharNation, iColNation);
+				if (iRelationType == 1 && iRel == RELATION_ENEMY) continue;
+				if (iRelationType == 2 && iRel != RELATION_ENEMY) continue;
+			}
 		}
 
 		storeArray[howStore] = i;
 		howStore++;
 	}
 
-	if (sExcludeColony != "")
+	if (howStore < 1) // > по нации и отношениям не сошлось, берём всё, что прошло по типу колонии
 	{
-		n = KZ|Symbol(sExcludeColony, ",");
-		for (j = 0; j <= n; j++)
+		for (i = 0; i < defStore; i++)
 		{
-			tmp = GetSubStr(sExcludeColony, ",", j);
-			i = FindColony(tmp);
-			if (ArrayIsEqualValue(&storeArray, i))
-			{
-				ArrayRemoveValue(&storeArray, i);
-				howStore--;
-			}
+			storeArray[i] = defArray[i];
 		}
+		howStore = defStore;
 	}
 
 	if (howStore < 1)
 	{
-		howStore = defStore;
-		ArrayClear(&storeArray);
-		ArrayAddAll(&storeArray, &defArray);
+		trace("SelectColonyExt: нет колоний под критерии, type = " + sColonyType + ", nations = " + sNations + ", exclude = " + sExcludeColony);
+		return "";
 	}
 
+	i = storeArray[0];
 	switch (iRandType)
 	{
 		case 0: i = storeArray[rand(howStore - 1)]; break;
@@ -2728,8 +2829,8 @@ void SetShipInBridgetown()
 	locations[n].models.always.locators = "Bridgetown_locatorsShip";
 	locations[n].models.day.fonarShip = "Bridgetown_fdShip";
 	locations[n].models.night.fonarShip = "Bridgetown_fnShip";
-	locations[n].models.day.charactersPatch = "Bridgetown_patchship_day";
-	locations[n].models.night.charactersPatch = "Bridgetown_patchship_night";
+	// locations[n].models.day.charactersPatch = "Bridgetown_patchship_day";
+	// locations[n].models.night.charactersPatch = "Bridgetown_patchship_night";
 
 	locations[n].reload.ship1.name = "reloadShip";
 	locations[n].reload.ship1.go = "Cabin_Quest";
@@ -2772,6 +2873,7 @@ void RemoveShipFromBridgetown()
 	locations[n].environment.weather.rain = false;
 	Locations[n].boarding.Loc.Hero = "loc2";
     Locations[n].boarding.Loc.Capt = "loc0";
+	locations[n].type = "boarding_cabine"; // bugfix > пролог менял на sailing_cabine
 }
 
 bool CapBloodLine_CheckMoneyForNettl()
@@ -3314,6 +3416,7 @@ void LoginDeadmansGod()
 	sld.lastname = "";
 	sld.dialog.filename   = "Quest\Mictlantecuhtli.c";
 	sld.dialog.currentnode   = "InGreateTemple";
+	MakeUnpushable(sld, true);
 	ChangeCharacterAddressGroup(sld, "Temple_great", "goto", "goto1");
 	LAi_SetActorType(sld);
 	LAi_ActorDialog(sld, pchar, "", 0.0, 0);
@@ -3329,7 +3432,7 @@ bool CheckMainHeroTotem(string itemName)
 	}
 	else
 	{
-		for (int i=Totems_start; i<Totems_end; i++)
+		for (int i = ITEMS_TOTEMS; i < ITEMS_MAPS; i++)
 		{			
 			if (Items[i].id == itemName)
 			{

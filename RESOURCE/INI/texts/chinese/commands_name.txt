@@ -1,7 +1,7 @@
 sea_Cancel {取消}
 sea_Moor {停靠}
 sea_Cabin {船舱}
-sea_SailTo {前往...}
+sea_SailTo {前往}
 sea_SailTowards {朝某个方向航行}
 sea_SailN {向北}
 sea_SailNW {西北方向}
@@ -21,27 +21,27 @@ sea_Defend {防御}
 sea_SailAway {离开}
 sea_HeaveToDrift {降帆}
 sea_Reload {更换}
-sea_Charge {充能}
+sea_Charge {装填}
 sea_Speed {帆}
 sea_CCommand {命令}
 sea_Ability {能力}
-sea_ImmediateDeath {摧毁！}
+sea_ImmediateDeath {摧毁！ }
 sea_InstantBoarding {即时登船}
 sea_Speak {交谈}
 sea_Sneak {潜入城市}
-sea_Repair {修理}
+sea_Repair {维修}
 sea_SendBoat {派出小艇}
 sea_Brander {火船}
-sea_ImmediateReload {立即充能}
-sea_LightRepair {轻型修理}
-sea_InstantRepair {快速修理}
+sea_ImmediateReload {立即装填}
+sea_LightRepair {轻型维修}
+sea_InstantRepair {快速维修}
 sea_SandbankManeuver {浅滩机动}
 sea_Turn180 {快速转向}
 sea_Hold {货舱}
 sea_Mine {投放水雷}
 land_ItemsDead {尸体}
 land_FastReload {快速前往…}
-land_TalkSelf {大声说出}
+land_TalkSelf {自言自语}
 land_ItemsUse {使用}
 land_DialogStart {交谈}
 land_ItemsChange {交换}
@@ -49,9 +49,9 @@ land_TakeItem {拿取}
 land_PlaceItem {放置}
 land_OutDoor {打开}
 land_UseBox {打开}
-land_ActivateRush {狂战士}
-land_SecondWind {第二次呼吸}
-land_SelfRepair {修理}
+land_ActivateRush {狂暴}
+land_SecondWind {再生之息}
+land_SelfRepair {维修}
 land_ActivateCabine {船长舱}
 land_DeActivateCabine {陆地}
 land_Look {查看}
@@ -61,7 +61,7 @@ land_Exit {海}
 land_Alchemy {炼金}
 land_Rest {休息}
 go_store {商店}
-go_shipyard {船厂}
+go_shipyard {船坞}
 go_tavern {酒馆}
 go_residence {官邸}
 go_port {港口}
@@ -71,6 +71,7 @@ go_brothel {妓院}
 go_usurer {银行}
 go_portman {港务局}
 go_doctor {医生}
-go_fenix {凤凰平台}
-go_diffIndoor {弗吕特号 Diffindoor}
+go_fenix {凤凰号平台}
+go_diffIndoor {费尔南达.迪芬杜尔号}
+go_outpost {哨所}
 worldmap_sea {出海}

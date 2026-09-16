@@ -33,9 +33,9 @@ Lugger
 The Lugger is a small vessel, mostly made for quick goods transportation. Despite the fact that Lugger’s armament is quite weak and crew small, it is constructed specifically for combat as well as trade, better yet - escape is also an option. Many captains value this vessel for being versatile. 
 }
 
-Lugger_w
+Lugger_c
 {
-The Heavy Lugger was made specifically for protection of small convoys or delivery of extremely important goods. Still has great speed, yet now a stronger hull and improved armaments - all make a desirable vessel. In opposition to its still pretty small size, a Heavy Lugger is truly seaworthy. 
+The courier lugger was specially built for the needs of the messenger service. Excellent sailing qualities, great windward performance, and fairly strong armament guarantee the reliable delivery of important dispatches and small valuable cargoes.
 }
 
 Sloop
@@ -45,7 +45,7 @@ The Sloop is usually regarded as a single-masted rig with a single headsail and 
 
 Sloop_w
 {
-The Heavy Sloop now has a stronger hull and carries heavy, for its class, weaponry. This particular vessel is highly effective for patrols and combat. Often used for scouting ahead of Frigates and Ships of the line in shallow waters where brigs cannot go.
+A hoy is a small sailing vessel originally designed to transport cargo and passengers, typically not known for high speed or powerful cannon armament. However, its reliability, good hold capacity, and shallow draft allow it to enter the shallowest river mouths and hidden coves. Thanks to these qualities, the hoy has become an excellent choice for small-scale merchants and smugglers.
 }
 
 Cutter
@@ -268,6 +268,11 @@ Fast Sloop 'Veinard', which, translated from French, means 'Lucky man', even tho
 Frigate_M
 {
 Royal Frigate 'Oxford', which came here to Jamaica straight from England! It was sent here, quote: 'To protect the island, taking down the privateers and encourage trade and commerce'. This three-deck heavily armed frigate was the squadron's flagship of Henry Morgan, which brought terror to the merchant fleets in the Caribbean. Due to current events governor Madyford decided to give 'Oxford' to his right hand man Morgan Edwards Coller. He, in his brilliance, increased the maximum cannon capacity to 60 of 42 pounds cannons and a crew capacity! What to say? Absolutely right - the ship has become a deadly force!
+}
+
+Margarita
+{
+A brilliant example of a warship designed for special operations in the open ocean. This galleon was built by order of the Casa de Contratación to destroy the most dangerous pirates who pose a real threat to trade in the region and the interests of the Spanish Crown.
 }
 
 NoneBoat

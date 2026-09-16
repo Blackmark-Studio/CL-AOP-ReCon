@@ -639,6 +639,7 @@ void ProcessDialogEvent()
 			if (CheckAttribute(PChar, "Quest.PiratesOnUninhabited_ShipSink"))
 			{
 				PChar.Quest.PiratesOnUninhabited_ShipSink.over = "yes";
+				PChar.Quest.PiratesOnUninhabited_ShipDeadline.over = "yes";
 
 				PChar.GenQuest.PiratesOnUninhabited.ClearShip = true;
 				Map_ReleaseQuestEncounter("PiratesOnUninhabited_BadPirate"); // Убираем с глобалки
@@ -879,6 +880,7 @@ void ProcessDialogEvent()
 			AddQuestUserData("CaptainComission2", "sSex", GetSexPhrase("", "а"));
 			CloseQuestHeader("CaptainComission2");
 			DeleteAttribute(pchar, "GenQuest.CaptainComission");
+			DeleteAttribute(pchar, "TownEscape");
 			DialogExit();
 		break;
 

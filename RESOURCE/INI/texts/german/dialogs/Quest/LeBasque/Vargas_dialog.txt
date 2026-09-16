@@ -1,0 +1,86 @@
+Vargas_dialog_1 {
+Ah, Sie sind also dieser Kapitän @<GetFullName>. Ich wusste, dass le Basque ein Feigling ist, aber ich hätte ihm immerhin genug Mut zugetraut, persönlich hier aufzutauchen.
+}
+Vargas_dialog_2 {
+Für Michel bist du, Vargas, nichts weiter als ein lästiges Insekt. Seine Pläne wirst du nicht durchkreuzen. Das Gold von Maracaibo wird uns gehören, aber du wirst es nicht mehr erleben.
+}
+Vargas_dialog_3 {
+Das Gold von Maracaibo? Das also erzählt er euch allen? Ha-ha! Und mit diesem Haufen Narren will er die uneinnehmbarste Festung des ganzen Archipels erobern?
+}
+Vargas_dialog_4 {
+Versuch nicht, mit mir zu spielen. Ich bin nicht Esteban Ruiz und falle nicht auf deine billigen Tricks herein.
+}
+Vargas_dialog_5_m {
+Und dennoch bist du hier... Vermutlich tut dir Ruiz leid? Mir nicht. Er war derselbe widerwärtige Höllenbalg wie du. Derselbe Ketzer und Ladron, nicht einmal eines christlichen Begräbnisses würdig.
+}
+Vargas_dialog_5_f {
+Und dennoch bist du hier... Vermutlich tut dir Ruiz leid? Mir nicht. Er war derselbe widerwärtige Höllenbalg wie du. Dieselbe Ketzerin und Piratin, nicht einmal eines christlichen Begräbnisses würdig.
+}
+Vargas_dialog_6 {
+Ich stopfe dir diese Worte wieder in den Rachen, du Bastard. Verteidige dich!
+}
+Vargas_dialog_7_m {
+Hm... Gut, kämpfen kannst du. Doch eines hast du noch immer nicht begriffen: Michel le Basque ist für mich nicht bloß ein Feind. Ich habe geschworen, seinen Kopf zu bekommen - und ich werde ihn bekommen. Selbst wenn ich dafür den ganzen Archipel in Blut ertränken muss.
+}
+Vargas_dialog_7_f {
+Hm... Gut, kämpfen kannst du. Doch eines hast du noch immer nicht begriffen: Michel le Basque ist für mich nicht bloß ein Feind. Ich habe geschworen, seinen Kopf zu bekommen - und ich werde ihn bekommen. Selbst wenn ich dafür den ganzen Archipel in Blut ertränken muss.
+}
+Vargas_dialog_8 {
+Du wirst gar nichts mehr bekommen. Es ist vorbei. Mach dich bereit, den Teufeln zu begegnen, Don Diego. Sie warten schon auf dich.
+}
+Vargas_dialog_9_m {
+Du hast doch nicht geglaubt, ich würde fair spielen?
+}
+Vargas_dialog_9_f {
+Du hast doch nicht geglaubt, ich würde fair spielen?
+}
+Vargas_dialog_10 {
+Was?.. W-was ist... Teufel... Mein K-kopf...
+}
+Vargas_dialog_11_m {
+Also lebst du... Der verfluchte Schamane der Rothäute schwor mir, er habe meine Klinge mit einem tödlichen Zauber belegt... 'Ein einziger Tropfen dieses Giftes reicht, um einen Stier zu fällen.' Offenbar habe ich ihn zu früh zu Pater Vincento geschickt.
+}
+Vargas_dialog_11_f {
+Also lebst du... Der verfluchte Schamane der Rothäute schwor mir, er habe meine Klinge mit einem tödlichen Zauber belegt... 'Ein einziger Tropfen dieses Giftes reicht, um einen Stier zu fällen.' Offenbar habe ich ihn zu früh zu Pater Vincento geschickt.
+}
+Vargas_dialog_12 {
+Dich selbst sollte die Inquisition holen, Vargas. Deine Verschlagenheit erstaunt mich. Aber weder mit Mörsern noch mit Gift noch mit der Klinge konntest du mich töten. Und dort draußen im Dschungel stehen meine Leute. Ergib dich, oder du stirbst hier und jetzt.
+}
+Vargas_dialog_13 {
+Der Tod? So schlecht ist er gar nicht.
+Was für ein Ausblick von hier, @<GetFullName>. Schau nur... Obwohl... Du könntest mich ohnehin nicht verstehen.
+Ich habe den Geschmack des Lebens gekostet, Orte gesehen, die ihr Ladrones niemals sehen werdet... Ich war jenseits dieses gottverlassenen Archipels und kehrte immer wieder zurück... hinter den Horizont! Ich stand auf dem Achterdeck einer Galeone, die Kurs auf die verfluchte Quelle des Ponce de León hielt, wischte mir den beißenden Schweiß von der Stirn und sah zu, wie die Sterne mit dem endlosen Ozean rangen.
+Ich spürte den stürmischen Passat in meinem Haar, als wir auf trägen Karavellen durch die schwarzen Wirbel der Sargassosee glitten, und ich sah die Armada de Barlovento brennen wie trockenes Stroh und in der Tiefe verschwinden. Ich habe es gesehen.
+Bei der Jungfrau Maria, ich spüre es jetzt wieder!..
+}
+Vargas_dialog_14 {
+Du hast es erlebt.
+}
+
+LeBasque_Diego_de_Vargas_1 {
+Zunächst einmal Informationen. Letztes Mal brachten Sie mir den Klatsch über die Hafenprostituierten. Was treibt Le Basque diesmal?
+}
+
+LeBasque_Diego_de_Vargas_2 {
+Und das ist alles?
+}
+
+LeBasque_Diego_de_Vargas_3 {
+Name?
+}
+
+LeBasque_Diego_de_Vargas_4 {
+Du bekommst es zuerst, Guillaume.
+}
+
+LeBasque_Diego_de_Vargas_5 {
+Finde heraus, wie der alte Mann heißt und warum Le Basque ihn braucht – und du bekommst alles, was du verlangst.
+}
+
+LeBasque_Diego_de_Vargas_6 {
+Genug gejammert, Guillaume. Hier sind die Anzahlung und der Brief. Er enthält weitere Anweisungen. Das nächste Treffen findet am Leuchtturm statt. Die genaue Uhrzeit wird Ihnen separat mitgeteilt.
+}
+
+LeBasque_Diego_de_Vargas_7 {
+Hoffentlich enttäuschst du mich nicht und besorgst mir etwas Brauchbares. Und denk gar nicht erst daran, wieder zu feilschen, Raoul. Nächstes Mal zahle ich weniger dafür, dass dich jemand durchsucht.
+}

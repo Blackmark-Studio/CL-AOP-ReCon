@@ -24,9 +24,7 @@ Sea_CameraSwitch {Kamera zwischen „Schiffsansicht“ und „Deckansicht“ ums
 Sea_CameraSwitchShort {Kamera wechseln}
 Sea_CameraShip {Schiffsansicht}
 Sea_CameraDeck {Deckansicht}
-Telescope {Fernrohr benutzen}
-TelescopeIn {Fernrohr heranzoomen}
-TelescopeOut {Fernrohransicht verlassen}
+TelescopeMode {Fernrohr benutzen}
 TelescopeZoom {Hinein-/Herauszoomen}
 Interface {Charaktermenü}
 CharacterShipMenu {Charakter-Schiffsmenü}
@@ -51,6 +49,13 @@ Ship_Select {Schiffsauswahl}
 Order_Select {Befehl auswählen}
 FireZoneKey {Feuerreichweite anzeigen}
 FireZoneKeyHide {Schussreichweite ausblenden}
+QuickSave {Schnellspeichern}
+QuickLoad {Schnelllade}
+FireCamera_Set {Zielansicht}
+FireMode_Direct {Feuerfolge - Von Bug zu Heck}
+FireMode_Random {Feuerfolge - Frei}
+FireMode_Reverse {Feuerfolge - Von Heck zu Bug}
+hk_FireMode {Feuermodus ändern}
 ChrCamTurnV {Vertikale Kamerabewegung folgt dem Charakter}
 ChrCamTurnH {Horizontale Kamerabewegung folgt der Figur}
 ChrCamCameraSwitch {Zwischen Ego- und Third-Person-Kamera wechseln}
@@ -70,6 +75,7 @@ OfficersFollow {Befehl an Offiziere : Folgen}
 Say {Warenkauf}
 AlchemyKey {Alchemie}
 MapView {Kartenatlas}
+LI_CabinExit {Auslaufen auf See (auf dem Helden-Schiff)}
 AltModificator {Taste für Schnellreise-Menü drücken}
 AltModificatorOff {Taste loslassen, um das Schnellreise-Menü zu öffnen}
 Fast_store {Schnellreise: Laden}
@@ -133,15 +139,20 @@ TimeScale {Zeit beschleunigen/verlangsamen}
 TimeScaleFasterBA {Zeit beschleunigen}
 TimeScaleSlowerBA {Zeit verlangsamen}
 Help {Spielhilfe}
-BICommandsActivate {Befehlsmenü}
-LICommandsActivate {Befehlsmenü}
-BICommandsActivateAdd {Befehlsmenü (alternativ)}
+BICommands {Befehlsmenü}
+BICommandsActivate {Befehlsmenü öffnen}
+LICommandsActivate {Befehlsmenü öffnen}
+BICommandsActivateAdd {Befehlsmenü öffnen (alternativ)}
 BICommandsConfirm {Befehl bestätigen}
 BICommandsCancel {Befehl abbrechen}
 BICommandsConfirmAdd {Befehl bestätigen (alternativ)}
 BICommandsCancelAdd {Befehl abbrechen (alternativ)}
-BICommandsLeft {Aktionsmenü – nach links navigieren}
-BICommandsRight {Aktionsmenü – nach rechts navigieren}
+BICommandsLeft {Befehlsmenü - links navigieren}
+BICommandsLeftW {Befehlsmenü - links navigieren (alt.)}
+BICommandsRight {Befehlsmenü - rechts navigieren}
+BICommandsRightW {Befehlsmenü - rechts navigieren (alt.)}
+BICommandsUp {Befehlsmenü - nach oben navigieren}
+BICommandsDown {Befehlsmenü - nach unten navigieren}
 HelpChooser_Cancel {Hilfe verlassen}
 HelpChooser_Action {Hilfe zum aktuellen Element anzeigen}
 HelpChooser_Next {Nächstes Hilfselement}
@@ -158,3 +169,4 @@ DlgScrollUp {Dialog nach unten scrollen}
 DlgScrollDown {Dialog nach oben scrollen}
 hk_Cure {Heiltrank verwenden}
 hk_Rush {„Furor“-Fähigkeit einsetzen}
+KZ_NextMusicTrack {Nächster Musiktitel}

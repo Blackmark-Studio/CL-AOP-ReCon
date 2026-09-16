@@ -1,26 +1,26 @@
 SanJuan_PortMan_1 {
-什么问题？
+什么问题？ 
 }
 SanJuan_PortMan_2 {
-有什么需要帮忙的吗，@<GetAddress_Form>?
+有什么需要帮忙的吗， @<GetAddress_Form>?
 }
 SanJuan_PortMan_3 {
 @<RandPhraseSimple>
 }
 SanJuan_PortMan_4 {
-前不久你还想问我个问题@<GetAddress_Form>……
+前不久你还想问我个问题@<GetAddress_Form>…… 
 }
 SanJuan_PortMan_5 {
-你今天已经第三次提这事了……
+你今天已经第三次提这事了…… 
 }
 SanJuan_PortMan_6 {
-听着，要是你不是来办港口的事，别拿问题来烦我。
+听着， 要是你不是来办港口的事， 别拿问题来烦我。
 }
 SanJuan_PortMan_7_m {
-我改主意了……
+我改主意了…… 
 }
 SanJuan_PortMan_7_f {
-我改变主意了……
+我改变主意了…… 
 }
 SanJuan_PortMan_8 {
 我现在没什么可说的。
@@ -29,11 +29,11 @@ SanJuan_PortMan_9 {
 @<RandPhraseSimple>
 }
 SanJuan_PortMan_10 {
-嗯，我的记忆好像出了点问题……
+嗯， 我的记忆好像出了点问题…… 
 }
 SanJuan_PortMan_11 {
-行吧，第三次总算成了……
+行吧， 第三次总算成了…… 
 }
 SanJuan_PortMan_12 {
-不好意思，港口的事我现在没兴趣。
+不好意思， 港口的事我现在没兴趣。
 }

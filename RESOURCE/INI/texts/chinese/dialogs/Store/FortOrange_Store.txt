@@ -1,87 +1,87 @@
 FortOrange_Store_1 {
-什么问题？
+什么问题？ 
 }
 FortOrange_Store_2 {
-有什么需要帮忙的吗？
+有什么需要帮忙的吗？ 
 }
 FortOrange_Store_3 {
 @<RandPhraseSimple>
 }
 FortOrange_Store_4 {
-前阵子你在我店里的时候，好像想问我点什么……
+前阵子你在我店里的时候， 好像想问我点什么…… 
 }
 FortOrange_Store_5 {
-今天已经是第三个问题了。俺还得做生意，没工夫跟你闲聊……
+今天已经是第三个问题了。 我还得做生意， 没工夫跟你闲聊…… 
 }
 FortOrange_Store_6 {
-还有问题？要不咱们直接谈正事吧。
+还有问题？ 要不咱们直接谈正事吧。 
 }
 FortOrange_Store_7_m {
-我改主意了……
+我改主意了…… 
 }
 FortOrange_Store_7_f {
-我改变主意了……
+我改变主意了…… 
 }
 FortOrange_Store_8 {
-我现在没什么可说的。
+我现在没什么可说的。 
 }
 FortOrange_Store_9 {
 @<RandPhraseSimple>
 }
 FortOrange_Store_10_m {
-对，没错，我试过……当时我还在店里……
+对， 没错， 我试过…… 当时我还在店里…… 
 }
 FortOrange_Store_10_f {
-对，没错，我试过……当时我还在店里……
+对， 没错， 我试过…… 当时我还在店里…… 
 }
 FortOrange_Store_11 {
-是啊，真的第三次了……
+是啊， 真的第三次了…… 
 }
 FortOrange_Store_12 {
-嗯，也许可以做点生意……
+嗯， 也许可以做点生意…… 
 }
 FortOrange_Store_13 {
-我这有堡垒指挥官给你的命令。
+我这有奥兰治堡市长给你的命令。 
 }
 FortOrange_Store_14 {
-没错，我已经收到这个指示了。@<GetAddress_Form>，咱们就按之前说好的价格结算吧。
+好的， 我已经收到过这个指示了。 @<GetAddress_Form>， 咱们就按之前说好的价格结算吧。 
 }
 FortOrange_Store_15 {
-又是你啊，好吧，咱们继续咱们的特别交易。
+又是你啊， 好吧， 咱们继续咱们的特别交易。 
 }
 FortOrange_Store_16_m {
-咱们的船长果然还是那么厉害！太好了，继续前进……
+咱们的船长果然还是那么厉害！ 太好了， 继续前进…… 
 }
 FortOrange_Store_16_f {
-又是我们勇敢的姑娘！太棒了，继续吧……
+又是我们勇敢的姑娘！ 太棒了， 继续吧…… 
 }
 FortOrange_Store_17 {
-船长，又是这事儿啊，挺高兴见到你。那咱们就继续做这批特殊货的生意吧。
+船长， 又是这事儿啊， 挺高兴见到你。 那咱们就继续做这批特殊货的生意吧。 
 }
 FortOrange_Store_18 {
-咱们开始交易吧。
+咱们开始交易吧。 
 }
 FortOrange_Store_19 {
-咱们继续……
+咱们继续…… 
 }
 FortOrange_Store_20 {
-咱们……
+咱们…… 
 }
 FortOrange_Store_21_m {
-唉，别讽刺了，求你了。我自己也早就受够这一切了……
+唉， 别讽刺了， 求你了。 我自己也早就受够这一切了…… 
 }
 FortOrange_Store_21_f {
-唉，别讽刺了，求你了。我自己也早就受够这一切了……
+唉， 别讽刺了， 求你了。 我自己也早就受够这一切了…… 
 }
 FortOrange_Store_22 {
-咳咳，Captain，看到你安然无恙真让人高兴，尤其是刚经历了那场血战！
+咳咳， 船长， 看到你安然无恙真让人高兴， 尤其是刚经历了那场血战！ 
 }
 FortOrange_Store_23 {
-嗯，是啊，刚才那场打斗可真够激烈的……
+嗯， 是啊， 刚才那场打斗可真够激烈的…… 
 }
 FortOrange_Store_24 {
-我以前跟你做过生意，船长，现在我发现你可不只是会做买卖。那些英国佬这下可不敢来惹我们了……@<GetAddress_Form>，真心谢谢你，真的，非常感谢。
+我以前跟你做过生意， 船长， 现在我发现你可不只是会做买卖。 那些英国佬这下可不敢来惹我们了…… @<GetAddress_Form>， 真心谢谢你， 真的， 非常感谢。 
 }
 FortOrange_Store_25 {
-没事，继续做生意吧。
+没事， 继续做生意吧。 
 }

@@ -370,3 +370,9 @@ Dobrze, oto twoje pieniądze.
 Common_ItemTrader_99 {
 W tej chwili nie mam przy sobie takiej sumy. Gdy tylko ją zdobędę, od razu cię odwiedzę.
 }
+Common_ItemTrader_100_m {
+Proszę podejść i wybierać, señorita. Wszystko najwyższej jakości!
+}
+Common_ItemTrader_100_f {
+Och, señorita, wiedziałam, że podejdzie pani właśnie do mnie!.. Proszę się nie krępować, wybierać!
+}

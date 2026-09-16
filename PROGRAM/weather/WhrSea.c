@@ -7,9 +7,8 @@ void WhrDeleteSeaEnvironment()
 void WhrCreateSeaEnvironment()
 {
 	int   i;
-	float fMaxSeaHeight;
-	ref mchr = GetMainCharacter();
-	string sLocation = mchr.location;
+	float fMaxSeaHeight = 0.0;
+	string sLocation = pchar.location;
 	float FogDensity = 10.0;
 	float FogSeaDensity = 10.0;
 	aref aCurWeather = GetCurrentWeather();
@@ -137,8 +136,6 @@ void WhrCreateSeaEnvironment()
 
 	Sea.Sky.Color = Whr_GetColor(aSea, "Sky.Color");
 
-	Sea.Sea2.FoamEnable = true;
-
 	// Advanced Sea initialize
 	Sea.Sea2.WaterColor = Whr_GetColor(aSea2, "WaterColor");
 	Sea.Sea2.SkyColor = Whr_GetColor(aSea2, "SkyColor");
@@ -202,13 +199,13 @@ void SetSeaGridStep(float SeaDetails)
 {
 	if (!IsEntity(&Sea)) { return; }
 
-	ref mchr = GetMainCharacter();
-	string sLocation = mchr.location;
+	string sLocation = pchar.location;
 
 	// if current location is land - return
-	if(FindLocation(sLocation) != -1)
+	int iLoc = FindLocation(sLocation);
+	if(iLoc != -1)
 	{
-		if(CheckAttribute(&locations[FindLocation(sLocation)], "fastreload"))
+		if(CheckAttribute(&locations[iLoc], "fastreload"))
 		{
 			return;
 		}
@@ -323,10 +320,7 @@ void Whr_ModifySeaFog(ref weather)
     }
     else if (Whr_CheckUnderwater())
     {
-        weather.Fog.Start = weather.Fog.Start;
-        weather.Fog.IslandDensity = weather.Fog.IslandDensity;
-        weather.Fog.SeaDensity = weather.Fog.SeaDensity;
-        weather.Fog.Density = weather.Fog.Density;
+        // > под водой оставляем туман пресета как есть
     }
     else
     {

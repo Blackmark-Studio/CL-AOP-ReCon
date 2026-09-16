@@ -1,18 +1,31 @@
-Version {加勒比传奇：海盗时代}
-Delete profile confirm {您确定要删除此档案及其所有存档吗？}
-Delete savefile confirm {您确定要删除此存档吗？}
-Overwrite savefile confirm {您确定要覆盖此存档吗？}
-Low storage and unable save create {磁盘空间不足，无法保存游戏。}
-Load game confirm {您确定要加载此存档吗？}
-Unable to Load save game {无法加载此存档。}
-save game limit {您的存档数量已达上限。请删除旧的存档。}
-Pay for save {付费存档/读档：存档花费为}
-New game confirm {您确定要开始新游戏吗？}
+Version {加勒比传奇： 海盗时代}
+Delete profile confirm {您确定要删除此档案及其所有存档吗？ }
+Delete savefile confirm {您确定要删除此存档吗？ }
+Overwrite savefile confirm {您确定要覆盖此存档吗？ }
+Low storage and unable save create {磁盘空间不足， 无法保存游戏。 }
+Load game confirm {您确定要加载此存档吗？ }
+Unable to Load save game {无法加载此存档。 }
+save game limit {您的存档数量已达上限。 请删除旧的存档。 }
+Pay for save {付费存档/读档： 存档花费为}
+New game confirm {您确定要开始新游戏吗？ }
 Salary info
 {
-你的船员要求发放本月工资。
-你要支付吗？
+你的船员要求发放本月工资。 
+你要支付吗？ 
 }
-Officer info {你的军官要求支付本月工资：}
-All info {净金额：}
-Insert Disk Ok {请插入第一张游戏光盘。}
+Officer info {你的军官要求支付本月工资： }
+All info {净金额： }
+Insert Disk Ok {请插入第一张游戏光盘。 }
+
+BadSaveNoVersion
+{
+无法确定所选存档对应的游戏版本
+}
+BadSaveVersion
+{
+所选存档的游戏版本
+}
+BadSaveInfo
+{
+可通过Steam恢复该版本。
+}

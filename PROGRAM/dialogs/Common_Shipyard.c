@@ -20,20 +20,41 @@ void ProcessDialogEvent()
 
 	ProcessCommonDialogRumors(NPChar, Link, NextDiag);//homo 16/06/06
 
+	int iTest = FindColony(NPChar.City); // город магазина
+	// KZ FreeStores > магазин верфиста: у колониального берём от колонии, у свободного - с него самого
+	int iStoreNum = -1;
+	bool bQuestsAllowed = IsNPCQuestsAllowed(NPChar);
+
+	if (iTest != -1)
+	{
+		rColony = GetColonyByIndex(iTest);
+		iStoreNum = sti(rColony.StoreNum);
+	}
+	else
+	{
+		// FreeStores > при пустом слоте или битом номер торговлю орудиями тогда не предлагаем
+		iStoreNum = GetTraderStoreNum(NPChar);
+	}
+
 	// вызов диалога по городам -->
-	NPChar.FileDialog2 = "DIALOGS\Shipyard\" + NPChar.City + "_Shipyard.c";
-	if (LoadSegment(NPChar.FileDialog2))
+	// FreeStores > свободным верфистам даём свой "диалог по городам" либо общий DIALOGS\Shipyard\Free_Shipyard.c
+	if (iTest != -1) NPChar.FileDialog2 = "DIALOGS\Shipyard\" + NPChar.City + "_Shipyard.c";
+	else             NPChar.FileDialog2 = GetFreeShipyardDialogFile(iStoreNum);
+
+	bool bDialog2Loaded = LoadSegment(NPChar.FileDialog2);
+	// FreeStores > свой файл у свободного верфиста не загрузился, подкидываем ему общий
+	if (!bDialog2Loaded && iTest == -1 && NPChar.FileDialog2 != "DIALOGS\Shipyard\Free_Shipyard.c")
+	{
+		NPChar.FileDialog2 = "DIALOGS\Shipyard\Free_Shipyard.c";
+		bDialog2Loaded = LoadSegment(NPChar.FileDialog2);
+	}
+	if (bDialog2Loaded)
 	{
 		ProcessCommonDialog(NPChar, Link, NextDiag);
 		UnloadSegment(NPChar.FileDialog2);
 	}
 
 	// вызов диалога по городам <--
-	int iTest = FindColony(NPChar.City); // город магазина
-	if (iTest != -1)
-	{
-		rColony = GetColonyByIndex(iTest);
-	}
 
 	//Выбор компаньонов для интерфейса кастомизаци корабля
 	sTemp = Dialog.CurrentNode;
@@ -118,8 +139,23 @@ void ProcessDialogEvent()
 			NextDiag.TempNode = "First time";
 
 			//homo Линейка Блада
-			if (Pchar.questTemp.CapBloodLine == true)
+			if (CheckAttribute(Pchar, "questTemp.CBL.Shipyard") && npchar.id == "Bridgetown_Shipyarder")
 			{
+				if (CheckAttribute(npchar, "questTemp.BloogGoToPackhouse"))
+				{
+					dialog.text = StringFromKey("Common_Shipyard_138", TimeGreeting());
+					link.l1 = StringFromKey("Common_Shipyard_139", NPChar.name);
+					link.l1.go = "CBL_BloogGoToPackhouse";
+					RemoveLandQuestmark_Main(CharacterFromID("Bridgetown_Shipyarder"), "CapBloodLine");
+					break;
+				}
+				if (CheckAttribute(npchar, "questTemp.BloogEndTreatment"))
+				{
+					dialog.text = StringFromKey("Common_Shipyard_146");
+					link.l1 = StringFromKey("Common_Shipyard_147");
+					link.l1.go = "CBL_BloogEndTreatment";
+					break;
+				}
 				dialog.Text = StringFromKey("Common_Shipyard_20", LinkRandPhrase(
 							StringFromKey("Common_Shipyard_17", TimeGreeting()),
 							StringFromKey("Common_Shipyard_18"),
@@ -140,7 +176,7 @@ void ProcessDialogEvent()
 			{
 				//--->> квест украсть чертеж на верфи
 				//дача квеста
-				if (drand(2) == 1 && pchar.questTemp.different == "free" && GetEventPastTime("questShipyardsMap", "day") > 7 && GetNpcQuestPastDayWOInit(npchar, "questShipyardsMap") > 30 && !CheckAttribute(pchar, "questTemp.different.ShipyardsMap") && GetSummonSkillFromName(pchar, SKILL_SNEAK) > 25)
+				if (bQuestsAllowed && drand(2) == 1 && pchar.questTemp.different == "free" && GetEventPastTime("questShipyardsMap", "day") > 7 && GetNpcQuestPastDayWOInit(npchar, "questShipyardsMap") > 30 && !CheckAttribute(pchar, "questTemp.different.ShipyardsMap") && GetSummonSkillFromName(pchar, SKILL_SNEAK) > 25) // > FreeStores
 				{
 					dialog.text = StringFromKey("Common_Shipyard_24");
 					link.l1 = StringFromKey("Common_Shipyard_25");
@@ -160,14 +196,21 @@ void ProcessDialogEvent()
 				{
 					goto Common_Shipyard_skipToExit_Common;
 				}
-				if (GetNationRelation2MainCharacter(sti(NPChar.nation)) != RELATION_ENEMY)
+				if (!CheckAttribute(NPChar, "CannonsTradeDisable") && or(GetNationRelation2MainCharacter(sti(NPChar.nation)) != RELATION_ENEMY, CheckAttrValue(NPChar, "Buccaneer", "1")))
 				{
-					link.l11 = StringFromKey("Common_Shipyard_30");
-					link.l11.go = "Cannons";
+					// FreeStores > без магазина окно орудий не откроется
+					if (iStoreNum >= 0 && iStoreNum < STORE_QUANTITY)
+					{
+						link.l11 = StringFromKey("Common_Shipyard_30");
+						link.l11.go = "Cannons";
+					}
 				}
 				// AlexBlade -> new UI
-				link.l12 = StringFromKey("Common_Shipyard_31");
-				link.l12.go = "ShipCustomize";
+				if (!CheckAttribute(NPChar, "ShipCustomizeDisable"))
+				{
+					link.l12 = StringFromKey("Common_Shipyard_31");
+					link.l12.go = "ShipCustomize";
+				}
 				// 
 				Link.l2 = StringFromKey("Common_Shipyard_32");
 				Link.l2.go = "quests"; //(перессылка в файл города)
@@ -185,7 +228,7 @@ void ProcessDialogEvent()
 					link.l7.go = "IntelligenceForAll";
 				}
 				//--> квест Аззи.
-				if (CheckCharacterItem(pchar, "Azzy_bottle"))
+				if (bQuestsAllowed && CheckCharacterItem(pchar, "Azzy_bottle")) // > FreeStores
 				{
 					link.l5 = StringFromKey("Common_Shipyard_37");
 					if (npchar.id == pchar.questTemp.Ascold.ShipyarderId)
@@ -209,8 +252,8 @@ void ProcessDialogEvent()
 				{
 					if (pchar.GenQuest.EncGirl == "toLoverFather" && pchar.GenQuest.EncGirl.LoverFather == "shipyard_keeper" && pchar.GenQuest.EncGirl.LoverCity == npchar.city)
 					{
-						link.l7 = StringFromKey("Common_Shipyard_39", pchar);
-						link.l7.go = "EncGirl_4";
+						link.l10 = StringFromKey("Common_Shipyard_39", pchar); // > l7-ая ветка занята шпионом мэра
+						link.l10.go = "EncGirl_4";
 						pchar.quest.EncGirl_GetLoverFather.over = "yes";
 					}
 					if (pchar.GenQuest.EncGirl == "toParents" || pchar.GenQuest.EncGirl == "FindLover")
@@ -234,16 +277,23 @@ void ProcessDialogEvent()
 			Link.l1.go = "Shipyard";
 			if (GetGlobalTutor())
 			{
-			    goto Common_Shipyard_skipToExit;
+				goto Common_Shipyard_skipToExit;
 			}
 			if (GetNationRelation2MainCharacter(sti(NPChar.nation)) != RELATION_ENEMY)
 			{
-				link.l13 = StringFromKey("Common_Shipyard_44");
-				link.l13.go = "Cannons";
+				// FreeStores > без магазина окно орудий не откроется
+				if (iStoreNum >= 0 && iStoreNum < STORE_QUANTITY)
+				{
+					link.l13 = StringFromKey("Common_Shipyard_44");
+					link.l13.go = "Cannons";
+				}
 			}
 			// AlexBlade -> new UI
-			link.l12 = StringFromKey("Common_Shipyard_45");
-			link.l12.go = "ShipCustomize";
+			if (!CheckAttribute(NPChar, "ShipCustomizeDisable"))
+			{
+				link.l12 = StringFromKey("Common_Shipyard_45");
+				link.l12.go = "ShipCustomize";
+			}
 			Link.l2 = StringFromKey("Common_Shipyard_46");
 			link.l2.go = "quests";
 			// -->
@@ -260,7 +310,7 @@ void ProcessDialogEvent()
 				link.l7.go = "IntelligenceForAll";
 			}
 			//--> квест Аззи.
-			if (CheckCharacterItem(pchar, "Azzy_bottle"))
+			if (bQuestsAllowed && CheckCharacterItem(pchar, "Azzy_bottle")) // > FreeStores
 			{
 				link.l5 = StringFromKey("Common_Shipyard_51");
 				if (npchar.id == pchar.questTemp.Ascold.ShipyarderId)
@@ -411,7 +461,13 @@ void ProcessDialogEvent()
 		break;
 
 		case "shipyard":
-			if (!CheckShip(Pchar) || bShipMoored)
+			if (CheckAttribute(NPChar, "Buccaneer"))
+			{
+				NextDiag.CurrentNode = NextDiag.TempNode;
+				DialogExit();
+				LaunchShipRepair(NPChar);
+			}
+			else if (!CheckShip(Pchar) || bShipMoored)
 			{
 				NextDiag.CurrentNode = NextDiag.TempNode;
 				DialogExit();
@@ -429,7 +485,7 @@ void ProcessDialogEvent()
 			{
 				NextDiag.CurrentNode = NextDiag.TempNode;
 				DialogExit();
-				LaunchCannons(sti(rColony.StoreNum));
+				LaunchCannons(iStoreNum);
 			}
 			else
 			{
@@ -647,6 +703,40 @@ void ProcessDialogEvent()
 			ChangeCharacterReputation(pchar, 5);
 			ShipyardsMapQuestEnd(npchar, "4");
 		break;
+
+		case "CBL_BloogGoToPackhouse":
+			dialog.text = StringFromKey("Common_Shipyard_140");
+			link.l1 = StringFromKey("Common_Shipyard_141");
+			link.l1.go = "CBL_BloogGoToPackhouse_1";
+		break;
+
+		case "CBL_BloogGoToPackhouse_1":
+			dialog.text = StringFromKey("Common_Shipyard_142");
+			link.l1 = StringFromKey("Common_Shipyard_143");
+			link.l1.go = "exit";
+			DeleteAttribute(npchar, "questTemp.BloogGoToPackhouse");
+			NextDiag.TempNode = "CBL_BloogGoToPackhouse_repeat";
+			TakeNItemsNotification(pchar, "MedicalSupplies", 1, "default", "", "noSound");
+			QuestPointerDelLoc("Bridgetown_TownHall", "reload", "reload1_back");
+			QuestPointerToLoc("Bridgetown_Shipyard", "reload", "reload2");
+			LocatorReloadEnterDisable("Bridgetown_Shipyard", "reload2", false);
+		break;
+		//
+
+		case "CBL_BloogGoToPackhouse_repeat":
+			dialog.text = StringFromKey("Common_Shipyard_144");
+			link.l1 = StringFromKey("Common_Shipyard_145");
+			link.l1.go = "exit";
+			NextDiag.TempNode = "CBL_BloogGoToPackhouse_repeat";
+		break;
+
+		case "CBL_BloogEndTreatment":
+			dialog.text = StringFromKey("Common_Shipyard_148");
+			link.l1 = StringFromKey("Common_Shipyard_149");
+			link.l1.go = "exit";
+			NextDiag.TempNode = "First time";
+			DeleteAttribute(npchar, "questTemp.BloogEndTreatment");
+		break;
 	}
 }
 
@@ -655,11 +745,13 @@ string findShipyardCity(ref NPChar)
 	int n, nation;
 	int storeArray[MAX_COLONIES];
 	int howStore = 0;
+	// FreeStores > остров колониального верфиста берём из таблицы, а у свободного - из Stores[i].Island
+	string sIsland = GetTraderIslandName(npchar);
 
 	for (n = 0; n < MAX_COLONIES; n++)
 	{
 		nation = GetNationRelation(sti(npchar.nation), sti(colonies[n].nation));
-		if (sti(colonies[n].nation) != PIRATE && colonies[n].id != "Panama" && colonies[n].nation != "none" && GetIslandNameByCity(npchar.city) != colonies[n].islandLable) //не на свой остров
+		if (sti(colonies[n].nation) != PIRATE && colonies[n].id != "Panama" && colonies[n].nation != "none" && sIsland != colonies[n].islandLable) //не на свой остров
 		{
 			if (GetCharacterIndex(colonies[n].id + "_shipyarder") != -1)
 			{

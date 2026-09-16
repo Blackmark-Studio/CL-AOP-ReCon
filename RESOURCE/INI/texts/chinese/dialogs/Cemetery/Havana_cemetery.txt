@@ -1,26 +1,26 @@
 Havana_cemetery_1 {
-你想干什么？
+你想干什么？ 
 }
 Havana_cemetery_2 {
-你想问啥？
+你想问什么？ 
 }
 Havana_cemetery_3 {
 @<RandPhraseSimple>
 }
 Havana_cemetery_4 {
-那你说说，@<GetAddress_Form>，你到底对什么感兴趣？
+那你说说， @<GetAddress_Form>， 你到底对什么感兴趣？ 
 }
 Havana_cemetery_5 {
-你今天已经第三次想问问题了……
+你今天已经第三次想问问题了…… 
 }
 Havana_cemetery_6 {
-够了，你把我都折腾累了。快离开我家！
+够了， 你把我都折腾累了。 快离开我家！ 
 }
 Havana_cemetery_7_m {
-我改主意了……
+我改主意了…… 
 }
 Havana_cemetery_7_f {
-我改变主意了……
+我改变主意了…… 
 }
 Havana_cemetery_8 {
 我现在没什么可说的
@@ -29,23 +29,23 @@ Havana_cemetery_9 {
 @<RandPhraseSimple>
 }
 Havana_cemetery_10 {
-哎呀，我好像忘了。不好意思……
+哎呀， 我好像忘了。 不好意思…… 
 }
 Havana_cemetery_11 {
-是啊，真的，已经第三次了……
+是啊， 真的， 已经第三次了…… 
 }
 Havana_cemetery_12 {
-对不起……
+对不起…… 
 }
 Havana_cemetery_13 {
-你最近有没有在这附近见过穿黑袍子的流浪神父？我真得找他帮我解除个诅咒……
+你最近有没有在这附近见过穿黑袍子的流浪神父？ 我需要找他帮我解除个诅咒…… 
 }
 Havana_cemetery_14 {
-没见过啊。我为啥要见？我们教会的修士都会来这儿，啥都会。你去问他们更合适。
+没见过啊。 为什么要见？ 我们教会的修士都会这些， 什么都会。 你去问他们更合适。 
 }
 Havana_cemetery_15 {
-而且外人也不能随便进墓地，万一是盗墓的怎么办？
+而且外人也不能随便进墓地， 万一是盗墓的怎么办？ 
 }
 Havana_cemetery_16 {
-说得没错。那就告辞了！
+说得没错。 那就告辞了！ 
 }

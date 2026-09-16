@@ -1,0 +1,39 @@
+Gibraltar_Usurer_1 {
+¿Qué preguntas?
+}
+Gibraltar_Usurer_2 {
+¿Qué quieres?
+}
+Gibraltar_Usurer_3 {
+@<RandPhraseSimple>
+}
+Gibraltar_Usurer_4 {
+Hace poco intentaste hacerme una pregunta...
+}
+Gibraltar_Usurer_5 {
+Hmm, déjame adivinar... ¿Nada importante otra vez?
+}
+Gibraltar_Usurer_6 {
+Escucha, yo me encargo de las finanzas, no de las preguntas...
+}
+Gibraltar_Usurer_7_m {
+He cambiado de opinión...
+}
+Gibraltar_Usurer_7_f {
+He cambiado de opinión...
+}
+Gibraltar_Usurer_8 {
+No tengo nada que decir por ahora.
+}
+Gibraltar_Usurer_9 {
+@<RandPhraseSimple>
+}
+Gibraltar_Usurer_10 {
+Hmm, algo le ha pasado a mi memoria…
+}
+Gibraltar_Usurer_11 {
+Adivinaste, lo siento...
+}
+Gibraltar_Usurer_12 {
+Entiendo...
+}

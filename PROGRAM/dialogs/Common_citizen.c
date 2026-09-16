@@ -164,10 +164,63 @@ void ProcessDialogEvent()
 
 				//LinkRandPhrase("Я " + GetFullName(Pchar) + ", капитан.", "Меня зовут " + GetFullName(Pchar) + ".", "Можешь называть меня капитан " + GetFullName(Pchar));
 				Link.l1.go = "Meeting";
+				
+				//--> Эммануэль Пардаль
+				if (CheckAttrValue(pchar, "questTemp.EPL_DOSD", "WonFight") && !CheckAttrValue(npchar, "quest.EPL_DOSD", "talked"))
+				{					
+					dialog.text = LinkRandPhrase(StringFromKey("Common_citizen_293"), StringFromKey("Common_citizen_294"), StringFromKey("Common_citizen_295"));
+					link.l1 = "...";
+					link.l1.go = "exit";
+					npchar.quest.EPL_DOSD = "talked";
+					break;
+				}
+				if (CheckAttribute(pchar, "questTemp.EPL_Prologue"))
+				{
+					if (CheckAttrValue(pchar, "questTemp.EPL_PrologueCitizens", "Dialogue 1") && !CheckAttribute(npchar, "EPL_PrologueCitizens"))
+					{
+						dialog.text = StringFromKey("Common_citizen_299", npchar, TimeGreeting(), pchar.name);
+						link.l1 = StringFromKey("Common_citizen_300", npchar.name);
+						link.l1.go = "exit";
+						npchar.quest.meeting = "0";
+						npchar.EPL_PrologueCitizens;
+						pchar.questTemp.EPL_PrologueCitizens = "Dialogue 2";
+						AddCharacterExpToSkill(pchar, "Leadership", 40);
+						break;
+					}
+					else if (CheckAttrValue(pchar, "questTemp.EPL_PrologueCitizens", "Dialogue 2") && !CheckAttribute(npchar, "EPL_PrologueCitizens"))
+					{
+						dialog.text = StringFromKey("Common_citizen_301");
+						link.l1 = "...";
+						link.l1.go = "exit";
+						LAi_CharacterDisableDialog(npchar);
+						pchar.questTemp.EPL_PrologueCitizens = "Dialogue 3";
+						AddCharacterExpToSkill(pchar, "Leadership", 40);
+						break;
+					}
+					else if (CheckAttrValue(pchar, "questTemp.EPL_PrologueCitizens", "Dialogue 3") && !CheckAttribute(npchar, "EPL_PrologueCitizens"))
+					{
+						dialog.text = StringFromKey("Common_citizen_302");
+						link.l1 = StringFromKey("Common_citizen_303");
+						link.l1.go = "EPL_Prologue_1";
+						npchar.quest.meeting = "0";
+						npchar.EPL_PrologueCitizens;
+						pchar.questTemp.EPL_PrologueCitizens = "Dialogue 4";
+						break;
+					}
+					else
+					{
+						dialog.text = NPCharSexPhrase(NPChar, StringFromKey("Common_citizen_296", TimeGreeting(), pchar.name), StringFromKey("Common_citizen_297", TimeGreeting(), pchar.name));
+						link.l1 = StringFromKey("Common_citizen_298", TimeGreeting(), npchar.name);
+						link.l1.go = "exit";
+						npchar.quest.meeting = "0";
+						break;
+					}
+				}
+				//<-- Эммануэль Пардаль
 			}
 			else
 			{
-				if (!CheckAttribute(NPChar, "CitizenFindItem.NoQuest") && rand(5) == 1 && NPChar.sex == "woman" && !CheckAttribute(PChar, "GenQuest.CitizenFindItem.StartQuest") && !CheckAttrValue(NPChar, "City", "Charles"))
+				if (!CheckAttribute(NPChar, "CitizenFindItem.NoQuest") && rand(5) == 1 && NPChar.sex == "woman" && !CheckAttribute(PChar, "GenQuest.CitizenFindItem.StartQuest") && !CheckAttrValue(NPChar, "City", "Charles") && !CheckAttrValue(NPChar, "City", "LaVega"))
 				{
 					dialog.Text = StringFromKey("Common_citizen_50");
 					link.l1 = StringFromKey("Common_citizen_54", LinkRandPhrase(
@@ -890,6 +943,21 @@ void ProcessDialogEvent()
 			DeleteAttribute(Pchar, "GenQuest.Townpassenger");
 		break;
 		//<-- горожанин-пассажир
+		
+		//--> Эммануэль Пардаль
+		case "EPL_Prologue_1":
+			dialog.text = StringFromKey("Common_citizen_304");
+			link.l1 = StringFromKey("Common_citizen_305");
+			link.l1.go = "EPL_Prologue_2";
+		break;
+		
+		case "EPL_Prologue_2":
+			dialog.text = StringFromKey("Common_citizen_306");
+			link.l1 = StringFromKey("Common_citizen_307");
+			link.l1.go = "exit";
+			AddCharacterExpToSkill(pchar, "Leadership", 100);
+		break;
+		//<-- Эммануэль Пардаль
 
 		//замечение по обнаженному оружию
 		/*case "CitizenNotBlade": //HardCoffee ref TODO подчистить, если всё норм

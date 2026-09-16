@@ -11,6 +11,8 @@
 int nCurScrollNum = 0;
 int iCharCapacity, iCharQty, iStoreQty, iCurGoodsIdx;
 float fCharWeight, fStoreWeight, fWeight;
+// > реальный вес сторон (fCharWeight/fStoreWeight могут портиться при манипуляциях в ChangeQTY_EDIT)
+float fCharWeightReal, fStoreWeightReal;
 bool bShowChangeWin = false;
 bool bChestEnable = false;
 int BuyOrSell = 0;
@@ -18,9 +20,11 @@ ref refCharacter, rCabin, rHold;
 bool bBoxUsed = false; // Сундук-ли?
 aref refToChar, arChest, arDeadChar, arBox;
 string sCharactersArroy[INTERFACE_ITEMSBOX_CHAR_ARROYSIZE];
+int aGoldGivenArroy[INTERFACE_ITEMSBOX_CHAR_ARROYSIZE]; // > 1 - этому "золото" из денег реально выдавали
 for (int i = 0; i < INTERFACE_ITEMSBOX_CHAR_ARROYSIZE; i++)
 {
     sCharactersArroy[i] = "";
+    aGoldGivenArroy[i] = 0;
 }
 
 int iInterfaceType;
@@ -34,6 +38,12 @@ int FilterMode = 1;
 int sortColumnIdx = -1;
 
 int iLinesCount = 0;
+
+int g_aBoxKey[TOTAL_ITEMS];
+object g_oBoxSeen;
+
+string sOtherPicCur = "";
+string sMainPicCur = "";
 
 void InitInterface_RS(string iniName, ref itemsRef, string faceID)
 {
@@ -113,7 +123,7 @@ void InitInterface_RS(string iniName, ref itemsRef, string faceID)
 	if (Get_My_Cabin() == "")
 		Set_My_Cabin();
 
-	if (iInterfaceType == INTERFACETYPE_STORAGE && FindLocation(Get_My_Cabin()) != -1 && or(CheckShipMoored(), pchar.location == "Secret_Fort_Ammo"))
+	if (iInterfaceType == INTERFACETYPE_STORAGE && FindLocation(Get_My_Cabin()) != -1 && or(CheckShipMoored(), pchar.location == "Secret_Fort_Ammo" || pchar.location == "Bucaneer_outpost_house_2"))
 	{
 		bChestEnable = true;
 		rCabin = &locations[FindLocation(Get_My_Cabin())];
@@ -121,17 +131,20 @@ void InitInterface_RS(string iniName, ref itemsRef, string faceID)
 	}
 
 	GameInterface.TABLE_LIST.hr.td1.str = XI_ConvertString("QuantityShort");
-	GameInterface.TABLE_LIST.hr.td1.scale = 0.85;
-	GameInterface.TABLE_LIST.hr.td2.str = XI_ConvertString("Common") + "\n" + LowerFirst(XI_ConvertString("weight"));
-	GameInterface.TABLE_LIST.hr.td2.scale = 0.85;
-	GameInterface.TABLE_LIST.hr.td2.textoffset = "0, 2";
-	GameInterface.TABLE_LIST.hr.td3.str = XI_ConvertString("ItemsColonTitle");
-	GameInterface.TABLE_LIST.hr.td3.scale = 0.85;
-	GameInterface.TABLE_LIST.hr.td4.str = XI_ConvertString("Common") + "\n" + LowerFirst(XI_ConvertString("weight"));
-	GameInterface.TABLE_LIST.hr.td4.scale = 0.85;
-	GameInterface.TABLE_LIST.hr.td4.textoffset = "0, 2";
-	GameInterface.TABLE_LIST.hr.td5.str = XI_ConvertString("QuantityShort");
-	GameInterface.TABLE_LIST.hr.td5.scale = 0.85;
+
+	aref arTableList; makearef(arTableList, GameInterface.TABLE_LIST.hr);
+
+	arTableList.td1.scale = 0.85;
+	arTableList.td2.str = XI_ConvertString("Common") + "\n" + LowerFirst(XI_ConvertString("weight"));
+	arTableList.td2.scale = 0.85;
+	arTableList.td2.textoffset = "0, 2";
+	arTableList.td3.str = XI_ConvertString("ItemsColonTitle");
+	arTableList.td3.scale = 0.85;
+	arTableList.td4.str = XI_ConvertString("Common") + "\n" + LowerFirst(XI_ConvertString("weight"));
+	arTableList.td4.scale = 0.85;
+	arTableList.td4.textoffset = "0, 2";
+	arTableList.td5.str = XI_ConvertString("QuantityShort");
+	arTableList.td5.scale = 0.85;
 
 	FillCharactersScroll();
 
@@ -158,7 +171,8 @@ void InitInterface_RS(string iniName, ref itemsRef, string faceID)
 
 	SetVAligmentFormatedText("TABSTR_3");
 
-	SetControlsTabMode(3);
+	// > Оставляем только визуал закладок, а список ниже построит перевод золота в деньги
+	SetTabsPictures(3);
 
 	CreateString(true, "CharName", "", FONT_NORMAL, COLOR_MONEY, 400, 99, SCRIPT_ALIGN_CENTER, 0.7);
 
@@ -329,7 +343,29 @@ void SetCharacterMoneyToGold(aref rChar) // В интерфейсе оперир
 	{
 		bOk = CheckAttribute(rChar, "ID") && rChar.id == pchar.id;
 		if (iInterfaceType != INTERFACETYPE_STORAGE || bOk)
+		{
 			rChar.items.gold = sti(GetAttrValue(rChar, "money"));
+			SetGoldGivenMark(rChar);
+		}
+	}
+}
+
+// > Отдельная отметка о выдаче "золота"
+void SetGoldGivenMark(aref rChar)
+{
+	if (!CheckAttribute(rChar, "ID")) return;
+	int iSlot = iSetCharIDToCharactersArroy(rChar);
+	if (iSlot >= 0) aGoldGivenArroy[iSlot] = 1;
+}
+
+// > Снять отметку с того, кого уже обработали отдельно (сундук, бочонок, труп)
+void ClearGoldGivenMark(aref rChar)
+{
+	if (!CheckAttribute(rChar, "ID")) return;
+	string sCharID = rChar.ID;
+	for (int i = 0; i < INTERFACE_ITEMSBOX_CHAR_ARROYSIZE; i++)
+	{
+		if (sCharactersArroy[i] == sCharID) aGoldGivenArroy[i] = 0;
 	}
 }
 
@@ -363,6 +399,9 @@ void MakeMoneyFromGoldWithowtChest()
 		sCurArroyID = sCharactersArroy[i];
 		if (sCurArroyID != "")
 		{
+			// > обратный перевод делаем только тем, кому "золото" реально выдавали
+			if (aGoldGivenArroy[i] == 0) continue;
+			aGoldGivenArroy[i] = 0;
 			arCurChar = CharacterFromID(sCurArroyID);
 			arCurChar.money = GetCharacterItem(arCurChar, "Gold");
 			DeleteAttribute(arCurChar, "items.gold");
@@ -374,6 +413,7 @@ void MakeMoneyFromGoldWithChest(aref _arChest)
 {
 	_arChest.money = GetCharacterItem(_arChest, "Gold");
 	DeleteAttribute(_arChest, "items.gold");
+	ClearGoldGivenMark(_arChest);
 	MakeMoneyFromGoldWithowtChest();
 }
 
@@ -381,6 +421,7 @@ void MakeMoneyFromGoldWithDeadMan(aref _arDeadChar)
 {
 	_arDeadChar.money = GetCharacterItem(_arDeadChar, "Gold");
 	DeleteAttribute(_arDeadChar, "items.gold");
+	ClearGoldGivenMark(_arDeadChar);
 	MakeMoneyFromGoldWithowtChest();
 }
 
@@ -428,7 +469,7 @@ void ShowItemsWeight()
 {
 	if (iInterfaceType == INTERFACETYPE_EXCHANGE_ITEMS)
 	{
-		SetFormatedText("STORE_CAPACITY", XI_ConvertString("Weight") + ":" + NewStr() + FloatToString(GetItemsWeight(refToChar), 1) + " / " + GetMaxItemsWeight(refToChar));
+		SetFormatedText("STORE_CAPACITY", XI_ConvertString("Weight") + ":" + NewStr() + FloatToString(fStoreWeightReal, 1) + " / " + GetMaxItemsWeight(refToChar));
 	}
 	else if (iInterfaceType == INTERFACETYPE_DEADMAN)
 	{
@@ -443,14 +484,14 @@ void ShowItemsWeight()
 	}
 	else if (iInterfaceType == INTERFACETYPE_STORAGE)
 	{
-		SetFormatedText("STORE_CAPACITY", XI_ConvertString("Weight") + ":" + NewStr() + FloatToString(GetItemsWeight(refToChar), 1) + " / 1000");
+		SetFormatedText("STORE_CAPACITY", XI_ConvertString("Weight") + ":" + NewStr() + FloatToString(fStoreWeightReal, 1) + " / 1000");
 	}
 	else
 	{
 		SetFormatedText("STORE_CAPACITY", "");
 	}
 
-	SetFormatedText("CAPACITY", XI_ConvertString("Weight") + ":" + NewStr() + FloatToString(GetItemsWeight(refCharacter), 1) + " / " + GetMaxItemsWeight(refCharacter));
+	SetFormatedText("CAPACITY", XI_ConvertString("Weight") + ":" + NewStr() + FloatToString(fCharWeightReal, 1) + " / " + GetMaxItemsWeight(refCharacter));
 }
 
 void ProcessBreakExit()
@@ -461,7 +502,17 @@ void ProcessBreakExit()
 void ProcessCancelExit()
 {
 	if (bShowChangeWin)    EndTooltip();
-	else    IDoExit(RC_INTERFACE_FOOD_INFO_EXIT);
+	else
+	{
+		// а это еще одна защита по третьему квесту ле Баска, пока не подкинем письмо (на крестик или Esc)
+		if (iInterfaceType == INTERFACETYPE_DEADMAN && CheckAttribute(refToChar, "id") && refToChar.id == "Ignasio_Vela" && CheckCharacterItem(pchar, "letter_forged"))
+		{
+			Log_Info("Сначала я должен подкинуть ему фальшивое письмо");
+			PlaySound("interface\knock.wav");
+			return;
+		}
+		IDoExit(RC_INTERFACE_FOOD_INFO_EXIT);
+	}
 }
 
 void IDoExit(int exitCode)
@@ -527,8 +578,13 @@ void IDoExit(int exitCode)
 	// Для обыска трупов - если пуст, то убрать из выдачи (мы все равно его уже не сможем обыскать)
 	if (iInterfaceType == INTERFACETYPE_DEADMAN)
 	{
-		aref arItems; makearef(arItems, refToChar.items);
-		bool hasLoot = or(GetAttributesNum(arItems) > 0, CheckAttribute(refToChar, "money") && sti(refToChar.money) > 0);
+		int nLeftItems = 0;
+		if (CheckAttribute(refToChar, "items"))
+		{
+			aref arItems; makearef(arItems, refToChar.items);
+			nLeftItems = GetAttributesNum(arItems);
+		}
+		bool hasLoot = or(nLeftItems > 0, CheckAttribute(refToChar, "money") && sti(refToChar.money) > 0);
 		if (!hasLoot)
 		{
 			Dead_DelLoginedCharacter(refToChar);
@@ -662,9 +718,18 @@ void ProcCommand()
 			{
 				SetCurrentNode("SKULL_BUTTON");
 			}
-
+			// защита от ... по третьему квесту ле Баска. Пока письмо не подкинем - никак не получится нажать кнопку "не обыскивать". 
 			if (comName == "activate" || comName == "click")
 			{
+				// 
+				if (CheckAttribute(refToChar, "id") && refToChar.id == "Ignasio_Vela" && CheckCharacterItem(pchar, "letter_forged"))
+				{
+					PlaySound("interface\knock.wav");
+					Log_Info("Сначала я должен подкинуть ему фальшивое письмо!");
+					return;
+				}
+				// ===================
+
 				if (CheckAttribute(refToChar, "money") && sti(refToChar.money) > 0)
 					TEV.DeadmanMoney = sti(refToChar.money);
 				Dead_DelLoginedCharacter(refToChar);
@@ -726,6 +791,12 @@ void procTabChange()
 
 void SetControlsTabMode(int nMode)
 {
+	FillControlsList(nMode); // > визуал закладок выставляется внутри
+}
+
+// > только визуал закладок и сброс позиции таблицы, без перестроения списка
+void SetTabsPictures(int nMode)
+{
 	int iColor1 = argb(255, 196, 196, 196);
 	int iColor2 = iColor1;
 	int iColor3 = iColor1;
@@ -784,20 +855,15 @@ void SetControlsTabMode(int nMode)
 	SendMessage(&GameInterface, "lslll", MSG_INTERFACE_MSG_TO_NODE, "TABSTR_3", 8, 0, iColor3);
 	SendMessage(&GameInterface, "lslll", MSG_INTERFACE_MSG_TO_NODE, "TABSTR_4", 8, 0, iColor4);
 	SendMessage(&GameInterface, "lslll", MSG_INTERFACE_MSG_TO_NODE, "TABSTR_5", 8, 0, iColor5);
-	FillControlsList(nMode);
+
+	// 1 - все предметы, 2 - предметы героя, 3 - предметы в сундуке/бочонке/у офицера/на трупе, 4 - снаряжение, 5 - зелья
+	if (nMode >= 1 && nMode <= 5) FilterMode = nMode;
+	sortColumnIdx = -1;
 }
 
 void FillControlsList(int nMode)
 {
-	switch (nMode)
-	{
-		case 1: FilterMode = 1; break;  // все предметы
-		case 2: FilterMode = 2; break;  // предметы героя
-		case 3: FilterMode = 3; break;  // предметы - в сундуке, в бочонке, у офицера, на трупе
-		case 4: FilterMode = 4; break;  // снаряжение
-		case 5: FilterMode = 5; break;  // зелья
-	}
-	sortColumnIdx = -1;
+	SetTabsPictures(nMode);
 	AddToTable(refToChar, FilterMode);
 	ShowGoodsInfo(sti(GameInterface.TABLE_LIST.tr1.index)); // Hokkins: при смене вкладки возвращаем информацию о предмете на первую строку.
 }
@@ -858,7 +924,10 @@ void FillCharactersScroll()
 		GameInterface.CHARACTERS_SCROLL.(attributeName).tex1 = FindFaceGroupNum("CHARACTERS_SCROLL.ImagesGroup", "FACE128_" + pchar.FaceID);
 	}
 
-	for (i = 0; i < GetPassengersQuantity(pchar); i++)
+	int nPassengers = GetPassengersQuantity(pchar);
+	bool bBanExchange = GetBan("Exchange");
+
+	for (i = 0; i < nPassengers; i++)
 	{
 		_curCharIdx = GetPassenger(pchar, i);
 		if (_curCharIdx < 0) continue;
@@ -871,7 +940,7 @@ void FillCharactersScroll()
 		//HardCoffee возможность для абордажников залезть в сундук каюты, даже если они не в каюте
 		else if (bOfficer && bCabin) bOk = true;
 		// boal // fix - ГГ и офы должны быть в одной локации // KZ > фикс фикса
-		else bOk = bOfficer && IsEntity(chr) && PChar.location == chr.location && !GetBan("Exchange");
+		else bOk = bOfficer && IsEntity(chr) && PChar.location == chr.location && !bBanExchange;
 		if (!bOk) continue;
 		SetCharacterMoneyToGold(chr);
 		iSetCharIDToCharactersArroy(chr); // Пометим его для удаления золота и дачи денег
@@ -980,11 +1049,14 @@ void FillCharactersScroll()
 
 void AddToTable(ref rChar, int _mode)
 {
-	string sList, sItem;
-	string groupID, itemType;
+	string sList, sItem, sTemp;
+	string groupID;
 	int i, iLeftQty, iRightQty, Index, iSelLine, n = 1;
 	ref rItem;
 	bool ok, ok1, ok2, ok3 = false;
+	aref arTableList;
+
+	int idLngFile = LanguageOpenFile("ItemsDescribe.txt");
 
 	// Warship fix 31.05.09 - слетала текущая полоска + кнопочки забрать/отдать все
 	// Садо-мазо получилось ещё то
@@ -993,26 +1065,27 @@ void AddToTable(ref rChar, int _mode)
 	{
 		if (sti(GameInterface.TABLE_LIST.select) + 1 == iLinesCount)
 		{
+			makearef(arTableList, GameInterface.TABLE_LIST);
 			iLinesCount -= 2;
-			GameInterface.TABLE_LIST.select = iLinesCount;
+			arTableList.select = iLinesCount;
 
 			iSelLine = iLinesCount;
 
 			if (CheckAttribute(&GameInterface, "TABLE_LIST.top"))
 			{
-				if (sti(GameInterface.TABLE_LIST.top) > 0)
+				if (sti(arTableList.top) > 0)
 				{
-					GameInterface.TABLE_LIST.top = sti(GameInterface.TABLE_LIST.top) - 1;
+					arTableList.top = sti(arTableList.top) - 1;
 				}
 
-				iSelLine = iLinesCount - sti(GameInterface.TABLE_LIST.top);
+				iSelLine = iLinesCount - sti(arTableList.top);
 			}
 
 			SendMessage(&GameInterface, "lsllllll", MSG_INTERFACE_MSG_TO_NODE, "TABLE_ADD_ALL_BUTTON", 0, iTableAddAllBtnX, iTableAddAllBtnY - 12 + 42 * (iSelLine - 1), iTableAddAllBtnX + 30, iTableAddAllBtnY - 8 + 42 * (iSelLine - 1) + 30, 0);
 			SendMessage(&GameInterface, "lsllllll", MSG_INTERFACE_MSG_TO_NODE, "TABLE_REMOVE_ALL_BUTTON", 0, iTableRemoveAllBtnX, iTableRemoveAllBtnY - 12 + 42 * (iSelLine - 1), iTableRemoveAllBtnX + 30, iTableRemoveAllBtnY - 8 + 42 * (iSelLine - 1) + 30, 0);
 
-			sList = "tr" + sti(GameInterface.TABLE_LIST.select);
-			iCurGoodsIdx = sti(GameInterface.TABLE_LIST.(sList).index);
+			sList = "tr" + sti(arTableList.select);
+			iCurGoodsIdx = sti(arTableList.(sList).index);
 			ShowGoodsInfo(iCurGoodsIdx);
 		}
 		else
@@ -1030,146 +1103,137 @@ void AddToTable(ref rChar, int _mode)
 	iLeftQty = GetCharacterFreeItem(refCharacter, "Gold");
 	iRightQty = GetCharacterFreeItem(rChar, "Gold");
 
-	// Фикс - должно быть всегда, иначе у нищих офов слетает стрелочки
-	//if(iLeftQty > 0 || iRightQty > 0)
-	//{
-	sList = "tr" + n;
 	Index = FindItem("Gold");
 	rItem = &Items[Index];
 	sItem = rItem.id;
+
+	sList = "tr" + n;
+
 	GameInterface.TABLE_LIST.(sList).index = Index;
-	GameInterface.TABLE_LIST.(sList).td1.str = iLeftQty;
-	GameInterface.TABLE_LIST.(sList).td2.str = "-";
-	GameInterface.TABLE_LIST.(sList).td3.icon.group = rItem.picTexture;
-	GameInterface.TABLE_LIST.(sList).td3.icon.image = "itm" + rItem.picIndex;
-	GameInterface.TABLE_LIST.(sList).td3.icon.offset = "0, 1";
-	GameInterface.TABLE_LIST.(sList).td3.icon.width = 39;
-	GameInterface.TABLE_LIST.(sList).td3.icon.height = 39;
-	GameInterface.TABLE_LIST.(sList).td3.textoffset = "60, 0";
-	GameInterface.TABLE_LIST.(sList).td3.str = GetConvertStr(rItem.name, "ItemsDescribe.txt");
-	GameInterface.TABLE_LIST.(sList).td4.str = "-";
-	GameInterface.TABLE_LIST.(sList).td5.str = iRightQty;
+	makearef(arTableList, GameInterface.TABLE_LIST.(sList));
+	arTableList.td1.str = iLeftQty;
+	arTableList.td2.str = "-";
+	arTableList.td3.icon.group = rItem.picTexture;
+	arTableList.td3.icon.image = "itm" + rItem.picIndex;
+	arTableList.td3.icon.offset = "0, 1";
+	arTableList.td3.icon.width = 39;
+	arTableList.td3.icon.height = 39;
+	arTableList.td3.textoffset = "60, 0";
+	arTableList.td3.str = LanguageConvertString(idLngFile, rItem.name);
+	arTableList.td4.str = "-";
+	arTableList.td5.str = iRightQty;
 	n++;
-
 	iLinesCount++;
-	//}
 
-	// Сначало заполняем рандомящимся оружием
-	for (i = ITEMS_QUANTITY; i < TOTAL_ITEMS; i++)
+	// KZ > Перебираем только то, что реально имеется у объекта, а не ВСЕ предметы в игре. Порядок сортировки сохраняем (уникальные, затем базовые)
+	int idx, key, side, q, k, nKeys = 0;
+	int goldIdx = Index;
+	aref arItems;
+	DeleteAttribute(&g_oBoxSeen, "");
+
+	for (side = 0; side < 2; side++)
 	{
-		sList = "tr" + n;
-		rItem = &Items[i];
-
-		if (!CheckAttribute(rItem, "ID"))
+		if (side == 0)
 		{
-			continue;
+			if (!CheckAttribute(refCharacter, "items")) continue;
+			makearef(arItems, refCharacter.items);
+		}
+		else
+		{
+			if (!CheckAttribute(rChar, "items")) continue;
+			makearef(arItems, rChar.items);
 		}
 
-		sItem = rItem.id;
-		groupID = "";
-		itemType = "";
+		q = GetAttributesNum(arItems);
 
-		if (sItem == "Gold") continue; // Золото выше
-
-		// evganat - энциклопедия
-		if (sItem == "encyclopedia") continue;
-
-		// Hokkins: новая сортировка предметов -->
-		if (CheckAttribute(rItem, "groupID")) groupID = rItem.groupID;
-		if (CheckAttribute(rItem, "itemType")) itemType = rItem.itemType;
-
-		// Проверка на экипировку
-		iLeftQty = GetCharacterFreeItem(refCharacter, sItem);
-		iRightQty = GetCharacterFreeItem(rChar, sItem);
-
-		// Снаряжение -->
-		ok1 = (groupID == BLADE_ITEM_TYPE)    || // холодное оружие
-              (groupID == GUN_ITEM_TYPE)      || // пистолеты
-              (groupID == MUSKET_ITEM_TYPE)   || // ружья
-              (groupID == SPYGLASS_ITEM_TYPE) || // подзорные трубы
-              (groupID == CIRASS_ITEM_TYPE)   || // костюмы и доспехи
-              (groupID == AMMO_ITEM_TYPE);       // боеприпасы
-
-		// Зелья -->
-		ok2 = (groupID == POTION_ITEM_TYPE);    // зелья
-
-		if (iLeftQty > 0 || iRightQty > 0)
+		for (k = 0; k < q; k++)
 		{
-			if (FilterMode == 2 && iLeftQty < 1) continue;     // Сортировка "у героя"
-			if (FilterMode == 3 && iRightQty < 1) continue;    // Сортировка "в сундуке"
-			if (FilterMode == 4 && !ok1) continue;             // Сортировка "cнаряжение"
-			if (FilterMode == 5 && !ok2) continue;             // Сортировка "зелья"
+			idx = FindItem(GetAttributeName(GetAttributeN(arItems, k)));
+			if (idx < 0 || idx == goldIdx) continue; // > Золото показано отдельной строкой выше
+			if (CheckAttribute(&g_oBoxSeen, "i" + idx)) continue;
+			sTemp = "i" + idx;
+			g_oBoxSeen.(sTemp) = 1;
 
-			GameInterface.TABLE_LIST.(sList).index = i;
-			GameInterface.TABLE_LIST.(sList).td1.str = iLeftQty;
-			GameInterface.TABLE_LIST.(sList).td2.str = FloatToString(stf(rItem.Weight) * iLeftQty, 1);
-			GameInterface.TABLE_LIST.(sList).td3.icon.group = rItem.picTexture;
-			GameInterface.TABLE_LIST.(sList).td3.icon.image = "itm" + rItem.picIndex;
-			GameInterface.TABLE_LIST.(sList).td3.icon.offset = "0, 1";
-			GameInterface.TABLE_LIST.(sList).td3.icon.width = 39;
-			GameInterface.TABLE_LIST.(sList).td3.icon.height = 39;
-			GameInterface.TABLE_LIST.(sList).td3.textoffset = "60, 0";
-			GameInterface.TABLE_LIST.(sList).td3.str = GetConvertStr(rItem.name, "ItemsDescribe.txt");
-			GameInterface.TABLE_LIST.(sList).td4.str = FloatToString(stf(rItem.Weight) * iRightQty, 1);
-			GameInterface.TABLE_LIST.(sList).td5.str = iRightQty;
-			n++;
+			if (idx >= ITEMS_QUANTITY)
+				key = idx;
+			else
+				key = idx + TOTAL_ITEMS;
 
-			iLinesCount++;
+			g_aBoxKey[nKeys] = key;
+			nKeys++;
 		}
 	}
 
-	for (i = 0; i < ITEMS_QUANTITY; i++)
+	for (i = 1; i < nKeys; i++)
 	{
-		sList = "tr" + n;
-		rItem = &Items[i];
-		sItem = rItem.id;
-		groupID = "";
-		itemType = "";
+		key = g_aBoxKey[i];
+		k = i - 1;
+		while (k >= 0 && g_aBoxKey[k] > key)
+		{
+			g_aBoxKey[k + 1] = g_aBoxKey[k];
+			k--;
+		}
+		g_aBoxKey[k + 1] = key;
+	}
 
-		if (sItem == "Gold") continue; // Золото выше
-		if (sItem == "unarmed") continue; //HardCoffee кулаки не отображать
-		// Hokkins: новая сортировка предметов -->
-		if (CheckAttribute(rItem, "groupID")) groupID = rItem.groupID;
-		if (CheckAttribute(rItem, "itemType")) itemType = rItem.itemType;
+	// > заполнение таблицы
+	for (i = 0; i < nKeys; i++)
+	{
+		key = g_aBoxKey[i];
+		if (key >= TOTAL_ITEMS)
+			idx = key - TOTAL_ITEMS; // > базовый
+		else
+			idx = key;               // > уникальный
+
+		rItem = &Items[idx];
+		sItem = rItem.id;
+
+		// > исключения
+		if (sItem == "encyclopedia" || sItem == "unarmed") continue;
 
 		// Проверка на экипировку
-		iLeftQty = GetCharacterFreeItem(refCharacter, sItem);
+		iLeftQty  = GetCharacterFreeItem(refCharacter, sItem);
 		iRightQty = GetCharacterFreeItem(rChar, sItem);
 
-		// Снаряжение -->
-		ok1 = (groupID == BLADE_ITEM_TYPE)    || // холодное оружие
-              (groupID == GUN_ITEM_TYPE)      || // пистолеты
-              (groupID == MUSKET_ITEM_TYPE)   || // ружья
-              (groupID == SPYGLASS_ITEM_TYPE) || // подзорные трубы
-              (groupID == CIRASS_ITEM_TYPE)   || // костюмы и доспехи
-              (groupID == AMMO_ITEM_TYPE);       // боеприпасы
+		if (iLeftQty <= 0 && iRightQty <= 0) continue;
 
-		// Зелья -->
-		ok2 = (groupID == POTION_ITEM_TYPE);    // зелья
+		if (FilterMode == 2 && iLeftQty < 1) continue; // > "у нас"
+		if (FilterMode == 3 && iRightQty < 1) continue; // > "у них"
 
-		if (iLeftQty > 0 || iRightQty > 0)
+		if (FilterMode == 4 || FilterMode == 5)
 		{
-			if (FilterMode == 2 && iLeftQty < 1) continue; // Сортировка "у героя"
-			if (FilterMode == 3 && iRightQty < 1) continue; // Сортировка "в сундуке"
-			if (FilterMode == 4 && !ok1) continue; // Сортировка "cнаряжение"
-			if (FilterMode == 5 && !ok2) continue; // Сортировка "зелья"
+			groupID = "";
 
-			GameInterface.TABLE_LIST.(sList).index = i;
-			GameInterface.TABLE_LIST.(sList).td1.str = iLeftQty;
-			GameInterface.TABLE_LIST.(sList).td2.str = FloatToString(stf(rItem.Weight) * iLeftQty, 1);
-			GameInterface.TABLE_LIST.(sList).td3.icon.group = rItem.picTexture;
-			GameInterface.TABLE_LIST.(sList).td3.icon.image = "itm" + rItem.picIndex;
-			GameInterface.TABLE_LIST.(sList).td3.icon.offset = "0, 1";
-			GameInterface.TABLE_LIST.(sList).td3.icon.width = 39;
-			GameInterface.TABLE_LIST.(sList).td3.icon.height = 39;
-			GameInterface.TABLE_LIST.(sList).td3.textoffset = "60, 0";
-			GameInterface.TABLE_LIST.(sList).td3.str = GetConvertStr(rItem.name, "ItemsDescribe.txt");
-			GameInterface.TABLE_LIST.(sList).td4.str = FloatToString(stf(rItem.Weight) * iRightQty, 1);
-			GameInterface.TABLE_LIST.(sList).td5.str = iRightQty;
-			n++;
+			if (CheckAttribute(rItem, "groupID"))
+				groupID = rItem.groupID;
 
-			iLinesCount++;
+			ok1 = (groupID == BLADE_ITEM_TYPE)    || (groupID == GUN_ITEM_TYPE)      ||
+			      (groupID == MUSKET_ITEM_TYPE)   || (groupID == SPYGLASS_ITEM_TYPE) ||
+			      (groupID == CIRASS_ITEM_TYPE)   || (groupID == AMMO_ITEM_TYPE); // > снаряжение
+			ok2 = (groupID == POTION_ITEM_TYPE); // > зелья
+
+			if (FilterMode == 4 && !ok1) continue;
+			if (FilterMode == 5 && !ok2) continue;
 		}
+
+		sList = "tr" + n;
+
+		GameInterface.TABLE_LIST.(sList).index = idx;
+		makearef(arTableList, GameInterface.TABLE_LIST.(sList));
+		arTableList.td1.str = iLeftQty;
+		arTableList.td2.str = FloatToString(stf(rItem.Weight) * iLeftQty, 1);
+		arTableList.td3.icon.group = rItem.picTexture;
+		arTableList.td3.icon.image = "itm" + rItem.picIndex;
+		arTableList.td3.icon.offset = "0, 1";
+		arTableList.td3.icon.width = 39;
+		arTableList.td3.icon.height = 39;
+		arTableList.td3.textoffset = "60, 0";
+		arTableList.td3.str = LanguageConvertString(idLngFile, rItem.name);
+		arTableList.td4.str = FloatToString(stf(rItem.Weight) * iRightQty, 1);
+		arTableList.td5.str = iRightQty;
+		n++;
+
+		iLinesCount++;
 	}
 
 	if (ok3)
@@ -1184,6 +1248,8 @@ void AddToTable(ref rChar, int _mode)
 			ShowGoodsInfo(iCurGoodsIdx);
 		}
 	}
+
+	LanguageCloseFile(idLngFile);
 
 	Table_UpdateWindow("TABLE_LIST");
 	SetEventHandler("frame", "RefreshTableByFrameEvent", 0);
@@ -1291,7 +1357,9 @@ void CS_TableSelectChange()
 	string sList = "tr" + iSelected;
 	SetCharWeight();
 	SetVariable();
-	ShowGoodsInfo(sti(GameInterface.TABLE_LIST.(sList).index));
+	// > строки может не быть (список короче, чем запомненная позиция)
+	if (CheckAttribute(&GameInterface, "TABLE_LIST." + sList + ".index"))
+		ShowGoodsInfo(sti(GameInterface.TABLE_LIST.(sList).index));
 }
 
 void SetVariable()
@@ -1338,6 +1406,7 @@ void ProcessFrame()
 		}
 
 		FillCharactersImages();
+		SetCharWeight(); // > перс сменился и веса надо пересчитать до вывода их на экран в SetDescription()
 		SetDescription();
 		AddToTable(refToChar, FilterMode);
 		GameInterface.TABLE_LIST.select = 1;
@@ -1366,7 +1435,7 @@ void FillCharactersImages()
 		makeref(refCharacter, arBox);
 
 		SetFormatedText("TABSTR_2", XI_ConvertString("Item_CHEST"));
-		SetNewPicture("MAIN_CHARACTER_PICTURE", "interfaces\BoxImage.tga");
+		SetMainCharacterPicture("interfaces\BoxImage.tga");
 		GameInterface.strings.CharName = XI_ConvertString("Item_CHEST_IN_" + FindStringBeforeSubStr(sName, "|")) + " " + GetStrSmallRegister(XI_ConvertString(RealShips[sti(pchar.Ship.Type)].BaseName + "Acc")) + " '" + pchar.ship.name + "'";
 	}
 	else
@@ -1375,34 +1444,60 @@ void FillCharactersImages()
 			SetFormatedText("TABSTR_2", XI_ConvertString("Item_CHARACTERF"));
 		else
 			SetFormatedText("TABSTR_2", XI_ConvertString("Item_CHARACTER"));
-		SetNewPicture("MAIN_CHARACTER_PICTURE", "interfaces\portraits\128\face_" + refCharacter.FaceId + ".tga");
+		SetMainCharacterPicture("interfaces\portraits\128\face_" + refCharacter.FaceId + ".tga");
 		ref rChr = &Characters[sti(sName)];
 		GameInterface.strings.CharName = GetFullNameTitulForm(rChr) +" " +GetOfficerOccupation(rChr);
 	}
 	SetVAligmentFormatedText("TABSTR_2");
 
+	SetOtherPicture();
+}
+
+// KZ > при переключении между сундуками (и вообще при повторе) не пересоздаём одну и ту же текстуру
+void SetMainCharacterPicture(string sPic)
+{
+	if (sPic == sMainPicCur) return;
+	sMainPicCur = sPic;
+	SetNewPicture("MAIN_CHARACTER_PICTURE", sPic);
+}
+
+// > Запоминаем картинки, что уже загружены, и зря текстуры с диска не дёргаем
+void SetOtherPicture()
+{
+	string sPic = "";
+
 	switch (iInterfaceType)
 	{
 		case INTERFACETYPE_EXCHANGE_ITEMS:
-			SetNewPicture("OTHER_PICTURE", "interfaces\portraits\128\face_" + refToChar.FaceId + ".tga");
+			sPic = "interfaces\portraits\128\face_" + refToChar.FaceId + ".tga";
 		break;
 
 		case INTERFACETYPE_CHEST:
-			SetNewPicture("OTHER_PICTURE", "interfaces\Search.tga");
-		break;
-
-		case INTERFACETYPE_BARREL:
-			SetNewGroupPicture("OTHER_PICTURE", "BARREL_IMAGE", "BarrelImage");
+			sPic = "interfaces\Search.tga";
 		break;
 
 		case INTERFACETYPE_DEADMAN:
-			SetNewPicture("OTHER_PICTURE", "interfaces\Corpse.tga");
+			sPic = "interfaces\Corpse.tga";
 		break;
 
 		case INTERFACETYPE_STORAGE:
-			SetNewPicture("OTHER_PICTURE", "interfaces\store.tga");
+			sPic = "interfaces\store.tga";
+		break;
+
+		case INTERFACETYPE_BARREL:
+			if (sOtherPicCur != "#barrel")
+			{
+				sOtherPicCur = "#barrel";
+				SetNewGroupPicture("OTHER_PICTURE", "BARREL_IMAGE", "BarrelImage");
+			}
 		break;
 	}
+
+	if (sPic == "") return;
+	if (sPic == sOtherPicCur) return;
+
+	sOtherPicCur = sPic;
+	SetNewPicture("OTHER_PICTURE", sPic);
 }
 
 void SetDescription()
@@ -1414,6 +1509,9 @@ void SetCharWeight()
 {
 	fCharWeight = GetItemsWeight(refCharacter);
 	fStoreWeight = GetItemsWeight(refToChar);
+
+	fCharWeightReal = fCharWeight;
+	fStoreWeightReal = fStoreWeight;
 }
 
 // Жмакнули по кнопке "взять все"
@@ -1427,11 +1525,44 @@ void onGetAllBtnClick()
 	bool bOk = false;
 	SetCharWeight();
 
-	for (int i = 0; i < TOTAL_ITEMS; i++)
+	// > fix: раньше здесь прокручивался весь список предметов TOTAL_ITEMS с 2 вызовами GetCharacterFreeItem на каждый
+	// > Теперь сначала снимаем слепок того, что реально есть у объекта, и работаем только по нему
+	int i, k, idx, q, nKeys = 0;
+	aref arItems;
+
+	if (CheckAttribute(refToChar, "items"))
 	{
-		if (CheckAttribute(&Items[i], "ID"))
+		makearef(arItems, refToChar.items);
+		q = GetAttributesNum(arItems);
+
+		for (k = 0; k < q; k++)
 		{
-			itemID = Items[i].id;
+			idx = FindItem(GetAttributeName(GetAttributeN(arItems, k)));
+			if (idx < 0) continue;
+			g_aBoxKey[nKeys] = idx;
+			nKeys++;
+		}
+	}
+
+	for (i = 1; i < nKeys; i++) // > сортировка вставками, список короткий
+	{
+		idx = g_aBoxKey[i];
+		k = i - 1;
+		while (k >= 0 && g_aBoxKey[k] > idx)
+		{
+			g_aBoxKey[k + 1] = g_aBoxKey[k];
+			k--;
+		}
+		g_aBoxKey[k + 1] = idx;
+	}
+
+	for (i = 0; i < nKeys; i++)
+	{
+		idx = g_aBoxKey[i];
+
+		if (CheckAttribute(&Items[idx], "ID"))
+		{
+			itemID = Items[idx].id;
 			iItemsQty = GetCharacterFreeItem(refToChar, itemID);
 			if (iItemsQty < 1) continue;
 
@@ -1451,7 +1582,7 @@ void onGetAllBtnClick()
 
 			bOk = true;
 
-			weight = iItemsQty * stf(Items[i].weight);
+			weight = iItemsQty * stf(Items[idx].weight);
 			fCharWeight += weight; // Тут обновляем для метода GetMaxItemsToTake, иначе тормоза
 			fStoreWeight -= weight;
 		}
@@ -1480,11 +1611,14 @@ void onGetAllBtnClick()
 // Нажали на табличной стрелочке "взять все предметы одного типа"
 void onTableAddAllBtnClick()
 {
+	if (iCurGoodsIdx < 0 || iCurGoodsIdx >= TOTAL_ITEMS) return;
 	string item = Items[iCurGoodsIdx].id;
 	int iItemsQty = GetCharacterFreeItem(refToChar, item);
 
 	if (item == "mushket2x2" && iInterfaceType == INTERFACETYPE_EXCHANGE_ITEMS && refToChar.id == "Douglas")
 		return; // Руки прочь от мушкета!
+
+	SetCharWeight();
 
 	// Учет перегруза
 	int maxItemsToAdd = GetMaxItemsToTake(true, item);
@@ -1512,10 +1646,13 @@ void onTableAddAllBtnClick()
 // Нажали на табличной стрелочке "отдать все предметы одного типа"
 void onTableRemoveAllBtnClick()
 {
+	if (iCurGoodsIdx < 0 || iCurGoodsIdx >= TOTAL_ITEMS) return;
 	string item = Items[iCurGoodsIdx].id;
 	int iItemsQty = GetCharacterFreeItem(refCharacter, item);
 
 	if (IsQuestUsedItem(item) && item != "Gold") return; // Квестовые не отдать, только золото
+
+	SetCharWeight();
 
 	// Учет перегруза (в сундуки и трупы можно ложить сколько угодно)
 	int maxItemsToAdd = GetMaxItemsToTake(false, item);
@@ -1543,31 +1680,38 @@ void onTableRemoveAllBtnClick()
 // инфа о предмете
 void ShowGoodsInfo(int iGoodIndex)
 {
-	string GoodName = Items[iGoodIndex].name;
+	if (iGoodIndex < 0 || iGoodIndex >= TOTAL_ITEMS) return;
+
 	ref arItm = &Items[iGoodIndex];
-	string sHeader = GetConvertStr(GoodName, "ItemsDescribe.txt");
+	string GoodName = arItm.name;
+	string sItemID = arItm.id;
+
+	int idLngFile = LanguageOpenFile("ItemsDescribe.txt");
+	string sHeader = LanguageConvertString(idLngFile, GoodName);
 
 	iCurGoodsIdx = iGoodIndex;
 	string describeStr = "";
 
 	if (bBettaTestMode)
 	{
-		describeStr += "id = " + Items[iGoodIndex].id + NewStr();
+		describeStr += "id = " + sItemID + NewStr();
 	}
-	describeStr += GetItemDescribe(iGoodIndex);
+	describeStr += GetItemDescribe(iGoodIndex, refCharacter);
 
-	fWeight = stf(Items[iGoodIndex].weight);
+	LanguageCloseFile(idLngFile);
+
+	fWeight = stf(arItm.weight);
 
 	BuyOrSell = 0;
 	SetFormatedText("QTY_TypeOperation", "");
 	GameInterface.qty_edit.str = "0";
 
-	SetNewGroupPicture("QTY_GOODS_PICTURE", Items[iCurGoodsIdx].picTexture, "itm" + Items[iCurGoodsIdx].picIndex);
+	SetNewGroupPicture("QTY_GOODS_PICTURE", arItm.picTexture, "itm" + arItm.picIndex);
 	SetFormatedText("QTY_CAPTION", sHeader);
 	SetFormatedText("QTY_GOODS_INFO", describeStr);
 
-	iCharQty = GetCharacterFreeItem(refCharacter, Items[iGoodIndex].id);
-	iStoreQty = GetCharacterFreeItem(refToChar, Items[iGoodIndex].id);
+	iCharQty = GetCharacterFreeItem(refCharacter, sItemID);
+	iStoreQty = GetCharacterFreeItem(refToChar, sItemID);
 
 	SetFormatedText("QTY_INFO_STORE_QTY", its(iStoreQty));
 	SetFormatedText("QTY_INFO_SHIP_QTY", its(iCharQty));
@@ -1639,14 +1783,16 @@ void ChangeQTY_EDIT()
 			{
 				GameInterface.qty_edit.str = iCharQty;
 			}
+			iWeight = fWeight * sti(GameInterface.qty_edit.str);
+
 			// Сундуки, бочки и трупы бездонны, а для остальных -->
 			if (iInterfaceType == INTERFACETYPE_EXCHANGE_ITEMS || iInterfaceType == INTERFACETYPE_STORAGE)
 			{
-				fRefCharWeight = GetItemsWeight(refToChar);
+				fRefCharWeight = fStoreWeight;
 				if (iInterfaceType == INTERFACETYPE_STORAGE) fRefCharMaxWeight = 1000.0;
 				else fRefCharMaxWeight = GetMaxItemsWeight(refToChar);
-				iWeight = (fWeight * sti(GameInterface.qty_edit.str));
-				if ((fRefCharWeight + iWeight) > fRefCharMaxWeight)
+				// > убираем деление на 0, а перегруз для невесомого бессмыслен
+				if (fWeight > 0 && (fRefCharWeight + iWeight) > fRefCharMaxWeight)
 				{
 					iWeight = fRefCharMaxWeight - fRefCharWeight - 0.01; // чуть меньше
 
@@ -1662,6 +1808,7 @@ void ChangeQTY_EDIT()
 			if (IsQuestUsedItem(Items[iCurGoodsIdx].id) && Items[iCurGoodsIdx].id != "Gold")
 			{
 				GameInterface.qty_edit.str = 0;
+				iWeight = 0.0;
 			}
 			// квестовые не продать <--
 			SetFormatedText("QTY_TypeOperation", XI_ConvertString("GIVEAWAY"));
@@ -1676,7 +1823,7 @@ void ChangeQTY_EDIT()
 				GameInterface.qty_edit.str = iStoreQty;
 			}
 			iWeight = (fWeight * sti(GameInterface.qty_edit.str));
-			if ((fCharWeight + iWeight) > iCharCapacity)
+			if (fWeight > 0 && (fCharWeight + iWeight) > iCharCapacity)
 			{
 				iWeight = iCharCapacity - fCharWeight - 0.01; // чуть меньше
 
@@ -1692,6 +1839,7 @@ void ChangeQTY_EDIT()
 			&& refToChar.id == "Douglas")
 			{
 				GameInterface.qty_edit.str = 0;
+				iWeight = 0.0;
 			}
 			SetFormatedText("QTY_TypeOperation", XI_ConvertString("PICKUP"));
 		}
@@ -1704,7 +1852,6 @@ void ChangeQTY_EDIT()
 	}
 	SetFormatedText("QTY_INFO_STORE_QTY", its(iStoreQty - BuyOrSell * sti(GameInterface.qty_edit.str)));
 	SetFormatedText("QTY_INFO_SHIP_QTY", its(iCharQty + BuyOrSell * sti(GameInterface.qty_edit.str)));
-	SetCharWeight();
 	fCharWeight = fCharWeight + BuyOrSell * iWeight;
 	fStoreWeight = fStoreWeight - BuyOrSell * iWeight;
 	SetVariable();

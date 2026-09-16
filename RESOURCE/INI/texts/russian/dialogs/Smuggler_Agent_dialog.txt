@@ -524,7 +524,7 @@ Smuggler_Agent_dialog_147 {
 Жаль.
 }
 Smuggler_Agent_dialog_148 {
-Что ж, можем доставить тебя до места @<GetConvertStr> близ @<XI_ConvertString> за @<FindMoneyString>. Принесешь деньги через @<FindDaysString>. Корабль будет ждать тебя в месте под названием @<GetConvertStr> ровно сутки.
+Что ж, можем доставить тебя до места @<GetConvertStr> близ @<XI_ConvertString> за @<FindMoneyString>. Принесёшь деньги через @<FindDaysString>. Корабль будет ждать тебя в месте под названием @<GetConvertStr> ровно сутки.
 }
 Smuggler_Agent_dialog_149 {
 Хорошо, меня устраивает.

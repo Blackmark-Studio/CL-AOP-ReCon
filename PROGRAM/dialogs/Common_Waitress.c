@@ -73,7 +73,7 @@ void ProcessDialogEvent()
 						dialog.text = StringFromKey("Common_Waitress_12", pchar);
 						link.l1 = StringFromKey("Common_Waitress_13", pchar);
 						link.l1.go = "exit";
-						if (pchar.questTemp.different == "free" && !CheckAttribute(pchar, "questTemp.different.FackWaitress") && pchar.questTemp.piratesLine != "Soukins_toPuertoPrincipe" && PChar.sex != "woman" && pchar.questTemp.piratesLine != "Soukins_seekRings" && Pchar.questTemp.CapBloodLine != true && or(CheckAttribute(pchar, "GenQuest.EncGirl") && pchar.GenQuest.EncGirl != "HorseToTavern", !CheckAttribute(pchar, "GenQuest.EncGirl")))
+						if (pchar.questTemp.different == "free" && !CheckAttribute(pchar, "questTemp.different.FackWaitress") && pchar.questTemp.piratesLine != "Soukins_toPuertoPrincipe" && PChar.sex != "woman" && pchar.questTemp.piratesLine != "Soukins_seekRings" && Pchar.questTemp.CapBloodLine != true && !CheckAttribute(pchar, "GenQuest.EncGirl") && !CheckAttrValue(pchar, "GenQuest.EncGirl", "HorseToTavern"))
 						{
 							link.l2 = StringFromKey("Common_Waitress_14");
 							link.l2.go = "Love_1";

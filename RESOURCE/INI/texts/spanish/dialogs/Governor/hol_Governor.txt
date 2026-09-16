@@ -1288,3 +1288,4 @@ Ya te lo he dicho, no tengo la menor idea. Te sugiero que describas Curaçao tal
 hol_Governor_365 {
 Muy bien, buscaré materiales en tu isla. ¡Gracias!
 }
+hol_Governor_366 {completado}

@@ -1,203 +1,203 @@
 Smuggler_OnShore_dialog_1_m {
-听着，酒馆里不是跟你说得很清楚了吗？你只能带一艘船来。赶紧滚，把你的舰队甩了去。
+听着， 酒馆里不是跟你说得很清楚了吗？ 你只能带一艘船来。 赶紧滚， 把你的舰队甩了去。 
 }
 Smuggler_OnShore_dialog_1_f {
-听着，酒馆里不是跟你说得很清楚了吗？只准带一艘船来。赶紧滚，把你的舰队甩了。
+听着， 酒馆里不是跟你说得很清楚了吗？ 只准带一艘船来。 赶紧滚， 把你的舰队甩了。 
 }
 Smuggler_OnShore_dialog_2_m {
-你最好赶紧走，不然我们就亲自把你交给巡逻队。
+你最好赶紧走， 不然我们就亲自把你交给巡逻队。 
 }
 Smuggler_OnShore_dialog_2_f {
-你最好赶紧走，不然我们就亲自把你交给巡逻队。
+你最好赶紧走， 不然我们就亲自把你交给巡逻队。 
 }
 Smuggler_OnShore_dialog_3 {
-快点，上船，赶紧走。
+快点， 上船， 赶紧走。 
 }
 Smuggler_OnShore_dialog_4_m {
-你真把我折腾够呛……
+你真把我折腾够呛…… 
 }
 Smuggler_OnShore_dialog_4_f {
-你真让我累得不行……
+你真让我累得不行…… 
 }
 Smuggler_OnShore_dialog_5 {
-行行行，俺这就回旗舰。
+行行行， 我这就回旗舰。 
 }
 Smuggler_OnShore_dialog_6 {
-别生气啊，我就去港务局把多余的船卖了，马上就回来。
+别生气啊， 我就去港务局把多余的船卖了， 马上就回来。 
 }
 Smuggler_OnShore_dialog_7 {
-唉，没能耍个小聪明……
+唉， 没能耍个小聪明…… 
 }
 Smuggler_OnShore_dialog_8_m {
-没错，老子就是倔！
+没错， 我就是倔！ 
 }
 Smuggler_OnShore_dialog_8_f {
-没错，我就是倔！
+没错， 我就是倔！ 
 }
 Smuggler_OnShore_dialog_9_m {
-没人告诉你别开这么显眼的破船来吗？你干脆带几艘战列舰一块儿来得了！赶紧滚，换艘小点的船再来。
+没人告诉你别开这么显眼的破船来吗？ 你干脆带几艘战列舰一块儿来得了！ 赶紧滚， 换艘小点的船再来。 
 }
 Smuggler_OnShore_dialog_9_f {
-没人跟你说过别开这么显眼的破船过来吗？你干脆带几艘战列舰一块来得了！赶紧滚，换艘小点的船再来。
+没人跟你说过别开这么显眼的破船过来吗？ 你干脆带几艘战列舰一块来得了！ 赶紧滚， 换艘小点的船再来。 
 }
 Smuggler_OnShore_dialog_10_m {
-你最好赶紧走，不然我们就亲自把你交给巡逻队。
+你最好赶紧走， 不然我们就亲自把你交给巡逻队。 
 }
 Smuggler_OnShore_dialog_10_f {
-你最好赶紧走，不然我们就亲自把你交给巡逻队。
+你最好赶紧走， 不然我们就亲自把你交给巡逻队。 
 }
 Smuggler_OnShore_dialog_11 {
-快点，上船，赶紧走。
+快点， 上船， 赶紧走。 
 }
 Smuggler_OnShore_dialog_12_m {
-你真把我折腾够呛……
+你真把我折腾够呛…… 
 }
 Smuggler_OnShore_dialog_12_f {
-你真让我累得不行……
+你真让我累得不行…… 
 }
 Smuggler_OnShore_dialog_13_m {
-行行行，俺这就去换船。
+行行行， 我这就去换船。 
 }
 Smuggler_OnShore_dialog_13_f {
-行行行，俺这就去换船。
+行行行， 我这就去换船。 
 }
 Smuggler_OnShore_dialog_14 {
-别生气啊，我很快就走——一只脚还在这，另一只已经迈出去了。
+别生气啊， 我很快就走——一只脚还在这， 另一只已经迈出去了。 
 }
 Smuggler_OnShore_dialog_15 {
-唉，没能耍个小聪明……
+唉， 没能耍个小聪明…… 
 }
 Smuggler_OnShore_dialog_16_m {
-没错，老子就是倔！
+没错， 我就是倔！ 
 }
 Smuggler_OnShore_dialog_16_f {
-没错，我就是倔！
+没错， 我就是倔！ 
 }
 Smuggler_OnShore_dialog_17_m {
-喂，你在这儿干嘛呢，伙计？
+喂， 你在这儿干嘛呢， 伙计？ 
 }
 Smuggler_OnShore_dialog_17_f {
-喂，姑娘，你怎么在这儿？
+喂， 姑娘， 你怎么在这儿？ 
 }
 Smuggler_OnShore_dialog_18 {
-@<RandSwear> 你来这儿干嘛？！
+@<RandSwear>你来这儿干嘛？ ！ 
 }
 Smuggler_OnShore_dialog_19 {
 @<RandPhraseSimple>
 }
 Smuggler_OnShore_dialog_20_m {
-放心吧，伙计，货我带来了！
+放心吧， 伙计， 货我带来了！ 
 }
 Smuggler_OnShore_dialog_20_f {
-别紧张，小子，货我带来了！
+别紧张， 小子， 货我带来了！ 
 }
 Smuggler_OnShore_dialog_21_m {
-看啥呢？货俺都带来了！
+看什么呢？ 货我都带来了！ 
 }
 Smuggler_OnShore_dialog_21_f {
-看啥呢？货俺都带来了！
+看什么呢？ 货我都带来了！ 
 }
 Smuggler_OnShore_dialog_22 {
 @<RandPhraseSimple>
 }
 Smuggler_OnShore_dialog_23 {
-我是奉总督@<XI_ConvertString>的命令来的！现在命令你们放下武器，跟我走——你们被逮捕了！
+我是奉@<XI_ConvertString>市长的命令来的！ 现在命令你们放下武器， 跟我走——你们被逮捕了！ 
 }
 Smuggler_OnShore_dialog_24 {
-哈，总算来了！你可让我们等了好久。走吧，咱们要起航了。
+哈， 总算来了！ 你可让我们等了好久。 走吧， 咱们要起航了。 
 }
 Smuggler_OnShore_dialog_25 {
-快点，这里到处都是巡逻队，咱们得赶紧离开！
+快点， 这里到处都是巡逻队， 咱们得赶紧离开！ 
 }
 Smuggler_OnShore_dialog_26 {
 @<RandPhraseSimple>
 }
 Smuggler_OnShore_dialog_27 {
-我是奉总督@<XI_ConvertString>的命令来的！现在命令你们放下武器，跟我走——你们被逮捕了！
+我是奉@<XI_ConvertString>市长的命令来的！ 现在命令你们放下武器， 跟我走——你们被逮捕了！ 
 }
 Smuggler_OnShore_dialog_28_m {
-你又是谁啊？咱们说好只带一个乘客，可不是一群人。
+你又是谁啊？ 咱们说好只带一个乘客， 可不是一群人。 
 }
 Smuggler_OnShore_dialog_28_f {
-你又是谁啊？我们说好只带一个乘客，可不是一群人。
+你又是谁啊？ 我们说好只带一个乘客， 可不是一群人。 
 }
 Smuggler_OnShore_dialog_29 {
-糟了……
+糟了…… 
 }
 Smuggler_OnShore_dialog_30 {
-你是谁？我们说好的是送个乘客，不是送个船长。
+你是谁？ 我们说好的是送个乘客， 不是送个船长。 
 }
 Smuggler_OnShore_dialog_31 {
-滚！把你的船处理掉再回来。
+滚！ 把你的船处理掉再回来。 
 }
 Smuggler_OnShore_dialog_32 {
 @<RandPhraseSimple>
 }
 Smuggler_OnShore_dialog_33 {
-哎，见鬼……
+哎， 见鬼…… 
 }
 Smuggler_OnShore_dialog_34 {
-巡逻队！你不认识我们，我们也不认识你。
+巡逻队！ 你不认识我们， 我们也不认识你。 
 }
 Smuggler_OnShore_dialog_35 {
-得了吧……
+得了吧…… 
 }
 Smuggler_OnShore_dialog_36 {
-多谢帮忙，我们不会忘记的。我们这就出发。
+多谢帮忙， 我们不会忘记的。 我们这就出发。 
 }
 Smuggler_OnShore_dialog_37_m {
-干得漂亮！你打得很勇猛。走吧。
+干得漂亮！ 你打得很勇猛。 走吧。 
 }
 Smuggler_OnShore_dialog_37_f {
-干得漂亮！你打得真棒。走吧。
+干得漂亮！ 你打得真棒。 走吧。 
 }
 Smuggler_OnShore_dialog_38 {
 @<RandPhraseSimple>
 }
 Smuggler_OnShore_dialog_39 {
-我这就去。
+我这就去。 
 }
 Smuggler_OnShore_dialog_40 {
-谢谢你的帮忙，我们一定不会忘记！
+谢谢你的帮忙， 我们一定不会忘记！ 
 }
 Smuggler_OnShore_dialog_41_m {
-打得真痛快！多谢你帮忙，伙计！
+打得真痛快！ 多谢你帮忙， 伙计！ 
 }
 Smuggler_OnShore_dialog_41_f {
-真是场精彩的战斗！多谢你再次帮忙，伙计！
+真是场精彩的战斗！ 多谢你再次帮忙， 伙计！ 
 }
 Smuggler_OnShore_dialog_42 {
-随时可能还有士兵过来，所以……你懂我的意思吧？
+随时可能还有士兵过来， 所以…… 你懂我的意思吧？ 
 }
 Smuggler_OnShore_dialog_43 {
-这么快就要走了吗？真可惜……
+这么快就要走了吗？ 真可惜…… 
 }
 Smuggler_OnShore_dialog_44 {
-不用谢！
+不用谢！ 
 }
 Smuggler_OnShore_dialog_45_m {
-当然，能帮上忙我很高兴。
+当然， 能帮上忙我很高兴。 
 }
 Smuggler_OnShore_dialog_45_f {
-当然，能帮上忙我很高兴。
+当然， 能帮上忙我很高兴。 
 }
 Smuggler_OnShore_dialog_46 {
-我大概明白了……
+我大概明白了…… 
 }
 Smuggler_OnShore_dialog_47 {
-我走了，我走了。
+我走了， 我走了。 
 }
 Smuggler_OnShore_dialog_48 {
-要不要老子给你开膛，笑面虎？
+要不要我给你开膛， 笑面虎？ 
 }
 Smuggler_OnShore_dialog_49 {
-@<RandSwear> 巡逻队！咱们互不相识！
+@<RandSwear>巡逻队！ 咱们互不相识！ 
 }
 Smuggler_OnShore_dialog_50 {
-没错！
+没错！ 
 }
 Smuggler_OnShore_dialog_51 {
-你想干嘛？
+你想干嘛？ 
 }
 Smuggler_OnShore_dialog_52 {
 我这就走
@@ -206,119 +206,119 @@ Smuggler_OnShore_dialog_53 {
 来做笔交易吧
 }
 Smuggler_OnShore_dialog_54 {
-老子正琢磨着，要不要现在就把你开膛？
+我正琢磨着， 要不要现在就把你开膛？ 
 }
 Smuggler_OnShore_dialog_55 {
-你会被自己的话噎死的，混账！
+你会被自己的话噎死的， 混账！ 
 }
 Smuggler_OnShore_dialog_56 {
-好！上吧！
+好！ 上吧！ 
 }
 Smuggler_OnShore_dialog_57 {
-你背着走呢？你的船呢？
+你背着走呢？ 你的船呢？ 
 }
 Smuggler_OnShore_dialog_58_m {
-一开始，我只是想确认这里没有什么猫腻。
+一开始， 我只是想确认这里没有什么猫腻。 
 }
 Smuggler_OnShore_dialog_58_f {
-我先得确认这里没什么陷阱。
+我先得确认这里没什么陷阱。 
 }
 Smuggler_OnShore_dialog_59_m {
-俺不想拿船冒险，还是得自己先亲眼看看才放心。
+我不想拿船冒险， 还是得自己先亲眼看看才放心。 
 }
 Smuggler_OnShore_dialog_59_f {
-我不想拿船冒险，还是先亲自看看比较好。
+我不想拿船冒险， 还是先亲自看看比较好。 
 }
 Smuggler_OnShore_dialog_60 {
 @<RandPhraseSimple>
 }
 Smuggler_OnShore_dialog_61 {
-交易取消！
+交易取消！ 
 }
 Smuggler_OnShore_dialog_62 {
-我们是老实人，不靠骗人过活。把你的船开过来，不过得小心点，别让海岸巡逻队跟上了。
+我们是老实人， 不靠骗人过活。 把你的船开过来， 不过得小心点， 别让海岸巡逻队跟上了。 
 }
 Smuggler_OnShore_dialog_63 {
-好，你就在这儿等我。
+好， 你就在这儿等我。 
 }
 Smuggler_OnShore_dialog_64 {
-听说了吗？前阵子巡逻队刚在海湾突袭了走私贩。你猜怎么着？那个正给本地买家卸货的船长竟然溜了！他那帮手下可不是善茬——直接把整个巡逻队全干掉了。本地人也全都消失得无影无踪。最后，海湾里只剩下一堆尸体——没有货，没有藏匿点，一个走私贩都没抓到。瞧瞧这些家伙生意做得多干净利落！
+听说了吗？ 前阵子巡逻队刚在海湾突袭了走私贩。 你猜怎么着？ 那个正给本地买家卸货的船长竟然溜了！ 他那帮手下可不是善茬——直接把整个巡逻队全干掉了。 本地人也全都消失得无影无踪。 最后， 海湾里只剩下一堆尸体——没有货， 没有藏匿点， 一个走私贩都没抓到。 瞧瞧这些家伙生意做得多干净利落！ 
 }
 Smuggler_OnShore_dialog_65 {
-取消了？你逗我呢？
+取消了？ 你逗我呢？ 
 }
 Smuggler_OnShore_dialog_66 {
-非常认真。
+非常认真。 
 }
 Smuggler_OnShore_dialog_67 {
-行吧，咱们这次也算做成了不错的买卖。
+行吧， 咱们这次也算做成了不错的买卖。 
 }
 Smuggler_OnShore_dialog_68 {
-没错！
+没错！ 
 }
 Smuggler_OnShore_dialog_69_m {
-你这混蛋！别想这么耍我们！你会为此掉脑袋的！
+你这混蛋！ 别想这么耍我们！ 你会为此掉脑袋的！ 
 }
 Smuggler_OnShore_dialog_69_f {
-臭家伙！你以为能骗得了我们？拿命来赔吧！
+臭家伙！ 你以为能骗得了我们？ 拿命来赔吧！ 
 }
 Smuggler_OnShore_dialog_70 {
-这可不太可能！
+这可不太可能！ 
 }
 Smuggler_OnShore_dialog_71 {
-你休想得逞！
+你休想得逞！ 
 }
 Smuggler_OnShore_dialog_72 {
-哪凉快哪待着去，臭狗们！
+哪凉快哪待着去， 臭狗们！ 
 }
 Smuggler_OnShore_dialog_73 {
-你会后悔的！
+你会后悔的！ 
 }
 Smuggler_OnShore_dialog_74 {
-哟，这可有意思！
+哟， 这可有意思！ 
 }
 Smuggler_OnShore_dialog_75 {
-你敢这么坑我们，老子要你付出代价！
+你敢这么坑我们， 我要你付出代价！ 
 }
 Smuggler_OnShore_dialog_76 {
-那你们就都得死。我的命令很明确——只要有人反抗，一个活口都不留！
+那你们就都得死。 我的命令很明确——只要有人反抗， 一个活口都不留！ 
 }
 Smuggler_OnShore_dialog_77 {
-哟哟……你这货，俺们就不客气了，白拿了。估计你也不敢去找官府告状吧。
+哟哟…… 你这货， 我们就不客气了， 白拿了。 估计你也不敢去找官府告状吧。 
 }
 Smuggler_OnShore_dialog_78 {
-那就试试看吧！
+那就试试看吧！ 
 }
 Smuggler_OnShore_dialog_79 {
-我当然不会跑！要是跑了，老子还不得被当成杀人犯关进牢里……呃，你们这儿到底有多少倒霉蛋啊？
+我当然不会跑！ 要是跑了， 我还不得被当成杀人犯关进牢里…… 呃， 你们这儿到底有多少倒霉蛋啊？ 
 }
 Smuggler_OnShore_dialog_80 {
 @<RandPhraseSimple>
 }
 Smuggler_OnShore_dialog_81_m {
-所以，你想卖什么货？
+所以， 你想卖什么货？ 
 }
 Smuggler_OnShore_dialog_81_f {
-那你想卖什么货？
+那你想卖什么货？ 
 }
 Smuggler_OnShore_dialog_82 {
-来吧，让俺看看你那儿有什么。
+来吧， 让我看看你那儿有什么。 
 }
 Smuggler_OnShore_dialog_83 {
 @<RandPhraseSimple>
 }
 Smuggler_OnShore_dialog_84 {
-好，那咱们看看。
+好， 那咱们看看。 
 }
 Smuggler_OnShore_dialog_85_m {
-我想我改主意了。
+我想我改主意了。 
 }
 Smuggler_OnShore_dialog_85_f {
-我想我还是改变主意了。
+我想我还是改变主意了。 
 }
 Smuggler_OnShore_dialog_86 {
-没戏是吧？你安排了见面，现在就一句“没戏”？赶紧滚吧。以后我们还要不要跟你打交道都难说！
+没戏是吧？ 你安排了见面， 现在就一句“没戏”？ 赶紧滚吧。 以后我们还要不要跟你打交道都难说！ 
 }
 Smuggler_OnShore_dialog_87 {
-先看看老子愿不愿意搭理你！
+先看看我愿不愿意搭理你！ 
 }

@@ -1223,13 +1223,19 @@ Common_Usurer_359 {
 Du willst, dass ich diese Person finde? Warum glaubst du, dass sie noch in der Stadt ist?
 }
 Common_Usurer_360 {
-Er ist in der Stadt, das versichere ich Ihnen. Heute ist kein Schiff ausgelaufen. Und als Belohnung bekommen Sie 10 %%, das sind 3.000 Piaster. Was meinen Sie?
+Er ist in der Stadt, das versichere ich Ihnen. Heute ist noch kein Schiff ausgelaufen. Und als Belohnung erhalten Sie 10%%, also 3.000 Piaster. In Anbetracht Ihrer Lage... bin ich bereit, Ihnen bis morgen Abend Zeit zu geben. Danach werde ich Kopfgeldjäger anheuern. Was sagen Sie dazu?
 }
 Common_Usurer_361 {
 Weißt du, ich glaube, ich werde dir helfen.
 }
 Common_Usurer_362 {
 Verlass dich nicht auf mich.
+}
+Common_Usurer_362_1 {
+Ausgezeichnet. In Anbetracht Ihrer Lage bin ich bereit, bis morgen Abend zu warten. Aber, Doktor, bitte versuchen Sie nicht, mich zu täuschen: Ein einziges Wort an den Colonel genügt mir...
+}
+Common_Usurer_362_2 {
+Genug. Meine Freiheit habe ich verloren, aber nicht mein Gewissen.
 }
 Common_Usurer_363 {
 Na, hast du es geschafft?

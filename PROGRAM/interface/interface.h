@@ -1,4 +1,4 @@
-#define INTERFACE_QUANTITY				50
+#define INTERFACE_QUANTITY				52
 
 #define INTERFACE_STORE					0
 #define INTERFACE_SHIPYARD				1
@@ -54,6 +54,8 @@
 #define INTERFACE_REPAIR				47 // Интерфейс починки в бухте
 #define INTERFACE_ALCHEMY				48 // Интерфейс мультиобъектов
 #define INTERFACE_TUTORIAL				49	// Интерфейс обучения
+#define INTERFACE_NPC_DIALOG			50	// Диалог НПС с НПС
+#define INTERFACE_SHIP_REPAIR			51	// интерфейс ремонта кораблей в лагере буканьеров на Тортуге
 #define RC_INTERFACE_DO_NOTHING			-1
 
 // main menu exit codes
@@ -115,6 +117,8 @@
 #define RC_INTERFACE_TUTORIAL					45045	// Интерфейс обучения
 
 #define RC_INTERFACE_TO_ALCHEMY					45046	// Обратно в интерфейс мультиобъектов
+#define RC_INTERFACE_NPC_DIALOG			    	45047	// Диалог НПС с НПС
+#define RC_INTERFACE_SHIP_REPAIR				45048	// интерфейс ремонта кораблей в лагере буканьеров на Тортуге
 
 #define MAX_SAVE_STORE_BLOCKS	160
 

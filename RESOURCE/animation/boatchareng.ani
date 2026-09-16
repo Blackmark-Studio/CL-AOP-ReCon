@@ -1,0 +1,126 @@
+animation = boatcharspa.an
+
+[idle_1]
+	speed = 1.
+	loop = false
+	type = normal
+	start_time = 0
+	end_time = 96
+	data = "Blend time", "0.2"		; sec
+	
+	data = "Probability", "0.5"
+
+[idle_2]
+	speed = 1.
+	loop = false
+	type = normal
+	start_time = 0
+	end_time = 96
+	data = "Blend time", "0.2"		; sec
+	
+	data = "Probability", "0.5"
+
+[idle_3]
+	speed = 1.
+	loop = false
+	type = normal
+	start_time = 0
+	end_time = 96
+	data = "Blend time", "0.2"		; sec
+	
+	data = "Probability", "0.5"
+
+[idle_4]
+	speed = 1.
+	loop = false
+	type = normal
+	start_time = 0
+	end_time = 96
+	data = "Blend time", "0.2"		; sec
+	
+	data = "Probability", "0.5"
+
+[idle_5]
+	speed = 1.
+	loop = false
+	type = normal
+	start_time = 0
+	end_time = 96
+	data = "Blend time", "0.2"		; sec
+	
+	data = "Probability", "0.5"
+
+[idle_6]
+	speed = 1.
+	loop = false
+	type = normal
+	start_time = 0
+	end_time = 96
+	data = "Blend time", "0.2"		; sec
+	
+	data = "Probability", "0.5"
+
+[idle_7]
+	speed = 1.
+	loop = false
+	type = normal
+	start_time = 0
+	end_time = 96
+	data = "Blend time", "0.2"		; sec
+	
+	data = "Probability", "0.5"
+
+[idle_8]
+	speed = 1.
+	loop = false
+	type = normal
+	start_time = 0
+	end_time = 96
+	data = "Blend time", "0.2"		; sec
+	
+	data = "Probability", "0.5"
+
+[idle_9]
+	speed = 1.
+	loop = false
+	type = normal
+	start_time = 0
+	end_time = 96
+	data = "Blend time", "0.2"		; sec
+	
+	data = "Probability", "0.5"
+
+[idle_10]
+	speed = 1.
+	loop = false
+	type = normal
+	start_time = 0
+	end_time = 96
+	data = "Blend time", "0.2"		; sec
+	
+	data = "Probability", "0.5"
+
+[run]
+start_time = 0
+end_time = 96
+speed = 1.8
+data = "Walk speed", "1.9"		; m/sec
+data = "Turn speed", "5.5"		; rad/sec
+
+[walk]
+start_time = 0
+end_time = 96
+speed = 1.8
+data = "Walk speed", "1.9"		; m/sec
+data = "Turn speed", "5.5"		; rad/sec
+
+[swim]
+start_time = 0
+end_time = 96
+
+speed = 1.8
+
+data = "Walk speed", "1.9"          ; m/sec
+data = "Turn speed", "5.5"          ; rad/sec
+
+event = "swim", 4285, normal

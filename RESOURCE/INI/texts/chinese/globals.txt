@@ -1,94 +1,112 @@
-CARDS_RULE {规则很简单。二十一点。36张牌，从6到A。A算11分，K算4分，骑士（马）算3分，士兵（步兵）算2分，其余按牌面点数计算。你的目标是拿到21分。\n点击牌堆可再抽一张牌。每张牌都是一注。点击右上角头像结束回合。想要玩，至少要有三注的钱。按Esc或点击叉号退出。}
+CARDS_RULE {规则很简单。 二十一点。 36张牌， 从6到A。 A算11分， 国王（K）算4分， 骑士（Q）算3分， 步兵（J）算2分， 其余按牌面点数计算。 你的目标是拿到21分。 \n点击牌堆可再抽一张牌。 每张牌都是一次筹码。 点击右上角头像结束回合。 想要玩， 至少要有三筹码的钱。 按Esc或点击叉号退出。 }
 DICE_RULE
 {
-骰子游戏。每人五颗骰子。你可以重掷全部或任意骰子，但每颗骰子只能重掷一次，每颗骰子都需要下注。目标是获得最高分数。
-组合有：对子（2）、两对（2+2）、三条（3）、葫芦（3+2）、四条（4）、顺子（连续点数）、和五条（5）。
-点击骰盅投掷，点击骰子可重掷该骰子，点击头像结束回合（如果你不需要重掷或没有足够的钱）。
+骰子游戏。 每人五颗骰子。 你可以重掷全部或任意骰子， 但每颗骰子只能重掷一次， 每颗骰子都需要下注。 目标是获得最高分数。 
+组合有： 一对（2）、 两对（2+2）、 三条（3）、 葫芦（3+2）、 四条（4）、 顺子（连续点数）、 和五条（5）。 
+点击骰盅投掷， 点击骰子可重掷该骰子， 点击头像结束回合（如果你不需要重掷或没有足够的钱）。 
 }
 Address_Form_Spa {先生}
 Address_Form_Fra {先生}
 Address_Form_Eng {先生}
 Address_Form_Por {先生}
-Address_Form_Hol {明赫尔}
+Address_Form_Hol {先生}
 Address_Form_Pir {先生}
+
 Address_Form_SpaWoman {小姐}
 Address_Form_FraWoman {小姐}
-Address_Form_EngWoman {未命中}
-Address_Form_HolWoman {梅夫劳}
-Address_Form_PirWoman {未命中}
-Address_Form_SpaWoman2 {塞尼奥拉}
+Address_Form_EngWoman {小姐}
+Address_Form_HolWoman {小姐}
+Address_Form_PirWoman {小姐}
+Address_Form_PorWoman {小姐}
+
+Address_Form_SpaWoman2 {夫人}
 Address_Form_FraWoman2 {夫人}
 Address_Form_EngWoman2 {夫人}
 Address_Form_HolWoman2 {夫人}
 Address_Form_PirWoman2 {夫人}
+Address_Form_PorWoman2 {夫人}
+
 BaronTitle {男爵}
 BaronWomanTitle {女男爵}
-Officer_Attack {军官们，进攻！}
-Officer_Follow {各位军官，跟我来！}
-Officer_Stay {军官们，站住！}
-Potion_Not_Found {未找到药水！}
+
+Officer_Attack {军官们， 进攻！ }
+Officer_Follow {军官们， 跟我来！ }
+Officer_Stay {军官们， 站住！ }
+
+Potion_Not_Found {未找到药水！ }
 Used_Antidote {已使用解毒剂}
 No_Search_Anyone {没有可搜刮的对象}
+
 Address_Form_Spa_Title1 {私掠船长}
-Address_Form_Fra_Title1 {海盗}
+Address_Form_Fra_Title1 {私掠船长}
 Address_Form_Eng_Title1 {私掠船长}
-Address_Form_Hol_Title1 {自由私掠者}
-Address_Form_Pir_Title1 {布卡尼尔}
+Address_Form_Hol_Title1 {私掠船长}
+Address_Form_Pir_Title1 {海盗}
+
 Address_Form_Spa_Title2 {中尉}
 Address_Form_Fra_Title2 {中尉}
 Address_Form_Eng_Title2 {中尉}
 Address_Form_Hol_Title2 {中尉}
 Address_Form_Pir_Title2 {海狼}
-Address_Form_Spa_Title3 {船长}
-Address_Form_Fra_Title3 {船长}
-Address_Form_Eng_Title3 {船长}
-Address_Form_Hol_Title3 {船长}
+
+Address_Form_Spa_Title3 {上尉}
+Address_Form_Fra_Title3 {上尉}
+Address_Form_Eng_Title3 {上尉}
+Address_Form_Hol_Title3 {上尉}
 Address_Form_Pir_Title3 {老兵}
-Address_Form_Spa_Title4 {准将}
-Address_Form_Fra_Title4 {准将}
-Address_Form_Eng_Title4 {准将}
-Address_Form_Hol_Title4 {准将}
+
+Address_Form_Spa_Title4 {海军中将}
+Address_Form_Fra_Title4 {海军中将}
+Address_Form_Eng_Title4 {海军中将}
+Address_Form_Hol_Title4 {海军中将}
 Address_Form_Pir_Title4 {勋爵}
+
 Address_Form_Spa_Title5 {海军上将}
 Address_Form_Fra_Title5 {海军上将}
 Address_Form_Eng_Title5 {海军上将}
 Address_Form_Hol_Title5 {海军上将}
 Address_Form_Pir_Title5 {传奇}
-NationKingsName_Spa {天主教国王卡洛斯二世}
-NationKingsName_Fra {路易十四至高无上的基督教国王}
-NationKingsName_Eng {查理二世陛下}
-NationKingsName_Hol {执政威廉三世}
-NationKingsName_Por {胜利者阿方索六世}
-NationKingsName_Pir {海岸兄弟会}
+
+NationKingsName_Spa {天主教陛下卡洛斯二世.哈布斯堡}
+NationKingsName_Fra {笃信基督陛下路易十四}
+NationKingsName_Eng {陛下查理二世.斯图亚特}
+NationKingsName_Hol {执政官威廉三世}
+NationKingsName_Por {胜利王阿方索六世}
+NationKingsName_Pir {海岸同盟}
+
 NationKingsCrown_Spa {西班牙王室}
 NationKingsCrown_Fra {法国王室}
-NationKingsCrown_Eng {英格兰王位}
+NationKingsCrown_Eng {英格兰王座}
 NationKingsCrown_Hol {七省联合共和国}
 NationKingsCrown_Por {葡萄牙王室}
-NationKingsCrown_Pir {海岸兄弟会}
-Swear_1 {见鬼！}
-Swear_2 {该死！}
-Swear_3 {该死！}
-Swear_4 {该死！}
-Swear_5 {我的肝都要炸了！}
-Swear_6 {一千条鲨鱼！}
-Swear_7 {啊！！！}
-Swear_8 {我的天哪！}
-Swear_9 {见鬼！}
-Swear_10 {我的天！}
-Swear_11 {该死，真倒霉！}
-Swear_12 {糟了……}
-Swear_13 {见鬼！}
-Swear_14 {见鬼了！}
-Swear_15 {见鬼！}
-Exclamation_1 {天啊！！}
-Exclamation_2 {天哪！}
-Exclamation_3 {圣母玛利亚！}
+NationKingsCrown_Pir {海岸同盟}
+
+Swear_1 {哎呀！ }
+Swear_2 {该死！ }
+Swear_3 {见鬼！ }
+Swear_4 {该死的！ }
+Swear_5 {肝都要炸了！ }
+Swear_6 {一千条鲨鱼！ }
+Swear_7 {啊！ ！ ！ }
+Swear_8 {我的天哪！ }
+Swear_9 {见鬼！ }
+Swear_10 {我的天！ }
+Swear_11 {该死， 真倒霉！ }
+Swear_12 {噢， 糟了…… }
+Swear_13 {见鬼！ }
+Swear_14 {什么鬼！ }
+Swear_15 {一千个魔鬼！ }
+
+Exclamation_1 {噢，天啊！ ！ }
+Exclamation_2 {噢，我的上帝！ }
+Exclamation_3 {圣母玛利亚！ }
+
 MorningGreeting {早安}
-DayGreeting {您好}
+DayGreeting {日安}
 EveningGreeting {晚上好}
 NightGreeting {晚安}
 TimeGreeting {晚上好}
-rat_spoiled {破坏了}
-rat_damaged {受损}
-rat_destroyed {已摧毁}
+
+rat_spoiled {咬掉了}
+rat_damaged {咬坏了}
+rat_destroyed {损坏了}

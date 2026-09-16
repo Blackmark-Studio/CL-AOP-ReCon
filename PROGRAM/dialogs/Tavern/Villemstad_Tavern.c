@@ -15,6 +15,15 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 						StringFromKey("Villemstad_Tavern_7"),
 						StringFromKey("Villemstad_Tavern_8"), npchar, Dialog.CurrentNode);
 			link.l1.go = "exit";
+			// ==> Эммануэль Пардаль: Портниха знатной дамы
+			if(CheckAttribute(pchar, "questTemp.EPL_PZD_taverna"))
+			{
+				DeleteAttribute(pchar, "questTemp.EPL_PZD_taverna");
+				link.l1 = StringFromKey("Villemstad_Tavern_138");
+				link.l1.go = "EPL_PZD_taverna_1";
+				break;
+			}
+			// <== Эммануэль Пардаль: Портниха знатной дамы
 			if (pchar.questTemp.Slavetrader == "EscapeSlave_Villemstad")
 			{
 				link.l1 = StringFromKey("Villemstad_Tavern_9", pchar);
@@ -75,17 +84,17 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 			}
 			// <== Проверяем поле состояния квестов.
 			//ОЗГ, Хален
-			if (pchar.questTemp.Headhunter == "hunt_halen")
+			if (CheckAttrValue(pchar, "questTemp.Headhunter", "hunt_halen"))
 			{
 				link.l1 = StringFromKey("Villemstad_Tavern_28");
 				link.l1.go = "Halen_tavern_1";
 			}
-			if (pchar.questTemp.Headhunter == "halen_still")
+			if (CheckAttrValue(pchar, "questTemp.Headhunter", "halen_still"))
 			{
 				link.l1 = StringFromKey("Villemstad_Tavern_29");
 				link.l1.go = "Halen_tavern_1_1";
 			}
-			if (pchar.questTemp.Headhunter == "halen_wait")
+			if (CheckAttrValue(pchar, "questTemp.Headhunter", "halen_wait"))
 			{
 				link.l1 = StringFromKey("Villemstad_Tavern_30");
 				link.l1.go = "Halen_tavern_6_6";
@@ -427,6 +436,21 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 			RemoveLandQuestMark_Main(npchar, "Headhunt");
 			DialogExit();
 		break;
+		
+		// ==> Эммануэль Пардаль: Портниха знатной дамы
+		case "EPL_PZD_taverna_1":
+    		dialog.text = StringFromKey("Villemstad_Tavern_139");
+    		link.l1 = StringFromKey("Villemstad_Tavern_140");
+    		link.l1.go = "EPL_PZD_taverna_2";
+			RemoveLandQuestmark_Main(CharacterFromID("Villemstad_tavernkeeper"), "EPL_PZD");
+ 		break;
+		
+		case "EPL_PZD_taverna_2":
+    		dialog.text = StringFromKey("Villemstad_Tavern_141");
+			link.l1 = StringFromKey("Villemstad_Tavern_142");
+    		link.l1.go = "exit";
+ 		break;
+		// <== Эммануэль Пардаль: Портниха знатной дамы
 	}
 	UnloadSegment(NPChar.FileDialog2);  // если где-то выход внутри switch  по return не забыть сделать анлод
 }

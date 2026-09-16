@@ -2416,3 +2416,10 @@ Não tenho certeza sobre a receita, mas não encontramos nada com ele além dest
 Officer_Common_656 {
 Vamos ver o que tem lá.
 }
+
+Officer_Common_657 {
+Capitão, vamos primeiro terminar o que começamos. Depois eu vou embora, se você quiser.
+}
+Officer_Common_658 {
+Está bem. Primeiro vamos terminar o que começamos.
+}

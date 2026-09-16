@@ -2504,7 +2504,7 @@ int LocationInitMartinique(int n)
 	locations[n].image = "loading\inside\sklad.tga";
 	locations[n].MustSetReloadBack = true;
 	//Town sack
-	locations[n].townsack = "Providencia";
+	locations[n].townsack = "LeFransua";
 	locations[n].lockWeather = "Inside";
 	//Sound
 	locations[n].type = "house";

@@ -83,17 +83,8 @@ void wdmCreateMap(float x, float z, float ay)
 	//Координаты острова с которого уплыли
 	float zeroX = MakeFloat(worldMap.zeroX);
 	float zeroZ = MakeFloat(worldMap.zeroZ);
-	float ShipX, ShipZ;
-	//Находим новыве координаты на карте
-	int scale = WDM_MAP_TO_SEA_SCALE;
-	if (worldMap.island == "Cuba1" || worldMap.island == "Cuba2" || worldMap.island == "Beliz" || worldMap.island == "SantaCatalina" 
-		|| worldMap.island == "PortoBello" || worldMap.island == "Cartahena" || worldMap.island == "Maracaibo"
-		|| worldMap.island == "Caracas" || worldMap.island == "Cumana")
-	{
-		scale = 25;
-	}
-	shipX = (x/scale) + zeroX;
-	shipZ = (z/scale) + zeroZ;
+	//Находим новые координаты на карте (масштаб острова - через общий GetSeaToMapScale)
+	int scale = GetSeaToMapScale();
 	worldMap.playerShipX = (x/scale) + zeroX;
 	worldMap.playerShipZ = (z/scale) + zeroZ;
 	worldMap.playerShipAY = ay;
@@ -111,8 +102,82 @@ void wdmTimeUpdate()
 	//QuestsTimeCheck();
 	// boal -->
 	QuestsCheck();
-	PostEvent("EventTimeUpdate", 5000);
+
+	if (isEntity(&worldMap) && worldMap.isLoaded == "true")
+	{
+		PostEvent("EventTimeUpdate", 5000);
+	}
 	// boal <--
+}
+
+// метка по координатам (ле Баск)
+int AoP_MapMarkAnimTick = 0;
+
+// метка по координатам (ле Баск)
+void AoP_AddMapMarkByCoords(string sMarkID, float x, float z)
+{
+	if (sMarkID == "") return;
+
+	TEV.AoPCoordMapMarks.(sMarkID).x = x;
+	TEV.AoPCoordMapMarks.(sMarkID).z = z;
+
+	if (IsEntity(&worldMap)) AoP_UpdateMapMarksByCoords();
+}
+
+// метка по координатам (ле Баск)
+void AoP_RemoveMapMarkByCoords(string sMarkID)
+{
+	if (sMarkID == "") return;
+	if (CheckAttribute(&TEV, "AoPCoordMapMarks." + sMarkID)) DeleteAttribute(&TEV, "AoPCoordMapMarks." + sMarkID);
+
+	if (IsEntity(&worldMap)) AoP_UpdateMapMarksByCoords();
+}
+
+// метка по координатам (ле Баск)
+void AoP_UpdateMapMarksByCoords()
+{
+	if (!IsEntity(&worldMap)) return;
+
+	int iLine = 0;
+	float fPlayerX = stf(worldMap.playerShipX);
+	float fPlayerZ = stf(worldMap.playerShipZ);
+
+	// метка по координатам (ле Баск)
+	AoP_MapMarkAnimTick++;
+	if (AoP_MapMarkAnimTick >= 64) AoP_MapMarkAnimTick = 0;
+	int iFrame = AoP_MapMarkAnimTick / 8;
+	string sFrame = "" + iFrame;
+
+	if (CheckAttribute(&TEV, "AoPCoordMapMarks"))
+	{
+		aref arMarks;
+		makearef(arMarks, TEV.AoPCoordMapMarks);
+		int iMarksNum = GetAttributesNum(arMarks);
+
+		for (int i = 0; i < iMarksNum; i++)
+		{
+			if (iLine >= 8) break;
+
+			aref arMark = GetAttributeN(arMarks, i);
+			if (!CheckAttribute(arMark, "x")) continue;
+			if (!CheckAttribute(arMark, "z")) continue;
+
+			float fOffX = stf(arMark.x) - fPlayerX;
+			float fOffZ = stf(arMark.z) - fPlayerZ;
+
+			// метка по координатам (ле Баск)
+			wdmSetShipText("", iLine, sFrame, "AOP_MAP_QUESTMARK", 1.0, argb(255, 255, 255, 255),
+				0.0, 0.0, fOffX, 6.0, fOffZ, 0, 0);
+
+			iLine++;
+		}
+	}
+
+	for (int n = iLine; n < 8; n++)
+	{
+		wdmSetShipText("", n, "", "AOP_MAP_QUESTMARK", 1.0, argb(255, 255, 255, 255),
+			0.0, 0.0, 0.0, 0.0, 0.0, 0, 0);
+	}
 }
 
 void wdmCreateWorldMap()
@@ -137,6 +202,7 @@ void wdmCreateWorldMap()
 	//Создаём карту
 	CreateEntity(&worldMap,"worldmap");
 	worldMap.isLoaded = "true";
+	AoP_KeysLagoonPunitiveEnsureEncounter();
 	//Обновляем параметры
 	worldMap.update = "";
 	//Фейдер
@@ -166,6 +232,8 @@ void wdmCreateWorldMap()
 	wdmEvent_ShipRadiusUpdate();
 	// ставим обработчик
 	SetEventHandler("frame", "CheckMapCoordinateQuest", 0);
+	// > накладывание эффектов на кораблики
+	wdmApplyAllShipFX();
 }
 
 // Hokkins: инициализируем все текстурки и тексты на глобалке в зависимости от скейлинга -->
@@ -216,13 +284,6 @@ void wdmCreateWindInterface()
 	worldMap.frame.height = 390 * fHtRatio;
 	worldMap.frame.color = argb(255, 255, 255, 255);
 
-	// TODO New UI by Maksim
-	worldMap.windText.font = "interface_normal";
-	worldMap.windText.scale = 0.0 * fHtRatio;
-	worldMap.windText.color = argb(255,255,255,255);
-	worldMap.windText.pos.x = sti(showWindow.right) - makeint(42.0 * fHtRatio);
-	worldMap.windText.pos.y = sti(showWindow.top) + makeint(127.0 * fHtRatio);
-	
 	worldMap.dateText.font = "interface_normal";
 	worldMap.dateText.scale = 1.2 * fHtRatio;
 	worldMap.dateText.color = argb(255, 255, 255, 255);
@@ -301,17 +362,9 @@ void wdmRemoveOldEncounters()
 
 float wdmGetDays(int year, int month, int day, int hour)
 {
-	//Считаем дни по годам
-	if(year < 0) year = 0;
-	if(year > 3000) year = 3000;
-	year = year*365;
-	//Считаем целые дни
-	for(int i = 1; i < month; i++)
-	{
-		day = day + GetMonthDays(i, year);
-	}
-	//Считаем полные дни
-	float days = year + day + (hour/24.0);
+	Restrictor(&year, 0, 3000);
+	// > Точный день с учётом високосных лет
+	float days = makefloat(DateToEpochDays(year, month, day)) + (hour / 24.0);
 	return days;
 }
 
@@ -454,6 +507,82 @@ bool FindWorldmapPlayerShipModelFile(string modelFileName)
 	}
 	
 	return true;
+}
+
+// > ВСЕ РЕСУРСЫ НУЖНО КЛАСТЬ В:
+// "RESOURCE\MODELS\WorldMap\<тут_или_далее_в_любой_папке>" - 3d-модели "*.gm"
+// "RESOURCE\Textures\WorldMap\<тут_или_далее_в_любой_папке>" - текстуры
+
+// > Спрайт (camera-facing billboard) на любом кораблике на глобалке
+// > shipName = "" - игрок; иначе имя энкаунтера (worldMap.encounter.id)
+// > size - полуразмер квада; yOffset - высота над корабликом; color - ARGB
+// > пустой texturePath снимает спрайт
+void wdmSetShipSprite(string shipName, string texturePath, float size, float yOffset, int color)
+{
+	if (IsEntity(&worldMap))
+		SendMessage(&worldMap, "lssffl", MSG_WORLDMAP_SHIP_ATTACH_SPRITE, shipName, texturePath, size, yOffset, color);
+}
+
+// > Доп. 3d-модель ("*.gm" из RESOURCE\MODELS\WorldMap) на любом кораблике на глобалке, движется за корпусом
+// > shipName = "" - игрок; иначе имя энкаунтера (worldMap.encounter.id)
+// > gmName - имя "*.gm" (без расширения)
+// > offX/offY/offZ - смещение в локале корабля
+// > angleY - доп. поворот модели вокруг вертикали (радианы)
+// > пустой gmName убирает доп. 3d-модель
+void wdmSetShipModel(string shipName, string gmName, float offX, float offY, float offZ, float angleY)
+{
+	if (IsEntity(&worldMap))
+		SendMessage(&worldMap, "lssffff", MSG_WORLDMAP_SHIP_ATTACH_MODEL, shipName, gmName, offX, offY, offZ, angleY);
+}
+
+// > Партикл-эффект (billboard-эмиттер, "клон шторма") на любом кораблике на глобалке, следует за моделькой
+// > shipName - "" - игрок; иначе имя энкаунтера (worldMap.encounter.id)
+// > size - базовый размер частицы
+// > yOffset - высота эмиттера над корабликом
+// > color - ARGB (альфа = базовая непрозрачность, частицы гаснут по времени жизни)
+// > пустой texturePath снимает эффект
+void wdmSetShipParticle(string shipName, string texturePath, float size, float yOffset, int color)
+{
+	if (IsEntity(&worldMap))
+		SendMessage(&worldMap, "lssffl", MSG_WORLDMAP_SHIP_ATTACH_PARTICLE, shipName, texturePath, size, yOffset, color);
+}
+
+// > Анимация вращения прикреплённого спрайта на любом кораблике.
+// mode: 0 = выкл, 1 = зациклено (бесконечно), 2 = периодически (крутится 'duration' секунд, затем останавливается).
+// timeBase: 0 = реальные секунды (скорость не зависит от скорости течения игрового времени), 1 = игровые секунды (зависит).
+// speed - радиан/сек.
+// Повторный вызов с mode = 2 перезапускает периодический прогон.
+void wdmSetShipSpriteRotate(string shipName, int mode, float speed, float duration, int timeBase)
+{
+	if (IsEntity(&worldMap))
+		SendMessage(&worldMap, "lslffl", MSG_WORLDMAP_SHIP_SPRITE_ROTATE, shipName, mode, speed, duration, timeBase);
+}
+
+// > Анимация вращения прикреплённой модели на любом кораблике.
+// shipName = "" - игрок; иначе имя энкаунтера (worldMap.encounter.id).
+// parts: 1 = A (вращение самой модели вокруг оси axisA), 2 = B (прокрутка UV-текстуры), 3 = A и B одновременно.
+// mode: 0 = выкл, 1 = зациклено, 2 = периодически (duration секунд, затем стоп).
+// timeBase: 0 = реальные секунды, 1 = игровые секунды. speedA/speedB - радиан/сек. axisA: 0 = X, 1 = Y, 2 = Z.
+void wdmSetShipModelRotate(string shipName, int parts, int mode, int timeBase, float duration, float speedA, int axisA, float speedB)
+{
+	if (IsEntity(&worldMap))
+		SendMessage(&worldMap, "lslllfflf", MSG_WORLDMAP_SHIP_MODEL_ROTATE, shipName, parts, mode, timeBase, duration, speedA, axisA, speedB);
+}
+
+// > Текст над любым корабликом на глобальной карте. До 8 строк (lineIndex 0-7), каждая со своими параметрами.
+// shipName = "" - игрок; иначе имя энкаунтера (worldMap.encounter.id).
+// lineIndex - номер строки 0-7. Пустой text удаляет эту строку (когда строк не осталось - объект сам исчезает).
+// fontName - имя шрифта (как в fonts.ini); size - масштаб шрифта; color - ARGB.
+// fadeOut/fadeIn - мерцание в реальных секундах (0,0 = без мерцания; не ускоряется от изменения скорости игрового времени).
+// offX/offY/offZ - смещение точки привязки в мире относительно кораблика.
+// mode: 0 = 2D-надпись (постоянный экранный размер, всегда читаемо), 1 = 3D-текст (масштаб по перспективе, мельчает с расстоянием).
+// shipFade - как строка реагирует на затухание самого кораблика:
+//   0 = плавно гаснет и проявляется вместе с корабликом;
+//   1 = без плавности: пока кораблик виден - чёткая, как только он ушёл за предел видимости (значение worldMap.enemyshipViewDistMax) - пропадает сразу, и так же сразу возвращается чёткой, когда кораблик снова попадает в зону видимости.
+void wdmSetShipText(string shipName, int lineIndex, string text, string fontName, float size, int color, float fadeOut, float fadeIn, float offX, float offY, float offZ, int mode, int shipFade)
+{
+	if (IsEntity(&worldMap))
+		SendMessage(&worldMap, "lslssflfffffll", MSG_WORLDMAP_SHIP_SET_TEXT, shipName, lineIndex, text, fontName, size, color, fadeOut, fadeIn, offX, offY, offZ, mode, shipFade);
 }
 
 // Радиус взаимодействия игрока с энкаунтерами

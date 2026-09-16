@@ -23,6 +23,7 @@ void ProcessDialogEvent()
 
 	string iDay, iMonth, lastspeak_date;
 	string sTemp, sTitle;
+	bool bChurch1Offered = false;
 
 	iDay = environment.date.day;
 	iMonth = environment.date.month;
@@ -1021,12 +1022,13 @@ void ProcessDialogEvent()
 							StringFromKey("Common_church_247")));
 				link.l1.go = "GenQuest_Church_1_Start_1";
 				NPChar.GenQuest.ChurchQuest_1.GiveQuestDateParam = iMonth; // Предлагает квест не чаще раза в месяц
+				bChurch1Offered = true; // > чтобы ниже не затереть текст предложения квеста
 			}
 			else
 			{
 				NPChar.GenQuest.ChurchQuest_1.GiveQuestDay = lastspeak_date;    // Если не дал сегодня, то токо на след день.
 			}
-			dialog.text = StringFromKey("Common_church_249", pchar);
+			if (!bChurch1Offered) dialog.text = StringFromKey("Common_church_249", pchar); // > было безусловно - текст Common_church_244 никогда не показывался
 			link.l2 = StringFromKey("Common_church_250");
 			link.l2.go = "exit";
 			DeleteAttribute(npchar, "quest.add");
@@ -1066,6 +1068,7 @@ void ProcessDialogEvent()
 			PChar.GenQuest.ChurchQuest_1.PriestName = NPChar.name;
 			PChar.GenQuest.ChurchQuest_1.Nation = sti(NPChar.nation);
 			PChar.GenQuest.ChurchQuest_1.AskOwner = true;
+			SetFunctionTimerCondition("Church_GenQuest1_Timer", 0, 0, 60, false); // > провал по таймауту (60 дней)
 			sQuestTitle = NPChar.City + "ChurchGenQuest1";
 			ReOpenQuestHeader(sQuestTitle);
 			AddQuestRecordEx(sQuestTitle, "ChurchGenQuest1", "1");
@@ -1255,7 +1258,8 @@ void ProcessDialogEvent()
 			// Трем кэпа
 			if (GetCharacterIndex("ChurchGenQuest1_Cap") != -1) characters[GetCharacterIndex("ChurchGenQuest1_Cap")].LifeDay = 0;
 			Group_DeleteGroup("ChurchGenQuest1_CapGroup");
-			PChar.Quest.Church_GenQuest1_ChangeCapitanLocation.over = true; // Завершаем, если вдруг осталось
+			PChar.Quest.Church_GenQuest1_ChangeCapitanLocation.over = "yes";
+			PChar.Quest.Church_GenQuest1_Timer.over = "yes"; // > снять таймер провала при успешной сдаче
 			AddQuestRecordEx(sQuestTitle, "ChurchGenQuest1", "7");
 			AddQuestUserData(sQuestTitle, "sSex", GetSexPhrase("", "а"));
 			AddQuestUserData(sQuestTitle, "sColony", XI_ConvertString("Colony" + NPChar.City + "Gen"));
@@ -1892,11 +1896,11 @@ void ChurchGenQuest2_RemoveCup()
 void Church_GenQuest1_InitStartParam(ref chr)
 {
 	string sColony = SelectNotEnemyColony(chr);
-	//string sColony = FindNonEnemyColonyForAdventure(GetCityNation(PChar.GenQuest.ChurchQuest_1.QuestTown), PChar.GenQuest.ChurchQuest_1.QuestTown, true);
+	if (sColony == "none") sColony = SelectAnyColony(chr.city);
 	PChar.GenQuest.ChurchQuest_1.IslandId = colonies[FindColony(PChar.GenQuest.ChurchQuest_1.QuestTown)].Island;
 	PChar.GenQuest.ChurchQuest_1.ToColony = sColony;
-	PChar.GenQuest.ChurchQuest_1.ToIsland = colonies[FindColony(sColony)].Island;
-	PChar.GenQuest.ChurchQuest_1.ToName = characters[GetCharacterIndex(sColony + "_Priest")].Name;
+	if (FindColony(sColony) != -1) PChar.GenQuest.ChurchQuest_1.ToIsland = colonies[FindColony(sColony)].Island;
+	if (GetCharacterIndex(sColony + "_Priest") != -1) PChar.GenQuest.ChurchQuest_1.ToName = characters[GetCharacterIndex(sColony + "_Priest")].Name;
 
 	// Чтоб жизнь медом не казалась... Какие сцены будут в квесте, определяем в самом начале.
 	int iRand = Rand(2);

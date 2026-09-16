@@ -76,5 +76,6 @@ go_portman {Port Authority}
 go_doctor {Doctor}
 go_fenix {Phoenix Platform}
 go_diffIndoor {Flute Diffindoor}
+go_outpost {Outpost}
 
 worldmap_sea {Exit to Sea}

@@ -1,257 +1,257 @@
 Common_citizen_1_m {
-听说这城就是你说了算的，@<GetAddress_Form>。
+听说这城就是你说了算的， @<GetAddress_Form>。 
 }
 Common_citizen_1_f {
-听说这城是你的地盘，@<GetAddress_Form>。
+听说这城是你的地盘， @<GetAddress_Form>。 
 }
 Common_citizen_2_m {
-真是意外的相遇，连总督都亲自来问我问题了。
+真是意外啊， 连市长大人都亲自来问我问题。 
 }
 Common_citizen_2_f {
-真是意外啊，连总督大人都亲自来问我问题。
+真是意外啊， 连市长大人都亲自来问我问题。 
 }
 Common_citizen_3 {
 @<RandPhraseSimple>
 }
 Common_citizen_4_m {
-我改主意了，祝你好运！
+我改主意了， 祝你好运！ 
 }
 Common_citizen_4_f {
-我改变主意了，祝你好运！
+我改变主意了， 祝你好运！ 
 }
 Common_citizen_5 {
-就是随便在镇上转转。再见。
+就是随便在镇上转转。 再见。 
 }
 Common_citizen_6 {
 @<RandPhraseSimple>
 }
 Common_citizen_7 {
-我有个问题想问你。
+我有个问题想问你。 
 }
 Common_citizen_8 {
-我要点消息。
+我要点消息。 
 }
 Common_citizen_9 {
 @<RandPhraseSimple>
 }
 Common_citizen_10 {
-我想谈谈钱的事。
+我想谈谈钱的事。 
 }
 Common_citizen_11 {
-关于钱的事……
+关于钱的事…… 
 }
 Common_citizen_12 {
 @<RandPhraseSimple>
 }
 Common_citizen_13 {
-你想干嘛？快走开。
+你想干嘛？ 快走开。 
 }
 Common_citizen_14 {
-别挡道，快滚。
+别挡道， 快滚。 
 }
 Common_citizen_15 {
 @<RandPhraseSimple>
 }
 Common_citizen_16 {
-你知道吗？闭嘴！
+你知道吗？ 闭嘴！ 
 }
 Common_citizen_17 {
-消消气，不然老子马上给你泼冷水！
+消消气， 不然我马上给你泼冷水！ 
 }
 Common_citizen_18 {
 @<RandPhraseSimple>
 }
 Common_citizen_19 {
-我想问你点事。
+我想问你点事。 
 }
 Common_citizen_20 {
-打扰一下，只问你一个问题。
+打扰一下， 只问你一个问题。 
 }
 Common_citizen_21 {
 @<RandPhraseSimple>
 }
 Common_citizen_22 {
-我想谈谈钱的事。
+我想谈谈钱的事。 
 }
 Common_citizen_23 {
-关于钱的事……
+关于钱的事…… 
 }
 Common_citizen_24 {
 @<RandPhraseSimple>
 }
 Common_citizen_25 {
-您好，@<GetAddress_Form>。看得出来您是自己船的船长。我有件事想请您帮个忙……
+您好， @<GetAddress_Form>。 看得出来您是自己船的船长。 我有件事想请您帮个忙…… 
 }
 Common_citizen_26 {
-我听着呢，@<GetAddress_FormToNPC>。你来找俺有啥事？
+我听着呢， @<GetAddress_FormToNPC>。 你来找我有什么事？ 
 }
 Common_citizen_27 {
-不好意思，@<GetAddress_FormToNPC>，我现在真的很赶时间。
+不好意思， @<GetAddress_FormToNPC>， 我现在真的很赶时间。 
 }
 Common_citizen_28 {
 我叫
 }
 Common_citizen_29 {
-我的名字
+我的名字是
 }
 Common_citizen_30 {
 你可以叫我
 }
 Common_citizen_31 {
-你想干嘛？
+你想干嘛？ 
 }
 Common_citizen_32_mm {
-以前没见过你，你是谁？
+我以前没见过你， 你是谁？ 
 }
 Common_citizen_32_fm {
-以前没见过你，你是谁？
+我以前没见过你， 你是谁？ 
 }
 Common_citizen_32_mf {
-以前没见过你，你是谁？
+我以前没见过你， 你是谁？ 
 }
 Common_citizen_32_ff {
-以前没见过你，你是谁？
+我以前没见过你， 你是谁？ 
 }
 Common_citizen_33 {
-你是谁，找俺有啥事？
+你是谁， 找我有什么事？ 
 }
 Common_citizen_34 {
-@<LinkRandPhrase> @<GetFullName>。@<LinkRandPhrase>
+@<LinkRandPhrase>@<GetFullName>。 @<LinkRandPhrase>
 }
 Common_citizen_35 {
-您好，@<GetAddress_Form>。我叫@<GetFullName>。请问您怎么称呼？
+您好， @<GetAddress_Form>。 我叫@<GetFullName>。 请问您怎么称呼？ 
 }
 Common_citizen_36 {
-你好，@<GetAddress_Form>！我是@<GetFullName>。方便告诉我你的名字吗？
+你好， @<GetAddress_Form>！ 我是@<GetFullName>。 方便告诉我你的名字吗？ 
 }
 Common_citizen_37 {
-嗯，@<GetAddress_Form>，你找俺有啥事？对了，俺叫@<GetFullName>，你呢？
+嗯， @<GetAddress_Form>， 你找我有什么事？ 对了， 我叫@<GetFullName>， 你呢？ 
 }
 Common_citizen_38 {
 @<LinkRandPhrase>
 }
 Common_citizen_39 {
-我的天！
+我的天！ 
 }
 Common_citizen_40 {
-见鬼了！
+见鬼了！ 
 }
 Common_citizen_41 {
-让你一无所有！
+让你一无所有！ 
 }
 Common_citizen_42_m {
-你这家伙，难道没听说过俺吗？
+你这家伙， 难道没听说过我吗？ 
 }
 Common_citizen_42_f {
-你没听说过俺吗？
+你没听说过我吗？ 
 }
 Common_citizen_43_m {
-还有这片海域最臭名昭著的海盗！
+还有这片海域最臭名昭著的海盗！ 
 }
 Common_citizen_43_f {
-还有这片海域最有名的女海盗！
+还有这片海域最有名的女海盗！ 
 }
 Common_citizen_44 {
-要是我说谎，就让我当场沉下去！
+要是我说谎， 就让我当场沉下去！ 
 }
 Common_citizen_45 {
-@<LinkRandPhrase> 没错，俺就是船长 @<GetFullName>@<LinkRandPhrase>
+@<LinkRandPhrase>没错， 我就是@<GetFullName>船长@<LinkRandPhrase>
 }
 Common_citizen_46 {
-我是@<GetFullName>，船长。
+我是@<GetFullName>， 船长。 
 }
 Common_citizen_47 {
-我叫@<GetFullName>。
+我叫@<GetFullName>。 
 }
 Common_citizen_48 {
-你可以叫我Captain @<GetFullName>。
+你可以叫我@<GetFullName>船长。 
 }
 Common_citizen_49 {
 @<LinkRandPhrase>
 }
 Common_citizen_50 {
-船长，能帮我个忙吗？
+船长， 能帮我个忙吗？ 
 }
 Common_citizen_51 {
-不好意思，没空，赶时间。
+不好意思， 没空， 赶时间。 
 }
 Common_citizen_52 {
-不好意思，俺有事，走不开……
+不好意思， 我有事， 走不开…… 
 }
 Common_citizen_53 {
-不行，我现在有很多重要的事要忙。
+不行， 我现在有很多重要的事要忙。 
 }
 Common_citizen_54 {
 @<LinkRandPhrase>
 }
 Common_citizen_55 {
-当然，怎么了？
+当然， 怎么了？ 
 }
 Common_citizen_56 {
-行，我帮你。说说到底怎么回事……
+行， 我帮你。 说说到底怎么回事…… 
 }
 Common_citizen_57 {
-跟我详细说说这事……
+跟我详细说说这事…… 
 }
 Common_citizen_58 {
 @<LinkRandPhrase>
 }
 Common_citizen_59 {
-是，Captain，我听着呢。
+是， 船长， 我听着呢。 
 }
 Common_citizen_60_m {
-@<NPChar>，我找到你的结婚戒指了。
+@<NPChar>， 我找到你的结婚戒指了。 
 }
 Common_citizen_60_f {
-@<NPChar>，我找到你的结婚戒指了。
+@<NPChar>， 我找到你的结婚戒指了。 
 }
 Common_citizen_61_m {
-想打听一下这个小镇的情况！
+想打听一下这个小镇的情况！ 
 }
 Common_citizen_61_f {
-想了解一下这个小镇！
+想了解一下这个小镇！ 
 }
 Common_citizen_62_m {
-想问你点关于这个城镇的事。
+想问你点关于这个城镇的事。 
 }
 Common_citizen_62_f {
-我想问问关于这个城镇的事。
+我想问问关于这个城镇的事。 
 }
 Common_citizen_63 {
-我有个问题想问你。
+我有个问题想问你。 
 }
 Common_citizen_64 {
-我要情报。
+我要情报。 
 }
 Common_citizen_65 {
 @<RandPhraseSimple>
 }
 Common_citizen_66 {
-我想谈谈钱的事。
+我想谈谈钱的事。 
 }
 Common_citizen_67 {
-关于钱的事……
+关于钱的事…… 
 }
 Common_citizen_68 {
 @<RandPhraseSimple>
 }
 Common_citizen_69 {
-等等，别动！快告诉我你是谁！
+等等， 别动！ 快告诉我你是谁！ 
 }
 Common_citizen_70 {
-，等一下！
+， 等一下！ 
 }
 Common_citizen_71 {
-等等，先别走！咱们得聊聊！
+等等， 先别走！ 咱们得聊聊！ 
 }
 Common_citizen_72 {
-我是奉总督之命在找敌方间谍@<XI_ConvertString>！
+我是奉市长之命在找@<XI_ConvertString>的敌方间谍！ 
 }
 Common_citizen_73 {
-我是奉总督之命，为@<XI_ConvertString>城的利益办事。正在城里搜查敌方间谍。
+我是奉市长之命， 为@<XI_ConvertString>城的利益办事。 正在城里搜查敌方间谍。 
 }
 Common_citizen_74 {
-本地总督@<GetCharacterIndex>急着要查出城里的间谍……
+本地市长@<GetCharacterIndex>急着要查出城里的间谍…… 
 }
 Common_citizen_75_m {
 男人@<LinkRandPhrase>@<LinkRandPhrase>
@@ -269,313 +269,313 @@ Common_citizen_78 {
 你知道那事吗
 }
 Common_citizen_79 {
-@<LinkRandPhrase>，你听说最近本地教堂被偷了吗？
+@<LinkRandPhrase>， 你听说最近本地教堂被偷了吗？ 
 }
 Common_citizen_80_m {
-啊，是你啊，@<GetFullName>，这老家伙
+啊， 是你啊， @<GetFullName>， 这老家伙
 }
 Common_citizen_80_f {
-啊，是你啊，@<GetFullName>，这大胆的姑娘。
+啊， 是你啊， @<GetFullName>， 这大胆的姑娘。 
 }
 Common_citizen_81_m {
-见到你真高兴，老朋友@<Pchar>
+见到你真高兴， 老朋友@<Pchar>
 }
 Common_citizen_81_f {
-见到你真高兴，美女@<Pchar>
+见到你真高兴， 美女@<Pchar>
 }
 Common_citizen_82_m {
-哟，这不是船长@<GetFullName>本人嘛。
+哟， 这不是@<GetFullName>船长本人嘛。 
 }
 Common_citizen_82_f {
-哟，这不是@<GetFullName>本人吗
+哟， 这不是@<GetFullName>本人吗
 }
 Common_citizen_83 {
-我还以为你早就不在人世了！
+我还以为你早就不在人世了！ 
 }
 Common_citizen_84_m {
-估计还是老样子，喝醉了。
+估计还是老样子， 喝醉了。 
 }
 Common_citizen_84_f {
-估计已经有点醉意了。
+估计已经有点醉意了。 
 }
 Common_citizen_85 {
-而且，看起来你还自由着呢！
+而且， 看起来你还自由着呢！ 
 }
 Common_citizen_86 {
-说吧，你想要啥？
+说吧， 你想要什么？ 
 }
 Common_citizen_87 {
-这回你又想干嘛？
+这回你又想干嘛？ 
 }
 Common_citizen_88 {
-你又没事来烦我？
+你又没事来烦我？ 
 }
 Common_citizen_89 {
-@<LinkRandPhrase>。@<LinkRandPhrase> @<LinkRandPhrase>
+@<LinkRandPhrase>。 @<LinkRandPhrase>@<LinkRandPhrase>
 }
 Common_citizen_90 {
-@<TimeGreeting>，船长
+@<TimeGreeting>， 船长
 }
 Common_citizen_91 {
-你好，@<GetAddress_Form>
+你好， @<GetAddress_Form>
 }
 Common_citizen_92 {
-你好，船长
+你好， 船长
 }
 Common_citizen_93_m {
-像您这样体面的人，能从俺这儿想要啥呢？
+像你这样体面的人， 究竟想从我这里得到什么呢？ 
 }
 Common_citizen_93_f {
-像你这么大胆的姑娘，找俺有啥事啊？
+像你这样大胆的小姑娘， 想从我这里得到什么呢？ 
 }
 Common_citizen_94 {
-你来干什么？
+你来干什么？ 
 }
 Common_citizen_95 {
-这次你想打听啥？
+这次你想打听什么？ 
 }
 Common_citizen_96 {
-@<LinkRandPhrase>@<GetFullName>。@<LinkRandPhrase>
+@<LinkRandPhrase>@<GetFullName>。 @<LinkRandPhrase>
 }
 Common_citizen_97 {
-你好，船长
+你好， 船长
 }
 Common_citizen_98 {
-你好，啊，原来是你@<GetAddress_Form>
+你好， 啊， 原来是你@<GetAddress_Form>
 }
 Common_citizen_99 {
-哎，船长
+哎， 船长
 }
 Common_citizen_100_m {
-我还以为咱们不会再见了，
+我还以为咱们不会再见了， 
 }
 Common_citizen_100_f {
-我还以为咱们再也不会碰面了，
+我还以为咱们再也不会碰面了， 
 }
 Common_citizen_101_m {
-，说实话我可没多高兴见到你，不过
+， 说实话我可没多高兴见到你， 不过
 }
 Common_citizen_101_f {
-，说实话我可没多高兴见到你，不过
+， 说实话我可没多高兴见到你， 不过
 }
 Common_citizen_102 {
-哟，看来你还活着啊——真可惜，是吧？
+哟， 看来你还活着啊——真可惜， 是吧？ 
 }
 Common_citizen_103 {
-你想干嘛？
+你想干嘛？ 
 }
 Common_citizen_104 {
-你来干什么？
+你来干什么？ 
 }
 Common_citizen_105_m {
-有什么需要俺帮忙的吗？
+有什么需要我帮忙的吗？ 
 }
 Common_citizen_105_f {
-有什么需要我帮忙的吗？
+有什么需要我帮忙的吗？ 
 }
 Common_citizen_106 {
-@<LinkRandPhrase> @<GetFullName>@<LinkRandPhrase> @<LinkRandPhrase>
+@<LinkRandPhrase>@<GetFullName>@<LinkRandPhrase>@<LinkRandPhrase>
 }
 Common_citizen_107 {
-@<TimeGreeting>，@<GetFullName>船长，有什么需要帮忙的吗？
+@<TimeGreeting>， @<GetFullName>船长， 有什么需要帮忙的吗？ 
 }
 Common_citizen_108_m {
-哟，这不是Captain @<GetFullName>本人嘛！这次想打听点啥？
+哟， 这不是@<GetFullName>船长本人嘛！ 这次想打听点什么？ 
 }
 Common_citizen_108_f {
-哟，这不是Captain @<GetFullName>本人嘛！这次怎么来了？
+哟， 这不是@<GetFullName>船长本人嘛！ 这次怎么来了？ 
 }
 Common_citizen_109 {
-你好，@<GetAddress_Form> @<Pchar>。你找俺有事吗？
+你好， @<PChar>@<GetAddress_Form>。 你找我有事吗？ 
 }
 Common_citizen_110 {
 @<LinkRandPhrase>
 }
 Common_citizen_111 {
-你肯定是听错了，我先走了。
+你肯定是听错了， 我先走了。 
 }
 Common_citizen_112_m {
-没啥事，正准备去酒馆。
+没什么事， 正准备去酒馆。 
 }
 Common_citizen_112_f {
-没事，我正好要去酒馆。
+没事， 我正好要去酒馆。 
 }
 Common_citizen_113 {
 @<RandPhraseSimple>
 }
 Common_citizen_114 {
-行吧，算了。祝你好运！
+行吧， 算了。 祝你好运！ 
 }
 Common_citizen_115 {
-就在镇上随便看看。再见。
+就在镇上随便看看。 再见。 
 }
 Common_citizen_116 {
 @<RandPhraseSimple>
 }
 Common_citizen_117 {
-你当俺是情报员啊？俺哪知道。完全没头绪。
+你当我是情报员啊？ 我哪知道。 完全没头绪。 
 }
 Common_citizen_118 {
-真是个傻瓜！再见。
+真是个傻瓜！ 再见。 
 }
 Common_citizen_119 {
-那我再问一个问题。
+那我再问一个问题。 
 }
 Common_citizen_120 {
-你想去哪儿？
+你想去哪儿？ 
 }
 Common_citizen_121 {
-行，说吧。
+行， 说吧。 
 }
 Common_citizen_122 {
-@<TEV>? 我觉得我能带你去那儿。
+@<TEV>? 我觉得我能带你去那儿。 
 }
 Common_citizen_123 {
-对对，俺就是要去那儿。
+对对， 我就是要去那儿。 
 }
 Common_citizen_124 {
-不，你误会我的意思了。
+不， 你误会我的意思了。 
 }
 Common_citizen_125_m {
-我改主意了，得走了。
+我改主意了， 得走了。 
 }
 Common_citizen_125_f {
-我改主意了，我得走了。
+我改主意了， 我得走了。 
 }
 Common_citizen_126 {
-恐怕咱们镇上没有我知道的这个地方。
+恐怕咱们镇上没有我知道的这个地方。 
 }
 Common_citizen_127 {
-明白了，那我换种说法……
+明白了， 那我换种说法…… 
 }
 Common_citizen_128 {
-那我再问一个问题。
+那我再问一个问题。 
 }
 Common_citizen_129 {
-祝你一切顺利，我得走了。
+祝你一切顺利， 我得走了。 
 }
 Common_citizen_130 {
-跟我来。
+跟我来。 
 }
 Common_citizen_131 {
-行。
+行。 
 }
 Common_citizen_132 {
-我们到了。不过@<TEV>现在关门，要到早上六点才开。
+我们到了。 不过@<TEV>现在关门， 要到早上六点才开。 
 }
 Common_citizen_133 {
-挺扎心的。
+挺扎心的。 
 }
 Common_citizen_134 {
-那我再问一个问题。
+那我再问一个问题。 
 }
 Common_citizen_135 {
-我就不往前走了，你沿着这条路一直走，就能到种植园。
+我就不往前走了， 你沿着这条路一直走， 就能到种植园。 
 }
 Common_citizen_136 {
-我们到了。@<TEV>就在你面前。
+我们到了。 @<TEV>就在你面前。 
 }
 Common_citizen_137 {
-谢谢！
+谢谢！ 
 }
 Common_citizen_138 {
-等等，我还有个问题。
+等等， 我还有个问题。 
 }
 Common_citizen_139 {
-什么问题？
+什么问题？ 
 }
 Common_citizen_140 {
-这些文件里的名字，你有印象吗？
+这些文件里的名字， 你有印象吗？ 
 }
 Common_citizen_141 {
-俺对那些稀奇古怪的文件没兴趣，反正也不识字。去找放贷的吧，听说他连鬼画符都认得。
+我对那些稀奇古怪的文件没兴趣， 反正也不识字。 去找放贷人吧， 听说他连鬼画符都认得。 
 }
 Common_citizen_142 {
-我真不知道你在说啥，@<GetFullName>船长，你去问问其他镇上的人吧。
+我真不知道你在说什么， @<GetFullName>船长， 你去问问其他镇上的人吧。 
 }
 Common_citizen_143 {
-我也不太清楚怎么帮你，Captain @<GetFullName>。你可以去问问放债人，也许他知道点什么？
+我也不太清楚怎么帮你， @<GetFullName>船长。 你可以去问问放贷人， 也许他知道点什么？ 
 }
 Common_citizen_144 {
 @<LinkRandPhrase>
 }
 Common_citizen_145 {
-我很乐意听你的建议！
+我很乐意听你的建议！ 
 }
 Common_citizen_146 {
-你没骗我吧，@<GetFullName>船长？
+你没骗我吧， @<GetFullName>船长？ 
 }
 Common_citizen_147 {
-那又怎样，@<PChar>?
+那又怎样， @<PChar>?
 }
 Common_citizen_148 {
-@<GetFullName>，我会记住你的。
+@<GetFullName>， 我会记住你的。 
 }
 Common_citizen_149 {
-@<LinkRandPhrase> 现在说吧，你想要啥？
+@<LinkRandPhrase>现在说吧， 你想要什么？ 
 }
 Common_citizen_150 {
-很高兴见到你，@<PChar>船长
+很高兴见到你， @<PChar>船长
 }
 Common_citizen_151_m {
-很高兴认识你，@<GetAddress_Form> @<PChar>
+很高兴认识你， @<PChar>@<GetAddress_Form>
 }
 Common_citizen_151_f {
-很高兴认识你，@<GetAddress_Form> @<PChar>
+很高兴认识你， @<PChar>@<GetAddress_Form>
 }
 Common_citizen_152 {
-很高兴见到你，@<PChar>船长
+很高兴见到你， @<PChar>船长
 }
 Common_citizen_153 {
-@<LinkRandPhrase>。不过我猜你可不是单纯想知道俺的名字吧？
+@<LinkRandPhrase>。 不过我猜你可不是单纯想知道我的名字吧？ 
 }
 Common_citizen_154_m {
-想打听一下这个小镇的情况！
+想打听一下这个小镇的情况！ 
 }
 Common_citizen_154_f {
-想打听一下这个小镇的情况！
+想打听一下这个小镇的情况！ 
 }
 Common_citizen_155_m {
-想问你几个关于这个城镇的事。
+想问你几个关于这个城镇的事。 
 }
 Common_citizen_155_f {
-我想问问关于这个城镇的事。
+我想问问关于这个城镇的事。 
 }
 Common_citizen_156 {
-我有个问题想问你。
+我有个问题想问你。 
 }
 Common_citizen_157 {
-我要点消息。
+我要点消息。 
 }
 Common_citizen_158 {
 @<RandPhraseSimple>
 }
 Common_citizen_159 {
-我想谈谈钱的事。
+我想谈谈钱的事。 
 }
 Common_citizen_160 {
-关于钱的事……
+关于钱的事…… 
 }
 Common_citizen_161 {
 @<RandPhraseSimple>
 }
 Common_citizen_162 {
-，别动！快告诉我你是谁！
+， 别动！ 快告诉我你是谁！ 
 }
 Common_citizen_163 {
-，等一下！
+， 等一下！ 
 }
 Common_citizen_164 {
-，先别走！咱们得谈谈！
+， 先别走！ 咱们得谈谈！ 
 }
 Common_citizen_165 {
-俺是奉总督的命令在找敌方间谍，@<XI_ConvertString>！
+我是奉市长的命令在找敌方间谍， @<XI_ConvertString>！ 
 }
 Common_citizen_166 {
-我是奉总督之命，为了@<XI_ConvertString>城的利益行事。正在城里搜查敌方间谍。
+我是奉市长之命， 为了@<XI_ConvertString>城的利益行事。 正在城里搜查敌方间谍。 
 }
 Common_citizen_167 {
-本地总督 @<GetCharacterIndex> 急着要查出城里的间谍……
+本地市长 @<GetCharacterIndex>急着要查出城里的间谍…… 
 }
 Common_citizen_168_m {
 男人@<LinkRandPhrase>@<LinkRandPhrase>
@@ -593,428 +593,483 @@ Common_citizen_171 {
 你知道那事吗
 }
 Common_citizen_172 {
-@<LinkRandPhrase>，你听说最近本地教堂被偷了吗？
+@<LinkRandPhrase>， 你听说最近本地教堂被偷了吗？ 
 }
 Common_citizen_173 {
-你肯定听错了，我走了。
+你肯定听错了， 我走了。 
 }
 Common_citizen_174_m {
-没啥事——就是去酒馆。
+没什么事——就是去酒馆。 
 }
 Common_citizen_174_f {
-没事，我正好要去酒馆。
+没事， 我正好要去酒馆。 
 }
 Common_citizen_175 {
 @<RandPhraseSimple>
 }
 Common_citizen_176 {
-行吧，算了。祝你好运！
+行吧， 算了。 祝你好运！ 
 }
 Common_citizen_177 {
-就在镇上随便看看。再见。
+就在镇上随便看看。 再见。 
 }
 Common_citizen_178 {
 @<RandPhraseSimple>
 }
 Common_citizen_179_m {
-哎呀，见到你就跟见到酒一样高兴，有啥想问的尽管说吧。
+哎呀， 见到你就跟见到酒一样高兴， 有什么想问的尽管说吧。 
 }
 Common_citizen_179_f {
-哎呀，见到你我跟喝上一杯一样高兴，有啥想问的尽管说。
+哎呀， 见到你我跟喝上一杯一样高兴， 有什么想问的尽管说。 
 }
 Common_citizen_180 {
-想聊天吗，船长？俺也喜欢……尤其是一杯朗姆酒下肚的时候。
+想聊天吗， 船长？ 我也喜欢…… 尤其是一杯朗姆酒下肚的时候。 
 }
 Common_citizen_181 {
-嗯，@<PChar>？
+嗯， @<PChar>？ 
 }
 Common_citizen_182 {
 @<LinkRandPhrase>
 }
 Common_citizen_183 {
-那你还想要啥？
+那你还想要什么？ 
 }
 Common_citizen_184_m {
-明白了，Captain @<PChar>，你现在想聊聊吗？
+明白了， @<pchar>船长， 你现在想聊聊吗？ 
 }
 Common_citizen_184_f {
-明白了，Captain @<PChar>，你这会儿想聊聊吗，女猎手？
+明白了， @<pchar>船长， 你这会儿想聊聊吗， 女猎手？ 
 }
 Common_citizen_185_m {
-你这问题问得老子头都大了，Captain，来点朗姆酒不是更好吗？
+你这问题问得我头都大了， 船长， 来点朗姆酒不是更好吗？ 
 }
 Common_citizen_185_f {
-你这问题问得老子头都大了，Captain，倒不如请俺喝点朗姆酒。
+你这问题问得我头都大了， 船长， 倒不如请我喝点朗姆酒。 
 }
 Common_citizen_186 {
 @<LinkRandPhrase>
 }
 Common_citizen_187 {
-你想问啥，@<GetAddress_Form>?
+你想问什么， @<GetAddress_Form>?
 }
 Common_citizen_188 {
-我在听，captain。
+我在听， 船长。 
 }
 Common_citizen_189 {
-我得走了，有啥快问吧，Captain。
+我得走了， 有什么快问吧， 船长。 
 }
 Common_citizen_190 {
 @<LinkRandPhrase>
 }
 Common_citizen_191_m {
-很高兴有你这样的好伙伴，@<GetAddress_Form>@<PChar>。请说吧。
+很高兴有你这样的好伙伴， @<PChar>@<GetAddress_Form>。 请说吧。 
 }
 Common_citizen_191_f {
-很高兴有你这样的好伙伴，@<GetAddress_Form> @<PChar>。请说吧。
+很高兴有你这样的好伙伴， @<PChar>@<GetAddress_Form>。 请说吧。 
 }
 Common_citizen_192 {
-嗯，@<GetAddress_Form>?
+嗯， @<GetAddress_Form>?
 }
 Common_citizen_193 {
-想聊天吗，captain？正好我也喜欢……
+想聊天吗， 船长？ 正好我也喜欢…… 
 }
 Common_citizen_194 {
 @<LinkRandPhrase>
 }
 Common_citizen_195 {
-这家酒馆最近都在传些什么故事？
+这家酒馆最近都在传些什么故事？ 
 }
 Common_citizen_196 {
-这附近最近有什么新鲜事吗？
+这附近最近有什么新鲜事吗？ 
 }
 Common_citizen_197 {
-在陆地上过得怎么样？
+在陆地上过得怎么样？ 
 }
 Common_citizen_198 {
 @<LinkRandPhrase>
 }
 Common_citizen_199 {
-你能给我指个路吗？
+你能给我指个路吗？ 
 }
 Common_citizen_200 {
-我怎么都找不到路去那个地方……
+我怎么都找不到路去那个地方…… 
 }
 Common_citizen_201 {
-能不能给俺指个路……
+能不能给我指个路…… 
 }
 Common_citizen_202 {
 @<LinkRandPhrase>
 }
 Common_citizen_203 {
-我想知道这儿的人都怎么说某个人。
+我想知道这儿的人都怎么说某个人。 
 }
 Common_citizen_204 {
-你知道这附近的人都在议论谁吗？
+你知道这附近的人都在议论谁吗？ 
 }
 Common_citizen_205 {
-我想多了解一下这儿的本地人。
+我想多了解一下这儿的本地人。 
 }
 Common_citizen_206 {
 @<LinkRandPhrase>
 }
 Common_citizen_207 {
-跟我说说你的殖民地。
+跟我说说你的殖民地。 
 }
 Common_citizen_208 {
-有要紧的事！
+有要紧的事！ 
 }
 Common_citizen_209 {
-我有事找你。
+我有事找你。 
 }
 Common_citizen_210 {
 @<RandPhraseSimple>
 }
 Common_citizen_211 {
-你听错了，我走了。
+你听错了， 我走了。 
 }
 Common_citizen_212_m {
-没事，俺就是去酒馆。
+没事， 我就是去酒馆。 
 }
 Common_citizen_212_f {
-没事，我正好要去酒馆。
+没事， 我正好要去酒馆。 
 }
 Common_citizen_213 {
 @<RandPhraseSimple>
 }
 Common_citizen_214 {
-行吧，算了。祝你好运！
+行吧， 算了。 祝你好运！ 
 }
 Common_citizen_215 {
-就在镇上随便看看。再见。
+就在镇上随便看看。 再见。 
 }
 Common_citizen_216 {
 @<RandPhraseSimple>
 }
 Common_citizen_217 {
-你想了解哪位居民？
+你想了解哪位居民？ 
 }
 Common_citizen_218 {
-关于总督。
+关于市长。 
 }
 Common_citizen_219 {
-关于本地酒馆老板。
+关于本地酒馆老板。 
 }
 Common_citizen_220 {
-关于船厂老板。
+关于船坞老板。 
 }
 Common_citizen_221 {
-关于本地店主。
+关于本地店主。 
 }
 Common_citizen_222 {
-没人。别管了。
+没人。 别管了。 
 }
 Common_citizen_223 {
-谢谢你。
+谢谢你。 
 }
 Common_citizen_224 {
-说实话，这方面我不太懂。不过我还是能跟你说点东西。
+说实话， 这方面我不太懂。 不过我还是能跟你说点东西。 
 }
 Common_citizen_225 {
-你来咱们殖民地有啥事？
+你来咱们殖民地有什么事？ 
 }
 Common_citizen_226 {
-不客气，你想听点什么？
+不客气， 你想听点什么？ 
 }
 Common_citizen_227 {
 @<LinkRandPhrase>
 }
 Common_citizen_228 {
-这个定居点叫什么名字？
+这个定居点叫什么名字？ 
 }
 Common_citizen_229 {
-你对守护这座城镇的要塞了解多少？
+你对守护这座城镇的要塞了解多少？ 
 }
 Common_citizen_230 {
-咱们聊点别的吧。
+咱们聊点别的吧。 
 }
 Common_citizen_231 {
-@<UpperFirst>，咱们的定居点叫@<XI_ConvertString>。
+@<UpperFirst>， 咱们的定居点叫@<XI_ConvertString>。 
 }
 Common_citizen_232 {
-谢谢你。
+谢谢你。 
 }
 Common_citizen_233 {
-这事儿我一无所知。
+这事儿我一无所知。 
 }
 Common_citizen_234 {
-可惜。
+可惜。 
 }
 Common_citizen_235_m {
-那跟俺有啥关系？俺可是本地人！
+那跟我有什么关系？ 我可是本地人！ 
 }
 Common_citizen_235_f {
-那跟俺有啥关系？俺就住这城里，懒得理那些破事！
+那跟我有什么关系？ 我就住这城里， 懒得理那些破事！ 
 }
 Common_citizen_236_m {
-你这次又想干嘛？我都说了，老子不是间谍！
+你这次又想干嘛？ 我都说了， 我不是间谍！ 
 }
 Common_citizen_236_f {
-我都跟你说了，俺就是本地人！
+我都跟你说了， 我就是本地人！ 
 }
 Common_citizen_237_m {
-哎呀，行了吧！别烦我，俺是本地人！
+哎呀， 行了吧！ 别烦我， 我是本地人！ 
 }
 Common_citizen_237_f {
-你怎么又拿那些蠢问题来烦我？
+你怎么又拿那些蠢问题来烦我？ 
 }
 Common_citizen_238_m {
-什么，又来？！这也太离谱了吧！！！
+什么， 又来？ ！ 这也太离谱了吧！ ！ ！ 
 }
 Common_citizen_238_f {
-拜托，能不能放过我，求你了！！
+拜托， 能不能放过我， 求你了！ ！ 
 }
 Common_citizen_239 {
-谁能为你这话作证？
+谁能为你这话作证？ 
 }
 Common_citizen_240_m {
-哦，不好意思，我已经问过你了……
+哦， 不好意思， 我已经问过你了…… 
 }
 Common_citizen_240_f {
-哎呀，不好意思，我已经问过你了……
+哎呀， 不好意思， 我已经问过你了…… 
 }
 Common_citizen_241 {
-不好意思，这里人太多了……
+不好意思， 这里人太多了…… 
 }
 Common_citizen_242 {
-行吧，行吧……
+行吧， 行吧…… 
 }
 Common_citizen_243 {
-随便谁都行！喂，你干嘛老缠着我？！有啥问题就跟我去找总督，把话说清楚！
+随便谁都行！ 喂， 你干嘛老缠着我？ ！ 有什么问题就跟我去找市长， 把话说清楚！ 
 }
 Common_citizen_244 {
-嗯……咱们还是别白白打扰他了。我相信你……
+嗯…… 咱们还是别白白打扰他了。 我相信你…… 
 }
 Common_citizen_245_m {
-这镇上的谁都行！@<AppealThirdPerson>随便就能搞定，反正就在附近。
+这镇上的谁都行！ @<AppealThirdPerson>随便就能搞定， 反正就在附近。 
 }
 Common_citizen_245_f {
-这镇上谁都行！@<AppealThirdPerson>轻轻松松就能办到，反正她就在附近。
+这镇上谁都行！ @<AppealThirdPerson>轻轻松松就能办到， 反正她就在附近。 
 }
 Common_citizen_246 {
-哎呀，天哪，至少@<AppealThirdPerson>还能行。
+哎呀， 天哪， 至少@<AppealThirdPerson>还能行。 
 }
 Common_citizen_247 {
 @<RandPhraseSimple>
 }
 Common_citizen_248 {
-那就说说看吧……
+那就说说看吧…… 
 }
 Common_citizen_249_m {
-是这样的，昨天我在城外散步时把我的结婚戒指弄丢了……船长，您能帮我找找吗？
+是这样的， 昨天我在城外散步时把我的结婚戒指弄丢了…… 船长， 您能帮我找找吗？ 
 }
 Common_citizen_249_f {
-是这样的，昨天我在城外散步时把我的结婚戒指弄丢了……小姐，拜托，帮我找找吧！
+是这样的， 昨天我在城外散步时把我的结婚戒指弄丢了…… 小姐， 拜托， 帮我找找吧！ 
 }
 Common_citizen_250_m {
-当然可以！为了这么漂亮的姑娘，啥都行！
+当然可以！ 为了这么漂亮的姑娘， 什么都行！ 
 }
 Common_citizen_250_f {
-当然会帮你。教会教导我们要帮助他人。
+当然会帮你。 教会教导我们要帮助他人。 
 }
 Common_citizen_251 {
-不行，抱歉，我还有很多事要忙。
+不行， 抱歉， 我还有很多事要忙。 
 }
 Common_citizen_252_m {
-不好意思，俺不行。刚想起来还有点事没处理完……
+不好意思， 我不行。 刚想起来还有点事没处理完…… 
 }
 Common_citizen_252_f {
-抱歉，俺不行。刚想起来还有点事没处理完……
+抱歉， 我不行。 刚想起来还有点事没处理完…… 
 }
 Common_citizen_253 {
-我现在时间不多，帮不了你……
+我现在时间不多， 帮不了你…… 
 }
 Common_citizen_254 {
 @<LinkRandPhrase>
 }
 Common_citizen_255_m {
-船长，太好了！拜托你一定要找到那枚戒指——我丈夫再过@<sti>天就要来了，我可不想让他看到我没戴婚戒。
+船长， 太好了！ 拜托你帮我把戒指找回来吧——我丈夫再过@<sti>天就要到了， 我可不想让他看到我手上的婚戒丢了。 
 }
 Common_citizen_255_f {
-小姐，太好了！拜托你帮我把戒指找回来吧——我丈夫再过@<sti>天就要到了，我可不想让他看到我手上没有婚戒。
+小姐， 太好了！ 拜托你帮我把戒指找回来吧——我丈夫再过@<sti>天就要到了， 我可不想让他看到我手上的婚戒丢了。 
 }
 Common_citizen_256 {
-你刚才说是在哪儿丢的？
+你刚才说是在哪儿丢的？ 
 }
 Common_citizen_257 {
-那你们是在哪儿把他弄丢的？
+那你们是在哪儿把他弄丢的？ 
 }
 Common_citizen_258 {
 @<RandPhraseSimple>
 }
 Common_citizen_259 {
-就在城门外……
+就在城门外…… 
 }
 Common_citizen_260_m {
-那我去找找吧……
+那我去找找吧…… 
 }
 Common_citizen_260_f {
-那我去找找看……
+那我去找找看…… 
 }
 Common_citizen_261 {
-行了，快去吧。记住，你只有@<sti>天。
+行了， 快去吧。 记住， 你只有@<sti>天。 
 }
 Common_citizen_262 {
-我记得。
+我记得。 
 }
 Common_citizen_263_m {
-船长！太感谢你了！我该怎么报答你呢？
+船长！ 太感谢你了！ 我该怎么报答你呢？ 
 }
 Common_citizen_263_f {
-小姐！我太高兴了！该怎么感谢你呢？
+小姐！ 我太高兴了！ 该怎么感谢你呢？ 
 }
 Common_citizen_264_m {
-不用谢，我就是出于好心帮的忙。
+不用谢， 我就是出于好心帮的忙。 
 }
 Common_citizen_264_f {
-不用谢，我就是出于好心帮的忙。
+不用谢， 我就是出于好心帮的忙。 
 }
 Common_citizen_265 {
-要是能多拿上一两百个西班牙银币就好了……
+要是能多拿上一两百个西班牙银币就好了…… 
 }
 Common_citizen_266_m {
-哎呀，船长，您真是个好人！我一定会在教堂为您祈祷！再见……
+哎呀， 船长， 您真是个好人！ 我一定会在教堂为您祈祷！ 再见…… 
 }
 Common_citizen_266_f {
-哎呀，小姐，您真是太高尚了！我一定会在教堂为您祈祷！再见……
+哎呀， 小姐， 您真是太高尚了！ 我一定会在教堂为您祈祷！ 再见…… 
 }
 Common_citizen_267 {
-再见，@<NPChar>。
+再见， @<NPChar>。 
 }
 Common_citizen_268 {
-啊，对，当然。给你@<FindMoneyString>，我就这些了。拿去吧……再见。
+啊， 对， 当然。 给你@<FindMoneyString>， 我就这些了。 拿去吧…… 再见。 
 }
 Common_citizen_269 {
-再见，@<GetFullName>。
+再见， @<GetFullName>。 
 }
 Common_citizen_270 {
-不，我对那事一无所知。
+不， 我对那事一无所知。 
 }
 Common_citizen_271 {
-这事儿我一无所知。
+这事儿我一无所知。 
 }
 Common_citizen_272 {
-我啥都不知道。
+我什么都不知道。 
 }
 Common_citizen_273 {
 @<LinkRandPhrase>
 }
 Common_citizen_274 {
-行吧，好吧。
+行吧， 好吧。 
 }
 Common_citizen_275 {
-明白了，谢谢。
+明白了， 谢谢。 
 }
 Common_citizen_276 {
-好吧，抱歉。
+好吧， 抱歉。 
 }
 Common_citizen_277 {
 @<LinkRandPhrase>
 }
 Common_citizen_278 {
-这事儿我可不清楚，不过你可以去问问酒馆里的常客……他们肯定知道点什么。
+这事儿我可不清楚， 不过你可以去问问酒馆里的常客…… 他们肯定知道点什么。 
 }
 Common_citizen_279 {
-我啥也说不了，你还是去酒馆问问别人吧。
+我什么也说不了， 你还是去酒馆问问别人吧。 
 }
 Common_citizen_280 {
-我也不太清楚，只是在酒馆里听人闲聊过这事。
+我也不太清楚， 只是在酒馆里听人闲聊过这事。 
 }
 Common_citizen_281 {
 @<LinkRandPhrase>
 }
 Common_citizen_282 {
-至少还是要谢谢你。
+至少还是要谢谢你。 
 }
 Common_citizen_283 {
-船长，我得在@<FindDaysString>内赶到@<XI_ConvertString>的殖民地，地点在@<XI_ConvertString>。你的船看起来又快又靠谱，这趟路我愿意付@<FindMoneyString>。你怎么看？
+船长， 我得在@<FindDaysString>内赶到@<XI_ConvertString>的殖民地， 地点在@<XI_ConvertString>。 你的船看起来又快又靠谱， 这趟路我愿意付@<FindMoneyString>。 你怎么看？ 
 }
 Common_citizen_284_m {
-我觉得也行，多点钱总没坏处。
+我觉得也行， 多点钱总没坏处。 
 }
 Common_citizen_284_f {
-我觉得也行，多点钱总没坏处。
+我觉得也行， 多点钱总没坏处。 
 }
 Common_citizen_285 {
-抱歉，@<GetAddress_FormToNPC>，俺要去的方向完全不一样，帮不上你。
+抱歉， @<GetAddress_FormToNPC>， 我要去的方向完全不一样， 帮不上你。 
 }
 Common_citizen_286 {
-可惜了。那我就等下一艘船吧。告辞！
+可惜了。 那我就等下一艘船吧。 告辞！ 
 }
 Common_citizen_287 {
-祝一切顺利。
+祝一切顺利。 
 }
 Common_citizen_288 {
-你能答应，我很高兴。等到了地方再结账，可以吧？
+你能答应， 我很高兴。 等到了地方再结账， 可以吧？ 
 }
 Common_citizen_289 {
-没事，你去俺的船上吧，@<GetAddress_FormToNPC>。咱们马上就要出发了。
+没事， 你去我的船上吧， @<GetAddress_FormToNPC>。 咱们马上就要出发了。 
 }
 Common_citizen_290 {
-@<XI_ConvertString>，就是@<XI_ConvertString>上的那个。
+@<XI_ConvertString>， 就是@<XI_ConvertString>上的那个。 
 }
 Common_citizen_291 {
-你已经履行了你的承诺，现在轮到我了。钱在这儿，船长，谢谢你带来这么愉快的旅程！
+你已经履行了你的承诺， 现在轮到我了。 钱在这儿， 船长， 谢谢你带来这么愉快的旅程！ 
 }
 Common_citizen_292 {
-不用谢，@<GetAddress_FormToNPC>！祝你一切顺利。
+不用谢， @<GetAddress_FormToNPC>！ 祝你一切顺利。 
+}
+
+Common_citizen_293 {
+今天全城都在谈论同一件事——那场企图夺取我们殖民地却以失败告终的袭击。
+}
+
+Common_citizen_294 {
+你想想，他们胆子可真不小，竟敢攻打我们城市的防御工事！他们到底指望什么呢？依我看，这场冒险从策划者脑中冒出念头的那一刻起，就注定要失败。
+}
+
+Common_citizen_295 {
+说实话，枪声一响，我就慌了神。
+}
+
+Common_citizen_296 {
+@<TimeGreeting>，@<pchar.name>。很高兴见到您。
+}
+
+Common_citizen_297 {
+@<TimeGreeting>，@<pchar.name>。很高兴见到您。
+}
+
+Common_citizen_298 {
+@<TimeGreeting>，@<npchar.name>。我得走了。
+}
+
+Common_citizen_299_m {
+@<TimeGreeting>，@<pchar>！很高兴见到您。今天天气真适合散步！
+}
+Common_citizen_299_f {
+@<TimeGreeting>，@<pchar>！很高兴见到您。今天天气真适合散步！
+}
+Common_citizen_300 {
+您好，@<npchar>！我也很高兴见到您。
+}
+Common_citizen_301 {
+抱歉，我还有事，得赶时间。
+}
+Common_citizen_302 {
+啊，贝琪，曼努埃尔！真高兴碰见你们。你们知道吗，我们今天终于要启航了。
+}
+Common_citizen_303 {
+你们已经把一切都准备好了吗？
+}
+Common_citizen_304 {
+我们的小伙子凌晨四点就起床收拾箱子，露西亚还采了一大捧花来装饰船舱。
+}
+Common_citizen_305 {
+说“花束”吧，听起来更体面些。
+}
+Common_citizen_306 {
+花束，没错，而且大得简直像把扫帚……咦，那边不是米格尔吗？临走前我得跟他说两句。请恕我告辞。
+}
+Common_citizen_307 {
+一路顺风。
 }

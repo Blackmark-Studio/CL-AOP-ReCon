@@ -46,3 +46,23 @@ Ja, aller guten Dinge sind drei... Entschuldigung.
 Villemstad_Brothel_12 {
 Jetzt nicht ... Vielleicht ein andermal ...
 }
+
+Villemstad_Brothel_13 {Ich habe ein etwas ungewöhnliches Angebot für Euch. Könntet Ihr mir nicht das beste Kleid aus Eurer Garderobe verkaufen?}
+Villemstad_Brothel_14 {Ich bin wieder wegen des Kleides hier.}
+Villemstad_Brothel_15 {In der Tat ungewöhnlich. Ich fürchte, ein solcher Gefallen wird Euch ein kleines Vermögen kosten.}
+Villemstad_Brothel_16 {Könnte ich es vielleicht für einen oder zwei Abende mieten?}
+Villemstad_Brothel_17 {Ich denke, das lässt sich einrichten. Sagen wir 15000 Piaster und Eure Zusicherung, dass es pünktlich, unversehrt und fleckenlos zurückkommt.}
+Villemstad_Brothel_18 {Nicht ein einziger Fleck... Und da wir uns über den Preis einig sind, habt Ihr vielleicht auch eine passende Karnevalsmaske, die das ganze Gesicht verdeckt?}
+Villemstad_Brothel_19 {Wir werden schon etwas finden. Fünfzigtausend, und sie gehört Euch.}
+Villemstad_Brothel_20 {Was?! Habt Ihr Euch beim Preis nicht vielleicht vertan?}
+Villemstad_Brothel_21 {Ich bin sicher, zwischen uns liegt nur ein kleines Missverständnis vor. Offenbar habt Ihr mich versehentlich für eine törichte Frau gehalten, die nicht erkennt, wenn jemand inkognito in die hiesige Residenz eindringen will. Fünfzigtausend für mein Schweigen, fünfzehn für das Kleid für einen Abend, und die Maske gebe ich Euch dazu. Nun?}
+Villemstad_Brothel_22 {Ihr versteht es, Geschäfte zu machen. Offenbar bleibt mir keine Wahl. Hier ist Euer Geld. Ich hoffe, der Schnitt enttäuscht mich nicht.}
+Villemstad_Brothel_23 {Nun gut, ich werde darüber nachdenken und vielleicht später wiederkommen.}
+Villemstad_Brothel_24 {Nun, kommt unser Geschäft zustande? 65000 Piaster.}
+Villemstad_Brothel_25 {Hier ist Euer Geld. Ich hoffe, der Schnitt enttäuscht mich nicht.}
+Villemstad_Brothel_26 {Ich überlege noch, ob Euer Angebot seinen Preis wert ist.}
+Villemstad_Brothel_27 {Ihr habt das Karnevalskostüm angelegt}
+Villemstad_Brothel_28 {Hier noch ein wenig enger, dann bin ich mit dem Ergebnis fast zufrieden. Wirklich schade, Angelique, dass du in deiner Jugend kein Korsett getragen hast; dann säße es deutlich besser. Deine Taille verrät immer noch das einfache Mädchen.}
+Villemstad_Brothel_29 {Die Soldaten werden darauf nicht achten, und danach komme ich allein zurecht.}
+Villemstad_Brothel_30 {Nein, wirklich nicht schlecht, gar nicht schlecht. Ich glaube, ich habe es mir sogar anders überlegt. Du brauchst mir die Kleidung nicht zurückzugeben; betrachte sie als gekauft.}
+Villemstad_Brothel_31 {Dieses Geschäft gefällt mir wesentlich besser. Da sage ich nicht nein. Ich muss mich beeilen, sonst komme ich noch zu spät!}

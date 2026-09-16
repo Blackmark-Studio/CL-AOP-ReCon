@@ -20,16 +20,449 @@ ref GetBaseShip(int iType)
 	return GetShipByType(sti(GetRealShip(iType)));
 }
 
-ref GetRealShip(int iType) 
-{ 
-	if(iType >= REAL_SHIPS_QUANTITY)
+ref GetRealShip(int iType)
+{
+	if(iType < 0 || iType >= REAL_SHIPS_QUANTITY)
 	{
 		trace ("--- Wrong Ship Index. iType is " + iType);
 		Log_TestInfo("--- Wrong Ship Index. iType is " + iType);
-		return &ShipsTypes[SHIP_TYPES_QUANTITY + 1]; // для отлова
+		return &ShipsTypes[SHIP_TYPES_QUANTITY]; // > для отлова: слот форта, последний валидный индекс массива
 	}
 	return &RealShips[iType];
 }
+
+// KZ >
+// > Гасит стволы, которых борт больше не держит.
+// > Движок берёт орудия с локаторов модели и палит из них, пока damages не скажет обратное, а SetCannonsToBort после урезки борта до этих слотов не дотягивается.
+void OnLoadCutGhostCannons(ref rChr, string sBort, int iKeep)
+{
+	string sBortReal = sBort;
+
+	switch (sBort)
+	{
+		case "rcannon": sBortReal = "cannonr"; break;
+		case "lcannon": sBortReal = "cannonl"; break;
+		case "fcannon": sBortReal = "cannonf"; break;
+		case "bcannon": sBortReal = "cannonb"; break;
+	}
+
+	int    i = 0;
+	int    n = 0;
+	int    iNum = 0;
+	string sName = "";
+	string sSlot = "";
+	aref   arDamages;
+
+	// > оба имени борта: скрипт держит их зеркальными копиями
+	for (n = 0; n < 2; n++)
+	{
+		sName = sBort;
+		if (n == 1) sName = sBortReal;
+
+		if (!CheckAttribute(rChr, "Ship.Cannons.Borts." + sName + ".damages"))
+			continue;
+
+		makearef(arDamages, rChr.Ship.Cannons.Borts.(sName).damages);
+		iNum = GetAttributesNum(arDamages);
+
+		for (i = iKeep; i < iNum; i++)
+		{
+			sSlot = "c" + i;
+
+			if (CheckAttribute(arDamages, sSlot))
+				arDamages.(sSlot) = 1.0; // > "нет её", тем же значением метит слоты SetCannonsToBort
+		}
+	}
+}
+
+// > Борта экземпляра обязаны давать ровно CannonsQuantity: генератор режет их парой, а пиратский апгрейд пересчитывает число орудий из бортов.
+// > Корабль из старого сейва мог унести рассогласование из ships_init.c
+void OnLoadFixShipBorts()
+{
+	int i = 0;
+	int iType = 0;
+	int iQty = 0;
+	int iSum = 0;
+	int iCut = 0;
+	int iFixed = 0;
+	ref rShip;
+	ref rChr;
+
+	// > шаг 1: борта экземпляров
+	for (i = 0; i < REAL_SHIPS_QUANTITY; i++)
+	{
+		makeref(rShip, RealShips[i]);
+
+		if (!CheckAttribute(rShip, "name"))            continue; // > слот пустой
+		if (CheckAttribute(rShip, "Tuning.Cannon"))    continue; // > орудия доводил пират, его работа авторитетнее
+		if (!CheckAttribute(rShip, "CannonsQuantity")) continue;
+		if (!CheckAttribute(rShip, "rcannon") || !CheckAttribute(rShip, "lcannon")) continue;
+		if (!CheckAttribute(rShip, "fcannon") || !CheckAttribute(rShip, "bcannon")) continue;
+
+		iQty = sti(rShip.CannonsQuantity);
+		iSum = sti(rShip.fcannon) + sti(rShip.bcannon) + sti(rShip.lcannon) + sti(rShip.rcannon);
+
+		if (iSum <= iQty) continue; // > лишних стволов нет, а недостачу выдумывать нельзя
+
+		iCut = (iSum - iQty) / 2;   // > генератор снимает борта только парой, левый и правый поровну
+
+		if (iCut < 1 || iCut * 2 != iSum - iQty || sti(rShip.lcannon) < iCut || sti(rShip.rcannon) < iCut)
+		{
+			trace("OnLoadFixShipBorts: RealShips[" + i + "] '" + rShip.name + "' борта дают " + iSum + " при " + iQty + " орудиях, парой не снимается");
+			Logs("OnLoadFixShipBorts: RealShips[" + i + "] '" + rShip.name + "' борта " + iSum + " против " + iQty + ", пропущен");
+			continue;
+		}
+
+		rShip.lcannon = sti(rShip.lcannon) - iCut;
+		rShip.rcannon = sti(rShip.rcannon) - iCut;
+		rShip.cannonl = sti(rShip.lcannon);
+		rShip.cannonr = sti(rShip.rcannon);
+		rShip.BortsCut = true; // > метка временная, снимаем ниже
+
+		iFixed++;
+		trace("OnLoadFixShipBorts: RealShips[" + i + "] '" + rShip.name + "' борта " + iSum + " -> " + iQty);
+	}
+
+	if (iFixed < 1) return;
+
+	// > шаг 2: у владельцев гасим слоты, которых борт больше не держит
+	for (i = 0; i < TOTAL_CHARACTERS; i++)
+	{
+		rChr = &characters[i];
+
+		if (!CheckAttribute(rChr, "Ship.Type")) continue;
+
+		iType = sti(rChr.Ship.Type);
+
+		if (iType < 0 || iType >= REAL_SHIPS_QUANTITY) continue; // > SHIP_NOTUSED и мусор мимо таблицы
+
+		makeref(rShip, RealShips[iType]);
+
+		if (!CheckAttribute(rShip, "BortsCut")) continue;
+
+		OnLoadCutGhostCannons(rChr, "lcannon", sti(rShip.lcannon));
+		OnLoadCutGhostCannons(rChr, "rcannon", sti(rShip.rcannon));
+	}
+
+	// > шаг 3: метке в сейве делать нечего
+	for (i = 0; i < REAL_SHIPS_QUANTITY; i++)
+	{
+		if (CheckAttribute(&RealShips[i], "BortsCut"))
+			DeleteAttribute(&RealShips[i], "BortsCut");
+	}
+
+	Logs("OnLoadFixShipBorts: бортов приведено к числу орудий: " + iFixed);
+}
+
+// > переинициализация кораблей при загрузке сейва, если поменялось их кол-во или просто была перестановка в ships.h
+void OnLoadUpdateShipArrays()
+{
+	int    i = 0;
+	int    idx = 0;
+	int    iOldTypes = 0;
+	int    iOldReal = 0;
+	int    iOldColors = 0;
+	int    iFixed = 0;
+	int    iLost = 0;
+	int    iNoName = 0;
+	bool   bSails = false;
+	ref    rShip;
+	string sName = "";
+
+	iOldTypes  = GetArraySize(&ShipsTypes);
+	iOldReal   = GetArraySize(&RealShips);
+	iOldColors = GetArraySize(&SailsColors);
+
+	// > сегмент грузим до любых разрушающих действий
+	if (!LoadSegment("ships\ships_init.c"))
+	{
+		trace("ERROR OnLoadUpdateShipArrays: ships\ships_init.c не загрузился, пересборка отменена");
+		Logs("ERROR OnLoadUpdateShipArrays: ships\ships_init.c не загрузился, пересборка отменена");
+		return;
+	}
+
+	// > шаг 1: снимаем стабильные имена по старой таблице типов
+
+	// > экземпляры кораблей
+	for (i = 0; i < iOldReal; i++)
+	{
+		makeref(rShip, RealShips[i]);
+
+		if (!CheckAttribute(rShip, "name"))
+			continue;	// > слот пустой
+
+		if (CheckAttribute(rShip, "BaseName"))
+			continue;
+
+		iNoName++;
+
+		if (!CheckAttribute(rShip, "BaseType"))
+		{
+			trace("OnLoadUpdateShipArrays: RealShips[" + i + "] '" + rShip.name + "' без BaseName и без BaseType, тип восстановить нечем");
+			continue;
+		}
+
+		sName = GetShipTypeNameByIndex(sti(rShip.BaseType));
+
+		if (sName == "")
+		{
+			trace("OnLoadUpdateShipArrays: RealShips[" + i + "] '" + rShip.name + "' - старый BaseType " + rShip.BaseType + " вне таблицы типов");
+			continue;
+		}
+
+		rShip.BaseName = sName;
+	}
+
+	// > индекс цвета парусов
+	for (i = 0; i < iOldReal; i++)
+	{
+		makeref(rShip, RealShips[i]);
+
+		if (!CheckAttribute(rShip, "name"))
+			continue;
+
+		if (!CheckAttribute(rShip, "SailsColorIdx"))
+			continue;
+
+		idx = sti(rShip.SailsColorIdx);
+
+		if (idx >= 0 && idx < iOldColors && CheckAttribute(&SailsColors[idx], "name"))
+			rShip.SailsColorTN = SailsColors[idx].name;
+		else
+			DeleteAttribute(rShip, "SailsColorIdx"); // > индекс битый уже в сейве, чинить нечем
+	}
+
+	// > квестовые индексы типов
+	OnLoadQuestShipTypes(true);
+
+	// > шаг 2: пересобираем таблицу типов
+
+	if (iOldReal != REAL_SHIPS_QUANTITY)
+		trace("OnLoadUpdateShipArrays: размер RealShips из сейва " + iOldReal + " -> " + REAL_SHIPS_QUANTITY);
+
+	SetArraySize(&ShipsTypes,  SHIP_TYPES_QUANTITY_WITH_FORT);
+	SetArraySize(&SailsColors, SAILS_COLOR_QUANTITY);
+	SetArraySize(&RealShips,   REAL_SHIPS_QUANTITY);
+
+	for (i = 0; i < SHIP_TYPES_QUANTITY_WITH_FORT; i++)
+		DeleteAttribute(&ShipsTypes[i], ""); // > чистый шаблон, как перед InitShips при запуске
+
+	InitShips();
+	UnloadSegment("ships\ships_init.c");
+
+	if (LoadSegment("ships\sails_init.c"))
+	{
+		for (i = 0; i < SAILS_COLOR_QUANTITY; i++)
+			DeleteAttribute(&SailsColors[i], "");
+
+		InitSailsColors();
+		UnloadSegment("ships\sails_init.c");
+		bSails = true;
+	}
+	else
+	{
+		trace("ERROR OnLoadUpdateShipArrays: ships\sails_init.c не загрузился, цвета парусов не пересобраны");
+		Logs("ERROR OnLoadUpdateShipArrays: ships\sails_init.c не загрузился, цвета парусов не пересобраны");
+	}
+
+	// > шаг 3: имена обратно в индексы по новой таблице
+
+	// > ремап BaseType у всех занятых экземпляров RealShips по имени типа BaseName
+	for (i = 0; i < REAL_SHIPS_QUANTITY; i++)
+	{
+		makeref(rShip, RealShips[i]);
+
+		if (!CheckAttribute(rShip, "name"))
+			continue;
+
+		if (!CheckAttribute(rShip, "BaseName"))
+			continue;
+
+		idx = GetShipTypeIndexByName(rShip.BaseName);
+
+		if (idx < 0)
+		{
+			// > тип корабля исчез из ships_init.c
+			iLost++;
+			trace("ERROR OnLoadUpdateShipArrays: тип '" + rShip.BaseName + "' не найден для RealShips[" + i + "], корабль '" + rShip.name + "' осиротел");
+			Logs("ERROR OnLoadUpdateShipArrays: тип '" + rShip.BaseName + "' не найден для RealShips[" + i + "]");
+			continue;
+		}
+
+		if (!CheckAttribute(rShip, "BaseType"))
+		{
+			rShip.BaseType = idx;
+			iFixed++;
+			continue;
+		}
+
+		if (sti(rShip.BaseType) != idx)
+		{
+			trace("OnLoadUpdateShipArrays: RealShips[" + i + "] '" + rShip.BaseName + "' BaseType " + rShip.BaseType + " -> " + idx);
+			rShip.BaseType = idx;
+			iFixed++;
+		}
+	}
+
+	// > имена цветов парусов обратно в индексы
+	for (i = 0; i < REAL_SHIPS_QUANTITY; i++)
+	{
+		makeref(rShip, RealShips[i]);
+
+		if (!CheckAttribute(rShip, "SailsColorTN"))
+			continue;
+
+		if (CheckAttribute(rShip, "SailsColorIdx"))
+		{
+			idx = GetSailsColorIndexByName(rShip.SailsColorTN);
+
+			if (idx >= 0)
+			{
+				rShip.SailsColorIdx = idx;
+			}
+			else
+			{
+				// > цвет исчез из sails_init.c
+				trace("OnLoadUpdateShipArrays: RealShips[" + i + "] цвет парусов '" + rShip.SailsColorTN + "' не найден, SailsColorIdx снят");
+				DeleteAttribute(rShip, "SailsColorIdx");
+			}
+		}
+
+		DeleteAttribute(rShip, "SailsColorTN"); // > метка временная, в сейве ей делать нечего
+	}
+
+	// > чинит корабли, задействованные сейчас в генераторных квестах
+	OnLoadQuestShipTypes(false);
+
+	// > шаг 4: борта, разошедшиеся с числом орудий
+	OnLoadFixShipBorts();
+
+	// > отпечаток ставим только после полной пересборки
+	// > если цвета не поднялись, следующая загрузка обязана повторить попытку, а не считать таблицы синхронизированными
+	if (bSails)
+		sShipsStamp = GetShipsFilesStamp();
+
+	trace("OnLoadUpdateShipArrays: типов " + iOldTypes + " -> " + SHIP_TYPES_QUANTITY_WITH_FORT + ", переиндексовано кораблей " + iFixed + ", без BaseName было " + iNoName + ", потеряно типов " + iLost);
+}
+
+// > Один сохранённый индекс типа корабля
+void OnLoadQuestShipType(aref _arObj, string _sAttr, bool _bStamp)
+{
+	string sTN = _sAttr + "TN";
+
+	if (_bStamp)
+	{
+		if (!CheckAttribute(_arObj, _sAttr))
+			return; // > квест не взят, отбой
+
+		string sName = GetShipTypeNameByIndex(sti(_arObj.(_sAttr)));
+
+		if (sName == "")
+		{
+			trace("OnLoadQuestShipType: '" + _sAttr + "' = " + _arObj.(_sAttr) + " вне старой таблицы типов, чинить нечем");
+			DeleteAttribute(_arObj, sTN);
+			return;
+		}
+
+		_arObj.(sTN) = sName;
+		return;
+	}
+
+	if (!CheckAttribute(_arObj, sTN))
+		return;
+
+	if (CheckAttribute(_arObj, _sAttr))
+	{
+		int idx = GetShipTypeIndexByName(_arObj.(sTN));
+
+		if (idx >= 0)
+			_arObj.(_sAttr) = idx;
+		else
+			trace("ERROR OnLoadQuestShipType: тип '" + _arObj.(sTN) + "' не найден, атрибут '" + _sAttr + "' остался старым");
+	}
+
+	DeleteAttribute(_arObj, sTN); // > метка временная, в сейве ей делать нечего
+}
+
+// > Все сохранённые индексы типов кораблей
+void OnLoadQuestShipTypes(bool _bStamp)
+{
+	aref   arQuest;
+	int    n = 0;
+	int    i = 0;
+	ref    rChar;
+	string sNode = "";
+
+	// > квесты на pchar: узел квеста + атрибут с индексом типа
+	string aPcharNode[8];
+	string aPcharAttr[8];
+	int    nPchar = 0;
+
+	aPcharNode[nPchar] = "GenQuest.Marginpassenger";      aPcharAttr[nPchar] = "ShipType";       nPchar++;
+	aPcharNode[nPchar] = "GenQuest.CaptainComission";     aPcharAttr[nPchar] = "ShipType";       nPchar++;
+	aPcharNode[nPchar] = "GenQuest.CaptainComission";     aPcharAttr[nPchar] = "ShipTypeVictim"; nPchar++;
+	aPcharNode[nPchar] = "GenQuest.ShipWreck";            aPcharAttr[nPchar] = "StartShipType";  nPchar++;
+	aPcharNode[nPchar] = "GenQuest.PiratesOnUninhabited"; aPcharAttr[nPchar] = "StartShipType";  nPchar++;
+	aPcharNode[nPchar] = "GenQuest.JusticeOnSale";        aPcharAttr[nPchar] = "ShipType";       nPchar++;
+
+	// > квесты на каждом персонаже: сожжённый корабль портмана, посредник по поручению капитана, розыск украденного корабля
+	string aCharNode[8];
+	string aCharAttr[8];
+	int    nChar = 0;
+
+	aCharNode[nChar] = "Quest.BurntShip";        aCharAttr[nChar] = "ShipType";       nChar++;
+	aCharNode[nChar] = "CaptainComission";       aCharAttr[nChar] = "ShipTypeVictim"; nChar++;
+	aCharNode[nChar] = "quest.PortmansSeekShip"; aCharAttr[nChar] = "shipTape";       nChar++;
+
+	for (n = 0; n < nPchar; n++)
+	{
+		sNode = aPcharNode[n];
+
+		if (!CheckAttribute(pchar, sNode))
+			continue;
+
+		makearef(arQuest, pchar.(sNode));
+		OnLoadQuestShipType(arQuest, aPcharAttr[n], _bStamp);
+	}
+
+	for (i = 0; i < MAX_CHARACTERS; i++)
+	{
+		makeref(rChar, characters[i]);
+
+		for (n = 0; n < nChar; n++)
+		{
+			sNode = aCharNode[n];
+
+			if (!CheckAttribute(rChar, sNode))
+				continue;
+
+			makearef(arQuest, rChar.(sNode));
+			OnLoadQuestShipType(arQuest, aCharAttr[n], _bStamp);
+		}
+	}
+}
+
+// > Индекс цвета парусов по имени из sails_init.c; -1, если такого цвета больше нет
+int GetSailsColorIndexByName(string _sName)
+{
+	int i;
+	int q = GetArraySize(&SailsColors);
+
+	if (_sName == "")
+		return -1;
+
+	for (i = 0; i < q; i++)
+	{
+		if (!CheckAttribute(&SailsColors[i], "name"))
+			continue;
+
+		if (SailsColors[i].name == _sName)
+			return i;
+	}
+
+	return -1;
+}
+// KZ <
 
 // isLock это признак ворованности, определяет цену на верфи
 // 1 - ворованный, цена копеешная; 0 - честно купленный, можно перепродать
@@ -45,7 +478,9 @@ int GenerateShip(int iBaseType, bool isLock)
 	ref rRealShip = GetRealShip(iShip);
 	ref rBaseShip = GetShipByType(sti(rRealShip.BaseType));
     // boal 26/05/06 изменим
-    rRealShip.ship.upgrades.hull  = 1 + rand(GetShipHulls(rRealShip.Name) - 1);  //признак корабля теперь
+    int iHulls = sti(rRealShip.HullsAmount);
+    if (rRealShip.name != rRealShip.BaseName + "1") iHulls = GetShipHulls(rRealShip.Name);
+    rRealShip.ship.upgrades.hull  = 1 + rand(iHulls - 1);  //признак корабля теперь
 	rRealShip.ship.upgrades.sails = 1 + rand(2);  // только визуальная разница
 	
 	if (!CheckAttribute(rRealShip, "isFort"))
@@ -782,7 +1217,7 @@ void SetShipyardStore(ref NPChar)
     
     if (bBettaTestMode)
     {
-        for (i = 1; i <=SHIP_TYPES_QUANTITY; i++)
+        for (i = 1; i <= SHIP_SPECIAL; i++)
         {
             attrName = "ship" + i;
 			FillShipParamShipyard(NPChar, GenerateStoreShipExt(i-1, NPChar), attrName);
@@ -826,9 +1261,9 @@ void SetShipyardStore(ref NPChar)
 	{
 		iTest_ship = rand(7);
 		if (iTest_ship == 1) FillShipParamShipyard(NPChar, GenerateStoreShipExt(SHIP_LUGGER, NPChar), "ship3");
-		if (iTest_ship == 2) FillShipParamShipyard(NPChar, GenerateStoreShipExt(SHIP_SLOOP, NPChar), "ship3");
-		if (iTest_ship == 3) FillShipParamShipyard(NPChar, GenerateStoreShipExt(SHIP_SLOOP_W, NPChar), "ship3");
-		if (iTest_ship == 4) FillShipParamShipyard(NPChar, GenerateStoreShipExt(SHIP_LUGGER_W, NPChar), "ship3");
+		if (iTest_ship == 2) FillShipParamShipyard(NPChar, GenerateStoreShipExt(SHIP_CAREERLUGGER, NPChar), "ship3");
+		if (iTest_ship == 3) FillShipParamShipyard(NPChar, GenerateStoreShipExt(SHIP_SLOOP, NPChar), "ship3");
+		if (iTest_ship == 4) FillShipParamShipyard(NPChar, GenerateStoreShipExt(SHIP_SLOOP_W, NPChar), "ship3");
 
 		iTest_ship = rand(7);
 		if (iTest_ship == 1) FillShipParamShipyard(NPChar, GenerateStoreShipExt(SHIP_SLOOP, NPChar), "ship4");
@@ -975,6 +1410,8 @@ void RemoveAllCannonsShipyardShip(ref NPChar)
 
 void FillShipParamShipyard(ref NPChar, int _iType, string _sShipNum)
 {
+	if (CheckAttribute(NPChar, "ShipsTradeDisable")) return;
+
     aref    arTo, arFrom;
     
 	DeleteAttribute(NPChar, "ship");
@@ -1089,7 +1526,15 @@ int GetShipBuyPrice(int iType, ref _shipyard)
 	if (CheckOfficersPerk(pchar, "ProfessionalCommerce")) fPrice /= 1.15;
 	else if (CheckOfficersPerk(pchar,"BasicCommerce")) fPrice /= 1.10;
 
+	if (CheckAttribute(_shipyard, "Discount.Shipyard") && fPrice > 0.0)
+	{
+		float fDiscount = stf(_shipyard.Discount.Shipyard);
+		Restrictor(&fDiscount, 1.0, 2.0); // > 0-100%
+		fPrice = fPrice / fDiscount;
+	}
+
 	if (fPrice < 11.0) return 10;
+
     return makeint(fPrice);
 }
 
@@ -1258,6 +1703,8 @@ int GetPortManPrice(int Price, ref NPChar)
 // ugeen --> альтернативный расчёт стоянки корабля в ПУ
 int GetPortManPriceExt(ref NPChar, ref chref)
 {
+	if (CheckAttribute(NPChar, "FreeShipStorage")) return 0;
+
 	if (GetGlobalTutor())
 	{
 		if (sti(RealShips[sti(chref.ship.type)].basetype) == SHIP_ARABELLA)
@@ -1318,9 +1765,30 @@ bool CheckShipMoored()
 	if (!CheckShip(pchar))
 		return false;
 
-	if (CheckAttribute(loadedLocation, "fastreload"))
+	int iLoc = FindLocation(Pchar.location);
+
+	if (iLoc < 0)
+		return false;
+
+	ref rLoc = &Locations[iLoc];
+
+	if (CheckAttribute(rLoc, "fastreload"))
 	{
-		ref rColony = &Colonies[FindColony(loadedLocation.fastreload)];
+		int iColony = FindColony(rLoc.fastreload);
+
+		// KZ > локация вне колоний (берег, свободный магазин и т.д.)
+		if (iColony < 0)
+		{
+			if (!CheckAttribute(pchar, "location.from_sea")) return false;
+
+			int iShipLoc = FindLocation(pchar.location.from_sea);
+			if (iShipLoc < 0) return false;
+			if (!CheckAttribute(&Locations[iShipLoc], "fastreload")) return pchar.location.from_sea == rLoc.id;
+
+			return Locations[iShipLoc].fastreload == rLoc.fastreload;
+		}
+
+		ref rColony = &Colonies[iColony];
 
 		if (rColony.from_sea == "" || pchar.location.from_sea == rColony.from_sea)
 			return true;
@@ -1369,7 +1837,7 @@ int RandShipFromPcharSquadron()
 		case 3: result = SHIP_CORVETTE_L + rand(3); break;
 		case 4: result = SHIP_BRIGANTINE + rand(4); break;
 		case 5: result = SHIP_SCHOONER_W + rand(3); break;
-		case 6: result = SHIP_LUGGER_W + rand(3); break;
+		case 6: result = SHIP_LUGGER + rand(3); break;
 		case 7: result = SHIP_WAR_TARTANE + rand(2); break;
 	}
 	
@@ -1492,7 +1960,7 @@ int SetShipSuitableCannons(int iShipType, string sCannonType)
 {
 	sCannonType = stripblank(sCannonType);
 	
-	if (!StrHasStr(sCannonType, "cannon,culverine", 1))
+	if (!StrHasStr(sCannonType, "cannon,culverine", true))
 	{
 		sCannonType = "cannon";
 		
@@ -1740,7 +2208,7 @@ void DoSailDamageForRepair() //Дырявим паруса на упавших �
 
 	float sailDmg = 0.0;
 	float sailDmgMax = GetCharacterShipSP(chref) * sailPower;
-	if (!CheckAttribute(arSail, "dmg"))    sailDmg = 0.0;
+	if (CheckAttribute(arSail, "dmg"))    sailDmg = stf(arSail.dmg);
 
 	if (sMastName == "*")
 	{
@@ -1994,80 +2462,53 @@ float GetSailRepairDay(ref _refCharacter, bool _qty) // расчёт почин�
 }
 
 // KZ > подсчёт кол-ва окрасов (папки hull* в папке с кораблём) при загрузке игры
+// > iShip >= 0 - обновить один тип, iShip < 0 - все; возвращает кол-во обновлённых типов
 int RefreshShipHulls(int iShip)
 {
 	ref rShip;
-	int iShipList = 0;
-	int iHulls = 1;
-	int i, q = GetArraySize(&ShipsTypes);
+	int i;
+	int iFrom = 0;
+	int iRefreshed = 0;
+	int q = GetArraySize(&ShipsTypes);
 	string sPath = "RESOURCE/Textures/Ships/";
-	object oFolderList;
-	string sHull, arHullsList[2];
 
-	for (; iShipList < q; iShipList++)
+	if (iShip >= 0)
 	{
-		DeleteAttribute(&oFolderList, "");
+		if (iShip >= q)
+			return 0;
 
-		if (iShip >= 0)
-			rShip = &ShipsTypes[iShip];
-		else
-			rShip = &ShipsTypes[iShipList];
-
-		if (!TestRef(rShip) || !CheckAttribute(rShip, "name") || !XI_CheckFolder(sPath + rShip.name + "1/"))
-		{
-			if (iShip >= 0) break;
-			continue;
-		}
-
-		XI_FindFoldersWithoutNetsave(sPath + rShip.name + "1/Hull*", &oFolderList);
-		iHulls = GetAttributesNum(&oFolderList);
-
-		ArrayClear(&arHullsList);
-
-		for (i = 0; i < iHulls; i++)
-		{
-			sHull = GetAttributeN(&oFolderList, i);
-
-			if (!ArrayIsEqualValue(&arHullsList, sHull))
-				ArrayAddValue(&arHullsList, sHull);
-			else
-				iHulls--;
-		}
-
-		Restrictor(&iHulls, 1, "");
-		rShip.HullsAmount = iHulls;
-		if (iShip >= 0) break;
+		iFrom = iShip;
+		q     = iShip + 1;
 	}
 
-	DeleteClass(&oFolderList);
-	return iHulls;
+	for (i = iFrom; i < q; i++)
+	{
+		rShip = &ShipsTypes[i];
+
+		if (!TestRef(rShip) || !CheckAttribute(rShip, "name"))
+			continue;
+
+		if (!XI_CheckFolder(sPath + rShip.name + "1/"))
+			continue;
+
+		rShip.HullsAmount = GetShipHulls(rShip.name + "1");
+		iRefreshed++;
+	}
+
+	return iRefreshed;
 }
 
+// > Кол-во окрасов корпуса: папки Hull* в каталоге модели корабля
 int GetShipHulls(string _sDir)
 {
 	object oHullFolders;
 	DeleteAttribute(&oHullFolders, "");
 	XI_FindFoldersWithoutNetsave("RESOURCE/Textures/Ships/" + _sDir + "/Hull*", &oHullFolders);
 
-	int i, iHulls = GetAttributesNum(&oHullFolders);
-	string sHull, arHullsList[2];
+	int iHulls = GetAttributesNum(&oHullFolders);
 
-	ArrayClear(&arHullsList);
-
-	for (i = 0; i < iHulls; i++)
-	{
-		sHull = GetAttributeN(&oHullFolders, i);
-
-		if (!ArrayIsEqualValue(&arHullsList, sHull))
-			ArrayAddValue(&arHullsList, sHull);
-		else
-			iHulls--;
-
-		// > TODO чек пустых папок
-		//trace("Files " + i + " : " + CheckFilesInDir("RESOURCE/Textures/Ships/" + _sDir + "/" + sHull));
-	}
-
-	Restrictor(&iHulls, 1, "");
+	if (iHulls < 1)
+		iHulls = 1;	// > каталога нет или он пуст - считаем, что окрас один
 
 	return iHulls;
 }

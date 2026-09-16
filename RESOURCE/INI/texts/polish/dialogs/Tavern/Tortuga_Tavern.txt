@@ -316,3 +316,49 @@ No, zapytałaś! To przecież portowe miasto, a nie wieś. Obcych tu codziennie 
 Tortuga_Tavern_91 {
 Hm... No dobrze, rozumiem. Dziękuję, @<npchar>.
 }
+
+Tortuga_Tavern_92 {
+Podobno znasz człowieka, który szuka kapitanów. Powiesz mi, jak go znaleźć?
+}
+Tortuga_Tavern_93 {
+Tutaj co trzeci szuka kapitanów...
+}
+Tortuga_Tavern_94_m {
+Z tego, co słyszałem, ten człowiek ma dość niezwykłą robotę.
+}
+Tortuga_Tavern_94_f {
+Z tego, co słyszałam, ten człowiek ma dość niezwykłą robotę.
+}
+Tortuga_Tavern_95 {
+Och, kapitanie, każda robota jest na swój sposób niezwykła. Wszystko zależy od tego, co zdążył pan już w życiu zobaczyć.
+}
+Tortuga_Tavern_96 {
+Przecież wiesz, o kim mówię.
+}
+Tortuga_Tavern_97 {
+Rozumiem tylko jedno... Marnuje pan mój czas na czcze pogaduszki!
+}
+Tortuga_Tavern_98 {
+No proszę. Teraz sam uznał, że warto z panem porozmawiać.
+}
+Tortuga_Tavern_99 {
+Zawsze każe najpierw o siebie wypytywać, a potem sam podchodzi?
+}
+Tortuga_Tavern_100 {
+Marceau lubi najpierw przyjrzeć się człowiekowi. Mówią, że ma dobre oko do ludzi. Skoro zszedł do pana, to znaczy, że dostrzegł w panu coś wartego uwagi.
+}
+Tortuga_Tavern_101 {
+Dobrze, pójdę z nim porozmawiać.
+}
+Tortuga_Tavern_102 {
+Słucham, kapitanie.
+}
+Tortuga_Tavern_103 {
+Szukam Marceau. Nadal jest na górze?
+}
+Tortuga_Tavern_104 {
+Tacy ludzie jak on rzadko siedzą długo w jednym miejscu. Jeśli ma pan dla niego wieści — proszę szukać go w porcie, na „Czarnej Mewie”.
+}
+Tortuga_Tavern_105 {
+Dzięki.
+}

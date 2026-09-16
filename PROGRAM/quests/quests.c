@@ -8,6 +8,8 @@
 #include "quests\FranceLine_reaction.c"
 #include "quests\questMarkConditions.c"
 #include "quests\tutorial.c"
+#include "quests\LeBasque.c"
+//#include "quests\EncGirl_Functions.c" //HardCoffee work in progress
 
 #define QUESTMARK_MAIN "questmarkmain"
 #define QUESTMARK_GEN "questmarkgen"
@@ -463,6 +465,12 @@ void AddQuestRecordEx(string idQuest,string idReferenceQuest,string idText)
 	}
 	// покраска новой СЖ
 	SetQuestHeaderColor(idQuest, argb(255,53,88,128));
+
+	if (GetMaxAutoSaves("QuestRecord") != 0)
+	{
+		DeleteAfterSaveFunction();
+		PostEvent("Event_NewAutoSave", 1, "s", "QuestRecord");
+	}
 }
 
 // boal метод для инфы  -->
@@ -605,6 +613,11 @@ bool SetCharacterToNearLocatorFromMe(string characterID, float minDistance)
 
 // получить ссылку на персонаж через его ID-шник
 //------------------------------------------------------
+ref GetCharacterFromID(string characterID)
+{
+    return CharacterFromID(characterID);
+}
+
 ref CharacterFromID(string characterID)
 {
     int i = GetCharacterIndex(characterID);
@@ -784,36 +797,48 @@ bool CheckFreeItemLocator(string sLocationName, string sLocator)
 {
     for (int itemN = 0; itemN < ITEMS_QUANTITY; itemN++)
     {
-        if (!CheckAttribute(&Items[itemN], "startLocator") || !CheckAttribute(&Items[itemN], "startLocation") || !CheckAttribute(&Items[itemN], "shown"))
-            continue;
-        if (Items[itemN].shown == "1")
-        {
-            if (Items[itemN].startLocation == sLocationName && Items[itemN].startLocator == sLocator) return true;
-        }
+        if (Items[itemN].shown != "1") continue;
+        if (Items[itemN].startLocation == sLocationName && Items[itemN].startLocator == sLocator) return true;
     }
     return false;
 }
 
+// > случайный из локаторов item<n>
 string GetFreeRandomItemLocator(string sLocationName)
 {
-	string sRandItem;
-	string items[2];
-    //заполняем массив локаторов
-	for(int i = 1; i < 16; i++)
+	string sBusy = ",";
+	int i, iPick, nFree = 0;
+
+	for (i = 0; i < ITEMS_QUANTITY; i++)
 	{
-		ArrayAddValue(&items, "item" + i);
+		if (Items[i].shown != "1") continue;
+		if (Items[i].startLocation != sLocationName) continue;
+		sBusy = sBusy + Items[i].startLocator + ",";
 	}
 
-	while(!ArrayIsEmpty(&items))
+	if (sBusy == ",") return "item" + (1 + rand(14)); // > занятых нет
+
+	for (i = 1; i < 16; i++)
 	{
-		sRandItem = ArrayGetRandomValue(&items);
-		if (CheckFreeItemLocator(sLocationName, sRandItem))
-		    ArrayRemoveValue(&items, sRandItem);
-		else
-		    return sRandItem;
+		if (!HasStr(sBusy, ",item" + i + ","))
+			nFree++;
 	}
 
-	trace("Не удалось найти свободный локатор в " + sLocationName);
+	if (nFree == 0)
+	{
+		trace("Не удалось найти свободный локатор в " + sLocationName);
+		return "item1";
+	}
+
+	iPick = rand(nFree - 1); // > порядковый номер среди свободных
+
+	for (i = 1; i < 16; i++)
+	{
+		if (HasStr(sBusy, ",item" + i + ",")) continue;
+		if (iPick == 0) return "item" + i;
+		iPick--;
+	}
+
 	return "item1";
 }
 
@@ -1192,9 +1217,16 @@ bool DoReloadFromWorldMapToLocation(string idLocation, string idGroup, string id
 	QuitFromWorldMap();
 	return true;
 }
+
+void ReloadFromWMtoL_complete_EventHandler()
+{
+    DelEventHandler("ReloadFromWMtoL_complete_Event", "ReloadFromWMtoL_complete_EventHandler");
+    ReloadFromWMtoL_complete();
+}
+
 void ReloadFromWMtoL_complete()
 {
-	if( !CheckAttribute(pchar,"tmpWDMtoLand") ) return;
+	if (!CheckAttribute(pchar,"tmpWDMtoLand")) return;
 	//ChangeCharacterAddressGroup( pchar, pchar.tmpWDMtoLand.location, pchar.tmpWDMtoLand.group, pchar.tmpWDMtoLand.locator );
 	//LoadLocation(&Locations[FindLocation(pchar.tmpWDMtoLand.location)]);
 	DoReloadCharacterToLocation(pchar.tmpWDMtoLand.location, pchar.tmpWDMtoLand.group, pchar.tmpWDMtoLand.locator);  // boal чтоб была заставка
@@ -1226,14 +1258,19 @@ bool DoReloadFromSeaToLocation(string idLocation, string idGroup, string idLocat
 	CreateEntity(&reload_fader, "fader");
 	if (IsEntity(&reload_fader) == 0) Trace("Reload fader not created!!!");
 	float fadeOutTime = 0.5;
-	SendMessage(&reload_fader, "lfl", FADER_OUT, fadeOutTime, true);
+	SendMessage(&reload_fader, "lfl", FADER_OUT, fadeOutTime, false);
 	SendMessage(&reload_fader, "l", FADER_STARTFRAME);
 	return true;
 }
 void EndReloadToLocation()
 {
 	DelEventHandler("FaderEvent_EndFade", "EndReloadToLocation");
-	ReloadFromWMtoL_complete();
+	if (IsEntity(&reload_fader))
+	{
+	    DeleteClass(&reload_fader);
+	}
+	SetEventHandler("ReloadFromWMtoL_complete_Event", "ReloadFromWMtoL_complete_EventHandler", 1);
+	PostEvent("ReloadFromWMtoL_complete_Event", 2);
 }
 // boal 02.09.06 перегруз и кают и палуб в море на сушу -->
 void DoReloadFromDeckToLocation(string idLocation, string idGroup, string idLocator)
@@ -1632,8 +1669,8 @@ void CompleteQuestName(string sQuestName, string qname)
 	else
 	{
 		QuestComplete(sQuestName, qname);
-		//TODO: стартовая линейка Мишеля
-		//FranceLineQuestComplete(sQuestName, qname);
+		LeBasqueQuestComplete(sQuestName, qname); //DLC "Буканьеры"
+		FranceLineQuestComplete(sQuestName, qname); //Стартовая линейка Мишеля де Граммона
 	}
 }
 
@@ -1758,7 +1795,7 @@ void SetTimerConditionParam(string _name, string _quest, int _year, int _month, 
 {
     while (_hour > 23)
 	{
-		_hour -= 23;
+		_hour -= 24;
 		_day += 1;
 	}
 	PChar.quest.(_name).win_condition.l1            = "Timer";
@@ -1781,7 +1818,7 @@ void SetTimerConditionParamFunction(string _name, string _quest, int _year, int 
 {
     while (_hour > 23)
 	{
-		_hour -= 23;
+		_hour -= 24;
 		_day += 1;
 	}
 	PChar.quest.(_name).win_condition.l1            = "Timer";
@@ -1813,7 +1850,7 @@ void SetTimerConditionParamHourEx(string _name, string _quest, int _year, int _m
 {
     while (_hour > 23)
 	{
-		_hour -= 23;
+		_hour -= 24;
 		_day += 1;
 	}
 	PChar.quest.(_name).win_condition.l1            = "Timer";
@@ -1933,7 +1970,7 @@ void SetFunctionTimerConditionParam(string _name, int _year, int _month, int _da
 {
     while (_hour > 23)
 	{
-		_hour -= 23;
+		_hour -= 24;
 		_day += 1;
 	}
 	PChar.quest.(_name).win_condition.l1            = "Timer";
@@ -1966,6 +2003,33 @@ void SetFunctionLocationCondition(string _name, string _location, bool _again)
 	{
 		DeleteAttribute(Pchar, "quest."+_name+".again");
 	}
+}
+
+void SetFunctionLocationConditionDelay(string _name, string _location, bool _again, float _delay) // andre39966 - прерывание с отложеным вызовом
+{
+	PChar.quest.(_name).win_condition.l1 = "location";
+	PChar.quest.(_name).win_condition.l1.location = _location;
+
+	PChar.quest.(_name).function = "SetFunctionLocationConditionDelay_Execute";
+	PChar.quest.(_name).delayFunction = _name;
+	PChar.quest.(_name).delayTime = _delay;
+
+	if (_again)
+	{
+		PChar.quest.(_name).again = true;
+	}
+	else
+	{
+		DeleteAttribute(PChar, "quest." + _name + ".again");
+	}
+}
+
+void SetFunctionLocationConditionDelay_Execute(string qName)
+{
+	string sFunc = PChar.quest.(qName).delayFunction;
+	float fDelay = stf(PChar.quest.(qName).delayTime);
+
+	DoQuestFunctionDelay(sFunc, fDelay);
 }
 
 void SetFunctionLocationNationCondition(string _name, string _location, int _nation, bool _again)
@@ -2872,7 +2936,7 @@ bool CheckQuestInfo()
 		attributeName = GetAttributeName(arTmp);
 		if (!CheckAttribute(pchar, "QuestInfo." + attributeName + ".InfoType"))
 		{
-			if (sti(pchar.QuestInfo.(attributeName).Complete) == false && CheckAttribute(pchar, "QuestInfo."+attributeName+ ".color")) return true;
+			if (CheckAttrValue(pchar, "QuestInfo." + attributeName + ".Complete", "0") && CheckAttribute(pchar, "QuestInfo."+attributeName+ ".color")) return true;
 		}
 	}
 	return false;

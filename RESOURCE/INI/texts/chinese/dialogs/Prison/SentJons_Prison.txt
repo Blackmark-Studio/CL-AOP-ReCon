@@ -1,18 +1,18 @@
 SentJons_Prison_1 {
-说吧，我听着。
+说吧， 我听着。 
 }
 SentJons_Prison_2_m {
-我搞错了。告辞。
+我搞错了。 告辞。 
 }
 SentJons_Prison_2_f {
-我搞错了。告辞。
+我搞错了。 告辞。 
 }
 SentJons_Prison_3 {
-我要见Lieutenant Alan MacLean。
+我要见艾伦.麦克莱恩中尉。 
 }
 SentJons_Prison_4 {
-不可能。
+不可能。 
 }
 SentJons_Prison_5 {
-什么都有可能，不过为此老子得把你们全宰了。准备战斗！
+什么都有可能， 不过为此我得把你们全宰了。 准备战斗！ 
 }

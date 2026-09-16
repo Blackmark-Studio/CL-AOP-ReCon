@@ -1,39 +1,39 @@
 Bridgetown_Usurer_1 {
-什么问题？
+什么问题？ 
 }
 Bridgetown_Usurer_2 {
-你想干什么？
+你想干什么？ 
 }
 Bridgetown_Usurer_3 {
 @<RandPhraseSimple>
 }
 Bridgetown_Usurer_4 {
-前不久你还想问我点什么……
+前不久你还想问我点什么…… 
 }
 Bridgetown_Usurer_5 {
-嗯，让我猜猜……又没什么重要的事吧？
+嗯， 让我猜猜…… 又没什么重要的事吧？ 
 }
 Bridgetown_Usurer_6 {
-听着，俺只管钱，不负责回答问题……
+听着， 我只管钱， 不负责回答问题…… 
 }
 Bridgetown_Usurer_7_m {
-我改主意了……
+我改主意了…… 
 }
 Bridgetown_Usurer_7_f {
-我改变主意了……
+我改变主意了…… 
 }
 Bridgetown_Usurer_8 {
-我现在没什么可说的。
+我现在没什么可说的。 
 }
 Bridgetown_Usurer_9 {
 @<RandPhraseSimple>
 }
 Bridgetown_Usurer_10 {
-嗯，我的记忆好像有点问题……
+嗯， 我的记忆好像有点问题…… 
 }
 Bridgetown_Usurer_11 {
-你猜对了，抱歉……
+你猜对了， 抱歉…… 
 }
 Bridgetown_Usurer_12 {
-我明白……
+我明白…… 
 }

@@ -235,7 +235,7 @@ void DailyEatCrewUpdateForShip(ref rChar, bool IsCompanionTraveler) // IsCompani
 		{
 			if (iGoodMeds < 1)
 			{
-				if(!IsCompanionTraveler) Log_Info(StringFromKey("InfoMessages_95", UpperFirst(XI_ConvertString("musicmod_s")), rChar.Ship.Name, FindSailorString(cn, "No")));
+				if(!IsCompanionTraveler) Log_Info(StringFromKey("InfoMessages_95", UpperFirst(XI_ConvertString("Continuous music ship")), rChar.Ship.Name, FindSailorString(cn, "No")));
 				iCrewQty = iCrewQty - cn;
 				Statistic_AddValue(pchar, "Sailors_dead", cn);
 				rChar.Ship.Crew.Quantity = iCrewQty;
@@ -266,7 +266,7 @@ void DailyEatCrewUpdateForShip(ref rChar, bool IsCompanionTraveler) // IsCompani
 		if (iGoodMeds < 16)
 		{
 			if (!IsCompanionTraveler)
-				Log_Info(StringFromKey("InfoMessages_71", UpperFirst(XI_ConvertString("musicmod_s")), rChar.Ship.Name));
+				Log_Info(StringFromKey("InfoMessages_71", UpperFirst(XI_ConvertString("Continuous music ship")), rChar.Ship.Name));
 		}
 		// рабы
 		cn = iGoodSlaves / 10;
@@ -280,7 +280,7 @@ void DailyEatCrewUpdateForShip(ref rChar, bool IsCompanionTraveler) // IsCompani
 				if (or(!CheckOfficersPerk(rChar, "LifeSupport"), CheckOfficersPerk(rChar, "LifeSupport") && rand(9) < 4)) // KZ > перк "Поддержание жизни" снижает риск смерти рабов на 60%
 				{
 					if (!IsCompanionTraveler)
-						Log_Info(StringFromKey("InfoMessages_95", UpperFirst(XI_ConvertString("musicmod_s")), rChar.Ship.Name, FindSailorString(cn, "No")));
+						Log_Info(StringFromKey("InfoMessages_95", UpperFirst(XI_ConvertString("Continuous music ship")), rChar.Ship.Name, FindSailorString(cn, "No")));
 					
 					RemoveCharacterGoodsSelf(rChar, GOOD_SLAVES, cn);
 				}
@@ -309,7 +309,7 @@ void DailyEatCrewUpdateForShip(ref rChar, bool IsCompanionTraveler) // IsCompani
 			{
 				if(!IsCompanionTraveler)
 				{
-					Log_Info(StringFromKey("InfoMessages_96", UpperFirst(XI_ConvertString("musicmod_s")), rChar.Ship.Name));
+					Log_Info(StringFromKey("InfoMessages_96", UpperFirst(XI_ConvertString("Continuous music ship")), rChar.Ship.Name));
 					PlaySound("Notebook_1"); // Hokkins: произведем звук, когда ром закончится.
 				}
 			}
@@ -346,7 +346,7 @@ void DailyEatCrewUpdateForShip(ref rChar, bool IsCompanionTraveler) // IsCompani
 		{
 			if (!IsCompanionTraveler)
 			{
-				Log_Info(StringFromKey("InfoMessages_97", UpperFirst(XI_ConvertString("musicmod_s")), rChar.Ship.Name, FindDaysString(cn)));
+				Log_Info(StringFromKey("InfoMessages_97", UpperFirst(XI_ConvertString("Continuous music ship")), rChar.Ship.Name, FindDaysString(cn)));
 				Log_Info(StringFromKey("InfoMessages_98"));
 				PlaySound("Notebook_1");
 			}
@@ -358,7 +358,7 @@ void DailyEatCrewUpdateForShip(ref rChar, bool IsCompanionTraveler) // IsCompani
 		RemoveCharacterGoodsSelf(rChar, GOOD_FOOD, iCrewQty);
 		PlaySound("Notebook_1");
 		
-		if(!IsCompanionTraveler) Log_Info(StringFromKey("InfoMessages_100", UpperFirst(XI_ConvertString("musicmod_s")), rChar.Ship.Name));
+		if(!IsCompanionTraveler) Log_Info(StringFromKey("InfoMessages_100", UpperFirst(XI_ConvertString("Continuous music ship")), rChar.Ship.Name));
 		
 		if(sti(rChar.index) == GetMainCharacterIndex())
 		{

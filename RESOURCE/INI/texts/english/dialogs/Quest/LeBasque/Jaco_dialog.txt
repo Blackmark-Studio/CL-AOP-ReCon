@@ -1,0 +1,184 @@
+Jaco_dialog_1 {
+Monsieur Rimalie! A whole dozen men armed to the teeth are coming this way. And two more behind them are dragging mortars and loading them as they walk.
+}
+Jaco_dialog_2 {
+What else could I do? Some of my people may still be alive. I couldn't simply forget about them.
+}
+Jaco_dialog_3 {
+And Mansfield received you?
+}
+Jaco_dialog_4 {
+He did. Didn't even call for his cutthroats. He heard me out, then offered a bargain: I do one job for him, and he tells me everything he knows about my ship and crew.
+}
+Jaco_dialog_5 {
+What job?
+}
+Jaco_dialog_6 {
+Get his gunner, Rene Duval, out of the Santo Domingo prison.
+}
+Jaco_dialog_7 {
+Out of a Spanish prison? Alone?
+}
+Jaco_dialog_8 {
+I wasn't supposed to storm it. Mansfield's men are known by sight in Santo Domingo; I wasn't. I was to enter as a harbor messenger, bribe a clerk, and lead Duval out through the service entrance.
+}
+Jaco_dialog_9 {
+All that for... an ordinary gunner?
+}
+Jaco_dialog_10 {
+Duval is no ordinary gunner. The devil himself favors him. When he was barely more than a boy, one shot from a twelve-pound culverin sent the Spanish heavy galleon 'La Purisima' to the bottom. Six months ago an English patrol took after their brig. Duval dismasted it in minutes and the brig sailed away without trouble. There are dozens of stories like that. Mansfield says a man like him is worth more than a whole chest of gold.
+}
+Jaco_dialog_11 {
+Judging by the fact that Duval is still in prison, things didn't go according to plan.
+}
+Jaco_dialog_12 {
+It all fell apart before I even reached the prison. A man sat down beside me in the tavern and said the plan had changed. The clerk was under suspicion, and Duval was to be moved to another cell. I was supposed to meet the man in the alley behind the prison.
+}
+Jaco_dialog_13 {
+And you believed him?
+}
+Jaco_dialog_14 {
+He knew the clerk's name, the guard's name, and the amount I was supposed to hand over. How was I to know we'd been betrayed?
+}
+Jaco_dialog_15 {
+What was waiting for you in the alley?
+}
+Jaco_dialog_16 {
+Three Spaniards. They tried to take me alive, but I broke free. After that the whole scheme was exposed: the clerk was arrested, the guard removed from his post, and Duval moved under guard deep inside the prison. No messenger or physician can get near him now.
+}
+Jaco_dialog_17 {
+What did Mansfield say when you returned?
+}
+Jaco_dialog_18 {
+I didn't return. What was I supposed to tell him? The money was gone, his people exposed, and Duval guarded more closely than ever. Mansfield has no use for excuses.
+}
+Jaco_dialog_19 {
+And now he thinks you ran away.
+}
+Jaco_dialog_20 {
+Or sold out to the Spaniards. His men are already combing Hispaniola for me.
+}
+Jaco_dialog_21 {
+You're really willing to go into Santo Domingo for my sake?
+}
+Jaco_dialog_22 {
+Not only for you. As long as Mansfield is hunting you, Nicolas won't go anywhere. And I need to deliver him to le Basque. Our affairs are tied together now.
+}
+Jaco_dialog_23 {
+Cap'n, I thought I was done for! You came just in time.
+}
+Jaco_dialog_24 {
+Your precious hat showed me the way. It's lying in the jungle on the approach to the cave. Knowing you, it was obvious you'd sooner lose your head than leave that hat behind.
+}
+Jaco_dialog_25 {
+So it's still there! We'll pick it up on the way back. More importantly, Cap'n... They grabbed me right on the trail. Looks like they'd been watching the outpost. But they're rotten spies - talked in front of me as if I were already dead.
+}
+Jaco_dialog_26 {
+And what useful thing did you learn?
+}
+Jaco_dialog_27 {
+A certain Quesada smelled trouble even before you went after Molina. Word reached him that someone in Havana was asking far too many questions about Vargas's affairs. He advised Don Diego to lie low and start looking for the bloodhound. Meanwhile his men were sent to different corners of the archipelago to strengthen their positions and await a signal. I couldn't make out the other names, but I remember the places perfectly. Le Basque will definitely find that useful.
+}
+Jaco_dialog_28 {
+So Vargas is already preparing openly for war. Come on, Jaco. You'll bring this news to Michel yourself.
+}
+Jaco_dialog_29 {
+You wound me, Monsieur Marceau! I'll make eyes at his sweetheart - he'll come looking for me himself and will surely want to settle matters somewhere outside town. That's where I'll grab him.
+}
+Jaco_dialog_30 {
+Captain @<pchar>! Monsieur Marceau! Took some effort, but I trussed the rogue up. You were right - love really does make fools of men.
+}
+Jaco_dialog_31 {
+Excellent work. Did he talk? How do we get to Vela?
+}
+Jaco_dialog_32 {
+I shook a few things out of him. The meeting is set for one in the morning at the town church. He admitted Vela is suspicious to the point of madness. Before the Spaniard will even speak to anyone in the church, we'll have to place a special token on the lectern - a Venetian zecchino - and give the correct countersign. Just in case, the lectern is that wooden stand with the book on it...
+}
+Jaco_dialog_33 {
+A Venetian zecchino? Well, well. And where's the coin? Did you take it?
+}
+Jaco_dialog_34 {
+That's the trouble! The bastard dug his heels in. Says the coin is hidden safely, and he'll give up the password only on his deathbed. I've already knocked out a couple of his teeth, and he still won't talk.
+}
+Jaco_dialog_35 {
+Hmm... I see. I'll have to deal with him myself. Where are you holding him?
+}
+Jaco_dialog_36 {
+I dragged him to Fajardo Beach, closer to our ship.
+}
+Jaco_dialog_37 {
+Wait here. I'll be back soon. With the coin.
+}
+Jaco_dialog_38 {
+Captain! You're back. Monsieur Marceau has already finished his business and left. He asked me to give you this. Said the final chord is in this envelope.
+}
+Jaco_dialog_39 {
+Give it here. And another thing, Jaco... Next time search your prisoners more carefully! And tie them tighter, damn it.
+}
+Jaco_dialog_40 {
+Uh... what happened, Captain?
+}
+Jaco_dialog_41 {
+Your 'securely tied' prisoner had that very gold zecchino hidden in his boot. Then he managed to loosen the knots, shot one of our sailors, and came at me. I had to kill him.
+}
+Jaco_dialog_42 {
+Damn... Forgive me, Captain. I swear I thought I'd pulled those knots tight enough to stop an ox, and I turned his pockets inside out! I've learned my lesson. It won't happen again.
+}
+Jaco_dialog_43 {
+I hope so. In our trade, mistakes like that cost lives. All right, the job is done... I have the token and the letter. I'm going to the church to meet Vela. Return to the ship and wait for me there.
+}
+Jaco_dialog_44_m {
+Mon Dieu! You carved him up! One on one! A pity Monsieur le Basque didn't see it.
+}
+Jaco_dialog_44_f {
+Mon Dieu! You carved him up! One on one! A pity Monsieur le Basque didn't see it.
+}
+Jaco_dialog_45 {
+Hmm... You acquitted yourself no worse than I did today, Jaco. Maybe you'll amount to something after all, ha-ha.
+}
+Jaco_dialog_46 {
+You should've seen their faces when I told them there'd be no silver. I thought they'd burn me alive on the spot!
+}
+Jaco_dialog_47 {
+Now you'll certainly have something to brag about to the girls, ha-ha. Go on, look around. Perhaps you'll find a trophy you fancy.
+}
+Jaco_dialog_48 {
+Ah, our triumphant hero! Sit down, Captain, try this Bordeaux! I swear, your steel sang louder and sweeter in those jungles than the strings of the finest lutenist in all Paris!
+}
+Jaco_dialog_49 {
+Have you ever even been to Paris, Jaco? Never mind. Drink up. Your trickery saved us no fewer lives than my steel did.
+}
+Jaco_dialog_50 {
+Captain, this is outrageous! I fought Spaniards, crawled through jungles, nearly lost my head - and now these girls shove a bucket into my hands and order me to fetch water!
+}
+Jaco_dialog_51 {
+Looks like another heroic feat awaits you.
+}
+Jaco_dialog_52 {
+Very funny. After all that, I expected to be welcomed with honors. Instead they're turning me into a water carrier!
+}
+Jaco_dialog_53 {
+What, you think brave men never carry water? That it appears in their buckets by magic?
+}
+Jaco_dialog_54 {
+But there are a dozen idlers here! Why me?
+}
+Jaco_dialog_55 {
+Apparently they like you. Go on, Jaco. Don't keep the girls waiting.
+}
+Jaco_dialog_56 {
+Captain, if anyone asks, tell them Michel urgently needed me. Very urgently. Otherwise no one here will respect me!
+}
+Jaco_dialog_57 {
+Too late, Jaco. They already know where to find you. Go get the buckets.
+}
+Jaco_dialog_58 {
+Captain, you should see those girls! Yesterday I was just some water carrier to them, and now they've finally realized who they're dealing with. Every one of them wants to hear how we took the 'Margarita', and not one is laughing anymore!
+}
+Jaco_dialog_59 {
+So all it took to conquer the ladies' hearts was robbing a well-guarded Spanish galleon? Well, Jaco, enjoy it while it lasts. Feats like that are quickly forgotten.
+}
+
+LeBasque_Young_Boy_Bask_1 {
+Are your ears blocked? I was collecting herbs! Herbs. I don't know any Leru... Cough, cough... Looks like now you'll have to collect your own entrails.
+}

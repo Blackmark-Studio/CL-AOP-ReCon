@@ -1229,7 +1229,7 @@ Common_Tavern_364 {
 Alles Gute.
 }
 Common_Tavern_365 {
-Natürlich habe ich, was Sie brauchen, Doctor Blood. Mr. Griffin, dessen Bruch Sie vor Kurzem behandelt haben, ist von Beruf ein erfahrener Büchsenmacher. Sein Haus liegt nicht weit vom Anwesen des Gouverneurs Steed – besuchen Sie ihn doch. Ich bin sicher, er wird Sie nicht abweisen.
+Hm... Na gut, ich weiß, wen Sie brauchen. Mister Griffin, dessen Bruch Sie vor nicht allzu langer Zeit eingerichtet haben, ist von Beruf ein alter Büchsenmacher. Sein Haus liegt nicht weit vom Anwesen von Gouverneur Steed - suchen Sie ihn auf. Ich bin sicher, er wird Sie nicht abweisen.
 }
 Common_Tavern_366 {
 Alles Gute.
@@ -1491,4 +1491,13 @@ Danke! Du hast mir wirklich geholfen!
 }
 Common_Tavern_432 {
 Ich muss einen Teil meines Mannschaft entlassen.
+}
+
+LeBask_TavernRoom_1
+{
+Monsieur Etienne Marceau hat mein Zimmer gemietet und bereits einen Monat im Voraus bezahlt. Daher kann ich Ihnen leider nicht helfen, Kapitän.
+}
+LeBask_TavernRoom_2
+{
+Schade, wirklich schade...
 }

@@ -777,6 +777,33 @@ void StoreInit()
 	Stores[Providencia_STORE].Trade.Export.id2 = GOOD_WEAPON;
 	Stores[Providencia_STORE].Trade.Export.id3 = GOOD_GOLD;
 	Stores[Providencia_STORE].Trade.Export.id4 = GOOD_TOBACCO;
+
+	// Gibraltar
+	Stores[Gibraltar_STORE].Colony = "Gibraltar";
+	Stores[Gibraltar_STORE].group  = "Gibraltar";
+	Stores[Gibraltar_STORE].StoreSize = "medium";
+
+	Stores[Gibraltar_STORE].Trade.Export.id1 = GOOD_GOLD;
+	Stores[Gibraltar_STORE].Trade.Export.id2 = GOOD_SILVER;
+	Stores[Gibraltar_STORE].Trade.Export.id3 = GOOD_MAHOGANY;
+	Stores[Gibraltar_STORE].Trade.Export.id4 = GOOD_EBONY;
+	Stores[Gibraltar_STORE].Trade.Export.id5 = GOOD_PLANKS;
+	Stores[Gibraltar_STORE].Trade.Export.id6 = GOOD_SANDAL;
+	Stores[Gibraltar_STORE].Trade.Export.id7 = GOOD_SUGAR;
+
+	Stores[Gibraltar_STORE].Trade.Import.id1 = GOOD_CLOTHES;
+	Stores[Gibraltar_STORE].Trade.Import.id2 = GOOD_BRICK;
+	Stores[Gibraltar_STORE].Trade.Import.id3 = GOOD_MEDICAMENT;
+	Stores[Gibraltar_STORE].Trade.Import.id4 = GOOD_RUM;
+	Stores[Gibraltar_STORE].Trade.Import.id5 = GOOD_POWDER;
+	Stores[Gibraltar_STORE].Trade.Import.id6 = GOOD_WINE;
+	Stores[Gibraltar_STORE].Trade.Import.id7 = GOOD_WHEAT;
+
+	Stores[Gibraltar_STORE].Trade.Contraband.id1 = GOOD_SLAVES;
+	Stores[Gibraltar_STORE].Trade.Contraband.id2 = GOOD_WEAPON;
+	Stores[Gibraltar_STORE].Trade.Contraband.id3 = GOOD_FRUITS;
+	Stores[Gibraltar_STORE].Trade.Contraband.id4 = GOOD_COTTON;
+	Stores[Gibraltar_STORE].Trade.Contraband.id5 = GOOD_LEATHER;
 	
 	// Заглушка
 	Stores[SHIP_STORE].Colony = "none";

@@ -79,6 +79,20 @@ bool LAi_CharacterLogin(aref chr, string locID)
 			// boal fix fort officers <--
 		}
 	}
+	//ле баск, шестой квест
+	int iAoPEmptyColony = FindColony("Maracaibo");
+	if (iAoPEmptyColony >= 0 && CheckAttribute(&Colonies[iAoPEmptyColony], "AoP.KeysLagoonEmpty"))
+	{
+		int iAoPEmptyLoc = FindLocation(locID);
+		if (iAoPEmptyLoc >= 0 && CheckAttribute(&Locations[iAoPEmptyLoc], "townsack") && Locations[iAoPEmptyLoc].townsack == "Maracaibo")
+		{
+			if (CheckAttribute(chr, "City"))
+			{
+				if (chr.City == "Maracaibo") isLogin = false;
+			}
+			if (CheckAttribute(chr, "CityType")) isLogin = false;
+		}
+	}
 	if(!isLogin) return false;
 	//Если персонажей больше максимального числа, незагружаем больше
 	if(LAi_numloginedcharacters >= MAX_CHARS_IN_LOC)
@@ -213,12 +227,15 @@ bool LAi_CharacterLogin(aref chr, string locID)
 
 void LAi_CharacterPostLogin(ref location)
 {
+	string sLocator;
+	bool bAoPEmptyMaracaibo = false;
+	int iAoPEmptyMaracaiboColony = -1;
 	if (bSeaActive && !LAi_IsBoardingProcess()) //HardCoffee заселим корабль
 	{
-		string sMyCabin = Get_My_Cabin();
-		switch(location.id)
+		sLocator = Get_My_Cabin();
+		switch (location.id)
 		{
-			case sMyCabin: SetOfficersInCabin(); break;
+			case sLocator: SetOfficersInCabin(); break;
 			case "My_Deck": SetPrisonerInHold(); break; // трюм с зэками
 			case "My_Campus": SetOfficersInCampus(); break; // кают-компания
 			case "My_Deck_Medium": SetSailorsInGunDeck(location); break; //матросы на орудийной палубе
@@ -226,74 +243,149 @@ void LAi_CharacterPostLogin(ref location)
 		}
 	}
 
-	if (LAi_IsBoarding) return; //В морском бою ненадо никого загружать
+	if (LAi_IsBoarding) return; //ГГ находится на корабле
 
 	//Расставляем последователей
-	for (int i = 0; i < LAi_numloginedcharacters; i++)
+	sLocator = "";
+	float x, y, z;
+	int i, idx, q;
+	ref rChr;
+	//Получим координаты игрока
+	if (GetCharacterPos(pchar, &x, &y, &z))
 	{
-		int idx = LAi_loginedcharacters[i];
-		if (idx >= 0)
+		for (i = 0; i < LAi_numloginedcharacters; i++)
 		{
-			//Просматриваем последователей
-			ref chr = &Characters[idx];
-			if(CheckAttribute(chr, "location.follower") != false)
+			idx = LAi_loginedcharacters[i];
+			if (idx < 0) continue;
+
+			rChr = &Characters[idx];
+
+            if (CheckAttribute(rChr, "SavedTeleportPos"))
+            {
+                if (!SendMessage(rChr, "lffff", MSG_CHARACTER_TELEPORT_AY, makefloat(rChr.SavedTeleportPos.x)
+                , makefloat(rChr.SavedTeleportPos.y), makefloat(rChr.SavedTeleportPos.z), makefloat(rChr.SavedTeleportPos.ay)))
+                    Trace("WARNING: LAi_CharacterPostLogin SavedTeleportPos false");
+
+                continue;
+            }
+
+			if (!CheckAttribute(rChr, "location.follower")) continue;
+
+			if (rChr.id == "CangGirl")
 			{
-				//Получим координаты игрока
-				float x, y, z;
-				if(GetCharacterPos(pchar, &x, &y, &z) == false)
-				{
-					x = 0.0; y = 0.0; z = 0.0;
-				}
-				//Ищем свободный ближайший локатор
-				string locator = LAi_FindNearestFreeLocator("goto", x, y, z);
-				if (locator != "")
-				{
-					TeleportCharacterToLocator(chr, "goto", locator);
-					CharacterTurnByChr(chr, pchar);
-				}
-				else
-				{
-					Trace("Can't find good locator for follower character <" + chr.id + ">");
-				}
+				if (TeleportCharacterToLocator(rChr, pchar.location.group, pchar.location.locator))
+					continue;
+			}
+			else if (rChr.id == "JusticeOnSale_Smuggler")
+			{
+				if (CheckAttribute(PChar, "GenQuest.JusticeOnSale.Escape") && PChar.GenQuest.JusticeOnSale.Escape == "1") //Этот чел ранее заспавнился возле гг
+					continue;
+			}
+			//Ищем свободный ближайший локатор
+			sLocator = LAi_FindNearestFreeLocator("goto", x, y, z); //HardCoffee TODO: зачем так далеко спавнить?
+			if (sLocator != "")
+			{
+				TeleportCharacterToLocator(rChr, "goto", sLocator);
+				CharacterTurnByChr(rChr, pchar);
+			}
+			else
+			{
+				Trace("Can't find good locator for follower character <" + rChr.id + ">");
 			}
 		}
+		// new. Любой НПС в пассажирах или компаньон будет следовать за ГГ ВЕЗДЕ и драться в случае чего. Приписать к НПС sld.FreeFighter = true; и готово.
+		q = GetPassengersQuantity(pchar);
+		for (i = 0; i < q; i++)
+		{
+			idx = GetPassenger(pchar, i);
+			if (idx < 0) continue;
+			rChr = &characters[idx];
+			if (!CheckAttribute(rChr, "FreeFighter")) continue;
+
+			ChangeCharacterAddressGroup(rChr, location.id, pchar.location.group, pchar.location.locator);
+			LAi_SetOfficerType(rChr);
+		}
+
+		for (i = 1; i < COMPANION_MAX; i++)
+		{
+			idx = GetCompanionIndex(pchar, i);
+			if (idx < 0) continue;
+			rChr = &characters[idx];
+			if (!CheckAttribute(rChr, "FreeFighter")) continue;
+
+			ChangeCharacterAddressGroup(rChr, location.id, pchar.location.group, pchar.location.locator);
+			LAi_SetOfficerType(rChr);
+		}
+		for (i = 0; i < MAX_CHARACTERS; i++)
+		{
+			rChr = &characters[i];
+			if (!CheckAttribute(rChr, "FreeFighter")) continue;
+			if (!CheckAttribute(rChr, "id")) continue;
+			if (rChr.id == pchar.id) continue;
+			if (LAi_IsDead(rChr)) continue;
+			if (rChr.location == location.id) continue;
+
+			ChangeCharacterAddressGroup(rChr, location.id, pchar.location.group, pchar.location.locator);
+			LAi_SetOfficerType(rChr);
+			LAi_tmpl_SetFollow(rChr, pchar, -1.0);
+		}
 	}
+	else
+	{
+	    Trace("LAi_CharacterPostLogin Can't GetCharacterPos");
+	}
+
 	if (!actLoadFlag)
 	{
 		QuestsCheck(); // в начале квесты, иначе нет перехвата
 		
+		//ле баск, шестой квест
+		iAoPEmptyMaracaiboColony = FindColony("Maracaibo");
+		if (iAoPEmptyMaracaiboColony >= 0 && CheckAttribute(&Colonies[iAoPEmptyMaracaiboColony], "AoP.KeysLagoonEmpty"))
+		{
+			if (CheckAttribute(location, "townsack") && location.townsack == "Maracaibo") bAoPEmptyMaracaibo = true;
+		}
+		
 		//Расставляем квестовых энкаунтеров
-		LAi_CreateEncounters(location); //eddy. монстры не нужны здесь
+		if (!bAoPEmptyMaracaibo) LAi_CreateEncounters(location); //eddy. монстры не нужны здесь
 		LAi_CreateSecretChest(location); //HardCoffee создание тайников с хабаром и тайников от викторинщиков
 		LAi_CreateShoreChest(location); // Jason: выброшенные сундуки на берег
 		HarvestHerbAuto(location); // KZ > травы
-		LAi_CreateMonsters(location); //Расставляем монстров
-		
-		// ОЗГи
-		LandHunterReactionResult(location);
-		
-		// заполнение фантомами локаций
-		CreateCitizens(location);
-		CreateHabitues(location);
-		CreateIncquisitio(location);
-        CreateMaltains(location); // Jason: база мальтийцев Hirurg39
-		CreateAmmo(location); // Jason: оружейная
-		CreateMayak(location);
-		CreateBrothels(location);
-		CreatePearlVillage(location);
-		CreateInsideHouseEncounters(location);
-		CreateInsideResidenceEncounters(location);
-		CreateSkladInsideEncounters(location);
-		CreateJail(location);
-		CreateFortsNPC(location);
-		CreateLostShipsCity(location);
-		CreatPlantation(location); // homo плантация
-		CreatMinetown(location);// homo рудник
-		CreatUnderwater(location);
-		CreatTenochtitlan(location);
-		CreatTenochtitlanInside(location);
-		CreatDesMoines(location);
-		CreateHWICOffice(location); // Jason: офис ГВИК
+		if (!bAoPEmptyMaracaibo)
+		{
+			LAi_CreateMonsters(location); //Расставляем монстров
+			
+			// ОЗГи
+			LandHunterReactionResult(location);
+			
+			// заполнение фантомами локаций
+			CreateCitizens(location);
+			CreateBucaneerOutpostCitizens(location); // ле Баск.
+			CreateBucaneerOutpostGirls(location); // ле Баск. Девушки.
+			CreateArubaOutpostCitizens(location); // лагерь на Арубе
+			CreateArubaIndianVillage(location); // деревня карибов на Арубе
+			CreateHabitues(location);
+			CreateIncquisitio(location);
+			CreateMaltains(location); // Jason: база мальтийцев Hirurg39
+			CreateAdmiralty(location);
+			CreateAmmo(location); // Jason: оружейная
+			CreateMayak(location);
+			CreateBrothels(location);
+			CreatePearlVillage(location);
+			CreateInsideHouseEncounters(location);
+			CreateInsideResidenceEncounters(location);
+			CreateSkladInsideEncounters(location);
+			CreateJail(location);
+			CreateFortsNPC(location);
+			CreateLostShipsCity(location);
+			CreatPlantation(location); // homo плантация
+			CreatMinetown(location);// homo рудник
+			CreatUnderwater(location);
+			CreatTenochtitlan(location);
+			CreatTenochtitlanInside(location);
+			CreatDesMoines(location);
+			CreateHWICOffice(location); // Jason: офис ГВИК
+		}
 	}
 }
 

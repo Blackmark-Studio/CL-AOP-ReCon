@@ -394,6 +394,8 @@ bool LAi_group_IsEnemy(aref chr, aref trg)
 	{
 		//HardCoffee чтобы не атаковали сопровождаемую TODO: может сюда вообще всех QuestFollower посадить?
 		if ("CangGirl" == trg.id) return false;
+		// KZ > NoTarget.invisible: невидимый персонаж не считается врагом
+		if (!IsMainCharacter(chr) && LAi_NoDetectDropsTarget(trg)) return false;
 		return true;
 	}
 	return false;
@@ -622,10 +624,19 @@ void LAi_group_CheckGroupQuest(aref chr)
 //Ответная реакция на запросы
 //------------------------------------------------------------------------------------------
 
-//Обновление аларма, вызывается на каждом кадре
+float lai_alarm_update_timer = 0.0;
+
+//Обновление аларма, раз в LAI_ALARM_UPDATE (ранее вызывалось на каждом кадре)
 #event_handler("CharacterGroup_UpdateAlarm", "LAi_group_UpdateAlarm");
 void LAi_group_UpdateAlarm()
 {
+	lai_alarm_update_timer += GetRealDeltaTime();
+
+	if (lai_alarm_update_timer < LAI_ALARM_UPDATE)
+		return;
+	else
+		lai_alarm_update_timer -= LAI_ALARM_UPDATE;
+
 	LAi_grp_playeralarm = GetEventData();
 	LAi_grp_alarmactive = GetEventData();
 
@@ -634,15 +645,6 @@ void LAi_group_UpdateAlarm()
 	{
 		LAi_grp_playeralarm = 1;
 	}
-
-	/*if(CheckAttribute(pchar, "sneak.success"))
-	{
-		if(sti(pchar.sneak.success) == 1)
-		{
-			LAi_grp_playeralarm = 0.0;
-			LAi_grp_alarmactive = false;
-		}
-	}  */
 
 	Sound_OnAlarm(LAi_grp_alarmactive);
 

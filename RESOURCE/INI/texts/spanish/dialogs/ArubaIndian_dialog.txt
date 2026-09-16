@@ -1,0 +1,111 @@
+ArubaIndian_dialog_1 {
+¡No hay nada de qué hablar!
+}
+ArubaIndian_dialog_2_m {
+¿El rostro pálido quiere hablar?
+}
+ArubaIndian_dialog_2_f {
+¿La squaw blanca quiere hablar?
+}
+ArubaIndian_dialog_3_m {
+Otra vez tú, rostro pálido.
+}
+ArubaIndian_dialog_3_f {
+Otra vez tú, squaw blanca.
+}
+ArubaIndian_dialog_4_m {
+Al rostro pálido le gusta hablar. Parece una squaw.
+}
+ArubaIndian_dialog_4_f {
+A la squaw blanca le gusta hablar.
+}
+ArubaIndian_dialog_5_m {
+Los espíritus me han traído a un hermano de rostro pálido.
+}
+ArubaIndian_dialog_5_f {
+Los espíritus me han traído a una hermana de rostro pálido.
+}
+ArubaIndian_dialog_6 {
+Sí.
+}
+ArubaIndian_dialog_7 {
+Sí, otra vez yo.
+}
+ArubaIndian_dialog_8 {
+Muy poético.
+}
+ArubaIndian_dialog_9_m {
+Yo también me alegro de verte.
+}
+ArubaIndian_dialog_9_f {
+Yo también me alegro de verte.
+}
+ArubaIndian_dialog_10_m {
+Habla. ¿Para qué has venido?
+}
+ArubaIndian_dialog_10_f {
+Habla. ¿Para qué has venido?
+}
+ArubaIndian_dialog_11_m {
+Nada en particular. Solo quería escucharte hablar...
+}
+ArubaIndian_dialog_11_f {
+Nada en particular. Solo quería escucharte hablar...
+}
+ArubaIndian_dialog_12_m {
+¿El hombre blanco quiere hablar?
+}
+ArubaIndian_dialog_12_f {
+¿La squaw blanca quiere hablar?
+}
+ArubaIndian_dialog_13 {
+¿Otra vez tú, yalanaui?
+}
+ArubaIndian_dialog_14_m {
+Al rostro pálido le gusta hablar.
+}
+ArubaIndian_dialog_14_f {
+A la mujer de rostro pálido le gusta hablar.
+}
+ArubaIndian_dialog_15_m {
+Los espíritus me han traído a un hermano de rostro pálido...
+}
+ArubaIndian_dialog_15_f {
+Los espíritus me han traído a una squaw blanca...
+}
+ArubaIndian_dialog_16_m {
+@<npchar.name> te escucha, hijo del mar.
+}
+ArubaIndian_dialog_16_f {
+@<npchar.name> te escucha, hija del mar.
+}
+ArubaIndian_dialog_17_m {
+¿Qué quieres de @<npchar.name>, rostro pálido?
+}
+ArubaIndian_dialog_17_f {
+¿Qué quieres de @<npchar.name>, rostro pálido?
+}
+ArubaIndian_dialog_18_m {
+Mis oídos están abiertos a tus palabras, extranjero.
+}
+ArubaIndian_dialog_18_f {
+Mis oídos están abiertos a tus palabras, extranjera.
+}
+ArubaIndian_dialog_19_m {
+Nada en particular. Solo quería escucharte hablar...
+}
+ArubaIndian_dialog_19_f {
+Nada en particular. Solo quería escucharte hablar...
+}
+ArubaIndian_dialog_20 {
+Guarda el arma, yalanaui, ¡antes de que te obliguemos a hacerlo!
+}
+ArubaIndian_dialog_21 {
+Bien.
+}
+ArubaIndian_dialog_22 {
+De acuerdo.
+}
+ArubaIndian_dialog_23 {
+No te preocupes, ya la guardo...
+}

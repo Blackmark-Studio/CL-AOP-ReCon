@@ -30,6 +30,9 @@ void ProcessDialogEvent()
 			dialog.text = StringFromKey("Cursed_Idol_4", pchar, pchar.name);
 			link.l1 = StringFromKey("Cursed_Idol_5");
 			link.l1.go = "Vstrecha_3";
+			
+			RemoveLandQuestMark_Main(npchar, "PDM_Cursed_Idol");
+			RemoveMapQuestMark("LaVega_town", "PDM_Cursed_Idol");
 		break;
 
 		case "Vstrecha_3":
@@ -46,13 +49,12 @@ void ProcessDialogEvent()
 			link.l1.go = "exit";
 			NextDiag.TempNode = "VstrechNetAgain_1";
 			npchar.lifeday = 0;
-			RemoveLandQuestMark_Main(npchar, "PDM_Cursed_Idol");
-			RemoveMapQuestMark("LaVega_town", "PDM_Cursed_Idol");
 		break;
 
 		case "Vstrecha_4":
 			DialogExit();
 
+			LAi_SetStayType(pchar);
 			sld = CharacterFromID("James_Callow");
 			sld.dialog.filename = "Quest\PDM\Cursed_Idol.c";
 			sld.dialog.currentnode = "Vstrecha_4_1";
@@ -114,74 +116,57 @@ void ProcessDialogEvent()
 		case "VstrechaDa_1":
 			dialog.text = StringFromKey("Cursed_Idol_28", pchar);
 			link.l1 = StringFromKey("Cursed_Idol_29");
-			link.l1.go = "CodDa_1";
-			AddItemLog(pchar, "Cursed_idol", "1", StringFromKey("InfoMessages_173"), "Important_item");
+			link.l1.go = "exit";
 			NextDiag.TempNode = "VstrechDaAgain_1";
+			AddDialogExitQuestFunction("PDM_Callow_DlgExit_1");
+			AddItemLog(pchar, "Cursed_idol", "1", StringFromKey("InfoMessages_173"), "Important_item");
 		break;
 
 		case "VstrechaNet_1":
 			dialog.text = StringFromKey("Cursed_Idol_30", pchar);
 			link.l1 = StringFromKey("Cursed_Idol_31");
 			link.l1.go = "CodNet_1";
-			NextDiag.TempNode = "VstrechNetAgain_1";
 			npchar.lifeday = 0;
-			RemoveLandQuestMark_Main(npchar, "PDM_Cursed_Idol");
-			RemoveMapQuestMark("LaVega_town", "PDM_Cursed_Idol");
 		break;
 
 		case "CodDa_1":
+			DialogExit();
+			NextDiag.CurrentNode = "VstrechDaAgain_1";
 			LAi_Fade("PDM_Callow_vstaem", "");
 
 			SetQuestHeader("PDM_Cursed_Idol");
 			AddQuestRecord("PDM_Cursed_Idol", "1");
 			AddQuestUserData("PDM_Cursed_Idol", "sSex", GetSexPhrase("", "а"));
 
-			sld = CharacterFromID("Providencia_Mayor");   //ссылается на персонажа
+			sld = CharacterFromID("Providencia_Mayor");
 			ChangeCharacterAddressGroup(sld, "Providencia_town", "none", "");
-			sld = GetCharacter(NPC_GenerateCharacter("PDM_Providencia_Mayor_Klon", "Edward_Colier", "man", "man", 30, PIRATE, -1, false));   //ссылается на клона
-			sld.name = FindPersonalName("Providencia_Mayor_name");
-			sld.lastname = FindPersonalName("Providencia_Mayor_lastname");
-			sld.nation = PIRATE;
-			LAi_SetSitType(sld);
-			LAi_group_MoveCharacter(sld, "PIRATE_CITIZENS");
-			LAi_SetImmortal(sld, true);
-			GiveItem2Character(sld, GUN_COMMON);
-			GiveItem2Character(sld, BLADE_LONG);
-			LAi_SetHuberType(sld);
-			SetRandSPECIAL(sld);
-			SetSelfSkill(sld, 90, 90, 90, 60, 70);
-			sld.standUp = true; //вставать и нападать на врага
+			sld = GetCharacter(CreateCharacterClone(CharacterFromID("Providencia_Mayor"), -1));
+			sld.id = "PDM_Providencia_Mayor_Clone";
 			ChangeCharacterAddressGroup(sld, "Providencia_townhall", "sit", "sit1");
 			sld.Dialog.Filename = "Quest\PDM\Cursed_Idol.c";
 			sld.dialog.currentnode = "Colier_1";
+			LAi_SetHuberType(sld);
 			AddLandQuestMark_Main(sld, "PDM_Cursed_Idol");
-			//pchar.questTemp.PDM_PI_Skelety_v_more = "PDM_PI_Skelety_v_more";
-			//SetTimerFunction("PDM_PI_Skelety_v_more", 0, 0, 5);
-
-			NextDiag.CurrentNode = NextDiag.TempNode;
-			DialogExit();
-
-			RemoveLandQuestMark_Main(npchar, "PDM_Cursed_Idol");
-			RemoveMapQuestMark("LaVega_town", "PDM_Cursed_Idol");
 		break;
 
 		case "CodNet_1":
-			LAi_Fade("PDM_Callow_vstaem", "");
-
-			NextDiag.CurrentNode = NextDiag.TempNode;
 			DialogExit();
+			NextDiag.CurrentNode = "VstrechNetAgain_1";
+			LAi_Fade("PDM_Callow_vstaem", "");
 		break;
 
 		case "VstrechDaAgain_1":
 			dialog.text = StringFromKey("Cursed_Idol_32");
 			link.l1 = StringFromKey("Cursed_Idol_33");
 			link.l1.go = "exit";
+			NextDiag.TempNode = "VstrechDaAgain_1";
 		break;
 
 		case "VstrechNetAgain_1":
 			dialog.text = StringFromKey("Cursed_Idol_34");
 			link.l1 = StringFromKey("Cursed_Idol_35");
 			link.l1.go = "exit";
+			NextDiag.TempNode = "VstrechNetAgain_1";
 		break;
 
 		case "Colier_1":
@@ -189,27 +174,9 @@ void ProcessDialogEvent()
 			dialog.text = StringFromKey("Cursed_Idol_36", pchar);
 			link.l1 = StringFromKey("Cursed_Idol_37");
 			link.l1.go = "Colier_2";
+			RemoveLandQuestMark_Main(npchar, "PDM_Cursed_Idol");
 
-			Pchar.quest.PDM_Callow_ColierProdolg.win_condition.l1 = "Location";
-			Pchar.quest.PDM_Callow_ColierProdolg.win_condition.l1.location = "Providencia_town";
-			pchar.quest.PDM_Callow_ColierProdolg.function = "PDM_Callow_ColierProdolg";
-
-			bDisableFastReload = true;
-			LAi_LocationFightDisable(&Locations[FindLocation("Providencia_town")], true);
-			SetLocationCapturedState("Providencia_town", true);
-
-			sld = GetCharacter(NPC_GenerateCharacter("Pablo_Loco_Idol", "Winnetou", "man", "man_b", 10, PIRATE, -1, false));
-			sld.Ghost = 0.6;
-			sld.name = FindPersonalName("Pablo_Loco_Idol_name");
-			sld.lastname = "";
-			sld.talker = 7;
-			LAi_group_MoveCharacter(sld, "PIRATE_CITIZENS");
-			LAi_SetStayType(sld);
-			sld.dialog.filename = "Quest\PDM\Cursed_Idol.c";
-			sld.dialog.currentnode = "Pablo_Loco_Idol_Alternativa";
-			LAi_LoginInCaptureTown(sld, true);
-			ChangeCharacterAddressGroup(sld, "Providencia_town", "goto", "goto16");
-			AddLandQuestMark_Main(sld, "PDM_Cursed_Idol");
+			PDM_GhostSpawn();
 		break;
 
 		case "Colier_2":
@@ -333,15 +300,13 @@ void ProcessDialogEvent()
 
 			pchar.questTemp.PDM_PI_Dengi = true;
 			ChangeCharacterReputation(pchar, -2);
-			SetCurrentTime(23, 1);
-
-			RemoveLandQuestMark_Main(npchar, "PDM_Cursed_Idol");
+			TavernWaitDateEx(23);
 
 			sld = CharacterFromID("James_Callow");
 			AddLandQuestMark_Main(sld, "PDM_Cursed_Idol");
 
-			DialogExit();
 			NextDiag.CurrentNode = NextDiag.TempNode;
+			DialogExit();
 		break;
 
 		case "ColierCod_1":
@@ -349,9 +314,7 @@ void ProcessDialogEvent()
 
 			pchar.questTemp.PDM_PI_Dengi = true;
 			ChangeCharacterReputation(pchar, -2);
-			SetCurrentTime(23, 1);
-
-			RemoveLandQuestMark_Main(npchar, "PDM_Cursed_Idol");
+			TavernWaitDateEx(23);
 
 			sld = CharacterFromID("James_Callow");
 			AddLandQuestMark_Main(sld, "PDM_Cursed_Idol");
@@ -369,9 +332,8 @@ void ProcessDialogEvent()
 
 			pchar.questTemp.PDM_PI_NeVzyl = true;
 			ChangeCharacterReputation(pchar, 4);
-			SetCurrentTime(23, 1);
+			TavernWaitDateEx(23);
 
-			RemoveLandQuestMark_Main(npchar, "PDM_Cursed_Idol");
 			sld = CharacterFromID("James_Callow");
 			AddLandQuestMark_Main(sld, "PDM_Cursed_Idol");
 
@@ -383,6 +345,7 @@ void ProcessDialogEvent()
 			dialog.text = StringFromKey("Cursed_Idol_65");
 			link.l1 = StringFromKey("Cursed_Idol_66");
 			link.l1.go = "Pablo_Loco_Idol_2";
+			RemoveLandQuestMark_Main(npchar, "PDM_Cursed_Idol");
 		break;
 
 		case "Pablo_Loco_Idol_2":
@@ -397,6 +360,7 @@ void ProcessDialogEvent()
 			dialog.text = StringFromKey("Cursed_Idol_69", pchar);
 			link.l1 = StringFromKey("Cursed_Idol_70");
 			link.l1.go = "Pablo_Loco_Idol_Alternativa_2";
+			RemoveLandQuestMark_Main(npchar, "PDM_Cursed_Idol");
 		break;
 
 		case "Pablo_Loco_Idol_Alternativa_2":
@@ -429,7 +393,6 @@ void ProcessDialogEvent()
 			LAi_SetActorType(sld);
 			LAi_ActorGoToLocation(sld, "reload", "houseV4", "none", "", "", "", -1);
 			sld.lifeday = 0;
-			RemoveLandQuestMark_Main(sld, "PDM_Cursed_Idol");
 
 			if (IsCharacterPerkOn(Pchar, "WildCaribbean"))
 			{
@@ -654,6 +617,8 @@ void ProcessDialogEvent()
 				link.l1 = StringFromKey("Cursed_Idol_88");
 				link.l1.go = "CollowNeRad_NeVzyl_1";
 			}
+			RemoveLandQuestMark_Main(npchar, "PDM_Cursed_Idol");
+			RemoveMapQuestMark("LaVega_town", "PDM_Cursed_Idol");
 		break;
 
 		case "CollowNeRad_Ship_1":
@@ -737,8 +702,8 @@ void ProcessDialogEvent()
 			pchar.questTemp.PDM_PI_Rostov = "PDM_PI_Rostov";
 			AddQuestRecord("PDM_Cursed_Idol", "10");
 
-			RemoveLandQuestMark_Main(npchar, "PDM_Cursed_Idol");
 			AddLandQuestMark_Main(CharacterFromID("Tortuga_Usurer"), "PDM_Cursed_Idol");
+			AddMapQuestMark_Major("Tortuga_town", "PDM_Cursed_Idol", "");
 
 			NextDiag.CurrentNode = NextDiag.TempNode;
 			DialogExit();
@@ -766,7 +731,6 @@ void ProcessDialogEvent()
 			dialog.text = "...";
 			link.l1 = StringFromKey("Cursed_Idol_110");
 			link.l1.go = "CollowOchenNeRad_4";
-			sld = CharacterFromID("James_Callow");
 			LAi_SetActorType(npchar);
 			ChangeCharacterAddressGroup(npchar, "LaVega_tavern", "officers", "reload1_1");
 			LAi_ActorGoToLocation(npchar, "reload", "reload1", "none", "", "", "", 3);
@@ -779,12 +743,10 @@ void ProcessDialogEvent()
 			LAi_SetPlayerType(pchar);
 			locCameraTarget(PChar);
 			locCameraFollow();
-			ChangeCharacterAddressGroup(sld, "LaVega_town", "none", "");
+			ChangeCharacterAddressGroup(npchar, "LaVega_town", "none", "");
 			pchar.quest.PDM_Callow_Voina.win_condition.l1 = "location";
 			pchar.quest.PDM_Callow_Voina.win_condition.l1.location = "Hispaniola1";
 			PChar.quest.PDM_Callow_Voina.win_condition = "PDM_Callow_Voina";
-
-			RemoveLandQuestMark_Main(npchar, "PDM_Cursed_Idol");
 
 			DialogExit();
 		break;
@@ -963,11 +925,15 @@ void ProcessDialogEvent()
 			dialog.text = StringFromKey("Cursed_Idol_130", pchar);
 			link.l1 = StringFromKey("Cursed_Idol_131");
 			link.l1.go = "Callow_POBEDA_2";
+			
+			RemoveLandQuestMark_Main(npchar, "PDM_Cursed_Idol");
+			RemoveMapQuestMark("LaVega_town", "PDM_Cursed_Idol");
 		break;
 
 		case "Callow_POBEDA_2":
 			DialogExit();
 
+			LAi_SetStayType(pchar);
 			sld = CharacterFromID("James_Callow");
 			sld.dialog.filename = "Quest\PDM\Cursed_Idol.c";
 			sld.dialog.currentnode = "Callow_POBEDA_2_1";
@@ -979,10 +945,12 @@ void ProcessDialogEvent()
 			dialog.text = StringFromKey("Cursed_Idol_132");
 			link.l1 = StringFromKey("Cursed_Idol_133");
 			link.l1.go = "Callow_POBEDA_3";
-			AddCharacterExpToSkill(pchar, "Leadership", 150);    //добавить опыт к лидерству
-			AddCharacterExpToSkill(pchar, "Pistol", 100);            //добавить опыт к пистолетам
-			AddCharacterExpToSkill(pchar, "Fortune", 100);            //добавить опыт к удаче
-			AddCharacterExpToSkill(pchar, "Sneak", 100);            //добавить опыт к скрытности
+			
+			AddCharacterExpToSkill(pchar, "Leadership", 150);
+			AddCharacterExpToSkill(pchar, "Pistol", 100);
+			AddCharacterExpToSkill(pchar, "Fortune", 100);
+			AddCharacterExpToSkill(pchar, "Sneak", 100);
+			
 			sld = CharacterFromID("Tortuga_usurer");                //возвращаем ростовщика, если на скелетах убили
 			ChangeCharacterAddressGroup(sld, "Tortuga_Bank", "barmen", "stay");
 		break;
@@ -1038,8 +1006,6 @@ void ProcessDialogEvent()
 		case "FINAL":
 			LAi_Fade("PDM_Callow_vstaem", "");
 
-			RemoveLandQuestMark_Main(npchar, "PDM_Cursed_Idol");
-
 			AddQuestRecord("PDM_Cursed_Idol", "12");
 			CloseQuestHeader("PDM_Cursed_Idol");
 			sld = CharacterFromID("James_Callow");
@@ -1047,6 +1013,9 @@ void ProcessDialogEvent()
 			ChangeCharacterAddressGroup(sld, "LaVega_town", "none", "");
 			//AddSimpleRumourToAllNations("На Тортуге ростовщика нашли мёртвым в подсобке, доктор гарнизонный сказал, что от страха умер. Невероятно! А стены все измалёваны изображениями идола языческого.", 30, 1);
 			DeleteAttribute(pchar, "questTemp.PDM_CI_RostBlago");
+			DeleteAttribute(pchar, "questTemp.PDM_PI_Ship");
+			DeleteAttribute(pchar, "questTemp.PDM_PI_Dengi");
+			DeleteAttribute(pchar, "questTemp.PDM_PI_NeVzyl");
 
 			NextDiag.CurrentNode = NextDiag.TempNode;
 			DialogExit();

@@ -1,0 +1,184 @@
+Jaco_dialog_1 {
+Monsieur Rimalie! Ein ganzes Dutzend bis an die Zähne bewaffneter Kerle kommt hierher. Und dahinter schleppen noch zwei Mann Mörser heran und laden sie sogar im Gehen.
+}
+Jaco_dialog_2 {
+Was hätte ich denn tun sollen? Vielleicht lebt noch jemand von meinen Leuten. Ich konnte sie nicht einfach vergessen.
+}
+Jaco_dialog_3 {
+Und Mansfield hat dich empfangen?
+}
+Jaco_dialog_4 {
+Hat er. Er rief nicht einmal seine Halsabschneider. Er hörte mir zu und bot mir dann einen Handel an: Ich erledige einen Auftrag für ihn, und er sagt mir alles, was er über mein Schiff und meine Mannschaft weiß.
+}
+Jaco_dialog_5 {
+Was für einen Auftrag?
+}
+Jaco_dialog_6 {
+Seinen Kanonier aus dem Gefängnis von Santo Domingo holen - René Duval.
+}
+Jaco_dialog_7 {
+Aus einem spanischen Gefängnis? Allein?
+}
+Jaco_dialog_8 {
+Ich sollte es ja nicht stürmen. Mansfields Leute kennt man in Santo Domingo vom Sehen, mich nicht. Ich sollte als Hafenbote hinein, den Schreiber bestechen und Duval durch den Dienstboteneingang hinausbringen.
+}
+Jaco_dialog_9 {
+Und all das wegen... eines einfachen Kanoniers?
+}
+Jaco_dialog_10 {
+Duval ist kein gewöhnlicher Kanonier. Der Teufel selbst scheint ihm Glück zu bringen. Als junger Bursche schickte er mit einem einzigen Schuss aus einer Zwölfpfünder-Kulverine die schwere spanische Galeone 'La Purísima' auf den Grund. Vor einem halben Jahr hing sich eine englische Patrouille an ihre Brigg. Duval schoss ihr in wenigen Minuten die Masten weg, und die Brigg entkam ganz in Ruhe. Solche Geschichten gibt es über ihn zuhauf. Mansfield sagt, ein Mann wie er sei mehr wert als eine ganze Truhe Gold.
+}
+Jaco_dialog_11 {
+Da Duval noch immer im Gefängnis sitzt, lief die Sache offenbar nicht nach Plan.
+}
+Jaco_dialog_12 {
+Alles ging schief, noch bevor ich das Gefängnis erreichte. In der Taverne setzte sich ein Mann zu mir und sagte, der Plan sei geändert worden. Der Schreiber stehe unter Verdacht, und Duval solle in eine andere Zelle verlegt werden. Ich sollte ihn in der Gasse hinter dem Gefängnis treffen.
+}
+Jaco_dialog_13 {
+Und du hast ihm geglaubt?
+}
+Jaco_dialog_14 {
+Er kannte den Namen des Schreibers, den des Wachmanns und sogar die Summe, die ich übergeben sollte. Woher hätte ich wissen sollen, dass man uns verraten hatte?
+}
+Jaco_dialog_15 {
+Was erwartete dich in der Gasse?
+}
+Jaco_dialog_16 {
+Drei Spanier. Sie wollten mich lebend nehmen, aber ich konnte entkommen. Danach war der ganze Plan aufgeflogen: Der Schreiber wurde verhaftet, der Wachmann vom Posten genommen und Duval tief ins Gefängnis unter Bewachung verlegt. Jetzt kommt weder ein Bote noch ein Arzt an ihn heran.
+}
+Jaco_dialog_17 {
+Was sagte Mansfield, als du zurückkamst?
+}
+Jaco_dialog_18 {
+Ich bin nicht zurückgegangen. Womit denn? Das Geld war weg, seine Leute enttarnt, und Duval wurde schärfer bewacht als je zuvor. Mansfield braucht keine Ausreden.
+}
+Jaco_dialog_19 {
+Und nun glaubt er, du seist geflohen.
+}
+Jaco_dialog_20 {
+Oder ich hätte mich an die Spanier verkauft. Seine Männer durchkämmen bereits Hispaniola und suchen mich.
+}
+Jaco_dialog_21 {
+Sie wollen sich meinetwegen wirklich nach Santo Domingo wagen?
+}
+Jaco_dialog_22 {
+Nicht nur deinetwegen. Solange Mansfield dich jagt, wird Nicolas nirgendwohin gehen. Und ich muss ihn zu le Basque bringen. Unsere Angelegenheiten hängen jetzt zusammen.
+}
+Jaco_dialog_23 {
+Käpt'n, ich dachte schon, mein letztes Stündlein hätte geschlagen! Sie kamen genau im richtigen Augenblick.
+}
+Jaco_dialog_24 {
+Dein kostbarer Hut hat mir den Weg gezeigt. Er liegt im Dschungel am Zugang zur Höhle. So wie ich dich kenne, war mir sofort klar, dass du eher deinen Kopf als diesen Hut verlieren würdest.
+}
+Jaco_dialog_25 {
+Dann liegt er also noch dort! Auf dem Rückweg holen wir ihn. Aber jetzt zum Wichtigen, Käpt'n... Sie haben mich direkt auf dem Pfad gepackt. Offenbar beobachteten sie den Außenposten. Als Spione taugen sie allerdings nichts - sie redeten vor mir, als wäre ich schon tot.
+}
+Jaco_dialog_26 {
+Und was Wertvolles hast du erfahren?
+}
+Jaco_dialog_27 {
+Ein gewisser Quesada roch den Braten schon, bevor Sie nach Molina aufbrachen. Ihm waren Gerüchte zu Ohren gekommen, dass in Havanna jemand allzu eifrig in Vargas' Geschäften herumschnüffelte. Er riet Don Diego, sich zurückzuhalten und nach dem Schnüffler suchen zu lassen. Seine Leute wurden derweil in verschiedene Ecken des Archipels geschickt - Stellungen sichern und auf ein Signal warten. Die anderen Namen konnte ich nicht verstehen, aber die Orte habe ich mir genau gemerkt. Das wird le Basque sicher interessieren.
+}
+Jaco_dialog_28 {
+Dann bereitet Vargas sich bereits mit aller Macht auf einen Krieg vor. Komm, Jaco. Diese Nachricht bringst du Michel persönlich.
+}
+Jaco_dialog_29 {
+Sie kränken mich, Monsieur Marceau! Ich mache seiner Liebsten den Hof - dann findet er mich von ganz allein und will die Sache bestimmt irgendwo außerhalb der Stadt klären. Dort schnappe ich ihn mir.
+}
+Jaco_dialog_30 {
+Kapitän @<pchar>! Monsieur Marceau! Es war etwas Arbeit, aber ich habe diesen Halunken geschnappt. Sie hatten recht - Liebe macht aus Menschen tatsächlich Narren.
+}
+Jaco_dialog_31 {
+Ausgezeichnet. Hat er geredet? Wie kommen wir an Vela heran?
+}
+Jaco_dialog_32 {
+Ich habe einiges aus ihm herausgeholt. Das Treffen ist für ein Uhr nachts in der Stadtkirche angesetzt. Er gab zu, dass Vela bis zum Wahnsinn misstrauisch ist. Damit der Spanier in der Kirche überhaupt ein Wort sagt, muss man einen besonderen Passierschein auf das Lesepult legen - einen venezianischen Zecchino - und die richtige Losung nennen. Nur zur Erinnerung: Das Lesepult ist dieses hölzerne Gestell mit dem Buch darauf...
+}
+Jaco_dialog_33 {
+Ein venezianischer Zecchino? Sieh einer an. Und wo ist die Münze? Hast du sie genommen?
+}
+Jaco_dialog_34 {
+Genau da liegt das Problem! Dieser Bastard ist stur wie ein Maultier. Er sagt, die Münze sei sicher versteckt, und das Passwort verrate er erst im Angesicht des Todes. Ich habe ihm schon ein paar Zähne ausgeschlagen, aber er weigert sich weiterhin.
+}
+Jaco_dialog_35 {
+Hm... Verstehe. Dann muss ich mich selbst um ihn kümmern. Wo hältst du ihn fest?
+}
+Jaco_dialog_36 {
+Ich habe ihn an den Strand von Fajardo gebracht, näher zu unserem Schiff.
+}
+Jaco_dialog_37 {
+Wartet hier, ich bin bald zurück. Mit der Münze.
+}
+Jaco_dialog_38 {
+Kapitän! Sie sind zurück. Monsieur Marceau ist mit seinen Geschäften bereits fertig und gegangen. Er bat mich, Ihnen das hier zu geben. Er sagte, in diesem Umschlag stecke der Schlussakkord.
+}
+Jaco_dialog_39 {
+Her damit. Und noch etwas, Jaco... Durchsuche deine Gefangenen nächstes Mal gründlicher! Und fessle sie verdammt noch mal besser.
+}
+Jaco_dialog_40 {
+Was... ist passiert, Kapitän?
+}
+Jaco_dialog_41 {
+Dein 'bombensicher gefesselter' Gefangener hatte genau diesen goldenen Zecchino im Stiefel versteckt. Dann schaffte er es, die Knoten zu lockern, erschoss einen unserer Matrosen und ging auf mich los. Ich musste ihn töten.
+}
+Jaco_dialog_42 {
+Teufel... Verzeihen Sie, Kapitän. Ich schwöre, ich dachte, ich hätte die Knoten bombenfest gezogen, und seine Taschen habe ich auch ausgeleert! Ich lerne daraus, das passiert kein zweites Mal.
+}
+Jaco_dialog_43 {
+Das hoffe ich. In unserem Gewerbe kosten solche Fehler Leben. Gut, die Sache ist erledigt... Passierschein und Brief habe ich. Ich gehe zur Kirche zum Treffen mit Vela. Kehre aufs Schiff zurück und warte dort auf mich.
+}
+Jaco_dialog_44_m {
+Mon Dieu! Wie Sie ihn zugerichtet haben! Mann gegen Mann! Schade, dass Monsieur le Basque das nicht gesehen hat.
+}
+Jaco_dialog_44_f {
+Mon Dieu! Wie Sie ihn zugerichtet haben! Ganz allein! Schade, dass Monsieur le Basque das nicht gesehen hat.
+}
+Jaco_dialog_45 {
+Hm... Heute hast du dich kaum schlechter geschlagen als ich, Jaco. Vielleicht wird aus dir doch noch etwas, ha-ha.
+}
+Jaco_dialog_46 {
+Sie hätten ihre Gesichter sehen sollen, als ich sagte, dass es kein Silber geben wird. Ich dachte schon, sie würden mich dort lebendig verbrennen!
+}
+Jaco_dialog_47 {
+Jetzt hast du jedenfalls genug Stoff, um bei den Mädchen anzugeben, ha-ha. Geh und sieh dich um. Vielleicht findest du eine Trophäe nach deinem Geschmack.
+}
+Jaco_dialog_48 {
+Ah, unser Triumphator! Setzen Sie sich, Kapitän, probieren Sie diesen Bordeaux! Ich schwöre, Ihr Stahl sang dort im Dschungel lauter und süßer als die Saiten des besten Lautenspielers in ganz Paris!
+}
+Jaco_dialog_49 {
+Warst du überhaupt je in Paris, Jaco? Ach, egal. Trink auf deine Gesundheit. Deine List hat uns nicht weniger Leben gerettet als meine Klinge.
+}
+Jaco_dialog_50 {
+Kapitän, das geht nun wirklich zu weit! Ich habe gegen Spanier gekämpft, bin durch den Dschungel gekrochen, wäre beinahe meinen Kopf losgeworden - und jetzt drücken mir diese Mädchen einen Eimer in die Hand und schicken mich Wasser holen!
+}
+Jaco_dialog_51 {
+Sieht aus, als warte schon die nächste Heldentat auf dich.
+}
+Jaco_dialog_52 {
+Sehr witzig. Nach all dem hatte ich eigentlich erwartet, mit Ehren empfangen zu werden. Stattdessen machen sie einen Wasserträger aus mir!
+}
+Jaco_dialog_53 {
+Glaubst du etwa, Helden tragen kein Wasser? Erscheint es ihnen durch ein Wunder von selbst in den Eimern?
+}
+Jaco_dialog_54 {
+Aber hier stehen doch noch ein Dutzend Faulpelze herum! Warum ausgerechnet ich?
+}
+Jaco_dialog_55 {
+Offenbar mögen sie dich. Geh, Jaco. Lass die Mädchen nicht lange warten.
+}
+Jaco_dialog_56 {
+Kapitän, falls jemand fragt, sagen Sie, Michel hätte mich dringend gebraucht. Sehr dringend. Sonst nimmt mich hier niemand mehr ernst!
+}
+Jaco_dialog_57 {
+Zu spät, Jaco. Sie wissen schon, wo sie dich finden. Hol die Eimer.
+}
+Jaco_dialog_58 {
+Kapitän, Sie hätten diese Mädchen sehen sollen! Gestern war ich für sie irgendein Wasserträger, und jetzt haben sie endlich begriffen, mit wem sie es zu tun haben. Jede will hören, wie wir die 'Margarita' genommen haben, und keine lacht mehr!
+}
+Jaco_dialog_59 {
+Um die Herzen der Mädchen zu erobern, musstest du also lediglich eine gut bewachte spanische Galeone ausrauben? Nun, Jaco, nutz den Augenblick. Solche Heldentaten sind schnell vergessen.
+}
+
+LeBasque_Young_Boy_Bask_1 {
+Sind deine Ohren verstopft? Ich habe Kräuter gesammelt! Kräuter. Ich kenne keine Leru... Hust, hust... Sieht so aus, als müsstest du jetzt deine eigenen Eingeweide sammeln.
+}

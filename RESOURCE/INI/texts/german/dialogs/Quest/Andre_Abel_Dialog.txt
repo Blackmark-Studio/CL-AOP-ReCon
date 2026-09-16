@@ -316,3 +316,9 @@ Andre_Abel_Dialog_94 {
 Andre_Abel_Dialog_95 {
 Viel Glück!.. Und pass auf dich auf, lass dich nicht noch einmal erwischen.
 }
+Andre_Abel_Dialog_96 {
+Ja, die Dinge haben sich hingezogen. Und was nun?
+}
+Andre_Abel_Dialog_97 {
+Meine Flotte hat keinen freien Platz mehr.
+}

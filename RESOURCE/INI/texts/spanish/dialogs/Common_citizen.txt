@@ -1018,3 +1018,58 @@ Has cumplido con tu parte del trato, ahora cumpliré con la mía. Aquí tienes t
 Common_citizen_292 {
 ¡De nada, @<GetAddress_FormToNPC>! Que te vaya muy bien.
 }
+
+Common_citizen_293 {
+Hoy toda la ciudad habla de una sola cosa: el intento fallido de apoderarse de nuestra colonia.
+}
+
+Common_citizen_294 {
+¡Pero piense en la osadía de esa gente, decidieron atacar las fortificaciones de nuestra ciudad! ¿Qué esperaban conseguir? Creo que aquella aventura estaba condenada al fracaso desde el mismo instante en que nació en la cabeza de quien la ideó.
+}
+
+Common_citizen_295 {
+Confieso que, cuando empezó el tiroteo, me invadió el pánico.
+}
+
+Common_citizen_296 {
+@<TimeGreeting>, @<pchar.name>. Me alegra mucho verla.
+}
+
+Common_citizen_297 {
+@<TimeGreeting>, @<pchar.name>. Me alegra mucho verla.
+}
+
+Common_citizen_298 {
+@<TimeGreeting>, @<npchar.name>. Tengo que irme.
+}
+
+Common_citizen_299_m {
+@<TimeGreeting>, @<pchar>! Me alegra mucho verlo. ¡Hoy hace un día magnífico para pasear!
+}
+Common_citizen_299_f {
+@<TimeGreeting>, @<pchar>! Me alegra mucho verla. ¡Hoy hace un día magnífico para pasear!
+}
+Common_citizen_300 {
+¡Hola, @<npchar>! Yo también me alegro de verlo.
+}
+Common_citizen_301 {
+Disculpe, pero tengo prisa.
+}
+Common_citizen_302 {
+¡Ah, Becky, Manuel! Qué bien que nos hayamos encontrado. ¿Saben? Hoy por fin zarpamos.
+}
+Common_citizen_303 {
+¿Ya han terminado todos los preparativos?
+}
+Common_citizen_304 {
+Nuestros muchachos se levantaron a las cuatro de la mañana para acomodar los baúles, y Lucía recogió todo un manojo de flores para adornar el camarote.
+}
+Common_citizen_305 {
+Diga «ramo»; suena más distinguido.
+}
+Common_citizen_306 {
+Un ramo, y bien grande, casi una escoba... ¿Pero aquel de allí no es Miguel? Tengo que cruzar un par de palabras con él antes de partir. Me despido con toda humildad.
+}
+Common_citizen_307 {
+Buen viaje.
+}

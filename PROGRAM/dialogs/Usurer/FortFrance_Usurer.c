@@ -53,7 +53,7 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 			AddQuestUserData("Pir_Line_3_KillLoy", "sSex", GetSexPhrase("", "а"));
 			RemoveLandQuestmark_Main(npchar, "Pir_Line");
 		break;
-		// французский сюжет Граммон
+		// Линейка Граммона
 		case "FL2":
 			DeleteAttribute(pchar, "MainQuest.usurer");
 			dialog.text = StringFromKey("FortFrance_Usurer_25");

@@ -1,90 +1,90 @@
 PuertoPrincipe_Tavern_1 {
-什么问题？
+什么问题？ 
 }
 PuertoPrincipe_Tavern_2 {
-@<GetAddress_Form>，您找俺有啥事？
+@<GetAddress_Form>， 您找我有什么事？ 
 }
 PuertoPrincipe_Tavern_3 {
 @<RandPhraseSimple>
 }
 PuertoPrincipe_Tavern_4 {
-不久前你还想问我个问题，@<GetAddress_Form>……
+不久前你还想问我个问题， @<GetAddress_Form>…… 
 }
 PuertoPrincipe_Tavern_5 {
-你今天已经第三次提这事了……
+你今天已经第三次提这事了…… 
 }
 PuertoPrincipe_Tavern_6 {
-咱们又要开始问问题了？
+咱们又要开始问问题了？ 
 }
 PuertoPrincipe_Tavern_7_m {
-我改主意了……
+我改主意了…… 
 }
 PuertoPrincipe_Tavern_7_f {
-我改变主意了……
+我改变主意了…… 
 }
 PuertoPrincipe_Tavern_8 {
-我现在没什么可说的。
+我现在没什么可说的。 
 }
 PuertoPrincipe_Tavern_9 {
 @<RandPhraseSimple>
 }
 PuertoPrincipe_Tavern_10 {
-唔，我这记性不如以前了……
+唔， 我这记性不如以前了…… 
 }
 PuertoPrincipe_Tavern_11 {
-看来第三次总算成了吧……
+看来第三次总算成了吧…… 
 }
 PuertoPrincipe_Tavern_12 {
-没，没什么问题……
+没， 没什么问题…… 
 }
 PuertoPrincipe_Tavern_13 {
-听说Soukins在召集人手，有什么动静你知道吗？
+听说索金斯在召集人手， 有什么动静你知道吗？ 
 }
 PuertoPrincipe_Tavern_14 {
-你能告诉我去哪儿能找到叫Jean-Jacques Granier的先生吗？
+你能告诉我去哪儿能找到叫让-雅克.加尼尔的先生吗？ 
 }
 PuertoPrincipe_Tavern_15 {
-这儿没听说过有这样的人。你可以挨家问问，说不定是新来镇上的。反正还没来找过我。
+这儿没听说过有这样的人。 你可以挨家问问， 说不定是新来镇上的。 反正还没来找过我。 
 }
 PuertoPrincipe_Tavern_16 {
-至少还是要谢谢你。
+至少还是要谢谢你。 
 }
 PuertoPrincipe_Tavern_17 {
-嗯，确实有点动静。估计Richard又打算去找西班牙人麻烦了。
+嗯， 确实有点动静。 估计理查德又打算去找西班牙人麻烦了。 
 }
 PuertoPrincipe_Tavern_18 {
-这事咱们已经说过了。
+这事咱们已经说过了。 
 }
 PuertoPrincipe_Tavern_19 {
-你又开始说Richard的计划了？
+你又开始说理查德的计划了？ 
 }
 PuertoPrincipe_Tavern_20 {
-我没什么新建议给你。
+我没什么新建议给你。 
 }
 PuertoPrincipe_Tavern_21 {
-明白了……那你也不知道具体时间和地点？
+明白了…… 那你也不知道具体时间和地点？ 
 }
 PuertoPrincipe_Tavern_22 {
-没错。
+没错。 
 }
 PuertoPrincipe_Tavern_23 {
-又来了……
+又来了…… 
 }
 PuertoPrincipe_Tavern_24 {
-嗯，至少还是要谢谢你……
+嗯， 至少还是要谢谢你…… 
 }
 PuertoPrincipe_Tavern_25 {
-哈，真有你的！Richard这种事从来都是藏到最后一刻，连他自己手下的船长都不会提前说。你还来问我……
+哈， 真有你的！ 理查德这种事从来都是藏到最后一刻， 连他自己手下的船长都不会提前说。 你还来问我…… 
 }
 PuertoPrincipe_Tavern_26 {
-谁知道呢。我问你，是因为我还在犹豫要不要接这个活儿。你觉得呢？
+谁知道呢。 我问你， 是因为我还在犹豫要不要接这个活儿。 你觉得呢？ 
 }
 PuertoPrincipe_Tavern_27_m {
-我不清楚，这得看你自己。Soukins可是出了名的好运船长。要是我啊，我肯定跟他走——Richard准备得太过头了，整天窝在他宅子里，埋头在日记本上写个不停……
+我不清楚， 这得看你自己。 索金斯可是出了名的好运船长。 要是我啊， 我肯定跟他走——理查德准备得太过头了， 整天窝在他宅子里， 埋头在日记本上写个不停…… 
 }
 PuertoPrincipe_Tavern_27_f {
-我也说不准，你自己决定吧。Soukins可是出了名的好运船长。要是让我选，我肯定跟他走——Richard准备得太过头了，整天窝在自己宅子里，埋头写日记……
+我也说不准， 你自己决定吧。 索金斯可是出了名的好运船长。 要是让我选， 我肯定跟他走——理查德准备得太过头了， 整天窝在自己宅子里， 埋头写日记…… 
 }
 PuertoPrincipe_Tavern_28 {
-呵，明白了……那就谢谢你的建议。
+呵， 明白了…… 那就谢谢你的建议。 
 }

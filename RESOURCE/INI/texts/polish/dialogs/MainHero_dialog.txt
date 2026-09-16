@@ -436,3 +436,63 @@ Usunąć papugę.
 MainHero_dialog_142 {
 Zamontować papugę.
 }
+
+LeBasque_1
+{
+...
+}
+LeBasque_2
+{
+Za bramami po wesołej Tortudze nie zostaje ani śladu. Żadnych pieśni, przekleństw ani pijackiego rechotu...
+}
+LeBasque_3
+{
+...
+}
+LeBasque_4
+{
+Raoul powinien zjawić się lada chwila. Najważniejsze to się nie zdradzić i niczego nie przegapić.
+}
+LeBasque_5
+{
+...
+}
+LeBasque_6
+{
+Raoul sprzedał Hiszpanowi informacje, a w zamian dostał pieniądze i nowe polecenia. Wszystko kręci się wokół jakiegoś le Basque’a. Mam już dość informacji — czas wracać do Marceau.
+}
+LeBasque_7
+{
+...
+}
+LeBasque_8
+{
+Spotkanie powinno zaraz się zacząć... Z lewej morze, przed sobą latarnia, z prawej palmy i skały. Lepszego miejsca na zasadzkę tu nie znajdę. Trzeba znaleźć punkt z dobrym widokiem.
+}
+LeBasque_9
+{
+...
+}
+LeBasque_10
+{
+Stąd mnie nie zauważą, a ja będę widzieć wszystko. Pozostaje tylko czekać.
+}
+
+MainHero_dialog_143 {
+Hm... Kapelusz Jaco. Nie rozstaje się z nim bez powodu... A oto i ślady. Trzech ciągnęło jednego. Prowadzą do jaskini. Trzeba się pospieszyć.
+}
+MainHero_dialog_144 {
+Już północ. Czas położyć cekina na drewnianej podstawce z księgą...
+}
+MainHero_dialog_145 {
+Wszystko poszło doskonale. Zostało tylko podrzucić list na trupa i wracać na statek.
+}
+MainHero_dialog_146 {
+Oddech równy — wkrótce odzyska przytomność...
+}
+MainHero_dialog_147 {
+Nadszedł czas umierać...
+}
+MainHero_dialog_148 {
+Do diabła... Znowu...
+}

@@ -241,3 +241,24 @@ Il a dit qu’il partait maintenant chez les Anglais. Je crois qu’il a parlé 
 Villemstad_Usurer_66 {
 Et tu disais que tu n’en savais rien. Eh bien, merci beaucoup!
 }
+Villemstad_Usurer_67 {
+Dites-moi, mynheer, êtes-vous marié ?
+}
+Villemstad_Usurer_68 {
+Je dois l’avouer, voilà une question des plus inattendues. Je suis, ma foi, quelque peu déconcerté.
+}
+Villemstad_Usurer_69 {
+J’aimerais acheter une robe digne du rang élevé de votre épouse.
+}
+Villemstad_Usurer_70 {
+Ah, voilà donc ce qu’il en est ! Je suis marié, mais voyez-vous, mon épouse est une dame aux formes généreuses. Je crains que, même si elle consentait à vous vendre quelque chose de sa garde-robe, il vous faudrait plus d’une journée pour la retailler et l’ajuster à votre taille.
+}
+Villemstad_Usurer_71 {
+Quel dommage. Je n’ai justement pas autant de temps devant moi.
+}
+Villemstad_Usurer_72 {
+Vous feriez mieux d’interroger les boutiquiers de la ville. Peut-être l’un d’eux aura-t-il la robe qu’il vous faut.
+}
+Villemstad_Usurer_73 {
+Merci, je suivrai votre conseil. Au revoir.
+}

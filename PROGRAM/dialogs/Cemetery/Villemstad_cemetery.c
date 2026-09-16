@@ -302,9 +302,9 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 		case "LogbookFoundLSC_33":
 			dialog.text = "...";
 			link.l1 = StringFromKey("Villemstad_cemetery_93");
-			link.l1.go = "LogbookFoundLSC_34";
+			link.l1.go = "LogbookFoundLSC_33_1";
 		break;
-		case "LogbookFoundLSC_33":
+		case "LogbookFoundLSC_33_1":
 			dialog.text = "...";
 			link.l1 = StringFromKey("Villemstad_cemetery_94");
 			link.l1.go = "LogbookFoundLSC_34";
@@ -317,9 +317,9 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 		case "LogbookFoundLSC_35":
 			dialog.text = StringFromKey("Villemstad_cemetery_96");
 			link.l1 = StringFromKey("Villemstad_cemetery_97");
-			link.l1.go = "LogbookFoundLSC_36";
+			link.l1.go = "LogbookFoundLSC_35_1";
 		break;
-		case "LogbookFoundLSC_35":
+		case "LogbookFoundLSC_35_1":
 			dialog.text = StringFromKey("Villemstad_cemetery_98");
 			link.l1 = StringFromKey("Villemstad_cemetery_99");
 			link.l1.go = "LogbookFoundLSC_36";

@@ -1,0 +1,51 @@
+Gibraltar_Church_1_m {
+Jakie pytania, mój synu?
+}
+Gibraltar_Church_1_f {
+Jakie masz pytania, moja córko?
+}
+Gibraltar_Church_2 {
+Pytaj, słucham cię...
+}
+Gibraltar_Church_3 {
+@<RandPhraseSimple>
+}
+Gibraltar_Church_4_m {
+Słucham cię, mów, mój synu...
+}
+Gibraltar_Church_4_f {
+Słucham cię, mów, moja córko...
+}
+Gibraltar_Church_5_m {
+I po raz trzeci mówię ci, synu mój: zadaj swoje pytanie.
+}
+Gibraltar_Church_5_f {
+I po raz trzeci mówię ci, moja córko: zadaj swoje pytanie.
+}
+Gibraltar_Church_6_m {
+Tyle obowiązków ma duchowny, a tu jeszcze ty mnie niepokoisz, synu mój...
+}
+Gibraltar_Church_6_f {
+Tyle obowiązków ma duchowny, a tu jeszcze ty mnie niepokoisz, moja córko...
+}
+Gibraltar_Church_7_m {
+Zmieniłem zdanie...
+}
+Gibraltar_Church_7_f {
+Zmieniłam zdanie...
+}
+Gibraltar_Church_8 {
+Nie teraz, ojcze...
+}
+Gibraltar_Church_9 {
+@<RandPhraseSimple>
+}
+Gibraltar_Church_10 {
+Tak, na razie nie mam za bardzo nic do powiedzenia...
+}
+Gibraltar_Church_11 {
+Zadam, zadam... Tylko później...
+}
+Gibraltar_Church_12 {
+Przepraszam, ojcze święty...
+}

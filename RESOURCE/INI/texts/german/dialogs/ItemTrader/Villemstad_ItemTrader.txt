@@ -34,3 +34,36 @@ Ja, es ist tatsächlich besser, zu verhandeln...
 Villemstad_ItemTrader_12 {
 Hm, tut mir leid, Händler...
 }
+Villemstad_ItemTrader_13 {
+Könnt Ihr mir sagen, wo ich ein Kleid erwerben könnte, das sich für einen Auftritt in guter Gesellschaft ziemt?
+}
+Villemstad_ItemTrader_14 {
+Ich brauche ein Kleid, das dem der Frau des hiesigen Bankiers in nichts nachsteht.
+}
+Villemstad_ItemTrader_15 {
+Wo könnte ich ein Kleid auftreiben, aber kein gewöhnliches - eines, mit dem ich mich selbst bei einem Empfang des Königs von Frankreich sehen lassen könnte.
+}
+Villemstad_ItemTrader_16 {
+Auf dem Markt werdet Ihr so etwas kaum finden. Ihr braucht eine gute Schneiderin. Leider kann ich Euch niemanden empfehlen...
+}
+Villemstad_ItemTrader_17 {
+Schade...
+}
+Villemstad_ItemTrader_18 {
+Nein, gnädige Frau, so etwas habe ich nicht im Angebot.
+}
+Villemstad_ItemTrader_19 {
+Nun gut...
+}
+Villemstad_ItemTrader_20 {
+Beim Schneider des Königs von Frankreich, wo sonst? Wir sind einfache Leute, nicht wie diese reichen Herren, die das hiesige Bordell besuchen.
+}
+Villemstad_ItemTrader_21 {
+Wie interessant. Genießen diese Herren dort etwa einen besonderen Status? Sie laufen doch wohl nicht den gewöhnlichen Hafenmädchen nach?
+}
+Villemstad_ItemTrader_22 {
+Verzeiht, aber ich pflege keinen Klatsch zu verbreiten. Geht selbst hin und erkundigt Euch; vielleicht bietet man auch Euch etwas Besonderes an. Aber lasst mich aus der Sache heraus und erwähnt mich nicht. Die Wirtin dort ist eine angesehene Dame. Sie kauft Wein von meinem Vetter - er ist ein vortrefflicher Winzer - und ich habe keinen Grund, schlecht über sie zu reden.
+}
+Villemstad_ItemTrader_23 {
+Ich verstehe. Gut, ich werde es mir merken, und von Eurem Wein werde ich eines Tages gewiss etwas nehmen.
+}

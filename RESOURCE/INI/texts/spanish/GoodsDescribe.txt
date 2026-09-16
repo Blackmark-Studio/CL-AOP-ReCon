@@ -122,7 +122,7 @@ Sandal_descr {Un tipo valioso de madera es pesada, amarilla y de grano fino y, a
 Leather {Cuero}
 Leather_descr
 {
-Las pieles curtidas de ganado son una mercancía universal, siempre demandada en Europa. Así fue como los primeros bucaneros se ganaban la vida, vendiendo las pieles y la carne del ganado salvaje en La Española.
+Las pieles curtidas de ganado son una mercancía universal, siempre demandada en Europa.
 Aunque pocos comerciantes llenarían sus barcos solo con cuero, es ideal para completar la bodega vacía, ya que es muy resistente y soporta cualquier condición de transporte.
 }
 Oil {Aceite}
@@ -165,6 +165,23 @@ Un premio codiciado, ya que la plata tiene un valor considerable y es la segunda
 }
 Pinctada {Ostras perleras}
 Pinctada_descr {La captura más preciada de los pescadores de perlas: moluscos caribeños (Pinctada longisquamosa) recolectados en bancos poco profundos. Sus conchas irisadas pueden ocultar tesoros... o sueños vacíos. Y los más expertos logran abrirlas sin dañar la capa de nácar...}
+Salt {Sal}
+Salt_descr
+{
+Un producto indispensable en la época de las largas expediciones marítimas. Extraída de los lagos salados o de las minas del archipiélago, la sal se utiliza para conservar las provisiones, salvándolas de pudrirse en el húmedo clima tropical. Para muchos colonos, este "oro blanco" es una fuente estable de ingresos, ya que ningún capitán sensato se arriesgaría a salir a mar abierto sin reservas fiables de carne salada.
+}
+Meat {Carne}
+Meat_descr
+{
+Carne seca y generosamente salada, preparada sobre rejillas de madera según las tradiciones de los cazadores bucaneros del Caribe. Una excelente carga comercial que siempre puede venderse con beneficio en cualquier colonia.
+~
+Atención: este producto está destinado exclusivamente a la venta. Para alimentar a la tripulación durante la travesía, es necesario comprar provisiones de barco.
+}
+Hide {Pieles}
+Hide_descr
+{
+Pieles sin curtir de jabalíes y vacas asilvestradas que deambulan en abundancia por los bosques de La Española y otras islas. A diferencia del cuero ya curtido, este cargamento es una materia prima que se paga generosamente en las manufacturas europeas. La caza y el comercio de pieles crudas es un oficio duro y peligroso, con el que muchos bucaneros legendarios comenzaron su camino hacia la riqueza.
+}
 Brick {Ladrillos}
 Brick_descr
 {

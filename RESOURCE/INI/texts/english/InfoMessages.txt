@@ -266,3 +266,82 @@ InfoMessages_247 {It seems this is the house I need. I should thoroughly search 
 InfoMessages_248 {You received small pearls: @<iSmall> pcs.}
 InfoMessages_249 {You received large pearls: @<iBig> pcs.}
 InfoMessages_250 {One hour has passed...}
+InfoMessages_251 {Not enough money (2500)}
+InfoMessages_252 {The evening of the next day...}
+InfoMessages_253 {Several hours later...}
+InfoMessages_254 {Night has fallen...}
+InfoMessages_255 {A melee weapon is required. Equip a blade.}
+InfoMessages_256 {Alarm bells rang out in the town and aboard the ship. Peter Blood and his brothers in misfortune did not live to see the dawn...}
+InfoMessages_257 {You received a treasure map}
+InfoMessages_258 {Several weeks have passed...}
+InfoMessages_259 {Required}
+InfoMessages_260 {Check failed: chests of gold (4)}
+InfoMessages_261 {Secret found}
+InfoMessages_262 {Not enough}
+InfoMessages_263 {Current}
+InfoMessages_264 {Captain on deck!}
+InfoMessages_265 {The crew is defeated. The captain is all alone!}
+InfoMessages_266 {The ship's crew has been slaughtered. The captain is alone!}
+
+InfoMessages_267 {
+Discarded: @<sItemName> - @<iDropQuantity> pcs.
+}
+
+InfoMessages_268 {Tortuga Lighthouse. Some time later...}
+
+InfoMessages_269 {Thirty minutes passed...}
+
+InfoMessages_270 {You took Raoul's letter.}
+
+InfoMessages_271 {You can leave the table using the 'Enter' key.}
+
+InfoMessages_272 {At the same time...}
+
+InfoMessages_273 {Some time later, not far from the settlement of La Vega...}
+
+InfoMessages_274 {40 minutes later, at Michel Le Basque's house...}
+
+InfoMessages_275 {Some time later...}
+
+InfoMessages_276 {The letter was successfully dropped.}
+
+InfoMessages_277 {The next night, not far from the Spanish camp...}
+
+InfoMessages_278 {Some time later, near Cayman Island...}
+
+InfoMessages_279 {3 hours have passed...}
+
+InfoMessages_280 {Some time passed...}
+
+InfoMessages_281 {The Indian Atauco boarded the ship as a passenger.}
+
+InfoMessages_282 {A Spanish frigate is on the horizon! It's set course to intercept.}
+
+InfoMessages_283 {Some time later, the enemy ship was fully inspected. Everything of value fell into the hands of the victors.}
+
+InfoMessages_284 {Two days passed. Sails appeared on the horizon...}
+
+InfoMessages_285 {A few hours later...}
+
+InfoMessages_286 {Michel Le Basque's cabin. A few hours later...}
+
+InfoMessages_287 {Several days passed. The companions separated near Aguadilla Bay...}
+
+InfoMessages_288 {That same evening...}
+
+InfoMessages_289 {The prisoners were freed and escorted to the Indian camp. Several hours passed...}
+
+InfoMessages_290 {Two days have passed...}
+
+InfoMessages_291 {That same morning...}
+
+InfoMessages_292 {The next day, at noon...}
+
+InfoMessages_293 {An hour passed. Cape of Lost Hopes...}
+
+InfoMessages_294 {30 minutes have passed...}
+
+InfoMessages_295 {Two days passed. All the valuables were loaded onto allied ships...}
+InfoMessages_296 {Buccaneers disapprove}
+InfoMessages_297 {Buccaneers approve}
+InfoMessages_298 {The governor did not forgive Peter Blood's prolonged absence. That same day, overseer Kent flogged him to death.}

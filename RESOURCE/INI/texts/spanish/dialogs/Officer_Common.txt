@@ -2416,3 +2416,10 @@ No estoy seguro sobre la receta, pero no le encontramos nada más que este trozo
 Officer_Common_656 {
 Veamos qué hay ahí.
 }
+
+Officer_Common_657 {
+Capitán, terminemos primero lo que hemos empezado. Después me iré, si quieres.
+}
+Officer_Common_658 {
+De acuerdo. Primero terminemos lo que hemos empezado.
+}

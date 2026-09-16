@@ -46,3 +46,23 @@ Oui, la troisième fois sera la bonne... Désolé.
 Villemstad_Brothel_12 {
 Pas maintenant... Peut-être une autre fois...
 }
+
+Villemstad_Brothel_13 {J’ai une proposition quelque peu inhabituelle à vous faire. Ne pourriez-vous pas me vendre la plus belle robe de votre garde-robe ?}
+Villemstad_Brothel_14 {Je reviens au sujet de la robe.}
+Villemstad_Brothel_15 {Inhabituelle, en effet. Je crains qu’un tel service ne vous coûte une petite fortune.}
+Villemstad_Brothel_16 {Ne serait-il pas possible de la louer pour une soirée ou deux ?}
+Villemstad_Brothel_17 {Je suppose que cela peut s’arranger. Disons 15000 piastres, avec la garantie qu’elle me sera rendue à temps, intacte et sans la moindre tache.}
+Villemstad_Brothel_18 {Sans la moindre tache... Et puisque nous nous sommes entendues sur le prix, auriez-vous aussi un masque de carnaval convenable, qui couvre entièrement le visage ?}
+Villemstad_Brothel_19 {Nous trouverons bien quelque chose. Cinquante mille, et il est à vous.}
+Villemstad_Brothel_20 {Quoi ?! Vous ne vous seriez pas trompée de prix, par hasard ?}
+Villemstad_Brothel_21 {Je suis certaine qu’il y a simplement eu un malentendu entre nous. Vous m’avez sans doute prise par erreur pour une sotte incapable de comprendre qu’on cherche à pénétrer incognito dans la résidence locale. Cinquante mille pour mon silence, quinze pour la robe le temps d’une soirée, et je vous offre le masque. Alors ?}
+Villemstad_Brothel_22 {Vous savez mener vos affaires. Il semble que je n’aie pas le choix. Voici votre argent. J’espère que la coupe ne me décevra pas.}
+Villemstad_Brothel_23 {Très bien, je vais y réfléchir et je repasserai peut-être plus tard.}
+Villemstad_Brothel_24 {Alors, concluons-nous notre affaire ? 65000 piastres.}
+Villemstad_Brothel_25 {Voici votre argent. J’espère que la coupe ne me décevra pas.}
+Villemstad_Brothel_26 {Je réfléchis encore à la question de savoir si votre offre en vaut la peine.}
+Villemstad_Brothel_27 {Vous avez revêtu le costume de carnaval}
+Villemstad_Brothel_28 {Encore un peu plus serré ici et je serai presque satisfaite du résultat. Quel dommage, Angélique, que tu n’aies pas porté de corset dans ta jeunesse ; la robe t’irait bien mieux. Ta taille trahit encore la fille du peuple.}
+Villemstad_Brothel_29 {Les soldats n’y feront pas attention, et ensuite je me débrouillerai.}
+Villemstad_Brothel_30 {Non, finalement, ce n’est pas mal du tout. Je crois même avoir changé d’avis : inutile de me rendre la tenue, considère que tu l’as achetée.}
+Villemstad_Brothel_31 {Voilà une affaire qui me plaît bien davantage. Je ne vais pas refuser. Il faut que je me dépêche, sinon je vais être en retard !}

@@ -4,21 +4,23 @@ DICE_RULE {"Играем в 'покер-джокер'. Пять кубиков �
 Address_Form_Spa {сеньор}
 Address_Form_Fra {месье}
 Address_Form_Eng {сэр}
-Address_Form_Por {сеньор}
 Address_Form_Hol {минхер}
 Address_Form_Pir {сэр}
+Address_Form_Por {сеньор}
 
 Address_Form_SpaWoman {сеньорита}
 Address_Form_FraWoman {мадемуазель}
 Address_Form_EngWoman {мисс}
 Address_Form_HolWoman {мефрау}
 Address_Form_PirWoman {мисс}
+Address_Form_PorWoman {сеньорита}
 
 Address_Form_SpaWoman2 {сеньора}
 Address_Form_FraWoman2 {мадам}
 Address_Form_EngWoman2 {миссис}
 Address_Form_HolWoman2 {фрау}
 Address_Form_PirWoman2 {миссис}
+Address_Form_PorWoman2 {сеньора}
 
 BaronTitle {барон}
 BaronWomanTitle {баронесса}

@@ -53,7 +53,6 @@ string GetLocationForTreasure(string island)
 {
     int iNum;
 	aref arDest, arImt;
-	string sAttr;
 
 	makearef(arDest, NullCharacter.TravelMap.Islands.(island).Treasure);
 	iNum = GetAttributesNum(arDest);
@@ -67,7 +66,6 @@ string GetBoxForTreasure(string island, string location)
 {
     int iNum;
 	aref arDest, arImt;
-	string sAttr;
 
 	makearef(arDest, NullCharacter.TravelMap.Islands.(island).Treasure.(location));
 	iNum = GetAttributesNum(arDest);
@@ -76,28 +74,29 @@ string GetBoxForTreasure(string island, string location)
     arImt = GetAttributeN(arDest, iNum);
 	return GetAttributeValue(arImt);  // тут не атрибут, а значеие
 }
-// не при деле....
+
+// не при деле.... < TODO
 string GetFileMapForTreasure(string island)
 {
-    int n;
+	int n;
 
-    for (n = 0; n < ITEMS_QUANTITY; n++)
+	for (n = ITEMS_MAPS; n < ITEMS_MAPS_TREASURE; n++)
 	{
-		if (CheckAttribute(&Items[n], "MapIsland") )
+		if (CheckAttribute(&Items[n], "MapIsland"))
 		{
-            if (Items[n].MapIsland == island)
-            {
-                return Items[n].imageTga;
-            }
+			if (Items[n].MapIsland == island)
+			{
+				return Items[n].imageTga;
+			}
 		}
-    }
-    return "";
+	}
+
+	return "";
 }
 
 void GenerateMapsTreasure(ref item, int iProbability1, int iProbability2)
 {
 	if(rand(iProbability1) == 1 && !CheckMainHeroMap("map_jam")) item.BoxTreasure.map_jam = 1;
-	
 	if(rand(iProbability1) == 1 && !CheckMainHeroMap("map_barbados")) item.BoxTreasure.map_barbados = 1;
 	if(rand(iProbability1) == 1 && !CheckMainHeroMap("map_trinidad")) item.BoxTreasure.map_trinidad = 1;
 	if(rand(iProbability1) == 1 && !CheckMainHeroMap("map_Curacao")) item.BoxTreasure.map_Curacao = 1;
@@ -117,7 +116,6 @@ void GenerateMapsTreasure(ref item, int iProbability1, int iProbability2)
 	if(rand(iProbability1) == 1 && !CheckMainHeroMap("map_maracaibo")) item.BoxTreasure.map_maracaibo = 1;
 	if(rand(iProbability1) == 1 && !CheckMainHeroMap("map_cumana")) item.BoxTreasure.map_cumana = 1;
 	if(rand(iProbability1) == 1 && !CheckMainHeroMap("map_providence")) item.BoxTreasure.map_providence = 1;
-	
 	if(rand(iProbability2) == 1 && !CheckMainHeroMap("map_cayman")) item.BoxTreasure.map_cayman = 1;
 	if(rand(iProbability2) == 1 && !CheckMainHeroMap("map_dominica")) item.BoxTreasure.map_dominica = 1;
 	if(rand(iProbability2) == 1 && !CheckMainHeroMap("map_terks")) item.BoxTreasure.map_terks = 1;
@@ -653,14 +651,14 @@ void  TraderHunterOnMap()
 {
     // немного веселой жизни
     ref  sld;
-    int  i;
+    int  i, q = GetCompanionQuantity(pchar);
 
     string sCapId = "Follower0";
     string sGroup = "Sea_" + sCapId + "1";
 
 	Group_DeleteGroup(sGroup);
 	Group_FindOrCreateGroup(sGroup);
-    for (i = 1; i <= GetCompanionQuantity(pchar); i++)
+    for (i = 1; i <= q; i++)
     {
         sld = GetCharacter(NPC_GenerateCharacter(sCapId + i, "off_hol_2", "man", "man", sti(PChar.rank) + 5, PIRATE, 15, true));
         SetShipHunter(sld);
@@ -713,8 +711,7 @@ void SetTreasureHunter(string temp)
 		    k++;
 			SetModelPirate(sld);
 		}
-		arrayNPCModel[arrayNPCModelHow] = sld.model;
-		arrayNPCModelHow++;
+		AddNPCModelUniq(sld.model);
 		
         LAi_SetActorTypeNoGroup(sld);
         LAi_SetCheckMinHP(sld, (LAi_GetCharacterHP(sld) - 1), false, "Battle_Hunters_Land");
@@ -755,10 +752,11 @@ void Set_TreasureBarrel()
 	aref     	trBarrel;
 
 	nulChr = &NullCharacter;
-	if(CheckAttribute(nulChr,"GenQuest.Barrel")) DeleteAttribute(nulChr,"GenQuest.Barrel");
+	if (CheckAttribute(nulChr,"GenQuest.Barrel")) DeleteAttribute(nulChr,"GenQuest.Barrel");
 
 	makearef(trBarrel, nulChr.GenQuest.Barrel);
 	int irand;
+
 	if (GetOfficersPerkUsing(pchar, "HawkEye", false))
 	{
 		irand = drand(100);
@@ -767,88 +765,94 @@ void Set_TreasureBarrel()
 	{
 		irand = drand(200);
 	}
-	if(GetSummonSkillFromName(pchar, "Fortune") > irand)
+
+	trBarrel.items.gold = drand(5000) + 5000;
+	aref arBoxItems; makearef(arBoxItems, trBarrel.items);
+
+	if (GetSummonSkillFromName(pchar, "Fortune") > irand)
 	{
 		irand = drand(20);
-		switch(irand)
+		switch (irand)
 		{
-			case 1:		trBarrel.items.jewelry1 = rand(18) + 27;	break;
-			case 2:		trBarrel.items.jewelry2 = rand(22) + 22;	break;
-			case 3:		trBarrel.items.jewelry3 = rand(15) + 32;	break;
-			case 4:		trBarrel.items.jewelry4 = rand(22) + 15;	break;
-			case 5:		trBarrel.items.jewelry5 = rand(19) + 22;	break;
-			case 6:		trBarrel.items.jewelry6 = rand(22) + 16;	break;
-			case 7:		trBarrel.items.jewelry7 = rand(17) + 32;	break;
-			case 8:		trBarrel.items.jewelry8 = rand(5) + 18;		break;
-			case 9:		trBarrel.items.jewelry9 = rand(8) + 12;		break;
-			case 10:	trBarrel.items.jewelry10 = rand(35) + 12;	break;
-			case 11:	trBarrel.items.jewelry11 = rand(13) + 27;	break;
-			case 12:	trBarrel.items.jewelry12 = rand(16) + 18;	break;
-			case 13:	trBarrel.items.jewelry13 = rand(30) + 15;	break;
-			case 14:	trBarrel.items.jewelry14 = rand(30) + 15;	break;
-			case 15:	trBarrel.items.jewelry16 = rand(35) + 14;	break;
-			case 16:	trBarrel.items.jewelry17 = rand(24) + 18;	break;
-			case 17:	trBarrel.items.jewelry18 = rand(17) + 13;	break;
-			case 18:	trBarrel.items.chest = rand(2) + 1;		break;
-			case 19:	trBarrel.items.coins = rand(10) + 7;		break;
+			case 1:		arBoxItems.jewelry1 = rand(18) + 27;	break;
+			case 2:		arBoxItems.jewelry2 = rand(22) + 22;	break;
+			case 3:		arBoxItems.jewelry3 = rand(15) + 32;	break;
+			case 4:		arBoxItems.jewelry4 = rand(22) + 15;	break;
+			case 5:		arBoxItems.jewelry5 = rand(19) + 22;	break;
+			case 6:		arBoxItems.jewelry6 = rand(22) + 16;	break;
+			case 7:		arBoxItems.jewelry7 = rand(17) + 32;	break;
+			case 8:		arBoxItems.jewelry8 = rand(5) + 18;		break;
+			case 9:		arBoxItems.jewelry9 = rand(8) + 12;		break;
+			case 10:	arBoxItems.jewelry10 = rand(35) + 12;	break;
+			case 11:	arBoxItems.jewelry11 = rand(13) + 27;	break;
+			case 12:	arBoxItems.jewelry12 = rand(16) + 18;	break;
+			case 13:	arBoxItems.jewelry13 = rand(30) + 15;	break;
+			case 14:	arBoxItems.jewelry14 = rand(30) + 15;	break;
+			case 15:	arBoxItems.jewelry16 = rand(35) + 14;	break;
+			case 16:	arBoxItems.jewelry17 = rand(24) + 18;	break;
+			case 17:	arBoxItems.jewelry18 = rand(17) + 13;	break;
+			case 18:	arBoxItems.chest = rand(2) + 1;		break;
+			case 19:	arBoxItems.coins = rand(10) + 7;		break;
 		}
+
 		irand = drand(25);
-		switch(irand)
+		switch (irand)
 		{
-			case 3:		trBarrel.items.indian18 = 1;		break;
-			case 6:		trBarrel.items.indian20 = 1;		break;
-			case 9:		trBarrel.items.indian21 = 1;		break;
-			case 12:	trBarrel.items.indian11 = 1;		break;
-			case 15:	trBarrel.items.indian12 = 1;		break;
-			case 18:	trBarrel.items.indian6 = 1;		break;
-			case 21:	trBarrel.items.incas_collection = 1;	break;
+			case 3:		arBoxItems.indian18 = 1;		break;
+			case 6:		arBoxItems.indian20 = 1;		break;
+			case 9:		arBoxItems.indian21 = 1;		break;
+			case 12:	arBoxItems.indian11 = 1;		break;
+			case 15:	arBoxItems.indian12 = 1;		break;
+			case 18:	arBoxItems.indian6 = 1;		break;
+			case 21:	arBoxItems.incas_collection = 1;	break;
 			case 24:
 				if (GetCharacterItem(pchar, "map_full") == 0)
 				{
 					if (GetCharacterItem(pchar, "map_part1") == 0)
-						trBarrel.items.map_part1 = 1;
+						arBoxItems.map_part1 = 1;
 					else
 					{
 						if (GetCharacterItem(pchar, "map_part2") == 0)
-							trBarrel.items.map_part2 = 1;
+							arBoxItems.map_part2 = 1;
 					}
 				}
 			break;
 		}
+
 		irand = drand(19);
 		switch (irand)
 		{
-            case  1:	trBarrel.items.mineral11 = 1 + drand(2);	break;
-            case  3:	trBarrel.items.mineral12 = 1 + drand(2);	break;
-            case  5:	trBarrel.items.mineral13 = 1 + drand(2);	break;
-            case  7:	trBarrel.items.mineral14 = 1 + drand(2);	break;
-            case  9:	trBarrel.items.mineral16 = 1 + drand(2);	break;
-			case 10:	trBarrel.items.crucible = 1;				break;
-			case 11:	trBarrel.items.lamp = 1;					break;
-			case 15:	trBarrel.items.mortar_and_pestle = 1;		break;
-			case 19:	trBarrel.items.bullet_mold = 1;				break;
+            case  1:	arBoxItems.mineral11 = 1 + drand(2);	break;
+            case  3:	arBoxItems.mineral12 = 1 + drand(2);	break;
+            case  5:	arBoxItems.mineral13 = 1 + drand(2);	break;
+            case  7:	arBoxItems.mineral14 = 1 + drand(2);	break;
+            case  9:	arBoxItems.mineral16 = 1 + drand(2);	break;
+			case 10:	arBoxItems.crucible = 1;				break;
+			case 11:	arBoxItems.lamp = 1;					break;
+			case 15:	arBoxItems.mortar_and_pestle = 1;		break;
+			case 19:	arBoxItems.bullet_mold = 1;				break;
 		}
 
 		irand = drand(35);
-		switch(irand)
+		switch (irand)
 		{
-			case 20:	trBarrel.items.sculMa2 = 1;		break;
-			case 28:	trBarrel.items.sculMa3 = 1;		break;
+			case 20:	arBoxItems.sculMa2 = 1;		break;
+			case 28:	arBoxItems.sculMa3 = 1;		break;
 		}
 	}
 	else
 	{
-		if(rand(1) == 0) trBarrel.items.mineral2 = rand(7) + 7;
-		if(rand(1) == 0) trBarrel.items.mineral3 = rand(15) + 5;
-		if(rand(1) == 0) trBarrel.items.mineral4 = rand(10) + 2;
-		if(rand(1) == 0) trBarrel.items.mineral5 = rand(8) + 4;
-		if(rand(1) == 0) trBarrel.items.mineral6 = rand(14) + 7;
-		if(rand(1) == 0) trBarrel.items.mineral7 = rand(12) + 8;
-		if(rand(1) == 0) trBarrel.items.mineral8 = rand(12) + 6;
-		if(rand(1) == 0) trBarrel.items.mineral9 = rand(8) + 2;
-		if(rand(1) == 0) trBarrel.items.mineral10 = rand(16) + 6;
+		if (rand(1) == 0) arBoxItems.mineral2 = rand(7) + 7;
+		if (rand(1) == 0) arBoxItems.mineral3 = rand(15) + 5;
+		if (rand(1) == 0) arBoxItems.mineral4 = rand(10) + 2;
+		if (rand(1) == 0) arBoxItems.mineral5 = rand(8) + 4;
+		if (rand(1) == 0) arBoxItems.mineral6 = rand(14) + 7;
+		if (rand(1) == 0) arBoxItems.mineral7 = rand(12) + 8;
+		if (rand(1) == 0) arBoxItems.mineral8 = rand(12) + 6;
+		if (rand(1) == 0) arBoxItems.mineral9 = rand(8) + 2;
+		if (rand(1) == 0) arBoxItems.mineral10 = rand(16) + 6;
 	}
-	trBarrel.items.gold = drand(5000) + 5000;
+
 	LaunchItemsBarrel(&trBarrel);
 }
 //=====================================================================================================================================

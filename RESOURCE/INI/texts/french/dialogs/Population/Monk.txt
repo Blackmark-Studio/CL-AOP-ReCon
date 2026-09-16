@@ -508,3 +508,6 @@ J’essaie de réunir de l’argent pour la nourriture et les vêtements des hab
 Monk_133 {
 J’ai l’intention d’entreprendre un voyage missionnaire au cœur de l’île, pour apporter la lumière aux âmes perdues parmi les autochtones, et je recueille des fonds pour organiser l’expédition. Ne souhaitez-vous pas soutenir cette noble cause?
 }
+Monk_134 {
+@<TimeGreeting>, mon père. Je dois y aller.
+}

@@ -1,72 +1,72 @@
 SantoDomingo_Shipyard_1 {
-什么问题？
+什么问题？ 
 }
 SantoDomingo_Shipyard_2 {
-你想干什么？
+你想干什么？ 
 }
 SantoDomingo_Shipyard_3 {
 @<RandPhraseSimple>
 }
 SantoDomingo_Shipyard_4 {
-前阵子你想问我个问题……
+前阵子你想问我个问题…… 
 }
 SantoDomingo_Shipyard_5 {
-在我自己的船厂，甚至整个城里，我还真没见过这么一致好奇的人。
+在我自己的船坞， 甚至整个城里， 我还真没见过这么一致好奇的人。 
 }
 SantoDomingo_Shipyard_6 {
-问这么多干嘛？老子的活儿就是造船，赶紧开始吧。
+问这么多干嘛？ 我的活儿就是造船， 赶紧开始吧。 
 }
 SantoDomingo_Shipyard_7_m {
-我改主意了……
+我改主意了…… 
 }
 SantoDomingo_Shipyard_7_f {
-我改变主意了……
+我改变主意了…… 
 }
 SantoDomingo_Shipyard_8 {
-我现在没什么可说的。
+我现在没什么可说的。 
 }
 SantoDomingo_Shipyard_9 {
 @<RandPhraseSimple>
 }
 SantoDomingo_Shipyard_10 {
-嗯，我的记忆好像出了点问题……
+嗯， 我的记忆好像出了点问题…… 
 }
 SantoDomingo_Shipyard_11 {
-嗯，不过……
+嗯， 不过…… 
 }
 SantoDomingo_Shipyard_12 {
-咱们……
+咱们…… 
 }
 SantoDomingo_Shipyard_13 {
-听说你有艘叫“Swallow”的双桅船要卖，是吗？
+听说你有艘叫“燕子号”的双桅船要卖， 是吗？ 
 }
 SantoDomingo_Shipyard_14 {
-不，不是那样。这船已经卖掉了，不是还在卖。来了个买家，我挺喜欢他的，就几乎白送给他那艘schooner了……
+不， 不是那样。 这船已经卖掉了， 不是还在卖。 来了个买家， 我挺喜欢他的， 就几乎白送给他那艘双桅纵帆船了…… 
 }
 SantoDomingo_Shipyard_15 {
-我对买家没兴趣，我想知道卖家。是谁把那艘schooner卖给你的？
+我对买家没兴趣， 我想知道卖家。 是谁把那艘双桅纵帆船卖给你的？ 
 }
 SantoDomingo_Shipyard_16 {
-卖了？卖了……有个人把它卖了……
+卖了？ 卖了…… 有个人把它卖了…… 
 }
 SantoDomingo_Shipyard_17 {
-我知道我不是马。这个人是谁，叫什么名字？
+我知道我不是马。 这个人是谁， 叫什么名字？ 
 }
 SantoDomingo_Shipyard_18 {
-名字我真不知道，俺光顾着看那艘船了……
+名字我真不知道， 我光顾着看那艘船了…… 
 }
 SantoDomingo_Shipyard_19 {
-别装傻，伙计，这对你可没好处。
+别装傻， 伙计， 这对你可没好处。 
 }
 SantoDomingo_Shipyard_20 {
-该死！早知道这买卖可能会出事，可这价格实在太诱人了……一开始我就觉得有点不对劲，但还是侥幸希望自己看错了。
+该死！ 早知道这买卖可能会出事， 可这价格实在太诱人了…… 一开始我就觉得有点不对劲， 但还是侥幸希望自己看错了。 
 }
 SantoDomingo_Shipyard_21 {
-大概你说得对。卖家在哪儿能找到？
+大概你说得对。 卖家在哪儿能找到？ 
 }
 SantoDomingo_Shipyard_22 {
-在海上。昨天他乘着“Leon”号护卫舰出海了，这是我所知道的。我自己没见过那艘护卫舰。那家伙很谨慎，不过我的一个工人发现了他，告诉了我。\n你去Hispaniola附近的海域找找他吧。我觉得他还没跑远。
+在海上。 昨天他乘着“莱昂号”护卫舰出海了， 这是我所知道的。 我自己没见过那艘护卫舰。 那家伙很谨慎， 不过我的一个工人发现了他， 告诉了我。 \n你去伊斯帕尼奥拉附近的海域找找他吧。 我觉得他还没跑远。 
 }
 SantoDomingo_Shipyard_23 {
-谢谢，我们会继续找的。
+谢谢， 我们会继续找的。 
 }

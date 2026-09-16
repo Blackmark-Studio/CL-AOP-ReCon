@@ -38,6 +38,12 @@ SentJons_TownCave {im Kerker von Saint John's}
 SentJons_TownCave_box1 {unter den Planken in einer Sackgasse}
 SentJons_TownCave_box2 {in einer Sackgasse der Mine}
 SentJons_TownCave_box3 {am Verschluss}
+SentJons_TownCave_box4 {am Verschluss mit einer Fackel}
+SantoDomingo_TownCave {im Kerker von Santo Domingo}
+SantoDomingo_TownCave_box1 {unter den Planken in einer Sackgasse}
+SantoDomingo_TownCave_box2 {in einer Sackgasse der Mine}
+SantoDomingo_TownCave_box3 {am Verschluss}
+SantoDomingo_TownCave_box4 {am Verschluss mit einer Fackel}
 Barbados_Cave {in einer Höhle unweit von Bridgetown}
 Barbados_Cave_box1 {unter den Planken in einer Sackgasse}
 Beliz_Cave {in einer Höhle rechts vom Ausgang aus Belize}
@@ -123,7 +129,7 @@ Tortuga_Grot {in einer Höhle gegenüber vom Fisheye Beach}
 Tortuga_Grot_box1 {eine Truhe am Ufer}
 Tortuga_Cave {in einem Kerker von Tortuga}
 Tortuga_Cave_box1 {eine Truhe hinter einer verschlossenen Tür}
-Trinidad_Grot {in einer Höhle gegenüber dem Leuchtturm von Trinidad und Tobago}
+Trinidad_Grot {in einer Höhle gegenüber dem Leuchtturm von Trinidad}
 Trinidad_Grot_box1 {eine Truhe am Ufer}
 FortFrance_Dungeon {im Kerker von Fort-de-France}
 FortFrance_Dungeon_box1 {eine Truhe auf der Anhöhe}
@@ -133,3 +139,5 @@ FortFrance_Dungeon_box4 {Eine Truhe hinter einer offenen Tür auf der unteren Eb
 FortFrance_Dungeon_box5 {unter Holzkisten}
 Providence_Cavern {in der Durchgangshöhle zwischen Morgan's Head und Old Providence Island}
 Providence_Cavern_box1 {Eine Truhe hinter Stalagmiten in einer Sackgasse}
+Aruba_Grot           {in einer Höhle tief im Inneren der Insel, nahe dem Kariben-Dorf}
+Aruba_Grot_box1       {Truhe oberhalb des großen Steins}

@@ -1,9 +1,9 @@
 PortSpein_Ammo_1 {
-说吧，我听着。
+说吧， 我听着。 
 }
 PortSpein_Ammo_2_m {
-我错了。告辞。
+我搞错了。 告辞。 
 }
 PortSpein_Ammo_2_f {
-我错了。再见。
+我错了。 再见。 
 }

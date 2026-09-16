@@ -37,3 +37,84 @@ He was. He and his friend used to spend a lot of time here. He was here the day 
 LaVega_Tavern_11 {
 Thank you!
 }
+LaVega_Tavern_12 {
+I'm here about Nicolas Rimalie again.
+}
+LaVega_Tavern_13 {
+I'm looking for a man named Nicolas Rimalie. Know him?
+}
+LaVega_Tavern_14 {
+Rimalie? Of course I know him. He doesn't come by often, but he's respected here. Why do you ask?
+}
+LaVega_Tavern_15 {
+An old friend of his - Michel - is looking for him. Tell me, when was Nicolas here last?
+}
+LaVega_Tavern_16 {
+Yesterday. He spent the night in a room upstairs. Ate alone, then left at dawn.
+}
+LaVega_Tavern_17 {
+Where did he go?
+}
+LaVega_Tavern_18 {
+A thousand pesos, Captain, and I'll tell you everything I know.
+}
+LaVega_Tavern_19 {
+Here. Now talk.
+}
+LaVega_Tavern_20 {
+I don't have that kind of money right now.
+}
+LaVega_Tavern_21 {
+I'll manage without your help.
+}
+LaVega_Tavern_22 {
+Rimalie rented a room, ate alone, then left at dawn.
+}
+LaVega_Tavern_23 {
+Where did he go?
+}
+LaVega_Tavern_24 {
+Then come back when you do. Around here, even silence has a price.
+}
+LaVega_Tavern_25 {
+I'll be back.
+}
+LaVega_Tavern_26 {
+As you wish...
+}
+LaVega_Tavern_27 {
+The ugly rumors about you have died down. In fact, lately I hear nothing but good things. I suppose we can dispense with the fee. Rimalie rented a room, ate alone, then left at dawn.
+}
+LaVega_Tavern_28 {
+Where did he go?
+}
+LaVega_Tavern_29 {
+Well, Captain? Do you have a thousand pesos for me this time?
+}
+LaVega_Tavern_30 {
+I do. Here.
+}
+LaVega_Tavern_31 {
+Not yet.
+}
+LaVega_Tavern_32 {
+I'll manage.
+}
+LaVega_Tavern_33 {
+He said he was going to the old pier beyond the settlement. I didn't ask anything else.
+}
+LaVega_Tavern_34 {
+Was anyone else looking for him?
+}
+LaVega_Tavern_35 {
+Two strangers. One spoke with a Spanish accent, the other hardly said a word.
+}
+LaVega_Tavern_36 {
+Did you tell them where Rimalie went?
+}
+LaVega_Tavern_37 {
+I didn't. But they found someone more accommodating and soon followed him.\nAnd another thing... Lately Rimalie has been buying twice as much drink from me.
+}
+LaVega_Tavern_38 {
+Hmm... Well, thank you.
+}

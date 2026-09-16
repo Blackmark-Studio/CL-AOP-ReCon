@@ -487,3 +487,39 @@ Nie widzę waszego statku w porcie, kapitanie @<GetFullName>...
 Common_Shipyard_137 {
 Kapitanie, proszę zacumować statek w porcie i potem przyjść.
 }
+Common_Shipyard_138 {
+@<TimeGreeting>, doktorze Blood. Co pana sprowadza?
+}
+Common_Shipyard_139 {
+Dzień dobry, @<npchar.name>. Przybyłem leczyć hiszpańskich jeńców.
+}
+Common_Shipyard_140 {
+Ci łajdacy nie zasługują na taką troskę. Myśli pan, że gdybyśmy znaleźli się na ich miejscu, obchodziliby się z jeńcami tak delikatnie?
+}
+Common_Shipyard_141 {
+Kto wie... Ale zawsze uważałem, że człowiek powinien brać przykład z najlepszych, a nie upodabniać się do najgorszych.
+}
+Common_Shipyard_142 {
+Mówi pan tak tylko dlatego, że to nie pański magazyn zamieniono w lazaret, doktorze Blood. Ale skoro tak bardzo chce pan ich leczyć - są za drzwiami po lewej. I proszę, niech pan to weźmie: to dla nich... to znaczy dla pana... No, wie pan, o co chodzi.
+}
+Common_Shipyard_143 {
+Dziękuję panu.
+}
+Common_Shipyard_144 {
+Jeśli nadal szuka pan Hiszpanów, to nie zmienili miejsca pobytu.
+}
+Common_Shipyard_145 {
+To trochę ułatwia sprawę.
+}
+Common_Shipyard_146 {
+Niesamowite! Po prostu niesamowite! Postawił pan na nogi pięciu z tych sześciu worków kości, podczas gdy ranni z 'Pride of Devon', pozostający pod opieką doktorów Wackera i Bronsona, padają jak muchy.
+}
+Common_Shipyard_147 {
+Wygląda na to, że Hiszpanie trzymają się życia znacznie uparciej niż Anglicy. Zapewne z czystej złośliwości.
+}
+Common_Shipyard_148 {
+Proszę nie być skromnym, doktorze. Cały Bridgetown już mówi, że miejscowi lekarze przy panu to zwykli cyrulicy.
+}
+Common_Shipyard_149 {
+Obawiam się, że ma pan o mnie zbyt wysokie mniemanie, a o moich kolegach zbyt niskie. Choć przyznam, że z tym drugim znacznie trudniej mi polemizować.
+}

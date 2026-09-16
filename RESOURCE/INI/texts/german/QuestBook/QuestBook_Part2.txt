@@ -250,6 +250,23 @@ GivePrisonFree.4 {Sieht so aus, als hätte @<sName> mich einfach hereingelegt. W
 GivePrisonFree.5 {Ich habe zugestimmt, einem Gefangenen im Gefängnis von @<sCity> namens @<sName> zu helfen. Ich sollte mit dem Gefängnisleiter sprechen; vielleicht lässt sich eine Lösung finden.}
 GivePrisonFree.6 {Die zwei Tage, die mir gegeben wurden, sind vergangen, und ich habe es immer noch nicht geschafft, die Befreiung des Gefangenen namens @<sName> zu regeln. Schade, aber er muss im Gefängnis bleiben.}
 GivePrisonFree.7 {Es ist mir nicht gelungen, den Gefangenen namens @<sName> zu befreien. Na gut, ich komme auch ohne seinen Schatz aus.}
+
+Tutorial_Eng
+{
+Hinweis: Was geschieht in England?
+}
+
+Tutorial_Eng.1
+{
+England durchlebt seit fast hundert Jahren schwere Zeiten. König Heinrich VIII. von England konnte sich von seiner ersten Frau Katharina von Aragón nicht scheiden lassen, weil der Papst dies nicht gestattete. Da schaltete sich der englische Erzbischof Cranmer ein und schlug Heinrich vor, sich selbst die Scheidung zu gewähren, schließlich sei er der „Gesalbte Gottes“. Im Jahr 1534 erklärte sich Heinrich VIII. durch einen Parlamentsakt zum „Oberhaupt der Kirche“ und löste damit die englische Kirche von der Herrschaft Roms. Mit einer einzigen Scheidung gab sich Heinrich VIII. nicht zufrieden: Insgesamt hatte er sechs Ehefrauen, von denen er zwei, Anne Boleyn und ihre Cousine Catherine Howard, ohne Gewissensbisse aufs Schafott schickte. Seitdem findet England keine Ruhe mehr. Maria Tudor versuchte, die Kirche wieder unter die Herrschaft des Papstes zu bringen, doch Johannes Calvin veränderte England, und das Land wurde puritanisch.
+    Der Bürgerkrieg zwischen Karl I. und Oliver Cromwell endete mit der Hinrichtung des englischen Königs. Die unabhängige Republik (1649–1660) brachte England keinen Frieden; zehn Jahre puritanischer Herrschaft hatten alle Engländer in der Alten Welt erschöpft. Im Frühjahr 1660 setzten sie deshalb Karl II. Stuart, den Sohn des hingerichteten Karl I., wieder auf den englischen Thron.
+    Wahrhaftig, man darf das Schicksal eines Staates nicht religiösen Fanatikern anvertrauen! War es das wert, Ströme von Blut zu vergießen, dem König erst die Macht und dann den Kopf zu nehmen, nur um zehn Jahre später seinem Sohn den Thron zurückzugeben?
+    Der jüngste Krieg zwischen England und Spanien im Jahr 1655 setzte beiden Mächten zu, den Spaniern jedoch stärker; sie verloren sogar Jamaika. Nun herrscht also Frieden zwischen Spanien und England, und die von den Engländern ausgestellten Kaperbriefe wurden annulliert. Aber das ist alles Unsinn: Die Spanier wurden früher ausgeraubt und werden noch immer ausgeraubt; an ihren Händen klebt einfach zu viel unschuldiges Blut.
+    Seit 1664 wird hier alles vom Gouverneur von Jamaika, Sir Thomas Modyford, geleitet. Bei seiner Ankunft in Port Royal erhielt er klare Anweisungen von Karl II., die Piraterie einzudämmen und gute Handelsbeziehungen zu Spanien aufrechtzuerhalten. Doch er hat nicht die geringste Absicht, den Befehl des englischen Königs auszuführen, auch wenn er so tut.
+    Sir Thomas Modyford war zuvor Gouverneur von Barbados. Als Cromwell an die Macht kam, erkannte Barbados auf Betreiben Modyfords die neue britische Herrschaft nicht an. Er wollte offenbar unabhängig werden. Doch Cromwell war nicht der Oliver, der solche Späße verzieh, und schickte ein Geschwader, um die Insel zur Ordnung zu rufen. Modyford leistete zum Schein Widerstand, einigte sich aber schnell mit den Puritanern und führte Barbados in den Schoß des Mutterlandes zurück. Nach der Krönung Karls II. zum britischen König wurde Sir Thomas Modyford zum Gouverneur von Jamaika ernannt, angeblich auf Betreiben einflussreicher Verwandter aus Karls Umfeld.
+    Sir Thomas Modyford, Gouverneur von Jamaika, ist also ein großer Liebhaber des gelben Teufels. Sein besonderer Günstling ist der Anführer der Bukanier Edward Mansfield, ein Niederländer aus Curaçao, doch auch Henry Morgan kommt keineswegs zu kurz. Wer würde schon Berge spanischen Goldes ablehnen, die Henry von jedem seiner Raubzüge gegen spanische Siedlungen mitbringt?
+}
+
 Tutorial_Fra {Hinweis: Was passiert in Frankreich?}
 Tutorial_Fra.1
 {
@@ -271,6 +288,28 @@ Die Insel Tortuga hatte große strategische Bedeutung, besonders für die Spanie
 
 1664 übertrug Ludwig XIV. offiziell West-Hispaniola (ein anderer Name für Tortuga) an die French West India Company und ernannte Bertrand d’Ogeron, einen ehemaligen Bukanier, zum Gouverneur des Gebiets. Die Brüder der Küste hatten sich auch unter früheren Gouverneuren von Tortuga nicht beklagt, doch nun war Tortuga ein Paradies für Bukaniere. Gouverneur d’Ogeron befahl sogar, Frauen aus Europa auf seine Insel zu bringen!!! Ein Paradies für den Bukanier!
 }
+
+Tutorial_Spa
+{
+Hinweis: Was geschieht in Spanien?
+}
+
+Tutorial_Spa.1
+{
+Mit dem Tod Philipps IV., des letzten großen spanischen Monarchen, trat das Land in eine lange Regentschaftsperiode ein. Der neue König, Karl II. von Habsburg, ist vier Jahre alt, so schwach und von so vielen Krankheiten geplagt, dass man sich kaum vorstellen kann, wie er überhaupt am Leben bleibt. Kein Wunder: Sein Vater Philipp IV. war bereits alt, als er Maria Anna von Österreich heiratete, und soll Gerüchten zufolge selbst an „verschiedenen Krankheiten“ gelitten haben. So wurde Mariana – wie Anna von Österreich in Spanien genannt wurde – Regentin für ihren Sohn. Welche Gefahr das bedeuten konnte, hatten die jüngsten Ereignisse in Frankreich gezeigt: die Aufstände der Fronde gegen Mazarin im Jahr 1650. Philipp IV. hatte die Regentschaft deshalb im Voraus vorbereitet und der Königin eine sorgfältig ausgewählte Regierungsjunta aus Vertretern der politischen, kirchlichen und öffentlichen Gewalt zur Seite gestellt.
+    Trotz dieser Junta kehrte Mariana, die der Last ihrer Pflichten nicht mehr gewachsen war, zum System der Günstlinge zurück, um die Regentschaft einer Weltmacht abzusichern. Ihre Wahl fiel auf ihren österreichischen Beichtvater, den Jesuitenpater Johann Eberhard Nithard. Trotz aller Warnungen verlieh die Königin ihm zunächst nur nominelle Macht, indem sie ihn zum Großinquisitor Spaniens ernannte; dadurch wurde er automatisch Mitglied der Regierungsjunta. Seine ausländische Herkunft und politische Propaganda riefen in der Regierung und breiten Bevölkerungsschichten starke Abneigung gegen ihn hervor. Diese wurde noch dadurch verstärkt, dass Mariana und Nithard den erfahrenen und angesehenen Halbbruder König Karls II., Don Juan, schlecht behandelten. Don Juan ist einer der interessantesten Männer Spaniens. Er ist Förderer von Gelehrten wie De la Faille, Caramuel y Lobkowitz oder Juanini, Besitzer einer gewaltigen Bibliothek und Begründer der spanischen Reformwissenschaft. Außerdem spielte er als tapferer General und erfahrener Gouverneur eine entscheidende Rolle bei der Niederschlagung der Aufstände in Neapel und Barcelona. Dagegen war sein Kommando in Flandern und Portugal zwischen 1656 und 1663 weit weniger erfolgreich.
+    Das arme Spanien erweckt ein gewisses Mitleid, wird es doch in einem Moment der Schwäche von allen Seiten angegriffen. Doch es gibt einen Grund, warum die Spanier von allen gehasst werden.
+    Auf Puerto Rico und den benachbarten Inselchen lebten friedlich Bukanier – gewöhnliche Viehjäger, größtenteils Franzosen – und störten niemanden. Plötzlich beschlossen die Spanier, ohne Rücksicht darauf, dass das Gewerbe der Bukanier auch ihnen selbst Vorteile brachte, sie alle von der Insel San Domingo zu vertreiben oder, wenn möglich, vollständig auszurotten.
+    Der Beginn dieses grausamen Vorhabens, das selbst für die Spanier verhängnisvoll werden sollte, war sehr einfach. Nach jener Methode, die sie so erfolgreich gegen die amerikanischen Eingeborenen angewandt hatten, überfielen sie die verstreuten, ahnungslosen und unschuldigen Bukanier, töteten einen Teil von ihnen und verschleppten die übrigen in die Sklaverei. Von diesem Augenblick an wurden die Jäger vorsichtiger, zogen stets in kleinen, kampfbereiten Gruppen umher und kämpften, wenn sie dennoch angegriffen wurden, so verzweifelt, dass sie die Spanier trotz deren zahlenmäßiger Überlegenheit fast immer besiegten und zur Flucht zwangen.
+    Daraufhin änderten die Spanier ihre Kriegsmethode. Die einzelne Jagd auf Bukanier, die bereits mehr als einem rechtgläubigen Spanier das Leben gekostet hatte, hörte auf. Stattdessen griffen die Spanier die Bukanier nachts in ihren Boucans an, töteten Herren und Diener und verschonten nicht einmal die Hunde. Diese Grausamkeiten trieben die Bukanier zur Raserei. Sie schlossen sich zusammen und begannen ihrerseits einen Angriffskrieg, in dem sie keinen Feind verschonten. Das zeigte Wirkung. Die Spanier stellten anscheinend alle Feindseligkeiten ein, und die Bukanier schmeichelten sich mit der Hoffnung, man werde sie endlich in Ruhe lassen. Doch ihre Feinde warteten nur auf Verstärkungen. Sobald diese aus den spanischen Kolonien eintrafen, flammte der Krieg erneut auf. Auch die Bukanier erhielten Verstärkung: Franzosen von Tortuga und anderen Inseln sowie viele weitere Abenteurer und Beutesucher schlossen sich ihnen an. Die Gegner kämpften ohne Unterlass, und auf der ganzen Insel floss Blut. Bis heute tragen viele Orte auf San Domingo den Namen „Mordfelder“. All dies geschah zwischen 1660 und 1665.
+
+    Es gibt keine blutrünstigeren Teufel als Spanier und Portugiesen. Allein von 1535 bis 1660 wurden so viele Edelmetalle aus Amerika nach Spanien gebracht, dass sämtliche Minen der Alten Welt zusammen bis dahin während ihrer gesamten Existenz wahrscheinlich nicht einmal die Hälfte davon hervorgebracht hatten. Die Hälfte der eingeborenen Bevölkerung der Neuen Welt – nach vorsichtigsten Schätzungen fünf oder sechs Millionen Indianer – starb bereits in den ersten anderthalb Jahrhunderten spanischer Herrschaft, ein erheblicher Teil davon in den Minen Mexikos und Perus.
+    In der Bruderschaft der Küste gibt es einen Freibeuter namens Montbars der Vernichter. Er nimmt von eroberten Schiffen niemals Beute. Bewaffnete Spanier, Gold, Waren – alles geht über Bord, und seine Mannschaft besteht aus Indianern, die er aus spanischer Sklaverei befreit hat.
+    Während Spanien seine eigenen überseeischen Kolonien erbarmungslos ausplünderte, errichtete es zugleich das strengste Handelsmonopol für den Verkehr mit der Neuen Welt. Seit Beginn des 16. Jahrhunderts war Sevilla der einzige spanische Hafen, der mit sämtlichen überseeischen Gebieten Handel treiben durfte. Hierher gelangten die geraubten Reichtümer des amerikanischen Kontinents, die über Veracruz in Mexiko verschifft wurden, zunächst über Nombre de Dios und später über Puerto Bello an der Atlantikküste des Isthmus von Panama.
+    Seit 1537 überquerte kein spanisches Handelsschiff mehr allein den Atlantik – diese strengste Regel wurde von den Interessen des Monopols diktiert. Darüber hinaus waren die Gewässer um die überseeischen Besitzungen der spanischen Krone seit Beginn des 16. Jahrhunderts für Schiffe anderer Länder gesperrt. Zunächst funktionierte dieses System tadellos, denn Spanien und Portugal hatten die Wege nach Indien und in die Neue Welt viel früher erschlossen als alle anderen europäischen Mächte. Im Jahr 1493 teilte Papst Alexander VI. die ganze Welt unter dem Himmel zwischen diesen beiden „Nachbarn“ auf, und ein Jahr später schlossen sie ein Abkommen über die Abgrenzung ihrer künftigen Eroberungsgebiete. So fiel die gesamte Neue Welt mit Ausnahme Brasiliens in die spanische „Hälfte“ der Erde, während Portugal Brasilien, Afrika und Asien erhielt.
+    Doch nun ist die Stunde der Abrechnung gekommen. Spanisches Blut und spanisches Gold – für das Blut von Millionen Indianern, Zehntausenden französischen Bukaniern und englischen Siedlern.
+}
+
 Tutorial_Hol {Hinweis: Was passiert in Holland?}
 Tutorial_Hol.1
 {
@@ -434,6 +473,30 @@ Manchmal opferten sich die Azteken auch freiwillig den Göttern, um „Seligkeit
 
 Manchmal wurde bei Opfern eine Methode angewandt, die die Spanier später „gladiatorisch“ nan
 }
+
+Tutorial_Sharp
+{
+Hinweis: Wer war Kapitän Sharp?
+}
+
+Tutorial_Sharp.1
+{
+Eine der schillerndsten Gestalten der Freibeuterzeit war Kapitän Sharp. Berühmt wurde er weniger als einer der Organisatoren des Marsches über den Isthmus von Panama, sondern vielmehr als Held mehrerer anekdotischer und geradezu absurder Geschichten.
+    Am 5. April 1680 zog eine Piratentruppe von insgesamt etwa vierhundert Mann durch den Dschungel nach Westen. Dieser Marsch wurde in hohem Maße durch die Unterstützung der einheimischen Indianer ermöglicht, die mit den Spaniern ihre eigenen Rechnungen offen hatten.
+    Die kleine Stadt Santa María wurde von den Piraten ohne größere Verluste im Sturm genommen. Die Beute fiel jedoch gering aus – das Gold aus den nahe gelegenen Minen war bereits drei Tage vor dem Angriff nach Panama gebracht worden. Die Piraten beschlossen, Morgans Tat zu wiederholen und Panama zu stürmen; die bescheidene Beute aus Santa María schickten sie unter Bewachung über den Isthmus zurück.
+
+    Die Bewohner Panamas waren jedoch vor dem Herannahen der Freibeuter gewarnt worden, sodass der Plan, die Stadt zu stürmen, aufgegeben werden musste. Stattdessen lieferten sich die Piraten eine Schlacht mit drei spanischen Galeonen, die ihnen an Bewaffnung und Mannschaftsstärke um ein Vielfaches überlegen waren. Dank ihres Mutes und Könnens gelang es den Freibeutern, die spanischen Schiffe zu entern.
+    Der Einzige, der an dieser historischen Schlacht nicht teilnahm, war Kapitän Bartholomew Sharp, der zu dieser Zeit mit der Plünderung einer Perlenfischerei beschäftigt war. Außerdem hatten seine Gefährten auf einer kleinen Insel Wein gefunden, und Sharp selbst hatte eine schöne Spanierin entdeckt – deshalb hatte er es nicht besonders eilig, zur Schlacht zu kommen.
+    Am Morgen nach dem Sieg teilten sich die Piraten. Siebzig Mann unter Admiral Coxon zogen ab, während die übrigen unter das Kommando von Admiral Sawkins kamen. Einige Zeit später erbeuteten die Piraten ein Schiff, das Sold für Panama transportierte, und jeder erhielt zweihundertsiebenundvierzig Münzen. Vom Erfolg beflügelt, versuchte Sawkins die kleine Stadt Pueblo Nuevo zu stürmen, doch der Angriff scheiterte und der Admiral selbst fiel. An seiner Stelle übernahm Sharp den Befehl und versprach, jeder Pirat werde mit tausend Pfund Sterling Beute von der Unternehmung zurückkehren.
+    Dennoch spalteten sich nach seiner Wahl weitere siebzig Piraten ab und verließen das Lager auf einem erbeuteten Schiff. Die folgenden Ereignisse zeigten, dass sie auf ihre Weise recht gehabt hatten: Sharp erwies sich als völlig untauglicher Kommandant und führte die Piraten, anstatt Schiffe und Städte zu erobern, auf eine fruchtlose Suche nach Drakes Schatz. Zwei Monate später setzten die Piraten ihn ab und wählten John Watling zum Admiral. Dies geschah auf der Insel Juan Fernández, wo die Piraten bei ihrer hastigen Abfahrt einen Indianer namens William zurückließen. Er lebte mehrere Jahre allein dort, bis er von den Schiffen von Davis und Swan gefunden wurde.
+    Watling beschloss, die Stadt Arica zu stürmen, erlitt mit nur einhundertvierzig Mann jedoch eine vernichtende Niederlage und fiel beim Angriff. So wurde Sharp zum zweiten Mal Admiral.
+    In den folgenden Wochen kreuzte er mit der Galeone „Trinity“ vor der Küste Südamerikas. Ihm gelang es, das reiche Schiff „Saint Peter“ und danach noch ein weiteres, die „Saint Rosario“, zu erbeuten. Die Geschichte, die mit letzterem verbunden ist, machte Sharp zum Gespött aller Piraten der Karibik. Nachdem sie Wein und Truhen mit Silbermünzen an sich genommen hatten, fanden Sharps Männer im Laderaum Barren aus einem weißen Metall, das sie für Zinn hielten. Die Freibeuter wollten sie gerade auf ihr eigenes Schiff laden, als der Admiral auf dem erbeuteten Schiff eine spanische Dame bemerkte. Sie überredete ihn, das Schiff ohne weitere Plünderung freizugeben – worin der Preis dafür bestand, dürfte wohl klar sein; der Kerl war ausgesprochen liebestoll! Sharp beschloss, sich mit den Münztruhen zufriedenzugeben, und nahm nur einen Barren mit, um daraus Kugeln zu gießen.
+    Der erste Mann, der den Barren auf Antigua sah, begriff sofort, wie sehr Sharp hinters Licht geführt worden war: In den Laderäumen der „Saint Rosario“ hatte sich ... die größte Silberladung befunden, die Piraten jemals in die Hände gefallen war. Man erzählte außerdem, die schöne Dame habe von den Besitzern des Silbers eine reiche Belohnung erhalten.
+    Sharps Reise dauerte noch mehrere Monate. Er führte seine Galeone um Kap Hoorn und erreichte die Westindischen Inseln. Dort fürchteten die Piraten Morgan, der Jagd auf seine ehemaligen Gefährten machte, ließen ihr Schiff zurück und gelangten auf anderen Schiffen nach England. Auf Verlangen des spanischen Botschafters wurden sie dort sämtlich verhaftet. Sharp engagierte jedoch Anwälte, denen es gelang zu beweisen, dass ihre Handlungen lediglich der Verteidigung gegen spanische Angriffe gedient hatten, und die Piraten wurden freigesprochen. Über Sharps weiteres Schicksal ist nichts bekannt, doch allem Anschein nach lebte er in England recht bequem von dem geraubten spanischen Gold.
+
+    Und warum hat das Spiel „Corsairs 1“ aus diesem Kerl einen regelrechten Personenkult gemacht? Sollte das ein Witz sein? Allerdings hatte Kapitän Sharp, allem Anschein nach, tatsächlich unzählige Kinder über den ganzen Archipel verstreut.
+}
+
 Tutorial_Dictonary {Hilfe: Glossar der Begriffe}
 Tutorial_Dictonary.1
 {
@@ -479,6 +542,54 @@ KABELLÄNGE – eine nautische Längeneinheit (185,2 Meter), ein Zehntel einer S
 *
 KABOTAGE (französisch cabotage) – Schifffahrt zwischen Häfen desselben Landes. Es gibt die große Kabotage (zwischen Häfen verschiedener Meere, z. B. Ost
 }
+
+Tutorial_Fight_Info
+{
+Hinweis: Das Kampfsystem des Spiels
+}
+
+Tutorial_Fight_Info.1
+{
+DAS KAMPFSYSTEM DES SPIELS
+*
+Meisterhafter Umgang mit Klinge und Pistole ermöglicht es Euch, aus jeder noch so schlimmen Lage lebend herauszukommen. Das Kampfsystem stellt Euch drei Arten von Angriffsschlägen, zwei Arten des Parierens, einen Block, einen Rundumschlag für Angriff und Verteidigung, die Möglichkeit, mit einer Pistole zu schießen, sowie Sprünge nach hinten und zur Seite zur Verfügung.
+*
+LEBEN
+Das Leben eines Charakters bezeichnet die Menge an Schaden, die er aushalten kann. Das Leben steigt mit jeder neuen Stufe und kann außerdem durch zusätzliche Fähigkeiten erhöht werden.
+Während eines Kampfes wird Euer Leben als roter Balken oben links, links neben dem Charakterporträt, angezeigt. Leben kann während des Kampfes durch die Verwendung von Elixierfläschchen („Heiltränken“) über das Menü Enter/Benutzen oder über eine Schnelltaste wiederhergestellt werden.
+*
+GESUNDHEIT
+Gesundheit ist ein Maß für den allgemeinen körperlichen Zustand des Helden. Je schlechter die Gesundheit, desto schlechter werden die Werte des Helden im Spiel. Die Gesundheit verschlechtert sich, wenn der Held viele Verwundungen erleidet, und erholt sich, wenn er längere Zeit nicht an Nahkämpfen teilnimmt. Fällt sie unter „Ausgezeichnet“, erhält der Held Abzüge auf seine Eigenschaften, die wiederum Abzüge auf seine Fertigkeiten verursachen. Gesundheit regeneriert sich von selbst, ziemlich langsam, aber immerhin. Am schnellsten geschieht dies, wenn der Held nichts tut, etwa in einer Taverne schläft; während einer Seereise ist die Erholung doppelt so langsam. Die Fähigkeit „Ausgezeichnete Gesundheit“ verdoppelt die Geschwindigkeit der Gesundheitsregeneration. Ein goldener Hintergrund des Gesundheitsanzeigers bedeutet, dass die Gesundheit ihr derzeitiges Maximum erreicht hat. Allerdings kann auch das maximale Gesundheitsniveau durch schwere Verletzungen sinken – Narben und Verstümmelungen, die sich selbst nach vollständiger Heilung im Kampf bemerkbar machen. Priester in Kirchen können das maximale Gesundheitsniveau wiederherstellen, aber nur selten, nur geringfügig und für viel Geld. Manchmal muss man zwei oder drei Priester aufsuchen, damit aus „Guter, goldener“ Gesundheit „Gute, weiße“ Gesundheit wird – und selbst danach muss man warten, bis sich die Gesundheit von selbst bis „Ausgezeichnet, golden“ erholt.
+*
+ENERGIE
+Ein Mensch kann nicht ohne Unterbrechung kämpfen; irgendwann überwältigt ihn die Erschöpfung. Die Menge an Energie hängt von der Eigenschaft „Reaktion“ des Helden ab: Je höher der Wert, desto leistungsfähiger ist der Charakter. Jeder Schlag verbraucht eine bestimmte Menge Energie, daher solltet Ihr Eure Kräfte im Kampf sorgfältig einteilen. Die Energie wird als blauer Balken rechts neben dem Charakterporträt angezeigt. Wenn Eure Energie nicht ausreicht, könnt Ihr keinen Schlag ausführen. Während des Kampfes erholt sich die Energie allmählich. Wenn Ihr seht, dass nur noch sehr wenig übrig ist und es nicht mehr für Angriffe reicht, versucht die Schläge der Gegner zu blocken oder zu parieren, bis sich Eure Energie erholt hat. Zusätzliche Fähigkeiten helfen Euch, bei Angriffen weniger Energie zu verbrauchen und sie schneller wiederherzustellen.
+*
+ENERGIE UND LEBEN DER GEGNER
+Während des Kampfes schweben über den Köpfen Eurer Gegner Balken, die deren Leben und Energie anzeigen. Wenn Ihr oder Eure Verbündeten einen Gegner trefft, erscheint über seinem Kopf eine Zahl, die den verursachten Schaden anzeigt.
+***
+ANGRIFFSARTEN
+Hieb – ein schneidender Schlag mit Ausholbewegung. Er verursacht mittleren Schaden und benötigt wenig Energie.
+*
+Stich – ein schneller Angriff, der geringen Schaden verursacht. Er benötigt mehr Energie als ein Hieb, kann durch seine Geschwindigkeit jedoch die Ausholbewegung des Gegners unterbrechen.
+*
+Durchschlagender Angriff – erfordert viel Energie und wird mit weitem, langsamem Schwung ausgeführt, verursacht aber sehr hohen Schaden und durchbricht immer einen Block.
+*
+Rundumschlag – benötigt eine mittlere Menge Energie und verursacht geringen Schaden bei allen Figuren in der Nähe. Ein Charakter, der von einem Rundumschlag getroffen wird, taumelt etwas zurück, schafft dem Helden Raum zum Manövrieren und gewährt eine kurze Atempause für einen Gegenangriff.
+*
+Parieren – ermöglicht es, einen Schlag abzuwehren, indem die Säbelklinge des Gegners zur Seite geführt wird. Es kostet keine Energie und schützt vor einem durchschlagenden Angriff. Bei einer erfolgreichen Parade verliert der Gegner seinen Rhythmus und verbraucht den größten Teil seiner Energie.
+*
+Finte – sieht genauso aus wie ein durchschlagender Angriff. Wenn Ihr eine Finte ausführt und der Gegner irgendeinen Angriff beginnt, fängt Euer Charakter seinen Säbel ab und führt einen Gegenschlag aus. Das Einleiten einer Finte kostet keine Energie, eine erfolgreich ausgeführte Finte mit Schaden verbraucht nur sehr wenig. Eine Finte kann auch einen durchschlagenden Angriff abfangen.
+*
+Block – ermöglicht es, alle Angriffe außer dem durchschlagenden Angriff abzuwehren. Ein Block kostet keine Energie. Ihr könnt jederzeit in den Block wechseln und damit Euren eigenen Angriff abbrechen, wenn sofort erkennbar ist, dass dieser erfolglos sein wird. Gewöhnliche Angriffe können einen Block gelegentlich durchbrechen, wenn der Gegner über entsprechende Fähigkeiten verfügt.
+*
+Pistolenschuss – verursacht Schaden und zwingt den Gegner, einen Schritt zurückzuweichen. Es gibt verschiedene Pistolen mit einer, zwei oder vier Ladungen. Zum Schießen werden Kugeln benötigt. Ob Pistolen im Kampf nachgeladen werden können, hängt von der Spieleinstellung ab; je nach Einstellung ist ein Nachladen nur mit weggestecktem Säbel oder überhaupt nicht möglich.
+*
+Ausweichen – lässt Euch zwei Schritte nach hinten oder zur Seite springen und bringt den Helden damit aus der Reichweite eines Schlages oder aus dem dichtesten Kampfgetümmel.
+*
+TASTENBELEGUNG FÜR ANGRIFFE
+Zur leichteren Steuerung gibt es im Spiel eine Taste für den Angriffsmodus; wird sie gedrückt gehalten, erhält eine Taste eine zweite Funktion. Standardmäßig liegen Stich und Rundumschlag auf derselben Taste – der linken Maustaste; durchschlagender Angriff und Finte auf der mittleren Maustaste; Hieb und Parade auf der rechten Maustaste. Block, Schuss und Ausweichbewegungen haben jeweils eigene Tasten.
+}
+
 Tutorial_Seafight_Info {Hilfe: Seeschlachten auf Schiffen}
 Tutorial_Seafight_Info.1
 {
@@ -1144,6 +1255,43 @@ Askold hat mir aufgetragen, irgendein Grab von Gott-weiß-wem auf der Insel Guad
 Es erscheint mir sinnlos, das Logbuch mit Einträgen über meine Angelegenheiten mit Askold zu füllen, also verschwende ich dafür kein Papier mehr.
 }
 Ascold.14 {Die Spanier an der Pyramide wurden ausgeschaltet.}
+
+ContractWithHell
+{
+Text des Vertrags mit der Abteilung der Hölle für Menschenabrechnung
+}
+
+ContractWithHell.1
+{
+Vertrag.
+
+Karibisches Meer.
+
+Die Abteilung der Hölle für Menschenabrechnung, vertreten durch den Dämon Azzy, handelnd auf Grundlage der Verordnung über den Status von Dämonen in der Menschenwelt, nachfolgend Auftragnehmer genannt, einerseits, und @<Conrtragent>, handelnd aufgrund eigener Wünsche und aus freiem Willen, nachfolgend Auftraggeber genannt, andererseits, haben den vorliegenden Vertrag über Folgendes geschlossen:
+
+Vertragsgegenstand:
+
+1. Gegenstand dieses Vertrags ist die Gewährleistung der Unverwundbarkeit des Körpers des Auftraggebers durch den Auftragnehmer.
+
+2. Der Auftragnehmer ist verpflichtet, alle notwendigen Maßnahmen zu ergreifen, um die absolute Unempfindlichkeit des Körpers des Auftraggebers gegen jegliche physische Einwirkung sicherzustellen, darunter: Einwirkungen durch Hieb- und Stichwaffen, Einwirkungen durch Feuerwaffen, der Sturz des Körpers des Auftraggebers aus großer Höhe, der Fall verschiedener Gegenstände auf den Körper des Auftraggebers sowie sonstige physische Einwirkungen. Im Rahmen dieses Vertrags verpflichtet sich der Auftragnehmer außerdem, das Schiff des Auftraggebers vor mechanischen Beschädigungen zu schützen.
+
+3. Der Auftraggeber ist verpflichtet, rechtzeitig die Energiemenge bereitzustellen, die der Auftragnehmer zur Erfüllung seiner Pflichten benötigt. Die erforderliche Energiemenge wird auf drei Menschen oder Einheiten unreiner Kreaturen in den Höhlen und Katakomben des Karibischen Meeres pro Tag festgesetzt.
+
+4. Täglich um zwölf Uhr nachts nimmt der Auftragnehmer gemäß den Bedingungen dieses Vertrags Energie ein. Der Auftragnehmer ist verpflichtet, den Auftraggeber täglich über den Stand der Angelegenheiten zu informieren, indem er ihm den aktuellen Saldo des Vertrags zur Verfügung stellt.
+
+5. Falls der Auftraggeber Punkt drei dieses Vertrags nicht oder nicht ordnungsgemäß erfüllt, stellt der Auftragnehmer zur Erfüllung seiner Verpflichtungen aus Punkt eins dieses Vertrags die notwendige Ergänzung der täglichen Energienorm auf Kosten des Auftraggebers sicher, das heißt aus dessen Lebenskraft.
+
+6. Der Auftraggeber hat das Recht, dem Auftragnehmer Energie im Voraus bereitzustellen. Das heißt, alle vom Auftraggeber über die vorgeschriebene Norm hinaus getöteten Menschen oder unreinen Kreaturen werden auf künftige Energienormen des Auftragnehmers angerechnet.
+
+7. Den Parteien ist es untersagt, Dritte zur Erfüllung ihrer Verpflichtungen aus diesem Vertrag heranzuziehen.
+
+8. Der Auftragnehmer hat das Recht, die täglichen Normen für die Energieversorgung des Auftraggebers je nach eigenem Bedarf einseitig und ohne vorherige Benachrichtigung des Auftraggebers zu ändern.
+
+9. Dieser Vertrag tritt mit seiner mündlichen Bestätigung in Kraft und gilt unbefristet. Die Parteien können diesen Vertrag im gegenseitigen Einvernehmen ohne Vertragsstrafen kündigen. Für die Kündigung ist ein persönliches Treffen zwischen Auftraggeber und Auftragnehmer erforderlich.
+
+Rechtliche Angaben und mündliche Bestätigungen der Parteien.
+}
+
 Azzy_HellSign {Aktuelle Nachricht an die Abonnenten des Büros der Hölle}
 Azzy_HellSign.1
 {

@@ -261,9 +261,86 @@ So war die Geschichte vorbei, bevor sie überhaupt begonnen hatte...
 }
 InfoMessages_246 {Es ist Wahnsinn, eine Fregatte allein zu stürmen.}
 InfoMessages_247 {Es scheint, das ist das Haus, das ich brauche. Ich sollte hier alles gründlich durchsuchen.}
-InfoMessages_248 {Du hast kleine Perlen erhalten: @ Stk.}
-InfoMessages_249 {Du hast große Perlen erhalten: @ Stk.}
+InfoMessages_248 {Du hast kleine Perlen erhalten: @<iSmall> Stk.}
+InfoMessages_249 {Du hast große Perlen erhalten: @<iBig> Stk.}
 InfoMessages_250 {Eine Stunde ist vergangen...}
-InfoMessages_248 {Has recibido perlas pequeñas: @<iSmall>  uds.}
-InfoMessages_249 {Has recibido perlas grandes: @<iBig> uds.}
-InfoMessages_250 {Ha pasado una hora...}
+InfoMessages_251 {Nicht genug Geld (2500)}
+InfoMessages_252 {Am Abend des nächsten Tages...}
+InfoMessages_253 {Einige Stunden später...}
+InfoMessages_254 {Die Nacht ist hereingebrochen...}
+InfoMessages_255 {Eine Nahkampfwaffe wird benötigt. Rüste eine Klinge aus.}
+InfoMessages_256 {In der Stadt und an Bord des Schiffes läuteten die Alarmglocken. Peter Blood und seine Leidensgenossen erlebten den Morgen nicht mehr...}
+InfoMessages_257 {Du hast eine Schatzkarte erhalten}
+InfoMessages_258 {Einige Wochen sind vergangen...}
+InfoMessages_259 {Erforderlich}
+InfoMessages_260 {Prüfung fehlgeschlagen: Goldtruhen (4)}
+InfoMessages_261 {Geheimnis entdeckt}
+InfoMessages_262 {Nicht genug}
+InfoMessages_263 {Aktuell}
+InfoMessages_264 {Der Kapitän ist an Deck!}
+InfoMessages_265 {Die Mannschaft ist besiegt. Der Kapitän ist völlig allein!}
+InfoMessages_266 {Die Schiffsbesatzung wurde niedergemacht. Der Kapitän ist allein!}
+
+InfoMessages_267
+{
+Weggeworfen: @<sItemName> - @<iDropQuantity> Stk.
+}
+
+InfoMessages_268 {Leuchtturm von Tortuga. Einige Zeit später...}
+
+InfoMessages_269 {Dreißig Minuten vergingen...}
+
+InfoMessages_270 {Du hast Raouls Brief genommen.}
+
+InfoMessages_271 {Sie können die Tabelle mit der Taste „Enter“ verlassen.}
+
+InfoMessages_272 {Gleichzeitig...}
+
+InfoMessages_273 {Einige Zeit später, unweit der Siedlung La Vega...}
+
+InfoMessages_274 {40 Minuten später, im Haus von Michel Le Basque...}
+
+InfoMessages_275 {Einige Zeit später...}
+
+InfoMessages_276 {Der Brief wurde erfolgreich zugestellt.}
+
+InfoMessages_277 {In der folgenden Nacht, unweit des spanischen Lagers...}
+
+InfoMessages_278 {Einige Zeit später, in der Nähe der Cayman-Inseln...}
+
+InfoMessages_279 {Drei Stunden sind vergangen...}
+
+InfoMessages_280 {Einige Zeit verging...}
+
+InfoMessages_281 {Der Inder Atauco ging als Passagier an Bord des Schiffes.}
+
+InfoMessages_282 {Eine spanische Fregatte ist am Horizont! Sie hat Kurs auf Abfangen genommen.}
+
+InfoMessages_283 {Einige Zeit später wurde das feindliche Schiff vollständig untersucht. Alles Wertvolle fiel in die Hände der Sieger.}
+
+InfoMessages_284 {Zwei Tage vergingen. Segel tauchten am Horizont auf...}
+
+InfoMessages_285 {Ein paar Stunden später...}
+
+InfoMessages_286 {Michel Le Basques Hütte. Ein paar Stunden später...}
+
+InfoMessages_287 {Mehrere Tage vergingen. Die Gefährten trennten sich in der Nähe der Bucht von Aguadilla...}
+
+InfoMessages_288 {Am selben Abend...}
+
+InfoMessages_289 {Die Gefangenen wurden befreit und ins Indianerlager gebracht. Mehrere Stunden vergingen…}
+
+InfoMessages_290 {Zwei Tage sind vergangen...}
+
+InfoMessages_291 {Am selben Morgen...}
+
+InfoMessages_292 {Am nächsten Tag, mittags...}
+
+InfoMessages_293 {Eine Stunde verging. Kap der verlorenen Hoffnungen...}
+
+InfoMessages_294 {30 Minuten sind vergangen...}
+
+InfoMessages_295 {Zwei Tage vergingen. Alle Wertgegenstände wurden auf Schiffe der Alliierten verladen...}
+InfoMessages_296 {Bukanier missbilligen}
+InfoMessages_297 {Bukanier sind wohlgesinnt}
+InfoMessages_298 {Der Gouverneur verzieh Peter Blood seine lange Abwesenheit nicht. Noch am selben Tag peitschte Aufseher Kent ihn zu Tode.}

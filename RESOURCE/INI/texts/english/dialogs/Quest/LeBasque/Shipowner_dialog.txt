@@ -1,0 +1,15 @@
+Shipowner_dialog_1 {
+Ah, Captain. Michel said you would stop by. The Margarita is already under my care. You can leave other ships here as well, and if they have taken a beating at sea, my men will see to the repairs.
+}
+Shipowner_dialog_2 {
+What will it be, Captain? Berthing or repairs?
+}
+Shipowner_dialog_3 {
+I want to tend to the ships I have berthed here.
+}
+Shipowner_dialog_4 {
+Take a look at my ships. Which of them needs repairs?
+}
+Shipowner_dialog_5 {
+Nothing for now. Farewell, Charles.
+}

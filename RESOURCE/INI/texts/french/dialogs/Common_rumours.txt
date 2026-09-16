@@ -523,3 +523,54 @@ Ah, capitaine, vous avez eu la malchance de croiser ce démon que les marins app
 Common_rumours_175 {
 Vous savez, notre paroisse manque cruellement de cierges. Pourquoi personne ne veut-il aider? Ne serait-ce que pour le salut de leur propre âme...
 }
+Common_rumours_176 {
+Vous vous rendez compte, @<pchar.GenQuest.EncGirl.name> a enfin été attrapée ! Dommage, bien sûr, qu'elle ne soit qu'une voleuse et non une sorcière. Cela fait bien longtemps que nous n'avons pas eu en ville un spectacle digne d'intérêt, ha !
+}
+CapBloodLine_Rumour_1 {
+J'ai entendu dire que les esclaves de la Barbade se sont révoltés ! Et pas à moitié ! Tandis que les Espagnols, qui avaient fondu ce jour-là sur Bridgetown, mettaient la ville à sac, les esclaves - rendez-vous compte ! - leur ont dérobé une frégate entière sous le nez ! Bien fait pour ces chiens. Dommage seulement que les fugitifs soient sûrement rattrapés et pendus jusqu'au dernier.
+}
+CapBloodLine_Rumour_2 {
+Avez-vous entendu dire qu'une poignée d'esclaves a roulé dans la farine le colonel Bishop en personne ? Imaginez un peu ! Ils ont fui l'île à bord d'un navire, puis ont attiré le colonel sur leur propre bâtiment, l'ont déshabillé et jeté par-dessus bord comme un chiot galeux. Je ne serais pas surpris que le vieux promette maintenant une fortune à quiconque lui apportera leurs têtes sur un plateau.
+}
+CapBloodLine_Rumour_3 {
+Comment, vous n'avez pas entendu ? Les Espagnols ont attaqué la Barbade - et sont repartis la queue entre les jambes ! Ils ont bien pillé la ville, certes, mais on leur a volé leur propre navire ! Certains disent que ce sont les esclaves, d'autres que les habitants leur ont prêté main-forte - allez savoir. Une chose est sûre : les Espagnols n'avaient pas subi pareille humiliation depuis longtemps.
+}
+CapBloodLine_Rumour_4 {
+Tout l'Archipel ne parle que de l'attaque espagnole contre la Barbade. Un fort entier n'a pas tenu face à une seule frégate ! Mais une poignée d'esclaves a puni ces maudits dons mieux que ne l'auraient fait tous les soldats du monde : ils sont partis avec leur magnifique navire et tout le butin qui se trouvait à bord - puis se sont évanouis dans la nature !
+}
+CapBloodLine_Rumour_5 {
+On raconte que pendant que les Espagnols pillaient la Barbade, un esclave du nom de Peter Blood a déclenché une révolte. Il a rassemblé une poignée de braves, pris aux assaillants une énorme frégate, puis gagné le large à son bord comme un vrai capitaine ! Quel homme, hein ? Un instant... comment avez-vous dit que vous vous appeliez ?
+}
+CapBloodLine_Rumour_6 {
+Le colonel Bishop de la Barbade est fou de rage - au point d'en donner la nausée aux diables ! D'abord, les Espagnols ont détruit son fort et pillé sa chère Bridgetown. Ensuite, les esclaves de sa propre plantation - à mains nues, vous imaginez ! - ont étranglé les gardes d'une frégate espagnole et se sont emparés du navire. Pour finir, ils ont attiré Bishop lui-même à bord, l'ont gardé prisonnier, puis jeté par-dessus bord comme un sac de son. Voilà où en sont les choses, mon ami.
+}
+CapBloodLine_BarbadosRumour_1 {
+Pendant que les planteurs et les soldats se cachaient dans les caves, Peter Blood, notre médecin - celui-là même qui a remis la moitié de l'île sur pied - a été le seul à ne pas prendre peur ! Il a rassemblé une poignée d'esclaves et dérobé une frégate sous le nez des Espagnols. Je le connais personnellement - cet homme a des mains en or. Que Dieu le garde, où qu'il soit aujourd'hui. Peut-être vaut-il mieux qu'il se soit enfui : Bishop l'aurait envoyé dans la tombe avant l'heure, retenez bien mes paroles.
+}
+CapBloodLine_BarbadosRumour_2 {
+Voilà donc que le fameux docteur Blood a montré son vrai visage ! Nous avons réchauffé un serpent dans notre sein et, à la première occasion, il a volé un navire avant de prendre la fuite ! Et comme si cela ne suffisait pas, il a attiré le colonel Bishop à bord et l'a jeté par-dessus bord comme une ordure ! Après toute la liberté que le colonel lui avait accordée... Retenez bien mes paroles : un homme pareil n'a pas sa place parmi les honnêtes gens !
+}
+CapBloodLine_SpanishRumour_1 {
+Ce démon de Blood - que lui et sa lignée soient maudits jusqu'à la septième génération ! - a froidement assassiné don Diego de Espinosa, capitaine du «Cinco Llagas», avant d'oser s'approprier son propre navire ! Je ne serais pas surpris qu'il ait vendu son âme à Satan - comment expliquer autrement qu'un simple forçat ait réussi à tromper tout le monde ?
+}
+CapBloodLine_SpanishRumour_2 {
+Avez-vous entendu comment ce misérable Peter Blood a trompé don Miguel de Espinosa en personne ? Il lui a raconté quantité de mensonges et endormi sa méfiance, puis il a lâchement assassiné son frère et s'est emparé de son navire ! C'est une honte pour toute l'Espagne qu'un pareil scélérat ne se balance pas encore au bout d'une corde !
+}
+CapBloodLine_SpanishRumour_3 {
+Sainte Mère de Dieu, protégez-nous de cette créature infernale nommée Peter Blood ! Il a froidement égorgé don Diego et a même failli mettre la main sur son fils ! Je le jure, si la Sainte Vierge me permet un jour de le rencontrer, je lui planterai moi-même un couteau entre les côtes. Retenez bien mes paroles !
+}
+CapBloodLine_SpanishRumour_4 {
+Vous n'auriez pas rencontré don Miguel de Espinosa ? Non ? On raconte qu'après que ce misérable Blood l'eut mené par le bout du nez comme un simple mousse avant de s'échapper impunément, don Miguel est devenu gris en une seule nuit. Et nous qui pensions qu'il n'était pas homme à se laisser duper si facilement...
+}
+CapBloodLine_SpanishBloodRumour_1 {
+Avez-vous entendu parler de ce démon de forçat qui a froidement assassiné don Diego de Espinosa, capitaine du «Cinco Llagas», et trompé son frère par-dessus le marché ? Pour couronner le tout, il s'est approprié le navire de don Diego, le «Cinco Llagas». Qu'il soit maudit jusqu'à la septième génération ! Je ne serais pas surpris qu'il ait vendu son âme à Satan - comment expliquer autrement qu'un simple esclave fugitif ait réussi à berner tout le monde ?
+}
+CapBloodLine_SpanishBloodRumour_2 {
+On raconte qu'un esclave fugitif a roulé dans la farine don Miguel de Espinosa en personne. Il lui a raconté quantité de mensonges et endormi sa méfiance, puis il a lâchement assassiné son frère et s'est emparé de son navire ! C'est une honte pour toute l'Espagne qu'un pareil scélérat n'ait pas encore gagné sa cravate de chanvre !
+}
+CapBloodLine_SpanishBloodRumour_3 {
+Sainte Mère de Dieu, protégez-nous de cette créature infernale qui a égorgé don Diego et a même failli mettre la main sur son fils ! Je le jure, s'il croise un jour mon chemin, je lui planterai moi-même un couteau entre les côtes. Retenez bien mes paroles ! Savez-vous comment il s'appelle ?
+}
+CapBloodLine_SpanishBloodRumour_4 {
+Avez-vous entendu parler de don Miguel de Espinosa ? On raconte qu'un esclave fugitif l'a mené par le bout du nez comme un simple mousse, a assassiné son frère, puis s'est échappé impunément. Don Miguel serait devenu gris en une seule nuit après cela. Et nous qui pensions qu'il n'était pas homme à se laisser duper si facilement...
+}

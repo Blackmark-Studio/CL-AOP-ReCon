@@ -4,6 +4,66 @@ object wdmLoginToSea;
 object wdm_fader;
 bool wdmLockReload = false;
 
+bool AoP_RoyalJackpot_CheckBrigBattle()
+{
+	if (!CheckAttribute(pchar, "questTemp.AoP.RoyalJackpot.BrigBattlePending"))
+	{
+		return false;
+	}
+	if (worldMap.island != WDM_NONE_ISLAND)
+	{
+		return false;
+	}
+	float fTargetX = -79.83;
+	float fTargetZ = 315.727;
+
+	float fDX = stf(worldMap.playerShipX) - fTargetX;
+	float fDZ = stf(worldMap.playerShipZ) - fTargetZ;
+	if (fDX * fDX + fDZ * fDZ > 225.0)
+	{
+		return false;
+	}
+	Group_SetAddressNone("RoyalJackpot_BrigGroup");
+	Group_SetXZ_AY("RoyalJackpot_BrigGroup", 0.0, 900.0, 3.14);
+
+	Group_SetTaskAttack("RoyalJackpot_BrigGroup", PLAYER_GROUP);
+	Group_LockTask("RoyalJackpot_BrigGroup");
+	wdmLoginToSea.QuestGroups.l0 = "RoyalJackpot_BrigGroup";
+	AoP_RemoveMapMarkByCoords("RoyalJackpot_BrigBattle");
+
+	DeleteAttribute(pchar, "questTemp.AoP.RoyalJackpot.BrigBattlePending");
+	pchar.questTemp.AoP.RoyalJackpot.BrigBattleStarted = true;
+
+	return true;
+}
+
+// выход в море по координатам (ле Баск)
+bool AoP_RoyalJackpot_CheckMeetingPoint()
+{
+	if (!CheckAttribute(pchar, "questTemp.AoP.RoyalJackpot.MeetingPoint"))
+	{
+		return false;
+	}
+	if (worldMap.island != WDM_NONE_ISLAND)
+	{
+		return false;
+	}
+
+	float fTargetX = -79.83;
+	float fTargetZ = 315.727;
+	float fDX = stf(worldMap.playerShipX) - fTargetX;
+	float fDZ = stf(worldMap.playerShipZ) - fTargetZ;
+	if (fDX * fDX + fDZ * fDZ > 225.0)
+	{
+		return false;
+	}
+	DeleteAttribute(pchar, "questTemp.AoP.RoyalJackpot.MeetingPoint");
+	AoP_RemoveMapMarkByCoords("Royal_jackpot_MeetingPoint");
+	pchar.questTemp.AoP.RoyalJackpot.GoToDeckAfterSea = true;
+
+	return true;
+}
+
 void wdmReloadToSea()
 {
 	//Если запрещена перегрузка, ничего не делаем
@@ -11,16 +71,17 @@ void wdmReloadToSea()
 	{
 		return;
 	}
+	// выход на палубу по координатам (ле Баск)
+	AoP_RoyalJackpot_CheckMeetingPoint();
 	// расчёты ВМЛ -->
 	EmptyAllFantomCharacter();
 	PGG_DailyUpdate();
 	Siege_DailyUpdate();//homo осады 05/11/06
 	SaveCurrentQuestDateParam("WordMapEncounters_DailyUpdate"); //homo карта 25/03/07
 	// расчёты <--
-	
+
 	wdmLockReload = true;
-	//Обновим текст перегрузки
-	SetReloadNextTipsImage();
+	SoberParty();
 	//Очищаем объект логина
 	DeleteAttribute(&wdmLoginToSea, "");
 	//Обновляем параметры
@@ -30,20 +91,59 @@ void wdmReloadToSea()
 	//Добавляем группу игрока
 	WdmAddPlayerGroup();
 	//Добавляем энкоунтеры
-	bool isShipEncounterType;
+
+// бой в открытом море по координатам (ле Баск)
+bool bAoPRoyalBattle = AoP_RoyalJackpot_CheckBrigBattle();
+
+//Добавляем энкоунтеры
+bool isShipEncounterType;
+
+if (bAoPRoyalBattle)
+{
+	ReleaseMapEncounters();
+	isShipEncounterType = true;
+}
+else
+{
 	isShipEncounterType = WdmAddEncountersData();
+}
 	//Отконектим все энкоунтеры от атрибутов и поставим в очередь удаления
 	SendMessage(&worldMap, "l", MSG_WORLDMAP_CREATEENC_RELEASE);
 	//Погодные эффекты
 	WdmStormEncounter();
 	//Удаляем атрибуты выделенных энкоунтеров
 	worldMap.deleteUpdate = "";
+
+	if (MakeInt(wdmLoginToSea.storm) == 0 && !isShipEncounterType) // не в шторме, не в бою
+		MapToSea_CheckAutoSave();
+	else
+		WdmReloadStart(isShipEncounterType);
+}
+
+void MapToSea_CheckAutoSave()
+{
+	if(GetMaxAutoSaves("MapToSea") != 0)
+	{
+		SetAfterSaveFunction("MapToSea_Continue");
+		PostEvent("Event_NewAutoSave", 1, "s", "MapToSea");
+	}
+	else
+		MapToSea_Continue();
+}
+
+void MapToSea_Continue()
+{
+	WdmReloadStart(false);
+}
+
+void WdmReloadStart(bool isShipEncounterType)
+{
 	//Фейдер
 	SetEventHandler("FaderEvent_StartFade", "WdmStartFade", 0);
 	SetEventHandler("FaderEvent_EndFade", "WdmEndFade", 0);
 	wdm_fader.thisWorldMapFader = "";
 	CreateEntity(&wdm_fader, "fader");
-	if (IsEntity(&wdm_fader) == 0) Trace("Fader not created!!!");	
+	if (IsEntity(&wdm_fader) == 0) Trace("Fader not created!!!");
 	float fadeOutTime = 0.5;
 	SendMessage(&wdm_fader, "lfl", FADER_OUT, fadeOutTime, true);
 	SendMessage(&wdm_fader, "l", FADER_STARTFRAME);
@@ -61,7 +161,7 @@ void wdmReloadToSea()
 			imageName = "loading\Twister.tga";
 		}*/ // boal пусть будет одна
 	}
-	wdmLoginToSea.imageName = imageName;	
+	wdmLoginToSea.imageName = imageName;
 	//SendMessage(&wdm_fader, "ls", FADER_PICTURE0, "interfaces\card_desk.tga");
 	SendMessage(&wdm_fader, "ls",FADER_PICTURE0, imageName);
 }
@@ -86,10 +186,19 @@ void WdmEndFade()
 	//Delete EventHandler
 	DelEventHandler("FaderEvent_EndFade", "WdmEndFade");
 	//Switch to sea
-	ReloadProgressStart();	
+	ReloadProgressStart();
 	SeaLogin(&wdmLoginToSea);
 	LayerAddObject(SEA_REALIZE, &reload_fader, -1);
 	ReloadProgressEnd();
+	// ле Баск - после выхода в млре через 3 сек на палубу
+	if (CheckAttribute(pchar, "questTemp.AoP.RoyalJackpot.GoToDeckAfterSea"))
+	{
+		DeleteAttribute(pchar, "questTemp.AoP.RoyalJackpot.GoToDeckAfterSea");
+		bQuestDisableMapEnter = true; // закрыть карту
+		Ship_SetLightsOff(pchar, 0.0, true, true, true);
+		DoQuestCheckDelay("Off_Interface", 0.2);
+		DoQuestCheckDelay("Royal_jackpot_91", 3.0);
+	}
 }
 
 void QuitFromWorldMap()
@@ -99,7 +208,7 @@ void QuitFromWorldMap()
 	SetEventHandler("FaderEvent_EndFade", "WdmEndFadeA", 0);
 	wdm_fader.thisWorldMapFader = "";
 	CreateEntity(&wdm_fader, "fader");
-	if (IsEntity(&wdm_fader) == 0) Trace("Fader not created!!!");	
+	if (IsEntity(&wdm_fader) == 0) Trace("Fader not created!!!");
 	float fadeOutTime = 0.5;
 	SendMessage(&wdm_fader, "lfl", FADER_OUT, fadeOutTime, true);
 	SendMessage(&wdm_fader, "l", FADER_STARTFRAME);
@@ -126,13 +235,7 @@ void WdmPrepareMapForAbordage(aref arPos)
 		wdmLoginToSea.island = worldMap.island;
 		float ix = MakeFloat(worldMap.island.x);
 		float iz = MakeFloat(worldMap.island.z);
-		int scale = WDM_MAP_TO_SEA_SCALE;
-		if (worldMap.island == "Cuba1" || worldMap.island == "Cuba2" || worldMap.island == "Beliz" || worldMap.island == "SantaCatalina"
-			|| worldMap.island == "PortoBello" || worldMap.island == "Cartahena" || worldMap.island == "Maracaibo"
-			|| worldMap.island == "Caracas" || worldMap.island == "Cumana")
-		{
-			scale = 25;
-		}
+		int scale = GetSeaToMapScale();
 		arPos.x = (psX - ix)*scale;
 		arPos.z = (psZ - iz)*scale;
 		arPos.y = worldMap.playerShipAY;
@@ -169,13 +272,7 @@ void WdmAddPlayerGroup()
 		wdmLoginToSea.island = worldMap.island;
 		float ix = MakeFloat(worldMap.island.x);
 		float iz = MakeFloat(worldMap.island.z);
-		int scale = WDM_MAP_TO_SEA_SCALE;
-		if (worldMap.island == "Cuba1" || worldMap.island == "Cuba2" || worldMap.island == "Beliz" || worldMap.island == "SantaCatalina"
-			|| worldMap.island == "PortoBello" || worldMap.island == "Cartahena" || worldMap.island == "Maracaibo" 
-			|| worldMap.island == "Caracas" || worldMap.island == "Cumana")
-		{
-			scale = 25;
-		}
+		int scale = GetSeaToMapScale();
 		wdmLoginToSea.playerGroup.x = (psX - ix)*scale;
 		wdmLoginToSea.playerGroup.z = (psZ - iz)*scale;
 		wdmLoginToSea.playerGroup.ay = worldMap.playerShipAY;
@@ -240,7 +337,7 @@ bool WdmAddEncountersData()
 			encStringID = worldMap.encounter.id;
 			encStringID = "encounters." + encStringID;
 			if(CheckAttribute(&worldMap, encStringID + ".quest") == 0)
-			{			
+			{
 				worldMap.(encStringID).needDelete = "Reload delete non quest encounter";
 			}
 		}
@@ -274,7 +371,7 @@ void WdmStormEncounter()
 			encStringID = "encounters." + encStringID;
 			worldMap.(encStringID).needDelete = "Reload delete storm";
 		}
-	}	
+	}
 }
 
 // Глобальный туториал - грузим только мирных энкаунтеров

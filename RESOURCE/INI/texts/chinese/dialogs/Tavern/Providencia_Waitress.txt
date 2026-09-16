@@ -1,45 +1,45 @@
 Providencia_Waitress_1 {
-有问题吗，@<GetAddress_Form>?
+有问题吗， @<GetAddress_Form>?
 }
 Providencia_Waitress_2 {
-有什么需要帮忙的吗，@<GetAddress_Form>?
+有什么需要帮忙的吗， @<GetAddress_Form>?
 }
 Providencia_Waitress_3 {
 @<RandPhraseSimple>
 }
 Providencia_Waitress_4_m {
-嗯，你这是在跟我调情吗，先生？
+嗯， 你这是在跟我调情吗， 先生？ 
 }
 Providencia_Waitress_4_f {
-你又来了，问这些奇怪的问题……你就这么喜欢烦我吗？
+你又来了， 问这些奇怪的问题…… 你就这么喜欢烦我吗？ 
 }
 Providencia_Waitress_5_m {
-你今天已经第三次提这事了……这是在表示关心吗？
+你今天已经第三次提这事了…… 这是在表示关心吗？ 
 }
 Providencia_Waitress_5_f {
-你今天已经第三次提这事了……你是在开玩笑吗？
+你今天已经第三次提这事了…… 你是在开玩笑吗？ 
 }
 Providencia_Waitress_6 {
-你又要问问题了，@<GetAddress_Form>？
+你又要问问题了， @<GetAddress_Form>？ 
 }
 Providencia_Waitress_7_m {
-我改主意了……
+我改主意了…… 
 }
 Providencia_Waitress_7_f {
-我改主意了……
+我改主意了…… 
 }
 Providencia_Waitress_8 {
-我现在没什么可说的。
+我现在没什么可说的。 
 }
 Providencia_Waitress_9 {
 @<RandPhraseSimple>
 }
 Providencia_Waitress_10 {
-不不不，哪有啊，美女……
+不不不， 哪有啊， 美女…… 
 }
 Providencia_Waitress_11 {
-哪有啊，亲爱的，只是有点健忘……
+哪有啊， 亲爱的， 只是有点健忘…… 
 }
 Providencia_Waitress_12 {
-没事，没什么要问的……
+没事， 没什么要问的…… 
 }

@@ -1,54 +1,54 @@
 Providencia_Tavern_1 {
-@<GetCityName>的所有八卦都在这儿，您想打听点啥？
+@<GetCityName>的所有八卦都在这儿， 您想打听点什么？ 
 }
 Providencia_Tavern_2 {
-我们刚才还在说这个呢。你大概忘了吧……
+我们刚才还在说这个呢。 你大概忘了吧…… 
 }
 Providencia_Tavern_3 {
-今天你已经第三次提起这事了……
+今天你已经第三次提起这事了…… 
 }
 Providencia_Tavern_4_m {
-你怎么老是像鹦鹉一样重复同一句话……
+你怎么老是像鹦鹉一样重复同一句话…… 
 }
 Providencia_Tavern_4_f {
-你怎么老是像鹦鹉一样重复同一句话……
+你怎么老是像鹦鹉一样重复同一句话…… 
 }
 Providencia_Tavern_5 {
-你知道吗，@<NPChar>，改天吧。
+你知道吗， @<NPChar>， 改天吧。 
 }
 Providencia_Tavern_6_m {
-对了，我忘了点什么……
+对了， 我忘了点什么…… 
 }
 Providencia_Tavern_6_f {
-对了，我忘了点什么……
+对了， 我忘了点什么…… 
 }
 Providencia_Tavern_7 {
-是啊，真的，已经第三次了……
+是啊， 真的， 已经第三次了…… 
 }
 Providencia_Tavern_8 {
-嗯，也是……
+嗯， 也是…… 
 }
 Providencia_Tavern_9 {
-你看见“锯木厂”雨果了吗？
+你看见“伐木工”雨果了吗？ 
 }
 Providencia_Tavern_10 {
-他刚才确实在这儿。后来英国的赏金猎人来抓他，幸好他及时从后门溜走了。
+他刚才确实在这儿。 后来英国的赏金猎人来抓他， 幸好他及时从后门溜走了。 
 }
 Providencia_Tavern_11 {
-他往哪儿去了？
+他往哪儿去了？ 
 }
 Providencia_Tavern_12 {
-嗯……给我1000比索，我就给你指条路。
+嗯…… 给我一千比索， 我就给你指条路。 
 }
 Providencia_Tavern_13 {
-给，拿去吧。那他到底往哪儿去了？
+给， 拿去吧。 那他到底往哪儿去了？ 
 }
 Providencia_Tavern_14 {
-我手头现在没那么多钱。
+我手头现在没那么多钱。 
 }
 Providencia_Tavern_15 {
-他乘船往拉维加去了，去那儿找他吧。
+他乘船往拉维加去了， 去那儿找他吧。 
 }
 Providencia_Tavern_16 {
-谢了，回头见。
+谢了， 回头见。 
 }

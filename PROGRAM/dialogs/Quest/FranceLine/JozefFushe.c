@@ -295,7 +295,7 @@ void ProcessDialogEvent()
 		case "40":
 			dialog.text = StringFromKey("JozefFushe_80");
 			link.l1 = StringFromKey("JozefFushe_81");
-			link.l1.go = "41";
+			link.l1.go = "First_man";
 		break;
 
 		case "41":
@@ -1200,7 +1200,7 @@ void ProcessDialogEvent()
 			link.l1 = StringFromKey("JozefFushe_325");
 			link.l1.go = "Advice_2";
 			link.l2 = StringFromKey("JozefFushe_326");
-			link.l2.go = "5";
+			link.l2.go = "41";
 		break;
 
 		case "Advice_2":
@@ -1208,7 +1208,7 @@ void ProcessDialogEvent()
 			link.l1 = StringFromKey("JozefFushe_328");
 			link.l1.go = "Advice_3";
 			link.l2 = StringFromKey("JozefFushe_329");
-			link.l2.go = "5";
+			link.l2.go = "41";
 		break;
 
 		case "Advice_3":
@@ -1216,7 +1216,7 @@ void ProcessDialogEvent()
 			link.l1 = StringFromKey("JozefFushe_331");
 			link.l1.go = "Advice_4";
 			link.l2 = StringFromKey("JozefFushe_332");
-			link.l2.go = "5";
+			link.l2.go = "41";
 		break;
 
 		case "Advice_4":
@@ -1224,7 +1224,7 @@ void ProcessDialogEvent()
 			link.l1 = StringFromKey("JozefFushe_334");
 			link.l1.go = "Advice_5";
 			link.l2 = StringFromKey("JozefFushe_335");
-			link.l2.go = "5";
+			link.l2.go = "41";
 		break;
 
 		case "Advice_5":
@@ -1232,7 +1232,7 @@ void ProcessDialogEvent()
 			link.l1 = StringFromKey("JozefFushe_337");
 			link.l1.go = "Advice_6";
 			link.l2 = StringFromKey("JozefFushe_338");
-			link.l2.go = "5";
+			link.l2.go = "41";
 		break;
 
 		case "Advice_6":
@@ -1240,7 +1240,7 @@ void ProcessDialogEvent()
 			link.l1 = StringFromKey("JozefFushe_340");
 			link.l1.go = "Advice_7";
 			link.l2 = StringFromKey("JozefFushe_341");
-			link.l2.go = "5";
+			link.l2.go = "41";
 		break;
 
 		case "Advice_7":
@@ -1248,7 +1248,7 @@ void ProcessDialogEvent()
 			link.l1 = StringFromKey("JozefFushe_343");
 			link.l1.go = "Advice_8";
 			link.l2 = StringFromKey("JozefFushe_344");
-			link.l2.go = "5";
+			link.l2.go = "41";
 		break;
 
 		case "Advice_8":
@@ -1256,7 +1256,7 @@ void ProcessDialogEvent()
 			link.l1 = StringFromKey("JozefFushe_346");
 			link.l1.go = "Advice_9";
 			link.l2 = StringFromKey("JozefFushe_347");
-			link.l2.go = "5";
+			link.l2.go = "41";
 		break;
 
 		case "Advice_9":
@@ -1264,13 +1264,13 @@ void ProcessDialogEvent()
 			link.l1 = StringFromKey("JozefFushe_349");
 			link.l1.go = "Advice_10";
 			link.l2 = StringFromKey("JozefFushe_350");
-			link.l2.go = "5";
+			link.l2.go = "41";
 		break;
 
 		case "Advice_10":
 			dialog.text = StringFromKey("JozefFushe_351");
 			link.l1 = StringFromKey("JozefFushe_352");
-			link.l1.go = "5";
+			link.l1.go = "41";
 		break;
 	}
 }

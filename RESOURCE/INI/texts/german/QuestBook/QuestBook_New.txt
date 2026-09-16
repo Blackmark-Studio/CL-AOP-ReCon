@@ -183,7 +183,7 @@ Koris Gerritsz sagt, dass Sageschreck der Niederländischen Westindien-Kompanie 
 
 PDM_Lesopilka.6
 {
-Ich sprach mit meinem Freund Sageschreck. Er erzählte mir etwas Interessantes. Eine schwere Galeone unter englischer Flagge liegt vor der Insel Dominica vor Anker. Ihre Takelage und ihr Rumpf sind beschädigt. Wenn mir niemand zuvorkommt, kann ich ihre Schätze an mich nehmen!
+Ich sprach mit meinem Freund Sageschreck. Er erzählte mir etwas Interessantes. Eine @<sShip> unter englischer Flagge liegt vor der Insel Dominica vor Anker. Ihre Takelage und ihr Rumpf sind beschädigt. Wenn mir niemand zuvorkommt, kann ich ihre Schätze an mich nehmen!
 }
 
 PDM_Lesopilka.6.1
@@ -380,7 +380,7 @@ Andre_Abel_Quest {Eskorte der Fluyt "Orion"}
 Andre_Abel_Quest.1
 {
 In der Taverne von Fort-de-France traf ich einen Mann namens Andre Abel. Er ist der Kapitän der Fluyt "Orion". Andre bat mich, sein Schiff nach Port-au-Prince zu eskortieren, und ich habe zugestimmt.
-Andre wird im Hafen warten, und ich muss vorerst meine Angelegenheiten in der Stadt erledigen.
+Andre wird in der Taverne warten, und ich muss vorerst meine Angelegenheiten in der Stadt erledigen.
 }
 Andre_Abel_Quest.2 {Ich habe mich zu lange um meine eigenen Angelegenheiten gekümmert. Andre hat sich offenbar bereits eine andere Begleitung gesucht.}
 Andre_Abel_Quest.3 {Ich habe meine Angelegenheiten in der Stadt erledigt und André informiert. Wir stechen sofort in See!}
@@ -429,6 +429,7 @@ ChurchGenQuest1.7_2 {Der alte Narr @<sCapName> hat in der Taverne Schulden gemac
 ChurchGenQuest1.8 {Ein weiterer Eintrag im Kontobuch: Die Schuld des alten Wals wurde unter dem Namen @<sName> in der Taverne beglichen, die Manuskripte von Vater @<sColony> beim Wirt ausgelöst – und nun ist es höchste Zeit, dem guten Vater sowohl die wertvollen Manuskripte als auch mein Kontobuch persönlich zu überreichen!}
 ChurchGenQuest1.9 {Es gibt also tatsächlich selbstlose Wirte auf dieser Welt. Ich werde mich beeilen, nach @<sColony> zu gehen, um die theologischen Manuskripte zurückzugeben, und außerdem die Geschichte erzählen, wie mir ein Mann diese kostbarsten Bücher aus einem Gelübde heraus kostenlos überließ.}
 ChurchGenQuest1.10 {Uff... Ich hätte nicht gedacht, dass so eine einfache Aufgabe so viel Zeit und Mühe kosten würde. Einziger Lichtblick war der gottesfürchtige Kapitän @<sCapName>, der mir die wertvollen Manuskripte ohne Zögern überreichte und mich praktisch von seinem Kahn geworfen hat. Zeit, zurück nach @<sIsland> zu gehen.}
+ChurchGenQuest1.11 {Zu viel Wasser ist den Fluss hinuntergeflossen. Ob die Manuskripte nun schon spurlos verschwunden sind oder der Priester sie aufgegeben hat – mein Auftrag hat jeden Sinn verloren. Nun ja, nicht jede gute Tat wird zu Ende geführt.}
 ChurchGenQuest2 {Kirchendiebstahl @<sCity>}
 ChurchGenQuest2.1 {Die Kirchenkasse stehlen! Wohin soll das noch führen?! Während Vater @<sName> Flüche auf die Gottlosen herabruft, sollte ich wohl zu wirksameren Maßnahmen greifen. Wenn schon nicht der Herr, dann wird mich wenigstens der Padre dafür belohnen... Ich bezweifle, dass sie weit gekommen sind...}
 ChurchGenQuest2.2 {In der Stadt geht das Gerücht um, dass sich ein paar örtliche Banditen das Geld des Herrn unter den Nagel gerissen haben und nun klugerweise untergetaucht sind. Ich sollte ihrem Revier einen Besuch abstatten.}
@@ -912,4 +913,9 @@ Nehmt für die Zubereitung zwei Flaschen guten Rotwein und eine Portion starken 
 
 Zutaten: Wein (2), Rum (1).
 Werkzeuge: Mörser und Stößel.
+}
+
+PDM_Neputyovy_kaznachey.8
+{
+Wegen des Schatzmeisters erlitt Victor Bretier erhebliche finanzielle Verluste, und ich beschloss, mich nicht in ihren Streit einzumischen.
 }

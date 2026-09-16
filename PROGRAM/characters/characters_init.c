@@ -45,37 +45,8 @@ void CreateCharacters()
 	ch.Ship.Name = FindPersonalName("Blaze_ship");
 	ch.Ship.Stopped = true;
 	ch.FaceId = 1;
-	ch.ShipSlot1.Type=SHIP_NOTUSED;
-	ch.ShipSlot1.Name="NoName";
-	ch.ShipSlot2.Type=SHIP_NOTUSED;
-	ch.ShipSlot2.Name="NoName";
-	ch.ShipSlot3.Type=SHIP_NOTUSED;
-	ch.ShipSlot3.Name="NoName";
 	ch.repair = "0";
-	//ch.stealmoney = 0;
-	//ch.month.money = "0";
-	ch.colony_quantity = "0";
-	ch.quest.work = "0";
-	ch.quest.DeliveryTradeWork = "0";
-	ch.quest.free_adventure.character_0 = "";
-	ch.quest.free_adventure.character_1 = "";
-	ch.quest.free_adventure.character_2 = "";
-	//GiveItem2Character(ch, "blade1");
-	//EquipCharacterByItem(ch, "blade1");
-	//GiveItem2Character(ch, "pistol1");
-	//EquipCharacterByItem(ch, "pistol1");
-	//TakeNItems(ch, "bullet", 5+rand(15));// boal gun bullet
-	//GiveItem2Character(ch, "spyglass1");
-	//EquipCharacterByItem(ch, "spyglass1");
-	//TakeNItems(ch, "potion1", 3);
-
-	ch.quest.RelationAgentMet = "0";
-	ch.quest.gambling = "0";
-	ch.quest.friend_in_tavern = "";
-	ch.time_events_counter = 0;
-	ch.rumourquest = 0;
 	ch.abordage = 0;
-	ch.isSmuggPossible = 1;
 	
 	// Награда за голову -->
     ch.reputation.Enghunter = "-5";
@@ -197,6 +168,10 @@ void CreateCharacters()
 	n = CreateProvidenceCharacters(n);
 	ReloadProgressUpdate();
 	Trace("Providence: " + n);
+
+	n = CreateGibraltarCharacters(n);
+	ReloadProgressUpdate();
+	Trace("Gibraltar: " + n);
 	
 	n = CreateStoryCharacters(n);
 	ReloadProgressUpdate();
@@ -212,11 +187,8 @@ void CreateCharacters()
 
 	SetMainCharacterIndex(1); // boal fix
 
-	//SetAllShipData();
-	//SetAllFellows();
-
 	//Post init
-	for(n=0; n<TOTAL_CHARACTERS; n++) // 1
+	for(n = 0; n < TOTAL_CHARACTERS; n++) // 1
 	{
 		ref rCharacter = GetCharacter(n);
 
@@ -224,15 +196,16 @@ void CreateCharacters()
         {
 			if(rCharacter.sex == "man")
 			{
+	        	rCharacter.model.animation = "man";
+	        	rCharacter.model.height = 1.8;
 
-	        		rCharacter.model.animation = "man";
-	        		rCharacter.model.height = 1.8;
-
-			}else{
+			}
+			else
+			{
 				rCharacter.model.animation = "towngirl";
 				rCharacter.model.height = 1.75;
 			}
-			if(rCharacter.sex == "skeleton")
+			if (rCharacter.sex == "skeleton")
 			{
 				rCharacter.model.animation = "man"; //"skeleton";
 				rCharacter.model.height = 1.8;
@@ -251,48 +224,59 @@ void CreateCharacters()
 		rCharacter.FaceGroup = 0;
 
 		// set fellows
-		if (CheckAttribute(rCharacter,"fellows")) { SetBaseFellows(rCharacter); }
+		if (CheckAttribute(rCharacter, "fellows"))
+			SetBaseFellows(rCharacter);
+
 		// set base ship data
 		SetBaseShipData(rCharacter);
 
-		if(n > 1) rCharacter.FaceId = 0;
+		if (n > 1)
+			rCharacter.FaceId = 0;
 
 		rCharacter.FaceId = makeint(rand(2) + 2);
 		
 		FaceMaker(rCharacter);
 
 		rCharacter.headModel = "h_" + rCharacter.model;
-		if(CheckAttribute(rCharacter,"blade"))
+
+		if (CheckAttribute(rCharacter, "blade"))
 		{
-			if(CheckAttribute(rCharacter,"blade.itemID"))
-			{
+			if (CheckAttribute(rCharacter, "blade.itemID"))
 				rCharacter.equip.blade = rCharacter.blade.itemID;
-			}
 			else
-			{
 				rCharacter.equip.blade = BLADE_SABER;
-			}
+
 			EquipCharacterByItem(rCharacter, rCharacter.equip.blade);
-			DeleteAttribute(rCharacter,"blade");
+			DeleteAttribute(rCharacter, "blade");
 		}
-		if(CheckAttribute(rCharacter,"gun"))
+
+		if (CheckAttribute(rCharacter, "gun"))
 		{
-			if(CheckAttribute(rCharacter,"gun.itemID"))
-			{
+			if (CheckAttribute(rCharacter, "gun.itemID"))
 				rCharacter.equip.gun = rCharacter.gun.itemID;
-			}
 			else
-			{
 				rCharacter.equip.gun = GUN_COMMON;
-			}
+
 			EquipCharacterByItem(rCharacter, rCharacter.equip.gun);
-			DeleteAttribute(rCharacter,"gun");
+			DeleteAttribute(rCharacter, "gun");
 		}
-		if(CheckAttribute(rCharacter,"spyglass.itemID"))
+
+		if (CheckAttribute(rCharacter, "musket"))
+		{
+			if (CheckAttribute(rCharacter, "musket.itemID"))
+				rCharacter.equip.musket = rCharacter.musket.itemID;
+			else
+				rCharacter.equip.musket = MUSKET_COMMON;
+
+			EquipCharacterByItem(rCharacter, rCharacter.equip.gun);
+			DeleteAttribute(rCharacter, "gun");
+		}
+
+		if (CheckAttribute(rCharacter, "spyglass.itemID"))
 		{
 			rCharacter.equip.spyglass = rCharacter.spyglass.itemID;
 			EquipCharacterByItem(rCharacter, rCharacter.equip.spyglass);
-			DeleteAttribute(rCharacter,"spyglass");
+			DeleteAttribute(rCharacter, "spyglass");
 		}
 	}
 
@@ -385,30 +369,6 @@ void CreateCharacters()
 	NullCharacter.Cards.c34.count = 7;
 	NullCharacter.Cards.c35.pic = "clubs_6";
 	NullCharacter.Cards.c35.count = 6;
-	
-	// ограничения по типам ГГ в специал
-	NullCharacter.HeroLimitSPEC.SecretAgent.Max_Strength = 8;
-	NullCharacter.HeroLimitSPEC.SecretAgent.Max_Perception = 8;
-	NullCharacter.HeroLimitSPEC.SecretAgent.Max_Endurance = 8;
-	NullCharacter.HeroLimitSPEC.SecretAgent.Max_Charisma = 8;
-	NullCharacter.HeroLimitSPEC.SecretAgent.Max_Intellect = 8;
-	NullCharacter.HeroLimitSPEC.SecretAgent.Max_Agility = 8;
-	NullCharacter.HeroLimitSPEC.SecretAgent.Max_Luck = 8;
-
-	NullCharacter.HeroLimitSPEC.Master.Min_Strength = 5;
-	NullCharacter.HeroLimitSPEC.Master.Max_Perception = 8;
-
-	NullCharacter.HeroLimitSPEC.Merchant.Min_Intellect = 5;
-	NullCharacter.HeroLimitSPEC.Merchant.Max_Strength = 7;
-
-	NullCharacter.HeroLimitSPEC.Corsair.Min_Agility = 7;
-	NullCharacter.HeroLimitSPEC.Corsair.Max_Charisma = 5;
-
-	NullCharacter.HeroLimitSPEC.Adventurer.Min_Luck = 6;
-	NullCharacter.HeroLimitSPEC.Adventurer.Max_Endurance = 8;
-
-	NullCharacter.HeroLimitSPEC.Inquisitor.Min_Charisma = 6;
-	NullCharacter.HeroLimitSPEC.Inquisitor.Max_Intellect = 8;
 	
 	InitRPGType();
 	// boal <--
@@ -568,30 +528,15 @@ void CreateCharacters()
 	NullCharacter.GenQuestFort.Providencia.next0  = "Providencia_town";
     NullCharacter.GenQuestFort.Providencia.next1  = "Providencia_townhall";
     NullCharacter.GenQuestFort.Providencia.next2  = "Providencia_ExitTown";
+
+	NullCharacter.GenQuestFort.Gibraltar.how        = 3;
+	NullCharacter.GenQuestFort.Gibraltar.howSolder  = 3;
+	NullCharacter.GenQuestFort.Gibraltar.next0  = "Gibraltar_town";
+	NullCharacter.GenQuestFort.Gibraltar.next1  = "Gibraltar_townhall";
+	NullCharacter.GenQuestFort.Gibraltar.next2  = "Gibraltar_ExitTown";
 	// зават городов <--
 
 	//HardCoffee таймер для пиратов на проверки по обнажённому оружию
 	//сразу для всех пиратов, иначе они друг за другом будут обращаться к гг, если он отказывается убрать оружие
 	TEV.checkPirateNoBlade = 0.0;
-}
-
-void SetAllShipData()
-{
-	for(int i=0;i<MAX_CHARACTERS;i++)
-	{
-		SetBaseShipData(GetCharacter(i));
-	}
-}
-
-void SetAllFellows()
-{
-	ref rcc;
-	for(int i=0;i<MAX_CHARACTERS;i++)
-	{
-		rcc = GetCharacter(i);
-		if(CheckAttribute(rcc,"fellows"))
-		{
-			SetBaseFellows(rcc);
-		}
-	}
 }

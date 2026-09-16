@@ -316,3 +316,49 @@ Ora, você perguntou! Esta é uma cidade portuária, não uma vila qualquer. Est
 Tortuga_Tavern_91 {
 Hmm... Entendi. Obrigado, @<npchar>.
 }
+
+Tortuga_Tavern_92 {
+Dizem que você conhece um homem que procura capitães. Pode me dizer como encontrá-lo?
+}
+Tortuga_Tavern_93 {
+Aqui, um em cada três está procurando capitães...
+}
+Tortuga_Tavern_94_m {
+Ouvi dizer que esse homem tem um trabalho incomum.
+}
+Tortuga_Tavern_94_f {
+Ouvi dizer que esse homem tem um trabalho incomum.
+}
+Tortuga_Tavern_95 {
+Ah, capitão, todo trabalho é incomum à sua maneira. Tudo depende do que você já viu na vida.
+}
+Tortuga_Tavern_96 {
+Você sabe muito bem de quem estou falando.
+}
+Tortuga_Tavern_97 {
+Só sei de uma coisa... Você está desperdiçando meu tempo com conversa fiada!
+}
+Tortuga_Tavern_98 {
+Pronto. Agora ele próprio decidiu que você merece uma conversa.
+}
+Tortuga_Tavern_99 {
+Ele sempre faz a pessoa perguntar por ele primeiro e só depois aparece?
+}
+Tortuga_Tavern_100 {
+Marceau gosta de observar a pessoa antes. Dizem que ele tem olho para gente. Se desceu para falar com você, é porque viu algo que vale a pena.
+}
+Tortuga_Tavern_101 {
+Pois bem, vou falar com ele.
+}
+Tortuga_Tavern_102 {
+Estou ouvindo, capitão.
+}
+Tortuga_Tavern_103 {
+Preciso de Marceau. Ele ainda está lá em cima?
+}
+Tortuga_Tavern_104 {
+Homens como ele raramente ficam parados no mesmo lugar. Se tem notícias para ele, procure-o no porto, a bordo da “Gaivota Negra”.
+}
+Tortuga_Tavern_105 {
+Obrigado.
+}

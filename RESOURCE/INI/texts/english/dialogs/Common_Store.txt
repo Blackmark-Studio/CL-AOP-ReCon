@@ -1471,3 +1471,9 @@ You travel a lot. Listen, if you happen to come across any Egyptian mummy powder
 Common_Store_433 {
 Alright.
 }
+Common_Store_434 {
+Good day, señorita! Would you like to buy something?
+}
+Common_Store_435 {
+No, thank you. Perhaps another time.
+}

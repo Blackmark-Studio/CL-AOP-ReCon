@@ -161,8 +161,27 @@ void InitSeaTips(int iIconSize, int iPosY)
 	if (iShowTips >= CONTROL_TIPS_EXTEND)
 	{
 //провести залп -->
-		if (iShowTips == CONTROL_TIPS_EXTEND) iPosY = 0;
-		else if (iShowTips >= CONTROL_TIPS_ALL) iPosY = 4 - iShiftLine;
+		if (iShowTips == CONTROL_TIPS_EXTEND)
+		{
+			iPosY = 0;
+			BattleInterface.textinfo.SalvoIPosY.SeaShipCamera = iPosY;
+			BattleInterface.textinfo.SalvoIPosY.SeaFireCamera = iPosY;
+		}
+		else if (iShowTips >= CONTROL_TIPS_ALL)
+		{
+			if (SeaCameras.Camera == SEA_CAMERA_SHIP) iPosY = 4 - iShiftLine;
+			else iPosY = 5 - iShiftLine;
+
+			BattleInterface.textinfo.SalvoIPosY.SeaShipCamera = 4 - iShiftLine;
+			BattleInterface.textinfo.SalvoIPosY.SeaFireCamera = 5 - iShiftLine;
+		}
+		else
+		{
+			iPosY = N_TIPS;
+			BattleInterface.textinfo.SalvoIPosY.SeaShipCamera = iPosY;
+			BattleInterface.textinfo.SalvoIPosY.SeaFireCamera = iPosY;
+		}
+
 		BattleInterface.textinfo.SalvoFad.font = "INFO_FADER_LS";
 		BattleInterface.textinfo.SalvoFad.scale = fFaderScale;
 		BattleInterface.textinfo.SalvoFad.color = ifaderColor;
@@ -369,14 +388,14 @@ void InitSeaTips(int iIconSize, int iPosY)
 		BattleInterface.textinfo.CameraTip.pos.x = iTipXText;
 		BattleInterface.textinfo.CameraTip.align = "left";
 		BattleInterface.textinfo.CameraTip.pos.y = ITxtLines[iPosY];
-		if (Crosshair.OutsideCamera == true)
+		if (SeaCameras.Camera == SEA_CAMERA_SHIP)
 			BattleInterface.textinfo.CameraTip.text = LanguageConvertString(iControlsFile, "Sea_CameraSwitchShort") +": " +LanguageConvertString(iControlsFile, "Sea_CameraDeck");
 		else
 			BattleInterface.textinfo.CameraTip.text = LanguageConvertString(iControlsFile, "Sea_CameraSwitchShort") +": " +LanguageConvertString(iControlsFile, "Sea_CameraShip");
 		BattleInterface.textinfo.CameraTip.refreshable = true;
 //переключить камеру <--
 //труба -->
-		iPosY = 5 - iShiftLine;
+		iPosY = 4 - iShiftLine;
 		BattleInterface.textinfo.SpyFad.font = "INFO_FADER_LS";
 		BattleInterface.textinfo.SpyFad.scale = fFaderScale;
 		BattleInterface.textinfo.SpyFad.color = ifaderColor;
@@ -569,19 +588,7 @@ void BI_DeactivateSelectTip() //при выходе из командного м
 	BattleInterface.textinfo.EnterKey.pos.y = IKeyLines[2-iShiftLine];
 	BattleInterface.textinfo.EnterFad.pos.y = IFadLines[2-iShiftLine];
 
-	BattleInterface.textinfo.CameraFad.text = "1";
-	BattleInterface.textinfo.CameraKey.text = GetKeyCodeImg("Sea_CameraSwitch");
-	if (Crosshair.OutsideCamera == "1")
-		BattleInterface.textinfo.CameraTip.text = LanguageConvertString(iControlsFile, "Sea_CameraSwitchShort") +": " +LanguageConvertString(iControlsFile, "Sea_CameraDeck");
-	else
-	{
-			BattleInterface.textinfo.CameraTip.text = LanguageConvertString(iControlsFile, "Sea_CameraSwitchShort") +": " +LanguageConvertString(iControlsFile, "Sea_CameraShip");
-
-			BattleInterface.textinfo.SpyFad.text = "1";
-			BattleInterface.textinfo.SpyKey.text = objControlsState.key_codes.vk_control.img;
-			//BattleInterface.textinfo.SpyKey.text = GetKeyCodeImg("Telescope");
-			BattleInterface.textinfo.SpyTip.text = LanguageConvertString(iControlsFile, "Telescope");
-	}
+	RefreshCameraTip();
 
 	BattleInterface.textinfo.HorFad.text = " ";
 	BattleInterface.textinfo.HorTip.text = " ";
@@ -596,8 +603,15 @@ void RefreshCameraTip()
 {
     if (iShowTips < CONTROL_TIPS_ALL) return;
 
-	if (Crosshair.OutsideCamera == "1")
+	BattleInterface.textinfo.CameraFad.text = "1";
+	BattleInterface.textinfo.CameraKey.text = GetKeyCodeImg("Sea_CameraSwitch");
+
+	int iPosY = N_TIPS;
+
+	if (SeaCameras.Camera == SEA_CAMERA_SHIP)
 	{
+		iPosY = sti(BattleInterface.textinfo.SalvoIPosY.SeaShipCamera);
+
 		BattleInterface.textinfo.CameraTip.text = LanguageConvertString(iControlsFile, "Sea_CameraSwitchShort") +": " +LanguageConvertString(iControlsFile, "Sea_CameraDeck");
 		BattleInterface.textinfo.SpyFad.text = " ";
 		BattleInterface.textinfo.SpyKey.text = " ";
@@ -605,13 +619,17 @@ void RefreshCameraTip()
 	}
 	else
 	{
-		BattleInterface.textinfo.CameraFad.text = "1";
+		iPosY = sti(BattleInterface.textinfo.SalvoIPosY.SeaFireCamera);
+
 		BattleInterface.textinfo.CameraTip.text = LanguageConvertString(iControlsFile, "Sea_CameraSwitchShort") +": " +LanguageConvertString(iControlsFile, "Sea_CameraShip");
 		BattleInterface.textinfo.SpyFad.text = "1";
-		BattleInterface.textinfo.SpyKey.text = objControlsState.key_codes.vk_control.img;
-		//BattleInterface.textinfo.SpyKey.text = GetKeyCodeImg("Telescope");
-		BattleInterface.textinfo.SpyTip.text = LanguageConvertString(iControlsFile, "Telescope");
+		BattleInterface.textinfo.SpyKey.text = GetKeyCodeImg("TelescopeMode");
+		BattleInterface.textinfo.SpyTip.text = LanguageConvertString(iControlsFile, "TelescopeMode");
 	}
+
+	BattleInterface.textinfo.SalvoFad.pos.y = IFadLines[iPosY];
+	BattleInterface.textinfo.SalvoKey.pos.y = IKeyLines[iPosY];
+	BattleInterface.textinfo.SalvoTip.pos.y = ITxtLines[iPosY];
 }
 
 void RefreshFireZoneTip()

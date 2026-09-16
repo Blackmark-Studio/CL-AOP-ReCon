@@ -11,6 +11,9 @@ drunk {Intoxicación}
 weapon blade parameters {Arma: daño mín/máx #ddmg_min#/#ddmg_max#}
 weapon blade type {Tipo: #sFencingTypeName#}
 weapon gun parameters {Arma: daño mín/máx #ddmg_min#/#ddmg_max#, tiempo de recarga: #dchargespeed# seg., precisión: #daccuracy#%}
+weapon gun parameter damage {Daño mín/máx: #ddmg_min#/#ddmg_max#,}
+weapon gun parameter charge speed {tiempo de recarga:}
+weapon gun parameter accuracy {precisión:}
 youve_got {Objeto encontrado -}
 used_item {Objeto usado -}
 lucky_find {¡Un hallazgo afortunado!}
@@ -63,6 +66,13 @@ itmname_Azzy_bottle {Lámpara}
 itmdescr_Azzy_bottle {Una antigua lámpara oriental, sellada de forma segura por todos lados. Jeroglíficos desconocidos están grabados en la soldadura de estaño. Un artefacto extraño, inusualmente ligero para ser de metal.}
 itmname_Malyava {Nota}
 itmdescr_Malyava {Mensaje de un preso para sus compañeros.}
+itmname_HelenNote {Una nota ajada de un cofre arrastrado hasta la orilla}
+itmdescr_HelenNote
+{
+(ilegible) ¿cómo pudiste elegir a esa pelirroja casquivana?
+Estoy harta de encontrarme una y otra vez con cosas que me recuerdan a ti. Ha llegado la hora de acabar con esto - que el mar se lleve todo lo que alguna vez tocaste.
+Adiós, (ilegible)
+}
 itmname_Term_arm {Brazo de metal}
 itmdescr_Term_arm {Un objeto extraño y enigmático arrastrado a la orilla por las olas. Se asemeja a una mano esquelética, pero está hecha de metal. El brazo fue hallado sobresaliendo de un fragmento de casco de barco, completamente cubierto de algas. Sin duda, ha sido zarandeado por el mar durante mucho tiempo. Al examinarlo de cerca, se distingue una inscripción: DT2022. Qué significa esto y qué artesano pudo forjar semejante cosa sigue siendo un misterio...}
 itmname_BlackLabel {Marca Negra}
@@ -193,7 +203,7 @@ itmname_map_dominica {Mapa de Dominica}
 itmdescr_map_dominica {Mapa de la isla deshabitada de Dominica.}
 itmname_map_martiniqua {Mapa de Martinica}
 itmdescr_map_martiniqua {Un mapa de Martinique, para que no te pierdas.}
-itmname_map_trinidad {Mapa de Trinidad y Tobago}
+itmname_map_trinidad {Mapa de Trinidad}
 itmdescr_map_trinidad {Un mapa de las dos islas de Trinidad y Tobago, con el que no te perderás en la navegación.}
 itmname_map_nevis {Mapa de Nevis}
 itmdescr_map_nevis {Un mapa que señala las zonas y rutas alrededor de la isla de Nevis.}
@@ -1105,3 +1115,134 @@ itmdescr_LesopilkaDoc
 Documento necesario para la inscripción en el registro de capitanes de la Compañía Neerlandesa de las Indias Occidentales.
 }
 
+itmname_MedicalSupplies {Suministros médicos}
+itmdescr_MedicalSupplies {Un maletín médico preparado a toda prisa. Contiene vendas, frascos de alcohol, ungüentos, instrumentos quirúrgicos y otros artículos indispensables, sin los cuales ejercer la medicina en las colonias se convierte rápidamente en un servicio funerario.}
+itmname_EPL_TFS_letter	{Carta}
+itmdescr_EPL_TFS_letter
+{
+Informe del gobernador de Santo Domingo sobre el incidente ocurrido en La Española.
+}
+
+itmname_legendGuide {Guía para leyendas principiantes}
+itmdescr_legendGuide
+{
+Un pequeño cuaderno lleno de consejos breves pero importantes. Un día, simplemente lo encontraste entre tus pertenencias.
+}
+
+itmname_casket
+{
+Cofre de Gaspar Molina
+}
+itmdescr_casket
+{
+Cofre personal del secretario Molina. Contiene la correspondencia de Vargas, listas de agentes y libros de cuentas. Es precisamente la carga que Michel le Basque espera con tanta impaciencia en Tortuga.
+}
+itmname_jako_hat
+{
+Sombrero de Jaco
+}
+itmdescr_jako_hat
+{
+Tiene un aspecto poco presentable, pero protege bien la cabeza del abrasador sol del Caribe.
+}
+itmname_blank
+{
+Formulario en blanco
+}
+itmdescr_blank
+{
+Un formulario en blanco con sello oficial.
+}
+itmname_venezi_cehin
+{
+Cecchino veneciano
+}
+itmdescr_venezi_cehin
+{
+Una antigua moneda de oro cuyo anverso muestra al dux arrodillado ante san Marcos. Esta moneda sirve como salvoconducto para reunirse con un hombre de confianza de Diego Vargas.
+}
+itmname_letter_forged
+{
+Carta falsificada
+}
+itmdescr_letter_forged
+{
+Una hábil falsificación salida de la pluma de Etienne Marceau. Un formulario oficial castellano ha sido rellenado con 'pruebas irrefutables' de que don Ignacio Vela vende los secretos de Diego Vargas. Solo queda hacer llegar esta sentencia de muerte al destinatario adecuado.
+}
+itmname_spa_lager
+{
+Instrucciones de Molina
+}
+itmdescr_spa_lager
+{
+Instrucciones para el correo con referencias precisas sobre la ubicación del campamento español en Jamaica.
+}
+itmname_letter_Aruba
+{
+Órdenes con el sello de don Iñigo de Cabrera
+}
+itmdescr_letter_Aruba
+{
+Órdenes de Cabrera encontradas en el cadáver del comandante de la patrulla.
+}
+itmname_letter_bask
+{
+Carta sellada de Raul
+}
+itmdescr_letter_bask
+{
+La carta está sellada. Sin duda, su contenido interesará a Marceau.
+}
+itmname_BladeBone
+{
+Colmillo
+}
+itmdescr_BladeBone
+{
+Una hoja de aspecto siniestro. El filo está cubierto de veneno, que a veces penetra en la herida con un golpe certero.
+
+Característica especial: 5% de probabilidad de envenenar al enemigo al acertar un golpe.
+}
+itmname_raw_meat
+{
+Carne cruda
+}
+itmdescr_raw_meat
+{
+Un pedazo de carne recién descuartizada. A simple vista es imposible saber de qué criatura procede. Se desaconseja encarecidamente comerla cruda. Sin una preparación adecuada, es mejor ni tocarla.
+~
+(Ingrediente universal para cocinar)
+}
+itmname_dried_meat
+{
+Carne seca
+}
+itmdescr_dried_meat
+{
+Carne de caza secada según una receta especial de los bucaneros cazadores de Tortuga. Impregnada de humo y especias, otorga una resistencia extraordinaria en combate.
+}
+itmname_recipe_rimalye
+{
+Receta del bucanero Rimalie
+}
+itmdescr_recipe_rimalye
+{
+Una hoja amarillenta cubierta con los garabatos del bucanero Rimalie. El viejo borrachín ideó una forma ingeniosa de aprovechar casi cualquier carroña: a un cormorán muerto no basta con desplumarlo; hay que empaparlo bien en ron para desinfectarlo de bacterias y veneno cadavérico.
+}
+itmname_recipe_dried_meat    {Receta de carne seca}
+itmdescr_recipe_dried_meat
+{
+Un papel con notas de viejos cazadores de Tortuga. El secreto para preparar la auténtica carne seca de bucanero reside en un adobo adecuado de vino añejo, picante raíz de jengibre y abundante sal, lo que permite conservar la carne durante mucho tiempo en la bodega y otorga un colosal subidón de energía.
+}
+itmname_strange_note
+{
+La nota extraña
+}
+itmdescr_strange_note
+{
+Un trozo de pergamino. Hay algo escrito en él.
+}
+itmtext_strange_note
+{
+No busquen el barco en el mar. Busquen a quienes salieron de él con vida. Medianoche. El viejo cementerio.
+}

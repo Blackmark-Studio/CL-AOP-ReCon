@@ -262,3 +262,12 @@ Un mal presagio se cruzará en tu camino—cuídate del mal de ojo y mantén cer
 Gipsy_68 {
 La buena fortuna te espera justo a tus espaldas. Busca lo que llega a ti sin esfuerzo y no persigas lo imposible.
 }
+Gipsy_69 {
+@<TimeGreeting>, @<pchar>. Me alegra mucho verla.
+}
+Gipsy_70 {
+@<TimeGreeting>, @<pchar>. Me alegra mucho verla.
+}
+Gipsy_71 {
+@<TimeGreeting>, @<npchar>. Tengo que irme.
+}

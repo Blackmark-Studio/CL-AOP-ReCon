@@ -62,4 +62,6 @@ int GetCannonCaliber(int nCannon)
     
 	    //case CANNON_TYPE_MORTAR: return 92; break;
     }
+
+	return 0;
 }

@@ -17,9 +17,9 @@
 #include "locations\locations.c"
 #include "interface\interface.h"
 #include "store\storeutilite.c"
+#include "store\store_free.c" // KZ FreeStores > свободные магазины
 #include "dialog.c"
 #include "quests\quests.c"
-//#include "quests\EncGirl_Functions.c"
 #include "islands\islands.c"
 #include "colonies\colonies.c"
 #include "reload.c"
@@ -77,6 +77,14 @@ native int RPrint(int x, int y, string sPrint);
 native int GetTexture(string fileName);
 native void ReleaseTexture(int texId);
 native void SetCameraShake(float time, float i1, float i2, float r1, float r2, bool sc, bool ev, int fd);
+// KZ NewFovCalculation > Переключение формулы вертикального угла обзора на лету
+native int SetNewFovCalculation(int bEnable);
+native int GetNewFovCalculation();
+native int GetNewFovCalculationDefault();
+
+// KZ HudAutoFit > Автоподгон HUD под разрешение экрана после загрузки сейва
+native int SetHudAutoFitOnLoad(int bEnable);
+native int GetHudAutoFitOnLoad();
 
 native int GetSteamEnabled();
 native int GetDLCenabled(int enable);
@@ -152,7 +160,25 @@ native int BeginCuratorCheckAsync(string sCuratorID, int iTimeOut);
 #event_handler("CameraPosAng","ProcessCameraPosAng");
 #event_handler("SeaDogs_ClearSaveData", "ClearLocationsSaveData");
 #event_handler("StopQuestCheckProcessFreeze","ProcessStopQuestCheckProcessFreeze"); // boal 240804
+
 #event_handler("CuratorCheckResult","ProcessCuratorCheckResult"); // nkrapivindev 230226
+void ProcessCuratorCheckResult()
+{
+	if (bMainMenu) return;
+	string sResult = GetEventData(); // always a lowercase english string
+
+	switch(sResult)
+	{
+		case "success":
+			TEV.franshise.legendGuide = "1";
+		break;
+		case "notsubscribedfailure":
+			DeleteAttribute(&TEV, "franshise.legendGuide");
+		break;
+	}
+
+	Trace("ProcessCuratorCheckResult: " +sResult);
+}
 
 float fHighPrecisionDeltaTime;
 
@@ -258,6 +284,7 @@ void Main_InitGame()
 	EncountersInit();
 	CannonsInit();
 	ShipsInit();
+	sShipsStamp = GetShipsFilesStamp(); // > новая игра: таблицы собраны из текущих файлов, помечаем чем именно
 	IslandsInit();
 	WeatherInit();
 	InitPerks();
@@ -362,7 +389,7 @@ void Main_Start()
 	CharacterIsDead(GetMainCharacter());
 	
 	ReloadProgressEnd();
-	KZ|Folder();
+	KZ|MusicCreateFolders();
 }
 
 void SaveGame()
@@ -387,6 +414,8 @@ void SaveGame()
 	HideQuickSaveMenu();
 	SaveLastSavePathToCurrentProfile(saveName);
 	SaveLastProfileToCurrentProfile();
+	// вызов функции после сейва
+	PostEvent("Event_AfterSave", 2);
 }
 
 void LoadGame()
@@ -400,7 +429,8 @@ void LoadGame()
 	
     PauseParticles(true); //fix вылета у форта
     // не помогло DeleteFortEnvironment();  //fix
-    
+    DeleteAttribute(&TEV, "Music.KeepPlaying");
+	StopMusic(0);
 	PauseAllSounds(); // boal fix
     ResetSound();  // fix
     // вылетам у форта НЕТ -->
@@ -706,6 +736,7 @@ void OnLoad()
 
 	Nation_InitAfterLoading();
 
+	KZ|MusicCacheClear();
 	ResetSoundBoarding();
 
 	if(LoadSegment("Interface\BaseInterface.c"))
@@ -717,11 +748,44 @@ void OnLoad()
 	}
 
     //если требуется переиничиваем итемы сохраняя при этом изменения уже внесенные в итемы в течении игры
-	if (GetArraySize(&Items) != TOTAL_ITEMS || GetArraySize(&itemModels) != ITEMS_QUANTITY)
+    // KZ > Сверка размеров ловит только добавление/удаление предметов (когда меняется ITEMS_QUANTITY)
+    // > Перетасовка\переименование предметов при том же ITEMS_QUANTITY пул не меняет - это уже ловит ITEMS_SCHEMA_VERSION
+    // > Любую другую правку initItems.c и items.h ловит отпечаток файлов: он лежит в сейве и сверяется с текущим
+	bool   bItemsRebuild = false;
+	string sFilesStamp   = GetItemsFilesStamp();
+
+	if (GetArraySize(&Items)           != TOTAL_ITEMS)			bItemsRebuild = true;
+	else if (GetArraySize(&itemModels) != ITEMS_QUANTITY)		bItemsRebuild = true;
+	else if (GetArraySize(&RandItems)  != RANDITEMS_QUANTITY)	bItemsRebuild = true;
+	else if (iItemsSchemaVersion       != ITEMS_SCHEMA_VERSION)	bItemsRebuild = true;
+	else if (sFilesStamp               == "")					bItemsRebuild = true;	// > файла нет или он не читается - состояние неизвестно
+	else if (sFilesStamp               != sItemsStamp)			bItemsRebuild = true;	// > файл изменился с той сборки, из которой сейв
+
+	if (bItemsRebuild)
 	{
+	    trace("OnLoad: пересборка предметов, отпечаток '" + sItemsStamp + "' -> '" + sFilesStamp + "'");
 	    OnLoadUpdateItemArrays();
 	}
-	
+
+    // KZ > Корабли пересобираются, когда изменились файлы, из которых собраны их таблицы
+	bool bShipsRebuild = false;
+	sFilesStamp        = GetShipsFilesStamp();
+
+	if (GetArraySize(&ShipsTypes)       != SHIP_TYPES_QUANTITY_WITH_FORT)	bShipsRebuild = true;
+	else if (GetArraySize(&SailsColors) != SAILS_COLOR_QUANTITY)			bShipsRebuild = true;
+	else if (GetArraySize(&RealShips)   != REAL_SHIPS_QUANTITY)				bShipsRebuild = true;
+	else if (sFilesStamp                == "")								bShipsRebuild = true;	// > файлов нет или они не читаются - состояние неизвестно
+	else if (sFilesStamp                != sShipsStamp)						bShipsRebuild = true;	// > файлы изменились с той сборки, из которой сейв
+
+	if (bShipsRebuild)
+	{
+		trace("OnLoad: пересборка кораблей, отпечаток '" + sShipsStamp + "' -> '" + sFilesStamp + "'");
+		OnLoadUpdateShipArrays();
+	}
+
+	// FreeStores > свободные слоты магазинов
+	StoresOnLoadCheck();
+
 	ReloadProgressUpdate();
 	
 	DialogsInit();
@@ -739,6 +803,9 @@ void OnLoad()
 	PDMQuestsInit();
 	ReloadProgressUpdate();
 
+	LeBasque_line(); // Линейка Ле Баска
+	ReloadProgressUpdate();
+	
 	InitTeleport();
 	ReloadProgressUpdate();
 
@@ -794,15 +861,11 @@ void OnLoad()
 	bIsRepairingProcess = false;
 	DialogRun = false;
 	InterfaceStates.Launched = false;
-	
 	ReloadProgressUpdate();
 
-	PerkLoad(false);
-	TEV.RefreshActiveSeaPerks = "";
-
-	ReloadProgressUpdate();
-	
+	BeginCuratorCheckAsync(CL_CURATOR, 10); //Подписка на франшизу в steam
 	LoadGameOptions();
+	InitTips();
 
 	ReloadProgressEnd();
 
@@ -870,8 +933,11 @@ void NewGame_continue()
 		UnloadSegment("Interface\BaseInterface.c");
 	}
 
+	// подсказки в лоадингах
+	InitTips();
+
 	InitGame();
-	
+
 	ReloadProgressUpdate();
 	
 	CreateColonyCommanders();
@@ -902,6 +968,16 @@ void NewGame_continue()
 	ReloadProgressUpdate();
 	
     RumourInit();  //homo 23/06/06
+	if (startHeroType != 1 && startHeroType != 6) // Для других ГГ, можно услышать о побеге Блада.
+	{
+		CapBloodLine_AddStartRumour("CapBloodLine_BarbadosRumour_1", "Bridgetown", -1, "CapBloodLine_BarbadosStart", false);
+		CapBloodLine_AddStartRumour("CapBloodLine_BarbadosRumour_2", "Bridgetown", -1, "CapBloodLine_BarbadosStart", false);
+
+		CapBloodLine_AddStartRumour("CapBloodLine_SpanishRumour_1", "", SPAIN, "CapBloodLine_Spanish", true);
+		CapBloodLine_AddStartRumour("CapBloodLine_SpanishRumour_2", "", SPAIN, "CapBloodLine_Spanish", true);
+		CapBloodLine_AddStartRumour("CapBloodLine_SpanishRumour_3", "", SPAIN, "CapBloodLine_Spanish", true);
+		CapBloodLine_AddStartRumour("CapBloodLine_SpanishRumour_4", "", SPAIN, "CapBloodLine_Spanish", false);
+	}
 	ReloadProgressUpdate();
 	
 	ActivateTimeEvents();
@@ -914,35 +990,46 @@ void NewGame_continue()
 	}
 	//LoadMainCharacterInFirstLocation(sTeleportLocName, sTeleportLocator, sTeleportLocName);
 	startGameWeather = true;
-	if (startHeroType == 1) //21/07/07 homo для Блада даем другое начало
-    {
-        //homo тут это должно точно работать
-        RemoveCharacterEquip(pchar, BLADE_ITEM_TYPE);
-        RemoveCharacterEquip(pchar, GUN_ITEM_TYPE);
-        RemoveCharacterEquip(pchar, MUSKET_ITEM_TYPE);
-        RemoveCharacterEquip(pchar, SPYGLASS_ITEM_TYPE);
-        RemoveCharacterEquip(pchar, PATENT_ITEM_TYPE);
-        RemoveCharacterEquip(pchar, CIRASS_ITEM_TYPE);
-        RemoveCharacterEquip(pchar, MAPS_ITEM_TYPE);
-        DeleteAttribute(pchar, "items");
-        InterfaceStates.startGameWeather = FindWeather("20 Hour");
-        LoadMainCharacterInFirstLocationGroup("Estate", "reload", "reload1");
-    }
-/*    else if (startHeroType == 2)  // линейка Граммона
-    {
-        InterfaceStates.startGameWeather = FindWeather("20 Hour");
-        LoadMainCharacterInFirstLocationGroup("GrammonEstate", "goto", "goto12");
-    }*/
-    else  // стандартный тутор
-    {
+	if (IsFreeplayModeStart()) // стандартный тутор
+	{
         InterfaceStates.startGameWeather = FindWeather("11 Hour");
         LoadMainCharacterInFirstLocationGroup("Ship_deck_Low", "goto", "goto4");
+	}
+    else
+    {
+		if (startHeroType == 1) //21/07/07 homo для Блада даем другое начало
+		{
+			//homo тут это должно точно работать
+			RemoveCharacterEquip(pchar, BLADE_ITEM_TYPE);
+			RemoveCharacterEquip(pchar, GUN_ITEM_TYPE);
+			RemoveCharacterEquip(pchar, MUSKET_ITEM_TYPE);
+			RemoveCharacterEquip(pchar, SPYGLASS_ITEM_TYPE);
+			RemoveCharacterEquip(pchar, PATENT_ITEM_TYPE);
+			RemoveCharacterEquip(pchar, CIRASS_ITEM_TYPE);
+			RemoveCharacterEquip(pchar, MAPS_ITEM_TYPE);
+			DeleteAttribute(pchar, "items");
+			InterfaceStates.startGameWeather = FindWeather("20 Hour");
+			LoadMainCharacterInFirstLocationGroup("Estate", "reload", "reload1");
+		}
+		else if (startHeroType == 2)  // линейка Граммона
+		{
+			InterfaceStates.startGameWeather = FindWeather("20 Hour");
+			LoadMainCharacterInFirstLocationGroup("GrammonEstate", "goto", "goto12");
+		}
+		else if (startHeroType == 3)  // Эммануэль Пардаль
+		{
+			InterfaceStates.startGameWeather = FindWeather("12 Hour");
+			LoadMainCharacterInFirstLocationGroup("LaVega_houseSp3_room1", "reload", "reload3");
+		}
     }
 	
 	ReloadProgressUpdate();
 	
 	//InitTowns();
 	UpdateCrewInColonies(); // пересчет наёмников в городах
+	ReloadProgressUpdate();
+
+	BeginCuratorCheckAsync(CL_CURATOR, 10);
 	ReloadProgressUpdate();
 
 	//InitSmuggling();
@@ -953,6 +1040,7 @@ void NewGame_continue()
 void InitGame()
 {
 	InitSound();
+	KZ|MusicCacheClear();
 
 	ReloadProgressUpdate();
 
@@ -989,6 +1077,9 @@ void InitGame()
 		InitItems();
 		UnloadSegment("items\initItems.c");
 	}
+
+	iItemsSchemaVersion = ITEMS_SCHEMA_VERSION;
+	sItemsStamp         = GetItemsFilesStamp(); // > массивы собраны из текущих файлов, помечаем чем именно
 
 	ReloadProgressUpdate();
 	GenerateGenerableItems(); // <-- ugeen генерация предметов
@@ -1060,10 +1151,18 @@ void ProcessControls()
 			case "NationsMenu": 		ProcessNationRelationKey(); break;
 			case "AlchemyKey": 			ProcessAlchemyKey(); 		break;
 
-			case "Sea_CameraSwitch": 	SeaCameras_Switch(); 		break;
+			case "Sea_CameraSwitch":
+				SeaCameras_Switch(ControlName);
+			break;
+			case "FireCamera_Set":
+				SeaCameras_Switch(ControlName);
+			break;
 			case "Ship_Fire": 			Ship_DoFire(); 				break;
 
 			case "Tele": 				Sea_ReloadStart(); 			break;
+			case "hk_FireMode":
+				ToggleFireMode();
+			break;
 		}
 	}
 	else
@@ -1439,7 +1538,7 @@ void ProcessControls()
 				}
 			break;
 			
-			case "BOAL_SetCamera":
+			case "KZ_NextMusicTrack":
 				// KZ > на F10 перезапуск музыки
 				if(LoadSegment("Debuger.c"))
 				{
@@ -1691,7 +1790,7 @@ void GameOver(string sName)
 	string sM = "Action\Death\";
 	string sP = "loading\";
 
-	PauseAllSounds();
+	ResetSoundBoarding();
 	ResetSound();
 	EngineLayersOffOn(false);
 
@@ -1756,7 +1855,7 @@ void GameOver(string sName)
 
 	StartPictureAsVideo(sP + ".tga", 3.5);
 	if (sName != "mainmenu")
-		KZ|Random("&" + sM + ",Action\Death");
+		KZ|MusicRandom("&" + sM + ",Action\Death");
 
 	reload_location_index = -1;
 	DeleteSeaEnvironment();
@@ -1962,28 +2061,4 @@ string GetLastSavePathFromCurrentProfile() {
 	}
 
 	return opt.LastSavePath;
-}
-
-void ProcessCuratorCheckResult()
-{
-    // always a lowercase english string
-    string sResult = GetEventData();
-    if (sResult == "success")
-    {
-        // user is subscribed to the curator
-        // 100% sure
-        Trace("ProcessCuratorCheckResult: Success! :D");
-    }
-    else if (sResult == "notsubscribedfailure")
-    {
-        // user is NOT subscribed to the curator
-        // 100% sure
-        Trace("ProcessCuratorCheckResult: NotSubscribedFailure! ;-(");
-    }
-    else
-    {
-        // don't know for sure.
-        // either time-out or check is broken
-        Trace("ProcessCuratorCheckResult: Unknown sResult=" + sResult);
-    }
 }

@@ -316,3 +316,48 @@ Eh bien, c’est vous qui avez demandé! Ici, c’est une ville portuaire, pas u
 Tortuga_Tavern_91 {
 Hmm... Je vois. Merci, @<npchar>.
 }
+Tortuga_Tavern_92 {
+On dit que tu connais un homme qui cherche des capitaines. Tu saurais me dire où le trouver ?
+}
+Tortuga_Tavern_93 {
+Ici, une personne sur trois cherche des capitaines...
+}
+Tortuga_Tavern_94_m {
+À ce que j'ai entendu, cet homme propose un travail peu ordinaire.
+}
+Tortuga_Tavern_94_f {
+À ce que j'ai entendu, cet homme propose un travail peu ordinaire.
+}
+Tortuga_Tavern_95 {
+Oh, capitaine, chaque travail est extraordinaire à sa manière. Tout dépend de ce que vous avez déjà eu l'occasion de voir.
+}
+Tortuga_Tavern_96 {
+Tu sais très bien de qui je parle.
+}
+Tortuga_Tavern_97 {
+Tout ce que je sais, c'est que... vous me faites perdre mon temps avec vos bavardages !
+}
+Tortuga_Tavern_98 {
+Eh bien voilà. Il a finalement décidé lui-même que vous valiez la peine qu'il vous parle.
+}
+Tortuga_Tavern_99 {
+Il fait toujours en sorte qu'on pose d'abord des questions sur lui avant de venir ?
+}
+Tortuga_Tavern_100 {
+Marceau aime d'abord jauger les gens. On dit qu'il a l'œil pour ça. S'il est descendu vous voir, c'est qu'il a discerné quelque chose d'intéressant en vous.
+}
+Tortuga_Tavern_101 {
+Eh bien, allons lui parler.
+}
+Tortuga_Tavern_102 {
+Je vous écoute, capitaine.
+}
+Tortuga_Tavern_103 {
+Je cherche Marceau. Il est toujours à l'étage ?
+}
+Tortuga_Tavern_104 {
+Les hommes comme lui restent rarement au même endroit. Si vous avez des nouvelles pour lui, cherchez-le au port, sur la « Mouette noire ».
+}
+Tortuga_Tavern_105 {
+Merci.
+}

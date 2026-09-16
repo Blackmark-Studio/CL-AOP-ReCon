@@ -1,0 +1,516 @@
+Rimalier_dialog_1 {
+No se muevan, caballeros. Un paso más y, con gran pesar, les arruinaré el andar. Y no quiero eso en absoluto: veo que esas botas que llevan puestas cuestan más que mi choza.
+}
+Rimalier_dialog_2 {
+Tienes una forma curiosa de saludar a los invitados. Si eres Nicolas Rimalie, no hemos venido a medir mosquetes contigo. Necesitamos hablar.
+}
+Rimalier_dialog_3 {
+¿Hablar? ¡Estupendo! Hace tiempo que nadie viene a hablar conmigo. Y, disculpa mi curiosidad, ¿de qué quieres hablar exactamente?
+}
+Rimalier_dialog_4 {
+Sobre tu viejo amigo, Michel le Basquet. Te necesita.
+}
+Rimalier_dialog_5 {
+¿Michel? Ja, ja. Si se acordó de mí, significa que o está en problemas, o está tramando alguna mala pasada que hará que todos los demás se enfermen.
+}
+Rimalier_dialog_6 {
+Estimado señor, si todos los enemigos hubieran tenido la cortesía de advertir sobre esto con antelación, hace mucho tiempo que viviría en la ciudad, vistiendo un chaleco limpio y bebiendo vino sin mirar atrás.
+}
+Rimalier_dialog_7 {
+Su cautela es comprensible. Pero ya hemos revelado la identidad de quien nos envió. Ahora le toca a usted decidir si quiere hablar con nosotros o disparar.
+}
+Rimalier_dialog_8 {
+Ah, capitán, qué severo eres. Casi puedo oír el tintineo de una espada bajo cada palabra. De acuerdo. Podemos hablar, sobre todo porque ya estoy harto de disparar a las gaviotas de la zona hoy... Solo mantén las manos a la vista. El viejo Rimalie tiene problemas para ver rostros, pero aún no ha olvidado cómo disparar.
+}
+Rimalier_dialog_9 {
+¡Maldita sea, te estaban siguiendo! Jaco, muchacho, escúchame bien. Hay un viejo agujero debajo de las tablas detrás de esa cerca... Entra ahí y no asomes la nariz hasta que te llame. Y si me oyes decir palabrotas, no te alarmes. Eso significa que sigo vivo. Los viejos como yo a veces tenemos que intentar no morir por el bien de alguien más.
+}
+Rimalier_dialog_10 {
+Morteros... Vaya, vaya. Qué honor. Admito que esperaba mercenarios, pero no pensé que traerían artillería.
+}
+Rimalier_dialog_11 {
+¿Así que sabías que venían a por ti?
+}
+Rimalier_dialog_12 {
+Más sobre eso después. Hay helechos junto a las rocas; ve allí, rápido.
+}
+Rimalier_dialog_13 {
+Ayer mismo arreglé este tejado. ¡Y unos idiotas hicieron las reparaciones de golpe, al estilo español! ¡Sin tejado, sin goteras!
+}
+Rimalier_dialog_14 {
+Y ahora vienen a comprobar si estás satisfecho con el trabajo. ¿Lo oyes?
+}
+Rimalier_dialog_15 {
+¡Pues demos una buena tunda a esas tripas de pescado!
+}
+Rimalier_dialog_16 {
+¡Ja! ¡Qué baile! Hacía tiempo que no estiraba tanto mis viejos huesos.
+}
+Rimalier_dialog_17_m {
+Me alegra que te haya gustado. Pero aún no ha terminado. No todos participaron en el ataque; probablemente alguien se quedó atrás en los morteros.
+}
+Rimalier_dialog_17_f {
+Me alegra que te haya gustado. Pero aún no ha terminado. No todos participaron en el ataque; probablemente alguien se quedó atrás en los morteros.
+}
+Rimalier_dialog_18 {
+¡Eso es! Vamos, caballeros. Es hora de ajustar cuentas con los demás.
+}
+Rimalier_dialog_19 {
+Tenemos que comprobar si quedan supervivientes allí.
+}
+Rimalier_dialog_20 {
+Aquí solo hay cadáveres... Y esta es la razón: el cañón reventó. El hierro es viejo, y encima unos idiotas lo cargaron.
+}
+Rimalier_dialog_21 {
+Me halagan, caballeros. Le disparé a uno, pero los demás se volaron por los aires. Si su estupidez hubiera valido la pena, ya estarían viviendo en Veracruz.
+}
+Rimalier_dialog_22 {
+Apostaría mi mano a que después de la explosión alguien corrió hacia la bahía.
+}
+Rimalier_dialog_23 {
+¿Vargas? No he sabido nada de él en más de dos años. ¿Por qué me necesitaría de repente?
+}
+Rimalier_dialog_24 {
+Supongo que tiene algo que ver con Le Basque.
+}
+Rimalier_dialog_25 {
+De acuerdo, adelante. Iré a buscar a Jaco y luego te alcanzo. Intento mantenerlo alejado de los problemas; es muy impulsivo. Siempre sueña con ser un héroe. Si las cosas se ponen feas en la orilla, lo perseguiré de vuelta al foso.
+}
+Rimalier_dialog_26 {
+¿Así que al final vienes con nosotros a Tortuga?
+}
+Rimalier_dialog_27 {
+Por supuesto. Después de eso, sería de mala educación negarme. Además, te debo la vida.
+}
+Rimalier_dialog_28 {
+Luego nos encontraremos en la salida de la bahía.
+}
+Rimalier_dialog_29 {
+¿Así que salió corriendo? Qué raro... Si yo fuera él, lo habría aguantado hasta el final.
+}
+Rimalier_dialog_30 {
+Estoy totalmente de acuerdo, pequeño Etienne. ¡Y pensabas que no te reconocería, ¿eh?! Veo que has crecido. \nBueno, ya que la persecución ha terminado, tengo una sugerencia mejor. ¿Qué te parece si paramos en Le Francois de camino a Tortuga? El dueño es un viejo amigo mío, así que no nos servirá cualquier bebida.
+}
+Rimalier_dialog_31 {
+Ya que ambos presienten que algo anda mal, mejor no tentemos a la suerte. Nos dirigimos a Le Francois.
+}
+Rimalier_dialog_32 {
+¡Eso sí que es ron! Ahora ya sabes por qué merecía la pena visitar Le Francois.
+}
+Rimalier_dialog_33 {
+¡Embriagador!... Escucha, Nicolas. Veo que no eres tú mismo. ¿Sucede algo?
+}
+Rimalier_dialog_34 {
+Ejem... Verás, tengo la intención de cumplir mi promesa y presentarme ante Michel como acordé. Pero primero, necesito resolver un pequeño asunto relacionado con Jaco. De lo contrario, simplemente no podré dormir tranquilo.
+}
+Rimalier_dialog_35 {
+¿Qué pasa?
+}
+Rimalier_dialog_36 {
+El chico se metió en serios problemas y ahora los hombres de Mansfield lo están buscando.
+}
+Rimalier_dialog_37 {
+Dime, ¿en qué lío se ha metido?
+}
+Rimalier_dialog_38 {
+Oh, capitán, tendré que empezar de cero... Hace unas semanas encontré a Jaco en la costa este de La Española. Tras una tormenta, un trozo de barco había llegado a la orilla, y este chico se aferraba a él, apenas con vida y cubierto de sangre.
+}
+Rimalier_dialog_39 {
+¿Su barco se estrelló?
+}
+Rimalier_dialog_40 {
+Ojalá. Los hombres de Mansfield abordaron el barco. Se acercaron con bandera falsa y, al estar cerca, atacaron a quemarropa. El capitán fue ahorcado, parte de la tripulación murió y el resto fue vendido. Esa noche, Jaco logró soltar las cuerdas y saltar por la borda.
+}
+Rimalier_dialog_41 {
+¿En medio de la tormenta? Tiene mucho coraje.
+}
+Rimalier_dialog_42 {
+Pero claramente le falta sentido común. Si no aprende a arriesgarse, difícilmente llegará a los veinticinco años. Sea como fuere, lo llevé a la orilla, lo acompañé y le dije que siguiera su camino. Y me siguió.
+}
+Rimalier_dialog_43 {
+¿Y lo tomaste bajo tu protección?
+}
+Rimalier_dialog_44 {
+¿Adónde más podía ir? A partir de entonces, lo mantuve alejado de los hombres de Mansfield, con la esperanza de que con el tiempo olvidara el pasado. Pero Jaco no había olvidado nada.
+}
+Rimalier_dialog_45 {
+¿Quería vengarse?
+}
+Rimalier_dialog_46 {
+Sí y no. Decidió averiguar quién había liderado aquel ataque y qué les había sucedido a los supervivientes. Y no se le ocurrió mejor manera que ir personalmente a Mansfield.
+}
+Rimalier_dialog_47 {
+Así que me llevé a Jaco y me mudé con él a Tobago. Pensé que allí ganaríamos algo de tiempo. Y ahora Vargas me está buscando. Esconderme ya no tiene sentido.
+}
+Rimalier_dialog_48 {
+Así pues, esta misión debe llevarse a cabo. Sacaremos a Duval de allí, Mansfield recuperará a su artillero, Jaco dejará de ser un fugitivo y tú irás a Le Basque con la conciencia tranquila.
+}
+Rimalier_dialog_49 {
+Luego terminamos nuestras bebidas y regresamos al barco. Sería un pecado desperdiciar semejante bazofia.
+}
+Rimalier_dialog_50 {
+¡Capitán! ¿Tiene alguna noticia sobre Jaco? Ya lo he buscado por toda la isla; es como si el pequeño bribón se hubiera esfumado.
+}
+Rimalier_dialog_51 {
+Jaco llegó al asentamiento sano y salvo. Fue capturado por los hombres de Vargas. Pero creo que es mejor que él mismo te cuente los detalles.
+}
+Rimalier_dialog_52 {
+¿Vargas otra vez? Capitán, le debo una deuda impagable. Tome esta bolsa. Contiene cinco mil piastras, todo lo que tengo. Siempre guardo mis pertenencias para mí. Es un precio pequeño a pagar por la vida de un muchacho, pero lo doy de todo corazón. Ni se le ocurra negarse.
+}
+Rimalier_dialog_53 {
+Un regalo generoso, viejo. Muy bien, acepto su agradecimiento.
+}
+Rimalier_dialog_54 {
+No, Nicolas. Quédate con el dinero. Todavía tendré tiempo de ganarlo, créeme.
+}
+Rimalier_dialog_55 {
+Excelente. Y ahora, Capitán... Hay un asunto más que quería tratar con usted.
+}
+Rimalier_dialog_56 {
+A juzgar por la forma en que agarras tu mosquete, estás un poco nervioso...
+}
+Rimalier_dialog_57_m {
+Eres un hombre testarudo, Capitán... Rechazas el dinero, pero no te dejaré ir con las manos vacías.\nAquí tienes este papel: contiene mi receta secreta personal. Hay momentos en que ni siquiera el bucanero más experimentado puede conseguir caza. Tienes que sobrevivir y cocinar lo que encuentres, ¡ya sean gaviotas o cormoranes muertos! Con mi receta, puedes obtener un buen trozo de carne de cualquier ave. ¡Tómala, no te arrepentirás! Bueno,\nQuizás haya una cosa más que me gustaría comentar contigo.
+}
+Rimalier_dialog_57_f {
+Eres un hombre testarudo, Capitán... Rechazas el dinero, pero no te dejaré ir con las manos vacías.\nAquí tienes este papel: contiene mi receta secreta personal. Hay momentos en que ni siquiera el bucanero más experimentado puede conseguir caza. Tienes que sobrevivir y cocinar lo que encuentres, ¡ya sean gaviotas o cormoranes muertos! Con mi receta, puedes obtener un buen trozo de carne de cualquier ave. ¡Tómala, no te arrepentirás! Bueno,\nQuizás haya una cosa más que me gustaría comentar contigo.
+}
+Rimalier_dialog_58 {
+Una receta muy útil. ¡Gracias, Rimalie! Ahora cuéntame qué está pasando.
+}
+Rimalier_dialog_59 {
+Mientras vagaba por aquí, tuve tiempo para reflexionar mucho. Le Basque me dio un techo, pero esta maldita tierra me está consumiendo las últimas fuerzas. Me estoy oxidando aquí como un ancla abandonada. Sin el olor a sal marina y pólvora quemada, estoy más muerto que vivo.
+}
+Rimalier_dialog_60 {
+¿A qué te refieres, Nicolas?
+}
+Rimalier_dialog_61 {
+Sé que te enfrentas a Vargas. Y sé que habrá mucha sangre por delante. Lleva al viejo a bordo, capitán. Los sables son para los jóvenes y fogosos, pero mi mosquete tiene un alcance letal de cien yardas. Dame un lugar en lo alto del mástil, ¡y noquearé al capitán o artillero enemigo antes de que sus garfios nos alcancen!
+}
+Rimalier_dialog_62 {
+Un tirador como tú es un regalo del destino. Sería un honor tenerte en mi barco, Nicolas.
+}
+Rimalier_dialog_63_m {
+Nicolas, con todo el respeto que le tengo a tu habilidad... debo negarme. Has dedicado tus mejores años al mar y mereces un poco de paz. Adonde nos dirigimos no es un crucero de placer, sino una empresa muy arriesgada.
+}
+Rimalier_dialog_63_f {
+Nicolas, con todo el respeto que le tengo a tu habilidad... debo negarme. Has dedicado tus mejores años al mar y mereces un poco de paz. Adonde nos dirigimos no es un crucero de placer, sino una empresa muy arriesgada.
+}
+Rimalier_dialog_64 {
+¡No te arrepentirás, capitán! Mi pesada baza y mi lealtad son ahora tuyas. Iré a buscar el molde de balas y la pólvora seca. ¡Espero la orden de zarpar!
+}
+Rimalier_dialog_65 {
+Bienvenidos al equipo. Pronto zarparemos.
+}
+Rimalier_dialog_66 {
+Solo un trato, Capitán: considérame como si estuviera grabado en ti, como pólvora en tus dedos. No te librarás de mí hasta que terminemos nuestro trabajo. Quiero vengarme de Vargas tanto como tú, al menos por el techo que destrozó.
+}
+Rimalier_dialog_67 {
+Bueno, ¡olvidémonos de eso! Bienvenido al equipo. Zarpamos pronto.
+}
+Rimalier_dialog_68_m {
+No, espera. Nicolas, con todo el respeto que le tengo a tu habilidad... debo negarme. Le has dedicado tus mejores años al mar y mereces un poco de paz.
+}
+Rimalier_dialog_68_f {
+No, espera. Nicolas, con todo el respeto que le tengo a tu habilidad... debo negarme. Le has dedicado tus mejores años al mar y mereces un poco de paz.
+}
+Rimalier_dialog_69 {
+¡La paz es para los muertos y los mercaderes gordos! Y no intentes convencerme de lo contrario, Capitán. Sé que Michel te ha encargado localizar a los tres lugartenientes de Vargas. Me imagino que enviará a Jaco contigo, ¿verdad? ¿Crees que voy a dejar que este joven se meta en problemas con los españoles sin mi supervisión?
+}
+Rimalier_dialog_70 {
+Tienes mucha terquedad, viejo. Pero ahí fuera va a haber una verdadera masacre...
+}
+Rimalier_dialog_71 {
+¡Por eso mismo me necesitas! Un sable es para los jóvenes y fogosos, pero mi mosquete de caza da en el blanco con precisión a cien metros. Dame un puesto en lo alto del mástil y abatiré a cualquier enemigo antes de que pueda desenvainar su espada. Voy contigo, y eso no está sujeto a discusión.
+}
+Rimalier_dialog_72 {
+¡Me rindo! No hay nada que discutir. Bienvenido a bordo, Nicolas. Pero cuando regresemos, desembarcarás con Jaco.
+}
+Rimalier_dialog_73 {
+¡Sí señor, capitán!
+}
+Rimalier_dialog_74 {
+Suban a bordo del barco, pronto zarparemos.
+}
+Rimalier_dialog_75 {
+Capitán, este lugar apesta a emboscada a kilómetros de distancia. Como su oficial, lo seguiré hasta el mismísimo infierno, pero le aconsejo que mantenga la mano en la empuñadura.
+}
+Rimalier_dialog_76 {
+Tómalo con calma, Nicolas. Mantén los ojos abiertos y no te desanimes.
+}
+Rimalier_dialog_77 {
+Lo haré. ¡Adelante, capitán!
+}
+Rimalier_dialog_78 {
+Sabe usted, capitán, aún no he jurado lealtad a su bandera. Prefiero luchar en cubierta o en la jungla que rebuscar en la oscuridad entre tumbas.
+}
+Rimalier_dialog_79_m {
+Si no te gusta estar aquí, Nicolas, puedes esperar en la entrada. Puedo encargarme yo solo.
+}
+Rimalier_dialog_79_f {
+Si no te gusta estar aquí, Nicolas, puedes esperar en la entrada. Puedo encargarme yo solo.
+}
+Rimalier_dialog_80 {
+Y en esta oscuridad te clavarán una espada española entre las costillas. Ya que estoy aquí, te cubriré las espaldas.
+}
+Rimalier_dialog_81 {
+Sígueme. Debería estar esperando cerca de la capilla.
+}
+Rimalier_dialog_82 {
+¡Cuidado, capitán!
+}
+Rimalier_dialog_83 {
+¡Qué profundos han hundido Vargas sus asquerosos tentáculos...!
+}
+Rimalier_dialog_84 {
+No cabe duda de que planeaba un ataque contra Tortuga y, al mismo tiempo, contra el asentamiento de bucaneros. Vayamos a las catacumbas. Tenemos que neutralizar a su comandante, donde Vargas se llevó a la chica, antes de que desaparezca por completo.
+}
+Rimalier_dialog_85 {
+Capitán, ¿qué sigue?
+}
+Rimalier_dialog_86 {
+Vamos.
+}
+Rimalier_dialog_87 {
+Nicolas, volvamos al barco. ¡Rodearemos la isla y volaremos su bañera con cañones!
+}
+Rimalier_dialog_88 {
+Para cuando lleguemos, Vargas ya habrá levado anclas. Y si abrimos fuego, Marie será la primera en pagar las consecuencias.
+}
+Rimalier_dialog_89 {
+Así que, vamos a recorrer las cuevas.
+}
+Rimalier_dialog_90 {
+Llegaremos a la playa, nadaremos hasta la goleta, abordaremos y mataremos sigilosamente a los guardias. Si tenemos suerte, solo se darán cuenta de lo sucedido cuando sea demasiado tarde.
+}
+Rimalier_dialog_91 {
+Esto es una locura... Pero tienes razón. No tenemos otra opción... Vámonos.
+}
+Rimalier_dialog_92 {
+Llegamos tarde... Alguien ha provocado una verdadera masacre en este barco.
+}
+Rimalier_dialog_93 {
+Aquí solo hay cadáveres. Pero ni Vargas ni Marie están entre ellos. Ese bastardo nos despistó y luego degolló a los marineros para que no dijeran ni una palabra.
+}
+Rimalier_dialog_94 {
+Si él puede acabar tan fácilmente con quienes le sirven, a la chica tampoco le quedará mucho tiempo de vida.
+}
+Rimalier_dialog_95 {
+Si hubiera querido matarla, lo habría hecho enseguida. No sé por qué, pero la necesita viva. Bajemos, Nicolas. Ten el mosquete listo. Busquemos supervivientes.
+}
+Rimalier_dialog_96 {
+Perdimos el tiempo... Vargas se escabulló y se llevó a la chica con él.
+}
+Rimalier_dialog_97 {
+Pero ahora sabemos adónde se dirigió.
+}
+Rimalier_dialog_98 {
+Lo sabemos, pero no es precisamente un placer. No es como un perro apaleado que corre a esconderse en una perrera a lamerse las heridas. Quiere que lo sigamos. Presiento que hay una trampa, capitán, y mi olfato rara vez me falla.
+}
+Rimalier_dialog_99_m {
+Nicolas, la última vez te hice caso y no lo perseguí. Pero ahora las cosas son diferentes. Le hemos quitado a su tesorero y a sus lugartenientes, y hemos arruinado sus planes en Tortuga. Está acorralado, y esta vez no voy a ceder.
+}
+Rimalier_dialog_99_f {
+Nicolas, la última vez te hice caso y no lo perseguí. Pero ahora las cosas son diferentes. Le hemos quitado a su tesorero y a sus lugartenientes, y hemos arruinado sus planes en Tortuga. Está acorralado, y esta vez no voy a ceder.
+}
+Rimalier_dialog_100 {
+No me gusta esta idea. Pero te acompaño. Al fin y al cabo, ese canalla nunca pagó por el intento de asesinato de Jaco y... por mi techo.
+}
+Rimalier_dialog_101 {
+Eres un bromista, Nicolas. Levemos anclas. Inmediatamente.
+}
+Rimalier_dialog_102 {
+El sendero lleva directamente a la mina. Pero yo no iría. Aquí hay demasiada tranquilidad...
+}
+Rimalier_dialog_103 {
+¿Qué esperabas? ¿Tambores, canto y baile? Vino corriendo para esconderse y decidir qué hacer a continuación.
+}
+Rimalier_dialog_104 {
+Entonces, ¿por qué no estaba ese galeón en la bahía? ¿Y dónde están sus hombres? Si realmente escapó hasta aquí, nos habrían encontrado antes de que llegáramos a la costa.
+}
+Rimalier_dialog_105 {
+No tuvo tiempo. Le pisamos los talones. Y lo más probable es que el galeón haya ido a buscar más mercenarios.
+}
+Rimalier_dialog_106 {
+Es todo demasiado perfecto. Es como si alguien se hubiera asegurado de que nada nos impidiera caer en una ratonera.
+}
+Rimalier_dialog_107_m {
+Nicolas, ese canalla interceptó un barco que transportaba civiles y los tomó cautivos. Solo Dios sabe qué planeaba hacer con ellos. ¿Te has preguntado alguna vez por qué casi todos los cautivos eran chicas? Yo sí. Así que vamos para allá y acabaremos con él.
+}
+Rimalier_dialog_107_f {
+Nicolas, ese canalla interceptó un barco que transportaba civiles y los tomó cautivos. Solo Dios sabe qué planeaba hacer con ellos. ¿Te has preguntado alguna vez por qué casi todos los cautivos eran chicas? Yo sí. Así que vamos para allá y acabaremos con él.
+}
+Rimalier_dialog_108 {
+Y maldita sea... ¡Adelante, capitán! Mantén los ojos bien abiertos. Presiento que algo raro está pasando aquí.
+}
+Rimalier_dialog_109 {
+Vamos.
+}
+Rimalier_dialog_110 {
+Capitán @<pchar>, ¿cuánto descanso podemos permitirnos? ¿Podría al menos contarnos con qué ha estado soñando durante los últimos tres días?
+}
+Rimalier_dialog_111 {
+Aprecio tu sentido del humor, Nicolas, pero me duele muchísimo la cabeza.
+}
+Rimalier_dialog_112 {
+No me juzgues con demasiada dureza. No era mi intención empezar esta conversación con arrepentimientos. Me alegra que por fin hayas despertado.
+}
+Rimalier_dialog_113 {
+¿Dónde están Etienne y Marie?
+}
+Rimalier_dialog_114 {
+Marie está en la popa. Se agarra con fuerza, aunque es evidente que le cuesta. Le contó a Marceau que su tío murió en la Rosa de los Vientos. Los españoles dejaron con vida a casi todos los hombres.
+}
+Rimalier_dialog_115 {
+Pobre chica...
+}
+Rimalier_dialog_116 {
+Sí. Estamos intentando apoyarla, pero está retraída y no quiere hablar. En cuanto a Marceau, él y el tesorero están calculando los pagos a los heridos.
+}
+Rimalier_dialog_117 {
+Espero que pueda con ello. ¿Cómo llegaste a la orilla? ¿Seguían los hombres de Vargas en la selva?
+}
+Rimalier_dialog_118 {
+Oh, sí. Esos demonios estaban escondidos entre los arbustos, esperando el momento oportuno. Pero Etienne no se dejará atrapar tan fácilmente. Así que los buitres locales se darán un buen festín.
+}
+Rimalier_dialog_119 {
+Así que ganamos... Maldita sea, cómo me zumban los oídos...
+}
+Rimalier_dialog_120 {
+Ganamos. Vargas está muerto, sus hombres masacrados, Marie está viva. Probablemente con eso sea suficiente heroísmo por hoy.
+}
+Rimalier_dialog_121_m {
+¿Y ni siquiera me culparás por habernos llevado directamente a una trampa, a pesar de que me advertiste?
+}
+Rimalier_dialog_121_f {
+¿Y ni siquiera me culparás por habernos llevado directamente a una trampa, a pesar de que me advertiste?
+}
+Rimalier_dialog_122 {
+¿Por qué? Nosotros estamos vivos, Vargas está muerto. Así que no hay nada más que decir.
+}
+Rimalier_dialog_123_m {
+Y aun así, quisiera disculparme. No debí haber caído en esta trampa tan ciegamente.
+}
+Rimalier_dialog_123_f {
+Y aun así, quisiera disculparme. No debí haber caído en esta trampa tan ciegamente.
+}
+Rimalier_dialog_124 {
+De acuerdo. Por cierto, ¿qué pasó con el cuerpo de Vargas?
+}
+Rimalier_dialog_125 {
+Esto es innecesario. Vine contigo voluntariamente y sabía perfectamente cómo podía terminar todo esto. Así que olvídalo, Capitán. No guardo rencor.
+}
+Rimalier_dialog_126 {
+Gracias, Nicolas. Por cierto, ¿qué pasó con el cuerpo de Vargas?
+}
+Rimalier_dialog_127 {
+Dejada a merced de los buitres. Pero antes de abandonarla allí, la atención de Etienne se centró en la espada de Vargas. Decidimos que este trofeo te sería mucho más útil. Pero ten cuidado... Esta arma no es una cualquiera; el acero parece rezumar veneno sin cesar. Jamás he visto nada igual en mi vida...
+}
+Rimalier_dialog_128 {
+Hm. Vargas mencionó algo sobre un chamán indio antes de morir... La hoja es realmente excelente. Gracias a ambos. Ahora dime, Nicolas, ¿dónde estamos anclados ahora?
+}
+Rimalier_dialog_129 {
+En Caimán. Estamos reabasteciendo provisiones y recuperando el aliento. Podríamos levar anclas en cualquier momento. \nSin embargo, aunque no soy médico, le recomiendo que regrese al puesto de avanzada en Le Basque lo antes posible. No se ve bien; necesita descansar y recibir atención médica.
+}
+Rimalier_dialog_130 {
+Entonces hagámoslo. Regresemos a Tortuga sin demora.
+}
+Rimalier_dialog_131 {
+¿Qué le parece esta escena, capitán? Mire a estos matones. Hoy se han lavado, peinado e incluso intentan recordar algunas palabras decentes. Pero esto solo durará hasta la noche.
+}
+Rimalier_dialog_132 {
+¿Crees que las chicas que decidieron quedarse aquí tomaron la decisión equivocada?
+}
+Rimalier_dialog_133 {
+No, fíjense en esto. Hace poco, estos idiotas se peleaban por cartas marcadas y se acostaban con cerdos, y ahora arreglan techos, construyen mesas e incluso intentan no decir palabrotas delante de las mujeres. Jamás pensé que viviría para ver esto.
+}
+Rimalier_dialog_134 {
+¿Echarás de menos las buenas y viejas peleas con cuchillos y la suciedad?
+}
+Rimalier_dialog_135 {
+Oh, no. Por primera vez en años, huele de maravilla. Parece que la civilización ha llegado. Este lugar nunca volverá a ser el mismo, pero desde luego no echaré de menos el de antes.
+}
+Rimalier_dialog_136 {
+Ja, ja. No digas nunca, Nicolas. La gente suele pensar que antes la hierba era más verde al otro lado de la cerca.
+}
+Rimalier_dialog_137 {
+No. Sin duda lograrán domesticar a algunos de los hombres, y este lugar se transformará. Pero el resto seguirá siendo el mismo salvaje.
+}
+Rimalier_dialog_138 {
+¿Parece que echarás de menos la antigua forma de vida?
+}
+Rimalier_dialog_139 {
+Capitán, ya tengo la garganta seca de tanto hablar de filosofía. Es hora de tomar un par de vasos de ron y ver cómo estos torpes toros pisotean los pies de las pobres muchachas.
+}
+Rimalier_dialog_140 {
+Bueno, Nicolas, no te privaré de tal placer. Incluso podrías animarte a bailar tú mismo, je, je.
+}
+Rimalier_dialog_141 {
+Al menos el contramaestre no te obliga a limpiarte las botas antes de sentarte a comer. Pero... no te voy a mentir, capitán. Ver a alguien arreglando un techo antes de que se derrumbe sobre la cabeza de alguien inspira respeto. Estas mujeres sobrevivieron a las mazmorras de Vargas y ahora están poniendo a los bucaneros en posición de firmes. Son unas mujeres muy duras.
+}
+Rimalier_dialog_142 {
+No te confíes demasiado, Rimalie. O te mandaré a tierra a ayudarles a desyerbar sus huertos.
+}
+Rimalier_dialog_143 {
+¡No lo conseguirás! Mi lugar está en lo más alto, en compañía de mi fiel mosquete. Este ajetreo doméstico es ideal para una velada, para beber vino y recordar que no somos simples animales salvajes. Un hombre con algo que proteger lucha hasta la muerte, eso es cierto. Así que dejemos que los muchachos reúnan fuerzas para los asuntos de Le Basque... Y ya sabemos lo que tenemos que hacer.
+}
+Rimalier_dialog_144 {
+¡Qué ambiente! Tómate tu vino, Nicolas, mañana nos esperan grandes cosas.
+}
+Rimalier_dialog_145 {
+Gracias, Michel. Pero, ¿dónde está Jaco? Estaba seguro de que estaría con nosotros.
+}
+Rimalier_dialog_146 {
+¡Por Júpiter, capitán!, los rumores sobre la Margarita ya se han extendido más allá de su barco. Media Tortuga ya se está repartiendo con avidez su plata, aunque ninguno de esos bribones ha visto jamás una sola piastra. Tenga cuidado: no crea que la fortuna está atada para siempre a su mástil. Los castellanos heridos estarán esperando nuestro próximo ataque. Y supongo que no tenemos intención de decepcionarlos, ¿verdad?
+}
+Rimalier_dialog_147 {
+Tienes toda la razón, Nicolas. Maracaibo ha estado esperando nuestra visita durante demasiado tiempo.
+}
+Rimalier_dialog_148 {
+¿Necesitaba algo, capitán?
+}
+Rimalier_dialog_149 {
+No, vámonos.
+}
+Rimalier_dialog_150 {
+Probablemente estos perros intentaban comportarse como si fueran los dueños del lugar.
+}
+Rimalier_dialog_151 {
+Como siempre. Pero nadie se molestó en retirar los cadáveres.
+}
+Rimalier_dialog_152 {
+Esto es una advertencia para cualquiera que venga aquí con armas en las manos.
+}
+Rimalier_dialog_153 {
+Mmm... Vámonos. Este hedor pronto me dará dolor de cabeza.
+}
+Rimalier_dialog_154 {
+Tómalo, maldito...
+}
+Rimalier_dialog_155 {
+Solo si el capitán me echa del barco. Hasta entonces, seguiré de servicio.
+}
+
+Rimalier_dialog_156 {
+¡Estás bromeando! ¿Quién te va a echar? Eres el favorito de todos en el barco. Nadie ha logrado beber más que tú.
+}
+
+Rimalier_dialog_157 {
+Que te mejores, Nicolas. Quizás nos volvamos a ver.
+}
+
+LeBasque_Rimalier_1 {
+Y así, nuestro victorioso escuadrón se dispersó...
+}
+
+LeBasque_Rimalier_2 {
+¡Jo, jo! ¡Aquí hay suficiente para dos casas nuevas!
+}
+
+LeBasque_Rimalier_3 {
+Primero, iré a la taberna más cercana y beberé todo lo que pueda. ¡Ja, ja!
+}
+
+LeBasque_Rimalier_4 {
+Un plan infalible no necesita modificaciones. Tengo el honor, caballeros. Si me necesitan, ya saben dónde encontrarme.
+}

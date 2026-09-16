@@ -94,3 +94,31 @@ Voyons voir. Ce jour-là, les navires suivants ont quitté le port : la pinasse 
 Villemstad_PortMan_29 {
 Merci!
 }
+
+Villemstad_PortMan_30 {
+Pourriez-vous me dire quels navires battant pavillon espagnol ont été enregistrés ici au cours de la semaine passée ?
+}
+Villemstad_PortMan_31 {
+Sous pavillon espagnol, dites-vous ? Il n'y en a pas eu beaucoup.\nVoyons. Le galion 'Hernal Diaz', commandé par Gabriel de Seguenza. Deux flûtes marchandes sont arrivées hier de Porto Bello ; toutes deux appartiennent à Andres Fonseca. Et puis, bien sûr, votre '@<PChar>'.
+}
+Villemstad_PortMan_32 {
+D’où venait le galion ?
+}
+Villemstad_PortMan_33 {
+De La Havane. Mais ce n’est que ce qui figure dans mes registres. Personne n’était tenu de rendre compte en détail de son itinéraire.
+}
+Villemstad_PortMan_34 {
+Sauriez-vous quelque chose au sujet des passagers ?
+}
+Villemstad_PortMan_35 {
+Je crains que ce ne soit tout.
+}
+Villemstad_PortMan_36 {
+Oui, dommage.
+}
+Villemstad_PortMan_37 {
+Vous savez, si vous cherchez quelqu’un, interrogez les journaliers du port. Ils parlent avec les marins qui arrivent. La journée, ils ont trop à faire pour bavarder, mais le soir ils installent souvent leur campement ici même, sur le rivage.
+}
+Villemstad_PortMan_38 {
+Je vous remercie.
+}

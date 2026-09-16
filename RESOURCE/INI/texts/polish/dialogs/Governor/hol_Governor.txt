@@ -1288,3 +1288,4 @@ Już powiedziałem, że nie mam najmniejszego pojęcia. Proponuję, żebyście o
 hol_Governor_365 {
 No dobrze, poszukam materiałów na waszej wyspie. Dziękuję!
 }
+hol_Governor_366 {wykonano}

@@ -37,6 +37,12 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 					link.l1 = StringFromKey("fra_Governor_11");
 					link.l1.go = "Step_H7_5";
 				break;
+				// Линейка Ле Баска. Четвертый квест.
+			if (pchar.quest.Brides_Tortuga == "Talk_Guber")
+			{
+                link.l3 = StringFromKey("fra_Governor_314", pchar);
+                link.l3.go = "Brides_Tortuga_1";
+            }
 			}
 		break;
 		//******************** французская линейка ***************************
@@ -832,7 +838,7 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 			Pchar.quest.Fr6Olone_GuadeloupeBattle.win_condition.l1.location = "Guadeloupe";
 			Pchar.quest.Fr6Olone_GuadeloupeBattle.win_condition = "Fr6Olone_GuadeloupeBattle";
 			//==> Олоне
-			sld = GetCharacter(NPC_GenerateCharacter("Olone", "BigPirate", "man", "man", 45, FRANCE, -1, false));
+			sld = GetCharacter(NPC_GenerateCharacter("Olone", "Fransua_Olone", "man", "man", 45, FRANCE, -1, false));
 			FantomMakeCoolSailor(sld, SHIP_FRIGATE, FindPersonalName("Olone_ship"), CANNON_TYPE_CULVERINE_LBS24, 85, 80, 80);
 			FantomMakeCoolFighter(sld, 45, 90, 80, "blade28", "pistol5", 130);
 			sld.name = FindPersonalName("Olone_name");
@@ -1440,6 +1446,55 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 			RemoveLandQuestmark_Main(npchar, "Fra_Line");
 			AddLandQuestmark_Main(sld, "Fra_Line");
 			RemoveMapQuestmark("Tortuga_town", "Fra_Line");
+		break;
+
+		// Ле Баск. Четвертый квест.
+		case "Brides_Tortuga_1":
+			RemoveLandQuestmark_Main(npchar, "Brides_Tortuga");
+			dialog.text = StringFromKey("fra_Governor_315");
+			link.l1 = StringFromKey("fra_Governor_316");
+			link.l1.go = "Brides_Tortuga_2";
+		break;
+
+		case "Brides_Tortuga_2":
+			dialog.text = StringFromKey("fra_Governor_317");
+			link.l1 = StringFromKey("fra_Governor_318");
+			link.l1.go = "Brides_Tortuga_3";
+		break;
+
+		case "Brides_Tortuga_3":
+			dialog.text = StringFromKey("fra_Governor_319");
+			link.l1 = StringFromKey("fra_Governor_320");
+			link.l1.go = "Brides_Tortuga_4";
+		break;
+
+		case "Brides_Tortuga_4":
+			dialog.text = StringFromKey("fra_Governor_321");
+			link.l1 = StringFromKey("fra_Governor_322");
+			link.l1.go = "Brides_Tortuga_5";
+		break;
+
+		case "Brides_Tortuga_5":
+			dialog.text = StringFromKey("fra_Governor_323");
+			link.l1 = StringFromKey("fra_Governor_324");
+			link.l1.go = "Brides_Tortuga_6";
+		break;
+
+		case "Brides_Tortuga_6":
+			dialog.text = StringFromKey("fra_Governor_325");
+			link.l1 = StringFromKey("fra_Governor_326");
+			link.l1.go = "Brides_Tortuga_7";
+		break;
+
+		case "Brides_Tortuga_7":
+			dialog.text = StringFromKey("fra_Governor_327");
+			link.l1 = StringFromKey("fra_Governor_328");
+			link.l1.go = "Brides_Tortuga_7_exit";
+		break;
+
+		case "Brides_Tortuga_7_exit":
+			AddDialogExitQuest("Brides_Tortuga_3");
+			dialogexit();
 		break;
 	}
 	UnloadSegment(NPChar.FileDialog2);  // если где-то выход внутри switch  по return не забыть сделать анлод

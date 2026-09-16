@@ -1,0 +1,9 @@
+Gibraltar_Prison_1 {
+Говорите, я слушаю.
+}
+Gibraltar_Prison_2_m {
+Я ошибся. Прощайте.
+}
+Gibraltar_Prison_2_f {
+Я ошиблась. Прощайте.
+}

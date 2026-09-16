@@ -361,6 +361,7 @@ void BLI_SetObjectData()
 	BLI_SetMessageParameters();
 	// текстуры
 	int idLngFile = LanguageOpenFile("commands_name.txt");
+	int nFile = LanguageOpenFile("LocLables.txt");
 	objLandInterface.CommandTextures.list.t0.name = "battle_interface\LandCommands.tga.tx";
 	objLandInterface.CommandTextures.list.t0.xsize = 16;
 	objLandInterface.CommandTextures.list.t0.ysize = 4;
@@ -534,10 +535,19 @@ void BLI_SetObjectData()
 	RecalculateHireCrew(idxloc);  // TODO убрать на таймер
 	if(idxloc>=0 && CheckAttribute(&Locations[idxloc],"fastreload"))
 	{
-        if (idxloc != -1 && CheckAttribute(&Locations[idxloc], "fastreload") && Locations[idxloc].fastreload == "LostShipsCity")
+        if (idxloc != -1 && CheckAttribute(&Locations[idxloc], "fastreload"))
         {
-            objIconsNote.1x1 = LanguageConvertString(idLngFile, "go_fenix");
-            objIconsNote.1x8 = LanguageConvertString(idLngFile, "go_diffIndoor");
+        	if (Locations[idxloc].fastreload == "LostShipsCity")
+        	{
+            	objIconsNote.1x1 = LanguageConvertString(idLngFile, "go_fenix");
+            	objIconsNote.1x8 = LanguageConvertString(idLngFile, "go_diffIndoor");
+        	}
+        	else if (Locations[idxloc].fastreload == "BucaneerOutpost")
+        	{
+				objIconsNote.1x4 = LanguageConvertString(nFile, "LeBasque_House");
+            	objIconsNote.1x8 = LanguageConvertString(nFile, "Bucaneer_outpost");
+				objIconsNote.1x10 = XI_convertString("Shore66");
+        	}
         }
 		outGroupName = Locations[idxloc].fastreload;
 		CreateReloadPaths(outGroupName);
@@ -966,7 +976,6 @@ void BLI_SetObjectData()
 	int nLoc = FindLoadedLocation();
 	if (nLoc >= 0)
 	{
-		int nFile = LanguageOpenFile("LocLables.txt");
 		if (nFile >= 0)
 		{
 			objLandInterface.textinfo.islandname.font = "interface_normal_bold_smallscale";
@@ -1281,18 +1290,22 @@ void BLI_SetPossibleCommands()
 		else if (loadedLocation.fastreload == "LostShipsCity" && !CheckCharacterItem(pchar, "map_LSC")) bTmpBool = false; //в ГПК переход только по карте
 		if (bTmpBool) // всё ещё можно переходить, проверяем город враг
 		{
-		    string sNation = Colonies[FindColony(loadedLocation.fastreload)].nation;
-			if (sNation != "none")
+			int iFastColony = FindColony(loadedLocation.fastreload);
+			if (iFastColony >= 0) // ключ fastreload не колония - вне дипломатии, переход свободен
 			{
-				i = sti(sNation);
-				bTmpBool = (GetNationRelation2MainCharacter(i) == RELATION_ENEMY) || GetRelation2BaseNation(i) == RELATION_ENEMY;
-				if (bTmpBool && (i != PIRATE) && !bBettaTestMode)
+				string sNation = Colonies[iFastColony].nation;
+				if (sNation != "none")
 				{
-					bTmpBool = GetSneakFastReload(); // если есть действующая лицензия, то не запрещаем быстрый переход
-				}
-				else
-				{
-		    		bTmpBool = true;
+					i = sti(sNation);
+					bTmpBool = (GetNationRelation2MainCharacter(i) == RELATION_ENEMY) || GetRelation2BaseNation(i) == RELATION_ENEMY;
+					if (bTmpBool && (i != PIRATE) && !bBettaTestMode)
+					{
+						bTmpBool = GetSneakFastReload(); // если есть действующая лицензия, то не запрещаем быстрый переход
+					}
+					else
+					{
+						bTmpBool = true;
+					}
 				}
 			}
 		}
@@ -1460,7 +1473,7 @@ void BLI_SetPossibleCommands()
 }
 void BLI_RefreshCommandMenu()
 {
-	SendMessage(&objLandInterface,"lllll",BI_IN_SET_COMMAND_MODE,-1,-1,-1,-1,-1);
+	SendMessage(&objLandInterface,"llllll",BI_IN_SET_COMMAND_MODE,-1,-1,-1,-1,-1);
 }*/
 
 void procFindDialogChar()
@@ -1619,6 +1632,7 @@ bool SetReloadIcons()
 					if(townsack == "PuertoPrincipe")objLandInterface.UserIcons.port.location = townsack+"_port";
 					if(townsack == "FortOrange")	objLandInterface.UserIcons.port.location = "Shore35";
 					if(townsack == "LostShipsCity")	objLandInterface.UserIcons.port.enable = false;
+					if(townsack == "BucaneerOutpost") objLandInterface.UserIcons.port.enable = false;
 					if(townsack == "LeFransua" || townsack == "FortOrange") objLandInterface.UserIcons.port.locator = "sea";
 					bUse = true;
 				}
@@ -1667,10 +1681,10 @@ void BLI_UpdateOfficers()
 	SetOfficerTexture(2);
 	SetOfficerTexture(3);
 
-	SendMessage(&objLandInterface, "lls", MSG_BATTLE_LAND_SET_ICONTEX, 0, objLandInterface.Parameters.iconTexture0);
+/*	SendMessage(&objLandInterface, "lls", MSG_BATTLE_LAND_SET_ICONTEX, 0, objLandInterface.Parameters.iconTexture0);
 	SendMessage(&objLandInterface, "lls", MSG_BATTLE_LAND_SET_ICONTEX, 1, objLandInterface.Parameters.iconTexture1);
 	SendMessage(&objLandInterface, "lls", MSG_BATTLE_LAND_SET_ICONTEX, 2, objLandInterface.Parameters.iconTexture2);
-	SendMessage(&objLandInterface, "lls", MSG_BATTLE_LAND_SET_ICONTEX, 3, objLandInterface.Parameters.iconTexture3);
+	SendMessage(&objLandInterface, "lls", MSG_BATTLE_LAND_SET_ICONTEX, 3, objLandInterface.Parameters.iconTexture3);*/
 	//Log_TestInfo("BLI_UpdateOfficers");
 	BLI_UpdateObjectData();
 	LI_CareUpdateCommandList();
@@ -1708,10 +1722,14 @@ int GetPotionTexture(aref arItm)
 // можем ли юзать хоть что то
 bool CanBeUseItem(ref chref)
 {
-	for(int i=0; i<ITEMS_QUANTITY; i++)
+	for (int i = ITEMS_POTIONS; i < ITEMS_JEWELRY; i++)
 	{
-		if( CheckAttribute(&Items[i],"potion") && CheckAttribute(chref,"items."+Items[i].id) ) {
-			if( EnablePotionUsing(chref,&Items[i]) ) return true;
+		if (CheckAttribute(&Items[i], "potion") && CheckAttribute(chref, "items." + Items[i].id))
+		{
+			if (EnablePotionUsing(chref, &Items[i]))
+			{
+				return true;
+			}
 		}
 	}
 	return false;
@@ -1740,7 +1758,7 @@ void LI_ProcessControlPress()
 			}
 		break;
 
-		case "hk_cabin":
+		case "LI_CabinExit":
 			if (bSeaActive && !LAi_IsBoardingProcess()
 			 && objLandInterface.Commands.Exit_Deck.enable != "0" && !GetGlobalTutor())
 			{

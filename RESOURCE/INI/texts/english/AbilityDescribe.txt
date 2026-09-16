@@ -542,6 +542,11 @@ DuglasSchool             {Advanced Musketeer Training}
 perkDuglasSchool          {The character has undergone training according to a complex and rare methodology of elite marksmanship schools of the Old World.
 ~
 Only those who have perfectly mastered this rare classical foundation are capable of using rare and experimental types of muskets.}
+legendGuideRead				{Budding Legend}
+perklegendGuideRead			{You have read a small notebook found by chance, filled with brief but valuable advice.
+~
+Increases base Energy and Health by 5 and 10 points respectively.}
+
 
 							;CHARACTERIZE TRAITS
 

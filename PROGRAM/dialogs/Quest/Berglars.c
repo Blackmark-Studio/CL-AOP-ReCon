@@ -458,7 +458,7 @@ void ProcessDialogEvent()
 			DialogExit();
 		break;
 		case "FirstFight_overAll":
-			LAi_group_Delete("EnemyFight");
+			LAi_group_Delete("BerglarsGang");
 			pchar.questTemp.tugs.berglarState = sti(pchar.questTemp.tugs.berglarState) + 1; //счетчик
 			npchar.SaveItemsForDead = true;
 			npchar.DontClearDead = true;
@@ -483,13 +483,13 @@ void ProcessDialogEvent()
 			LAi_SetCurHPMax(npchar);
 			chrDisableReloadToLocation = true;
 			DeleteAttribute(npchar, "city"); //чтобы не ругались с нацией
-			LAi_group_MoveCharacter(npchar, "EnemyFight");
+			LAi_group_MoveCharacter(npchar, "BerglarsGang");
 			if (npchar.id == "BerglarFortFrance")
 			{
 				GetCharacterPos(pchar, &locx, &locy, &locz);
 				sld = GetCharacter(NPC_GenerateCharacter("Berglars_Helper", "citiz_" + (rand(9) + 51), "man", "man", 18, PIRATE, 0, true)); //watch_quest_moment
 				FantomMakeCoolFighter(sld, 18, 60, 50, BLADE_LONG, "pistol3", 10);
-				LAi_group_MoveCharacter(sld, "EnemyFight");
+				LAi_group_MoveCharacter(sld, "BerglarsGang");
 				ChangeCharacterAddressGroup(sld, npchar.location, "monsters", LAi_FindNearestFreeLocator("monsters", locx, locy, locz));
 			}
 			if (npchar.id == "BerglarPanama")
@@ -497,7 +497,7 @@ void ProcessDialogEvent()
 				GetCharacterPos(pchar, &locx, &locy, &locz);
 				sld = GetCharacter(NPC_GenerateCharacter("Berglars_Helper", "citiz_" + (rand(9) + 51), "man", "man", 21, PIRATE, 0, true)); //watch_quest_moment
 				FantomMakeCoolFighter(sld, 21, 60, 50, BLADE_LONG, "pistol3", 20);
-				LAi_group_MoveCharacter(sld, "EnemyFight");
+				LAi_group_MoveCharacter(sld, "BerglarsGang");
 				ChangeCharacterAddressGroup(sld, npchar.location, "monsters", LAi_FindNearestFreeLocator("monsters", locx, locy, locz));
 			}
 			if (npchar.id == "BerglarSantaCatalina")
@@ -505,12 +505,12 @@ void ProcessDialogEvent()
 				GetCharacterPos(pchar, &locx, &locy, &locz);
 				sld = GetCharacter(NPC_GenerateCharacter("Berglars_Helper", "citiz_" + (rand(9) + 51), "man", "man", 20, PIRATE, 0, true)); //watch_quest_moment
 				FantomMakeCoolFighter(sld, 20, 60, 50, BLADE_LONG, "pistol3", 20);
-				LAi_group_MoveCharacter(sld, "EnemyFight");
+				LAi_group_MoveCharacter(sld, "BerglarsGang");
 				ChangeCharacterAddressGroup(sld, npchar.location, "monsters", LAi_FindNearestFreeLocator("monsters", locx, locy, locz));
 			}
-			LAi_group_SetRelation("EnemyFight", LAI_GROUP_PLAYER, LAI_GROUP_ENEMY);
-			LAi_group_FightGroups("EnemyFight", LAI_GROUP_PLAYER, true);
-			LAi_group_SetCheck("EnemyFight", "OpenTheDoors");
+			LAi_group_SetRelation("BerglarsGang", LAI_GROUP_PLAYER, LAI_GROUP_ENEMY);
+			LAi_group_FightGroups("BerglarsGang", LAI_GROUP_PLAYER, true);
+			LAi_group_SetCheck("BerglarsGang", "BerglarsGangEndFight");
 
 			DialogExit();
 			AddDialogExitQuest("MainHeroFightModeOn");

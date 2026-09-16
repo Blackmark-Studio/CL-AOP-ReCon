@@ -37,3 +37,85 @@ Sí, lo era. Él y su amigo solían pasar mucho tiempo aquí. Estuvo aquí antea
 LaVega_Tavern_11 {
 ¡Gracias!
 }
+
+LaVega_Tavern_12 {
+Vuelvo a preguntar por Nicolas Rimalie.
+}
+LaVega_Tavern_13 {
+Busco a un hombre llamado Nicolas Rimalie. ¿Lo conoces?
+}
+LaVega_Tavern_14 {
+¿Rimalie? Claro que lo conozco. No viene muy a menudo, pero aquí se le respeta. ¿Para qué lo busca?
+}
+LaVega_Tavern_15 {
+Lo busca un viejo amigo suyo, Michel. Dígame, ¿cuándo estuvo Nicolas aquí por última vez?
+}
+LaVega_Tavern_16 {
+Ayer. Pasó la noche en la habitación de arriba. Cenó solo y se marchó al amanecer.
+}
+LaVega_Tavern_17 {
+¿Adónde se dirigió?
+}
+LaVega_Tavern_18 {
+Mil pesos, capitán, y le contaré todo lo que sé.
+}
+LaVega_Tavern_19 {
+Toma. Ahora habla.
+}
+LaVega_Tavern_20 {
+Ahora mismo no tengo tanto dinero.
+}
+LaVega_Tavern_21 {
+Me las arreglaré sin tu ayuda.
+}
+LaVega_Tavern_22 {
+Rimalie tomó una habitación, cenó solo y se marchó al amanecer.
+}
+LaVega_Tavern_23 {
+¿Adónde se dirigió?
+}
+LaVega_Tavern_24 {
+Entonces vuelva cuando los tenga. Aquí hasta el silencio cuesta algo.
+}
+LaVega_Tavern_25 {
+Volveré.
+}
+LaVega_Tavern_26 {
+Como quiera...
+}
+LaVega_Tavern_27 {
+Los malos rumores sobre usted se han calmado. Es más, últimamente solo se oyen cosas buenas. Supongo que podemos prescindir del pago. Rimalie tomó una habitación, cenó solo y se marchó al amanecer.
+}
+LaVega_Tavern_28 {
+¿Adónde se dirigió?
+}
+LaVega_Tavern_29 {
+Bien, capitán, ¿esta vez tiene mil piastras para mí?
+}
+LaVega_Tavern_30 {
+Sí. Toma.
+}
+LaVega_Tavern_31 {
+Todavía no.
+}
+LaVega_Tavern_32 {
+Me las arreglaré.
+}
+LaVega_Tavern_33 {
+Dijo que iba al viejo embarcadero, más allá del asentamiento. No pregunté nada más.
+}
+LaVega_Tavern_34 {
+¿Alguien más lo buscaba?
+}
+LaVega_Tavern_35 {
+Dos forasteros. Uno hablaba con acento español; el otro permaneció callado casi todo el tiempo.
+}
+LaVega_Tavern_36 {
+¿Les dijiste adónde había ido Rimalie?
+}
+LaVega_Tavern_37 {
+Yo no. Pero encontraron a alguien más dispuesto a hablar y poco después salieron tras él.\nY otra cosa... Últimamente Rimalie me compraba el doble de bebida.
+}
+LaVega_Tavern_38 {
+Hm... Bien, gracias.
+}

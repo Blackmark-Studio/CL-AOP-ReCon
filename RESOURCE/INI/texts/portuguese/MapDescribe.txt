@@ -38,6 +38,12 @@ SentJons_TownCave {na masmorra de Saint John's}
 SentJons_TownCave_box1 {sob as tábuas em um beco sem saída}
 SentJons_TownCave_box2 {em um beco sem saída da mina}
 SentJons_TownCave_box3 {no bloqueio}
+SentJons_TownCave_box4 {no bloqueio com uma tocha}
+SantoDomingo_TownCave {na masmorra de Santo Domingo}
+SantoDomingo_TownCave_box1 {sob as tábuas em um beco sem saída}
+SantoDomingo_TownCave_box2 {em um beco sem saída da mina}
+SantoDomingo_TownCave_box3 {no bloqueio}
+SantoDomingo_TownCave_box4 {no bloqueio com uma tocha}
 Barbados_Cave {em uma caverna perto de Bridgetown}
 Barbados_Cave_box1 {sob as tábuas em um beco sem saída}
 Beliz_Cave {em uma caverna à direita da saída de Belize}
@@ -123,7 +129,7 @@ Tortuga_Grot {em uma caverna em frente à Fisheye Beach}
 Tortuga_Grot_box1 {um baú na praia}
 Tortuga_Cave {em uma masmorra de Tortuga}
 Tortuga_Cave_box1 {um baú atrás de uma porta trancada}
-Trinidad_Grot {em uma caverna em frente ao farol de Trinidad e Tobago}
+Trinidad_Grot {em uma caverna em frente ao farol de Trinidad}
 Trinidad_Grot_box1 {um baú na praia}
 FortFrance_Dungeon {em uma masmorra de Fort-de-France}
 FortFrance_Dungeon_box1 {um baú na elevação}
@@ -133,3 +139,5 @@ FortFrance_Dungeon_box4 {um baú atrás de uma porta aberta no nível inferior}
 FortFrance_Dungeon_box5 {debaixo das caixas de madeira}
 Providence_Cavern {na caverna que liga Morgan's Head à ilha Old Providence}
 Providence_Cavern_box1 {um baú atrás de estalagmites em um beco sem saída}
+Aruba_Grot           {em uma caverna no interior da ilha, perto da aldeia caribe}
+Aruba_Grot_box1       {baú acima da grande pedra}

@@ -1,0 +1,111 @@
+ArubaIndian_dialog_1 {
+Nie mamy o czym rozmawiać!
+}
+ArubaIndian_dialog_2_m {
+Blada twarz chce mówić?
+}
+ArubaIndian_dialog_2_f {
+Biała squaw chce mówić?
+}
+ArubaIndian_dialog_3_m {
+Znowu ty, blada twarzy.
+}
+ArubaIndian_dialog_3_f {
+Znowu ty, biała squaw.
+}
+ArubaIndian_dialog_4_m {
+Blada twarz lubi mówić. Jest jak squaw.
+}
+ArubaIndian_dialog_4_f {
+Biała squaw lubi mówić.
+}
+ArubaIndian_dialog_5_m {
+Duchy przyprowadziły do mnie bladego brata.
+}
+ArubaIndian_dialog_5_f {
+Duchy przyprowadziły do mnie bladą siostrę.
+}
+ArubaIndian_dialog_6 {
+Tak.
+}
+ArubaIndian_dialog_7 {
+Tak, znowu ja.
+}
+ArubaIndian_dialog_8 {
+Bardzo poetycko.
+}
+ArubaIndian_dialog_9_m {
+Ja też się cieszę, że cię widzę.
+}
+ArubaIndian_dialog_9_f {
+Ja też się cieszę, że cię widzę.
+}
+ArubaIndian_dialog_10_m {
+Mów. Po co przyszedłeś?
+}
+ArubaIndian_dialog_10_f {
+Mów. Po co przyszłaś?
+}
+ArubaIndian_dialog_11_m {
+Nic szczególnego. Chciałem tylko cię posłuchać...
+}
+ArubaIndian_dialog_11_f {
+Nic szczególnego. Chciałam tylko cię posłuchać...
+}
+ArubaIndian_dialog_12_m {
+Biały człowiek chce mówić?
+}
+ArubaIndian_dialog_12_f {
+Biała squaw chce mówić?
+}
+ArubaIndian_dialog_13 {
+Znowu ty, yalanaui?
+}
+ArubaIndian_dialog_14_m {
+Blada twarz lubi mówić.
+}
+ArubaIndian_dialog_14_f {
+Blada twarz lubi mówić.
+}
+ArubaIndian_dialog_15_m {
+Duchy przyprowadziły do mnie bladego brata...
+}
+ArubaIndian_dialog_15_f {
+Duchy przyprowadziły do mnie białą squaw...
+}
+ArubaIndian_dialog_16_m {
+@<npchar.name> słucha cię, synu morza.
+}
+ArubaIndian_dialog_16_f {
+@<npchar.name> słucha cię, córko morza.
+}
+ArubaIndian_dialog_17_m {
+Czego chcesz od @<npchar.name>, blada twarzy?
+}
+ArubaIndian_dialog_17_f {
+Czego chcesz od @<npchar.name>, blada twarzy?
+}
+ArubaIndian_dialog_18_m {
+Moje uszy są otwarte na twoje słowa, przybyszu.
+}
+ArubaIndian_dialog_18_f {
+Moje uszy są otwarte na twoje słowa, przybyszko.
+}
+ArubaIndian_dialog_19_m {
+Nic szczególnego. Chciałem tylko cię posłuchać...
+}
+ArubaIndian_dialog_19_f {
+Nic szczególnego. Chciałam tylko cię posłuchać...
+}
+ArubaIndian_dialog_20 {
+Schowaj broń, yalanaui, zanim zmusimy cię do tego!
+}
+ArubaIndian_dialog_21 {
+Dobrze.
+}
+ArubaIndian_dialog_22 {
+W porządku.
+}
+ArubaIndian_dialog_23 {
+Spokojnie, już ją chowam...
+}

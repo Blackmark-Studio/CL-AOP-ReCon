@@ -23,7 +23,7 @@ questNPC_8 {
 @<LinkRandPhrase>
 }
 questNPC_9 {
-Oto on – łap go!
+Oto on - łap go!
 }
 questNPC_10 {
 Łapcie go, chłopaki!
@@ -80,10 +80,10 @@ questNPC_27 {
 Wykonuję zlecenie pułkownika Bishopa.
 }
 questNPC_28 {
-Ach, to pan, doktorze Blood. To pan mnie leczył, kiedy zostałem odesłany z "Pride of Devon".
+Ach, to pan, doktorze Blood. Od razu pana rozpoznałem.
 }
 questNPC_29 {
-Cieszę się, że wyzdrowiałeś.
+Masz bystre oko, żołnierzu.
 }
 questNPC_30 {
 Odejdź, niewolniku!
@@ -125,7 +125,7 @@ questNPC_42 {
 @<RandPhraseSimple>
 }
 questNPC_43 {
-Muszę się gdzieś dostać — czy poleciłby pan jakiegoś godnego kapitana?
+Muszę się gdzieś dostać - czy poleciłby pan jakiegoś godnego kapitana?
 }
 questNPC_44 {
 Szukam kapitana, który za rozsądną opłatą przewiezie mojego przyjaciela w pewne miejsce. Czy znasz kogoś odpowiedniego?
@@ -290,7 +290,7 @@ questNPC_95 {
 Dzięki, przyjacielu.
 }
 questNPC_96 {
-Wpadł do tawerny jak burza – tam go szukaj. Nie zapomnij zajrzeć pod stoły.
+Wpadł do tawerny jak burza - tam go szukaj. Nie zapomnij zajrzeć pod stoły.
 }
 questNPC_97 {
 Niedawno wszedł do tawerny, chyba. Jeśli dobrze pamiętam, nie wychodził.
@@ -455,7 +455,7 @@ questNPC_150 {
 Witam, panie Blood, cieszę się, że widzę pana w dobrym zdrowiu. W tym stanie, w jakim przybył pan na plantację, długo by pan nie pociągnął. Dobrze, że razem z chłopakami jakoś pana opatrzyliśmy, choć lekarzami nie jesteśmy.\nA pan, zdaje się, jest lekarzem, prawda? Może dałby mi pan jakiś środek na ból głowy? Bo czasem po tej przeklętej burzy głowa boli mnie nie do wytrzymania. I po co tylko kapitan tam popłynął...
 }
 questNPC_151 {
-Oczywiście, Sandro, po tym, co ty i Hopkins zrobiliście dla mnie i chłopaków, moim obowiązkiem jest wam pomóc. Proszę, weź tę miksturę – wyleczy twoją migrenę.
+Oczywiście, Sandro, po tym, co ty i Hopkins zrobiliście dla mnie i chłopaków, moim obowiązkiem jest wam pomóc. Proszę, weź tę miksturę - wyleczy twoją migrenę.
 }
 questNPC_152 {
 Niestety, nie mam nic na ból głowy, Sandro. A pułkownik Bishop raczej nie da pieniędzy na potrzebne lekarstwo, bo uważa, że wszystkie choroby jego niewolników biorą się z lenistwa. Niestety mogę tylko doradzić, żebyś odpoczywał, kiedy tylko się da.
@@ -479,13 +479,13 @@ questNPC_158 {
 Nie, jeszcze nie udało mi się zdobyć potrzebnej mikstury.
 }
 questNPC_159 {
-Dziękuję wam! W dowód wdzięczności przyjmijcie ten sztylet — długo ukrywałem go przed nadzorcami, ale myślę, że wam przyda się bardziej. W obecnej sytuacji...
+Dziękuję wam! W dowód wdzięczności przyjmijcie ten sztylet - długo ukrywałem go przed nadzorcami, ale myślę, że wam przyda się bardziej. W obecnej sytuacji...
 }
 questNPC_160 {
 Tak, ale niewolnikom nie wolno posiadać broni? I o jakiej sytuacji mówisz?
 }
 questNPC_161 {
-Proszę się nie martwić, doktorze, łatwo to ukryć pod ubraniem, więc nikt niczego nie zauważy. Chyba że zacznie pan tym machać przed żołnierzami. A przyjdzie taki moment, że trzeba będzie pomachać, i domyślam się po co... Ale nie zdradzę pana, proszę się nie obawiać – jestem po pańskiej stronie.
+Proszę się nie martwić, doktorze, łatwo to ukryć pod ubraniem, więc nikt niczego nie zauważy. Chyba że zacznie pan tym machać przed żołnierzami. A przyjdzie taki moment, że trzeba będzie pomachać, i domyślam się po co... Ale nie zdradzę pana, proszę się nie obawiać - jestem po pańskiej stronie.
 }
 questNPC_162 {
 Dziękuję ci, przyjacielu, radzę porozmawiać z Jeremym. Wracaj do zdrowia!
@@ -632,7 +632,7 @@ questNPC_209 {
 Stary pies mnie nie zdradzi. Jak oni dostali się do miasta?
 }
 questNPC_210 {
-Hiszpański statek zacumował – przypłynęli nim.
+Hiszpański statek zacumował - przypłynęli nim.
 }
 questNPC_211 {
 Przedostali się do miasta nocą przez dżunglę.
@@ -695,10 +695,10 @@ questNPC_230 {
 Jakiego wcześniej nie było? No dobrze, wypijmy jeszcze za TAKIE!
 }
 questNPC_231 {
-Nie? Nie ma ryb?! Trzeba znać odpowiednie miejsca, gamoniu! Znalazłem wyjątkowe miejsce... sieć po jednej nocy aż pęka w szwach — Bóg mi świadkiem!
+Nie? Nie ma ryb?! Trzeba znać odpowiednie miejsca, gamoniu! Znalazłem wyjątkowe miejsce... sieć po jednej nocy aż pęka w szwach - Bóg mi świadkiem!
 }
 questNPC_232 {
-Miejsca... ja też szukałem miejsc, wszędzie próbowałem... nie ma tu ryb, nie ma też miejsc. Do diabła z łowieniem ryb – to nieopłacalne zajęcie!
+Miejsca... ja też szukałem miejsc, wszędzie próbowałem... nie ma tu ryb, nie ma też miejsc. Do diabła z łowieniem ryb - to nieopłacalne zajęcie!
 }
 questNPC_233 {
 Napijmy się... A to... to miejsce... ono...
@@ -815,7 +815,7 @@ questNPC_270 {
 To właśnie coś, co również bardzo by mi się przydało.
 }
 questNPC_271 {
-Myślisz, że to rozsądne — wdawać się w walkę z piratem?.. Moim zdaniem, to nie leży w twoim interesie. A skoro tak, to słuchaj uważnie:\nZnajdź kogoś, kto zgodzi się przewieźć mnie do Port Royal za trzy tysiące, a ja dam ci półtora tysiąca. Zgoda? W twojej sytuacji każdy dodatkowy piastr się przyda.
+Myślisz, że to rozsądne - wdawać się w walkę z piratem?.. Moim zdaniem, to nie leży w twoim interesie. A skoro tak, to słuchaj uważnie:\nZnajdź kogoś, kto zgodzi się przewieźć mnie do Port Royal za trzy tysiące, a ja dam ci półtora tysiąca. Zgoda? W twojej sytuacji każdy dodatkowy piastr się przyda.
 }
 questNPC_272 {
 Tak... Kusząca propozycja. I nie mam wielkiego wyboru. Zgoda.
@@ -824,7 +824,7 @@ questNPC_273 {
 Wiesz co, idź już... Zawracaj głowę młodym głupcom! Na dziś mam już dość.
 }
 questNPC_274 {
-Świetnie. Jeden warunek, mon chéri – żadnych imion. To znaczy, swoje możesz podać, jeśli chcesz... ale mojego... Powiedz, że je zapomniałeś... Albo lepiej, powiedz, że jestem piękną młodą panną! Powiedzmy... Taylor. Tak, Taylor. Rozumiesz?
+Świetnie. Jeden warunek, mon chéri - żadnych imion. To znaczy, swoje możesz podać, jeśli chcesz... ale mojego... Powiedz, że je zapomniałeś... Albo lepiej, powiedz, że jestem piękną młodą panną! Powiedzmy... Taylor. Tak, Taylor. Rozumiesz?
 }
 questNPC_275 {
 Młoda panna?.. Dobrze, coś wymyślę.
@@ -836,7 +836,7 @@ questNPC_277 {
 Korweta „Floating Briton” kapitana Johna Minera już na ciebie czeka.
 }
 questNPC_278 {
-Cóż mogę powiedzieć – ukłon i wielkie dzięki dla ciebie, o...
+Cóż mogę powiedzieć - ukłon i wielkie dzięki dla ciebie, o...
 }
 questNPC_279 {
 Tysiąc pięćset, Jacques.
@@ -869,7 +869,7 @@ questNPC_288 {
 Czy mogę poznać imię pańskiego przyjaciela, panie Blood?
 }
 questNPC_289 {
-Oczywiście. On nazywa się... ona... w każdym razie tak – to właściwie ona...
+Oczywiście. On nazywa się... ona... w każdym razie tak - to właściwie ona...
 }
 questNPC_290 {
 Oczywiście. Nazywa się Jacques Nightingale, słyszałeś o nim?..
@@ -893,7 +893,7 @@ questNPC_296 {
 Nie? Jak mam się zgodzić zabrać pasażera, skoro nawet nie znam jego imienia?!
 }
 questNPC_297 {
-Możecie jak najbardziej. Powiedzmy, że chodzi o pewną pannę Taylor... Tak, właśnie tak – pannę Taylor, która da wam trzy tysiące srebrnych, jeśli przestaniecie zadawać pytania.
+Możecie jak najbardziej. Powiedzmy, że chodzi o pewną pannę Taylor... Tak, właśnie tak - pannę Taylor, która da wam trzy tysiące srebrnych, jeśli przestaniecie zadawać pytania.
 }
 questNPC_298 {
 Dobrze, zabiorę go... Ją. Przekażcie mojej przyszłej pasażerce, że "Floating Briton" jest gotowy do wypłynięcia.
@@ -902,7 +902,7 @@ questNPC_299 {
 Dziękuję.
 }
 questNPC_300 {
-Trzeba było tak od razu mówić! Umowa stoi – czekam na pannę Taylor na pokładzie.
+Trzeba było tak od razu mówić! Umowa stoi - czekam na pannę Taylor na pokładzie.
 }
 questNPC_301 {
 Przekażę jej. Wszystkiego dobrego, kapitanie.
@@ -914,29 +914,45 @@ questNPC_303 {
 Mam nadzieję, że jesteście gotowi stanąć przed swoim Stwórcą?
 }
 questNPC_304 {
-Uratowaliście mnie? Kim jesteście?!
+K-kim jesteście?
 }
 questNPC_305 {
-Jestem Peter Blood, yyy... miejscowy lekarz. Zamierzasz czekać, aż pokażę ci swoje dokumenty? I co tu się, do diabła, dzieje?
+Zamierzacie czekać, aż pokażę wam dokumenty? Niebezpiecznie tu zostać. Chodźcie za mną.
 }
 questNPC_306 {
-Hiszpanie... oni... Ten duży okręt, któremu dziś pozwolono tak spokojnie wpłynąć do naszej zatoki pod obcą banderą, okazał się hiszpańskim korsarzem. Jego podstęp z flagą pozostał niezauważony do tego stopnia, że nie wzbudzając żadnych podejrzeń, bez przeszkód wpłynął do zatoki i oddał salwę burtową z dwudziestu dział prosto w fort...
+Hiszpanie... Oni... Ten wielki okręt... Spokojnie wpłynął do naszej zatoki pod fałszywą banderą... A potem... on... oni... ci Hiszpanie... (płacze) Podeszli pod sam fort i wystrzelili ze wszystkich dział...
 }
 questNPC_307 {
-A teraz, jak rozumiem, załoga tego korsarza plądruje miasto?
+A teraz plądrują miasto?
 }
 questNPC_308 {
-Tak, o zachodzie słońca nasz garnizon się poddał i dwustu pięćdziesięciu Hiszpanów zostało gospodarzami Bridgetown.
+Tak... Te dranie... Oni... zostali panami Bridgetown.
 }
 questNPC_309 {
-To się właśnie nazywa interwencją losu w odpowiednim momencie. Choć tylko diabeł wie, co z tego wszystkiego wyniknie! A wy – uciekajcie do lasu i ukryjcie się, dopóki Hiszpanie nie opuszczą miasta.
+Nie możecie tu zostać. Chodźcie za mną - i postarajcie się nie zostawać w tyle.
 }
 questNPC_310 {
-Kapitanie Hobart! Według informacji od zwiadowców, w tej posiadłości ukrywają się zbiegli buntownicy. Do twojej dyspozycji jest pięciu dragonów – przeszukaj dom i pojmij wszystkich, których tam zastaniesz! Nie musisz się z nimi cackać, działasz w imieniu króla!
+Kapitanie Hobart! Według informacji od zwiadowców, w tej posiadłości ukrywają się zbiegli buntownicy. Do twojej dyspozycji jest pięciu dragonów - przeszukaj dom i pojmij wszystkich, których tam zastaniesz! Nie musisz się z nimi cackać, działasz w imieniu króla!
 }
 questNPC_311 {
 Jest, sir!
 }
 questNPC_312 {
 Słyszeliście, co powiedział pułkownik? Rebelianci się tu ukrywają! Przeszukać cały dom, przewrócić wszystko do góry nogami i schwytać wszystkich, którzy tam są! Naprzód!
+}
+
+questNPC_313 {
+C-czy idziemy na plantacje pułkownika Bishopa?
+}
+
+questNPC_314 {
+Lepiej trzymać się z dala od miasta. A teraz powiedzcie mi, co się tam wydarzyło.
+}
+
+questNPC_315 {
+Ten przeklęty gubernator... Mam nadzieję, że dziś dostanie to, na co zasłużył. To przez niego wciąż tu tkwimy.
+}
+
+questNPC_316 {
+Jeśli to was pocieszy, podagra nie pozwoli mu cieszyć się życiem, bez względu na to, ile mu go jeszcze zostało.
 }

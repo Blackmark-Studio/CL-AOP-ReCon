@@ -1,4 +1,5 @@
 // boal 10.06.05
+// KZ > ref 10.03.24
 //	 DICE GAME
 int scx, scy, spx, spy, sgxy, ssxy, smxy;
 int move_i, dir_i, dir_i_start, x_rand, y_rand, r_delta;
@@ -18,7 +19,142 @@ object	DiceState;
 bool  bLockClick;
 bool  bSetRandDice; // жухло компа
 
+// > кон уже подсчитан: ставки разошлись, штрафовать за выход больше не за что
+bool  bRoundDone;
+
 string ResultStr;
+
+// > кэш, чтобы не дёргать движок вхолостую
+int  iPackX1, iPackY1, iPackX2, iPackY2;
+int  iDiceLineX, iDiceLineY;
+
+string sHeroDiceShown[6];
+string sCompDiceShown[6];
+bool   bDiceOnTable;
+int    iClearMoneyP, iClearMoneyN;
+
+string sTxtInfo, sTxtBtn1, sTxtTime, sTxtSessTime;
+string sTxtWins, sTxtLoses, sTxtWinMoney, sTxtLoseMoney, sTxtDiff;
+
+int    iSessMinCached;
+string sSessTimeCached;
+
+// > Перелёт выигранных монет (ставки со стола и банк) на портрет победителя.
+float fCoinFlyTime;    // > сколько летит одна монета, сек
+float fCoinFlyDelay;   // > на сколько позже стартует следующая монета, сек
+float fCoinFlyMax;     // > под этот потолок ужимается разбег стартов, сек
+float fCoinFlyEndSize; // > размер монеты у портрета, доля от исходного
+int   iCoinFlyBank;    // > сколько монет вылетает из банка (0 - выключить)
+
+float fCoinFlyStep;    // > фактический сдвиг стартов, ужат под потолок
+
+bool  bCoinFly;         // > анимация идёт
+int   iCoinFlyNum;      // > всего монет в полёте
+int   iCoinFlyBankN;    // > из них монет банка (летят первыми)
+int   iCoinFlyP;        // > монет ГГ (следом за банком)
+int   iCoinFlyN;        // > монет соперника (последними)
+int   iCoinFlyDone;     // > монеты левее этого номера уже долетели
+float fCoinFlyTimer;    // > накопленное реальное время, сек
+float fCoinFlyTotal;    // > сколько всего длится анимация, сек
+int   iCoinFlyToX, iCoinFlyToY;  // > центр портрета победителя
+int   iCoinFlySize;     // > сторона монеты на старте
+int   iCoinFlyX, iCoinFlyY;      // > результат CoinFlySetStart
+
+// > Портрет победителя "подрастает" от каждой прилетевшей монеты, а когда прилетела последняя - так же плавно возвращается к исходному размеру.
+float fPortrGrowStep;  // > на сколько подрастает портрет от одной монеты (доля)
+float fPortrGrowMax;   // > потолок увеличения (пример: 0.30 = не больше чем +30%)
+float fPortrGrowUp;    // > сек на разгон от исходного размера до потолка
+float fPortrGrowBack;  // > сек на возврат от потолка к исходному размеру
+
+// > Мигание портрета при прилёте монеты.
+bool  bPortrBlink;     // > мигание включено
+float fPortrBlinkTime; // > сколько длится одна вспышка, сек
+float fPortrBlinkHold; // > доля вспышки на удержании яркости (0 - сразу гаснет, 0.9 - почти вся)
+int   iPortrBlinkR, iPortrBlinkG, iPortrBlinkB; // > цвет на пике вспышки
+int   iPortrRestR,  iPortrRestG,  iPortrRestB;  // > цвет портрета в покое
+
+int   iPortr1X1, iPortr1Y1, iPortr1X2, iPortr1Y2; // > исходный прямоугольник ICON_1
+int   iPortr2X1, iPortr2Y1, iPortr2X2, iPortr2Y2; // > исходный прямоугольник ICON_2
+
+string sPortrNode;      // > какой портрет сейчас растёт, "" - никакой
+int   iPortrX1, iPortrY1, iPortrX2, iPortrY2; // > его исходный прямоугольник
+float fPortrCur;        // > текущее увеличение, доля
+float fPortrTarget;     // > к какому увеличению идём
+bool  bPortrBack;       // > последняя монета прилетела, идёт возврат
+float fPortrBlinkLeft;  // > сколько ещё гореть вспышке, сек
+int   iPortrShownW, iPortrShownH; // > последний отправленный движку прирост
+int   iPortrColorShown; // > последний отправленный цвет
+
+// > неизменные за сеанс строки из common.ini
+string sLngWin, sLngLose, sLngMoneyWin, sLngMoneyLose, sLngTimePassed, sLngDifference;
+string sLngEndTurn, sLngBets, sLngNext_4, sLngNoMore;
+string sLngTurn_1, sLngTurn_4, sLngTurn_5, sLngTurn_6, sLngTurn_7, sLngTurn_8, sLngTurn_9;
+string sLngTurnNPC_4, sLngTurnNPC_5, sLngTurnNPC_6;
+string sLngDiceState[9];
+
+//> сброс всех кэшей сегмента (лезут в глобал)
+void ResetInterfaceCache()
+{
+	int i;
+	for (i = 1; i <= 5; i++)
+	{
+		sHeroDiceShown[i] = "";
+		sCompDiceShown[i] = "";
+	}
+	bDiceOnTable = false;
+	iClearMoneyP = 0;
+	iClearMoneyN = 0;
+
+	sTxtInfo      = "";
+	sTxtBtn1      = "";
+	sTxtTime      = "";
+	sTxtSessTime  = "";
+	sTxtWins      = "";
+	sTxtLoses     = "";
+	sTxtWinMoney  = "";
+	sTxtLoseMoney = "";
+	sTxtDiff      = "";
+
+	iSessMinCached  = -1;
+	sSessTimeCached = "";
+
+	// > прошлый сеанс мог закрыться в момент перелёта монет
+	bCoinFly     = false;
+	iCoinFlyNum  = 0;
+	iCoinFlyDone = 0;
+}
+
+// > один и тот же текст движку второй раз не шлём
+void SetInfoText(string sText)
+{
+	if (sTxtInfo == sText) return;
+	sTxtInfo = sText;
+	SetFormatedText("INFO_TEXT", sText);
+}
+
+void SetBtnText(string sText)
+{
+	if (sTxtBtn1 == sText) return;
+	sTxtBtn1 = sText;
+	SetFormatedText("B_TEXT_1", sText);
+}
+
+// > обе "часовые" строки разом, с отсевом повторов
+void SetTimeTexts()
+{
+	string sTmp = GetQuestBookData();
+	if (sTxtTime != sTmp)
+	{
+		sTxtTime = sTmp;
+		SetFormatedText("TIME_TEXT", sTmp);
+	}
+	sTmp = GetSessionTime();
+	if (sTxtSessTime != sTmp)
+	{
+		sTxtSessTime = sTmp;
+		SetFormatedText("STATS_TIME_TEXT", sTmp);
+	}
+}
 
 void InitInterface(string iniName)
 {
@@ -75,6 +211,7 @@ void InitInterface(string iniName)
 	y_rand = -1;
 
 	openExit = false;  // можно ли прервать игру
+	bRoundDone = false;
 
 	pchar = GetMainCharacter();
 
@@ -125,36 +262,108 @@ void InitInterface(string iniName)
 		smxy = ssxy;
 	}
 
+	// > Скорость перелёта монет. fCoinFlyTime = 0.0 выключает анимацию.
+	fCoinFlyTime    = 0.55;
+	fCoinFlyDelay   = 0.04;
+	fCoinFlyMax     = 1.60;
+	fCoinFlyEndSize = 0.55;
+	iCoinFlyBank    = 0;
+
+	if (CheckAttribute(pchar, "GenQuest.Dice.CoinFlyTime"))  fCoinFlyTime  = stf(pchar.GenQuest.Dice.CoinFlyTime);
+	if (CheckAttribute(pchar, "GenQuest.Dice.CoinFlyDelay")) fCoinFlyDelay = stf(pchar.GenQuest.Dice.CoinFlyDelay);
+	if (CheckAttribute(pchar, "GenQuest.Dice.CoinFlyMax"))   fCoinFlyMax   = stf(pchar.GenQuest.Dice.CoinFlyMax);
+	if (CheckAttribute(pchar, "GenQuest.Dice.CoinFlyBank"))  iCoinFlyBank  = sti(pchar.GenQuest.Dice.CoinFlyBank);
+	if (CheckAttribute(pchar, "GenQuest.Dice.CoinFlyEndSize")) fCoinFlyEndSize = stf(pchar.GenQuest.Dice.CoinFlyEndSize);
+
+	if (fCoinFlyDelay < 0.0) fCoinFlyDelay = 0.0;
+	if (fCoinFlyEndSize < 0.05) fCoinFlyEndSize = 0.05;
+	if (iCoinFlyBank < 0)  iCoinFlyBank = 0;  // > атрибут задаёт кто угодно,
+	if (iCoinFlyBank > 12) iCoinFlyBank = 12; // > а картинки заводим мы
+
+	// > Портрет победителя: рост от каждой монеты и возврат после последней.
+	// > fPortrGrowMax = 0.0 выключает рост, bPortrBlink = false выключает мигание.
+	fPortrGrowStep  = 0.09;
+	fPortrGrowMax   = 0.35;
+	fPortrGrowUp    = 0.18;
+	fPortrGrowBack  = 0.35;
+
+	bPortrBlink     = true;
+	fPortrBlinkTime = 0.22;
+	fPortrBlinkHold = 0.25;
+	iPortrBlinkR = 255; iPortrBlinkG = 245; iPortrBlinkB = 170; // > тёплая вспышка
+	// > цвет покоя
+	iPortrRestR  = 128; iPortrRestG  = 128; iPortrRestB  = 128;
+
+	if (CheckAttribute(pchar, "GenQuest.Dice.PortrGrowStep"))  fPortrGrowStep  = stf(pchar.GenQuest.Dice.PortrGrowStep);
+	if (CheckAttribute(pchar, "GenQuest.Dice.PortrGrowMax"))   fPortrGrowMax   = stf(pchar.GenQuest.Dice.PortrGrowMax);
+	if (CheckAttribute(pchar, "GenQuest.Dice.PortrGrowUp"))    fPortrGrowUp    = stf(pchar.GenQuest.Dice.PortrGrowUp);
+	if (CheckAttribute(pchar, "GenQuest.Dice.PortrGrowBack"))  fPortrGrowBack  = stf(pchar.GenQuest.Dice.PortrGrowBack);
+	if (CheckAttribute(pchar, "GenQuest.Dice.PortrBlink"))     bPortrBlink     = sti(pchar.GenQuest.Dice.PortrBlink);
+	if (CheckAttribute(pchar, "GenQuest.Dice.PortrBlinkTime")) fPortrBlinkTime = stf(pchar.GenQuest.Dice.PortrBlinkTime);
+	if (CheckAttribute(pchar, "GenQuest.Dice.PortrBlinkHold")) fPortrBlinkHold = stf(pchar.GenQuest.Dice.PortrBlinkHold);
+
+	// > на эти числа делим
+	if (fPortrGrowStep  < 0.0)  fPortrGrowStep  = 0.0;
+	if (fPortrGrowMax   < 0.0)  fPortrGrowMax   = 0.0;
+	if (fPortrGrowUp    < 0.01) fPortrGrowUp    = 0.01;
+	if (fPortrGrowBack  < 0.01) fPortrGrowBack  = 0.01;
+	if (fPortrBlinkTime < 0.01) fPortrBlinkTime = 0.01;
+	if (fPortrBlinkHold < 0.0)  fPortrBlinkHold = 0.0;
+	if (fPortrBlinkHold > 0.9)  fPortrBlinkHold = 0.9;
+
+	sPortrNode = "";
+
+	// > B_PACK всегда неподвижен, запоминаем его прямоугольник один раз, дальше MoveImg берёт его из кэша
+	ResetInterfaceCache();
+	GetNodePosition("B_PACK", &iPackX1, &iPackY1, &iPackX2, &iPackY2);
+
+	// > исходные размеры портретов запоминаем один раз, пока их никто не растягивал
+	GetNodePosition("ICON_1", &iPortr1X1, &iPortr1Y1, &iPortr1X2, &iPortr1Y2);
+	GetNodePosition("ICON_2", &iPortr2X1, &iPortr2Y1, &iPortr2X2, &iPortr2Y2);
+
+	int x1, y1, x2, y2;
+	GetNodePosition("B_HeroDice1", &x1, &y1, &x2, &y2);
+	iDiceLineX = x1 - 16;
+	iDiceLineY = y1 - 11;
+
 	for(i = 1; i<=5; i++)
 	{
 		XI_MakeNode("resource\ini\interfaces\defaultnode.ini", "PICTURE", "HeroDice" + i, 100);
 		SetNodeUsing("HeroDice" + i, false);
 		XI_MakeNode("resource\ini\interfaces\defaultnode.ini", "PICTURE", "CompDice" + i, 100);
 		SetNodeUsing("CompDice" + i, false);
+		// > ряды кубиков стоят на месте всю игру, расставим их один раз
+		SetNodePosition("HeroDice" + i, iDiceLineX + 80 * (i - 1), iDiceLineY, iDiceLineX + 80 * (i - 1) + scx, iDiceLineY + scy);
+		SetNodePosition("CompDice" + i, iDiceLineX + 80 * (i - 1), iDiceLineY - 444, iDiceLineX + 80 * (i - 1) + scx, iDiceLineY - 444 + scy);
 	}
 
 	XI_MakeNode("resource\ini\interfaces\defaultnode.ini", "PICTURE", "DiceCup", 100);
 	SetNewGroupPicture("DiceCup", "DICE", "cup");
 
-	int x1, y1, x2, y2;
-	GetNodePosition("B_PACK", &x1, &y1, &x2, &y2);
-	x1 = x1 - 91;
-	y1 = y1 - 38;
+	x1 = iPackX1 - 91;
+	y1 = iPackY1 - 38;
 	x2 = x1 + spx;
 	y2 = y1 + spy;
 	SetNodePosition("DiceCup", x1, y1, x2, y2);
 
 	CreateImage("GOLD","GOLD","GOLD", 482,444,524,486);
 
-	if (CheckAttribute(npchar, "faceId") && sti(npchar.faceId) > 1 && FindFile("RESOURCE\\Textures\\interfaces\\PORTRAITS\\64\\", "face_" + npchar.faceId + ".tga.tx", "*.tx", true))
-		SetNewPicture("ICON_1", "interfaces\PORTRAITS\64\face_" + npchar.faceId + ".tga");
+	string sFace = "interfaces\PORTRAITS\64\face_";
 
-	SetNewPicture("ICON_2", "interfaces\PORTRAITS\64\face_" + pchar.faceId+ ".tga");
+	if (CheckAttribute(npchar, "faceId") && sti(npchar.faceId) > 1)
+	{
+		string sPic = sFace + npchar.faceId + ".tga";
+
+		if (XI_CheckFolder("RESOURCE\\Textures\\" + sPic + ".tx") || XI_CheckFolder("RESOURCE\\Textures\\" + sPic))
+			SetNewPicture("ICON_1", sPic);
+	}
+
+	SetNewPicture("ICON_2", sFace + pchar.faceId + ".tga");
 
 	CreateString(true,"Money","",FONT_NORMAL,COLOR_MONEY,613,508,SCRIPT_ALIGN_CENTER,1.1);
 	CreateString(true,"MoneyInChest","",FONT_NORMAL,COLOR_MONEY,615,452,SCRIPT_ALIGN_CENTER,1.3);
 
-	if (rand(1) == 1)
+	if (rand(1))
 	{
 		dir_i  = -1;  // кто ходит - комп
 	}
@@ -179,11 +388,38 @@ void InitInterface(string iniName)
 	iHeroLose = 0;
 	iHeroWin  = 0;
 	iTurnGame = 0;
+
+	// > все неизменные строки читаем из common.ini один раз и более не дёргаем движок линейными поисками
+	sLngWin        = XI_ConvertString("BoalGameWin");
+	sLngLose       = XI_ConvertString("BoalGameLose");
+	sLngMoneyWin   = XI_ConvertString("BoalGameMoneyWin");
+	sLngMoneyLose  = XI_ConvertString("BoalGameMoneyLose");
+	sLngTimePassed = XI_ConvertString("BoalGameTimePassed");
+	sLngDifference = XI_ConvertString("BoalGameDifference");
+	sLngEndTurn    = XI_ConvertString("BoalGameEndTurn");
+	sLngBets       = XI_ConvertString("BoalGameBets");
+	sLngNext_4     = XI_ConvertString("BoalGameCheckGame_4");
+	sLngNoMore     = XI_ConvertString("BoalGameCheckGame_5");
+	sLngTurn_1     = XI_ConvertString("BoalGameTurn_1");
+	sLngTurn_4     = XI_ConvertString("BoalGameTurn_4");
+	sLngTurn_5     = XI_ConvertString("BoalGameTurn_5");
+	sLngTurn_6     = XI_ConvertString("BoalGameTurn_6");
+	sLngTurn_7     = XI_ConvertString("BoalGameTurn_7");
+	sLngTurn_8     = XI_ConvertString("BoalGameTurn_8");
+	sLngTurn_9     = XI_ConvertString("BoalGameTurn_9");
+	sLngTurnNPC_4  = XI_ConvertString("BoalGameTurnNPC_4");
+	sLngTurnNPC_5  = XI_ConvertString("BoalGameTurnNPC_5");
+	sLngTurnNPC_6  = XI_ConvertString("BoalGameTurnNPC_6");
+
+	for (i = 1; i <= 8; i++)
+	{
+		sLngDiceState[i] = XI_ConvertString("BoalGameDiceState_" + i);
+	}
+
 	// новая игра
 	SaveCurrentQuestDateParam("StartGameSession");
 	NewGameBegin(true);
-	SetFormatedText("TIME_TEXT", "" + GetQuestBookData());
-	SetFormatedText("STATS_TIME_TEXT", "" + GetSessionTime());
+	SetTimeTexts();
 	SetFormatedText("STATS_TEXT", XI_ConvertString("Statistic"));
 }
 
@@ -199,7 +435,10 @@ void ProcessCancelExit()
 
 void Exit()
 {
-	if (!openExit)
+	// > монеты могли остаться в полёте - снимаем обработчик кадра до выгрузки сегмента
+	CoinFlyStop();
+
+	if (!openExit && !bRoundDone) // > fix: штраф - это плата за брошенный недоигранный кон
 	{
 		PlaySound("uplata");
 		TEV.Gambling.LoseMoney = sti(TEV.Gambling.LoseMoney) + (money_i * iRate);
@@ -216,12 +455,17 @@ void Exit()
 	TEV.Gambling.Diff.Plus = "";
 	TEV.Gambling.DiffAll.Plus = "";
 
+	string sDiceWin = XI_ConvertString("BoalGameDiceWin");
+	string sTotal;
+
 	if (GetOfficersPerkUsing(pchar, "HawkEye", true))
 	{
-		Log_Info(XI_ConvertString("BoalGameDiceWin") + ": " + iHeroWin + " (" + GetStrSmallRegister(XI_ConvertString("Total")) + " " + (Statistic_AddValue(Pchar, "GameDice_Win", 0) + iHeroWin) + ")");
-		Log_Info(XI_ConvertString("BoalGameLose") + ": " + iHeroLose + " (" + GetStrSmallRegister(XI_ConvertString("Total")) + " " + (Statistic_AddValue(Pchar, "GameDice_Lose", 0) + iHeroLose) + ")");
-		Log_Info(XI_ConvertString("BoalGameMoneyWin") + ": " + TEV.Gambling.WinMoney + " (" + GetStrSmallRegister(XI_ConvertString("Total")) + " " + TEV.Stats.Gambling.Dice.WinMoney + ")");
-		Log_Info(XI_ConvertString("BoalGameMoneyLose") + ": " + TEV.Gambling.LoseMoney + " (" + GetStrSmallRegister(XI_ConvertString("Total")) + " " + TEV.Stats.Gambling.Dice.LoseMoney + ")");
+		sTotal = GetStrSmallRegister(XI_ConvertString("Total"));
+
+		Log_Info(sDiceWin + ": " + iHeroWin + " (" + sTotal + " " + (Statistic_AddValue(Pchar, "GameDice_Win", 0) + iHeroWin) + ")");
+		Log_Info(sLngLose + ": " + iHeroLose + " (" + sTotal + " " + (Statistic_AddValue(Pchar, "GameDice_Lose", 0) + iHeroLose) + ")");
+		Log_Info(sLngMoneyWin + ": " + TEV.Gambling.WinMoney + " (" + sTotal + " " + TEV.Stats.Gambling.Dice.WinMoney + ")");
+		Log_Info(sLngMoneyLose + ": " + TEV.Gambling.LoseMoney + " (" + sTotal + " " + TEV.Stats.Gambling.Dice.LoseMoney + ")");
 
 		TEV.Gambling.Diff = makeint(TEV.Gambling.WinMoney) - makeint(TEV.Gambling.LoseMoney);
 		TEV.Gambling.DiffAll = makeint(TEV.Stats.Gambling.Dice.WinMoney) - makeint(TEV.Stats.Gambling.Dice.LoseMoney);
@@ -232,20 +476,20 @@ void Exit()
 		if (sti(TEV.Gambling.DiffAll) > 0)
 			TEV.Gambling.DiffAll.Plus = "+";
 
-		Log_Info(XI_ConvertString("BoalGameDifference") + ": " + TEV.Gambling.Diff.Plus + FindMoneyString(sti(TEV.Gambling.Diff)) + " (" + GetStrSmallRegister(XI_ConvertString("Total")) + " " + TEV.Gambling.DiffAll.Plus + FindMoneyString(sti(TEV.Gambling.DiffAll))  + ")");
+		Log_Info(sLngDifference + ": " + TEV.Gambling.Diff.Plus + FindMoneyString(sti(TEV.Gambling.Diff)) + " (" + sTotal + " " + TEV.Gambling.DiffAll.Plus + FindMoneyString(sti(TEV.Gambling.DiffAll))  + ")");
 	}
 	else
 	{
-		Log_Info(XI_ConvertString("BoalGameDiceWin") + ": " + iHeroWin);
-		Log_Info(XI_ConvertString("BoalGameLose") + ": " + iHeroLose);
-		Log_Info(XI_ConvertString("BoalGameMoneyWin") + ": " + TEV.Gambling.WinMoney);
-		Log_Info(XI_ConvertString("BoalGameMoneyLose") + ": " + TEV.Gambling.LoseMoney);
+		Log_Info(sDiceWin + ": " + iHeroWin);
+		Log_Info(sLngLose + ": " + iHeroLose);
+		Log_Info(sLngMoneyWin + ": " + TEV.Gambling.WinMoney);
+		Log_Info(sLngMoneyLose + ": " + TEV.Gambling.LoseMoney);
 		TEV.Gambling.Diff = makeint(sti(TEV.Gambling.WinMoney) - sti(TEV.Gambling.LoseMoney));
 
 		if (sti(TEV.Gambling.Diff) > 0)
 			TEV.Gambling.Diff.Plus = "+";
 
-		Log_Info(XI_ConvertString("BoalGameDifference") + ": " + TEV.Gambling.Diff.Plus + FindMoneyString(sti(TEV.Gambling.Diff)));
+		Log_Info(sLngDifference + ": " + TEV.Gambling.Diff.Plus + FindMoneyString(sti(TEV.Gambling.Diff)));
 	}
 
 	DeleteAttribute(&TEV, "Gambling");
@@ -259,6 +503,7 @@ void Exit()
 	DelEventHandler("My_eNewNextGame","NewNextGame");
 	DelEventHandler("My_eCompTurn","CompTurn");
 	DelEventHandler("My_eCheckGame","CheckGame");
+	DelEventHandler("frame","CoinFlyFrame"); // > ещё раз, на случай сбитого флага
 
 	if (sti(pchar.GenQuest.Dice.SitType) == true)
 	{
@@ -272,8 +517,9 @@ void Exit()
 	Statistic_AddValue(Pchar, "GameDice_Lose", iHeroLose);
 	NPChar.Quest.HeroLose = (iHeroWin < iHeroLose); //navy -- в итоге проиграл или выйграл. (не по деньгам.)
 
-	bQuestCheckProcessFreeze = true;
-	bQuestCheckProcessFreeze = false;
+	// > убрано: между ними сейчас ничего не выполняется
+	//bQuestCheckProcessFreeze = true;
+	//bQuestCheckProcessFreeze = false;
 	RefreshLandTime();
 	EndCancelInterface(true);
 	DeleteAttribute(pchar, "StartGameSession");
@@ -283,7 +529,6 @@ void ProcessCommandExecute()
 {
 	string comName = GetEventData();
 	string nodName = GetEventData();
-	ref chr = GetMainCharacter();
 
 	if (bLockClick) return;
 
@@ -327,7 +572,8 @@ void ProcessCommandExecute()
 				{
 					PlaySound("knock");
 					break;
-				}if (dir_i_start == 1 && bStartGame == 2)  // пропуск хода
+				}
+				if (dir_i_start == 1 && bStartGame == 2)  // пропуск хода
 				{
 					CheckGame();
 					break;
@@ -387,11 +633,10 @@ void MoveImg()
 	float t, scale;
 	int x, y, x1, y1, x2, y2;
 
-	GetNodePosition("B_PACK", &x1, &y1, &x2, &y2);
-	x1 = x1 - 231;
-	y1 = y1 - 38;
+	x1 = iPackX1 - 231;
+	y1 = iPackY1 - 38;
 	x2 = x1 - 274;
-	y2 = y2 + 37;
+	y2 = iPackY2 + 37;
 
 	move_i++;
 	if (move_i < 50)
@@ -457,26 +702,350 @@ void MoveImg()
 
 void PutNextCoin()
 {
+	if (money_i > 27) return;
 	CreateImage("Money_"+money_i,"CARDS",money_s, 530+money_i*3, 310-money_i*3, 530+money_i*3 + smxy, 310-money_i*3 + smxy);
+	if (money_i >= iClearMoneyP) iClearMoneyP = money_i + 1;
 }
 void PutNextCoinOp()
 {
+	if (moneyOp_i > 27) return;
 	CreateImage("Money_"+(28+moneyOp_i),"CARDS",money_s, 630+moneyOp_i*3, 310-moneyOp_i*3, 630+moneyOp_i*3 + smxy, 310-moneyOp_i*3 + smxy);
+	if (moneyOp_i >= iClearMoneyN) iClearMoneyN = moneyOp_i + 1;
+}
+
+// ------------------------------------------------------------------
+// > Перелёт выигранных монет на портрет победителя
+// ------------------------------------------------------------------
+
+// > Переставить уже созданную картинку, не трогая её текстуру
+void MoveImage(string AttrName, int left, int top, int right, int bottom)
+{
+	SendMessage(&GameInterface, "lslllll", MSG_INTERFACE_PLACE_IMAGE, AttrName, true, left, top, right, bottom);
+}
+
+// > Откуда стартует монета номер i: сначала монеты банка, за ними ставки ГГ, последними ставки соперника.
+void CoinFlySetStart(int iCoin)
+{
+	int k = iCoin;
+
+	// > Банк летит первым (анимация монет банка есть только при iCoinFlyBank > 0).
+	if (k < iCoinFlyBankN)
+	{	// > картинка банка GOLD, монеты вылетают из неё горкой
+		iCoinFlyX = 503 - iCoinFlySize / 2 - 16 + k * 9;
+		iCoinFlyY = 465 - iCoinFlySize / 2 - 12 + k * 7;
+		return;
+	}
+	k = k - iCoinFlyBankN;
+	if (k < iCoinFlyP)
+	{
+		iCoinFlyX = 530 + k * 3;
+		iCoinFlyY = 310 - k * 3;
+		return;
+	}
+	k = k - iCoinFlyP;
+	iCoinFlyX = 630 + k * 3;
+	iCoinFlyY = 310 - k * 3;
+}
+
+// > Летящие монеты - отдельные картинки, оригиналы со стола к этому моменту уже сняты.
+// > Поэтому новый кон спокойно пересоздаёт свои Money_*, даже если предыдущие монеты ещё в воздухе.
+void CoinFlyClear()
+{
+	int i;
+	for (i = iCoinFlyNum - 1; i >= 0; i--)
+	{
+		CreateImage("CoinFly_" + i, "", "", 0, 0, 0, 0);
+	}
+	iCoinFlyNum = 0;
+}
+
+// > Прямая установка цвета картинки-узла. У CXI_PICTURE это команда 4; команда 5 (SetPictureBlind) для тонкой настройки не годится - движок читает в ней только флаг, а цвета и времена берёт из ini.
+void SetPictureColor(string nodeName, int color)
+{
+	SendMessage(&GameInterface, "lsll", MSG_INTERFACE_MSG_TO_NODE, nodeName, 4, color);
+}
+
+// > Цвет портрета на текущей яркости вспышки: 1.0 - пик, 0.0 - покой.
+void CoinFlySetPortraitColor(float fBright)
+{
+	int iR = makeint(iPortrRestR + (iPortrBlinkR - iPortrRestR) * fBright);
+	int iG = makeint(iPortrRestG + (iPortrBlinkG - iPortrRestG) * fBright);
+	int iB = makeint(iPortrRestB + (iPortrBlinkB - iPortrRestB) * fBright);
+
+	int iCol = argb(255, iR, iG, iB);
+	if (iCol == iPortrColorShown) return; // > тот же цвет второй раз движку не шлём
+	iPortrColorShown = iCol;
+	SetPictureColor(sPortrNode, iCol);
+}
+
+// > Вернуть портрет в исходный вид. Зовётся и при обрыве анимации, поэтому портрет не может остаться раздутым или подсвеченным.
+void CoinFlyPortraitReset()
+{
+	if (sPortrNode == "") return;
+
+	if (iPortrShownW != 0 || iPortrShownH != 0)
+		SetNodePosition(sPortrNode, iPortrX1, iPortrY1, iPortrX2, iPortrY2);
+
+	if (iPortrColorShown != 0)
+		SetPictureColor(sPortrNode, argb(255, iPortrRestR, iPortrRestG, iPortrRestB));
+
+	sPortrNode       = "";
+	fPortrCur        = 0.0;
+	fPortrTarget     = 0.0;
+	bPortrBack       = false;
+	fPortrBlinkLeft  = 0.0;
+	iPortrShownW     = 0;
+	iPortrShownH     = 0;
+	iPortrColorShown = 0;
+}
+
+// > Прилетела очередная монета: подрастить портрет и мигнуть.
+void CoinFlyPortraitHit()
+{
+	if (sPortrNode == "") return;
+
+	fPortrTarget = fPortrTarget + fPortrGrowStep;
+	if (fPortrTarget > fPortrGrowMax) fPortrTarget = fPortrGrowMax;
+
+	if (bPortrBlink) fPortrBlinkLeft = fPortrBlinkTime;
+}
+
+// > Кадр жизни портрета: размер ползёт к цели с постоянной скоростью (поэтому не зависит от FPS), вспышка гаснет по своему таймеру.
+void CoinFlyPortraitFrame(float fDelta)
+{
+	if (sPortrNode == "") return;
+
+	float fRate;
+	if (bPortrBack)
+		fRate = fPortrGrowMax / fPortrGrowBack;
+	else
+		fRate = fPortrGrowMax / fPortrGrowUp;
+
+	float fStep = fRate * fDelta;
+
+	if (fPortrCur < fPortrTarget)
+	{
+		fPortrCur = fPortrCur + fStep;
+		if (fPortrCur > fPortrTarget) fPortrCur = fPortrTarget;
+	}
+	else
+	{
+		if (fPortrCur > fPortrTarget)
+		{
+			fPortrCur = fPortrCur - fStep;
+			if (fPortrCur < fPortrTarget) fPortrCur = fPortrTarget;
+		}
+	}
+
+	// > растём симметрично от центра, поэтому прибавка делится пополам
+	int iDW = makeint((iPortrX2 - iPortrX1) * fPortrCur * 0.5);
+	int iDH = makeint((iPortrY2 - iPortrY1) * fPortrCur * 0.5);
+
+	if (iDW != iPortrShownW || iDH != iPortrShownH)
+	{
+		iPortrShownW = iDW;
+		iPortrShownH = iDH;
+		SetNodePosition(sPortrNode, iPortrX1 - iDW, iPortrY1 - iDH, iPortrX2 + iDW, iPortrY2 + iDH);
+	}
+
+	if (!bPortrBlink) return;
+	if (fPortrBlinkLeft <= 0.0) return;
+
+	fPortrBlinkLeft = fPortrBlinkLeft - fDelta;
+	if (fPortrBlinkLeft < 0.0) fPortrBlinkLeft = 0.0;
+
+	float fBright = fPortrBlinkLeft / fPortrBlinkTime;
+	if (fBright > 1.0) fBright = 1.0;
+
+	// > начало вспышки держим на полной яркости, остаток плавно гасим
+	if (fBright > 1.0 - fPortrBlinkHold)
+		fBright = 1.0;
+	else
+		fBright = fBright / (1.0 - fPortrBlinkHold);
+
+	CoinFlySetPortraitColor(fBright);
+}
+
+void CoinFlyStop()
+{
+	if (bCoinFly)
+	{
+		bCoinFly = false;
+		DelEventHandler("frame", "CoinFlyFrame");
+	}
+	CoinFlyPortraitReset();
+	CoinFlyClear();
+}
+
+// > who: 1 - выиграл ГГ (нижний портрет), -1 - соперник (верхний).
+// > При ничьей банк переходит в следующий кон, монеты никуда не летят.
+void CoinFlyStart(int who)
+{
+	CoinFlyStop(); // > хвост прошлой анимации не должен мешаться с новой
+
+	if (who == 0) return;
+	if (fCoinFlyTime <= 0.0) return; // > выключено настройкой
+
+	int nP = iClearMoneyP; // > ровно столько картинок монет реально создано
+	int nN = iClearMoneyN;
+	int nBank = iCoinFlyBank;
+
+	if (nBank < 0 || iChest <= 0) nBank = 0;
+
+	int iTotal = nP + nN + nBank;
+	if (iTotal < 1) return;
+
+	iCoinFlyBankN = nBank;
+	iCoinFlyP     = nP;
+	iCoinFlyN     = nN;
+	iCoinFlyNum   = iTotal;
+	iCoinFlyDone  = 0;
+	iCoinFlySize  = smxy;
+
+	// > числа взяты из boal_dice.ini: картинки и узлы ini живут в одних и тех же координатах, отступ канвы движок добавляет сам.
+	// > ICON_2 - ГГ, ICON_1 - соперник.
+	iCoinFlyToX = 729;
+	if (who == 1)
+	{	// > портрет ГГ
+		iCoinFlyToY = 519;
+		sPortrNode  = "ICON_2";
+		iPortrX1 = iPortr2X1; iPortrY1 = iPortr2Y1;
+		iPortrX2 = iPortr2X2; iPortrY2 = iPortr2Y2;
+		iPortrBlinkR = 255; iPortrBlinkG = 245; iPortrBlinkB = 170; // > тёплая вспышка
+	}
+	else
+	{	// > портрет соперника
+		iCoinFlyToY = 411;
+		sPortrNode  = "ICON_1";
+		iPortrX1 = iPortr1X1; iPortrY1 = iPortr1Y1;
+		iPortrX2 = iPortr1X2; iPortrY2 = iPortr1Y2;
+		iPortrBlinkR = 255; iPortrBlinkG = 196; iPortrBlinkB = 196; // > светло-красная вспышка
+	}
+	fPortrCur        = 0.0;
+	fPortrTarget     = 0.0;
+	bPortrBack       = false;
+	fPortrBlinkLeft  = 0.0;
+	iPortrShownW     = 0;
+	iPortrShownH     = 0;
+	iPortrColorShown = 0;
+
+	int i;
+	for (i = 0; i < iTotal; i++)
+	{
+		CoinFlySetStart(i);
+		CreateImage("CoinFly_" + i, "CARDS", money_s, iCoinFlyX, iCoinFlyY, iCoinFlyX + iCoinFlySize, iCoinFlyY + iCoinFlySize);
+	}
+	// > оригиналы убираем, дальше стол чистить уже нечего
+	for (i = nP - 1; i >= 0; i--)
+	{
+		CreateImage("Money_" + i, "", "", 0, 0, 0, 0);
+	}
+	for (i = nN - 1; i >= 0; i--)
+	{
+		CreateImage("Money_" + (28 + i), "", "", 0, 0, 0, 0);
+	}
+	iClearMoneyP = 0;
+	iClearMoneyN = 0;
+
+	// > при полном столе монет много, поэтому сдвиг стартов ужимаем под потолок: анимация не растягивается, но настройку игрока при этом не портим
+	fCoinFlyStep = fCoinFlyDelay;
+	if (iTotal > 1 && fCoinFlyTime + fCoinFlyStep * (iTotal - 1) > fCoinFlyMax)
+	{
+		fCoinFlyStep = (fCoinFlyMax - fCoinFlyTime) / (iTotal - 1);
+		if (fCoinFlyStep < 0.0) fCoinFlyStep = 0.0;
+	}
+
+	fCoinFlyTimer = 0.0;
+	fCoinFlyTotal = fCoinFlyTime + fCoinFlyStep * (iTotal - 1);
+	bCoinFly = true;
+	SetEventHandler("frame", "CoinFlyFrame", 0);
+	PlaySound("Took_item");
+}
+
+// > Один кадр перелёта. Время берём реальное, поэтому, например, на 30 и на 144 FPS монеты летят одинаково долго (меняется только плавность картинки).
+void CoinFlyFrame()
+{
+	if (!bCoinFly) return;
+
+	float fDelta = GetRealDeltaTime();
+	fCoinFlyTimer = fCoinFlyTimer + fDelta;
+
+	int   i, x, y, w;
+	float t, s, fcx, fcy;
+
+	for (i = iCoinFlyDone; i < iCoinFlyNum; i++)
+	{
+		t = (fCoinFlyTimer - fCoinFlyStep * i) / fCoinFlyTime;
+		if (t <= 0.0) break; // > монеты правее ещё не тронулись
+
+		if (t >= 1.0 && i == iCoinFlyDone)
+		{	// > долетевшую монету убираем сразу: она уже "вошла" в портрет.
+			// > Заодно список картинок не приходится обходить из-за неё каждый кадр.
+			CreateImage("CoinFly_" + i, "", "", 0, 0, 0, 0);
+			iCoinFlyDone++;
+			PlaySound("interface\uplata_001.wav");
+			CoinFlyPortraitHit(); // > портрет подрос и мигнул
+			continue;
+		}
+		if (t > 1.0) t = 1.0;
+
+		s = t * t * (3.0 - 2.0 * t); // > мягкий разгон и торможение
+
+		CoinFlySetStart(i);
+		// > ведём центр монеты, чтобы она села ровно на портрет, как ни уменьшалась
+		fcx = iCoinFlyX + iCoinFlySize * 0.5;
+		fcy = iCoinFlyY + iCoinFlySize * 0.5;
+		fcx = fcx + (iCoinFlyToX - fcx) * s;
+		fcy = fcy + (iCoinFlyToY - fcy) * s - 40.0 * 4.0 * t * (1.0 - t); // > лёгкая дуга
+
+		w = makeint(iCoinFlySize * (1.0 - (1.0 - fCoinFlyEndSize) * s));
+		x = makeint(fcx - w * 0.5);
+		y = makeint(fcy - w * 0.5);
+		MoveImage("CoinFly_" + i, x, y, x + w, y + w);
+	}
+
+	if (iCoinFlyDone >= iCoinFlyNum && !bPortrBack)
+	{	// > прилетела последняя монета: портрет пошёл обратно к исходному размеру
+		bPortrBack   = true;
+		fPortrTarget = 0.0;
+
+		// > показываем пополнившийся кошелёк и пустой кон.
+		// > iChest не трогаем - его, как и раньше, обнулит RedrawDeck.
+		GameInterface.strings.Money        = MakeMoneyShow(iMoneyP, MONEY_SIGN, MONEY_DELIVER);
+		GameInterface.strings.MoneyInChest = MakeMoneyShow(0, MONEY_SIGN, MONEY_DELIVER);
+		PlaySound("interface\button3.wav");
+	}
+
+	CoinFlyPortraitFrame(fDelta);
+
+	// > обработчик живёт, пока портрет не сядет обратно и не догорит вспышка
+	if (bPortrBack && fPortrCur <= 0.0 && fPortrBlinkLeft <= 0.0)
+	{
+		CoinFlyStop();
+	}
 }
 
 void RedrawDeck(bool _newGame, bool _clearDice)
 {
-	// монетки с запасом
 	int i;
 	if (_newGame)
 	{
-		for (i=55; i>=0; i--)
+		// > fix: чистим ровно те монетки, которые в прошлом коне действительно клались на стол
+		for (i = iClearMoneyP - 1; i >= 0; i--)
 		{
 			CreateImage("Money_" + i ,"", "", 0, 0, 0, 0);
 		}
+		for (i = iClearMoneyN - 1; i >= 0; i--)
+		{
+			CreateImage("Money_" + (28 + i) ,"", "", 0, 0, 0, 0);
+		}
+		iClearMoneyP = 0;
+		iClearMoneyN = 0;
+
 		money_i = 0; // индекс монетки
 		moneyOp_i = 0;
 		iChest = 0; // на кону
+		bRoundDone = false; // > ставки обнулились вместе с money_i, штраф снова осмыслен
 	}
 	// место под кубики
 	if (_clearDice)
@@ -517,20 +1086,51 @@ void BetaInfo()
 
 	iDiff = abs(iDiff);
 
-	GameInterface.strings.Wins			= XI_ConvertString("BoalGameWin") + " ";
-	GameInterface.strings.Loses			= XI_ConvertString("BoalGameLose") + " ";
-	GameInterface.strings.MoneyWin		= XI_ConvertString("BoalGameMoneyWin") + " ";
-	GameInterface.strings.MoneyLose		= XI_ConvertString("BoalGameMoneyLose") + " ";
-	GameInterface.strings.TimePassed	= XI_ConvertString("BoalGameTimePassed") + " ";
+	// > fix: снова бессмысленные поиски по common.ini на каждый вызов
+	GameInterface.strings.Wins			= sLngWin + " ";
+	GameInterface.strings.Loses			= sLngLose + " ";
+	GameInterface.strings.MoneyWin		= sLngMoneyWin + " ";
+	GameInterface.strings.MoneyLose		= sLngMoneyLose + " ";
+	GameInterface.strings.TimePassed	= sLngTimePassed + " ";
+	GameInterface.strings.MoneyDiff		= sLngDifference;
 
-	SetFormatedText("STATS_DIFF_TEXT", "" + sDiff + iDiff);
-	GameInterface.strings.MoneyDiff	= XI_ConvertString("BoalGameDifference");
-
-	SetFormatedText("STATS_WINS_TEXT", "" + iHeroWin);
-	SetFormatedText("STATS_LOSES_TEXT", "" + iHeroLose);
-	SetFormatedText("STATS_WINMONEY_TEXT", "" + TEV.Gambling.WinMoney);
-	SetFormatedText("STATS_LOSEMONEY_TEXT", "" + TEV.Gambling.LoseMoney);
-	SetFormatedText("STATS_TIME_TEXT", "" + GetSessionTime());
+	// > одинаковый текст второй раз не отправляем
+	string sTmp = "" + sDiff + iDiff;
+	if (sTxtDiff != sTmp)
+	{
+		sTxtDiff = sTmp;
+		SetFormatedText("STATS_DIFF_TEXT", sTmp);
+	}
+	sTmp = "" + iHeroWin;
+	if (sTxtWins != sTmp)
+	{
+		sTxtWins = sTmp;
+		SetFormatedText("STATS_WINS_TEXT", sTmp);
+	}
+	sTmp = "" + iHeroLose;
+	if (sTxtLoses != sTmp)
+	{
+		sTxtLoses = sTmp;
+		SetFormatedText("STATS_LOSES_TEXT", sTmp);
+	}
+	sTmp = "" + TEV.Gambling.WinMoney;
+	if (sTxtWinMoney != sTmp)
+	{
+		sTxtWinMoney = sTmp;
+		SetFormatedText("STATS_WINMONEY_TEXT", sTmp);
+	}
+	sTmp = "" + TEV.Gambling.LoseMoney;
+	if (sTxtLoseMoney != sTmp)
+	{
+		sTxtLoseMoney = sTmp;
+		SetFormatedText("STATS_LOSEMONEY_TEXT", sTmp);
+	}
+	sTmp = GetSessionTime();
+	if (sTxtSessTime != sTmp)
+	{
+		sTxtSessTime = sTmp;
+		SetFormatedText("STATS_TIME_TEXT", sTmp);
+	}
 }
 
 // сдать карту
@@ -541,18 +1141,18 @@ void StartGame()
 	openExit = false;
 
 	PlaySound("Took_item");
-	SetFormatedText("B_TEXT_1", "");
+	SetBtnText("");
 
 	if (dir_i == -1) // комп первый
 	{
 		UpdateTime();
 		PlaySound("DiceMix");
-		SetFormatedText("INFO_TEXT",XI_ConvertString("BoalGameTurn_5"));
+		SetInfoText(sLngTurn_5);
 		PostEvent("My_eventMoveImg", 100);
 	}
 	else
 	{
-		SetFormatedText("INFO_TEXT",XI_ConvertString("BoalGameTurn_6")+ GetLangSexPhrase("ый", "ая") +". " + XI_ConvertString("BoalGameTurn_4"));
+		SetInfoText(sLngTurn_6 + GetLangSexPhrase("ый", "ая") +". " + sLngTurn_4);
 		bLockClick = false;
 		SetDiceTip("action");
 	}
@@ -590,11 +1190,11 @@ void NewGameBegin(bool _newGame)
 	SetDiceTip("action");
 	if (_newGame)
 	{
-		SetFormatedText("INFO_TEXT",XI_ConvertString("BoalGameStart") + " "+NewStr()+XI_ConvertString("BoalGameBets"));
+		SetInfoText(XI_ConvertString("BoalGameStart") + " "+NewStr()+sLngBets);
 	}
 	else
 	{
-		SetFormatedText("INFO_TEXT",XI_ConvertString("BoalGameContinue") + " "+NewStr()+XI_ConvertString("BoalGameBets"));
+		SetInfoText(XI_ConvertString("BoalGameContinue") + " "+NewStr()+sLngBets);
 	}
 	bSetRandDice = true;
 	PostEvent("My_eStartGame", 1000);
@@ -602,8 +1202,7 @@ void NewGameBegin(bool _newGame)
 	openExit = false;
 	BetaInfo();
 	WaitDate("", 0, 0, 0, 0, 1 + (rand(4)));
-	SetFormatedText("TIME_TEXT", "" + GetQuestBookData());
-	SetFormatedText("STATS_TIME_TEXT", "" + GetSessionTime());
+	SetTimeTexts();
 }
 // деньги в карман
 void EndGameCount(int who)
@@ -613,16 +1212,20 @@ void EndGameCount(int who)
 	{
 		iMoneyP += iChest;
 		TEV.Gambling.WinMoney = sti(TEV.Gambling.WinMoney) + (iChest - (money_i * iRate));
+		bRoundDone = true; // > ставки разошлись
 	}
 	else if (who == -1)
 	{
 		iMoneyN += iChest;
 		TEV.Gambling.LoseMoney = sti(TEV.Gambling.LoseMoney) + (iChest - (moneyOp_i * iRate));
+		bRoundDone = true; // > ставки разошлись
 	}
 	else if (who == 0)// ничья
 	{
-		//
+		// > банк остаётся на кону, bRoundDone не ставим: брошенный кон всё ещё штрафуется
 	}
+	// > единственная точка, через которую проходят все концы партии
+	CoinFlyStart(who);
 }
 
 // проверить деньги для след игры
@@ -668,14 +1271,17 @@ void PutDiceOnTable()
 		iy = rand(40);
 		CreateImage("Dice5","DICE","dice_"+DiceState.Desk.d5+"_" + rand(2), 350+ix, 260+iy, 350 +ix + scx, 260 +iy+ scy);
 	}
+	bDiceOnTable = true; // > на столе что-то лежит, чистить есть что
 }
 
 void ClearDiceOnTable()
 {
+	if (!bDiceOnTable) return;
 	for (int i = 1; i <= 5; i++)
 	{
 		CreateImage("Dice" + i, "", "", 0, 0, 0, 0);
 	}
+	bDiceOnTable = false;
 }
 
 void InitDiceState()
@@ -716,7 +1322,7 @@ void ClickHeroDice(int d)
 		if (CheckAttribute(&DiceState, "LockDice." + sDiceTemp) && sti(DiceState.LockDice.(sDiceTemp)) > 0)
 			return;
 
-		SetFormatedText("B_TEXT_1", "");
+		SetBtnText("");
 		SetNodeUsing("HeroDice" + d, false);
 		DiceState.Hero.(sDiceTemp).Mix = true;
 		DiceState.Desk.(sDiceTemp).Mix = true;
@@ -788,24 +1394,24 @@ bool CheckGame()
 		bLockClick = false;
 		if (bStartGame <1 )// первый заход
 		{
-			SetFormatedText("INFO_TEXT",XI_ConvertString("BoalGameTurn_1") + " " + XI_ConvertString("BoalGameTurn_4"));
-			SetFormatedText("B_TEXT_1", "");
+			SetInfoText(sLngTurn_1 + " " + sLngTurn_4);
+			SetBtnText("");
 		}
 		else
 		{
-			SetFormatedText("INFO_TEXT",XI_ConvertString("BoalGameTurn_7"));
-			SetFormatedText("B_TEXT_1", XI_ConvertString("BoalGameEndTurn"));
+			SetInfoText(sLngTurn_7);
+			SetBtnText(sLngEndTurn);
 		}
 	}
 	else
 	{
 		dir_i = -1;
 		bLockClick = true;
-		SetFormatedText("B_TEXT_1", "");
+		SetBtnText("");
 		if (bStartGame <1 )// первый заход
 		{
 			UpdateTime();
-			SetFormatedText("INFO_TEXT",XI_ConvertString("BoalGameTurn_8"));
+			SetInfoText(sLngTurn_8);
 			move_i = 0;
 			PlaySound("DiceMix");
 			PostEvent("My_eventMoveImg", 500);
@@ -815,7 +1421,7 @@ bool CheckGame()
 			if (bStartGame <3)
 			{
 				// решаем ходить ли вообще
-				SetFormatedText("INFO_TEXT",XI_ConvertString("BoalGameTurn_9"));
+				SetInfoText(sLngTurn_9);
 				PostEvent("My_eCompTurn", 800);
 			}
 		}
@@ -824,7 +1430,7 @@ bool CheckGame()
 	SetDiceTip("");
 	if (bStartGame > 3)
 	{
-		SetFormatedText("B_TEXT_1", "");
+		SetBtnText("");
 		// подвод итога
 		openExit = false;
 		bLockClick = true;
@@ -846,13 +1452,11 @@ bool CheckGame()
 	return true;
 }
 
+// > картинку грани трогаем только когда на кубике выпало другое число
 void PutCompLine()
 {
-	int i, x1, y1, x2, y2, x_dist = 80;
-
-	GetNodePosition("B_HeroDice1", &x1, &y1, &x2, &y2);
-	x1 = x1 - 16;
-	y1 = y1 - 455;
+	int i;
+	string sPic;
 
 	for (i = 1; i<=5; i++)
 	{
@@ -860,19 +1464,20 @@ void PutCompLine()
 		if (DiceState.Comp.(sDiceTemp).Mix == false)
 		{
 			SetNodeUsing("CompDice" + i, true);
-			SetNewGroupPicture("CompDice" + i, "DICE", "dice_" + DiceState.Comp.(sDiceTemp) + "_1");
-			SetNodePosition("CompDice" + i, x1 + x_dist * (i - 1), y1, x1 + x_dist * (i - 1) + scx, y1 + scy);
+			sPic = "dice_" + DiceState.Comp.(sDiceTemp) + "_1";
+			if (sCompDiceShown[i] != sPic)
+			{
+				sCompDiceShown[i] = sPic;
+				SetNewGroupPicture("CompDice" + i, "DICE", sPic);
+			}
 		}
 	}
 }
 
 void PutHeroLine()
 {
-	int i, x1, y1, x2, y2, x_dist = 80;
-
-	GetNodePosition("B_HeroDice1", &x1, &y1, &x2, &y2);
-	x1 = x1 - 16;
-	y1 = y1 - 11;
+	int i;
+	string sPic;
 
 	for (i = 1; i<=5; i++)
 	{
@@ -880,8 +1485,12 @@ void PutHeroLine()
 		if (DiceState.Hero.(sDiceTemp).Mix == false)
 		{
 			SetNodeUsing("HeroDice" + i, true);
-			SetNewGroupPicture("HeroDice" + i, "DICE", "dice_" + DiceState.Hero.(sDiceTemp) + "_1");
-			SetNodePosition("HeroDice" + i, x1 + x_dist * (i - 1), y1, x1 + x_dist * (i - 1) + scx, y1 + scy);
+			sPic = "dice_" + DiceState.Hero.(sDiceTemp) + "_1";
+			if (sHeroDiceShown[i] != sPic)
+			{
+				sHeroDiceShown[i] = sPic;
+				SetNewGroupPicture("HeroDice" + i, "DICE", sPic);
+			}
 		}
 	}
 }
@@ -899,18 +1508,34 @@ bool CheckCupForDice()
 	}
 	return false;
 }
+
 // посчитать комбинацию
 void RecalcDiceOnHand(string _whom)
 {
-	int	   i, k, iOk;
-	string sTemp;
+	int	   i, k, iOk, vk, iRate1, iRate2;
 	bool   ok;
+
+	int dv[6]; 	// > dv[1..5]
+	int cnt[7];	// > cnt[0..6]
+
+	for (i = 0; i <= 6; i++)
+	{
+		cnt[i] = 0;
+	}
+
+	for (i = 1; i <= 5; i++)
+	{
+		sDiceTemp = "d" + i;
+		dv[i] = sti(DiceState.(_whom).(sDiceTemp));
+		if (dv[i] < 0) dv[i] = 0;  // > грань бывает только 0..6, индекс cnt[] обязан быть валиден
+		if (dv[i] > 6) dv[i] = 6;
+		cnt[dv[i]] = cnt[dv[i]] + 1;
+	}
 	// 1) Покер - 5 одинаковых
 	ok = true;
 	for (i = 2; i<=5; i++)
 	{
-		sDiceTemp = "d"+i;
-		if (sti(DiceState.(_whom).d1) != sti(DiceState.(_whom).(sDiceTemp)))
+		if (dv[1] != dv[i])
 		{
 			ok = false;
 			break;
@@ -919,17 +1544,15 @@ void RecalcDiceOnHand(string _whom)
 	if (ok)
 	{
 		DiceState.(_whom).Result.Type  = 1;
-		DiceState.(_whom).Result.Rate1	= sti(DiceState.(_whom).d1);
-		DiceState.(_whom).Result.Rate2	= sti(DiceState.(_whom).d1);
+		DiceState.(_whom).Result.Rate1 = dv[1];
+		DiceState.(_whom).Result.Rate2 = dv[1];
 		return;
 	}
 	// 2) Стрит Бол.стрит - 2,3,4,5,6 Мал.стрит - 1,2,3,4,5
 	ok = true;
 	for (i = 1; i<=4; i++)
 	{
-		sDiceTemp = "d"+i;
-		sTemp		= "d"+(i+1);
-		if (sti(DiceState.(_whom).(sDiceTemp)) != (sti(DiceState.(_whom).(sTemp)) - 1) )
+		if (dv[i] != (dv[i+1] - 1))
 		{
 			ok = false;
 			break;
@@ -938,49 +1561,34 @@ void RecalcDiceOnHand(string _whom)
 	if (ok)
 	{
 		DiceState.(_whom).Result.Type  = 2;
-		DiceState.(_whom).Result.Rate1	= sti(DiceState.(_whom).d5);
-		DiceState.(_whom).Result.Rate2	= sti(DiceState.(_whom).d5);
+		DiceState.(_whom).Result.Rate1 = dv[5];
+		DiceState.(_whom).Result.Rate2 = dv[5];
 		return;
 	}
 	// 3) Каре - 4 одинаковых
-	ok = true;
 	for (k = 1; k<=5; k++)
 	{
-		iOk = 5;
-		sTemp = "d" + k;
-		for (i = 1; i<=5; i++)
-		{
-			sDiceTemp = "d"+i;
-			if (sti(DiceState.(_whom).(sTemp)) != sti(DiceState.(_whom).(sDiceTemp)))
-			{
-				iOk--;
-			}
-		}
+		vk = dv[k];
+		iOk = cnt[vk];
 		if (iOk >= 4)
 		{
 			DiceState.(_whom).Result.Type  = 3;
-			DiceState.(_whom).Result.Rate1	= sti(DiceState.(_whom).(sTemp));
-			DiceState.(_whom).Result.Rate2	= sti(DiceState.(_whom).(sTemp));
+			DiceState.(_whom).Result.Rate1 = vk;
+			DiceState.(_whom).Result.Rate2 = vk;
 			return;
 		}
 	}
 	// 4) Фул - 3 + 2
 	ok = false;
+	iRate1 = 0;
 	for (k = 1; k<=5; k++)
 	{
-		iOk = 5;
-		sTemp = "d" + k;
-		for (i = 1; i<=5; i++)
-		{
-			sDiceTemp = "d"+i;
-			if (sti(DiceState.(_whom).(sTemp)) != sti(DiceState.(_whom).(sDiceTemp)))
-			{
-				iOk--;
-			}
-		}
+		vk = dv[k];
+		iOk = cnt[vk];
 		if (iOk >= 3)
 		{
-			DiceState.(_whom).Result.Rate1	= sti(DiceState.(_whom).(sTemp));
+			iRate1 = vk;
+			DiceState.(_whom).Result.Rate1 = vk;
 			ok = true;
 			break;
 		}
@@ -990,21 +1598,12 @@ void RecalcDiceOnHand(string _whom)
 		ok = false;
 		for (k = 1; k<=5; k++)
 		{
-			iOk = 5;
-			sTemp = "d" + k;
-			if (sti(DiceState.(_whom).(sTemp)) == sti(DiceState.(_whom).Result.Rate1)) continue;
-
-			for (i = 1; i<=5; i++)
-			{
-				sDiceTemp = "d"+i;
-				if (sti(DiceState.(_whom).(sTemp)) != sti(DiceState.(_whom).(sDiceTemp)))
-				{
-					iOk--;
-				}
-			}
+			vk = dv[k];
+			if (vk == iRate1) continue;
+			iOk = cnt[vk];
 			if (iOk >= 2)
 			{
-				DiceState.(_whom).Result.Rate2	= sti(DiceState.(_whom).(sTemp));
+				DiceState.(_whom).Result.Rate2 = vk;
 				ok = true;
 				break;
 			}
@@ -1019,19 +1618,11 @@ void RecalcDiceOnHand(string _whom)
 	ok = false;
 	for (k = 1; k<=5; k++)
 	{
-		iOk = 5;
-		sTemp = "d" + k;
-		for (i = 1; i<=5; i++)
-		{
-			sDiceTemp = "d"+i;
-			if (sti(DiceState.(_whom).(sTemp)) != sti(DiceState.(_whom).(sDiceTemp)))
-			{
-				iOk--;
-			}
-		}
+		vk = dv[k];
+		iOk = cnt[vk];
 		if (iOk >= 3)
 		{
-			DiceState.(_whom).Result.Rate1	= sti(DiceState.(_whom).(sTemp));
+			DiceState.(_whom).Result.Rate1 = vk;
 			ok = true;
 			break;
 		}
@@ -1044,21 +1635,16 @@ void RecalcDiceOnHand(string _whom)
 	}
 	// 6) две пары 2 + 2
 	ok = false;
+	iRate2 = 0;
+
 	for (k = 1; k<=5; k++)
 	{
-		iOk = 5;
-		sTemp = "d" + k;
-		for (i = 1; i<=5; i++)
-		{
-			sDiceTemp = "d"+i;
-			if (sti(DiceState.(_whom).(sTemp)) != sti(DiceState.(_whom).(sDiceTemp)))
-			{
-				iOk--;
-			}
-		}
+		vk = dv[k];
+		iOk = cnt[vk];
 		if (iOk >= 2)
 		{
-			DiceState.(_whom).Result.Rate2	= sti(DiceState.(_whom).(sTemp)); // младшая
+			iRate2 = vk;
+			DiceState.(_whom).Result.Rate2 = vk; // младшая
 			ok = true;
 			break;
 		}
@@ -1068,21 +1654,12 @@ void RecalcDiceOnHand(string _whom)
 		ok = false;
 		for (k = 1; k<=5; k++)
 		{
-			iOk = 5;
-			sTemp = "d" + k;
-			if (sti(DiceState.(_whom).(sTemp)) == sti(DiceState.(_whom).Result.Rate2)) continue;
-
-			for (i = 1; i<=5; i++)
-			{
-				sDiceTemp = "d"+i;
-				if (sti(DiceState.(_whom).(sTemp)) != sti(DiceState.(_whom).(sDiceTemp)))
-				{
-					iOk--;
-				}
-			}
+			vk = dv[k];
+			if (vk == iRate2) continue;
+			iOk = cnt[vk];
 			if (iOk >= 2)
 			{
-				DiceState.(_whom).Result.Rate1	= sti(DiceState.(_whom).(sTemp)); // старшая
+				DiceState.(_whom).Result.Rate1 = vk; // старшая
 				ok = true;
 				break;
 			}
@@ -1097,19 +1674,11 @@ void RecalcDiceOnHand(string _whom)
 	ok = false;
 	for (k = 1; k<=5; k++)
 	{
-		iOk = 5;
-		sTemp = "d" + k;
-		for (i = 1; i<=5; i++)
-		{
-			sDiceTemp = "d"+i;
-			if (sti(DiceState.(_whom).(sTemp)) != sti(DiceState.(_whom).(sDiceTemp)))
-			{
-				iOk--;
-			}
-		}
+		vk = dv[k];
+		iOk = cnt[vk];
 		if (iOk >= 2)
 		{
-			DiceState.(_whom).Result.Rate1	= sti(DiceState.(_whom).(sTemp));
+			DiceState.(_whom).Result.Rate1 = vk;
 			ok = true;
 			break;
 		}
@@ -1137,24 +1706,35 @@ void SortDiceOnHand(string _whom)
 потом наименьший из оставшихся...
 	*/
 
-	for (k = 1; k<=4; k++)
+	int dv[6];
+
+	for (k = 1; k <= 5; k++)
 	{
-		sDiceTemp = "d"+k;
-		w = sti(DiceState.(_whom).(sDiceTemp));
+		sDiceTemp = "d" + k;
+		dv[k] = sti(DiceState.(_whom).(sDiceTemp));
+	}
+
+	for (k = 1; k <= 4; k++)
+	{
+		w = dv[k];
 		j = k;
+
 		for (m = k+1; m<=5; m++)
 		{
-			sDiceTemp = "d"+m;
-			if (sti(DiceState.(_whom).(sDiceTemp)) < w)
+			if (dv[m] < w)
 			{
 				j = m;
-				w = sti(DiceState.(_whom).(sDiceTemp));
+				w = dv[m];
 			}
 		}
-		sDiceTemp = "d"+j;
-		sTemp		= "d"+k;
-		DiceState.(_whom).(sDiceTemp) = DiceState.(_whom).(sTemp);
-		DiceState.(_whom).(sTemp) = w;
+		dv[j] = dv[k];
+		dv[k] = w;
+	}
+
+	for (k = 1; k <= 5; k++)
+	{
+		sDiceTemp = "d" + k;
+		DiceState.(_whom).(sDiceTemp) = dv[k];
 	}
 }
 // сравнение результата
@@ -1200,19 +1780,19 @@ bool EndTurnGame()
 		sTemp += NewStr() + XI_ConvertString("BoalGameContinue2");
 		ret = false;
 	}
-	if (ok == -1)
+	else if (ok == -1)
 	{
 		sTemp += NewStr() + XI_ConvertString("BoalGameOpenCards_5");
 		iHeroLose++;
 	}
-	if (ok == 1)
+	else if (ok == 1)
 	{
 		sTemp += NewStr() +	 RandSwear() + " " + XI_ConvertString("BoalGameOpenCards_1")+ GetLangSexPhrase("", "а") +".";
 		iHeroWin++;
 	}
 	EndGameCount(ok);
 	ResultStr = sTemp;
-	SetFormatedText("INFO_TEXT", sTemp);
+	SetInfoText(sTemp);
 	return ret;
 }
 
@@ -1222,21 +1802,23 @@ void ContinueGame()
 	{
 		dir_i		= -dir_i_start;
 		dir_i_start = dir_i;
-		NewGameBegin(true);
+		// > выбери, что нравится больше:
+		NewGameBegin(true);		// < банк переходит в следующий кон (оригинальная задумка)
+		//NewGameBegin(false);	// < банк обнуляется (поставленные деньги возвращаются игрокам)
 	}
 	else
 	{
 		if (iRate*6 > iMoneyP)
 		{
-			ResultStr = XI_ConvertString("BoalGameNoMoney2") + NewStr() + XI_ConvertString("BoalGameCheckGame_5");
-			SetFormatedText("INFO_TEXT",ResultStr);
+			ResultStr = XI_ConvertString("BoalGameNoMoney2") + NewStr() + sLngNoMore;
+			SetInfoText(ResultStr);
 			EndGameCount(-1);
 			iHeroLose++;
 		}
 		else//if (iRate*6 > iMoneyN)
 		{
-			ResultStr = XI_ConvertString("BoalGameNPCNoMoney2")+ GetLangSexPhrase("", "а") +"!" + NewStr() + XI_ConvertString("BoalGameCheckGame_5");
-			SetFormatedText("INFO_TEXT",ResultStr);
+			ResultStr = XI_ConvertString("BoalGameNPCNoMoney2")+ GetLangSexPhrase("", "а") +"!" + NewStr() + sLngNoMore;
+			SetInfoText(ResultStr);
 			EndGameCount(1);
 			iHeroWin++;
 		}
@@ -1253,24 +1835,24 @@ void NewNextGame()
 	openExit = true;
 	if (CheckNextGame() && rand(10) < 10) // есть деньги на игру
 	{
-		ResultStr += NewStr() + XI_ConvertString("BoalGameCheckGame_4");
+		ResultStr += NewStr() + sLngNext_4;
 		bLockClick = false;
 		SetDiceTip("");
 		SetDiceTip("restart");
 	}
 	else
 	{
-		ResultStr += NewStr() + XI_ConvertString("BoalGameCheckGame_5");
+		ResultStr += NewStr() + sLngNoMore;
 		npchar.game_over = true;
 		bLockClick = true;
 	}
-	SetFormatedText("INFO_TEXT",ResultStr);
+	SetInfoText(ResultStr);
 }
 
 string GetTypeName(int _type)
 {
-	Restrictor(&_type, 0, 7);
-	return XI_ConvertString("BoalGameDiceState_" + (_type + 1));
+	if (_type < 1 || _type > 7) return sLngDiceState[1]; // "ничего нет"
+	return sLngDiceState[_type + 1];
 }
 
 void SetDiceForTableRand()
@@ -1304,7 +1886,7 @@ void CompTurn()
 		{
 			UpdateTime();
 			//перебросим всегда первую фишку (это 100% 1)
-			SetFormatedText("INFO_TEXT",XI_ConvertString("BoalGameTurnNPC_4"));
+			SetInfoText(sLngTurnNPC_4);
 			// for test
 			ClickCompDice(1);
 			move_i = 0;
@@ -1328,7 +1910,7 @@ void CompTurn()
 		if (ok || ok2 || ok3)
 		{
 			ok = false;
-			SetFormatedText("INFO_TEXT",XI_ConvertString("BoalGameTurnNPC_5"));
+			SetInfoText(sLngTurnNPC_5);
 			for (i = 1; i<=6; i++)
 			{
 				sDiceTemp = "d"+i;
@@ -1365,7 +1947,7 @@ void CompTurn()
 			if (!CheckAttribute(npchar, "Quest.DiceCheats")) npchar.Quest.DiceCheats = 0;
 			npchar.Quest.DiceCheats = sti(npchar.Quest.DiceCheats) + 1;
 			//navy <--
-			SetFormatedText("INFO_TEXT",XI_ConvertString("BoalGameTurnNPC_5"));
+			SetInfoText(sLngTurnNPC_5);
 			ok = false;
 			if (sti(DiceState.Hero.Result.Type) == 1)
 			{
@@ -1399,7 +1981,7 @@ void CompTurn()
 		// жухло!!!!! <--
 	}
 	// решаем не перебрасывать
-	SetFormatedText("INFO_TEXT",XI_ConvertString("BoalGameTurnNPC_6"));
+	SetInfoText(sLngTurnNPC_6);
 	PostEvent("My_eCheckGame", 800);
 }
 
@@ -1427,7 +2009,6 @@ void RecalcAIDice(string _whom)
 {
 	int	   i;
 	string sTemp;
-	bool   ok;
 
 	for (i = 1; i<=6; i++)
 	{
@@ -1446,8 +2027,7 @@ void RecalcAIDice(string _whom)
 void UpdateTime()
 {
 	WaitDate("", 0, 0, 0, 0, 1);
-	SetFormatedText("TIME_TEXT", "" + GetQuestBookData());
-	SetFormatedText("STATS_TIME_TEXT", "" + GetSessionTime());
+	SetTimeTexts();
 }
 
 string GetSessionTime()
@@ -1458,7 +2038,12 @@ string GetSessionTime()
 	if (!CheckAttribute(PChar, "StartGameSession"))
 		PChar.StartGameSession = "0";
 
-	TEV.Gambling.Session = makefloat(GetQuestPastMinutesParam("StartGameSession") / 60.0);
+	// > пересчитываем ровно тогда, когда надо
+	int iMin = GetQuestPastMinutesParam("StartGameSession");
+	if (iMin == iSessMinCached) return sSessTimeCached;
+	iSessMinCached = iMin;
+
+	TEV.Gambling.Session = makefloat(iMin / 60.0);
 	string sM = makeint(stf("0." + FindStringAfterChar(TEV.Gambling.Session, ".")) * 60);
 	string sH = FindStringBeforeChar(TEV.Gambling.Session, ".");
 
@@ -1468,7 +2053,8 @@ string GetSessionTime()
 	if (sti(sM) < 10)
 		sM = "0" + sM;
 
-	return sH + ":" + sM;
+	sSessTimeCached = sH + ":" + sM;
+	return sSessTimeCached;
 }
 
 /*

@@ -308,7 +308,8 @@ void LAi_StartBoarding(int locType, ref echr, bool isMCAttack)
 	isMCAttack   = true;// boal 110804 fix всегда герой
 	if(isMCAttack)
 	{
-		deckID = GetShipLocationID(echr);
+		if (echr.id == "Royal_Margarita_Cap") deckID = "AoP_deck";
+		else deckID = GetShipLocationID(echr);
 	}else{
 		deckID = GetShipLocationID(mchr);
 	}
@@ -342,7 +343,7 @@ void LAi_StartBoarding(int locType, ref echr, bool isMCAttack)
 		{
             ChangeCrewExp(pchar, "Soldiers", 1);
             SendMessage(&Particles,"l", PS_CLEAR_CAPTURED); // повторное удаление партиклов, фикс огней в море.
-			LaunchRansackMain(GetMainCharacter(), echr, "captain");	  // на деле параметры LaunchRansackMain не важны совсем - все определеятеся от реалий
+			LaunchRansackMain(mchr, echr, "captain");	  // на деле параметры LaunchRansackMain не важны совсем - все определеятеся от реалий
             LAi_boarding_process = false;
 			Event(SHIP_CAPTURED, "l", sti(echr.index)); // TODO can be harmfull
 		}
@@ -387,7 +388,7 @@ void LAi_StartBoarding(int locType, ref echr, bool isMCAttack)
     }
     if (iMaxcrew < maxcrew) maxcrew = iMaxcrew;
     
-	if (boarding_location_type == BRDLT_SHIP && eclass != 7)  // на тартане каюты нет
+	if (boarding_location_type == BRDLT_SHIP && eclass != 7 && echr.id != "Royal_SanJacinto_Cap")  // на тартане каюты нет
 	{
     	boarding_enemy.ShipCabinLocationId = GetShipCabinID(echr);
 	}
@@ -407,7 +408,7 @@ void LAi_StartBoarding(int locType, ref echr, bool isMCAttack)
     ref officer;
     if(IsFort)
     {
-        mcrew = mcrew + GetTroopersCrewQuantity(GetMainCharacter()); // если нет перка, то нолик
+        mcrew = mcrew + GetTroopersCrewQuantity(mchr); // если нет перка, то нолик
         boarding_player_base_crew = mcrew;// учет всех кораблей
         //Максимальное количество человек
         Log_TestInfo("Итого: До расчёта mcrew = "+mcrew+ " ecrew = "+ ecrew + " bonus_enemy_hp = "+ bonus_enemy_hp + " bonus_player_hp = "+bonus_player_hp);
@@ -539,13 +540,19 @@ void LAi_LoadLocation(string locationID, int locType)
 		int locNum[20];
 		int locI;
 		int maxLocators = 2;
+		// ле Баск, шестой квест.
+		bool bAoPKeysLagoonFort = false;
 		
 		if (CheckAttribute(&Locations[locIndex], "boarding.locatorNum"))
 		{
 			maxLocators = sti(Locations[locIndex].boarding.locatorNum);
 		}
+		// ле Баск, шестой квест.
+		if (IsFort && boarding_enemy.id == "Maracaibo Fort Commander" && CheckAttribute(pchar, "questTemp.AoP.KeysLagoonFortAssault")) bAoPKeysLagoonFort = true;
 		locI = 0;
-		locNum[locI] = rand(maxLocators-1);
+		// ле Баск, шестой квест.
+		if (bAoPKeysLagoonFort) locNum[locI] = 0;
+		else locNum[locI] = rand(maxLocators-1);
 		string sLocType = "loc";
 		// определение стороны на палубе
 		if (CheckAttribute(&Locations[locIndex], "UpDeckType"))
@@ -608,9 +615,61 @@ void LAi_LoadLocation(string locationID, int locType)
 				logined = logined + 1;
 			}
 		}
+			//  врыв братишек для Сан-Хасинто
+		if (boarding_enemy.id == "Royal_SanJacinto_Cap" && !CheckAttribute(&Locations[locIndex], "CabinType"))
+		{
+			string sMyCrew[3];
+			sMyCrew[0] = "Fransua_Olone";
+			sMyCrew[1] = "Etien_Marso";
+			sMyCrew[2] = "Mary_Belfler";
+			
+			int q, qIdx;
+			ref ally;
+			
+			for(q = 0; q < 3; q++)
+			{
+				qIdx = GetCharacterIndex(sMyCrew[q]);
+				if (qIdx >= 0)
+				{
+					ally = &Characters[qIdx];
+					DeleteAttribute(ally, "location");
+					ally.location.loadcapture = true;
+					ChangeCharacterAddressGroup(ally, locationID, "rld", sLocType + rand(3));
+					LAi_SetWarriorType(ally);
+					LAi_group_MoveCharacter(ally, LAI_GROUP_PLAYER);
+				}
+			}
+		}
 		//Перегружаемся в локацию
+		// ле Баск, шестой квест.
+		if (bAoPKeysLagoonFort && !CheckAttribute(&Locations[locIndex], "CabinType"))
+		{
+			string sAoPAllies[6];
+			sAoPAllies[0] = "Mishel_le_Bask";
+			sAoPAllies[1] = "Fransua_Olone";
+			sAoPAllies[2] = "Mary_Belfler";
+			sAoPAllies[3] = "Rimalier";
+			sAoPAllies[4] = "Daniel_Monbar";
+			sAoPAllies[5] = "Etien_Marso";
+			int qAoP, qAoPIdx;
+			ref AoPAlly;
+			for (qAoP = 0; qAoP < 6; qAoP++)
+			{
+				qAoPIdx = GetCharacterIndex(sAoPAllies[qAoP]);
+				if (qAoPIdx < 0) continue;
+				AoPAlly = &Characters[qAoPIdx];
+				// ле Баск, шестой квест.
+				if (sAoPAllies[qAoP] == "Rimalier" && IsOfficer(AoPAlly)) continue;
+				DeleteAttribute(AoPAlly, "location");
+				AoPAlly.location.loadcapture = true;
+				ChangeCharacterAddressGroup(AoPAlly, locationID, "rld", sLocType + (4 + qAoP));
+				LAi_SetWarriorType(AoPAlly);
+				LAi_group_MoveCharacter(AoPAlly, LAI_GROUP_PLAYER);
+				LAi_SetImmortal(AoPAlly, true);
+				AoPAlly.AoP.KeysLagoonFortAlly = true;
+			}
+		}
 		boarding_location = locIndex;
-				
 		if(LoadLocation(&Locations[boarding_location]))
 		{
 			//работа с сундуком в каюте boal -->
@@ -748,6 +807,9 @@ void LAi_ReloadEndFade()
 		boarding_location = -1;
 		//Пересчитываем команду игрока
 
+		// > чистим атрибуты, записанные на реального оппонента (не фантома) TODO > чек
+//		if (CheckAttribute(boarding_enemy, "CaptanId")) DeleteAttribute(boarding_enemy, "CaptanId");
+//		if (CheckAttribute(boarding_enemy, "ShipCabinLocationId")) DeleteAttribute(boarding_enemy, "ShipCabinLocationId");
 		float crew = boarding_player_crew * boarding_player_crew_per_chr; // ВЫЖИВШИЕ офицеры - это не мартросы не должны влиять
 		// boal 22.01.2004 -->
 		ref mchar       = GetMainCharacter();
@@ -772,10 +834,11 @@ void LAi_ReloadEndFade()
 		{
 			if (iTemp > 0)
 			{
-				if (GetCargoGoods(mchar, GOOD_MEDICAMENT) < iTemp)
+				int iMed = GetCargoGoods(mchar, GOOD_MEDICAMENT);
+				if (iMed < iTemp)
 				{
-					deadCrewWOMedic = iTemp - GetCargoGoods(mchar, GOOD_MEDICAMENT); // умерли от ран
-					RemoveCharacterGoodsSelf(mchar, GOOD_MEDICAMENT, GetCargoGoods(mchar, GOOD_MEDICAMENT)); // все нулим
+					deadCrewWOMedic = iTemp - iMed; // умерли от ран
+					RemoveCharacterGoodsSelf(mchar, GOOD_MEDICAMENT, iMed); // все нулим
 					deadCrew += deadCrewWOMedic; // трупов больше
 					Log_Info(StringFromKey("InfoMessages_70", FindSailorString(deadCrewWOMedic, "No")));
 				}
@@ -784,7 +847,7 @@ void LAi_ReloadEndFade()
 					RemoveCharacterGoodsSelf(mchar, GOOD_MEDICAMENT, iTemp);
 					if (GetCargoGoods(mchar, GOOD_MEDICAMENT) < 16)
 					{
-						Log_Info(StringFromKey("InfoMessages_71", UpperFirst(XI_ConvertString("musicmod_s")), mchar.Ship.Name));
+						Log_Info(StringFromKey("InfoMessages_71", UpperFirst(XI_ConvertString("Continuous music ship")), mchar.Ship.Name));
 					}
 				}
 			}
@@ -934,7 +997,8 @@ void LAi_EnableReload()
 	
 	if (CheckAttribute(&TEV, "LootCollector.Mode") && !HasStrEx(loadedLocation.type, "boarding_cabine,residence", "|"))
 	{
-		if (sti(TEV.LootCollector.Mode) == 3)
+		int iLCMode = sti(TEV.LootCollector.Mode);
+		if (iLCMode == 3)
 		{
 			if (LootCollectorCheckCrew())
 			{
@@ -949,18 +1013,18 @@ void LAi_EnableReload()
 		}
 		else
 		{
-			if (sti(TEV.LootCollector.Mode) > 0)
+			if (iLCMode > 0)
 			{
 				TEV.LootCollector.CanBeRun = true;
 				
-				if (sti(TEV.LootCollector.Mode) == 2)
+				if (iLCMode == 2)
 				{
 					LootCollector();
 					//PlaySound("Gotcha");
 				}
 				else
 				{
-					if (sti(TEV.LootCollector.Mode) == 1)
+					if (iLCMode == 1)
 						Log_Info(StringFromKey("InfoMessages_74"));
 				}
 			}
@@ -983,6 +1047,8 @@ void LAi_EnableReload()
 			if (index != GetMainCharacterIndex())
 			{
 				ref chr = &Characters[index];
+				// ле Баск, шестой квест.
+				if (CheckAttribute(chr, "AoP.KeysLagoonFortAlly")) continue;
 				if (!LAi_IsDead(chr) && !IsOfficer(chr) && chr.model.animation != "mushketer") // boal && sd не нужны офицеры для матросов
 				{
 					if (chr.chr_ai.group == LAI_GROUP_PLAYER)
@@ -1009,6 +1075,10 @@ void LAi_EnableReload()
 			case 5: Locations[boarding_location].boarding.nextdeck = "Boarding_Cargohold"; break;
 			case 6: Locations[boarding_location].boarding.nextdeck = "Boarding_Cargohold"; break;
 			case 7: Locations[boarding_location].boarding.nextdeck = ""; break;
+		}
+		if (boarding_enemy.id == "Royal_SanJacinto_Cap")
+		{
+			Locations[boarding_location].boarding.nextdeck = "";
 		}
 	}
 	if (IsFort && Locations[boarding_location].boarding.nextdeck == "Boarding_bastion")
@@ -1091,7 +1161,10 @@ void LAi_SetBoardingActors(string locID)
 	if (!CheckAttribute(&Locations[locIndex], "CabinType"))
 	{
 		// не грузим матросов в каюту
-		for(i = LAi_numloginedcharacters; i < limit; i++)
+		// ле Баск, шестой квест.
+		int iPlayerCrewStart = LAi_numloginedcharacters;
+		if (IsFort && boarding_enemy.id == "Maracaibo Fort Commander" && CheckAttribute(pchar, "questTemp.AoP.KeysLagoonFortAssault") && iPlayerCrewStart < 10) iPlayerCrewStart = 10;
+		for(i = iPlayerCrewStart; i < limit; i++)
 		{
 			if(boarding_player_crew <= 0) break;
 			model = LAi_GetBoardingModel(mchr, &ani);
@@ -1204,10 +1277,20 @@ void LAi_SetBoardingActors(string locID)
 		
 		boarding_enemy_crew = boarding_enemy_crew - 1;
 
-		if (i == 0 && CheckAttribute(&Locations[locIndex], "CabinType")) //Спавним капитана
+		bool bSpawnCap = false;
+		if (CheckAttribute(&Locations[locIndex], "CabinType")) bSpawnCap = true;
+		if (boarding_enemy.id == "Royal_SanJacinto_Cap") bSpawnCap = true;
+
+		if (i == 0 && bSpawnCap) //Спавним капитана
 		{
 			ChangeAttributesFromCharacter(chr, boarding_enemy, true);
 			chr.CaptanId = boarding_enemy.id; // иначе у фантома свой ИД   // TODO поправить опечатку
+			// Ле Баск
+			if (boarding_enemy.id == "Royal_SanJacinto_Cap")
+			{
+				LAi_group_MoveCharacter(chr, "SAN_JACINTO_CAP_GROUP");
+				LAi_SetImmortal(chr, true);
+			}
 			boarding_enemy.CaptanId = boarding_enemy.id;
 			//капитану даем оружие получше, если можно
 			if (!CheckAttribute(chr, "SaveItemsForDead"))
@@ -1262,6 +1345,17 @@ void LAi_SetBoardingActors(string locID)
 			//}
 		}
 		else SetFantomParamEnemy(chr, false);
+		// ле Баск
+		if (boarding_enemy.id == "Royal_SanJacinto_Cap")
+		{
+			if (i > 0)
+			{
+				chr.chr_ai.hp_max = stf(chr.chr_ai.hp_max) * 3.0;
+				LAi_SetHP(chr, stf(chr.chr_ai.hp_max), stf(chr.chr_ai.hp_max));
+				chr.skill.Fencing = 100;
+				chr.skill.Pistol = 100;
+			}
+		}
 		SetNewModelToChar(chr); //иначе сабли не те, что реально
 		chr.AboardFantom = true;
 
@@ -1322,6 +1416,45 @@ void LAi_SetBoardingActors(string locID)
 	//Заставим драться эти 2 группы
 	LAi_group_FightGroupsEx(LAI_GROUP_PLAYER, LAI_GROUP_BRDENEMY, true, GetMainCharacterIndex(), -1, false, false);
 	LAi_group_SetCheckEvent(LAI_GROUP_BRDENEMY);
+	// ле Баск
+	if (boarding_enemy.id == "Royal_SanJacinto_Cap")
+	{
+		LAi_group_FightGroupsEx(LAI_GROUP_PLAYER, "SAN_JACINTO_CAP_GROUP", true, GetMainCharacterIndex(), -1, false, false);
+		LAi_group_SetCheckEvent("SAN_JACINTO_CAP_GROUP");
+		int finalEnemyCount = 0;
+		int customCapIndex = -1;
+
+		for(i = 0; i < LAi_numloginedcharacters; i++)
+		{
+			int cIdx = LAi_loginedcharacters[i];
+			if (cIdx >= 0)
+			{
+				ref checkChr = &Characters[cIdx];
+				if (checkChr.chr_ai.group == LAI_GROUP_BRDENEMY && LAi_IsDead(checkChr) == false)
+				{
+					finalEnemyCount++;
+				}
+				if (CheckAttribute(checkChr, "CaptanId") && checkChr.CaptanId == "Royal_SanJacinto_Cap")
+				{
+					customCapIndex = cIdx;
+				}
+			}
+		}
+
+		if (customCapIndex >= 0)
+		{
+			ref qCap = &Characters[customCapIndex];
+			if (finalEnemyCount > 0)
+			{
+				Log_SetStringToLog(StringFromKey("InfoMessages_264"));
+			}
+			else
+			{
+				LAi_SetImmortal(qCap, false);
+				Log_SetStringToLog(StringFromKey("InfoMessages_265"));
+			}
+		}
+	}
 }
 
 void SetFantomParamEnemy(ref rChr, bool bMushketer) // ~!mu
@@ -1372,6 +1505,61 @@ void SetFantomParamOur(ref rChr, bool bMushketer) // ~!mu
 void LAi_BoardingGroupKill()
 {
 	string group = GetEventData();
+	if (boarding_enemy.id == "Royal_SanJacinto_Cap") // ле Баск. Пятый квест.
+	{
+		if (group == LAI_GROUP_BRDENEMY)
+		{
+			int aliveCount = 0;
+			int i, chrIndex;
+			ref chr;
+			
+			for(i = 0; i < LAi_numloginedcharacters; i++)
+			{
+				chrIndex = LAi_loginedcharacters[i];
+				if (chrIndex >= 0)
+				{
+					chr = &Characters[chrIndex];
+					if (chr.chr_ai.group == LAI_GROUP_BRDENEMY && LAi_IsDead(chr) == false)
+					{
+						if (!CheckAttribute(chr, "CaptanId") || chr.CaptanId != "Royal_SanJacinto_Cap")
+						{
+							aliveCount++;
+						}
+					}
+				}
+			}
+
+			if (aliveCount > 0)
+			{
+				return; 
+			}
+			for(i = 0; i < LAi_numloginedcharacters; i++)
+			{
+				chrIndex = LAi_loginedcharacters[i];
+				if (chrIndex >= 0)
+				{
+					chr = &Characters[chrIndex];
+					if (CheckAttribute(chr, "CaptanId") && chr.CaptanId == "Royal_SanJacinto_Cap")
+					{
+						LAi_SetImmortal(chr, false);
+						Log_SetStringToLog(StringFromKey("InfoMessages_266"));
+						break;
+					}
+				}
+			}
+			return;
+		}
+		if (group == "SAN_JACINTO_CAP_GROUP")
+		{
+		TEV.StopTimeScale = true; // запрет ускорения
+		LAi_group_Delete("SAN_JACINTO_CAP_GROUP");
+		LAi_grp_alarmactive = false; // конец тревоги
+		LAi_LockFightMode(pchar, false);
+		LAi_SetFightMode(pchar, false);
+		DoQuestCheckDelay("Royal_jackpot_42", 5.0);
+		return;
+		}
+	}
 	if(group != LAI_GROUP_BRDENEMY) return;
 	// отключим шум абордажа (который включается при аларме в sound.c)
 
@@ -2168,8 +2356,9 @@ void LootCollectorRandItems()
 {
 	if (FindLocation("My_Deck") < 0 || GetCharacterShipClass(pchar) > 6)
 		return;
-	
-	int itemsTotal = rand(GetCharacterSPECIAL(pchar, SPECIAL_L));
+
+	int iLuck = GetCharacterSPECIAL(pchar, SPECIAL_L);
+	int itemsTotal = rand(iLuck);
 	int i, r, itemQty;
 	string itemID;
 	ref itemRef, locRef = &locations[FindLocation("My_Deck")];
@@ -2201,7 +2390,7 @@ void LootCollectorRandItems()
 					itemID = "jewelry" + (1 + rand(8));
 			}
 			
-			itemQty = rand(GetCharacterSPECIAL(pchar, SPECIAL_L));
+			itemQty = rand(iLuck);
 			itemRef = &Items[FindItem(itemID)];
 			
 			if (itemQty > 0)

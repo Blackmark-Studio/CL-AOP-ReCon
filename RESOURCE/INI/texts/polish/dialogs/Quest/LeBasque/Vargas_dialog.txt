@@ -1,0 +1,86 @@
+Vargas_dialog_1 {
+Ach, zakładam, że to ty jesteś kapitanem @<GetFullName>. Wiedziałem, że le Basque jest tchórzem, ale sądziłem, że starczy mu odwagi, by zjawić się tutaj osobiście.
+}
+Vargas_dialog_2 {
+Ty, Vargas, jesteś dla Michela niczym więcej niż natrętnym owadem. I nie uda ci się pokrzyżować jego planów. Złoto Maracaibo będzie nasze, ale ty już tego nie zobaczysz.
+}
+Vargas_dialog_3 {
+Złoto Maracaibo? Więc to wam wszystkim opowiada? Ha-ha! I z tą garstką głupców zamierza zdobyć najbardziej niezdobyty fort całego archipelagu?
+}
+Vargas_dialog_4 {
+Nie próbuj ze mną pogrywać. Nie jestem Estebanem Ruizem, żebym nabrał się na twoje tanie sztuczki.
+}
+Vargas_dialog_5_m {
+A jednak tu jesteś... Pewnie żal ci Ruiza? Mnie — nie. Był takim samym plugawym pomiotem piekła jak ty. Takim samym heretykiem i ladronem, niegodnym nawet chrześcijańskiego pochówku.
+}
+Vargas_dialog_5_f {
+A jednak tu jesteś... Pewnie żal ci Ruiza? Mnie — nie. Był takim samym plugawym pomiotem piekła jak ty. Taką samą heretyczką i piratką, niegodną nawet chrześcijańskiego pochówku.
+}
+Vargas_dialog_6 {
+Wepchnę ci te słowa z powrotem do gardła, łajdaku. Broń się!
+}
+Vargas_dialog_7_m {
+Ekhm... Dobrze, walczyć potrafisz. Ale jednego nadal nie pojąłeś: Michel le Basque nie jest dla mnie zwykłym wrogiem. Przysiągłem zdobyć jego głowę — i zdobędę ją. Nawet jeśli będę musiał utopić we krwi cały archipelag.
+}
+Vargas_dialog_7_f {
+Ekhm... Dobrze, walczyć potrafisz. Ale jednego nadal nie pojęłaś: Michel le Basque nie jest dla mnie zwykłym wrogiem. Przysiągłem zdobyć jego głowę — i zdobędę ją. Nawet jeśli będę musiał utopić we krwi cały archipelag.
+}
+Vargas_dialog_8 {
+Nic już nie zdobędziesz. To koniec. Szykuj się na spotkanie z diabłami, don Diego. Dawno na ciebie czekają.
+}
+Vargas_dialog_9_m {
+Chyba nie myślałeś, że będę grał uczciwie?
+}
+Vargas_dialog_9_f {
+Chyba nie myślałaś, że będę grał uczciwie?
+}
+Vargas_dialog_10 {
+Co?.. C-c-co to... Diabeł... Moja gło-wa...
+}
+Vargas_dialog_11_m {
+Więc żyjesz... Przeklęty szaman czerwonoskórych zapewniał mnie, że rzucił na moje ostrze trujące czary... „Jedna kropla tej trucizny wystarczy, żeby powalić byka”. Widocznie zbyt wcześnie wysłałem go do ojca Vincenta.
+}
+Vargas_dialog_11_f {
+Więc żyjesz... Przeklęty szaman czerwonoskórych zapewniał mnie, że rzucił na moje ostrze trujące czary... „Jedna kropla tej trucizny wystarczy, żeby powalić byka”. Widocznie zbyt wcześnie wysłałem go do ojca Vincenta.
+}
+Vargas_dialog_12 {
+To za tobą samym tęskni inkwizycja, Vargas. Podziwiam twoją przebiegłość. Ale nie udało ci się mnie zabić ani moździerzem, ani trucizną, ani ostrzem. A tam, w selwie, są moi ludzie. Poddaj się, albo umrzesz tu i teraz.
+}
+Vargas_dialog_13 {
+Śmierć? To wcale nie takie złe.
+Za to jaki stąd widok, @<GetFullName>. Tylko spójrz... Chociaż... Ty mnie nie zrozumiesz.
+Ja poznałem smak życia, widziałem miejsca, których wy, ladrones, nigdy nie ujrzycie... Byłem poza tym zapomnianym przez Boga archipelagiem i wracałem znów... za horyzont! Stałem na rufowym pokładzie galeonu zmierzającego ku przeklętemu źródłu Ponce de Leóna, ocierałem gryzący pot z czoła i patrzyłem, jak gwiazdy walczą z bezkresnym oceanem.
+Czułem sztormowy pasat we włosach, gdy smukłe karawele przecinały czarne wiry Morza Sargassowego, i widziałem, jak Armada de Barlovento płonie niczym sucha słoma i znika w otchłani. Widziałem to.
+Na Matkę Boską, czuję to teraz!..
+}
+Vargas_dialog_14 {
+Przeżyłeś to.
+}
+
+LeBasque_Diego_de_Vargas_1 {
+Po pierwsze, informacje. Ostatnio opowiadałeś mi plotki o portowych prostytutkach. Co tym razem wyprawia Le Basque?
+}
+
+LeBasque_Diego_de_Vargas_2 {
+I to wszystko?
+}
+
+LeBasque_Diego_de_Vargas_3 {
+Nazwa?
+}
+
+LeBasque_Diego_de_Vargas_4 {
+Ty to rozumiesz pierwszy, Guillaume.
+}
+
+LeBasque_Diego_de_Vargas_5 {
+Dowiedz się, jak nazywa się staruszek i dlaczego Le Basque go potrzebuje - a otrzymasz wszystko, o co poprosisz.
+}
+
+LeBasque_Diego_de_Vargas_6 {
+Dość narzekania, Guillaume. Oto zaliczka i list. Zawiera dalsze instrukcje. Następne spotkanie odbędzie się w latarni morskiej. O terminie zostaniesz powiadomiony osobno.
+}
+
+LeBasque_Diego_de_Vargas_7 {
+Mam nadzieję, że mnie nie zawiedziesz i znajdziesz coś wartościowego. I nawet nie myśl o targowaniu się, Raoul. Następnym razem zapłacę mniej za przeszukanie twojego ciała.
+}

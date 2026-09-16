@@ -475,12 +475,12 @@ Es sieht so aus, als würden sich die Spanier zurückziehen. Sie können dieser 
 ~
 Entkommen Sie dem Gefecht, indem Sie den Abstand zum feindlichen Schiff vergrößern. Die Entfernung zum Schiff sehen Sie durch das Fernrohr.
 ~
-Um das Fernrohr zu benutzen, gehen Sie an Deck ('Tab' standardmäßig) und halten Sie die 'Ctrl'-Taste gedrückt (standardmäßig).
+Um das Fernrohr zu benutzen, gehen Sie an Deck ('Tab' standardmäßig) und drücken Sie die 'Ctrl'-Taste gedrückt (standardmäßig).
 ~
 Wenn der Abstand zum Feind 1000 erreicht, können Sie das Schlachtfeld sicher verlassen.
 }
 BloodPrologue_SeaEscape_controlsimg1 {Sea_CameraSwitch}
-BloodPrologue_SeaEscape_controlsimg2 {TelescopeIn}
+BloodPrologue_SeaEscape_controlsimg2 {TelescopeMode}
 BloodPrologue_EnterMap_title {Zur Weltkarte wechseln}
 BloodPrologue_EnterMap_descr
 {

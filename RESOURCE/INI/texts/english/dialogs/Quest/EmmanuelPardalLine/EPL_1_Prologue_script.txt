@@ -1,0 +1,12 @@
+EPL_1_Prologue_script_1 {Señorita, I cannot sell on credit. You are not from around here. What if tomorrow you board a passing ship and disappear without a trace?}
+EPL_1_Prologue_script_2 {But I'm not asking for credit. I'll pay two thirds of the price right now, and I can work off the rest - help you or your wife.}
+EPL_1_Prologue_script_3 {It's not as though I have much work. I manage perfectly well on my own, and I'm not married. I can offer you two thirds of the goods...}
+EPL_1_Prologue_script_4 {Gasten Fox, can't you see that hardship is written all over the señorita's face despite her youth? Show some compassion.}
+EPL_1_Prologue_script_5 {What would you know about people, dear @<pchar>, when you couldn't see the scoundrel in your own stepfather, may he rest in peace.}
+EPL_1_Prologue_script_6 {Careful, Fox. You know I can lose my temper over the slightest thing.}
+EPL_1_Prologue_script_7 {Change your skirt for breeches before you start making threats. The commandant is no longer behind you, ready to cover for every one of your antics. That's friendly advice, so don't take it as an insult.}
+EPL_1_Prologue_script_8 {I've got something under my skirt too. It's called a carzoletta. Let me show you how well I can take care of myself, and give you some friendly advice in return: defend yourself!}
+EPL_1_Prologue_script_9 {Don't be a fool.}
+EPL_1_Prologue_script_10 {Defend yourself, or trade your breeches for a skirt!}
+EPL_1_Prologue_script_11 {Pirates captured the Spanish colony of La Vega and even attempted to attack Santo Domingo. They failed, though; every last one of them was cut down beneath the city walls.}
+EPL_1_Prologue_script_12 {Terrible news: pirates slaughtered our colony of La Vega. They say no one was spared. Thank God retribution has already caught up with them - every one of those villains fell beneath the walls of Santo Domingo in a failed attempt to take the city from the landward side.}

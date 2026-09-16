@@ -1270,3 +1270,52 @@ Y pon el Soleil Royal en condiciones; debe estar completamente lista para el com
 fra_Governor_313 {
 Muy bien, señor.
 }
+
+fra_Governor_314_m {
+Excelentísimo Señor, he venido en nombre de Michel le Basque.
+}
+fra_Governor_314_f {
+Excelentísimo Señor, he llegado en nombre de Michel le Basque.
+}
+fra_Governor_315 {
+¿Es así? Y, si se me permite preguntar, ¿qué le indicó el señor Le Basque que hiciera?
+}
+fra_Governor_316 {
+Le preocupa el destino de la flauta 'Rosa de los Vientos'. Por lo que sabemos, esperabas su llegada ayer.
+}
+fra_Governor_317 {
+Capitán, esto es un secreto de Estado y no tengo intención de comentarlo con usted. Estoy dispuesto a pasar por alto el hecho de que usted posea dicha información, pero no le recomiendo que espere más.
+}
+fra_Governor_318 {
+Por favor, no confunda mi insistencia con descortesía, pero debo explicarle las preocupaciones de Michel. Hay un hombre en este barco cuya llegada le interesa personalmente. Además, me pidió que le recordara que considera Tortuga su hogar y que siempre actuará en defensa de la isla.
+}
+fra_Governor_319 {
+¿Entonces sabe qué carga lleva a bordo?
+}
+fra_Governor_320 {
+No lo mencionó. Pero sospecha que Diego Vargas podría estar involucrado en la desaparición del barco.
+}
+fra_Governor_321 {
+Supongo que, puesto que estás aquí, tienes intención de ayudarme a buscar el barco, ¿verdad?
+}
+fra_Governor_322 {
+Exactamente, señor gobernador.
+}
+fra_Governor_323 {
+Bueno, acepto tu ayuda. El barco debe traer colonos y artesanos. Gente sin la cual tu puesto avanzado seguirá siendo un refugio para cazadores furtivos y piratas, en lugar de convertirse en una comuna francesa civilizada.
+}
+fra_Governor_324 {
+Por lo tanto, incluso semejante demora resulta alarmante. Si el barco es capturado, las posibilidades de encontrar a los colonos con vida disminuyen con cada hora que pasa.
+}
+fra_Governor_325 {
+Me alegra que lo entiendas. Se suponía que el Wind Rose aparecería ayer frente a la costa norte, pero el barco nunca llegó. No recibimos señales de socorro ni informes de tormenta. No alertaré a la guarnición ni sembraré la alarma basándome únicamente en sospechas. Y créeme, tengo buenas razones para esta prudencia.
+}
+fra_Governor_326 {
+¿Alguna idea de por dónde empezar a buscar?
+}
+fra_Governor_327 {
+Habla con mi secretario, Henri Tessier. Está recopilando los informes de los puestos de avanzada y los faros y tiene toda la información recibida hasta esta hora.
+}
+fra_Governor_328 {
+Gracias, Su Excelencia.
+}

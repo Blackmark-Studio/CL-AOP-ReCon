@@ -316,3 +316,48 @@ Well, you asked! This is a port town, not some village. Strangers show up here e
 Tortuga_Tavern_91 {
 Hmm... Well, I see. Thank you, @<npchar>.
 }
+Tortuga_Tavern_92 {
+They say you know a man who's looking for captains. Can you tell me how to find him?
+}
+Tortuga_Tavern_93 {
+Every third man here is looking for captains...
+}
+Tortuga_Tavern_94_m {
+From what I've heard, this man has an unusual job.
+}
+Tortuga_Tavern_94_f {
+From what I've heard, this man has an unusual job.
+}
+Tortuga_Tavern_95 {
+Oh, Captain, every job is unusual in its own way. It all depends on what you've already seen.
+}
+Tortuga_Tavern_96 {
+You know who I mean.
+}
+Tortuga_Tavern_97 {
+I understand only one thing... You're wasting my time with idle talk!
+}
+Tortuga_Tavern_98 {
+There. Now he's decided for himself that you're worth speaking to.
+}
+Tortuga_Tavern_99 {
+Does he always make people ask about him first, then come down himself?
+}
+Tortuga_Tavern_100 {
+Marceau likes to size a person up first. They say he has a good eye for people. If he came down to you, he saw something worthwhile.
+}
+Tortuga_Tavern_101 {
+Then I'll go speak with him.
+}
+Tortuga_Tavern_102 {
+I'm listening, Captain.
+}
+Tortuga_Tavern_103 {
+I need Marceau. Is he still upstairs?
+}
+Tortuga_Tavern_104 {
+Men like him rarely sit in one place. If you have news for him, look for him in the harbor aboard the 'Black Gull'.
+}
+Tortuga_Tavern_105 {
+Thank you.
+}

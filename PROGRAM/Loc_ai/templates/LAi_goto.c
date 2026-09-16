@@ -32,14 +32,11 @@ bool LAi_tmpl_goto_InitTemplate(aref chr)
 		isNew = true;
 		if(CheckAttribute(chr, "chr_ai.tmpl.group"))
 		{
-			if(CheckAttribute(chr, "chr_ai.tmpl."))
+			if(CheckAttribute(chr, "chr_ai.tmpl.locator"))
 			{
-				if(chr.chr_ai.tmpl.group != "")
+				if(chr.chr_ai.tmpl.group != "" && chr.chr_ai.tmpl.locator != "")
 				{
-					if(chr.chr_ai.tmpl.locator != "")
-					{
-						isNew = false;
-					}
+					isNew = false;
 				}
 			}
 		}

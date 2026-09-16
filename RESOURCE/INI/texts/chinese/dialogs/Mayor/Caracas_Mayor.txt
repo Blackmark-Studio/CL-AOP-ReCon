@@ -1,72 +1,72 @@
 Caracas_Mayor_1 {
-你找俺啥事？有话快说。
+你找我什么事？ 有话快说。 
 }
 Caracas_Mayor_2 {
-我听着呢，你想问啥？
+我听着呢， 你想问什么？ 
 }
 Caracas_Mayor_3 {
 @<RandPhraseSimple>
 }
 Caracas_Mayor_4 {
-你今天已经是第二次想问问题了……
+你今天已经是第二次想问问题了…… 
 }
 Caracas_Mayor_5 {
-今天都第三次了，你又想问问题……
+今天都第三次了， 你又想问问题…… 
 }
 Caracas_Mayor_6 {
-这到底什么时候才是个头啊？！我还得管城市，还有一堆事要忙，你怎么老是来问东问西的！
+这到底什么时候才是个头啊？ ！ 我还得管城市， 还有一堆事要忙， 你怎么老是来问东问西的！ 
 }
 Caracas_Mayor_7_m {
-我改主意了……
+我改主意了…… 
 }
 Caracas_Mayor_7_f {
-我改变主意了……
+我改变主意了…… 
 }
 Caracas_Mayor_8 {
-现在不是时候，也不是地方……
+现在不是时候， 也不是地方…… 
 }
 Caracas_Mayor_9 {
 @<RandPhraseSimple>
 }
 Caracas_Mayor_10 {
-对，没错……不过现在不行，等会儿吧……
+对， 没错…… 不过现在不行， 等会儿吧…… 
 }
 Caracas_Mayor_11 {
-会的，会的……只是晚点……
+会的， 会的…… 只是晚点…… 
 }
 Caracas_Mayor_12 {
-抱歉，@<GetAddress_FormToNPC>……
+抱歉， @<GetAddress_FormToNPC>…… 
 }
 Caracas_Mayor_13 {
-你都拿光了，还想要啥？
+你都拿光了， 还想要什么？ 
 }
 Caracas_Mayor_14 {
-你还有什么没抢到的吗？
+你还有什么没抢到的吗？ 
 }
 Caracas_Mayor_15 {
 @<RandPhraseSimple>
 }
 Caracas_Mayor_16 {
-最后再四处看看……
+最后再四处看看…… 
 }
 Caracas_Mayor_17_m {
-看看自己是不是忘了拿什么……
+看看自己是不是忘了拿什么…… 
 }
 Caracas_Mayor_17_f {
-看看自己是不是落下什么东西没拿……
+看看自己是不是落下什么东西没拿…… 
 }
 Caracas_Mayor_18 {
 @<RandPhraseSimple>
 }
 Caracas_Mayor_19 {
-你已经拿下了这座城。你想要什么？
+你已经拿下了这座城。 你想要什么？ 
 }
 Caracas_Mayor_20 {
-我是奉Jamaica总督Sir Thomas Modyford的命令行事，手里有Jamaican Council颁发的私掠许可证。
+我是奉牙买加总督托马斯.莫迪福德先生的命令行事， 手里有牙买加总督颁发的私掠许可证。 
 }
 Caracas_Mayor_21 {
-那又怎样？
+那又怎样？ 
 }
 Caracas_Mayor_22 {
-从现在起，Caracas归英王所有。所有税收、贸易关税及其他费用都必须交给新的英国管理当局。
+从现在起， 加拉加斯归英王所有。 所有税收、 贸易关税及其他费用都必须交给新的英国管理当局。 
 }

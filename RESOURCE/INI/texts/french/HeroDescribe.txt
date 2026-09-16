@@ -17,7 +17,7 @@ HeroDescribe_info
     heroModel_Х       - a list of models with commas and without spaces - may be less than a full list, in which case the first will be
             (without armour, light armour, medium armour, heavy armour, golden, clothes_1, clothes_2, clothes_3)
     heroType_Х        - hero type (important for starting parameters)
-        includes variants: Corsair, Merchant, Adventurer
+        includes variants: Corsair, Merchant, Adventurer, Inquisitor, Master, SecretAgent
     heroNation_Х      - hero's starting nation (neutral relations)
         includes variants: ENGLAND, FRANCE, SPAIN, HOLLAND
     sex_X             - sex (man, woman, skeleton)
@@ -49,7 +49,13 @@ Corsair {Par le passé, le personnage était prêt à boire tout ce qui coule, �
 
 Adventurer {Dans sa jeunesse, le personnage a toujours aimé l'aventure, et sa soif d'or et de sensations fortes l'a mené sur des chemins périlleux. En se retrouvant dans d'innombrables pétrins, il est devenu évident que l'on ne peut se fier qu'à une lame fidèle et à un pistolet. Ces leçons ont changé le personnage à jamais, le transformant en un aventurier prêt à tout risquer pour la gloire et la fortune.}
 
-hero_qty {6}
+Inquisitor {Rien ne donne autant confiance en l'avenir que la vraie foi. Rien n'inspire autant de crainte que la peur du châtiment divin. Tout le reste est entre les mains de notre Seigneur.}
+
+Master {Qu'est-ce qui peut pousser un homme exerçant un métier aussi paisible que celui d'artisan sur le sentier de la guerre ? Le désir de tout faire lui-même — créer comme détruire. Nous soignons et mutilons à la fois !}
+
+SecretAgent {Agent secret n'est pas un métier, c'est une vocation. Servir les intérêts d'un État ou d'un particulier exige des capacités et des compétences hors du commun. L'agent ne présente ni faiblesse particulière ni avantage marqué dans ses aptitudes. Il progresse de façon très équilibrée.}
+
+hero_qty {7}
 ps_hero_qty {29}
 
 heroName_1 {Peter}
@@ -92,35 +98,37 @@ hero_2
 
 ;{The young chevalier was born in Paris, in the family of an officer of the royal guard, in the last years of the reign of King Louis XIII. He served as a naval officer of the French Royal Navy, but an insatiable thirst for adventure threw him out of prosperous Europe into the jungles of the Caribbean archipelago. What is he looking for here? You will have to find the answer to this question; if not this time, then definitely in the next game...\n\nHas a questline at the start. (WIP)}
 
-heroName_3 {William}
-heroNameGen_3 {William}
-heroNameDat_3 {William}
-heroLastname_3 {Paterson}
-heroLastnameGen_3 {Paterson}
-heroLastNameDat_3 {Paterson}
-heroFace_3 {1003}
-heroModel_3 {Pat_0,Pat_1,Pat_2,Pat_3,Pat_4,Pat_5,Pat_6,Pat_7,Pat_8}
-heroType_3 {Merchant}
-heroNation_3 {England}
-sex_3 {man}
-animation_3 {man}
+heroName_3 {Emmanuelle}
+heroNameGen_3 {Emmanuelle}
+heroNameDat_3 {Emmanuelle}
+heroLastname_3 {Pardal}
+heroLastnameGen_3 {Pardal}
+heroLastNameDat_3 {Pardal}
+heroFace_3 {1021}
+heroModel_3 {Emmanuel_0,Emmanuel_1,Emmanuel_2,Emmanuel_3,Emmanuel_4,Emmanuel_5,Emmanuel_6,Emmanuel_7,Emmanuel_8}
+heroType_3 {Corsair}
+heroNation_3 {Spain}
+sex_3 {woman}
+animation_3 {Danielle}
 idLocation_3 {Estate}
 locatorLocation_3 {goto12}
 coordinateLocation_3 {9.14,7.83,0.15,0,22.45,5.67,-4.71}
 turnLocation_3 {4.42}
 hero_3
-{Les nobles intentions de ce jeune gentilhomme concernant le commerce honnête pour le bien de la nation et de son propre portefeuille se sont brisées contre la dure réalité. Il devra acquérir une licence commerciale et apprendre à se frayer un chemin vers la prospérité par le canon et la lame, en oubliant les manières hautaines de l'Ancien Monde...}
+{
+La mère d’Emmanuelle mourut en couches, et son père, un pirate renommé, ne pouvait garder la fillette auprès de lui. Il la confia donc à un couvent catholique près de Séville. Il fut strictement interdit aux religieuses de parler à Emmanuelle de ses parents. On donna à la fillette le prénom de sa mère et on lui dit que son père était le capitaine de passage d’un petit navire. Bien qu’il ne reparût jamais aux abords du couvent, de l’argent y était apporté chaque mois pour l’entretien et l’instruction d’Emmanuelle, même lorsqu’elle devint une jeune femme séduisante. Certains événements, ainsi que le sang d’un pirate légendaire qui coulait dans ses veines, la poussèrent à renoncer à prendre le voile et à partir pour les Caraïbes à la recherche de son père.
+}
 
-heroName_4 {Bart}
-heroNameGen_4 {Bart}
-heroNameDat_4 {Bart}
-heroLastname_4 {Portugais}
-heroLastnameGen_4 {Portugais}
-heroLastNameDat_4 {Portugais}
-heroFace_4 {1004}
-heroModel_4 {Port_0,Port_1,Port_2,Port_3,Port_4,Port_5,Port_6,Port_7,Port_8}
-heroType_4 {Corsair}
-heroNation_4 {Pirates}
+heroName_4 {William}
+heroNameGen_4 {William}
+heroNameDat_4 {William}
+heroLastname_4 {Paterson}
+heroLastnameGen_4 {Paterson}
+heroLastNameDat_4 {Paterson}
+heroFace_4 {1003}
+heroModel_4 {Pat_0,Pat_1,Pat_2,Pat_3,Pat_4,Pat_5,Pat_6,Pat_7,Pat_8}
+heroType_4 {Merchant}
+heroNation_4 {England}
 sex_4 {man}
 animation_4 {man}
 idLocation_4 {Estate}
@@ -128,18 +136,18 @@ locatorLocation_4 {goto12}
 coordinateLocation_4 {9.14,7.83,0.15,0,22.45,5.67,-4.71}
 turnLocation_4 {4.42}
 hero_4
-{Un bretteur portugais bien connu dans ces eaux. Il est l'auteur de l'un des plus anciens recueils de règles, connu chez les pirates sous le nom de "Code des Pirates". Bien que la chance n'ait pas toujours été de son côté, comme en témoignent ses cicatrices de combat. Mais les cicatrices ne font qu'embellir un vrai homme ! N'est-ce pas ?}
+{Les nobles intentions de ce jeune gentilhomme concernant le commerce honnête pour le bien de la nation et de son propre portefeuille se sont brisées contre la dure réalité. Il devra acquérir une licence commerciale et apprendre à se frayer un chemin vers la prospérité par le canon et la lame, en oubliant les manières hautaines de l'Ancien Monde...}
 
-heroName_5 {Diego}
-heroNameGen_5 {Diego}
-heroNameDat_5 {Diego}
-heroLastname_5 {Espinoza}
-heroLastnameGen_5 {Espinoza}
-heroLastNameDat_5 {Espinoza}
-heroFace_5 {1006}
-heroModel_5 {Esp_0,Esp_1,Esp_2,Esp_3,Esp_4,Esp_5,Esp_6,Esp_7,Esp_8}
-heroType_5 {Adventurer}
-heroNation_5 {Spain}
+heroName_5 {Bart}
+heroNameGen_5 {Bart}
+heroNameDat_5 {Bart}
+heroLastname_5 {Portugais}
+heroLastnameGen_5 {Portugais}
+heroLastNameDat_5 {Portugais}
+heroFace_5 {1004}
+heroModel_5 {Port_0,Port_1,Port_2,Port_3,Port_4,Port_5,Port_6,Port_7,Port_8}
+heroType_5 {Corsair}
+heroNation_5 {Pirates}
 sex_5 {man}
 animation_5 {man}
 idLocation_5 {Estate}
@@ -147,71 +155,67 @@ locatorLocation_5 {goto12}
 coordinateLocation_5 {9.14,7.83,0.15,0,22.45,5.67,-4.71}
 turnLocation_5 {4.42}
 hero_5
-{Qu'est-ce qui donne le pouvoir à un homme ? L'argent et la puissance. Et qu'est-ce qui donne la possibilité de posséder tout cela ? Ses connaissances et ses capacités. Ou les capacités des autres. Le talent pour trouver les bonnes solutions et la passion pour la richesse ont poussé notre héros à se lancer dans une aventure captivante aux Caraïbes.}
+{Un bretteur portugais bien connu dans ces eaux. Il est l'auteur de l'un des plus anciens recueils de règles, connu chez les pirates sous le nom de "Code des Pirates". Bien que la chance n'ait pas toujours été de son côté, comme en témoignent ses cicatrices de combat. Mais les cicatrices ne font qu'embellir un vrai homme ! N'est-ce pas ?}
 
-heroName_6 {Danielle}
-heroNameGen_6 {Danielle}
-heroNameDat_6 {Danielle}
-heroLastname_6 {Greene}
-heroLastnameGen_6 {Greene}
-heroLastNameDat_6 {Greene}
-heroFace_6 {1014}
-heroModel_6 {Dan_Howk_0,Dan_Howk_1,Dan_Howk_2,Dan_Howk_3,Dan_Howk_4,Dan_Howk_5,Dan_Howk_6,Dan_Howk_7,Dan_Howk_8}
-heroType_6 {Corsair}
-heroNation_6 {Pirates}
-sex_6 {woman}
-animation_6 {Danielle}
+heroName_6 {Diego}
+heroNameGen_6 {Diego}
+heroNameDat_6 {Diego}
+heroLastname_6 {Espinoza}
+heroLastnameGen_6 {Espinoza}
+heroLastNameDat_6 {Espinoza}
+heroFace_6 {1006}
+heroModel_6 {Esp_0,Esp_1,Esp_2,Esp_3,Esp_4,Esp_5,Esp_6,Esp_7,Esp_8}
+heroType_6 {Adventurer}
+heroNation_6 {Spain}
+sex_6 {man}
+animation_6 {man}
 idLocation_6 {Estate}
 locatorLocation_6 {goto12}
 coordinateLocation_6 {9.14,7.83,0.15,0,22.45,5.67,-4.71}
 turnLocation_6 {4.42}
 hero_6
-{Autrefois une célèbre aventurière au caractère exécrable, elle dénonça un complot des autorités anglaises et tenta de se venger d'un gouverneur conspirateur. Hélas, elle échoua et fut contrainte de se ranger du côté de son futur mari, Nathaniel Hawke. Bien qu'elle méprisât la gent masculine et ne s'entendît pas avec Nathaniel au début, le destin en décida autrement pour ce couple... Pourtant, même avec les années, son caractère ne s'est pas adouci, et elle continue de se mêler de ce qui ne la regarde pas.}
+{Qu'est-ce qui donne le pouvoir à un homme ? L'argent et la puissance. Et qu'est-ce qui donne la possibilité de posséder tout cela ? Ses connaissances et ses capacités. Ou les capacités des autres. Le talent pour trouver les bonnes solutions et la passion pour la richesse ont poussé notre héros à se lancer dans une aventure captivante aux Caraïbes.}
 
-heroName_7 {Blaze}
-heroNameGen_7 {Blaze}
-heroNameDat_7 {Blaze}
-heroLastname_7 {Sharp}
-heroLastnameGen_7 {Sharp}
-heroLastNameDat_7 {Sharp}
-heroFace_7 {1007}
-heroModel_7 {Blaze_0,Blaze_1,Blaze_2,Blaze_3,Blaze_4,Blaze_5,Blaze_6,Blaze_7,Blaze_8}
-heroType_7 {Adventurer}
+heroName_7 {Danielle}
+heroNameGen_7 {Danielle}
+heroNameDat_7 {Danielle}
+heroLastname_7 {Greene}
+heroLastnameGen_7 {Greene}
+heroLastNameDat_7 {Greene}
+heroFace_7 {1014}
+heroModel_7 {Dan_Howk_0,Dan_Howk_1,Dan_Howk_2,Dan_Howk_3,Dan_Howk_4,Dan_Howk_5,Dan_Howk_6,Dan_Howk_7,Dan_Howk_8}
+heroType_7 {Corsair}
 heroNation_7 {Pirates}
-sex_7 {man}
-animation_7 {man}
+sex_7 {woman}
+animation_7 {Danielle}
 idLocation_7 {Estate}
 locatorLocation_7 {goto12}
 coordinateLocation_7 {9.14,7.83,0.15,0,22.45,5.67,-4.71}
 turnLocation_7 {4.42}
 hero_7
-{
-Cutter Blaze - is the adopted son of legendary Nicholas Sharp. Blaze isn't really considering himself doing any great deeds like his father - he's content with the fun of piracy and adventure. Obviously great fame awaits him, as well as immense wealth and a high post. At least, he thinks so...
-~
-As for now Blaze is a regular of port taverns, lover of risks and drunk brawls. Women adore such a daredevil, but none managed to grab his attention for long. The seas, plunder and drinks - these things make Blaze's heart skip a beat!
-}
+{Autrefois une célèbre aventurière au caractère exécrable, elle dénonça un complot des autorités anglaises et tenta de se venger d'un gouverneur conspirateur. Hélas, elle échoua et fut contrainte de se ranger du côté de son futur mari, Nathaniel Hawke. Bien qu'elle méprisât la gent masculine et ne s'entendît pas avec Nathaniel au début, le destin en décida autrement pour ce couple... Pourtant, même avec les années, son caractère ne s'est pas adouci, et elle continue de se mêler de ce qui ne la regarde pas.}
 
-heroName_8 {Beatrice}
-heroNameGen_8 {Beatrice}
-heroNameDat_8 {Beatrice}
+heroName_8 {Blaze}
+heroNameGen_8 {Blaze}
+heroNameDat_8 {Blaze}
 heroLastname_8 {Sharp}
 heroLastnameGen_8 {Sharp}
 heroLastNameDat_8 {Sharp}
-heroFace_8 {1008}
-heroModel_8 {Beatric_0,Beatric_1,Beatric_2,Beatric_3,Beatric_4,Beatric_5,Beatric_6,Beatric_7,Beatric_8}
-heroType_8 {Corsair}
+heroFace_8 {1007}
+heroModel_8 {Blaze_0,Blaze_1,Blaze_2,Blaze_3,Blaze_4,Blaze_5,Blaze_6,Blaze_7,Blaze_8}
+heroType_8 {Adventurer}
 heroNation_8 {Pirates}
-sex_8 {woman}
-animation_8 {Beatrice}
+sex_8 {man}
+animation_8 {man}
 idLocation_8 {Estate}
 locatorLocation_8 {goto12}
 coordinateLocation_8 {9.14,7.83,0.15,0,22.45,5.67,-4.71}
 turnLocation_8 {4.42}
 hero_8
 {
-Flesh of the flesh of the great Nicholas Sharp. Insane and playful Beatrice breaks all the laws of the Coastal Brotherhood simply by existing. But there isn't even a single person who can say that to her - Beatrice dances with the blade as if she was born with it. Walking side-by-side with her friend Luck with a shining white smile.
+Cutter Blaze - is the adopted son of legendary Nicholas Sharp. Blaze isn't really considering himself doing any great deeds like his father - he's content with the fun of piracy and adventure. Obviously great fame awaits him, as well as immense wealth and a high post. At least, he thinks so...
 ~
-In the taverns one of many stories about the "Red Devil" can be heard - the name the sailors gave to Beatrice. Stories about how he never returns to port without plunder, how she cannot be caught, and so on and so forth.
+As for now Blaze is a regular of port taverns, lover of risks and drunk brawls. Women adore such a daredevil, but none managed to grab his attention for long. The seas, plunder and drinks - these things make Blaze's heart skip a beat!
 }
 
 heroName_9 {Charles}
@@ -466,14 +470,14 @@ hero_20
 Despite his secular past, he adapted to the cruel seas fairly quickly.
 }
 
-heroName_21 {Emmanuelle}
-heroNameGen_21 {Emmanuelle}
-heroNameDat_21 {Emmanuelle}
-heroLastname_21 {Esteban}
-heroLastnameGen_21 {Esteban}
-heroLastNameDat_21 {Esteban}
-heroFace_21 {1021}
-heroModel_21 {Angelica_0,Angelica_1,Angelica_2,Angelica_3,Angelica_4,Angelica_5,Angelica_6,Angelica_7,Angelica_8}
+heroName_21 {Beatrice}
+heroNameGen_21 {Beatrice}
+heroNameDat_21 {Beatrice}
+heroLastname_21 {Sharp}
+heroLastnameGen_21 {Sharp}
+heroLastNameDat_21 {Sharp}
+heroFace_21 {1008}
+heroModel_21 {Beatric_0,Beatric_1,Beatric_2,Beatric_3,Beatric_4,Beatric_5,Beatric_6,Beatric_7,Beatric_8}
 heroType_21 {Corsair}
 heroNation_21 {Pirates}
 sex_21 {woman}
@@ -484,7 +488,9 @@ coordinateLocation_21 {9.14,7.83,0.15,0,22.45,5.67,-4.71}
 turnLocation_21 {4.42}
 hero_21
 {
-Emmanuelle's mother died in childbirth, and her father, a famous pirate, couldn't take the girl to raise her, which is why he brought her over to a catholic monastery near Sevielle. Nuns were prohibited to talk about her parents with Emmanuelle, so she was given her mother's familyname and was told that her father was a traveling captain of a small vessel. Even though her father never ever appeared once more around these parts, every month money was brought over for Emmanuelle's living expenses, even when she grew up into a young and beautiful woman. Certain circumstances and the blood of a legendary pirate forced her to deny becoming a nun herself to instead travel to the Caribbeans and find her father.
+Flesh of the flesh of the great Nicholas Sharp. Insane and playful Beatrice breaks all the laws of the Coastal Brotherhood simply by existing. But there isn't even a single person who can say that to her - Beatrice dances with the blade as if she was born with it. Walking side-by-side with her friend Luck with a shining white smile.
+~
+In the taverns one of many stories about the "Red Devil" can be heard - the name the sailors gave to Beatrice. Stories about how he never returns to port without plunder, how she cannot be caught, and so on and so forth.
 }
 
 heroName_22 {Alfonso}

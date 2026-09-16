@@ -1,36 +1,36 @@
 Cartahena_ItemTrader_1 {
-什么问题？
+什么问题？ 
 }
 Cartahena_ItemTrader_2 {
-有什么事需要俺帮忙吗，@<GetAddress_Form>?
+有什么事需要我帮忙吗， @<GetAddress_Form>?
 }
 Cartahena_ItemTrader_3 {
 @<RandPhraseSimple>
 }
 Cartahena_ItemTrader_4 {
-又有问题啊，@<GetAddress_Form>……
+又有问题啊， @<GetAddress_Form>…… 
 }
 Cartahena_ItemTrader_5 {
-问题这么多……要不要来做点生意，@<GetAddress_Form>?
+问题这么多…… 要不要来做点生意， @<GetAddress_Form>?
 }
 Cartahena_ItemTrader_6 {
-听着，咱们还要浪费多少时间在这些闲聊上？
+听着， 咱们还要浪费多少时间在这些闲聊上？ 
 }
 Cartahena_ItemTrader_7 {
-没问题……
+没问题…… 
 }
 Cartahena_ItemTrader_8 {
-我现在没什么可说的。
+我现在没什么可说的。 
 }
 Cartahena_ItemTrader_9 {
 @<RandPhraseSimple>
 }
 Cartahena_ItemTrader_10 {
-唉，又来……
+唉， 又来…… 
 }
 Cartahena_ItemTrader_11 {
-是啊，还是讲讲价比较好……
+是啊， 还是讲讲价比较好…… 
 }
 Cartahena_ItemTrader_12 {
-嗯，抱歉，商人……
+嗯， 抱歉， 商人…… 
 }

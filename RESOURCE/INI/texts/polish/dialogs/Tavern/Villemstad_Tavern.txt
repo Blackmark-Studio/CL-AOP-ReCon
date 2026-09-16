@@ -463,3 +463,18 @@ Zrozumiałem. Już biegnę. Dzięki!
 Villemstad_Tavern_137_f {
 Zrozumiałam. Już biegnę. Dziękuję ci!
 }
+Villemstad_Tavern_138 {
+Wśród twoich gości są Hiszpanie. Wiesz, skąd przybyli albo na jakim statku przypłynęli?
+}
+Villemstad_Tavern_139 {
+Nie mam teraz czasu na pogaduszki z gośćmi. Hiszpanie, Portugalczycy... tylko sam morski diabeł jeszcze dziś tu nie zajrzał.
+}
+Villemstad_Tavern_140 {
+Czyli interes dobrze idzie?
+}
+Villemstad_Tavern_141 {
+Grzechem byłoby narzekać. Niemal co wieczór gubernator urządza w rezydencji przyjęcia z okazji osiągnięcia pełnoletności przez swoje córki. To przybędzie jakiś poseł, to znów ktoś inny, a wszyscy przypływają jakimiś statkami. Marynarzy schodzi się tylu, że ledwie nadążamy z tacami. Lepiej zajrzyj do zarządu portu; każdy kapitan musi się tam zgłosić. Ach! Zresztą po co ja ci to tłumaczę?
+}
+Villemstad_Tavern_142 {
+Tak, chyba właśnie tak zrobię.
+}

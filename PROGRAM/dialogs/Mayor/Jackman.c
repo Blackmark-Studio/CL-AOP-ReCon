@@ -696,6 +696,7 @@ void ProcessDialogEvent()
 			}
 			else
 			{
+				pchar.quest.CaptainComission_SellSlave.over = "yes";
 				dialog.text = StringFromKey("Jackman_156", pchar, sTemp);
 				link.l1 = StringFromKey("Jackman_157", pchar);
 				link.l1.go = "CapComission2_2";

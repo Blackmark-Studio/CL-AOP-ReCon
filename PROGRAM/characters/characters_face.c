@@ -646,7 +646,7 @@ void FaceMaker(aref rCharacter)
 		//case "Hopkins"		:		rCharacter.FaceId = 2002; 	break; //Хопкинс
 		
 		// квестовые офицеры
-		// линейка Блада
+		// линейка Блада - Пролог
 		case "Blood5"			:		rCharacter.FaceId = 1001; 	break; // кандидат к удалению
 		case "blood_bomj"		:		rCharacter.FaceId = 1001; 	break; // кандидат к удалению
 		case "Pitt"				:		rCharacter.FaceId = 2003; 	break; // Джереми Питт
@@ -709,7 +709,7 @@ void FaceMaker(aref rCharacter)
 		case "Bartholomew_Sharp":		rCharacter.FaceId = 2066; 	break; // Бартоломью Шарп
 		case "EdwardLow"		:		rCharacter.FaceId = 2067; 	break; // Эдвард Лоу
 		case "Goodley"			:		rCharacter.FaceId = 2068; 	break; // капитан Гудли
-		case "RockBrasilian"	:		rCharacter.FaceId = 2069; 	break; // Рок Бразилец
+		case "Roche"			:		rCharacter.FaceId = 2069; 	break; // Рок Бразилец
 		
 		// Кондотьер	
 		case "Snakeman_Yang"	:		rCharacter.FaceId = 2080; 	break; // Снейкман Янг (можно сделать)
@@ -781,6 +781,34 @@ void FaceMaker(aref rCharacter)
 		// Пиратская Мода
 		case "LabbeLiliana"		:		rCharacter.FaceId = 2333; break; // Лелиана Лаббе (ремастер)
 		case "LabbeVincent"		:		rCharacter.FaceId = 2334; break; // Винсен Лаббе (ремастер)
+
+		// линейка Пардаль - Пролог
+		case "Sofia_Piedad"		:		rCharacter.FaceId = 2350; 	break;
+
+		// На карнавале
+		case "WomanBal1"		:		rCharacter.FaceId = 179; 	break;
+		case "WomanBal2"		:		rCharacter.FaceId = 154; 	break;
+		case "WomanBal3"		:		rCharacter.FaceId = 177; 	break;
+		case "WomanBal4"		:		rCharacter.FaceId = 177; 	break;
+		case "ManBal1"			:		rCharacter.FaceId = 1; 		break;
+		case "ManBal2"			:		rCharacter.FaceId = 1; 		break;
+		case "ManBal3"			:		rCharacter.FaceId = 1; 		break;
+		case "ManBal4"			:		rCharacter.FaceId = 2060; 	break;
+		case "ManBal5"			:		rCharacter.FaceId = 1; 		break;
+		case "deSeguesa"		:		rCharacter.FaceId = 1006; 	break;
+
+		// DLC Буканьеры "Ле Баск"
+		case "LeBasque"			:		rCharacter.FaceId = 2401; 	break; // Мишель ле Баск
+		case "Estienne_Marso"	:		rCharacter.FaceId = 2402; 	break; // Этьен Марсо
+		case "Jacko"			:		rCharacter.FaceId = 2403; 	break; // Жако
+		case "Jacko_nohat"		:		rCharacter.FaceId = 2403; 	break; // Жако без шляпы
+		case "Fransua_Olone"	:		rCharacter.FaceId = 2404; 	break; // Франсуа Олоне
+		case "Daniel_Montbars"	:		rCharacter.FaceId = 2405; 	break; // Даниэль Монбар
+		case "Mary_Belfler"		:		rCharacter.FaceId = 2406; 	break; // Мари Бельфлёр
+		case "Diego_Vargas"		:		rCharacter.FaceId = 2407; 	break; // Диего Варгас
+
+		// линейка Блада - 1 миссия
+		case "FelixMendoza"		:		rCharacter.FaceId = 2426; 	break; // Феликс Мендоза
 	}
 }
 

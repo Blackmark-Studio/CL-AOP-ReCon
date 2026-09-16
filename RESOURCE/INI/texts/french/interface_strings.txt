@@ -16,3 +16,13 @@ Allez-vous la payer ?
 Officer info {Vos officiers réclament leur solde mensuelle :}
 All info {Montant net :}
 Insert Disk Ok {Veuillez insérer le premier disque du jeu.}
+
+BadSaveNoVersion {
+Impossible de déterminer la version du jeu correspondant à la sauvegarde sélectionnée
+}
+BadSaveVersion {
+Version du jeu de la sauvegarde sélectionnée
+}
+BadSaveInfo {
+Cette version peut être restaurée via Steam.
+}

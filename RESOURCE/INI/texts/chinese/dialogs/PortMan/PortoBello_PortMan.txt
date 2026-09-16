@@ -1,8 +1,8 @@
 PortoBello_PortMan_1 {
-什么问题？
+什么问题？ 
 }
 PortoBello_PortMan_2 {
-有什么事需要俺帮忙吗，@<GetAddress_Form>?
+有什么事需要我帮忙吗， @<GetAddress_Form>?
 }
 PortoBello_PortMan_3 {
 @<RandPhraseSimple>
@@ -11,16 +11,16 @@ PortoBello_PortMan_4 {
 前阵子你试图问我一个问题@<GetAddress_Form>...
 }
 PortoBello_PortMan_5 {
-你今天已经第三次提这事了……
+你今天已经第三次提这事了…… 
 }
 PortoBello_PortMan_6 {
-听着，要是你不是来办港口的事儿，别拿问题来烦我。
+听着， 要是你不是来办港口的事儿， 别拿问题来烦我。
 }
 PortoBello_PortMan_7_m {
-我改主意了……
+我改主意了…… 
 }
 PortoBello_PortMan_7_f {
-我改变主意了……
+我改变主意了…… 
 }
 PortoBello_PortMan_8 {
 我现在没什么可说的。
@@ -29,23 +29,23 @@ PortoBello_PortMan_9 {
 @<RandPhraseSimple>
 }
 PortoBello_PortMan_10 {
-嗯，我的记忆好像出了点问题……
+嗯， 我的记忆好像出了点问题…… 
 }
 PortoBello_PortMan_11 {
-看来第三次终于成了啊……
+看来第三次终于成了啊…… 
 }
 PortoBello_PortMan_12 {
-不好意思，港口的事我现在没兴趣。
+不好意思， 港口的事我现在没兴趣。
 }
 PortoBello_PortMan_13_m {
-你好，请问你知道Captain François Gontier驾驶他的corvette去了哪里吗？我有个重要任务要交给他。
+你好， 请问你知道船长弗朗索瓦.贡蒂尔驾驶他的巡航舰去了哪里吗？ 我有个要紧的事要找他。
 }
 PortoBello_PortMan_13_f {
-你好，请问Captain François Gontier带着他的corvette去哪儿了？我有个重要任务要交给他。
+你好， 请问你知道船长弗朗索瓦.贡蒂尔驾驶他的巡航舰去了哪里吗？ 我有个要紧的事要找他。
 }
 PortoBello_PortMan_14 {
-你说有要紧事？那咱们看看吧。嗯……François Gontier，护卫舰‘@<pchar>’……按记录，Gontier先生是去了Jamaica。
+你说有要紧事？ 那咱们看看吧。 嗯…… 弗朗索瓦.贡蒂尔， 巡航舰“@<pchar>”…… 按记录， 贡蒂尔先生是去了牙买加。
 }
 PortoBello_PortMan_15 {
-谢谢你！你帮了我大忙！
+谢谢你！ 你帮了我大忙！ 
 }

@@ -1,0 +1,36 @@
+Loren_dialog_1 {
+Capitaine @<pchar>. Un peu de poisson frais ?
+}
+Loren_dialog_2 {
+Nous nous connaissons ?
+}
+Loren_dialog_3 {
+Tout dépend de ce que vous appelez se connaître. J'ai beaucoup entendu parler de vous.
+}
+Loren_dialog_4_m {
+Tant mieux. Je ne suis pas venu pour le poisson. J'attends un... ami. Il devait jeter l'ancre ici dès hier, à bord de la flûte « Rose des vents ».
+}
+Loren_dialog_4_f {
+Tant mieux. Je ne suis pas venue pour le poisson. J'attends un... ami. Il devait jeter l'ancre ici dès hier, à bord de la flûte « Rose des vents ».
+}
+Loren_dialog_5 {
+Une flûte... Une de ces grosses coques ventrues et lourdes dont ils raffolent en Europe. Il y en a bien eu une ici. La nuit dernière.
+}
+Loren_dialog_6 {
+Et les guetteurs du phare ne l'ont pas remarquée ?
+}
+Loren_dialog_7 {
+Les guetteurs surveillent les feux de signal et les pavillons. Or ce bâtiment avançait dans l'obscurité complète : pas une lanterne à la poupe, pas un fanion au mât. Il longeait la côte comme un espion qui se glisse devant une patrouille, ne prenant le vent qu'avec ses huniers. Dans le noir, il a failli percuter des contrebandiers qui naviguaient eux aussi sans feux. Grâce à eux, d'ailleurs : ils n'ont pas gâché ma pêche nocturne.
+}
+Loren_dialog_8 {
+Où allait-il ? Vers les côtes espagnoles ?
+}
+Loren_dialog_9 {
+J'en doute. Mes amis ont accosté près du phare, et la flûte faisait route à l'est. Je pense qu'elle comptait contourner l'île et mouiller quelque part du côté de la plage de l'Œil-de-Poisson. À moins qu'elle n'ait obliqué vers Michel le Basque pour rendre visite à ses boucaniers.
+}
+Loren_dialog_10 {
+C'est peu probable. Merci, Loren.
+}
+Loren_dialog_11 {
+Bonne route, capitaine.
+}

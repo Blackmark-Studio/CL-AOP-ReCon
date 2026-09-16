@@ -1306,7 +1306,7 @@ int LocationInitJamaica(int n)
 	locations[n].townsack = "PortRoyal";
 	locations[n].lockWeather = "Inside";
 	//Sound
-	locations[n].type = "sklad";
+	locations[n].type = "house";
 	locations[n].fastreload = "PortRoyal";
 	locations[n].islandId = "Jamaica";
 	//Models
@@ -1344,7 +1344,7 @@ int LocationInitJamaica(int n)
 	locations[n].townsack = "PortRoyal";
 	locations[n].lockWeather = "Inside";
 	//Sound
-	locations[n].type = "sklad";
+	locations[n].type = "house";
 	locations[n].fastreload = "PortRoyal";
 	locations[n].islandId = "Jamaica";
 	//Models
@@ -2415,28 +2415,28 @@ int LocationInitJamaica(int n)
     //locations[n].reload.l38.disable = 1; // Закроем на совсем
 	
 	locations[n].reload.l20.name = "reload2";
-	locations[n].reload.l20.go = "Smallhome_K2";
+	locations[n].reload.l20.go = "FortOrange_Smallhome_K2";
 	locations[n].reload.l20.emerge = "reload1";
 	locations[n].reload.l20.autoreload = "0";
 	locations[n].reload.l20.label = "House";
     //locations[n].reload.l38.disable = 1; // Закроем на совсем
 	
 	locations[n].reload.l21.name = "reload14";
-	locations[n].reload.l21.go = "Smallhome_K3";
+	locations[n].reload.l21.go = "FortOrange_Smallhome_K3";
 	locations[n].reload.l21.emerge = "reload1";
 	locations[n].reload.l21.autoreload = "0";
 	locations[n].reload.l21.label = "House";
     //locations[n].reload.l21.disable = 1; // Закроем на совсем
 	
 	locations[n].reload.l22.name = "reload18";
-	locations[n].reload.l22.go = "TripleHouse_T1"; //тут есть коммонка CommonFlamHouse
+	locations[n].reload.l22.go = "FortOrange_TripleHouse_T1"; //тут есть коммонка CommonFlamHouse
 	locations[n].reload.l22.emerge = "reload1";
 	locations[n].reload.l22.autoreload = "0";
 	locations[n].reload.l22.label = "House";
     //locations[n].reload.l38.disable = 1; // Закроем на совсем
 	
 	locations[n].reload.l23.name = "reload17";
-	locations[n].reload.l23.go = "FOrange_Hut3";
+	locations[n].reload.l23.go = "FortOrange_Hut3";
 	locations[n].reload.l23.emerge = "reload1";
 	locations[n].reload.l23.autoreload = "0";
 	locations[n].reload.l23.label = "House";
@@ -2453,7 +2453,7 @@ int LocationInitJamaica(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	// Дом Трехэтажный
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	locations[n].id = "TripleHouse_T1";
+	locations[n].id = "FortOrange_TripleHouse_T1";
 	locations[n].id.label = "House";
 	locations[n].image = "loading\inside\largehouse01.tga";
 	//Town sack
@@ -2502,7 +2502,7 @@ int LocationInitJamaica(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	// Багованная хата
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	locations[n].id = "Smallhome_K3";
+	locations[n].id = "FortOrange_Smallhome_K3";
 	locations[n].id.label = "House";
 	locations[n].image = "loading\inside\SmallHouse_inside.tga";
 	//Town sack
@@ -2542,7 +2542,7 @@ int LocationInitJamaica(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	// Маленький дом из ПКМ
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	locations[n].id = "Smallhome_K2";
+	locations[n].id = "FortOrange_Smallhome_K2";
 	locations[n].id.label = "House";
 	locations[n].image = "loading\inside\Smallhome.tga";
 	locations[n].MustSetReloadBack = true;
@@ -2583,7 +2583,7 @@ int LocationInitJamaica(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	// Дом кузнеца с камином
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	locations[n].id = "FOrange_Hut3";
+	locations[n].id = "FortOrange_Hut3";
 	locations[n].id.label = "House";
 	locations[n].image = "loading\inside\Hut3.tga";
 	locations[n].MustSetReloadBack = true;

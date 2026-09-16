@@ -1863,6 +1863,10 @@ void ProcessDialogEvent()
 			AddQuestUserData(sTitle, "sShipName", npchar.quest.SeekCap.shipName);
 			AddQuestUserData(sTitle, "sCapName", npchar.quest.SeekCap.capName);
 			AddQuestUserData(sTitle, "sName", GetFullName(npchar));
+
+			sNPCidx = npchar.index;
+			pchar.questTemp.SeekCap.(sNPCidx) = "NM_battle";
+			SeekCap_ClearIrrelevantQuestCharacters();
 		break;
 
 		case "SCQ_NM_prisoner": //вариант В
@@ -1920,6 +1924,10 @@ void ProcessDialogEvent()
 			AddQuestUserData(sTitle, "sShipName", npchar.quest.SeekCap.shipName);
 			AddQuestUserData(sTitle, "sCapName", npchar.quest.SeekCap.capName);
 			AddQuestUserData(sTitle, "sName", GetFullName(npchar));
+
+			sNPCidx = npchar.index;
+			pchar.questTemp.SeekCap.(sNPCidx) = "NM_prisoner";
+			SeekCap_ClearIrrelevantQuestCharacters();
 		break;
 
 		case "SCQ_NM_peace": //вариант С
@@ -1972,6 +1980,10 @@ void ProcessDialogEvent()
 			AddQuestUserData(sTitle, "sShipName", npchar.quest.SeekCap.shipName);
 			AddQuestUserData(sTitle, "sCapName", npchar.quest.SeekCap.capName);
 			AddQuestUserData(sTitle, "sName", GetFullName(npchar));
+
+			sNPCidx = npchar.index;
+			pchar.questTemp.SeekCap.(sNPCidx) = "NM_peace";
+			SeekCap_ClearIrrelevantQuestCharacters();
 		break;
 
 		//--> разговор на суше, вариант А
@@ -2357,6 +2369,7 @@ void ProcessDialogEvent()
 			if (CheckAttribute(sld, "questSeekCap") && sti(sld.questSeekCap) > 0) sld.questSeekCap = sti(sld.questSeekCap) - 1;
 			npchar.lifeDay = 0;
 			LAi_CharacterDisableDialog(npchar);
+			DeleteAttribute(npchar, "talker");
 			DialogExit();
 		break;
 		case "SCQ_exit_clear":
@@ -2374,6 +2387,7 @@ void ProcessDialogEvent()
 			pchar.quest.(sTemp).over = "yes"; //снимаем прерывание смерть квестодателя
 			npchar.lifeDay = 0;
 			LAi_CharacterDisableDialog(npchar);
+			DeleteAttribute(npchar, "talker");
 			DialogExit();
 		break;
 		//выбираем квест
@@ -2424,7 +2438,8 @@ void ProcessDialogEvent()
 			link.l1 = StringFromKey("ForAll_dialog_522");
 			link.l1.go = "exit";
 			//==> ставим квестодателя в церковь
-			DeleteAttribute(&npchar, "talker"); //что бы не уточнял в тот же день как у нас дела
+			DeleteAttribute(npchar, "talker"); //что бы не уточнял в тот же день как у нас дела
+			DeleteAttribute(npchar, "LifeDay");
 			pchar.quest.SeekShip_Stay.win_condition.l1 = "ExitFromLocation";
 			npchar.location = npchar.city + "_church";
 			npchar.location.locator = "goto2";
@@ -2447,6 +2462,7 @@ void ProcessDialogEvent()
 			// evganat - генераторы
 			sNPCidx = npchar.index;
 			pchar.questTemp.SeekCap.(sNPCidx) = "slave";
+			SeekCap_ClearIrrelevantQuestCharacters();
 		break;
 		//пират похитил жену у ситизена
 		case "SCQ_RapeWife":
@@ -2483,7 +2499,8 @@ void ProcessDialogEvent()
 			link.l1 = StringFromKey("ForAll_dialog_533");
 			link.l1.go = "exit";
 			//==> ставим квестодателя в церковь
-			DeleteAttribute(&npchar, "talker"); //что бы не уточнял в тот же день как у нас дела
+			DeleteAttribute(npchar, "talker"); //что бы не уточнял в тот же день как у нас дела
+			DeleteAttribute(npchar, "LifeDay");
 			pchar.quest.SeekShip_Stay.win_condition.l1 = "ExitFromLocation";
 			npchar.location = npchar.city + "_church";
 			npchar.location.locator = "goto2";
@@ -2507,6 +2524,7 @@ void ProcessDialogEvent()
 			// evganat - генераторы
 			sNPCidx = npchar.index;
 			pchar.questTemp.SeekCap.(sNPCidx) = "rapewife";
+			SeekCap_ClearIrrelevantQuestCharacters();
 		break;
 		//поиски земляка
 		case "SCQ_Friend":
@@ -2538,7 +2556,8 @@ void ProcessDialogEvent()
 			link.l1 = StringFromKey("ForAll_dialog_544");
 			link.l1.go = "exit";
 			//==> ставим квестодателя в церковь
-			DeleteAttribute(&npchar, "talker"); //что бы не уточнял в тот же день как у нас дела
+			DeleteAttribute(npchar, "talker"); //что бы не уточнял в тот же день как у нас дела
+			DeleteAttribute(npchar, "LifeDay");
 			pchar.quest.SeekShip_Stay.win_condition.l1 = "ExitFromLocation";
 			npchar.location = npchar.city + "_church";
 			npchar.location.locator = "goto2";
@@ -2560,6 +2579,7 @@ void ProcessDialogEvent()
 			// evganat - генераторы
 			sNPCidx = npchar.index;
 			pchar.questTemp.SeekCap.(sNPCidx) = "friend";
+			SeekCap_ClearIrrelevantQuestCharacters();
 		break;
 
 		// --- результаты мужских квестов ---
@@ -2709,6 +2729,8 @@ void ProcessDialogEvent()
 			link.l1 = StringFromKey("ForAll_dialog_587", pchar);
 			link.l1.go = "exit";
 			//==> ставим квестодателя в церковь
+			DeleteAttribute(npchar, "talker");
+			DeleteAttribute(npchar, "LifeDay");
 			pchar.quest.SeekShip_Stay.win_condition.l1 = "ExitFromLocation";
 			npchar.location = npchar.city + "_church";
 			npchar.location.locator = "goto2";
@@ -2728,6 +2750,7 @@ void ProcessDialogEvent()
 			// evganat - генераторы
 			sNPCidx = npchar.index;
 			pchar.questTemp.SeekCap.(sNPCidx) = "husband";
+			SeekCap_ClearIrrelevantQuestCharacters();
 		break;
 		//месть отвергнутой женщины
 		case "SCQ_Revenge":
@@ -2779,6 +2802,8 @@ void ProcessDialogEvent()
 			link.l1 = StringFromKey("ForAll_dialog_606", GetAddress_FormToNPC(NPChar));
 			link.l1.go = "exit";
 			//==> ставим квестодателя в церковь
+			DeleteAttribute(npchar, "talker");
+			DeleteAttribute(npchar, "LifeDay");
 			pchar.quest.SeekShip_Stay.win_condition.l1 = "ExitFromLocation";
 			npchar.location = npchar.city + "_church";
 			npchar.location.locator = "goto2";
@@ -2804,6 +2829,7 @@ void ProcessDialogEvent()
 			// evganat - генераторы
 			sNPCidx = npchar.index;
 			pchar.questTemp.SeekCap.(sNPCidx) = "revenge";
+			SeekCap_ClearIrrelevantQuestCharacters();
 		break;
 		//муж женщины попал в плен к пиратам
 		case "SCQ_Pirates":
@@ -2855,6 +2881,8 @@ void ProcessDialogEvent()
 			link.l1 = StringFromKey("ForAll_dialog_623", pchar);
 			link.l1.go = "exit";
 			//==> ставим квестодателя в церковь
+			DeleteAttribute(npchar, "talker");
+			DeleteAttribute(npchar, "LifeDay");
 			pchar.quest.SeekShip_Stay.win_condition.l1 = "ExitFromLocation";
 			npchar.location = npchar.city + "_church";
 			npchar.location.locator = "goto2";
@@ -2878,6 +2906,7 @@ void ProcessDialogEvent()
 			// evganat - генераторы
 			sNPCidx = npchar.index;
 			pchar.questTemp.SeekCap.(sNPCidx) = "pirates";
+			SeekCap_ClearIrrelevantQuestCharacters();
 		break;
 		// --- результаты женских квестов ---
 		case "SCQ_womanResult":
@@ -3171,7 +3200,9 @@ void ProcessDialogEvent()
 		case "manRapeWife_Board_2":
 			dialog.text = StringFromKey("ForAll_dialog_694");
 			link.l1 = StringFromKey("ForAll_dialog_695", GetAddress_FormToNPC(NPChar));
-			link.l1.go = "exit";
+			link.l1.go = "manRapeWife_Board_3";
+		break;
+		case "manRapeWife_Board_3":
 			//уберем жену из каюты
 			ChangeCharacterAddress(npchar, "none", "");
 			SetBan("Looting", 0);
@@ -3185,6 +3216,7 @@ void ProcessDialogEvent()
 			AddQuestRecordEx(sTitle, "SCQ_" + npchar.quest.SeekCap, "6");
 			AddQuestUserData(sTitle, "sName", GetFullName(npchar));
 			AddQuestUserData(sTitle, "sCity", XI_ConvertString("Colony" + npchar.quest.cribCity + "Acc"));
+			DialogExit();
 		break;
 		//========= разыскиваемый земляк-торговый кэп ===========
 		case "FriendCap": //встреча на суше
@@ -3548,7 +3580,9 @@ void ProcessDialogEvent()
 		case "womanPirates_Board_1":
 			dialog.text = StringFromKey("ForAll_dialog_788");
 			link.l1 = StringFromKey("ForAll_dialog_789");
-			link.l1.go = "exit";
+			link.l1.go = "womanPirates_Board_2";
+		break;
+		case "womanPirates_Board_2":
 			//уберем мужа из каюты
 			ChangeCharacterAddress(npchar, "none", "");
 			LAi_SetPlayerType(pchar);
@@ -3561,6 +3595,7 @@ void ProcessDialogEvent()
 			AddQuestRecordEx(sTitle, "SCQ_" + npchar.quest.SeekCap, "6");
 			AddQuestUserData(sTitle, "sName", GetFullName(npchar));
 			AddQuestUserData(sTitle, "sCity", XI_ConvertString("Colony" + npchar.quest.cribCity + "Acc"));
+			DialogExit();
 		break;
 
 		//=====================================================================================================================================

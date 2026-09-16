@@ -1,0 +1,85 @@
+Indian_dialog_1 {
+Les paroles des hommes blancs sont souvent légères comme l'écume de mer dans le vent. Mais dans la voix de Daniel, j'entends l'acier froid, et dans tes yeux, capitaine, je vois la tempête prête à s'abattre sur les Castillans.
+}
+Indian_dialog_2 {
+Cette tempête ne retombera pas avant qu'Anacaona et tes frères aient retrouvé leurs foyers. Nous tiendrons parole, Yamai.
+}
+Indian_dialog_3 {
+Ma fille être fière. Cabrera pouvoir mettre fer à ses mains, mais pas briser son esprit. Pourtant, fierté seule ne suffit pas contre plomb de mousquet. Que ombres de nos ancêtres guider vos lames dans combat qui vient.
+}
+Indian_dialog_4 {
+Plus rien ne peut sauver don Íñigo, ancien. Attends-nous avec la victoire.
+}
+Indian_dialog_5 {
+Temps des paroles être passé, capitaine. Daniel attendre. Vos lames doivent chanter leur chanson aux salines.
+}
+Indian_dialog_6 {
+Nous sommes déjà en route. Bientôt, cette île sera débarrassée de la présence castillane.
+}
+Indian_dialog_7 {
+Ma fille revenir maison. Moi remercier toi, capitaine @<GetFullName>. Et toi, frère blanc.
+}
+Indian_dialog_8_m {
+Je suis heureux que nous ayons pu vous aider, Yamai. C'est votre terre, et vous la défendez contre un ennemi supérieur en nombre et en armes. Cabrera ne vous menace plus.
+}
+Indian_dialog_8_f {
+Je suis heureuse que nous ayons pu vous aider, Yamai. C'est votre terre, et vous la défendez contre un ennemi supérieur en nombre et en armes. Cabrera ne vous menace plus.
+}
+Indian_dialog_9 {
+Espagnol venir sur notre terre quand mon père être chef. Venir quand moi devenir chef. Et venir encore quand moi ne plus être.
+}
+Indian_dialog_10 {
+Raison de plus pour les frapper là où ils ne s'y attendent pas : au cœur même de la ville espagnole la mieux fortifiée. Prenons l'or qui leur sert à payer leurs soldats, et, pour quelque temps au moins, ils auront autre chose à faire que de convoiter vos terres.
+}
+
+LeBasque_Indian_Chel_1 {
+Avant de tuer l'ennemi au visage pâle... @<GetFirstName> méfiez-vous de son commandant.
+}
+
+LeBasque_Indian_Chel_2 {
+Il garde une feuille de papier blanche dans son sac en cuir. C'est une feuille importante, et il a peur de la perdre.
+}
+
+LeBasque_Indian_Chel_3 {
+Ne partez pas, chef blanc. Il faut encore dire @<GetFirstName>...
+}
+
+LeBasque_Yamai_1 {
+Daniel : Je suis heureux de voir mon frère blanc dans notre village. Mais je vois du sang sur tes vêtements.
+}
+
+LeBasque_Yamai_2 {
+L'infâme Yalanaui veut à nouveau nous chasser de cette île ! Il a kidnappé ma fille... et il veut tous nous tuer...
+}
+
+LeBasque_Yamai_3 {
+Merci ! Merci, frère blanc ! Nous vous sommes redevables.
+}
+
+LeBasque_Yamai_4 {
+Merci, Capitaine @<GetFullName> ! Ma maison est la vôtre. Vous pouvez venir me rendre visite quand vous le souhaitez.
+}
+
+LeBasque_Yamai_5 {
+Mes guerriers accompagneront le capitaine @<GetFullName> si Anacaona rentre chez lui.
+}
+
+LeBasque_Yamai_6 {
+Je te remercie encore, frère blanc. Je demande aux esprits de te protéger.
+}
+
+LeBasque_Yamai_7 {
+Qu'est-ce que c'est que ça, frère blanc ?
+}
+
+LeBasque_Yamai_8 {
+C'est vous qui nous offrez ce cadeau ? Votre peuple le trouvera utile aussi...
+}
+
+LeBasque_Yamai_9 {
+Tu prouves une fois de plus que tu es un frère pour les Indiens. Notre frère blanc. Tu fais la guerre à nos côtés contre les Espagnols, bien que cette guerre ne soit pas la tienne.
+}
+
+LeBasque_Yamai_10 {
+Je te remercie encore, frère blanc. Je te confierai mes meilleurs éclaireurs. Et si tu le souhaites, Anacaona deviendra ton épouse. Ce sera une grande fierté pour elle. Et pour nous, c'est une fierté d'avoir un tel frère blanc.
+}

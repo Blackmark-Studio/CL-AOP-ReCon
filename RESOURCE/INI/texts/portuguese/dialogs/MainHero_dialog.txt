@@ -436,3 +436,63 @@ Guarde o papagaio.
 MainHero_dialog_142 {
 Mostre o papagaio.
 }
+
+LeBasque_1
+{
+...
+}
+LeBasque_2
+{
+Do lado de fora dos portões, não resta nada da alegre Tortuga. Nem canções, nem pragas, nem gargalhadas de bêbados...
+}
+LeBasque_3
+{
+...
+}
+LeBasque_4
+{
+Raul deve aparecer a qualquer momento. O importante é não me denunciar e não deixar escapar nada.
+}
+LeBasque_5
+{
+...
+}
+LeBasque_6
+{
+Raul vendeu informações ao espanhol e recebeu dinheiro e novas instruções em troca. Tudo parece girar em torno de alguém chamado le Basque. Já sei o bastante; está na hora de voltar a Marceau.
+}
+LeBasque_7
+{
+...
+}
+LeBasque_8
+{
+A reunião deve começar em breve... Mar à esquerda, farol à frente, palmeiras e rochas à direita. Seria difícil encontrar lugar melhor para uma emboscada. Preciso achar um ponto com boa visão.
+}
+LeBasque_9
+{
+...
+}
+LeBasque_10
+{
+Daqui eles não vão me notar, e eu verei tudo. Agora é só esperar.
+}
+
+MainHero_dialog_143 {
+Hum... O chapéu de Jaco. Ele não se separaria dele sem motivo... E aqui estão as pegadas. Três arrastaram um. Levam à caverna. Preciso me apressar.
+}
+MainHero_dialog_144 {
+Já é meia-noite. Está na hora de colocar o zecchino no suporte de madeira junto ao livro...
+}
+MainHero_dialog_145 {
+Tudo correu perfeitamente. Só falta deixar a carta no cadáver e voltar para o navio.
+}
+MainHero_dialog_146 {
+A respiração está regular — ela logo vai recobrar os sentidos...
+}
+MainHero_dialog_147 {
+Chegou a hora de morrer...
+}
+MainHero_dialog_148 {
+Droga... De novo...
+}

@@ -28,6 +28,7 @@ void DeleteParticles()
 
 void DeleteParticleSystem(string id)
 {
+	if (id == "") return;
 	SendMessage(&Particles,"ls",PS_DELETE,id);
 }
 
@@ -78,11 +79,10 @@ void MoveParticlesToLayers(int sExecuteLayer, int sRealizeLayer)
 	LayerAddObject(sRealizeLayer, &Particles, 65536);
 }
 
-string CreateParticleSystemX(string name,float x,float y,float z,
-		float ax,float ay,float az,int lifetime)
+string CreateParticleSystemX(string name, float x, float y, float z, float ax, float ay, float az, int lifetime)
 {
-	string pid;
-	if (!CreateParticleEntity()) return false;
+	string pid = "";
+	if (!CreateParticleEntity()) return pid;
 	SendMessage(&Particles,"lsffffffle",PS_CREATEX,name,x,y,z,ax,ay,az,lifetime,&pid);
 	return pid;
 }

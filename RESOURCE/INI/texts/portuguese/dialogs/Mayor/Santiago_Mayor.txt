@@ -143,7 +143,7 @@ Santiago_Mayor_40 {
 Posso garantir que La Vega deixará de existir em breve.
 }
 Santiago_Mayor_41 {
-Excelente, senhor@<GetAddress_Form>! Simplesmente magnífico! Don Francisco Oregon y Gascon pode, com razão, se orgulhar de ter oficiais como você em seu serviço.
+Excelente, @<GetAddress_Form>! Simplesmente magnífico! Don Francisco Oregon y Gascon pode, com razão, se orgulhar de ter oficiais como você em seu serviço.
 }
 Santiago_Mayor_42_m {
 Os bucaneiros foram adversários à altura. Fico feliz por ter conseguido cumprir a tarefa... Senhor, e quanto à minha recompensa?

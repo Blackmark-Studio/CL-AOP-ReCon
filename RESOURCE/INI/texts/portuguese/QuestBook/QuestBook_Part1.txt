@@ -252,7 +252,7 @@ Pir_Line_7_Soukins.9
 {
 Consegui colocar as mãos no diário de bordo de Sowkins, onde ele detalhou o plano para a próxima operação contra os espanhóis.
 Sowkins descobriu que os espanhóis planejam transportar o maior carregamento de pedras preciosas do Panamá. Para realizar essa operação, eles abandonaram a rota terrestre habitual do Panamá até Portobelo e a travessia subsequente do Mar do Caribe. Em vez disso, pretendem equipar um único navio de linha, que dará a volta no Cabo Horn, subirá até o paralelo quarenta, depois seguirá para nordeste e cruzará o Atlântico até Lisboa.
-Sowkins pretende interceptar esse navio de linha carregado de joias próximo a Saint Martin. Para isso, está reunindo uma esquadra para garantir que o espanhol não escape. Espera-se que o navio passe a leste de Trinidad e Tobago e depois siga para nordeste até Saint Martin. Preciso interceptá-lo antes de Sowkins.
+Sowkins pretende interceptar esse navio de linha carregado de joias próximo a Saint Martin. Para isso, está reunindo uma esquadra para garantir que o espanhol não escape. Espera-se que o navio passe a leste de Trinidad e depois siga para nordeste até Saint Martin. Preciso interceptá-lo antes de Sowkins.
 Segundo as anotações de Sowkins, em duas semanas uma esquadra pirata estará esperando pelo espanhol perto de Saint Martin. Preciso zarpar imediatamente e interceptar o navio espanhol ao sul de Saint Martin.
 É incrível que um segredo tão bem guardado tenha chegado ao conhecimento de Sowkins. Preciso garantir que ninguém mais descubra isso e arrancar as últimas páginas do diário, especialmente as que mencionam o porão do navio.
 }
@@ -1087,90 +1087,6 @@ SeekDoubleMushket.5 {Rolando Pizarro exigiu nada menos que 100.000 piastras por 
 SeekDoubleMushket.6 {Rolando Pizarro exigiu nada menos que 100.000 piastras por informações sobre a 'Arrow'. Recusei. Por esse valor, eu mesmo encontro essa brigantina.}
 SeekDoubleMushket.7 {Que azar terrível! Demorei demais para chegar a Portobelo. Rolando sabia a baía onde eu poderia encontrar a 'Arrow', mas o tempo se perdeu — agora não há sinal dela por lá. Vou ter que procurar por conta própria...}
 SeekDoubleMushket.10 {A brigantina que eu procurava sumiu. Agora não vou conseguir o mosquete de dois canos.}
-CapBloodLine_q1 {Médico}
-CapBloodLine_q1.1 {Preciso ir imediatamente à mansão do governador e ver como posso ajudar a Sra. Steed.}
-CapBloodLine_q1.2 {O governador Steed me contou que sua esposa está sofrendo outro ataque de enxaqueca e não consegue se acalmar. Acho que devo examiná-la. Ela está no quarto à direita, no segundo andar.}
-CapBloodLine_q1.3 {Preciso ir rápido ao porto e visitar o Sr. Dan, o boticário. Acho que ele mencionou que sua casa fica perto da residência do governador.}
-CapBloodLine_q1.4 {O governador destinou fundos para a compra de remédios. Recebi @<iMoney>.}
-CapBloodLine_q1.5 {O governador me deu 2.500 piastras em mãos para comprar remédio para sua esposa, mas exigiu prestação de contas ao meu retorno...}
-CapBloodLine_q1.6 {O Sr. Dan não estava em casa, então tive que encontrar o remédio sozinho. Agora preciso voltar rápido para a propriedade...}
-CapBloodLine_q1.7 {Esperei pelo Sr. Dan, e ele prontamente compartilhou comigo seu remédio para enxaqueca. Agora preciso voltar rápido para a propriedade...}
-CapBloodLine_q1.8 {Ao sair de casa, encontrei o boticário e o enganei para conseguir mais um remédio para enxaqueca.}
-CapBloodLine_q1.9 {Está tudo bem; consegui ajudar a esposa do governador. Como já está tarde e os portões daquela maldita plantação Bishop estão fechados há muito tempo, me deixaram ficar na cidade e me deram um quarto na taverna. É tão bom, mesmo que por uma noite, voltar a me sentir uma pessoa, e não um escravo...}
-CapBloodLine_q2 {Oferta de Wacker}
-CapBloodLine_q2.1 {Na botica, encontrei o Doutor Wacker, que quer conversar comigo longe de olhares e ouvidos curiosos. Amanhã, quando tiver um tempo livre, devo passar na taverna.}
-CapBloodLine_q2.2
-{
-O dia amanheceu. Agora o Bishop vai me encontrar e com certeza vai me mandar para algum lugar o dia inteiro. Por exemplo, cuidar de alguns escravos inocentes que ele provavelmente espancou e puniu ontem à noite por alguma bobagem, só de raiva porque eu não voltei antes dos portões fecharem...
-Mas preciso descobrir o que o Wacker quer comigo. Não há tempo a perder.
-}
-CapBloodLine_q2.3 {Fui até a taverna, mas Vaker não está aqui. Droga! Preciso encontrá-lo... Vou perguntar ao taverneiro.}
-CapBloodLine_q2.4 {Parece que sou mesmo um grande obstáculo para os estimados Wacker e Bronson, já que a possibilidade da minha fuga virou tema da nossa conversa nada amigável. Não há dúvida de que o Dr. Bronson sabe de tudo, e Wacker coordena todas as ações com ele. Ainda assim, quem sou eu para reclamar? Esta é minha única chance! Preciso procurar Jeremy Pitt.}
-CapBloodLine_q2.5 {Consegui convencer Pitt a entrar nessa empreitada. Agora o principal é recrutar pessoas, preparar tudo o que precisamos e pegar o dinheiro para o saveiro com Wacker amanhã. Apenas quatro dos escravos entendem algo de navegação — Hagthorpe, Ogle, Wolverstone e Nicholas Dyke. Preciso conversar com cada um deles.}
-CapBloodLine_q2.6 {Hora de voltar para a taverna e falar com Wacker. Na verdade, não há mais o que discutir—é só pegar o dinheiro pelo sloop.}
-CapBloodLine_q2.7 {O Doutor Wacker conseguiu apenas 18.000 piastras. Faltam cerca de 7.000 para comprar o sloop. Bem... Sempre há trabalho no porto para quem procura — seja descarregando mercadorias na loja, fazendo recados para figuras duvidosas ou aceitando bicos dos moradores. No pior dos casos, você pode recorrer ao agiota local...}
-CapBloodLine_q2.8 {Reuni a quantia necessária e enviei Nettall para comprar o escuna. Agora só resta esperar...}
-WeaponsForEscape {Armas para a Fuga}
-WeaponsForEscape.1 {Tudo deve estar em silêncio, mas ter algumas armas à mão nunca é demais. É improvável que alguém na cidade me venda isso, e simplesmente não posso recorrer ao roubo em um momento tão crucial... Vou ter que encontrar outra maneira de resolver esse problema.}
-WeaponsForEscape.2 {O estalajadeiro me aconselhou a falar com o Sr. Griffin sobre armas — ele é um velho armeiro que mora perto da mansão do governador.}
-WeaponsForEscape.3 {O armeiro Griffin foi assaltado de forma ousada: um bandido espanhol levou suas amostras, com o nome do mestre gravado nas lâminas, e foi até a casa do pescador Hells. Se ele for pego ou visto com armas do Sr. Griffin, ambos serão enforcados ao amanhecer. Preciso ir atrás do ladrão imediatamente, desarmá-lo e devolver tudo ao verdadeiro dono. Se eu fizer isso, o Sr. Griffin concluirá o pedido de sabres de abordagem e pistolas sem marcas de identificação até esta noite por @<iMoney>.}
-WeaponsForEscape.4 {Não consegui chegar a um acordo com o armeiro. Não posso dizer que estou muito chateado — fazer negócios com aquele velho arrogante não daria certo mesmo. Vou encontrar outra forma de conseguir armas.}
-WeaponsForEscape.5 {Eu não tive escolha — o pescador cruzou meu caminho, o que era a última coisa que eu esperava. Ainda assim, de certo modo, devo ser grato a ele, já que me poupou de ter que lutar com o espanhol. Hells tinha 2.000 piastras com ele, algumas certamente pertenciam ao bandido. Além disso, encontrei um pacote com as amostras de Griffin no espanhol — é hora de voltar ao armeiro.}
-WeaponsForEscape.5_1 {Tive sorte – o pescador Hells estava bastante agitado após a luta, mas consegui acalmá-lo. Depois de uma breve negociação, ele permitiu que eu pegasse amostras de armas do corpo do espanhol. Deixei o dinheiro encontrado com o morto para Hells – era justo, como compensação pelo ataque. Agora posso voltar ao armeiro com o pacote de amostras.}
-WeaponsForEscape.6 {Daqui a uma hora, devo ir até o Sr. Griffin buscar meu pedido.}
-WeaponsForEscape.7 {Na rua, encontrei um homem que parecia espanhol. Não sei como ele veio parar aqui, mas está claro que suas intenções não são boas. Ele quer algo do Sr. Griffin, o armeiro.}
-WeaponsForEscape.8 {Já se passaram mais de dez minutos e ainda não há notícias. Pelo visto, não tenho escolha a não ser voltar lá.}
-WeaponsForEscape.9 {O Sr. Griffin me deu tudo o que eu precisava em agradecimento por ter salvado sua vida.}
-WeaponsForEscape.10 {O vendedor da praça do mercado, cujo filho tive a sorte de salvar de um destino infeliz, me deu um embrulho com tudo o que é essencial para situações imprevistas. A sorte está do meu lado — conseguir uma arma na minha situação atual é extremamente difícil. Eu diria até que é quase impossível. Mas tenho outros problemas também...}
-WeaponsForEscape.11 {Na taverna, tive o prazer de conversar com um contrabandista que me pareceu bastante estranho. Além de ter as armas de que preciso na quantidade certa, em vez de pedir um carregamento de escravos em troca, como seria de se esperar, ele quer um anel da mansão do governador. Como ele poderia saber sobre esse anel? E por que está tão interessado a ponto de trocar armas por ele? Bem, minha tarefa agora é encontrar esse anel.}
-WeaponsForEscape.12 {Não consegui chegar até o governador. A menos que ele dê a ordem certa, os guardas não vão me deixar passar. E ele não vai dar essa ordem enquanto ele e a esposa estiverem seguros. Então, preciso de um pretexto externo...}
-WeaponsForEscape.13 {Graças à ingenuidade do Sr. Dan, agora tenho uma chance de entrar na residência. Não vou perder tempo.}
-WeaponsForEscape.14 {Incrivelmente, o próprio anel de que o contrabandista falou está bem à vista — sobre a mesa. De fato, a Sra. Steed não o usa.}
-WeaponsForEscape.15
-{
-Felizmente, a questão foi resolvida com um pequeno engano, sem necessidade de recorrer ao roubo. A Sra. Steed me entregou o anel pessoalmente, dizendo que o encontrou ao lado de sua cama esta manhã.
-O anel em si parece totalmente comum — dourado, sem pedras preciosas — mas é incrivelmente pesado para seu tipo e tamanho.
-Como o contrabandista soube do anel? E por que ele o quer? Por outro lado, será que isso realmente me diz respeito? É melhor eu voltar à taverna e receber minha recompensa.
-}
-WeaponsForEscape.16 {O contrabandista ficou com o anel, e eu com a arma e o dinheiro. Claro, o objeto era bastante intrigante, mas simplesmente não tenho tempo para estudá-lo. De qualquer forma, a tarefa está concluída — estou com a arma.}
-HugtorpTrouble {O Problema de Hagthorpe}
-HugtorpTrouble.1 {Há um homem chamado Stuart Winterwood em Bridgetown. Tudo o que Hagthorpe precisa para se juntar a mim é a morte do inglês que tirou tudo dele e o mandou para a escravidão. Não sei exatamente como isso aconteceu, mas não tenho escolha — preciso matar Winterwood. Ele pode ser encontrado na taverna ou no bordel.}
-HugtorpTrouble.2 {Hagthorpe não queria navegar comigo. Seu inimigo mortal, Stuart Winterwood, está na cidade. Um dia, esse cavalheiro desonrou o velho lobo do mar, tirando tudo dele: seu bom nome, sua família, sua liberdade. Por causa dele, Hagthorpe acabou acorrentado. Mas consegui convencê-lo a desistir de seu plano insensato de vingança, e ele concordou em zarpar comigo, adiando a execução do canalha por enquanto.}
-HugtorpTrouble.3 {Consegui irritar Stuart Winterwood e desafiá-lo para um duelo. Vamos nos encontrar cara a cara, daqui a uma hora, fora dos portões da cidade — acho melhor não me atrasar.}
-HugtorpTrouble.4 {Foi difícil, mas matei Winterwood. Acho que Stuart não vai mais precisar dos mil piastres que ele carregava. Devo voltar para Hagthorpe.}
-HugtorpTrouble.5 {Ao saber da morte de Winterwood, Hagthorpe concordou em se juntar a mim.}
-DiekeQuest {Oficial Júnior Nicholas Dyke}
-DiekeQuest.1 {O coronel Bishop escolheu o pior momento possível para vender Nicholas Dyke, que já foi um oficial subalterno. Nicholas está convencido de que nada pode ser feito agora, mas... preciso fazer o que for necessário para impedir esse acordo.}
-DiekeQuest.2 {O comprador se chama Weston. Preciso descobrir quem ele é e onde encontrá-lo o quanto antes.}
-DiekeQuest.3 {Um comerciante jamaicano chegou recentemente à cidade com algum tipo de carga. Ele é um velho amigo de Bishop. Muito provavelmente, é o Weston. Preciso encontrar a casa dele e ver o que pode ser feito.}
-DiekeQuest.4 {Parece que Charlie Weston queria conseguir Dyke por uma pechincha. Ele separou alguns milhares de piastras e um ídolo curioso para o Bishop. Acho que vou ficar com tudo isso para mim — pode ser útil. O Bishop já se dá ao luxo o suficiente.}
-DiekeQuest.5 {Excelente! Nicholas vai se juntar a nós durante a fuga.}
-OglQuest {Artilheiro Caolho}
-OglQuest.1 {O único canhoneiro-artilheiro disponível para mim fez um empréstimo de 5.000 piastras com o agiota. Simplesmente não posso zarpar sem Ogle — o risco é grande demais. Preciso encontrar o dinheiro e quitar a dívida do velho.}
-OglQuest.2 {Paguei a dívida do Ogla. Espero que isso resolva a decisão dele de se juntar a nós.}
-OglQuest.3 {Excelente! Ogle vai conosco.}
-FishermanQuest {Ponto de Pesca}
-FishermanQuest.1 {O pescador Hells me deu um trabalho: devo descobrir qual ponto de pesca o outro pescador, Arnold Summerlight, encontrou. Hells prometeu me pagar 2.000 piastras pelo serviço.}
-FishermanQuest.2 {Consegui descobrir onde Summerlight está pescando. Agora só preciso avisar Hells e pegar meu dinheiro.}
-UsurerQuest {Devedor Sem Nome}
-UsurerQuest.1 {O agiota me deu um trabalho no valor de 3.000 piastras: encontrar um impostor dentro da cidade que pegou um empréstimo em nome de Raphael Guinness, aproveitando a confusão da manhã. Nem sei por onde começar. O estalajadeiro, como sempre, vai pedir prata em troca de informações... Mas quem mais poderia me ajudar?}
-UsurerQuest.2 {Tive que pagar quinhentos ao estalajadeiro por informações sobre esse Guinness. Ele me contou que Raphael conseguiu dinheiro para um navio e foi fechar o negócio. Parece que o estalajadeiro não o conhece muito bem, já que aparentemente toma o impostor pelo verdadeiro Guinness. É melhor eu passar no estaleiro.}
-UsurerQuest.3 {Consegui desempenhar meu papel muito bem... Por que fui entrar para o serviço e não para o teatro? Apavorado, o impostor — cujo verdadeiro nome é Alex Winner — me entregou todas as suas economias: 55.000 piastras. Suspeito que parte desse dinheiro pertença ao agiota.}
-UsurerQuest.4 {Temendo a justiça, Raphael-Alex me concedeu o empréstimo. Agora preciso devolver o dinheiro ao agiota e receber minha parte, ou...?}
-UsurerQuest.5 {Não consegui recuperar o dinheiro com o agiota — o trapaceiro não confessou, começou a protestar e saiu apressado pelas ruas da cidade, onde já não consigo mais encontrá-lo...}
-PirateQuest {Pirata Caído}
-PirateQuest.1 {Na loja, encontrei um pirata divertido chamado Jacques Nightingale... Capitão Jacques Nightingale. Uma figura interessante... Mas, de qualquer forma, a chance de ganhar 1.500 piastras também é um bom motivo para fazer amizade. Vou receber esse dinheiro se encontrar um capitão disposto a levar meu novo amigo para Port Royal por três mil.}
-PirateQuest.2 {O chefe da autoridade portuária mencionou o capitão Miner, que acabou de registrar a partida para Port Royal. Sem citar o nome de Solovey, consegui obter a informação. Agora só preciso encontrar esse John Miner em algum lugar da cidade.}
-PirateQuest.3 {Depois de descobrir a identidade do passageiro, o chefe da autoridade portuária me contou a história da queda desse pirata. Ao entregar o mapa do tesouro ao seu imediato, Solovey jamais imaginou que a tripulação pudesse usá-lo para enrolar tabaco e fumar. Quando recobraram a consciência, os piratas culparam Jacques por tudo, o deixaram em uma ilha e partiram, deixando-o para morrer. Por um milagre, Jacques Solovey conseguiu escapar, mas agora está em uma situação difícil: precisa não só recuperar seu navio, mas também se vingar do novo capitão. Bem, desejo sorte a ele, mas por enquanto preciso falar com o Capitão John Miner, que informou à autoridade portuária que está indo para Port Royal e zarpará em breve.}
-PirateQuest.4 {John Miner, capitão do 'Floating Briton', concordou em levar Jacques Nightingale para Port Royal por três mil. Agora só falta encontrar esse pirata e avisá-lo, depois receber o pagamento.}
-PirateQuest.5 {Recebi meu dinheiro do Jacques the Nightingale, embora ele claramente não estivesse com pressa de se desfazer dele. Um sujeito bastante divertido.}
-PirateQuest.6 {Não consegui encontrar um navio para levar o pirata caído. Acho que ele vai se virar sozinho de algum jeito...}
-EscapeFormBarbados {Fuga de Barbados}
-EscapeFormBarbados.1 {Nosso plano de fuga está prestes a desmoronar. O coronel Bishop encontrou Jeremy Pitt enquanto ele fazia os preparativos finais para a partida. Decidi tentar libertar nosso navegador assim que escurecer. Aliás, Jeremy escondeu algumas armas em um baú entre as tábuas do chão — na beira da plantação; seria bom pegá-las. Enquanto isso, os outros vão se infiltrar na cidade e nos esperar lá, escondidos no estaleiro.}
-EscapeFormBarbados.2 {Consegui resgatar Pitt dos homens de Bishop, mas ele me contou que Nuttall fugiu no nosso escuna. Preciso avisar Hagthorpe, Dyke, Ogle, Wolverstone e os outros antes que todos sejam capturados.}
-EscapeFormBarbados.3 {No momento mais desesperador, o acaso interveio em nossos planos. O grande navio, que havia recebido permissão para entrar calmamente na baía de Bridgetown sob bandeira estrangeira, revelou-se um corsário espanhol. Ele escolheu o momento do ataque quando não havia nenhum navio de guerra na baía. Seu ardil passou tão despercebido que, sem levantar suspeitas, entrou na baía e saudou o forte à queima-roupa com uma salva de vinte canhões. Ao pôr do sol, duzentos e cinquenta espanhóis já eram os senhores de Bridgetown.}
-EscapeFormBarbados.4 {Reunidos com os outros, decidimos tentar tomar um navio espanhol sob a cobertura da noite.}
-EscapeFormBarbados.5 {Conseguimos capturar um navio magnífico dos espanhóis — o 'Cinco Llagas'. Agora podemos finalmente deixar Barbados e buscar nossa liberdade.}
 TenochtitlanQuest {Tenochtitlan}
 TenochtitlanQuest.1 {Numa baía chamada Costa dos Mosquitos, encontrei um espanhol chamado Silvio Ricci. Gritando desesperado, ele me aconselhou a sair dali o mais rápido possível. Pelo seu relato confuso, entendi que um certo Don Esteban organizou uma expedição para uma cidade indígena, onde o próprio Cortés governou há 150 anos! A expedição teve um fim terrível, e apenas Silvio Ricci sobreviveu.}
 TenochtitlanQuest.2
@@ -1323,7 +1239,7 @@ Headhunt.7 {A luta foi intensa — Hannibal Holm mostrou ser um sujeito duro, e 
 Headhunt.8 {A colina foi demais para mim. Tive que fugir para salvar minha vida. Depois de tanta vergonha, é melhor nem aparecer diante do Snakeman.}
 Headhunt.9 {A recompensa pela destruição de Holm foi recebida. Desta vez, a compensação foi de 10.000 piastras e dois baús de ouro.}
 Headhunt.10 {Todos os prazos possíveis para encontrar a pinassa 'Adelaide' se esgotaram. A pista se perdeu para sempre. A missão fracassou. Melhor nem aparecer em Le Francois...}
-Headhunt.11 {O terceiro 'cliente' é Mathias Green, apelidado de 'Rato'. Segundo Snakeman, Rato está envolvido em vários desaparecimentos de navios mercantes. Nada mais se sabe sobre ele, e terei que reunir todas as informações por conta própria. Snakeman mencionou três portos de onde sumiram os últimos três navios: Willemstad em Curaçao, Cartagena no continente e Port of Spain na ilha de Trinidad e Tobago. Devo começar a procurar por lá — talvez eu encontre alguma pista.}
+Headhunt.11 {O terceiro 'cliente' é Mathias Green, apelidado de 'Rato'. Segundo Snakeman, Rato está envolvido em vários desaparecimentos de navios mercantes. Nada mais se sabe sobre ele, e terei que reunir todas as informações por conta própria. Snakeman mencionou três portos de onde sumiram os últimos três navios: Willemstad em Curaçao, Cartagena no continente e Port of Spain na ilha de Trinidad. Devo começar a procurar por lá — talvez eu encontre alguma pista.}
 Headhunt.12_1 {Em Cartagena, no dia em que o navio desaparecido 'Happy Bride' partiu em sua última viagem, estavam presentes os seguintes navios: o galeão 'San Juan Nepomasedo' e a pinassa 'Adelaide'. Continuamos a busca.}
 Headhunt.12_2 {No Porto de Espanha, no dia em que a embarcação desaparecida partiu em sua última viagem, estavam presentes os seguintes navios: a escuna Jenny, a corveta Swift e a pinace Adelaide. Continuamos as buscas.}
 Headhunt.12_3 {Em Willemstad, no dia em que o navio desaparecido 'Santa Anna' partiu em sua última viagem, estavam presentes os seguintes navios: a pinça 'Adelaide', o galeão 'Medemblink' e a fragata 'Zulthen'. Continuamos a busca.}

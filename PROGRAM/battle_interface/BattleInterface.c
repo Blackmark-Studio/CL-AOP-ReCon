@@ -191,11 +191,10 @@ bool bOldNotEnoughBalls = false;
 void BI_Frame()
 {
 	bool bYesUpdateCommand = false;
-	ref rChr;
 
 	if (iShowTips > CONTROL_TIPS_NONE)
 	{
-		if (Crosshair.OutsideCamera == false && !bCommMenu)
+		if (SeaCameras.Camera == SEA_CAMERA_FIRE && !bCommMenu)
 		{
 			BattleInterface.textinfo.SalvoFad.text = "1";
 			BattleInterface.textinfo.SalvoKey.text = GetKeyCodeImg("Ship_Fire");
@@ -344,7 +343,7 @@ void StartBattleInterface()
 	LayerAddObject(SEA_REALIZE,&objShipPointer,-1);
 
 	CannonsRangeRefresh();
-	Ship_CheckMainCharacter(); //Обновить активное действие до актуального
+	Ship_CheckMainCharacterUpdate(); //Обновить активное действие до актуального, не плодя лишний тик
 	PostEvent("Event_CheckSeaTutorials", 2000);
 	TW_Init();
 }
@@ -354,6 +353,7 @@ void RefreshBattleInterface()
 	BI_SetCommandMode(0,-1,-1,-1);
 	SendMessage(&BattleInterface,"l",BI_MSG_REFRESH);
 	BI_SetCommandMode(BI_COMMODE_MY_SHIP_SELECT,-1,-1,-1);
+	BI_SetFireModeArrows();
 }
 
 void DeleteBattleInterface()
@@ -656,8 +656,8 @@ void BI_LaunchCommand()
 						PlayInterfaceCommand("knock");
 						return;
 					}
-					//PlayCharVoice("ChargeBalls");
-					SendMessage(&Sound, "lslllll", MSG_SOUND_PLAY, "ChargeBalls", SOUND_WAV_STEREO, VOLUME_SPEECH, false, false, false);
+					PlayVoice("ChargeBalls");
+					//SendMessage(&Sound, "lslllll", MSG_SOUND_PLAY, "ChargeBalls", SOUND_WAV_STEREO, VOLUME_SPEECH, false, false, false);
 					chargeType = GOOD_BALLS;
 				break;
 				case 2:
@@ -667,8 +667,8 @@ void BI_LaunchCommand()
 						return;
 					}
 //					LaunchInfoMessage(2); // сообщение о картечи
-					//PlayCharVoice("ChargeGrapes");
-					SendMessage(&Sound, "lslllll", MSG_SOUND_PLAY, "ChargeGrapes", SOUND_WAV_STEREO, VOLUME_SPEECH, false, false, false);
+					PlayVoice("ChargeGrapes");
+					//SendMessage(&Sound, "lslllll", MSG_SOUND_PLAY, "ChargeGrapes", SOUND_WAV_STEREO, VOLUME_SPEECH, false, false, false);
 					chargeType = GOOD_GRAPES;
 				break;
 				case 3:
@@ -677,8 +677,8 @@ void BI_LaunchCommand()
 						PlayVoice("knock");
 						return;
 					}
-					//PlayCharVoice("ChargeKnippels");
-					SendMessage(&Sound, "lslllll", MSG_SOUND_PLAY, "ChargeKnippels", SOUND_WAV_STEREO, VOLUME_SPEECH, false, false, false);
+					PlayVoice("ChargeKnippels");
+					//SendMessage(&Sound, "lslllll", MSG_SOUND_PLAY, "ChargeKnippels", SOUND_WAV_STEREO, VOLUME_SPEECH, false, false, false);
 					chargeType = GOOD_KNIPPELS;
 				break;
 				case 4:
@@ -687,8 +687,8 @@ void BI_LaunchCommand()
 						PlayInterfaceCommand("knock");
 						return;
 					}
-					//PlayCharVoice("ChargeBombs");
-					SendMessage(&Sound, "lslllll", MSG_SOUND_PLAY, "ChargeBombs", SOUND_WAV_STEREO, VOLUME_SPEECH, false, false, false);
+					PlayVoice("ChargeBombs");
+					//SendMessage(&Sound, "lslllll", MSG_SOUND_PLAY, "ChargeBombs", SOUND_WAV_STEREO, VOLUME_SPEECH, false, false, false);
 					chargeType = GOOD_BOMBS;
 				break;
 			}
@@ -896,7 +896,7 @@ void AddShipToInterface(int charIndex)
 			}
 		}
 	}
-	if (idx < 0) 
+	if (idx < 0) // TODO > мёртвый блок?
 	{
 		for(i = 0; i < 4; i++)
 		{
@@ -988,6 +988,7 @@ void BI_SetPossibleCommands()
 	int chIdx = GetEventData();
 	ref rShip = GetRealShip(sti(pchar.ship.type));
     int iClass = sti(rShip.Class);
+    int iBaseType = sti(rShip.BaseType);
     BI_DeactivateSelectTip();
 
 	if (chIdx < 0 || CharacterIsDead(GetCharacter(chIdx)))
@@ -1028,11 +1029,12 @@ void BI_SetPossibleCommands()
 		BattleInterface.Commands.Abordage.enable		= false;
 		BattleInterface.Commands.SailTo.enable			= !bDisableSailTo && bSailTo;
 		BattleInterface.Commands.Map.enable				= bMapEnter;
-		if (sti(RealShips[sti(pchar.Ship.Type)].BaseType) < SHIP_BOAT)
+		if (CheckAttribute(rShip, "CabinType") && iBaseType < SHIP_BOAT)
         {
             BattleInterface.Commands.Cabin.enable		= !GetGlobalTutor();
         }
-        BattleInterface.Commands.Boat.enable			= !GetGlobalTutor();
+		else BattleInterface.Commands.Cabin.enable		= false;
+		BattleInterface.Commands.Boat.enable = !GetGlobalTutor() || CheckAttribute(pchar, "questTemp.CapBloodLine.AllowBoat");
         BattleInterface.Commands.SailTowards.enable		= false;
 	}
 	// для спутников
@@ -1062,7 +1064,6 @@ void BI_SetPossibleCommands()
 
 void BI_InitializeCommands()
 {
-
 	DeleteAttribute(&BattleInterface,"Commands");
 	DeleteAttribute(&BattleInterface,"AbilityIcons");
 
@@ -1425,10 +1426,10 @@ void SetShipPictureDataByShipTypeName(string sType)
 	case "Bilancetta":			BI_intNRetValue[0] = 10+0*16;	BI_intNRetValue[1] = 10+0*16 + 1;	BI_intNRetValue[2] = BI_ICONS_TEXTURE_SHIP1;	break;	// Тартана
 	// 6-й КЛАСС	(5 кораблей)
     case "Lugger":				BI_intNRetValue[0] = 12+0*16;	BI_intNRetValue[1] = 12+0*16 + 1;	BI_intNRetValue[2] = BI_ICONS_TEXTURE_SHIP1;	break;	// Люггер
-	case "Lugger_w":			BI_intNRetValue[0] = 14+0*16;	BI_intNRetValue[1] = 14+0*16 + 1;	BI_intNRetValue[2] = BI_ICONS_TEXTURE_SHIP1;	break;	// Тяж. Люггер
+	case "LuggerQuest":			BI_intNRetValue[0] = 14+0*16;	BI_intNRetValue[1] = 14+0*16 + 1;	BI_intNRetValue[2] = BI_ICONS_TEXTURE_SHIP1;	break;	// Тяж. Люггер
 	case "Sloop":				BI_intNRetValue[0] = 0+1*16;	BI_intNRetValue[1] = 0+1*16 + 1;	BI_intNRetValue[2] = BI_ICONS_TEXTURE_SHIP1;	break;	//  Шлюп
-	case "Sloop_w":				BI_intNRetValue[0] = 2+1*16;	BI_intNRetValue[1] = 2+1*16 + 1;	BI_intNRetValue[2] = BI_ICONS_TEXTURE_SHIP1;	break;	// Воен. Шлюп
-	case "Cutter":				BI_intNRetValue[0] = 4+1*16;	BI_intNRetValue[1] = 4+1*16 + 1;	BI_intNRetValue[2] = BI_ICONS_TEXTURE_SHIP1;	break;	// Куттер
+	case "Sloop_w":				BI_intNRetValue[0] = 4+1*16;	BI_intNRetValue[1] = 4+1*16 + 1;	BI_intNRetValue[2] = BI_ICONS_TEXTURE_SHIP1;	break;	// Куттер
+	case "Cutter":				BI_intNRetValue[0] = 2+1*16;	BI_intNRetValue[1] = 2+1*16 + 1;	BI_intNRetValue[2] = BI_ICONS_TEXTURE_SHIP1;	break;	// Хой
 	// 5-й КЛАСС	(5 кораблей)
 	case "Schooner":			BI_intNRetValue[0] = 6+1*16;	BI_intNRetValue[1] = 6+1*16 + 1;	BI_intNRetValue[2] = BI_ICONS_TEXTURE_SHIP1;	break;	// Шхуна
 	case "Schooner_w":			BI_intNRetValue[0] = 8+1*16;	BI_intNRetValue[1] = 8+1*16 + 1;	BI_intNRetValue[2] = BI_ICONS_TEXTURE_SHIP1;	break;	// Воен. Шхуна
@@ -1474,12 +1475,13 @@ void SetShipPictureDataByShipTypeName(string sType)
 	case "FrigateQueen":		BI_intNRetValue[0] = 14+5*16;	BI_intNRetValue[1] = 14+5*16 + 1;	BI_intNRetValue[2] = BI_ICONS_TEXTURE_SHIP1;	break;	// Быстрый Фрегат Королева
 	case "Flyingdutchman":		BI_intNRetValue[0] = 0+6*16;	BI_intNRetValue[1] = 0+6*16 + 1;	BI_intNRetValue[2] = BI_ICONS_TEXTURE_SHIP1;	break;	// Прокл. Корабль Призрак
 	case "Flyingdutchman_o":	BI_intNRetValue[0] = 2+6*16;	BI_intNRetValue[1] = 2+6*16 + 1;	BI_intNRetValue[2] = BI_ICONS_TEXTURE_SHIP1;	break;	// Лег. Летучий Голландец
-	case "LuggerQuest":			BI_intNRetValue[0] = 4+6*16;	BI_intNRetValue[1] = 4+6*16 + 1;	BI_intNRetValue[2] = BI_ICONS_TEXTURE_SHIP1;	break;	// Курьерский Люггер 
+	case "Lugger_c":			BI_intNRetValue[0] = 4+6*16;	BI_intNRetValue[1] = 4+6*16 + 1;	BI_intNRetValue[2] = BI_ICONS_TEXTURE_SHIP1;	break;	// Курьерский Люггер
 	case "Polacre_q":			BI_intNRetValue[0] = 6+6*16;	BI_intNRetValue[1] = 6+6*16 + 1;	BI_intNRetValue[2] = BI_ICONS_TEXTURE_SHIP1;	break;	// Тяж. Полакр Призрак Тени
 	//case "ArabellaShip_o":	BI_intNRetValue[0] = 8+6*16;	BI_intNRetValue[1] = 8+6*16 + 1;	BI_intNRetValue[2] = BI_ICONS_TEXTURE_SHIP1;	break;	// Лег. Фрегат Арабелла - Синко Льягас
 	case "Veinard":				BI_intNRetValue[0] = 10+6*16;	BI_intNRetValue[1] = 10+6*16 + 1;	BI_intNRetValue[2] = BI_ICONS_TEXTURE_SHIP1;	break;	// Быстрый Шлюп - Вейнард
 	case "Frigate_M":			BI_intNRetValue[0] = 12+6*16;	BI_intNRetValue[1] = 12+6*16 + 1;	BI_intNRetValue[2] = BI_ICONS_TEXTURE_SHIP1;	break;	// Быстрый Шлюп - Вейнард
-	}
+	case "Margarita":			BI_intNRetValue[0] = 14+6*16;	BI_intNRetValue[1] = 14+6*16 + 1;	BI_intNRetValue[2] = BI_ICONS_TEXTURE_SHIP1;	break;	// Маргарита
+}
 	BI_intNRetValue[3] = false;
 }
 
@@ -1741,6 +1743,14 @@ void SetParameterData()
 
 	BI_ShowCannonsQty();
 //Show Cannons <--
+
+	// Режим стрельбы
+	int iIconSizeFireMode = RecalculateXIcon(makeint(20 * fHtRatio)); //размер стрелочек
+	iDeltaX = RecalculateXIcon(makeint(81 * fHtRatio)); //расстояние от центра компаса
+	BattleInterface.dynamic.images.firemode_l.texture = "battle_interface\cannons_arrows.tga";
+	BattleInterface.dynamic.images.firemode_l.pos = GetPosString(iPosX - iDeltaX - iIconSizeFireMode, iPosY, iPosX - iDeltaX, iPosY + iIconSizeFireMode);
+	BattleInterface.dynamic.images.firemode_r.texture = "battle_interface\cannons_arrows.tga";
+	BattleInterface.dynamic.images.firemode_r.pos = GetPosString(iPosX + iDeltaX, iPosY, iPosX + iDeltaX + iIconSizeFireMode, iPosY + iIconSizeFireMode);
 
 	BattleInterface.textinfo.Date.font = "interface_normal_bold_smallscale";
 	BattleInterface.textinfo.Date.scale = 0.29 * fHtRatio;
@@ -2124,7 +2134,7 @@ ref ProcessSailDamage()
 
 	float sailDmg = 0.0;
 	float sailDmgMax = GetCharacterShipSP(chref) * sailPower;
-	if (!CheckAttribute(arSail,"dmg")) sailDmg = 0.0;
+	if (CheckAttribute(arSail,"dmg")) sailDmg = stf(arSail.dmg);
 
 	if (sMastName == "*")
 	{
@@ -2374,7 +2384,7 @@ int GetPirateFlag(ref chr)
 bool IsShipCommander(ref chr)
 {
 	string sGroup = GetGroupIDFromCharacter(chr);
-	if(sGroup == "") return 0;
+	if(sGroup == "") return false;
 	ref cmdr = Group_GetGroupCommander(sGroup);
 	if(chr.id == cmdr.id) return true;
 	return false;
@@ -2627,9 +2637,9 @@ void procSetUsingAbility()
         BattleInterface.Commands.LightRepair.enable = IsSeaPerkReadyForActivation("LightRepair");
 		BattleInterface.Commands.InstantRepair.enable = IsSeaPerkReadyForActivation("InstantRepair");
 		BattleInterface.Commands.Turn180.enable = IsSeaPerkReadyForActivation("Turn180");
-		
+/*// > рудимент из К2?
 		// Set items abilities
-		q = FindQuestUsableItem(&arcur, 0);
+		q = FindQuestUsableItem(pchar, &arcur, 0); // TODO > check / del
 		while (q > 0)
 		{
 			tmpStr = arcur.id;
@@ -2645,8 +2655,8 @@ void procSetUsingAbility()
 			{
 				BattleInterface.AbilityIcons.(tmpStr).enable	= false;
 			}
-			q = FindQuestUsableItem(&arcur,q+1);
-		}
+			q = FindQuestUsableItem(pchar, &arcur, q + 1);
+		}*/
 	}
 	else
 	{
@@ -2731,8 +2741,8 @@ void BI_ProcessControlPress()
 			if (sti(pchar.Ship.Cannons.Charge.Type) != GOOD_BALLS)
 			{
 				iChargeBlinks = 0;
-				//PlayCharVoice("ChargeBalls");
-				SendMessage(&Sound, "lslllll", MSG_SOUND_PLAY, "ChargeBalls", SOUND_WAV_STEREO, VOLUME_SPEECH, false, false, false);
+				PlayVoice("ChargeBalls");
+				//SendMessage(&Sound, "lslllll", MSG_SOUND_PLAY, "ChargeBalls", SOUND_WAV_STEREO, VOLUME_SPEECH, false, false, false);
 				Ship_ChangeCharge(pchar, GOOD_BALLS);
 			}
 		break;
@@ -2747,8 +2757,8 @@ void BI_ProcessControlPress()
 			{
 				iChargeBlinks = 0;
 //				LaunchInfoMessage(2); // сообщение о картечи
-				//PlayCharVoice("ChargeGrapes");
-				SendMessage(&Sound, "lslllll", MSG_SOUND_PLAY, "ChargeGrapes", SOUND_WAV_STEREO, VOLUME_SPEECH, false, false, false);
+				PlayVoice("ChargeGrapes");
+				//SendMessage(&Sound, "lslllll", MSG_SOUND_PLAY, "ChargeGrapes", SOUND_WAV_STEREO, VOLUME_SPEECH, false, false, false);
 				Ship_ChangeCharge(pchar, GOOD_GRAPES);
 			}
 		break;
@@ -2762,8 +2772,8 @@ void BI_ProcessControlPress()
 			if (sti(pchar.Ship.Cannons.Charge.Type) != GOOD_KNIPPELS)
 			{
 				iChargeBlinks = 0;
-				//PlayCharVoice("ChargeKnippels");
-				SendMessage(&Sound, "lslllll", MSG_SOUND_PLAY, "ChargeKnippels", SOUND_WAV_STEREO, VOLUME_SPEECH, false, false, false);
+				PlayVoice("ChargeKnippels");
+				//SendMessage(&Sound, "lslllll", MSG_SOUND_PLAY, "ChargeKnippels", SOUND_WAV_STEREO, VOLUME_SPEECH, false, false, false);
 				Ship_ChangeCharge(pchar, GOOD_KNIPPELS);
 			}
 		break;
@@ -2777,8 +2787,8 @@ void BI_ProcessControlPress()
 			if (sti(pchar.Ship.Cannons.Charge.Type) != GOOD_BOMBS)
 			{
 				iChargeBlinks = 0;
-				//PlayCharVoice("ChargeBombs");
-				SendMessage(&Sound, "lslllll", MSG_SOUND_PLAY, "ChargeBombs", SOUND_WAV_STEREO, VOLUME_SPEECH, false, false, false);
+				PlayVoice("ChargeBombs");
+				//SendMessage(&Sound, "lslllll", MSG_SOUND_PLAY, "ChargeBombs", SOUND_WAV_STEREO, VOLUME_SPEECH, false, false, false);
 				Ship_ChangeCharge(pchar, GOOD_BOMBS);
 			}
 		break;
@@ -3136,4 +3146,33 @@ bool IsSeaPerkAcquired(string sPerkID)
 string GetPosString(int x1, int y1, int x2, int y2)
 {
 	return x1 + "," + y1 + "," + x2 + "," + y2;
+}
+
+void BI_SetFireModeArrows()
+{
+//	if (!bShowExtInfo())
+//	{
+//		BattleInterface.dynamic.images.firemode_l.color = argb(0,128,128,128);
+//		BattleInterface.dynamic.images.firemode_r.color = argb(0,128,128,128);
+//		return;
+//	}
+
+	string curMode = GetFireMode(pchar);
+	aref arImage;
+	makearef(arImage, BattleInterface.dynamic.images.firemode_l);
+	arImage.color = argb(255,128,128,128);
+	switch(curMode)
+	{
+		case FIRE_MODE_DIRECT:		arImage.uv = "0.5,0.0,0.75,1.0";		break;
+		case FIRE_MODE_RANDOM:		arImage.color = argb(0,128,128,128);	break;
+		case FIRE_MODE_REVERSE:		arImage.uv = "0.75,0.0,1.0,1.0";		break;
+	}
+	makearef(arImage, BattleInterface.dynamic.images.firemode_r);
+	arImage.color = argb(255,128,128,128);
+	switch(curMode)
+	{
+		case FIRE_MODE_DIRECT:		arImage.uv = "0.5,0.0,0.75,1.0";		break;
+		case FIRE_MODE_RANDOM:		arImage.color = argb(0,128,128,128);	break;
+		case FIRE_MODE_REVERSE:		arImage.uv = "0.75,0.0,1.0,1.0";		break;
+	}
 }

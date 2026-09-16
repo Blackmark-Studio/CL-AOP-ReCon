@@ -1,0 +1,111 @@
+ArubaIndian_dialog_1 {
+Nothing to talk about!
+}
+ArubaIndian_dialog_2_m {
+Pale-face wants to talk?
+}
+ArubaIndian_dialog_2_f {
+White squaw wants to talk?
+}
+ArubaIndian_dialog_3_m {
+You again, pale-face.
+}
+ArubaIndian_dialog_3_f {
+You again, white squaw.
+}
+ArubaIndian_dialog_4_m {
+Pale-face likes to talk. He is like a squaw.
+}
+ArubaIndian_dialog_4_f {
+White squaw likes to talk.
+}
+ArubaIndian_dialog_5_m {
+The spirits have brought a pale-faced brother to me.
+}
+ArubaIndian_dialog_5_f {
+The spirits have brought a pale-faced sister to me.
+}
+ArubaIndian_dialog_6 {
+Yes.
+}
+ArubaIndian_dialog_7 {
+Yes, it's me again.
+}
+ArubaIndian_dialog_8 {
+Very poetic.
+}
+ArubaIndian_dialog_9_m {
+I'm glad to see you too.
+}
+ArubaIndian_dialog_9_f {
+I'm glad to see you too.
+}
+ArubaIndian_dialog_10_m {
+Speak. Why have you come?
+}
+ArubaIndian_dialog_10_f {
+Speak. Why have you come?
+}
+ArubaIndian_dialog_11_m {
+Nothing in particular. I just wanted to hear you talk...
+}
+ArubaIndian_dialog_11_f {
+Nothing in particular. I just wanted to hear you talk...
+}
+ArubaIndian_dialog_12_m {
+White man wants to talk?
+}
+ArubaIndian_dialog_12_f {
+White squaw wants to talk?
+}
+ArubaIndian_dialog_13 {
+You again, yalanaui?
+}
+ArubaIndian_dialog_14_m {
+Pale-face likes to talk.
+}
+ArubaIndian_dialog_14_f {
+Pale-face likes to talk.
+}
+ArubaIndian_dialog_15_m {
+The spirits have brought a pale-faced brother to me...
+}
+ArubaIndian_dialog_15_f {
+The spirits have brought a white squaw to me...
+}
+ArubaIndian_dialog_16_m {
+@<npchar.name> listens to you, son of the sea.
+}
+ArubaIndian_dialog_16_f {
+@<npchar.name> listens to you, daughter of the sea.
+}
+ArubaIndian_dialog_17_m {
+What do you want from @<npchar.name>, pale-face?
+}
+ArubaIndian_dialog_17_f {
+What do you want from @<npchar.name>, pale-face?
+}
+ArubaIndian_dialog_18_m {
+My ears are open to your words, stranger.
+}
+ArubaIndian_dialog_18_f {
+My ears are open to your words, stranger.
+}
+ArubaIndian_dialog_19_m {
+Nothing in particular. I just wanted to hear you talk...
+}
+ArubaIndian_dialog_19_f {
+Nothing in particular. I just wanted to hear you talk...
+}
+ArubaIndian_dialog_20 {
+Put away your weapon, yalanaui, before we make you do it!
+}
+ArubaIndian_dialog_21 {
+All right.
+}
+ArubaIndian_dialog_22 {
+Fine.
+}
+ArubaIndian_dialog_23 {
+Don't worry, I'm putting it away...
+}

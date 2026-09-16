@@ -189,7 +189,10 @@ void ProcessBaseOfficerEvent(ref NPChar, aref Link, aref Diag)
 					link.l1.go = "exit_hire";
 				}
 				link.l2 = StringFromKey("Officer_Common_23", npchar);
-				link.l2.go = "AsYouWish";
+				if (NPChar.id == "Rimalier" && CheckAttribute(pchar, "questTemp.Brides_Tortuga.RimalierDismissLocked"))
+					link.l2.go = "Rimalier_DismissLocked";
+				else
+					link.l2.go = "AsYouWish";
 				link.l3 = StringFromKey("Officer_Common_24");
 				link.l3.go = "Exit";
 				if (FindFreeRandomOfficer() == -1) DeleteAttribute(link, "l3");
@@ -309,7 +312,10 @@ void ProcessBaseOfficerEvent(ref NPChar, aref Link, aref Diag)
 			if (pchar.questTemp.LSC != "MechanicIsArrest_toResidence" && pchar.location != "My_Deck_Medium" && pchar.location != "My_Orlop")
 			{
 				Link.l4 = StringFromKey("Officer_Common_50");
-				Link.l4.go = "AsYouWish";
+				if (NPChar.id == "Rimalier" && CheckAttribute(pchar, "questTemp.Brides_Tortuga.RimalierDismissLocked"))
+					Link.l4.go = "Rimalier_DismissLocked";
+				else
+					Link.l4.go = "AsYouWish";
 			}
 
 			// по тек локации определим можно ли тут приказать  -->
@@ -356,6 +362,13 @@ void ProcessBaseOfficerEvent(ref NPChar, aref Link, aref Diag)
 				Link.l10 = StringFromKey("Officer_Common_56");
 				Link.l10.go = "goToExit";
 			}
+		break;
+
+		case "Rimalier_DismissLocked":
+			Diag.TempNode = "Hired";
+			dialog.text = StringFromKey("Officer_Common_657");
+			Link.l1 = StringFromKey("Officer_Common_658");
+			Link.l1.go = "hired";
 		break;
 
 		case "exchangeItems":
@@ -879,12 +892,23 @@ void ProcessBaseOfficerEvent(ref NPChar, aref Link, aref Diag)
 			string sType = sld.chargetype;
 			iTemp = KZ|Symbol(sType, ",");
 
+			int iCurLen = strlen(&sType);
+			int iCurPos = 0;
+			int iCurEnd;
+
 			for (i = 0; i <= iTemp; i++)
 			{
-				sAttr = sType;
+				iCurEnd = findSubStr(&sType, ",", iCurPos);
 
-				if (iTemp > 0)
-					sAttr = GetSubStr(sType, ",", i);
+				if (iCurEnd < 0)
+					iCurEnd = iCurLen;
+
+				sAttr = "";
+
+				if (iCurEnd > iCurPos)
+					sAttr = strcut(&sType, iCurPos, iCurEnd - 1);
+
+				iCurPos = iCurEnd + 1;
 
 				if (sAttr != "")
 				{
@@ -924,7 +948,7 @@ void ProcessBaseOfficerEvent(ref NPChar, aref Link, aref Diag)
 			sAttr = sld.chargetype;
 			TEV.CT.TEMP0 = GetConvertStr(sld.name, "ItemsDescribe.txt");
 
-			if (KZ|Symbol(sAttr, ",") > 0)
+			if (findSubStr(&sAttr, ",", 0) >= 0)
 				sAttr = GetSubStr(sld.chargetype, ",", sti(TEV.CT.SetGunBullets));
 
 			TEV.CT.TEMP1 = sld.type.(sAttr).bullet;

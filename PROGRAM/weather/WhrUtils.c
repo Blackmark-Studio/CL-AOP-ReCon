@@ -1,5 +1,6 @@
 int Whr_GetColor(aref arRef, string sAttribute)
 {
+	if (!CheckAttribute(arRef, sAttribute)) return 0;
 	return sti(arRef.(sAttribute));
 }
 
@@ -13,7 +14,7 @@ float Whr_GetFloat(aref arRef, string sAttribute)
 		return fMin + frnd() * (fMax - fMin);
 	}
 
-	if (!CheckAttribute(&arRef, sAttribute)) return 0.0; //задолбало
+	if (!CheckAttribute(arRef, sAttribute)) return 0.0; //задолбало
 
 	return stf(arRef.(sAttribute));
 }
@@ -25,16 +26,17 @@ int Whr_GetLong(aref arRef, string sAttribute)
 	{
 		int iMin = sti(arRef.(sAttribute).min);
 		int iMax = sti(arRef.(sAttribute).max);
-		return iMin + rand(iMax - iMin - 1);
+		return iMin + rand(iMax - iMin);
 	}
+	if (!CheckAttribute(arRef, sAttribute)) return 0;
 	return sti(arRef.(sAttribute));
 }
 
 string Whr_GetString(aref arRef, string sAttribute)
 {
+	if (!CheckAttribute(arRef, sAttribute)) return "";
 	return arRef.(sAttribute);
 }
-
 
 void eChangeDayNight()
 {
@@ -87,5 +89,6 @@ float SM_FastRound(float f, int d)
 	if (d == 0)
 		return makeint(f + h);
 	
-	return makefloat(makeint(f * pow(10, d) + h)) / pow(10, d);
+	float p = pow(10, d);
+	return makefloat(makeint(f * p + h)) / p;
 }

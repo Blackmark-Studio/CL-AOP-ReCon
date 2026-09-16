@@ -32,11 +32,21 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 				link.l1.go = "EscapeSlave_Villemstad_P1";
 			}
 			//ОЗГ, Крыса
-			if (pchar.questTemp.Headhunter == "Rat" && pchar.questTemp.Headhunter.countV == 0)
+			if (CheckAttrValue(pchar, "questTemp.Headhunter", "Rat") && pchar.questTemp.Headhunter.countV == 0)
 			{
 				link.l1 = StringFromKey("Villemstad_PortMan_15", pchar);
 				link.l1.go = "Rat_portmanV";
 			}
+			// ==> Эммануэль Пардаль: Портниха знатной дамы
+			if(CheckAttribute(pchar, "questTemp.EPL_PZD_PU"))
+			{
+				DeleteAttribute(pchar, "questTemp.EPL_PZD_taverna");
+				DeleteAttribute(pchar, "questTemp.EPL_PZD_PU");
+				link.l1 = StringFromKey("Villemstad_PortMan_30");
+				link.l1.go = "EPL_PZD_PU_1";
+				break;
+			}
+			// <== Эммануэль Пардаль: Портниха знатной дамы
 		break;
 
 		//************************************* Диалоги по голл.линейке *******************************
@@ -110,6 +120,35 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 			RemoveLandQuestMark_Main(npchar, "Headhunt");
 			DialogExit();
 		break;
+		
+		// ==> Эммануэль Пардаль: Портниха знатной дамы
+		case "EPL_PZD_PU_1":
+    		dialog.text = StringFromKey("Villemstad_PortMan_31", PChar.Ship.Name);
+    		link.l1 = StringFromKey("Villemstad_PortMan_32");
+    		link.l1.go = "EPL_PZD_PU_2";
+			RemoveLandQuestmark_Main(CharacterFromID("Villemstad_tavernkeeper"), "EPL_PZD");
+			RemoveLandQuestmark_Main(CharacterFromID("Villemstad_portman"), "EPL_PZD");
+ 		break;
+		
+		case "EPL_PZD_PU_2":
+    		dialog.text = StringFromKey("Villemstad_PortMan_33");
+    		link.l1 = StringFromKey("Villemstad_PortMan_34");
+    		link.l1.go = "EPL_PZD_PU_3";
+ 		break;
+		
+		case "EPL_PZD_PU_3":
+    		dialog.text = StringFromKey("Villemstad_PortMan_35");
+    		link.l1 = StringFromKey("Villemstad_PortMan_36");
+    		link.l1.go = "EPL_PZD_PU_4";
+ 		break;
+		
+		case "EPL_PZD_PU_4":
+    		dialog.text = StringFromKey("Villemstad_PortMan_37");
+    		link.l1 = StringFromKey("Villemstad_PortMan_38");
+    		link.l1.go = "exit";
+			AddDialogExitQuestFunction("EPL_PZD_PortUprDialogExit");
+ 		break;
+		// <== Эммануэль Пардаль: Портниха знатной дамы
 	}
 	UnloadSegment(NPChar.FileDialog2);  // если где-то выход внутри switch  по return не забыть сделать анлод
 }

@@ -122,7 +122,7 @@ Sandal_descr {Eine wertvolle Holzart ist schwer, gelblich und fein gemasert und 
 Leather {Leder}
 Leather_descr
 {
-Das gegerbte und verarbeitete Leder von Rindern ist eine universelle Handelsware, die in Europa stets gefragt ist. So verdienten die ersten Buccaneer ihren Lebensunterhalt, indem sie die Häute und das Fleisch der wilden Rinder auf Hispaniola verkauften.
+Das gegerbte und verarbeitete Leder von Rindern ist eine universelle Handelsware, die in Europa stets gefragt ist.
 Auch wenn nur wenige Händler ihre Schiffe ausschließlich mit Leder beladen würden, eignet es sich hervorragend, um leeren Frachtraum zu füllen, da es sehr robust ist und jede Transportbedingung aushält.
 }
 Oil {Öl}
@@ -163,8 +163,6 @@ Silver_descr
 Massive Silberbarren, geprägt vom Schatzamt Spaniens.
 Ein begehrter Schatz, denn Silber besitzt einen soliden Wert und ist die zweite Wahl des spanischen Schatzamts zur Aufbewahrung und zum Transport von Reichtum. Der Großteil wird an einem Ort namens „Der Silberberg“ nahe Potosi abgebaut.
 }
-Pinctada {Perlenaustern}
-Pinctada_descr {Der begehrteste Fang der Perlentaucher – karibische Muscheln (Pinctada longisquamosa), die auf flachen Bänken gesammelt werden. Ihre schillernden Schalen bergen vielleicht Schätze... oder nur leere Träume. Und die geschicktesten Hände öffnen sie, ohne die Perlmuttschicht zu beschädigen...}
 Brick {Ziegel}
 Brick_descr
 {
@@ -176,6 +174,25 @@ Medicament_descr
 {
 Ein Set aus Medikamenten und Instrumenten zur Behandlung der häufigsten Krankheiten und zur Ersten Hilfe bei Verwundeten und Verletzten. Dosen, Pulver, Verbände, Fläschchen, Heilumschläge – alles, was Leben retten kann.  
 Medizin an Bord hilft, Verwundete zu retten, Verluste beim Entern zu verringern und Kranke während der Überfahrt zu heilen.
+}
+Pinctada {Perlenaustern}
+Pinctada_descr {Der begehrteste Fang der Perlentaucher – karibische Muscheln (Pinctada longisquamosa), die auf flachen Bänken gesammelt werden. Ihre schillernden Schalen bergen vielleicht Schätze... oder nur leere Träume. Und die geschicktesten Hände öffnen sie, ohne die Perlmuttschicht zu beschädigen...}
+Salt {Salz}
+Salt_descr
+{
+Ein unverzichtbares Produkt im Zeitalter langer Seeexpeditionen. Gewonnen aus Salzseen oder Minen des Archipels, wird Salz zur Konservierung von Proviant verwendet und schützt ihn vor dem Verderben im feuchten tropischen Klima. Für viele Kolonisten ist dieses „weiße Gold“ eine stabile Einnahmequelle, da kein vernünftiger Kapitän riskieren würde, ohne zuverlässige Vorräte an Pökelfleisch in See zu stechen.
+}
+Meat {Fleisch}
+Meat_descr
+{
+Getrocknetes und großzügig gesalzenes Fleisch, das nach den Traditionen der karibischen Bukanier-Jäger auf Holzrosten zubereitet wird. Ein ausgezeichnetes Handelsgut, das in allen Kolonien stets gewinnbringend verkauft werden kann.
+~
+Achtung: Diese Ware ist ausschließlich für den Verkauf bestimmt. Um die Mannschaft auf See zu ernähren, muss Schiffsproviant gekauft werden.
+}
+Hide {Häute}
+Hide_descr
+{
+Ungegerbte Häute von Wildschweinen und verwilderten Kühen, die in großer Zahl durch die Wälder von Hispaniola und anderen Inseln streifen. Im Gegensatz zu bereits gegerbtem Leder ist diese Fracht ein Rohstoff, der in europäischen Manufakturen großzügig bezahlt wird. Die Jagd und der Handel mit rohen Häuten ist ein hartes und gefährliches Gewerbe, mit dem viele legendäre Bukaniere ihren Weg zum Reichtum begannen.
 }
 Cannon_3 {Falkonette}
 Cannon_3_descr

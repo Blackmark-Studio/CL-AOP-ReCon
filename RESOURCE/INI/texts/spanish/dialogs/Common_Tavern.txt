@@ -1229,7 +1229,7 @@ Common_Tavern_364 {
 Todo lo mejor.
 }
 Common_Tavern_365 {
-Por supuesto, tengo lo que necesita, Doctor Blood. El señor Griffin, a quien le trató la fractura hace poco, es un viejo armero de profesión. Su casa está cerca de la finca del gobernador Steed; visítelo. Estoy seguro de que no le rechazará.
+Hm... De acuerdo, sé a quién necesita. El señor Griffin, cuya fractura usted redujo no hace mucho, es un viejo armero de oficio. Su casa está cerca de la finca del gobernador Steed - vaya a verlo. Estoy seguro de que no se negará a ayudarle.
 }
 Common_Tavern_366 {
 Que te vaya bien.
@@ -1491,4 +1491,13 @@ Common_Tavern_431 {
 }
 Common_Tavern_432 {
 Necesito desembarcar a parte de mi tripulación.
+}
+
+LeBask_TavernRoom_1
+{
+Ahora mismo monsieur Etienne Marceau tiene alquilada mi habitación y ha pagado un mes por adelantado, así que no puedo ayudarle, capitán.
+}
+LeBask_TavernRoom_2
+{
+Qué pena, qué lástima...
 }

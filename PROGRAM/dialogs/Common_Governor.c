@@ -332,6 +332,7 @@ void ProcessDialogEvent()
 
 		case "Andre_Abel_Quest_Hol_Gov_Node_6":
 			DialogExit();
+			NextDiag.TempNode = "First time";
 			NextDiag.CurrentNode = NextDiag.TempNode;
 			LAi_SetFightMode(PChar, true);
 			Flag_PIRATE();
@@ -358,6 +359,7 @@ void ProcessDialogEvent()
 
 		case "Andre_Abel_Quest_Hol_Gov_Node_8":
 			DialogExit();
+			NextDiag.TempNode = "First time";
 			NextDiag.CurrentNode = NextDiag.TempNode;
 			DoFunctionReloadToLocation("Villemstad_prison", "goto", "goto9", "Andre_Abel_Quest_In_Prison");
 		break;
@@ -386,6 +388,7 @@ void ProcessDialogEvent()
 
 		case "Andre_Abel_Quest_Hol_Gov_Node_11":
 			DialogExit();
+			NextDiag.TempNode = "First time";
 			NextDiag.CurrentNode = "Andre_Abel_Quest_Hol_Gov_Node_GetOutRepeat";
 
 			//HardCoffee рефакторинг диалогов с Морганом
@@ -442,6 +445,7 @@ void ProcessDialogEvent()
 
 		case "Exit_Andre_Abel_Quest_Hol_Gov_Node_AllureSuccess":
 			DialogExit();
+			NextDiag.TempNode = "First time";
 			NextDiag.CurrentNode = "Andre_Abel_Quest_Hol_Gov_Node_GetOutRepeat";
 
 			pchar.QuestTemp.AndreAbelQuest = "GoTo_MorganAllure";

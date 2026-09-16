@@ -1,9 +1,9 @@
 SanJuan_Ammo_1 {
-说吧，我听着。
+说吧， 我听着。 
 }
 SanJuan_Ammo_2_m {
-我错了。告辞。
+我搞错了。 告辞。 
 }
 SanJuan_Ammo_2_f {
-我错了。告辞。
+我搞错了。 告辞。 
 }

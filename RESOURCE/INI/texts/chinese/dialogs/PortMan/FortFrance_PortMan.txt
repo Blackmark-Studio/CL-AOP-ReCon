@@ -1,152 +1,152 @@
 FortFrance_PortMan_1 {
-什么问题？
+什么问题？ 
 }
 FortFrance_PortMan_2 {
-有什么需要帮忙的吗，@<GetAddress_Form>?
+有什么需要帮忙的吗， @<GetAddress_Form>?
 }
 FortFrance_PortMan_3 {
 @<RandPhraseSimple>
 }
 FortFrance_PortMan_4 {
-前不久你还想问我个问题@<GetAddress_Form>……
+前不久你还想问我个问题@<GetAddress_Form>…… 
 }
 FortFrance_PortMan_5 {
-你今天已经第三次提这事了……
+你今天已经第三次提这事了…… 
 }
 FortFrance_PortMan_6 {
-听着，要是你不是来办港口的事儿，别拿问题来烦我。
+听着， 要是你不是来办港口的事儿， 别拿问题来烦我。 
 }
 FortFrance_PortMan_7_m {
-我改变主意了……
+我改变主意了…… 
 }
 FortFrance_PortMan_7_f {
-我改变主意了……
+我改变主意了…… 
 }
 FortFrance_PortMan_8 {
-我现在没什么可说的。
+我现在没什么可说的。 
 }
 FortFrance_PortMan_9 {
 @<RandPhraseSimple>
 }
 FortFrance_PortMan_10 {
-嗯，我的记忆好像出了点问题……
+嗯， 我的记忆好像出了点问题…… 
 }
 FortFrance_PortMan_11 {
-行吧，第三次总算成了……
+行吧， 第三次总算成了…… 
 }
 FortFrance_PortMan_12 {
-不好意思，俺现在对港口的事儿没兴趣。
+不好意思， 我现在对港口的事儿没兴趣。 
 }
 FortFrance_PortMan_13 {
-我在找Edward Low，他来过这儿吗？
+我在找爱德华.洛， 他来过这儿吗？ 
 }
 FortFrance_PortMan_14_m {
-我找到钱了！
+我找到钱了！ 
 }
 FortFrance_PortMan_14_f {
-我找到钱了！
+我找到钱了！ 
 }
 FortFrance_PortMan_15 {
-不好意思，先生，您找我有什么事？
+不好意思， 先生， 您找我有什么事？ 
 }
 FortFrance_PortMan_16 {
-我是来正式办理离港手续的。
+我是来正式办理离港手续的。 
 }
 FortFrance_PortMan_17 {
-好……（翻看文件）……“Mercury”号fluyt船，目的地是Santo Domingo。那就祝你一路顺风，小伙子。
+好…… （翻看文件）…… “水星号”福禄特帆船， 目的地是圣多明各。 那就祝你一路顺风， 小伙子。 
 }
 FortFrance_PortMan_18 {
-这儿咱们的运气就看风了。
+这儿咱们的运气就看风了。 
 }
 FortFrance_PortMan_19 {
-Edward Low？他来过一趟，那时候我这儿正好有个法国私掠船，他就说想搭个顺风船，一起走。
+爱德华.洛？ 他来过一趟， 那时候我这儿正好有个法国私掠船， 他就说想搭个顺风船， 一起走。 
 }
 FortFrance_PortMan_20 {
-这事咱们不是已经说过了吗！
+这事咱们不是已经说过了吗！ 
 }
 FortFrance_PortMan_21 {
-别再一直重复同样的话了，马上停下。
+别再一直重复同样的话了， 马上停下。 
 }
 FortFrance_PortMan_22_m {
-哼，真让人烦……
+哼， 真让人烦…… 
 }
 FortFrance_PortMan_22_f {
-嗯，累了……
+嗯， 累了…… 
 }
 FortFrance_PortMan_23 {
-你知道那私掠船去哪儿了吗？
+你知道那私掠船去哪儿了吗？ 
 }
 FortFrance_PortMan_24 {
-嗯，我记得。
+嗯， 我记得。 
 }
 FortFrance_PortMan_25 {
-好吧……
+好吧…… 
 }
 FortFrance_PortMan_26 {
-明白……
+明白…… 
 }
 FortFrance_PortMan_27 {
-我确实知道，但你也明白——这种消息我没权利透露……
+我确实知道， 但你也明白——这种消息我没权利透露…… 
 }
 FortFrance_PortMan_28 {
-可我真的得找到他！我有急事要找他！
+可我真的得找到他！ 我有急事要找他！ 
 }
 FortFrance_PortMan_29_m {
-其实，我是Edward Low的远房亲戚，现在急着要告诉他他母亲生病的消息。你作为个讲道理的人，总不会让官僚作风耽误儿子和垂危母亲道别吧……
+其实， 我是爱德华.洛的远房亲戚， 现在急着要告诉他他母亲生病的消息。 你作为个讲道理的人， 总不会让官僚作风耽误儿子和垂危母亲道别吧…… 
 }
 FortFrance_PortMan_29_f {
-其实，我是Edward Low的远房亲戚，现在正赶着去告诉他母亲病重的消息。你作为个有良心的人，总不会让些官僚规矩挡住儿子和临终母亲道别吧……
+其实， 我是爱德华.洛的远房亲戚， 现在正赶着去告诉他母亲病重的消息。 你作为个有良心的人， 总不会让些官僚规矩挡住儿子和临终母亲道别吧…… 
 }
 FortFrance_PortMan_30 {
-去找……
+去找…… 
 }
 FortFrance_PortMan_31 {
-啊，见鬼！
+啊， 见鬼！ 
 }
 FortFrance_PortMan_32 {
-是啊，真是场大悲剧。我会帮你的。那私掠船正前往Bermuda。
+是啊， 真是场大悲剧。 我会帮你的。 那私掠船正前往百慕大。 
 }
 FortFrance_PortMan_33 {
-太感谢你了！你帮了我多大的忙，你都想不到！真的谢谢你。
+太感谢你了！ 你帮了我多大的忙， 你都想不到！ 真的谢谢你。 
 }
 FortFrance_PortMan_34 {
-哦，当然，当然。这里每个人都跟我讲什么可怜的亲戚、快死的老娘，难道我就得全信了？别闹了，换点新花样吧。
+哦， 当然， 当然。 这里每个人都跟我讲什么可怜的亲戚、 快死的老娘， 难道我就得全信了？ 别闹了， 换点新花样吧。 
 }
 FortFrance_PortMan_35 {
-也许给港务局大楼修缮基金捐点钱，能帮咱们绕过你章程里那个麻烦条款？
+也许给港务局大楼修缮基金捐点钱， 能帮咱们绕过你章程里那个麻烦条款？ 
 }
 FortFrance_PortMan_36 {
-嗯……既然你这么坚持，1万5千金币或许能补偿俺违背规矩的心理负担……
+嗯…… 既然你这么坚持， 15,000比索或许能补偿我违背规矩的心理负担…… 
 }
 FortFrance_PortMan_37 {
-有啥问题？！钱给你了。
+有什么问题？ ！ 钱给你了。 
 }
 FortFrance_PortMan_38 {
-嗯，我现在身上可没那么多钱！
+嗯， 我现在身上可没那么多钱！ 
 }
 FortFrance_PortMan_39 {
-那家伙已经开船去Bermuda了……
+那家伙已经开船去百慕大了…… 
 }
 FortFrance_PortMan_40_m {
-明白了。感谢你真心关心我们家的事。告辞。
+明白了。 感谢你真心关心我们家的事。 告辞。 
 }
 FortFrance_PortMan_40_f {
-明白了。谢谢你真心关心我们家的事。告辞。
+明白了。 谢谢你真心关心我们家的事。 告辞。 
 }
 FortFrance_PortMan_41 {
-所以，你得自己去拿。别担心，我会等你的……
+所以， 你得自己去拿。 别担心， 我会等你的…… 
 }
 FortFrance_PortMan_42 {
-嗯，好吧。钱我去弄！
+嗯， 好吧。 钱我去弄！ 
 }
 FortFrance_PortMan_43 {
-很好！
+很好！ 
 }
 FortFrance_PortMan_44 {
-这是你的15000，说吧，你知道的都告诉我。
+这是你的15000， 说吧， 你知道的都告诉我。 
 }
 FortFrance_PortMan_45 {
-哼，你当老子是傻子吗？快去把钱拿来！
+哼， 你当我是傻子吗？ 快去把钱拿来！ 
 }
 FortFrance_PortMan_46 {
 该死!!

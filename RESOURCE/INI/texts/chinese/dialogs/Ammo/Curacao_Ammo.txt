@@ -1,9 +1,9 @@
 Curacao_Ammo_1 {
-说吧，我听着。
+说吧，我听着。 
 }
 Curacao_Ammo_2_m {
-我错了。告辞。
+我搞错了。 告辞。 
 }
 Curacao_Ammo_2_f {
-我搞错了。告辞。
+我搞错了。 告辞。 
 }

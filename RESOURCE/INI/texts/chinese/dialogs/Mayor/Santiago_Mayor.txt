@@ -1,159 +1,159 @@
 Santiago_Mayor_1 {
-你找俺有啥事？有啥就问吧。
+你找我有什么事？ 有什么就问吧。 
 }
 Santiago_Mayor_2 {
-我听着呢，你想问啥？
+我听着呢， 你想问什么？ 
 }
 Santiago_Mayor_3 {
 @<RandPhraseSimple>
 }
 Santiago_Mayor_4 {
-你今天已经是第二次想问问题了……
+你今天已经是第二次想问问题了…… 
 }
 Santiago_Mayor_5 {
-今天都第三次了，你又想问问题……
+今天都第三次了， 你又想问问题…… 
 }
 Santiago_Mayor_6 {
-这到底什么时候才是个头啊？！老子还得管城市一堆事，你就一直问个不停！
+这到底什么时候才是个头啊？ ！ 我还得管城市一堆事， 你就一直问个不停！ 
 }
 Santiago_Mayor_7_m {
-我改主意了……
+我改主意了…… 
 }
 Santiago_Mayor_7_f {
-我改主意了……
+我改主意了…… 
 }
 Santiago_Mayor_8 {
-现在不是时候，也不是地方……
+现在不是时候， 也不是地方…… 
 }
 Santiago_Mayor_9 {
 @<RandPhraseSimple>
 }
 Santiago_Mayor_10 {
-对，没错……不过现在不行，等会儿吧……
+对， 没错…… 不过现在不行， 等会儿吧…… 
 }
 Santiago_Mayor_11 {
-会的，会的……只是晚点……
+会的， 会的…… 只是晚点…… 
 }
 Santiago_Mayor_12 {
-抱歉，@<GetAddress_FormToNPC>……
+抱歉， @<GetAddress_FormToNPC>…… 
 }
 Santiago_Mayor_13 {
-我在听，@<GetAddress_Form>。
+我在听， @<GetAddress_Form>。 
 }
 Santiago_Mayor_14_m {
-我是被Havana总督派到你手下的。
+我受命于哈瓦那总督调遣到您手下。 
 }
 Santiago_Mayor_14_f {
-我是被Havana总督派到你手下的。
+我受命于哈瓦那总督调遣到您手下。 
 }
 Santiago_Mayor_15 {
-你怎么看，长官？
+事情办得如何了， 军官阁下？ 
 }
 Santiago_Mayor_16 {
-一切都办得很完美。La Vega的海盗据点已经被摧毁，他们的头目Mansfield也是我亲手解决的。
+一切都办得很完美。 拉维加的海盗据点已经被摧毁， 他们的头目曼斯菲尔德也是我亲手解决的。 
 }
 Santiago_Mayor_17 {
-你都拿走了，还想要啥？
+你都拿走了， 还想要什么？ 
 }
 Santiago_Mayor_18 {
-你还有什么没抢到的吗？
+你还有什么没抢到的吗？ 
 }
 Santiago_Mayor_19 {
 @<RandPhraseSimple>
 }
 Santiago_Mayor_20 {
-最后再四处看看……
+最后再四处看看…… 
 }
 Santiago_Mayor_21_m {
-看看有没有啥东西落下了……
+看看有没有什么东西落下了…… 
 }
 Santiago_Mayor_21_f {
-看看自己是不是忘了拿什么……
+看看自己是不是忘了拿什么…… 
 }
 Santiago_Mayor_22 {
 @<RandPhraseSimple>
 }
 Santiago_Mayor_23_m {
-你赢了，姑娘！
+你赢了， 姑娘！ 
 }
 Santiago_Mayor_23_f {
-你赢了，姑娘！
+你赢了， 姑娘！ 
 }
 Santiago_Mayor_24_m {
-先生，我不喜欢被这么叫。叫我私掠者更合适。
+先生， 我不喜欢被这么叫。 叫我私掠者更合适。 
 }
 Santiago_Mayor_24_f {
-先生，我不喜欢被这么叫。请叫我私掠者。
+先生， 我不喜欢被这么叫。 请叫我私掠者。 
 }
 Santiago_Mayor_25 {
-你休想得到什么，English猪。
+你休想得到什么， 英格兰猪。 
 }
 Santiago_Mayor_26 {
-恐怕不行，先生。其实我们不会单独离开，你得跟我们一起去Jamaica。Sir Thomas Modyford很想见你。
+恐怕不行， 先生。 其实我们不会单独离开， 你得跟我们一起去牙买加。 托马斯.莫迪福德先生很想见你。 
 }
 Santiago_Mayor_27 {
-什么？！你凭什么？！
+什么？ ！ 你凭什么？ ！ 
 }
 Santiago_Mayor_28_m {
-胜者为王，先生。既然咱们还得打交道一阵子，麻烦您叫俺“私掠者”，别叫“贼”。
+胜者为王， 先生。 既然咱们还得打交道一阵子， 麻烦您叫我“私掠者”， 别叫“海盗”。 
 }
 Santiago_Mayor_28_f {
-胜者为王，先生。既然我们还得打交道一阵子，我希望你称呼我为“私掠者”，别叫我“ladrona”。
+胜者为王， 先生。 既然我们还得打交道一阵子， 我希望你称呼我为“私掠者”， 别叫我“海盗”。 
 }
 Santiago_Mayor_29 {
-Manuel Rivero Pardal已经赶来帮我了，你跑不了多远……
+曼努埃尔.里韦罗.帕达尔已经赶来帮我了， 你跑不了多远…… 
 }
 Santiago_Mayor_30 {
-在海上碰到西班牙人对俺来说早就习惯了，管你是不是Pardal都一样。准备好吧，尊敬的señor，动作快点！
+在海上碰到西班牙人对我来说早就习惯了， 管你是不是帕达尔都一样。 准备好吧， 尊敬的先生， 动作快点！ 
 }
 Santiago_Mayor_31 {
-你能来真是太好了。你准备好上岸作战了吗？
+你能来真是太好了。 你准备好上岸作战了吗？ 
 }
 Santiago_Mayor_32_m {
-随时准备。
+随时准备。 
 }
 Santiago_Mayor_32_f {
-随时准备好。
+随时准备好。 
 }
 Santiago_Mayor_33 {
-很好，那我就告诉你接下来该怎么做。
+很好， 那我就告诉你接下来该怎么做。 
 }
 Santiago_Mayor_34_m {
-我洗耳恭听。
+我洗耳恭听。 
 }
 Santiago_Mayor_34_f {
-我洗耳恭听。
+我洗耳恭听。 
 }
 Santiago_Mayor_35 {
-你要去攻击并摧毁Hispaniola上的海盗据点La Vega。那地方由一个叫Edward Mansfield的老贼头掌控。这个据点必须彻底铲除，里面所有东西都是你凭征服所得。Hispaniola必须完全归西班牙，挡在我们面前的第一个障碍就是La Vega。我还在等一批新的殖民者，他们需要地方安顿。
+你要去攻击并摧毁伊斯帕尼奥拉上的海盗据点拉维加。 那地方由一个叫爱德华.曼斯菲尔德的老贼头掌控。 这个据点必须彻底铲除， 里面所有东西都是你凭征服所得。 伊斯帕尼奥拉必须完全归西班牙， 挡在我们面前的第一个障碍就是拉维加。 我还在等一批新的殖民者， 他们需要地方安顿。 
 }
 Santiago_Mayor_36 {
-明白了，我可以开始了吗？
+明白了， 我可以开始了吗？ 
 }
 Santiago_Mayor_37 {
-当然，越快越好。我再强调一遍，那个定居点必须彻底毁灭——一个活人都不能留下。Hispaniola是我们的岛，这帮杂碎没资格待在这里。
+当然， 越快越好。 我再强调一遍， 那个定居点必须彻底毁灭——一个活人都不能留下。 伊斯帕尼奥拉是我们的岛， 这帮杂碎没资格待在这里。 
 }
 Santiago_Mayor_38 {
-明白，我这就开始处理这件事。
+明白， 我这就开始处理这件事。 
 }
 Santiago_Mayor_39 {
-太好了！Don Francisco说你是个非常能干又可靠的战斗军官。我等着你的好消息。
+太好了！ 弗朗西斯科阁下说你是个非常能干又可靠的战斗军官。 我等着你的好消息。 
 }
 Santiago_Mayor_40 {
-我可以向你保证，La Vega很快就会消失。
+我可以向你保证， 拉维加很快就会消失。 
 }
 Santiago_Mayor_41 {
-太棒了，señor@<GetAddress_Form>！简直无可挑剔！Don Francisco Oregon y Gascon 有你这样的军官效力，绝对值得自豪。
+太棒了， @<GetAddress_Form>！ 简直无可挑剔！ 弗朗西斯科.奥雷贡-加斯孔阁下有你这样的军官效力， 绝对值得自豪。 
 }
 Santiago_Mayor_42_m {
-那些buccaneer确实是不好对付的对手，能完成任务我很高兴……Señor，我的报酬呢？
+那些海盗确实尽是些难缠的对手。 我能完成任务也算不容易…… 那么， 先生， 我的报酬呢？ 
 }
 Santiago_Mayor_42_f {
-那些buccaneer确实是个难缠的对手。我能完成任务也算不容易……Señor，我的报酬呢？
+那些海盗确实尽是些难缠的对手。 我能完成任务也算不容易…… 那么， 先生， 我的报酬呢？ 
 }
 Santiago_Mayor_43 {
-啊，对了……完成这么艰巨的任务，Santiago城会给出125,000皮阿斯特的奖励。请收下你的报酬。
+啊， 对了…… 完成这么艰巨的任务， 圣地亚哥城会给出十二万五比索的奖励。 请收下你的报酬。 
 }
 Santiago_Mayor_44 {
-太好了。Señor Jimenez，很高兴和你合作。告辞了。
+太好了。 希门尼斯先生， 很高兴和你合作。 告辞了。 
 }

@@ -679,10 +679,20 @@ void StoreOfficersLSC()
 			{
 				// большинство офицеров тусят в таверне
 				sLocatorSit = ArrayGetRandomValue(&arLocatorsSit);
-				ArrayRemoveValue(&arLocatorsSit, sLocatorSit);
-				LAi_SetSitTypeNoGroup(sld);
-				FreeSitLocator("Secret_Fort_Tavern", sLocatorSit);
-				ChangeCharacterAddressGroup(sld, "Secret_Fort_Tavern", "sit", sLocatorSit);
+				if (sLocatorSit != "")
+				{
+					ArrayRemoveValue(&arLocatorsSit, sLocatorSit);
+					LAi_SetSitTypeNoGroup(sld);
+					FreeSitLocator("Secret_Fort_Tavern", sLocatorSit);
+					ChangeCharacterAddressGroup(sld, "Secret_Fort_Tavern", "sit", sLocatorSit);
+				}
+				else if (sLocatorGoto != "")
+				{
+					LAi_SetWarriorTypeNoGroup(sld);
+					ChangeCharacterAddressGroup(sld, "Secret_Fort", "goto", sLocatorGoto);
+				}
+				else
+					ChangeCharacterAddress(sld, "none", "");
 			}
 		}
 		else

@@ -1445,7 +1445,7 @@ int LocationInitLostShipsCity(int n)
 	locations[n].private1.items.kocherg = 1;	
 	locations[n].private1.items.topor3 = 1;	
 	locations[n].private1.items.mineral9 = 26;	
-	locations[n].private1.items.topor10 = 1;	
+	locations[n].private1.items.topor1 = 1;	
 	locations[n].private1.items.mineral3 = 2;	
 
 	locations[n].private2.key = "key2";
@@ -2422,11 +2422,6 @@ int LocationInitLostShipsCity(int n)
 
 	//ключи для сундуков и предметы внутри
 	locations[n].private1.key = "key1";
-	locations[n].private1.items.mineral = 1;
-	locations[n].private1.items.mineral = 1;
-	locations[n].private1.items.mineral = 10;
-	locations[n].private1.items.mineral = 3;
-	locations[n].private1.items.mineral = 1;
 	locations[n].private1.items.potion5 = 21;
 	locations[n].locators_radius.box.private1 = 1.3;
 
@@ -2663,7 +2658,6 @@ int LocationInitLostShipsCity(int n)
 	locations[n].reload.l2.label = "LSC Town";
 
 	// схроны
-	locations[n].private1.items.Mineral1 = 3;
 	locations[n].private1.items.Mineral3 = 10;
 	locations[n].private1.items.Mineral5 = 1;
 
@@ -2732,10 +2726,7 @@ int LocationInitLostShipsCity(int n)
 	locations[n].private2.items.jewelry16 = 1;
 	locations[n].private2.items.jewelry13 = 1;
 	locations[n].private2.items.indian5 = 1;
-	locations[n].private2.items.potion7 = 1;
 
-	locations[n].private3.items.recipe_totem_08 = 1;
-	locations[n].private3.items.totem_08 = 1;
 	locations[n].private3.items.potion4 = 2;
 	locations[n].private3.items.potion2 = 1;
 

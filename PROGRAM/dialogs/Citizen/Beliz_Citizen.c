@@ -11,7 +11,7 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 						StringFromKey("Beliz_Citizen_4", pchar),
 						StringFromKey("Beliz_Citizen_5")));
 			link.l1.go = "exit";
-			if(CheckAttribute(pchar, "questTemp.PDM_ONV_Detectiv_Jiteli_Beliz") && npchar.sex == "man" && !CheckAttribute(npchar, "PDM_ONV_Vopros"))
+			if(CheckAttribute(pchar, "questTemp.PDM_ONV_Detectiv_Jiteli_Beliz") && npchar.sex == "man")
 			{
 				link.l1 = StringFromKey("Beliz_Citizen_12", RandPhraseSimple(
 	StringFromKey("Beliz_Citizen_10"),

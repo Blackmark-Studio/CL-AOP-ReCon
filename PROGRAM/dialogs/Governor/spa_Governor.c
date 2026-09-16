@@ -815,8 +815,7 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 			AddLandQuestmark_Main_WithCondition(npchar, "Spa_Line", "StateLines_Waiting_QuestMarkCondition");
 			AddMapQuestMark_Major("Havana_town", "Spa_Line", "StateLines_Waiting_WDMQuestMarkCondition");
 
-			//убираем огонь и пламень 
-			locations[FindLocation("LaVega_town")].models.always.town = "LaVega";
+			//убираем огонь и пламень
 			locations[FindLocation("LaVega_town")].models.always.locatorsl2 = "LaVega_1";
 			locations[FindLocation("LaVega_town")].models.always.locatorsl3 = "LaVega_locators";
 			locations[FindLocation("LaVega_town")].models.day.charactersPatch = "LaVega_patch_day";

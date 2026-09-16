@@ -1,0 +1,9 @@
+Gibraltar_Prison_1 {
+Mów, słucham.
+}
+Gibraltar_Prison_2_m {
+Pomyliłem się. Żegnajcie.
+}
+Gibraltar_Prison_2_f {
+Pomyliłam się. Żegnajcie.
+}

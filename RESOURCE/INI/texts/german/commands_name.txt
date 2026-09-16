@@ -73,4 +73,5 @@ go_portman {Hafenbehörde}
 go_doctor {Arzt}
 go_fenix {Phoenix-Plattform}
 go_diffIndoor {Fluyt Diffindoor}
+go_outpost {Außenposten}
 worldmap_sea {Ausfahrt zur See}

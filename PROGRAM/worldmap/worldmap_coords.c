@@ -24,7 +24,7 @@ void SetMapCoordinateQuest(string _sQuest)
 
 void CheckMapCoordinateQuest() // Процессирование всего
 {
-	PostEvent(sCurCoordinateQuest, 10);
+	if (sCurCoordinateQuest != "") PostEvent(sCurCoordinateQuest, 10);
 }
 
 void DeleteMapCoordinateQuest(string _sQuest)
@@ -76,8 +76,7 @@ void CheckQuestCoordinates_GTutor()
 	}
 }
 
-
-// получить масштаб глобальной карты отосительно режима "море"
+// получить масштаб глобальной карты относительно режима "море"
 int GetSeaToMapScale()
 {
 	int scale = WDM_MAP_TO_SEA_SCALE;
@@ -180,14 +179,14 @@ int GetSeaCoordDegreeZ(float Z)
 
 int GetSeaCoordMinutesX(float X)
 {
-	float ShipX = GetSeaShipX(X);	
-	return GetMapCoordMinutesX(X);
+	float ShipX = GetSeaShipX(X);
+	return GetMapCoordMinutesX(ShipX);
 }
 
 int GetSeaCoordMinutesZ(float Z)
 {
 	float ShipZ = GetSeaShipZ(Z);
-	return GetMapCoordMinutesZ(Z);
+	return GetMapCoordMinutesZ(ShipZ);
 }
 
 //  строка координат долготы на глобальной карте

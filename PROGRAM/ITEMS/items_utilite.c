@@ -86,78 +86,99 @@ void DoCharacterUsedItem(ref chref, string itmID)
 
 float MinHealthPotionForCharacter(ref chref)
 {
-	float ftmp;
-	bool isFinded = false;
+	float fTmp;
+	bool bIsFinded = false;
+	string sItem;
+	ref rItem;
+	aref arItems; makearef(arItems, chref.items);
+	int n, q = GetAttributesNum(arItems);
 
-	for(int n=0; n<ITEMS_QUANTITY; n++)
+	for (n = 0; n < q; n++)
 	{
-		if( CheckAttribute(&Items[n],"potion") )
+		sItem = GetAttributeName(GetAttributeN(arItems, n));
+		rItem = ItemsFromID(sItem);
+
+		if (CheckAttribute(rItem, "potion"))
 		{
-			if(CheckAttribute(&Items[n],"potion.health"))
+			if (CheckAttribute(rItem, "potion.health"))
 			{
-				if( GetCharacterItem(chref,Items[n].id)>0 )
+				if (bIsFinded)
 				{
-					if(isFinded)
-					{
-						if( stf(Items[n].potion.health)<ftmp )
-						{
-							ftmp = stf(Items[n].potion.health);
-						}
-					}else{
-						ftmp = stf(Items[n].potion.health);
-						isFinded = true;
-					}
+					if (stf(rItem.potion.health) < fTmp)
+						fTmp = stf(rItem.potion.health);
+				}
+				else
+				{
+					fTmp = stf(rItem.potion.health);
+					bIsFinded = true;
 				}
 			}
 		}
 	}
-	if(!isFinded) return 0.0;
-	return ftmp;
+
+	if (!bIsFinded)
+		return 0.0;
+
+	return fTmp;
 }
 
-string FindHealthForCharacter(ref chref,float fHealth)
+string FindHealthForCharacter(ref chref, float fHealth)
 {
-	string sret = "";
-	float fdelta = fHealth + 100.0;
-	float ftmp;
+	string sItem, sPotion = "";
+	float fTmp, fDelta = fHealth + 100.0;
 
-	for(int n=0; n<ITEMS_QUANTITY; n++)
+	ref rItem;
+	aref arItems; makearef(arItems, chref.items);
+	int n, q = GetAttributesNum(arItems);
+
+	for (n = 0; n < q; n++)
 	{
-		if( CheckAttribute(&Items[n],"potion") )
+		sItem = GetAttributeName(GetAttributeN(arItems, n));
+		rItem = ItemsFromID(sItem);
+
+		if (CheckAttribute(rItem, "potion.health"))
 		{
-			if( CheckAttribute(&Items[n],"potion.health") )
+			fTmp = stf(rItem.potion.health);
+
+			if (fTmp < fHealth)
+				fTmp = fHealth - fTmp;
+			else
+				fTmp = fTmp - fHealth;
+
+			if (fTmp < fDelta)
 			{
-				if( GetCharacterItem(chref,Items[n].id)>0 )
-				{
-					ftmp = stf(Items[n].potion.health);
-					if( ftmp<fHealth )	{ftmp = fHealth - ftmp;}
-					else	{ftmp = ftmp - fHealth;}
-					if(ftmp<fdelta)
-					{
-						fdelta = ftmp;
-						sret = Items[n].id;
-					}
-				}
+				fDelta = fTmp;
+				sPotion = rItem.id;
 			}
 		}
 	}
 
-	return sret;
+	return sPotion;
 }
 
 int FindPotionFromChr(ref chref, ref arFind, int startIdx)
 {
-	int i;
-	aref arItm;
-	for(i=startIdx; i<ITEMS_QUANTITY; i++)
+	aref arItm, arItems;
+	ref rItem;
+	makearef(arItems, chref.items);
+	
+	int i, q = GetAttributesNum(arItems);
+	string sItem;
+
+	for (i = startIdx; i < q; i++)
 	{
-		makearef(arItm,Items[i]);
-		if( CheckAttribute(arItm,"potion") && GetCharacterItem(chref,Items[i].id)>0 )
+		sItem = GetAttributeName(GetAttributeN(arItems, i));
+		rItem = ItemsFromID(sItem);
+
+		makearef(arItm, rItem);
+
+		if (CheckAttribute(arItm, "potion"))
 		{
 			arFind = arItm;
 			return i;
 		}
 	}
+
 	return -1;
 }
 
@@ -166,127 +187,134 @@ int FindPotionTypesQty(ref chref)
 {
 	int n = 0;
 	ref rItem;
-	aref Items, arItems;
+	aref arItems;
 
 	makearef(arItems, chref.items);
-	int iItemsNum = GetAttributesNum(arItems);
-	for(int i=0; i<iItemsNum; i++)
+	int i, iItemsNum = GetAttributesNum(arItems);
+
+	for (i = 0; i < iItemsNum; i++)
 	{
 		string sItem = GetAttributeName(GetAttributeN(arItems, i));
 		rItem = ItemsFromID(sItem);
-		if(!CheckAttribute(rItem, "potion")) continue;
-		if(!CheckAttribute(rItem, "potion.health")) continue;
+		if (!CheckAttribute(rItem, "potion")) continue;
+		if (!CheckAttribute(rItem, "potion.health")) continue;
 		n++;
 	}
+
 	return n;
 }
 
 int UseBestPotion(ref chref, bool needAntidote)
 {
-	int i;
 	int curPotionID = -1;
 	int curPotionHealAmt = 0;
 	int newPotionHealAmt = 0;
-	bool potionTooGood = false;
-	bool bValidPot;
+	bool bValidPot, potionTooGood = false;
 	int reqHealAmt = LAi_GetCharacterMaxHP(chref) - LAi_GetCharacterHP(chref);
+
 	reqHealAmt = makeint(MakeFloat(reqHealAmt) * 1.2);
-	if (reqHealAmt <=0 && !needAntidote) 
-	{
+
+	if (reqHealAmt <= 0 && !needAntidote)
 		return -1;
-	}
-	
-	aref arItm;
-	for(i=1; i<ITEMS_QUANTITY; i++)
+
+	ref rItem;
+	aref arItems; makearef(arItems, chref.items);
+	int i, q = GetAttributesNum(arItems);
+	string sItem;
+
+	for (i = 0; i < q; i++)
 	{
-		makearef(arItm,Items[i]);
+		sItem = GetAttributeName(GetAttributeN(arItems, i));
+		rItem = ItemsFromID(sItem);
+
 		bValidPot = false;
 
-		if (!needAntidote && CheckAttribute(arItm,"potion.health") && !CheckAttribute(arItm,"potion.antidote")) 
+		if (!needAntidote && CheckAttribute(rItem, "potion.health") && !CheckAttribute(rItem, "potion.antidote"))
 		{
 			bValidPot = true;
 		}
-		else 
+		else
 		{
-			if (needAntidote && CheckAttribute(arItm,"potion.antidote")) 
+			if (needAntidote && CheckAttribute(rItem, "potion.antidote"))
 			{
 				bValidPot = true;
 			}
 		}
-		if( bValidPot && (GetCharacterItem(chref,arItm.id) > 0))
+
+		if (bValidPot)
 		{
-			if (CheckAttribute(arItm,"potion.health"))
-				newPotionHealAmt = arItm.potion.health;
+			if (CheckAttribute(rItem, "potion.health"))
+				newPotionHealAmt = rItem.potion.health;
 			else
 				newPotionHealAmt = 0;
-								
-			if (potionTooGood) 
+
+			if (potionTooGood)
 			{
-				if (newPotionHealAmt < curPotionHealAmt) 
+				if (newPotionHealAmt < curPotionHealAmt)
 				{
-					curPotionID = i;
+					curPotionID = sti(rItem.index);
 					curPotionHealAmt = newPotionHealAmt;
 				}
 			}
 			else
 			{
-				if ((newPotionHealAmt + 1) > curPotionHealAmt) 
+				if ((newPotionHealAmt + 1) > curPotionHealAmt)
 				{
-					if (curPotionHealAmt == 0 || newPotionHealAmt <= reqHealAmt) 
+					if (curPotionHealAmt == 0 || newPotionHealAmt <= reqHealAmt)
 					{
-						curPotionID = i;
+						curPotionID = sti(rItem.index);
 						curPotionHealAmt = newPotionHealAmt;
 					}
 				}
 			}
-			if (curPotionHealAmt > reqHealAmt) 
-			{
+
+			if (curPotionHealAmt > reqHealAmt)
 				potionTooGood = true;
-			}
 		}
 	}
+
 	if (CheckAttribute(chref, "GenQuest.Potion_choice"))
 	{
-		if (CheckCharacterItem(pchar, chref.GenQuest.Potion_choice))
-		{
-			DoCharacterUsedItem(pchar, chref.GenQuest.Potion_choice);
-			return 1;
-		}
+		if (CheckCharacterItem(chref, chref.GenQuest.Potion_choice))
+			DoCharacterUsedItem(chref, chref.GenQuest.Potion_choice);
 		else
 		{
-//			PlaySound("interface\notebook.wav");
 			log_info(XI_ConvertString("PotionMissing"));
 			log_info(XI_ConvertString("AutoSelectActivate"));
-			DeleteAttribute(pchar, "GenQuest.Potion_choice");
-			return 0;
+			DeleteAttribute(chref, "GenQuest.Potion_choice");
 		}
 	}
 	else
 	{
 		if (curPotionID > 0)
-		{
-			DoCharacterUsedItem(pchar, Items[curPotionID].id);
-			return 1;
-		}
-		else return 0;
+			DoCharacterUsedItem(chref, Items[curPotionID].id);
 	}
+
+	return curPotionID;
 }
 
-int FindQuestUsableItem(ref arFind, int startIdx)
+int FindQuestUsableItem(ref _rChar, ref arFind, int startIdx)
 {
-	int i;
-	aref arItm;
 	bool bSeaInterface = bSeaActive && !bAbordageStarted;
 
-	if(startIdx<0) startIdx=0;
-	for(i=startIdx; i<ITEMS_QUANTITY; i++)
+	ref rItem;
+	aref arItems; makearef(arItems, _rChar.items);
+	int i, q = GetAttributesNum(arItems);
+	string sItem;
+
+	if (startIdx < 0)
+		startIdx = 0;
+
+	for (i = startIdx; i < q; i++)
 	{
-		makearef(arItm,Items[i]);
-		if( CheckAttribute(arItm,"quest") && CheckAttribute(arItm,"quest.tex"))// boal 16.03.2004
+		sItem = GetAttributeName(GetAttributeN(arItems, i));
+		rItem = ItemsFromID(sItem);
+
+		if (CheckAttribute(rItem, "quest") && CheckAttribute(rItem, "quest.tex"))
 		{
-			if( bSeaInterface && arItm.quest.tex=="QuestCommands" )
+			if (bSeaInterface && rItem.quest.tex == "QuestCommands")
 			{
-				arFind = arItm;
+				arFind = rItem;
 				return i;
 			}
 		}
@@ -317,37 +345,30 @@ bool EnableAntidoteUsing(ref _char, aref _item)
 	return false;
 }
 
-bool FindCharacterAntidote(ref _char, ref _itemId)
+bool FindCharacterAntidote(ref _rChar, ref _rItemId)
 {
-	int itemIndex;
-	ref item;
-	
-	for(itemIndex = 0; itemIndex < ITEMS_QUANTITY; itemIndex++)
+	ref rItem;
+	aref arItems; makearef(arItems, _rChar.items);
+	int i, q = GetAttributesNum(arItems);
+	string sItem;
+
+	for (i = 0; i < q; i++)
 	{
-		item = &Items[itemIndex];
-		
-		if(EnableAntidoteUsing(_char, item))
+		sItem = GetAttributeName(GetAttributeN(arItems, i));
+		rItem = ItemsFromID(sItem);
+
+		if (EnableAntidoteUsing(_rChar, rItem))
 		{
-			_itemID = item.ID;
+			_rItemId = sItem;
 			return true;
 		}
 	}
-	
+
 	return false;
 }
 
 int FindItem(string sItemID)
 {
-/*
-	for(int i = 0; i < TOTAL_ITEMS; i++)
-	{
-		if(CheckAttribute(&Items[i], "ID") && Items[i].id == sItemID)
-		{
-			return i;
-		}
-	}
-	return -1;
-*/	
 	// Warship 07.07.09 Перевел на движковую функцию - по-идее, так должно работать быстрее
 	return NativeFindCharacter(&Items, sItemID);
 }
@@ -383,31 +404,46 @@ void GenerateGenerableItems()
 }
 
 //ugeen --> вернём случайный ID сгенерированного зараннее предмета
+// KZ > реестр копий на шаблоне (GenIdx) вместо скана слотов в диапазоне ITEMS_QUANTITY - TOTAL_ITEMS на каждый вызов
 string GetGeneratedItem(string _itemId)
 {
 	int itemsQty = 0;
-	string generatedItems[TOTAL_ITEMS];
-	
+	string sGenKey;
+	aref aGen;
+
 	if(!IsGenerableItem(_itemId)) // Генерящийся ли предмет
 	{
 		return _itemID;
 	}
-	
-	for(int i = ITEMS_QUANTITY; i < TOTAL_ITEMS; i++)
+
+	int defIdx = FindItem(_itemId);
+	if(defIdx < 0)
 	{
-		if(CheckAttribute(&Items[i], "DefItemID") && Items[i].DefItemID == _itemId)
+		return _itemId;
+	}
+
+	if(!CheckAttribute(&Items[defIdx], "GenIdx"))
+	{
+		Items[defIdx].GenIdx = "";
+		for(int i = ITEMS_QUANTITY; i < TOTAL_ITEMS; i++)
 		{
-			generatedItems[itemsQty] = Items[i].ID;
-			itemsQty++;
+			if(CheckAttribute(&Items[i], "DefItemID") && Items[i].DefItemID == _itemId)
+			{
+				sGenKey = "i" + i;
+				Items[defIdx].GenIdx.(sGenKey) = Items[i].ID;
+			}
 		}
 	}
-		
+
+	makearef(aGen, Items[defIdx].GenIdx);
+	itemsQty = GetAttributesNum(aGen);
+
 	if(itemsQty == 0)
 	{
 		return _itemId; // Ничего не нашлось
 	}
-		
-	return generatedItems[rand(itemsQty - 1)];
+
+	return GetAttributeValue(GetAttributeN(aGen, rand(itemsQty - 1)));
 }
 
 //  вернём определённый ID сгенерированного предмета
@@ -430,12 +466,12 @@ string GetGeneratedItemNum(string _itemId, int Num)
 		}
 	}
 		
-	if(itemsQty == 0 || itemsQty < Num)
+	if(itemsQty == 0 || Num < 0 || itemsQty <= Num)
 	{
 		return _itemId; // Ничего не нашлось
 	}
-				
-	return generatedItems[itemsQty + Num];
+	
+	return generatedItems[Num]; // > тут индекс всегда за заполненной частью
 }
 
 void SetItemPrice(ref item)
@@ -465,12 +501,10 @@ void SetItemPrice(ref item)
 // Создадим предмет, вернёт АйДи нового предмета
 string GenerateItem(string _itemId)
 {
-	int i, defItemIndex, priceMod;
-	int itemsQty = 0;
+	int defItemIndex, priceMod;
 	int itemIndex = FindFirstEmptyItem();
 	float minValue, maxValue, curMinDmg, curMaxDmg, curWeight;
 	ref item, realItem;
-	string generatedItems[TOTAL_ITEMS];
 	
 	if(!IsGenerableItem(_itemId)) // Генерящийся ли предмет
 	{
@@ -479,21 +513,7 @@ string GenerateItem(string _itemId)
 	
 	if(itemIndex == -1) // Нету свободных слотов - вернём случайный существующий
 	{
-		for(i = ITEMS_QUANTITY; i < TOTAL_ITEMS; i++)
-		{
-			if(CheckAttribute(&Items[i], "DefItemID") && Items[i].DefItemID == _itemId)
-			{
-				generatedItems[itemsQty] = Items[i].ID;
-				itemsQty++;
-			}
-		}
-		
-		if(itemsQty == 0)
-		{
-			return _itemId; // Ничего не нашлось
-		}
-		
-		return generatedItems[rand(itemsQty - 1)];
+		return GetGeneratedItem(_itemId);
 	}
 	
 	defItemIndex = FindItem(_itemId);
@@ -501,6 +521,7 @@ string GenerateItem(string _itemId)
 	realItem = &Items[itemIndex];
 	
 	CopyAttributes(realItem, item); // Копируем аттрибуты
+	DeleteAttribute(realItem, "GenIdx"); // > реестр шаблона не должен уезжать в копию
 	
 	// Warship 06.06.09 Оптимизация - выкинул нафиг цикл
 	
@@ -547,6 +568,8 @@ string GenerateItem(string _itemId)
 	realItem.Generated = true; // Сгенерированный предмет
 	realItem.DefItemID = _itemId; // Запомним АйДи и индекс начального предмета
 	realItem.DefItemIndex = defItemIndex;
+	string sGenKey = "i" + itemIndex;
+	item.GenIdx.(sGenKey) = realItem.ID; // > реестр копий для GetGeneratedItem
 	
 	return realItem.ID;
 }
@@ -644,20 +667,15 @@ bool RefreshGeneratedItem(string _itemID)
 bool IsGenerableItem(string _itemID)
 {
 	int itemIndex = FindItem(_itemID);
-	ref itemRef;
-	
-	if(itemIndex == -1)
-	{
+
+	if (itemIndex == -1)
 		return false;
-	}
-	
-	itemRef = &Items[itemIndex];
-	
-	if(CheckAttribute(itemRef, "Generation") && !CheckAttribute(itemRef, "Generated"))
-	{
+
+	ref itemRef = &Items[itemIndex];
+
+	if (CheckAttribute(itemRef, "Generation") && !CheckAttribute(itemRef, "Generated"))
 		return true;
-	}
-	
+
 	return false;
 }
 
@@ -691,10 +709,12 @@ bool IsBlade(string _itemID)
 
 bool isPistol(string sItem)
 {
-	ref rItem = ItemsFromID(sItem);
+	int itemIndex = FindItem(sItem);
 
-	if (TestRef(rItem))
+	if (itemIndex >= 0)
 	{
+		ref rItem = &Items[itemIndex];
+
 		if (CheckAttribute(rItem, "groupID") && rItem.groupID == GUN_ITEM_TYPE)
 			return true;
 	}
@@ -704,10 +724,12 @@ bool isPistol(string sItem)
 
 bool isMusket(string sItem)
 {
-	ref rItem = ItemsFromID(sItem);
+	int itemIndex = FindItem(sItem);
 
-	if (TestRef(rItem))
+	if (itemIndex >= 0)
 	{
+		ref rItem = &Items[itemIndex];
+
 		if (CheckAttribute(rItem, "groupID") && rItem.groupID == MUSKET_ITEM_TYPE)
 			return true;
 	}
@@ -744,7 +766,6 @@ void BackItemName(string _Items)
     ItemAR.name = "itmname_" + ItemAR.id;
 }
 ///////////////////////  Items-методы <--
-
 
 void QuestCheckEnterLocItem(aref _location, string _locator) /// <<<проверка вхождения ГГ в локаторы группы Item.<<<
 {
@@ -1119,6 +1140,7 @@ void QuestCheckUseButton(aref _location, string _locator, string _itemId) /// <<
 		LocatorReloadEnterDisable("Tenochtitlan", "reloadTemple31", false);
 	}
 }
+
 //проверка взятия предметов из локатора item
 void QuestCheckTakeItem(aref _location, string _itemId)
 {
@@ -1233,19 +1255,6 @@ void QuestCheckTakeItem(aref _location, string _itemId)
 	}
 }
 
-void StartIncquisitioAttack()
-{
-	ref sld;
-    for (int i=1; i<=5; i++)
-    {
-		sld = GetCharacter(NPC_GenerateCharacter("IncqAddGuard_"+i, "elite_spa_"+(rand(2)+1), "man", "man", 35, SPAIN, 1, true)); //watch_quest_moment
-		FantomMakeCoolFighter(sld, sti(pchar.rank)+MOD_SKILL_ENEMY_RATE+8, 80, 70, BLADE_LONG, "pistol4", 50);
-        LAi_SetWarriorType(sld);
-        LAi_group_MoveCharacter(sld, "SPAIN_CITIZENS");            
-        ChangeCharacterAddressGroup(sld, "Santiago_Incquisitio", "goto", LAi_FindRandomLocator("goto"));
-    }
-}
-
 void SetItemModelOnLocation(ref loc, string model, string locator)
 {
 	loc.models.always.totem = model;
@@ -1254,66 +1263,522 @@ void SetItemModelOnLocation(ref loc, string model, string locator)
 	loc.models.always.totem.tech = "DLightModel";
 }
 
+// KZ > отпечаток файлов, из которых собраны массивы предметов.
+string GetItemsFilesStamp()
+{
+    string sInit = GetSegmentHash("items\initItems.c");
+    string sHead = GetSegmentHash("items\items.h"); // > размеры, ITEMS_SCHEMA_VERSION и строки *_ITEM_TYPE в groupID
+
+    if (sInit == "" || sHead == "")
+        return ""; // > хоть один файл не прочитался - состояние массивов неизвестно целиком
+
+    return sInit + "|" + sHead;
+}
+
 void OnLoadUpdateItemArrays()
 {
-    int i, j;
-    ref rItem, rBackItem, sld;
-    int backSize = GetArraySize(&Items);
+    int    i = 0;
+    int    j = 0;
+    int    n = 0;
+    int    q = 0;
+    int    iOldSize = 0;
+    int    iFree = 0;
+    int    iRestored = 0;
+    int    iGenMoved = 0;
+    int    iGenLost = 0;
+    int    iIdxFixed = 0;
+    int    iIdxLost = 0;
+    bool   bGenerated = false;
+    bool   bRandLocator = false;
+    ref    rItem, rBackItem, sld;
+    string sAttr = "";
 
-    //сохраняем существующий массив
+    iOldSize = GetArraySize(&Items);
+
+    // > шаг 1: бэкап загруженного массива
     object backItems[2];
-    SetArraySize(&backItems, backSize);
-    for (i = 0; i < backSize; i++)
+    SetArraySize(&backItems, iOldSize);
+
+    // > отдельная карта id по старому индексу
+    string backIds[2];
+    SetArraySize(&backIds, iOldSize);
+
+    int backNew[2];
+    SetArraySize(&backNew, iOldSize);
+
+    for (i = 0; i < iOldSize; i++)
     {
-        backItems[i] = Items[i];
+        CopyAttributes(&backItems[i], &Items[i]);
+
+        backNew[i] = -1;
+        if (CheckAttribute(&backItems[i], "id"))
+            backIds[i] = backItems[i].id;
     }
 
-    //расширяем и перениничиваем старый массив
+    // > шаг 2: массивы под текущие размеры + чистая переинициализация
+
+    // > сегмент грузим до сноса массива
+    if (!LoadSegment("items\initItems.c"))
+    {
+        trace("ERROR OnLoadUpdateItemArrays: items\initItems.c не загрузился, пересборка отменена");
+        Logs("ERROR OnLoadUpdateItemArrays: items\initItems.c не загрузился, пересборка отменена");
+        return;
+    }
+
     SetArraySize(&itemModels, ITEMS_QUANTITY);
-    SetArraySize(&Items, TOTAL_ITEMS);
-    if (LoadSegment("items\initItems.c"))
+    SetArraySize(&RandItems,  RANDITEMS_QUANTITY);
+    SetArraySize(&Items,      TOTAL_ITEMS);
+
+	for (i = 0; i < TOTAL_ITEMS; i++)
+	{
+		DeleteAttribute(&Items[i], "");
+	}
+
+    InitItems();
+    UnloadSegment("items\initItems.c");
+
+    // > шаг 3: шаблоны
+
+    // > один проход по старому массиву с поиском только через FindItem (движковый хэш по Items)
+    for (i = 0; i < iOldSize; i++)
     {
-        InitItems();
-        UnloadSegment("items\initItems.c");
+        if (backIds[i] == "")
+            continue;
+
+        makeref(rBackItem, backItems[i]);
+
+        bGenerated = false;
+        if (CheckAttribute(rBackItem, "DefItemID")) bGenerated = true;
+        if (CheckAttribute(rBackItem, "Generated")) bGenerated = true;
+
+        if (bGenerated)
+            continue;
+
+        j = FindItem(backIds[i]);
+
+        if (j < 0)
+            continue; // > предмет удалён из initItems.c
+
+        backNew[i] = j;
+
+        makeref(rItem, Items[j]);
+        OnLoadMergeItemData(rItem, rBackItem);
+        rItem.index = j;
+
+        if (CheckAttribute(rItem, "GenIdx"))
+            DeleteAttribute(rItem, "GenIdx");
+
+        iRestored++;
     }
 
-    //переносим в переиниченный массив данные по предметам. что бы не потерять их расположение и прочие изменения
-    for (i = 0; i < TOTAL_ITEMS; i++)
+    // > шаг 4: сгенерированные экземпляры
+
+    iFree = ITEMS_QUANTITY;
+
+    for (i = 0; i < iOldSize; i++)
     {
-        makeref(rItem, Items[i]);
-        for (j = 0; j < backSize; j++)
+        makeref(rBackItem, backItems[i]);
+
+        if (!CheckAttribute(rBackItem, "id"))
+            continue;
+
+        bGenerated = false;
+        if (CheckAttribute(rBackItem, "DefItemID")) bGenerated = true;
+        if (CheckAttribute(rBackItem, "Generated")) bGenerated = true;
+
+        if (!bGenerated)
+            continue;
+
+        while (iFree < TOTAL_ITEMS)
         {
-            makeref(rBackItem, backItems[j]);
-            if (CheckAttribute(rItem, "id") && CheckAttribute(rBackItem, "id") && rItem.id == rBackItem.id)
-            {
-                rItem = backItems[j];
+            if (!CheckAttribute(&Items[iFree], "id"))
                 break;
-            }
+            iFree++;
         }
+
+        if (iFree >= TOTAL_ITEMS)
+        {
+            iGenLost++;
+            trace("OnLoadUpdateItemArrays: некуда поселить сгенерированный '" + rBackItem.id + "', экземпляр потерян");
+            continue;
+        }
+
+        CopyAttributes(&Items[iFree], rBackItem);
+        Items[iFree].index = iFree;
+        backNew[i] = iFree;
+
+        if (CheckAttribute(&Items[iFree], "DefItemID"))
+        {
+            n = FindItem(Items[iFree].DefItemID);
+
+            if (n >= 0)
+                Items[iFree].DefItemIndex = n;
+            else
+                DeleteAttribute(&Items[iFree], "DefItemIndex");
+        }
+
+        iGenMoved++;
     }
-    //обновляем индекс надетых кирас
+
+    // > шаг 5: сохранённые индексы предметов
+
+    // > Кираса и патент на персонажах
     for (i = 0; i < MAX_CHARACTERS; i++)
     {
         makeref(sld, characters[i]);
+
         if (CheckAttribute(sld, "cirassId"))
-            sld.cirassId = FindItem(backItems[sti(sld.cirassId)].id);
+        {
+            n = OnLoadRemapItemIndex(sti(sld.cirassId), &backNew, iOldSize);
+
+            if (n >= 0)
+            {
+                if (n != sti(sld.cirassId)) iIdxFixed++;
+                sld.cirassId = n;
+            }
+            else
+            {
+                // > записать сюда -1 не даём
+                DeleteAttribute(sld, "cirassId");
+                iIdxLost++;
+            }
+        }
+
+        if (CheckAttribute(sld, "EquipedPatentId"))
+        {
+            n = OnLoadRemapItemIndex(sti(sld.EquipedPatentId), &backNew, iOldSize);
+
+            if (n >= 0)
+            {
+                if (n != sti(sld.EquipedPatentId)) iIdxFixed++;
+                sld.EquipedPatentId = n;
+            }
+            else
+            {
+                DeleteAttribute(sld, "EquipedPatentId");
+                iIdxLost++;
+            }
+        }
     }
+
+    // > Кэш "предмет под ногами" (Item_OnEnterLocator)
+    bRandLocator = false;
+    if (CheckAttribute(pchar, "activeRandItem"))
+        bRandLocator = sti(pchar.activeRandItem);
+
+    if (!bRandLocator && CheckAttribute(pchar, "activeItem") && pchar.activeItem != "")
+    {
+        n = OnLoadRemapItemIndex(sti(pchar.activeItem), &backNew, iOldSize);
+
+        if (n >= 0)
+        {
+            if (n != sti(pchar.activeItem)) iIdxFixed++;
+            pchar.activeItem = n;
+        }
+        else
+        {
+            // > индекс оставлять нельзя
+            pchar.activeItem = "";
+            Log_SetActiveAction("Nothing");
+            iIdxLost++;
+        }
+    }
+
+    // > Случайный предмет, лежащий на земле (лока хранит его индексом)
+    q = GetArraySize(&Locations);
+
+    for (i = 0; i < q; i++)
+    {
+        for (j = 1; j < MAX_LOADED_RANDITEMS; j++)
+        {
+            sAttr = "RandItemType" + j;
+
+            if (!CheckAttribute(&Locations[i], sAttr))
+                continue;
+
+            n = sti(Locations[i].(sAttr));
+
+            if (n < 0)
+                continue; // > предмет уже подобрали, чинить нечего
+
+            n = OnLoadRemapItemIndex(n, &backNew, iOldSize);
+
+            if (n >= 0)
+            {
+                if (n != sti(Locations[i].(sAttr))) iIdxFixed++;
+                Locations[i].(sAttr) = n;
+            }
+            else
+            {
+                Locations[i].(sAttr) = -1; // > считаем подобранным, локация отспавнит новый
+                iIdxLost++;
+            }
+        }
+    }
+
+    // > шаг 6: вычистить повисшие ссылки по id
+    OnLoadPurgeLostItemRefs();
+
+    // > новые генерируемые шаблоны своих экземпляров ещё не получили (уже отработанные шаблоны помечены атрибутом GeneratedAll)
+    GenerateGenerableItems();
+
+    iItemsSchemaVersion = ITEMS_SCHEMA_VERSION;
+    sItemsStamp         = GetItemsFilesStamp(); // > ставим только здесь, после удачной пересборки
+
+    trace("OnLoadUpdateItemArrays: размер " + iOldSize + " -> " + TOTAL_ITEMS + ", перенесено шаблонов " + iRestored + ", расселено экземпляров " + iGenMoved + " (потеряно " + iGenLost + "), индексов исправлено " + iIdxFixed + " (потеряно " + iIdxLost + ")");
+}
+
+// > От старого индекса предмета к новому по готовой карте backNew; -1, если предмета в новой раскладке больше нет.
+int OnLoadRemapItemIndex(int _iOld, ref _arOldNew, int _iOldSize)
+{
+    int iNew = -1;
+
+    if (_iOld < 0 || _iOld >= _iOldSize)
+        return -1;
+
+    iNew = _arOldNew[_iOld];
+    return iNew;
+}
+
+// > Кладёт данные из сейва поверх свежего шаблона предмета.
+void OnLoadMergeItemData(ref _rTo, ref _rFrom)
+{
+    aref   arA, arB, arC, arD;
+    string sA = "";
+    string sB = "";
+    string sC = "";
+    string sD = "";
+    int    a = 0;
+    int    b = 0;
+    int    c = 0;
+    int    d = 0;
+    int    qA = 0;
+    int    qB = 0;
+    int    qC = 0;
+    int    qD = 0;
+
+    qA = GetAttributesNum(_rFrom);
+
+    for (a = 0; a < qA; a++)
+    {
+        arA = GetAttributeN(_rFrom, a);
+        sA  = GetAttributeName(arA);
+        qB  = GetAttributesNum(arA);
+
+        if (GetAttributeValue(arA) != "" || qB == 0)
+            _rTo.(sA) = GetAttributeValue(arA);
+
+        for (b = 0; b < qB; b++)
+        {
+            arB = GetAttributeN(arA, b);
+            sB  = sA + "." + GetAttributeName(arB);
+            qC  = GetAttributesNum(arB);
+
+            if (GetAttributeValue(arB) != "" || qC == 0)
+                _rTo.(sB) = GetAttributeValue(arB);
+
+            for (c = 0; c < qC; c++)
+            {
+                arC = GetAttributeN(arB, c);
+                sC  = sB + "." + GetAttributeName(arC);
+                qD  = GetAttributesNum(arC);
+
+                if (GetAttributeValue(arC) != "" || qD == 0)
+                    _rTo.(sC) = GetAttributeValue(arC);
+
+                for (d = 0; d < qD; d++)
+                {
+                    arD = GetAttributeN(arC, d);
+                    sD  = sC + "." + GetAttributeName(arD);
+
+                    if (GetAttributeValue(arD) != "" || GetAttributesNum(arD) == 0)
+                        _rTo.(sD) = GetAttributeValue(arD);
+
+                    if (GetAttributesNum(arD) > 0)
+                        trace("OnLoadMergeItemData: у '" + _rTo.id + "' атрибут '" + sD + "' глубже 4 уровней, ветка не перенесена");
+                }
+            }
+        }
+    }
+}
+
+// > Убирает из инвентарей, экипировки и сундуков записи о предметах, которых в &Items[] больше нет.
+void OnLoadPurgeLostItemRefs()
+{
+    int    i = 0;
+    int    j = 0;
+    int    k = 0;
+    int    n = 0;
+    int    q = 0;
+    int    iDropped = 0;
+    ref    rObj;
+    aref   arList, arNode, arChild;
+    string sId = "";
+	string sName = "";
+
+    // > персонажи: инвентарь и надетое
+    for (i = 0; i < MAX_CHARACTERS; i++)
+    {
+        makeref(rObj, characters[i]);
+
+        if (CheckAttribute(rObj, "items"))
+        {
+            makearef(arList, rObj.items);
+            q = GetAttributesNum(arList);
+
+            for (j = q - 1; j >= 0; j--)
+            {
+                sId = GetAttributeName(GetAttributeN(arList, j));
+
+                if (FindItem(sId) >= 0)
+                    continue;
+
+                trace("OnLoadPurgeLostItemRefs: у '" + rObj.id + "' в инвентаре нет предмета '" + sId + "', запись убрана");
+                DeleteAttribute(arList, sId);
+                iDropped++;
+            }
+        }
+
+        if (CheckAttribute(rObj, "equip"))
+        {
+            makearef(arList, rObj.equip);
+            q = GetAttributesNum(arList);
+
+            for (j = q - 1; j >= 0; j--)
+            {
+                arNode = GetAttributeN(arList, j);
+                sName  = GetAttributeName(arNode);
+                sId    = GetAttributeValue(arNode);
+
+                // > обычная группа предметов
+                if (sId != "")
+                {
+                    if (FindItem(sId) < 0)
+                    {
+                        trace("OnLoadPurgeLostItemRefs: у '" + rObj.id + "' снята экипировка '" + sName + "' = '" + sId + "'");
+                        DeleteAttribute(arList, sName);
+                        iDropped++;
+                        continue;
+                    }
+                }
+
+                // > атлас карт
+                n = GetAttributesNum(arNode);
+
+                for (k = n - 1; k >= 0; k--)
+                {
+                    arChild = GetAttributeN(arNode, k);
+                    sId     = GetAttributeValue(arChild);
+
+                    if (sId == "")
+                        continue;
+
+                    if (FindItem(sId) >= 0)
+                        continue;
+
+                    trace("OnLoadPurgeLostItemRefs: у '" + rObj.id + "' из '" + sName + "' убран '" + sId + "'");
+                    DeleteAttribute(arNode, GetAttributeName(arChild));
+                    iDropped++;
+                }
+            }
+        }
+    }
+
+    // > сундуки, тайники и лежащие на земле предметы в локациях
+    q = GetArraySize(&Locations);
+
+    for (i = 0; i < q; i++)
+    {
+        // > предметы на локаторах
+        if (CheckAttribute(&Locations[i], "itemShow"))
+        {
+            makearef(arList, Locations[i].itemShow);
+            n = GetAttributesNum(arList);
+
+            for (j = n - 1; j >= 0; j--)
+            {
+                arNode = GetAttributeN(arList, j);
+                sId    = GetAttributeValue(arNode);
+
+                if (sId == "")
+                    continue;
+
+                if (FindItem(sId) >= 0)
+                    continue;
+
+                trace("OnLoadPurgeLostItemRefs: в " + Locations[i].id + " на локаторе '" + GetAttributeName(arNode) + "' нет предмета '" + sId + "', запись убрана");
+                DeleteAttribute(arList, GetAttributeName(arNode));
+                iDropped++;
+            }
+        }
+
+        // > ящики
+        for (j = 1; j < MAX_HANDLED_BOXES; j++)
+        {
+            iDropped = iDropped + OnLoadPurgeBoxItems(&Locations[i], "box" + j);
+            iDropped = iDropped + OnLoadPurgeBoxItems(&Locations[i], "private" + j);
+        }
+
+        // > тайники
+        for (j = 0; j <= MAX_SECRET_CHESTS; j++)
+        {
+            iDropped = iDropped + OnLoadPurgeBoxItems(&Locations[i], "secret" + j);
+        }
+    }
+
+    if (iDropped > 0)
+        trace("OnLoadPurgeLostItemRefs: убрано повисших ссылок на предметы - " + iDropped);
+}
+
+// > Чистка одного ящика; возвращает количество убранных записей
+int OnLoadPurgeBoxItems(ref _rLoc, string _sBox)
+{
+    aref   arList;
+    int    i = 0;
+    int    q = 0;
+    int    iDropped = 0;
+    string sId = "";
+
+    if (!CheckAttribute(_rLoc, _sBox + ".Items"))
+        return 0;
+
+    makearef(arList, _rLoc.(_sBox).Items);
+    q = GetAttributesNum(arList);
+
+    for (i = q - 1; i >= 0; i--)
+    {
+        sId = GetAttributeName(GetAttributeN(arList, i));
+
+        if (FindItem(sId) >= 0)
+            continue;
+
+        trace("OnLoadPurgeLostItemRefs: из " + _rLoc.id + "." + _sBox + " убран несуществующий '" + sId + "'");
+        DeleteAttribute(arList, sId);
+        iDropped++;
+    }
+
+    return iDropped;
 }
 
 // проверка - знает ли ГГ рецепт мультиобъекта
 bool isMultiObjectKnown(string sItem)
 {
-	ref rItem = &Items[FindItem(sItem)];
+	int iItem = FindItem(sItem);
 
-	if (TestRef(rItem) && CheckAttribute(rItem, "craft") && rItem.craft == "1" && CheckAttribute(pchar, "alchemy." + sItem + ".isKnown") && pchar.alchemy.(sItem).isKnown == "1")
-		return true;
+	if (iItem >= 0)
+	{
+		ref rItem = &Items[iItem];
+
+		if (CheckAttrValue(rItem, "craft", "1") && CheckAttrValue(pchar, "alchemy." + sItem + ".isKnown", "1"))
+			return true;
+	}
 
 	return false;
 }
 
 void SetAlchemyRecipeKnown(string Recipe)
 {
-	pchar.alchemy.(Recipe).isKnown = true;
+	pchar.alchemy.(Recipe).isKnown = "1";
 }
 
 // > инициализации рецептуры по алхимии
@@ -1345,10 +1810,23 @@ void InitAlchemyComponents(string result, string components)
 	int n, q = KZ|Symbol(components, ",");
 	string sA, sB, sItem = components;
 
+	int iCurLen = strlen(&components);
+	int iCurPos = 0;
+	int iCurEnd;
+
 	for (n = 0; n <= q; n++)
 	{
-		if (q > 0)
-			sItem = GetSubStr(components, ",", n);
+		iCurEnd = findSubStr(&components, ",", iCurPos);
+
+		if (iCurEnd < 0)
+			iCurEnd = iCurLen;
+
+		sItem = "";
+
+		if (iCurEnd > iCurPos)
+			sItem = strcut(&components, iCurPos, iCurEnd - 1);
+
+		iCurPos = iCurEnd + 1;
 
 		if (HasStr(sItem, ":"))
 		{
@@ -1397,12 +1875,16 @@ void InitAlchemyCraft()
 	InitAlchemyComponents("potion1",			"herb_matricaria, herb_zingiber, potion5, mortar_and_pestle:tool");						// "Лечебное зелье"
 
 	InitAlchemyComponents("potionsangari:2", 	"potionwine:2, potionrum, indian4");													// Коктейль "Сангари" (2 вина + 1 ром)
+
+	InitAlchemyComponents("raw_meat",			"mineral4, potionrum, mineral14:tool");													// сырое мясо
+	InitAlchemyComponents("dried_meat",			"raw_meat, herb_zingiber, potionwine, mineral10");										// вяленое мясо
 }
 
-// KZ > Положить конкретные предметы на труп rChar
+// KZ > Положить (или убрать при "0") конкретные предметы на труп rChar
 void AddKeepItems(ref rChar)
 {
-	if (!CheckAttribute(rChar, "KeepItems")) return;
+	if (!CheckAttribute(rChar, "KeepItems"))
+		return;
 
 	aref arKeepItems, arItem;
 	makearef(arKeepItems, rChar.KeepItems);
@@ -1416,17 +1898,18 @@ void AddKeepItems(ref rChar)
 		{
 			arItem = GetAttributeN(arKeepItems, j);
 			sItem = GetAttributeName(arItem);
-			q = sti(GetAttributeValue(arItem));
 
-			if (q > 0)
+			if (FindItem(sItem) >= 0)
 			{
-				if (FindItem(sItem) >= 0)
+				q = sti(GetAttributeValue(arItem));
+
+				if (q >= 0)
 					rChar.items.(sItem) = "" + q;
-				else
-					trace("Error AddKeepItems > can't find item: " + sItem);
 			}
+			else
+				trace("ERROR AddKeepItems > can't find item: " + sItem);
 		}
 	}
 
-	DeleteAttribute(rChar, "KeepItems");	
+	DeleteAttribute(rChar, "KeepItems");
 }

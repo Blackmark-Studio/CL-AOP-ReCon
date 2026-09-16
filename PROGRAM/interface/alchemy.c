@@ -10,10 +10,15 @@ aref alchemy;
 string sCurItem;
 int curShowTutorial = true;
 object obGKIC;
+int gLngItemsDescribe = -1;
+int gLngRPGDescribe = -1;
 
 void InitInterface(string iniName)
 {
 	InterfaceStack.SelectMenu_node = "LaunchAlchemy"; // запоминаем, что звать по F2
+
+	gLngItemsDescribe = LanguageOpenFile("ItemsDescribe.txt");
+	gLngRPGDescribe = LanguageOpenFile("RPGDescribe.txt");
 
 	SetAlchemyRecipeKnown("grapeshot");
 
@@ -21,15 +26,16 @@ void InitInterface(string iniName)
 	makearef(alchemy, NullCharacter.alchemy);
 
 	GameInterface.TABLE_LIST.hr.td1.str = XI_ConvertString("CraftItems");
-	GameInterface.TABLE_LIST.hr.td1.scale = 0.9;
-	GameInterface.TABLE_LIST.hr.td2.str = XI_ConvertString("CraftPurpose");
-	GameInterface.TABLE_LIST.hr.td2.scale = 0.9;
-	GameInterface.TABLE_LIST.hr.td3.str = XI_ConvertString("ItemsColonTitle");
-	GameInterface.TABLE_LIST.hr.td3.scale = 0.9;
-	GameInterface.TABLE_LIST.hr.td4.str = XI_ConvertString("CraftNeed");
-	GameInterface.TABLE_LIST.hr.td4.scale = 0.9;
-	GameInterface.TABLE_LIST.hr.td5.str = XI_ConvertString("CraftItems");
-	GameInterface.TABLE_LIST.hr.td5.scale = 0.9;
+	aref arHR; makearef(arHR, GameInterface.TABLE_LIST.hr);
+	arHR.td1.scale = 0.9;
+	arHR.td2.str = XI_ConvertString("CraftPurpose");
+	arHR.td2.scale = 0.9;
+	arHR.td3.str = XI_ConvertString("ItemsColonTitle");
+	arHR.td3.scale = 0.9;
+	arHR.td4.str = XI_ConvertString("CraftNeed");
+	arHR.td4.scale = 0.9;
+	arHR.td5.str = XI_ConvertString("CraftItems");
+	arHR.td5.scale = 0.9;
 
 	CheckAlchemyRecipe();
 	FillItemsScroll();
@@ -38,7 +44,7 @@ void InitInterface(string iniName)
 
 	CreateString(true, "ItemName", "", FONT_NORMAL, COLOR_MONEY, 405, 127, SCRIPT_ALIGN_CENTER, 0.85);
 
-	sCurItem = SetItemsName(0);
+	sCurItem = SetItemsName(1);
 	GrabCabinItems(sCurItem);
 	rGlobItem = ItemsFromId(sCurItem);
 	AddToTable(rGlobItem);
@@ -46,10 +52,10 @@ void InitInterface(string iniName)
 	iCurGoodsIdx = sti(GameInterface.TABLE_LIST.tr1.index);
 
 	SetNodeUsing("GETALL_BUTTON", true);
-	SetSelectable("GETALL_BUTTON", false);
+	SetSelectable("GETALL_BUTTON", iResult > 0);
 
  	SetEventHandlers();
-	XI_RegistryExitKey("IExit_K");
+	XI_RegistryExitKey("AlchemyKey");
 
 	// доп инфа в шапку --->
 	SetFormatedText("WEIGHT", FloatToString(GetItemsWeight(pchar), 1) + " / " + GetMaxItemsWeight(pchar));
@@ -99,12 +105,14 @@ void IDoExit(int exitCode)
 		if (Items_FindItem(GetAttributeName(curItem), &arItem) >= 0)
 		{
 			iItemQty = sti(GetAttributeValue(curItem));
+			if (iItemQty == 0) continue;
 			AddItems(pchar, arItem.id, iItemQty);
 		}
 	}
 
 	makearef(rootItems, pchar.items);
 	iRoot = GetAttributesNum(rootItems);
+	int iCabinLoc = FindLocation(Get_My_Cabin());
 
 	for (j = 0; j < iRoot; j++)
 	{
@@ -128,7 +136,7 @@ void IDoExit(int exitCode)
 
 				iItemQty -= iRes;
 
-				makearef(arChests, locations[FindLocation(Get_My_Cabin())].(sBox));
+				makearef(arChests, locations[iCabinLoc].(sBox));
 				arChests.Items.(sItem) = (sti(GetAttrValue(arChests, "Items." + sItem)) + iRes);
 				pchar.Items.(sItem) = (sti(GetAttrValue(pchar, "Items." + sItem)) - iRes);
 			}
@@ -139,6 +147,9 @@ void IDoExit(int exitCode)
 
 	DelEventHandlers();
 	DeleteAttribute(&NullCharacter, "alchemy.items");
+
+	if (gLngItemsDescribe >= 0) { LanguageCloseFile(gLngItemsDescribe); gLngItemsDescribe = -1; }
+	if (gLngRPGDescribe >= 0) { LanguageCloseFile(gLngRPGDescribe); gLngRPGDescribe = -1; }
 
 	interfaceResultCommand = exitCode;
 
@@ -183,6 +194,34 @@ void ProcCommand()
 	}
 }
 
+void ShowInfoWindow()
+{
+	string sCurrentNode = GetCurrentNode();
+	string sHeader, sText1, sText2, sText3, sPicture = "-1";
+	string sGroup, sGroupPicture;
+
+	switch (sCurrentNode)
+	{
+		case "WEIGHT":
+			sHeader = XI_ConvertString("Weight");
+			sText1 = GetRPGText("Weight_hint");
+		break;
+
+		case "MONEY":
+			sHeader = XI_ConvertString("Money");
+			sText1 = GetRPGText("Money_hint");
+		break;
+	}
+	if (sHeader == "")
+		sHeader = XI_ConvertString("buttonAlchemy");
+
+	if (sText1 == "")
+		sText1 = XI_ConvertString("AlchemyInterfaceDescr_1") + XI_ConvertString("AlchemyInterfaceDescr_2") + XI_ConvertString("AlchemyInterfaceDescr_3");
+
+	CreateTooltip("#" + sHeader, sText1, argb(255,255,255,255), sText2, argb(255,255,192,192), sText3, argb(255,192,255,192), "", argb(255,255,255,255), sPicture, sGroup, sGroupPicture, 64, 64);
+
+}
+
 void SetEventHandlers()
 {
 	SetEventHandler("InterfaceBreak", "ProcessBreakExit", 0);
@@ -194,7 +233,7 @@ void SetEventHandlers()
 	SetEventHandler("ShowHelpHint", "ShowHelpHint", 0);
 	SetEventHandler("TableSelectChange", "CS_TableSelectChange", 0);
 	SetEventHandler("OnHeaderClick", "OnHeaderClick", 0);
-//	SetEventHandler("frame", "ProcessFrame", 1);
+	SetEventHandler("ShowInfoWindow","ShowInfoWindow",0);
 	SetEventHandler("ChangeSelectScrollImage", "ChangeSelectScrollImage", 0);
 }
 
@@ -208,7 +247,7 @@ void DelEventHandlers()
 	DelEventHandler("MouseRClickUP", "EndTooltip");
 	DelEventHandler("ShowHelpHint", "ShowHelpHint");
 	DelEventHandler("TableSelectChange", "CS_TableSelectChange");
-//	DelEventHandler("frame", "ProcessFrame");
+	DelEventHandler("ShowInfoWindow","ShowInfoWindow");
 	DelEventHandler("ChangeSelectScrollImage", "ChangeSelectScrollImage");
 	DelEventHandler("OnHeaderClick", "OnHeaderClick");
 }
@@ -232,7 +271,7 @@ void ShowHelpHint()
 	sGroup = rItm.picTexture;
 	sGroupPic = "itm" + rItm.picIndex;
 	sHeader = LanguageConvertString(lngFileID, rItm.name);
-	sText1 = GetItemDescribe(sti(rItm.index));
+	sText1 = GetItemDescribe(sti(rItm.index), pchar);
 
 	CreateTooltip("#" + sHeader, sText1, argb(255, 255, 255, 255), sText2, argb(255, 192, 192, 192), sText3, argb(255, 255, 255, 255), "", argb(255, 255, 255, 255), sPic, sGroup, sGroupPic, 64, 64);
 	LanguageCloseFile(lngFileID);
@@ -240,43 +279,50 @@ void ShowHelpHint()
 
 void FillItemsScroll()
 {
-	int i, n, m = 0;
-	string sAttr, sItemId;
-	ref itm;
+	int n, m = 0;
+	string sAttr, sItemId, sItem;
+	ref rItem;
 	aref arImgGrp, arTable;
 
 	DeleteAttribute(&GameInterface, "ITEMS_SCROLL");
-	makearef(arTable, GameInterface.ITEMS_SCROLL);
 
 	nCurScrollNum = 0;
-	arTable.current = 0;
+	GameInterface.ITEMS_SCROLL.current = 0;
+	makearef(arTable, GameInterface.ITEMS_SCROLL);
 
 	arTable.ImagesGroup.t0 = "EMPTY_ITEMS";
 
 	makearef(arImgGrp, arTable.ImagesGroup);
-	FillImagesGroupForItems(arImgGrp);
 
 	arTable.BadTex1 = 0;
 	arTable.BadPic1 = "pic9";
 	arTable.BadTex2 = 0;
 	arTable.BadPic2 = "pic16";
 
-	for (n = 0; n < ITEMS_QUANTITY; n++)
+	aref arRecipies; makearef(arRecipies, pchar.alchemy);
+	int q = GetAttributesNum(arRecipies);
+
+	for (n = 0; n < q; n++)
 	{
-		makeref(itm, Items[n]);
+		sItem = GetAttributeName(GetAttributeN(arRecipies, n));
 
-		if (CheckAttribute(itm, "id") && CheckAttribute(itm, "craft") && itm.craft == "1" && or(bBettaTestMode, isMultiObjectKnown(itm.id)))
-		{
-			sAttr = "pic" + (m + 1);
-			arTable.(sAttr).itemId = itm.id;
-			arTable.(sAttr).img1 = GetItemPictureName(itm.id);
-			arTable.(sAttr).tex1 = GetItemPictureTexture("ITEMS_SCROLL.ImagesGroup", itm.id);
+		if (FindItem(sItem) < 0)
+			continue;
 
-			sItemId = itm.id;
-			alchemy.items.(sItemId) = 0;
+		rItem = ItemsFromID(sItem);
 
-			m++;
-		}
+		if (!CheckAttribute(rItem, "craft.components"))
+			continue;
+
+		sAttr = "pic" + (m + 1);
+		arTable.(sAttr).itemId = rItem.id;
+		arTable.(sAttr).img1 = GetItemPictureName(rItem.id);
+		arTable.(sAttr).tex1 = EnsureItemTextureInGroup(arImgGrp, rItem.id);
+
+		sItemId = rItem.id;
+		alchemy.items.(sItemId) = "0";
+
+		m++;
 	}
 
 	Restrictor(&m, 1, "");
@@ -315,13 +361,13 @@ void ChangeSelectScrollImage()
 		string sAttr = "pic" + (nCurScrollNum + 1);
 		string sItemId = GameInterface.ITEMS_SCROLL.(sAttr).itemId;
 
+		sCurItem = sItemId;
 		rGlobItem = ItemsFromId(sItemId);
 		AddToTable(rGlobItem);
-		sCurItem = sItemId;
 
 		GameInterface.TABLE_LIST.select = 1;
 		GameInterface.TABLE_LIST.top = 0;
-		SetItemsName(0);
+		SetItemsName(1);
 		SetFormatedText("QTY_SELECTED", "" + (nCurScrollNum + 1));
 		TEXT_CRAFT_UPDATE();
 	}
@@ -329,9 +375,9 @@ void ChangeSelectScrollImage()
 
 void AddToTable(ref rItem)
 {
-	string sItmId, sAttr, sList, sItmUse = XI_ConvertString("Component");
+	string sItmId, sAttr, sList, sItmUse;
 	string sTmp = "*";
-	int n, i, q, iNum, iLeftQty, iRightQty, iQty, iChests, iconSize = 46;
+	int n, i, iNum, iLeftQty, iRightQty, iQty, iconSize = 46;
 	int iAlchemyItems, iPcharItems;
 	ref itm;
 	aref arTable;
@@ -348,14 +394,29 @@ void AddToTable(ref rItem)
 	iNum = KZ|Symbol(sItmId, ",");
 	sAttr = sItmId;
 
+	int iCurLen = strlen(&sItmId);
+	int iCurPos = 0;
+	int iCurEnd;
+
 	if (sAttr != "")
 	{
 		for (i = 0; i <= iNum; i++)
 		{
-			if (iNum > 0)
-				sAttr = GetSubStr(sItmId, ",", i);
+			iCurEnd = findSubStr(&sItmId, ",", iCurPos);
+
+			if (iCurEnd < 0)
+				iCurEnd = iCurLen;
+
+			sAttr = "";
+
+			if (iCurEnd > iCurPos)
+				sAttr = strcut(&sItmId, iCurPos, iCurEnd - 1);
+
+			iCurPos = iCurEnd + 1;
 
 			iQty = 1;
+			sTmp = "*";
+			sItmUse = XI_ConvertString("Component");
 
 			if (HasStr(sAttr, ":"))
 			{
@@ -379,9 +440,6 @@ void AddToTable(ref rItem)
 
 				sAttr = FindStringBeforeChar(sAttr, ":");
 			}
-
-			/*if (CheckCharacterPerk(pchar, "Alchemy") && StrEndsWith(sAttr, "_kit"))
-				continue;*/
 
 			GrabCabinItems(sAttr);
 			itm = ItemsFromId(sAttr);
@@ -407,9 +465,8 @@ void AddToTable(ref rItem)
 			else
 				iRightQty = 0;
 
+			GameInterface.TABLE_LIST.(sList).td1.str = iLeftQty;
 			makearef(arTable, GameInterface.TABLE_LIST.(sList));
-
-			arTable.td1.str = iLeftQty;
 			arTable.td1.scale = 0.9;
 
 			arTable.td1.color = iGreen;
@@ -452,36 +509,38 @@ void AddToTable(ref rItem)
 
 	QTY_CREATE_UPDATE(sCurItem);
 	Table_UpdateWindow("TABLE_LIST");
-	SetEventHandler("frame", "RefreshTableByFrameEvent", 0);
 }
 
 void GrabCabinItems(string _sAttr)
 {
-	if (pchar.location != Get_My_Cabin() || GetCharacterItemCabin(pchar, _sAttr, 0, 1) <= 0) return;
+	if (pchar.location != Get_My_Cabin() || GetCharacterItemCabin(pchar, _sAttr, 0, 1) <= 0)
+		return;
 
 	aref arChests;
-	ref rItm = ItemsFromId(_sAttr);
-	string sBox;
-	int iBox, iChests = CheckCabinBoxes(locations[FindLocation(Get_My_Cabin())]);
+	ref rItem = ItemsFromId(_sAttr);
+	ref rCabin = &locations[FindLocation(Get_My_Cabin())];
+	string sBox, sItemAttr = "Items." + _sAttr;
+	int iBox, iCur, iHave, iChests = CheckCabinBoxes(rCabin);
 
 	for (iBox = 1; iBox <= iChests; iBox++)
 	{
 		sBox = "box" + iBox;
-		makearef(arChests, locations[FindLocation(Get_My_Cabin())].(sBox));
+		makearef(arChests, rCabin.(sBox));
 
-		if (CheckAttribute(arChests, "Items." + _sAttr))
+		if (CheckAttribute(arChests, sItemAttr))
 		{
-			rItm.CabinItems.Qty.(sBox) = "" + arChests.Items.(_sAttr);
-			pchar.Items.(_sAttr) = sti(GetAttrValue(pchar, "Items." + _sAttr)) + sti(arChests.Items.(_sAttr));
+			iCur = sti(arChests.Items.(_sAttr));
+			rItem.CabinItems.Qty.(sBox) = "" + iCur;
+
+			iHave = 0;
+
+			if (CheckAttribute(pchar, sItemAttr))
+				iHave = sti(pchar.Items.(_sAttr));
+
+			pchar.Items.(_sAttr) = iHave + iCur;
 			arChests.Items.(_sAttr) = "0";
 		}
 	}
-}
-
-void RefreshTableByFrameEvent()
-{
-	DelEventHandler("frame", "RefreshTableByFrameEvent");
-	SendMessage(&GameInterface, "lsl", MSG_INTERFACE_MSG_TO_NODE, "TABLE_LIST", 0);
 }
 
 void CS_TableSelectChange()
@@ -531,12 +590,26 @@ int CheckAlchemy(string sItemID, bool bCheck)
 	iNum = KZ|Symbol(sItmId, ",");
 	sAttr = sItmId;
 
+	int iCurLen = strlen(&sItmId);
+	int iCurPos = 0;
+	int iCurEnd;
+
 	for (i = 0; i <= iNum; i++)
 	{
-		if (iNum > 0)
-			sAttr = GetSubStr(sItmId, ",", i);
+		iCurEnd = findSubStr(&sItmId, ",", iCurPos);
+
+		if (iCurEnd < 0)
+			iCurEnd = iCurLen;
+
+		sAttr = "";
+
+		if (iCurEnd > iCurPos)
+			sAttr = strcut(&sItmId, iCurPos, iCurEnd - 1);
+
+		iCurPos = iCurEnd + 1;
 
 		iReq = 1;
+		bTool = false;
 
 		if (HasStr(sAttr, ":"))
 		{
@@ -605,6 +678,7 @@ int CheckAlchemy(string sItemID, bool bCheck)
 void onGetAllBtnClick()
 {
 	int i, iNum, iReq;
+	bool bIsTool, bIsCat;
 	string sAttr, sItmId, sTmp = "*";
 
 	ref rItem = ItemsFromId(sCurItem);
@@ -614,12 +688,28 @@ void onGetAllBtnClick()
 	iNum = KZ|Symbol(sItmId, ",");
 	sAttr = sItmId;
 
+	int iCurLen = strlen(&sItmId);
+	int iCurPos = 0;
+	int iCurEnd;
+
 	for (i = 0; i <= iNum; i++)
 	{
-		if (iNum > 0)
-			sAttr = GetSubStr(sItmId, ",", i);
+		iCurEnd = findSubStr(&sItmId, ",", iCurPos);
+
+		if (iCurEnd < 0)
+			iCurEnd = iCurLen;
+
+		sAttr = "";
+
+		if (iCurEnd > iCurPos)
+			sAttr = strcut(&sItmId, iCurPos, iCurEnd - 1);
+
+		iCurPos = iCurEnd + 1;
 
 		iReq = 1;
+		sTmp = "*";
+		bIsTool = false;
+		bIsCat = false;
 
 		if (HasStr(sAttr, ":"))
 		{
@@ -628,8 +718,10 @@ void onGetAllBtnClick()
 
 			if (HasStrEx(sTmp, "tool,cat", "|"))
 			{
-				if (!HasStr(sTmp, "tool"))
-					Qty = 1;
+				if (HasStr(sTmp, "tool"))
+					bIsTool = true;
+				else
+					bIsCat = true;
 			}
 			else
 			{
@@ -638,8 +730,13 @@ void onGetAllBtnClick()
 			}
 		}
 
-		if (!HasStr(sTmp, "tool"))
-			RemoveItems(alchemy, sAttr, Qty * iReq);
+		if (bIsTool)
+			continue; // > это инструмент, не расходуем
+
+		if (bIsCat)
+			RemoveItems(alchemy, sAttr, iReq);       // > это катализатор, расходуем только 1 единицу
+		else
+			RemoveItems(alchemy, sAttr, Qty * iReq); // > это обычный компонент, расходуем сколько нужно
 	}
 
 	AddItems(pchar, sCurItem, Qty * sti(rItem.craft.qty));
@@ -647,8 +744,6 @@ void onGetAllBtnClick()
 
 	AddToTable(ItemsFromId(sCurItem));
 	SetItemsName(1);
-
-	SetSelectable("GETALL_BUTTON", CheckAlchemy(sCurItem, 0) > 0);
 
 	GameInterface.TABLE_LIST.top = 0;
 	GameInterface.TABLE_LIST.select = 1;
@@ -671,32 +766,76 @@ void onTableAllBtnClick(ref rCharA, ref rCharB)
 		AddItems(rCharB, item, iItemsQty);
 
 		AddToTable(ItemsFromId(sCurItem));
-		SetSelectable("GETALL_BUTTON", CheckAlchemy(sCurItem, 0) > 0);
 	}
+}
+
+// > с зажатыми shift, ctrl или alt туда-сюда перекидываем больше предметов
+// TODO > добавить инфу про это в тутор
+int GetAlchemyStep()
+{
+	if (XI_IsKeyPressed("alt"))     return 50;
+	if (XI_IsKeyPressed("control")) return 25;
+	if (XI_IsKeyPressed("shift"))   return 10;
+
+	return 1;
 }
 
 void CALC_BUTTON(bool bAdd)
 {
 	int i = CheckAlchemy(sCurItem, 1);
+	int step = GetAlchemyStep();
+	int old = iResult;
+	int target;
 
 	if (bAdd)
 	{
-		if (iResult < i)
-		{
-			iResult += 1;
-			CalcMe(pchar, alchemy);
-		}
+		if (step < 0)
+			target = i;
 		else
-			iResult = i;
+		{
+			target = iResult + step;
+
+			if (target > i)
+				target = i;
+		}
 	}
 	else
 	{
-		if (iResult > 0)
+		if (step < 0)
+			target = 0;
+		else
 		{
-			iResult -= 1;
-			CalcMe(alchemy, pchar);
+			target = iResult - step;
+
+			if (target < 0)
+				target = 0;
 		}
 	}
+
+	if (target > iResult)
+	{
+		iResult = target;
+		CalcMeStep(pchar, alchemy);
+	}
+	else if (target < iResult)
+	{
+		if (target == 0)
+		{
+			iResult = 0;
+			CalcMeStep(alchemy, pchar);
+		}
+		else
+		{
+			while (iResult > target)
+			{
+				iResult -= 1;
+				CalcMeStep(alchemy, pchar);
+			}
+		}
+	}
+
+	if (iResult != old)
+		AddToTable(ItemsFromId(sCurItem));
 
 	TEXT_CRAFT_UPDATE();
 	Restrictor(&iResult, 0, i);
@@ -705,13 +844,14 @@ void CALC_BUTTON(bool bAdd)
 void CALC_ALL_BUTTON(bool bAdd)
 {
 	int i = CheckAlchemy(sCurItem, 1);
+	int old = iResult;
 
 	if (bAdd)
 	{
 		if (iResult < i)
 		{
 			iResult = i;
-			CalcMe(pchar, alchemy);
+			CalcMeStep(pchar, alchemy);
 		}
 	}
 	else
@@ -719,9 +859,12 @@ void CALC_ALL_BUTTON(bool bAdd)
 		if (iResult > 0)
 		{
 			iResult = 0;
-			CalcMe(alchemy, pchar);
+			CalcMeStep(alchemy, pchar);
 		}
 	}
+
+	if (iResult != old)
+		AddToTable(ItemsFromId(sCurItem));
 
 	TEXT_CRAFT_UPDATE();
 	Restrictor(&iResult, 0, i);
@@ -742,7 +885,7 @@ void QTY_CREATE_UPDATE(string sItem)
 	SetSelectable("GETALL_BUTTON", iResult > 0);
 }
 
-void CalcMe(ref rChar, ref rStore)
+void CalcMeStep(ref rChar, ref rStore)
 {
 	int i, iNum, iReq, iPcharItems, iAlchemyItems;
 	string sAttr, sItmId, sTmp = "*";
@@ -753,12 +896,26 @@ void CalcMe(ref rChar, ref rStore)
 	iNum = KZ|Symbol(sItmId, ",");
 	sAttr = sItmId;
 
+	int iCurLen = strlen(&sItmId);
+	int iCurPos = 0;
+	int iCurEnd;
+
 	for (i = 0; i <= iNum; i++)
 	{
-		if (iNum > 0)
-			sAttr = GetSubStr(sItmId, ",", i);
+		iCurEnd = findSubStr(&sItmId, ",", iCurPos);
+
+		if (iCurEnd < 0)
+			iCurEnd = iCurLen;
+
+		sAttr = "";
+
+		if (iCurEnd > iCurPos)
+			sAttr = strcut(&sItmId, iCurPos, iCurEnd - 1);
+
+		iCurPos = iCurEnd + 1;
 
 		iReq = 1;
+		sTmp = "*";
 
 		if (HasStr(sAttr, ":"))
 		{
@@ -786,8 +943,6 @@ void CalcMe(ref rChar, ref rStore)
 			RemoveItems(rChar, sAttr, iReq);
 		}
 	}
-
-	AddToTable(ItemsFromId(sCurItem));
 }
 
 void OnHeaderClick()
@@ -829,23 +984,23 @@ void ProcessInterfaceControls()
 	{
 		IDoExit(RC_INTERFACE_TO_ITEMS);
 	}
-	if (controlName == "IExit_F2")
+	if (controlName == "CharacterShipMenu")
 	{
 		IDoExit(RC_INTERFACE_TO_SHIP);
 	}
-	if (controlName == "IExit_F3")
+	if (controlName == "LogbookMenu")
 	{
 		IDoExit(RC_INTERFACE_TO_LOGBOOK);
 	}
-	if (controlName == "IExit_F4")
+	if (controlName == "ItemsMenu")
 	{
 		IDoExit(RC_INTERFACE_TO_ITEMS);
 	}
-	if (controlName == "IExit_F5")
+	if (controlName == "NationsMenu")
 	{
 		IDoExit(INTERFACE_NATIONRELATION);
 	}
-	if (controlName == "IExit_F1")
+	if (controlName == "Interface")
 	{
 		IDoExit(INTERFACE_CHARACTER_ALL);
 	}
@@ -876,7 +1031,8 @@ void ShowAlchemyTutorial()
 	SetEventHandler("MouseRClickUp","Tutorial_HideInfoWindow",0);
 
 	string TutorialName = "Alchemy";
-	SetFormatedText("TUTORIAL_TITLE", GetConvertStr(tutorialName + "_title", "TutorialDescribe.txt"));
+	int idLngTutorial = LanguageOpenFile("TutorialDescribe.txt");
+	SetFormatedText("TUTORIAL_TITLE", LanguageConvertString(idLngTutorial, tutorialName + "_title"));
 
 	XI_WindowDisable("MAIN_WINDOW", true);
 	XI_WindowDisable("TUTORIAL_MAIN_WINDOW", false);
@@ -889,14 +1045,14 @@ void ShowAlchemyTutorial()
 //	loadScr = "wIp.webm";
 	SetNewVideo("TUTORIAL_INFO_VIDEO", loadScr);
 	SetNewVideo("TUTORIAL_INFO_VIDEOZ", loadScr);
-	SetFormatedText("TUTORIAL_ZOOM", "w");
+	SetFormatedText("TUTORIAL_ZOOM", "ᐽ");
 
-	cimg1 = GetConvertStr(tutorialName + "_controlsimg1", "TutorialDescribe.txt");
-	cimg2 = GetConvertStr(tutorialName + "_controlsimg2", "TutorialDescribe.txt");
-	cimg3 = GetConvertStr(tutorialName + "_controlsimg3", "TutorialDescribe.txt");
-	cimg4 = GetConvertStr(tutorialName + "_controlsimg4", "TutorialDescribe.txt");
-	cimg5 = GetConvertStr(tutorialName + "_controlsimg5", "TutorialDescribe.txt");
-	cimg6 = GetConvertStr(tutorialName + "_controlsimg6", "TutorialDescribe.txt");
+	cimg1 = LanguageConvertString(idLngTutorial, tutorialName + "_controlsimg1");
+	cimg2 = LanguageConvertString(idLngTutorial, tutorialName + "_controlsimg2");
+	cimg3 = LanguageConvertString(idLngTutorial, tutorialName + "_controlsimg3");
+	cimg4 = LanguageConvertString(idLngTutorial, tutorialName + "_controlsimg4");
+	cimg5 = LanguageConvertString(idLngTutorial, tutorialName + "_controlsimg5");
+	cimg6 = LanguageConvertString(idLngTutorial, tutorialName + "_controlsimg6");
 	SetFormatedText("CONTROLS_TEXT", XI_ConvertString("Controls") + ":");
 	if(cimg1 !="" || cimg2 !="" || cimg3 !="" || cimg4 !="" || cimg5 !="" || cimg6 !="")
 	{
@@ -924,7 +1080,8 @@ void ShowAlchemyTutorial()
 	}
 
    	SetKeyAttrs();
-	descr = GetConvertStr(tutorialName + "_descr", "TutorialDescribe.txt");
+	descr = LanguageConvertString(idLngTutorial, tutorialName + "_descr");
+	LanguageCloseFile(idLngTutorial);
     descr = GetAssembledString(descr, &obGKIC);
 	SetFormatedText("TUTORIAL_INFO_TEXT", descr);
 	SendMessage(&GameInterface,"lsl",MSG_INTERFACE_MSG_TO_NODE,"TUTORIAL_INFO_TEXT",5);
@@ -955,10 +1112,10 @@ void CloseAlchemyTutorial()
 		if(sti(InterfaceStates.ShowTutorial) != curShowTutorial) SaveGameOptions();
 	}
 
-	DelEventHandler("ievnt_command","ProcCommand");
-	DelEventHandler("CheckButtonChange","procCheckBoxChange");
-	DelEventHandler("ShowInfoWindow","ShowInfoWindow");
-	DelEventHandler("MouseRClickUp","HideInfoWindow");
+	DelEventHandler("ievnt_command","Tutorial_ProcCommand");
+	DelEventHandler("CheckButtonChange","Tutorial_procCheckBoxChange");
+	DelEventHandler("ShowInfoWindow","Tutorial_ShowInfoWindow");
+	DelEventHandler("MouseRClickUp","Tutorial_HideInfoWindow");
 	SetEventHandlers();
 
 	XI_WindowDisable("TUTORIAL_MAIN_WINDOW", true);

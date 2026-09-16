@@ -142,3 +142,9 @@ Estamos a caminho, Capitão! Vou reunir a tripulação e embarcamos já!
 Sailor_42 {
 Vamos, anda logo, não pretendo ficar aqui por muito tempo.
 }
+Sailor_43 {
+Saudações, senhora! O que pode querer de um simples marinheiro?
+}
+Sailor_44 {
+Nada, eu só estava de passagem.
+}

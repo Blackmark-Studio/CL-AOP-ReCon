@@ -1,17 +1,17 @@
 LeFransua_Church_1 {
-什么问题？
+什么问题？ 
 }
 LeFransua_Church_2 {
-你想干什么？
+你想干什么？ 
 }
 LeFransua_Church_3 {
 @<RandPhraseSimple>
 }
 LeFransua_Church_4 {
-我改主意了……
+我改主意了…… 
 }
 LeFransua_Church_5 {
-我现在没什么可说的。
+我现在没什么可说的。 
 }
 LeFransua_Church_6 {
 @<RandPhraseSimple>

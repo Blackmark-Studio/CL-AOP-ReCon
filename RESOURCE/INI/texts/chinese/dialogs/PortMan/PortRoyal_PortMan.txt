@@ -1,26 +1,26 @@
 PortRoyal_PortMan_1 {
-什么问题？
+什么问题？ 
 }
 PortRoyal_PortMan_2 {
-有什么需要帮忙的吗，@<GetAddress_Form>?
+有什么需要帮忙的吗， @<GetAddress_Form>?
 }
 PortRoyal_PortMan_3 {
 @<RandPhraseSimple>
 }
 PortRoyal_PortMan_4 {
-不久前，你试图问我一个问题@<GetAddress_Form>……
+不久前， 你试图问我一个问题@<GetAddress_Form>…… 
 }
 PortRoyal_PortMan_5 {
-你今天已经第三次提这事了……
+你今天已经第三次提这事了…… 
 }
 PortRoyal_PortMan_6 {
-听着，要是你不是来办港口的事儿，别拿问题来烦我。
+听着， 要是你不是来办港口的事儿， 别拿问题来烦我。
 }
 PortRoyal_PortMan_7_m {
-我改主意了……
+我改主意了…… 
 }
 PortRoyal_PortMan_7_f {
-我改变主意了……
+我改变主意了…… 
 }
 PortRoyal_PortMan_8 {
 我现在没什么可说的。
@@ -29,68 +29,68 @@ PortRoyal_PortMan_9 {
 @<RandPhraseSimple>
 }
 PortRoyal_PortMan_10 {
-嗯，我的记忆好像出了点问题……
+嗯， 我的记忆好像出了点问题…… 
 }
 PortRoyal_PortMan_11 {
-行吧，第三次总算成了……
+行吧， 第三次总算成了…… 
 }
 PortRoyal_PortMan_12 {
-不好意思，港口的事我现在没兴趣。
+不好意思， 港口的事我现在没兴趣。
 }
 PortRoyal_PortMan_13 {
-听着，你们港口最近有没有西班牙人来过？
+听着， 你们港口最近有没有西班牙人来过？ 
 }
 PortRoyal_PortMan_14 {
-您好。最近从Portobelo来的François Gontier船长，有来找过你吗？他指挥的那艘船叫“@<pchar>”。
+您好。 最近从贝洛港来的弗朗索瓦.贡蒂尔船长， 有来找过你吗？ 他指挥的那艘船叫“@<pchar>”。
 }
 PortRoyal_PortMan_15 {
-西班牙人在这儿可不常见。不过前阵子确实有个西班牙人在这抛锚，还带着驻军士兵护着。
+西班牙人在这儿可不常见。 不过前阵子确实有个西班牙人在这抛锚， 还带着驻军士兵护着。
 }
 PortRoyal_PortMan_16 {
-哎哟，这怎么回事？英国士兵怎么会守着西班牙的船？
+哎哟， 这怎么回事？ 英国士兵怎么会守着西班牙的船？ 
 }
 PortRoyal_PortMan_17 {
-鬼知道，估计是总督的命令吧。
+鬼知道， 估计是总督的命令吧。
 }
 PortRoyal_PortMan_18 {
-那这西班牙人现在在哪儿？他开的是什么船？
+那这西班牙人现在在哪儿？ 他开的是什么船？ 
 }
 PortRoyal_PortMan_19 {
-“Santa Agueda”号快艇昨天顺风出发，前往San Juan。你找那西班牙人有啥事？
+皮纳斯帆船“圣阿格达号”昨天顺风出发， 前往圣胡安。 你找那西班牙人有什么事？ 
 }
 PortRoyal_PortMan_20 {
-我要见船长，他还欠我……
+我要见船长， 他还欠我…… 
 }
 PortRoyal_PortMan_21 {
-呵，好吧……不过你得记住，现在风还很大。要是想在到San Juan之前看到那艘pinnace的船尾，你现在就得启航。至于能不能追上，那可不好说……
+呵， 好吧…… 不过你得记住， 现在风还很大。 要是想在到圣胡安之前看到那艘皮纳斯帆船的船尾， 你现在就得启航。 至于能不能追上， 那可不好说…… 
 }
 PortRoyal_PortMan_22 {
-我还是要试试。告辞，保重。
+我还是要试试。 告辞， 保重。
 }
 PortRoyal_PortMan_23 {
-没有，François Gontier 没有报到，@<pchar> 号护卫舰也没进过 Port Royal。
+没有， 弗朗索瓦.贡蒂尔没有报到， @<pchar>护卫舰也没进过皇家港。
 }
 PortRoyal_PortMan_24 {
-你刚才已经问过这个问题了，我也回答过你了。
+你刚才已经问过这个问题了， 我也回答过你了。
 }
 PortRoyal_PortMan_25 {
-我都跟你说了，你已经问过Gontier这事了。
+我都跟你说了， 你已经问过贡蒂尔这事了。
 }
 PortRoyal_PortMan_26 {
-请别打扰我工作！
+请别打扰我工作！ 
 }
 PortRoyal_PortMan_27 {
-明白。我们会继续找的……
+明白。我们会继续找的…… 
 }
 PortRoyal_PortMan_28 {
-嗯，是啊……
+嗯， 是啊…… 
 }
 PortRoyal_PortMan_29_m {
-对，没错，是你问的……
+对， 没错， 是你问的…… 
 }
 PortRoyal_PortMan_29_f {
-对，没错，她确实问过……
+对， 没错， 她确实问过…… 
 }
 PortRoyal_PortMan_30 {
-抱歉，@<npchar>...
+抱歉， @<npchar>...
 }

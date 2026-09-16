@@ -6,12 +6,8 @@ void Ship_BortFire()
 	ref rCharacter = GetCharacter(GetEventData());
 	firedShip = GetEventData();
 	bortName = GetEventData();
-	dx = GetEventData();
-	dy = GetEventData();
-	dz = GetEventData();
-	d2x = GetEventData();
-	d2y = GetEventData();
-	d2z = GetEventData();
+	string sMode = GetEventData();
+
     // boal fix charge 29.11.03 -->
     if (bortName == "cannonr" || bortName == "cannonl")
     { // только для бортов проверяем.
@@ -57,6 +53,16 @@ void Ship_BortFire()
         }
     }
     // boal <--
+
+	if(sMode == "aiming")
+		return;
+
+	dx = GetEventData();
+	dy = GetEventData();
+	dz = GetEventData();
+	d2x = GetEventData();
+	d2y = GetEventData();
+	d2z = GetEventData();
 
 	SendMessage(&SeaOperator, "lisffffff", MSG_SEA_OPERATOR_FIRE, firedShip, bortName, dx, dy, dz, d2x, d2y, d2z);
 }

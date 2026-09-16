@@ -316,3 +316,9 @@ Andre_Abel_Dialog_94 {
 Andre_Abel_Dialog_95 {
 Buena suerte... Y cuídate, no dejes que te atrapen otra vez.
 }
+Andre_Abel_Dialog_96 {
+Sí, las cosas se han alargado. ¿Y ahora qué?
+}
+Andre_Abel_Dialog_97 {
+No hay ni un solo espacio libre en mi escuadra.
+}

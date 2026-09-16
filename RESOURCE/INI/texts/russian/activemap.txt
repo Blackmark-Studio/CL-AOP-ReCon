@@ -23,3 +23,4 @@ nautical_miles	{морских миль}
 nautical_miles2	{морские мили}
 TRAVEL_from		{от}
 TRAVEL_to		{до}
+Goods_data_date		{Актуальность данных о товарах}

@@ -1,39 +1,39 @@
 SanJuan_Usurer_1 {
-什么问题？
+什么问题？ 
 }
 SanJuan_Usurer_2 {
-你想干什么？
+你想干什么？ 
 }
 SanJuan_Usurer_3 {
 @<RandPhraseSimple>
 }
 SanJuan_Usurer_4 {
-前阵子你好像想问我什么……
+前阵子你好像想问我什么…… 
 }
 SanJuan_Usurer_5 {
-嗯，让我猜猜……又没什么实质内容吧？
+嗯， 让我猜猜…… 又没什么实质内容吧？ 
 }
 SanJuan_Usurer_6 {
-听着，俺只管钱的事，问题可不归俺管……
+听着， 我只管钱的事， 问题可不归我管…… 
 }
 SanJuan_Usurer_7_m {
-我改主意了……
+我改主意了…… 
 }
 SanJuan_Usurer_7_f {
-我改变主意了……
+我改变主意了…… 
 }
 SanJuan_Usurer_8 {
-我现在没什么可说的。
+我现在没什么可说的。 
 }
 SanJuan_Usurer_9 {
 @<RandPhraseSimple>
 }
 SanJuan_Usurer_10 {
-嗯，我的记忆好像出了点问题……
+嗯， 我的记忆好像出了点问题…… 
 }
 SanJuan_Usurer_11 {
-你猜对了，抱歉……
+你猜对了， 抱歉…… 
 }
 SanJuan_Usurer_12 {
-我明白……
+我明白…… 
 }

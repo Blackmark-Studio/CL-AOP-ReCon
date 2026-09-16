@@ -1471,3 +1471,9 @@ Du bist viel unterwegs. Hör zu, falls du irgendwo ägyptisches Mumienpulver fin
 Common_Store_433 {
 In Ordnung.
 }
+Common_Store_434 {
+Guten Tag, Señorita! Möchten Sie etwas kaufen?
+}
+Common_Store_435 {
+Nein, danke. Vielleicht ein andermal.
+}

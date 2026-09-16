@@ -92,6 +92,10 @@ void CreateParrotInLocation(ref loc, bool fromCabin)
 				sModel = "amazonGreen";
 				SetParrotLocatorRadius(loc, 0.7, 2.7);
 			break;
+			case "Bucaneer_outpost_townhall":
+				sModel = "amazonBlue";
+				SetParrotLocatorRadius(loc, 0.6, 2.6);
+			break;
 /*			case "PuertoPrincipe_townhall":
 				sModel = "amazonGreen";
 			break;*/

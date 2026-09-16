@@ -23,7 +23,7 @@ questNPC_8 {
 @<LinkRandPhrase>
 }
 questNPC_9 {
-Da ist er – schnappt ihn!
+Da ist er - schnappt ihn!
 }
 questNPC_10 {
 Schnappt ihn, Jungs!
@@ -53,7 +53,7 @@ questNPC_18 {
 Geh deinen eigenen Weg und halte mich nicht auf.
 }
 questNPC_19 {
-Ich fürchte, es ist ernst. Ein spanischer Spion hat sich in die Stadt eingeschlichen – vielleicht sogar ein Söldner. Er ist zum Haus des Büchsenmachers gegangen, und jetzt ist Griffins Tür fest verschlossen.
+Ich fürchte, es ist ernst. Ein spanischer Spion hat sich in die Stadt eingeschlichen - vielleicht sogar ein Söldner. Er ist zum Haus des Büchsenmachers gegangen, und jetzt ist Griffins Tür fest verschlossen.
 }
 questNPC_20 {
 Halt! Legen Sie Ihre Waffen nieder! Folgen Sie mir!
@@ -80,10 +80,10 @@ questNPC_27 {
 Ich befolge Colonel Bishops Befehle.
 }
 questNPC_28 {
-Ah, Sie sind es, Doktor Blood. Sie haben mich behandelt, als ich von der "Pride of Devon" entlassen wurde.
+Ah, Sie sind es, Doktor Blood. Ich habe Sie sofort erkannt.
 }
 questNPC_29 {
-Ich freue mich, dass du wieder gesund bist.
+Du hast ein gutes Auge, Soldat.
 }
 questNPC_30 {
 Verschwinde, Sklave!
@@ -95,10 +95,10 @@ questNPC_32 {
 Was für ein Wetter, und trotzdem muss ich hier stehen. Meine einzige Unterhaltung ist, mir die Fliegen aus dem Gesicht zu schlagen.
 }
 questNPC_33 {
-Ich verstehe Sie. Aber ich kann Ihnen nicht helfen – so ist nun mal Ihr Beruf.
+Ich verstehe Sie. Aber ich kann Ihnen nicht helfen - so ist nun mal Ihr Beruf.
 }
 questNPC_34 {
-Wenn dir nach einem Gespräch ist, such dir jemand anderen – oder geh am besten zurück auf die Plantagen.
+Wenn dir nach einem Gespräch ist, such dir jemand anderen - oder geh am besten zurück auf die Plantagen.
 }
 questNPC_35 {
 Gewiss.
@@ -125,7 +125,7 @@ questNPC_42 {
 @<RandPhraseSimple>
 }
 questNPC_43 {
-Ich muss irgendwohin – können Sie mir einen fähigen Kapitän empfehlen?
+Ich muss irgendwohin - können Sie mir einen fähigen Kapitän empfehlen?
 }
 questNPC_44 {
 Ich suche einen Kapitän, der meinen Freund für ein angemessenes Entgelt irgendwohin bringen kann. Kennen Sie jemanden?
@@ -134,7 +134,7 @@ questNPC_45 {
 @<RandPhraseSimple>
 }
 questNPC_46_m {
-Oh, Doktor Blood, hallo! Ich habe mich damals nie bei Ihnen dafür bedankt, dass Sie meinen kleinen Jungen gerettet haben – daran denke ich oft und bedaure es. Wie schön, Sie heute zu sehen!
+Oh, Doktor Blood, hallo! Ich habe mich damals nie bei Ihnen dafür bedankt, dass Sie meinen kleinen Jungen gerettet haben - daran denke ich oft und bedaure es. Wie schön, Sie heute zu sehen!
 }
 questNPC_46_f {
 Oh, Doktor Blood, hallo! Ich habe mich damals nie bei Ihnen bedankt, dass Sie meinen kleinen Jungen gerettet haben, und ich denke noch oft daran und bedaure es. Wie schön, Sie heute getroffen zu haben!
@@ -143,7 +143,7 @@ questNPC_47_m {
 Wirklich, wie wunderbar es ist, wenn Menschen im richtigen Moment das Bedürfnis verspüren, ihre Dankbarkeit zu zeigen. Sag mir, mein Freund, wo könnte ich rasch und unauffällig ein paar Entermesser und ein paar Pistolen auftreiben?
 }
 questNPC_47_f {
-Wirklich, es ist doch wunderbar, wenn Menschen im richtigen Moment ihre Dankbarkeit zeigen wollen. Sag mir, mein Lieber, wo könnte ich schnell und unauffällig ein paar Entersäbel und ein paar Pistolen auftreiben—ganz ohne Aufsehen?
+Wirklich, es ist doch wunderbar, wenn Menschen im richtigen Moment ihre Dankbarkeit zeigen wollen. Sag mir, mein Lieber, wo könnte ich schnell und unauffällig ein paar Entersäbel und ein paar Pistolen auftreiben-ganz ohne Aufsehen?
 }
 questNPC_48 {
 @<TimeGreeting>, Doktor.
@@ -212,7 +212,7 @@ questNPC_69 {
 Seit wann laufen Sklaven bewaffnet herum, wohin sie wollen?
 }
 questNPC_70 {
-Du bist Colonel Bishops Sklave – warum bist du dann bewaffnet?
+Du bist Colonel Bishops Sklave - warum bist du dann bewaffnet?
 }
 questNPC_71 {
 @<RandPhraseSimple>
@@ -290,7 +290,7 @@ questNPC_95 {
 Danke, mein Freund.
 }
 questNPC_96 {
-Er ist in die Taverne gestürmt – such dort nach ihm. Vergiss nicht, auch unter den Tischen nachzusehen.
+Er ist in die Taverne gestürmt - such dort nach ihm. Vergiss nicht, auch unter den Tischen nachzusehen.
 }
 questNPC_97 {
 Ich war neulich in der Taverne, glaube ich. Wenn ich mich recht erinnere, bin ich seitdem nicht mehr gegangen.
@@ -353,7 +353,7 @@ questNPC_116 {
 Ich werde nicht fragen, warum du das brauchst, und falls mich jemand fragt, muss ich weder lügen noch Ausreden erfinden. Allerdings werde ich erst übermorgen um einen Bericht gebeten, also...
 }
 questNPC_117 {
-Übermorgen kannst du mit Gewissheit sagen, dass du ein paar Säbel und Pistolen kostenlos an Doktor Peter Blood verliehen hast – genau den, der als Arzt in Bridgetown tätig war. Ich bezweifle, dass Colonel Bishop etwas dagegen haben wird...
+Übermorgen kannst du mit Gewissheit sagen, dass du ein paar Säbel und Pistolen kostenlos an Doktor Peter Blood verliehen hast - genau den, der als Arzt in Bridgetown tätig war. Ich bezweifle, dass Colonel Bishop etwas dagegen haben wird...
 }
 questNPC_118 {
 Mein Sohn verdankt Ihnen sein Leben, ebenso wie ich. Hier, nehmen Sie das, Doctor Blood. Und viel Glück!
@@ -419,7 +419,7 @@ questNPC_138 {
 Seit wann laufen Sklaven bewaffnet herum, wie es ihnen gefällt?
 }
 questNPC_139 {
-Du bist Colonel Bishops Sklave – warum bist du bewaffnet?
+Du bist Colonel Bishops Sklave - warum bist du bewaffnet?
 }
 questNPC_140 {
 Hey, gib sofort all deine Waffen her! Jemand muss Colonel Bishop Bescheid geben, damit er dir eine ordentliche Lektion erteilt...
@@ -455,7 +455,7 @@ questNPC_150 {
 Hallo, Mister Blood, schön, Sie wohlauf zu sehen. In dem Zustand, in dem Sie auf der Plantage angekommen sind, hätten Sie nicht lange durchgehalten. Zum Glück konnten die Jungs und ich Sie wieder aufpäppeln, auch wenn wir selbst keine Ärzte sind.\nAber Sie sind, wenn ich mich nicht irre, einer, oder? Vielleicht könnten Sie mir etwas gegen Kopfschmerzen geben? Seit diesem verfluchten Sturm habe ich manchmal unerträgliche Schmerzen. Warum der Kapitän überhaupt dorthin musste...
 }
 questNPC_151 {
-Natürlich, Sandro. Nach allem, was du und Hopkins für mich und die Jungs getan habt, ist es meine Pflicht, dir zu helfen. Hier, nimm diesen Trank – er wird deine Migräne heilen.
+Natürlich, Sandro. Nach allem, was du und Hopkins für mich und die Jungs getan habt, ist es meine Pflicht, dir zu helfen. Hier, nimm diesen Trank - er wird deine Migräne heilen.
 }
 questNPC_152 {
 Leider habe ich nichts gegen Kopfschmerzen, Sandro. Und Colonel Bishop wird vermutlich kein Geld für die nötige Medizin geben, da er glaubt, dass alle Krankheiten seiner Sklaven von Faulheit kommen. Leider kann ich dir nur raten, dich so oft wie möglich auszuruhen.
@@ -485,7 +485,7 @@ questNPC_160 {
 Ja, aber Sklaven dürfen doch keine Waffen haben, oder? Und von welcher Situation sprichst du?
 }
 questNPC_161 {
-Keine Sorge, Doktor, das lässt sich leicht unter der Kleidung verbergen, niemand wird etwas bemerken. Es sei denn, Sie fangen an, es vor den Soldaten herumzuschwenken. Und der Moment wird kommen, in dem Sie es zeigen müssen, und ich glaube, ich weiß auch warum… Aber ich verrate Sie nicht, keine Sorge – ich stehe auf Ihrer Seite.
+Keine Sorge, Doktor, das lässt sich leicht unter der Kleidung verbergen, niemand wird etwas bemerken. Es sei denn, Sie fangen an, es vor den Soldaten herumzuschwenken. Und der Moment wird kommen, in dem Sie es zeigen müssen, und ich glaube, ich weiß auch warum... Aber ich verrate Sie nicht, keine Sorge - ich stehe auf Ihrer Seite.
 }
 questNPC_162 {
 Danke, mein Freund. Ich schlage vor, du sprichst mit Jeremy. Gute Besserung!
@@ -518,7 +518,7 @@ questNPC_171 {
 Na, was willst du jetzt?
 }
 questNPC_172 {
-Ich habe nicht viel Zeit – ich will dich sofort erledigen!
+Ich habe nicht viel Zeit - ich will dich sofort erledigen!
 }
 questNPC_173 {
 Ich wollte dich nur an unser Treffen erinnern.
@@ -542,7 +542,7 @@ questNPC_179 {
 Ich bringe euch die Nachricht, dass das angenehme Vergnügen abgesagt ist.
 }
 questNPC_180 {
-Du hast drei Sekunden, um dahin zurückzukriechen, wo du herkommst – und bete, dass wir uns nie wieder begegnen.
+Du hast drei Sekunden, um dahin zurückzukriechen, wo du herkommst - und bete, dass wir uns nie wieder begegnen.
 }
 questNPC_181 {
 Ich habe eine bessere Idee. Wie wäre es, wenn du wütend wirst und mich zum Duell herausforderst, während ich einfach hier stehe und abwarte?
@@ -632,7 +632,7 @@ questNPC_209 {
 Der alte Hund wird mich nicht verraten. Wie sind sie in die Stadt gekommen?
 }
 questNPC_210 {
-Ein spanisches Schiff hat angelegt – sie sind damit angekommen.
+Ein spanisches Schiff hat angelegt - sie sind damit angekommen.
 }
 questNPC_211 {
 Sie schlichen sich nachts durch den Dschungel in die Stadt.
@@ -695,10 +695,10 @@ questNPC_230 {
 So etwas hast du noch nie gesehen, was? Na gut, stoßen wir noch einmal darauf an!
 }
 questNPC_231 {
-Nein? Kein Fisch?! Du musst die richtigen Stellen kennen, du Tölpel! Ich habe einen besonderen Platz gefunden... Das Netz ist über Nacht randvoll – Gott ist mein Zeuge!
+Nein? Kein Fisch?! Du musst die richtigen Stellen kennen, du Tölpel! Ich habe einen besonderen Platz gefunden... Das Netz ist über Nacht randvoll - Gott ist mein Zeuge!
 }
 questNPC_232 {
-Stellen... Ich habe auch nach guten Stellen gesucht, überall probiert... Hier gibt es keine Fische und auch keine guten Plätze. Zum Teufel mit dem Angeln – das ist reine Zeitverschwendung!
+Stellen... Ich habe auch nach guten Stellen gesucht, überall probiert... Hier gibt es keine Fische und auch keine guten Plätze. Zum Teufel mit dem Angeln - das ist reine Zeitverschwendung!
 }
 questNPC_233 {
 Lass uns etwas trinken... Dieser... dieser Ort... er ist...
@@ -713,7 +713,7 @@ questNPC_236 {
 Na? Was ist das hier?!
 }
 questNPC_237 {
-…es ist ganz in der Nähe. @<Pchar>
+...es ist ganz in der Nähe. @<Pchar>
 }
 questNPC_238 {
 Unglaublich! .. Aber ich muss jetzt gehen.
@@ -788,7 +788,7 @@ questNPC_261 {
 Hm, erlauben Sie mir, diese bedauerliche Lücke in Ihrem Wissen zu schließen. Also, gestatten Sie, dass ich mich vorstelle! Captain Jacques Nightingale, auch bekannt als...
 }
 questNPC_262 {
-Das ist alles sehr interessant, aber – wo ist Ihr Schiff, Captain?
+Das ist alles sehr interessant, aber - wo ist Ihr Schiff, Captain?
 }
 questNPC_263 {
 Ähm... Er ist beim Ankerplatz... Irgendwo...
@@ -803,13 +803,13 @@ questNPC_266 {
 Glaub mir, ich habe vor, in naher Zukunft weit mehr als nur ein Segel zu gewinnen.
 }
 questNPC_267 {
-Sklavengaleeren? Auf keinen Fall.\nSeien wir ehrlich – wir sind doch jetzt Freunde, oder? Wenn zwei Leute gleichzeitig in denselben Laden einbrechen, ohne dass der Besitzer es merkt, dann ist das doch fast so, als würde der Herr selbst ihnen sagen, sie sollen Freunde werden, verstehst du?
+Sklavengaleeren? Auf keinen Fall.\nSeien wir ehrlich - wir sind doch jetzt Freunde, oder? Wenn zwei Leute gleichzeitig in denselben Laden einbrechen, ohne dass der Besitzer es merkt, dann ist das doch fast so, als würde der Herr selbst ihnen sagen, sie sollen Freunde werden, verstehst du?
 }
 questNPC_268 {
 Wahrscheinlich.
 }
 questNPC_269 {
-Nun, ich habe mir schon ein paar Piastre vom Besitzer dieses feinen Ortes „geliehen“…
+Nun, ich habe mir schon ein paar Piastre vom Besitzer dieses feinen Ortes „geliehen“...
 }
 questNPC_270 {
 Genau so etwas könnte ich selbst gut gebrauchen.
@@ -824,7 +824,7 @@ questNPC_273 {
 Weißt du was, such dir lieber ein paar junge Dummköpfe zum Narrenhalten! Für heute reicht es mir.
 }
 questNPC_274 {
-Wunderbar. Eine Bedingung, mon chéri—keine Namen. Deinen kannst du gern nennen, wenn du möchtest... aber meinen... Sag einfach, du hast ihn vergessen. Oder noch besser, sag, ich bin eine schöne junge Dame! Sagen wir... Taylor. Ja, Taylor. Verstanden?
+Wunderbar. Eine Bedingung, mon chéri-keine Namen. Deinen kannst du gern nennen, wenn du möchtest... aber meinen... Sag einfach, du hast ihn vergessen. Oder noch besser, sag, ich bin eine schöne junge Dame! Sagen wir... Taylor. Ja, Taylor. Verstanden?
 }
 questNPC_275 {
 Junges Fräulein?.. Gut, ich lasse mir etwas einfallen.
@@ -836,7 +836,7 @@ questNPC_277 {
 Die Korvette „Floating Briton“ unter dem Kommando von Captain John Miner wartet bereits auf Sie.
 }
 questNPC_278 {
-Nun, was soll ich sagen – ein Knicks und mein tiefster Dank an Sie, oh...
+Nun, was soll ich sagen - ein Knicks und mein tiefster Dank an Sie, oh...
 }
 questNPC_279 {
 Fünfzehnhundert, Jacques.
@@ -869,7 +869,7 @@ questNPC_288 {
 Darf ich den Namen Ihres Freundes erfahren, Mr. Blood?
 }
 questNPC_289 {
-Natürlich. Sein Name ist... ihr... also, ja — tatsächlich, es ist ihr...
+Natürlich. Sein Name ist... ihr... also, ja - tatsächlich, es ist ihr...
 }
 questNPC_290 {
 Natürlich. Sein Name ist Jacques Nightingale, schon mal von ihm gehört?..
@@ -893,16 +893,16 @@ questNPC_296 {
 Nein? Wie soll ich denn einen Passagier an Bord nehmen, wenn ich nicht einmal seinen Namen kenne?!
 }
 questNPC_297 {
-Natürlich kannst du das. Sagen wir es so: Es handelt sich um eine gewisse Miss Taylor... Ja, genau — Miss Taylor, die dir dreitausend in Silber gibt, wenn du aufhörst, Fragen zu stellen.
+Natürlich kannst du das. Sagen wir es so: Es handelt sich um eine gewisse Miss Taylor... Ja, genau - Miss Taylor, die dir dreitausend in Silber gibt, wenn du aufhörst, Fragen zu stellen.
 }
 questNPC_298 {
-In Ordnung, ich nehme ihn… sie mit. Sag meinem zukünftigen Passagier, dass die ‘Floating Briton’ bereit zum Auslaufen ist.
+In Ordnung, ich nehme ihn... sie mit. Sag meinem zukünftigen Passagier, dass die ‘Floating Briton’ bereit zum Auslaufen ist.
 }
 questNPC_299 {
 Danke.
 }
 questNPC_300 {
-Das hättest du gleich sagen sollen! Abgemacht – ich warte an Bord auf Miss Taylor.
+Das hättest du gleich sagen sollen! Abgemacht - ich warte an Bord auf Miss Taylor.
 }
 questNPC_301 {
 Ich richte es ihr aus. Alles Gute, Captain.
@@ -914,22 +914,22 @@ questNPC_303 {
 Ich hoffe, du bist bereit, deinem Schöpfer gegenüberzutreten.
 }
 questNPC_304 {
-Du hast mich gerettet? Wer bist du?!
+W-w-wer sind Sie?
 }
 questNPC_305 {
-Ich bin Peter Blood, äh... der örtliche Arzt. Wollen Sie warten, während ich Ihnen meine Papiere zeige? Und was, zum Teufel, geht hier vor?
+Wollen Sie warten, bis ich Ihnen meine Papiere gezeigt habe? Hierzubleiben ist nicht sicher. Folgen Sie mir.
 }
 questNPC_306 {
-Die Spanier... sie... Dieses große Schiff, das heute so ruhig unter falscher Flagge in unsere Bucht einlaufen durfte, stellte sich als spanischer Freibeuter heraus. Ihr Trick mit der Flagge blieb völlig unbemerkt, sodass sie, ohne den geringsten Verdacht zu erregen, direkt in die Bucht segelten und aus nächster Nähe eine Breitseite mit zwanzig Kanonen auf das Fort abfeuerten...
+Die Spanier... Sie... Dieses große Schiff... Es ist ganz ruhig unter falscher Flagge in unsere Bucht eingelaufen... Und dann... es... sie... diese Spanier... (weint) Sie kamen direkt bis ans Fort heran und feuerten aus allen Kanonen...
 }
 questNPC_307 {
-Und jetzt, wenn ich das richtig verstehe, plündert die Mannschaft dieses Freibeuters die Stadt?
+Und jetzt plündern sie die Stadt?
 }
 questNPC_308 {
-Ja, bei Sonnenuntergang hatte unsere Garnison kapituliert, und zweihundertfünfzig Spanier wurden die Herren von Bridgetown.
+Ja... Diese Bastarde... Sie... sind die Herren von Bridgetown geworden.
 }
 questNPC_309 {
-Das nenne ich eine glückliche Wendung des Schicksals. Aber wie das alles ausgeht, weiß nur der Teufel! Und du – lauf in den Wald und versteck dich, bis die Spanier die Stadt verlassen haben.
+Sie können nicht hierbleiben. Folgen Sie mir - und versuchen Sie, nicht zurückzubleiben.
 }
 questNPC_310 {
 Kapitän Hobart! Laut den Informationen unseres Spions verstecken sich Rebellen auf diesem Anwesen. Ihnen stehen fünf Dragoner zur Verfügung. Durchsuchen Sie das Gebäude und nehmen Sie jeden fest, der sich darin aufhält! Gehen Sie mit diesem Gesindel nicht zimperlich um. Sie handeln im Namen des Königs!
@@ -939,4 +939,20 @@ Ja, Sir!
 }
 questNPC_312 {
 Hast du den Colonel gehört? Die Rebellen verstecken sich dort! Durchsucht alles, stellt das Haus auf den Kopf und nehmt jeden fest, den ihr findet! Los, an die Arbeit!
+}
+
+questNPC_313 {
+G-gehen wir zu Colonel Bishops Plantagen?
+}
+
+questNPC_314 {
+Sie sollten sich besser von der Stadt fernhalten. Sagen Sie mir jetzt, was dort passiert ist.
+}
+
+questNPC_315 {
+Dieser verdammte Gouverneur... Ich hoffe, er bekommt heute, was er verdient. Wegen ihm sitzen wir noch immer hier fest.
+}
+
+questNPC_316 {
+Falls es Sie tröstet: Die Gicht wird ihn das Leben nicht genießen lassen, ganz gleich, wie viel davon ihm noch bleibt.
 }

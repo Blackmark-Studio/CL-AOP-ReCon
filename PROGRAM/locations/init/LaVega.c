@@ -127,13 +127,13 @@ int LocationInitLaVega(int n)
 	locations[n].reload.l22.label = "House";
 
 	locations[n].reload.l23.name = "houseSp4";
-	locations[n].reload.l23.go = "LaVega_CommonRoom_MH9_2";
+	locations[n].reload.l23.go = "LaVega_houseSp4";
 	locations[n].reload.l23.emerge = "reload1";
 	locations[n].reload.l23.autoreload = "0";
 	locations[n].reload.l23.label = "House";
 
 	locations[n].reload.l24.name = "houseSp5";
-	locations[n].reload.l24.go = "LaVega_CommonRoom_MH9_2";
+	locations[n].reload.l24.go = "LaVega_houseSp4";
 	locations[n].reload.l24.emerge = "reload1";
 	locations[n].reload.l24.autoreload = "0";
 	locations[n].reload.l24.label = "House";
@@ -147,7 +147,7 @@ int LocationInitLaVega(int n)
 	locations[n].reload.l11.label = "House";*/
 
 	locations[n].reload.l12.name = "houseSp3"; // вход в дом Эммы
-	locations[n].reload.l12.go = "LaVega_roof";
+	locations[n].reload.l12.go = "LaVega_houseSp3";
 	locations[n].reload.l12.emerge = "reload1";
 	locations[n].reload.l12.autoreload = "0";
 	locations[n].reload.l12.label = "House";
@@ -375,7 +375,7 @@ int LocationInitLaVega(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	// Дом Ремедиос
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	locations[n].id = "LaVega_roof";
+	locations[n].id = "LaVega_houseSp3";
 	locations[n].filespath.models = "locations\inside\FlamHouse";
 	locations[n].id.label = "House";
 	locations[n].image = "loading\inside\flamhouse.tga";
@@ -413,13 +413,13 @@ int LocationInitLaVega(int n)
 	locations[n].reload.l1.label = "Street";
 
 	locations[n].reload.l2.name = "reload3";
-	locations[n].reload.l2.go = "LaVega_MH12";
+	locations[n].reload.l2.go = "LaVega_houseSp3_room1";
 	locations[n].reload.l2.emerge = "reload3";
 	locations[n].reload.l2.autoreload = "0";
 	locations[n].reload.l2.label = "Room";
 
 	locations[n].reload.l3.name = "reload4";
-	locations[n].reload.l3.go = "LaVega_JinoRoom";
+	locations[n].reload.l3.go = "LaVega_houseSp3_room2";
 	locations[n].reload.l3.emerge = "reload1";
 	locations[n].reload.l3.autoreload = "0";
 	locations[n].reload.l3.label = "Room";
@@ -428,7 +428,7 @@ int LocationInitLaVega(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	// Дом из трёх комнат (комната 3)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	locations[n].id = "LaVega_MH12";
+	locations[n].id = "LaVega_houseSp3_room1";
 	locations[n].id.label = "House";
 	locations[n].image = "loading\inside\flamhouse.tga";
 	//Town sack
@@ -462,7 +462,7 @@ int LocationInitLaVega(int n)
 	//Reload map
 
 	locations[n].reload.l3.name = "reload3";
-	locations[n].reload.l3.go = "LaVega_roof";
+	locations[n].reload.l3.go = "LaVega_houseSp3";
 	locations[n].reload.l3.emerge = "reload3";
 	locations[n].reload.l3.autoreload = "0";
 	locations[n].reload.l3.label = "Street";
@@ -471,7 +471,7 @@ int LocationInitLaVega(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	// Комната из ККС
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	locations[n].id = "LaVega_JinoRoom";
+	locations[n].id = "LaVega_houseSp3_room2";
 	locations[n].id.label = "House";
 	locations[n].image = "loading\inside\flamhouse.tga";
 	//Town sack
@@ -505,7 +505,7 @@ int LocationInitLaVega(int n)
 	
 	//Reload map
 	locations[n].reload.l1.name = "reload1";
-	locations[n].reload.l1.go = "LaVega_roof";
+	locations[n].reload.l1.go = "LaVega_houseSp3";
 	locations[n].reload.l1.emerge = "reload4";
 	locations[n].reload.l1.autoreload = "0";
 	locations[n].reload.l1.label = "Street";
@@ -514,7 +514,7 @@ int LocationInitLaVega(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	// Средний дом 8 (9 с заменённой стенкой)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	locations[n].id = "LaVega_CommonRoom_MH9_2";
+	locations[n].id = "LaVega_houseSp4";
 	locations[n].id.label = "House";
 	locations[n].image = "loading\inside\mediumhouse08.tga";
 	locations[n].MustSetReloadBack = true;

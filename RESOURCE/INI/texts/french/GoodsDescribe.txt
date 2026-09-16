@@ -122,7 +122,7 @@ Sandal_descr {Une essence précieuse, lourde, jaune et à grain fin, qui, contra
 Leather {Cuir}
 Leather_descr
 {
-Les peaux séchées et traitées de bétail sont une marchandise universelle, toujours recherchée en Europe. C’est ainsi que les premiers boucaniers gagnaient leur vie, en vendant les peaux et la viande du bétail sauvage d’Hispaniola.
+Les peaux séchées et traitées de bétail sont une marchandise universelle, toujours recherchée en Europe.
 Peu de marchands chargeraient leurs navires uniquement de cuir, mais c’est un excellent complément pour remplir la cale, car il est très résistant et supporte toutes les conditions de transport.
 }
 Oil {Huile}
@@ -163,8 +163,6 @@ Silver_descr
 Lingots d’argent massif, estampillés par le Trésor d’Espagne.
 Un butin convoité, car l’argent possède une valeur appréciable, étant le second choix du trésor espagnol pour stocker et transporter la richesse. La majeure partie provient d’un lieu appelé « la Montagne d’Argent », près de Potosi.
 }
-Pinctada {Huîtres perlières}
-Pinctada_descr {La prise la plus prisée des pêcheurs de perles : les mollusques caribéens (Pinctada longisquamosa) récoltés sur les hauts-fonds. Leurs coquilles irisées peuvent dissimuler des trésors... ou de vains espoirs. Seuls les plus habiles savent les ouvrir sans abîmer la couche de nacre...}
 Brick {Briques}
 Brick_descr
 {
@@ -176,6 +174,25 @@ Medicament_descr
 {
 Un ensemble de médicaments et d’instruments destiné à traiter les maladies courantes et à prodiguer les premiers soins aux blessés. Boîtes, poudres, bandages, fioles, cataplasmes — tout ce qui peut sauver une vie.
 Avoir des médicaments à bord permet de soigner les blessés, de réduire les pertes lors des abordages et de guérir les malades en mer.
+}
+Pinctada {Huîtres perlières}
+Pinctada_descr {La prise la plus prisée des pêcheurs de perles : les mollusques caribéens (Pinctada longisquamosa) récoltés sur les hauts-fonds. Leurs coquilles irisées peuvent dissimuler des trésors... ou de vains espoirs. Seuls les plus habiles savent les ouvrir sans abîmer la couche de nacre...}
+Salt {Sel}
+Salt_descr
+{
+Un produit indispensable à l'époque des longues expéditions maritimes. Extrait des lacs salés ou des mines de l'archipel, le sel est utilisé pour conserver les provisions, les empêchant de pourrir sous le climat tropical humide. Pour de nombreux colons, cet « or blanc » constitue une source de revenus stable, car aucun capitaine sensé ne risquerait de prendre le large sans de solides réserves de viande salée.
+}
+Meat {Viande}
+Meat_descr
+{
+Viande séchée et généreusement salée, préparée sur des grilles en bois selon les traditions des chasseurs boucaniers des Caraïbes. Une excellente cargaison commerciale qui peut toujours être vendue à bon prix dans n'importe quelle colonie.
+~
+Attention : cette marchandise est exclusivement destinée à la vente. Pour nourrir l'équipage en mer, il faut acheter des provisions de bord.
+}
+Hide {Peaux}
+Hide_descr
+{
+Peaux non tannées de sangliers et de vaches sauvages qui parcourent en abondance les forêts d'Hispaniola et d'autres îles. Contrairement au cuir déjà traité, cette cargaison est une matière première généreusement payée par les manufactures européennes. La chasse et le commerce de peaux brutes constituent un métier rude et dangereux, par lequel de nombreux boucaniers légendaires ont commencé leur ascension vers la richesse.
 }
 Cannon_3 {Fauconneaux}
 Cannon_3_descr

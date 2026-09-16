@@ -38,6 +38,12 @@ SentJons_TownCave {w lochu Saint John's}
 SentJons_TownCave_box1 {pod deskami w ślepym zaułku}
 SentJons_TownCave_box2 {w ślepym zaułku kopalni}
 SentJons_TownCave_box3 {przy zatorze}
+SentJons_TownCave_box4 {przy zatorze z pochodnią}
+SantoDomingo_TownCave {w lochu Santo Domingo}
+SantoDomingo_TownCave_box1 {pod deskami w ślepym zaułku}
+SantoDomingo_TownCave_box2 {w ślepym zaułku kopalni}
+SantoDomingo_TownCave_box3 {przy zatorze}
+SantoDomingo_TownCave_box4 {przy zatorze z pochodnią}
 Barbados_Cave {w jaskini niedaleko Bridgetown}
 Barbados_Cave_box1 {pod deskami w ślepym zaułku}
 Beliz_Cave {w jaskini po prawej stronie wyjścia z Belize}
@@ -123,7 +129,7 @@ Tortuga_Grot {w jaskini naprzeciwko plaży Fisheye Beach}
 Tortuga_Grot_box1 {skrzynia na brzegu}
 Tortuga_Cave {w lochu Tortugi}
 Tortuga_Cave_box1 {skrzynia za zamkniętymi drzwiami}
-Trinidad_Grot {w jaskini naprzeciwko latarni Trinidad i Tobago}
+Trinidad_Grot {w jaskini naprzeciwko latarni Trinidad}
 Trinidad_Grot_box1 {skrzynia na brzegu}
 FortFrance_Dungeon {w lochu Fort-de-France}
 FortFrance_Dungeon_box1 {skrzynia na wzniesieniu}
@@ -133,3 +139,5 @@ FortFrance_Dungeon_box4 {skrzynia za otwartymi drzwiami na dolnym poziomie}
 FortFrance_Dungeon_box5 {pod drewnianymi skrzyniami}
 Providence_Cavern {w jaskini prowadzącej z Morgan's Head na Old Providence Island}
 Providence_Cavern_box1 {skrzynia za stalagmitami w ślepym zaułku}
+Aruba_Grot           {w jaskini w głębi wyspy, niedaleko karaibskiej wioski}
+Aruba_Grot_box1       {skrzynia nad dużym kamieniem}

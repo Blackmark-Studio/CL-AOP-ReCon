@@ -1,0 +1,39 @@
+Gibraltar_Mayor_1 {
+你找我什么事？ 有话直说。 
+}
+Gibraltar_Mayor_2 {
+我听着呢， 你想问什么？ 
+}
+Gibraltar_Mayor_3 {
+@<RandPhraseSimple>
+}
+Gibraltar_Mayor_4 {
+你今天已经是第二次想问问题了…… 
+}
+Gibraltar_Mayor_5 {
+今天都第三次了， 你又想问问题…… 
+}
+Gibraltar_Mayor_6 {
+这到底什么时候才是个头啊？ ！ 我还得管城市， 一堆事等着我， 你还一直问个不停！ 
+}
+Gibraltar_Mayor_7_m {
+我改主意了…… 
+}
+Gibraltar_Mayor_7_f {
+我改变主意了…… 
+}
+Gibraltar_Mayor_8 {
+现在不是时候， 也不是地方…… 
+}
+Gibraltar_Mayor_9 {
+@<RandPhraseSimple>
+}
+Gibraltar_Mayor_10 {
+没错…… 不过现在不行， 等会儿吧…… 
+}
+Gibraltar_Mayor_11 {
+会的， 会的…… 只是晚点…… 
+}
+Gibraltar_Mayor_12 {
+抱歉， @<GetAddress_FormToNPC>…… 
+}

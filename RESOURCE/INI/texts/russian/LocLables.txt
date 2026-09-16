@@ -18,7 +18,7 @@ Hispaniola2 		{Эспаньола}
 Jamaica				{Ямайка}
 Maracaibo 			{Маракайбо}
 Martinique			{Мартиника}
-Mariegalante		{Мари-Галант}
+MarieGalante		{Мари-Галант}
 SentMartin			{Сан Мартин}
 Nevis				{Невис}
 PuertoRico			{Пуэрто-Рико}
@@ -28,8 +28,11 @@ Panama 				{Панама}
 SantaCatalina 		{Санта-Каталина}
 Terks				{Теркс}
 Tortuga				{Тортуга}
-Trinidad			{Тринидад и Тобаго}
+Tobago				{Тобаго}
+Trinidad			{Тринидад}
 Providence 			{Олд Провиденс}
+Aruba       		{Аруба}
+Gibraltar           {Гибралтар}
 Tenotchitlan 		{оз. Тескоко}
 Mein 				{Мэйн}
 
@@ -62,6 +65,7 @@ Tortuga_town		{Тортуга}
 PortSpein_town		{Порт-оф-Спейн}
 Providencia_town 	{Провиденсия}
 FortOrange_town 	{Форт Оранж}
+Gibraltar_town      {Гибралтар}
 Tenotchitlan_town	{Теночтитлан}
 Estate 				{Имение Оглторпа, Англия}
 DesMoines 			{Дес-Мойнес}
@@ -131,6 +135,9 @@ Shore62				{Истапалапу}
 Shore63				{залив Сан Мигель}
 Shore64				{пляж Мансанильо}
 Shore65				{мыс Моргана}
+Shore66				{бухта Бычий Рог}
+Shore67				{бухта Бока Принс}
+Shore68				{залив Паарден}
 
 Shore_ship1			{бухта разбитого корыта}
 Shore_ship2			{залив Гибели}
@@ -280,6 +287,10 @@ Providencia Town 	{Провиденсия}
 Providencia Fort 	{форт Провиденсии}
 Providencia Port 	{порт Провиденсии}
 
+Gibraltar Town 		{Гибралтар}
+Gibraltar Fort 		{форт Гибралтара}
+Gibraltar Port 		{порт Гибралтара}
+
 Philipsburg 		{Филипсбург}
 Philipsburg Town 	{Филипсбург}
 Philipsburg Fort 	{форт Филипсбурга}
@@ -313,6 +324,7 @@ Prison 				{Тюрьма}
 Incquisitio 		{Инквизиция}
 Malta_Dungeon 		{Мальтийский орден}
 GWIKshort 			{Штаб-квартира ГВИК}
+Admiralty 			{Адмиралтейство}
 House 				{Дом}
 ammo 				{Оружейная}
 Room 				{Комната}
@@ -422,3 +434,7 @@ TempleGreatInside 			{Храм Великой Жизненной Силы}
 TempleRoundInside 			{Храм Белых Богов}
 TempleSecondInside 			{Жертвенный храм}
 TempleUnderwater 			{Подводный лабиринт}
+LeBasque_House				{Дом главы поселения}
+LeBasque_room				{Комната ле Баска}
+Bucaneer_outpost			{Застава буканьеров}
+Arabella_Deck			    {Палуба Синко Льягас}

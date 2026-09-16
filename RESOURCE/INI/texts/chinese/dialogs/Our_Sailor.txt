@@ -1,35 +1,35 @@
 Our_Sailor_1 {
-船长，俺一滴都没喝！说、说真的。嗝……
+船长， 我一滴都没喝！ 说、 说真的。 嗝…… 
 }
 Our_Sailor_2 {
-额外两次打扫厕所，还得插队！
+额外两次打扫厕所， 还得插队！ 
 }
 Our_Sailor_3 {
-看起来不像……
+看起来不像…… 
 }
 Our_Sailor_4 {
-一滴都没浪费，你是这意思吧？
+一滴都没浪费， 你是这意思吧？ 
 }
 Our_Sailor_5 {
 @<LinkRandPhrase>
 }
 Our_Sailor_6 {
-一切安好，船长。
+一切安好， 船长。 
 }
 Our_Sailor_7 {
-白痴！现在正在打仗！！！
+白痴！ 现在正在打仗！ ！ ！ 
 }
 Our_Sailor_8 {
-放松！
+放松！ 
 }
 Our_Sailor_9 {
-在岗，船长。
+在岗， 船长。 
 }
 Our_Sailor_10 {
-你要把它带去哪儿？
+你要把它带去哪儿？ 
 }
 Our_Sailor_11 {
-很高兴见到你，船长！
+很高兴见到你， 船长！ 
 }
 Our_Sailor_12_m {
 我也很高兴见到你
@@ -38,5 +38,5 @@ Our_Sailor_12_f {
 我也很高兴见到你
 }
 Our_Sailor_13 {
-@<link>，@<sTemp>先生
+@<link>， @<sTemp>先生
 }

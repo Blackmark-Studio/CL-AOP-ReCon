@@ -1,0 +1,42 @@
+Gibraltar_Soldier_1 {
+Quelles questions avez-vous pour le soldat?
+}
+Gibraltar_Soldier_2 {
+La vie d’un soldat, c’est toujours la même chose : gardes, exercices… Que puis-je faire pour vous, @<GetAddress_Form>?
+}
+Gibraltar_Soldier_3 {
+@<RandPhraseSimple>
+}
+Gibraltar_Soldier_4 {
+Ce n’est pas convenable de déranger un soldat avec des questions idiotes, @<GetAddress_Form>...
+}
+Gibraltar_Soldier_5 {
+C’est la troisième fois aujourd’hui que tu essaies de poser une question...
+}
+Gibraltar_Soldier_6_m {
+La vie de soldat est déjà assez dure comme ça, et voilà que toi, petit morveux, tu viens m’énerver...
+}
+Gibraltar_Soldier_6_f {
+La vie de soldat est déjà assez difficile comme ça, et maintenant tu viens aussi m’agacer...
+}
+Gibraltar_Soldier_7_m {
+J'ai changé d'avis...
+}
+Gibraltar_Soldier_7_f {
+J’ai changé d’avis...
+}
+Gibraltar_Soldier_8 {
+Je n'ai rien à dire pour l'instant.
+}
+Gibraltar_Soldier_9 {
+@<RandPhraseSimple>
+}
+Gibraltar_Soldier_10 {
+Ce n’est pas convenable...
+}
+Gibraltar_Soldier_11 {
+Oui, la troisième fois sera la bonne, hein...
+}
+Gibraltar_Soldier_12 {
+Désolé...
+}

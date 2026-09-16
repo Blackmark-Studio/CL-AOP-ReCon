@@ -1,525 +1,576 @@
 Common_rumours_1 {
-Captain Sharp刚才来过，我亲眼看见的。不过他现在已经不在镇上了，去哪儿我也不知道。
+夏普船长刚才来过， 我亲眼看见的。 不过他现在已经不在镇上了， 去哪儿我也不知道。 
 }
 Common_rumours_2 {
-Captain Sharp确实来过我们镇上。现在他在哪儿我不清楚，但肯定不在我们这儿。
+夏普船长确实来过我们镇上。 现在他在哪儿我不清楚， 但肯定不在我们这儿。 
 }
 Common_rumours_3 {
-Bartholomew Sharp船长几天前才刚离开城里……
+巴塞洛缪.夏普船长几天前才刚离开城里…… 
 }
 Common_rumours_4 {
-Bartholomew Sharp船长之前来过咱们镇上，照旧闹出点动静……不过现在他已经不在了。听说他去了@<XI_ConvertString>。
+巴塞洛缪.夏普船长之前来过咱们镇上， 照旧闹出点动静…… 不过现在他已经不在了。 听说他去了@<XI_ConvertString>。 
 }
 Common_rumours_5 {
-你知道吗，Captain Sharp最近还在城里呢。Bartholomew这家伙挺爱闹的……不过他离开咱们城市也算是好事。我听说他已经去了@<XI_ConvertString>。
+你知道吗， 夏普船长最近还在城里呢。 巴塞洛缪这家伙挺爱闹的…… 不过他离开咱们城市也算是好事。 我听说他已经去了@<XI_ConvertString>。 
 }
 Common_rumours_6 {
-你知道吗，Captain Sharp前不久还来过我们这儿。可惜这次他没带来新的加勒比笑话，真遗憾……现在他也不在城里，听说他去了@<XI_ConvertString>，也许那边的人运气会好点……
+你知道吗， 夏普船长前不久还来过我们这儿。 可惜这次他没带来新的加勒比笑话， 真遗憾…… 现在他也不在城里， 听说他去了@<XI_ConvertString>， 也许那边的人运气会好点…… 
 }
 Common_rumours_7 {
-你知道吗，Captain Sharp刚刚驾着他的双桅船离开了城里。要是你早来半小时，就能在港口见到他了。
+你知道吗， 夏普船长刚刚驾着他的双桅船离开了城里。 要是你早来半小时， 就能在港口见到他了。 
 }
 Common_rumours_8 {
-Captain Sharp……嗯，那家伙还真是个厉害的船长。你知道吗，他刚离开我们镇。要是你动作快点，或许还能在附近海域追上他。
+夏普船长…… 嗯， 那家伙还真是个厉害的船长。 你知道吗， 他刚离开我们镇。 要是你动作快点， 或许还能在附近海域追上他。 
 }
 Common_rumours_9 {
-Bartholomew Sharp大约一小时前刚从咱们港口出发了。
+巴塞洛缪.夏普大约一小时前刚从咱们港口出发了。 
 }
 Common_rumours_10 {
-几分钟前，Captain Sharp正面撞上了我。他还在这附近的街上晃悠，真奇怪没去青楼……
+几分钟前， 夏普船长正面撞上了我。 他还在这附近的街上晃悠， 真奇怪没去妓院…… 
 }
 Common_rumours_11 {
-刚才我在街上碰到Captain Sharp，聊了几句。这人还挺有意思的，你知道吧……
+刚才我在街上碰到夏普船长， 聊了几句。 这人还挺有意思的， 你知道吧…… 
 }
 Common_rumours_12 {
-Captain Sharp现在正悠闲地在街上溜达呢。咱们都在等着看他这次又要搞什么幺蛾子……
+夏普船长现在正悠闲地在街上溜达呢。 咱们都在等着看他这次又要搞什么幺蛾子…… 
 }
 Common_rumours_13 {
-你知道吗，本地商人@<GetFullName>又把自己的fluyt船‘@<pchar.questTemp.BlueBird.Ship.Name>’送去Old World进货了。那艘fluyt最近刚离港。
+你知道吗， 本地商人@<GetFullName>又把自己的福禄特帆船“@<pchar.questTemp.BlueBird.Ship.Name>”送去旧世界进货了。 那艘福禄特帆船最近刚离港。 
 }
 Common_rumours_14 {
-嗯，咱们本地的商人最近混得不错啊！@<GetFullName>又派自己的船‘@<pchar.questTemp.BlueBird.Ship.Name>’去运货了，这船刚从咱们港口离开。
+嗯， 咱们本地的商人最近混得不错啊！ @<GetFullName>又派自己的船“@<pchar.questTemp.BlueBird.Ship.Name>”去运货了， 这船刚从咱们港口离开。 
 }
 Common_rumours_15 {
-嗯，看来@<GetFullName>是越来越有钱了。昨天他的船还在港口卸货，今天港口就已经送他离开了。那艘叫'@<pchar.questTemp.BlueBird.Ship.Name>'的fluyt又出海去拉货了，就这么快！
+嗯， 看来@<GetFullName>是越来越有钱了。 昨天他的船还在港口卸货， 今天港口就已经送他离开了。 那艘叫'@<pchar.questTemp.BlueBird.Ship.Name>'的福禄特帆船又出海去拉货了， 就这么快！ 
 }
 Common_rumours_16 {
-“@<GetStrSmallRegister>”号“@<sld.Ship.name>”的船长现在就在城里，好像叫@<GetFullName>。他现在应该在港口管理处。
+“@<GetStrSmallRegister>”“@<sld.Ship.name>”的船长现在就在城里， 好像叫@<GetFullName>。 他现在应该在港务局。 
 }
 Common_rumours_17 {
-你知道吗，现在可以在港口长官办公室找到@<GetStrSmallRegister>船长，‘@<sld.Ship.name>’号的。
+你知道吗， 现在可以在港务长办公室找到@<GetStrSmallRegister>船长， “@<sld.Ship.name>”的。 
 }
 Common_rumours_18 {
-要找@<GetStrSmallRegister>“@<sld.Ship.name>”的船长，就直接去找港口主管吧。@<GetFullName>现在就在那儿……
+要找@<GetStrSmallRegister>“@<sld.Ship.name>”的船长， 就直接去找港务长吧。 @<GetFullName>现在就在那儿…… 
 }
 Common_rumours_19 {
-“@<GetStrSmallRegister>”船长的“@<sld.Ship.name>”号现在停在港口。我记得他叫@<GetFullName>。这人挺怪的，老是不下船。
+“@<GetStrSmallRegister>”船长的“@<sld.Ship.name>”现在停在港口。 我记得他叫@<GetFullName>。 这人挺怪的， 老是不下船。 
 }
 Common_rumours_20 {
-你知道吗，现在想见到@<GetStrSmallRegister>“@<sld.Ship.name>”的船长，只能划小船到港口去。他们的船停在外海，船长也不上岸——就喜欢待在船上。他还没腻吗……
+你知道吗， 现在想见到@<GetStrSmallRegister>“@<sld.Ship.name>”的船长， 只能划小船到港口去。 他们的船停在外海， 船长也不上岸——就喜欢待在船上。 他还没腻吗…… 
 }
 Common_rumours_21 {
-要找@<GetStrSmallRegister> '@<sld.Ship.name>'的船长，就去港口吧。好像叫@<GetFullName>……反正他船已经在港里抛锚了，就是不上岸。真是个地道的海上老手，连甲板的摇晃都舍不得离开。
+要找@<GetStrSmallRegister>'@<sld.Ship.name>'的船长， 就去港口吧。 好像叫@<GetFullName>…… 反正他船已经在港里抛锚了， 就是不上岸。 真是个地道的海上老手， 连甲板的摇晃都舍不得离开。 
 }
 Common_rumours_22 {
-“@<GetStrSmallRegister>”号“@<sld.Ship.name>”的船长现在就在城里，好像叫@<GetFullName>。
+“@<GetStrSmallRegister>”“@<sld.Ship.name>”的船长现在就在城里， 好像叫@<GetFullName>。 
 }
 Common_rumours_23 {
-你知道吧，@<GetStrSmallRegister>船长现在就在城里，船名是'@<sld.Ship.name>'。
+你知道吧， @<GetStrSmallRegister>船长现在就在城里， 船名是'@<sld.Ship.name>'。 
 }
 Common_rumours_24 {
-要是你想找@<GetStrSmallRegister> '@<sld.Ship.name>'的船长聊聊，去街上找找他吧。我记得他叫@<GetFullName>……
+要是你想找@<GetStrSmallRegister>'@<sld.Ship.name>'的船长聊聊， 去街上找找他吧。 我记得他叫@<GetFullName>…… 
 }
 Common_rumours_25 {
-“@<GetStrSmallRegister>”号船长@<GetFullName>的“@<sld.Ship.name>”现在停在港口。
+“@<GetStrSmallRegister>”@<GetFullName>船长的“@<sld.Ship.name>”现在停在港口。 
 }
 Common_rumours_26 {
-你知道吗，@<GetStrSmallRegister>船长的“@<sld.Ship.name>”号现在就在咱们港口，他的船正停在外港。
+你知道吗， @<GetStrSmallRegister>船长的“@<sld.Ship.name>”现在就在咱们港口， 他的船正停在外港。 
 }
 Common_rumours_27 {
-要找@<GetStrSmallRegister>“@<sld.Ship.name>”的船长，就去我们港口找他们的船吧。我记得他们叫@<GetFullName>……
+要找@<GetStrSmallRegister>“@<sld.Ship.name>”的船长， 就去我们港口找他们的船吧。 我记得他们叫@<GetFullName>…… 
 }
 Common_rumours_28 {
-船长，听说现在有艘海盗双桅船停在@<XI_ConvertString>。当地人看到海盗上岸，把什么东西搬上了他们的船。
+船长， 听说现在有艘海盗双桅船停在@<XI_ConvertString>。 当地人看到海盗上岸， 把什么东西搬上了他们的船。 
 }
 Common_rumours_29 {
-你能想象吗？有个奴隶一瘸一拐地进了咱们镇，浑身是伤，还生着病。他说自己是趁着那艘名叫“Arrow”的海盗双桅船停靠在@<XI_ConvertString>时逃出来的。老实说，船长，我劝你别去那儿，万一那艘船还没走呢？
+你能想象吗？ 有个奴隶一瘸一拐地进了咱们镇， 浑身是伤， 还生着病。 他说自己是趁着那艘名叫“长箭号”的海盗双桅船停靠在@<XI_ConvertString>时逃出来的。 老实说， 船长， 我劝你别去那儿， 万一那艘船还没走呢？ 
 }
 Common_rumours_30 {
-最近大家都在议论那个叫@<sRumourName>的和尚。他挺喜欢去@<XI_ConvertString>的泉水，说那水是圣水！还说喝了什么病都能一下子好。反正俺喝了也没见俺的麦粒肿好过。\n总之……他上次从那回来，气得不行。说那儿有些家伙，不知道是拿弓还是拿弩的，闹得天翻地覆，把地方都给糟蹋了。他就抄起锤子去赶人。结果都三天了，还没见他回来……
+最近大家都在议论那个叫@<sRumourName>的和尚。 他挺喜欢去@<XI_ConvertString>的泉水， 说那水是圣水！ 还说喝了什么病都能一下子好。 反正我喝了也没见我的麦粒肿好过。 \n总之…… 他上次从那回来， 气得不行。 说那儿有些家伙， 不知道是拿弓还是拿弩的， 闹得天翻地覆， 把地方都给糟蹋了。 他就抄起锤子去赶人。 结果都三天了， 还没见他回来…… 
 }
 Common_rumours_31 {
-有个船长跟我说过，他@<XI_ConvertString>偶然发现了一艘破旧的废弃护卫舰。可他凑近一看，才发现那船根本没被丢弃——甲板上全是游荡的骷髅！这故事够离奇吧？都说在海上喝多了，脑子就坏了。
+有个船长跟我说过， 他@<XI_ConvertString>偶然发现了一艘破旧的废弃护卫舰。 可他凑近一看， 才发现那船根本没被丢弃——甲板上全是游荡的骷髅！ 这故事够离奇吧？ 都说在海上喝多了， 脑子就坏了。 
 }
 Common_rumours_32 {
-这世上什么怪事都有！就说昨天吧，我那酒友给我讲了个有意思的事。他在@<XI_ConvertString>钓鱼时，碰上一艘看起来被遗弃的老护卫舰。可他刚靠近，就听到甲板上传来奇怪的响动，像是有人在走动。突然，一群幽灵水手从黑暗的船舱里冒出来，跟着幻影般的音乐跳起了舞。结果他撒腿就跑……从那以后，他已经连着喝了一个星期了……
+这世上什么怪事都有！ 就说昨天吧， 我那酒友给我讲了个有意思的事。 他在@<XI_ConvertString>钓鱼时， 碰上一艘看起来被遗弃的老护卫舰。 可他刚靠近， 就听到甲板上传来奇怪的响动， 像是有人在走动。 突然， 一群幽灵水手从黑暗的船舱里冒出来， 跟着幻影般的音乐跳起了舞。 结果他撒腿就跑…… 从那以后， 他已经连着喝了一个星期了…… 
 }
 Common_rumours_33 {
-我有个熟人跟我讲了个不可思议的故事。他说@<XI_ConvertString>偶然发现了一艘古老的护卫舰。甲板上全是阵亡水手的骸骨。最离奇的是——那些骷髅还在动，明明早就死了，却还在干活。要是我也有那种毅力就好了，船长！我肯定不会困在这破地方……
+我有个熟人跟我讲了个不可思议的故事。 他说@<XI_ConvertString>偶然发现了一艘古老的护卫舰。 甲板上全是阵亡水手的骸骨。 最离奇的是——那些骷髅还在动， 明明早就死了， 却还在干活。 要是我也有那种毅力就好了， 船长！ 我肯定不会困在这破地方…… 
 }
 Common_rumours_34 {
-你听说了吗，Chad Capper把对他很重要的钥匙弄丢了？现在他整个Town到处找呢……
+你听说了吗， 查德.卡帕把对他很重要的钥匙弄丢了？ 现在他整个城里到处找呢…… 
 }
 Common_rumours_35 {
-你还不知道最大的新闻吧！本地店铺的前老板Pascal Voisier已经跑路了！原来他一直收购本地海盗从商船抢来的货，还专门腾了个仓库放这些东西。可等商人们察觉后，雇了赏金猎人来抓他，他就赶紧把货全卖了，落荒而逃，哈哈哈！那阵子可真乱！我们差点一周都喝不上朗姆酒，最后还是那家伙Benjamin Franklin出面才解决的。\n不过说到底，他这商人当得真不怎么样，连个愿意租前老板仓库的傻瓜都找不到……他还是去搞政治吧，这种滑头就该混那圈子，嘿嘿……
+你还不知道最大的新闻吧！ 本地店铺的前老板帕斯卡.沃塞尔已经跑路了！ 原来他一直收购本地海盗从商船抢来的货， 还专门腾了个仓库放这些东西。 可等商人们察觉后， 雇了赏金猎人来抓他， 他就赶紧把货全卖了， 落荒而逃， 哈哈哈！ 那阵子可真乱！ 我们差点一周都喝不上朗姆酒， 最后还是那家伙本杰明.富兰克林出面才解决的。 \n不过说到底， 他这商人当得真不怎么样， 连个愿意租前老板仓库的傻瓜都找不到…… 他还是去搞政治吧， 这种滑头就该混那圈子， 嘿嘿…… 
 }
 Common_rumours_36 {
-船长@<GetStrSmallRegister>“@<sld.Ship.name>”，也叫@<GetFullName>，又出海了。听说他正前往@<XI_ConvertString>。
+船长@<GetStrSmallRegister>“@<sld.Ship.name>”， 也叫@<GetFullName>， 又出海了。 听说他正前往@<XI_ConvertString>。 
 }
 Common_rumours_37 {
-你认识@<GetStrSmallRegister>‘@<sld.Ship.name>’的船长吗？他已经前往@<XI_ConvertString>了。
+你认识@<GetStrSmallRegister>“@<sld.Ship.name>”的船长吗？ 他已经前往@<XI_ConvertString>了。 
 }
 Common_rumours_38 {
-要找@<GetStrSmallRegister>‘@<sld.Ship.name>’的船长，你得去@<XI_ConvertString>。@<GetFullName>就是去了那儿。
+要找@<GetStrSmallRegister>“@<sld.Ship.name>”的船长， 你得去@<XI_ConvertString>。 @<GetFullName>就是去了那儿。 
 }
 Common_rumours_39 {
-我有个熟人跟我说，他在海上看到一艘海盗双桅船。他当时正驾着一艘lugger，突然那艘船就从地平线冒出来——灵巧、迅速、飞快……他们差点没能逃脱那艘海盗船，幸好一支巡逻战队把它吓跑了。双桅船的船长一看到强敌，立刻调头朝@<XI_ConvertString>方向去了。他们只来得及看清那艘双桅船的名字——“Arrow”。
+我有个熟人跟我说， 他在海上看到一艘海盗双桅船。 他当时正驾着一艘斜桁纵帆船， 突然那艘船就从地平线冒出来——灵巧、 迅速、 飞快…… 他们差点没能逃脱那艘海盗船， 幸好一支巡逻战队把它吓跑了。 双桅船的船长一看到强敌， 立刻调头朝@<XI_ConvertString>方向去了。 他们只来得及看清那艘双桅船的名字——“长箭号”。 
 }
 Common_rumours_40 {
-前天我们这儿还出了个大糗事。本地的海岸巡逻队发现有艘海盗双桅船慢悠悠地路过，想吓唬她一下，结果呢？巡逻船全没了！全被她给沉了……她在我们水域耀武扬威一番，然后就朝@<XI_ConvertString>方向溜了。唉，州长好不容易才刚消气，之前都快气炸了。
+前天我们这儿还出了个大糗事。 本地的海岸巡逻队发现有艘海盗双桅船慢悠悠地路过， 想吓唬她一下， 结果呢？ 巡逻船全没了！ 全被她给沉了…… 她在我们水域耀武扬威一番， 然后就朝@<XI_ConvertString>方向溜了。 唉， 市长好不容易才刚消气， 之前都快气炸了。 
 }
 Common_rumours_41 {
-船长！咱们镇上发生了一件大事！一艘海盗双桅船竟然在城市港口袭击了商船@<generateRandomNameToShip>！@<sRumourName>，那位老练的水手，临危不乱，趁着顺风，成功逃到了堡垒和停泊在海湾的舰队保护下。我们都等着看那海盗船长被吊上绞刑架的好戏。\n可惜事与愿违！那艘双桅船在堡垒和舰队之间穿梭，还是追上了商船，把它击沉，然后若无其事地驶向公海。海军巡逻队试图追击，但最后空手而归。听说那艘双桅船甩掉了他们，朝着@<XI_ConvertString>方向去了。
+船长！ 咱们镇上发生了一件大事！ 一艘海盗双桅船竟然在城市港口袭击了商船@<generateRandomNameToShip>！ @<sRumourName>， 那位老练的水手， 临危不乱， 趁着顺风， 成功逃到了堡垒和停泊在海湾的舰队保护下。 我们都等着看那海盗船长被吊上绞刑架的好戏。 \n可惜事与愿违！ 那艘双桅船在堡垒和舰队之间穿梭， 还是追上了商船， 把它击沉， 然后若无其事地驶向公海。 海军巡逻队试图追击， 但最后空手而归。 听说那艘双桅船甩掉了他们， 朝着@<XI_ConvertString>方向去了。 
 }
 Common_rumours_42 {
-你听说昨天回来的那个船长说了啥吗？他碰上一艘从雾里冲出来的护卫舰，连一炮都没开就直接冲过来想登船。还好他及时往右一躲，正准备用霰弹齐射，结果那船突然就像出现时一样消失了。那船像鸟一样掠过海面，朝着@<XI_ConvertString>飞去了！他说只来得及看到船尾上的名字——“Queen”。天杀的，那船甲板和缆绳上全是活死人。这可真是见鬼了……
+你听说昨天回来的那个船长说了什么吗？ 他碰上一艘从雾里冲出来的护卫舰， 连一炮都没开就直接冲过来想登船。 还好他及时往右一躲， 正准备用葡萄弹齐射， 结果那船突然就像出现时一样消失了。 那船像鸟一样掠过海面， 朝着@<XI_ConvertString>飞去了！ 他说只来得及看到船尾上的名字——“女王号”。 天杀的， 那船甲板和缆绳上全是活死人。 这可真是见鬼了…… 
 }
 Common_rumours_43 {
-听着，这儿有个商船船主讲了个离奇的故事。说是有天夜里起雾，他看见前面有艘船的影子，也没多想，就跟了上去。毕竟结伴而行更安全，对吧？结果天一亮，雾散开，他一看，对面船上全是死水手的空洞眼窝盯着他！他赶紧全速扬帆逃命，可那艘装满尸体的船还是一路朝着@<XI_ConvertString>开去。那商人被吓得把船都卖了，彻底不干海上的活了。他说宁愿天天盯着仓库工人干活，也不想再踏上海洋一步。
+听着， 这儿有个商船船主讲了个离奇的故事。 说是有天夜里起雾， 他看见前面有艘船的影子， 也没多想， 就跟了上去。 毕竟结伴而行更安全， 对吧？ 结果天一亮， 雾散开， 他一看， 对面船上全是死水手的空洞眼窝盯着他！ 他赶紧全速扬帆逃命， 可那艘装满尸体的船还是一路朝着@<XI_ConvertString>开去。 那商人被吓得把船都卖了， 彻底不干海上的活了。 他说宁愿天天盯着仓库工人干活， 也不想再踏上海洋一步。 
 }
 Common_rumours_44 {
-你听说了吗？你绝对想不到@<sRumourName>前几天遇到了什么！他说他在公海上碰到了一艘神秘的护卫舰，船上全是骷髅水手。突然浓雾弥漫，接着就是一场可怕的风暴。结果整船人里就他一个侥幸活了下来，后来被一艘路过的沿海船救了。他还说，风暴来之前，那艘护卫舰正朝着@<XI_ConvertString>的方向去。船长，要是你也打算往那边走，可得小心点！
+你听说了吗？ 你绝对想不到@<sRumourName>前几天遇到了什么！ 他说他在公海上碰到了一艘神秘的护卫舰， 船上全是骷髅水手。 突然浓雾弥漫， 接着就是一场可怕的风暴。 结果整船人里就他一个侥幸活了下来， 后来被一艘路过的沿海船救了。 他还说， 风暴来之前， 那艘护卫舰正朝着@<XI_ConvertString>的方向去。 船长， 要是你也打算往那边走， 可得小心点！ 
 }
 Common_rumours_45 {
-小心点，别惹到Augusto Brams。那家伙可是个该死的巫师……
+小心点， 别惹到奥古斯托.布拉姆斯。 那家伙可是个该死的巫师…… 
 }
 Common_rumours_46 {
-我劝你离Augusto Brams远点，他可不是好惹的……
+我劝你离奥古斯托.布拉姆斯远点， 他可不是好惹的…… 
 }
 Common_rumours_47 {
-你知道吗，Alice Taylor的丈夫被关进牢里了——因为在总督府闹事，被总督亲自下令抓起来。现在可怜的Alice正在求大家帮忙把她丈夫救出来。
+你知道吗， 爱丽丝.泰勒的丈夫被关进牢里了——因为在市长府闹事， 被海军上将亲自下令抓起来。 现在可怜的爱丽丝正在求大家帮忙把她丈夫救出来。 
 }
 Common_rumours_48 {
-Lea Toors刚才还在回忆Leighton Dexter。那家伙就这么神秘消失了……
+莉娅.图尔斯刚才还在回忆莱顿.德克斯特。 那家伙就这么神秘消失了…… 
 }
 Common_rumours_49 {
-你知道吗，Dominique Legros在找一瓶葡萄酒。我是真不明白，这有多难，随便买一瓶不就行了？
+你知道吗， 多米尼克.勒格罗在找一瓶葡萄酒。 我是真不明白， 这有多难， 随便买一瓶不就行了？ 
 }
 Common_rumours_50 {
-听说你把所有“narwhals”都干掉了！真厉害……
+听说你把所有“独角鲸帮”都干掉了！ 真厉害…… 
 }
 Common_rumours_51 {
-多亏了你，"Narwhal"帮已经被铲除了。镇上的人都很感激你。
+多亏了你， "独角鲸帮"已经被铲除了。 镇上的人都很感激你。 
 }
 Common_rumours_52 {
-嗯，你确实挺厉害的，不过对付“narwhals”是不是有点太狠了？
+嗯， 你确实挺厉害的， 不过对付“独角鲸帮”是不是有点太狠了？ 
 }
 Common_rumours_53 {
-让我看看这位把名字写进City编年史的人！“Narwhals”可真把我折腾够呛，跟你说。
+让我看看这位把名字写进城市编年史的人！ “独角鲸帮”可真把我折腾够呛， 跟你说。 
 }
 Common_rumours_54 {
-多亏了你，‘Velasco’现在自由了。
+多亏了你， “维拉斯科号”现在自由了。 
 }
 Common_rumours_55 {
-说实话，我真怀疑‘Narwhal’这个帮派真的和那个民兵还有Labor的死有关系。我真是很怀疑……
+说实话， 我真怀疑“独角鲸帮”这个帮派真的和那个民兵还有拉包尔的死有关系。 我真是很怀疑…… 
 }
 Common_rumours_56 {
-“narwhals”被干掉之后，“caspers”会怎么做，真不好说……
+“独角鲸帮”被干掉之后， “卡斯帕帮”会怎么做， 真不好说…… 
 }
 Common_rumours_57 {
-你还真是个英雄啊。刚到城里，就闹出这么大动静，把Narwhal家族全给灭了！
+你还真是个英雄啊。 刚到城里， 就闹出这么大动静， 把独角鲸帮全给灭了！ 
 }
 Common_rumours_58 {
-“Narwhals”落到这步田地，完全是他们自找的。我完全支持上将消灭他们的决定。所以，干得漂亮。
+“独角鲸帮”落到这步田地， 完全是他们自找的。 我完全支持上将消灭他们的决定。 所以， 干得漂亮。 
 }
 Common_rumours_59 {
-俺真想不通你是怎么摆平那些“narwhals”的，他们可真是厉害的狠角色……
+我真想不通你是怎么摆平那些“独角鲸帮”的， 他们可真是厉害的狠角色…… 
 }
 Common_rumours_60 {
-你听说了吗？Hill Brunner被杀了！
+你听说了吗？ 希尔.布伦纳被杀了！ 
 }
 Common_rumours_61 {
-你听说那可怕的消息了吗？没有？Hill Brunner被杀了！
+你听说那可怕的消息了吗？ 没有？ 希尔.布伦纳被杀了！ 
 }
 Common_rumours_62 {
-Hill Brunner，咱们酒馆的老板，就这么被人发现死在自己地窖里了！
+希尔.布伦纳， 咱们酒馆的老板， 就这么被人发现死在自己地窖里了！ 
 }
 Common_rumours_63 {
-有人杀了酒馆老板Hill Brunner！先是André Labor，现在又轮到Hill Brunner。唉，真是糟糕的消息……
+有人杀了酒馆老板希尔.布伦纳！ 先是安德烈.拉包尔， 现在又轮到希尔.布伦纳。 唉， 真是糟糕的消息…… 
 }
 Common_rumours_64 {
-你听说了吗？Hilla Bryunner被杀了！就在他自己的酒窖里被捅死的！
+你听说了吗？ 希尔.布伦纳被杀了！ 就在他自己的酒窖里被捅死的！ 
 }
 Common_rumours_65 {
-Hill Brunner死了！真是太可惜了——他是个了不起的人。他的离世让这座城市失去了很多，因为他是这里最年长的居民！
+希尔.布伦纳死了！ 真是太可惜了——他是个了不起的人。 他的离世让这座城市失去了很多， 因为他是这里最年长的居民！ 
 }
 Common_rumours_66 {
-你知道吗，Hill Brynner死了！那酒馆以后怎么办……
+你知道吗， 希尔.布伦纳死了！ 那酒馆以后怎么办…… 
 }
 Common_rumours_67 {
-听说你把所有“Caspers”都干掉了！不过……
+听说你把所有“卡斯帕帮”都干掉了！ 不过…… 
 }
 Common_rumours_68 {
-俺可不觉得那些“Casper”的混混有什么可怜的，活该。
+我可不觉得那些“卡斯帕帮”的混混有什么可怜的， 活该。 
 }
 Common_rumours_69 {
-哟，你还真能打！先是“narwhals”，又是“caspers”！厉害啊……
+哟， 你还真能打！ 先是“独角鲸帮”， 又是“卡斯帕帮”！ 厉害啊…… 
 }
 Common_rumours_70 {
-嗯，你刀法不错。"Kaspar"家族已经成为过去了……行啊，干得漂亮！
+嗯， 你刀法不错。 "卡斯帕帮"已经成为过去了…… 行啊， 干得漂亮！ 
 }
 Common_rumours_71 {
-说实话，“Caspers”一直没怎么惹到我。所以他们一下子全完蛋了，我也没什么高兴的。
+说实话， “卡斯帕帮”一直没怎么惹到我。 所以他们一下子全完蛋了， 我也没什么高兴的。 
 }
 Common_rumours_72 {
-听说昨晚有人在“Ceres Smiti”号长笛船上打架了。
+听说昨晚有人在“谷神星铁匠号”福禄特帆船上打架了。 
 }
 Common_rumours_73 {
-Alice Taylor，"Ceres Smithy"号长笛的船主，昨晚在甲板上听到一阵骚动，听起来像是真的打起来了……
+爱丽丝.泰勒， "谷神星铁匠号"福禄特帆船的船主， 昨晚在甲板上听到一阵骚动， 听起来像是真的打起来了…… 
 }
 Common_rumours_74 {
-你听说了吗？可怜的Armo Dulin被杀了！唉，她真是个好姑娘……
+你听说了吗？ 可怜的阿莫尔.杜林被杀了！ 唉， 她真是个好姑娘…… 
 }
 Common_rumours_75 {
-天啊，现在连Armo都死了。也许该找个安全的地方避一避了……
+天啊， 现在连阿莫尔都死了。 也许该找个安全的地方避一避了…… 
 }
 Common_rumours_76 {
-这都死了好几个人了，老子就想问问那位admiral到底在干啥？！现在连可怜的Armo都……
+这都死了好几个人了， 我就想问问那位海军上将到底在干什么？ ！ 现在连可怜的阿莫尔都…… 
 }
 Common_rumours_77 {
-天气又要变坏了，看来又有一场风暴要来了。
+天气又要变坏了， 看来又有一场风暴要来了。 
 }
 Common_rumours_78 {
-嗯，看起来又要来一场暴风雨了。
+嗯， 看起来又要来一场暴风雨了。 
 }
 Common_rumours_79 {
-唉，这些暴风雨真让人烦！看样子又要来了……
+唉， 这些暴风雨真让人烦！ 看样子又要来了…… 
 }
 Common_rumours_80 {
-天变坏了，看样子要起风暴了。
+天变坏了， 看样子要起风暴了。 
 }
 Common_rumours_81 {
-暴风雨要来了，咱们又得在屋里待好几天了。
+暴风雨要来了， 咱们又得在屋里待好几天了。 
 }
 Common_rumours_82 {
-听说有人抢了店主Erik Yost……
+听说有人抢了店主埃里克.约斯特…… 
 }
 Common_rumours_83 {
-听说了吗？John Sowkins在Panama附近的丛林里失踪了！有人说，干掉他的可不是西班牙人……
+听说了吗？ 理查德.索金斯在巴拿马附近的丛林里失踪了！ 有人说， 干掉他的可不是西班牙人…… 
 }
 Common_rumours_84 {
-现在，John Sawkins死了，他的得力助手John Coxon在@<XI_ConvertString>掌控一切！听说他起步挺猛的，咱们看看他最后会怎么样。嘿嘿。
+现在， 理查德.索金斯死了， 他的得力助手约翰.考克森在@<XI_ConvertString>掌控一切！ 听说他起步挺猛的， 咱们看看他最后会怎么样。 嘿嘿。 
 }
 Common_rumours_85 {
-你敢信吗，有个疯子在Providencia一个人干掉了一大堆海盗渣滓！
+你敢信吗， 有个疯子在普罗维登西亚一个人干掉了一大堆海盗渣滓！ 
 }
 Common_rumours_86 {
-哎呀，老子要是说谎就让鲨鱼吃了我！真的是你打败了Flying Dutchman？！要是有雷劈我也认了！那场仗肯定够轰动的！快说，外面传的是真的吗——她以前的船长真的和Sea Devil勾结过？还有他那帮船员，全都是被主抛弃的诅咒亡魂和恶魔，靠吸受害者的血活着？
+哎呀， 我要是说谎就让鲨鱼吃了我！ 真的是你打败了飞翔的荷兰人？ ！ 要是有雷劈我也认了！ 那场仗肯定够轰动的！ 快说， 外面传的是真的吗——她以前的船长真的和海之恶魔勾结过？ 还有他那帮船员， 全都是被主抛弃的诅咒亡魂和恶魔， 靠吸受害者的血活着？ 
 }
 Common_rumours_87 {
-船长，您在这儿可真有名！听说就是您让Van Der Decken和他那帮亡魂安息了。谁能想到Flying Dutchman真的不再作祟了！时代变了，没错……这世上又少了一个传奇，呵呵。来，咱们为大海深处依然埋藏的秘密干一杯……
+船长， 您在这儿可真有名！ 听说就是您让范.德.戴肯和他那帮亡魂安息了。 谁能想到飞翔的荷兰人真的不再作祟了！ 时代变了， 没错…… 这世上又少了一个传奇， 呵呵。 来， 咱们为大海深处依然埋藏的秘密干一杯…… 
 }
 Common_rumours_88 {
-你听说了吗？那艘“Flying Dutchman”——让人闻风丧胆、神秘莫测的海上恶魔，终于完蛋了！而且你想啊，竟然是被普通人干掉的！据说有个船长破除了诅咒，把那老魔头像抓普通商船一样收拾了……结果嘛，这传说中的Ghost Ship，最后也就这么平平无奇地落幕了。
+你听说了吗？ 那艘“飞翔的荷兰人”——让人闻风丧胆、 神秘莫测的海上恶魔， 终于完蛋了！ 而且你想啊， 竟然是被普通人干掉的！ 据说有个船长破除了诅咒， 把那老魔头像抓普通商船一样收拾了…… 结果嘛， 这传说中的幽灵船， 最后也就这么平平无奇地落幕了。 
 }
 Common_rumours_89 {
-前阵子灯塔那边刚打过一仗。有个船长想倒卖一大批走私货，结果被巡逻舰队当场逮住。动静闹得不小——全城都炸开了锅，连本地商店的屋顶都被炮弹轰穿了！可最后还是白忙一场。那些本地买家躲进了丛林，船长也趁机从海上溜了。把咱们的舰队耍得团团转！他那一手从海湾脱身的本事，换谁都得服气！
+前阵子灯塔那边刚打过一仗。 有个船长想倒卖一大批走私货， 结果被巡逻舰队当场逮住。 动静闹得不小——全城都炸开了锅， 连本地商店的屋顶都被炮弹轰穿了！ 可最后还是白忙一场。 那些本地买家躲进了丛林， 船长也趁机从海上溜了。 把咱们的舰队耍得团团转！ 他那一手从海湾脱身的本事， 换谁都得服气！ 
 }
 Common_rumours_90 {
-你听说了吗？有人袭击了Cecil Gallard！
+你听说了吗？ 有人袭击了塞西尔.加拉德！ 
 }
 Common_rumours_91 {
-你听说了吗？有个叫@<pchar.GenQuest..name>的家伙带着一帮匪徒袭击了Captain @<GetFullName>。这次他们没能吓倒对方，结果全都死了……
+你听说了吗？ @<GetFullName>船长被一个叫@<pchar.GenQuest..name>的家伙带着一帮匪徒袭击了。 这次他们没能吓倒船长， 而且全都死了…… 
 }
 Common_rumours_92 {
-你知道吧，前阵子城外发生了一场冲突——有个叫@<GetFullName>的船长被土匪袭击，想抢他……啊，对了！正是你把那个叫@<pchar.GenQuest..name>的强盗送上了西天！干得漂亮，我得说……
+你知道吧， 前阵子城外发生了一场冲突——有个叫@<GetFullName>的船长被土匪袭击， 想抢他…… 啊， 对了！ 正是你把那个叫@<pchar.GenQuest..name>的强盗送上了西天！ 干得漂亮， 我得说…… 
 }
 Common_rumours_93 {
-你没听说吗？本地那伙由混蛋@<pchar.GenQuest..name>带头的土匪，去袭击了一个叫@<GetFullName>的船长？结果人家不肯交钱，所有嚣张的土匪全都死了，活该！
+你没听说吗？ 本地那伙由混蛋@<pchar.GenQuest..name>带头的土匪， 去袭击了一个叫@<GetFullName>的船长？ 结果人家不肯交钱， 所有嚣张的土匪全都死了， 活该！ 
 }
 Common_rumours_94 {
-你听说了吗？有人在丛林里杀了个可怜的女孩，名字叫@<pchar.GenQuest.EncGirl.name>。要是能抓住那混蛋，把他吊起来就好了！
+你听说了吗？ 有人在丛林里杀了个可怜的女孩， 名字叫@<pchar.GenQuest.EncGirl.name>。 要是能抓住那混蛋， 把他吊起来就好了！ 
 }
 Common_rumours_95 {
-你知道吗，Captain @<GetFullName>，有个可怜的女孩叫@<pchar.GenQuest.EncGirl.name>，她出城办事时被人杀了。真可惜，她人真的很好……
+你知道吗， @<GetFullName>船长， 有个可怜的女孩叫@<pchar.GenQuest.EncGirl.name>， 她出城办事时被人杀了。 真可惜， 她人真的很好…… 
 }
 Common_rumours_96 {
-她叫@<pchar.GenQuest.EncGirl.name>，死在了丛林里。说实话，这也不奇怪——城外实在太危险了……
+她叫@<pchar.GenQuest.EncGirl.name>， 死在了丛林里。 说实话， 这也不奇怪——城外实在太危险了…… 
 }
 Common_rumours_97 {
-你听说了吗？有个船长救下了一个叫@<pchar.GenQuest.EncGirl.name>的姑娘，硬是把她从那些强盗手里抢出来！这事儿真够厉害的。
+你听说了吗？ 有个船长救下了一个叫@<pchar.GenQuest.EncGirl.name>的姑娘， 硬是把她从那些强盗手里抢出来！ 这事儿真够厉害的。 
 }
 Common_rumours_98 {
-你知道吗，Captain @<GetFullName>在丛林里从一帮恶棍手里救下了一个叫@<pchar.GenQuest.EncGirl.name>的姑娘……啊，原来就是你啊！真让人佩服……
+你知道吗， @<GetFullName>船长在丛林里从一帮恶棍手里救下了一个叫@<pchar.GenQuest.EncGirl.name>的姑娘…… 啊， 原来就是你啊！ 真让人佩服…… 
 }
 Common_rumours_99 {
-有个叫@<pchar.GenQuest.EncGirl.name>的姑娘真是命大——前阵子在丛林里被土匪袭击，看样子他们想对她下手。结果啥也没得逞，嘿嘿，这多亏了Captain @<GetMainCharacterNameGen>！
+有个叫@<pchar.GenQuest.EncGirl.name>的姑娘真是命大——前阵子在丛林里被土匪袭击， 看样子他们想对她下手。 结果什么也没得逞， 嘿嘿， 这多亏了@<GetMainCharacterNameGen>船长！ 
 }
 Common_rumours_100 {
-哎呀，Captain @<GetFullName>，谁能想到你竟然会把一个手无寸铁的女人丢给那些强盗。可怜的@<pchar.GenQuest.EncGirl.name>，我都不知道该说什么好了……
+哎呀， @<GetFullName>船长， 谁能想到你竟然会把一个手无寸铁的女人丢给那些强盗。 可怜的@<pchar.GenQuest.EncGirl.name>， 我都不知道该说什么好了…… 
 }
 Common_rumours_101 {
-你知道吗，Captain，我真没想到你会这样。你怎么能把一个手无寸铁的姑娘丢在丛林里？你知道他们对她做了什么吗？可怜的@<pchar.GenQuest.EncGirl.name>，现在没人会娶她了……
+你知道吗， 船长， 我真没想到你会这样。 你怎么能把一个手无寸铁的姑娘丢在丛林里？ 你知道他们对她做了什么吗？ 可怜的@<pchar.GenQuest.EncGirl.name>， 现在没人会娶她了…… 
 }
 Common_rumours_102 {
-你听说了吗？有个船长在丛林里杀了个可怜的女孩，名字叫@<pchar.GenQuest.EncGirl.name>。真该有人把那混蛋抓起来吊死！
+你听说了吗？ 有个船长在丛林里杀了个可怜的女孩， 名字叫@<pchar.GenQuest.EncGirl.name>。 真该有人把那混蛋抓起来吊死！ 
 }
 Common_rumours_103 {
-你知道吗，Captain @<GetFullName>，有个人在@<pchar.GenQuest.EncGirl.name>出城办事的时候把她杀了。真可惜，她人真的很好……
+你知道吗， @<GetFullName>船长， 有个人在@<pchar.GenQuest.EncGirl.name>出城办事的时候把她杀了。 真可惜， 她人真的很好…… 
 }
 Common_rumours_104 {
-她叫@<pchar.GenQuest.EncGirl.name>，死在了丛林里。说实话，这也不奇怪——城外实在太危险了……
+她叫@<pchar.GenQuest.EncGirl.name>， 死在了丛林里。 说实话， 这也不奇怪——城外实在太危险了…… 
 }
 Common_rumours_105 {
-前阵子，城外发现了我们的一名军官和他手下的士兵都死了。到底是谁下的手？又是为了什么呢……
+前阵子， 城外发现了我们的一名军官和他手下的士兵都死了。 到底是谁下的手？ 又是为了什么呢…… 
 }
 Common_rumours_106 {
-我们指挥官一直派巡逻队到城外去，但现在我都不知道接下来会发生什么。最近有士兵在丛林里被发现死了……
+我们指挥官一直派巡逻队到城外去， 但现在我都不知道接下来会发生什么。 最近有士兵在丛林里被发现死了…… 
 }
 Common_rumours_107 {
-该死，城外有人把咱们巡逻的士兵都干掉了……
+该死， 城外有人把咱们巡逻的士兵都干掉了…… 
 }
 Common_rumours_108 {
-听说Captain @<GetFullName>在丛林里碰上了@<NationNameGenitive>的士兵，把他们全都干掉了。呵，那些@<NationNamePeople>当兵真不行……
+听说@<GetFullName>船长在丛林里碰上了@<NationNameGenitive>的士兵， 把他们全都干掉了。 呵， 那些@<NationNamePeople>当兵真不行…… 
 }
 Common_rumours_109 {
-你听说了吗，咱们的巡逻队在城外盘查了Captain @<GetMainCharacterNameGen>……
+你听说了吗， 咱们的巡逻队在城外盘查了@<GetMainCharacterNameGen>船长…… 
 }
 Common_rumours_110 {
-嗯，据我所知，俺们的巡逻队前不久才在城外查过你。至于这办法到底有多管用，俺也说不好……
+嗯， 据我所知， 我们的巡逻队前不久才在城外查过你。 至于这办法到底有多管用， 我也说不好…… 
 }
 Common_rumours_111 {
-我们的指挥官会加强城镇周边的巡逻。不过你应该早就知道了吧——你不是刚在丛林里被查过吗……
+我们的指挥官会加强城镇周边的巡逻。 不过你应该早就知道了吧——你不是刚在丛林里被查过吗…… 
 }
 Common_rumours_112 {
-你知道吧，Governor @<sTemp>让@<GetMainCharacterNameDat>去对付一个叫@<GetFullName>的臭名昭著的恶徒。听说这次任务已经成功了……
+你知道吧， 市长@<sTemp>让@<GetMainCharacterNameDat>去对付一个叫@<GetFullName>的臭名昭著的恶徒。 听说这次任务已经成功了…… 
 }
 Common_rumours_113 {
-总督下令找出并干掉一个叫@<GetFullName>的本地匪徒。看起来雇来的船长已经办到了！
+市长下令找出并干掉一个叫@<GetFullName>的本地匪徒。 看起来雇来的船长已经办到了！ 
 }
 Common_rumours_114 {
-哈，咱们的总督终于决定整顿一下这片丛林了——他让@<GetMainCharacterNameDat>船长去追查并干掉最臭名昭著的匪徒。你知道吗？那家伙，@<GetFullName>，已经死了！
+哈， 咱们的市长终于决定整顿一下这片丛林了——他让@<GetMainCharacterNameDat>船长去追查并干掉最臭名昭著的匪徒。 你知道吗？ 那家伙， @<GetFullName>， 已经死了！ 
 }
 Common_rumours_115 {
-你知道吗，@<sTemp>总督让@<GetMainCharacterNameDat>去城里找敌方间谍。结果这任务还真成了——那间谍被发现死在一栋房子里！
+你知道吗， @<sTemp>市长让@<GetMainCharacterNameDat>去城里找敌方间谍。 结果这任务还真成了——那间谍被发现死在一栋房子里！ 
 }
 Common_rumours_116 {
-我们总督让@<GetMainCharacterNameDat>去城里追查敌方特工。果然没错——那间谍已经被发现并解决了！真是干得漂亮，我得说……
+我们市长让@<GetMainCharacterNameDat>去城里追查敌方特工。 果然没错——那间谍已经被发现并解决了！ 真是干得漂亮， 我得说…… 
 }
 Common_rumours_117 {
-你知道吧，Governor @<sTemp>让@<GetMainCharacterNameDat>去找出并干掉那些走私贩。看样子，这任务已经完成了！
+你知道吧， 市长@<sTemp>让@<GetMainCharacterNameDat>去找出并干掉那些走私贩。 看样子， 这任务已经完成了！ 
 }
 Common_rumours_118 {
-我们总督@<sTemp>让@<GetMainCharacterNameDat>去追查城附近的走私贩。前阵子那些黑市商人的尸体刚被发现……这下商人的价格很快就要涨了……
+我们市长@<sTemp>让@<GetMainCharacterNameDat>去追查城附近的走私贩。 前阵子那些黑市商人的尸体刚被发现…… 这下商人的价格很快就要涨了…… 
 }
 Common_rumours_119 {
-你听说过Captain @<GetMainCharacterNameGen>最近和海盗的战斗吗？听说这次那些海上劫匪又逃掉了……
+你听说过@<GetMainCharacterNameGen>船长最近和海盗的战斗吗？ 听说这次那些海上劫匪又逃掉了…… 
 }
 Common_rumours_120 {
-哎，Captain @<GetFullName>，你怎么让那些海盗跑了啊？要是他们再回来怎么办……
+哎， @<GetFullName>船长， 你怎么让那些海盗跑了啊？ 要是他们再回来怎么办…… 
 }
 Common_rumours_121 {
-船长，你怎么能让那些海盗跑了？！他们没得到应有的下场，真让人不甘心……
+船长， 你怎么能让那些海盗跑了？ ！ 他们没得到应有的下场， 真让人不甘心…… 
 }
 Common_rumours_122 {
-你知道吗，Governor @<GetFullName>让@<GetMainCharacterNameDat>去找出并干掉那个一直在这片海域作乱的海盗。结果，船长真把@<GetStrSmallRegister>给找出来并击沉了！
+你知道吗， 市长@<GetFullName>让@<GetMainCharacterNameDat>去找出并干掉那个一直在这片海域作乱的海盗。 结果， 船长真把@<GetStrSmallRegister>给找出来并击沉了！ 
 }
 Common_rumours_123 {
-你知道吗，州长让某个船长去找出并干掉那个一直抢劫我们商人的海盗。看样子，这位船长还真把@<GetStrSmallRegister>打得落花流水，直接送进了海底！
+你知道吗， 市长让某个船长去找出并干掉那个一直抢劫我们商人的海盗。 看样子， 这位船长还真把@<GetStrSmallRegister>打得落花流水， 直接送进了海底！ 
 }
 Common_rumours_124 {
-哈，咱们的总督终于开始管管@<XI_ConvertString>这片海域的安全了——他让@<GetMainCharacterNameDat>去追查一直骚扰咱们商人的那个海盗。你知道吗？船长还真把@<GetStrSmallRegister>给打败并击沉了！
+哈， 咱们的市长终于开始管管@<XI_ConvertString>这片海域的安全了——他让@<GetMainCharacterNameDat>去追查一直骚扰咱们商人的那个海盗。 你知道吗？ 船长还真把@<GetStrSmallRegister>给打败并击沉了！ 
 }
 Common_rumours_125 {
-你知道吗，Governor @<GetFullName>让Captain @<GetMainCharacterNameDat>去找出并干掉那个在我们眼皮底下抢劫商人的海盗。结果你猜怎么着？他连Captain @<GetMainCharacterNameGen>也抢了！
+你知道吗， 市长@<GetFullName>让@<GetMainCharacterNameDat>船长去找出并干掉那个在我们眼皮底下抢劫商人的海盗。 结果你猜怎么着？ 他连@<GetMainCharacterNameGen>船长也抢了！ 
 }
 Common_rumours_126 {
-船长，您觉得在海盗船上的这趟航行怎么样？还行吧？他们没为难您吧？哈哈哈！
+船长， 您觉得在海盗船上的这趟航行怎么样？ 还行吧？ 他们没为难您吧？ 哈哈哈！ 
 }
 Common_rumours_127 {
-哎哟，船长，听说你最近被揍得不轻啊，嘿嘿……觉得这儿的海盗怎么样？还想再去找他们玩吗？哈哈哈！
+哎哟， 船长， 听说你最近被揍得不轻啊， 嘿嘿…… 觉得这儿的海盗怎么样？ 还想再去找他们玩吗？ 哈哈哈！ 
 }
 Common_rumours_128 {
-听说你救了Cécile Gallard，当时她正被袭击。
+听说你救了塞西尔.加拉德， 当时她正被袭击。 
 }
 Common_rumours_129 {
-Cecile Gallard在自己的家——“Eva”号大帆船上遭到袭击！
+塞西尔.加拉德在自己的家——“夏娃号”盖伦帆船上遭到袭击！ 
 }
 Common_rumours_130 {
-幸好你救了可怜的Cécile！真不知道那位admiral在干什么……
+幸好你救了可怜的塞西尔！ 真不知道那位海军上将在干什么…… 
 }
 Common_rumours_131 {
-哼，要是再这样下去，咱们可得像Cécile Gallard那样，在自己家里对付土匪了。
+哼， 要是再这样下去， 咱们可得像塞西尔.加拉德那样， 在自己家里对付土匪了。 
 }
 Common_rumours_132 {
-你听说了吗？Cécile Gallard在自己家里被杀了！
+你听说了吗？ 塞西尔.加拉德在自己家里被杀了！ 
 }
 Common_rumours_133 {
-听说你没能保护可怜的Cécile Gallard……
+听说你没能保护可怜的塞西尔.加拉德…… 
 }
 Common_rumours_134 {
-唔，又是一桩命案。你知道吗，自从你来到镇上，接二连三就有人被杀。现在连Cecil Gallard也……
+唔， 又是一桩命案。 你知道吗， 自从你来到镇上， 接二连三就有人被杀。 现在连塞西尔.加拉德也…… 
 }
 Common_rumours_135 {
-可惜你没能救下Cecil。她真是个好人……
+可惜你没能救下塞西尔。 她真是个好人…… 
 }
 Common_rumours_136 {
-又一起命案。这次轮到Cecil Gallard死了。她可是Town里年纪最大的人……
+又一起命案。 这次轮到塞西尔.加拉德死了。 她可是沉船之城里年纪最大的人…… 
 }
 Common_rumours_137 {
-你听说了吗，女主人就因为@<pchar.GenQuest.EncGirl.name>这个女仆没能把她在丛林里掉的珍珠捡回来，就把她赶出去了？现在的人真是连点羞耻心都没有……不过他们本来也没什么良心。
+你听说了吗， 女主人就因为@<pchar.GenQuest.EncGirl.name>这个女仆没能把她在丛林里掉的珍珠捡回来， 就把她赶出去了？ 现在的人真是连点羞耻心都没有…… 不过他们本来也没什么良心。 
 }
 Common_rumours_138 {
-你听说了吗？有个妓女想没证件偷偷上船，被抓住送回了妓院。听说她还欠老板娘一大笔钱。
+你听说了吗？ 有个妓女想没证件偷偷上船， 被抓住送回了妓院。 听说她还欠老板娘一大笔钱。 
 }
 Common_rumours_139 {
-听说了吗？咱们港口抓了个没证件的妓女。听说她从青楼跑出来，还顺走了老板娘的钱箱。那种藏污纳垢的地方早该关了。咱们的孩子都看在眼里，他们能学到什么？
+听说了吗？ 咱们港口抓了个没证件的妓女。 听说她从妓院跑出来， 还顺走了老板娘的钱箱。 那种藏污纳垢的地方早该关了。 咱们的孩子都看在眼里， 他们能学到什么？ 
 }
 Common_rumours_140 {
-船长，坐海盗船出海感觉咋样？还行吧？他们没为难你吧？哈哈哈！
+船长， 坐海盗船出海感觉咋样？ 还行吧？ 他们没为难你吧？ 哈哈哈！ 
 }
 Common_rumours_141 {
-哟呵呵，Captain，听说你最近被揍得不轻啊……现在可成穷光蛋了，伙计！哈哈哈！！
+哟呵呵， 船长， 听说你最近被揍得不轻啊…… 现在可成穷光蛋了， 伙计！ 哈哈哈！ ！ 
 }
 Common_rumours_142 {
-你听说了吗，@<GetAddress_Form>？最近巡逻舰@<sShipType>的船长@<pchar.GenQuest.CaptainComission.Name>被抓了。原来他私下还干走私的勾当。想想现在这位总督把殖民地搞成什么样了！本该抓海盗的人，自己却来抢咱们……听说他下周就要被处决了，活该。
+你听说了吗， @<GetAddress_Form>？ 最近巡逻舰@<sShipType>的船长@<pchar.GenQuest.船长Comission.Name>被抓了。 原来他私下还干走私的勾当。 想想现在这位市长把殖民地搞成什么样了！ 本该抓海盗的人， 自己却来抢咱们…… 听说他下周就要被处决了， 活该。 
 }
 Common_rumours_143 {
-听说巡逻的@<sShipType> @<pchar.GenQuest.CaptainComission.Name>船长其实是走私团伙的头目。他已经被抓住，很快就要被绞死了。看来@<GetAddress_Form>，我们的总督，是真的下决心要整顿殖民地的秩序了。
+听说巡逻的@<sShipType>@<pchar.GenQuest.船长Comission.Name>船长其实是走私团伙的头目。 他已经被抓住， 很快就要被绞死了。 看来@<GetAddress_Form>， 我们的市长， 是真的下决心要整顿殖民地的秩序了。 
 }
 Common_rumours_144 {
-你能想象吗！要塞指挥官查出了一个秘密走私团伙，连海军军官都被他们拉下水了。其中一个，@<pchar.GenQuest.CaptainComission.Name>，已经被抓住，很快就要被绞死了。哎，@<GetAddress_Form>，我早就说过，我们的总督迟早会让这个定居点恢复秩序。
+你能想象吗！ 要塞指挥官查出了一个秘密走私团伙， 连海军军官都被他们拉下水了。 其中一个， @<pchar.GenQuest.船长Comission.Name>， 已经被抓住， 很快就要被绞死了。 哎， @<GetAddress_Form>， 我早就说过， 我们的市长迟早会让这个定居点恢复秩序。 
 }
 Common_rumours_145 {
-你听说了吗，巡逻舰@<sShipType>的船长@<pchar.GenQuest.CaptainComission.Name>被抓了？官府发现他私藏了不少从过路船只扣下的货物。看来这次他是逃不过绞刑架了。想想看，他可是巡逻队里数一数二的高手啊。谁能想到会这样……
+你听说了吗， 巡逻舰@<sShipType>的船长@<pchar.GenQuest.船长Comission.Name>被抓了？ 官府发现他私藏了不少从过路船只扣下的货物。 看来这次他是逃不过绞刑架了。 想想看， 他可是巡逻队里数一数二的高手啊。 谁能想到会这样…… 
 }
 Common_rumours_146 {
-你听说了吗，@<GetAddress_Form>？前阵子那个巡逻@<sShipType>的前任船长@<pchar.GenQuest.CaptainComission.Name>被吊死了。听说他抢了个商人。现在这世道，真是没人能信啊……他全船的伙计也跟着一起被处决了，看来是一伙的……
+你听说了吗， @<GetAddress_Form>？ 前阵子那个巡逻@<sShipType>的前任船长@<pchar.GenQuest.船长Comission.Name>被吊死了。 听说他抢了个商人。 现在这世道， 真是没人能信啊…… 他全船的伙计也跟着一起被处决了， 看来是一伙的…… 
 }
 Common_rumours_147 {
-@<GetAddress_Form>，你应该已经知道了吧，那个巡逻@<sShipType>的前任船长@<pchar.GenQuest.CaptainComission.Name>被处决了。听说他把一艘重要的船给沉了，还把货藏了起来。结果没有一个船员肯说藏货的地方，全都被吊死了……
+@<GetAddress_Form>， 你应该已经知道了吧， 那个巡逻@<sShipType>的前任船长@<pchar.GenQuest.船长Comission.Name>被处决了。 听说他把一艘重要的船给沉了， 还把货藏了起来。 结果没有一个船员肯说藏货的地方， 全都被吊死了…… 
 }
 Common_rumours_148 {
-你能想象吗，@<GetAddress_Form>？巡逻舰队里有个船长竟然当了海盗，前阵子他和全船的人都被处决了。听说他们抢劫并击沉了商船。
+你能想象吗， @<GetAddress_Form>？ 巡逻舰队里有个船长竟然当了海盗， 前阵子他和全船的人都被处决了。 听说他们抢劫并击沉了商船。 
 }
 Common_rumours_149 {
-最近，前任船长@<pchar.GenQuest.CaptainComission.Name>和他那艘巡逻@<sShipType>的全体船员被处决了。听说他们把从过路船只没收的大批货物藏了起来。他们可是这片海域最厉害的巡逻队之一。我觉得，@<GetAddress_Form>，他们是被人故意陷害的。毕竟，那些货物一直没找到……
+最近， 前任船长@<pchar.GenQuest.船长Comission.Name>和他那艘巡逻@<sShipType>的全体船员被处决了。 听说他们把从过路船只没收的大批货物藏了起来。 他们可是这片海域最厉害的巡逻队之一。 我觉得， @<GetAddress_Form>， 他们是被人故意陷害的。 毕竟， 那些货物一直没找到…… 
 }
 Common_rumours_150 {
-听说@<NationNameSK>当局设下圈套，把@<GetFullName>船长引了过去。他们派了一艘看起来像“商船”的船，结果货舱里全是全副武装的士兵。可这埋伏还是失败了——那些家伙全都被杀光了！
+听说@<NationNameSK>当局设下圈套， 把@<GetFullName>船长引了过去。 他们派了一艘看起来像“商船”的船， 结果货舱里全是全副武装的士兵。 可这埋伏还是失败了——那些家伙全都被杀光了！ 
 }
 Common_rumours_151 {
-听说Captain @<GetFullName>一直抢劫@<NationNameSK>的商船，惹得当局头疼。于是我们的总督下决心要收拾他，特地装了一艘假商船，里面藏着几十个从欧洲来的精锐士兵，设下埋伏。可那帮滑头海盗，在那位船长带领下，把士兵全都干掉，又一次逃脱了惩罚！
+听说@<GetFullName>船长一直抢劫@<NationNameSK>的商船， 惹得当局头疼。 于是我们的市长下决心要收拾他， 特地装了一艘假商船， 里面藏着几十个从欧洲来的精锐士兵， 设下埋伏。 可那帮滑头海盗， 在那位船长带领下， 把士兵全都干掉， 又一次逃脱了惩罚！ 
 }
 Common_rumours_152 {
-听说@<XI_ConvertString>的店主正在找某种粉末，还愿意出高价买……俺是真想不通，这玩意儿到底有啥用！
+听说@<XI_ConvertString>的店主正在找某种粉末， 还愿意出高价买…… 我是真想不通， 这玩意儿到底有什么用！ 
 }
 Common_rumours_153 {
-听说@<XI_ConvertString>殖民地的放贷人有个赚钱的买卖，专门找不怕冒险的船长……
+听说@<XI_ConvertString>殖民地的放贷人有个赚钱的买卖， 专门找不怕冒险的船长…… 
 }
 Common_rumours_154 {
-你听说过住在咱们镇上的Humphrey Douglas吗？这么优秀的军官，居然落到这步田地！
+你听说过住在咱们镇上的汉弗莱.道格拉斯吗？ 这么优秀的军官， 居然落到这步田地！ 
 }
 Common_rumours_155 {
-听说本地渔民在咱们殖民地附近的海域发现了一支强大的@<NationNameSK>舰队。
+听说本地渔民在咱们殖民地附近的海域发现了一支强大的@<NationNameSK>舰队。 
 }
 Common_rumours_156 {
-听说那支洗劫了咱们城镇的@<NationNameSK>中队还在咱们殖民地附近海域。唉，要是有哪个勇敢的船长敢去挑战他们就好了……
+听说那支洗劫了咱们城镇的@<NationNameSK>中队还在咱们殖民地附近海域。 唉， 要是有哪个勇敢的船长敢去挑战他们就好了…… 
 }
 Common_rumours_157 {
-你还没听说吗？咱们港口里，@<NationNameSK>的船正在和要塞激战。要塞随时可能失守，到时候才是真正的噩梦开始。
+你还没听说吗？ 咱们港口里， @<NationNameSK>的船正在和要塞激战。 要塞随时可能失守， 到时候才是真正的噩梦开始。 
 }
 Common_rumours_158 {
-今天对@<NationNameGenitive>来说可是大喜的日子——咱们成功拿下了像@<GetConvertStr>这样的重要殖民地！@<NationNameSK>的守军全军覆没，堡垒现在归咱们控制，还已经加固好了！
+今天对@<NationNameGenitive>来说可是大喜的日子——咱们成功拿下了像@<GetConvertStr>这样的重要殖民地！ @<NationNameSK>的守军全军覆没， 堡垒现在归咱们控制， 还已经加固好了！ 
 }
 Common_rumours_159 {
-听说@<NationNameSK>的舰队经过长时间围攻，攻下了@<NationNameSK>的殖民地@<GetConvertStr>。现在@<GetConvertStr>已经成了@<NationNameSK>的殖民地！
+听说@<NationNameSK>的舰队经过长时间围攻， 攻下了@<NationNameSK>的殖民地@<GetConvertStr>。 现在@<GetConvertStr>已经成了@<NationNameSK>的殖民地！ 
 }
 Common_rumours_160 {
-听说@<NationNamePeople>卑鄙地袭击了我们在@<GetConvertStr>的殖民地，把城镇都占了！
+听说@<NationNamePeople>卑鄙地袭击了我们在@<GetConvertStr>的殖民地， 把城镇都占了！ 
 }
 Common_rumours_161 {
-你听说了吗？咱们英勇的舰队从@<NationNameGenitive>手里夺下了富饶的@<GetConvertStr>殖民地。
+你听说了吗？ 咱们英勇的舰队从@<NationNameGenitive>手里夺下了富饶的@<GetConvertStr>殖民地。 
 }
 Common_rumours_162 {
-对@<NationNameGenitive>来说，这是个坏消息——我们没能守住自己的殖民地！堡垒被@<NationNameSK>的船只摧毁，城镇也遭到洗劫。之后，敌人离开了殖民地的海域。
+对@<NationNameGenitive>来说， 这是个坏消息——我们没能守住自己的殖民地！ 堡垒被@<NationNameSK>的船只摧毁， 城镇也遭到洗劫。 之后， 敌人离开了殖民地的海域。 
 }
 Common_rumours_163 {
-听说@<NationNameSK>的舰队在长时间围攻后，占领了@<NationNameSK>的@<GetConvertStr>殖民地。等城市被洗劫一空，@<NationNameSK>的舰队就离开了那片海域。
+听说@<NationNameSK>的舰队在长时间围攻后， 占领了@<NationNameSK>的@<GetConvertStr>殖民地。 等城市被洗劫一空， @<NationNameSK>的舰队就离开了那片海域。 
 }
 Common_rumours_164 {
-听说@<NationNamePeople>突然袭击了我们在@<GetConvertStr>的殖民地，还在援军赶到前洗劫了整个城镇！然后他们带着赃物丢脸地逃跑了。
+听说@<NationNamePeople>突然袭击了我们的@<GetConvertStr>殖民地， 还在援军赶到前洗劫了整个城镇！ 然后他们带着赃物丢脸地逃跑了。 
 }
 Common_rumours_165 {
-你听说了吗？最近咱们的舰队短暂围攻了@<NationNameSK>的殖民地@<GetConvertStr>，打垮了守军，还洗劫了那座富裕的城市！不过后来咱们确实把殖民地丢了。但那战利品……
+你听说了吗？ 最近咱们的舰队短暂围攻了@<NationNameSK>的殖民地@<GetConvertStr>， 打垮了守军， 还洗劫了那座富裕的城市！ 不过后来咱们确实把殖民地丢了。 但那战利品…… 
 }
 Common_rumours_166 {
-今天我们庆祝击退@<NationNameSK>侵略者的胜利——我们的殖民地保住了！敌方舰队已被击沉，城市再次安全了。
+今天我们庆祝击退@<NationNameSK>侵略者的胜利——我们的殖民地保住了！ 敌方舰队已被击沉， 城市再次安全了。 
 }
 Common_rumours_167 {
-听说@<NationNameSK>的舰队在进攻@<NationNameSK>殖民地@<GetConvertStr>时被打败了，守军更胜一筹。
+听说@<NationNameSK>的舰队在进攻@<NationNameSK>殖民地@<GetConvertStr>时被打败了， 守军更胜一筹。 
 }
 Common_rumours_168 {
-听说@<NationNamePeople>突然袭击了我们在@<GetConvertStr>的殖民地，不过增援部队及时赶到！所有@<NationNameSK>的船都被击沉了。
+听说@<NationNamePeople>突然袭击了我们的@<GetConvertStr>殖民地， 不过增援部队及时赶到！ 所有@<NationNameSK>的船都被击沉了。 
 }
 Common_rumours_169 {
-听说我们舰队最近在围攻@<NationNameSK>殖民地@<GetConvertStr>时，被要塞给击沉了。也许下次运气会好点吧。
+听说我们舰队最近在围攻@<NationNameSK>殖民地@<GetConvertStr>时， 被要塞给击沉了。 也许下次运气会好点吧。 
 }
 Common_rumours_170 {
-听说@<NationNamePeople>袭击了@<NationNameSK>的殖民地@<GetConvertStr>。守军还在坚守，但如果@<sDays>内没有援军赶到，驻军可能就撑不住了。
+听说@<NationNamePeople>袭击了@<NationNameSK>的殖民地@<GetConvertStr>。 守军还在坚守， 但如果@<sDays>内没有援军赶到， 驻军可能就撑不住了。 
 }
 Common_rumours_171 {
-听说咱们那支无敌舰队已经攻打了@<NationNameSK>的@<GetConvertStr>殖民地。敌人正在拼死抵抗，不过战斗的胜负很可能会在接下来的@<sDays>内见分晓。
+听说咱们那支无敌舰队已经攻打了@<NationNameSK>的@<GetConvertStr>殖民地。 敌人正在拼死抵抗， 不过战斗的胜负很可能会在接下来的@<sDays>内见分晓。 
 }
 Common_rumours_172 {
-听说@<NationNamePeople>袭击了我们在@<GetConvertStr>的殖民地。守军正在英勇抵抗，但他们的补给和药品只够撑不到@<sDays>天。
+听说@<NationNamePeople>袭击了我们在@<GetConvertStr>的殖民地。 守军正在英勇抵抗， 但他们的补给和药品只够撑不到@<sDays>。 
 }
 Common_rumours_173 {
-听说啊，@<GetAddress_Form>，你也被这海上的诅咒缠上了。我说的是那艘幽灵船……没错，就是那艘“Dutchman”，这些年一直在这片海域游荡，谁都拿它没办法。看来真是个永远的诅咒……不过有人说，在西部Main某个偏远村子里，住着个印第安人——好像还是那被诅咒船长的亲戚！人们总爱胡说八道，图个谈资罢了……
+听说啊， @<GetAddress_Form>， 你也被这海上的诅咒缠上了。 我说的是那艘幽灵船…… 没错， 就是那艘“荷兰人”， 这些年一直在这片海域游荡， 谁都拿它没办法。 看来真是个永远的诅咒…… 不过有人说， 在西部大陆某个偏远村子里， 住着个印第安人——好像还是那被诅咒船长的亲戚！ 人们总爱胡说八道， 图个谈资罢了…… 
 }
 Common_rumours_174 {
-哎，船长，你还真倒霉，竟然撞上了水手们口中的“Flying Dutchman”那只恶鬼。这种事啊，真不知道该哭还是该笑——能活着讲出来的人可没几个……不过我听说了个有意思的传闻：在西边的丛林深处，有个人自称知道那只幽灵的秘密，还发誓要一个人解决它所有的恶灵……嘿，说不定是什么巫师，也可能只是个骗子——谁知道呢。
+哎， 船长， 你还真倒霉， 竟然撞上了水手们口中的“飞翔的荷兰人”那只恶鬼。 这种事啊， 真不知道该哭还是该笑——能活着讲出来的人可没几个…… 不过我听说了个有意思的传闻： 在西边的丛林深处， 有个人自称知道那只幽灵的秘密， 还发誓要一个人解决它所有的恶灵…… 嘿， 说不定是什么巫师， 也可能只是个骗子——谁知道呢。 
 }
 Common_rumours_175 {
-你知道吗，我们教区现在急需教堂蜡烛。怎么就没人愿意帮忙呢？哪怕是为了自己灵魂得救……
+你知道吗， 我们教区现在急需教堂蜡烛。 怎么就没人愿意帮忙呢？ 哪怕是为了自己灵魂得救…… 
+}
+Common_rumours_176 {
+你能想象吗，@<pchar.GenQuest.EncGirl.name>终于被抓住了！当然，可惜她不过是个小偷，而不是什么女巫。我们城里已经很久没有上演过值得一看的好戏了，哈！
+}
+CapBloodLine_Rumour_1 {
+我听说巴巴多斯的奴隶发动了叛乱！而且这可不是一场小打小闹！那天，西班牙人袭击布里奇敦并在城里大肆劫掠时，那些奴隶 - 你敢相信吗！ - 竟从他们眼皮底下夺走了一整艘护卫舰！那些恶狗活该。可惜这些逃奴多半会被抓回来，一个不剩地送上绞架。
+}
+CapBloodLine_Rumour_2 {
+你听说了吗？一小群奴隶竟把毕晓普上校本人耍得团团转！真是难以置信！他们先乘船逃离了小岛，后来又把上校骗上自己的船，扒得一丝不挂，再像条癞皮狗似的扔进海里。要是那个老家伙悬下重赏，谁把他们的脑袋装在盘子里送来，谁就能一夜暴富，我一点也不会吃惊。
+}
+CapBloodLine_Rumour_3 {
+怎么，你还没听说吗？西班牙人袭击了巴巴多斯 - 最后却夹着尾巴逃走了！城里确实让他们抢了个遍，可他们自己的船也被人夺走了！有人说是奴隶干的，也有人说是城里的居民动了手脚 - 如今谁还说得清？有一点可以肯定：西班牙人已经很久没受过这样的奇耻大辱了。
+}
+CapBloodLine_Rumour_4 {
+如今整个群岛都在议论西班牙人袭击巴巴多斯的事。一座完整的堡垒，竟然挡不住一艘护卫舰！可一小群奴隶却比任何军队都更狠地教训了那些该死的西班牙老爷：他们连船带所有战利品一起夺走 - 然后消失得无影无踪！
+}
+CapBloodLine_Rumour_5 {
+听说西班牙人洗劫巴巴多斯时，一个名叫彼得·布拉德的奴隶发动了叛乱。他召集了一小群勇士，从袭击者手里夺下一艘巨大的护卫舰，然后像个老练的船长一样驾船驶向大海！真是个了不起的家伙，对吧？等等...你刚才说你叫什么名字？
+}
+CapBloodLine_Rumour_6 {
+巴巴多斯的毕晓普上校已经气疯了 - 那副模样连魔鬼看了都要反胃！先是西班牙人摧毁了他的堡垒，洗劫了他心爱的布里奇敦。接着，他自家种植园里的奴隶 - 赤手空拳，你敢相信吗？ - 勒死了西班牙护卫舰上的守卫，把船夺为己有。最后，他们还把毕晓普本人骗上船，扣作俘虏，再像扔一袋谷壳似的把他扔进海里。事情就是这样，我的朋友。
+}
+CapBloodLine_BarbadosRumour_1 {
+种植园主和士兵们躲在地窖里瑟瑟发抖时，我们的医生彼得·布拉德 - 就是那个治好了半座岛的人 - 却是唯一没有退缩的人！他召集了一小群奴隶，从西班牙人眼皮底下夺走了一艘护卫舰。我可是亲自认识他的 - 那双手简直能起死回生。无论他现在身在何处，愿上帝保佑他。也许逃走反倒是件好事：不然毕晓普迟早会把他活活折磨死，记住我的话。
+}
+CapBloodLine_BarbadosRumour_2 {
+大名鼎鼎的布拉德医生终于露出了真面目！我们把一条毒蛇养在怀里，他一等到机会，就偷了船逃走！逃走也就罢了，他竟然还把毕晓普上校骗上船，再像扔垃圾一样把他扔进海里！上校明明给过他那么多自由...记住我的话：这种人根本不配和诚实的人为伍！
+}
+CapBloodLine_SpanishRumour_1 {
+布拉德那个魔鬼 - 愿他和他的子孙受到诅咒，直到第七代！ - 冷血杀害了«Cinco Llagas»号的船长唐·迭戈·德·埃斯皮诺萨，之后竟还胆敢霸占死者的船！就算有人告诉我他把灵魂卖给了撒旦，我也不会吃惊 - 否则，一个普通囚犯怎么可能把所有人都骗得团团转？
+}
+CapBloodLine_SpanishRumour_2 {
+你听说那个恶棍彼得·布拉德是怎样欺骗唐·米格尔·德·埃斯皮诺萨本人的吗？他编出一堆谎话，让唐·米格尔放松警惕，随后卑鄙地杀死了他的弟弟，还霸占了他的船！这样的恶棍至今还没被吊上绞架，简直是整个西班牙的耻辱！
+}
+CapBloodLine_SpanishRumour_3 {
+圣母玛利亚啊，请保护我们远离那个名叫彼得·布拉德的地狱恶魔！他冷血割断了唐·迭戈的喉咙，甚至差点连他的儿子也不放过！我发誓，只要至圣童贞女让我遇见他一次，我一定亲手把刀子捅进他的肋骨之间。记住我的话！
+}
+CapBloodLine_SpanishRumour_4 {
+你没见过唐·米格尔·德·埃斯皮诺萨吗？没有？听说那个恶棍布拉德把他当成最愚蠢的见习水手一样耍弄一番，随后又逍遥法外地逃走了。唐·米格尔竟在一夜之间白了头。我们原本还以为，他绝不是那么容易受骗的人...
+}
+CapBloodLine_SpanishBloodRumour_1 {
+你听说过那个恶魔般的囚犯吗？他冷血杀害了«Cinco Llagas»号的船长唐·迭戈·德·埃斯皮诺萨，还欺骗了唐·迭戈的兄长。更可恨的是，他甚至霸占了唐·迭戈的«Cinco Llagas»号。愿他受到诅咒，直到第七代！就算有人告诉我他把灵魂卖给了撒旦，我也不会吃惊 - 否则，一个普通的逃奴怎么可能把所有人都耍得团团转？
+}
+CapBloodLine_SpanishBloodRumour_2 {
+听说有个逃奴把唐·米格尔·德·埃斯皮诺萨本人耍得团团转。他编出一堆谎话，让唐·米格尔放松警惕，随后卑鄙地杀死了他的弟弟，还霸占了他的船！这样的恶棍至今还没给自己挣来一条麻绳领带，简直是整个西班牙的耻辱！
+}
+CapBloodLine_SpanishBloodRumour_3 {
+圣母玛利亚啊，请保护我们远离那个地狱恶魔！他割断了唐·迭戈的喉咙，甚至差点连他的儿子也不放过！我发誓，只要让我遇见他一次，我一定亲手把刀子捅进他的肋骨之间。记住我的话！你知道他叫什么名字吗？
+}
+CapBloodLine_SpanishBloodRumour_4 {
+你听说唐·米格尔·德·埃斯皮诺萨的事了吗？据说有个逃奴把他当成最愚蠢的见习水手一样耍弄一番，杀死了他的弟弟，随后又逍遥法外地逃走了。唐·米格尔在那之后竟一夜白头。我们原本还以为，他绝不是那么容易受骗的人...
 }

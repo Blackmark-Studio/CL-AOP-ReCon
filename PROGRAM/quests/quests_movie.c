@@ -2,17 +2,26 @@ int questMovieProcess = 0;
 object questMovieStack;
 object questMovieWideScreen;
 bool questMovieIsLockPlayerCtrl = false;
-string questMovieOldSaveState = true;
+string questMovieOldSaveState = "1";
+
+bool QuestMovieSetup(bool bHide)
+{
+	Log_Clear();
+	bDisableCharacterMenu = bHide;
+	InterfaceStates.Buttons.Save.enable = !bHide;
+	chrDisableReloadToLocation = bHide;
+}
 
 void ResetQuestMovie()
 {
 	questMovieProcess = 0;
 	questMovieIsLockPlayerCtrl = false;
-	questMovieOldSaveState = true;
+	questMovieOldSaveState = "1";
 }
 
 bool StartQuestMovie(bool noReload, bool noSave, bool lockPlayerCtrl)
 {
+	EndBattleLandInterface();
     SetTimeScale(1.0);
     TimeScaleCounter = 0;
     DelPerkFromActiveList("TimeSpeed");
@@ -75,6 +84,7 @@ bool EndQuestMovie()
 void QuestMovieLockPlayer()
 {
 	if(questMovieIsLockPlayerCtrl == true) return;
+	Log_SetActiveAction("Nothing");
 	questMovieIsLockPlayerCtrl = true;
 	SetCharacterTask_Stay(GetMainCharacter());
 	CreateEntity(&questMovieWideScreen, "WideScreen");

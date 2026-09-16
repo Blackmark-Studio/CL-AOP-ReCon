@@ -186,7 +186,7 @@ void ShowInfoWindow()
 
 	sPicture = "-1";
 	sHeader = GetConvertStr(itmRef.name, "ItemsDescribe.txt");
-	sText1  = GetItemDescribe(iGoodIndex);
+	sText1  = GetItemDescribe(iGoodIndex, refCharacter);
 	CreateTooltip("#" + sHeader, sText1, argb(255,255,255,255), sText2, argb(255,255,192,192), sText3, argb(255,192,255,192), "", argb(255,255,255,255), sPicture, sGroup, sGroupPicture, 64, 64);
 }
 

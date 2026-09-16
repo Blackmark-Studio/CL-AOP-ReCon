@@ -18,7 +18,7 @@ Hispaniola2 		{Hispaniola}
 Jamaica				{Jamaica}
 Maracaibo 			{Maracaibo}
 Martinique			{Martinique}
-Mariegalante		{Marie-Galante}
+MarieGalante		{Marie-Galante}
 SentMartin			{Saint-Martin}
 Nevis				{Nevis}
 PuertoRico			{Puerto Rico}
@@ -28,8 +28,11 @@ Panama 				{Panama}
 SantaCatalina 		{Santa Catalina}
 Terks				{Turks}
 Tortuga				{Tortuga}
-Trinidad			{Trinidad and Tobago}
+Tobago				{Tobago}
+Trinidad			{Trinidad}
 Providence 			{Old Providence}
+Gibraltar           {Gibraltar}
+Aruba               {Aruba}
 Tenotchitlan 		{Texcoco}
 Mein 				{Main}
 
@@ -62,6 +65,10 @@ Tortuga_town		{Tortuga}
 PortSpein_town		{Port of Spain}
 Providencia_town 	{Providencia}
 FortOrange_town 	{Fort Orange}
+Gibraltar_town      {Gibraltar}
+Gibraltar Town		{Gibraltar}
+Gibraltar Fort		{Gibraltar Fort}
+Gibraltar Port		{Gibraltar Port}
 Tenotchitlan_town	{Tenochtitlan}
 Estate 				{Oglethorpe's estate, England}
 DesMoines 			{Des Moines}
@@ -131,6 +138,9 @@ Shore62				{Iztapalapa}
 Shore63				{San Miguel Bay}
 Shore64				{Playa Manzanillo}
 Shore65				{Morgan's Head}
+Shore66				{Bull Horn Bay}
+Shore67				{Boca Prins Bay}
+Shore68				{Paarden Bay}
 
 Shore_ship1			{Bay Of A Wrecked Ship}
 Shore_ship2			{Gulf of Doom}
@@ -201,7 +211,7 @@ SantoDomingo Town	{Santo Domingo}
 SantoDomingo Fort	{Fort Santo-Domingo}
 SantoDomingo Port	{Port of Santo-Domingo}
 
-rtPax				{Port-au-Prince}
+PortPax				{Port-au-Prince}
 PortPax Town		{Port-au-Prince}
 PortPax Fort		{Fort of Port-au-Prince}
 PortPax Port		{Port of Port-au-Prince}
@@ -313,6 +323,7 @@ Prison 				{Prison}
 Incquisitio 		{Inquisition}
 Malta_Dungeon 		{Order of Malta}
 GWIKshort 			{Headquarters WIC}
+Admiralty 			{Admiralty}
 House				{House}
 ammo 				{Armory}
 Room 				{Room}
@@ -421,4 +432,8 @@ TempleGreatInside 			{Temple of the Great Life Force}
 TempleRoundInside 			{Temple of the White Gods}
 TempleSecondInside 			{Temple of Sacrifice}
 TempleUnderwater 			{Underwater Labyrinth}
+LeBasque_House              {Settlement Leader's House}
+LeBasque_room               {Le Basque's Room}
+Bucaneer_outpost            {Buccaneer Outpost}
+Arabella_Deck               {Cinco Llagas Deck}
 

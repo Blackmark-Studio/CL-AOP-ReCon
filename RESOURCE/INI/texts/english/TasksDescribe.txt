@@ -8,7 +8,7 @@ Task7 {Assign Carpenter}
 
 Task8 {Sea Combat}
 Task9 {Using cannonballs or Bombs}
-Task10 {Sink the damaged lugger}
+Task10 {Sink the enemy luggers}
 
 Task11 {Disengage}
 Task12 {Get far enough away from the enemy}
@@ -31,3 +31,13 @@ Task24 {New ship}
 Task25 {Go to the tavern}
 Task26 {Hire all available crew}
 Task27 {Exit the tavern}
+
+Task28 {Leave Barbados}
+Task29 {Move 500 yards away from the fort}
+
+Task30 {Close the distance to the “Encarnación” and send a boat to her}
+Task31 {Explore Maracaibo}
+Task32 {Check the store}
+Task33 {Check the prison}
+Task34 {Check the warehouse}
+Task35 {Check the jungle}

@@ -109,7 +109,7 @@ MaximTailor_lastname {Тейлор}
 MaryCelesteCapitan_name {Мэри Селест}
 EmptyShip_name {Корабль пуст}
 EmptyShip_mapEnc {бригантина 'Мэри Селест'}
-WheelFortunaShip_ship {Колeсо Фортуны}
+WheelFortunaShip_ship {Колесо Фортуны}
 Atilla_name {Атилла}
 PDM_PJ_Strajnik_1_name {Джори}
 PDM_PJ_Strajnik_2_name {Алэр}
@@ -541,7 +541,7 @@ AntonioDeBarras_name {Антонио}
 AntonioDeBarras_lastname {де Баррас}
 AntonioDeBarras_ship {Изабелла}
 CaptainGay_name {Капитан}
-CaptainGay_lastname {Гей}
+CaptainGay_lastname {Грей}
 LizSheppard_name {Элизабет}
 LizSheppard_lastname {Шеппард}
 DanielleOff_name {Даниэль}
@@ -618,3 +618,122 @@ PDM_ONW_Inqizitor_name {Инквизитор}
 PDM_CL_Pokupatel_name {Джеймс}
 PDM_CL_Pokupatel_lastname {Баллантре}
 PDM_Octavio_Lambrini_Clone_name {Ламбрини и незнакомец}
+Arabella_name {Арабелла}
+Kent_name {надзиратель}
+Kent_lastname {Кент}
+AralellaAndSlave_name {Арабелла и её слуги}
+Mary_name {Мэри}
+Mary_lastname {Трэйл}
+Governor_Stid{губернатор Стид}
+BishopAndGardner{полковник Бишоп и капитан Гарднер}
+BishopAndArabella{полковник Бишоп и Арабелла}
+CBL_Officers{К команде}
+Diego_name {Диего}
+Miguel_name {Мигель}
+Esteban_name {Эстебан}
+De_Espinosa_lastname {де Эспиноса}
+Encarnacion_ship {Энкарнасьон}
+Remedios_lastname {Ремедиос}
+EPL_PZD_Pilar_name {Пилар}
+EPL_PZD_Pilar_lastname {Тернера}
+EPL_PZD_Herineldo_name {Херинельдо}
+EPL_PZD_Herineldo_lastname {Гарберд}
+EPL_PZD_Palturs_name {Палтурс}
+EPL_PZD_Palturs_lastname {Кейт}
+EPL_PZD_Ruud_name {Рууд}
+EPL_PZD_Ruud_lastname {Брюер}
+EPL_PZD_Andres_name {Андрес}
+EPL_PZD_Andres_lastname {Фосека}
+EPL_PZD_Aletta_name {Алетта}
+EPL_PZD_Gabriel_name {Габриэль}
+EPL_PZD_Gabriel_lastname {де Сегуенса}
+EPL_Rebekka_name {Ребекка}
+EPL_Rebekka_lastname {Ремидос}
+EPL_Aurelio_name {Аурелио}
+EPL_Aurelio_lastname {Серрано}
+EPL_Gasten_name {Гастен}
+EPL_Gasten_lastname {Котес}
+EPL_Sofia_name {София}
+EPL_Sofia_lastname {де ла Пьедад}
+EPL_RedBull_ship {Красный Бык}
+Alonso_de_Torralba_name {Алонсо}
+Alonso_de_Torralba_lastname {де Торральба}
+Esteban_Molina_name {Эстебан}
+Esteban_Molina_lastname {Молина}
+Martin_Kesada_name {Мартин}
+Martin_Kesada_lastname {Кесада}
+Buccaneer_trader_name {Ингеборг}
+Buccaneer_trader_lastname {Дапкунайте}
+Buccaneer_shipyarder_1_name {Шарль}
+Buccaneer_shipyarder_1_lastname {Вобан}
+Esteban_Molina_ship {Ла-Палома}
+Martin_Kesada_ship {Святая Каталина}
+Royal_SantaMarta_Cap_ship {Санта-Роза}
+Royal_SanIldefonso_Cap_ship {Сан-Ильдефонсо}
+Royal_NuestraSenora_Cap_ship {Нуэстра-Сеньора}
+Royal_SanJuan_Cap_ship {Сан-Мигель}
+Margarita_Prize_ship {Маргарита}
+Atauko_name {Атауко}
+Bartolomeo_Huntsman_name {Бартоломео}
+Bertran_Waband_lastname {Варбанд}
+Bertran_Waband_name {Бертран}
+Captain_Hollis_lastname {Холлис}
+Captain_Hollis_name {Командир}
+Daniel_Monbar_lastname {Монбар}
+Daniel_Monbar_name {Даниэль}
+Daniel_Monbar_ship {Золотая Кастилия}
+Daniel_Monbar_ship_Monbarina {Монбарина}
+Diego_de_Vargas_lastname {Варгас}
+Diego_de_Vargas_name {Диего}
+Diego_de_Vargas_ship {Санта-Маргарита}
+Esteban_Ruiz_lastname {Руис}
+Esteban_Ruiz_name {Эстебан}
+Etien_Marso_lastname {Марсо}
+Etien_Marso_name {Этьен}
+Etien_Marso_ship {Чёрная чайка}
+Fransua_Olone_lastname {Олоне}
+Fransua_Olone_name {Франсуа}
+Fransua_Olone_ship_Fleo {Флео}
+Fransua_Olone_ship_Soledad {Соледад}
+Gaspar_Leru_lastname {Леру}
+Gaspar_Leru_name {Гаспар}
+Henry_Tessie_lastname {Тессье}
+Henry_Tessie_name {Анри}
+Ignasio_Vela_lastname {Вела}
+Ignasio_Vela_name {Игнасио}
+Inigo_Cabrera_lastname {де Кабрера}
+Inigo_Cabrera_name {Иньиго}
+Keys_lagoon_Punitive_Cap_1_ship {Сантьяго}
+Keys_lagoon_Punitive_Cap_2_ship {Санта-Каталина}
+Keys_lagoon_Punitive_Cap_3_ship {Нуэстра Сеньора де ла Виктория}
+Keys_lagoon_Punitive_Cap_4_ship {Сан-Мигель}
+Keys_lagoon_Punitive_mapEnc {Карательная эскадра дона Алонсо де Варгаса}
+Luc_Delacroix_lastname {Делакруа}
+Luc_Delacroix_name {Люк}
+Maracaibo_Mayor_lastname {де Сеспедес}
+Maracaibo_Mayor_name {Родриго}
+Mary_Belfler_lastname {Бельфлёр}
+Mary_Belfler_name {Мари}
+Mateo_Serrano_lastname {Серрано}
+Mateo_Serrano_name {Матео}
+Mayak_Bandit_1_lastname {в маске}
+Mayak_Bandit_1_name {Человек}
+Mishel_le_Bask_lastname {ле Баск}
+Mishel_le_Bask_name {Мишель}
+Mishel_le_Bask_ship {Ле Рёнар}
+Old_Loren_lastname {Лорен}
+Old_Loren_name {Рыбак}
+Raul_Giom_lastname {Гийом}
+Raul_Giom_name {Рауль}
+Rimalier_lastname {Рималье}
+Rimalier_name {Николя}
+Royal_SanJacinto_Cap_lastname {де Арагон}
+Royal_SanJacinto_Cap_name {Хуан}
+Royal_SanJacinto_Cap_ship {Сан-Хасинто}
+Royal_matros_name {Матрос}
+Sebastian_Rohas_lastname {Рохас}
+Sebastian_Rohas_name {Себастьян}
+Thomas_Arellano_lastname {де Арельяно}
+Thomas_Arellano_name {Томас}
+Yamai_name {Ямаи}
+Young_Boy_Bask_name {Жако}

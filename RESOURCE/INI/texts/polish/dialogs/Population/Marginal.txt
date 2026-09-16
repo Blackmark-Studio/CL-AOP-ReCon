@@ -207,3 +207,12 @@ bliski krewny szefa zarządu portu
 Marginal_65 {
 u jego krewnego, szefa zarządu portu
 }
+Marginal_66 {
+@<TimeGreeting>, @<pchar>. Bardzo mi miło cię widzieć.
+}
+Marginal_67 {
+@<TimeGreeting>, @<pchar>. Bardzo mi miło cię widzieć.
+}
+Marginal_68 {
+@<TimeGreeting>, @<npchar>. Muszę już iść.
+}

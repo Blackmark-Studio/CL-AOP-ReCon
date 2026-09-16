@@ -1,0 +1,49 @@
+Tip0 {Urocza Isabel jest bardzo zazdrosna.}
+Tip1 {Pamiętaj: dobycie pistoletu jest zawsze szybsze niż przeładowanie muszkietu.}
+Tip2 {Biegłość w broni białej zmniejsza zużycie energii na uderzenia.}
+Tip3 {Przeciążenie i upojenie nakładają kary do umiejętności.}
+Tip4 {Eliksiry przywracają zdrowie powoli — nie liczy się na to, by przetrwać w bloku.}
+Tip5 {Jeśli zostaniesz otoczony, najlepszym sposobem na wyrwanie się jest unik w bok.}
+Tip6 {Przy odpowiednim wyczuciu czasu możesz uniknąć każdego ataku, wykonując uniki w bok. Jest to szczególnie skuteczne przeciwko broni palnej.}
+Tip7 {Muszkieterowie zadają kolosalne obrażenia. Zabijaj ich w pierwszej kolejności.}
+Tip8 {Szybki strzał jest słabszy niż celowany. Taka jest cena za szybkość.}
+Tip9 {Poruszasz się zauważalnie wolniej do tyłu i w bok niż do przodu, ale nie tracisz wroga z oczu.}
+Tip10 {Niektórzy przeciwnicy potrafią zatruć w walce. Zawsze miej przy sobie antidotum.}
+Tip11 {Na żaglach bojowych okręt kręci najszybciej.}
+Tip12 {Kołysanie, zwroty i prędkość statku mocno wpływają na celność ognia artyleryjskiego.}
+Tip13 {Jeśli często chybiasz z dział, skróć dystans.}
+Tip14 {Umiejętności „Działa” i „Celność” wpływają zarówno na strzelanie z perspektywy trzeciej osoby, jak i w trybie celowania.}
+Tip15 {Precyzyjné trafienie łańcuchem w maszt może go powalić. Jeśli żagle są już uszkodzone, szanse są wyższe.}
+Tip16 {Przy dużej przewadze liczebnej wrogi okręt może poddać się już przy próbie abordażu.}
+Tip17 {Podczas ucieczki statki mogą wyrzucać towary za burtę. Podpłyń do nich, aby podnieść ładunek.}
+Tip18 {Działa z czasem się zużywają. Miej w zapasie kilka sztuk artylerii.}
+Tip19 {Różne pociski mają różny zasięgi. Największy mają kule, najmniejszy — kartacze.}
+Tip20 {Kule są uniwersalne. Na żagle i maszty bierz łańcuchy, na załogę kartacze, a w kadłub uderzaj bombami.}
+Tip21 {Czytaj uważnie dialogi — często zawierają unikalne informacje.}
+Tip22 {Jeśli kolonia zostanie pomyślnie oblężona, twoje inwestycje i statki w zarządzie portu przepadną.}
+Tip23 {Wypytuj mieszczan i pijaków o plotki — często wiedzą wiele ciekawych rzeczy.}
+Tip24 {Szukanie skarbów bywa opłacalne. Sprzedawcę map skarbów szukaj w karczmie.}
+Tip25 {Z nagrody za głowę mogą cię wyzwolić dyplomati w pirackich karczmach.}
+Tip26 {Trzymaj broń na pokładzie w zapasie: każdy poległy marynarz zabiera ją ze sobą na tamten świat.}
+Tip27 {Przed wyjściem z portu upewnij się, że rumu, leków i prowiantu starczy na zaplanowaną podróż.}
+Tip28 {Szczury to przekleństwo żeglarza. Możesz się ich pozbyć, zachowując idealną czystość lub za pomocą starożytnej magii.}
+Tip29 {Lochy mogą być bardzo zagmatwane. Jeśli się zgubisz, trzymaj się prawej strony i idź wzdłuż niej.}
+Tip30 {Przedmioty można przechowywać w kabinie statku. Czasami warto pozbyć się ciężkiego złomu.}
+Tip31 {Skarby i skrytki to dobre źródła składników do craftingu.}
+Tip32 {Statki można pozostawić w zarządzie portu.}
+Tip33 {W stoczni możesz wynająć magazyn do bezpiecznego przechowywania towarów i dział okrętowych.}
+Tip34 {Jeśli fort koloni jest dla ciebie za trudny - spróbuj zaatakować miasto od lądu. Garnizon miejski jest zauważalnie słabszy, ale łup będzie mniejszy.}
+Tip35 {Na otwartym morzu można znaleźć pływające beczki. Mogą w nich być cenne rzeczy lub śmieci — to zawsze niespodzianka.}
+Tip36 {Każdy ataki można sparować. Jeśli dobrze opanujesz ten chwyt, wygrasz każdy pojedynek.}
+Tip37 {Czasami prąd morski przynosi niespodziewane prezenty tym, którzy spacerują po urokliwych zatoczkach.}
+Tip38 {Ametysty nie pomagają na upojenie. Serio.}
+Tip39 {W sytuacji awaryjnej na pozycję abordażnika można wyznaczyć prawie każdego oficera.}
+Tip40 {Gubernatorzy i kapitanowie też nie stronią od gier hazardowych, ale nie licz, że będą grać z nieznajomymi.}
+Tip41 {W krytycznej sytuacji możesz wziąć niewolników do załogi. To obniża morale, ale pozwala szybko ją uzupełnić.}
+Tip42 {Jeśli straż przyłapie cię na transakcji z przemytnikami, czasem prościej po prostu dać łapówkę.}
+Tip43 {Crafting przedmiotów zużywa czas gry. Czasami korzystniej jest zająć się rzemiosłem niż bezcelowo spać w karczmie.}
+Tip44 {Naprawa statku w stoczni zużywa czas gry. Weź to pod uwagę, gdy gdzieś się śpieszysz.}
+Tip45 {Docierając do określonego akwenu, szybciej będzie przejść na mapę lokalną i przemieścić się przez „Płyń do”.}
+Tip46 {Jeśli przeciwnicy okażą się zbyt trudni - wycofaj się i wróć później. Większość zadań nie wymaga rozwiązania tu i teraz.}
+Tip47 {W walce abordażnikom można wydawać rozkazy. Spróbuj wydawać im polecenia za pomocą skrótów klawiszowych.}
+Tip48 {Niektóre umiejętności mają różne efekty dla głównego bohatera i oficerów.}

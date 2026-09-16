@@ -2,6 +2,7 @@
 #define CONFIRMMODE_SAVE_DELETE        2
 #define CONFIRMMODE_SAVE_OVERWRITE     3
 #define CONFIRMMODE_LOAD_GAME          4
+#define CONFIRMMODE_BAD_SAVE           5
 
 #define SAVEIMAGE_UPDATE_TIME    50
 
@@ -13,18 +14,32 @@ object emptyscrshot;
 int g_nLablesFileID = -1;
 int g_nInterfaceFileID = -1;
 string currentProfile;
+string sSaveVersion;
 
 int g_nCurrentSaveIndex = 0;
 int g_nFirstSaveIndex = -1;
 int g_nSaveQuantity = 0;
 
 // теперь слоты убраны на строки под современный формат
-#define MAX_SAVE_SLOTS                7 // количество слотов
-#define SLOTS_IN_LINE                1 // количество слотов в строке
-#define LINE_COUNT                    7 // количество строк
+#define MAX_SAVE_SLOTS					7 // количество слотов
+#define SLOTS_IN_LINE					1 // количество слотов в строке
+#define LINE_COUNT						7 // количество строк
 
+// KZ > кэширование физически прочитанных сейвов с диска.
+// Движок прекрасно кэширует сейвы, но прежний код здесь сразу слал MSG_SCRSHOT_RELEASE после каждого чтения, поэтому при любой прокрутке тот же файл читался с диска заново.
+// Теперь каждый сейв (лимит задаётся в SAVE_CACHE_LIMIT) читается с диска ОДИН раз, кэшируется в g_oSaveCache и берётся оттуда при повторных показах на экране. Процедура повторяется при любых физических манипуляциях с сейвами (удаление, смена профиля).
 object g_oSaveList[MAX_SAVE_SLOTS];
 object g_oSaveContainer;
+
+// > Кол-во файлов сейвов для кэширования. При переполнении самая старая запись вытесняется.
+#define SAVE_CACHE_LIMIT 128
+
+// > Сколько файлов сейвов предварительно загружать при открытии интерфейса. Не рекомендуется задавать выше SAVE_CACHE_LIMIT, иначе лишние сразу вытеснятся.
+#define SAVE_CACHE_PREFETCH 35
+
+object g_oSaveCache;			// > собственно, кэш
+int    g_nSaveCacheNum  = 0;	// > сколько записей реально занято
+int    g_nSaveCacheNext = 0;	// > позиция следующей записи
 
 int g_nConfirmMode;
 string g_sConfirmReturnWindow;
@@ -40,6 +55,8 @@ void InitInterface_BB(string iniName, bool isSave, bool isMainMenu)
 	isMainMenuChecker = isMainMenu;
 	bThisSave = isSave;
 	bIsGameProcessNow = true;
+	sSaveVersion = "";
+
 	if (bThisSave) GameInterface.title = "titleSave";
 	else GameInterface.title = "titleLoad";
 
@@ -57,6 +74,7 @@ void InitInterface_BB(string iniName, bool isSave, bool isMainMenu)
 	FillProfileList();
 	FindScrshotClass();
 	InitSaveObjList();
+	ClearSaveCache(); // > сброс кэша при входе в интерфейс
 
 	SetEventHandler("exitCancel", "ProcessCancelExit", 0);
 	SetEventHandler("eventBtnAction", "procBtnAction", 0);
@@ -86,6 +104,7 @@ void InitInterface_BB(string iniName, bool isSave, bool isMainMenu)
 
 void SetCurrentProfile(string sProfileName)
 {
+	ClearSaveCache(); // > сброс кэша - у другого профиля другие файлы (и возможны одноимённые названия)
 	currentProfile = sProfileName;
 	PlayerProfile.name = sProfileName;
 	// fill save list
@@ -106,6 +125,8 @@ void SetCurrentProfile(string sProfileName)
 	g_oSaveContainer.listsize = nSaveNum;
 	g_nSaveQuantity = nSaveNum;
 	g_nFirstSaveIndex = -1;
+	g_nCurrentSaveIndex = 0; // > сброс при смене профиля, иначе оставался индекс прошлого
+	PreloadSaveCache(); // > префетч сейвов в кэш ДО первой отрисовки списка; видимые слоты сразу из кэша
 	FillSaveList((g_nCurrentSaveIndex / MAX_SAVE_SLOTS) * MAX_SAVE_SLOTS);
 	if (!bThisSave) SelectSaveImage(0);
 	SetClickable("SAVESCROLL", g_nSaveQuantity > MAX_SAVE_SLOTS);
@@ -157,7 +178,7 @@ void ProcessCancelExit()
 
 	if (CheckAttribute(&InterfaceStates, "showGameMenuOnExit") && sti(InterfaceStates.showGameMenuOnExit) == true)
 	{
-		// Warship Fix свечени€
+		// Warship Fix свечения
 		if (CheckAttribute(&InterfaceStates, "GlowEffect"))
 		{
 			SetGlowParams(1.0, sti(InterfaceStates.GlowEffect), 2);
@@ -180,8 +201,19 @@ void IDoExit(int exitCode)
 	DeleteAttribute(&PlayerProfile, "old_name");
 
 	GameInterface.SavePath = "SAVE";
-	LanguageCloseFile(g_nLablesFileID);
-	LanguageCloseFile(g_nInterfaceFileID);
+
+	ClearSaveCache(); // > сброс кэша при выходе из интерфейса
+
+	if (g_nLablesFileID != -1)
+	{
+		LanguageCloseFile(g_nLablesFileID);
+		g_nLablesFileID = -1;
+	}
+	if (g_nInterfaceFileID != -1)
+	{
+		LanguageCloseFile(g_nInterfaceFileID);
+		g_nInterfaceFileID = -1;
+	}
 
 	interfaceResultCommand = exitCode;
 	if (CheckAttribute(&InterfaceStates, "InstantExit") && sti(InterfaceStates.InstantExit) == true)
@@ -196,10 +228,6 @@ void IDoExit(int exitCode)
 
 void FindScrshotClass()
 {
-	string layerName;
-	if (bSeaActive && !bAbordageStarted) layerName = SEA_REALIZE;
-	else layerName = "realize";
-
 	if (!GetEntity(&scrshot, "scrshoter"))
 	{
 		makearef(scrshot, emptyscrshot);
@@ -355,9 +383,17 @@ void SaveLoadCurrentIntoSlot()
 			// нет такой ячейки с записью
 			return;
 		}
-		if (!IsActualSaveVersion(&g_oSaveList[g_nCurrentSaveIndex - g_nFirstSaveIndex]))
+		int nSlot = g_nCurrentSaveIndex - g_nFirstSaveIndex;
+		if (nSlot < 0 || nSlot >= MAX_SAVE_SLOTS)
 			return;
-		if (bIsGameProcessNow)
+		// > грузим только полностью прочитанный корректный сейв
+		if (!GetSelectable("SAVEIMG" + (nSlot + 1)))
+			return;
+		if (!IsActualSaveVersion(&g_oSaveList[nSlot]))
+		{
+			DoConfirm(CONFIRMMODE_BAD_SAVE);
+		}
+		else if (bIsGameProcessNow)
 		{
 			// в данный момент уже идет игра?
 			DoConfirm(CONFIRMMODE_LOAD_GAME);
@@ -464,7 +500,7 @@ void DeleteProfile(string profileName)
 {
 	string oldpath = "";
 
-	// Warship 08.07.09 fix - ошибка езка об отсутствии атрибута
+	// Warship 08.07.09 fix - ошибка из-за отсутствия атрибута
 	if (CheckAttribute(&GameInterface, "SavePath"))
 	{
 		oldpath = GameInterface.SavePath;
@@ -545,6 +581,16 @@ void SetSelecting(int nSlot, bool bSelect)
 	SendMessage(&GameInterface, "lslll", MSG_INTERFACE_MSG_TO_NODE, "SAVENOTES", 3, nSlot * 3 + 3, nColor);
 }
 
+// > Есть ли на этой позиции селектора реальный сейв (в режиме записи - слот нового сохранения)
+bool IsRealSaveIndex(int nIndex)
+{
+	if (nIndex < 0) return false;
+	if (bThisSave && nIndex == 0) return true; // > слот нового сохранения всегда доступен
+	int nContainerIdx = nIndex;
+	if (bThisSave) nContainerIdx -= 1;
+	return CheckAttribute(&g_oSaveContainer, "s" + nContainerIdx + ".savename");
+}
+
 bool GetMoveToOtherSave(int nNewSaveIndex, ref rLeft, ref rTop, ref rRight, ref rBottom)
 {
 	if (nNewSaveIndex < 0) return false;
@@ -570,8 +616,8 @@ bool GetMoveToOtherSave(int nNewSaveIndex, ref rLeft, ref rTop, ref rRight, ref 
 		nNewIdx = nNewSaveIndex - g_nFirstSaveIndex;
 	}
 
-	string sNodName = "SAVEIMG" + (nNewIdx + 1);
-	if (nNewIdx > 0 && GetSelectable(sNodName) == false)
+	// > Скорость прокрутки вниз теперь равна скорости прокрутки вверх: двигаемся по факту наличия реального сейва, а не по готовности эскиза
+	if (nNewIdx > 0 && !IsRealSaveIndex(nNewSaveIndex))
 	{
 		nNewIdx = g_nCurrentSaveIndex - g_nFirstSaveIndex;
 		nNewSaveIndex = g_nCurrentSaveIndex;
@@ -592,10 +638,10 @@ bool GetMoveToOtherSave(int nNewSaveIndex, ref rLeft, ref rTop, ref rRight, ref 
 	g_nCurrentSaveIndex = nNewSaveIndex;
 	ReloadSaveInfo();
 
-	int nLeft = 0;
-	int nTop = 0;
-	int nRight = 0;
-	int nBottom = 0;
+	int nLeft = 469;
+	int nTop = 70 + 60 * nNewIdx;
+	int nRight = 575;
+	int nBottom = 126 + 60 * nNewIdx;
 
 	rLeft = nLeft;
 	rTop = nTop;
@@ -609,7 +655,7 @@ void procSaveClick()
 	int i, iComIdx = GetEventData();
 	string sNodName = GetEventData();
 
-	for (i = 0; i <= 17; i++)
+	for (i = 0; i < MAX_SAVE_SLOTS; i++)
 	{
 		if (sNodName == ("SAVEIMG" + (i + 1)))
 		{
@@ -641,14 +687,37 @@ void FillSaveList(int nFirstSaveIndex)
 	nFirstSaveIndex = nFirstSaveIndex / SLOTS_IN_LINE;
 	nFirstSaveIndex = nFirstSaveIndex * SLOTS_IN_LINE;
 
-	bool bNoRebuildSaveList = (g_nFirstSaveIndex >= 0);
+	bool bNoRebuildSaveList = g_nFirstSaveIndex >= 0;
 	int nDelta = nFirstSaveIndex - g_nFirstSaveIndex;
 	g_nFirstSaveIndex = nFirstSaveIndex;
 
-	// установка всех линий в ожидание
-	for (int i = 0; i < LINE_COUNT; i++)
+	int i, d;
+
+	// KZ > кешируем, не шуршим диск, если не нужно
+	if (bNoRebuildSaveList && nDelta != 0 && abs(nDelta) < MAX_SAVE_SLOTS)
 	{
-		FillSaveLine(i, nFirstSaveIndex + (SLOTS_IN_LINE * i));
+		if (nDelta > 0)
+		{
+			// > прокрутка вниз, слоты уезжают вверх, а новые появляются снизу
+			for (i = 0; i < MAX_SAVE_SLOTS - nDelta; i++)
+				MoveSaveInfo(i + nDelta, i);			// > перенос кэша вверх
+			for (i = MAX_SAVE_SLOTS - nDelta; i < MAX_SAVE_SLOTS; i++)
+				FillSaveLine(i, nFirstSaveIndex + i);	// > читаются только новые нижние слоты
+		}
+		else
+		{
+			// > прокрутка вверх, слоты уезжают вниз, а новые появляются сверху
+			d = -nDelta;
+			for (i = MAX_SAVE_SLOTS - 1; i >= d; i--)
+				MoveSaveInfo(i - d, i);					// > перенос кэша вниз
+			for (i = 0; i < d; i++)
+				FillSaveLine(i, nFirstSaveIndex + i);	// > читаются только новые нижние слоты
+		}
+	}
+	else
+	{
+		for (i = 0; i < LINE_COUNT; i++)
+			FillSaveLine(i, nFirstSaveIndex + (SLOTS_IN_LINE * i));
 	}
 
 	ReloadSaveInfo();
@@ -736,6 +805,7 @@ void ShowDataForSave(int nSlot, string picname, int picpointer, string strdata)
 			g_oSaveList[nSlot].playtime = playtime;
 			g_oSaveList[nSlot].curship = curship;
 			g_oSaveList[nSlot].saveVer = saveVer;
+			g_oSaveList[nSlot].hasdata = 1;
 		}
 		else
 		{
@@ -744,6 +814,7 @@ void ShowDataForSave(int nSlot, string picname, int picpointer, string strdata)
 			g_oSaveList[nSlot].faceinfo = "";
 			g_oSaveList[nSlot].playtime = "";
 			g_oSaveList[nSlot].saveVer = "";
+			g_oSaveList[nSlot].hasdata = 1;
 		}
 	}
 	else
@@ -753,6 +824,7 @@ void ShowDataForSave(int nSlot, string picname, int picpointer, string strdata)
 		g_oSaveList[nSlot].faceinfo = "";
 		g_oSaveList[nSlot].playtime = "";
 		g_oSaveList[nSlot].saveVer = "";
+		g_oSaveList[nSlot].hasdata = 0;
 	}
 	if (nSlot == 0)
 		SetSelecting(nSlot, true);
@@ -803,18 +875,181 @@ void MoveSaveInfo(int nSrc, int nDst)
 	SendMessage(&GameInterface, "lslll", MSG_INTERFACE_MSG_TO_NODE, "SAVENOTES", 2, nDst * 3 + 1, nSrc * 3 + 1);
 	SendMessage(&GameInterface, "lslll", MSG_INTERFACE_MSG_TO_NODE, "SAVENOTES", 2, nDst * 3 + 2, nSrc * 3 + 2);
 	SendMessage(&GameInterface, "lslll", MSG_INTERFACE_MSG_TO_NODE, "SAVENOTES", 2, nDst * 3 + 3, nSrc * 3 + 3);
+	SetSelecting(nDst, false);
 	// set src control to empty
 	ShowDataForSave(nSrc, "empty", 0, "");
 }
 
 void LoadInfo(int nInfoIdx, int nSaveIdx, string sSaveName)
 {
+	// > в слоте уже показан ровно этот же сейв и он загружен - ничего не перечитываем
+	if (sti(g_oSaveList[nInfoIdx].saveidx) == nSaveIdx && CheckAttribute(&g_oSaveList[nInfoIdx], "savefile") && g_oSaveList[nInfoIdx].savefile == sSaveName && CheckAttribute(&g_oSaveList[nInfoIdx], "loaded") && g_oSaveList[nInfoIdx].loaded == "1")
+		return;
+
 	ClearSaveInfoByIndex(nInfoIdx);
 	g_oSaveList[nInfoIdx].saveidx = nSaveIdx;
 	g_oSaveList[nInfoIdx].savefile = sSaveName;
+
+	// > этот сейв уже читали раньше, берём его из кэша и не шуршим диском
+	if (TryShowSaveFromCache(nInfoIdx, sSaveName))
+		return;
+
 	g_oSaveList[nInfoIdx].loaded = 0;
 	ShowDataForSave(nInfoIdx, "loading", 0, "");
 }
+
+// KZ > кэш прочитанных сейвов
+// > Ищет сейв в кэше по имени файла, возвращает индекс записи или -1
+int CacheFindSave(string sFile)
+{
+	int k;
+	string sAttr;
+
+	for (k = 0; k < g_nSaveCacheNum; k++)
+	{
+		sAttr = "e" + k;
+
+		if (CheckAttribute(&g_oSaveCache, sAttr + ".file") && g_oSaveCache.(sAttr).file == sFile)
+			return k;
+	}
+
+	return -1;
+}
+
+// > Заносит сейв в кэш (при переполнении вытесняется самая старая запись)
+void CacheStoreSave(string sFile, string sStrData, int nTex, bool bCorrupted)
+{
+	int k = CacheFindSave(sFile);
+	string sAttr;
+
+	// > уже в кэше, просто обновим данные на месте
+	if (k >= 0)
+	{
+		sAttr = "e" + k;
+		g_oSaveCache.(sAttr).strdata   = sStrData;
+		g_oSaveCache.(sAttr).tex       = nTex;
+		g_oSaveCache.(sAttr).corrupted = bCorrupted;
+		return;
+	}
+
+	// > новая запись запишется в текущую позицию
+	k = g_nSaveCacheNext;
+	sAttr = "e" + k;
+
+	// > весь кэш забит, начинаем вытеснять старые записи
+	if (CheckAttribute(&g_oSaveCache, sAttr + ".file"))
+	{
+		if (IsEntity(&scrshot) && sti(g_oSaveCache.(sAttr).corrupted) == 0)
+			SendMessage(scrshot, "ls", MSG_SCRSHOT_RELEASE, g_oSaveCache.(sAttr).file);
+	}
+
+	g_oSaveCache.(sAttr).file      = sFile;
+	g_oSaveCache.(sAttr).strdata   = sStrData;
+	g_oSaveCache.(sAttr).tex       = nTex;
+	g_oSaveCache.(sAttr).corrupted = bCorrupted;
+
+	g_nSaveCacheNext = g_nSaveCacheNext + 1;
+
+	if (g_nSaveCacheNext >= SAVE_CACHE_LIMIT)
+		g_nSaveCacheNext = 0;
+
+	if (g_nSaveCacheNum < SAVE_CACHE_LIMIT)
+		g_nSaveCacheNum++;
+}
+
+// > Показ сейва из кэша БЕЗ обращения к диску (true - показан, false - нет в кэше)
+bool TryShowSaveFromCache(int nSlot, string sFile)
+{
+	int k = CacheFindSave(sFile);
+
+	if (k < 0)
+		return false;
+
+	string sAttr = "e" + k;
+	g_oSaveList[nSlot].loaded = 1;
+
+	if (sti(g_oSaveCache.(sAttr).corrupted) != 0)
+		ShowDataForSave(nSlot, "corrupted", 0, "");
+	else
+		ShowDataForSave(nSlot, "", sti(g_oSaveCache.(sAttr).tex), g_oSaveCache.(sAttr).strdata);
+
+	return true;
+}
+
+// > Убирает из кэша только один сейв по имени файла и освобождает его эскиз
+void CacheRemoveSave(string sFile)
+{
+	int k = CacheFindSave(sFile);
+
+	if (k < 0) return;
+
+	string sAttr = "e" + k;
+
+	// > превьюшку релизим только у нормальных сейвов (у битых её нет)
+	if (IsEntity(&scrshot) && sti(g_oSaveCache.(sAttr).corrupted) == 0)
+		SendMessage(scrshot, "ls", MSG_SCRSHOT_RELEASE, g_oSaveCache.(sAttr).file);
+
+	// > освобождаем запись
+	DeleteAttribute(&g_oSaveCache, sAttr);
+}
+
+// > Полная очистка кэша + освобождение всех удерживаемых текстур эскизов.
+void ClearSaveCache()
+{
+	if (IsEntity(&scrshot))
+	{
+		int k;
+		string sAttr;
+
+		for (k = 0; k < g_nSaveCacheNum; k++)
+		{
+			sAttr = "e" + k;
+
+			// > превьюшку релизим только у нормальных сейвов (у битых её нет)
+			if (CheckAttribute(&g_oSaveCache, sAttr + ".file") && sti(g_oSaveCache.(sAttr).corrupted) == 0)
+				SendMessage(scrshot, "ls", MSG_SCRSHOT_RELEASE, g_oSaveCache.(sAttr).file);
+		}
+	}
+
+	DeleteAttribute(&g_oSaveCache, "");
+	g_nSaveCacheNum  = 0;
+	g_nSaveCacheNext = 0;
+}
+
+// > Префетч: при открытии интерфейса читаем с диска первые SAVE_CACHE_PREFETCH сейвов и кладём их в кэш, чтобы прокрутка списка шла плавно, без постоянных обращений к диску.
+void PreloadSaveCache()
+{
+	if (!IsEntity(&scrshot))
+		return; // > без скриншотера читать нечего
+
+	int iCount = g_nSaveQuantity;
+
+	if (iCount > SAVE_CACHE_PREFETCH)
+		iCount = SAVE_CACHE_PREFETCH;
+
+	int n, pTex;
+	string attr, sFile, strdata;
+	for (n = 0; n < iCount; n++)
+	{
+		attr = "s" + n;
+
+		if (!CheckAttribute(&g_oSaveContainer, attr + ".savename")) continue;
+
+		sFile = g_oSaveContainer.(attr).savename;
+
+		strdata = "";
+		pTex = SendMessage(scrshot, "lsse", MSG_SCRSHOT_READ, "SAVE\\" + currentProfile, sFile, &strdata);
+
+		if (strdata == "")
+		{
+			CacheStoreSave(sFile, "", 0, true);
+			SendMessage(scrshot, "ls", MSG_SCRSHOT_RELEASE, sFile); // > битый, текстуру не держим
+		}
+		else
+			CacheStoreSave(sFile, strdata, pTex, false); // > текстуру НЕ освобождаем, нужна для эскиза
+	}
+}
+// KZ < кэш прочитанных сейвов
 
 void procLoadOneSaveInfo()
 {
@@ -830,6 +1065,7 @@ void procLoadOneSaveInfo()
 			{
 				g_oSaveList[i].loaded = 1;
 				strdata = "";
+				pTex = 0;
 				if (bYesScrShoter)
 				{
 					pTex = SendMessage(scrshot, "lsse", MSG_SCRSHOT_READ, "SAVE\\" + currentProfile, g_oSaveList[i].savefile, &strdata);
@@ -837,14 +1073,19 @@ void procLoadOneSaveInfo()
 				if (strdata == "")
 				{
 					ShowDataForSave(i, "corrupted", 0, "");
+
+					// > запоминаем "битый", чтобы не читать его с диска повторно; его текстуру держать незачем
+					CacheStoreSave(g_oSaveList[i].savefile, "", 0, true);
+
+					if (bYesScrShoter)
+						SendMessage(scrshot, "ls", MSG_SCRSHOT_RELEASE, g_oSaveList[i].savefile);
 				}
 				else
 				{
 					ShowDataForSave(i, "", pTex, strdata);
-				}
-				if (bYesScrShoter)
-				{
-					SendMessage(scrshot, "ls", MSG_SCRSHOT_RELEASE, g_oSaveList[i].savefile);
+
+					// > кладём в кэш; RELEASE НЕ шлём, т.к., текстура эскиза нужна для повторных показов
+					CacheStoreSave(g_oSaveList[i].savefile, strdata, pTex, false);
 				}
 				// только один сейф файл за раз
 				break;
@@ -916,12 +1157,6 @@ bool GetNextSubStr(string inStr, ref outStr, ref lastStr, string separator)
 		return false;
 	}
 	int strSize = strlen(inStr) - 1;
-	if (strSize <= 0)
-	{
-		outStr = "";
-		lastStr = "";
-		return false;
-	}
 	int sympos = findsubstr(inStr, separator, 0);
 	if (sympos == -1)
 	{
@@ -944,56 +1179,36 @@ void ProcessDeleteSaveFile()
 		return;
 	}
 	SendMessage(&GameInterface, "ls", MSG_INTERFACE_DELETE_SAVE_FILE, curSave);
+	CacheRemoveSave(curSave); // > выкидываем только что удалённый файл из кэша
 
-	int n, nDst, nSrc;
+	int c, cDel = g_nCurrentSaveIndex;
+	if (bThisSave) cDel -= 1;
+	if (cDel < 0) return;
+
 	string attrDst, attrSrc;
 	aref arSrc, arDst;
-	if (!bThisSave) g_nSaveQuantity--;
-	for (n = g_nCurrentSaveIndex; n <= g_nSaveQuantity; n++)
+	for (c = cDel; c < g_nSaveQuantity - 1; c++)
 	{
-		// dst save info
-		attrDst = "s" + n;
+		attrDst = "s" + c;
+		attrSrc = "s" + (c + 1);
 		makearef(arDst, g_oSaveContainer.(attrDst));
-		// src save info (or no info and clear dst)
-		if (n < g_nSaveQuantity)
-		{
-			attrSrc = "s" + (n + 1);
-			makearef(arSrc, g_oSaveContainer.(attrSrc));
-			CopyAttributes(arDst, arSrc);
-		}
-		else
-		{
-			DeleteAttribute(&g_oSaveContainer, attrDst);
-		}
-
-		nDst = n - g_nFirstSaveIndex;
-		nSrc = nDst + 1;
-		if (nDst < MAX_SAVE_SLOTS)
-		{
-			if (nSrc < MAX_SAVE_SLOTS)
-			{
-				MoveSaveInfo(nSrc, nDst);
-			}
-			else
-			{
-				if (CheckAttribute(&g_oSaveContainer, attrDst))
-				{
-					LoadInfo(nDst, n, g_oSaveContainer.(attrDst).savename);
-				}
-				else
-				{
-					FillEmptySaveSlot(nDst);
-				}
-			}
-		}
+		makearef(arSrc, g_oSaveContainer.(attrSrc));
+		CopyAttributes(arDst, arSrc);
 	}
+	attrDst = "s" + (g_nSaveQuantity - 1);
+	DeleteAttribute(&g_oSaveContainer, attrDst);
+
+	g_nSaveQuantity--;
 	g_oSaveContainer.listsize = g_nSaveQuantity;
+
+	FillSaveList(g_nFirstSaveIndex);
 	SetClickable("SAVESCROLL", g_nSaveQuantity > MAX_SAVE_SLOTS);
+
 	// при интерфейсе загрузки выделение обязательно оставляем на реальном сейве
-	attrDst = "s" + g_nCurrentSaveIndex;
+	attrDst = "s" + cDel;
 	if (!CheckAttribute(&g_oSaveContainer, attrDst))
 	{
-		if (g_oSaveContainer > g_nFirstSaveIndex)
+		if (g_nCurrentSaveIndex > g_nFirstSaveIndex)
 		{
 			SelectSaveImage(g_nCurrentSaveIndex - 1);
 		}
@@ -1024,6 +1239,7 @@ void ProcessSave()
 	if (curSave != "")
 	{
 		SendMessage(&GameInterface, "ls", MSG_INTERFACE_DELETE_SAVE_FILE, curSave);
+		ClearSaveCache(); // > перезапись удаляет старый файл, его запись в кэше больше не валидна
 	}
 
 	LaunchCustomSaveGame();
@@ -1070,6 +1286,11 @@ void ProcessCustomSaveAction()
 			string saveName = GameInterface.CUSTOM_SAVE_NAME.str;
 			string sSaveDescriber = GetSaveDataString(saveName);
 			SetEventHandler("evntSave", "SaveGame", 1);
+
+			DeleteAfterSaveFunction();
+			bAutoSaveStarted = true;
+			PostEvent("Event_AutoSaveRefresh", AUTOSAVE_COOLDOWN);
+
 			PostEvent("evntSave", 0, "ss", "SAVE\" + currentProfile + "\" + saveName, sSaveDescriber);
 			// Warship Fix свечения
 			if (CheckAttribute(&InterfaceStates, "GlowEffect"))
@@ -1086,21 +1307,9 @@ void ProcessCustomSaveAction()
 	}
 }
 
-string GetClampedSaveName(string sInName, int nNumber)
-{
-	if (nNumber > 0)
-	{
-		return sInName + " " + nNumber;
-	}
-	else
-	{
-		return sInName;
-	}
-}
-
 string GetCurSaveName()
 {
-	if (bThisSave && or(g_nCurrentSaveIndex < bThisSave, g_nCurrentSaveIndex > g_nSaveQuantity)) return "";
+	if (bThisSave && or(g_nCurrentSaveIndex < 1, g_nCurrentSaveIndex > g_nSaveQuantity)) return "";
 	if (!bThisSave && g_nCurrentSaveIndex >= g_nSaveQuantity) return "";
 	string attr;
 	if (bThisSave)
@@ -1125,6 +1334,7 @@ void DoConfirm(int nConfirmMode)
 	// enable confirm window
 	XI_WindowDisable("CONFIRM_WINDOW", false);
 	XI_WindowShow("CONFIRM_WINDOW", true);
+	SetNodeUsing("CONFIRM_BADSAVE", false);
 	SetCurrentNode("CONFIRM_YES");
 
 	g_nConfirmMode = nConfirmMode;
@@ -1141,6 +1351,13 @@ void DoConfirm(int nConfirmMode)
 		break;
 		case CONFIRMMODE_LOAD_GAME:
 			SetFormatedText("CONFIRM_TEXT", LanguageConvertString(g_nInterfaceFileID, "Load game confirm"));
+		break;
+		case CONFIRMMODE_BAD_SAVE:
+			SetNodeUsing("CONFIRM_BADSAVE", true);
+			SetNodeUsing("CONFIRM_YES", false);
+			SetNodeUsing("CONFIRM_NO", false);
+			SetCurrentNode("CONFIRM_BADSAVE");
+			SetFormatedText("CONFIRM_TEXT", sSaveVersion);
 		break;
 	}
 	SendMessage(&GameInterface, "lsl", MSG_INTERFACE_MSG_TO_NODE, "CONFIRM_TEXT", 5); // центрируем по вертикали
@@ -1203,6 +1420,7 @@ void UndoConfirm(bool bPositiveChoose)
 		break;
 		case CONFIRMMODE_SAVE_OVERWRITE: SetCurrentNode("BTN_SAVELOAD"); break;
 		case CONFIRMMODE_LOAD_GAME: SetCurrentNode("BTN_SAVELOAD"); break;
+		case CONFIRMMODE_BAD_SAVE: SetCurrentNode("BTN_SAVELOAD"); break;
 	}
 }
 
@@ -1260,6 +1478,7 @@ void ReloadSaveInfo()
 	string info = "";
 	string playtime = "#";
 	string curship = "#";
+
 	if (nSlot >= 0 && nSlot < MAX_SAVE_SLOTS && CheckAttribute(&g_oSaveList[nSlot], "faceinfo"))
 	{
 		info = g_oSaveList[nSlot].faceinfo;
@@ -1307,10 +1526,7 @@ void ReloadSaveInfo()
 	{
 		SetSelectable("BTN_SAVELOAD", true);
 		SetSelectable("BTN_DELETE", true);
-		if (!IsActualSaveVersion(&g_oSaveList[nSlot]))
-			SetSelectable("BTN_SAVELOAD", bThisSave);
 	}
-
 }
 
 void ScrollPosChange()
@@ -1346,10 +1562,13 @@ void SaveLoad()
 	int i, iComIdx = GetEventData();
 	string sNodName = GetEventData();
 
-	for (i = 0; i <= 17; i++)
+	for (i = 0; i < MAX_SAVE_SLOTS; i++)
 	{
 		if (sNodName == ("SAVEIMG" + (i + 1)))
+		{
 			SelectSaveImage(g_nFirstSaveIndex + i);
+			break;
+		}
 	}
 
 	SaveLoadCurrentIntoSlot();
@@ -1357,14 +1576,28 @@ void SaveLoad()
 
 bool IsActualSaveVersion(ref saveSlot)
 {
-	if (!CheckAttribute(saveSlot, "saveVer"))
+	sSaveVersion = LanguageConvertString(g_nInterfaceFileID, "BadSaveNoVersion");
+
+	// > в слоте нет прочитанного сейва (пустой, заглушка "загружается", битый файл) - сверять версию не с чем
+	if (!CheckAttribute(saveSlot, "hasdata") || saveSlot.hasdata != "1")
 		return true;
-	if (saveSlot.saveVer != "")
+
+	if (!CheckAttribute(saveSlot, "saveVer"))
+		return false;
+
+	if (saveSlot.saveVer != "SaveVer=" + VERSION_NUM_PRE)
 	{
-		if (saveSlot.saveVer != "SaveVer=" + VERSION_NUM_PRE)
+		switch (saveSlot.saveVer)
 		{
-			return false;
+			case "SaveVer=99941":
+				sSaveVersion = LanguageConvertString(g_nInterfaceFileID, "BadSaveVersion") +" 1.1.2 \n" +LanguageConvertString(g_nInterfaceFileID, "BadSaveInfo");
+			break;
+			case "SaveVer=99940":
+				sSaveVersion = LanguageConvertString(g_nInterfaceFileID, "BadSaveVersion") +" 1.0.3 \n" +LanguageConvertString(g_nInterfaceFileID, "BadSaveInfo");
+			break;
 		}
+		return false;
 	}
+
 	return true;
 }

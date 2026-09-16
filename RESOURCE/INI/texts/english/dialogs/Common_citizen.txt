@@ -1018,3 +1018,57 @@ You’ve held up your end of the bargain, now I’ll hold up mine. Here’s your
 Common_citizen_292 {
 You're welcome, @<GetAddress_FormToNPC>! All the best.
 }
+
+Common_citizen_293 {
+The whole town is talking about only one thing today – the failed attempt to seize our colony.
+}
+
+Common_citizen_294 {
+Just imagine the nerve of them, attacking the fortifications of our town! What could they possibly have hoped to achieve? I think that venture was doomed from the very moment it was conceived.
+}
+
+Common_citizen_295 {
+I confess, when the shooting started, I was seized by panic.
+}
+
+Common_citizen_296 {
+@<TimeGreeting>, @<pchar.name>. I am very glad to see you.
+}
+
+Common_citizen_297 {
+@<TimeGreeting>, @<pchar.name>. I am very glad to see you.
+}
+
+Common_citizen_298 {
+@<TimeGreeting>, @<npchar.name>. I have to go.
+}
+Common_citizen_299_m {
+@<TimeGreeting>, @<pchar>! Very glad to see you. It's a beautiful day for a walk!
+}
+Common_citizen_299_f {
+@<TimeGreeting>, @<pchar>! Very glad to see you. It's a beautiful day for a walk!
+}
+Common_citizen_300 {
+Hello, @<npchar>! I'm glad to see you too.
+}
+Common_citizen_301 {
+I'm sorry, but I'm in a hurry.
+}
+Common_citizen_302 {
+Ah, Becky, Manuel! How good to see you. You know, today we're finally sailing away.
+}
+Common_citizen_303 {
+Have you finished all the preparations?
+}
+Common_citizen_304 {
+Our boys got up at four in the morning to pack the chests, and Lucia gathered a whole bunch of flowers to decorate the cabin.
+}
+Common_citizen_305 {
+Say bouquet. It sounds more genteel.
+}
+Common_citizen_306 {
+A bouquet, and a very large one, almost like a broom... Why, isn't that Miguel over there? I need to have a few words with him before we leave. My humble respects.
+}
+Common_citizen_307 {
+Safe journey.
+}

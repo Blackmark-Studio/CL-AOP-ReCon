@@ -378,7 +378,7 @@ void ProcessDialogEvent()
 			AddQuestRecord("SCQ_PirateFashion", "1");
 
 			sld = GetCharacter(NPC_GenerateCharacter("QuetionsPortPax_KoriBoll", "officer_17", "man", "man", sti(PChar.rank), PIRATE, -1, true));
-			FantomMakeCoolSailor(sld, SHIP_SLOOP_W, FindPersonalName("KoriBoll_ship"), CANNON_TYPE_CANNON_LBS8, 30, 30, 30);
+			FantomMakeCoolSailor(sld, SHIP_SLOOP, FindPersonalName("KoriBoll_ship"), CANNON_TYPE_CANNON_LBS8, 30, 30, 30);
 			DeleteAttribute(sld, "perks.list.FastReload");
 			DeleteAttribute(sld, "perks.list.SailsDamageUp");
 			DeleteAttribute(sld, "perks.list.CrewDamageUp");

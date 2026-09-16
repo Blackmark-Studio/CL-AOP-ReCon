@@ -34,3 +34,36 @@ Oui, il vaut vraiment mieux marchander...
 Villemstad_ItemTrader_12 {
 Hm, désolé, marchand...
 }
+Villemstad_ItemTrader_13 {
+Pourriez-vous me dire où je pourrais acheter une robe digne de paraître en société ?
+}
+Villemstad_ItemTrader_14 {
+Il me faut une robe qui ne soit pas moins belle que celle de l'épouse du banquier de la ville.
+}
+Villemstad_ItemTrader_15 {
+Où pourrais-je me procurer une robe, mais pas une robe ordinaire : quelque chose que je pourrais porter sans honte même à une réception donnée par le roi de France en personne.
+}
+Villemstad_ItemTrader_16 {
+Vous trouverez difficilement cela au marché. Il vous faudrait une bonne couturière. Malheureusement, je ne peux vous en recommander aucune...
+}
+Villemstad_ItemTrader_17 {
+Dommage...
+}
+Villemstad_ItemTrader_18 {
+Non, madame, je n'ai rien de tel à vendre.
+}
+Villemstad_ItemTrader_19 {
+Très bien...
+}
+Villemstad_ItemTrader_20 {
+Chez le tailleur du roi de France, où donc ailleurs ? Nous sommes de petites gens, nous, pas comme ces riches messieurs qui fréquentent le bordel de la ville.
+}
+Villemstad_ItemTrader_21 {
+Voilà qui est intéressant. Ces messieurs y jouissent-ils d'un statut particulier ? Ils ne vont tout de même pas courir après les filles du port ?
+}
+Villemstad_ItemTrader_22 {
+Pardonnez-moi, mais je n'ai pas pour habitude de colporter des ragots. Allez vous renseigner sur place ; peut-être vous proposera-t-on quelque chose de particulier à vous aussi. Mais ne me mêlez pas à cela et ne dites pas que je vous ai parlé. La tenancière est une dame en vue. Elle achète du vin à mon cousin - c'est un excellent vigneron - et je n'ai aucune raison de médire d'elle.
+}
+Villemstad_ItemTrader_23 {
+Je vous ai compris. Très bien, j'en prendrai bonne note, et je ne manquerai pas de vous acheter du vin un de ces jours.
+}

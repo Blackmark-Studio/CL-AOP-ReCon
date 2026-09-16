@@ -1,39 +1,39 @@
 LeFransua_Shipyard_1 {
-什么问题？
+什么问题？ 
 }
 LeFransua_Shipyard_2 {
-你想干什么？
+你想干什么？ 
 }
 LeFransua_Shipyard_3 {
 @<RandPhraseSimple>
 }
 LeFransua_Shipyard_4 {
-不久前你还想问我个问题……
+不久前你还想问我个问题…… 
 }
 LeFransua_Shipyard_5 {
-在我自己的船厂，甚至整个城里，我还真没见过这么一根筋爱打听的人。
+在我自己的船坞， 甚至整个城里， 我还真没见过这么一根筋爱打听的人。 
 }
 LeFransua_Shipyard_6 {
-问那么多干嘛？老子的活儿就是造船，赶紧开始吧。
+问那么多干嘛？ 我的活儿就是造船， 赶紧开始吧。 
 }
 LeFransua_Shipyard_7_m {
-我改主意了……
+我改主意了…… 
 }
 LeFransua_Shipyard_7_f {
-我改主意了……
+我改主意了…… 
 }
 LeFransua_Shipyard_8 {
-我现在没什么可说的。
+我现在没什么可说的。 
 }
 LeFransua_Shipyard_9 {
 @<RandPhraseSimple>
 }
 LeFransua_Shipyard_10 {
-嗯，我的记忆好像出了点问题……
+嗯， 我的记忆好像出了点问题…… 
 }
 LeFransua_Shipyard_11 {
-嗯，不过……
+嗯， 不过…… 
 }
 LeFransua_Shipyard_12 {
-咱们……
+咱们…… 
 }

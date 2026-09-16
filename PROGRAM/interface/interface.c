@@ -3,6 +3,7 @@
 #include "interface\utilite.c"
 #include "interface\interface_utils.c"
 #include "interface\perks\perks.c"
+#include "interface\NPCDialogAPI.c"
 
 #define FONT_NORMAL	"interface_normal"
 #define FONT_CAPTION	"interface_button"
@@ -45,27 +46,6 @@
 #event_handler("evMouseWeel","procMouseWeel");
 #event_handler("evGetMouseWeel","procGetMouseWeel");
 
-#event_handler("MusicUpdateInterface","KZ|MusicUpdateInterface");
-void KZ|MusicUpdateInterface()
-{
-	KZ|MusicUpdate();
-	PostEvent("MusicUpdateInterface", 5000);
-}
-
-void KZ|PlayMusicInterfacePostEvent()
-{
-	string s = "MusicUpdateInterface";
-	DelEventHandler(s, "KZ|" + s);
-	SetEventHandler(s, "KZ|" + s, 1);
-	PostEvent(s, 5000);
-}
-
-void KZ|PlayMusicInterfaceFrame()
-{
-	if (!MusicIsPlaying())
-		KZ|MusicUpdate();
-}
-
 bool EnableVideoBreak = false;
 
 int CurrentInterface;
@@ -95,6 +75,11 @@ bool bGamePadChangeEnable = false;
 bool bPlayVideoNow = false;
 bool bMainMenuLaunchAfterVideo = false;
 
+// TIPS
+string gTips[2];
+int gTipsPerm[2];
+int gTipsQty = 0;
+int gCurTipNum = 0;
 
 void LaunchContrabandTrade(ref ContraTrader, int storeNum) // Интерфейс торговли с контрабандистами
 {
@@ -116,6 +101,16 @@ void LaunchRepair(ref refCharacter)
 		nPrevInterface = -1;
 		CurrentInterface = INTERFACE_REPAIR;
 		InitInterface_R(Interfaces[CurrentInterface].IniFile,refCharacter);
+	}
+}
+
+void LaunchShipRepair(ref shipmaster)
+{
+	if(procInterfacePrepare(INTERFACE_SHIP_REPAIR))
+	{
+		nPrevInterface = -1;
+		CurrentInterface = INTERFACE_SHIP_REPAIR;
+		InitInterface_R(Interfaces[CurrentInterface].IniFile, shipmaster);
 	}
 }
 // Warship -->
@@ -324,14 +319,16 @@ void LaunchDebuderMenu()
 }
 // boal <--
 
-void LaunchQuickSaveMenu()
+bool LaunchQuickSaveMenu()
 {
 	if(procInterfacePrepare(INTERFACE_QUICK_SAVE))
 	{
 		nPrevInterface = -1;
 		CurrentInterface = INTERFACE_QUICK_SAVE;
 		InitInterface(Interfaces[CurrentInterface].IniFile);
+		return true;
 	}
+	return false;
 }
 
 void HideQuickSaveMenu()
@@ -665,7 +662,6 @@ void LaunchMainMenu()
 	// fix
 	TimeScaleCounter = 0;
     DelPerkFromActiveList("TimeSpeed");
-	KZ|PlayMusicInterfacePostEvent();
 }
 
 void LaunchSaveGame()
@@ -688,8 +684,74 @@ void LaunchLoadGame(bool isMainMenu)
 	}
 }
 
+void AoP_PrepareBuccaneerHireCrew(ref npchar)
+{
+	int iRep = sti(pchar.reputation);
+	int iCrew;
+
+	if (iRep < REPUTATION_MIN) iRep = REPUTATION_MIN;
+	if (iRep > REPUTATION_MAX) iRep = REPUTATION_MAX;
+
+	if (!CheckAttribute(npchar, "AoP_BuccHireDate.control_year"))
+	{
+		iCrew = 20 + makeint(180.0 * makefloat(iRep - REPUTATION_MIN) / makefloat(REPUTATION_MAX - REPUTATION_MIN));
+		if (iCrew < 20) iCrew = 20;
+		if (iCrew > 200) iCrew = 200;
+
+		npchar.Ship.Crew.Quantity = iCrew;
+		npchar.Ship.Crew.Morale = 90 + rand(10);
+		npchar.Ship.Crew.Exp.Sailors = 90 + rand(10);
+		npchar.Ship.Crew.Exp.Cannoners = 90 + rand(10);
+		npchar.Ship.Crew.Exp.Soldiers = 90 + rand(10);
+		SaveCurrentNpcQuestDateParam(npchar, "AoP_BuccHireDate");
+	}
+	else
+	{
+		if (GetNpcQuestPastDayParam(npchar, "AoP_BuccHireDate") >= 3)
+		{
+			iCrew = 20 + makeint(180.0 * makefloat(iRep - REPUTATION_MIN) / makefloat(REPUTATION_MAX - REPUTATION_MIN));
+			if (iCrew < 20) iCrew = 20;
+			if (iCrew > 200) iCrew = 200;
+
+			npchar.Ship.Crew.Quantity = iCrew;
+			npchar.Ship.Crew.Morale = 90 + rand(10);
+			npchar.Ship.Crew.Exp.Sailors = 90 + rand(10);
+			npchar.Ship.Crew.Exp.Cannoners = 90 + rand(10);
+			npchar.Ship.Crew.Exp.Soldiers = 90 + rand(10);
+			SaveCurrentNpcQuestDateParam(npchar, "AoP_BuccHireDate");
+		}
+	}
+
+	if (!CheckAttribute(npchar, "Ship.Crew.Quantity")) npchar.Ship.Crew.Quantity = 20;
+	if (sti(npchar.Ship.Crew.Quantity) < 0) npchar.Ship.Crew.Quantity = 0;
+	if (sti(npchar.Ship.Crew.Quantity) > 200) npchar.Ship.Crew.Quantity = 200;
+
+	if (!CheckAttribute(npchar, "Ship.Crew.Morale")) npchar.Ship.Crew.Morale = 90;
+	if (!CheckAttribute(npchar, "Ship.Crew.Exp.Sailors")) npchar.Ship.Crew.Exp.Sailors = 95;
+	if (!CheckAttribute(npchar, "Ship.Crew.Exp.Cannoners")) npchar.Ship.Crew.Exp.Cannoners = 95;
+	if (!CheckAttribute(npchar, "Ship.Crew.Exp.Soldiers")) npchar.Ship.Crew.Exp.Soldiers = 95;
+	if (sti(npchar.Ship.Crew.Morale) < 90) npchar.Ship.Crew.Morale = 90;
+	if (sti(npchar.Ship.Crew.Exp.Sailors) < 90) npchar.Ship.Crew.Exp.Sailors = 90;
+	if (sti(npchar.Ship.Crew.Exp.Cannoners) < 90) npchar.Ship.Crew.Exp.Cannoners = 90;
+	if (sti(npchar.Ship.Crew.Exp.Soldiers) < 90) npchar.Ship.Crew.Exp.Soldiers = 90;
+}
+
+void LaunchBuccaneerHireCrew(ref npchar)
+{
+	AoP_PrepareBuccaneerHireCrew(npchar);
+	pchar.AoP_BuccaneerHireNPC = npchar.id;
+
+	if(procInterfacePrepare(INTERFACE_HIRECREW))
+	{
+		nPrevInterface = -1;
+		CurrentInterface = INTERFACE_HIRECREW;
+		InitInterface(Interfaces[CurrentInterface].IniFile);
+	}
+}
+
 void LaunchHireCrew()
 {
+	DeleteAttribute(pchar, "AoP_BuccaneerHireNPC");
 	if(procInterfacePrepare(INTERFACE_HIRECREW))
 	{
 		nPrevInterface = -1;
@@ -810,12 +872,10 @@ void ISTART_SelCharacter()
 	CurrentInterface = INTERFACE_CHARACTER_SELECT;
 	LoadSegment(Interfaces[CurrentInterface].SectionName);
 	InitInterface(Interfaces[CurrentInterface].IniFile);
-	KZ|PlayMusicInterfacePostEvent();
 }
 
 void EndCancelInterface(bool bYesRelease)
 {
-	DelEventHandler("MusicUpdateInterface", "KZ|MusicUpdateInterface");
 	ref refObj1,refObj2;
 	bGamePadChangeEnable = false;
 	InterfaceStates.doUnFreeze = bYesRelease;
@@ -830,7 +890,7 @@ void EndCancelInterface(bool bYesRelease)
 object InterfaceStack;
 void ClearInterfaceStack()
 {
-	DeleteAttribute(InterfaceStack,"");
+	DeleteAttribute(&InterfaceStack, "");
 	InterfaceStack.size=0;
 }
 void PushInterface(int iIndex,string iTitle,string iStartNod)
@@ -1174,7 +1234,6 @@ bool procInterfacePrepare(int interfaceCode)
 		DeleteAttribute(&GameInterface,"");
 		DeleteAttribute(&InterfaceStates,"tooltip");
 		if(IsPerkIntoList("TimeSpeed")) {SetTimeScale(1.0);}
-		KZ|PlayMusicInterfacePostEvent();
 		LayerFreeze(INTERFACE_REALIZE,false);
 		LayerFreeze(INTERFACE_EXECUTE,false);
 		return true;
@@ -1189,8 +1248,7 @@ bool procInterfacePrepare(int interfaceCode)
 
 void Start_InterfaceDoExit()
 {
-	DelEventHandler("frame", "KZ|PlayMusicInterfaceFrame");
-	if (IsPerkIntoList("TimeSpeed")) SetTimeScale(GetSeaTimeScale());
+	if (IsPerkIntoList("TimeSpeed")) SetTimeScale(GetCurrentTimeScale());
 	SetEventHandler("frame","InterfaceDoExit",1);
 }
 
@@ -1492,7 +1550,7 @@ void InfoShowSetting()
 				{
 					if( sti(InterfaceStates.Launched) == true ) 
 					{
-						SetTimeScale(GetSeaTimeScale());
+						SetTimeScale(GetCurrentTimeScale());
 					} 
 					else 
 					{
@@ -1559,6 +1617,15 @@ void procAttractExit()
 float GetSeaTimeScale()
 {
 	return 2.0;
+}
+
+// KZ > фактический текущий масштаб времени по TimeScaleCounter + пауза
+float GetCurrentTimeScale()
+{
+	if (CheckAttribute(pchar, "pause")) return 0.0;
+	float fScale = 1 + (TimeScaleCounter) * 0.25;
+	if (fScale < 0) fScale = 0;
+	return fScale;
 }
 
 void SetShowWindowParameters(bool TVused, int w,int h, int l,int t,int r,int b)
@@ -1891,45 +1958,46 @@ int GetAlphaFromSkill(int nskill)
 //==============================
 // save load section
 //==============================
+string GetQuickSaveName()
+{
+	string locQS_str = XI_ConvertString("QuickSave");
+	if (locQS_str == "")
+	{
+		locQS_str = "QuickSave";
+		Trace("GetQuickSaveName(): No loc string for 'QuickSave'");
+	}
+	return locQS_str;
+}
+
 void MakeQuickLoad()
 {
-	if(bPlayVideoNow) return;
-	string saveName, tempSave;
+	if (bPlayVideoNow && !CharacterIsDead(pchar)) return;
+	string saveName, tempSave, quickSave;
 	int nSaveSize;
 	int nSaveNum = 0;
-    if (CheckAttribute(&PlayerProfile, "QuickSaveIndex"))
-    {
-        saveName = PlayerProfile.name + " QuickSave " + sti(PlayerProfile.QuickSaveIndex);
-        if (FindFile("SAVE\\" + PlayerProfile.name + "\\", saveName, "*", true)) tempSave = saveName;
-    }
-    //если квик сейва по QuickSaveIndex нету в живых или атрибут QuickSaveIndex не существует
-    if (tempSave == "")
-    {
-        GameInterface.SavePath = "SAVE\\" + PlayerProfile.name;
-        while (SendMessage(&GameInterface, "llee", MSG_INTERFACE_SAVE_FILE_FIND, nSaveNum, &saveName, &nSaveSize) != 0)
-        {
-            if (nSaveNum == 0) tempSave = saveName;
-            if (HasStr(saveName, PlayerProfile.name + " QuickSave ")) break;
-            nSaveNum++;
-        }
-    }
-    if (HasStr(saveName, PlayerProfile.name + " QuickSave ")) //если найден квик сейв, то загружаем
-    {
-        SetEventHandler("evntLoad", "LoadGame", 0);
-        PostEvent("evntLoad",0,"s", "SAVE\" + PlayerProfile.name + "\" + saveName);
-    }
-    else
-    {
-        if (tempSave != "") //если квик сейва не нашлось, загружаем первый обычный
-        {
-            SetEventHandler("evntLoad", "LoadGame", 0);
-            PostEvent("evntLoad",0,"s", "SAVE\" + PlayerProfile.name + "\" + tempSave);
-        }
-        else //если в профиле нет сейвов выводим сообщалку
-        {
-            Log_Info(XI_ConvertString("GameMenuHelper_4") + PlayerProfile.name + XI_ConvertString("GameMenuHelper_5"));
-        }
-    }
+
+	string quickPrefix = PlayerProfile.name + " " + GetQuickSaveName() + " ";
+	string quickPrefixDef = PlayerProfile.name + " QuickSave ";
+
+	GameInterface.SavePath = "SAVE\\" + PlayerProfile.name;
+	while (SendMessage(&GameInterface, "llee", MSG_INTERFACE_SAVE_FILE_FIND, nSaveNum, &saveName, &nSaveSize) != 0)
+	{
+		if (nSaveNum == 0) tempSave = saveName;
+		if (quickSave == "" && StrStartsWith(saveName, quickPrefix)) quickSave = saveName;
+		if (quickSave == "" && StrStartsWith(saveName, quickPrefixDef)) quickSave = saveName;
+		nSaveNum++;
+	}
+
+	if (quickSave != "") tempSave = quickSave;
+
+	if (tempSave == "") //если в профиле нет сейвов выводим сообщалку
+	{
+		Log_Info(XI_ConvertString("GameMenuHelper_4") + PlayerProfile.name + XI_ConvertString("GameMenuHelper_5"));
+		return;
+	}
+
+	SetEventHandler("evntLoad", "LoadGame", 0);
+	PostEvent("evntLoad",0,"s", "SAVE\" + PlayerProfile.name + "\" + tempSave);
 }
 
 void MakeQuickSave()
@@ -1993,29 +2061,40 @@ void QuickSaveContinue()
 		}	
 	}
 	PlayerProfile.QuickSaveIndex = QuickSaveIndex;
-	
-	string curSave = PlayerProfile.name + " QuickSave " + QuickSaveIndex;
+
+	string curSave = GetClampedSaveName(PlayerProfile.name + " " + GetQuickSaveName(), QuickSaveIndex);
 	// <-- ugeen 2017
 	SendMessage(&GameInterface,"ls",MSG_INTERFACE_DELETE_SAVE_FILE,curSave);
 	string sSaveDescriber = GetSaveDataString(GetCurLocationName());
+
+	DeleteAfterSaveFunction();
+	bAutoSaveStarted = true;
+	PostEvent("Event_AutoSaveRefresh", AUTOSAVE_COOLDOWN);
 
 	SetEventHandler("evntSave","SaveGame",1);
 	PostEvent("evntSave",0,"ss", "SAVE\"+PlayerProfile.name+"\"+curSave, sSaveDescriber);
 }
 
-void MakeAutoSave()
+// AlexBlade > Старый способ создания автосейвов - оставляю для совместимости
+// -->
+bool MakeAutoSave()
 {
-	if( InterfaceStates.Launched != 0 ) {return;}
+	if( InterfaceStates.Launched != 0 ) {return false;}
+
+	DeleteAfterSaveFunction();
 
 	aref arScrShoter;
 	if( !GetEntity(&arScrShoter,"scrshoter") ) {
-		SetEventHandler("makescrshot","AutoSaveContinue",0);
+		SetEventHandler("makescrshot","__DEPRECATED_AutoSaveContinue",0);
 		CreateScreenShoter();
 		PostEvent("makescrshot",1);
-	} else { return; }
+		return true;
+	}
+
+	return false;
 }
 
-void AutoSaveContinue()
+void __DEPRECATED_AutoSaveContinue()
 {
 	DelEventHandler("makescrshot","AutoSaveContinue");
 
@@ -2026,6 +2105,17 @@ void AutoSaveContinue()
 
 	SetEventHandler("evntSave","SaveGame",1);
 	PostEvent("evntSave",0,"ss", "SAVE\"+PlayerProfile.name+"\"+curSave, sSaveDescriber);
+}
+// <--
+
+// AlexBlade > Ручные автосохранения для квестов, и других нужд (старт в порту, и т.п.)
+// Использует ограничение кол-ва через счётчик "Common"
+void MakeQuestAutoSave()
+{
+	if (GetMaxAutoSaves("Common") != 0)
+	{
+		PostEvent("Event_NewAutoSave", 0, "s", "Common");
+	}
 }
 
 string GetSaveDataString(string label)
@@ -2235,6 +2325,21 @@ string GetConvertStr(string _param, string _file)
     return totalInfo;
 }
 
+int GetFileStringsQuantity(string _file)
+{
+	int idLngFile = -1;
+	int nStrings;
+	idLngFile = LanguageOpenFile(_file);
+	if (idLngFile == -1)
+	{
+	 	return -1;
+	}
+	nStrings = LanguageGetFileStringsQuantity(idLngFile);
+	LanguageCloseFile(idLngFile);
+
+	return nStrings;
+}
+
 void Picture_SetPicture(string sPictureControl, string sTexture)
 {
 	SendMessage(&GameInterface, "lslls", MSG_INTERFACE_MSG_TO_NODE, sPictureControl, 2, false, sTexture);
@@ -2394,4 +2499,324 @@ void SetInterfaceGlobalsVariables()
 //	{
 //		iCompassPos = sti(InterfaceStates.CompassPos);
 //	}
+}
+
+/*
+Пример как вешать прерывание
+
+Если вместо имени сейва с названием локации нужно свое слово "Первый бой" и т.п.
+То перед вывозом сейва делаем
+
+MakeAutoSaveNameParam(XI_ConvertString("свое слово метка"));
+
+Вариант записи №1 через два прерывания, как уже было для абордажа
+
+if (MakeAutoSave())
+{
+	SetEventHandler("evntSave","Continue_Sea_AbordageLoadPre", 0);
+}
+else
+{
+	Continue_Sea_AbordageLoad();
+}
+сам метод
+void Continue_Sea_AbordageLoadPre()
+{
+	DelEventHandler("evntSave","Continue_Sea_AbordageLoadPre"); // убрать прерывание
+	SetEventHandler("frame","Continue_Sea_AbordageLoad",1); // то, что было бы сразу
+}
+
+Вариант №2 в одно прерывание, можно передать параметр в метод выполнения для сейва (пример от глоб карты)
+Разница evntSave и evntSaveGameAfter есть и очень важная. evntSaveGameAfter (новое прерывание) с гарантией будет после завершения записи файла. А evntSave идет вместе с записью на диск и потому нужно обновления кадра после ловить дополнительно
+
+if (int(wdmLoginToSea.storm) == 0 && !isShipEncounterType && MakeAutoSave()) // не в шторме, не в бою
+{
+	SetEventHandler("evntSaveGameAfter","WdmReloadAferSave", 0);
+}
+else
+{
+	WdmReloadStart(isShipEncounterType);
+}
+void WdmReloadAferSave()
+{
+	DelEventHandler("evntSaveGameAfter","WdmReloadAferSave"); // убрать прерывание
+	WdmReloadStart(false); // то, что было бы сразу
+}
+
+
+Вызывать при записи СЖ не стоит, т.к. там обычно идет диалог или середина кода квест-реакшн
+Вызывать можно в местах, где не порушит игру.
+Переход суша-море. Норм
+переход карта - море - тут сомнительно, т.к. это может быть в табличке кто плывет и не сработает. А так же это место чита, т.к. корабли генерируются разные и загрузка изменит состояние, что удивит игрока.
+*/
+
+#event_handler("Event_NewAutoSave","NewAutoSave");
+void NewAutoSave()
+{
+	string sTag = GetEventData();
+	if(bAutoSaveStarted)
+	{
+		AutoSave_After();
+		return;
+	}
+	if(dialogRun)
+	{
+		TEV.AutoSaveTag = sTag;
+		AddDialogExitQuestFunction("NewAutoSave_Defer");
+		return;
+	}
+	if(sti(InterfaceStates.Launched) == true)
+	{
+		PostEvent("Event_NewAutoSave", 1000, "s", sTag);
+		return;
+	}
+	if(bPlayVideoNow)
+	{
+		AutoSave_After();
+		return;
+	}
+	if(!CheckAttribute(&InterfaceStates, "Buttons.Save.enable") || InterfaceStates.Buttons.Save.enable != 1)
+	{
+		AutoSave_After();
+		return;
+	}
+	if(bAbordageStarted)
+	{
+		AutoSave_After();
+		return;
+	}
+	int idxLoadLoc = FindLoadedLocation();
+//	if(idxLoadLoc != -1 && !bSeaActive && LAi_group_IsActivePlayerAlarm())
+//	{
+//		AutoSave_After();
+//		return;
+//	}
+	if(idxLoadLoc != -1 && pchar.chr_ai.type == LAI_TYPE_ACTOR)
+	{
+		AutoSave_After();
+		return;
+	}
+	if(idxLoadLoc != -1)
+	{
+		if (Locations[idxLoadLoc].id == "Ship_deck" || Locations[idxLoadLoc].id == "Deck_Near_Ship")
+		{
+			AutoSave_After();
+			return;
+		}
+	}
+	if(idxLoadLoc != -1 && CheckAttribute(loadedLocation, "type") && loadedLocation.type == "underwater")
+	{
+		AutoSave_After();
+		return;
+	}
+	bAutoSaveStarted = true;
+	PostEvent("Event_AutoSaveRefresh", AUTOSAVE_COOLDOWN);
+	PostEvent("MakeNewAutoSave", 0, "s", sTag);
+}
+
+void NewAutoSave_Defer()
+{
+	string sTag = "";
+	if(CheckAttribute(&TEV, "AutoSaveTag"))
+		sTag = TEV.AutoSaveTag;
+	PostEvent("Event_NewAutoSave", 1, "s", sTag);
+}
+
+#event_handler("MakeNewAutoSave", "MakeNewAutoSave");
+void MakeNewAutoSave()
+{
+	aref arScrShoter;
+	string sTag = GetEventData();
+	if(!GetEntity(&arScrShoter,"scrshoter"))
+	{
+		if(LaunchQuickSaveMenu())
+		{
+			SetEventHandler("makescrshot", "AutoSaveContinue", 0);
+			CreateScreenShoter();
+			TEV.AutoSaveTag = sTag;
+			PostEvent("makescrshot", 1);
+		}
+		else
+		{
+			AutoSave_Refresh();
+		}
+	}
+}
+
+void AutoSaveContinue()
+{
+	DelEventHandler("makescrshot", "AutoSaveContinue");
+	string sTag = "";
+	if(CheckAttribute(&TEV, "AutoSaveTag"))
+		sTag = TEV.AutoSaveTag;
+	GameInterface.SavePath = "SAVE\" + PlayerProfile.name;
+	string saveName = "";
+	if (sTag == "Common")
+	{
+	    saveName = XI_ConvertString("AutoSave");
+	}
+	else
+	{
+	    saveName = XI_ConvertString("AutoSave_" + sTag);
+		if (saveName == "")
+		{
+			saveName = XI_ConvertString("AutoSave");
+		}
+	}
+	if (saveName == "")
+	{
+		saveName = "AutoSave";
+		Trace("AutoSaveContinue(): No loc string for 'AutoSave'");
+	}
+
+	int idx = 0;
+	if(CheckAttribute(&NullCharacter, "AutoSaves." + sTag))
+		idx = sti(NullCharacter.AutoSaves.(sTag));
+	string curSave = GetClampedSaveName(saveName, idx) + ".auto";
+
+	while(SendMessage(&GameInterface, "ls", MSG_INTERFACE_NEW_SAVE_FILE_NAME, curSave) == 1)
+	{
+		idx++;
+		curSave = GetClampedSaveName(saveName, idx) + ".auto";
+	}
+	NullCharacter.AutoSaves.(sTag) = idx;
+	int max = GetMaxAutoSaves(sTag);
+	if(max > 0)
+	{
+		if(idx >= max)
+		{
+			idx--;
+			int nSaves = 1;
+			string oldSave;
+			while(idx >= 0)
+			{
+				oldSave = GetClampedSaveName(saveName, idx) + ".auto";
+				if(SendMessage(&GameInterface, "ls", MSG_INTERFACE_NEW_SAVE_FILE_NAME, oldSave) == 1)
+				{
+					nSaves++;
+					if(nSaves > max)
+					{
+						SendMessage(&GameInterface, "ls", MSG_INTERFACE_DELETE_SAVE_FILE, oldSave);
+					    NullCharacter.AutoSaves.(sTag) = idx;
+					    curSave = oldSave;
+					}
+				}
+				idx--;
+			}
+		}
+	}
+
+	SendMessage(&GameInterface, "ls", MSG_INTERFACE_DELETE_SAVE_FILE, curSave);
+
+	string sSaveDescriber;
+	if (CheckAttribute(&NullCharacter, "ManualAutoSaveName"))
+	{
+		sSaveDescriber = GetSaveDataString(NullCharacter.ManualAutoSaveName);
+		DeleteAttribute(&NullCharacter, "ManualAutoSaveName"); // до след инита делаем сейвы по локации
+	}
+	else
+	{
+		sSaveDescriber = GetSaveDataString(strleft(curSave, strlen(curSave) - strlen(".auto")));
+	}
+
+	SetEventHandler("evntSave", "SaveGame", 1);
+	PostEvent("evntSave", 0, "ss", "SAVE\" + PlayerProfile.name + "\" + curSave, sSaveDescriber);
+}
+
+#event_handler("Event_AfterSave", "AutoSave_After");
+void AutoSave_After()
+{
+	if (CheckAttribute(&TEV, "AfterSaveFunction"))
+	{
+		string saveFunc = TEV.AfterSaveFunction;
+		call saveFunc();
+	}
+	DeleteAfterSaveFunction();
+}
+
+#define AUTOSAVE_COOLDOWN 10000
+#event_handler("Event_AutoSaveRefresh","AutoSave_Refresh");
+void AutoSave_Refresh()
+{
+	DeleteAfterSaveFunction();
+	DelEventHandler("Event_AfterSave", "LandToSea_Continue");
+	DelEventHandler("Event_AfterSave", "Continue_Sea_AbordageLoad");
+	DelEventHandler("Event_AfterSave", "Sea_MapLoad_Continue");
+	DelEventHandler("Event_AfterSave", "MapToSea_Continue");
+	bAutoSaveStarted = false;
+}
+
+void SetAfterSaveFunction(string saveFunc)
+{
+	TEV.AfterSaveFunction = saveFunc;
+}
+
+void DeleteAfterSaveFunction()
+{
+	DeleteAttribute(&TEV, "AfterSaveFunction");
+}
+
+bool CheckAutoSaveEnabled(string sType)
+{
+	string sAutoSave = "AutoSave_" + sType;
+	if (!CheckAttribute(&InterfaceStates, sAutoSave) || sti(InterfaceStates.(sAutoSave)) == 0)
+		return false;
+	return true;
+}
+
+// -1 = Бесконечное кол-во
+int GetMaxAutoSaves(string sType)
+{
+	string sAutoSave = "AutoSave_" + sType;
+	if(!CheckAttribute(&InterfaceStates, sAutoSave))
+		return -1;
+	return sti(InterfaceStates.(sAutoSave));
+}
+
+#define AUTO_SAVE_TYPE_MAX    	8
+string GetAutoSaveType(int index)
+{
+	string sAutoSave = "";
+	switch(index)
+	{
+		case 0:		sAutoSave = "Common";			break;
+		case 1:		sAutoSave = "LandToSea";		break;
+		case 2:		sAutoSave = "Moor";				break;
+		case 3:		sAutoSave = "Map";				break;
+		case 4:		sAutoSave = "MapToSea";			break;
+		case 5:		sAutoSave = "BeforeBoarding";	break;
+		case 6:		sAutoSave = "AfterBoarding";	break;
+		case 7:		sAutoSave = "QuestRecord";		break;
+	}
+	return sAutoSave;
+}
+
+int GetAutoSaveIndex(string type)
+{
+	int res = 0;
+	switch(type)
+	{
+		case "Common":			res = 0;		break;
+		case "LandToSea":		res = 1;		break;
+		case "Moor":			res = 2;		break;
+		case "Map":				res = 3;		break;
+		case "MapToSea":		res = 4;		break;
+		case "BeforeBoarding":	res = 5;		break;
+		case "AfterBoarding":	res = 6;		break;
+		case "QuestRecord":		res = 7;		break;
+	}
+	return res;
+}
+
+string GetClampedSaveName(string sInName, int nNumber)
+{
+	if(nNumber > 0)
+		return sInName + " " + nNumber;
+	else
+		return sInName;
+}
+
+void MakeAutoSaveNameParam(string autoSaveName)
+{
+	NullCharacter.ManualAutoSaveName = autoSaveName;
 }

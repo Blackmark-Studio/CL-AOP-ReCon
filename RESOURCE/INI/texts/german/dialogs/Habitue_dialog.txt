@@ -982,3 +982,9 @@ Ah, du bist also nicht allein! Na schön – dann wirst du Gesellschaft in der H
 Habitue_dialog_295 {
 @<RandPhraseSimple>
 }
+Habitue_dialog_296 {
+Mädchen, bring mir noch etwas zu trinken.
+}
+Habitue_dialog_297 {
+Das kannst du vergessen.
+}

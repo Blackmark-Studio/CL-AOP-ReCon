@@ -1288,3 +1288,4 @@ I’ve already told you, I haven’t the slightest idea. I suggest you describe 
 hol_Governor_365 {
 Alright then, I’ll look for materials on your island. Thank you!
 }
+hol_Governor_366 {completed}

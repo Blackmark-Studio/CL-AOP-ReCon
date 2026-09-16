@@ -1,0 +1,111 @@
+Monk_dialog_1 {
+Ah, Kapitän! Ich gestehe, ich hatte die schwache Hoffnung, Ihnen auf diesen Straßen in einem etwas anständigeren Zustand zu begegnen. Michel hatte mich gewarnt, dass sich unsere Wege kreuzen könnten, aber ich hätte nicht gedacht, dass Vargas' Klinge solche hässlichen Spuren an Ihnen hinterlässt.
+}
+Monk_dialog_2 {
+Le Basque erwähnte, dass Sie nun hier als Seelsorger dienen, Bertrand. Und er fügte hinzu, wenn mich jemand wieder auf die Beine bringen könne, dann Sie.
+}
+Monk_dialog_3 {
+Als Seelsorger - meinetwegen. Als Arzt jedoch ausschließlich durch die Laune eines bösen Schicksals. Bevor ich in dieses Lager kam, bestand die gesamte hiesige Heilkunst aus einem Quart brennenden Rum, einer glühenden Klinge und dem freundschaftlichen Rat, bis zum Morgengrauen nicht zu sterben. Ich musste den Rahmen meiner Berufung ein wenig erweitern.
+}
+Monk_dialog_4 {
+Es freut mich zu sehen, dass die düsteren Kasematten Ihnen den Humor nicht genommen haben.
+}
+Monk_dialog_5 {
+Nach diesen verfluchten Katakomben, Kapitän, bin ich über jeden Tag unendlich glücklich, an dem ich fremde Wunden behandeln darf, statt darauf zu warten, dass kastilische Henker geruhen, mir die Kehle durchzuschneiden. Und dafür, dass Sie mich und die armen Damen wieder ans Licht gebracht haben, stehe ich tief in Ihrer Schuld. Lehnen Sie sich also an dieses Fass und lassen Sie mich sehen, welches Andenken der verstorbene Don Alonso Ihnen hinterlassen hat.
+}
+Monk_dialog_6 {
+Wenn Ihre Kunst mich wieder auf die Beine bringt, werde ich mich nicht widersetzen.
+}
+Monk_dialog_7 {
+Danke, aber nicht jetzt. Ich muss erst etwas zu mir kommen.
+}
+Monk_dialog_8 {
+Ich glaube, diesmal kommen wir ohne Chirurgie aus. Aber Ihr großzügiges Angebot werde ich mir merken.
+}
+Monk_dialog_9 {
+Seid gegrüßt, Kapitän. Führt Euch wieder der Bedarf an einem geschickten Arzt zu mir, oder wollt Ihr Euch nur mit einem Mann unterhalten, den Ihr so edelmütig aus kastilischer Gefangenschaft befreit habt?
+}
+Monk_dialog_10 {
+Die Wunde, die Vargas mir beigebracht hat, macht sich noch immer bemerkbar. Würden Sie einen Blick darauf werfen?
+}
+Monk_dialog_11 {
+Wie gefällt Ihnen Ihr neuer Dienst unter diesen verzweifelten Bukanieren?
+}
+Monk_dialog_12 {
+Ich will Sie nicht länger von Ihren frommen Pflichten abhalten. Bis bald, Bertrand.
+}
+Monk_dialog_13 {
+Wie gefällt Ihnen Ihr neuer Dienst unter diesen verzweifelten Bukanieren?
+}
+Monk_dialog_14 {
+Ich kam vorbei und wollte Ihnen meine Aufwartung machen. Bis bald, Bertrand.
+}
+Monk_dialog_15 {
+Neuer Dienst? Ha! Urteilen Sie selbst: Gestern verlangte ein unverbesserlicher Gotteslästerer, ich solle seine Muskete segnen; ein anderer flehte mich an, ihm eine kastilische Kugel aus einer höchst empfindlichen Stelle zu entfernen; und ein dritter erschien zur Beichte und schlief stockbetrunken ein, kaum dass er bei der zweiten Todsünde angekommen war. Wie Sie sehen, kommt keine Langeweile auf.
+}
+Monk_dialog_16 {
+Und Sie sind vor einer solchen Herde noch nicht davongelaufen?
+}
+Monk_dialog_17 {
+Davonlaufen? Nach den Verliesen, aus denen Sie mich herausgeholt haben? Verschonen Sie mich. Diese Raufbolde haben sehr eigentümliche, wilde Vorstellungen von Frömmigkeit, aber sie lassen keine Frauen in feuchten Kerkern verfaulen und handeln nicht mit fremden Leben, um der Inquisition zu gefallen. Außerdem werde ich hier wahrhaft gebraucht, und im Augenblick genügt mir das vollkommen.
+}
+Monk_dialog_18 {
+Nun, es sieht aus, als hätten Sie endlich Ihre wahre Berufung gefunden.
+}
+Monk_dialog_19 {
+Ziehen Sie den Rock aus, Kapitän. Vorsichtig... Teufel. Das ist weit schlimmer, als ich dachte. Die Toledo-Klinge ist viel tiefer eingedrungen, und die Wundränder beginnen bereits schlecht zu vernarben. Mit bloßem Verbandswechsel kommen wir hier nicht davon.
+}
+Monk_dialog_20 {
+Reden Sie nicht um den heißen Brei, Bertrand. Wie schlimm ist es?
+}
+Monk_dialog_21 {
+So schlimm, dass Sie nach zwei weiteren Tagen auf See, mit Rum gegen die Schmerzen statt richtiger Pflege, besser einen Priester für die Letzte Ölung gesucht hätten. Ich muss die Eiterung erneut öffnen, alles gründlich mit Weingeist auswaschen und die Wunde fest vernähen. Aber bei meiner Kutte, ich werde Sie nicht hier im Straßenstaub aufschneiden. Wir brauchen ein sauberes Bett, Licht und kochendes Wasser, sonst vollendet das Fieber, was Vargas begonnen hat.
+}
+Monk_dialog_22 {
+Dann brauchen wir kein freies Zimmer zu suchen. Ich habe hier ein eigenes Haus. Nehmen Sie Ihre Instrumente, Bertrand, und folgen Sie mir.
+}
+Monk_dialog_23 {
+So, Kapitän, jetzt dürfen Sie die Augen öffnen. Ich muss gestehen, Ihr Federbett kam wie gerufen - gut drei Stunden lagen Sie darin in tiefer Bewusstlosigkeit, während ich diese Wunde in Ordnung brachte. Die Eiterung ist entfernt, die Ränder sind vernäht, der Verband ist frisch. Und ich rate Ihnen dringend, wenigstens heute diese Wände nicht zu verlassen und nicht den unsterblichen Helden zu spielen.
+}
+Monk_dialog_24 {
+Drei Stunden?.. Dann war die Sache wirklich ernster, als Sie es aussehen ließen. Nehmen Sie meinen Dank, Bertrand. Ich verspreche feierlich, dass mein Degen bis morgen früh in der Scheide bleibt.
+}
+Monk_dialog_25 {
+Woher hast du eigentlich immer all die Heiltränke und Kräuter, Bertrand?
+}
+Monk_dialog_26 {
+Bertrand, wegen des Anbaus von Heilkräutern.
+}
+Monk_dialog_27 {
+Ach... Ich habe gehört, wie junge Hitzköpfe wie unser Jaco ständig ihr Leben aufs Spiel setzen und wegen ein paar Wurzeln durch gefährlichen Dschungel streifen. Da dachte ich mir: Warum das Schicksal herausfordern, wenn wir alles direkt vor unserer Nase anbauen können? Im Kloster war ich einst für den Kräutergarten zuständig, und ich beherrsche dieses Handwerk noch gut.\nDer Boden hier ist fruchtbar - die Pflanzen reifen schnell, in nur 5–8 Tagen. Aber merke dir: Wenn du vor einer neuen Aussaat die alte Ernte nicht einholst, müssen alle stehen gebliebenen Pflanzen einfach ausgerissen und weggeworfen werden. Also ernte rechtzeitig!
+}
+Monk_dialog_28 {
+Ein vernünftiger Ansatz, Bertrand. Kannst du bestimmte Pflanzen für mich anbauen?
+}
+Monk_dialog_29 {
+Verlockend, Pater, aber für Kräuterkunde habe ich im Augenblick keine Zeit.
+}
+Monk_dialog_30 {
+Aber die Samen liegen doch schon in der Erde! Geduld ist eine große Tugend. Komm in ungefähr einer Woche wieder, bis dahin sollte alles reif sein.
+}
+Monk_dialog_31 {
+Ach, mein Gedächtnis lässt wirklich nach... Ich komme später wieder.
+}
+Monk_dialog_32 {
+Der Boden ist bereit zur Aussaat. Was wollen wir säen? Die Ernte planen wir für ungefähr eine Woche später.
+}
+Monk_dialog_33 {
+Bepflanze das ganze Beet mit Mutterkraut.
+}
+Monk_dialog_34 {
+Auf dem Beet soll Ginseng wachsen.
+}
+Monk_dialog_35 {
+Wir bauen Ingwerwurzel an.
+}
+Monk_dialog_36 {
+Teile das Beet auf - von jeder Sorte ein wenig.
+}
+Monk_dialog_37 {
+Im Moment brauche ich nichts, Bertrand. Wir sprechen später darüber.
+}

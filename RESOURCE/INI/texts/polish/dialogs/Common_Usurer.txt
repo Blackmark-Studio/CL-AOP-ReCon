@@ -1223,13 +1223,19 @@ Common_Usurer_359 {
 Chcecie, żebym odnalazł tego człowieka? Dlaczego sądzicie, że wciąż jest w mieście?
 }
 Common_Usurer_360 {
-Jest w mieście, zapewniam was. Dziś jeszcze nikt nie wypływał. A wy dostaniecie 10%% prowizji, czyli 3000 piastrów, jako nagrodę. Co powiecie?
+Jest w mieście, zapewniam pana. Dziś jeszcze żaden statek nie odpłynął. A w ramach premii otrzyma pan 10%%, czyli 3000 piastrów. Biorąc pod uwagę pańską sytuację... jestem gotów dać panu czas do jutra wieczorem. Potem wynajmę łowców nagród. Co pan na to?
 }
 Common_Usurer_361 {
 Wie pan co, chyba jednak pomogę.
 }
 Common_Usurer_362 {
 Na mnie nie liczcie.
+}
+Common_Usurer_362_1 {
+Doskonale. Biorąc pod uwagę pańską sytuację, jestem gotów poczekać do jutra wieczorem. Ale doktorze, proszę nie próbować mnie oszukać: wystarczy, że powiem pułkownikowi jedno słowo...
+}
+Common_Usurer_362_2 {
+Dość. Straciłem wolność, ale nie sumienie.
 }
 Common_Usurer_363 {
 No i co, udało ci się?

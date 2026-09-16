@@ -5,7 +5,7 @@ Bishop_2 {
 Hey, was schnüffelst du hier herum?! Willst du mich etwa ausrauben? Dann ist jetzt Schluss für dich...
 }
 Bishop_3 {
-Halt, wo glaubst du, willst du hin? Also bist du doch ein Dieb! Tja, sieht so aus, als hätte dich dein Glück verlassen, Freund…
+Halt, wo glaubst du, willst du hin? Also bist du doch ein Dieb! Tja, sieht so aus, als hätte dich dein Glück verlassen, Freund...
 }
 Bishop_4 {
 @<LinkRandPhrase>
@@ -26,7 +26,7 @@ Bishop_9 {
 Fehler
 }
 Bishop_10 {
-BetaTest – überspringen und Spiel starten.
+BetaTest - überspringen und Spiel starten.
 }
 Bishop_11 {
 Lord Gildoy ist schwer verletzt... Er ist hier im Haus... Ich habe ihn hereingeschleppt... Er hat mich geschickt, dich zu holen... Geh schnell zu ihm! Beeil dich!
@@ -35,7 +35,7 @@ Bishop_12 {
 Danke, Pitt... Ich gehe zu ihm, und du bleibst hier. Wenn du die königlichen Dragoner in diese Richtung reiten siehst, warne uns sofort.
 }
 Bishop_13 {
-BetaTest – Zum zweiten Auftrag.
+BetaTest - Zum zweiten Auftrag.
 }
 Bishop_14 {
 Peter, Colonel Bishop hat den ganzen Abend nach dir gesucht, die Frau des Gouverneurs hat wieder einen Anfall. Du musst sofort zur Residenz von Gouverneur Steed gehen.
@@ -59,7 +59,7 @@ Bishop_20 {
 Oh, hallo, Doktor Blood, ich bin so froh, dass Sie gekommen sind. Lord Gildoy ist schwer verletzt... Er liegt im Schlafzimmer oben, im Westflügel des Hauses...
 }
 Bishop_21 {
-Ich bin so schnell gekommen, wie ich konnte. Ich gehe sofort zu ihm – holt in der Zwischenzeit heißes Wasser und ein sauberes Handtuch.
+Ich bin so schnell gekommen, wie ich konnte. Ich gehe sofort zu ihm - holt in der Zwischenzeit heißes Wasser und ein sauberes Handtuch.
 }
 Bishop_22 {
 Ich bin Hauptmann Hobart von Colonel Kirks Dragonern. Verbergen Sie Rebellen? Wer ist der Krüppel, der im zweiten Stock liegt?
@@ -74,7 +74,7 @@ Bishop_25 {
 Ich wurde aufgehalten. Entschuldigen Sie, Gouverneur.
 }
 Bishop_26 {
-Ihre Männer haben mich festgehalten, Gouverneur Steed. Wie sich zeigt, lassen Ihre Befehle viel Raum für Auslegung – einige Personen behindern sogar aktiv meine Bemühungen, die spanischen Soldaten zu behandeln.
+Ihre Männer haben mich festgehalten, Gouverneur Steed. Wie sich zeigt, lassen Ihre Befehle viel Raum für Auslegung - einige Personen behindern sogar aktiv meine Bemühungen, die spanischen Soldaten zu behandeln.
 }
 Bishop_27 {
 Seien Sie gegrüßt, Doktor Blood. Was verschafft mir die Ehre Ihres Besuchs?
@@ -92,7 +92,7 @@ Bishop_31 {
 Oh, Doktor Blood! Endlich ... bitte, helfen Sie mir!
 }
 Bishop_32 {
-Guten Abend, Mrs. Steed. Keine Sorge, Sie müssen sich beruhigen und aufhören zu blinzeln – halten Sie durch und schauen Sie mich an, ich muss Ihre Augen sehen.
+Guten Abend, Mrs. Steed. Keine Sorge, Sie müssen sich beruhigen und aufhören zu blinzeln - halten Sie durch und schauen Sie mich an, ich muss Ihre Augen sehen.
 }
 Bishop_33 {
 Hey, Junge... Ich bin bei klarem Verstand und... und... gesund. Welche Gesundheit? Ach ja, nüchtern... ja, nüchtern. Weißt du, wie man ein... einfach verschwinden kann, und... und dann irgendwo wieder auftaucht... irgendwo ganz anders, nicht... nicht da, wo man verschwunden ist?
@@ -104,7 +104,7 @@ Bishop_35 {
 Das würde ich selbst gern wissen, mein alter Freund.
 }
 Bishop_36 {
-Doktor Blood, wie froh ich bin, Sie zu sehen! Ich habe Sie heute gesucht, aber meine Suche war vergeblich – Sie bewegen sich durch die Stadt wie ein Geist.
+Doktor Blood, wie froh ich bin, Sie zu sehen! Ich habe Sie heute gesucht, aber meine Suche war vergeblich - Sie bewegen sich durch die Stadt wie ein Geist.
 }
 Bishop_37 {
 Das Leben hat mich gut gelehrt. Wo finde ich Mr. Dan?
@@ -113,7 +113,7 @@ Bishop_38 {
 Guten Abend. Wo finde ich Mr. Dan?
 }
 Bishop_39 {
-Ich habe gehört, Mrs. Steed beansprucht ziemlich viel Ihrer Zeit. Nun ja, Jugend und gutes Aussehen, Dr. Blood! Jugend und Schönheit! Das verschafft einem Arzt einen gewissen Vorteil, besonders bei den Damen!
+Ah, da sind Sie ja, Doktor. Ich habe gehört, Mrs. Steed nimmt ziemlich viel von Ihrer Zeit in Anspruch. Nun ja, Jugend und gutes Aussehen, Dr. Blood! Jugend und Schönheit! Das verschafft einem Arzt einen großen Vorteil, besonders wenn er Damen behandelt!
 }
 Bishop_40 {
 Ich glaube, ich kann mir denken, was Sie im Sinn haben. Aber behalten Sie es nicht für sich, sondern teilen Sie es lieber Governor Steed mit. Vielleicht findet er es amüsant. Wenn das alles ist, dann erlauben Sie mir...
@@ -125,13 +125,13 @@ Bishop_42 {
 Mrs. Steed hatte plötzlich eine Migräneattacke, und ich wurde dringend zu ihr gerufen. Ich habe sie untersucht und sah mich gezwungen, zu dieser späten Stunde zu Ihnen zu kommen, um das notwendige Medikament zu holen. Da ich Sie nicht zu Hause antraf, beschloss ich zu warten, aber ich war gerade im Begriff zu gehen.
 }
 Bishop_43 {
-Mrs. Steed hatte plötzlich eine Migräneattacke, und ich wurde dringend zu ihr gerufen. Ich habe sie untersucht und musste Sie zu dieser späten Stunde wegen des benötigten Medikaments aufsuchen. Da ich Sie nicht finden konnte, habe ich mir erlaubt, das Medikament ohne Ihre Erlaubnis zu nehmen – die Lage ist äußerst ernst. Entschuldigen Sie bitte.
+Mrs. Steed hatte plötzlich eine Migräneattacke, und ich wurde dringend zu ihr gerufen. Ich habe sie untersucht und musste Sie zu dieser späten Stunde wegen des benötigten Medikaments aufsuchen. Da ich Sie nicht finden konnte, habe ich mir erlaubt, das Medikament ohne Ihre Erlaubnis zu nehmen - die Lage ist äußerst ernst. Entschuldigen Sie bitte.
 }
 Bishop_44 {
 Ich wollte nur kurz Bescheid geben, dass Dr. Wacker nach Ihnen gesucht hat, Mr. Dan.
 }
 Bishop_45 {
-Was zum Teufel platzt du hier ohne Anklopfen rein, verdammt—ach, du bist es, Doctor Blood!
+Was zum Teufel platzt du hier ohne Anklopfen rein, verdammt-ach, du bist es, Doctor Blood!
 }
 Bishop_46 {
 Guten Tag, Mr. Griffin. Entschuldigen Sie meinen unangekündigten Besuch, aber ich habe ein dringendes Anliegen, das keinen Aufschub duldet.
@@ -179,7 +179,7 @@ Bishop_60 {
 Hallo, Doktor Blood. Wenn jemand erfährt, dass Sie mit mir gesprochen haben, werden Sie zu Tode ausgepeitscht. Also gehen Sie besser weiter.
 }
 Bishop_61 {
-Man könnte mich auch so zu Tode auspeitschen... Trotzdem, du hast recht – es ist Zeit, dass ich gehe.
+Man könnte mich auch so zu Tode auspeitschen... Trotzdem, du hast recht - es ist Zeit, dass ich gehe.
 }
 Bishop_62 {
 Hey, du! Warte mal...
@@ -206,7 +206,7 @@ Bishop_69 {
 Aber warum? Hast du an etwas Zweifel?
 }
 Bishop_70 {
-Grüß dich, Peter. Die Hand, die du behandelt hast, ist vollständig verheilt – danke dir.
+Grüß dich, Peter. Die Hand, die du behandelt hast, ist vollständig verheilt - danke dir.
 }
 Bishop_71 {
 Ich freue mich, dass du wieder gesund bist.
@@ -236,10 +236,10 @@ Bishop_79 {
 Freundlich.
 }
 Bishop_80 {
-Die Frau des Gouverneurs hat wieder einen Anfall. Geh sofort zur Residenz von Steed und tu, was nötig ist.\nWenn du fertig bist, komm direkt hierher zurück… und der Himmel möge dir helfen, falls ich dich bei spanischen Patienten erwische!\nMorgen finde ich eine wichtigere Aufgabe für dich. Jetzt geh…
+Die Frau des Gouverneurs hat wieder einen Anfall. Geh sofort zur Residenz von Steed und tu, was nötig ist\nVor dem Morgen brauchst du nicht zurückzukommen. Aber bilde dir nicht ein, du könntest nachts herumlaufen, wo es dir gefällt. Heute machen die Wachen für dich eine Ausnahme; morgen ziehen sie dir bei lebendigem Leib die Haut ab, wenn du nach Einbruch der Dunkelheit auch nur die Nase aus der Baracke steckst\nBei Tagesanbruch meldest du dich hier. Ich finde eine wichtigere Arbeit für dich. Jetzt geh...
 }
 Bishop_81 {
-...da wären noch Wacker und Bronson, die du dem Gouverneur jederzeit empfehlen kannst, mit dem Hinweis auf meine große Auslastung auf der Plantage. Sie sind zwar nicht die besten Ärzte, aber gebildet und fleißig. Falls Gouverneur Steed dennoch auf einem Bericht über die Verwundeten besteht, bleibt mir nichts anderes übrig, als ihm selbst zu antworten und anschließend die armen Leute aufzusuchen und zu untersuchen.
+...da wären Wacker und Bronson, die du dem Gouverneur jederzeit empfehlen kannst, mit dem Hinweis auf meine große Auslastung auf der Plantage. Sie sind zwar nicht die besten Ärzte, aber gebildet und fleißig.
 }
 Bishop_82 {
 Verschwinde hier, du nutzloser Nichtsnutz, sonst lasse ich dich in Ketten legen!
@@ -248,19 +248,19 @@ Bishop_83 {
 Wie du sagst.
 }
 Bishop_84 {
-Wag es ja nicht, mir Befehle zu erteilen, Hund! Kümmere dich sofort um die vornehme Familie Steed, sonst wird die Nachsicht des Patienten zur kalten Gleichgültigkeit eines Politikers.\nDann wirst du schon sehen, wie es ist, auf einer Plantage auf den Feldern zu schuften, statt nach Belieben durch die Stadt zu streifen! Vergiss deinen Platz nicht, Sklave\nUnd vergiss nicht, Blood, auf dieser Plantage herrscht eine Ausgangssperre: Wenn du auch nur einmal nach fünf Uhr abends auftauchst, werde ich dir persönlich die Hölle heiß machen, du Sklavenaas, an diesem gottverlassenen Ort! Für heute scher dich fort und lass dich – als Ausnahme – nicht vor dem Morgen wieder blicken. Ab mit dir!
+Wag es nicht, mich zu unterbrechen, Hund! Kümmere dich sofort um die vornehme Familie Steed, sonst wird die Nachsicht des Patienten zur kalten Gleichgültigkeit eines Politikers\nDann wirst du schon sehen, wie es ist, auf einer Plantage auf den Feldern zu schuften, statt nach Belieben durch die Stadt zu streifen! Vergiss deinen Platz nicht, Sklave\nRaus!
 }
 Bishop_85 {
-Ich nehme an, Sie gehen ein ziemliches Risiko ein, mich hier zu behalten, während Mrs. Steed dringend Hilfe braucht.
+...
 }
 Bishop_86 {
-Wenn du dich in meine Angelegenheiten einmischst, Schönling, werde ich Maßnahmen ergreifen, damit du nicht weiter herumlungerst und den dir gewährten Freiraum ausnutzt. Vergiss nicht – du bist ein verurteilter Meuterer!
+Verschwinde! Oder ich schwöre, du wirst dir zusammen mit den anderen auf den Feldern den Rücken krummarbeiten.
 }
 Bishop_87 {
-Daran werde ich ständig erinnert.
+...
 }
 Bishop_88 {
-Du streifst den ganzen Tag ziellos umher! Soweit ich weiß, geht es dem Gouverneur und seiner Frau bestens. Vielleicht sollte ich dir für eine Weile den Zutritt zur Stadt verwehren?
+Du streifst den ganzen Tag ziellos umher! Soweit ich weiß, sind diese verdammten spanischen Hunde auf dem Weg der Besserung, und dem Gouverneur und seiner Frau geht es bestens. Vielleicht sollte ich dir für eine Weile den Zutritt zur Stadt verwehren?
 }
 Bishop_89 {
 Haben Sie vor, Nicholas Dyke zu verkaufen?
@@ -284,7 +284,7 @@ Bishop_95 {
 In Ordnung.
 }
 Bishop_96 {
-Ich bringe alles, was Sie verlangt haben. Bitte beeilen Sie sich – mein Herr ist in einem schlimmen Zustand!
+Ich bringe alles, was Sie verlangt haben. Bitte beeilen Sie sich - mein Herr ist in einem schlimmen Zustand!
 }
 Bishop_97 {
 Ich werde alles tun, was ich kann.
@@ -299,7 +299,7 @@ Bishop_100 {
 Was ist mit Lord Gildoy? Wird er überleben?
 }
 Bishop_101 {
-Das Schlimmste ist vorbei. Ich habe seine Wunden versorgt und ihm Medizin gegeben – jetzt wird er wieder gesund, aber er braucht absolute Ruhe…
+Das Schlimmste ist vorbei. Ich habe seine Wunden versorgt und ihm Medizin gegeben - jetzt wird er wieder gesund, aber er braucht absolute Ruhe...
 }
 Bishop_102 {
 Ich finde, du solltest auf Jeremy Pitts Rat hören und dir eine Waffe besorgen.
@@ -317,7 +317,7 @@ Bishop_106 {
 Ach, jetzt soll ich mich also auch noch um die Gesundheit der Rebellen kümmern?! Verdammt! Glaubst du, wir werden ihn etwa behandeln? Die Straße von Weston nach Bridgewater ist gesäumt von Galgen, und an jedem davon wäre für ihn Platz. Colonel Kirk wird diesen törichten Protestanten eine Lektion erteilen, die ihre Kinder, Enkel und Urenkel so schnell nicht vergessen werden!
 }
 Bishop_107 {
-Meinetwegen, aber wenn du das tust, fürchte ich, dass du morgen selbst am Galgen endest. Er ist nicht jemand, den man einfach wortlos aufhängen kann. Er hat das Recht, ein Verfahren zu verlangen – ein Verfahren vor seinesgleichen.
+Meinetwegen, aber wenn du das tust, fürchte ich, dass du morgen selbst am Galgen endest. Er ist nicht jemand, den man einfach wortlos aufhängen kann. Er hat das Recht, ein Verfahren zu verlangen - ein Verfahren vor seinesgleichen.
 }
 Bishop_108 {
 Die Schiffe der Adligen?
@@ -335,13 +335,13 @@ Bishop_112 {
 Umso schlimmer für ihn. Mein Auftrag ist es, Aufrührer festzunehmen!\nUnd wer ist der Kerl, der sich im Kamin versteckt? Noch ein Edelmann? Ich werde persönlich dafür sorgen, dass er gehängt wird.
 }
 Bishop_113 {
-Ihr habt richtig geraten, Captain. Das ist Viscount Pitt, ein Cousin von Sir Thomas Vernon, der mit der reizenden Molly Kirk verheiratet ist – der Schwester eures Colonels.
+Ihr habt richtig geraten, Captain. Das ist Viscount Pitt, ein Cousin von Sir Thomas Vernon, der mit der reizenden Molly Kirk verheiratet ist - der Schwester eures Colonels.
 }
 Bishop_114 {
 Du lügst, oder? Beim Himmel, er macht sich über mich lustig!
 }
 Bishop_115 {
-Wenn du dir so sicher bist, dann häng ihn doch – und dann wirst du sehen, was sie mit dir machen.
+Wenn du dir so sicher bist, dann häng ihn doch - und dann wirst du sehen, was sie mit dir machen.
 }
 Bishop_116 {
 Teufel. Wer zum Teufel bist du, verdammt noch mal? Und wie bist du hierher gekommen?
@@ -356,7 +356,7 @@ Bishop_119 {
 Auf keinen Fall. Das kann ich nicht zulassen!
 }
 Bishop_120 {
-Da ist er – schnapp ihn dir!
+Da ist er - schnapp ihn dir!
 }
 Bishop_121 {
 Packt ihn, Jungs!
@@ -383,10 +383,10 @@ Bishop_128 {
 Wohin glaubst du, gehst du?
 }
 Bishop_129 {
-Mein Name ist Peter Blood. Ich bin im Auftrag von Colonel Bishop hier – ich wurde beauftragt, die Frau des Gouverneurs zu untersuchen und zu behandeln.
+Mein Name ist Peter Blood. Ich bin im Auftrag von Colonel Bishop hier - ich wurde beauftragt, die Frau des Gouverneurs zu untersuchen und zu behandeln.
 }
 Bishop_130 {
-Ja, ich erinnere mich an dich. Du hast meinen Bruder und die anderen von der Pride of Devon verarztet, und all diese spanischen Bastarde, die irgendwie überlebt haben.\nBronson ist mein Freund... und du saugst ihm das Leben aus, genau wie bei Wacker, immer schaffst du es, überall gleichzeitig zu sein. So gerissene Sklaven wie du sind selten – und sie halten nie lange durch.
+Ja, ich erinnere mich an dich. Du bist derjenige, der sich um diesen spanischen Abschaum gekümmert hat, der seine Begegnung mit unserer Pride of Devon irgendwie überlebt hat.\nBronson ist mein Freund... und du saugst ihn aus, genau wie Wacker, und schaffst es immer, überall gleichzeitig zu sein. So gerissene Sklaven wie du sind selten - und sie halten nie lange durch.
 }
 Bishop_131 {
 Entschuldigen Sie, aber die Frau des Gouverneurs ist momentan unwohl. Wenn Sie mich aufhalten, riskieren Sie, in derselben Zelle wie der „spanische Abschaum“ zu landen.
@@ -428,7 +428,7 @@ Bishop_143 {
 Darf ich sie sehen?
 }
 Bishop_144 {
-Ja, ja, natürlich – sie ist im Schlafzimmer im zweiten Stock. Dort drüben – die Tür zu deiner Rechten und dann die Treppe hinauf. Geh nur.
+Ja, ja, natürlich - sie ist im Schlafzimmer im zweiten Stock. Dort drüben - die Tür zu deiner Rechten und dann die Treppe hinauf. Geh nur.
 }
 Bishop_145 {
 Doktor Blood, bitte untersuchen Sie meine Frau so bald wie möglich.
@@ -476,7 +476,7 @@ Bishop_159 {
 Natürlich. Ich muss mich beeilen.
 }
 Bishop_160 {
-Das ist eine beträchtliche Summe, Doktor. Ich stelle sie zur Verfügung, aber ich erwarte einen vollständigen Bericht, wenn Sie zurückkehren – ich werde alles überprüfen.
+Das ist eine beträchtliche Summe, Doktor. Ich stelle sie zur Verfügung, aber ich erwarte einen vollständigen Bericht, wenn Sie zurückkehren - ich werde alles überprüfen.
 }
 Bishop_161 {
 Ich muss mich beeilen.
@@ -491,7 +491,7 @@ Bishop_164 {
 Können Sie etwas tun, Doktor?
 }
 Bishop_165 {
-Sieht so aus, als kämen wir nicht ohne Medizin aus, aber die Apotheke ist schon seit einiger Zeit geschlossen. Ich muss zu Mr. Dan nach Hause gehen, um alles zu besorgen, was wir brauchen. Trink etwas warmes Wasser und warte auf mich – ich bin so schnell wie möglich zurück!
+Sieht so aus, als kämen wir nicht ohne Medizin aus, aber die Apotheke ist schon seit einiger Zeit geschlossen. Ich muss zu Mr. Dan nach Hause gehen, um alles zu besorgen, was wir brauchen. Trink etwas warmes Wasser und warte auf mich - ich bin so schnell wie möglich zurück!
 }
 Bishop_166 {
 Haben Sie die Medizin mitgebracht, Doktor?
@@ -503,7 +503,7 @@ Bishop_168 {
 Noch nicht, ich war gerade auf dem Weg, sie zu holen.
 }
 Bishop_169 {
-Hallo, Doktor Blood. Mir geht es schon viel besser, und es sieht so aus, als würde ich wirklich genesen – und das alles dank Ihnen.
+Hallo, Doktor Blood. Mir geht es schon viel besser, und es sieht so aus, als würde ich wirklich genesen - und das alles dank Ihnen.
 }
 Bishop_170 {
 Danke, Mrs. Steed. Ich bin hier, um...
@@ -542,7 +542,7 @@ Bishop_181 {
 Alles Gute.
 }
 Bishop_182 {
-Ähm... falls du etwas herausfindest... falls dir eine Lösung einfällt, dann... lass mich nicht zurück – ich helfe dir. Wi... wirklich.
+Ähm... falls du etwas herausfindest... falls dir eine Lösung einfällt, dann... lass mich nicht zurück - ich helfe dir. Wi... wirklich.
 }
 Bishop_183 {
 Geh nach Hause, alter Seebär. Du brauchst Schlaf.
@@ -563,10 +563,10 @@ Bishop_188 {
 Hier sind fünfundzwanzigtausend für dich. Kümmere dich sofort um den Kauf und alles Weitere, mein Freund. Enttäusch mich nicht.
 }
 Bishop_189 {
-Sei bereit – sobald ich die nötige Summe beisammen habe, wirst du den Kauf der Schaluppe übernehmen.
+Sei bereit - sobald ich die nötige Summe beisammen habe, wirst du den Kauf der Schaluppe übernehmen.
 }
 Bishop_190 {
-Nun, ich habe wohl keine große Wahl... so wie es aussieht.
+Ich werde alles arrangieren, Doktor. Ich habe diese Insel genauso satt wie Sie.
 }
 Bishop_191 {
 Beeil dich.
@@ -581,7 +581,7 @@ Bishop_194 {
 Hast du das Geld mitgebracht?
 }
 Bishop_195 {
-Hier sind fünfundzwanzigtausend für dich. Kümmere dich sofort um den Kauf und alles Weitere, mein Freund. Enttäusch mich nicht.
+Hier sind fünfundzwanzigtausend. Kümmere dich sofort um den Kauf und versuch, nicht zu viel Aufmerksamkeit zu erregen. Unser Schicksal liegt jetzt in deinen Händen. Sobald die Schaluppe bereit ist, sag mir Bescheid - ich helfe dabei, Waffen und Vorräte an Bord zu bringen.
 }
 Bishop_196 {
 Noch nicht.
@@ -590,19 +590,19 @@ Bishop_197 {
 Hicks... Himmel noch mal! Wie ist das überhaupt möglich?
 }
 Bishop_198 {
-Gut, ich kümmere mich um alles. Du musst nur zur Werft gehen und eine Schaluppe kaufen – ich bringe dir das Geld. Geh in die Taverne; wir erregen hier zu viel Aufmerksamkeit.
+Gut, ich kümmere mich um alles. Du musst nur zur Werft gehen und eine Schaluppe kaufen - ich bringe dir das Geld. Geh in die Taverne; wir erregen hier zu viel Aufmerksamkeit.
 }
 Bishop_199 {
 Ich würde selbst gern wissen, wo er steckt. Ich warte hier schon seit über einer Stunde, aber er lässt sich nicht blicken. Vielleicht hat der arme Kerl sich ins Koma getrunken? Hm.\nIn der Zwischenzeit habe ich etwas mit dir zu besprechen...
 }
 Bishop_200 {
-Ich habe es sehr eilig, Doktor Wacker. Ich muss Mr. Dan so schnell wie möglich finden – Mrs. Steed hat wieder eine Migräneattacke. Wir müssen unser Gespräch verschieben.
+Ich habe es sehr eilig, Doktor Wacker. Ich muss Mr. Dan so schnell wie möglich finden - Mrs. Steed hat wieder eine Migräneattacke. Wir müssen unser Gespräch verschieben.
 }
 Bishop_201 {
 Ich würde selbst gern wissen, wo er steckt. Ich warte hier schon seit einer Stunde und von ihm fehlt immer noch jede Spur. Vielleicht hat der arme Kerl sich ins Koma getrunken? Hm.\nIn der Zwischenzeit habe ich etwas mit dir zu besprechen...
 }
 Bishop_202 {
-Ich habe es sehr eilig, Doktor Wacker. Ich muss Mr. Dan so schnell wie möglich finden – Mrs. Steed hat wieder eine Migräneattacke. Wir müssen unser Gespräch verschieben.
+Ich habe es sehr eilig, Doktor Wacker. Ich muss Mr. Dan so schnell wie möglich finden - Mrs. Steed hat wieder eine Migräneattacke. Wir müssen unser Gespräch verschieben.
 }
 Bishop_203 {
 Ich verstehe. Nun, wir müssen nicht alles hier und jetzt besprechen. Ich denke, ich gehe jetzt, und du kannst, wenn du möchtest, auf Dan warten. Wir reden morgen. Sobald du einen Moment Zeit hast, komm in die Taverne. Ich zähle wirklich auf dich.
@@ -611,19 +611,19 @@ Bishop_204 {
 Auf Wiedersehen.
 }
 Bishop_205 {
-Sei nicht so aufbrausend, mein Freund. Du hast mich falsch verstanden – so etwas hatte ich nie im Sinn. Ich will dir helfen! Schließlich muss die Sklaverei für jemanden mit deinen Fähigkeiten schrecklich sein.
+Sei nicht so aufbrausend, mein Freund. Du hast mich falsch verstanden - so etwas hatte ich nie im Sinn. Ich will dir helfen! Schließlich muss die Sklaverei für jemanden mit deinen Fähigkeiten schrecklich sein.
 }
 Bishop_206 {
 Aufmerksam. Worauf willst du hinaus?
 }
 Bishop_207 {
-Ich bin doch kein Narr, lieber Kollege. Ich durchschau die Menschen—und manchmal weiß ich sogar, was sie denken.
+Ich bin doch kein Narr, lieber Kollege. Ich durchschau die Menschen-und manchmal weiß ich sogar, was sie denken.
 }
 Bishop_208 {
 Du überzeugst mich, wenn du mir sagen kannst, woran ich gerade denke.
 }
 Bishop_209 {
-Mehr als einmal habe ich beobachtet, wie du sehnsüchtig aufs Meer hinausgeblickt hast. Glaubst du wirklich, ich wüsste nicht, was dir durch den Kopf geht? Heh.\nWenn es dir gelingen würde, diesem Elend zu entkommen, könntest du dich als freier Mensch ganz deinem Handwerk widmen—einem Handwerk, das du wirklich meisterhaft ausübst—mit Freude und Gewinn.\nDie Welt ist groß, und neben England gibt es viele Länder, in denen jemand wie du stets herzlich aufgenommen würde. Es gibt auch andere Kolonien als die englischen.\nDie niederländische Kolonie Curaçao ist nicht weit von hier. Zu dieser Jahreszeit könntest du sie sogar mit einem kleinen Schiff erreichen. Curaçao könnte dein Tor zur weiten Welt sein. Sie wird sich dir öffnen, sobald du deine Fesseln sprengst. Und noch etwas—
+Mehr als einmal habe ich beobachtet, wie du sehnsüchtig aufs Meer hinausgeblickt hast. Glaubst du wirklich, ich wüsste nicht, was dir durch den Kopf geht? Heh.\nWenn es dir gelingen würde, diesem Elend zu entkommen, könntest du dich als freier Mensch ganz deinem Handwerk widmen-einem Handwerk, das du wirklich meisterhaft ausübst-mit Freude und Gewinn.\nDie Welt ist groß, und neben England gibt es viele Länder, in denen jemand wie du stets herzlich aufgenommen würde. Es gibt auch andere Kolonien als die englischen.\nDie niederländische Kolonie Curaçao ist nicht weit von hier. Zu dieser Jahreszeit könntest du sie sogar mit einem kleinen Schiff erreichen. Curaçao könnte dein Tor zur weiten Welt sein. Sie wird sich dir öffnen, sobald du deine Fesseln sprengst. Und noch etwas-
 Die Niederländer sollten dich nach deinem ausgezeichneten Dienst in ihrer Flotte der Alten Welt sehr schätzen.\nWas hältst du davon?
 }
 Bishop_210 {
@@ -648,10 +648,10 @@ Bishop_216 {
 Also, bist du einverstanden?
 }
 Bishop_217 {
-Um zu entkommen, brauchst du nicht nur Mut – du brauchst auch Geld. Eine Schaluppe kostet vermutlich etwa zwanzigtausend.
+Um zu entkommen, brauchst du nicht nur Mut - du brauchst auch Geld. Eine Schaluppe kostet vermutlich etwa zwanzigtausend.
 }
 Bishop_218 {
-Du bekommst dein Geld! Sieh es als ein Darlehen an – du zahlst es uns zurück… zahlst es mir zurück, wenn du kannst.
+Du bekommst dein Geld! Sieh es als ein Darlehen an - du zahlst es uns zurück... zahlst es mir zurück, wenn du kannst.
 }
 Bishop_219 {
 Ich muss mich vorbereiten, alles überdenken und mit den richtigen Leuten sprechen. Morgen setzen wir unser Gespräch fort. Sie haben mir Hoffnung gegeben, Kollege!
@@ -684,7 +684,7 @@ Bishop_228 {
 Da ist Nettall, der Zimmermann. Ich habe ihn einmal in der Stadt gesehen.
 }
 Bishop_229 {
-Auf der Insel gibt es nicht nur Sklaven, sondern auch Verbannte – Menschen, die ihre Strafe wegen Schulden absitzen. Sie würden sich freuen, wieder frei zu sein. Ich glaube, jeder von ihnen würde die Gelegenheit zur Flucht gern ergreifen.
+Auf der Insel gibt es nicht nur Sklaven, sondern auch Verbannte - Menschen, die ihre Strafe wegen Schulden absitzen. Sie würden sich freuen, wieder frei zu sein. Ich glaube, jeder von ihnen würde die Gelegenheit zur Flucht gern ergreifen.
 }
 Bishop_230 {
 Danke, mein Freund!
@@ -702,13 +702,13 @@ Bishop_234 {
 Danke.
 }
 Bishop_235 {
-Was für ein Albtraum! Hier, ich habe ein Fläschchen dabei—nehmen Sie es. Ich leide selbst seit Tagen darunter, deshalb habe ich immer eines griffbereit. Aber es ist schon in Ordnung, ich habe noch etwas auf Vorrat. Nehmen Sie es, Doktor—das ist meine Bürgerpflicht!
+Was für ein Albtraum! Hier, ich habe ein Fläschchen dabei-nehmen Sie es. Ich leide selbst seit Tagen darunter, deshalb habe ich immer eines griffbereit. Aber es ist schon in Ordnung, ich habe noch etwas auf Vorrat. Nehmen Sie es, Doktor-das ist meine Bürgerpflicht!
 }
 Bishop_236 {
 Ausgezeichnet. Dann werde ich mich wohl beeilen und zu Mrs. Steed gehen.
 }
 Bishop_237 {
-Oh nein! Mrs. Steeds Gesundheit steht auf dem Spiel – du hast das Richtige getan! Beeil dich jetzt!
+Oh nein! Mrs. Steeds Gesundheit steht auf dem Spiel - du hast das Richtige getan! Beeil dich jetzt!
 }
 Bishop_238 {
 Natürlich.
@@ -726,7 +726,7 @@ Bishop_242 {
 Guten Tag, Mr. Dan. Ich bin im Auftrag von Seiner Exzellenz, Gouverneur Steed, hier. Ich benötige dringend Ihr wunderbares Mittel gegen Migräne.
 }
 Bishop_243 {
-Oh, natürlich, hier bitte—ich habe noch ein wenig übrig. Grüßen Sie den Gouverneur von mir.
+Oh, natürlich, hier bitte-ich habe noch ein wenig übrig. Grüßen Sie den Gouverneur von mir.
 }
 Bishop_244 {
 Danke. Gestatten Sie mir, mich zu verabschieden.
@@ -750,13 +750,13 @@ Bishop_250 {
 Vielen Dank. Trotzdem bezweifle ich, dass Colonel Bishop mir Platz für ein alchemistisches Labor gewähren wird.
 }
 Bishop_251 {
-Doktor Blood, dieses Medikament ist kein Stein der Weisen. Ein Mörser, ein Stößel und eine Öllampe reichen völlig aus, um einen Sud langsam zu kochen. Hier, nehmen Sie das – ich habe immer Ersatzwerkzeug dabei.
+Doktor Blood, dieses Medikament ist kein Stein der Weisen. Ein Mörser, ein Stößel und eine Öllampe reichen völlig aus, um einen Sud langsam zu kochen. Hier, nehmen Sie das - ich habe immer Ersatzwerkzeug dabei.
 }
 Bishop_252 {
 Danke, Mr. Dan. Alles Gute.
 }
 Bishop_253 {
-Normalerweise habe ich dieses Medikament immer bei mir, aber leider habe ich gerade mein letztes Fläschchen aufgebraucht – ich leide selbst schon seit Tagen darunter. Zu Hause habe ich jedoch noch etwas davon. Du kannst es von meinem Apothekertisch nehmen, gleich neben der Waage.
+Normalerweise habe ich dieses Medikament immer bei mir, aber leider habe ich gerade mein letztes Fläschchen aufgebraucht - ich leide selbst schon seit Tagen darunter. Zu Hause habe ich jedoch noch etwas davon. Du kannst es von meinem Apothekertisch nehmen, gleich neben der Waage.
 }
 Bishop_254 {
 Ausgezeichnet. Dann sollte ich mich besser beeilen.
@@ -765,13 +765,13 @@ Bishop_255 {
 Was? Wovon sprichst du?
 }
 Bishop_256 {
-Ich spreche von der Gelegenheit, morgen früh in der Werft eine Schaluppe zu kaufen, eine Mannschaft von der Plantage und aus der Stadt zusammenzustellen – natürlich nur mit Leuten, denen wir wirklich vertrauen können – und dann Kurs auf den Südwesten zu nehmen, in Richtung der niederländischen Kolonie Curaçao.
+Ich spreche von der Gelegenheit, morgen früh in der Werft eine Schaluppe zu kaufen, eine Mannschaft von der Plantage und aus der Stadt zusammenzustellen - natürlich nur mit Leuten, denen wir wirklich vertrauen können - und dann Kurs auf den Südwesten zu nehmen, in Richtung der niederländischen Kolonie Curaçao.
 }
 Bishop_257 {
-Sind Sie verrückt geworden, Doktor? Wir haben kein Geld, keinen Einfluss bei den Sklaven, keinen Kontakt in der Stadt – nichts davon, und wir könnten es auch niemals bekommen.
+Sind Sie verrückt geworden, Doktor? Wir haben kein Geld, keinen Einfluss bei den Sklaven, keinen Kontakt in der Stadt - nichts davon, und wir könnten es auch niemals bekommen.
 }
 Bishop_258 {
-Hör mir zu, Jeremy Pitt. Du bist der Einzige von uns, der navigieren kann. Ohne dich werde ich mein Ziel nie erreichen, selbst wenn ich die Mannschaft zusammentrommle und morgen kurz nach Mitternacht sicher mit der Schaluppe auslaufe. Ich brauche dich jetzt genauso sehr, wie du mich damals auf Oglethorpe’s Anwesen gebraucht hast…
+Hör mir zu, Jeremy Pitt. Du bist der Einzige von uns, der navigieren kann. Ohne dich werde ich mein Ziel nie erreichen, selbst wenn ich die Mannschaft zusammentrommle und morgen kurz nach Mitternacht sicher mit der Schaluppe auslaufe. Ich brauche dich jetzt genauso sehr, wie du mich damals auf Oglethorpe’s Anwesen gebraucht hast...
 }
 Bishop_259 {
 Willst du hier raus oder nicht?
@@ -789,10 +789,10 @@ Bishop_263 {
 Denk daran, wenn du dich verrätst, ist alles verloren: Du bist der einzige Navigator unter uns, und ohne dich ist eine Flucht unmöglich.
 }
 Bishop_264 {
-Wann brechen wir auf, Peter?
+Wie läuft es, Peter?
 }
 Bishop_265 {
-Ich habe die Waffen besorgt und mit den Jungs einen Deal gemacht. Jetzt fehlt nur noch, dass wir eine Schaluppe kaufen. Bis morgen Abend sind wir weit weg von hier!
+Ich habe die Waffen besorgt und mit den Jungs alles vereinbart. Jetzt muss ich nur noch das Geld von Wacker holen und ein geeignetes Schiff finden...
 }
 Bishop_266 {
 Stell eine Mannschaft zusammen und bereite alles vor. Ich warte hier auf dich.
@@ -801,25 +801,25 @@ Bishop_267 {
 Bis bald.
 }
 Bishop_268 {
-Peter, die Dragoner des Tangier-Regiments reiten hierher – sie suchen nach den Rebellen…
+Peter, die Dragoner des Tangier-Regiments reiten hierher - sie suchen nach den Rebellen...
 }
 Bishop_269 {
 Ich glaube, wir haben nichts zu befürchten, da wir in einem christlichen Land leben und Christen weder Verwundete noch deren Helfer angreifen. Aber Pitt wäre besser dran, wenn er irgendwo untertauchen würde.
 }
 Bishop_270 {
-In Ordnung, ich verstecke mich im Kamin, aber du kennst Colonel Kirk nicht – er ist der Teufel in Person. Und du hast nicht einmal ein Schwert, um dich zu verteidigen.\nNimm meins, ich habe es in einer Truhe auf dem Balkon versteckt. Beeil dich, die Dragoner stürmen jeden Moment das Anwesen.
+In Ordnung, ich verstecke mich im Kamin, aber du kennst Colonel Kirk nicht - er ist der Teufel in Person. Und du hast nicht einmal ein Schwert, um dich zu verteidigen.\nNimm meins, ich habe es in einer Truhe auf dem Balkon versteckt. Den Schlüssel findest du auf dem Tisch in der Haupthalle. Beeil dich, die Dragoner stürmen jeden Moment das Anwesen.
 }
 Bishop_271 {
 Danke, ich hole es, aber ich hoffe, dass ich es nicht brauchen werde.
 }
 Bishop_272 {
-Hallo, Peter. Heute ist es genau ein Monat her, seit wir auf Colonel Bishops Zuckerplantagen arbeiten. Manchmal denke ich, es wäre besser gewesen, wenn sie uns einfach hingerichtet hätten – so schwer ist es hier. Alle sind so erschöpft, dass sie einfach umfallen.\nErst gestern wurde der ehemalige Schmied aus Bridgewater zu Tode gepeitscht, als Warnung für uns alle, nur weil er es gewagt hat, sich gegen die Grausamkeit von Aufseher Kent zu wehren. Wir müssen etwas unternehmen, Peter, sonst überleben wir den Winter nicht.
+Hallo, Peter. Heute sind es genau drei Monate, seit wir auf Bishops Plantagen arbeiten. Manchmal denke ich, es wäre besser gewesen, wenn sie uns einfach hingerichtet hätten - so hart ist es hier. Alle sind so erschöpft, dass sie im Stehen umfallen.\nErst gestern wurde der ehemalige Schmied aus Bridgewater zu Tode gepeitscht, als Warnung für uns alle, nur weil er es gewagt hat, sich gegen die Grausamkeit von Aufseher Kent zu wehren. Wir müssen etwas unternehmen, Peter, sonst überleben wir den Winter nicht.
 }
 Bishop_273 {
 Ich denke ständig darüber nach, aber einfach so von hier zu fliehen, ohne Hilfe von außen, ist viel zu riskant. Sieh dir nur den armen Kerl an, der vor zwei Wochen versucht hat zu entkommen und erwischt wurde. Sie haben ihn ausgepeitscht und dann die Buchstaben „E.C.“ auf seine Stirn gebrannt, damit jeder für den Rest seines Lebens weiß, dass er ein entflohener Sträfling ist.
 }
 Bishop_274 {
-Zum Glück für den armen Kerl ist er an den Schlägen gestorben.\nAber ich bin nicht zu dir gekommen, um mich über Schwierigkeiten zu beklagen – ich wollte dir nur sagen, dass Bishop aus irgendeinem Grund nach dir sucht. Versuch, ihn nicht zu verärgern, sonst stehen wir am Ende noch ohne deine medizinische Hilfe da.
+Zum Glück für den armen Kerl ist er an den Schlägen gestorben.\nAber ich bin nicht zu dir gekommen, um mich über Schwierigkeiten zu beklagen - ich wollte dir nur sagen, dass Bishop aus irgendeinem Grund nach dir sucht. Versuch, ihn nicht zu verärgern, sonst stehen wir am Ende noch ohne deine medizinische Hilfe da.
 }
 Bishop_275 {
 Danke, Pitt. Dann gehe ich zu ihm, und ich verspreche, ich werde so sanftmütig wie ein Lamm sein.
@@ -846,7 +846,7 @@ Bishop_282 {
 Nettall ist entkommen.
 }
 Bishop_283 {
-Zum Teufel mit Nuttall! Wir finden schon einen Weg. Notfalls stehlen wir eine Schaluppe! Wolverstone und die anderen warten bereits in der Stadt auf uns – wir müssen sie warnen, bevor sie erwischt werden!
+Zum Teufel mit Nuttall! Wir finden schon einen Weg. Notfalls stehlen wir eine Schaluppe! Wolverstone und die anderen warten bereits in der Stadt auf uns - wir müssen sie warnen, bevor sie erwischt werden!
 }
 Bishop_284 {
 Dann lauf in die Stadt und warne die anderen, du kannst später zurückkommen und mich holen.
@@ -861,16 +861,16 @@ Bishop_287 {
 Wir nehmen dich mit.
 }
 Bishop_288 {
-Glückwunsch, Peter, die Jungs haben mir vom Kampf mit den Spaniern erzählt. Schade, dass ich nicht dabei war! Und danke dir – dieser Sandro hat mir bei der Flucht von der Plantage geholfen und ist dann im Dschungel verschwunden. Er meinte, jemand würde auf ihn warten. Keine Ahnung, was er damit meinte, aber das Wichtigste ist, wir sind von dieser verfluchten Insel runtergekommen!
+Glückwunsch, Peter, die Jungs haben mir vom Kampf mit den Spaniern erzählt. Schade, dass ich nicht dabei war! Und danke dir - dieser Sandro hat mir bei der Flucht von der Plantage geholfen und ist dann im Dschungel verschwunden. Er meinte, jemand würde auf ihn warten. Keine Ahnung, was er damit meinte, aber das Wichtigste ist, wir sind von dieser verfluchten Insel runtergekommen!
 }
 Bishop_289 {
 Schön, dich wieder auf den Beinen zu sehen, mein Freund. Leider sind wir noch nicht entkommen. Wir müssen erst offenes Gewässer erreichen und entscheiden, wohin wir fahren.
 }
 Bishop_290 {
-Ja, für uns gibt es keine Rückkehr nach England – dort würden sie uns sofort aufhängen. In Spanien oder Holland wären wir auch nicht sicher. Das gilt ebenso für all ihre Kolonien. Bleiben nur die französischen Kolonien oder ein Leben als Piraten.
+Ja, für uns gibt es keine Rückkehr nach England - dort würden sie uns sofort aufhängen. In Spanien oder Holland wären wir auch nicht sicher. Das gilt ebenso für all ihre Kolonien. Bleiben nur die französischen Kolonien oder ein Leben als Piraten.
 }
 Bishop_291 {
-Ich denke, darüber können wir später nachdenken. Im Moment dürfen wir keine Zeit verlieren – die Leute an Land sind weder blind noch tot, und sie werden bald merken, dass mit dem Schiff etwas nicht stimmt. Wir müssen einen Kapitän wählen und uns auf die Verteidigung vorbereiten.
+Ich denke, darüber können wir später nachdenken. Im Moment dürfen wir keine Zeit verlieren - die Leute an Land sind weder blind noch tot, und sie werden bald merken, dass mit dem Schiff etwas nicht stimmt. Wir müssen einen Kapitän wählen und uns auf die Verteidigung vorbereiten.
 }
 Bishop_292 {
 Was gibt es da zu wählen! Alle wollen, dass du unser Kapitän bist, Peter.
@@ -900,7 +900,7 @@ Bishop_300 {
 Raus aus meinem Haus, Doktor!
 }
 Bishop_301 {
-Also, mal sehen. Die Sache ist die: Heute kam ein Spanier zu mir. Er hat seinen Namen nicht genannt, aber an seinen Augen habe ich gesehen, dass er zu allem bereit war. Ich weiß nicht, woher er kam oder wie er in die Stadt gekommen ist, aber er brauchte Waffen. Ja, Doktor, ich hatte Angst – und genau deshalb kann ich jetzt nicht zur Obrigkeit gehen, denn das hätte ich früher tun müssen. Der Spanier wollte nicht warten, bis ich seine Bestellung anfertige, und hat einfach meine Muster von der Wand genommen – ein paar Entersäbel, eine Langlaufmuskete und ein paar Pistolen. Verdammt, dieser spanische Kerl!
+Also, mal sehen. Die Sache ist die: Heute kam ein Spanier zu mir. Er hat seinen Namen nicht genannt, aber an seinen Augen habe ich gesehen, dass er zu allem bereit war. Ich weiß nicht, woher er kam oder wie er in die Stadt gekommen ist, aber er brauchte Waffen. Ja, Doktor, ich hatte Angst - und genau deshalb kann ich jetzt nicht zur Obrigkeit gehen, denn das hätte ich früher tun müssen. Der Spanier wollte nicht warten, bis ich seine Bestellung anfertige, und hat einfach meine Muster von der Wand genommen - ein paar Entersäbel, eine Langlaufmuskete und ein paar Pistolen. Verdammt, dieser spanische Kerl!
 }
 Bishop_302 {
 Er hat die Waffen nicht bezahlt?
@@ -918,7 +918,7 @@ Bishop_306 {
 Eine Waffe mit meinem Namen auf der Klinge, in den Händen eines Spaniers oder eines Sklaven?! Und was spielt das überhaupt für eine Rolle?! Morgen früh hängen wir sowieso beide auf dem Hauptplatz!
 }
 Bishop_307 {
-Ich glaube nicht, dass es den Teufel interessiert. In Ordnung. Ich gebe dir deine Waffen zurück, und dafür bereitest du bis heute Abend ein paar Entersäbel und Pistolen für mich vor – ohne eure Kennzeichnungen. Einverstanden?
+Ich glaube nicht, dass es den Teufel interessiert. In Ordnung. Ich gebe dir deine Waffen zurück, und dafür bereitest du bis heute Abend ein paar Entersäbel und Pistolen für mich vor - ohne eure Kennzeichnungen. Einverstanden?
 }
 Bishop_308 {
 Der spanische Halsabschneider wird dich aufschlitzen, Doktor. Aber das geht mich nichts an. Bring mir die Proben, und ich mache, was du verlangst. Für fünfzehnhundert Piaster. Er hat erwähnt, dass er zum Hafen muss, um den Fischer Hells zu treffen, dessen Haus am Stadtrand liegt, nicht weit vom Gefängnis.
@@ -945,13 +945,13 @@ Bishop_315 {
 Du bist früher angekommen, als ich erwartet habe, dich zu sehen. Was ist passiert?
 }
 Bishop_316 {
-Hier sind Ihre Proben, Mr. Griffin – ausnahmslos alle. Der spanische Halsabschneider stellt keine Gefahr mehr dar.
+Hier sind Ihre Proben, Mr. Griffin - ausnahmslos alle. Der spanische Halsabschneider stellt keine Gefahr mehr dar.
 }
 Bishop_317 {
 Ich wollte nur kurz vorbeischauen und nach dir sehen.
 }
 Bishop_318 {
-Hm... Nun, es ist mir egal, wie es geworden ist oder was es gekostet hat. In einer Stunde ist ein identisches Bündel für Sie bereit. Und jetzt entschuldigen Sie mich bitte – nachdem Sie natürlich für meine Arbeit bezahlt haben.
+Hm... Nun, es ist mir egal, wie es geworden ist oder was es gekostet hat. In einer Stunde ist ein identisches Bündel für Sie bereit. Und jetzt entschuldigen Sie mich bitte - nachdem Sie natürlich für meine Arbeit bezahlt haben.
 }
 Bishop_319 {
 Ja, natürlich, lieber Mr. Griffin. Hier ist Ihr Geld. Ich komme zur vereinbarten Zeit vorbei.
@@ -969,7 +969,7 @@ Bishop_323 {
 Was?! Eine Waffe... für dich?! Du bist wohl verrückt geworden, Seeteufel! Raus hier!
 }
 Bishop_324 {
-Hier, nimm schon. Aber vergiss nicht – ich habe das nicht für dich getan.
+Hier, nimm schon. Aber vergiss nicht - ich habe das nicht für dich getan.
 }
 Bishop_325 {
 Danke.
@@ -1005,10 +1005,10 @@ Bishop_335 {
 Ich... ich kann nicht, Sir. So sehr ich es auch möchte, sie werden... mich hängen!
 }
 Bishop_336 {
-Beruhige dich, ich verlange nichts Offizielles von dir. Keine Kennzeichnungen am Griff, keine Unterlagen oder Berichte – alles bleibt still und unauffällig. Niemand wird je erfahren, dass das passiert ist.
+Beruhige dich, ich verlange nichts Offizielles von dir. Keine Kennzeichnungen am Griff, keine Unterlagen oder Berichte - alles bleibt still und unauffällig. Niemand wird je erfahren, dass das passiert ist.
 }
 Bishop_337 {
-Mmm... na gut, in Ordnung. Ich habe alles, was du verlangt hast, hier—nimm es. Ich hoffe, es reicht.
+Mmm... na gut, in Ordnung. Ich habe alles, was du verlangt hast, hier-nimm es. Ich hoffe, es reicht.
 }
 Bishop_338 {
 Mehr als das. Vielen Dank.
@@ -1044,7 +1044,7 @@ Bishop_348 {
 Wie viel?
 }
 Bishop_349 {
-Ich bin bereit, dir zweitausend zu zahlen, wenn du mir Informationen besorgst. Es geht um Folgendes: Arnold Summerlight – mein Rivale – hat einen Ort gefunden... einen sehr ergiebigen Ort. Er ruiniert mich! Finde um jeden Preis heraus, wo er seinen Fang macht, und ich gebe dir gern die zweitausend. Einverstanden?
+Ich bin bereit, dir zweitausend zu zahlen, wenn du mir Informationen besorgst. Es geht um Folgendes: Arnold Summerlight - mein Rivale - hat einen Ort gefunden... einen sehr ergiebigen Ort. Er ruiniert mich! Finde um jeden Preis heraus, wo er seinen Fang macht, und ich gebe dir gern die zweitausend. Einverstanden?
 }
 Bishop_350 {
 Abgemacht.
@@ -1110,16 +1110,16 @@ Bishop_370 {
 Nun, da du gekommen bist... bist du als Nächster dran!
 }
 Bishop_371 {
-Nein, ich bleibe lieber beim vorherigen…
+Nein, ich bleibe lieber beim vorherigen...
 }
 Bishop_372 {
-Moment mal... Um so einen Gefallen zu bitten, ist kaum besser, als mich zu bitten, dich hier rauszuschmuggeln. Und glaub mir, niemand würde es wagen, dich von diesem Land zu bringen, nicht mal unter Todesdrohung – denn wenn das bekannt wird, gibt es weitaus schlimmere Arten zu sterben.\nAber Waffen?! Man müsste schon sehr mutig – und ein wenig verrückt – sein, um so etwas in einer Taverne zu verlangen, besonders als privilegierter Sklave. Und noch verrückter, dir dabei zu helfen...
+Moment mal... Um so einen Gefallen zu bitten, ist kaum besser, als mich zu bitten, dich hier rauszuschmuggeln. Und glaub mir, niemand würde es wagen, dich von diesem Land zu bringen, nicht mal unter Todesdrohung - denn wenn das bekannt wird, gibt es weitaus schlimmere Arten zu sterben.\nAber Waffen?! Man müsste schon sehr mutig - und ein wenig verrückt - sein, um so etwas in einer Taverne zu verlangen, besonders als privilegierter Sklave. Und noch verrückter, dir dabei zu helfen...
 }
 Bishop_373 {
-Da Sie so gesprächig sind, nehme ich an, Sie sind interessiert – jetzt müssen wir uns nur noch auf einen Preis einigen.
+Da Sie so gesprächig sind, nehme ich an, Sie sind interessiert - jetzt müssen wir uns nur noch auf einen Preis einigen.
 }
 Bishop_374 {
-Sie sind sehr aufmerksam, Doktor. Nun, ich will es nicht leugnen – Sie haben recht. Es gibt tatsächlich etwas, das mich interessiert, aber ich fürchte, Sie würden es nicht wagen, das Risiko einzugehen…
+Sie sind sehr aufmerksam, Doktor. Nun, ich will es nicht leugnen - Sie haben recht. Es gibt tatsächlich etwas, das mich interessiert, aber ich fürchte, Sie würden es nicht wagen, das Risiko einzugehen...
 }
 Bishop_375 {
 Worum geht es hier?
@@ -1131,7 +1131,7 @@ Bishop_377 {
 Es hat keinen Sinn, weiterzumachen. Ich habe es sehr eilig, und die Wahrscheinlichkeit, dass es dem Gouverneur oder seiner Frau ausgerechnet jetzt plötzlich schlechter geht, ist so gut wie ausgeschlossen. In jeder anderen Situation wäre mir der Weg zum Anwesen versperrt.
 }
 Bishop_378 {
-Ich bin mir sicher, dass du für ein Dutzend Entermesser und ein paar Musketen – die ich zufällig dabeihabe – und, sagen wir, dreitausend glänzende Münzen schon einen Weg findest, zum Gouverneur zu gelangen.
+Ich bin mir sicher, dass du für ein Dutzend Entermesser und ein paar Musketen - die ich zufällig dabeihabe - und, sagen wir, dreitausend glänzende Münzen schon einen Weg findest, zum Gouverneur zu gelangen.
 }
 Bishop_379 {
 Was brauchst du von mir?
@@ -1143,7 +1143,7 @@ Bishop_381 {
 Ein Ring? Ich glaube, der ist am Finger seiner Frau. Und ich soll ihn abnehmen und zurückbringen?..
 }
 Bishop_382 {
-Sie trägt ihn kaum, mein lieber Doktor. Und doch besitzt sie ihn. Ein kleiner Goldring – schlicht wie drei Piaster, aber für mich von unschätzbarem Wert. Ein Hehler würde Ihnen kaum ein Fünftel von dem geben, was ich biete. Fragen Sie einfach nicht warum. Antworten Sie mir nur.
+Sie trägt ihn kaum, mein lieber Doktor. Und doch besitzt sie ihn. Ein kleiner Goldring - schlicht wie drei Piaster, aber für mich von unschätzbarem Wert. Ein Hehler würde Ihnen kaum ein Fünftel von dem geben, was ich biete. Fragen Sie einfach nicht warum. Antworten Sie mir nur.
 }
 Bishop_383 {
 Ich komme so schnell wie möglich zurück. Halte das Geld und die Waren bereit.
@@ -1182,7 +1182,7 @@ Bishop_394 {
 Ich denke, Sir, Sie sollten diesen Ring besser zurückgeben und erklären, warum Sie mich Captain genannt haben.
 }
 Bishop_395 {
-Verschwenden Sie Ihre kostbare Zeit nicht damit, Peter Blood. Hier sind Ihr Geld und Ihre Waffe – beeilen Sie sich. Wer weiß, vielleicht hat das Schicksal uns aus einem bestimmten Grund zusammengeführt.
+Verschwenden Sie Ihre kostbare Zeit nicht damit, Peter Blood. Hier sind Ihr Geld und Ihre Waffe - beeilen Sie sich. Wer weiß, vielleicht hat das Schicksal uns aus einem bestimmten Grund zusammengeführt.
 }
 Bishop_396 {
 Na gut.
@@ -1200,13 +1200,13 @@ Bishop_400 {
 Dann hab Geduld und warte auf meine Anweisungen.
 }
 Bishop_401 {
-Verdammt, wann bricht diese verfluchte Nacht endlich an?!
+Verdammt... Wie langsam die Zeit vergeht.
 }
 Bishop_402 {
 Ein wenig Geduld, mein Freund. Bald schon werden wir diese verfluchte Insel verlassen.
 }
 Bishop_403 {
-Peter, schlechte Nachrichten — dieser Bastard Bishop und seine Männer haben Jeremy aufgespürt, gerade als er Vorräte für die Flucht versteckte. Er konnte mir gerade noch sagen, dass er einige Waffen in einer Truhe unter den Dielen am Rand der Plantage versteckt hat.
+Peter, schlechte Nachrichten - dieser Bastard Bishop und seine Männer haben Jeremy aufgespürt, gerade als er Vorräte für die Flucht versteckte. Er konnte mir gerade noch sagen, dass er einige Waffen in einer Truhe unter den Dielen am Rand der Plantage versteckt hat.
 }
 Bishop_404 {
 Was ist mit Pitt?
@@ -1215,16 +1215,16 @@ Bishop_405 {
 Dieser Schweinehund Bishop hat ihn halb totgepeitscht und befohlen, ihm weder Essen noch Wasser zu geben, bis er seine Komplizen verrät.
 }
 Bishop_406 {
-Verdammt. Bishop hat mich aus der Stadt zurückgeholt, aus irgendeinem Grund – vielleicht stehe ich auch unter Verdacht ...
+Verdammt. Bishop hat mich aus der Stadt zurückgeholt, aus irgendeinem Grund - vielleicht stehe ich auch unter Verdacht ...
 }
 Bishop_407 {
-Pitt hält durch, aber du solltest besser nicht zum Colonel gehen – er könnte befehlen, dich einzusperren. Warten wir bis zum Einbruch der Nacht, holen unsere Waffen und befreien Jeremy.
+Pitt hält durch, aber du solltest besser nicht zum Colonel gehen - er könnte befehlen, dich einzusperren. Warten wir bis zum Einbruch der Nacht, holen unsere Waffen und befreien Jeremy.
 }
 Bishop_408 {
 Ja, das ist der Plan. Ich kümmere mich darum, Pitt zu befreien, und du führst die Männer während des Durcheinanders in die Stadt. Schaffst du das?
 }
 Bishop_409 {
-Ja, Peter, wir warten auf dich in der Werft. Und pass auf die Patrouillen auf – diese Schergen von Bishop schnappen sich in letzter Zeit jeden, den sie erwischen können.
+Ja, Peter, wir warten auf dich in der Werft. Und pass auf die Patrouillen auf - diese Schergen von Bishop schnappen sich in letzter Zeit jeden, den sie erwischen können.
 }
 Bishop_410 {
 Ich werde vorsichtig sein.
@@ -1248,7 +1248,7 @@ Bishop_416 {
 Verdammt, Peter, wie kannst du darüber so ruhig sprechen?! Was sollen wir jetzt tun?! Unser Fluchtplan ist im Eimer! Dieser Idiot Nettle ist abgehauen, und jetzt kommen wir nicht mehr zur Sloop!..
 }
 Bishop_417 {
-Der Plan hat sich geändert – wir nehmen ein anderes Schiff.
+Der Plan hat sich geändert - wir nehmen ein anderes Schiff.
 }
 Bishop_418 {
 Welcher andere?
@@ -1257,34 +1257,34 @@ Bishop_419 {
 Das Schiff, das gerade auf Reede vor Anker liegt. Ich schätze, der Großteil ihrer Besatzung treibt sich an Land herum, also werden wir keine Schwierigkeiten haben, sie zu übernehmen.
 }
 Bishop_420 {
-Dann ist es besser, im Kampf gegen die Spanier zu sterben, als auf Bishop's Plantagen zu verrotten! Führe uns, Peter!
+Wir sind bereit. Führ uns, Peter!
 }
 Bishop_421 {
-Alle, auch Hopkins – macht euch bereit zum Sturm. Sandro, bleib hier und hilf Jeremy. Wir anderen versuchen, uns unbemerkt anzuschleichen...
+Alle, auch Hopkins - macht euch bereit zum Entern. Sandro, bleib hier und hilf Jeremy. Wir anderen versuchen, uns unbemerkt anzuschleichen...
 }
 Bishop_422 {
 Was befiehlst du, Peter?
 }
 Bishop_423 {
-Alle, mir nach – wir stürmen rein.
+Alle, mir nach - wir stürmen rein.
 }
 Bishop_424 {
-Puh... Das war ein guter Auftakt! Schade, dass die meisten dieser feigen spanischen Hunde gerade an Land sind—da hätte ich richtig Spaß gehabt, heh-heh!
+Das war ein guter Auftakt, was, Peter? Schade, dass die meisten dieser feigen spanischen Hunde gerade an Land sind - ich hätte richtig Spaß gehabt, heh-heh!
 }
 Bishop_425 {
 Wenn sie alle hier an Bord wären, würden wir uns wohl kaum so amüsieren, mein Freund. Wir hatten Glück, sie zu überraschen.
 }
 Bishop_426 {
-Ja, Peter, du hast wahrscheinlich wie immer recht!
+Ja, Peter, du hast wahrscheinlich wie immer recht! Genau deshalb haben die Jungs und ich beschlossen: Wenn einer von uns dieses prächtige Schiff führen soll, dann du.
 }
 Bishop_427 {
-Aber darum wollte ich eigentlich nicht mit dir sprechen. Wolverstone, du bist ein ausgezeichneter Kämpfer – nur wenige können es mit deiner Stärke aufnehmen. Wenn alles nach Plan läuft und wir hier heil rauskommen, wirst du beim Entern von großem Wert sein. Und ich verspreche dir, dort wird es mehr Gegner geben als hier. Was meinst du? Bist du dabei?
+Aber darum wollte ich eigentlich nicht mit dir sprechen. Da ihr mir so viel Vertrauen entgegengebracht habt, werde ich nicht ablehnen. Doch zuerst möchte ich wissen, was jeder von uns zu tun gedenkt, falls wir hier lebend herauskommen.
 }
 Bishop_428 {
-Ein freier Mann sein, mehr Zeit auf See verbringen als auf diesem verfluchten Land... Jeden Tag ein Risiko, der Geruch von Pulver, Gold, Rum? Und du fragst noch, Peter? Mit größtem Vergnügen, Captain!
+Ein freier Mann sein und über die Meere segeln, statt auf diesem verfluchten Land herumzustapfen... Jeden Tag ein Risiko, der Geruch von Pulver, Gold, Rum? Und du fragst noch, Peter? Mit größtem Vergnügen, Captain!
 }
 Bishop_429 {
-Ich wusste, dass du zustimmen würdest, Wolverstone. Dann legen wir los.
+Ich wusste, dass du zustimmen würdest, mein Freund.
 }
 Bishop_430 {
 Ich habe hier noch... etwas zu erledigen, mein Freund.
@@ -1293,7 +1293,7 @@ Bishop_431 {
 Also, du bringst das jetzt gleich zu Ende, und zwar mit meiner Hilfe. Ich brauche dich auf dieser Reise und kann dich nicht zurücklassen, alter Seebär.
 }
 Bishop_432 {
-Ha! Ich habe verdammt viel Respekt vor dir, das weißt du. Aber das ist eine Frage der Ehre – ich muss zu Ende bringen, was ich begonnen habe.
+Ha! Ich habe verdammt viel Respekt vor dir, das weißt du. Aber das ist eine Frage der Ehre - ich muss zu Ende bringen, was ich begonnen habe.
 }
 Bishop_433 {
 Dann bitte ich dich, es mit mir zu teilen. Worum geht es, und wie kann ich helfen?
@@ -1323,16 +1323,16 @@ Bishop_441 {
 Wenn ich auch nur einen Moment lang daran gezweifelt hätte, dass ich ihn tot sehen will, würde ich nicht mit solcher Gewissheit darüber sprechen.
 }
 Bishop_442 {
-Trotzdem könntest du dich irren. Überleg doch – lohnt es sich, ihn jetzt zu töten und alles zu riskieren? Wir könnten...
+Trotzdem könntest du dich irren. Überleg doch - lohnt es sich, ihn jetzt zu töten und alles zu riskieren? Wir könnten...
 }
 Bishop_443 {
-Verdammt, Peter! Das ist eine Frage der Ehre, das habe ich dir gesagt! Wenn du Angst hast, Risiken einzugehen, wenn du dich nicht traust, mir zu helfen – dann lass es! Segel allein zum Teufel, ohne mich!
+Verdammt, Peter! Das ist eine Frage der Ehre, das habe ich dir gesagt! Wenn du Angst hast, Risiken einzugehen, wenn du dich nicht traust, mir zu helfen - dann lass es! Segel ohne mich zum Teufel der See!
 }
 Bishop_444 {
 In Ordnung, Hagtorp. Ich bringe ihn um.
 }
 Bishop_445 {
-Ohne dich? Kaum möglich, aber mit dem richtigen Können… hör mir zu. Wir können sofort in See stechen und ein neues Leben beginnen, und früher oder später wirst du diesem verfluchten Winterwood begegnen und deine Rache nehmen, wie es dir passt, ohne dein eigenes Leben zu riskieren. Du kannst ihn am Großbaum aufknüpfen, selbst wenn du ihm dafür jeden einzelnen Finger abhacken musst!
+Ohne dich? Kaum möglich, aber mit dem richtigen Können... hör mir zu. Wir können sofort in See stechen und ein neues Leben beginnen, und früher oder später wirst du diesem verfluchten Winterwood begegnen und deine Rache nehmen, wie es dir passt, ohne dein eigenes Leben zu riskieren. Du kannst ihn am Großbaum aufknüpfen, selbst wenn du ihm dafür jeden einzelnen Finger abhacken musst!
 }
 Bishop_446 {
 Du... du willst mir das ausreden, während dieser Mistkerl direkt vor meiner Nase ist?!
@@ -1344,7 +1344,7 @@ Bishop_448 {
 In Ordnung, Hagtorp. Ich bringe ihn um.
 }
 Bishop_449 {
-In Ordnung, ich bin dabei! Zum Teufel mit Winterwood fürs Erste, für ihn bleibt später noch Zeit. Ich schließe mich dir an. Versprich mir nur, dass wir ihn früher oder später zur Strecke bringen – und dass ich es selbst beenden kann.
+In Ordnung, ich bin dabei! Zum Teufel mit Winterwood fürs Erste, für ihn bleibt später noch Zeit. Ich schließe mich dir an. Versprich mir nur, dass wir ihn früher oder später zur Strecke bringen - und dass ich es selbst beenden kann.
 }
 Bishop_450 {
 Abgemacht.
@@ -1356,7 +1356,7 @@ Bishop_452 {
 So tot, wie man nur sein kann. Hier ist, was du verlangt hast.
 }
 Bishop_453 {
-Nein, ich wollte nur sehen, ob du deine Meinung geändert hast – aber das scheint nicht der Fall zu sein.
+Nein, ich wollte nur sehen, ob du deine Meinung geändert hast - aber das scheint nicht der Fall zu sein.
 }
 Bishop_454 {
 Nun... endlich... ich schließe mich deiner Flucht an, Blood. Und danke dir.
@@ -1371,16 +1371,16 @@ Bishop_457 {
 Noch nichts, ich sage Bescheid, wenn es so weit ist.
 }
 Bishop_458 {
-Du hattest recht, Peter. Es ist genau so gekommen, wie du gesagt hast – wir haben dieses prächtige Schiff mit kaum Verlusten genommen.
+Du hattest recht, Peter. Alles kam genau so, wie du gesagt hast - wir haben diese Schönheit mit kaum Verlusten genommen. Cinco Llagas - so heißt sie.
 }
 Bishop_459 {
-Ja, Hagtorp, aber ich fürchte, das ist erst der Anfang. Wir müssen noch aus dem Hafen herauskommen und unsere kleine Mannschaft versammeln. Ich bezweifle, dass ich das allein an Bord schaffe, und der Posten des Bootsmanns ist noch unbesetzt. Verstehst du, worauf ich hinauswill?
+Ja, Hagtorp, aber ich fürchte, das ist erst der Anfang. Wir müssen noch aus dem Hafen herauskommen und unsere kleine Mannschaft sammeln. Übrigens ist der Posten des Bootsmanns noch frei. Verstehst du, worauf ich hinauswill?
 }
 Bishop_460 {
-Natürlich. Nach allem, was du für uns getan hast, konnte ich nicht ablehnen. Außerdem bist du ein ausgezeichneter Arzt, ein talentierter Kapitän und ein großartiger Anführer. Für uns beide hat das Wort „Ehre“ wirklich Bedeutung – und wenn es darauf ankommt, würde ich mein Leben für dich geben.
+Natürlich. Nach allem, was du für uns getan hast, würde ich dir durch Feuer und Wasser folgen. Du bist ein ausgezeichneter Arzt, ein großer Anführer und nun auch noch ein talentierter Captain. Für uns beide bedeutet das Wort 'Ehre' wirklich etwas - und wenn es darauf ankommt, würde ich mein Leben für dich geben.
 }
 Bishop_461 {
-Danke, Nathaniel, aber du wirst später noch genug Gelegenheiten haben, dein Leben für mich zu riskieren. Im Moment müssen wir erst einmal hier raus aus dieser Hölle.
+Danke, Nathaniel, aber ich brauche dich lebendig. Ein toter Bootsmann ist bedauerlicherweise ziemlich schlecht in der Ausübung seiner Pflichten.
 }
 Bishop_462 {
 Nein, leider weiß ich nichts. Vielleicht hatte er noch keine Zeit... aber das spielt jetzt keine Rolle mehr.
@@ -1407,22 +1407,22 @@ Bishop_469 {
 Beruhige dich, Nicholas. Das Geld, das für deinen Kauf bestimmt war, ist bereits als Erbe an mich übergegangen. Morgen Nacht kommst du mit uns.
 }
 Bishop_470 {
-Ich kann die Nacht morgen kaum erwarten!
+Gibt es Neuigkeiten zu unserem Vorhaben, Peter?
 }
 Bishop_471 {
-Ich auch, Nick.
+Noch nichts Bestimmtes. Ich muss noch ein paar Dinge regeln.
 }
 Bishop_472 {
 Ich hätte nie gedacht, dass auf dem Weg zur Freiheit so viel Blut vergossen werden müsste.
 }
 Bishop_473 {
-Ich würde das nicht Freiheit nennen – sie werden uns jagen. Aber du scheinst ein guter Kerl zu sein, Nicholas, und du verstehst etwas von der Zimmerei. Und wie ich gehört habe, kennst du dich auch mit Handel aus. Jemand wie du käme mir als Offizier gelegen. Außerdem ist es für uns alle sicherer, wenn wir im Moment zusammenbleiben. Schließt du dich meiner Mannschaft an?
+Ich würde das nicht Freiheit nennen - sie werden uns jagen. Aber du scheinst ein guter Kerl zu sein, Nicholas, und du verstehst etwas vom Zimmermannshandwerk. Und wie ich gehört habe, kennst du dich auch ein wenig mit Handel aus. Einen Mann wie dich könnte ich als Offizier gut gebrauchen. Außerdem ist es im Augenblick für uns alle sicherer, zusammenzubleiben. Willst du meiner Mannschaft beitreten?
 }
 Bishop_474 {
-Um ehrlich zu sein, ich weiß selbst nicht, was ich tun soll... Ich wollte das Meer hinter mir lassen, mich an Land niederlassen, eine gute Frau finden und ein ruhiges Leben führen. Jetzt gibt es für mich kein Zurück mehr nach England, und mit Spanien und Holland ist es genauso. Bleibt nur noch Frankreich... aber dort wartet nichts und niemand auf mich. Auf den Plantagen habe ich es immerhin geschafft, dich, Pitt, und die anderen Sklaven kennenzulernen. Ich schließe mich deiner Mannschaft an, aber wenn der Moment kommt und ich mich entscheide, an Land sesshaft zu werden—halte mich nicht auf.
+Um ehrlich zu sein, ich weiß selbst nicht, was ich tun soll... Ich wollte das Meer hinter mir lassen, mich an Land niederlassen, eine gute Frau finden und ein ruhiges Leben führen. Jetzt gibt es für mich kein Zurück mehr nach England, und mit Spanien und Holland ist es genauso. Bleibt nur noch Frankreich... aber dort wartet nichts und niemand auf mich. Auf den Plantagen habe ich es immerhin geschafft, dich, Pitt, und die anderen Sklaven kennenzulernen. Ich schließe mich deiner Mannschaft an, aber wenn der Moment kommt und ich mich entscheide, an Land sesshaft zu werden-halte mich nicht auf.
 }
 Bishop_475 {
-In Ordnung, ich werde daran denken. Jetzt mach dich bereit – zum Träumen bleibt später noch Zeit.
+In Ordnung, das werde ich mir merken.
 }
 Bishop_476 {
 Was redest du da, verdammt?
@@ -1461,7 +1461,7 @@ Bishop_487 {
 Aber wie bist du aus dem Gebiet herausgekommen?
 }
 Bishop_488 {
-Ich bin nicht rausgegangen, er war hier – wollte den Colonel wegen irgendetwas sprechen.
+Ich bin nicht rausgegangen, er war hier - wollte den Colonel wegen irgendetwas sprechen.
 }
 Bishop_489 {
 Schon gut, schon gut... Ich kann nicht ohne einen Kanonier ablegen, und du bist der Einzige, den ich hier finde. Wie viel schuldest du?
@@ -1512,7 +1512,7 @@ Bishop_504 {
 Ich bin kein junger Mann mehr, Peter, und der Gedanke, in einem fremden Land zu sterben oder zum Piraten zu werden, reizt mich nicht. Andererseits habe ich nichts zu verlieren, und ich sehne mich immer noch nach den glorreichen Tagen, als ich in der Marine diente. Alles in allem stimme ich also zu, unter deinem Kommando zu dienen.
 }
 Bishop_505 {
-Dann mach dich sofort an die Arbeit.
+Ich bin froh, dass du bei uns bist. Einen besseren Geschützmeister könnte ich mir nicht wünschen.
 }
 Bishop_506 {
 Peter, ich bin froh, dass alles gut ausgegangen ist. Wohin werden wir jetzt gehen?
@@ -1530,28 +1530,28 @@ Bishop_510 {
 Verstanden, Kapitän Blood. Kurs auf Tortuga.
 }
 Bishop_511 {
-Wie lauten Ihre weiteren Befehle? Sie werden doch nicht die Mannschaft auflösen und nach Europa fahren?
+Was sind deine Befehle, Peter? Du willst doch nicht die Mannschaft auflösen und nach Europa zurückkehren, oder?
 }
 Bishop_512 {
-Ich gebe zu, solche Gedanken hatte ich früher auch. Aber jetzt bin ich absolut sicher, dass ich mich nur auf See wirklich frei fühlen kann. So bedauerlich es ist, aber wir werden das Schiff zurücklassen müssen.
+Ich bin froh, dich wieder auf den Beinen zu sehen, mein Freund, und dass du dich so schnell erholt hast. Ich gestehe, auch ich habe einmal mit dem Gedanken gespielt, in die Alte Welt zurückzukehren. Aber in letzter Zeit werde ich das Gefühl nicht los, dass ich nur auf See wirklich frei sein kann.
 }
 Bishop_513 {
-Das Schiff zurücklassen? Was meinen Sie damit?
+Das glaube ich auch. Aber wir haben viel zu wenig Erfahrung, um mit einem Ungetüm wie diesem fertigzuwerden. Diese angeschlagenen Lugger konnten wir nur durch ein Wunder abwehren, weil es keinen anderen Weg in die Freiheit gab. Doch selbst ich bin kein geeigneter Navigator für ein Schiff dieser Klasse. Wir brauchen etwas Kleineres.
 }
 Bishop_514 {
-Diese Fregatte ist zu auffällig. Die Spanier werden sicher versuchen, sie zurückzuerobern. Und wir haben jetzt nicht genug Männer, um sie zu verteidigen. Wenn wir uns in unserem neuen Umfeld eingelebt haben, werden wir eine würdige Verwendung für die Fregatte finden. Vorläufig besorgen wir uns ein kleineres Schiff.
+Außerdem ist diese Fregatte viel zu auffällig. Die Spanier werden sicher versuchen, sie zurückzuerobern, und wir haben noch nicht genug Männer, um sie zu verteidigen. Ich hoffe, wir können das Schiff unter dem Schutz dieses ausgezeichneten Forts zurücklassen - bis wir stark genug sind, wieder das Kommando über sie zu übernehmen.
 }
 Bishop_515 {
-Gut. Dann gehe ich, während du ein neues Schiff besorgst, in die Taverne und heuere ein paar Männer an, die bereit sind, sich uns anzuschließen.
+Gut. Während du dich um das neue Schiff kümmerst, gehe ich in die Taverne und heuere Männer an, die sich uns anschließen wollen. Du kannst mich vorübergehend zum Captain des neuen Schiffes ernennen, bis du die Cinco Llagas los bist. Danach vergiss nicht, mich zum Navigator zu machen.
 }
 Bishop_516 {
-Danke, Pitt. Das wäre sehr willkommen.
+Ich werde es nicht vergessen, Jeremy. Wir haben aus Erfahrung bereits gelernt, dass ohne einen guten Navigator in See zu stechen ungefähr so ist, als würde man freiwillig in einen kochenden Kessel springen.
 }
 Bishop_517 {
-Sie werden sicher Geld brauchen, um ein Schiff zu kaufen und die Liegegebühren für die Fregatte zu bezahlen. Wir haben das in einer der Kisten im Laderaum gefunden. Die Spanier haben dieses Geld wahrscheinlich als Lösegeld bekommen, als sie in Bridgetown waren.
+Du wirst sicher Geld brauchen, um ein Schiff zu kaufen und die Liegegebühren der Fregatte zu bezahlen. Ich habe das Geld genommen, das du im spanischen Boot gefunden hast. Hier. Die Goldkisten habe ich unangetastet gelassen. Wenn du sie brauchst, findest du sie in der Truhe in der Kajüte.
 }
 Bishop_518 {
-Höchstwahrscheinlich. Pass auf dich auf, Pitt. Wenn es Neuigkeiten gibt, findest du mich im Hafen.
+Danke. Dann verlieren wir keine Zeit. Wir haben eine Menge zu tun.
 }
 Bishop_519 {
 Peter! Ich sehe, mit dem neuen Schiff hat alles gut geklappt.
@@ -1574,63 +1574,2198 @@ Worauf wartest du, Peter? Rede mit dem Wirt und heuere eine neue Mannschaft für
 Bishop_525 {
 Ja, vergessen...
 }
-Bishop_506 {
-Peter, ich bin froh, dass alles gut ausgegangen ist. Wohin werden wir jetzt gehen?
+
+Bishop_526 {
+Und dieses Rudel magerer Hunde nennen Sie gute Ware?
 }
-Bishop_507 {
-Laut dieser Karte, die wir in der Kabine gefunden haben, sind die einzigen Häfen, in denen wir anlegen können, die niederländische Kolonie Willemstad auf Curaçao und die französische Siedlung Tortuga auf der gleichnamigen Insel. Bei den Niederländern sind wir nicht willkommen; sie würden uns für englische Spione halten. Es bleibt nur Tortuga, dort sind wir in Sicherheit.
+
+Bishop_527 {
+Ich versichere Ihnen, Colonel, aus ihnen werden gute Sklaven - kräftig und zäh.
 }
-Bishop_508 {
-Bist du dir da sicher?
+
+Bishop_528 {
+Reden Sie keinen Unsinn, Gardner. Das sind Knochensäcke, keine Sklaven.
 }
-Bishop_509 {
-Mehr als sicher. Diese Insel ist eine wahre Festung, von der Natur selbst gebaut. Lasst uns keine Zeit verlieren, bevor die Spanier uns verfolgen.
+
+Bishop_529 {
+Siebzig Piaster für diesen hier.
 }
-Bishop_510 {
-Verstanden, Kapitän Blood. Kurs auf Tortuga.
+
+Bishop_530 {
+Siebzig Piaster? Das ist nicht einmal die Hälfte von dem, was ich für ihn verlangen wollte.
 }
-Bishop_511 {
-Wie lauten Ihre weiteren Befehle? Sie werden doch nicht die Mannschaft auflösen und nach Europa fahren?
+
+Bishop_531 {
+Das ist doppelt so viel, wie ich zu zahlen gedachte.
 }
-Bishop_512 {
-Ich gebe zu, solche Gedanken hatte ich früher auch. Aber jetzt bin ich absolut sicher, dass ich mich nur auf See wirklich frei fühlen kann. So bedauerlich es ist, aber wir werden das Schiff zurücklassen müssen.
+
+Bishop_532 {
+Aber selbst hundert Piaster wären für ihn viel zu wenig, Euer Ehren.
 }
-Bishop_513 {
-Das Schiff zurücklassen? Was meinen Sie damit?
+
+Bishop_533 {
+Für diesen Preis kann ich einen Neger kaufen. Diese weißen Schweine wissen nicht, wie man arbeitet, und in unserem Klima gehen sie schnell zugrunde.
 }
-Bishop_514 {
-Diese Fregatte ist zu auffällig. Die Spanier werden sicher versuchen, sie zurückzuerobern. Und wir haben jetzt nicht genug Männer, um sie zu verteidigen. Wenn wir uns in unserem neuen Umfeld eingelebt haben, werden wir eine würdige Verwendung für die Fregatte finden. Vorläufig besorgen wir uns ein kleineres Schiff.
+
+Bishop_534 {
+Sehen Sie ihn sich an, Colonel: jung, drahtig und zäh. Er hält jedes Klima aus und wird seinen Preis voll und ganz abarbeiten.
 }
-Bishop_515 {
-Gut. Dann gehe ich, während du ein neues Schiff besorgst, in die Taverne und heuere ein paar Männer an, die bereit sind, sich uns anzuschließen.
+
+Bishop_535 {
+Achtzig Piaster, keinen einzigen mehr. Das ist meine Grenze. Crabston wird Ihnen nicht einmal die Hälfte bieten.
 }
-Bishop_516 {
-Danke, Pitt. Das wäre sehr willkommen.
+
+Bishop_536 {
+Argh... Wie Sie wollen... Was sagen Sie zu diesem großen Kerl?
 }
-Bishop_517 {
-Sie werden sicher Geld brauchen, um ein Schiff zu kaufen und die Liegegebühren für die Fregatte zu bezahlen. Wir haben das in einer der Kisten im Laderaum gefunden. Die Spanier haben dieses Geld wahrscheinlich als Lösegeld bekommen, als sie in Bridgetown waren.
+
+Bishop_537 {
+Welcher große Kerl, verdammt? Jeder Neger ist stärker als dieses ganze Rudel rebellischen Aases zusammen. Hundertsiebzig für diesen - und genauso viel für den nächsten.
 }
-Bishop_518 {
-Höchstwahrscheinlich. Pass auf dich auf, Pitt. Wenn es Neuigkeiten gibt, findest du mich im Hafen.
+
+Bishop_538 {
+Aber, Euer Ehren, hundertsiebzig ist wirklich sehr wenig. Sie mögen keine Kraftprotze sein, aber sie sind gesund und haben Verstand - Sie werden nicht lange brauchen, sie anzulernen. Wie wäre es mit vierhundert für beide?
 }
-Bishop_519 {
-Peter! Ich sehe, mit dem neuen Schiff hat alles gut geklappt.
+
+Bishop_539 {
+Eine Peitsche prügelt selbst einem dummen Vieh Verstand ein. Dreihundertachtzig, und das ist mein letztes Wort. Die übrigen interessieren mich nicht.
 }
-Bishop_520 {
-So ist es. Und warum bist du so aufgeregt? Wie läuft es mit der Anwerbung der Mannschaft?
+
+Bishop_540 {
+Sehr wohl, Colonel... nehmen Sie sie für dreihundertachtzig.
 }
-Bishop_521 {
-Folgendes... Kurz gesagt, mit der Mannschaft hatte ich kein Glück. Ich sprach den Tavernenbesitzer an und sagte, ich suche Männer, die Matrosen werden wollen. Und er antwortete: 'Ich sehe euer Schiff nicht im Hafen. Ich habe keine Männer für euch.' Auf meine Einwände reagierte er gar nicht. Woher weiß dieser Tavernenwirt alles?
+
+Bishop_541 {
+Arabella...
 }
-Bishop_522 {
-Ja, Pitt... Tavernenwirte sind ein eigenes Volk. Vor ihnen kann man nichts verbergen. Ich werde wohl alles selbst in die Hand nehmen müssen. Geh in die Taverne und warte dort auf mich.
+
+Bishop_542 {
+Gehen wir. Hier ist nichts Brauchbares mehr übrig.
 }
-Bishop_523 {
-In Ordnung.
+
+Bishop_543 {
+Nicht? Ich glaube, der Rebell dort könnte uns taugen.
 }
-Bishop_524 {
-Worauf wartest du, Peter? Rede mit dem Wirt und heuere eine neue Mannschaft für das Schiff an.
+
+Bishop_544 {
+Der da?
 }
-Bishop_525 {
-Ja, vergessen...
+
+Bishop_545 {
+Pah! Ein wandelndes Gerippe. Soll ihn nehmen, wer ihn haben will. Einer von dieser Sorte reicht mir wahrlich.
+}
+
+Bishop_546 {
+Er mag mager sein, aber er ist zäh. Als die Hälfte der Gefangenen krank war, blieb dieser Schurke auf den Beinen und behandelte seine Gefährten. Ohne ihn hätte es an Bord noch mehr Tote gegeben... Nun, sagen wir hundertzwanzig Piaster für ihn, Colonel?
+}
+
+Bishop_547 {
+Ich sage es Ihnen noch einmal: Er ist zäh und kräftig, auch wenn er dünn ist. Genau so ein Mann hält jede Hitze aus. Das Klima wird ihn nicht umbringen.
+}
+
+Bishop_548 {
+Hören Sie, Colonel? Vertrauen Sie Ihrer Nichte. Eine Frau erkennt einen Mann in dem Augenblick, in dem sie ihn ansieht.
+}
+
+Bishop_549 {
+Achtzig Piaster für diesen.
+}
+
+Bishop_550 {
+Warum nehmen Sie nicht gleich alle? Hundertzehn für ihn und weitere drei zu je achtzig.
+}
+
+Bishop_551 {
+Dreihundertzwanzig für alle zusammen, und das ist endgültig. Ich habe heute schon mehr ausgegeben, als ich vorhatte.
+}
+
+Bishop_552 {
+Abgemacht, Euer Ehren.
+}
+
+Bishop_553 {
+Ich glaube, ich kenne Sie...
+}
+
+Bishop_554 {
+Eine Herrin sollte ihr Eigentum kennen.
+}
+
+Bishop_555 {
+Mein Eigentum?
+}
+
+Bishop_556 {
+Oder das Ihres Onkels. Gestatten Sie, dass ich mich vorstelle: Mein Name ist Peter Blood, und mein Preis beträgt genau achtzig Piaster. So viel hat Ihr Onkel für mich bezahlt. Nicht jeder Mann bekommt die Gelegenheit, seinen eigenen Wert zu erfahren.
+}
+
+Bishop_557 {
+Gütiger Himmel! Und Sie können noch lachen!
+}
+
+Bishop_558 {
+Ja, das ist schon eine Leistung. Obwohl ich nicht so schlecht lebe, wie ich erwartet hatte.
+}
+
+Bishop_559 {
+Ich habe gehört, dass sich einer der verurteilten Rebellen als Arzt erwiesen und dadurch die Aufmerksamkeit von Gouverneur Steed erregt hat, der an Gicht leidet.
+}
+
+Bishop_560 {
+Und dann die seiner Frau, die an Migräne leidet. Ja, dieser Mann bin ich. Aber für die verhältnismäßige Sauberkeit und Freiheit, die ich genieße, habe ich Ihnen zu danken, Madam. Erlauben Sie mir, die Gelegenheit zu nutzen und Ihnen meinen Dank auszusprechen.
+}
+
+Bishop_561 {
+Hätte mich ein anderer Pflanzer gekauft, wären meine medizinischen Kenntnisse gewiss unbeachtet geblieben, und ich würde jetzt Holz schlagen oder die Erde hacken wie die armen Kerle, die mit mir hierhergebracht wurden.
+}
+
+Bishop_562 {
+Aber warum danken Sie mir? Mein Onkel hat Sie gekauft, nicht ich.
+}
+
+Bishop_563 {
+Er hätte es nicht getan, wenn Sie ihn nicht dazu überredet hätten. Obwohl ich gestehen muss, dass ich damals empört darüber war.
+}
+
+Bishop_564 {
+Empört?
+}
+
+Bishop_565 {
+Ja, durchaus empört. Ich kann nicht behaupten, vom Leben nichts zu verstehen, aber zuvor war ich noch nie in der Lage gewesen, lebende Ware zu sein, und ich war kaum imstande, Zuneigung für meinen Käufer zu empfinden.
+}
+
+Bishop_566 {
+Wenn ich meinen Onkel dazu überredet habe, dann nur, weil Sie mir leid taten. Mein Onkel erscheint Ihnen vermutlich als harter Mann... und das ist er auch. Alle Pflanzer sind grausam und streng. Ich nehme an, so ist das Leben. Aber es gibt Männer, die weit schlimmer sind als er. Crabston aus Speightstown zum Beispiel. Auch er war in der Stadt und wartete darauf, sich auszusuchen, was nach den Käufen meines Onkels übrig blieb. Wenn Sie ihm in die Hände gefallen wären... Er ist ein schrecklicher Mann. Deshalb kam es so, wie es kam.
+}
+
+Bishop_567 {
+Aber dort waren noch andere, die ebenso sehr Mitleid verdient hätten...
+}
+
+Bishop_568 {
+Sie schienen sich von den anderen zu unterscheiden.
+}
+
+Bishop_569 {
+Das tue ich auch.
+}
+
+Bishop_570 {
+Oh! Sie müssen eine sehr hohe Meinung von sich haben.
+}
+
+Bishop_571 {
+Im Gegenteil, Madam. Sie haben mich missverstanden. Die anderen waren Männer, die Respekt verdienten - Rebellen. Ich gehörte nicht zu ihnen. Das ist der Unterschied. Ich war mit meiner ärztlichen Praxis in Bridgewater ganz zufrieden, während bessere Männer als ich ihr Blut vergossen, um einen widerwärtigen Tyrannen und seine höfischen Schurken zu vertreiben...
+}
+
+Bishop_572 {
+Mir scheint, Sie reden Hochverrat.
+}
+
+Bishop_573 {
+Ich hoffe, ich habe meine Meinung deutlich genug zum Ausdruck gebracht.
+}
+
+Bishop_574 {
+Wenn Sie jemand hört, werden Sie ausgepeitscht.
+}
+
+Bishop_575 {
+Oh nein, der Gouverneur wird das nicht zulassen.
+}
+
+Bishop_576 {
+Und darauf verlassen Sie sich?
+}
+
+Bishop_577 {
+Ich sehe schon, Sie haben noch nie an Gicht - oder Migräne - gelitten.
+}
+
+Bishop_578 {
+Aber wenn Sie kein Rebell sind, wie sind Sie dann hierher geraten?
+}
+
+Bishop_579 {
+Ha-ha. Bei meinem Wort, das ist eine lange Geschichte.
+}
+
+Bishop_580 {
+Und vermutlich eine, die Sie lieber nicht erzählen möchten.
+}
+
+Bishop_581 {
+Gütiger Himmel! Wie abscheulich!
+}
+
+Bishop_582 {
+Ja, England ist unter König James zu einem 'wunderbaren' Land geworden. Sie brauchen mich nicht zu bemitleiden. Auf Barbados lebt es sich besser. Hier kann man wenigstens noch an Gott glauben.
+}
+
+Bishop_583 {
+Ist das Leben anderswo ebenso traurig?
+}
+
+Bishop_584 {
+Die Menschen machen es dazu.
+}
+
+Bishop_585 {
+Ich verstehe. Ich habe Barbados nie für ein Paradies gehalten, aber Sie kennen die Welt gewiss besser als ich. Trotzdem bin ich froh, dass Ihr Schicksal sich nicht als allzu hart erwiesen hat.
+}
+
+Bishop_586 {
+...
+}
+
+Bishop_587 {
+Wo zum Teufel warst du, du Vieh? Wieder untätig auf der Plantage herumgestreunt?
+}
+
+Bishop_588 {
+Du hast Glück, dass der Gouverneur nach dir verlangt hat. Sonst würde ich schnell eine Arbeit finden, die zu Sklavenabschaum wie dir passt.
+}
+
+Bishop_589 {
+Nun, da Sie nichts dagegen haben, gehe ich zur Residenz.
+}
+
+Bishop_590 {
+Sei dankbar, dass das Schicksal dir gerade zulächelt. Das wird nicht ewig so bleiben.
+}
+
+Bishop_591 {
+Mehrere Wochen vergingen. Die Gefangenen begannen sich zu erholen.
+}
+
+Bishop_592 {
+Talent "Meisterchirurg" erworben
+}
+
+Bishop_593 {
+(flüsternd) Wir treffen uns um Mitternacht in der Werft?
+}
+
+Bishop_594 {
+Und komm nicht zu spät. Du verstehst - niemand wird auf dich warten.
+}
+
+Bishop_595 {
+Wo zum Teufel hast du gesteckt, du sklavengeborenes Aas? Colonel Bishop sucht überall nach dir.
+}
+
+Bishop_596 {
+Ich war in der Stadt. Ich bin schließlich Arzt.
+}
+
+Bishop_597 {
+Was machst du hier?
+}
+
+Bishop_598 {
+Ich behandle die Verwundeten.
+}
+
+Bishop_599 {
+Das sehe ich selbst, Idiot! Genau wie ich sehe, wen du da behandelst. Wer hat dir das erlaubt?
+}
+
+Bishop_600 {
+Colonel Bishop, ich bin Arzt und tue meine Pflicht.
+}
+
+Bishop_601 {
+Deine Pflicht? Hättest du an deine Pflicht gedacht, wärst du nicht auf Barbados gelandet.
+}
+
+Bishop_602 {
+Genau deshalb bin ich hier gelandet.
+}
+
+Bishop_603 {
+Genug geschwatzt. Deine Lügengeschichten habe ich schon gehört! Hier bist du kein Arzt, sondern mein Eigentum! Und ich kann mich nicht erinnern, dich hierhergeschickt zu haben.
+}
+
+Bishop_604 {
+Dieser Mann leidet.
+}
+
+Bishop_605 {
+Es freut mich außerordentlich, dass dieser verdammte Hund leidet. Aber mit dir verfahre ich anders. Ich werde dir Gehorsam beibringen!
+}
+
+Bishop_606 {
+Was immer man mir sonst vorwerfen mag, Ungehorsam gehört nicht dazu. Ich führe die Befehle des Gouverneurs aus.
+}
+
+Bishop_607 {
+Der Gouverneur... Wenn du glaubst, ich lasse dir das durchgehen, du verdammter Faulpelz, irrst du dich gewaltig.
+}
+
+Bishop_608 {
+...
+}
+
+Bishop_609 {
+Wo warst du?
+}
+
+Bishop_610 {
+Ich war in der Stadt. Mrs. Patch hat Fieber, und Mr. Decker hat sich das Bein ausgekugelt.
+}
+
+Bishop_611 {
+Bei Decker haben sie nach dir gesucht, aber du warst nicht da. Ich werde wohl etwas gegen dich unternehmen müssen, Schönling, damit du nicht länger herumlungerst und die Freiheit missbrauchst, die man dir gewährt hat. Vergiss nicht, du bist ein verurteilter Rebell!
+}
+
+Bishop_612 {
+Daran werde ich ständig erinnert.
+}
+
+Bishop_613 {
+Verdammt noch mal! Du wagst es immer noch, mir zu widersprechen?
+}
+
+Bishop_614 {
+Oh nein, Sir! Ich würde es nie wagen, unverschämt zu sein. Ich... fühle mich schuldig, dass Sie nach mir suchen mussten...
+}
+
+Bishop_615 {
+Ach ja? Nun, gleich wirst du dich noch schuldiger fühlen. Der Gouverneur hat einen Gichtanfall und quiekt wie ein halb geschlachtetes Schwein, und von dir fehlt jede Spur. Geh sofort zum Haus des Gouverneurs. Dort wartet man schon auf dich...
+}
+
+Bishop_616 {
+...
+}
+
+Bishop_617 {
+...
+}
+
+Bishop_618 {
+Und wie soll ich zurückkommen? Nach Mitternacht werden mich die Wachen festnehmen, ohne Fragen zu stellen.
+}
+
+Bishop_619 {
+Mach dir darum keine Sorgen. Vor dem Morgen kommst du ohnehin nicht hierher zurück. Im Haus des Gouverneurs werden sie schon irgendeinen Verschlag für dich finden, in dem du schlafen kannst.
+}
+
+Bishop_620 {
+Aber...
+}
+
+Bishop_621 {
+Geh, ohne zu widersprechen! Offenbar willst du bis zum Morgengrauen weiterreden.
+}
+
+Bishop_622 {
+...
+}
+
+Bishop_623 {
+(Zu Kent) Kent, sorg dafür, dass dieser Schurke nicht wieder auf die Idee kommt, herumzustreifen, wo es ihm gefällt. Begleite ihn zur Residenz.
+}
+
+Bishop_624 {
+...
+}
+
+Bishop_625 {
+Was zum Teufel machst du hier?
+}
+
+Bishop_626 {
+Was ich hier mache? Wie immer erfülle ich meine Pflichten.
+}
+
+Bishop_627 {
+Du hast es gewagt, das zu tun, du Schurke?
+}
+
+Bishop_628 {
+Ja, das habe ich!
+}
+
+Bishop_629 {
+Ich habe befohlen, dass sich ihm niemand auch nur nähern darf!
+}
+
+Bishop_630 {
+Verzeihen Sie, Colonel, aber von diesem Befehl habe ich nie etwas gehört.
+}
+
+Bishop_631 {
+Nie gehört?! Du Schuft! Höllenbrut! Wie solltest du ihn auch hören, wenn du nicht hier warst?
+}
+
+Bishop_632 {
+Aber können Sie dann erwarten, dass ich von Ihrem Befehl weiß? Als ich Ihren Sklaven leiden sah, sagte ich mir: "Das ist einer der Leibeigenen meines Colonels, und ich bin sein Arzt, also muss ich mich selbstverständlich um sein Eigentum kümmern." Also habe ich die Wunden des jungen Mannes gewaschen und wollte gerade seinen Rücken mit einem Palmblatt bedecken. Hatte ich etwa Unrecht?
+}
+
+Bishop_633 {
+Unrecht?
+}
+
+Bishop_634 {
+Regen Sie sich nicht auf! Das ist sehr schlecht für Sie. Wenn Sie sich so erhitzen, bekommen Sie noch einen Schlaganfall...
+}
+
+Bishop_635 {
+Raus! Wag es nicht, dich ihm noch einmal zu nähern, bis ich selbst nach dir schicke - es sei denn, du willst den Bambusstock zu spüren bekommen!
+}
+
+Bishop_636 {
+Im Namen der Menschlichkeit, lassen Sie mich sein Leiden lindern, oder ich schwöre, ich werde mich weigern, meine Pflichten als Arzt zu erfüllen und keinen einzigen Patienten auf dieser elenden Insel mehr anzurühren.
+}
+
+Bishop_637 {
+Großer Gott! Du wagst es, in diesem Ton mit mir zu reden, Hund? Du wagst es, mir Bedingungen zu stellen?
+}
+
+Bishop_638 {
+Warum nicht?
+}
+
+Bishop_639 {
+Ich war zu nachsichtig mit dir. Aber das lässt sich ändern. Ich lasse dich auspeitschen, bis auf deinem räudigen Rücken kein Fleck heiler Haut mehr übrig ist!
+}
+
+Bishop_640 {
+Das werden Sie tun? Hm!.. Und was wird der Gouverneur dazu sagen?
+}
+
+Bishop_641 {
+Du bist nicht der einzige Arzt auf der Insel.
+}
+
+Bishop_642 {
+Und Sie wagen es, das dem Gouverneur zu sagen, der so sehr an Gicht leidet, dass er kaum stehen kann? Sie wissen genau, dass er keinen anderen Arzt duldet.
+}
+
+Bishop_643 {
+Wenn du nach meinen Soldaten überhaupt noch am Leben bist, kommst du vielleicht wieder zur Vernunft.
+}
+
+Bishop_644 {
+...
+}
+
+Bishop_645 {
+Piraten... Piraten! Alle zu den Waffen, mir nach!
+}
+
+Bishop_646 {
+
+}
+
+Bishop_647 {
+Miss Arabella!
+}
+
+Bishop_648 {
+
+}
+
+Bishop_649 {
+Guten Tag, Peter Blood. Es scheint, als wäre seit unserem letzten Treffen schon ein Monat vergangen.
+}
+
+Bishop_650 {
+Guten Tag, Miss. Neunzehn Tage. Ich habe sie gezählt.
+}
+
+Bishop_651 {
+Ich hatte schon angefangen zu glauben, Sie wären tot.
+}
+
+Bishop_652 {
+In diesem Fall danke ich Ihnen für den Kranz.
+}
+
+Bishop_653 {
+Welchen Kranz?
+}
+
+Bishop_654 {
+Den Kranz für mein Grab.
+}
+
+Bishop_655 {
+Warum machen Sie immer Scherze?
+}
+
+Bishop_656 {
+Ein Mensch muss ab und zu über sich selbst lachen können, sonst wird er verrückt. Leider wissen das nur sehr wenige, und deshalb gibt es so viele Verrückte auf der Welt.
+}
+
+Bishop_657 {
+Sie können über sich selbst lachen, so viel Sie wollen. Aber mir scheint, Sie lachen auch über mich, und das ist kaum höflich.
+}
+
+Bishop_658 {
+Bei meinem Wort, Sie irren sich. Ich lache nur über das, was lächerlich ist, und Sie sind überhaupt nicht lächerlich.
+}
+
+Bishop_659 {
+Was bin ich dann?
+}
+
+Bishop_660 {
+Sie sind die Nichte des Mannes, dem ich als Sklave gehöre.
+}
+
+Bishop_661 {
+Nein, nein, das ist keine Antwort! Heute müssen Sie mir ehrlich antworten.
+}
+
+Bishop_662 {
+Ehrlich? Ihre Fragen sind schon schwer genug überhaupt zu beantworten, und ehrlich... Nun gut. Ich sage, dass der Mann, der Ihr Freund wird, sich glücklich schätzen kann...
+}
+
+Bishop_663 {
+Das ist mehr als höflich! Sie können also doch Komplimente machen! Ein anderer Mann an Ihrer Stelle...
+}
+
+Bishop_664 {
+Glauben Sie, ich wüsste nicht, was ein anderer Mann an meiner Stelle sagen würde? Offenbar halten Sie mich für völlig unerfahren im Umgang mit Männern?
+}
+
+Bishop_665 {
+Vielleicht verstehen Sie Männer, aber von Frauen verstehen Sie überhaupt nichts, und der Vorfall im Lagerhaus beweist es nur.
+}
+
+Bishop_666 {
+Werden Sie das denn nie vergessen?
+}
+
+Bishop_667 {
+Nie!
+}
+
+Bishop_668 {
+Was für ein Gedächtnis! Habe ich denn keine guten Eigenschaften, über die wir sprechen könnten?
+}
+
+Bishop_669 {
+Oh, doch, Sie haben einige.
+}
+
+Bishop_670 {
+Zum Beispiel?
+}
+
+Bishop_671 {
+Sie sprechen ausgezeichnet Spanisch.
+}
+
+Bishop_672 {
+Ist das alles?
+}
+
+Bishop_673 {
+Wo haben Sie die Sprache gelernt? Waren Sie in Spanien?
+}
+
+Bishop_674 {
+Ja. Ich habe zwei Jahre in einem spanischen Gefängnis verbracht.
+}
+
+Bishop_675 {
+Im Gefängnis?
+}
+
+Bishop_676 {
+Als Kriegsgefangener. Ich wurde gefangen genommen, als ich in der französischen Armee diente.
+}
+
+Bishop_677 {
+Aber Sie sind doch Arzt!
+}
+
+Bishop_678 {
+Ich nehme an, das ist mein Nebenberuf. Von Beruf bin ich Soldat. Jedenfalls habe ich zehn Jahre meines Lebens dafür gegeben. Es hat mir kein großes Vermögen eingebracht, aber besser gedient als die Medizin, die mich, wie Sie sehen, zum Sklaven gemacht hat. Offenbar zieht Gott es vor, dass die Menschen einander töten, statt einander zu heilen.
+}
+
+Bishop_679 {
+Aber warum wurden Sie Soldat und landeten in der französischen Armee?
+}
+
+Bishop_680 {
+Ich bin Ire und wurde zum Arzt ausgebildet, aber wir Iren sind ein eigentümliches Volk, und deshalb... Oh, das ist eine sehr lange Geschichte, und der Colonel wartet bereits auf mich.
+}
+
+Bishop_681 {
+Ich glaube, mein Onkel kann noch ein wenig warten. Schließlich wird er wohl kaum den einzigen Mann bestrafen, der die Leiden des Gouverneurs lindern kann.
+}
+
+Bishop_682 {
+...
+}
+
+Bishop_683 {
+Es tut mir leid, dass ich all das nicht früher wusste.
+}
+
+Bishop_684 {
+Warum? Hätte das etwas geändert?
+}
+
+Bishop_685 {
+Ich glaube schon. Das Leben hat Sie sehr hart behandelt.
+}
+
+Bishop_686 {
+Es hätte schlimmer kommen können...
+}
+
+Bishop_687 {
+Wie schnell die Zeit vergangen ist... Ich muss in die Stadt zurück. Ich habe Mary Traill versprochen, innerhalb einer Stunde zurück zu sein.
+}
+
+Bishop_688 {
+Auf Wiedersehen, Miss Arabella.
+}
+
+Bishop_689 {
+Ich glaube, Sie wollten sagen: 'Bis wir uns wiedersehen'?
+}
+
+Bishop_690 {
+Ja... Natürlich. Bis wir uns wiedersehen.
+}
+
+Bishop_691 {
+
+}
+
+Bishop_692 {
+Sie suchen vermutlich nach Ihren verwundeten Landsleuten. Hier sind keine - nur Spanier.
+}
+
+Bishop_693 {
+Ich weiß. Aber soweit ich weiß, sind auch sie Menschen. Und das Essen, das ich mitgebracht habe, wird ihnen gewiss nicht schaden.
+}
+
+Bishop_694 {
+Ihr Onkel sieht das anders. Er hält diese Verwundeten für Schmarotzer, deren Behandlung sich nicht lohnt.
+}
+
+Bishop_695 {
+Warum erzählen Sie mir das?
+}
+
+Bishop_696 {
+Ich möchte Sie warnen, damit Sie den Unmut des Colonels nicht auf sich ziehen. Ich könnte ihre Wunden nicht versorgen, wenn er auch hier seine Macht ausüben könnte.
+}
+
+Bishop_697 {
+Und natürlich glauben Sie, ich müsse genauso denken wie mein Onkel?
+}
+
+Bishop_698 {
+Nicht einmal in Gedanken kann ich zu einer Frau grob sein... Aber wenn der Colonel erfährt, dass Sie den Spaniern Geschenke verteilen...
+}
+
+Bishop_699 {
+Ausgezeichnet! Erst werfen Sie mir Grausamkeit vor, dann Feigheit. Für einen Mann, der selbst in Gedanken nicht grob zu Frauen ist, ist das gar nicht schlecht.
+}
+
+Bishop_700 {
+Verzeihen Sie, Miss, aber woher sollte ich wissen... dass Colonel Bishops Nichte ein Engel ist?
+}
+
+Bishop_701 {
+Ja, leider sind Sie nicht besonders scharfsinnig.
+}
+
+Bishop_702 {
+...
+}
+
+Bishop_703 {
+Verteilt alles, was wir mitgebracht haben, und sorgt dafür, dass jeder den gleichen Anteil bekommt.
+}
+
+Bishop_704 {
+...
+}
+
+Bishop_705 {
+
+}
+
+Bishop_706 {
+Miss Arabella!
+}
+
+Bishop_707 {
+Ah, Sie sind es, der wohlerzogene Herr!
+}
+
+Bishop_708 {
+Wird mir denn niemals verziehen? Ich flehe Sie an, Miss, mildern Sie die Gerechtigkeit mit Barmherzigkeit!
+}
+
+Bishop_709 {
+Oh, welche Selbsterniedrigung!
+}
+
+Bishop_710 {
+Sie machen sich über mich lustig. Ich mag nur ein Sklave sein... aber eines Tages könnten selbst Sie krank werden.
+}
+
+Bishop_711 {
+Und was dann?
+}
+
+Bishop_712 {
+Dann könnte es Ihnen unangenehm sein, meine Dienste in Anspruch zu nehmen, wenn Sie mich für Ihren Feind halten.
+}
+
+Bishop_713 {
+Sind Sie der einzige Arzt in Bridgetown?
+}
+
+Bishop_714 {
+Aber ich bin der harmloseste von ihnen!
+}
+
+Bishop_715 {
+Finden Sie nicht, dass Sie sich etwas zu frei benehmen?
+}
+
+Bishop_716 {
+Vielleicht. Aber einem Arzt stehen gewisse Freiheiten zu.
+}
+
+Bishop_717 {
+Aber ich bin nicht Ihre Patientin! Merken Sie sich das ein für alle Mal!
+}
+
+Bishop_718 {
+...
+}
+
+Bishop_719 {
+Wer ist da?
+}
+
+Bishop_720 {
+Ich bin's - Peter Blood.
+}
+
+Bishop_721 {
+Was wollen Sie?
+}
+
+Bishop_722 {
+
+}
+
+Bishop_723 {
+Arabella! Ich bin's, Mary Traill.
+}
+
+Bishop_724 {
+
+}
+
+Bishop_725 {
+Oh, Mary! Du bist hier? Komm herein!
+}
+
+Bishop_726 {
+
+}
+
+Bishop_727 {
+
+}
+
+Bishop_728 {
+Ist irgendein Diener im Haus?
+}
+
+Bishop_729 {
+Nur James. Er räumt oben auf.
+}
+
+Bishop_730 {
+Er wird genügen. Bewaffnen Sie ihn und gehen Sie sofort in den Dschungel. Dort sind Sie sicherer. Sie können nicht hierbleiben. Beeilen Sie sich!
+}
+
+Bishop_731 {
+Aber die Kämpfe sind doch schon vorbei...
+}
+
+Bishop_732 {
+Das Schlimmste steht uns noch bevor. Miss Trail wird es Ihnen später erzählen. Um Gottes willen, vertrauen Sie mir und tun Sie, was ich sage!
+}
+
+Bishop_733 {
+Er... er hat mich gerettet.
+}
+
+Bishop_734 {
+
+}
+
+Bishop_735 {
+Gerettet? Wovor, Mary?
+}
+
+Bishop_736 {
+
+}
+
+Bishop_737 {
+
+}
+
+Bishop_738 {
+Das kann warten! Ihr habt die ganze Nacht zum Reden, sobald ihr an einem sicheren Ort seid. Bitte, ruf James und tu, was ich sage! Sofort!
+}
+
+Bishop_739 {
+Sie sprechen nicht - Sie erteilen Befehle.
+}
+
+Bishop_740 {
+Großer Gott! Ja, ich erteile Befehle! Miss Trail, sagen Sie es ihr - habe ich einen Grund...
+}
+
+Bishop_741 {
+Ja, ja. Arabella, ich flehe dich an, hör auf ihn!
+}
+
+Bishop_742 {
+
+}
+
+Bishop_743 {
+Ich muss ein paar Sachen zusammenpacken...
+}
+
+Bishop_744 {
+Beeilen Sie sich. Wir warten draußen auf Sie.
+}
+
+Bishop_745 {
+Ich... ich werde nie vergessen, was Sie für mich getan haben, Sir!
+}
+
+Bishop_746 {
+Ich habe in meinem Leben ernstere Dinge getan. Deshalb bin ich hier gelandet.
+}
+
+Bishop_747 {
+Haben Sie... haben Sie ihn getötet?
+}
+
+Bishop_748 {
+Ich hoffe es. Es ist gut möglich, aber das spielt keine Rolle. Wichtig ist nur, Sie so schnell wie möglich an einen sicheren Ort zu bringen.
+}
+
+Bishop_749 {
+Ich bin bereit... Wohin gehen wir?
+}
+
+Bishop_750 {
+Weg von der Stadt. Gehen Sie jetzt und schauen Sie nicht zurück.
+}
+
+Bishop_751 {
+Ich werde nie vergessen, was Sie für mich getan haben, Mr. Blood! Niemals!
+}
+
+Bishop_752 {
+Ah, Doktor Blood. Ausgezeichnet. Vor nicht allzu langer Zeit lief die Korvette Pride of Devon in unseren Hafen ein. Vor Martinique geriet sie mit den Spaniern in ein Gefecht und ging siegreich daraus hervor, obwohl sie selbst schwer mitgenommen wurde.\nDie verwundeten Gefangenen haben wir unter zuverlässiger Bewachung im Lagerhaus der Werft untergebracht, wo sie später vor Gericht gestellt werden. Bis dahin sind wir als gute Christen verpflichtet, ihnen medizinische Hilfe zu leisten.\nWährend die anderen Ärzte sich um die Besatzung der Korvette kümmern, übertrage ich Ihnen die Spanier. Alles, was Sie brauchen, ist bereits vorbereitet und befindet sich beim Werftbesitzer.
+}
+
+Bishop_753 {
+Wie Sie befehlen, Gouverneur.
+}
+
+Bishop_754 {
+Doktor Blood, ich glaube, ich habe Ihnen gesagt, Sie sollen sich um die Spanier kümmern, statt mich zu belästigen.
+}
+
+Bishop_755 {
+Ich bin schon auf dem Weg zu ihnen, Gouverneur.
+}
+
+Bishop_756 {
+Ich habe Ihnen einen vollkommen klaren Befehl gegeben, und trotzdem treiben Sie sich immer noch hier herum.
+}
+
+Bishop_757 {
+Ich gehe sofort zum Lagerhaus.
+}
+
+Bishop_758 {
+Stellen Sie meine Geduld nicht auf die Probe, Doktor Blood. Ein Wort von mir, und Sie brechen sich wieder auf der Plantage den Rücken krumm.
+}
+
+Bishop_759 {
+Entschuldigen Sie. Ich werde die Gefangenen sofort untersuchen.
+}
+
+Bishop_760 {
+...
+}
+
+Bishop_761 {
+Das wäre alles. Bald wird es Ihnen besser gehen. Und ich muss zur Plantage zurück, bevor es zu spät wird. Morgen früh komme ich wieder.
+}
+
+Bishop_762 {
+Zum Teufel mit Ihrer Plantage! Sie bleiben hier, bis ich beschließe, Sie gehen zu lassen.
+}
+
+Bishop_763 {
+Aber...
+}
+
+Bishop_764 {
+Schweigen! Ich will kein weiteres Wort hören! Bis Sie mich von diesem höllischen Schmerz befreit haben, machen Sie keinen einzigen Schritt vor die Tür!
+}
+
+Bishop_765 {
+Wie Sie wünschen, Gouverneur.
+}
+
+Bishop_766 {
+Konnten Sie Mr. Dan finden?
+}
+
+Bishop_767 {
+Er war nicht zu Hause. Allerdings hat er ein Rezept für Mrs. Steeds Mixtur hinterlassen - und auch etwas gegen Gicht. Ich werde eine Einreibung zubereiten, einen Verband anlegen und einen mäßigen Aderlass vornehmen.
+}
+
+Bishop_768 {
+Ich konnte ihn nicht zu Hause antreffen. Trotzdem denke ich, dass wir vorerst ohne den Kräuterumschlag auskommen. Ich lege eine heiße Kompresse auf und lasse etwas Blut ab. Bis zum Abend werden Sie sich fast wie ein neuer Mensch fühlen.
+}
+
+Bishop_769 {
+Dann stehen Sie nicht da wie angewurzelt, Doktor. Tun Sie, was nötig ist, bevor mich dieses verdammte Bein völlig in den Wahnsinn treibt.
+}
+
+Bishop_770 {
+...
+}
+
+Bishop_771 {
+Verschonen Sie mich mit Vorträgen und legen Sie los.
+}
+
+Bishop_772 {
+...
+}
+
+Bishop_773 {
+...
+}
+
+Bishop_774 {
+Wie fühlen Sie sich, Gouverneur? Die Schwellung ist deutlich zurückgegangen, und auch der Schmerz sollte nachgelassen haben.
+}
+
+Bishop_775 {
+Ich glaube, ich könnte vielleicht schon darauf stehen.
+}
+
+Bishop_776 {
+Ich würde Ihnen nicht raten, es zu überstürzen. Ruhe ist jetzt die beste Medizin. Belasten Sie das Gelenk mindestens einen Tag lang nicht, dann zieht sich der Anfall vielleicht zurück, ohne eine weitere Belagerung zu beginnen.
+}
+
+Bishop_777 {
+Sehr wohl. Sie können sich vorerst um Ihre anderen Patienten kümmern, Doktor. Wenn ich Sie wieder brauche, lasse ich nach Ihnen schicken.
+}
+
+Bishop_778 {
+...
+}
+
+Bishop_779 {
+Der Schmerz ist fast verschwunden. Gehen Sie, Doktor, kümmern Sie sich vorerst um Ihre anderen Angelegenheiten.
+}
+
+Bishop_780 {
+Wie Sie wünschen, Gouverneur.
+}
+
+Bishop_781 {
+Doktor Blood! Wo waren Sie? Dem Gouverneur geht es schlecht, und Sie treiben sich weiß Gott wo herum.
+}
+
+Bishop_782 {
+Verzeihen Sie, Mrs. Steed. Andere Patienten haben mich aufgehalten.
+}
+
+Bishop_783 {
+Nun, worauf warten Sie? An die Arbeit, Doktor.
+}
+
+Bishop_784 {
+Natürlich, Mrs. Steed.
+}
+
+Bishop_785 {
+Machen Sie es sich dort auf dem Sofa bequem, Doktor. Es ist zwar kein Bett, aber leider haben wir nichts anderes.
+}
+
+Bishop_786 {
+Danke...
+}
+
+Bishop_787 {
+In den Dschungel! Lauft in den Dschungel und versteckt euch dort, bis wir mit diesen verdammten Schweinen fertig sind.
+}
+
+Bishop_788 {
+Doktor Blood... Ich war sicher, dass sie Sie erwischt hatten... und dass sie als Nächstes nach mir kommen würden. Ich habe die ganze Nacht am Kai auf Sie gewartet. Die ganze Nacht!
+}
+
+Bishop_789 {
+Der Gouverneur hat mich aufgehalten. Er hat einen höllischen Gichtanfall...
+}
+
+Bishop_790 {
+Es ist alles vorbei... warum habe ich mich überhaupt auf Sie eingelassen...
+}
+
+Bishop_791 {
+Wir fliehen heute Nacht. Und wenn ich dem Gouverneur dafür jeden Tropfen Blut abzapfen muss. Seien Sie bereit.
+}
+
+Bishop_792 {
+Und was, wenn sie mich tagsüber fragen, woher ich das Geld habe?
+}
+
+Bishop_793 {
+Lassen Sie sich etwas einfallen. Aber verlieren Sie nicht die Nerven. Treten Sie selbstsicher auf. Ich kann nicht länger hierbleiben.
+}
+
+Bishop_794 {
+Wir könnten schon weit weg von hier sein...
+}
+
+Bishop_795 {
+Versuchen Sie, sich nicht zu betrinken. Sie bringen uns sonst alle ins Verderben.
+}
+
+Bishop_796 {
+Ah, Doktor Blood! Guten Tag. Sie sind sicher wegen des Mittels gegen Migräne hier? Wie ärgerlich - ich habe es noch nicht vorbereitet... Ich kümmere mich sofort darum!
+}
+
+Bishop_797 {
+Guten Tag, Mr. Dan. Diesmal bin ich nicht deswegen hier. Der Gouverneur hat mir die Behandlung der spanischen Gefangenen übertragen. Ich brauche Leinen für Verbände, Scharpie, Spiritus zum Reinigen der Wunden und einen Satz chirurgischer Instrumente. Ich nehme an, zweitausendfünfhundert Piaster sollten dafür genügen?
+}
+
+Bishop_798 {
+Aber, Doktor. Ich werde an Verwundeten nichts verdienen, selbst wenn es Spanier sind. Wenn Sie versprechen, die Instrumente zurückzugeben, sobald Sie sie nicht mehr brauchen, können Sie den Rest als Geschenk betrachten.
+}
+
+Bishop_799 {
+Das ist sehr großzügig von Ihnen. Ich verspreche, die Instrumente unversehrt zurückzugeben - es sei denn natürlich, die Spanier erweisen sich als härter als englischer Stahl.
+}
+
+Bishop_800 {
+Natürlich, natürlich. Das wird mehr als genug sein. Hier, nehmen Sie. Und beurteilen Sie mich nicht zu streng dafür, dass ich so auf das Geld achte - medizinische Vorräte sind heutzutage teuer.
+}
+
+Bishop_801 {
+Keine Sorge, Mr. Dan. Ich habe mich daran gewöhnt, dass in dieser Welt alles seinen Preis hat - sogar ein Menschenleben.
+}
+
+Bishop_802 {
+Natürlich, natürlich. Das wird mehr als genug sein. Vorausgesetzt, Sie haben das Geld bei sich, versteht sich.
+}
+
+Bishop_803 {
+Verzeihen Sie meine Vergesslichkeit, Mr. Dan. Ich komme sofort mit dem Geld zurück.
+}
+
+Bishop_804 {
+Und noch etwas. Ich zweifle weder an Ihrer Erfahrung noch an Ihrem Können - in Europa hätten Sie Mrs. Steeds Arznei zweifellos mühelos selbst herstellen können. Aber hier auf Barbados ist es für einen Mann in Ihrer Lage nicht leicht, die nötigen Zutaten und Werkzeuge zu beschaffen. Ich bin bereit, Ihnen dabei zu helfen... sofern Sie es bei Gelegenheit für angebracht halten, Gouverneur Steed gegenüber meine Hilfe zu erwähnen.
+}
+
+Bishop_805 {
+Sie sind sehr vorausschauend, Mr. Dan. Nun, das dürfte keinerlei Schwierigkeiten bereiten.
+}
+
+Bishop_806 {
+Warten Sie... Ich zweifle weder an Ihrer Erfahrung noch an Ihrem Können - in Europa hätten Sie Mrs. Steeds Arznei zweifellos mühelos selbst herstellen können. Aber hier auf Barbados ist es für einen Mann in Ihrer Lage nicht leicht, die nötigen Zutaten und Werkzeuge zu beschaffen. Ich bin bereit, Ihnen dabei zu helfen... sofern Sie es bei Gelegenheit für angebracht halten, Gouverneur Steed gegenüber meine Hilfe zu erwähnen.
+}
+
+Bishop_807 {
+Sie sind sehr vorausschauend, Mr. Dan. Nun, das dürfte keinerlei Schwierigkeiten bereiten.
+}
+
+Bishop_808 {
+Hier, nehmen Sie das. Darin befinden sich das Rezept, die Werkzeuge und alles, was Sie zur Zubereitung eines Fläschchens Arznei brauchen. Sollten bei der Herstellung Schwierigkeiten auftreten, können Sie jederzeit zu mir kommen.
+}
+
+Bishop_809 {
+Danke, Mr. Dan. Alles Gute.
+}
+
+Bishop_810 {
+Noch etwas, Doktor?
+}
+
+Bishop_811 {
+Nein, danke. Ich denke, es ist Zeit, mich um meine Patienten zu kümmern.
+}
+
+Bishop_812 {
+Doktor, ich hoffe, Sie haben die zweitausendfünfhundert Piaster diesmal bei sich?
+}
+
+Bishop_813 {
+Natürlich, Mr. Dan. Hier - nehmen Sie sie und betrachten Sie meine Vergesslichkeit als gesühnt.
+}
+
+Bishop_814 {
+Ich fürchte, ich habe die nötige Summe noch immer nicht. Aber ich werde versuchen, das so bald wie möglich zu ändern.
+}
+
+Bishop_815 {
+So ist es besser. Nehmen Sie. Und beurteilen Sie mich nicht zu streng dafür, dass ich so auf das Geld achte - medizinische Vorräte sind heutzutage teuer.
+}
+
+Bishop_816 {
+Keine Sorge, Mr. Dan. Ich habe mich daran gewöhnt, dass in dieser Welt alles seinen Preis hat - sogar ein Menschenleben.
+}
+
+Bishop_817 {
+Peter... Mein Rücken, mein Rücken!
+}
+
+Bishop_818 {
+Ganz ruhig, Pitt, beweg dich nicht. Du machst es sonst nur schlimmer. Zuerst muss ich die Wunden auswaschen. Danach kannst du mir erzählen, was passiert ist.
+}
+
+Bishop_819 {
+So. Du hast doch wohl nicht geglaubt, wir könnten ohne einen Navigator auskommen, nachdem du diesem Vieh Bishop einen Grund gegeben hast, dich beinahe umzubringen?
+}
+
+Bishop_820 {
+Ich glaube nicht, dass wir überhaupt einen Navigator brauchen werden, Peter...
+}
+
+Bishop_821 {
+Was? Was ist los?
+}
+
+Bishop_822 {
+Nettall... Er kam auf die Plantage... suchte nach dir... Ich werde hier verrotten... bis ich Bishop den Namen sage... warum er... hierherkam... Dieser Narr... ist geflohen...
+}
+
+Bishop_823 {
+Verdammt sei dieser dreckige Sklavenhalter! Uns wird schon etwas einfallen. Zum Teufel mit Nettall! Ob er die Bürgschaft hinterlegt oder nicht, ob er sich irgendeine Erklärung ausdenkt oder nicht - die Schaluppe gehört uns. Wir fliehen, und du kommst mit.
+}
+
+Bishop_824 {
+Ein Hirngespinst, Peter... Wir können nicht fliehen... Die Bürgschaft wurde nicht bezahlt... Die Beamten werden die Schaluppe beschlagnahmen... Selbst wenn Nettall uns nicht verrät... und sie uns nicht die Stirn brandmarken...
+}
+
+Bishop_825 {
+Was ist los, Peter?
+}
+
+Bishop_826 {
+Ein rechtzeitiges Eingreifen des Schicksals, mein Freund. Obwohl nur der Teufel weiß, was daraus wird!
+}
+
+Bishop_827 {
+Peter... wir kommen doch von hier weg, oder?
+}
+
+Bishop_828 {
+Das werde ich wissen, sobald ich die Stadt erreicht habe.
+}
+
+Bishop_829 {
+Warum sich bei dieser Hitze beeilen? Wir können uns das Schauspiel ansehen, und falls wir wirklich verschwinden müssen, bleibt uns noch genug Zeit, sobald die Stadt gefallen ist.
+}
+
+Bishop_830 {
+Wolverstone, trag Pitt in die Baracke und gib ihm etwas zu trinken. Dann ruht euch selbst ein wenig aus.
+}
+
+Bishop_831 {
+Und was ist mit der Flucht?
+}
+
+Bishop_832 {
+Wir warten bis zum Einbruch der Nacht. Selbst wenn unsere Schaluppe noch dort liegt und unversehrt ist, wäre es blanker Wahnsinn, mitten in einer Schlacht auszulaufen.
+}
+
+Bishop_833 {
+Was sollen wir tun, Peter?
+}
+
+Bishop_834 {
+Ich schleiche mich in die Stadt und finde heraus, was dort vor sich geht. Ihr sammelt alle Vorräte, die ihr finden könnt, und füllt mehrere kleine Fässer mit Wasser.
+}
+
+Bishop_835 {
+Ich komme mit. Ich habe vielleicht nur ein Auge, aber damit sehe ich nicht schlechter als ein Mann mit zweien.
+}
+
+Bishop_836 {
+Ein einzelner Mann fällt weniger auf. Und mit meinem Spanisch habe ich bessere Chancen, am Leben zu bleiben.
+}
+
+Bishop_837 {
+Dann nimm das hier. Ich habe es bei Kents Sachen gefunden. Diese Hunde sind so schnell in die Stadt gerannt, dass sie vergessen haben, die Hütte abzuschließen, in der sie ihr Zeug aufbewahren.
+}
+
+Bishop_838 {
+Danke. Betrachten wir es als sein bescheidenes Abschiedsgeschenk an uns.
+}
+
+Bishop_839 {
+Nun, Peter, was gibt es Neues?
+}
+
+Bishop_840 {
+Bridgetown ist in spanischer Hand. Sie sind jetzt die Herren hier.
+}
+
+Bishop_841 {
+Und das ist alles? Verdammt, ich dachte, du wolltest uns ein Boot besorgen!
+}
+
+Bishop_842 {
+Und das habe ich auch, Wolverstone. Nur ist es kein Boot.
+}
+
+Bishop_843 {
+Was dann?
+}
+
+Bishop_844 {
+Ein Schiff.
+}
+
+Bishop_845 {
+Ein Schiff! Verdammt noch mal, Peter, du bist ein Zauberer! Worauf warten wir dann noch? Wo liegt es?
+}
+
+Bishop_846 {
+Vor Anker im Hafen von Bridgetown.
+}
+
+Bishop_847 {
+Argh... Du willst den Spaniern ein Schiff wegnehmen?
+}
+
+Bishop_848 {
+Das ist Wahnsinn! Sie machen uns nieder, bevor wir überhaupt das Deck berühren!
+}
+
+Bishop_849 {
+In diesem Fall kannst du hierbleiben, Sandro. Bishop wird sich zweifellos um deine Zukunft kümmern.
+}
+
+Bishop_850 {
+Die Spanier sind mit Plündern und Trinken beschäftigt - und bei beidem zeigen sie bemerkenswerten Eifer. Natürlich haben sie eine Wache an Bord gelassen, aber ich weigere mich zu glauben, dass diese Männer um diese Stunde noch eine Lunte von einer Flasche unterscheiden können.
+}
+
+Bishop_851 {
+Und womit sollen wir kämpfen? Ein rostiges Schwert von Kent lässt sich schlecht unter uns allen aufteilen.
+}
+
+Bishop_852 {
+Ich bezweifle, dass die Schreiber unser Waffenversteck gefunden haben. Es sollte noch dort sein, wo wir es versteckt haben - im Lagerhaus.
+}
+
+Bishop_853 {
+Nun denn, bei allen Teufeln, lieber mit einer Klinge in der Hand sterben, als darauf zu warten, dass Bishop wieder anfängt, unsere Rippen mit der Peitsche zu zählen. Ich bin dabei, Peter.
+}
+
+Bishop_854 {
+Was starrt ihr mich alle so an? Wo ihr hingeht, gehe ich auch hin.
+}
+
+Bishop_855 {
+Lieber jetzt das Risiko eingehen, als mich später wegen meiner Feigheit zu verfluchen. Ich bin dabei.
+}
+
+Bishop_856 {
+Mich müsst ihr nicht überreden. Ich ziehe spanischen Stahl Bishops Peitsche vor.
+}
+
+Bishop_857 {
+Ich... ich komme auch mit.
+}
+
+Bishop_858 {
+Ich nehme an, Jeremy brauchen wir nicht zu fragen. Nehmt die Vorräte und die Leiter. Wir brechen sofort auf.
+}
+
+Bishop_859 {
+Ich hole euch ein. Hier sind noch ein paar Jungs, die nur zu gern mit uns verschwinden würden. Ein paar zusätzliche Hände können sicher nicht schaden.
+}
+
+Bishop_860 {
+Dieser verdammte Sadist hat Pitt zum Krüppel geschlagen... Wenn es auf dieser Welt Gerechtigkeit gäbe, würde er längst in der Hölle brennen.
+}
+
+Bishop_861 {
+In England gibt es keine Gerechtigkeit, Hagthorpe. Hast du das immer noch nicht begriffen?
+}
+
+Bishop_862 {
+Worauf warten wir, Peter?
+}
+
+Bishop_863 {
+Ich muss sehen, was in der Stadt geschieht. Wartet, bis ich zurück bin.
+}
+
+Bishop_864 {
+Diese ganze Warterei gefällt mir nicht. Die Freiheit wird uns nicht von selbst in den Schoß fallen.
+}
+
+Bishop_865 {
+Geduld, Ned. Alles zu seiner Zeit.
+}
+
+Bishop_866 {
+Warten Sie darauf, dass mein Bein explodiert, Doktor Blood?
+}
+
+Bishop_867 {
+Ich lasse Ihnen jetzt Blut ab, dann wird es Ihnen besser gehen.
+}
+
+Bishop_868 {
+Wolverstone, du bist ein hervorragender Kämpfer. Nur wenige Männer können es mit deiner Kraft aufnehmen, und beim Entern ist ein Mann wie du eine Kanone wert. Außerdem wird es dort mehr Feinde geben als hier - das verspreche ich dir. Was meinst du? Bereit, die nächsten paar Jahre auf See zu verbringen?
+}
+
+Bishop_869 {
+Wir müssen jemanden nach Jeremy schicken, Captain.
+}
+
+Bishop_870 {
+Ganz ruhig, alter Seebär. Ich habe unseren Navigator nicht vergessen.
+}
+
+Bishop_871 {
+Was machen wir als Nächstes, Peter?
+}
+
+Bishop_872 {
+Das sage ich euch gleich.
+}
+
+Bishop_873 {
+Ich würde gern Bishops Gesicht sehen, wenn er erfährt, wer den Spaniern dieses Ungetüm von einem Schiff gestohlen hat.
+}
+
+Bishop_874 {
+Ich bin sicher, das wäre ein seltener Anblick. Aber es ist noch zu früh, daran zu denken. Wir haben noch viel zu tun - und vor allem müssen wir erst einmal aus diesem Hafen herauskommen.
+}
+
+Bishop_875 {
+Willkommen an Bord der Cinco Llagas, mein lieber Colonel! Zu Ehren Ihrer Ankunft haben wir aus der Garderobe der Spanier gemacht, was sich machen ließ, obwohl wir ehrlich gesagt kaum zu hoffen wagten, Sie persönlich empfangen zu dürfen. Sie sind hier unter Freunden - unter alten Freunden!
+}
+Bishop_876 {
+Peter Blood! Also sind Sie es...
+}
+Bishop_877 {
+Sie irren sich nicht. Und das hier sind Freunde von mir - und von Ihnen.
+}
+Bishop_878 {
+Hol mich der Teufel! Und mit diesen Kerlen haben Sie ein spanisches Schiff genommen und den Spieß gegen die Spanier umgedreht! Erstaunlich! Heldenhaft!
+}
+Bishop_879 {
+Heldenhaft? Nein, ich würde eher sagen: episch. Sie scheinen meine Talente allmählich zu würdigen, Colonel.
+}
+Bishop_880 {
+Sie versetzen mich in Staunen! Bei meiner Seele, das ist unglaublich! Das ganze Geld zurückzuholen und ein so prächtiges Schiff mit all seinen Reichtümern zu erbeuten! Das wird wenigstens einen Teil unserer übrigen Verluste wettmachen. Hol mich der Teufel, Blood, Sie verdienen eine stattliche Belohnung.
+}
+Bishop_881 {
+Da stimme ich Ihnen vollkommen zu, Colonel.
+}
+Bishop_882 {
+Hol mich der Teufel! Ihr alle verdient eine stattliche Belohnung - und meinen Dank.
+}
+Bishop_883 {
+Natürlich. Die Frage ist nur, welche Belohnung Sie für angemessen halten und wie genau sich Ihre Dankbarkeit äußern soll.
+}
+Bishop_884 {
+Aber das liegt doch auf der Hand. Seine Exzellenz Gouverneur Steed wird England von Ihrer Tat berichten, und vielleicht wird Ihre Dienstzeit verkürzt.
+}
+Bishop_885 {
+Ach, die Großzügigkeit des Königs kennen wir gut genug!
+}
+Bishop_886 {
+Da wäre noch eine andere Angelegenheit. Ihre Zusage, mich auspeitschen zu lassen. In solchen Dingen, Colonel, sind Sie ein Mann, der sein Wort hält - was man von anderen Dingen nicht behaupten kann. Wenn ich mich recht erinnere, erklärten Sie, auf meinem Rücken werde kein Zoll unversehrter Haut übrig bleiben.
+}
+Bishop_887 {
+Mein lieber Doktor, wie können Sie sich nach allem, was Sie vollbracht haben, noch an solche Kleinigkeiten erinnern!
+}
+Bishop_888 {
+Es freut mich, Sie in so friedlicher Stimmung zu sehen. Trotzdem kann ich mich des Gedankens nicht erwehren, außerordentlich viel Glück gehabt zu haben. Wären die Spanier heute statt gestern gekommen, läge ich womöglich jetzt im selben Zustand wie der arme Jeremy Pitt...
+}
+Bishop_889 {
+Nun, wozu noch davon reden?
+}
+Bishop_890 {
+Es hat sehr wohl seinen Sinn, mein lieber Colonel. Sie haben Menschen so viel Leid und Grausamkeit zugefügt, dass ich Ihnen um derer willen, die nach uns kommen, eine Lektion erteilen will, an die Sie sich erinnern werden.
+}
+Bishop_891 {
+Jeremy liegt in diesem Augenblick in der Kajüte, sein Rücken von Ihnen in allen Farben des Regenbogens bemalt. Der arme Teufel wird mindestens einen Monat krank sein. Wären die Spanier nicht gekommen, wäre er vielleicht schon tot - und ich womöglich mit ihm.
+}
+Bishop_892 {
+Warum verschwenden wir Zeit mit diesem fetten Schwein? Werfen wir ihn über Bord und machen Schluss.
+}
+Bishop_893 {
+Was zum Teufel redest du da für einen Unsinn?!
+}
+Bishop_894 {
+Ich muss Ihnen sagen, Colonel, dass Sie ein außerordentlich glücklicher Mann sind, obwohl Sie nicht die geringste Ahnung haben, wem Sie dieses Glück verdanken.
+}
+Bishop_895 {
+Hängt ihn an die Rah!
+}
+Bishop_896 {
+Wenn ich bitten darf, Wolverstone. Nicht Sie führen auf diesem Schiff das Kommando - sondern ich - und ich werde handeln, wie ich es für richtig halte. So lautete unsere Abmachung, und ich bitte Sie, das nicht zu vergessen.
+}
+Bishop_897 {
+Colonel Bishop soll am Leben bleiben. Wir brauchen ihn als Geisel. Wenn Sie darauf bestehen, ihn zu hängen, dann werden Sie mich neben ihm aufknüpfen müssen.
+}
+Bishop_898 {
+Denkt daran, Freunde: Auf einem Schiff kann es nur einen Kapitän geben.
+}
+Bishop_899 {
+Obwohl Ihnen das Leben zugesichert wurde, muss ich Sie als Geisel an Bord behalten, bis wir sicher auf See sind. Ihre Anwesenheit wird das gute Benehmen von Gouverneur Steed und den im Fort Verbliebenen gewährleisten.
+}
+Bishop_900 {
+Bis Sie auf See si...
+}
+Bishop_901 {
+Ganz genau.
+}
+Bishop_902 {
+Sir...
+}
+Bishop_903 {
+Meine Herren, Sie haben gehört, was ich gesagt habe. Seien Sie so freundlich, es Seiner Exzellenz auszurichten - zusammen mit meinen besten Wünschen.
+}
+Bishop_904 {
+Aber, Sir...
+}
+Bishop_905 {
+Es gibt nichts weiter zu besprechen, meine Herren. Mein Name ist Blood. Ich bin Kapitän der Cinco Llagas, die ich Don Diego de Espinosa y Valdez abgenommen habe, der sich selbst als mein Gefangener an Bord befindet.
+}
+Bishop_906 {
+Dort ist die Leiter, meine Herren. Ich glaube, Sie werden sie angenehmer finden, als über Bord geworfen zu werden - und genau das wird geschehen, wenn Sie sich noch länger aufhalten.
+}
+Bishop_907 {
+Das werden Sie noch bereuen...
+}
+Bishop_908 {
+Möglich. Aber nicht heute, Colonel.
+}
+Bishop_909 {
+Ned, Anker auf. Wir verlassen diese verdammte Insel. Alle Mann auf Station!
+}
+Bishop_910 {
+Mit dem größten Vergnügen, Kapitän.
+}
+Bishop_911 {
+Was wollen Sie noch?
+}
+Bishop_912 {
+Nichts, Colonel.
+}
+Bishop_913 {
+Sagen Sie, Colonel, können Sie schwimmen? Als Arzt verschreibe ich Ihnen ein Bad, damit sich Ihr Gemüt etwas abkühlt.
+}
+Bishop_914 {
+Sie haben Glück, dass ich von Natur aus nicht so blutdürstig bin wie Sie - oder wie manche meiner Freunde. Es war verteufelt schwer, sie dazu zu bringen, auf eine Rache zu verzichten, die schließlich vollkommen gerechtfertigt gewesen wäre.
+}
+Bishop_915 {
+Und langsam bezweifle ich, ob Ihre Haut all die Mühe wert war, die ich ihretwegen auf mich genommen habe. Sie werden ein Stück schwimmen müssen. Der Hafen ist kaum eine halbe Meile entfernt, und wenn nichts Unvorhergesehenes geschieht, sollten Sie das Ufer ohne große Schwierigkeiten erreichen.
+}
+Bishop_916 {
+Außerdem dürfte es Ihnen bei einer Statur wie der Ihren nicht schwerfallen, sich über Wasser zu halten.
+}
+Bishop_917 {
+Schnell, Colonel. Trödeln Sie nicht. Sonst kommen Sie mit uns auf eine lange Reise, und nur der Teufel weiß, was morgen oder übermorgen mit Ihnen geschehen könnte. Sie sind hier nicht beliebter, als Sie es verdienen.
+}
+Bishop_918 {
+Kommen Sie, mein lieber Colonel. Nur noch ein oder zwei Schritte.
+}
+Bishop_919 {
+Zurück auf die Plantage, Blood. Los. Der Colonel hat befohlen, dass man Sie zurückbringt, und mir ist völlig gleich, wohin Sie unterwegs waren.
+}
+Bishop_920 {
+Was für eine seltene Verbindung von Gehorsam und Feingefühl. Leider muss ich dem Gouverneur Bericht erstatten über...
+}
+Bishop_921 {
+Sind Sie taub? Zurück auf die Plantage, sofort! Oder soll ich Ihnen Ihre Frechheit vor aller Augen ausprügeln?
+}
+Bishop_922 {
+Ihre Befehle, Kapitän?
+}
+Bishop_923 {
+Im Augenblick keine, Wolverstone.
+}
+Bishop_924 {
+Peter, bist du sicher, dass das klug ist? Wie lange wollen wir noch warten? Wäre es nicht sicherer, im Schutz der Dunkelheit zu verschwinden, bevor die Spanier begreifen, was geschehen ist?
+}
+Bishop_925 {
+Siehst du das Fort, Wolverstone? Es ist schwer mitgenommen, aber selbst in dieser Ruine können noch ein oder zwei Kanonen stehen, die uns die Masten wegschießen, sobald sie merken, dass das Schiff ohne seinen Kapitän abläuft. Nein, mein Freund. Wir haben sie schon einmal überrascht - und wir werden es wieder tun.
+}
+Bishop_926 {
+Und wenn wir nicht alle Boote versenken können? Wenn sie uns entern, was dann?..
+}
+Bishop_927 {
+Wir haben einen ausgezeichneten Kanonier - Ogle. Ich glaube, du kennst ihn...
+}
+Bishop_928 {
+Ich verstehe dich nicht, Peter. Bishop ist in unserer Hand, und eigentlich müsste er längst an einer Rah baumeln...
+}
+Bishop_929 {
+Das haben wir bereits geklärt, Ned. Ich werde nicht zulassen, dass er hingerichtet wird.
+}
+Bishop_930 {
+Was sind deine Befehle, Peter?
+}
+Bishop_931 {
+Noch keine. Aber bleib wachsam.
+}
+Bishop_932 {
+Wir können nicht weiter blindlings segeln, Peter. Wir brauchen jemanden, der sich mit Navigation auskennt.
+}
+Bishop_933 {
+Ich weiß. Wir werden etwas tun müssen, das ich lieber vermieden hätte.
+}
+Bishop_934 {
+Diese verdammten Ratten haben meinen ganzen Tabak gefressen...
+}
+Bishop_935 {
+Offenbar bist du nicht der Einzige an Bord, der einen guten Rauch zu schätzen weiß.
+}
+Bishop_936 {
+Ich sehe, du hast das bereits bemerkt...
+}
+Bishop_937 {
+Don Diego... Er...
+}
+Bishop_938 {
+Ihr habt euer Wort gebrochen, ihr Hunde? Was habt ihr mit meinem Vater gemacht?
+}
+Bishop_939 {
+Wir haben kein Versprechen gebrochen. Das war nicht nötig. Don Diego starb, bevor Sie überhaupt an Bord der Encarnacion kamen.
+}
+Bishop_940 {
+Gestorben? Sie meinen, Sie haben ihn getötet! Woran ist er gestorben?
+}
+Bishop_941 {
+Soweit ich das beurteilen kann, starb er vor Angst.
+}
+Bishop_942 {
+Wie wagen Sie es, elender Hund! Beschmutzen Sie den Namen meines Vaters nicht mit Ihrer schmutzigen Zunge!
+}
+Bishop_943 {
+Nimm dich in Acht, Bürschchen! Mir wird gleichgültig sein, dass du unbewaffnet bist.
+}
+Bishop_944 {
+Genug. Sie haben ihn selbst provoziert, indem Sie seinen Vater beleidigten.
+}
+Bishop_945 {
+Mich interessiert nicht die Beleidigung, sondern was geschehen ist. Gehen wir nachsehen.
+}
+Bishop_946 {
+Es gibt nichts zu sehen. Er starb, noch bevor wir die Cinco Llagas verließen, und als ich mit ihm sprach, hing er bereits tot in den Tauen.
+}
+Bishop_947 {
+Was sagen Sie da?
+}
+Bishop_948 {
+Sie bedauern, es nicht früher gewusst zu haben, nicht wahr?
+}
+Bishop_949 {
+Ich glaube Ihnen nicht.
+}
+Bishop_950 {
+Das ist Ihre Sache. Aber ich bin Arzt, und ich verwechsle keinen Toten mit einem Lebenden.
+}
+Bishop_951 {
+Hätte ich es früher gewusst, würden Sie jetzt bereits an der Rah der Encarnacion hängen!
+}
+Bishop_952 {
+Zweifellos. Deshalb denke ich gerade darüber nach, welchen Vorteil ein Mann daraus ziehen kann, etwas zu wissen, was andere nicht wissen.
+}
+Bishop_953 {
+Da werden Sie noch hängen!
+}
+Bishop_954 {
+Bringt sie nach unten und holt die anderen zusammen. Wir müssen entscheiden, was wir als Nächstes tun.
+}
+Bishop_955 {
+Bringt ihn nach unten und ruft alle Offiziere zusammen. Wir müssen entscheiden, was wir als Nächstes tun.
+}
+Bishop_956 {
+Ein Boot hat vom Ufer abgelegt. Darin sitzt irgendein vergoldeter Pfau und gibt sich, als wäre er der König von Spanien. Muss ihr Kapitän sein.
+}
+Bishop_957 {
+Ausgezeichnet. Wir werden ihn mit allem Respekt empfangen, den er verdient. Alle Mann mittschiffs. Gebt Hagthorpe einen Knüppel - oder einen Schürhaken.
+}
+Bishop_958 {
+Es gibt noch etwas. Sie haben irgendwo zwei ramponierte Lugger aufgetrieben und beladen sie mit Beute.
+}
+Bishop_959 {
+Wie rücksichtsvoll von ihnen. Ein Lugger ist ein viel leichteres Ziel als ein Boot. Auf eure Stationen.
+}
+Bishop_960 {
+Die Lugger legen ab, Peter.
+}
+Bishop_961 {
+Ausgezeichnet. Bringt unseren ehemaligen Kapitän - Don Diego - in meine Kajüte. Nach diesem Schlag wird er eine Weile nicht zu sich kommen. Sperrt alle anderen in den Laderaum und macht euch kampfbereit.
+}
+Bishop_962 {
+Das wird kein leichter Kampf... Wir sind nur eine Handvoll Leute. Und wir haben keinen Navigator.
+}
+Bishop_963 {
+Jetzt ist keine Zeit für Diskussionen, Nicholas. Wir setzen sofort Segel.
+}
+Bishop_964 {
+Darüber denken wir nach, wenn wir gewonnen haben. Jetzt muss ich mich vorbereiten. Sobald ich das Ruder übernehme, setzt Segel.
+}
+Bishop_965 {
+Wolverstone hat im Boot etwas Silber und acht Kisten Gold gefunden. Wohin damit?
+}
+Bishop_966 {
+Lasst sie fürs Erste im Vorschiff.
+}
+Bishop_967 {
+Wolverstone hat im Boot acht Kisten Gold gefunden. Wohin damit?
+}
+Bishop_968 {
+Lasst sie fürs Erste im Vorschiff.
+}
+Bishop_969 {
+Spürst du es, Peter? Das ist der Wind der Freiheit. Ich hatte beinahe vergessen, wie es ist, wieder frei durchzuatmen.
+}
+Bishop_970 {
+Noch sind wir nicht in Sicherheit, Nicholas. Aber ich spüre diesen Wind auch...
+}
+Bishop_971 {
+Für Caquetio sahen die nicht gerade aus. Meinst du nicht auch, Kapitän?
+}
+Bishop_972 {
+Jetzt ist kaum der richtige Zeitpunkt, ihre Abstammung zu studieren, Nicholas. Vielleicht war das nur ein Spähtrupp, und wenn der Rest die Kämpfe bereits gehört hat...
+}
+Bishop_973 {
+Und doch sollten wir uns damit befassen. Der verdammte Hund führt uns an der Nase herum! Soweit ich weiß, wird Curaçao hauptsächlich von Caquetio bewohnt, und die sind selten größer als fünf Fuß vier. Diese Kerle waren genauso groß wie wir.
+}
+Bishop_974 {
+Woher weißt du so viel über die Stämme dieser Inseln, Nicholas?
+}
+Bishop_975 {
+Dann hat Espinosa uns absichtlich vom Kurs abgebracht... Was jetzt auch geschieht, mischt euch nicht ein. Ich kümmere mich selbst um ihn.
+}
+Bishop_976 {
+Vor einigen Jahren war ein Freund von mir völlig besessen von den Indianerstämmen und hat mir damit die Ohren vollgeredet. Ich kann nicht behaupten, besonders aufmerksam zugehört zu haben, aber einiges ist hängen geblieben.
+}
+Bishop_977 {
+Dann hat er dir die Ohren nicht ganz umsonst vollgeredet. Was jetzt auch geschieht, mischt euch nicht ein. Ich kümmere mich selbst um ihn.
+}
+Bishop_978 {
+Kapitän?
+}
+Bishop_979 {
+Hier, Peter. Vier Kisten.
+}
+Bishop_980 {
+Bringt den Rest in die Kajüte und legt ihn in die Truhe.
+}
+Bishop_981 {
+Ich muss zugeben, dieses Schiff führt ausgezeichnete Geschütze. Die Spanier verstehen etwas von Artillerie.
+}
+Bishop_982 {
+Die Geschütze sind in tadellosem Zustand, Kapitän.
+}
+Bishop_983 {
+Ausgezeichnet, Ned. Sorge dafür, dass das so bleibt.
+}
+Bishop_984 {
+Hagthorpe und ich holen Pitt. Wolverstone, du führst das Kommando, solange ich fort bin. Ich glaube kaum, dass jemand etwas dagegen hat, wenn wir uns auf Kosten der spanischen Vorräte ein spätes Abendessen gönnen und etwas Anständigeres zum Anziehen finden. Bis wir zurück sind, soll alles bereit sein. Ogle, überprüfe die Geschütze. Wir könnten sie brauchen.
+}
+Bishop_985 {
+Und noch etwas: kein Tropfen Wein, Rum oder was diese Hidalgos sonst noch versteckt haben mögen. Um hier herauszukommen, brauchen wir klare Köpfe, ruhige Hände und jede Kraft, die wir aufbringen können.
+}
+Bishop_986 {
+Was zum Teufel geht hier vor?
+}
+Bishop_987 {
+Das hier!
+}
+Bishop_988 {
+Wie fühlen Sie sich? Tut Ihnen der Kopf weh?
+}
+Bishop_989 {
+Sind Sie Arzt?
+}
+Bishop_990 {
+Unter anderem, ja. Keine Sorge, Ihnen ist nichts Ernstes geschehen.
+}
+Bishop_991 {
+Wer zum Teufel sind Sie? Und was in aller Welt tun Sie in meinen Kleidern und auf meinem Schiff?
+}
+Bishop_992 {
+Ich fürchte, Sie sind noch im Delirium. Das ist nicht Ihr Schiff, sondern meines. Und diese Kleider gehören ebenfalls mir.
+}
+Bishop_993 {
+Ihr Schiff? Ihre Kleider? Aber... dann... Vielleicht bin ich wahnsinnig geworden? Und doch kann kein Zweifel bestehen, dass dieses Schiff die Cinco Llagas ist?
+}
+Bishop_994 {
+Es ist die Cinco Llagas.
+}
+Bishop_995 {
+Dann... Gott steh mir bei! Werden Sie mir als Nächstes erzählen, Sie seien auch Don Diego de Espinosa?
+}
+Bishop_996 {
+Oh nein. Mein Name ist Blood - Kapitän Peter Blood. Ihr Schiff gehört ebenso wie dieser elegante Anzug kraft Eroberungsrechts mir. Und Sie, Don Diego, sind mein Gefangener.
+}
+Bishop_997 {
+Aber... dann sind Sie kein Spanier?
+}
+Bishop_998 {
+Ihre eigenen Kleider müssen Sie verwirrt haben. Ich habe die Ehre, Ire zu sein. Offenbar glauben Sie, hier sei ein Wunder geschehen. Und das ist es auch - allerdings eines, das ich selbst vollbracht habe, und dem Ergebnis nach zu urteilen arbeitet mein Kopf noch recht ordentlich.
+}
+Bishop_999 {
+Und mein Sohn? Wo ist mein Sohn? Er war bei mir, als ich an Bord kam.
+}
+Bishop_1000 {
+Ihr Sohn ist in Sicherheit. Er und einige der Ruderer sind sicher angekettet und genießen den Komfort des Laderaums.
+}
+Bishop_1001 {
+Und was kommt als Nächstes, Kapitän?
+}
+Bishop_1002 {
+Als humaner Mann muss ich nun mein Bedauern darüber ausdrücken, dass dieser Schlag Sie nicht getötet hat. Denn das bedeutet, dass Sie alle Unannehmlichkeiten eines zweiten Todes erdulden müssen.
+}
+Bishop_1003 {
+Tatsächlich? Und ist das notwendig?
+}
+Bishop_1004 {
+Fragen Sie sich selbst. Als erfahrener und blutdürstiger Pirat: Was würden Sie an meiner Stelle tun?
+}
+Bishop_1005 {
+Ah, aber zwischen uns besteht ein Unterschied. Ich nenne mich keinen humanen Mann.
+}
+Bishop_1006 {
+Und ich bin kein Narr, und irische Sentimentalität wird mich nicht davon abhalten, das Notwendige zu tun. Sie und ein Dutzend überlebender Schurken an Bord zu behalten ist gefährlich.
+}
+Bishop_1007 {
+Fahren Sie fort.
+}
+Bishop_1008 {
+Wie Sie wissen, befinden sich nicht gerade Unmengen an Wasser und Proviant im Laderaum meines Schiffes. Unsere Mannschaft ist zwar klein, aber Sie und Ihre Landsleute erhöhen zu unserem Missvergnügen die Zahl der Mäuler, die wir füttern müssen.
+}
+Bishop_1009 {
+Und was haben Sie mit uns vor?
+}
+Bishop_1010 {
+Sie sehen, dass die Klugheit uns zwingt, auf das Vergnügen Ihrer Gesellschaft zu verzichten und Sie, nachdem wir Ihre empfindsamen Herzen auf das Unvermeidliche vorbereitet haben, höflich zu bitten, über Bord zu treten.
+}
+Bishop_1011 {
+Ja, ja, ich verstehe. Ich muss gestehen, Ihr Argument ist durchaus überzeugend.
+}
+Bishop_1012 {
+Sie nehmen mir eine große Last von den Schultern. Ich wäre nur ungern ohne besondere Notwendigkeit unhöflich, zumal meine Freunde und ich Ihnen sehr viel verdanken.
+}
+Bishop_1013 {
+Sie verdanken mir etwas?
+}
+Bishop_1014 {
+Was auch immer anderen widerfahren sein mag, Ihr Angriff auf Barbados endete für uns höchst glücklich. Es freut mich, dass Sie zustimmen, dass uns keine andere Wahl bleibt.
+}
+Bishop_1015 {
+Aber, mein Freund, warum sollte es keine andere Wahl geben? Da kann ich Ihnen nicht zustimmen.
+}
+Bishop_1016 {
+Wenn Sie einen anderen Vorschlag haben, höre ich ihn mir mit Vergnügen an.
+}
+Bishop_1017 {
+Könnten Sie mir bis zum Morgen Zeit zum Nachdenken geben? Mein Kopf schmerzt so sehr, dass ich kaum klar denken kann. Sie müssen zugeben, eine solche Frage verdient etwas Überlegung.
+}
+Bishop_1018 {
+Es tut mir leid, mein lieber Don Diego, Sie drängen zu müssen. Wir haben überhaupt keine Zeit.
+}
+Bishop_1019 {
+Argh... Nun gut... Ich habe einen Plan, Sir, doch seine Durchführung hängt von Ihrer Güte ab. Könnten Sie uns nicht auf einer der Inseln dieses unangenehmen Archipels an Land setzen und unserem Schicksal überlassen?
+}
+Bishop_1020 {
+Das bringt gewisse Schwierigkeiten mit sich.
+}
+Bishop_1021 {
+Ich fürchtete, Sie würden das sagen. Reden wir nicht weiter davon.
+}
+Bishop_1022 {
+Fürchten Sie den Tod, Don Diego?
+}
+Bishop_1023 {
+Ihre Frage ist beleidigend, Sir!
+}
+Bishop_1024 {
+Dann gestatten Sie mir, sie anders und vielleicht annehmbarer zu formulieren: Würden Sie gern am Leben bleiben?
+}
+Bishop_1025 {
+Ah, darauf kann ich antworten. Ich will leben, und noch mehr wünsche ich, dass mein Sohn lebt. Doch so stark dieser Wunsch auch sein mag, ich werde nicht zum Spielzeug in Ihren Händen, Meister Spötter.
+}
+Bishop_1026 {
+Wären Sie bereit, Sir, das Leben und die Freiheit für sich selbst, Ihren Sohn und den Rest Ihrer Mannschaft, die sich jetzt an Bord befindet, zu verdienen?
+}
+Bishop_1027 {
+Verdienen? Sie sagen verdienen? Warum nicht, sofern der Dienst, den Sie verlangen, weder mich noch mein Land entehrt.
+}
+Bishop_1028 {
+Wie können Sie mich einer solchen Sache verdächtigen! Ich verstehe durchaus, dass selbst Piraten ein Ehrgefühl besitzen.
+}
+Bishop_1029 {
+In diesem Fall höre ich.
+}
+Bishop_1030 {
+Sehen Sie durch das Fenster, Don Diego, und Sie werden etwas wie eine Wolke am Horizont erkennen. So seltsam es auch erscheinen mag, das ist Barbados, obwohl wir - wie Sie sich leicht denken können - versucht haben, so weit wie möglich von dieser verfluchten Insel wegzukommen.
+}
+Bishop_1031 {
+Was hält Sie so nahe bei Barbados?
+}
+Bishop_1032 {
+Wir haben ein ernstes Problem. Der einzige Mann an Bord, der sich wirklich auf Navigation versteht, liegt im Fieberdelirium, und sobald wir außer Sichtweite des Landes sind, können wir das Schiff nicht dorthin bringen, wohin wir müssen.
+}
+Bishop_1033 {
+Gibt es unter Ihren Leuten niemanden sonst, der ein Schiff führen kann?
+}
+Bishop_1034 {
+Ich kann ein Schiff im Gefecht führen, und zwei oder drei andere an Bord können mir helfen. Aber ständig an der Küste entlangzusegeln und in diesem - wie Sie es so treffend nannten - unangenehmen Archipel umherzuirren, heißt geradezu, neue Schwierigkeiten heraufzubeschwören.
+}
+Bishop_1035 {
+Was wollen Sie von mir?
+}
+Bishop_1036 {
+Mein Vorschlag ist sehr einfach: Wir wollen auf dem kürzesten Weg die holländische Kolonie Curaçao erreichen. Können Sie mir Ihr Ehrenwort geben, dass Sie uns dorthin führen, wenn ich Sie freilasse?
+}
+Bishop_1037 {
+Und was geschieht, wenn wir Curaçao erreichen?
+}
+Bishop_1038 {
+Geben Sie mir Ihre Zustimmung, und sobald wir Curaçao erreicht haben, lasse ich Sie und alle Ihre Männer frei.
+}
+Bishop_1039 {
+Ich bin einverstanden.
+}
+Bishop_1040 {
+Dann übernehmen Sie das Ruder. Wir setzen sofort Segel.
+}
+Bishop_1041 {
+Ausgezeichnet. Ich habe hier in der Kajüte noch eine Angelegenheit zu erledigen. Gehen Sie ans Ruder und legen Sie unseren Kurs fest. Sobald ich fertig bin, setzen wir Segel.
+}
+Bishop_1042 {
+Da ist es, das versprochene Curaçao, Don Pedro. Eine herrliche Insel.
+}
+Bishop_1043 {
+Ihre unverhohlene Freude ist, gelinde gesagt, schwer zu verstehen.
+}
+Bishop_1044 {
+Es ist die Freude eines Seemanns.
+}
+Bishop_1045 {
+Was ist das, Peter? Hast du das gehört?
+}
+Bishop_1046 {
+Besitzen Sie tatsächlich noch die Frechheit zu behaupten, dies sei Curaçao? Soll ich Ihnen vielleicht sagen, welches Land das dort ist? Soll ich?
+}
+Bishop_1047 {
+Dieses Land, Sie Verräter und Eidbrecher, ist die Insel Hispaniola!
+}
+Bishop_1048 {
+Sie wissen zu viel, englischer Hund!
+}
+Bishop_1049 {
+Ist es nicht an der Zeit, für Ihre schmutzige Seele zu beten?
+}
+Bishop_1050 {
+Und wer wird für Ihre beten, wenn diese Galeone Sie entert?! Sehen Sie die Segel am Horizont? Das ist die Encarnacion - das Flaggschiff des Befehlshabers der spanischen Flotte in diesen Gewässern, Admiral Don Miguel de Espinosa, mein Bruder. Eine äußerst glückliche Begegnung. Wie Sie sehen, wacht der Allmächtige über die Interessen des katholischen Spanien.
+}
+Bishop_1051 {
+Verdammter Pirat! Was ist aus Ihrem Ehrenwort geworden, Schurke?!
+}
+Bishop_1052 {
+Verdammter Pirat! Was ist aus Ihrem Ehrenwort geworden, Schurke?!
+}
+Bishop_1053 {
+Verdammter Pirat! Was ist aus Ihrem Ehrenwort geworden, Schurke?!
+}
+Bishop_1054 {
+Sie haben mich unterschätzt. Ja, ich sagte, ich fürchte den Tod nicht, und ich werde es beweisen! Ist das klar, englischer Hund?!
+}
+Bishop_1055 {
+Irisch, wenn ich bitten darf. Und was ist aus Ihrem Ehrenwort geworden, spanisches Schwein?
+}
+Bishop_1056 {
+Können Sie sich wirklich vorstellen, ich würde ein so prächtiges Schiff in Ihren schmutzigen Händen lassen, damit es gegen Spanier eingesetzt wird? Narren! Töten Sie mich, wenn Sie wollen, aber ich werde im Wissen sterben, meine Pflicht erfüllt zu haben. Binnen einer Stunde werden Sie alle in Ketten liegen, und die Cinco Llagas wird Spanien zurückgegeben.
+}
+Bishop_1057 {
+Darüber müssen Sie sich keine Sorgen machen. Wir finden schon einen Platz für Sie an einer Rah, und Seil haben wir genug. Wenn wir Ihrem Bruder begegnen, werden Sie längst zu Ihren Ahnen gegangen sein.
+}
+Bishop_1058 {
+Rührt ihn nicht an...
+}
+Bishop_1059 {
+In einer halben Stunde wird sie längsseits sein, und ihre Kanonen werden unser Deck leerfegen.
+}
+Bishop_1060 {
+Wir werden kämpfen!
+}
+Bishop_1061 {
+Kämpfen? Wie sollen wir mit weniger als fünfzig Mann an Bord kämpfen? Nein. Wir haben nur eine Chance: den Kapitän dieses Schiffes davon zu überzeugen, dass wir Spanier sind und an Bord alles in Ordnung ist, und dann unseren Weg fortzusetzen.
+}
+Bishop_1062 {
+Aber wie sollen wir das anstellen?
+}
+Bishop_1063 {
+Wie? Nun, wenn nur...
+}
+Bishop_1064 {
+Nun, wir könnten Don Diego de Espinosa zusammen mit den spanischen Ruderern schicken, um seinem Bruder, dem Admiral, zu versichern, dass wir alle treue Untertanen Seiner Katholischen Majestät, des Königs von Spanien, sind...
+}
+Bishop_1065 {
+Hol mich der Teufel, du hast recht! (kaum hörbar) Der verdammte Pirat fürchtet den Tod nicht, aber sein Sohn denkt vielleicht anders. Kindesliebe ist unter Spaniern ein bemerkenswert verbreitetes und starkes Gefühl...
+}
+Bishop_1066 {
+Ihr elenden Bestien! Was habt ihr vor?
+}
+Bishop_1067 {
+Nichts, was Ihnen gefallen wird.
+}
+Bishop_1068 {
+Wolverstone, lasst Ogle eine Kanone zurückholen und diesen Schurken an ihre Mündung binden.
+}
+Bishop_1069 {
+Nathaniel, bringt den Gefangenen an Deck.
+}
+Bishop_1070 {
+Hagthorpe, bringt die Gefangenen an Deck.
+}
+Bishop_1071 {
+Und du, Dyke, sorg dafür, dass die spanische Flagge gehisst wird, und bereite vier von den Goldkisten vor, die ihr im Boot gefunden habt.
+}
+Bishop_1072 {
+Barbar! Wilder! Verfluchter Ketzer! Können Sie mich nicht auf christliche Weise töten?
+}
+Bishop_1073 {
+Vater! In Gottes Namen, was geschieht hier?.. Gottlose Teufel, lasst ihn sofort frei!
+}
+Bishop_1074 {
+Hört ihr mich?! Bindet ihn augenblicklich los!
+}
+Bishop_1075 {
+Ruhe! Schweigen Sie und hören Sie zu! Ich habe nicht vor, Ihren Vater zur Hölle zu schicken, obwohl er es verdient hätte. Ich will ihn nicht töten, verstehen Sie?
+}
+Bishop_1076 {
+Was wollen Sie dann von uns?
+}
+Bishop_1077 {
+Der Verrat Ihres Vaters hat uns in eine schwierige Lage gebracht. Die Encarnacion hat die Cinco Llagas vermutlich bereits erkannt, und Ihr Onkel wird bald begreifen, was geschehen ist. Man wird auf uns feuern oder uns entern. Wir haben nur wenige Männer, aber wir werden uns nicht kampflos ergeben. Merken Sie sich eines: Der erste Schuss der Encarnacion wird von dieser Kanone beantwortet. Ich hoffe, Sie verstehen mich.
+}
+Bishop_1078 {
+Verstehen? Was soll ich verstehen? Wenn ich Ihnen helfen kann, einen Kampf zu vermeiden, sagen Sie mir wie.
+}
+Bishop_1079 {
+Don Diego könnte seinem Bruder versichern, dass die Cinco Llagas noch immer Spanien gehört und an Bord alles in Ordnung ist. Aber Ihr Vater... ist verhindert. Sagen wir, er hat Fieber. Also werden Sie an seiner Stelle zu Ihrem Onkel gehen.
+}
+Bishop_1080 {
+Ich soll an Bord der Encarnacion gehen?
+}
+Bishop_1081 {
+Ich werde Sie begleiten, in der Rolle eines adeligen Gefangenen, den Sie auf Barbados befreit haben.
+}
+Bishop_1082 {
+Und was geschieht mit meinem Vater?
+}
+Bishop_1083 {
+Wenn ich lebend zurückkehre und man uns ungehindert absegeln lässt, werdet ihr alle leben. Wenn etwas schiefgeht, wissen Sie bereits, was mit ihm geschehen wird. Dasselbe Schicksal erwartet die übrigen. Ich denke, damit ist alles klar. Was sagen Sie?
+}
+Bishop_1084 {
+Ich... bin einverstanden.
+}
+Bishop_1085 {
+Und Sie... auch Sie müssen zustimmen! Um Don Diegos willen, um meinetwillen, um unser aller willen. Wenn Sie sich weigern, werden sie uns überhaupt keine Gnade gewähren.
+}
+Bishop_1086 {
+Und Sie... auch Sie müssen zustimmen! Um Don Diegos willen, um meinetwillen, um unser aller willen. Wenn Sie sich weigern, werden sie uns überhaupt keine Gnade gewähren.
+}
+Bishop_1087 {
+Gehen Sie zum Boot und warten Sie dort auf mich.
+}
+Bishop_1088 {
+Es tut mir sehr leid, Don Diego, Sie in einer so unbequemen Lage zurückzulassen... Aber ich glaube, jetzt haben Sie wenig zu befürchten. Hoffen wir, dass das Schlimmste nicht eintritt.
+}
+Bishop_1089 {
+Wir schaffen es nicht bis Curaçao, Peter. Wasser können wir finden, aber Proviant haben wir höchstens für drei Tage.
+}
+Bishop_1090 {
+Und das Risiko, dort draußen in Schwierigkeiten zu geraten, ist kaum verlockender, als zu verhungern.
+}
+Bishop_1091 {
+Solange Pitt nicht wieder auf den Beinen ist, kommt Curaçao nicht infrage. Selbst mit einem Laderaum voller Vorräte und dem Teufel selbst am Ruder würden wir es nicht erreichen.
+}
+Bishop_1092 {
+Dann umrunden wir Hispaniola im Osten, folgen der Nordküste und nehmen Kurs auf Tortuga.
+}
+Bishop_1093 {
+Tortuga? Direkt in die Arme der Franzosen?
+}
+Bishop_1094 {
+Ihre Umarmung kann kaum schlimmer sein als eine spanische Schlinge oder Bishops Plantagen.
+}
+Bishop_1095 {
+Gut. Aber ein Problem bleibt: Was willst du mit unseren Gefangenen machen?
+}
+Bishop_1096 {
+Sollen wir sie mit uns herumschleppen? Wertvolle Vorräte an diese nutzlosen Mäuler zu verschwenden ist ein Luxus, den wir uns nicht leisten können.
+}
+Bishop_1097 {
+Die Küste ist nah genug. Wir könnten ihnen ein Boot geben und sie selbst für ihre Rettung sorgen lassen.
+}
+Bishop_1098 {
+Diese Männer wurden im Kampf gefangen genommen, Peter. Nach jedem Kriegsrecht sind sie unsere Beute - ebenso wie jedes Lösegeld, das wir für sie bekommen können.
+}
+Bishop_1099 {
+Wenn ich meine Rationen mit diesen Bestien teilen soll, werde ich sie lieber gleich los. Kein Lösegeld wird mich umstimmen.
+}
+Bishop_1100 {
+Sie nach Tortuga mitzunehmen bedeutet, sie den Franzosen auszuliefern, die sie vielleicht lebendig rösten. Aber das ist noch lange kein Grund, eigenhändig ein Massaker zu veranstalten.
+}
+Bishop_1101 {
+Diese Schweine verdienen Schlimmeres!
+}
+Bishop_1102 {
+Denk daran, womit der Junge dir heute gedroht hat, Peter. Wenn er entkommt und seinem Admiral-Onkel erzählt, was geschehen ist, könnte er seine Drohung durchaus wahr machen.
+}
+Bishop_1103 {
+Seine Drohungen machen mir keine Angst.
+}
+Bishop_1104 {
+Umso törichter. Es wäre klüger, ihn zusammen mit den anderen aufzuhängen.
+}
+Bishop_1105 {
+Menschlichkeit zeigt sich nicht nur in klugen Entscheidungen. Manchmal ist es besser, sich aus Mitgefühl zu irren, als kaltblütig zu morden. Wir lassen die Spanier gehen. Das ist meine Entscheidung, und ich werde nicht weiter darüber diskutieren. Sollen sie zum Teufel gehen! Wir hissen die englische Flagge, setzen jedes Stück Segel und nehmen Kurs auf Tortuga.
+}
+Bishop_1106 {
+Esteban! Du bist ja ein richtiger Mann geworden! Komm her, Neffe, lass dich ansehen.
+}
+Bishop_1107 {
+Onkel Miguel... Ich kann dir gar nicht sagen, wie froh ich bin, dich wiederzusehen.
+}
+Bishop_1108 {
+Aber du bist nicht allein gekommen. Wer ist dein Begleiter?
+}
+Bishop_1109 {
+Ich bin Don Pedro Sangre, ein unglücklicher Caballero aus León, den der tapfere Vater Don Estebans aus der Gefangenschaft befreit hat.
+}
+Bishop_1110 {
+Benedicamus Domino (Lasset uns den Herrn preisen).
+}
+Bishop_1111 {
+Ex hoc nunc et usque in seculum (Von nun an bis in Ewigkeit).
+}
+Bishop_1112 {
+Und wo ist mein Bruder? Warum ist er nicht selbst an Bord gekommen, um mich zu begrüßen?
+}
+Bishop_1113 {
+Mein Vater sah sich höchst widerwillig gezwungen, auf diese Ehre und Freude zu verzichten. Leider, lieber Onkel, ist er etwas unpässlich, und das hindert ihn daran, seine Kajüte zu verlassen...
+Oh nein, nein, nichts Ernstes! Ein leichtes Fieber infolge einer kleinen Wunde, die er beim jüngsten Angriff auf Barbados erhielt, als glücklicherweise auch dieser Caballero aus der Gefangenschaft befreit wurde.
+}
+Bishop_1114 {
+Warte, Neffe, warte! Welcher Angriff? Ich weiß von gar nichts. Ich habe die Ehre, hier Seine Katholische Majestät, den König von Spanien, zu vertreten, und er befindet sich im Frieden mit dem König von England.
+Du hast mir bereits mehr erzählt, als du solltest... Ich werde versuchen, alles zu vergessen, und bitte euch, meine Herren, dasselbe zu tun. Nun! Wenn mein Bruder nicht zu mir kommen kann, werde ich zu ihm gehen.
+}
+Bishop_1115 {
+Mit Ihrer Erlaubnis, Don Miguel, wage ich anzumerken, dass Sie genau das nicht tun sollten. Und damit gebe ich Don Diegos eigene Ansicht wieder. Sie dürfen ihn nicht treffen, bevor seine Wunden verheilt sind.
+}
+Bishop_1116 {
+Das ist nicht nur sein Wunsch; es ist der Hauptgrund dafür, dass er nicht an Bord der Encarnacion gekommen ist. Offen gesagt sind die Wunden Ihres Bruders, Don Miguel, an sich nicht schwer genug, um ihn vom Kommen abzuhalten.
+}
+Bishop_1117 {
+Don Diego sorgt sich weit weniger um seine Gesundheit als um die Gefahr, Sie in eine schwierige Lage zu bringen, falls Sie unmittelbar von ihm erfahren, was vor einigen Tagen geschehen ist.
+}
+Bishop_1118 {
+Wie Eure Exzellenz eben bemerkten, befindet sich Seine Katholische Majestät, der König von Spanien, im Frieden mit dem König von England, während Don Diego, Ihr Bruder... Ich glaube, ich brauche nicht weiterzusprechen.
+}
+Bishop_1119 {
+Was Sie von irgendeinem Angriff gehört haben, ist nichts als ein Gerücht - ein törichtes Gerücht, weiter nichts. Eure Exzellenz verstehen das vollkommen, nicht wahr?
+}
+Bishop_1120 {
+Ja, ich verstehe, aber... nicht alles.
+}
+Bishop_1121 {
+Und hier im Boot befinden sich vier Kisten Gold, die wir Eurer Exzellenz überbringen sollten.
+}
+Bishop_1122 {
+Ich fürchte, ich habe nichts weiter hinzuzufügen. Sie müssen Ihrem Bruder vertrauen... und Ihrem Neffen.
+}
+Bishop_1123 {
+Mir scheint, Sie versuchen, etwas vor mir zu verbergen.
+}
+Bishop_1124 {
+Esteban, was hat das alles zu bedeuten?
+}
+Bishop_1125 {
+Aber... Vater ist wirklich unpässlich. Er selbst hat mich gebeten...
+}
+Bishop_1126 {
+Genug! Ich gehe sofort zur Cinco Llagas.
+}
+Bishop_1127 {
+Bei meinem Wort, Sie beunruhigen sich völlig unnötig. Don Diego geht es ausgezeichnet, und...
+}
+Bishop_1128 {
+Schweigen Sie! Ich weiß nicht, wer Sie sind, Caballero. Verzeihen Sie diese notwendige Vorsichtsmaßnahme, aber bis die Sache geklärt ist, bleiben Sie unter Bewachung.
+}
+Bishop_1129 {
+Keine Chance! Lebend bekommen Sie mich nicht!
+}
+Bishop_1130 {
+Es ist das Lösegeld, das Don Diego vom Gouverneur von Barba...
+}
+Bishop_1131 {
+Um Gottes willen, kein Wort mehr! Ich habe nichts gehört... Mein Bruder wünscht, dass ich dieses Geld für ihn nach Spanien bringe? Sehr gut! Aber das ist eine Familienangelegenheit. Sie betrifft nur meinen Bruder und mich.
+Das lässt sich gewiss machen. Aber ich darf nichts wissen...
+}
+Bishop_1132 {
+Heilige Jungfrau! Mein Bruder besitzt wirklich einen höchst vorausschauenden Geist, meine Herren. Ich hätte ihn unvorsichtigerweise an Bord besuchen und Dinge sehen können, die ich als Admiral Spaniens nur schwer hätte übersehen können.
+}
+Bishop_1133 {
+Genau das versuchte ich Ihnen zu erklären...
+}
+Bishop_1134 {
+Mein Vater hat es eilig, Santo Domingo zu erreichen. Er bat mich nur deshalb, hierherzukommen, damit ich dich umarmen könne, lieber Onkel. Deshalb bitte ich um die Erlaubnis, wieder abzureisen.
+}
+Bishop_1135 {
+Nun gut, Neffe, ich werde dich nicht aufhalten. Ich gestehe, die Kürze deines Besuchs betrübt mich, aber ich verstehe alles.
+}
+Bishop_1136 {
+Es tut mir sehr leid, dass wir uns so bald von Ihnen trennen müssen, Don Pedro. Ich hätte es gern gesehen, wenn Sie mehr Zeit an Bord der Encarnacion verbracht hätten.
+}
+Bishop_1137 {
+Wie immer ist das Glück gegen mich.
+}
+Bishop_1138 {
+Aber ich schmeichle mir mit der Hoffnung, dass wir uns bald wiedersehen, Caballero.
+}
+Bishop_1139 {
+Sie erweisen mir eine sehr große Ehre, Don Miguel. Sie übersteigt meine bescheidenen Verdienste.
 }

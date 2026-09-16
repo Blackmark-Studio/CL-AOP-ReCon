@@ -1,0 +1,36 @@
+Loren_dialog_1 {
+Capitán @<pchar>. ¿Le gustaría pescado fresco?
+}
+Loren_dialog_2 {
+¿Nos conocemos?
+}
+Loren_dialog_3 {
+Depende de lo que consideres un conocido. He oído hablar mucho de ti.
+}
+Loren_dialog_4_m {
+Mucho mejor. No vine por pescado. Estoy esperando a un... amigo. Se suponía que iba a echar el ancla aquí ayer. En la flauta, «Rosa de los Vientos».
+}
+Loren_dialog_4_f {
+Mucho mejor. No vine por pescado. Estoy esperando a un... amigo. Se suponía que iba a echar el ancla aquí ayer. En la flauta, «Rosa de los Vientos».
+}
+Loren_dialog_5 {
+Flauta... Uno de esos instrumentos voluminosos y toscos tan apreciados en Europa. Había uno aquí. Anoche.
+}
+Loren_dialog_6 {
+¿Y los vigilantes del faro no lo vieron?
+}
+Loren_dialog_7 {
+Los vigías vigilaban las luces de señalización y las banderas. Pero este barco navegaba en completa oscuridad: sin linterna en la popa, sin banderín en el mástil. Se deslizaba por la costa como un explorador que pasa junto a la patrulla, aprovechando el viento solo con sus velas mayores. En la oscuridad, estuvo a punto de chocar con los contrabandistas; ellos también navegaban sin luces. ¡Menos mal! No arruinaron mi pesca nocturna.
+}
+Loren_dialog_8 {
+¿Adónde se dirigía? ¿A la costa española?
+}
+Loren_dialog_9 {
+Lo dudo. Mis amigos atracaron junto al faro, y el filibote puso rumbo al este. Supongo que decidió rodear la isla y fondear cerca de la playa Ojo de Pez. Aunque también pudo desviarse hacia Michel le Basque para visitar a sus bucaneros.
+}
+Loren_dialog_10 {
+Es poco probable. Gracias, Lauren.
+}
+Loren_dialog_11 {
+Adiós, capitán.
+}

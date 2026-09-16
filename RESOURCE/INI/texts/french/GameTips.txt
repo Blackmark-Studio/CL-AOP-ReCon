@@ -1,0 +1,49 @@
+Tip0 {La charmante Isabelle est très jalouse.}
+Tip1 {Rappelez-vous : dégainer un pistolet est toujours plus rapide que de recharger un mousquet.}
+Tip2 {La maîtrise des armes de corps à corps réduit la consommation d'endurance lors des coups.}
+Tip3 {La surcharge et l'ivresse pénalisent les compétences.}
+Tip4 {Les potions restaurent la santé lentement — ne comptez pas sur elles pour tenir le coup en bloc.}
+Tip5 {Si vous êtes encerclé, la meilleure façon de vous échapper est une embardée latérale.}
+Tip6 {Avec un bon timing, vous pouvez esquiver n'importe quelle attaque en faisant des pas de côté. C'est particulièrement efficace contre les armes à feu.}
+Tip7 {Les mousquetaires infligent des dégâts colossaux. Éliminez-les en premier.}
+Tip8 {Un tir rapide est plus faible qu'un tir visé. C'est le prix de la rapidité.}
+Tip9 {Vous vous déplacez sensiblement plus lentement en arrière et sur les côtés qu'en avant, mais vous ne perdez pas l'ennemi des yeux.}
+Tip10 {Certains ennemis peuvent empoisonner en combat. Ayez toujours un antidote sur vous.}
+Tip11 {Sous voiles de combat, le navire vire le plus rapidement.}
+Tip12 {Le tangage, les virages et la vitesse du navire affectent lourdement la précision des tirs d'artillerie.}
+Tip13 {Si vous ratez souvent vos tirs de canons, réduisez la distance.}
+Tip14 {Les compétences « Canons » et « Précision » influencent à la fois le tir à la troisième personne et le mode visée.}
+Tip15 {Un tir précis de boulets ramés dans un mât peut l'abattre. Si les voiles sont déjà endommagées, les chances sont plus élevées.}
+Tip16 {En cas de nette supériorité numérique, le navire ennemi peut se rendre dès la tentative d'abordage.}
+Tip17 {En fuyant, les navires peuvent jeter des marchandises par-dessus bord. Approchez-vous pour récupérer la cargaison.}
+Tip18 {Les canons s'usent avec le temps. Gardez quelques pièces d'artillerie en réserve.}
+Tip19 {Les différents projectiles ont des portées différentes. La plus longue est pour les boulets ronds, la plus courte pour la mitraille.}
+Tip20 {Les boulets ronds sont universels. Utilisez des boulets ramés pour les voiles et mâts, de la mitraille pour l'équipage, et des bombes pour la coque.}
+Tip21 {Lisez attentivement les dialogues — ils contiennent souvent des informations uniques.}
+Tip22 {Si la colonie est assiégée avec succès, vos investissements et navires à l'amirauté seront perdus.}
+Tip23 {Interrogez les citadins et ivrognes sur les rumeurs — ils en savent souvent long.}
+Tip24 {Chercher des trésors est souvent très rentable. Cherchez le vendeur de cartes au trésor dans la taverne.}
+Tip25 {Les diplomates dans les tavernes de pirates peuvent vous débarrasser de votre prime sur la tête.}
+Tip26 {Gardez des armes de rechange à bord : chaque marin tombé emporte son arme dans l'autre monde.}
+Tip27 {Avant de quitter le port, assurez-vous que le rhum, les médicaments et les provisions suffiront pour la traversée.}
+Tip28 {Les rats sont le fléau du marin. Vous pouvez vous en débarrasser en maintenant une propreté absolue ou par magie ancienne.}
+Tip29 {Les donjons peuvent être très labyrinthiques. Si vous vous perdez, tenez-vous-en au côté droit et suivez-le.}
+Tip30 {Les objets peuvent être stockés dans la cabine du navire. Il est parfois utile de se débarrasser des encombrants.}
+Tip31 {Les trésors et caches sont d'excellentes sources d'ingrédients d'artisanat.}
+Tip32 {Les navires peuvent être laissés à la capitainerie du port.}
+Tip33 {Vous pouvez louer un entrepôt au chantier naval pour stocker en toute sécurité marchandises et canons.}
+Tip34 {Si le fort de la colonie est trop coriace, tentez d'attaquer la ville par la terre. La garnison est plus faible, mais le magot sera moindre.}
+Tip35 {En pleine mer, on peut trouver des tonneau flottants. Ils peuvent contenir des objets de valeur ou des déchets — c'est toujours la surprise.}
+Tip36 {N'importe quelle attaque peut être parée. Si vous maîtrisez cette technique, vous gagnerez n'importe quel duel.}
+Tip37 {Parfois, les courants marins apportent des cadeaux inattendus à ceux qui flânent dans les criques isolées.}
+Tip38 {Les améthystes ne guérissent pas de l'ivresse. Sérieusement.}
+Tip39 {En cas d'urgence, presque n'importe quel officier peut être assigné au poste d'abordeur.}
+Tip40 {Les gouverneurs et capitaines aiment aussi les jeux d'argent, mais n'espérez pas qu'ils jouent avec des inconnus.}
+Tip41 {En situation critique, vous pouvez enrôler des esclaves dans l'équipage. Cela sape le moral, mais permet de le reconstituer rapidement.}
+Tip42 {Si la garde vous surprend lors d'une transaction de contrebande, il est parfois plus simple de payer un pot-de-vin.}
+Tip43 {L'artisanat prend du temps de jeu. Il est parfois plus rentable de fabriquer des objets que de dormir inutilement à la taverne.}
+Tip44 {Les réparations de navire au chantier naval prennent du temps. Gardez cela en tête si vous êtes pressé.}
+Tip45 {En atteignant une certaine zone maritime, il est plus rapide de passer à la carte locale et de voyager via « Naviguer vers ».}
+Tip46 {Si les ennemis sont trop forts, battez en retraite et revenez plus tard. La plupart des quêtes n'exigent pas une résolution immédiate.}
+Tip47 {Vous pouvez commander vos abordeurs en combat. Essayez de leur donner des ordres à l'aide de touches rapides.}
+Tip48 {Certaines compétences ont des effets différents pour le personnage principal et les officiers.}

@@ -11,6 +11,9 @@ drunk{Intoxication}
 weapon blade parameters{Weapon: damage min/max #ddmg_min#/#ddmg_max#}
 weapon blade type {Type: #sFencingTypeName#}
 weapon gun parameters{Weapon: damage min/max #ddmg_min#/#ddmg_max#, reload time: #dchargespeed# sec., accuracy: #daccuracy#%}
+weapon gun parameter damage {Damage min/max: #ddmg_min#/#ddmg_max#,}
+weapon gun parameter charge speed {reload time:}
+weapon gun parameter accuracy {accuracy:}
 
 youve_got {Item found -}
 used_item {Item used -}
@@ -143,6 +146,14 @@ itmname_Malyava	{Kite}
 itmdescr_Malyava
 {
 A jailbird's message to his mates.
+}
+
+itmname_HelenNote {A worn note from a chest washed ashore}
+itmdescr_HelenNote
+{
+(illegible) how could you choose that red-haired minx?
+I'm tired of coming across things that remind me of you every time I look at them. It's time to put an end to this - let the sea take everything you ever touched.
+Farewell, (illegible)
 }
 
 itmname_Term_arm     {Metal Arm}
@@ -360,6 +371,12 @@ itmdescr_story_gramota
 
 ; ==================================================== LICENSE ====================================================
 
+itmname_HolFakeLicence    {Fake Dutch West India Company Patent}
+itmdescr_HolFakeLicence
+{
+Fake Dutch West India Company Patent
+}
+
 itmname_EngTradeLicence    {English East India Company License}
 itmdescr_EngTradeLicence
 {
@@ -512,7 +529,7 @@ itmdescr_map_martiniqua
 A map of Martinique, to prevent your getting lost. 
 }
 
-itmname_map_trinidad {Map of Trinidad and Tobago}
+itmname_map_trinidad {Map of Trinidad}
 itmdescr_map_trinidad
 {
 A map of the two islands of Trinidad and Tobago, with which you will not make a mistake in navigation.
@@ -813,12 +830,6 @@ itmdescr_vikingSword
 An old Viking sword, with a darkened blade and worn grip, holds stories of battles and valor.
 }
 
-itmname_vikingSword {Rusty Viking Blade}
-itmdescr_vikingSword
-{
-An ancient Carolingian-style Viking sword with a darkened blade and worn hilt, bearing the stories of battles long past.
-}
-
 itmname_blade3      {Cutlass}
 itmdescr_blade3
 {
@@ -1069,6 +1080,12 @@ itmdescr_blade111
 {
 A 17th-century German reiter's single-handed sword with broad straight blade. Evolved from medieval designs with added finger rings and knuckle bows - the final evolution of knightly steel before rapiers took over.
 }
+itmname_arm1 {Yataghan}
+itmdescr_arm1
+{
+The weapon of the fearsome Janissaries. This razor-sharp Damascus blade was forged in the imperial workshops of Istanbul. Judging by the finish and the patterns on the steel, it once belonged to a Kalafatçi Vardiyan (a junior officer) and was taken as a trophy in a hard-fought battle...
+}
+
 itmname_blade350    {Outdated Scimitar}
 itmdescr_blade350
 {
@@ -1079,12 +1096,6 @@ itmname_blade133 {Walloon Sword}
 itmdescr_blade133
 {
 A proven Liège cavalry sword with a heavy blade and a hilt that securely protects the hand behind a web of steel bars — the weapon of choice not only for a seasoned brawler, but for a dashing adventurer as well!
-}
-
-itmname_blade123 {Yataghan}
-itmdescr_blade123
-{
-The weapon of the fearsome Janissaries. This razor-sharp Damascus blade was forged in the imperial workshops of Istanbul. Judging by the finish and the patterns on the steel, it once belonged to a Kalafatçi Vardiyan (a junior officer) and was taken as a trophy in a hard-fought battle...
 }
 
 ; ========================================== PISTOLS ==========================================
@@ -1395,12 +1406,6 @@ itmdescr_GunEchin
 {
 Roughly chopped nails for shooting large caliber blunderbusses. They have a devastating effect on human bodies and gun barrels.
 Due to their shape, they reduce the weapon’s spread.
-}
-
-itmname_argbullet	{Silver Bullet}
-itmdescr_argbullet
-{
-According to local two-sword wielding experts, silver bullets are highly effective against monsters, mothers-in-law, and the dead brought back to unlife with demonic voodoo magic.
 }
 
 itmname_fulminate_silver {Silver fulminate}
@@ -2438,4 +2443,109 @@ itmname_LesopilkaDoc    {Dutch West India Company Contract}
 itmdescr_LesopilkaDoc
 {
 A document required for registration in the Dutch West India Company's registry of captains.
+}
+
+itmname_MedicalSupplies {Medical supplies}
+itmdescr_MedicalSupplies {A hastily packed medical bag. Contains bandages, vials of spirits, ointments, surgical instruments, and other necessities without which medical practice in the colonies quickly turns into funeral service.}
+itmname_EPL_TFS_letter	{Letter}
+itmdescr_EPL_TFS_letter
+{
+The Governor of Santo Domingo's report on the incident on Hispaniola.
+}
+
+itmname_legendGuide {Beginner’s Guide for Legends}
+itmdescr_legendGuide
+{
+A small notebook filled with brief but important advice. One day, you simply found it among your belongings.
+}
+
+itmname_casket {
+Gaspar Molina's Casket
+}
+itmdescr_casket {
+Secretary Molina's personal casket. It contains Vargas's correspondence, lists of agents, and account books. This is the very cargo Michel le Basque is so eagerly awaiting on Tortuga.
+}
+itmname_jako_hat {
+Jaco's Hat
+}
+itmdescr_jako_hat {
+It looks rather shabby, but reliably shields the head from the scorching Caribbean sun.
+}
+itmname_blank {
+Blank Form
+}
+itmdescr_blank {
+A blank form bearing an official seal.
+}
+itmname_venezi_cehin {
+Venetian Zecchino
+}
+itmdescr_venezi_cehin {
+An old gold coin whose obverse depicts the Doge kneeling before Saint Mark. This very coin serves as the token for a meeting with Diego Vargas's trusted agent.
+}
+itmname_letter_forged {
+Forged Letter
+}
+itmdescr_letter_forged {
+A skillful forgery from the pen of Etienne Marceau. An official Castilian form has been filled with 'irrefutable evidence' that Don Ignacio Vela is selling Diego Vargas's secrets. All that remains is to plant this death sentence on the proper recipient.
+}
+itmname_spa_lager {
+Molina's Instructions
+}
+itmdescr_spa_lager {
+Courier instructions giving precise landmarks for the Spanish camp in Jamaica.
+}
+itmname_letter_Aruba {
+Orders Bearing Don Inigo de Cabrera's Seal
+}
+itmdescr_letter_Aruba {
+Cabrera's orders, found on the dead patrol commander.
+}
+itmname_letter_bask {
+Raul's Sealed Letter
+}
+itmdescr_letter_bask {
+The letter is sealed. Its contents will clearly be of interest to Marceau.
+}
+itmname_BladeBone {
+Fang
+}
+itmdescr_BladeBone {
+A sinister-looking blade. Its edge is coated with poison that can sometimes enter the wound on a well-placed strike.
+
+Special feature: 5% chance to poison the enemy on a successful hit.
+}
+itmname_raw_meat {
+Raw Meat
+}
+itmdescr_raw_meat {
+A piece of freshly butchered raw meat. You would never guess what creature it came from by looking at it. Eating it raw is strongly discouraged. Without proper preparation, it is best not to touch it at all.
+~
+(Universal cooking ingredient)
+}
+itmname_dried_meat {
+Dried Meat
+}
+itmdescr_dried_meat {
+Game meat dried according to a special recipe used by Tortuga boucaniers. Steeped in smoke and spices, it grants remarkable endurance in battle.
+}
+itmname_recipe_rimalye {
+Boucanier Rimalie's Recipe
+}
+itmdescr_recipe_rimalye {
+A yellowed sheet covered in boucanier Rimalie's scrawl. The old drunk devised a clever way to make use of almost any carrion: a dead cormorant must not merely be plucked, but thoroughly soaked in rum to disinfect it from bacteria and corpse poison.
+}
+itmname_recipe_dried_meat    {Dried Meat Recipe}
+itmdescr_recipe_dried_meat
+{
+A piece of paper with notes from old Tortuga hunters. The secret to preparing real buccaneer dried meat lies in a proper marinade made of aged wine, zesty ginger root, and generous salting, allowing the meat to be stored in the hold for a long time while giving a colossal surge of strength.
+}
+itmname_strange_note {
+The strange note
+}
+itmdescr_strange_note {
+A scrap of parchment. Something is written on it.
+}
+itmtext_strange_note {
+Do not look for the ship at sea. Look for those who left it alive. Midnight. The old cemetery.
 }

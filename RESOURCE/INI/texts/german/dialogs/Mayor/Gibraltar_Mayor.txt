@@ -1,0 +1,39 @@
+Gibraltar_Mayor_1 {
+Was wolltest du? Frag nur.
+}
+Gibraltar_Mayor_2 {
+Ich höre zu, was möchtest du wissen?
+}
+Gibraltar_Mayor_3 {
+@<RandPhraseSimple>
+}
+Gibraltar_Mayor_4 {
+Das ist schon das zweite Mal heute, dass du versuchst, eine Frage zu stellen...
+}
+Gibraltar_Mayor_5 {
+Zum dritten Mal heute versuchst du, wieder eine Frage zu stellen...
+}
+Gibraltar_Mayor_6 {
+Wann hört das endlich auf?! Ich habe eine Stadt zu führen und einen Berg Arbeit, und du stellst immer weiter Fragen!
+}
+Gibraltar_Mayor_7_m {
+Ich habe es mir anders überlegt...
+}
+Gibraltar_Mayor_7_f {
+Ich habe es mir anders überlegt...
+}
+Gibraltar_Mayor_8 {
+Nicht jetzt, das ist weder der richtige Ort noch der richtige Moment...
+}
+Gibraltar_Mayor_9 {
+@<RandPhraseSimple>
+}
+Gibraltar_Mayor_10 {
+Ja, das stimmt... Aber nicht jetzt, später...
+}
+Gibraltar_Mayor_11 {
+Ich mache es, ich mache es... Nur später...
+}
+Gibraltar_Mayor_12 {
+Tut mir leid, @<GetAddress_FormToNPC>...
+}

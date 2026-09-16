@@ -1,0 +1,49 @@
+Tip0 {Isabel is very jealous.}
+Tip1 {Remember: drawing a pistol is always faster than reloading a musket.}
+Tip2 {Melee weapon proficiency reduces stamina costs for attacks.}
+Tip3 {Overencumbrance and intoxication impose penalties on skills.}
+Tip4 {Potions restore health slowly — don't expect to sit it out in a block.}
+Tip5 {If you are surrounded, the best way to break out is a side dash.}
+Tip6 {With the right timing, you can dodge any attack by sidestepping. This is especially effective against firearms.}
+Tip7 {Musketeers deal colossal damage. Take them down first.}
+Tip8 {A quick shot is weaker than an aimed one. That is the price for speed.}
+Tip9 {You move noticeably slower backward and sideways than forward, but you keep the enemy in sight.}
+Tip10 {Some enemies can poison you in combat. Always carry an antidote.}
+Tip11 {Under battle sails, a ship turns the fastest.}
+Tip12 {Roll, turns, and ship speed heavily affect gunnery accuracy.}
+Tip13 {If you keep missing with your cannons, close the distance.}
+Tip14 {The "Cannons" and "Accuracy" skills affect both third-person shooting and aiming mode.}
+Tip15 {A precise chain-shot hit to a mast can snap it. If the sails are already damaged, chances are higher.}
+Tip16 {With a huge numerical advantage, an enemy ship might surrender even at the boarding attempt.}
+Tip17 {When fleeing, ships may throw cargo overboard. Sail close to pick up the loot.}
+Tip18 {Cannons wear out over time. Keep a few spare guns in reserve.}
+Tip19 {Different ammo types have different ranges. Round shot has the longest, grape shot the shortest.}
+Tip20 {Round shot is universal. Use chain shot for sails and masts, grape shot on crew, and bombs for the hull.}
+Tip21 {Read dialogues carefully — they often contain unique information.}
+Tip22 {If a colony is successfully besieged, your investments and ships in the port authority will be lost.}
+Tip23 {Ask citizens and drunkards about rumors — they often know many interesting things.}
+Tip24 {Hunting for treasures is often profitable. Look for the treasure map vendor in the tavern.}
+Tip25 {Bounty hunters' rewards can be cleared by diplomats in pirate taverns.}
+Tip26 {Keep spare weapons on board: every fallen sailor takes their weapon with them to the grave.}
+Tip27 {Before leaving port, make sure your rum, medicine, and provisions will last the planned voyage.}
+Tip28 {Rats are a sailor's scourge. You can get rid of them by maintaining absolute cleanliness or using ancient magic.}
+Tip29 {Dungeons can be very confusing. If you get lost, keep to the right wall and follow it.}
+Tip30 {Items can be stored in the ship's cabin. Sometimes it's useful to get rid of heavy junk.}
+Tip31 {Treasures and stashes are great sources of crafting ingredients.}
+Tip32 {Ships can be left at the port authority.}
+Tip33 {You can rent a warehouse at the shipyard to safely store goods and ship guns.}
+Tip34 {If the colony fort is clearly too tough for you, try attacking the city from land. The city garrison is noticeably weaker, but the loot will be smaller.}
+Tip35 {You can find drifting barrels in the open sea. They might contain valuables or junk — it's always a surprise.}
+Tip36 {Any attack can be parried. If you master this technique well, you can win any duel.}
+Tip37 {Sometimes ocean currents bring unexpected gifts to those walking along secluded coves.}
+Tip38 {Amethysts do not cure drunkenness. Seriously.}
+Tip39 {In an emergency, almost any officer can be assigned to the boarding position.}
+Tip40 {Governors and captains also enjoy gambling, but don't expect them to play with strangers.}
+Tip41 {In a critical situation, you can press slaves into service. This lowers crew morale, but allows you to replenish it quickly.}
+Tip42 {If the guard catches you making a deal with smugglers, it's sometimes easier just to bribe them.}
+Tip43 {Crafting items consumes game time. Sometimes it's more profitable to craft than to sleep pointlessly in a tavern.}
+Tip44 {Ship repairs at the shipyard consume game time. Keep this in mind when you are in a hurry.}
+Tip45 {When reaching a certain sea area, it's faster to switch to the local map and travel via "Sail to".}
+Tip46 {If enemies turn out to be too difficult, retreat and return later. Most quests don't require immediate completion.}
+Tip47 {Boarding crew can be commanded in battle. Try giving them orders using hotkeys.}
+Tip48 {Some skills have different effects for the main character and officers.}

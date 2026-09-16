@@ -1,0 +1,12 @@
+EPL_1_Prologue_script_1 {Señorita, no puedo vender a crédito. Usted no es de aquí. ¿Y si mañana sube a un barco de paso y desaparece sin dejar rastro?}
+EPL_1_Prologue_script_2 {Pero no le estoy pidiendo crédito. Pagaré ahora mismo dos tercios del precio y puedo trabajar para saldar el resto: ayudarle a usted o a su esposa.}
+EPL_1_Prologue_script_3 {No es que tenga demasiado trabajo. Me las arreglo perfectamente solo y no estoy casado. Puedo ofrecerle dos tercios de la mercancía...}
+EPL_1_Prologue_script_4 {Gasten Fox, ¿no ve que, pese a su juventud, la desgracia está escrita en el rostro de la señorita? Tenga un poco de compasión.}
+EPL_1_Prologue_script_5 {¿Y qué sabe usted de la gente, querida @<pchar>, si ni siquiera fue capaz de ver al canalla que tenía por padrastro, que en paz descanse?}
+EPL_1_Prologue_script_6 {Cuidado, Fox. Sabe que puedo perder los estribos por cualquier nimiedad.}
+EPL_1_Prologue_script_7 {Cámbiese primero la falda por unos pantalones antes de empezar a lanzar amenazas. El comandante ya no está detrás de usted para cubrir cada una de sus travesuras. Es un consejo amistoso, así que no se lo tome como un insulto.}
+EPL_1_Prologue_script_8 {Yo también llevo algo debajo de la falda. Se llama carzoletta. Déjeme mostrarle lo bien que sé cuidar de mí misma y devolverle el consejo amistoso: ¡defiéndase!}
+EPL_1_Prologue_script_9 {No sea necia.}
+EPL_1_Prologue_script_10 {¡Defiéndase o cambie sus pantalones por una falda!}
+EPL_1_Prologue_script_11 {Los piratas tomaron la colonia española de La Vega e incluso intentaron atacar Santo Domingo. Sin embargo, fracasaron: todos fueron abatidos al pie de las murallas de la ciudad.}
+EPL_1_Prologue_script_12 {Terribles noticias: los piratas perpetraron una matanza en nuestra colonia de La Vega y, según dicen, no perdonaron a nadie. Gracias a Dios, el castigo ya los alcanzó: todos esos canallas cayeron ante las murallas de Santo Domingo en un intento fallido de tomar la ciudad por tierra.}

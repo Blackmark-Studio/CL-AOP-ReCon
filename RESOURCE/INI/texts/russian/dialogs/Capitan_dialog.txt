@@ -281,7 +281,7 @@ Capitan_dialog_89 {
 Как вам будет угодно.
 }
 Capitan_dialog_90 {
-Я иду из города @<GetCityName>.
+Я иду из города @<GetTraderCityName>.
 }
 Capitan_dialog_91 {
 Какие цены на товары в местном магазине?

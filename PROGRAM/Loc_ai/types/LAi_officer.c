@@ -67,6 +67,20 @@ void LAi_type_officer_CharacterUpdate(aref chr, float dltTime)
 {
 	if (LAi_IsDead(chr)) return;
 	if(chr.chr_ai.tmpl == LAI_TMPL_DIALOG) return;
+
+	if (CheckAttribute(chr, "FreeFighter"))
+	{
+		if (SendMessage(GetMainCharacter(), "ls", MSG_CHARACTER_EX_MSG, "CheckFightMode") == 0)
+		{
+			if (SendMessage(chr, "ls", MSG_CHARACTER_EX_MSG, "CheckFightMode") != 0) LAi_SetFightMode(chr, false);
+			if (chr.chr_ai.tmpl != LAI_TMPL_FOLLOW && chr.chr_ai.tmpl != LAI_TMPL_DIALOG) LAi_tmpl_SetFollow(chr, GetMainCharacter(), -1.0);
+		}
+		else
+		{
+			if (SendMessage(chr, "ls", MSG_CHARACTER_EX_MSG, "CheckFightMode") == 0) LAi_SetFightMode(chr, true);
+		}
+	}
+
 	string btl = "";
 	//При отравлении детравимся
 	float fCheck = stf(chr.chr_ai.type.bottle) - dltTime;
@@ -112,7 +126,17 @@ void LAi_type_officer_CharacterUpdate(aref chr, float dltTime)
 	}
 	else chr.chr_ai.type.bottle = fCheck;
 	//Log_Info("LAi_type_officer_CharacterUpdate "+chr.chr_ai.tmpl);
-	if (chr.chr_ai.tmpl == LAI_TMPL_STAY) return; // приказ ему стоять. Врага не ищем 18.06.05
+	if (chr.chr_ai.tmpl == LAI_TMPL_STAY) 
+	{
+		if (CheckAttribute(chr, "FreeFighter")) 
+		{
+			LAi_tmpl_SetFollow(chr, GetMainCharacter(), -1.0);
+		}
+		else 
+		{
+			return; // приказ ему стоять. Врага не ищем 18.06.05
+		}
+	}
 	
 	if (CheckAttribute(loadedLocation, "noFight")) return;
 
@@ -207,9 +231,12 @@ void LAi_type_officer_TemplateComplite(aref chr, string tmpl)
 {
 	if(chr.chr_ai.tmpl != LAI_TMPL_FOLLOW)
     {
-        if (chr.chr_ai.tmpl != LAI_TMPL_STAY && SendMessage(GetMainCharacter(), "ls", MSG_CHARACTER_EX_MSG, "CheckFightMode") == 0)
+        if (chr.chr_ai.tmpl != LAI_TMPL_STAY || CheckAttribute(chr, "FreeFighter"))
         {
-            LAi_tmpl_SetFollow(chr, GetMainCharacter(), -1.0);
+            if (SendMessage(GetMainCharacter(), "ls", MSG_CHARACTER_EX_MSG, "CheckFightMode") == 0 || CheckAttribute(chr, "FreeFighter"))
+            {
+                LAi_tmpl_SetFollow(chr, GetMainCharacter(), -1.0);
+            }
         }
     }
 }
@@ -271,7 +298,7 @@ void LAi_type_follower_StartDialog(aref chr, aref by)
 void LAi_type_officer_EndDialog(aref chr, aref by)
 {
 	LAi_CharacterRestoreAy(chr);
-	if (chr.chr_ai.tmpl != LAI_TMPL_STAY)//команда ждать!
+	if (chr.chr_ai.tmpl != LAI_TMPL_STAY || CheckAttribute(chr, "FreeFighter"))//команда ждать!
 	   LAi_tmpl_SetFollow(chr, GetMainCharacter(), -1.0);
 }
 
@@ -328,6 +355,15 @@ void LAi_type_officer_Attacked(aref chr, aref by)
 
 void LAi_type_officer_FindTarget(aref chr)
 {
+	if (CheckAttribute(chr, "FreeFighter"))
+	{
+		if (SendMessage(pchar, "ls", MSG_CHARACTER_EX_MSG, "CheckFightMode") == 0)
+		{
+			if(chr.chr_ai.tmpl != LAI_TMPL_FOLLOW) LAi_tmpl_SetFollow(chr, pchar, -1.0);
+			return; 
+		}
+	}
+
 	//Проверим наличие врагов
 	int trg = LAi_group_GetTarget(chr);
 	if(trg >= 0 && LAi_IsSetBale(&Characters[trg]))
@@ -385,4 +421,3 @@ bool LAi_type_officer_CheckDists(aref chr, aref trg)
 	}
 	return false;
 }
-

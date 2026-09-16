@@ -13,85 +13,56 @@ bool StrHasStr(string str1, string str2, bool bIs)
 //	str1 = GetStrSmallRegister(str1);
 //	str2 = GetStrSmallRegister(str2);
 
-	int i, q1 = KZ|Symbol(str1, ",");
-	int j, q2 = KZ|Symbol(str2, ",");
-	string temp1, temp2;
+	int iLen1 = strlen(&str1);
+	int iLen2 = strlen(&str2);
 
-	for (i = 0; i <= q2; i++)
-	{
-		temp2 = GetSubStr(str2, ",", i);
-		if (temp2 == "") continue;
-
-		for (j = 0; j <= q1; j++)
-		{
-			temp1 = GetSubStr(str1, ",", j);
-			if (temp1 == "") continue;
-
-			if (bIs)
-			{
-				if (temp1 == temp2)
-					return true;
-			}
-			else if (HasStr(temp1, temp2))
-				return true;
-		}
-	}
-
-	return false;
-}
-
-// > найти в папке sFolder файл sFileName по маске sMask; если атрибут sFileName пустой, то искать только по маске sMask; bStrict - строгий поиск по точному имени
-bool FindFile(string sFolder, string sFileName, string sMask, bool bStrict)
-{
-	if (!XI_CheckFolder(sFolder + "\"))
+	if (iLen1 < 1 || iLen2 < 1)
 		return false;
 
-	object fileFinder;
-	aref fileList, file;
-	int n, fileNum = 0;
-	string fileName;
+	int i = 0;
+	int j, iEnd1, iEnd2;
+	string temp1, temp2;
 
-	DeleteAttribute(&fileFinder, "");
-	SearchBase(&fileFinder, sFolder, sMask, "1", "0", "1");
-	CreateEntity(&fileFinder, "FINDFILESINTODIRECTORY");
-
-	makearef(fileList, fileFinder.filelist);
-	fileNum = GetAttributesNum(fileList);
-	DeleteClass(&fileFinder);
-
-	if (fileNum > 0)
+	while (i < iLen2)
 	{
-		if (sFileName == "")
-			return true;
+		iEnd2 = findSubStr(&str2, ",", i);
 
-		for (n = 0; n < fileNum; n++)
+		if (iEnd2 < 0)
+			iEnd2 = iLen2;
+
+		if (iEnd2 > i)
 		{
-			file = GetAttributeN(fileList, n);
-			fileName = GetAttributeValue(file);
+			temp2 = strcut(&str2, i, iEnd2 - 1);
+			j = 0;
 
-			if (bStrict)
+			while (j < iLen1)
 			{
-				if (fileName == sFileName)
-					return true;
+				iEnd1 = findSubStr(&str1, ",", j);
+
+				if (iEnd1 < 0)
+					iEnd1 = iLen1;
+
+				if (iEnd1 > j)
+				{
+					temp1 = strcut(&str1, j, iEnd1 - 1);
+
+					if (bIs)
+					{
+						if (temp1 == temp2)
+							return true;
+					}
+					else if (HasStr(temp1, temp2))
+						return true;
+				}
+
+				j = iEnd1 + 1;
 			}
-			else
-			{
-				if (HasStr(fileName, sFileName))
-					return true;
-			}	
 		}
+
+		i = iEnd2 + 1;
 	}
 
 	return false;
-}
-
-void SearchBase(object oResFinder, string sDir, string sMask, string sRecursive, string sGetPaths, string sSOP)
-{
-	oResFinder.dir = sDir;
-    oResFinder.mask = sMask;
-	oResFinder.recursive = sRecursive;
-	oResFinder.getpaths = sGetPaths;
-	oResFinder.stripOverlayPath = sSOP;
 }
 
 int CheckFilesInDir(string sDir)
@@ -115,14 +86,15 @@ int CheckFilesInDir(string sDir)
 bool SeparatePath(string path, ref file, ref dir)
 {
 	if (path == "" || !HasStrEx(path, "\,/", "|"))
-		return 0;
-	
+		return false;
+
 	string sym, tmp = "";
-	
-	for (int i = strlen(path); i > 0; i--)
+	int i = strlen(path) - 1;
+
+	for (; i > 0; i--)
 	{
 		sym = GetSymbol(path, i);
-		
+
 		if (!HasStrEx(sym, "\,/", "|"))
 			tmp = sym + tmp;
 		else
@@ -131,14 +103,15 @@ bool SeparatePath(string path, ref file, ref dir)
 			{
 				file = tmp;
 				dir = FindStringBeforeChar(path, tmp);
-				return 1;
+				return true;
 			}
 		}
 	}
-	
-	return 0;
+
+	return false;
 }
 
+// > TODO del ?
 int GetItemSneakBonus(bool bSkill)
 {
 	int i, value = 0;
@@ -160,12 +133,10 @@ int GetItemSneakBonus(bool bSkill)
 					value += 20;
 				else if (sItemName == "indian17")
 					value += 3;
-				else if (StrHasStr(sItemName, "indian18,indian19", 1))
+				else if (StrHasStr(sItemName, "indian18,indian19", true))
 					value -= 10;
 				else if (sItemName == "indian21")
 					value -= 5;
-				else if (sItemName == "PDM_PJ_BsRL")
-					value -= 2;
 				else if (sItemName == "mineral4")
 					value -= 1;
 			}
@@ -173,15 +144,13 @@ int GetItemSneakBonus(bool bSkill)
 			{
 				if (sItemName == "DeSouzaCross")
 					value += 15;
-				else if (sItemName == "PDM_PJ_BsRL")
-					value += 2;
-				else if (StrHasStr(sItemName, "jewelry8,jewelry9", 1))
+				else if (StrHasStr(sItemName, "jewelry8,jewelry9", true))
 					value += 1;
 				else if (sItemName == "Cursed_idol")
 					value -= 80;
 				else if (sItemName == "Coins")
 					value -= 50;
-				else if (StrHasStr(sItemName, "SkullAztec,indian22", 1))
+				else if (StrHasStr(sItemName, "SkullAztec,indian22", true))
 					value -= 10;
 				else if (sItemName == "indian20")
 					value -= 5;
@@ -196,30 +165,30 @@ int GetItemSneakBonus(bool bSkill)
 
 float GetSneakChance()
 {
-	float chance = GetCharacterSPECIAL(pchar, SPECIAL_L) + GetCharacterSPECIAL(pchar, SPECIAL_P) + round_up(makefloat(GetCharacterSkill(pchar, "Sneak")) / 3) + round_up(makefloat(GetCharacterSkill(pchar, "Fortune")) / 4);
+	float fChance = GetCharacterSPECIAL(pchar, SPECIAL_L) + GetCharacterSPECIAL(pchar, SPECIAL_P) + round_up(makefloat(GetCharacterSkill(pchar, "Sneak")) / 3) + round_up(makefloat(GetCharacterSkill(pchar, "Fortune")) / 4);
 
 	if (CheckAttributeEx(pchar, "Skill.Sneak,Skill.Fortune", "&"))
 	{
 		if (sti(pchar.Skill.Sneak) >= 100)
-			chance = chance + GetItemSneakBonus(0); // если "Скрытность" полностью прокачана, то все предметы со статами к этому умению получают вторую жизнь - 10% от бонуса (-10% от штрафа) к chance
+			fChance = fChance + GetItemSneakBonus(0); // если "Скрытность" полностью прокачана, то все предметы со статами к этому умению получают вторую жизнь - 10% от бонуса (-10% от штрафа) к fChance
 		
 		if (sti(pchar.Skill.Fortune) >= 100)
-			chance = chance + GetItemSneakBonus(1); // то же самое для "Везения"
+			fChance = fChance + GetItemSneakBonus(1); // то же самое для "Везения"
 	}
 
-	Restrictor(&chance, 0.0, 100.0);
+	Restrictor(&fChance, 0.0, 100.0);
 
-	return chance;
+	return fChance;
 }
 
 int GetSneakChanceBonus()
 {
-	int chance = GetFortuneBonus(5);
+	int iChance = GetFortuneBonus(5);
 
 	if (CheckCharacterPerk(pchar, "Trustworthy"))
-		chance += 5;
+		iChance += 5;
 
-	return chance;
+	return iChance;
 }
 
 void GipsyFortuneBonusEnd(string str)
@@ -228,24 +197,21 @@ void GipsyFortuneBonusEnd(string str)
 	DeleteAttributeMass(&TEV, "", "GipsyFortuneBonus,GipsyFortuneTimer,GipsyFortuneText");
 }
 
-// > при наличии бонуса от гадания цыганки вернуть result равное value
+// > при наличии бонуса от гадания цыганки вернуть fResult равное value
 float GetFortuneBonus(float value)
 {
-	float result = 0.0;
+	float fResult = 0.0;
 	
 	if (CheckAttribute(&TEV, "GipsyFortuneBonus"))
-		result = value;
+		fResult = value;
 	
-	return result;
+	return fResult;
 }
 
 // > проверка целого значения на нечётность
 bool CheckOddValue(int value)
 {
-	if (value%2 > 0)
-		return true;
-	
-	return false;
+	return value % 2 != 0;
 }
 
 // > адаптация мода на быстрые переходы во вражеских городах от mrtehon
@@ -283,14 +249,16 @@ string FakeNextTime(int iHour)
 	
 	int nextDay = GetDataDay() + addingDays;
 	int curMonth = GetDataMonth();
-	while (GetMonthDays(curMonth, GetDataYear()) < nextDay)
+	int curYear = GetDataYear();
+	while (GetMonthDays(curMonth, curYear) < nextDay)
 	{
-		nextDay = nextDay - GetMonthDays(curMonth, GetDataYear());
+		nextDay = nextDay - GetMonthDays(curMonth, curYear);
 		curMonth++;
+		if (curMonth > 12) { curMonth -= 12; curYear++; } // учёт перехода через год для корректной длины февраля
 	}
-	
+
 	int nextMonth = curMonth;
-	int nextYear = GetDataYear();
+	int nextYear = curYear;
 	while (12 < nextMonth)
 	{
 		nextMonth = nextMonth - 12;
@@ -311,10 +279,7 @@ string FakeNextTime(int iHour)
 // > проверка наличия карты сокровищ или двух её кусков у chr
 bool CheckForTreasureMap(ref chr)
 {
-	if (ItemCheck(chr, "map_full,mapQuest", 0) || ItemCheck(chr, "map_part1,map_part2", 1))
-		return true;
-	
-	return false;
+	return ItemCheck(chr, "map_full,mapQuest", 0) || ItemCheck(chr, "map_part1,map_part2", 1);
 }
 
 // > метод сохраняет список абордажников ГГ; отрабатывает при загрузке пешей локации
@@ -383,131 +348,154 @@ int GetCountFighters()
 // можно через запятую задать или снять сразу все запреты: sType = "Looting,Exchange,Map,HerbHarvest,HerbPickup"
 void SetBan(string sType, bool bBan)
 {
-	int n, q = KZ|Symbol(sType, ",");
+	int iLen = strlen(&sType);
+	int iPos = 0;
+	int iEnd;
 	string tmp;
 
-	for (n = 0; n <= q; n++)
+	while (iPos < iLen)
 	{
-		tmp = stripblank(GetSubStr(sType, ",", n));
-		
-		if (tmp != "")
+		iEnd = findSubStr(&sType, ",", iPos);
+
+		if (iEnd < 0)
+			iEnd = iLen;
+
+		if (iEnd > iPos)
 		{
-			tmp = "Forbidden." + tmp;
-			
-			if (bBan)
-				TEV.(tmp) = "1";
-			else
-				DeleteAttribute(&TEV, tmp);
+			tmp = stripblank(strcut(&sType, iPos, iEnd - 1));
+
+			if (tmp != "")
+			{
+				tmp = "Forbidden." + tmp;
+
+				if (bBan)
+					TEV.(tmp) = "1";
+				else
+					DeleteAttribute(&TEV, tmp);
+			}
 		}
+
+		iPos = iEnd + 1;
 	}
 }
 
 // > проверка запретов
 bool GetBan(string sType)
 {
-	if (CheckAttribute(&TEV, "Forbidden." + sType) && TEV.Forbidden.(sType) == "1")
-		return true;
-
-	return false;
+	return CheckAttribute(&TEV, "Forbidden." + sType) && TEV.Forbidden.(sType) == "1";
 }
 
 // > сообщения в логе со звуковым сопровождением; отделяя знаком "&" можно задать несколько strings и sounds
 void LogSound(string strings, string sounds)
 {
-	int q, n;
+	int iLen = strlen(&strings);
+	int iPos = 0;
+	int iEnd;
 	string tmp, snd = "";
-	
-	if (strings != "")
+
+	while (iPos < iLen)
 	{
-		q = KZ|Symbol(strings, "&");
-		
-		for (n = 0; n <= q; n++)
-		{
-			tmp = GetSubStr(strings, "&", n);
-			
-			if (tmp != "")
-			    Notification(tmp, "none");
-		}
+		iEnd = findSubStr(&strings, "&", iPos);
+
+		if (iEnd < 0)
+			iEnd = iLen;
+
+		if (iEnd > iPos)
+			Notification(strcut(&strings, iPos, iEnd - 1), "none");
+
+		iPos = iEnd + 1;
 	}
-	
-	if (sounds != "")
+
+	iLen = strlen(&sounds);
+	iPos = 0;
+
+	while (iPos < iLen)
 	{
-		q = KZ|Symbol(sounds, "&");
-		
-		for (n = 0; n <= q; n++)
+		iEnd = findSubStr(&sounds, "&", iPos);
+
+		if (iEnd < 0)
+			iEnd = iLen;
+
+		if (iEnd > iPos)
 		{
-			tmp = GetSubStr(sounds, "&", n);
-			
-			if (tmp != "" && snd != tmp)
+			tmp = strcut(&sounds, iPos, iEnd - 1);
+
+			if (snd != tmp)
 			{
 				snd = tmp;
 				PlaySound(snd);
 			}
 		}
+
+		iPos = iEnd + 1;
 	}
 }
 
 // > множественные сообщения в логе; отделяя знаком "&" можно задать несколько strings
 void Logs(string strings)
 {
-	int q, n;
-	string tmp, snd = "";
-	
-	if (strings != "")
+	int iLen = strlen(&strings);
+	int iPos = 0;
+	int iEnd;
+
+	while (iPos < iLen)
 	{
-		q = KZ|Symbol(strings, "&");
-		
-		for (n = 0; n <= q; n++)
-		{
-			tmp = GetSubStr(strings, "&", n);
-			
-			if (tmp != "")
-				Log_Info(tmp);
-		}
+		iEnd = findSubStr(&strings, "&", iPos);
+
+		if (iEnd < 0)
+			iEnd = iLen;
+
+		if (iEnd > iPos)
+			Log_Info(strcut(&strings, iPos, iEnd - 1));
+
+		iPos = iEnd + 1;
 	}
 }
 
 // LogSound с новой системой оповещений
 void LogSound_WithNotify(string strings, string sounds, string iconName)
 {
-    int q, n;
-    string tmp, snd = "";
+	int iLen = strlen(&strings);
+	int iPos = 0;
+	int iEnd;
+	string tmp, snd = "";
 
-    if (strings != "")
-    {
-        q = KZ|Symbol(strings, "&");
+	while (iPos < iLen)
+	{
+		iEnd = findSubStr(&strings, "&", iPos);
 
-        for (n = 0; n <= q; n++)
-        {
-            tmp = GetSubStr(strings, "&", n);
+		if (iEnd < 0)
+			iEnd = iLen;
 
-            if (tmp != "")
-            {
-                string _iconName = "none";
-                if (iconName != "")
-                {
-                    _iconName = iconName;
-                }
-                Notification(tmp, iconName);
-            }
-        }
-    }
+		if (iEnd > iPos)
+			Notification(strcut(&strings, iPos, iEnd - 1), iconName);
 
-    if (sounds != "")
-    {
-        q = KZ|Symbol(sounds, "&");
+		iPos = iEnd + 1;
+	}
 
-        for (n = 0; n <= q; n++)
-        {
-            tmp = GetSubStr(sounds, "&", n);
+	iLen = strlen(&sounds);
+	iPos = 0;
 
-            if (tmp != "" && snd != tmp)
-            {
-                snd = tmp;
-                PlaySound(snd);
-            }
-        }
-    }
+	while (iPos < iLen)
+	{
+		iEnd = findSubStr(&sounds, "&", iPos);
+
+		if (iEnd < 0)
+			iEnd = iLen;
+
+		if (iEnd > iPos)
+		{
+			tmp = strcut(&sounds, iPos, iEnd - 1);
+
+			if (snd != tmp)
+			{
+				snd = tmp;
+				PlaySound(snd);
+			}
+		}
+
+		iPos = iEnd + 1;
+	}
 }
 
 // > выдача или отъём предметов с текстовым и звуковым сопровождением
@@ -516,20 +504,60 @@ void AddItemLog(ref rChar, string sItems, string sQty, string str, string snd)
 	// Автоудаление пробелов
 	sItems = stripblank(sItems);
 	sQty = stripblank(sQty);
-	int iQty;
-	
-	int iNum, coms = KZ|Symbol(sItems, ","); // Sticks: чтоб в цикле не пересчитывать одно и тоже
-	string tmp;
-	
-	for (iNum = 0; iNum <= coms; iNum++)
+
+	int iLenI = strlen(&sItems);
+	int iLenQ = strlen(&sQty);
+	int iPosI = 0;
+	int iPosQ = 0;
+	int iEndI, iEndQ, iQty;
+	int iFirst = 0;
+	bool bFirst = true;
+	string sItem;
+
+	while (iPosI < iLenI)
 	{
-	    iQty = sti(GetSubStr(sQty, ",", iNum));
-	    if (iQty < 0)
-	        TakeNItems(rChar, sItems, iQty);
-		else
-		    GenerateAndAddItems(rChar, GetSubStr(sItems, ",", iNum), iQty);
+		iEndI = findSubStr(&sItems, ",", iPosI);
+
+		if (iEndI < 0)
+			iEndI = iLenI;
+
+		iQty = 0;
+
+		if (iPosQ < iLenQ)
+		{
+			iEndQ = findSubStr(&sQty, ",", iPosQ);
+
+			if (iEndQ < 0)
+				iEndQ = iLenQ;
+
+			if (iEndQ > iPosQ)
+				iQty = sti(strcut(&sQty, iPosQ, iEndQ - 1));
+
+			iPosQ = iEndQ + 1;
+
+			if (bFirst)
+			{
+				iFirst = iQty;
+				bFirst = false;
+			}
+		}
+
+		if (iQty == 0)
+			iQty = iFirst;
+
+		if (iEndI > iPosI)
+		{
+			sItem = strcut(&sItems, iPosI, iEndI - 1);
+
+			if (iQty < 0)
+				TakeNItems(rChar, sItem, iQty);
+			else
+				GenerateAndAddItems(rChar, sItem, iQty);
+		}
+
+		iPosI = iEndI + 1;
 	}
-	
+
 	LogSound_WithNotify(str, snd, "BoxPlus");
 }
 
@@ -547,7 +575,7 @@ string GetItemName(string sItemID)
 // csmCheckAttributeMassive --> CheckAttribute, рассчитанный на массовый, но простенький чек аттрибутов у объекта
 // sBranch не обязателен, если в нем нет нужды (в таком случае, кавычки оставлять пустыми)
 // В sLeaves через запятую и без пробелов можно указывать перечень аттрибутов к проверке у объекта oTree
-// В качестве sCond задаётся "&" (условие "&&") и "|" или любой другой символ (условие "||")
+// В качестве sCond задаётся "&" (условие "&&") и любой другой символ (условие "||")
 // TODO: добавить чек значений (sValues), с локальными условиями (!=, >, <= и т.д.)
 bool CheckAttributeMass(object oTree, string sBranch, string sLeaves, string sCond)
 {
@@ -562,36 +590,47 @@ bool CheckAttributeMass(object oTree, string sBranch, string sLeaves, string sCo
 	if (sBranch != "")
 		sBranch += ".";
 
-	if (HasStr(sCond, "&"))
-		sCond = "&";
-	else
-		sCond = "|";
+	bool bAnd = HasStr(sCond, "&");
 
-	int i, iAttrs = KZ|Symbol(sLeaves, ",");
-	int n = -1;
+	int iLen = strlen(&sLeaves);
+	int iPos = 0;
+	int iEnd;
+	int n = 0; // > найдено
+	int q = 0; // > непустых сегментов обработано
 
 	string sT;
 
-	for (i = 0; i <= iAttrs; i++)
+	while (iPos < iLen)
 	{
-		sT = GetSubStr(sLeaves, ",", i);
+		iEnd = findSubStr(&sLeaves, ",", iPos);
 
-		switch (sCond)
+		if (iEnd < 0)
+			iEnd = iLen;
+
+		if (iEnd > iPos)
 		{
-			case "&":
-				if (CheckAttribute(&oTree, sBranch + sT))
-					n++;
-				else
-					return false;
-			break;
-			case "|":
-				if (CheckAttribute(&oTree, sBranch + sT))
+			sT = strcut(&sLeaves, iPos, iEnd - 1);
+			q++;
+
+			if (CheckAttribute(&oTree, sBranch + sT))
+			{
+				if (!bAnd)
 					return true;
-			break;
+
+				n++;
+			}
+			else
+			{
+				if (bAnd)
+					return false;
+			}
 		}
+
+		iPos = iEnd + 1;
 	}
 
-	if (n >= iAttrs)
+	// > Порог считаем по фактически обработанным непустым сегментам q, а не по числу запятых
+	if (q > 0 && n >= q)
 		return true;
 
 	return false;
@@ -606,19 +645,28 @@ bool CheckAttributeEx(object _obj, string _str, string _cond)
 // > подсчёт указанных атрибутов объекта
 int GetAttributeQty(object obj, string coreStr, string subStr)
 {
-	int i, res = 0;
-	int n = KZ|Symbol(subStr, ",");
-	
+	int iRes = 0;
+	int iLen = strlen(&subStr);
+	int iPos = 0;
+	int iEnd;
+
 	if (coreStr != "")
 		coreStr += ".";
-	
-	for (i = 0; i <= n; i++)
+
+	while (iPos < iLen)
 	{
-		if (CheckAttribute(&obj, coreStr + GetSubStr(subStr, ",", i)))
-			res++;
+		iEnd = findSubStr(&subStr, ",", iPos);
+
+		if (iEnd < 0)
+			iEnd = iLen;
+
+		if (iEnd > iPos && CheckAttribute(&obj, coreStr + strcut(&subStr, iPos, iEnd - 1)))
+			iRes++;
+
+		iPos = iEnd + 1;
 	}
-	
-	return res;
+
+	return iRes;
 }
 
 // csmDeleteAttributeMassive --> DeleteAttribute, рассчитанный на массовое удаление аттрибутов у объекта
@@ -626,8 +674,6 @@ int GetAttributeQty(object obj, string coreStr, string subStr)
 // В sLeaves через запятую и без пробелов можно указывать перечень аттрибутов к удалению у объекта oTree
 void DeleteAttributeMass(object oTree, string sBranch, string sLeaves)
 {
-	int iA, iLeaves = KZ|Symbol(sLeaves, ",");
-
 	if (sLeaves == "")
 		return;
 
@@ -638,9 +684,21 @@ void DeleteAttributeMass(object oTree, string sBranch, string sLeaves)
 	//sBranch = stripblank(sBranch);
 	//sLeaves = stripblank(sLeaves);
 
-	for (iA = 0; iA <= iLeaves; iA++)
+	int iLen = strlen(&sLeaves);
+	int iPos = 0;
+	int iEnd;
+
+	while (iPos < iLen)
 	{
-		DeleteAttribute(&oTree, sBranch + GetSubStr(sLeaves, ",", iA));
+		iEnd = findSubStr(&sLeaves, ",", iPos);
+
+		if (iEnd < 0)
+			iEnd = iLen;
+
+		if (iEnd > iPos)
+			DeleteAttribute(&oTree, sBranch + strcut(&sLeaves, iPos, iEnd - 1));
+
+		iPos = iEnd + 1;
 	}
 }
 
@@ -692,10 +750,10 @@ int GetPos(bool bOpenSea)
 // ]--
 
 // Сокращение HasSubStr, есть ли в строке sText то, что указано в sAttr
+// > вызовы GetStrSmallRegister тут лишние - движковый FindSubStr регистронезависимый
 bool HasStr(string sText, string sAttr)
 {
-	bool bHas = FindSubStr(GetStrSmallRegister(sText), GetStrSmallRegister(sAttr), 0) != -1;
-	return bHas;
+	return FindSubStr(sText, sAttr, 0) != -1;
 }
 
 // > AlexBlade - Начинается ли строка sText с подстроки sSubStr
@@ -742,24 +800,18 @@ string FindStringBeforeSubStr(string _string, string sSubStr)
 // KZ > Метод сверяет у объекта _rChar значение атрибута _sAttr со значением _sValue
 bool CheckAttrValue(ref _rChar, string _sAttr, string _sValue)
 {
-	if (CheckAttribute(_rChar, _sAttr) && _rChar.(_sAttr) == _sValue)
-		return true;
-	
-	return false;
+	return CheckAttribute(_rChar, _sAttr) && _rChar.(_sAttr) == _sValue;
 }
 
-// KZ > Метод проверяет у объекта _rChar атрибут _sAttr на наличие в нём значения _sValue
+// KZ > Метод проверяет у объекта _rChar атрибут _sAttr на наличие в нём хотя бы части значения _sValue
 bool HasAttrValue(ref _rChar, string _sAttr, string _sValue)
 {
-	if (CheckAttribute(_rChar, _sAttr) && HasStrEx(_rChar.(_sAttr), _sValue, "|"))
-		return true;
-	
-	return false;
+	return CheckAttribute(_rChar, _sAttr) && HasStrMass(_rChar.(_sAttr), _sValue, ",", "|");
 }
 
 // csmHasStringMassive --> апгрейднутый вариант HasStr, рассчитанный на массовый чек значений sAttrs в строке sText
 // Есть ли в строке sText всё или что-то из указанного в sAttrs, разделённое символом sDiv
-// В качестве sCond задаётся "=" (условие "=="; чувствительно к регистру, прочие два нет), "&" (условие "&&") и "|" или любой другой символ (условие "||")
+// В качестве sCond задаётся "&" (условие "&&") и любой другой символ (условие "||")
 bool HasStrMass(string sText, string sAttrs, string sDiv, string sCond)
 {
 	if (strlen(sText) <= 0 || strlen(sAttrs) <= 0)
@@ -768,52 +820,49 @@ bool HasStrMass(string sText, string sAttrs, string sDiv, string sCond)
 	if (sDiv == "")
 		sDiv = ",";
 
-	if (HasStr(sCond, "&"))
-		sCond = "&";
-	else
-	{
-		if (HasSubStr(sCond, "="))
-			sCond = "=";
-		else 
-			sCond = "|";
-	}
+	bool bAnd = HasStr(sCond, "&");
 
-	int i, iAttrs = KZ|Symbol(sAttrs, sDiv);
-	int n = -1;
+	int iLen = strlen(&sAttrs);
+	int iDiv = strlen(&sDiv);
+	int iPos = 0;
+	int iEnd;
+	int n = 0; // > найдено
+	int q = 0; // > непустых сегментов обработано
 
 	string sT;
 
-	for (i = 0; i <= iAttrs; i++)
+	while (iPos < iLen)
 	{
-		sT = GetSubStr(sAttrs, sDiv, i);
-		
-		if (sT == "")
+		iEnd = findSubStr(&sAttrs, sDiv, iPos);
+
+		if (iEnd < 0)
+			iEnd = iLen;
+
+		if (iEnd > iPos)
 		{
-			continue;
-		}
-		
-		switch (sCond)
-		{
-			case "=":
-				if (HasSubStr(sText, sT))
-					n++;
-				else
-					return false;
-			break;
-			case "&":
-				if (HasStr(sText, sT))
-					n++;
-				else
-					return false;
-			break;
-			case "|":
-				if (HasStr(sText, sT))
+			sT = strcut(&sAttrs, iPos, iEnd - 1);
+			q++;
+
+			if (HasStr(sText, sT))
+			{
+				if (!bAnd)
 					return true;
-			break;
+
+				n++;
+			}
+			else
+			{
+				if (bAnd)
+					return false;
+			}
 		}
+
+		// > разделитель длиннее одного символа теперь тоже отрабатывает
+		iPos = iEnd + iDiv;
 	}
 
-	if (n >= iAttrs)
+	// > порог считаем по фактически обработанным непустым сегментам q, а не по числу разделителей
+	if (q > 0 && n >= q)
 		return true;
 
 	return false;
@@ -825,51 +874,38 @@ bool HasStrEx(string str, string attr, string cond)
 	return HasStrMass(str, attr, ",", cond);
 }
 
-// Чуть видоизмененная функция GetSubStringByNum: в качестве разделителя sDiv, можно указывать любой символ, не только запятую
-// Возвращает часть строки sText перед указанным в iSelect (отсчёт с нуля) разделителем sDiv
+// Чуть видоизмененная функция GetSubStringByNum: в качестве разделителя sDiv можно указывать не только запятую (в т.ч. несколько символов; поиск разделителя регистронезависимый)
+// Возвращает сегмент номер iSelect (отсчёт с нуля) строки sText, разбитой разделителем sDiv
+// > ref: пустой сегмент и iSelect вне диапазона возвращают "" (раньше был мусор с разделителем или ошибка strcut "Invalid range")
 string GetSubStr(string sText, string sDiv, int iSelect)
 {
 	if (sDiv == "")
 		sDiv = ",";
 
-	string sTemp = sText;
-	int i, iNumFind = 1;
-	int iLastPos = 0;
-	int iFindPos = findSubStr(&sTemp, sDiv, 0);
+	if (iSelect < 0)
+		return "";
 
-	if (iFindPos < 0)
-		return sTemp;
+	int iStart = 0;
+	int iDivLen = strlen(sDiv);
+	int iPos = findSubStr(&sText, sDiv, 0);
 
-	while (iFindPos > 0)
+	while (iSelect > 0 && iPos != -1)
 	{
-		iNumFind++;
-		iFindPos = findSubStr(&sTemp, sDiv, iFindPos + 1);
+		iStart = iPos + iDivLen;
+		iPos = findSubStr(&sText, sDiv, iStart);
+		iSelect--;
 	}
 
-	if (iNumFind <= iSelect)
-		return GetSubStr(sTemp, sDiv, 0);
+	if (iSelect > 0)
+		return ""; // > сегментов меньше, чем запрошено
 
-	iFindPos = 0;
+	if (iPos == -1)
+		iPos = strlen(&sText);
 
-	for (i = 0; i < iNumFind; i++)
-	{
-		iFindPos = findSubStr(&sTemp, sDiv, iFindPos + 1);
+	if (iPos <= iStart)
+		return ""; // > пустой сегмент
 
-		if (i == iSelect)
-		{
-			if (iFindPos < 0)
-				iFindPos = strlen(&sTemp);
-
-			if (iLastPos >= iFindPos)
-				iFindPos = iLastPos + 2;
-
-			return strcut(&sTemp, iLastPos, iFindPos - 1);
-		}
-
-		iLastPos = iFindPos + 1;
-	}
-
-	return GetSubStr(sTemp, sDiv, 0);
+	return strcut(&sText, iStart, iPos - 1);
 }
 
 // Возвращает количество подстрок разделенных разделителем sDiv
@@ -1006,106 +1042,166 @@ void ItemTakeEx(ref rChar, string sItems, string sQty)
 {
 	// Автоудаление пробелов
 	sItems = stripblank(sItems);
-	
+
 	if (sItems == "")
 		return;
-	
+
 	sQty = stripblank(sQty);
-	
-	int iNum, coms = KZ|Symbol(sItems, ","); // Sticks: чтоб в цикле не пересчитывать одно и тоже
-	int iQty = KZ|Symbol(sQty, ",");
-	string sN, sQ;
-	
-	for (iNum = 0; iNum <= coms; iNum++)
+
+	// > обе строки проходятся один раз параллельно
+	int iLenI = strlen(&sItems);
+	int iLenQ = strlen(&sQty);
+	int iPosI = 0;
+	int iPosQ = 0;
+	int iEndI, iEndQ;
+	int iQ = 1;
+	int iFirst = 0;
+	bool bFirst = true;
+	string sN;
+
+	while (iPosI < iLenI)
 	{
-		sN = sItems;
-		sQ = sQty;
-		
-		if (coms > 0)
-			sN = GetSubStr(sItems, ",", iNum);
-		
-		if (iQty > 0)
-			sQ = GetSubStr(sQty, ",", iNum);
-		
-		if (sN != "")
-			ItemTake(rChar, sN, sti(sQ));
+		iEndI = findSubStr(&sItems, ",", iPosI);
+
+		if (iEndI < 0)
+			iEndI = iLenI;
+
+		iQ = 1;
+
+		if (iLenQ > 0)
+		{
+			iQ = 0;
+
+			if (iPosQ < iLenQ)
+			{
+				iEndQ = findSubStr(&sQty, ",", iPosQ);
+
+				if (iEndQ < 0)
+					iEndQ = iLenQ;
+
+				if (iEndQ > iPosQ)
+					iQ = sti(strcut(&sQty, iPosQ, iEndQ - 1));
+
+				iPosQ = iEndQ + 1;
+
+				if (bFirst)
+				{
+					iFirst = iQ;
+					bFirst = false;
+				}
+			}
+
+			// > пустое или нулевое количество берётся с первого предмета
+			if (iQ == 0)
+				iQ = iFirst;
+		}
+
+		if (iEndI > iPosI)
+		{
+			sN = strcut(&sItems, iPosI, iEndI - 1);
+			ItemTake(rChar, sN, iQ);
+		}
+
+		iPosI = iEndI + 1;
 	}
 }
 
 // > выдать rChar предметы sItems и сразу экипировать их (bGen - генерировать ли предмет)
 void ItemTakeEquip(ref rChar, string sItems, bool bGen)
 {
-	int i, n = KZ|Symbol(sItems, ",");
+	int iLen = strlen(&sItems);
+	int iPos = 0;
+	int iEnd;
 	string s;
-	
-	for (i = 0; i <= n; i++)
+
+	while (iPos < iLen)
 	{
-		s = GetSubStr(sItems, ",", i);
-		
-		if (s == "")
-			continue;
-		
-		if (bGen)
-			s = GetGeneratedItem(s);
-		
-		if (TakeNItems(rChar, s, 1))
-			EquipCharacterByItem(rChar, s);
+		iEnd = findSubStr(&sItems, ",", iPos);
+
+		if (iEnd < 0)
+			iEnd = iLen;
+
+		if (iEnd > iPos)
+		{
+			s = strcut(&sItems, iPos, iEnd - 1);
+
+			if (bGen)
+				s = GetGeneratedItem(s);
+
+			if (TakeNItems(rChar, s, 1))
+				EquipCharacterByItem(rChar, s);
+		}
+
+		iPos = iEnd + 1;
 	}
 }
 
-// > проверить инвентарь rChar на наличие предметов sItems; требуемое кол-во можно указать после знака ":" прямо в sItems, например: "bullet:6,gunpowder:4,potionrum" - нужно 6+ пуль, 4+ пороха и 1+ бутылка рома (отсутствие ":" считается за 1)
+// > проверить инвентарь rChar на наличие предметов sItems; требуемое кол-во можно указать после знака ":" прямо в sItems, например: "bullet:6,gunpowder:4,potionrum" - нужно 6+ пуль, 4+ пороха и 1+ бутылка рома (отсутствие ":" или отсутствие значения после ":" считается за 1)
 // "gold" можно проверять деньги rChar ("bullet:6,gunpowder:4,potionrum,gold:9500")
-// при bAll необходимо наличие всех предметов sItems с указанным кол-ом, при !bAll нужно хоть что-то из sItems в кол-ве как минимум 1 шт
+// при bAll необходимо наличие всех предметов sItems с указанным кол-ом, при !bAll достаточно любого из sItems в указанном кол-ве
+// > ref: разбор строки идёт одним нативным проходом (был посимвольный KZ|Symbol и перескан GetSubStr с нуля на каждый сегмент), кол-во считается своим для каждого пункта, пустые сегменты пропускаются
 bool ItemCheck(ref rChar, string sItems, bool bAll)
 {
-	int i, q, s = KZ|Symbol(sItems, ",");
-	int r = -1;
-	string tmp;
-	
-	for (i = 0; i <= s; i++)
+	int iLen = strlen(&sItems);
+
+	if (iLen < 1)
+		return false;
+
+	int iEnd, iColon, iNameLen, iQ;
+	int iStart = 0;
+	bool bHas, bChecked = false;
+	string sName;
+
+	while (iStart < iLen)
 	{
-		tmp = GetSubStr(sItems, ",", i);
-		
-		if (KZ|Symbol(tmp, ":") > 0)
+		iEnd = findSubStr(&sItems, ",", iStart);
+
+		if (iEnd < 0)
+			iEnd = iLen;
+
+		if (iEnd > iStart) // > пустой сегмент (лишняя запятая) пропускаем
 		{
-			q = sti(FindStringAfterChar(tmp, ":"));
-			tmp = FindStringBeforeChar(tmp, ":");
-		}
-		
-		if (q < 1)
-			q = 1;
-		
-		if (tmp == "gold")
-		{
-			if (sti(rChar.money) > 0)
+			sName = strcut(&sItems, iStart, iEnd - 1);
+			iQ = 1;
+			iColon = findSubStr(&sName, ":", 0);
+
+			if (iColon > 0)
 			{
-				if (bAll)
-				{
-					if (sti(rChar.money) >= q)
-						r++;
-					else
-						return false;
-				}
-				else
-					return true;
+				iNameLen = strlen(&sName);
+
+				if (iColon + 1 < iNameLen) // > после ":" пусто - остаётся 1
+					iQ = sti(strcut(&sName, iColon + 1, iNameLen - 1));
+
+				sName = strcut(&sName, 0, iColon - 1);
+
+				if (iQ < 1)
+					iQ = 1;
+			}
+
+			if (sName == "gold")
+				bHas = sti(rChar.money) >= iQ;
+			else
+				bHas = GetCharacterItem(rChar, sName) >= iQ;
+
+			bChecked = true;
+
+			if (bAll)
+			{
+				if (!bHas)
+					return false; // > не хватило - остальное можно не смотреть
+			}
+			else
+			{
+				if (bHas)
+					return true; // > нашли одно - этого достаточно
 			}
 		}
-		else
-		{
-			if (GetCharacterItem(rChar, tmp) >= q)
-			{
-				if (bAll)
-					r++;
-				else
-					return true;
-			}
-		}
+
+		iStart = iEnd + 1;
 	}
-	
-	if (r >= s)
-		return true;
-	
-	return false;
+
+	// > при bAll сюда доходим, только если ничего не провалилось, при !bAll - если ничего не нашлось
+	return bAll && bChecked;
 }
 
 string SetModifyTextColor(int line)
@@ -1215,15 +1311,19 @@ void HKT_Button(string sHKB) // быстрый переход
 	else if (sHKB == "AltModeFastTravel_port" && !CheckFastJump(Locations[curLocIdx].id, pchar.location.from_sea)) bOk = false;
 	if (!bBettaTestMode && bOk) // проверка города на враждебность
 	{
-		string sNation = Colonies[FindColony(loadedLocation.fastreload)].nation;
-		if (sNation != "none")
+		int iFastColony = FindColony(loadedLocation.fastreload);
+		if (iFastColony >= 0) // > ключ fastreload не колония - вне дипломатии, переход свободен
 		{
-			int n = sti(sNation);
-			bOk = (GetNationRelation2MainCharacter(n) == RELATION_ENEMY) || GetRelation2BaseNation(n) == RELATION_ENEMY;
-			if (bOk && (n != PIRATE))
-				bOk = GetSneakFastReload(); // если есть действующая лицензия, то при пройденной проверке не запрещаем быстрый переход
-			else
-				bOk = true;
+			string sNation = Colonies[iFastColony].nation;
+			if (sNation != "none")
+			{
+				int n = sti(sNation);
+				bOk = (GetNationRelation2MainCharacter(n) == RELATION_ENEMY) || GetRelation2BaseNation(n) == RELATION_ENEMY;
+				if (bOk && (n != PIRATE))
+					bOk = GetSneakFastReload(); // если есть действующая лицензия, то при пройденной проверке не запрещаем быстрый переход
+				else
+					bOk = true;
+			}
 		}
 	}
 	// <--
@@ -1257,92 +1357,19 @@ void ModifyTextInfo() // belamour обновление всплывающей п
 		string sLine3 = SetModifyTextColor(2);
 		int iOffset = 0;
 
-		int c2 = strlen(sLine2);
-		int c3 = strlen(sLine3);
+		float fScale = 1.1 * fHtRatio;
 
-		int k2 = 0;
-		int k3 = 0;
+		int k2 = makeint((GetStringWidth(sLine2, "interface_normal", 1.0) + 1) / 2 * fScale) - makeint((GetStringWidth(StripColorTags(sLine2), "interface_normal", 1.0) + 1) / 2 * fScale);
+		int k3 = makeint((GetStringWidth(sLine3, "interface_normal", 1.0) + 1) / 2 * fScale) - makeint((GetStringWidth(StripColorTags(sLine3), "interface_normal", 1.0) + 1) / 2 * fScale);
 
-		// KZ > TODO use TaskWindow
-		if (!or(c2 == 55 && c3 == 62, c2 == 55 && c3 == 60))
-		{
-			if (!IsDay())
-			{
-				k2 += 2;
-				k3 += 2;
-
-				if (c2 == 58)
-				{
-					if (c3 == 69) k3 += 3;
-					else if (c3 == 68) k3 += 2;
-					else if (c3 == 66 || c3 == 67) k2 -= 1;
-				}
-				else if (c3 == 64)
-				{
-					if (c2 == 57) k2 -= 1;
-					else if (c2 == 60) k3 -= 1;
-				}
-				else if (or(c2 == 59, c2 == 60) && c3 == 69)
-				{
-					k3 += 2;
-					if (c2 == 59) k2 -= 1;
-				}
-			}
-			else if (c2 == 57)
-			{
-				if (c3 == 60) k3 -= 1;
-				else if (c3 == 65) k3 += 2;
-				else if (c3 == 67) k3 += 3;
-				else if (c3 == 69) k3 += 4;
-			}
-			else if (c2 == 53)
-			{
-				if (c3 == 60)
-				{
-					k2 -= 2;
-					k3 -= 1;
-				}
-				else if (c3 == 61 || c3 == 62)
-					k2 -= 2;
-				else if (c3 == 64)
-				{
-					k2 -= 1;
-					k3 += 2;
-				}
-			}
-			else if (c2 == 55)
-			{
-				if (c3 == 65)
-				{
-					k2 -= 1;
-					k3 += 2;
-				}
-				else if (c3 == 67)
-				{
-					k2 -= 1;
-					k3 += 3;
-				}
-				else if (c3 == 69)
-				{
-					k2 -= 1;
-					k3 += 4;
-				}
-			}
-			else if (c2 == 56 && or(c3 == 67, c3 == 69))
-				k3 += 3;
-		}
-		else if (c2 == 55)
-		{
-			if (c3 == 60) k3 -= 1;
-			else if (c3 == 62) k2 -= 1;
-		}
+		k2 -= 1;
 
 		aref arChar; makearef(arChar, objLandInterface.data.icons.id0);
 		if (arChar.HideStates == 0) iOffset = 230;
 
-		SetNewTextInfoEx("AltModificatorLine1", -1.0, XI_ConvertString("ft_Help"), sti(showWindow.left) + RecalculateHIcon(makeint((iOffset + 325) * fHtRatio)), RecalculateVIcon(makeint(30 * fHtRatio)), "interface_normal", 1.1 * fHtRatio, argb(243,254,252,169));
-		SetNewTextInfoEx("AltModificatorLine2", -1.0, sLine2, sti(showWindow.left) + RecalculateHIcon(makeint((iOffset + 342 + k2) * fHtRatio)), RecalculateVIcon(makeint(52 * fHtRatio)), "interface_normal", 1.1 * fHtRatio, argb(255,255,255,255));
-		SetNewTextInfoEx("AltModificatorLine3", -1.0, sLine3, sti(showWindow.left) + RecalculateHIcon(makeint((iOffset + 364 + k3) * fHtRatio)), RecalculateVIcon(makeint(74 * fHtRatio)), "interface_normal", 1.1 * fHtRatio, argb(255,255,255,255));
+		SetNewTextInfoEx("AltModificatorLine1", -1.0, XI_ConvertString("ft_Help"), sti(showWindow.left) + RecalculateHIcon(makeint((iOffset + 325) * fHtRatio)), RecalculateVIcon(makeint(30 * fHtRatio)), "interface_normal", fScale, argb(243,254,252,169));
+		SetNewTextInfoEx("AltModificatorLine2", -1.0, sLine2, sti(showWindow.left) + RecalculateHIcon(makeint((iOffset + 342) * fHtRatio)) + k2, RecalculateVIcon(makeint(52 * fHtRatio)), "interface_normal", fScale, argb(255,255,255,255));
+		SetNewTextInfoEx("AltModificatorLine3", -1.0, sLine3, sti(showWindow.left) + RecalculateHIcon(makeint((iOffset + 364) * fHtRatio)) + k3, RecalculateVIcon(makeint(74 * fHtRatio)), "interface_normal", fScale, argb(255,255,255,255));
 	}
 	else
 		ModifyTextHide();
@@ -1371,7 +1398,10 @@ bool bFastEnable() // belamour возможен ли переход
 	//в ГПК быстрый переход работает только при наличии карты
 	if (loadedLocation.fastreload == "LostShipsCity" && !CheckCharacterItem(pchar, "map_LSC")) return false;
 	
-	string sNation = Colonies[FindColony(loadedLocation.fastreload)].nation;
+	int iFastColony = FindColony(loadedLocation.fastreload);
+	if (iFastColony < 0) return true; // > ключ fastreload не колония - вне дипломатии, переход свободен
+
+	string sNation = Colonies[iFastColony].nation;
 	if (sNation != "none")
 	{
 		int i = sti(sNation);
@@ -1552,7 +1582,7 @@ void CryptBoxRadius(int n, string size)
 string GetRandomCommonLoc(ref npchar)
 {
     aref arCommon, arRld, arRld2;
-    int	i, n, Qty, Qty2;
+    int	i, n, Qty, Qty2, iLoc;
     int howStore = 0;
 	string LocId;
 	string storeArray[50];
@@ -1565,30 +1595,39 @@ string GetRandomCommonLoc(ref npchar)
 	//фильтруем локацию по квесту Дело чести
 	CheckQuestCommonLoc("QuestTemp.AffairOfHonor.CoatHonor.locationId", &sPlaceTaken);
 
-    makearef(arRld, Locations[FindLocation(npchar.city + "_town")].reload);
+	// > без города искать нечего
+	if (!CheckAttribute(npchar, "city")) return "none";
+	iLoc = FindLocation(npchar.city + "_town");
+	if (iLoc < 0) return "none";
+
+    makearef(arRld, Locations[iLoc].reload);
 	Qty = GetAttributesNum(arRld);
     for (i=0; i<Qty; i++)
     {
         arCommon = GetAttributeN(arRld, i);
+        if (!CheckAttribute(arCommon, "go")) continue;
         LocId = arCommon.go;
-        if (HasSubStr(LocId, "Common") && !HasStrEx(LocId, sPlaceTaken, "|"))
+        if (HasSubStr(LocId, "Common") && !HasStrEx(LocId, sPlaceTaken, "|") && howStore < 50)
         {
             storeArray[howStore] = LocId;
             howStore++;
         }
-        if (arCommon.label != "Sea" && !CheckAttribute(arCommon, "questDisable"))
+        if (CheckAttribute(arCommon, "label") && arCommon.label == "Sea") continue;
+        if (CheckAttribute(arCommon, "questDisable")) continue;
+        // > в переход проваливаемся только если там действительно есть локация и она доступна к посещению
+        iLoc = FindLocation(LocId);
+        if (iLoc < 0) continue;
+        makearef(arRld2, Locations[iLoc].reload);
+        Qty2 = GetAttributesNum(arRld2);
+        for (n=0; n<Qty2; n++)
         {
-            makearef(arRld2, Locations[FindLocation(LocId)].reload);
-            Qty2 = GetAttributesNum(arRld2);
-            for (n=0; n<Qty2; n++)
+            arCommon = GetAttributeN(arRld2, n);
+            if (!CheckAttribute(arCommon, "go")) continue;
+            LocId = arCommon.go;
+            if (HasSubStr(LocId, "Common") && !HasStrEx(LocId, sPlaceTaken, "|") && !StrHasStr(LocId, "CommonBedroom,CommonPackhouse_1,CommonPackhouse_2,CommonResidence_1,CommonResidence_2,CommonResidence_3,CommonResidence_4", true) && howStore < 50)
             {
-                arCommon = GetAttributeN(arRld2, n);
-                LocId = arCommon.go;
-                if (HasSubStr(LocId, "Common") && !HasStrEx(LocId, sPlaceTaken, "|") && !StrHasStr(LocId, "CommonBedroom,CommonPackhouse_1,CommonPackhouse_2,CommonResidence_1,CommonResidence_2,CommonResidence_3,CommonResidence_4", 1))
-                {
-                    storeArray[howStore] = LocId;
-                    howStore++;
-                }
+                storeArray[howStore] = LocId;
+                howStore++;
             }
         }
     }
@@ -1624,10 +1663,10 @@ bool CheckFreeSitFront(ref _npchar)
 		if (!CheckAttribute(rCharacter, "location")) continue;
 		if (rCharacter.id != "Blaze" && rCharacter.location.locator == _npchar.Default.ToLocator)
 		{
-			return  false;
+			return false;
 		}
 	}
-	return  true;
+	return true;
 }
 
 // отдых/проматывание времени
@@ -1751,9 +1790,7 @@ ref nullRef()
 
 bool TestMode()
 {
-	if (bBettaTestMode || MOD_BETTATESTMODE == "On" || MOD_BETTATESTMODE == "Test")
-		return true;
-	return false;
+	return bBettaTestMode || MOD_BETTATESTMODE == "On" || MOD_BETTATESTMODE == "Test";
 }
 
 void ResetParamsAfterSit()

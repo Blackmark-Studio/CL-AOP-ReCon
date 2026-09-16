@@ -1,26 +1,26 @@
 Tortuga_Lighthouse_1 {
-有什么需要帮忙的吗？
+有什么需要帮忙的吗？ 
 }
 Tortuga_Lighthouse_2 {
-你想问啥？
+你想问什么？ 
 }
 Tortuga_Lighthouse_3 {
 @<RandPhraseSimple>
 }
 Tortuga_Lighthouse_4 {
-那你说说，@<GetAddress_Form>，你到底对什么感兴趣？
+那你说说， @<GetAddress_Form>， 你到底对什么感兴趣？ 
 }
 Tortuga_Lighthouse_5 {
-你今天已经第三次想问问题了……
+你今天已经第三次想问问题了…… 
 }
 Tortuga_Lighthouse_6 {
-够了，你把我都折腾累了，快离开我家！
+够了， 你把我都折腾累了， 快离开我家！ 
 }
 Tortuga_Lighthouse_7_m {
-我改主意了……
+我改主意了…… 
 }
 Tortuga_Lighthouse_7_f {
-我改主意了……
+我改主意了…… 
 }
 Tortuga_Lighthouse_8 {
 我现在没什么好说的
@@ -29,14 +29,14 @@ Tortuga_Lighthouse_9 {
 @<RandPhraseSimple>
 }
 Tortuga_Lighthouse_10_m {
-哎呀，我好像忘了。不好意思……
+哎呀， 我好像忘了。不好意思…… 
 }
 Tortuga_Lighthouse_10_f {
-哎呀，我好像忘了点什么，抱歉……
+哎呀， 我好像忘了点什么， 抱歉…… 
 }
 Tortuga_Lighthouse_11 {
-是啊，真的，已经第三次了……
+是啊， 真的， 已经第三次了…… 
 }
 Tortuga_Lighthouse_12 {
-对不起……
+对不起…… 
 }

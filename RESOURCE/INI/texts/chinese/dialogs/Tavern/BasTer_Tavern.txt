@@ -1,39 +1,39 @@
 BasTer_Tavern_1 {
-什么问题？
+什么问题？ 
 }
 BasTer_Tavern_2 {
-有什么事需要俺帮忙吗，@<GetAddress_Form>?
+有什么事需要我帮忙吗， @<GetAddress_Form>?
 }
 BasTer_Tavern_3 {
 @<RandPhraseSimple>
 }
 BasTer_Tavern_4 {
-前不久你还想问我个问题，@<GetAddress_Form>……
+前不久你还想问我个问题， @<GetAddress_Form>…… 
 }
 BasTer_Tavern_5 {
-你今天已经第三次提这事了……
+你今天已经第三次提这事了…… 
 }
 BasTer_Tavern_6 {
-又要开始问问题了？
+又要开始问问题了？ 
 }
 BasTer_Tavern_7_m {
-我改主意了……
+我改主意了…… 
 }
 BasTer_Tavern_7_f {
-我改变主意了……
+我改变主意了…… 
 }
 BasTer_Tavern_8 {
-我现在没什么好说的。
+我现在没什么好说的。 
 }
 BasTer_Tavern_9 {
 @<RandPhraseSimple>
 }
 BasTer_Tavern_10 {
-嗯，我的记忆好像出了点问题……
+嗯， 我的记忆好像出了点问题…… 
 }
 BasTer_Tavern_11 {
-看来第三次总算成了吧……
+看来第三次总算成了吧…… 
 }
 BasTer_Tavern_12 {
-没，没什么问题……
+没， 没什么问题…… 
 }

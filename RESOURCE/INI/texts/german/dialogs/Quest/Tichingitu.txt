@@ -208,3 +208,15 @@ Tichingitu versteht alles. Tichingitu wird an der angegebenen Entfernung Stellun
 Tichingitu_59 {
 In Ordnung.
 }
+Tichingitu_60 {
+Kapitän... Tichingitu traurig sein. Atauco gehen. Atauco würdiger Sohn des Dschungels. Guter Jäger. Tichingitu ihn als Bruder ansehen.
+}
+Tichingitu_61 {
+Ich hätte nicht gedacht, dass ihr so schnell Freunde werdet. Während der ganzen Überfahrt habt ihr kaum ein Dutzend Worte gewechselt.
+}
+Tichingitu_62 {
+Atauco Dschungel mit gleichen Augen sehen wie Tichingitu. Viele Tage auf großem Wasser sein, wie Tichingitu. Aber in Wald zurückkehren. Wenn Geister erlauben — wir uns wiedersehen.
+}
+Tichingitu_63 {
+Wenn ich le Basques Einfallsreichtum kenne, würde ich darauf ohne Zögern ein paar Dublonen setzen. Bis dahin können wir ruhig von euch lernen, besser darauf zu achten, wohin wir treten.
+}

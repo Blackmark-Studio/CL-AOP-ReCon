@@ -1,0 +1,488 @@
+Monbar_dialog_1 {
+Captain @<GetLastName>. What can I do for you?
+}
+Monbar_dialog_2_m {
+I've come to make you an offer you won't be able to refuse.
+}
+Monbar_dialog_2_f {
+I've come to make you an offer you won't be able to refuse.
+}
+Monbar_dialog_3 {
+I've heard of you. Your latest prize was impressive. I'm listening.
+}
+Monbar_dialog_4 {
+Michel le Basque, Etienne Marceau, Francois l'Olonnais and I are planning to empty the pockets of our common enemy - the Spanish Crown. And we'd like you to join us.
+}
+Monbar_dialog_5 {
+And why exactly do you need me? From what I understand, you'll have a strong squadron without me.
+}
+Monbar_dialog_6 {
+Our target is Maracaibo. We need more than your ship and your men - we need your connections.
+}
+Monbar_dialog_7 {
+Maracaibo... You're plainly not the timid sort. But I'm not sure what connections you mean.
+}
+Monbar_dialog_8 {
+We have a plan of the city's defenses. That isn't enough. We want to know what surprises may await us during the assault. We need someone who knows the country around Maracaibo well.
+}
+Monbar_dialog_9 {
+And you think I know such a man?
+}
+Monbar_dialog_10 {
+We know you're on good terms with the local Indians. Surely some among them know the shores of the lake better than any Spaniard.
+}
+Monbar_dialog_11 {
+You're right about that. But Yamai, their chief, won't let a single warrior go with you now. More than that, while that bastard Cabrera and his men are prowling the island, I can't leave my friends undefended either.
+}
+Monbar_dialog_12 {
+What does this Cabrera want here?
+}
+Monbar_dialog_13 {
+He seized the salt mines. Killed a fair number of my men and Yamai's people while he was at it.
+}
+Monbar_dialog_14_m {
+And you didn't leave the debt unpaid, judging by what I saw on the approaches to your camp.
+}
+Monbar_dialog_14_f {
+And you didn't leave the debt unpaid, judging by what I saw on the approaches to your camp.
+}
+Monbar_dialog_15 {
+A dozen soldiers is hardly much of a loss to that bastard.
+}
+Monbar_dialog_16 {
+You have enough men. Why not simply drive the Spaniards out of the mines?
+}
+Monbar_dialog_17 {
+Because Cabrera is no fool. He's a good strategist - his men would seize the best ground in an instant and drown us in lead. I can't risk my people like that. And that's not all. He managed to capture Anacaona, Yamai's daughter. The chief will never forgive me if she dies in the assault.
+}
+Monbar_dialog_18 {
+And even if I help you drive the Spaniards out, if she dies, Yamai won't help us.
+}
+Monbar_dialog_19 {
+Fortune seems to be smiling on us today. It looks as though the officer commanding the rabble we killed in the jungle had some important papers on him.
+}
+Monbar_dialog_20 {
+And you didn't search the bodies?
+}
+Monbar_dialog_21 {
+A few cowards ran. We got carried away chasing them, and when we came back...
+}
+Monbar_dialog_22 {
+You simply forgot. Very well, let's settle one thing: if I help you clear the island of Spaniards, will you come with us to Maracaibo?
+}
+Monbar_dialog_23 {
+Are you joking? If my friends are safe, I wouldn't miss that kind of fun for the world.
+}
+Monbar_dialog_24 {
+Excellent. Then tell your men to dig a pit for the Spanish corpses. I'll find those papers in the meantime.
+}
+Monbar_dialog_25 {
+Certainly. One more thing, Captain: our friend asked me to give you his thanks. Says that without your medicine his spirit would already have joined his ancestors.
+}
+Monbar_dialog_26_m {
+Too soon for him to meet them. I'm glad I could help.
+}
+Monbar_dialog_26_f {
+Too soon for him to meet them. I'm glad I could help.
+}
+Monbar_dialog_27 {
+Certainly. And one more thing: our friend asked me to thank your companion. Says that without her help his spirit would already have joined his ancestors.
+}
+Monbar_dialog_28 {
+I'll tell her. For now, let him gather his strength - he'll need it yet.
+}
+Monbar_dialog_29 {
+Go, Captain. We need those papers.
+}
+Monbar_dialog_30 {
+I'm on my way.
+}
+Monbar_dialog_31 {
+Well, Captain? Did you find the papers?
+}
+Monbar_dialog_32 {
+Of course. Their commander wasn't likely to pick them up and run off with his throat cut. Here.
+}
+Monbar_dialog_33 {
+Hmm... Inigo de Cabrera's personal seal. Excellent. The letter has already been opened - so the commander had time to read his orders.
+}
+Monbar_dialog_34 {
+What does it say? Don't keep me waiting, Daniel.
+}
+Monbar_dialog_35 {
+This detachment was ordered to march to Paarden Bay, join another force there, and together advance on Yamai's village.
+}
+Monbar_dialog_36 {
+They're going to wipe out the Indians?
+}
+Monbar_dialog_37 {
+Yamai is to be taken alive, all the other men killed, and the village burned to the ground... By Heaven, I won't allow it! Those bastards will writhe in their Catholic hell before they put a torch to the first hut!
+}
+Monbar_dialog_38 {
+Do we march for the bay at once?
+}
+Monbar_dialog_39 {
+No. We'll do better. At the bay those vermin will take good positions and greet us with musket fire.
+}
+Monbar_dialog_40 {
+What do you suggest?
+}
+Monbar_dialog_41 {
+Soon they'll realize no reinforcements are coming and start back toward the mines. We'll let them get deep into the jungle, spring the trap, and butcher the whole lot. Every last one.
+}
+Monbar_dialog_42 {
+Perhaps we should take their commander alive and exchange him for Anacaona?
+}
+Monbar_dialog_43 {
+No prisoners! I won't leave a single one of those bastards alive. And don't worry about the captives: Cabrera makes a particular point that Yamai and Anacaona are to be taken alive at any cost. He gave himself away with that.
+}
+Monbar_dialog_44 {
+I wonder why he needs them.
+}
+Monbar_dialog_45 {
+I don't give a damn! Right now I want only one thing - to roast those vermin over a slow fire. Prepare properly for battle. We'll let them move deeper into the jungle and only then open fire. By the time they realize they're trapped, it'll be too late.
+}
+Monbar_dialog_46 {
+Daniel... We'll rid your island of this filth. I promise.
+}
+Monbar_dialog_47 {
+We'll give those bastards hell on earth - they'll curse the day they were born.
+}
+Monbar_dialog_48_m {
+I'll be ready, Daniel.
+}
+Monbar_dialog_48_f {
+I'll be ready, Daniel.
+}
+Monbar_dialog_49 {
+No mercy! No prisoners! Kill the Spanish vermin!
+}
+Monbar_dialog_50_m {
+You fought well, @<GetFirstName>. I'd say it's time we stopped standing on ceremony, eh?
+}
+Monbar_dialog_50_f {
+You fought well, @<GetFirstName>. I'd say it's time we stopped standing on ceremony, eh?
+}
+Monbar_dialog_51_m {
+I've been waiting for the right moment to suggest the same thing. What do you plan to do next?
+}
+Monbar_dialog_51_f {
+I've been waiting for the right moment to suggest the same thing. What do you plan to do next?
+}
+Monbar_dialog_52_m {
+We'll go to Yamai and tell him what we've done. What you did.
+}
+Monbar_dialog_52_f {
+We'll go to Yamai and tell him what we've done. What you did.
+}
+Monbar_dialog_53_m {
+So Yamai will accept me as an ally.
+}
+Monbar_dialog_53_f {
+So Yamai will accept me as an ally.
+}
+Monbar_dialog_54_m {
+Or a friend. That part is up to you.
+}
+Monbar_dialog_54_f {
+Or a friend. That part is up to you.
+}
+Monbar_dialog_55 {
+Let's go. No sense disturbing the vultures at their work.
+}
+Monbar_dialog_56_m {
+You heard everything. Time to settle matters with Cabrera. I'll gather the men and wait for you at the camp.
+}
+Monbar_dialog_56_f {
+You heard everything. Time to settle matters with Cabrera. I'll gather the men and wait for you at the camp.
+}
+Monbar_dialog_57 {
+We'll meet there. I could use some proper preparation myself.
+}
+Monbar_dialog_58 {
+My men are ready. Shall we go?
+}
+Monbar_dialog_59 {
+What's the plan?
+}
+Monbar_dialog_60 {
+To hell with plans! We'll approach the mines through the jungle and strike. If they spot us too soon, we'll kill anyone who dares stand in our way.
+}
+Monbar_dialog_61 {
+Then what are we waiting for? Move out!
+}
+Monbar_dialog_62 {
+The main guard is finished.
+}
+Monbar_dialog_63 {
+Into the tunnels. Cabrera has nowhere left to run.
+}
+Monbar_dialog_64 {
+Only you, me, and your companions go in. Four of us. The others stay outside - no sense cramming the whole detachment into those tunnels.
+}
+Monbar_dialog_65 {
+You're right. Let's go.
+}
+Monbar_dialog_66 {
+Captain, there isn't much time. We need to move.
+}
+Monbar_dialog_67 {
+Let's go.
+}
+Monbar_dialog_68 {
+That's the end of it, Daniel. He'll never raise a weapon against you or Yamai again.
+}
+Monbar_dialog_69 {
+He died too easily for scum like that. But enough about him. He no longer matters to me. It's time to return Yamai's daughter and his people.
+}
+Monbar_dialog_70 {
+You're right. Let's go.
+}
+Monbar_dialog_71 {
+A worthy answer indeed. But before we challenge those treacherous shallows, we must wait for the rest of our expedition.
+}
+Monbar_dialog_72 {
+Right. Michel le Basque, Francois l'Olonnais, and Etienne Marceau should bring their ships any day now. We'll await them at your camp.
+}
+Monbar_dialog_73 {
+Exactly. The guide will be ready. As soon as Michel's squadron anchors in the bay, we'll lead that armada straight into the devil's maw.
+}
+Monbar_dialog_74 {
+Ugh... I don't think I can stand much longer. That's powerful rum you've got, Daniel.
+}
+Monbar_dialog_75 {
+You bet! Came from the Spanish stores too, by the way.
+}
+Monbar_dialog_76 {
+Hic... So you still think we should attack from the sea at once? Not try to take the city from the landward side?
+}
+Monbar_dialog_77_m {
+You heard the Indian scout. The fort stands apart from the city, but that changes little. From the landward side the Spaniards will have time to pull men to the walls, while our ships can't get right up to the city - nothing but shoals there. And no one will let us land under their guns either.
+}
+Monbar_dialog_77_f {
+You heard the Indian scout. The fort stands apart from the city, but that changes little. From the landward side the Spaniards will have time to pull men to the walls, while our ships can't get right up to the city - nothing but shoals there. And no one will let us land under their guns either.
+}
+Monbar_dialog_78 {
+Hmm... Marie... Where is Marie, anyway?
+}
+Monbar_dialog_79_m {
+Ha-ha-ha! My friend, Mademoiselle Marie declared she wouldn't leave Aruba until she'd explored every hidden trail on the island. And dragged Nicolas along with her.
+}
+Monbar_dialog_79_f {
+Ha-ha-ha! My friend, Mademoiselle Marie declared she wouldn't leave Aruba until she'd explored every hidden trail on the island. And dragged Nicolas along with her.
+}
+Monbar_dialog_80 {
+And that old hunter agreed? Astonishing.
+}
+Monbar_dialog_81 {
+At first he grumbled and cursed everything under the sun, naturally. Then Marie unrolled some parchment and began asking those sly questions of hers. Ha-ha! Within minutes Rimalie himself was hauling her into the jungle, insisting half the roads on her map led straight to hell.
+}
+Monbar_dialog_82 {
+Ha-ha... That's Marie all right... Listen, Daniel. You told Yamai the Spaniards killed someone dear to you. Who was it?
+}
+Monbar_dialog_83 {
+My uncle. I don't like speaking about him. So let's leave it there.
+}
+Monbar_dialog_84 {
+Hmm... You and Marie have something in common. Vargas killed her uncle too. That's why she came with us - she wanted revenge.
+}
+Monbar_dialog_85 {
+Vargas?.. I'll find him. Find him and...
+}
+Monbar_dialog_86_m {
+Easy, monsieur. He's already boiling in the same pot as Cabrera. I killed him.
+}
+Monbar_dialog_86_f {
+Easy, monsieur. He's already boiling in the same pot as Cabrera. I killed him.
+}
+Monbar_dialog_87 {
+You?! That should have been me!
+}
+Monbar_dialog_88 {
+Wait a moment. You like Marie, don't you? Ha-ha! What about Anacaona?
+}
+Monbar_dialog_89 {
+Wait... Wait! I nearly forgot!
+}
+Monbar_dialog_90 {
+Hm? Run out of rum?
+}
+Monbar_dialog_91 {
+Ha! In a buccaneer camp? Don't talk nonsense. Here. Take this!
+}
+Monbar_dialog_92 {
+What in the devil is that?
+}
+Monbar_dialog_93 {
+An escopeta. Spanish. From the stores of one... hic... ah, you don't know him anyway.
+}
+Monbar_dialog_94 {
+Hmm... Damn thing's heavy.
+}
+Monbar_dialog_95 {
+But listen to her r-roar! You ought to remember! I took her against Cabrera. One shot... five corpses! Just like that!
+}
+Monbar_dialog_96 {
+Ha-ha! And if Cabrera had had one of these... He could've been firing it at us! Bastard!
+}
+Monbar_dialog_97 {
+Wait, there's more... Where did I... Ah! Here. Grenades. And petards.
+}
+Monbar_dialog_98_m {
+Daniel... That's a m-magnificent gift! I urgently need to share it with the Spaniards!
+}
+Monbar_dialog_98_f {
+Daniel... That's a m-magnificent gift! I urgently need to share it with the Spaniards!
+}
+Monbar_dialog_99_m {
+Ha-ha-ha! You can share it in Maracaibo. And take this too. You'll make the charges yourself!
+}
+Monbar_dialog_99_f {
+Ha-ha-ha! You can share it in Maracaibo. And take this too. You'll make the charges yourself!
+}
+Monbar_dialog_100_m {
+I could kiss you right now! (whispering) But Marie would get jealous...
+}
+Monbar_dialog_100_f {
+I could kiss you right now! (whispering) But Marie would get jealous...
+}
+Monbar_dialog_101 {
+Ha-ha-ha!
+}
+Monbar_dialog_102 {
+To our victory!
+}
+Monbar_dialog_103 {
+What is it, @<pchar>? Did Michel send you?
+}
+Monbar_dialog_104 {
+Yes. He told me to see how you're doing. Everything quiet here?
+}
+Monbar_dialog_105 {
+For now. I went a little farther up the road - tracks from a large convoy, boots and horseshoes. The wagons were heavily loaded; the ruts are deep. The bastards got away...
+}
+Monbar_dialog_106 {
+So they moved valuables under guard, and it certainly wasn't the governor's kitchenware. How long ago did they pass?
+}
+Monbar_dialog_107 {
+Looks like before the battle even started. They threw their soldiers under our guns while they saved their own chests. Cowardly dogs! But they won't get away from us. I sent scouts after them to learn where they went.
+}
+Monbar_dialog_108 {
+Think we can catch them?
+}
+Monbar_dialog_109 {
+Catching a heavy convoy won't be difficult. But we can't let them fool us. The wagons may have carried supplies while the gold is still hidden somewhere in the city.
+}
+Monbar_dialog_110_m {
+That's what I told Michel. I'll pay a visit to the governor's residence soon. Hopefully we'll find something there that clears this up.
+}
+Monbar_dialog_110_f {
+That's what I told Michel. I'll pay a visit to the governor's residence soon. Hopefully we'll find something there that clears this up.
+}
+Monbar_dialog_111 {
+I'll wait for the scouts. If they learn anything, I'll tell you and Michel at once.
+}
+Monbar_dialog_112 {
+Thank you, Daniel.
+}
+Monbar_dialog_113 {
+Then I have a pleasant surprise for them too. Yamai's people know a trail to the city that avoids the main road. A large force would bog down in the marshes. But the Indians and I can get through and strike from the side where no one expects us.
+}
+Monbar_dialog_114 {
+What, you dogs? Didn't expect me?!
+}
+Monbar_dialog_115 {
+Farewell, Daniel. It was an honor fighting beside you. And good luck... with your little matter.
+}
+
+LeBasque_Daniel_Monbar_1 {
+Have you seen anything interesting?
+}
+
+LeBasque_Daniel_Monbar_2 {
+Thank you, friend. You helped us a lot.
+}
+
+LeBasque_Daniel_Monbar_3 {
+This is the blood of our enemies, Chieftain. The Spanish dogs wanted to burn your settlement to the ground. We got ahead of them – we ambushed them and cut them to pieces.
+}
+
+LeBasque_Daniel_Monbar_4 {
+He won't succeed, Yamai. As long as I'm alive and standing on this earth, you have nothing to fear.
+}
+
+LeBasque_Daniel_Monbar_5_m {
+Come on, what debts between brothers? Let me introduce you to someone. This is Captain @<GetFullName>. The lion's share of today's victory is his, not mine.
+}
+
+LeBasque_Daniel_Monbar_5_f {
+Come on, what debts between brothers? Let me introduce you to someone. This is Captain @<GetFullName>. The lion's share of today's victory is hers, not mine.
+}
+
+LeBasque_Daniel_Monbar_6 {
+The captain will also help us flush Cabrera out of the mines. But in exchange, he asks for guides who know the lands to help him on his expedition to Maracaibo.
+}
+
+LeBasque_Daniel_Monbar_7 {
+He'll be back, Yamai. I give you my word as a nobleman. In the meantime, I'll leave some of my men here. They'll protect the village in our absence.
+}
+
+LeBasque_Daniel_Monbar_8 {
+You'll be feeding the worms with your own flesh, Cabrera. And believe me, no one will dirty their hands dragging the corpse of a scumbag like you out of here.
+}
+
+LeBasque_Daniel_Monbar_9_m {
+Luck? Ha-ha! Did you hear that, @<pchar>? He seems to have gone completely crazy.
+}
+
+LeBasque_Daniel_Monbar_9_f {
+Luck? Ha-ha! Did you hear that, @<pchar>? He seems to have gone completely crazy.
+}
+
+LeBasque_Daniel_Monbar_10 {
+You're probably talking about those poor wretches you sent to Yamai's village? You can pray for their filthy souls, Cabrera. But it won't help them anymore. They're already burning in hell.
+}
+
+LeBasque_Daniel_Monbar_11 {
+It doesn't matter anymore. All that matters is that they've been waiting for you for a long time. To arms!
+}
+
+LeBasque_Daniel_Monbar_12 {
+And so that you have something to defend yourself with while I'm gone, I've prepared something for you.
+}
+
+LeBasque_Daniel_Monbar_13 {
+These are muskets. Gunpowder. Lead. Blades and axes. The Spanish will no longer have an advantage in weapons.
+}
+
+LeBasque_Daniel_Monbar_14 {
+Cabrera had a decent supply in the mines. Enough for everyone.
+}
+
+LeBasque_Daniel_Monbar_15 {
+You're wrong, Yamai. As a boy, I read a book by a Spanish monk, Bartolomé de las Casas. He wrote about what his compatriots did to your people here. And then they killed someone dear to me. Then I finally understood what these damned fanatics are made of. So this is my war, too.
+}
+
+LeBasque_Daniel_Monbar_16 {
+I'll leave a few people behind. They'll teach your warriors how to handle this weapon.
+}
+
+LeBasque_Daniel_Monbar_17 {
+I'll consider your offer, Yamai. But now I must leave you. We need to prepare for the expedition. As soon as the scouts are ready, have them report to my camp.
+}
+
+LeBasque_Daniel_Monbar_18 {
+Of course we do! And we have a reason! We've cleared this island of evil spirits! And... well, we should drink to our acquaintance, of course!
+}
+
+LeBasque_Daniel_Monbar_19 {
+Hispaniola is big. Where exactly did she go?
+}
+
+LeBasque_Daniel_Monbar_20 {
+Thank you, Michel. It was a great trip. If the opportunity arises, I'd be happy to nibble on the Spaniards again with you. But for now, I must take my leave. Things to do.
+}
+
+LeBasque_Daniel_Monbar_21 {
+Of course. That's my home now. But I have one more thing to take care of on the way.
+}

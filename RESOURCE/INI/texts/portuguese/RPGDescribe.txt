@@ -274,6 +274,17 @@ Piratas. Esses homens navegam sob nenhuma bandeira e seguem o Código Pirata (em
 ~
 Para qualquer patrulha naval, avistar uma bandeira pirata no horizonte é como jogar bacon para um lobo faminto. Para a grande maioria dos piratas, só há dois destinos possíveis: o cadafalso ou a forca.
 }
+Pirate_bonuses_descr
+{
+Característica adicional do personagem — "Agente Contrabandista".
+Possibilidade de comprar contrabando até mesmo nas lojas.
+~
+Habilidades iniciais adicionais: "Artes Básicas de Tiro" e "Auto-Reparo".
+~
+Ao escolher a classe "Corsário", itens adicionais: Fragmento de Mapa do Tesouro, 2500 piastras.
+~
+Navio inicial — "Sloop".
+}
 Hunter_hint
 {
 A atitude de uma nação, seus cidadãos e soldados em relação a você. Boas ações em favor do país aumentam sua reputação; más ações podem até levar a uma recompensa pela cabeça do herói. Isso significa perseguição constante tanto em terra quanto no mar.

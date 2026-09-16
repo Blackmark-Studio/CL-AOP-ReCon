@@ -1,0 +1,63 @@
+Bucaneer_man_1 {
+Hic... Oh, Captain! Come to the fire! Damn me, tonight we drink to your health and the ruin of all Spain!
+}
+Bucaneer_man_2 {
+Gladly, lads. I see the rum is flowing like water.
+}
+Bucaneer_man_3 {
+Damned heat. The meat spoils faster than we can smoke it on the racks. If we don't get a good rain in the next few days, we'll have to go deeper into the jungle for fresh game.
+}
+Bucaneer_man_4 {
+Powder's damp, and the musket misfires every other shot. I'll spend the whole evening cleaning the lock and drying my stores, or I'll be no use at all if we meet a Spanish patrol.
+}
+Bucaneer_man_5 {
+Bored to death, Captain. Tracking boar for weeks isn't for the faint-hearted. You wouldn't happen to have a couple spare pesos? Wanted to throw dice with the lads, but my pockets are empty.
+}
+Bucaneer_man_6 {
+These jungles will put me in my grave one day. Some creature bit me yesterday, and now my arm's swollen so badly it hurts to hold a saber. The locals say it'll pass on its own. Hope they're right.
+}
+Bucaneer_man_7 {
+Heard the middlemen on Tortuga have lost all shame - buying our hides for next to nothing. Maybe it's time to give up hunting and go back to the sea trade. At least the prizes are divided more fairly there.
+}
+Bucaneer_man_8 {
+Such is the buccaneer's lot. Farewell.
+}
+Bucaneer_man_9 {
+Good luck with your business. I won't keep you.
+}
+Bucaneer_man_10 {
+By all the saints, Captain, even our muddy rotgut tastes like the finest Burgundy tonight! While you were off doing great deeds, we sat here in the dirt and smoke feeding mosquitoes and shooting wild pigs. But God sees it, when I look at our women laughing by the fires again... damn it, Tortuga is celebrating tonight! Drink with us, Captain!
+}
+Bucaneer_man_11 {
+Damn me if I don't drain a whole cask by myself tonight! We didn't stand beside you under musket fire, Captain, that's the truth. But tearing those poor women from the claws of that Castilian jackal Vargas - that's a noble deed worthy of a king! To your health! Hic... Devil take it, somebody bring me more rum!
+}
+Bucaneer_man_12 {
+You know, Captain... hic... they say true miracles don't happen. I look at this fire, hear the girls singing, and I know they're damned liars! We buccaneers are simple folk; we don't take part in grand sieges. But today the Castilians washed themselves in blood, and life returned to Tortuga. Let le Basque take all the glory in Europe - here, we drink only to you! Hold out your mug!
+}
+Bucaneer_man_13 {
+Drink and make merry, lads! You've earned this feast.
+}
+Bucaneer_man_14 {
+A fine evening indeed. I won't interrupt you - drain those casks to the bottom!
+}
+Bucaneer_man_15 {
+Damned heat. The meat spoils faster than we can smoke it on the racks. If we don't get a good rain in the next few days, we'll have to go deeper into the jungle for fresh game.
+}
+Bucaneer_man_16 {
+Powder's damp, and the musket misfires every other shot. I'll spend the whole evening cleaning the lock and drying my stores, or I'll be no use at all if we meet a Spanish patrol.
+}
+Bucaneer_man_17 {
+Bored to death, Captain. Tracking boar for weeks isn't for the faint-hearted. You wouldn't happen to have a couple spare pesos? Wanted to throw dice with the lads, but my pockets are empty.
+}
+Bucaneer_man_18 {
+These jungles will put me in my grave one day. Some creature bit me yesterday, and now my arm's swollen so badly it hurts to hold a saber. The locals say it'll pass on its own. Hope they're right.
+}
+Bucaneer_man_19 {
+Heard the middlemen on Tortuga have lost all shame - buying our hides for next to nothing. Maybe it's time to give up hunting and go back to the sea trade. At least the prizes are divided more fairly there.
+}
+Bucaneer_man_20 {
+Such is the buccaneer's lot. Farewell.
+}
+Bucaneer_man_21 {
+Good luck with your business. I won't keep you.
+}

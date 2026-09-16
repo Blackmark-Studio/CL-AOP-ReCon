@@ -208,3 +208,16 @@ Tichingitu wszystko zrozumiał. Tichingitu zajmie pozycję w wyznaczonej odległ
 Tichingitu_59 {
 Dobrze.
 }
+
+Tichingitu_60 {
+Kapitanie... Tichingitu smutny. Atauco odchodzić. Atauco — godny syn selwy. Dobry łowca. Tichingitu uważać go za swojego brata.
+}
+Tichingitu_61 {
+Nie sądziłem, że tak szybko się zaprzyjaźnicie. Przez całą drogę zamieniliście chyba ledwie tuzin słów.
+}
+Tichingitu_62 {
+Atauco patrzeć na selwę takimi samymi oczami jak Tichingitu. Wiele dni być na wielkiej wodzie, jak Tichingitu. Ale wracać do lasu. Jeśli duchy pozwolić — jeszcze się spotkamy.
+}
+Tichingitu_63 {
+Znając przebiegłość le Basque’a, bez wahania postawiłbym na to parę dublonów. A tymczasem nam samym nie zaszkodzi nauczyć się od was patrzeć pod nogi.
+}

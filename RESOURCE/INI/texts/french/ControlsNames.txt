@@ -24,9 +24,7 @@ Sea_CameraSwitch {Basculer la caméra « vue navire » / « vue pont »}
 Sea_CameraSwitchShort {Changer de caméra}
 Sea_CameraShip {vue du navire}
 Sea_CameraDeck {vue du pont}
-Telescope {Activer la longue-vue}
-TelescopeIn {Zoomer avec la longue-vue}
-TelescopeOut {Quitter la vue longue-vue}
+TelescopeMode {Activer la longue-vue}
 TelescopeZoom {Zoom avant/arrière}
 Interface {Menu du personnage}
 CharacterShipMenu {Menu du vaisseau du personnage}
@@ -51,6 +49,13 @@ Ship_Select {Sélection du navire}
 Order_Select {Sélection de l’ordre}
 FireZoneKey {Afficher la portée de tir}
 FireZoneKeyHide {Masquer la portée de tir}
+QuickSave {Sauvegarde rapide}
+QuickLoad {Chargement rapide}
+FireCamera_Set {Vue de visée}
+FireMode_Direct {Ordre de tir - De la proue à la poupe}
+FireMode_Random {Ordre de tir - Libre}
+FireMode_Reverse {Ordre de tir - De la poupe à la proue}
+hk_FireMode {Changer le mode de tir}
 ChrCamTurnV {Mouvement vertical de la caméra suivant le personnage}
 ChrCamTurnH {Déplacement horizontal de la caméra suivant le personnage}
 ChrCamCameraSwitch {Basculer la caméra première/troisième personne}
@@ -70,6 +75,7 @@ OfficersFollow {Ordre aux officiers : Suivre}
 Say {Achat de marchandises}
 AlchemyKey {Alchimie}
 MapView {Atlas de cartes}
+LI_CabinExit {Sortie en mer (sur le bateau du héros)}
 AltModificator {Appuyez sur le bouton pour ouvrir le menu de déplacement rapide}
 AltModificatorOff {Relâchez le bouton pour ouvrir le menu de déplacement rapide}
 Fast_store {Voyage rapide : Boutique}
@@ -133,15 +139,21 @@ TimeScale {Le temps s'accélère/ralentit}
 TimeScaleFasterBA {Le temps s'accélère}
 TimeScaleSlowerBA {Le temps ralentit}
 Help {Aide du jeu}
-BICommandsActivate {Menu de commandes}
-LICommandsActivate {Menu de commande}
-BICommandsActivateAdd {Menu de commandes (alternatif)}
+BICommands {Menu de commandes}
+BICommandsActivate {Ouvrir le menu de commandes}
+LICommandsActivate {Ouvrir le menu de commandes}
+BICommandsActivateAdd {Ouvrir le menu de commandes (alt.)}
 BICommandsConfirm {Confirmer une commande}
 BICommandsCancel {Annuler une commande}
-BICommandsConfirmAdd {Confirmer une commande (alternative)}
-BICommandsCancelAdd {Annuler une commande (alternative)}
-BICommandsLeft {Menu d’action - naviguer à gauche}
-BICommandsRight {Menu d’action – naviguer à droite}
+BICommandsConfirmAdd {Confirmer une commande (alt.)}
+BICommandsCancelAdd {Annuler une commande (alt.)}
+BICommandsLeft {Menu de commandes - naviguer vers la gauche}
+BICommandsLeftW {Menu de commandes - naviguer vers la gauche (alt.)}
+BICommandsRight {Menu de commandes - naviguer vers la droite}
+BICommandsRightW {Menu de commandes - naviguer vers la droite (alt.)}
+BICommandsUp {Menu de commandes - naviguer vers le haut}
+BICommandsDown {Menu de commandes - naviguer vers le bas}
+
 HelpChooser_Cancel {Quitter l’aide}
 HelpChooser_Action {Afficher l’aide pour l’élément actuel}
 HelpChooser_Next {Élément d’aide suivant}
@@ -158,3 +170,5 @@ DlgScrollUp {Faire défiler le dialogue vers le bas}
 DlgScrollDown {Faire défiler le dialogue vers le haut}
 hk_Cure {Utiliser le mélange de soin}
 hk_Rush {Utiliser la capacité « Furie »}
+
+KZ_NextMusicTrack {Piste musicale suivante}

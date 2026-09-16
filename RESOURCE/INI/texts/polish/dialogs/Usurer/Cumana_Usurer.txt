@@ -37,3 +37,34 @@ Zgadliście, przepraszam...
 Cumana_Usurer_12 {
 Rozumiem...
 }
+
+Cumana_Usurer_13 {
+Słucham, kapitanie. Co pana do mnie sprowadza?
+}
+Cumana_Usurer_14 {
+Chcę zostawić dwadzieścia tysięcy peso dla Anny Arellano. I przekazać jej kilka słów od ojca.
+}
+Cumana_Usurer_15 {
+Nic pilnego. Wrócimy do tego innym razem.
+}
+Cumana_Usurer_16 {
+Anna Arellano? Tak, znam ją. Ale jej ojciec od dawna nie pojawiał się w Cumanie. Co dokładnie mam jej przekazać?
+}
+Cumana_Usurer_17 {
+Proszę powiedzieć, że te pieniądze zostawił Tomás de Arellano. I że pobłogosławił jej małżeństwo z Sebastiánem. Mojego imienia nie trzeba wspominać.
+}
+Cumana_Usurer_18 {
+Rozumiem. Jeśli ma pan pieniądze przy sobie, natychmiast otworzę lokatę na jej nazwisko.
+}
+Cumana_Usurer_19 {
+Oto pieniądze. Proszę otworzyć lokatę i koniecznie przekazać jej słowa ojca.
+}
+Cumana_Usurer_20 {
+Nie mam teraz całej sumy. Wrócę, kiedy uzbieram dwadzieścia tysięcy.
+}
+Cumana_Usurer_21 {
+Proszę się nie obawiać. W moich księgach będzie figurować wyłącznie nazwisko Tomása de Arellano, a Annie przekażemy jego słowa.
+}
+Cumana_Usurer_22 {
+Dziękuję. To wszystko, czego od pana potrzebuję.
+}

@@ -487,3 +487,39 @@ Je ne vois pas votre navire dans le port, Capitaine @<GetFullName>...
 Common_Shipyard_137 {
 Capitaine, amarrez le navire au port et venez ensuite.
 }
+Common_Shipyard_138 {
+@<TimeGreeting>, docteur Blood. Qu’est-ce qui vous amène?
+}
+Common_Shipyard_139 {
+Bonjour, @<npchar.name>. Je suis venu soigner les prisonniers espagnols.
+}
+Common_Shipyard_140 {
+Ces misérables ne méritent pas de tels soins. Pensez-vous que, si nous étions à leur place, ils prendraient autant de précautions avec leurs prisonniers?
+}
+Common_Shipyard_141 {
+Qui sait... Mais j’ai toujours pensé qu’un homme devait prendre exemple sur les meilleurs, plutôt que de s’abaisser au niveau des pires.
+}
+Common_Shipyard_142 {
+Vous ne raisonnez ainsi que parce que ce n’est pas votre entrepôt qu’on a transformé en infirmerie, docteur Blood. Mais puisque vous êtes si déterminé à les soigner - ils sont derrière la porte à gauche. Et tenez, prenez ceci : c’est pour eux... enfin, pour vous... Vous m’avez compris.
+}
+Common_Shipyard_143 {
+Je vous remercie.
+}
+Common_Shipyard_144 {
+Si vous cherchez toujours les Espagnols, ils n’ont pas changé d’endroit.
+}
+Common_Shipyard_145 {
+Cela simplifie quelque peu les choses.
+}
+Common_Shipyard_146 {
+Remarquable! Tout simplement remarquable! Vous avez remis sur pied cinq de ces six sacs d’os, tandis que les blessés du 'Pride of Devon', sous la surveillance des docteurs Wacker et Bronson, meurent comme des mouches.
+}
+Common_Shipyard_147 {
+On dirait que les Espagnols s’accrochent à la vie bien plus obstinément que les Anglais. Probablement par pure contrariété.
+}
+Common_Shipyard_148 {
+Ne soyez pas modeste, docteur. Tout Bridgetown raconte déjà que les médecins du coin ne sont que de simples barbiers à côté de vous.
+}
+Common_Shipyard_149 {
+Je crains que vous n’ayez une opinion beaucoup trop élevée de moi et beaucoup trop basse de mes confrères. Même si, je l’avoue, il m’est nettement plus difficile de contester la seconde.
+}

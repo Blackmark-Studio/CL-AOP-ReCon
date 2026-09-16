@@ -37,3 +37,30 @@ Das war er. Er und sein Freund haben früher viel Zeit hier verbracht. Vorgester
 LaVega_Tavern_11 {
 Danke!
 }
+LaVega_Tavern_12 {Ich komme noch einmal wegen Nicolas Rimalie.}
+LaVega_Tavern_13 {Ich suche einen Mann namens Nicolas Rimalie. Kennst du ihn?}
+LaVega_Tavern_14 {Rimalie? Natürlich kenne ich ihn. Er kommt nicht oft vorbei, aber man respektiert ihn hier. Warum suchen Sie ihn?}
+LaVega_Tavern_15 {Ein alter Freund von ihm sucht ihn — Michel. Sagen Sie mir, wann Nicolas zuletzt hier war.}
+LaVega_Tavern_16 {Gestern. Er übernachtete in einem Zimmer oben. Aß allein zu Abend und ging bei Tagesanbruch.}
+LaVega_Tavern_17 {Wohin ging er?}
+LaVega_Tavern_18 {Tausend Pesos, Kapitän, und ich erzähle Ihnen alles, was ich weiß.}
+LaVega_Tavern_19 {Hier. Und jetzt raus damit.}
+LaVega_Tavern_20 {So viel Geld habe ich gerade nicht.}
+LaVega_Tavern_21 {Ich komme auch ohne deine Hilfe aus.}
+LaVega_Tavern_22 {Rimalie nahm ein Zimmer, aß allein zu Abend und ging bei Tagesanbruch.}
+LaVega_Tavern_23 {Wohin ging er?}
+LaVega_Tavern_24 {Dann kommen Sie wieder, wenn Sie das Geld haben. Hier hat selbst Schweigen seinen Preis.}
+LaVega_Tavern_25 {Ich komme wieder.}
+LaVega_Tavern_26 {Wie Sie meinen...}
+LaVega_Tavern_27 {Die üblen Gerüchte über Sie haben sich gelegt. Mehr noch, in letzter Zeit hört man fast nur Gutes. Diesmal verzichten wir auf die Bezahlung. Rimalie nahm ein Zimmer, aß allein zu Abend und ging bei Tagesanbruch.}
+LaVega_Tavern_28 {Wohin ging er?}
+LaVega_Tavern_29 {Nun, Kapitän, haben Sie diesmal tausend Piaster für mich?}
+LaVega_Tavern_30 {Habe ich. Hier.}
+LaVega_Tavern_31 {Noch nicht.}
+LaVega_Tavern_32 {Ich komme ohne dich aus.}
+LaVega_Tavern_33 {Er sagte, er gehe zum alten Anleger hinter der Siedlung. Mehr habe ich nicht gefragt.}
+LaVega_Tavern_34 {Hat sonst noch jemand nach ihm gefragt?}
+LaVega_Tavern_35 {Zwei Fremde. Einer sprach mit spanischem Akzent, der andere schwieg fast die ganze Zeit.}
+LaVega_Tavern_36 {Hast du ihnen gesagt, wohin Rimalie gegangen ist?}
+LaVega_Tavern_37 {Ich nicht. Aber sie fanden jemanden, der gesprächiger war, und gingen kurz darauf hinterher.\nUnd noch etwas... In letzter Zeit hat Rimalie bei mir doppelt so viel Schnaps gekauft wie sonst.}
+LaVega_Tavern_38 {Hm... Nun gut, danke.}

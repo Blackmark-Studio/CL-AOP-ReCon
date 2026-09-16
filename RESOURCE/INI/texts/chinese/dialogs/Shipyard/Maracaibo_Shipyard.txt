@@ -1,39 +1,39 @@
 Maracaibo_Shipyard_1 {
-什么问题？
+什么问题？ 
 }
 Maracaibo_Shipyard_2 {
-你想干什么？
+你想干什么？ 
 }
 Maracaibo_Shipyard_3 {
 @<RandPhraseSimple>
 }
 Maracaibo_Shipyard_4 {
-前阵子你试图问我个问题……
+前阵子你试图问我个问题…… 
 }
 Maracaibo_Shipyard_5 {
-在我自己的船厂，甚至整个城里，我还真没见过这么一致好奇的人。
+在我自己的船坞， 甚至整个城里， 我还真没见过这么一致好奇的人。 
 }
 Maracaibo_Shipyard_6 {
-这都什么问题啊？老子的活儿就是造船，赶紧干正事吧。
+这都什么问题啊？ 我的活儿就是造船， 赶紧干正事吧。 
 }
 Maracaibo_Shipyard_7_m {
-我改主意了……
+我改主意了…… 
 }
 Maracaibo_Shipyard_7_f {
-我改变主意了……
+我改变主意了…… 
 }
 Maracaibo_Shipyard_8 {
-我现在没什么可说的。
+我现在没什么可说的。 
 }
 Maracaibo_Shipyard_9 {
 @<RandPhraseSimple>
 }
 Maracaibo_Shipyard_10 {
-嗯，我的记忆好像出了点问题……
+嗯， 我的记忆好像出了点问题…… 
 }
 Maracaibo_Shipyard_11 {
-嗯，不过……
+嗯， 不过…… 
 }
 Maracaibo_Shipyard_12 {
-咱们……
+咱们…… 
 }

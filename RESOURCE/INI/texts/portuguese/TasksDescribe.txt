@@ -7,7 +7,7 @@ Task6 {Designar Tesoureiro}
 Task7 {Designar Carpinteiro}
 Task8 {Combate Naval}
 Task9 {Usando balas de canhão ou bombas}
-Task10 {Afunde o lugre danificado}
+Task10 {Afunde os lugres inimigos}
 Task11 {Desengajar}
 Task12 {Afaste-se o suficiente do inimigo}
 Task13 {Novo Navio}
@@ -25,3 +25,11 @@ Task24 {Novo navio}
 Task25 {Vá até a taverna}
 Task26 {Contratar toda a tripulação disponível}
 Task27 {Saia da taverna}
+Task28 {Deixe Barbados}
+Task29 {Afaste-se 500 jardas do forte}
+Task30 {Aproxime-se da “Encarnación” e envie um escaler até ela}
+Task31 {Explore Maracaibo}
+Task32 {Verifique a loja}
+Task33 {Verifique a prisão}
+Task34 {Verifique o armazém}
+Task35 {Verifique a selva}

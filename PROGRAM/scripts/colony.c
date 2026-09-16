@@ -179,7 +179,7 @@ void SetCrewBackAfterBattle()
 	        RemoveCharacterGoodsSelf(Pchar, GOOD_MEDICAMENT, iTemp);
 	        if (GetCargoGoods(Pchar, GOOD_MEDICAMENT) < 16)
 		    {
-		        Log_Info(StringFromKey("InfoMessages_71", UpperFirst(XI_ConvertString("musicmod_s")), pchar.Ship.Name));
+		        Log_Info(StringFromKey("InfoMessages_71", UpperFirst(XI_ConvertString("Continuous music ship")), pchar.Ship.Name));
 		    }
 	    }
 	}
@@ -1131,8 +1131,8 @@ void TWN_ExitForPay() // мэр даёт откуп - табличка приб�
     LAi_SetImmortal(Builder, false);
 
 	ResetSoundBoarding();
-	StopMusic();
-	KZ|Random("Action\Battle\Victory");
+	StopMusic(250);
+	KZ|MusicVictory();
 
     int nBooty, iTest = FindColony(sld.City); // город
     ref rColony;

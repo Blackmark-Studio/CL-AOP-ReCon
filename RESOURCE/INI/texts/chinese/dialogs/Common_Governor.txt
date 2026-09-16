@@ -1,68 +1,68 @@
 Common_Governor_1 {
-你竟敢出现在Governor-General面前？！胆子不小啊……
+你竟敢出现在总督面前？ ！ 胆子不小啊…… 
 }
 Common_Governor_2 {
-那些饭桶怎么让敌人闯到我这儿来了？！真是不可思议……
+那些饭桶怎么让敌人闯到我这儿来了？ ！ 真是不可思议…… 
 }
 Common_Governor_3_m {
-看来俺这保镖也没啥用，随便哪个闲人都能在俺宅子里乱转……
+看来我这护卫也没什么用， 随便哪个闲人都能在我府上乱转…… 
 }
 Common_Governor_3_f {
-看来俺这护卫也没啥用，随便哪个闲人都能在俺府上乱转……
+看来我这护卫也没什么用， 随便哪个闲人都能在我府上乱转…… 
 }
 Common_Governor_4 {
 @<LinkRandPhrase>
 }
 Common_Governor_5_m {
-你想干嘛，混蛋？！我的士兵已经盯上你了，肮脏的海盗，你跑不了多远！
+你想干嘛， 混蛋？ ！ 我的士兵已经盯上你了，肮脏的海盗，你跑不了多远！
 }
 Common_Governor_5_f {
-你还想干嘛，混账？！我的士兵已经盯上你了，你跑不了多远的，臭不要脸的！
+你想干嘛， 混蛋？ ！ 我的士兵已经盯上你了，肮脏的女海盗，你跑不了多远！
 }
 Common_Governor_6_m {
-肮脏的杀人犯，滚出我的宅邸！来人！
+肮脏的杀人犯， 滚出我的宅邸！ 来人！ 
 }
 Common_Governor_6_f {
-肮脏的杀人犯，滚出我的宅邸！来人！
+肮脏的杀人犯， 滚出我的宅邸！ 来人！ 
 }
 Common_Governor_7_m {
-老子才不怕你这混蛋！很快你就得在要塞的绞刑架上吊命了，跑不了多远……
+我才不怕你这混蛋！ 很快你就得在要塞的绞刑架上吊命了， 跑不了多远…… 
 }
 Common_Governor_7_f {
-老子才不怕你呢，臭娘们！你很快就会在要塞被吊死，跑不了多远的……
+我才不怕你呢， 臭娘们！ 你很快就会在要塞被吊死， 跑不了多远的…… 
 }
 Common_Governor_8 {
 @<LinkRandPhrase>
 }
 Common_Governor_9 {
-这些士兵没啥用……
+这些士兵没什么用…… 
 }
 Common_Governor_10 {
-他们绝对抓不到我。
+他们绝对抓不到我。 
 }
 Common_Governor_11 {
 @<RandPhraseSimple>
 }
 Common_Governor_12 {
-闭嘴，伙计，不然老子撕了你的臭舌头！
+闭嘴， 伙计， 不然我撕了你的臭舌头！ 
 }
 Common_Governor_13 {
-听俺一句，伙计：低调点，命还能保住……
+听我一句， 伙计： 低调点， 命还能保住…… 
 }
 Common_Governor_14 {
 @<RandPhraseSimple>
 }
 Common_Governor_15 {
-听说你一直坚持要见我。我叫@<GetFullName>，是@<NationNameGenitive>殖民地的总督，也是@<NationKingsName>陛下在这片海域的代表。现在，请你说明来访的目的，@<GetAddress_Form>。
+听说你一直坚持要见我。 我叫@<GetFullName>， 是@<NationNameGenitive>殖民地的总督， 也是@<NationKingsName>陛下在这片海域的代表。 现在， 请你说明来访的目的， @<GetAddress_Form>。 
 }
 Common_Governor_16 {
-我叫@<GetFullName>。
+我叫@<GetFullName>。 
 }
 Common_Governor_17 {
-啊，又是你？这次找@<NationNameGenitive>总督，有什么事？
+啊， 又是你？ 这次找@<NationNameGenitive>总督， 有什么事？ 
 }
 Common_Governor_18 {
-你又把我从重要的政务中叫出来？@<GetAddress_Form>，你有什么事？
+你又把我从重要的政务中叫出来？ @<GetAddress_Form>， 你有什么事？ 
 }
 Common_Governor_19 {
 @<RandPhraseSimple>
@@ -71,326 +71,327 @@ Common_Governor_20 {
 我想谈谈为@<NationNameGenitive>王室效力的事
 }
 Common_Governor_21 {
-我有件事想跟你谈谈。
+我有件事想跟你谈谈。 
 }
 Common_Governor_22 {
-请原谅，我还有事要处理。
+请原谅， 我还有事要处理。 
 }
 Common_Governor_23 {
-说吧，什么事让你来这儿，把我从国事中叫出来？
+说吧， 什么事让你来这儿， 把我从国事中叫出来？ 
 }
 Common_Governor_24 {
 我想谈谈为@<NationNameGenitive>王室效力的事
 }
 Common_Governor_25 {
-我有点事想跟你谈谈。
+我有点事想跟你谈谈。 
 }
 Common_Governor_26 {
-只是来打个招呼，没别的，@<GetAddress_FormToNPC>
+只是来打个招呼， 没别的， @<GetAddress_FormToNPC>
 }
 Common_Governor_27 {
-那请你离开我的办公室，让我继续工作。
+那请你离开我的办公室， 让我继续工作。 
 }
 Common_Governor_28_m {
-好的好的，当然，打扰您了，真不好意思。
+好的好的， 当然， 打扰您了， 真不好意思。 
 }
 Common_Governor_28_f {
-好的好的，当然，打扰您了，真不好意思。
+好的好的， 当然， 打扰您了， 真不好意思。 
 }
 Common_Governor_29 {
-我根本不认识你，@<GetAddress_Form>。请离开我的办公室。我只和为@<NationKingsName>效力的人打交道。
+我根本不认识你， @<GetAddress_Form>。 请离开我的办公室。 我只和为@<NationKingsName>效力的人打交道。 
 }
 Common_Governor_30 {
-不好意思打扰了。等俺拿到@<NationNameGenitive>的私掠许可证，再回来找你。
+不好意思打扰了。 等我拿到@<NationNameGenitive>的私掠许可证， 再回来找你。 
 }
 Common_Governor_31 {
-有个好消息要告诉你，@<GetAddress_Form>。你的晋升申请已经在@<NationKingsName>的办公室签署了。现在你被授予@<NationNameGenitive>舰队的@<GetAddress_FormTitle>军衔。
+有个好消息要告诉你， @<GetAddress_Form>。 你的晋升申请已经在@<NationKingsName>的办公室签署了。 现在你被授予@<NationNameGenitive>海军的@<GetAddress_FormTitle>军衔。 
 }
 Common_Governor_32 {
-谢谢！我保证会继续为@<NationKingsCrown>效力，绝不辱使命。
+谢谢！ 我保证会继续为@<NationKingsCrown>效力， 绝不辱使命。 
 }
 Common_Governor_33 {
-你有什么想问俺的吗，@<GetAddress_FormTitle>?
+你有什么想问我的吗， @<GetAddress_FormTitle>?
 }
 Common_Governor_34 {
-我听着，@<GetAddress_Form>。
+我听着， @<GetAddress_Form>。 
 }
 Common_Governor_35 {
-说吧，我洗耳恭听。
+说吧， 我洗耳恭听。 
 }
 Common_Governor_36 {
 @<LinkRandPhrase>
 }
 Common_Governor_37 {
-有给持照私掠者的活儿吗？
+有给持照私掠者的活儿吗？ 
 }
 Common_Governor_38 {
-有给持证私掠者的活儿吗？
+有给持证私掠者的活儿吗？ 
 }
 Common_Governor_39_m {
-我是专门为你的任务来的。
+我是专门为了您的任务而来的。 
 }
 Common_Governor_39_f {
-我是专门为你的任务来的。
+我是专门为了您的任务而来的。 
 }
 Common_Governor_40 {
-关于你的任务……
+关于您的任务…… 
 }
 Common_Governor_41 {
 @<RandPhraseSimple>
 }
 Common_Governor_42 {
-有给持证私掠者的活儿吗？
+有给持证私掠者的活儿吗？ 
 }
 Common_Governor_43 {
-我想把我占领的定居点归到@<XI_ConvertString>旗下。
+我想把我占领的定居点归到@<XI_ConvertString>旗下。 
 }
 Common_Governor_44 {
-不好意思，我待会儿再来。
+不好意思， 我待会儿再来。 
 }
 Common_Governor_45 {
-没什么大事，@<GetAddress_FormToNPC>。只是来打个招呼。
+没什么大事， @<GetAddress_FormToNPC>。 只是来打个招呼。 
 }
 Common_Governor_46 {
 @<RandPhraseSimple>
 }
 Common_Governor_47 {
-嗯……听说你曾为@<NationNameGenitive>执行过秘密任务，那我以后就不能再把机密的事交给你了。
+嗯…… 听说你曾为@<NationNameGenitive>执行过秘密任务， 那我以后就不能再把机密的事交给你了。 
 }
 Common_Governor_48 {
-真可惜。
+真可惜。 
 }
 Common_Governor_49 {
-听说你跟Brethren of the Coast的头目关系很近。所以我觉得不能把为@<NationNameGenitive>效力的任务交给你。
+听说你跟海岸同盟的头目关系很近。 所以我觉得不能把为@<NationNameGenitive>效力的任务交给你。 
 }
 Common_Governor_50 {
-嗯……那还真是可惜。
+嗯…… 那还真是可惜。 
 }
 Common_Governor_51 {
-对你来说可惜，对我来说倒是幸运，现在我手头没有什么高风险高报酬的活儿给你。
+对你来说可惜， 对我来说倒是幸运， 现在我手头没有什么高风险高报酬的活儿给你。 
 }
 Common_Governor_52 {
-那我待会儿再来。
+那我待会儿再来。 
 }
 Common_Governor_53 {
-你说的是哪个城市？
+你说的是哪个城市？ 
 }
 Common_Governor_54_m {
-我搞错了，说的是别的事。
+我搞错了， 说的是别的事。 
 }
 Common_Governor_54_f {
-我搞错了，说的是别的事。
+我搞错了， 说的是别的事。 
 }
 Common_Governor_55 {
-好消息，@<GetAddress_FormTitle>！你的努力大家都看在眼里，当然也少不了奖励。这是@<FindMoneyString>，感谢你为@<NationNameInstrumental>所做的贡献。现在请允许我告辞，还有许多事务要处理。
+好消息， @<GetAddress_FormTitle>！ 你的努力大家都看在眼里， 当然也少不了奖励。 这是@<FindMoneyString>， 感谢你为@<NationNameInstrumental>所做的贡献。 现在请允许我告辞， 还有许多事务要处理。 
 }
 Common_Governor_56 {
-那就不打扰你了，@<GetAddress_FormToNPC>。祝一切顺利。
+那就不打扰你了， @<GetAddress_FormToNPC>。 祝一切顺利。 
 }
 Common_Governor_57 {
-你竟敢出现在Governor-General面前？！胆子不小啊……
+你竟敢出现在总督面前？ ！ 胆子不小啊…… 
 }
 Common_Governor_58 {
-那些饭桶怎么让敌人冲到我这儿来了？！真是不可思议……
+那些饭桶怎么让敌人冲到我这儿来了？ ！ 真是不可思议…… 
 }
 Common_Governor_59_m {
-看起来俺这护卫也没啥用，随便哪个闲人都能在俺宅子里溜达……
+看起来我这护卫也没什么用， 随便哪个闲人都能在我宅子里溜达…… 
 }
 Common_Governor_59_f {
-看来俺的守卫也就那点本事，随便哪个闲人都能在俺宅子里乱窜……
+看来我的守卫也就那点本事， 随便哪个闲人都能在我宅子里乱窜…… 
 }
 Common_Governor_60 {
 @<LinkRandPhrase>
 }
 Common_Governor_61_m {
-你想干嘛，混蛋？！我的士兵已经盯上你了，你跑不了的，小白脸。走，跟我上楼！
+你想干嘛， 混蛋？ ！ 我的士兵已经盯上你了， 你跑不了的， 小白脸。 走， 跟我上楼！ 
 }
 Common_Governor_61_f {
-你想干嘛，混账东西？！我的士兵已经盯上你了，你跑不了的，臭家伙！
+你想干嘛， 混账东西？ ！ 我的士兵已经盯上你了， 你跑不了的， 臭家伙！ 
 }
 Common_Governor_62_m {
-肮脏的杀人犯，滚出我的宅邸！来人！
+肮脏的杀人犯， 滚出我的宅邸！ 来人！ 
 }
 Common_Governor_62_f {
-肮脏的女杀手，滚出我的宅邸！来人！
+肮脏的女杀手， 滚出我的宅邸！ 来人！ 
 }
 Common_Governor_63_m {
-老子才不怕你这混蛋！很快你就会被吊死在要塞，跑不了多远的……
+我才不怕你呢， 混蛋！ 你很快就会在要塞被吊死， 跑不了多远的…… 
 }
 Common_Governor_63_f {
-老子才不怕你呢，臭娘们！你很快就会在要塞被吊死，跑不了多远的……
+我才不怕你呢， 臭娘们！ 你很快就会在要塞被吊死， 跑不了多远的…… 
 }
 Common_Governor_64 {
 @<LinkRandPhrase>
 }
 Common_Governor_65 {
-这些士兵没啥用……
+这些士兵没什么用…… 
 }
 Common_Governor_66 {
-他们绝对抓不到我。
+他们绝对抓不到我。 
 }
 Common_Governor_67 {
 @<RandPhraseSimple>
 }
 Common_Governor_68 {
-闭嘴，伙计，不然老子撕了你的臭舌头！
+闭嘴， 伙计， 不然我撕了你的臭舌头！ 
 }
 Common_Governor_69 {
-听俺一句，伙计：低调点，命还能保住……
+听我一句， 伙计： 低调点， 命还能保住…… 
 }
 Common_Governor_70 {
 @<RandPhraseSimple>
 }
 Common_Governor_71 {
-我听着呢，船长。
+我听着呢， 船长。 
 }
 Common_Governor_72_m {
-我是受Henry Morgan的委托，特地来把这封信交给你……
+我是受亨利.摩根的委托， 特地来把这封信交给你…… 
 }
 Common_Governor_72_f {
-我是受Henry Morgan的委托，特地来把这封信交给你……
+我是受亨利.摩根的委托， 特地来把这封信交给你…… 
 }
 Common_Governor_73 {
-你这是把我从重要的政务中拉出来，有什么事，@<GetAddress_Form>?
+你这是把我从重要的政务中拉出来， 有什么事， @<GetAddress_Form>?
 }
 Common_Governor_74 {
-这只是一次礼节性拜访，没别的，@<GetAddress_FormToNPC>。
+这只是一次礼节性拜访， 没别的， @<GetAddress_FormToNPC>。 
 }
 Common_Governor_75 {
-嗯……Morgan的信？这样啊……行，把你从Henry Morgan那儿带来的信拿出来吧。
+嗯…… 摩根的信？ 这样啊…… 行， 把你从亨利.摩根那儿带来的信拿出来吧。 
 }
 Common_Governor_76 {
-求你了……
+请…… 
 }
 Common_Governor_77_m {
-什么？！要放弃Fort Orange？！这些英国狗真是贪得无厌！Port Royal还不够，现在还想霸占整个岛！把那家伙给我拿下！
+什么？ ！ 要放弃奥兰治堡？ ！ 这些英国狗真是贪得无厌！ 皇家港还不够， 现在还想霸占整个岛！ 把那家伙给我拿下！ 
 }
 Common_Governor_77_f {
-什么？！要放弃Fort Orange？！这些英国狗真是贪得无厌！Port Royal还不够，现在还想霸占整个岛！把那女人给我抓住！
+什么？ ！ 要放弃奥兰治堡？ ！ 这些英国狗真是贪得无厌！ 皇家港还不够， 现在还想霸占整个岛！ 把那女人给我抓住！ 
 }
 Common_Governor_78_m {
-Minheer！俺只是个送信的，信里写啥可不关俺的事！
+先生！ 我只是个送信的， 信里写什么可不关我的事！ 
 }
 Common_Governor_78_f {
-Mynheer！俺只是个送信的，信里写啥可不归俺管！
+女士！ 我只是个送信的， 信里写什么可不归我管！ 
 }
 Common_Governor_79_m {
-你是Morgan的人，那就是给那些英国狗干活的。老子知道的就够了！把他关进船舱！
+你是摩根的人， 那就是给那些英国狗干活的。 我知道的就够了！ 把他关进船舱！ 
 }
 Common_Governor_79_f {
-你是Morgan的人，那就是给那些英国狗干活的。老子知道的就够了！把她关进船舱！
+你是摩根的人， 那就是给那些英国狗干活的。 我知道的就够了！ 把她关进船舱！ 
 }
 Common_Governor_80_m {
-好吧，我只能听从当局的安排！但我再说一遍——我问心无愧，我既没有做过，也没有策划过任何针对Holland的事，根本没有理由被追究！
+好吧， 我只能听从当局的安排！ 但我再说一遍——我问心无愧， 我既没有做过， 也没有策划过任何针对荷兰的事， 根本没有理由被追究！ 
 }
 Common_Governor_80_f {
-好吧，我只能听从当局的安排！但我再说一遍——我问心无愧，我既没有做过，也没有策划过任何针对Holland、足以被追究的事情！
+好吧， 我只能听从当局的安排！ 但我再说一遍——我问心无愧， 我既没有做过， 也没有策划过任何针对荷兰的事， 根本没有理由被追究！ 
 }
 Common_Governor_81 {
-你这得去治治神经了！
+你这得去治治神经了！ 
 }
 Common_Governor_82_m {
-总督大人，您何必直接把我送进监狱呢？咱们肯定能谈个更好的办法……
+总督大人， 何必直接把我关进牢里？ 咱们完全可以好好谈谈嘛…… 
 }
 Common_Governor_82_f {
-总督大人，何必直接把我关进牢里？咱们完全可以好好谈谈嘛……
+总督大人， 何必直接把我关进牢里？ 咱们完全可以好好谈谈嘛…… 
 }
 Common_Governor_83_m {
-你敢这么放肆，混蛋！给我立刻宰了他！
+你敢这么放肆， 混蛋！ 给我立刻宰了他！ 
 }
 Common_Governor_83_f {
-你竟敢这样，混账！马上杀了她！
+你竟敢这样， 混账！ 马上杀了她！ 
 }
 Common_Governor_84 {
-好了，守卫们，准备好！
+好了， 守卫们， 准备好！ 
 }
 Common_Governor_85_m {
-你的良心到底清不清白，咱们很快就知道了……把他带走！
+你的良心到底清不清白， 咱们很快就知道了…… 把他带走！ 
 }
 Common_Governor_85_f {
-你的良心到底清不清白，咱们很快就知道了……把她带走！
+你的良心到底清不清白， 咱们很快就知道了…… 把她带走！ 
 }
 Common_Governor_86 {
-快去查清楚，别磨蹭。老子没多少时间……
+快去查清楚， 别磨蹭。 我没多少时间…… 
 }
 Common_Governor_87 {
-想谈条件？哼……如果说金额是@<FindMoneyString>，那俺倒是可以继续聊聊。
+想谈条件？ 哼…… 如果说金额是@<FindMoneyString>， 那我倒是可以继续聊聊。 
 }
 Common_Governor_88_m {
-太好了！我就说这事儿简单吧。
+太好了！ 我就说这事儿简单吧。 
 }
 Common_Governor_88_f {
-太好了！我就说这很简单吧。
+太好了！ 我就说这很简单吧。 
 }
 Common_Governor_89_m {
-唉，要是俺有那么多钱就好了！肯定二话不说全给你……可惜，俺身上就一个破指南针和三十皮阿斯特。
+唉， 要是我有那么多钱就好了！ 肯定二话不说全给你…… 可惜， 我身上就一个破指南针和三十比索。 
 }
 Common_Governor_89_f {
-唉，要是俺有那么多钱就好了！肯定二话不说就给你……可惜俺就只有个破指南针和三十皮阿斯特。
+唉， 要是我有那么多钱就好了！ 肯定二话不说全给你…… 可惜， 我身上就一个破指南针和三十比索。 
 }
 Common_Governor_90 {
-啥？！你疯了吧？！这么多钱，别说干掉你那些守卫了……老子连Curaçao都能屠了，码头的马和丛林里的猴子都不放过！
+什么？ ！ 你疯了吧？ ！ 这么多钱， 别说干掉你那些守卫了…… 我连库拉索都能屠了， 码头的马和丛林里的猴子都不放过！ 
 }
 Common_Governor_91 {
-那就好，你可以走了……不过以后别再拿这种差事来找我！我的好心也是有限度的。
+那就好， 你可以走了…… 不过以后别再拿这种差事来找我！ 我的好心也是有限度的。 
 }
 Common_Governor_92 {
-当然！那就告辞了……
+当然！ 那就告辞了…… 
 }
 Common_Governor_93 {
-滚出去。
+滚出去。 
 }
 Common_Governor_94 {
-我这就走了。
+我这就走了。 
 }
 Common_Governor_95 {
-那关我啥事？
+那关我什么事？ 
 }
 Common_Governor_96_m {
-仔细想想——俺其实连那封信都没拆开。所以严格来说，俺啥错都没有。顶多就是太较真了点……
+仔细想想——我其实连那封信都没拆开。 所以严格来说， 我什么错都没有。 最多就是有点太较真了…… 
 }
 Common_Governor_96_f {
-仔细想想——我其实连那封信都没拆开。所以严格来说，我什么错都没有。最多就是有点太较真了……
+仔细想想——我其实连那封信都没拆开。 所以严格来说， 我什么错都没有。 最多就是有点太较真了…… 
 }
 Common_Governor_97 {
-你在开玩笑吗？！
+你在开玩笑吗？ ！ 
 }
 Common_Governor_98_m {
-开玩笑？不不，我可是认真的……比如说，我真心觉得Morgan就是故意让我——你最喜欢的信使——来送这封信的。因为他知道你肯定忍不住。但要是你现在揪住我不放，他就有理由说你……怎么说呢……一点幽默感都没有。
+开玩笑？ 不不， 我可是认真的…… 比如说， 我真心觉得摩根就是故意让我——你最喜欢的信使——来送这封信的。 因为他知道你肯定忍不住。 但要是你现在揪住我不放， 他就有理由说你…… 怎么说呢…… 一点幽默感都没有。 
 }
 Common_Governor_98_f {
-开玩笑？不不，我可是认真的……比如说，我真心觉得Morgan就是故意让我这个你最喜欢的信使来送这封信的。因为他知道你肯定忍不住。但要是你现在揪住我不放，他就有理由说你——怎么说呢——一点幽默感都没有。
+开玩笑？ 不不， 我可是认真的…… 比如说， 我真心觉得摩根就是故意让我——你最喜欢的信使——来送这封信的。 因为他知道你肯定忍不住。 但要是你现在揪住我不放， 他就有理由说你…… 怎么说呢…… 一点幽默感都没有。 
 }
 Common_Governor_99 {
-你可不是宫廷小丑，你是在给有权势的人送非常重要的信件。还有，你可以告诉Morgan，要是他还这么办事，笑不了多久。
+你可不是宫廷小丑， 你是在给有权势的人送非常重要的信件。 还有， 你可以告诉摩根， 要是他还这么办事， 笑不了多久。 
 }
 Common_Governor_100_m {
-哦！这下有意思了！现在我非得把这消息送给Admiral Henry Morgan不可。而且，传信的人可不能因为坏消息被惩罚，对吧？很明显，这就是个拙劣的挑衅。咱们聪明点，假装这段对话从没发生过，你也根本没看过那封信。然后……
+哦！ 这下有意思了！ 现在我非得把这消息送到舰队司令亨利.摩根手里不可。 而且， 送信的人可不该因为坏消息受罚， 对吧？ 很明显， 这就是个拙劣的挑衅。 咱们聪明点， 假装这段对话从没发生过， 你也从没看过那封信。 然后…… 
 }
 Common_Governor_100_f {
-哦！这下有意思了！现在我非得把这消息送到Admiral Henry Morgan手里不可。而且，送信的人可不该因为坏消息受罚，对吧？很明显，这就是个拙劣的挑衅。咱们聪明点，假装这段对话从没发生过，你也从没看过那封信。然后……
+哦！ 这下有意思了！ 现在我非得把这消息送到舰队司令亨利.摩根手里不可。 而且， 送信的人可不该因为坏消息受罚， 对吧？ 很明显， 这就是个拙劣的挑衅。 咱们聪明点， 假装这段对话从没发生过， 你也从没看过那封信。 然后…… 
 }
 Common_Governor_101 {
-今天这些废话老子听够了，头又开始疼了。滚出去！
+今天这些废话我听够了， 头又开始疼了。 滚出去！ 
 }
 Common_Governor_102 {
-期待下次再见，大人！祝您今天愉快。
+期待下次再见， 大人！ 祝您今天愉快。 
 }
 Common_Governor_103_m {
-还挺会装的，把他带走！
+还挺会装的， 把他带走！ 
 }
 Common_Governor_103_f {
-还挺会装的，把她带走！
+还挺会装的， 把她带走！ 
 }
 Common_Governor_104 {
-太好了！现在我可成了你们守卫们的头号谈资：“咱们是怎么英勇地拦下带信的信使的。”
+太好了！ 现在我可成了你们守卫们的头号谈资： “咱们是怎么英勇地拦下带信的信使的。 ”
 }
 Common_Governor_105 {
-幸运的是，我的剑术再一次救了我
+幸运的是， 我精湛的剑术又一次救了我
 }
 Common_Governor_106 {
-幸运的是，金钱再一次救了我
+幸运的是， 金钱又一次帮我摆脱了困境
 }
 Common_Governor_107 {
-幸运的是，我天生的魅力和伶牙俐齿再一次救了我
+幸运的是， 我与生俱来的魅力和能说会道的口才又一次帮了我
 }
+

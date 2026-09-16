@@ -293,10 +293,10 @@ void ProcessDialogEvent()
 		case "NarvalRing_3":
 			dialog.text = StringFromKey("Mayor_76", pchar);
 			link.l1 = StringFromKey("Mayor_77");
-			link.l1.go = "NarvalRing_4";
+			link.l1.go = "NarvalRing_3_1";
 			TakeItemFromCharacter(pchar, "RingNarval");
 		break;
-		case "NarvalRing_3":
+		case "NarvalRing_3_1":
 			dialog.text = StringFromKey("Mayor_78");
 			link.l1 = StringFromKey("Mayor_79", pchar);
 			link.l1.go = "NarvalRing_4";

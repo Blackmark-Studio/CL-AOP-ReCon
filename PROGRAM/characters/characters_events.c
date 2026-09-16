@@ -348,10 +348,36 @@ void chrCharacterKeys()
         BOAL_ReloadToLoc(chrWaitReloadRef, chrWaitReloadLocator);
     }
     else
+	{
     // boal <--
-	Reload(chrWaitReloadRef, chrWaitReloadLocator, mc.location);
+		ref loc = &Locations[FindLocation(mc.location)];
+		if (chrGetLabelName(loc, chrWaitReloadLocator) == "sea" && !isShipInside(mc.location))
+			LandToSea_CheckAutoSave();
+		else Reload(chrWaitReloadRef, chrWaitReloadLocator, mc.location);
+	}
 	chrWaitReloadLocator = "";
 	chrWaitReloadIsNoLink = false;
+}
+
+void LandToSea_CheckAutoSave()
+{
+	if (GetMaxAutoSaves("LandToSea") != 0)
+	{
+		TEV.AutoSave.Location = pchar.location;
+		TEV.AutoSave.Locator = chrWaitReloadLocator;
+		SetAfterSaveFunction("LandToSea_Continue");
+		PostEvent("Event_NewAutoSave", 1, "s", "LandToSea");
+	}
+	else
+	{
+		Reload(chrWaitReloadRef, chrWaitReloadLocator, pchar.location);
+	}
+}
+
+void LandToSea_Continue()
+{
+	Reload(chrWaitReloadRef, TEV.AutoSave.Locator, TEV.AutoSave.Location);
+	DeleteAttribute(&TEV, "AutoSave");
 }
 
 bool chrIsNowEnableReload()

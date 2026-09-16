@@ -1,48 +1,48 @@
 Cumana_Citizen_1 {
-什么问题？
+有什么问题吗？ 
 }
 Cumana_Citizen_2 {
-有什么需要俺帮忙的吗？
+有什么需要我帮忙的吗？ 
 }
 Cumana_Citizen_3 {
 @<RandPhraseSimple>
 }
 Cumana_Citizen_4_m {
-我改主意了……
+我改主意了…… 
 }
 Cumana_Citizen_4_f {
-我改变主意了……
+我改变主意了…… 
 }
 Cumana_Citizen_5 {
-我现在没什么好说的。
+我现在没什么好说的。 
 }
 Cumana_Citizen_6 {
 @<RandPhraseSimple>
 }
 Cumana_Citizen_7 {
-我在听。
+我在听。 
 }
 Cumana_Citizen_8 {
-“五伤基督号”这艘船来过港口吗？
+“五伤基督号”这艘船来过港口吗？ 
 }
 Cumana_Citizen_9 {
-没错，@<GetAddress_Form>，他们确实来过。遇上风暴，主桅杆都断了，只能折返回来。
+没错， @<GetAddress_Form>， 他们确实来过。 遇上风暴， 主桅杆都断了， 只能折返回来。 
 }
 Cumana_Citizen_10 {
-那我去哪儿能找到船长？
+那我去哪儿能找到船长？ 
 }
 Cumana_Citizen_11 {
-我记得他刚才才去酒馆啊……
+我记得他刚才才去酒馆啊…… 
 }
 Cumana_Citizen_12 {
-谢谢你。
+谢谢你。 
 }
 Cumana_Citizen_13 {
-难道我是在为@<NationNameGenitive>的秘密间谍组织效力吗？
+难道我是在为@<NationNameGenitive>的秘密间谍组织效力吗？ 
 }
 Cumana_Citizen_14 {
-行吧……回头见。
+行吧…… 回头见。 
 }
 Cumana_Citizen_15 {
-那我再问一个问题。
+那我再问一个问题。 
 }

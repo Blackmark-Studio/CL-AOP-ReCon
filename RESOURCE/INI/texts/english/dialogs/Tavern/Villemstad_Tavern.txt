@@ -463,3 +463,18 @@ Got it. I'm on my way. Thanks!
 Villemstad_Tavern_137_f {
 Got it. I’m on my way. Thank you!
 }
+Villemstad_Tavern_138 {
+There are Spaniards among your guests. Do you know where they came from, or what ship brought them here?
+}
+Villemstad_Tavern_139 {
+I have no time to gossip with every guest right now. Spaniards, Portuguese... only the sea devil himself has yet to walk through my door today.
+}
+Villemstad_Tavern_140 {
+So business is good?
+}
+Villemstad_Tavern_141 {
+Can’t complain. Nearly every evening the governor holds receptions at the residence to celebrate his daughters coming of age. One day an envoy arrives, the next day someone else, and they all come by ship. Sailors pack the place so tightly I can barely keep the trays moving. You’d do better to ask at the port office; every captain has to report there. Ah! But why am I telling you that?
+}
+Villemstad_Tavern_142 {
+Yes, I think I’ll do just that.
+}

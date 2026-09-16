@@ -81,6 +81,24 @@ void Fort_Login(int iIslandIndex)
 				Trace("Island.id = " + rIsland.id + ", and reload." + GetAttributeName(arLocator) + ", doesn't have fort.model value.");
 				continue;
 			}
+			// > Валидация колонии/командира/нации до создания форта
+			int iFortCharacter = Fort_FindCharacter(rIsland.id, "reload", arLocator.name);
+			int iColony = FindColony(arLocator.colonyname);
+			if (iColony < 0)
+			{
+				trace("we have problem with indetify fort colony");
+				continue;
+			}
+			if (iFortCharacter < 0)
+			{
+				Trace("FortLogin: Can't find character for fort: '" + arLocator.name + "', on island with id: '" + rIsland.id + "'");
+				continue;
+			}
+			if (colonies[iColony].nation != characters[iFortCharacter].nation)
+			{
+				trace("Colony " + colonies[iColony].id + " have wrong nation field.");
+				continue;
+			}
 			CreateEntity(&Forts[iNumForts], "MODELR");
 			string sFortModel = rIsland.filespath.models + "\" + arLocator.fort.model;
 			
@@ -95,26 +113,7 @@ void Fort_Login(int iIslandIndex)
 			SendMessage(&SeaLighter, "ssi", "AddModel", arLocator.fort.model, &Forts[iNumForts]);
 			iNumForts++;
 
-			int iFortCharacter = Fort_FindCharacter(rIsland.id, "reload", arLocator.name);
-			string sColonyName = arLocator.colonyname;
-			int iColony = FindColony(sColonyName);
-
-			if(iColony < 0)
-			{
-				trace("we have problem with indetify fort colony");
-				continue;
-			}
-			if (iFortCharacter < 0)
-			{
-				Trace("FortLogin: Can't find character for fort: '" + arLocator.name + "', on island with id: '" + rIsland.id + "'");
-				continue;
-			}
 			Forts[iNumForts - 1].fortcmdridx = iFortCharacter;
-			if(colonies[iColony].nation != characters[iFortCharacter].nation)
-			{
-				trace("Colony " + colonies[iColony].id + " have wrong nation field.");
-				continue;
-			}
 			if (isEntity(&AIFort) == 0)
 			{
 				CreateEntity(&AIFort, "AIFort");
@@ -125,11 +124,9 @@ void Fort_Login(int iIslandIndex)
 			// Add fort to AIFort
 			ref rCharacter = GetCharacter(iFortCharacter);
 			int iNation = sti(rCharacter.nation);
-			/*int iRelation = GetNationRelation2MainCharacter(iNation);
-			SetCharacterRelationBoth(nMainCharacterIndex, iFortCharacter, iRelation); */
 
             // boal 22.04.05 сброс всех отношений -->
-			if (sti(rCharacter.nation) != PIRATE)
+			if (iNation != PIRATE)
 			{
                 DelCharacterRelation(iFortCharacter);
             }
@@ -245,7 +242,7 @@ void Fort_Login(int iIslandIndex)
 			// create fort blot
 			CreateEntity(&FortsBlots[iNumForts - 1], "blots");
 			SendMessage(&FortsBlots[iNumForts - 1], "lia", MSG_BLOTS_SETMODEL, &Forts[iNumForts - 1], rCharacter);
-			LayerAddObject(SEA_EXECUTE, &Forts[iNumForts], 10001);
+			LayerAddObject(SEA_EXECUTE, &Forts[iNumForts - 1], 10001);
 			//LayerAddObject(SEA_REALIZE, &Forts[iNumForts], 10001);
 			
 			SendMessage(&AIFort, "laaaii", AI_MESSAGE_ADD_FORT, rIsland, arLocator, rCharacter, &Forts[iNumForts-1], &FortsBlots[iNumForts-1]);
@@ -280,6 +277,7 @@ int Fort_GetCannonsQuantity(ref rFortCharacter)
 	if (!CheckAttribute(rFortCharacter, "Fort.Cannons.Quantity")) return 0;
 	int iMaxCannonsQuantity = sti(rFortCharacter.Fort.Cannons.Quantity);
 	int ResultCannons = sti(iMaxCannonsQuantity) - (iNumDamagedCannonsQuantity);
+	Restrictor(&ResultCannons, 0, iMaxCannonsQuantity);
 	return ResultCannons;
 }
 
@@ -353,17 +351,6 @@ float Fort_CannonDamage()
 				SetNationRelation2MainCharacter(sti(rFortCharacter.Nation), RELATION_ENEMY);
 				UpdateRelations();
 				
-				/*int iIslandGroupIndex = Group_FindGroup("IslandGroup");
-				if (iIslandGroupIndex >= 0)
-				{
-					int iCommander = Group_GetGroupCommander("IslandGroup");
-					trace ("IslandGroup Commander is  character " + iCommander);
-					if (iCommander >0)
-					{
-						SetCharacterRelationBoth(iCommander,nMainCharacterIndex,RELATION_ENEMY);
-						UpdateRelations();
-					}
-				}   */ // TODO
 			}
 
 			rFortCharacter.Fort.PlayerDamage = fCurPlayerDamage;
@@ -371,7 +358,8 @@ float Fort_CannonDamage()
 	}
 	bool bImmortal = LAi_IsImmortal(rFortCharacter);
 	// boal 13.04.05 фикс пальбы по своему форту -->
-	if (iBallCharacterIndex == GetMainCharacterIndex() && sti(Colonies[FindColony(rFortCharacter.City)].HeroOwn) == true)
+	int iFortColony = FindColony(rFortCharacter.City);
+	if (iBallCharacterIndex == GetMainCharacterIndex() && iFortColony >= 0 && sti(Colonies[iFortColony].HeroOwn) == true)
 	{
 	    bImmortal = true;
 	    iExp = 200;
@@ -396,21 +384,6 @@ float Fort_CannonDamage()
 			
 			CreateParticleSystem("SmallSmoke", x, y, z, -1.57, 0.0, 0.0, 0);
 
-			/*switch (rand(2))
-			{
-				case 0:
-					CreateParticleSystem("ShipFire", x, y, z, -1.57, 0.0, 0.0, 0);
-					//CreateParticleSystem("fort_smoke", x, y, z, -1.57, 0.0, 0.0, 0);
-				break;
-				case 1:
-					CreateParticleSystem("ShipFire1", x, y, z, -1.57, 0.0, 0.0, 0);
-					//CreateParticleSystem("fort_gray_smoke", x, y, z, -1.57, 0.0, 0.0, 0);
-				break;
-				case 1:
-					CreateParticleSystem("ShipFire2", x, y, z, -1.57, 0.0, 0.0, 0);
-					//CreateParticleSystem("fort_gray_smoke", x, y, z, -1.57, 0.0, 0.0, 0);
-				break;
-			}*/
 		}
 		else
 		{
@@ -492,23 +465,8 @@ void Fort_SetAbordageMode(ref rKillerCharacter, ref rFortCharacter)
 
 		// if main character group killed fort
 		if (IsCompanion(rKillerCharacter))
-			KZ|Random("Action\Battle\Victory");
+			KZ|MusicVictory();
 	}
-}
-// нигде не используется
-void Fort_SetCharacter(ref rCharacter, string sIslandID, string sLocationGroup, string sLocationLocator)
-{
-	int iCharacterIndex = Fort_FindCharacter(sIslandID, sLocationGroup, sLocationLocator);
-	if (iCharacterIndex != -1)
-	{
-		ChangeCharacterAddress(&Characters[iCharacterIndex], "None", "");
-	}
-
-	ChangeCharacterAddressGroup(rCharacter, sIslandID, sLocationGroup, sLocationLocator);
-
-	rCharacter.Ship.Type = Characters[iCharacterIndex].ship.type;
-
-	Fort_CheckAttributes(rCharacter);
 }
 
 void Fort_CheckAttributes(ref rCharacter)
@@ -532,9 +490,6 @@ void Fort_CheckAttributes(ref rCharacter)
 		rCharacter.Fort.Cannons.Type.3 = -1;//CANNON_TYPE_CANNON_LBS48;
 	}
 
-	/*rCharacter.Fort.Cannons.Type.1 = -1;
-	rCharacter.Fort.Cannons.Type.2 = -1;
-	rCharacter.Fort.Cannons.Type.3 = CANNON_TYPE_MORTAR; */
 	rCharacter.Ship.Cannons.Charge.Type = GOOD_BOMBS;  // всегда бомбы   boal
 }
 

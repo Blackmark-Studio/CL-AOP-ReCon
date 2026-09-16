@@ -1,0 +1,42 @@
+Bucaneer_woman_1 {
+Ah, capitaine ! Venez donc avec nous !
+}
+Bucaneer_woman_2 {
+Avec plaisir.
+}
+Bucaneer_woman_3 {
+Capitaine ! Je suis heureuse de vous voir en bonne santé. Que la Sainte Vierge protège votre navire des récifs et des patrouilles espagnoles. Vous êtes venu voir comment nous nous installons ?
+}
+Bucaneer_woman_4 {
+Exactement. Je vois que vous vous habituez peu à peu à l'air libre de la Tortue. Que pensez-vous de la vie d'ici ?
+}
+Bucaneer_woman_5 {
+Vous les entendez chanter, capitaine ? Je regarde ces feux, cette viande qui rôtit, je bois ce vin qui brûle la gorge, et je n'arrive toujours pas à croire que nous ne sommes plus dans cette mine maudite. La Tortue est bruyante, rude, ces chasseurs braillent leurs chansons à travers toute l'île, mais pour moi, c'est désormais le plus beau son du monde. Après le silence des souterrains de Vargas... toute cette agitation me rend à la vie.
+}
+Bucaneer_woman_6 {
+Quand nous étions assises dans l'obscurité à attendre notre sort, je ne demandais au Seigneur qu'une mort rapide. Et maintenant, regardez autour de vous ! Ces hommes de monsieur le Basque... ils ont peut-être l'air de sauvages, le visage couvert de suie et leurs danses endiablées, mais ils ont le cœur d'or. La fête d'aujourd'hui, ce n'est pas seulement du rhum et de la joie : c'est la célébration de notre liberté. Nous n'oublierons jamais ce que vous avez fait pour nous.
+}
+Bucaneer_woman_7 {
+Capitaine ! Buvez avec nous ! Je n'accepte aucun refus. Vous savez, autrefois, cette île me faisait peur. La Tortue me semblait un foyer de péché et un refuge de gibiers de potence. Mais après avoir échappé aux griffes de Vargas... j'ai compris que les vrais monstres portent des justaucorps coûteux et tissent des intrigues, tandis qu'ici, parmi les boucaniers, on peut trouver la protection la plus sincère.
+}
+Bucaneer_woman_8 {
+Buvez, amusez-vous et oubliez Vargas. Cette journée est à vous.
+}
+Bucaneer_woman_9 {
+La Tortue sait faire la fête. Profitez de votre liberté, madame.
+}
+Bucaneer_woman_10 {
+Ah, capitaine. Encore ces maudits mousquets à nettoyer. Mon homme est revenu hier de la chasse aux taureaux sauvages avec une montagne de viande à boucaner. L'odeur du boucan a imprégné toutes mes robes ; impossible de s'en débarrasser. Mais nous ne nous plaignons pas : tant que les fumoirs sont pleins, personne ne meurt de faim à la Tortue.
+}
+Bucaneer_woman_11 {
+La mer est mauvaise aujourd'hui. Chaque fois que les hommes partent en course vers les côtes espagnoles, je ne tiens plus en place. On dit que les patrouilles sont devenues féroces ces derniers temps. Je prie la Sainte Vierge pour que notre navire franchisse tous les récifs sans encombre et revienne au port chargé de butin.
+}
+Bucaneer_woman_12 {
+La vie d'ici n'est pas faite pour les délicates, c'est certain. Hier je raccommodais de la toile à voile ; aujourd'hui, je passe la journée près du chaudron à laver la suie de poudre des chemises. Mais au moins, ici, nous sommes libres. Pas de surveillants, pas d'impôts à la Couronne. Tant que nous aurons de la poudre et des murs solides, la Tortue restera une arête en travers de la gorge de tout l'Empire espagnol.
+}
+Bucaneer_woman_13 {
+Courage. La vie à la Tortue a toujours été rude.
+}
+Bucaneer_woman_14 {
+Ne vous inquiétez pas, vos hommes connaissent leur métier.
+}

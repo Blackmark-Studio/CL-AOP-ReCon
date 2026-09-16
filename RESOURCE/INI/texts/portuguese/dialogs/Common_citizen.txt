@@ -1018,3 +1018,58 @@ Você cumpriu sua parte do acordo, agora vou cumprir a minha. Aqui está o seu d
 Common_citizen_292 {
 De nada, @<GetAddress_FormToNPC>! Tudo de bom.
 }
+
+Common_citizen_293 {
+Hoje a cidade inteira só fala de uma coisa – a tentativa fracassada de tomar nossa colônia.
+}
+
+Common_citizen_294 {
+Mas pense só na audácia deles: decidiram atacar as fortificações da nossa cidade! O que esperavam conseguir? Acho que essa aventura já estava condenada ao fracasso no instante em que nasceu na cabeça de quem a planejou.
+}
+
+Common_citizen_295 {
+Confesso que, quando os tiros começaram, fui tomado pelo pânico.
+}
+
+Common_citizen_296 {
+@<TimeGreeting>, @<pchar.name>. Fico muito feliz em vê-la.
+}
+
+Common_citizen_297 {
+@<TimeGreeting>, @<pchar.name>. Fico muito feliz em vê-la.
+}
+
+Common_citizen_298 {
+@<TimeGreeting>, @<npchar.name>. Preciso ir.
+}
+
+Common_citizen_299_m {
+@<TimeGreeting>, @<pchar>! Fico muito feliz em vê-lo. Hoje está um dia perfeito para um passeio!
+}
+Common_citizen_299_f {
+@<TimeGreeting>, @<pchar>! Fico muito feliz em vê-la. Hoje está um dia perfeito para um passeio!
+}
+Common_citizen_300 {
+Olá, @<npchar>! Também fico feliz em vê-lo.
+}
+Common_citizen_301 {
+Desculpe, mas estou com pressa.
+}
+Common_citizen_302 {
+Ah, Becky, Manuel! Que bom encontrar vocês. Sabem, hoje finalmente vamos zarpar.
+}
+Common_citizen_303 {
+Já terminaram todos os preparativos?
+}
+Common_citizen_304 {
+Nossos rapazes se levantaram às quatro da manhã para arrumar os baús, e Lucia juntou um enorme molho de flores para enfeitar a cabine.
+}
+Common_citizen_305 {
+Diga “buquê”; soa mais distinto.
+}
+Common_citizen_306 {
+Um buquê, e dos grandes, quase uma vassoura... Mas aquele ali não é Miguel? Preciso trocar duas palavras com ele antes de partir. Humildemente me despeço.
+}
+Common_citizen_307 {
+Boa viagem.
+}

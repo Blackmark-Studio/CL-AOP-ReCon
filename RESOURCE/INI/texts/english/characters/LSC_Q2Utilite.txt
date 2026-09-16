@@ -1,6 +1,30 @@
 LSC_Q2Utilite_1 {
 Captain Sharp was here, I saw him. But he's not in town now, and I don't know where he went.
 }
+LSC_Q2Utilite_2 {
+Captain Sharp has visited our town. I don't know where he is now, but he's definitely not here.
+}
+LSC_Q2Utilite_3 {
+Captain Bartholomew Sharp left town just a few days ago...
+}
+LSC_Q2Utilite_4 {
+Captain Bartholomew Sharp was in town and, as always, managed to 'make his mark'... But he's not here now. Rumor has it he left for @<XI_ConvertString>.
+}
+LSC_Q2Utilite_5 {
+You know, Captain Sharp was in town not long ago. A cheerful pirate, that Bartholomew... Still, it's probably for the best that he left our town. I believe he went to @<XI_ConvertString>.
+}
+LSC_Q2Utilite_6 {
+You know, Captain Sharp recently honored us with his presence. But, much to our disappointment, there was no new Caribbean tale 'courtesy of Sharp' this time. A pity... He's not in town now. They say he left for @<XI_ConvertString>. Maybe they'll have better luck...
+}
+LSC_Q2Utilite_7 {
+You know, Captain Sharp has just sailed out of town on his brig. If you'd arrived half an hour earlier, you'd have seen him right in the harbor.
+}
+LSC_Q2Utilite_8 {
+Captain Sharp... Yes, he's quite a captain. You know, he has just left our town. If you hurry, you may still catch him in the nearby waters.
+}
+LSC_Q2Utilite_9 {
+Bartholomew Sharp sailed out of our harbor barely an hour ago.
+}
 LSC_Q2Utilite_10 {
 A couple of minutes ago, Captain Sharp bumped into me face to face. He's walking around here on the streets—strange that he's not in a brothel...
 }
@@ -31,8 +55,6 @@ on the fluyt 'Ceres Smiti'
 LSC_Q2Utilite_19 {
 on the galleon 'Esmeralda', where the store is
 }
-LSC_Q2Utilite_2 {
-Captain Sharp visited our town. I don't know where he is now, but he's definitely not here.
 }
 LSC_Q2Utilite_20 {
 on the caravel 'Fleuron', where the tavern is
@@ -64,9 +86,6 @@ on the bark 'San Gabriel', in the stern section
 LSC_Q2Utilite_29 {
 on the brig 'Santa Florentina'
 }
-LSC_Q2Utilite_3 {
-Captain Bartholomew Sharp left town just a few days ago...
-}
 LSC_Q2Utilite_30 {
 on the galleon 'Eva'
 }
@@ -96,9 +115,6 @@ in the fluyt 'Fernando Diffindur'
 }
 LSC_Q2Utilite_39 {
 in the caravel 'Fleuron', in the tavern
-}
-LSC_Q2Utilite_4 {
-Captain Bartholomew Sharp was in our town and, as always, managed to 'leave his mark'... But he's not here now. Rumors say he's gone to @<XI_ConvertString>.
 }
 LSC_Q2Utilite_40 {
 in the pinnace 'Fury'
@@ -130,9 +146,6 @@ in the galleon 'Velasco'
 LSC_Q2Utilite_49 {
 Captain @<GetStrSmallRegister> '@<sld>' is in town right now. I think his name is @<GetFullName>. He should be with the port authority now.
 }
-LSC_Q2Utilite_5 {
-You know, Captain Sharp was in town recently. A merry pirate, that Bartholomew... Still, it's a good thing he left our city. Seems he's gone to @<XI_ConvertString>.
-}
 LSC_Q2Utilite_50 {
 You know, you can find Captain @<GetStrSmallRegister> '@<sld>' at the port authority right now.
 }
@@ -162,9 +175,6 @@ You know, you can find Captain @<GetStrSmallRegister> '@<sld>' in town right now
 }
 LSC_Q2Utilite_59 {
 If you want to speak with Captain @<GetStrSmallRegister> '@<sld>', look for him on the streets. I think his name is @<GetFullName>...
-}
-LSC_Q2Utilite_6 {
-You know, we were recently honored by Captain Sharp's presence. But to our great disappointment, there was no new Caribbean joke 'from Sharp'. Too bad... And now he's not in our city. They say he went to @<XI_ConvertString>. Maybe they'll have better luck...
 }
 LSC_Q2Utilite_60 {
 @<LinkRandPhrase>
@@ -196,9 +206,6 @@ LSC_Q2Utilite_68 {
 LSC_Q2Utilite_69 {
 A captain once told me how he @<XI_ConvertString> came across an old, abandoned frigate. However, when he tried to inspect it, the frigate turned out not to be abandoned at all: skeletons were wandering its deck! An amusing story, isn't it? As they say, drinking at sea does harm to the mind.
 }
-LSC_Q2Utilite_7 {
-You know, Captain Sharp just left town on his brig. If you had arrived half an hour ago, you would have seen him right in the port.
-}
 LSC_Q2Utilite_70 {
 There's nothing that doesn't happen in this world! For example, yesterday my drinking buddy told me an interesting story. He was fishing at @<XI_ConvertString> when he came across an old frigate, apparently abandoned. However, as he approached the ship, he heard strange sounds, as if someone was walking on the deck. Suddenly, revived sailors came out of the dark hold and began to dance to the sound of ghostly music. Well, he got out of there... He's been drinking for a week now...
 }
@@ -229,9 +236,6 @@ tavern keeper
 LSC_Q2Utilite_79 {
 tavern keeper
 }
-LSC_Q2Utilite_8 {
-Captain Sharp... Well now, he's quite a captain. You know, he just left our town. If you hurry, you might catch him in the nearby waters.
-}
 LSC_Q2Utilite_80 {
 tavern owner
 }
@@ -249,7 +253,4 @@ mechanic
 }
 LSC_Q2Utilite_85 {
 mechanic
-}
-LSC_Q2Utilite_9 {
-Bartholomew Sharp literally left our port for the sea about an hour ago.
 }

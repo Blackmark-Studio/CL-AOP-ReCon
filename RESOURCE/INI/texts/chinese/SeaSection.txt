@@ -1,15 +1,15 @@
-Ship_critical {暴击！}
-Ship_sunk {%1“%2”已被击沉。获得+%3经验。}
-Ship_sunk_other {%1“%2”已被击沉。}
+Ship_critical {暴击！ }
+Ship_sunk {%1“%2”已被击沉。 获得+%3经验。 }
+Ship_sunk_other {%1“%2”已被击沉。 }
 Ship_got_good {已装载%1担%2}
 Ship_cant_got_good {没有%1的空间}
-Fort_destroy {%1要塞已被摧毁。获得+%2经验。}
-Fort_destroy_notif {要塞炮台已被压制！}
-Fort_cannon {要塞的大炮被摧毁了！}
+Fort_destroy {%1要塞已被摧毁。 获得+%2经验。 }
+Fort_destroy_notif {要塞炮台已被压制！ }
+Fort_cannon {要塞的火炮被摧毁了！ }
 seg_Balls {实心弹}
-seg_Grapes {霰弹}
+seg_Grapes {葡萄弹}
 seg_Knippels {链弹}
-seg_Bombs {爆弹}
+seg_Bombs {炸弹}
 seg_Sailcloth {帆布}
 seg_Planks {木板}
 seg_Slaves {奴隶}
@@ -25,35 +25,35 @@ seg_Coffee {咖啡}
 seg_Mahogany {红木}
 seg_Cinnamon {香草}
 seg_Copra {椰干}
-seg_Paprika {辣椒}
+seg_Paprika {红辣椒}
 seg_Fruits {水果}
 seg_Ale {艾尔啤酒}
 seg_Silk {丝绸}
 seg_Clothes {衣物}
 seg_Cotton {棉花}
-seg_Sandal {檀香}
+seg_Sandal {白檀木}
 seg_Leather {皮革}
-seg_Oil {油}
+seg_Oil {橄榄油}
 seg_Food {食物}
 seg_Weapon {武器}
 seg_Gold {黄金}
-seg_Silver {银}
+seg_Silver {白银}
 seg_Powder {火药}
 seg_Brick {砖块}
 seg_Medicament {药品}
-seg_Cannon_3 {3磅福尔柯内炮}
-seg_Cannon_6 {6磅炮}
-seg_Cannon_8 {8磅炮}
-seg_Cannon_12 {12磅炮}
+seg_Cannon_3 {3磅隼炮}
+seg_Cannon_6 {6磅加农炮}
+seg_Cannon_8 {8磅加农炮}
+seg_Cannon_12 {12磅加农炮}
 seg_Cannon_16 {16磅加农炮}
 seg_Cannon_20 {20磅加农炮}
 seg_Cannon_24 {24磅加农炮}
 seg_Cannon_32 {32磅加农炮}
-seg_Cannon_36 {36磅炮}
-seg_Cannon_42 {42磅炮}
-seg_Culverine_8 {8磅长炮}
-seg_Culverine_12 {12磅长炮}
-seg_Culverine_16 {16磅长炮}
-seg_Culverine_24 {24磅长炮}
+seg_Cannon_36 {36磅加农炮}
+seg_Cannon_42 {42磅加农炮}
+seg_Culverine_8 {8磅长管炮}
+seg_Culverine_12 {12磅长管炮}
+seg_Culverine_16 {16磅长管炮}
+seg_Culverine_24 {24磅长管炮}
 seg_Culverine_32 {32磅长管炮}
-sea_exp_add {+%1 经验获得}
+sea_exp_add {+%1经验获得}

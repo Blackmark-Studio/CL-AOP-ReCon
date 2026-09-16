@@ -34,6 +34,8 @@
 #include "locations\init\Tenotchitlan.c"
 #include "locations\init\LostShipsCity.c"
 #include "locations\init\Providence.c"
+#include "locations\init\Aruba.c"
+#include "locations\init\Gibraltar.c"
 #include "locations\init\OldWorld.c"
 
 void InitLocations()
@@ -76,8 +78,10 @@ void InitLocations()
 		loc.locators_radius.redteleport = 0.2;
 		loc.locators_radius.greenteleport = 0.2;
 		loc.locators_radius.magsteleport = 0.2;
+		loc.locators_radius.effect = 0.3;
 		loc.locators_radius.EncDetector = 8.0;
 		loc.locators_radius.teleport = 1.0;
+		loc.locators_radius.event = 1.0;
 		loc.locators_radius.quest = 1.0;
 
 		if (MOD_BETTATESTMODE == "On")
@@ -143,10 +147,10 @@ void InitLocations()
 	Locations[0].IslandsList.Curacao.end = n;
 	Trace("Curacao locations " + n);
 
-	Locations[0].IslandsList.LostShipsIsland.begin = n;  //ГПК
+	Locations[0].IslandsList.LostShipsCity.begin = n;  //ГПК
 	n = LocationInitLostShipsCity(n);
-	Locations[0].IslandsList.LostShipsIsland.end = n;
-	Trace("LostShipsIsland locations " + n);	
+	Locations[0].IslandsList.LostShipsCity.end = n;
+	Trace("LostShipsCity locations " + n);	
 
 	ReloadProgressUpdate();
 	
@@ -184,8 +188,10 @@ void InitLocations()
 
 	Locations[0].IslandsList.Maracaibo.begin = n;
 	n = LocationInitMaracaibo(n);
-	Locations[0].IslandsList.Maracaibo.end = n;
 	Trace("Maracaibo locations " + n);
+	n = LocationInitGibraltar(n);
+	Trace("Gibraltar locations " + n);
+	Locations[0].IslandsList.Maracaibo.end = n;
 
 	Locations[0].IslandsList.Tenotchitlan.begin = n;
 	n = LocationInitTenotchitlan(n);
@@ -298,6 +304,11 @@ void InitLocations()
 	n = LocationInitProvidence(n);
 	Locations[0].IslandsList.Providence.end = n;
 	Trace("Providence locations " + n);
+
+	Locations[0].IslandsList.Aruba.begin = n;
+	n = LocationInitAruba(n);
+	Locations[0].IslandsList.Aruba.end = n;
+	Trace("Aruba locations " + n);
 	
 	// Старый свет -->
 	Locations[0].IslandsList.OldWorld.begin = n;

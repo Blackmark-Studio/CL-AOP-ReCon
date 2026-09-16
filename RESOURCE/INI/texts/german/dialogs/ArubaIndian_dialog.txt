@@ -1,0 +1,111 @@
+ArubaIndian_dialog_1 {
+Es gibt nichts zu bereden!
+}
+ArubaIndian_dialog_2_m {
+Bleichgesicht will reden?
+}
+ArubaIndian_dialog_2_f {
+Weiße Squaw will reden?
+}
+ArubaIndian_dialog_3_m {
+Du schon wieder, Bleichgesicht.
+}
+ArubaIndian_dialog_3_f {
+Du schon wieder, weiße Squaw.
+}
+ArubaIndian_dialog_4_m {
+Bleichgesicht redet gern. Er ist wie eine Squaw.
+}
+ArubaIndian_dialog_4_f {
+Weiße Squaw redet gern.
+}
+ArubaIndian_dialog_5_m {
+Die Geister haben einen bleichgesichtigen Bruder zu mir geführt.
+}
+ArubaIndian_dialog_5_f {
+Die Geister haben eine bleichgesichtige Schwester zu mir geführt.
+}
+ArubaIndian_dialog_6 {
+Ja.
+}
+ArubaIndian_dialog_7 {
+Ja, ich bin es wieder.
+}
+ArubaIndian_dialog_8 {
+Sehr poetisch.
+}
+ArubaIndian_dialog_9_m {
+Ich freue mich auch, dich zu sehen.
+}
+ArubaIndian_dialog_9_f {
+Ich freue mich auch, dich zu sehen.
+}
+ArubaIndian_dialog_10_m {
+Sprich. Warum bist du gekommen?
+}
+ArubaIndian_dialog_10_f {
+Sprich. Warum bist du gekommen?
+}
+ArubaIndian_dialog_11_m {
+Nichts Besonderes. Ich wollte dir nur zuhören...
+}
+ArubaIndian_dialog_11_f {
+Nichts Besonderes. Ich wollte dir nur zuhören...
+}
+ArubaIndian_dialog_12_m {
+Weißer Mann will reden?
+}
+ArubaIndian_dialog_12_f {
+Weiße Squaw will reden?
+}
+ArubaIndian_dialog_13 {
+Du schon wieder, Yalanaui?
+}
+ArubaIndian_dialog_14_m {
+Bleichgesicht redet gern.
+}
+ArubaIndian_dialog_14_f {
+Bleichgesicht redet gern.
+}
+ArubaIndian_dialog_15_m {
+Die Geister haben einen bleichgesichtigen Bruder zu mir geführt...
+}
+ArubaIndian_dialog_15_f {
+Die Geister haben eine weiße Squaw zu mir geführt...
+}
+ArubaIndian_dialog_16_m {
+@<npchar.name> hört dir zu, Sohn des Meeres.
+}
+ArubaIndian_dialog_16_f {
+@<npchar.name> hört dir zu, Tochter des Meeres.
+}
+ArubaIndian_dialog_17_m {
+Was willst du von @<npchar.name>, Bleichgesicht?
+}
+ArubaIndian_dialog_17_f {
+Was willst du von @<npchar.name>, Bleichgesicht?
+}
+ArubaIndian_dialog_18_m {
+Meine Ohren sind offen für deine Worte, Fremder.
+}
+ArubaIndian_dialog_18_f {
+Meine Ohren sind offen für deine Worte, Fremde.
+}
+ArubaIndian_dialog_19_m {
+Nichts Besonderes. Ich wollte dir nur zuhören...
+}
+ArubaIndian_dialog_19_f {
+Nichts Besonderes. Ich wollte dir nur zuhören...
+}
+ArubaIndian_dialog_20 {
+Steck die Waffe weg, Yalanaui, bevor wir dich dazu zwingen!
+}
+ArubaIndian_dialog_21 {
+Gut.
+}
+ArubaIndian_dialog_22 {
+In Ordnung.
+}
+ArubaIndian_dialog_23 {
+Keine Sorge, ich stecke sie schon weg...
+}

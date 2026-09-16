@@ -1,0 +1,80 @@
+SantoDomingo_dialog_1 {
+Oficial, todo está tranquilo en la puerta. Tras el incidente con Jaco, los guardias se mantienen alerta.
+}
+SantoDomingo_dialog_2 {
+Así es como debería ser.
+}
+SantoDomingo_dialog_3 {
+Señor, si está de viaje, lo mejor es ir directamente al comandante. Ordenó que se informara sobre todos los detenidos.
+}
+SantoDomingo_dialog_4 {
+Conozco el orden.
+}
+SantoDomingo_dialog_5 {
+Oficial, la patrulla en la puerta está en su lugar. No dejaremos entrar a ningún sospechoso y solo admitiremos a fugitivos a través del comandante.
+}
+SantoDomingo_dialog_6 {
+Continúa con tu servicio.
+}
+SantoDomingo_dialog_7 {
+Señor, hoy hay disturbios en la ciudad. El comandante está esperando noticias de ese sinvergüenza que intentó llegar hasta Duval.
+}
+SantoDomingo_dialog_8 {
+Los recibirá pronto.
+}
+SantoDomingo_dialog_9 {
+Oficial superior, el guardia ha sido advertido. Si el prisionero es peligroso, llévelo directamente ante el comandante, sin detenerse.
+}
+SantoDomingo_dialog_10 {
+Eso es lo que haremos.
+}
+SantoDomingo_dialog_11 {
+Oye, soldado, no te entretengas. Si vas a capturar a un prisionero, llévalo ante el comandante.
+}
+SantoDomingo_dialog_12 {
+Ya estamos en camino.
+}
+SantoDomingo_dialog_13 {
+¿Fuera de la carretera? Pareces como si la patrulla hubiera pasado por el mismísimo infierno.
+}
+SantoDomingo_dialog_14 {
+El camino no fue fácil.
+}
+SantoDomingo_dialog_15 {
+Si se trata del mismo Jaco, abrázalo fuerte. El comandante lleva mucho tiempo queriendo hablar con él.
+}
+SantoDomingo_dialog_16 {
+No va a desaparecer.
+}
+SantoDomingo_dialog_17 {
+No hables con el prisionero. Llévalo adentro y entrégalo como te ordenaron.
+}
+SantoDomingo_dialog_18 {
+Comprendido.
+}
+SantoDomingo_dialog_19 {
+¿Patrulla en la carretera? Entonces date prisa. El comandante está de mal humor hoy, mejor no hacerlo esperar.
+}
+SantoDomingo_dialog_20 {
+Que se prepare para recibir el botín.
+}
+
+LeBasque_SantoDomingoJailOff_1 {
+¿Marceau? ¿Qué demonios haces aquí? Sal de aquí inmediatamente o tendré que arrestarte.
+}
+
+LeBasque_SantoDomingoJailOff_2 {
+Han pasado muchos años. Nadie creerá tu palabra.
+}
+
+LeBasque_SantoDomingoJailOff_3 {
+Siempre has sido un cabrón prudente, Marceau...
+}
+
+LeBasque_SantoDomingoJailOff_4 {
+¡Maldita sea... Sargento! ¡Traiga a Duval!
+}
+
+LeBasque_SantoDomingoJailOff_5 {
+Llévenselo y salgan de mi ciudad inmediatamente.
+}

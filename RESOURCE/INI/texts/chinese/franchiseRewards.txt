@@ -1,0 +1,27 @@
+condition_subscribeItem
+{
+一本写满简短但重要建议的小笔记本。某天你碰巧在自己的物品中发现了它，从那以后便一直带在身边。
+}
+condition_legendGuide
+{
+如果你关注了以下页面，该物品就会出现在游戏中：
+Caribbean Legend
+}
+condition_indian_officer
+{
+如果你拥有以下游戏，或者在早期测试中获得了“比铁更坚”成就，这个任务军官将出现在阿斯科尔德的任务线（“寻找木乃伊粉”开始）中：
+Caribbean Legend
+}
+indian_officer_desc
+{
+马斯科吉印第安人蒂钦吉图和他祖传的火枪将在这艰难的海盗生涯中协助你。
+~
+这位无与伦比的神射手已经准备好发下比铁更坚的效忠誓言，只要你能将他从那个他纯属偶然被关进去的牢房里解救出来。
+}
+noRewardYetMessage
+{
+该奖励尚不可用，
+敬请期待更新！
+}
+steamButtonAlreadyGot {已领取}
+steamButtonGet {领取}

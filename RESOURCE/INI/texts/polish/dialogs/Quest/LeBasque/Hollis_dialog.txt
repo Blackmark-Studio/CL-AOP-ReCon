@@ -1,0 +1,96 @@
+Hollis_dialog_1 {
+Kapitanie @<pchar>. Moi sierżanci zameldowali, że prosił pan o pilne spotkanie w sprawie najwyższej wagi dla bezpieczeństwa Port Royal. Słucham.
+}
+Hollis_dialog_2 {
+Chodzi o Hiszpanów, komendancie Hollis. Proszę spojrzeć na te papiery. To przechwycone rozkazy pewnego wysoko postawionego dona. Są w nich dokładne współrzędne obozu Sebastiána Rojasa. Pięćdziesięciu najemników właśnie okopuje się w pańskiej dżungli.
+}
+Hollis_dialog_3 {
+Niezwykłe... Dwie mile od przełęczy. Świetna robota, kapitanie! Moi zwiadowcy zdzierali nogi, szukając tego gniazda. Ale przyniósł pan te współrzędne mnie, a nie generalnemu gubernatorowi. Zakładam, że ma pan konkretną propozycję?
+}
+Hollis_dialog_4 {
+Właśnie tak. Mam z Rojasem własne rachunki i potrzebuję jego głowy. Ale szturmować ufortyfikowany obóz jedną kompanią abordażową to posłać własnych ludzi do grobu. Potrzebuję wsparcia pańskich muszkieterów. Uderzymy razem.
+}
+Hollis_dialog_5 {
+Wspólna operacja wojskowa. Brzmi... nadzwyczaj rozsądnie. Moi strzelcy zapewnią osłonę ogniową i zwiążą Hiszpanów walką, a pańscy, ekhm... żołnierze ruszą do szturmu. Dla korony najważniejsze jest teraz oczyścić wyspę z tej zarazy.
+}
+Hollis_dialog_6_m {
+Cieszę się, że się rozumiemy. Jeśli panu odpowiada — wyruszamy jutro wieczorem.
+}
+Hollis_dialog_6_f {
+Cieszę się, że się rozumiemy. Jeśli panu odpowiada — wyruszamy jutro wieczorem.
+}
+Hollis_dialog_7 {
+Jeden warunek, kapitanie. Cała zdobyta amunicja, skarbiec i sztandary przypadają garnizonowi, a osobiste trofea dzielimy uczciwie. I oczekuję od pańskiej załogi żelaznej dyscypliny. Jesteśmy regularnym wojskiem, a nie bandą z żelastwem.
+}
+Hollis_dialog_8 {
+Moi ludzie znają swój fach, komendancie Hollis. Żadnego rabunku ponad umowę. Gramy do jednej bramki.
+}
+Hollis_dialog_9 {
+Zatem umowa stoi. Moi ludzie będą na pana czekać przy podejściach do współrzędnych podanych w papierach. Proszę przygotować oddział.
+}
+Hollis_dialog_10 {
+Do zobaczenia na polu bitwy.
+}
+Hollis_dialog_11_m {
+Moi sierżanci zameldowali, że jakiś kapitan dobija się do mnie i obiecuje podać mi hiszpański obóz na tacy. Ma pan minutę, monsieur, żeby udowodnić, że nie marnuje pan mojego czasu. Gdzie oni są?
+}
+Hollis_dialog_11_f {
+Moi sierżanci zameldowali, że jakiś kapitan dobija się do mnie i obiecuje podać mi hiszpański obóz na tacy. Ma pani minutę, madame, żeby udowodnić, że nie marnuje pani mojego czasu. Gdzie oni są?
+}
+Hollis_dialog_12 {
+Proszę spojrzeć na te papiery, komendancie Hollis. To przechwycone instrukcje ze szkatułki pewnego wysoko postawionego Hiszpana. Są w nich dokładne współrzędne obozu dona Sebastiána Rojasa. Pięćdziesięciu najemników właśnie okopuje się w pańskiej dżungli.
+}
+Hollis_dialog_13 {
+Do diabła... Dwie mile od przełęczy. Jak oni w ogóle zaciągnęli tam sprzęt?! Pięćdziesiąt bagnetów... I nie przyszedł pan do mnie z miłości do angielskiej korony, kapitanie, jak sądzę. Po co panu garnizon?
+}
+Hollis_dialog_14 {
+Bo nie chcę wyściełać tej dżungli trupami własnych ludzi podczas frontalnego szturmu. Pańskim żołnierzom ten obóz też z pewnością się nie spodoba, zwłaszcza jeśli połączą się z Holendrami z Fort Orange. Potrzebuję głowy Rojasa. Uderzymy razem... Pańskie słynne czerwone mundury zapewnią siłę ognia, moi ludzie ruszą do szturmu.
+}
+Hollis_dialog_15 {
+Hiszpańscy najemnicy. W mojej dżungli. I proponuje mi pan sojusz z wolnym kapitanem, żeby ich wykurzyć... Wie pan co? Do diabła z polityką. Zaraza to zaraza. Dam panu kompanię żołnierzy i moich najlepszych tropicieli jako wsparcie.
+}
+Hollis_dialog_16 {
+Rozsądna decyzja. Wyruszamy jutro wieczorem.
+}
+Hollis_dialog_17 {
+Ale proszę pamiętać... Cała zdobyta amunicja, skarbiec i sztandary przypadają garnizonowi, a osobiste trofea dzielimy uczciwie. I jeśli choć jeden z pańskich zuchów wsadzi rękę do kieszeni króla Anglii, osobiście powieszę go na najbliższej palmie obok Hiszpanów.
+}
+Hollis_dialog_18 {
+Umowa stoi, komendancie Hollis. Dziś obaj jesteśmy po stronie aniołów. Dziwne uczucie, prawda?
+}
+Hollis_dialog_19 {
+Proszę się nie przyzwyczajać, kapitanie. Pojutrze o świcie minie. Moi ludzie będą czekać przy podejściach do współrzędnych z papierów. Proszę się nie spóźnić. Możecie odejść.
+}
+Hollis_dialog_20 {
+Do zobaczenia na polu bitwy.
+}
+Hollis_dialog_21 {
+Ten przeklęty jamajski deszcz... Jeśli nie przestanie w ciągu pół godziny, proch na panewkach zupełnie zawilgotnieje i moi żołnierze będą musieli tłuc Hiszpanów kolbami. Gdzie jest pański człowiek, kapitanie? Moi zwiadowcy donoszą, że za palisadą na razie cicho.
+}
+Hollis_dialog_22 {
+Jaco jest już w środku, komendancie Hollis. Cierpliwości. Srebro to czuły punkt każdego najemnika. Dajmy im czas zrozumieć, że don Rojas zamierza zostawić ich z niczym.
+}
+Hollis_dialog_23 {
+Mam nadzieję, że pański człowiek wie, jak im to podać. Od niego zależy powodzenie operacji. Moi ludzie są na pozycjach. Co więcej, udało nam się zabrać z arsenału dwie obsługi moździerzy. Gdy tylko w środku wybuchnie waśń, przykryjemy ich ołowiem i ogniem. Jeśli jednak plan się nie powiedzie...
+}
+Hollis_dialog_24 {
+Nie zawiedzie. Proszę tylko trzymać muszkiety suche i czekać na mój sygnał.
+}
+Hollis_dialog_25 {
+Słyszycie? Chyba się zaczęło!
+}
+Hollis_dialog_26 {
+Jaco rozgrzebał gniazdo szerszeni! Czas, Hollis. Niech wasi chłopcy osłonią nas ogniem. Do ataku!
+}
+Hollis_dialog_27 {
+Kapitanie, proszę przyjąć moje gratulacje. Operację przeprowadzono znakomicie. Pańscy ludzie walczyli jak opętani!
+}
+Hollis_dialog_28 {
+Pańscy ludzie w niczym nie ustępowali moim odwagą i kunsztem, komendancie Hollis. Co zamierza pan zrobić z obozem?
+}
+Hollis_dialog_29 {
+Rozkażę moim ludziom puścić to gniazdo sępów z dymem. Spalimy je do gołej ziemi, żeby nikomu nie przyszło do głowy znów się tu osiedlić.
+}
+Hollis_dialog_30 {
+Dobrze, zatem działajcie. A my musimy was opuścić — sprawy wzywają. Żegnajcie, kapitanie.
+}

@@ -274,6 +274,17 @@ Pirates. Ces hommes naviguent sous aucun pavillon et suivent le Code des Pirates
 ~
 Pour toute patrouille navale, apercevoir un pavillon pirate à l'horizon, c'est comme jeter du lard à un loup affamé. Pour la grande majorité des pirates, il n'y a que deux issues : la potence ou la corde du bourreau.
 }
+Pirate_bonuses_descr
+{
+Trait de personnage supplémentaire — "Agent de contrebande".
+Possibilité d’acheter de la contrebande même dans les magasins.
+~
+Compétences de départ supplémentaires : "Arts de tir de base" et "Auto-réparation".
+~
+Lors du choix de la classe "Corsaire", objets supplémentaires : Fragment de carte au trésor, 2500 piastres.
+~
+Navire de départ — "Sloop".
+}
 Hunter_hint
 {
 L’attitude d’une nation, de ses citoyens et de ses soldats envers vous. Les bonnes actions au service du pays améliorent votre réputation ; les mauvaises peuvent même entraîner la mise à prix de votre tête. Cela signifie une traque constante, sur terre comme en mer.

@@ -70,4 +70,16 @@
 #define ACH_Clan_Lambrini				64 // Пройти кв. 'Клан Ламбрини' DLC Sea Dogs
 #define ACH_Lesopilka					65 // Пройти кв. 'Остепенившийся пират' DLC Sea Dogs
 #define ACH_Ohota_na_vedmu				66 // Пройти кв. 'Прокажённая' DLC Sea Dogs
+#define ACH_EPL_Prologue				67 // Завершить стартовую линейку Эммануэль Пардаль
+#define ACH_EPL_DressmakerNobleLady		68 // Завершить кв. Портниха знатной дамы
+#define ACH_EPL_SecretInFort			69 // Найти секрет в линейке Эммануэль Пардаль
+#define ACH_Razbitoe_serdtse			70 // Найти сундук с вещами изменчивого кавалера
 
+#define ACH_MGL_Prologue				71 // Завершить стартовую линейку Мишеля де Граммона
+
+#define ACH_Shadow_of_a_big_deal		72 // Завершить первый квест 'Тень большого дела' DLC Bucaneers
+#define ACH_Old_campfire				73 // Завершить второй квест 'Пепел старого костра' DLC Bucaneers
+#define ACH_Hunting_huntsman			74 // Завершить третий квест 'Охота на ловчих' DLC Bucaneers
+#define ACH_Wind_rose				    75 // Завершить четвертый квест 'Роза ветров' DLC Bucaneers
+#define ACH_Royal_jackpot				76 // Завершить пятый квест 'Королевский куш' DLC Bucaneers
+#define ACH_Keys_lagoon			    	77 // Завершить шестой квест 'Ключи от лагуны' DLC Bucaneers

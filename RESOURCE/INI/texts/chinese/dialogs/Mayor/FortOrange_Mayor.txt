@@ -1,64 +1,64 @@
 FortOrange_Mayor_1 {
-你找俺啥事？有话快问吧。
+你找我什么事？ 有话快问吧。 
 }
 FortOrange_Mayor_2 {
-我听着呢，你想问啥？
+我听着呢， 你想问什么？ 
 }
 FortOrange_Mayor_3 {
 @<RandPhraseSimple>
 }
 FortOrange_Mayor_4 {
-你今天已经是第二次想问问题了……
+你今天已经是第二次想问问题了…… 
 }
 FortOrange_Mayor_5 {
-今天你已经第三次想问问题了……
+今天你已经第三次想问问题了…… 
 }
 FortOrange_Mayor_6 {
-这到底什么时候才是个头啊？！我还得管城市，还有一堆事要忙，你就一直问个不停！
+这到底什么时候才是个头啊？ ！ 我还得管城市， 还有一堆事要忙， 你就一直问个不停！ 
 }
 FortOrange_Mayor_7_m {
-我改主意了……
+我改主意了…… 
 }
 FortOrange_Mayor_7_f {
-我改变主意了……
+我改变主意了…… 
 }
 FortOrange_Mayor_8 {
-现在不是时候，也不是地方……
+现在不是时候， 也不是地方…… 
 }
 FortOrange_Mayor_9 {
 @<RandPhraseSimple>
 }
 FortOrange_Mayor_10 {
-对，没错……不过不是现在，等会儿……
+对， 没错…… 不过不是现在， 等会儿…… 
 }
 FortOrange_Mayor_11 {
-会的，会的……只是晚点……
+会的， 会的…… 只是晚点…… 
 }
 FortOrange_Mayor_12 {
-抱歉，@<GetAddress_FormToNPC>……
+抱歉， @<GetAddress_FormToNPC>…… 
 }
 FortOrange_Mayor_13_m {
-我是奉Peter Stuyvesant的命令来的。你这儿有一批要运往Curaçao的货，我负责购买并送过去。请查阅一下关于特价的文件。
+我是奉彼得.斯特伊弗桑特的命令来的。 你这儿有一批要运往库拉索的货， 我负责购买并送过去。 请查阅一下关于特价的文件。 
 }
 FortOrange_Mayor_13_f {
-我是奉Peter Stuyvesant的命令来的。你这儿有一批准备运往Curaçao的货物，我要负责购买并送过去。请查阅一下关于特价的文件。
+我是奉彼得.斯特伊弗桑特的命令来的。 你这儿有一批准备运往库拉索的货物， 我要负责购买并送过去。 请查阅一下关于特价的文件。 
 }
 FortOrange_Mayor_14 {
-好，那我看看……嗯，手续都没问题。你可以直接去本地商店领取整批货物，我会马上安排交付给你。
-这批货里有咖啡、黑檀木、红木和檀香木。准备发货的总重量是5600普特。你在商店结清款项后就能开始装货了。
+好， 那我看看…… 嗯， 手续都没问题。 你可以直接去本地商店领取整批货物， 我会马上安排交付给你。 
+这批货里有咖啡、 乌木、 红木和白檀木。 准备发货的总重量是5600英担。 你在商店结清款项后就能开始装货了。 
 }
 FortOrange_Mayor_15 {
-好的。
+好的。 
 }
 FortOrange_Mayor_16 {
-太高兴见到你了，真的太高兴了！
+太高兴见到你了， 真的太高兴了！ 
 }
 FortOrange_Mayor_17 {
-我是奉Stuyvesant的命令来的。看来我们赶上了……
+我是奉斯特伊弗桑特的命令来的。 看来我们赶上了…… 
 }
 FortOrange_Mayor_18 {
-该死，你不仅赶上了，还救了我们！Fort Orange真心感谢你！请代我向Peter Stuyvesant致意。
+该死， 你不仅赶上了， 还救了我们！ 奥兰治堡真心感谢你！ 请代我向彼得.斯特伊弗桑特致意。 
 }
 FortOrange_Mayor_19 {
-我一定会转达。祝一切顺利。
+我一定会转达。 祝一切顺利。 
 }

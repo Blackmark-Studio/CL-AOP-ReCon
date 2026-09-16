@@ -25,6 +25,8 @@ void InitPsHeros()
     PsHeroQty = 0; // глобальная переменная
 	for (n=1; n<=heroQty; n++)
 	{
+		if (startHeroType == 1 && n == 6) continue;	// Для Блада не создаём Диего Эспинозу и Джона Истерлинга как ПГГ
+		if (startHeroType == 1 && n == 15) continue;
         if (n != startHeroType) //токо не ГГ
         {
 			PsHeroQty++;
@@ -151,6 +153,7 @@ void PGG_DailyUpdateEx(int i)
 				chr.Ship.Type = SHIP_NOTUSED;
 				chr.Dialog.FileName = "PGG_dialog.c";
 				chr.Dialog.CurrentNode = "Second Time";
+				chr.PGGAi.IsPGG = true; // KZ > возрождённый снова вольный ПГГ (мог умереть компаньоном в квесте при IsPGG=false и навсегда выпасть из PGG_DailyUpdate)
 			}
 			else
 			{
@@ -225,7 +228,7 @@ void PGG_DailyUpdateEx(int i)
 		//морские задания...
 		if (sTask == PGG_TASK_SAILTOISLAND || sTask == PGG_TASK_WORKCONVOY || sTask == PGG_TASK_WORKONSTORE)
 		{
-			if (CheckAttribute(chr, "PGGAi.Task.days") && sti(chr.PGGAi.Task.Target.days) == GetNpcQuestPastDayParam(chr, "PGGAi.Task.days"))
+			if (CheckAttribute(chr, "PGGAi.Task.days") && sti(chr.PGGAi.Task.Target.days) <= GetNpcQuestPastDayParam(chr, "PGGAi.Task.days")) // KZ > при пропуске более 1 дня за раз (глобалка, сон и т.д.) прибытие терялось и ПГГ навсегда зависал "в море"
 			{
 				chr.PGGAi.location = "land";
 				chr.PGGAi.location.town = chr.PGGAi.Task.Target;
@@ -560,9 +563,8 @@ int PGG_AddShipsBattleExp(ref chr, int _shipsNum)
 		else
 		{
 			AddCharacterExpToSkill(chr, SKILL_ACCURACY, fMod * 40);
-			AddCharacterExpToSkill(chr, SKILL_SAILING, fMod * 70);
+			AddCharacterExpToSkill(chr, SKILL_SAILING, fMod * 170);
 			AddCharacterExpToSkill(chr, SKILL_CANNONS, fMod * 40);
-			AddCharacterExpToSkill(chr, SKILL_SAILING, fMod * 100);
 			sDebugStr += " Destroyed them.";
 		}
 
@@ -758,7 +760,7 @@ void PGG_UpdateEquip(ref chr)
 				rWeapon = ItemsFromID(sWeapon);
 				sCharge = rWeapon.chargetype;
 				
-				if (StrHasStr(sCharge, "bullet,cartridge", 1))
+				if (StrHasStr(sCharge, "bullet,cartridge", true))
 				{
 					sAmmo = "bullet";
 					
@@ -916,24 +918,36 @@ void AddRemoveGoodsInStore(string _town, int _tradeGoods, int _quantityGoods, bo
 //Найти город назначения для персонажа
 string PGG_FindTargetTown(ref chr)
 {
-	int iRnd, iNum, iMin, iMax;
+	int iNum, iMin, iMax, iTry;
 	aref arDest;
 	string sAttr;
 	string sCurTown = chr.PGGAi.location.town;
 
 	makearef(arDest, NullCharacter.TravelMap.(sCurTown));
 	iNum = GetAttributesNum(arDest);
-	iRnd = rand(iNum-1);
-	sAttr = "t" + iRnd;
-
-	if (iRnd == -1)
+	// KZ > раньше при iNum == 0 вызывался rand(-1), а проверка iRnd == -1 стояла только после использования
+	if (iNum == 0)
 	{
 		trace("ERROR: <PsHero.c>: Can't find travel path from " + sCurTown);
+		chr.PGGAi.Task.Target = sCurTown;
+		chr.PGGAi.Task.Target.days = 1;
+		return sCurTown;
 	}
+	sAttr = "t" + rand(iNum-1);
+
 	//необитаемые острова, там нет городов, туда не плаваем.
-	while (arDest.(sAttr).town == "")
+	iTry = 0;
+	while (arDest.(sAttr).town == "" && iTry < MAX_COLONIES)
 	{
 		sAttr = "t" + rand(iNum-1);
+		iTry++;
+	}
+	if (arDest.(sAttr).town == "")
+	{
+		trace("ERROR: PGG_FindTargetTown in <PsHero.c>: no town-destination from " + sCurTown);
+		chr.PGGAi.Task.Target = sCurTown;
+		chr.PGGAi.Task.Target.days = 1;
+		return sCurTown;
 	}
 
 	chr.PGGAi.Task.Target = arDest.(sAttr).town;
@@ -970,6 +984,8 @@ string PGG_FindRandomTownByNation(int _nation)
 //грузить или нет ПГГ в таверну.
 void PGG_TavernCheckIsPGGHere()
 {
+	if (GetGlobalTutor()) return;
+
 	ref chr;
 	int i;
 	for (i = 1; i <= PsHeroQty; i++)
@@ -1304,7 +1320,7 @@ void PGG_FireOfficer()
 	chr.Dialog.FileName = "PGG_dialog.c";
 	chr.PGGAi.location.town = GetCurrentTown();
 	chr.PGGAi.IsPGG = true;
-	DeleteAttribute(Pchar, "quest.TempFiringOfficerIDX");
+	DeleteAttribute(Pchar, "questTemp.FiringOfficerIDX"); // KZ > был кривой атрибут - "quest.TempFiringOfficerIDX"
 	PGG_ChangeRelation2MainCharacter(chr, -20);
 
 	if (Get_My_Cabin() == chr.location)
@@ -1359,6 +1375,7 @@ bool PGG_CheckForQuestOffer(ref chr)
 		chrDisableReloadToLocation = true;
 		PlaceCharacter(chr, "goto", "random_must_be_near");
         PChar.GenQuest.PGG_Quest = 1;
+		PChar.GenQuest.PGG_Quest.OfferPGGid = chr.id; // KZ > чтобы PGG_EndQuestOffer_Force мог вычистить и самого ПГГ
 		chr.Dialog.CurrentNode = "quest_onStay";
 		chr.PGGAi.ActiveQuest = 1;
 		LAi_SetActorType(chr);
@@ -1380,36 +1397,86 @@ bool PGG_IsQuestAvaible()
 }
 
 //========== Первый квест ===========
+// KZ > единый эпилог квеста ПГГ
+// Снимает все квестовые условия PGGQuest1_*, возвращает энкаунтеры в бухту квеста и восстанавливает исходные атрибуты ПГГ (нация, абордаж, режим корабля).
+// Вызывать до удаления PChar.GenQuest.PGG_Quest.
+void PGG_Q1_Cleanup(ref chr)
+{
+	int iLoc;
+
+	// > вернуть энкаунтеры в бухту квеста (раньше DisableEncounters оставался включённым навсегда)
+	if (CheckAttribute(PChar, "GenQuest.PGG_Quest.Island.Shore"))
+	{
+		iLoc = FindLocation(PChar.GenQuest.PGG_Quest.Island.Shore);
+		if (iLoc != -1) Locations[iLoc].DisableEncounters = false;
+	}
+
+	// > снять все возможные взведённые условия квеста (несуществующие само-очистятся при QuestsCheck)
+	PChar.Quest.PGGQuest1_RemoveShip_Timer.Over = "yes";
+	PChar.Quest.PGGQuest1_RemoveShip.Over = "yes";
+	PChar.Quest.PGGQuest1_RemoveEnd.Over = "yes";
+	PChar.Quest.PGGQuest1_CheckStartState.Over = "yes";
+	PChar.Quest.PGGQuest1_GroupDead.Over = "yes";
+	PChar.Quest.PGGQuest1_PGGDead.Over = "yes";
+	PChar.Quest.PGGQuest1_Time2Fight.Over = "yes";
+	PChar.Quest.PGGQuest1_Time2Late.Over = "yes";
+	PChar.Quest.PGGQuest1_Time2Late_01.Over = "yes";
+	PChar.Quest.PGGQuest1_Time2Late_02.Over = "yes";
+	PChar.Quest.PGGQuest1_AfterDeckFight.Over = "yes";
+	PChar.Quest.PGGQuest1_AfterSeaFight.Over = "yes";
+	PChar.Quest.PGGQuest1_Runaway.Over = "yes";
+	PChar.Quest.PGGQuest1_Clear.Over = "yes";
+	PChar.Quest.PGGQuest1_FailedExitSea.Over = "yes";
+	PChar.Quest.PGGQuest1_FailedExitLoc.Over = "yes";
+	PChar.Quest.PGGQuest1_EndExitSea.Over = "yes";
+	PChar.Quest.PGGQuest1_EndExitLoc.Over = "yes";
+	PChar.Quest.PGGQuest_LaunchBoatTutor.Over = "yes";
+
+	// > восстановить атрибуты ПГГ (раньше в части путей завершения терялись навсегда)
+	if (CheckAttribute(chr, "Nation.Bak"))
+	{
+		chr.Nation = chr.Nation.Bak;
+		DeleteAttribute(chr, "Nation.Bak");
+	}
+
+	chr.Abordage.Enable = true;
+	DeleteAttributeEx(chr, "Ship.Mode,PGGAi.ActiveQuest,AlwaysFriend,AlwaysEnemy,Coastal_Captain,DeckDialogNode");
+}
+
+// KZ > переармировать напоминание "время вышло" на выход из текущей локации
+void PGG_Q1RearmTime2Late()
+{
+	PChar.Quest.PGGQuest1_Time2Late_02.win_condition.l1 = "ExitFromLocation";
+	PChar.Quest.PGGQuest1_Time2Late_02.win_condition.l1.Location = PChar.location;
+	PChar.Quest.PGGQuest1_Time2Late_02.function = "PGG_Q1Time2Late";
+	DeleteAttribute(PChar, "Quest.PGGQuest1_Time2Late_02.Over");
+}
+
 //убрать корабль ПГГ при отказе от квеста, чтобы не болтался...
 void PGG_Q1RemoveShip(string qName)
 {
+	if (!CheckAttribute(PChar, "GenQuest.PGG_Quest")) return;
 	ref chr = CharacterFromID(PChar.GenQuest.PGG_Quest.PGGid);
 
 	chr.Dialog.CurrentNode = "Second Time";
-	DeleteAttribute(chr, "DeckDialogNode");
 
 	Group_SetAddress("PGGQuest", "None", "", "");
 	Group_DelCharacter("PGGQuest", chr.id);
 //	Group_DeleteGroup("PGGQuest");
 	if (CheckAttribute(PChar, "GenQuest.PGG_Quest.Stage") && sti(PChar.GenQuest.PGG_Quest.Stage) < 2 && sti(PChar.GenQuest.PGG_Quest.Stage) >= 0)
 	{
-		chr.Dialog.CurrentNode = "Second Time";
 		PGG_ChangeRelation2MainCharacter(chr, -10);
 		CloseQuestHeader("Gen_PGGQuest1");
 	}
-	DeleteAttribute(chr, "PGGAi.ActiveQuest");
+	PGG_Q1_Cleanup(chr); // KZ > восстановить нацию/абордаж/режим корабля и снять все условия (раньше нация оставалась городской навсегда)
 	DeleteAttribute(PChar, "GenQuest.PGG_Quest");
-	DeleteAttribute(chr, "AlwaysFriend");
-
-	pchar.quest.PGGQuest_LaunchBoatTutor.over = "yes";
 }
 
 //после драки на палубе при отказе от квеста.
 void PGG_Q1AfterDeckFight()
 {
 	ref chr, rGroup;
-	string sGroup;
-	sGroup = PChar.GenQuest.PGG_Quest.GrpID;
+	if (!CheckAttribute(PChar, "GenQuest.PGG_Quest")) return;
 
 	chr = CharacterFromID(PChar.GenQuest.PGG_Quest.PGGid);
 	chr.AlwaysEnemy = true;
@@ -1459,6 +1526,7 @@ void PGG_Q1AfterDeckFight()
 //выход в море и нападение ПГГ на игрока после боевки на палубе.
 void PGG_Q1SeaFightAfterDeck(string qName)
 {
+	if (!CheckAttribute(PChar, "GenQuest.PGG_Quest")) return;
 	string sTemp = "PGGQuest";
 	Group_SetTaskAttackEx(sTemp, PLAYER_GROUP, false);
 	Group_LockTask(sTemp);
@@ -1486,29 +1554,22 @@ void PGG_Q1SeaFightAfterDeck(string qName)
 void PGG_Q1AfterSeaFight(string qName)
 {
 	ref chr;
+	if (!CheckAttribute(PChar, "GenQuest.PGG_Quest")) return;
 
 	chr = CharacterFromID(PChar.GenQuest.PGG_Quest.PGGid);
-	chr.Abordage.Enable = true;
 	chr.Dialog.CurrentNode = "Second Time";
-	if (CheckAttribute(chr, "Nation.Bak")) chr.Nation = chr.Nation.Bak;
 	chr.PGGAi.IsPGG = true;
 	chr.RebirthPhantom = true;
-	if (chr.PGGAi.location.town == "none") 
-	{
-		chr.PGGAi.location.town = PGG_FindRandomTownByNation(sti(chr.nation));
-	}
 
 	Group_SetAddress("PGGQuest", "None", "", "");
 	Group_DeleteGroup("PGGQuest");
-
-	PChar.Quest.PGGQuest1_AfterSeaFight.Over = "yes";
-	PChar.Quest.PGGQuest1_Runaway.Over = "yes";
-
 	ChangeCharacterAddressGroup(chr, "None", "", "");
 
-	DeleteAttribute(chr, "AlwaysEnemy");
-	DeleteAttribute(chr, "Coastal_Captain");
-	DeleteAttribute(chr, "PGGAi.ActiveQuest");
+	PGG_Q1_Cleanup(chr); // KZ > нация/абордаж/условия - единым эпилогом (нация нужна до подбора города ниже)
+
+	if (chr.PGGAi.location.town == "none")
+		chr.PGGAi.location.town = PGG_FindRandomTownByNation(sti(chr.nation));
+
 	DeleteAttribute(PChar, "GenQuest.PGG_Quest");
 }
 
@@ -1572,8 +1633,9 @@ void PGG_Q1PlaceShipsNearIsland()
 
 void PGG_Q1PGGDead(string qName)
 {
+	if (!CheckAttribute(PChar, "GenQuest.PGG_Quest")) return;
 	ref chr = CharacterFromID(PChar.GenQuest.PGG_Quest.PGGid);
-	if (sti(PChar.GenQuest.PGG_Quest.Template)) 
+	if (sti(PChar.GenQuest.PGG_Quest.Template))
 	{
 		if (sti(PChar.GenQuest.PGG_Quest.Stage) < 3)
 		{
@@ -1588,7 +1650,6 @@ void PGG_Q1PGGDead(string qName)
 			{
 				AddQuestRecord("Gen_PGGQuest1", "q1_PGGDeadNoShips_1");
 			}
-			PChar.Quest.PGGQuest1_CheckStartState.Over = "yes"; //fix doors
 		}
 		else
 		{
@@ -1596,15 +1657,17 @@ void PGG_Q1PGGDead(string qName)
 		}
 		AddQuestUserData("Gen_PGGQuest1", "sPsName", GetFullName(chr));
 
-		PChar.Quest.PGGQuest1_Time2Late.Over = "yes";
-
-		DeleteAttribute(PChar, "GenQuest.PGG_Quest");
+		// KZ > полная чистка - раньше Dead ставился после удаления ветки (пересоздавая мусор) и тут же стирался в PGG_EndQuest
+		PGG_EndQuest(chr);
 	}
 	else
+	{
+		// KZ > вариант с засадой на берегу: ПГГ погиб, но квест продолжается без него
 		AddQuestRecord("Gen_PGGQuest1", "q1_PGGDead");
-
-	PChar.GenQuest.PGG_Quest.PGGid.Dead = 1;
-	PGG_EndQuest(chr);
+		AddQuestUserData("Gen_PGGQuest1", "sPsName", GetFullName(chr));
+		PChar.GenQuest.PGG_Quest.PGGid.Dead = 1;
+		DeleteAttributeEx(chr, "PGGAi.ActiveQuest,AlwaysFriend");
+	}
 }
 
 void PGG_Q1CheckStartState(string qName)
@@ -1612,6 +1675,7 @@ void PGG_Q1CheckStartState(string qName)
 	ref chr;
 	int i, n, iNum;
 
+	if (!CheckAttribute(PChar, "GenQuest.PGG_Quest")) return; // KZ > раньше "протухшее" условие "GenQuest.PGG_Quest" пересоздавало ветку и блокировало квесты ПГГ навсегда
 	PChar.GenQuest.PGG_Quest.Stage = 3;
 	PChar.Quest.PGGQuest1_Time2Late.Over = "yes";
 	PChar.Quest.PGGQuest1_Time2Late_01.Over = "Yes";
@@ -1749,6 +1813,7 @@ void PGG_Q1LocationLoaded(string qName)
 	int i, iRnd;
 	string attrName;
 
+	if (!CheckAttribute(PChar, "GenQuest.PGG_Quest")) return;
 	Group_SetAddress("PGGQuest", "", "", "");
 	chr = CharacterFromID(PChar.GenQuest.PGG_Quest.PGGid);
 	chr.Dialog.CurrentNode = "Quest_1_CheckResult";
@@ -1782,30 +1847,27 @@ void PGG_Q1LocationLoaded(string qName)
 
 void PGG_Q1EndClear(string qName)
 {
+	if (!CheckAttribute(PChar, "GenQuest.PGG_Quest")) return; // KZ > от повторного вызова
 	ref chr = CharacterFromID(PChar.GenQuest.PGG_Quest.PGGid);
 
 	chr.Dialog.CurrentNode = "Second Time";
 	chr.PGGAi.IsPGG = true;
 	chr.RebirthPhantom = true;
-	chr.Nation = chr.Nation.Bak;
 	LAi_SetImmortal(chr, false);
 	LAi_SetWarriorType(chr);
     SetCharacterRemovable(chr, true);
-     
-	PChar.Quest.PGGQuest1_EndExitSea.Over = "Yes";
-	PChar.Quest.PGGQuest1_EndExitLoc.Over = "Yes";
-	PChar.Quest.PGGQuest1_Time2Late_01.Over = "Yes";
-	PChar.Quest.PGGQuest1_Time2Late_02.Over = "Yes";
 
 	LAi_LocationFightDisable(&Locations[FindLocation("Ship_deck")], false);
 
-	DeleteAttribute(chr, "PGGAi.ActiveQuest");
-	DeleteAttribute(chr, "AlwaysFriend");
+	PGG_Q1_Cleanup(chr); // KZ > нация из Bak (раньше читалась без проверки), абордаж, энкаунтеры бухты, все условия
 	DeleteAttribute(PChar, "GenQuest.PGG_Quest");
 
 	chr.PGGAi.location.town = PGG_FindRandomTownByNation(sti(chr.nation));
 	ChangeCharacterAddressGroup(chr, "None", "", "");
-	LAi_group_Delete("PGGTmp"); //попробуем потереть в конце всего
+
+	// KZ > не трогаем группу контрабандной фичи, если она активна
+	if (!CheckAttribute(pchar, "questTemp.PGGContra"))
+		LAi_group_Delete("PGGTmp");
 }
 
 void PGG_Q1Time2Late(string qName)
@@ -1814,6 +1876,8 @@ void PGG_Q1Time2Late(string qName)
 	string attrName;
 	ref chr;
 	aref arOldMapPos;
+
+	if (!CheckAttribute(PChar, "GenQuest.PGG_Quest")) return; // KZ > условие могло пережить квест
 
 	chr = CharacterFromID(PChar.GenQuest.PGG_Quest.PGGid);
 
@@ -1881,18 +1945,12 @@ void PGG_Q1Time2Late(string qName)
 				}
 				else
 				{
-					PChar.Quest.PGGQuest1_Time2Late_02.win_condition.l1 = "ExitFromLocation";
-					PChar.Quest.PGGQuest1_Time2Late_02.win_condition.l1.Location = PChar.location;
-					PChar.Quest.PGGQuest1_Time2Late_02.function = "PGG_Q1Time2Late";
-					DeleteAttribute(PChar, "Quest.PGGQuest1_Time2Late_02.Over");
+					PGG_Q1RearmTime2Late();
 				}
 			}
 			else
 			{
-				PChar.Quest.PGGQuest1_Time2Late_02.win_condition.l1 = "ExitFromLocation";
-				PChar.Quest.PGGQuest1_Time2Late_02.win_condition.l1.Location = PChar.location;
-				PChar.Quest.PGGQuest1_Time2Late_02.function = "PGG_Q1Time2Late";
-				DeleteAttribute(PChar, "Quest.PGGQuest1_Time2Late_02.Over");
+				PGG_Q1RearmTime2Late();
 			}
 		}
 	}
@@ -1954,9 +2012,8 @@ void PGG_Q1FightOnShore()
 
 void PGG_Q1AfterShoreFight()
 {
-	ref chr, rGroup;
-	string sGroup;
-	sGroup = PChar.GenQuest.PGG_Quest.GrpID;
+	ref chr;
+	if (!CheckAttribute(PChar, "GenQuest.PGG_Quest")) return;
 
 	DoQuestCheckDelay("hide_weapon", 2.0);
 
@@ -1972,8 +2029,10 @@ void PGG_Q1AfterShoreFight()
 	}
 	else
 	{
+		// KZ > ПГГ погиб раньше: забираем товар и полностью закрываем квест (раньше ветка не чистила ничего, "GenQuest.PGG_Quest" висел всегда и блокировал будущие квесты ПГГ)
 		chrDisableReloadToLocation = false;
 		SetCharacterGoods(PChar, sti(PChar.GenQuest.PGG_Quest.Goods), sti(PChar.GenQuest.PGG_Quest.Goods.Taken));
+		PGG_EndQuest(chr);
 	}
 }
 
@@ -1986,23 +2045,31 @@ void PGG_AddMoneyToCharacter(ref chr, int iMoney)
 
 void PGG_EndQuest(ref chr)
 {
-	PChar.Quest.PGGQuest1_Time2Late_01.over = "yes";
-	PChar.Quest.PGGQuest1_Time2Late_02.over = "yes";
-	PChar.Quest.PGGQuest1_Time2Fight.Over = "yes";
-
-	if (LAi_IsDead(chr))
-		PChar.Quest.PGGQuest1_PGGDead.Over = "Yes";	
-
+	PGG_Q1_Cleanup(chr); // KZ > снять все условия и восстановить атрибуты ПГГ
 	DeleteAttribute(pchar, "GenQuest.PGG_Quest");
-	DeleteAttributeEx(chr, "PGGAi.ActiveQuest,AlwaysFriend,AlwaysEnemy,Coastal_Captain");
-	LAi_group_Delete("PGGTmp");
+
+	// KZ > не трогаем группу контрабандной фичи, если она активна
+	if (!CheckAttribute(pchar, "questTemp.PGGContra"))
+		LAi_group_Delete("PGGTmp");
 	CloseQuestHeader("Gen_PGGQuest1");
 }
 
 void PGG_EndQuestOffer_Force(string qName)
 {
+	ref chr;
+
 	if (CheckAttribute(pchar, "GenQuest.PGG_Quest"))
 	{
+		// KZ > вычистить и самого ПГГ: разговора не было, а "ActiveQuest" и "quest_onStay" оставались навсегда
+		if (CheckAttribute(pchar, "GenQuest.PGG_Quest.OfferPGGid"))
+		{
+			chr = CharacterFromID(pchar.GenQuest.PGG_Quest.OfferPGGid);
+			DeleteAttribute(chr, "PGGAi.ActiveQuest");
+			if (CheckAttribute(chr, "Dialog.TempNode")) chr.Dialog.CurrentNode = chr.Dialog.TempNode;
+			else chr.Dialog.CurrentNode = "First time";
+			if (chr.Chr_Ai.Type == "actor") LAi_SetWarriorTypeNoGroup(chr);
+		}
+
 		DeleteAttribute(pchar, "GenQuest.PGG_Quest");
 	}
 }

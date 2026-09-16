@@ -37,3 +37,33 @@ Tu as deviné juste, désolé...
 Cumana_Usurer_12 {
 Je comprends...
 }
+Cumana_Usurer_13 {
+Je vous écoute, capitaine. Quelle affaire vous amène chez moi ?
+}
+Cumana_Usurer_14 {
+Je veux déposer vingt mille pesos pour Anna Arellano et lui faire transmettre quelques mots de son père.
+}
+Cumana_Usurer_15 {
+Rien d'urgent. Nous y reviendrons une autre fois.
+}
+Cumana_Usurer_16 {
+Anna Arellano ? Oui, je la connais. Mais son père n'est pas revenu à Cumaná depuis longtemps. Que dois-je lui transmettre exactement ?
+}
+Cumana_Usurer_17 {
+Dites-lui que cet argent a été laissé par Tomás de Arellano et qu'il bénit son mariage avec Sebastián. Il n'est pas nécessaire de mentionner mon nom.
+}
+Cumana_Usurer_18 {
+Je comprends. Si vous avez l'argent sur vous, j'ouvrirai immédiatement un dépôt à son nom.
+}
+Cumana_Usurer_19 {
+Voici l'argent. Ouvrez le dépôt et veillez à lui transmettre les paroles de son père.
+}
+Cumana_Usurer_20 {
+Je n'ai pas encore toute la somme. Je reviendrai quand j'aurai réuni les vingt mille.
+}
+Cumana_Usurer_21 {
+Soyez sans crainte. Mes livres ne mentionneront que le nom de Tomás de Arellano, et Anna recevra son message.
+}
+Cumana_Usurer_22 {
+Merci. C'est tout ce que j'attends de vous.
+}

@@ -34,3 +34,36 @@ Sí, en verdad es mejor negociar...
 Villemstad_ItemTrader_12 {
 Hm, lo siento, comerciante...
 }
+Villemstad_ItemTrader_13 {
+¿Podría decirme dónde podría comprar un vestido digno de lucirse en sociedad?
+}
+Villemstad_ItemTrader_14 {
+Necesito un vestido que no desmerezca del que lleva la esposa del banquero local.
+}
+Villemstad_ItemTrader_15 {
+¿De dónde podría conseguir un vestido, pero no uno cualquiera, sino uno en el que no tuviese vergüenza de presentarme ni siquiera ante el propio rey de Francia?
+}
+Villemstad_ItemTrader_16 {
+En el mercado difícilmente encontrará algo así. Necesitaría una buena modista. Por desgracia, no puedo recomendarle a nadie...
+}
+Villemstad_ItemTrader_17 {
+Lástima...
+}
+Villemstad_ItemTrader_18 {
+No, señora, no tengo nada semejante a la venta.
+}
+Villemstad_ItemTrader_19 {
+Está bien...
+}
+Villemstad_ItemTrader_20 {
+En casa del sastre del rey de Francia, ¿dónde si no? Nosotros somos gente sencilla, no como esos caballeros ricos que frecuentan el burdel local.
+}
+Villemstad_ItemTrader_21 {
+Qué interesante. ¿Esos caballeros gozan allí de algún trato especial? No irán corriendo detrás de las vulgares muchachas del puerto, ¿verdad?
+}
+Villemstad_ItemTrader_22 {
+Perdone, pero no acostumbro a difundir chismes. Pase por allí y pregunte; quizá también a usted le ofrezcan algo especial. Pero no me meta en esto ni diga que yo le conté nada. La dueña es una dama de cierto peso. Compra vino a mi primo - es un vinatero excelente - y no tengo motivo para hablar mal de ella.
+}
+Villemstad_ItemTrader_23 {
+Entiendo. Muy bien, lo tendré en cuenta y algún día compraré también un poco de su vino.
+}

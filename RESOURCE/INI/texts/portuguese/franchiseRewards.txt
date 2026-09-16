@@ -1,0 +1,27 @@
+condition_subscribeItem
+{
+Um pequeno caderno cheio de dicas curtas, mas importantes. Um dia você simplesmente o encontrou entre os seus pertences, e desde então não se separou mais dele.
+}
+condition_legendGuide
+{
+Este item aparecerá no jogo se você seguir a página
+Caribbean Legend
+}
+condition_indian_officer
+{
+Este oficial de missão aparecerá na linha de missões de Askold (início: "Busca pelo pó de múmia") se você tiver o
+Caribbean Legend ou tiver obtido a conquista "Mais duro que o ferro" nos primeiros testes de jogo.
+}
+indian_officer_desc
+{
+O índio muskogee Tichingitu e seu mosquete ancestral o apoiarão no árduo ofício de corsário.
+~
+Este atirador insuperável está pronto para fazer um juramento de lealdade mais duro que o ferro, bastando resgatá-lo do calabouço em que foi parar por puro acaso.
+}
+noRewardYetMessage
+{
+Esta recompensa ainda não está disponível,
+fique de olho nas atualizações!
+}
+steamButtonAlreadyGot {Resgatado}
+steamButtonGet {Resgatar}

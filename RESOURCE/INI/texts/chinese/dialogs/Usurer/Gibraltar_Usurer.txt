@@ -1,0 +1,39 @@
+Gibraltar_Usurer_1 {
+什么问题？ 
+}
+Gibraltar_Usurer_2 {
+你想干什么？ 
+}
+Gibraltar_Usurer_3 {
+@<RandPhraseSimple>
+}
+Gibraltar_Usurer_4 {
+前阵子你试图问过我一个问题…… 
+}
+Gibraltar_Usurer_5 {
+嗯， 让我猜猜…… 又没什么重要的事吧？ 
+}
+Gibraltar_Usurer_6 {
+听着， 我管钱， 不负责回答问题…… 
+}
+Gibraltar_Usurer_7_m {
+我改主意了…… 
+}
+Gibraltar_Usurer_7_f {
+我改变主意了…… 
+}
+Gibraltar_Usurer_8 {
+我现在没什么可说的。 
+}
+Gibraltar_Usurer_9 {
+@<RandPhraseSimple>
+}
+Gibraltar_Usurer_10 {
+嗯， 我的记忆好像出了点问题…… 
+}
+Gibraltar_Usurer_11 {
+你猜对了， 抱歉…… 
+}
+Gibraltar_Usurer_12 {
+我明白…… 
+}

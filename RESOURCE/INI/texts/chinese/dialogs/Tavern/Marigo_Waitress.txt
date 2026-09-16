@@ -1,45 +1,45 @@
 Marigo_Waitress_1 {
-有问题吗，@<GetAddress_Form>?
+有问题吗， @<GetAddress_Form>?
 }
 Marigo_Waitress_2 {
-@<GetAddress_Form>，您找俺有啥事？
+@<GetAddress_Form>， 您找我有什么事？ 
 }
 Marigo_Waitress_3 {
 @<RandPhraseSimple>
 }
 Marigo_Waitress_4_m {
-嗯，你这是在跟我调情吗，先生？
+嗯， 你这是在跟我调情吗， 先生？ 
 }
 Marigo_Waitress_4_f {
-你又来了，老是问些奇怪的问题……你就这么喜欢烦我吗？
+你又来了， 老是问些奇怪的问题…… 你就这么喜欢烦我吗？ 
 }
 Marigo_Waitress_5_m {
-你今天已经第三次提起这事了……这是在表示关心吗？
+你今天已经第三次提起这事了…… 这是在表示关心吗？ 
 }
 Marigo_Waitress_5_f {
-你今天已经第三次提这个问题了……你是在开玩笑吗？
+你今天已经第三次提这个问题了…… 你是在开玩笑吗？ 
 }
 Marigo_Waitress_6 {
-你又要问问题了吗，@<GetAddress_Form>?
+你又要问问题了吗， @<GetAddress_Form>?
 }
 Marigo_Waitress_7_m {
-我改主意了……
+我改主意了…… 
 }
 Marigo_Waitress_7_f {
-我改主意了……
+我改主意了…… 
 }
 Marigo_Waitress_8 {
-我现在没什么可说的。
+我现在没什么可说的。 
 }
 Marigo_Waitress_9 {
 @<RandPhraseSimple>
 }
 Marigo_Waitress_10 {
-不不，哪有的事，美女……
+不不， 哪有的事， 美女…… 
 }
 Marigo_Waitress_11 {
-哪有啊，亲爱的，只是有点健忘……
+哪有啊， 亲爱的， 只是有点健忘…… 
 }
 Marigo_Waitress_12 {
-没事，没什么要问的……
+没事， 没什么要问的…… 
 }

@@ -1,39 +1,39 @@
 Cartahena_Shipyard_1 {
-什么问题？
+什么问题？ 
 }
 Cartahena_Shipyard_2 {
-你想干什么？
+你想干什么？ 
 }
 Cartahena_Shipyard_3 {
 @<RandPhraseSimple>
 }
 Cartahena_Shipyard_4 {
-不久前你试图问我一个问题……
+不久前你试图问我一个问题…… 
 }
 Cartahena_Shipyard_5 {
-在我自己的船厂，甚至整个城里，我还真没见过像你这么爱打听的人。
+在我自己的船坞， 甚至整个城里， 我还真没见过像你这么爱打听的人。 
 }
 Cartahena_Shipyard_6 {
-问这么多干啥？俺就是造船的，咱们赶紧开始吧。
+问这么多干什么？ 我就是造船的， 咱们赶紧开始吧。 
 }
 Cartahena_Shipyard_7_m {
-我改主意了……
+我改主意了…… 
 }
 Cartahena_Shipyard_7_f {
-我改变主意了……
+我改变主意了…… 
 }
 Cartahena_Shipyard_8 {
-我现在没什么可说的。
+我现在没什么可说的。 
 }
 Cartahena_Shipyard_9 {
 @<RandPhraseSimple>
 }
 Cartahena_Shipyard_10 {
-嗯，我的记忆好像出了点问题……
+嗯， 我的记忆好像出了点问题…… 
 }
 Cartahena_Shipyard_11 {
-嗯，不过……
+嗯， 不过…… 
 }
 Cartahena_Shipyard_12 {
-咱们……
+咱们…… 
 }

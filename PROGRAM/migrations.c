@@ -6,9 +6,66 @@
 extern void ApplyMigration(ref migrationState); // функция которую нужно переопределить в файле конкретной миграции
 
 void ApplyMigrations() {
+	PurgeLostMigrations(COMMON_MIGRATION_FOLDER);
 	ApplyMigrationsForFolder(COMMON_MIGRATION_FOLDER, "");
 	//CheckForUninstalledMods();
 	//ApplyModResources();
+}
+
+// чистка журнала миграций (запись в стеке есть, а файла в папке нет)
+int PurgeLostMigrations(string migrationDir)
+{
+	aref   migrations, migration;
+	int    i = 0;
+	int    q = 0;
+	int    iDropped = 0;
+	string sFolder = "";
+	string sName = "";
+	string sValue = "";
+	string sNum = "";
+
+	sFolder = "Program\" + migrationDir;
+
+	if (!XI_CheckFileByMask(sFolder, "????_*.c", 0))
+	{
+		trace("PurgeLostMigrations: no migration files found in " + sFolder + ", migration log skipped");
+		return 0;
+	}
+
+	if (!CheckAttribute(&TEV, "ClearLostMigrations")) return 0;
+	DeleteAttribute(&TEV, "ClearLostMigrations");
+
+	makearef(migrations, pchar.migrations);
+	q = GetAttributesNum(migrations);
+
+	for (i = q - 1; i >= 0; i--)
+	{
+		migration = GetAttributeN(migrations, i);
+		sName  = GetAttributeName(migration);
+		sValue = GetAttributeValue(migration);
+
+		// ключ короче "idN" - не наша запись
+		if (strlen(sName) < 3) continue;
+
+		// мод-миграции лежат в своих папках, эта чистка их не касается
+		if (IsMigrationFromMod(sName)) continue;
+
+		// имя файла собирается обратно из записи
+		sNum = strcut(sName, 2, strlen(sName) - 1);
+		sNum = "" + sti(sNum);
+		while (strlen(sNum) < 4) { sNum = "0" + sNum; }
+
+		if (XI_CheckFileByMask(sFolder, sNum + "_" + sValue + ".c", 0)) continue;
+
+		trace("PurgeLostMigrations: file " + sNum + "_" + sValue + ".c not found, record " + sName + " removed");
+		DeleteAttribute(migrations, sName);
+		iDropped++;
+	}
+
+	if (iDropped > 0)
+		trace("PurgeLostMigrations: removed records of missing migrations - " + iDropped);
+
+	return iDropped;
 }
 
 // проверяем, что не удалены моды, миграции из которых есть в сейве
@@ -179,22 +236,50 @@ void ApplyMigrationsForFolder(string migrationDir, string modName) {
 	trace("ApplyMigrationsForFolder filesNum: " +filesNum);
 	if (filesNum < 1) return;
 
+	aref file;
+	string fileName;
+	string numString;
+	int migrationIndex;
+
+	// размер списка по наибольшему номеру, а не по числу файлов
+	int maxIndex = 0;
+	for (i = 0; i < filesNum; i++)
+	{
+		file = GetAttributeN(fileList, i);
+		fileName = GetAttributeValue(file);
+		numString = strcut(&fileName, 0, 3);
+		migrationIndex = sti(numString);
+		if (migrationIndex > maxIndex) maxIndex = migrationIndex;
+	}
+	if (maxIndex < 1)
+	{
+		trace("ApplyMigrationsForFolder: no valid migration numbers found");
+		return;
+	}
+
     string migrationsList[2];
-    SetArraySize(&migrationsList, filesNum);
+    SetArraySize(&migrationsList, maxIndex);
 
 	for (i = 0; i < filesNum; i++) {
-		aref file = GetAttributeN(fileList, i);
-		string fileName = GetAttributeValue(file);
+		file = GetAttributeN(fileList, i);
+		fileName = GetAttributeValue(file);
 		//fileName = strcut(&fileName, 0, strlen(&fileName) - 3) + ".c";
 		trace("ApplyMigrationsForFolder fileName: " + fileName);
 
-		string numString = strcut(&fileName, 0, 3);
-		int migrationIndex = sti(numString);
+		numString = strcut(&fileName, 0, 3);
+		migrationIndex = sti(numString);
 		
 		// индексы пусть с 1 начинаются, т.к. 0 - признак облома
 		if (migrationIndex < 1)
 		{
 			trace("Found invalid migration file " + fileName);
+			continue;
+		}
+
+		// номер уже занят другим файлом - иначе один из двух пропал бы молча
+		if (migrationsList[migrationIndex - 1] != "")
+		{
+			trace("Duplicate migration number in " + fileName + ", slot taken by " + migrationsList[migrationIndex - 1]);
 		}
 
 		migrationsList[migrationIndex - 1] = migrationDir + "\" + fileName;
@@ -204,7 +289,7 @@ void ApplyMigrationsForFolder(string migrationDir, string modName) {
 	object migrationState;
 	aref migrations;
 	makearef(migrations, pchar.migrations);
-	for (i = 0; i < filesNum; i++)
+	for (i = 0; i < maxIndex; i++)
 	{
 		fileName = migrationsList[i];
 		if (fileName == "") continue;
@@ -279,6 +364,7 @@ void InitMigrationsForFolder(string migrationDir) {
 		// индексы пусть с 1 начинаются, т.к. 0 - признак облома
 		if (migrationIndex < 1) {
 			trace("Found invalid migration file " + fileName);
+			continue;
 		}
 		
 		string migrationId = "id" + migrationIndex;

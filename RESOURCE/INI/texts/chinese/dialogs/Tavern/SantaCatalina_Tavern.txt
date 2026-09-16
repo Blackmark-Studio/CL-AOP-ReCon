@@ -1,39 +1,39 @@
 SantaCatalina_Tavern_1 {
-什么问题？
+什么问题？ 
 }
 SantaCatalina_Tavern_2 {
-有什么需要帮忙的吗，@<GetAddress_Form>?
+有什么需要帮忙的吗， @<GetAddress_Form>?
 }
 SantaCatalina_Tavern_3 {
 @<RandPhraseSimple>
 }
 SantaCatalina_Tavern_4 {
-前阵子你还想问我个问题，@<GetAddress_Form>……
+前阵子你还想问我个问题， @<GetAddress_Form>…… 
 }
 SantaCatalina_Tavern_5 {
-你今天已经第三次提这事了……
+你今天已经第三次提这事了…… 
 }
 SantaCatalina_Tavern_6 {
-咱们又要开始问问题了？
+咱们又要开始问问题了？ 
 }
 SantaCatalina_Tavern_7_m {
-我改主意了……
+我改主意了…… 
 }
 SantaCatalina_Tavern_7_f {
-我改变主意了……
+我改变主意了…… 
 }
 SantaCatalina_Tavern_8 {
-我现在没什么好说的。
+我现在没什么好说的。 
 }
 SantaCatalina_Tavern_9 {
 @<RandPhraseSimple>
 }
 SantaCatalina_Tavern_10 {
-嗯，我的记忆好像出了点问题……
+嗯， 我的记忆好像出了点问题…… 
 }
 SantaCatalina_Tavern_11 {
-看来第三次总算成了吧……
+看来第三次总算成了吧…… 
 }
 SantaCatalina_Tavern_12 {
-没事，没什么要问的……
+没事， 没什么要问的…… 
 }

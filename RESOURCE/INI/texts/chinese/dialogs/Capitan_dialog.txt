@@ -1,5 +1,5 @@
 Capitan_dialog_1 {
-在English要塞旁
+在英格兰要塞旁
 }
 Capitan_dialog_2 {
 在法国要塞旁
@@ -14,538 +14,538 @@ Capitan_dialog_5 {
 和海盗要塞
 }
 Capitan_dialog_6 {
-@<TimeGreeting>，@<GetAddress_Form>！我是@<GetFullName>，@<NationKingsName>舰队的船长。你来俺船上有啥事？
+@<TimeGreeting>， @<GetAddress_Form>！ 我是@<GetFullName>， @<NationKingsName>舰队的船长。 你来我船上有什么事？ 
 }
 Capitan_dialog_7 {
-@<TimeGreeting>，@<GetAddress_Form>！我是Captain @<GetFullName>。你来俺船上有啥事？
+@<TimeGreeting>， @<GetAddress_Form>！ 我是@<GetFullName>船长。 你来我船上有什么事？ 
 }
 Capitan_dialog_8 {
-我叫@<GetFullName>。找你有点事！
+我叫@<GetFullName>。 找你有点事！ 
 }
 Capitan_dialog_9 {
-我能帮你什么忙？
+我能帮你什么忙？ 
 }
 Capitan_dialog_10 {
-我有事找你！
+我有事找你！ 
 }
 Capitan_dialog_11_m {
-没啥特别的，就是过来打个招呼！
+没什么特别的， 就是过来打个招呼！ 
 }
 Capitan_dialog_11_f {
-没啥特别的，就是过来打个招呼！
+没什么特别的， 就是过来打个招呼！ 
 }
 Capitan_dialog_12 {
-你没看见吗，@<GetAddress_Form>，现在正打仗呢！哪有空聊天！
+你没看见吗， @<GetAddress_Form>， 现在正打仗呢！ 哪有空聊天！ 
 }
 Capitan_dialog_13 {
-你说得对！我这就回我的船去。
+你说得对！ 我这就回我的船去。 
 }
 Capitan_dialog_14 {
-我在认真听，@<GetAddress_Form>。
+我在认真听， @<GetAddress_Form>。 
 }
 Capitan_dialog_15_m {
-我想听听最近群岛上的消息。
+我想听听最近群岛上的消息。 
 }
 Capitan_dialog_15_f {
-我想听听最近群岛上的消息。
+我想听听最近群岛上的消息。 
 }
 Capitan_dialog_16 {
-你知道老子是谁吗？我的火炮分分钟把你那破船打成筛子。咱们还是和平解决吧，给点赎金就行。
+你知道我是谁吗？ 我的火炮分分钟把你那破船打成筛子。 咱们还是和平解决吧， 给点赎金就行。 
 }
 Capitan_dialog_17 {
-大海……就咱俩……要不你给俺手下意思意思，保你平安？
+在这茫茫大海上…… 就咱俩…… 要不你给我手下意思意思， 保你平安？ 
 }
 Capitan_dialog_18 {
 @<RandPhraseSimple>
 }
 Capitan_dialog_19 {
-你从哪儿来？
+你从哪儿来？ 
 }
 Capitan_dialog_20 {
-要不要做点买卖？
+要不要做点买卖？ 
 }
 Capitan_dialog_21 {
-我在找一艘最近在这片海域活动的海盗船，你有没有发现什么可疑的情况？
+我在找一艘最近在这片海域活动的海盗船， 你有没有发现什么可疑的情况？ 
 }
 Capitan_dialog_22 {
-想放松一下吗？
+想放松一下吗？ 
 }
 Capitan_dialog_23 {
-我觉得该走了！
+我觉得该走了！ 
 }
 Capitan_dialog_24 {
-我没资格跟你谈这事，请去找我们中队的指挥官。他叫@<GetFullName>，现在就在@<XI_ConvertString>号‘@<GetCharacterIndex>’船上。
+我没资格跟你谈这事， 请去找我们中队的指挥官。 他叫@<GetFullName>， 现在就在@<XI_ConvertString>“@<GetCharacterIndex>”船上。 
 }
 Capitan_dialog_25 {
-谢谢你，我就这么办。
+谢谢你， 我就这么办。 
 }
 Capitan_dialog_26 {
-为什么不呢？
+为什么不呢？ 
 }
 Capitan_dialog_27 {
-咱们去看看货吧。
+咱们去看看货吧。 
 }
 Capitan_dialog_28_m {
-我改主意了。
+我改主意了。 
 }
 Capitan_dialog_28_f {
-我改主意了。
+我改主意了。 
 }
 Capitan_dialog_29 {
-你打算怎么办？
+你打算怎么办？ 
 }
 Capitan_dialog_30 {
-想不想来一局，赌点真家伙？
+想不想来一把扑克小丑， 赌点真家伙？ 
 }
 Capitan_dialog_31 {
-要不要来一局扑克小丑，掷掷骰子？
+要不要来一把骰子， 碰碰运气？
 }
 Capitan_dialog_32 {
-请原谅，我还有事要处理。
+请原谅， 我还有事要处理。 
 }
 Capitan_dialog_33 {
-我可不会跟每个可疑的人都赌一把！
+我可不会跟每个可疑的人都赌一把！ 
 }
 Capitan_dialog_34 {
-如你所愿。
+如你所愿。 
 }
 Capitan_dialog_35 {
-好吧！俺就暂时歇歇，不管船上的事了……
+好吧！ 我就暂时歇歇， 不管船上的事了…… 
 }
 Capitan_dialog_36 {
-太好了。
+太好了。 
 }
 Capitan_dialog_37 {
-游戏有什么规矩？
+游戏有什么规矩？ 
 }
 Capitan_dialog_38 {
-那咱们开始吧！
+那咱们开始吧！ 
 }
 Capitan_dialog_39 {
-不，这不适合我……
+不， 这不适合我…… 
 }
 Capitan_dialog_40 {
-咱们先定下注吧。
+咱们先定下注吧。 
 }
 Capitan_dialog_41 {
-咱们这局赌一百枚金币。
+咱们这局赌100比索。 
 }
 Capitan_dialog_42 {
-就按每人500皮阿斯特算吧。
+那就每人500比索吧。 
 }
 Capitan_dialog_43 {
-我想我该走了。
+我想我该走了。 
 }
 Capitan_dialog_44 {
-你在开玩笑吧？你根本没钱！
+你在开玩笑吧？ 你根本没钱！ 
 }
 Capitan_dialog_45 {
-有时候就是这样。
+有时候就是这样。 
 }
 Capitan_dialog_46 {
-够了，再多下去老子连养船的钱都不剩了……
+够了， 再多下去我连养船的钱都不剩了…… 
 }
 Capitan_dialog_47 {
-可惜。
+可惜。 
 }
 Capitan_dialog_48 {
-好，咱们这局赌一百枚金币。
+咱们这局赌100比索。 
 }
 Capitan_dialog_49 {
-开始吧！
+开始吧！ 
 }
 Capitan_dialog_50 {
-你开玩笑吧？你根本没有1500皮阿斯特！
+你开玩笑吧？ 你根本没有1,500比索！ 
 }
 Capitan_dialog_51 {
-他们会的！
+他们会的！ 
 }
 Capitan_dialog_52 {
-不行，这种赌注只会惹麻烦。
+不行， 这种赌注只会惹麻烦。 
 }
 Capitan_dialog_53 {
-如你所愿。
+如你所愿。 
 }
 Capitan_dialog_54 {
-好，咱们这局赌五百金币。
+好， 咱们这局赌500比索。 
 }
 Capitan_dialog_55 {
-开始吧！
+开始吧！ 
 }
 Capitan_dialog_56 {
-我可不会跟每个混混都赌一把！
+我可不会跟每个混混都赌一把！ 
 }
 Capitan_dialog_57 {
-如你所愿。
+如你所愿。 
 }
 Capitan_dialog_58 {
-来吧！休息一下又不会伤身……只是钱包要受点苦了……
+来吧！ 休息一下又不会伤身…… 只是钱包要受点苦了…… 
 }
 Capitan_dialog_59 {
-太好了。
+太好了。 
 }
 Capitan_dialog_60 {
-游戏规则是什么？
+游戏规则是什么？ 
 }
 Capitan_dialog_61 {
-不行，今天就到这儿吧，我还有事要忙。
+不行， 今天就到这儿吧， 我还有事要忙。 
 }
 Capitan_dialog_62 {
-如你所愿。
+如你所愿。 
 }
 Capitan_dialog_63 {
-那咱们开始吧！
+那咱们开始吧！ 
 }
 Capitan_dialog_64 {
-不，这不适合我……
+不， 这不适合我…… 
 }
 Capitan_dialog_65 {
-咱们先定下注吧。
+咱们先定下注吧。 
 }
 Capitan_dialog_66 {
-每颗骰子50金币。
+每颗骰子50比索。 
 }
 Capitan_dialog_67 {
-那就每颗骰子200皮阿斯特吧。
+那就每颗骰子200比索吧。 
 }
 Capitan_dialog_68 {
-我想我该走了。
+我想我该走了。 
 }
 Capitan_dialog_69_m {
-你这人出了名的会出老千，俺可不跟你掷骰子。
+你这人出了名的会出老千， 我可不跟你掷骰子。 
 }
 Capitan_dialog_69_f {
-你可是出了名的骰子高手，俺可不跟你玩了。
+你可是出了名的骰子高手， 我可不跟你玩了。 
 }
 Capitan_dialog_70 {
-人人都撒谎！老子才不在乎。
+人人都撒谎！ 我才不在乎。 
 }
 Capitan_dialog_71 {
-你在开玩笑吧？你根本没钱！
+你在开玩笑吧？ 你根本没钱！ 
 }
 Capitan_dialog_72 {
-有时候就是这样。
+有时候就是这样。 
 }
 Capitan_dialog_73 {
-够了！不能再胡闹了，不然他们要把俺当成败家子，扔在岸上不管了……
+够了！ 不能再胡闹了， 不然他们要把我当成败家子， 扔在岸上不管了…… 
 }
 Capitan_dialog_74 {
-可惜。
+可惜。 
 }
 Capitan_dialog_75 {
-好，咱们这局赌五十枚金币。
+好， 咱们这局赌50比索。 
 }
 Capitan_dialog_76 {
-开始吧！
+开始吧！ 
 }
 Capitan_dialog_77_m {
-你这人出了名的会出老千，俺可不跟你掷骰子。
+你这人出了名的会出老千， 我可不跟你掷骰子。 
 }
 Capitan_dialog_77_f {
-你可是出了名的赌神，俺可不跟你掷骰子。
+你可是出了名的赌神， 我可不跟你掷骰子。 
 }
 Capitan_dialog_78 {
-人人都撒谎！算了，老子也不稀罕。
+人人都撒谎！ 算了， 我也不稀罕。 
 }
 Capitan_dialog_79 {
-听说你牌技很厉害，这么大的赌注我可不敢跟你玩。
+听说你牌技很厉害， 这么大的赌注我可不敢跟你玩。 
 }
 Capitan_dialog_80 {
-要不我们把赌注降一降？
+要不我们把赌注降一降？ 
 }
 Capitan_dialog_81 {
-不好意思，我得走了。
+不好意思， 我得走了。 
 }
 Capitan_dialog_82 {
-你开玩笑吧？你根本没有1500皮阿斯特！
+你开玩笑吧？ 你根本没有1500比索！ 
 }
 Capitan_dialog_83 {
-他们会的！
+他们会的！ 
 }
 Capitan_dialog_84 {
-不行，这种赌注只会惹麻烦。
+不行， 这种赌注只会惹麻烦。 
 }
 Capitan_dialog_85 {
-如你所愿。
+如你所愿。 
 }
 Capitan_dialog_86 {
-好，咱们一颗骰子赌两百枚金币。
+好， 咱们一颗骰子赌200比索。 
 }
 Capitan_dialog_87 {
-开始吧！
+开始吧！ 
 }
 Capitan_dialog_88 {
-你问这个干嘛？这是老子的私事。
+你问这个干嘛？ 这是我的私事。 
 }
 Capitan_dialog_89 {
-如你所愿。
+如你所愿。 
 }
 Capitan_dialog_90 {
-俺是从@<GetCityName>来的。
+我是从@<GetTraderCityName>来的。 
 }
 Capitan_dialog_91 {
-这边的店里东西贵不贵？
+那边店里的东西贵不贵？ 
 }
 Capitan_dialog_92 {
-我该走了。
+我该走了。 
 }
 Capitan_dialog_93 {
-我都跟你说过了，别再为这些小事烦我。
+我都跟你说过了， 别再为这些小事烦我。 
 }
 Capitan_dialog_94 {
-没错，你说得对。告辞了。
+没错， 你说得对。 告辞了。 
 }
 Capitan_dialog_95 {
-就这么回事……
+就这么回事…… 
 }
 Capitan_dialog_96 {
-非常感谢！
+非常感谢！ 
 }
 Capitan_dialog_97 {
-哈哈！笑话讲得不错。反正俺的船比你多。赶紧滚回你的船，跟它一起沉了吧。
+哈哈！ 笑话讲得不错。 反正我的船比你多。 赶紧滚回你的船， 跟它一起沉了吧。 
 }
 Capitan_dialog_98 {
-大可不代表更强……
+大可不代表更强…… 
 }
 Capitan_dialog_99 {
-你竟敢在俺的船上搞这些肮脏勾当，真是不自量力。老子大发慈悲，让你回你自己的船——等着跟它一起沉吧。
+你竟敢在我的船上搞这些肮脏勾当， 真是不自量力。 我大发慈悲， 让你回你自己的船——等着跟它一起沉吧。 
 }
 Capitan_dialog_100 {
-今天到底谁会变成鲨鱼的盘中餐，咱们走着瞧！
+今天到底谁会变成鲨鱼的盘中餐， 咱们走着瞧！ 
 }
 Capitan_dialog_101 {
-@<RandSwear> 哼，俺早就听说过你的恶行。随你怎么闹，不过记住，@<XI_ConvertString> 可不会就这么算了！
+@<RandSwear>哼， 我早就听说过你的恶行。 随你怎么闹， 不过记住， @<XI_ConvertString>可不会就这么算了！ 
 }
 Capitan_dialog_102 {
-很好，@<FindMoneyString>这个数我很满意，@<GetAddress_FormToNPC>。
+很好， @<FindMoneyString>这个数我很满意， @<GetAddress_FormToNPC>。 
 }
 Capitan_dialog_103_m {
-哎呀，别当真，我就是开个玩笑！
+哎呀， 别当真， 我就是开个玩笑！ 
 }
 Capitan_dialog_103_f {
-哎呀，别当真，我就是开个玩笑！
+哎呀， 别当真， 我就是开个玩笑！ 
 }
 Capitan_dialog_104 {
-从俺的船上滚下去！
+从我的船上滚下去！ 
 }
 Capitan_dialog_105 {
-我这就走了。
+我这就走了。 
 }
 Capitan_dialog_106 {
-咱们的话已经说完了，@<GetAddress_Form>，我也没什么新消息告诉你。
+咱们的话已经说完了， @<GetAddress_Form>， 我也没什么新消息告诉你。 
 }
 Capitan_dialog_107 {
-明白。海上见！
+明白。 海上见！ 
 }
 Capitan_dialog_108 {
-拿着这个！现在给我滚！
+拿着这个！ 现在给我滚！ 
 }
 Capitan_dialog_109 {
-太棒了！
+太棒了！ 
 }
 Capitan_dialog_110 {
-住手，这样会害死人。你到底想干嘛？
+住手， 这样会害死人。 你到底想干嘛？ 
 }
 Capitan_dialog_111 {
-杀了他！
+杀了他！ 
 }
 Capitan_dialog_112 {
-抓活的。
+抓活的。 
 }
 Capitan_dialog_113 {
-把地图交出来，Billy。
+把地图交出来， Billy。 
 }
 Capitan_dialog_114 {
-这事还得看看！
+这事还得看看！ 
 }
 Capitan_dialog_115 {
-这儿有啥好看的？
+这儿有什么好看的？ 
 }
 Capitan_dialog_116 {
-行吧，你赢了！
+行吧， 你赢了！ 
 }
 Capitan_dialog_117 {
-这才对嘛！
+这才对嘛！ 
 }
 Capitan_dialog_118 {
-拿去吧！
+拿去吧！ 
 }
 Capitan_dialog_119 {
-很好，现在投降吧。
+很好， 现在投降吧。 
 }
 Capitan_dialog_120_m {
-你来了，搅得一团糟，把东西全拿走，现在还想让我当奴隶？没门！
+你来了， 搅得一团糟， 把东西全拿走， 现在还想让我当奴隶？ 没门！ 
 }
 Capitan_dialog_120_f {
-你来了，搅得一团糟，把东西全拿走，现在还想让我当奴隶？没门！
+你来了， 搅得一团糟， 把东西全拿走， 现在还想让我当奴隶？ 没门！ 
 }
 Capitan_dialog_121 {
-那你就把白布鞋准备好吧。
+那你就把白布鞋准备好吧。 
 }
 Capitan_dialog_122 {
-没有，我没见过什么像海盗船的可疑船只。
+没有， 我没见过什么像海盗船的可疑船只。 
 }
 Capitan_dialog_123 {
-明白了。
+明白了。 
 }
 Capitan_dialog_124_m {
-奉@<NationKingsName>之名，投降吧，你这卑鄙的海盗！你的命会保留到公正的审判之时，到时候你得为每一艘被你劫掠的@<NationNameSK>船只负责。
+奉@<NationKingsName>之名， 投降吧， 你这卑鄙的海盗！ 你的命会保留到公正的审判之时， 到时候你得为每一艘被你劫掠的@<NationNameSK>船只负责。 
 }
 Capitan_dialog_124_f {
-奉@<NationKingsName>之名，投降吧，卑鄙的女恶徒！你的命可以留到公正的审判上，到时候你得为劫掠的所有@<NationNameSK>船只负责。
+奉@<NationKingsName>之名， 投降吧， 卑鄙的女恶徒！ 你的命可以留到公正的审判上， 到时候你得为劫掠的所有@<NationNameSK>船只负责。 
 }
 Capitan_dialog_125 {
-想都别想，先投降的是你。
+想都别想， 先投降的是你。 
 }
 Capitan_dialog_126 {
-我听着呢，有话快说。咱们正跟@<fort>打仗，我得指挥战斗。
+我听着呢， 有话快说。 咱们正跟@<fort>打仗， 我得指挥战斗。 
 }
 Capitan_dialog_127 {
-这正是俺来这儿的原因，@<GetAddress_FormToNPC>。
+这正是我来这儿的原因， @<GetAddress_FormToNPC>。 
 }
 Capitan_dialog_128 {
-那我就不多耽搁你了。告辞，@<GetAddress_FormToNPC>。
+那我就不多耽搁你了。 告辞， @<GetAddress_FormToNPC>。 
 }
 Capitan_dialog_129 {
-我没权利跟你谈这些事，请去找我们中队的指挥官。他叫@<GetFullName>，现在就在@<XI_ConvertString>“@<rchar>”号船上。
+我没权利跟你谈这些事， 请去找我们中队的指挥官。 他叫@<GetFullName>， 现在就在@<XI_ConvertString>“@<rchar>”船上。 
 }
 Capitan_dialog_130 {
-谢谢你，我就这么办。
+谢谢你， 我就这么办。 
 }
 Capitan_dialog_131 {
-那咱们到底是在说啥？
+那咱们到底是在说什么？ 
 }
 Capitan_dialog_132 {
-俺可以帮你攻下@<GetConvertStr>的殖民地要塞，拿下那座城。要是成了，咱们就平分战利品。
+我可以帮你攻下@<GetConvertStr>的殖民地要塞， 拿下那座城。 要是成了， 咱们就平分战利品。 
 }
 Capitan_dialog_133 {
-说实话，我这点小事也不值得你费心。告辞了，@<GetAddress_FormToNPC>。
+说实话， 我这点小事也不值得你费心。 告辞了， @<GetAddress_FormToNPC>。 
 }
 Capitan_dialog_134 {
-又是你？我记得我们已经说清楚了吧。
+又是你？ 我记得我们已经说清楚了吧。 
 }
 Capitan_dialog_135_m {
-你说得对——我忘了。
+你说得对——我忘了。 
 }
 Capitan_dialog_135_f {
-你说得对——我忘了。
+你说得对——我忘了。 
 }
 Capitan_dialog_136 {
-那你觉得自己能分到多少战利品？
+那你觉得自己能分到多少战利品？ 
 }
 Capitan_dialog_137 {
-一半。
+一半。 
 }
 Capitan_dialog_138 {
-三分之一。
+三分之一。 
 }
 Capitan_dialog_139 {
-四分之一。
+四分之一。 
 }
 Capitan_dialog_140 {
-我不需要你的帮忙，captain！谁的帮助我都不稀罕，这个殖民地老子无论如何都要拿下。
+我不需要你的帮忙， 船长！ 谁的帮助我都不稀罕， 这个殖民地我无论如何都要拿下。 
 }
 Capitan_dialog_141 {
-你怎么这么肯定，@<GetAddress_FormToNPC>？倒霉的事谁都可能遇上。
+你怎么这么肯定， @<GetAddress_FormToNPC>？ 倒霉的事谁都可能遇上。 
 }
 Capitan_dialog_142 {
-那我就不多打扰你了，@<GetAddress_FormToNPC>。告辞！
+那我就不多打扰你了， @<GetAddress_FormToNPC>。 告辞！ 
 }
 Capitan_dialog_143 {
-不过，我的船在这场战斗里已经被打得不轻，确实需要一些增援。如果你同意@<GetPart>，那咱们就能谈谈条件了。
+不过， 我的船在这场战斗里已经被打得不轻， 确实需要一些增援。 如果你同意@<GetPart>， 那咱们就能谈谈条件了。 
 }
 Capitan_dialog_144 {
-行，@<GetAddress_FormToNPC>。俺去强攻要塞，你用你们船的火炮支援咱们。
+行， @<GetAddress_FormToNPC>。 我去强攻要塞， 你用你们船的火炮支援咱们。 
 }
 Capitan_dialog_145_m {
-俺可不便宜，@<GetAddress_FormToNPC>。抱歉耽误你正事。告辞了。
+我可不便宜， @<GetAddress_FormToNPC>。 抱歉耽误你正事。 告辞了。 
 }
 Capitan_dialog_145_f {
-俺可不是那么容易请的，@<GetAddress_FormToNPC>。不好意思耽误你正事了。告辞。
+我可不是那么容易请的， @<GetAddress_FormToNPC>。 不好意思耽误你正事了。 告辞。 
 }
 Capitan_dialog_146 {
-俺的舰队有足够的船，把这座要塞炸成碎片只是时间问题。现在请离开俺的船，胜利在等着俺！
+我的舰队有足够的船， 把这座要塞炸成碎片只是时间问题。 现在请离开我的船， 胜利在等着我！ 
 }
 Capitan_dialog_147 {
-那好吧，@<GetAddress_FormToNPC>，那俺就告辞了。再会！
+那好吧， @<GetAddress_FormToNPC>， 那我就告辞了。 再会！ 
 }
 Capitan_dialog_148 {
-堡垒的火炮已经重创了我舰队的船只，这场战斗的胜负可能会对我们不利。我接受你的条件，也愿意接受你的帮助。
+堡垒的火炮已经重创了我舰队的船只， 这场战斗的胜负可能会对我们不利。 我接受你的条件， 也愿意接受你的帮助。 
 }
 Capitan_dialog_149 {
-太好了，@<GetAddress_FormToNPC>，那咱们就去强攻要塞，你用你们船上的火炮支援我们。
+太好了， @<GetAddress_FormToNPC>， 那咱们就去强攻要塞， 你用你们船上的火炮支援我们。 
 }
 Capitan_dialog_150 {
-这是不是有点多了，船长？你有@<GetNumShips>，我这边也有@<GetNumShips>。我能给你的就是@<GetPart>。我觉得这样很公平。
+这是不是有点多了， 船长？ 你有@<GetNumShips>， 我这边也有@<GetNumShips>。 我能给你的就是@<GetPart>。 我觉得这样很公平。 
 }
 Capitan_dialog_151_m {
-同意，@<GetAddress_FormToNPC>。那我来负责攻下要塞，你用你的船炮支援我们。
+同意， @<GetAddress_FormToNPC>。 那我来负责攻下要塞， 你用你的船炮支援我们。 
 }
 Capitan_dialog_151_f {
-我同意，@<GetAddress_FormToNPC>，那就由我负责攻占要塞，你用你的船炮支援我们。
+我同意， @<GetAddress_FormToNPC>， 那就由我负责攻占要塞， 你用你的船炮支援我们。 
 }
 Capitan_dialog_152 {
-很遗憾，我不这么认为，@<GetAddress_FormToNPC>。我们已经没什么好谈的了。告辞。
+很遗憾， 我不这么认为， @<GetAddress_FormToNPC>。 我们已经没什么好谈的了。 告辞。 
 }
 Capitan_dialog_153 {
-一旦攻下要塞，我们会立刻派人登陆，然后在城里继续战斗——希望到时候能和你会合。
+一旦攻下要塞， 我们会立刻派人登陆， 然后在城里继续战斗——希望到时候能和你会合。 
 }
 Capitan_dialog_154 {
-就这样吧。回头见，@<GetAddress_FormToNPC>！
+就这样吧。 回头见， @<GetAddress_FormToNPC>！ 
 }
 Capitan_dialog_155 {
-那我就答应你的条件吧。一起合作，我活着离开这场战斗的机会更大。要是成功了，你会分到属于你的那份战利品。
+那我就答应你的条件吧。 一起合作， 我活着离开这场战斗的机会更大。 要是成功了， 你会分到属于你的那份战利品。 
 }
 Capitan_dialog_156 {
-那就好，@<GetAddress_FormToNPC>，咱们算是谈妥了。我这就让手下去攻打要塞。
+那就好， @<GetAddress_FormToNPC>， 咱们算是谈妥了。 我这就让手下去攻打要塞。 
 }
 Capitan_dialog_157 {
-这是不是有点多了，船长？你有@<GetNumShips>，我的中队有@<GetNumShips>。我能给你的只有@<GetPart>。我觉得这样很公平。
+这是不是有点多了， 船长？ 你有@<GetNumShips>， 我的中队有@<GetNumShips>。 我能给你的只有@<GetPart>。 我觉得这样很公平。 
 }
 Capitan_dialog_158_m {
-同意，@<GetAddress_FormToNPC>。那我来负责攻打要塞，你用你的船炮支援我们。
+同意， @<GetAddress_FormToNPC>。 那我来负责攻打要塞， 你用你的船炮支援我们。 
 }
 Capitan_dialog_158_f {
-我同意，@<GetAddress_FormToNPC>。那就由我带队攻打要塞，你用你的船炮支援我们。
+我同意， @<GetAddress_FormToNPC>。 那就由我带队攻打要塞， 你用你的船炮支援我们。 
 }
 Capitan_dialog_159 {
-很遗憾，@<GetAddress_FormToNPC>，我不这么认为。我们已经没什么好谈的了。告辞。
+很遗憾， @<GetAddress_FormToNPC>， 我不这么认为。 我们已经没什么好谈的了。 告辞。 
 }
 Capitan_dialog_160 {
-俺这支舰队的船都被打得不轻，正需要新援。你这条件，老子答应了。
+我这支舰队的船都被打得不轻， 正需要新援。 你这条件， 我答应了。 
 }
 Capitan_dialog_161_m {
-很高兴我们能达成协议，@<GetAddress_FormToNPC>。我这就下令让我的人动手，开始进攻要塞。
+很高兴我们能达成协议， @<GetAddress_FormToNPC>。 我这就下令让我的人动手， 开始进攻要塞。 
 }
 Capitan_dialog_161_f {
-很高兴我们能达成协议，@<GetAddress_FormToNPC>。我这就下令让我的人出击，开始攻打要塞。
+很高兴我们能达成协议， @<GetAddress_FormToNPC>。 我这就下令让我的人出击， 开始攻打要塞。 
 }
 Capitan_dialog_162 {
-你好，船长！这场战斗打得够激烈的，不过我们还是顶住了守军的顽强抵抗。战利品一共是@<FindMoneyString>。按照咱们的约定，你那份是@<ilt>。钱给你——你绝对配得上。现在请允许我先告辞，还有些事要处理。
+你好， 船长！ 这场战斗打得够激烈的， 不过我们还是顶住了守军的顽强抵抗。 战利品一共是@<FindMoneyString>。 按照咱们的约定， 你那份是@<ilt>。 钱给你——你绝对配得上。 现在请允许我先告辞， 还有些事要处理。 
 }
 Capitan_dialog_163 {
-那在下就先告辞了，@<GetAddress_FormToNPC>。告别！
+那在下就先告辞了， @<GetAddress_FormToNPC>。 告别！ 
 }
 Capitan_dialog_164 {
-听说你在攻打@<NationNameSK>殖民地时帮了我们舰队的大忙——@<GetConvertStr>！我们真的非常感谢你，@<GetAddress_Form>。
+听说你在攻打@<NationNameSK>殖民地时帮了我们舰队的大忙——@<GetConvertStr>！ 我们真的非常感谢你， @<GetAddress_Form>。 
 }
 Capitan_dialog_165 {
-你好，船长！找俺有事吗？
+你好， 船长！ 找我有事吗？ 
 }
 Capitan_dialog_166 {
-没什么事找你，@<GetAddress_FormToNPC>。告辞！
+没什么事找你， @<GetAddress_FormToNPC>。 告辞！ 
 }
 Capitan_dialog_167 {
-我在听，你有话快说——我赶时间。我正执行一项重要的秘密任务，上头命令我只要遇到对我们护航队有威胁的可疑船只，就得全部击沉。
+我在听， 你有话快说——我赶时间。 我正执行一项重要的秘密任务， 上头命令我只要遇到对我们护航队有威胁的可疑船只， 就得全部击沉。 
 }
 Capitan_dialog_168 {
-那我就不多耽搁你了。告辞，@<GetAddress_FormToNPC>。
+那我就不多耽搁你了。 告辞， @<GetAddress_FormToNPC>。 
 }
 Capitan_dialog_169 {
-我没权利跟你谈这些事，请去找我们中队的指挥官。他叫@<GetFullName>，现在就在@<XI_ConvertString>“@<rch>”号船上。
+我没权利跟你谈这些事， 请去找我们中队的指挥官。 他叫@<GetFullName>， 现在就在@<XI_ConvertString>“@<rch>”船上。 
 }
 Capitan_dialog_170 {
-谢谢你，我就这么办。
+谢谢你， 我就这么办。 
 }
 Capitan_dialog_171 {
 一艘船都没有
@@ -581,5 +581,5 @@ Capitan_dialog_181 {
 四分之一的战利品
 }
 Capitan_dialog_182 {
-@<TimeGreeting>，@<GetAddress_Form>！我是 @<GetFullName>。你来俺船上有啥事？
+@<TimeGreeting>，@<GetAddress_Form>！我是@<GetFullName>。是什么风把您吹到我的船上来了？
 }

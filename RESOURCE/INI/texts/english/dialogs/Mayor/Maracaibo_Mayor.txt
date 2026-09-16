@@ -148,3 +148,42 @@ So, your task here is complete; I won’t keep you any longer. Please convey my 
 Maracaibo_Mayor_44 {
 Certainly, señor. Farewell.
 }
+Maracaibo_Mayor_45 {
+How much do you want?
+}
+Maracaibo_Mayor_46 {
+One million pesos for Maracaibo. Another million for Gibraltar.
+}
+Maracaibo_Mayor_47 {
+Nonsense! We don't have that kind of money! We never did!
+}
+Maracaibo_Mayor_48 {
+Threats won't help you! We truly don't have such a sum!
+}
+Maracaibo_Mayor_49 {
+Then find it! We've lost too many men because of you. There'll be no bargaining. If you don't pay, we'll burn both cities to the ground. And we'll tie you to a powder keg right here. Let your subjects gather their governor from all over the square!
+}
+Maracaibo_Mayor_50 {
+This story sounds suspiciously familiar...
+}
+Maracaibo_Mayor_51 {
+Ah yes. I forgot to introduce myself. Alonso de Vargas. I used the name @<GetFullName> while serving in intelligence. After I retired, I kept it - back then I still hoped to return.
+}
+Maracaibo_Mayor_52 {
+It can't be...
+}
+Maracaibo_Mayor_53 {
+If only Diego could see this. He would be pleased with his work.
+}
+Maracaibo_Mayor_54 {
+But he'll never see it...
+}
+Maracaibo_Mayor_55 {
+To Tortuga?..
+}
+Maracaibo_Mayor_56 {
+Exactly. You outwitted me. Very well, take your prize. Only by now, the Spanish flag is most likely already flying over Tortuga.
+}
+Maracaibo_Mayor_57 {
+Hardly. Your brother...
+}

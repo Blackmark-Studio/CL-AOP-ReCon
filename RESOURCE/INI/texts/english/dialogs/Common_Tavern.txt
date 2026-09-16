@@ -1229,7 +1229,7 @@ Common_Tavern_364 {
 All the best.
 }
 Common_Tavern_365 {
-Of course, I have what you need, Doctor Blood. Mr. Griffin, whose fracture you set not long ago, is an old gunsmith by trade. His house is not far from Governor Steed’s estate—pay him a visit. I’m sure he won’t turn you away.
+Hmm... Alright, I know who you need. Mr. Griffin, whose fracture you set not long ago, is an old gunsmith by trade. His house is not far from Governor Steed’s estate—pay him a visit. I’m sure he won’t turn you away.
 }
 Common_Tavern_366 {
 All the best.
@@ -1491,4 +1491,10 @@ Thank you! You really helped me out!
 }
 Common_Tavern_432 {
 I need to sign off part of my crew.
+}
+LeBask_TavernRoom_1 {
+Monsieur Etienne Marceau is renting my room at present, and he has paid a month in advance, so I cannot help you, Captain.
+}
+LeBask_TavernRoom_2 {
+Pity, such a pity...
 }

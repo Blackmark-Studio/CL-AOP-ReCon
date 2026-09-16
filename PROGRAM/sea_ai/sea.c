@@ -270,16 +270,22 @@ string Sea_FindNearColony(bool bColony) //ROSARAK, BOAL
 		{
 			sShore = aLocators.go; //1. Запоминаем, куда ведёт локатор, где мы последний раз бросали якорь
 			
-			if (CheckAttribute(&locations[FindLocation(sShore)], "fastreload"))
+			int iShoreLoc = FindLocation(sShore);
+			if (iShoreLoc != -1 && CheckAttribute(&locations[iShoreLoc], "fastreload"))
 			{
 				//2. Если это город, то колония лежит в fastreload
-				return locations[FindLocation(sShore)].fastreload;
+				return locations[iShoreLoc].fastreload;
 			}
 		}
 	}
 	//3. В противном случае мы возвращаем бухту, где бросали якорь
 	//Либо "none", если эта бухта на другом острове, а на текущем не парковались
-	if(bColony) return GetCityNameByLocation(&locations[FindLocation(sShore)]);
+	if(bColony)
+	{
+		int iLoc = FindLocation(sShore);
+		if (iLoc == -1) return "none";
+		return GetCityNameByLocation(&locations[iLoc]);
+	}
 	return sShore;
 }
 
@@ -323,7 +329,7 @@ void Sea_LandLoad()
 	//ResetSoundScheme();
 	ResetSound(); // new
 
-	if (bSeaActive == false) return;
+	if (bSeaActive == false) { bSeaReloadStarted = false; return; }
 	if (bCanEnterToLand == true)
 	{
 		LayerFreeze(REALIZE, false);
@@ -333,9 +339,26 @@ void Sea_LandLoad()
 		EmptyAllFantomShips(); // boal
 		//Partition_SetValue("after");// Дележ добычи уход на сушу
 		Group_FreeAllDead();
-		PerkLoad(1);
-		RefreshActiveSeaPerks(true);
+		ResetPartyPerksOnTransition(true);
+		SeaToLand_CheckAutoSave();
 	}
+	else
+		bSeaReloadStarted = false; // KZ > швартовка не состоялась, остаёмся в море (вернуть счётчики морских перков)
+}
+
+void SeaToLand_CheckAutoSave()
+{
+	if (GetMaxAutoSaves("Moor") != 0)
+	{
+		DeleteAfterSaveFunction();
+		SetEventHandler("ReloadEndFadeIn_OnEnd", "MoorAutoSave_Begin", 1);
+	}
+}
+
+void MoorAutoSave_Begin()
+{
+	DelEventHandler("ReloadEndFadeIn_OnEnd", "MoorAutoSave_Begin");
+	PostEvent("Event_NewAutoSave", 1, "s", "Moor");
 }
 
 void Sea_MapStartFade()
@@ -414,14 +437,14 @@ void Sea_MapLoad()
 	            if (i > 0 && GetMinCrewQuantity(chref) > GetCrewQuantity(chref))
 	            {
 	                ok = false;
-	                Log_SetStringToLog(StringFromKey("InfoMessages_85", UpperFirst(XI_ConvertString("musicmod_s")), chref.Ship.Name));
+	                Log_SetStringToLog(StringFromKey("InfoMessages_85", UpperFirst(XI_ConvertString("Continuous music ship")), chref.Ship.Name));
 	            }
 			}
 			
             if (GetMaxCrewQuantity(chref) < GetCrewQuantity(chref))
             {
                 ok = false;
-                Log_SetStringToLog(StringFromKey("InfoMessages_87", UpperFirst(XI_ConvertString("musicmod_s")), chref.Ship.Name));
+                Log_SetStringToLog(StringFromKey("InfoMessages_87", UpperFirst(XI_ConvertString("Continuous music ship")), chref.Ship.Name));
             }
         }
     }
@@ -441,15 +464,31 @@ void Sea_MapLoad()
     // рассчет времени на карте от скорости кораблей <--
     pchar.CheckEnemyCompanionType = "Sea_MapLoad"; // откуда вход
     if (!CheckEnemyCompanionDistance2GoAway(true)) return; // && !bBettaTestMode  табличка выхода из боя
-    
+
+	Sea_MapLoad_CheckAutoSave();
+}
+
+void Sea_MapLoad_CheckAutoSave()
+{
+	if(GetMaxAutoSaves("Map") != 0)
+	{
+		SetAfterSaveFunction("Sea_MapLoad_Continue");
+		PostEvent("Event_NewAutoSave", 1, "s", "Map");
+	}
+	else
+		Sea_MapLoad_Continue();
+}
+
+void Sea_MapLoad_Continue()
+{
 	LAi_SetAlcoholNormal(pchar);
-    
+
 	bSeaReloadStarted = true;
 	PauseAllSounds();
 
  	//ResetSoundScheme();
 	ResetSound(); // new
-	
+
 	SetEventHandler("FaderEvent_StartFade", "Sea_MapStartFade", 0);
 	SetEventHandler("FaderEvent_EndFade", "Sea_MapEndFade", 0);
 
@@ -465,8 +504,7 @@ void Sea_MapLoad()
 	SeaMapLoadZ = stf(pchar.Ship.Pos.z);
 	SeaMapLoadAY = stf(pchar.Ship.Ang.y);
 	
-	PerkLoad(1);
-	RefreshActiveSeaPerks(true);
+	ResetPartyPerksOnTransition(true);
 
 	DeleteAttribute(&TEV, "FortLandTroops"); //Control tips
 }
@@ -494,9 +532,6 @@ void Land_MapLoad()
 	SeaMapLoadX = stf(pchar.Ship.Pos.x);
 	SeaMapLoadZ = stf(pchar.Ship.Pos.z);
 	SeaMapLoadAY = stf(pchar.Ship.Ang.y);
-	
-	PerkLoad(1);
-	RefreshActiveSeaPerks(true);
 }
 
 string	sTaskList[2];
@@ -528,7 +563,7 @@ void Sea_LoginGroupNow(string sGroupID)
 
 void SeaLogin(ref Login)
 {
-	int		i, j, k, iShipType;
+	int		i, j, k;
 	float	x, y, z, ay;
 	ref		rCharacter, rGroup, rEncounter;
 	aref	rRawGroup;
@@ -711,9 +746,9 @@ void SeaLogin(ref Login)
 		for (i=0; i<MAX_SHIP_GROUPS; i++) 
 		{
 			rGroup = Group_GetGroupByIndex(i);
-			if (!CheckAttribute(rGroup,"AlreadyLoaded")) 
-			{ 
-				DeleteAttribute(rGroup,"AlreadyLoaded");	
+			if (CheckAttribute(rGroup,"AlreadyLoaded"))
+			{
+				DeleteAttribute(rGroup,"AlreadyLoaded");
 			}
 
 			if (!CheckAttribute(rGroup, "id"))			continue;
@@ -908,7 +943,7 @@ void SeaLogin(ref Login)
 		// Ugeen --> генерация параметров	для спецэнкаунтеров
 		if (iEncounterType == ENCOUNTER_TYPE_BARREL)
 		{
-			iFantomIndex = FANTOM_CHARACTERS + iNumFantoms;
+			iFantomIndex = FANTOM_CHARACTERS + iNumFantoms - 1; // > генератор в AIFantom.c уже зарезервировал этот слот и сделал iNumFantoms++
 			rFantom = &Characters[iFantomIndex];
 			rFantom.id = "EncBarrel_" + iFantomIndex;
 			rFantom.index = iFantomIndex;
@@ -930,7 +965,7 @@ void SeaLogin(ref Login)
 
 		if (iEncounterType == ENCOUNTER_TYPE_BOAT)
 		{
-			iFantomIndex = FANTOM_CHARACTERS + iNumFantoms;
+			iFantomIndex = FANTOM_CHARACTERS + iNumFantoms - 1; // > то же самое
 			rFantom = &Characters[iFantomIndex];
 			rFantom.id = iFantomIndex;
 			rFantom.index = iFantomIndex;
@@ -956,65 +991,6 @@ void SeaLogin(ref Login)
 		
 		Trace("Set group coords : " + sGName + ", x = " + x + ", z = " + z + ", ay = " + ay);		
 
-        //navy --> 28.12.2009 изменение алгоритам загрузки кораблей случаек в море, чтобы ГГ мордой в центр экскадры не грузился.
-        float b, x_mc, z_mc, ay_mc, ay_res, ay_e, z1;
-        bool isMChrAttack = false;
-
-        //координаты ГГ
-        x_mc = 	stf(Login.PlayerGroup.x);
-        z_mc = 	stf(Login.PlayerGroup.z);
-        ay_mc = stf(Login.PlayerGroup.ay);
-		
-		if(ay_mc < 0) ay_mc = ay_mc + PIm2;
-		ay_e = ay;
-		if(ay < 0) ay_e = ay_e + PIm2;
-		
-        //угол результирующего вектора между случайкой и ГГ на карте
-        ay_res = atan(-((z_mc-z)/(x-x_mc)));
-
-		Trace("ay_res = " + ay_res);		
-		
-        //т.к. арктангенс даёт только острые углы, то считаем тупые
-        if (ay_res < 0 && z > z_mc)
-        {
-            ay_res += PI;
-        }
-
-        if (ay_res > 0 && z < z_mc)
-        {
-            ay_res += PI;
-        }
-
-		Trace("1. Set player group coords :  x = " + x_mc + ", z = " + z_mc + ", ay = " + ay_mc + ", ay_res = " + ay_res);		
-		Trace("2. Set enemy group coords :  x = " + x + ", z = " + z +", ay = " + ay + ", ay_e = " + ay_e);		
-		
-        //если угол между вектором ГГ и результирующим вектором острый,
-        //то считаем, что атакует ГГ
-        if (cos(ay_res - ay_mc) > 0) 
-		{
-			isMChrAttack = true;
-//			Log_TestInfo("ГГ атакует !");
-		}
-
-        if (isMChrAttack)
-        {
-            //определяем знак приращения координаты Х
-            if (abs(ay) < PI) k = 1;
-            else k = -1;
-				
-            //уравнение прямой для случайки z = k * x + b
-            b = z - ay_e * x;
-
-            //смещаем позицию случайки, коэффициент смещения подобрать экспериментально или ввести функцию.
-//			z1 = (k * iNumFantomShips * 200 + x) * ay - b;
-			//z1 = k * x * ay + b;
-			
-//            Group_SetXZ_AY(sGName, x, z, ay);
-			Trace("Set group new coords : " + sGName + ", x = " + x + ", z = " + z + ", ay_e = " + ay_e + ", b = " + b + ", k = " + k);		
-			
-        }
-		
-        //navy <--
 
 		// load ship to sea
 		if (iNumFantomShips) 
@@ -1400,7 +1376,7 @@ void Sea_FirstInit()
 	trace("Sea_FirstInit");
 	bSeaLoaded = true;
 	RefreshBattleInterface();
-	if( SeaCameras.Camera == "SeaDeckCamera" ) {
+	if( SeaCameras.Camera == SEA_CAMERA_DECK ) {
 		Sailors.IsOnDeck = "1";
 	}
 	CreateEntity(&Seafoam,"Seafoam");//				ReloadProgressUpdate();

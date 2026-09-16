@@ -1,0 +1,39 @@
+Tavernkeeper_dialog_1 {
+Así que eres tú, Capitán @<pchar>. Apenas tuve tiempo de echar los dados bajo esta vela tensa cuando Nicolas Rimalie ya me había contado tus hazañas. Este espadachín desesperado y yo llevamos tanto tiempo compartiendo pan y pólvora que, lo juro por mi honor, ya he olvidado quién salvó primero la vida de quién en el infierno, y quién nunca pagó esa maldita deuda de juego.
+}
+Tavernkeeper_dialog_2 {
+Es gratificante saber que la palabra de Rimalie tiene tanto peso aquí. Que tengas un buen viaje a Tortuga, amigo mío.
+}
+Tavernkeeper_dialog_3 {
+¡Saludos, Capitán @<pchar>! Como puede ver, sigo vigilando atentamente junto a ese maldito barril de ron. Si su barco necesita hombres con mirada firme y manos que no tiemblen, solo avíseme.
+}
+Tavernkeeper_dialog_4 {
+¡Capitán @<pchar>! Al amanecer, varios cazadores experimentados emergieron de la jungla: gente salvaje, pero con un fuerte olor a pólvora. Si necesita tiradores de élite, con gusto intercederé por usted.
+}
+Tavernkeeper_dialog_5 {
+Otra vez usted, Capitán @<pchar>. Buen presagio: significa que el mar aún no se ha tragado su barco. Si ha venido buscando hombres leales, entonces un par de temerarios desesperados solo buscan un comandante digno.
+}
+Tavernkeeper_dialog_6 {
+@<LinkRandPhrase>
+}
+Tavernkeeper_dialog_7 {
+Precisamente por eso vine. ¿Tienes en mente algún tirador en particular para hoy?
+}
+Tavernkeeper_dialog_8 {
+Tengo el juego completo, gracias. Solo pasé a refrescarme la garganta y a ver cómo estabas.
+}
+Tavernkeeper_dialog_9 {
+Gracias, capitán. Apenas empiezo a echar raíces aquí, pero la garantía de Nicolas significa muchísimo para mí. Tortuga está plagada de gentuza, pero los verdaderos veteranos de la zona jamás despreciarían al primer aventurero que se cruza en su camino. Sin embargo, si les susurrara que usted es un hombre de honor, la conversación tomaría un rumbo completamente distinto.
+}
+Tavernkeeper_dialog_10 {
+Dicha protección resultará muy útil.
+}
+Tavernkeeper_dialog_11 {
+En ese caso, trato hecho. Si tu barco necesita hombres de confianza, siempre me encontrarás aquí mismo, junto a este barril, ya sea bajo el sol a plomo o en plena oscuridad.\nLos bucaneros tienen la costumbre de salir de la selva a las horas más imprevisibles: agotados, harapientos y furiosos como demonios. Necesitan de inmediato una jarra de ron fuerte y a alguien capaz de escuchar sus fanfarronadas antes de que se degüellen entre ellos discutiendo por el botín. Por eso no abandono mi puesto ni un instante. Haré las averiguaciones necesarias y te pondré en contacto con hombres cuyas balas rara vez fallan.
+}
+Tavernkeeper_dialog_12 {
+Impresionante dedicación al oficio. Veamos qué me puedes ofrecer ahora mismo.
+}
+Tavernkeeper_dialog_13 {
+De acuerdo. Sin duda me pasaré por allí bajo tu acogedor toldo en cuanto necesite algunos tiradores.
+}

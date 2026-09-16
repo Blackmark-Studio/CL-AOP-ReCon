@@ -1223,13 +1223,19 @@ Common_Usurer_359 {
 Vous voulez que je retrouve cette personne? Pourquoi pensez-vous qu’elle est encore en ville?
 }
 Common_Usurer_360 {
-Il est en ville, je vous l’assure. Aucun navire n’a quitté le port aujourd’hui. Et en récompense, vous recevrez 10 %%, soit 3 000 piastres. Qu’en dites-vous?
+Il est en ville, je vous l’assure. Aucun navire n’a encore quitté le port aujourd’hui. Et vous recevrez 10%% en récompense, soit 3 000 piastres. Compte tenu de votre situation... je suis prêt à vous laisser jusqu’à demain soir. Après quoi, j’engagerai des chasseurs de primes. Qu’en dites-vous?
 }
 Common_Usurer_361 {
 Tu sais, je crois que je vais t'aider.
 }
 Common_Usurer_362 {
 Ne compte pas sur moi.
+}
+Common_Usurer_362_1 {
+Excellent. Compte tenu de votre situation, je suis prêt à attendre jusqu’à demain soir. Mais, docteur, je vous en prie, n’essayez pas de me tromper : il me suffira de dire un seul mot au colonel...
+}
+Common_Usurer_362_2 {
+Assez. J’ai perdu ma liberté, mais pas ma conscience.
 }
 Common_Usurer_363 {
 Alors, tu as réussi?

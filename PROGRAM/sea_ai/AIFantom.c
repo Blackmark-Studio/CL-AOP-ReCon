@@ -39,20 +39,23 @@ int Fantom_GenerateEncounterExt(string sGroupName, object oResult, int iEType, i
 	Encounter_GetClassesFromRank(iEType, iRank, &iMerchantClassMin, &iMerchantClassMax, &iWarClassMin, &iWarClassMax);
 	
 	int iFantomIndex, iShipType;
+	int iGenerated = 0; // > считаем только реально сгенерированные
 
 	for (i=0; i<iNumMerchantShips; i++)
 	{
 		iShipType = Fantom_GetShipTypeExt(iMerchantClassMin, iMerchantClassMax, "Merchant", sGroupName, "Trade", iEType, iNation);
 		if (iShipType == INVALID_SHIP_TYPE) continue;
+		iGenerated++;
 	}
 
 	for (i=0; i<iNumWarShips; i++)
 	{
 		iShipType = Fantom_GetShipTypeExt(iWarClassMin, iWarClassMax, "War", sGroupName, "War", iEType, iNation);
 		if (iShipType == INVALID_SHIP_TYPE) continue;
+		iGenerated++;
 	}
 
-	return iNumWarShips + iNumMerchantShips;
+	return iGenerated;
 }
 
 int Fantom_GetShipTypeExt(int iClassMin, int iClassMax, string sShipType, string sGroupName, string sFantomType, int iEncounterType, int iNation)

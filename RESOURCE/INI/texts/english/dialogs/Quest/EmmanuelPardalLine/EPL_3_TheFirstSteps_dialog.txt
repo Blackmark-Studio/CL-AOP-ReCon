@@ -1,0 +1,44 @@
+EPL_3_TheFirstSteps_dialog_1 {Please report the bug to technical support.}
+EPL_3_TheFirstSteps_dialog_2 {You had enough courage to come here, woman, or was it stupidity that kept you from noticing how things have changed around you?}
+EPL_3_TheFirstSteps_dialog_3 {My name is @<GetFullName>, and I am here precisely because certain things have changed around here.}
+EPL_3_TheFirstSteps_dialog_4 {Is that so? Go on.}
+EPL_3_TheFirstSteps_dialog_5 {Fortunately, I was in Santo Domingo when your men made their unsuccessful attempt to storm the town. Rumors spread through the city that Spain has offered a reward for two young ladies - the daughters of the commandant of this fort - and I intend to get my hands on them.}
+EPL_3_TheFirstSteps_dialog_6 {You think that if I had them, I would hand them over?}
+EPL_3_TheFirstSteps_dialog_7 {I think you need an intermediary for negotiations. The Spaniards will not let you come within cannon-shot of any of their settlements.}
+EPL_3_TheFirstSteps_dialog_8 {They have no reason to. My men did not attack the colony. I merely seized the opportunity and occupied an abandoned fortification. A profitable position, I might add; it would have been foolish to ignore it. English and French convoys pass close by all the time, and in good weather you can even make out the shores of Tortuga.}
+EPL_3_TheFirstSteps_dialog_9 {And yet, what about the sisters?}
+EPL_3_TheFirstSteps_dialog_10 {You can take your lads and comb the island, but I am willing to wager that if they are alive, they will come on their own. Or you can hand out shovels and order your men to check the burial ground outside the town. You will not find them with me.}
+EPL_3_TheFirstSteps_dialog_11 {No one would offer a reward for the dead.}
+EPL_3_TheFirstSteps_dialog_12 {Then I cannot help you.}
+EPL_3_TheFirstSteps_dialog_13 {I will pay you another visit when the opportunity arises.}
+EPL_3_TheFirstSteps_dialog_14 {I have come on the orders of the Governor of Santo Domingo with a report on the recent events on Hispaniola.}
+EPL_3_TheFirstSteps_dialog_15 {I already have information about what happened. Rumors, you know, travel faster than the wind in these parts, but of course I will read the official report. Accept this as payment for its timely delivery.}
+EPL_3_TheFirstSteps_dialog_16 {Señor @<GetFullName> has already paid me my reward in advance.}
+EPL_3_TheFirstSteps_dialog_17 {Consider this compensation for additional expenses.}
+EPL_3_TheFirstSteps_dialog_18 {I will not object; I am in a difficult position at present. In that regard, I have a question of a somewhat personal rather than governmental nature. What fate awaits the colony Spain has lost? It was my home for a long time.}
+EPL_3_TheFirstSteps_dialog_19 {No hasty decisions can be made in this matter. But I can tell you this with certainty: Spain will not simply overlook the bloody outrage committed by the pirates. Sooner or later the Spanish flag will fly over La Vega again, and justice will prevail! Now I must ask you to leave me. I have work to do.}
+EPL_3_TheFirstSteps_dialog_20 {Thank you, Your Excellency!}
+EPL_3_TheFirstSteps_dialog_21 {
+Congratulations, @<GetFullName>. You have become the heroine of Hispaniola. Your father would be proud of you.
+}
+EPL_3_TheFirstSteps_dialog_22 {
+My father would... Wait, what did you call me?!
+}
+EPL_3_TheFirstSteps_dialog_23 {
+@<GetFullName>. Or did you think I was going to call you Remidos?
+}
+EPL_3_TheFirstSteps_dialog_24 {
+You clearly know more than I would have thought, Sandro. Explain yourself.
+}
+EPL_3_TheFirstSteps_dialog_25 {
+Have you never found it strange that your name stands out a little among other Spanish names?
+}
+EPL_3_TheFirstSteps_dialog_26 {
+My mother gave me that name because she was a Frenchwoman from the other part of the island - Haiti. So what?
+}
+EPL_3_TheFirstSteps_dialog_27 {
+The point is that your father - Manuel Pardal - is a famous Portuguese corsair in the service of the Spanish Crown. It was in his honour that you were given the name Emmanuel. But living under such a surname can be very dangerous, so you were hidden far away from every threat.\nThat is why I am delivering a message from your father: 'I wish you a fate far better than mine, daughter.' Now I have fulfilled my duty; you will fulfil yours.\nI am leaving my friend and physician Hopkins aboard your ship. He is still too weak to travel with me where I am going... In short, he is not yet fit for it. Please look after him for a while, and I will return for him later. I will find you, do not worry, @<GetFullName>.
+}
+EPL_3_TheFirstSteps_dialog_28 {
+All right, Sandro. Truly... I need to think all of this over. Thank you.
+}

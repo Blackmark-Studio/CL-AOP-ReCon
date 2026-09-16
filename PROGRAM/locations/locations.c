@@ -13,7 +13,6 @@ native void ReloadProgressEnd();
 native void SystemDelay(int millsec);
 native void ExecuteTechnique(string techName);
 native string GetNextLineString();
-native void SetReloadNextTipsImage();
 
 #libriary "ScriptLocationLibrary"
 
@@ -135,6 +134,22 @@ void LocationMakeClone(string _locId)
 	pchar.questTemp.LocationClone.id = rOrg.id;
 }
 //navy <--
+
+void CloneLocation(string fromLoc, string targetLoc) {
+	ref rOrg, rClone;
+	int iOrg, iClone;
+
+	iOrg = FindLocation(fromLoc);
+	iClone = FindLocation(targetLoc);
+
+	makeref(rOrg, Locations[iOrg]);
+	makeref(rClone, Locations[iClone]);
+
+	DeleteAttribute(rClone, "");
+	CopyAttributes(rClone, rOrg);
+	rClone.id = targetLoc;
+	rClone.index = iClone;
+}
 
 // Warship -->
 // Подключить к локации ещё одну модельку
@@ -296,6 +311,10 @@ void QuestPointerDelLocEx(string Id, string group, string locator, string questN
 #event_handler("eventChangeOption", "EnableQuestPointers_ChangeOption");
 void EnableQuestPointers_ChangeOption()
 {
+    // KZ > квестовые метки в главном меню не рисуем
+    if(!CheckAttribute(&InterfaceStates,"Buttons.Resume.enable")) return;
+    if(sti(InterfaceStates.Buttons.Resume.enable) != true) return;
+
     if(!CheckAttribute(&InterfaceStates,"EnabledQuestsPointers")) return;
     bool isEnable = sti(InterfaceStates.EnabledQuestsPointers);
     if (GetGlobalTutor())
@@ -425,8 +444,10 @@ void InitAddLoc(int index)
 	loc.locators_radius.redteleport = 0.2;
 	loc.locators_radius.greenteleport = 0.2;
 	loc.locators_radius.magsteleport = 0.2;
+	loc.locators_radius.effect = 0.3;
 	loc.locators_radius.EncDetector = 8.0;
 	loc.locators_radius.teleport = 1.0;
+	loc.locators_radius.event = 1.0;
 	loc.locators_radius.quest = 1.0;
 
 	if (MOD_BETTATESTMODE == "On")

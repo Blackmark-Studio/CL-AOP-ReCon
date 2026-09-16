@@ -2,15 +2,11 @@ object Tornado;
 
 void WhrDeleteTornadoEnvironment()
 {
-	// screwface
-	aref aCurWeather = GetCurrentWeather();
-	if (CheckAttribute(aCurWeather, "Tornado") == false || sti(aCurWeather.Tornado) != true) return;
-
 	if (isEntity(&Tornado))
 	{
 		DeleteClass(&Tornado);
 		DeleteAttribute(&Tornado,"");
-		aCurWeather.Tornado = false; // screwface
+		WeatherParams.Tornado = false;
 	}
 }
 
@@ -19,6 +15,8 @@ void WhrCreateTornadoEnvironment()
 	aref aCurWeather = GetCurrentWeather();
 // KK -->
 	if (CheckAttribute(aCurWeather, "Tornado") == false || sti(aCurWeather.Tornado) != true) return;
+	// > Запрет торнадо на суше
+	if (sPreset == "storm_land") return;
 
 	ref rTornado; makeref(rTornado, Tornado);
 	float x = 10000.0;

@@ -1,0 +1,184 @@
+Jaco_dialog_1 {
+Panie Rimallet! Zbliża się tu cały tuzin uzbrojonych po zęby osiłków. A z tyłu jeszcze dwóch ciągnie moździerze i ładuje je w marszu.
+}
+Jaco_dialog_2 {
+A co miałem zrobić? Może ktoś z moich wciąż żyje. Nie mogłem po prostu o nich zapomnieć.
+}
+Jaco_dialog_3 {
+I Mansfield cię przyjął?
+}
+Jaco_dialog_4 {
+Przyjął. Nawet nie zawołał swoich zbirów. Wysłuchał mnie, a potem zaproponował układ: wykonuję dla niego jedno zadanie, a on mówi mi wszystko, co wie o moim statku i załodze.
+}
+Jaco_dialog_5 {
+Jakie zadanie?
+}
+Jaco_dialog_6 {
+Wyciągnąć z więzienia w Santo Domingo jego kanoniera — René Duvala.
+}
+Jaco_dialog_7 {
+Z hiszpańskiego więzienia? Samemu?
+}
+Jaco_dialog_8 {
+Nie trzeba było brać go szturmem. Ludzi Mansfielda znają w Santo Domingo z twarzy, a mnie — nie. Miałem wejść jako posłaniec portowy, przekupić pisarza i wyprowadzić Duvala przez wejście służbowe.
+}
+Jaco_dialog_9 {
+I to wszystko dla... zwykłego kanoniera?
+}
+Jaco_dialog_10 {
+Duval nie jest zwykłym kanonierem. Ma diabelskie szczęście. Jeszcze jako chłopak jednym strzałem z dwunastofuntowej kolubryny posłał na dno ciężki hiszpański galeon „La Purísima”. A pół roku temu ich bryg ścigał angielski patrol. Duval w kilka minut pozbawił go masztów i bryg spokojnie uszedł pogoni. Takich historii ma na pęczki. Według Mansfielda taki człowiek jest wart więcej niż cała skrzynia złota.
+}
+Jaco_dialog_11 {
+Sądząc po tym, że Duval nadal siedzi w więzieniu, coś poszło nie tak.
+}
+Jaco_dialog_12 {
+Wszystko posypało się, zanim jeszcze dotarłem do więzienia. W tawernie przysiadł się do mnie człowiek i powiedział, że plan się zmienił. Pisarza zaczęto podejrzewać, a Duvala mają przenieść do innej celi. Miałem spotkać się z nim w zaułku za więzieniem.
+}
+Jaco_dialog_13 {
+I uwierzyłeś mu?
+}
+Jaco_dialog_14 {
+Znał nazwisko pisarza, wartownika i sumę, którą miałem przekazać. Skąd miałem wiedzieć, że ktoś nas wsypał?
+}
+Jaco_dialog_15 {
+Co czekało na ciebie w zaułku?
+}
+Jaco_dialog_16 {
+Trzech Hiszpanów. Próbowali wziąć mnie żywcem, ale zdołałem się wyrwać. Tyle że po tym cały plan był już spalony: pisarza aresztowano, wartownika zdjęto z posterunku, a Duvala przeniesiono pod strażą w głąb więzienia. Teraz nie dostanie się tam ani posłaniec, ani lekarz.
+}
+Jaco_dialog_17 {
+Co powiedział Mansfield, kiedy wróciłeś?
+}
+Jaco_dialog_18 {
+Nie wróciłem. Z czym miałem do niego iść? Pieniądze przepadły, jego ludzi zdekonspirowano, a Duvala pilnują teraz jeszcze lepiej. Mansfield nie potrzebuje wymówek.
+}
+Jaco_dialog_19 {
+I teraz uważa, że uciekłeś.
+}
+Jaco_dialog_20 {
+Albo sprzedałem się Hiszpanom. Jego ludzie przeczesują już Hispaniolę i mnie szukają.
+}
+Jaco_dialog_21 {
+Naprawdę jesteście gotowi dla mnie pakować się do Santo Domingo?
+}
+Jaco_dialog_22 {
+Nie tylko dla ciebie. Dopóki Mansfield na ciebie poluje, Nicolas nigdzie nie odejdzie. A ja muszę dostarczyć go le Basque’owi. Teraz nasze sprawy są ze sobą związane.
+}
+Jaco_dialog_23 {
+Kapitanie, już myślałem, że po mnie! Zjawiliście się w samą porę.
+}
+Jaco_dialog_24 {
+Twój ukochany kapelusz wskazał mi drogę. Leży w dżungli przy podejściu do jaskini. Znając ciebie, od razu zrozumiałem, że prędzej rozstaniesz się z głową niż z nim.
+}
+Jaco_dialog_25 {
+Czyli nadal tam jest! Zabierzemy go po drodze powrotnej. A jeśli chodzi o ważniejsze rzeczy, kapitanie... Złapali mnie prosto na ścieżce. Chyba obserwowali placówkę. Ale szpiedzy z nich marni — gadali przy mnie tak, jakbym już był trupem.
+}
+Jaco_dialog_26 {
+I czego cennego się dowiedziałeś?
+}
+Jaco_dialog_27 {
+Jakiś Quesada wyczuł, że coś jest nie tak, jeszcze zanim ruszyliście po Molinę. Dotarły do niego pogłoski, że w Hawanie ktoś zbyt gorliwie wypytuje o sprawy Vargasa. Poradził don Diegowi przyczaić się i zacząć szukać szpiega. A jego ludzi w tym czasie rozesłano po różnych zakątkach archipelagu — umacniać pozycje i czekać na sygnał. Innych nazwisk nie dosłyszałem, ale miejsca zapamiętałem dokładnie. Le Basque’owi na pewno się to przyda.
+}
+Jaco_dialog_28 {
+Czyli Vargas pełną parą szykuje się do wojny. Chodź, Jaco. Sam zaniesiesz tę wiadomość Michelowi.
+}
+Jaco_dialog_29 {
+Krzywdzi mnie pan, monsieur Marceau! Zacznę się zalecać do jego ukochanej — sam mnie znajdzie i na pewno zechce porozmawiać gdzieś za miastem. Tam go zgarnę.
+}
+Jaco_dialog_30 {
+Kapitanie @<pchar>! Panie Marceau! Trochę się namęczyłem, ale skręciłem tego łajdaka. Mieliście rację — miłość naprawdę robi z ludzi głupców.
+}
+Jaco_dialog_31 {
+Dobra robota. Pękł? Jak możemy dostać się do Veli?
+}
+Jaco_dialog_32 {
+Wytrząsnąłem z niego co nieco. Spotkanie wyznaczono w miejskim kościele na pierwszą w nocy. Przyznał, że Vela jest chorobliwie podejrzliwy. Żeby Hiszpan w ogóle zaczął rozmowę w kościele, trzeba położyć na pulpicie specjalną przepustkę — weneckiego cekina — i podać właściwe hasło. Na wszelki wypadek przypomnę: pulpit to taka drewniana podstawka z księgą...
+}
+Jaco_dialog_33 {
+Wenecki cekin? No proszę. A gdzie jest sama moneta? Zabrałeś ją?
+}
+Jaco_dialog_34 {
+Właśnie w tym rzecz! Ten drań zaparł się jak osioł. Twierdzi, że moneta jest dobrze ukryta, a hasło poda dopiero przed śmiercią. Wybiłem mu już parę zębów, a on ani drgnie.
+}
+Jaco_dialog_35 {
+Hm... Rozumiem. Będę musiał sam się nim zająć. Gdzie go trzymasz?
+}
+Jaco_dialog_36 {
+Zaciągnąłem go na plażę Fajardo, bliżej naszego statku.
+}
+Jaco_dialog_37 {
+Czekajcie tutaj, zaraz wrócę. Z monetą.
+}
+Jaco_dialog_38 {
+Kapitanie! Wróciliście. A pan Marceau już skończył swoje sprawy i odszedł. Prosił, żeby przekazać wam to. Powiedział, że w tej kopercie jest finałowy akord.
+}
+Jaco_dialog_39 {
+Dawaj. I jeszcze jedno, Jaco... Następnym razem dokładniej przeszukuj jeńców! I wiąż ich mocniej, do diabła.
+}
+Jaco_dialog_40 {
+A... co się stało, kapitanie?
+}
+Jaco_dialog_41 {
+Twój „dobrze związany” jeniec schował w bucie właśnie tego złotego cekina. Potem zdołał poluzować węzły, zastrzelił naszego marynarza i rzucił się na mnie. Musiałem go wykończyć.
+}
+Jaco_dialog_42 {
+Do diabła... Wybaczcie, kapitanie. Przysięgam, myślałem, że zacisnąłem węzły na amen, a kieszenie wywróciłem mu na lewą stronę! Wyciągnę z tego naukę, więcej się to nie powtórzy.
+}
+Jaco_dialog_43 {
+Mam taką nadzieję. W naszym fachu takie błędy kosztują życie. Dobrze, sprawa załatwiona... Mam przepustkę i list. Idę do kościoła na spotkanie z Velą. Wracaj na statek i czekaj tam na mnie.
+}
+Jaco_dialog_44_m {
+Mon Dieu! Aleście go urządzili! Jeden na jednego! Szkoda, że monsieur le Basque tego nie widział.
+}
+Jaco_dialog_44_f {
+Mon Dieu! Aleście go urządziła! Sama przeciw niemu! Szkoda, że monsieur le Basque tego nie widział.
+}
+Jaco_dialog_45 {
+Hm... Dzisiaj spisałeś się nie gorzej ode mnie, Jaco. Może jednak będzie z ciebie pożytek, ha-ha.
+}
+Jaco_dialog_46 {
+Widzielibyście ich miny, kiedy powiedziałem, że srebra nie będzie. Już myślałem, że spalą mnie tam żywcem!
+}
+Jaco_dialog_47 {
+Teraz już na pewno będziesz miał czym popisywać się przed dziewczynami, ha-ha. Idź, rozejrzyj się. Może znajdziesz sobie jakiś trofeum do gustu.
+}
+Jaco_dialog_48 {
+Ach, nasz triumfator! Siadajcie, kapitanie, skosztujcie tego bordeaux! Przysięgam, wasza stal w tej dżungli śpiewała głośniej i słodziej niż struny najlepszego lutnisty w całym Paryżu!
+}
+Jaco_dialog_49 {
+Byłeś kiedyś w Paryżu, Jaco? Zresztą nieważne. Pij na zdrowie. Twój spryt ocalił nam nie mniej ludzi niż moja stal.
+}
+Jaco_dialog_50 {
+Kapitanie, tego już za wiele! Walczyłem z Hiszpanami, przedzierałem się przez dżunglę, omal nie straciłem głowy — a teraz te dziewczyny wciskają mi wiadro i każą nosić wodę!
+}
+Jaco_dialog_51 {
+Wygląda na to, że czeka cię kolejny bohaterski czyn.
+}
+Jaco_dialog_52 {
+Bardzo śmieszne. Tak między nami, liczyłem, że po tym wszystkim będą mnie witać z honorami. A zamiast tego robią ze mnie nosiwodę!
+}
+Jaco_dialog_53 {
+A co ty myślisz, że bohaterowie nie noszą wody? Sama cudem pojawia się im w wiadrach?
+}
+Jaco_dialog_54 {
+Ale przecież kręci się tu jeszcze z tuzin próżniaków! Dlaczego akurat ja?
+}
+Jaco_dialog_55 {
+Widocznie wpadłeś im w oko. Idź, Jaco. Nie każ dziewczynom długo czekać.
+}
+Jaco_dialog_56 {
+Kapitanie, jeśli ktoś zapyta, powiedzcie, że Michel pilnie mnie potrzebował. Bardzo pilnie. Inaczej nikt nie będzie mnie tu szanował!
+}
+Jaco_dialog_57 {
+Za późno, Jaco. One już wiedzą, gdzie cię szukać. Idź po wiadra.
+}
+Jaco_dialog_58 {
+Kapitanie, widzielibyście te dziewczyny! Wczoraj byłem dla nich jakimś nosiwodą, a teraz wreszcie zrozumiały, z kim mają do czynienia. Każda chce usłyszeć, jak zdobyliśmy „Margaritę”, i żadna już się nie śmieje!
+}
+Jaco_dialog_59 {
+Czyli do podbicia dziewczęcych serc wystarczyło ci tylko obrabować dobrze strzeżony hiszpański galeon? Cóż, Jaco, korzystaj z chwili. Takie wyczyny szybko się zapominają.
+}
+
+LeBasque_Young_Boy_Bask_1 {
+Masz zatkane uszy? Zbierałem zioła! Zioła. Nie znam żadnego Leru... Kaszel, kaszel... Wygląda na to, że teraz będziesz musiał sam zebrać swoje wnętrzności.
+}

@@ -1,0 +1,39 @@
+Tavernkeeper_dialog_1 {
+So you're Captain @<pchar>. I'd barely thrown down a few bones under this stretched sail before Nicolas Rimalie had already told me all about your exploits. That desperate swordsman and I have shared bread and powder so long, on my honor, I've forgotten which of us first saved the other's life in a scrape - and which one still hasn't paid back that damned card debt.
+}
+Tavernkeeper_dialog_2 {
+Good to hear Rimalie's word carries such weight here. Welcome safely to Tortuga, friend.
+}
+Tavernkeeper_dialog_3 {
+Greetings, Captain @<pchar>! As you see, I'm still keeping my endless watch beside this cursed rum barrel. If your ship needs men with steady eyes and steadier hands, just say the word.
+}
+Tavernkeeper_dialog_4 {
+Captain @<pchar>! At dawn several seasoned hunters came out of the jungle - wild men, but soaked through with powder smoke. If you need first-rate marksmen, I'll gladly put in a word for you.
+}
+Tavernkeeper_dialog_5 {
+You again, Captain @<pchar>. A good omen - means the sea hasn't swallowed your ship yet. If you're looking for reliable men, a couple of desperate blades are just now seeking a commander worth following.
+}
+Tavernkeeper_dialog_6 {
+@<LinkRandPhrase>
+}
+Tavernkeeper_dialog_7 {
+That's exactly why I came. Any first-rate marksmen available today?
+}
+Tavernkeeper_dialog_8 {
+My complement is full, thanks. I only came to wet my throat and see how you're doing.
+}
+Tavernkeeper_dialog_9 {
+Thank you, Captain. I've only just begun putting down roots here, but Nicolas's word means a great deal to me. Tortuga has rabble enough to fill a lake, but true veterans of the boucan won't put their mark on the muster roll of the first adventurer who comes along. One whisper from me that you're a person of honor, though, and the conversation changes entirely.
+}
+Tavernkeeper_dialog_10 {
+That kind of recommendation will be most useful.
+}
+Tavernkeeper_dialog_11 {
+Then consider it settled. If your ship needs reliable men, you'll always find me right here by this barrel, whether under the blazing noonday sun or in pitch darkness.\nBuccaneers have a habit of emerging from the jungle at the most unpredictable hours - exhausted, ragged, and angry as devils. They immediately need a mug of burning rum and someone willing to hear their boasts before they cut each other's throats arguing over the prize. So I never abandon my post. I'll make the right inquiries and put you in touch with men whose bullets don't miss.
+}
+Tavernkeeper_dialog_12 {
+Remarkable devotion to your trade. Let's see whom you can offer me right now.
+}
+Tavernkeeper_dialog_13 {
+Agreed. I'll be sure to stop beneath your hospitable awning whenever I need marksmen.
+}

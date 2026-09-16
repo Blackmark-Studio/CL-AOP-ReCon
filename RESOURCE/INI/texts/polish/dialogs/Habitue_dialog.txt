@@ -982,3 +982,9 @@ A więc nie jesteś tu sam! No cóż, będziesz miał towarzystwo w piekle!
 Habitue_dialog_295 {
 @<RandPhraseSimple>
 }
+Habitue_dialog_296 {
+Dziewczyno, przynieś mi jeszcze coś do picia.
+}
+Habitue_dialog_297 {
+Obejdziesz się.
+}

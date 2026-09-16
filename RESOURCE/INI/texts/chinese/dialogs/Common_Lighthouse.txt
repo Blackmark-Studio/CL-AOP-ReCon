@@ -1,219 +1,219 @@
 Common_Lighthouse_1 {
-城里警报拉响了，看来我也该拿起武器了……
+城里警报拉响了， 看来我也该拿起武器了…… 
 }
 Common_Lighthouse_2 {
-难不成整个城市的守卫都在追你？……士兵们，过来！
+难不成整个城市的守卫都在追你？ …… 士兵们， 过来！ 
 }
 Common_Lighthouse_3 {
-你在俺这儿找不到庇护，只能尝尝几寸冷钢插进肋骨的滋味！
+你在我这儿找不到庇护， 只能尝尝几寸冷钢插进肋骨的滋味！ 
 }
 Common_Lighthouse_4 {
 @<LinkRandPhrase>
 }
 Common_Lighthouse_5_m {
-你想干嘛，混蛋？！城里的守卫已经盯上你了，帅哥，你跑不了多远。走，咱们上楼去！
+你想干嘛， 混蛋？ ！ 城里的守卫已经盯上你了， 帅哥， 你跑不了多远。 走， 咱们上楼去！ 
 }
 Common_Lighthouse_5_f {
-你还想干嘛，臭不要脸的？！城里的守卫已经盯上你了，别想跑太远，混账东西！
+你还想干嘛， 臭不要脸的？ ！ 城里的守卫已经盯上你了， 别想跑太远， 混账东西！ 
 }
 Common_Lighthouse_6_m {
-肮脏的杀人犯！来人啊！
+肮脏的杀人犯！ 来人啊！ 
 }
 Common_Lighthouse_6_f {
-肮脏的杀人犯！来人啊！
+肮脏的杀人犯！ 来人啊！ 
 }
 Common_Lighthouse_7_m {
-老子才不怕你呢，混蛋！很快你就会在我们要塞的绞刑架上吊死，跑不了多远的……
+我才不怕你呢， 混蛋！ 很快你就会在我们要塞的绞刑架上吊死， 跑不了多远的…… 
 }
 Common_Lighthouse_7_f {
-老子才不怕你，臭娘们！很快你就会在咱们堡垒的绞刑架上吊死，跑不了多远的……
+我才不怕你， 臭娘们！ 很快你就会在咱们堡垒的绞刑架上吊死， 跑不了多远的…… 
 }
 Common_Lighthouse_8 {
 @<LinkRandPhrase>
 }
 Common_Lighthouse_9 {
-看样子你是活腻了……
+看样子你是活腻了…… 
 }
 Common_Lighthouse_10 {
-呵，老实人就是没法安生啊，@<XI_ConvertString>！
+呵， 老实人就是没法安生啊， @<XI_ConvertString>！ 
 }
 Common_Lighthouse_11 {
 @<RandPhraseSimple>
 }
 Common_Lighthouse_12 {
-滚去死吧！
+滚去死吧！ 
 }
 Common_Lighthouse_13 {
-哼，你命不久矣，就剩几秒了……
+哼， 你命不久矣， 就剩几秒了…… 
 }
 Common_Lighthouse_14 {
 @<RandPhraseSimple>
 }
 Common_Lighthouse_15 {
-你好！我叫@<GetFullName>，是这座灯塔的守护人。你来这儿有什么事？
+你好！ 我叫@<GetFullName>， 是这座灯塔的守护人。 你来这儿有什么事？ 
 }
 Common_Lighthouse_16 {
-你好啊！好久没见到新面孔来我的灯塔了……让我自我介绍一下——@<GetFullName>。这座灯塔既是我的家，也是我的职责。有什么我能帮忙的吗？
+你好啊！ 好久没见到新面孔来我的灯塔了…… 让我自我介绍一下——@<GetFullName>。 这座灯塔既是我的家， 也是我的职责。 有什么我能帮忙的吗？ 
 }
 Common_Lighthouse_17 {
 @<RandPhraseSimple>
 }
 Common_Lighthouse_18_m {
-你好，@<npchar>！我叫@<GetFullName>，是艘船的船长。刚在这美丽的海湾转悠，顺便过来看看，这里都住着谁……
+你好， @<npchar>！ 我叫@<GetFullName>， 是艘船的船长。 刚在这美丽的海湾转悠， 顺便过来看看， 这里都住着谁…… 
 }
 Common_Lighthouse_18_f {
-你好，@<npchar>！我叫@<GetFullName>，是艘船的船长。刚在这美丽的海湾转悠，顺便过来看看，这里都住着谁……
+你好， @<npchar>！ 我叫@<GetFullName>， 是艘船的船长。 刚在这美丽的海湾转悠， 顺便过来看看， 这里都住着谁…… 
 }
 Common_Lighthouse_19 {
-啊，@<GetFullName>船长，真高兴见到你！快请进，快请进！这次是什么风把你吹来了？
+啊， @<GetFullName>船长， 真高兴见到你！ 快请进， 快请进！ 这次是什么风把你吹来了？ 
 }
 Common_Lighthouse_20 {
-哟，老海狼，还没在你那灯塔里孤独得嚎叫吧？
+哟， 老海狼， 还没在你那灯塔里孤独得嚎叫吧？ 
 }
 Common_Lighthouse_21 {
-现在你知道了吧。俺也是个水手，跟你一样，只是已经很久没踏上船甲板了……唉！现在这灯塔归俺管着，偶尔也做点小买卖……
+现在你知道了吧。 我也是个水手， 跟你一样， 只是已经很久没踏上船甲板了…… 唉！ 现在这灯塔归我管着， 偶尔也做点小买卖…… 
 }
 Common_Lighthouse_22 {
-啥都有？那让我看看你都卖些什么。
+什么都有？ 那让我看看你都卖些什么。 
 }
 Common_Lighthouse_23 {
-最近你们殖民地有什么新鲜事吗？
+最近你们殖民地有什么新鲜事吗？ 
 }
 Common_Lighthouse_24_m {
-好久没上岸了……这边有什么新鲜事吗？
+好久没上岸了…… 这边有什么新鲜事吗？ 
 }
 Common_Lighthouse_24_f {
-好久没上岸了……这边有什么新鲜事吗？
+好久没上岸了…… 这边有什么新鲜事吗？ 
 }
 Common_Lighthouse_25 {
 @<RandPhraseSimple>
 }
 Common_Lighthouse_26_m {
-我有件事想问你……
+我有件事想问你…… 
 }
 Common_Lighthouse_26_f {
-我有件事想问你……
+我有件事想问你…… 
 }
 Common_Lighthouse_27 {
-这次你来找我是为了什么？
+这次你来找我是为了什么？ 
 }
 Common_Lighthouse_28 {
-最近你们殖民地有什么新鲜事吗？
+最近你们殖民地有什么新鲜事吗？ 
 }
 Common_Lighthouse_29_m {
-好久没上岸了……这边有什么新鲜事吗？
+好久没上岸了…… 这边有什么新鲜事吗？ 
 }
 Common_Lighthouse_29_f {
-好久没上岸了……这边有什么新鲜事吗？
+好久没上岸了…… 这边有什么新鲜事吗？ 
 }
 Common_Lighthouse_30 {
 @<RandPhraseSimple>
 }
 Common_Lighthouse_31_m {
-我有件事想问你……
+我有件事想问你…… 
 }
 Common_Lighthouse_31_f {
-我有件事想问你……
+我有件事想问你…… 
 }
 Common_Lighthouse_32 {
-看看你今天都卖些什么吧。
+看看你今天都卖些什么吧。 
 }
 Common_Lighthouse_33_m {
-就是路过打个招呼……
+就是路过打个招呼…… 
 }
 Common_Lighthouse_33_f {
-就是路过打个招呼……
+就是路过打个招呼…… 
 }
 Common_Lighthouse_34 {
-船长，最近有不少@<GetGoodsNameAlt>被冲上了岸。有些被海水泡坏了，不过俺还捞出了@<FindQtyString>，状态很不错。要不要来点？价格便宜，只要@<FindMoneyString>一件。
+船长， 最近有不少@<GetGoodsNameAlt>被冲上了岸。 有些被海水泡坏了， 不过我还捞出了@<FindQtyString>， 状态很不错。 要不要来点？ 价格便宜， 只要@<FindMoneyString>一件。 
 }
 Common_Lighthouse_35 {
-不，我不想。还是把你要卖的东西拿出来给我看看吧。
+不， 我不想。 还是把你要卖的东西拿出来给我看看吧。 
 }
 Common_Lighthouse_36_m {
-嗯……这个提议不错，我同意。老子觉得转手还能赚一笔。来看看……总共是@<FindMoneyString>，对吧？
+嗯…… 这个提议不错， 我同意。 我觉得转手还能赚一笔。 来看看…… 总共是@<FindMoneyString>， 对吧？ 
 }
 Common_Lighthouse_36_f {
-嗯……这个条件不错，我同意。俺觉得转手还能赚一笔。来看看……总共是@<FindMoneyString>，对吧？
+嗯…… 这个条件不错， 我同意。 我觉得转手还能赚一笔。 来看看…… 总共是@<FindMoneyString>， 对吧？ 
 }
 Common_Lighthouse_37 {
-你算得没错，船长。这买卖挺划算，咱们谁都没吃亏……
+你算得没错， 船长。 这买卖挺划算， 咱们谁都没吃亏…… 
 }
 Common_Lighthouse_38 {
-太好了。我这就派水手过来。现在，把你要卖的东西拿出来让我看看。
+太好了。 我这就派水手过来。 现在， 把你要卖的东西拿出来让我看看。 
 }
 Common_Lighthouse_39_m {
-你是个贼啊，老兄！来人，把他抓住！
+你是个贼啊， 老兄！ 来人， 把他抓住！ 
 }
 Common_Lighthouse_39_f {
-你是个贼！来人，把她抓起来！
+你是个贼！ 来人， 把她抓起来！ 
 }
 Common_Lighthouse_40_m {
-哎哟，瞧瞧这事！我才一眨眼，你就钻进箱子里了！站住，贼！
+哎哟， 瞧瞧这事！ 我才一眨眼， 你就钻进箱子里了！ 站住， 贼！ 
 }
 Common_Lighthouse_40_f {
-哎哟，你看看！我才刚一转眼，你就钻进箱子里了！快抓住那个小偷！
+哎哟， 你看看！ 我才刚一转眼， 你就钻进箱子里了！ 快抓住那个小偷！ 
 }
 Common_Lighthouse_41_m {
-卫兵！有人抢劫！快抓住那贼！
+卫兵！ 有人抢劫！ 快抓住那贼！ 
 }
 Common_Lighthouse_41_f {
-卫兵！有人抢劫！快拦住那个贼！
+卫兵！ 有人抢劫！ 快拦住那个贼！ 
 }
 Common_Lighthouse_42 {
 @<LinkRandPhrase>
 }
 Common_Lighthouse_43 {
-啊——该死的！！！
+啊——该死的！ ！ ！ 
 }
 Common_Lighthouse_44 {
-你好！我叫@<GetFullName>，是这座灯塔的守护人。\n等等……我认识你。你是彼得·布拉德，毕晓普上校的奴隶之一。你在这儿做什么？如果监工看到我们在一起！..
+你好！ 我叫@<GetFullName>， 是这座灯塔的守护人。 \n等等…… 我认识你。 你是彼得.布拉德， 毕晓普上校的奴隶之一。 你在这儿做什么？ 如果监工看到我们在一起！ ..
 }
 Common_Lighthouse_45 {
-冷静点，@<GetLastName>先生。我只是需要一些奴隶营房里找不到的东西，而您肯定有多余的存货。
+冷静点， @<GetLastName>先生。 我只是需要一些奴隶营房里找不到的东西， 而您肯定有多余的存货。 
 }
 Common_Lighthouse_46 {
-啊，布拉德先生，很高兴见到您！快请进，快请进！这次是什么风把您吹来了？
+啊， 布拉德先生， 很高兴见到您！ 快请进， 快请进！ 这次是什么风把您吹来了？ 
 }
 Common_Lighthouse_47 {
-你好啊，老海狼！还没在你的灯塔里孤独得嚎叫吗？
+你好啊， 老海狼！ 还没在你的灯塔里孤独得嚎叫吗？ 
 }
 Common_Lighthouse_48 {
-如果上校知道我卖东西给奴隶，他会比海鸥叫得还快地把我的皮扒了。我凭什么要冒这个险？
+如果上校知道我卖东西给奴隶， 他会比海鸥叫得还快地把我的皮扒了。 我凭什么要冒这个险？ 
 }
 Common_Lighthouse_49 {
-@<GetFirstName>，上校没必要知道我怎么处理自己的财产。而且，我付的是真金白银。多点钱对你没坏处，对吧？
+@<GetFirstName>， 上校没必要知道我怎么处理自己的财产。 而且， 我付的是真金白银。 多点钱对你没坏处， 对吧？ 
 }
 Common_Lighthouse_50 {
-@<GetLastName>先生，作为一名医生，我有时需要一些种植园里弄不到的东西。您不会拒绝帮助我的，对吗？
+@<GetLastName>先生， 作为一名医生， 我有时需要一些种植园里弄不到的东西。 您不会拒绝帮助我的， 对吗？ 
 }
 Common_Lighthouse_51 {
-和奴隶做交易是犯罪行为，医生。但是……老实说，灯塔看守人的薪水几乎入不敷出。\n好吧……如果你有金币和货物，我愿意对你的处境睁一只眼闭一只眼。但是，我们的交易对任何人都要守口如瓶！
+和奴隶做交易是犯罪行为， 医生。 但是…… 老实说， 灯塔看守人的薪水几乎入不敷出。 \n好吧…… 如果你有比索和货物， 我愿意对你的处境睁一只眼闭一只眼。 但是， 我们的交易对任何人都要守口如瓶！ 
 }
 Common_Lighthouse_52 {
-当然，@<GetLastName>先生。谢谢您的理解。
+当然， @<GetLastName>先生。 谢谢您的理解。 
 }
 Common_Lighthouse_53 {
-哦，布拉德医生……我记得您曾经在城里帮助人们。看到您穿着这些破布，真是遗憾。您是一位善良诚实的人，如今这样的人不多了。\n好吧，我帮您……但是和奴隶做交易是会被治罪的！请千万别告诉任何人……
+哦， 布拉德医生…… 我记得您曾经在城里帮助人们。 看到您穿着这些破布， 真是遗憾。 您是一位善良诚实的人， 如今这样的人不多了。 \n好吧， 我帮您…… 但是和奴隶做交易是会被治罪的！ 请千万别告诉任何人…… 
 }
 Common_Lighthouse_54 {
-当然，@<GetLastName>先生。谢谢您的理解。
+当然， @<GetLastName>先生。 谢谢您的理解。 
 }
 Common_Lighthouse_55 {
-啊，是你啊，医生……
+啊， 是你啊， 医生…… 
 }
 Common_Lighthouse_56 {
-又是你，布拉德医生？希望监工没有跟踪你。
+又是你， 布拉德医生？ 希望监工没有跟踪你。 
 }
 Common_Lighthouse_57 {
-小心点，医生！守卫有时会巡逻这片海岸。
+小心点， 医生！ 守卫有时会巡逻这片海岸。 
 }
 Common_Lighthouse_58 {
 @<LinkRandPhrase>
 }
 Common_Lighthouse_59 {
-我需要点东西，守护人。我们谈正事吧。
+我需要点东西， 守护人。 我们谈正事吧。 
 }
 Common_Lighthouse_60 {
-就是顺路过来看看……
+就是顺路过来看看…… 
 }

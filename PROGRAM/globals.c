@@ -2,14 +2,18 @@
 #include "storm-engine\messages.h"
 #include "sound.c"
 
-string savefile_info = "CL: AoP 1.1.2 (24.06.2026)";
+string savefile_info = "CL: AoP 1.2 (14.09.2026)";
 
 #define MAX_SHIPS_ON_SEA	32 
 #define MAX_CHARS_IN_LOC	128
 
-//DLC steam id
+//DLC Steam ID
+#define CL_STEAMID 2230980 //Caribbean Legend Тичингиту
 #define NABOB_PACK 4238730 //Сапорт пак
-#define PDM_QUESTS 4631460 //Квесты из первых корсаров
+#define PDM_QUESTS 4631460 //№1 DLC Корсары
+#define CL_CURATOR "45734318" //https://store.steampowered.com/curator/45734318
+#define BUCCANEERS 4969720 //№2 DLC Буканьеры
+//#define AOP_STEAMID 3549020 //CL:AoP плейтесты (награда Тичингиту)
 
 // сетевые штучки -->
 int iRealDeltaTime = 0;
@@ -18,7 +22,7 @@ int iRealMonth = 0;
 int iRealDay = 0;
 // сетевые штучки <--
 
-string g_sDayRand = ""; //HardCoffee используется движком для idRand
+int g_iDayRand = 32768; //HardCoffee используется движком для idRand
 string arMapMakerAtlas[2];
 
 int iGrassQuality = 0; //0 full, 1 middle, 2 low, 3 off
@@ -28,6 +32,7 @@ int	iArcadeSails = 1;   // GetRSRollSpeed
 int iFontType = 0;			// 0 italic, 1 normal
 int iMoreInfo = 0;	// 0 fightmode, 1 always
 int iGlobalTarget = 2;      // 0 off, 1 fight, 2 non fight, 3 always
+int iGlobalHelpTime = 1;    // 0 off, 1 slow, 2 medium, 3 fast (tooltip show speed)
 
 #define CONTROL_TIPS_NONE 0 //подсказки отключены
 #define CONTROL_TIPS_BASE 1 //только горячие кнопки выбора снарядов и умений в море
@@ -44,6 +49,8 @@ string sgMusicName = "?";
 ref pchar;
 
 object TEV; // Temporary events
+
+bool bAutoSaveStarted = false;
 
 //--------------------------------------------------------------------
 // Bool section
@@ -80,9 +87,9 @@ int     MAX_CHARACTERS   = 10;
 #define TOTAL_CHARACTERS			2000  // прописать в BOAT_CHARACTER  TOTAL_CHARACTERS - 1
 #define BOAT_CHARACTER              1999
 
-#define MAX_LOCATIONS		1013
-#define MAX_ISLANDS   31
-#define MAX_COLONIES  35
+#define MAX_LOCATIONS		1100
+#define MAX_ISLANDS   32
+#define MAX_COLONIES  38
 
 #define LSC_MAX_TAVERN		12
 #define LSC_MAX_RESIDENCE	3

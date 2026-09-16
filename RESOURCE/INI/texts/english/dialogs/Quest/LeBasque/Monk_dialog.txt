@@ -1,0 +1,111 @@
+Monk_dialog_1 {
+Ah, Captain! I confess, I'd faintly hoped to meet you on these streets in somewhat better condition. Michel warned me our paths might cross, but I never imagined Vargas's blade would leave such ugly marks on you.
+}
+Monk_dialog_2 {
+Le Basque mentioned that you're serving as a shepherd of souls here now, Bertrand. He added that if anyone can put me back on my feet, it's you.
+}
+Monk_dialog_3 {
+A shepherd, certainly. A physician, only by the malice of fate. Before I arrived in this camp, local medicine consisted entirely of a quart of harsh rum, a red-hot blade, and friendly advice not to die before dawn. I was forced to broaden my vocation somewhat.
+}
+Monk_dialog_4 {
+Good to see those gloomy dungeons didn't rob you of your sense of humor.
+}
+Monk_dialog_5 {
+After those cursed catacombs, Captain, I'm immeasurably grateful for every day I'm allowed to treat other men's injuries instead of waiting for Castilian executioners to cut my throat. And for dragging me and those unfortunate ladies back into God's light, I owe you a debt beyond repayment. So lean against this barrel and let me see exactly what souvenir the late Don Alonso left you.
+}
+Monk_dialog_6 {
+If your skill can put me back on my feet, I won't resist.
+}
+Monk_dialog_7 {
+Thank you, but not now. I need a little time to recover.
+}
+Monk_dialog_8 {
+I don't think surgery will be necessary this time. But I'll remember your generous offer.
+}
+Monk_dialog_9 {
+Greetings, Captain. Has the need for a skilled physician brought you back to me, or did you simply decide to pass the time with the man you so nobly rescued from Castilian captivity?
+}
+Monk_dialog_10 {
+The wound Vargas gave me is still troubling me. Would you take a look?
+}
+Monk_dialog_11 {
+How do you find your new ministry among these desperate buccaneers?
+}
+Monk_dialog_12 {
+I won't distract you from your righteous labors any longer. Until next time, Bertrand.
+}
+Monk_dialog_13 {
+How do you find your new ministry among these desperate buccaneers?
+}
+Monk_dialog_14 {
+I was passing by and thought I'd pay my respects. Until next time, Bertrand.
+}
+Monk_dialog_15 {
+New ministry? Ha! Judge for yourself: yesterday one desperate blasphemer demanded I bless his musket, another begged me to remove a Castilian ball from a most delicate place, and a third came to confession and fell dead asleep before he reached his second mortal sin. As you can see, boredom isn't a problem.
+}
+Monk_dialog_16 {
+And you still haven't fled from such a flock?
+}
+Monk_dialog_17 {
+Flee? After the dungeons you dragged me out of? Hardly. These cutthroats have peculiar, savage notions of piety, but they don't leave women to rot in damp cellars or trade lives to please the Inquisition. Besides, I'm truly needed here, and for now that's quite enough for me.
+}
+Monk_dialog_18 {
+Well, it seems you've finally found your true calling.
+}
+Monk_dialog_19 {
+Off with your coat, Captain. Carefully... Devil take it. This is much worse than I thought. The Toledo steel went considerably deeper, and the wound edges have already begun to scar badly. A simple change of bandages won't be enough.
+}
+Monk_dialog_20 {
+Don't circle around it, Bertrand. How bad is it?
+}
+Monk_dialog_21 {
+Bad enough that if you'd spent another couple of days at sea drowning the pain in rum instead of receiving proper care, you'd be looking for a priest to give you the last rites. I'll have to reopen the suppuration, wash it thoroughly with spirits, and put in tight stitches. But I swear by my cassock, I'm not cutting you open here in the street dust. We need a clean bed, light, and boiling water, or fever will finish what Vargas began.
+}
+Monk_dialog_22 {
+Then we won't need to hunt for a vacant room. I have a house here. Take your instruments, Bertrand, and follow me.
+}
+Monk_dialog_23 {
+There, Captain, you may open your eyes now. I must admit your feather bed proved most useful - you lay unconscious on it for a good three hours while I put that wound in order. The corruption is cleaned out, the edges drawn together, and the dressing is fresh. I strongly recommend you stay within these walls at least for today and refrain from pretending you're immortal.
+}
+Monk_dialog_24 {
+Three hours?.. Then the work really was more serious than you let on. You have my thanks, Bertrand. I solemnly promise my sword will stay in its sheath until tomorrow morning.
+}
+Monk_dialog_25 {
+Where do you always get so many healing potions and herbs, Bertrand?
+}
+Monk_dialog_26 {
+Bertrand, about growing medicinal herbs.
+}
+Monk_dialog_27 {
+Ah... I've heard how young hotheads like our Jaco are forever risking their lives, prowling dangerous jungles for a couple of roots. So I thought: why tempt fate when we can grow everything right here? Back at the abbey I was in charge of the physic garden, and I remember the craft well.\nThe soil here is fertile - the shoots mature quickly, in just 5–8 days. But remember: if you don't harvest the old crop before planting anew, any unpicked plants will simply have to be weeded out and thrown away. So harvest on time!
+}
+Monk_dialog_28 {
+A sensible approach, Bertrand. Can you plant certain herbs for me?
+}
+Monk_dialog_29 {
+Tempting, Father, but I have no time for herb-growing right now.
+}
+Monk_dialog_30 {
+But the seeds are already in the ground! Patience is a great virtue. Come back in about a week; everything should be ripe by then.
+}
+Monk_dialog_31 {
+Ah, my memory is not what it used to be... I will come back later.
+}
+Monk_dialog_32 {
+The soil is ready for planting. What shall we sow? We should plan to harvest in about a week.
+}
+Monk_dialog_33 {
+Sow the whole plot with matricaria.
+}
+Monk_dialog_34 {
+Let ginseng grow in the plot.
+}
+Monk_dialog_35 {
+We will grow ginger root.
+}
+Monk_dialog_36 {
+Divide the plot - let there be a little of each.
+}
+Monk_dialog_37 {
+I do not need anything for now, Bertrand. We will talk later.
+}

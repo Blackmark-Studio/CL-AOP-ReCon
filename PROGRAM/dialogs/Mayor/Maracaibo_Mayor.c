@@ -138,6 +138,83 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 			RemoveLandQuestmark_Main(npchar, "Spa_Line");
 		break;
 
+		case "Keys_lagoon_Res_11":
+			dialog.text = StringFromKey("Maracaibo_Mayor_45");
+			link.l1 = StringFromKey("Maracaibo_Mayor_46");
+			link.l1.go = "Keys_lagoon_Res_12";
+		break;
+
+		case "Keys_lagoon_Res_12":
+			dialog.text = StringFromKey("Maracaibo_Mayor_47");
+			link.l1 = "...";
+			link.l1.go = "Keys_lagoon_Res_12_Exit";
+		break;
+
+		case "Keys_lagoon_Res_12_Exit":
+			AddDialogExitQuest("Keys_lagoon_Res_10");
+			DialogExit();
+		break;
+
+		case "Keys_lagoon_Res_13":
+			dialog.text = StringFromKey("Maracaibo_Mayor_48");
+			link.l1 = StringFromKey("Maracaibo_Mayor_49");
+			link.l1.go = "Keys_lagoon_Res_13_Exit";
+		break;
+
+		case "Keys_lagoon_Res_13_Exit":
+			DialogExit();
+			AddDialogExitQuest("Keys_lagoon_Res_Past_1");
+		break;
+
+		case "Keys_lagoon_Res_36":
+			dialog.text = "...";
+			link.l1 = StringFromKey("Maracaibo_Mayor_50");
+			link.l1.go = "Keys_lagoon_Res_36_Exit";
+		break;
+
+		case "Keys_lagoon_Res_36_Exit":
+			DialogExit();
+			AddDialogExitQuest("Keys_lagoon_Res_Past_9");
+		break;
+
+		case "Keys_lagoon_Res_39":
+			dialog.text = StringFromKey("Maracaibo_Mayor_51", GetFullName(npchar));
+			link.l1 = StringFromKey("Maracaibo_Mayor_52");
+			link.l1.go = "Keys_lagoon_Res_39_Exit";
+		break;
+
+		case "Keys_lagoon_Res_39_Exit":
+			DialogExit();
+			AddDialogExitQuest("Keys_lagoon_Res_Quarrel");
+		break;
+
+		case "Keys_lagoon_Res_45":
+			dialog.text = StringFromKey("Maracaibo_Mayor_53");
+			link.l1 = StringFromKey("Maracaibo_Mayor_54");
+			link.l1.go = "Keys_lagoon_Res_45_Exit";
+		break;
+
+		case "Keys_lagoon_Res_45_Exit":
+			DialogExit();
+			AddDialogExitQuest("Keys_lagoon_Res_Tortuga_1");
+		break;
+
+		case "Keys_lagoon_Res_47":
+			dialog.text = "...";
+			link.l1 = StringFromKey("Maracaibo_Mayor_55");
+			link.l1.go = "Keys_lagoon_Res_48";
+		break;
+
+		case "Keys_lagoon_Res_48":
+			dialog.text = StringFromKey("Maracaibo_Mayor_56");
+			link.l1 = StringFromKey("Maracaibo_Mayor_57");
+			link.l1.go = "Keys_lagoon_Res_48_Exit";
+		break;
+
+		case "Keys_lagoon_Res_48_Exit":
+			DialogExit();
+			AddDialogExitQuest("Keys_lagoon_Res_Leaving");
+		break;
 	}
 	UnloadSegment(NPChar.FileDialog2);  // если где-то выход внутри switch  по return не забыть сделать анлод
 }

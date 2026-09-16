@@ -1,0 +1,42 @@
+Gibraltar_Soldier_1 {
+Какие имеете вопросы к солдату?
+}
+Gibraltar_Soldier_2 {
+У солдата жизнь расписана - караулы, разводы... Что вам угодно, @<GetAddress_Form>?
+}
+Gibraltar_Soldier_3 {
+@<RandPhraseSimple>
+}
+Gibraltar_Soldier_4 {
+Не пристало приставать к солдату с глупыми вопросами, @<GetAddress_Form>...
+}
+Gibraltar_Soldier_5 {
+Третий раз за сегодня вы пытаетесь задать вопрос...
+}
+Gibraltar_Soldier_6_m {
+Солдатская доля и без того непроста, а тут ещё и ты, недоносок, выводишь из себя...
+}
+Gibraltar_Soldier_6_f {
+Солдатская доля и без того непроста, а тут ещё и ты выводишь из себя...
+}
+Gibraltar_Soldier_7_m {
+Я передумал...
+}
+Gibraltar_Soldier_7_f {
+Я передумала...
+}
+Gibraltar_Soldier_8 {
+Сейчас мне не о чем говорить.
+}
+Gibraltar_Soldier_9 {
+@<RandPhraseSimple>
+}
+Gibraltar_Soldier_10 {
+Не пристало...
+}
+Gibraltar_Soldier_11 {
+Да уж, действительно в третий раз...
+}
+Gibraltar_Soldier_12 {
+Извиняюсь...
+}

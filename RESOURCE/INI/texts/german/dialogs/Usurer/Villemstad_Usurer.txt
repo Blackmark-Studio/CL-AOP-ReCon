@@ -241,3 +241,24 @@ Er sagte, er geht jetzt zu den Engländern. Ich glaube, er hat @<XI_ConvertStrin
 Villemstad_Usurer_66 {
 Und du hast gesagt, du hättest keine Ahnung. Na, vielen Dank auch!
 }
+Villemstad_Usurer_67 {
+Sagt, Mynheer, seid Ihr verheiratet?
+}
+Villemstad_Usurer_68 {
+Ich muss gestehen, das ist eine höchst unerwartete Frage. Ich bin, offen gesagt, etwas verblüfft.
+}
+Villemstad_Usurer_69 {
+Ich würde gern ein Kleid erwerben, das dem hohen Stand Eurer Gemahlin angemessen ist.
+}
+Villemstad_Usurer_70 {
+Ah, darum geht es also! Ich bin verheiratet, doch Ihr müsst wissen, meine Gemahlin ist eine recht stattliche Dame. Selbst wenn sie bereit wäre, Euch etwas aus ihrer Garderobe zu verkaufen, würdet Ihr wohl mehr als einen Tag brauchen, um es aufzutrennen und auf Eure Maße ändern zu lassen.
+}
+Villemstad_Usurer_71 {
+Wie bedauerlich. So viel Zeit habe ich gerade nicht.
+}
+Villemstad_Usurer_72 {
+Fragt besser bei den hiesigen Händlern in der Stadt nach. Vielleicht hat einer von ihnen ein passendes Kleid für Euch.
+}
+Villemstad_Usurer_73 {
+Ich danke Euch. Ich werde Euren Rat befolgen. Lebt wohl.
+}

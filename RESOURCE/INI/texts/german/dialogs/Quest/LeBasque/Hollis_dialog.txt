@@ -1,0 +1,96 @@
+Hollis_dialog_1 {
+Kapitän @<pchar>. Meine Sergeanten berichteten, Sie verlangten wegen einer Angelegenheit von außergewöhnlicher Bedeutung für die Sicherheit Port Royals dringend eine Audienz. Ich höre.
+}
+Hollis_dialog_2 {
+Es geht um die Spanier, Kommandant Hollis. Sehen Sie sich diese Papiere an. Abgefangene Anweisungen eines hochrangigen Dons. Darin stehen die genauen Koordinaten von Sebastián Rojas' Lager. Fünfzig Söldner verschanzen sich in diesem Augenblick in Ihrem Dschungel.
+}
+Hollis_dialog_3 {
+Erstaunlich... Zwei Meilen vom Pass entfernt. Ausgezeichnete Arbeit, Kapitän! Meine Kundschafter haben sich bei der Suche nach diesem Nest die Beine wundgelaufen. Aber Sie bringen die Koordinaten zu mir und nicht zum Generalgouverneur. Ich nehme an, Sie haben einen konkreten Vorschlag?
+}
+Hollis_dialog_4 {
+Genau. Ich habe mit Rojas eine eigene Rechnung offen und brauche seinen Kopf. Aber ein befestigtes Lager mit nur einer Enterkompanie frontal anzugreifen hieße, meine Leute ins Grab zu schicken. Ich brauche Ihre Musketiere. Wir schlagen gemeinsam zu.
+}
+Hollis_dialog_5 {
+Eine gemeinsame Militäroperation. Das klingt... ausgesprochen vernünftig. Meine Schützen geben Feuerdeckung und binden die Spanier, während Ihre, hm... Soldaten stürmen. Für die Krone zählt im Augenblick vor allem, diese Seuche von der Insel zu tilgen.
+}
+Hollis_dialog_6_m {
+Freut mich, dass wir einander verstehen. Wenn es Ihnen recht ist, brechen wir morgen Abend auf.
+}
+Hollis_dialog_6_f {
+Freut mich, dass wir einander verstehen. Wenn es Ihnen recht ist, brechen wir morgen Abend auf.
+}
+Hollis_dialog_7 {
+Eine Bedingung, Kapitän. Sämtliche erbeutete Munition, die Kriegskasse und die Fahnen fallen an die Garnison; persönliche Trophäen teilen wir gerecht. Und ich erwarte eiserne Disziplin von Ihrer Mannschaft. Wir sind eine reguläre Armee, kein Haufen mit Eisenstangen.
+}
+Hollis_dialog_8 {
+Meine Leute verstehen ihr Handwerk, Kommandant Hollis. Keine Plünderungen über unsere Abmachung hinaus. Wir kämpfen für dieselbe Sache.
+}
+Hollis_dialog_9 {
+Dann gilt es. Meine Männer erwarten Sie an den Zugängen zu den in den Papieren angegebenen Koordinaten. Bereiten Sie Ihre Mannschaft vor.
+}
+Hollis_dialog_10 {
+Wir sehen uns auf dem Schlachtfeld.
+}
+Hollis_dialog_11_m {
+Meine Sergeanten melden, irgendein Kapitän dränge zu mir und verspreche, mir ein spanisches Lager auf dem Silbertablett zu servieren. Sie haben eine Minute, Sir, um zu beweisen, dass Sie meine Zeit nicht verschwenden. Wo sind sie?
+}
+Hollis_dialog_11_f {
+Meine Sergeanten melden, irgendein Kapitän dränge zu mir und verspreche, mir ein spanisches Lager auf dem Silbertablett zu servieren. Sie haben eine Minute, Madame, um zu beweisen, dass Sie meine Zeit nicht verschwenden. Wo sind sie?
+}
+Hollis_dialog_12 {
+Sehen Sie sich diese Papiere an, Kommandant Hollis. Abgefangene Anweisungen aus der Schatulle eines hochrangigen Spaniers. Darin stehen die genauen Koordinaten des Lagers von Don Sebastián Rojas. Fünfzig Söldner verschanzen sich gerade in Ihrem Dschungel.
+}
+Hollis_dialog_13 {
+Verdammt... Zwei Meilen vom Pass. Wie haben sie überhaupt die Ausrüstung dorthin geschafft?! Fünfzig Bajonette... Und Sie, Kapitän, kommen gewiss nicht aus Liebe zur englischen Krone zu mir. Wozu brauchen Sie die Garnison?
+}
+Hollis_dialog_14 {
+Weil ich meinen Leuten bei einem Frontalangriff nicht den Dschungel mit Leichen pflastern will. Ihren Soldaten wird dieses Lager ebenso wenig gefallen, besonders wenn sich die Spanier mit den Holländern von Fort Oranje verbünden. Ich brauche Rojas' Kopf. Wir schlagen gemeinsam zu... Ihre berühmten roten Röcke liefern die Feuerkraft, meine Leute stürmen.
+}
+Hollis_dialog_15 {
+Spanische Söldner. In meinem Dschungel. Und Sie schlagen mir ein Bündnis mit einem Freikapitän vor, um sie auszuräuchern... Wissen Sie was? Zum Teufel mit der Politik. Eine Seuche bleibt eine Seuche. Ich bringe Ihnen eine Kompanie Soldaten und meine besten Fährtenleser als Verstärkung.
+}
+Hollis_dialog_16 {
+Eine vernünftige Entscheidung. Wir brechen morgen Abend auf.
+}
+Hollis_dialog_17 {
+Aber merken Sie sich eines... Sämtliche erbeutete Munition, die Kriegskasse und die Fahnen fallen an die Garnison; persönliche Trophäen teilen wir gerecht. Und wenn einer Ihrer Burschen die Hand in die Tasche des Königs von England steckt, hänge ich ihn eigenhändig an die nächste Palme - gleich neben die Spanier.
+}
+Hollis_dialog_18 {
+Abgemacht, Kommandant Hollis. Im Augenblick stehen wir beide auf der Seite der Engel. Ein seltsames Gefühl, nicht wahr?
+}
+Hollis_dialog_19 {
+Gewöhnen Sie sich nicht daran, Kapitän. Übermorgen bei Tagesanbruch ist es vorbei. Meine Männer warten an den Zugängen zu den Koordinaten aus den Papieren. Kommen Sie nicht zu spät. Wegtreten.
+}
+Hollis_dialog_20 {
+Wir sehen uns auf dem Schlachtfeld.
+}
+Hollis_dialog_21 {
+Dieser verfluchte jamaikanische Regen... Wenn er in der nächsten halben Stunde nicht aufhört, ist das Pulver auf den Pfannen völlig durchnässt, und meine Soldaten müssen die Spanier mit den Kolben erschlagen. Wo bleibt Ihr Mann, Kapitän? Meine Kundschafter melden, hinter der Palisade sei noch alles ruhig.
+}
+Hollis_dialog_22 {
+Jaco ist bereits drin, Kommandant Hollis. Geduld. Silber ist die empfindliche Stelle jedes Söldners. Geben Sie ihnen Zeit zu begreifen, dass Don Rojas sie leer ausgehen lassen will.
+}
+Hollis_dialog_23 {
+Ich hoffe, Ihr Mann versteht es, ihnen das richtig zu verkaufen. Von ihm hängt der Erfolg der Operation ab. Meine Leute sind auf ihren Positionen. Mehr noch: Wir konnten sogar zwei Mörsermannschaften aus dem Arsenal mitbringen. Sobald drinnen der Streit beginnt, decken wir sie mit Blei und Feuer ein. Falls der Plan scheitert...
+}
+Hollis_dialog_24 {
+Er wird nicht scheitern. Halten Sie nur die Musketen trocken und warten Sie auf mein Signal.
+}
+Hollis_dialog_25 {
+Hören Sie? Ich glaube, es geht los!
+}
+Hollis_dialog_26 {
+Jaco hat ins Wespennest gestochen! Jetzt, Hollis. Ihre Männer sollen uns mit Feuer decken. Angriff!
+}
+Hollis_dialog_27 {
+Kapitän, nehmen Sie meine Glückwünsche an. Die Operation war glänzend geführt. Ihre Leute kämpften wie Besessene!
+}
+Hollis_dialog_28 {
+Ihre Männer standen meinen an Mut und Können in nichts nach, Kommandant Hollis. Was wollen Sie mit dem Lager tun?
+}
+Hollis_dialog_29 {
+Ich lasse dieses Geiernest in Brand stecken. Wir brennen es bis auf den Grund nieder, damit niemand je wieder auf den Gedanken kommt, sich hier einzunisten.
+}
+Hollis_dialog_30 {
+Gut, dann machen Sie sich daran. Wir müssen Sie verlassen - Geschäfte. Lebt wohl, Kapitän.
+}

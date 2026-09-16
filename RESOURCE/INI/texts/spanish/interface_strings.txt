@@ -16,3 +16,16 @@ Tu tripulación exige el salario mensual.
 Officer info {Tus oficiales exigen su salario mensual:}
 All info {Importe neto:}
 Insert Disk Ok {Por favor, inserta el primer disco del juego.}
+
+BadSaveNoVersion
+{
+No se pudo determinar la versión del juego de la partida guardada seleccionada.
+}
+BadSaveVersion
+{
+Versión del juego de la partida guardada seleccionada
+}
+BadSaveInfo
+{
+Esta versión se puede restaurar en Steam.
+}

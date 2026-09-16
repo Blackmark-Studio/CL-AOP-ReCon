@@ -1,0 +1,39 @@
+Gibraltar_Tavern_1 {
+Jakie pytania?
+}
+Gibraltar_Tavern_2 {
+Czego sobie życzysz, @<GetAddress_Form>?
+}
+Gibraltar_Tavern_3 {
+@<RandPhraseSimple>
+}
+Gibraltar_Tavern_4 {
+Niedawno próbowałeś mi zadać pytanie, @<GetAddress_Form>...
+}
+Gibraltar_Tavern_5 {
+W ciągu tego dnia już po raz trzeci wspomina pan o jakiejś sprawie...
+}
+Gibraltar_Tavern_6 {
+Znowu będziesz zadawać pytania?
+}
+Gibraltar_Tavern_7_m {
+Zmieniłem zdanie...
+}
+Gibraltar_Tavern_7_f {
+Zmieniłam zdanie...
+}
+Gibraltar_Tavern_8 {
+Nie mam teraz nic do powiedzenia.
+}
+Gibraltar_Tavern_9 {
+@<RandPhraseSimple>
+}
+Gibraltar_Tavern_10 {
+Hm, coś z moją pamięcią nie tak...
+}
+Gibraltar_Tavern_11 {
+Tak, rzeczywiście już po raz trzeci...
+}
+Gibraltar_Tavern_12 {
+Nie, nie ma sprawy...
+}

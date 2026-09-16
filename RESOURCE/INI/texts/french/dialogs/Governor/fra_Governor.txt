@@ -1270,3 +1270,51 @@ Et prépare le Soleil Royal ; il doit être prêt au combat.
 fra_Governor_313 {
 Très bien, monsieur.
 }
+fra_Governor_314_m {
+Votre Excellence, je viens de la part de Michel le Basque.
+}
+fra_Governor_314_f {
+Votre Excellence, je viens de la part de Michel le Basque.
+}
+fra_Governor_315 {
+Vraiment ? Et que vous a donc confié monsieur le Basque, si je puis me permettre cette curiosité ?
+}
+fra_Governor_316 {
+Le sort de la flûte « Rose des vents » l'inquiète. À notre connaissance, vous attendiez son arrivée dès hier.
+}
+fra_Governor_317 {
+Capitaine, il s'agit d'un secret d'État et je n'ai aucune intention d'en discuter avec vous. Je suis prêt à fermer les yeux sur le fait que vous déteniez de telles informations, mais je vous déconseille d'espérer davantage.
+}
+fra_Governor_318 {
+Ne prenez pas mon insistance pour de l'impudence, mais je dois vous expliquer les raisons de l'inquiétude de Michel. Une personne dont l'arrivée lui tient personnellement à cœur se trouve à bord. En outre, il m'a prié de vous rappeler ceci : il considère la Tortue comme sa maison et agira toujours dans l'intérêt de la défense de l'île.
+}
+fra_Governor_319 {
+Ainsi, il sait quelle cargaison se trouve à bord ?
+}
+fra_Governor_320 {
+Il n'en a rien dit. Mais il soupçonne Diego Vargas d'être mêlé à la disparition du navire.
+}
+fra_Governor_321 {
+J'imagine que, puisque vous êtes ici, vous comptez m'aider à rechercher le bâtiment ?
+}
+fra_Governor_322 {
+Exactement, monsieur le gouverneur.
+}
+fra_Governor_323 {
+Très bien, j'accepte votre aide. Le navire doit amener ici des colons et des artisans. Des gens sans lesquels votre avant-poste restera un repaire de braconniers et de pirates, au lieu de devenir une véritable commune française.
+}
+fra_Governor_324 {
+C'est pourquoi même un tel retard est préoccupant. Si le navire a réellement été capturé, nos chances de retrouver les colons vivants diminuent d'heure en heure.
+}
+fra_Governor_325 {
+Je suis heureux que vous le compreniez. La « Rose des vents » aurait dû apparaître au large de la côte nord dès hier, mais le navire ne s'est jamais montré. Nous n'avons reçu ni signal de détresse ni nouvelle d'une tempête. Je ne lèverai pas la garnison et ne sèmerai pas la panique sur la seule foi de soupçons. Et croyez-moi, j'ai de solides raisons de faire preuve d'une telle retenue.
+}
+fra_Governor_326 {
+Une idée de l'endroit où commencer les recherches ?
+}
+fra_Governor_327 {
+Parlez à mon secrétaire, Henri Tessier. Il centralise les rapports des postes et des phares et dispose de toutes les informations reçues jusqu'à cette heure.
+}
+fra_Governor_328 {
+Je vous remercie, Votre Excellence.
+}

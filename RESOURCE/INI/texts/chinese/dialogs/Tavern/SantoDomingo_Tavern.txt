@@ -1,90 +1,90 @@
 SantoDomingo_Tavern_1 {
-@<GetCityName>的所有小道消息都在这儿，你想打听点啥？
+@<GetCityName>的所有小道消息都在这儿， 你想打听点什么？ 
 }
 SantoDomingo_Tavern_2 {
-我们刚才还在说这个呢，你大概忘了吧……
+我们刚才还在说这个呢， 你大概忘了吧…… 
 }
 SantoDomingo_Tavern_3 {
-今天你已经第三次提这事了……
+今天你已经第三次提这事了…… 
 }
 SantoDomingo_Tavern_4_m {
-你怎么老是像鹦鹉一样重复同一句话……
+你怎么老是像鹦鹉一样重复同一句话…… 
 }
 SantoDomingo_Tavern_4_f {
-你怎么老是像鹦鹉一样重复同一句话……
+你怎么老是像鹦鹉一样重复同一句话…… 
 }
 SantoDomingo_Tavern_5 {
-你知道吗，@<NPChar>，改天吧。
+你知道吗， @<NPChar>， 改天吧。 
 }
 SantoDomingo_Tavern_6_m {
-对了，我忘了点什么……
+对了， 我忘了点什么…… 
 }
 SantoDomingo_Tavern_6_f {
-对了，我忘了点什么……
+对了， 我忘了点什么…… 
 }
 SantoDomingo_Tavern_7 {
-看来第三次总算成了吧……
+看来第三次总算成了吧…… 
 }
 SantoDomingo_Tavern_8 {
-是啊，没错……
+是啊， 没错…… 
 }
 SantoDomingo_Tavern_9 {
-有啥想问的，@<GetAddress_Form>，尽管问吧。
+有什么想问的， @<GetAddress_Form>， 尽管问吧。 
 }
 SantoDomingo_Tavern_10_m {
-我听说你最近抓住了那个臭名昭著的海盗Rock the Brazilian！
+我听说你最近抓住了那个臭名昭著的海盗巴西人洛克！ 
 }
 SantoDomingo_Tavern_10_f {
-我听说你最近抓住了那个臭名昭著的海盗Rock the Brazilian！
+我听说你最近抓住了那个臭名昭著的海盗巴西人洛克！ 
 }
 SantoDomingo_Tavern_11 {
-我在找一枚戒指，曾经属于……我的一个熟人。那戒指挺值钱的，就在这座城里。你听说过吗？一颗大蓝宝石，镶在金子上。
+我在找一枚戒指， 曾经属于…… 我的一个熟人。 那戒指挺值钱的， 就在这座城里。 你听说过吗？ 一颗大蓝宝石， 镶在金子上。 
 }
 SantoDomingo_Tavern_12 {
-没错，确实发生了。真是走了大运啊，@<GetAddress_Form>。
+没错， 确实发生了。 真是走了大运啊， @<GetAddress_Form>。 
 }
 SantoDomingo_Tavern_13 {
-你已经问过我关于那个Brazilian的事了。
+你已经问过我关于那个巴西人的事了。 
 }
 SantoDomingo_Tavern_14 {
-又在说那个Brazilian？
+又在说那个巴西人？ 
 }
 SantoDomingo_Tavern_15 {
-咱们还要聊这些海盗多久啊？换个话题吧……
+咱们还要聊这些海盗多久啊？ 换个话题吧…… 
 }
 SantoDomingo_Tavern_16 {
-确实是这样……那他们怎么处理他了？估计当场就给掐死了吧。
+确实是这样…… 那他们怎么处理他了？ 估计当场就给掐死了吧。 
 }
 SantoDomingo_Tavern_17_m {
-我问过吗？嗯，大概吧……
+我问过吗？ 嗯， 大概吧…… 
 }
 SantoDomingo_Tavern_17_f {
-我问过吗？嗯，大概吧……
+我问过吗？ 嗯， 大概吧…… 
 }
 SantoDomingo_Tavern_18_m {
-对，对，是我问的，抱歉……
+对， 对， 是我问的， 抱歉…… 
 }
 SantoDomingo_Tavern_18_f {
-对，没错，是你问的，抱歉……
+对， 没错， 是你问的， 抱歉…… 
 }
 SantoDomingo_Tavern_19 {
-咱们可以聊点别的……
+咱们可以聊点别的…… 
 }
 SantoDomingo_Tavern_20 {
-哎呀，@<GetAddress_Form>，你可是自己带来的，还让谁想看都看了，之后才交给神父们的……
+哎呀， @<GetAddress_Form>， 你可是自己带来的， 还让谁想看都看了， 之后才交给神父们的…… 
 }
 SantoDomingo_Tavern_21 {
-那圣父们找他干啥？
+那神父们找他干什么？ 
 }
 SantoDomingo_Tavern_22 {
-嘿，@<GetAddress_Form>，这些可不是忏悔神父。那些圣父可是武僧！宗教裁判所……
+嘿， @<GetAddress_Form>， 这些可不是忏悔神父。 那些神父可是武僧！ 宗教裁判所…… 
 }
 SantoDomingo_Tavern_23 {
-哦，明白了。那就谢谢你，朋友。
+哦， 明白了。 那就谢谢你， 朋友。 
 }
 SantoDomingo_Tavern_24 {
-嗯……你说是蓝宝石？对，我记得见过你说的那种戒指。有个姑娘戴着——说不定你还认识她，大多数水手都挺熟她的，呵呵。她叫Francesca。说实话，俺还真没见过比她更呆的姑娘。几年前有个士兵送了她那枚戒指。也许那家伙比她还傻——那戒指可值不少钱呢。没错，估计就是你要找的那枚。\n那你说咋样——要不要跟你的军官们比比酒量，看看谁最能喝？
+嗯…… 你说是蓝宝石？ 对， 我记得见过你说的那种戒指。 有个姑娘戴着——说不定你还认识她， 大多数水手都挺熟她的， 呵呵。 她叫弗朗西丝卡。 说实话， 我还真没见过比她更呆的姑娘。 几年前有个士兵送了她那枚戒指。 也许那家伙比她还傻——那戒指可值不少钱呢。 没错， 估计就是你要找的那枚。 \n那你说咋样——要不要跟你的军官们比比酒量， 看看谁最能喝？ 
 }
 SantoDomingo_Tavern_25 {
-好主意！我去把船员叫来。你就在这儿等我，别乱跑——我很快就回来。
+好主意！ 我去把船员叫来。 你就在这儿等我， 别乱跑——我很快就回来。 
 }

@@ -1,0 +1,100 @@
+; ККС анимация мужских персонажей на базе скелета К:ГПК. Размер моделей оригинальный.
+; edition by Metazot 10.09.10
+; Анимации скрипача и флейтиста
+
+animation = musician.an
+
+data = "Turn speed", "5.5"
+
+;===========================================================================
+;======================================================== МИРНЫЕ АНИМАЦИИ 
+;===========================================================================
+
+
+;Игра на скрипке стоя
+[idle_1]
+	speed = 1.9
+	loop = true
+	type = normal
+	start_time = 1
+	end_time = 201
+	data = "Blend time", "0.2"		; sec
+	data = "Probability", "1.0"
+
+;Игра на флейте стоя
+[flute_idle_1]
+	speed = 2.0
+	loop = true
+	type = normal
+	start_time = 259
+	end_time = 459
+	data = "Blend time", "0.2"		; sec
+	data = "Probability", "1.0"
+
+;Игра на флейте сидя
+[flute_idle_sit_1]
+	speed = 2.4
+	loop = true
+	type = normal
+	start_time = 460
+	end_time = 660
+	data = "Blend time", "0.2"		; sec
+	data = "Probability", "1.0"
+
+;Игра на флейте сидя для индейцев miskito
+[miskito_flute_idle_sit_1]
+	speed = 1.0
+	loop = true
+	type = normal
+	start_time = 740
+	end_time = 940
+	data = "Blend time", "0.2"		; sec
+	data = "Probability", "1.0"
+
+
+
+
+;СМЕРТЬ
+[death_citizen_1]
+;Смерть стоячего скрипача
+	start_time = 202
+	end_time = 258
+	speed = 1.0
+	loop = false
+	data = "Blend time", "0.3"		; sec
+	data = "Probability", "1.0"
+	data = "Angle", "340.0"
+	event = "SndAlliace_citizen_death1", 230, normal
+	
+;Смерть сидячего флейтиста
+[death_flute_sit_1]
+	start_time = 661
+	end_time = 682
+	speed = 1.0
+	loop = false
+	data = "Blend time", "0.3"		; sec
+	data = "Probability", "1.0"
+	data = "Angle", "340.0"
+	event = "SndAlliace_citizen_death1", 670, normal
+
+;Смерть сидячего флейтиста-индейца miskito
+[miskito_death_flute_sit_1]
+	start_time = 941
+	end_time = 962
+	speed = 1.0
+	loop = false
+	data = "Blend time", "0.3"		; sec
+	data = "Probability", "1.0"
+	data = "Angle", "340.0"
+	event = "SndAlliace_citizen_death1", 950, normal
+
+;Смерть стоячего флейтиста
+[death_flute_1]
+	start_time = 683
+	end_time = 739
+	speed = 1.0
+	loop = false
+	data = "Blend time", "0.3"		; sec
+	data = "Probability", "1.0"
+	data = "Angle", "340.0"
+	event = "SndAlliace_citizen_death1", 701, normal

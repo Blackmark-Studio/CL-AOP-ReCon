@@ -3,8 +3,8 @@ void ProcessDialogEvent()
 {
 	ref NPChar, sld;
 	aref Link, NextDiag;
-	string sLocator, sTemp;
-	int iTime, n, iChar;
+	string sLocator, sTemp, sQuest;
+	int iTime, n, iChar, i;
 
 	DeleteAttribute(&Dialog, "Links");
 
@@ -132,6 +132,36 @@ void ProcessDialogEvent()
 								StringFromKey("questNPC_24")));
 					link.l1.go = "sfight";
 					break;
+				}
+				if (npchar.location == "Bridgetown_Packhouse")
+				{
+					switch (rand(3))
+					{
+						case 0:
+							dialog.text = StringFromKey("questNPC_30");
+							link.l1 = StringFromKey("questNPC_31");
+							link.l1.go = "exit";
+						break;
+
+						case 1:
+							dialog.text = StringFromKey("questNPC_32");
+							link.l1 = StringFromKey("questNPC_33");
+							link.l1.go = "exit";
+						break;
+
+						case 2:
+							dialog.text = StringFromKey("questNPC_34");
+							link.l1 = StringFromKey("questNPC_35");
+							link.l1.go = "exit";
+						break;
+
+						case 3:
+							dialog.text = StringFromKey("questNPC_36");
+							link.l1 = StringFromKey("questNPC_37");
+							link.l1.go = "exit";
+						break;
+					}
+					return;
 				}
 				switch (rand(5))
 				{
@@ -333,6 +363,8 @@ void ProcessDialogEvent()
 				link.l1.go = "QSTStep_0";
 				link.l2 = StringFromKey("questNPC_92");
 				link.l2.go = "QSTStep_2";
+				// Проверка: Харизма И Сила  konstrush
+				//				if (GetCharacterSPECIAL(pchar, SPECIAL_C) >= 6 && GetCharacterSPECIAL(pchar, SPECIAL_S) >= 8)
 				if (PlayerRPGCheck_SPECIAL(SPECIAL_C, 6) && PlayerRPGCheck_SPECIAL(SPECIAL_S, 8))
 				{
 					link.l3 = StringFromKey("questNPC_93");
@@ -401,7 +433,7 @@ void ProcessDialogEvent()
 			link.l1 = StringFromKey("questNPC_119");
 			link.l1.go = "Exit";
 			NextDiag.TempNode = "Merchant_2";
-			if (Pchar.questTemp.CapBloodLine.stat == "PrepareToEscape")
+			if (Pchar.questTemp.CapBloodLine.stat == "PrepareToEscape" || Pchar.questTemp.CapBloodLine.stat == "PrepareToEscape1")
 			{
 				Pchar.questTemp.CapBloodLine.stat = "ReadyToEscape"; //fix чтоб не сбивать уже начатые варианты
 				RemoveLandQuestmark_Main(CharacterFromID("Bridgetown_tavernkeeper"), "CapBloodLine");
@@ -415,6 +447,7 @@ void ProcessDialogEvent()
 			RemoveLandQuestmarkToFantoms_Main("ItemTrader", "CapBloodLine");
 			QuestPointerDelLoc("Bridgetown_town", "reload", "HouseSp2");
 			QuestPointerDelLocEx("Bridgetown_town", "reload", "reload4_back", "BloodLine_WeaponsForEscape");
+			CapBloodLine_AddOfficerReady();
 		break;
 
 		case "Merchant_2":
@@ -486,23 +519,6 @@ void ProcessDialogEvent()
 			BloodWithdrawWeapon();
 		break;
 
-		case "NStep_7":
-			dialog.text = StringFromKey("questNPC_144");
-			link.l1 = StringFromKey("questNPC_145");
-			link.l1.go = "Exit_Away";
-			Pchar.questTemp.sLocator = "gate1_back";
-			Pchar.questTemp.iTime = -1;
-
-			chrDisableReloadToLocation = false;
-			pchar.quest.CapBloodEscape2.win_condition.l1 = "location";
-			pchar.quest.CapBloodEscape2.win_condition.l1.location = "Bridgetown_Plantation";
-			pchar.quest.CapBloodEscape2.function = "ReturnToPlantation2";
-
-			sld = characterFromID("Hugtorp");
-			sld.Dialog.CurrentNode = "HTStep_14";
-			ChangeCharacterAddressGroup(sld, "BridgeTown_Plantation", "goto", "goto18");
-			QuestPointerToLoc("Bridgetown_town", "reload", "gate1_back");
-		break;
 		// --> Квестовый солдат
 		case "SQStep_0":
 			dialog.text = StringFromKey("questNPC_146");
@@ -601,6 +617,13 @@ void ProcessDialogEvent()
 			link.l1.go = "Exit";
 			DeleteAttribute(npchar, "talker"); //снимаем говорилку
 			NextDiag.TempNode = "First time";
+		break;
+
+		case "Thorn_In_Shack":
+			dialog.text = StringFromKey("questNPC_315");
+			link.l1 = StringFromKey("questNPC_316");
+			link.l1.go = "exit";
+			NextDiag.TempNode = "Thorn_In_Shack";
 		break;
 
 		// --> Уинтервуд
@@ -1046,13 +1069,6 @@ void ProcessDialogEvent()
 		break;
 
 		case "QSTStep_5":
-			PChar.quest.QUsurer.win_condition.l1 = "Timer";
-			PChar.quest.QUsurer.win_condition.l1.date.hour = 0;
-			PChar.quest.QUsurer.win_condition.l1.date.day = GetAddingDataDay(0, 0, 1);
-			PChar.quest.QUsurer.win_condition.l1.date.month = GetAddingDataMonth(0, 0, 0);
-			PChar.quest.QUsurer.win_condition.l1.date.year = GetAddingDataYear(0, 0, 0);
-			PChar.quest.QUsurer.function = "QUsurerLate";
-
 			AddMoneyToCharacter(pchar, 55000);
 			ChangeCharacterReputation(PChar, -10);
 			AddCharacterExpToSkill(pchar, "Commerce", 50);
@@ -1074,13 +1090,6 @@ void ProcessDialogEvent()
 		break;
 
 		case "QSTStep_6":
-			PChar.quest.QUsurer.win_condition.l1 = "Timer";
-			PChar.quest.QUsurer.win_condition.l1.date.hour = 0;
-			PChar.quest.QUsurer.win_condition.l1.date.day = GetAddingDataDay(0, 0, 1);
-			PChar.quest.QUsurer.win_condition.l1.date.month = GetAddingDataMonth(0, 0, 0);
-			PChar.quest.QUsurer.win_condition.l1.date.year = GetAddingDataYear(0, 0, 0);
-			PChar.quest.QUsurer.function = "QUsurerLate";
-
 			AddMoneyToCharacter(pchar, 30000);
 			AddCharacterExpToSkill(pchar, "Fortune", 50); // fix - Fortune, not Luck (SPECIAL)
 			dialog.text = StringFromKey("questNPC_253");
@@ -1289,16 +1298,30 @@ void ProcessDialogEvent()
 
 		//Испанский офицер в Бриджтауне
 		case "SRStep_0":
+			PlaySound("Voice\" + VoiceGetLanguage() + "\EvilPirates07.wav");
 			dialog.text = StringFromKey("questNPC_302");
 			link.l1 = StringFromKey("questNPC_303");
-			link.l1.go = "fight";
+			link.l1.go = "SRStep_1";
 		break;
 
-		//Служанка Арабеллы
+		case "SRStep_1":
+			DialogExit();
+			MakeQuickSave();
+			LAi_SetPlayerType(pchar);
+			LAi_SetWarriorTypeNoGroup(NPChar);
+			LAi_group_MoveCharacter(NPChar, LAI_GROUP_ENEMY);
+			LAi_group_SetRelation(LAI_GROUP_ENEMY, LAI_GROUP_PLAYER, LAI_GROUP_ENEMY);
+			LAi_group_FightGroups(LAI_GROUP_ENEMY, LAI_GROUP_PLAYER, true);
+			AddDialogExitQuest("MainHeroFightModeOn");
+			chrDisableReloadToLocation = true;
+		break;
+
+		//Подруга Арабеллы
 		case "ASStep_0":
+			locCameraFromToPos(-36.16, 8.91, -14.36, true, -45.23, 5.48, -11.04);
 			dialog.text = StringFromKey("questNPC_304");
 			link.l1 = StringFromKey("questNPC_305");
-			link.l1.go = "ASStep_1";
+			link.l1.go = "ASStep_3";
 			ChangeCharacterReputation(pchar, 5);
 		break;
 
@@ -1312,15 +1335,43 @@ void ProcessDialogEvent()
 			dialog.text = StringFromKey("questNPC_308");
 			link.l1 = StringFromKey("questNPC_309");
 			Pchar.questTemp.CapBloodLine.SpainInBridgetown = true;
-			Pchar.questTemp.sLocator = "gate1_back";
-			Pchar.questTemp.iTime = -1;
-			link.l1.go = "Exit_RunAway";
-			AddQuestRecord("EscapeFormBarbados", "3");
+			link.l1.go = "ASStep_5";
+		break;
+
+		case "ASStep_3":
+			DialogExit();
+			CapBloodLine_BridgetownReloadsLock(true);
+			LAi_SetActorType(npchar);
+			LAi_ActorFollowEverywhere(npchar, "", -1);
+			// AddQuestRecord("EscapeFormBarbados", "3");
 			chrDisableReloadToLocation = false;
 			LAi_SetPlayerType(pchar);
 			SetBan("Looting", 0);
 			DoQuestFunctionDelay("Tutorial_BloodPrologue_DeadSearch", 1.0);
-			AddDialogExitQuestFunction("CapBloodLine_Escape_SetQuestPointers");
+			QuestPointerToLoc("Bridgetown_Town", "reload", "gate1_back");
+			SetFunctionLocationCondition("CapBloodLine_TalkWithMaryOnPlantation", "Bridgetown_Plantation", false);
+			ref loc = &Locations[FindLocation("Bridgetown_Plantation")];
+			loc.locators_radius.reload.houseSp1 = 3.0;
+		break;
+
+		case "ASStep_4":
+			PlaySound("Voice\" + VoiceGetLanguage() + "\Gr_Woman_Citizen_1.wav");
+			dialog.text = StringFromKey("questNPC_313");
+			link.l1 = StringFromKey("questNPC_314");
+			link.l1.go = "ASStep_1";
+		break;
+
+		case "ASStep_5":
+			DialogExit();
+			LAi_SetActorType(npchar);
+			LAi_ActorFollowEverywhere(npchar, "", -1);
+			AddQuestRecord("EscapeFormBarbados", "3");
+			CapBloodLine_BridgetownReloadsLock(false);
+			chrDisableReloadToLocation = true;
+			LAi_SetPlayerType(pchar);
+			QuestPointerToLoc("Bridgetown_Plantation", "reload", "houseSp1");
+			CapBloodLine_MakeSpaSoldiersPeaceful();
+			SetFunctionLocatorCondition("CapBloodLine_ArabellaInHouse", "Bridgetown_Plantation", "reload", "houseSp1", false);
 		break;
 		
 		//Диалог Гобарта с Кирком
@@ -1341,39 +1392,78 @@ void ProcessDialogEvent()
 			CharacterTurnToLoc(CharacterFromID("CapGobart"), "goto", "stay5");
 			AddDialogExitQuestFunction("CapBloodLine_Kirk_5");
 		break;
+
+		case "Sold_Wait_Blad": // Солдат ждёт возвращения Блада
+			QuestPointerDelLoc("Bridgetown_Town", "reload", "gate1_back");
+			RemoveLandQuestmark_Main(npchar, "CapBloodLine");
+			dialog.text = StringFromKey("Bishop_595");
+			link.l1 = StringFromKey("Bishop_596");
+			link.l1.go = "Sold_Wait_Blad_1";
+		break;
+
+		case "Sold_Wait_Blad_1":
+			DialogExit();
+			LAi_CharacterDisableDialog(npchar);
+			LAi_SetCitizenType(npchar);
+
+			sld = CharacterFromID("Bishop");
+			sld.dialog.currentnode = "Bishop_Plantation";
+			ChangeCharacterAddressGroup(sld, "Bridgetown_plantation", "goto", "goto19");
+			LAi_SetStayType(sld);
+			sld.talker = 10;
+			AddLandQuestmark_Main(sld, "CapBloodLine");
+
+			sld = CharacterFromID("CBL_Kent");
+			ChangeCharacterAddressGroup(sld, "Bridgetown_plantation", "goto", "goto19");
+			LAi_SetStayType(sld);
+			LAi_CharacterDisableDialog(sld);
+			CharacterTurnByChr(sld, CharacterFromID("Bishop"));
+			CharacterTurnByChr(CharacterFromID("Bishop"), sld);
+			AddQuestRecord("EscapeFormBarbados", "11");
+			QuestPointerDelLoc("Bridgetown_Plantation", "reload", "gate1_back");
+			QuestPointerDelLoc("Bridgetown_Plantation", "reload", "HouseG6");
+			QuestPointerToLoc("Bridgetown_Plantation", "goto", "goto19");
+			SetFunctionLocatorCondition("CapBloodLine_DelBishopsQuestPointer", "Bridgetown_Plantation", "goto", "goto19", false);
+		break;
 	}
 }
 
 void BloodWithdrawWeapon() //HardCoffee fix
 {
-	ref rItm;
-	string sItm;
-	int i;
-	bool bDagger = false;
 	RemoveCharacterEquip(pchar, BLADE_ITEM_TYPE);
 	RemoveCharacterEquip(pchar, GUN_ITEM_TYPE);
-	for (i = TOTAL_ITEMS - 1; i >= 0; i--)
+	RemoveCharacterEquip(pchar, MUSKET_ITEM_TYPE);
+
+	aref arItems; makearef(arItems, pchar.items);
+	ref rObject;
+	string sObject;
+	int i, q = GetAttributesNum(arItems);
+	bool bDagger = false;
+
+	for (i = q - 1; i >= 0; i--)
 	{
-		rItm = &Items[i];
-		if (!CheckAttribute(rItm, "groupID")) continue;
-		if (rItm.groupID != GUN_ITEM_TYPE && rItm.groupID != BLADE_ITEM_TYPE && rItm.groupID != AMMO_ITEM_TYPE) continue;
-		if (!CheckAttribute(pchar, "items." + rItm.id)) continue;
-		sItm = rItm.id;
-		if (sItm == "unarmed") continue;
-		bDagger = HasSubStr(sItm, "blade5");
+		sObject = GetAttributeName(GetAttributeN(arItems, i));
+		rObject = ItemsFromID(sObject);
+
+		if (!CheckAttribute(rObject, "groupID")) continue;
+		if (rObject.groupID != BLADE_ITEM_TYPE && rObject.groupID != GUN_ITEM_TYPE && rObject.groupID != MUSKET_ITEM_TYPE) continue;
+		if (!CheckAttribute(pchar, "items." + rObject.id)) continue;
+		sObject = rObject.id;
+		if (sObject == "unarmed") continue;
+		bDagger = HasSubStr(sObject, "blade5");
 		if (bDagger && !CheckAttribute(&TEV, "BloodDetectDagger")) continue;
 		else if (bDagger) DeleteAttribute(&TEV, "BloodDetectDagger");
-		TakeNItems(pchar, sItm, -sti(pchar.items.(sItm)));
+		TakeNItems(pchar, sObject, -sti(pchar.items.(sObject)));
 	}
 
 	if ("STBStep_1" == Dialog.CurrentNode) return;
 	i = GetCharacterIndex("SolderTakeBlades"); //На случай, если вместо скриптового нпс к гг обратился другой нпс
 	if (i < 0) return;
 	chrDisableReloadToLocation = false;
-	rItm = &characters[i];
-	LAi_type_actor_Reset(rItm);
-	sItm = FindLocatorForSolderTakeBlades(rItm);
-	LAi_ActorGoToLocation(rItm, "reload", sItm, "none", "", "", "", -1);
+	rObject = &characters[i];
+	LAi_type_actor_Reset(rObject);
+	sObject = FindLocatorForSolderTakeBlades(rObject);
+	LAi_ActorGoToLocation(rObject, "reload", sObject, "none", "", "", "", -1);
 }
 
 string FindLocatorForSolderTakeBlades(ref rChr)

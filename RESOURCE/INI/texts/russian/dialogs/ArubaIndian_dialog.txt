@@ -1,0 +1,111 @@
+ArubaIndian_dialog_1 {
+Не о чем говорить!
+}
+ArubaIndian_dialog_2_m {
+Бледнолицый хочет говорить?
+}
+ArubaIndian_dialog_2_f {
+Белая скво хочет говорить?
+}
+ArubaIndian_dialog_3_m {
+Снова ты, бледнолицый.
+}
+ArubaIndian_dialog_3_f {
+Снова ты, белая скво.
+}
+ArubaIndian_dialog_4_m {
+Бледнолицый любит говорить. Он похож на скво.
+}
+ArubaIndian_dialog_4_f {
+Белая скво любит говорить.
+}
+ArubaIndian_dialog_5_m {
+Духи привели ко мне бледнолицего брата.
+}
+ArubaIndian_dialog_5_f {
+Духи привели ко мне бледнолицую сестру.
+}
+ArubaIndian_dialog_6 {
+Да.
+}
+ArubaIndian_dialog_7 {
+Да, снова я.
+}
+ArubaIndian_dialog_8 {
+Очень поэтично.
+}
+ArubaIndian_dialog_9_m {
+Я тоже рад тебя видеть.
+}
+ArubaIndian_dialog_9_f {
+Я тоже рада тебя видеть.
+}
+ArubaIndian_dialog_10_m {
+Говори, зачем пришёл.
+}
+ArubaIndian_dialog_10_f {
+Говори, зачем пришла.
+}
+ArubaIndian_dialog_11_m {
+Да ничего особенного, послушать тебя хотел...
+}
+ArubaIndian_dialog_11_f {
+Да ничего особенного, послушать тебя хотела...
+}
+ArubaIndian_dialog_12_m {
+Белый человек хочет говорить?
+}
+ArubaIndian_dialog_12_f {
+Белая скво хочет говорить?
+}
+ArubaIndian_dialog_13 {
+Снова ты, яланауи?
+}
+ArubaIndian_dialog_14_m {
+Бледнолицый любит говорить.
+}
+ArubaIndian_dialog_14_f {
+Бледнолицая любит говорить.
+}
+ArubaIndian_dialog_15_m {
+Духи привели ко мне бледнолицего брата...
+}
+ArubaIndian_dialog_15_f {
+Духи привели ко мне белую скво...
+}
+ArubaIndian_dialog_16_m {
+@<npchar.name> слушать тебя, сын моря.
+}
+ArubaIndian_dialog_16_f {
+@<npchar.name> слушать тебя, дочь моря.
+}
+ArubaIndian_dialog_17_m {
+Что ты хотеть от @<npchar.name>, бледнолицый?
+}
+ArubaIndian_dialog_17_f {
+Что ты хотеть от @<npchar.name>, бледнолицая?
+}
+ArubaIndian_dialog_18_m {
+Мои уши открыты для твоих слов, чужеземец.
+}
+ArubaIndian_dialog_18_f {
+Мои уши открыты для твоих слов, чужеземка.
+}
+ArubaIndian_dialog_19_m {
+Да ничего особенного, просто послушать тебя хотел...
+}
+ArubaIndian_dialog_19_f {
+Да ничего особенного, просто послушать тебя хотела...
+}
+ArubaIndian_dialog_20 {
+Убирать оружие, яланауи, пока мы не заставить тебя это сделать!
+}
+ArubaIndian_dialog_21 {
+Хорошо.
+}
+ArubaIndian_dialog_22 {
+Ладно.
+}
+ArubaIndian_dialog_23 {
+Не переживай, уже убираю...
+}

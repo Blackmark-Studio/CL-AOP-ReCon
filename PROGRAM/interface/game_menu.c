@@ -12,7 +12,6 @@ void InitInterface_gm(string iniName)
 	SetEventHandler("InterfaceBreak","ProcessCancelExit",0);
 	SetEventHandler("exitCancel","ProcessCancelExit",0);
 	SetEventHandler("ievnt_command","ProcessCommandExecute",0);
-	SetEventHandler("frame","IProcessFrame",0);
 
 	SetEventHandler("NewClick","NewClick",0);
 	SetEventHandler("LoadClick","LoadClick",0);
@@ -55,17 +54,19 @@ void InitInterface_gm(string iniName)
 	string text4 = XI_ConvertString("GameMenuHelper_1");
     SetFormatedText("STARTINFO_TITLE", text4);
 	SetFormatedText("VERSION_TEXT", GetConvertStr("Version", "interface_strings.txt") + VERSION_NUMBER1 + FindStringBeforeChar(GetVerNum(), "+") + "\n" + FindStringAfterChar(GetVerNum(), "+"));
-	string text = XI_ConvertString("GameMenuHelper_2")+pchar.model.animation;
-	string text3;
-	if (pchar.BaseNation == ENGLAND) text3 = XI_ConvertString("England");
-	if (pchar.BaseNation == FRANCE) text3 = XI_ConvertString("France");
-	if (pchar.BaseNation == HOLLAND) text3 = XI_ConvertString("Holland");
-	if (pchar.BaseNation == SPAIN) text3 = XI_ConvertString("Spain");
-	if (pchar.BaseNation == PIRATE) text3 = XI_ConvertString("Pirate");
-	string text5;
-	if (pchar.HeroParam.HeroType == "Merchant") text5 = XI_ConvertString("Merchant");
-	if (pchar.HeroParam.HeroType == "Adventurer") text5 = XI_ConvertString("Adventurer");
-	if (pchar.HeroParam.HeroType == "Corsair") text5 = XI_ConvertString("Corsair");
+	string text = XI_ConvertString("GameMenuHelper_2") + pchar.model.animation;
+	string text3 = NationNameNominative(sti(pchar.BaseNation));
+	string text5 = "Corsair";
+
+	switch (pchar.HeroParam.HeroType)
+	{
+		case "Adventurer":	text5 = "Adventurer"; break;
+		case "Merchant":	text5 = "Merchant"; 	break;
+		case "Inquisitor": 	text5 = "Inquisitor"; break;
+		case "SecretAgent":	text5 = "SecretAgent"; break;
+		case "Master":		text5 = "Master"; break;
+	}
+	text5 = XI_ConvertString(text5);
 
 	XI_RegistryExitKey("IExit_F1");
 
@@ -76,44 +77,44 @@ void InitInterface_gm(string iniName)
 	
 	switch (bRechargePistolOnLine)
 	{
-	case true:
-		sRechargePistolOnLine = XI_ConvertString("GameMenuOn");
+		case true:
+			sRechargePistolOnLine = XI_ConvertString("GameMenuOn");
 		break;
-	case false:
-		sRechargePistolOnLine = XI_ConvertString("GameMenuOff");
+		case false:
+			sRechargePistolOnLine = XI_ConvertString("GameMenuOff");
 		break;
 	}
 	
 	switch (iEncountersRate)
 	{
-	case 1:
-		sEncountersRate = XI_ConvertString("LowEncounter");
+		case 1:
+			sEncountersRate = XI_ConvertString("LowEncounter");
 		break;
-	case 2:
-		sEncountersRate = XI_ConvertString("MiddleEncounter");
+		case 2:
+			sEncountersRate = XI_ConvertString("MiddleEncounter");
 		break;
-	case 3:
-		sEncountersRate = XI_ConvertString("HiEncounter");
+		case 3:
+			sEncountersRate = XI_ConvertString("HiEncounter");
 		break;
 	}
 	
 	switch (bHardcoreGame)
 	{
-	case true:
-		sHardcoreGame = XI_ConvertString("Yes");
+		case true:
+			sHardcoreGame = XI_ConvertString("Yes");
 		break;
-	case false:
-		sHardcoreGame = XI_ConvertString("No");
+		case false:
+			sHardcoreGame = XI_ConvertString("No");
 		break;
 	}
 	
 	switch (bPartitionSet)
 	{
-	case true:
-		sPartitionSet = XI_ConvertString("Yes");
+		case true:
+			sPartitionSet = XI_ConvertString("Yes");
 		break;
-	case false:
-		sPartitionSet = XI_ConvertString("No");
+		case false:
+			sPartitionSet = XI_ConvertString("No");
 		break;
 	}
 	
@@ -127,10 +128,6 @@ void InitInterface_gm(string iniName)
 }
 
 
-void IProcessFrame()
-{
-}
-
 void ProcessCancelExit()
 {
 	if(CheckAttribute(&InterfaceStates,"Buttons.Resume.enable") && sti(InterfaceStates.Buttons.Resume.enable) == true)
@@ -142,7 +139,6 @@ void IDoExit(int exitCode, bool bClear)
 	DelEventHandler("InterfaceBreak","ProcessCancelExit");
 	DelEventHandler("exitCancel","ProcessCancelExit");
 	DelEventHandler("ievnt_command","ProcessCommandExecute");
-	DelEventHandler("frame","IProcessFrame");
 
 	DelEventHandler("NewClick","NewClick");
 	DelEventHandler("LoadClick","LoadClick");

@@ -1,0 +1,27 @@
+Free_Store_1 {
+Ich höre. Noch etwas?
+}
+Free_Store_2 {
+Darüber haben wir gerade gesprochen. Schon vergessen?
+}
+Free_Store_3 {
+Heute fängst du schon zum dritten Mal mit diesem Gespräch an...
+}
+Free_Store_4 {
+Hier wird gehandelt, nicht geschwatzt. Halt mich nicht von der Arbeit ab!
+}
+Free_Store_5 {
+Weißt du, @<NPChar>, vielleicht ein andermal.
+}
+Free_Store_6_m {
+Stimmt, ich habe tatsächlich etwas vergessen...
+}
+Free_Store_6_f {
+Stimmt, ich habe tatsächlich etwas vergessen...
+}
+Free_Store_7 {
+Ja, aller guten Dinge sind drei...
+}
+Free_Store_8 {
+Hm, ich werde nicht...
+}

@@ -1,7 +1,6 @@
 
-void FranceLineQuestComplete(string sQuestName, string qname)
+void FranceLineQuestComplete(string sQuestName, string qname) //Мишель де Граммон
 {
-	return; //TODO
 	ref chr, chr2, loc, ship;
 	aref arTmp, arTo, arFrom;
 	int i, iChar, n, iTemp;
@@ -122,7 +121,7 @@ void FranceLineQuestComplete(string sQuestName, string qname)
 			LAi_SetPlayerType(pchar);
 			AddDataToCurrent(0, 0, 1);
 			SetCurrentTime(21, 12);
-			MakeAutoSave();
+			MakeQuestAutoSave();
 			DoQuestCheckDelay("FL1_s8", 0.5);
 		break;
 
@@ -253,7 +252,7 @@ void FranceLineQuestComplete(string sQuestName, string qname)
 		break;
 
 		case "FL1_s22":
-			MakeAutoSave();
+			MakeQuestAutoSave();
 			DoQuestCheckDelay("FL1_s23", 0.5);
 		break;
 
@@ -297,7 +296,6 @@ void FranceLineQuestComplete(string sQuestName, string qname)
 
 		case "FL1_s25":
 			Delay_DeleteGroup("EnemyFight");
-//			LaunchInfoMessage(1);
 			chr = CharacterFromID("JozephFushe");
 			chr.greeting = "fushe";
 			ChangeCharacterAddressGroup(chr, pchar.location, "rld", "alocmush2");
@@ -319,7 +317,7 @@ void FranceLineQuestComplete(string sQuestName, string qname)
 
 			chr = CharacterFromID("JozephFushe");
 			chr.greeting = "fushe";
-			chr.dialog.currentnode = "First_man";
+			chr.dialog.currentnode = "5";
 			ChangeCharacterAddressGroup(chr, pchar.location, "quest", "quest1");
 			LAi_SetActorType(chr);
 			LAi_ActorDialog(chr, pchar, "FL1_s28", -1, 0);
@@ -331,7 +329,6 @@ void FranceLineQuestComplete(string sQuestName, string qname)
 
 			pchar.MainQuest = "FL1_s28";
 
-			DoQuestCheckDelay("FL1_s29", 1.0);
 			SetQuestHeader("FL1");
 			AddQuestRecord("FL1", "1");
 		break;
@@ -379,7 +376,6 @@ void FranceLineQuestComplete(string sQuestName, string qname)
 			ChangeCharacterNationReputation(pchar, FRANCE, 3);
 
 			AddQuestRecord("FL1", "3");
-//			LaunchInfoMessage(0);
 
 			SetTimerConditionParamEx("FL1s32failed", "FL1_s32_failed", 0, 0, 1);
 
@@ -413,7 +409,7 @@ void FranceLineQuestComplete(string sQuestName, string qname)
 			chrDisableReloadTolocation = true;
 
 			pchar.MainQuest = "FL1_s33";
-			chr = GetCharacter(NPC_GenerateCharacter("FL_Mary", "Marie", "woman", "towngirl", 1, FRANCE, -1, false)); // нужна другая модель не Изабелла konstrush
+			chr = GetCharacter(NPC_GenerateCharacter("FL_Mary", "Marie", "woman", "towngirl", 1, FRANCE, -1, false));
 			chr.name = FindPersonalName("FL_Mary_name");
 			chr.lastname = characters[GetCharacterIndex("FortFrance_trader")].lastname;
 			chr.dialog.filename = "Quest\FranceLine\Mary.c";
@@ -793,6 +789,7 @@ void FranceLineQuestComplete(string sQuestName, string qname)
 			SetBan("Looting", 1); //запрещаем лутаться, чтобы не рвать скрипт диалога konstrush
 			LAi_SetPlayerType(pchar);
 			chr = CharacterFromID("FL_DurantePascual");
+			LAi_LocationFightDisable(&Locations[FindLocation("QuestCabin_Medium")], false);//костыль а то драться нельзя было
 			ChangeCharacterAddressGroup(chr, pchar.location, "rld", "loc0");
 			LAi_SetWarriorTypeNoGroup(chr);
 			LAi_group_MoveCharacter(chr, "FL_EnemyFight");
@@ -951,9 +948,11 @@ void FranceLineQuestComplete(string sQuestName, string qname)
 			Log_Info(StringFromKey("InfoMessages_61"));
 			SetQuestHeader("FL2");
 			AddQuestRecord("FL2", "1_1");
+			Achievment_Set(ACH_MGL_Prologue);
 
 			chrDisableReloadTolocation = false;
 			SetBan("Looting", 0); //снимаем атрибут на запрет лутание трупов konstrush
+			DoQuestCheckDelay("FL1_s29", 1.0);
 
 			// переход в дом Гранье
 			pchar.quest.FL1s77.win_condition.l1 = "location";
@@ -1126,7 +1125,7 @@ void FranceLineQuestComplete(string sQuestName, string qname)
 		case "FL2_s17":
 			chrDisableReloadTolocation = true;
 			LAi_LocationDisableMonGenTimer("Terks_grot", 1); //заблочим скелетов на 1 день konstrush
-			//Log_Info("Слышны чьи-то голоса, надо подойти поближе...");
+			//Log_Info("Слышны чьи-то голоса, надо подойти поближе..."); //TODO можно вернуть в новую систему нотификаций
 
 			// Гранье
 			chr = GetCharacter(NPC_GenerateCharacter("FL_granie", "granie", "man", "man", sti(pchar.rank), FRANCE, -1, false));
@@ -1139,8 +1138,8 @@ void FranceLineQuestComplete(string sQuestName, string qname)
 
 			__DEPRECATED_SetOfficerParam(chr, 1);
 			SetSPECIAL(chr, 8, 10, 5, 3, 10, 4, 10);
-			SetSelfSkill(chr, 10, 10, 10, 10, 36);
-			SetShipSkill(chr, 5, 13, 50, 50, 8, 16, 2, 7, 60);
+			SetSelfSkill(chr, 10, 10, 10, 10, 25);
+			SetShipSkill(chr, 5, 13, 50, 50, 8, 16, 2, 7, 10);
 			SetRankFromSkill(chr);
 			chr.reputation = 80;
 			chr.alignment = "good";

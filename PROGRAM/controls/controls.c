@@ -5,6 +5,20 @@
 #define USE_AXIS_AS_INVERSEBUTTON		2
 #define INVERSE_CONTROL					4
 
+// Control groups (в соответствии с GetCurControlGroup)
+#define INVALID_BIND_GROUP    -1
+#define BIND_ALL_GROUPS       -2
+#define BIND_VIDEO_PLAYER     0
+#define BIND_MAIN_INTERFACE   1
+#define BIND_DIALOG           2
+#define BIND_BATTLE_INTERFACE 3
+#define BIND_WORLD_MAP        4
+#define BIND_SAILING_1PERS    5
+#define BIND_SAILING_3PERS    6
+#define BIND_SAILING_FIRE     7
+#define BIND_FIGHT_MODE       8
+#define BIND_PRIMARY_LAND     9
+
 string curKeyGroupName = "";
 object objControlsState;
 extern void ExternControlsInit(bool bFirst);
@@ -98,6 +112,19 @@ void DoControlInvisible(string groupName, string controlName)
 		objControlsState.keygroups.(groupName).(controlName).invisible = true;
 	}
 }
+
+// iSync: 0 меняются независимо, 1 меняются одновременно,
+//        2, 3 меняются независимо, но в случае дубля нужна проверка (WASD)
+void SameBindingAllowed(string controlName1, string controlName2, int iSync)
+{
+    objControlsState.map.controls.(controlName1).friends.(controlName2) = iSync;
+    objControlsState.map.controls.(controlName2).friends.(controlName1) = iSync;
+}
+
+//void ControlSyncLock(string controlName)
+//{
+//    objControlsState.map.controls.(controlName).SyncLock = "";
+//}
 
 string CI_CreateAndSetControls( string groupName, string controlName, int keyCode, int controlState, bool bRemappingEnable )
 {
@@ -295,7 +322,8 @@ string GetCurControlGroup()
 	{
 		if (CheckAttribute(&BattleInterface,"ComState") && sti(BattleInterface.ComState) != 0)
 			return "BattleInterfaceControls";
-		if (SeaCameras.Camera == "SeaDeckCamera") return "Sailing1Pers";
+		if (SeaCameras.Camera == SEA_CAMERA_DECK) return "Sailing1Pers";
+		if (SeaCameras.Camera == SEA_CAMERA_FIRE) return "SailingFire";
 		else return "Sailing3Pers";
 	}
 	if (CheckAttribute(&objLandInterface,"ComState") && sti(objLandInterface.ComState) != 0)
@@ -323,6 +351,15 @@ void FreezeGroupControls(string grName, bool bFreeze)
 	{
 		arKey = GetAttributeN(arKeyRoot,i);
 		LockControl(GetAttributeName(arKey),bFreeze);
+	}
+
+	if ("BattleInterfaceControls" == grName)
+	{
+		LockControl("BICommandsActivateAdd", true);
+	}
+	else
+	{
+		LockControl("BICommandsActivateAdd", false);
 	}
 }
 
@@ -383,9 +420,9 @@ void SetRealMouseSensitivity()
 
     float fLoc = 0.5;
     float fSea = 0.5;
-    if(CheckAttribute(InterfaceStates,"mouse.loc_sens"))
+    if (CheckAttribute(&InterfaceStates, "mouse.loc_sens"))
         fLoc = stf(InterfaceStates.mouse.loc_sens);
-    if(CheckAttribute(InterfaceStates,"mouse.sea_sens"))
+    if (CheckAttribute(&InterfaceStates, "mouse.sea_sens"))
         fSea = stf(InterfaceStates.mouse.sea_sens);
     float fRealMouseLocSens = Calculate_sensitivity(fLoc);
     float fRealMouseSeaSens = Calculate_sensitivity(fSea);
@@ -407,6 +444,106 @@ float Calculate_sensitivity(float slider_value)
     return pow(fBase, fPow);
 }
 
+int GetGroupIDX(string sGroupName)
+{
+    switch(sGroupName)
+    {
+        case "":
+            return BIND_ALL_GROUPS;
+            break;
+        case "VideoPlayer":
+            return BIND_VIDEO_PLAYER;
+            break;
+        case "MainInterface":
+            return BIND_MAIN_INTERFACE;
+            break;
+        case "DialogControls":
+            return BIND_DIALOG;
+            break;
+        case "BattleInterfaceControls":
+            return BIND_BATTLE_INTERFACE;
+            break;
+        case "WorldMapControls":
+            return BIND_WORLD_MAP;
+            break;
+        case "Sailing1Pers":
+            return BIND_SAILING_1PERS;
+            break;
+        case "Sailing3Pers":
+            return BIND_SAILING_3PERS;
+            break;
+        case "SailingFire":
+        	return BIND_SAILING_FIRE;
+        	break;
+        case "FightModeControls":
+            return BIND_FIGHT_MODE;
+            break;
+        case "PrimaryLand":
+            return BIND_PRIMARY_LAND;
+            break;
+    }
+
+    Log_Info("АХТУНГ! НЕИЗВЕСТНАЯ ГРУППА КЛАВИШ! " + sGroupName);
+    return INVALID_BIND_GROUP;
+}
+
+string GetGroupName(int iGroupIDX)
+{
+    switch(iGroupIDX)
+    {
+        case BIND_VIDEO_PLAYER:
+            return "VideoPlayer";
+            break;
+        case BIND_MAIN_INTERFACE:
+            return "MainInterface";
+            break;
+        case BIND_DIALOG:
+            return "DialogControls";
+            break;
+        case BIND_BATTLE_INTERFACE:
+            return "BattleInterfaceControls";
+            break;
+        case BIND_WORLD_MAP:
+            return "WorldMapControls";
+            break;
+        case BIND_SAILING_1PERS:
+            return "Sailing1Pers";
+            break;
+        case BIND_SAILING_3PERS:
+            return "Sailing3Pers";
+            break;
+        case BIND_SAILING_FIRE:
+        	return "SailingFire";
+        	break;
+        case BIND_FIGHT_MODE:
+            return "FightModeControls";
+            break;
+        case BIND_PRIMARY_LAND:
+            return "PrimaryLand";
+            break;
+    }
+
+    Log_Info("АХТУНГ! НЕИЗВЕСТНАЯ ГРУППА КЛАВИШ! ИНДЕКС: " + iGroupIDX);
+    return "";
+}
+
+void BI_MarkAlwaysDisplay()
+{
+    objControlsState.BI_AlwaysDisplay.BICommandsConfirm = "";
+    objControlsState.BI_AlwaysDisplay.BICommandsCancel = "";
+    objControlsState.BI_AlwaysDisplay.BICommandsUp = "";
+    objControlsState.BI_AlwaysDisplay.BICommandsDown = "";
+    objControlsState.BI_AlwaysDisplay.BICommandsLeft = "";
+    objControlsState.BI_AlwaysDisplay.BICommandsRight = "";
+    objControlsState.BI_AlwaysDisplay.BICommandsLeftW = "";
+    objControlsState.BI_AlwaysDisplay.BICommandsRightW = "";
+
+	objControlsState.BI_AlwaysDisplay.BICommandsConfirmAdd = "";
+    objControlsState.BI_AlwaysDisplay.BICommandsCancelAdd = "";
+    objControlsState.BI_AlwaysDisplay.BICommandsActivateAdd = "";
+}
+
+
 bool IsSettingsGroup(string sName)
 {
     if(sName == "PrimaryLand"  || sName == "FightModeControls" ||
@@ -422,3 +559,63 @@ void SyncControls(string controlName1, string controlName2)
     objControlsState.map.controls.(controlName1).sync = controlName2;
     objControlsState.map.controls.(controlName2).sync = controlName1;
 }
+
+//HardCoffee возможность назначения нескольких команд на одну кнопку -->
+void ControlsMakeIntersectable(string sCommandA, string sCommandB)
+{
+	ControlsMakeIntersectableAB(sCommandA, sCommandB);
+	ControlsMakeIntersectableAB(sCommandB, sCommandA);
+}
+
+void ControlsMakeIntersectableAB(string sCommandA, string sCommandB)
+{
+	aref arControl;
+	string sComm = "";
+	int i = 0;
+	bool bAlreadyExists = false;
+
+	makearef(arControl, objControlsState.keygroups.battleinterfacecontrols.(sCommandA));
+	if (!CheckAttribute(arControl, "intersect"))
+	{
+		arControl.intersect.comm0 = sCommandB;
+	}
+	else
+	{
+		makearef(arControl, arControl.intersect);
+
+		for (i = 0; i < GetAttributesNum(arControl); i++)
+		{
+			sComm = "comm" +its(i);
+			if (arControl.(sComm) == sCommandB)
+			{
+				bAlreadyExists = true;
+				break;
+			}
+		}
+		if (!bAlreadyExists)
+		{
+			sComm = "comm" +its(i);
+			arControl.(sComm) = sCommandB;
+		}
+	}
+}
+
+bool IsControlIntersectable(aref arCntrl, string sControl)
+{
+	if (!CheckAttribute(arCntrl, "intersect"))
+		return false;
+
+	aref arIntersect, arComm;
+	string sComm;
+
+	makearef(arIntersect, arCntrl.intersect);
+	int q = GetAttributesNum(arIntersect);
+	for (int i = 0; i < q; i++)
+	{
+		arComm = GetAttributeN(arIntersect, i);
+		if (GetAttributeValue(arComm) == sControl)
+			return true;
+	}
+	return false;
+}
+// <-- возможность назначения нескольких команд на одну кнопку

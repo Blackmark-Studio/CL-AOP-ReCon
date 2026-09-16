@@ -201,112 +201,112 @@ int LocationInitCuracao(int n)
     locations[n].reload.l16.disable = 1; //закрыто
 
     locations[n].reload.l17.name = "houseK2"; //Хижина больного
-    locations[n].reload.l17.go = "Smallhome_K2";
+    locations[n].reload.l17.go = "Villemstad_Smallhome_K2";
     locations[n].reload.l17.emerge = "reload1";
     locations[n].reload.l17.autoreload = "0";
     locations[n].reload.l17.label = "House";
 
     // --> Псевдоквестовые локации. (Можно юзать по новым квестам, но там где закрыто, не открывать. Это дома клоны)
     locations[n].reload.l18.name = "houseH3";
-    locations[n].reload.l18.go = "Vil_Hut";
+    locations[n].reload.l18.go = "Villemstad_Hut";
     locations[n].reload.l18.emerge = "reload1";
     locations[n].reload.l18.autoreload = "0";
     locations[n].reload.l18.label = "House";
 
     locations[n].reload.l19.name = "houseH4";
-    locations[n].reload.l19.go = "Vil_Hut";
+    locations[n].reload.l19.go = "Villemstad_Hut";
     locations[n].reload.l19.emerge = "reload2";
     locations[n].reload.l19.autoreload = "0";
     locations[n].reload.l19.label = "House";
 
     locations[n].reload.l20.name = "Hut3";
-    locations[n].reload.l20.go = "Vil_Hut3";
+    locations[n].reload.l20.go = "Villemstad_Hut3";
     locations[n].reload.l20.emerge = "reload1";
     locations[n].reload.l20.autoreload = "0";
     locations[n].reload.l20.label = "House";
 
     locations[n].reload.l21.name = "houseB1";
-    locations[n].reload.l21.go = "Vil_BigHouse06";
+    locations[n].reload.l21.go = "Villemstad_BigHouse06";
     locations[n].reload.l21.emerge = "reload1";
     locations[n].reload.l21.autoreload = "0";
     locations[n].reload.l21.label = "House";
 
     locations[n].reload.l22.name = "houseB2";
-    locations[n].reload.l22.go = "Vil_BigHouse06";
+    locations[n].reload.l22.go = "Villemstad_BigHouse06";
     locations[n].reload.l22.emerge = "reload2";
     locations[n].reload.l22.autoreload = "0";
     locations[n].reload.l22.label = "House";
 
     locations[n].reload.l23.name = "houseB3";
-    locations[n].reload.l23.go = "Vil_BigHouse06";
+    locations[n].reload.l23.go = "Villemstad_BigHouse06";
     locations[n].reload.l23.emerge = "reload3";
     locations[n].reload.l23.autoreload = "0";
     locations[n].reload.l23.label = "House";
 
     locations[n].reload.l24.name = "houseB4";
-    locations[n].reload.l24.go = "Vil_BigHouse06";
+    locations[n].reload.l24.go = "Villemstad_BigHouse06";
     locations[n].reload.l24.emerge = "reload1";
     locations[n].reload.l24.autoreload = "0";
     locations[n].reload.l24.label = "House";
     locations[n].reload.l24.disable = 1; // Закроем навсегда
 
     locations[n].reload.l25.name = "houseRs1";
-    locations[n].reload.l25.go = "Vil_ResidencePKM";
+    locations[n].reload.l25.go = "Villemstad_ResidencePKM";
     locations[n].reload.l25.emerge = "reload1";
     locations[n].reload.l25.autoreload = "0";
     locations[n].reload.l25.label = "Residence";
     locations[n].reload.l25.close_for_night = 1;
 
     locations[n].reload.l26.name = "houseH5";
-    locations[n].reload.l26.go = "Vil_MH9_2";
+    locations[n].reload.l26.go = "Villemstad_MH9_2";
     locations[n].reload.l26.emerge = "reload1";
     locations[n].reload.l26.autoreload = "0";
     locations[n].reload.l26.label = "House";
 
     locations[n].reload.l27.name = "houseRs2";
-    locations[n].reload.l27.go = "Vil_MH9_2";
+    locations[n].reload.l27.go = "Villemstad_MH9_2";
     locations[n].reload.l27.emerge = "reload1";
     locations[n].reload.l27.autoreload = "0";
     locations[n].reload.l27.label = "House";
     locations[n].reload.l27.disable = 1; // Закроем навсегда
 
     locations[n].reload.l28.name = "houseRs3";
-    locations[n].reload.l28.go = "Vil_MH9_2";
+    locations[n].reload.l28.go = "Villemstad_MH9_2";
     locations[n].reload.l28.emerge = "reload1";
     locations[n].reload.l28.autoreload = "0";
     locations[n].reload.l28.label = "House";
     locations[n].reload.l28.disable = 1; // Закроем навсегда
 
     locations[n].reload.l29.name = "houseK2a";
-    locations[n].reload.l29.go = "Vil_MH9_2";
+    locations[n].reload.l29.go = "Villemstad_MH9_2";
     locations[n].reload.l29.emerge = "reload1";
     locations[n].reload.l29.autoreload = "0";
     locations[n].reload.l29.label = "House";
     locations[n].reload.l29.disable = 1; // Закроем навсегда
 
     locations[n].reload.l30.name = "Hut4";
-    locations[n].reload.l30.go = "Vil_Hut3";
+    locations[n].reload.l30.go = "Villemstad_Hut3";
     locations[n].reload.l30.emerge = "reload1";
     locations[n].reload.l30.autoreload = "0";
     locations[n].reload.l30.label = "Hut";
     locations[n].reload.l30.disable = 1; // Закроем навсегда
 
     locations[n].reload.l31.name = "houseS3";
-    locations[n].reload.l31.go = "Vil_MH9_2";
+    locations[n].reload.l31.go = "Villemstad_MH9_2";
     locations[n].reload.l31.emerge = "reload1";
     locations[n].reload.l31.autoreload = "0";
     locations[n].reload.l31.label = "House";
     locations[n].reload.l31.disable = 1; // Закроем навсегда
 
     locations[n].reload.l32.name = "houseB5";
-    locations[n].reload.l32.go = "Vil_BigHouse06";
+    locations[n].reload.l32.go = "Villemstad_BigHouse06";
     locations[n].reload.l32.emerge = "reload3";
     locations[n].reload.l32.autoreload = "0";
     locations[n].reload.l32.label = "House";
     locations[n].reload.l32.disable = 1; // Закроем навсегда
 
     locations[n].reload.l33.name = "Hut1";
-    locations[n].reload.l33.go = "Vil_Hut1";
+    locations[n].reload.l33.go = "Villemstad_Hut1";
     locations[n].reload.l33.emerge = "reload2";
     locations[n].reload.l33.autoreload = "0";
     locations[n].reload.l33.label = "House";
@@ -397,7 +397,7 @@ int LocationInitCuracao(int n)
     locations[n].reload.l47.label = "House";
 
     locations[n].reload.l48.name = "houseRs3";
-    locations[n].reload.l48.go = "Vil_MH9_2";
+    locations[n].reload.l48.go = "Villemstad_MH9_2";
     locations[n].reload.l48.emerge = "reload1";
     locations[n].reload.l48.autoreload = "0";
     locations[n].reload.l48.label = "House";
@@ -408,6 +408,12 @@ int LocationInitCuracao(int n)
     locations[n].reload.l49.emerge = "reload1";
     locations[n].reload.l49.autoreload = "0";
     locations[n].reload.l49.label = "House";
+
+	locations[n].reload.l50.name = "houseT3";
+    locations[n].reload.l50.go = "CommonHut";
+    locations[n].reload.l50.emerge = "reload1";
+    locations[n].reload.l50.autoreload = "0";
+    locations[n].reload.l50.label = "House";
     n = n + 1;
 
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -701,7 +707,8 @@ int LocationInitCuracao(int n)
     locations[n].models.always.l1 = "Residence06";
     locations[n].models.always.l1.level = 65538;
     locations[n].models.always.l2 = "flora";
-    locations[n].models.always.locators = "Residence06_plan";
+    locations[n].models.always.locators = "residence06_locators";
+	locations[n].models.always.plan = "Residence06_plan";
     locations[n].models.always.window = "residence06_window";
     locations[n].models.always.window.tech = "LocationWindows";
     locations[n].models.always.window.level = 65539;
@@ -1535,7 +1542,7 @@ int LocationInitCuracao(int n)
     locations[n].reload.l2.label = "Street";
 
     locations[n].reload.l3.name = "reload3";
-    locations[n].reload.l3.go = "Vil_MH9_2";
+    locations[n].reload.l3.go = "Villemstad_MH9_2";
     locations[n].reload.l3.emerge = "reload1";
     locations[n].reload.l3.autoreload = "0";
     locations[n].reload.l3.label = "House";
@@ -1551,7 +1558,7 @@ int LocationInitCuracao(int n)
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     // Маленький дом из ПКМ, где живёт больной
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    locations[n].id = "Smallhome_K2";
+    locations[n].id = "Villemstad_Smallhome_K2";
     locations[n].id.label = "House";
     locations[n].image = "loading\inside\Smallhome.tga";
     locations[n].MustSetReloadBack = true;
@@ -1591,7 +1598,7 @@ int LocationInitCuracao(int n)
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     // Хижина у пирса с двумя входами
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    locations[n].id = "Vil_Hut";
+    locations[n].id = "Villemstad_Hut";
     locations[n].id.label = "House";
     locations[n].image = "loading\inside\Hut1.tga";
     locations[n].MustSetReloadBack = true;
@@ -1637,7 +1644,7 @@ int LocationInitCuracao(int n)
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     // Хижина с камином
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    locations[n].id = "Vil_Hut3";
+    locations[n].id = "Villemstad_Hut3";
     locations[n].id.label = "House";
     locations[n].image = "loading\inside\Hut3.tga";
     locations[n].MustSetReloadBack = true;
@@ -1677,7 +1684,7 @@ int LocationInitCuracao(int n)
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     // Дом с 4 дверьми
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    locations[n].id = "Vil_BigHouse06";
+    locations[n].id = "Villemstad_BigHouse06";
     locations[n].id.label = "House";
     locations[n].image = "loading\inside\BigHouse06.tga";
     //Town sack
@@ -1730,7 +1737,7 @@ int LocationInitCuracao(int n)
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     // Маленькая резиденция из ПКМ
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    locations[n].id = "Vil_ResidencePKM";
+    locations[n].id = "Villemstad_ResidencePKM";
     locations[n].id.label = "Residence";
     locations[n].image = "loading\inside\pirateresidence01.tga";
     //locations[n].MustSetReloadBack = true;
@@ -1770,7 +1777,7 @@ int LocationInitCuracao(int n)
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     // Средний дом 8 (9 с заменённой стенкой)
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    locations[n].id = "Vil_MH9_2";
+    locations[n].id = "Villemstad_MH9_2";
     locations[n].id.label = "House";
     locations[n].image = "loading\inside\mediumhouse08.tga";
     locations[n].MustSetReloadBack = true;
@@ -1812,7 +1819,7 @@ int LocationInitCuracao(int n)
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     // Изба рыбака
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    locations[n].id = "Vil_Hut1";
+    locations[n].id = "Villemstad_Hut1";
     locations[n].id.label = "House";
     locations[n].image = "loading\inside\hibara.tga";
     locations[n].MustSetReloadBack = true;
@@ -2505,7 +2512,7 @@ int LocationInitCuracao(int n)
     //Always
     locations[n].filespath.models = "locations\Outside\Jungles\Jungle6";
     Locations[n].models.always.jungle = "jungle6";
-    Locations[n].models.always.locators = "jungle6_lCuracao03";
+    Locations[n].models.always.locators = "jungle6_locators";
     Locations[n].models.always.grassPatch = "jungle6_grass";
     Locations[n].models.always.grassPatch.texture = "grass\grassshore.tga.tx";
     Locations[n].models.always.l1 = "plan1";

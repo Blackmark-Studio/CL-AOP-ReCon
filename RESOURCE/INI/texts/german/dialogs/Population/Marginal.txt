@@ -205,3 +205,12 @@ ein naher Verwandter des Hafenbehördenleiters
 Marginal_65 {
 mit seinem Verwandten, dem Leiter der Hafenbehörde
 }
+Marginal_66 {
+@<TimeGreeting>, @<pchar>. Sehr erfreut, Euch zu sehen.
+}
+Marginal_67 {
+@<TimeGreeting>, @<pchar>. Sehr erfreut, Euch zu sehen.
+}
+Marginal_68 {
+@<TimeGreeting>, @<npchar>. Ich muss gehen.
+}

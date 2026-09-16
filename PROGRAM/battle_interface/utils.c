@@ -189,6 +189,7 @@ float ProcessHullRepair(ref chref,float repPercent)
 	if(repPercent>dmg) repPercent=dmg;
 	int blotsQuantity = GetBlotsQuantity(chref);
 	int repBlots = makeint(blotsQuantity*repPercent/dmg);
+	if(repPercent>=dmg) repBlots = blotsQuantity;
 	DeleteBlots(chref,repBlots);
 	float baseHP = makefloat(GetCharacterShipHP(chref));
 	chref.ship.HP = baseHP+(repPercent-dmg)*baseHP/100.0;
@@ -316,6 +317,7 @@ void DeleteBlots(ref chref, int repBlots)
 		blotsQ--;
 		curblots = GetAttributeN(blref,blotsQ);
 		DeleteAttribute(blref,GetAttributeName(curblots));
+		repBlots--;
 	}
 }
 
@@ -453,8 +455,8 @@ void CloseTimerInterface()
 void procTimerTimeOut()
 {
 	QuestComplete(objTimerInterface.questtype, objTimerInterface.questname);
-	//TODO: Стартовая линейка Мишеля
-	//FranceLineQuestComplete(objTimerInterface.questtype, objTimerInterface.questname); //kosntrush
+	LeBasqueQuestComplete(objTimerInterface.questtype, objTimerInterface.questname); // Ле Баск
+	FranceLineQuestComplete(objTimerInterface.questtype, objTimerInterface.questname); //Мишель де Граммон
 }
 
 bool CheckInstantRepairCondition(ref chref)

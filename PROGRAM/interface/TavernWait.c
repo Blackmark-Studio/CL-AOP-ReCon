@@ -166,11 +166,10 @@ void RefreshVariables()
 //Sith крутим вертим часы и дни
 void ProcSlideChange()
 {
-	string sCurDayTime, sDate, sTime;
+	string sDate, sTime;
 	string sNodeName    = GetEventData();
 	int iVal        = GetEventData(); // int GameInterface.nodes.<node_name>.value
 	float fVal        = GetEventData(); // float GameInterface.nodes.<node_name>.value
-	sCurDayTime = GetDayTime();
 
 	int hour = sti(worldMap.date.hour);
 	int minute = sti(worldMap.date.min);
@@ -221,7 +220,6 @@ void ProcSlideChange()
 
 void SetTimeSlider()
 {
-	bool inTavern = (CheckAttribute(loadedLocation, "fastreload")) && (pchar.location == loadedLocation.fastreload + "_tavern");
 	if (days == true)
 	{
 		GameInterface.nodes.HOURS_SLIDE.value = 1;
@@ -252,8 +250,6 @@ void SetVariable()
 {
 	int color1 = argb(255, 128, 128, 128);
 	int color2 = argb(255, 196, 196, 196);
-	string sCurDayTime;
-	sCurDayTime = GetDayTime();
 	bool inTavern = (CheckAttribute(loadedLocation, "fastreload")) && (pchar.location == loadedLocation.fastreload + "_tavern");
 	// только в таверне
 	if (!inTavern)

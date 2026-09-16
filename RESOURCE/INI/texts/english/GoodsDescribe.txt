@@ -75,13 +75,11 @@ A hard to notice palm tree, growing cacao beans has turned out to be one of the 
 High demand for cocoa among the Indians and wealthy locals already dictates high prices for this merchandise, but Italians are willing to pay for it in gold, which makes the prices exorbitant.
 }
 
-
 Sugar {Sugar}
 Sugar_descr
 {
 After the creation of sugar plantations in the New World sugar has become one of the biggest exports to Europe. It may be so that cane sugar isn't exactly as good as beet sugar, but it is much cheaper.
 }
-
 
 Wine {Wine}
 Wine_descr
@@ -89,13 +87,11 @@ Wine_descr
 Colonists managed to grow grapes on New World's fertile lands, and now this exported wine is valued highly in Europe. It doesn't have the delicate taste of european wines, but it does have a strong and pleasant aroma, as well as being strong in general.
 }
 
-
 Linen {Linen}
 Linen_descr
 {
 Made from flax grown on the islands of the archipelago, this thick, dense fabric is suitable for sewing anything from clothes to sails.
 }
-
 
 Rum {Rum}
 Rum_descr
@@ -104,20 +100,17 @@ Strong and fragrant - rum not only warms and eases the mood, but also improves m
 A shortage of rum on the ship can cause unrest among your sailors and even become the cause of a mutiny.
 }
 
-
 Tobacco {Tobacco}
 Tobacco_descr
 {
 Aromatic tobacco leaves... For centuries a sailor's true friend was his smoking pipe. Smoking is one of the better relaxing pasttimes, so it was obvious from the start tobacco would become very popular among traders. Tobacco leaves in linen sacks are a treasured cargo for many merchants.
 }
 
-
 Coffee {Coffee}
 Coffee_descr
 {
 Thanks to its exotic taste and good smell, as well as an invigorating effect, coffee has quickly become popular. Despite all the hardships of making it, coffee production is increasing each year, as an answer to Europe's "unquenchable thirst". 
 }
-
 
 Mahogany {Mahogany}
 Mahogany_descr
@@ -126,14 +119,12 @@ The wood of these redwood trees has a very distinct and beautiful pattern, as we
 Furniture made of mahogany is an example of classic luxury, good taste and well-being of its owner. Rarely, but it is used for ships hulls.
 }
 
-
 Cinnamon {Vanilla}
 Cinnamon_descr
 {
 Dried and fermented pods of this evergreen vine originating in Mexico have a sweet aroma, but a bitter taste.
 Vanilla is used in Europe in making cocoa and hot chocolate. It is also used as aromatizer for tobacco; others simply chew it, though mostly that is just to show their status!
 }
-
 
 Copra {Copra}
 Copra_descr
@@ -147,7 +138,6 @@ Paprika_descr
 Ground and dried red chili peppers, a sweet and hot spice that is immensely popular in cooking as a flavoring agent.
 Paprika is very popular among Germans, Spaniards, and in Mediterranean Europe, since it goes perfectly with practically everything: meat, fowl, fish, seafood, vegetables, and cheese.
 }
-
 
 Fruits {Fruits}
 Fruits_descr
@@ -163,13 +153,11 @@ A brewed drink with low alcohol content, prepared by top fermentation.
 Ale, together with bread, is considered a staple food and is included in the rations of the local garrisons (especially the English). Ale can be stored for long periods of time; besides, it possesses antibiotic properties thanks to the gruit (a mixture of herbs and spices used instead of hops).
 }
 
-
 Silk {Silk}
 Silk_descr
 {
 Thin, light, and extremely price-y cloth, first perfected in China then guarded for over 2000 years. Not so long ago, Europeans finally discovered the secret themselves, so now it may be spun in the New World. So unique is this fabric, you can pass it through even the smallest slits.
 }
-
 
 Clothes {Clothes}
 Clothes_descr
@@ -178,7 +166,6 @@ Practical conservative clothes made of dark fabric, simple cambric linen, turn-d
 Inexpensive merchandise, always in demand.
 }
 
-
 Cotton {Cotton}
 Cotton_descr
 {
@@ -186,21 +173,18 @@ Cotton ripens late and the crop yield is rather low on the Caribbean island plan
 This laborious manufacture requires setting up a relatively large plantation and a huge number of workers, which became one of the reasons for the popularity of slavery.
 }
 
-
 Sandal {Sandalwood}
 Sandal_descr
 {
 A valuable type of woods are heavy, yellow, and fine-grained, and, unlike many other aromatic woods, they retain their fragrance for decades. Widely used in perfumery, cosmetics and medicine. This class of woods does not grow in local areas. How it found its way to the New World is a mystery.
 }
 
-
 Leather {Leather}
 Leather_descr
 {
-The dried and dressed hides of cattle is a universal merchandise always in demand in Europe. This is how the original buccaneers made their living, by selling the hides and meat of the wild cattle on Hispaniola.
+The dried and dressed hides of cattle is a universal merchandise always in demand in Europe.
 Although not many merchants would load their ships with leather alone, it is great for filling up empty cargo space, since it very tough and can handle any shipping conditions.
 }
-
 
 Oil {Oil}
 Oil_descr
@@ -253,12 +237,6 @@ Solid silver ingots, marked by the Treasury of Spain.
 A desired prize, as silver has decent value, being the second choice of the Spanish treasury to hold and transport wealth. Most of it is mined at a place called "The Silver Mountain", close to Potosi.
 }
 
-Pinctada {Pearl oysters}
-Pinctada_descr
-{
-Prized catch of pearl fishers - Caribbean mollusks (Pinctada longisquamosa) harvested from shallow banks. Their iridescent vaults may conceal treasures... or empty dreams. And the most skilled ones won’t even damage the layer of mother-of-pearl...
-}
-
 Brick {Bricks}
 Brick_descr
 {
@@ -271,6 +249,32 @@ Medicament_descr
 {
 A set of medicine and instruments intended for treatment of the most common diseases and rendering first aid to the wounded and injured. All the cans, powders, bandages, flasks, medicinal poultices - anything that saves ones life. 
 Having medicines onboard helps to save the injured, reduce boarding casualties, and heal the sick while at sea.
+}
+
+Pinctada {Pearl oysters}
+Pinctada_descr
+{
+Prized catch of pearl fishers - Caribbean mollusks (Pinctada longisquamosa) harvested from shallow banks. Their iridescent vaults may conceal treasures... or empty dreams. And the most skilled ones won’t even damage the layer of mother-of-pearl...
+}
+
+Salt {Salt}
+Salt_descr
+{
+An indispensable product in the era of long maritime expeditions. Mined from the salt lakes or mines of the archipelago, salt is used to preserve provisions, saving them from rotting in the humid tropical climate. For many colonists, this "white gold" is a stable source of income, as no reasonable captain would risk venturing into the open sea without reliable supplies of salted meat.
+}
+
+Meat {Meat}
+Meat_descr
+{
+Dried and generously salted meat, prepared on wooden grates according to the traditions of Caribbean buccaneer hunters. An excellent commercial cargo that can always be sold profitably in any colony.
+~
+Attention: this item is intended exclusively for sale. To feed your crew during a voyage, you must purchase ship provisions.
+}
+
+Hide {Hides}
+Hide_descr
+{
+Untanned hides of wild boars and feral cows roaming in abundance through the forests of Hispaniola and other islands. Unlike already tanned leather, this cargo is a raw material that pays generously at European manufactories. Hunting and trading in raw hides is a difficult and dangerous trade, from which many legendary buccaneers began their path to wealth.
 }
 
 Cannon_3 {Falconets}

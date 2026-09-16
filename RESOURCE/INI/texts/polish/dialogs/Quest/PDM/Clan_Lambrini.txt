@@ -457,5 +457,33 @@ Nie, nie, po prostu odpoczywamy z przyjaciółmi nad morzem. Rozumie pan przecie
 Clan_Lambrini_131 {
 Nie tym razem, Ottavio. Nareszcie jesteś złapany na gorącym uczynku. Wiem, kim jesteś. A ty już się domyślasz, kim jestem... Tym, którego jeszcze niedawno tak bardzo pragnąłeś widzieć martwym. Panowie, nie ujdziecie sprawiedliwości. Proszę za nami do komendantury – wszyscy jesteście aresztowani, a wasz towar skonfiskowany!
 }
+Clan_Lambrini_132_f {
+Bądź przeklęty, Thomasie Audley! I ty też, dziewczyno. Zawsze podejrzewałem, że jesteś wojskowym szczurem!
+}
 Clan_Lambrini_132_m {
-Bądź przeklęty, Thomasie Audley! Tak samo jak ty, chłopcze. Zawsze podejrzewałem, że jesteś armi
+Bądź przeklęty, Thomasie Audley! I ty też, chłopcze. Zawsze podejrzewałem, że jesteś wojskowym szczurem!
+}
+Clan_Lambrini_133 {
+Nie unoś się na próżno, Lambrini. Jeśli będziecie stawiać opór, z tobą i twoją rodziną będzie koniec. Z moich informacji wynika, że wasz statek lada chwila zostanie przechwycony przez nasze okręty. Nie macie skąd oczekiwać pomocy – poddaj się, a oszczędzisz dziś kilka istnień.
+}
+Clan_Lambrini_134 {
+Mój Emilio jest dla nich zbyt twardym orzechem! Chłopcy, nie zamierzam na starość gnić w więzieniu! Zaraz wszystkich was tu pogrzebiemy, żołnierzyki!
+}
+Clan_Lambrini_135 {
+Miałem nadzieję, że to powiesz.
+}
+Clan_Lambrini_136 {
+Nie mogę uwierzyć, udało się! Pański plan zadziałał po prostu znakomicie. Gdy tylko statek Lambriniego, dowodzony przez jego synów, zbliżył się do wyspy, mój bryg wyskoczył zza urwiska i po kilku salwach kartaczem było po wszystkim. Pierwszy oficer wraz z załogą wziął statek przemytników abordażem, a synowie Ottavia stracili w walce swoje gorące głowy\nMoże pan spokojnie wracać do miasta, a moi ludzie zajmą się całym tym bałaganem.
+}
+Clan_Lambrini_137 {
+Gratuluję, Thomasie. A więc Ottavio Lambrini, a nawet jego synowie, nie żyją. I podejrzewam, że ma pan coś dla mnie...
+}
+Clan_Lambrini_138 {
+O tak. Pamiętam o swoich obietnicach, señor kapitanie. Oto pańskie pieniądze – @<Plata2> w srebrze, tak jak się umówiliśmy. Proszę wziąć, zasłużył pan na nie.
+}
+Clan_Lambrini_139_f {
+Dziękuję, Thomasie – jest pan człowiekiem słowa, tak jak przypuszczałam. Wszystkiego dobrego.
+}
+Clan_Lambrini_139_m {
+Dziękuję, Thomasie – jest pan człowiekiem słowa, tak jak przypuszczałem. Wszystkiego dobrego.
+}

@@ -255,7 +255,7 @@ void InitGoods()
 
 	Goods[GOOD_LEATHER].Name	    = "Leather";
 	Goods[GOOD_LEATHER].Weight	    = 1;
-	Goods[GOOD_LEATHER].Cost	    = 14;
+	Goods[GOOD_LEATHER].Cost	    = 35;
 	Goods[GOOD_LEATHER].Units	    = 1;
 	Goods[GOOD_LEATHER].Swim.Model	= "bale";
 	Goods[GOOD_LEATHER].Swim.Time	= 30;
@@ -278,7 +278,35 @@ void InitGoods()
 	Goods[GOOD_BRICK].Units	        = 10;
 	Goods[GOOD_BRICK].AfraidWater = 0;
 	Goods[GOOD_BRICK].canbecontraband	= 1;
-	
+
+	Goods[GOOD_SALT].Name				= "Salt";
+	Goods[GOOD_SALT].Weight				= 2;
+	Goods[GOOD_SALT].Cost				= 60;
+	Goods[GOOD_SALT].Units	        	= 1;
+	Goods[GOOD_SALT].AfraidWater 		= 0;
+	Goods[GOOD_SALT].canbecontraband	= 1;
+	Goods[GOOD_SALT].Norm          		= 3500;
+
+	Goods[GOOD_MEAT].Name				= "Meat";
+	Goods[GOOD_MEAT].Weight				= 1;
+	Goods[GOOD_MEAT].Cost				= 45;
+	Goods[GOOD_MEAT].Units	        	= 1;
+	Goods[GOOD_MEAT].AfraidWater 		= 0;
+	Goods[GOOD_MEAT].canbecontraband	= 1;
+	Goods[GOOD_MEAT].Swim.Model			= "barrel";
+	Goods[GOOD_MEAT].Swim.Time			= 30;
+	Goods[GOOD_MEAT].Norm          		= 5000;
+
+	Goods[GOOD_HIDE].Name				= "Hide";
+	Goods[GOOD_HIDE].Weight				= 1;
+	Goods[GOOD_HIDE].Cost				= 18;
+	Goods[GOOD_HIDE].Units	        	= 1;
+	Goods[GOOD_HIDE].AfraidWater 		= 0;
+	Goods[GOOD_HIDE].canbecontraband	= 1;
+	Goods[GOOD_HIDE].Swim.Model			= "bale";
+	Goods[GOOD_HIDE].Swim.Time			= 30;
+	Goods[GOOD_HIDE].Norm          		= 5000;
+
 	Goods[GOOD_SLAVES].Name		    = "Slaves";
 	Goods[GOOD_SLAVES].Weight	    = 1;
 	Goods[GOOD_SLAVES].Cost		    = 110;

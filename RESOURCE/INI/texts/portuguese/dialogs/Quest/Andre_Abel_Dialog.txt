@@ -316,3 +316,9 @@ Andre_Abel_Dialog_94 {
 Andre_Abel_Dialog_95 {
 Boa sorte para você!.. E tome cuidado, não se deixe pegar de novo.
 }
+Andre_Abel_Dialog_96 {
+Sim, as coisas se arrastaram. E agora?
+}
+Andre_Abel_Dialog_97 {
+A minha esquadra não tem um único lugar livre.
+}

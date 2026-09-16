@@ -12,11 +12,26 @@ int iSelected; // курсор в таблице
 int iShipQty, iUnits, iCurGoodsIdx;
 
 string sMessageMode;
+
+string ShipI_sCachedFacePic;
+string ShipI_sCachedShipPic;
+
+int ShipI_idShipsDescr = -1;
+int ShipI_idGoodsDescr = -1;
+int ShipI_idRPGDescr   = -1;
+
 void InitInterface_R(string iniName, ref _chr) // _chr нужно для читового просмотра НПС в море
 {
     InterfaceStack.SelectMenu_node = "LaunchShipState"; // запоминаем, что звать по Ф2
-	
+
 	xi_refCharacter = _chr;
+
+	ShipI_idShipsDescr = LanguageOpenFile("ShipsDescribe.txt");
+	ShipI_idGoodsDescr = LanguageOpenFile("GoodsDescribe.txt");
+	ShipI_idRPGDescr   = LanguageOpenFile("RPGDescribe.txt");
+
+	ShipI_sCachedFacePic = "";
+	ShipI_sCachedShipPic = "";
 
 	FillShipsScroll();
 	
@@ -52,7 +67,7 @@ void InitInterface_R(string iniName, ref _chr) // _chr нужно для чит�
 	SetEventHandler("REMOVE_ALL_BUTTON", "REMOVE_ALL_BUTTON", 0);
 	SetEventHandler("ExitPartitionWindow", "ExitPartitionWindow", 0);
 
-	XI_RegistryExitKey("IExit_F2");
+	XI_RegistryExitKey("CharacterShipMenu");
 	///////////
     EI_CreateFrame("SHIP_BIG_PICTURE_BORDER",156,78,366,313); // tak from SHIP_BIG_PICTURE
     EI_CreateHLine("SHIP_BIG_PICTURE_BORDER", 161,284,361,1, 4);
@@ -83,7 +98,7 @@ void InitInterface_R(string iniName, ref _chr) // _chr нужно для чит�
 	GameInterface.TABLE_LIST.hr.td5.scale = 0.9;
 	GameInterface.TABLE_LIST.select = 0;
 	SetCurrentNode("SHIPS_SCROLL");
-	OnShipScrollChange();
+	//OnShipScrollChange(); // > лишнее, в ProcessFrame() выполняется при запуске интерфейса
 	sMessageMode = "";
 	SetAlertMarks(xi_refCharacter);
 }
@@ -120,6 +135,10 @@ void IDoExit(int exitCode)
 	DelEventHandler("REMOVE_BUTTON", "REMOVE_BUTTON");
 	DelEventHandler("REMOVE_ALL_BUTTON", "REMOVE_ALL_BUTTON");
 	DelEventHandler("ExitPartitionWindow", "ExitPartitionWindow");
+
+	if (ShipI_idShipsDescr != -1) { LanguageCloseFile(ShipI_idShipsDescr); ShipI_idShipsDescr = -1; }
+	if (ShipI_idGoodsDescr != -1) { LanguageCloseFile(ShipI_idGoodsDescr); ShipI_idGoodsDescr = -1; }
+	if (ShipI_idRPGDescr   != -1) { LanguageCloseFile(ShipI_idRPGDescr);   ShipI_idRPGDescr   = -1; }
 
 	interfaceResultCommand = exitCode;
 	if( CheckAttribute(&InterfaceStates,"ReloadMenuExit"))
@@ -346,9 +365,11 @@ void FillShipsScroll()
 	string attributeName;
 	string shipName;
 	int iShipType, cn;
+	// KZ > список групп живёт в глобальном GameInterface - чистим каждый раз
+	DeleteAttribute(&GameInterface, "SHIPS_SCROLL.ImagesGroup");
 	GameInterface.SHIPS_SCROLL.ImagesGroup.t0 = "BLANK_SHIP2";
 
-	FillShipList("SHIPS_SCROLL.ImagesGroup", xi_refCharacter);
+	FillShipListSquadronOnly("SHIPS_SCROLL.ImagesGroup", xi_refCharacter);
 	GameInterface.SHIPS_SCROLL.BadTex1 = 0;
 	GameInterface.SHIPS_SCROLL.BadPic1 = "Not Used2";
 
@@ -379,7 +400,7 @@ void FillShipsScroll()
 				GameInterface.SHIPS_SCROLL.(attributeName).str1 = "#";
 				GameInterface.SHIPS_SCROLL.(attributeName).str2 = "NoneBoat";
 				GameInterface.SHIPS_SCROLL.(attributeName).img1 = "Not Used2";
-				GameInterface.SHIPS_SCROLL.(attributeName).tex1 = "BLANK_SHIP2";
+				GameInterface.SHIPS_SCROLL.(attributeName).tex1 = 0;
 				m++;
 			}
 		}
@@ -420,13 +441,6 @@ void ProcessFrame()
 				{
 					shipIndex= -1;
 				}
-				// boal оптимизация скилов -->
-			    DelBakSkillAttr(xi_refCharacter);
-			    ClearCharacterExpRate(xi_refCharacter);
-			    RefreshCharacterSkillExpRate(xi_refCharacter);
-			    
-			    SetEnergyToCharacter(xi_refCharacter);
-			    // boal оптимизация скилов <--
 				OnShipScrollChange();
 			} 
 			else 
@@ -437,15 +451,31 @@ void ProcessFrame()
 		}
 	}
 }
+
+void ShipI_SetFacePicture(string sPath)
+{
+	if (ShipI_sCachedFacePic == sPath) return;
+	ShipI_sCachedFacePic = sPath;
+	SetNewPicture("MAIN_CHARACTER_PICTURE", sPath);
+}
+
+void ShipI_SetShipPicture(string sPath)
+{
+	if (ShipI_sCachedShipPic == sPath) return;
+	ShipI_sCachedShipPic = sPath;
+	SetNewPicture("SHIP_BIG_PICTURE", sPath);
+}
+
 void OnShipScrollChange()
 {
-	SetNewPicture("MAIN_CHARACTER_PICTURE", "interfaces\portraits\256\face_" + xi_refCharacter.FaceId + ".tga");
+	ShipI_SetFacePicture("interfaces\portraits\256\face_" + xi_refCharacter.FaceId + ".tga");
 	SetFormatedText("MAIN_CHARACTER_NAME", GetFullNameTitulForm(xi_refCharacter));
 	SetFormatedText("MAIN_CHARACTER_RANK",xi_refCharacter.Rank);
 	// нулим все формы, тк корабля может не быть
 	SetFormatedText("SHIP_RANK","");
 	SetFormatedText("CREW_QTY","");
 	SetFormatedText("FOOD", "");
+	SetFormatedText("RUM", "");
 	SetFormatedText("FOOD_SHIP", "");
 	SetFormatedText("RUM_SHIP", "");
 	SetFormatedText("MONEY_SHIP", "");
@@ -470,11 +500,6 @@ void OnShipScrollChange()
 	if (iShip != SHIP_NOTUSED)
 	{
         xi_refCharacter.ship.sp = CalculateShipSP(xi_refCharacter);
-		// оптимизация скилов -->
-	    DelBakSkillAttr(xi_refCharacter);
-	    ClearCharacterExpRate(xi_refCharacter);
-	    RefreshCharacterSkillExpRate(xi_refCharacter);
-	    // оптимизация скилов <--
 	    
 		if (CheckAttribute(xi_refCharacter, "Ship.Cargo.RecalculateCargoLoad") && sti(xi_refCharacter.Ship.Cargo.RecalculateCargoLoad))
 		{
@@ -483,7 +508,7 @@ void OnShipScrollChange()
 		}
 		ref refBaseShip = GetRealShip(iShip);
 		string sShip = refBaseShip.BaseName;
-		SetNewPicture("SHIP_BIG_PICTURE", "interfaces\ships\" + sShip + ".tga");
+		ShipI_SetShipPicture("interfaces\ships\" + sShip + ".tga");
 	
 		GameInterface.edit_box.str = xi_refCharacter.ship.name;	
 		SetFormatedText("SHIP_RANK", refBaseShip.Class);
@@ -544,8 +569,9 @@ void OnShipScrollChange()
 		    // для каждого корабля учитываем класс и считаем отдельно
 		    SetFormatedText("MONEY_SHIP", XI_ConvertString("Pay_for_ship") + " " + NewStr() + FindMoneyString(GetSalaryForShip(xi_refCharacter)));
 		}
-		SetFormatedText("CREW_QTY", ""+GetCrewQuantity(xi_refCharacter));
-		if (GetCrewQuantity(xi_refCharacter) > GetOptCrewQuantity(xi_refCharacter) || GetCrewQuantity(xi_refCharacter) < GetMinCrewQuantity(xi_refCharacter))
+		int iCrewQty = GetCrewQuantity(xi_refCharacter);
+		SetFormatedText("CREW_QTY", "" + iCrewQty);
+		if (iCrewQty > GetOptCrewQuantity(xi_refCharacter) || iCrewQty < GetMinCrewQuantity(xi_refCharacter))
 		{
 			iColor = argb(255,255,64,64);
 		}
@@ -554,9 +580,10 @@ void OnShipScrollChange()
 			iColor = argb(255,255,255,255);
 		}
 		SendMessage(&GameInterface,"lslll",MSG_INTERFACE_MSG_TO_NODE,"CREW_QTY", 8,-1,iColor);
-		SetNewGroupPicture("CREW_MORALE_PIC", "MORALE_SMALL", GetMoraleGroupPicture(stf(xi_refCharacter.ship.crew.morale)));
-		SetFormatedText("CREW_MORALE_TEXT", XI_ConvertString("CrewMorale") + ": " + XI_ConvertString(GetMoraleName(sti(xi_refCharacter.Ship.crew.morale))));
-		if (sti(xi_refCharacter.Ship.crew.morale) < MORALE_MAX && GetCrewQuantity(xi_refCharacter) > 0)
+		int iMorale = sti(xi_refCharacter.Ship.crew.morale);
+		SetNewGroupPicture("CREW_MORALE_PIC", "MORALE_SMALL", GetMoraleGroupPicture(iMorale));
+		SetFormatedText("CREW_MORALE_TEXT", XI_ConvertString("CrewMorale") + ": " + XI_ConvertString(GetMoraleName(iMorale)));
+		if (iMorale < MORALE_MAX && iCrewQty > 0)
 		{
 			SetSelectable("CREW_MORALE_BUTTON", true);
 		}
@@ -571,7 +598,7 @@ void OnShipScrollChange()
 		//BAR_CrewMoral
 		GameInterface.StatusLine.BAR_CrewMoral.Max   = 100;
     	GameInterface.StatusLine.BAR_CrewMoral.Min   = 0;
-    	GameInterface.StatusLine.BAR_CrewMoral.Value = sti(xi_refCharacter.Ship.crew.morale);
+    	GameInterface.StatusLine.BAR_CrewMoral.Value = iMorale;
     	SendMessage(&GameInterface,"lsl",MSG_INTERFACE_MSG_TO_NODE, "BAR_CrewMoral", 0);
     	if (xi_refCharacter.id == pchar.id)
     	{
@@ -580,7 +607,7 @@ void OnShipScrollChange()
 	}
 	else
 	{
-		SetNewPicture("SHIP_BIG_PICTURE", "interfaces\blank_ship2.tga");
+		ShipI_SetShipPicture("interfaces\blank_ship2.tga");
 		GameInterface.edit_box.str = XI_Convertstring("NoneBoat");
 		SetNodeUsing("BAR_Sailors", false);
 		SetNodeUsing("BAR_Cannoners", false);
@@ -617,6 +644,7 @@ void ShowInfoWindow()
 
 	sPicture = "-1";
 	string sAttributeName;
+	string sOtherID;
 	int nChooseNum = -1;
 	int iShip;
 	ref refBaseShip;
@@ -677,9 +705,16 @@ void ShowInfoWindow()
 		break;
 		
 		case "TABLE_OTHER":
-			sHeader = XI_ConvertString(GameInterface.(CurTable).(CurRow).UserData.ID);
-		    sText1  = GetConvertStr(GameInterface.(CurTable).(CurRow).UserData.ID, "ShipsDescribe.txt");
-		    if (GameInterface.(CurTable).(CurRow).UserData.ID == "CannonType" && sti(xi_refCharacter.Ship.Cannons.Type) != CANNON_TYPE_NONECANNON)
+			if (!CheckAttribute(&GameInterface, CurTable + "." + CurRow + ".UserData.ID"))
+			{
+				bShowHint = false;
+			}
+			else
+			{
+			sOtherID = GameInterface.(CurTable).(CurRow).UserData.ID;
+			sHeader = XI_ConvertString(sOtherID);
+		    sText1  = GetConvertStr(sOtherID, "ShipsDescribe.txt");
+		    if (sOtherID == "CannonType" && sti(xi_refCharacter.Ship.Cannons.Type) != CANNON_TYPE_NONECANNON)
 		    {
 		    	ref Cannon = GetCannonByType(sti(xi_refCharacter.Ship.Cannons.Type));
 		    	sText2 = XI_ConvertString("Name") + ": " + XI_ConvertString(GetCannonType(sti(xi_refCharacter.Ship.Cannons.Type)));
@@ -694,13 +729,13 @@ void ShowInfoWindow()
 				
 				sText3 = XI_ConvertString("Caliber_text1");
 		    }
-		    if (GameInterface.(CurTable).(CurRow).UserData.ID == "Crew" && sti(xi_refCharacter.ship.type) != SHIP_NOTUSED)
+		    if (sOtherID == "Crew" && sti(xi_refCharacter.ship.type) != SHIP_NOTUSED)
 			{
 				sText2 = XI_ConvertString("Max_crew_text1");
 				sText2 = sText2 + NewStr() + XI_ConvertString("Max_crew_text2") + " " + GetMaxCrewQuantity(xi_refCharacter);
-			} 
+			}
 			// процент ремонта
-			if (GameInterface.(CurTable).(CurRow).UserData.ID == "Hull" && sti(xi_refCharacter.ship.type) != SHIP_NOTUSED)
+			if (sOtherID == "Hull" && sti(xi_refCharacter.ship.type) != SHIP_NOTUSED)
 			{
                 if (GetHullPercent(xi_refCharacter)<100.0 )
                 {
@@ -708,7 +743,7 @@ void ShowInfoWindow()
 				}
 				sText3 = xiStr("Hull") + ": " + FloatToString(GetHullPercent(xi_refCharacter), 1)  + " %";
 			}
-			if (GameInterface.(CurTable).(CurRow).UserData.ID == "Sails" && sti(xi_refCharacter.ship.type) != SHIP_NOTUSED)
+			if (sOtherID == "Sails" && sti(xi_refCharacter.ship.type) != SHIP_NOTUSED)
 			{
                 if (GetSailPercent(xi_refCharacter)<100.0 )
                 {
@@ -717,7 +752,7 @@ void ShowInfoWindow()
 				sText3 = xiStr("Sails") + ": " + FloatToString(GetSailPercent(xi_refCharacter), 1) + " %";
 			}
 			// трюм
-			if (GameInterface.(CurTable).(CurRow).UserData.ID == "Capacity" && sti(xi_refCharacter.ship.type) != SHIP_NOTUSED)
+			if (sOtherID == "Capacity" && sti(xi_refCharacter.ship.type) != SHIP_NOTUSED)
 			{
 				sText3 = XI_ConvertString("Occupied") + ": " + FloatToString((stf(GetCargoLoad(xi_refCharacter))  /  stf(GetCargoMaxSpace(xi_refCharacter))) * 100.0, 1)+ " %";
 			}
@@ -730,7 +765,7 @@ void ShowInfoWindow()
 			string sAttr = "";
 			if(CheckAttribute(refBaseShip,"atlaua_bonus"))
 			{
-				switch(GameInterface.(CurTable).(CurRow).UserData.ID)
+				switch(sOtherID)
 				{
 					case "Hull":		sAttr = "HP";			break;
 					case "Crew":		sAttr = "MaxCrew";		break;
@@ -747,6 +782,7 @@ void ShowInfoWindow()
 					}
 					sText4 = XI_ConvertString("PortmanMessageInfo_13")+sTemp+XI_ConvertString("PortmanMessageInfo_14");
 				}
+			}
 			}
 		break;
 		
@@ -801,6 +837,13 @@ void ExitRPGHint()
 
 void ShowRPGHint()
 {
+	// оптимизация скилов -->
+	DelBakSkillAttr(xi_refCharacter);
+	ClearCharacterExpRate(xi_refCharacter);
+	RefreshCharacterSkillExpRate(xi_refCharacter);
+	//SetEnergyToCharacter(xi_refCharacter);
+	// оптимизация скилов <--
+
 	SetSPECIALMiniTable("TABLE_SMALLSKILL", xi_refCharacter);
     SetOTHERMiniTable("TABLE_SMALLOTHER", xi_refCharacter);
     SetFormatedText("OFFICER_NAME", GetFullNameTitulForm(xi_refCharacter));
@@ -813,13 +856,12 @@ void ShowRPGHint()
 
 void FillGoodsTable()
 {
-	int n, i, qty;
+	int i, qty, n = 1;
 	string row;
 	ref rShip;
 	string sGood;
 	aref refGoods;
-	
-	n = 1;
+
 	if (!CheckAttribute(&GameInterface, "TABLE_LIST.BackUp"))
 	{
 		GameInterface.TABLE_LIST.select = 0;
@@ -830,7 +872,7 @@ void FillGoodsTable()
 	{
         row = "tr" + n;
 		sGood = Goods[i].name;
-		qty = GetCargoGoods(xi_refCharacter, i);
+		qty = sti(xi_refCharacter.Ship.Cargo.Goods.(sGood));
 		if (qty <= 0) continue; // только не нули
 
 		GameInterface.TABLE_LIST.(row).index = i;
@@ -900,7 +942,6 @@ void ShowItemInfo()
 
 void GoodsExitCancel()
 {
-	
 	XI_WindowDisable("QTY_WINDOW", true);
 	XI_WindowShow("QTY_WINDOW", false);
 	XI_WindowDisable("MAIN_WINDOW", false);
@@ -1206,11 +1247,12 @@ void ShowCannonsMenu()
 void CannonsMenuRefresh()
 {
 	int idx = GetCannonGoodsIdxByType(sti(xi_refCharacter.Ship.Cannons.Type));
-	string goodName = goods[idx].name;
-	string goodsDescr = XI_ConvertString("InstalledCannon") + ": " + XI_ConvertString(goodName) + "\n\n" + GetAssembledString(GetConvertStr(goodName+"_descr", "GoodsDescribe.txt"), &Goods[idx]);
-	
+	string goodName, goodsDescr;
+
 	if (idx != -1)
 	{
+		goodName = goods[idx].name;
+		goodsDescr = XI_ConvertString("InstalledCannon") + ": " + XI_ConvertString(goodName) + "\n\n" + GetAssembledString(GetConvertStr(goodName+"_descr", "GoodsDescribe.txt"), &Goods[idx]);
 	    SetNewGroupPicture("CANNONS_PIC", "GOODS", Goods[idx].Name);
 		SetFormatedText("CANNONS_TEXT", goodsDescr);
 		SetFormatedText("CANNONS_QTY_F", its(GetBortCannonsQty(xi_refCharacter, "fcannon")));
@@ -1470,17 +1512,18 @@ void FillCannonsTable()
 	}
 	if (GetCannonQuantity(xi_refCharacter) > 0)
 	{
+	    int iMaxCaliber = GetMaximumCaliber(xi_refCharacter);
 	    for (i = 0; i< GOODS_QUANTITY; i++)
 		{
-	        row = "tr" + n;
-			sGood = Goods[i].name;
+			if (!CheckAttribute(&Goods[i], "type")) continue;
+			if (sti(Goods[i].type) != TRADE_TYPE_CANNONS) continue;
+			if (GetCannonCaliber(sti(Goods[i].CannonIdx)) > iMaxCaliber) continue;
+
 			qty = GetCargoGoods(xi_refCharacter, i);
 			if (qty <= 0) continue; // только не нули
 
-	        if (!CheckAttribute(&Goods[i], "type")) continue;
-	        if (sti(Goods[i].type) != TRADE_TYPE_CANNONS) continue;
-
-	        if (GetCannonCaliber(sti(Goods[i].CannonIdx)) > GetMaximumCaliber(xi_refCharacter)) continue;
+			row = "tr" + n;
+			sGood = Goods[i].name;
 			GameInterface.CANNONS_TABLE.(row).index = i;
 
 			GameInterface.CANNONS_TABLE.(row).td2.str = qty;
@@ -1605,23 +1648,23 @@ void ProcessInterfaceControls()
 		{
 			IDoExit(RC_INTERFACE_TO_LOGBOOK);
 		}
-		if (controlName == "IExit_F3")
+		if (controlName == "LogbookMenu")
 		{
 			IDoExit(RC_INTERFACE_TO_LOGBOOK);
 		}
-		if (controlName == "IExit_F4")
+		if (controlName == "ItemsMenu")
 		{
 			IDoExit(RC_INTERFACE_TO_ITEMS);
 		}
-		if (controlName == "IExit_F5")
+		if (controlName == "NationsMenu")
 		{
 			IDoExit(INTERFACE_NATIONRELATION);
 		}
-		if (controlName == "IExit_K")
+		if (controlName == "AlchemyKey")
 		{
 			IDoExit(RC_INTERFACE_TO_ALCHEMY);
 		}
-		if (controlName == "IExit_F1")
+		if (controlName == "Interface")
 		{
 			IDoExit(INTERFACE_CHARACTER_ALL);
 		}

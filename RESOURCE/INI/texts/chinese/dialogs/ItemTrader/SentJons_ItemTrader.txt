@@ -1,36 +1,36 @@
 SentJons_ItemTrader_1 {
-什么问题？
+什么问题？ 
 }
 SentJons_ItemTrader_2 {
-有什么需要帮忙的吗，@<GetAddress_Form>?
+有什么需要帮忙的吗， @<GetAddress_Form>?
 }
 SentJons_ItemTrader_3 {
 @<RandPhraseSimple>
 }
 SentJons_ItemTrader_4 {
-又有问题啊，@<GetAddress_Form>……
+又有问题啊， @<GetAddress_Form>…… 
 }
 SentJons_ItemTrader_5 {
-问题真多……要不要来做点生意，@<GetAddress_Form>?
+问题真多…… 要不要来做点生意， @<GetAddress_Form>?
 }
 SentJons_ItemTrader_6 {
-听着，咱们还要在这废话上浪费多久？
+听着， 咱们还要在这废话上浪费多久？ 
 }
 SentJons_ItemTrader_7 {
-没问题……
+没问题…… 
 }
 SentJons_ItemTrader_8 {
-我现在没什么可说的。
+我现在没什么可说的。 
 }
 SentJons_ItemTrader_9 {
 @<RandPhraseSimple>
 }
 SentJons_ItemTrader_10 {
-唉，又来了……
+唉， 又来了…… 
 }
 SentJons_ItemTrader_11 {
-是啊，讨价还价确实更好……
+是啊， 讨价还价确实更好…… 
 }
 SentJons_ItemTrader_12 {
-嗯，抱歉啊，商人……
+嗯， 抱歉啊， 商人…… 
 }

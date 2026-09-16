@@ -141,8 +141,8 @@ void Hold_ReloadEndFade() //HardCoffee сделано по аналогии с C
 	LoadLocation(&Locations[locID]);
 	dialogDisable = false;
 
+	LoadSceneSound();
 	ReloadProgressEnd();
-	PostEvent("LoadSceneSound", 100);
 
 	CreateEntity(&boarding_fader, "fader");
 	SendMessage(&boarding_fader, "lfl", FADER_IN, RELOAD_TIME_FADE_IN, true);
@@ -198,8 +198,8 @@ void Cabin_Start()
 		Trace("Cabin_Start Location not loaded: " + locID);
 	}
 
+	LoadSceneSound();
 	ReloadProgressEnd();
-	PostEvent("LoadSceneSound", 100);
 
 	CreateEntity(&boarding_fader, "fader");
 	SendMessage(&boarding_fader, "lfl", FADER_IN, RELOAD_TIME_FADE_IN, true);
@@ -296,11 +296,11 @@ void Cabin_ReloadEndFadeAfter() //Загружаем следующую лока
 	bDeckBoatStarted = false;
 	Sea.AbordageMode = false;
 
+	SetSchemeForSea();
+
 	InitBattleInterface();
 	StartBattleInterface();
 	RefreshBattleInterface();
-
-	SetSchemeForSea();
 
 	PauseParticles(false);
 
@@ -495,14 +495,20 @@ void DeckBoat_LoadLocation(string locationID) //Загрузить локаци�
 		else Trace("Boarding: Boarding location not loaded, current loc <" + locationID + ">");
 	}
 	else Trace("Boarding: Boarding location not found, current loc <" + locationID + ">");
+	LoadSceneSound();
 	ReloadProgressEnd();
-	PostEvent("LoadSceneSound", 100);
 }
 void Sea_DeckBoatLoad(int ShipsCharacter)
 {
 	if (bSeaActive == false) return;
 	ref rCharacter = GetCharacter(ShipsCharacter);
 	if (LAi_IsDead(rCharacter)) return;  // нефиг, а то в списке есть трупы
+	// запрет высылать шлюпку к отдельным квестовым кораблям (ле баск)
+	if (CheckAttribute(rCharacter, "AoP_NoBoat"))
+	{
+		PlayInterfaceCommand("knock");
+		return;
+	}
 	Sea_DeckBoatStartNow(rCharacter);
 }
 
@@ -797,13 +803,23 @@ void SetOfficersInCabin() //HardCoffee установка в кабину тол
     ref rChr;
     int idx, i;
 	// Я хз, куда ещё это запихнуть. Тут без всяких лишних проверок сразу ясно, что это каюта и всё спокойно
-	if (GetDlcEnabled(NABOB_PACK))
+	if (CheckAttribute(loadedlocation, "box1"))
 	{
-		if (!CheckAttribute(&TEV, "gotNabobRevard") && CheckAttribute(loadedlocation, "box1"))
+		if (GetDlcEnabled(NABOB_PACK))
 		{
-			loadedlocation.box1.items.RapierReCon = 1;
-			loadedlocation.box1.items.recon_potion = 1;
-			TEV.gotNabobRevard = "revardTaken";
+			if (!CheckAttribute(&TEV, "gotNabobRevard"))
+			{
+				loadedlocation.box1.items.RapierReCon = 1;
+				loadedlocation.box1.items.recon_potion = 1;
+				TEV.gotNabobRevard = "revardTaken";
+			}
+		}
+		if (CheckAttribute(&TEV, "franshise.legendGuide"))
+		{
+			if (TEV.franshise.legendGuide == "1" && !CheckCharacterPerk(pchar, "legendGuideRead") && !CheckOfficerItem(pchar, "legendGuide"))
+			{
+				loadedlocation.box1.items.legendGuide = 1;
+			}
 		}
 	}
 
@@ -1174,6 +1190,6 @@ void DeckBoat_ForQuest_LoadLocation(string locationID) //Загрузить ло
 		else Trace("Boarding: Boarding location not loaded, current loc <" + locationID + ">");
 	}
 	else Trace("Boarding: Boarding location not found, current loc <" + locationID + ">");
+	LoadSceneSound();
 	ReloadProgressEnd();
-	PostEvent("LoadSceneSound", 100);
 }

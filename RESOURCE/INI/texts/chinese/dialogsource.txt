@@ -1,1 +1,1 @@
-SelectDeliveryTradeDialog0	 {文件是空的，用于与 Storm-2.5 内核兼容。不知道为何那里需要它，脚本中明明用不到。}
+SelectDeliveryTradeDialog0	 {文件是空的， 用于与 Storm-2.5 内核兼容。 不知道为何那里需要它， 脚本中明明用不到。 }

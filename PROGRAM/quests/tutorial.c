@@ -214,6 +214,7 @@ void Tutorial_CameraControl(string qName)
 	if (TryLaunchTutorial("CameraControl", 1))
 	{
 		SetTutorials_SandBox_AfterDeck();
+		DoQuestFunctionDelay("MakeQuestAutoSaveDelay", 0.1);
 	}
 }
 // <--
@@ -703,6 +704,7 @@ void Tutorial_BloodPrologue_CameraControl(string qName)
 		if (TryLaunchTutorial("BloodPrologue_CameraControl", 1))
 		{
 	    	DeleteAttribute(&TEV, "TutorialInfo.BloodPrologue_CameraControl");
+	    	DoQuestFunctionDelay("MakeQuestAutoSaveDelay", 0.1);
 		}
 	}
 }
@@ -900,7 +902,18 @@ void Tutorial_BloodPrologue_SandBox(string qName)
 	if (TryLaunchTutorialForced("BloodPrologue_SandBox", 1, "", "Tutorial_BloodPrologue_SandBox"))
 	{
 		SetBloodTutorials_SandBox();
+		DoQuestFunctionDelay("BloodLine_WaitSandboxClose", 1.0);
 	}
+}
+
+void BloodLine_WaitSandboxClose(string qName)
+{
+	if (sti(InterfaceStates.Launched))
+	{
+		DoQuestFunctionDelay("BloodLine_WaitSandboxClose", 1.0);
+		return;
+	}
+	ChangePIRATES();
 }
 // <--
 

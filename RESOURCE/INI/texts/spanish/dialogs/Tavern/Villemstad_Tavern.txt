@@ -463,3 +463,18 @@ Entendido. Ya voy. ¡Gracias!
 Villemstad_Tavern_137_f {
 Entendido. Ya voy. ¡Gracias!
 }
+Villemstad_Tavern_138 {
+Entre tus huéspedes hay españoles. ¿Sabes de dónde vienen o en qué barco llegaron?
+}
+Villemstad_Tavern_139 {
+Ahora mismo no tengo tiempo para charlar con los clientes. Españoles, portugueses... solo falta que hoy se presente el mismísimo diablo del mar.
+}
+Villemstad_Tavern_140 {
+¿Así que el negocio marcha bien?
+}
+Villemstad_Tavern_141 {
+No puedo quejarme. Casi todas las noches el gobernador organiza recepciones en la residencia para celebrar que sus hijas han alcanzado la mayoría de edad. Un día llega un enviado, al siguiente aparece otro personaje, y todos vienen en algún barco. Se llena esto de marineros y apenas damos abasto con las bandejas. Será mejor que pases por la administración del puerto; todo capitán tiene que registrarse allí. ¡Ah! Pero ¿para qué te cuento yo todo esto?
+}
+Villemstad_Tavern_142 {
+Sí, creo que eso haré.
+}

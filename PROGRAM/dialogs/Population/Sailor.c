@@ -53,6 +53,18 @@ void ProcessDialogEvent()
 				link.l3 = StringFromKey("Sailor_12", pchar);
 				link.l3.go = "exit";
 				npchar.quest.meeting = "1";
+				//--> Эммануэль Пардаль
+				if (CheckAttribute(pchar, "questTemp.EPL_Prologue"))
+				{
+					dialog.text = StringFromKey("Sailor_43");
+					link.l1 = StringFromKey("Sailor_44");
+					link.l1.go = "exit";
+					DeleteAttribute(link, "l2");
+					DeleteAttribute(link, "l3");
+					npchar.quest.meeting = "0";
+					break;
+				}
+				//<-- Эммануэль Пардаль
 			}
 			else
 			{

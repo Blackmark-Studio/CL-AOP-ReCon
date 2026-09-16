@@ -24,12 +24,10 @@ Sea_CameraSwitch {切换摄像机“船只视角”/“甲板视角”}
 Sea_CameraSwitchShort {切换摄像机}
 Sea_CameraShip {船只视角}
 Sea_CameraDeck {甲板视角}
-Telescope {切换望远镜}
-TelescopeIn {望远镜放大}
-TelescopeOut {退出望远镜视角}
+TelescopeMode {切换望远镜}
 TelescopeZoom {缩放}
 Interface {角色菜单}
-CharacterShipMenu {角色飞船菜单}
+CharacterShipMenu {船只船菜单}
 LogbookMenu {航行日志菜单}
 ItemsMenu {物品菜单}
 NationsMenu {国家菜单}
@@ -39,18 +37,25 @@ MiniMapZoomIn {放大小地图}
 MiniMapZoomOut {缩小小地图}
 BIFastCommand {快速操作}
 hk_charge1 {用实心弹装填火炮}
-hk_charge2 {用霰弹装填火炮}
+hk_charge2 {用葡萄弹装填火炮}
 hk_charge3 {用链弹装填火炮}
-hk_charge4 {装填火炮炸弹}
+hk_charge4 {用炸弹装填火炮}
 hk_perk1 {激活技能“快速转向”}
-hk_perk2 {激活技能“预装填”}
-hk_perk3 {激活技能“紧急修理”}
+hk_perk2 {激活技能“预备装填”}
+hk_perk3 {激活技能“紧急维修”}
 hk_perk4 {激活技能“修补漏洞”}
 hk_cabin {进入船长舱}
 Ship_Select {选择船只}
 Order_Select {选择指令}
 FireZoneKey {显示射程范围}
 FireZoneKeyHide {隐藏射程范围}
+QuickSave {快速保存}
+QuickLoad {快速读取}
+FireCamera_Set {瞄准视角}
+FireMode_Direct {射击顺序 - 从舰艏到舰艉}
+FireMode_Random {射击顺序 - 自由}
+FireMode_Reverse {射击顺序 - 从舰艉到舰艏}
+hk_FireMode {切换射击模式}
 ChrCamTurnV {摄像机跟随角色的垂直移动}
 ChrCamTurnH {摄像机跟随角色的水平移动}
 ChrCamCameraSwitch {切换第一/第三人称视角}
@@ -64,38 +69,39 @@ ChrFightMode {切换战斗模式}
 BOAL_UsePotion {使用治疗道具}
 UseAntidote {使用解毒剂}
 BOAL_DeadSearch {搜查尸体}
-OfficersCharge {军官指令：自由攻击}
-OfficersHold {军官指令：原地待命}
-OfficersFollow {军官指令：跟随}
+OfficersCharge {军官指令： 自由攻击}
+OfficersHold {军官指令： 原地待命}
+OfficersFollow {军官指令： 跟随}
 Say {采购货物}
 AlchemyKey {炼金术}
 MapView {地图集}
+LI_CabinExit {出海（在主角船上）}
 AltModificator {按下按钮打开快速旅行菜单}
 AltModificatorOff {松开按钮以打开快速旅行菜单}
-Fast_store {快速前往：商店}
-Fast_Shipyard {快速前往：船厂}
-Fast_tavern {快速前往：酒馆}
-Fast_townhall {快速移动：市政厅}
-Fast_bank {快速移动：银行}
-Fast_church {快速移动：教堂}
-Fast_Brothel {快速移动：妓院}
-Fast_PortOffice {快速移动：港务局}
-Fast_prison {快速移动：监狱}
-Fast_Port {快速移动：港口}
+Fast_store {快速前往： 商店}
+Fast_Shipyard {快速前往： 船坞}
+Fast_tavern {快速前往： 酒馆}
+Fast_townhall {快速移动： 官邸}
+Fast_bank {快速移动： 银行}
+Fast_church {快速移动： 教堂}
+Fast_Brothel {快速移动： 妓院}
+Fast_PortOffice {快速移动： 港务局}
+Fast_prison {快速移动： 监狱}
+Fast_Port {快速移动： 港口}
 ChrForward1 {前进（备用）}
 ChrBackward1 {后退}
 ChrRunStick {切换步行/奔跑}
 BOAL_ActivateRush {激活技能“狂暴”}
-HK_SecondWind {激活技能“第二次呼吸”}
+HK_SecondWind {激活技能“再生之息”}
 ChrBlock {格挡}
-ChrAltAttackBase {劈砍攻击 / 群体攻击}
+ChrAltAttackBase {劈砍 / 旋风斩}
 ChrAttackBreakBase {重击 / 佯攻}
-ChrAttackBase {突刺攻击 / 招架}
+ChrAttackBase {突刺 / 招架}
 ChrAttackChoseBase {切换攻击模式}
 ChrAttackFient {佯攻（替代）}
 ChrParry {格挡（替代）}
 ChrFire {开火}
-ChrAiming {狙击模式（按住）}
+ChrAiming {瞄准模式（按住）}
 ChrAimingShot {射击}
 RunLootCollector {使用“快速拾取”}
 CharacterCamera_Forward {拉近角色镜头}
@@ -111,10 +117,10 @@ ChrTurnHL {角色向左旋转}
 ChrTurnHR {角色向右旋转}
 ChrRecoil {反弹}
 ChrAttackForce {快速攻击}
-ChrAttackFast {劈砍攻击}
-ChrAttackRound {群体攻击}
+ChrAttackFast {劈砍}
+ChrAttackRound {旋风斩}
 ChrAttackBreak {重击}
-ChrAttackRoundBase {群体攻击}
+ChrAttackRoundBase {旋风斩}
 BI_MapEnter {全球地图}
 WMapTurnH {在地图模式下环绕船只旋转相机}
 WMapTurnV {地图模式下的相机高度}
@@ -126,13 +132,14 @@ WMapShipSailUp {前进}
 WMapShipSailDown {返回航行}
 WMapShipTurnLeft {向左转}
 WMapShipTurnRight {向右转}
-WMapCancel {离开地图前往大海}
+WMapCancel {退出大地图}
 TimeScaleOn {加速时间}
 TimeScaleOff {关闭加速}
 TimeScale {时间加速/减速}
 TimeScaleFasterBA {时间加速}
 TimeScaleSlowerBA {时间减速}
 Help {游戏帮助}
+BICommands {指令菜单}
 BICommandsActivate {指令菜单}
 LICommandsActivate {指令菜单}
 BICommandsActivateAdd {指令菜单（备用）}
@@ -141,7 +148,11 @@ BICommandsCancel {取消指令}
 BICommandsConfirmAdd {确认指令（备用）}
 BICommandsCancelAdd {取消指令（备用）}
 BICommandsLeft {操作菜单 - 向左导航}
+BICommandsLeftW {动作菜单-向左导航 (备选)}
 BICommandsRight {操作菜单 - 向右导航}
+BICommandsRightW {动作菜单-向右导航 (备选)}
+BICommandsUp {动作菜单-向上导航}
+BICommandsDown {动作菜单-向下导航}
 HelpChooser_Cancel {退出帮助}
 HelpChooser_Action {显示当前元素的帮助}
 HelpChooser_Next {下一个帮助元素}
@@ -157,4 +168,7 @@ DlgDown {对话中下一个回复}
 DlgScrollUp {向下滚动对话}
 DlgScrollDown {向上滚动对话}
 hk_Cure {使用治疗药剂}
-hk_Rush {使用“狂怒”技能}
+hk_Rush {使用“狂暴”技能}
+KZ_NextMusicTrack {下一段音乐}
+
+

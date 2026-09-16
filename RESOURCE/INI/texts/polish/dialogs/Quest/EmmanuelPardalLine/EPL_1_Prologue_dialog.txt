@@ -1,0 +1,127 @@
+EPL_1_Prologue_dialog_1 {Proszę zgłosić błąd do pomocy technicznej.}
+EPL_1_Prologue_dialog_2 {Dobrze.}
+EPL_1_Prologue_dialog_ellipsis {...}
+EPL_1_Prologue_dialog_3 {Becky, ten pokój niedługo będzie wyglądał jak cela mnicha.}
+EPL_1_Prologue_dialog_4 {Nie zaczynaj. Już wiem, jak znowu skończy się ta rozmowa.}
+EPL_1_Prologue_dialog_5 {Byłam w porcie. Stoi tam statek z Hawany. Okręt wojenny... Przybył nowy komendant, wyznaczony na miejsce naszego ojca. Udało mi się z nim porozmawiać i całkiem szczerze wyjaśnić trudne położenie, w jakim się znalazłyśmy.}
+EPL_1_Prologue_dialog_6 {Nie sądzę, żeby to było zbyt taktowne z twojej strony. Najpierw powinnaś była zaprosić go na kolację. W końcu ten dom wkrótce będzie jego. Mogłyśmy pokazać mu pokoje i omówić sprawę mebli oraz kilku innych rzeczy.}
+EPL_1_Prologue_dialog_7 {Wciąż mamy czas! Komendant był tak uprzejmy, że dał nam całe cztery miesiące zwłoki. Cztery przeklęte miesiące, żeby znaleźć ci odpowiednią partię, a wtedy wreszcie przestanę martwić się o twoją przyszłość, siostrzyczko.}
+EPL_1_Prologue_dialog_8 {No proszę. Tym razem twój wstęp był krótszy niż kiedykolwiek, zanim przeszłaś do rzeczy.}
+EPL_1_Prologue_dialog_9 {Na pokładzie tego statku nie brakuje kandydatów. Młodzi oficerowie z dobrych domów, wszyscy wystrojeni jak na paradę! Dwóch z tych, którzy zeszli na ląd pierwszą łodzią, było całkiem przystojnych. Chodź, pokażmy się tam, zanim schowają się w koszarach przed południowym upałem.}
+EPL_1_Prologue_dialog_10 {Ty też powinnaś sobie kogoś wybrać...}
+EPL_1_Prologue_dialog_11 {Nie, dziękuję. Zamierzam wreszcie wydostać się z tej dziury, gdy tylko oddam cię w pewne ręce. Jak myślisz, po co przez ostatnie lata uczyłam się nawigacji i czytania map? Zaciągnę się jako nawigatorka i wyruszę szukać przygód. Ha-ha! Mam większe szanse zostać nawigatorką niż te półpiśmienne arystokratyczne paniczyki, którym robi się niedobrze na sam widok pokładu.}
+EPL_1_Prologue_dialog_12 {@<pchar>, jeśli dobrze cię rozumiem, jeden z tych półpiśmiennych arystokratycznych paniczyków może zostać moim przyszłym mężem. A ty prędzej wyruszysz na spotkanie śmierci niż przygody. Jesteś kobietą i...}
+EPL_1_Prologue_dialog_13 {H-hej! W moich żyłach płynie krew @<pchar>, a nie @<FindPersonalName>! Nie zapominaj, kto jest moim prawdziwym ojcem.}
+EPL_1_Prologue_dialog_14 {Oczywiście, że pamiętam. Moja macocha, syrena, która zamieniła nogi na głos, nie raz opowiadała mi, jak przez niemal rok nie postawiłyście stopy na stałym lądzie, uganiając się po całym archipelagu za łupami.}
+EPL_1_Prologue_dialog_15 {Bardzo zabawne. Jeśli opowiesz tę rodzinną legendę swojemu przyszłemu zalotnikowi dokładnie tymi słowami, jestem pewna, że doceni nie tylko twoją urodę, lecz także cięty język.}
+EPL_1_Prologue_dialog_16 {To ty zaczęłaś tę rozmowę.}
+EPL_1_Prologue_dialog_17 {I ja ją skończę. Doganiaj mnie.}
+EPL_1_Prologue_dialog_18 {Señorita @<FindPersonalName>? Wszystko już omówiliśmy. Moja decyzja pozostaje bez zmian. Nie ma pani powodów do obaw.}
+EPL_1_Prologue_dialog_19 {Moja siostra nalegała, żebym zaprosiła pana na rodzinny obiad.}
+EPL_1_Prologue_dialog_20 {Hm, dziękuję. Przez najbliższe dni będę zapewne bardzo zajęty, ale z pewnością przyjmę wasze zaproszenie.}
+EPL_1_Prologue_dialog_21 {Doskonale. Nie będę pana dłużej zatrzymywać.}
+EPL_1_Prologue_dialog_22 {Znowu pani?}
+EPL_1_Prologue_dialog_23 {Już wychodzę.}
+EPL_1_Prologue_dialog_24 {Señorita, nie mogę sprzedawać na kredyt. Nie jest pani stąd. A jeśli jutro wsiądzie pani na pierwszy przepływający statek i zniknie bez śladu?}
+EPL_1_Prologue_dialog_25 {Ale ja nie proszę o kredyt. Zapłacę od razu dwie trzecie ceny, a resztę mogę odpracować - pomóc panu albo pańskiej żonie.}
+EPL_1_Prologue_dialog_26 {Nie mam aż tyle pracy. Sam doskonale sobie radzę, a żony nie mam. Mogę dać pani dwie trzecie towaru...}
+EPL_1_Prologue_dialog_27 {Gaston Fox, nie widzi pan, że mimo młodego wieku nieszczęście wypisane jest na twarzy señority? Proszę okazać trochę współczucia.}
+EPL_1_Prologue_dialog_28 {A co pani może wiedzieć o ludziach, droga @<pchar>, skoro nawet we własnym ojczymie nie dostrzegła pani łotra, niech spoczywa w pokoju.}
+EPL_1_Prologue_dialog_29 {Ostrożnie, Fox. Wie pan, że potrafię stracić panowanie nad sobą z byle powodu.}
+EPL_1_Prologue_dialog_30 {Najpierw zamień spódnicę na spodnie, zanim zaczniesz grozić. Komendant nie stoi już za tobą, gotów tuszować każdy twój wybryk. To przyjacielska rada, więc nie bierz jej za zniewagę.}
+EPL_1_Prologue_dialog_31 {Pod spódnicą też coś mam. To karzoletta. Pozwól, że pokażę ci, jak dobrze potrafię o siebie zadbać, i odwzajemnię się przyjacielską radą: broń się!}
+EPL_1_Prologue_dialog_32 {Nie bądź głupia.}
+EPL_1_Prologue_dialog_33 {Broń się albo zamień spodnie na spódnicę!}
+EPL_1_Prologue_dialog_34 {Co pani zamierza?}
+EPL_1_Prologue_dialog_35 {Dam panu nauczkę!}
+EPL_1_Prologue_dialog_36 {Przestań! O mało go nie zabiłaś!}
+EPL_1_Prologue_dialog_37 {Tylko pokazałam naszemu przyjacielowi, ile wart jest język, gdy staje się dłuższy od miecza.}
+EPL_1_Prologue_dialog_38 {Świetnie. Teraz pomóż mi go opatrzyć i wymyśl jakieś wyjaśnienie, chyba że chcesz zostać aresztowana.}
+EPL_1_Prologue_dialog_39 {Nie martw się, rozejdzie się po kościach. Kiedy ten łotr pognał do dżungli, żołnierze prawie pękali ze śmiechu, a to zadrapanie zagoi się w kilka godzin. Bardziej interesuje mnie ta dziewczyna - kim jest i skąd przybyła. Pójdę jej poszukać.}
+EPL_1_Prologue_dialog_40 {Przepraszam, señorita. Czy mogę dotrzymać pani towarzystwa?}
+EPL_1_Prologue_dialog_41 {Oczywiście... Nazywam się Sofia. Do niedawna Sofia de la Piedad. Chociaż naprawdę nie musiała pani traktować tamtego pana aż tak surowo.}
+EPL_1_Prologue_dialog_42 {Tamten pan od dawna zasługiwał na takie traktowanie. Ale do diabła z nim. Od dłuższego czasu jestem już @<pchar> @<FindPersonalName>. Adoptowaną córką byłego komendanta tej kolonii zapomnianej przez wszystkich chrześcijańskich świętych.}
+EPL_1_Prologue_dialog_43 {A teraz? Pani ojczym został przeniesiony na inne stanowisko?}
+EPL_1_Prologue_dialog_44 {Zmarł nieco ponad miesiąc temu, w dość absurdalnych okolicznościach. Pokłócił się z jednym ze swoich podwładnych. Moja przyrodnia siostra i ja nie mamy już tutaj żadnej rodziny, więc zostałyśmy zdane same na siebie.}
+EPL_1_Prologue_dialog_45 {Przykro mi. Wygląda na to, że spotkało nas podobne nieszczęście.}
+EPL_1_Prologue_dialog_46 {To była moja pierwsza myśl. Przypuszczam, że zeszła pani z okrętu wojennego, który przypłynął dziś rano, ale najwyraźniej bez ojca ani męża u boku.}
+EPL_1_Prologue_dialog_47 {Tak. Niedawno wydano mnie za oficera. Ślub zorganizowano w pośpiechu na naleganie moich rodziców, ponieważ mój mąż został skierowany tutaj, do Nowego Świata. Wyruszył z Europy do Hawany przez Sierra Leone, a dwa tygodnie później wsadzono mnie na statek handlowy płynący prosto na te wody.\nW rzeczywistości dotarłam do Hawany przed nim. Kiedy wreszcie nadeszła wiadomość, dowiedziałam się, że krótko po opuszczeniu afrykańskiego wybrzeża na statku wybuchła gorączka, a mój mąż znalazł się wśród tych, którzy jej nie przeżyli.}
+EPL_1_Prologue_dialog_48 {Rodzice zaaranżowali pani małżeństwo? Czyli był to związek z rozsądku?}
+EPL_1_Prologue_dialog_49 {Nie wiedziałam nawet, czy powinnam rozpaczać, czy odczuć ulgę. Nigdy nie chciałam poślubić tego człowieka i ledwie go znałam, ale teraz nie mam już nikogo, a co gorsza, nie mam żadnych środków do życia. Kapitan uprzejmie zgodził się zabrać mnie z powrotem do Europy pod warunkiem, że moi rodzice zapłacą za podróż po przybyciu, ale z czego mam żyć do tego czasu?\nPoza tym przed powrotem musimy jeszcze zostać tutaj przez kilka dni i zawinąć do Porto Bello, przynajmniej tak powiedział.}
+EPL_1_Prologue_dialog_50 {Moje dzieciństwo i młodość trudno nazwać spokojnymi, więc pewnie uznałabym coś takiego za przygodę. Ale dla pani, wyrwanej z cichego życia i wrzuconej w taki wir kłopotów, musi to być trudne. Mimo wszystko wygląda na to, że los w końcu się do pani uśmiechnął. Być może możemy sobie nawzajem pomóc.}
+EPL_1_Prologue_dialog_51 {Nie musi pani. Już sama rozmowa z panią sprawiła, że poczułam się lepiej...}
+EPL_1_Prologue_dialog_52 {Bez sprzeciwu. Mam kilka rzeczy ukrytych niedaleko stąd, w grocie. Nie mogę ich sprzedać ani wymienić, ale pani na pewno się przydadzą.}
+EPL_1_Prologue_dialog_53 {Co z nimi nie tak? Są przeklęte?}
+EPL_1_Prologue_dialog_54 {Ha-ha! Oczywiście, że nie. Chociaż założyłabym się, że ich poprzedni właściciel nasłuchał się więcej niż dość przekleństw. Proszę tutaj zaczekać, zaraz wrócę. I ani słowa nikomu.}
+EPL_1_Prologue_dialog_55 {Och, @<pchar>!}
+EPL_1_Prologue_dialog_56 {Becky? Co ty tutaj robisz?}
+EPL_1_Prologue_dialog_57 {Próbuję się dowiedzieć, co ty tutaj robisz. Ostatnio dziwnie się zachowujesz - wdajesz się w bójki ze wszystkimi i ciągle uciekasz albo do lasu, albo tutaj, na wybrzeże.}
+EPL_1_Prologue_dialog_58 {Czyli jednak od czasu do czasu masz na mnie oko. Słuchaj, nie mogę brać z ciebie przykładu i siedzieć cały dzień zamknięta w domu, a naszego fortu mam już serdecznie dość. Mam dość miejscowych żołnierzy gapiących się na mnie i ich prostackich komplementów oraz żartów.}
+EPL_1_Prologue_dialog_59 {Rozumiem. Ale to nie wszystko, prawda? Spójrz.\nTo chyba rzeczy Arcadia. Tego żołnierza, który wtargnął do naszego domu i zażądał mojej ręki. A ten pierścień - właśnie ten, który próbował mi dać, zanim go wyrzuciłaś.}
+EPL_1_Prologue_dialog_60 {Na to wygląda. Tak.}
+EPL_1_Prologue_dialog_61 {Kiedy usłyszałam, że znaleziono go martwego na brzegu, podziękowałam Najświętszej Matce za uwolnienie nas od tego podłego człowieka. A ty ukrywałaś tutaj jego rzeczy? Jak weszłaś w ich posiadanie? Zabiłaś go!}
+EPL_1_Prologue_dialog_62 {Nie! Oczywiście, że nie... Ehm... Tak, byłam na swoim zwykłym spacerze poza miastem i natknęłam się na kilku ludzi. Piratów albo przemytników, nie wiem. Na pewno nie byli miejscowi, a Arcadio był z nimi. Oczywiście odeszłam, zanim mnie zauważyli. Później, kiedy wróciłam, znalazłam go martwego. Przeszukałam jego kieszenie i uciekłam.}
+EPL_1_Prologue_dialog_63 {I ukryłaś te rzeczy tutaj, żeby nikt ich nie rozpoznał i nie pomyślał, że to ty go przebiłaś?}
+EPL_1_Prologue_dialog_64 {Właśnie tak.}
+EPL_1_Prologue_dialog_65 {Och, chciałabym móc ci uwierzyć, ale po tym, co wydarzyło się dzisiaj... Señor Cotes - gdyby twoje ostrze trafiło go odrobinę bardziej w prawo, kto wie...}
+EPL_1_Prologue_dialog_66 {To karzoletta, nie miecz.}
+EPL_1_Prologue_dialog_67 {Strzały armatnie? Fort strzela.}
+EPL_1_Prologue_dialog_68 {Nie. Rozpoznałabym działa fortu. Chyba dochodzi to od strony morza. Chodź, szybko!}
+EPL_1_Prologue_dialog_69 {Oszalałaś? A jeśli miasto zostało zaatakowane? Zostańmy tutaj. Będziemy bezpieczne.}
+EPL_1_Prologue_dialog_70 {Teraz to rzeczywiście fort strzela. Do diabła, Rebecca, nie mogłyśmy wybrać gorszego momentu, żeby znaleźć się poza miastem.}
+EPL_1_Prologue_dialog_71 {Mam nadzieję, że nasi ich powstrzymają, kimkolwiek są napastnicy.}
+EPL_1_Prologue_dialog_72 {Zapadł wieczór...}
+EPL_1_Prologue_dialog_73 {Oho, a kto się tutaj ukrywa? Mieliśmy szczęście, że odłączyliśmy się od reszty.}
+EPL_1_Prologue_dialog_74 {Jak się tutaj dostaliście?.. Stójcie! Nie podchodźcie! Nie pozwolę wam!}
+EPL_1_Prologue_dialog_75 {No proszę. Myszka znalazła się w potrzasku. No dalej, atakuj. Zobaczymy, czy to, co mówią, jest prawdą...}
+EPL_1_Prologue_dialog_76 {Becky, uciekaj!}
+EPL_1_Prologue_dialog_77 {@<pchar>! Nie uwierzysz, ale cholernie się cieszę, że widzę cię żywą i całą.}
+EPL_1_Prologue_dialog_78 {Kto nas zaatakował? Odparliśmy ich? Gdzie są ocaleni?}
+EPL_1_Prologue_dialog_79 {Piraci. Cały garnizon został rozbity. Niektórym udało się uciec do dżungli albo, tak jak mnie, ukryć się do końca walki, ale teraz nikogo już tutaj nie ma. Ostatni ocaleni przeprawili się na tamtą barkę.}
+EPL_1_Prologue_dialog_80 {Po co im nasz fort? Nie ma tutaj niczego wartego zabrania.}
+EPL_1_Prologue_dialog_81 {Wygląda na to, że chcą wykorzystać go jako bazę wypadową. Ich załogi zeszły na ląd i ruszyły w głąb wyspy. Słyszałem, jak wspominali Santo Domingo. Miasto ma potężną twierdzę, nieporównywalną z naszą, ale jeśli uda im się zaatakować od strony lądu, garnizon fortu nie zdąży nawet przyjść miastu z pomocą, zanim zostanie ono splądrowane.}
+EPL_1_Prologue_dialog_82 {Mogli wylądować w dowolnej zatoce.}
+EPL_1_Prologue_dialog_83 {Nie znam ich powodów, ale posłuchaj - znasz się przecież na żegludze morskiej, prawda? Na pokładzie barki zostało kilku marynarzy. Z pewnością potrafią poprowadzić ją wzdłuż wybrzeża, ale kapitan i nawigator byli w mieście i żaden nie przeżył. Potrzebujemy możliwie najlepszej trasy, żeby ominąć rafy i mielizny. Musimy dotrzeć do Santo Domingo przed piratami.}
+EPL_1_Prologue_dialog_84 {Ojczym zatrudniał dla mnie nauczycieli, ale nigdy sama nie prowadziłam statku, a... Gdzie jest Rebecca? Ona też weszła na pokład barki?}
+EPL_1_Prologue_dialog_85 {Nie widziałem jej od czasu oblężenia, odkąd opatrzyła mi ramię.}
+EPL_1_Prologue_dialog_86 {Nie wróciła do miasta? Becky powinna była dotrzeć tutaj zaledwie kilka minut przede mną. O nie, nie mogę teraz odpłynąć. Muszę ją znaleźć.}
+EPL_1_Prologue_dialog_87 {My też nie możemy czekać. Nie chodzi tylko o ostrzeżenie gubernatora przed atakiem. Tuż przy brzegu stoją wrogie okręty, a na ich pokładach wciąż są ludzie, którzy mogą w każdej chwili ponownie zejść na ląd.}
+EPL_1_Prologue_dialog_88 {Nie. Nadal nie mogę.}
+EPL_1_Prologue_dialog_89 {Posłuchaj. Jeśli Rebecca wpadła na piratów, najprawdopodobniej zabrali ją ze sobą jako zakładniczkę. Jeśli udało jej się ukryć w lesie, prędzej czy później wróci tutaj. Tak czy inaczej, musimy jak najszybciej dotrzeć do Santo Domingo. Wtedy być może znajdziemy twoją siostrę poza murami miasta albo miejscowy gubernator generalny wyśle oddział, by odbić nasz fort, a ona będzie mogła bezpiecznie wrócić.\nJeśli tutaj zostaniesz, nikomu nie pomożesz. Dostarczysz tylko tej bandzie morderców trochę rozrywki, zanim cię zabiją.}
+EPL_1_Prologue_dialog_90 {Cholera... Powinna była zostać ze mną...}
+EPL_1_Prologue_dialog_91 {Czekaj! Słyszałem głosy dochodzące z fortu. Czy to mogą być ocaleni mieszkańcy?}
+EPL_1_Prologue_dialog_92 {Rebecca może tam być! Pójdę sprawdzić.}
+EPL_1_Prologue_dialog_93 {Będę czekał na ciebie przy przystani, obok łodzi.}
+EPL_1_Prologue_dialog_94 {Dobrze. Zaraz wrócę.}
+EPL_1_Prologue_dialog_95 {Wszyscy do łodzi. Wejdę na pokład jako ostatnia.}
+EPL_1_Prologue_dialog_96 {Dobrze.}
+EPL_1_Prologue_dialog_97 {
+Argh, do diabła... Jak boli... Pomocy...
+}
+EPL_1_Prologue_dialog_98 {
+Co, twoi wspólnicy zostawili cię tu na śmierć? Tak? Zaraz pomogę ci raz na zawsze, piracie!
+}
+EPL_1_Prologue_dialog_99 {
+Uspokój się, señorita. Nie jesteśmy waszymi wrogami i na pewno nie jesteśmy piratami. A przynajmniej nie tymi, którzy splądrowali to miasto.
+}
+EPL_1_Prologue_dialog_100 {
+Więc kim jesteście? Odpowiadajcie!
+}
+EPL_1_Prologue_dialog_101 {
+Jestem wolnym kapitanem — Sandro Thorn, a to mój lekarz okrętowy, Jim Hopkins. Przybyliśmy do osady, żeby przekazać wiadomość pewnej młodej damie.
+}
+EPL_1_Prologue_dialog_102 {
+Nazywam się Emmanuelle Remidos. Jak widzicie, spóźniliście się, Sandro Thorn. Kogo dokładnie szukaliście?
+}
+EPL_1_Prologue_dialog_103 {
+To już nie ma znaczenia. Mój przyjaciel potrzebuje pomocy, a my musimy natychmiast się stąd wydostać, señorita. Jak najszybciej.\nPiraci ukradli mój statek, ale ten okręt przy nabrzeżu w zupełności wystarczy.
+}
+EPL_1_Prologue_dialog_104 {
+Dlaczego miałabym wam pomagać? Skąd mam wiedzieć, że nie zaprowadzicie nas w pułapkę?
+}
+EPL_1_Prologue_dialog_105 {
+A po co miałbym to robić? Gdybym był z nimi w zmowie, rozprawienie się z wami nie sprawiłoby mi najmniejszego kłopotu. Z zatoki La Vega bez walki się nie wydostaniecie, a wasza załoga zdecydowanie nie przypomina królewskiej gwardii.\nNie macie więc wyboru, @<GetAddress_Form>. Wreszcie to zrozumcie. My potrzebujemy was, a wy potrzebujecie nas. Poza tym znam specjalne pirackie sygnały. To da nam trochę czasu, ale musimy trzymać się ściśle kursu względem wiatru i unikać bitew morskich.
+}
+EPL_1_Prologue_dialog_106 {
+Dobrze, rzeczywiście nie ma innego wyjścia. Idźcie do szalupy. Mam nadzieję, że twój plan zadziała, Sandro.
+}

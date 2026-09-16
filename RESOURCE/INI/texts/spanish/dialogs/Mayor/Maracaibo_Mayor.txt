@@ -148,3 +148,43 @@ Así que tu tarea aquí está cumplida; no te retendré más. Por favor, transmi
 Maracaibo_Mayor_44 {
 Por supuesto, señor. Adiós.
 }
+
+Maracaibo_Mayor_45 {
+¿Cuánto quieren?
+}
+Maracaibo_Mayor_46 {
+Un millón de piastras por Maracaibo. Y otro millón por Gibraltar.
+}
+Maracaibo_Mayor_47 {
+¡Disparates! ¡No tenemos tanto dinero! ¡Nunca lo hemos tenido!
+}
+Maracaibo_Mayor_48 {
+¡Sus amenazas no servirán de nada! ¡De verdad no disponemos de esa suma!
+}
+Maracaibo_Mayor_49 {
+¡Entonces encuéntrenla! Por su culpa hemos perdido demasiados hombres. No habrá regateo. Si no pagan, reduciremos ambas ciudades a cenizas. Y a usted lo ataremos aquí mismo a un barril de pólvora. ¡Que sus súbditos recojan a su gobernador por toda la plaza!
+}
+Maracaibo_Mayor_50 {
+Esta historia me resulta sospechosamente familiar...
+}
+Maracaibo_Mayor_51 {
+Ah, sí. Olvidé presentarme. Alonso de Vargas. Usé el nombre de @<GetFullName> cuando servía en inteligencia. Tras retirarme, lo conservé; por entonces aún esperaba regresar.
+}
+Maracaibo_Mayor_52 {
+No puede ser...
+}
+Maracaibo_Mayor_53 {
+Si Diego pudiera ver esto... Estaría satisfecho con su trabajo.
+}
+Maracaibo_Mayor_54 {
+Pero nunca lo verá...
+}
+Maracaibo_Mayor_55 {
+¿A Tortuga?..
+}
+Maracaibo_Mayor_56 {
+Exactamente. Me han burlado. Muy bien, quédense con su botín. Solo que, a estas alturas, lo más probable es que la bandera española ya ondee sobre Tortuga.
+}
+Maracaibo_Mayor_57 {
+Lo dudo mucho. Tu hermano...
+}

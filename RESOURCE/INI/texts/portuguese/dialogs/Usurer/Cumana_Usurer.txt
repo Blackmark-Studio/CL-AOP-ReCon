@@ -37,3 +37,34 @@ Você acertou, desculpe...
 Cumana_Usurer_12 {
 Entendi...
 }
+
+Cumana_Usurer_13 {
+Estou ouvindo, capitão. Que assunto o traz até mim?
+}
+Cumana_Usurer_14 {
+Quero deixar vinte mil pesos para Anna Arellano. E transmitir-lhe algumas palavras de seu pai.
+}
+Cumana_Usurer_15 {
+Nada urgente. Voltaremos a isso outra hora.
+}
+Cumana_Usurer_16 {
+Anna Arellano? Sim, eu a conheço. Mas seu pai não aparece em Cumaná há muito tempo. O que exatamente devo dizer a ela?
+}
+Cumana_Usurer_17 {
+Diga que este dinheiro foi deixado por Tomas de Arellano. E que ele abençoou o casamento dela com Sebastian. Não precisa mencionar meu nome.
+}
+Cumana_Usurer_18 {
+Entendo. Se o dinheiro está com você, abrirei imediatamente um depósito em nome dela.
+}
+Cumana_Usurer_19 {
+Aqui está o dinheiro. Abra o depósito e não se esqueça de transmitir-lhe as palavras do pai.
+}
+Cumana_Usurer_20 {
+Não tenho toda a quantia agora. Voltarei quando reunir os vinte mil.
+}
+Cumana_Usurer_21 {
+Pode ficar tranquilo. Em meus livros constará apenas o nome de Tomas de Arellano, e Anna receberá as palavras dele.
+}
+Cumana_Usurer_22 {
+Obrigado. É tudo o que preciso de você.
+}

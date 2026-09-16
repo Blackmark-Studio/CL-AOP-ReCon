@@ -262,3 +262,12 @@ Ein böses Omen wird deinen Weg kreuzen – hüte dich vor dem bösen Blick und 
 Gipsy_68 {
 Das Glück wartet direkt hinter deinem Rücken auf dich. Nimm an, was dir leicht zufällt, und jage nicht dem Unmöglichen nach.
 }
+Gipsy_69 {
+@<TimeGreeting>, @<pchar>. Ich freue mich sehr, Euch zu sehen.
+}
+Gipsy_70 {
+@<TimeGreeting>, @<pchar>. Ich freue mich sehr, Euch zu sehen.
+}
+Gipsy_71 {
+@<TimeGreeting>, @<npchar>. Ich muss gehen.
+}

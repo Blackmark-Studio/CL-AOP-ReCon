@@ -1,39 +1,39 @@
 SentJons_Tavern_1 {
-什么问题？
+什么问题？ 
 }
 SentJons_Tavern_2 {
-有什么事需要俺帮忙吗，@<GetAddress_Form>?
+有什么事需要我帮忙吗， @<GetAddress_Form>?
 }
 SentJons_Tavern_3 {
 @<RandPhraseSimple>
 }
 SentJons_Tavern_4 {
-前不久你还想问我个问题，@<GetAddress_Form>……
+前不久你还想问我个问题， @<GetAddress_Form>…… 
 }
 SentJons_Tavern_5 {
-你今天已经第三次提这事了……
+你今天已经第三次提这事了…… 
 }
 SentJons_Tavern_6 {
-咱们又要开始问问题了？
+咱们又要开始问问题了？ 
 }
 SentJons_Tavern_7_m {
-我改变主意了……
+我改变主意了…… 
 }
 SentJons_Tavern_7_f {
-我改变主意了……
+我改变主意了…… 
 }
 SentJons_Tavern_8 {
-我现在没什么可说的。
+我现在没什么可说的。 
 }
 SentJons_Tavern_9 {
 @<RandPhraseSimple>
 }
 SentJons_Tavern_10 {
-嗯，我的记忆好像出了点问题……
+嗯， 我的记忆好像出了点问题…… 
 }
 SentJons_Tavern_11 {
-看来第三次总算成了啊……
+看来第三次总算成了啊…… 
 }
 SentJons_Tavern_12 {
-没什么问题……
+没什么问题…… 
 }

@@ -1,0 +1,156 @@
+Arelano_dialog_1 {
+Entre, @<GetAddress_Form>. Se Mateo lhe contou que tenho algas medicinais, exagerou. Elas não têm nada de medicinal.
+}
+Arelano_dialog_2_m {
+Não vim atrás de algas, Tomas. Santa Clara não apaga as luzes. Somos do “San Jacinto”. O capitão de Aragón ordenou que o levássemos imediatamente a bordo. A fragata espera na baía de Anna Maria.
+}
+Arelano_dialog_2_f {
+Não vim atrás de algas, Tomas. Santa Clara não apaga as luzes. Somos do “San Jacinto”. O capitão de Aragón ordenou que o levássemos imediatamente a bordo. A fragata espera na baía de Anna Maria.
+}
+Arelano_dialog_3 {
+Espero que não tenham se denunciado aos colonos. Quantos são vocês, e verificaram os acessos à baía antes de lançar âncora?
+}
+Arelano_dialog_4 {
+Talvez pense que só o senhor sabe fazer seu trabalho por aqui? Garanto que está enganado. Arrume suas coisas, temos pouco tempo.
+}
+Arelano_dialog_5 {
+Por que o capitão de Aragón não veio pessoalmente?
+}
+Arelano_dialog_6 {
+Pergunte a ele. Não discuto ordens.
+}
+Arelano_dialog_7 {
+Pois bem, está tudo pronto. Podemos partir.
+}
+Arelano_dialog_8 {
+Excelente. Siga-me.
+}
+Arelano_dialog_9 {
+Finalmente... Onde diabos vocês es... Espere. Quem é você?
+}
+Arelano_dialog_10 {
+Tire a mão do punho da espada, Tomas. Meus homens estão lá fora e você não vai escapar daqui. Mas continuará vivo se não resistir.
+}
+Arelano_dialog_11 {
+Primeiro vai me dizer quem é e o que quer de mim.
+}
+Arelano_dialog_12 {
+Meu nome não lhe diria nada. E o que queremos de você, creio que entende perfeitamente. Deixe o orgulho de lado: conseguiremos o que queremos de qualquer maneira. A única questão é como.
+}
+Arelano_dialog_13 {
+Malditos ladrones... Neste momento a força está do seu lado. Muito bem, vou com vocês.
+}
+Arelano_dialog_14 {
+Ande na frente e não faça nenhuma estupidez. Isso só vai atiçar monsieur l'Olonnais, e nem de bom humor ele é conhecido pela misericórdia.
+}
+Arelano_dialog_15 {
+Antes de subirmos a bordo, quero saber quem me traiu. Enviei vinte despachos por agentes diferentes. Dezenove continham informações falsas, e apenas três pessoas sabiam meu nome e onde me encontrar. Qual delas me entregou?
+}
+Arelano_dialog_16 {
+Ninguém o traiu. Arrancamos seu nome de um deles sob tortura. Se resolver ser teimoso, logo descobrirá exatamente como.
+}
+Arelano_dialog_17 {
+Ainda veremos... E ali estão as velas da patrulha de Santiago. Em breve vocês estarão balançando nas vergas deles...
+}
+Arelano_dialog_18 {
+E onde está a bandeira de sinalização? Ah... Entendo... Seus ladrones cabeça-dura não conseguiram descobrir isso...
+}
+Arelano_dialog_19 {
+Argh...
+}
+Arelano_dialog_20_m {
+Este não é o “San Jacinto”... E você... maldito ladrón!
+}
+Arelano_dialog_20_f {
+Este não é o “San Jacinto”... E você... maldita bandida!
+}
+Arelano_dialog_21 {
+Cuidado, amigos, temos aqui um espião de perspicácia extraordinária.
+}
+Arelano_dialog_22 {
+Vocês arderão no inferno, malditos apóstatas!
+}
+Arelano_dialog_23 {
+Só que você vai para lá primeiro. A menos, é claro, que nos entregue os papéis que poderíamos perfeitamente tirar do seu cadáver.
+}
+Arelano_dialog_24 {
+E ali estão as velas da patrulha de Santiago. Em breve vocês estarão balançando nas vergas deles...
+}
+Arelano_dialog_25 {
+Cof-cof...
+}
+Arelano_dialog_26 {
+Teremos de revistá-lo, señor Arellano. E será melhor para você que esteja carregando alguma informação sobre a baía onde as esquadras de Veracruz e Cartagena se encontrarão.
+}
+Arelano_dialog_27 {
+Não tenho nada comigo... Já lhes disse: tudo o que era necessário eu já enviei...
+}
+Arelano_dialog_28 {
+Então teremos de arrancar de você tudo o que sabe.
+}
+Arelano_dialog_29 {
+Não conseguirão nada, seus apóstatas imundos... Cof-cof... Não lhes direi nada.
+}
+Arelano_dialog_30 {
+Não banque o santo, Tomas. Você não é tolo. Ouviu o combate, mas nem tentou fugir. Estava esperando que viessem buscá-lo. E não deveriam ser soldados espanhóis...
+}
+Arelano_dialog_31 {
+Eu... quero lhes propor um acordo...
+}
+Arelano_dialog_32 {
+Quer que poupemos sua vida? Receio que...
+}
+Arelano_dialog_33 {
+Cof-cof...
+}
+Arelano_dialog_34 {
+Teremos de revistá-lo, señor Arellano. E será melhor para você que esteja carregando alguma informação sobre a baía onde as esquadras de Veracruz e Cartagena se encontrarão.
+}
+Arelano_dialog_35 {
+Eu... cof-cof... enviei vinte despachos por agentes diferentes. Apenas três conheciam meu nome, e só um tinha as coordenadas verdadeiras... Quem me traiu? Ramiro?
+}
+Arelano_dialog_36 {
+Isso já não importa. Apenas entregue os papéis e...
+}
+Arelano_dialog_37 {
+Não há papéis... Nem deveria haver. Tudo o que era preciso eu já... enviei. Cof-cof...
+}
+Arelano_dialog_38 {
+Nesse caso, terei de prolongar sua vida por mais algumas horas. Mas duvido que fique contente com isso. Señor l'Olonnais procura há muito tempo um pretexto para torturar alguém, e conhece seu ofício extraordinariamente bem.
+}
+Arelano_dialog_39 {
+Foi por isso que fugi... Entendi como tudo terminaria. Eu... tenho uma proposta.
+}
+Arelano_dialog_40 {
+Uma proposta? Quer continuar vivo?
+}
+Arelano_dialog_41 {
+Já estou morto... Cof-cof... A bala atravessou meu pulmão. Tenho uma filha... Anna Arellano. Ela não tem ninguém além de mim.
+}
+Arelano_dialog_42 {
+Dê sua palavra... de que, dentro de três meses, depositará vinte mil piastras em nome da minha filha no banco de Cumaná... E diga a ela que abençoo seu casamento com Sebastian... Então direi onde será o encontro.
+}
+Arelano_dialog_43 {
+Dou minha palavra. E vou cumpri-la, se disser a verdade.
+}
+Arelano_dialog_44 {
+A “Margarita”... não irá para Cuba. Não encontrei aqui... nenhuma baía adequada.
+}
+Arelano_dialog_45 {
+Então onde acontecerá a junção?
+}
+Arelano_dialog_46 {
+Em mar aberto... Cof-cof... Trace duas linhas no mapa. Uma, de Fort Orange até La Vega. A outra... de Belize até San Juan. Onde elas se cruzarem... Tierra Firme ficará à deriva e esperará os reforços.
+}
+Arelano_dialog_47 {
+Tierra Firme, “Margarita”... São nomes de navios?
+}
+Arelano_dialog_48 {
+Tierra Firme é a esquadra... “Margarita” é o galeão do tesouro. Toda a prata estará nos porões dela.
+}
+Arelano_dialog_49 {
+Espere. Quer dizer a “Santa Margarita”?! Quando ela chegará a esse ponto? Fale!
+}
+Arelano_dialog_50 {
+Ela... já deixou Veracruz... Vai... p-precisar de...
+}

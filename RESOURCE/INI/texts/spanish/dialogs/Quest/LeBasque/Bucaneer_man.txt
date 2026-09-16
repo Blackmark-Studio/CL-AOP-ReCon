@@ -1,0 +1,70 @@
+Bucaneer_man_1 {
+Hip... ¡Oh, capitán! ¡Ven al fuego! ¡Que me caiga un rayo, hoy brindamos por tu salud y por la destrucción de toda España!
+}
+Bucaneer_man_2 {
+Me encantaría unirme a ustedes, chicos. Veo que aquí el ron corre como el agua.
+}
+Bucaneer_man_3 {
+¡Qué calor insoportable! La carne se echa a perder más rápido de lo que podemos ahumarla en la parrilla. Si no llueve bien en los próximos días, tendremos que adentrarnos más en la selva para conseguir caza fresca.
+}
+Bucaneer_man_4 {
+La pólvora está húmeda y el mosquete falla cada dos por tres. Tendré que pasarme toda la noche limpiando la cerradura y secando los suministros; de lo contrario, no seré de mucha utilidad si me encuentro con la patrulla española.
+}
+Bucaneer_man_5 {
+Es terriblemente aburrido, capitán. Rastrear jabalíes durante semanas no es para cualquiera. ¿Por casualidad tiene unos cuantos pesos de sobra? Pensaba jugar a los dados con los muchachos, pero no tengo dinero.
+}
+Bucaneer_man_6 {
+Esta selva acabará conmigo algún día. Ayer me mordió algún animal y ahora tengo la mano tan hinchada que me duele al sostener una espada. Los lugareños dicen que se me pasará sola. Espero que no mientan.
+}
+Bucaneer_man_7 {
+He oído que los comerciantes de Tortuga se han vuelto locos: nos compran las pieles a precio de ganga. Quizás sea hora de dejar la caza y volver al mar. Al menos allí el botín se reparte de forma más justa.
+}
+Bucaneer_man_8 {
+Ese es tu destino como bucanero. Adiós.
+}
+Bucaneer_man_9 {
+Buena suerte en tus proyectos, no te entretendré.
+}
+Bucaneer_man_10 {
+¡Por todo lo sagrado, Capitán, hoy hasta nuestro turbio aguardiente se bebe como el mejor Borgoña! Hemos estado aquí, entre el barro y el hollín, alimentando mosquitos y matando jabalíes mientras usted hacía grandes cosas. Pero Dios sabe, viendo a nuestras mujeres riendo alrededor del fuego otra vez... ¡Caramba, Tortuga se lo está pasando en grande! ¡Tómese una copa con nosotros, Capitán!
+}
+Bucaneer_man_11 {
+¡Que me caiga un rayo si no me bebo un barril entero hoy solo! No hemos estado bajo fuego de mosquete contigo, Capitán, esa es la pura verdad. Pero arrebatar a estas desafortunadas mujeres de las garras del chacal castellano Vargas es una hazaña verdaderamente noble, ¡digna de un rey! ¡Brindemos por tu salud! Hip... ¡diablos, que alguien me dé más ron!
+}
+Bucaneer_man_12 {
+Ya sabes, Capitán... hip... dicen que no existen los milagros de verdad. Pero miro este fuego, escucho las canciones de las chicas, ¡y me doy cuenta de que mienten descaradamente! Nosotros, los bucaneros, somos gente sencilla; no participamos en grandes asedios. Pero hoy los castellanos están bañados en sangre, y la vida ha vuelto a Tortuga. El almirante Le Basque podrá llevarse toda la gloria de Europa, ¡pero aquí solo brindamos por ti! ¡Pásanos una jarra!
+}
+Bucaneer_man_13 {
+¡Beban y diviértanse, muchachos! Estas vacaciones son suyas por derecho.
+}
+Bucaneer_man_14 {
+Una velada verdaderamente gloriosa. No los molestaré; ¡vacíen sus barriles hasta el último centavo!
+}
+
+Bucaneer_man_15 {
+¡Qué calor insoportable! La carne se echa a perder más rápido de lo que podemos ahumarla en la parrilla. Si no llueve bien en los próximos días, tendremos que adentrarnos más en la selva para conseguir caza fresca.
+}
+
+Bucaneer_man_16 {
+La pólvora está húmeda y el mosquete falla cada dos por tres. Tendré que pasarme toda la noche limpiando la cerradura y secando los suministros; de lo contrario, no seré de mucha utilidad si me encuentro con la patrulla española.
+}
+
+Bucaneer_man_17 {
+Es terriblemente aburrido, capitán. Rastrear jabalíes durante semanas no es para cualquiera. ¿Por casualidad tiene unos cuantos pesos de sobra? Pensaba jugar a los dados con los muchachos, pero no tengo dinero.
+}
+
+Bucaneer_man_18 {
+Esta selva acabará conmigo algún día. Ayer me mordió algún animal y ahora tengo la mano tan hinchada que me duele al sostener una espada. Los lugareños dicen que se me pasará sola. Espero que no mientan.
+}
+
+Bucaneer_man_19 {
+He oído que los comerciantes de Tortuga se han vuelto locos: nos compran las pieles a precio de ganga. Quizás sea hora de dejar la caza y volver al mar. Al menos allí el botín se reparte de forma más justa.
+}
+
+Bucaneer_man_20 {
+Ese es tu destino como bucanero. Adiós.
+}
+
+Bucaneer_man_21 {
+Buena suerte en tus proyectos, no te entretendré.
+}

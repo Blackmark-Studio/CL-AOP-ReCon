@@ -7,7 +7,7 @@ Task6 {Zahlmeister zuweisen}
 Task7 {Zimmerer zuweisen}
 Task8 {Seekampf}
 Task9 {Verwendung von Kugeln oder Bomben}
-Task10 {Versenke den beschädigten Lugger}
+Task10 {Versenkt die feindlichen Lugger}
 Task11 {Rückzug}
 Task12 {Entferne dich weit genug vom Feind}
 Task13 {Neues Schiff}
@@ -25,3 +25,12 @@ Task24 {Neues Schiff}
 Task25 {Geh zur Taverne}
 Task26 {Alle verfügbare Crew anheuern}
 Task27 {Verlasse die Taverne}
+Task28 {Verlasst Barbados}
+Task29 {Entfernt Euch 500 Yards vom Fort}
+Task30 {Verringert den Abstand zur „Encarnación“ und schickt ein Beiboot zu ihr}
+
+Task31 {Erkundet Maracaibo}
+Task32 {Überprüft den Laden}
+Task33 {Überprüft das Gefängnis}
+Task34 {Überprüft das Lagerhaus}
+Task35 {Überprüft den Dschungel}

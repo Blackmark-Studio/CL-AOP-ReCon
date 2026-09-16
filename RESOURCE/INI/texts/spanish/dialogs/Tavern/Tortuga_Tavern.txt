@@ -316,3 +316,49 @@ Tortuga_Tavern_90_f {
 Tortuga_Tavern_91 {
 Hmm... Ya veo. Gracias, @<npchar>.
 }
+
+Tortuga_Tavern_92 {
+Dicen que conoces a un hombre que busca capitanes. ¿Podrías decirme cómo encontrarlo?
+}
+Tortuga_Tavern_93 {
+Aquí uno de cada tres busca capitanes...
+}
+Tortuga_Tavern_94_m {
+Por lo que he oído, ese hombre ofrece un trabajo poco común.
+}
+Tortuga_Tavern_94_f {
+Por lo que he oído, ese hombre ofrece un trabajo poco común.
+}
+Tortuga_Tavern_95 {
+Oh, capitán, cada trabajo es peculiar a su manera. Todo depende de lo que ya haya visto en esta vida.
+}
+Tortuga_Tavern_96 {
+Sabes perfectamente de quién hablo.
+}
+Tortuga_Tavern_97 {
+Solo entiendo una cosa... ¡Está perdiendo mi tiempo con charla inútil!
+}
+Tortuga_Tavern_98 {
+Ahí lo tiene. Ahora él mismo ha decidido que merece la pena hablar con usted.
+}
+Tortuga_Tavern_99 {
+¿Siempre hace que primero pregunten por él y luego se acerca?
+}
+Tortuga_Tavern_100 {
+A Marceau le gusta observar primero a la gente. Dicen que tiene buen ojo para juzgar a una persona. Si ha bajado a verlo, significa que ha visto algo que vale la pena en usted.
+}
+Tortuga_Tavern_101 {
+Bien, iré a hablar con él.
+}
+Tortuga_Tavern_102 {
+Lo escucho, capitán.
+}
+Tortuga_Tavern_103 {
+Busco a Marceau. ¿Sigue arriba?
+}
+Tortuga_Tavern_104 {
+Los hombres como él rara vez permanecen mucho tiempo en un mismo sitio. Si tiene noticias para él, búsquelo en el puerto, a bordo de la «Gaviota Negra».
+}
+Tortuga_Tavern_105 {
+Gracias.
+}

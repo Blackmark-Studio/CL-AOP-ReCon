@@ -1018,3 +1018,58 @@ Du hast deinen Teil der Abmachung erfüllt, jetzt erfülle ich meinen. Hier ist 
 Common_citizen_292 {
 Gern geschehen, @<GetAddress_FormToNPC>! Alles Gute.
 }
+
+Common_citizen_293 {
+Die ganze Stadt spricht heute nur über eines – den gescheiterten Versuch, unsere Kolonie einzunehmen.
+}
+
+Common_citizen_294 {
+Stellen Sie sich nur diese Kühnheit vor: Sie wollten die Befestigungen unserer Stadt angreifen! Worauf haben sie bloß gehofft? Ich glaube, dieses Abenteuer war schon zum Scheitern verurteilt, als es demjenigen in den Sinn kam, der es ausgeheckt hat.
+}
+
+Common_citizen_295 {
+Ich muss gestehen, als die Schüsse fielen, packte mich die Panik.
+}
+
+Common_citizen_296 {
+@<TimeGreeting>, @<pchar.name>. Ich freue mich sehr, Sie zu sehen.
+}
+
+Common_citizen_297 {
+@<TimeGreeting>, @<pchar.name>. Ich freue mich sehr, Sie zu sehen.
+}
+
+Common_citizen_298 {
+@<TimeGreeting>, @<npchar.name>. Ich muss gehen.
+}
+
+Common_citizen_299_m {
+@<TimeGreeting>, @<pchar>! Ich freue mich sehr, Sie zu sehen. Heute ist herrliches Wetter für einen Spaziergang!
+}
+Common_citizen_299_f {
+@<TimeGreeting>, @<pchar>! Ich freue mich sehr, Sie zu sehen. Heute ist herrliches Wetter für einen Spaziergang!
+}
+Common_citizen_300 {
+Guten Tag, @<npchar>! Ich freue mich ebenfalls, Sie zu sehen.
+}
+Common_citizen_301 {
+Verzeihen Sie, aber ich habe es eilig.
+}
+Common_citizen_302 {
+Ah, Becky, Manuel! Wie schön, dass wir uns noch sehen. Wisst ihr, heute laufen wir endlich aus.
+}
+Common_citizen_303 {
+Habt ihr alle Vorbereitungen abgeschlossen?
+}
+Common_citizen_304 {
+Unsere Jungen waren schon um vier Uhr morgens auf den Beinen, um die Truhen zu verstauen, und Lucia hat einen ganzen Armvoll Blumen gesammelt, um die Kajüte zu schmücken.
+}
+Common_citizen_305 {
+Sagen Sie lieber „Blumenstrauß“, das klingt vornehmer.
+}
+Common_citizen_306 {
+Ein Blumenstrauß, und was für einer — fast schon ein Besen... Ist das dort nicht Miguel? Ich muss mich noch mit ein paar Worten von ihm verabschieden. Ich empfehle mich ergebenst.
+}
+Common_citizen_307 {
+Gute Reise.
+}

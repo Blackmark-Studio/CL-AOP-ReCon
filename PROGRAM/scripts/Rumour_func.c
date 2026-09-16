@@ -1,17 +1,32 @@
 string ttttstr;
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////
-int DateToInt(int plus)// Функция преводит дату в количество дней
-                                    // если указать 0 - получим текущую дату
+int DateToInt(int plus)// Функция преводит дату в количество дней; если указать 0 - получим текущую дату
 {
+	int  yy = sti(Environment.date.year);
+	int  mm = sti(Environment.date.month);
+	int  dd = sti(Environment.date.day);
 
-      int  yy = sti(Environment.date.year);
-      int  mm = sti(Environment.date.month);
-      int  dd = sti(Environment.date.day);
-
-    return (yy * 365 + mm * 30 + dd + plus);
+	return (yy * 365 + mm * 30 + dd + plus);
 }
 
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+// KZ FreeStores > случайный обитаемый город для слуха о ценах, когда у рассказчика нет своей колонии
+int FindColonyForPriceRumour()
+{
+	int iArray[MAX_COLONIES];
+	int i, n = 0;
+
+	for (i = 0; i < MAX_COLONIES; i++)
+	{
+		if (Colonies[i].nation == "none" || Colonies[i].id == "Panama") continue;
+		iArray[n] = i;
+		n++;
+	}
+
+	if (n == 0) return -1;
+	return iArray[rand(n - 1)];
+}
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////
 void SelectAction(ref rid) //CASE с действиями для слухов
@@ -20,6 +35,7 @@ void SelectAction(ref rid) //CASE с действиями для слухов
 	int pos, sid;
 	string other,sled,att;
 	pos = FindRumour(rid.id);
+	if (pos == -1) return;	// > слуха уже нет в очереди
 	makeref(CurrentRumour, Rumour[pos]);
 	switch(CurrentRumour.event) // если слух с действием, то выполняем:
 	{
@@ -156,6 +172,7 @@ void AddRumourLogInfo(int rid)
 {
     ref CurrentRumour;
     int pos = FindRumour(rid);
+    if (pos == -1) return;	// > слуха уже нет в очереди
     makeref(CurrentRumour, Rumour[pos]);
     if(CheckAttribute(CurrentRumour, "loginfo"))
     {
@@ -231,7 +248,10 @@ bool RumourCheker(ref rRumour, string key, aref arPrm)
 		//fix eddy. аргумент функции и цикл
 		aref aNation;
 		makearef(aNation, rRumour.nonation);
-		for (int i = 1; i <= GetAttributesNum(aNation); i++)
+
+		int i, nNoNation = GetAttributesNum(aNation);
+
+		for (i = 0; i <= nNoNation; i++)
 		{
 			string svar = "n"+i;
             if (CheckAttribute(aNation, svar) && sti(aNation.(svar)) == iNation) //fix
@@ -287,11 +307,12 @@ bool RumourCheker(ref rRumour, string key, aref arPrm)
 string SelectRumourEx(string key, aref arChr, int pin)	// Получить рандомный слух по типажу из очереди
 {														// key - ключ спец. слуха
 	ref sld;
-	int Rumour_Index,i,rnd,st;
+	int Rumour_Index, rnd, st, i = 0;
+	int iToday = DateToInt(0);
 	pin = -1;
 	ref CurrentRumour;
 	object TEMP[MAX_RUMOURS];
-	i = 0;
+
 	for(Rumour_Index = 0; Rumour_Index < MAX_RUMOURS; Rumour_Index++)
 	{
 		makeref(CurrentRumour, Rumour[Rumour_Index]);
@@ -301,7 +322,7 @@ string SelectRumourEx(string key, aref arChr, int pin)	// Получить ра�
 		//15/09/06 homo теперь можно перечислять несколько типажей через запятую
 		if(HasSubStr(tip, key) || HasSubStr(tip, "all"))  // слух специальный или общий
 		{
-			if (sti(CurrentRumour.actualtime) >= DateToInt(0) && st > 0 && CurrentRumour.text != "" )  // непросроченный
+			if (sti(CurrentRumour.actualtime) >= iToday && st > 0 && CurrentRumour.text != "" )  // непросроченный
 			{
 				// homo 03/09/06 fix В массив идут только валидные слухи!
 				if (RumourCheker(CurrentRumour, key, arChr))
@@ -322,9 +343,10 @@ string SelectRumourEx(string key, aref arChr, int pin)	// Получить ра�
 		rnd=rand(i - 1);
 		//-> homo чтоб одинаковые слухи подряд не выпадали
 		int it = 0;
-		
+		string sBBState = pchar.questTemp.BlueBird;
+
 		// Rosarak. Обычная проверка
-		if(pchar.questTemp.BlueBird != "returnMoney")
+		if(sBBState != "returnMoney")
 		{
 			while (it < 7 && CheckAttribute(&TEMP[rnd], "LastNPC") && TEMP[rnd].LastNPC == arChr.id)
 			{
@@ -334,12 +356,16 @@ string SelectRumourEx(string key, aref arChr, int pin)	// Получить ра�
 		}
 		else // Квестовая проверка, чтобы подмена слуха "легкой добычи" на флейт осуществлялась в подходящем месте
 		{
-			bool IsFleutValid = !CheckAttribute(pchar, "questTemp.BlueBird.Island") && !HasSubStr(pchar.questTemp.BlueBird.Cities, arChr.city) 
-			&& sti(arChr.nation) != PIRATE && arChr.city != "Panama" && arChr.city != pchar.questTemp.BlueBird.LastCity; //Все условия для выдачи наводки
-			bool check_1 = true;
+			bool bNewCity = !CheckAttribute(pchar, "questTemp.BlueBird.Cities") || !HasSubStr(pchar.questTemp.BlueBird.Cities, arChr.city);
+			bool bNotLast = !CheckAttribute(pchar, "questTemp.BlueBird.LastCity") || arChr.city != pchar.questTemp.BlueBird.LastCity;
+			bool IsFleutValid = !CheckAttribute(pchar, "questTemp.BlueBird.Island") && bNewCity && sti(arChr.nation) != PIRATE && arChr.city != "Panama" && bNotLast; //Все условия для выдачи наводки
 			bool check_2, check_3;
-			if(TEMP[rnd].event != "MerchantOnMap"){ if(!CheckAttribute(&TEMP[rnd], "LastNPC") || TEMP[rnd].LastNPC != arChr.id) check_1 = false; }
-			while (it < 7 && check_1)
+
+			// > Раньше тут check_2/check_3 считались по текущему rnd, и только после этого rnd перебрасывался.
+			// > Выход из цикла означал, что проверен предыдущий слух, а использован будет новый, непроверенный.
+			// > Теперь проверяем текущий rnd и выходим, если он годен.
+
+			while (it < 7)
 			{
 				if(TEMP[rnd].event == "MerchantOnMap" && IsFleutValid)
 				{
@@ -351,7 +377,7 @@ string SelectRumourEx(string key, aref arChr, int pin)	// Получить ра�
 				}
 				check_2 = CheckAttribute(&TEMP[rnd], "event") && TEMP[rnd].event == "MerchantOnMap" && !IsFleutValid;
 				check_3 = CheckAttribute(&TEMP[rnd], "LastNPC") && TEMP[rnd].LastNPC == arChr.id;
-				check_1 = check_2 || check_3;
+				if (!check_2 && !check_3) break;	// > текущий rnd годится, берём его
 				rnd=rand(i - 1);
 				it++;
 			}
@@ -362,25 +388,38 @@ string SelectRumourEx(string key, aref arChr, int pin)	// Получить ра�
 			if (key == "LSC") return NoRumourTextLSC(rand(4));
 			else return NoRumourText(rand(SIMPLE_RUMOUR_NUM - 1));
 		}
-		pin = FindRumour(TEMP[rnd].id);
-		Rumour[pin].LastNPC = arChr.id;
+		int iRumId = sti(TEMP[rnd].id);
+		pin = FindRumour(iRumId);
+		if (pin != -1)
+		{
+			Rumour[pin].LastNPC = arChr.id;
+			if (CheckAttribute(&Rumour[pin], "group") && Rumour[pin].group == "CapBloodLine_Escape") AddNPCInRumourGroup(pin, GetCharacter(sti(arChr.index)));
+		}
 		//<-
-		
-		AddRumourLogInfo(TEMP[rnd].id);
-		if(TEMP[rnd].event != "MerchantOnMap" || pchar.questTemp.BlueBird != "returnMoney") SelectAction(&TEMP[rnd]); // если слух с действием, то выполняем
+
+		AddRumourLogInfo(iRumId);
+		if(TEMP[rnd].event != "MerchantOnMap" || sBBState != "returnMoney") SelectAction(&TEMP[rnd]); // если слух с действием, то выполняем
 		else
 		{
 			pchar.questTemp.BlueBird.City = arChr.city;
 			pchar.questTemp.BlueBird.LastCity = arChr.city;
 		}
-		st = TEMP[rnd].state;
+		st = sti(TEMP[rnd].state);
 
 		st--;  //n раз сказал и все!
-		makeref(CurrentRumour, Rumour[pin]);
-		CurrentRumour.state = st;
-		if(CheckAttribute(CurrentRumour, "special")) // Rosarak. Для генерации релевантных текстов
+		// > SelectAction() у слуха с продолжением делает DeleteRumor()+AddTemplRumour(), т.е. сдвигает очередь и старый id исчезает.
+		// > Прежний pin после этого указывал на чужой слух, и ему затирался .state.
+		// > Переискиваем по id.
+		pin = FindRumour(iRumId);
+		if (pin != -1)
 		{
-			switch(CurrentRumour.special)
+			makeref(CurrentRumour, Rumour[pin]);
+			CurrentRumour.state = st;
+		}
+		// > спец-текст берём из копии TEMP[rnd] (её и возвращаем), а не из слота очереди, который мог быть удалён/подменён выше
+		if(CheckAttribute(&TEMP[rnd], "special")) // Rosarak. Для генерации релевантных текстов
+		{
+			switch(TEMP[rnd].special)
 			{
 				case "Ascold":
 					sld = characterFromId(pchar.questTemp.Ascold.TraderId);
@@ -392,7 +431,7 @@ string SelectRumourEx(string key, aref arChr, int pin)	// Получить ра�
 				break;
 			}
 		}
-		if(TEMP[rnd].event == "MerchantOnMap" && pchar.questTemp.BlueBird == "returnMoney") return BlueBurd_setTradeShip();
+		if(TEMP[rnd].event == "MerchantOnMap" && sBBState == "returnMoney") return BlueBurd_setTradeShip();
 		return TEMP[rnd].text;
 
 	}
@@ -418,6 +457,7 @@ string SelectRumourExSpecial(string key, aref arChr, int pin)	// Получит�
 	ref CurrentRumour;
 	object TEMP[MAX_RUMOURS];
 	i = 0;
+	int iToday = DateToInt(0);
 	for(Rumour_Index = 0; Rumour_Index < MAX_RUMOURS; Rumour_Index++)
 	{
 		makeref(CurrentRumour, Rumour[Rumour_Index]);
@@ -425,9 +465,9 @@ string SelectRumourExSpecial(string key, aref arChr, int pin)	// Получит�
 		st =  CurrentRumour.state;
 
 		//15/09/06 homo теперь можно перечислять несколько типажей через запятую
-		if(HasSubStr(tip, key))  // слух только специальный 
+		if(HasSubStr(tip, key))  // слух только специальный
 		{
-			if (sti(CurrentRumour.actualtime) >= DateToInt(0) && st > 0 && CurrentRumour.text != "" )  // непросроченный
+			if (sti(CurrentRumour.actualtime) >= iToday && st > 0 && CurrentRumour.text != "" )  // непросроченный
 			{
 				// homo 03/09/06 fix В массив идут только валидные слухи!
 				if (RumourCheker(CurrentRumour, key, arChr))
@@ -462,16 +502,26 @@ string SelectRumourExSpecial(string key, aref arChr, int pin)	// Получит�
 			else
 				return NoRumourText(rand(SIMPLE_RUMOUR_NUM - 1));
 		}
-		pin = FindRumour(TEMP[rnd].id);
-		Rumour[pin].LastNPC = arChr.id;
+		int iRumId = sti(TEMP[rnd].id);
+		pin = FindRumour(iRumId);
+		if (pin != -1)
+		{
+			Rumour[pin].LastNPC = arChr.id;
+			if (CheckAttribute(&Rumour[pin], "group") && Rumour[pin].group == "CapBloodLine_Escape") AddNPCInRumourGroup(pin, GetCharacter(sti(arChr.index)));
+		}
 		//<-
-		AddRumourLogInfo(TEMP[rnd].id);
+		AddRumourLogInfo(iRumId);
 		SelectAction(&TEMP[rnd]); // если слух с действием, то выполняем
-		st = TEMP[rnd].state;
+		st = sti(TEMP[rnd].state);
 
 		st--;  //n раз сказал и все!
-		makeref(CurrentRumour, Rumour[pin]);
-		CurrentRumour.state = st;
+		// > SelectAction() мог удалить слух и сдвинуть очередь, нужно переискать индекс по id, иначе .state затирался бы у чужого слуха
+		pin = FindRumour(iRumId);
+		if (pin != -1)
+		{
+			makeref(CurrentRumour, Rumour[pin]);
+			CurrentRumour.state = st;
+		}
 		return TEMP[rnd].text;
 	}
 	if (key == "LSC")
@@ -690,8 +740,9 @@ void  ReplaceRumorR(int rep, ref rum)
 	{
 		makeref(CurRumour, Rumour[rep]);
 		rum.id = id_counter;
-		rum.starttime = DateToInt(sti(rum.starttime));
-		rum.actualtime = DateToInt(sti(rum.actualtime)+sti(rum.actualtime));
+		int iStartOfs = sti(rum.starttime);
+		rum.starttime = DateToInt(iStartOfs);
+		rum.actualtime = DateToInt(iStartOfs + sti(rum.actualtime));
 		CopyAttributes(CurRumour, rum);
 		id_counter++;
 	}
@@ -744,8 +795,8 @@ int AddSimpleRumour(string stext, int nation, int terms, int qty)
     tmp.state = qty;//кол-во раз
     tmp.tip = "all";
     tmp.rep = "none";
-	//10, 11, 12, 13 - исключить эти нации из слухов 
-	if (nation > 5) tmp.nonation = nation - 10;
+	//10, 11, 12, 13 - исключить эти нации из слухов
+	if (nation > 5) tmp.nonation.n1 = nation - 10; // > fix исключения нации
 	else tmp.onlynation = nation; //локализация
     tmp.starttime = 0;
     tmp.actualtime = terms; //сроки
@@ -822,10 +873,11 @@ int AddSimpleRumourTip(string stext, int terms, int qty, string Tip, string sEve
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 bool RumourHasInformation(string RumText)
 {
-	for(int i = 0; i < SIMPLE_RUMOUR_NUM - 1; i++)
+	// > Пропускался последний текст-пустышка и он засчитывался как настоящий слух (а тавернщик брал за него косарь)
+	for(int i = 0; i < SIMPLE_RUMOUR_NUM; i++)
 	{
 		if(RumText == NoRumourText(i)) return false;
-	}   
+	}
     return true;
 }
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -843,12 +895,16 @@ void AddNPCInRumourGroup(int iNum, ref chr)
 	if(iNum == -1) return;
 	if(CheckAttribute(&Rumour[iNum], "group"))
 	{
+		string sGroup = Rumour[iNum].group;
+		aref arGroup;
 		for(int i = 0; i < MAX_RUMOURS; i++)
 		{
-			if(CheckAttribute(&Rumour[i], "group") && Rumour[i].group == Rumour[iNum].group)
+			if(CheckAttribute(&Rumour[i], "group") && Rumour[i].group == sGroup)
 			{
-				if(!CheckAttribute(&Rumour[i], "group.npc")) Rumour[i].group.npc = chr.id;
-				else Rumour[i].group.npc = Rumour[i].group.npc + "," + chr.id;
+				makearef(arGroup, Rumour[i].group);
+				// > список мог начинаться с запятой (например, arGroup.npc = ",GenChar_22")
+				if(!CheckAttribute(arGroup, "npc") || arGroup.npc == "") arGroup.npc = chr.id;
+				else arGroup.npc = arGroup.npc + "," + chr.id;
 			}
 		}
 	}

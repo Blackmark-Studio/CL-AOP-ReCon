@@ -1,114 +1,114 @@
 PortRoyal_Tavern_1 {
-@<GetCityName>的所有小道消息都在这儿。你想打听点啥？
+@<GetCityName>的所有小道消息都在这儿。 你想打听点什么？ 
 }
 PortRoyal_Tavern_2 {
-我们刚才还在说这个呢，你大概忘了吧……
+我们刚才还在说这个呢， 你大概忘了吧…… 
 }
 PortRoyal_Tavern_3 {
-你今天已经第三次提这事了……
+你今天已经第三次提这事了…… 
 }
 PortRoyal_Tavern_4_m {
-你怎么老是重复一句话……
+你怎么老是重复一句话…… 
 }
 PortRoyal_Tavern_4_f {
-你怎么老是像鹦鹉一样重复同一句话……
+你怎么老是像鹦鹉一样重复同一句话…… 
 }
 PortRoyal_Tavern_5 {
-你知道吗，@<NPChar>，改天吧。
+你知道吗， @<NPChar>， 改天吧。 
 }
 PortRoyal_Tavern_6 {
-对了，我忘了点什么……
+对了， 我忘了点什么…… 
 }
 PortRoyal_Tavern_7 {
-是啊，真的，已经第三次了……
+是啊， 真的， 已经第三次了…… 
 }
 PortRoyal_Tavern_8 {
-是啊，行吧……
+是啊， 行吧…… 
 }
 PortRoyal_Tavern_9 {
-你说，这里的放贷人是什么样的人？
+你说， 这里的放贷人是什么样的人？ 
 }
 PortRoyal_Tavern_10 {
-我在哪能找到Captain Grey？我有重要的事要找他。
+我在哪能找到盖伊船长？ 我有重要的事要找他。 
 }
 PortRoyal_Tavern_11 {
-你知道去哪儿能找到François Gontier吗？
+你知道去哪儿能找到弗朗索瓦.贡蒂尔吗？ 
 }
 PortRoyal_Tavern_12 {
-放高利贷的就是放高利贷的，他们那帮人没一个好东西。
+放贷人的就是放高利贷的， 他们那帮人没一个好东西。 
 }
 PortRoyal_Tavern_13 {
-听说他有什么有趣的事吗？
+听说他有什么有趣的事吗？ 
 }
 PortRoyal_Tavern_14 {
-没啥特别的。
+没什么特别的。 
 }
 PortRoyal_Tavern_15 {
-那城里谁跟他熟？
+那城里谁跟他熟？ 
 }
 PortRoyal_Tavern_16 {
-他基本不跟谁说话，我也说不上什么。
+他基本不跟谁说话， 我也说不上什么。 
 }
 PortRoyal_Tavern_17 {
-那也还是谢谢你了。
+那也还是谢谢你了。 
 }
 PortRoyal_Tavern_18 {
-Captain Grey？这太简单了。他在我这儿租了个房间，今天还没出门，你肯定能在那儿找到他。
+盖伊船长？ 这太简单了。 他在我这儿租了个房间， 今天还没出门呢， 你肯定能在那儿找到他。 
 }
 PortRoyal_Tavern_19 {
-我该说的都说完了……
+我该说的都说完了…… 
 }
 PortRoyal_Tavern_20 {
-没什么好说的……
+没什么好说的…… 
 }
 PortRoyal_Tavern_21 {
-@<UpperFirst>，让我管好我自己的事！
+@<UpperFirst>， 让我管好我自己的事！ 
 }
 PortRoyal_Tavern_22 {
-谢了，伙计……
+谢了， 伙计…… 
 }
 PortRoyal_Tavern_23_m {
-明白了，抱歉……
+明白了， 抱歉…… 
 }
 PortRoyal_Tavern_23_f {
-明白了，抱歉……
+明白了， 抱歉…… 
 }
 PortRoyal_Tavern_24 {
-嗯，是啊……
+嗯， 是啊…… 
 }
 PortRoyal_Tavern_25 {
-行行行，抱歉啊，伙计……
+行行行， 抱歉啊， 伙计…… 
 }
 PortRoyal_Tavern_26 {
-一点头绪都没有，这名字俺还是头一回听说。
+一点头绪都没有， 这名字我还是头一回听说。 
 }
 PortRoyal_Tavern_27_m {
-你刚才已经问过这个问题了，我也回答过你了。
+你刚才已经问过这个问题了， 我也回答过你了。 
 }
 PortRoyal_Tavern_27_f {
-你刚才问过这个问题，我已经回答你了。
+你刚才问过这个问题， 我已经回答你了。 
 }
 PortRoyal_Tavern_28_m {
-我跟你说了，你已经问过Gontier这事了。
+我跟你说了， 你已经问过贡蒂尔这事了。 
 }
 PortRoyal_Tavern_28_f {
-我都跟你说了，你已经问过Gontier这事了。
+我都跟你说了， 你已经问过贡蒂尔这事了。 
 }
 PortRoyal_Tavern_29 {
-听着，闪开，别碍事！你是不是脑子进水了？
+听着， 闪开， 别碍事！ 你是不是脑子进水了？ 
 }
 PortRoyal_Tavern_30 {
-那咱们开始找吧。
+那咱们开始找吧。 
 }
 PortRoyal_Tavern_31 {
-嗯，是啊……
+嗯， 是啊…… 
 }
 PortRoyal_Tavern_32_m {
-对，没错，是我问的……
+对， 没错， 是我问的…… 
 }
 PortRoyal_Tavern_32_f {
-对，没错，她确实问过……
+对， 没错， 她确实问过…… 
 }
 PortRoyal_Tavern_33 {
-对不起，@<npchar>...
+对不起， @<npchar>...
 }

@@ -94,3 +94,31 @@ Let’s see. On that day, the following ships left port: the pinnace “Adelaide
 Villemstad_PortMan_29 {
 Thank you!
 }
+
+Villemstad_PortMan_30 {
+Could you tell me which ships flying the Spanish flag have been recorded here over the past week?
+}
+Villemstad_PortMan_31 {
+Ships under the Spanish flag, you say? There haven't been many.\nHere. The galleon 'Hernal Diaz', captained by Gabriel de Seguenza. Two merchant fluyts arrived from Porto Bello yesterday; both are registered to Andres Fonseca. And, of course, your '@<PChar>'.
+}
+Villemstad_PortMan_32 {
+Where did the galleon come from?
+}
+Villemstad_PortMan_33 {
+From Havana. But that is merely what my records say. No one was required to report the details of their route.
+}
+Villemstad_PortMan_34 {
+Do you happen to know anything about the passengers?
+}
+Villemstad_PortMan_35 {
+I am afraid that is all.
+}
+Villemstad_PortMan_36 {
+Yes, a pity.
+}
+Villemstad_PortMan_37 {
+You know, if you are looking for someone, try asking the local dock laborers. They speak with sailors arriving in port. During the day they are too busy to gossip, but in the evenings they often make camp right here on the shore.
+}
+Villemstad_PortMan_38 {
+Thank you.
+}

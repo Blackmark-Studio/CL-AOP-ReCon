@@ -1,30 +1,30 @@
 Charles_Citizen_1 {
-什么问题？
+有什么问题吗？ 
 }
 Charles_Citizen_2 {
-你想干什么？
+有什么需要帮忙的吗？  
 }
 Charles_Citizen_3 {
 @<RandPhraseSimple>
 }
 Charles_Citizen_4_m {
-我改主意了……
+我改主意了…… 
 }
 Charles_Citizen_4_f {
-我改变主意了……
+我改变主意了…… 
 }
 Charles_Citizen_5 {
-我现在没什么可说的。
+我现在没什么可说的。 
 }
 Charles_Citizen_6 {
 @<RandPhraseSimple>
 }
 Charles_Citizen_7 {
-难道我是在给@<NationNameGenitive>的秘密间谍组织打工吗？
+难道我是在给@<NationNameGenitive>的秘密间谍组织卖命吗？  
 }
 Charles_Citizen_8 {
-行吧……回头见。
+行吧…… 回头见。 
 }
 Charles_Citizen_9 {
-那我再问一个问题。
+那我再问一个问题。 
 }

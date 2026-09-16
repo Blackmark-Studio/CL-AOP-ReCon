@@ -1,39 +1,39 @@
 Cumana_Shipyard_1 {
-什么问题？
+什么问题？ 
 }
 Cumana_Shipyard_2 {
-你想干嘛？
+你想干嘛？ 
 }
 Cumana_Shipyard_3 {
 @<RandPhraseSimple>
 }
 Cumana_Shipyard_4 {
-前不久你还想问我个问题……
+前不久你还想问我个问题…… 
 }
 Cumana_Shipyard_5 {
-在我自己的船厂，甚至整个城里，我还真没见过这么一致好奇的人。
+在我自己的船坞， 甚至整个城里， 我还真没见过这么一致好奇的人。 
 }
 Cumana_Shipyard_6 {
-问这么多干嘛？俺就是造船的，咱们赶紧开始吧。
+问这么多干嘛？ 我就是造船的， 咱们赶紧开始吧。 
 }
 Cumana_Shipyard_7_m {
-我改主意了……
+我改主意了…… 
 }
 Cumana_Shipyard_7_f {
-我改变主意了……
+我改变主意了…… 
 }
 Cumana_Shipyard_8 {
-我现在没什么好说的。
+我现在没什么好说的。 
 }
 Cumana_Shipyard_9 {
 @<RandPhraseSimple>
 }
 Cumana_Shipyard_10 {
-唔，我这记性是越来越差了……
+唔， 我这记性是越来越差了…… 
 }
 Cumana_Shipyard_11 {
-嗯，不过……
+嗯， 不过…… 
 }
 Cumana_Shipyard_12 {
-咱们……
+咱们…… 
 }

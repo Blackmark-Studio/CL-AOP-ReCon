@@ -1018,3 +1018,58 @@ Vous avez tenu votre part du marché, je vais tenir la mienne. Voici votre argen
 Common_citizen_292 {
 Je vous en prie, @<GetAddress_FormToNPC>! Tous mes vœux.
 }
+
+Common_citizen_293 {
+Toute la ville ne parle aujourd’hui que d’une chose : la tentative manquée de s’emparer de notre colonie.
+}
+
+Common_citizen_294 {
+Non mais rendez-vous compte de leur audace : attaquer les fortifications de notre ville ! À quoi pouvaient-ils bien s’attendre ? À mon avis, cette aventure était vouée à l’échec dès l’instant où elle a germé dans l’esprit de celui qui l’a conçue.
+}
+
+Common_citizen_295 {
+Je l’avoue, lorsque les tirs ont commencé, j’ai été pris de panique.
+}
+
+Common_citizen_296 {
+@<TimeGreeting>, @<pchar.name>. Je suis très heureux de vous voir.
+}
+
+Common_citizen_297 {
+@<TimeGreeting>, @<pchar.name>. Je suis très heureuse de vous voir.
+}
+
+Common_citizen_298 {
+@<TimeGreeting>, @<npchar.name>. Je dois partir.
+}
+
+Common_citizen_299_m {
+@<TimeGreeting>, @<pchar> ! Je suis très heureux de vous voir. Quel temps magnifique pour une promenade !
+}
+Common_citizen_299_f {
+@<TimeGreeting>, @<pchar> ! Je suis très heureuse de vous voir. Quel temps magnifique pour une promenade !
+}
+Common_citizen_300 {
+Bonjour, @<npchar> ! Moi aussi, je suis ravie de vous voir.
+}
+Common_citizen_301 {
+Pardonnez-moi, mais je suis pressée, j'ai des affaires à régler.
+}
+Common_citizen_302 {
+Ah, Becky, Manuel ! Quelle joie de vous voir. Vous savez, nous appareillons enfin aujourd'hui.
+}
+Common_citizen_303 {
+Vous avez déjà terminé tous les préparatifs ?
+}
+Common_citizen_304 {
+Nos garçons se sont levés à quatre heures du matin pour ranger les coffres, et Lucia a cueilli toute une brassée de fleurs pour décorer la cabine.
+}
+Common_citizen_305 {
+Dites plutôt un bouquet, ce sera plus distingué.
+}
+Common_citizen_306 {
+Un bouquet, oui, et énorme, presque un balai... Tiens, ne serait-ce pas Miguel, là-bas ? Il faut que j'aille lui dire deux mots avant de partir. Je vous présente mes très humbles salutations.
+}
+Common_citizen_307 {
+Bon voyage.
+}

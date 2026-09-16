@@ -1,0 +1,51 @@
+Gibraltar_Church_1_m {
+¿Qué te preocupa, hijo mío?
+}
+Gibraltar_Church_1_f {
+¿Qué te preocupa, hija mía?
+}
+Gibraltar_Church_2 {
+Pregunta, te escucho...
+}
+Gibraltar_Church_3 {
+@<RandPhraseSimple>
+}
+Gibraltar_Church_4_m {
+Te escucho, habla, hijo…
+}
+Gibraltar_Church_4_f {
+Te escucho, habla, hija...
+}
+Gibraltar_Church_5_m {
+Y por tercera vez te lo digo, hijo: haz tu pregunta.
+}
+Gibraltar_Church_5_f {
+Y por tercera vez te lo digo, hija mía: haz tu pregunta.
+}
+Gibraltar_Church_6_m {
+Tantas obligaciones para un hombre de fe, y ahora también vienes a inquietarme, hijo mío...
+}
+Gibraltar_Church_6_f {
+Tantas obligaciones para un servidor de la iglesia, y ahora tú también vienes a inquietarme, hija mía...
+}
+Gibraltar_Church_7_m {
+He cambiado de opinión...
+}
+Gibraltar_Church_7_f {
+He cambiado de opinión...
+}
+Gibraltar_Church_8 {
+Ahora no, padre...
+}
+Gibraltar_Church_9 {
+@<RandPhraseSimple>
+}
+Gibraltar_Church_10 {
+Sí, todavía no hay mucho que decir...
+}
+Gibraltar_Church_11 {
+Lo haré, lo haré... Solo más tarde...
+}
+Gibraltar_Church_12 {
+Perdóname, Padre...
+}

@@ -1,0 +1,27 @@
+Free_Store_1 {
+I’m listening. Anything else?
+}
+Free_Store_2 {
+We were just talking about this. Forgotten already?
+}
+Free_Store_3 {
+That’s the third time today you’ve brought this up...
+}
+Free_Store_4 {
+This is a place for trading, not for chatter. Don’t keep me from my work!
+}
+Free_Store_5 {
+You know, @<NPChar>, maybe some other time.
+}
+Free_Store_6_m {
+Right, I did forget something...
+}
+Free_Store_6_f {
+Right, I did forget something...
+}
+Free_Store_7 {
+Yeah, third time’s the charm, all right...
+}
+Free_Store_8 {
+Hmm, I won’t...
+}

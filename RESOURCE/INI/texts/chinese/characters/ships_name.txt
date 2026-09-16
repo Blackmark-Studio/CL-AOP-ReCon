@@ -1,76 +1,76 @@
-ships_name_1 {Amphitrite,Concepción,El Sinor,San Miguel,Los Reyes,Los Anches,Cristóbal,Christopher}
-ships_name_2 {Argonauta,Arrogant,Asia,Señora,Del Coro,Santiago,Atrevida,Santísima,Trinidad}
-ships_name_3 {San Daniel,Bahama,San Cristobal,de la Nina,del Rosario,Conde de Regla}
-ships_name_4 {San Antonio,San Agustin,San Felipe,Apostol,San Fernando,San Jose,San Justo,San Leandro,Santa Agnes}
-ships_name_5 {Cinco Llagas,Esmeralda,del Juncal,Annunciation,Jesus Maria,Feliz,Phoenix,San Nicolas}
-ships_name_6 {Fuerte,Gallardo,Grune,Gloria,Angel Guardia,Santa Teresa,Saetia,Santa Cruz}
-ships_name_7 {San Juan,Batista,El Señor,San Miguel,Bien Sacedo,Infanta Anna,Purisma,Concepcion}
-ships_name_8 {Limeno,San Pedro,de la Fortuna,Santa Maria,Evangelist,Milagrosa,Peregrine}
-ships_name_9 {San Antonio,San Ignacio,San Francisco,Santa Anna,Santa Isabel,Jesus Maria,Jose,De la Antigua}
-ships_name_10 {Santiago,Baptista,San Gregorio,Soberano}
-ships_name_11 {Galicia,San Antonio,San Agustin,San Lucas,San Bruno,Santa Cristo,Maracaibo,Virgen,Pilar}
-ships_name_12 {San Carlos,San Marcos,San Esteban,San Fermin,San Fiorenzo,Principe,Asturias,San Pedro,El Grande}
-ships_name_13 {San Fulgencio,San Gabriel,San Gennaro,Los Angeles,Santo Domingo,de Polonia,La Muerte,Saint Joachim}
-ships_name_14 {San Jose,De Montegudo,San Jacinto,San Pedro,San Tomas,Agino}
-ships_name_15 {San Leandro,La Corona,La Preza,San Lorenzo,San Salvador,San Pablo,Santo Cristo,Burgos}
-ships_name_16 {Alcantara,Martir,San Rafael,San Romon,San Sebastian,San Ignacio}
-ships_name_17 {San Vincent,San Isidro,Santa Aqueda,Santa Anna,Santa Brigitta,Santa Catalina,San Jeronimo}
-ships_name_18 {Santa Casilda,Santa Cecilia,Santa Clara,La Visitación,Nuestra Señora,La Salutación,Virgen}
-ships_name_19 {San Nicolas,Santa Isabella,Santa Lucia,Santa Margarita,San Felipe}
-ships_name_20 {Santa Maria,Santa Magdalena,Santa Matilda,San Vicente,Ferrer,Almadena}
-ships_name_21 {Orfeo,Santa Rosolia,Santa Rufina,Santa Rosa,Carlos II,Santa Teresa,San Cristo,Burgos,San Felipe}
-ships_name_22 {San Martin,Puebla,Soberano,La Natividad,Nuestra,Begoña,Don Quixote,Sancho Panza,Dulcinea,Auronik,Hernán Cortés,Columbus,Pisos}
-ships_name_23 {Prince Royal,Rainbow,Saint Andrew,Triumph,Vanguard,Charles,Henrietta Maria,Paragon,James,Old James,Unicorn}
-ships_name_24 {Resolute,Naseby,Royal Charles,Dunbar,Henry,London,Richard,Royal James,Royal Prince,Royal Oak,Royal Katherine,Loyal London,Victory,Charles,Saint George}
-ships_name_25 {Ossor,Prince George,Duke,Britain,Albemarle,Blenheim,Princess Anne,Duchess,Windsor Castle,Vanguard,Royal James,Royal William,Royal Anne,Prince}
-ships_name_26 {Neptune,Full,Coronation,Arrow,Royal Sovereign,Asia,Queen,Victory,Union,Barfleur,Namur,Avenger,Triumph,Prince}
-ships_name_27 {Vanguard,Barfleur,Basilisk,Beagle,Bedford,Belize,Unity,Benbow,Berkeley,Berwick,Black Prince,Black Blanche,Blenheim}
-ships_name_28 {Bonnet,Garland,Brave,William Mills,Caledonia,Cutty Sark,Bristol,Britannia,Dreadnought,Howe,Trafalgar,Prince Regent,Royal Adelaide}
-ships_name_29 {Cambridge,Camilla,Antelope,Shallow,Leopard,Catherine,Gryphon,Lion,Mary,Speaker,Fortuna,Champion,Bonaventure,Charlotte,Charon,Fairfax,Marlborough}
-ships_name_30 {Worcester,Dunkirk,Essex,Tredagh,Resolution,Langport,Newbury,Revenge,Lima,Montagu,Gloucester,Bridgewater,Cornwallis,James,American,Bounty,London}
-ships_name_31 {Creole,Cressen,Lennox,Corona,Harwich,Resolute,Young Swan,Edgar,Monmouth,Silark,Defence,Rupert,Warspite,Monk,Dreadnought,Anne}
-ships_name_32 {Desperate,Restoration,Hope,Elizabeth,Barford,Grafton,Stirling Castle,James,Discovery,Dolphin,Pendennis,Breda,Dreadnought}
-ships_name_33 {Exeter,Dublin,Kent,Duncan,Edgar,Egmont,Suffolk,Elephant,Emerald,Enchantress,Endymion,Great Harry,Entreprenante,Golden Dragon,Torrington}
-ships_name_34 {Devonshire,Russell,Norfolk,Humber,Torbay,Lancaster,Dartshire,Mary Celeste,Endeavour,Fairy,Falcon,Winchester,Favorite,Deer,Yarmouth,St. George,Manchester}
-ships_name_35 {Spirit,Prosperity,Barford,Fury,Kent,Triumph,Vengeance,Orford,Somerset,Expedition,Susan Constant,Ark Royal,Sterling Castle,Glasgow}
-ships_name_36 {Confidence,Tiger,Adventure,Providence,Harpy,Swift,Arrogant,Hawk,Peril,Dreadful,Striker,Culloden,Saint Michael}
-ships_name_37 {Hero,Centurion,Portsmouth,Judith,Golden Hind,Victory,Illustrious,Implacable,Impregnable,Unyielding,Dauntless,Indomitable,Antelope}
-ships_name_38 {Diamond,Iris,Invincible,Isis,Jason,Ruby,Catherine,Kent,Resolution,Leopard,Leviathan,Royal Sovereign,Master of the Seas,Saint Andrew}
-ships_name_39 {Freedom,Lightning,Lion,Mary Rose,Sparrow,London,Lyra,Pelican,Magnificent,Majestic,Sussex,Jenny,Valiant,Vanguard,Disputant}
-ships_name_40 {Bristol,Pegasus,Pelican,Perseverance,Phoenix,Relentless,Cambridge,Oxford,Protector,Defender,Saint George,Prudent,Marston’s Marsh}
-ships_name_41 {Deptford,Nimble,Pearl,Prince William,Victory,Vigilant,Vengeance,Viper,Fox,Vosper,Wasp,William and Mary,Caledonia,Alexander,Kimberley}
-ships_name_42 {Elephant,Resistance,Retribution,Revenge,Seahorse,Badger,Lovestow,Might,Royalist,Serpent,Albemarle,Speedwell,Swift,Spencer,Susan,Hornblower}
-ships_name_43 {Mayflower,Tigress,Swallow,Swan,Swift,Resolute,Firebrand,Dreadful,Thames,Victor,Elizabeth,Dauntless,Unicorn,Ulysses,Yarmouth,Audacious}
-ships_name_44 {Ashates,Achille,Achilles,Annibal,Justine,Laton,Loire,Marseillais,Saint-Jean,La Trompeuse,La Garce,Bolontaire,Burgundy,Brave,Valor,Bucentaur}
-ships_name_45 {Artesien,Astrée,Auguste,Bayonnaise,Belleisle,Bordeaux Trade,Concorde,Trust,Crown,Soleil Royal,Protector,La Tactique,Dreadful}
-ships_name_46 {Formidable,La Pomone,Hawk,Fortuna,Foudroyant,Astrolabe,La Belle Poule,Guadeloupe,Warlike,Invincible,Imperial}
-ships_name_47 {Invincible,Butterfly,Patriot,Polette,Pegasus,Pearl,Provoyant,Protector,Defender,Cautious,Mighty,Saint-Germain,Resolía}
-ships_name_48 {Saint Esprit,Avenger,Crown,Queen,Braveheart,Vendôme,Victorious,Saint Philip,Royal Dauphin,Monarch,Royal Duke,Queen}
-ships_name_49 {Saint Michel,Seine,Vengeance,Lily,Paris,Royal Thérèse,Enray,Sovereign,Sun King,Sceptre,Magnanimous,Brave,Victorious,Marengo,Dreadful}
-ships_name_50 {Delightful,Independent,Magnificent,Victorious,Valiant,Monarch,Arrogant,Marvelous,Parisian Trade,Redoutable,Saint-Louis,Orient}
-ships_name_51 {Ambitious,Beautiful,Victor,Marvelous,Ambitious,Triumphant,Hercules,Loyal,Charente,Rivoli}
-ships_name_52 {Burgundy,Mountain,Ocean,East,People,Monarchy,Imperial,Montebello,Hero,Ruler,Fair,Unyielding,Victorious,Siren}
-ships_name_53 {Gemmap,Taj,Henry IV,Duguay-Trouin,Turenne,Valmy,The Famous,The Mighty,The Indivisible,Breeze,Saint Louis}
-ships_name_54 {People,Caton,East,Holy Reason,Languedoc,Antifederalist,Victoria,Crown,Auguste,Triumphant,Indomitable,Incomparable,Beautiful}
-ships_name_55 {Diamond,Ruby,Bourbon,Prince,Peerless,Frederick,Victorious,Magnificent,Valiant,Invincible,Neptune,Normandy,Princess,Triumphant}
-ships_name_56 {Blooming,Vermandois,Eclatant,Parfait,Superb,Indiaman,Proud One,Faucon,Saint Michel,The Proud,The Bold,The Faithful,Crescent,Courtier,Sprightly,Laurel}
-ships_name_57 {Luxurious,Beautiful,Henry,Ruby,Warlike,Lightning-fast,Proud,Royal Louis,Brittany,Invincible}
-ships_name_58 {Pluto,Valiant,Hermes,Avenger,Pelican,Pearl,Mocha,Pandora,Serpent,Mary Spark,Adventure,Dolphin,Golden Hind,Radiance,Darkness,Natalie}
-ships_name_59 {Pegasus,Swallow,Mayflower,Henry,King Jacques,Black Death,Lucky Hugh,Bloody Bill,Susan,Libertalia,Hispaniola,Bonaventure,Arabella,Clotho,Atropos,Lachesis,Vaiter,Destiny}
-ships_name_60 {Roaback,Jack’s Luck,Angel of the Night,Maine’s Terror,Sea Urchin,Fate’s Will,Phantom,Providence,Devil’s Eye,Verdict,Stormcaller,Shapeshifter}
-ships_name_61 {Black Prince,Demon,Demon of the Night,Hugh’s Monster,Bloody Feast,Nightmare,Predator,Golden Fortune,Sea Devil,Crown,Jolly Ham,Eye of the Abyss,Retribution,Furious,Mad Green}
-ships_name_62 {Jolly Deadman,Coquette Sue,Wicked Jest,Black Dog,Bell of Vengeance,Hurricane,White Shark,Whirlwind,Ubiquitous,Wheel of Fortune,Moloch,Devil’s Bride,Demure Lass,Sharpshooter}
-ships_name_63 {New World,Bad Girl,The Unexpected,Black Baron,Moray,Piranha,Dalila,Sea Demon,Myth,Black Dragon,Sea King,Goodwin,Cobra,Mad Morgan,Ollegon,Glaas,Spider,Blind Pew}
-ships_name_64 {Prophet,Grey Angel,Grey,Dandy Dude,Avadon,Shark,Black Diamond,Vassa,Green Stone,Freeze,Scout,Diamant,Sea Vixen,Fallen Angel,Starfish,Wolverine,Warrior,Lexa}
-ships_name_65 {Certain Death,Tease,Cannonball,Fortune’s Favorite,Mad Bill,Cutthroat,Soulcatcher,Dos Pirato,Bull,Cortés,Expius,Jerry,Fletcher Lind,Whisper,Milan,Fiend,Warham,Lepur}
-ships_name_66 {Kitty,Gorilla,The Reverend,Black Jack,King Arthur,Widowmaker,Stry,El Diablo,Encarnado,Gryphon,Edward I,Invincible,Misogynist,Retribution,Death to America}
-ships_name_67 {Moriaans Hoofd,Bruinvisch,Gelderland,Friesland,Hazevingt,Dolphin,Zeekalf,Prince Maurits,Prince Willem,Derfflinger,Roter Löwe,Vryheid,Waakzaamheid,Groene Draak,King Willem}
-ships_name_68 {Folen,Southern Province,Admiral Tjerk,Gegrundi Lieu,Kampel,Devrys,Dordrecht,Gelderland,Gelijcheit,Hercules,Hersteller,Holland,Neptunis,Emilia,Leidjent,Stad en Lande,Honslaarsdijk}
-ships_name_69 {Ostergo,Roter Luw,Emilia,Brederoe,Amsterdam,Overijssel,Pluto,Prins Frederik,Prins Maurits,Gouda,Rotterdam,Utrecht,Westphalia,Zeelandia,Meerman,Omlandia,Princess Louisa,Gorinchem,Steenbergen}
-ships_name_70 {Alkmaar,Vliegende Hert,Tonijn,Fetis,Salamander,Overijssel,Delft,Erfprins,Glenthuis,The Advancer,Alkmaar,Belft,Beschermheer,Brakel,Landskroon,Cornelia}
-ships_name_71 {Rotterdam,Arveprias,Nollande Twin,Derfflinger,Roter Löwe,Emilia,Gouda Leeuw,Friesland,Groene Draak,Medemblik,Neptunus,Belle Antoinette,Schrikkerwekker}
-ships_name_72 {Hoop,Prins Hendrik,Sampson,Swarten Bul,Derfflinger,Roter Löwe,Emilia,Fliegende Drack,Derfflinger,Roter Löwe,Emilia,Alcyon,Breda,Deventer}
-ships_name_73 {Sint Laurens,Omlandia,Middelburg,Bommel,Zierikzee,Walcheren,Bellona,Ter Goes,Dauphin,Meermin,Koning David,Gideon,Eendracht}
-ships_name_74 {Gekrunde Liefde,Achilles,Dauphin,Utrecht,Thetis,Gulden Dauphin,Maas,Waakzaamheid,Middelburg,Nassau,Witte Eenhoorn,Wapen van Hoorn,Zutphen,Groot Zutphen,Overijssel,Utrecht,Westkapelle,Gelderland,Catharina}
-ships_name_75 {Roskam,Rotterdam,Monnickendam,Vergulde Zon,Goyes,Groningen,Meermin,Vogelstruis,Zeelandia}
-ships_name_76 {Edam,Wopen van Edam,Haarlem,Monnickendam,Gulden Star,Bommel,Brederode,Enkhuizen,Leeuwarden,Nijmegen,Fazant,Elswoud,Leiden,Noord Holland,Domburg,Haas}
+ships_name_1 {安菲特里忒号,康塞普西翁号,埃尔西诺号,圣米格尔号,洛斯雷耶斯号,洛斯安切斯号,克里斯托瓦尔号,克里斯托弗号}
+ships_name_2 {阿尔戈诺塔号,傲慢号,亚洲号,塞尼奥拉号,德尔科罗号,圣地亚哥号,阿特雷维达号,至圣号,特里尼达号}
+ships_name_3 {圣丹尼尔号,巴哈马号,圣克里斯托瓦尔号,尼尼亚号,玫瑰圣母号,雷格拉伯爵号}
+ships_name_4 {圣安东尼奥号,圣奥古斯丁号,圣费利佩号,使徒号,圣费尔南多号,圣何塞号,圣胡斯托号,圣利安德罗号,圣艾格尼丝号}
+ships_name_5 {五伤号,埃斯梅拉达号,胡恩卡尔号,天使报喜号,耶稣玛利亚号,菲利斯号,凤凰号,圣巴托洛梅号}
+ships_name_6 {富埃尔特号,加拉多号,格鲁内号,格洛里亚号,守护天使号,圣特蕾莎号,赛蒂亚号,圣克鲁斯号}
+ships_name_7 {圣胡安号,巴蒂斯塔号,领主号,救世主号,比恩萨塞多号,安娜公主号,普利斯玛号,三位一体号}
+ships_name_8 {利梅诺号,圣佩德罗号,幸运号,卡斯蒂利亚号,福音传道者号,奇迹号,游隼号}
+ships_name_9 {圣安东尼奥号,圣伊格纳西奥号,圣弗朗西斯科号,圣安娜号,圣伊莎贝尔号,至圣三位一体号,何塞号,古老圣母号}
+ships_name_10 {圣地亚哥号,巴普蒂斯塔号,圣格雷戈里奥号,主宰者号}
+ships_name_11 {加利西亚号,征服者号,圣彼得号,圣卢卡斯号,圣布鲁诺号,圣基督号,马拉开波号,圣母号,皮拉尔号}
+ships_name_12 {圣卡洛斯号,圣马科斯号,圣埃斯特班号,圣费尔明号,圣菲奥伦佐号,王子号,阿斯图里亚斯号,圣佩德罗号,大埃尔号}
+ships_name_13 {圣富尔亨西奥号,圣加布里埃尔号,圣詹纳罗号,洛斯安赫莱斯号,圣多明哥号,波兰号,死亡号,圣约阿希姆号}
+ships_name_14 {圣何塞号,蒙特古多号,圣哈辛托号,安达卢西亚号,圣托马斯号,阿吉诺号}
+ships_name_15 {圣利安德罗号,皇冠号,普雷萨号,圣洛伦索号,圣萨尔瓦多号,圣巴勃罗号,圣基督号,布尔戈斯号}
+ships_name_16 {阿尔坎塔拉号,殉道者号,圣拉斐尔号,圣罗蒙号,圣塞巴斯蒂安号,圣菲利普号}
+ships_name_17 {圣文森特号,圣伊西德罗号,圣阿奎达号,施洗者号,圣布里吉塔号,圣卡塔琳娜号,圣杰罗尼莫号}
+ships_name_18 {圣卡西尔达号,圣塞西莉亚号,圣克拉拉号,圣母访亲号,女士母亲号,圣母领报号,处女号}
+ships_name_19 {圣尼古拉斯号,圣伊莎贝拉号,圣露西亚号,圣玛格丽塔号,圣费利佩号}
+ships_name_20 {圣玛丽亚号,圣马格达莱娜号,圣玛蒂尔达号,圣灵号,费雷尔号,阿尔马德纳号}
+ships_name_21 {俄耳甫斯号,圣罗索莉亚号,圣鲁菲娜号,圣罗莎号,卡洛斯二世号,荣誉号,圣基督号,圣尼古拉号,坎塔布里亚号}
+ships_name_22 {圣马丁号,普埃布拉号,主宰者号,耶稣降生号,努埃斯特拉号,贝戈尼亚号,堂吉诃德号,圣十字号,杜尔西内娅号,奥罗尼克号,科尔特斯号,哥伦布号,皮索斯号}
+ships_name_23 {皇太子号,彩虹号,圣安德鲁号,凯旋号,先锋号,查尔斯号,玛丽亚号,典范号,詹姆斯号,老詹姆斯号,独角兽号}
+ships_name_24 {汉尼拔号,内斯比号,皇家查尔斯号,丹巴尔号,亨利号,伦敦号,理查德号,皇家詹姆斯号,皇家王子号,皇家橡树号,皇家凯瑟琳号,忠诚伦敦号,吉莉花号,查尔斯号,圣乔治号}
+ships_name_25 {奥索尔号,乔治王子号,公爵号,不列颠号,阿尔伯马尔号,布伦海姆号,安妮公主号,公爵夫人号,温莎城堡号,查理号,皇家詹姆斯号,皇家威廉号,皇家安妮号,王子号}
+ships_name_26 {海王星号,全盛号,加冕号,箭号,皇家主权号,亚洲号,女王号,胜利号,联合号,金狮号,纳穆尔号,复仇者号,百合号,王子号}
+ships_name_27 {先锋号,巴夫勒尔号,巴西利斯克号,小猎犬号,贝德福德号,伯利兹号,统一号,本鲍号,伯克利号,贝里克号,黑王子号,黑布兰奇号,布伦海姆号}
+ships_name_28 {博内特号,花环号,勇敢号,米尔斯号,可畏号,卡蒂萨克号,蔷薇丛号,不列颠尼亚号,无畏号,豪号,特拉法尔加号,摄政王号,皇家阿德莱德号}
+ships_name_29 {剑桥号,卡米拉号,羚羊号,浅滩号,豹号,凯瑟琳号,狮鹫号,狮子号,玛丽号,议长号,财富号,冠军号,好运号,夏洛特号,卡戎号,费尔法克斯号,马尔博罗号}
+ships_name_30 {伍斯特号,敦刻尔克号,埃塞克斯号,特雷达号,决断号,兰波特号,纽伯里号,露丝号,利马号,蒙塔古号,格洛斯特号,布里奇沃特号,康沃利斯号,贵妇号,美利坚号,邦蒂号,少女号}
+ships_name_31 {克里奥尔号,克雷森号,伦诺克斯号,日冕号,哈威奇号,郁金香号,幼天鹅号,仁爱号,蒙茅斯号,西拉克号,防御号,鲁珀特号,厌战号,僧侣号,公主号,安妮号}
+ships_name_32 {绝望号,复兴号,希望号,伊丽莎白号,温斯比号,格拉夫顿号,斯图林城堡号,本杰明号,发现号,海豚号,彭登尼斯号,布雷达号,无畏号}
+ships_name_33 {埃克塞特号,都柏林号,星辰号,邓肯号,埃德加号,埃格蒙特号,萨福克号,大象号,翡翠号,迷人号,恩底弥翁号,大亨利号,进取号,金龙号,托灵顿号}
+ships_name_34 {德文郡号,罗素号,诺福克号,亨伯号,托贝号,兰开斯特号,达特郡号,燕子号,奋进号,仙女号,猎鹰号,温彻斯特号,最爱号,鹿号,雅茅斯号,圣乔治号,曼彻斯特号}
+ships_name_35 {精神号,繁荣号,巴福德号,狂怒号,孔雀号,凯旋号,友爱号,奥福德号,萨默塞特号,探险号,康斯坦特号,皇家方舟号,斯特林城堡号,格拉斯哥号}
+ships_name_36 {信心号,老虎号,冒险号,天命号,哈耳庇厄号,敏捷号,傲慢号,鹰号,危险号,统领号,打击者号,库洛登号,圣米格尔号}
+ships_name_37 {英雄号,百夫长号,朴次茅斯号,朱迪思号,金鹿号,金鸽号,显赫号,难解难分号,坚不可摧号,不屈号,无畏号,不挠号,查理二世号}
+ships_name_38 {钻石号,艾里斯号,无敌号,伊西斯号,伊阿宋号,斯卡伯勒号,玫瑰号,肯特号,决断号,美人鱼号,利维坦号,皇家主权号,海洋主宰号,圣安德鲁号}
+ships_name_39 {自由号,闪电号,夜莺号,玛丽罗斯号,麻雀号,伦敦号,天琴号,鹈鹕号,宏伟号,雄伟号,萨塞克斯号,珍妮号,英勇号,先锋号,争辩者号}
+ships_name_40 {布里斯托尔号,珀伽索斯号,鹈鹕号,毅力号,凤凰号,不懈号,伯福德号,牛津号,保护者号,防御者号,圣乔治号,审慎号,马斯顿沼泽号}
+ships_name_41 {特福德号,敏捷号,珍珠号,威廉王子号,胜利号,警惕号,德雷克号,毒蛇号,狐狸号,沃斯珀号,黄蜂号,威廉与玛丽号,巨龙号,亚历山大号,金伯利号}
+ships_name_42 {大象号,抵抗号,惩罚号,复仇号,海马号,獾号,洛夫斯托号,力量号,保皇党号,巨蛇号,雄鹿号,快意号,敏捷号,斯宾塞号,苏珊号,霍恩布洛尔号}
+ships_name_43 {五月花号,母虎号,燕子号,天鹅号,敏捷号,果敢号,火标枪号,恐怖号,泰晤士号,胜利者号,伊丽莎白号,红宝石号,蓝宝石号,独角兽号,尤利西斯号,雅茅斯号}
+ships_name_44 {阿沙特斯号,阿基里斯号,阿喀琉斯号,安尼巴尔号,勒阿弗尔号,雷顿号,卢瓦尔号,马赛号,圣让号,欺诈者号,悍妇号,志愿者号,勃艮第号,勇敢号,英勇号,布森托尔号}
+ships_name_45 {马赛号,巴黎号,布雷斯特号,巴约讷号,贝莱尔号,波尔多号,康科德号,信任号,水仙女号,皇家太阳号,保护者号,战术号,恐怖号}
+ships_name_46 {强大号,波莫纳号,鹰号,财富号,雷鸣号,星盘号,美丽胡子号,瓜德罗普号,诺亚方舟号,无敌号,帝国号}
+ships_name_47 {可爱号,蝴蝶号,爱国者号,波莱特号,珀伽索斯号,珍珠号,远见号,保护者号,防御者号,审慎号,彩虹号,圣日耳曼号,雷索利亚号}
+ships_name_48 {圣埃斯普里号,复仇者号,王冠号,女王号,勇敢之心号,旺多姆号,法兰西号,告捷号,皇家道芬号,君主号,皇家公爵号,女王号}
+ships_name_49 {圣米歇尔号,塞纳号,复仇号,百合号,安特卫普号,皇家特蕾莎号,恩雷号,主权号,太阳王号,权杖号,宽宏号,勇敢号,雄狮号,马伦戈号,恐怖号}
+ships_name_50 {愉快号,独立号,王冠号,惊奇号,月亮号,君主号,傲慢号,奇迹号,巴黎贸易号,新喀里多尼亚号,翠鸟号,东方号}
+ships_name_51 {雄心号,红衣主教号,胜利者号,克里斯蒂娜号,壮志号,凯旋号,赫拉克勒斯号,棕榈号,夏朗德号,里沃利号}
+ships_name_52 {勃艮第号,童话号,海洋号,玛德莱娜号,人民号,君主制号,帝国号,蒙特贝罗号,英雄号,统治者号,公平号,不屈号,皇女号,塞壬号}
+ships_name_53 {热马普号,泰姬号,亨利四世号,王家公爵号,蒂雷纳号,瓦尔密号,名望号,强力号,不可分割号,微风号,圣路易斯号}
+ships_name_54 {民众号,加图号,东方号,神圣理性号,朗格多克号,反联邦主义者号,维多利亚号,勒阿弗尔号,和善号,必胜号,不挠号,无双号,美丽号}
+ships_name_55 {钻石号,松鼠号,波旁号,王子号,无匹号,腓特烈号,胜利号,宏伟号,英勇号,伯爵号,海王星号,诺曼底号,公主号,巨蛇号}
+ships_name_56 {繁花号,贝尔芒多瓦号,辉煌号,完美号,卓越号,东印度人号,傲慢者号,猎鹰号,南特号,自豪号,大胆号,忠诚号,新月号,侍臣号,活泼号,月桂号}
+ships_name_57 {奢华号,美丽号,亨利号,红宝石号,好战号,神速号,美杜莎号,皇家路易号,布列塔尼号,狡黠号}
+ships_name_58 {冥王星号,英勇号,赫尔墨斯号,复仇号,鹈鹕号,珍珠号,摩卡号,潘多拉号,巨蛇号,玛丽火花号,冒险号,海豚号,金鹿号,光辉号,黑暗号,娜塔莉号}
+ships_name_59 {梦魇号,燕子号,五月花号,亨利号,雅克国王号,暗夜死神号,虚幻号,血腥比尔号,苏珊号,公主号,黛丽拉号,好运号,狼獾号,屠戮者号,飓风号,三叉戟号,潘多拉号,宿命号}
+ships_name_60 {地狱号,幸运杰克号,暗夜天使号,大陆恐惧号,海胆号,黑死病号,幻影号,天命号,恶魔之眼号,裁决号,唤风者号,魅魔号}
+ships_name_61 {黑王子号,恶魔号,暗夜恶魔号,怪物休号,血宴号,噩梦号,掠食者号,黄金财富号,海魔号,王冠号,快乐吉姆号,深渊之眼号,惩罚号,狂怒号,疯狂绿色号}
+ships_name_62 {快乐死者号,安妮女王复仇号,邪恶玩笑号,黑狗号,复仇之钟号,飓风号,大白鲨号,旋风号,无所不在号,幸运轮盘号,游骑兵号,恶魔新娘号,端庄少女号,神枪手号}
+ships_name_63 {新世界号,坏女孩号,意外号,黑色男爵号,海鳝号,食人鱼号,达莉拉号,海妖号,神话号,黑龙号,海王号,古德温号,眼镜蛇号,疯狂摩根号,奥列贡号,夜之天使号,蜘蛛号,盲眼普尤号}
+ships_name_64 {先知号,灰色天使号,海蟒号,风流号,海蛇号,鲨鱼号,女巫号,瓦萨号,绿石号,冰封号,侦察兵号,迪亚曼特号,海狐号,堕落天使号,海星号,狼獾号,战士号,莱克萨号}
+ships_name_65 {死神号,戏弄号,咒怨号,命运宠儿号,疯狂比尔号,割喉者号,摄魂者号,多斯海盗号,公牛号,海巫号,北风号,杰里号,恶棍号,低语号,米兰号,魔鬼号,战锤号,荡妇号}
+ships_name_66 {凯蒂号,毒蛇号,牧师号,黑杰克号,亚瑟王号,寡妇制造者号,猎犬号,单身快乐号,堕天使号,狮鹫号,爱德华一世号,老罗杰号,厌女者号,报应号,美州死神号}
+ships_name_67 {奥兰治号,鼠海豚号,乌德勒支号,弗里兰号,海牙号,海豚号,海豹号,毛里茨王子号,威廉王子号,拿骚之徽号,代夫特号,大弗里西亚号,警惕号,绿龙号,威廉国王号}
+ships_name_68 {弗伦号,南方省号,特杰克上将号,七省号,坎佩尔号,德弗里斯号,多德雷赫特号,海尔德兰号,平等号,赫拉克勒斯号,修复者号,荷兰号,海王星号,奥德多普号,莱登特号,金海豚号,洪斯拉尔斯代克号}
+ships_name_69 {奥斯特戈号,红卢号,自由号,威廉号,阿姆斯特丹号,弗利辛恩号,冥王星号,弗雷德里克王子号,橡树号,协和号,海尔德号,布雷德罗德号,威斯特伐利亚号,巴达维亚号,人鱼号,欧姆兰迪亚号,露易丝公主号,伦内瑟号,尼德兰号}
+ships_name_70 {阿尔克马尔号,飞行雄鹿号,金枪鱼号,费提斯号,蝾螈号,上艾瑟尔号,代尔夫特号,世袭王子号,金狮号,前进者号,金海马号,贝尔夫特号,守护者号,布拉克尔号,兰斯克隆号,科妮莉亚号}
+ships_name_71 {鹿特丹号,胡斯号,荷兰双子号,奥兰治亲王号,红狮号,联合省号,豪达之狮号,弗里兰号,绿龙号,梅登布利克号,白羔羊号,威廉亲王号,惊悚号}
+ships_name_72 {希望号,亨德里克王子号,海鸥号,黑牛号,亨德里克伯爵号,郁金香号,艾米莉亚号,飞龙号,德弗林格号,巴达维亚号,泽兰迪亚号,翠鸟号,布雷达号,代芬特尔号}
+ships_name_73 {圣劳伦斯号,欧姆兰迪亚号,米德尔堡号,圣若望号,齐里克泽号,瓦尔赫伦号,贝罗纳号,维特号,海象号,人鱼号,大卫王号,基甸号,团结号}
+ships_name_74 {皇冠之爱号,阿喀琉斯号,王储号,玛丽亚号,忒提斯号,黄金王储号,马斯号,警惕号,蒙尼肯丹号,拿骚号,白独角兽号,霍恩纹章号,聚特芬号,大聚特芬号,天使弥额尔号,乌得勒支号,威斯特卡佩勒号,海尔德兰号,卡塔琳娜号}
+ships_name_75 {罗斯卡姆号,泽兰之徽号,莫尼肯丹号,镀金太阳号,戈耶斯号,格罗宁根号,人鱼号,鸵鸟号,西兰号}
+ships_name_76 {埃丹号,埃丹纹章号,哈勒姆号,荷兰玫瑰经号,黄金之星号,博梅尔号,布雷德罗号,恩克赫伊曾号,吕伐登号,奈梅亨号,野雉号,埃尔斯伍德号,莱顿号,北荷兰号,多姆堡号,哈斯号}

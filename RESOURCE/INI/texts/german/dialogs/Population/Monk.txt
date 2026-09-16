@@ -508,3 +508,6 @@ Ich versuche, Geld für Nahrung und Kleidung für die ärmsten Bewohner unserer 
 Monk_133 {
 Ich beabsichtige, eine Missionsreise ins Inselinnere zu unternehmen, um den verlorenen Seelen unter den Einheimischen das Licht zu bringen, und sammle Spenden, um die Expedition zu organisieren. Möchten Sie dieses edle Vorhaben unterstützen?
 }
+Monk_134 {
+@<TimeGreeting>, Vater. Ich muss gehen.
+}

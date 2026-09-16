@@ -1325,10 +1325,11 @@ int LocationInitTrinidad(int n)
 	locations[n].id.label = "Shore59";
 	locations[n].filespath.models = "locations\Outside\Shores\Grotto";
 	locations[n].Chestgennot = true; // не генерить сундуки
+	locations[n].onUninhabitedIsland = true;
 	locations[n].image = "loading\outside\harbor.tga";
 	//Sound
 	locations[n].type = "seashore";
- 	locations[n].islandId = "Trinidad";
+ 	locations[n].islandId = "Tobago";
 	//Models
 	//Always
 	locations[n].models.always.town = "Grotto";
@@ -1359,15 +1360,231 @@ int LocationInitTrinidad(int n)
 	//Environment
 	locations[n].environment.weather = "true";
 	locations[n].environment.sea = "true";
-
+	//Reload map
 	locations[n].reload.l1.name = "boat";
 	locations[n].reload.l1.go = "Trinidad";
 	locations[n].reload.l1.emerge = "reload_2";
 	locations[n].reload.l1.autoreload = "0";
 	locations[n].reload.l1.label = "Sea";
 	locations[n].locators_radius.reload.boat = 9.0;
+
+	locations[n].reload.l2.name = "reload2_back";
+	locations[n].reload.l2.go = "Tobago_Jungle_01";
+	locations[n].reload.l2.emerge = "reload1";
+	locations[n].reload.l2.autoreload = "0";
+	locations[n].reload.l2.label = "Jungle";
+	locations[n].locators_radius.reload.reload1_back = 2;
 	n = n + 1;
 
+
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	// Джунгли перед подходом к дому
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	locations[n].id = "Tobago_Jungle_01";
+	locations[n].id.label = "Jungle";
+	locations[n].image = "loading\outside\jungle.tga";
+	//Sound
+	locations[n].type = "jungle";
+	locations[n].islandId = "Tobago";
+	//locations[n].islandIdAreal = "Tobago";
+	//locations[n].Realm = "Tobago"; //TODO потом добавить ареал или реалм на Тобаго
+	//locations[n].DisableEncounters = true;
+	locations[n].onUninhabitedIsland = true;
+	//Models
+	locations[n].filespath.models = "locations\Outside\Jungles\Jungle6";
+	//Always
+	Locations[n].models.always.jungle = "jungle6";
+	Locations[n].models.always.locators = "jungle6_locators";
+	Locations[n].models.always.grassPatch = "jungle6_grass";
+	Locations[n].models.always.grassPatch.texture = "grass\grassshore.tga.tx";
+	Locations[n].models.always.l1 = "plan1";
+	Locations[n].models.always.l1.level = 9;
+	Locations[n].models.always.l1.tech = "LocationModelBlend";
+	Locations[n].models.always.l2 = "plan2";
+	Locations[n].models.always.l2.level = 8;
+	Locations[n].models.always.l2.tech = "LocationModelBlend";
+	Locations[n].models.always.l3 = "plan3";
+	Locations[n].models.always.l3.level = 7;
+	Locations[n].models.always.l3.tech = "LocationModelBlend";
+	//Day
+	locations[n].models.day.charactersPatch = "jungle6_patch";
+	//Night
+	locations[n].models.night.charactersPatch = "jungle6_patch";
+	//Environment
+	locations[n].environment.weather = "true";
+	locations[n].environment.sea = "false";
+	//Reload map
+	locations[n].reload.l1.name = "reload1_back";
+	locations[n].reload.l1.go = "Shore59";
+	locations[n].reload.l1.emerge = "reload2";
+	locations[n].reload.l1.autoreload = "1";
+	locations[n].reload.l1.label = "Jungle";
+	locations[n].locators_radius.reload.reload1_back = 2;
+
+	locations[n].reload.l2.name = "reload2_back";
+	locations[n].reload.l2.go = "Tobago_Ruins";
+	locations[n].reload.l2.emerge = "reload1";
+	locations[n].reload.l2.autoreload = "1";
+	locations[n].reload.l2.label = "Jungle";
+	locations[n].locators_radius.reload.reload2_back = 2;
+
+	locations[n].reload.l3.name = "reload3_back";
+	locations[n].reload.l3.go = "Tobago_JungleHouse";
+	locations[n].reload.l3.emerge = "reload1";
+	locations[n].reload.l3.autoreload = "1";
+	locations[n].reload.l3.label = "Jungle";
+	locations[n].locators_radius.reload.reload3_back = 2;
+
+	n = n + 1;
+
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	// Укрытие охотника рядом с домом
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	locations[n].id = "Tobago_JungleHouse";
+	locations[n].id.label = "jungle";
+	locations[n].image = "loading\outside\jungle.tga";
+	//Sound
+	locations[n].islandId = "Tobago";
+	//locations[n].islandIdAreal = "Tobago";
+	//locations[n].Realm = "Tobago"; //TODO потом добавить ареал или реалм на Тобаго
+	locations[n].type = "jungle";
+	locations[n].DisableEncounters = true;
+	locations[n].onUninhabitedIsland = true;
+	//Models
+	Locations[n].filespath.models = "locations\Outside\OutRHouse";
+	//Always
+	Locations[n].models.always.house = "RHouse";
+	Locations[n].models.always.house.tech = "DLightModel";
+	Locations[n].models.always.grassPatch = "rhouse_g";
+	Locations[n].models.always.l1 = "rhouse_b01";
+	Locations[n].models.always.l1.level = 9;
+	Locations[n].models.always.l1.tech = "LocationModelBlend";
+	Locations[n].models.always.l2 = "rhouse_b02";
+	Locations[n].models.always.l2.level = 8;
+	Locations[n].models.always.l2.tech = "LocationModelBlend";
+	Locations[n].models.always.l3 = "rhouse_b03";
+	Locations[n].models.always.l3.level = 7;
+	Locations[n].models.always.l3.tech = "LocationModelBlend";
+	Locations[n].models.always.l4 = "rhouse_b04";
+	Locations[n].models.always.l4.level = 7;
+	Locations[n].models.always.l4.tech = "LocationModelBlend";
+	Locations[n].models.always.locators = "rhouse_l";
+
+	Locations[n].models.always.grassPatch = "rhouse_g";
+	Locations[n].models.always.grassPatch.texture = "grass\grassshore.tga.tx";
+	//Day
+	Locations[n].models.day.charactersPatch = "rhouse_p";
+	//Night
+	Locations[n].models.night.charactersPatch = "rhouse_p";
+	//Environment
+	Locations[n].environment.weather = "true";
+	Locations[n].environment.sea = "false";
+	//Reload map
+	locations[n].reload.l1.name = "reload2_back";
+	locations[n].reload.l1.go = "Rimalier_House";
+	locations[n].reload.l1.emerge = "reload1";
+	locations[n].reload.l1.autoreload = "0";
+	locations[n].reload.l1.label = "House";
+	locations[n].locators_radius.reload.reload2_back = 1.2;
+
+	locations[n].reload.l2.name = "reload1_back";
+	locations[n].reload.l2.go = "Tobago_Jungle_01";
+	locations[n].reload.l2.emerge = "reload3";
+	locations[n].reload.l2.autoreload = "1";
+	locations[n].reload.l2.label = "Jungle";
+	locations[n].locators_radius.reload.reload1_back = 3.2;
+	n = n + 1;
+
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	// Маленький домик
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	locations[n].id = "Rimalier_House";
+	locations[n].id.label = "House";
+	locations[n].image = "loading\inside\SmallHouse_inside.tga";
+	locations[n].islandId = "Tobago";
+	//locations[n].islandIdAreal = "Tobago";
+	//locations[n].Realm = "Tobago"; //TODO потом добавить ареал или реалм на Тобаго
+	//Town sack
+	locations[n].lockWeather = "Inside";
+	//Sound
+	locations[n].type = "House";
+	//Models
+	locations[n].filespath.models = "locations\inside\SmallHouse_inside\";
+	//Always
+	locations[n].models.always.SmallHouse = "SmallHouse_inside";
+	//locations[n].models.always.SmallHouse.level = 65538;
+	Locations[n].models.always.windows = "SmallHouse_inside_windows";
+	Locations[n].models.always.windows.tech = "LocationWindows";
+	locations[n].models.always.windows.level = 65539;
+
+	locations[n].models.always.back = "..\inside_back2";
+	//Day
+	locations[n].models.day.charactersPatch = "SmallHouse_inside_patch";
+	locations[n].models.day.locators = "SmallHouse_inside_ld";
+	//Night
+	locations[n].models.night.charactersPatch = "SmallHouse_inside_patch";
+	locations[n].models.night.locators = "SmallHouse_inside_ln";
+	//Environment
+	locations[n].environment.weather = "true";
+	locations[n].environment.sea = "false";
+	//Reload map
+	Locations[n].reload.l1.name = "reload1";
+	locations[n].reload.l1.go = "Tobago_JungleHouse";
+	locations[n].reload.l1.emerge = "reload2_back";
+	locations[n].reload.l1.autoreload = "0";
+	locations[n].reload.l1.label = "jungle";
+	n = n + 1;
+
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	// Руины в джунглях
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	locations[n].id = "Tobago_Ruins";
+	locations[n].id.label = "Jungle";
+	locations[n].image = "loading\outside\jungle.tga";
+	locations[n].islandId = "Tobago";
+	//locations[n].islandIdAreal = "Tobago";
+	//locations[n].Realm = "Tobago"; //TODO потом добавить ареал или реалм на Тобаго
+	//Sound
+	locations[n].type = "jungle";
+	//Models
+	locations[n].filespath.models = "locations\Outside\Ruins";
+	//Always
+	Locations[n].models.always.ruins1 = "ruins1";
+	Locations[n].models.always.locators = "ruins1_locators";
+
+	Locations[n].models.always.grassPatch = "ruins1_grass";
+	Locations[n].models.always.grassPatch.texture = "grass\grassshore.tga.tx";
+
+	locations[n].models.always.ruins1_blockade = "ruins1_blockade";
+	Locations[n].models.always.ruins1_blockade.locator.group = "Upgrades";
+	Locations[n].models.always.ruins1_blockade.locator.name = "ruins1_blockade";
+	Locations[n].models.always.ruins1_blockade.tech = "DLightModel";
+
+	Locations[n].models.always.l1 = "plan1";
+	Locations[n].models.always.l1.level = 9;
+	Locations[n].models.always.l1.tech = "DLightModel";
+	Locations[n].models.always.l2 = "plan2";
+	Locations[n].models.always.l2.level = 8;
+	Locations[n].models.always.l2.tech = "DLightModel";
+	Locations[n].models.always.l3 = "plan3";
+	Locations[n].models.always.l3.level = 7;
+	Locations[n].models.always.l3.tech = "DLightModel";
+
+	//Day
+	locations[n].models.day.charactersPatch = "ruins1_patch";
+	//Night
+	locations[n].models.night.charactersPatch = "ruins1_patch";
+	//Environment
+	locations[n].environment.weather = "true";
+	locations[n].environment.sea = "false";
+	//Reload map
+	locations[n].reload.l1.name = "reload1_back";
+	locations[n].reload.l1.go = "Tobago_Jungle_01";
+	locations[n].reload.l1.emerge = "reload2";
+	locations[n].reload.l1.autoreload = "1";
+	locations[n].reload.l1.label = "Jungle";
+	locations[n].locators_radius.reload.reload1_back = 2;
+	n = n + 1;
 
 	return n;
 }

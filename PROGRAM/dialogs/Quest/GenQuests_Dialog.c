@@ -12,7 +12,7 @@ void ProcessDialogEvent()
 	ref rItem, rChar, sld, MerPrm;
 	aref arTemp1, arTemp2;
 	bool bOk;
-	int iBanditsCount, i, iMoney, iNation, iTemp, iGoods;
+	int iBanditsCount, i, iMoney, iNation, iTemp;
 	string sTitle, sGroup, sTemp, sText;
 	float locx, locy, locz;
 
@@ -190,7 +190,8 @@ void ProcessDialogEvent()
 			{
 				TEV.ContraRepCheck = ""; //чтоб в отдельную ноду не выносить
 				sTemp = "JusticeOnSale_Jungle_";
-				for (i = 0; i < 4; i++)
+				iTemp = GetGenQuestData("JusticeOnSale.EncQty");
+				for (i = 0; i < iTemp; i++)
 				{
 					if (GetCharacterIndex(sTemp + i) == -1) continue;
 					sld = CharacterFromID(sTemp + i);
@@ -976,6 +977,7 @@ void ProcessDialogEvent()
 			AddQuestRecord("ShipWrecked", "16");
 			AddQuestUserData("ShipWrecked", "ShoreName", UpperFirst(XI_ConvertString(pchar.location + "Gen"))); // belamour gen
 			AddQuestUserData("ShipWrecked", "sName", pchar.GenQuest.ShipWreck.Name);
+			AddQuestUserData("ShipWrecked", "sSex", GetSexPhrase("", "а"));
 			AddQuestUserData("ShipWrecked", "count",  FindSailorString(sti(pchar.GenQuest.ShipWreck.Qty), "No"));
 			AddQuestUserData("ShipWrecked", "sBadName", pchar.GenQuest.ShipWreck.BadName);
 			AddQuestUserData("ShipWrecked", "ShipName", pchar.GenQuest.ShipWreck.ShipTypeName);
@@ -1662,7 +1664,7 @@ void ProcessDialogEvent()
 			LAi_LockFightMode(pchar, false);
 			LAi_SetFightMode(pchar, true);
 			chrDisableReloadToLocation = true;
-			iTemp = sti(PChar.GenQuest.Convict.ConvictQty);
+			iTemp = GetGenQuestData("Convict.ConvictQty");
 			for (i = 0; i < iTemp; i++)
 			{
 				rChar = CharacterFromID("Convict_" + i);
@@ -1749,7 +1751,8 @@ void ProcessDialogEvent()
 			AddQuestRecord("Convict", "3");
 			AddQuestUserData("Convict", "sSex", GetSexPhrase("", "а"));
 			CloseQuestHeader("Convict");
-			for (i = 0; i < sti(pchar.GenQuest.Convict.ConvictQty); i++)
+			iTemp = GetGenQuestData("Convict.ConvictQty");
+			for (i = 0; i < iTemp; i++)
 			{
 				sld = CharacterFromID("Convict_" + i);
 				sld.LifeDay = 0;
@@ -1890,7 +1893,8 @@ void ProcessDialogEvent()
 			SetFunctionExitFromLocationCondition("Convict_LocExit", pchar.location, false);
 			DialogExit();
 			AddDialogExitQuest("OpenTheDoors");
-			for (i = 0; i < sti(pchar.GenQuest.Convict.ConvictQty); i++)
+			iTemp = GetGenQuestData("Convict.ConvictQty");
+			for (i = 0; i < iTemp; i++)
 			{
 				sld = CharacterFromID("Convict_" + i);
 				LAi_SetActorType(sld);
@@ -1907,7 +1911,8 @@ void ProcessDialogEvent()
 			SetFunctionExitFromLocationCondition("Convict_LocExit", pchar.location, false);
 			DialogExit();
 			AddDialogExitQuest("OpenTheDoors");
-			for (i = 0; i < sti(pchar.GenQuest.Convict.ConvictQty); i++)
+			iTemp = GetGenQuestData("Convict.ConvictQty");
+			for (i = 0; i < iTemp; i++)
 			{
 				sld = CharacterFromID("Convict_" + i);
 				LAi_SetActorType(sld);
@@ -2832,7 +2837,7 @@ void ProcessDialogEvent()
 
 		case "CaptainComission_202_2":
 			iNation = FindEnemyNation2NationWithoutPirates(sti(pchar.GenQuest.CaptainComission.Nation));    // mitrokosta
-			if (iNation == -1) iNation(rand(3));
+			if (iNation == -1) iNation = rand(3);
 			pchar.GenQuest.CaptainComission.SlaveCity = FindAlliedColonyForNation(iNation, true);
 			pchar.GenQuest.CaptainComission.EnemyNation = iNation;
 			dialog.text = StringFromKey("GenQuests_Dialog_654", XI_ConvertString("Colony" + pchar.GenQuest.CaptainComission.SlaveCity + "Gen"));
@@ -3072,7 +3077,7 @@ void ProcessDialogEvent()
 
 		case "CaptainComission_94":
 			iNation = FindEnemyNation2NationWithoutPirates(sti(pchar.GenQuest.CaptainComission.Nation));    // mitrokosta
-			if (iNation == -1) iNation(rand(3));
+			if (iNation == -1) iNation = rand(3);
 			pchar.GenQuest.CaptainComission.SlaveCity = FindAlliedColonyForNation(iNation, true);
 			pchar.GenQuest.CaptainComission.EnemyNation = iNation;
 			dialog.text = StringFromKey("GenQuests_Dialog_694", XI_ConvertString("Colony" + pchar.GenQuest.CaptainComission.SlaveCity + "Gen"));
@@ -3215,7 +3220,7 @@ void ProcessDialogEvent()
 
 		// диалог с кэпом на палубе
 		case "CaptainComission_301":
-			if (!CheckAttribute(pchar, "GenQuest.AlreadyTalked")) // проверка если разговор уже состоялся . чтобы не повторяться. лесник
+			if (!CheckAttribute(pchar, "GenQuest.CaptainComission.AlreadyTalked")) // проверка если разговор уже состоялся . чтобы не повторяться. лесник
 			{
 				pchar.quest.CaptainComission_TimeIsOver.over = "yes";
 				dialog.text = StringFromKey("GenQuests_Dialog_712", RandPhraseSimple(
@@ -3332,7 +3337,7 @@ void ProcessDialogEvent()
 			AddQuestUserData("CaptainComission2", "sShoreName", XI_ConvertString(pchar.GenQuest.CaptainComission.ShoreLocation + "Gen"));
 			AddQuestUserData("CaptainComission2", "sShoreNameDat", XI_ConvertString(pchar.GenQuest.CaptainComission.ShoreLocation + "Dat"));
 			SetFunctionTimerCondition("CaptainCommission_SailToShore", 0, 0, 1, false);
-			pchar.GenQuest.AlreadyTalked = "true"; // лесник временная запоминалка для диалога
+			pchar.GenQuest.CaptainComission.AlreadyTalked = "true"; // лесник временная запоминалка для диалога
 			DialogExit();
 		break;
 
@@ -3353,7 +3358,7 @@ void ProcessDialogEvent()
 			dialog.text = StringFromKey("GenQuests_Dialog_741");
 			link.l1 = StringFromKey("GenQuests_Dialog_742");
 			link.l1.go = "exit";
-			DeleteAttribute(pchar, "GenQuest.AlreadyTalked"); // удаление проверки на повтор диалога лесник
+			DeleteAttribute(pchar, "GenQuest.CaptainComission.AlreadyTalked"); // удаление проверки на повтор диалога лесник
 			AddDialogExitQuestFunction("CaptainComission_GenerateShorePatrol");
 		break;
 
@@ -3421,9 +3426,7 @@ void ProcessDialogEvent()
 			LAi_ActorGoToLocation(sld, "reload", LAi_FindNearestFreeLocator("reload", locx, locy, locz), "none", "", "", "OpenTheDoors", 5.0);
 			sld.lifeDay = 0;
 			CaptainComission_GenerateCoastalPatrol();
-			iGoods = GetSquadronFreeSpace(pchar, sti(pchar.GenQuest.CaptainComission.Goods));
-			if (iGoods < sti(pchar.GenQuest.CaptainComission.GoodsQty)) pchar.GenQuest.CaptainComission.GoodsQty = iGoods;
-			SetCharacterGoods(pchar, sti(pchar.GenQuest.CaptainComission.Goods), GetCargoGoods(pchar, sti(pchar.GenQuest.CaptainComission.Goods)) + sti(pchar.GenQuest.CaptainComission.GoodsQty));// перегруз
+			CaptainComission_ApplyGoodsOverload(); // перегруз
 			AddQuestRecord("CaptainComission2", "10");
 			AddQuestUserData("CaptainComission2", "sGoodsQuantity", pchar.GenQuest.CaptainComission.GoodsQty);
 			AddQuestUserData("CaptainComission2", "sGoods", GetStrSmallRegister(XI_ConvertString(Goods[sti(pchar.GenQuest.CaptainComission.Goods)].Name + "Gen")));
@@ -3437,9 +3440,7 @@ void ProcessDialogEvent()
 			Fantom_SetCharacterGoods(sld, sti(pchar.GenQuest.CaptainComission.Goods), GetCargoFreeSpace(sld), 1);
 			pchar.GenQuest.CaptainComission.ConvoyMoney = makeint((sti(pchar.rank) * 100 + sti(NPChar.rank) * 170 + dRand(30) * 20) * 2.5);
 			pchar.GenQuest.CaptainComission.iDay = 15 + dRand(10);
-			iGoods = GetSquadronFreeSpace(pchar, sti(pchar.GenQuest.CaptainComission.Goods));
-			if (iGoods < sti(pchar.GenQuest.CaptainComission.GoodsQty)) pchar.GenQuest.CaptainComission.GoodsQty = iGoods;
-			SetCharacterGoods(pchar, sti(pchar.GenQuest.CaptainComission.Goods), GetCargoGoods(pchar, sti(pchar.GenQuest.CaptainComission.Goods)) + sti(pchar.GenQuest.CaptainComission.GoodsQty));// перегруз
+			CaptainComission_ApplyGoodsOverload(); // перегруз
 			dialog.text = StringFromKey("GenQuests_Dialog_752", FindMoneyString(sti(pchar.GenQuest.CaptainComission.ConvoyMoney)), pchar.GenQuest.CaptainComission.iDay);
 			link.l1 = StringFromKey("GenQuests_Dialog_753");
 			link.l1.go = "CaptainComission_324";
@@ -3566,7 +3567,7 @@ void ProcessDialogEvent()
 			sTemp = "Gang_";
 			sGroup = "GangGroup_0";
 			LAi_LocationFightDisable(&locations[FindLocation(pchar.GenQuest.CaptainComission.ConvoyShore)], false);
-			iTemp = sti(pchar.GenQuest.CaptainComission.GangNum);
+			iTemp = GetGenQuestData("CaptainComission.GangNum");
 			chrDisableReloadToLocation = true;
 			rChar = CharacterFromID("CapComission_1");
 			LAi_SetWarriorType(rChar);
@@ -3822,7 +3823,7 @@ void ProcessDialogEvent()
 			sTemp = "Gang_";
 			sGroup = "GangGroup_0";
 			LAi_LocationFightDisable(&locations[FindLocation(pchar.GenQuest.CaptainComission.ConvoyShore)], false);
-			iTemp = sti(pchar.GenQuest.CaptainComission.GangNum);
+			iTemp = GetGenQuestData("CaptainComission.GangNum");
 			chrDisableReloadToLocation = true;
 			if (pchar.GenQuest.CaptainComission.variant == "A2")
 			{
@@ -4115,9 +4116,7 @@ void ProcessDialogEvent()
 			pchar.GenQuest.CaptainComission.ConvoyShore = SelectQuestShoreLocationFromSea(pchar.GenQuest.CaptainComission.ConvoyIsland);
 			pchar.GenQuest.CaptainComission.ConvoyCity = sTemp;
 			pchar.GenQuest.CaptainComission.iDay = 20 + dRand(10);
-			iGoods = GetSquadronFreeSpace(pchar, sti(pchar.GenQuest.CaptainComission.Goods));
-			if (iGoods < sti(pchar.GenQuest.CaptainComission.GoodsQty)) pchar.GenQuest.CaptainComission.GoodsQty = iGoods;
-			SetCharacterGoods(pchar, sti(pchar.GenQuest.CaptainComission.Goods), GetCargoGoods(pchar, sti(pchar.GenQuest.CaptainComission.Goods)) + sti(pchar.GenQuest.CaptainComission.GoodsQty));// перегруз
+			CaptainComission_ApplyGoodsOverload(); // перегруз
 			dialog.text = StringFromKey("GenQuests_Dialog_865", XI_ConvertString(pchar.GenQuest.CaptainComission.ConvoyShore + "Gen"), XI_ConvertString(GetIslandNameByCity(sTemp) + "Pre"), pchar.GenQuest.CaptainComission.iDay);
 			link.l1 = StringFromKey("GenQuests_Dialog_866");
 			link.l1.go = "CaptainComission_391";
@@ -4679,7 +4678,7 @@ void ProcessDialogEvent()
 								StringFromKey("GenQuests_Dialog_934")));
 					link.l1 = StringFromKey("GenQuests_Dialog_936", GetFullname(NPChar));
 					link.l1.go = "ChurchGenQuest1_DialogInTavernWithCap_2";
-					PChar.Quest.Church_GenQuest1_Timer.over = "yes";
+					//PChar.Quest.Church_GenQuest1_Timer.over = "yes"; // KZ > убрано преждевременное снятие таймера провала: он должен жить до сдачи рукописей священнику
 				}
 				else // на палубе своего шипа
 				{
@@ -4801,6 +4800,7 @@ void ProcessDialogEvent()
 			AddQuestRecordEx(sQuestTitle, "ChurchGenQuest1", "10");
 			AddQuestUserData(sQuestTitle, "sSex", GetSexPhrase("", "а"));
 			AddQuestUserData(sQuestTitle, "sColony", XI_ConvertString("Colony" + PChar.GenQuest.ChurchQuest_1.QuestTown));
+			AddQuestUserData(sQuestTitle, "sIsland", XI_ConvertString(GetIslandNameByCity(PChar.GenQuest.ChurchQuest_1.QuestTown) + "Dat"));
 			AddQuestUserData(sQuestTitle, "sCapName", GetFullName(NPChar));
 			PChar.GenQuest.ChurchQuest_1.Complete = true; // Квест выполнен
 			SetFunctionTimerCondition("Church_GenQuest1_DeleteCapitan", 0, 0, 1, false); // Трем судно кэпа
@@ -4940,15 +4940,7 @@ void ProcessDialogEvent()
 
 		case "Church_GenQuest_2_ShoreBandit_7":
 			NextDiag.CurrentNode = NextDiag.TempNode;
-			iBanditsCount = PChar.GenQuest.ChurchQuest_2.BanditsCount;
-			for (i = 0; i < iBanditsCount; i++)
-			{
-				rChar = CharacterFromID("Church_GenQuest2_Bandit_" + i);
-				LAi_Type_Actor_Reset(rChar);
-				LAi_CharacterDisableDialog(rChar);
-				rChar.LifeDay = 0;
-				LAi_ActorRunToLocation(rChar, "reload", "reload1_back", "none", "", "", "", -1);
-			}
+			Church_GenQuest2_RemoveBandits();
 
 			// Разрешим генерацию энкаунтеров, откроем выходы
 			DeleteAttribute(LoadedLocation, "DisableEncounters");
@@ -4965,7 +4957,7 @@ void ProcessDialogEvent()
 			AddDialogExitQuest("Church_GenQuest2_BanditsIsEnemies");
 			sQuestTitle = PChar.GenQuest.ChurchQuest_2.QuestTown + "ChurchGenQuest2";
 			AddQuestrecordEx(sQuestTitle, "ChurchGenQuest2", "10_2");
-			AddQuestUserData("ChurchGenQuest2", "sSex", GetSexPhrase("", "а"));
+			AddQuestUserData(sQuestTitle, "sSex", GetSexPhrase("", "а"));
 			DialogExit();
 		break;
 
@@ -5012,14 +5004,7 @@ void ProcessDialogEvent()
 		case "Church_GenQuest_2_ShoreBandit_Real_Band_2_2":
 			AddMoneyToCharacter(PChar, -sti(PChar.money) / 2); // Забираем половину денег
 			PChar.GenQuest.ChurchQuest_2.Complete.Without_All = true; // Полностью проигрышный вариант. Остаемся ни с чем
-			iBanditsCount = PChar.GenQuest.ChurchQuest_2.BanditsCount;
-			for (i = 0; i < iBanditsCount; i++)
-			{
-				rChar = CharacterFromID("Church_GenQuest2_Bandit_" + i);
-				LAi_SetCitizenType(rChar);
-				rChar.LifeDay = 0;
-				rChar.Dialog.Currentnode = "First time";
-			}
+			Church_GenQuest2_RemoveBandits();
 
 			DeleteAttribute(PChar, "GenQuest.ChurchQuest_2.BanditsInShore");
 			sQuestTitle = PChar.GenQuest.ChurchQuest_2.QuestTown + "ChurchGenQuest2";
@@ -5052,14 +5037,7 @@ void ProcessDialogEvent()
 			ChurchGenQuest2_GiveCup();    // Даем чашу
 			AddMoneyToCharacter(PChar, -(makeint(makeint(Pchar.money) / 20) * 10));
 			PChar.GenQuest.ChurchQuest_2.Complete.Only_With_Cup = true;
-			iBanditsCount = PChar.GenQuest.ChurchQuest_2.BanditsCount;
-			for (i = 0; i < iBanditsCount; i++)
-			{
-				rChar = CharacterFromID("Church_GenQuest2_Bandit_" + i);
-				LAi_SetCitizenType(rChar);
-				rChar.LifeDay = 0;
-				rChar.Dialog.Currentnode = "Left_Time_Case"; // Диалог не забыть поменять.
-			}
+			Church_GenQuest2_RemoveBandits();
 
 			DeleteAttribute(LoadedLocation, "DisableEncounters");
 			chrDisableReloadToLocation = false;
@@ -5111,7 +5089,9 @@ void ProcessDialogEvent()
 		break;
 
 		case "PiratesOnUninhabited_2":
-			for (i = 0; i < sti(PChar.GenQuest.PiratesOnUninhabited.PiratesQty); i++)
+			iTemp = GetGenQuestData("PiratesOnUninhabited.PiratesQty");
+
+			for (i = 0; i < iTemp; i++)
 			{
 				LAi_SetImmortal(CharacterFromID("PirateOnUninhabited_" + i), false);
 			}
@@ -5214,8 +5194,9 @@ void ProcessDialogEvent()
 
 		case "PiratesOnUninhabited_9":
 			bOk = CheckAttribute(PChar, "GenQuest.PiratesOnUninhabited.Shipwrecked");
+			iTemp = GetGenQuestData("PiratesOnUninhabited.PiratesQty");
 
-			for (i = 0; i < sti(PChar.GenQuest.PiratesOnUninhabited.PiratesQty); i++)
+			for (i = 0; i < iTemp; i++)
 			{
 				rChar = CharacterFromID("PirateOnUninhabited_" + i);
 				LAi_SetWarriorTypeNoGroup(rChar);
@@ -5253,7 +5234,9 @@ void ProcessDialogEvent()
 
 		// Берем их в пассажирами - держать курс на населенный остров
 		case "PiratesOnUninhabited_11":
-			for (i = 0; i < sti(PChar.GenQuest.PiratesOnUninhabited.PiratesQty); i++)
+			iTemp = GetGenQuestData("PiratesOnUninhabited.PiratesQty");
+
+			for (i = 0; i < iTemp; i++)
 			{
 				rChar = CharacterFromID("PirateOnUninhabited_" + i);
 				LAi_SetWarriorTypeNoGroup(rChar);
@@ -5374,8 +5357,9 @@ void ProcessDialogEvent()
 
 		case "PiratesOnUninhabited_13":
 			AddItems(PChar, "jewelry4", 1);
+			iTemp = GetGenQuestData("PiratesOnUninhabited.PiratesQty");
 
-			for (i = 0; i < sti(PChar.GenQuest.PiratesOnUninhabited.PiratesQty); i++)
+			for (i = 0; i < iTemp; i++)
 			{
 				rChar = CharacterFromID("PirateOnUninhabited_" + i);
 				LAi_SetWarriorTypeNoGroup(rChar);
@@ -5415,7 +5399,9 @@ void ProcessDialogEvent()
 		break;
 
 		case "PiratesOnUninhabited_16":
-			for (i = 0; i < sti(PChar.GenQuest.PiratesOnUninhabited.PiratesQty); i++)
+			iTemp = GetGenQuestData("PiratesOnUninhabited.PiratesQty");
+
+			for (i = 0; i < iTemp; i++)
 			{
 				rChar = CharacterFromID("PirateOnUninhabited_" + i);
 
@@ -5473,7 +5459,9 @@ void ProcessDialogEvent()
 		break;
 
 		case "PiratesOnUninhabited_20":
-			for (i = 0; i < sti(PChar.GenQuest.PiratesOnUninhabited.PiratesQty); i++)
+			iTemp = GetGenQuestData("PiratesOnUninhabited.PiratesQty");
+
+			for (i = 0; i < iTemp; i++)
 			{
 				rChar = CharacterFromID("PirateOnUninhabited_" + i);
 
@@ -5576,7 +5564,9 @@ void ProcessDialogEvent()
 		break;
 
 		case "PiratesOnUninhabited_29":
-			for (i = 0; i < sti(PChar.GenQuest.PiratesOnUninhabited.PiratesQty); i++)
+			iTemp = GetGenQuestData("PiratesOnUninhabited.PiratesQty");
+
+			for (i = 0; i < iTemp; i++)
 			{
 				rChar = CharacterFromID("PirateOnUninhabited_" + i);
 
@@ -5609,7 +5599,9 @@ void ProcessDialogEvent()
 		break;
 
 		case "PiratesOnUninhabited_31":
-			for (i = 0; i < sti(PChar.GenQuest.PiratesOnUninhabited.PiratesQty); i++)
+			iTemp = GetGenQuestData("PiratesOnUninhabited.PiratesQty");
+
+			for (i = 0; i < iTemp; i++)
 			{
 				rChar = CharacterFromID("PirateOnUninhabited_" + i);
 
@@ -5780,7 +5772,9 @@ void ProcessDialogEvent()
 		break;
 
 		case "PiratesOnUninhabited_45":
-			for (i = 0; i < sti(PChar.GenQuest.PiratesOnUninhabited.PiratesQty); i++)
+			iTemp = GetGenQuestData("PiratesOnUninhabited.PiratesQty");
+
+			for (i = 0; i < iTemp; i++)
 			{
 				rChar = CharacterFromID("PirateOnUninhabited_" + i);
 				LAi_SetWarriorTypeNoGroup(rChar);
@@ -5824,6 +5818,7 @@ void ProcessDialogEvent()
 			link.l1.go = "PiratesOnUninhabited_47";
 
 			PChar.Quest.PiratesOnUninhabited_ShipSink.over = "yes";
+			PChar.Quest.PiratesOnUninhabited_ShipDeadline.over = "yes";
 			PChar.GenQuest.PiratesOnUninhabited.ClearShip = true;
 			Map_ReleaseQuestEncounter("PiratesOnUninhabited_BadPirate"); // Убираем с глобалки
 		break;
@@ -5866,7 +5861,7 @@ void ProcessDialogEvent()
 
 			sTitle = "PiratesOnUninhabited" + PChar.GenQuest.PiratesOnUninhabited.StartShore;
 			AddQuestRecordEx(sTitle, "PiratesOnUninhabited", "14");
-			AddQuestUserData("PiratesOnUninhabited", "sSex", GetSexPhrase("", "а"));
+			AddQuestUserData(sTitle, "sSex", GetSexPhrase("", "а"));
 			AddQuestUserData(sTitle, "ship", GetStrSmallRegister(XI_ConvertString(ShipsTypes[sti(PChar.GenQuest.PiratesOnUninhabited.StartShipType)].name)) + " '" + PChar.GenQuest.PiratesOnUninhabited.StartShipName + "'");
 			CloseQuestHeader(sTitle);
 
@@ -5923,7 +5918,9 @@ void ProcessDialogEvent()
 		break;
 
 		case "PiratesOnUninhabited_53":
-			for (i = 0; i < sti(PChar.GenQuest.PiratesOnUninhabited.PiratesQty); i++)
+			iTemp = GetGenQuestData("PiratesOnUninhabited.PiratesQty");
+
+			for (i = 0; i < iTemp; i++)
 			{
 				rChar = CharacterFromID("PirateOnUninhabited_" + i);
 				LAi_SetImmortal(rChar, false);
@@ -5952,7 +5949,9 @@ void ProcessDialogEvent()
 		break;
 
 		case "PiratesOnUninhabited_55":
-			for (i = 0; i < sti(PChar.GenQuest.PiratesOnUninhabited.PiratesQty); i++)
+			iTemp = GetGenQuestData("PiratesOnUninhabited.PiratesQty");
+
+			for (i = 0; i < iTemp; i++)
 			{
 				rChar = CharacterFromID("PirateOnUninhabited_" + i);
 				LAi_SetWarriorTypeNoGroup(rChar);
@@ -5986,14 +5985,17 @@ void ProcessDialogEvent()
 			if (CheckAttribute(&TEV, "ContraRepCheck"))
 				ChangeContrabandRelation(pchar, -5);
 			DeleteAttribute(&TEV, "ContraRepCheck");
-			for (i = 0; i < 4; i++)
+			iTemp = GetGenQuestData("JusticeOnSale.EncQty");
+			for (i = 0; i < iTemp; i++)
 			{
 				if (GetCharacterIndex("JusticeOnSale_Jungle_" + i) == -1) continue;
 				sld = CharacterFromID("JusticeOnSale_Jungle_" + i);
 				LAi_RemoveCheckMinHP(sld);
 			}
-			LAi_Group_SetRelation("JusticeOnSaleGroup_" + LoadedLocation.index, LAI_GROUP_PLAYER, LAI_GROUP_ENEMY);
-			LAi_Group_FightGroups("JusticeOnSaleGroup_" + LoadedLocation.index, LAI_GROUP_PLAYER, true);
+			sGroup = "JusticeOnSaleGroup_" + LoadedLocation.index;
+			LAi_Group_SetRelation(sGroup, LAI_GROUP_PLAYER, LAI_GROUP_ENEMY);
+			LAi_Group_FightGroups(sGroup, LAI_GROUP_PLAYER, true);
+			LAi_group_SetCheck(sGroup, "JusticeOnSale_DestroyJusticeOnSaleGroup");
 			DialogExit();
 			LAi_SetFightMode(PChar, true);
 		break;
@@ -6003,28 +6005,7 @@ void ProcessDialogEvent()
 			link.l1 = StringFromKey("GenQuests_Dialog_1163", pchar);
 			link.l1.go = "JusticeOnSale_4";
 			link.l2 = StringFromKey("GenQuests_Dialog_1164");
-			bOk = GetCharacterSkillToOld(Pchar, "Fencing") >= 7 && sti(Pchar.Rank) >= 10 && sti(PChar.reputation) <= 30;
-			if (bOk || CheckCharacterPerk(pchar, "SeaDogProfessional"))
-			{
-				link.l2.go = "JusticeOnSale_5";
-			}
-			else
-			{
-				iTemp = makeint((
-							makefloat(sti(PChar.reputation) - 41) / (100 - 41) + // репа ГГ
-								(1 - (makefloat(GetPlayerContrabandRelation()) / 60)) + // репа контров
-								makefloat(GetCharacterReputation_WithNation(pchar, GetCityNation(PChar.GenQuest.JusticeOnSale.CityId))) / 100) // репа с нацией города
-					* 100.0
-					);
-				if (iTemp <= rand(35))
-				{
-					link.l2.go = "JusticeOnSale_5";
-				}
-				else
-				{
-					link.l2.go = "JusticeOnSale_5_1";
-				}
-			}
+			link.l2.go = JusticeOnSale_PersuadeTarget();
 		break;
 
 		case "JusticeOnSale_4":
@@ -6034,28 +6015,7 @@ void ProcessDialogEvent()
 			link.l2 = StringFromKey("GenQuests_Dialog_1168", pchar);
 			link.l2.go = "JusticeOnSale_7";
 			link.l3 = StringFromKey("GenQuests_Dialog_1169");
-			bOk = GetCharacterSkillToOld(Pchar, "Fencing") >= 7 && sti(Pchar.Rank) >= 10 && sti(PChar.reputation) <= 30;
-			if (bOk || CheckCharacterPerk(pchar, "SeaDogProfessional"))
-			{
-				link.l3.go = "JusticeOnSale_5";
-			}
-			else
-			{
-				iTemp = makeint((
-							makefloat(sti(PChar.reputation) - 41) / (100 - 41) + // репа ГГ
-								(1 - (makefloat(GetPlayerContrabandRelation()) / 60)) + // репа контров
-								makefloat(GetCharacterReputation_WithNation(pchar, GetCityNation(PChar.GenQuest.JusticeOnSale.CityId))) / 100) // репа с нацией города
-					* 100.0
-					);
-				if (iTemp <= rand(35))
-				{
-					link.l3.go = "JusticeOnSale_5";
-				}
-				else
-				{
-					link.l3.go = "JusticeOnSale_5_1";
-				}
-			}
+			link.l3.go = JusticeOnSale_PersuadeTarget();
 		break;
 
 		case "JusticeOnSale_5_1":
@@ -6072,7 +6032,8 @@ void ProcessDialogEvent()
 		case "JusticeOnSale_5":
 			if (CheckCharacterPerk(pchar, "SeaDogProfessional"))
 				PlayerRPGCheck_Perk_NotifyPass("SeaDogProfessional");
-			for (i = 0; i < sti(PChar.GenQuest.JusticeOnSale.EncQty); i++)
+			iTemp = GetGenQuestData("JusticeOnSale.EncQty");
+			for (i = 0; i < iTemp; i++)
 			{
 				rChar = CharacterFromID("JusticeOnSale_Jungle_" + i);
 				LAi_CharacterDisableDialog(rChar);
@@ -6102,7 +6063,8 @@ void ProcessDialogEvent()
 		break;
 
 		case "JusticeOnSale_8":
-			for (i = 0; i < sti(PChar.GenQuest.JusticeOnSale.EncQty); i++)
+			iTemp = GetGenQuestData("JusticeOnSale.EncQty");
+			for (i = 0; i < iTemp; i++)
 			{
 				rChar = CharacterFromID("JusticeOnSale_Jungle_" + i);
 				LAi_CharacterDisableDialog(rChar);
@@ -6298,7 +6260,8 @@ void ProcessDialogEvent()
 					AddMoneyToCharacter(PChar, sti(PChar.rank) * 500 + dRand(1000));
 				}
 			}
-			for (i = 0; i < sti(PChar.GenQuest.JusticeOnSale.EncQty); i++)
+			iTemp = GetGenQuestData("JusticeOnSale.EncQty");
+			for (i = 0; i < iTemp; i++)
 			{
 				rChar = CharacterFromID("JusticeOnSale_ShorePirate_" + i);
 				LAi_Type_Actor_Reset(rChar);
@@ -6313,7 +6276,8 @@ void ProcessDialogEvent()
 		case "JusticeOnSale_11":
 			AddQuestRecord("JusticeOnSale", "4_1");
 			CloseQuestHeader("JusticeOnSale");
-			for (i = 0; i < sti(PChar.GenQuest.JusticeOnSale.EncQty); i++)
+			iTemp = GetGenQuestData("JusticeOnSale.EncQty");
+			for (i = 0; i < iTemp; i++)
 			{
 				rChar = CharacterFromID("JusticeOnSale_ShorePirate_" + i);
 				LAi_SetWarriorTypeNoGroup(rChar);
@@ -6337,4 +6301,9 @@ void ProcessDialogEvent()
 			DialogExit();
 		break;
 	}
+}
+
+int GetGenQuestData(string _sData)
+{
+	return sti(PChar.GenQuest.(_sData));
 }

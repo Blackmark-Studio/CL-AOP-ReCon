@@ -2416,3 +2416,9 @@ Je ne suis pas sûr pour la recette, mais on n’a rien trouvé sur lui à part 
 Officer_Common_656 {
 Voyons ce qu'il y a là-bas.
 }
+Officer_Common_657 {
+Capitaine, finissons d'abord ce que nous avons commencé. Ensuite, si tu le souhaites, je partirai.
+}
+Officer_Common_658 {
+D'accord. Finissons d'abord ce que nous avons commencé.
+}

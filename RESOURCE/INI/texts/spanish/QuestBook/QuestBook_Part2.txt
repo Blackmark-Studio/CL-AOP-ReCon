@@ -250,6 +250,23 @@ GivePrisonFree.4 {Parece que @<sName> simplemente me engañó. No encontramos ni
 GivePrisonFree.5 {Acepté ayudar a un prisionero en la prisión de @<sCity> llamado @<sName>. Debo hablar con el alcaide; quizá haya una forma de resolver esto.}
 GivePrisonFree.6 {Han pasado los dos días que me dieron y aún no he logrado resolver el asunto de liberar al prisionero llamado @<sName>. Es una pena, pero tendrá que quedarse en la cárcel.}
 GivePrisonFree.7 {No logré liberar al prisionero llamado @<sName>. En fin, me las arreglaré sin su tesoro.}
+
+Tutorial_Eng
+{
+Referencia: ¿Qué está pasando en Inglaterra?
+}
+
+Tutorial_Eng.1
+{
+Inglaterra lleva casi cien años atravesando tiempos difíciles. El rey Enrique VIII de Inglaterra no lograba divorciarse de su primera esposa, Catalina de Aragón, porque el papa no se lo permitía. Entonces intervino el arzobispo inglés Cranmer y propuso a Enrique concederse él mismo el divorcio, puesto que era el «ungido de Dios». En 1534, Enrique VIII se proclamó «Cabeza de la Iglesia» mediante un estatuto parlamentario, separando así la Iglesia de Inglaterra de la autoridad de Roma. Un solo divorcio no bastó a Enrique VIII: tuvo seis esposas en total, y a dos de ellas, Ana Bolena y su prima Catalina Howard, las envió al cadalso sin el menor remordimiento. Desde entonces no ha habido paz en tierras inglesas. María Tudor intentó devolver la Iglesia a la autoridad del papa, pero Juan Calvino transformó Inglaterra, que se volvió puritana.
+    La guerra civil entre Carlos I y Oliver Cromwell terminó con la ejecución del rey de Inglaterra. La república independiente (1649–1660) no trajo paz a Inglaterra; diez años de gobierno puritano agotaron a todos los ingleses del Viejo Mundo. Y en la primavera de 1660 devolvieron el trono inglés a Carlos II Estuardo, hijo del ejecutado Carlos I.
+    ¡En verdad, no se debe confiar el destino de un Estado a fanáticos religiosos! ¿Valía la pena derramar ríos de sangre, privar al rey del poder y de la cabeza, para diez años después devolver el trono a su hijo?
+    La reciente guerra de 1655 entre Inglaterra y España castigó a ambas potencias, aunque los españoles salieron peor parados e incluso perdieron Jamaica. Así que España e Inglaterra están ahora en paz, y las patentes de corso expedidas por los ingleses han sido anuladas. Pero todo eso son tonterías: antes se saqueaba a los españoles y se los sigue saqueando ahora; tienen demasiada sangre inocente sobre las manos.
+    Desde 1664 todo lo gobierna aquí el gobernador de Jamaica, sir Thomas Modyford. Al llegar a Port Royal recibió instrucciones claras de Carlos II: frenar la piratería y mantener buenas relaciones comerciales con España. Pero no tiene la menor intención de cumplir la orden del rey de Inglaterra, aunque finja lo contrario.
+    Sir Thomas Modyford había sido anteriormente gobernador de Barbados. Cuando Cromwell llegó al poder, Barbados, gracias a los esfuerzos de Modyford, se negó a reconocer a la nueva autoridad británica. Al parecer, al hombre se le antojó la independencia. Pero Cromwell no era el tipo de Oliver que perdonaba semejantes trucos y envió una escuadra para someter la isla. Modyford ofreció una resistencia de cara a la galería, pero enseguida llegó a un acuerdo con los puritanos y devolvió Barbados al seno de la metrópoli. Tras la coronación de Carlos II en el trono británico, sir Thomas Modyford fue nombrado gobernador de Jamaica, dicen que gracias a parientes influyentes del círculo de Carlos.
+    Pues bien, sir Thomas Modyford, gobernador de Jamaica, es un gran amante del demonio amarillo. Su favorito es el jefe de los bucaneros Edward Mansfield, un holandés de Curaçao, aunque Henry Morgan tampoco carece de atención. ¿Quién rechazaría montañas de oro español, que Henry trae de cada incursión contra los asentamientos españoles?
+}
+
 Tutorial_Fra {Referencia: ¿Qué está pasando en Francia?}
 Tutorial_Fra.1
 {
@@ -271,6 +288,28 @@ La isla de Tortuga tenía una gran importancia estratégica, especialmente para 
 
 En 1664, Luis XIV concedió oficialmente la parte occidental de La Española (otro nombre para Tortuga) a la Compañía Francesa de las Indias Occidentales y nombró gobernador del territorio a Bertrand d’Ogeron, un antiguo bucanero. Los Hermanos de la Costa no tenían quejas bajo los anteriores gobernadores de Tortuga, pero ahora Tortuga era un paraíso para los bucaneros. ¡El gobernador d’Ogeron ordenó traer mujeres de Europa a su isla! ¡Un paraíso para el bucanero!
 }
+
+Tutorial_Spa
+{
+Referencia: ¿Qué está pasando en España?
+}
+
+Tutorial_Spa.1
+{
+Con la muerte de Felipe IV, el último gran monarca español, el país entró en un largo período de regencia. El nuevo rey, Carlos II de Habsburgo, tiene cuatro años, es tan débil y padece tantas enfermedades que cuesta imaginar cómo sigue vivo. Y no es de extrañar: su padre Felipe IV ya era anciano cuando se casó con Mariana de Austria y, según se rumorea, también padecía «diversas enfermedades». Así, Mariana —como se llamaba en España a Ana de Austria— se convirtió en regente de su hijo. El peligro que esto podía suponer quedó demostrado por los recientes acontecimientos en Francia: las revueltas de la Fronda contra Mazarino en 1650. Por ello, Felipe IV preparó la regencia con antelación y puso a disposición de la reina una Junta de Gobierno cuidadosamente seleccionada entre representantes de las autoridades políticas, eclesiásticas y públicas.
+    A pesar de aquella junta, Mariana, incapaz de soportar por sí sola el peso de sus obligaciones, volvió a recurrir a la institución de los favoritos para garantizar apoyo a la regencia de una potencia mundial. Su elección recayó en su confesor austríaco, el padre jesuita Johann Eberhard Nithard. A pesar de las advertencias, la reina al principio solo le concedió un poder nominal al nombrarlo Gran Inquisidor de España, cargo que lo convirtió automáticamente en miembro de la Junta de Gobierno. Su origen extranjero y su actividad política provocaron una fuerte animadversión contra él tanto en el gobierno como entre amplios sectores de la población. Esta hostilidad aumentó aún más por el trato que Mariana y Nithard dispensaban al experimentado y respetado hermanastro del rey Carlos II, Don Juan. Don Juan es una de las figuras más interesantes de España. Es protector de eruditos como De la Faille, Caramuel y Lobkowitz o Juanini, propietario de una enorme biblioteca y uno de los fundadores de la ciencia reformista española. Además, como valiente general y gobernador experimentado, desempeñó un papel decisivo en la represión de las rebeliones de Nápoles y Barcelona. En cambio, su mando en Flandes y Portugal entre 1656 y 1663 fue mucho menos exitoso.
+    La pobre España provoca cierta compasión, atacada desde todos los frentes justo cuando atraviesa un momento de debilidad. Pero existe una razón por la que todos odian a los españoles.
+    En Puerto Rico y los islotes cercanos vivían pacíficamente los bucaneros —simples cazadores y ganaderos, en su mayoría franceses— sin molestar a nadie. De pronto, los españoles, sin prestar atención siquiera al hecho de que el oficio de los bucaneros también resultaba provechoso para ellos, decidieron expulsarlos a todos de la isla de Santo Domingo o, si era posible, exterminarlos por completo.
+    El comienzo de aquel cruel plan, funesto incluso para los propios españoles, fue muy sencillo. Siguiendo el método que tan buenos resultados les había dado contra los indígenas de América, atacaron de improviso a los bucaneros dispersos, inocentes y desprevenidos; mataron a unos y se llevaron a otros como esclavos. Desde ese momento, los cazadores se volvieron más prudentes, comenzaron a desplazarse siempre en pequeños grupos preparados para resistir y, cuando pese a ello eran atacados, luchaban con tanta desesperación que casi siempre derrotaban a los españoles, a pesar de la superioridad numérica de estos, y los obligaban a huir.
+    Entonces los españoles cambiaron su forma de hacer la guerra. La persecución individual de bucaneros, que había costado la vida a más de un buen católico español, cesó. En su lugar, los españoles empezaron a atacar a los bucaneros por la noche en sus boucans, matando a amos y sirvientes y sin perdonar siquiera a los perros. Estas atrocidades enfurecieron a los bucaneros. Se unieron e iniciaron también una guerra ofensiva, sin perdonar a ningún enemigo. Dio resultado. Los españoles aparentemente interrumpieron todas las hostilidades, y los bucaneros comenzaron a albergar la esperanza de que por fin los dejarían en paz. Pero sus enemigos solo estaban esperando refuerzos. En cuanto estos llegaron desde las colonias españolas, la guerra volvió a estallar. Los bucaneros también recibieron refuerzos: franceses de Tortuga y de otras islas, además de muchos otros aventureros y buscadores de botín, se unieron a ellos. Los adversarios luchaban sin descanso y la sangre corría por toda la isla. Hasta hoy numerosos lugares de Santo Domingo conservan el nombre de «campos de matanza». Todo esto ocurrió entre 1660 y 1665.
+
+    No existen demonios más sanguinarios que los españoles y los portugueses. Solo entre 1535 y 1660 se transportó de América a España una cantidad de metales preciosos tan enorme que probablemente todas las minas del Viejo Mundo juntas no habían producido hasta entonces ni la mitad de esa cantidad durante toda su existencia. La mitad de la población indígena del Nuevo Mundo —según los cálculos más conservadores, cinco o seis millones de indios— murió durante el primer siglo y medio de dominio español, una parte considerable de ellos en las minas de México y Perú.
+    En la Hermandad de la Costa hay un filibustero llamado Montbars el Exterminador. Nunca se queda con la presa de los barcos capturados. Españoles armados, oro, mercancías: todo va por la borda, y su tripulación está formada por indígenas a los que liberó de la esclavitud española.
+    Mientras saqueaba sin piedad sus propias colonias de ultramar, España estableció el monopolio más severo sobre el comercio con el Nuevo Mundo. Desde comienzos del siglo XVI, Sevilla se convirtió en el único puerto español autorizado para comerciar con todos los territorios de ultramar. Allí llegaban las riquezas saqueadas del continente americano, enviadas a través del puerto de Veracruz, en México, primero por Nombre de Dios y más tarde por Puerto Bello, en la costa atlántica del istmo de Panamá.
+    A partir de 1537, ningún mercante español cruzaba el Atlántico en solitario: esta norma extremadamente estricta venía impuesta por los intereses del monopolio. Además, desde comienzos del siglo XVI el acceso a las aguas que bañaban las posesiones ultramarinas de la Corona española quedó cerrado a los barcos de otros países. Al principio el sistema funcionó sin fallos, pues España y Portugal habían abierto rutas hacia la India y el Nuevo Mundo mucho antes que las demás potencias europeas. En 1493, el papa Alejandro VI repartió todo el mundo bajo el cielo entre estas dos «vecinas», y un año después ambas firmaron un acuerdo para delimitar las esferas de sus futuras conquistas. Así, a la «mitad» española del globo le correspondió toda América salvo Brasil, mientras que a la portuguesa le correspondieron Brasil, África y Asia.
+    Pero ha llegado la hora de pagar. Sangre y oro españoles, por la sangre de millones de indígenas, decenas de miles de bucaneros franceses y colonos ingleses.
+}
+
 Tutorial_Hol {Referencia: ¿Qué está pasando en Holanda?}
 Tutorial_Hol.1
 {
@@ -440,6 +479,30 @@ A veces, los propios aztecas se ofrecían voluntariamente como sacrificio a los 
 
 A veces, se utilizaba en los sacrificios un método que los españoles luego llamaron “gladiatorio”. El prisionero era atado a una piedra pesada,
 }
+
+Tutorial_Sharp
+{
+Referencia: ¿Quién fue el capitán Sharp?
+}
+
+Tutorial_Sharp.1
+{
+Una de las figuras más pintorescas de la epopeya filibustera fue el capitán Sharp, que se hizo famoso no tanto como uno de los organizadores de la travesía del istmo de Panamá, sino como protagonista de varias historias anecdóticas y absurdas.
+    El 5 de abril de 1680, un destacamento pirata de unos cuatrocientos hombres partió hacia el oeste a través de la selva. La travesía fue posible en gran medida gracias al apoyo de los indígenas locales, que tenían sus propias cuentas pendientes con los españoles.
+    Los piratas tomaron al asalto la pequeña ciudad de Santa María sin sufrir grandes pérdidas. El botín, sin embargo, fue escaso: el oro extraído en las minas cercanas había sido enviado a Panamá tres días antes del ataque. Los piratas decidieron repetir la hazaña de Morgan y tomar Panamá al asalto, mientras que el modesto botín capturado en Santa María fue enviado de regreso a través del istmo bajo escolta.
+
+    Los habitantes de Panamá, no obstante, habían sido advertidos de la llegada de los filibusteros, por lo que hubo que abandonar la idea de asaltar la ciudad. En su lugar, los piratas entraron en combate con tres galeones españoles que los superaban ampliamente tanto en armamento como en efectivos. Gracias a su valor y pericia, los filibusteros lograron abordar y capturar los buques españoles.
+    El único que no participó en aquella batalla histórica fue el capitán Bartholomew Sharp, que por entonces estaba ocupado saqueando una pesquería de perlas. Además, sus compañeros habían encontrado vino en una pequeña isla, mientras que el propio Sharp había encontrado a una hermosa española, de modo que no tenía prisa por llegar al combate.
+    A la mañana siguiente de la victoria, los piratas se separaron. Setenta hombres al mando del almirante Coxon se marcharon, y los restantes quedaron bajo el mando del almirante Sawkins. Algún tiempo después, los piratas capturaron un barco que transportaba la paga destinada a Panamá, y a cada hombre le correspondieron doscientas cuarenta y siete monedas. Animado por el éxito, Sawkins intentó tomar al asalto la pequeña localidad de Pueblo Nuevo, pero el intento fracasó y el propio almirante murió. Sharp asumió el mando en su lugar, prometiendo que cada pirata regresaría de la expedición con mil libras esterlinas de botín.
+    Aun así, otros setenta piratas se separaron tras su elección y, embarcando en un buque capturado, abandonaron el campamento. Los acontecimientos posteriores demostraron que, a su manera, tenían razón: Sharp resultó ser un comandante desastroso y, en vez de capturar barcos y ciudades, arrastró a los piratas a una búsqueda infructuosa del tesoro de Drake. Dos meses más tarde lo depusieron y eligieron almirante a John Watling. Esto ocurrió en la isla Juan Fernández, donde los piratas, al zarpar apresuradamente, olvidaron a un indígena llamado William, que vivió solo durante varios años hasta que lo encontraron los barcos de Davis y Swan.
+    Watling decidió tomar al asalto la ciudad de Arica, pero con solo ciento cuarenta hombres a su disposición sufrió una derrota aplastante y murió durante el ataque. Así, Sharp se convirtió en almirante por segunda vez.
+    Durante varias semanas después de aquello navegó frente a las costas de América del Sur a bordo del galeón «Trinity». Logró capturar el rico barco «Saint Peter» y luego otro, el «Saint Rosario». La historia relacionada con este último convirtió a Sharp en el hazmerreír de todos los piratas del Caribe. Tras llevarse el vino y los cofres con monedas de plata, los hombres de Sharp encontraron en la bodega lingotes de un metal blanco que tomaron por estaño. Los filibusteros ya se disponían a cargarlos en su propio barco cuando el almirante vio a una dama española a bordo del navío capturado. Ella lo convenció para que dejara marchar el barco sin seguir saqueándolo —el precio de semejante favor, supongo, está bastante claro; ¡el tipo era tremendamente mujeriego!—. Sharp decidió conformarse con los cofres de monedas y solo se llevó un lingote, con la intención de fundirlo para hacer balas.
+    El primer hombre que vio el lingote en Antigua comprendió al instante hasta qué punto habían engañado a Sharp: las bodegas del «Saint Rosario» contenían... el cargamento de plata más grande que jamás había caído en manos de piratas. También se decía que la hermosa dama recibió una generosa recompensa de los propietarios de la plata.
+    El viaje de Sharp continuó durante varios meses más. Llevó su galeón alrededor del cabo de Hornos y llegó a las Indias Occidentales, donde los piratas, temiendo a Morgan, que perseguía a sus antiguos compañeros, abandonaron el barco y llegaron a Inglaterra en otras naves. Allí, a petición del embajador español, todos fueron arrestados. Sharp, sin embargo, contrató abogados que consiguieron demostrar que sus actos habían sido una defensa frente a ataques españoles, y los piratas fueron absueltos. Se desconoce el destino posterior de Sharp, pero, por lo que parece, vivió cómodamente en Inglaterra gracias al oro español saqueado.
+
+    ¿Y por qué en el juego «Corsairs 1» convirtieron a este individuo en objeto de un auténtico culto a la personalidad? ¿Era una broma? Aunque, por lo visto, el capitán Sharp sí tuvo una cantidad descomunal de hijos repartidos por todo el archipiélago.
+}
+
 Tutorial_Dictonary {Ayuda: Glosario de términos}
 Tutorial_Dictonary.1
 {
@@ -485,6 +548,54 @@ CABLE (CABLE LENGTH): unidad náutica de longitud (185,2 metros), una décima pa
 *
 CABOTAJE (del francés cabot
 }
+
+Tutorial_Fight_Info
+{
+Referencia: Sistema de combate del juego
+}
+
+Tutorial_Fight_Info.1
+{
+SISTEMA DE COMBATE DEL JUEGO
+*
+El dominio magistral de la espada y la pistola te permitirá salir con vida de cualquier apuro. El sistema de combate pone a tu disposición tres tipos de golpes ofensivos, dos tipos de parada, bloqueo, un golpe circular que sirve tanto para defender como para atacar, la posibilidad de disparar una pistola y saltos hacia atrás y hacia los lados.
+*
+VIDA
+La Vida de un personaje es la cantidad de daño que puede soportar. La Vida aumenta con cada nuevo nivel y también puede incrementarse mediante habilidades adicionales.
+Durante el combate, tu Vida aparece como una barra roja en la esquina superior izquierda, a la izquierda del retrato del personaje. Puedes recuperar Vida durante el combate utilizando frascos de elixir («pociones curativas») mediante el menú Enter/Usar o con una tecla rápida.
+*
+SALUD
+La Salud indica el estado físico general del héroe. Cuanto peor sea su Salud, peores serán sus parámetros en el juego. La Salud empeora si el héroe recibe muchas heridas y se recupera si pasa mucho tiempo sin participar en combates cuerpo a cuerpo. Si cae por debajo de Excelente, el héroe empieza a recibir penalizaciones a las características, que a su vez aplican penalizaciones a las habilidades. La Salud se recupera por sí sola, bastante despacio, pero se recupera. Lo hace más rápido cuando el héroe no hace nada, por ejemplo cuando duerme en una taberna, y dos veces más despacio durante la navegación. La habilidad «Salud excelente» duplica la velocidad de recuperación. Un fondo dorado en el indicador de Salud significa que esta se ha recuperado hasta su máximo actual. Sin embargo, el máximo de Salud también puede reducirse al sufrir heridas graves —cicatrices y mutilaciones que siguen haciéndose notar en combate incluso después de sanar por completo—. Los sacerdotes de las iglesias pueden restaurar el máximo de Salud, pero no a menudo, no demasiado y por mucho dinero. A veces hay que visitar a dos o tres sacerdotes para que una Salud «Buena, dorada» se convierta en «Buena, blanca», y aun así habrá que esperar a que se recupere por sí sola hasta «Excelente, dorada».
+*
+ENERGÍA
+Una persona no puede luchar sin descanso; tarde o temprano la vencerá el cansancio. La cantidad de Energía depende de la característica «Reacción» del héroe: cuanto mayor sea su valor, más podrá hacer el personaje. Cada golpe consume una cantidad determinada de Energía, por lo que conviene administrar con mucho cuidado las fuerzas durante el combate. La Energía se muestra como una barra azul a la derecha del retrato del personaje. Si no dispones de suficiente Energía, no podrás atacar. Durante el combate, la Energía se recupera poco a poco. Si ves que te queda muy poca y no alcanza para atacar, intenta bloquear o parar los golpes enemigos hasta que se recupere. Las habilidades adicionales te ayudarán a gastar menos Energía al atacar y a recuperarla más rápidamente.
+*
+ENERGÍA Y VIDA DE LOS ENEMIGOS
+Durante el combate, sobre las cabezas de tus enemigos aparecerán barras con su Vida y su Energía. Cuando tú o tus aliados golpeéis a un enemigo, aparecerá junto a su cabeza una cifra que indica la cantidad de daño infligido.
+***
+TIPOS DE GOLPES
+Tajo — un golpe cortante realizado con impulso. Inflige daño medio y requiere poca Energía.
+*
+Estocada — un ataque rápido que causa poco daño. Consume más Energía que el tajo, pero gracias a su velocidad permite interrumpir la preparación del ataque del adversario.
+*
+Golpe penetrante — requiere mucha Energía y se ejecuta lentamente, con un gran movimiento, pero inflige muchísimo daño y siempre atraviesa el bloqueo.
+*
+Golpe circular — requiere una cantidad media de Energía y causa poco daño a todos los personajes que se encuentren alrededor. Un personaje alcanzado por un golpe circular retrocede ligeramente, dejando al héroe espacio para maniobrar y un respiro para contraatacar.
+*
+Parada — permite desviar un golpe apartando el sable del adversario. No consume Energía y protege contra el golpe penetrante. Una parada exitosa rompe el ritmo del rival y le hace gastar la mayor parte de su Energía.
+*
+Finta — tiene el mismo aspecto que un golpe penetrante. Si realizas una finta y el adversario lanza cualquier ataque, tu personaje interceptará su sable y responderá con un contragolpe. Ejecutar una finta no consume Energía, y una finta exitosa que cause daño consume muy poca. La finta también permite interceptar un golpe penetrante.
+*
+Bloqueo — permite detener todos los ataques excepto el golpe penetrante. No consume Energía. Puedes pasar al bloqueo en cualquier momento, interrumpiendo tu propio ataque si ves de inmediato que no tendrá éxito. Los golpes normales pueden atravesar ocasionalmente un bloqueo si el adversario posee las habilidades correspondientes.
+*
+Disparo de pistola — causa daño al enemigo y lo obliga a retroceder un paso. Hay pistolas de distintos tipos, de una, dos y cuatro cargas. Para disparar se necesitan balas. La posibilidad de recargar las pistolas durante el combate depende de la configuración del juego; según la opción elegida, solo se puede recargar con el sable guardado o no se puede recargar en combate.
+*
+Esquiva — permite saltar dos pasos hacia atrás o hacia un lado, sacando al héroe de la trayectoria de un golpe o del centro de la pelea.
+*
+CONFIGURACIÓN DE LAS TECLAS DE ATAQUE
+Para facilitar el control, el juego dispone de una tecla de modo de ataque; mantenerla pulsada proporciona un segundo modo a otra tecla. Por defecto, la estocada y el golpe circular comparten una tecla —el botón izquierdo del ratón—; el golpe penetrante y la finta, el botón central; el tajo y la parada, el botón derecho. El bloqueo, el disparo y las esquivas tienen cada uno su propia tecla.
+}
+
 Tutorial_Seafight_Info {Ayuda: Batallas navales en barcos}
 Tutorial_Seafight_Info.1
 {
@@ -1151,6 +1262,43 @@ Askold me ha encargado encontrar una tumba de quién-sabe-quién en la isla de G
 Considero inútil llenar el cuaderno de bitácora con anotaciones sobre mis tratos con Askold, así que dejaré de gastar papel sin motivo.
 }
 Ascold.14 {Los españoles en la pirámide han sido eliminados.}
+
+ContractWithHell
+{
+Texto del contrato con el Departamento del Infierno para el Registro de Humanos
+}
+
+ContractWithHell.1
+{
+Contrato.
+
+Mar Caribe.
+
+El Departamento del Infierno para el Registro de Humanos, representado por el demonio Azzy, que actúa en virtud del Reglamento sobre el Estatuto de los Demonios en el Mundo de los Humanos, en adelante denominado el Ejecutor, por una parte, y @<Conrtragent>, que actúa conforme a sus propios deseos y por su libre voluntad, en adelante denominado el Cliente, por otra parte, celebran el presente contrato en los términos siguientes:
+
+Objeto del contrato:
+
+1. El objeto del presente contrato consiste en que el Ejecutor garantice la invulnerabilidad del cuerpo del Cliente.
+
+2. El Ejecutor deberá adoptar todas las medidas necesarias para garantizar la absoluta inmunidad del cuerpo del Cliente frente a cualquier efecto físico, entre ellos: ataques con armas blancas, ataques con armas de fuego, caída del cuerpo del Cliente desde gran altura, caída de diversos objetos sobre el cuerpo del Cliente y cualesquiera otros efectos físicos. Asimismo, en el marco del presente contrato, el Ejecutor se compromete a proteger el barco del Cliente contra daños mecánicos.
+
+3. El Cliente deberá proporcionar puntualmente la cantidad de energía necesaria para que el Ejecutor cumpla sus obligaciones. La cantidad de energía requerida se fija en tres personas o unidades de criaturas impuras en las cuevas y catacumbas del Mar Caribe por día.
+
+4. Cada día, a las doce de la noche, el Ejecutor procederá a retirar energía conforme a las condiciones del presente contrato. El Ejecutor deberá informar diariamente al Cliente del estado de las operaciones, facilitándole el saldo corriente del contrato.
+
+5. En caso de incumplimiento o cumplimiento inadecuado por parte del Cliente del punto tres del presente contrato, el Ejecutor, a fin de cumplir las obligaciones establecidas en el punto uno, completará la cuota diaria de energía necesaria a costa del Cliente, es decir, extrayéndola de su fuerza vital.
+
+6. El Cliente tiene derecho a proporcionar energía al Ejecutor por adelantado. Es decir, todas las personas o criaturas impuras que el Cliente mate por encima de la cuota establecida se contabilizarán a cuenta de futuras retiradas de energía por parte del Ejecutor.
+
+7. Se prohíbe a las Partes recurrir a terceros para el cumplimiento de sus obligaciones derivadas del presente contrato.
+
+8. El Ejecutor tiene derecho a modificar unilateralmente las cuotas diarias de suministro de energía del Cliente, de acuerdo con sus propias necesidades y sin previo aviso al Cliente.
+
+9. El presente contrato entra en vigor desde el momento de su aprobación oral y tendrá una duración indefinida. Las Partes podrán rescindirlo de mutuo acuerdo sin aplicación de sanciones. El procedimiento de rescisión exige una reunión personal entre el Cliente y el Ejecutor.
+
+Datos jurídicos y aprobaciones orales de las Partes.
+}
+
 Azzy_HellSign {Mensaje actual enviado a los suscriptores de la Oficina del Infierno}
 Azzy_HellSign.1
 {

@@ -1,0 +1,15 @@
+Shipowner_dialog_1 {
+啊，船长。米歇尔说过你会来。“玛格丽塔”号已经有人照看了。你也可以把别的船留在这里；要是它们在海上受了损伤，我的人会负责修理。
+}
+Shipowner_dialog_2 {
+需要什么，船长？停船还是修理？
+}
+Shipowner_dialog_3 {
+我想处理一下停在这里的船。
+}
+Shipowner_dialog_4 {
+看看我的船吧。哪些需要修理？
+}
+Shipowner_dialog_5 {
+暂时不用。回头见，夏尔。
+}

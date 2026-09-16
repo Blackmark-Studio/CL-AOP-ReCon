@@ -24,6 +24,8 @@
 // #define ROLLTYPE_PREV       101
 // remove all sails of one ship
 #define MSG_SAIL_DEL_GROUP 40030 // format "li" (msg_code, ship_id)
+// reload only sail textures of one ship
+#define MSG_SAIL_RELOAD_TEXTURES 40031 // format "li" (msg_code, ship_id)
 // release all sails of the object from the standard inflation
 #define MSG_SAIL_FREE_GROUP 40032 // format "li" (msg_code, ship_id)
 

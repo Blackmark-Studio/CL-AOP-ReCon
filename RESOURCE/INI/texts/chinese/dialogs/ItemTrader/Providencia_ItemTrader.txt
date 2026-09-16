@@ -1,36 +1,36 @@
 Providencia_ItemTrader_1 {
-什么问题？
+什么问题？ 
 }
 Providencia_ItemTrader_2 {
-你想干啥，@<GetAddress_Form>?
+你想干什么， @<GetAddress_Form>?
 }
 Providencia_ItemTrader_3 {
 @<RandPhraseSimple>
 }
 Providencia_ItemTrader_4 {
-又有问题啊，@<GetAddress_Form>……
+又有问题啊， @<GetAddress_Form>…… 
 }
 Providencia_ItemTrader_5 {
-问题真多啊……要不要来做点生意，@<GetAddress_Form>?
+问题真多啊…… 要不要来做点生意， @<GetAddress_Form>?
 }
 Providencia_ItemTrader_6 {
-听着，咱们还要在这废话上浪费多久？
+听着， 咱们还要在这废话上浪费多久？ 
 }
 Providencia_ItemTrader_7 {
-没问题……
+没问题…… 
 }
 Providencia_ItemTrader_8 {
-我现在没什么可说的。
+我现在没什么可说的。 
 }
 Providencia_ItemTrader_9 {
 @<RandPhraseSimple>
 }
 Providencia_ItemTrader_10 {
-唉，又来了……
+唉， 又来了…… 
 }
 Providencia_ItemTrader_11 {
-是啊，讨价还价确实更好……
+是啊， 讨价还价确实更好…… 
 }
 Providencia_ItemTrader_12 {
-嗯，抱歉啊，商人……
+嗯， 抱歉啊， 商人…… 
 }

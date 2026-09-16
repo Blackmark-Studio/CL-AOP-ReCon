@@ -537,6 +537,11 @@ DuglasSchool             {Specjalne szkolenie muszkieterskie}
 perkDuglasSchool          {Postać przeszła szkolenie według złożonej i rzadkiej metody elitarnych szkół strzeleckich Starego Świata.
 ~
 Tylko ci, którzy do perfekcji opanowali te rzadkie klasyczne podstawy, są w stanie używać rzadkich i eksperymentalnych rodzajów muszkietów.}
+legendGuideRead {Początkująca legenda}
+perklegendGuideRead {Przeczytałeś niewielki, przypadkowo znaleziony notes pełen krótkich, lecz cennych porad.
+~
+Zwiększa bazowe wartości Energii i Zdrowia odpowiednio o 5 i 10 punktów.}
+
 Energaiser {Energetyczny}
 perkEnergaiser {Postać znajduje się u szczytu swoich możliwości fizycznych, dzięki czemu energia odnawia się 1,5 razy szybciej.}
 LoyalOff {Lojalność}

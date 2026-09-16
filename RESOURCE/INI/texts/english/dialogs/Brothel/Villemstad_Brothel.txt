@@ -46,3 +46,23 @@ Yeah, third time’s the charm... Sorry.
 Villemstad_Brothel_12 {
 Not now... Maybe another time...
 }
+
+Villemstad_Brothel_13 {I have a somewhat unusual proposal for you. Would you sell me the finest dress in your wardrobe?}
+Villemstad_Brothel_14 {I am back about the dress.}
+Villemstad_Brothel_15 {Unusual indeed. I am afraid such a favor will cost you a small fortune.}
+Villemstad_Brothel_16 {Could I perhaps rent it for an evening or two?}
+Villemstad_Brothel_17 {I suppose that can be arranged. Let us say 15000 piastres, and your word that it will be returned on time, intact and spotless.}
+Villemstad_Brothel_18 {Not a single stain... And since we have agreed on the price, perhaps you also have a suitable carnival mask, one that covers the whole face?}
+Villemstad_Brothel_19 {We can find something. Fifty thousand, and it is yours.}
+Villemstad_Brothel_20 {What?! Are you sure you have not mistaken the price?}
+Villemstad_Brothel_21 {I am certain there has simply been a misunderstanding between us. You seem to have mistaken me for a foolish woman unable to recognize an attempt to enter the local residence incognito. Fifty thousand for my silence, fifteen for the dress for the evening, and I will throw in the mask. Well?}
+Villemstad_Brothel_22 {You certainly know how to do business. It seems I have no choice. Here is your money. I hope the cut does not disappoint me.}
+Villemstad_Brothel_23 {Very well, I will think about it and perhaps return later.}
+Villemstad_Brothel_24 {Well, shall we make our deal? 65000 piastres.}
+Villemstad_Brothel_25 {Here is your money. I hope the cut does not disappoint me.}
+Villemstad_Brothel_26 {I am still considering whether your offer is worth it.}
+Villemstad_Brothel_27 {You have put on the carnival costume}
+Villemstad_Brothel_28 {A little tighter here and I shall be almost satisfied with the result. It is a pity, Angelique, that you did not wear a corset in your youth; it would sit much better now. Your waist still gives away the commoner in you.}
+Villemstad_Brothel_29 {The soldiers will not notice that, and after that I can manage on my own.}
+Villemstad_Brothel_30 {No, not bad at all, not bad. In fact, I have changed my mind. You need not return the outfit; consider it bought.}
+Villemstad_Brothel_31 {I like that bargain much better. I will not refuse. I must hurry now, or I shall be late!}

@@ -1193,10 +1193,10 @@ pgg_dialog_331 {
 Escravos
 }
 pgg_dialog_332 {
-, parou não muito longe de @<sLoc> na baía de @<GetConvertStr> para reabastecer.
+, parou não muito longe de @<sLoc> na baía de @<XI_ConvertString> para reabastecer.
 }
 pgg_dialog_333 {
-, foi pego por uma tempestade perto de @<sLoc> e afundou. Mas conseguiram salvar parte da carga e desembarcaram na baía em @<GetConvertStr> Agora estão esperando a chegada do esquadrão deles.
+, foi pego por uma tempestade perto de @<sLoc> e afundou. Mas conseguiram salvar parte da carga e desembarcaram na baía em @<XI_ConvertString> Agora estão esperando a chegada do esquadrão deles.
 }
 pgg_dialog_334 {
 Não enrola, fala logo — depressa!

@@ -1,26 +1,26 @@
 PortSpein_PortMan_1 {
-什么问题？
+什么问题？ 
 }
 PortSpein_PortMan_2 {
-有什么需要帮忙的吗，@<GetAddress_Form>?
+有什么需要帮忙的吗， @<GetAddress_Form>?
 }
 PortSpein_PortMan_3 {
 @<RandPhraseSimple>
 }
 PortSpein_PortMan_4 {
-不久前，你试图问我一个问题@<GetAddress_Form>……
+不久前， 你试图问我一个问题@<GetAddress_Form>…… 
 }
 PortSpein_PortMan_5 {
-你今天已经第三次提这事了……
+你今天已经第三次提这事了…… 
 }
 PortSpein_PortMan_6 {
-听着，要是你不是来办港口的事，就别拿问题来烦我。
+听着， 要是你不是来办港口的事， 就别拿问题来烦我。
 }
 PortSpein_PortMan_7_m {
-我改主意了……
+我改主意了…… 
 }
 PortSpein_PortMan_7_f {
-我改变主意了……
+我改变主意了…… 
 }
 PortSpein_PortMan_8 {
 我现在没什么可说的。
@@ -29,26 +29,26 @@ PortSpein_PortMan_9 {
 @<RandPhraseSimple>
 }
 PortSpein_PortMan_10 {
-嗯，我的记忆好像出了点问题……
+嗯， 我的记忆好像出了点问题…… 
 }
 PortSpein_PortMan_11 {
-看来第三次总算成了吧……
+看来第三次总算成了吧…… 
 }
 PortSpein_PortMan_12 {
-不好意思，俺现在对港口的事儿没兴趣。
+不好意思， 我现在对港口的事儿没兴趣。
 }
 PortSpein_PortMan_13 {
-听说前不久有艘商船刚离开你们港口就失踪了，你能跟我说说具体情况吗？
+听说前不久有艘商船刚离开你们港口就失踪了， 你能跟我说说具体情况吗？ 
 }
 PortSpein_PortMan_14 {
-是啊，那事儿真够糟的——我现在还记得清清楚楚：整艘pinnace，几乎装满了红木。那船长高兴坏了，出发前一晚在酒馆里喝了一整夜，到处吹嘘。结果后来传来消息，说他根本没到目的地。听说是被一伙海盗截了。
+是啊， 那事儿真够糟的——我现在还记得清清楚楚： 整艘皮纳斯帆船， 几乎装满了红木。 那船长高兴坏了， 出发前一晚在酒馆里喝了一整夜， 到处吹嘘。 结果后来传来消息， 说他根本没到目的地。 听说是被一伙海盗截了。
 }
 PortSpein_PortMan_15 {
-是啊，这种混混在咱们这片海域多得很。你能不能查查，除了那艘倒霉的pinnace，还有哪些船停过你们港口？
+是啊， 这种混混在咱们这片海域多得很。 你能不能查查， 除了那艘倒霉的皮纳斯帆船， 还有哪些船停过你们港口？ 
 }
 PortSpein_PortMan_16 {
-咱们来看看。嗯……找到了。有这些船：双桅船“Jenny”、护卫舰“Swift”，还有小帆船“Adelaide”。
+咱们来看看。 嗯…… 找到了。 有这些船： 双桅船“珍妮号”、 护卫舰“迅速号”， 还有皮纳斯帆船“阿德莱德号”。
 }
 PortSpein_PortMan_17 {
-谢谢！
+谢谢！ 
 }

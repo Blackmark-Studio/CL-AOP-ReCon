@@ -508,3 +508,6 @@ I’m trying to collect money for food and clothing for the poorest residents of
 Monk_133 {
 I intend to set out on a missionary journey into the heart of the island, to bring light to the lost souls among the natives, and I am raising funds to organize the expedition. Won’t you lend your support to this noble cause?
 }
+Monk_134 {
+@<TimeGreeting>, Father. I have to go.
+}

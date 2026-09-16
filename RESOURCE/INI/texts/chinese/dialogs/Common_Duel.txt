@@ -1,447 +1,447 @@
 Common_Duel_1_m {
-你竟敢侮辱我，你这个混蛋？！
+你竟敢侮辱我， 你这个混蛋？ ！ 
 }
 Common_Duel_1_f {
-你竟敢侮辱老子，你个混账？！
+你竟敢侮辱我， 你个混账？ ！ 
 }
 Common_Duel_2 {
-你会为你的话付出惨重代价！
+你会为你的话付出惨重代价！ 
 }
 Common_Duel_3 {
-@<RandSwear> @<RandPhraseSimple>
+@<RandSwear>@<RandPhraseSimple>
 }
 Common_Duel_4 {
-你侮辱了我的荣誉，@<GetAddress_Form>！这账得算清楚。
+你侮辱了我的荣誉， @<GetAddress_Form>！ 这账得算清楚。 
 }
 Common_Duel_5 {
-你怎么敢的？赶紧收回你刚才的话！
+你怎么敢的？ 赶紧收回你刚才的话！ 
 }
 Common_Duel_6 {
 @<RandPhraseSimple>
 }
 Common_Duel_7 {
-哈？！老子都懒得拿刀对付你！
+哈？ ！ 我都懒得拿刀对付你！ 
 }
 Common_Duel_8 {
-哈？！老子都懒得拿刀沾你血！
+哈？ ！ 我都懒得拿刀沾你血！ 
 }
 Common_Duel_9 {
 @<RandPhraseSimple>
 }
 Common_Duel_10 {
-随时为您效劳！
+随时为您效劳！ 
 }
 Common_Duel_11_m {
-跟你这种渣滓，老子可不会拐弯抹角！
+跟你这种渣滓， 我可不会拐弯抹角！ 
 }
 Common_Duel_11_f {
-跟你们这些渣滓，老子可没打算客气！
+跟你们这些渣滓， 我可没打算客气！ 
 }
 Common_Duel_12 {
 @<RandPhraseSimple>
 }
 Common_Duel_13_m {
-我不是这个意思……
+我不是这个意思…… 
 }
 Common_Duel_13_f {
-我不是这个意思……
+我不是这个意思…… 
 }
 Common_Duel_14_m {
-我有点冲动了……
+我有点冲动了…… 
 }
 Common_Duel_14_f {
-我有点冲动了……
+我有点冲动了…… 
 }
 Common_Duel_15 {
-@<RandSwear> @<RandPhraseSimple>
+@<RandSwear>@<RandPhraseSimple>
 }
 Common_Duel_16 {
-是我搞错了，抱歉。
+是我搞错了， 抱歉。 
 }
 Common_Duel_17_m {
-我认错人了，@<GetAddress_FormToNPC>。请你原谅。
+我认错人了， @<GetAddress_FormToNPC>。 请你原谅。 
 }
 Common_Duel_17_f {
-是我认错人了，@<GetAddress_FormToNPC>。请原谅我。
+是我认错人了， @<GetAddress_FormToNPC>。 请原谅我。 
 }
 Common_Duel_18 {
 @<RandPhraseSimple>
 }
 Common_Duel_19 {
-老子要割了你的耳朵！
+我要割了你的耳朵！ 
 }
 Common_Duel_20 {
-老子要把你的心挖出来！
+我要把你的心挖出来！ 
 }
 Common_Duel_21 {
 @<RandPhraseSimple>
 }
 Common_Duel_22 {
-我劝你赶紧道歉，不然我可不保证自己会做什么！
+我劝你赶紧道歉， 不然我可不保证自己会做什么！ 
 }
 Common_Duel_23 {
-你明白这意味着什么吗？
+你明白这意味着什么吗？ 
 }
 Common_Duel_24 {
 @<RandPhraseSimple>
 }
 Common_Duel_25 {
-希望你的剑和你的嘴一样快！
+希望你的剑和你的嘴一样快！ 
 }
 Common_Duel_26 {
-俺让刀子替俺说话。
+我让刀子替我说话。 
 }
 Common_Duel_27 {
-@<RandSwear> @<RandPhraseSimple>
+@<RandSwear>@<RandPhraseSimple>
 }
 Common_Duel_28 {
-我向你下战书！
+我向你下战书！ 
 }
 Common_Duel_29 {
-这是关乎荣誉的事！
+这是关乎荣誉的事！ 
 }
 Common_Duel_30 {
 @<RandPhraseSimple>
 }
 Common_Duel_31_m {
-看来老子还没准备好去见阎王！
+也许我还没准备好去见魔鬼！ 
 }
 Common_Duel_31_f {
-也许我还没准备好去见魔鬼！
+也许我还没准备好去见魔鬼！ 
 }
 Common_Duel_32 {
-我觉得没必要这么激动吧！不就是几句话吗！
+我觉得没必要这么激动吧！ 不就是几句话吗！ 
 }
 Common_Duel_33 {
 @<RandPhraseSimple>
 }
 Common_Duel_34_m {
-我突然想起来，还有人等我。祝你一切顺利……
+我突然想起来， 还有人等我。 祝你一切顺利…… 
 }
 Common_Duel_34_f {
-我突然想起来，有人还在等我。祝你一切顺利……
+我突然想起来， 有人还在等我。 祝你一切顺利…… 
 }
 Common_Duel_35 {
-啊！看来我的船已经要起航了。
+啊！ 看来我的船已经要起航了。 
 }
 Common_Duel_36 {
 @<RandPhraseSimple>
 }
 Common_Duel_37 {
-你先去把其他人解决了，咱们再谈。
+你先去把其他人解决了， 咱们再谈。 
 }
 Common_Duel_38 {
-咱们之间早就说清楚了。
+咱们之间早就说清楚了。 
 }
 Common_Duel_39_m {
-@<RandSwear> 俺怎么可能忘了……
+@<RandSwear>我怎么可能忘了…… 
 }
 Common_Duel_39_f {
-@<RandSwear> 俺怎么会忘了……
+@<RandSwear>我怎么会忘了…… 
 }
 Common_Duel_40 {
-决斗？！滚一边去，老子没空搭理你。
+决斗？ ！ 滚一边去， 我没空搭理你。 
 }
 Common_Duel_41 {
-决斗？你可不配！滚开！
+决斗？ 你可不配！ 滚开！ 
 }
 Common_Duel_42 {
 @<RandPhraseSimple>
 }
 Common_Duel_43 {
-哟哟……
+哟哟…… 
 }
 Common_Duel_44 {
-我可以等……
+我可以等…… 
 }
 Common_Duel_45 {
 @<RandPhraseSimple>
 }
 Common_Duel_46 {
-那咱们走着瞧吧！！！
+那咱们走着瞧吧！ ！ ！ 
 }
 Common_Duel_47 {
-哦，是吗？！让俺看看你血是什么颜色！
+哦， 是吗？ ！ 让我看看你血是什么颜色！ 
 }
 Common_Duel_48 {
 @<RandPhraseSimple>
 }
 Common_Duel_49 {
-你说要决斗？行啊，俺奉陪。咱们用剑和手枪来决胜负。
+你说要决斗？ 行啊， 我奉陪。 咱们用剑和手枪来决胜负。 
 }
 Common_Duel_50 {
-估计你连剑都不会拿吧？
+估计你连剑都不会拿吧？ 
 }
 Common_Duel_51 {
 @<RandPhraseSimple>
 }
 Common_Duel_52 {
-你会跪下来求饶的。
+你会跪下来求饶的。 
 }
 Common_Duel_53_m {
-老子就用这双手收拾你，混蛋！
+我就用这双手收拾你， 混蛋！ 
 }
 Common_Duel_53_f {
-老子就用这双手收拾你，臭不要脸的！
+我就用这双手收拾你， 臭不要脸的！ 
 }
 Common_Duel_54 {
 @<RandPhraseSimple>
 }
 Common_Duel_55 {
-要不咱们直接起航，看看大家到底有几分本事！
+要不咱们直接起航， 看看大家到底有几分本事！ 
 }
 Common_Duel_56 {
-决斗？！哈，老子分分钟碾死你！想怎么死自己选吧！
+决斗？ ！ 哈， 我分分钟碾死你！ 想怎么死自己选吧！ 
 }
 Common_Duel_57 {
 @<RandPhraseSimple>
 }
 Common_Duel_58 {
-在海上没人能比得过我。
+在海上没人能比得过我。 
 }
 Common_Duel_59 {
-老子的船会把你那破船送进海底！
+我的船会把你那破船送进海底！ 
 }
 Common_Duel_60 {
 @<RandPhraseSimple>
 }
 Common_Duel_61_m {
-我改主意了……
+我改主意了…… 
 }
 Common_Duel_61_f {
-我改主意了……
+我改主意了…… 
 }
 Common_Duel_62 {
-我怎么没看到你的船停在港口……
+我怎么没看到你的船停在港口…… 
 }
 Common_Duel_63 {
-赶紧滚，等你找到哪怕一艘破船再来！
+赶紧滚， 等你找到哪怕一艘破船再来！ 
 }
 Common_Duel_64 {
 @<RandPhraseSimple>
 }
 Common_Duel_65 {
-是我搞错了……
+是我搞错了…… 
 }
 Common_Duel_66 {
-……那我就告辞了。
+…… 那我就告辞了。 
 }
 Common_Duel_67 {
 @<RandPhraseSimple>
 }
 Common_Duel_68 {
-那行，我在海湾出口等你……
+那行， 我在海湾出口等你…… 
 }
 Common_Duel_69 {
-你很快就能等到了。
+你很快就能等到了。 
 }
 Common_Duel_70 {
-拔刀吧，让俺看看你血是什么颜色！
+拔刀吧， 让我看看你血是什么颜色！ 
 }
 Common_Duel_71 {
-好吧，既然你想找死……
+好吧， 既然你想找死…… 
 }
 Common_Duel_72 {
-@<RandSwear> @<RandPhraseSimple>
+@<RandSwear>@<RandPhraseSimple>
 }
 Common_Duel_73 {
-咱们还是去个没人注意的地方吧。我知道城门外有个地方，@<iHour>小时后在那里见。
+咱们还是去个没人注意的地方吧。 我知道城门外有个地方， @<iHour>小时后在那里见。 
 }
 Common_Duel_74 {
-喂……别急，这种事最好别让人看见。@<iHour>小时后来城门找我。
+喂…… 别急， 这种事最好别让人看见。 @<iHour>小时后来城门找我。 
 }
 Common_Duel_75 {
 @<RandPhraseSimple>
 }
 Common_Duel_76 {
-既然你这么想找死……
+既然你这么想找死…… 
 }
 Common_Duel_77 {
-去你的！老子送你下地狱！
+去你的！ 我送你下地狱！ 
 }
 Common_Duel_78 {
 @<RandPhraseSimple>
 }
 Common_Duel_79 {
-我改主意了……
+我改主意了…… 
 }
 Common_Duel_80 {
-我觉得咱们该去城门外。我在@<pchar>小时后等你，别迟到！
+我觉得咱们该去城门外。 我在@<pchar>小时后等你， 别迟到！ 
 }
 Common_Duel_81 {
-这地方不适合解决问题。咱们去城外吧。@<pchar>小时后我会到那儿。
+这地方不适合解决问题。 咱们去城外吧。 @<pchar>小时后我会到那儿。 
 }
 Common_Duel_82 {
-@<RandSwear> @<RandPhraseSimple>
+@<RandSwear>@<RandPhraseSimple>
 }
 Common_Duel_83 {
-太讲究了！接招吧！
+太讲究了！ 接招吧！ 
 }
 Common_Duel_84 {
-没工夫跟你废话！拔刀吧！
+没工夫跟你废话！ 拔刀吧！ 
 }
 Common_Duel_85 {
 @<RandPhraseSimple>
 }
 Common_Duel_86 {
-那咱们走走吧。
+那咱们走走吧。 
 }
 Common_Duel_87_m {
-也许你说得对。咱们城门外见。
+也许你说得对。 咱们城门外见。 
 }
 Common_Duel_87_f {
-你说得对。咱们城门外见。
+你说得对。 咱们城门外见。 
 }
 Common_Duel_88 {
 @<RandPhraseSimple>
 }
 Common_Duel_89 {
-太讲究了！接招吧！
+太讲究了！ 接招吧！ 
 }
 Common_Duel_90 {
-我没时间！就在这里，现在！
+我没时间！ 就在这里， 现在！ 
 }
 Common_Duel_91 {
 @<RandPhraseSimple>
 }
 Common_Duel_92 {
-既然你这么想找死……
+既然你这么想找死…… 
 }
 Common_Duel_93 {
-去死吧！老子送你下地狱！
+去死吧！ 我送你下地狱！ 
 }
 Common_Duel_94 {
 @<RandPhraseSimple>
 }
 Common_Duel_95 {
-那咱们走走吧。
+那咱们走走吧。 
 }
 Common_Duel_96 {
-也许你说得对。咱们城门外见。
+也许你说得对。 咱们城门外见。 
 }
 Common_Duel_97 {
 @<RandPhraseSimple>
 }
 Common_Duel_98 {
-我在那儿等你。
+我在那儿等你。 
 }
 Common_Duel_99 {
-别迟到。
+别迟到。 
 }
 Common_Duel_100 {
 @<RandPhraseSimple>
 }
 Common_Duel_101_m {
-那你准备好下地狱了吗？
+那你准备好下地狱了吗？ 
 }
 Common_Duel_101_f {
-那你准备好下地狱了吗？
+那你准备好下地狱了吗？ 
 }
 Common_Duel_102 {
-咱们看看谁能把谁赶走！
+咱们看看谁能把谁赶走！ 
 }
 Common_Duel_103_m {
-不，我是来向你道歉的。是我错了，一时冲动了。
+不， 我是来向你道歉的。 是我错了， 一时冲动了。 
 }
 Common_Duel_103_f {
-不，我是来向你道歉的。是我错了，刚才有点冲动。
+不， 我是来向你道歉的。 是我错了， 刚才有点冲动。 
 }
 Common_Duel_104_m {
-听着，我想了想，发现是我错了。对不起。
+听着， 我想了想， 发现是我错了。 对不起。 
 }
 Common_Duel_104_f {
-听着，我想了想，发现是我错了。该跟你道个歉。
+听着， 我想了想， 发现是我错了。 该跟你道个歉。 
 }
 Common_Duel_105_m {
-该死！都是朗姆酒惹的祸！不好意思，伙计！
+该死！ 都是朗姆酒惹的祸！ 不好意思， 伙计！ 
 }
 Common_Duel_105_f {
-该死！都是朗姆酒惹的祸！对不起，姐！
+该死！ 都是朗姆酒惹的祸！ 对不起， 姐！ 
 }
 Common_Duel_106 {
 @<RandPhraseSimple>
 }
 Common_Duel_107 {
-休想，现在只有你的血才能让俺解气！
+休想， 现在只有你的血才能让我解气！ 
 }
 Common_Duel_108 {
-拔剑吧，别在这儿唧唧歪歪的！
+拔剑吧， 别在这儿唧唧歪歪的！ 
 }
 Common_Duel_109 {
 @<RandPhraseSimple>
 }
 Common_Duel_110 {
-不行！我要讨个说法！
+不行！ 我要讨个说法！ 
 }
 Common_Duel_111 {
-你丢了你家人的脸！拔剑吧！
+你丢了你家人的脸！ 拔剑吧！ 
 }
 Common_Duel_112 {
 @<RandPhraseSimple>
 }
 Common_Duel_113_m {
-行吧，我同意。我们是有点冲动了。
+行吧， 我同意。 我们是有点冲动了。 
 }
 Common_Duel_113_f {
-好吧，我同意，是咱们有点冲动了。
+好吧， 我同意， 是咱们有点冲动了。 
 }
 Common_Duel_114 {
-咱们自己人没必要算账！
+咱们自己人没必要算账！ 
 }
 Common_Duel_115 {
 @<RandPhraseSimple>
 }
 Common_Duel_116 {
-也许你说得对，没必要为点小事动刀动枪。
+也许你说得对， 没必要为点小事动刀动枪。 
 }
 Common_Duel_117 {
-老子的宽宏大量没边儿！这次就饶了你！
+我的宽宏大量没边儿！ 这次就饶了你！ 
 }
 Common_Duel_118 {
 @<RandPhraseSimple>
 }
 Common_Duel_119 {
-那就赶紧滚吧！
+那就赶紧滚吧！ 
 }
 Common_Duel_120 {
-那你赶紧滚。别让我改变主意。
+那你赶紧滚。 别让我改变主意。 
 }
 Common_Duel_121 {
-@<RandSwear> @<RandPhraseSimple>
+@<RandSwear>@<RandPhraseSimple>
 }
 Common_Duel_122 {
-那我就不耽误你了！
+那我就不耽误你了！ 
 }
 Common_Duel_123_m {
-那你最好赶紧走，别等我反悔了。
+那你最好赶紧走， 别等我反悔了。 
 }
 Common_Duel_123_f {
-那你最好赶紧走，别等我反悔了。
+那你最好赶紧走， 别等我反悔了。 
 }
 Common_Duel_124 {
 @<RandPhraseSimple>
 }
 Common_Duel_125 {
-我这就走……
+我这就走…… 
 }
 Common_Duel_126 {
-滚出去！
+滚出去！ 
 }
 Common_Duel_127 {
-赶紧滚，不然老子可要反悔了。
+赶紧滚， 不然我可要反悔了。 
 }
 Common_Duel_128 {
-@<RandSwear> @<RandPhraseSimple>
+@<RandSwear>@<RandPhraseSimple>
 }
 Common_Duel_129 {
-有什么需要帮忙的吗？
+有什么需要帮忙的吗？ 
 }
 Common_Duel_130 {
-你找俺有事吗？
+你找我有事吗？ 
 }
 Common_Duel_131 {
 @<RandPhraseSimple>
 }
 Common_Duel_132 {
-我走了。
+我走了。 
 }

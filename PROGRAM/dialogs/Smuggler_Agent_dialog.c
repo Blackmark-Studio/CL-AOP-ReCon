@@ -62,6 +62,14 @@ void ProcessDialogEvent()
 			else
 			{
 				AddQuestRecord("Gen_Contraband", "t1");
+				if (Pchar.quest.contraband.CurrentPlace == "shore30" || Pchar.quest.contraband.CurrentPlace == "shore31")
+				{
+					AddQuestUserData("Gen_Contraband", "sIsland", GetConvertStr("MarieGalante", "LocLables.txt"));
+				}
+				if (Pchar.quest.contraband.CurrentPlace == "shore59")
+				{
+					AddQuestUserData("Gen_Contraband", "sIsland", GetConvertStr("Tobago", "LocLables.txt"));
+				}
 				AddQuestUserData("Gen_Contraband", "sIsland", XI_ConvertString(GetIslandNameByCity(npchar.city)));
 			}
 			AddQuestUserData("Gen_Contraband", "sLoc", GetConvertStr(Pchar.quest.contraband.CurrentPlace, "LocLables.txt"));
@@ -849,7 +857,7 @@ void ProcessDialogEvent()
 			dialog.text = StringFromKey("Smuggler_Agent_dialog_171");
 			link.l1 = StringFromKey("Smuggler_Agent_dialog_172");
 			link.l1.go = "exit";
-			pchar.questTemp.Headhunter = "end_quest";
+			Headhunter_CleanupAll("end_quest");
 			HeadHunter_Smuggler_DelQuestMarks();
 		break;
 

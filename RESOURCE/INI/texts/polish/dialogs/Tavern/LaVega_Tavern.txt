@@ -37,3 +37,86 @@ Był. On i jego przyjaciel często tu przesiadywali. Przedwczoraj jeszcze był, 
 LaVega_Tavern_11 {
 Dziękuję!
 }
+
+LaVega_Tavern_12 {
+Znów w sprawie Nicolasa Rimalleta.
+}
+LaVega_Tavern_13 {
+Szukam człowieka nazwiskiem Nicolas Rimallet. Znasz go?
+}
+LaVega_Tavern_14 {
+Rimallet? Oczywiście, że znam. Nie zagląda tu często, ale ma tu szacunek. A po co go szukacie?
+}
+LaVega_Tavern_15 {
+Szuka go dawny przyjaciel — Michel. Powiedz mi, kiedy Nicolas był tu ostatni raz?
+}
+LaVega_Tavern_16 {
+Wczoraj. Nocował w pokoju na piętrze. Zjadł kolację sam, a o świcie wyszedł.
+}
+LaVega_Tavern_17 {
+Dokąd poszedł?
+}
+LaVega_Tavern_18 {
+Tysiąc peso, kapitanie, a powiem wszystko, co wiem.
+}
+LaVega_Tavern_19 {
+Masz. A teraz gadaj.
+}
+LaVega_Tavern_20 {
+Teraz nie mam takich pieniędzy.
+}
+LaVega_Tavern_21 {
+Obejdę się bez twojej pomocy.
+}
+LaVega_Tavern_22 {
+Rimallet wynajął pokój, zjadł kolację sam, a o świcie wyszedł.
+}
+LaVega_Tavern_23 {
+Dokąd poszedł?
+}
+LaVega_Tavern_24 {
+W takim razie wróćcie, kiedy je zdobędziecie. Tutaj nawet milczenie ma swoją cenę.
+}
+LaVega_Tavern_25 {
+Jeszcze tu zajrzę.
+}
+LaVega_Tavern_26 {
+Jak chcecie...
+}
+LaVega_Tavern_27 {
+Złe pogłoski o was ucichły. Co więcej, ostatnio słyszy się tylko dobre rzeczy. Chyba obejdziemy się bez zapłaty. Rimallet wynajął pokój, zjadł kolację sam, a o świcie wyszedł.
+}
+LaVega_Tavern_28 {
+Dokąd poszedł?
+}
+LaVega_Tavern_29 {
+No więc, kapitanie, tym razem znajdzie się dla mnie tysiąc piastrów?
+}
+LaVega_Tavern_30 {
+Znajdzie się. Masz.
+}
+LaVega_Tavern_31 {
+Jeszcze nie.
+}
+LaVega_Tavern_32 {
+Obejdę się.
+}
+LaVega_Tavern_33 {
+Powiedział, że idzie na stare nabrzeże za osadą. O nic więcej nie pytałem.
+}
+LaVega_Tavern_34 {
+Ktoś jeszcze go szukał?
+}
+LaVega_Tavern_35 {
+Dwóch obcych. Jeden mówił z hiszpańskim akcentem, drugi prawie cały czas milczał.
+}
+LaVega_Tavern_36 {
+Powiedziałeś im, dokąd poszedł Rimallet?
+}
+LaVega_Tavern_37 {
+Ja — nie. Ale znaleźli kogoś bardziej rozmownego i niedługo potem ruszyli za nim.
+I jeszcze jedno... Ostatnio Rimallet brał ode mnie dwa razy więcej trunku niż zwykle.
+}
+LaVega_Tavern_38 {
+Hm... Cóż, dzięki.
+}

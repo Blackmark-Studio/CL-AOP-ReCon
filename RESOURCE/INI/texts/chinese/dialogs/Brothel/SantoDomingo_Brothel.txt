@@ -1,48 +1,48 @@
 SantoDomingo_Brothel_1_m {
-小伙子，你有什么想问的？
+小伙子， 你有什么想问的？ 
 }
 SantoDomingo_Brothel_1_f {
-还有什么问题吗，小姑娘？
+还有什么问题吗， 小姑娘？ 
 }
 SantoDomingo_Brothel_2_m {
-你想干啥，帅哥？有话就问吧。
+你想干什么， 帅哥？ 有话就问吧。 
 }
 SantoDomingo_Brothel_2_f {
-你想干啥，美女？有啥问题就问吧。
+你想干什么， 美女？ 有什么问题就问吧。 
 }
 SantoDomingo_Brothel_3 {
 @<RandPhraseSimple>
 }
 SantoDomingo_Brothel_4 {
-又有问题？
+又来问问题了？ 
 }
 SantoDomingo_Brothel_5 {
-呵呵，今天都第三次问同样的问题了……
+呵呵， 今天都第三次问同样的问题了…… 
 }
 SantoDomingo_Brothel_6_m {
-哼，怎么，不打算挑个美女自己留着？不然俺可要对你有点看法了……
+嗯…… 也许你该给自己挑个美女？ 不然的话， 我可就要对你形成某种“特别的看法”了
 }
 SantoDomingo_Brothel_6_f {
-嗯，也许你会挑个漂亮姑娘吧？我们可不留男孩，呵呵……
+嗯， 也许你会挑个漂亮姑娘？ 我们这可没有男孩， 呵呵…… 
 }
 SantoDomingo_Brothel_7_m {
-我改主意了……
+我改变主意了…… 
 }
 SantoDomingo_Brothel_7_f {
-我改变主意了……
+我改变主意了…… 
 }
 SantoDomingo_Brothel_8 {
-嗯，没事……
+嗯， 没事…… 
 }
 SantoDomingo_Brothel_9 {
 @<RandPhraseSimple>
 }
 SantoDomingo_Brothel_10 {
-我不行……没问题……
+我不行…… 没问题…… 
 }
 SantoDomingo_Brothel_11 {
-是啊，第三次总算成了……抱歉。
+好吧， 确实是第三次了…… 抱歉。 
 }
 SantoDomingo_Brothel_12 {
-现在不行……改天吧……
+现在不行…… 也许下次吧…… 
 }

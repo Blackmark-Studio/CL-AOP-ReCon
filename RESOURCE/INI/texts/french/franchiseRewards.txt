@@ -1,0 +1,27 @@
+condition_subscribeItem
+{
+Un petit carnet rempli de conseils courts mais importants. Un jour, vous l'avez tout simplement trouvé parmi vos affaires, et depuis, vous ne vous en séparez plus.
+}
+condition_legendGuide
+{
+Cet objet apparaîtra dans le jeu si vous êtes abonné à la page
+Caribbean Legend
+}
+condition_indian_officer
+{
+Cet officier de quête apparaîtra dans la série de quêtes d'Askold (début : "À la recherche de la poudre de momie") si vous possédez
+Caribbean Legend ou si vous avez obtenu le succès "Plus dur que le fer" lors des premiers playtests.
+}
+indian_officer_desc
+{
+L'Indien muskogee Tichingitu et son mousquet ancestral vous soutiendront dans le difficile métier de corsaire.
+~
+Ce tireur d'élite hors pair est prêt à prêter un serment d'allégeance plus dur que le fer, pour peu que vous le libériez du cachot dans lequel il a atterri par pur hasard.
+}
+noRewardYetMessage
+{
+Cette récompense n'est pas encore disponible,
+restez à l'affût des mises à jour !
+}
+steamButtonAlreadyGot {Obtenu}
+steamButtonGet {Obtenir}

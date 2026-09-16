@@ -1,0 +1,45 @@
+Gibraltar_Waitress_1 {
+¿Preguntas, @<GetAddress_Form>?
+}
+Gibraltar_Waitress_2 {
+¿Qué puedo hacer por usted, @<GetAddress_Form>?
+}
+Gibraltar_Waitress_3 {
+@<RandPhraseSimple>
+}
+Gibraltar_Waitress_4_m {
+¿Hmm, está intentando coquetear conmigo, señor?
+}
+Gibraltar_Waitress_4_f {
+¿Otra vez con esas preguntas extrañas...? ¿Disfrutas molestándome?
+}
+Gibraltar_Waitress_5_m {
+Es la tercera vez hoy que mencionas ese asunto… ¿Es tu forma de mostrar interés?
+}
+Gibraltar_Waitress_5_f {
+Esta es la tercera vez hoy que mencionas alguna pregunta... ¿Es algún tipo de broma extraña?
+}
+Gibraltar_Waitress_6 {
+¿Vas a hacer preguntas otra vez, @<GetAddress_Form>?
+}
+Gibraltar_Waitress_7_m {
+He cambiado de opinión...
+}
+Gibraltar_Waitress_7_f {
+He cambiado de opinión...
+}
+Gibraltar_Waitress_8 {
+No tengo nada que decir en este momento.
+}
+Gibraltar_Waitress_9 {
+@<RandPhraseSimple>
+}
+Gibraltar_Waitress_10 {
+No, no, para nada, hermosa...
+}
+Gibraltar_Waitress_11 {
+De ninguna manera, cariño, solo un poco de olvido...
+}
+Gibraltar_Waitress_12 {
+No, ninguna pregunta en absoluto...
+}

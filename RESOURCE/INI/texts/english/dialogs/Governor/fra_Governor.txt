@@ -1270,3 +1270,51 @@ And get the Soleil Royal in order; she must be fully battle-ready.
 fra_Governor_313 {
 Very well, sir.
 }
+fra_Governor_314_m {
+Your Excellency, I've come on Michel le Basque's behalf.
+}
+fra_Governor_314_f {
+Your Excellency, I've come on Michel le Basque's behalf.
+}
+fra_Governor_315 {
+Indeed? And what, may I ask, has Monsieur le Basque asked of you?
+}
+fra_Governor_316 {
+He's concerned about the fate of the flute 'Rose of the Winds'. As we understand it, you expected her arrival yesterday.
+}
+fra_Governor_317 {
+Captain, that is a state secret, and I have no intention of discussing it with you. I'm prepared to overlook the fact that you possess such information, but I advise you not to expect more.
+}
+fra_Governor_318 {
+Don't take my insistence for rudeness, but I must explain the cause of Michel's concern. There is someone aboard that ship whose arrival matters to him personally. He also asked me to remind you that he considers Tortuga his home and will always act in the island's defense.
+}
+fra_Governor_319 {
+So he knows what cargo is aboard?
+}
+fra_Governor_320 {
+He didn't mention it. But he suspects Diego Vargas may be involved in the ship's disappearance.
+}
+fra_Governor_321 {
+I assume that, since you're here, you intend to help me search for the vessel?
+}
+fra_Governor_322 {
+Exactly so, Governor.
+}
+fra_Governor_323 {
+Very well, I'll accept your help. The ship is to bring colonists and craftsmen here. People without whom your outpost will remain a refuge for poachers and pirates instead of becoming a civilized French commune.
+}
+fra_Governor_324 {
+Which is why even this delay is worrying. If the ship truly has been captured, the chances of finding the settlers alive diminish with every hour.
+}
+fra_Governor_325 {
+I'm glad you understand. The 'Rose of the Winds' should have appeared off the northern coast yesterday, yet she never came. We received no distress signals and no reports of a storm. I won't mobilize the garrison and spread alarm on suspicion alone. And believe me, I have good reasons for such restraint.
+}
+fra_Governor_326 {
+Any thoughts on where to begin the search?
+}
+fra_Governor_327 {
+Speak with my secretary, Henri Tessier. He compiles reports from the posts and lighthouses and has all information received up to this hour.
+}
+fra_Governor_328 {
+Thank you, Your Excellency.
+}

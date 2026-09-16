@@ -370,3 +370,9 @@ Muy bien, aquí tienes tu dinero.
 Common_ItemTrader_99 {
 No tengo tanto encima en este momento. En cuanto reúna la suma, vendré a verte.
 }
+Common_ItemTrader_100_m {
+Acérquese y elija, señorita. ¡Todo es de la mejor calidad!
+}
+Common_ItemTrader_100_f {
+¡Ay, señorita, sabía que vendría precisamente a mí!.. No sea tímida, elija lo que quiera.
+}

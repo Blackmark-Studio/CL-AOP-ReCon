@@ -1,36 +1,36 @@
 Maracaibo_ItemTrader_1 {
-什么问题？
+什么问题？ 
 }
 Maracaibo_ItemTrader_2 {
-有什么需要帮忙的吗，@<GetAddress_Form>?
+有什么需要帮忙的吗， @<GetAddress_Form>?
 }
 Maracaibo_ItemTrader_3 {
 @<RandPhraseSimple>
 }
 Maracaibo_ItemTrader_4 {
-又有问题啊，@<GetAddress_Form>……
+又有问题啊， @<GetAddress_Form>…… 
 }
 Maracaibo_ItemTrader_5 {
-问题一堆……要不要来做点生意，@<GetAddress_Form>?
+问题一堆…… 要不要来做点生意， @<GetAddress_Form>?
 }
 Maracaibo_ItemTrader_6 {
-听着，咱们还要在这废话上浪费多久？
+听着， 咱们还要在这废话上浪费多久？ 
 }
 Maracaibo_ItemTrader_7 {
-没问题……
+没问题…… 
 }
 Maracaibo_ItemTrader_8 {
-我现在没什么好说的。
+我现在没什么好说的。 
 }
 Maracaibo_ItemTrader_9 {
 @<RandPhraseSimple>
 }
 Maracaibo_ItemTrader_10 {
-唉，又来了……
+唉， 又来了…… 
 }
 Maracaibo_ItemTrader_11 {
-是啊，还是讲讲价更好……
+是啊， 还是讲讲价更好…… 
 }
 Maracaibo_ItemTrader_12 {
-嗯，抱歉啊，商人……
+嗯， 抱歉啊， 商人…… 
 }

@@ -34,6 +34,35 @@ void EI_CreateFrameWithBack(string sBackNodeName, string sFrameNodeName, string 
 	if (sFrameNodeName != "") { EI_CreateFrame(sFrameNodeName, x1, y1, x2, y2); }
 }
 
+void EI_CreateTriggerFrame(int iFrameType, int x1, int y1, int x2, int y2)
+{
+//	switch(iFrameType)
+//	{
+//		case 1:
+//			XI_MakeNode("resource\ini\interfaces\defaultnode.ini", "IMAGECOLLECTION", "TRIGGER_NODE_FRAME", 900);
+//			EI_CreateFrame("TRIGGER_NODE_FRAME", x1, y1, x2, y2);
+//			SetPictureBlind("TRIGGER_NODE_FRAME", true, argb(255, 75, 75, 75), argb(255, 165, 165, 165), 1.0, 1.0);
+//		break;
+//		case 2:
+//			XI_MakeNode("resource\ini\interfaces\defaultnode.ini", "PICTURE", "TRIGGER_NODE_FRAME", 900);
+//			SetNewGroupPicture("TRIGGER_NODE_FRAME", "LE_ICONS", "traitframe");
+//			SetNodePosition("TRIGGER_NODE_FRAME", x1, y1, x2, y2);
+//			SetPictureBlind("TRIGGER_NODE_FRAME", true, argb(255, 75, 75, 75), argb(255, 165, 165, 165), 1.0, 1.0);
+//		break;
+//		case 3:
+//			XI_MakeNode("resource\ini\interfaces\defaultnode.ini", "PICTURE", "TRIGGER_NODE_FRAME", 900);
+//			SetNewGroupPicture("TRIGGER_NODE_FRAME", "LE_ICONS", "glow1");
+//			SetNodePosition("TRIGGER_NODE_FRAME", x1, y1, x2, y2);
+//			SetPictureBlind("TRIGGER_NODE_FRAME", true, argb(255, 75, 75, 75), argb(255, 165, 165, 165), 1.0, 1.0);
+//		break;
+//	}
+}
+
+void EI_DeleteTriggerFrame()
+{
+	XI_DeleteNode("TRIGGER_NODE_FRAME");
+}
+
 // create vertical line with width = 3
 void EI_CreateVLine(string sNodeName, int x1, int y1, int y2, int iNumLines, int iWidth)
 {
@@ -79,8 +108,11 @@ void SetAlertMarks(ref chr)
 	{
 		if(!HaveAllPerks(chr, "any")) SetNodeUsing("A_ABILITIES",true);
 	}
-	if(CheckQuestInfo() || CheckNewDocs()) SetNodeUsing("A_QUESTBOOK",true);
-	if(CheckQuestInfo()) SetNodeUsing("A_QUEST",true);
-	if(CheckNewDocs()) SetNodeUsing("A_INFO",true);
+
+	bool bNewQuest = CheckQuestInfo();
+	bool bNewDocs = CheckNewDocs();
+	if(bNewQuest || bNewDocs) SetNodeUsing("A_QUESTBOOK",true);
+	if(bNewQuest) SetNodeUsing("A_QUEST",true);
+	if(bNewDocs) SetNodeUsing("A_INFO",true);
 	if(CheckAlchemyRecipe()) SetNodeUsing("A_RECIPE",true);
 }

@@ -52,6 +52,12 @@ SentJons_TownCave 		{in the dungeon of Saint John's}
 SentJons_TownCave_box1 	{under the planks in a dead end}
 SentJons_TownCave_box2 	{in a dead end of the mine}
 SentJons_TownCave_box3 	{at the blockage}
+SentJons_TownCave_box4 {at the blockage with a torch}
+SantoDomingo_TownCave {in the dungeon of Santo Domingo}
+SantoDomingo_TownCave_box1 {under the planks in a dead end}
+SantoDomingo_TownCave_box2 {in a dead end of the mine}
+SantoDomingo_TownCave_box3 {at the blockage}
+SantoDomingo_TownCave_box4 {at the blockage with a torch}
  
 Barbados_Cave			{in a cave not far from Bridgetown}		
 Barbados_Cave_box1		{under the planks in a dead end}
@@ -167,7 +173,7 @@ Tortuga_Grot_box1		{a chest on the shore}
 Tortuga_Cave			{in a dungeon of Tortuga}
 Tortuga_Cave_box1		{a chest behind a closed door}
 
-Trinidad_Grot			{in a cave opposite to the lighthouse of Trinidad and Tobago}
+Trinidad_Grot			{in a cave opposite to the lighthouse of Trinidad}
 Trinidad_Grot_box1		{a chest on the shore}
 
 FortFrance_Dungeon		{in a dungeon of Fort-de-France}
@@ -179,3 +185,6 @@ FortFrance_Dungeon_box5	{under wooden crates}
 
 Providence_Cavern       {in the through cave connecting Morgan's Head and Old Providence Island}
 Providence_Cavern_box1  {a chest behind stalagmites in a dead end}
+
+Aruba_Grot           {in a cave deep inside the island, near the Carib village}
+Aruba_Grot_box1       {chest above the large stone}

@@ -1,0 +1,82 @@
+Vargas_dialog_1 {
+Ah, I take it you're the famous Captain @<GetFullName>. I knew le Basque was a coward, but I thought he'd have enough courage to come here himself.
+}
+Vargas_dialog_2 {
+To Michel, Vargas, you're nothing more than an irritating insect. And you won't ruin his plans. Maracaibo's gold will be ours, though you won't live to see it.
+}
+Vargas_dialog_3 {
+Maracaibo's gold? So that's what he tells all of you? Ha-ha! And with this handful of fools he means to take the most impregnable fort in the entire archipelago?
+}
+Vargas_dialog_4 {
+Don't try to play games with me. I'm not Esteban Ruiz, to fall for your cheap tricks.
+}
+Vargas_dialog_5_m {
+And yet here you are... Perhaps you feel sorry for Ruiz? I don't. He was every bit the vile spawn of hell you are. The same kind of heretic and ladrón, unworthy even of a Christian burial.
+}
+Vargas_dialog_5_f {
+And yet here you are... Perhaps you feel sorry for Ruiz? I don't. He was every bit the vile spawn of hell you are. The same kind of heretic and pirate, unworthy even of a Christian burial.
+}
+Vargas_dialog_6 {
+I'll ram those words back down your throat, bastard. Defend yourself!
+}
+Vargas_dialog_7_m {
+Ahem... Fine, you know how to fight. But there's one thing you still haven't understood: Michel le Basque is more than an enemy to me. I swore I'd have his head - and I will. Even if I have to drown the whole archipelago in blood.
+}
+Vargas_dialog_7_f {
+Ahem... Fine, you know how to fight. But there's one thing you still haven't understood: Michel le Basque is more than an enemy to me. I swore I'd have his head - and I will. Even if I have to drown the whole archipelago in blood.
+}
+Vargas_dialog_8 {
+You won't have anything now. It's over. Prepare to meet the devils, Don Diego. They've been waiting for you.
+}
+Vargas_dialog_9_m {
+You didn't think I'd fight fair, did you?
+}
+Vargas_dialog_9_f {
+You didn't think I'd fight fair, did you?
+}
+Vargas_dialog_10 {
+What?.. Wh-what is... Devil... My h-head...
+}
+Vargas_dialog_11_m {
+So you're alive... That damned redskin shaman swore he'd laid a poisonous enchantment on my blade... 'A single drop of this poison is enough to fell a bull.' It seems I sent him to Father Vincente too soon.
+}
+Vargas_dialog_11_f {
+So you're alive... That damned redskin shaman swore he'd laid a poisonous enchantment on my blade... 'A single drop of this poison is enough to fell a bull.' It seems I sent him to Father Vincente too soon.
+}
+Vargas_dialog_12 {
+The Inquisition itself should be after you, Vargas. I admire your resourcefulness. But you failed to kill me with a mortar, poison, or steel. And my people are out there in the jungle. Surrender, or you die here and now.
+}
+Vargas_dialog_13 {
+Death? That's not so bad.\nWhat a view, though, @<GetFullName>. Just look... But... you could never understand me.\nI've tasted life. I've seen places you ladrones will never see... I went beyond this God-forsaken archipelago and came back again... beyond the horizon! I stood on the quarterdeck of a galleon bound for the cursed Fountain of Ponce de Leon, wiping bitter sweat from my brow and watching the stars wage war against the endless ocean.\nI felt the storm trade wind in my hair as languid caravels carried me through the black whirlpools of the Sargasso Sea, and I watched the Armada de Barlovento burn like dry straw and vanish into the deep. I saw it.\nBy the Virgin Mary, I can feel it now!..
+}
+Vargas_dialog_14 {
+You lived it.
+}
+
+LeBasque_Diego_de_Vargas_1 {
+First, information. Last time, you brought me the gossip of the port prostitutes. What's Le Basque up to this time?
+}
+
+LeBasque_Diego_de_Vargas_2 {
+And that's all?
+}
+
+LeBasque_Diego_de_Vargas_3 {
+Name?
+}
+
+LeBasque_Diego_de_Vargas_4 {
+You get it first, Guillaume.
+}
+
+LeBasque_Diego_de_Vargas_5 {
+Find out the old man's name and why Le Basque needs him - and you will get everything you ask for.
+}
+
+LeBasque_Diego_de_Vargas_6 {
+Enough whining, Guillaume. Here's the deposit and the letter. It contains further instructions. The next meeting is at the lighthouse. You'll be notified of the time separately.
+}
+
+LeBasque_Diego_de_Vargas_7 {
+Hope you don't disappoint me and get me something worthwhile. And don't even think about haggling again, Raoul. Next time, I'll pay less for someone to search your body.
+}

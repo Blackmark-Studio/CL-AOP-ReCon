@@ -1,0 +1,9 @@
+Gibraltar_Prison_1 {
+Fale, estou ouvindo.
+}
+Gibraltar_Prison_2_m {
+Eu estava enganado. Adeus.
+}
+Gibraltar_Prison_2_f {
+Eu estava enganado. Adeus.
+}

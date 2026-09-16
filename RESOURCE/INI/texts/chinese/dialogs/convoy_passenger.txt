@@ -1,233 +1,233 @@
 convoy_passenger_1_m {
-见鬼！！俺知道你是谁！只有傻子才会当你的乘客上船。告辞！
+见鬼！ ！ 我知道你是谁！ 只有傻子才会当你的乘客上船。 告辞！ 
 }
 convoy_passenger_1_f {
-哎呀，见鬼！我知道你是谁！只有傻子才会当你的乘客上船。告辞！
+哎呀， 见鬼！ 我知道你是谁！ 只有傻子才会当你的乘客上船。 告辞！ 
 }
 convoy_passenger_2 {
-啊，俺知道你是谁！老子才不上你那船，自己去找傻子吧……
+啊， 我知道你是谁！ 我才不上你那船， 自己去找傻子吧…… 
 }
 convoy_passenger_3 {
 @<RandPhraseSimple>
 }
 convoy_passenger_4 {
-哼，真是个胆小鬼……
+哼， 真是个胆小鬼…… 
 }
 convoy_passenger_5 {
-现在的人真是胆子越来越小了！
+现在的人真是胆子越来越小了！ 
 }
 convoy_passenger_6 {
 @<RandPhraseSimple>
 }
 convoy_passenger_7 {
-@<TimeGreeting>，@<GetAddress_Form>！我是@<GetFullName>。听说你这船能带客人？
+@<TimeGreeting>， @<GetAddress_Form>！ 我是@<GetFullName>。 听说你这船能带客人？ 
 }
 convoy_passenger_8 {
-也许吧，主要看我能得到什么。
+也许吧， 主要看我能得到什么。 
 }
 convoy_passenger_9 {
-我要你在@<FindDaysString>内把我送到@<XI_ConvertString>的@<XI_ConvertString>酒馆，事成之后我会付你@<FindMoneyString>。怎么样？
+我需要你在@<FindDaysString>内护送我前往@<XI_ConvertString>-@<XI_ConvertString>， 事成之后我会付你@<FindMoneyString>。 你觉得怎么样？ 
 }
 convoy_passenger_10_m {
-我同意。
+我同意。 
 }
 convoy_passenger_10_f {
-我同意。
+我同意。 
 }
 convoy_passenger_11 {
-我觉得这对我没什么吸引力。
+我觉得这对我没什么吸引力。 
 }
 convoy_passenger_12 {
-@<XI_ConvertString>，在@<XI_ConvertString>的那个
+@<XI_ConvertString>-@<XI_ConvertString>
 }
 convoy_passenger_13 {
-谢谢你。你已经履行了你的承诺。我现在来了，这是你的报酬。
+谢谢你， 船长。 你已经履行了你的承诺。 现在到我了， 这是你的报酬。 
 }
 convoy_passenger_14 {
-谢谢你。
+谢谢你。 
 }
 convoy_passenger_15_m {
-有个叫@<GetFullName>的人说，@<GetMainCharacterNameDat>船长值得信任，因为他顺利把他送到了@<XI_ConvertString>。
+有个叫@<GetFullName>的人说， @<GetMainCharacterNameDat>船长值得信任， 因为他顺利把他送到了@<XI_ConvertString>。 
 }
 convoy_passenger_15_f {
-有个叫@<GetFullName>的人说，@<GetMainCharacterNameDat>船长值得信任，因为她很顺利地把他带到了@<XI_ConvertString>。
+有个叫@<GetFullName>的人说， @<GetMainCharacterNameDat>船长值得信任， 因为她很顺利地把他带到了@<XI_ConvertString>。 
 }
 convoy_passenger_16_m {
-一位叫@<GetFullName>的乘客说，@<GetMainCharacterNameDat>船长值得信任，他把他安全送到了@<XI_ConvertString>。
+一位叫@<GetFullName>的乘客说， @<GetMainCharacterNameDat>船长值得信任， 他把他安全送到了@<XI_ConvertString>。 
 }
 convoy_passenger_16_f {
-一位叫@<GetFullName>的乘客说，@<GetMainCharacterNameDat>船长值得信任。她已经把他安全送到了@<XI_ConvertString>。
+一位叫@<GetFullName>的乘客说， @<GetMainCharacterNameDat>船长值得信任。 她已经把他安全送到了@<XI_ConvertString>。 
 }
 convoy_passenger_17 {
-我听说你这位船长对乘客说到做到。有位叫@<GetFullName>的先生对你评价很高。
+我听说你这位船长对乘客说到做到。 有位叫@<GetFullName>的先生对你评价很高。 
 }
 convoy_passenger_18 {
 @<LinkRandPhrase>
 }
 convoy_passenger_19 {
-@<RandSwear>船长，时间到了。我啥时候才能去@<XI_ConvertString>？
+@<RandSwear>船长， 时间到了。 我什么时候才能去@<XI_ConvertString>？ 
 }
 convoy_passenger_20 {
-@<RandSwear> 船长，咱们还要在这鬼地方晃多久啊？！啥时候才能到@<XI_ConvertString>？
+@<RandSwear>船长， 咱们还要在这鬼地方晃多久啊？ ！ 什么时候才能到@<XI_ConvertString>？ 
 }
 convoy_passenger_21 {
-@<RandSwear> 听着，Captain，我得去@<XI_ConvertString>，你得给我个痛快话，啥时候能成！
+@<RandSwear>听着， 船长， 我得去@<XI_ConvertString>， 你得给我个痛快话， 什么时候能成！ 
 }
 convoy_passenger_22 {
 @<LinkRandPhrase>
 }
 convoy_passenger_23 {
-船长，这已经是我第二次提醒你兑现承诺了。咱们什么时候能到@<XI_ConvertString>?
+船长， 这已经是我第二次提醒你兑现承诺了。 咱们什么时候能到@<XI_ConvertString>?
 }
 convoy_passenger_24 {
-船长，我第二次提起我的行程了。咱们到底什么时候能看到@<XI_ConvertString>的海岸？
+船长， 我第二次提起我的行程了。 咱们到底什么时候能看到@<XI_ConvertString>的海岸？ 
 }
 convoy_passenger_25 {
 @<RandPhraseSimple>
 }
 convoy_passenger_26 {
-@<RandSwear> 船长，俺都问你第三遍了，啥时候能到@<XI_ConvertString>?
+@<RandSwear>船长， 我都问你第三遍了， 什么时候能到@<XI_ConvertString>?
 }
 convoy_passenger_27 {
-船长，咱们都不知道浪费了多少时间！你到底什么时候能把我送到@<XI_ConvertString>？
+船长， 咱们都不知道浪费了多少时间！ 你到底什么时候能把我送到@<XI_ConvertString>？ 
 }
 convoy_passenger_28 {
 @<RandPhraseSimple>
 }
 convoy_passenger_29 {
-听着，船长，这事儿越来越离谱了……
+听着， 船长， 这事儿越来越离谱了…… 
 }
 convoy_passenger_30_m {
-请原谅我，最近实在太忙了……再过七天，你一定会到那儿。
+请原谅我， 最近实在太忙了…… 再过七天， 你一定会到那儿。 
 }
 convoy_passenger_30_f {
-请原谅我，最近太忙了……7天后你一定会到那儿。
+请原谅我， 最近太忙了…… 7天后你一定会到那儿。 
 }
 convoy_passenger_31 {
-抱歉，@<GetAddress_FormToNPC>，我实在没办法履行对你的承诺。不过别担心，我们一周后就到。
+抱歉， @<GetAddress_FormToNPC>， 我实在没办法履行对你的承诺。 不过别担心， 我们一周后就到。 
 }
 convoy_passenger_32 {
 @<RandPhraseSimple>
 }
 convoy_passenger_33_m {
-我得再跟你道个歉……再过一周我们就能到那儿了。
+我得再跟你道个歉…… 再过一周我们就能到那儿了。 
 }
 convoy_passenger_33_f {
-我得再向你道个歉……再过一周我们就能到那儿了。
+我得再向你道个歉…… 再过一周我们就能到那儿了。 
 }
 convoy_passenger_34 {
-我再次表示歉意。我们一周后就能到。
+我再次表示歉意。 我们一周后就能到。 
 }
 convoy_passenger_35 {
 @<RandPhraseSimple>
 }
 convoy_passenger_36_m {
-我得第三次向你道歉……我们一周后就能到。
+我得第三次向你道歉…… 我们一周后就能到。 
 }
 convoy_passenger_36_f {
-我得第三次向你道歉……我们一周后就到。
+我得第三次向你道歉…… 我们一周后就到。 
 }
 convoy_passenger_37 {
-我第三次道歉了。再过一周我们就能到，我保证……
+我第三次道歉了。 再过一周我们就能到， 我保证…… 
 }
 convoy_passenger_38 {
 @<RandPhraseSimple>
 }
 convoy_passenger_39 {
-我明白，@<GetAddress_FormToNPC>，但还请再耐心等一等……七天后我就能把你送到目的地！
+我明白， @<GetAddress_FormToNPC>， 但还请再耐心等一等…… 七天后我就能把你送到目的地！ 
 }
 convoy_passenger_40_m {
-啊……乘客啊……我都快忘了你了。你还是下到船舱里去吧，安全点，也省得来烦我。
+啊…… 乘客啊…… 我都快忘了你了。 你还是下到船舱里去吧， 安全点， 也省得来烦我。 
 }
 convoy_passenger_40_f {
-啊……乘客啊……我都快忘了你了。你还是下到船舱里去吧，省得一直来烦我。
+啊…… 乘客啊…… 我都快忘了你了。 你还是下到船舱里去吧， 省得一直来烦我。 
 }
 convoy_passenger_41 {
-呵，真有意思！俺的船上竟然闯进了外人……看样子，你得去俺的船舱里好好待一待了。
+呵， 真有意思！ 我的船上竟然闯进了外人…… 看样子， 你得去我的船舱里好好待一待了。 
 }
 convoy_passenger_42 {
 @<RandPhraseSimple>
 }
 convoy_passenger_43 {
-又来一次？真是稀奇……要不要让你去船舱里转一圈？
+又来一次？ 真是稀奇…… 要不要让你去船舱里转一圈？ 
 }
 convoy_passenger_44 {
-第三次了？这可不妙啊，嘿嘿……听着，伙计，你该下到船舱去了，别再在俺的船上乱晃了。
+第三次了？ 这可不妙啊， 嘿嘿…… 听着， 伙计， 你该下到船舱去了， 别再在我的船上乱晃了。 
 }
 convoy_passenger_45 {
-大门？啊，我明白了，真是够烦人的！行吧，游戏到此为止……欢迎来到船舱，@<GetAddress_FormToNPC>。
+大门？ 啊， 我明白了， 真是够烦人的！ 行吧， 游戏到此为止…… 欢迎来到船舱， @<GetAddress_FormToNPC>。 
 }
 convoy_passenger_46 {
-行，但这次耽误，俺得扣你工钱。
+行， 但这次耽误， 我得扣你工钱。 
 }
 convoy_passenger_47 {
-行吧，我就信你一回……不过你得记住，我会扣你工钱！
+行吧， 我就信你一回…… 不过你得记住， 我会扣你工钱！ 
 }
 convoy_passenger_48 {
-哼，俺现在是跑不掉了，不过你得记住，你的报酬可要少点……
+哼， 我现在是跑不掉了， 不过你得记住， 你的报酬可要少点…… 
 }
 convoy_passenger_49 {
 @<LinkRandPhrase>
 }
 convoy_passenger_50 {
-成交。
+成交。 
 }
 convoy_passenger_51 {
-那行吧……
+那行吧…… 
 }
 convoy_passenger_52 {
-行，就这么定了。
+行， 就这么定了。 
 }
 convoy_passenger_53 {
 @<LinkRandPhrase>
 }
 convoy_passenger_54 {
-我希望这次能信守约定。
+我希望这次能信守约定。 
 }
 convoy_passenger_55 {
-希望这是我们最后一次谈这种让人不愉快的事……
+希望这是我们最后一次谈这种让人不愉快的事…… 
 }
 convoy_passenger_56 {
 @<RandPhraseSimple>
 }
 convoy_passenger_57 {
-当然。
+当然。 
 }
 convoy_passenger_58 {
-@<RandSwear> 什么货舱？俺听不懂你说啥！
+@<RandSwear>什么货舱？ 我听不懂你说什么！ 
 }
 convoy_passenger_59 {
-这有什么不明白的？你现在是俺的俘虏！快滚到船舱去！
+这有什么不明白的？ 你现在是我的俘虏！ 快滚到船舱去！ 
 }
 convoy_passenger_60 {
-开玩笑的……大概七天后，咱们肯定能到那个城市。
+开玩笑的…… 大概七天后， 咱们肯定能到那个城市。 
 }
 convoy_passenger_61_m {
-@<RandSwear> 你给老子等着，混蛋！
+@<RandSwear>你给我等着， 混蛋！ 
 }
 convoy_passenger_61_f {
-@<RandSwear> 贱人，你给老子等着！
+@<RandSwear>贱人， 你给我等着！ 
 }
 convoy_passenger_62 {
-大家都这么说，可结果总是反过来——最后都是他们给俺钱！
+大家都这么说， 可结果总是反过来——最后都是他们给我钱！ 
 }
 convoy_passenger_63_m {
-听说有个叫@<GetFullName>的船长答应送一位名叫@<GetFullName>的乘客，结果却没守信用，还把那可怜人给抓了。看来陌生人真不能随便信啊……
+听说有个叫@<GetFullName>的船长答应送一位名叫@<GetFullName>的乘客， 结果却没守信用， 还把那可怜人给抓了。 看来陌生人真不能随便信啊…… 
 }
 convoy_passenger_63_f {
-听说有个叫@<GetFullName>的船长答应送一位叫@<GetFullName>的乘客，结果却没守信用。更糟的是，还把那可怜人给抓了。看来陌生人真不靠谱……
+听说有个叫@<GetFullName>的船长答应送一位叫@<GetFullName>的乘客， 结果却没守信用。 更糟的是， 还把那可怜人给抓了。 看来陌生人真不靠谱…… 
 }
 convoy_passenger_64_m {
-唉，这世道怎么了？！Captain @<GetFullName> 居然把一个叫 @<GetFullName> 的可怜人给抓了，人家不过是他船上的乘客啊……
+唉， 这世道怎么了？ ！ @<GetFullName>船长居然把一个叫 @<GetFullName>的可怜人给抓了， 人家不过是他船上的乘客啊…… 
 }
 convoy_passenger_64_f {
-唉，这世道怎么了？！Captain @<GetFullName> 抓了个可怜人 @<GetFullName>，明明他只是她船上的一个乘客……
+唉， 这世道怎么了？ ！ @<GetFullName>船长抓了个可怜人 @<GetFullName>， 明明他只是她船上的一个乘客…… 
 }
 convoy_passenger_65_m {
-听说你可真不是个善茬，船长。有人说可怜的@<GetFullName>是在你船上被抓的。你不是还答应要把他送到@<XI_ConvertString>吗？这可不太光彩啊……
+听说你可真不是个善茬， 船长。 有人说可怜的@<GetFullName>是在你船上被抓的。 你不是还答应要把他送到@<XI_ConvertString>吗？ 这可不太光彩啊…… 
 }
 convoy_passenger_65_f {
-听说你可真不是个好东西，船长。有人说可怜的@<GetFullName>是在你船上被抓的。你可是答应过要把他送到@<XI_ConvertString>的啊……这可不太光彩吧……
+听说你可真不是个好东西， 船长。 有人说可怜的@<GetFullName>是在你船上被抓的。 你可是答应过要把他送到@<XI_ConvertString>的啊…… 这可不太光彩吧…… 
 }
 convoy_passenger_66 {
 @<LinkRandPhrase>

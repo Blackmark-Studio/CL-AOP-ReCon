@@ -241,14 +241,28 @@ void TW_Open(string attr)
 // Когда таск ещё не окончен, но выключается BI/LI
 void TW_Close()
 {
-    if(!GetGlobalTutor() || CheckAttribute(&objTask, "Stop")) return;
+	//ле баск, шестой квест
+	if (CheckAttribute(&objTask, "Stop")) return;
 
-    objTask.Stop = "";
-    if(bSeaActive && !bAbordageStarted)
-        SendMessage(&BattleInterface , "ll", BI_MSG_TUTORIAL_SHOW, false);
-    else
-        SendMessage(&objLandInterface, "ll", BI_MSG_TUTORIAL_SHOW, false);
+	if (!GetGlobalTutor())
+	{
+		if (!CheckAttribute(&objTask, "current")) return;
 
+		if (objTask.current == "KeysLagoon_Maracaibo")
+		{
+		}
+		else
+		{
+			return;
+		}
+	}
+
+	objTask.Stop = "";
+
+	if (bSeaActive && !bAbordageStarted)
+		SendMessage(&BattleInterface, "ll", BI_MSG_TUTORIAL_SHOW, false);
+	else
+		SendMessage(&objLandInterface, "ll", BI_MSG_TUTORIAL_SHOW, false);
     // Обновить инфу по контролкам
 //	ControlsDesc();
 }
@@ -273,7 +287,16 @@ void TW_Release()
 // Проверки в скриптах
 bool TW_IsActive()
 {
-    return GetGlobalTutor() && CheckAttribute(&objTask, "current");
+	//ле баск, шестой квест
+	if (CheckAttribute(&objTask, "current"))
+	{
+		if (objTask.current == "KeysLagoon_Maracaibo") return true;
+	}
+
+	if (!GetGlobalTutor()) return false;
+	if (!CheckAttribute(&objTask, "current")) return false;
+
+	return true;
 }
 
 // Процессирование
@@ -523,9 +546,8 @@ void TW_AddBottomText(string curText, string Text, string Color)
 
 void TW_RemoveBottomText()
 {
-    aref arText, arTextUp;
+    aref arTextUp;
     string sTask = objTask.current;
-    makearef(arText, objTask.(sTask).texts.(curText));
 
     arTextUp = TW_GetBottom(sTask);
     string curText = GetAttributeName(arTextUp);

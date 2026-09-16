@@ -36,7 +36,7 @@
 // "laallll" (character index,character attributes, base ship attributes, is my ship flag, relation, ship color, is transferable ship flag)
 #define BI_IN_CREATE_SHIP 46011
 #define BI_IN_DELETE_SHIP 46012      // "l" (character index)
-#define BI_IN_SET_COMMAND_MODE 46013 // "lll" (command mode, command icon number, character index)
+#define BI_IN_SET_COMMAND_MODE 46013 // "llllll" (command mode, texture number, picture number, character index, command state)
 #define BI_SET_VISIBLE 46014         // "l" (visible flag)
 #define BI_SET_ISLAND_LOCATORS 46002 // "la"
 #define BI_MSG_REFRESH 46005         //

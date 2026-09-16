@@ -73,4 +73,5 @@ go_portman {Władze portowe}
 go_doctor {Doktor}
 go_fenix {Platforma Feniks}
 go_diffIndoor {Fluyt Diffindoor}
+go_outpost {Posterunek}
 worldmap_sea {Wyjście na morze}

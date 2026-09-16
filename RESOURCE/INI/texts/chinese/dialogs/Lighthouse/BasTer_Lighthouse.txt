@@ -1,26 +1,26 @@
 BasTer_Lighthouse_1 {
-你想干什么？
+你想干什么？ 
 }
 BasTer_Lighthouse_2 {
-你想问啥？
+你想问什么？ 
 }
 BasTer_Lighthouse_3 {
 @<RandPhraseSimple>
 }
 BasTer_Lighthouse_4 {
-那你说说，@<GetAddress_Form>，你到底对什么感兴趣？
+那你说说， @<GetAddress_Form>， 你到底对什么感兴趣？ 
 }
 BasTer_Lighthouse_5 {
-你今天已经第三次想问问题了……
+你今天已经第三次想问问题了…… 
 }
 BasTer_Lighthouse_6 {
-够了，你把我都折腾累了，快离开我家！
+够了， 你把我都折腾累了， 快离开我家！ 
 }
 BasTer_Lighthouse_7_m {
-我改主意了……
+我改主意了…… 
 }
 BasTer_Lighthouse_7_f {
-我改主意了……
+我改主意了…… 
 }
 BasTer_Lighthouse_8 {
 我现在没什么可说的
@@ -29,14 +29,14 @@ BasTer_Lighthouse_9 {
 @<RandPhraseSimple>
 }
 BasTer_Lighthouse_10_m {
-哎呀，我好像忘了。不好意思……
+哎呀， 我好像忘了。不好意思…… 
 }
 BasTer_Lighthouse_10_f {
-哎呀，我好像忘了点什么，抱歉……
+哎呀， 我好像忘了点什么， 抱歉…… 
 }
 BasTer_Lighthouse_11 {
-看来第三次总算成了啊……
+看来第三次总算成了啊…… 
 }
 BasTer_Lighthouse_12 {
-抱歉……
+抱歉…… 
 }

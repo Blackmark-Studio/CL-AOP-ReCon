@@ -142,3 +142,9 @@ Już idziemy, kapitanie! Zbiorę chłopaków i natychmiast ruszamy na pokład!
 Sailor_42 {
 No dalej, pospieszcie się, nie zamierzam tu długo zostawać.
 }
+Sailor_43 {
+Witaj, pani! Czego możesz chcieć od prostego marynarza?
+}
+Sailor_44 {
+Ależ nic, po prostu przechodziłam obok.
+}

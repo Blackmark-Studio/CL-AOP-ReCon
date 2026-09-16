@@ -1,0 +1,111 @@
+ArubaIndian_dialog_1 {
+没什么可说的！
+}
+ArubaIndian_dialog_2_m {
+白皮肤想说话？
+}
+ArubaIndian_dialog_2_f {
+白人女人想说话？
+}
+ArubaIndian_dialog_3_m {
+又是你，白皮肤。
+}
+ArubaIndian_dialog_3_f {
+又是你，白人女人。
+}
+ArubaIndian_dialog_4_m {
+白皮肤喜欢说话。他像个女人一样。
+}
+ArubaIndian_dialog_4_f {
+白人女人喜欢说话。
+}
+ArubaIndian_dialog_5_m {
+神灵把白皮肤兄弟带到我这里。
+}
+ArubaIndian_dialog_5_f {
+神灵把白皮肤姐妹带到我这里。
+}
+ArubaIndian_dialog_6 {
+是。
+}
+ArubaIndian_dialog_7 {
+是，又是我。
+}
+ArubaIndian_dialog_8 {
+真有诗意。
+}
+ArubaIndian_dialog_9_m {
+我也很高兴见到你。
+}
+ArubaIndian_dialog_9_f {
+我也很高兴见到你。
+}
+ArubaIndian_dialog_10_m {
+说吧。你为什么来？
+}
+ArubaIndian_dialog_10_f {
+说吧。你为什么来？
+}
+ArubaIndian_dialog_11_m {
+没什么特别的，只是想听你说说话……
+}
+ArubaIndian_dialog_11_f {
+没什么特别的，只是想听你说说话……
+}
+ArubaIndian_dialog_12_m {
+白人想说话？
+}
+ArubaIndian_dialog_12_f {
+白人女人想说话？
+}
+ArubaIndian_dialog_13 {
+又是你，雅拉瑙伊？
+}
+ArubaIndian_dialog_14_m {
+白皮肤喜欢说话。
+}
+ArubaIndian_dialog_14_f {
+白皮肤女人喜欢说话。
+}
+ArubaIndian_dialog_15_m {
+神灵把白皮肤兄弟带到我这里……
+}
+ArubaIndian_dialog_15_f {
+神灵把白人女人带到我这里……
+}
+ArubaIndian_dialog_16_m {
+@<npchar.name>在听你说，海之子。
+}
+ArubaIndian_dialog_16_f {
+@<npchar.name>在听你说，海之女。
+}
+ArubaIndian_dialog_17_m {
+你想从@<npchar.name>这里得到什么，白皮肤？
+}
+ArubaIndian_dialog_17_f {
+你想从@<npchar.name>这里得到什么，白皮肤？
+}
+ArubaIndian_dialog_18_m {
+我的耳朵听着你的话，异乡人。
+}
+ArubaIndian_dialog_18_f {
+我的耳朵听着你的话，异乡人。
+}
+ArubaIndian_dialog_19_m {
+没什么特别的，只是想听你说说话……
+}
+ArubaIndian_dialog_19_f {
+没什么特别的，只是想听你说说话……
+}
+ArubaIndian_dialog_20 {
+收起武器，雅拉瑙伊，否则我们会逼你收起来！
+}
+ArubaIndian_dialog_21 {
+好。
+}
+ArubaIndian_dialog_22 {
+行。
+}
+ArubaIndian_dialog_23 {
+别担心，我已经在收了……
+}

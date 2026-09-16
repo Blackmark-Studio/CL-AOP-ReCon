@@ -1,48 +1,68 @@
 Villemstad_Brothel_1_m {
-有啥问题吗，小伙子？
+有什么问题吗， 小伙子？ 
 }
 Villemstad_Brothel_1_f {
-还有什么问题吗，小姑娘？
+还有什么问题吗， 小姑娘？ 
 }
 Villemstad_Brothel_2_m {
-你想干嘛，帅哥？有话就问吧。
+你想干嘛， 帅哥？ 有话就问吧。 
 }
 Villemstad_Brothel_2_f {
-你想干啥，美女？有啥问题就问吧。
+你想干什么， 美女？ 有什么问题就问吧。 
 }
 Villemstad_Brothel_3 {
 @<RandPhraseSimple>
 }
 Villemstad_Brothel_4 {
-又有问题？
+又来问问题了？ 
 }
 Villemstad_Brothel_5 {
-呵呵，今天都第三次了，还是这些问题……
+呵呵， 今天都第三次了， 还是这些问题…… 
 }
 Villemstad_Brothel_6_m {
-哼，怎么，不打算挑个美女自己留着？不然俺可要对你有点看法了……
+嗯…… 也许你该给自己挑个美女？ 不然的话， 我可就要对你形成某种“特别的看法”了
 }
 Villemstad_Brothel_6_f {
-嗯，也许你能挑个漂亮姑娘？我们可不留男孩，呵呵……
+嗯， 也许你会挑个漂亮姑娘？ 我们这可没有男孩， 呵呵…… 
 }
 Villemstad_Brothel_7_m {
-我改主意了……
+我改变主意了…… 
 }
 Villemstad_Brothel_7_f {
-我改变主意了……
+我改变主意了…… 
 }
 Villemstad_Brothel_8 {
-嗯，没事……
+嗯， 没事…… 
 }
 Villemstad_Brothel_9 {
 @<RandPhraseSimple>
 }
 Villemstad_Brothel_10 {
-我不行……没问题……
+我不行…… 没问题…… 
 }
 Villemstad_Brothel_11 {
-是啊，第三次总算成了……抱歉。
+好吧， 确实是第三次了…… 抱歉。 
 }
 Villemstad_Brothel_12 {
-现在不行……改天吧……
+现在不行…… 也许下次吧…… 
 }
+
+Villemstad_Brothel_13 {我有个有些不同寻常的提议。您能把衣柜里最好的一条裙子卖给我吗？}
+Villemstad_Brothel_14 {我又来谈那条裙子的事。}
+Villemstad_Brothel_15 {确实不同寻常。恐怕这样的帮忙会让您花上一大笔钱。}
+Villemstad_Brothel_16 {或许我可以租一个晚上，或者两晚？}
+Villemstad_Brothel_17 {我想可以安排。就算15000比索吧，但你得保证按时归还，而且完好无损、没有一点污渍。}
+Villemstad_Brothel_18 {一点污渍都不会有……既然价钱已经谈妥了，您这里也许还有合适的狂欢节面具吧？最好能把整张脸都遮住。}
+Villemstad_Brothel_19 {总能找到合适的。五万，它就是你的。}
+Villemstad_Brothel_20 {什么？！您该不会把价钱说错了吧？}
+Villemstad_Brothel_21 {我想我们之间只是有一点误会。你大概误把我当成了一个愚蠢的女人，以为我看不出你想隐瞒身份混进本地官邸。五万买我的沉默，一万五租一晚裙子，面具我白送。怎么样？}
+Villemstad_Brothel_22 {您可真会做生意。看来我没有别的选择。钱给您。希望这身衣服的式样不会让我失望。}
+Villemstad_Brothel_23 {好吧，我再想想，也许晚些时候再来。}
+Villemstad_Brothel_24 {怎么样，这笔交易还做吗？65000比索。}
+Villemstad_Brothel_25 {钱给您。希望这身衣服的式样不会让我失望。}
+Villemstad_Brothel_26 {我还在考虑您的条件到底值不值得。}
+Villemstad_Brothel_27 {你换上了狂欢节服装}
+Villemstad_Brothel_28 {这里再收紧一点，我就差不多满意了。真可惜，安杰莉卡，你年轻时没穿过束腰，不然现在会合身得多。你的腰身还是能让人看出平民姑娘的底子。}
+Villemstad_Brothel_29 {士兵不会注意这些，接下来我自己能应付。}
+Villemstad_Brothel_30 {不，确实不坏，不坏。我甚至改主意了。衣服不用还我，就当你已经买下了。}
+Villemstad_Brothel_31 {这笔买卖我喜欢多了。我当然不会拒绝。好了，我得赶紧走，不然要迟到了！}

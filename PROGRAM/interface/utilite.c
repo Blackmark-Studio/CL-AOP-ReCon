@@ -20,7 +20,8 @@ native void XI_WindowShow(string sWindowName, int bShowStatus);
 native void XI_WindowDisable(string sWindowName, int bDisableStatus);
 native void XI_WindowAddNode(string sWindowName, string sNodeName);
 native bool XI_CreateFolder(string sFolderName);
-native bool XI_CheckFolder(string sFolderName);
+native bool XI_CheckFolder(string sFolderName); // > работает и для файлов (это просто exists())
+native bool XI_CheckFileByMask(string sFolderName, string sMask, int bRecursive); // > есть ли в папке хоть один файл по маске; выход на первом совпадении
 native bool XI_DeleteFolder(string sFolderName);
 native bool XI_FindFolders(string sFindTemplate, aref arFoldersList);
 native int XI_StoreNodeLocksWithOff();
@@ -34,6 +35,9 @@ native string StringToUpper(string sBase);
 native string StringToLower(string sBase);
 
 #libriary "script_interface_functions"
+
+#define TOOLTIP_WIDTH_MIN 140
+#define TOOLTIP_WIDTH_MAX 380
 
 void CreateImage(string AttrName, string imgListName, string imgName, int left, int top, int right, int bottom)
 {
@@ -63,6 +67,130 @@ void GetNodePosition(string sNode, ref x1, ref y1, ref x2, ref y2)
 void SetNodePosition(string sNode, int x1, int y1, int x2, int y2)
 {
 	SendMessage(&GameInterface, "lsllllll", MSG_INTERFACE_MSG_TO_NODE, sNode, -1, 4, x1, y1, x2, y2);
+}
+
+void GetTriggerFramePosition(string sNode, ref x1, ref y1, ref x2, ref y2)
+{
+	SendMessage(&GameInterface, "lslleeee", MSG_INTERFACE_MSG_TO_NODE, sNode, -1, 6, &x1, &y1, &x2, &y2);
+}
+
+void SetTriggerFramePosition(string sNode, int x1, int y1, int x2, int y2)
+{
+	SendMessage(&GameInterface, "lsllllll", MSG_INTERFACE_MSG_TO_NODE, sNode, -1, 7, x1, y1, x2, y2);
+}
+
+void GetTriggerFrameType(string sNode, ref type)
+{
+	SendMessage(&GameInterface, "lslle", MSG_INTERFACE_MSG_TO_NODE, sNode, -1, 8, &type);
+}
+
+void SetTriggerFrameType(string sNode, int type)
+{
+	SendMessage(&GameInterface, "lslll", MSG_INTERFACE_MSG_TO_NODE, sNode, -1, 9, type);
+}
+
+void SetUseTrigger(string sNode, bool useTrigger)
+{
+	SendMessage(&GameInterface, "lslll", MSG_INTERFACE_MSG_TO_NODE, sNode, -1, 10, useTrigger);
+}
+
+// задержка подсказок
+#event_handler("Event_GetTriggerDelay","Event_GetTriggerDelay");
+float Event_GetTriggerDelay()
+{
+	float fDelay = 1.0;
+	switch(iGlobalHelpTime)
+	{
+		// при отрицательном значении подсказки выключены
+		case 0:		fDelay = 0.65;		break;
+		case 1:		fDelay = 0.3;		break;
+		case 2: 	fDelay = 0.0;		break;
+		case 3: 	fDelay = 0.0;		break;
+	}
+	return fDelay;
+}
+
+#event_handler("Event_NodeStartTrigger","Event_NodeStartTrigger");
+void Event_NodeStartTrigger()
+{
+	string sNode = GetEventData();
+	int x1, y1, x2, y2;
+	GetTriggerFramePosition(sNode, &x1, &y1, &x2, &y2);
+//	Trace("TriggerFramePos: " + sNode + ": " + x1 + ","+ y1 + ","+ x2 + ","+ y2);
+//	GetNodePosition(sNode, &x1, &y1, &x2, &y2);
+//	Trace("NodePos: " + sNode + ": " + x1 + ","+ y1 + ","+ x2 + ","+ y2);
+	int frameType;
+	GetTriggerFrameType(sNode, &frameType);
+	EI_CreateTriggerFrame(frameType, x1, y1, x2, y2);
+}
+
+#event_handler("Event_NodeEndTrigger","Event_NodeEndTrigger");
+void Event_NodeEndTrigger()
+{
+	string sNode = GetEventData();
+	Event("ShowInfoWindow", "s", sNode);
+}
+
+#event_handler("Event_ChangeTableTriggerFrame","Event_ChangeTableTriggerFrame");
+void Event_ChangeTableTriggerFrame()
+{
+	string sNode = GetEventData();
+	int line = GetEventData();
+	int col = GetEventData();
+	int left = GetEventData();
+	int top = GetEventData();
+	int right = GetEventData();
+	int bottom = GetEventData();
+	if(line >= 0)
+	{
+		if(col < 0)
+		{
+			if(!CheckAttribute(&GameInterface, sNode + ".tr" + line))
+				GetTriggerFramePosition(sNode, &left, &top, &right, &bottom);
+		}
+		else
+		{
+			line++;
+			col++;
+			if(!CheckAttribute(&GameInterface, sNode + ".tr" + line + ".td" + col))
+				GetTriggerFramePosition(sNode, &left, &top, &right, &bottom);
+		}
+	}
+	else
+	{
+		line = 1;
+		col++;
+		if(!CheckAttribute(&GameInterface, sNode + ".tr" + line + ".td" + col))
+			GetTriggerFramePosition(sNode, &left, &top, &right, &bottom);
+	}
+	EI_DeleteTriggerFrame();
+	int frameType;
+	GetTriggerFrameType(sNode, &frameType);
+	EI_CreateTriggerFrame(frameType, left, top, right, bottom);
+	Event("ShowInfoWindow", "s", sNode);
+}
+
+#event_handler("Event_ChangeScrollLineTrigger","Event_ChangeScrollLineTrigger");
+void Event_ChangeScrollLineTrigger()
+{
+	string sNode = GetEventData();
+	int iLine = GetEventData();
+	int left = GetEventData();
+	int top = GetEventData();
+	int right = GetEventData();
+	int bottom = GetEventData();
+	EI_DeleteTriggerFrame();
+	int frameType;
+	GetTriggerFrameType(sNode, &frameType);
+	EI_CreateTriggerFrame(frameType, left, top, right, bottom);
+	Event("ShowInfoWindow", "s", sNode);
+}
+
+#event_handler("Event_NullTrigger","Event_NullTrigger");
+void Event_NullTrigger()
+{
+	EI_DeleteTriggerFrame();
+	Event("HideInfoWindow");
 }
 
 void CreateString(int enable, string strName, string strData, string fontName, int color, int x, int y, int alignment, float scale)
@@ -293,6 +421,11 @@ void SetFormattedTextLastLineColor(string _sNodeName, int _iColor)
 // <--
 //-------------------------------------------------------------------------------------------------------------
 
+void Picture_SetColor(string sNode, int iColor)
+{
+	SendMessage(&GameInterface, "lsll", MSG_INTERFACE_MSG_TO_NODE, sNode, 4, iColor);
+}
+
 //string FloatToString(float fl, int nDigAfterPoint)
 //{
 //	fl = fl + 0.5 / pow(10.0, nDigAfterPoint); // округление
@@ -389,6 +522,29 @@ void FillImagesGroupForItems(aref arImgGrp)
 		arImgGrp.(stmp) = GetAttributeName(GetAttributeN(&objtmp, i));
 		n++;
 	}
+}
+
+// > Индекс текстуры предмета в группе arImgGrp; добавляет её, если ещё нет; быстрая альтернатива FillImagesGroupForItems
+int EnsureItemTextureInGroup(aref arImgGrp, string itemName)
+{
+	aref arItm;
+	string sTexName = "ICONS";
+
+	if (Items_FindItem(itemName, &arItm) >= 0 && CheckAttribute(arItm, "picTexture"))
+		sTexName = arItm.picTexture;
+
+	int i, q = GetAttributesNum(arImgGrp);
+
+	for (i = 0; i < q; i++)
+	{
+		if (GetAttributeValue(GetAttributeN(arImgGrp, i)) == sTexName)
+			return i;
+	}
+
+	string sSlot = "t" + q; // > добавляем в конец
+	arImgGrp.(sSlot) = sTexName;
+
+	return q;
 }
 
 string GetFacePicName(ref chref)
@@ -531,36 +687,36 @@ void FillFaceList(string strAccess, ref chref, int fillCode)
 
 void FillShipList(string strAccess, ref chref)
 {
-	/*
 	aref ar;
 	makearef(ar, GameInterface.(strAccess));
 
-	int n, cn, q;
-	int iShipType;
+	AddShipListGroups(strAccess, chref);
+
+	bool bAlsoMain = true;
+	if (CheckAttribute(chref, "index"))
+	{
+		if (sti(chref.index) == GetMainCharacterIndex()) bAlsoMain = false;
+	}
+	if (bAlsoMain) AddShipListGroups(strAccess, pchar);
+}
+
+void AddShipListGroups(string strAccess, ref chref)
+{
+	int n, cn, iShipType;
 	string sShip;
 
-	for(n=0; n<COMPANION_MAX; n++)
+	for (n = 0; n < COMPANION_MAX; n++)
 	{
 		cn = GetCompanionIndex(chref, n);
-		if(cn != -1)
-		{
-			iShipType = GetCharacterShipType(/*&*//*characters[cn]);
-			iShipType = sti(RealShips[iShipType].basetype);
-			sShip = ShipsTypes[iShipType].name;
-			AddFaceGroup(strAccess,"SHIPS_"+sShip);
-		}
-	}
-	*/
+		if (cn == -1) continue;
 
-	aref ar;
-	makearef(ar, GameInterface.(strAccess));
+		iShipType = sti(characters[cn].ship.type);
+		if (iShipType == SHIP_NOTUSED || iShipType >= REAL_SHIPS_QUANTITY || iShipType < 0) continue;
 
-	int n;
-	string sShip;
+		iShipType = sti(RealShips[iShipType].basetype);
+		if (iShipType < 0 || iShipType >= SHIP_TYPES_QUANTITY) continue;
 
-	for (n = 0; n < SHIP_TYPES_QUANTITY; n++)
-	{
-		sShip = ShipsTypes[n].name;
+		sShip = ShipsTypes[iShipType].name;
 		AddFaceGroup(strAccess, "SHIPS_" + sShip);
 	}
 }
@@ -676,11 +832,13 @@ void CreateTooltip(string header, string text1, int color1, string text2, int co
 	XI_MakeNode("", "TOOLTIP_TEXT3", "tooltip_text3", 30002); //
 	XI_MakeNode("", "TOOLTIP_TEXT4", "tooltip_text4", 30002); //
 
-	string sFile, sFolder;
-	if (SeparatePath("RESOURCE\Textures\\" + picTexture, &sFile, &sFolder) && !FindFile(sFolder, sFile + ".tx", "*.tx", true))
+	string sTexPath = "RESOURCE\Textures\" + picTexture;
+	if (!XI_CheckFolder(sTexPath + ".tx") && !XI_CheckFolder(sTexPath))
 		picTexture = "";
 
-	SendMessage(&GameInterface, "lsslslslslsssll", MSG_INTERFACE_SET_TOOLTIP, header, text1, color1, text2, color2, text3, color3, text4, color4, picTexture, picGroup, picImage, nPicWidth, nPicHeight);
+	SendMessage(&GameInterface, "lssslslslslsssll", MSG_INTERFACE_SET_TOOLTIP, "",
+				header, text1, color1, text2, color2, text3, color3, text4, color4,
+				picTexture, picGroup, picImage, nPicWidth, nPicHeight);
 }
 
 void CloseTooltip()
@@ -712,6 +870,75 @@ void CloseTooltip()
 		XI_RestoreNodeLocks(nSaveNodeState);
 		InterfaceStates.tooltip.savestate = -1;
 	}
+}
+
+void CreateTooltipNew(string sNode, string header, string text1, string text2, string text3, string text4, string picTexture, string picGroup, string picImage, int nPicWidth, int nPicHeight)
+{
+	/*
+		список нод такой:
+		tooltip_shadow
+		tooltip_back
+		tooltip_frame
+		tooltip_titlerect
+		tooltip_title
+		tooltip_picture
+		tooltip_text1
+		tooltip_text2
+		tooltip_text3
+		tooltip_text4
+	*/
+	bool bHeader = (header != "");
+	int color1, color2, color3, color4;
+	if(bHeader)
+	{
+		XI_MakeNode( "", "TOOLTIP_FRAMEN", "tooltip_frame", 30003 ); // рамка
+	}
+	else
+	{
+		XI_MakeNode( "", "TOOLTIP_FRAME_WITHOUT_TITLE", "tooltip_frame", 30003 ); // рамка
+	}
+	XI_MakeNode( "", "TOOLTIP_TITLEORN", "tooltip_ornament", 30002 ); // вензель
+	XI_MakeNode( "", "TOOLTIP_FRAME_SHADOW", "tooltip_shadow", 30000 ); // тень окна
+	XI_MakeNode( "", "TOOLTIP_BACK", "tooltip_back", 30001 ); // фон окна
+	XI_MakeNode( "", "TOOLTIP_TITLERECT", "tooltip_titlerect", 30002 ); // фон заголовка
+	XI_MakeNode( "", "TOOLTIP_TITLEN", "tooltip_title", 30004 ); // заголовок
+	XI_MakeNode( "", "TOOLTIP_PICTUREN", "tooltip_picture", 30003 ); // картинка
+	XI_MakeNode( "", "TOOLTIP_TEXTN", "tooltip_text1", 30004 ); //
+	XI_MakeNode( "", "TOOLTIP_TEXTN", "tooltip_text2", 30004 ); //
+	XI_MakeNode( "", "TOOLTIP_TEXTN", "tooltip_text3", 30004 ); //
+	XI_MakeNode( "", "TOOLTIP_TEXTN", "tooltip_text4", 30004 ); //
+	// цвета текста
+	color1 = argb(255,255,255,255);
+	color2 = argb(255,255,192,192);
+	color3 = argb(255,255,255,255);
+	color4 = argb(255,255,255,255);
+
+	string sTexPath = "RESOURCE\Textures\" + picTexture;
+	if (!XI_CheckFolder(sTexPath + ".tx") && !XI_CheckFolder(sTexPath))
+		picTexture = "";
+
+	int x1, y1, x2, y2;
+	GetNodePosition(sNode, &x1, &y1, &x2, &y2);
+	SendMessage(&GameInterface, "lssslslslslsssllllllll", MSG_INTERFACE_SET_TOOLTIP, "new",
+				header, text1, color1, text2, color2, text3, color3, text4, color4,
+				picTexture, picGroup, picImage, nPicWidth, nPicHeight,
+				x1, y1, x2, y2, TOOLTIP_WIDTH_MIN, TOOLTIP_WIDTH_MAX);
+}
+
+void CloseTooltipNew()
+{
+	XI_DeleteNode("tooltip_frame"); // окно
+	XI_DeleteNode("tooltip_shadow");
+	XI_DeleteNode("tooltip_back");
+	XI_DeleteNode("tooltip_titlerect"); // заголовок
+	XI_DeleteNode("tooltip_picture"); // картинка
+	XI_DeleteNode("tooltip_ornament");
+	XI_DeleteNode("tooltip_title"); // заголовок
+	XI_DeleteNode("tooltip_text1"); //
+	XI_DeleteNode("tooltip_text2"); //
+	XI_DeleteNode("tooltip_text3"); //
+	XI_DeleteNode("tooltip_text4"); //
+	XI_DeleteNode("tooltip_windrose");
 }
 
 string GetMoralePicture(float fMoraleValue)
@@ -948,7 +1175,7 @@ string GetLevelComplexity(int _Level_Complexity)
 	}
 }
 
-string GetItemDescribe(int iGoodIndex)
+string GetItemDescribe(int iGoodIndex, ref _rChar)
 {
 	string GoodName = Items[iGoodIndex].name;
 	ref arItm = &Items[iGoodIndex];
@@ -961,15 +1188,27 @@ string GetItemDescribe(int iGoodIndex)
         string groupID = arItm.groupID;
 		if (groupID == GUN_ITEM_TYPE || groupID == MUSKET_ITEM_TYPE)
 		{
-			describeStr += GetAssembledString(
-						LanguageConvertString(lngFileID, "weapon gun parameters"),
-						arItm) + newStr();
+			if (CurrentInterface == INTERFACE_ITEMS && IsEquipCharacterByItem(_rChar, arItm.id))
+			{
+				effectStr = LAi_GetCharacterBulletType(_rChar, groupID);
+
+				if (CheckAttribute(arItm, "type." + effectStr + ".Bullet"))
+				{
+					describeStr += GetAssembledString(LanguageConvertString(lngFileID, "weapon gun parameter damage"), arItm) + " ";
+
+					if (CheckAttribute(arItm, "type." + effectStr + ".ChargeSpeed"))
+						describeStr += LanguageConvertString(lngFileID, "weapon gun parameter charge speed") + " " + FindRussianIdiomsString(sti(arItm.type.(effectStr).ChargeSpeed), "second") + ", ";
+
+					if (CheckAttribute(arItm, "type." + effectStr + ".Accuracy"))
+						describeStr += LanguageConvertString(lngFileID, "weapon gun parameter accuracy") + " " + arItm.type.(effectStr).Accuracy + "%" + newStr();
+				}
+			}
+			else
+				describeStr += GetAssembledString(LanguageConvertString(lngFileID, "weapon gun parameters"), arItm) + newStr();
 		}
 		else if (groupID == BLADE_ITEM_TYPE)
 		{
-			describeStr += GetAssembledString(
-						LanguageConvertString(lngFileID, "weapon blade parameters"),
-						arItm) + newStr();
+			describeStr += GetAssembledString(LanguageConvertString(lngFileID, "weapon blade parameters"), arItm) + newStr();
 			if (CheckAttribute(arItm, "FencingType"))
 			{
 				arItm.FencingTypeName = XI_ConvertString(arItm.FencingType);
@@ -977,7 +1216,7 @@ string GetItemDescribe(int iGoodIndex)
 			}
 			else
 			{
-				describeStr += "ERROR" + newStr();
+				describeStr += "ERROR GetItemDescribe " + iGoodIndex + newStr();
 			}
 		}
 	}
@@ -1093,8 +1332,9 @@ void QoLSortTable(string tableName, int column, string datatype, bool preserveSt
 				case "floatEnd": // преобразуем в число с точкой, отрезав от строки offset символов с начала
 					string lNum = upRow.(cellName).str;
 					string rNum = downRow.(cellName).str;
-					lNum = strcut(lNum, offset, strlen(&lNum) - 1);
-					rNum = strcut(rNum, offset, strlen(&rNum) - 1);
+					// если резать нечего, strcut ругается Invalid range
+					if (strlen(&lNum) > offset) lNum = strcut(lNum, offset, strlen(&lNum) - 1);
+					if (strlen(&rNum) > offset) rNum = strcut(rNum, offset, strlen(&rNum) - 1);
 					compare = stf(lNum) > stf(rNum);
 				break;
 				case "integer":
@@ -1151,22 +1391,17 @@ int DateStringToInt(string dateString)
 	if (HasSubStr(&dateString, "M")) pos += 3; // AM/PM
 	date = strcut(&dateString, pos + 1, strlen(&dateString) - 1);
 
-	totalTime += sti(strcut(&date, 6, 9)) - STARTGAME_YEAR;
-	totalTime *= 365;
+	int yr = sti(strcut(&date, 6, 9));
+	int mo = sti(strcut(&date, 3, 4));
+	int dd = sti(strcut(&date, 0, 1));
 
-	for (int i = 1; i <= sti(strcut(&date, 3, 4)); i++)
-	{
-		totalTime += GetMonthDays(i, GetDataYear()); // заливаем дни за прошедшие месяцы
-	}
+	int hh = sti(strcut(&time, 0, 1));
+	if (HasSubStr(&dateString, "P")) hh += 12; // после полудня, накидываем ещё 12 часов
 
-	totalTime += sti(strcut(&date, 0, 1));
-	totalTime *= 24;
+	int mn = sti(strcut(&time, 3, 4));
 
-	totalTime += sti(strcut(&time, 0, 1));
-	if (HasSubStr(&dateString, "P")) totalTime += 12; // после полудня, накидываем ещё 12 часов
-	totalTime *= 60;
-
-	totalTime += sti(strcut(&time, 3, 4));
+	// > Учёт високосных лет
+	totalTime = ((DateToEpochDays(yr, mo, dd) * 24 + hh) * 60) + mn;
 
 	return totalTime;
 }
@@ -1180,3 +1415,65 @@ bool CompareStringsByABC(string left, string right)
 		return 0;
 	return res;
 }
+
+//////////////////////
+// TIPS -->
+//////////////////////
+void InitTips()
+{
+    gCurTipNum = 0;
+	gTips[0] = "";
+	gTipsPerm[0] = 0;
+	gTips[1] = "";
+	gTipsPerm[1] = 1;
+
+	gTipsQty = GetFileStringsQuantity("GameTips.txt");
+	if (gTipsQty <= 0)
+	{
+		gTipsQty = 0;
+	    return;
+	}
+	if (gTipsQty < 2)
+	{
+        gTips[0] = "Tip" + 0;
+		gTipsPerm[0] = 0;
+		gTips[1] = "Tip" + 0;
+		gTipsPerm[1] = 1;
+        return;
+	}
+
+    SetArraySize(&gTips, gTipsQty);
+    SetArraySize(&gTipsPerm, gTipsQty);
+    for (int i = 0; i < gTipsQty; i++)
+    {
+        gTipsPerm[i] = i;
+        gTips[i] = "Tip" + i;
+    }
+    ShuffleArray_Int(&gTipsPerm);
+}
+
+string GetNewTip()
+{
+    if (gTipsQty <= 0)
+        return "";
+
+	gCurTipNum++;
+    if (gCurTipNum >= gTipsQty)
+    {
+        int prev = gTipsPerm[gTipsQty - 1];
+        ShuffleArray_Int(&gTipsPerm);
+        gCurTipNum = 0;
+        if (gTipsPerm[gCurTipNum] == prev)
+		{
+			gCurTipNum = 1;
+		}
+    }
+
+	return GetConvertStr(gTips[gTipsPerm[gCurTipNum]], "GameTips.txt");
+}
+
+#event_handler("Tips_GetText", "Tips_GetText");
+string Tips_GetText() { return GetNewTip(); }
+//////////////////////
+// <-- TIPS
+//////////////////////

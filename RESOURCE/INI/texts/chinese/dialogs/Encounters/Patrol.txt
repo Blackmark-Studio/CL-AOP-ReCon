@@ -1,284 +1,284 @@
 Patrol_1_m {
-啊，看来那家伙在@<XI_ConvertString>报警了！快抓住他！
+啊， 看来那家伙在@<XI_ConvertString>报警了！ 快抓住他！ 
 }
 Patrol_1_f {
-啊，看来那娘们在@<XI_ConvertString>报警了！快抓住她！
+啊， 看来那娘们在@<XI_ConvertString>报警了！ 快抓住她！ 
 }
 Patrol_2_m {
-嘿，你看看！有些@<NationNamePeople>居然能跟@<NationNameInstrumental>作对！把这家伙抓起来！
+嘿， 你看看！ 有些@<NationNamePeople>居然能跟@<NationNameInstrumental>作对！ 把这家伙抓起来！ 
 }
 Patrol_2_f {
-嘿，你们快看！有些@<NationNamePeople>居然能跟@<NationNameInstrumental>作对！把这家伙抓起来！
+嘿， 你们快看！ 有些@<NationNamePeople>居然能跟@<NationNameInstrumental>作对！ 把这家伙抓起来！ 
 }
 Patrol_3 {
 @<RandPhraseSimple>
 }
 Patrol_4_m {
-@<XI_ConvertString>附近有敌方特工！抓住他！
+@<XI_ConvertString>附近有敌方特工！ 抓住他！ 
 }
 Patrol_4_f {
-@<XI_ConvertString>附近有敌方特工！抓住她！
+@<XI_ConvertString>附近有敌方特工！ 抓住她！ 
 }
 Patrol_5 {
-你们看，@<NationNamePeople>竟然大摇大摆地进了@<XI_ConvertString>！快把他们抓起来！
+你们看， @<NationNamePeople>竟然大摇大摆地进了@<XI_ConvertString>！ 快把他们抓起来！ 
 }
 Patrol_6 {
 @<RandPhraseSimple>
 }
 Patrol_7 {
-试试看吧，这里就咱俩……
+试试看吧， 这里就咱俩…… 
 }
 Patrol_8 {
-呵，这里没人会来救你。
+呵， 这里没人会来救你。 
 }
 Patrol_9 {
 @<RandPhraseSimple>
 }
 Patrol_10 {
-你是谁，来这儿想干嘛？
+你是谁， 来这儿想干嘛？ 
 }
 Patrol_11 {
-站住！你是谁？在城附近晃悠干什么？
+站住！ 你是谁？ 在城附近晃悠干什么？ 
 }
 Patrol_12 {
 @<RandPhraseSimple>
 }
 Patrol_13 {
-军官，我有@<GetRusNameNationLicence>，所以我是合法在这里的。您可以看看……
+军官， 我有@<GetRusNameNationLicence>， 所以我是合法在这里的。 您可以看看…… 
 }
 Patrol_14 {
-长官，我的船挂着@<NationNameGenitive>的旗子，你还想要什么？
+长官， 我的船挂着@<NationNameGenitive>的旗帜， 你还想要什么？ 
 }
 Patrol_15 {
-长官，我的船挂着@<NationNameGenitive>的旗帜，所以我有权在这里。
+长官， 我的船挂着@<NationNameGenitive>的旗帜， 所以我有权在这里。 
 }
 Patrol_16_m {
-看看这家伙！自己送上门来了。抓住他！
+看看这家伙！ 自己送上门来了。 抓住他！ 
 }
 Patrol_16_f {
-你们看看那家伙！自己送上门来了。抓住她！
+你们看看那家伙！ 自己送上门来了。 抓住她！ 
 }
 Patrol_17_m {
-哈，俺认得你这家伙！抓住他！
+哈， 我认得你这家伙！ 抓住他！ 
 }
 Patrol_17_f {
-哈，俺认得你，这个混蛋！把她抓住！！
+哈， 我认得你， 这个混蛋！ 把她抓住！ ！ 
 }
 Patrol_18 {
 @<RandPhraseSimple>
 }
 Patrol_19 {
-呃啊！..
+呃啊！ ..
 }
 Patrol_20 {
-这可是你们自找的……
+这可是你们自找的…… 
 }
 Patrol_21 {
 @<RandPhraseSimple>
 }
 Patrol_22 {
-请允许我自我介绍！我是来自@<XI_ConvertString>的巡逻队长，我们正在搜捕一名越狱犯。
+请允许我自我介绍！ 我是来自@<XI_ConvertString>的巡逻队长， 我们正在搜捕一名越狱犯。 
 }
 Patrol_23 {
-你好，我是这个巡逻队的头儿。我们正在找一个从@<XI_ConvertString>逃跑的奴隶。
+你好， 我是这个巡逻队的头儿。 我们正在找一个从@<XI_ConvertString>逃跑的奴隶。 
 }
 Patrol_24 {
-您好，@<GetAddress_Form>。我的部队正在@<XI_ConvertString>附近巡逻。
+您好， @<GetAddress_Form>。 我的部队正在@<XI_ConvertString>附近巡逻。 
 }
 Patrol_25 {
 @<LinkRandPhrase>
 }
 Patrol_26 {
-太好了，有什么我能帮忙的吗？
+太好了， 有什么我能帮忙的吗？ 
 }
 Patrol_27_m {
-好的。@<GetAddress_FormToNPC>，你有什么需要俺帮忙的吗？
+好的。 @<GetAddress_FormToNPC>， 你有什么需要我帮忙的吗？ 
 }
 Patrol_27_f {
-好的。@<GetAddress_FormToNPC>，有什么需要俺帮忙的吗？
+好的。 @<GetAddress_FormToNPC>， 有什么需要我帮忙的吗？ 
 }
 Patrol_28 {
-太好了。您有什么需要我帮忙的吗？
+太好了。 您有什么需要我帮忙的吗？ 
 }
 Patrol_29 {
 @<LinkRandPhrase>
 }
 Patrol_30 {
-你在这附近看到什么可疑的东西了吗？
+你在这附近看到什么可疑的东西了吗？ 
 }
 Patrol_31 {
-@<GetAddress_Form>，你有没有遇到什么可疑的人？
+@<GetAddress_Form>， 你有没有遇到什么可疑的人？ 
 }
 Patrol_32 {
 @<RandPhraseSimple>
 }
 Patrol_33 {
-没有，没那回事。
+没有， 没那回事。 
 }
 Patrol_34 {
-没有，长官，一切都很平静。
+没有， 长官， 一切都很平静。 
 }
 Patrol_35 {
 @<RandPhraseSimple>
 }
 Patrol_36 {
-那我就不耽误你了。告辞，@<GetAddress_Form>。
+那我就不耽误你了。 告辞， @<GetAddress_Form>。 
 }
 Patrol_37 {
-明白了，那就告辞了。
+明白了， 那就告辞了。 
 }
 Patrol_38 {
 @<RandPhraseSimple>
 }
 Patrol_39 {
-祝你好运。
+祝你好运。 
 }
 Patrol_40 {
-别打扰我们执行任务。
+别打扰我们执行任务。 
 }
 Patrol_41 {
-请你别来打扰我们！
+请你别来打扰我们！ 
 }
 Patrol_42 {
-啊，又是你……走你的路，别来打扰我们。
+啊， 又是你…… 走你的路， 别来打扰我们。 
 }
 Patrol_43 {
 @<LinkRandPhrase>
 }
 Patrol_44 {
-行。
+行。 
 }
 Patrol_45_m {
-我总觉得这是个圈套……来，咱们把你带到指挥官办公室，好好查清楚……
+我总觉得这是个圈套…… 来， 咱们把你带到指挥官办公室， 好好查清楚…… 
 }
 Patrol_45_f {
-我总觉得这里有诈……小姐，咱们还是把你带到指挥官办公室，到那儿再说吧……
+我总觉得这里有诈…… 小姐， 咱们还是把你带到指挥官办公室， 到那儿再说吧…… 
 }
 Patrol_46_m {
-哼，总觉得你不是你自称的那个人……@<GetAddress_Form>，立刻交出武器，跟我走一趟，接受进一步盘问！
+哼， 总觉得你不是你自称的那个人…… @<GetAddress_Form>， 立刻交出武器， 跟我走一趟， 接受进一步盘问！ 
 }
 Patrol_46_f {
-哼，总觉得你不像你自己说的那个人……@<GetAddress_Form>，立刻交出武器，跟我走一趟，接受进一步盘问！
+哼， 总觉得你不像你自己说的那个人…… @<GetAddress_Form>， 立刻交出武器， 跟我走一趟， 接受进一步盘问！ 
 }
 Patrol_47 {
 @<RandPhraseSimple>
 }
 Patrol_48 {
-想都别想！
+想都别想！ 
 }
 Patrol_49 {
-等太阳从西边出来吧……
+等太阳从西边出来吧…… 
 }
 Patrol_50 {
 @<RandPhraseSimple>
 }
 Patrol_51 {
-那我就不多打扰你了。告辞，@<GetAddress_Form>。
+那我就不多打扰你了。 告辞， @<GetAddress_Form>。 
 }
 Patrol_52 {
-明白了，那就告辞了。
+明白了， 那就告辞了。 
 }
 Patrol_53 {
 @<RandPhraseSimple>
 }
 Patrol_54 {
-祝你好运。
+祝你好运。 
 }
 Patrol_55 {
-你的执照已经过期，现已无效，需要被没收。把武器交出来，跟我走，接受进一步调查！
+你的贸易许可证已经过期， 现已无效， 需要被没收。 把武器交出来， 跟我走， 接受进一步调查！ 
 }
 Patrol_56 {
-想都别想！
+想都别想！ 
 }
 Patrol_57 {
-等太阳从西边出来吧……
+等太阳从西边出来吧…… 
 }
 Patrol_58 {
 @<RandPhraseSimple>
 }
 Patrol_59 {
-嗯，没错。不过我要提醒你，你的执照今天就到期了。这次我先让你过去，但你得尽快去换个有效的执照。
+嗯， 没错。 不过我要提醒你， 你的贸易许可证今天就到期了。 这次我先让你过去， 但你得尽快去换个有效的贸易许可证。 
 }
 Patrol_60 {
-谢谢，等有机会我会再弄一个。
+谢谢， 等有机会我会再弄一个。 
 }
 Patrol_61 {
-嗯，没错。不过我要提醒你，你的执照快到期了——只剩下@<FindDaysString>有效。记住这一点，@<GetAddress_Form>。
+嗯， 没错。 不过我要提醒你， 你的贸易许可证快到期了——只剩下@<FindDaysString>有效。 记住这一点， @<GetAddress_Form>。 
 }
 Patrol_62 {
-谢谢，等有机会我会再弄一个。
+谢谢， 等有机会我会再弄一个。 
 }
 Patrol_63 {
-那好，你的执照还有效@<FindDaysString>。可以通过了。
+那好， 你的贸易许可证还有效@<FindDaysString>。 可以通过了。 
 }
 Patrol_64 {
-明白了，@<GetAddress_Form>。你可以自由进城，你的许可证还有效@<FindDaysString>。抱歉给你添麻烦了。
+明白了， @<GetAddress_Form>。 你可以自由进城， 你的许可证还有效@<FindDaysString>。 抱歉给你添麻烦了。 
 }
 Patrol_65 {
-一切都好，@<GetAddress_Form>，我就不耽误你了。
+一切都好， @<GetAddress_Form>， 我就不耽误你了。 
 }
 Patrol_66 {
 @<LinkRandPhrase>
 }
 Patrol_67 {
-太好了，祝你一切顺利。
+太好了， 祝你一切顺利。 
 }
 Patrol_68 {
-谢谢你，长官。
+谢谢你， 长官。 
 }
 Patrol_69 {
 @<RandPhraseSimple>
 }
 Patrol_70_m {
-嗯……以前没见过你，你是谁啊？
+嗯…… 以前没见过你， 你是谁啊？ 
 }
 Patrol_70_f {
-嗯……以前没见过你啊。你是谁，姑娘？
+嗯…… 以前没见过你啊。 你是谁， 姑娘？ 
 }
 Patrol_71_m {
-你一直等的人就是我……
+你一直等的人就是我…… 
 }
 Patrol_71_f {
-你等的人就是我……
+你等的人就是我…… 
 }
 Patrol_72 {
-我是@<GetFullName>船长。说说吧，你怎么急匆匆赶过来，裤子都差点落在青楼了……
+我是@<GetFullName>船长。 说说吧， 你怎么急匆匆赶过来， 裤子都差点落在妓院了…… 
 }
 Patrol_73 {
-我是@<GetFullName>船长，随便走走，吹吹海风……
+我是@<GetFullName>船长， 随便走走， 吹吹海风…… 
 }
 Patrol_74_m {
-你终于来了，我还以为你不会来了呢……这家伙是谁？
+你终于来了， 我还以为你不会来了呢…… 这家伙是谁？ 
 }
 Patrol_74_f {
-你终于来了，我还以为你不会出现呢……这家伙是谁？
+你终于来了， 我还以为你不会出现呢…… 这家伙是谁？ 
 }
 Patrol_75 {
-什么类型？
+什么类型？ 
 }
 Patrol_76_m {
-你看起来可不像@<GetName>会信任的人。
+你看起来可不像@<GetName>会信任的人。 
 }
 Patrol_76_f {
-你看起来可不像@<GetName>会信任的人。
+你看起来可不像@<GetName>会信任的人。 
 }
 Patrol_77 {
-好，我就这么跟他说。
+好， 我就这么跟他说。 
 }
 Patrol_78 {
-这家伙是谁，@<GetName>？
+这家伙是谁， @<GetName>？ 
 }
 Patrol_79 {
-好奇心也许不是罪，但可真能让你命短点……
+好奇心也许不是罪， 但可真能让你命短点…… 
 }
 Patrol_80 {
-哟，这可有意思！
+哟， 这可有意思！ 
 }
 Patrol_81 {
-潮马上就要涨了，你最好赶紧离开这片海湾——这里的水会一直涨到椰林那边。
+潮马上就要涨了， 你最好赶紧离开这片海湾——这里的水会一直涨到椰林那边。 
 }
 Patrol_82 {
-没事，我水性很好。
+没事， 我水性很好。 
 }
 Patrol_83 {
 蓝宝石
@@ -293,64 +293,64 @@ Patrol_86 {
 祖母绿
 }
 Patrol_87 {
-行了行了，你带来那30个@<sItemName>了吗？
+行了行了， 你带来那30个@<sItemName>了吗？ 
 }
 Patrol_88 {
-@<GetName>说没时间收集那么多石头，让我直接用钱去谈。
+@<GetName>说没时间收集那么多石头， 让我直接用钱去谈。 
 }
 Patrol_89 {
-吃这个。
+吃这个。 
 }
 Patrol_90 {
-哼！你下辈子再慢慢知道吧！
+哼！ 你下辈子再慢慢知道吧！ 
 }
 Patrol_91 {
-真够自信的……
+真够自信的…… 
 }
 Patrol_92 {
-好，那你就得给俺@<FindMoneyString>，说好了的。
+好， 那你就得给我@<FindMoneyString>， 说好了的。 
 }
 Patrol_93 {
-你这要求是不是有点多啊？
+你这要求是不是有点多啊？ 
 }
 Patrol_94 {
-拿去吧。
+拿去吧。 
 }
 Patrol_95 {
-可我身上没那么多钱！
+可我身上没那么多钱！ 
 }
 Patrol_96 {
-都按约定来的。拿去吧。这张地图是从那个@<GetName>问过的被吊死的海盗身上拿到的。
+都按约定来的。 拿去吧。 这张地图是从那个@<GetName>问过的被吊死的海盗身上拿到的。 
 }
 Patrol_97 {
-搞定了！
+搞定了！ 
 }
 Patrol_98_m {
-俺跟@<GetName>早就谈好价了……这事儿我可不乐意……兄弟们，干掉他！
+我跟@<GetName>早就谈好价了…… 这事儿我可不乐意…… 兄弟们， 干掉他！ 
 }
 Patrol_98_f {
-俺跟@<GetName>早就谈好价钱了……这事儿我怎么看怎么不对劲……兄弟们，干掉她！
+我跟@<GetName>早就谈好价钱了…… 这事儿我怎么看怎么不对劲…… 兄弟们， 干掉她！ 
 }
 Patrol_99 {
-那就试试吧！
+那就试试吧！ 
 }
 Patrol_100 {
-太好了！说正事吧。我们截获了那艘@<GetStrSmallRegister>“@<sTemp1>”，船上载着@<GetGoodsNameAlt>。全体船员已经关进了船舱，货物现在还在船上。运货的那帮人都是码头上的醉汉，估计明天之前都到不了港口。你看着办吧。
+太好了！ 说正事吧。 我们截获了那艘@<GetStrSmallRegister>“@<sTemp1>”， 船上载着@<GetGoodsNameAlt>。 全体船员已经关进了船舱， 货物现在还在船上。 运货的那帮人都是码头上的醉汉， 估计明天之前都到不了港口。 你看着办吧。 
 }
 Patrol_101 {
-行，我就照这样转告给@<GetName>。
+行， 我就照这样转告给@<GetName>。 
 }
 Patrol_102 {
 我小女儿的嫁妆
 }
 Patrol_103 {
-给总督的礼物
+给市长的礼物
 }
 Patrol_104 {
 你的周年纪念礼物
 }
 Patrol_105 {
-俺自己的“养老钱”
+我自己的“养老钱”
 }
 Patrol_106 {
 女骗子
@@ -365,59 +365,59 @@ Patrol_109 {
 捣蛋鬼
 }
 Patrol_110 {
-太好了！那东西就在总督的卧室里。运送用的信使船这几天就会到，但你肯定来得及。仆人是我们的人。口令是：“@<pchar>”，答语是：“@<sTemp2>”。
+太好了！ 那东西就在市长的卧室里。 运送用的信使船这几天就会到， 但你肯定来得及。 仆人是我们的人。 口令是： “@<pchar>”， 答语是： “@<sTemp2>”。 
 }
 Patrol_111 {
-行，我就照这样转告给@<GetName>。
+行， 我就照这样转告给@<GetName>。 
 }
 Patrol_112 {
-你想耍我？！你这狗东西！
+你想耍我？ ！ 你这狗东西！ 
 }
 Patrol_113 {
-闭嘴！
+闭嘴！ 
 }
 Patrol_114_m {
-你全喝光了！我的钱！……可恶。
+你全喝光了！ 我的钱！ …… 可恶。 
 }
 Patrol_114_f {
-你全喝光了！我的钱啊！……唉。
+你全喝光了！ 我的钱啊！ …… 唉。 
 }
 Patrol_115 {
-该死！
+该死！ 
 }
 Patrol_116 {
-你该离开这片海湾了，潮水已经涨起来了……
+你该离开这片海湾了， 潮水已经涨起来了…… 
 }
 Patrol_117 {
-行行行，俺这就走。
+行行行， 我这就走。 
 }
 Patrol_118 {
-我们不是说好只派一个信使吗！
+我们不是说好只派一个信使吗！ 
 }
 Patrol_119 {
-出了点小状况。你看，送信的人迷路了？所以派我来顶替。
+出了点小状况。 你看， 送信的人迷路了？ 所以派我来顶替。 
 }
 Patrol_120_m {
-我是一个人来的，不过原因可不是你想的那样。
+我是一个人来的， 不过原因可不是你想的那样。 
 }
 Patrol_120_f {
-我是一个人来的，不过原因可不是你想的那样。
+我是一个人来的， 不过原因可不是你想的那样。 
 }
 Patrol_121_m {
-所以你还是找上俺了……那可别怪俺。
+所以你还是找上我了…… 那可别怪我。 
 }
 Patrol_121_f {
-所以你还是找上俺了……那可别怪俺啊。
+所以你还是找上我了…… 那可别怪我啊。 
 }
 Patrol_122 {
-唉……
+唉…… 
 }
 Patrol_123_m {
-啊，混蛋！老子差点上当了……来人！把他拿下！
+啊， 混蛋！ 我差点上当了…… 来人！ 把他拿下！ 
 }
 Patrol_123_f {
-哼，这女人！老子差点上当了……来人，把她拿下……
+哼， 这女人！ 我差点上当了…… 来人， 把她拿下…… 
 }
 Patrol_124 {
-唉……
+唉…… 
 }

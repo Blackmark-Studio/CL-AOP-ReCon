@@ -1,0 +1,80 @@
+SantoDomingo_dialog_1 {
+Señor Offizier, am Tor ist alles ruhig. Seit der Sache mit Jaco hält die Wache die Augen offen.
+}
+SantoDomingo_dialog_2 {
+So soll es sein.
+}
+SantoDomingo_dialog_3 {
+Señor, wenn Sie von der Straße kommen, gehen Sie besser gleich zum Kommandanten. Er hat befohlen, jeden Gefangenen zu melden.
+}
+SantoDomingo_dialog_4 {
+Ich kenne den Befehl.
+}
+SantoDomingo_dialog_5 {
+Señor Offizier, die Torwache ist auf ihrem Posten. Verdächtige lassen wir nicht durch, Flüchtlinge werden nur über den Kommandanten eingeliefert.
+}
+SantoDomingo_dialog_6 {
+Setzen Sie Ihren Dienst fort.
+}
+SantoDomingo_dialog_7 {
+Señor, heute ist die Stadt unruhig. Der Kommandant wartet auf Nachricht über den Schurken, der versucht hat, Duval zu erreichen.
+}
+SantoDomingo_dialog_8 {
+Er wird sie bald bekommen.
+}
+SantoDomingo_dialog_9 {
+Señor Offizier, die Wache ist gewarnt. Wenn der Gefangene gefährlich ist, bringen Sie ihn ohne Aufenthalt direkt zum Kommandanten.
+}
+SantoDomingo_dialog_10 {
+Genau das werden wir tun.
+}
+SantoDomingo_dialog_11 {
+He, Soldat, trödel nicht. Wenn ihr einen Gefangenen bringt, schleppt ihn zum Kommandanten.
+}
+SantoDomingo_dialog_12 {
+Wir sind schon unterwegs.
+}
+SantoDomingo_dialog_13 {
+Kommt ihr von der Straße? Du siehst aus, als wäre deine Patrouille durch die Hölle marschiert.
+}
+SantoDomingo_dialog_14 {
+Der Weg war nicht leicht.
+}
+SantoDomingo_dialog_15 {
+Wenn das dieser Jaco ist, halt ihn gut fest. Der Kommandant will schon lange mit ihm reden.
+}
+SantoDomingo_dialog_16 {
+Er entkommt nicht.
+}
+SantoDomingo_dialog_17 {
+Redet nicht mit dem Gefangenen. Bringt ihn hinein und liefert ihn nach Befehl ab.
+}
+SantoDomingo_dialog_18 {
+Verstanden.
+}
+SantoDomingo_dialog_19 {
+Patrouille von der Straße? Dann beeilt euch. Der Kommandant hat heute schlechte Laune; besser, ihr lasst ihn nicht warten.
+}
+SantoDomingo_dialog_20 {
+Er soll sich bereitmachen, seine Beute entgegenzunehmen.
+}
+
+LeBasque_SantoDomingoJailOff_1 {
+Marceau? Was zum Teufel machst du hier? Verschwinde sofort, sonst muss ich dich verhaften.
+}
+
+LeBasque_SantoDomingoJailOff_2 {
+Viele Jahre sind vergangen. Niemand wird dir mehr glauben.
+}
+
+LeBasque_SantoDomingoJailOff_3 {
+Du warst schon immer ein umsichtiger Kerl, Marceau...
+}
+
+LeBasque_SantoDomingoJailOff_4 {
+Verdammt nochmal... Sergeant! Bringen Sie Duval!
+}
+
+LeBasque_SantoDomingoJailOff_5 {
+Bringt ihn und verschwindet sofort aus meiner Stadt.
+}

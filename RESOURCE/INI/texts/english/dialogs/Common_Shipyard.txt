@@ -487,3 +487,39 @@ I don’t see your ship in the harbor, Captain @<GetFullName>...
 Common_Shipyard_137 {
 Dock the ship in the port and come over afterwards, Captain.
 }
+Common_Shipyard_138 {
+@<TimeGreeting>, Doctor Blood. What brings you here?
+}
+Common_Shipyard_139 {
+Hello, @<npchar.name>. I’ve come to treat the Spanish prisoners.
+}
+Common_Shipyard_140 {
+Those bastards don’t deserve such care. Do you think, if our places were reversed, they’d stand on ceremony with prisoners?
+}
+Common_Shipyard_141 {
+Who knows... But I’ve always believed a man should take his example from the best, not stoop to the level of the worst.
+}
+Common_Shipyard_142 {
+You only say that because it isn’t your warehouse they’ve turned into an infirmary, Doctor Blood. But since you’re so determined to treat them—they’re through the door on the left. And here, take this: it’s for them... I mean, for you... Well, you understand.
+}
+Common_Shipyard_143 {
+Thank you.
+}
+Common_Shipyard_144 {
+If you’re still looking for the Spaniards, they haven’t changed their location.
+}
+Common_Shipyard_145 {
+That makes the task somewhat easier.
+}
+Common_Shipyard_146 {
+Remarkable! Simply remarkable! You’ve pulled five of those six sacks of bones through, while the wounded from the 'Pride of Devon', under Doctors Wacker and Bronson, are dropping like flies.
+}
+Common_Shipyard_147 {
+It seems Spaniards cling to life far more stubbornly than Englishmen. Probably out of sheer spite.
+}
+Common_Shipyard_148 {
+Don’t be modest, Doctor. All Bridgetown is already saying that the local physicians are mere barbers compared with you.
+}
+Common_Shipyard_149 {
+I’m afraid you think far too highly of me and far too poorly of my colleagues. Though the latter, I confess, is considerably harder for me to dispute.
+}

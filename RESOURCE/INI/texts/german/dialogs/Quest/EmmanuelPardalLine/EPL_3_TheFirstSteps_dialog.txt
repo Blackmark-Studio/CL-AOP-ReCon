@@ -1,0 +1,44 @@
+EPL_3_TheFirstSteps_dialog_1 {Bitte melden Sie den Fehler dem technischen Support.}
+EPL_3_TheFirstSteps_dialog_2 {Du hattest also genug Mut, Frau, hier aufzutauchen. Oder war es Dummheit, die dich daran gehindert hat, die Veränderungen um dich herum zu bemerken?}
+EPL_3_TheFirstSteps_dialog_3 {Mein Name ist @<GetFullName>, und ich bin genau deshalb hier, weil sich hier einiges verändert hat.}
+EPL_3_TheFirstSteps_dialog_4 {Ach ja? Dann sprich.}
+EPL_3_TheFirstSteps_dialog_5 {Zum Glück war ich in Santo Domingo, als deine Leute ihren erfolglosen Sturmversuch unternahmen. In der Stadt machte das Gerücht die Runde, Spanien habe eine Belohnung auf zwei junge Damen ausgesetzt, die Töchter des Kommandanten dieses Forts, und ich habe vor, sie in meine Hände zu bekommen.}
+EPL_3_TheFirstSteps_dialog_6 {Du glaubst, wenn ich sie hätte, würde ich sie dir übergeben?}
+EPL_3_TheFirstSteps_dialog_7 {Ich glaube, du brauchst einen Vermittler für Verhandlungen. Die Spanier werden dich an keine ihrer Siedlungen näher heranlassen als auf Kanonenschussweite.}
+EPL_3_TheFirstSteps_dialog_8 {Dazu haben sie keinen Grund. Meine Leute haben die Kolonie nicht angegriffen. Ich habe lediglich die Gelegenheit genutzt und eine verlassene Befestigung besetzt. Ein günstiger Platz, möchte ich hinzufügen; es wäre töricht gewesen, ihn unbeachtet zu lassen. Englische und französische Konvois ziehen ständig ganz in der Nähe vorbei, und bei gutem Wetter kann man sogar die Küste von Tortuga erkennen.}
+EPL_3_TheFirstSteps_dialog_9 {Und was ist nun mit den Schwestern?}
+EPL_3_TheFirstSteps_dialog_10 {Du kannst deine Männer nehmen und die ganze Insel durchkämmen, aber ich wette, wenn sie noch leben, werden sie von selbst auftauchen. Oder du verteilst Schaufeln und lässt den Friedhof außerhalb der Stadt durchsuchen. Bei mir wirst du sie nicht finden.}
+EPL_3_TheFirstSteps_dialog_11 {Für Tote würde niemand eine Belohnung aussetzen.}
+EPL_3_TheFirstSteps_dialog_12 {Dann kann ich dir nicht helfen.}
+EPL_3_TheFirstSteps_dialog_13 {Ich werde bei Gelegenheit wieder vorbeikommen.}
+EPL_3_TheFirstSteps_dialog_14 {Ich bin im Auftrag des Gouverneurs von Santo Domingo mit einem Bericht über die jüngsten Ereignisse auf Hispaniola gekommen.}
+EPL_3_TheFirstSteps_dialog_15 {Ich verfüge bereits über Informationen darüber, was geschehen ist. Gerüchte verbreiten sich in diesen Gegenden bekanntlich schneller als der Wind. Den offiziellen Bericht werde ich selbstverständlich trotzdem lesen. Nehmen Sie dies als Bezahlung für die rechtzeitige Überbringung.}
+EPL_3_TheFirstSteps_dialog_16 {Señor @<GetFullName> hat mir meine Belohnung bereits im Voraus ausgezahlt.}
+EPL_3_TheFirstSteps_dialog_17 {Betrachten Sie das als Erstattung zusätzlicher Ausgaben.}
+EPL_3_TheFirstSteps_dialog_18 {Ich werde nicht widersprechen, denn ich befinde mich derzeit in einer schwierigen Lage. In diesem Zusammenhang habe ich eine Frage, die weniger staatlicher als persönlicher Natur ist. Welches Schicksal erwartet die Kolonie, die Spanien verloren hat? Sie war lange Zeit meine Heimat.}
+EPL_3_TheFirstSteps_dialog_19 {In dieser Angelegenheit dürfen keine übereilten Entscheidungen getroffen werden. Aber eines kann ich Ihnen mit Sicherheit sagen: Spanien wird den blutigen Raubzug der Piraten nicht einfach hinnehmen. Früher oder später wird über La Vega wieder die spanische Flagge wehen, und die Gerechtigkeit wird siegen! Nun muss ich Sie bitten, mich zu verlassen. Ich habe zu arbeiten.}
+EPL_3_TheFirstSteps_dialog_20 {Ich danke Ihnen, Exzellenz!}
+EPL_3_TheFirstSteps_dialog_21 {
+Ich gratuliere Ihnen, @<GetFullName>. Sie sind zur Heldin Hispaniolas geworden. Ihr Vater wäre stolz auf Sie.
+}
+EPL_3_TheFirstSteps_dialog_22 {
+Mein Vater würde... Warten Sie, wie haben Sie mich genannt?!
+}
+EPL_3_TheFirstSteps_dialog_23 {
+@<GetFullName>. Oder dachten Sie, ich würde Sie Remidos nennen?
+}
+EPL_3_TheFirstSteps_dialog_24 {
+Du weißt offensichtlich mehr, als ich gedacht hätte, Sandro. Erklär dich.
+}
+EPL_3_TheFirstSteps_dialog_25 {
+Ist Ihnen nie seltsam vorgekommen, dass Ihr Name sich ein wenig von anderen spanischen Namen abhebt?
+}
+EPL_3_TheFirstSteps_dialog_26 {
+Meine Mutter gab mir diesen Namen, weil sie Französin aus dem anderen Teil der Insel - Haiti - war. Na und?
+}
+EPL_3_TheFirstSteps_dialog_27 {
+Weil Ihr Vater - Manuel Pardal - ein berühmter portugiesischer Korsar im Dienst der spanischen Krone ist. Ihm zu Ehren gab man Ihnen den Namen Emmanuel. Doch mit einem solchen Familiennamen zu leben, kann sehr gefährlich sein, deshalb brachte man Sie weit weg von allen Gefahren in Sicherheit.\nDarum überbringe ich Ihnen eine Botschaft Ihres Vaters: „Ich wünsche dir ein weit besseres Schicksal, als mir beschieden ist, meine Tochter.“ Nun habe ich meine Pflicht erfüllt; jetzt erfüllen Sie die Ihre.\nAuf Ihrem Schiff lasse ich meinen Freund und Arzt Hopkins zurück. Er ist noch zu schwach, um mit mir dorthin zu reisen, wohin ich muss... Kurz gesagt, er ist noch nicht dazu imstande. Bitte kümmern Sie sich eine Weile um ihn; später komme ich zurück und hole ihn ab. Ich werde Sie finden, keine Sorge, @<GetFullName>.
+}
+EPL_3_TheFirstSteps_dialog_28 {
+Gut, Sandro. Wirklich... Ich muss über all das nachdenken. Danke.
+}

@@ -143,7 +143,7 @@ Santiago_Mayor_40 {
 Ich versichere Ihnen, La Vega wird schon bald nicht mehr existieren.
 }
 Santiago_Mayor_41 {
-Ausgezeichnet, Señor@<GetAddress_Form>! Einfach großartig! Don Francisco Oregon y Gascon kann mit Recht stolz darauf sein, Offiziere wie Sie in seinem Dienst zu haben.
+Ausgezeichnet, @<GetAddress_Form>! Einfach großartig! Don Francisco Oregon y Gascon kann mit Recht stolz darauf sein, Offiziere wie Sie in seinem Dienst zu haben.
 }
 Santiago_Mayor_42_m {
 Die Bukaniere waren würdige Gegner. Ich bin froh, dass ich den Auftrag erledigen konnte… Señor, was ist mit meiner Belohnung?

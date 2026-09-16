@@ -1,0 +1,80 @@
+SantoDomingo_dialog_1 {
+Señor oficerze, przy bramie spokojnie. Po historii z Jaco straż ma oczy szeroko otwarte.
+}
+SantoDomingo_dialog_2 {
+I tak ma być.
+}
+SantoDomingo_dialog_3 {
+Señor, jeśli wracacie z drogi — najlepiej od razu do komendanta. Kazał meldować o wszystkich zatrzymanych.
+}
+SantoDomingo_dialog_4 {
+Znam rozkaz.
+}
+SantoDomingo_dialog_5 {
+Señor oficerze, patrol przy bramie jest na miejscu. Podejrzanych nie wpuszczamy, zbiegów przyjmujemy tylko przez komendanta.
+}
+SantoDomingo_dialog_6 {
+Kontynuujcie służbę.
+}
+SantoDomingo_dialog_7 {
+Señor, dziś w mieście niespokojnie. Komendant czeka na wieści o tym łajdaku, który próbował dostać się do Duvala.
+}
+SantoDomingo_dialog_8 {
+Wkrótce je dostanie.
+}
+SantoDomingo_dialog_9 {
+Señor oficerze, straż została uprzedzona. Jeśli jeniec jest niebezpieczny — prowadźcie go prosto do komendanta, bez postojów.
+}
+SantoDomingo_dialog_10 {
+Tak zrobimy.
+}
+SantoDomingo_dialog_11 {
+Ej, żołnierzu, nie zatrzymuj się. Jeśli prowadzicie jeńca — ciągnijcie go do komendanta.
+}
+SantoDomingo_dialog_12 {
+Już idziemy.
+}
+SantoDomingo_dialog_13 {
+Wracacie z drogi? Wyglądasz, jakby patrol przeszedł przez samo piekło.
+}
+SantoDomingo_dialog_14 {
+Droga nie była łatwa.
+}
+SantoDomingo_dialog_15 {
+Jeśli to ten Jaco, trzymaj go mocno. Komendant od dawna chce z nim porozmawiać.
+}
+SantoDomingo_dialog_16 {
+Nie ucieknie.
+}
+SantoDomingo_dialog_17 {
+Nie gadajcie z więźniem. Prowadźcie go do środka i przekażcie zgodnie z rozkazem.
+}
+SantoDomingo_dialog_18 {
+Rozumiem.
+}
+SantoDomingo_dialog_19 {
+Patrol wraca z drogi? To żwawo. Komendant jest dziś w paskudnym humorze, lepiej nie kazać mu czekać.
+}
+SantoDomingo_dialog_20 {
+Niech szykuje się na przyjęcie zdobyczy.
+}
+
+LeBasque_SantoDomingoJailOff_1 {
+Marceau? Co ty tu, do cholery, robisz? Wynoś się natychmiast, albo będę musiał cię aresztować.
+}
+
+LeBasque_SantoDomingoJailOff_2 {
+Minęło wiele lat. Nikt nie uwierzy twoim słowom.
+}
+
+LeBasque_SantoDomingoJailOff_3 {
+Zawsze byłeś ostrożnym draniem, Marceau...
+}
+
+LeBasque_SantoDomingoJailOff_4 {
+Do cholery... Sierżancie! Przyprowadźcie Duvala!
+}
+
+LeBasque_SantoDomingoJailOff_5 {
+Zabierz go i natychmiast wynoś się z mojego miasta.
+}

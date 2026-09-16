@@ -146,8 +146,7 @@ void LandHunterReactionResult(ref loc)  // отработает после вх�
 					    k++;
          				SetModelPirate(sld);
 					}
-					arrayNPCModel[arrayNPCModelHow] = sld.model;
-					arrayNPCModelHow++;
+					AddNPCModelUniq(sld.model);
 	                LAi_SetActorTypeNoGroup(sld);
 	                LAi_SetCheckMinHP(sld, (LAi_GetCharacterHP(sld) - 1), false, "Battle_Hunters_Land");
 	                if (PlaceCharacter(sld, "goto", "random_must_be_near") == "" && i == 1) // fix если вдруг нет в локации

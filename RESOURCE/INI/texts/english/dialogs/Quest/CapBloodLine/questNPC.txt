@@ -23,7 +23,7 @@ questNPC_8 {
 @<LinkRandPhrase>
 }
 questNPC_9 {
-There he is—grab him!
+There he is-grab him!
 }
 questNPC_10 {
 Grab him, lads!
@@ -53,7 +53,7 @@ questNPC_18 {
 Go your own way and don’t distract me.
 }
 questNPC_19 {
-I’m afraid it’s serious. A Spanish spy has slipped into the city—maybe even a mercenary. He went to the gunsmith’s house, and now Griffin’s door is tightly shut.
+I’m afraid it’s serious. A Spanish spy has slipped into the city-maybe even a mercenary. He went to the gunsmith’s house, and now Griffin’s door is tightly shut.
 }
 questNPC_20 {
 Stop! Surrender your weapons! Follow me!
@@ -80,10 +80,10 @@ questNPC_27 {
 I’m carrying out Colonel Bishop’s orders.
 }
 questNPC_28 {
-Ah, it’s you, Doctor Blood. You treated me when I was discharged from the "Pride of Devon."
+Ah, it’s you, Doctor Blood. I recognized you at once.
 }
 questNPC_29 {
-I’m glad you’ve recovered.
+You’ve got a sharp eye, soldier.
 }
 questNPC_30 {
 Get lost, slave!
@@ -95,10 +95,10 @@ questNPC_32 {
 What weather, and yet I have to stand here. My only entertainment is swatting flies from my face.
 }
 questNPC_33 {
-I sympathize. But I can't help you—it's just the job you have.
+I sympathize. But I can't help you-it's just the job you have.
 }
 questNPC_34 {
-If you’re in the mood for a chat, go find someone else—or better yet, head back to the plantations.
+If you feel like chatting, find someone else-or better yet, get back to the plantations.
 }
 questNPC_35 {
 Certainly.
@@ -125,7 +125,7 @@ questNPC_42 {
 @<RandPhraseSimple>
 }
 questNPC_43 {
-I need to get somewhere—could you recommend a capable captain?
+I need to get somewhere-could you recommend a capable captain?
 }
 questNPC_44 {
 I'm looking for a captain who can take my friend somewhere for a reasonable fee. Do you know anyone?
@@ -140,10 +140,10 @@ questNPC_46_f {
 Oh, Doctor Blood, hello! I never did thank you for saving my little boy back then, and I still think of it often and regret it. How wonderful to have met you today!
 }
 questNPC_47_m {
-Truly, how splendid it is when people feel the urge to show their gratitude at just the right moment. Tell me, dear friend, where might I quickly get my hands on a few boarding sabers and a couple of pistols—quietly, without any fuss?
+Truly, how splendid it is when people feel the urge to show their gratitude at just the right moment. Tell me, dear friend, where might I quickly get my hands on a few boarding sabers and a couple of pistols-quietly, without any fuss?
 }
 questNPC_47_f {
-Truly, how wonderful it is when people are eager to show their gratitude at just the right moment. Tell me, my dear, where might I quickly get my hands on a few boarding sabers and a couple of pistols—quietly, without any fuss?
+Truly, how wonderful it is when people are eager to show their gratitude at just the right moment. Tell me, my dear, where might I quickly get my hands on a few boarding sabers and a couple of pistols-quietly, without any fuss?
 }
 questNPC_48 {
 @<TimeGreeting>, doctor.
@@ -158,7 +158,7 @@ questNPC_51 {
 I'm leaving already.
 }
 questNPC_52 {
-I'm so tired—I can barely stand.
+I'm so tired-I can barely stand.
 }
 questNPC_53 {
 I can't go on living like this!
@@ -290,7 +290,7 @@ questNPC_95 {
 Thanks, mate.
 }
 questNPC_96 {
-He dashed into the tavern—look for him there. Don’t forget to check under the tables.
+He dashed into the tavern-look for him there. Don’t forget to check under the tables.
 }
 questNPC_97 {
 I was in the tavern recently, I think. If I remember right, I haven’t left since.
@@ -353,7 +353,7 @@ questNPC_116 {
 I won’t ask why you need this, and if anyone asks me, I won’t have to lie or make excuses. However, I won’t be asked for a report until the day after tomorrow, so...
 }
 questNPC_117 {
-The day after tomorrow, you’ll be able to say with confidence that you lent a few sabers and pistols, free of charge, to Doctor Peter Blood—the very same who served as a doctor in Bridgetown. I doubt Colonel Bishop will object...
+The day after tomorrow, you’ll be able to say with confidence that you lent a few sabers and pistols, free of charge, to Doctor Peter Blood-the very same who served as a doctor in Bridgetown. I doubt Colonel Bishop will object...
 }
 questNPC_118 {
 My son owes you his life, as do I. Here, take this, Doctor Blood. And good luck to you!
@@ -419,7 +419,7 @@ questNPC_138 {
 Since when do slaves roam around wherever they please, armed?
 }
 questNPC_139 {
-You're Colonel Bishop's slave—why are you armed?
+You're Colonel Bishop's slave-why are you armed?
 }
 questNPC_140 {
 Hey, hand over all your weapons right now! Someone needs to tell Colonel Bishop so he can teach you a proper lesson...
@@ -455,7 +455,7 @@ questNPC_150 {
 Hello, Mister Blood, glad to see you in good health. In the state you arrived at the plantation, you wouldn’t have lasted long. Good thing the lads and I managed to nurse you back, though we’re no doctors ourselves.\nBut you, if I’m not mistaken, are one, aren’t you? Maybe you could give me something for a headache? Sometimes my head aches unbearably after that cursed storm. Why did the captain have to go there in the first place...
 }
 questNPC_151 {
-Of course, Sandro. After what you and Hopkins did for me and the lads, it's my duty to help you. Here, take this potion—it'll cure your migraine.
+Of course, Sandro. After what you and Hopkins did for me and the lads, it's my duty to help you. Here, take this potion-it'll cure your migraine.
 }
 questNPC_152 {
 Unfortunately, I don’t have anything for headaches, Sandro. And Colonel Bishop most likely won’t give any money to buy the necessary medicine, since he believes all his slaves’ illnesses come from idleness. Sadly, all I can suggest is to rest as much as you can, whenever possible.
@@ -485,7 +485,7 @@ questNPC_160 {
 Yes, but slaves aren’t allowed to have weapons, are they? And what situation are you talking about?
 }
 questNPC_161 {
-Don’t worry, Doctor, it’s easy to hide under your clothes, so no one will notice a thing. Unless you start waving it around in front of the soldiers. And the time will come when you’ll have to wave it, and I think I know why... But I won’t give you away, don’t worry—I’m on your side.
+Don’t worry, Doctor, it’s easy to hide under your clothes, so no one will notice a thing. Unless you start waving it around in front of the soldiers. And the time will come when you’ll have to wave it, and I think I know why... But I won’t give you away, don’t worry-I’m on your side.
 }
 questNPC_162 {
 Thank you, my friend. I suggest you have a word with Jeremy. Get well soon!
@@ -518,7 +518,7 @@ questNPC_171 {
 Well, what do you want now?
 }
 questNPC_172 {
-I don't have much time—I want to finish you off right now!
+I don't have much time-I want to finish you off right now!
 }
 questNPC_173 {
 Just wanted to remind you about our meeting.
@@ -542,7 +542,7 @@ questNPC_179 {
 I bring you news that the pleasant pastime is canceled.
 }
 questNPC_180 {
-You’ve got three seconds to crawl back to wherever you came from—and pray we never cross paths again.
+You’ve got three seconds to crawl back to wherever you came from-and pray we never cross paths again.
 }
 questNPC_181 {
 I’ve got a better idea. How about you get angry and challenge me to a duel, while I just stand here and wait?
@@ -632,7 +632,7 @@ questNPC_209 {
 The old dog won’t betray me. How did they get into the city?
 }
 questNPC_210 {
-A Spanish ship docked—they arrived on it.
+A Spanish ship docked-they arrived on it.
 }
 questNPC_211 {
 They slipped into the town at night through the jungle.
@@ -695,10 +695,10 @@ questNPC_230 {
 Never seen anything like THAT before, eh? All right, let’s have another drink to THAT!
 }
 questNPC_231 {
-No? No fish?! You have to know the right spots, you bungler! I found a special place... the net fills to the brim overnight—God is my witness!
+No? No fish?! You have to know the right spots, you bungler! I found a special place... the net fills to the brim overnight-God is my witness!
 }
 questNPC_232 {
-Spots... I was looking for good spots too, tried everywhere... there’s no fish here, and no good places either. To hell with fishing—it’s a losing game!
+Spots... I was looking for good spots too, tried everywhere... there’s no fish here, and no good places either. To hell with fishing-it’s a losing game!
 }
 questNPC_233 {
 Let’s have a drink... This... this place... it’s...
@@ -788,7 +788,7 @@ questNPC_261 {
 Hm, allow me to fill this regrettable gap in your knowledge. So, let me introduce myself! Captain Jacques Nightingale, also known as...
 }
 questNPC_262 {
-That’s all very interesting, but—where’s your ship, captain?
+That’s all very interesting, but-where’s your ship, captain?
 }
 questNPC_263 {
 Uh... He’s at the anchorage... Somewhere...
@@ -803,7 +803,7 @@ questNPC_266 {
 Believe me, I plan to gain much more than just a sail in the near future.
 }
 questNPC_267 {
-Slave galleys? No way.\nLet’s be honest—after all, we’re friends now, aren’t we? When two people break into the same shop, at the same time, without the owner’s knowledge, it’s like the Lord Himself is telling them to become friends, you see?
+Slave galleys? No way.\nLet’s be honest-after all, we’re friends now, aren’t we? When two people break into the same shop, at the same time, without the owner’s knowledge, it’s like the Lord Himself is telling them to become friends, you see?
 }
 questNPC_268 {
 Suppose so.
@@ -815,7 +815,7 @@ questNPC_270 {
 That’s exactly the sort of thing I could use myself.
 }
 questNPC_271 {
-You think it’s wise to pick a fight with a pirate?.. I’d say that’s not in your best interest. So here’s the deal—listen up.\nFind someone willing to take me to Port Royal for three thousand, and I’ll give you fifteen hundred. Deal? In your situation, every last piece of eight counts.
+You think it’s wise to pick a fight with a pirate?.. I’d say that’s not in your best interest. So here’s the deal-listen up.\nFind someone willing to take me to Port Royal for three thousand, and I’ll give you fifteen hundred. Deal? In your situation, every last piece of eight counts.
 }
 questNPC_272 {
 Yeah... Tempting offer. Not like I have much of a choice. Deal.
@@ -824,7 +824,7 @@ questNPC_273 {
 You know, you should just... Go fool some young idiots instead! I’ve had enough for today.
 }
 questNPC_274 {
-Splendid. One condition, mon chéri—no names. Well, you can give yours if you like... but mine... Just say you forgot it. Or better yet, say I’m a beautiful young miss! Let’s say... Taylor. Yes, Taylor. Got it?
+Splendid. One condition, mon chéri-no names. Well, you can give yours if you like... but mine... Just say you forgot it. Or better yet, say I’m a beautiful young miss! Let’s say... Taylor. Yes, Taylor. Got it?
 }
 questNPC_275 {
 Young miss?.. All right, I’ll think of something.
@@ -836,7 +836,7 @@ questNPC_277 {
 The corvette 'Floating Briton' under Captain John Miner is already waiting for you.
 }
 questNPC_278 {
-Well, what can I say—a bow and my deepest thanks to you, oh...
+Well, what can I say-a bow and my deepest thanks to you, oh...
 }
 questNPC_279 {
 Fifteen hundred, Jacques.
@@ -854,7 +854,7 @@ questNPC_283 {
 Thank you.
 }
 questNPC_284 {
-I’m grateful to you... friend. Go on—spend your money on something nice.
+I’m grateful to you... friend. Go on-spend your money on something nice.
 }
 questNPC_285 {
 And good luck to you... hmm.
@@ -869,7 +869,7 @@ questNPC_288 {
 May I know your friend’s name, Mr. Blood?
 }
 questNPC_289 {
-Of course. His name is... her... well, yes — actually, it’s her...
+Of course. His name is... her... well, yes - actually, it’s her...
 }
 questNPC_290 {
 Of course. His name’s Jacques Nightingale, ever heard of him?..
@@ -893,7 +893,7 @@ questNPC_296 {
 No? How can I agree to take on a passenger if I don’t even know their name?!
 }
 questNPC_297 {
-You certainly can. Let's put it this way, it's a certain Miss Taylor... Yes, that's right — Miss Taylor, who will give you three thousand in silver if you stop asking questions.
+You certainly can. Let's put it this way, it's a certain Miss Taylor... Yes, that's right - Miss Taylor, who will give you three thousand in silver if you stop asking questions.
 }
 questNPC_298 {
 Alright, I’ll take him... her. Tell my future passenger that the ‘Floating Briton’ is ready to set sail.
@@ -902,7 +902,7 @@ questNPC_299 {
 Thank you.
 }
 questNPC_300 {
-Should’ve said so from the start! It’s a deal—I’ll be waiting for Miss Taylor, aboard.
+Should’ve said so from the start! It’s a deal-I’ll be waiting for Miss Taylor, aboard.
 }
 questNPC_301 {
 I’ll let her know. All the best, Captain.
@@ -914,22 +914,22 @@ questNPC_303 {
 I hope you're ready to meet your maker.
 }
 questNPC_304 {
-You saved me? Who are you?!
+W-w-who are you?
 }
 questNPC_305 {
-I'm Peter Blood, uh... the local doctor. Are you going to wait while I show you my papers? And what the devil is going on here?
+Are you going to wait while I show you my papers? It isn’t safe to stay here. Follow me.
 }
 questNPC_306 {
-The Spaniards... they... That big ship, the one allowed to sail so calmly into our bay today under a false flag, turned out to be a Spanish privateer. Their trick with the flag went unnoticed, so much so that, without raising any suspicion, they sailed right into the bay and fired a broadside salute at the fort from point-blank range with twenty cannons...
+The Spaniards... They... That big ship... It sailed calmly into our bay under a false flag... And then... it... they... those Spaniards... (cries) They came right up to the fort and fired all their guns...
 }
 questNPC_307 {
-And now, as I understand it, this privateer's crew is plundering the town?
+And now they’re plundering the town?
 }
 questNPC_308 {
-Yes, by sunset our garrison had surrendered, and two hundred and fifty Spaniards became the masters of Bridgetown.
+Yes... Those bastards... They... became the masters of Bridgetown.
 }
 questNPC_309 {
-That’s what you call a timely twist of fate. Though only the devil knows how this will all turn out! As for you—run into the woods and hide until the Spaniards leave town.
+You can’t stay here. Follow me-and try to keep up.
 }
 questNPC_310 {
 Captain Hobart! According to our spy's information, rebels are hiding out in this estate. There are five dragoons at your disposal. Search the building and seize anyone lurking inside! Don't handle this scum with kid gloves. You're acting in the name of the King!
@@ -939,4 +939,20 @@ Yes, sir!
 }
 questNPC_312 {
 Did you hear the colonel? The rebels are hiding there! Search everything, turn the house upside down and seize everyone you find! Get to it!
+}
+
+questNPC_313 {
+A-are we going to Colonel Bishop’s plantations?
+}
+
+questNPC_314 {
+You’d be better off staying away from the town. Now tell me, what happened there?
+}
+
+questNPC_315 {
+That damned governor... I hope he gets what he deserves today. It’s because of him we’re still stuck here.
+}
+
+questNPC_316 {
+If it’s any consolation, gout won’t let him enjoy life, however much of it he has left.
 }

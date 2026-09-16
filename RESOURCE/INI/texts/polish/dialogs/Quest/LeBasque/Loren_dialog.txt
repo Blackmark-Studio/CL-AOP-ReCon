@@ -1,0 +1,36 @@
+Loren_dialog_1 {
+Kapitanie @<pchar>. Może świeżej ryby?
+}
+Loren_dialog_2 {
+Czy my się znamy?
+}
+Loren_dialog_3 {
+Zależy, co uznać za znajomość. Sporo o panu słyszałem.
+}
+Loren_dialog_4_m {
+Tym lepiej. Nie przyszedłem po ryby. Czekam na pewnego... przyjaciela. Powinien był rzucić tu kotwicę już wczoraj. Na fleucie „Róża Wiatrów”.
+}
+Loren_dialog_4_f {
+Tym lepiej. Nie przyszłam po ryby. Czekam na pewnego... przyjaciela. Powinien był rzucić tu kotwicę już wczoraj. Na fleucie „Róża Wiatrów”.
+}
+Loren_dialog_5 {
+Fleuta... Jedna z tych pękatych, ociężałych balii, które tak lubią w Europie. Była tu jedna. Zeszłej nocy.
+}
+Loren_dialog_6 {
+I wartownicy przy latarni jej nie zauważyli?
+}
+Loren_dialog_7 {
+Wartownicy patrzą na światła sygnałowe i flagi. A ta balia szła w całkowitej ciemności: ani latarni na rufie, ani proporca na maszcie. Skradała się wzdłuż brzegu jak szpieg mijający patrol, łapiąc wiatr tylko marslami. W ciemności omal nie zderzyła się z przemytnikami — ci też płynęli bez świateł. Za co jestem im wdzięczny: nie popsuli mi nocnego połowu.
+}
+Loren_dialog_8 {
+Dokąd płynęła? Ku hiszpańskim brzegom?
+}
+Loren_dialog_9 {
+Raczej nie. Moi znajomi przybili do latarni, a fleuta trzymała kurs na wschód. Sądzę, że chciała opłynąć wyspę i rzucić kotwicę gdzieś przy plaży Rybie Oko. Chociaż mogła też skręcić ku Michelowi le Basque’owi — odwiedzić jego bukanierów.
+}
+Loren_dialog_10 {
+To mało prawdopodobne. Dziękuję, Loren.
+}
+Loren_dialog_11 {
+Trzymajcie się, kapitanie.
+}

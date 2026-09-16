@@ -1,54 +1,54 @@
 Beliz_Waitress_1 {
-有问题吗，@<GetAddress_Form>?
+有问题吗， @<GetAddress_Form>?
 }
 Beliz_Waitress_2 {
-有什么需要帮忙的吗，@<GetAddress_Form>?
+有什么需要帮忙的吗， @<GetAddress_Form>?
 }
 Beliz_Waitress_3 {
 @<RandPhraseSimple>
 }
 Beliz_Waitress_4_m {
-嗯，你这是在跟我调情吗，先生？
+嗯， 你这是在跟我调情吗， 先生？ 
 }
 Beliz_Waitress_4_f {
-你又来了，还问这些奇怪的问题……你就这么喜欢烦我吗？
+你又来了， 还问这些奇怪的问题…… 你就这么喜欢烦我吗？ 
 }
 Beliz_Waitress_5_m {
-你今天已经第三次提起这事了……这是在表示关心吗？
+你今天已经第三次提起这事了…… 这是在表示关心吗？ 
 }
 Beliz_Waitress_5_f {
-你今天已经第三次提这事了……你是在开玩笑吗？
+你今天已经第三次提这事了…… 你是在开玩笑吗？ 
 }
 Beliz_Waitress_6 {
-你又要问问题了吗，@<GetAddress_Form>?
+你又要问问题了吗， @<GetAddress_Form>?
 }
 Beliz_Waitress_7_m {
-我改主意了……
+我改主意了…… 
 }
 Beliz_Waitress_7_f {
-我改变主意了……
+我改变主意了…… 
 }
 Beliz_Waitress_8 {
-我现在没什么可说的。
+我现在没什么可说的。 
 }
 Beliz_Waitress_9 {
 @<RandPhraseSimple>
 }
 Beliz_Waitress_10 {
-没有没有，哪有啊，美女……
+没有没有， 哪有啊， 美女…… 
 }
 Beliz_Waitress_11 {
-哪有啊，亲爱的，只是有点健忘……
+哪有啊， 亲爱的， 只是有点健忘…… 
 }
 Beliz_Waitress_12 {
-没事，没什么要问的……
+没事， 没什么要问的…… 
 }
 Beliz_Waitress_13 {
-你知不知道卡拉现在人在哪儿？
+你知不知道卡拉现在人在哪儿？ 
 }
 Beliz_Waitress_14 {
-呃……不知道。你最好去问问城里的居民。我想他们肯定能给你透露点消息。
+呃…… 不知道。 你最好去问问城里的居民。 我想他们肯定能给你透露点消息。 
 }
 Beliz_Waitress_15 {
-好的，美女，那我就先走了。
+好的， 美女， 那我就先走了。
 }

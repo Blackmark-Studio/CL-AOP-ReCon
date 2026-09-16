@@ -1,96 +1,96 @@
 Charles_Tavern_1 {
-什么问题？
+什么问题？ 
 }
 Charles_Tavern_2 {
-有什么需要帮忙的吗，@<GetAddress_Form>?
+有什么需要帮忙的吗， @<GetAddress_Form>?
 }
 Charles_Tavern_3 {
 @<RandPhraseSimple>
 }
 Charles_Tavern_4 {
-不久前你还想问我个问题，@<GetAddress_Form>……
+不久前你还想问我个问题， @<GetAddress_Form>…… 
 }
 Charles_Tavern_5 {
-你今天已经第三次提这事了……
+你今天已经第三次提这事了…… 
 }
 Charles_Tavern_6 {
-咱们又要开始问问题了？
+咱们又要开始问问题了？ 
 }
 Charles_Tavern_7_m {
-我改主意了……
+我改主意了…… 
 }
 Charles_Tavern_7_f {
-我改变主意了……
+我改变主意了…… 
 }
 Charles_Tavern_8 {
-我现在没什么可说的。
+我现在没什么可说的。 
 }
 Charles_Tavern_9 {
 @<RandPhraseSimple>
 }
 Charles_Tavern_10 {
-嗯，我的记忆好像出了点问题……
+嗯， 我的记忆好像出了点问题…… 
 }
 Charles_Tavern_11 {
-看来第三次总算成了啊……
+看来第三次总算成了啊…… 
 }
 Charles_Tavern_12 {
-没有，没有什么问题……
+没有， 没有什么问题…… 
 }
 Charles_Tavern_13 {
-伙计，我在找一个叫Elizabeth Sheppard的年轻姑娘，你听说过她吗？
+伙计， 我在找一个叫伊丽莎白.谢泼德的年轻姑娘， 你听说过她吗？ 
 }
 Charles_Tavern_14 {
-Miss Liz Sheppard 是我们镇上的居民。你找她有什么事？
+谢泼德小姐是我们镇上的居民。 你找她有什么事？ 
 }
 Charles_Tavern_15 {
-你知道吧，她在Gulf of Maracaibo落下了点东西……
+你知道吧， 她在马拉开波湾落下了点东西…… 
 }
 Charles_Tavern_16 {
-是啊，Liz最近老是在外头跑，城里都很难碰到她。
+是啊， 伊丽莎白最近老是在外头跑， 城里都很难碰到她。 
 }
 Charles_Tavern_17 {
-那她现在在哪儿？
+那她现在在哪儿？ 
 }
 Charles_Tavern_18 {
-现在在家。
+现在在家。 
 }
 Charles_Tavern_19 {
-她有自己的房子？
+她有自己的房子？ 
 }
 Charles_Tavern_20 {
-对，她父亲的家。
+对， 她父亲的家。 
 }
 Charles_Tavern_21 {
-那她爸是谁？
+那她爸是谁？ 
 }
 Charles_Tavern_22 {
-这个嘛，大家一般不怎么提，但我可以告诉你。\n你听说过Captain Staton吗？没有？哈哈，那我跟你说：Captain Staton可是最早的一批海盗之一，也是Liz的父亲。当年他还在世的时候，为这个小镇的发展出了不少力，所以Nevis的人都很感激他。
+这个嘛， 大家一般不怎么提， 但我可以告诉你。 \n你听说过斯坦顿船长吗？ 没有？ 哈哈， 那我跟你说： 斯坦顿船长可是最早的一批海盗之一， 也是伊丽莎白的父亲。 当年他还在世的时候， 为这个小镇的发展出了不少力， 所以尼维斯的人都很感激他。 
 }
 Charles_Tavern_23 {
-Elizabeth的姓是Sheppard。
+伊丽莎白的姓是谢泼德。 
 }
 Charles_Tavern_24 {
-这是船长自己的决定。他带着家人搬到城里后，换了个姓氏。以防万一……
+这是船长自己的决定。 他带着家人搬到城里后， 换了个姓氏。 以防万一…… 
 }
 Charles_Tavern_25 {
-所以现在Liz一个人住吗？
+所以现在伊丽莎白一个人住吗？ 
 }
 Charles_Tavern_26 {
-是的，她母亲比丈夫多活了一阵子，也葬在这座岛上。Danielle已经有两年没回家了。
+是的， 她母亲比丈夫多活了一阵子， 也葬在这座岛上。 丹尼尔已经有两年没回家了。 
 }
 Charles_Tavern_27 {
-Daniel？
+丹尼尔？ 
 }
 Charles_Tavern_28 {
-莉兹姐姐。
+伊丽莎白的姐姐。 
 }
 Charles_Tavern_29 {
-明白了，那就谢谢你，伙计。
+明白了， 那就谢谢你， 伙计。 
 }
 Charles_Tavern_30 {
-不用谢。希望你带给Liz好消息。她是个好姑娘，船长……
+不用谢。 希望你带给伊丽莎白好消息。 她是个好姑娘， 船长…… 
 }
 Charles_Tavern_31 {
-反正没什么坏事，这点可以肯定。
+反正没什么坏事， 这点可以肯定。 
 }

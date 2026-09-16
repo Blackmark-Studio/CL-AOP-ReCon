@@ -3,7 +3,7 @@ void ProcessDialogEvent()
 	ref NPChar;
 	aref Link, Diag;
 	string NPC_Meeting;
-	int Shit, i;
+	int Shit, i, iContraStore;
 	ref refStore;
 	ref sld;
 	string sPhraseNum = "0";
@@ -367,10 +367,14 @@ void ProcessDialogEvent()
 		break;
 
 		case "Exchange1":
+			// KZ FreeStores > магазин берём с проверкой
+			if (CheckAttribute(pchar, "FindContrabandGoods.StoreIdx")) iContraStore = sti(pchar.FindContrabandGoods.StoreIdx);
+			else                                                       iContraStore = GetCharacterCurrentStore(pchar);
+
 			NPChar.quest.meeting = NPC_Meeting;
 			Diag.CurrentNode = Diag.TempNode;
 			DialogExit();
-			LaunchContrabandTrade(NPChar, sti(pchar.FindContrabandGoods.StoreIdx));
+			LaunchContrabandTrade(NPChar, iContraStore);
 		break;
 
 		case "NoGoods":

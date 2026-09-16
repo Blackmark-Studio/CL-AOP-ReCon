@@ -1,0 +1,64 @@
+EPL_4_DressmakerNobleLady_dialog_1 {Veuillez signaler le bug au support technique.}
+EPL_4_DressmakerNobleLady_dialog_2 {Rebecca ?}
+EPL_4_DressmakerNobleLady_dialog_3 {Pardon ?}
+EPL_4_DressmakerNobleLady_dialog_4 {Comment... Il semble que je me sois trompée. Je vous ai prise pour une de mes connaissances.}
+EPL_4_DressmakerNobleLady_dialog_5 {Je l'ai déjà parfaitement compris. Maintenant, je vous prie de vous éloigner de moi.}
+EPL_4_DressmakerNobleLady_dialog_6 {Bien sûr, bien sûr. Mais j'aimerais seulement savoir qui vous a confectionné cette robe ? C'est à cause d'elle que je vous ai prise pour cette jeune femme.}
+EPL_4_DressmakerNobleLady_dialog_7 {Balivernes.}
+EPL_4_DressmakerNobleLady_dialog_8 {Garberd, pourquoi restez-vous planté ici ?}
+EPL_4_DressmakerNobleLady_dialog_9 {@<UpperFirst>, je suis contraint d'insister.}
+EPL_4_DressmakerNobleLady_dialog_10 {Ne vous donnez pas cette peine !}
+EPL_4_DressmakerNobleLady_dialog_11 {...(sans nous remarquer)... Et moi, je lui dis qu'il est bien naïf de croire ces rumeurs selon lesquelles j'aurais enlacé un ours noir... Il n'en est rien !\nEt toi, qu'est-ce que tu veux ?}
+EPL_4_DressmakerNobleLady_dialog_12 {Vous vous reposez, les travailleurs ? J'ai à vous parler.}
+EPL_4_DressmakerNobleLady_dialog_13 {Vous avez bien vu, demoiselle. On se repose.\nSi vous voulez nous proposer du travail, revenez demain... Non, plutôt dans deux jours. Pour demain, on a déjà un employeur, sauf si vous payez davantage.}
+EPL_4_DressmakerNobleLady_dialog_14 {J'ai besoin de vous tout de suite. Deux mille pièces pour une simple conversation, ça vous va ?}
+EPL_4_DressmakerNobleLady_dialog_15 {Marché conclu. Parlez, mais l'argent d'abord, et ensuite nous vous dirons ce que nous savons.}
+EPL_4_DressmakerNobleLady_dialog_16 {Tenez.}
+EPL_4_DressmakerNobleLady_dialog_17 {J'ai laissé ma bourse dans la cabine. Je reviens bientôt.}
+EPL_4_DressmakerNobleLady_dialog_18 {Alors, demoiselle, vous avez apporté les deux mille pièces ?}
+EPL_4_DressmakerNobleLady_dialog_19 {Tenez.}
+EPL_4_DressmakerNobleLady_dialog_20 {Pas encore. Je reviens bientôt.}
+EPL_4_DressmakerNobleLady_dialog_21 {Parfait. Alors, que voulais-tu savoir ?}
+EPL_4_DressmakerNobleLady_dialog_22 {Je cherche une aristocrate descendue de l'un des navires espagnols. Elle s'est récemment promenée sur le quai escortée de soldats, coiffée d'un chapeau à larges bords. Difficile de ne pas la remarquer.}
+EPL_4_DressmakerNobleLady_dialog_23 {Son Altesse se promenait peut-être sur les pavés, mais nous, on trime au port de l'aube au crépuscule. Pour ce genre de questions, marinette, il faut voir le gouverneur, seulement il ne reçoit pas les gens comme toi.}
+EPL_4_DressmakerNobleLady_dialog_24 {Je suis capitaine de mon propre navire. Il me recevra par devoir.}
+EPL_4_DressmakerNobleLady_dialog_25 {Justement. Là-bas, ils ont des bals masqués tous les soirs, pas le temps pour les affaires d'État. Les nobles invités affluent chez lui, et personne d'autre n'entre.}
+EPL_4_DressmakerNobleLady_dialog_26 {De véritables mascarades ?}
+EPL_4_DressmakerNobleLady_dialog_27 {Exactement. Hier, je passe devant la résidence et je vois dans le jardin une sorte d'épouvantail au long nez. J'ai failli me signer, mais c'était un don avec un masque qui contemplait une statue. J'en ai bien ri.}
+EPL_4_DressmakerNobleLady_dialog_28 {Au moins, c'est une piste. Reste à savoir comment entrer à cette réception.}
+EPL_4_DressmakerNobleLady_dialog_29 {Encore une fois, marinette, tu poses tes questions aux mauvaises personnes.}
+EPL_4_DressmakerNobleLady_dialog_30 {Je sais, merci quand même.}
+EPL_4_DressmakerNobleLady_dialog_31 {Et où donc a disparu notre hôte ? Il m'avait promis une partie de poker.}
+EPL_4_DressmakerNobleLady_dialog_32 {Il n'est pas dans le jardin.}
+EPL_4_DressmakerNobleLady_dialog_33 {Si vous le croisez, soyez assez aimable pour lui dire que je l'attends ici.}
+EPL_4_DressmakerNobleLady_dialog_34 {Je n'y manquerai pas.}
+EPL_4_DressmakerNobleLady_dialog_35 {Inviteriez-vous une dame à votre table ?}
+EPL_4_DressmakerNobleLady_dialog_36 {Je ne voudrais pas paraître discourtois, mais j'attends un partenaire pour jouer aux dés.}
+EPL_4_DressmakerNobleLady_dialog_37 {Prenons mes dés.}
+EPL_4_DressmakerNobleLady_dialog_38 {Les règles sont très simples : nous lançons les dés à tour de rôle...}
+EPL_4_DressmakerNobleLady_dialog_39 {Les dés !}
+EPL_4_DressmakerNobleLady_dialog_40 {Dieu m'est témoin, je miserais mon pistolet d'honneur si une seule femme pouvait me battre. À ma honte, je l'ai mis en gage la semaine dernière.}
+EPL_4_DressmakerNobleLady_dialog_41 {Jouons pour le plaisir. J'ai seulement besoin de tuer un peu le temps.}
+EPL_4_DressmakerNobleLady_dialog_42 {Vous avez réussi à trouver le jeune homme ?}
+EPL_4_DressmakerNobleLady_dialog_43 {Le voilà, sur la balustrade. Le jeune homme n'est pas d'humeur à de longues conversations, du moins pas en ma compagnie.\nMais quelle belle soirée, ne trouvez-vous pas ?}
+EPL_4_DressmakerNobleLady_dialog_44 {Je ne peux pas être d'accord, mes pensées sont ailleurs pour le moment.}
+EPL_4_DressmakerNobleLady_dialog_45 {J'ai réussi à savoir où loge miss Pilar. Mieux vaut ne pas traiter directement avec elle, mais parlez à ses domestiques. Qui sait, peut-être a-t-elle amené sa couturière. Permettez-moi de vous accompagner.}
+EPL_4_DressmakerNobleLady_dialog_46 {Bien sûr, allons-y.}
+EPL_4_DressmakerNobleLady_dialog_47 {Ici. Montez l'escalier.}
+EPL_4_DressmakerNobleLady_dialog_48 {Vous montez avec moi ?}
+EPL_4_DressmakerNobleLady_dialog_49 {Je dois retourner à La Havane. Sa Grâce, Origon y Gascon, attend déjà mes rapports. Bonne chance, @<pchar>.}
+EPL_4_DressmakerNobleLady_dialog_50 {Prenez soin de vous. La chasse aux pirates est une occupation très dangereuse.}
+EPL_4_DressmakerNobleLady_dialog_51 {Vous ?! Alors c'est votre travail ?}
+EPL_4_DressmakerNobleLady_dialog_52 {Mon Dieu ! @<UpperFirst>, je ne vous ai pas entendue entrer. Les maîtres logent en bas ; ces chambres sont actuellement réservées aux domestiques. Seulement, je crains qu'ils ne soient encore...}
+EPL_4_DressmakerNobleLady_dialog_53 {Sofia, vous ne me reconnaissez pas ? La Vega, la veille du siège.}
+EPL_4_DressmakerNobleLady_dialog_54 {Oh... Vous êtes la jeune fille du marché qui voulait m'aider ?\nVous savez, je suis tellement gênée. À l'époque, j'étais accablée par tous mes problèmes, et puis la coupe inhabituelle de la tenue de votre compagne m'avait fascinée, si bien que je n'ai absolument pas retenu votre visage.}
+EPL_4_DressmakerNobleLady_dialog_55 {Comment avez-vous réussi à vous échapper ?}
+EPL_4_DressmakerNobleLady_dialog_56 {On racontait qu'avant de tirer sur la ville, les pirates étaient montés à bord de notre navire et avaient jeté tous les barils de poudre à la mer. Les officiers sont partis négocier avec eux et, à leur retour, le capitaine a ordonné à tous les passagers de monter dans les chaloupes, puis nous sommes partis.}
+EPL_4_DressmakerNobleLady_dialog_57 {Ils nous ont tout simplement abandonnés !}
+EPL_4_DressmakerNobleLady_dialog_58 {C'est affreux. Je n'ai appris que récemment ce qui s'était passé là-bas.}
+EPL_4_DressmakerNobleLady_dialog_59 {Et pourquoi n'êtes-vous pas retournée en Europe ?}
+EPL_4_DressmakerNobleLady_dialog_60 {Le navire n'est pas reparti, alors j'ai dû chercher du travail. Heureusement, miss Pilar a été très généreuse, et vous savez, je ne veux pas retourner au domaine de mon père. Je vous l'ai déjà dit ? Elle n'est pas ici.}
+EPL_4_DressmakerNobleLady_dialog_61 {Eh bien, je repasserai une autre fois. Je suis heureuse que vous ayez surmonté vos difficultés.}
+EPL_4_DressmakerNobleLady_dialog_62 {Merci, @<GetAddress_Form>.}
+EPL_4_DressmakerNobleLady_dialog_63 {Bonne chance, Sofia.}
+EPL_4_DressmakerNobleLady_dialog_64 {Vous avez retiré le masque de carnaval}

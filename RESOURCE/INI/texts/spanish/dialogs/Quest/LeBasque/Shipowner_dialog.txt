@@ -1,0 +1,15 @@
+Shipowner_dialog_1 {
+Ah, capitán. Michel me avisó de que vendríais. La Margarita ya está bajo mi cuidado. También podéis dejar aquí otros barcos y, si han sufrido en el mar, mis hombres se encargarán de las reparaciones.
+}
+Shipowner_dialog_2 {
+¿Qué necesitáis, capitán? ¿Dejar un barco o repararlo?
+}
+Shipowner_dialog_3 {
+Quiero ocuparme de los barcos que tengo aquí amarrados.
+}
+Shipowner_dialog_4 {
+Revisa mis barcos. ¿Cuáles necesitan reparaciones?
+}
+Shipowner_dialog_5 {
+Nada por ahora. Que te vaya bien, Charles.
+}

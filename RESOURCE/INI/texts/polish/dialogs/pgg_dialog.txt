@@ -1193,10 +1193,10 @@ pgg_dialog_331 {
 Niewolników
 }
 pgg_dialog_332 {
-, zatrzymał się niedaleko @<sLoc> przy zatoce @<GetConvertStr>, by uzupełnić zapasy.
+, zatrzymał się niedaleko @<sLoc> przy zatoce @<XI_ConvertString>, by uzupełnić zapasy.
 }
 pgg_dialog_333 {
-, wpadł w sztorm niedaleko @<sLoc> i poszedł na dno. Ale zdążyli uratować część ładunku i wysiedli w zatoce @<GetConvertStr> Teraz czekają na przybycie swojej eskadry.
+, wpadł w sztorm niedaleko @<sLoc> i poszedł na dno. Ale zdążyli uratować część ładunku i wysiedli w zatoce @<XI_ConvertString> Teraz czekają na przybycie swojej eskadry.
 }
 pgg_dialog_334 {
 Nie przeciągaj, mów wszystko szybciej!

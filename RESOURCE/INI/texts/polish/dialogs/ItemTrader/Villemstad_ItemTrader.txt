@@ -34,3 +34,36 @@ Tak, rzeczywiście lepiej się targować...
 Villemstad_ItemTrader_12 {
 Hm, wybacz, kupcze...
 }
+Villemstad_ItemTrader_13 {
+Czy może mi pan powiedzieć, gdzie mogłabym kupić suknię odpowiednią do pokazania się w towarzystwie?
+}
+Villemstad_ItemTrader_14 {
+Potrzebuję sukni nie gorszej niż ta, którą nosi żona miejscowego bankiera.
+}
+Villemstad_ItemTrader_15 {
+U kogo mogłabym się dostać sukni, ale nie zwykłej, takiej, w której bym się nie wstydziła ukazać nawet na przyjęciu samego króla Francji.
+}
+Villemstad_ItemTrader_16 {
+Na targu raczej pani czegoś takiego nie znajdzie. Potrzebna byłaby dobra krawcowa. Niestety, nikogo nie mogę polecić...
+}
+Villemstad_ItemTrader_17 {
+Szkoda...
+}
+Villemstad_ItemTrader_18 {
+Nie, proszę pani, czegoś takiego nie mam na sprzedaż.
+}
+Villemstad_ItemTrader_19 {
+Dobrze...
+}
+Villemstad_ItemTrader_20 {
+U krawca króla Francji, a gdzieżby indziej. My jesteśmy prostymi ludźmi, nie to co ci bogaci panowie, którzy odwiedzają miejscowy dom publiczny.
+}
+Villemstad_ItemTrader_21 {
+Jakie to ciekawe. Czy ci panowie mają tam jakiś szczególny status? Chyba nie biegają tam za zwykłymi portowymi dziewkami?
+}
+Villemstad_ItemTrader_22 {
+Proszę wybaczyć, ale nie mam zwyczaju roznosić plotek. Niech pani sama tam zajdzie i popyta; może pani również zaproponują coś szczególnego. Ale mnie proszę w to nie mieszać i nie mówić, że coś ode mnie pani słyszała. Właścicielka to wpływowa dama. Kupuje wino od mojego kuzyna - znakomitego winiarza - i nie mam powodu źle o niej mówić.
+}
+Villemstad_ItemTrader_23 {
+Rozumiem. Dobrze, wezmę to pod uwagę, a przy okazji z pewnością kupię też trochę pańskiego wina.
+}

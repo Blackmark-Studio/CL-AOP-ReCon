@@ -1,0 +1,164 @@
+EPL_Prologue
+{
+Der Anfang von etwas Neuem
+}
+
+EPL_Prologue.1
+{
+Nach einem kleinen Streit mit Rebecca ist es mir endlich gelungen, sie zu etwas frischer Luft und zu einem Spaziergang mit mir zu überreden. Heute ist genau die richtige Gelegenheit, neue Bekanntschaften zu schließen - etwas, das wir in unserer alles andere als einfachen Lage keinesfalls vernachlässigen sollten.
+}
+
+EPL_Prologue.2
+{
+Während wir uns fertig machten, hatte der örtliche Händler und Geizhals Gaston Cotes bereits eine der neu angekommenen Kolonistinnen getroffen und ihr seine ganz eigene Art von örtlicher "Gastfreundschaft" gezeigt. Mich wagte er auch noch anzupöbeln.
+Zeit, ihm eine Lektion zu erteilen. Hinterher!
+}
+
+EPL_Prologue.3
+{
+Gaston hat bekommen, was er verdient. Ich sollte in die Stadt zurückkehren und nach der Fremden suchen. Offenbar hat auch sie einige Schwierigkeiten.
+}
+
+EPL_Prologue.4
+{
+Dieser Morgen war ereignisreich. Die Ankunft eines Schiffes aus der Alten Welt, wahrscheinlich des ersten seit zwei Monaten, die Bekanntschaft mit dem neuen Kommandanten, und ich habe sogar an etwas teilgenommen, das einem Duell ähnelte. Nicht gerade der gefährlichste Gegner, aber in einem Augenblick hat mich sein Stoß gehörig erschreckt. Eine solche Gewandtheit hätte ich Gaston nicht zugetraut. Hoffentlich hat er meine zitternden Hände nicht bemerkt, sonst ruiniert dieser Schwätzer noch meinen Ruf als Draufgängerin.
+Und dann ist da noch dieses Mädchen mit ihrem schweren Schicksal. Eine gute Gelegenheit, die Sachen dieses Schurken Arcadio loszuwerden. Ich muss zum Kap Isabela gehen und sie aus der Grotte holen.
+}
+
+EPL_Prologue.5
+{
+Ich bin da. Die Grotte ist gut verborgen; ein zufälliger Passant wird sie kaum finden, aber ich sollte trotzdem wachsam bleiben.
+}
+
+EPL_Prologue.6
+{
+Jemand hat unser Fort angegriffen. Rebecca und ich haben den Angriff in der Grotte außerhalb der Stadt abgewartet, obwohl uns sogar dort zwei der Angreifer fanden. Offenbar ist alles gut ausgegangen. Jetzt sind die Kampfgeräusche verstummt; ich muss nachsehen, was dort geschieht. Becky ist wahrscheinlich schon hingelaufen.
+}
+
+EPL_Prologue.7
+{
+Es ist furchtbar. Das Fort ist zerstört, der einzige Mensch, der mir nahesteht, ist verschwunden, und ich bin gezwungen, mit den wenigen Überlebenden zu fliehen. Gaston hat recht: Der Gouverneur von Santo Domingo ist meine einzige Hoffnung, doch mit jeder Minute wird mir klarer, dass ich Becky vielleicht nie wiedersehen werde. Das ist das Ende meines bisherigen Lebens.
+}
+
+EPL_Prologue.8
+{
+Nun habe ich also das Deck eines Schiffes betreten. An Bord sind viele Zivilisten, die ihr Zuhause verloren haben. Gerade beginnen die Matrosen, den Anker zu lichten, und unser Schiff setzt sich in Bewegung. Auf geht's!
+}
+
+EPL_Prologue.9
+{
+Zwei Piratenschiffe, die an der Plünderung von La Vega beteiligt waren, kommen direkt auf uns zu. Es hat keinen Sinn, gegen sie zu kämpfen. Wir müssen sie so schnell wie möglich abschütteln. Die Zivilisten dürfen nicht zu Schaden kommen.
+}
+
+EPL_Prologue.10
+{
+Unser Schiff konnte den Piraten entkommen. Habe ich mich getäuscht, oder haben sie uns absichtlich ziehen lassen? Seltsam. Wie dem auch sei, jetzt muss ich Kurs auf Santo Domingo nehmen und dem Gouverneur alles berichten, was geschehen ist.
+}
+
+EPL_Prologue.11
+{
+Zu viel Zeit ist vergangen. Nach Santo Domingo zu segeln hat keinen Sinn mehr, denn die Piraten haben die Stadt höchstwahrscheinlich bereits angegriffen. Es bleibt nur zu hoffen, dass die Spanier den Angriff abgewehrt haben, denn Santo Domingo besitzt hohe Festungsmauern und weitreichende Kanonen. Und was ist mit mir? Ich kann tun, was ich will; ich muss nur einen Kurs setzen. Vorwärts!
+}
+
+EPL_Prologue.12
+{
+Die Piraten planen einen Angriff auf Santo Domingo von Land aus. Meine Schwester könnte bei ihnen sein. Ich muss bei dieser Schlacht dabei sein, die vor den Stadttoren beginnen wird.
+}
+
+EPL_Prologue.13
+{
+Die Piraten wurden besiegt, aber meine Schwester war nicht unter ihnen. Ich sollte dem Gouverneur Bericht erstatten, der sich jetzt in seiner Residenz befinden dürfte.
+}
+
+
+
+EPL_TheFirstSteps
+{
+Erste Schritte
+}
+
+EPL_TheFirstSteps.1
+{
+Ich kann kaum glauben, was geschehen ist. Etwas, wovon ich nur träumen konnte, ist in einem Augenblick Wirklichkeit geworden. Ich bin Kapitänin.
+Und dennoch habe ich Angst. Es ist schrecklich und ungerecht. Es scheint, als seien meine Gebete erhört worden - nur nicht von unserem himmlischen Vater, sondern von Mephistopheles. Er hat meinen Wunsch auf die Weise erfüllt, die er am besten beherrscht: so heimtückisch und niederträchtig wie möglich, indem er meinen Traum gegen mein ganzes früheres Leben und gegen Beckys Leben eintauschte.
+Nein, aufgeben werde ich noch nicht. Bevor ich nach Kuba aufbreche, muss ich die Kraft finden, nach La Vega zurückzukehren. Wenn die Bukanier beschlossen haben, sich dort niederzulassen, sollte ich mit ihrem Anführer sprechen. Bis dahin werde ich mir überlegen, wie ich auftrete und was ich sage, damit ich eine Chance habe, lebend wieder herauszukommen.
+Und dann ist da noch diese Bark. Sie schwimmt und darf sich sogar Schiff nennen, aber vielleicht sollte ich das erhaltene Geld vernünftiger ausgeben?
+}
+
+EPL_TheFirstSteps.2
+{
+Ich wusste doch, dass Sandro Thorn nicht zufällig in La Vega war. Seine Nachricht war für mich bestimmt. Und das Wichtigste: Der Absender war mein Vater - Manuel Ribeiro Pardal. Den Namen dieses berühmten Korsaren hatte ich schon oft gehört, doch nie hätte ich gedacht, dass ich seine Tochter bin... Wie soll ich mich nun in Gesellschaft vorstellen? Kapitänin @<sEmma> @<sRemedios>, oder doch lieber @<sPardal>? Wahrscheinlich sollte ich berücksichtigen, mit wem ich spreche. Alles Weitere wird erst die Zeit zeigen.
+}
+
+EPL_TheFirstSteps.3
+{
+Das war der letzte Strohhalm, an den ich mich zu klammern versuchte, doch dieser Kerl weiß tatsächlich nichts. Sonst hätte er mich durchschaut.
+Was für ein Teufel. Er gab sich alle Mühe, so zu tun, als wäre er nicht überrascht, einen Familiennamen zu hören, den man auf Hunderte Seemeilen im Umkreis fürchtet. Ich weiß nicht, wie viel er mir geglaubt hat oder ob er das Gehörte überhaupt ernst nahm, aber offenbar wollte er kein unnötiges Risiko eingehen - als ob mein Vater sich auch nur im Geringsten um mich scherte. Nun, das kann ich als Trumpf im Ärmel benutzen.
+Der Besuch in La Vega brachte nicht die erwarteten Ergebnisse, aber er hat mich etwas gelehrt.
+}
+
+EPL_TheFirstSteps.4
+{
+Der Brief mit meinem Bericht wurde zugestellt, und ich habe die Antwort auf meine Frage erhalten: Es wurde beschlossen, alles so zu lassen, wie es ist. Ich bin an keinerlei Verpflichtungen mehr gebunden und kann tun, was ich will; ich muss nur einen Kurs setzen. Vorwärts!
+}
+
+
+
+EPL_PZD
+{
+Die Schneiderin der vornehmen Dame
+}
+
+EPL_PZD.1
+{
+Was für eine vornehme Schlampe - sie hielt meine Gesellschaft für nicht standesgemäß! In meinen Adern fließt mehr adliges Blut als in denen der Frau des hiesigen Gouverneurs. Nein, ich glaube nicht, dass das nur Zufall ist. Becky hat ein Kleid mit genau diesem Schnitt selbst entworfen; ein zweites dieser Art gibt es in der ganzen Karibik nicht.
+Ich muss meine Gedanken ordnen. Die Dame ist zweifellos Spanierin, also keine Einheimische. Vielleicht kann ich etwas über die Schiffe erfahren, die in letzter Zeit hier vor Anker gegangen sind.
+}
+
+EPL_PZD.2
+{
+Nachdem ich mich beruhigt hatte, beschloss ich doch, die Suche nicht fortzusetzen. Wahrscheinlich habe ich nur gesehen, was ich sehen wollte. Das Kleid ähnelt Rebeccas tatsächlich sehr, aber vermutlich hatte sie irgendwo schon einmal einen ähnlichen Schnitt gesehen.
+}
+
+EPL_PZD.3
+{
+Ich habe nur wenige Informationen. Offenbar sollte ich nach Sonnenuntergang tatsächlich am Kai entlanggehen und mit den hiesigen Arbeitern sprechen.
+}
+
+EPL_PZD.4
+{
+Wie sich herausstellt, wohnt die Frau beim hiesigen Gouverneur. Der veranstaltet Kostümabende, die ihm offenbar so wichtig sind, dass er sämtliche Staatsgeschäfte liegen lässt und niemanden empfängt.
+Koste es, was es wolle: Ich muss hinein, bevor diese hochmütige Person die Insel verlässt.
+Wo bekomme ich ein passendes Gewand her? Wenn die Gäste tatsächlich Masken tragen, kann ich das zu meinem Vorteil nutzen.
+Ich sollte den örtlichen Geldverleiher oder die Straßenhändler fragen.
+}
+
+EPL_PZD.5
+{
+Ich bin drin. Das war erstaunlich einfach. Viel schwieriger wird es, die Frau zu finden, die ich nur ein einziges Mal gesehen habe. Außerdem wird sie eine Maske tragen und höchstwahrscheinlich verkleidet sein. Irgendwie muss ich auch ein Gespräch anfangen und ihre Schneiderin erwähnen.
+}
+
+EPL_PZD.6
+{
+Ein paar Leute im Saal unterhalten sich ungezwungen mit ihren hellen Stimmen. Keine von ihnen scheint die Gesuchte zu sein.
+}
+
+EPL_PZD.7
+{
+Dieses Mädchen ist zu jung, wahrscheinlich eine der Töchter des Gouverneurs. Ganz sicher nicht die Frau, die ich suche.
+}
+
+EPL_PZD.8
+{
+Eine äußerst glückliche Bekanntschaft mit einem spanischen Offizier, der sich als Gabriel de Seguenza vorstellte. Das ist also tatsächlich der Kapitän der Galeone 'Hernal Diaz'. Er versprach, meine Angelegenheit zu regeln, wenn ich ihm im Gegenzug einen Gefallen tue: dem Mann am Tisch unten Gesellschaft leisten.
+}
+
+EPL_PZD.9
+{
+Beim Würfelspiel habe ich gar nicht bemerkt, wie schnell die Zeit verging. Ich muss durch die Tür hinter der Bühne hinaus und zum Kai gehen. Gabriel wartet dort auf mich.
+}
+
+EPL_PZD.10
+{
+Es stellte sich heraus, dass das Kleid von Sofia de la Piedad genäht wurde - jenem Mädchen, das ich am Vorabend des Bukanierangriffs auf La Vega kennengelernt hatte. Ich sollte mich für sie freuen, aber ich kann nur wütend sein. An Sofias Stelle hätte Rebecca sein sollen.
+}

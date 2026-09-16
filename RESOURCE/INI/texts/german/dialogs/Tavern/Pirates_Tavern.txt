@@ -184,3 +184,8 @@ Richtig, er wohnt in einem zweistöckigen Haus mit Steinwänden. Wenn du die Tav
 Pirates_Tavern_60 {
 Danke, du hast mir wirklich geholfen!
 }
+Pirates_Tavern_61 {Wir suchen eine spanische Korvette. Man sagt, sie lag ziemlich lange hier.}
+Pirates_Tavern_62 {Ah, Don Martin! Der ist geflohen. Vor Kurzem gab es hier eine ordentliche Keilerei zwischen Jackmans Piraten und den Kastiliern. Am Ende bekam er so große Angst, dass er das Ankertau kappen ließ und unter vollen Segeln verschwand.}
+Pirates_Tavern_63 {Täusche ich mich, oder amüsiert Sie das?}
+Pirates_Tavern_64 {Und wie! Dieser aufgeblasene kastilische Truthahn ist so schnell davongelaufen, dass er sein Boot am Ufer vergessen hat. Kurz vor der Abfahrt schickte er einen Offizier mit ein paar Matrosen als angebliche Händler zu Jackman, um Pech und Planken für Reparaturen zu kaufen. Als die Kerle leichte Beute witterten, begriffen sie schnell: Die Spanier haben Geld dabei, aber Ware wollte ihnen hier sowieso niemand verkaufen. Also schnitten sie die Käufer in Streifen.\nEin Offizier konnte entkommen. Aber unsere Insel ist klein — weiter als bis zur Bucht des Zerbrochenen Trogs kommt er nicht. Wenn Jackman ihn nicht erwischt, erledigen Hunger und Durst den Rest.}
+Pirates_Tavern_65 {Dieser Offizier könnte wissen, wohin Quesada gefahren ist. Danke.}

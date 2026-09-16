@@ -1,0 +1,128 @@
+; ККС анимация мужских персонажей из ПКМ. Размер моделей оригинальный.
+; edition by Metazot 10.09.10
+
+animation = man_B.an
+
+data = "Turn speed", "4.0"
+
+
+;DEATH - Варианты смертей в бою   =============================================
+[death_0]
+	speed = 2.
+	type = normal
+	start_time = 3636
+	end_time = 3637
+	loop = false
+	data = "Blend time", "0.8"		; sec
+	data = "Probability", "1.0"
+	data = "Angle", "330.0"
+	event = "RStep", 3620, normal
+	event = "LStep", 3599, normal
+
+[death_1]
+	speed = 1.5                             	
+	type = normal
+	start_time = 3711
+	end_time = 3712
+	loop = false
+	data = "Blend time", "0.8"		; sec
+	data = "Probability", "1.0"
+	data = "Angle", "330.0"
+	event = "LStep", 3656, normal
+
+[death_2]
+	speed = 1.5
+	type = normal
+	start_time = 3787
+	end_time = 3788
+	loop = false
+	data = "Blend time", "0.8"		; sec
+	data = "Probability", "1.0"
+	data = "Angle", "330.0"
+	event = "LStep", 3737, normal
+
+[death_3]
+	speed = 2.
+	type = normal
+	start_time = 3846
+	end_time = 3847
+	loop = false
+	data = "Blend time", "0.8"		; sec
+	data = "Probability", "1.0"
+	data = "Angle", "140.0"
+	event = "RStep", 3804, normal
+
+
+
+;СМЕРТЬ - Варианты для мирных жителей =========================================
+[death_citizen_1]
+	speed = 1.5
+	type = normal
+	start_time = 287
+	end_time = 288
+	loop = false
+	data = "Blend time", "0.3"		; sec
+	data = "Probability", "1.0"
+	data = "Angle", "340.0"
+	event = "LStep", 246, normal
+
+[death_citizen_2]
+	speed = 1.5
+	type = normal
+	start_time = 339
+	end_time = 340
+	loop = false
+	data = "Blend time", "0.3"		; sec
+	data = "Probability", "1.0"
+	data = "Angle", "340.0"
+	event = "LStep", 306, normal
+
+;Смерть из положения труса
+[death_afraid_1]
+	speed = 1.5
+	type = normal
+	start_time = 484
+	end_time = 485
+	loop = false
+	data = "Blend time", "0.3"		; sec
+	data = "Probability", "1.0"
+	data = "Angle", "340.0"
+	event = "LStep", 246, normal
+
+;Смерть из положения труса
+[death_afraid_2]
+	speed = 1.5
+	type = normal
+	start_time = 540
+	end_time = 541
+	loop = false
+	data = "Blend time", "0.3"		; sec
+	data = "Probability", "1.0"
+	data = "Angle", "340.0"
+	event = "LStep", 306, normal
+
+
+;Смерть
+[Ground_Death]
+	start_time = 1141
+	end_time = 1142
+	loop = false
+	type = normal
+	data = "Blend time", "1.0"		; sec
+
+;Смерть1
+[Ground_Death1]
+	start_time = 1182
+	end_time = 1183
+	type = normal
+	loop = false
+	data = "Blend time", "1.0"		; sec
+
+;Смерть из боязни
+[Ground_Afraid_Death]
+	start_time = 1089
+	end_time = 1090
+	type = normal
+	loop = false
+	data = "Blend time", "1.0"		; sec
+

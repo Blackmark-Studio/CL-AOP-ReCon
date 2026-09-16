@@ -11,6 +11,10 @@ drunk {Odurzenie}
 weapon blade parameters {Broń: obrażenia min/maks #ddmg_min#/#ddmg_max#}
 weapon blade type {Typ: #sFencingTypeName#}
 weapon gun parameters {Broń: obrażenia min/maks #ddmg_min#/#ddmg_max#, czas przeładowania: #dchargespeed# sek., celność: #daccuracy#%}
+weapon gun parameter damage {Obrażenia min/maks: #ddmg_min#/#ddmg_max#,}
+weapon gun parameter charge speed {czas przeładowania:}
+weapon gun parameter accuracy {celność:}
+
 youve_got {Znaleziono przedmiot –}
 used_item {Użyto przedmiotu -}
 lucky_find {Szczęśliwe znalezisko!}
@@ -63,6 +67,13 @@ itmname_Azzy_bottle {Lampa}
 itmdescr_Azzy_bottle {Starożytna orientalna lampa, szczelnie zamknięta z każdej strony. Na cynowym lutowaniu wybite są nieznane hieroglify. Dziwny artefakt, niezwykle lekki jak na metalowy przedmiot.}
 itmname_Malyava {Liścik}
 itmdescr_Malyava {Wiadomość więźnia do kumpli.}
+itmname_HelenNote {Wytarta notatka ze skrzyni wyrzuconej na brzeg}
+itmdescr_HelenNote
+{
+(nieczytelne) jak mogłeś wybrać tę rudą trzpiotkę?
+Mam dość ciągłego natykania się na rzeczy, które za każdym razem przypominają mi o tobie. Pora z tym skończyć - niech morze zabierze wszystko, czego kiedykolwiek dotknąłeś.
+Żegnaj, (nieczytelne)
+}
 itmname_Term_arm {Metalowe ramię}
 itmdescr_Term_arm {Dziwny i tajemniczy przedmiot wyrzucony na brzeg przez fale. Przypomina szkieletową dłoń, lecz wykonany jest z metalu. Ramię wystawało z fragmentu poszycia statku, całkowicie obrośniętego wodorostami. Widać, że długo było miotane przez morze. Przy bliższych oględzinach dostrzec można grawer: DT2022. Co to oznacza i jaki rzemieślnik mógł stworzyć coś takiego, pozostaje zagadką...}
 itmname_BlackLabel {Czarna Plama}
@@ -193,7 +204,7 @@ itmname_map_dominica {Mapa Dominiki}
 itmdescr_map_dominica {Mapa bezludnej wyspy Dominika.}
 itmname_map_martiniqua {Mapa Martyniki}
 itmdescr_map_martiniqua {Mapa Martyniki, która pomoże ci się nie zgubić.}
-itmname_map_trinidad {Mapa Trynidadu i Tobago}
+itmname_map_trinidad {Mapa Trynidadu}
 itmdescr_map_trinidad {Mapa dwóch wysp Trinidad i Tobago, dzięki której nie pomylisz się podczas nawigacji między nimi.}
 itmname_map_nevis {Mapa Nevis}
 itmdescr_map_nevis {Mapa z zaznaczonymi okolicami i trasami wokół wyspy Nevis.}
@@ -1101,4 +1112,136 @@ itmname_LesopilkaDoc    {Kontrakt Holenderskiej Kompanii Zachodnioindyjskiej}
 itmdescr_LesopilkaDoc
 {
 Dokument niezbędny do wpisania do rejestru kapitanów Holenderskiej Kompanii Zachodnioindyjskiej.
+}
+
+itmname_MedicalSupplies {Przybory medyczne}
+itmdescr_MedicalSupplies {Pospiesznie spakowana torba lekarska. Zawiera bandaże, fiolki ze spirytusem, maści, narzędzia chirurgiczne i inne niezbędne rzeczy, bez których leczenie w koloniach szybko zamienia się w posługę pogrzebową.}
+itmname_EPL_TFS_letter	{List}
+itmdescr_EPL_TFS_letter
+{
+Raport gubernatora Santo Domingo dotyczący wydarzeń na Hispanioli.
+}
+
+itmname_legendGuide {Poradnik dla początkujących legend}
+itmdescr_legendGuide
+{
+Niewielki notes pełen krótkich, lecz ważnych porad. Pewnego dnia po prostu znalazłeś go wśród swoich rzeczy.
+}
+
+itmname_casket
+{
+Szkatułka Gasparda Moliny
+}
+itmdescr_casket
+{
+Osobista szkatułka sekretarza Moliny. Zawiera korespondencję, listy agentów i księgi rachunkowe Vargasa. To właśnie na ten ładunek Michel le Basque czeka z takim niecierpliwieniem na Tortudze.
+}
+itmname_jako_hat
+{
+Kapelusz Jaco
+}
+itmdescr_jako_hat
+{
+Nie wygląda okazale, ale niezawodnie chroni głowę przed palącym karaibskim słońcem.
+}
+itmname_blank
+{
+Czysty blankiet
+}
+itmdescr_blank
+{
+Czysty blankiet z pieczęcią.
+}
+itmname_venezi_cehin
+{
+Wenecki cekin
+}
+itmdescr_venezi_cehin
+{
+Stara złota moneta, na której awersie wybito dożę klęczącego przed świętym Markiem. Właśnie ta moneta służy jako przepustka na spotkanie z zaufanym człowiekiem Diega Vargasa.
+}
+itmname_letter_forged
+{
+Sfabrykowany list
+}
+itmdescr_letter_forged
+{
+Mistrzowskie fałszerstwo spod pióra Étienne'a Marceau. Oficjalny kastylijski blankiet wypełniono niepodważalnymi 'dowodami' na to, że don Ignacio Vela sprzedaje sekrety Diega Vargasa. Pozostaje tylko podrzucić ten wyrok śmierci właściwemu adresatowi.
+}
+itmname_spa_lager
+{
+Instrukcje Moliny
+}
+itmdescr_spa_lager
+{
+Instrukcje kurierskie z dokładnym opisem punktów orientacyjnych prowadzących do hiszpańskiego obozu na Jamajce.
+}
+itmname_letter_Aruba
+{
+Rozkazy z pieczęcią dona Íñiga de Cabrery
+}
+itmdescr_letter_Aruba
+{
+Rozkazy Cabrery znalezione przy zabitym dowódcy patrolu.
+}
+itmname_letter_bask
+{
+Zapieczętowany list Raoula
+}
+itmdescr_letter_bask
+{
+List jest zapieczętowany. Jego treść z pewnością zainteresuje Marceau.
+}
+itmname_BladeBone
+{
+Kieł
+}
+itmdescr_BladeBone
+{
+Złowrogo wyglądające ostrze. Klinga jest pokryta trucizną, która przy udanym trafieniu czasem dostaje się do rany.
+
+Cecha: 5% szansy na zatrucie przeciwnika przy udanym ciosie.
+}
+itmname_raw_meat
+{
+Surowe mięso
+}
+itmdescr_raw_meat
+{
+Kawał świeżego, surowego mięsa. Na pierwszy rzut oka trudno powiedzieć, do kogo należał. Jedzenie go na surowo jest zdecydowanie niewskazane. Bez porządnej obróbki lepiej nawet go nie dotykać.
+~
+(Uniwersalny składnik do gotowania)
+}
+itmname_dried_meat
+{
+Suszone mięso
+}
+itmdescr_dried_meat
+{
+Mięso dziczyzny suszone według specjalnej receptury bukanierów z Tortugi. Przesiąknięte dymem i przyprawami, dodaje w walce niezwykłej wytrzymałości.
+}
+itmname_recipe_rimalye
+{
+Przepis bukaniera Rimalye
+}
+itmdescr_recipe_rimalye
+{
+Pożółkła kartka pokryta bazgrołami bukaniera Rimalye. Stary pijaczyna wymyślił sprytny sposób na wykorzystanie byle padliny: martwego kormorana trzeba nie tylko oskubać, ale też porządnie wymoczyć w rumie, by odkazić mięso z bakterii i trupiego jadu.
+}
+itmname_recipe_dried_meat    {Przepis na suszone mięso}
+itmdescr_recipe_dried_meat
+{
+Kartka z zapiskami starych myśliwych z Tortugi. Sekret przygotowania prawdziwego bukanierskiego suszonego mięsa tkwi w odpowiedniej marynacie z leżakowanego wina, pikantnego korzenia imbiru i obfitym soleniu, dzięki czemu mięso długo przechowuje się w ładowni i daje kolosalny zastrzyk sił.
+}
+itmname_strange_note
+{
+Dziwna notatka
+}
+itmdescr_strange_note
+{
+Skrawek pergaminu. Coś na nim napisano.
+}
+itmtext_strange_note
+{
+Nie szukajcie statku na morzu. Szukajcie tych, którzy zeszli z niego żywi. Północ. Stary cmentarz.
 }

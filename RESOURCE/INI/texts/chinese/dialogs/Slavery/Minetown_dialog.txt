@@ -1,20 +1,20 @@
 Minetown_dialog_1 {
-有问题都去找矿场主管。
+有问题都去找矿场主管。 
 }
 Minetown_dialog_2_m {
-别用你的废话打扰奴隶干活，伙计。
+别用你的废话打扰奴隶干活， 伙计。 
 }
 Minetown_dialog_2_f {
-别用你的闲话打扰奴隶干活，姑娘。
+别用你的闲话打扰奴隶干活， 姑娘。 
 }
 Minetown_dialog_3 {
 @<RandPhraseSimple>
 }
 Minetown_dialog_4 {
-我的活儿就是管住那些懒鬼。
+我的活儿就是管住那些懒鬼。 
 }
 Minetown_dialog_5 {
-今天真是热得要命……不过也没啥新鲜的。
+今天真是热得要命…… 不过也没什么新鲜的。 
 }
 Minetown_dialog_6 {
 @<RandPhraseSimple>
@@ -23,116 +23,116 @@ Minetown_dialog_7 {
 @<RandPhraseSimple>
 }
 Minetown_dialog_8 {
-明白了……
+明白了…… 
 }
 Minetown_dialog_9 {
-明白……
+明白…… 
 }
 Minetown_dialog_10 {
 @<RandPhraseSimple>
 }
 Minetown_dialog_11_m {
-海盗闯到咱们矿上？！真是见鬼……快抓住他！
+海盗闯到咱们矿上？ ！ 真是见鬼…… 快抓住他！ 
 }
 Minetown_dialog_11_f {
-海盗竟然闯到咱们的矿上？！真是见鬼……抓住她！
+海盗竟然闯到咱们的矿上？ ！ 真是见鬼…… 抓住她！ 
 }
 Minetown_dialog_12_m {
-是海盗！！快抓住他！！！
+是海盗！ ！ 快抓住他！ ！ ！ 
 }
 Minetown_dialog_12_f {
-是海盗！！快抓住她！！！
+是海盗！ ！ 快抓住她！ ！ ！ 
 }
 Minetown_dialog_13 {
 @<RandPhraseSimple>
 }
 Minetown_dialog_14 {
-海盗又怎样？
+海盗又怎样？ 
 }
 Minetown_dialog_15 {
-哼，有本事就来抓俺啊。
+哼， 有本事就来抓我啊。 
 }
 Minetown_dialog_16 {
 @<RandPhraseSimple>
 }
 Minetown_dialog_17 {
-哟哟，原来你挂着@<NationNameGenitive>的旗帜！等俺把你交给指挥官，他肯定高兴坏了！
+哟哟， 原来你挂着@<NationNameGenitive>的旗帜！ 等我把你交给指挥官， 他肯定高兴坏了！ 
 }
 Minetown_dialog_18_m {
-哟哟，@<NationNameInstrumental>这边有点不对劲啊！你在这儿偷摸什么呢，混蛋？带你去见见我们的指挥官！
+哟哟， @<NationNameInstrumental>这边有点不对劲啊！ 你在这儿偷摸什么呢， 混蛋？ 带你去见见我们的指挥官！ 
 }
 Minetown_dialog_18_f {
-哟哟，这里怎么有股@<NationNameInstrumental>的臭味？你在搞间谍啊，死丫头？带你去见我们指挥官！
+哟哟， 这里怎么有股@<NationNameInstrumental>的臭味？ 你在搞间谍啊， 死丫头？ 带你去见我们指挥官！ 
 }
 Minetown_dialog_19 {
 @<RandPhraseSimple>
 }
 Minetown_dialog_20 {
-让你见识下俺的军刀。
+让你见识下我的军刀。 
 }
 Minetown_dialog_21 {
-我看还是先把你交给恶魔吧。
+我看还是先把你交给恶魔吧。 
 }
 Minetown_dialog_22 {
 @<RandPhraseSimple>
 }
 Minetown_dialog_23_m {
-海盗？！我去……快抓住他！
+海盗？ ！ 我去…… 快抓住他！ 
 }
 Minetown_dialog_23_f {
-海盗？！真是没想到……抓住她！！
+海盗？ ！ 真是没想到…… 抓住她！ ！ 
 }
 Minetown_dialog_24_m {
-是海盗！！快抓住他！！！
+是海盗！ ！ 快抓住他！ ！ ！ 
 }
 Minetown_dialog_24_f {
-是海盗！！快抓住她！！！
+是海盗！ ！ 快抓住她！ ！ ！ 
 }
 Minetown_dialog_25 {
 @<RandPhraseSimple>
 }
 Minetown_dialog_26 {
-是啊，俺就是海盗，咋了？
+是啊， 我就是海盗， 咋了？ 
 }
 Minetown_dialog_27 {
-哼，有本事就来抓我啊……
+哼， 有本事就来抓我啊…… 
 }
 Minetown_dialog_28 {
 @<RandPhraseSimple>
 }
 Minetown_dialog_29 {
-你是谁？来这儿想干嘛？
+你是谁？ 来这儿想干嘛？ 
 }
 Minetown_dialog_30_m {
-站住！你在这儿干什么？
+站住！ 你在这儿干什么？ 
 }
 Minetown_dialog_30_f {
-站住！你在这儿干什么，姑娘？
+站住！ 你在这儿干什么， 姑娘？ 
 }
 Minetown_dialog_31 {
 @<RandPhraseSimple>
 }
 Minetown_dialog_32 {
-我要去见矿场主管，谈谈生意。我有贸易许可证。
+我要去见矿场主管， 谈谈生意。 我有贸易许可证。 
 }
 Minetown_dialog_33 {
-我要去见矿场主管，谈谈生意。
+我要去见矿场主管， 谈谈生意。 
 }
 Minetown_dialog_34 {
-我要去见矿场主管，谈谈生意。
+我要去见矿场主管， 谈谈生意。 
 }
 Minetown_dialog_35 {
-你是谁，来这儿想干嘛？
+你是谁， 来这儿想干嘛？ 
 }
 Minetown_dialog_36_m {
-站住！你在这儿干什么？
+站住！ 你在这儿干什么？ 
 }
 Minetown_dialog_36_f {
-站住！你在这儿干什么，姑娘？
+站住！ 你在这儿干什么， 姑娘？ 
 }
 Minetown_dialog_37 {
 @<RandPhraseSimple>
 }
 Minetown_dialog_38 {
-我要去见矿场主管，谈谈生意。
+我要去见矿场主管， 谈谈生意。 
 }

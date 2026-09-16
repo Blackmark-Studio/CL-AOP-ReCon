@@ -1,4 +1,4 @@
-#define STORE_QUANTITY	30
+#define STORE_QUANTITY			37	// KZ FreeStores > 31 штатный слот (0..30) + FREE_STORE_QUANTITY свободных; держать равным FREE_STORE_FIRST + FREE_STORE_QUANTITY
 
 #define Bridgetown_STORE		0
 #define SanJuan_STORE			1
@@ -29,8 +29,32 @@
 #define SantaCatalina_STORE     26
 #define Beliz_STORE          	27
 #define Providencia_STORE       28
+#define Gibraltar_STORE       	29
 
-#define SHIP_STORE 				29
+#define SHIP_STORE 				30
+
+// FreeStores > свободные магазины - без колонии и нации
+#define FREE_STORE_FIRST		31
+#define FREE_STORE_QUANTITY		6
+
+// FreeStores > группа незанятого слота (и магазина без группы)
+#define FREE_STORE_NO_GROUP		"#free"
+
+// FreeStores > запрет торговли отдельным товаром, режим считается со стороны магазина
+#define FREE_STORE_TRADE_BOTH	0				// > и покупает, и продаёт - обычная торговля
+#define FREE_STORE_TRADE_BUY	1				// > только покупает: ГГ может продать, но не купить
+#define FREE_STORE_TRADE_SELL	2				// > только продаёт: ГГ может купить, но не продать
+#define FREE_STORE_TRADE_NONE	3				// > ни купить, ни продать
+
+// FreeStores > показ товара с запретом NONE, пока товару не задан свой вид через FreeStoreSetGoodView
+#define FREE_STORE_BAN_SHOW		0				// > 0 - строки в списках нет; 1 - строка есть, но без цен
+#define FREE_STORE_BAN_COLOR_R	128				// > цвет такой строки - серый
+#define FREE_STORE_BAN_COLOR_G	128
+#define FREE_STORE_BAN_COLOR_B	128
+
+// FreeStores > показ товара, которым магазин не торгует, в торговом разделе судового журнала:
+// > переключатель один на весь магазин, задаётся через FreeStoreSetBookView
+#define FREE_STORE_BOOK_SHOW	0				// > 0 - строки в журнале нет; 1 - строка есть, но без цен и цветом запрета
 
 #define TRADE_TYPE_NORMAL		0
 #define TRADE_TYPE_EXPORT		1

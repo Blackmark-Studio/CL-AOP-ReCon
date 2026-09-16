@@ -1,0 +1,27 @@
+Start_dialog_9 {
+Saludos, colega. Tienes un barco excelente, robusto y con una tripulación muy capaz; eso es evidente. 
+}
+Start_dialog_10 {
+El tiempo es oro, amigo. ¡Sácalo ya!
+}
+Start_dialog_11 {
+No hace mucho, un hombre adinerado llegó aquí. Está reuniendo una flota para un proyecto grande y lucrativo. Y busca capitanes experimentados para barcos excelentes. Como el suyo.
+}
+Start_dialog_12 {
+Regular. ¿Y qué?
+}
+Start_dialog_13 {
+¡La fortuna me ha dado la espalda! Mi goleta quedó muy dañada en la última escaramuza con los españoles: la mitad de los cañones estaban a punto de ser arrojados por la borda, y la tripulación quedó reducida a cuervos. En cuanto ese desgraciado vio mi barco, viró de inmediato. Verás, necesita lobos de mar, no perros apaleados.
+}
+Start_dialog_14 {
+No me interrumpiste para quejarme de tu destino, ¿verdad?
+}
+Start_dialog_15 {
+Es cierto. Tu barco está en perfectas condiciones, la tripulación está lista; es poco probable que te rechace. Si quieres conseguir algo de oro, ve directamente al tabernero. Él es el contacto de este pez gordo: selecciona personalmente a los capitanes y conoce todos los detalles.
+}
+Start_dialog_16 {
+¿Así que decidiste compartir este consejo conmigo únicamente por tu nobleza?
+}
+Start_dialog_17 {
+Aunque no lo creas, no soy envidioso. Pero si volvemos a vernos, me deberás un favor.
+}

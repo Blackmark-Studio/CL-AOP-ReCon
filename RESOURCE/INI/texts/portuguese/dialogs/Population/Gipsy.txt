@@ -262,3 +262,12 @@ Um mau presságio cruzará seu caminho — cuidado com o mau-olhado e mantenha s
 Gipsy_68 {
 A boa sorte está à sua espera logo atrás de você. Busque o que vem facilmente e não persiga o impossível.
 }
+Gipsy_69 {
+@<TimeGreeting>, @<pchar>. Fico muito feliz em vê-la.
+}
+Gipsy_70 {
+@<TimeGreeting>, @<pchar>. Fico muito feliz em vê-la.
+}
+Gipsy_71 {
+@<TimeGreeting>, @<npchar>. Preciso ir.
+}

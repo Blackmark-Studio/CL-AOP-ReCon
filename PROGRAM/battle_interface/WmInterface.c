@@ -25,6 +25,12 @@ void InitWmInterface()
 	procLoadIntoNew();
 	TEV.WDM_ShipRadiusUpdate = true;
 	wdmEvent_ShipRadiusUpdate();
+
+	// метка по координатам (ле Баск)
+	SetEventHandler("frame", "AoP_UpdateMapMarksByCoords", 0);
+
+	wdmCreateWindInterface();
+	SendMessage(&worldMap, "l", MSG_WORLDMAP_WIND_UI_UPDATE);
 }
 // boal -->
 void WM_ProcessControlPress()
@@ -60,6 +66,8 @@ void DeleteWmInterface()
 
 	DelEventHandler("BI_UpdateWmInterface","BI_UpdateWmInterface");
 	DelEventHandler("Control Activation","WM_ProcessControlPress"); // boal
+	// метка по координатам (ле Баск)
+	DelEventHandler("frame", "AoP_UpdateMapMarksByCoords");
 }
 
 ref WM_CommandEndChecking()
@@ -267,8 +275,8 @@ void WM_InitializeCommands()
 	BattleInterface.Commands.Cancel.note			= LanguageConvertString(idLngFile, "sea_Cancel");
 
 	BattleInterface.Commands.EnterToSea.enable		= false;
- 	BattleInterface.Commands.EnterToShip.picNum		= 1;
-	BattleInterface.Commands.EnterToShip.selPicNum	= 9;
+ 	BattleInterface.Commands.EnterToSea.picNum		= 1;
+	BattleInterface.Commands.EnterToSea.selPicNum	= 9;
 	BattleInterface.Commands.EnterToSea.texNum		= 1;
 	BattleInterface.Commands.EnterToSea.event		= "EnterToSea";
 	BattleInterface.Commands.EnterToSea.note		= LanguageConvertString(idLngFile, "worldmap_sea");
@@ -281,8 +289,8 @@ void WM_InitializeCommands()
 	BattleInterface.Commands.EnterToIsland.note			= LanguageConvertString(idLngFile, "worldmap_sea");
 
 	BattleInterface.Commands.EnterToShip.enable		= false;
-	BattleInterface.Commands.EnterToSea.picNum		= 4;
-	BattleInterface.Commands.EnterToSea.selPicNum	= 12;
+	BattleInterface.Commands.EnterToShip.picNum		= 4;
+	BattleInterface.Commands.EnterToShip.selPicNum	= 12;
 	BattleInterface.Commands.EnterToShip.texNum		= 1;
 	BattleInterface.Commands.EnterToShip.event		= "EnterToShip";
 	BattleInterface.Commands.EnterToShip.note		= LanguageConvertString(idLngFile, "worldmap_sea");

@@ -2,6 +2,7 @@ CONTRABAND {Schmuggelware}
 EXPORT {Export}
 IMPORT {Import}
 Trade_assistant {Handelsassistent}
+AGGRESSIVE {Hohe Nachfrage}
 No_price {Keine Preisliste}
 No_profit {Keine lohnenden Geschäfte}
 Distance {Entfernung}
@@ -20,3 +21,4 @@ nautical_miles {Seemeilen}
 nautical_miles2 {Seemeilen}
 TRAVEL_from {von}
 TRAVEL_to {bis}
+Goods_data_date		{Warendaten vom}

@@ -12,7 +12,7 @@ void ProcessDialogEvent()
 	makearef(Link, Dialog.Links);
 	makearef(NextDiag, NPChar.Dialog);
 
-	string iDay, iMonth, sTemp, sMoney, attrL;
+	string iDay, iMonth, sTemp, sMoney, attrL, sBBQ;
 
 	iDay = environment.date.day;
 	iMonth = environment.date.month;
@@ -20,15 +20,26 @@ void ProcessDialogEvent()
 
 	int iMoney, iQuantityGoods, iTradeGoods, iTmp;
 
-	bool ok;
+	bool ok, bQuestsAllowed = IsNPCQuestsAllowed(NPChar);
 
 	int iTest, cn, i;
 	iTest = FindColony(NPChar.City); // город магазина
 	ref rColony, chref;
 
+	// KZ FreeStores > магазин городского торговца берём от колонии, а у свободного - с самого торговца
+	int iStoreNum = -1;
+	string sStoreFromSea = "";
+
 	if (iTest != -1)
 	{
 		rColony = GetColonyByIndex(iTest);
+		iStoreNum = sti(rColony.StoreNum);
+		sStoreFromSea = rColony.from_sea;
+	}
+	else
+	{
+		// FreeStores > при пустом слоте или битом номер торговлю не предлагаем
+		iStoreNum = GetTraderStoreNum(NPChar);
 	}
 
 	if (!CheckAttribute(npchar, "quest.item_date"))
@@ -42,8 +53,19 @@ void ProcessDialogEvent()
 	}
 
 	// вызов диалога по городам -->
-	NPChar.FileDialog2 = "DIALOGS\Store\" + NPChar.City + "_Store.c";
-	if (LoadSegment(NPChar.FileDialog2))
+	// FreeStores > у торговца свободного магазина города-колонии нет, файла DIALOGS\Store\<City>_Store.c тоже.
+	// > Ему грузим свой файл магазина (Stores[i].StoreDialog) либо общий DIALOGS\Store\Free_Store.c
+	if (iTest != -1) NPChar.FileDialog2 = "DIALOGS\Store\" + NPChar.City + "_Store.c";
+	else             NPChar.FileDialog2 = GetFreeStoreDialogFile(iStoreNum);
+
+	bool bDialog2Loaded = LoadSegment(NPChar.FileDialog2);
+	// FreeStores > личный файл свободного магазина не загрузился - подкидываем общий
+	if (!bDialog2Loaded && iTest == -1 && NPChar.FileDialog2 != "DIALOGS\Store\Free_Store.c")
+	{
+		NPChar.FileDialog2 = "DIALOGS\Store\Free_Store.c";
+		bDialog2Loaded = LoadSegment(NPChar.FileDialog2);
+	}
+	if (bDialog2Loaded)
 	{
 		ProcessCommonDialog(NPChar, Link, NextDiag);
 		UnloadSegment(NPChar.FileDialog2);
@@ -91,9 +113,19 @@ void ProcessDialogEvent()
 				NextDiag.TempNode = "First time";
 				break;
 			}
+			
+			//--> Эммануэль Пардаль
+            if (CheckAttribute(pchar, "questTemp.EPL_Prologue"))
+            {
+                dialog.Text = StringFromKey("Common_Store_434");
+                Link.l1 = StringFromKey("Common_Store_435");
+				Link.l1.go = "exit";
+				break;
+            }
+			//<-- Эммануэль Пардаль
 
 			// Warship, 29.05.11. "Дело чести" ветка "Трусливый фехтовальщик"
-			if (CheckAttribute(PChar, "QuestTemp.AffairOfHonor.CowardFencer.CanTraderTalk"))
+			if (bQuestsAllowed && CheckAttribute(PChar, "QuestTemp.AffairOfHonor.CowardFencer.CanTraderTalk")) // > FreeStores
 			{
 				dialog.text = StringFromKey("Common_Store_20");
 				Link.l1 = StringFromKey("Common_Store_21");
@@ -173,7 +205,7 @@ void ProcessDialogEvent()
 			}    */
 
 			// Warship, 29.05.11. "Дело чести" ветка "Трусливый фехтовальщик"
-			if (CheckAttribute(PChar, "QuestTemp.AffairOfHonor.CowardFencer.CanTraderTalk"))
+			if (bQuestsAllowed && CheckAttribute(PChar, "QuestTemp.AffairOfHonor.CowardFencer.CanTraderTalk")) // > FreeStores
 			{
 				dialog.text = StringFromKey("Common_Store_49");
 				Link.l1 = StringFromKey("Common_Store_50");
@@ -479,7 +511,9 @@ void ProcessDialogEvent()
 		case "market":
 		//navy -->
 		//занят ПГГ
-			iTmp = CheckFreeServiceForNPC(NPChar, "Store");
+			// FreeStores > свободный магазин с ПГГ не пересекается
+			iTmp = -1;
+			if (!IsFreeStoreTrader(NPChar)) iTmp = CheckFreeServiceForNPC(NPChar, "Store");
 			if (iTmp != -1)
 			{
 				dialog.text = StringFromKey("Common_Store_241", &characters[itmp], GetAddress_FormToNPC(&characters[iTmp]), GetFullName(&characters[iTmp]));
@@ -590,13 +624,13 @@ void ProcessDialogEvent()
 		break;
 
 		case "trade_1":
-			ok = (rColony.from_sea == "") || (Pchar.location.from_sea == rColony.from_sea);
+			ok = (sStoreFromSea == "") || (Pchar.location.from_sea == sStoreFromSea);
 			if (sti(Pchar.Ship.Type) != SHIP_NOTUSED && ok)
 			{
 				NextDiag.CurrentNode = NextDiag.TempNode;
 				DialogExit();
-				Pchar.PriceList.StoreManIdx = rColony.index; // boal 27.02.05
-				LaunchStore(sti(rColony.StoreNum));
+				if (iTest != -1) Pchar.PriceList.StoreManIdx = rColony.index; // boal 27.02.05
+				LaunchStore(iStoreNum);
 			}
 			else
 			{
@@ -653,7 +687,7 @@ void ProcessDialogEvent()
 		break;
 
 		case "storage_1":
-			NPChar.MoneyForStorage = GetStoragePrice(15000);
+			NPChar.MoneyForStorage = GetStoragePrice(NPChar, 15000);
 			dialog.text = StringFromKey("Common_Store_297");
 			if (sti(pchar.money) >= sti(NPChar.MoneyForStorage))
 			{
@@ -674,23 +708,23 @@ void ProcessDialogEvent()
 			SaveCurrentNpcQuestDateParam(NPChar, "Storage.Date");
 			NextDiag.CurrentNode = NextDiag.TempNode;
 			DialogExit();
-			LaunchStorage(sti(rColony.StoreNum));
+			LaunchStorage(iStoreNum);
 		break;
 
 		case "storage_2":
 			NextDiag.CurrentNode = NextDiag.TempNode;
 			DialogExit();
-			LaunchStorage(sti(rColony.StoreNum));
+			LaunchStorage(iStoreNum);
 		break;
 
 		case "storage_3":
 			AddMoneyToCharacter(pchar, -sti(NPChar.MoneyForStorage));
-			NPChar.MoneyForStorage = GetStoragePrice(15000);
+			NPChar.MoneyForStorage = GetStoragePrice(NPChar, 15000);
 			NPChar.Storage.MoneyForStorage = NPChar.MoneyForStorage;
 			SaveCurrentNpcQuestDateParam(NPChar, "Storage.Date");
 			NextDiag.CurrentNode = NextDiag.TempNode;
 			DialogExit();
-			LaunchStorage(sti(rColony.StoreNum));
+			LaunchStorage(iStoreNum);
 		break;
 
 		case "storage_04":
@@ -721,7 +755,7 @@ void ProcessDialogEvent()
 		break;
 
 		case "storage_5":
-			SetStorageGoodsToShip(&stores[sti(rColony.StoreNum)]);
+			if (iStoreNum >= 0) SetStorageGoodsToShip(&stores[iStoreNum]);
 			AddMoneyToCharacter(pchar, -sti(NPChar.MoneyForStorage));
 			DeleteAttribute(NPChar, "Storage.Activate");
 			NPChar.Storage.NoActivate = true;
@@ -729,7 +763,7 @@ void ProcessDialogEvent()
 		break;
 
 		case "storage_6":
-			SetStorageGoodsToShip(&stores[sti(rColony.StoreNum)]);
+			if (iStoreNum >= 0) SetStorageGoodsToShip(&stores[iStoreNum]);
 			DeleteAttribute(NPChar, "Storage.Activate");
 			NPChar.Storage.NoActivate = true;
 			DialogExit();
@@ -748,8 +782,9 @@ void ProcessDialogEvent()
 
 		case "business":
 			iTest = 0;
+			sBBQ = pchar.questTemp.BlueBird;
 			//квест Синей Птицы, начальный диалог
-			if (pchar.questTemp.BlueBird == "begin" && sti(npchar.nation) != PIRATE && npchar.city != "Panama") // !CheckAttribute(pchar, "questTemp.Headhunter")) убрал проверку на кондотьера Konstrush
+			if (bQuestsAllowed && sBBQ == "begin" && sti(npchar.nation) != PIRATE && npchar.city != "Panama") // > FreeStores
 			{
 				dialog.text = StringFromKey("Common_Store_309", RandPhraseSimple(
 							StringFromKey("Common_Store_307"),
@@ -760,7 +795,9 @@ void ProcessDialogEvent()
 			}
 			//navy -->
 			//занят ПГГ
-			iTmp = CheckAvailableTaskForNPC(NPChar, PGG_TASK_WORKONSTORE);
+			// FreeStores > работу в свободном магазине ПГГ не берут
+			iTmp = -1;
+			if (!IsFreeStoreTrader(NPChar)) iTmp = CheckAvailableTaskForNPC(NPChar, PGG_TASK_WORKONSTORE);
 			if (iTmp != -1)
 			{
 				dialog.text = StringFromKey("Common_Store_311", GetFullName(&Characters[iTmp]));
@@ -772,7 +809,7 @@ void ProcessDialogEvent()
 			dialog.text = NPCharRepPhrase(npchar,
 					StringFromKey("Common_Store_313"),
 					StringFromKey("Common_Store_314"));
-			ok = (rColony.from_sea == "") || (Pchar.location.from_sea == rColony.from_sea);
+			ok = (sStoreFromSea == "") || (Pchar.location.from_sea == sStoreFromSea);
 			if (sti(Pchar.Ship.Type) != SHIP_NOTUSED && ok)
 			{
 				/*if (CheckAttribute(pchar, "CargoQuest.iQuantityGoods"))
@@ -810,8 +847,12 @@ void ProcessDialogEvent()
 				}
 				else
 				{
-					link.l1 = StringFromKey("Common_Store_322", GetAddress_FormToNPC(NPChar));
-					link.l1.go = "generate_quest";
+					// FreeStores > торговец вне колонии даёт фрахт только с атрибутом QuestsAvailable
+					if (bQuestsAllowed)
+					{
+						link.l1 = StringFromKey("Common_Store_322", GetAddress_FormToNPC(NPChar));
+						link.l1.go = "generate_quest";
+					}
 				}
 				// --> на кредитный генератор
 				if (CheckAttribute(pchar, "GenQuest.LoanChest.TakeChest") && sti(pchar.GenQuest.LoanChest.TargetIdx) == sti(NPChar.index))
@@ -835,22 +876,23 @@ void ProcessDialogEvent()
 					link.l4.go = "IntelligenceForAll";
 				}
 				// ----------------- квест получения Синей Птицы, сдаём квест -----------------
-				if (pchar.questTemp.BlueBird == "weWon" && pchar.questTemp.BlueBird.traiderId == npchar.id)
+				ok = CheckAttrValue(pchar, "questTemp.BlueBird.traiderId", npchar.id);
+				if (sBBQ == "weWon" && ok)
 				{
 					link.l1 = StringFromKey("Common_Store_332", pchar);
 					link.l1.go = "RBlueBirdWon";
 				}
-				if (pchar.questTemp.BlueBird == "DieHard" && pchar.questTemp.BlueBird.traiderId == npchar.id)
+				else if (sBBQ == "DieHard" && ok)
 				{
 					link.l1 = StringFromKey("Common_Store_333", pchar);
 					link.l1.go = "RBlueBirdDieHard";
 				}
-				if (pchar.questTemp.BlueBird == "returnMoney" && pchar.questTemp.BlueBird.traiderId == npchar.id && sti(pchar.questTemp.BlueBird.count) > 0)
+				else if (sBBQ == "returnMoney" && ok && sti(pchar.questTemp.BlueBird.count) > 0)
 				{
 					link.l0 = StringFromKey("Common_Store_334");
 					link.l0.go = "RBlueBird_retMoney_1";
 				}
-				if (pchar.questTemp.BlueBird == "finish" && pchar.questTemp.BlueBird.traiderId == npchar.id)
+				else if (sBBQ == "finish" && ok)
 				{
 					link.l1 = StringFromKey("Common_Store_335");
 					link.l1.go = "RBlueBird_retMoney_3";
@@ -879,7 +921,8 @@ void ProcessDialogEvent()
 					}
 					else
 					{
-						if (!CheckAttribute(NPChar, "Storage.NoActivate") && CheckAttribute(pchar, "questTemp.BlueBird.speakWon"))
+						// FreeStores > без магазина (торговец с протухшим StoreNum) склад не сдаём
+						if (!CheckAttribute(NPChar, "Storage.NoActivate") && iStoreNum >= 0 && or(CheckAttribute(pchar, "questTemp.BlueBird.speakWon"), CheckAttribute(NPChar, "Storage.Enable")))
 						{
 							link.l7 = StringFromKey("Common_Store_344");
 							link.l7.go = "storage_01";
@@ -927,6 +970,14 @@ void ProcessDialogEvent()
 		break;
 
 		case "generate_quest":
+			// FreeStores > без QuestsAvailable фрахта не бывает
+			if (!bQuestsAllowed)
+			{
+				NextDiag.CurrentNode = NextDiag.TempNode;
+				DialogExit();
+				break;
+			}
+
 			if (npchar.quest.trade_date != lastspeak_date || bBettaTestMode)
 			{
 				npchar.quest.trade_date = lastspeak_date;
@@ -1004,14 +1055,14 @@ void ProcessDialogEvent()
 
 							// > целевой товар
 							sTemp = "Goods." + attrL;
-							arFracht.(sTemp) = GOOD_CHOCOLATE + idRand(npchar.id + "generate_quest", GOOD_BRICK - GOOD_CHOCOLATE);
+							arFracht.(sTemp) = GOOD_CHOCOLATE + idRand(npchar.id + "generate_quest", GOOD_HIDE - GOOD_CHOCOLATE);
 
 							// > по возможности разные товары
 							if (HasStr(arFracht.StoredGoods, arFracht.(sTemp)))
 							{
 								while (CheckAttribute(&TEV, "CT.StoredGoods.Limits") && HasStr(arFracht.StoredGoods, arFracht.(sTemp)))
 								{
-									arFracht.(sTemp) = GOOD_CHOCOLATE + rand(GOOD_BRICK - GOOD_CHOCOLATE);
+									arFracht.(sTemp) = GOOD_CHOCOLATE + rand(GOOD_HIDE - GOOD_CHOCOLATE);
 									TEV.CT.StoredGoods.Limits = sti(TEV.CT.StoredGoods.Limits) + 1;
 
 									if (sti(TEV.CT.StoredGoods.Limits) >= GOODS_QUANTITY)
@@ -1022,12 +1073,16 @@ void ProcessDialogEvent()
 							arFracht.StoredGoods = arFracht.StoredGoods + " " + arFracht.(sTemp);
 
 							// > кол-во товара
-							arFracht.Quantity.(attrL) = GetSquadronFreeSpace(pchar, sti(arFracht.(sTemp))) - (sti(Goods[sti(arFracht.(sTemp))].Units) * 2) - 10;
+							arFracht.Quantity.(attrL) = GetSquadronFreeSpace(pchar, sti(arFracht.(sTemp))) - sti(Goods[sti(arFracht.(sTemp))].Units);
 
 							// > целевой остров
 							sTemp = "Island." + attrL;
 							arFracht.(sTemp) = GetIslandByCityName(Characters[sti(arFracht.StoreMan.(attrL))].city);
-							arFracht.(sTemp).Name.(attrL) = StringFromKey("Common_Store_367", XI_ConvertString(arFracht.(sTemp) + "Pre"));
+							// FreeStores > свободного магазина в колониальной таблице нет - остров берём с него самого
+							if (arFracht.(sTemp) == "") arFracht.(sTemp) = GetTraderIslandName(&Characters[sti(arFracht.StoreMan.(attrL))]);
+							// FreeStores > без острова хвост ", что на ..." не строим, иначе он пустой
+							if (arFracht.(sTemp) == "") arFracht.(sTemp).Name.(attrL) = "";
+							else arFracht.(sTemp).Name.(attrL) = StringFromKey("Common_Store_367", XI_ConvertString(arFracht.(sTemp) + "Pre"));
 
 							// > сколько дней в среднем занимает путь от текущей колонии до пункта назначения
 							sTemp = "Days." + attrL;
@@ -1112,7 +1167,7 @@ void ProcessDialogEvent()
 							if (storeMan > 0)
 							{
 								//проверяем импорт/экспорт
-								iTradeGoods = rand(GOOD_BRICK); //Рабы и золото не даем, бомбы и еду - да!!
+								iTradeGoods = rand(GOOD_HIDE); //Рабы и золото не даем, бомбы и еду - да!!
 								//проверяем свободное место (при этом должно вмещаться по меньшей мере 100 единиц выбранного груза
 								RecalculateSquadronCargoLoad(pchar); // fix неверное место
 								iQuantityGoods = GetSquadronFreeSpace(pchar, iTradeGoods);
@@ -1128,7 +1183,7 @@ void ProcessDialogEvent()
 								}
 								else
 								{
-									iQuantityGoods = iQuantityGoods - rand(makeint(iQuantityGoods * 0.3)) - sti(Goods[iTradeGoods].Units) - 10;
+									iQuantityGoods = iQuantityGoods - rand(makeint(iQuantityGoods * 0.3)) - sti(Goods[iTradeGoods].Units);
 									iMoney = makeint((iQuantityGoods * sti(Goods[iTradeGoods].Weight) / sti(Goods[iTradeGoods].Units)) * (4 + rand(3) + GetSummonSkillFromNameToOld(pchar, SKILL_COMMERCE)) + 0.5);
 
 									pchar.CargoQuest.iTradeGoods = iTradeGoods;
@@ -1138,7 +1193,9 @@ void ProcessDialogEvent()
 									pchar.CargoQuest.iDaysExpired = 25 + rand(5);
 
 									pchar.CargoQuest.iTradeColony = Characters[storeMan].city;
-									pchar.CargoQuest.iTradeIsland = GetIslandNameByCity(Characters[storeMan].city);
+									// FreeStores > остров свободного магазина берём с него самого, а если его нет, то приравниваем к городу
+									pchar.CargoQuest.iTradeIsland = GetTraderIslandName(&Characters[storeMan]);
+									if (pchar.CargoQuest.iTradeIsland == "") pchar.CargoQuest.iTradeIsland = Characters[storeMan].city;
 									pchar.CargoQuest.TraderID = Characters[storeMan].id;
 									pchar.CargoQuest.GiveTraderID = NPChar.id;
 									SaveCurrentQuestDateParam("CargoQuest");
@@ -1423,6 +1480,7 @@ int findStoreMan(ref NPChar, int iTradeNation)
 	int n;
 	int storeArray[STORE_QUANTITY];
 	int howStore = 0;
+	string sMyIsland = GetTraderIslandName(NPChar);
 
 	for (n = 0; n < MAX_CHARACTERS; n++)
 	{
@@ -1433,7 +1491,9 @@ int findStoreMan(ref NPChar, int iTradeNation)
 			if (NPChar.id == ch.id) continue;
 			if (NPChar.id == "Panama_trader" || ch.id == "Panama_trader") continue; //нельзя доплыть
 			if (ch.location == "none") continue; // фикс для новых, невидимых до поры островов
-			if (GetIslandNameByCity(ch.city) == GetIslandNameByCity(NPChar.city)) continue; // хрен вам, а не читы!
+			if (!IsNPCQuestsAllowed(ch)) continue; // FreeStores > свободный торговец становится целью фрахта только с атрибутом QuestsAvailable
+			// FreeStores > свободного магазина в GetIslandNameByCity нет, остров берём с него самого
+			if (GetTraderIslandName(ch) == sMyIsland) continue; // хрен вам, а не читы!
 			storeArray[howStore] = n;
 			howStore++;
 		}
@@ -1464,7 +1524,9 @@ void FrachtResult(ref rChar, int iRes)
 	pchar.CargoQuest.iDaysExpired = arFracht.Expire.(iRes);
 
 	pchar.CargoQuest.iTradeColony = chr.city;
-	pchar.CargoQuest.iTradeIsland = GetIslandNameByCity(chr.city);
+	// FreeStores > остров свободного магазина, иначе - его город
+	pchar.CargoQuest.iTradeIsland = GetTraderIslandName(chr);
+	if (pchar.CargoQuest.iTradeIsland == "") pchar.CargoQuest.iTradeIsland = chr.city;
 	pchar.CargoQuest.TraderID = chr.id;
 	pchar.CargoQuest.GiveTraderID = rChar.id;
 	SaveCurrentQuestDateParam("CargoQuest");

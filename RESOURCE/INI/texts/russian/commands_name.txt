@@ -76,5 +76,6 @@ go_portman {Портовое управление}
 go_doctor {Доктор}
 go_fenix {Платформа Феникс}
 go_diffIndoor {Флейт Диффиндур}
+go_outpost {Застава}
 
 worldmap_sea {Выход в море}

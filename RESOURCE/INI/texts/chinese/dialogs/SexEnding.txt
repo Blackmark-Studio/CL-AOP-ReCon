@@ -14,7 +14,7 @@ SexEnding_5 {
 做了
 }
 SexEnding_6 {
-嗯？
+嗯？ 
 }
 SexEnding_7 {
 哞
@@ -35,7 +35,7 @@ SexEnding_12 {
 的
 }
 SexEnding_13 {
-（阴性结尾，具体根据上下文决定，中文通常不翻译）
+（阴性结尾， 具体根据上下文决定， 中文通常不翻译）
 }
 SexEnding_14 {
 的
@@ -63,9 +63,6 @@ SexEnding_21 {
 }
 SexEnding_22 {
 骑着（女性）
-}
-SexEnding_23 {
-ь
 }
 SexEnding_24 {
 浮标
@@ -176,7 +173,7 @@ SexEnding_59 {
 我
 }
 SexEnding_61 {
-（阴性宾格结尾，如“她”或“这个[阴性名词]”）
+（阴性宾格结尾， 如“她”或“这个[阴性名词]”）
 }
 SexEnding_63 {
 她的
@@ -224,7 +221,7 @@ SexEnding_77 {
 南方的
 }
 SexEnding_78 {
-是，长官
+是， 长官
 }
 SexEnding_79 {
 给他

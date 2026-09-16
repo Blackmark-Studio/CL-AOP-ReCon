@@ -1,16 +1,17 @@
-#define VERSION_NUM      99941
-#define VERSION_NUM_PRE  99941
+#define VERSION_NUM      99942
+#define VERSION_NUM_PRE  99942
 
-#define VERSION_NUMBER1       " ver. 1.1.2 (24.06.2026)" // version build
+
+#define VERSION_NUMBER1       " ver. 1.2 (14.09.2026)" // version build
 #define VERSION_NUMBER2       "" // extra DLC
 #define VERSION_NUMBER3       "Seaward&BMS&ReCon" // Devteam
 
-#define MOD_BETTATESTMODE     "On"
+#define MOD_BETTATESTMODE     "Off"
 #define ENCYCLOPEDIA_DISABLED 1
 #define BI_COMPARE_HEIGHT 1080
 
 // Скейлинг интерфейса
-int screenscaling = BI_COMPARE_HEIGHT;
+int screenscaling = 1080;
 
 // quest.c bool    bQuestCheckProcessFreeze = false; // заморозка квестов
 
@@ -116,7 +117,13 @@ bool chrDisableReloadToLocation = false;
 bool bIsFortAtIsland = false;
 float fFort_x, fFort_z;
 int iFortNation, iFortCommander;
-//начало и конец предметов для локаторов item
-int ItemsForLocators_start, ItemsForLocators_end, Totems_start, Totems_end, Ingredients_start, Ingredients_end;
+
+int ITEMS_BLADES_ALL, ITEMS_BLADES_LIGHT, ITEMS_BLADES_NORMAL, ITEMS_BLADES_HEAVY;
+int ITEMS_GUNS_ALL, ITEMS_PISTOLS, ITEMS_MUSKETS;
+int ITEMS_QUEST, ITEMS_QUEST_LOCATORS, ITEMS_TOTEMS;
+int ITEMS_MAPS, ITEMS_MAPS_ARCHIPELAGO, ITEMS_MAPS_TREASURE;
+int ITEMS_POTIONS, ITEMS_JEWELRY;
+int ITEMS_ARMOUR, ITEMS_AMMO, ITEMS_CRAFT, ITEMS_CRAFT_INGREDIENTS, ITEMS_HERBS, ITEMS_RECIPIES;
+int ITEMS_MINERALS, ITEMS_TRINCKETS, ITEMS_TRINCKETS_TRASH;
 
 GetEngineVersion();

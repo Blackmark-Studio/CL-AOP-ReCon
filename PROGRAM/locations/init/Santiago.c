@@ -1459,7 +1459,7 @@ int LocationInitSantiago(int n)
 	n = n + 1;
 
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	// мыс Камагуэй
+	// залив Анна
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "Shore12";
 	locations[n].id.label = "Shore12";
@@ -1554,10 +1554,10 @@ int LocationInitSantiago(int n)
 	locations[n].locators_radius.reload.reload1_back = 2.0;
 
 	locations[n].reload.l2.name = "reload2_back";
-	locations[n].reload.l2.go = "Cuba_CaveEntrance";
-	locations[n].reload.l2.emerge = "reload2";
+	locations[n].reload.l2.go = "Cuba_Jungle_08";
+	locations[n].reload.l2.emerge = "reload3";
 	locations[n].reload.l2.autoreload = "1";
-	locations[n].reload.l2.label = "Cave entrance";
+	locations[n].reload.l2.label = "Jungle";
 	locations[n].locators_radius.reload.reload2_back = 2.0;
 
 	locations[n].reload.l3.name = "reload3_back";
@@ -1567,6 +1567,100 @@ int LocationInitSantiago(int n)
 	locations[n].reload.l3.label = "Jungle";
 	locations[n].locators_radius.reload.reload3_back = 2.0;
 	n = n + 1;
+
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	// Джунгли
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	locations[n].id = "Cuba_Jungle_08";
+	locations[n].id.label = "Jungle";
+	locations[n].image = "loading\outside\jungle.tga";
+	//Sound
+	locations[n].type = "jungle";
+	locations[n].islandId = "Cuba";
+	locations[n].islandIdAreal = "Cuba1";
+	//Models
+	//Always
+	locations[n].filespath.models = "locations\Outside\Jungles\Jungle4";
+	Locations[n].models.always.jungle = "jungle4";	
+	Locations[n].models.always.locators = "jungle4_locators";		
+	Locations[n].models.always.grassPatch = "jungle4_grass";
+	Locations[n].models.always.grassPatch.texture = "grass\grassshore.tga.tx";	
+	Locations[n].models.always.l1 = "plan1";
+	Locations[n].models.always.l1.level = 9;
+	Locations[n].models.always.l1.tech = "LocationModelBlend";
+	Locations[n].models.always.l2 = "plan2";
+	Locations[n].models.always.l2.level = 8;
+	Locations[n].models.always.l2.tech = "LocationModelBlend";
+	Locations[n].models.always.l3 = "plan3";
+	Locations[n].models.always.l3.level = 7;
+	Locations[n].models.always.l3.tech = "LocationModelBlend";	
+	//Day
+	locations[n].models.day.charactersPatch = "jungle4_patch";
+	//Night
+	locations[n].models.night.charactersPatch = "jungle4_patch";	
+	//Environment
+	locations[n].environment.weather = "true";
+	locations[n].environment.sea = "false";
+	//Reload map
+	locations[n].reload.l1.name = "reload1_back";
+	locations[n].reload.l1.go = "Fishing_village";
+	locations[n].reload.l1.emerge = "reload1";
+	locations[n].reload.l1.autoreload = "1";
+	locations[n].reload.l1.label = "Village";
+	locations[n].locators_radius.reload.reload1_back = 2;
+
+	locations[n].reload.l2.name = "reload2_back";
+	locations[n].reload.l2.go = "Cuba_CaveEntrance";
+	locations[n].reload.l2.emerge = "reload2";
+	locations[n].reload.l2.autoreload = "1";
+	locations[n].reload.l2.label = "Cave entrance";
+	locations[n].locators_radius.reload.reload2_back = 2.0;
+
+	locations[n].reload.l3.name = "reload3_back";
+	locations[n].reload.l3.go = "Cuba_jungle_07";
+	locations[n].reload.l3.emerge = "reload2";
+	locations[n].reload.l3.autoreload = "1";
+	locations[n].reload.l3.label = "Jungle";
+	locations[n].locators_radius.reload.reload3_back = 2.0;
+	n = n + 1;
+
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Рыбацкая деревня Святого Лазаря
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+locations[n].id = "Fishing_village";
+locations[n].id.label = "Village";
+locations[n].image = "loading\outside\jungle.tga";
+
+// Sound
+locations[n].type = "jungle";
+locations[n].islandId = "Cuba";
+locations[n].islandIdAreal = "Cuba1";
+
+// Models
+locations[n].filespath.models = "locations\Outside\Fishing_village\";
+
+// Always
+locations[n].models.always.boloto = "Boloto";
+locations[n].models.always.boloto.tech = "DLightModel";
+locations[n].models.always.boloto.sea_reflection = 1;
+locations[n].models.always.plan = "Plan_Boloto";
+locations[n].models.always.plan.level = 9;
+locations[n].models.always.locators = "Boloto_Locators";
+locations[n].models.always.grassPatch = "Boloto_Grass";
+// Day
+locations[n].models.day.charactersPatch = "Boloto_Patch";
+// Night
+locations[n].models.night.charactersPatch = "Boloto_Patch";
+// Environment
+locations[n].environment.weather = "true";
+locations[n].environment.sea = "true";
+locations[n].reload.l1.name = "reload1_back";
+locations[n].reload.l1.go = "Cuba_Jungle_08";
+locations[n].reload.l1.emerge = "reload1";
+locations[n].reload.l1.autoreload = "1";
+locations[n].reload.l1.label = "Jungle";
+locations[n].locators_radius.reload.reload1_back = 2.0;
+n = n + 1;
 
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	// Вход в пещеру
@@ -1610,7 +1704,7 @@ int LocationInitSantiago(int n)
 	locations[n].locators_radius.reload.reload1_back = 1.3;
 
 	locations[n].reload.l2.name = "reload2_back";
-	locations[n].reload.l2.go = "Cuba_Jungle_07";
+	locations[n].reload.l2.go = "Cuba_Jungle_08";
 	locations[n].reload.l2.emerge = "reload2";
 	locations[n].reload.l2.autoreload = "1";
 	locations[n].reload.l2.label = "Jungle";

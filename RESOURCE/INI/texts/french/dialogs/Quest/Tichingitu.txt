@@ -208,3 +208,15 @@ Tichingitu comprend tout. Tichingitu prendra position à la distance indiquée.
 Tichingitu_59 {
 D’accord.
 }
+Tichingitu_60 {
+Capitaine... Tichingitu être triste. Atauko partir. Atauko être digne fils de la jungle. Bon chasseur. Tichingitu le considérer comme frère.
+}
+Tichingitu_61 {
+Je ne pensais pas que vous deviendriez amis si vite. Pendant toute la traversée, vous avez à peine échangé une douzaine de mots.
+}
+Tichingitu_62 {
+Atauko regarder jungle avec mêmes yeux que Tichingitu. Être beaucoup de jours sur grande eau, comme Tichingitu. Mais retourner dans forêt. Si esprits permettre, nous nous revoir encore.
+}
+Tichingitu_63 {
+Connaissant la ruse du Basque, je miserais volontiers deux doublons là-dessus. En attendant, nous ferions bien, nous aussi, d'apprendre de vous à regarder où nous mettons les pieds.
+}

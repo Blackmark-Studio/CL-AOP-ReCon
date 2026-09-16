@@ -1,36 +1,36 @@
 LeFransua_Usurer_1 {
-什么问题？
+什么问题？ 
 }
 LeFransua_Usurer_2 {
-你想干什么？
+你想干什么？ 
 }
 LeFransua_Usurer_3 {
 @<RandPhraseSimple>
 }
 LeFransua_Usurer_4 {
-不久前你还想问我个问题……
+不久前你还想问我个问题…… 
 }
 LeFransua_Usurer_5 {
-嗯，让我猜猜……又没什么重要的事吧？
+嗯， 让我猜猜…… 又没什么重要的事吧？ 
 }
 LeFransua_Usurer_6 {
-听着，俺管钱，不负责回答问题……
+听着， 我管钱， 不负责回答问题…… 
 }
 LeFransua_Usurer_7 {
-我改主意了……
+我改主意了…… 
 }
 LeFransua_Usurer_8 {
-我现在没什么可说的。
+我现在没什么可说的。 
 }
 LeFransua_Usurer_9 {
 @<RandPhraseSimple>
 }
 LeFransua_Usurer_10 {
-嗯，我的记忆好像出了点问题……
+嗯， 我的记忆好像出了点问题…… 
 }
 LeFransua_Usurer_11 {
-你猜对了，抱歉……
+你猜对了， 抱歉…… 
 }
 LeFransua_Usurer_12 {
-我明白……
+我明白…… 
 }

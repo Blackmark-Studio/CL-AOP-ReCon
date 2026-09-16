@@ -455,7 +455,7 @@ void ProcessDialogEvent()
 			link.l1.go = "storage_rent1";
 		break;
 		case "storage_rent1":
-			NPChar.MoneyForStorage = GetStoragePrice(15000);
+			NPChar.MoneyForStorage = GetStoragePrice(NPChar, 15000);
 			dialog.text = StringFromKey("House_dialog_159", FindMoneyString(sti(npchar.MoneyForStorage)));
 			link.l1 = StringFromKey("House_dialog_160");
 			link.l1.go = "storage_rent2";
@@ -538,7 +538,7 @@ void ProcessDialogEvent()
 			link.l2.go = "exit";
 		break;
 		case "storage_1":
-			npchar.MoneyForStorage = GetStoragePrice(15000);
+			npchar.MoneyForStorage = GetStoragePrice(NPChar, 15000);
 			dialog.text = StringFromKey("House_dialog_185");
 			if (sti(pchar.money) >= sti(npchar.MoneyForStorage))
 			{
@@ -571,7 +571,7 @@ void ProcessDialogEvent()
 		break;
 		case "storage_3":
 			AddMoneyToCharacter(pchar, -sti(npchar.MoneyForStorage));
-			npchar.MoneyForStorage = GetStoragePrice(15000);
+			npchar.MoneyForStorage = GetStoragePrice(NPChar, 15000);
 			npchar.Storage.MoneyForStorage = npchar.MoneyForStorage;
 			SaveCurrentNpcQuestDateParam(npchar, "Storage.Date");
 			NextDiag.CurrentNode = NextDiag.TempNode;
@@ -696,8 +696,8 @@ void ProcessDialogEvent()
 		break;
 		//--------------------------------- Аренда хранилища ---------------------------------
 		case "PersonalStorage":
-			npchar.MoneyForStorage = GetStoragePrice(1000);
-			npchar.MoneyForStorageRent = GetStoragePrice(150);
+			npchar.MoneyForStorage = GetStoragePrice(NPChar, 1000);
+			npchar.MoneyForStorageRent = GetStoragePrice(NPChar, 150);
 			dialog.text = StringFromKey("House_dialog_229", FindMoneyString(sti(npchar.MoneyForStorage)), npchar.MoneyForStorageRent);
 			if (sti(pchar.money) >= sti(npchar.MoneyForStorage))
 			{

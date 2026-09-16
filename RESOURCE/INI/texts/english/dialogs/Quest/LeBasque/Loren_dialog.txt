@@ -1,0 +1,36 @@
+Loren_dialog_1 {
+Captain @<pchar>. Care for some fresh fish?
+}
+Loren_dialog_2 {
+Do we know each other?
+}
+Loren_dialog_3 {
+Depends what you call knowing someone. I've heard plenty about you.
+}
+Loren_dialog_4_m {
+All the better. I didn't come for fish. I'm waiting for a... friend. He should have anchored here yesterday aboard the flute 'Rose of the Winds'.
+}
+Loren_dialog_4_f {
+All the better. I didn't come for fish. I'm waiting for a... friend. He should have anchored here yesterday aboard the flute 'Rose of the Winds'.
+}
+Loren_dialog_5 {
+A flute... One of those fat, clumsy tubs they love so much in Europe. There was one here. Last night.
+}
+Loren_dialog_6 {
+And the lookouts at the lighthouse didn't see her?
+}
+Loren_dialog_7 {
+The lookouts watch signal lights and flags. That vessel came in complete darkness: no stern lantern, no pennant on the mast. Crept along the coast like a spy slipping past a patrol, catching the wind with topsails alone. Nearly collided in the dark with smugglers who were also running without lights. I thanked them for that - they didn't spoil my night fishing.
+}
+Loren_dialog_8 {
+Where did she go? Toward the Spanish coast?
+}
+Loren_dialog_9 {
+Doubt it. My friends put in at the lighthouse, while the flute held east. I'd say she meant to round the island and anchor somewhere near Fish Eye Beach. Though she might have turned toward Michel le Basque to visit his buccaneers.
+}
+Loren_dialog_10 {
+Unlikely. Thank you, Loren.
+}
+Loren_dialog_11 {
+Farewell, Captain.
+}

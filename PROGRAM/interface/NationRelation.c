@@ -3,10 +3,13 @@
 
 int curNationIdx;
 string _fileName = "RESOURCE\INI\INTERFACES\NationRelation.ini";
+int gLngRPGDescribe = -1;
 
 void InitInterface(string iniName)
 {
     InterfaceStack.SelectMenu_node = "LaunchNationRelation"; // запоминаем, что звать по Ф2
+
+    gLngRPGDescribe = LanguageOpenFile("RPGDescribe.txt");
 	
 	TableNationRelation();
 	
@@ -30,7 +33,7 @@ void InitInterface(string iniName)
     CreateString(true,"HolH","","INTERFACE_ULTRASMALL",COLOR_NORMAL,700,302,SCRIPT_ALIGN_CENTER,1.0);
 	
 	SetFormatedText("NATION_RELATION_CAPTION", XI_ConvertString("NationRelationToPchar"));
-	SetFormatedText("SHIP_FLAG_CAPTION", XI_ConvertString("ChangeFlag") + " " + XI_ConvertString("musicmod_s"));
+	SetFormatedText("SHIP_FLAG_CAPTION", XI_ConvertString("ChangeFlag") + " " + XI_ConvertString("Continuous music ship"));
 
 	// доп инфа в шапку --->
 	SetFormatedText("WEIGHT", FloatToString(GetItemsWeight(chref), 1) + " / " + GetMaxItemsWeight(chref));
@@ -42,7 +45,7 @@ void InitInterface(string iniName)
 	
     curNationIdx = sti(chref.nation);
     SetNewNation(0);
-	XI_RegistryExitKey("IExit_F5");
+	XI_RegistryExitKey("NationsMenu");
 	SetAlertMarks(chref);
 }
 
@@ -75,6 +78,8 @@ void IDoExit(int exitCode)
     DelEventHandler("ievnt_command","ProcessCommandExecute");
     DelEventHandler("MouseRClickUP","HideInfo");
 	DelEventHandler("ShowInfoWindow","ShowInfoWindow");
+
+	if (gLngRPGDescribe >= 0) { LanguageCloseFile(gLngRPGDescribe); gLngRPGDescribe = -1; }
 
 	interfaceResultCommand = exitCode;
 	if( CheckAttribute(&InterfaceStates,"ReloadMenuExit"))
@@ -335,6 +340,11 @@ void HideInfo()
 
 void FlagsProcess()
 {
+	if (CheckAttribute(pchar, "questTemp.AoP.ForcePirateFlag"))
+	{
+		PlaySound("knock");
+		return;
+	}
 	// boal 04.04.2004 -->
 	bool bTmpBool = true;
 	int i, cn;
@@ -464,6 +474,15 @@ void SetNewNation(int add)
 {
     ref   mchar = GetMainCharacter();
     bool  ok, ok2;
+	 if (CheckAttribute(pchar, "questTemp.AoP.ForcePirateFlag"))
+    {
+        curNationIdx = PIRATE;
+        SetNewGroupPicture("FlagPic", "NATIONS", GetNationNameByType(PIRATE));
+        SetSelectable("FLAGS", false);
+        SetNodeUsing("RIGHTCHANGE_NATION", false);
+        SetNodeUsing("LEFTCHANGE_NATION", false);
+        return;
+    }
     
     curNationIdx = curNationIdx + add;
     if (curNationIdx < 0) curNationIdx = 4;
@@ -560,23 +579,23 @@ void ProcessInterfaceControls()
 	{
 		IDoExit(INTERFACE_CHARACTER_ALL);
 	}
-	if (controlName == "IExit_F2")
+	if (controlName == "CharacterShipMenu")
 	{
 		IDoExit(RC_INTERFACE_TO_SHIP);
 	}
-	if (controlName == "IExit_F3")
+	if (controlName == "LogbookMenu")
 	{
 		IDoExit(RC_INTERFACE_TO_LOGBOOK);
 	}
-	if (controlName == "IExit_F4")
+	if (controlName == "ItemsMenu")
 	{
 		IDoExit(RC_INTERFACE_TO_ITEMS);
 	}
-	if (controlName == "IExit_K")
+	if (controlName == "AlchemyKey")
 	{
 		IDoExit(RC_INTERFACE_TO_ALCHEMY);
 	}
-	if (controlName == "IExit_F1")
+	if (controlName == "Interface")
 	{
 		IDoExit(INTERFACE_CHARACTER_ALL);
 	}

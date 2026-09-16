@@ -122,7 +122,7 @@ Sandal_descr {Um tipo valioso de madeira é pesado, amarelado e de grão fino e,
 Leather {Couro}
 Leather_descr
 {
-As peles curtidas e preparadas de gado são uma mercadoria universal, sempre procurada na Europa. Foi assim que os primeiros bucaneiros ganhavam a vida, vendendo peles e carne do gado selvagem em Hispaniola.
+As peles curtidas e preparadas de gado são uma mercadoria universal, sempre procurada na Europa.
 Embora poucos mercadores encham seus navios apenas com couro, ele é ótimo para completar o espaço vazio do porão, pois é muito resistente e suporta qualquer condição de transporte.
 }
 Oil {Óleo}
@@ -163,8 +163,6 @@ Silver_descr
 Lingotes de prata maciça, marcados pelo Tesouro da Espanha.
 Um prêmio cobiçado, já que a prata tem bom valor, sendo a segunda escolha do tesouro espanhol para armazenar e transportar riqueza. A maior parte é extraída em um lugar chamado "Montanha de Prata", próximo a Potosi.
 }
-Pinctada {Ostras perlíferas}
-Pinctada_descr {A captura mais valiosa dos pescadores de pérolas — moluscos caribenhos (Pinctada longisquamosa) colhidos nos bancos rasos. Suas conchas iridescentes podem esconder tesouros... ou apenas sonhos vazios. E só os mais habilidosos conseguem abrir sem danificar a camada de madrepérola...}
 Brick {Tijolos}
 Brick_descr
 {
@@ -176,6 +174,25 @@ Medicament_descr
 {
 Um conjunto de medicamentos e instrumentos destinados ao tratamento das doenças mais comuns e à prestação de primeiros socorros a feridos e machucados. Latas, pós, ataduras, frascos, emplastros — tudo o que pode salvar uma vida.
 Ter remédios a bordo ajuda a salvar feridos, reduzir baixas em abordagens e tratar doentes durante a viagem.
+}
+Pinctada {Ostras perlíferas}
+Pinctada_descr {A captura mais valiosa dos pescadores de pérolas — moluscos caribenhos (Pinctada longisquamosa) colhidos nos bancos rasos. Suas conchas iridescentes podem esconder tesouros... ou apenas sonhos vazios. E só os mais habilidosos conseguem abrir sem danificar a camada de madrepérola...}
+Salt {Sal}
+Salt_descr
+{
+Um produto indispensável na era das longas expedições marítimas. Extraído dos lagos salgados ou minas do arquipélago, o sal é usado para conservar provisões, salvando-as de apodrecer no úmido clima tropical. Para muitos colonos, este "ouro branco" é uma fonte de renda estável, pois nenhum capitão sensato arriscaria ir para o mar aberto sem suprimentos confiáveis de carne salgada.
+}
+Meat {Carne}
+Meat_descr
+{
+Carne seca e generosamente salgada, preparada em grelhas de madeira de acordo com as tradições dos caçadores bucaneiros do Caribe. Uma excelente carga comercial que sempre pode ser vendida com lucro em qualquer colônia.
+~
+Atenção: esta mercadoria é destinada exclusivamente para venda. Para alimentar a tripulação durante a viagem, é necessário comprar provisões de navio.
+}
+Hide {Peles}
+Hide_descr
+{
+Peles não curtidas de javalis e vacas selvagens que vagam em abundância pelas florestas de Hispaniola e outras ilhas. Ao contrário do couro já curtido, esta carga é uma matéria-prima generosamente paga nas manufaturas europeias. A caça e o comércio de peles cruas é um ofício árduo e perigoso, a partir do qual muitos bucaneiros lendários iniciaram seu caminho rumo à riqueza.
 }
 Cannon_3 {Falconetes}
 Cannon_3_descr

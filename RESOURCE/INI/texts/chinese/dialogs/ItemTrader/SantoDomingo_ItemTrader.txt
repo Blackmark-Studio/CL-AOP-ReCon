@@ -1,50 +1,50 @@
 SantoDomingo_ItemTrader_1 {
-什么问题？
+什么问题？ 
 }
 SantoDomingo_ItemTrader_2 {
-有什么事需要我帮忙，@<GetAddress_Form>?
+有什么事需要我帮忙， @<GetAddress_Form>?
 }
 SantoDomingo_ItemTrader_3 {
 @<RandPhraseSimple>
 }
 SantoDomingo_ItemTrader_4 {
-又有问题啊，@<GetAddress_Form>……
+又有问题啊， @<GetAddress_Form>…… 
 }
 SantoDomingo_ItemTrader_5 {
-问题这么多……要不要来做点生意，@<GetAddress_Form>?
+问题这么多…… 要不要来做点生意， @<GetAddress_Form>?
 }
 SantoDomingo_ItemTrader_6 {
-听着，咱们还要浪费多少时间在这些废话上？
+听着， 咱们还要浪费多少时间在这些废话上？ 
 }
 SantoDomingo_ItemTrader_7 {
-没问题……
+没问题…… 
 }
 SantoDomingo_ItemTrader_8 {
-我现在没什么可说的。
+我现在没什么可说的。 
 }
 SantoDomingo_ItemTrader_9 {
 @<RandPhraseSimple>
 }
 SantoDomingo_ItemTrader_10 {
-唉，又来了……
+唉， 又来了…… 
 }
 SantoDomingo_ItemTrader_11 {
-是啊，讲讲价确实更好……
+是啊， 讲讲价确实更好…… 
 }
 SantoDomingo_ItemTrader_12 {
-嗯，抱歉，商人……
+嗯， 抱歉， 商人…… 
 }
 SantoDomingo_ItemTrader_13_m {
-我在找一枚戒指，之前属于……我的一个熟人。这戒指挺值钱的，就在这城里。你有没有听说过？大颗蓝宝石，镶在金子上。
+我在找一枚戒指， 之前属于…… 我的一个熟人。 这戒指挺值钱的， 就在这城里。 你有没有听说过？ 大颗蓝宝石， 镶在金子上。 
 }
 SantoDomingo_ItemTrader_13_f {
-我在找一枚曾经属于……我一个熟人的戒指。那戒指挺值钱的，就在这城里。你有没有听说过？大颗蓝宝石，镶在金子上的。
+我在找一枚曾经属于…… 我一个熟人的戒指。 那戒指挺值钱的， 就在这城里。 你有没有听说过？ 大颗蓝宝石， 镶在金子上的。 
 }
 SantoDomingo_ItemTrader_14 {
-你把我当成珠宝匠了吗？这事可不归我管。
+你把我当成珠宝匠了吗？ 这事可不归我管。 
 }
 SantoDomingo_ItemTrader_15 {
-抱歉。
+抱歉。 
 }
 SantoDomingo_ItemTrader_16 {
 带着红宝石
@@ -56,32 +56,32 @@ SantoDomingo_ItemTrader_18 {
 带着钻石
 }
 SantoDomingo_ItemTrader_19 {
-我有个戒指，不过在@<LinkRandPhrase>那儿。
+我有个戒指， 不过在@<LinkRandPhrase>那儿。 
 }
 SantoDomingo_ItemTrader_20_m {
-我真替你高兴。
+我真替你高兴。 
 }
 SantoDomingo_ItemTrader_20_f {
-我真为你高兴。
+我真为你高兴。 
 }
 SantoDomingo_ItemTrader_21 {
-我不卖戒指。
+我不卖戒指。 
 }
 SantoDomingo_ItemTrader_22 {
-抱歉。
+抱歉。 
 }
 SantoDomingo_ItemTrader_23 {
-我没有戒指，抱歉。
+我没有戒指， 抱歉。 
 }
 SantoDomingo_ItemTrader_24 {
-行，那我去别处找找。
+行， 那我去别处找找。 
 }
 SantoDomingo_ItemTrader_25_m {
-嗯……你说是蓝宝石？对，我记得见过你说的那种戒指。有个女孩戴着——也许你还认识她——反正大多数水手都挺熟的。她叫Francesca。说实话，我还真没见过比她更无聊的姑娘。那戒指是几年前一个士兵送她的。也许那家伙比她还傻——毕竟那戒指挺值钱的。嗯，估计你找的就是那枚戒指。
+嗯…… 你说是蓝宝石？ 对， 我记得见过你说的那种戒指。 有个女孩戴着——也许你还认识她——反正大多数水手都挺熟的。 她叫弗朗西丝卡。 说实话， 我还真没见过比她更无聊的姑娘。 那戒指是几年前一个士兵送她的。 也许那家伙比她还傻——毕竟那戒指挺值钱的。 嗯， 估计你找的就是那枚戒指。 
 }
 SantoDomingo_ItemTrader_25_f {
-嗯……你说是蓝宝石？对，我记得见过你说的那种戒指。有个姑娘戴着——说不定你还认识她，反正大多数水手都挺熟的。她叫Francesca。说实话，我还真没见过比她更笨的女孩。那戒指是几年前一个士兵送她的。也许那家伙比她还傻——毕竟那戒指值不少钱。是的，我觉得那大概就是你要找的那枚戒指。
+嗯…… 你说是蓝宝石？ 对， 我记得见过你说的那种戒指。 有个姑娘戴着——说不定你还认识她， 反正大多数水手都挺熟的。 她叫弗朗西丝卡。 说实话， 我还真没见过比她更笨的女孩。 那戒指是几年前一个士兵送她的。 也许那家伙比她还傻——毕竟那戒指值不少钱。 是的， 我觉得那大概就是你要找的那枚戒指。 
 }
 SantoDomingo_ItemTrader_26 {
-谢谢你，@<npchar>，你帮了我大忙。咱们后会有期。
+谢谢你， @<npchar>， 你帮了我大忙。 咱们后会有期。 
 }

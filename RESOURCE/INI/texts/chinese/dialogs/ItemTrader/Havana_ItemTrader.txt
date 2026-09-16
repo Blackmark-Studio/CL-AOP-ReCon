@@ -1,36 +1,36 @@
 Havana_ItemTrader_1 {
-什么问题？
+什么问题？ 
 }
 Havana_ItemTrader_2 {
-有什么事需要俺帮忙，@<GetAddress_Form>?
+有什么事需要我帮忙， @<GetAddress_Form>?
 }
 Havana_ItemTrader_3 {
 @<RandPhraseSimple>
 }
 Havana_ItemTrader_4 {
-又有问题啊，@<GetAddress_Form>……
+又有问题啊， @<GetAddress_Form>…… 
 }
 Havana_ItemTrader_5 {
-问题真多啊……要不要来做点生意，@<GetAddress_Form>?
+问题真多啊…… 要不要来做点生意， @<GetAddress_Form>?
 }
 Havana_ItemTrader_6 {
-听着，咱们还要闲聊到什么时候？
+听着， 咱们还要闲聊到什么时候？ 
 }
 Havana_ItemTrader_7 {
-没问题……
+没问题…… 
 }
 Havana_ItemTrader_8 {
-我现在没什么可说的。
+我现在没什么可说的。 
 }
 Havana_ItemTrader_9 {
 @<RandPhraseSimple>
 }
 Havana_ItemTrader_10 {
-唉，又来了……
+唉， 又来了…… 
 }
 Havana_ItemTrader_11 {
-嗯，确实还是讲讲价更好……
+嗯， 确实还是讲讲价更好…… 
 }
 Havana_ItemTrader_12 {
-嗯，抱歉啊，商人……
+嗯， 抱歉啊， 商人…… 
 }

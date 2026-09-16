@@ -537,6 +537,11 @@ DuglasSchool             {Musketier-Spezialausbildung}
 perkDuglasSchool          {Der Charakter wurde nach einer komplexen und seltenen Methodik der Elite-Schützenschulen der Alten Welt ausgebildet.
 ~
 Nur wer diese seltene klassische Basis perfekt beherrscht, ist in der Lage, seltene und experimentelle Musketenarten einzusetzen.}
+legendGuideRead {Angehende Legende}
+perklegendGuideRead {Ihr habt ein kleines, zufällig gefundenes Notizbuch gelesen, das mit kurzen, aber wertvollen Ratschlägen gefüllt ist.
+~
+Erhöht die Grundwerte von Energie und Gesundheit um 5 beziehungsweise 10 Punkte.}
+
 Energaiser {Energiegeladen}
 perkEnergaiser {Die Figur befindet sich auf dem Höhepunkt ihrer körperlichen Leistungsfähigkeit, wodurch sich die Energie 1,5-mal schneller regeneriert.}
 LoyalOff {Loyalität}

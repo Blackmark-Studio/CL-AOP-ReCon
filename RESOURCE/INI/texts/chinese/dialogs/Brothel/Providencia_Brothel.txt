@@ -1,48 +1,48 @@
 Providencia_Brothel_1_m {
-有啥问题吗，小伙子？
+有什么问题吗， 小伙子？ 
 }
 Providencia_Brothel_1_f {
-还有什么问题吗，小姑娘？
+还有什么问题吗， 小姑娘？ 
 }
 Providencia_Brothel_2_m {
-你想干嘛，帅哥？有话就问吧。
+你想干嘛， 帅哥？ 有话就问吧。 
 }
 Providencia_Brothel_2_f {
-你想干啥，美女？有啥问题就问吧。
+你想干什么， 美女？ 有什么问题就问吧。 
 }
 Providencia_Brothel_3 {
 @<RandPhraseSimple>
 }
 Providencia_Brothel_4 {
-又有问题啊？
+又来问问题了？ 
 }
 Providencia_Brothel_5 {
-呵呵，今天都第三次了，还是那些老问题……
+呵呵， 今天都第三次了， 还是那些老问题…… 
 }
 Providencia_Brothel_6_m {
-哼，怎么，不打算挑个漂亮的姑娘吗？不然俺可要对你有点看法了……
+嗯…… 也许你该给自己挑个美女？ 不然的话， 我可就要对你形成某种“特别的看法”了
 }
 Providencia_Brothel_6_f {
-嗯，也许你能挑个漂亮姑娘？我们可不留男孩，呵呵……
+嗯， 也许你会挑个漂亮姑娘？ 我们这可没有男孩， 呵呵…… 
 }
 Providencia_Brothel_7_m {
-我改主意了……
+我改变主意了…… 
 }
 Providencia_Brothel_7_f {
-我改主意了……
+我改变主意了…… 
 }
 Providencia_Brothel_8 {
-嗯，没什么……
+嗯， 没事…… 
 }
 Providencia_Brothel_9 {
 @<RandPhraseSimple>
 }
 Providencia_Brothel_10 {
-我不行……没问题……
+我不行…… 没问题…… 
 }
 Providencia_Brothel_11 {
-是啊，真的是第三次了……抱歉。
+好吧， 确实是第三次了…… 抱歉。 
 }
 Providencia_Brothel_12 {
-现在不行……改天吧……
+现在不行…… 也许下次吧…… 
 }

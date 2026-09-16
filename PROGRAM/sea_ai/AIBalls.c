@@ -76,7 +76,7 @@ void Ball_FlyNearCamera()
 
 int ballNumber;
 
-void Ball_AddBall(aref aCharacter, float fX, float fY, float fZ, float fSpeedV0, float fDirAng, float fHeightAng, float fCannonDirAng, float fMaxFireDistance, float fAngle)
+void Ball_AddBall(aref aCharacter, float fX, float fY, float fZ, float fSpeedV0, float fDirAng, float fHeightAng, float fCannonDirAng, float fMaxFireDistance, bool isAutoFire, string bort)
 {
 	int iCannonType = sti(aCharacter.Ship.Cannons.Type);
 	ref rCannon = GetCannonByType(iCannonType);
@@ -90,24 +90,23 @@ void Ball_AddBall(aref aCharacter, float fX, float fY, float fZ, float fSpeedV0,
 	AIBalls.CharacterIndex    = aCharacter.Index;
 	AIBalls.Type = Goods[sti(aCharacter.Ship.Cannons.Charge.Type)].Name;
 
-	if (AIBalls.Type != GOOD_KNIPPELS)
+	// evganat - отключаем встроенный разброс
+	float fTempDispersionY = 0.0;
+	float fTempDispersionX = 0.0;
+
+	// включаем разброс для автозалпа
+	if(isAutoFire)
 	{
-		fCannonHeightMultiply *= 0.4;
-	}
-	else
-	{
-		fCannonHeightMultiply *= 0.65;
+		fTempDispersionY = Degree2Radian(12.0);
+		fTempDispersionX = Degree2Radian(5.0);
 	}
 
 	AIBalls.HeightMultiply    = fCannonHeightMultiply;
 	AIBalls.SizeMultiply      = rCannon.SizeMultiply;
 	AIBalls.TimeSpeedMultiply = rCannon.TimeSpeedMultiply;
 	AIBalls.MaxFireDistance   = fMaxFireDistance;
-	AIBalls.RawAng = fAngle;
+//	AIBalls.RawAng = fAngle;
 	
-	float fTempDispersionY = Degree2Radian(12.0);
-	float fTempDispersionX = Degree2Radian(15.0);
-
 	//float fDamage2Cannons = 100.0;
 
     float fAccuracy = 1.2 - stf(aCharacter.TmpSkill.Accuracy);

@@ -523,3 +523,54 @@ Ech, kapitanie, pech chciała, że akurat wam przyszło stanąć na drodze tego 
 Common_rumours_175 {
 Wiecie, nasza parafia rozpaczliwie potrzebuje świec kościelnych. Dlaczego nikt nie chce pomóc? Choćby dla ratowania własnej duszy...
 }
+Common_rumours_176 {
+Wyobraźcie sobie, @<pchar.GenQuest.EncGirl.name> w końcu została schwytana! Szkoda tylko, że okazała się zwykłą złodziejką, a nie czarownicą. Dawno już nie mieliśmy w mieście widowiska, które naprawdę warto byłoby zobaczyć, ha!
+}
+CapBloodLine_Rumour_1 {
+Słyszałem, że na Barbadosie niewolnicy wzniecili bunt! I to nie byle jaki! Kiedy Hiszpanie, którzy tego dnia napadli na Bridgetown, grasowali po mieście, niewolnicy - wyobraźcie sobie tylko! - sprzątnęli im sprzed nosa całą fregatę! Dobrze tak tym psom. Szkoda tylko, że zbiegów zapewne wyłapią i powieszą co do jednego.
+}
+CapBloodLine_Rumour_2 {
+Słyszeliście, że garstka niewolników wystrychnęła na dudka samego pułkownika Bishopa? Pomyślcie tylko! Uciekli z wyspy na statku, a potem zwabili pułkownika na pokład, rozebrali go do naga i wyrzucili za burtę niczym parszywego szczeniaka. Nie zdziwię się, jeśli starzec obsypie teraz złotem każdego, kto przyniesie mu ich głowy na tacy.
+}
+CapBloodLine_Rumour_3 {
+Jak to, nic nie słyszeliście? Hiszpanie napadli na Barbados - i wrócili z podkulonym ogonem! Miasto wprawdzie ograbili, ale za to ktoś ukradł im ich własny statek! Jedni mówią, że zrobili to niewolnicy, inni, że maczali w tym palce mieszkańcy - któż teraz dojdzie prawdy? Jedno jest pewne: Hiszpanie dawno nie zaznali takiego upokorzenia.
+}
+CapBloodLine_Rumour_4 {
+Cały Archipelag mówi tylko o hiszpańskim napadzie na Barbados. Cały fort nie zdołał oprzeć się jednej fregacie! Za to garstka niewolników ukarała tych przeklętych donów lepiej niż jakiekolwiek wojsko: zabrali im piękny okręt wraz z całym łupem - i tyle ich widziano!
+}
+CapBloodLine_Rumour_5 {
+Mówią, że kiedy Hiszpanie plądrowali Barbados, pewien niewolnik imieniem Peter Blood wzniecił bunt. Zebrał garstkę śmiałków, odebrał napastnikom potężną fregatę i wypłynął nią na otwarte morze niczym doświadczony kapitan! Co za człowiek, prawda? Chwileczkę... jak właściwie się nazywacie?
+}
+CapBloodLine_Rumour_6 {
+Pułkownik Bishop z Barbadosu wpadł w taką furię, że nawet diabłom robi się niedobrze! Najpierw Hiszpanie rozbili jego fort i ograbili ukochane Bridgetown. Potem niewolnicy z jego własnej plantacji - gołymi rękami, wyobrażacie sobie? - podusili strażników na hiszpańskiej fregacie i zabrali statek dla siebie. Na koniec zwabili na pokład samego Bishopa, przetrzymali go jako jeńca i wyrzucili za burtę niczym worek plew. Takie to sprawy, mój przyjacielu.
+}
+CapBloodLine_BarbadosRumour_1 {
+Kiedy plantatorzy i żołnierze chowali się po piwnicach, Peter Blood, nasz lekarz - ten sam, który postawił na nogi pół wyspy - jako jedyny nie stchórzył! Zebrał garstkę niewolników i sprzątnął Hiszpanom fregatę sprzed nosa. Znam go osobiście - ten człowiek ma złote ręce. Niech Bóg ma go w opiece, gdziekolwiek teraz jest. Może i lepiej, że uciekł: Bishop wpędziłby go do grobu przed czasem, wspomnicie moje słowa.
+}
+CapBloodLine_BarbadosRumour_2 {
+I oto wychwalany doktor Blood pokazał swoje prawdziwe oblicze! Wyhodowaliśmy żmiję na własnej piersi, a on przy pierwszej okazji ukradł statek i uciekł! Jakby tego było mało, zwabił pułkownika Bishopa na pokład i wyrzucił go za burtę niczym śmiecia! A przecież pułkownik pozwalał mu na tak wiele... Wspomnicie moje słowa: dla takiego człowieka nie ma miejsca wśród uczciwych ludzi!
+}
+CapBloodLine_SpanishRumour_1 {
+Ten diabeł Blood - niech on i jego ród będą przeklęci do siódmego pokolenia! - z zimną krwią zamordował don Diega de Espinosę, kapitana «Cinco Llagas», a potem ośmielił się przywłaszczyć jego własny statek! Nie zdziwiłbym się, gdyby sprzedał duszę szatanowi - jak inaczej zwykły skazaniec zdołałby oszukać wszystkich?
+}
+CapBloodLine_SpanishRumour_2 {
+Słyszeliście, jak ten łajdak Peter Blood oszukał samego don Miguela de Espinosę? Naopowiadał mu bredni i uśpił jego czujność, a potem podstępnie zamordował jego brata i przywłaszczył sobie statek! To hańba dla całej Hiszpanii, że taki nikczemnik wciąż nie dynda na szubienicy!
+}
+CapBloodLine_SpanishRumour_3 {
+Matko Boża, chroń nas przed tym pomiotem piekieł imieniem Peter Blood! Z zimną krwią zarżnął don Diega, a potem omal nie dopadł również jego syna! Przysięgam, jeśli Najświętsza Panienka pozwoli mi choć raz go spotkać, własnoręcznie wbiję mu nóż między żebra. Wspomnicie moje słowa!
+}
+CapBloodLine_SpanishRumour_4 {
+Nie spotkaliście przypadkiem don Miguela de Espinosy? Nie? Mówią, że kiedy ten łajdak Blood wystrychnął go na dudka niczym ostatniego majtka i uszedł bezkarnie, don Miguel osiwiał w ciągu jednej nocy. A przecież sądziliśmy, że nie jest człowiekiem, którego można tak łatwo oszukać...
+}
+CapBloodLine_SpanishBloodRumour_1 {
+Słyszeliście o tym diabelskim skazańcu, który z zimną krwią zamordował don Diega de Espinosę, kapitana «Cinco Llagas», a na dodatek oszukał jego brata? Jakby tego było mało, przywłaszczył sobie statek don Diega, «Cinco Llagas». Niech będzie przeklęty do siódmego pokolenia! Nie zdziwiłbym się, gdyby sprzedał duszę szatanowi - jak inaczej zwykły zbiegły niewolnik zdołałby wystrychnąć wszystkich na dudka?
+}
+CapBloodLine_SpanishBloodRumour_2 {
+Powiadają, że jakiś zbiegły niewolnik wystrychnął na dudka samego don Miguela de Espinosę. Naopowiadał mu bredni i uśpił jego czujność, a potem podstępnie zamordował jego brata i przywłaszczył sobie statek! To hańba dla całej Hiszpanii, że taki nikczemnik wciąż nie dorobił się konopnego krawata!
+}
+CapBloodLine_SpanishBloodRumour_3 {
+Matko Boża, chroń nas przed tym pomiotem piekieł, który zarżnął don Diega, a potem omal nie dopadł również jego syna! Przysięgam, jeśli kiedykolwiek stanie mi na drodze, własnoręcznie wbiję mu nóż między żebra. Wspomnicie moje słowa! Wiecie, jak się nazywa?
+}
+CapBloodLine_SpanishBloodRumour_4 {
+Słyszeliście o don Miguelu de Espinosie? Powiadają, że jakiś zbiegły niewolnik wystrychnął go na dudka niczym ostatniego majtka, zamordował jego brata i uszedł bezkarnie. Don Miguel podobno osiwiał potem w ciągu jednej nocy. A przecież sądziliśmy, że nie jest człowiekiem, którego można tak łatwo oszukać...
+}

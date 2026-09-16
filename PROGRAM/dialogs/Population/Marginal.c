@@ -52,6 +52,18 @@ void ProcessDialogEvent()
 				link.l3 = StringFromKey("Marginal_12");
 				link.l3.go = "exit";
 				npchar.quest.meeting = "1";
+				//--> Эммануэль Пардаль
+				if (CheckAttribute(pchar, "questTemp.EPL_Prologue"))
+				{
+					dialog.text = NPCharSexPhrase(NPChar, StringFromKey("Marginal_66", TimeGreeting(), pchar.name), StringFromKey("Marginal_67", TimeGreeting(), pchar.name));
+					link.l1 = StringFromKey("Marginal_68", TimeGreeting(), npchar.name);
+					link.l1.go = "exit";
+					DeleteAttribute(link, "l2");
+					DeleteAttribute(link, "l3");
+					npchar.quest.meeting = "0";
+					break;
+				}
+				//<-- Эммануэль Пардаль
 				break;
 			}
 			dialog.text = StringFromKey("Marginal_13");
@@ -261,17 +273,16 @@ void SelectMarginpassengerParameter()
 			break;
 		}
 	}
+
+	int iShip = SHIP_SLOOP;
+	int iRank = sti(pchar.rank);
+
 	//TODO: нужен баланс:
-	if (sti(pchar.rank) < 4) pchar.GenQuest.Marginpassenger.ShipType = SHIP_SLOOP;
-	if (sti(pchar.rank) >= 4 && sti(pchar.rank) < 7) pchar.GenQuest.Marginpassenger.ShipType = SHIP_BARKENTINE + rand(2);
-	if (sti(pchar.rank) >= 7 && sti(pchar.rank) < 10) pchar.GenQuest.Marginpassenger.ShipType = SHIP_CARAVEL + rand(2);
-	if (sti(pchar.rank) >= 10 && sti(pchar.rank) < 16) pchar.GenQuest.Marginpassenger.ShipType = SHIP_GALEON_L;
-	if (sti(pchar.rank) >= 16) pchar.GenQuest.Marginpassenger.ShipType = SHIP_PINNACE + rand(7);
-	/* Как было выставлено (см. ККС ships_init.c для сравнения):
-	if (sti(pchar.rank) < 4) pchar.GenQuest.Marginpassenger.ShipType = SHIP_BARQUE;
-	if (sti(pchar.rank) >= 4 && sti(pchar.rank) < 7) pchar.GenQuest.Marginpassenger.ShipType = SHIP_BARKENTINE + rand(makeint(SHIP_FLEUT - SHIP_BARKENTINE));
-	if (sti(pchar.rank) >= 7 && sti(pchar.rank) < 10) pchar.GenQuest.Marginpassenger.ShipType = SHIP_CARAVEL + rand(makeint(SHIP_CARACCA - SHIP_CARAVEL));
-	if (sti(pchar.rank) >= 10 && sti(pchar.rank) < 16) pchar.GenQuest.Marginpassenger.ShipType = SHIP_GALEON_L;
-	if (sti(pchar.rank) >= 16) pchar.GenQuest.Marginpassenger.ShipType = SHIP_NAVIO + rand(makeint(SHIP_GALEON_H - SHIP_NAVIO));
-	*/
+	if (iRank < 4) iShip = SHIP_SLOOP;
+	if (iRank >= 4 && iRank < 7) iShip = SHIP_BARKENTINE + rand(2);
+	if (iRank >= 7 && iRank < 10) iShip = SHIP_CARAVEL + rand(2);
+	if (iRank >= 10 && iRank < 16) iShip = SHIP_GALEON_L;
+	if (iRank >= 16) iShip = SHIP_PINNACE + rand(7);
+
+	pchar.GenQuest.Marginpassenger.ShipType = iShip;
 }

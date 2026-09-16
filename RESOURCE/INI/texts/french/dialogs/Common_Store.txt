@@ -1471,3 +1471,9 @@ Tu voyages beaucoup. Écoute, si jamais tu tombes sur de la poudre de momie égy
 Common_Store_433 {
 D’accord.
 }
+Common_Store_434 {
+Bonjour, señorita ! Désirez-vous acheter quelque chose ?
+}
+Common_Store_435 {
+Non, merci. Peut-être une autre fois.
+}

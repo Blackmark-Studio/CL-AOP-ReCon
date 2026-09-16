@@ -1,104 +1,104 @@
 Capitan_ransack_dialog_1 {
-@<RandSwear> 俺是你的俘虏，@<GetAddress_Form>。不过得提醒你，Brethren of the Coast从不为自己人付赎金——各人自扫门前雪。
+@<RandSwear>我是你的俘虏， @<GetAddress_Form>。 不过得提醒你， 海岸同盟从不为自己人付赎金——各人自扫门前雪。 
 }
 Capitan_ransack_dialog_2 {
-哼……从你身上赚不到钱，除非把你当罪犯送到哪个港口换赏金。
+哼…… 从你身上赚不到钱， 除非把你当罪犯送到哪个港口换赏金。 
 }
 Capitan_ransack_dialog_3 {
-听着，你身手不错，俺正好缺几个胆大的狠角色。要不要跟着俺当个军官？
+听着， 你身手不错， 我正好缺几个胆大的狠角色。 要不要跟着我当个军官？ 
 }
 Capitan_ransack_dialog_4 {
-@<RandSwear> 俺现在是你的俘虏，@<GetAddress_Form>。@<NationNameNominative>会出高价赎我。
+@<RandSwear>我现在是你的俘虏， @<GetAddress_Form>。 @<NationNameNominative>会出高价赎我。 
 }
 Capitan_ransack_dialog_5 {
-听着，你对大海可真有一套，我正缺像你这样的老水手。愿不愿意跟着我干？
+听着， 你对大海可真有一套， 我正缺像你这样的老水手。 愿不愿意跟着我干？ 
 }
 Capitan_ransack_dialog_6_m {
-咱们现在就在@<GetConvertStr>附近。我可以在这儿把你放下。
+咱们现在就在@<GetConvertStr>附近。 我可以在这儿把你放下。 
 }
 Capitan_ransack_dialog_6_f {
-咱们现在就在@<GetConvertStr>附近。我可以在这儿把你放下。
+咱们现在就在@<GetConvertStr>附近。 我可以在这儿把你放下。 
 }
 Capitan_ransack_dialog_7 {
-去找boatswain，让他在前甲板给你分个箱子。下一个海湾你就上岸。
+去找水手长， 让他在前甲板给你分个箱子。 下一个海湾你就上岸。 
 }
 Capitan_ransack_dialog_8 {
-我觉得你挺适合当奴隶的——又壮又听话。
+我觉得你挺适合当奴隶的——又壮又听话。 
 }
 Capitan_ransack_dialog_9 {
-我看你不顺眼，所以你得死。Boatswain已经接到命令了。
+我看你不顺眼， 所以你得死。 水手长已经接到命令了。 
 }
 Capitan_ransack_dialog_10 {
-你无视了让船停下的命令，还敢反抗，所以得接受处决。水手长已经接到指示了。
+你无视了让船停下的命令， 还敢反抗， 所以得接受处决。 水手长已经接到指示了。 
 }
 Capitan_ransack_dialog_11 {
-我知道。
+我知道。 
 }
 Capitan_ransack_dialog_12 {
-以后再决定怎么处置你。现在，先回船舱去。
+以后再决定怎么处置你。 现在， 先回船舱去。 
 }
 Capitan_ransack_dialog_13 {
-船长，恕我冒昧，能不能让我提个对我释放很有利的建议？
+船长， 恕我冒昧， 能不能让我提个对我释放很有利的建议？ 
 }
 Capitan_ransack_dialog_14 {
-我知道现在这情况不太适合讨价还价，不过你愿意听听我的一个生意提议吗？
+我知道现在这情况不太适合讨价还价， 不过你愿意听听我的一个生意提议吗？ 
 }
 Capitan_ransack_dialog_15 {
 @<RandPhraseSimple>
 }
 Capitan_ransack_dialog_16 {
-嗯，那你说说你的条件吧。
+嗯， 那你说说你的条件吧。 
 }
 Capitan_ransack_dialog_17 {
-船长，干嘛不放了我？我现在对你还有啥用？你要是把我卖给奴贩，顶多赚点小钱，可只会落个狠心的名声。
+船长， 干嘛不放了我？ 我现在对你还有什么用？ 你要是把我卖给奴贩， 顶多赚点小钱， 可只会落个狠心的名声。 
 }
 Capitan_ransack_dialog_18 {
-要是我放了他们，老子一分钱都赚不到……
+要是我放了他们， 我一分钱都赚不到…… 
 }
 Capitan_ransack_dialog_19 {
-你不合俺的胃口，所以要拉出去砍了。水手长已经接到命令了。
+你不合我的胃口， 所以要拉出去砍了。 水手长已经接到命令了。 
 }
 Capitan_ransack_dialog_20 {
-你无视了让船停下的命令，还敢反抗，所以你会被处决。水手长已经接到指示了。
+你无视了让船停下的命令， 还敢反抗， 所以你会被处决。 水手长已经接到指示了。 
 }
 Capitan_ransack_dialog_21 {
-你这么坚持要自由，那我就成全你。你现在自由了——下船吧。
+你这么坚持要自由， 那我就成全你。 你现在自由了——下船吧。 
 }
 Capitan_ransack_dialog_22 {
-别惹老子，能活着已经算你走运了。
+别惹我， 能活着已经算你走运了。 
 }
 Capitan_ransack_dialog_23 {
-我另有打算留给你。
+我另有打算留给你。 
 }
 Capitan_ransack_dialog_24 {
-我觉得你还能帮上我的忙。
+我觉得你还能帮上我的忙。 
 }
 Capitan_ransack_dialog_25 {
 @<LinkRandPhrase>
 }
 Capitan_ransack_dialog_26 {
-船长，最让我难受的就是这种不确定。能问问您打算怎么安排我吗？
+船长， 最让我难受的就是这种不确定。 能问问您打算怎么安排我吗？ 
 }
 Capitan_ransack_dialog_27 {
-你有什么具体建议吗？
+你有什么具体建议吗？ 
 }
 Capitan_ransack_dialog_28_m {
-我还没想好怎么处理你。
+我还没想好怎么处理你。 
 }
 Capitan_ransack_dialog_28_f {
-我还没决定怎么处理你。
+我还没决定怎么处理你。 
 }
 Capitan_ransack_dialog_29 {
-等时候到了你就知道了。
+等时候到了你就知道了。 
 }
 Capitan_ransack_dialog_30 {
 @<RandPhraseSimple>
 }
 Capitan_ransack_dialog_31 {
-那接下来咋办？给俺脖子上绑个炮弹扔下去……开个玩笑，别当真。
+那接下来咋办？ 给我脖子上绑个炮弹扔下去…… 开个玩笑， 别当真。 
 }
 Capitan_ransack_dialog_32 {
-你现在是我的俘虏，老子想怎么处置你就怎么处置，管你愿不愿意、怎么想。
+你现在是我的俘虏， 我想怎么处置你就怎么处置， 管你愿不愿意、 怎么想。 
 }
 Capitan_ransack_dialog_33 {
 @<RandPhraseSimple>
@@ -107,67 +107,67 @@ Capitan_ransack_dialog_34 {
 @<RandPhraseSimple>
 }
 Capitan_ransack_dialog_35 {
-船长，能不能就这么放俺一马？你还能从俺这儿得到啥？俺当海盗也不是因为日子好过——除了这个，啥也不会。就想着攒点钱养老，结果你看看现在成啥样了。
+船长， 能不能就这么放我一马？ 你还能从我这儿得到什么？ 我当海盗也不是因为日子好过——除了这个， 什么也不会。 就想着攒点钱养老， 结果你看看现在成什么样了。 
 }
 Capitan_ransack_dialog_36 {
-听着，你身手不错，俺正好缺几个敢拼的狠角色。要不要跟着俺当个军官？
+听着， 你身手不错， 我正好缺几个敢拼的狠角色。 要不要跟着我当个军官？ 
 }
 Capitan_ransack_dialog_37 {
-别指望俺会手下留情。这片海上像你这样的人多得是，现在少一个。
+别指望我会手下留情。 这片海上像你这样的人多得是， 现在少一个。 
 }
 Capitan_ransack_dialog_38 {
-怎么还哭上了，“海上恶魔”？乖乖待着吧，你已经落网了。
+怎么还哭上了， “海上恶魔”？ 乖乖待着吧， 你已经落网了。 
 }
 Capitan_ransack_dialog_39 {
-再怎么折腾，最后也难逃绞索。我要把你交给官府，让别人引以为戒。
+再怎么折腾， 最后也难逃绞索。 我要把你交给官府， 让别人引以为戒。 
 }
 Capitan_ransack_dialog_40 {
 @<LinkRandPhrase>
 }
 Capitan_ransack_dialog_41 {
-船长，看在老天的份上，求你放我一条生路吧。我家里还有老婆孩子，他们没了我可怎么活？说不定现在都以为我死了……
+船长， 看在老天的份上， 求你放我一条生路吧。 我家里还有老婆孩子， 他们没了我可怎么活？ 说不定现在都以为我死了…… 
 }
 Capitan_ransack_dialog_42 {
-听着，你可是真正的航海行家，我正需要有经验的水手。愿不愿意跟着我干？
+听着， 你可是真正的航海行家， 我正需要有经验的水手。 愿不愿意跟着我干？ 
 }
 Capitan_ransack_dialog_43 {
-我另有打算留给你。
+我另有打算留给你。 
 }
 Capitan_ransack_dialog_44 {
-我觉得你还能帮上我的忙。
+我觉得你还能帮上我的忙。 
 }
 Capitan_ransack_dialog_45 {
-你现在是我的俘虏，怎么处置你，全凭我说了算。
+你现在是我的俘虏， 怎么处置你， 全凭我说了算。 
 }
 Capitan_ransack_dialog_46 {
 @<LinkRandPhrase>
 }
 Capitan_ransack_dialog_47 {
-船长，我已经输了这场战斗，想请求您的宽恕。您心地仁慈，就放我一马吧。反正我投降了船也免不了受罚——军衔肯定要被撤了。至少别剥夺我的自由……
+船长， 我已经输了这场战斗， 想请求您的宽恕。 您心地仁慈， 就放我一马吧。 反正我投降了船也免不了受罚——军衔肯定要被撤了。 至少别剥夺我的自由…… 
 }
 Capitan_ransack_dialog_48 {
-船长，我请求您的宽恕！我明白要求按战俘对待已经没意义了，所以恳请您放我一马。以军官的名誉发誓，我以后绝不会再和您为敌。
+船长， 我请求您的宽恕！ 我明白要求按战俘对待已经没意义了， 所以恳请您放我一马。 以军官的名誉发誓， 我以后绝不会再和您为敌。 
 }
 Capitan_ransack_dialog_49 {
 @<RandPhraseSimple>
 }
 Capitan_ransack_dialog_50 {
-别惹我，能活着已经算你走运了。
+别惹我， 能活着已经算你走运了。 
 }
 Capitan_ransack_dialog_51 {
-我另有打算留给你。
+我另有打算留给你。 
 }
 Capitan_ransack_dialog_52 {
-我觉得你以后还能帮上忙。
+我觉得你以后还能帮上忙。 
 }
 Capitan_ransack_dialog_53 {
 @<RandPhraseSimple>
 }
 Capitan_ransack_dialog_54 {
-你现在是我的俘虏，老子想怎么处置你就怎么处置，管你愿不愿意。
+你现在是我的俘虏， 我想怎么处置你就怎么处置， 管你愿不愿意。 
 }
 Capitan_ransack_dialog_55 {
-你可是军舰的船长，这点事你早该知道。现在别装什么圣人了。
+你可是军舰的船长， 这点事你早该知道。 现在别装什么圣人了。 
 }
 Capitan_ransack_dialog_56 {
 @<RandPhraseSimple>
@@ -176,271 +176,271 @@ Capitan_ransack_dialog_57 {
 @<LinkRandPhrase>
 }
 Capitan_ransack_dialog_58 {
-听着，你身手不错，俺正好缺几个胆大的狠角色。要不要跟着俺当个军官？
+听着， 你身手不错， 我正好缺几个胆大的狠角色。 要不要跟着我当个军官？ 
 }
 Capitan_ransack_dialog_59 {
-船长，咱们谈谈条件吧。现在我手头没什么能给你的，但说不定再过几个月，我能用黄金来换自己的自由。
+船长， 咱们谈谈条件吧。 现在我手头没什么能给你的， 但说不定再过几个月， 我能用黄金来换自己的自由。 
 }
 Capitan_ransack_dialog_60 {
-小忙、消息、死心塌地的忠诚。为了让我自由，你还想要啥？
+小忙、 消息、 死心塌地的忠诚。 为了让我自由， 你还想要什么？ 
 }
 Capitan_ransack_dialog_61 {
 @<RandPhraseSimple>
 }
 Capitan_ransack_dialog_62 {
-我另有打算留给你。
+我另有打算留给你。 
 }
 Capitan_ransack_dialog_63 {
-我觉得以后还能用得上你。
+我觉得以后还能用得上你。 
 }
 Capitan_ransack_dialog_64 {
-你现在是我的俘虏，怎么处置你，老子说了算。
+你现在是我的俘虏， 怎么处置你， 我说了算。 
 }
 Capitan_ransack_dialog_65 {
 @<LinkRandPhrase>
 }
 Capitan_ransack_dialog_66_m {
-咱们现在就在@<GetConvertStr>附近。我可以在这儿把你放下。
+咱们现在就在@<GetConvertStr>附近。 我可以在这儿把你放下。 
 }
 Capitan_ransack_dialog_66_f {
-咱们现在就在@<GetConvertStr>附近。我可以在这儿让你下船。
+咱们现在就在@<GetConvertStr>附近。 我可以在这儿让你下船。 
 }
 Capitan_ransack_dialog_67 {
-去找boatswain，让他在前甲板给你安排个箱子。下一个海湾你就上岸。
+去找水手长， 让他在前甲板给你安排个箱子。 下一个海湾你就上岸。 
 }
 Capitan_ransack_dialog_68 {
-去你的！赶紧去找boatswain，他会接到指示，把你扔到最近的海湾上岸。记住——咱们下次见面，就是最后一次了。
+去你的！ 赶紧去找水手长， 他会接到指示， 把你扔到最近的海湾上岸。 记住——咱们下次见面， 就是最后一次了。 
 }
 Capitan_ransack_dialog_69 {
-我觉得你挺适合当奴隶的——又壮又听话。
+我觉得你挺适合当奴隶的——又壮又听话。 
 }
 Capitan_ransack_dialog_70 {
-我看你不顺眼，所以你得被处决。水手长已经接到命令了。
+我看你不顺眼， 所以你得被处决。 水手长已经接到命令了。 
 }
 Capitan_ransack_dialog_71 {
-你无视了让船停下的命令，还敢反抗，为此你会被处决。水手长已经接到指示了。
+你无视了让船停下的命令， 还敢反抗， 为此你会被处决。 水手长已经接到指示了。 
 }
 Capitan_ransack_dialog_72 {
-以后再说怎么处置你。现在，先回船舱去。
+以后再说怎么处置你。 现在， 先回船舱去。 
 }
 Capitan_ransack_dialog_73 {
-罪犯？你在开玩笑吧，@<GetAddress_Form>！
+罪犯？ 你在开玩笑吧， @<GetAddress_Form>！ 
 }
 Capitan_ransack_dialog_74 {
-这可不是闹着玩的，毕竟海盗就是海盗。
+这可不是闹着玩的， 毕竟海盗就是海盗。 
 }
 Capitan_ransack_dialog_75 {
-给你当手下？老子还不如去喂鲨鱼！
+给你当手下？ 我还不如去喂鲨鱼！ 
 }
 Capitan_ransack_dialog_76 {
-嘴巴放干净点，不然老子可真动手了。
+嘴巴放干净点， 不然我可真动手了。 
 }
 Capitan_ransack_dialog_77 {
-当官啊，@<GetAddress_Form>？俺可不拒绝。行当俺熟，况且谁愿意一直拖着锚，等着上绞索呢？
+当军官啊， @<GetAddress_Form>？ 我可不拒绝。 行当我熟， 况且谁愿意一直拖着锚， 等着上绞索呢？ 
 }
 Capitan_ransack_dialog_78 {
-那就这么定了！去吧，接手吧。
+那就这么定了！ 去吧， 接手吧。 
 }
 Capitan_ransack_dialog_79_m {
-别急，我改主意了。让前海盗当官，麻烦多得不值当。
+别急， 我改主意了。 让前海盗当官， 麻烦多得不值当。 
 }
 Capitan_ransack_dialog_79_f {
-别急，我改主意了。让前海盗当官，麻烦比好处多。
+别急， 我改主意了。 让前海盗当官， 麻烦比好处多。 
 }
 Capitan_ransack_dialog_80 {
-这确实是个让人心动的提议，不过俺还是得婉拒……算是出于原则吧。
+这确实是个让人心动的提议， 不过我还是得婉拒…… 算是出于原则吧。 
 }
 Capitan_ransack_dialog_81 {
-唉，你对我伙计们干的那些事，基本没可能了……
+唉， 你对我伙计们干的那些事， 基本没可能了…… 
 }
 Capitan_ransack_dialog_82 {
-不行，船长，经历了那些恐怖的事，我真的再也做不到了。我发过誓，如果圣母听见我的祈祷让我重获自由，我就再也不会踏上海上。
+不行， 船长， 经历了那些恐怖的事， 我真的再也做不到了。 我发过誓， 如果圣母听见我的祈祷让我重获自由， 我就再也不会踏上海上。 
 }
 Capitan_ransack_dialog_83 {
 @<LinkRandPhrase>
 }
 Capitan_ransack_dialog_84 {
-行吧，随你。老子可不会求你。
+行吧， 随你。 我可不会求你。 
 }
 Capitan_ransack_dialog_85 {
-那我为啥不能去当水手？当不了船长，生意也砸了，回到陆地等着我的也只有欠条和债务……那就当水手吧，老子认了。
+那我为什么不能去当水手？ 当不了船长， 生意也砸了， 回到陆地等着我的也只有欠条和债务…… 那就当水手吧， 我认了。 
 }
 Capitan_ransack_dialog_86 {
-那就这么定了！去找boatswain，他会把你登记上。之后我再给你安排职位。
+那就这么定了！ 去找水手长， 他会把你登记上。 之后我再给你安排职位。 
 }
 Capitan_ransack_dialog_87_m {
-别急，我改主意了。毕竟，这艘船可不是谁都能随便上的。
+别急， 我改主意了。 毕竟， 这艘船可不是谁都能随便上的。 
 }
 Capitan_ransack_dialog_87_f {
-别急，我改主意了。毕竟，这艘船可不是谁都能上的。
+别急， 我改主意了。 毕竟， 这艘船可不是谁都能上的。 
 }
 Capitan_ransack_dialog_88 {
-可是@<GetAddress_Form>，你不能这么做！我在战斗中已经投降，任你处置了。
+可是@<GetAddress_Form>， 你不能这么做！ 我在战斗中已经投降， 任你处置了。 
 }
 Capitan_ransack_dialog_89 {
-别废话！把他铐起来。
+别废话！ 把他铐起来。 
 }
 Capitan_ransack_dialog_90 {
-行吧，我再考虑考虑，你们先等等……
+行吧， 我再考虑考虑， 你们先等等…… 
 }
 Capitan_ransack_dialog_91 {
-可是@<GetAddress_Form>，为什么？你不能这么做！
+可是@<GetAddress_Form>， 为什么？ 你不能这么做！ 
 }
 Capitan_ransack_dialog_92_m {
-这货舱归俺管！水手长，干活去。
+这货舱归我管！ 水手长， 干活去。 
 }
 Capitan_ransack_dialog_92_f {
-这货舱归俺管！水手长！快干活。
+这货舱归我管！ 水手长！ 快干活。 
 }
 Capitan_ransack_dialog_93 {
-可是@<GetAddress_Form>，你不能这么做！我可是已经在战斗中向你投降了。
+可是@<GetAddress_Form>， 你不能这么做！ 我可是已经在战斗中向你投降了。 
 }
 Capitan_ransack_dialog_94 {
-等你轻易背叛的人都死了……水手长！动手吧。
+等你轻易背叛的人都死了…… 水手长！ 动手吧。 
 }
 Capitan_ransack_dialog_95 {
-行吧，我再考虑考虑，你们先等等……
+行吧， 我再考虑考虑， 你们先等等…… 
 }
 Capitan_ransack_dialog_96 {
-至少让我临死前忏悔一下……
+至少让我临死前忏悔一下…… 
 }
 Capitan_ransack_dialog_97 {
-至少让我在死前祈祷一下……
+至少让我在死前祈祷一下…… 
 }
 Capitan_ransack_dialog_98 {
-我允许……
+我允许…… 
 }
 Capitan_ransack_dialog_99 {
-你知道吗？别再玩这些把戏了！我们都很清楚，没人能活着离开这儿！
+你知道吗？ 别再玩这些把戏了！ 我们都很清楚， 没人能活着离开这儿！ 
 }
 Capitan_ransack_dialog_100 {
-你已经错过机会了……
+你已经错过机会了…… 
 }
 Capitan_ransack_dialog_101 {
-你知道吗？你的把戏留着自己玩吧！咱俩都清楚，我不可能活着离开这儿！
+你知道吗？ 你的把戏留着自己玩吧！ 咱俩都清楚， 我不可能活着离开这儿！ 
 }
 Capitan_ransack_dialog_102_m {
-唉，你错过机会了……
+唉， 你错过机会了…… 
 }
 Capitan_ransack_dialog_102_f {
-好吧，你错过机会了……
+好吧， 你错过机会了…… 
 }
 Capitan_ransack_dialog_103_m {
-行，老子答应你。但别指望有怜悯！老子要亲手把你那颗烂心挖出来！
+行， 我答应你。 但别指望有怜悯！ 我要亲手把你那颗烂心挖出来！ 
 }
 Capitan_ransack_dialog_103_f {
-行，老子答应你！但别指望有怜悯！老子要亲手把你那颗烂心挖出来！
+行， 我答应你！ 但别指望有怜悯！ 我要亲手把你那颗烂心挖出来！ 
 }
 Capitan_ransack_dialog_104 {
-老子可乐意狠狠教训你这张不要脸的脸。
+我可乐意狠狠教训你这张不要脸的脸。 
 }
 Capitan_ransack_dialog_105 {
 @<RandPhraseSimple>
 }
 Capitan_ransack_dialog_106 {
-那太好了，那咱们就开始吧。
+那太好了， 那咱们就开始吧。 
 }
 Capitan_ransack_dialog_107 {
-哦，@<GetAddress_Form>，你真的这么好心，肯放我走不用赎金吗？
+哦， @<GetAddress_Form>， 你真的这么好心， 肯放我走不用赎金吗？ 
 }
 Capitan_ransack_dialog_108 {
-没错，我放你走了。你自由了，@<GetFullName>
+没错， 我放你走了。 你自由了， @<GetFullName>
 }
 Capitan_ransack_dialog_109 {
-嗯……你说得对！我再想想……
+嗯…… 你说得对！ 我再想想…… 
 }
 Capitan_ransack_dialog_110 {
-谢谢你，@<GetFullName>！我会为你祈祷的。
+谢谢你， @<GetFullName>！ 我会为你祈祷的。 
 }
 Capitan_ransack_dialog_111_m {
-行了，快走吧，别让我反悔。
+行了， 快走吧， 别让我反悔。 
 }
 Capitan_ransack_dialog_111_f {
-行了，快走吧，别让我反悔。
+行了， 快走吧， 别让我反悔。 
 }
 Capitan_ransack_dialog_112 {
-从现在开始，无论何时何地，我都会记住你和你的智慧。
+从现在开始， 无论何时何地， 我都会记住你和你的智慧。 
 }
 Capitan_ransack_dialog_113 {
-不要为自己造偶像。
+不要为自己造偶像。 
 }
 Capitan_ransack_dialog_114 {
-给你，谢谢你，Captain。我这辈子都不会忘记你的好。老子不干这行了，去修驳船混口饭吃，这活儿我还真会……
+给你， 谢谢你， 船长。 我这辈子都不会忘记你的好。 我不干这行了， 去修驳船混口饭吃， 这活儿我还真会…… 
 }
 Capitan_ransack_dialog_115 {
-谢谢你，Captain。连我亲娘都没法像你这样安慰我。我发誓，以后不干这吃力不讨好的活了，去当个渔夫。
+谢谢你， 船长。 连我亲娘都没法像你这样安慰我。 我发誓， 以后不干这吃力不讨好的活了， 去当个渔夫。 
 }
 Capitan_ransack_dialog_116 {
 @<RandPhraseSimple>
 }
 Capitan_ransack_dialog_117 {
-真希望我能相信……
+真希望我能相信…… 
 }
 Capitan_ransack_dialog_118 {
-我都不知道该怎么感谢你，船长。我本来已经绝望了。你的好心肠我一定会告诉所有人。我发誓，只要让我平安到教堂，我一定会为你点上一支蜡烛！
+我都不知道该怎么感谢你， 船长。 我本来已经绝望了。 你的好心肠我一定会告诉所有人。 我发誓， 只要让我平安到教堂， 我一定会为你点上一支蜡烛！ 
 }
 Capitan_ransack_dialog_119 {
-告辞，下次可别想着反抗。你们要是敢开一枪，就是给自己和船员判了死刑。
+告辞， 下次可别想着反抗。 你们要是敢开一枪， 就是给自己和船员判了死刑。 
 }
 Capitan_ransack_dialog_120 {
-谢谢你，Captain。我会为你祈祷的。
+谢谢你， 船长。 我会为你祈祷的。 
 }
 Capitan_ransack_dialog_121_m {
-记住，下次我可不一定会这么宽容。
+记住， 下次我可不一定会这么宽容。 
 }
 Capitan_ransack_dialog_121_f {
-你以后可得记住，下次我可不会这么好说话了。
+你以后可得记住， 下次我可不会这么好说话了。 
 }
 Capitan_ransack_dialog_122 {
-我掌握了一些消息，按你的行事风格，应该会让你感兴趣。不过我得有个保证——用这些情报换取我的自由。
+我掌握了一些消息， 按你的行事风格， 应该会让你感兴趣。 不过我得有个保证——用这些情报换取我的自由。 
 }
 Capitan_ransack_dialog_123 {
-我连这事儿是什么都不知道，怎么给你保证？你那点消息八成一文不值。
+我连这事儿是什么都不知道， 怎么给你保证？ 你那点消息八成一文不值。 
 }
 Capitan_ransack_dialog_124 {
-除了我的信誉，你还想要什么保证？
+除了我的信誉， 你还想要什么保证？ 
 }
 Capitan_ransack_dialog_125 {
-他也想租我的船，不过出价太抠门，老子就拒绝了。
+他也想租我的船， 不过出价太抠门， 我就拒绝了。 
 }
 Capitan_ransack_dialog_126 {
-俺当护航队长的时候，已经护送过他好几回了。
+我当护航队长的时候， 已经护送过他好几回了。 
 }
 Capitan_ransack_dialog_127 {
-我以前也想过宰了他，可一直没机会。
+我以前也想过宰了他， 可一直没机会。 
 }
 Capitan_ransack_dialog_128 {
-行了，够了。说正事吧——在@<XI_ConvertString>有个有钱的商人，叫@<NPChar>。他靠着自己的船‘@<NPChar>’，沿着@<GetStrSmallRegister>路线，从@<XI_ConvertString>到@<XI_ConvertString>运货，赚了不少钱。货太多装不下的时候，他还会雇护卫。@<sTmp> 我敢说，这消息对你来说，比一个俘虏的自由值钱多了。
+行了， 够了。 说正事吧——在@<XI_ConvertString>有个有钱的商人， 叫@<NPChar>。 他靠着自己的船“@<NPChar>”， 沿着@<GetStrSmallRegister>路线， 从@<XI_ConvertString>到@<XI_ConvertString>运货， 赚了不少钱。 货太多装不下的时候， 他还会雇护卫。 @<sTmp>我敢说， 这消息对你来说， 比一个俘虏的自由值钱多了。 
 }
 Capitan_ransack_dialog_129 {
-我觉得他们对我没什么用处。老子可不会去追那些和平的商人。
+我觉得他们对我没什么用处。 我可不会去追那些和平的商人。 
 }
 Capitan_ransack_dialog_130 {
-我不确定你的情报对俺有没有用，但既然说好了，你们可以走了。水手长会安排你和你的船员，等到下个港口就让你们上岸。
+我不确定你的情报对我有没有用， 但既然说好了， 你们可以走了。 水手长会安排你和你的船员， 等到下个港口就让你们上岸。 
 }
 Capitan_ransack_dialog_131 {
-谢谢你，Captain！我从没怀疑过你的诚实！
+谢谢你， 船长！ 我从没怀疑过你的诚实！ 
 }
 Capitan_ransack_dialog_132 {
 要是我也能这么说你就好了
 }
 Capitan_ransack_dialog_133 {
-可惜，我不能对你说同样的话。
+可惜， 我不能对你说同样的话。 
 }
 Capitan_ransack_dialog_134 {
 @<RandPhraseSimple>
 }
 Capitan_ransack_dialog_135_m {
-你以后可得记住，下次我可不一定这么宽容了。
+你以后可得记住， 下次我可不一定这么宽容了。 
 }
 Capitan_ransack_dialog_135_f {
-记住，下次我可不会这么宽容了。
+记住， 下次我可不会这么宽容了。 
 }
 Capitan_ransack_dialog_136_m {
-走吧，别再让我抓到你。下次我可不会这么信你了。
+走吧， 别再让我抓到你。 下次我可不会这么信你了。 
 }
 Capitan_ransack_dialog_136_f {
-走吧，别再让我抓到你。下次我可不会这么信你了。
+走吧， 别再让我抓到你。 下次我可不会这么信你了。 
 }
 Capitan_ransack_dialog_137 {
 @<RandPhraseSimple>
@@ -449,113 +449,113 @@ Capitan_ransack_dialog_138 {
 @<RandPhraseSimple>
 }
 Capitan_ransack_dialog_139 {
-没错，俺确实有个提议。在@<XI_ConvertString>有个老朋友，叫@<NPChar>，咱俩一起做过生意。要是你们去了那边，记得找他。他肯定不会小气，赎金少不了。我自有办法跟他算账……再说，他还欠我点东西。
+没错， 我确实有个提议。 在@<XI_ConvertString>有个老朋友， 叫@<NPChar>， 咱俩一起做过生意。 要是你们去了那边， 记得找他。 他肯定不会小气， 赎金少不了。 我自有办法跟他算账…… 再说， 他还欠我点东西。 
 }
 Capitan_ransack_dialog_140 {
-你说是你那位同伴？那咱们就去找找他吧……
+你说是你那位同伴？ 那咱们就去找找他吧…… 
 }
 Capitan_ransack_dialog_141 {
-要是随便哪个总督都能给你赎金，俺可没兴趣去找你那朋友。
+要是随便哪个市长都能给你赎金， 我可没兴趣去找你那朋友。 
 }
 Capitan_ransack_dialog_142 {
-哎，别太自信……俺认识一个人，明明有大宝藏，却因为胆小一直不敢用。
+哎， 别太自信…… 我认识一个人， 明明有大宝藏， 却因为胆小一直不敢用。 
 }
 Capitan_ransack_dialog_143 {
-你在说啥？
+你在说什么？ 
 }
 Capitan_ransack_dialog_144 {
-别讲那些故事了，现在该想想你的良心了。
+别讲那些故事了， 现在该想想你的良心了。 
 }
 Capitan_ransack_dialog_145 {
-我可以把这段通往无尽财富的故事告诉你……只要你答应，下一个海湾就放俺走。
+我可以把这段通往无尽财富的故事告诉你…… 只要你答应， 下一个海湾就放我走。 
 }
 Capitan_ransack_dialog_146_m {
-你怎么处置，什么时候处置，老子自己说了算。你那些小把戏没用。
+你怎么处置， 什么时候处置， 我自己说了算。 你那些小把戏没用。 
 }
 Capitan_ransack_dialog_146_f {
-你怎么处置，什么时候动手，老子自己说了算。你那些小把戏，没用。
+你怎么处置， 什么时候处置， 我自己说了算。 你那些小把戏没用。 
 }
 Capitan_ransack_dialog_147 {
-说吧，把你的故事讲出来。我保证……
+说吧， 把你的故事讲出来。 我保证…… 
 }
 Capitan_ransack_dialog_148_m {
-俺信得过有骨气的人！像你这样的人，一旦承诺了，那可不是闹着玩的……就算四周全是麻烦，你也会守住自己的话！是不是啊，Captain @<GetFullName>?
+我信得过有骨气的人！ 像你这样的人， 说出口的话就算天塌下来也不会反悔…… 就算四周都是鬼怪， 你也会守住承诺， 对吧， @<GetFullName>船长?
 }
 Capitan_ransack_dialog_148_f {
-俺信得过有骨气的人！像你这样的人，说出口的话就算天塌下来也不会反悔……就算四周都是鬼怪，你也会守住承诺，对吧，Captain @<GetFullName>?
+我信得过有骨气的人！ 像你这样的人， 说出口的话就算天塌下来也不会反悔…… 就算四周都是鬼怪， 你也会守住承诺， 对吧， @<GetFullName>船长?
 }
 Capitan_ransack_dialog_149 {
-要么快点说，不然老子现在就把你扔下海。
+要么快点说， 不然我现在就把你扔下海。 
 }
 Capitan_ransack_dialog_150 {
-呵呵，挺有意思的笑话，呵呵……那我就说说这事儿吧。@<XI_ConvertString>有个叫@<NPChar>的家伙，年轻时可真是个狠角色，干过不少事儿，有些都不敢回想……有一次喝朗姆的时候，这朋友跟我说，他当年跟着@<GetName>那帮人混的时候，碰巧看到海盗埋宝藏。@<GetName>还把自己五个兄弟直接埋在那堆宝藏上面。\n后来就有传言说他被抓了，还被交给了他那独腿的丈母娘，从那以后他就金盆洗手，安稳过日子成了家。不过他把藏宝的地方记得清清楚楚，还画了张地图。他还提议让我跟他一起去找宝藏，说他自己一个人不敢去——那地方血流成河，他这人又迷信。说实话，我也没那个胆。他甚至愿意把地图卖给我，可我拿了也没用，这种事我可干不来。\n就这么回事……我觉得那张地图挺适合你这种胆大的家伙……他肯定会便宜卖给你。
+呵呵， 挺有意思的笑话， 呵呵…… 那我就说说这事儿吧。 @<XI_ConvertString>有个叫@<NPChar>的家伙， 年轻时可真是个狠角色， 干过不少事儿， 有些都不敢回想…… 有一次喝朗姆的时候， 这朋友跟我说， 他当年跟着@<GetName>那帮人混的时候， 碰巧看到海盗埋宝藏。 @<GetName>还把自己五个兄弟直接埋在那堆宝藏上面。 \n后来就有传言说他被抓了， 还被交给了他那独腿的丈母娘， 从那以后他就金盆洗手， 安稳过日子成了家。 不过他把藏宝的地方记得清清楚楚， 还画了张地图。 他还提议让我跟他一起去找宝藏， 说他自己一个人不敢去——那地方血流成河， 他这人又迷信。 说实话， 我也没那个胆。 他甚至愿意把地图卖给我， 可我拿了也没用， 这种事我可干不来。 \n就这么回事…… 我觉得那张地图挺适合你这种胆大的家伙…… 他肯定会便宜卖给你。 
 }
 Capitan_ransack_dialog_151 {
-你真觉得我会信你那套鬼话？这买卖不做了，你的说法根本站不住脚。
+你真觉得我会信你那套鬼话？ 这买卖不做了， 你的说法根本站不住脚。 
 }
 Capitan_ransack_dialog_152 {
-嗯……这故事挺有意思，就是有点难信。不过，既然我答应了——去吧，跟boatswain说，让他在forecastle给你安排个箱子。下一个港口你就上岸。
+嗯…… 这故事挺有意思， 就是有点难信。 不过， 既然我答应了——去吧， 跟水手长说， 让他在forecastle给你安排个箱子。 下一个港口你就上岸。 
 }
 Capitan_ransack_dialog_153_m {
-给您，谢了，Captain！这就是绅士的承诺！
+给您， 谢了， 船长！ 这就是绅士的承诺！ 
 }
 Capitan_ransack_dialog_153_f {
-给您，谢了，Captain！这就是女士的承诺！
+给您， 谢了， 船长！ 这就是女士的承诺！ 
 }
 Capitan_ransack_dialog_154_m {
-走吧，别再让我碰见你。下次我可不会再信你了。
+走吧， 别再让我碰见你。 下次我可不会再信你了。 
 }
 Capitan_ransack_dialog_154_f {
-走吧，别再让我逮到你。下次我可不会这么信你了。
+走吧， 别再让我逮到你。 下次我可不会这么信你了。 
 }
 Capitan_ransack_dialog_155 {
-可是，@<GetAddress_Form>，咱们现在是在大海上啊！这对我来说简直就是死路一条！
+可是， @<GetAddress_Form>， 咱们现在是在大海上啊！ 这对我来说简直就是死路一条！ 
 }
 Capitan_ransack_dialog_156 {
-这不正是你想要的吗——那就告辞了。水手长会确保我的命令被执行。
+这不正是你想要的吗——那就告辞了。 水手长会确保我的命令被执行。 
 }
 Capitan_ransack_dialog_157 {
-行吧，我再考虑考虑……
+行吧， 我再考虑考虑…… 
 }
 Capitan_ransack_dialog_158 {
-绝不可能！老子宁愿自尽，也不会当奴隶！
+绝不可能！ 我宁愿自尽， 也不会当奴隶！ 
 }
 Capitan_ransack_dialog_159 {
-等等！……这才是真正的人的做法……
+等等！ …… 这才是真正的人的做法…… 
 }
 Capitan_ransack_dialog_160 {
-啊，你这刽子手！兄弟们，生死有命，谁也逃不过那一死！
+啊， 你这刽子手！ 兄弟们， 生死有命， 谁也逃不过那一死！ 
 }
 Capitan_ransack_dialog_161 {
-你可真是自找麻烦。老子亲手镇压过叛乱，从不拖泥带水……
+你可真是自找麻烦。 我亲手镇压过叛乱， 从不拖泥带水…… 
 }
 Capitan_ransack_dialog_162_m {
-哈哈！胆小鬼，连自己都不敢保护？来，跟俺单挑一场。你我赤手空拳，谁能站到最后谁就赢！
+哈哈！ 胆小鬼， 连自己都不敢保护？ 来， 跟我单挑一场。 你我赤手空拳， 谁能站到最后谁就赢！ 
 }
 Capitan_ransack_dialog_162_f {
-哈哈！胆小鬼，连自己都不敢保护？来，跟俺单挑一场。你我赤手空拳，谁能站到最后谁就赢！
+哈哈！ 胆小鬼， 连自己都不敢保护？ 来， 跟我单挑一场。 你我赤手空拳， 谁能站到最后谁就赢！ 
 }
 Capitan_ransack_dialog_163_m {
-你为了多卖自己一命，竟然想把别人都扔出去当替死鬼？来吧，俺跟你单挑，不带武器。谁能站到最后，谁就能走！
+你为了多卖自己一命， 竟然想把别人都扔出去当替死鬼？ 来吧， 我跟你单挑， 不带武器。 谁能站到最后， 谁就能走！ 
 }
 Capitan_ransack_dialog_163_f {
-为了让自己那条不值钱的命卖个好价钱，你就想把我们都搭进去？来，跟俺单挑一场。你我都不用武器，谁能站到最后，谁就走人！
+为了让自己那条不值钱的命卖个好价钱， 你就想把我们都搭进去？ 来， 跟我单挑一场。 你我都不用武器， 谁能站到最后， 谁就走人！ 
 }
 Capitan_ransack_dialog_164 {
-不！老子宁愿战死！
+不！ 我宁愿战死！ 
 }
 Capitan_ransack_dialog_165 {
-如你所愿……
+如你所愿…… 
 }
 Capitan_ransack_dialog_166 {
-想死在战场上？有志气——俺可以成全你。就咱俩，活着走出去的只会有一个！
+想死在战场上？ 有志气——我可以成全你。 就咱俩， 活着走出去的只会有一个！ 
 }
 Capitan_ransack_dialog_167_m {
-好吧，我同意。反正我也没别的选择……
+好吧， 我同意。 反正我也没别的选择…… 
 }
 Capitan_ransack_dialog_167_f {
-好吧，我同意。反正我也没别的选择……
+好吧， 我同意。 反正我也没别的选择…… 
 }
 Capitan_ransack_dialog_168 {
-这样也好，活着当奴隶，总比死了当英雄强。
+这样也好， 活着当奴隶， 总比死了当英雄强。 
 }

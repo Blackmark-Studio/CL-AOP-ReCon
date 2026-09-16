@@ -436,3 +436,63 @@ Guarda el loro.
 MainHero_dialog_142 {
 Muestra el loro.
 }
+
+LeBasque_1
+{
+...
+}
+LeBasque_2
+{
+Más allá de las puertas no queda ni rastro de la alegre Tortuga. Ni canciones, ni blasfemias, ni carcajadas de borrachos...
+}
+LeBasque_3
+{
+...
+}
+LeBasque_4
+{
+Raul debe aparecer de un momento a otro. Lo principal es no delatarme y no perderme nada.
+}
+LeBasque_5
+{
+...
+}
+LeBasque_6
+{
+Raul vendió información al español y recibió a cambio dinero y nuevas instrucciones. Todo parece girar en torno a un tal le Basque. Ya sé bastante; es hora de volver con Marceau.
+}
+LeBasque_7
+{
+...
+}
+LeBasque_8
+{
+La reunión debe comenzar pronto... Mar a la izquierda, faro al frente, palmeras y rocas a la derecha. Difícilmente podría haber un lugar mejor para una emboscada. Tengo que encontrar un sitio con buena visibilidad.
+}
+LeBasque_9
+{
+...
+}
+LeBasque_10
+{
+Aquí no me verán, mientras que yo podré verlo todo. Solo queda esperar.
+}
+
+MainHero_dialog_143 {
+Hm... El sombrero de Jaco. No se separaría de él porque sí... Y aquí están las huellas. Tres arrastraban a uno. Van hacia la cueva. Tengo que darme prisa.
+}
+MainHero_dialog_144 {
+Ya es medianoche. Es hora de poner el cequí sobre el soporte de madera junto al libro...
+}
+MainHero_dialog_145 {
+Todo ha salido a la perfección. Solo queda dejar la carta sobre el cadáver y volver al barco.
+}
+MainHero_dialog_146 {
+Respira con normalidad; pronto recobrará el conocimiento...
+}
+MainHero_dialog_147 {
+Ha llegado la hora de morir...
+}
+MainHero_dialog_148 {
+Maldita sea... Otra vez...
+}

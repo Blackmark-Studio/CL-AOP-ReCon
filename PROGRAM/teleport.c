@@ -6,6 +6,9 @@ object objTeleport;
 
 void InitTeleport()
 {
+	DelEventHandler("TeleportChoose","DoTeleportChoose");
+	DelEventHandler("TeleportStart","DoTeleportStart");
+	return; // > legacy unused code
 	nTeleportShowData = 0;
 	CreateEntity(&objTeleport,"TMPTELEPORT");
 	LayerAddObject(EXECUTE,&objTeleport,-1);

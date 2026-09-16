@@ -1,5 +1,5 @@
 
 void ApplyMigration(ref migrationState)
 {
-    trace("Тестовая миграция применилась");
+    trace("Migration Test successfuly applied");
 }

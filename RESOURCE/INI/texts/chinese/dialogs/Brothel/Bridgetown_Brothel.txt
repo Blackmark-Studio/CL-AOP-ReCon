@@ -1,48 +1,48 @@
 Bridgetown_Brothel_1_m {
-小伙子，你有什么想问的吗？
+有什么想问的吗， 小伙子？ 
 }
 Bridgetown_Brothel_1_f {
-还有什么问题吗，小姑娘？
+还有什么问题吗， 小姑娘？ 
 }
 Bridgetown_Brothel_2_m {
-你想干嘛，帅哥？有话就问吧。
+有什么需要的， 帅哥？ 有话就问吧。 
 }
 Bridgetown_Brothel_2_f {
-你想要啥，美女？有话就问吧。
+有什么需要的， 美女？ 有话就问吧。 
 }
 Bridgetown_Brothel_3 {
 @<RandPhraseSimple>
 }
 Bridgetown_Brothel_4 {
-又有问题？
+又来问问题了？ 
 }
 Bridgetown_Brothel_5 {
-呵呵，今天都第三次了，还是那些老问题……
+呵呵， 今天已经第三次了， 还是那些老问题…… 
 }
 Bridgetown_Brothel_6_m {
-哼，怎么，不打算挑个美女自己留着？不然俺可要对你有点看法了……
+嗯…… 也许你该给自己挑个美女？ 不然的话， 我可就要对你形成某种“特别的看法”了
 }
 Bridgetown_Brothel_6_f {
-嗯，也许你会挑个漂亮姑娘吧？我们可不留男孩，呵呵……
+嗯， 也许你会挑个漂亮姑娘？ 我们这可没有男孩， 呵呵…… 
 }
 Bridgetown_Brothel_7_m {
-我改主意了……
+我改变主意了…… 
 }
 Bridgetown_Brothel_7_f {
-我改主意了……
+我改变主意了…… 
 }
 Bridgetown_Brothel_8 {
-嗯，没事……
+嗯， 没事…… 
 }
 Bridgetown_Brothel_9 {
 @<RandPhraseSimple>
 }
 Bridgetown_Brothel_10 {
-我不行……没问题……
+我不行…… 没问题…… 
 }
 Bridgetown_Brothel_11 {
-行吧，第三次总该成了……抱歉。
+好吧， 确实是第三次了…… 抱歉。 
 }
 Bridgetown_Brothel_12 {
-现在不行……下次吧……
+现在不行…… 也许下次吧…… 
 }

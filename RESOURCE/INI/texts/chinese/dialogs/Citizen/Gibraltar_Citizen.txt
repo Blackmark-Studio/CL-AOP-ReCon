@@ -1,0 +1,30 @@
+Gibraltar_Citizen_1 {
+有什么问题吗？ 
+}
+Gibraltar_Citizen_2 {
+有什么需要帮忙的吗？  
+}
+Gibraltar_Citizen_3 {
+@<RandPhraseSimple>
+}
+Gibraltar_Citizen_4_m {
+我改主意了…… 
+}
+Gibraltar_Citizen_4_f {
+我改变主意了…… 
+}
+Gibraltar_Citizen_5 {
+我现在没什么可说的。 
+}
+Gibraltar_Citizen_6 {
+@<RandPhraseSimple>
+}
+Gibraltar_Citizen_7 {
+难道我是在给@<NationNameGenitive>的秘密间谍组织卖命吗？ 
+}
+Gibraltar_Citizen_8 {
+行吧…… 回头见。 
+}
+Gibraltar_Citizen_9 {
+那我再问一个问题。 
+}

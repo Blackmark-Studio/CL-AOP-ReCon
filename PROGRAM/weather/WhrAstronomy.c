@@ -13,7 +13,6 @@ void WhrCreateAstronomyEnvironment()
 {
 	aref aCurWeather = GetCurrentWeather();
 	aref aStars;	makearef(aStars, aCurWeather.Stars);
-	aref aPlanets;	makearef(aPlanets, aCurWeather.Planets);
 
 	DeleteAttribute(&Astronomy, "");
 

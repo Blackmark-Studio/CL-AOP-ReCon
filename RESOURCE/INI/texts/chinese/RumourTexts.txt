@@ -1,48 +1,48 @@
-Start_GoldFleet_t0 {人们传言，每年为西班牙王室运送黄金和白银的船队，最近刚刚离开了波多贝罗前往哈瓦那。}
-Start_GoldFleet_t1 {就在几天前，一支载有无数印加和阿兹特克黄金白银的西班牙舰队离开了Portobelo。这支护航队正前往Havana，宝藏将从那里运往西班牙。}
-Start_GoldFleet_t2 {有传言说，一支西班牙黄金船队正从Portobelo前往Havana，运载着黄金和白银。舰队由多艘护卫舰护航，每艘都有两层炮甲板，火炮密布，还有其他战舰随行。}
-End_GoldFleet_t0 {西班牙黄金船队安然抵达古巴。现在他们收集的所有黄金和白银都将运往西班牙。}
-End_GoldFleet_t1 {西班牙黄金舰队的所有船只毫发无损地抵达了哈瓦那。来自墨西哥和秘鲁的黄金和白银很快就会运往欧洲。}
-End_GoldFleet_t2 {西班牙黄金舰队已抵达哈瓦那。所有黄金和白银都安然无恙，即将运往西班牙。}
-Defeat_GoldFleet_t0 {人们都在谈论西班牙黄金船队已经离开了Portobelo，但还没到达Havana。我说不清原因，但我觉得可能是海盗或者风暴造成的。}
-Defeat_GoldFleet_t1 {载着印第安人金银前往哈瓦那的西班牙黄金舰队神秘消失了。没人知道原因，但有人说可能是海盗干的！}
-Defeat_GoldFleet_t2 {那支运送无数宝藏的黄金舰队从波托贝洛出发，本该早已抵达哈瓦那，却至今未现踪影。谁知道呢——也许他们已经葬身风暴之中。}
-Attak_GoldFleet_t0 {人们都在传言，运送新世界货物前往哈瓦那的西班牙黄金舰队遭到了袭击！有几艘船因此丧失。}
-Attak_GoldFleet_t1 {海上已经变得极其危险！西班牙黄金舰队被海盗或者英国私掠者袭击了，我也不太确定……真是太猖狂了！真希望能亲眼看到那些家伙被绞死！}
-Attak_GoldFleet_t2 {每一天都比前一天更糟！现在连载着新世界货物的西班牙黄金舰队都遭到袭击！这个世界完了！圣母玛利亚，救救我们吧！}
-Init_GoldFleet_t0 {有传言说，西班牙黄金舰队正在Portobelo准备启航前往哈瓦那。据说他们将在#sgold_month#初出发。}
-Init_GoldFleet_t1 {有传言说，西班牙黄金舰队正在波托贝洛装载大量黄金和白银。这支船队将在#sgold_month#上半月启程前往古巴。}
-Init_GoldFleet_t2 {#sgold_month#初是西班牙黄金舰队启程前往古巴的时间。到那时，他们的所有黄金和白银也都会装船。}
-MerchantOnMapTo_t0 {听说有一艘名为“#sShipName#”的#snation#船只从#ssColony#驶来，船舱里满载着#sQuestGoodsIdx#。}
-MerchantOnMapTo_t1 {本地商人正在等待名为"#sShipName#"、悬挂#snation#旗帜、从#ssColony#来的船只运送#sQuestGoodsIdx#货物抵达。}
-MerchantOnMapTo_t2 {我听说有个商人在名为“#sShipName#”的船上，悬挂#snation#旗帜，正从#ssColony#殖民地运送#sQuestGoodsIdx#货物。}
-MerchantOnMap_t0 {有人说，一艘名为“#sShipName#”的商船正悬挂#snation#旗帜，在我们港口等着顺风，准备载着#sQuestGoodsIdx#前往#ssNextColony#。}
-MerchantOnMap_t1 {有传言说，一位来自#snation#的富商包租了一艘名为“#sShipName#”的船。不久，这艘船将载着#sQuestGoodsIdx#前往#ssNextColony#。}
-MerchantOnMap_t2 {我们的本地商人弄到了一艘船“#sShipName#”，装载着#sQuestGoodsIdx#，要运往#snation#，很快就会启程前往#ssNextColony#。}
-MerchantRumour_t0 {我听说有传言称，一艘名为“#sShipName#”的船只悬挂#snation#旗帜，从#ssColony#殖民地前往#ssNextColony#，运载着#sQuestGoodsIdx#货物，被一名身份不明的海盗击沉了！}
-MerchantRumour_t1 {据说，悬挂#snation#旗帜的“#sShipName#”号从#ssColony#出发，载着#sQuestGoodsIdx#前往#ssNextColony#，如今连船带货、船员全部失踪了！}
-MerchantRumour_t2 {最近流传着可怕的传闻：有个海盗劫持了来自#ssColony#殖民地、属于#snation#的“#sShipName#”号船。他杀死了全体船员，夺走了#sQuestGoodsIdx#的货物。那个人不会是你吧？}
-GetColonyPrices_t0 {在喝着麦芽酒时，东印度公司的军需官告诉我#sColony#城商店的价格。}
-GetColonyPrices_t1 {一位刚从#sColony#来的商船船长告诉了我他们当地商店的价格。}
-GetColonyPrices_t2 {前几天在酒馆里听到两个船长在讨论#sColony#商店的价格。}
-WaitInTavern_t0 {听说#sPsHero_Name#丢了他的船，现在正在#sTown_Name#借酒消愁。}
-WaitInTavern_t1 {听到昨天因盗窃被捕的那个醉水手在和同伴吹嘘，说#sPsHero_Name#在牌局中输掉了自己的船，现在正守在#sTown_Name#的酒馆里等着转运。}
-WaitInTavern_t2 {酒馆里的水手们都在议论#sPsHero_Name#最近运气不佳：巡逻队把他的船给击沉了，他自己也差点在#sTown_Name#被处决。}
-WorkOnMayor_t0 {今天我看到#sPsHero_Name#在和我们的总督说话。看来他又接了个“有趣”的任务。}
-WorkOnMayor_t1 {镇上的人们正在窃窃私语，说我们的总督有了新宠——#sPsHero_Name#船长经常出入官邸，跑些杂活，还照顾大人的女儿。}
-WorkOnMayor_t2 {厨娘告诉我，主人的女仆说#sPsHero_Name#和总督关系密切。今天一大早，他匆匆赶去官邸，好像有什么要紧事。}
-SailToIsland_t0 {#sPsHero_Name#说急着#sTo##sTown_Name#。大概是去买点什么。}
-SailToIsland_t1 {#sPsHero_Name#正#sTo##sTown_Name#，是去做生意的。我是在酒馆里从他船上的水手那里听说的。}
-SailToIsland_t2 {昨天#sPsHero_Name#在酒馆喝得烂醉，搂着所有姑娘，还一直大声嚷嚷自己要去#sTo##sTown_Name#办事。}
-WorkOnStore_t0 {酒馆里有个水手在说，#sPsHero_Name# 决定把一批 #sGood# 运到 #sTown_Name#。}
-WorkOnStore_t1 {我们商人的得力助手告诉我，#sPsHero_Name# 接下了把一批 #sGood# 运送到 #sTown_Name# 商店的任务。}
-WorkOnStore_t2 {我们的酒保说，#sPsHero_Name# 在这里招募了水手，准备带着本地商店的 #sGood# 货物前往 #sTown_Name#。}
-WorkWithContra_t0 {我看到#sPsHero_Name#在和一个神秘人物说话。听说那人是个走私犯。}
-WorkWithContra_t1 {有人说#sPsHero_Name#带来了一整船的走私货。也许已经卖了，也许还没有……}
-WorkWithContra_t2 {我偷听到了本地走私贩和#sPsHero_Name#的谈话，他们约好在一个叫#sContraPlace#的地方见面。}
-DuelCoward_t0 {真丢人！#sName# 没来参加决斗！现在大家都说他是个懦夫！}
-DuelCoward_t1 {哈，#sName#这次没来决斗！我想他以后在女人中可没那么受欢迎了……}
-DuelCoward_t2 {你听说了吗？#sName#没去参加决斗！有人说他昨晚喝得烂醉，连路都走不了。}
-DuelHero_t0 {你知道#sName#是个有名的决斗高手吗？他已经杀了#sKill#人了。我可不想亲自遇到他……}
-DuelHero_t1 {人们都说#sName#把灵魂卖给了恶魔，所以他才是无敌的决斗者！他杀过的人——已经有#sKill#个——他们的灵魂全都直奔地狱……还有传言说，如果他停止杀戮，恶魔就会来取走他的灵魂！}
-DuelHero_t2 {这个新晋人物#sName#运气真是好得惊人！他已经在决斗中杀了#sKill#人，身上却连一丝伤都没有！你能相信吗？}
+Start_GoldFleet_t0 {人们传言， 每年为西班牙王室运送黄金和白银的船队， 最近刚刚离开了贝洛港前往哈瓦那。 }
+Start_GoldFleet_t1 {就在几天前， 一支载有无数印加和阿兹特克黄金白银的西班牙舰队离开了贝洛港。 这支护航队正前往哈瓦那， 宝藏将从那里运往西班牙。 }
+Start_GoldFleet_t2 {有传言说， 一支西班牙黄金舰队正从贝洛港前往哈瓦那， 运载着黄金和白银。 舰队由多艘护卫舰护航， 每艘都有两层炮甲板， 火炮密布， 还有其他战舰随行。 }
+End_GoldFleet_t0 {西班牙黄金舰队安然抵达古巴。 现在他们收集的所有黄金和白银都将运往西班牙。 }
+End_GoldFleet_t1 {西班牙黄金舰队的所有船只毫发无损地抵达了哈瓦那。 来自墨西哥和秘鲁的黄金和白银很快就会运往欧洲。 }
+End_GoldFleet_t2 {西班牙黄金舰队已抵达哈瓦那。 所有黄金和白银都安然无恙， 即将运往西班牙。 }
+Defeat_GoldFleet_t0 {人们都在谈论西班牙黄金舰队已经离开了贝洛港， 但还没到达哈瓦那。 我说不清原因， 但我觉得可能是海盗或者风暴造成的。 }
+Defeat_GoldFleet_t1 {载着印第安人金银前往哈瓦那的西班牙黄金舰队神秘消失了。 没人知道原因， 但有人说可能是海盗干的！ }
+Defeat_GoldFleet_t2 {那支运送无数宝藏的黄金舰队从贝洛港出发， 本该早已抵达哈瓦那， 却至今未现踪影。 谁知道呢——也许他们已经葬身风暴之中。 }
+Attak_GoldFleet_t0 {人们都在传言， 运送新世界货物前往哈瓦那的西班牙黄金舰队遭到了袭击！ 有几艘船因此丧失。 }
+Attak_GoldFleet_t1 {海上已经变得极其危险！ 西班牙黄金舰队被海盗或者英国私掠者袭击了， 我也不太确定…… 真是太猖狂了！ 真希望能亲眼看到那些家伙被绞死！ }
+Attak_GoldFleet_t2 {每一天都比前一天更糟！ 现在连载着新世界货物的西班牙黄金舰队都遭到袭击！ 这个世界完了！ 圣母玛利亚， 救救我们吧！ }
+Init_GoldFleet_t0 {有传言说， 西班牙黄金舰队正在贝洛港准备启航前往哈瓦那。 据说他们将在#sgold_month#初出发。 }
+Init_GoldFleet_t1 {有传言说， 西班牙黄金舰队正在贝洛港装载大量黄金和白银。 这支船队将在#sgold_month#上半月启程前往古巴。 }
+Init_GoldFleet_t2 {#sgold_month#初是西班牙黄金舰队启程前往古巴的时间。 到那时， 他们的所有黄金和白银也都会装船。 }
+MerchantOnMapTo_t0 {听说有一艘名为“#sShipName#”的#snation#船只从#ssColony#驶来， 船舱里满载着#sQuestGoodsIdx#。 }
+MerchantOnMapTo_t1 {本地商人正在等待名为"#sShipName#"、 悬挂#snation#旗帜、 从#ssColony#来的船只运送#sQuestGoodsIdx#货物抵达。 }
+MerchantOnMapTo_t2 {我听说有个商人在名为“#sShipName#”的船上， 悬挂#snation#旗帜， 正从#ssColony#殖民地运送#sQuestGoodsIdx#货物。 }
+MerchantOnMap_t0 {有人说， 一艘名为“#sShipName#”的商船正悬挂#snation#旗帜， 在我们港口等着顺风， 准备载着#sQuestGoodsIdx#前往#ssNextColony#。 }
+MerchantOnMap_t1 {有传言说， 一位来自#snation#的富商包租了一艘名为“#sShipName#”的船。 不久， 这艘船将载着#sQuestGoodsIdx#前往#ssNextColony#。 }
+MerchantOnMap_t2 {我们的本地商人弄到了一艘船“#sShipName#”， 装载着#sQuestGoodsIdx#， 要运往#snation#， 很快就会启程前往#ssNextColony#。 }
+MerchantRumour_t0 {我听说有传言称， 一艘名为“#sShipName#”的船只悬挂#snation#旗帜， 从#ssColony#殖民地前往#ssNextColony#， 运载着#sQuestGoodsIdx#货物， 被一名身份不明的海盗击沉了！ }
+MerchantRumour_t1 {据说， 悬挂#snation#旗帜的“#sShipName#”从#ssColony#出发， 载着#sQuestGoodsIdx#前往#ssNextColony#， 如今连船带货、 船员全部失踪了！ }
+MerchantRumour_t2 {最近流传着可怕的传闻： 有个海盗劫持了来自#ssColony#殖民地、 属于#snation#的“#sShipName#”船。 他杀死了全体船员， 夺走了#sQuestGoodsIdx#的货物。 那个人不会是你吧？ }
+GetColonyPrices_t0 {在喝着麦芽酒时， 东印度公司的军需官告诉了我#sColony#商店的价格。 }
+GetColonyPrices_t1 {一位刚从#sColony#来的商船船长告诉了我他们当地商店的价格。 }
+GetColonyPrices_t2 {我前几天在酒馆里听到了两个船长在讨论#sColony#商店的价格。 }
+WaitInTavern_t0 {听说#sPsHero_Name#丢了他的船， 现在正在#sTown_Name#借酒消愁。 }
+WaitInTavern_t1 {听到昨天因盗窃被捕的那个醉水手在和同伴吹嘘， 说#sPsHero_Name#在牌局中输掉了自己的船， 现在正守在#sTown_Name#的酒馆里等着转运。 }
+WaitInTavern_t2 {酒馆里的水手们都在议论#sPsHero_Name#最近运气不佳： 巡逻队把他的船给击沉了， 他自己也差点在#sTown_Name#被处决。 }
+WorkOnMayor_t0 {今天我看到#sPsHero_Name#在和我们的市长说话。 看来他又接了个“有趣”的任务。 }
+WorkOnMayor_t1 {镇上的人们正在窃窃私语， 说我们的市长有了新宠——#sPsHero_Name#船长经常出入官邸， 跑些杂活， 还照顾大人的女儿。 }
+WorkOnMayor_t2 {厨娘告诉我， 主人的女仆说#sPsHero_Name#和市长关系密切。 今天一大早， 他匆匆赶去官邸， 好像有什么要紧事。 }
+SailToIsland_t0 {#sPsHero_Name#说急着#sTo##sTown_Name#。 大概是去买点什么。 }
+SailToIsland_t1 {#sPsHero_Name#正#sTo##sTown_Name#， 是去做生意的。 我是在酒馆里从他船上的水手那里听说的。 }
+SailToIsland_t2 {昨天#sPsHero_Name#在酒馆喝得烂醉， 搂着所有姑娘， 还一直大声嚷嚷自己要去#sTo##sTown_Name#办事。 }
+WorkOnStore_t0 {酒馆里有个水手在说， #sPsHero_Name# 决定把一批 #sGood# 运到 #sTown_Name#。 }
+WorkOnStore_t1 {我们商人的得力助手告诉我， #sPsHero_Name#接下了把一批 #sGood# 运送到 #sTown_Name# 商店的任务。 }
+WorkOnStore_t2 {我们的酒保说， #sPsHero_Name# 在这里招募了水手， 准备带着本地商店的#sGood#货物前往#sTown_Name#。 }
+WorkWithContra_t0 {我看到#sPsHero_Name#在和一个神秘人物说话。 听说那人是个走私犯。 }
+WorkWithContra_t1 {有人说#sPsHero_Name#带来了一整船的走私货。 也许已经卖了， 也许还没有…… }
+WorkWithContra_t2 {我偷听到了本地走私贩和#sPsHero_Name#的谈话， 他们约好在一个叫#sContraPlace#的地方见面。 }
+DuelCoward_t0 {真丢人！ #sName#没来参加决斗！ 现在大家都说他是个懦夫！ }
+DuelCoward_t1 {哈， #sName#这次没来决斗！ 我想他以后在女人中可没那么受欢迎了…… }
+DuelCoward_t2 {你听说了吗？ #sName#没去参加决斗！ 有人说他昨晚喝得烂醉， 连路都走不了。 }
+DuelHero_t0 {你知道#sName#是个有名的决斗高手吗？ 他已经杀了#sKill#人了。 我可不想亲自遇到他…… }
+DuelHero_t1 {人们都说#sName#把灵魂卖给了恶魔， 所以他才是无敌的决斗者！ 他杀过的人——已经有#sKill#个——他们的灵魂全都直奔地狱…… 还有传言说， 如果他停止杀戮， 恶魔就会来取走他的灵魂！ }
+DuelHero_t2 {这个新晋人物#sName#运气真是好得惊人！ 他已经在决斗中杀了#sKill#人， 身上却连一丝伤都没有！ 你能相信吗？ }

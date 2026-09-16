@@ -1,0 +1,15 @@
+Shipowner_dialog_1 {
+Ah, capitaine. Michel m’avait prévenu que vous passeriez. La Margarita est déjà sous bonne garde. Vous pouvez aussi laisser ici vos autres navires ; s’ils ont souffert en mer, mes hommes se chargeront des réparations.
+}
+Shipowner_dialog_2 {
+Que vous faut-il, capitaine ? Une place au mouillage ou des réparations ?
+}
+Shipowner_dialog_3 {
+Je veux m’occuper des navires que j’ai laissés au mouillage.
+}
+Shipowner_dialog_4 {
+Examine mes navires. Lesquels ont besoin de réparations ?
+}
+Shipowner_dialog_5 {
+Rien pour l’instant. Porte-toi bien, Charles.
+}

@@ -1,0 +1,27 @@
+Start_dialog_9 {
+Salut, collègue. Beau navire que tu as là, solide, avec un équipage qui a l'air de savoir ce qu'il fait. Ça se voit tout de suite.
+}
+Start_dialog_10 {
+Le temps, c'est de l'argent, l'ami. Crache le morceau, et vite.
+}
+Start_dialog_11 {
+Il n'y a pas longtemps, un sac d'écus a débarqué par ici. Il rassemble une flottille pour une grosse affaire, foutrement lucrative, à ce qu'on dit. Et il cherche des capitaines expérimentés avec de bons bâtiments. Comme le tien.
+}
+Start_dialog_12 {
+Tiens donc. Et alors ?
+}
+Start_dialog_13 {
+Dame Fortune m'a tourné le cul ! Ma goélette a pris cher dans la dernière escarmouche avec les Espagnols : la moitié des canons sont bons à jeter par-dessus bord, et de l'équipage, il ne reste guère que de quoi nourrir les corbeaux. Dès que ce bougre a vu mon navire, il a viré de bord. Monsieur veut des loups de mer, voyez-vous, pas des chiens battus.
+}
+Start_dialog_14 {
+Tu ne m'as tout de même pas arrêté pour te lamenter sur ton sort ?
+}
+Start_dialog_15 {
+C'est vrai. Ton bâtiment est en parfait état, ton équipage prêt à partir : il ne devrait pas te refuser. Si tu veux te remplir les poches, va droit à la taverne et parle au tavernier. Il sert d'intermédiaire à ce richard : c'est lui qui sélectionne les capitaines et il connaît tous les détails.
+}
+Start_dialog_16 {
+Et toi, j'imagine, tu as décidé de me donner ce tuyau par pure noblesse d'âme ?
+}
+Start_dialog_17 {
+Crois-moi ou non, je ne suis pas du genre envieux. Mais si on se recroise, tu me devras un verre.
+}

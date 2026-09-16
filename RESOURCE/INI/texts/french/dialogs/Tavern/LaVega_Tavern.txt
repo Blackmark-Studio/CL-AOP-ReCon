@@ -37,3 +37,83 @@ Oui, il l’était. Lui et son ami passaient beaucoup de temps ici. Il était l�
 LaVega_Tavern_11 {
 Merci!
 }
+LaVega_Tavern_12 {
+Je reviens au sujet de Nicolas Rimalier.
+}
+LaVega_Tavern_13 {
+Je cherche un homme nommé Nicolas Rimalier. Tu le connais ?
+}
+LaVega_Tavern_14 {
+Rimalier ? Bien sûr que je le connais. Il ne passe pas souvent, mais on le respecte ici. Pourquoi le cherchez-vous ?
+}
+LaVega_Tavern_15 {
+Un vieil ami à lui, Michel, le recherche. Dites-moi, quand Nicolas est-il venu ici pour la dernière fois ?
+}
+LaVega_Tavern_16 {
+Hier. Il a passé la nuit dans la chambre à l'étage. Il a dîné seul, puis il est parti à l'aube.
+}
+LaVega_Tavern_17 {
+Où est-il allé ?
+}
+LaVega_Tavern_18 {
+Mille pesos, capitaine, et je vous dirai tout ce que je sais.
+}
+LaVega_Tavern_19 {
+Tiens. Maintenant, parle.
+}
+LaVega_Tavern_20 {
+Je n'ai pas cette somme pour l'instant.
+}
+LaVega_Tavern_21 {
+Je me passerai de ton aide.
+}
+LaVega_Tavern_22 {
+Rimalier a pris une chambre, a dîné seul, puis est parti à l'aube.
+}
+LaVega_Tavern_23 {
+Où est-il allé ?
+}
+LaVega_Tavern_24 {
+Alors revenez quand vous les aurez. Ici, même le silence a son prix.
+}
+LaVega_Tavern_25 {
+Je repasserai.
+}
+LaVega_Tavern_26 {
+Comme vous voudrez...
+}
+LaVega_Tavern_27 {
+Les mauvaises rumeurs à votre sujet se sont calmées. Mieux encore, ces derniers temps, je n'entends dire que du bien de vous. Je crois que nous pouvons nous passer de paiement. Rimalier a pris une chambre, a dîné seul, puis est parti à l'aube.
+}
+LaVega_Tavern_28 {
+Où est-il allé ?
+}
+LaVega_Tavern_29 {
+Alors, capitaine, cette fois vous avez vos mille piastres pour moi ?
+}
+LaVega_Tavern_30 {
+Je les ai. Tiens.
+}
+LaVega_Tavern_31 {
+Pas encore.
+}
+LaVega_Tavern_32 {
+Je m'en passerai.
+}
+LaVega_Tavern_33 {
+Il a dit qu'il se rendait au vieux débarcadère, derrière la colonie. Je n'ai rien demandé de plus.
+}
+LaVega_Tavern_34 {
+Quelqu'un d'autre le cherchait ?
+}
+LaVega_Tavern_35 {
+Deux étrangers. L'un parlait avec un accent espagnol, l'autre n'a presque pas ouvert la bouche.
+}
+LaVega_Tavern_36 {
+Tu leur as dit où Rimalier était parti ?
+}
+LaVega_Tavern_37 {Moi, non. Mais ils ont trouvé quelqu'un de plus bavard et sont partis sur ses traces peu après.
+Et puis... ces derniers temps, Rimalier me prenait deux fois plus d'alcool qu'avant.}
+LaVega_Tavern_38 {
+Hum... Eh bien, merci.
+}

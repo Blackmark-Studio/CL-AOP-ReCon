@@ -1,0 +1,96 @@
+Hollis_dialog_1 {
+Capitaine @<pchar>. Mes sergents m'ont rapporté que vous demandiez une audience urgente au sujet d'une affaire d'une importance exceptionnelle pour la sécurité de Port-Royal. Je vous écoute.
+}
+Hollis_dialog_2 {
+Cela concerne les Espagnols, commandant Hollis. Regardez ces papiers. Ce sont les instructions interceptées d'un grand seigneur espagnol. Elles donnent les coordonnées exactes du camp de Sebastián Rojas. Une cinquantaine de mercenaires sont en train de se retrancher dans votre jungle en ce moment même.
+}
+Hollis_dialog_3 {
+Étonnant... À deux milles du col. Excellent travail, capitaine ! Mes éclaireurs se sont épuisés à chercher ce nid. Mais vous avez apporté ces coordonnées à moi plutôt qu'au gouverneur général. J'imagine que vous avez une proposition précise ?
+}
+Hollis_dialog_4 {
+Exactement. J'ai un compte personnel à régler avec Rojas, et je veux sa tête. Mais attaquer de front un camp retranché avec une seule compagnie d'abordage, c'est envoyer mes hommes au tombeau. J'ai besoin de l'appui de vos mousquetaires. Nous frapperons ensemble.
+}
+Hollis_dialog_5 {
+Une opération militaire conjointe. Cela me paraît... éminemment raisonnable. Mes tireurs fourniront l'appui-feu et fixeront les Espagnols, tandis que vos... hum... soldats mèneront l'assaut. Pour la Couronne, l'essentiel est désormais de débarrasser l'île de cette vermine.
+}
+Hollis_dialog_6_m {
+Heureux que nous nous comprenions. Si cela vous convient, nous partirons demain soir.
+}
+Hollis_dialog_6_f {
+Heureuse que nous nous comprenions. Si cela vous convient, nous partirons demain soir.
+}
+Hollis_dialog_7 {
+Une condition, capitaine. Toutes les munitions, la caisse et les drapeaux capturés reviennent à la garnison ; les trophées personnels seront partagés équitablement. Et j'exige de votre équipage une discipline de fer. Nous sommes une armée régulière, pas une bande de va-nu-pieds armés de ferraille.
+}
+Hollis_dialog_8 {
+Mes hommes connaissent leur métier, commandant Hollis. Aucun pillage au-delà de ce qui est convenu. Nous poursuivons le même but.
+}
+Hollis_dialog_9 {
+Alors, marché conclu. Mes hommes vous attendront aux abords des coordonnées indiquées dans les papiers. Préparez votre équipage.
+}
+Hollis_dialog_10 {
+À bientôt sur le champ de bataille.
+}
+Hollis_dialog_11_m {
+Mes sergents m'ont rapporté qu'un capitaine insistait pour me voir et promettait de me servir un camp espagnol sur un plateau. Vous avez une minute, monsieur, pour prouver que vous ne me faites pas perdre mon temps. Où sont-ils ?
+}
+Hollis_dialog_11_f {
+Mes sergents m'ont rapporté qu'un capitaine insistait pour me voir et promettait de me servir un camp espagnol sur un plateau. Vous avez une minute, madame, pour prouver que vous ne me faites pas perdre mon temps. Où sont-ils ?
+}
+Hollis_dialog_12 {
+Regardez ces papiers, commandant Hollis. Ce sont des instructions interceptées dans le coffret d'un Espagnol haut placé. Elles donnent les coordonnées exactes du camp de don Sebastián Rojas. Une cinquantaine de mercenaires sont en train de se retrancher dans votre jungle.
+}
+Hollis_dialog_13 {
+Malédiction... À deux milles du col. Comment ont-ils seulement réussi à y traîner leur matériel ?! Une cinquantaine de baïonnettes... Et vous, capitaine, je suppose que ce n'est pas par amour de la Couronne anglaise que vous venez me voir. Pourquoi avez-vous besoin de la garnison ?
+}
+Hollis_dialog_14 {
+Parce que je n'ai aucune envie de tapisser cette jungle des cadavres de mes hommes dans un assaut frontal. Vos soldats ne verront certainement pas ce camp d'un bon œil, surtout si ses hommes s'allient aux Hollandais de Fort Orange. Moi, je veux la tête de Rojas. Nous frapperons ensemble : vos fameux habits rouges apporteront la puissance de feu, mes hommes donneront l'assaut.
+}
+Hollis_dialog_15 {
+Des mercenaires espagnols. Dans ma jungle. Et vous me proposez une alliance avec un capitaine libre pour les en déloger... Vous savez quoi ? Au diable la politique. Une vermine reste une vermine. Je vous amènerai une compagnie de soldats, avec mes meilleurs pisteurs en renfort.
+}
+Hollis_dialog_16 {
+Décision sensée. Nous partirons demain soir.
+}
+Hollis_dialog_17 {
+Mais retenez ceci : toutes les munitions, la caisse et les drapeaux capturés reviennent à la garnison ; les trophées personnels seront partagés équitablement. Et si l'un de vos gaillards met la main dans la poche du roi d'Angleterre, je le pendrai moi-même au premier palmier venu, à côté des Espagnols.
+}
+Hollis_dialog_18 {
+Marché conclu, commandant Hollis. Pour l'instant, nous sommes tous deux du côté des anges. Sensation étrange, n'est-ce pas ?
+}
+Hollis_dialog_19 {
+N'y prenez pas goût, capitaine. Cela vous passera d'ici l'aube d'après-demain. Mes hommes vous attendront aux abords des coordonnées indiquées dans les papiers. Ne soyez pas en retard. Allez.
+}
+Hollis_dialog_20 {
+À bientôt sur le champ de bataille.
+}
+Hollis_dialog_21 {
+Cette maudite pluie jamaïcaine... Si elle ne cesse pas dans la demi-heure, la poudre des bassins d'amorçage sera complètement détrempée et mes soldats devront assommer les Espagnols à coups de crosse. Où est votre homme, capitaine ? Mes éclaireurs disent que tout est encore calme derrière la palissade.
+}
+Hollis_dialog_22 {
+Jaco est déjà à l'intérieur, commandant Hollis. Patience. L'argent est le point faible de tous les mercenaires. Laissez-leur le temps de comprendre que don Rojas compte les rouler.
+}
+Hollis_dialog_23 {
+J'espère que votre homme saura présenter la chose comme il faut. Le succès de l'opération repose sur lui. Mes hommes sont en position. Mieux encore, nous avons réussi à emprunter deux équipes de mortier à l'arsenal. Dès que la discorde éclatera à l'intérieur, nous les couvrirons de plomb et de feu. Mais si le plan échoue...
+}
+Hollis_dialog_24 {
+Il n'échouera pas. Gardez simplement vos mousquets au sec et attendez mon signal.
+}
+Hollis_dialog_25 {
+Vous entendez ? On dirait que ça commence !
+}
+Hollis_dialog_26 {
+Jaco a secoué la ruche ! C'est l'heure, Hollis. Que vos hommes nous couvrent de leur feu. À l'assaut !
+}
+Hollis_dialog_27 {
+Capitaine, recevez mes félicitations. L'opération a été menée avec brio. Vos hommes se sont battus comme des possédés !
+}
+Hollis_dialog_28 {
+Les vôtres n'ont rien cédé aux miens en courage ni en adresse, commandant Hollis. Que comptez-vous faire du camp ?
+}
+Hollis_dialog_29 {
+Je vais ordonner à mes hommes de livrer ce nid de vautours aux flammes. Nous le brûlerons jusqu'aux fondations, afin que personne n'ait plus jamais l'idée de s'y installer.
+}
+Hollis_dialog_30 {
+Très bien, faites donc. Quant à nous, nous devons vous quitter : d'autres affaires nous attendent. Adieu, commandant.
+}

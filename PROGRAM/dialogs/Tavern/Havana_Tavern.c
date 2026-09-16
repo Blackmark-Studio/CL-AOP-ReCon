@@ -133,6 +133,7 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 			RemoveLandQuestmark_Main(npchar, "Slavetrader");
 			AddLandQuestmark_Main(CharacterFromID("Tortuga_tavernkeeper"), "Slavetrader");
 			AddLandQuestmark_Main(CharacterFromID("Tortuga_PortMan"), "Slavetrader");
+			RemoveLandQuestmark_Main(CharacterFromID("Havana_PortMan"), "Slavetrader");
 		break;
 
 	}

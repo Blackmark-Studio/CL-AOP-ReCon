@@ -16,3 +16,16 @@ Você vai pagar?
 Officer info {Seus oficiais exigem o pagamento mensal:}
 All info {Valor líquido:}
 Insert Disk Ok {Por favor, insira o primeiro disco do jogo.}
+
+BadSaveNoVersion
+{
+Não foi possível determinar a versão do jogo do salvamento selecionado.
+}
+BadSaveVersion
+{
+Versão do jogo do salvamento selecionado
+}
+BadSaveInfo
+{
+Esta versão pode ser restaurada pela Steam.
+}

@@ -148,3 +148,16 @@ Also, Ihr Auftrag hier ist erledigt; ich will Sie nicht länger aufhalten. Bitte
 Maracaibo_Mayor_44 {
 Natürlich, Señor. Leben Sie wohl.
 }
+Maracaibo_Mayor_45 {Wie viel verlangen Sie?}
+Maracaibo_Mayor_46 {Eine Million Piaster für Maracaibo. Und noch eine Million für Gibraltar.}
+Maracaibo_Mayor_47 {Unsinn! Wir haben so viel Geld nicht! Wir hatten es nie!}
+Maracaibo_Mayor_48 {Ihre Drohungen helfen Ihnen nicht! Wir besitzen diese Summe wirklich nicht!}
+Maracaibo_Mayor_49 {Dann treiben Sie sie auf! Wegen Ihnen haben wir zu viele Männer verloren. Es wird nicht gefeilscht. Zahlen Sie nicht, brennen wir beide Städte bis auf die Grundmauern nieder. Und Sie binden wir hier an ein Pulverfass. Dann dürfen Ihre Untertanen ihren Gouverneur auf dem ganzen Platz zusammensuchen!}
+Maracaibo_Mayor_50 {Diese Geschichte kommt mir verdächtig bekannt vor...}
+Maracaibo_Mayor_51 {Ach ja. Ich habe vergessen, mich vorzustellen. Alonso de Vargas. Den Namen @<GetFullName> führte ich während meines Dienstes im Geheimdienst. Nach meinem Abschied behielt ich ihn — damals hoffte ich noch, eines Tages zurückzukehren.}
+Maracaibo_Mayor_52 {Das kann nicht sein...}
+Maracaibo_Mayor_53 {Wenn Diego das sehen könnte. Er wäre mit seiner Arbeit zufrieden.}
+Maracaibo_Mayor_54 {Aber er wird es niemals sehen...}
+Maracaibo_Mayor_55 {Nach Tortuga?..}
+Maracaibo_Mayor_56 {Genau. Sie haben mich überlistet. Nun gut, nehmen Sie Ihre Beute. Nur weht über Tortuga inzwischen höchstwahrscheinlich bereits die spanische Flagge.}
+Maracaibo_Mayor_57 {Kaum. Dein Bruder...}

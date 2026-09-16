@@ -274,6 +274,17 @@ Piratas. Estos hombres navegan bajo ninguna bandera y viven según el Código Pi
 ~
 Para cualquier patrulla naval, ver una bandera pirata en el horizonte es como lanzar tocino a un lobo hambriento. Para la gran mayoría de los piratas, solo hay dos finales: la horca o el cadalso.
 }
+Pirate_bonuses_descr
+{
+Rasgo adicional del personaje — "Agente de contrabando".
+Posibilidad de comprar contrabando incluso en las tiendas.
+~
+Habilidades iniciales adicionales: "Técnicas Básicas de Tiro" y "Autorreparación".
+~
+Al elegir la clase "Corsario", objetos adicionales: Fragmento de mapa del tesoro, 2500 piastras.
+~
+Nave inicial — "Sloop".
+}
 Hunter_hint
 {
 La actitud de una nación, sus ciudadanos y soldados hacia ti. Las buenas acciones en favor del país aumentan tu reputación; las malas pueden incluso llevar a que pongan precio a tu cabeza. Eso significa una persecución constante tanto en tierra como en el mar.

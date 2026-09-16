@@ -1,36 +1,69 @@
 Villemstad_ItemTrader_1 {
-什么问题？
+什么问题？ 
 }
 Villemstad_ItemTrader_2 {
-@<GetAddress_Form>，您找俺有啥事？
+@<GetAddress_Form>， 您找我有什么事？ 
 }
 Villemstad_ItemTrader_3 {
 @<RandPhraseSimple>
 }
 Villemstad_ItemTrader_4 {
-又有问题啊，@<GetAddress_Form>……
+又有问题啊， @<GetAddress_Form>…… 
 }
 Villemstad_ItemTrader_5 {
-问题真多啊……要不要来做点生意，@<GetAddress_Form>?
+问题真多啊…… 要不要来做点生意， @<GetAddress_Form>?
 }
 Villemstad_ItemTrader_6 {
-听着，咱们还要在这废话上浪费多久？
+听着， 咱们还要在这废话上浪费多久？ 
 }
 Villemstad_ItemTrader_7 {
-没问题……
+没问题…… 
 }
 Villemstad_ItemTrader_8 {
-我现在没什么可说的。
+我现在没什么可说的。 
 }
 Villemstad_ItemTrader_9 {
 @<RandPhraseSimple>
 }
 Villemstad_ItemTrader_10 {
-唉，又来……
+唉， 又来…… 
 }
 Villemstad_ItemTrader_11 {
-是啊，讨价还价确实更好……
+是啊， 讨价还价确实更好…… 
 }
 Villemstad_ItemTrader_12 {
-嗯，抱歉啊，商人……
+嗯， 抱歉啊， 商人…… 
+}
+Villemstad_ItemTrader_13 {
+请问，哪里能买到一件适合出席体面场合的礼服？
+}
+Villemstad_ItemTrader_14 {
+我需要一件礼服，至少不能比本地银行家夫人穿的差。
+}
+Villemstad_ItemTrader_15 {
+我该去哪里弄到一件礼服，不是普通的，而是那种穿上后即使在法国国王的宴会上也不会觉得丢脸的。
+}
+Villemstad_ItemTrader_16 {
+这种衣服在市场上恐怕买不到。您得找一位手艺高明的女裁缝。可惜，我没什么人能推荐给您……
+}
+Villemstad_ItemTrader_17 {
+可惜……
+}
+Villemstad_ItemTrader_18 {
+没有，夫人，我这里不卖那种衣服。
+}
+Villemstad_ItemTrader_19 {
+好吧……
+}
+Villemstad_ItemTrader_20 {
+当然是去找法国国王的裁缝，不然还能找谁？我们只是普通人，可不像那些常去本地妓院的有钱老爷。
+}
+Villemstad_ItemTrader_21 {
+这倒有意思。那些老爷在那里有特殊待遇吗？他们总不会是去找港口那些普通姑娘吧？
+}
+Villemstad_ItemTrader_22 {
+请原谅，我向来不爱传闲话。您自己去问问吧，也许他们也会给您安排些特别的东西。不过别把我牵扯进去，也别说是我告诉您的。那里的老板娘可是个有头有脸的女人。她一直从我表亲那里买酒——他酿的酒相当不错——我可没必要在背后说她坏话。
+}
+Villemstad_ItemTrader_23 {
+我明白了。好，我会记着的，改天也一定买些你们的酒。
 }

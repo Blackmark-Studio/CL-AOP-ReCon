@@ -148,3 +148,43 @@ A zatem wasza misja tutaj została wykonana, nie będę was dłużej zatrzymywa�
 Maracaibo_Mayor_44 {
 Oczywiście, señorze. Żegnajcie.
 }
+
+Maracaibo_Mayor_45 {
+Ile chcecie?
+}
+Maracaibo_Mayor_46 {
+Milion piastrów za Maracaibo. I kolejny milion za Gibraltar.
+}
+Maracaibo_Mayor_47 {
+Bzdura! Nie mamy takich pieniędzy! I nigdy nie mieliśmy!
+}
+Maracaibo_Mayor_48 {
+Groźby nic wam nie dadzą! Naprawdę nie mamy takiej sumy!
+}
+Maracaibo_Mayor_49 {
+To ją znajdźcie! Przez was straciliśmy zbyt wielu ludzi. Nie będzie targów. Nie zapłacicie — spalimy oba miasta do gołej ziemi. A pana przywiążemy tutaj do beczki prochu. Niech pańscy poddani zbierają potem swojego gubernatora po całym placu!
+}
+Maracaibo_Mayor_50 {
+Ta historia wydaje mi się podejrzanie znajoma...
+}
+Maracaibo_Mayor_51 {
+Ach, tak. Zapomniałem się przedstawić. Alonso de Vargas. Nazwiskiem @<GetFullName> posługiwałem się podczas służby w wywiadzie. Po odejściu zachowałem je — wtedy jeszcze miałem nadzieję wrócić.
+}
+Maracaibo_Mayor_52 {
+To niemożliwe...
+}
+Maracaibo_Mayor_53 {
+Gdyby Diego mógł to zobaczyć. Byłby zadowolony ze swojej roboty.
+}
+Maracaibo_Mayor_54 {
+Ale nigdy tego nie zobaczy...
+}
+Maracaibo_Mayor_55 {
+Na Tortugę?..
+}
+Maracaibo_Mayor_56 {
+Właśnie. Przechytrzyliście mnie. Dobrze więc, weźcie swój łup. Tyle że nad Tortugą najpewniej już powiewa hiszpańska flaga.
+}
+Maracaibo_Mayor_57 {
+Wątpię. Twój brat...
+}

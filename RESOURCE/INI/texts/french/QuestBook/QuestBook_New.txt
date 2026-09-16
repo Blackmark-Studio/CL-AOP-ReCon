@@ -18,15 +18,6 @@ PDM_Proklyataya_Jara.1 {Le garde m’a demandé de lui acheter une bouteille de 
 PDM_Proklyataya_Jara.2 {J'ai la bouteille de vin. Je dois l'apporter au garde assoiffé dès que possible.}
 PDM_Proklyataya_Jara.3 {Après avoir apporté du vin au garde, son collègue, voyant cette flagrante entorse à la discipline, au lieu de dénoncer son camarade ivre, nous demande d’acheter une bouteille de rhum...}
 PDM_Proklyataya_Jara.4 {J’ai la bouteille de rhum. Il est temps de l’apporter au deuxième garde.}
-PDM_Proklyataya_Jara.5
-{Maintenant, les gardes ivres veillent sur notre paix...
-Les pauvres gens souffraient tellement de la chaleur qu'ils ont tout lapé en une minute. Je me demande pourquoi ils demandent spécifiquement une boisson chez Jérôme et refusent l'alcool ordinaire ? Je dois passer chez le tavernier et découvrir de quoi il retourne.}
-PDM_Proklyataya_Jara.6
-{Pour ma vigilance et mon honnêteté démontrées, le commandeur de l'Ordre de Malte m'a versé une belle récompense monétaire et m'a également offert une bonne épée de chevalier maltais de son arsenal.}
-PDM_Proklyataya_Jara.7
-{Jérôme s'est avéré être un gars plutôt conciliant. Appréciant ma générosité, il m'a livré le secret de son célèbre cocktail "Sangaree". En fin de compte, tout est une question de bonne proportion de vin rouge frais et de rhum. Maintenant, cette recette est dans ma collection, et je peux préparer cette boisson rafraîchissante pour mes propres besoins.}
-PDM_Proklyataya_Jara.8
-{Le vieux renard gloussant Jérôme ne voulait pas révéler le secret de sa mixture, mais quelques mots sévères et la mention des gardes lui ont rapidement délié la langue. Il m'a donné la recette du "Sangaree" et m'a même rendu l'argent des achats précédents, juste pour que je le laisse tranquille. Eh bien, j'ai la recette, et le reste n'a pas d'importance.}
 PDM_Proklyataya_Jara.5 {À présent, des gardes ivres veillent sur notre tranquillité... Les pauvres bougres étaient si épuisés par la chaleur qu'ils ont tout sifflé en une minute. Je me demande pourquoi ils insistent pour boire le breuvage de Jérôme et refusent l'alcool ordinaire ? Je devrais passer à la taverne pour éclaircir cette affaire.}
 PDM_Proklyataya_Jara.6 {Pour ma vigilance et mon honnêteté, le Commandeur de l'Ordre de Malte m'a versé une belle récompense et m'a offert une superbe épée de chevalier maltais tirée de son propre arsenal.}
 PDM_Proklyataya_Jara.7 {Jérôme s'est avéré être un gaillard plutôt accommodant. Appréciant ma générosité, il a partagé le secret de son célèbre cocktail « Sangaree ». Apparemment, tout réside dans la juste proportion de vin rouge frais et de rhum. Maintenant que j'ai cette recette, je peux préparer cette boisson rafraîchissante pour mes propres besoins.}
@@ -192,7 +183,7 @@ Koris Gerritsz dit que Scie sert plutôt bien la Compagnie néerlandaise des Ind
 
 PDM_Lesopilka.6
 {
-J'ai parlé avec mon ami Scie. Il m'a dit quelque chose d'intéressant. Un lourd galion sous pavillon anglais est ancré au large de l'île de la Dominique. Son gréement et sa coque sont endommagés. Si personne ne me devance, je pourrai m'emparer de ses trésors !
+J'ai parlé avec mon ami Scie. Il m'a dit quelque chose d'intéressant. Un @<sShip> sous pavillon anglais est ancré au large de l'île de la Dominique. Son gréement et sa coque sont endommagés. Si personne ne me devance, je pourrai m'emparer de ses trésors !
 }
 
 PDM_Lesopilka.6.1
@@ -389,7 +380,7 @@ Andre_Abel_Quest {Escorte du fluyt "Orion"}
 Andre_Abel_Quest.1
 {
 À la taverne de Fort-de-France, j'ai rencontré un homme nommé Andre Abel. Il est le capitaine du fluyt "Orion". Andre m'a demandé d'escorter son navire jusqu'à Port-au-Prince, et j'ai accepté.
-Andre attendra au port, et pour l'instant je dois terminer mes affaires en ville.
+Andre attendra à la taverne, et pour l'instant je dois terminer mes affaires en ville.
 }
 Andre_Abel_Quest.2 {J’ai mis trop de temps à régler mes propres affaires. Andre s’est visiblement déjà trouvé une autre escorte.}
 Andre_Abel_Quest.3 {J’ai terminé mes affaires en ville et j’ai prévenu André. Nous levons l’ancre immédiatement !}
@@ -438,6 +429,7 @@ ChurchGenQuest1.7_2 {Le vieux fou @<sCapName> a fait une ardoise à la taverne e
 ChurchGenQuest1.8 {Encore une note dans le registre : la dette du vieux cachalot réglée au nom de @<sName> à la taverne, les manuscrits du Père @<sColony> rachetés auprès de l’aubergiste, et il est grand temps maintenant de remettre ces précieux manuscrits—ainsi que mon registre—au bon Père en personne !}
 ChurchGenQuest1.9 {Il existe donc des taverniers désintéressés en ce monde. Je vais me hâter vers @<sColony> pour rendre les manuscrits théologiques, et je raconterai aussi comment, pour tenir un vœu, un homme m’a offert ces livres précieux gratuitement.}
 ChurchGenQuest1.10 {Ouf... Je ne pensais pas qu’une tâche aussi simple demanderait autant de temps et d’efforts. Le seul point positif fut le capitaine @<sCapName>, pieux jusqu’au bout des ongles, qui m’a remis les précieux manuscrits sans hésiter avant de me chasser presque à coups de pied de sa coquille de noix. Il est temps de rentrer à @<sIsland>.}
+ChurchGenQuest1.11 {Trop d'eau a coulé sous les ponts. Que les manuscrits aient déjà disparu sans laisser de trace ou que le prêtre les ait abandonnés, ma mission a perdu tout son sens. Eh bien, toute bonne action n'est pas forcément menée à son terme.}
 ChurchGenQuest2 {Cambriolage d’église @<sCity>}
 ChurchGenQuest2.1 {Voler le trésor de l’église ! Où va le monde ?! Pendant que le père @<sName> lance des malédictions sur la tête des impies, je ferais mieux d’agir plus efficacement. Si ce n’est pas le Seigneur, au moins le padre saura sûrement me récompenser… Je doute qu’ils aient pu aller bien loin…}
 ChurchGenQuest2.2 {On raconte en ville que des bandits du coin se sont emparés de l’argent du Seigneur, et qu’ils ont eu la présence d’esprit de se faire discrets. Je devrais aller faire un tour sur leur territoire de chasse.}
@@ -921,4 +913,8 @@ Pour la préparer, prenez deux bouteilles de bon vin rouge et une portion de rhu
 
 Composants : Vin (2), Rhum (1).
 Outils : Mortier et pilon.
+}
+
+PDM_Neputyovy_kaznachey.8 {
+À cause du purser, Victor Bretier a subi de lourdes pertes financières, et j’ai décidé de ne pas m’impliquer dans leur conflit.
 }

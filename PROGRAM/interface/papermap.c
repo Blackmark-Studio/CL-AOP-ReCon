@@ -285,55 +285,53 @@ void SelectColony(int iColony)
 	
 	rColony = &Stores[sti(rColony.StoreNum)]; //Переключаем на магаз
 
-	iGood = rColony.Trade.Import.id1;
-	sGood = goods[iGood].name;
-	SetNewGroupPicture("IMPORT1_PICTURE", "GOODS", sGood);
+	// KZ > позиции в списке может не быть
+	string sSlot;
+	int n;
 
-	sGood = XI_ConvertString(sGood);
-	SendMessage(&GameInterface,"lsle",MSG_INTERFACE_MSG_TO_NODE,"IMPORT_INFO", 0,&sGood);
-	SendMessage(&GameInterface,"lslll",MSG_INTERFACE_MSG_TO_NODE,"IMPORT_INFO", 8,-1,iColor);
+	for (n = 1; n <= 3; n++)
+	{
+		sSlot = "id" + n;
+		iGood = -1;
+		if (CheckAttribute(rColony, "Trade.Import." + sSlot)) iGood = sti(rColony.Trade.Import.(sSlot));
 
-	iGood = rColony.Trade.Import.id2;
-	sGood = goods[iGood].name;
-	SetNewGroupPicture("IMPORT2_PICTURE", "GOODS", sGood);
+		if (iGood < 0 || iGood >= GOODS_QUANTITY)
+		{
+			SetNodeUsing("IMPORT" + n + "_PICTURE", false); // > позиции нет - прячем иконку
+			continue;
+		}
 
-	sGood = XI_ConvertString(sGood);
-	SendMessage(&GameInterface,"lsle",MSG_INTERFACE_MSG_TO_NODE,"IMPORT_INFO", 0,&sGood);
-	SendMessage(&GameInterface,"lslll",MSG_INTERFACE_MSG_TO_NODE,"IMPORT_INFO", 8,-1,iColor);
+		sGood = goods[iGood].name;
+		SetNodeUsing("IMPORT" + n + "_PICTURE", true);
+		SetNewGroupPicture("IMPORT" + n + "_PICTURE", "GOODS", sGood);
 
-	iGood = rColony.Trade.Import.id3;
-	sGood = goods[iGood].name;
-	SetNewGroupPicture("IMPORT3_PICTURE", "GOODS", sGood);
-
-	sGood = XI_ConvertString(sGood);
-	SendMessage(&GameInterface,"lsle",MSG_INTERFACE_MSG_TO_NODE,"IMPORT_INFO", 0,&sGood);
-	SendMessage(&GameInterface,"lslll",MSG_INTERFACE_MSG_TO_NODE,"IMPORT_INFO", 8,-1,iColor);
+		sGood = XI_ConvertString(sGood);
+		SendMessage(&GameInterface,"lsle",MSG_INTERFACE_MSG_TO_NODE,"IMPORT_INFO", 0,&sGood);
+		SendMessage(&GameInterface,"lslll",MSG_INTERFACE_MSG_TO_NODE,"IMPORT_INFO", 8,-1,iColor);
+	}
 
 	iColor = argb(255,196,255,196);
 
-	iGood = rColony.Trade.Export.id1;
-	sGood = goods[iGood].name;
-	SetNewGroupPicture("EXPORT1_PICTURE", "GOODS", sGood);
+	for (n = 1; n <= 3; n++)
+	{
+		sSlot = "id" + n;
+		iGood = -1;
+		if (CheckAttribute(rColony, "Trade.Export." + sSlot)) iGood = sti(rColony.Trade.Export.(sSlot));
 
-	sGood = XI_ConvertString(sGood);
-	SendMessage(&GameInterface,"lsle",MSG_INTERFACE_MSG_TO_NODE,"EXPORT_INFO", 0,&sGood);
-	SendMessage(&GameInterface,"lslll",MSG_INTERFACE_MSG_TO_NODE,"EXPORT_INFO", 8,-1,iColor);
+		if (iGood < 0 || iGood >= GOODS_QUANTITY)
+		{
+			SetNodeUsing("EXPORT" + n + "_PICTURE", false); // > позиции нет - прячем иконку
+			continue;
+		}
 
-	iGood = rColony.Trade.Export.id2;
-	sGood = goods[iGood].name;
-	SetNewGroupPicture("EXPORT2_PICTURE", "GOODS", sGood);
+		sGood = goods[iGood].name;
+		SetNodeUsing("EXPORT" + n + "_PICTURE", true);
+		SetNewGroupPicture("EXPORT" + n + "_PICTURE", "GOODS", sGood);
 
-	sGood = XI_ConvertString(sGood);
-	SendMessage(&GameInterface,"lsle",MSG_INTERFACE_MSG_TO_NODE,"EXPORT_INFO", 0,&sGood);
-	SendMessage(&GameInterface,"lslll",MSG_INTERFACE_MSG_TO_NODE,"EXPORT_INFO", 8,-1,iColor);
-
-	iGood = rColony.Trade.Export.id3;
-	sGood = goods[iGood].name;
-	SetNewGroupPicture("EXPORT3_PICTURE", "GOODS", sGood);
-
-	sGood = XI_ConvertString(sGood);
-	SendMessage(&GameInterface,"lsle",MSG_INTERFACE_MSG_TO_NODE,"EXPORT_INFO", 0,&sGood);
-	SendMessage(&GameInterface,"lslll",MSG_INTERFACE_MSG_TO_NODE,"EXPORT_INFO", 8,-1,iColor);
+		sGood = XI_ConvertString(sGood);
+		SendMessage(&GameInterface,"lsle",MSG_INTERFACE_MSG_TO_NODE,"EXPORT_INFO", 0,&sGood);
+		SendMessage(&GameInterface,"lslll",MSG_INTERFACE_MSG_TO_NODE,"EXPORT_INFO", 8,-1,iColor);
+	}
 }
 
 // TODO del -->

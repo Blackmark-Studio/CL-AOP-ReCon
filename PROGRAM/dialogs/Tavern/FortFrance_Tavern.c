@@ -2,6 +2,9 @@
 void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 {
 	ref sld;
+	bool bOk;
+	int iMoney = sti(pchar.money);
+
 	switch (Dialog.CurrentNode)
 	{
 		case "quests":
@@ -25,7 +28,7 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 				link.l1 = StringFromKey("FortFrance_Tavern_13");
 				link.l1.go = "PL_Q2_1";
 			}
-			if (CheckAttribute(pchar, "questTemp.PDM_PJ_KV"))    //Квест ***Невыносимая жара***		(Вино)
+			if (CheckAttribute(pchar, "questTemp.PDM_PJ_KV") && pchar.questTemp.PDM_PJ_KV == "KupitVino")    //Квест ***Невыносимая жара***		(Вино)
 			{
 				link.l1 = StringFromKey("FortFrance_Tavern_14", pchar);
 				link.l1.go = "PDM_PJ_1";
@@ -61,15 +64,16 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 		break;
 
 		case "PDM_PJ_2":
+			bOk = PlayerRPGCheck_SPECIAL(SPECIAL_C, 4) && iMoney >= 450;
 			dialog.text = StringFromKey("FortFrance_Tavern_25", GetAddress_Form(NPChar));
 			// 1. Вариант со скидкой (Цена 450) — показываем ПЛЮСОМ к остальным, если пройдена проверка
-			if (PlayerRPGCheck_SPECIAL(SPECIAL_C, 4) && sti(pchar.money) >= 450)
+			if (bOk)
 			{
 				link.l1 = StringFromKey("FortFrance_Tavern_43");
 				link.l1.go = "PDM_PJ_Vino_Discount";
 			}
 			// 2. Стандартные варианты (Цена 700) — показываем, если есть деньги
-			if (sti(pchar.money) >= 700)
+			if (iMoney >= 700)
 			{
 				link.l2 = StringFromKey("FortFrance_Tavern_26", npchar.name);
 				link.l2.go = "PDM_PJ_Beru_1";
@@ -77,8 +81,8 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 				link.l3 = StringFromKey("FortFrance_Tavern_27");
 				link.l3.go = "PDM_PJ_Beru_2";
 			}
-			// 3. Реплика при нехватке денег — если денег меньше 450
-			if (sti(pchar.money) < 450)
+			// 3. Реплика при нехватке денег — если денег меньше 700 и не пройдена проверка
+			if (!bOk && iMoney < 700)
 			{
 				link.l4 = StringFromKey("FortFrance_Tavern_44");
 				link.l4.go = "exit";
@@ -90,10 +94,10 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 
 		case "PDM_PJ_Vino_Discount":
 			dialog.text = StringFromKey("FortFrance_Tavern_45");
-				link.l1 = StringFromKey("FortFrance_Tavern_46");
-				link.l1.go = "PDM_PJ_Beru_3";
-				AddMoneyToCharacter(pchar, -450);
-				AddCharacterExpToSkill(pchar, "Commerce", 10);
+			link.l1 = StringFromKey("FortFrance_Tavern_46");
+			link.l1.go = "PDM_PJ_Beru_3";
+			AddMoneyToCharacter(pchar, -450);
+			AddCharacterExpToSkill(pchar, "Commerce", 10);
 		break;
 
 		case "PDM_PJ_Beru_1":
@@ -142,13 +146,13 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 		case "PDM_PJ_Rom_3":
 			dialog.text = StringFromKey("FortFrance_Tavern_37");
 			// 2. Стандартный вариант (Цена 300) — показываем, если есть деньги
-			if (sti(pchar.money) >= 300)
+			if (iMoney >= 300)
 			{
 				link.l1 = StringFromKey("FortFrance_Tavern_39");
 				link.l1.go = "PDM_PJ_Rom_4";
 			}
-			// 3. Реплика при нехватке денег — если денег меньше 450
-			if (sti(pchar.money) < 300)
+			// 3. Реплика при нехватке денег — если денег меньше 300
+			else
 			{
 				link.l2 = StringFromKey("FortFrance_Tavern_47");
 				link.l2.go = "exit";
@@ -219,7 +223,6 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 			ChangeCharacterReputation(pchar, -5);
 			AddMoneyToCharacter(pchar, 1000); // Возвращаем деньги (примерно 1000 золотых за вино и ром)
 			GiveItem2Character(pchar, "recipe_potionsangari");
-			Log_Info("");
 			Log_info(StringFromKey("InfoMessages_153"));
 		break;
 

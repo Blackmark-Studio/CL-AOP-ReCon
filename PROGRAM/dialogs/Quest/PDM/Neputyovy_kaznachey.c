@@ -13,13 +13,6 @@ void ProcessDialogEvent()
 	int Plata1 = 34000 * MOD_SKILL_ENEMY_RATE * 0.21;
 	int Plata2 = 34000 * MOD_SKILL_ENEMY_RATE * 0.31;
 
-	pchar.PDM_NK_Plata2.Money = 35000 * MOD_SKILL_ENEMY_RATE * 0.31;
-
-	int Sila = 25 + MOD_SKILL_ENEMY_RATE * 2.8;
-	int DopHP = 40 + MOD_SKILL_ENEMY_RATE * 10;
-	int Rank = sti(pchar.rank) - 5 + MOD_SKILL_ENEMY_RATE * 1.2;
-	if (Rank < 1) Rank = 1;
-
 	switch (Dialog.CurrentNode)
 	{
 		case "Exit":
@@ -166,7 +159,7 @@ void ProcessDialogEvent()
 				link.l1 = StringFromKey("Neputyovy_kaznachey_37", FindMoneyString(Plata2));
 				link.l1.go = "exit";
 			}
-			if (GetCharacterSkill(pchar, "Commerce") >= 35 || GetCharacterSPECIAL(pchar, "Charisma") >= 5 && sti(pchar.Money) >= Plata1)
+			if (and(GetCharacterSkill(pchar, "Commerce") >= 35 || GetCharacterSPECIAL(pchar, "Charisma") >= 5, sti(pchar.Money) >= Plata1))
 			{
 				link.l2 = StringFromKey("Neputyovy_kaznachey_57");
 				link.l2.go = "Zaplati_1";
@@ -175,13 +168,14 @@ void ProcessDialogEvent()
 			link.l3.go = "Viktor_Bitva";
 			NextDiag.TempNode = "Viktor_VernulsyDengi";
 			AddQuestRecord("PDM_Neputyovy_kaznachey", "2");
-			AddQuestUserData("PDM_Neputyovy_kaznachey", "sMoney", FindMoneyString(sti(pchar.PDM_NK_Plata2.Money)));
+			AddQuestUserData("PDM_Neputyovy_kaznachey", "sMoney", FindMoneyString(Plata2));
 		break;
 
 		case "Konec":
 			DialogExit();
 
 			sld = CharacterFromID("PDM_NK_Viktor");
+			RemoveLandQuestMark_Main(sld, "PDM_Neputyovy_kaznachey");
 			sld.lifeday = 0;
 			sld.dialog.filename = "Quest\PDM\Neputyovy_kaznachey.c";
 			sld.dialog.currentnode = "Viktor_Poka";
@@ -192,15 +186,6 @@ void ProcessDialogEvent()
 			AddQuestRecord("PDM_Neputyovy_kaznachey", "7");
 			AddQuestUserData("PDM_Neputyovy_kaznachey", "sSex", GetSexPhrase("", "а"));
 			CloseQuestHeader("PDM_Neputyovy_kaznachey");
-		break;
-
-		case "Zaplati_ND":
-			dialog.text = "";
-			link.l1 = StringFromKey("Neputyovy_kaznachey_38");
-			link.l1.go = "Viktor_Bitva";
-			link.l2 = StringFromKey("Neputyovy_kaznachey_39");
-			link.l2.go = "exit";
-			NextDiag.TempNode = "Zaplati_ND";
 		break;
 
 		case "Zaplati_1":

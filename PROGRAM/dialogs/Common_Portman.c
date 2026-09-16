@@ -243,7 +243,7 @@ void ProcessDialogEvent()
 			//ОЗГ
 			if (CheckAttribute(pchar, "questTemp.Headhunter"))
 			{
-				if (pchar.questTemp.Headhunter == "Houm" && npchar.nation == ENGLAND)
+				if (CheckAttrValue(pchar, "questTemp.Headhunter", "Houm") && npchar.nation == ENGLAND)
 				{
 					link.l12 = StringFromKey("Common_Portman_54");
 					link.l12.go = "Houm_portman_1";
@@ -459,14 +459,21 @@ void ProcessDialogEvent()
 			AddQuestUserData(sQuestTitle, "sColony", XI_ConvertString("Colony" + PChar.GenQuest.ChurchQuest_1.QuestTown));
 			//			PChar.GenQuest.ChurchQuest_1.NeedToDialogWithSailors = true; // Спрашиваем моряков
 			PChar.GenQuest.ChurchQuest_1.NeedToDialogWithCap = true; // Говорим с капитаном
-			//			SetFunctionLocationCondition("Church_GenQuest1_ChangeCapitanLocation", "Deck_Near_Ship", true);
 			PChar.GenQuest.ChurchQuest_1.CurPortManColony = NPChar.city;
-			Group_SetAddress("ChurchGenQuest1_CapGroup", colonies[FindColony(NPChar.City)].Island, "IslandShips1", "Ship_1"); // Ставим кэпа в порту колонии; TODO: а если локатор уже занят?
 			Characters[GetCharacterIndex("ChurchGenQuest1_Cap")].Nation = sti(NPChar.Nation); // Сменим нацию, чтоб вражды не было
 			DeleteAttribute(PChar, "GenQuest.ChurchQuest_1.AskPortMan"); // Больше не спрашиваем
-			//			if(rand(1) == 0) PChar.GenQuest.ChurchQuest_1.CapWaitOnTavern = true;
 			sld = CharacterFromID("ChurchGenQuest1_Cap");
 			sld.DeckDialogNode = "ChurchGenQuest_1_DeckDialog_1";
+			// KZ > оживлённая ветка "капитан в таверне" (~50%): пропойца заложил рукописи тавернщику
+			if (rand(1) == 0)
+			{
+				PChar.GenQuest.ChurchQuest_1.CapWaitOnTavern = true;
+				SetFunctionLocationCondition("Church_GenQuest1_ChangeCapitanLocation", NPChar.city + "_tavern", true); // > при входе в таверну сажаем капитана туда
+			}
+			else
+			{
+				Group_SetAddress("ChurchGenQuest1_CapGroup", colonies[FindColony(NPChar.City)].Island, "IslandShips1", "Ship_1"); // > корабль капитана в порту колонии
+			}
 		break;
 
 		case "ShipLetters_out1":
@@ -603,7 +610,7 @@ void ProcessDialogEvent()
 		case "EncGirl_6_2":
 			ChangeCharacterReputation(pchar, -1);
 			AddQuestRecord("JungleGirl", "19");
-			AddQuestUserData("JungleGirl", "sSex", GetSexPhrase("ел", "ла"));
+			AddQuestUserData("JungleGirl", "sSex", GetSexPhrase("ёл", "ла"));
 			AddQuestUserData("JungleGirl", "sSex1", GetSexPhrase("", "а"));
 			CloseQuestHeader("JungleGirl");
 			DeleteAttribute(pchar, "GenQuest.EncGirl");

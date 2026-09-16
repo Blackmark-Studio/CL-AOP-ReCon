@@ -25,6 +25,8 @@
 #define FRP_PORT_OFFICE		8
 #define FRT_PORT_OFFICE		0
 
+#define FRP_PORT			10
+#define FRT_PORT			0
 
 void initFastReloadTable()
 {
@@ -615,6 +617,21 @@ void initFastReloadTable()
 	curTable.l9.tex = FRT_PRISON;
 	curTable.l9.location = "Marigo_prison";
 
+	// Поселение буканьеров
+	makearef(curTable,objFastReloadTable.table.BucaneerOutpost);
+	// дом ле Баска
+	curTable.l1.pic = FRP_RESIDENCE;
+	curTable.l1.tex = FRT_RESIDENCE;
+	curTable.l1.location = "Bucaneer_outpost_townhall";
+	// улица поселения
+	curTable.l2.pic = FRP_PORT_OFFICE;
+	curTable.l2.tex = FRT_PORT_OFFICE;
+	curTable.l2.location = "Bucaneer_outpost";
+	// бухта Бычий рог
+	curTable.l3.pic = FRP_PORT;
+	curTable.l3.tex = FRT_PORT;
+	curTable.l3.location = "Shore66";
+
 	makearef(curTable,objFastReloadTable.table.Tortuga);
 	// store
 	curTable.l1.pic = FRP_STORE;
@@ -792,6 +809,40 @@ void initFastReloadTable()
 	curTable.l8.pic = FRP_PRISON;
 	curTable.l8.tex = FRT_PRISON;
 	curTable.l8.location = "Maracaibo_prison";
+
+	makearef(curTable,objFastReloadTable.table.Gibraltar);
+	// store
+	curTable.l1.pic = FRP_STORE;
+	curTable.l1.tex = FRT_STORE;
+	curTable.l1.location = "Gibraltar_store";
+	// shipyard
+	curTable.l2.pic = FRP_SHIPYARD;
+	curTable.l2.tex = FRT_SHIPYARD;
+	curTable.l2.location = "Gibraltar_shipyard";
+	// tavern
+	curTable.l3.pic = FRP_TAVERN;
+	curTable.l3.tex = FRT_TAVERN;
+	curTable.l3.location = "Gibraltar_tavern";
+	// residence
+	curTable.l4.pic = FRP_RESIDENCE;
+	curTable.l4.tex = FRT_RESIDENCE;
+	curTable.l4.location = "Gibraltar_townhall";
+	// usurer
+	curTable.l5.pic = FRP_USURER;
+	curTable.l5.tex = FRT_USURER;
+	curTable.l5.location = "Gibraltar_bank";
+	// chucrh
+	curTable.l6.pic = FRP_CHURCH;
+	curTable.l6.tex = FRT_CHURCH;
+	curTable.l6.location = "Gibraltar_church";
+	// port office
+	curTable.l7.pic = FRP_PORT_OFFICE;
+	curTable.l7.tex = FRT_PORT_OFFICE;
+	curTable.l7.location = "Gibraltar_PortOffice";
+	// prison
+	curTable.l8.pic = FRP_PRISON;
+	curTable.l8.tex = FRT_PRISON;
+	curTable.l8.location = "Gibraltar_prison";
 	
 	makearef(curTable,objFastReloadTable.table.Caracas);
 	// store
@@ -1238,4 +1289,20 @@ void InitTownTable()
 	objTownStateTable.towns.t29.crew.data.year = 1;
 	objTownStateTable.towns.t29.crew.data.month = 1;
 	objTownStateTable.towns.t29.crew.data.day = 1;
+
+	objTownStateTable.towns.t30.name = "BucaneerOutpost";
+	objTownStateTable.towns.t30.captured = false;
+	objTownStateTable.towns.t30.crew.quantity = 100 + Rand(100);
+	objTownStateTable.towns.t30.crew.morale = MORALE_NORMAL - 20 + Rand(40);
+	objTownStateTable.towns.t30.crew.data.year = 1;
+	objTownStateTable.towns.t30.crew.data.month = 1;
+	objTownStateTable.towns.t30.crew.data.day = 1;
+
+	objTownStateTable.towns.t31.name = "Gibraltar";
+	objTownStateTable.towns.t31.captured = false;
+	objTownStateTable.towns.t31.crew.quantity = 100 + Rand(50);
+	objTownStateTable.towns.t31.crew.morale = MORALE_NORMAL - 20 + Rand(40);
+	objTownStateTable.towns.t31.crew.data.year = 1;
+	objTownStateTable.towns.t31.crew.data.month = 1;
+	objTownStateTable.towns.t31.crew.data.day = 1;
 }

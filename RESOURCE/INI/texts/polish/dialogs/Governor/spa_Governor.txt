@@ -1220,7 +1220,7 @@ spa_Governor_342 {
 Dobrze, don Francisco.
 }
 spa_Governor_343 {
-Kapitanie, mówią, że udało się wam obronić Maracaibo! Bez przesady, to prawdziwy wyczyn, señorze@<GetAddress_Form>!
+Kapitanie, mówią, że udało się wam obronić Maracaibo! Bez przesady, to prawdziwy wyczyn, @<GetAddress_Form>!
 }
 spa_Governor_344 {
 Bardzo dobrze! A więc, posłuchaj zadania.\nW ramach trwającej wojny dewolucyjnej z Francją o hiszpańskie posiadłości w Holandii naszym pierwszym i najważniejszym celem jest splądrowanie Curaçao i Saint Martin. Z przechwyconej depeszy dowiedzieliśmy się, że Holendrzy przeznaczają ogromne sumy na potrzeby wojenne Francji.\nNie możemy tego udowodnić wprost, ponieważ cała korespondencja jest zaszyfrowana w szczególny sposób, a treść listu jest zupełnie inna. Niemniej jednak musimy z tym skończyć — potędze handlowej Niderlandów trzeba położyć kres!\nMusisz zdobyć szturmem i splądrować holenderskie osady Willemstad na wyspie Curaçao oraz Marigot na wyspie Saint Martin. Wszystkie łupy zdobyte podczas operacji pozostaną twoje.\nJesteś gotów podjąć się tego zadania?

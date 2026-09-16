@@ -43,21 +43,27 @@ HeroDescribe_info
     With care for you, ALexusB
 }
 
-Merchant {过去，该角色从少年时代起就开始学习贸易和基本战斗技能，他意识到保护财富与获取财富同样重要。生活变成了一场充满考验的生存之战，而他的梦想是成为贸易与剑术的大师。}
+Merchant {在过去， 该角色自幼便潜心学习经商之道与基础的战斗技巧， 因为他深知， 守护财富与赚取财富同样重要。 他的生活曾是一场充满了挑战的生存试炼， 而成为一名纵横商海且精通剑术的贸易大师， 则是他心中不灭的梦想。 }
 
-Corsair {过去，这个角色喝光所有流动的液体，击沉所有航行的船只，花光所有叮当作响的钱币，并杀死所有尖叫的生物。这些行径虽然没能让他赢得周围人的爱戴，却帮他在残酷的世界中生存了下来。驱使此人前进的动力，是不仅要成为一名海盗，还要成为一个即便在死后也会被铭记的传奇。}
+Corsair {在过去， 该角色曾是个无酒不欢、 见船便沉、 千金散尽且杀伐决断的人。 这些行径虽然未能让他赢得世人的喜爱， 却帮助他在这个残酷的世界中活了下来。 不满足于只当一个普通的海盗， 而是要成为一个即便身死也会被永远铭记的传奇——这便是驱使他前行的动力。 }
 
-Adventurer {少年时代，该角色总是热爱冒险，对金钱和刺激的渴望将他引向了危险的道路。在陷入无数次困境后，他明白唯有信赖的刀剑和手枪才是依靠。这些教训永远改变了他，使他成长为一名为了名誉和财富不惜冒一切风险的冒险家。}
+Adventurer {在过去， 该角色自年少时起便热衷于四处探险， 对财富的渴望与对未知的执着， 将他引向了充满危机的道路。 在无数次死里逃生的险境中， 他明白了一件事： 唯一值得信赖的， 只有身边的爱剑与手里的火枪。 这些历练彻底改变了他， 让他蜕变为一名为了名誉与财富甘愿赌上一切的冒险家。 }
 
-hero_qty {6}
+Inquisitor {没有什么比真正的信仰更能让人对明日充满信心，也没有什么比对天罚的畏惧更令人敬畏。其余一切，皆掌握在吾主手中。}
+
+Master {是什么能让一个从事工匠这般平和职业的人踏上战争之路？是凡事都要亲力亲为的欲望——既要创造，也要毁灭。我们既救人，也伤人！}
+
+SecretAgent {秘密特工并非一种职业，而是一种使命。为国家或私人利益效力，需要非凡的能力与技巧。特工在各项能力上既没有明显短板，也没有特别优势，成长十分均衡。}
+
+hero_qty {7}
 ps_hero_qty {29}
 
-heroName_1 {Peter}
-heroNameGen_1 {Peter}
-heroNameDat_1 {Peter}
-heroLastname_1 {Blood}
-heroLastnameGen_1 {Blood}
-heroLastNameDat_1 {Blood}
+heroName_1 {彼得}
+heroNameGen_1 {彼得}
+heroNameDat_1 {彼得}
+heroLastname_1 {布拉德}
+heroLastnameGen_1 {布拉德}
+heroLastNameDat_1 {布拉德}
 heroFace_1 {1001}
 heroModel_1 {Blad_0,Blad_1,Blad_2,Blad_3,Blad_4,Blad_5,Blad_6,Blad_7,Blad_8}
 heroType_1 {Corsair}
@@ -69,14 +75,14 @@ locatorLocation_1 {goto12}
 coordinateLocation_1 {9.14,7.83,0.15,0,22.45,5.67,-4.71}
 turnLocation_1 {4.42}
 hero_1
-{在旧世界，他曾是一位成功的医生，但命运使他沦为巴巴多斯种植园的奴隶。现在，他必须夺回自己的社会地位，并在您的帮助和萨巴蒂尼的指引下，恢复其雄心、气质和才智所应得的社会地位。\n\n剧情模式可用。}
+{在旧世界， 他曾是一位成功的医生， 但命运使他沦为巴巴多斯种植园的奴隶。 现在， 他必须夺回自己的社会地位， 并在您的帮助和萨巴蒂尼的指引下， 恢复其雄心、 气质和才智所应得的社会地位。 \n\n剧情模式可用。 }
 
-heroName_2 {Michel}
-heroNameGen_2 {Michel}
-heroNameDat_2 {Michel}
-heroLastname_2 {de Grammont}
-heroLastnameGen_2 {de Grammont}
-heroLastNameDat_2 {de Grammont}
+heroName_2 {米歇尔}
+heroNameGen_2 {米歇尔}
+heroNameDat_2 {米歇尔}
+heroLastname_2 {德 格拉蒙}
+heroLastnameGen_2 {德 格拉蒙}
+heroLastNameDat_2 {德 格拉蒙}
 heroFace_2 {1002}
 heroModel_2 {Gram_0,Gram_1,Gram_2,Gram_3,Gram_4,Gram_5,Gram_6,Gram_7,Gram_8}
 heroType_2 {Adventurer}
@@ -88,39 +94,41 @@ locatorLocation_2 {goto12}
 coordinateLocation_2 {9.14,7.83,0.15,0,22.45,5.67,-4.71}
 turnLocation_2 {4.42}
 hero_2
-{出生于巴黎一个皇家卫官家庭，正值路易十三国王统治的最后几年。他曾担任法国皇家海军军官，但对冒险的无尽渴望将他从繁荣的欧洲抛到了加勒比群岛的丛林中。他在寻找什么？}
+{出生于巴黎一个皇家卫官家庭， 正值路易十三国王统治的最后几年。 他曾担任法国皇家海军军官， 但对冒险的无尽渴望将他从繁荣的欧洲抛到了加勒比群岛的丛林中。 他在寻找什么？ }
 
-;{The young chevalier was born in Paris, in the family of an officer of the royal guard, in the last years of the reign of King Louis XIII. He served as a naval officer of the French Royal Navy, but an insatiable thirst for adventure threw him out of prosperous Europe into the jungles of the Caribbean archipelago. What is he looking for here? You will have to find the answer to this question; if not this time, then definitely in the next game...\n\nHas a questline at the start. (WIP)}
+;{The young chevalier was born in Paris, in the family of an officer of the royal guard, in the last years of the reign of King Louis XIII. He served as a naval officer of the French 皇家海军, but an insatiable thirst for adventure threw him out of prosperous Europe into the jungles of the Caribbean archipelago. What is he looking for here? You will have to find the answer to this question; if not this time, then definitely in the next game...\n\nHas a questline at the start. (WIP)}
 
-heroName_3 {William}
-heroNameGen_3 {William}
-heroNameDat_3 {William}
-heroLastname_3 {Paterson}
-heroLastnameGen_3 {Paterson}
-heroLastNameDat_3 {Paterson}
-heroFace_3 {1003}
-heroModel_3 {Pat_0,Pat_1,Pat_2,Pat_3,Pat_4,Pat_5,Pat_6,Pat_7,Pat_8}
-heroType_3 {Merchant}
-heroNation_3 {England}
-sex_3 {man}
-animation_3 {man}
+heroName_3 {艾曼纽}
+heroNameGen_3 {艾曼纽}
+heroNameDat_3 {艾曼纽}
+heroLastname_3 {帕达尔}
+heroLastnameGen_3 {帕达尔}
+heroLastNameDat_3 {帕达尔}
+heroFace_3 {1021}
+heroModel_3 {Emmanuel_0,Emmanuel_1,Emmanuel_2,Emmanuel_3,Emmanuel_4,Emmanuel_5,Emmanuel_6,Emmanuel_7,Emmanuel_8}
+heroType_3 {Corsair}
+heroNation_3 {Spain}
+sex_3 {woman}
+animation_3 {Danielle}
 idLocation_3 {Estate}
 locatorLocation_3 {goto12}
 coordinateLocation_3 {9.14,7.83,0.15,0,22.45,5.67,-4.71}
 turnLocation_3 {4.42}
 hero_3
-{这位年轻贵族关于为了国家利益和个人腰包进行诚实贸易的高尚意图，在残酷的现实面前碰得粉碎。他将不得不取得贸易许可证，并学会用大炮和刀剑开辟通往财富之路，忘掉旧世界那些傲慢的礼节……}
+{
+艾曼纽的母亲死于难产， 她的父亲是一位著名的海盗， 无法抚养这个女孩， 这就是为什么他把她送到了塞维利亚附近的一家天主教修道院。 修女们被禁止与艾曼纽谈论她的父母， 所以她被赋予了母亲的姓氏， 并被告知她的父亲是一艘小船的旅行船长。 尽管她的父亲再也没有在这些地方出现过一次， 但每个月都有钱送来作为艾曼纽的生活费， 甚至当她长大成为一个年轻美丽的女人时也是如此。 某些情况和传奇海盗的血脉迫使她否认自己成为一名修女， 而是前往加勒比地区寻找她的父亲。
+}
 
-heroName_4 {Bart}
-heroNameGen_4 {Bart}
-heroNameDat_4 {Bart}
-heroLastname_4 {Portugues}
-heroLastnameGen_4 {Portugues}
-heroLastNameDat_4 {Portugues}
-heroFace_4 {1004}
-heroModel_4 {Port_0,Port_1,Port_2,Port_3,Port_4,Port_5,Port_6,Port_7,Port_8}
-heroType_4 {Corsair}
-heroNation_4 {Pirates}
+heroName_4 {威廉}
+heroNameGen_4 {威廉}
+heroNameDat_4 {威廉}
+heroLastname_4 {帕特森}
+heroLastnameGen_4 {帕特森}
+heroLastNameDat_4 {帕特森}
+heroFace_4 {1003}
+heroModel_4 {Pat_0,Pat_1,Pat_2,Pat_3,Pat_4,Pat_5,Pat_6,Pat_7,Pat_8}
+heroType_4 {Merchant}
+heroNation_4 {England}
 sex_4 {man}
 animation_4 {man}
 idLocation_4 {Estate}
@@ -128,18 +136,18 @@ locatorLocation_4 {goto12}
 coordinateLocation_4 {9.14,7.83,0.15,0,22.45,5.67,-4.71}
 turnLocation_4 {4.42}
 hero_4
-{在这些海域闻名的葡萄牙猛将。他是最早的一套规则的制定者，这套规则在海盗中被称为“海盗法典”。虽然运气并不总是站在他这一边（战斗中留下的伤疤就是证明），但伤疤只会让真正的男人更有魅力！不是吗？}
+{这位年轻贵族关于为了国家利益和个人腰包进行诚实贸易的高尚意图， 在残酷的现实面前碰得粉碎。 他将不得不取得贸易许可证， 并学会用大炮和刀剑开辟通往财富之路， 忘掉旧世界那些傲慢的礼节…… }
 
-heroName_5 {Diego}
-heroNameGen_5 {Diego}
-heroNameDat_5 {Diego}
-heroLastname_5 {Espinoza}
-heroLastnameGen_5 {Espinoza}
-heroLastNameDat_5 {Espinoza}
-heroFace_5 {1006}
-heroModel_5 {Esp_0,Esp_1,Esp_2,Esp_3,Esp_4,Esp_5,Esp_6,Esp_7,Esp_8}
-heroType_5 {Adventurer}
-heroNation_5 {Spain}
+heroName_5 {葡萄牙人}
+heroNameGen_5 {葡萄牙人}
+heroNameDat_5 {葡萄牙人}
+heroLastname_5 {巴特}
+heroLastnameGen_5 {巴特}
+heroLastNameDat_5 {巴特}
+heroFace_5 {1004}
+heroModel_5 {Port_0,Port_1,Port_2,Port_3,Port_4,Port_5,Port_6,Port_7,Port_8}
+heroType_5 {Corsair}
+heroNation_5 {Pirates}
 sex_5 {man}
 animation_5 {man}
 idLocation_5 {Estate}
@@ -147,79 +155,75 @@ locatorLocation_5 {goto12}
 coordinateLocation_5 {9.14,7.83,0.15,0,22.45,5.67,-4.71}
 turnLocation_5 {4.42}
 hero_5
-{是什么赋予了人权力？金钱与力量。又是什​​么让人有机会拥有这一切？是他的知识和能力。或者是他人的能力。寻找正确解决方案的技巧和对财富的狂热，促使我们的英雄在加勒比海展开了一场引人入胜的冒险。}
+{在这些海域闻名的葡萄牙猛将。 他是最早的一套规则的制定者， 这套规则在海盗中被称为“海盗法典”。 虽然运气并不总是站在他这一边（战斗中留下的伤疤就是证明）， 但伤疤只会让真正的男人更有魅力！ 不是吗？ }
 
-heroName_6 {Danielle}
-heroNameGen_6 {Danielle}
-heroNameDat_6 {Danielle}
-heroLastname_6 {Greene}
-heroLastnameGen_6 {Greene}
-heroLastNameDat_6 {Greene}
-heroFace_6 {1014}
-heroModel_6 {Dan_Howk_0,Dan_Howk_1,Dan_Howk_2,Dan_Howk_3,Dan_Howk_4,Dan_Howk_5,Dan_Howk_6,Dan_Howk_7,Dan_Howk_8}
-heroType_6 {Corsair}
-heroNation_6 {Pirates}
-sex_6 {woman}
-animation_6 {Danielle}
+heroName_6 {迭戈}
+heroNameGen_6 {迭戈}
+heroNameDat_6 {迭戈}
+heroLastname_6 {埃斯皮诺萨}
+heroLastnameGen_6 {埃斯皮诺萨}
+heroLastNameDat_6 {埃斯皮诺萨}
+heroFace_6 {1006}
+heroModel_6 {Esp_0,Esp_1,Esp_2,Esp_3,Esp_4,Esp_5,Esp_6,Esp_7,Esp_8}
+heroType_6 {Adventurer}
+heroNation_6 {Spain}
+sex_6 {man}
+animation_6 {man}
 idLocation_6 {Estate}
 locatorLocation_6 {goto12}
 coordinateLocation_6 {9.14,7.83,0.15,0,22.45,5.67,-4.71}
 turnLocation_6 {4.42}
 hero_6
-{过去，她是一位性格乖戾的著名女冒险家，曾揭露英国当局的阴谋，并试图找那个阴谋家总督报仇。可惜，她失败了，被迫站在了她未来的丈夫纳撒尼尔·霍克这一边。虽然她鄙视所有男性，最初甚至与纳撒尼尔也不和，但命运对这对伴侣另有安排……不过，即便多年过去，她的性格也没有变温柔，依然喜欢多管闲事。}
+{是什么赋予了人权力？ 金钱与力量。 又是什​​么让人有机会拥有这一切？ 是他的知识和能力。 或者是他人的能力。 寻找正确解决方案的技巧和对财富的狂热， 促使我们的英雄在加勒比海展开了一场引人入胜的冒险。 }
 
-heroName_7 {Blaze}
-heroNameGen_7 {Blaze}
-heroNameDat_7 {Blaze}
-heroLastname_7 {Sharp}
-heroLastnameGen_7 {Sharp}
-heroLastNameDat_7 {Sharp}
-heroFace_7 {1007}
-heroModel_7 {Blaze_0,Blaze_1,Blaze_2,Blaze_3,Blaze_4,Blaze_5,Blaze_6,Blaze_7,Blaze_8}
-heroType_7 {Adventurer}
+heroName_7 {丹尼尔}
+heroNameGen_7 {丹尼尔}
+heroNameDat_7 {丹尼尔}
+heroLastname_7 {格林}
+heroLastnameGen_7 {格林}
+heroLastNameDat_7 {格林}
+heroFace_7 {1014}
+heroModel_7 {Dan_Howk_0,Dan_Howk_1,Dan_Howk_2,Dan_Howk_3,Dan_Howk_4,Dan_Howk_5,Dan_Howk_6,Dan_Howk_7,Dan_Howk_8}
+heroType_7 {Corsair}
 heroNation_7 {Pirates}
-sex_7 {man}
-animation_7 {man}
+sex_7 {woman}
+animation_7 {Danielle}
 idLocation_7 {Estate}
 locatorLocation_7 {goto12}
 coordinateLocation_7 {9.14,7.83,0.15,0,22.45,5.67,-4.71}
 turnLocation_7 {4.42}
 hero_7
-{
-Cutter Blaze - is the adopted son of legendary Nicholas Sharp. Blaze isn't really considering himself doing any great deeds like his father - he's content with the fun of piracy and adventure. Obviously great fame awaits him, as well as immense wealth and a high post. At least, he thinks so...
-~
-As for now Blaze is a regular of port taverns, lover of risks and drunk brawls. Women adore such a daredevil, but none managed to grab his attention for long. The seas, plunder and drinks - these things make Blaze's heart skip a beat!
-}
+{过去， 她是一位性格乖戾的著名女冒险家， 曾揭露英国当局的阴谋， 并试图找那个阴谋家总督报仇。 可惜， 她失败了， 被迫站在了她未来的丈夫纳撒尼尔.霍克这一边。 虽然她鄙视所有男性， 最初甚至与纳撒尼尔也不和， 但命运对这对伴侣另有安排…… 不过， 即便多年过去， 她的性格也没有变得那么好相处， 依然喜欢多管闲事。 }
 
-heroName_8 {Beatrice}
-heroNameGen_8 {Beatrice}
-heroNameDat_8 {Beatrice}
-heroLastname_8 {Sharp}
-heroLastnameGen_8 {Sharp}
-heroLastNameDat_8 {Sharp}
-heroFace_8 {1008}
-heroModel_8 {Beatric_0,Beatric_1,Beatric_2,Beatric_3,Beatric_4,Beatric_5,Beatric_6,Beatric_7,Beatric_8}
-heroType_8 {Corsair}
+heroName_8 {布雷兹}
+heroNameGen_8 {布雷兹}
+heroNameDat_8 {布雷兹}
+heroLastname_8 {夏普}
+heroLastnameGen_8 {夏普}
+heroLastNameDat_8 {夏普}
+heroFace_8 {1007}
+heroModel_8 {Blaze_0,Blaze_1,Blaze_2,Blaze_3,Blaze_4,Blaze_5,Blaze_6,Blaze_7,Blaze_8}
+heroType_8 {Adventurer}
 heroNation_8 {Pirates}
-sex_8 {woman}
-animation_8 {Beatrice}
+sex_8 {man}
+animation_8 {man}
 idLocation_8 {Estate}
 locatorLocation_8 {goto12}
 coordinateLocation_8 {9.14,7.83,0.15,0,22.45,5.67,-4.71}
 turnLocation_8 {4.42}
 hero_8
 {
-Flesh of the flesh of the great Nicholas Sharp. Insane and playful Beatrice breaks all the laws of the Coastal Brotherhood simply by existing. But there isn't even a single person who can say that to her - Beatrice dances with the blade as if she was born with it. Walking side-by-side with her friend Luck with a shining white smile.
+布雷兹.夏普——传奇人物尼古拉斯.夏普的养子。 布雷兹并没有真正考虑像他父亲那样做出任何伟大的功绩， 他满足于私掠和冒险的乐趣。 显然， 巨大的名声等待着他， 还有巨大的财富和高官厚禄。 至少， 他是这么想的……
 ~
-In the taverns one of many stories about the "Red Devil" can be heard - the name the sailors gave to Beatrice. Stories about how he never returns to port without plunder, how she cannot be caught, and so on and so forth.
+目前， 布雷兹是港口酒馆的常客， 热衷于冒险和醉酒斗殴。 女人崇拜这样的亡命之徒， 但没有人能长久地吸引他的注意。 海洋、 掠夺和美酒——这些东西让布雷兹的心跳加速！
 }
 
-heroName_9 {Charles}
-heroNameGen_9 {Charles}
-heroNameDat_9 {Charles}
-heroLastname_9 {de Maure}
-heroLastnameGen_9 {de Maure}
-heroLastNameDat_9 {de Maure}
+heroName_9 {夏尔}
+heroNameGen_9 {夏尔}
+heroNameDat_9 {夏尔}
+heroLastname_9 {德 莫尔}
+heroLastnameGen_9 {德 莫尔}
+heroLastNameDat_9 {德 莫尔}
 heroFace_9 {1009}
 heroModel_9 {Sharle,Sharle_1,Sharle_2,Sharle_3,Sharle_4,Sharle_5,Sharle_6,Sharle_7,Sharle_8}
 heroType_9 {Adventurer}
@@ -232,15 +236,15 @@ coordinateLocation_9 {9.14,7.83,0.15,0,22.45,5.67,-4.71}
 turnLocation_9 {4.42}
 hero_9
 {
-Son of a French noble. Here, on the Caribbeans, he will have to find himself and parts of his personality he never knew he had, come face-to-face with lies and trickery, find love, and fight to the death to make his dreams come true...
+一个法国贵族的儿子。 在这里， 在加勒比地区， 他将不得不找到自己以及他从未体验过的个性部分， 面对面地遭遇谎言和诡计， 找到爱情， 并战斗到死以使他的梦想成真…… 
 }
 
-heroName_10 {Diego}
-heroNameGen_10 {Diego}
-heroNameDat_10 {Diego}
-heroLastname_10 {de Montoya}
-heroLastnameGen_10 {de Montoya}
-heroLastNameDat_10 {de Montoya}
+heroName_10 {迭戈}
+heroNameGen_10 {迭戈}
+heroNameDat_10 {迭戈}
+heroLastname_10 {德 蒙托亚}
+heroLastnameGen_10 {德 蒙托亚}
+heroLastNameDat_10 {德 蒙托亚}
 heroFace_10 {1010}
 heroModel_10 {Montoia_0,Montoia_1,Montoia_2,Montoia_3,Montoia_4,Montoia_5,Montoia_6,Montoia_7,Montoia_8}
 heroType_10 {Corsair}
@@ -253,15 +257,15 @@ coordinateLocation_10 {9.14,7.83,0.15,0,22.45,5.67,-4.71}
 turnLocation_10 {4.42}
 hero_10
 {
-An honourable nobleman, a trusted man and an agent of the Spanish crown on exceptionally important missions. Despite his secular past, he quickly adapted to the cruel and trick-less laws of the sea. Strong in will and spirit, not afraid of difficulties and danger. His commanding voice makes the crew shiver.
+一个光荣的贵族， 西班牙王室在异常重要任务上的信任之人和代理人。 尽管他有着世俗的过去， 但他很快适应了残酷且没有诡计的海洋法律。 意志和精神坚强， 不怕困难和危险。 他的命令之声让船员们发抖。 
 }
 
-heroName_11 {Lawrence}
-heroNameGen_11 {Lawrence}
-heroNameDat_11 {Lawrence}
-heroLastname_11 {Beltrop}
-heroLastnameGen_11 {Beltrop}
-heroLastNameDat_11 {Beltrop}
+heroName_11 {劳伦斯}
+heroNameGen_11 {劳伦斯}
+heroNameDat_11 {劳伦斯}
+heroLastname_11 {贝尔特罗普}
+heroLastnameGen_11 {贝尔特罗普}
+heroLastNameDat_11 {贝尔特罗普}
 heroFace_11 {1011}
 heroModel_11 {Bel_0,Bel_1,Bel_2,Bel_3,Bel_4,Bel_5,Bel_6,Bel_7,Bel_8}
 heroType_11 {Corsair}
@@ -274,15 +278,15 @@ coordinateLocation_11 {9.14,7.83,0.15,0,22.45,5.67,-4.71}
 turnLocation_11 {4.42}
 hero_11
 {
-Captain Butcher - some considered him a spawn of the Devil, while others were in awe at his bravery and luck, helping him evade any and all chases on his frigate "Neptune". That was a long time ago, but this sea wolf hasn't lost his grip, even if he thinks differently about many things these days.
+屠夫船长——有些人认为他是恶魔的产物， 而另一些人则对他的勇敢和运气感到敬畏， 这帮助他驾驶着他的巡防舰“海王星号”逃脱了所有的追捕。 那是很久以前的事了， 但这位海狼并没有失去他的掌控力， 即使他现在对很多事情的想法有所不同。 
 }
 
-heroName_12 {Jacob}
-heroNameGen_12 {Jacob}
-heroNameDat_12 {Jacob}
-heroLastname_12 {van Bergh}
-heroLastnameGen_12 {van Bergh}
-heroLastNameDat_12 {van Bergh}
+heroName_12 {雅各布}
+heroNameGen_12 {雅各布}
+heroNameDat_12 {雅各布}
+heroLastname_12 {范伯格}
+heroLastnameGen_12 {范伯格}
+heroLastNameDat_12 {范伯格}
 heroFace_12 {1012}
 heroModel_12 {VanBerg_0,VanBerg_1,VanBerg_2,VanBerg_3,VanBerg_4,VanBerg_5,VanBerg_6,VanBerg_7,VanBerg_8}
 heroType_12 {Corsair}
@@ -295,15 +299,15 @@ coordinateLocation_12 {9.14,7.83,0.15,0,22.45,5.67,-4.71}
 turnLocation_12 {4.42}
 hero_12
 {
-Jacob Janssen van den Bergh, also known by his nickname 'Japon' was a Dutch buccaneer who originally was part of the Dutch West Indies Company (WIC) until he was found to be smuggling slaves where the WIC had the sole right to do so. Perhaps he will be able to rehabilitate himself and WIC will take the talented privateer back to serve their interests.
+雅各布.范伯格， 也被称为他的绰号“哈蓬”， 是一名荷兰海盗。 他最初是荷兰西印度公司（WIC）的一员， 直到他被发现走私奴隶， 而WIC拥有这样做的唯一权利。 也许他将能够重新证明自己， WIC将带回这位天才的私掠者来为他们的利益服务。 
 }
 
-heroName_13 {Nathaniel}
-heroNameGen_13 {Nathaniel}
-heroNameDat_13 {Nathaniel}
-heroLastname_13 {Hawk}
-heroLastnameGen_13 {Hawk}
-heroLastNameDat_13 {Hawk}
+heroName_13 {纳撒尼尔}
+heroNameGen_13 {纳撒尼尔}
+heroNameDat_13 {纳撒尼尔}
+heroLastname_13 {霍克}
+heroLastnameGen_13 {霍克}
+heroLastNameDat_13 {霍克}
 heroFace_13 {1013}
 heroModel_13 {Hawk_0,Hawk_1,Hawk_2,Hawk_3,Hawk_4,Hawk_5,Hawk_6,Hawk_7,Hawk_8}
 heroType_13 {Adventurer}
@@ -316,15 +320,15 @@ coordinateLocation_13 {9.14,7.83,0.15,0,22.45,5.67,-4.71}
 turnLocation_13 {4.42}
 hero_13
 {
-Nathaniel has lived through many adventures with plenty of dangers and roadblocks in them placed by nature, yet, despite the hardships, nothing broke this sea wolf. His name is known by practically everyone in the Caribbeans, even further from it. Some associate his name with bravery, nobility and selflessness, while others, upon hearing it, imagine a bloodthirsty corsair, one that knows not what kindness and mercy is. Despite all of this, Nathaniel is one of the more prominent captains of Brethren of the Coast. The crew respects their captain and will follow him without hesitation, whether to Heaven or Hell.
+纳撒尼尔经历过许多冒险， 其中有大自然设置的许多危险和路障， 然而， 尽管困难重重， 没有什么能击碎这位海狼。 他的名字几乎在加勒比海的每个人都知道， 甚至更远。 有些人将他的名字与勇敢、 高尚和无私联系在一起， 而另一些人听到这个名字， 就会想到一个残暴的私掠海盗， 一个不知道什么是善良和仁慈的人。 尽管如此， 纳撒尼尔仍是海岸同盟最杰出的船长之一。 船员们尊敬他们的船长， 并将毫不犹豫地跟随他， 无论是去天堂还是下地狱。 
 }
 
-heroName_14 {Jessica}
-heroNameGen_14 {Jessica}
-heroNameDat_14 {Jessica}
-heroLastname_14 {Bradford}
-heroLastnameGen_14 {Bradford}
-heroLastNameDat_14 {Bradford}
+heroName_14 {杰西卡}
+heroNameGen_14 {杰西卡}
+heroNameDat_14 {杰西卡}
+heroLastname_14 {布拉德福德}
+heroLastnameGen_14 {布拉德福德}
+heroLastNameDat_14 {布拉德福德}
 heroFace_14 {1005}
 heroModel_14 {jess0,jess1,jess2,jess3,jess4,jess5,jess6,jess7,jess8}
 heroType_14 {Corsair}
@@ -337,15 +341,15 @@ coordinateLocation_14 {9.14,7.83,0.15,0,22.45,5.67,-4.71}
 turnLocation_14 {4.42}
 hero_14
 {
-After Beltrope's betrayal she swore she would never again be seen as lesser, compared to men, and become a successful captain of a corsair squadron. One has to admit: she's following her dreams, and many have already placed a price on this beautiful lady.
+在贝尔特罗普背叛后， 她发誓绝不再被看作比男人低一等， 并要成为一名成功的私掠舰队船长。 必须承认： 她正在追随自己的梦想， 而且许多人已经为这位美丽的女士开出了悬赏价格。 
 }
 
-heroName_15 {John}
-heroNameGen_15 {John}
-heroNameDat_15 {John}
-heroLastname_15 {Easterling}
-heroLastnameGen_15 {Easterling}
-heroLastNameDat_15 {Easterling}
+heroName_15 {约翰}
+heroNameGen_15 {约翰}
+heroNameDat_15 {约翰}
+heroLastname_15 {沃特林}
+heroLastnameGen_15 {沃特林}
+heroLastNameDat_15 {沃特林}
 heroFace_15 {1015}
 heroModel_15 {Isterling_0,Isterling_1,Isterling_2,Isterling_3,Isterling_4,Isterling_5,Isterling_6,Isterling_7,Isterling_8}
 heroType_15 {Adventurer}
@@ -358,15 +362,15 @@ coordinateLocation_15 {9.14,7.83,0.15,0,22.45,5.67,-4.71}
 turnLocation_15 {4.42}
 hero_15
 {
-The most notorious scoundrel to ever sail the Caribbean, he is a cruel and ambitious man who seeks power and profit. With his rough face and distinctive scar, Easterling personifies the dangers of the pirate life. He wants not only material wealth, but also recognition, striving to become the most famous and ruthless pirate. However, his incompetence and cruelty may become an obstacle to achieving these goals.
+他是航行在加勒比海上有史以来最臭名昭著的流氓， 是一个追求权力和利益的残酷且有野心的人。 凭借粗糙的面孔和独特的疤痕， 沃特林格化了海盗生活的危险。 他不仅想要物质财富， 还想要认可 ，努力成为最著名和最无情的海盗。 然而， 他的无能和残忍可能会成为实现这些目标的障碍。 
 }
 
-heroName_16 {Michael}
-heroNameGen_16 {Michael}
-heroNameDat_16 {Michael}
-heroLastname_16 {Chard}
-heroLastnameGen_16 {Chard}
-heroLastNameDat_16 {Chard}
+heroName_16 {迈克尔}
+heroNameGen_16 {迈克尔}
+heroNameDat_16 {迈克尔}
+heroLastname_16 {查德}
+heroLastnameGen_16 {查德}
+heroLastNameDat_16 {查德}
 heroFace_16 {1016}
 heroModel_16 {Chard_0,Chard_1,Chard_2,Chard_3,Chard_4,Chard_5,Chard_6,Chard_7,Chard_8}
 heroType_16 {Adventurer}
@@ -379,15 +383,15 @@ coordinateLocation_16 {9.14,7.83,0.15,0,22.45,5.67,-4.71}
 turnLocation_16 {4.42}
 hero_16
 {
-A brave man, quick and decisive. Plan a job, organise it and do the deed - three impossibly important parts of any operation. Was the right hand of captain John Easterling, yet understood that he needs his own ship and crew as the time went on.
+一个勇敢的人， 迅速而果断。 计划一项工作、 组织它并付诸行动——这是任何行动中极其重要的三个部分。 他曾是约翰.伊斯特林船长的右手， 但随着时间的推移， 他明白自己需要属于自己的船只和船员。 
 }
 
-heroName_17 {Ignacio}
-heroNameGen_17 {Ignacio}
-heroNameDat_17 {Ignacio}
-heroLastname_17 {Marco}
-heroLastnameGen_17 {Marco}
-heroLastNameDat_17 {Marco}
+heroName_17 {伊格纳西奥}
+heroNameGen_17 {伊格纳西奥}
+heroNameDat_17 {伊格纳西奥}
+heroLastname_17 {马可}
+heroLastnameGen_17 {马可}
+heroLastNameDat_17 {马可}
 heroFace_17 {1017}
 heroModel_17 {Ignasio_0,Ignasio_1,Ignasio_2,Ignasio_3,Ignasio_4,Ignasio_5,Ignasio_6,Ignasio_7,Ignasio_8}
 heroType_17 {Adventurer}
@@ -400,15 +404,15 @@ coordinateLocation_17 {9.14,7.83,0.15,0,22.45,5.67,-4.71}
 turnLocation_17 {4.42}
 hero_17
 {
-Dangers do not phase him, but he's always a little too impatient. Otherwise knows great techniques in fighting the Spanish, who he knows very well, as he was living alongside them in his childhood.
+危机与险阻从未能让他动摇半分， 但他那骨子里的急性子， 有时也确实让人头疼。 不过瑕不掩瑜， 他对如何对付西班牙人有着一套堪称绝活的战斗技巧——毕竟他自幼便与他们生活在一起， 没有人比他更了解这群家伙的软肋与底细。
 }
 
-heroName_18 {Johan}
-heroNameGen_18 {Johan}
-heroNameDat_18 {Johan}
-heroLastname_18 {Daring}
-heroLastnameGen_18 {Daring}
-heroLastNameDat_18 {Daring}
+heroName_18 {约翰}
+heroNameGen_18 {约翰}
+heroNameDat_18 {约翰}
+heroLastname_18 {达林}
+heroLastnameGen_18 {达林}
+heroLastNameDat_18 {达林}
 heroFace_18 {1018}
 heroModel_18 {Yohang_0,Yohang_1,Yohang_2,Yohang_3,Yohang_4,Yohang_5,Yohang_6,Yohang_7,Yohang_8}
 heroType_18 {Adventurer}
@@ -421,15 +425,15 @@ coordinateLocation_18 {9.14,7.83,0.15,0,22.45,5.67,-4.71}
 turnLocation_18 {4.42}
 hero_18
 {
-A born tactician: has great intuition and logic, as well as knows when to reatreat and when to lie.
+天生的战术家： 拥有极佳的直觉和逻辑思维， 也知道何时该撤退， 何时该撒谎。 
 }
 
-heroName_19 {Jan}
-heroNameGen_19 {Jan}
-heroNameDat_19 {Jan}
-heroLastname_19 {Struys}
-heroLastnameGen_19 {Struys}
-heroLastNameDat_19 {Struys}
+heroName_19 {扬}
+heroNameGen_19 {扬}
+heroNameDat_19 {扬}
+heroLastname_19 {斯特鲁伊斯}
+heroLastnameGen_19 {斯特鲁伊斯}
+heroLastNameDat_19 {斯特鲁伊斯}
 heroFace_19 {1019}
 heroModel_19 {Stace_0,Stace_1,Stace_2,Stace_3,Stace_4,Stace_5,Stace_6,Stace_7,Stace_8}
 heroType_19 {Merchant}
@@ -442,15 +446,15 @@ coordinateLocation_19 {9.14,7.83,0.15,0,22.45,5.67,-4.71}
 turnLocation_19 {4.42}
 hero_19
 {
-Arrived on the Caribbean with an idea to make a quick buck through trade after working as a mercenary in Europe for some time. Sometimes he does find a way to get his hands on the money he so adores with deception...
+他曾在欧洲当过一段时间的雇佣兵， 之后来到加勒比海， 想通过贸易快速赚钱。 有时， 他也会用欺骗的手段弄到他梦寐以求的金钱…… 
 }
 
-heroName_20 {Jose}
-heroNameGen_20 {Jose}
-heroNameDat_20 {Jose}
-heroLastname_20 {Dasko}
-heroLastnameGen_20 {Dasko}
-heroLastNameDat_20 {Dasko}
+heroName_20 {何塞}
+heroNameGen_20 {何塞}
+heroNameDat_20 {何塞}
+heroLastname_20 {达斯科}
+heroLastnameGen_20 {达斯科}
+heroLastNameDat_20 {达斯科}
 heroFace_20 {1020}
 heroModel_20 {Dasko}
 heroType_20 {Adventurer}
@@ -463,17 +467,17 @@ coordinateLocation_20 {9.14,7.83,0.15,0,22.45,5.67,-4.71}
 turnLocation_20 {4.42}
 hero_20
 {
-Despite his secular past, he adapted to the cruel seas fairly quickly.
+尽管他过去是世俗人士， 但他很快就适应了残酷的大海。 
 }
 
-heroName_21 {Emmanuelle}
-heroNameGen_21 {Emmanuelle}
-heroNameDat_21 {Emmanuelle}
-heroLastname_21 {Esteban}
-heroLastnameGen_21 {Esteban}
-heroLastNameDat_21 {Esteban}
-heroFace_21 {1021}
-heroModel_21 {Angelica_0,Angelica_1,Angelica_2,Angelica_3,Angelica_4,Angelica_5,Angelica_6,Angelica_7,Angelica_8}
+heroName_21 {碧翠丝}
+heroNameGen_21 {碧翠丝}
+heroNameDat_21 {碧翠丝}
+heroLastname_21 {夏普}
+heroLastnameGen_21 {夏普}
+heroLastNameDat_21 {夏普}
+heroFace_21 {1008}
+heroModel_21 {Beatric_0,Beatric_1,Beatric_2,Beatric_3,Beatric_4,Beatric_5,Beatric_6,Beatric_7,Beatric_8}
 heroType_21 {Corsair}
 heroNation_21 {Pirates}
 sex_21 {woman}
@@ -484,15 +488,17 @@ coordinateLocation_21 {9.14,7.83,0.15,0,22.45,5.67,-4.71}
 turnLocation_21 {4.42}
 hero_21
 {
-Emmanuelle's mother died in childbirth, and her father, a famous pirate, couldn't take the girl to raise her, which is why he brought her over to a catholic monastery near Sevielle. Nuns were prohibited to talk about her parents with Emmanuelle, so she was given her mother's familyname and was told that her father was a traveling captain of a small vessel. Even though her father never ever appeared once more around these parts, every month money was brought over for Emmanuelle's living expenses, even when she grew up into a young and beautiful woman. Certain circumstances and the blood of a legendary pirate forced her to deny becoming a nun herself to instead travel to the Caribbeans and find her father.
+伟大的尼古拉斯.夏普的血肉之躯。 疯狂而顽皮的碧翠丝仅仅通过存在， 就打破了海岸兄弟会的所有法律。 但是没有一个人能对她这么说——碧翠丝与刀刃共舞， 仿佛她生来就带着它。 带着闪亮的白色微笑， 与她的朋友“幸运”并肩而行。
+~
+在酒馆里， 可以听到关于“红魔”的众多故事之一——这是水手们给碧翠丝起的名字。 关于她如何从未不带掠夺物返回港口、 她如何无法被抓住， 等等等等的故事。
 }
 
-heroName_22 {Alfonso}
-heroNameGen_22 {Alfonso}
-heroNameDat_22 {Alfonso}
-heroLastname_22 {Salvatore}
-heroLastnameGen_22 {Salvatore}
-heroLastnameDat_22 {Salvatore}
+heroName_22 {阿方索}
+heroNameGen_22 {阿方索}
+heroNameDat_22 {阿方索}
+heroLastname_22 {萨尔瓦托雷}
+heroLastnameGen_22 {萨尔瓦托雷}
+heroLastnameDat_22 {萨尔瓦托雷}
 heroFace_22 {1022}
 heroModel_22 {Tonzag_0,Tonzag_1,Tonzag_2,Tonzag_3,Tonzag_4,Tonzag_5,Tonzag_6,Tonzag_7,Tonzag_8}
 heroType_22 {Adventurer}
@@ -505,15 +511,15 @@ coordinateLocation_22 {9.14,7.83,0.15,0,22.45,5.67,-4.71}
 turnLocation_22 {4.42}
 hero_22
 {
-Despite the apperance of an Angel, has a terrific personality. Experienced and skilled adventurer, one of the most well-known in France. Aided the French trading fleets on their way back to France. Organised a perfect expedition to the East-Indies, where he attacked several British ships and Dutch colonies, gathered a huge contribution he later delivered to France. Known for a fiery and rude personality.
+尽管长着一张如天使般俊美无瑕的面孔， 他却有着一副令人望而生畏的暴烈脾气。 作为西班牙最名声显赫的资深冒险家之一， 他不仅经验丰富、 身手不凡， 还曾多次护送西班牙海外商船队安全返回本土。 他曾亲手组织了一场堪称完美的东印度远征， 期间连续重创数艘英国战舰并横扫荷兰殖民地， 掠夺了巨额的战利品悉数运回西班牙。 在整个加勒比海， 他以那火爆的个性和粗鲁蛮横的行事风格而闻名遐迩。 
 }
 
-heroName_23 {Francis}
-heroNameGen_23 {Francis}
-heroNameDat_23 {Francis}
-heroLastname_23 {Dubois}
-heroLastnameGen_23 {Dubois}
-heroLastNameDat_23 {Dubois}
+heroName_23 {弗朗西斯}
+heroNameGen_23 {弗朗西斯}
+heroNameDat_23 {弗朗西斯}
+heroLastname_23 {杜布瓦}
+heroLastnameGen_23 {杜布瓦}
+heroLastNameDat_23 {杜布瓦}
 heroFace_23 {1023}
 heroModel_23 {Dubua_0,Dubua_1,Dubua_2,Dubua_3,Dubua_4,Dubua_5,Dubua_6,Dubua_7,Dubua_8}
 heroType_23 {Adventurer}
@@ -526,15 +532,15 @@ coordinateLocation_23 {9.14,7.83,0.15,0,22.45,5.67,-4.71}
 turnLocation_23 {4.42}
 hero_23
 {
-Is known for his restrained character and love for danger and adventures. Used to be a musketeer of a military house of king of France, resulted in him becoming a mercenary on the Caribbeans, soon leading to robberies and raids. Then he became famous for his accuracy and calmness. A desperate, daring and unscrupulous pirate, terrifying not only free traders, but war ships of the governments' fleets.
+他以克制的性格以及对危险和冒险的热爱而闻名。 曾是法国国王军事家族的火枪手， 导致他成为加勒比海的雇佣兵， 很快便演变为抢劫和袭击。 然后他因准确性和冷静而闻名。 一个绝望、 大胆且肆无忌惮的海盗， 不仅让自由贸易商感到恐惧， 还让政府舰队的军舰感到害怕。 
 }
 
-heroName_24 {Horatio}
-heroNameGen_24 {Horatio}
-heroNameDat_24 {Horatio}
-heroLastname_24 {Hornblower}
-heroLastnameGen_24 {Hornblower}
-heroLastNameDat_24 {Hornblower}
+heroName_24 {霍雷肖}
+heroNameGen_24 {霍雷肖}
+heroNameDat_24 {霍雷肖}
+heroLastname_24 {霍恩布洛尔}
+heroLastnameGen_24 {霍恩布洛尔}
+heroLastNameDat_24 {霍恩布洛尔}
 heroFace_24 {1024}
 heroModel_24 {Hornblw_0,Hornblw_1,Hornblw_2,Hornblw_3,Hornblw_4,Hornblw_5,Hornblw_6}
 heroType_24 {Adventurer}
@@ -547,15 +553,15 @@ coordinateLocation_24 {9.14,7.83,0.15,0,22.45,5.67,-4.71}
 turnLocation_24 {4.42}
 hero_24
 {
-Knows his way with a rapier, as well as other bladed weapons: from a dirk to a machete. There are rumors that he's blood related to high value people from noble houses. Gives a reason for how he was trained by the best fencers of the world since childhood.
+他精通细剑之道， 对从随身短刀到开山马刀的各类刃具亦是无一不精。 坊间传闻， 他与欧洲某些名门望族的显赫大人物有着血缘关系——这也正好解释了， 为何他自幼便能接受世上最顶尖剑术大师的悉心栽培。 
 }
 
-heroName_25 {John}
-heroNameGen_25 {John}
-heroNameDat_25 {John}
-heroLastname_25 {Silver}
-heroLastnameGen_25 {Silver}
-heroLastNameDat_25 {Silver}
+heroName_25 {约翰}
+heroNameGen_25 {约翰}
+heroNameDat_25 {约翰}
+heroLastname_25 {西尔弗}
+heroLastnameGen_25 {西尔弗}
+heroLastNameDat_25 {西尔弗}
 heroFace_25 {1025}
 heroModel_25 {Stiven_0,Stiven_1,Stiven_2,Stiven_3,Stiven_4,Stiven_5,Stiven_6,Stiven_7,Stiven_8}
 heroType_25 {Corsair}
@@ -568,15 +574,15 @@ coordinateLocation_25 {9.14,7.83,0.15,0,22.45,5.67,-4.71}
 turnLocation_25 {4.42}
 hero_25
 {
-John Silver was very good in his leadership skills both at sea and on land in practically any situation, despite his position in the hierarchy or the circumstances. Being a pirate, and then a master of a port facility, or a cook for the higher-ups - Silver always managed to adapt and "organise". This ability of his, as well as communication skills, simple nature and calmness combined with prudence and cunning helped him almost hypnotize his victims, putting fear and terror in them.
+无论身处何种逆境， 亦不论地位尊卑， 约翰.西尔弗在海上与陆地都展现出了无与伦比的领袖铁腕。 从无法无天的悍匪、 到掌控一方的港口主管、 再到为达官显贵掌勺的厨子——西尔弗永远能见风使舵、 掌控全局。 他这种惊人的适应力、 圆滑的社交手腕， 辅以看似憨厚质朴的伪装、 以及冷静且狡诈的城府， 让他几乎能够“催眠”任何落入他掌心的猎物， 在不知不觉中将致命的恐惧与战栗深深植入他们的灵魂。 
 }
 
-heroName_26 {Cecil}
-heroNameGen_26 {Cecil}
-heroNameDat_26 {Cecil}
-heroLastname_26 {Forester}
-heroLastnameGen_26 {Forester}
-heroLastNameDat_26 {Forester}
+heroName_26 {塞西尔}
+heroNameGen_26 {塞西尔}
+heroNameDat_26 {塞西尔}
+heroLastname_26 {福雷斯特}
+heroLastnameGen_26 {福雷斯特}
+heroLastNameDat_26 {福雷斯特}
 heroFace_26 {1026}
 heroModel_26 {Forester}
 heroType_26 {Adventurer}
@@ -589,15 +595,15 @@ coordinateLocation_26 {9.14,7.83,0.15,0,22.45,5.67,-4.71}
 turnLocation_26 {4.42}
 hero_26
 {
-His most important characteristic is his love for adventure and love to toy with fate itself.
+他最重要的特点是热爱冒险， 喜欢与命运抗争。 
 }
 
-heroName_27 {Sanchez}
-heroNameGen_27 {Sanchez}
-heroNameDat_27 {Sanchez}
-heroLastname_27 {Esteban}
-heroLastnameGen_27 {Esteban}
-heroLastnameDat_27 {Esteban}
+heroName_27 {桑切斯}
+heroNameGen_27 {桑切斯}
+heroNameDat_27 {桑切斯}
+heroLastname_27 {埃斯特班}
+heroLastnameGen_27 {埃斯特班}
+heroLastnameDat_27 {埃斯特班}
 heroFace_27 {1027}
 heroModel_27 {SchEsteban}
 heroType_27 {Adventurer}
@@ -610,15 +616,15 @@ coordinateLocation_27 {9.14,7.83,0.15,0,22.45,5.67,-4.71}
 turnLocation_27 {4.42}
 hero_27
 {
-Cunning, quick and decisive. Doesn't ever do anything "just because".
+狡猾、 反应迅速、 果断。 从不“无缘无故”做事。 
 }
 
-heroName_28 {Mark}
-heroNameGen_28 {Mark}
-heroNameDat_28 {Mark}
-heroLastname_28 {Vanderborg}
-heroLastnameGen_28 {Vanderborg}
-heroLastNameDat_28 {Vanderborg}
+heroName_28 {马克}
+heroNameGen_28 {马克}
+heroNameDat_28 {马克}
+heroLastname_28 {范登堡}
+heroLastnameGen_28 {范登堡}
+heroLastNameDat_28 {范登堡}
 heroFace_28 {1028}
 heroModel_28 {Vanderborg}
 heroType_28 {Adventurer}
@@ -631,15 +637,15 @@ coordinateLocation_28 {9.14,7.83,0.15,0,22.45,5.67,-4.71}
 turnLocation_28 {4.42}
 hero_28
 {
-He is a strategist, careful person, thinking about the future, yet brave when needed.
+他是一位战略家， 为人谨慎， 着眼未来， 但必要时也十分勇敢。 
 }
 
-heroName_29 {Arthur}
-heroNameGen_29 {Arthur}
-heroNameDat_29 {Arthur}
-heroLastname_29 {Cornel}
-heroLastnameGen_29 {Cornel}
-heroLastNameDat_29 {Cornel}
+heroName_29 {亚瑟}
+heroNameGen_29 {亚瑟}
+heroNameDat_29 {亚瑟}
+heroLastname_29 {科内尔}
+heroLastnameGen_29 {科内尔}
+heroLastNameDat_29 {科内尔}
 heroFace_29 {1029}
 heroModel_29 {Cornuel}
 heroType_29 {Adventurer}
@@ -652,5 +658,5 @@ coordinateLocation_29 {9.14,7.83,0.15,0,22.45,5.67,-4.71}
 turnLocation_29 {4.42}
 hero_29
 {
-Sea thief, who used to plunder mainly Spanish ships.
+海盗， 主要劫掠西班牙船只。 
 }

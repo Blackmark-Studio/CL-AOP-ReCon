@@ -475,12 +475,12 @@ Parece que los españoles se están retirando. ¡No pueden soportar tanta potenc
 ~
 Sal del combate aumentando la distancia con el barco enemigo. Puedes ver la distancia al barco usando el catalejo.
 ~
-Para usar el catalejo, ve a la cubierta (por defecto 'Tab') y mantén presionada la tecla 'Ctrl' (por defecto).
+Para usar el catalejo, ve a la cubierta (por defecto 'Tab') y presiona la tecla 'Ctrl' (por defecto).
 ~
 Cuando la distancia al enemigo llegue a 1000, podrás abandonar el campo de batalla de forma segura.
 }
 BloodPrologue_SeaEscape_controlsimg1 {Sea_CameraSwitch}
-BloodPrologue_SeaEscape_controlsimg2 {TelescopeIn}
+BloodPrologue_SeaEscape_controlsimg2 {TelescopeMode}
 BloodPrologue_EnterMap_title {Entrar al mapa global}
 BloodPrologue_EnterMap_descr
 {

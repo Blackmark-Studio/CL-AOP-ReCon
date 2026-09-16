@@ -264,3 +264,83 @@ InfoMessages_247 {Wygląda na to, że to jest dom, którego potrzebuję. Powinie
 InfoMessages_248 {Otrzymałeś małe perły: @<iSmall> szt.}
 InfoMessages_249 {Otrzymałeś duże perły: @<iBig> szt.}
 InfoMessages_250 {Minęła jedna godzina...}
+InfoMessages_251 {Za mało pieniędzy (2500)}
+InfoMessages_252 {Wieczór następnego dnia...}
+InfoMessages_253 {Kilka godzin później...}
+InfoMessages_254 {Zapadła noc...}
+InfoMessages_255 {Potrzebna jest broń do walki wręcz. Wyposaż klingę.}
+InfoMessages_256 {W mieście i na pokładzie statku rozległy się dzwony alarmowe. Peter Blood i jego towarzysze niedoli nie doczekali świtu...}
+InfoMessages_257 {Otrzymano mapę skarbów}
+InfoMessages_258 {Minęło kilka tygodni...}
+InfoMessages_259 {Wymagane}
+InfoMessages_260 {Test niezaliczony: skrzynie złota (4)}
+InfoMessages_261 {Znaleziono sekret}
+InfoMessages_262 {Za mało}
+InfoMessages_263 {Obecnie}
+InfoMessages_264 {Kapitan na pokładzie!}
+InfoMessages_265 {Załoga została pokonana. Kapitan został zupełnie sam!}
+InfoMessages_266 {Załoga statku została wybita. Kapitan został sam!}
+
+InfoMessages_267
+{
+Wyrzucono: @<sItemName> - @<iDropQuantity> szt.
+}
+
+InfoMessages_268 {Latarnia morska Tortuga. Jakiś czas później...}
+
+InfoMessages_269 {Minęło trzydzieści minut...}
+
+InfoMessages_270 {Wziąłeś list Raoula.}
+
+InfoMessages_271 {Możesz opuścić tabelę naciskając klawisz „Enter”.}
+
+InfoMessages_272 {Naraz...}
+
+InfoMessages_273 {Jakiś czas później, niedaleko osady La Vega...}
+
+InfoMessages_274 {40 minut później, w domu Michela Le Basque'a...}
+
+InfoMessages_275 {Jakiś czas później...}
+
+InfoMessages_276 {List został pomyślnie dostarczony.}
+
+InfoMessages_277 {Następnej nocy, niedaleko obozu Hiszpanów...}
+
+InfoMessages_278 {Jakiś czas później, niedaleko Kajmanów...}
+
+InfoMessages_279 {Minęły 3 godziny...}
+
+InfoMessages_280 {Minęło trochę czasu...}
+
+InfoMessages_281 {Indianin Atauco wszedł na pokład statku jako pasażer.}
+
+InfoMessages_282 {Hiszpańska fregata jest na horyzoncie! Obrała kurs na przechwycenie.}
+
+InfoMessages_283 {Jakiś czas później wrogi statek został gruntownie sprawdzony. Wszystko, co miało jakąkolwiek wartość, wpadło w ręce zwycięzców.}
+
+InfoMessages_284 {Minęły dwa dni. Na horyzoncie pojawiły się żagle...}
+
+InfoMessages_285 {Kilka godzin później...}
+
+InfoMessages_286 {Chata Michela Le Basque'a. Kilka godzin później...}
+
+InfoMessages_287 {Minęło kilka dni. Towarzysze rozstali się w pobliżu zatoki Aguadilla...}
+
+InfoMessages_288 {Tego samego wieczoru...}
+
+InfoMessages_289 {Więźniowie zostali uwolnieni i odprowadzeni do obozu Indian. Minęło kilka godzin...}
+
+InfoMessages_290 {Minęły dwa dni...}
+
+InfoMessages_291 {Tego samego ranka...}
+
+InfoMessages_292 {Następnego dnia, w południe...}
+
+InfoMessages_293 {Minęła godzina. Przylądek Straconych Nadziei...}
+
+InfoMessages_294 {Minęło 30 minut...}
+
+InfoMessages_295 {Minęły dwa dni. Wszystkie kosztowności załadowano na statki alianckie...}
+InfoMessages_296 {Bukanierzy są niezadowoleni}
+InfoMessages_297 {Bukanierzy są bardziej przychylni}
+InfoMessages_298 {Gubernator nie wybaczył Peterowi Bloodowi długiej nieobecności. Tego samego dnia nadzorca Kent zachłostał go na śmierć.}

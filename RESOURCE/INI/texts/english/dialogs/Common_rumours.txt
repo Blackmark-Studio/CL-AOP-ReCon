@@ -523,3 +523,54 @@ Ah, captain, you were unlucky enough to cross paths with that demon the sailors 
 Common_rumours_175 {
 You know, our parish is in desperate need of church candles. Why does no one wish to help? At least for the salvation of their own soul...
 }
+Common_rumours_176 {
+Can you imagine, @<pchar.GenQuest.EncGirl.name> has finally been caught! A pity, of course, that she turned out to be nothing more than a thief and not a witch. It has been far too long since we had a spectacle worth watching in this town, ha!
+}
+CapBloodLine_Rumour_1 {
+I heard the slaves on Barbados rose in revolt! And no ordinary revolt, either! While the Spaniards who descended upon Bridgetown that day were running wild through the town, the bondsmen - just imagine! - stole an entire frigate from right under their noses! Serves the dogs right. A pity the runaways will surely be hunted down and hanged to the last man.
+}
+CapBloodLine_Rumour_2 {
+Have you heard that a handful of slaves outwitted Colonel Bishop himself? Imagine that! They escaped the island aboard a ship, then even lured the colonel onto their vessel, stripped him naked and tossed him overboard like a mangy pup. I would not be surprised if the old man now offered a fortune to anyone who brought him their heads on a platter.
+}
+CapBloodLine_Rumour_3 {
+Have you not heard? The Spaniards attacked Barbados - and came away with their tails between their legs! They plundered the town, to be sure, but then someone stole their own ship! Some say it was the slaves, others that the townsfolk had a hand in it - who can tell now? One thing is certain: the Spaniards have not suffered such humiliation in a long while.
+}
+CapBloodLine_Rumour_4 {
+The whole Archipelago is talking about the Spanish attack on Barbados. An entire fort could not stand against a single frigate! Yet a handful of slaves gave those cursed dons a worse drubbing than any soldiers could: they made off with their fine ship and all the plunder aboard - and vanished without a trace!
+}
+CapBloodLine_Rumour_5 {
+They say that while the Spaniards were plundering Barbados, a slave named Peter Blood started a revolt. He gathered a handful of brave men, seized an enormous frigate from the attackers and sailed her into the open sea like a seasoned captain! Quite a fellow, eh? Wait a moment... what did you say your name was?
+}
+CapBloodLine_Rumour_6 {
+Colonel Bishop of Barbados is furious - so furious he could make the devils themselves sick! First the Spaniards smashed his fort and plundered his beloved Bridgetown. Then the slaves from his own plantation - with their bare hands, can you imagine? - strangled the guards aboard a Spanish frigate and took the ship for themselves. To crown it all, they lured Bishop himself aboard, held him prisoner and threw him overboard like a sack of chaff. That is how matters stand, my friend.
+}
+CapBloodLine_BarbadosRumour_1 {
+While the planters and soldiers were hiding in their cellars, Peter Blood, our doctor - the very man who put half the island back on its feet - was the only one who did not lose his nerve! He gathered a handful of bondsmen and stole a frigate from right under the Spaniards' noses. Why, I know him personally - the man has hands of gold. God keep him, wherever he may be now. Perhaps his escape was for the best: Bishop would have driven him into an early grave, mark my words.
+}
+CapBloodLine_BarbadosRumour_2 {
+So the celebrated Doctor Blood has finally shown his true colors! We nursed a serpent in our bosom, and the moment an opportunity arose, he stole a ship and fled! And as if escaping were not enough, he lured Colonel Bishop aboard and threw him overboard like so much rubbish! After all the freedom the colonel allowed him... Mark my words: there is no place among honest men for the likes of him!
+}
+CapBloodLine_SpanishRumour_1 {
+That devil Blood - may he and his line be cursed unto the seventh generation! - murdered Don Diego de Espinosa, captain of the «Cinco Llagas», in cold blood, and then dared to claim the man's own ship! I would not be surprised if he had sold his soul to Satan - how else could a common convict have deceived everyone?
+}
+CapBloodLine_SpanishRumour_2 {
+Have you heard how that scoundrel Peter Blood deceived Don Miguel de Espinosa himself? He spun a pack of lies and lulled Don Miguel's suspicions, then treacherously murdered his brother and seized the man's ship! It is a disgrace to all Spain that such a villain is not yet swinging from the gallows!
+}
+CapBloodLine_SpanishRumour_3 {
+Holy Mother of God, preserve us from that hellspawn called Peter Blood! He butchered Don Diego in cold blood and very nearly got his hands on the man's son as well! I swear, if the Blessed Virgin ever allows me to meet him, I shall drive a knife between his ribs with my own hands. Mark my words!
+}
+CapBloodLine_SpanishRumour_4 {
+You have not seen Don Miguel de Espinosa, have you? No? They say that after the scoundrel Blood played him for a common cabin boy and escaped unpunished, Don Miguel turned grey in a single night. And we had thought he was not a man who could be fooled so easily...
+}
+CapBloodLine_SpanishBloodRumour_1 {
+Have you heard about that convict devil who murdered Don Diego de Espinosa, captain of the «Cinco Llagas», in cold blood and deceived his brother besides? To make matters worse, he claimed Don Diego's own ship, the «Cinco Llagas», for himself. May he be cursed unto the seventh generation! I would not be surprised if he had sold his soul to Satan - how else could a common runaway slave have made fools of everyone?
+}
+CapBloodLine_SpanishBloodRumour_2 {
+They say some runaway slave outwitted Don Miguel de Espinosa himself. He spun a pack of lies and lulled Don Miguel's suspicions, then treacherously murdered his brother and seized the man's ship! It is a disgrace to all Spain that such a villain has not yet earned himself a hempen necktie!
+}
+CapBloodLine_SpanishBloodRumour_3 {
+Holy Mother of God, preserve us from that hellspawn who butchered Don Diego and very nearly got his hands on the man's son as well! I swear, if I ever meet him, I shall drive a knife between his ribs with my own hands. Mark my words! Do you know his name?
+}
+CapBloodLine_SpanishBloodRumour_4 {
+Have you heard about Don Miguel de Espinosa? They say some runaway slave played him for a common cabin boy, murdered his brother and escaped unpunished. Don Miguel supposedly turned grey in a single night afterward. And we had thought he was not a man who could be fooled so easily...
+}

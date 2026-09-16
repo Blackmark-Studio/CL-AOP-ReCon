@@ -53,7 +53,7 @@ questNPC_18 {
 Sigue tu camino y no me distraigas.
 }
 questNPC_19 {
-Me temo que es grave. Un espía español se ha infiltrado en la ciudad—quizás incluso un mercenario. Fue a la casa del armero, y ahora la puerta de Griffin está bien cerrada.
+Me temo que es grave. Un espía español se ha infiltrado en la ciudad-quizás incluso un mercenario. Fue a la casa del armero, y ahora la puerta de Griffin está bien cerrada.
 }
 questNPC_20 {
 ¡Alto! ¡Entrega tus armas! ¡Sígueme!
@@ -80,10 +80,10 @@ questNPC_27 {
 Estoy cumpliendo las órdenes del coronel Bishop.
 }
 questNPC_28 {
-Ah, es usted, Doctor Blood. Me atendió cuando me dieron de baja del "Pride of Devon".
+Ah, es usted, Doctor Blood. Lo reconocí enseguida.
 }
 questNPC_29 {
-Me alegra que te hayas recuperado.
+Tienes buen ojo, soldado.
 }
 questNPC_30 {
 ¡Lárgate, esclavo!
@@ -95,7 +95,7 @@ questNPC_32 {
 Vaya clima, y aun así tengo que quedarme aquí. Lo único que me entretiene es espantar moscas de mi cara.
 }
 questNPC_33 {
-Lo siento. Pero no puedo ayudarte—es simplemente el trabajo que tienes.
+Lo siento. Pero no puedo ayudarte-es simplemente el trabajo que tienes.
 }
 questNPC_34 {
 Si tienes ganas de conversar, busca a otra persona, o mejor aún, regresa a las plantaciones.
@@ -353,7 +353,7 @@ questNPC_116 {
 No voy a preguntar para qué necesitas esto, y si alguien me pregunta, no tendré que mentir ni dar explicaciones. Sin embargo, no me pedirán un informe hasta pasado mañana, así que...
 }
 questNPC_117 {
-Pasado mañana, podrás decir con toda confianza que le prestaste unas cuantas sables y pistolas, sin cobrar nada, al doctor Peter Blood—el mismo que fue médico en Bridgetown. Dudo que el coronel Bishop se oponga...
+Pasado mañana, podrás decir con toda confianza que le prestaste unas cuantas sables y pistolas, sin cobrar nada, al doctor Peter Blood-el mismo que fue médico en Bridgetown. Dudo que el coronel Bishop se oponga...
 }
 questNPC_118 {
 Mi hijo te debe la vida, igual que yo. Tome esto, Doctor Blood. ¡Y le deseo buena suerte!
@@ -485,7 +485,7 @@ questNPC_160 {
 Sí, pero los esclavos no pueden tener armas, ¿verdad? ¿Y de qué situación hablas?
 }
 questNPC_161 {
-No se preocupe, doctor, es fácil de ocultar bajo la ropa, así que nadie notará nada. A menos que empiece a agitarlo delante de los soldados. Y llegará el momento en que tendrá que mostrarlo, y creo saber por qué... Pero no se lo diré a nadie, no se preocupe—estoy de su lado.
+No se preocupe, doctor, es fácil de ocultar bajo la ropa, así que nadie notará nada. A menos que empiece a agitarlo delante de los soldados. Y llegará el momento en que tendrá que mostrarlo, y creo saber por qué... Pero no se lo diré a nadie, no se preocupe-estoy de su lado.
 }
 questNPC_162 {
 Gracias, amigo. Te sugiero que hables con Jeremy. ¡Que te mejores pronto!
@@ -518,7 +518,7 @@ questNPC_171 {
 Bueno, ¿y ahora qué quieres?
 }
 questNPC_172 {
-No tengo mucho tiempo—¡quiero acabar contigo ahora mismo!
+No tengo mucho tiempo-¡quiero acabar contigo ahora mismo!
 }
 questNPC_173 {
 Solo quería recordarte nuestra reunión.
@@ -713,7 +713,7 @@ questNPC_236 {
 ¿Y bien? ¿Qué es este lugar?
 }
 questNPC_237 {
-…está muy cerca. @<Pchar>
+...está muy cerca. @<Pchar>
 }
 questNPC_238 {
 ¡Increíble!.. Pero debo irme ahora.
@@ -788,7 +788,7 @@ questNPC_261 {
 Hm, permíteme llenar esa lamentable laguna en tu conocimiento. Así que, déjame presentarme. Capitán Jacques Nightingale, también conocido como...
 }
 questNPC_262 {
-Todo eso es muy interesante, pero… ¿dónde está tu barco, capitán?
+Todo eso es muy interesante, pero... ¿dónde está tu barco, capitán?
 }
 questNPC_263 {
 Eh... Está en el fondeadero... En algún lugar...
@@ -803,13 +803,13 @@ questNPC_266 {
 Créeme, pienso conseguir mucho más que solo una vela en un futuro cercano.
 }
 questNPC_267 {
-¿Galera de esclavos? Ni pensarlo.\nSeamos sinceros—al fin y al cabo, ya somos amigos, ¿no? Cuando dos personas entran a la fuerza en la misma tienda, al mismo tiempo, sin que el dueño lo sepa, es como si el mismísimo Señor les estuviera diciendo que deben hacerse amigos, ¿entiendes?
+¿Galera de esclavos? Ni pensarlo.\nSeamos sinceros-al fin y al cabo, ya somos amigos, ¿no? Cuando dos personas entran a la fuerza en la misma tienda, al mismo tiempo, sin que el dueño lo sepa, es como si el mismísimo Señor les estuviera diciendo que deben hacerse amigos, ¿entiendes?
 }
 questNPC_268 {
 Supongo que sí.
 }
 questNPC_269 {
-Bueno, ya le “tomé prestados” unos cuantos piastras al dueño de este buen lugar…
+Bueno, ya le “tomé prestados” unos cuantos piastras al dueño de este buen lugar...
 }
 questNPC_270 {
 Eso es precisamente el tipo de cosa que me vendría bien.
@@ -869,7 +869,7 @@ questNPC_288 {
 ¿Puedo saber el nombre de su amigo, señor Blood?
 }
 questNPC_289 {
-Por supuesto. Su nombre es... ella... bueno, sí — en realidad, es ella...
+Por supuesto. Su nombre es... ella... bueno, sí - en realidad, es ella...
 }
 questNPC_290 {
 Por supuesto. Se llama Jacques Nightingale, ¿lo has oído nombrar?
@@ -893,7 +893,7 @@ questNPC_296 {
 ¿No? ¿Cómo voy a aceptar llevar a un pasajero si ni siquiera sé su nombre?
 }
 questNPC_297 {
-Por supuesto que puedes. Digamos que se trata de cierta señorita Taylor... Sí, exacto — la señorita Taylor, quien te dará tres mil en plata si dejas de hacer preguntas.
+Por supuesto que puedes. Digamos que se trata de cierta señorita Taylor... Sí, exacto - la señorita Taylor, quien te dará tres mil en plata si dejas de hacer preguntas.
 }
 questNPC_298 {
 De acuerdo, lo llevaré... la llevaré. Dile a mi futuro pasajero que el ‘Floating Briton’ está listo para zarpar.
@@ -902,7 +902,7 @@ questNPC_299 {
 Gracias.
 }
 questNPC_300 {
-¡Eso deberías haberlo dicho desde el principio! Trato hecho—esperaré a la señorita Taylor a bordo.
+¡Eso deberías haberlo dicho desde el principio! Trato hecho-esperaré a la señorita Taylor a bordo.
 }
 questNPC_301 {
 Se lo haré saber. Le deseo lo mejor, capitán.
@@ -914,22 +914,22 @@ questNPC_303 {
 Espero que estés listo para encontrarte con tu creador.
 }
 questNPC_304 {
-¿Tú me salvaste? ¿Quién eres?
+¿Q-quién eres?
 }
 questNPC_305 {
-Soy Peter Blood, eh... el médico local. ¿Vas a esperar mientras te muestro mis documentos? ¿Y qué demonios está pasando aquí?
+¿Vas a esperar mientras te enseño mis documentos? No es seguro quedarse aquí. Sígueme.
 }
 questNPC_306 {
-Los españoles... ellos... Ese gran barco, el que hoy dejaron entrar tan tranquilamente en nuestra bahía bajo una bandera falsa, resultó ser un corsario español. Su engaño con la bandera pasó desapercibido, tanto que, sin despertar sospechas, navegaron directo hasta la bahía y dispararon una andanada al fuerte a quemarropa con veinte cañones...
+Los españoles... Ellos... Ese gran barco... Entró tranquilamente en nuestra bahía bajo una bandera falsa... Y luego... él... ellos... esos españoles... (llora) Se acercaron hasta el fuerte y dispararon todos sus cañones...
 }
 questNPC_307 {
-¿Y ahora, según entiendo, la tripulación de este corsario está saqueando la ciudad?
+¿Y ahora están saqueando la ciudad?
 }
 questNPC_308 {
-Sí, al atardecer nuestra guarnición se había rendido, y doscientos cincuenta españoles se convirtieron en los dueños de Bridgetown.
+Sí... Esos bastardos... Ellos... se convirtieron en los dueños de Bridgetown.
 }
 questNPC_309 {
-Eso sí que es un giro del destino en el momento justo. Aunque solo el diablo sabe cómo acabará todo esto. Y tú, escápate al bosque y escóndete hasta que los españoles se marchen del pueblo.
+No puedes quedarte aquí. Sígueme y procura no quedarte atrás.
 }
 questNPC_310 {
 ¡Capitán Hobart! Según la información de nuestro espía, los rebeldes se esconden en esta hacienda. Tiene cinco dragones a su disposición. Registre el edificio y capture a cualquiera que se encuentre dentro. No trate a esta escoria con delicadeza. ¡Está actuando en nombre del Rey!
@@ -939,4 +939,20 @@ questNPC_311 {
 }
 questNPC_312 {
 ¿Oíste al coronel? ¡Los rebeldes se esconden ahí! ¡Revisen todo, registren la casa de arriba abajo y detengan a todos los que encuentren! ¡Vamos!
+}
+
+questNPC_313 {
+¿V-vamos a las plantaciones del coronel Bishop?
+}
+
+questNPC_314 {
+Será mejor que te mantengas lejos de la ciudad. Ahora dime qué ocurrió allí.
+}
+
+questNPC_315 {
+Ese maldito gobernador... Espero que hoy reciba lo que se merece. Por su culpa seguimos atrapados aquí.
+}
+
+questNPC_316 {
+Si te sirve de consuelo, la gota no le permitirá disfrutar de la vida, por mucho tiempo que aún le quede.
 }

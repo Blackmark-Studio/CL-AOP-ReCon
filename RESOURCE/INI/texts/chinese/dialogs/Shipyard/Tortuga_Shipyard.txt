@@ -1,84 +1,84 @@
 Tortuga_Shipyard_1 {
-什么问题？
+什么问题？ 
 }
 Tortuga_Shipyard_2 {
-你想干什么？
+你想干什么？ 
 }
 Tortuga_Shipyard_3 {
 @<RandPhraseSimple>
 }
 Tortuga_Shipyard_4 {
-前阵子你好像想问我点什么……
+前阵子你好像想问我点什么…… 
 }
 Tortuga_Shipyard_5 {
-在我自己的船厂，甚至整个Tortuga，我还真没见过像你这么专注好奇的人。
+在我自己的船坞， 甚至整个托尔图加， 我还真没见过像你这么专注好奇的人。 
 }
 Tortuga_Shipyard_6 {
-俺是造船的，咱们直接开工吧。
+我是造船的， 咱们直接开工吧。 
 }
 Tortuga_Shipyard_7_m {
-我改主意了……
+我改主意了…… 
 }
 Tortuga_Shipyard_7_f {
-我改变主意了……
+我改变主意了…… 
 }
 Tortuga_Shipyard_8 {
-我现在没什么可说的。
+我现在没什么可说的。 
 }
 Tortuga_Shipyard_9 {
 @<RandPhraseSimple>
 }
 Tortuga_Shipyard_10 {
-嗯，我的记忆好像出了点问题……
+嗯， 我的记忆好像出了点问题…… 
 }
 Tortuga_Shipyard_11 {
-嗯，不过……
+嗯， 不过…… 
 }
 Tortuga_Shipyard_12 {
-咱们……
+咱们…… 
 }
 Tortuga_Shipyard_13_m {
-听说Pierre the Picard在这片海域有最棒的船。
+听说皮卡德.皮埃尔在这片海域有最棒的船。 
 }
 Tortuga_Shipyard_13_f {
-我听说Pierre the Picard的船是这片海域里最棒的。
+我听说皮卡德.皮埃尔的船是这片海域里最棒的。 
 }
 Tortuga_Shipyard_14_m {
-也许吧。他那艘护卫舰本来就挺不错的，前阵子我刚给它升级过。现在装上了最新的后膛装填的culverins！花了不少钱，但确实值……所以你说得对。不过，你怎么突然问这个？
+也许吧。 他那艘护卫舰本来就挺不错的， 前阵子我刚给它升级过。 现在装上了最新的后膛装填的长管炮！ 花了不少钱， 但确实值…… 所以你说得对。 不过， 你怎么突然问这个？ 
 }
 Tortuga_Shipyard_14_f {
-也许吧。他那艘护卫舰本来就挺不错的，前阵子我刚给它升级过。现在装上了最新的后膛装填的culverins！花了不少钱，不过确实值……所以你说得对。可你怎么突然问这个？
+也许吧。 他那艘护卫舰本来就挺不错的， 前阵子我刚给它升级过。 现在装上了最新的后膛装填的长管炮！ 花了不少钱， 不过确实值…… 所以你说得对。 可你怎么突然问这个？ 
 }
 Tortuga_Shipyard_15 {
-@<UpperFirst>，咱们先处理船上的事，Picardian那边我现在不管。
+@<UpperFirst>， 咱们先处理船上的事， 皮卡德人那边我现在不管。 
 }
 Tortuga_Shipyard_16 {
-你已经问过我关于Pierre的事了……
+你已经问过我关于皮埃尔的事了…… 
 }
 Tortuga_Shipyard_17 {
-听着，要不你去别的地方打听Pierre吧？
+听着， 要不你去别的地方打听皮埃尔吧？ 
 }
 Tortuga_Shipyard_18_m {
-我打算搞个小动作，但一个人搞不定……所以在找人一起干。
+我打算搞个小动作， 但一个人搞不定…… 所以在找人一起干。 
 }
 Tortuga_Shipyard_18_f {
-我想搞个小动作，但一个人搞不定……所以在找人一起干。
+我想搞个小动作， 但一个人搞不定…… 所以在找人一起干。 
 }
 Tortuga_Shipyard_19 {
-咱们来……
+咱们来…… 
 }
 Tortuga_Shipyard_20_m {
-是吗？嗯，我确实问过……
+是吗？ 嗯， 我确实问过…… 
 }
 Tortuga_Shipyard_20_f {
-是吗？嗯，我确实问过……
+是吗？ 嗯， 我确实问过…… 
 }
 Tortuga_Shipyard_21 {
-行吧，那我去别处问问。
+行吧， 那我去别处问问。 
 }
 Tortuga_Shipyard_22 {
-明白了。那Pierre确实挺合适，Morgan自己偶尔也会把这种活儿交给他。
+明白了。 那皮埃尔确实挺合适， 摩根自己偶尔也会把这种活儿交给他。 
 }
 Tortuga_Shipyard_23 {
-哟，是Morgan本人？！Pierre可不是一般人。多谢你推荐。
+哟， 是摩根本人？ ！ 皮埃尔可不是一般人。 多谢你推荐。 
 }

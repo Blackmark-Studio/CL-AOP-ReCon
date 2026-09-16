@@ -1,0 +1,44 @@
+EPL_3_TheFirstSteps_dialog_1 {请将此错误报告给技术支持。}
+EPL_3_TheFirstSteps_dialog_2 {女人，你竟然还有胆量出现在这里，还是说愚蠢让你根本没看清周围已经发生了什么变化？}
+EPL_3_TheFirstSteps_dialog_3 {我叫@<GetFullName>，而我来这里，正是因为周围发生了一些变化。}
+EPL_3_TheFirstSteps_dialog_4 {是吗？说下去。}
+EPL_3_TheFirstSteps_dialog_5 {幸运的是，你的人发动那次失败的强攻时，我正好在圣多明各。城里很快传开了消息，说西班牙悬赏寻找两位年轻女子——这座要塞指挥官的女儿，而我打算找到她们。}
+EPL_3_TheFirstSteps_dialog_6 {你觉得，如果她们在我手里，我会把她们交出去？}
+EPL_3_TheFirstSteps_dialog_7 {我认为你需要一个谈判中间人。西班牙人绝不会允许你接近他们任何一处殖民地，哪怕进入大炮射程之内。}
+EPL_3_TheFirstSteps_dialog_8 {他们没有理由这么做。袭击殖民地的不是我的人。我只不过抓住机会，占下了一座被遗弃的要塞。这里的位置很有价值，放着不用才是真正的愚蠢。英国和法国的船队经常从附近经过，天气好的时候，甚至能望见托尔图加的海岸。}
+EPL_3_TheFirstSteps_dialog_9 {可那对姐妹呢？}
+EPL_3_TheFirstSteps_dialog_10 {你可以带上你的人把整座岛翻个遍，不过我敢打赌，只要她们还活着，就会自己出现。或者你也可以发下铲子，让人去查查城外的墓地。反正在我这里，你找不到她们。}
+EPL_3_TheFirstSteps_dialog_11 {没人会为死人开出赏金。}
+EPL_3_TheFirstSteps_dialog_12 {那我就帮不了你了。}
+EPL_3_TheFirstSteps_dialog_13 {有机会我还会再来。}
+EPL_3_TheFirstSteps_dialog_14 {我奉圣多明各总督之命而来，呈交一份关于伊斯帕尼奥拉近期事件的报告。}
+EPL_3_TheFirstSteps_dialog_15 {我已经掌握了事情的大致情况。你也知道，在这一带，流言传得比风还快。不过正式报告我当然还是会看的。请收下这些，算作你及时送达报告的报酬。}
+EPL_3_TheFirstSteps_dialog_16 {@<GetFullName>先生已经提前把报酬付给我了。}
+EPL_3_TheFirstSteps_dialog_17 {那就把这些当作额外开销的补偿吧。}
+EPL_3_TheFirstSteps_dialog_18 {那我就不推辞了。我目前的处境确实不太容易。正因如此，我还有一个问题，与其说是公务，倒不如说是出于私心。西班牙失去的那座殖民地，今后会有什么命运？那里曾经长期是我的家。}
+EPL_3_TheFirstSteps_dialog_19 {这件事不能仓促作出决定。但有一点我可以明确告诉你：西班牙绝不会对海盗犯下的那场血腥暴行置之不理。迟早有一天，西班牙的旗帜会重新飘扬在拉维加上空，正义也终将得到伸张！现在请你先退下吧，我还有工作要处理。}
+EPL_3_TheFirstSteps_dialog_20 {感谢您，阁下！}
+EPL_3_TheFirstSteps_dialog_21 {
+恭喜你，@<GetFullName>。你已经成了伊斯帕尼奥拉的女英雄。你的父亲一定会为你感到骄傲。
+}
+EPL_3_TheFirstSteps_dialog_22 {
+我的父亲会……等等，你刚才叫我什么？！
+}
+EPL_3_TheFirstSteps_dialog_23 {
+@<GetFullName>。难道你以为我会一直叫你雷米多斯吗？
+}
+EPL_3_TheFirstSteps_dialog_24 {
+看来你知道的比我想象中多得多，桑德罗。解释清楚。
+}
+EPL_3_TheFirstSteps_dialog_25 {
+你从来没觉得奇怪吗？你的名字和其他西班牙人的名字相比，多少有些与众不同。
+}
+EPL_3_TheFirstSteps_dialog_26 {
+这个名字是我母亲给我取的，因为她是法国人，来自岛的另一边——海地。那又怎样？
+}
+EPL_3_TheFirstSteps_dialog_27 {
+因为你的父亲——曼努埃尔·帕达尔——是效忠西班牙王室的著名葡萄牙私掠船长。你正是为了纪念他才被取名为埃马努埃尔。但顶着这样的姓氏生活会非常危险，所以他们把你藏在远离一切危险的地方。\n因此，我替你父亲带来一句话：“女儿，我希望你的命运远比我的好。”现在我已经尽到了我的责任，接下来该你尽自己的责任了。\n我会把我的朋友兼医生霍普金斯留在你的船上。他现在还太虚弱，没法跟我去我要去的地方……总之，他还没有恢复到那个程度。请你暂时照看他一阵子，之后我会回来接他。我会找到你的，别担心，@<GetFullName>。
+}
+EPL_3_TheFirstSteps_dialog_28 {
+好吧，桑德罗。说真的……我得好好想想这一切。谢谢你。
+}

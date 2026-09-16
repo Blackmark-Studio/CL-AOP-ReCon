@@ -436,3 +436,52 @@ Range le perroquet.
 MainHero_dialog_142 {
 Montre le perroquet.
 }
+
+LeBasque_1 {
+...
+}
+LeBasque_2 {
+Dès qu’on passe les portes, il ne reste plus rien de la joyeuse Tortue. Ni chansons, ni jurons, ni rires d’ivrognes...
+}
+LeBasque_3 {
+...
+}
+LeBasque_4 {
+Raul devrait arriver d’une minute à l’autre. L’essentiel est de ne pas me trahir et de ne rien laisser échapper.
+}
+LeBasque_5 {
+...
+}
+LeBasque_6 {
+Raul a vendu des renseignements à l’Espagnol et reçu en échange de l’argent et de nouvelles instructions. Tout semble tourner autour d’un certain le Basque. J’en sais assez maintenant : il est temps de retourner voir Marceau.
+}
+LeBasque_7 {
+...
+}
+LeBasque_8 {
+La rencontre devrait bientôt commencer... La mer à gauche, le phare devant, des palmiers et des rochers à droite. Difficile d’imaginer meilleur endroit pour une embuscade. Il me faut trouver un poste d’observation avec une bonne vue.
+}
+LeBasque_9 {
+...
+}
+LeBasque_10 {
+D’ici, ils ne me verront pas, tandis que je pourrai tout observer. Il ne reste plus qu’à attendre.
+}
+MainHero_dialog_143 {
+Hum... Le chapeau de Jaco. Il ne s'en sépare jamais sans raison... Et voilà des traces. Trois hommes en traînaient un quatrième. Elles mènent à la grotte. Il faut se dépêcher.
+}
+MainHero_dialog_144 {
+Il est déjà minuit. Il est temps de poser le sequin sur le support en bois, près du livre...
+}
+MainHero_dialog_145 {
+Tout s'est déroulé à merveille. Il ne reste qu'à laisser la lettre sur le cadavre et à regagner le navire.
+}
+MainHero_dialog_146 {
+Sa respiration est régulière : elle ne tardera pas à reprendre connaissance...
+}
+MainHero_dialog_147 {
+L'heure est venue de mourir...
+}
+MainHero_dialog_148 {
+Bon sang... Encore...
+}

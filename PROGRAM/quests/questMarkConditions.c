@@ -110,13 +110,16 @@ bool Slavetrader_Wait_6_Usurer_QuestMarkCondition(ref chr)
 
 bool Slavetrader_WaitQuest_WDMQuestMarkCondition(string sLocId)
 {
-    return Slavetrader_Wait_Usurer_QuestMarkCondition(pchar) ||
-        Slavetrader_Wait_1_Usurer_QuestMarkCondition(pchar) ||
-        Slavetrader_Wait_2_Usurer_QuestMarkCondition(pchar) ||
-        Slavetrader_Wait_3_Usurer_QuestMarkCondition(pchar) ||
-        Slavetrader_Wait_4_Usurer_QuestMarkCondition(pchar) ||
-        Slavetrader_Wait_5_Usurer_QuestMarkCondition(pchar) ||
-        Slavetrader_Wait_6_Usurer_QuestMarkCondition(pchar);
+    string s = pchar.questTemp.Slavetrader;
+    if (s == "waitship") return true;
+    if (s == "wait")   return GetQuestPastDayParam("pchar.questTemp.Slavetrader_wait")   > 20;
+    if (s == "wait_1") return GetQuestPastDayParam("pchar.questTemp.Slavetrader_wait_1") > 30;
+    if (s == "wait_2") return GetQuestPastDayParam("pchar.questTemp.Slavetrader_wait_2") > 30;
+    if (s == "wait_3") return GetQuestPastDayParam("pchar.questTemp.Slavetrader_wait_3") > 30;
+    if (s == "wait_4") return GetQuestPastDayParam("pchar.questTemp.Slavetrader_wait_4") > 4;
+    if (s == "wait_5") return GetQuestPastDayParam("pchar.questTemp.Slavetrader_wait_5") > 30;
+    if (s == "wait_6") return GetQuestPastDayParam("pchar.questTemp.Slavetrader_wait_6") > 6;
+    return false;
 }
 
 // Травля крыс
@@ -589,6 +592,8 @@ bool StateLines_CaptureCity_QuestMarkCondition(ref chr)
     {
         return IsLocationCaptured(chr.location) || CheckAttribute(&Locations[FindLocation(chr.location)], "boarding");
     }
+
+	return false;
 }
 
 // Английская линейка
@@ -721,7 +726,6 @@ bool HolLine_8_SeekBible_Horse_QuestMarkCondition(ref chr)
 
 bool HolLine_9_TakeThreeShips_toAbordage_QuestMarkCondition(ref chr)
 {
-    int tempQty = 0;
     for (int i=1; i<=COMPANION_MAX; i++)
     {
         int chComp = GetCompanionIndex(pchar,i);

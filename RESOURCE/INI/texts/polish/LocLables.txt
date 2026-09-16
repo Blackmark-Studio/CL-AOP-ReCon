@@ -18,7 +18,7 @@ Hispaniola2 {Hispaniola}
 Jamaica {Jamaica}
 Maracaibo {Maracaibo}
 Martinique {Martynika}
-Mariegalante {Marie-Galante}
+MarieGalante {Marie-Galante}
 SentMartin {Saint-Martin}
 Nevis {Nevis}
 PuertoRico {Puerto Rico}
@@ -28,8 +28,11 @@ Panama {Panama}
 SantaCatalina {Santa Catalina}
 Terks {Turks}
 Tortuga {Tortuga}
-Trinidad {Trinidad i Tobago}
+Tobago {Tobago}
+Trinidad {Trinidad}
 Providence {Old Providence}
+Gibraltar {Gibraltar}
+Aruba {Aruba}
 Tenotchitlan {Texcoco}
 Mein {Main}
 SentJons_town {Saint John's}
@@ -61,6 +64,10 @@ Tortuga_town {Tortuga}
 PortSpein_town {Port of Spain}
 Providencia_town {Providencia}
 FortOrange_town {Fort Orange}
+Gibraltar_town      {Gibraltar}
+Gibraltar Town		{Gibraltar}
+Gibraltar Fort		{fort Gibraltar}
+Gibraltar Port		{port Gibraltar}
 Tenotchitlan_town {Tenochtitlan}
 Estate {Posiadłość Oglethorpe’a, Anglia}
 DesMoines {Des Moines}
@@ -129,6 +136,9 @@ Shore62 {Iztapalapa}
 Shore63 {Zatoka San Miguel}
 Shore64 {Playa Manzanillo}
 Shore65 {Przylądek Morgana}
+Shore66	{Zatoka Byczy Róg}
+Shore67	{Zatoka Boca Prins}
+Shore68	{Zatoka Paarden}
 Shore_ship1 {Zatoka Rozbitego Statku}
 Shore_ship2 {Zatoka Zagłady}
 Shore_ship3 {Przylądek Złudnych Nadziei}
@@ -278,6 +288,7 @@ Prison {Więzienie}
 Incquisitio {Inkwizycja}
 Malta_Dungeon {Zakon Maltański}
 GWIKshort {Siedziba WIC}
+Admiralty {Admiralty}
 House {Dom}
 ammo {Zbrojownia}
 Room {Pokój}
@@ -378,3 +389,7 @@ TempleGreatInside {Świątynia Wielkiej Siły Życiowej}
 TempleRoundInside {Świątynia Białych Bogów}
 TempleSecondInside {Świątynia Ofiary}
 TempleUnderwater {Podwodny labirynt}
+LeBasque_House           {Dom zarządcy osady}
+LeBasque_room            {Pokój le Basque'a}
+Bucaneer_outpost          {Posterunek bukanierów}
+Arabella_Deck             {Pokład Cinco Llagas}

@@ -1,0 +1,212 @@
+Olone_dialog_1 {
+E o que escondem essas inestimáveis mensagens, monsieur l'Olonnais? O que havia de tão importante para interromper nosso brinde?
+}
+Olone_dialog_2 {
+Uma esquadra combinada. Uma verdadeira frota de ouro, senhores. O tesouro real de Veracruz, fortunas de grandes mercadores, prata das igrejas... Se acreditarmos nos juramentos daquele espanhol, a carga vale mais de um milhão de piastras. Tenho de lhe dar crédito... Ficou surpreendentemente sincero justamente um instante antes de deixar de me ser útil de vez.
+}
+Olone_dialog_3 {
+Nesse caso, pode ir atrás da prata espanhola sozinho. Se estragar tudo com sua impaciência, perderá até a esperança de receber uma parte do saque.
+}
+Olone_dialog_4 {
+Que o diabo o carregue... Acha que vou ficar olhando enquanto vocês ficam com toda a prata? Nem pensar. Vou com vocês. Deixarei meu navio aqui — não há motivo para atrair a atenção das patrulhas costeiras passeando por aí com uma esquadra inteira.
+}
+Olone_dialog_5 {
+Vejo que le Basque recrutou filósofos e espiões. Odeio me esconder e agir às escondidas como um covarde. Isso estraga meu humor.
+}
+Olone_dialog_6 {
+Então pode ir a Veracruz e perguntar lá mesmo quando e para onde partirá a Frota da Prata.
+}
+Olone_dialog_7 {
+Ha! Se isso tivesse um pingo de bom senso, eu faria exatamente assim. Mas, já que o prêmio é tão grande, terei de jogar pelas suas regras.
+}
+Olone_dialog_8 {
+Então tente manter a lâmina na bainha até que ela seja necessária.
+}
+Olone_dialog_9 {
+Quanto tempo ainda vamos ficar aqui contando gaivotas? Já sinto os ossos coçando de vontade de interrogar aquele filhote.
+}
+Olone_dialog_10 {
+Segure os cavalos, l'Olonnais. Primeiro precisamos encontrá-lo e capturá-lo.
+}
+Olone_dialog_11 {
+Por enquanto, vamos evitar medidas extremas, François.
+}
+Olone_dialog_12 {
+Então? Quanto tempo mais vamos ficar parados olhando uns para os outros? Talvez finalmente possamos ir atrás daquele maldito Arellano?
+}
+Olone_dialog_13 {
+Você realmente não é do tipo paciente, não é? Está bem, vamos.
+}
+Olone_dialog_14 {
+Só perdemos tempo. Devíamos ter matado aqueles cães logo de início, em vez de brincar de espiões com eles.
+}
+Olone_dialog_15 {
+Nem vou tentar explicar alguma coisa a você.
+}
+Olone_dialog_16 {
+@<pchar>, talvez seja você quem não está usando a cabeça? Quer deixar esses cães atrás de nós? Temos de cortar a garganta deles! De todos, até o último!
+}
+Olone_dialog_17 {
+l'Olonnais, já explicamos: isto deveria ser uma operação discreta. Tenha paciência.
+}
+Olone_dialog_18 {
+E o que vamos fazer agora?
+}
+Olone_dialog_19 {
+Vou falar com o homem de gibão; vocês se espalhem pela aldeia e deem uma olhada em volta. Só não façam barulho.
+}
+Olone_dialog_20 {
+Entendi. Se é preciso assustar alguém — olhem, temos l'Olonnais conosco. Se é preciso se meter no pior inferno — l'Olonnais de novo. E vocês, por acaso, estão com os joelhos tremendo e só lhes falta coragem para admitir?
+}
+Olone_dialog_21 {
+Eu, reclamando? Nem que o diabo queira! Vou mostrar a esses cães como se trava uma batalha!
+}
+Olone_dialog_22 {
+Ao contrário de vocês, não tenho o hábito de perder tempo com cerimônias antes de cortar a garganta de alguém.
+}
+Olone_dialog_23 {
+Ora, ora. A esquadra de Cartagena está prestes a nos encontrar espancados e exaustos, e vocês querem começar uma carnificina entre nossas próprias tripulações?
+}
+Olone_dialog_24 {
+Confio em você tanto quanto neles! Nem tente...
+}
+Olone_dialog_25 {
+Cale a boca e escute: vamos rebocar este navio e sair daqui antes que os homens de Cartagena enforquem todos nós numa verga. E você, não tenha dúvida, eles levariam direto aos porões da Inquisição. Se quiser, pode sentar em cima do ouro até chegarmos a Tortuga e dividirmos o saque segundo as leis da Irmandade da Costa.
+}
+Olone_dialog_26 {
+Argh... Que o diabo carregue vocês. Mas, em terra, eu mesmo vou pesar cada lingote e contar cada maldita pedra. E se faltar uma única piastra sequer — juro pela minha vida — vocês responderão por isso.
+}
+Olone_dialog_27 {
+Espero que sim. Ou terá de dividir conosco aquele meio milhão de piastras que escondeu.
+}
+Olone_dialog_28 {
+Então é por isso que está aqui? Não consegue tirar da cabeça o dinheiro que Michel reservou para preparar a expedição?
+}
+Olone_dialog_29 {
+Está insinuando alguma coisa sobre mim, seu canalha?
+}
+Olone_dialog_30 {
+E quer discutir que a companhia de mademoiselle Bellefleur é muito mais agradável do que sua cara eternamente azeda?
+}
+Olone_dialog_31 {
+Está vazio! Só um punhado de quinquilharias e moedas de cobre. Os bastardos levaram tudo, até a última piastra.
+}
+Olone_dialog_32 {
+Talvez só tenham escondido muito bem?
+}
+Olone_dialog_33 {
+Tenho faro para ouro, @<pchar>, e ele nunca me falhou. Revirei tudo aqui. Examinei cada fresta do chão e das paredes. Não, aqueles desgraçados levaram a tesouraria embora. Só me deixe chegar ao miserável que fez isso — juro que vou arrancar-lhe a alma com tenazes.
+}
+Olone_dialog_34 {
+Nenhum documento? Nada que indique para onde foi o ouro?
+}
+Olone_dialog_35 {
+Nada, que um raio me parta. Nem um único pedaço de papel. Malditos porcos castelhanos...
+}
+Olone_dialog_36 {
+Se encontrar alguma coisa, avise Michel. Eu preciso voltar a outros assuntos.
+}
+Olone_dialog_37 {
+Dou-lhe crédito, Michel. Os malditos castelhanos se lembrariam desse truque por muito tempo. Se sobrevivessem, é claro.
+}
+Olone_dialog_38 {
+Quero ver a cara deles quando meu presentinho cair em cima de suas cabeças... E vou consertar o navio.
+}
+Olone_dialog_39 {
+Passe para cá. Bem, boa sorte, cavalheiros da fortuna. Está na minha hora.
+}
+Olone_dialog_40 {
+Claro. Parto agora mesmo. E, se quer meu conselho, não organize uma grande bebedeira no assentamento. Isso não vai terminar bem.
+}
+
+LeBasque_Fransua_Olone_1 {
+Não se apressem em encher a garganta, senhores bucaneiros. Primeiro, ouçam-me – e o rum parecerá mais doce que o mel.
+}
+
+LeBasque_Fransua_Olone_2 {
+Como assim? Senti muita falta de vocês. E já que estou falando nisso, pensei em sugerir uma coisinha que vai deixar vocês todos com coceira.
+}
+
+LeBasque_Fransua_Olone_3 {
+Não cabe a você decidir, mas a eles. Um pequeno barco de entregas caiu em minhas mãos perto de Porto Rico. Um espião da realeza estava a bordo. O desgraçado conseguiu queimar quase todos os papéis que carregava e até tentou dar um tiro na própria cabeça. Não o deixamos morrer tão facilmente.
+}
+
+LeBasque_Fransua_Olone_4 {
+Claro. Ele era um sujeito durão, devo admitir. Mas não sou estranho a fazer a língua dos teimosos se abrir. Deitaram-no na areia quente, jogaram água nele e o deixaram secar ao sol. Repetiram isso até que suas costelas começaram a estalar.
+}
+
+LeBasque_Fransua_Olone_5 {
+O esquadrão, com seus porões repletos de prata, partirá em breve de Veracruz. Encontrará reforços vindos de Cartagena na costa de Cuba. Depois, navegará rumo ao Velho Mundo — se permitirmos, é claro.
+}
+
+LeBasque_Fransua_Olone_6 {
+Ele não conhecia a rota. Caso contrário, teria explicado tudo direitinho. Mas ele sabia quem estava explorando a baía para o ponto de encontro dos esquadrões.
+}
+
+LeBasque_Fransua_Olone_7 {
+Porque aquele comboio estava repleto de prata. Os navios estavam estritamente proibidos de entrar nos portos. Temiam que os marinheiros contassem ao primeiro bêbado que encontrassem sobre tamanha riqueza.
+}
+
+LeBasque_Fransua_Olone_8 {
+O nome dele é Tomás de Arellano. Ele é agente da Casa de Contratación. E atualmente está relaxando na vila de San Lázaro, em Cuba.
+}
+
+LeBasque_Fransua_Olone_9 {
+Pense o que quiser, Michel. Mas pense melhor em como reunir uma frota mais forte e recuperar a prata dos espanhóis antes que ela nos escape. A menos, é claro, que você planeje morrer neste buraco na miséria.
+}
+
+LeBasque_Fransua_Olone_10 {
+Eu extraí dele tudo o que ele sabia, Etienne. Nossa única pista é o documento criptografado que sobreviveu, o nome Arellano e a vila de San Lázaro. Tudo o que resta é ler o documento.
+}
+
+LeBasque_Fransua_Olone_11 {
+Então, teremos que visitar o Sr. Arellano na vila de San Lázaro e pedir educadamente esta chave. Michel, você estava procurando um alvo digno. Considere este pergaminho como meu ingresso.
+}
+
+LeBasque_Fransua_Olone_12 {
+Seu médico está desperdiçando remédio. Agora vou pressionar duas brasas nos calcanhares dele, e aquele passarinho vai começar a cantar feito louco.
+}
+
+LeBasque_Fransua_Olone_13 {
+Como vocês são mimadas... Algumas gotas de óleo fervente nos dedos e ele mesmo fará tudo, que beleza.
+}
+
+LeBasque_Fransua_Olone_14 {
+Não arranque a sua garganta, Etienne. Como você pode ver, ele não me matou. Ele lhe contará tudo o que você precisa saber. E se você estava tão ansioso para ir atrás dele, diga a ele — eu pedirei que ele se levante.
+}
+
+LeBasque_Fransua_Olone_15 {
+Você está começando a me irritar, garota. Chega de conversa fiada, querida! Vamos procurá-lo. Talvez não precisemos das mentiras dele, afinal.
+}
+
+LeBasque_Fransua_Olone_16 {
+Espero que minha perna morra... Enquanto eu arrasto os feridos e conto os mortos, você está olhando para o ouro?
+}
+
+LeBasque_Fransua_Olone_17 {
+Você acha que eu não sei o que você está aprontando? Não vou te deixar sozinho com o nosso ouro! Eu te conheço, Le Basque!
+}
+
+LeBasque_Fransua_Olone_18 {
+Foi exatamente o que eu disse! Você é um canalha desonesto, e eu não confiaria a você uma montanha de ouro e pedras preciosas como essa!
+}
+
+LeBasque_Fransua_Olone_19 {
+Chasse-partie... Talvez você queira pegar seu leque e se curvar para nós? Seja clara, minha querida. Não estamos em um palácio real.
+}
+
+LeBasque_Fransua_Olone_20 {
+Tudo isso é muito bonito, mas meu Fleo está podre de cabo a rabo. Não vou liderar homens para a batalha em um navio que vaza até mesmo ancorado.
+}
+
+LeBasque_Fransua_Olone_21 {
+Eu não te pedi nada. Apenas disse que precisava de tempo para conseguir uma nova embarcação.
+}
+
+LeBasque_Fransua_Olone_22 {
+Venham cá. Bem, adeus, senhores da fortuna. Tenho que ir.
+}
+
+LeBasque_Fransua_Olone_23 {
+Claro. Estou navegando agora mesmo. E se você quer um conselho, não dê uma festa com muita bebida no assentamento. Não vai acabar bem.
+}

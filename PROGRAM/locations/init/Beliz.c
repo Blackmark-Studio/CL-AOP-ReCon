@@ -1885,11 +1885,66 @@ int LocationInitBeliz(int n)
 	locations[n].locators_radius.reload.reload1_back = 2.0;
 
 	locations[n].reload.l2.name = "reload2_back";
+	locations[n].reload.l2.go = "Beliz_Jungle_05";
+	locations[n].reload.l2.emerge = "reload3_back";
+	locations[n].reload.l2.autoreload = "1";
+	locations[n].reload.l2.label = "Jungle";
+	locations[n].locators_radius.reload.reload2_back = 2.0;
+	n = n + 1;
+
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	// Джунгли
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	locations[n].id = "Beliz_jungle_05";
+	locations[n].id.label = "Jungle";
+	locations[n].image = "loading\outside\jungle.tga";
+	//Sound
+	locations[n].type = "jungle";
+	locations[n].islandId = "Beliz";
+	//Models
+	//Always
+	locations[n].filespath.models = "locations\Outside\Jungles\Jungle5";
+	Locations[n].models.always.jungle = "jungle5";	
+	Locations[n].models.always.locators = "jungle5_locators";		
+	Locations[n].models.always.grassPatch = "jungle5_grass";
+	Locations[n].models.always.grassPatch.texture = "grass\grassshore.tga.tx";	
+	Locations[n].models.always.l1 = "plan1";
+	Locations[n].models.always.l1.level = 9;
+	Locations[n].models.always.l1.tech = "LocationModelBlend";
+	Locations[n].models.always.l2 = "plan2";
+	Locations[n].models.always.l2.level = 8;
+	Locations[n].models.always.l2.tech = "LocationModelBlend";
+	Locations[n].models.always.l3 = "plan3";
+	Locations[n].models.always.l3.level = 7;
+	Locations[n].models.always.l3.tech = "LocationModelBlend";	
+	//Day
+	locations[n].models.day.charactersPatch = "jungle5_patch";
+	//Night
+	locations[n].models.night.charactersPatch = "jungle5_patch";	
+	//Environment
+	locations[n].environment.weather = "true";
+	locations[n].environment.sea = "false";
+	//Reload map
+	locations[n].reload.l1.name = "reload1_back";
+	locations[n].reload.l1.go = "Beliz_Mine";
+	locations[n].reload.l1.emerge = "gate_back";
+	locations[n].reload.l1.autoreload = "1";
+	locations[n].reload.l1.label = "Jungle";
+	locations[n].locators_radius.reload.Reload1_back = 2.0;
+
+	locations[n].reload.l2.name = "reload2_back";
 	locations[n].reload.l2.go = "Beliz_CaveEntrance_3";
 	locations[n].reload.l2.emerge = "reload2";
 	locations[n].reload.l2.autoreload = "1";
 	locations[n].reload.l2.label = "Jungle";
 	locations[n].locators_radius.reload.reload2_back = 2.0;
+
+	locations[n].reload.l3.name = "reload3_back";
+	locations[n].reload.l3.go = "Beliz_Jungle_03";
+	locations[n].reload.l3.emerge = "reload2_back";
+	locations[n].reload.l3.autoreload = "1";
+	locations[n].reload.l3.label = "Shore2";
+	locations[n].locators_radius.reload.Reload3_back = 2.0;
 	n = n + 1;
 
  	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -1937,8 +1992,8 @@ int LocationInitBeliz(int n)
 	locations[n].locators_radius.reload.reload1_back = 1.3;
 
 	locations[n].reload.l2.name = "reload2_back";
-	locations[n].reload.l2.go = "Beliz_jungle_03";
-	locations[n].reload.l2.emerge = "reload2";
+	locations[n].reload.l2.go = "Beliz_jungle_05";
+	locations[n].reload.l2.emerge = "reload2_back";
 	locations[n].reload.l2.autoreload = "1";
 	locations[n].reload.l2.label = "Jungle";
 	locations[n].locators_radius.reload.reload2_back = 2.0;
@@ -2100,6 +2155,81 @@ int LocationInitBeliz(int n)
 	locations[n].reload.l2.autoreload = "1";
 	locations[n].reload.l2.label = "Jungle";
 	locations[n].locators_radius.reload.reload2_back = 2.0;
+	n = n + 1;
+
+	/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////Заброшенный рудник
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	locations[n].id = "Beliz_Mine";
+    locations[n].id.label = "Minentown";
+    locations[n].image = "loading\outside\GateMine.tga";
+	//Sound
+	locations[n].type = "cave";
+	locations[n].islandId = "Mein";
+	locations[n].islandIdAreal = "Beliz";
+    //Models
+	locations[n].filespath.models = "Locations\Mine";
+    //Always
+	locations[n].models.always.mine = "mine";
+	locations[n].models.always.mine.tech = "DLightModel";
+    locations[n].models.always.locators = "minentown_locators";
+    locations[n].models.always.grassPatch = "mine_grass";
+	//Day
+	locations[n].models.day.charactersPatch = "mine_patch";
+	locations[n].models.day.fonar = "mine_fd";
+	//Night
+	locations[n].models.night.charactersPatch = "mine_patch";
+	locations[n].models.night.fonar = "mine_fn";
+	//Environment
+	locations[n].environment.weather = "true";
+	locations[n].environment.sea = "true";
+    //Reload map
+	// выход из шахты
+	locations[n].reload.l1.name = "gate_back";
+	locations[n].reload.l1.go = "Beliz_Jungle_05";
+    locations[n].reload.l1.emerge = "reload1_back";  
+    locations[n].reload.l1.autoreload = "0";
+    locations[n].reload.l1.label = "Jungle";
+
+	Locations[n].reload.l2.name = "reload_cave"; 
+	Locations[n].reload.l2.go = "Beliz_LowerShaft"; 
+    Locations[n].reload.l2.emerge = "reload1_back";   
+    Locations[n].reload.l2.autoreload = "0"; 
+    Locations[n].reload.l2.label = "Mines";
+	n = n + 1;
+
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	// Шахта низ
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	locations[n].id = "Beliz_LowerShaft";
+	locations[n].image = "loading\inside\cave.tga";
+	locations[n].id.label = "Mines";
+	//Sound
+	locations[n].type = "cave";
+	locations[n].islandId = "Mein";
+	locations[n].islandIdAreal = "Beliz";
+	//Models	
+	//Always
+	locations[n].filespath.models = "locations\inside\Beliz_LowerShaft";
+	locations[n].models.always.cavernBig1 = "cavernBig1";
+	locations[n].models.always.locators = "cavernBig1_locators";
+	//Day
+	// locations[n].models.day.charactersPatch = "cavernBig1_patch";
+	locations[n].models.day.charactersPatch = "cavernBig1_patch_tomb";
+	//Night
+	// locations[n].models.night.charactersPatch = "cavernBig1_patch";
+	locations[n].models.night.charactersPatch = "cavernBig1_patch_tomb";
+	//Environment
+	locations[n].environment.weather = "true";
+	Locations[n].lockWeather = "Inside";
+	Locations[n].QuestlockWeather = "23 Hour";
+	locations[n].environment.sea = "true";
+	locations[n].environment.weather.rain = false;
+ 	//Reload map
+	locations[n].reload.l1.name = "reload1_back";
+	locations[n].reload.l1.go = "Beliz_Mine";
+	locations[n].reload.l1.emerge = "reload_cave";
+	locations[n].locators_radius.item.button02 = 2.0;
 	n = n + 1;
 
 	

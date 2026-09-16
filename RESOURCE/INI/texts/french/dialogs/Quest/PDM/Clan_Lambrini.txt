@@ -404,7 +404,7 @@ Clan_Lambrini_113 {
 Je veux vendre quelque chose qu'aucun marchand de cette île n'achèterait. Ma cale contient une cargaison de rêve ! Des montagnes d'acajou, imagine un peu.
 }
 Clan_Lambrini_114 {
-Je знаю qu'on peut faire affaire avec toi. Nous t'attendrons dans un endroit appelé le cap Galera.
+Je sais qu'on peut faire affaire avec toi. Nous t'attendrons dans un endroit appelé le cap Galera.
 }
 Clan_Lambrini_115 {
 Je viendrai à coup sûr.

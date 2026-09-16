@@ -274,6 +274,17 @@ Piraci. To ludzie, którzy nie uznają żadnej bandery i żyją według Kodeksu 
 ~
 Dla każdego patrolu morskiego widok pirackiej bandery na horyzoncie to jak rzut bekonem do wygłodniałego wilka. Dla większości piratów są tylko dwa zakończenia – szubienica lub stryczek.
 }
+Pirate_bonuses_descr
+{
+Dodatkowa cecha postaci — "Agent przemytników".
+Możliwość kupowania kontrabandy nawet w sklepach.
+~
+Dodatkowe umiejętności początkowe: "Podstawowe umiejętności strzeleckie" i "Samonaprawa".
+~
+Przy wyborze klasy "Korsarz", dodatkowe przedmioty: Fragment mapy skarbów, 2500 piastrów.
+~
+Statek początkowy — "Slup".
+}
 Hunter_hint
 {
 Stosunek państwa, jego obywateli i żołnierzy do ciebie. Dobre uczynki na rzecz kraju podnoszą twoją reputację; złe mogą nawet sprawić, że wyznaczona zostanie nagroda za twoją głowę. To oznacza nieustanny pościg zarówno na lądzie, jak i na morzu.

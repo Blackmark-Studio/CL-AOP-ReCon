@@ -1,0 +1,27 @@
+Start_dialog_9 {
+Sei gegrüßt, Kollege. Ein gutes Schiff hast du da, solide gebaut, und die Mannschaft scheint etwas zu taugen - sieht man auf den ersten Blick.
+}
+Start_dialog_10 {
+Zeit ist Geld, Freund. Also raus damit, was willst du?
+}
+Start_dialog_11 {
+Vor nicht allzu langer Zeit ist hier ein schwerreicher Kerl aufgetaucht. Er stellt eine Flottille für irgendein großes und verdammt einträgliches Unternehmen zusammen. Und er sucht erfahrene Kapitäne mit erstklassigen Schiffen. So wie deins.
+}
+Start_dialog_12 {
+So, so. Und was geht mich das an?
+}
+Start_dialog_13 {
+Fortuna hat mir den Hintern zugedreht! Meine Schoner hat es bei der letzten Begegnung mit den Spaniern übel erwischt: Die Hälfte der Kanonen könnte ich gleich über Bord werfen, und von der Mannschaft ist kaum mehr als ein Haufen Krähen übrig. Der Kerl hat mein Schiff nur einmal angesehen und sofort beigedreht. Er brauche Seewölfe, sagt er, keine geprügelten Hunde.
+}
+Start_dialog_14 {
+Du hast mich doch nicht angehalten, um dich über dein Schicksal auszuweinen?
+}
+Start_dialog_15 {
+Stimmt. Dein Kahn ist in bester Ordnung, die Mannschaft einsatzbereit - dich wird er kaum abweisen. Wenn du etwas Gold verdienen willst, geh geradewegs in die Taverne und sprich mit dem Wirt. Er ist der Verbindungsmann dieses Geldsacks: Er sucht die Kapitäne persönlich aus und kennt alle Einzelheiten.
+}
+Start_dialog_16 {
+Und du verrätst mir diesen Tipp also allein aus lauter Edelmut?
+}
+Start_dialog_17 {
+Glaub es oder lass es, ich bin nicht neidisch. Aber falls wir uns wiedersehen, schuldest du mir einen.
+}

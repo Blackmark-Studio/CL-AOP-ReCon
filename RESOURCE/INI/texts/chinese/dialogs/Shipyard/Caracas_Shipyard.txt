@@ -1,39 +1,39 @@
 Caracas_Shipyard_1 {
-什么问题？
+什么问题？ 
 }
 Caracas_Shipyard_2 {
-你想干什么？
+你想干什么？ 
 }
 Caracas_Shipyard_3 {
 @<RandPhraseSimple>
 }
 Caracas_Shipyard_4 {
-不久前你试图问我一个问题……
+不久前你试图问我一个问题…… 
 }
 Caracas_Shipyard_5 {
-在我自己的船厂，甚至整个镇上，我还真没见过像你这么执着好奇的人。
+在我自己的船坞， 甚至整个镇上， 我还真没见过像你这么执着好奇的人。 
 }
 Caracas_Shipyard_6 {
-问这么多干嘛？俺就是造船的，咱们赶紧开始吧。
+问这么多干嘛？ 我就是造船的， 咱们赶紧开始吧。 
 }
 Caracas_Shipyard_7_m {
-我改主意了……
+我改主意了…… 
 }
 Caracas_Shipyard_7_f {
-我改变主意了……
+我改变主意了…… 
 }
 Caracas_Shipyard_8 {
-我现在没什么可说的。
+我现在没什么可说的。 
 }
 Caracas_Shipyard_9 {
 @<RandPhraseSimple>
 }
 Caracas_Shipyard_10 {
-嗯，我这记性好像不太行了……
+嗯， 我这记性好像不太行了…… 
 }
 Caracas_Shipyard_11 {
-嗯，不过……
+嗯， 不过…… 
 }
 Caracas_Shipyard_12 {
-咱们……
+咱们…… 
 }

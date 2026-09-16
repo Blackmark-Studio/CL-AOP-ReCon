@@ -38,6 +38,12 @@ SentJons_TownCave {en la mazmorra de Saint John's}
 SentJons_TownCave_box1 {bajo las tablas en un callejón sin salida}
 SentJons_TownCave_box2 {en un callejón sin salida de la mina}
 SentJons_TownCave_box3 {en el bloqueo}
+SentJons_TownCave_box4 {en el bloqueo con una antorcha}
+SantoDomingo_TownCave {en la mazmorra de Santo Domingo}
+SantoDomingo_TownCave_box1 {bajo las tablas en un callejón sin salida}
+SantoDomingo_TownCave_box2 {en un callejón sin salida de la mina}
+SantoDomingo_TownCave_box3 {en el bloqueo}
+SantoDomingo_TownCave_box4 {en el bloqueo con una antorcha}
 Barbados_Cave {en una cueva cerca de Bridgetown}
 Barbados_Cave_box1 {bajo las tablas en un callejón sin salida}
 Beliz_Cave {en una cueva a la derecha de la salida de Belize}
@@ -123,7 +129,7 @@ Tortuga_Grot {en una cueva frente a Fisheye Beach}
 Tortuga_Grot_box1 {un cofre en la orilla}
 Tortuga_Cave {en una mazmorra de Tortuga}
 Tortuga_Cave_box1 {un cofre tras una puerta cerrada}
-Trinidad_Grot {en una cueva frente al faro de Trinidad y Tobago}
+Trinidad_Grot {en una cueva frente al faro de Trinidad}
 Trinidad_Grot_box1 {un cofre en la orilla}
 FortFrance_Dungeon {en una mazmorra de Fort-de-France}
 FortFrance_Dungeon_box1 {un cofre en la elevación}
@@ -133,3 +139,5 @@ FortFrance_Dungeon_box4 {un cofre detrás de una puerta abierta en el nivel infe
 FortFrance_Dungeon_box5 {bajo cajas de madera}
 Providence_Cavern {en la cueva que conecta Morgan's Head con Old Providence Island}
 Providence_Cavern_box1 {un cofre detrás de estalagmitas en un callejón sin salida}
+Aruba_Grot           {en una cueva en lo profundo de la isla, cerca del pueblo caribe}
+Aruba_Grot_box1       {cofre sobre la gran piedra}

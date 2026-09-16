@@ -1,0 +1,400 @@
+LeBasque
+{
+Cień wielkiej sprawy
+}
+LeBasque.0
+{
+Od pewnego niezbyt szczęśliwego kapitana udało mi się dowiedzieć, że wpływowy człowiek zbiera najlepszych kapitanów Tortugi do wielkiego przedsięwzięcia. Skoro potrzebuje całej flotylli, zapewne chodzi o naprawdę pokaźny łup. Karczmarz pełni rolę łącznika — warto go wypytać i dowiedzieć się, co knują.
+}
+LeBasque.1
+{
+Człowiek werbujący kapitanów nazywa się Étienne Marceau. Najwyraźniej jest ostrożny i na początek powierzył mi prostsze zadanie. Dziś po północy niejaki Raoul Guillaume uda się na tajne spotkanie za bramami miasta. Mam go śledzić, dowiedzieć się, z kim się spotka i o czym będą rozmawiać. Najważniejsze — nie dać się wykryć i nie interweniować. Za przydatne informacje Marceau obiecał dziesięć tysięcy peso.
+}
+LeBasque.2
+{
+Marceau nie było już w karczmie. Według karczmarza można go znaleźć w porcie, na pokładzie 'Czarnej Mewy'.
+}
+LeBasque.3
+{
+Marceau dostał ode mnie wszystkie zdobyte informacje. Następne spotkanie odbędzie się o północy przy latarni, a tym razem nie mam tylko obserwować — trzeba wybić całą tę bandę. Wszystko ma wyglądać tak, jakby Raoul próbował oszukać Hiszpanów i za to zapłacił. Po wszystkim list trzeba dostarczyć Marceau.
+}
+LeBasque.5
+{
+Raoul zjawił się przy latarni, spodziewając się Vargasa, lecz zamiast Hiszpana czekało na niego trzech zbirów. Zabrali list, a zamiast obiecanego srebra wpakowali Raoulowi kulę i zrzucili ciało ze skały. Żeby nie nudził się w piekle, jego mordercy ruszyli za nim. List jest u mnie — pora odebrać zapłatę. Umówiliśmy się z Marceau w tawernie, więc pójdę prosto tam.
+}
+LeBasque.6
+{
+Marceau odebrał list i odliczył obiecane dziesięć tysięcy peso. Jutro rano będzie czekał na mnie w mieście, by przedstawić mnie Michelowi le Basque.
+}
+Old_campfire
+{
+Popiół starego ogniska
+}
+Old_campfire.0
+{
+Michel le Basque rozliczył się ze mną co do grosza i zlecił odnalezienie na Hispanioli starego bukaniera Nicolasa Rimalye. Trzeba dotrzeć do niego wcześniej niż Vargas, ten sam, z którym wiązało się pierwsze zlecenie. Za godzinę spotykam się z Marceau przy nabrzeżu — wie, od czego zacząć poszukiwania.
+}
+Old_campfire.1
+{
+Wygląda na to, że śladu Rimalye trzeba szukać w La Vedze. Tam obieramy kurs.
+}
+Old_campfire.2
+{
+Marceau poszedł odwiedzić jakiegoś starego znajomego, a ja zacznę szukać Rimalye od karczmy.
+}
+Old_campfire.3
+{
+Moje pytania potwierdziły informacje zdobyte przez Étienne’a: Rimalye udał się do starego pomostu za miastem, dziś zwanego przylądkiem Isabela. Marceau pójdzie lądem, a ja mam go osłaniać od strony morza i w razie potrzeby odbić bukaniera z rąk wroga.
+}
+Old_campfire.3.1
+{
+Wygląda na to, że Rimalye odpłynął już na Tobago. Innych tropów brak, więc pozostaje jedno — natychmiast ruszać za nim.
+}
+Old_campfire.4
+{
+Przy chacie Nicolasa przywitali nas Hiszpanie z parą moździerzy. Na szczęście drugi salwę mieli pechową: jedno z dział rozerwało, zabierając ze sobą obie obsługi. Vargas zdołał jednak uciec i schronić się na swoim okręcie. Marceau i Rimalye zgodnie odradzili mi pościg — aż nazbyt przypominało to próbę zwabienia nas w pułapkę. Nie było sensu się z nimi spierać. Sam Rimalye był mocno zdziwiony widokiem starego znajomego, choć najwyraźniej spodziewał się gości. Zgodził się z nami pójść, ale najpierw zaproponował zajrzeć do Le Francois i omówić wszystko przy kubku rumu.
+}
+Old_campfire.5
+{
+Rimalye spodziewał się nie ludzi Vargasa, lecz ludzi Mansfielda. Starzec naprawdę martwi się o los Jaco i obawia się, że prędzej czy później łowcy dopadną chłopaka. Nie trzeba było długo myśleć — dodatkowa szabla w takiej sprawie nie zaszkodzi. Jeśli uda nam się wyciągnąć René Duvala z więzienia w Santo Domingo, być może Mansfield zostawi Jaco w spokoju. Najpierw ruszymy do La Vegi, a tam zdecydujemy, co dalej.
+}
+Old_campfire.5.1
+{
+Ledwie wróciliśmy na statek, na horyzoncie pojawił się piracki slup i ruszył nam na przecięcie kursu. Wygląda na to, że obawy Rimalye nie były bezpodstawne. Trzeba tym draniom wyjaśnić, że głowy Jaco nie dostaną.
+}
+Old_campfire.6
+{
+Marceau ułożył ryzykowny plan: związać Jaco i wprowadzić go do więzienia jako schwytanego zbiega. Po poprzedniej próbie uwolnienia Duvala Hiszpanie z pewnością go pamiętają. Teraz trzeba dostać się do Santo Domingo i odegrać wszystko tak, by nikt nie podważył naszej historii.
+}
+Old_campfire.7
+{
+Duval jest wolny. Marceau wraz z Rimalye i Jaco udał się do Mansfielda uregulować stare rachunki, a mnie pozostaje czekać na wynik. Jutro o drugiej po południu spotkamy się w porcie La Vegi.
+}
+Old_campfire.8
+{
+Sprawa z Mansfieldem załatwiona. Kurs na Tortugę!
+}
+Old_campfire.9
+{
+Rimalye został dostarczony, więc zadanie wykonane. Można złapać oddech, a jutro zajrzeć do le Basque’a po nagrodę. Przy okazji mam nadzieję wreszcie dowiedzieć się, kim jest Vargas i dlaczego raz po raz staje nam na drodze.
+}
+Hunting_huntsman
+{
+Polowanie na łowców
+}
+Hunting_huntsman.0
+{
+Pora wysłać dona Diega Vargasa na tamten świat. Historia tego ogara jest pouczająca... Niegdyś był świetnym oficerem hiszpańskiej Armady, lecz podczas ataku flibustierów stracił królewski skarb. Skazany i okryty hańbą, sam zaoferował Koronie swoje usługi. Teraz bezlitośnie ściga bractwo bukanierów, licząc, że odzyska dobre imię i fotel gubernatora Maracaibo.
+
+Le Basque zamierza likwidować wroga metodycznie. W Hawanie przebywa sekretarz i skarbnik Vargasa — Esteban Molina, przez którego przechodzą wszystkie pieniądze i tajne depesze. Od dwóch tygodni, pod przykrywką marsylskiego handlarza winem, informacje wywąchuje tam agent le Basque’a — Gaspard Leroux. Mam znaleźć Leroux, dotrzeć do Moliny i wziąć skarbnika żywcem. Cóż, kurs na Hawanę.
+}
+Hunting_huntsman.1
+{
+Gaspard Leroux przekazał w Hawanie złe wieści... Skarbnik uciekł wczoraj na statku „La Paloma”, obierając kurs na Santa Catalinę. Ma przy sobie szkatułkę ze wszystkimi sekretami Vargasa. Mam dogonić statek, wziąć Molinę żywcem i zdobyć dokumenty, nie posyłając brygu na dno zbyt wcześnie. Stawiam żagle.
+}
+Hunting_huntsman.2
+{
+Molina okazał się szybszy. „La Paloma” zdążyła rzucić kotwicę przy Santa Catalinie, a Molina ukrył się bezpiecznie za murami hiszpańskiego fortu. Szukanie go w tym gnieździe os to pewne samobójstwo — rybka uciekła razem ze wszystkimi sekretami Vargasa. Wracać do le Basque’a z pustymi rękami to jak podpisać na siebie wyrok śmierci...
+}
+Hunting_huntsman.3
+{
+Udało się dogonić uciekiniera, ale w ferworze walki bryg poszedł na dno razem z Moliną i wszystkimi sekretami Vargasa. Le Basque jasno dał do zrozumienia: martwy skarbnik i utopione papiery nie są warte nawet złamanego piastra. Wracać do niego z takimi wieściami to najprostszy sposób, by dostać kulę. O tej sprawie trzeba będzie zapomnieć...
+}
+Hunting_huntsman.4
+{
+„La Paloma” została zdobyta abordażem. Molina próbował straszyć mnie swoimi koneksjami, lecz na samo wspomnienie le Basque’a zbladł i bez słowa zszedł do ładowni. Można wracać na Tortugę.
+}
+Hunting_huntsman.5
+{
+Jeniec i jego dokumenty są już w rękach le Basque’a. Teraz jednak martwi go nie tylko Hiszpan, lecz także Jaco. Nasz dzielny korsarz wyszedł rano do dżungli i wciąż nie wrócił. Według Michela zgubienie się przez tego spryciarza jest równie prawdopodobne jak utonięcie ryby. Jeśli ma rację, lepiej się pospieszyć. Być może w selwie wciąż uda się znaleźć jego ślady.
+}
+Hunting_huntsman.6
+{
+Jaco odnalazł się w jaskini. Ludzie Vargasa próbowali wyciągnąć z niego informacje, ale udało się dotrzeć do nich na czas. Chłopak przyniósł znakomite wieści — don Diego wyczuł obserwację w Hawanie, zaszył się i rozesłał swoich poruczników po archipelagu, by szykowali się do wojny. Podczas przesłuchania Molina wydał ich wszystkich, więc le Basque postanowił odrąbać Vargasowi ręce.
+Ignacio Vela ukrył się w San Juan — jest ostrożny, więc trzeba usunąć go po cichu.
+Sebastián Rojas okopał się w obozie w jamajskiej dżungli; tam czeka nas szturm.
+Martín Quesada ukrywa się przy Bermudach i nie schodzi na ląd — jego weźmiemy od strony morza.
+Le Basque zaczął angażować Jaco w takie sprawy... Młodzik wszedł na pokład mojego statku.
+Jutro mam zajrzeć do le Basque’a. Będzie tam Étienne Marceau, który popłynie ze mną na własnym okręcie. A póki mam czas, trzeba odnaleźć starego Rimalye w dżungli... Chciał ze mną porozmawiać.
+}
+Hunting_huntsman.6.1
+{
+Stary bukanier Nicolas Rimalye ostatecznie udusił się z nudów na lądzie i uparcie poprosił o miejsce oficera na moim pokładzie. Nie pozostało mi nic innego, jak spełnić prośbę weterana i przyjąć go do kadry. Szermiercze pojedynki niech zostaną młodym, ale celne oko i ciężki muszkiet tego starego myśliwego jeszcze nie raz mi się przydadzą.
+}
+Hunting_huntsman.6.2
+{
+Stary myśliwy Nicolas Rimalye desperacko prosił o miejsce w mojej załodze, chcąc zamienić spokojną starość na dym prochowy. Przy całym szacunku dla jego dawnych zasług musiałem odmówić. Lepiej niech dożyje swoich dni na lądzie przy kubku mocnego rumu. Tym razem popłynie ze mną, by pilnować Jaco, lecz potem zejdzie na ląd razem z nim.
+}
+Hunting_huntsman.6.3
+{
+Étienne Marceau dołączył do mojej eskadry. Jego doświadczenie i chłodna kalkulacja znakomicie uzupełnią nas podczas zbliżającego się polowania na ludzi Vargasa.
+}
+Hunting_huntsman.7
+{
+Quesada opuścił swoją kryjówkę na Bermudach tak pospiesznie, że zostawił na brzegu własnego oficera. Uraza rozwiązała Hiszpanowi język: don Martín ruszył ku Turks, gdzie czekają na niego dwa statki z zaopatrzeniem.
+}
+Hunting_huntsman.8
+{
+Okręty wsparcia przysłane przez Vargasa nie pomogły Hiszpanowi. Quesada nie żyje. Don Diego stracił swojego najlepszego morskiego ogara.
+}
+Hunting_huntsman.9
+{
+Rzuciliśmy kotwicę u wybrzeży Hispanioli, w zatoce Fajardo. Nie możemy otwarcie wejść do portu. Plan Marceau jest następujący... Rozdzielamy się: młody Jaco idzie do miasta śledzić łącznika dona Veli, a ja do karczmy. Mam tam znaleźć niejakiego Bartolomea i przekonać go, by zostawił otwarte drzwi urzędu portowego.
+}
+Hunting_huntsman.9.1
+{
+Spotkanie z Bartolomeem doszło do skutku. Według niego jutro po północy drzwi urzędu portowego będą otwarte. Trzeba się tam zakraść i ukraść czysty kastylijski blankiet.
+}
+Hunting_huntsman.10
+{
+Udało się dostać do urzędu portowego San Juan. Oficjalny kastylijski blankiet jest już u mnie. Teraz kolej na Marceau — zamieni tę pustą kartkę w wyrok śmierci dla dona Ignacia Veli. Étienne powinien być w miejscowej karczmie.
+}
+Hunting_huntsman.11
+{
+Blankiet jest już u Marceau, a chwilę później zjawił się Jaco z wiadomościami. Schwytał łącznika i wyciągnął z niego miejsce spotkania — miejski kościół. Don Ignacio Vela okazał się jednak wyjątkowym paranoikiem: na spotkanie potrzebne są hasło i specjalna przepustka — wenecki cekin. Problem w tym, że jeniec uparł się i za nic nie chce oddać monety. Chłopak wykazał się rozsądkiem: żeby krzyki przesłuchiwanego nie ściągnęły patrolu, zawlókł go na plażę Fajardo. Trzeba osobiście przejść się na brzeg. Zobaczymy, jak ten fanatyk zaśpiewa, gdy ja się za niego wezmę.
+}
+Hunting_huntsman.12
+{
+W końcu udało się wytrząsnąć potrzebne informacje z tego uparciucha. Kilka czułych słówek i perspektywa pożarcia żywcem przez dzikie kraby szybko rozwiązały mu język. Wenecki cekin był zaszyty w podszewce buta, a odzew na spotkanie w kościele brzmi: „Ptaki lecą na południe”. Mam już przepustkę do dona Ignacia Veli.
+}
+Hunting_huntsman.13
+{
+Łącznik zdołał się uwolnić i zastrzelił strażnika. Trzeba było wykończyć drania...
+}
+Hunting_huntsman.14
+{
+Marceau już odszedł, zostawiając list u Jaco. Poradził chłopakowi, żeby następnym razem uważniej pilnował jeńców... W naszej robocie nie ma drobiazgów. Przepustka jest, list też. Droga prowadzi mnie do miejskiego kościoła po duszę dona Ignacia.
+}
+Hunting_huntsman.15
+{
+Sprawa załatwiona. Ignacio Vela stanął przed sądem przodków, a sfabrykowany list bezpiecznie spoczywa w jego kaftanie. W kościele było cicho; nikt nie widział, co się stało. Pułapka się zatrzasnęła, a gdy straż znajdzie ciało, odkryje 'niepodważalne dowody' jego zdrady. Pora znikać i wracać na statek, zanim zbiegną się tu patrole.
+}
+Hunting_huntsman.16
+{
+Marceau zaproponował napuścić na Hiszpanów miejscowy garnizon i przekazał mi przechwycone dokumenty ze współrzędnymi obozu. Idę prosto do komendantury fortu Port Royal, do dowódcy Hollisa. Zaproponuję mu te dane wywiadowcze w zamian za wsparcie ogniowe jego żołnierzy.
+}
+Hunting_huntsman.17
+{
+Droga do fortu jest dla mnie zamknięta, dlatego Marceau zorganizował tajne spotkanie i przekazał mi przechwycone dokumenty ze współrzędnymi obozu. Dowódca Hollis będzie czekał na mnie na ścieżce prowadzącej do fortu Port Royal. Zaproponuję mu te informacje w zamian za żołnierzy.
+}
+Hunting_huntsman.18
+{
+Umowa z dowódcą Hollisem zawarta. Angielska piechota zapewni wsparcie ogniowe, a w zamian zabierze cały hiszpański skarb i zaopatrzenie. Uczciwa cena za życie naszych marynarzy. Anglicy będą czekać na podejściach do obozu Rojasa jutro wieczorem. Trzeba wrócić do zatoki Portland i przekazać Marceau dobre wieści.
+}
+Hunting_huntsman.19
+{
+Sprawiedliwości stało się zadość. Sebastián Rojas nie żyje, a jego obóz pochłonął oczyszczający ogień. Jeden z łańcuchowych psów Vargasa trafił do piekła. Michel z pewnością będzie zadowolony z naszej roboty. Pora wracać na statek.
+}
+Hunting_huntsman.20
+{
+Polowanie zakończone. Wszyscy trzej porucznicy Vargasa udali się na spotkanie z diabłem. Zadaliśmy wrogowi druzgocący cios, pozbawiając go najlepszych ogarów i podrzynając gardło jego ambicjom. Pora wracać do Michela le Basque z wieściami o zwycięstwie. Marceau odłączył się od eskadry i razem z Jaco ruszył prosto do Michela. Ja też nie powinienem zwlekać z powrotem do obozu bukanierów.
+}
+Hunting_huntsman.21
+{
+Michel le Basque potrafi być wdzięcznym sojusznikiem. Pięćdziesiąt tysięcy brzęczących piastrów to bardzo godziwa zapłata za głowy trzech poruczników Vargasa. Srebro przyjemnie ciąży w kieszeni, a nasz główny wróg zaszył się w norze i liże rany.
+Mamy tydzień zasłużonego odpoczynku, podczas gdy szpiedzy Michela szukają nowych tropów. Niech załoga spuści parę i nacieszy się rumem — zasłużyliśmy na to. Za siedem dni odwiedzę le Basque’a po nowe rozkazy.
+}
+Brides_Tortuga
+{
+Róża Wiatrów
+}
+Brides_Tortuga.0
+{
+Le Basque wreszcie odkrył karty. Jego prawdziwym celem jest Maracaibo. O niezdobytości tego miasta krążą niemal legendy. Ale im pewniej ludzie czują się bezpieczni, tym szybciej tracą czujność. Przedsięwzięcie jest ryzykowne, lecz łup zapowiada się tak bogaty, że nawet najostrożniejszy człowiek dwa razy zastanowi się, zanim odmówi. Zanim rzucimy wyzwanie Hiszpanom na Mainie, trzeba rozprawić się z zagrożeniem tuż pod naszym nosem. Wygląda na to, że Vargas znów uderzył z ukrycia i przejął francuską fleutę „Róża Wiatrów”. Michel zlecił mi rozmowę z gubernatorem d’Ogeronem i ustalenie wszystkiego, co rezydencja wie o zaginięciu statku.
+}
+Brides_Tortuga.1
+{
+Gubernator d’Ogeron potwierdził najgorsze obawy: fleuta „Róża Wiatrów” zniknęła bez śladu na podejściu do Tortugi. Na pokładzie byli osadnicy, bez których plany rozwoju kolonii staną pod znakiem zapytania. O Urbainie Bellefleurze gubernator nie wspomniał ani słowem, ale trudno uznać to za przypadek — o takich sprawach nie rozmawia się z obcymi. Henri Tessier powiedział, że patrole nie znalazły ani śladów katastrofy, ani walki. Fleuta albo zeszła z kursu, albo ktoś bardzo się postarał, by jej zniknięcie pozostało niezauważone. Ostatni trop to handlarz ryb Laurent. Tessier jest pewien, że może wiedzieć coś, co umknęło patrolom.
+}
+Brides_Tortuga.2
+{
+Stary Laurent nie zawiódł. Jego znajomi przemytnicy niemal zderzyli się z „Różą Wiatrów” na otwartym morzu. Fleuta płynęła bez świateł wzdłuż brzegu, po czym skierowała się ku północnej części wyspy. Ledwie się tego dowiedziałem, portowy chłopak wręczył mi notatkę. Nieznajomy twierdzi, że szukanie fleuty nie ma już sensu, i proponuje spotkanie o północy na cmentarzu. Osobliwe miejsce na rozmowę. Zobaczymy, kto przyjdzie na to rendez-vous.
+}
+Brides_Tortuga.3
+{
+Spotkanie na cmentarzu wiele wyjaśniło. Vargas nie tylko przejął „Różę Wiatrów” — zdążył głęboko przeniknąć do garnizonu Tortugi i przekupić część straży. Wygląda na to, że d’Ogeron od dawna podejrzewał zdradę, dlatego szukał wsparcia Zakonu Maltańskiego, by w odpowiedniej chwili oczyścić garnizon i tymczasowo powierzyć ochronę miasta ludziom, którym można ufać.
+Osadników ukryto w katakumbach pod Tortugą pod strażą sprzedajnych francuskich żołnierzy. Marie Bellefleur nie ma wśród nich: Vargas zabrał ją ze sobą i odszedł z najwierniejszymi ludźmi. Dowódca straży został w podziemiach i zapewne wie, dokąd ruszyli. Trzeba wziąć go żywcem.
+}
+Brides_Tortuga.4
+{
+Zdrajcy dostali to, na co zasłużyli — podróż do siedziby Szatana. Jeńcy ruszyli do gubernatora. Urbaina Bellefleura jednak wśród nich nie było. Najpewniej albo nie przeżył zajęcia statku, albo zabrano go gdzie indziej. Vargas nie zdołał uciec daleko: zabrał Marie na szkuner stojący przy plaży Rybie Oko i czekający na odpływ. Rimalye zaproponował zuchwały plan — przejść tajnym tunelem do brzegu, dopłynąć do szkunera i po cichu wybić wachtę. Jednego tylko nie rozumiem: po co Vargas ciągnął jeńców do katakumb?
+}
+Brides_Tortuga.5
+{
+Szkuner przy plaży Rybie Oko okazał się przynętą. Vargas wynajął jego załogę, by sprowadzić nas na fałszywy trop, a potem kazał zabić wszystkich, którzy mogli o tym opowiedzieć. Kapitan statku pożył jednak dość długo, by wskazać nam kierunek: przed masakrą Vargas wypytywał o zatokę Chetumal w pobliżu Belize, zabrał ze sobą nawigatora znającego tamte wody i ruszył właśnie tam. Marie nie było na szkunerze, więc wciąż jest w jego rękach.
+Rimalye uważa, że Vargas celowo zostawił nam trop i czeka, aż rzucimy się w pościg. Ja sądzę inaczej: próbował nadać swojej ucieczce pozory sprytnej pułapki, a w rzeczywistości po prostu zwiał z podkulonym ogonem. Nie pozwolę mu ujść. Nie teraz, gdy jest tak słaby.
+}
+Brides_Tortuga.6
+{
+A jednak Rimalye miał rację... Vargas chciał zwabić le Basque’a w pułapkę, lecz zamiast niego wpadliśmy w nią Nicolas i ja. Gdyby Marceau nie zjawił się w porę, ta kopalnia stałaby się naszym ostatnim miejscem spoczynku.
+Tak czy inaczej, przechytrzyliśmy Vargasa. Jego korweta poszła na dno i nie ma już drogi odwrotu. Trzeba znaleźć studnię i wreszcie oddać mu dług. A co ważniejsze — wyrwać Marie Bellefleur z jego szponów.
+}
+Brides_Tortuga.7
+{
+Do diabła... Ostrze Vargasa było wysmarowane jakimś świństwem. Zaledwie kilka sekund nieprzytomności wystarczyło mu, by uciec. Marie żyje, ale wciąż jest nieprzytomna. Niech go diabli... Nie chcę zostawiać jej tu samej, ale nie mogę pozwolić temu draniowi odejść. Trzeba dogonić Vargasa i skończyć to tu i teraz.
+}
+Brides_Tortuga.8
+{
+Trucizna Vargasa wyłączyła mnie z życia na dwa dni. Marceau i Rimalye zajęli się jednak zarówno mną i Marie, jak i oddziałami zaszytymi w selwie. Czuję się, jakby przeciągnięto mnie pod kilem, lecz z panią Bellefleur jest chyba znacznie gorzej. Podczas zajęcia „Róży Wiatrów” Hiszpanie wymordowali niemal wszystkich mężczyzn na pokładzie. Jej wuj był wśród zabitych. Dla Marie to straszliwy cios. Trzeba z nią porozmawiać, gdy dojdę do siebie.
+Na razie plan jest prosty: kurs na Tortugę. Michel z pewnością ucieszy się, gdy usłyszy, jak zakończyło się nasze polowanie.
+}
+Brides_Tortuga.9
+{
+Michel jest zadowolony z zakończenia całej historii. Nic dziwnego: Vargas rozbity, papiery Marie dostarczone, Tortuga uratowana, a osada zyskała nowe mieszkanki, które najwyraźniej postanowiły porządnie uczcić przybycie.
+D’Ogeron przekazał mi podziękowania za zlikwidowanie sprzedajnych żołnierzy i uratowanie osadników, a przy okazji pozwolił im osiąść pod skrzydłami Michela.
+Za wszystko dostałem pięćdziesiąt tysięcy. Le Basque kazał przynajmniej część wydać na odpoczynek. Jak tu mu odmówić? Zwłaszcza że jutro trafi się ku temu znakomita okazja.
+}
+Royal_jackpot
+{
+Królewska pula
+}
+Royal_jackpot.0.0
+{
+Święto trwa w najlepsze. Ogniska płoną, rum leje się strumieniami, a osadę zdążono nawet trochę przystroić na tę okazję. Tylko dziewczyn na razie nie widać. Zanim dołączę do zabawy, warto odszukać Rimalye, Jaco, Étienne’a i Marie i zobaczyć, jak się urządzili.
+}
+Royal_jackpot.0
+{
+Święto skończyło się przedwcześnie i bardzo niespodziewanie... François L’Olonnais zjawił się w osadzie i publicznie oznajmił, że mamy szansę przechwycić srebrną flotę z Veracruz. Podchmieleni bukanierzy natychmiast podchwycili pomysł i nie zostawili Michelowi najmniejszej możliwości odmowy.
+Na początek razem z Marceau, Marie, L’Olonnaisem i Indianinem Atauco musimy znaleźć agenta Casa de Contratación — Tomása de Arellano — i zmusić go, by zdradził zatokę, w której mają się spotkać hiszpańskie eskadry.
+Skoro chodzi o południe Kuby, poszukiwania wioski San Lázaro najlepiej zacząć od przylądka Anna Maria.
+}
+Royal_jackpot.1
+{
+Południowe wybrzeże Kuby przywitało nas wrogimi żaglami. Na horyzoncie wyrósł hiszpański statek 'San Jacinto', który zauważywszy nas na podejściu do San Lázaro, natychmiast ruszył do przechwycenia. Jeśli wysłano go po Arellano, w kajutach kryją się rozkazy, a oficerowie znają odzew potrzebny do bezpiecznego spotkania. Postaram się nie posłać tej łajby na dno zbyt szybko: rozpaczliwie potrzebuję odpowiedzi, a martwi, jak wiadomo, są kiepskimi rozmówcami.
+}
+Royal_jackpot.2
+{
+W drodze do rybackiej osady zaatakowała nas hiszpańska fregata „San Jacinto”. Jej pojawienie się na tych wodach mogło być przypadkiem. A mogło nie być.
+Teraz już się tego nie dowiemy — posłaliśmy okręt na dno.
+}
+Royal_jackpot.3
+{
+W drodze do rybackiej osady zaatakowała nas fregata „San Jacinto” pod hiszpańską banderą. Jej pojawienie się na tych wodach mogło być przypadkiem. A mogło nie być.
+Przy życiu został tylko kwatermistrz, a i on wykrwawia się. Trzeba natychmiast zejść do ładowni i go przesłuchać. Zanim dopadnie go L’Olonnais.
+}
+Royal_jackpot.4
+{
+Przesłuchanie kwatermistrza przyniosło rezultat. Kapitan „San Jacinto” płynął tam, gdzie my — do wioski San Lázaro, by zabrać naszego drogiego Tomása de Arellano wraz z jego ważną pocztą. Przed osadą mają nas zatrzymać i zapytać o hasło. Teraz je znamy: „Santa Clara nie gasi świateł”.
+Więcej nie udało się wycisnąć z Hiszpana. Zresztą nie było potrzeby.
+}
+Royal_jackpot.5
+{
+Poszło jak po nutach. Ten nadęty Kastylijczyk uwierzył w bajkę o kapitanie de Aragón i sam przyznał, że ma przy sobie tajne dokumenty. Teraz trzeba go „odprowadzić” na statek. Postaramy się bez zbędnego hałasu, żeby nie spłoszyć zwierzyny przed czasem.
+}
+Royal_jackpot.5.1
+{
+Nie udało się po cichu dotrzeć do San Lázaro. Po walce przy posterunku wioska podniosła alarm i drogę do domu Arellano musieliśmy wyrąbać bronią. Sam agent żyje, ale doskonale rozumie już, z kim ma do czynienia. Trzeba zaprowadzić go siłą do zatoki Anna Maria i wyciągnąć informacje bez żadnej maskarady.
+}
+Royal_jackpot.6
+{
+Arellano próbował uciec — i zapłacił za to życiem: ten głupiec L’Olonnais nie zdołał się powstrzymać i wpakował mu kulę. Ledwo udało mi się powstrzymać, by nie zrobić z nim tego samego.
+Przed śmiercią Arellano wziął ode mnie słowo, że wpłacę dwadzieścia tysięcy peso na konto jego córki, i zdradził miejsce spotkania galeonu skarbowego „Margarita” z eskortą oraz posiłkami z Cartageny. Po połączeniu utworzą eskadrę zwaną „Tierra Firme”.
+Atak na nią byłby czystym samobójstwem: takiej siły nie pokonamy, więc z „Margaritą” trzeba rozprawić się przed nadejściem posiłków. Atauco przekaże Michelowi miejsce spotkania sygnałami dymnymi. Spotkamy się już tam. Trzeba spieszyć do punktu zaznaczonego przez Marie na mapie.
+}
+Royal_jackpot.7
+{
+Oto i „Margarita”! Chronią ją cztery okręty i każdy trzeba będzie posłać na dno, zanim dobierzemy się do galeonu skarbowego. Gdy le Basque zwiąże go walką z jednej burty, podejdę z drugiej i każę zarzucić haki abordażowe. Ściśniemy Hiszpanów na ich własnym pokładzie i długo nie wytrzymają.
+}
+Royal_jackpot.8
+{
+Michelowi udało się zachować „Margaritę” wraz z całym jej skarbem. Galeon naprędce załatano, po czym osobiście objął dowództwo i ruszył na Tortugę. Tam le Basque policzy zdobycz i przygotuje wszystko do podziału. Ja mam na razie wolne ręce — mogę zająć się własnymi sprawami, a później pozostanie tylko wrócić po należną mi część.
+}
+Royal_jackpot.9
+{
+Milion dwieście tysięcy peso... Wystarczy wypowiedzieć tę sumę na głos, by zrozumieć, dlaczego L’Olonnaisowi pomieszało się w głowie.
+Mnie przypadło sto tysięcy, a do tego „Margarita”, wspaniały hiszpański galeon. Kolejne pięćset pięćdziesiąt tysięcy le Basque odłożył na przygotowania do szturmu Maracaibo. Pół miliona tylko po to, by dotrzeć pod jego mury... Co więc czeka nas za nimi?
+Za dwa tygodnie znowu do Michela. Niech piorun mnie trafi, jeśli się spóźnię.
+}
+Royal_jackpot_Anna
+{
+Ostatnia wola Arellano
+}
+Royal_jackpot_Anna.0
+{
+Przed śmiercią Tomás de Arellano wziął ode mnie słowo: w ciągu trzech miesięcy mam w jego imieniu wpłacić w banku w Cumanie dwadzieścia tysięcy piastrów na nazwisko jego córki Anny i przekazać jej, że błogosławi jej małżeństwo z Sebastiánem. Jak by nie było, słowa danego umierającemu trzeba dotrzymać.
+}
+Royal_jackpot_Anna.1
+{
+Dwadzieścia tysięcy piastrów wpłacono w banku w Cumanie na nazwisko Anny Arellano. Lichwiarz przekaże jej błogosławieństwo ojca. Moje sumienie wobec Arellano jest czyste.
+}
+Royal_jackpot_Anna.2
+{
+Minęły trzy miesiące. Dwadzieścia tysięcy piastrów na nazwisko Anny Arellano nie zostało wpłacone. Nie udało mi się dotrzymać słowa danego jej ojcu. Teraz jest już za późno na usprawiedliwienia.
+}
+Keys_lagoon
+{
+Klucze do laguny
+}
+Keys_lagoon.0
+{
+Minęły dwa tygodnie. Pora wracać do obozu bukanierów na Tortudze. Jeśli Michel le Basque nie marnował czasu, plan wyprawy na Maracaibo powinien być już gotowy.
+}
+Keys_lagoon.1
+{
+Obóz bukanierów huczy jak ul. Przez dwa tygodnie ludzi przybyło tu trzykrotnie: wszędzie sterty zapasów i uzbrojeni po zęby zabijacy. Michel dobrze się przygotował. Chyba pora go odwiedzić.
+}
+Keys_lagoon.2
+{
+Mamy plany rozmieszczenia hiszpańskich umocnień, ale nie mamy mapy podejść do nich. Atakowanie w takich warunkach najtrudniejszej do zdobycia twierdzy archipelagu byłoby szaleństwem. Muszę znaleźć człowieka, który potrafi rozwiązać ten problem — Daniela Montbarsa. Mieszka na Arubie, na zachód od Curaçao. Wyruszam tam natychmiast. Michel, Marceau i L’Olonnais dołączą do mnie, gdy tylko zakończą przygotowania.
+}
+Keys_lagoon.3
+{
+Na Arubie wyraźnie dzieje się coś niedobrego. Mam nadzieję, że Montbars ma dość ludzi, by ruszyć z nami na wyprawę.
+}
+Keys_lagoon.4
+{
+Montbars zgodzi się pójść z nami na Maracaibo dopiero wtedy, gdy Aruba zostanie oczyszczona z Hiszpanów. Okopali się w kopalniach soli i trzymają tam jeńców, wśród nich Anacaonę — córkę Yamai, wodza miejscowych Indian. Właśnie tych Indian, których pomocy potrzebujemy, by odnaleźć klucz do Maracaibo. Z przyjemnością pomogę im pozbyć się kastylijskiej zarazy. Zacznę od żołnierzy, których ludzie Montbarsa wybili w selwie. Według Indianina dowódca oddziału miał przy sobie ważne dokumenty. Od nich zacznę.
+}
+Keys_lagoon.5
+{
+Oto i dokumenty. Przeszukiwanie ciał, które zdążyły już zacząć się rozkładać, nie należy do przyjemności, ale sprawa załatwiona. Można wracać do Montbarsa.
+}
+Keys_lagoon.6
+{
+Hiszpanie szykowali atak na indiańską osadę. Gdy Montbars to przeczytał, cała jego uprzejmość zniknęła bez śladu. Stał przede mną człowiek, którego Hiszpanie nazwali Niszczycielem. Urządzimy zasadzkę w selwie: wpuścimy ich głębiej i zadamy śmiertelny cios.
+}
+Keys_lagoon.7
+{
+Hiszpanie dostali dokładnie to, co szykowali innym, i teraz na zawsze zostaną w dżungli Aruby, tam, gdzie dopadła ich zapłata. Daniel postanowił wykorzystać chwilę i przedstawić mnie wodzowi Indian. Właśnie do niego ruszamy.
+}
+Keys_lagoon.8
+{
+Spotkaliśmy się z wodzem. Jak ostrzegał Montbars, dopóki jego córka jest w niewoli, nie ma mowy, by wysłał ze mną ludzi na Maracaibo. Dla Daniela rozprawienie się z Cabrerą to sprawa honoru: dał słowo szlachcica, że Anacaona wróci do domu cała i zdrowa. Pora szykować się do walki, a potem wrócić do Montbarsa w obozie.
+}
+Keys_lagoon.9
+{
+Podejścia do kopalń zostały oczyszczone. Pozostało rozprawić się z tymi, którzy zasiedli w środku, i nie dopuścić do śmierci Anacaony.
+}
+Keys_lagoon.10
+{
+Nasze z Montbarsem oczyszczanie wyspy z Hiszpanów zakończyło się sukcesem. I uczciliśmy go jak należy — aż za dobrze! Głowa wciąż ciąży mi jak żeliwna kula, w którą ktoś wali młotem. Nie ma jednak czasu na leżenie. Eskadra jest w komplecie i gotowa do wyjścia.
+Do Michela przywiodła mnie jedna rzecz — chęć udziału w wielkim przedsięwzięciu. Teraz jesteśmy o krok od tego, by złoto Maracaibo znalazło się w naszych kieszeniach.
+}
+Keys_lagoon.11
+{
+Fort Maracaibo z bliska wygląda groźnie. Czeka nas ciężki pojedynek artyleryjski, a potem szturm lądowy. Pora udowodnić Hiszpanom, że ich twierdza nie jest aż tak niezdobyta, jak im się wydaje.
+}
+Keys_lagoon.12
+{
+Fort padł, ale Maracaibo okazało się puste. Czyżby gubernator zdążył wywieźć całe złoto, podczas gdy szturmowaliśmy twierdzę? Michel jest wyraźnie zaniepokojony. Razem z Nicolasem obejdziemy naszych: Étienne’a w magazynach, L’Olonnaisa w skarbcu banku, Marie w więzieniu i Daniela za miastem. Może ktoś znalazł już coś wartościowego. Potem zajrzymy do rezydencji gubernatora — zobaczymy, co ten łajdak po sobie zostawił.
+}
+Keys_lagoon.13
+{
+W rezydencji wciąż są ludzie! Podczas gdy przeszukiwaliśmy miasto, cały czas palili papiery gubernatora! Trzeba jak najszybciej dostać się na górę i spróbować wziąć ich żywcem.
+}
+Keys_lagoon.14
+{
+Hiszpanie pozostawieni w sypialni gubernatora w pośpiechu palili dokumenty. Wpadliśmy w samą porę, by wyrwać z ognia ocalałą depeszę. Teraz wiadomo, gdzie podziali się mieszkańcy i żołnierze: skarb, kosztowności i towary wysłano lądem do Gibraltaru. Trzeba natychmiast znaleźć Michela — jeśli się pospieszymy, jest szansa dogonić karawanę.
+}
+Keys_lagoon.15
+{
+Ostatnia skrzynia obita miedzią bezpiecznie zniknęła w czeluściach ładowni, kończąc nasze wyczerpujące trudy. Przez te kilka dni korsarze, zlani potem pod palącym karaibskim słońcem, przenieśli cały ciężki skarb Gibraltaru i odbite Hiszpanom srebro z Maracaibo na cztery okręty — le Basque’a, Montbarsa, François L’Olonnaisa i Marceau. Ich statki, ciężko siedzące w wodzie, minęły już gardziel laguny, rozwinęły żagle i rozpłynęły się w morskiej mgle, biorąc kurs na Tortugę. Teraz moja kolej podnosić kotwicę. Nie ma najmniejszego sensu dłużej zwlekać na tych ograbionych i wrogich wodach, a Michel stanowczo radził nie kusić losu niepotrzebnymi opóźnieniami. Ostateczny podział naszej bajecznej zdobyczy odbędzie się za zamkniętymi drzwiami na Tortudze, gdy cała eskadra ponownie rzuci kotwice w ojczystej przystani, stawiając godną kropkę nad i tej bezprecedensowej wyprawy.
+}
+Keys_lagoon.16
+{
+Tak dobiegła końca nasza bezprecedensowa ekspedycja, której huk przetoczył się po całym Hiszpańskim Mainie. Ciężkie, okute skrzynie ze skarbem Vargasa i odbitym srebrem Maracaibo otwarto za zamkniętymi drzwiami rezydencji na Tortudze. Łup uczciwie podzielono, a każdy kapitan otrzymał należną, sowicie opłaconą krwią część. Wielki sojusz groźnych korsarzy, który wprawił Kastylijczyków w drżenie, rozpadł się równie szybko, jak powstał. Nieposkromiony François L’Olonnais, chłodny Daniel Montbars, nieuchwytna Marie i stary Rimalye rozeszli się własnymi kursami — jedni po nową zdobycz, inni ku hucznym hulankom i upragnionemu spokojowi. Przed rozstaniem Michel le Basque, którego dawna osobista vendetta okazała się prawdziwą przyczyną całej tej wielkiej wyprawy, dał mi nienaruszalne słowo honoru. Od tej chwili mogę liczyć na jego pomoc — i nie jest to uprzejmość, lecz przysięga ważna, dopóki jedno z nas nie trafi na pożarcie rybom. Kampanię można uznać za zakończoną błyskotliwym sukcesem. Ładownie są pełne ciężkiego kastylijskiego złota, a moje imię na zawsze zapisano w krwawej i chwalebnej historii Morza Karaibskiego. Pora stawiać żagle ku nowym przygodom!
+}
+Keys_lagoon.17
+{
+Ostatni dług Hiszpanii spłacono krwią. Eskadra karna wysłana z rozkazu dona Alonsa de Vargasa dopadła nas wreszcie na otwartym morzu. Dwie fregaty, ciężki galeon i korweta poszły na dno wraz z załogami. Rachunki są ostatecznie zamknięte. Wyprawa na Maracaibo dobiegła końca.
+}

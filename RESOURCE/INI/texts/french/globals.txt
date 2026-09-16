@@ -15,11 +15,13 @@ Address_Form_FraWoman {mademoiselle}
 Address_Form_EngWoman {manquer}
 Address_Form_HolWoman {mefrau}
 Address_Form_PirWoman {manquer}
+Address_Form_PorWoman {senhorita}
 Address_Form_SpaWoman2 {señora}
 Address_Form_FraWoman2 {madame}
 Address_Form_EngWoman2 {madame}
 Address_Form_HolWoman2 {frau}
 Address_Form_PirWoman2 {madame}
+Address_Form_PorWoman2 {senhora}
 BaronTitle {baron}
 BaronWomanTitle {baronne}
 Officer_Attack {Officiers, à l’attaque !}

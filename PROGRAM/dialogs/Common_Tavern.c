@@ -535,7 +535,7 @@ void ProcessDialogEvent()
 					pchar.quest.EncGirl_GetLoverFather.over = "yes";
 				}
 			}
-			if (CheckAttribute(pchar, "QuestTemp.Andre_Abel_Quest_PortPax_TavernOwner_Speek"))
+			if (CheckAttribute(pchar, "QuestTemp.Andre_Abel_Quest_PortPax_TavernOwner_Speek") && NPChar.city == "PortPax")
 			{
 				link.l8 = StringFromKey("Common_Tavern_144");
 				link.l8.go = "Andre_Abel_Quest_TavernOwner_Dialog_1";
@@ -594,7 +594,7 @@ void ProcessDialogEvent()
 			//ОЗГ
 			if (CheckAttribute(pchar, "questTemp.Headhunter"))
 			{
-				if (pchar.questTemp.Headhunter == "hunt_carlos" && npchar.city == pchar.questTemp.Headhunter.City)
+				if (CheckAttrValue(pchar, "questTemp.Headhunter", "hunt_carlos") && npchar.city == pchar.questTemp.Headhunter.City)
 				{
 					link.l12 = StringFromKey("Common_Tavern_152");
 					link.l12.go = "Seek_Carlos";
@@ -1170,6 +1170,14 @@ void ProcessDialogEvent()
 		break;
 
 		case "room":
+		// Ле Баск - запрет спать в таверне
+			if (CheckAttribute(pchar, "questTemp.LeBask_tavern.Room_close") && npchar.location == "Tortuga_tavern")
+			{
+				dialog.text = StringFromKey("LeBask_TavernRoom_1");
+				link.l1 = StringFromKey("LeBask_TavernRoom_2");
+				link.l1.go = "exit";
+				break;
+			}
 			if (chrDisableReloadToLocation || CheckAttribute(pchar, "questTemp.different.Church_NightGuard")) //кто-то должен подойти к ГГ
 			{
 				dialog.text = StringFromKey("Common_Tavern_297", GetAddress_Form(NPChar));
@@ -1426,6 +1434,7 @@ void ProcessDialogEvent()
 			int n= FindLocation("Bridgetown_tavern");
 			locations[n].reload.l2.disable = false;
 			RemoveLandQuestmark_Main(npchar, "CapBloodLine");
+			QuestPointerToLoc("Bridgetown_Tavern", "reload", "reload2_back");
 		break;
 
 		case "TStep_1":
@@ -1442,6 +1451,10 @@ void ProcessDialogEvent()
 			{
 				link.l1 = StringFromKey("Common_Tavern_362");
 				link.l1.go = "TStep_4";
+			}
+			else
+			{
+				notification(StringFromKey("InfoMessages_251"), "money");
 			}
 		break;
 
@@ -1530,7 +1543,7 @@ void ProcessDialogEvent()
 			RemoveLandQuestmark_Main(npchar, "CapBloodLine");
 			QuestPointerDelLocEx("Bridgetown_town", "reload", "reload4_back", "BloodLine_UsurerQuest");
 			AddLandQuestmark_Main(sld, "CapBloodLine");
-//			QuestPointerToLocEx("Bridgetown_town", "reload", "reload7_back", "BloodLine_UsurerQuest"); // Пущай сам поищет =)
+		//	QuestPointerToLocEx("Bridgetown_town", "reload", "reload7_back", "BloodLine_UsurerQuest"); // Пущай сам поищет =)
 		break;
 		//зачарованный город
 		case "MCTavern":

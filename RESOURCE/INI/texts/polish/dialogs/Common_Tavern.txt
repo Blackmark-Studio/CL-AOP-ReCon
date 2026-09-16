@@ -1229,7 +1229,7 @@ Common_Tavern_364 {
 Wszystkiego najlepszego.
 }
 Common_Tavern_365 {
-Oczywiście, mam to, czego pan potrzebuje, doktorze Blood. Pan Griffin, któremu niedawno nastawiał pan złamanie, to z zawodu stary rusznikarz. Jego dom znajduje się niedaleko posiadłości gubernatora Steeda – proszę się do niego udać. Jestem pewien, że panu nie odmówi.
+Hm... Dobrze, wiem, kogo pan potrzebuje. Pan Griffin, któremu niedawno nastawiał pan złamanie, jest z zawodu starym rusznikarzem. Jego dom znajduje się niedaleko posiadłości gubernatora Steeda - proszę do niego zajrzeć. Jestem pewien, że panu nie odmówi.
 }
 Common_Tavern_366 {
 Wszystkiego najlepszego.
@@ -1491,4 +1491,13 @@ Dziękuję! Bardzo mi pomogłeś!
 }
 Common_Tavern_432 {
 Muszę wyokrętować część mojej załogi.
+}
+
+LeBask_TavernRoom_1
+{
+Pokój wynajmuje teraz u mnie monsieur Étienne Marceau i zapłacił z góry za cały miesiąc, więc nic nie mogę dla ciebie zrobić, kapitanie.
+}
+LeBask_TavernRoom_2
+{
+Szkoda, naprawdę szkoda...
 }

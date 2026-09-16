@@ -8,10 +8,16 @@ bool bAllSelf = false;
 bool bAllShip = false;
 string sPerkMode = "perks";	// evganat - черты
 
+int gLngAbilityDescribe = -1;
+int gLngRPGDescribe = -1;
+
 void InitInterface_R(string iniName, ref _char)
 {
 	xi_refCharacter = _char;
 	GameInterface.title = "titleCharacter";
+
+	gLngAbilityDescribe = LanguageOpenFile("AbilityDescribe.txt");
+	gLngRPGDescribe = LanguageOpenFile("RPGDescribe.txt");
 
     bChangePIRATES = false;
 	if (CheckAttribute(xi_refCharacter, "SystemInfo.ChangePIRATES"))
@@ -77,7 +83,7 @@ void IDoExit(int exitCode)
 	{
 		xi_refCharacter.skill.FreeSPECIAL = 0; // если не все распределил, сам дурак
 
-		if (startherotype > 1) //Для сюжетных персов  konstrush
+		if (startherotype > 3) //Для сюжетных персов  konstrush
 		{
 			xi_refCharacter.chr_ai.energy = xi_refCharacter.chr_ai.energyMax;
     		ref sld = characterFromID("Sailor_1");
@@ -102,6 +108,9 @@ void IDoExit(int exitCode)
 	// evganat - черты
 	DelEventHandler("ShowPerks","ShowPerks");
 	DelEventHandler("ShowTraits","ShowTraits");
+
+	if (gLngAbilityDescribe >= 0) { LanguageCloseFile(gLngAbilityDescribe); gLngAbilityDescribe = -1; }
+	if (gLngRPGDescribe >= 0) { LanguageCloseFile(gLngRPGDescribe); gLngRPGDescribe = -1; }
 
 	interfaceResultCommand = exitCode;
 	if( CheckAttribute(&InterfaceStates,"ReloadMenuExit"))
@@ -331,7 +340,6 @@ void FillSkillTables()
 	if (!bAllShip) sTemp += " " + xi_refCharacter.perks.FreePoints_ship;
     SetFormatedText("TABSTR_2", sTemp);
 	
-    SetControlsTabMode(1);
     ShowPerks();	// evganat - черты
     
 	GameInterface.TABLE_SPECIAL.select = 0;
@@ -651,7 +659,6 @@ void FillSkillTables()
 	Table_UpdateWindow("TABLE_SPECIAL");
     Table_UpdateWindow("TABLE_SKILL_1");
     Table_UpdateWindow("TABLE_SKILL_2");
-    Table_UpdateWindow("TABLE_PERKS");
     Table_UpdateWindow("TABLE_OTHER");
 
 	// Убираем бэкап
@@ -731,11 +738,12 @@ void SetSkillArrows()
 }
 void NullSelectTable(string sControl)
 {
-	if (sControl != CurTable)
-	{
-	    GameInterface.(sControl).select = 0;
-	    Table_UpdateWindow(sControl);
-	}
+	if (sControl == CurTable) return;
+
+	if (CheckAttribute(&GameInterface, sControl + ".select") && sti(GameInterface.(sControl).select) == 0) return;
+
+	GameInterface.(sControl).select = 0;
+	Table_UpdateWindow(sControl);
 }
 
 
@@ -951,6 +959,14 @@ void FillPerksTable(string _type, bool _refresh)
 	if(sPerkMode == "perks")
 	{
 		makearef(arPerksRoot,ChrPerksList.list); // общий список
+
+		bool bIsPchar = (xi_refCharacter.id == pchar.id);
+		bool bHasDignity = CheckCharacterPerk(xi_refCharacter, "Dignity");
+		bool bCompanionDisable = CheckAttribute(xi_refCharacter, "CompanionDisable");
+		bool bHasAllowedPosts = CheckAttribute(xi_refCharacter, "AllowedPosts");
+		int iAllowedPosts = 0;
+		if (bHasAllowedPosts) iAllowedPosts = GetCountSubString(xi_refCharacter.AllowedPosts);
+
 		perksQ = GetAttributesNum(arPerksRoot);
 		n = 1;
 		for(i=0; i<perksQ; i++)
@@ -958,24 +974,24 @@ void FillPerksTable(string _type, bool _refresh)
 			row = "tr" + n;
 
 			perkName = GetAttributeName(GetAttributeN(arPerksRoot,i));
-			if (xi_refCharacter.id == pchar.id && CheckAttribute(arPerksRoot, perkName + ".NPCOnly"))		continue;
-			if (xi_refCharacter.id != pchar.id && CheckAttribute(arPerksRoot, perkName + ".PlayerOnly"))	continue;
-			if (CheckAttribute(xi_refCharacter, "CompanionDisable") && perkName == "ShipEscape")			continue;
+			if (bIsPchar && CheckAttribute(arPerksRoot, perkName + ".NPCOnly"))		continue;
+			if (!bIsPchar && CheckAttribute(arPerksRoot, perkName + ".PlayerOnly"))	continue;
+			if (bCompanionDisable && perkName == "ShipEscape")			continue;
 			if (CheckAttribute(arPerksRoot, perkName + ".Hidden") && !ShowHiddenPerks(xi_refCharacter, perkName)) continue;
-			if (CheckAttribute(xi_refCharacter, "AllowedPosts"))
+			if (bHasAllowedPosts)
 			{
-				if(perkName == "ByWorker"  && GetCountSubString(xi_refCharacter.AllowedPosts) < 2)	continue;
-				if(perkName == "ByWorker2" && GetCountSubString(xi_refCharacter.AllowedPosts) < 3)	continue;
+				if(perkName == "ByWorker"  && iAllowedPosts < 2)	continue;
+				if(perkName == "ByWorker2" && iAllowedPosts < 3)	continue;
 			}
 			if (CheckAttribute(arPerksRoot, perkName + ".OfficerType"))
 			{
 				if(arPerksRoot.(perkName).OfficerType == "capellan" && !CheckAttribute(xi_refCharacter, "Capellan"))
 					continue;
-				if(CheckAttribute(xi_refCharacter, "AllowedPosts") && !HasSubStr(xi_refCharacter.AllowedPosts, arPerksRoot.(perkName).OfficerType)
-				&& CheckAttribute(xi_refCharacter, "CompanionDisable")) //TODO: при переделке системы отдельно выносить перки, полезные для наместника
+				if(bHasAllowedPosts && !HasSubStr(xi_refCharacter.AllowedPosts, arPerksRoot.(perkName).OfficerType)
+				&& bCompanionDisable) //TODO: при переделке системы отдельно выносить перки, полезные для наместника
 					continue;
 			}
-			if (CheckCharacterPerk(xi_refCharacter, "Dignity")) //HardCoffee не отображать кулачные перки тем, у кого нет анимации
+			if (bHasDignity) //HardCoffee не отображать кулачные перки тем, у кого нет анимации
 			{
 				if (perkName == "NachoPuncher" || perkName == "DrunkenMaster") continue;
 			}
@@ -1272,46 +1288,58 @@ void ShowTraits()
 
 void TablePerks_SortByEnabled()
 {
-	string tableName = "TABLE_PERKS";
-	int column = 1;
-	bool preserveState = true;
+	object tmpRows;
+	aref arSrc, arDst;
+	int i, q = 0;
+	int n = 0;
+	string row, sTmp;
 
-	aref table, upRow, downRow;
-	bool isAscend = false;
-	object tempRow;
-	makearef(table, GameInterface.(tableName));
-
-	string cellName = "td" + column;
-	string lLetter, rLetter;
-	int tableSize = GetAttributesNum(&table);
-	int compare = false;
-
-	for (int i = 0; i < tableSize - 1; i++)
+	row = "tr1";
+	while (CheckAttribute(&GameInterface, "TABLE_PERKS." + row))
 	{
-		for (int j = i; j < tableSize - 1; j++)
+		q++;
+		row = "tr" + (q + 1);
+	}
+
+	if (q < 2) return;
+
+	// > сначала взятые перки (PERK_ENABLE), относительный порядок сохраняется
+	for (i = 1; i <= q; i++)
+	{
+		row = "tr" + i;
+		if (GameInterface.TABLE_PERKS.(row).td1.icon.group == "PERK_ENABLE")
 		{
-
-			upRow = GetAttributeN(&table, i);
-			downRow = GetAttributeN(&table, j + 1);
-
-			// скипаем заголовки и селекторы
-			if (strcut(GetAttributeName(&upRow), 0, 1) != "tr") continue;
-			if (strcut(GetAttributeName(&downRow), 0, 1) != "tr") continue;
-
-			if (CheckAttribute(&upRow, cellName + ".icon.group")) lLetter = GetStrSmallRegister(upRow.(cellName).icon.group);
-			if (CheckAttribute(&downRow, cellName + ".icon.group")) rLetter = GetStrSmallRegister(downRow.(cellName).icon.group);
-
-			compare = StringCompare(lLetter, rLetter);
-			if (compare < 0)
-				compare = 0;
-
-			if (isAscend) compare = !compare;
-			if (!compare) continue;
-
-			// Меняем строки местами
-			CopyAttributes(&tempRow, upRow);
-			CopyAttributes(&upRow, downRow);
-			CopyAttributes(&downRow, tempRow);
+			n++;
+			sTmp = "p" + n;
+			makearef(arSrc, GameInterface.TABLE_PERKS.(row));
+			makearef(arDst, tmpRows.(sTmp));
+			CopyAttributes(arDst, arSrc);
 		}
+	}
+
+	if (n == 0 || n == q) return; // > все взяты или ни одного - переставлять нечего
+
+	// > затем остальные
+	for (i = 1; i <= q; i++)
+	{
+		row = "tr" + i;
+		if (GameInterface.TABLE_PERKS.(row).td1.icon.group != "PERK_ENABLE")
+		{
+			n++;
+			sTmp = "p" + n;
+			makearef(arSrc, GameInterface.TABLE_PERKS.(row));
+			makearef(arDst, tmpRows.(sTmp));
+			CopyAttributes(arDst, arSrc);
+		}
+	}
+
+	// > пишем обратно
+	for (i = 1; i <= q; i++)
+	{
+		row = "tr" + i;
+		sTmp = "p" + i;
+		makearef(arDst, GameInterface.TABLE_PERKS.(row));
+		makearef(arSrc, tmpRows.(sTmp));
+		CopyAttributes(arDst, arSrc);
 	}
 }

@@ -1,0 +1,82 @@
+Vargas_dialog_1 {
+Ah, supongo que usted es el mismísimo Capitán @<GetFullName>. Sabía que Le Basque era un cobarde, pero pensé que tendría el valor de venir aquí en persona.
+}
+Vargas_dialog_2 {
+Vargas, para Michel no eres más que una molestia. Y no podrás frustrar sus planes. El oro de Maracaibo será nuestro, pero no vivirás para verlo.
+}
+Vargas_dialog_3 {
+¿El oro de Maracaibo? ¿Así que eso es lo que les está diciendo? ¡Ja, ja! ¿Y con este grupo de tontos piensa tomar la fortaleza más inexpugnable de todo el archipiélago?
+}
+Vargas_dialog_4 {
+No intentes jugar conmigo. No soy Esteban Ruiz para caer en tus trucos baratos.
+}
+Vargas_dialog_5_m {
+Y aquí estás... ¿Quizás sientes lástima por Ruiz? Yo no. Era un ser tan vil como tú. Un hereje y un canalla, ni siquiera digno de un entierro cristiano.
+}
+Vargas_dialog_5_f {
+Y aquí estás... ¿Quizás sientes lástima por Ruiz? Yo no. Era un ser tan vil como tú. Un hereje y un pirata, ni siquiera digno de un entierro cristiano.
+}
+Vargas_dialog_6 {
+Te voy a meter esas palabras por la garganta, cabrón. ¡Defiéndete!
+}
+Vargas_dialog_7_m {
+Ejem... Vale, ya sabes pelear. Pero hay algo que aún no entiendo: Michel le Basque es más que un enemigo para mí. Juré acabar con él, y lo haré. Aunque eso signifique ahogar todo el archipiélago en sangre.
+}
+Vargas_dialog_7_f {
+Ejem... Vale, ya sabes pelear. Pero hay algo que aún no entiendo: Michel le Basque es más que un enemigo para mí. Juré acabar con él, y lo haré. Aunque eso signifique ahogar todo el archipiélago en sangre.
+}
+Vargas_dialog_8 {
+Ya no conseguirás nada. Todo ha terminado. Prepárate para enfrentarte a los demonios, Don Diego. Ya te están esperando.
+}
+Vargas_dialog_9_m {
+No creías que iba a jugar limpio, ¿verdad?
+}
+Vargas_dialog_9_f {
+No creías que iba a jugar limpio, ¿verdad?
+}
+Vargas_dialog_10 {
+¿Qué?... ¿Qué es esto...? Diablo... Mi cabeza...
+}
+Vargas_dialog_11_m {
+Así que estás vivo... El maldito chamán piel roja me aseguró que había lanzado un hechizo venenoso sobre mi espada... «Incluso una sola gota de este veneno bastaría para derribar a un toro». Por lo visto, lo envié con el padre Vincent demasiado pronto.
+}
+Vargas_dialog_11_f {
+Así que estás vivo... El maldito chamán piel roja me aseguró que había lanzado un hechizo venenoso sobre mi espada... «Incluso una sola gota de este veneno bastaría para derribar a un toro». Por lo visto, lo envié con el padre Vincent demasiado pronto.
+}
+Vargas_dialog_12 {
+La Inquisición te necesita, Vargas. Admiro tu ingenio. Pero no podrías matarme ni con un mortero, ni con veneno, ni con una espada. Y mi gente está ahí fuera, en la selva. Ríndete o morirás aquí y ahora.
+}
+Vargas_dialog_13 {
+¿Muerte? No está tan mal.\nPero qué vista, @<GetFullName>. Solo mira... Aunque... No me entenderías.\nHe probado la vida, he visto lugares que ustedes, ladrones, jamás verán... He estado más allá de este archipiélago abandonado por Dios y he regresado... ¡más allá del horizonte! Estuve en la cubierta de popa de un galeón rumbo al maldito manantial de Ponce de León, secándome el sudor acre de la frente y observando las estrellas luchar contra el océano infinito.\nSentí el viento alisio de la tormenta en mi cabello mientras navegaba lánguidamente carabelas a través de los negros remolinos del Mar de los Sargazos, y vi a la Armada de Barlovento arder como paja seca y desaparecer en el abismo. Lo he visto.\n¡Lo juro por la Virgen María, puedo sentirlo ahora!..
+}
+Vargas_dialog_14 {
+Lo viviste.
+}
+
+LeBasque_Diego_de_Vargas_1 {
+Primero, información. La última vez me contaste los chismes de las prostitutas del puerto. ¿Qué estará tramando Le Basque esta vez?
+}
+
+LeBasque_Diego_de_Vargas_2 {
+¿Y eso es todo?
+}
+
+LeBasque_Diego_de_Vargas_3 {
+¿Nombre?
+}
+
+LeBasque_Diego_de_Vargas_4 {
+Tú lo consigues primero, Guillaume.
+}
+
+LeBasque_Diego_de_Vargas_5 {
+Averigua el nombre del anciano y por qué Le Basque lo necesita, y conseguirás todo lo que pidas.
+}
+
+LeBasque_Diego_de_Vargas_6 {
+Basta de quejas, Guillaume. Aquí tienes el depósito y la carta. Contiene más instrucciones. La próxima reunión es en el faro. Te avisaremos de la hora por separado.
+}
+
+LeBasque_Diego_de_Vargas_7 {
+Espero que no me decepciones y me consigas algo que valga la pena. Y ni se te ocurra regatear otra vez, Raoul. La próxima vez, pagaré menos para que alguien te registre el cuerpo.
+}

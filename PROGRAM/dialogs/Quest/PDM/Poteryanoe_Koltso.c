@@ -283,7 +283,8 @@ void ProcessDialogEvent()
 			sld = CharacterFromID("Josephine_Lodet");
 			sld.dialog.currentnode = "Konets";
 			AddLandQuestMark_Main(sld, "PDM_Poteryanoe_Koltso");
-			NextDiag.CurrentNode = NextDiag.TempNode;
+			if (CheckAttribute(NextDiag, "TempNode"))
+				NextDiag.CurrentNode = NextDiag.TempNode;
 			DialogExit();
 		break;
 
@@ -385,6 +386,8 @@ void ProcessDialogEvent()
 			AddQuestRecord("PDM_Poteryanoe_Koltso", "6");
 			AddQuestUserData("PDM_Poteryanoe_Koltso", "sSex", GetSexPhrase("", "а"));
 			CloseQuestHeader("PDM_Poteryanoe_Koltso");
+			if (GetCharacterIndex("PDM_PK_Francheska") != -1)
+				CharacterFromID("PDM_PK_Francheska").lifeday = 0;
 			LAi_CharacterDisableDialog(npchar);
 			//sld = CharacterFromID("Josephine_Lodet");
 			//sld.dialog.filename   = "Common_Citizen.c";

@@ -184,3 +184,18 @@ Right, he lives in a two-story house with stone walls. When you leave the tavern
 Pirates_Tavern_60 {
 Thank you, you really helped me out!
 }
+Pirates_Tavern_61 {
+We're looking for a Spanish corvette. They say she stayed here for quite a while.
+}
+Pirates_Tavern_62 {
+Ah, Don Martin! Ran off. There was quite a scrap here recently between Jackman's pirates and the Castilians. In the end he got so frightened he ordered the anchor cable cut and fled under full sail.
+}
+Pirates_Tavern_63 {
+Was it my imagination, or do you find that amusing?
+}
+Pirates_Tavern_64 {
+Very! That pompous Castilian turkey ran so fast he left his longboat ashore. Just before sailing, he sent an officer and a couple sailors to Jackman disguised as traders, supposedly to buy pitch and planks for repairs. Jackman's men saw easy prey and quickly understood: the Spaniards had money on them, and no one here meant to sell them any goods. So they cut the buyers to ribbons.\nOne officer managed to escape. But our island is small - he can't get farther than Broken Trough Bay. So if Jackman doesn't get him, hunger and thirst will.
+}
+Pirates_Tavern_65 {
+Looks like that officer may know where Quesada went. Thank you.
+}

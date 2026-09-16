@@ -1,0 +1,27 @@
+condition_subscribeItem
+{
+Una pequeña libreta llena de consejos breves pero importantes. Un día simplemente la encontraste entre tus cosas y desde entonces no te has separado de ella.
+}
+condition_legendGuide
+{
+Este objeto aparecerá en el juego si estás suscrito a la página de
+Caribbean Legend
+}
+condition_indian_officer
+{
+Este oficial de misión aparecerá en la línea de misiones de Askold (inicio: "Búsqueda de polvo de momia") si tienes
+Caribbean Legend o si obtuviste el logro "Más duro que el hierro" en las primeras pruebas de juego.
+}
+indian_officer_desc
+{
+El indio muskogee Tichingitu y su mosquete ancestral te apoyarán en el duro oficio de corsario.
+~
+Este tirador insuperable está dispuesto a prestar un juramento de lealtad más duro que el hierro, con solo liberarlo del calabozo en el que acabó por pura casualidad.
+}
+noRewardYetMessage
+{
+Esta recompensa aún no está disponible,
+¡atento a las actualizaciones!
+}
+steamButtonAlreadyGot {Obtenido}
+steamButtonGet {Obtener}

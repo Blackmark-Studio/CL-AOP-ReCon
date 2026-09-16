@@ -46,3 +46,23 @@ Tak, rzeczywiście już trzeci raz... Przepraszam.
 Villemstad_Brothel_12 {
 Nie teraz... Innym razem...
 }
+
+Villemstad_Brothel_13 {Mam dla pani dość niezwykłą propozycję. Czy nie sprzedałaby mi pani najlepszej sukni ze swojej garderoby?}
+Villemstad_Brothel_14 {Wracam w sprawie sukni.}
+Villemstad_Brothel_15 {Rzeczywiście niezwykła. Obawiam się, że taka przysługa będzie panią kosztować małą fortunę.}
+Villemstad_Brothel_16 {Może dałoby się ją wynająć na wieczór lub dwa?}
+Villemstad_Brothel_17 {Myślę, że da się to załatwić. Powiedzmy 15000 piastrów i gwarancja, że suknia wróci na czas, cała i bez jednej plamy.}
+Villemstad_Brothel_18 {Bez jednej plamki... A skoro zgodziłyśmy się co do ceny, może znajdzie się też odpowiednia maska karnawałowa, taka, która zasłoni całą twarz?}
+Villemstad_Brothel_19 {Coś znajdziemy. Pięćdziesiąt tysięcy i jest pani.}
+Villemstad_Brothel_20 {Co?! Czy aby nie pomyliła się pani przy podawaniu ceny?}
+Villemstad_Brothel_21 {Jestem pewna, że zaszło między nami drobne nieporozumienie. Najwyraźniej omyłkowo wzięła mnie pani za głupią kobietę, która nie potrafi rozpoznać zamiaru przedostania się incognito do tutejszej rezydencji. Pięćdziesiąt tysięcy za moje milczenie, piętnaście za suknię na wieczór, a maskę dorzucę gratis. I jak?}
+Villemstad_Brothel_22 {Potrafi pani robić interesy. Wygląda na to, że nie mam wyboru. Oto pieniądze. Mam nadzieję, że krój mnie nie rozczaruje.}
+Villemstad_Brothel_23 {Dobrze, zastanowię się i być może zajrzę później.}
+Villemstad_Brothel_24 {No więc, dobijamy targu? 65000 piastrów.}
+Villemstad_Brothel_25 {Oto pieniądze. Mam nadzieję, że krój mnie nie rozczaruje.}
+Villemstad_Brothel_26 {Wciąż zastanawiam się, czy pani propozycja jest tego warta.}
+Villemstad_Brothel_27 {Założyłaś strój karnawałowy}
+Villemstad_Brothel_28 {Jeszcze trochę ciaśniej tutaj i będę niemal zadowolona z efektu. Wielka szkoda, Angelique, że w młodości nie nosiłaś gorsetu; suknia leżałaby znacznie lepiej. Talia wciąż zdradza w tobie dziewczynę z ludu.}
+Villemstad_Brothel_29 {Żołnierze nie zwrócą na to uwagi, a dalej poradzę sobie sama.}
+Villemstad_Brothel_30 {Nie, jednak całkiem nieźle, całkiem nieźle. Chyba nawet zmieniłam zdanie. Nie musisz oddawać mi stroju; uznaj, że go kupiłaś.}
+Villemstad_Brothel_31 {Taki interes podoba mi się znacznie bardziej. Nie odmówię. Muszę się spieszyć, bo jeszcze się spóźnię!}

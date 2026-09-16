@@ -1,0 +1,39 @@
+Free_Shipyard_1 {
+什么问题？
+}
+Free_Shipyard_2 {
+你想干什么？
+}
+Free_Shipyard_3 {
+@<RandPhraseSimple>
+}
+Free_Shipyard_4 {
+你刚才想问我点什么……
+}
+Free_Shipyard_5 {
+一天里第三次同样的话。 在我的船坞可没这规矩。
+}
+Free_Shipyard_6 {
+别问了。 我的事是造船， 咱们就干这个。
+}
+Free_Shipyard_7_m {
+我改主意了……
+}
+Free_Shipyard_7_f {
+我改变主意了……
+}
+Free_Shipyard_8 {
+我现在没什么可说的。
+}
+Free_Shipyard_9 {
+@<RandPhraseSimple>
+}
+Free_Shipyard_10 {
+嗯， 我的记忆好像出了点问题……
+}
+Free_Shipyard_11 {
+嗯， 不过……
+}
+Free_Shipyard_12 {
+咱们……
+}

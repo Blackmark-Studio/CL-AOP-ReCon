@@ -436,3 +436,62 @@ Pack den Papagei weg.
 MainHero_dialog_142 {
 Zeig den Papagei.
 }
+
+LeBasque_1
+{
+...
+}
+LeBasque_2
+{
+Hinter den Toren ist von der ausgelassenen Tortuga nichts mehr zu spüren. Keine Lieder, kein Fluchen, kein betrunkenes Gelächter...
+}
+LeBasque_3
+{
+...
+}
+LeBasque_4
+{
+Raul müsste jeden Augenblick auftauchen. Hauptsache, ich verrate mich nicht und lasse mir nichts entgehen.
+}
+LeBasque_5
+{
+...
+}
+LeBasque_6
+{
+Raul hat dem Spanier Informationen verkauft und dafür Geld und neue Anweisungen erhalten. Offenbar dreht sich alles um jemanden namens le Basque. Ich weiß genug; Zeit, zu Marceau zurückzukehren.
+}
+LeBasque_7
+{
+...
+}
+LeBasque_8
+{
+Das Treffen müsste bald beginnen... Links das Meer, voraus der Leuchtturm, rechts Palmen und Felsen. Einen besseren Platz für einen Hinterhalt könnte man kaum finden. Ich muss mir einen Punkt mit guter Sicht suchen.
+}
+LeBasque_9
+{
+...
+}
+LeBasque_10
+{
+Von hier aus werden sie mich nicht sehen, während ich alles im Blick habe. Jetzt heißt es nur noch warten.
+}
+MainHero_dialog_143 {
+Hm... Jacos Hut. Den legt er nicht einfach irgendwo ab... Und hier sind Spuren. Drei haben einen Vierten geschleppt. Sie führen zur Höhle. Ich muss mich beeilen.
+}
+MainHero_dialog_144 {
+Es ist bereits Mitternacht. Zeit, den Zecchino auf den Holzständer mit dem Buch zu legen...
+}
+MainHero_dialog_145 {
+Alles ist hervorragend gelaufen. Jetzt nur noch den Brief bei der Leiche hinterlassen und zum Schiff zurückkehren.
+}
+MainHero_dialog_146 {
+Der Atem ist gleichmäßig — sie wird bald zu sich kommen...
+}
+MainHero_dialog_147 {
+Zeit zu sterben...
+}
+MainHero_dialog_148 {
+Verdammt... Schon wieder...
+}

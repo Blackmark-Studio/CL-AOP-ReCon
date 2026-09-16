@@ -1,0 +1,39 @@
+Free_Shipyard_1 {
+Какие вопросы?
+}
+Free_Shipyard_2 {
+Что вам угодно?
+}
+Free_Shipyard_3 {
+@<RandPhraseSimple>
+}
+Free_Shipyard_4 {
+Вы только что пытались о чём-то спросить...
+}
+Free_Shipyard_5 {
+Третий раз за день один и тот же разговор. На моей верфи так не принято.
+}
+Free_Shipyard_6 {
+Хватит вопросов. Моё дело - корабли, ими и займёмся.
+}
+Free_Shipyard_7_m {
+Я передумал...
+}
+Free_Shipyard_7_f {
+Я передумала...
+}
+Free_Shipyard_8 {
+Сейчас мне не о чем говорить.
+}
+Free_Shipyard_9 {
+@<RandPhraseSimple>
+}
+Free_Shipyard_10 {
+Хм, что-то с памятью моей стало...
+}
+Free_Shipyard_11 {
+Хм, однако...
+}
+Free_Shipyard_12 {
+Давайте...
+}

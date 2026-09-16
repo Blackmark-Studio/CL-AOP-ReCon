@@ -1,0 +1,42 @@
+Gibraltar_Soldier_1 {
+Jakie masz pytania do żołnierza?
+}
+Gibraltar_Soldier_2 {
+Życie żołnierza to służba — warty, zmiany... Czego sobie życzysz, @<GetAddress_Form>?
+}
+Gibraltar_Soldier_3 {
+@<RandPhraseSimple>
+}
+Gibraltar_Soldier_4 {
+Nie wypada zaczepiać żołnierza głupimi pytaniami, @<GetAddress_Form>...
+}
+Gibraltar_Soldier_5 {
+To już trzeci raz dzisiaj próbujesz zadać pytanie...
+}
+Gibraltar_Soldier_6_m {
+Żołnierski los i tak nie jest łatwy, a tu jeszcze ty, niedorostku, wyprowadzasz mnie z równowagi...
+}
+Gibraltar_Soldier_6_f {
+Żołnierski los i tak nie jest łatwy, a ty jeszcze wyprowadzasz mnie z równowagi...
+}
+Gibraltar_Soldier_7_m {
+Zmieniłem zdanie...
+}
+Gibraltar_Soldier_7_f {
+Zmieniłam zdanie...
+}
+Gibraltar_Soldier_8 {
+Teraz nie mam nic do powiedzenia.
+}
+Gibraltar_Soldier_9 {
+@<RandPhraseSimple>
+}
+Gibraltar_Soldier_10 {
+Nie wypada...
+}
+Gibraltar_Soldier_11 {
+Tak, rzeczywiście już po raz trzeci...
+}
+Gibraltar_Soldier_12 {
+Przepraszam...
+}

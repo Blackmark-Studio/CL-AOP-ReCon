@@ -1,0 +1,39 @@
+Tavernkeeper_dialog_1 {
+Also bist du Kapitän @<pchar>. Kaum hatte ich unter diesem gespannten Segel meine Würfel hingeworfen, da hatte Nicolas Rimalie mir schon deine Heldentaten ausgemalt. Dieser verwegene Fechter und ich teilen Brot und Pulver schon so lange, dass ich bei meiner Ehre längst vergessen habe, wer wem zuerst im Inferno das Leben gerettet hat - und wer bis heute seine verfluchte Kartenschuld nicht bezahlt hat.
+}
+Tavernkeeper_dialog_2 {
+Freut mich zu hören, dass Rimalies Wort hier solches Gewicht hat. Willkommen auf Tortuga, Freund.
+}
+Tavernkeeper_dialog_3 {
+Sei gegrüßt, Kapitän @<pchar>! Wie du siehst, stehe ich noch immer meine ewige Wache an diesem verfluchten Rumfass. Falls dein Schiff Männer braucht, deren Auge sicher und deren Hand ruhig ist - sag nur ein Wort.
+}
+Tavernkeeper_dialog_4 {
+Kapitän @<pchar>! Bei Tagesanbruch kamen ein paar abgebrühte Jäger aus dem Dschungel - wildes Volk, aber bis in die Knochen nach Pulver stinkend. Wenn du gute Schützen brauchst, lege ich gern ein Wort für dich ein.
+}
+Tavernkeeper_dialog_5 {
+Schon wieder du, Kapitän @<pchar>. Ein gutes Zeichen - das Meer hat dein Schiff also noch nicht verschluckt. Falls du treue Leute suchst: Ein paar waghalsige Kerle halten gerade nach einem würdigen Kommandanten Ausschau.
+}
+Tavernkeeper_dialog_6 {
+@<LinkRandPhrase>
+}
+Tavernkeeper_dialog_7 {
+Genau deswegen bin ich hier. Hast du heute ein paar erstklassige Schützen in Aussicht?
+}
+Tavernkeeper_dialog_8 {
+Meine Mannschaft ist vollzählig, danke. Ich wollte nur die Kehle anfeuchten und nach Euch sehen.
+}
+Tavernkeeper_dialog_9 {
+Danke, Kapitän. Ich habe hier gerade erst Wurzeln geschlagen, doch Nicolas' Bürgschaft bedeutet mir unendlich viel. Gesindel gibt es auf Tortuga wie Sand am Meer, aber echte Veteranen der Boucan-Jagd setzen ihr Kreuz niemals auf die Musterrolle des erstbesten Abenteurers. Wenn ich ihnen jedoch zuflüstere, dass du ein Ehrenmann bist, nimmt das Gespräch einen ganz anderen Lauf.
+}
+Tavernkeeper_dialog_10 {
+Eine solche Empfehlung kommt mir gerade recht.
+}
+Tavernkeeper_dialog_11 {
+Dann gilt der Handel. Wenn dein Schiff verlässliche Leute braucht, findest du mich immer hier bei diesem Fass - ob in der brennenden Mittagssonne oder in tiefster Nacht.\nBukanier kommen zu den unberechenbarsten Stunden aus dem Dschungel: erschöpft, zerlumpt und wütend wie die Teufel. Sie brauchen sofort einen Becher brennenden Rum und jemanden, der sich ihre prahlerischen Geschichten anhört, bevor sie sich beim Streit um die Beute gegenseitig die Kehlen aufschlitzen. Deshalb verlasse ich meinen Posten keine Minute. Ich höre mich um und bringe dich mit Männern zusammen, deren Kugeln ihr Ziel nicht verfehlen.
+}
+Tavernkeeper_dialog_12 {
+Bewundernswerte Hingabe an das Handwerk. Sehen wir, wen du mir gleich jetzt anbieten kannst.
+}
+Tavernkeeper_dialog_13 {
+Abgemacht. Sobald ich Schützen brauche, schaue ich unter deinem gastlichen Segeldach vorbei.
+}

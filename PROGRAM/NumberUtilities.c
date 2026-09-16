@@ -2,8 +2,11 @@
 // Большую часть попереносил из других файлов, чтобы все в одном месте было
 
 #define PI 3.14159265
-#define PIm2 6.28318530
-#define PId2 1.57079632
+#define PIm2  6.28318530   // PI * 2.0
+#define PId2  1.57079632   // PI / 2.0
+#define PId3  1.04719755   // PI / 3.0
+#define PId4  0.78539816   // PI / 4.0
+#define PId6  0.52359878   // PI / 6.0
 
 float FRAND(float _x)
 {
@@ -21,9 +24,23 @@ float Random()
 	return rand(32768) / 32768.0; // 32769.0
 }
 
+//HardCoffee Оригинальная задумка корсарских скриптов - возможность пихать отрицательные значения в max rand
+//так как для idRand я убрал такую возможность, то оставляю для dRand как и задумывалось духом корсаров
+//idRand в свою очередь будет обрабатывать отрицательный max rand как скриптовую ошибку с записью в лог
 int dRand(int _max)
 {
-	return idRand("oldDrand", _max);
+	bool isNeg = false;
+	if (_max < 0)
+	{
+		_max = abs(_max);
+		isNeg = true;
+	}
+	_max = idRand("oldDrand", _max);
+	if (isNeg)
+	{
+	    _max = -_max;
+	}
+	return _max;
 }
 
 int dRandEx(int _num, bool next) //перегрузка для dRandEx

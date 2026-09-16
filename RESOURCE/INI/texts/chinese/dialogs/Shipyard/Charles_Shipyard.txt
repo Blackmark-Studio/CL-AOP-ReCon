@@ -1,39 +1,39 @@
 Charles_Shipyard_1 {
-什么问题？
+什么问题？ 
 }
 Charles_Shipyard_2 {
-你想干什么？
+你想干什么？ 
 }
 Charles_Shipyard_3 {
 @<RandPhraseSimple>
 }
 Charles_Shipyard_4 {
-前不久你还想问我点什么……
+前不久你还想问我点什么…… 
 }
 Charles_Shipyard_5 {
-在我自己的船厂，甚至整个镇上，我还真没见过谁像你这么 uniformly 好奇的。
+在我自己的船坞， 甚至整个镇上， 我还真没见过谁像你这么 uniformly 好奇的。 
 }
 Charles_Shipyard_6 {
-问这么多干嘛？俺就是造船的，赶紧干活吧。
+问这么多干嘛？ 我就是造船的， 赶紧干活吧。 
 }
 Charles_Shipyard_7_m {
-我改主意了……
+我改主意了…… 
 }
 Charles_Shipyard_7_f {
-我改变主意了……
+我改变主意了…… 
 }
 Charles_Shipyard_8 {
-我现在没什么可说的。
+我现在没什么可说的。 
 }
 Charles_Shipyard_9 {
 @<RandPhraseSimple>
 }
 Charles_Shipyard_10 {
-嗯，我的记忆好像出了点问题……
+嗯， 我的记忆好像出了点问题…… 
 }
 Charles_Shipyard_11 {
-嗯，不过……
+嗯， 不过…… 
 }
 Charles_Shipyard_12 {
-咱们……
+咱们…… 
 }

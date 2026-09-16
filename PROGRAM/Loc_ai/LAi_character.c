@@ -170,44 +170,74 @@ void LAi_UseEnergyBottleSpeed(aref chr, float energySpeed)
 void LAi_UseCustomBottle(aref chr, string sSource, string sQuantity, string sSpeed, string sSound)
 {
 	sSource = GetStrSmallRegister(stripblank(sSource));
-	
+
 	int i, q = KZ|Symbol(sSource, ",");
 	float fQty, fSpd;
 	string tmp, func, snd = "";
-	
+
+	int iLenS = strlen(&sSource);
+	int iLenQ = strlen(&sQuantity);
+	int iLenV = strlen(&sSpeed);
+	int iLenD = strlen(&sSound);
+	int iPosS = 0;
+	int iPosQ = 0;
+	int iPosV = 0;
+	int iPosD = 0;
+	int iEnd;
+	string sCurSnd;
+
 	for (i = 0; i <= q; i++)
 	{
-		tmp = GetSubStr(sSource, ",", i);
-		
-		if (!StrHasStr(tmp, "hp,health,ep,energy", true))
-			continue;
-		
-		if (HasStrEx(tmp, "hp,health", "|"))
+		iEnd = findSubStr(&sSource, ",", iPosS);
+		if (iEnd < 0) iEnd = iLenS;
+		tmp = "";
+		if (iEnd > iPosS) tmp = strcut(&sSource, iPosS, iEnd - 1);
+		iPosS = iEnd + 1;
+
+		iEnd = findSubStr(&sQuantity, ",", iPosQ);
+		if (iEnd < 0) iEnd = iLenQ;
+		fQty = 0.0;
+		if (iEnd > iPosQ) fQty = stf(strcut(&sQuantity, iPosQ, iEnd - 1));
+		iPosQ = iEnd + 1;
+
+		iEnd = findSubStr(&sSpeed, ",", iPosV);
+		if (iEnd < 0) iEnd = iLenV;
+		fSpd = 0.0;
+		if (iEnd > iPosV) fSpd = stf(strcut(&sSpeed, iPosV, iEnd - 1));
+		iPosV = iEnd + 1;
+
+		iEnd = findSubStr(&sSound, ",", iPosD);
+		if (iEnd < 0) iEnd = iLenD;
+		sCurSnd = "";
+		if (iEnd > iPosD) sCurSnd = strcut(&sSound, iPosD, iEnd - 1);
+		iPosD = iEnd + 1;
+
+		if (tmp == "hp" || tmp == "health")
 			tmp = "Health";
 		else
-			tmp = "Energy";
-		
-		func = "LAi_Use" + tmp + "Bottle";
-		fQty = stf(GetSubStr(sQuantity, ",", i));
-		if (fQty <= 0) fQty = 40.0;
-		
-		call func(chr, fQty);
-		
-		func = "LAi_Use" + tmp + "BottleSpeed";
-		fSpd = stf(GetSubStr(sSpeed, ",", i));
-		if (fSpd <= 0) fSpd = 5.0;
-		
-		call func(chr, fSpd);
-		
-		if (sSound != "")
 		{
-			tmp = GetSubStr(sSound, ",", i);
-			
-			if (tmp != "" && snd != tmp)
-			{
-				snd = tmp;
-				PlaySound(snd);
-			}
+			if (tmp == "ep" || tmp == "energy")
+				tmp = "Energy";
+			else
+				continue;
+		}
+
+		func = "LAi_Use" + tmp + "Bottle";
+		if (fQty <= 0.0) fQty = stf(GetSubStr(sQuantity, ",", 0));
+		if (fQty <= 0.0) fQty = 40.0;
+
+		call func(chr, fQty);
+
+		func = "LAi_Use" + tmp + "BottleSpeed";
+		if (fSpd <= 0.0) fSpd = stf(GetSubStr(sSpeed, ",", 0));
+		if (fSpd <= 0.0) fSpd = 5.0;
+
+		call func(chr, fSpd);
+
+		if (sCurSnd != "" && snd != sCurSnd)
+		{
+			snd = sCurSnd;
+			PlaySound(snd);
 		}
 	}
 }
@@ -223,7 +253,7 @@ void LAi_AlcoholSetDrunk(aref chr, float alcoholDegree, float time)
 void LAi_AlcoholDebaff(aref chr, float alcoholDegree)
 {
 	//много рома в таверне
-	if (alcoholDegree > 70)
+	if (alcoholDegree > 70.0)
 	{
 		chr.chr_ai.drunk.skill.FencingLight = -20;
 		chr.chr_ai.drunk.skill.Fencing 	    = -20;
@@ -236,7 +266,7 @@ void LAi_AlcoholDebaff(aref chr, float alcoholDegree)
 	else
 	{
 		//Ром
-		if (alcoholDegree > 50)
+		if (alcoholDegree > 49.0)
 		{
 			chr.chr_ai.drunk.skill.FencingLight = -10;
 			chr.chr_ai.drunk.skill.FencingHeavy = 10;
@@ -254,15 +284,8 @@ void LAi_AlcoholDebaff(aref chr, float alcoholDegree)
 
 void LAi_SetAlcoholNormal(aref chr)
 {
-	/*
-	if(CheckAttribute(chr, "chr_ai.energyMax"))
-	{
-		chr.chr_ai.energyMax = stf(chr.chr_ai.energyMax) - stf(chr.chr_ai.drunk.energyMax);
-	}
-	*/
-	if (CheckAttribute(chr, "questTemp.Rum"))         DeleteAttribute(chr, "questTemp.Rum");
-	if (CheckAttribute(chr, "GenQuest.CamShuttle"))   DeleteAttribute(chr, "GenQuest.CamShuttle");
-
+	DeleteAttribute(chr, "questTemp.Rum");
+	DeleteAttribute(chr, "GenQuest.CamShuttle");
 	DeleteAttribute(chr, "chr_ai.drunk");
 }
 
@@ -273,28 +296,34 @@ void LAi_SetAlcoholState(int iShuttle)
     pchar.GenQuest.CamShuttle = iShuttle;
     pchar.questTemp.Rum = iShuttle * 2;
     DeleteAttribute(pchar, "chr_ai.drunk");
-    LAi_AlcoholSetDrunk(pchar, 71, iShuttle * 5600);
+    LAi_AlcoholSetDrunk(pchar, 71, iShuttle * 90.0);
 }
 
 //функция повышения алкоголя в крови. применяется в тавернах
 void LAi_UpAlcoholState()
 {
+	int iRum = 1;
+
     if (CheckAttribute(pchar, "questTemp.Rum"))
     {
         DeleteAttribute(pchar, "chr_ai.drunk");
-        pchar.questTemp.Rum = sti(pchar.questTemp.Rum) + 1;
-        if (sti(pchar.questTemp.Rum) < 3) LAi_AlcoholSetDrunk(pchar, 51, 5600);
+		iRum += sti(pchar.questTemp.Rum) + 1;
+
+        if (iRum < 3)
+			LAi_AlcoholSetDrunk(pchar, 51, 90.0);
         else
         {
-            LAi_AlcoholSetDrunk(pchar, 71, sti(pchar.questTemp.Rum)*2800);
-            pchar.GenQuest.CamShuttle = makeint(sti(pchar.questTemp.Rum)/2); // Jason
+            LAi_AlcoholSetDrunk(pchar, 71, iRum * 45.0);
+            pchar.GenQuest.CamShuttle = makeint(iRum * 0.5); // Jason
         }
     }
     else
     {
-        pchar.questTemp.Rum = 1;
-        pchar.chr_ai.drunk = 2800;
+        iRum = 1;
+        pchar.chr_ai.drunk = 45.0;
     }
+
+	pchar.questTemp.Rum = iRum;
 }
 
 //функция повышения алкоголя при распитии бутылочных напитков
@@ -302,10 +331,11 @@ void LAi_DrunkAlcoholPotion(ref chref, ref arItm)
 {
     if (CheckAttribute(chref, "questTemp.Rum"))
     {
+		int iRum = sti(chref.questTemp.Rum);
         DeleteAttribute(chref, "chr_ai.drunk");
-        chref.questTemp.Rum = sti(chref.questTemp.Rum) + 2;
-        chref.GenQuest.CamShuttle = makeint(sti(chref.questTemp.Rum)/2);
-        LAi_AlcoholSetDrunk(chref, 71, sti(chref.questTemp.Rum)*2800);
+        iRum += 2;
+        chref.GenQuest.CamShuttle = makeint(iRum * 0.5);
+        LAi_AlcoholSetDrunk(chref, 71, iRum * 45.0);
     }
     else
     {
@@ -316,14 +346,37 @@ void LAi_DrunkAlcoholPotion(ref chref, ref arItm)
 }
 
 //функция понижения алкоголя в крови посредством сна в таверне или прокрутки времени через мысли в слух
+// KZ add > офицерский состав тоже трезвеет со временем
 void LAi_DawnWaitAlcoholState(int iAddtime)
 {
-    if (CheckAttribute(pchar, "questTemp.Rum") && CheckAttribute(pchar, "chr_ai.drunk"))
+	int i, cn, q = GetPassengersQuantity(pchar);
+    ref rChar;
+
+    LAi_DawnWaitAlcoholStateChar(pchar, iAddtime);
+
+    for (i = 0; i < q; i++)
     {
-        float fTmp = stf(pchar.chr_ai.drunk);
-        fTmp -= (iAddtime * 900);
-        LAi_DawnAlcoholState(pchar, fTmp);
+        cn = GetPassenger(pchar, i);
+        if (cn < 0) continue;
+        rChar = GetCharacter(cn);
+        if (!IsOfficerRemovable(rChar)) continue;
+        LAi_DawnWaitAlcoholStateChar(rChar, iAddtime);
     }
+
+    for (i = 1; i < COMPANION_MAX; i++)
+    {
+        cn = GetCompanionIndex(pchar, i);
+        if (cn < 0) continue;
+        rChar = GetCharacter(cn);
+        if (!GetShipRemovable(rChar) || !GetRemovable(rChar)) continue;
+        LAi_DawnWaitAlcoholStateChar(rChar, iAddtime);
+    }
+}
+
+void LAi_DawnWaitAlcoholStateChar(ref chref, int _iAddtime)
+{
+    if (CheckAttribute(chref, "questTemp.Rum") && CheckAttribute(chref, "chr_ai.drunk"))
+        LAi_DawnAlcoholState(chref, stf(chref.chr_ai.drunk) - makefloat(_iAddtime * 14.5));
 }
 
 //функция понижения алкоголя в крови в режиме реального времени
@@ -332,28 +385,27 @@ void LAi_DawnAlcoholState(ref chref, float fDrunk)
     if (fDrunk < 1.0) LAi_SetAlcoholNormal(chref);
     if (CheckAttribute(chref, "chr_ai.drunk"))
     {
-        if (fDrunk < 16800.0) DeleteAttribute(chref, "chr_ai.drunk");
         chref.chr_ai.drunk = fDrunk;
 
-        if (fDrunk < 2700.0) //CamShuttle = 0
+        if (fDrunk < 44.0) //CamShuttle = 0
         {
             LAi_AlcoholDebaff(chref, 51);
             if (CheckAttribute(chref, "questTemp.Rum")) DeleteAttribute(chref, "questTemp.Rum");
             if (CheckAttribute(chref, "GenQuest.CamShuttle")) DeleteAttribute(chref, "GenQuest.CamShuttle");
         }
-        else if (fDrunk < 5600.0) //CamShuttle = 1
+        else if (fDrunk < 90.0) //CamShuttle = 1
         {
             LAi_AlcoholDebaff(chref, 51);
             chref.questTemp.Rum = 2;
             chref.GenQuest.CamShuttle = 1;
         }
-        else if (fDrunk < 11200.0) //CamShuttle = 2
+        else if (fDrunk < 180.0) //CamShuttle = 2
         {
             LAi_AlcoholDebaff(chref, 71);
             chref.questTemp.Rum = 4;
             chref.GenQuest.CamShuttle = 2;
         }
-        else if (fDrunk < 16800.0) //CamShuttle = 3
+        else if (fDrunk < 270.0) //CamShuttle = 3
         {
             LAi_AlcoholDebaff(chref, 71);
             chref.questTemp.Rum = 6;
@@ -370,7 +422,8 @@ void LAi_UpdateAlcoholCamShuttleCamera()
     if (pchar.chr_ai.tmpl != LAI_TMPL_DIALOG) //в диалогах камеру не бултыхаем
     {
         int locIndex = FindLocation(pchar.location);
-        SetCamShuttle(&Locations[locIndex]);
+		if (locIndex >= 0)
+			SetCamShuttle(&Locations[locIndex]);
     }
 }
 //<--
@@ -384,8 +437,7 @@ void LAi_UseAtidoteBottle(aref chr)
 //Отравлен
 bool LAi_IsPoison(aref chr)
 {
-	if(CheckAttribute(chr, "chr_ai.poison")) return true;
-	return false;
+	return CheckAttribute(chr, "chr_ai.poison");
 }
 
 //Сделать персонажа бессмертным
@@ -413,16 +465,143 @@ void LAi_SetRolyPoly(aref chr, bool isRolyPoly)
 //Узнать отношение персонажа к бессмертию
 bool LAi_IsImmortal(aref chr)
 {
-	if(CheckAttribute(chr, "chr_ai.immortal"))
-	{
-		if(sti(chr.chr_ai.immortal) != 0)
-		{
-			return true;
-		}
-	}
-	return false;
+	return CheckAttrValue(chr, "chr_ai.immortal", "1");
 }
 
+// KZ > NoTarget: запрет прицеливания/захвата по персу
+// > chr: с кем работаем
+// > scope: кому запрещаем - 1 = всем, 2 = только игроку, 3 = только NPC
+// > weapon: 1 = всё, 2 = ближний бой, 3 = огнестрел
+// > canAttack: true = chr может атаковать, false = chr не может
+void LAi_SetNoTarget(aref chr, int scope, int weapon, bool canAttack)
+{
+	chr.NoTarget.scope = scope;
+	chr.NoTarget.weapon = weapon;
+
+	if (canAttack)
+		chr.NoTarget.attack = 1;
+	else
+		chr.NoTarget.attack = 2;
+}
+
+// > NoTarget: снять запрет прицеливания/захвата по персу
+void LAi_DelNoTarget(aref chr)
+{
+	DeleteAttribute(chr, "NoTarget");
+}
+
+// > NoTarget.invisible: "невидимость восприятия" - NPC не воспринимают персонажа (не гонятся, не заводят диалог, не поднимают тревогу)
+//	значения по умолчанию = рекомендованное поведение:
+//	invallies     : 0 = свои (союзники/своя группа) видят [деф], 1 = вообще все NPC слепнут
+//	invkeepaggro  : 0 = сбросить уже начатую погоню [деф],       1 = не прерывать
+//	invnotarget   : 0 = только восприятие [деф],                 1 = ещё и неуязвим (как NoTarget)
+//	invhideplayer : 0 = игрок всё ещё может заговорить [деф],    1 = и игрок не видит
+// > включить с рекомендованным поведением (только chr.NoTarget.invisible = 1)
+void LAi_SetNoDetect(aref chr)
+{
+	chr.NoTarget.invisible = 1;
+}
+
+// > включить с полным набором опций
+void LAi_SetNoDetectEx(aref chr, int allies, int keepAggro, int alsoNoTarget, int hidePlayer)
+{
+	chr.NoTarget.invisible     = 1;
+	chr.NoTarget.invallies     = allies;
+	chr.NoTarget.invkeepaggro  = keepAggro;
+	chr.NoTarget.invnotarget   = alsoNoTarget;
+	chr.NoTarget.invhideplayer = hidePlayer;
+}
+
+// > снять невидимость восприятия (inv*), не трогая scope/weapon/attack
+void LAi_DelNoDetect(aref chr)
+{
+	DeleteAttribute(chr, "NoTarget.invisible");
+	DeleteAttribute(chr, "NoTarget.invallies");
+	DeleteAttribute(chr, "NoTarget.invkeepaggro");
+	DeleteAttribute(chr, "NoTarget.invnotarget");
+	DeleteAttribute(chr, "NoTarget.invhideplayer");
+
+	if (CheckAttribute(chr, "NoTarget") && !CheckAttribute(chr, "NoTarget.scope") && !CheckAttribute(chr, "NoTarget.weapon") && !CheckAttribute(chr, "NoTarget.attack"))
+		DeleteAttribute(chr, "NoTarget");
+}
+
+// > включена ли невидимость восприятия у персонажа
+bool LAi_IsNoDetect(aref chr)
+{
+	if (!CheckAttribute(chr, "NoTarget.invisible")) return false;
+	return sti(chr.NoTarget.invisible) != 0;
+}
+
+// > должен ли скриптовый фильтр врагов считать персонажа "не врагом": невидим и не задано "не прерывать погоню" (invkeepaggro); сбрасываем/не берём в цель
+bool LAi_NoDetectDropsTarget(aref chr)
+{
+	if (!LAi_IsNoDetect(chr)) return false;
+	if (CheckAttribute(chr, "NoTarget.invkeepaggro") && sti(chr.NoTarget.invkeepaggro) != 0) return false;
+	return true;
+}
+
+// > Страховка от урона: попадает ли пара (attack и chr) под запрет NoTarget
+// > isFire: true = огнестрел, false = ХО
+bool LAi_IsNoTargetProtected(aref chr, aref attack, bool isFire)
+{
+	// KZ > NoTarget.invisible + invnotarget: невидимый персонаж неуязвим (даже если scope не задан)
+	if (CheckAttrValue(chr, "NoTarget.invisible", "1") && CheckAttrValue(chr, "NoTarget.invnotarget", "1"))
+		return true;
+
+	if (!CheckAttribute(chr, "NoTarget.scope")) return false;
+
+	int scope = sti(chr.NoTarget.scope);
+	if (scope == 0) return false;
+	bool byPlayer = (attack.index == GetMainCharacterIndex());
+
+	if (byPlayer)
+	{
+		if (scope != 1 && scope != 2)
+			return false;
+	}
+	else
+	{
+		if (scope != 1 && scope != 3)
+			return false;
+	}
+
+	int weapon = 1;
+
+	if (CheckAttribute(chr, "NoTarget.weapon"))
+		weapon = sti(chr.NoTarget.weapon);
+
+	if (isFire)
+	{
+		if (weapon != 1 && weapon != 3)
+			return false;
+	}
+	else
+	{
+		if (weapon != 1 && weapon != 2)
+			return false;
+	}
+
+	return true;
+}
+
+// KZ > WaterLimit: запрет захода персонажа в воду глубже определённого порога
+// > depth: макс. допустимая глубина воды в метрах; 0 = в воду вообще нельзя
+// > mode: 1 = скольжение вдоль берега, 2 = жёсткая стена, 3 = выталкивание к берегу
+// > Примечание: стандартный рост любой мужской модельки в игре - 1.8 м, женской - 1.75 м
+void LAi_SetWaterLimit(aref chr, float depth, int mode)
+{
+	if (depth < 0.0) depth = 0.0;
+	Restrictor(&mode, 1, 3);
+
+	chr.WaterLimit.depth = depth;
+	chr.WaterLimit.mode = mode;
+}
+
+// > Снять запрет захода в воду
+void LAi_DelWaterLimit(aref chr)
+{
+	DeleteAttribute(chr, "WaterLimit");
+}
 
 //Получить хп персонажа
 float LAi_GetCharacterHP(aref chr)
@@ -455,7 +634,12 @@ float LAi_GetCharacterMaxHP(aref chr)
 	
 	if (max_hp < 0.0)
 		max_hp = 0.0;
-	
+
+	if (CheckCharacterPerk(chr, "legendGuideRead"))
+	{
+		bonus += 10.0;
+	}
+
 	if (IsFighter(chr) && CheckCharacterPerk(pchar, "PersonalCare"))
 		bonus += max_hp * 0.2;
 	
@@ -508,6 +692,20 @@ void LAi_SetCheckMinHP(aref chr, float min, bool immortal, string quest)
 	if(min < 0.9999999) min = 0.9999999;
 	chr.chr_ai.hpchecker = min;
 	chr.chr_ai.hpchecker.quest = quest;
+	chr.chr_ai.hpchecker.immortal = immortal;
+}
+
+void LAi_SetCheckMinHPFunction(aref chr, float min, bool immortal, string function)
+{
+	if (min < 0.9999999) min = 0.9999999;
+	chr.chr_ai.hpchecker = min;
+	chr.chr_ai.hpchecker.function = function;
+	chr.chr_ai.hpchecker.immortal = immortal;
+}
+
+void LAi_SetCheckWounded(aref chr, bool immortal, string function)
+{
+	LAi_SetCheckMinHPFunction(chr, LAi_GetCharacterHP(chr)-1, false, function);
 	chr.chr_ai.hpchecker.immortal = immortal;
 }
 
@@ -893,7 +1091,7 @@ string LAi_GetCharacterGunpowderType(ref rChar, string sType)
 
 string LAi_GetAmmoGunpowderType(string sAmmo)
 {
-	if (StrHasStr(sAmmo, "bullet,grapeshot,harpoon", 1))
+	if (StrHasStr(sAmmo, "bullet,grapeshot,harpoon", true))
 		return "GunPowder";			// > пуле, картечи и гарпуну нужен гранулированный порох
 
 	if (sAmmo == "bullet_colt")
@@ -920,12 +1118,26 @@ string LAi_SetCharacterDefaultBulletType(ref rChar, string sType)
 		sAttr = sChargeType;
 		iNum = KZ|Symbol(sChargeType, ",");
 
+		int iCurLen = strlen(&sChargeType);
+		int iCurPos, iCurEnd;
+
 		if (CheckAttribute(rChar, "chr_ai." + sType + ".bullet"))
 		{
+			iCurPos = 0;
+
 			for (i = 0; i <= iNum; i++)
 			{
-				if (iNum > 0)
-					sAttr = GetSubStr(sChargeType, ",", i);
+				iCurEnd = findSubStr(&sChargeType, ",", iCurPos);
+
+				if (iCurEnd < 0)
+					iCurEnd = iCurLen;
+
+				sAttr = "";
+
+				if (iCurEnd > iCurPos)
+					sAttr = strcut(&sChargeType, iCurPos, iCurEnd - 1);
+
+				iCurPos = iCurEnd + 1;
 				
 				if (sAttr != "" && rItm.type.(sAttr).bullet == rChar.chr_ai.(sType).bullet)
 				{
@@ -938,10 +1150,21 @@ string LAi_SetCharacterDefaultBulletType(ref rChar, string sType)
 
 		if (sBulletType == "")
 		{
+			iCurPos = 0;
+
 			for (i = 0; i <= iNum; i++)
 			{
-				if (iNum > 0)
-					sAttr = GetSubStr(sChargeType, ",", i);
+				iCurEnd = findSubStr(&sChargeType, ",", iCurPos);
+
+				if (iCurEnd < 0)
+					iCurEnd = iCurLen;
+
+				sAttr = "";
+
+				if (iCurEnd > iCurPos)
+					sAttr = strcut(&sChargeType, iCurPos, iCurEnd - 1);
+
+				iCurPos = iCurEnd + 1;
 				
 				if (sAttr != "" && sti(rItm.type.(sAttr).Default) > 0)
 				{
@@ -975,9 +1198,17 @@ bool LAi_SetCharacterUseBullet(ref rChar, string sType, string sBullet)
 		sAttr = sChargeType;
 		iNum = KZ|Symbol(sChargeType, ",");
 
+		int iCurLen = strlen(&sChargeType);
+		int iCurPos = 0;
+		int iCurEnd;
+
 		for (i = 0; i <= iNum; i++)
 		{
-			if (iNum > 0) sAttr = GetSubStr(sChargeType, ",", i);
+			iCurEnd = findSubStr(&sChargeType, ",", iCurPos);
+			if (iCurEnd < 0) iCurEnd = iCurLen;
+			sAttr = "";
+			if (iCurEnd > iCurPos) sAttr = strcut(&sChargeType, iCurPos, iCurEnd - 1);
+			iCurPos = iCurEnd + 1;
 			sBulletType = rItm.type.(sAttr).bullet;
 			if (sAttr != "" && sBulletType == sBullet)
 			{
@@ -1420,24 +1651,28 @@ void LAi_AllCharactersUpdate(float dltTime)
 
 void LAi_ProcessCheckMinHP(aref chr)
 {
-	if(CheckAttribute(chr, "chr_ai.hpchecker"))
+	if (!CheckAttribute(chr, "chr_ai.hpchecker")) return;
+
+	float minhp = stf(chr.chr_ai.hpchecker);
+	float hp = stf(chr.chr_ai.hp);
+	string quest = "";
+	string function = "";
+
+	if (hp >= minhp) return;
+
+	if (sti(chr.chr_ai.hpchecker.immortal))
 	{
-		float minhp = stf(chr.chr_ai.hpchecker);
-		float hp = stf(chr.chr_ai.hp);
-		if(hp < minhp)
-		{
-			if(sti(chr.chr_ai.hpchecker.immortal))
-			{
-				LAi_SetImmortal(chr, true);
-				chr.chr_ai.hp = minhp;
-			}
-			if(chr.chr_ai.hpchecker.quest != "")
-			{
-				LAi_QuestDelay(chr.chr_ai.hpchecker.quest, 0.0);
-			}
-			LAi_RemoveCheckMinHP(chr);
-		}
+		LAi_SetImmortal(chr, true);
+		chr.chr_ai.hp = minhp;
 	}
+
+	if (CheckAttribute(chr, "chr_ai.hpchecker.quest")) quest = chr.chr_ai.hpchecker.quest;
+	if (CheckAttribute(chr, "chr_ai.hpchecker.function")) function = chr.chr_ai.hpchecker.function;
+
+	LAi_RemoveCheckMinHP(chr);
+
+	if (function != "") LAi_MethodDelay(function, 0.0);
+	else if (quest != "") LAi_QuestDelay(quest, 0.0);
 }
 
 void LAi_CharacterSaveAy(aref chr)
@@ -1484,22 +1719,37 @@ int GetGunCharges(ref rChar, string sGun)
 	ref rGun = ItemsFromID(sGun);
 
 	string sBullet, sPowder, sCharge = rGun.chargetype;
+	sBullet = sCharge;
+
 	int i, n, iNum = KZ|Symbol(sCharge, ",");
 	int iResult = 0;
 
+	int iCurLen = strlen(&sCharge);
+	int iCurPos = 0;
+	int iCurEnd;
+
 	for (i = 0; i <= iNum; i++)
 	{
-		if (iNum > 0)
-			sBullet = GetSubStr(sCharge, ",", i);
+		iCurEnd = findSubStr(&sCharge, ",", iCurPos);
+
+		if (iCurEnd < 0)
+			iCurEnd = iCurLen;
+
+		sBullet = "";
+
+		if (iCurEnd > iCurPos)
+			sBullet = strcut(&sCharge, iCurPos, iCurEnd - 1);
+
+		iCurPos = iCurEnd + 1;
 
 		if (sBullet != "")
 		{
 			n = GetCharacterItem(rChar, sBullet);
-			
+
 			if (n > 0)
 			{
 				sPowder = LAi_GetAmmoGunpowderType(sBullet);
-				
+
 				if (sPowder != "")
 					n = func_min(n, GetCharacterItem(rChar, sPowder));
 

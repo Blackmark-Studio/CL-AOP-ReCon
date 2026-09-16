@@ -970,16 +970,10 @@ int LocationInitBoarding(int n)
 	locations[n].environment.sea = "true";
     //Reload map
 	locations[n].reload.l1.name = "reload1_back";
-    locations[n].reload.l1.go = "Hispaniola_Jungle_03";
-    locations[n].reload.l1.emerge = "reload1";
-    locations[n].reload.l1.autoreload = "1";
-    locations[n].locators_radius.reload.reload1_back = 2.0;
-	
-	/*locations[n].reload.l1.name = "reload1_back";
 	locations[n].reload.l1.go = "SantoDomingo_ExitTown";
-	locations[n].reload.l1.emerge = "reload1";
+	locations[n].reload.l1.emerge = "reload3";
 	locations[n].reload.l1.autoreload = "1";
-	locations[n].locators_radius.reload.reload1_back = 2.0;*/
+	locations[n].locators_radius.reload.reload1_back = 2.0;
 
 	locations[n].reload.l2.name = "reload2";
 	locations[n].reload.l2.go = "SantoDomingo_ammo";
@@ -1555,8 +1549,8 @@ int LocationInitBoarding(int n)
 	locations[n].environment.sea = "true";
     //Reload map
 	locations[n].reload.l1.name = "reload1_back";
-	locations[n].reload.l1.go = "Maracaibo_exitTown";
-	locations[n].reload.l1.emerge = "reload2";
+	locations[n].reload.l1.go = "Gibraltar_jungle_02";
+	locations[n].reload.l1.emerge = "reload3";
 	locations[n].reload.l1.autoreload = "1";
 	locations[n].locators_radius.reload.reload1_back = 2.0;
 
@@ -2210,6 +2204,43 @@ int LocationInitBoarding(int n)
 	Locations[n].boarding.Loc.Hero = "loc0";
     Locations[n].boarding.Loc.Capt = "aloc1";
 	n = n + 1;
+	
+////////////////////////////////////
+// Большая каюта как обычная локация
+////////////////////////////////////
+Locations[n].id = "Cabin_Huge_Quest";
+Locations[n].id.label = "cabine";
+Locations[n].filespath.models = "locations\inside\cabin02";
+Locations[n].image = "loading\capdeck.tga";
+
+Locations[n].type = "deck";
+
+// Models
+// Always
+Locations[n].models.always.l1 = "cabin02";
+Locations[n].models.always.l1.level = 65538;
+Locations[n].models.always.locators = "cabin02_locators";
+Locations[n].models.always.window = "cabin02_fonar";
+Locations[n].models.always.window.tech = "LocationWindows";
+Locations[n].models.always.window.level = 65539;
+
+// Day
+Locations[n].models.day.charactersPatch = "cabin02_patch";
+
+// Night
+Locations[n].models.night.charactersPatch = "cabin02_patch";
+
+// Environment
+Locations[n].environment.weather = "true";
+Locations[n].environment.sea = "true";
+Locations[n].environment.weather.rain = false;
+//Reload map
+	Locations[n].reload.l1.name = "reload1";
+	Locations[n].reload.l1.go = "";
+	Locations[n].reload.l1.emerge = "";
+	Locations[n].reload.l1.autoreload = "";
+	Locations[n].reload.l1.label = "";
+n = n + 1;	
 	
 	Locations[n].id = "Cabin_Small";
 	Locations[n].id.label = "cabine";
@@ -4035,6 +4066,32 @@ int LocationInitBoarding(int n)
 	
 	n = n + 1;
 
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Квестовая абордажная палуба
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Locations[n].id = "AoP_deck";
+Locations[n].id.label = "Boarding deck";
+Locations[n].type = "deck_fight";
+Locations[n].filespath.models = "locations\decks\DeckLeBask";
+Locations[n].image = "loading\Boarding.tga";
+
+Locations[n].lockCamAngle = 0.4;
+Locations[n].camshuttle = 1;
+
+Locations[n].models.always.deckMediumVSBig = "DeckMediumVSBig";
+Locations[n].models.always.locators = "DeckMediumVSBig_locators";
+
+Locations[n].models.day.charactersPatch = "deckMediumVSBig_pd";
+Locations[n].models.day.deckFonarsDay = "deckMediumVSBig_fd";
+
+Locations[n].models.night.charactersPatch = "deckMediumVSBig_pn";
+Locations[n].models.night.deckFonarsNigh = "deckMediumVSBig_fn";
+
+Locations[n].environment.weather = "true";
+Locations[n].environment.sea = "true";
+n = n + 1;
+
+
 	//ID
 	Locations[n].id = "BOARDING_BIG_DECK";
 	locations[n].id.label = "Boarding deck";
@@ -4102,6 +4159,44 @@ int LocationInitBoarding(int n)
 	Locations[n].camshuttle = 1;
 	locations[n].environment.weather.rain = false;
 	n = n + 1;
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Товарный трюм
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Locations[n].id = "aop_deck2";
+Locations[n].id.label = "My_Deck";
+Locations[n].type = "deck";
+Locations[n].filespath.models = "locations\decks\holdb_quest";
+Locations[n].image = "loading\Boarding_" + rand(2) + ".tga";
+
+Locations[n].models.always.locators = "holdb_l";
+Locations[n].models.always.l1 = "holdb";
+Locations[n].models.always.l1.level = 65538;
+Locations[n].models.always.l1.tech = "DLightModel";
+
+Locations[n].models.always.barricade = "holdb_barricade";
+Locations[n].models.always.barricade.tech = "DLightModel";
+
+Locations[n].models.day.charactersPatch = "holdb_p";
+Locations[n].models.day.fonar = "holdb_fd";
+Locations[n].models.day.fonar.tech = "DLightModel";
+
+Locations[n].models.night.charactersPatch = "holdb_p";
+Locations[n].models.night.fonar = "holdb_fn";
+Locations[n].models.night.fonar.tech = "DLightModel";
+
+Locations[n].environment.weather = "true";
+Locations[n].environment.weather.rain = false;
+Locations[n].environment.sea = "false";
+
+Locations[n].camshuttle = 1;
+//Reload map
+	Locations[n].reload.l1.name = "reload1";
+	Locations[n].reload.l1.go = "";
+	Locations[n].reload.l1.emerge = "";
+	Locations[n].reload.l1.autoreload = "";
+	Locations[n].reload.l1.label = "";
+n = n + 1;
 	
 	//----------------------------------- орлопдек - для кораблей 1-4 класса ---------------------------- 
 	Locations[n].id = "Boarding_Campus";

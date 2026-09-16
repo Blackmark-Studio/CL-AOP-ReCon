@@ -1,68 +1,68 @@
 convoy_traider_1_m {
-哎呀，见鬼！我知道你是谁！只有傻子才会雇你护送他们的船。告辞！
+哎呀， 见鬼！ 我知道你是谁！ 只有傻子才会雇你护送他们的船。 告辞！ 
 }
 convoy_traider_1_f {
-见鬼！！我知道你是谁！只有傻瓜才会雇你护送他们的船。告辞！
+见鬼！ ！ 我知道你是谁！ 只有傻瓜才会雇你护送他们的船。 告辞！ 
 }
 convoy_traider_2 {
-啊，我知道你是谁！让你当护卫？去找别人当傻子吧……
+啊， 我知道你是谁！ 让你当护卫？ 去找别人当傻子吧…… 
 }
 convoy_traider_3 {
 @<RandPhraseSimple>
 }
 convoy_traider_4 {
-呵，胆子真小……
+呵， 胆子真小…… 
 }
 convoy_traider_5 {
-现在的人真是胆子越来越小了！
+现在的人真是胆子越来越小了！ 
 }
 convoy_traider_6 {
 @<RandPhraseSimple>
 }
 convoy_traider_7 {
-@<TimeGreeting>，@<GetAddress_Form>！我是@<GetFullName>，做生意的。听说你在找活儿？
+@<TimeGreeting>， @<GetAddress_Form>！ 我是@<GetFullName>， 做生意的。 听说你在找活儿？ 
 }
 convoy_traider_8_m {
-差不多吧。听说你在找个船长护送你和你的船去目的地？
+差不多吧。 听说你在找个船长护送你和你的船去目的地？ 
 }
 convoy_traider_8_f {
-差不多吧。听说你在找个船长，带你和你的船去目的地？
+差不多吧。 听说你在找个船长， 带你和你的船去目的地？ 
 }
 convoy_traider_9 {
-没错。而且我觉得你挺适合跟我一起走的。你怎么看？
+没错。 而且我觉得你挺适合跟我一起走的。 你怎么看？ 
 }
 convoy_traider_10 {
-我就这么说吧——你开个价，咱们也许能谈成。
+我就这么说吧——你开个价， 咱们也许能谈成。 
 }
 convoy_traider_11 {
-我要你护送我去@<XI_ConvertString>，就在@<XI_ConvertString>，限@<FindDaysString>内，事成之后我会付你@<FindMoneyString>。你觉得怎么样？
+我需要你在@<FindDaysString>内护送我前往@<XI_ConvertString>-@<XI_ConvertString>， 事成之后我会付你@<FindMoneyString>。 你觉得怎么样？ 
 }
 convoy_traider_12_m {
-我同意。
+我同意。 
 }
 convoy_traider_12_f {
-我同意。
+我同意。 
 }
 convoy_traider_13 {
-我对这个没兴趣。
+我对这个没兴趣。 
 }
 convoy_traider_14 {
-哦！谢谢你。有你保护我，我从没这么安心过。这是你的报酬。
+哦！ 谢谢你。 有你保护我， 我从没这么安心过。 这是你的报酬。 
 }
 convoy_traider_15 {
-谢谢你。
+谢谢你。 
 }
 convoy_traider_16 {
-有个叫@<GetFullName>的商船船长说，@<GetMainCharacterNameDat>在护送商船这事上值得信任。
+有个叫@<GetFullName>的商船船长说， @<GetMainCharacterNameDat>在护送商船这事上值得信任。 
 }
 convoy_traider_17_m {
-一个叫@<GetFullName>的商人说，@<GetMainCharacterNameDat>船长值得信任。护送他去@<XI_ConvertString>的路上，他把船保护得很好。
+一个叫@<GetFullName>的商人说， @<GetMainCharacterNameDat>船长值得信任。 护送他去@<XI_ConvertString>的路上， 他把船保护得很好。 
 }
 convoy_traider_17_f {
-一个叫@<GetFullName>的商人说，@<GetMainCharacterNameDat>船长值得信任。她护送他的船去@<XI_ConvertString>时表现得非常出色。
+一个叫@<GetFullName>的商人说， @<GetMainCharacterNameDat>船长值得信任。 她护送他的船去@<XI_ConvertString>时表现得非常出色。 
 }
 convoy_traider_18 {
-听说你在护送商船这事上说到做到。有个叫@<GetFullName>的商人对你评价很高。
+听说你在护送商船这事上说到做到。 有个叫@<GetFullName>的商人对你评价很高。 
 }
 convoy_traider_19 {
 @<LinkRandPhrase>

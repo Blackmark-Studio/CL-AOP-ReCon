@@ -79,7 +79,7 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 		break;
 
 		case "storage_rent1":
-			NPChar.MoneyForStorage = GetStoragePrice(15000);
+			NPChar.MoneyForStorage = GetStoragePrice(NPChar, 15000);
 			dialog.text = StringFromKey("Pirates_Store_28", FindMoneyString(sti(NPChar.MoneyForStorage)));
 			link.l1 = StringFromKey("Pirates_Store_29");
 			link.l1.go = "storage_rent2";

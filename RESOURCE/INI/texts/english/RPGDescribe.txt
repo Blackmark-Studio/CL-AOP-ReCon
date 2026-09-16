@@ -351,6 +351,18 @@ Pirates. These men sail against all flags and live by the Pirate Code (although 
 For any naval patrol, the sight of a pirate flag on the horizon is like throwing bacon to a starving wolf. For the vast majority of pirates, there are only two ends - the gibbet or the hangman's noose.
 }
 
+Pirate_bonuses_descr
+{
+Additional character trait — "Smuggler Agent".
+Possibility of buying contraband even in stores.
+~
+Additional starting skills: "Basic Shooting Arts" and "Self Repair".
+~
+When choosing the "Corsair" class, additional items: Treasure Map Fragment, 2500 piastres.
+~
+Starting ship — "Sloop".
+}
+
 Hunter_hint
 {
 The attitude of a nation, its citizens and soldiers to you. Good deeds for the country increase your reputation; bad ones may even lead to a bounty placed on the hero's head. That means continuous pursuit both on land and at sea.

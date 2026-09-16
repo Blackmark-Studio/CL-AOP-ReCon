@@ -252,6 +252,23 @@ GivePrisonFree.4 {On dirait que @<sName> m’a tout simplement dupé. Nous n’a
 GivePrisonFree.5 {J'ai accepté d'aider un prisonnier de la prison de @<sCity> nommé @<sName>. Je dois parler au chef de la prison ; il y a peut-être un moyen de régler cela.}
 GivePrisonFree.6 {Les deux jours qui m’avaient été accordés sont passés, et je n’ai toujours pas réussi à régler la question de la libération du prisonnier nommé @<sName>. C’est dommage, mais il devra rester en prison.}
 GivePrisonFree.7 {Je n’ai pas réussi à libérer le prisonnier nommé @<sName>. Tant pis, je me débrouillerai sans son trésor.}
+
+Tutorial_Eng
+{
+Référence : Que se passe-t-il en Angleterre ?
+}
+
+Tutorial_Eng.1
+{
+L’Angleterre traverse des temps difficiles depuis près d’un siècle. Le roi Henri VIII d’Angleterre ne parvenait pas à divorcer de sa première épouse, Catherine d’Aragon, car le pape refusait de le lui permettre. C’est alors que l’archevêque anglais Cranmer intervint et proposa à Henri de se donner lui-même le divorce, puisqu’il était « l’oint de Dieu ». En 1534, Henri VIII se proclama donc « chef de l’Église » par un statut du Parlement, séparant ainsi l’Église d’Angleterre de l’autorité de Rome. Un seul divorce ne suffit pas à Henri VIII : il eut six épouses en tout, dont deux, Anne Boleyn et sa cousine Catherine Howard, qu’il envoya sans remords à l’échafaud. Depuis lors, la terre anglaise ne connaît plus le repos. Marie Tudor tenta de ramener l’Église sous l’autorité du pape, mais Jean Calvin transforma l’Angleterre, qui devint puritaine.
+    La guerre civile entre Charles Ier et Oliver Cromwell s’acheva par l’exécution du roi d’Angleterre. La république indépendante (1649-1660) n’apporta pas la paix à l’Angleterre : dix années de pouvoir puritain épuisèrent tous les Anglais du Vieux Monde. Au printemps 1660, ils rendirent donc le trône d’Angleterre à Charles II Stuart, fils de Charles Ier exécuté.
+    Décidément, on ne devrait jamais confier le destin d’un État à des fanatiques religieux ! Était-il nécessaire de verser des fleuves de sang, de priver le roi de son pouvoir puis de sa tête, pour remettre dix ans plus tard le trône à son fils ?
+    La récente guerre de 1655 entre l’Angleterre et l’Espagne a éprouvé les deux puissances, mais davantage les Espagnols, qui ont même perdu la Jamaïque. L’Espagne et l’Angleterre sont donc aujourd’hui en paix et les lettres de marque délivrées par les Anglais ont été annulées. Mais tout cela n’est que balivernes : on pillait les Espagnols autrefois et on les pille encore aujourd’hui ; ils ont beaucoup trop de sang innocent sur les mains.
+    Depuis 1664, tout est dirigé ici par le gouverneur de la Jamaïque, sir Thomas Modyford. À son arrivée à Port Royal, il avait reçu de Charles II des instructions très claires : réprimer la piraterie et maintenir de bonnes relations commerciales avec l’Espagne. Mais il n’a nullement l’intention d’exécuter les ordres du roi d’Angleterre, même s’il fait semblant du contraire.
+    Sir Thomas Modyford avait auparavant été gouverneur de la Barbade. Lorsque Cromwell arriva au pouvoir, la Barbade, sous l’impulsion de Modyford, refusa de reconnaître la nouvelle autorité britannique. Monsieur rêvait d’indépendance, voyez-vous. Mais Cromwell n’était pas un Oliver disposé à pardonner ce genre de fantaisies : il envoya une escadre pour ramener l’île à l’obéissance. Modyford fit mine de résister, puis s’entendit rapidement avec les puritains et ramena la Barbade dans le giron de la métropole. Après le couronnement de Charles II sur le trône britannique, sir Thomas Modyford fut nommé gouverneur de la Jamaïque, dit-on grâce à des parents influents appartenant à l’entourage de Charles.
+    Ainsi donc, sir Thomas Modyford, gouverneur de la Jamaïque, est un grand amateur du démon jaune. Son favori est le chef des boucaniers Edward Mansfield, un Hollandais de Curaçao, mais Henry Morgan n’est pas non plus privé de ses attentions. Qui refuserait des montagnes d’or espagnol, que Henry rapporte de chacune de ses expéditions contre les établissements espagnols ?
+}
+
 Tutorial_Fra {Aide : Que se passe-t-il en France ?}
 Tutorial_Fra.1
 {
@@ -273,6 +290,28 @@ L’île de la Tortue revêtait une importance stratégique majeure, surtout pou
 
 En 1664, Louis XIV accorda officiellement la partie occidentale d’Hispaniola (autre nom de la Tortue) à la Compagnie française des Indes occidentales et nomma Bertrand d’Ogeron, ancien boucanier, gouverneur du territoire. La Confrérie de la Côte n’avait rien à reprocher aux précédents gouverneurs de la Tortue, mais désormais, la Tortue était un véritable paradis pour les boucaniers. Le gouverneur d’Ogeron ordonna même que des femmes soient amenées d’Europe sur son île !!! Un paradis pour le boucanier !
 }
+
+Tutorial_Spa
+{
+Référence : Que se passe-t-il en Espagne ?
+}
+
+Tutorial_Spa.1
+{
+À la mort de Philippe IV, dernier grand monarque espagnol, le pays entra dans une longue période de régence. Le nouveau roi, Charles II de Habsbourg, âgé de quatre ans, est si faible et souffre d’un si grand nombre de maladies qu’on se demande comment il parvient seulement à rester en vie. Rien d’étonnant à cela : son père Philippe IV était déjà âgé lorsqu’il épousa Marie-Anne d’Autriche et, à ce qu’on raconte, souffrait lui-même de « diverses maladies ». Marianne — c’est ainsi qu’Anne d’Autriche était appelée en Espagne — devint donc régente pour son fils. Les événements récents survenus en France, les soulèvements de la Fronde contre Mazarin en 1650, avaient montré les dangers d’une telle situation. Philippe IV avait donc préparé la régence à l’avance : pour assister la reine, il avait constitué une Junte de gouvernement soigneusement choisie parmi des représentants du pouvoir politique, ecclésiastique et public.
+    Malgré cette junte, Marianne, incapable de supporter seule le poids de ses obligations, revint à l’institution des favoris afin d’assurer le soutien de la régence dans une puissance mondiale. Son choix se porta sur son confesseur autrichien, le père jésuite Johann Eberhard Nithard. Malgré les avertissements, la reine commença par ne lui conférer qu’un pouvoir nominal en le nommant Grand Inquisiteur d’Espagne, fonction qui faisait automatiquement de lui un membre de la Junte de gouvernement. Son origine étrangère et la propagande politique suscitèrent une profonde hostilité envers lui au sein du gouvernement et dans de larges couches de la population. Cette hostilité fut encore aggravée par la manière dont Marianne et Nithard traitaient l’expérimenté et respecté demi-frère du roi Charles II, Don Juan. Don Juan est l’un des hommes les plus intéressants d’Espagne. Protecteur de savants tels que De la Faille, Caramuel y Lobkowitz ou Juanini, propriétaire d’une immense bibliothèque, il est également l’un des fondateurs de la science réformatrice espagnole. En outre, général courageux et gouverneur éprouvé, il joua un rôle décisif dans la répression des révoltes de Naples et de Barcelone. En revanche, son commandement en Flandre et au Portugal entre 1656 et 1663 fut beaucoup moins heureux.
+    On éprouve une certaine pitié pour la pauvre Espagne, attaquée de toutes parts au moment même où elle est faible. Mais il existe une raison pour laquelle tout le monde déteste les Espagnols.
+    Des boucaniers — de simples chasseurs et éleveurs de bétail, pour la plupart français — vivaient paisiblement à Porto Rico et sur les îlots voisins, sans déranger personne, lorsque les Espagnols décidèrent soudain, malgré le fait que l’activité des boucaniers leur était également profitable, de les chasser tous de l’île de Saint-Domingue ou, si possible, de les exterminer complètement.
+    Le début de ce projet cruel, funeste même pour les Espagnols, fut très facile. Suivant la méthode qu’ils avaient employée avec tant de succès contre les indigènes d’Amérique, ils attaquèrent brusquement les boucaniers dispersés, innocents et sans méfiance, en tuèrent une partie et emmenèrent les autres en esclavage. À partir de ce moment, les chasseurs devinrent plus prudents : ils se déplaçaient toujours par petits groupes prêts à résister, et lorsque, malgré ces précautions, ils étaient attaqués, ils combattaient avec un tel acharnement qu’ils vainquaient presque toujours les Espagnols, malgré leur supériorité numérique, et les forçaient à prendre la fuite.
+    Les Espagnols changèrent alors de méthode. La chasse individuelle aux boucaniers, qui avait coûté la vie à plus d’un bon catholique espagnol, cessa. À la place, ils commencèrent à attaquer les boucaniers de nuit dans leurs boucans, tuant maîtres et serviteurs et n’épargnant même pas les chiens. Ces atrocités rendirent les boucaniers furieux. Ils s’unirent et passèrent eux aussi à la guerre offensive, sans épargner aucun ennemi. Cela produisit son effet. Les Espagnols semblèrent cesser toute action hostile, et les boucaniers commencèrent à espérer qu’on les laisserait enfin en paix. Mais leurs ennemis ne faisaient qu’attendre des renforts. Dès que ceux-ci arrivèrent des colonies espagnoles, la guerre reprit de plus belle. Les boucaniers reçurent eux aussi des renforts : des Français de la Tortue et d’autres îles, ainsi que de nombreux aventuriers et chercheurs de butin, se joignirent à eux. Les adversaires combattirent sans relâche et le sang coula sur toute l’île. Aujourd’hui encore, de nombreux lieux de Saint-Domingue portent le nom de « champs du meurtre ». Tout cela se déroula entre 1660 et 1665.
+
+    Il n’existe pas de diables plus sanguinaires que les Espagnols et les Portugais. Rien qu’entre 1535 et 1660, l’Espagne fit sortir d’Amérique une telle quantité de métaux précieux que toutes les mines du Vieux Monde réunies n’en avaient probablement pas produit la moitié pendant toute leur existence jusqu’alors. La moitié de la population indigène du Nouveau Monde — selon les estimations les plus prudentes, cinq ou six millions d’Indiens — périt pendant le premier siècle et demi de domination espagnole, une grande partie d’entre eux dans les mines du Mexique et du Pérou.
+    Il existe dans la Fraternité de la Côte un flibustier nommé Montbars l’Exterminateur. Il ne prend jamais de prise sur les navires capturés. Espagnols armés, or, marchandises : tout passe par-dessus bord, et son équipage est composé d’Indiens qu’il a libérés de l’esclavage espagnol.
+    Tout en pillant sans merci ses propres colonies d’outre-mer, l’Espagne imposa le monopole commercial le plus sévère au Nouveau Monde. À partir du début du XVIe siècle, Séville devint le seul port espagnol autorisé à commercer avec l’ensemble des territoires d’outre-mer. C’est là qu’arrivaient les richesses pillées du continent américain, expédiées par le port de Veracruz au Mexique, d’abord via Nombre de Dios, puis plus tard par Puerto Bello, sur la côte atlantique de l’isthme de Panama.
+    À partir de 1537, aucun navire marchand espagnol ne traversa plus l’Atlantique seul : cette règle extrêmement stricte était dictée par les intérêts du monopole. En outre, dès le début du XVIe siècle, l’accès aux eaux bordant les possessions d’outre-mer de la Couronne espagnole fut interdit aux navires des autres pays. Au début, ce système fonctionna sans faille, car l’Espagne et le Portugal avaient ouvert des routes vers l’Inde et le Nouveau Monde bien avant les autres puissances européennes. En 1493, le pape Alexandre VI partagea entre ces deux « voisines » l’ensemble du monde sous le ciel, et un an plus tard elles conclurent un accord délimitant les sphères de leurs conquêtes futures : la « moitié » espagnole du globe comprenait toute l’Amérique à l’exception du Brésil, tandis que la moitié portugaise comprenait le Brésil, l’Afrique et l’Asie.
+    Mais l’heure des comptes a sonné. Le sang et l’or des Espagnols — pour le sang de millions d’Indiens, de dizaines de milliers de boucaniers français et de colons anglais.
+}
+
 Tutorial_Hol {Que se passe-t-il en Hollande ?}
 Tutorial_Hol.1
 {
@@ -438,6 +477,30 @@ Parfois, les Aztèques eux-mêmes se portaient volontaires pour être sacrifiés
 
 Parfois, une méthode de sacrifice était utilisée
 }
+
+Tutorial_Sharp
+{
+Référence : Qui était le capitaine Sharp ?
+}
+
+Tutorial_Sharp.1
+{
+L’une des figures les plus pittoresques de l’épopée flibustière fut le capitaine Sharp, devenu célèbre moins comme l’un des organisateurs de la traversée de l’isthme de Panama que comme le héros de plusieurs histoires anecdotiques et absurdes.
+    Le 5 avril 1680, une troupe de pirates forte d’environ quatre cents hommes se mit en route vers l’ouest à travers la jungle. Cette traversée fut rendue possible en grande partie grâce au soutien des Indiens locaux, qui avaient leurs propres comptes à régler avec les Espagnols.
+    Les pirates prirent d’assaut la petite ville de Santa María sans subir de pertes importantes. Le butin fut cependant maigre : l’or extrait des mines voisines avait été envoyé à Panama trois jours avant l’attaque. Les pirates décidèrent de renouveler l’exploit de Morgan et de prendre Panama d’assaut, tandis que le modeste butin capturé à Santa María était renvoyé sous escorte de l’autre côté de l’isthme.
+
+    Les habitants de Panama avaient toutefois été avertis de l’approche des flibustiers, et l’idée de prendre la ville d’assaut dut être abandonnée. À la place, les pirates livrèrent bataille à trois galions espagnols qui leur étaient très supérieurs en armement comme en effectifs. Grâce à leur courage et à leur savoir-faire, les flibustiers réussirent à aborder et capturer les bâtiments espagnols.
+    Un seul homme ne participa pas à cette bataille historique : le capitaine Bartholomew Sharp, occupé au même moment à piller une pêcherie de perles. De plus, ses compagnons avaient trouvé du vin sur une petite île et Sharp lui-même avait trouvé une belle Espagnole ; il ne se pressait donc guère de rejoindre le combat.
+    Le lendemain matin de la victoire, les pirates se séparèrent. Soixante-dix hommes dirigés par l’amiral Coxon partirent, tandis que les autres passèrent sous le commandement de l’amiral Sawkins. Peu après, les pirates capturèrent un navire transportant la solde destinée à Panama, et chacun reçut deux cent quarante-sept pièces. Encouragé par ce succès, Sawkins tenta de prendre d’assaut la petite ville de Pueblo Nuevo, mais l’opération échoua et l’amiral fut tué. Sharp prit sa place à la tête du détachement en promettant que chaque pirate rentrerait de l’expédition avec mille livres sterling de butin.
+    Pourtant, soixante-dix autres pirates firent sécession après son élection et quittèrent le camp à bord d’un navire capturé. La suite des événements montra qu’ils n’avaient pas tout à fait tort : Sharp se révéla un commandant exécrable et, au lieu de capturer des navires et des villes, entraîna les pirates dans une vaine recherche du trésor de Drake. Deux mois plus tard, ils le déposèrent et élurent John Watling amiral. Cela se produisit sur l’île Juan Fernández, où les pirates, repartant précipitamment, oublièrent un Indien nommé William. Celui-ci vécut seul pendant plusieurs années avant d’être découvert par les navires de Davis et Swan.
+    Watling décida de prendre d’assaut la ville d’Arica, mais avec seulement cent quarante hommes à sa disposition, il subit une défaite écrasante et périt pendant l’attaque. Sharp devint ainsi amiral pour la deuxième fois.
+    Pendant plusieurs semaines, il croisa ensuite au large des côtes de l’Amérique du Sud à bord du galion « Trinity ». Il réussit à capturer le riche navire « Saint Peter », puis un autre, le « Saint Rosario ». L’histoire liée à ce dernier fit de Sharp la risée de tous les pirates des Caraïbes. Après avoir pris le vin et les coffres remplis de pièces d’argent, les hommes de Sharp découvrirent dans la cale des lingots d’un métal blanc qu’ils prirent pour de l’étain. Les flibustiers s’apprêtaient déjà à les charger sur leur propre navire lorsque l’amiral remarqua une dame espagnole à bord du bâtiment capturé. Elle le persuada de laisser repartir le navire sans le piller davantage — le prix de cette faveur est, je pense, assez évident : notre homme était particulièrement porté sur les femmes ! Sharp décida de se contenter des coffres de monnaie et n’emporta qu’un seul lingot, dans l’intention d’en couler des balles.
+    Le premier homme qui vit le lingot à Antigua comprit immédiatement à quel point Sharp s’était fait berner : les cales du « Saint Rosario » contenaient... la plus grande cargaison d’argent jamais tombée entre les mains de pirates. On racontait également que la belle dame reçut une généreuse récompense de la part des propriétaires de l’argent.
+    Le voyage de Sharp se poursuivit encore pendant plusieurs mois. Il fit passer son galion autour du cap Horn et atteignit les Antilles. Là, craignant Morgan qui pourchassait ses anciens compagnons, les pirates abandonnèrent le navire et gagnèrent l’Angleterre à bord d’autres bâtiments. À la demande de l’ambassadeur d’Espagne, ils y furent tous arrêtés. Sharp engagea toutefois des avocats qui réussirent à démontrer que leurs actes n’avaient été qu’une défense contre les attaques espagnoles, et les pirates furent acquittés. Le destin ultérieur de Sharp est inconnu, mais il semble avoir vécu paisiblement en Angleterre grâce à l’or espagnol pillé.
+
+    Et pourquoi le jeu « Corsairs 1 » a-t-il fait de cet homme l’objet d’un véritable culte de la personnalité ? Était-ce une plaisanterie ? Quoi qu’il en soit, à en juger par tout ce qu’on raconte, le capitaine Sharp avait réellement un nombre incalculable d’enfants dispersés dans tout l’archipel.
+}
+
 Tutorial_Dictonary {Aide : Glossaire des termes}
 Tutorial_Dictonary.1
 {
@@ -483,6 +546,54 @@ ENCABLURE – unité de longueur marine (185,2 mètres), soit un dixième de mil
 *
 CABOTAGE (français cabotage) – navigation entre ports d’un même pays. On distingue le grand cabotage (entre ports
 }
+
+Tutorial_Fight_Info
+{
+Référence : Système de combat du jeu
+}
+
+Tutorial_Fight_Info.1
+{
+SYSTÈME DE COMBAT DU JEU
+*
+Une maîtrise virtuose de la lame et du pistolet vous permettra de sortir vivant de n’importe quelle mauvaise passe. Le système de combat met à votre disposition trois types d’attaques, deux types de parade, un blocage, une attaque circulaire servant à la fois à l’attaque et à la défense, la possibilité de tirer au pistolet, ainsi que des esquives vers l’arrière et sur les côtés.
+*
+VIE
+La Vie d’un personnage représente la quantité de dégâts qu’il peut supporter. Elle augmente à chaque nouveau niveau et peut également être améliorée grâce à certaines capacités supplémentaires.
+Pendant le combat, votre Vie est représentée par une barre rouge dans le coin supérieur gauche, à gauche du portrait du personnage. Vous pouvez récupérer de la Vie pendant le combat en utilisant des flacons d’élixir (« potions de soin ») via le menu Entrée/Utiliser ou à l’aide d’une touche de raccourci.
+*
+SANTÉ
+La Santé représente l’état physique général du héros. Plus elle est mauvaise, plus les caractéristiques du héros se dégradent dans le jeu. La Santé baisse lorsque le héros reçoit de nombreuses blessures et se rétablit lorsqu’il reste longtemps sans participer à des combats au corps à corps. Si elle tombe au-dessous du niveau Excellent, le héros commence à subir des malus à ses caractéristiques, qui entraînent à leur tour des malus aux compétences. La Santé se rétablit d’elle-même, assez lentement, mais elle se rétablit tout de même. Elle revient le plus vite lorsque le héros ne fait rien (par exemple lorsqu’il dort dans une taverne), et deux fois plus lentement pendant les voyages en mer. La capacité « Excellente santé » double la vitesse de récupération. Un fond doré sur l’indicateur de Santé signifie qu’elle est revenue à son maximum actuel. Toutefois, ce maximum peut lui-même diminuer après des blessures graves — cicatrices et mutilations qui continuent à se faire sentir au combat même après une guérison complète. Les prêtres dans les églises peuvent restaurer le maximum de Santé, mais rarement, de peu, et contre beaucoup d’argent. Il faut parfois consulter deux ou trois prêtres pour qu’une Santé « Bonne, dorée » devienne « Bonne, blanche » — et même ensuite, il faut encore attendre qu’elle se rétablisse d’elle-même jusqu’à « Excellente, dorée ».
+*
+ÉNERGIE
+Un homme ne peut pas combattre sans arrêt : tôt ou tard, la fatigue prend le dessus. La quantité d’Énergie dépend de la caractéristique « Réaction » du héros : plus sa valeur est élevée, plus le personnage est capable d’efforts. Chaque coup consomme une certaine quantité d’Énergie ; il faut donc ménager soigneusement ses forces au combat. L’Énergie est indiquée par une barre bleue à droite du portrait du personnage. Si vous n’en avez pas suffisamment, vous ne pourrez pas porter de coup. L’Énergie se régénère progressivement pendant le combat. Si vous voyez qu’il en reste très peu et qu’elle ne suffit plus pour attaquer, essayez de bloquer ou de parer les coups ennemis jusqu’à ce qu’elle se rétablisse. Certaines capacités supplémentaires vous aideront à dépenser moins d’Énergie lors des attaques et à la récupérer plus rapidement.
+*
+ÉNERGIE ET VIE DES ENNEMIS
+Pendant le combat, des barres indiquant la Vie et l’Énergie de vos ennemis apparaissent au-dessus de leur tête. Lorsque vous ou vos alliés frappez un ennemi, un chiffre s’envole de sa tête pour indiquer la quantité de dégâts infligés.
+***
+TYPES D’ATTAQUES
+Coup de taille — coup tranchant porté avec un élan. Il inflige des dégâts moyens et consomme peu d’Énergie.
+*
+Coup d’estoc — attaque rapide infligeant de faibles dégâts. Elle consomme davantage d’Énergie qu’un coup de taille, mais sa rapidité permet d’interrompre la préparation d’une attaque adverse.
+*
+Coup puissant — exige beaucoup d’Énergie et se porte avec un grand mouvement, lentement, mais inflige de très lourds dégâts et traverse toujours le blocage.
+*
+Coup circulaire — exige une quantité moyenne d’Énergie et inflige de faibles dégâts à tous les personnages entourant le héros. Un personnage touché par un coup circulaire recule légèrement, libérant de l’espace pour manœuvrer et offrant un répit avant une contre-attaque.
+*
+Parade — permet de détourner un coup en écartant le sabre de l’adversaire. Elle ne consomme pas d’Énergie et protège contre un coup puissant. Une parade réussie brise le rythme de l’adversaire et lui fait perdre la majeure partie de son Énergie.
+*
+Feinte — ressemble à un coup puissant. Si vous effectuez une feinte au moment où l’adversaire porte n’importe quelle attaque, votre personnage intercepte son sabre et lui rend un coup. Exécuter une feinte ne consomme pas d’Énergie, et une feinte réussie qui inflige des dégâts n’en consomme qu’une petite quantité. La feinte permet également d’intercepter un coup puissant.
+*
+Blocage — permet de bloquer toutes les attaques sauf le coup puissant. Il ne consomme pas d’Énergie. Vous pouvez vous mettre en garde à tout moment et interrompre votre propre attaque si vous voyez immédiatement qu’elle échouera. Certaines attaques ordinaires peuvent néanmoins traverser un blocage si l’adversaire possède les capacités appropriées.
+*
+Tir au pistolet — inflige des dégâts à l’ennemi et le force à reculer d’un pas. Il existe différents types de pistolets, à un, deux ou quatre coups. Les tirs nécessitent des balles. La possibilité de recharger les pistolets pendant le combat dépend du réglage choisi dans le jeu ; selon ce réglage, le rechargement ne peut se faire qu’avec le sabre rengainé, ou est impossible.
+*
+Esquive — permet de bondir de deux pas en arrière ou sur le côté, mettant le héros hors de portée d’un coup ou hors de la mêlée.
+*
+CONFIGURATION DES TOUCHES D’ATTAQUE
+Pour faciliter les commandes, le jeu dispose d’une touche de mode d’attaque : la maintenir enfoncée donne une seconde fonction à une touche. Par défaut, l’estoc et l’attaque circulaire partagent la même touche — le bouton gauche de la souris ; le coup puissant et la feinte utilisent le bouton central ; le coup de taille et la parade utilisent le bouton droit. Le blocage, le tir et les esquives disposent chacun de leur propre touche.
+}
+
 Tutorial_Seafight_Info {Aide : Batailles navales sur les navires}
 Tutorial_Seafight_Info.1
 {
@@ -1149,6 +1260,43 @@ Askold m’a chargé de trouver une tombe de je-ne-sais-qui sur l’île de Guad
 Je trouve inutile de remplir le journal de bord avec des notes sur mes affaires avec Askold, alors j’arrête de gaspiller du papier pour rien.
 }
 Ascold.14 {Les Espagnols près de la pyramide ont été éliminés.}
+
+ContractWithHell
+{
+Texte du contrat avec le Département de l’Enfer pour la comptabilité des humains
+}
+
+ContractWithHell.1
+{
+Contrat.
+
+Mer des Caraïbes.
+
+Le Département de l’Enfer pour la comptabilité des humains, représenté par le démon Azzy, agissant en vertu du Règlement relatif au statut des démons dans le monde des humains, ci-après dénommé l’Exécutant, d’une part, et @<Conrtragent>, agissant selon ses propres souhaits et de son plein gré, ci-après dénommé le Client, d’autre part, ont conclu le présent contrat comme suit :
+
+Objet du contrat :
+
+1. Le présent contrat a pour objet d’assurer, par l’Exécutant, l’invulnérabilité du corps du Client.
+
+2. L’Exécutant est tenu de prendre toutes les mesures nécessaires afin d’assurer l’insensibilité absolue du corps du Client à toute action physique, notamment : attaques à l’arme blanche, attaques par armes à feu, chute du corps du Client d’une grande hauteur, chute de divers objets sur le corps du Client et autres actions physiques. Dans le cadre du présent contrat, l’Exécutant s’engage également à préserver le navire du Client de tout dommage mécanique.
+
+3. Le Client est tenu de fournir en temps voulu la quantité d’énergie nécessaire à l’Exécutant pour remplir ses obligations. La quantité d’énergie requise est fixée à trois personnes ou unités de créatures impures dans les grottes et catacombes de la mer des Caraïbes par jour.
+
+4. Chaque jour, à minuit, l’Exécutant procède au prélèvement d’énergie conformément aux conditions du présent contrat. L’Exécutant est tenu d’informer quotidiennement le Client de l’état des opérations en lui communiquant le solde courant du contrat.
+
+5. En cas d’inexécution ou de mauvaise exécution par le Client du point trois du présent contrat, l’Exécutant, afin de remplir ses obligations au titre du point un, assure le complément nécessaire du quota énergétique quotidien aux frais du Client, c’est-à-dire en puisant dans ses forces vitales.
+
+6. Le Client a le droit de fournir à l’Exécutant de l’énergie en réserve. Ainsi, toute personne ou créature impure tuée par le Client au-delà du quota prévu est portée au crédit des futurs prélèvements énergétiques de l’Exécutant.
+
+7. Il est interdit aux Parties de faire appel à des tiers pour l’exécution de leurs obligations au titre du présent contrat.
+
+8. L’Exécutant a le droit de modifier unilatéralement les quotas quotidiens d’approvisionnement énergétique du Client en fonction de ses besoins, sans notification préalable du Client.
+
+9. Le présent contrat entre en vigueur à compter de son approbation orale et demeure valable pour une durée indéterminée. Les Parties peuvent, d’un commun accord, résilier le présent contrat sans application de pénalités. La procédure de résiliation exige une rencontre personnelle entre le Client et l’Exécutant.
+
+Mentions juridiques et approbations orales des Parties.
+}
+
 Azzy_HellSign {Message actuel diffusé aux abonnés du Bureau de l'Enfer}
 Azzy_HellSign.1
 {

@@ -1220,7 +1220,7 @@ spa_Governor_342 {
 De acuerdo, Don Francisco.
 }
 spa_Governor_343 {
-¡Capitán, dicen que logró defender Maracaibo! Sin exagerar, eso sí que es una verdadera hazaña, señor@<GetAddress_Form>!
+¡Capitán, dicen que logró defender Maracaibo! Sin exagerar, eso sí que es una verdadera hazaña, @<GetAddress_Form>!
 }
 spa_Governor_344 {
 Muy bien. Ahora, escucha tus órdenes.\nComo parte de la actual guerra de devolución con Francia por las posesiones españolas en Holanda, nuestra primera y más importante tarea es atacar Curaçao y Saint Martin. Por un despacho interceptado, hemos sabido que los holandeses están destinando grandes sumas para las necesidades militares de Francia.\nNo podemos probarlo con certeza, ya que toda la correspondencia está cifrada de una manera especial y el significado de la carta es completamente distinto. Sin embargo, debemos poner fin a esto: ¡el poder comercial holandés debe ser destruido!\nDebes asaltar y saquear los asentamientos holandeses de Willemstad en la isla de Curaçao y Marigot en la isla de Saint Martin. Todo el botín capturado en la operación será tuyo.

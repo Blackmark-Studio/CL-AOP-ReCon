@@ -241,3 +241,24 @@ He said he’s heading to the English now. Think he mentioned @<XI_ConvertString
 Villemstad_Usurer_66 {
 And you said you had no idea. Well, thanks a lot!
 }
+Villemstad_Usurer_67 {
+Tell me, mynheer, are you married?
+}
+Villemstad_Usurer_68 {
+I must confess, that is a most unexpected question. I am rather at a loss.
+}
+Villemstad_Usurer_69 {
+I would like to buy a dress worthy of your wife’s high station.
+}
+Villemstad_Usurer_70 {
+Ah, so that is what this is about! I am married, but you see, my wife is a rather full-figured lady. I fear that even if she agreed to sell you something from her wardrobe, it would take more than a day to cut it down and alter it to fit you.
+}
+Villemstad_Usurer_71 {
+That is most unfortunate. I simply do not have that much time.
+}
+Villemstad_Usurer_72 {
+You had better ask the local shopkeepers around town. Perhaps one of them has a dress that will suit you.
+}
+Villemstad_Usurer_73 {
+Thank you. I shall take your advice. Farewell.
+}

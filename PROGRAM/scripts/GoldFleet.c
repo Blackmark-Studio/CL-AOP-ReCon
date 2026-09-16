@@ -288,6 +288,14 @@ void StartGoldFleet(string temp)
 		Map_CreateTraderXZ(pbx, pbz, -858.089, 897.072, "Head_of_Gold_Squadron", 22);
 		igoldpos = 0;
 	}
+	else
+	{
+		// KZ fix > GenerateRumour() автивирует isGoldFleet за 6 месяцев до старта ЗФ.
+		// Если за это время Гавана/Порто-Белло сменили нацию или попали в осаду, старт молча отваливался.
+		// isGoldFleet оставался true и ЗФ пропадал уже навсегда.
+		trace("INFO > StartGoldFleet skipped: ports not spanish or under siege");
+		isGoldFleet = false;
+	}
 }
 
 void EndTime_GoldFleet(int nid)

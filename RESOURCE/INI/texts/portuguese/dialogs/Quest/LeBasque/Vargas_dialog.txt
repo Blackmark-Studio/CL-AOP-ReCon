@@ -1,0 +1,86 @@
+Vargas_dialog_1 {
+Ah, suponho que você seja o famoso capitão @<GetFullName>. Eu sabia que le Basque era covarde, mas pensei que teria coragem de vir aqui pessoalmente.
+}
+Vargas_dialog_2 {
+Para Michel, você não passa de um inseto irritante, Vargas. E não conseguirá estragar os planos dele. O ouro de Maracaibo será nosso, mas você não viverá para vê-lo.
+}
+Vargas_dialog_3 {
+O ouro de Maracaibo? Então é isso que ele anda contando a todos vocês? Ha-ha! E com esse punhado de tolos pretende tomar o forte mais inexpugnável de todo o arquipélago?
+}
+Vargas_dialog_4 {
+Não tente brincar comigo. Eu não sou Esteban Ruiz para cair em seus truques baratos.
+}
+Vargas_dialog_5_m {
+E, no entanto, você está aqui... Talvez tenha pena de Ruiz? Eu não. Ele era uma cria do inferno tão repugnante quanto você. O mesmo tipo de herege e ladrón, indigno até de um enterro cristão.
+}
+Vargas_dialog_5_f {
+E, no entanto, você está aqui... Talvez tenha pena de Ruiz? Eu não. Ele era uma cria do inferno tão repugnante quanto você. Uma herege e pirata como você, indigna até de um enterro cristão.
+}
+Vargas_dialog_6 {
+Vou enfiar essas palavras de volta pela sua garganta, miserável. Defenda-se!
+}
+Vargas_dialog_7_m {
+Hum... Muito bem, você sabe lutar. Mas ainda não entendeu uma coisa: Michel le Basque não é apenas um inimigo para mim. Jurei conseguir a cabeça dele — e conseguirei. Mesmo que para isso eu tenha de afogar todo o arquipélago em sangue.
+}
+Vargas_dialog_7_f {
+Hum... Muito bem, você sabe lutar. Mas ainda não entendeu uma coisa: Michel le Basque não é apenas um inimigo para mim. Jurei conseguir a cabeça dele — e conseguirei. Mesmo que para isso eu tenha de afogar todo o arquipélago em sangue.
+}
+Vargas_dialog_8 {
+Você não vai conseguir mais nada. Acabou. Prepare-se para encontrar os demônios, Don Diego. Eles já estão cansados de esperar por você.
+}
+Vargas_dialog_9_m {
+Você não achou que eu fosse jogar limpo, achou?
+}
+Vargas_dialog_9_f {
+Você não achou que eu fosse jogar limpo, achou?
+}
+Vargas_dialog_10 {
+O quê?.. O-o que é isso... Diabo... Minha ca-be-ça...
+}
+Vargas_dialog_11_m {
+Então você está vivo... Aquele maldito xamã dos peles-vermelhas jurou que havia lançado um feitiço venenoso sobre minha lâmina... “Uma única gota deste veneno basta para derrubar um touro.” Parece que o mandei cedo demais para o padre Vincente.
+}
+Vargas_dialog_11_f {
+Então você está viva... Aquele maldito xamã dos peles-vermelhas jurou que havia lançado um feitiço venenoso sobre minha lâmina... “Uma única gota deste veneno basta para derrubar um touro.” Parece que o mandei cedo demais para o padre Vincente.
+}
+Vargas_dialog_12 {
+A Inquisição é que devia estar atrás de você, Vargas. Sua habilidade para escapar de tudo chega a me surpreender. Mas você não conseguiu me matar nem com morteiro, nem com veneno, nem com a espada. E meus homens estão lá fora, na selva. Renda-se, ou morrerá aqui e agora.
+}
+Vargas_dialog_13 {
+Morte? Não é uma perspectiva tão ruim.
+Mas que vista daqui, @<GetFullName>. Olhe só... Embora... você jamais me compreenderia.
+Eu conheci o gosto da vida, vi lugares que vocês, ladrones, nunca verão... Estive além deste arquipélago esquecido por Deus e voltei... para além do horizonte! Fiquei no tombadilho de um galeão que singrava rumo à maldita fonte de Ponce de León, enxugando o suor ardente da testa, enquanto via as estrelas lutarem contra o oceano sem fim.
+Senti os ventos alísios de tempestade nos cabelos enquanto atravessava, em caravelas lânguidas, os negros redemoinhos do Mar dos Sargaços; vi a Armada de Barlovento arder como palha seca e desaparecer nas profundezas. Eu vi tudo isso.
+Pela Virgem Maria, eu o sinto outra vez agora!..
+}
+Vargas_dialog_14 {
+Você viveu tudo isso.
+}
+
+LeBasque_Diego_de_Vargas_1 {
+Primeiro, informações. Da última vez, você me trouxe as fofocas das prostitutas do porto. O que Le Basque está aprontando desta vez?
+}
+
+LeBasque_Diego_de_Vargas_2 {
+E só isso?
+}
+
+LeBasque_Diego_de_Vargas_3 {
+Nome?
+}
+
+LeBasque_Diego_de_Vargas_4 {
+Você recebe primeiro, Guillaume.
+}
+
+LeBasque_Diego_de_Vargas_5 {
+Descubra o nome do velho e por que Le Basque precisa dele - e você conseguirá tudo o que pedir.
+}
+
+LeBasque_Diego_de_Vargas_6 {
+Chega de lamúrias, Guillaume. Aqui está o depósito e a carta. Ela contém instruções adicionais. A próxima reunião será no farol. O horário será informado posteriormente.
+}
+
+LeBasque_Diego_de_Vargas_7 {
+Espero que você não me decepcione e me consiga algo que valha a pena. E nem pense em pechinchar de novo, Raoul. Da próxima vez, pagarei menos para alguém revistar seu corpo.
+}

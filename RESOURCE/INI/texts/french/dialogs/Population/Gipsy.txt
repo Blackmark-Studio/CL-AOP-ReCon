@@ -262,3 +262,12 @@ Un mauvais présage croisera ta route — méfie-toi du mauvais œil et garde to
 Gipsy_68 {
 La chance t’attend juste derrière toi. Cherche ce qui vient à toi sans effort, et ne poursuis pas l’impossible.
 }
+Gipsy_69 {
+@<TimeGreeting>, @<pchar>. Je suis très heureux de vous voir.
+}
+Gipsy_70 {
+@<TimeGreeting>, @<pchar>. Je suis très heureuse de vous voir.
+}
+Gipsy_71 {
+@<TimeGreeting>, @<npchar>. Je dois y aller.
+}

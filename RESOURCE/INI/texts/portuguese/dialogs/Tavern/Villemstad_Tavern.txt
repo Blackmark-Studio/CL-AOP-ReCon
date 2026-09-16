@@ -463,3 +463,18 @@ Entendido. Estou a caminho. Obrigado!
 Villemstad_Tavern_137_f {
 Entendido. Estou a caminho. Obrigado!
 }
+Villemstad_Tavern_138 {
+Há espanhóis entre os teus hóspedes. Sabes de onde vieram ou em que navio chegaram?
+}
+Villemstad_Tavern_139 {
+Agora não tenho tempo para conversa com os fregueses. Espanhóis, portugueses... só falta o próprio diabo do mar aparecer por aqui hoje.
+}
+Villemstad_Tavern_140 {
+Então os negócios vão bem?
+}
+Villemstad_Tavern_141 {
+Não posso reclamar. Quase todas as noites o governador dá receções na residência para celebrar a maioridade das filhas. Num dia chega um enviado, no outro aparece mais alguém, e todos vêm em algum navio. Entra tanto marinheiro que mal damos conta das bandejas. É melhor passares pela administração do porto; todo capitão tem de se apresentar lá. Ah! Mas para que estou eu a explicar-te isso?
+}
+Villemstad_Tavern_142 {
+Sim, acho que vou fazer isso.
+}

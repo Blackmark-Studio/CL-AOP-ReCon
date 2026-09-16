@@ -142,3 +142,9 @@ We're on our way, Captain! I'll gather the crew and we'll board right away!
 Sailor_42 {
 Come on, hurry up, I don’t plan to stay here long.
 }
+Sailor_43 {
+Greetings, madam! What could you want from a simple sailor?
+}
+Sailor_44 {
+Nothing really, I was just passing by.
+}

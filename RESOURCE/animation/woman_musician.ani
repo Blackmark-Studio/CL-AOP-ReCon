@@ -1,0 +1,76 @@
+; ККС анимация мужских персонажей на базе скелета К:ГПК. Размер моделей оригинальный.
+; edition by Metazot 10.09.10
+; Анимации для скрипачек и флейтисток
+
+animation = woman_musician.an
+
+data = "Turn speed", "5.5"
+
+;===========================================================================
+;======================================================== МИРНЫЕ АНИМАЦИИ 
+;===========================================================================
+
+
+;Игра на скрипке
+[idle_1]
+	speed = 1.7
+	loop = true
+	type = normal
+	start_time = 1
+	end_time = 201
+	data = "Blend time", "0.2"		; sec
+	data = "Probability", "1.0"
+
+;Игра на флейте
+[flute_idle_1]
+	speed = 1.7
+	loop = true
+	type = normal
+	start_time = 314
+	end_time = 514
+	data = "Blend time", "0.2"		; sec
+	data = "Probability", "1.0"
+	
+; заглушка на инру на флейте сидя
+[flute_idle_sit_1]
+	speed = 1.7
+	loop = true
+	type = normal
+	start_time = 314
+	end_time = 514
+	data = "Blend time", "0.2"		; sec
+	data = "Probability", "1.0"
+
+;СМЕРТЬ
+;Смерть скрипачки
+[death_citizen_1]
+	start_time = 202
+	end_time = 258
+	speed = 1.0
+	loop = false
+	data = "Blend time", "0.3"		; sec
+	data = "Probability", "1.0"
+	data = "Angle", "340.0"
+	event = "SndAlliace_citizen_death1", 230, normal
+	
+;Смерть флейтистки
+[death_flute_1]
+	start_time = 259
+	end_time = 313
+	speed = 1.0
+	loop = false
+	data = "Blend time", "0.3"		; sec
+	data = "Probability", "1.0"
+	data = "Angle", "340.0"
+	event = "SndAlliace_citizen_death1", 259, normal
+	
+;Смерть флейтистки сидя заглушка
+[death_flute_sit_1]
+	start_time = 259
+	end_time = 313
+	speed = 1.0
+	loop = false
+	data = "Blend time", "0.3"		; sec
+	data = "Probability", "1.0"
+	data = "Angle", "340.0"
+	event = "SndAlliace_citizen_death1", 259, normal

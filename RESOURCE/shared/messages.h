@@ -21,6 +21,7 @@
 #define MSG_MODEL_SET_TECHNIQUE 20510 // "s" = technique
 #define MSG_MODEL_SET_FOG 20511
 #define MSG_MODEL_SET_MAX_VIEW_DIST 20512
+#define MSG_MODEL_RELOAD_TEXTURES 20513 // "l"
 
 #define MSG_MODEL_SUBSTITUTE_GEOMETRY_NODE 20600 // "ss", geometry, new model name
 #define MSG_MODEL_PLAY_ACTION 20601 // "lls", player, action name
@@ -77,6 +78,7 @@
 #define MSG_SHIP_ADD_MOVE_IMPULSE 50308
 #define MSG_SHIP_RESET_TRACK 50309
 #define MSG_SHIP_SETLIGHTSOFF 50310
+#define MSG_SHIP_SETLIGHTSON 50311 // "lflll" fTime,bLights,bFlares,bNow
 #define MSG_SHIP_FLAG_REFRESH 50312 // boal 20.08.06
 #define MSG_SHIP_SET_CUSTOM_FLAG 50313 // "li", flag entity - Specify a custom flag entity to use for this ship
 #define MSG_SHIP_INIT_FOR_MV 50314 // AlexBlade - special for MODELVIEWER node: (1) "laaiii" - chRef,shipRef,realShipEntId,SeaEntId,ShipTracksId; (2) "laaill" - chRef,shipRef,realShipEntId,-1,-1 (for render w/o sea) 
@@ -282,6 +284,23 @@
 #define MSG_WORLDMAP_UPDATE 31153 // "l"
 // Update labels on islands
 #define MSG_WORLDMAP_UPDATE_LABELS 31154 // "l"
+#define MSG_WORLDMAP_WIND_UI_UPDATE 31155
+
+// > Ship visual attachments: decorate any worldmap ship without editing its "*.gm"
+#define MSG_WORLDMAP_SHIP_ATTACH_SPRITE 31157 // "lssffl" shipName, texturePath, size, yOffset, color(ARGB); empty path clears
+#define MSG_WORLDMAP_SHIP_ATTACH_MODEL 31158 // "lssffff" shipName, gmName, offX, offY, offZ, angleY; empty gmName detaches
+#define MSG_WORLDMAP_SHIP_ATTACH_PARTICLE 31159 // "lssffl" shipName, texturePath, size, yOffset, color(ARGB); empty path detaches
+// > Text over any ship: up to 8 independently configured lines. mode: 0 = 2D (constant on-screen size), 1 = 3D (perspective-scaled).
+// fadeOut/fadeIn are real seconds (0,0 = no blink); empty text removes that line.
+// shipFade: 0 = fade in/out together with the ship (like the model); 1 = no fading - crisp while the ship is visible,
+// gone the instant it leaves view range (>enemyshipViewDistMax from the player), crisp again on return.
+#define MSG_WORLDMAP_SHIP_SET_TEXT 31160 // "lslssflfffffll" shipName, lineIndex, text, fontName, size, color(ARGB), fadeOut, fadeIn, offX, offY, offZ, mode, shipFade
+// > Rotation animations for the attachments
+// mode: 0 = off, 1 = looped, 2 = periodic(runs `duration` then stops).
+// timeBase: 0 - real seconds (speed unaffected by game time acceleration), 1 - game seconds (follows the time scale); speed = rad/sec.
+#define MSG_WORLDMAP_SHIP_SPRITE_ROTATE 31161 // "lslffl" shipName, mode, speed, duration, timeBase
+// parts: 1 = A (spin the model around axisA: 0=X,1=Y,2=Z), 2 = B (rotate the UV texture), 3 = A and B together
+#define MSG_WORLDMAP_SHIP_MODEL_ROTATE 31162 // "lslllfflf" shipName, parts, mode, timeBase, duration, speedA, axisA, speedB
 
 // ============================================================================================
 // Effects
@@ -329,8 +348,10 @@
 //============================================================================================
 // Control functions
 #define MSG_SOUND_SET_ENABLED 77016         //"l"          enabled
-#define MSG_SOUND_SET_MASTER_VOLUME 77021 //"fff"       FX, music, speech volumes
-#define MSG_SOUND_GET_MASTER_VOLUME 77022 //"eee"       FX, music, speech volumes
+#define MSG_SOUND_SET_MASTER_VOLUME 77021 //"lfff"       FX, music, speech
+#define MSG_SOUND_GET_MASTER_VOLUME 77022 //"leee"       FX, music, speech
+#define MSG_SOUND_WRITE_INI_MASTER_VOLUME 77023 //"llffff" flush main, FX, music, speech
+#define MSG_SOUND_READ_INI_MASTER_VOLUME 77024 //"leeee" main, FX, music, speech // HardCoffee global volume options
 #define MSG_SOUND_SET_PITCH 77031 // "lf" set pitch
 #define MSG_SOUND_GET_PITCH 77032 // "le" get pitch
 
@@ -352,6 +373,8 @@
 #define MSG_SOUND_SCHEME_ADD 77015   //"s"          scheme_name
 // Aliases
 #define MSG_SOUND_ALIAS_ADD 77017 //"s"          alias_name
+// Inter-track gap
+#define MSG_SOUND_SET_MUSIC_PAUSE 77033 //"lll"  min_ms, max_ms
 //============================================================================================
 
 //============================================================================================

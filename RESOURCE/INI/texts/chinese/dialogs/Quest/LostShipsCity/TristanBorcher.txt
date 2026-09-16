@@ -1,528 +1,528 @@
 TristanBorcher_1_m {
-欢迎你，尊敬的新市民。虽然外面风雨交加，我觉得咱们还是早点认识比较好。我叫@<GetFullName>。
+欢迎你， 尊敬的新市民。 虽然外面风雨交加， 但我觉得咱们还是早点认识比较好。 我叫@<GetFullName>。 
 }
 TristanBorcher_1_f {
-欢迎，尊敬的新市民。虽然外面风雨交加，我觉得咱们还是别拖延见面了。我叫@<GetFullName>。
+欢迎你， 尊敬的新市民。 虽然外面风雨交加， 但我觉得咱们还是早点认识比较好。 我叫@<GetFullName>。 
 }
 TristanBorcher_2 {
-很高兴见到你。我叫@<GetFullName>。见鬼的暴风雨！
+很高兴见到你。 我叫@<GetFullName>。 见鬼的暴风雨！ 
 }
 TristanBorcher_3_m {
-欢迎你，尊敬的新市民。咱们还没见过面吧。我叫@<GetFullName>。
+欢迎你， 尊敬的新市民。 咱们还没见过面吧。 我叫@<GetFullName>。 
 }
 TristanBorcher_3_f {
-欢迎，尊敬的新市民。我们还没来得及认识您。我叫@<GetFullName>。
+欢迎， 尊敬的新市民。 我们还没来得及认识您。 我叫@<GetFullName>。 
 }
 TristanBorcher_4 {
-很高兴见到你。我叫@<GetFullName>。
+很高兴见到你。 我叫@<GetFullName>。 
 }
 TristanBorcher_5 {
-你找俺有事吗，@<GetAddress_Form>?
+你找我有事吗， @<GetAddress_Form>?
 }
 TristanBorcher_6 {
-听着，我在找个人。你知道他现在在哪儿吗？
+听着， 我在找个人。 你知道他现在在哪儿吗？ 
 }
 TristanBorcher_7 {
-我想问你个问题。
+我想问你个问题。 
 }
 TristanBorcher_8 {
-有啥有趣的故事能跟俺说说吗？
+有什么有趣的故事能跟我说说吗？ 
 }
 TristanBorcher_9 {
-城里最近有什么新鲜事？
+城里最近有什么新鲜事？ 
 }
 TristanBorcher_10_m {
-哎呀，我可想听听最近有什么八卦……
+哎呀， 我可想听听最近有什么八卦…… 
 }
 TristanBorcher_10_f {
-哎呀，我可想听听最近有什么八卦……
+哎呀， 我可想听听最近有什么八卦…… 
 }
 TristanBorcher_11 {
 @<LinkRandPhrase>
 }
 TristanBorcher_12 {
-听着，我在找点货。
+听着， 我在找点货。 
 }
 TristanBorcher_13 {
-哎，就算Mechanic没来，大家能这样齐聚一堂也挺好的吧？
+哎， 就算机械师没来， 大家能这样齐聚一堂也挺好的吧？ 
 }
 TristanBorcher_14 {
-也许吧……你知道吗，我正准备组个船员离开这儿。
+也许吧…… 你知道吗， 我正准备组个船员离开这儿。 
 }
 TristanBorcher_15 {
-没什么……
+没什么…… 
 }
 TristanBorcher_16 {
-这没什么！你其实挺走运的——你是在风暴快结束时才撞上的，那时候威力已经减弱了。要是早一点，可就未必能撑到我们这儿了……
+这没什么！ 你其实挺走运的——你是在风暴快结束时才撞上的， 那时候威力已经减弱了。 要是早一点， 可就未必能撑到我们这儿了…… 
 }
 TristanBorcher_17 {
-真可惜，事情变成这样……
+真可惜， 事情变成这样…… 
 }
 TristanBorcher_18 {
-很高兴见到你。你觉得我们这座城市第一印象怎么样？
+很高兴见到你。 你觉得我们这座城市第一印象怎么样？ 
 }
 TristanBorcher_19_m {
-还没完全适应呢。
+还没完全适应呢。 
 }
 TristanBorcher_19_f {
-我还没完全适应。
+我还没完全适应。 
 }
 TristanBorcher_20 {
-这没什么好担心的，很快就会好起来——我们都经历过。祝你好运，别灰心！
+这没什么好担心的， 很快就会好起来——我们都经历过。 祝你好运， 别灰心！ 
 }
 TristanBorcher_21 {
-绝不行！
+绝不行！ 
 }
 TristanBorcher_22_m {
-你是个贼！违反了城市法令！
+你是个贼！ 违反了沉船之城法律！ 
 }
 TristanBorcher_22_f {
-你是个贼！违反了城市法律！
+你是个贼！ 违反了城市法律！ 
 }
 TristanBorcher_23_m {
-哎哟，瞧瞧这事！我才一眨眼，你就直接钻进箱子里了！他可是破坏了规矩！
+哎哟， 瞧瞧这事！ 我才一眨眼， 你就直接钻进箱子里了！ 他可是破坏了规矩！ 
 }
 TristanBorcher_23_f {
-哎哟，瞧瞧这事！我一走神，你就直接扎进箱子里了！她可是破坏了规矩！
+哎哟， 瞧瞧这事！ 我一走神， 你就直接扎进箱子里了！ 她可是破坏了规矩！ 
 }
 TristanBorcher_24_m {
-卫兵！有人抢劫！快抓住他，他犯法了！
+卫兵！ 有人抢劫！ 快抓住他， 他犯法了！ 
 }
 TristanBorcher_24_f {
-警察！抢劫啊！！！快拦住她，她犯法了！
+卫兵！ 抢劫啊！ ！ ！ 快拦住她， 她犯法了！ 
 }
 TristanBorcher_25 {
 @<LinkRandPhrase>
 }
 TristanBorcher_26 {
-啊——该死！！！
+啊——该死！ ！ ！ 
 }
 TristanBorcher_27 {
-哦，原来是这样？！你还敢翻箱倒柜啊？！现在城里人和民兵非把你撕成碎片不可！
+哦， 原来是这样？ ！ 你还敢翻箱倒柜啊？ ！ 现在城里人和民兵非把你撕成碎片不可！ 
 }
 TristanBorcher_28 {
-真是个傻瓜！
+真是个傻瓜！ 
 }
 TristanBorcher_29_m {
-喂，能不能把武器收起来？你这样让我有点紧张……
+喂， 能不能把武器收起来？ 你这样让我有点紧张…… 
 }
 TristanBorcher_29_f {
-听着，能不能把武器收起来？你这样让我有点紧张……
+听着， 能不能把武器收起来？ 你这样让我有点紧张…… 
 }
 TristanBorcher_30 {
-你知道吧，这里可没人随便挥舞武器。把你的家伙收起来。
+你知道吧， 这里可没人随便挥舞武器。 把你的家伙收起来。 
 }
 TristanBorcher_31_m {
-喂，你怎么跟个d'Artagnan似的到处乱跑，还挥着剑？把武器收起来，这样可不像个正经男人……
+喂， 你怎么跟个达达尼昂似的到处乱跑， 还挥着剑？ 把武器收起来， 这样可不像个正经男人…… 
 }
 TristanBorcher_31_f {
-喂，你干嘛学d'Artagnan到处挥剑？把武器收起来，这可不像个姑娘……
+喂， 你干嘛学达达尼昂到处挥剑？ 把武器收起来， 这可不像个姑娘…… 
 }
 TristanBorcher_32 {
 @<LinkRandPhrase>
 }
 TristanBorcher_33 {
-行。
+行。 
 }
 TristanBorcher_34 {
-行吧。
+行吧。 
 }
 TristanBorcher_35 {
-听你的……
+听你的…… 
 }
 TristanBorcher_36 {
 @<LinkRandPhrase>
 }
 TristanBorcher_37_m {
-听着，作为这个城镇的居民，我劝你别在这里拔着武器乱晃。
+听着， 作为这个城镇的居民， 我劝你别在这里拔着武器乱晃。 
 }
 TristanBorcher_37_f {
-你知道吧，作为这个城的居民，我希望你别在这里拔刀走来走去。
+你知道吧， 作为这个城的居民， 我希望你别在这里拔刀走来走去。 
 }
 TristanBorcher_38 {
-行。
+行。 
 }
 TristanBorcher_39 {
-行吧。
+行吧。 
 }
 TristanBorcher_40 {
-如你所愿……
+如你所愿…… 
 }
 TristanBorcher_41 {
 @<LinkRandPhrase>
 }
 TristanBorcher_42_m {
-拿着武器跑的时候，拐角处小心点。别吓到我，俺可容易紧张……
+拿着武器跑的时候， 拐角处小心点。 别吓到我， 我可容易紧张…… 
 }
 TristanBorcher_42_f {
-我不喜欢有人在我面前拿着武器晃来晃去，这让我害怕……
+我不喜欢有人在我面前拿着武器晃来晃去， 这让我害怕…… 
 }
 TristanBorcher_43_m {
-明白了。
+明白了。 
 }
 TristanBorcher_43_f {
-明白了。
+明白了。 
 }
 TristanBorcher_44 {
-我收起来了。
+我收起来了。 
 }
 TristanBorcher_45 {
 @<RandPhraseSimple>
 }
 TristanBorcher_46 {
-你在找谁？
+你在找谁？ 
 }
 TristanBorcher_47 {
-我不明白你说的是谁。我要知道这个人的名字和姓氏。
+我不明白你说的是谁。 我要知道这个人的名字和姓氏。 
 }
 TristanBorcher_48 {
-明白了。我再试着取个名字。
+明白了。 我再试着取个名字。 
 }
 TristanBorcher_49_m {
-谢谢，我还是自己找吧。
+谢谢， 我还是自己找吧。 
 }
 TristanBorcher_49_f {
-谢谢，我还是自己找吧。
+谢谢， 我还是自己找吧。 
 }
 TristanBorcher_50 {
-那不就是我吗！
+那不就是我吗！ 
 }
 TristanBorcher_51_m {
-哟，真让我找得正准！
+哟， 真让我找得正准！ 
 }
 TristanBorcher_51_f {
-哟，没想到还真让我找到你了！
+哟， 没想到还真让我找到你了！ 
 }
 TristanBorcher_52 {
-@<GetFullName>，你说的是他吗？
+@<GetFullName>， 你说的是他吗？ 
 }
 TristanBorcher_53 {
-对，对，就是他。
+对， 对， 就是他。 
 }
 TristanBorcher_54 {
-不，不是说他。让我再说一遍。
+不， 不是说他。 让我再说一遍。 
 }
 TristanBorcher_55 {
-@<GetFullName>，你说的是她吗？
+@<GetFullName>， 你说的是她吗？ 
 }
 TristanBorcher_56 {
-对，就是那一个。
+对， 就是那一个。 
 }
 TristanBorcher_57 {
-不是她的事。听着，让我再试着说一遍名字。
+不是她。
 }
 TristanBorcher_58 {
-你知道吗，我不想再问别人了。再见。
+你知道吗， 我不想再问别人了。 再见。 
 }
 TristanBorcher_59 {
-那请再说一遍你的名字和姓氏。
+那请再说一遍你的名字和姓氏。 
 }
 TristanBorcher_60 {
-我不知道，挺久没见到他了。
+我不知道， 挺久没见到他了。 
 }
 TristanBorcher_61 {
-鬼知道他在哪……
+鬼知道他在哪…… 
 }
 TristanBorcher_62 {
-好久没见到他了，我也不清楚。
+好久没见到他了， 我也不清楚。 
 }
 TristanBorcher_63 {
 @<LinkRandPhrase>
 }
 TristanBorcher_64 {
-明白了。
+明白了。 
 }
 TristanBorcher_65 {
-可惜……
+可惜…… 
 }
 TristanBorcher_66 {
 @<RandPhraseSimple>
 }
 TristanBorcher_67 {
-我已经有段时间没见到她了，挺遗憾的。
+我已经有段时间没见到她了， 挺遗憾的。 
 }
 TristanBorcher_68 {
-我现在也不知道她在哪儿。
+我现在也不知道她在哪儿。 
 }
 TristanBorcher_69 {
-嗯，我现在也不知道她在哪儿。
+嗯， 我现在也不知道她在哪儿。 
 }
 TristanBorcher_70 {
 @<LinkRandPhrase>
 }
 TristanBorcher_71 {
-明白了。
+明白了。 
 }
 TristanBorcher_72 {
-可惜……
+可惜…… 
 }
 TristanBorcher_73 {
 @<RandPhraseSimple>
 }
 TristanBorcher_74 {
-他就在这艘船上，仔细找找。
+他就在这艘船上， 仔细找找。 
 }
 TristanBorcher_75 {
-哈，原来他就在这艘船上！
+哈， 原来他就在这艘船上！ 
 }
 TristanBorcher_76 {
-他就在这艘船上——奇怪，你怎么还没见过他。
+他就在这艘船上——奇怪， 你怎么还没见过他。 
 }
 TristanBorcher_77 {
 @<LinkRandPhrase>
 }
 TristanBorcher_78 {
-我刚刚见过他@<npchar>。
+我刚刚见过他@<npchar>。 
 }
 TristanBorcher_79 {
-我前不久在@<npchar>碰到他了，你去那儿找找吧。
+我前不久在@<npchar>碰到他了， 你去那儿找找吧。 
 }
 TristanBorcher_80 {
-据我所知，他现在就在@<npchar>。
+据我所知， 他现在就在@<npchar>。 
 }
 TristanBorcher_81 {
 @<LinkRandPhrase>
 }
 TristanBorcher_82 {
-他就在这儿，@<npchar>。仔细看看。
+他就在这儿， @<npchar>。 仔细看看。 
 }
 TristanBorcher_83 {
-可他就在我们中间！
+可他就在我们中间！ 
 }
 TristanBorcher_84 {
-你看哪儿呢？他就在这附近晃悠。
+你看哪儿呢？ 他就在这附近晃悠。 
 }
 TristanBorcher_85 {
 @<LinkRandPhrase>
 }
 TristanBorcher_86 {
-我刚见过他，@<npchar>。
+我刚见过他， @<npchar>。 
 }
 TristanBorcher_87 {
-我前不久在@<npchar>碰到他了，你去那儿找找吧。
+我前不久在@<npchar>碰到他了， 你去那儿找找吧。 
 }
 TristanBorcher_88 {
-据我所知，他现在就在@<npchar>。
+据我所知， 他现在就在@<npchar>。 
 }
 TristanBorcher_89 {
 @<LinkRandPhrase>
 }
 TristanBorcher_90 {
-哦，明白了。谢谢。
+哦， 明白了。 谢谢。 
 }
 TristanBorcher_91 {
-谢谢！
+谢谢！ 
 }
 TristanBorcher_92 {
 @<RandPhraseSimple>
 }
 TristanBorcher_93 {
-她就在这艘船上，仔细找找。
+她就在这艘船上， 仔细找找。 
 }
 TristanBorcher_94 {
-哈，原来她就在这艘船上！
+哈， 原来她就在这艘船上！ 
 }
 TristanBorcher_95 {
-她就在这艘船上——奇怪，你怎么还没见过她。
+她就在这艘船上——奇怪， 你怎么还没见过她。 
 }
 TristanBorcher_96 {
 @<LinkRandPhrase>
 }
 TristanBorcher_97 {
-我最近才见过她，@<npchar>。
+我最近才见过她， @<npchar>。 
 }
 TristanBorcher_98 {
-我最近见过她，@<npchar>。我们还聊了几句。
+我最近见过她， @<npchar>。 我们还聊了几句。 
 }
 TristanBorcher_99 {
-据我所知，她现在在@<npchar>。
+据我所知， 她现在在@<npchar>。 
 }
 TristanBorcher_100 {
 @<LinkRandPhrase>
 }
 TristanBorcher_101 {
-她就在这儿，@<npchar>。你仔细看看。
+她就在这儿， @<npchar>。 你仔细看看。 
 }
 TristanBorcher_102 {
-可她就在我们中间啊！
+可她就在我们中间啊！ 
 }
 TristanBorcher_103 {
-你看哪儿呢？她就在附近啊。
+你看哪儿呢？ 她就在附近啊。 
 }
 TristanBorcher_104 {
 @<LinkRandPhrase>
 }
 TristanBorcher_105 {
-我最近才见过她，@<npchar>。
+我最近才见过她， @<npchar>。 
 }
 TristanBorcher_106 {
-我前阵子在@<npchar>遇见过她，还聊了几句。
+我前阵子@<npchar>遇见过她， 还聊了几句。 
 }
 TristanBorcher_107 {
-据我所知，她现在在@<npchar>。
+据我所知， 她现在在@<npchar>。 
 }
 TristanBorcher_108 {
 @<LinkRandPhrase>
 }
 TristanBorcher_109 {
-啊，明白了。谢谢你，@<GetAddress_FormToNPC>。
+啊， 明白了。 谢谢你， @<GetAddress_FormToNPC>。 
 }
 TristanBorcher_110 {
-谢谢你！
+谢谢你！ 
 }
 TristanBorcher_111 {
 @<RandPhraseSimple>
 }
 TristanBorcher_112_m {
-洗耳恭听，伙计。
+洗耳恭听， 伙计。 
 }
 TristanBorcher_112_f {
-我在认真听呢，小姐。
+我在认真听呢， 小姐。 
 }
 TristanBorcher_113 {
-听着，这岛是啥地方？
+这岛是什么地方？ 
 }
 TristanBorcher_114 {
-你觉得City的海军上将怎么样？
+你觉得城市的海军上将怎么样？ 
 }
 TristanBorcher_115 {
-你说，人们只有在风暴之后才会来到这座城市吗？
+你说， 人们只有在风暴之后才会来到这座城市吗？ 
 }
 TristanBorcher_116 {
-听着，你来这岛多久了？
+听着， 你来这岛多久了？ 
 }
 TristanBorcher_117 {
-没问题，抱歉……
+没问题， 抱歉…… 
 }
 TristanBorcher_118 {
-这里是City of Lost Ships，@<GetAddress_Form>。我们谁都不是自愿来的，不过说实话，这地方也没那么糟，不管是在陆地上还是在海里。
+这里是沉船之城， @<GetAddress_Form>。 我们谁都不是自愿来的， 不过说实话， 这地方也没那么糟， 不管是在陆地上还是在海里。 
 }
 TristanBorcher_119 {
-哈！你不会真喜欢这地方吧！
+哈！ 你不会真喜欢这地方吧！ 
 }
 TristanBorcher_120 {
-你知道吗，其实我是个乐观的人。不管身处什么环境，我总是尽量把日子过好，而不是一味追求更好的生活。失去朋友和熟人的痛苦——当然会有。但生活还得继续，我觉得我们应该用工作和关心去面对，而不是沉溺在悲伤里！
+你知道吗， 其实我是个乐观的人。 不管身处什么环境， 我总是尽量把日子过好， 而不是一味追求更好的生活。 失去朋友和熟人的痛苦——当然会有。 但生活还得继续， 我觉得我们应该用工作和关心去面对， 而不是沉溺在悲伤里！ 
 }
 TristanBorcher_121 {
-说真的，你的想法让我很佩服！
+说真的， 你的想法让我很佩服！ 
 }
 TristanBorcher_122 {
-多谢夸奖……所以我劝你别轻易放弃。
+多谢夸奖…… 所以我劝你别轻易放弃。 
 }
 TristanBorcher_123 {
-我很乐意听你的建议，谢谢。
+我很乐意听你的建议， 谢谢。 
 }
 TristanBorcher_124 {
-这位Admiral可真是个有意思的人，你知道吗，他以前可是海盗船的船长！
+这位海军上将可真是个有意思的人， 你知道吗， 他以前可是海盗船的船长！ 
 }
 TristanBorcher_125 {
-嗯，这我知道……
+嗯， 这我知道…… 
 }
 TristanBorcher_126 {
-所以你明白吧，他这人很有魄力，是真正的领袖。劝你最好别惹他，这算是给你的忠告……
+所以你明白吧， 他这人很有魄力， 是真正的领袖。 劝你最好别惹他， 这算是给你的忠告…… 
 }
 TristanBorcher_127 {
-明白了，那选举Admiral的事怎么样了？
+明白了， 那选举海军上将的事怎么样了？ 
 }
 TristanBorcher_128 {
-我就是提醒过你别这么做……
+我就是提醒过你别这么做…… 
 }
 TristanBorcher_129 {
-嗯，我明白了。
+嗯， 我明白了。 
 }
 TristanBorcher_130 {
-没错，只有这样。天气好的时候，根本没人能靠近咱们。好像都是那片海藻惹的祸，只有暴风雨时汹涌的海流才能暂时冲开那道障碍。
+没错， 只有这样。 天气好的时候， 根本没人能靠近咱们。 好像都是那片海藻惹的祸， 只有暴风雨时汹涌的海流才能暂时冲开那道障碍。 
 }
 TristanBorcher_131 {
-真有意思！
+真有意思！ 
 }
 TristanBorcher_132 {
-确实挺有意思的。说句公道话，这个理论也不是绝对真理，虽然不少市民都认同。
+确实挺有意思的。 说句公道话， 这个理论也不是绝对真理， 虽然不少市民都认同。 
 }
 TristanBorcher_133 {
-那我也同意吧。
+那我也同意吧。 
 }
 TristanBorcher_134 {
-大概一年前吧，如果我没记错的话。
+大概一年前吧， 如果我没记错的话。 
 }
 TristanBorcher_135 {
-明白了……
+明白了…… 
 }
 TristanBorcher_136 {
-什么货？
+什么货？ 
 }
 TristanBorcher_137 {
-你刚才已经问过这个了。
+你刚才已经问过这个了。 
 }
 TristanBorcher_138 {
-已经问过了……
+已经问过了…… 
 }
 TristanBorcher_139 {
-你已经问过我这些货了，我啥也不知道！
+你已经问过我这些货了， 我什么也不知道！ 
 }
 TristanBorcher_140 {
-俺在找炸弹、霰弹、补给、药品、火药、武器……
+我在找炸弹、 葡萄弹、 补给、 药品、 火药、 武器…… 
 }
 TristanBorcher_141_m {
-啊……抱歉，我给忘了。
+啊…… 抱歉， 我给忘了。 
 }
 TristanBorcher_141_f {
-嗯……抱歉，我忘了。
+嗯…… 抱歉， 我忘了。 
 }
 TristanBorcher_142 {
-啊，对了。
+啊， 对了。 
 }
 TristanBorcher_143_m {
-知道了，知道了……
+知道了， 知道了…… 
 }
 TristanBorcher_143_f {
-知道了，知道了……
+知道了， 知道了…… 
 }
 TristanBorcher_144 {
-我也说不准，我也说不准……
+我也说不准， 我也说不准…… 
 }
 TristanBorcher_145 {
-你不知道？
+你不知道？ 
 }
 TristanBorcher_146 {
-我也不知道去哪儿找。
+我也不知道去哪儿找。 
 }
 TristanBorcher_147 {
-哦，明白了。
+哦， 明白了。 
 }
 TristanBorcher_148 {
-船员？你是说船上的那种船员吗？
+船员？ 你是说船上的那种船员吗？ 
 }
 TristanBorcher_149 {
-没错。
+没错。 
 }
 TristanBorcher_150 {
-你还真有艘能下水的船？
+你还真有艘能下水的船？ 
 }
 TristanBorcher_151 {
-是的，我有一艘随时可以出航的corvette。
+是的， 我有一艘随时可以出航的巡航舰。 
 }
 TristanBorcher_152 {
-我想跟你一起离开这里，该怎么办？
+我想跟你一起离开这里， 该怎么办？ 
 }
 TristanBorcher_153 {
-立刻去“San Gabriel”号，Malcolm Fawn会送你上船。
+立刻去“圣加百列号”， 马尔科姆.福恩会送你上船。 
 }
 TristanBorcher_154 {
-我去拿下行李，你们就当老子已经上了San Gabriel。
+我去拿下行李， 你们就当我已经上了圣加百列号。 
 }
 TristanBorcher_155 {
-行，但别在其他地方耽搁。
+行， 但别在其他地方耽搁。 
 }
 TristanBorcher_156 {
-你来了？那看来事情比我们想的还要顺利？！你到底是怎么打败Chad的……他一直给人很强势、很有威严的感觉，大家才那么敬重他。唔……
+你来了？ 那看来事情比我们想的还要顺利？ ！ 你到底是怎么打败查德的…… 他一直给人很强势、 很有威严的感觉， 大家才那么敬重他。 唔…… 
 }
 TristanBorcher_157 {
-看你见到我不怎么高兴啊，Tristan……
+看你见到我不怎么高兴啊， 特里斯坦…… 
 }
 TristanBorcher_158 {
-绝对不是！我的意思是，你比他更有领导力，这点毫无疑问！所以我才跟着你，而不是留在City。我只希望咱们运气好，大海能帮咱们冲出这些海藻……别忘了水下的暗流，不然咱们又得被卷回那个洞里……
+绝对不是！ 我的意思是， 你比他更有领导力， 这点毫无疑问！ 所以我才跟着你， 而不是留在城市。 我只希望咱们运气好， 大海能帮咱们冲出这些海藻…… 别忘了水下的暗流， 不然咱们又得被卷回那个洞里…… 
 }
 TristanBorcher_159 {
-别担心，咱们的舵手可是一把好手——Malcolm Fawn。他在这片海域航行的时候，Chad还没来呢，放心吧，咱们肯定没问题。你去找他吧。
+别担心， 咱们的舵手可是一把好手——马尔科姆.福恩。 他在这片海域航行的时候， 查德还没来呢， 放心吧， 咱们肯定没问题。 你去找他吧。 
 }

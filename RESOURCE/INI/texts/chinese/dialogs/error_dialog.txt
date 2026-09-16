@@ -1,6 +1,6 @@
 error_dialog_1 {
-对话文件打开出错。
+对话文件打开出错。 
 }
 error_dialog_2 {
-无法打开分配给该角色的对话文件@<CharacterRef>。请联系客服！
+无法打开分配给该角色的对话文件@<CharacterRef>。 请联系客服！ 
 }

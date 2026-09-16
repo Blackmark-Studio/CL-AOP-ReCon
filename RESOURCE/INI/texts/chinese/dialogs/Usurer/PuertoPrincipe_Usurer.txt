@@ -1,39 +1,39 @@
 PuertoPrincipe_Usurer_1 {
-什么问题？
+什么问题？ 
 }
 PuertoPrincipe_Usurer_2 {
-你想干什么？
+你想干什么？ 
 }
 PuertoPrincipe_Usurer_3 {
 @<RandPhraseSimple>
 }
 PuertoPrincipe_Usurer_4 {
-不久前，你试图问我一个问题……
+不久前， 你试图问我一个问题…… 
 }
 PuertoPrincipe_Usurer_5 {
-嗯，让我猜猜……又没什么重要的事吧？
+嗯， 让我猜猜…… 又没什么重要的事吧？ 
 }
 PuertoPrincipe_Usurer_6 {
-听着，俺管钱，不管回答问题……
+听着， 我管钱， 不管回答问题…… 
 }
 PuertoPrincipe_Usurer_7_m {
-我改主意了……
+我改主意了…… 
 }
 PuertoPrincipe_Usurer_7_f {
-我改变主意了……
+我改变主意了…… 
 }
 PuertoPrincipe_Usurer_8 {
-我现在没什么好说的。
+我现在没什么好说的。 
 }
 PuertoPrincipe_Usurer_9 {
 @<RandPhraseSimple>
 }
 PuertoPrincipe_Usurer_10 {
-嗯，我的记忆好像出了点问题……
+嗯， 我的记忆好像出了点问题…… 
 }
 PuertoPrincipe_Usurer_11 {
-你猜对了，抱歉……
+你猜对了， 抱歉…… 
 }
 PuertoPrincipe_Usurer_12 {
-我明白……
+我明白…… 
 }

@@ -143,7 +143,7 @@ Santiago_Mayor_40 {
 Mogę was zapewnić, że La Vega wkrótce przestanie istnieć.
 }
 Santiago_Mayor_41 {
-Wspaniale, señorze@<GetAddress_Form>! Po prostu znakomicie! Don Francisco Oregon y Gascon ma pełne prawo być dumny, że w jego służbie są tacy oficerowie.
+Wspaniale, @<GetAddress_Form>! Po prostu znakomicie! Don Francisco Oregon y Gascon ma pełne prawo być dumny, że w jego służbie są tacy oficerowie.
 }
 Santiago_Mayor_42_m {
 Bukanierzy to godny przeciwnik, cieszę się, że udało mi się wykonać powierzone zadanie... Señor, a co z nagrodą?

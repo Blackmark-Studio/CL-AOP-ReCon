@@ -61,6 +61,7 @@ void wdmEventHandler_PlayerInStorm_EnterSeaQuestEncounter()
 				if (CheckAttribute(rEncounter, "CharacterID") && rEncounter.CharacterID == "Sharp")
 				{
 					wdmEnterSeaQuest(rEncounter.CharacterID);
+					break; // > достаточно первого совпадения
 				}
 			}
 		}
@@ -118,7 +119,7 @@ void wdmEvent_AddQuestEncounters()
 				if(!GenerateMapEncounter_Alone(at.characterID, &idx))
 				{
 					PostEvent("Map_TraderSucces", 100, "s", at.characterID);
-					return;
+					continue;
 				}
 				//Создаём в карте энкоунтера
 				encID = "";
@@ -127,7 +128,7 @@ void wdmEvent_AddQuestEncounters()
 					if(!wdmCreateMerchantShipXZByIndex(1.0, idx, &encID, stf(at.x1), stf(at.z1), stf(at.x2), stf(at.z2), sti(at.TimeOut)))
 					{
 						PostEvent("Map_TraderSucces", 100, "s", at.characterID);
-						return;
+						continue;
 					}
 				}
 				else
@@ -135,7 +136,7 @@ void wdmEvent_AddQuestEncounters()
 					if(!wdmCreateMerchantShipByIndex(1.0, idx, &encID, at.beginlocator, at.endLocator, sti(at.TimeOut)))
 					{
 						PostEvent("Map_TraderSucces", 100, "s", at.characterID);
-						return;
+						continue;
 					}
 				}
 				//Путь до энкоунтера
@@ -143,13 +144,14 @@ void wdmEvent_AddQuestEncounters()
 				//Сохраняем принадлежность к квестовым энкоунтеров
 				worldMap.(encPath).quest.event = "Map_TraderSucces";
 				worldMap.(encPath).quest.chrID = at.characterID;
+				wdmApplyShipFX(encID); // > эффекты на только что появившийся квестовый энкаунтер
 			}
 			if(at.type == "warrior")
 			{			
 				if(!GenerateMapEncounter_Alone(at.characterID, &idx))
 				{
 					PostEvent("Map_WarriorEnd", 100, "s", at.characterID);
-					return;
+					continue;
 				}
 				//Создаём в карте энкоунтера
 				encID = "";
@@ -157,20 +159,21 @@ void wdmEvent_AddQuestEncounters()
 				if(!wdmCreateRealFollowShipByIndex(1.0, idx, &encID, sti(at.TimeOut)))
 				{
 					PostEvent("Map_WarriorEnd", 100, "s", at.characterID);
-					return;
+					continue;
 				}
 				//Путь до энкоунтера
 				encPath = "encounters." + encID;
 				//Сохраняем принадлежность к квестовым энкоунтеров
 				worldMap.(encPath).quest.event = "Map_WarriorEnd";
 				worldMap.(encPath).quest.chrID = at.characterID;
+				wdmApplyShipFX(encID); // > эффекты на только что появившийся квестовый энкаунтер
 			}
 			if(at.type == "coolwarrior")
 			{			
 				if(!GenerateMapEncounter_Alone(at.characterID, &idx))
 				{
 					PostEvent("Map_WarriorEnd", 100, "s", at.characterID);
-					return;
+					continue;
 				}
 				//Создаём в карте энкоунтера
 				encID = "";
@@ -178,13 +181,14 @@ void wdmEvent_AddQuestEncounters()
 				if(!wdmCreateRealFollowShipByIndex(1.7, idx, &encID, sti(at.TimeOut)))
 				{
 					PostEvent("Map_WarriorEnd", 100, "s", at.characterID);
-					return;
+					continue;
 				}
 				//Путь до энкоунтера
 				encPath = "encounters." + encID;
 				//Сохраняем принадлежность к квестовым энкоунтеров
 				worldMap.(encPath).quest.event = "Map_WarriorEnd";
 				worldMap.(encPath).quest.chrID = at.characterID;
+				wdmApplyShipFX(encID); // > эффекты на только что появившийся квестовый энкаунтер
 			}
 			if(at.type == "battle")
 			{
@@ -373,7 +377,8 @@ void wdmEnterSeaQuest(string _chrId)
 	//жемчужный генератор Шарпа
 	if (_chrId == "Sharp")
 	{
-		characters[GetCharacterIndex(_chrId)].nation = pchar.nation;
+		int iSharpIdx = GetCharacterIndex(_chrId);
+		if (iSharpIdx != -1) characters[iSharpIdx].nation = pchar.nation;
 		
 		if (CheckAttribute(pchar, "questTemp.Sharp") && pchar.questTemp.Sharp == "SharpRevenge")
 		{

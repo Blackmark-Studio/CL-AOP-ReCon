@@ -1,36 +1,36 @@
 SantaCatalina_ItemTrader_1 {
-什么问题？
+什么问题？ 
 }
 SantaCatalina_ItemTrader_2 {
-有什么需要帮忙的吗，@<GetAddress_Form>?
+有什么需要帮忙的吗， @<GetAddress_Form>?
 }
 SantaCatalina_ItemTrader_3 {
 @<RandPhraseSimple>
 }
 SantaCatalina_ItemTrader_4 {
-又有问题啊，@<GetAddress_Form>……
+又有问题啊， @<GetAddress_Form>…… 
 }
 SantaCatalina_ItemTrader_5 {
-问题一堆……要不要来做点生意，@<GetAddress_Form>?
+问题一堆…… 要不要来做点生意， @<GetAddress_Form>?
 }
 SantaCatalina_ItemTrader_6 {
-听着，咱们还要浪费多少时间在这些废话上？
+听着， 咱们还要浪费多少时间在这些废话上？ 
 }
 SantaCatalina_ItemTrader_7 {
-没问题……
+没问题…… 
 }
 SantaCatalina_ItemTrader_8 {
-我现在没什么可说的。
+我现在没什么可说的。 
 }
 SantaCatalina_ItemTrader_9 {
 @<RandPhraseSimple>
 }
 SantaCatalina_ItemTrader_10 {
-唉，又来了……
+唉， 又来了…… 
 }
 SantaCatalina_ItemTrader_11 {
-是啊，还是讲讲价更好……
+是啊， 还是讲讲价更好…… 
 }
 SantaCatalina_ItemTrader_12 {
-嗯，抱歉，商人……
+嗯， 抱歉， 商人…… 
 }

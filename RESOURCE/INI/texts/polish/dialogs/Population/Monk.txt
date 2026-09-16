@@ -508,3 +508,6 @@ Próbuję zebrać pieniądze na jedzenie i ubrania dla najbiedniejszych mieszka�
 Monk_133 {
 Zamierzam wyruszyć z misją do wnętrza wyspy, by dotrzeć do rdzennych mieszkańców, nieść światło zagubionym duszom i zbieram środki na organizację wyprawy. Przyłącz się do tego szlachetnego dzieła!
 }
+Monk_134 {
+@<TimeGreeting>, ojcze. Muszę już iść.
+}

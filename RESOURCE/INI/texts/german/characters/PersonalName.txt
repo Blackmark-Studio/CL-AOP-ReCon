@@ -274,7 +274,7 @@ Pitt_lastname {Pitt}
 CapGobart_name {Kapitän}
 CapGobart_lastname {Hobart}
 Bridgetown_Mayor_name {Gouverneur}
-Bridgetown_Mayor_lastname {Stede}
+Bridgetown_Mayor_lastname {Steed}
 Bishop_name {Oberst}
 Bishop_lastname {Bischof}
 Griffin_name {Ed}
@@ -566,7 +566,7 @@ Blad2_ship {Cinco Llagas}
 LSC_ship {Kriegshund}
 Providencia_PortMan_ship {Sevilla}
 MisStid_name {Mrs.}
-MisStid_lastname {Stede}
+MisStid_lastname {Steed}
 Waker_name {Arzt}
 Waker_lastname {Waker}
 Den_name {Mister}
@@ -617,3 +617,185 @@ PDM_ONW_Inqizitor_name {Inquisitor}
 PDM_CL_Pokupatel_name {James}
 PDM_CL_Pokupatel_lastname {Ballantrae}
 PDM_Octavio_Lambrini_Clone_name {Lambrini und der Fremde}
+Arabella_name {Arabella}
+Kent_name {Aufseher}
+Kent_lastname {Kent}
+AralellaAndSlave_name {Arabella und ihre Diener}
+Mary_name {Mary}
+Mary_lastname {Traill}
+Governor_Stid {Gouverneur Steed}
+BishopAndGardner {Colonel Bishop und Captain Gardner}
+BishopAndArabella {Colonel Bishop und Arabella}
+CBL_Officers {An die Besatzung}
+Diego_name {Diego}
+Miguel_name {Miguel}
+Esteban_name {Esteban}
+De_Espinosa_lastname {de Espinosa}
+Encarnacion_ship {Encarnación}
+EPL_PZD_Pilar_name {Pilar}
+EPL_PZD_Pilar_lastname {Ternera}
+EPL_PZD_Herineldo_name {Herineldo}
+EPL_PZD_Herineldo_lastname {Garberd}
+EPL_PZD_Palturs_name {Palturs}
+EPL_PZD_Palturs_lastname {Kate}
+EPL_PZD_Ruud_name {Ruud}
+EPL_PZD_Ruud_lastname {Brewer}
+EPL_PZD_Andres_name {Andres}
+EPL_PZD_Andres_lastname {Foseca}
+EPL_PZD_Aletta_name {Aletta}
+EPL_PZD_Gabriel_name {Gabriel}
+EPL_PZD_Gabriel_lastname {de Seguenza}
+EPL_Rebekka_name {Rebecca}
+EPL_Rebekka_lastname {Remidos}
+EPL_Aurelio_name {Aurelio}
+EPL_Aurelio_lastname {Serrano}
+EPL_Gasten_name {Gasten}
+EPL_Gasten_lastname {Cotes}
+EPL_Sofia_name {Sofia}
+EPL_Sofia_lastname {de la Piedad}
+Remedios_lastname {Remedios}
+EPL_RedBull_ship {Roter Bulle}
+
+Alonso_de_Torralba_name {Alonso}
+Alonso_de_Torralba_lastname {de Torralba}
+Esteban_Molina_name {Esteban}
+Esteban_Molina_lastname {Molina}
+Martin_Kesada_name {Martin}
+Martin_Kesada_lastname {Quesada}
+Buccaneer_trader_name {Ingeborg}
+Buccaneer_trader_lastname {Dapkunaite}
+Buccaneer_shipyarder_1_name {Charles}
+Buccaneer_shipyarder_1_lastname {Vauban}
+Esteban_Molina_ship {La Paloma}
+Martin_Kesada_ship {Santa Catalina}
+Royal_SantaMarta_Cap_ship {Santa Rosa}
+Royal_SanIldefonso_Cap_ship {San Ildefonso}
+Royal_NuestraSenora_Cap_ship {Nuestra Señora}
+Royal_SanJuan_Cap_ship {San Miguel}
+Margarita_Prize_ship {Margarita}
+Atauko_name {Atauko}
+
+Bartolomeo_Huntsman_name {Bartolomeo}
+
+Bertran_Waband_lastname {Waband}
+
+Bertran_Waband_name {Bertrand}
+
+Captain_Hollis_lastname {Hollis}
+
+Captain_Hollis_name {Kommandant}
+
+Daniel_Monbar_lastname {Montbard}
+
+Daniel_Monbar_name {Daniel}
+
+Daniel_Monbar_ship {Goldenes Kastilien}
+Daniel_Monbar_ship_Monbarina {Montbarina}
+
+Diego_de_Vargas_lastname {Vargas}
+
+Diego_de_Vargas_name {Diego}
+
+Diego_de_Vargas_ship {Santa Margarita}
+
+Esteban_Ruiz_lastname {Ruiz}
+
+Esteban_Ruiz_name {Esteban}
+
+Etien_Marso_lastname {Marceau}
+
+Etien_Marso_name {Etienne}
+
+Etien_Marso_ship {Heringsmöwe}
+
+Fransua_Olone_lastname {Ohlone}
+
+Fransua_Olone_name {François}
+
+Fransua_Olone_ship_Fleo {Fleo}
+
+Fransua_Olone_ship_Soledad {Soledad}
+
+Gaspar_Leru_lastname {Leroux}
+
+Gaspar_Leru_name {Gaspar}
+
+Henry_Tessie_lastname {Tessier}
+
+Henry_Tessie_name {Henri}
+
+Ignasio_Vela_lastname {Vela}
+
+Ignasio_Vela_name {Ignacio}
+
+Inigo_Cabrera_lastname {de Cabrera}
+
+Inigo_Cabrera_name {Inigo}
+
+Keys_lagoon_Punitive_Cap_1_ship {Santiago}
+
+Keys_lagoon_Punitive_Cap_2_ship {Santa Catalina}
+
+Keys_lagoon_Punitive_Cap_3_ship {Nuestra Señora de la Victoria}
+
+Keys_lagoon_Punitive_Cap_4_ship {San Miguel}
+
+Keys_lagoon_Punitive_mapEnc {Strafgeschwader von Don Alonso de Vargas}
+
+Luc_Delacroix_lastname {Delacroix}
+
+Luc_Delacroix_name {Lukas}
+
+Maracaibo_Mayor_lastname {de Cespedes}
+
+Maracaibo_Mayor_name {Rodrigo}
+
+Mary_Belfler_lastname {Bellefleur}
+
+Mary_Belfler_name {Marie}
+
+Mateo_Serrano_lastname {Serrano}
+
+Mateo_Serrano_name {Mateo}
+
+Mayak_Bandit_1_lastname {mit einer Maske}
+
+Mayak_Bandit_1_name {Menschlich}
+
+Mishel_le_Bask_lastname {le Basque}
+
+Mishel_le_Bask_name {Michelle}
+
+Mishel_le_Bask_ship {Le Renard}
+
+Old_Loren_lastname {Lauren}
+
+Old_Loren_name {Fischer}
+
+Raul_Giom_lastname {Guillaume}
+
+Raul_Giom_name {Raul}
+
+Rimalier_lastname {Rimaille}
+
+Rimalier_name {Nicolas}
+
+Royal_SanJacinto_Cap_lastname {de Aragon}
+
+Royal_SanJacinto_Cap_name {Juan}
+
+Royal_SanJacinto_Cap_ship {San Jacinto}
+
+Royal_matros_name {Seemann}
+
+Sebastian_Rohas_lastname {Rojas}
+
+Sebastian_Rohas_name {Sebastian}
+
+Thomas_Arellano_lastname {de Arellano}
+
+Thomas_Arellano_name {Thomas}
+
+Yamai_name {Yamai}
+
+Young_Boy_Bask_name {Jaco}

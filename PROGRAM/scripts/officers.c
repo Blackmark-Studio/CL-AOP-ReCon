@@ -212,12 +212,12 @@ bool IsOfficerRemovable(ref _chr) //HardCoffee функция проверяет
 {	//используется для обмена предметами
 	//в отличии от GetRemovable - исключает зэков
 	//цикл нужен на случай, если в _chr попал не офицер
-	int iTemp;
+	int i, iTemp;
 	ref compareChr;
-	for (int i = 0; i < GetPassengersQuantity(pchar); i++)
+	for (i = 0; i < GetPassengersQuantity(pchar); i++)
 	{
 		iTemp = GetPassenger(pchar,i);
-		if (iTemp == -1) continue;
+		if (iTemp < 0) continue;
 		compareChr = &characters[iTemp];
 		if (compareChr.id == _chr.id)
 		{

@@ -508,3 +508,6 @@ Estou tentando arrecadar dinheiro para comprar comida e roupas para os moradores
 Monk_133 {
 Pretendo partir em uma missão ao coração da ilha, para levar luz às almas perdidas entre os nativos, e estou arrecadando fundos para organizar a expedição. Você não gostaria de apoiar essa causa nobre?
 }
+Monk_134 {
+@<TimeGreeting>, padre. Preciso ir.
+}

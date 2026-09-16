@@ -1,0 +1,80 @@
+SantoDomingo_dialog_1 {
+军官先生，城门这里一切平静。出了雅科那件事之后，守卫都把眼睛睁得很大。
+}
+SantoDomingo_dialog_2 {
+就该这样。
+}
+SantoDomingo_dialog_3 {
+先生，如果您刚从外面回来，最好直接去找司令官。他吩咐过，所有被捕的人都要报告给他。
+}
+SantoDomingo_dialog_4 {
+我知道命令。
+}
+SantoDomingo_dialog_5 {
+军官先生，城门巡逻一切正常。可疑的人不放进来，逃犯也只能交给司令官处理。
+}
+SantoDomingo_dialog_6 {
+继续执勤。
+}
+SantoDomingo_dialog_7 {
+先生，今天城里不太平。司令官正等着那个企图接近杜瓦尔的混蛋的消息。
+}
+SantoDomingo_dialog_8 {
+他很快就会收到。
+}
+SantoDomingo_dialog_9 {
+军官先生，卫兵已经接到警告。要是俘虏很危险 - 直接押去见司令官，中途不要停。
+}
+SantoDomingo_dialog_10 {
+就这么办。
+}
+SantoDomingo_dialog_11 {
+喂，士兵，别磨蹭。既然押着俘虏，就把他送到司令官那里。
+}
+SantoDomingo_dialog_12 {
+这就去。
+}
+SantoDomingo_dialog_13 {
+刚从外面回来？看你这样子，简直像刚从地狱里巡逻了一圈。
+}
+SantoDomingo_dialog_14 {
+一路可不轻松。
+}
+SantoDomingo_dialog_15 {
+要是这人就是那个雅科，可得看紧点。司令官早就想跟他谈谈了。
+}
+SantoDomingo_dialog_16 {
+他跑不了。
+}
+SantoDomingo_dialog_17 {
+别跟俘虏废话。押进去，按命令交人。
+}
+SantoDomingo_dialog_18 {
+明白。
+}
+SantoDomingo_dialog_19 {
+巡逻队刚回来？那就快点。司令官今天心情很坏，最好别让他久等。
+}
+SantoDomingo_dialog_20 {
+让他准备收货吧。
+}
+
+LeBasque_SantoDomingoJailOff_1 {
+马尔索？你到底在这里干什么？立刻滚出去，否则我就逮捕你了。
+}
+
+LeBasque_SantoDomingoJailOff_2 {
+多年过去了，没人会相信你的话。
+}
+
+LeBasque_SantoDomingoJailOff_3 {
+你一直是个谨慎的混蛋，马尔索……
+}
+
+LeBasque_SantoDomingoJailOff_4 {
+该死……中士！把杜瓦尔带来！
+}
+
+LeBasque_SantoDomingoJailOff_5 {
+带他立刻离开我的城市。
+}

@@ -281,7 +281,7 @@ Capitan_dialog_89 {
 As you wish.
 }
 Capitan_dialog_90 {
-I'm coming from the city of @<GetCityName>.
+I'm coming from the city of @<GetTraderCityName>.
 }
 Capitan_dialog_91 {
 What are the prices like at the local store?
@@ -580,6 +580,6 @@ a third of the loot
 Capitan_dialog_181 {
 a quarter of the loot
 }
-Capitan_dialog_7 {
+Capitan_dialog_182 {
 @<TimeGreeting>, @<GetAddress_Form>! I am @<GetFullName>. What brings you aboard my ship?
 }

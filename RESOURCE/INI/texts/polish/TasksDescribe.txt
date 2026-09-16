@@ -7,7 +7,7 @@ Task6 {Przydziel kwatermistrza}
 Task7 {Przydziel Cieślę}
 Task8 {Walka morska}
 Task9 {Używając kul armatnich lub bomb}
-Task10 {Zatop uszkodzony lugier}
+Task10 {Zatop wrogie lugry}
 Task11 {Wycofaj się}
 Task12 {Odejdź wystarczająco daleko od wroga}
 Task13 {Nowy okręt}
@@ -25,3 +25,11 @@ Task24 {Nowy statek}
 Task25 {Idź do tawerny}
 Task26 {Zatrudnij całą dostępną załogę}
 Task27 {Opuść tawernę}
+Task28 {Opuść Barbados}
+Task29 {Oddal się od fortu na 500 jardów}
+Task30 {Zbliż się do „Encarnación” i wyślij do niej szalupę}
+Task31 {Zbadaj Maracaibo}
+Task32 {Sprawdź sklep}
+Task33 {Sprawdź więzienie}
+Task34 {Sprawdź magazyn}
+Task35 {Sprawdź dżunglę}

@@ -1,0 +1,27 @@
+Free_Store_1 {
+Słucham. Coś jeszcze?
+}
+Free_Store_2 {
+Właśnie o tym rozmawialiśmy. Pamięć już zawodzi?
+}
+Free_Store_3 {
+Dziś już po raz trzeci wraca ta sama rozmowa...
+}
+Free_Store_4 {
+Tu się handluje, a nie gada. Nie odciągaj mnie od roboty!
+}
+Free_Store_5 {
+Wiesz co, @<NPChar>, może innym razem.
+}
+Free_Store_6_m {
+Rzeczywiście, o czymś zapomniałem...
+}
+Free_Store_6_f {
+Rzeczywiście, o czymś zapomniałam...
+}
+Free_Store_7 {
+Tak, rzeczywiście już trzeci raz...
+}
+Free_Store_8 {
+Hm, nie będę...
+}

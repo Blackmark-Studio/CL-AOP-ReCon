@@ -53,7 +53,7 @@ void InitInterface_SB(string iniName, string tutorialName, bool bShowVideo)
 			loadScr = "tutorial\" + videoName + ".webm";
 			SetNewVideo("INFO_VIDEO", loadScr);
 			SetNewVideo("INFO_VIDEOZ", loadScr);
-			SetFormatedText("ZOOM", "w");
+			SetFormatedText("ZOOM", "ᐽ");
 		}
 		else
 		{

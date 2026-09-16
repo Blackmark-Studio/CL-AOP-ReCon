@@ -2,7 +2,7 @@ void ProcessDialogEvent()
 {
 	ref NPChar, sld;
 	aref Link, Diag;
-	int i;
+	int i, iTemp;
 	string sTemp;
 
 	DeleteAttribute(&Dialog, "Links");
@@ -23,8 +23,9 @@ void ProcessDialogEvent()
 			LAi_SetPlayerType(pchar);
 			for (i = 1; i <= 3; i++)
 			{
-				if (GetCharacterIndex("GangMan_" + i) == -1) continue;
-				sld = CharacterFromID("GangMan_" + i);
+				iTemp = GetCharacterIndex("GangMan_" + i);
+				if (iTemp < 0) continue;
+				sld = &characters[iTemp];
 				LAi_SetImmortal(sld, false);
 				LAi_SetWarriorType(sld);
 				LAi_group_MoveCharacter(sld, "EnemyFight");
@@ -53,8 +54,9 @@ void ProcessDialogEvent()
 			LAi_LockFightMode(pchar, false);
 			for (i = 1; i <= 3; i++)
 			{
-				if (GetCharacterIndex("GangMan_" + i) == -1) continue;
-				sld = CharacterFromID("GangMan_" + i);
+				iTemp = GetCharacterIndex("GangMan_" + i);
+				if (iTemp < 0) continue;
+				sld = &characters[iTemp];
 				LAi_SetActorType(sld);
 				LAi_ActorFollow(sld, characterFromId("CangGirl"), "", -1);
 				LAi_SetCheckMinHP(sld, LAi_GetCharacterHP(sld) - 1, false, "LandEnc_RapersBeforeDialog");
@@ -69,8 +71,9 @@ void ProcessDialogEvent()
 		case "First time":
 			for (i = 1; i <= 3; i++)
 			{
-				if (GetCharacterIndex("GangMan_" + i) == -1) continue;
-				sld = CharacterFromID("GangMan_" + i);
+				iTemp = GetCharacterIndex("GangMan_" + i);
+				if (iTemp < 0) continue;
+				sld = &characters[iTemp];
 				LAi_type_actor_Reset(sld);
 				LAi_RemoveCheckMinHP(sld);
 			}
@@ -186,8 +189,9 @@ void ProcessDialogEvent()
 			sTemp = LAi_FindNearestFreeLocator2Pchar("reload");
 			for (i = 1; i <= 3; i++)
 			{
-				if (GetCharacterIndex("GangMan_" + i) == -1) continue;
-				sld = CharacterFromID("GangMan_" + i);
+				iTemp = GetCharacterIndex("GangMan_" + i);
+				if (iTemp < 0) continue;
+				sld = &characters[iTemp];
 				LAi_SetImmortal(sld, true);
 				LAi_SetActorType(sld);
 				if (i == 1) LAi_ActorRunToLocation(sld, "reload", sTemp, "none", "", "", "OpenTheDoors", -1.0);
@@ -259,8 +263,9 @@ void ProcessDialogEvent()
 			sTemp = LAi_FindNearestFreeLocator2Pchar("reload");
 			for (i = 1; i <= 3; i++)
 			{
-				if (GetCharacterIndex("GangMan_" + i) == -1) continue;
-				sld = CharacterFromID("GangMan_" + i);
+				iTemp = GetCharacterIndex("GangMan_" + i);
+				if (iTemp < 0) continue;
+				sld = &characters[iTemp];
 				LAi_SetActorType(sld);
 				LAi_SetImmortal(sld, true);
 				if (i == 1) LAi_ActorRunToLocation(sld, "reload", sTemp, "none", "", "", "OpenTheDoors", -1.0);

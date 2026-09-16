@@ -71,7 +71,7 @@ void TemplateLoad()
 	tpl.starttime = 0;
 	tpl.actualtime = 30;
 	tpl.loginfo.end = "Rumour_GoldFleet";
-	tpl.loginfo.text = "13";
+	tpl.loginfo.textnum = "13";
 	tpl.event = "none";
 	tpl.next = "none";
 	tpl.function = "";

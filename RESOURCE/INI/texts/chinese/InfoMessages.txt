@@ -1,181 +1,181 @@
-InfoMessages_1 {@<officer.Ship.Name> 的登陆队由 @<FindPeoplesString> 组成。}
+InfoMessages_1 {@<officer.Ship.Name>的登陆队有@<FindPeoplesString>。 }
 InfoMessages_2 {您的贷款期限已到期}
-InfoMessages_3 {以多胜少加成：@<m_rank_bonus>}
-InfoMessages_4 {对岛屿起作用了。}
-InfoMessages_5 {对这座城市来说奏效了。}
-InfoMessages_6 {，@<XI_ConvertString> 上有什么}
-InfoMessages_7 {火焰法术已被解除}
+InfoMessages_3 {以多胜少加成： @<m_rank_bonus>}
+InfoMessages_4 {对岛屿起作用了。 }
+InfoMessages_5 {对这座城市来说奏效了。 }
+InfoMessages_6 {， 位于@<XI_ConvertString>}
+InfoMessages_7 {火焰魔法已被解除}
 InfoMessages_8 {石制箱子已被打开}
 InfoMessages_9 {@<Name>的健康状况变差了}
 InfoMessages_10 {@<Name>的生命值已提升}
-InfoMessages_11 {@<XI_ConvertString> 提高了你的悬赏}
+InfoMessages_11 {@<XI_ConvertString>提高了你的悬赏}
 InfoMessages_12 {@<XI_ConvertString>降低了你头上的悬赏}
-InfoMessages_13 {清晨到来了……}
-InfoMessages_14 {已经过了一个小时……}
-InfoMessages_15 {你已到达失事船只}
-InfoMessages_16 {第二天……}
-InfoMessages_17 {第二天清晨……}
-InfoMessages_18 {八小时过去了……}
-InfoMessages_19 {眼前发生的一切，简直无法形容。}
-InfoMessages_20 {昏睡中……}
-InfoMessages_21 {十分钟的挖掘之后……}
-InfoMessages_22 {经过几个小时的畅饮……}
-InfoMessages_23 {几个小时过去了……}
-InfoMessages_24 {一天过去了……}
-InfoMessages_25 {仪式期间过去了四十分钟。}
-InfoMessages_26 {第二天傍晚。@<NewStr>城门附近……}
-InfoMessages_27 {第二天清晨……}
-InfoMessages_28 {在第40天的航行中……@<NewStr>新世界，海洋，@<NewStr>遭遇西班牙船袭击。}
-InfoMessages_29 {大约过去了7天。@<NewStr>新世界，马提尼克岛，@<NewStr>法属殖民地法兰西堡。}
-InfoMessages_30 {已经过去十个小时……}
-InfoMessages_31 {在航行的第4天……}
-InfoMessages_32 {七天过去了。托尔图加。港口……}
-InfoMessages_33 {已过@<iDay>@<XI_ConvertString>。@<NewStr>@<XI_ConvertString>@<GetConvertStr>,@<NewStr>@<GetConvertStr>。}
-InfoMessages_34 {经过紧张的准备。}
-InfoMessages_35 {地平线上出现了一艘船！}
-InfoMessages_36 {文件未被拿走！！！}
-InfoMessages_37 {这里有些不对劲……}
-InfoMessages_38 {@<XI_ConvertString> @<GetFullName> 离开了你的船！}
-InfoMessages_39 {城市卫兵会协助战斗！}
-InfoMessages_40 {卫兵选择了不干涉。}
-InfoMessages_41 {@<XI_ConvertString> @<GetFullName> 登上了船。}
-InfoMessages_42 {@<GetFullName>投降了。}
-InfoMessages_43 {幽灵已被消灭，它不会再回来了。}
-InfoMessages_44 {幽灵已被消灭，但它会回来吗？}
-InfoMessages_45 {我们反击了！}
-InfoMessages_46 {教会任务完成！}
-InfoMessages_47 {叛乱者的遗体已被送上最后的航程。}
-InfoMessages_48 {船上的叛乱已被平息。}
-InfoMessages_49 {@<XI_ConvertString> @<GetCityName> 现在归我们了！}
-InfoMessages_50 {有人偷了你的东西。}
-InfoMessages_51 {交付货物的时间已过。}
-InfoMessages_52 {你还没有把欠款人的钱还给雇主。}
-InfoMessages_53 {你尚未将贷款送达目的地。}
-InfoMessages_54 {@<XI_ConvertString> @<PChar> 前往海湾与自己的团队会合。}
-InfoMessages_55 {必须消灭哨兵！}
-InfoMessages_56 {冲锋吧，勇士们！}
-InfoMessages_57 {为了我的命，我要把岛上的每个法国佬都撕成碎片！}
-InfoMessages_58 {你找到了正确的箱子@<NewStr>圣卢西亚号船长的黄金已经找到！}
-InfoMessages_59 {骷髅正在进攻！！！}
-InfoMessages_60 {你失去了一部分船员。}
-InfoMessages_61 {已收到船只。}
-InfoMessages_62 {这里有东西！}
-InfoMessages_63 {这是陷阱！}
-InfoMessages_64 {这里有些不对劲。我们再深入查查……}
-InfoMessages_65 {坟前立着一座木制十字架，但泥土干燥且坚实。我们继续寻找吧。}
-InfoMessages_66 {这座坟墓没有木制十字架。我们继续找吧。}
-InfoMessages_67 {理查德·索金斯注意到你卑鄙地袭击了他。现在他的海盗们会攻击你。}
-InfoMessages_68 {被敌方船员的火枪齐射击杀 @<XI_ConvertString>}
-InfoMessages_69 {我方船员@<XI_ConvertString>被火枪齐射击毙。}
-InfoMessages_70 {由于缺乏药品，因伤去世：@<FindSailorString>}
-InfoMessages_71 {@<XI_ConvertString> @<mchar> 药品库存不多了。}
-InfoMessages_72 {船员会收集战利品，我们可以继续前进！}
-InfoMessages_73 {所有找到的物品将被转移到船舱的箱子里。}
-InfoMessages_74 {我们可以开始收集战利品了！}
-InfoMessages_75 {你在指挥官的尸体上发现了一页百科全书的页面。}
-InfoMessages_76 {我们发现了一个上锁的箱子。看起来需要钥匙。您自己看看吧，船长！}
-InfoMessages_77 {发现了藏宝图的一部分！}
-InfoMessages_78 {太幸运了！“金钥匙”已经找到！水手亲自把它交给了你。}
-InfoMessages_79 {缴获小队已经搜查了整艘船，所有战利品都已装进我们货舱的箱子里。}
-InfoMessages_80 {发现金钱：@<iMoney>}
-InfoMessages_81 {船长，我们找到了@<itemID>！看起来是@<sTemp>。}
-InfoMessages_82 {你没打中！}
-InfoMessages_83 {侦察兵在定居点成功发出了警报，整个珍珠商队都消失在丛林中。}
-InfoMessages_84 {黑珍珠已收集。}
-InfoMessages_85 {@<XI_ConvertString> '@<chref>' 没有达到最小船员数。}
-InfoMessages_86 {@<XI_ConvertString>“@<chref>”已超载。}
-InfoMessages_87 {@<XI_ConvertString>“@<chref>”的船员数已超出上限。}
-InfoMessages_88 {无法继续航行。}
-InfoMessages_89 {船长，附近有风暴！}
-InfoMessages_90 {敌军已被压制！道路畅通。}
-InfoMessages_91 {我们的城市@<GetCityName>正被围攻！}
-InfoMessages_92 {我们的城市@<GetCityName>被占领了。}
-InfoMessages_93 {围困已经解除！}
-InfoMessages_94 {船上的老鼠损坏了@<chref> @<LinkRandPhrase> @<iQuantity>@<XI_ConvertString> @<GetGoodsNameAlt>}
-InfoMessages_95 {@<XI_ConvertString> @<rChar> 因疾病去世 @<FindSailorString>}
-InfoMessages_96 {@<XI_ConvertString> @<rChar> 的朗姆酒喝完了。}
-InfoMessages_97 {@<XI_ConvertString> @<rChar> 剩余口粮可用 @<FindDaysString>}
-InfoMessages_98 {必须尽快补充补给！}
-InfoMessages_99 {船上的奴隶造反了！}
-InfoMessages_100 {@<XI_ConvertString> @<rChar> 水手正在挨饿。船员士气正在下降！}
-InfoMessages_101 {水手们正在饿死！}
-InfoMessages_102 {奴隶正在饿死！}
-InfoMessages_103 {@<rChar>号船上发生叛变！！！}
-InfoMessages_104 {这艘船正在脱离舰队！}
-InfoMessages_105 {宝藏就在附近！}
-InfoMessages_106 {寻找船只的时间已到。}
-InfoMessages_107 {寻找船只的时间已到，船长已经上岸。}
-InfoMessages_108 {船长已经上岸了。}
-InfoMessages_109 {船长！我们爆发了疫情！}
-InfoMessages_110 {在船上，@<chref> @<FindPeoplesString> 已经死亡。}
-InfoMessages_111 {@<XI_ConvertString>“@<sld>”引爆了@<GetShipSexWord>火药舱。}
-InfoMessages_112 {该死！俘虏逃跑了！}
-InfoMessages_113 {所有货物已装入货舱。}
-InfoMessages_114 {罪犯已被送往定居点。}
-InfoMessages_115 {是时候交锋了。}
-InfoMessages_116 {你已收到@<colony>城市商品价格的汇总}
-InfoMessages_117_m {哦，奇迹！我还活着！}
-InfoMessages_117_f {哦，奇迹！我还活着！}
-InfoMessages_118 {你发现了一个非常奇怪的物品。}
-InfoMessages_119 {外交官已经完成了他的任务。}
-InfoMessages_120 {你已向百科全书添加了一页。}
-InfoMessages_121 {你已收集完整的百科全书！}
-InfoMessages_122 {收集完整的海军百科全书可使这些加成翻倍。}
-InfoMessages_123 {塔尔坦船上的珍珠采集者@<rCharacter>给了你@<pinctadaQty>只珍珠贝。}
-InfoMessages_124 {冒充朋友失败——@<NationNamePeople>认出了我们是敌人。}
-InfoMessages_125 {@<GetFullName> 乘小船逃走了。}
-InfoMessages_126 {@<sSunkShipType>“@<rDead>”已被俘获！}
-InfoMessages_127 {@<sSunkShipType>“@<rDead>”被俘获，但在劫掠后被释放。}
-InfoMessages_128 {@<XI_ConvertString>“@<rOurCharacter>”引爆了弹药库的全部火药。}
-InfoMessages_129 {无法进入世界地图。}
-InfoMessages_130 {@<GetCityName>城内放债人处的所有存款都消失了。}
-InfoMessages_131 {@<rChar> 失去意识。}
-InfoMessages_132 {已获得正义岛地图。}
-InfoMessages_133 {你获得了金币}
-InfoMessages_134 {你获得了信贷箱}
-InfoMessages_135 {已获得：'@<GetItemName>'}
-InfoMessages_136 {你获得了一个信贷箱}
+InfoMessages_13 {清晨到来了…… }
+InfoMessages_14 {一个小时过去了…… }
+InfoMessages_15 {你已抵达失事船只}
+InfoMessages_16 {第二天…… }
+InfoMessages_17 {第二天清晨…… }
+InfoMessages_18 {八小时过去了…… }
+InfoMessages_19 {眼前发生的一切， 简直无法形容。 }
+InfoMessages_20 {昏睡中…… }
+InfoMessages_21 {十分钟的挖掘之后…… }
+InfoMessages_22 {经过几个小时的畅饮…… }
+InfoMessages_23 {几个小时过去了…… }
+InfoMessages_24 {一天过去了…… }
+InfoMessages_25 {仪式期间过去了四十分钟。 }
+InfoMessages_26 {第二天傍晚。 @<NewStr>城门附近…… }
+InfoMessages_27 {第二天清晨…… }
+InfoMessages_28 {在第四十天的航行中…… @<NewStr>新世界， 海洋， @<NewStr>遭遇西班牙船袭击。 }
+InfoMessages_29 {大约过去了七天…… @<NewStr>新世界， 马提尼克岛， @<NewStr>法属殖民地法兰西堡。 }
+InfoMessages_30 {十个小时过去了…… }
+InfoMessages_31 {在航行中的第四天…… }
+InfoMessages_32 {七天过去了， 托尔图加， 港口…… }
+InfoMessages_33 {已过@<iDay>@<XI_ConvertString>。 @<NewStr>@<XI_ConvertString>@<GetConvertStr>,@<NewStr>@<GetConvertStr>。 }
+InfoMessages_34 {经过紧张的准备。 }
+InfoMessages_35 {地平线上出现了一艘船！ }
+InfoMessages_36 {文件未被拿走！ ！ ！ }
+InfoMessages_37 {这里有些不对劲…… }
+InfoMessages_38 {@<XI_ConvertString>@<GetFullName>离开了你的船！ }
+InfoMessages_39 {城市卫兵会协助战斗！ }
+InfoMessages_40 {卫兵选择了不干涉。 }
+InfoMessages_41 {@<XI_ConvertString>@<GetFullName>登上了船。 }
+InfoMessages_42 {@<GetFullName>投降了。 }
+InfoMessages_43 {幽灵已被消灭， 它不会再回来了。 }
+InfoMessages_44 {幽灵已被消灭， 但它会回来吗？ }
+InfoMessages_45 {我们阻止了骷髅！ }
+InfoMessages_46 {教会任务完成！ }
+InfoMessages_47 {叛乱者的遗体已被送上最后的航程。 }
+InfoMessages_48 {船上的叛乱已被平息。 }
+InfoMessages_49 {@<XI_ConvertString>@<GetCityName>现在归我们了！ }
+InfoMessages_50 {有人偷了你的东西。 }
+InfoMessages_51 {交付货物的时间已过。 }
+InfoMessages_52 {你还没有把欠款人的钱还给雇主。 }
+InfoMessages_53 {你尚未将贷款送达目的地。 }
+InfoMessages_54 {@<XI_ConvertString>@<PChar>前往海湾与自己的团队会合。 }
+InfoMessages_55 {必须消灭哨兵！ }
+InfoMessages_56 {冲锋吧， 勇士们！ }
+InfoMessages_57 {为了我的命， 我要把岛上的每个法国佬都撕成碎片！ }
+InfoMessages_58 {你找到了正确的箱子@<NewStr>圣露西娅号的黄金已经找到！ }
+InfoMessages_59 {骷髅正在进攻！ ！ ！ }
+InfoMessages_60 {你失去了一部分船员。 }
+InfoMessages_61 {已收到船只。 }
+InfoMessages_62 {这里有东西！ }
+InfoMessages_63 {这是陷阱！ }
+InfoMessages_64 {这里有些不对劲。 我们再深入查查…… }
+InfoMessages_65 {坟前立着一座木制十字架， 但泥土干燥且坚实。 我们继续寻找吧。 }
+InfoMessages_66 {这座坟墓没有木制十字架。 我们继续找吧。 }  
+InfoMessages_67 {理查德.索金斯注意到你卑鄙地袭击了他。 现在他的海盗们会攻击你。 }
+InfoMessages_68 {火枪齐射击杀了@<XI_ConvertString>敌方船员}
+InfoMessages_69 {我方船员被火枪齐射击杀了@<XI_ConvertString>}
+InfoMessages_70 {由于缺乏药品， 因伤去世： @<FindSailorString>}
+InfoMessages_71 {@<XI_ConvertString>@<mchar>药品库存不多了。 }
+InfoMessages_72 {船员会收集战利品， 我们可以继续前进！ }
+InfoMessages_73 {所有找到的物品将被转移到船舱的箱子里。 }
+InfoMessages_74 {我们可以开始收集战利品了！ }
+InfoMessages_75 {你在指挥官的尸体上发现了一页百科全书的页面。 }
+InfoMessages_76 {我们发现了一个上锁的箱子。 看起来需要钥匙。 您自己看看吧， 船长！ }
+InfoMessages_77 {发现了藏宝图的一部分！ }
+InfoMessages_78 {太幸运了！ “金钥匙”已经找到！ 水手亲自把它交给了你。 }
+InfoMessages_79 {缴获小队已经搜查了整艘船， 所有战利品都已装进我们货舱的箱子里。 }
+InfoMessages_80 {发现金钱： @<iMoney>}
+InfoMessages_81 {船长， 我们找到了@<itemID>！ 看起来是@<sTemp>。 }
+InfoMessages_82 {你没打中！ }
+InfoMessages_83 {侦察兵在定居点成功发出了警报， 整个珍珠商队都消失在丛林中。 }
+InfoMessages_84 {黑珍珠已收集。 }
+InfoMessages_85 {@<XI_ConvertString>“@<chref>”没有达到最小船员数。 }
+InfoMessages_86 {@<XI_ConvertString>“@<chref>”已超载。 }
+InfoMessages_87 {@<XI_ConvertString>“@<chref>”的船员数已超出上限。 }
+InfoMessages_88 {无法继续航行。 }
+InfoMessages_89 {船长， 附近有风暴！ }
+InfoMessages_90 {敌军已被压制！ 道路畅通。 }
+InfoMessages_91 {我们的城市@<GetCityName>正被围攻！ }
+InfoMessages_92 {我们的城市@<GetCityName>被占领了。 }
+InfoMessages_93 {围困已经解除！ }
+InfoMessages_94 {船上的老鼠@<LinkRandPhrase>@<chref>上@<iQuantity>@<XI_ConvertString>@<GetGoodsNameAlt>}
+InfoMessages_95 {@<XI_ConvertString>@<rChar>因疾病去世@<FindSailorString>}
+InfoMessages_96 {@<XI_ConvertString>@<rChar>的朗姆酒喝完了。 }
+InfoMessages_97 {@<XI_ConvertString>@<rChar>剩余口粮可用@<FindDaysString>}
+InfoMessages_98 {必须尽快补充补给！ }
+InfoMessages_99 {船上的奴隶造反了！ }
+InfoMessages_100 {@<XI_ConvertString>@<rChar>水手正在挨饿。 船员士气正在下降！ }
+InfoMessages_101 {水手们正在饿死！ }
+InfoMessages_102 {奴隶正在饿死！ }
+InfoMessages_103 {@<rChar>船上发生叛变！ ！ ！ }
+InfoMessages_104 {这艘船正在脱离舰队！ }
+InfoMessages_105 {宝藏就在附近！ }
+InfoMessages_106 {寻找船只的时间已到。 }
+InfoMessages_107 {寻找船只的时间已到， 船长已经上岸。 }
+InfoMessages_108 {船长已经上岸了。 }
+InfoMessages_109 {船长！ 我们爆发了疫情！ }
+InfoMessages_110 {在船上， @<chref>@<FindPeoplesString>已经死亡。 }
+InfoMessages_111 {@<XI_ConvertString>“@<sld>”引爆了@<GetShipSexWord>火药舱。 }
+InfoMessages_112 {该死！ 俘虏逃跑了！ }
+InfoMessages_113 {所有货物已装入货舱。 }
+InfoMessages_114 {罪犯已被送往定居点。 }
+InfoMessages_115 {是时候交锋了。 }
+InfoMessages_116 {你已收到@<colony>殖民地的商品价格汇总}
+InfoMessages_117_m {哦， 奇迹！ 我还活着！ }
+InfoMessages_117_f {哦， 奇迹！ 我还活着！ }
+InfoMessages_118 {你发现了一个非常奇怪的物品。 }
+InfoMessages_119 {使节已经完成了他的任务。 }
+InfoMessages_120 {你已向百科全书添加了一页。 }
+InfoMessages_121 {你已收集完整的百科全书！ }
+InfoMessages_122 {收集完整的海军百科全书可使这些加成翻倍。 }
+InfoMessages_123 {塔尔坦船上的采珠者@<rCharacter>给了你@<pinctadaQty>只珍珠贝。 }
+InfoMessages_124 {伪装失败——@<NationNamePeople>认出了我们是敌人。 }
+InfoMessages_125 {@<GetFullName>乘小船逃走了。 }
+InfoMessages_126 {@<sSunkShipType>“@<rDead>”已被俘获！ }
+InfoMessages_127 {@<sSunkShipType>“@<rDead>”被俘获， 但在劫掠后被释放。 }
+InfoMessages_128 {@<XI_ConvertString>“@<rOurCharacter>”引爆了弹药库的全部火药。 }
+InfoMessages_129 {无法进入世界地图。 }
+InfoMessages_130 {@<GetCityName>城内银行的所有存款都消失了。 }
+InfoMessages_131 {@<rChar>失去意识。 }
+InfoMessages_132 {已获得正义岛地图。 }
+InfoMessages_133 {你获得了金币箱}
+InfoMessages_134 {你获得了金币箱}
+InfoMessages_135 {已获得： “@<GetItemName>”}
+InfoMessages_136 {你获得了一箱金币}
 InfoMessages_137 {你获得了宝藏}
-InfoMessages_138 {所有船只都已修复。}
+InfoMessages_138 {所有船只都已修复。 }
 InfoMessages_139 {你获得了特拉洛克雕像}
-InfoMessages_140 {你交出了玄武岩头颅}
-InfoMessages_141 {船舱箱子的物品已经被扔到海里了，船长！}
-InfoMessages_142 {获得比阿斯特：@<money>}
-InfoMessages_143 {金钱、藏宝图和任务物品将立即转交给@<GetHeroNameDat>}
-InfoMessages_144 {原始战利品机制：需手动搜查尸体和箱子}
+InfoMessages_140 {你交出了玄武岩头}
+InfoMessages_141 {船舱箱子的物品已经被扔到海里了， 船长！ }
+InfoMessages_142 {获得比索： @<money>}
+InfoMessages_143 {金钱、 藏宝图和任务物品将立即转交给@<GetHeroNameDat>}
+InfoMessages_144 {原始战利品机制： 需手动搜查尸体和箱子}
 InfoMessages_145 {快速拾取仅在战斗后按下快捷键时及其后任意时间触发}
-InfoMessages_146 {快速拾取会在战斗结束后立即触发，之后可随时按下快捷键启动}
-InfoMessages_147 {船员会自行收集所有战利品，并存放在货舱箱中}
-InfoMessages_148 {你的船员增加了@<FindPeoplesString>。}
+InfoMessages_146 {快速拾取会在战斗结束后立即触发， 之后可随时按下快捷键启动}
+InfoMessages_147 {船员会自行收集所有战利品， 并存放在货舱箱中}
+InfoMessages_148 {你的船员增加了@<FindPeoplesString>。 }
 InfoMessages_149 {获得望远镜}
 InfoMessages_150 {你获得了25颗祖母绿}
 InfoMessages_151 {你获得了一箱黄金}
-InfoMessages_152 {@<sAttr> 正朝你走来。}
-InfoMessages_153 {你已获得“桑格利酒”的配方。}
-InfoMessages_154 {已交付@<iSmallPearl>小珍珠。}
-InfoMessages_155 {交付了@<iBigPearl>颗大珍珠。}
-InfoMessages_156 {获得@<iSmallPearl>颗小珍珠。}
-InfoMessages_157 {获得@<iBigPearl>大珍珠。}
-InfoMessages_158 {你把神像交给了放贷人。}
-InfoMessages_159 {你交出了那尊可怕的雕像。}
-InfoMessages_160 {你获得了Xiuhcoatl护身符。}
-InfoMessages_161 {@<sld> 已被押送到您的船上看管。}
-InfoMessages_162 {你获得了属于你的宝藏份额，并额外得到了：'@<GetItemName>'。}
-InfoMessages_163 {你获得了装备：'@<GetItemName>'。}
+InfoMessages_152 {@<sAttr>正朝你走来。 }
+InfoMessages_153 {你已获得“桑格里亚酒”的配方。}
+InfoMessages_154 {已交付@<iSmallPearl>小珍珠。 }
+InfoMessages_155 {交付了@<iBigPearl>颗大珍珠。 }
+InfoMessages_156 {获得@<iSmallPearl>颗小珍珠。 }
+InfoMessages_157 {获得@<iBigPearl>大珍珠。 }
+InfoMessages_158 {你把神像交给了放贷人。 }
+InfoMessages_159 {你交出了那尊可怕的神像。 }
+InfoMessages_160 {你获得了修特库特利护身符。 }
+InfoMessages_161 {@<sld>已被押送到您的船上看管。 }
+InfoMessages_162 {你获得了属于你的宝藏份额， 并额外得到了： “@<GetItemName>”。 }
+InfoMessages_163 {你获得了装备： “@<GetItemName>”。 }
 InfoMessages_164 {你获得了一块金块}
-InfoMessages_165 {你交出了Xochipilli雕像}
+InfoMessages_165 {你交出了索奇皮利神像}
 InfoMessages_166 {你获得了一套贵族服饰}
-InfoMessages_167 {你获得了Xochipilli雕像}
-InfoMessages_168 {你获得了Atlaua神像}
+InfoMessages_167 {你获得了索奇皮利神像}
+InfoMessages_168 {你获得了阿特拉瓦神像}
 InfoMessages_169 {你获得了鸬鹚}
 InfoMessages_170 {你获得了金块}
 InfoMessages_171 {你获得了破布}
 InfoMessages_172 {你获得了一套弹药}
 InfoMessages_173 {詹姆斯把神像交给了你}
-InfoMessages_174 {你把神像交给了Collier}
-InfoMessages_175 {Collier把神像还给你了}
-InfoMessages_176 {你感觉口袋因神像变得沉重……又一次……}
-InfoMessages_177 {你把神像交给了James}
+InfoMessages_174 {你把神像交给了科利尔}
+InfoMessages_175 {科利尔把神像还给你了}
+InfoMessages_176 {你感觉口袋因神像变得沉重…… 又一次…… }
+InfoMessages_177 {你把神像交给了詹姆斯}
 InfoMessages_178 {你获得了银块}
 InfoMessages_179 {你收到了一封密封的信}
 InfoMessages_180 {你获得了一套珠宝收藏}
@@ -183,86 +183,166 @@ InfoMessages_181 {你获得了1把鲁特琴}
 InfoMessages_182 {你获得了3瓶葡萄酒}
 InfoMessages_183 {你获得了10串葡萄}
 InfoMessages_184 {你获得了10袋盐}
-InfoMessages_185 {@<arItem> 已添加到图鉴}
-InfoMessages_186 {西班牙黄金已装入各船货舱。}
+InfoMessages_185 {@<arItem>已添加到图鉴}
+InfoMessages_186 {西班牙黄金已装入各船货舱。 }
 InfoMessages_187 {奴隶已装载上船}
-InfoMessages_188 {你有30天时间将奴隶送到雇主那里}
-InfoMessages_189 {著名海盗的船只已离开舰队。}
-InfoMessages_190 {你消耗了@<pchar>单位食物。}
-InfoMessages_191 {你消耗了@<pchar>单位的药品。}
-InfoMessages_192 {你消耗了@<pchar>单位武器。}
-InfoMessages_193 {你花费了@<pchar>单位朗姆酒。}
-InfoMessages_194 {你有30天时间向雇主汇报并归还款项。}
-InfoMessages_195 {你有30天时间向雇主报告任务失败。}
-InfoMessages_196_m {手枪枪管炸裂了！@<GetCharacterFullName>把碎片扔掉了。}
-InfoMessages_196_f {手枪枪管炸裂了！@<GetCharacterFullName>把碎片扔掉了。}
+InfoMessages_188 {你有30天的时间将奴隶送到雇主那里}
+InfoMessages_189 {著名海盗的船只已离开舰队。 }
+InfoMessages_190 {你消耗了@<pchar>单位食物。 }
+InfoMessages_191 {你消耗了@<pchar>单位的药品。 }
+InfoMessages_192 {你消耗了@<pchar>单位武器。 }
+InfoMessages_193 {你花费了@<pchar>单位朗姆酒。 }
+InfoMessages_194 {你有30天时间向雇主汇报并归还款项。 }
+InfoMessages_195 {你有30天时间向雇主报告任务失败。 }
+InfoMessages_196_m {手枪枪管炸裂了！ @<GetCharacterFullName>把碎片扔掉了。 }
+InfoMessages_196_f {手枪枪管炸裂了！ @<GetCharacterFullName>把碎片扔掉了。 }
 InfoMessages_197 {你已获得你的宝藏份额}
-InfoMessages_198 {@<GetFullName>：武器“@<TEV>”使用“@<GetConvertStr>”弹药}
-InfoMessages_199 {走私者正在对你失去信任……}
-InfoMessages_200 {交付了@<GetItemName>&获得了@<GetItemName>（数量：@<FindQtyString>）␍}
-InfoMessages_201_m {@<GetFullNameTitulForm> 已被复活！}
-InfoMessages_201_f {@<GetFullNameTitulForm> 已被复活！}
-InfoMessages_202 {价格侦查完成！&所有已访问商店的价格已更新为最新数值！}
-InfoMessages_203 {船员正在“@<sld>”号上进行训练……}
-InfoMessages_204 {已经过去@<days>。@<NewStr>走私船的甲板。}
-InfoMessages_205 {与大师交谈了几个小时后……}
+InfoMessages_198 {@<GetFullName>： 武器“@<TEV>”使用“@<GetConvertStr>”弹药}
+InfoMessages_199 {走私者正在对你失去信任…… }
+InfoMessages_200 {交付了@<GetItemName>&获得了@<GetItemName>（数量： @<FindQtyString>）␍}
+InfoMessages_201_m {@<GetFullNameTitulForm>已被复活！ }
+InfoMessages_201_f {@<GetFullNameTitulForm>已被复活！ }
+InfoMessages_202 {价格侦查完成！ 且所有已访问商店的价格已更新为最新数值！ }
+InfoMessages_203 {船员正在“@<sld>”上进行训练…… }
+InfoMessages_204 {已经过去@<days>。 @<NewStr>走私船的甲板。 }
+InfoMessages_205 {与大师交谈了几个小时后…… }
 InfoMessages_206 {已经过去两个小时@<NewStr>奴隶已被释放}
 InfoMessages_207 {几个小时过去了@<NewStr>神父已完成了圣仪}
-InfoMessages_208 {两天过去了……}
-InfoMessages_209 {已经过去两个小时……}
-InfoMessages_210 {黄金已分配！}
-InfoMessages_211 {你交出了一瓶葡萄酒。}
-InfoMessages_212_m {@<GetFullName> 达到新等级！}
-InfoMessages_212_f {@<GetFullName> 达到新等级！}
-InfoMessages_213_m {@<GetFullName>获得了新的个人技能！}
-InfoMessages_213_f {@<GetFullName>获得了新的个人技能！}
-InfoMessages_214_m {@<GetFullName>获得了新的船只技能！}
-InfoMessages_214_f {@<GetFullName>获得了新的船只技能！}
-InfoMessages_215 {在出发寻找神秘岛之前，你必须先处理好自己的事务。}
-InfoMessages_216 {你剩下的珍珠已被放入你船舱的箱子里。}
-InfoMessages_217 {已交付@<iQty>只珍珠贝。}
-InfoMessages_218 {获得@<iQty>只珍珠贝。}
-InfoMessages_219 {几天过去了……}
-InfoMessages_220 {过了几分钟……}
+InfoMessages_208 {两天过去了…… }
+InfoMessages_209 {两个小时过去了…… }
+InfoMessages_210 {黄金已分赃！ }
+InfoMessages_211 {你交出了一瓶葡萄酒。 }
+InfoMessages_212_m {@<GetFullName>达到新等级！ }
+InfoMessages_212_f {@<GetFullName>达到新等级！ }
+InfoMessages_213_m {@<GetFullName>获得了新的个人技能！ }
+InfoMessages_213_f {@<GetFullName>获得了新的个人技能！ }
+InfoMessages_214_m {@<GetFullName>获得了新的海军技能！ }
+InfoMessages_214_f {@<GetFullName>获得了新的海军技能！ }
+InfoMessages_215 {在出发寻找神秘岛之前， 你必须先处理好自己的事务。 }
+InfoMessages_216 {你剩下的珍珠已被放入你船舱的箱子里。 }
+InfoMessages_217 {已交付@<iQty>只珍珠贝。 }
+InfoMessages_218 {获得@<iQty>只珍珠贝。 }
+InfoMessages_219 {几天过去了…… }
+InfoMessages_220 {过了几分钟…… }
 InfoMessages_221 {印第安人反感}
 InfoMessages_222 {印第安人好感提升}
-InfoMessages_223 {走私者态度提升}
+InfoMessages_223 {走私者好感提升}
 InfoMessages_224 {走私者反感}
 InfoMessages_225 {获得经验 ~}
-InfoMessages_226 {我看到一艘船。那是@<ShipType>@<ShipName>！}
-InfoMessages_227 {骗术奏效了。这些@<NationNamePeople>毫无察觉。}
-InfoMessages_228 {[欺骗：@<TEV.TempGuardDeceptionChance>%%]}
-InfoMessages_229 {检定通过：@<statName>}
-InfoMessages_230 {检定未通过：@<statName>}
+InfoMessages_226 {我看到一艘船。 那是@<ShipType>“@<ShipName>”！ }
+InfoMessages_227 {伪装奏效了。 这些@<NationNamePeople>毫无察觉。 }
+InfoMessages_228 {[欺骗概率： @<TEV.TempGuardDeceptionChance>/100]}
+InfoMessages_229 {检定通过： @<statName>}
+InfoMessages_230 {检定未通过： @<statName>}
 InfoMessages_231 {@<statName>不足（@<curStatVal>）}
-InfoMessages_232 {技能未达要求：@<statName>（@<curStatVal>）}
+InfoMessages_232 {技能未达要求： @<statName>（@<curStatVal>）}
 InfoMessages_233 {技能未解锁}
-InfoMessages_234 {声望检查通过}
-InfoMessages_235 {声望太低 (@<stat>)}
-InfoMessages_236 {声望过高 (@<stat>)}
+InfoMessages_234 {声誉检查通过}
+InfoMessages_235 {声誉太低(@<stat>)}
+InfoMessages_236 {声誉过高(@<stat>)}
 InfoMessages_237 {在殖民地的声望过低}
-InfoMessages_238 {默认将使用“@<GetConvertStr>”类型的药水。}
-InfoMessages_239 {药水将自动选择。}
-InfoMessages_240 {你获得了一件物品：@<itemName> (x@<quantity>)}
+InfoMessages_238 {默认将使用“@<GetConvertStr>”类型的药水。 }
+InfoMessages_239 {药水将自动选择。 }
+InfoMessages_240 {你获得了一件物品： @<itemName>(x@<quantity>)}
 InfoMessages_241 {@<sld.name>已被押送到您的船上看管}
-InfoMessages_242 {“圣加布里埃尔”号帆船上传来了打斗声。}
-InfoMessages_243 {你持有西班牙私掠许可证。Sharp不会跟随你。}
+InfoMessages_242 {“圣加百列号”帆船上传来了打斗声。 }
+InfoMessages_243 {你持有西班牙私掠许可证。 夏普不会跟随你。 }
 InfoMessages_244
 {
-斯蒂德总督没有原谅彼得·布拉德，
-因为那天夜里他缺乏主动。
-失去了布里奇顿医生的特权后，
-彼得再次被逐出城市，只能在毕晓普上校的种植园里自生自灭。
-两年后，毕晓普上校在愤怒中枪杀了彼得·布拉德。
-故事还未开始，便已结束……
+斯蒂德市长没有原谅彼得.布拉德， 
+因为那天夜里他缺乏主动。 
+失去了布里奇顿医生的特权后， 
+彼得再次被逐出城市， 只能在毕晓普上校的种植园里自生自灭。 
+两年后， 毕晓普上校在愤怒中枪杀了彼得.布拉德。 
+故事还未开始， 便已结束…… 
 }
 InfoMessages_245
 {
-彼得·布拉德未能为逃脱做好充分准备。
-故事还未真正开始，就已经结束了……
+彼得.布拉德未能为逃脱做好充分准备。 
+故事还未真正开始， 就已经结束了…… 
 }
-InfoMessages_246 {独自一人强攻护卫舰是疯了。}
-InfoMessages_247 {看来这就是我要找的房子。我应该仔细搜查这里的一切}
-InfoMessages_248 {你获得了小珍珠：@<iSmall> 颗}
-InfoMessages_249 {你获得了大珍珠：@<iBig> 颗}
+InfoMessages_246 {独自一人强攻护卫舰是疯了。 }
+InfoMessages_247 {看来这就是我要找的房子， 我应该仔细搜查这里的一切。}
+InfoMessages_248 {你获得了小珍珠： @<iSmall>颗。}
+InfoMessages_249 {你获得了大珍珠： @<iBig>颗。}
 InfoMessages_250 {一个小时过去了……}
+InfoMessages_251 {金钱不足（2500）}
+InfoMessages_252 {第二天傍晚……}
+InfoMessages_253 {几个小时后……}
+InfoMessages_254 {夜幕降临……}
+InfoMessages_255 {需要一把近战武器。 请装备刀剑。}
+InfoMessages_256 {城里和船上都响起了警钟。 彼得.布拉德和他的难友们没能活到天亮……}
+InfoMessages_257 {你获得了一张藏宝图}
+InfoMessages_258 {几周过去了……}
+InfoMessages_259 {需要}
+InfoMessages_260 {检定失败： 金币箱（4）}
+InfoMessages_261 {发现秘密}
+InfoMessages_262 {不足}
+InfoMessages_263 {当前}
+InfoMessages_264 {船长上甲板了！}
+InfoMessages_265 {船员已被击败。船长只剩孤身一人！}
+InfoMessages_266 {全船船员已被消灭。船长只剩一人！}
+
+InfoMessages_267
+{
+丢弃：@<sItemName> - @<iDropQuantity> 件。
+}
+
+InfoMessages_268 {托尔图加灯塔。过了一段时间……}
+
+InfoMessages_269 {三十分钟过去了……}
+
+InfoMessages_270 {你拿走了拉乌尔的信。}
+
+InfoMessages_271 {您可以按“回车”键离开餐桌。}
+
+InfoMessages_272 {同时...}
+
+InfoMessages_273 {不久之后，在离拉维加定居点不远的地方……}
+
+InfoMessages_274 {40分钟后，在米歇尔·勒·巴斯克的家中……}
+
+InfoMessages_275 {过了一段时间……}
+
+InfoMessages_276 {信件已成功投放。}
+
+InfoMessages_277 {第二天晚上，在离西班牙营地不远的地方……}
+
+InfoMessages_278 {不久之后，在开曼群岛附近……}
+
+InfoMessages_279 {三个小时过去了……}
+
+InfoMessages_280 {时间过去了……}
+
+InfoMessages_281 {印第安人阿陶科以乘客身份登上了这艘船。}
+
+InfoMessages_282 {一艘西班牙护卫舰出现在地平线上！它已设定航向进行拦截。}
+
+InfoMessages_283 {不久之后，敌舰被彻底检查了一遍。所有值钱的东西都落入了胜利者手中。}
+
+InfoMessages_284 {两天过去了。地平线上出现了帆影……}
+
+InfoMessages_285 {几个小时后……}
+
+InfoMessages_286 {米歇尔·勒巴斯克的木屋。几个小时后……}
+
+InfoMessages_287 {几天过去了。两人在阿瓜迪亚湾附近走散了……}
+
+InfoMessages_288 {当晚……}
+
+InfoMessages_289 {囚犯们被释放并押送到印第安人营地。几个小时过去了……}
+
+InfoMessages_290 {两天过去了……}
+
+InfoMessages_291 {当天上午……}
+
+InfoMessages_292 {第二天中午……}
+
+InfoMessages_293 {一个小时过去了。失落希望角……}
+
+InfoMessages_294 {30分钟过去了……}
+
+InfoMessages_295 {两天过去了。所有贵重物品都被装上了盟军的船只……}
+InfoMessages_296 {布坎尼尔人反感}
+InfoMessages_297 {布坎尼尔人好感提升}
+InfoMessages_298 {总督没有原谅彼得·布拉德长时间的离开。就在当天，监工肯特用鞭子将他活活打死。}

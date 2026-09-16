@@ -983,3 +983,9 @@ Habitue_dialog_294 {
 Habitue_dialog_295 {
 @<RandPhraseSimple>
 }
+Habitue_dialog_296 {
+Niña, tráeme otra copa.
+}
+Habitue_dialog_297 {
+Te quedarás con las ganas.
+}

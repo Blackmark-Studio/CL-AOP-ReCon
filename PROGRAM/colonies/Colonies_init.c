@@ -526,6 +526,25 @@ void InitColonies()
 		colonies[n].FortValue = 90; // homo
 
 	/////////////////////////////////////////////////////////////////////
+	/// Gibraltar (Mein)
+	/////////////////////////////////////////////////////////////////////
+		n = n + 1;
+		Colonies[n].id = "Gibraltar";
+		Colonies[n].visible = true;
+		Colonies[n].smuggling_nation = SPAIN;
+		Colonies[n].nation = SPAIN;
+		Colonies[n].island = "Maracaibo";
+		Colonies[n].islandLable = "Mein";
+		colonies[n].num = 1;
+		colonies[n].map.x = 1370; //TODO другие координаты
+		colonies[n].map.y = 505; //TODO другие координаты
+		colonies[n].StoreNum   = Gibraltar_STORE;
+		colonies[n].from_sea   = "Gibraltar_town";
+		colonies[n].HasNoFort = true; // > своего форта нет TODO > общий форт с Маракайбо
+		colonies[n].Default.BoardLocation = "Gibraltar_ExitTown";
+		colonies[n].FortValue = 90; // homo
+
+	/////////////////////////////////////////////////////////////////////
 	/// Caracas (Mein)
 	/////////////////////////////////////////////////////////////////////
 		n = n + 1;
@@ -690,6 +709,24 @@ void InitColonies()
 		colonies[n].type = "uninhabited";
 
 	/////////////////////////////////////////////////////////////////////
+	/// Aruba
+	/////////////////////////////////////////////////////////////////////
+		n = n + 1;
+		Colonies[n].id = "Aruba";
+		Colonies[n].visible = false;
+		Colonies[n].smuggling_nation = "none";
+		Colonies[n].nation = "none";
+		Colonies[n].island = "Aruba";
+		Colonies[n].num = 1;
+		colonies[n].map.x = 1605;
+		colonies[n].map.y = 1852;
+		colonies[n].colonylevel = 0;
+		colonies[n].StoreNum   = Pirates_STORE; // заглушка
+		colonies[n].from_sea   = "";
+		colonies[n].HasNoFort = true;
+		colonies[n].type = "uninhabited";
+
+	/////////////////////////////////////////////////////////////////////
 	/// ГПК
 	/////////////////////////////////////////////////////////////////////
 		n = n + 1;
@@ -706,4 +743,4 @@ void InitColonies()
 		colonies[n].from_sea   = "LostShipsCity_town";
 		colonies[n].HasNoFort = true;
 		colonies[n].type   = "special";
-} 
+}

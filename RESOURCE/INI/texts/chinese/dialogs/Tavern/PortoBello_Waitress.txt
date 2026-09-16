@@ -1,45 +1,45 @@
 PortoBello_Waitress_1 {
-有问题吗，@<GetAddress_Form>?
+有问题吗， @<GetAddress_Form>?
 }
 PortoBello_Waitress_2 {
-有什么事需要俺帮忙，@<GetAddress_Form>?
+有什么事需要我帮忙， @<GetAddress_Form>?
 }
 PortoBello_Waitress_3 {
 @<RandPhraseSimple>
 }
 PortoBello_Waitress_4_m {
-嗯，你这是在跟我调情吗，先生？
+嗯， 你这是在跟我调情吗， 先生？ 
 }
 PortoBello_Waitress_4_f {
-你又来了，老是问些奇怪的问题……你就这么喜欢烦我吗？
+你又来了， 老是问些奇怪的问题…… 你就这么喜欢烦我吗？ 
 }
 PortoBello_Waitress_5_m {
-你今天已经第三次提这个问题了……这是在表示关心吗？
+你今天已经第三次提这个问题了…… 这是在表示关心吗？ 
 }
 PortoBello_Waitress_5_f {
-今天你已经第三次提到什么问题了……这是在开玩笑吗？
+今天你已经第三次提到什么问题了…… 这是在开玩笑吗？ 
 }
 PortoBello_Waitress_6 {
-你又要问问题了吗，@<GetAddress_Form>?
+你又要问问题了吗， @<GetAddress_Form>?
 }
 PortoBello_Waitress_7_m {
-我改变主意了……
+我改变主意了…… 
 }
 PortoBello_Waitress_7_f {
-我改变主意了……
+我改变主意了…… 
 }
 PortoBello_Waitress_8 {
-我现在没什么可说的。
+我现在没什么可说的。 
 }
 PortoBello_Waitress_9 {
 @<RandPhraseSimple>
 }
 PortoBello_Waitress_10 {
-不不不，哪有啊，美女……
+不不不， 哪有啊， 美女…… 
 }
 PortoBello_Waitress_11 {
-哪儿能啊，亲爱的，就是一时忘了……
+哪儿能啊， 亲爱的， 就是一时忘了…… 
 }
 PortoBello_Waitress_12 {
-没事，没什么要问的……
+没事， 没什么要问的…… 
 }

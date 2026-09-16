@@ -1,11 +1,20 @@
 // KZ > ref 29.12.2023
 
 // DEFINES
-#define MUSIC_CHANGE_TIME  3000
-#define MUSIC_SILENCE_TIME 180000.0
-#define SOUNDS_FADE_TIME   200
+#define MUSIC_CHANGE_TIME		3000	// > нарастание громкости трека при старте воспроизведения
+#define SOUNDS_FADE_TIME		200		// > затухание всех звуков при их глушении
+#define MUSIC_PAUSE_MIN_ALARM	1		// > мин-ая пауза между треками в боевом режиме
+#define MUSIC_PAUSE_MAX_ALARM	3		// > макс-ая пауза между треками в боевом режиме
+#define MUSIC_PAUSE_MIN_PEACE	3		// > мин-ая пауза между треками в спокойном режиме
+#define MUSIC_PAUSE_MAX_PEACE	7		// > макс-ая пауза между треками в спокойном режиме (в обоих случаях движок выберет случайное значение от *_MIN_* и до *_MAX_* включительно)
+#define SOUND_DIR				"RESOURCE\\Sounds\\"
+
+int musNum = 0;
+string musList[2];
+object oMusicCache; // > кэш результатов сканирования папок с музыкой
 
 #event_handler("LoadSceneSound", "LoadSceneSound");
+#event_handler("MusicNext", "KZ|OnMusicNext");
 
 // PLAY
 int Play3DSound(string name, float x, float y, float z)
@@ -35,7 +44,7 @@ int PlayStereoSound(string name)
 int PlayStereoSoundLooped(string name)
 {
 	InitSound();
-	return SendMessage(&Sound,"lsllll",MSG_SOUND_PLAY, name, SOUND_WAV_STEREO, VOLUME_FX, false, true, false);
+	return SendMessage(&Sound,"lslllll",MSG_SOUND_PLAY, name, SOUND_WAV_STEREO, VOLUME_FX, false, true, false);
 }
 
 int PlayStereoSoundLooped_JustCache(string name)
@@ -44,20 +53,44 @@ int PlayStereoSoundLooped_JustCache(string name)
 	return SendMessage(&Sound,"lslllll",MSG_SOUND_PLAY, name, SOUND_WAV_STEREO, VOLUME_FX, true, true, false);
 }
 
+// > при TEV.Music.Cached трек продолжит звучать с места позиции прошлой остановки (если уже звучал ранее в сессии), иначе при каждом запуске будет играть с самого начала
+bool KZ|MusicCached()
+{
+	if (CheckAttribute(&TEV, "Music.Cached"))
+	{
+		DeleteAttribute(&TEV, "Music.Cached");
+		return true;
+	}
+
+	return false;
+}
+
 int PlayStereoOGG(string name)
 {
 	InitSound();
-	StopMusic();
-	musicID = SendMessage(&Sound,"lsllllll",MSG_SOUND_PLAY, name, SOUND_MP3_STEREO, VOLUME_MUSIC, false, false, false, 0); //fix boal
-	KZ|MusicRestart(musicID);
+	if (MusicIsPlaying())
+		StopMusic(0);
+	musicID = SendMessage(&Sound,"lsllllll",MSG_SOUND_PLAY, name, SOUND_MP3_STEREO, VOLUME_MUSIC, false, false, KZ|MusicCached(), 0);
+	ResumeSound(musicID, 0);
 	return musicID;
 }
 
 // OTHER METHODS
-void StopSound(int id, int fade)
+void StopSound(int _id, int _fade)
 {
 	InitSound();
-	SendMessage(&Sound, "lll", MSG_SOUND_STOP, id, fade);
+
+	if (_id == 0 && CheckAttribute(&TEV, "Music.KeepPlaying"))
+		StopSoundExceptMusic(0, _fade, musicID);
+	else
+		SendMessage(&Sound, "lll", MSG_SOUND_STOP, _id, _fade);
+}
+
+// KZ > глушит все звуки, кроме музыки
+void StopSoundExceptMusic(int _id, int _fade, int _track)
+{
+	InitSound();
+	SendMessage(&Sound, "llll", MSG_SOUND_STOP, _id, _fade, _track);
 }
 
 void ResumeSound(int id, int fade)
@@ -77,10 +110,7 @@ void ResetSoundScheme()
 {
 	InitSound();
 	SendMessage(&Sound, "l", MSG_SOUND_SCHEME_RESET);
-	if(CheckAttribute(&TEV, "CurrentSoundScheme"))
-	{
-		DeleteAttribute(&TEV, "CurrentSoundScheme");
-	}
+	DeleteAttribute(&TEV, "CurrentSoundScheme");
 }
 
 void SetSoundScheme(string schemeName)
@@ -102,10 +132,7 @@ void AddSoundScheme(string schemeName)
 bool BlockSoundScheme(string schemeName)
 {
 	if (HasStrEx(schemeName, "rain,storm", "|") && !HasStr(schemeName, "inside") && !StrStartsWith(schemeName, "mainmenu_"))
-	{
-		if (or(CheckAttribute(loadedlocation, "lockWeather") && loadedlocation.lockWeather == "Inside", CheckAttribute(loadedlocation, "QuestlockWeather") && loadedlocation.QuestlockWeather == "23 hour"))
-			return true;
-	}
+		return CheckAttrValue(loadedlocation, "lockWeather", "Inside") || CheckAttrValue(loadedlocation, "QuestlockWeather", "23 hour");
 
 	return false;
 }
@@ -254,7 +281,7 @@ void SetSchemeForLocation(ref loc)
 
 				if (loc.id.label == "Crypt")
 					music = "crypt";
-				else if (CheckAttribute(loc, "Maltains") && sti(loc.Maltains) == true)
+				else if (CheckAttrValue(loc, "Maltains", "1"))
 					music = "maltains";
 			break;
 
@@ -276,13 +303,13 @@ void SetSchemeForLocation(ref loc)
 				sound = "house";
 				music = "house";
 
-				if (CheckAttribute(loc, "brothel") && sti(loc.brothel) == true)
+				if (CheckAttrValue(loc, "brothel", "1"))
 					music = "brothel";
 				else if (loc.id.label == "portoffice")
 					music = "portoffice";
-				else if (CheckAttribute(loc, "packhouse") && sti(loc.packhouse) == true)
+				else if (CheckAttrValue(loc, "packhouse", "1"))
 					music = "packhouse";
-				else if (CheckAttribute(loc, "HWIC") && sti(loc.HWIC) == true)
+				else if (CheckAttrValue(loc, "HWIC", "1"))
 					music = "HWIC";
 				else if (HasStr(loc.id.label, "Ascold House"))
 					music = "ascold_house";
@@ -465,7 +492,9 @@ void SetSchemeForLocation(ref loc)
 		}
 	}
 
-	if (music != "")
+	if (CheckAttribute(loc, "AoP.MusicTrack"))
+		PlayMusicQuest(loc.AoP.MusicTrack, 0, true);
+	else if (music != "")
 		SetMusicAlarm("music_" + music);
 
 	if (sound != "")
@@ -473,15 +502,14 @@ void SetSchemeForLocation(ref loc)
 	else if (weather != "")
 		SetWeatherScheme(weather);
 
-	if (loc)
+	if (IsEntity(loc))
 		SetStaticSounds(loc);
 }
 
 void SetStaticSounds(ref loc)
 {
-	if (!IsEntity(loc)) return;
+	if (!CheckAttribute(loc, "locators.sound")) return;
 	string locatorName, locatorType;
-	if (!CheckAttribute(loadedLocation, "locators.sound")) return;
 	aref locator, locatorGroup;
 	makearef(locatorGroup, loc.locators.sound);
 	int i, locatorNameLength, locatorCount = GetAttributesNum(locatorGroup);
@@ -497,10 +525,10 @@ void SetStaticSounds(ref loc)
 		if (locatorType == "windmill")
 			continue;
 
-		if (Whr_IsDay() && StrHasStr(locatorType, "nightinsects,torch", 1) && !StrHasStr(loc.type, "Dungeon,cave,fort_attack", 1))
+		if (Whr_IsDay() && StrHasStr(locatorType, "nightinsects,torch", true) && !StrHasStr(loc.type, "Dungeon,cave,fort_attack", true))
 			continue;
 
-		if (Whr_IsNight() && StrHasStr(locatorType, "shipyard,church", 1))
+		if (Whr_IsNight() && StrHasStr(locatorType, "shipyard,church", true))
 			continue;
 
 		SendMessage(&Sound, "lsllllllfff", MSG_SOUND_PLAY, locatorType, SOUND_WAV_3D, VOLUME_FX, 0, 1, 0, 0, stf(locator.x), stf(locator.y), stf(locator.z));
@@ -511,7 +539,9 @@ void SetSchemeForSea()
 {
 	string music, scheme;
 
-	StopMusic();
+	if (MusicIsPlaying())
+		StopMusic(0);
+
 	ResetSoundScheme();
 
 	if (Whr_IsNight())
@@ -526,12 +556,7 @@ void SetSchemeForSea()
 			if (pchar.Ship.POS.Mode == SHIP_WAR)
 				music = "sea_battle";
 			else
-			{
-				if (Whr_IsDay())
-					music = "sea_day";
-				else
-					music = "sea_night";
-			}
+				music = "sea_night";
 
 			if (Whr_IsRain())
 				scheme = "night_rain";
@@ -551,12 +576,7 @@ void SetSchemeForSea()
 			if (pchar.Ship.POS.Mode == SHIP_WAR)
 				music = "sea_battle";
 			else
-			{
-				if (Whr_IsDay())
-					music = "sea_day";
-				else
-					music = "sea_night";
-			}
+				music = "sea_day";
 
 			if (Whr_IsRain())
 				scheme = "day_rain";
@@ -569,25 +589,19 @@ void SetSchemeForSea()
 		SetSoundScheme("sea_" + scheme);
 
 	if (music != "")
-	{
-		if (CheckAttribute(&TEV, "Music.ForcePlayTrack"))
-		{
-			music = TEV.Music.ForcePlayTrack;
-			DeleteAttribute(&TEV, "Music.ForcePlayTrack");
-		}
-
-		KZ|Select("music_" + music);
-	}
+		KZ|MusicSelect("music_" + music);
 
 	ResumeAllSounds();
 }
 
 void SetSchemeForMap()
 {
-	StopMusic();
+	if (MusicIsPlaying())
+		StopMusic(0);
+
 	ResetSoundScheme();
 	SetSoundScheme("sea_map");
-	KZ|Select("music_map");
+	KZ|MusicSelect("music_map");
 	ResumeAllSounds();
 	bFortCheckFlagYet = false;
 }
@@ -609,7 +623,10 @@ void FadeOutMusic(int _time)
 // RELOAD
 void PauseAllSounds()
 {
-	SendMessage(&Sound,"lll",MSG_SOUND_STOP, 0, SOUNDS_FADE_TIME);
+	if (CheckAttribute(&TEV, "Music.KeepPlaying"))
+		StopSoundExceptMusic(0, SOUNDS_FADE_TIME, musicID);
+	else
+		StopSound(0, SOUNDS_FADE_TIME);
 }
 
 void ResumeAllSounds()
@@ -641,11 +658,6 @@ void Sound_SetVolume(int iSoundID, float fVolume)
 int PlaySound(string name)
 {
 	return PlayStereoSound(name);
-}
-
-int PlaySoundComplex(string sSoundName, bool bSimpleCache, bool bLooped, bool bCached, int iFadeTime)
-{
-	return SendMessage(&Sound,"lsllllll",MSG_SOUND_PLAY,VOLUME_FX,sSoundName,SOUND_WAV_3D,bSimpleCache,bLooped,bCached,iFadeTime);
 }
 
 void PlayInterfaceCommand(string name)
@@ -698,34 +710,50 @@ void PlaySpeech(aref chr, string name)
 	SendMessage(chr, "s", name);
 }
 
-void StopMusic()
+void StopMusic(int _iFadeOut)
 {
 	DeleteAttribute(&TEV, "Music.Volume");
-	StopSound(musicID, 0);
-
-	// > TODO restart OR keep playing
-/*	if (!CheckAttribute(&TEV, "Music.KeepPlaying"))
-		ReleaseSound(musicID);*/
-
+	StopSound(musicID, _iFadeOut);
 	musicID = -1;
+	DeleteAttribute(&TEV, "Music.CurrentTrack");
 }
 
-void PlayMusic(string _sTrackName, int _iFadeTime)
+void PlayMusic(string _sTrackName, int _iFadeInTime)
 {
 	float fTrackVolume = 0.5; // > режем громкость вдвое, иммитируя нормализацию
 
-	Restrictor(&_iFadeTime, 0, 10000);
-	StopMusic();
+	Restrictor(&_iFadeInTime, 0, 10000);
+
+	if (MusicIsPlaying())
+		StopMusic(0);
 
 	if (CheckAttribute(&TEV, "Music.LoopTrack"))
 	{
-		musicID = SendMessage(&Sound, "lslllllllf", MSG_SOUND_PLAY, _sTrackName, SOUND_MP3_STEREO, VOLUME_MUSIC, true, true, false, _iFadeTime, MUSIC_CHANGE_TIME, fTrackVolume);
+		musicID = SendMessage(&Sound, "lslllllllf", MSG_SOUND_PLAY, _sTrackName, SOUND_MP3_STEREO, VOLUME_MUSIC, false, true, KZ|MusicCached(), _iFadeInTime, MUSIC_CHANGE_TIME, fTrackVolume);
 		DeleteAttribute(&TEV, "Music.LoopTrack");
 	}
 	else
-		musicID = SendMessage(&Sound, "lsllllllf", MSG_SOUND_PLAY, _sTrackName, SOUND_MP3_STEREO, VOLUME_MUSIC, true, false, false, _iFadeTime, fTrackVolume);
+		musicID = SendMessage(&Sound, "lsllllllf", MSG_SOUND_PLAY, _sTrackName, SOUND_MP3_STEREO, VOLUME_MUSIC, false, false, KZ|MusicCached(), _iFadeInTime, fTrackVolume);
 
-	KZ|MusicRestart(musicID);
+	ResumeSound(musicID, 0);
+}
+
+void PlayMusicQuest(string _sTrack, int _iFadeIn, bool bLoop)
+{
+	if (_sTrack == "")
+	{
+		DeleteAttributeMass(&TEV, "Music", "LoopTrack,QuestMusic");
+		StopMusic(0);
+		return;
+	}
+
+	if (bLoop)
+	{
+		TEV.Music.LoopTrack = "";
+		TEV.Music.QuestMusic = _sTrack;
+	}
+
+	PlayMusic(_sTrack, _iFadeIn);
 }
 
 int MusicGetPosition()
@@ -748,11 +776,18 @@ bool SoundIsPlaying(int trackID)
 	return SendMessage(&Sound, "ll", MSG_SOUND_IS_PLAYING, trackID);
 }
 
-void GetMasterVolume(ref fS, ref fM, ref fD)
+//HardCoffee global volume options
+/*void GetMasterVolume(ref fFX, ref fMusic, ref fSpeech)
+{
+	float fMain;
+	SendMessage(&Sound, "leeee", MSG_SOUND_READ_INI_MASTER_VOLUME, &fMain, &fFX, &fMusic, &fSpeech);
+	fFX *= fMain; fMusic *= fMain; fSpeech *= fMain;
+}*/
+void GetMasterVolume(ref fS, ref fM, ref fD) //Выдаст реальные значения громкости, с учётом main volume
 {
 	SendMessage(&Sound, "leee", MSG_SOUND_GET_MASTER_VOLUME, &fS, &fM, &fD);
 }
-
+//Установит необходимые для конкретного случая значения громкости, но не изменит текущие настройки звука, установленные пользователем
 void SetMasterVolume(float fS, float fM, float fD)
 {
 	SendMessage(&Sound, "lfff", MSG_SOUND_SET_MASTER_VOLUME, fS, fM, fD);
@@ -773,7 +808,7 @@ void SetMusicAlarm(string name)
 		return;
 
 	if (alarmed == 0)
-		KZ|Select(name);
+		KZ|MusicSelect(name);
 	else
 	{
 		if (LAi_boarding_process != 0)
@@ -781,16 +816,11 @@ void SetMusicAlarm(string name)
 			if (!CheckAttribute(loadedLocation, "CabinType"))
 				boardM = 1;
 			
-			KZ|Random("&Action\Boarding,Action");
+			KZ|MusicRandom("&Action\Boarding,Action");
 		}
 		else
-			KZ|Random("&Action\Fight,Action");
+			KZ|MusicRandom("&Action\Fight,Action");
 	}
-}
-
-void Sound_OnAllarm()
-{
-	Sound_OnAlarm(GetEventData());
 }
 
 void Sound_OnAlarm(bool _alarmed)
@@ -801,17 +831,23 @@ void Sound_OnAlarm(bool _alarmed)
 		return;
 
 	DeleteAttribute(&TEV, "Music.KeepPlaying");
-	StopMusic();
+
+	if (MusicIsPlaying())
+		StopMusic(100);
 
 	if (alarmed != 0)
 	{
+		SetMusicPause(false);
 		if (bSeaActive && bAbordageStarted && CheckAttrValue(pchar, "boarding_info.mode", "" + SHIP_ABORDAGE))
-			KZ|Random("&Action\Boarding,Action");
+			KZ|MusicRandom("&Action\Boarding,Action");
 		else
-			KZ|Random("&Action\Fight,Action");
+			KZ|MusicRandom("&Action\Fight,Action");
 	}
 	else
-		KZ|Select("");
+	{
+		SetMusicPause(true);
+		KZ|MusicSelect("");
+	}
 
 	oldAlarmed = alarmed;
 }
@@ -821,40 +857,40 @@ void InitSound()
 	if (!IsEntity(&Sound))
 	{
 		CreateEntity(&Sound, "Sound");
-		SetEventHandler("eventAllarm", "Sound_OnAllarm", 0);
+		SetMusicPause(true);
 	}
+}
+
+void SetMusicPause(bool bPeace)
+{
+	int iMin = MUSIC_PAUSE_MIN_PEACE;
+	int iMax = MUSIC_PAUSE_MAX_PEACE;
+
+	if (!bPeace)
+	{
+		iMin = MUSIC_PAUSE_MIN_ALARM;
+		iMax = MUSIC_PAUSE_MAX_ALARM;
+	}
+
+	SendMessage(&Sound, "lll", MSG_SOUND_SET_MUSIC_PAUSE, iMin * 1000, iMax * 1000);
 }
 
 void ResetSound()
 {
 	ResetSoundScheme();
-	StopSound(0, 0);
-	PauseAllSounds();
 
-	if (!CheckAttribute(&TEV, "Music.KeepPlaying") || !CheckAttribute(&TEV, "Music.CurrentTrack"))
+	StopSoundExceptMusic(0, 0, musicID);
+
+	if (!CheckAttribute(&TEV, "Music.KeepPlaying"))
 	{
-		if (musicID >= 0)
-			StopSound(musicID, 0);
+		FadeOutMusic(500);
 		musicID = -1;
 		DeleteAttribute(&TEV, "Music.CurrentTrack");
-	}
-	else
-	{
-		if (!CheckAttribute(&TEV, "Music.CurrentTrack"))
-			KZ|Select("");
-		else
-		{
-			if (!CheckAttribute(&TEV, "Music.Volume"))
-				TEV.Music.Volume = "0.5";
-
-			musicID = SendMessage(&Sound, "lsllllllf", MSG_SOUND_PLAY, TEV.Music.CurrentTrack, SOUND_MP3_STEREO, VOLUME_MUSIC, false, false, true, 500, stf(TEV.Music.Volume));
-			SendMessage(&Sound, "ll", MSG_SOUND_RESTART, musicID);
-		}
 	}
 
 	alarmed = false;
 	seaAlarmed = false;
-	DeleteAttributeMass(&TEV, "Music", "Volume,ForceKeepPlaying,ForcePlayTrack,LoopTrack,QuestMusic");
+	DeleteAttributeMass(&TEV, "Music", "Volume,ForceKeepPlaying,ForcePlayTrack,LoopTrack,QuestMusic,SeaVictoryPending");
 }
 
 void LoadSceneSound()
@@ -868,119 +904,142 @@ void LoadSceneSound()
 bool CustomMusicDir = true;				// Вкл. и выкл. чтение треков из папки _CUSTOM
 int CharVoice = -1;						// Переменная для озвучки реплик персонажей
 
-void KZ|Music(string track)
+void KZ|MusicPlay(string track)
 {
-	DelEventHandler("MusicUpdateSea", "KZ|MusicUpdateSea");
-
 	aref arFader;
-	if (!CheckAttribute(&TEV, "Music.ForcePlayTrack") && GetEntity(arFader, "fader"))
+	bool bForce = CheckAttribute(&TEV, "Music.ForcePlayTrack"); // > форс идёт и сквозь фейдер сцены, и сквозь непрерывную музыку
+
+	if (!bForce && GetEntity(arFader, "fader"))
 	{
-		KZ|MusicRefresh(1000);
+		PostEvent("MusicNext", 1000);
 		return;
 	}
 
 	float volume = 0.5; // режем громкость вдвое, иммитируя нормализацию
 
-	if (!CheckAttribute(&TEV, "Music.KeepPlaying"))
+	if (bForce || !CheckAttribute(&TEV, "Music.KeepPlaying") || !MusicIsPlaying())
 	{
-		StopMusic();
+		DeleteAttribute(&TEV, "Music.KeepPlaying");
+
+		if (MusicIsPlaying())
+			StopMusic(0);
 
 		if (CheckAttribute(&TEV, "Music.LoopTrack"))
 		{
-			musicID = SendMessage(&Sound, "lslllllllf", MSG_SOUND_PLAY, track, SOUND_MP3_STEREO, VOLUME_MUSIC, true, true, false, 3000, MUSIC_CHANGE_TIME, volume);
+			musicID = SendMessage(&Sound, "lslllllllf", MSG_SOUND_PLAY, track, SOUND_MP3_STEREO, VOLUME_MUSIC, false, true, KZ|MusicCached(), MUSIC_CHANGE_TIME, MUSIC_CHANGE_TIME, volume);
 			DeleteAttribute(&TEV, "Music.LoopTrack");
 		}
 		else
-			musicID = SendMessage(&Sound, "lsllllllf", MSG_SOUND_PLAY, track, SOUND_MP3_STEREO, VOLUME_MUSIC, true, false, false, 3000, volume);
+			musicID = SendMessage(&Sound, "lsllllllf", MSG_SOUND_PLAY, track, SOUND_MP3_STEREO, VOLUME_MUSIC, false, false, KZ|MusicCached(), MUSIC_CHANGE_TIME, volume);
 
-		KZ|MusicRestart(musicID);
+		ResumeSound(musicID, 0);
 		TEV.Music.CurrentTrack = track;
 	}
-
-	KZ|MusicRefresh(0);
 
 	TEV.Music.Volume = volume;
 }
 
-void KZ|MusicRestart(int iTrackID)
+void KZ|OnMusicNext()
 {
-	SendMessage(&Sound, "ll", MSG_SOUND_RESTART, iTrackID);
-	SendMessage(&Sound, "lll", MSG_SOUND_RESUME, iTrackID, MUSIC_CHANGE_TIME);
+	aref arFader;
+	if (GetEntity(arFader, "fader")) { PostEvent("MusicNext", 1000); return; } // > идёт переход сцены
+	if (MusicIsPlaying()) return; // > за паузу музыку уже завели (бой/смена локи)
+
+	DeleteAttribute(&TEV, "Music.SeaVictoryPending"); // > победный трек доиграл, дальше обычная музыка
+
+	KZ|MusicSelect("");
 }
 
-void KZ|MusicRefresh(int iRefreshTime)
+bool KZ|MusicCheckFormat(string str)
 {
-	int iTime = 8000;
-	float fTime = 8.0;
+	// > Судя по инфе про FMOD с wiki, далеко не каждый формат читается игрой. Протестировал все, работают только эти:
+	return StrEndsWith(str, ".ogg") || StrEndsWith(str, ".mp3") || StrEndsWith(str, ".wav") || StrEndsWith(str, ".flac") || StrEndsWith(str, ".wma");
+}
 
-	if (iRefreshTime > 0)
+// KZ > поиск записи в кэше по ключу, если есть
+bool KZ|MusicCacheFind(string key)
+{
+	return CheckAttribute(&oMusicCache, key);
+}
+
+// KZ > восстановить musList/musNum из кэша (не шуршим диск, если не нужно)
+void KZ|MusicCacheLoad(string key)
+{
+	string name;
+	aref e; makearef(e, oMusicCache.(key));
+
+	int i, cnt = sti(e.n);
+
+	SetArraySize(&musList, 2);
+	musList[0] = "";
+	musList[1] = "";
+
+	if (cnt > 0)
 	{
-		iTime = iRefreshTime;
-		fTime = makefloat(iRefreshTime * 0.001);
+		SetArraySize(&musList, cnt);
+
+		for (i = 0; i < cnt; i++)
+		{
+			name = "f" + i;
+			musList[i] = e.(name);
+		}
 	}
 
-	if (and(bSeaActive, !bAbordageStarted) || IsEntity(&worldMap) || CheckAttribute(&TEV, "MAINMENU") || CurrentInterface == INTERFACE_MAINMENU)
+	musNum = cnt;
+	KZ|MusicArray();
+}
+
+// KZ > сохранить текущие musList/musNum в кэш
+void KZ|MusicCacheStore(string key)
+{
+	int i;
+	string fname;
+	aref e; makearef(e, oMusicCache.(key));
+
+	e.n = musNum;
+
+	for (i = 0; i < musNum; i++)
 	{
-		SetEventHandler("MusicUpdateSea", "KZ|MusicUpdateSea", 0);
-		PostEvent("MusicUpdateSea", iTime);
-	}
-	else
-	{
-		DeleteAttribute(&lai_questdelays, "KZ|MusicUpdateLoc");
-		LAi_MethodDelay("KZ|MusicUpdateLoc", fTime);
+		fname = "f" + i;
+		e.(fname) = musList[i];
 	}
 }
 
-void KZ|MusicUpdate()
+// KZ > сброс кэша
+void KZ|MusicCacheClear()
 {
-	aref arFader; if (GetEntity(arFader, "fader")) return;
+	DeleteAttribute(&oMusicCache, "");
+}
 
-	if (!MusicIsPlaying())
+// KZ > быстрый случайный трек из кэша
+string KZ|MusicCacheRandom(string key)
+{
+	aref e; makearef(e, oMusicCache.(key));
+
+	int cnt = sti(e.n);
+
+	if (cnt < 1)
+		return "";
+
+	string name = "f" + rand(cnt - 1);
+
+	return e.(name);
+}
+
+bool KZ|MusicCheckDir(string dirs)
+{
+	// > Один раз отсканировали папки и дальше черпаем из кэша.
+	string cacheKey = "0|" + dirs;
+
+	if (CustomMusicDir)
+		cacheKey = "1|" + dirs;
+
+	if (KZ|MusicCacheFind(cacheKey))
 	{
-		DeleteAttribute(&TEV, "Music.KeepPlaying");
-		StopMusic();
-		KZ|Select("");
-	}
-}
-
-void KZ|MusicUpdateLoc()
-{
-	DeleteAttribute(&lai_questdelays, "KZ|MusicUpdateLoc");
-
-	if (sti(InterfaceStates.Launched) && CurrentInterface == INTERFACE_FRAMEFORM)
-	{
-		LAi_MethodDelay("KZ|MusicUpdateLoc", 5.0);
-		return;
+		KZ|MusicCacheLoad(cacheKey);
+		return musNum > 0;
 	}
 
-	LAi_MethodDelay("KZ|MusicUpdateLoc", 8.0);
-	KZ|MusicUpdate();
-}
-
-void KZ|MusicUpdateSea()
-{
-	if (and(bSeaActive, !bAbordageStarted) || IsEntity(&worldMap))
-	{
-		KZ|MusicUpdate();
-		PostEvent("MusicUpdateSea", 5000);
-	}
-}
-
-bool KZ|Format(string str)
-{
-	// Судя по инфе про FMOD с wiki, далеко не каждый формат читается игрой. Протестировал все, работают только эти:
-	if (StrEndsWith(str, ".ogg") || StrEndsWith(str, ".mp3") || StrEndsWith(str, ".wav") || StrEndsWith(str, ".flac") || StrEndsWith(str, ".wma"))
-		return true;
-	
-	return false;
-}
-
-#define SOUND_DIR "RESOURCE\\Sounds\\"
-int musNum = 0;
-string musList[2];
-
-bool KZ|Check(string dirs)
-{
 	object fileFinder;
 	aref fileList, file;
 	int i, j, n, fileNum, q = KZ|Symbol(dirs, ",");
@@ -988,7 +1047,6 @@ bool KZ|Check(string dirs)
 	bool all = false;
 
 	musNum = 0;
-	musList[2];
 	SetArraySize(&musList, 2);
 
 	for (i = 0; i < 2; i++)
@@ -1039,16 +1097,17 @@ bool KZ|Check(string dirs)
 
 			if (fileNum > 0)
 			{
+				SetArraySize(&musList, musNum + fileNum);
+
 				for (n = 0; n < fileNum; n++)
 				{
 					file = GetAttributeN(fileList, n);
 					musName = GetAttributeValue(file);
 
-					if (KZ|Format(musName))
+					if (KZ|MusicCheckFormat(musName))
 					{
+						musList[musNum] = tmp + musName;
 						musNum++;
-						SetArraySize(&musList, musNum);
-						musList[musNum - 1] = tmp + musName;
 					}
 				}
 			}
@@ -1057,17 +1116,20 @@ bool KZ|Check(string dirs)
 
 		if (musNum > 0 && !all)
 		{
+			SetArraySize(&musList, musNum);
 			KZ|MusicArray();
+			KZ|MusicCacheStore(cacheKey);
 			return true;
 		}
 	}
 
-	KZ|MusicArray();
-
 	if (musNum > 0)
-		return true;
+		SetArraySize(&musList, musNum);
 
-	return false;
+	KZ|MusicArray();
+	KZ|MusicCacheStore(cacheKey);
+
+	return musNum > 0;
 }
 
 void KZ|MusicArray()
@@ -1087,37 +1149,621 @@ void KZ|MusicArray()
 	}
 }
 
-string KZ|Random(string folder)
+string KZ|MusicRandom(string folder)
 {
-	string track;
+	string track = "";
 
-	if (KZ|Check(folder))
+	// > Если папка уже отсканирована, то берём случайный трек из кэша
+	string cacheKey = "0|" + folder;
+	if (CustomMusicDir)
+		cacheKey = "1|" + folder;
+
+	if (KZ|MusicCacheFind(cacheKey))
+		track = KZ|MusicCacheRandom(cacheKey);
+	else if (KZ|MusicCheckDir(folder))
+		track = musList[rand(musNum - 1)]; // > разовый скан для наполнения кэша
+
+	if (track != "")
 	{
-		musNum = rand(musNum - 1);
-		track = musList[musNum];
-
-		if (track != "")
+		if (0) // > turn on 1\0 turn off logs
 		{
-			if (0)
+			Log_Clear();
+			string dir, file;
+
+			if (SeparatePath(track, &file, &dir))
+				Logs("dir: " + SOUND_DIR + "&folder: " + dir + "&file: " + file);
+			else
+				Logs("track: " + SOUND_DIR + track);
+		}
+
+		KZ|MusicPlay(track);
+		return track;
+	}
+
+	return track;
+}
+
+// > трек из папки в обход фейдера сцены и непрерывной музыки; вернёт false, если папка пуста
+bool KZ|MusicForce(string folder)
+{
+	TEV.Music.ForcePlayTrack = folder;
+	string track = KZ|MusicRandom(folder);
+	DeleteAttribute(&TEV, "Music.ForcePlayTrack");
+
+	return track != "";
+}
+
+// > победный трек; только форсом - иначе его глотает фейдер или залипший Music.KeepPlaying
+bool KZ|MusicVictory()
+{
+	return KZ|MusicForce("Action\Battle\Victory");
+}
+
+// KZ > идея непрерывной музыки реквизирована из ЧМ для КС от Cheatsurfer
+bool KZ|MusicKeepOnReload()
+{
+	bool bKeepPlaying = false; // > в локах одинакового типа музыку можно не сбрасывать
+	DeleteAttribute(&TEV, "Music.KeepPlaying");
+
+	if (reload_location_index < 0 || reload_cur_location_index < 0)
+		return bKeepPlaying;
+
+	if (reload_location_index >= MAX_LOCATIONS || reload_cur_location_index >= MAX_LOCATIONS)
+		return bKeepPlaying;
+
+	if (HasAttrValue(&InterfaceStates, "ContinuousMusic", "1"))
+	{
+		if (CheckAttribute(&TEV, "Music.ForceKeepPlaying"))
+			TEV.Music.KeepPlaying = "";
+		else
+		{
+			bool bOk = LAi_grp_alarmactive && !LAi_boarding_process && !CheckAttribute(pchar, "GenQuestFort.StartAttack");
+
+			if (!bOk)
 			{
-				Log_Clear();
-				string dir, file;
+				ref rLocOut = &locations[reload_cur_location_index];
+				ref rLocIn = &locations[reload_location_index];
 
-				if (SeparatePath(track, &file, &dir))
-					Logs("dir: " + SOUND_DIR + "&folder: " + dir + "&file: " + file);
-				else
-					Logs("track: " + SOUND_DIR + track);
+				if (CheckAttribute(&TEV, "Music.CurrentTrack") && CheckAttributeEx(rLocOut, "type,id.label", "&") && CheckAttributeEx(rLocIn, "type,id.label", "&"))
+				{
+					string typeOut  = rLocOut.type;
+					string typeIn   = rLocIn.type;
+					string labelOut = rLocOut.id.label;
+					string labelIn  = rLocIn.id.label;
+					string idOut    = rLocOut.id;
+					string idIn     = rLocIn.id;
+
+					if (bSeaActive)
+					{
+						if (HasAttrValue(&InterfaceStates, "ContinuousMusic.Ship", "1") && typeIn == typeOut && !HasStr(labelOut, "Boarding deck"))
+						{
+							bKeepPlaying = true;
+							TEV.Music.KeepPlaying = "";	// > на корабле
+						}
+					}
+					else
+					{
+						if (reload_cur_location_index == reload_location_index)
+						{
+							if (CheckAttrValue(rLocOut, "lockWeather", "Inside") || CheckAttrValue(rLocOut, "QuestlockWeather", "23 Hour"))
+							{
+								bKeepPlaying = true;
+								TEV.Music.KeepPlaying = "";	// > перезагрузка локации
+							}
+						}
+						else if (HasAttrValue(&InterfaceStates, "ContinuousMusic.Jungle", "1") && typeOut == "jungle")
+						{
+							if (typeIn == typeOut && !HasStrEx(labelIn, "Graveyard,Village", "|") && !HasStrEx(labelOut, "Graveyard,Village", "|"))
+							{
+								bKeepPlaying = true;
+								TEV.Music.KeepPlaying = "";	// > джунгли
+							}
+						}
+						else if (StrStartsWith(labelOut, "Tavern") && StrStartsWith(labelIn, "Tavern"))
+							TEV.Music.KeepPlaying = "";		// > таверна и комната отдыха // TODO KZ > добавить комнатам при тавернах амбиент приглушённых звуков из зала
+						else if (or(labelOut == "Store" && !HasStrEx(labelIn, "portoffice,tavern,bank", "|"), labelIn == "Store" && !HasStrEx(labelOut, "portoffice,tavern,bank", "|")))
+						{
+							if (or(typeOut == "Shop" && typeIn == "House" && !CheckAttribute(rLocIn, "brothel") && !HasStr(labelOut, "Brothel"), typeOut == "House" && typeIn == "Shop") && !CheckAttribute(rLocOut, "brothel") && !HasStr(labelIn, "Brothel"))
+								TEV.Music.KeepPlaying = "";	// > магазин, склад магазина
+						}
+						else if (labelOut == "portoffice" && labelIn == "portoffice")
+						{
+							bKeepPlaying = true;
+							TEV.Music.KeepPlaying = "";		// > портовое управление Санто-Доминго
+						}
+						else if (HasAttrValue(&InterfaceStates, "ContinuousMusic.House", "1") && HasStr(typeOut, "house") && HasStr(typeIn, "house") && !HasStrEx(idIn, "PortOffice,brothel,SecBrRoom", "|") && !HasStrEx(idOut, "PortOffice,brothel,SecBrRoom", "|"))
+						{
+							bKeepPlaying = true;
+							TEV.Music.KeepPlaying = "";		// > дома и комнаты в них
+						}
+						else if (typeOut == "residence" && typeIn == "residence")
+						{
+							bKeepPlaying = true;
+							TEV.Music.KeepPlaying = "";		// > резиденция Виллемстада
+						}
+						else if (StrStartsWith(labelOut, "Packhouse") && StrStartsWith(labelIn, "Packhouse"))
+							TEV.Music.KeepPlaying = "";		// > пакгаус, офис пакгауса
+						else if (HasStr(idOut, "_Bank") && HasStr(idIn, "_Bank"))
+						{
+							bKeepPlaying = true;
+							TEV.Music.KeepPlaying = "";		// > банк, хранилище банка
+						}
+						else if (HasAttrValue(&InterfaceStates, "ContinuousMusic.Brothel", "1") && HasStrEx(idOut, "brothel,SecBrRoom", "|") && HasStrEx(idIn, "brothel,SecBrRoom", "|"))
+							TEV.Music.KeepPlaying = "";		// > бордель
+						else if (HasAttrValue(&InterfaceStates, "ContinuousMusic.LSC", "1") && HasStrEx(typeOut, "LostShipsCity,LSC_inside", "|") && !HasStr(typeIn, "underwater"))
+							TEV.Music.KeepPlaying = "";		// > улица и помещения ГПК
+						else if (or(idOut == "Secret_Fort", idIn == "Secret_Fort") && or(idOut == "Secret_Fort_ammo", idIn == "Secret_Fort_ammo"))
+							TEV.Music.KeepPlaying = "";		// > форт в джунглях и старый арсенал
+						else if (StrStartsWith(idIn, "Estate") && StrStartsWith(idOut, "Estate"))
+							TEV.Music.KeepPlaying = "";
+					}
+				}
 			}
-
-			KZ|Music(track);
-			return track;
 		}
 	}
 
-	return "";
+	return bKeepPlaying;
 }
 
-bool KZ|Select(string str)
+string KZ|MusicResolveLocDir(ref loc, int iColony, int iParent, bool bOwn, string sNatTypeC, string sNatTypeP)
+{
+	string tmp, s, dir = "";
+	bool bOk;
+	string sLocType = loc.type;
+
+	bOk = reload_location_index >= 0 && reload_cur_location_index >= 0 && CheckAttribute(&locations[reload_cur_location_index], "id.label") && CheckAttribute(&locations[reload_location_index], "id.label");
+
+	if (StrEndsWith(loc.id, "_tavern_upstairs") || and(sLocType == "clone", CheckAttribute(loc, "id.label") && HasStr(loc.id.label, "tavern")))
+		sLocType = "tavern";
+	else if (bOk && or(StrEndsWith(loc.id, "_store") && locations[reload_location_index].id.label == "Store", locations[reload_cur_location_index].id.label == "Store" && locations[reload_location_index].id.label == "Store"))
+		sLocType = "shop";
+	else if (loc.id == "Secret_Fort")
+		sLocType = "fort";
+	else if (loc.id == "Secret_Fort_ammo")
+		sLocType = "ammo";
+	else if (StrStartsWith(loc.id, "Estate"))
+		sLocType = "Estate";
+
+	switch (sLocType)
+	{
+		case "town":
+			tmp = "Colony\Town\";
+			dir = "&" + tmp;
+
+			if (Whr_IsDay())
+				dir += "," + tmp + "Day";
+			else
+				dir += "," + tmp + "Night";
+
+			if (iColony >= 0)
+			{
+				if (bOwn)
+				{
+					tmp = "Special\OwnColony\Town\";
+					dir = "&" + tmp;
+
+					if (Whr_IsDay())
+						dir += "," + tmp + "Day";
+					else
+						dir += "," + tmp + "Night";
+
+					if (!KZ|MusicCheckDir(dir))
+					{
+						tmp = "Colony\Town\";
+						dir = "&" + tmp;
+
+						if (Whr_IsDay())
+							dir += ",Colony\Town\Day";
+						else
+							dir += ",Colony\Town\Night";
+
+						dir += ",Colony\Town\" + sNatTypeC;
+
+						if (Whr_IsDay())
+							dir += "\Day";
+						else
+							dir += "\Night";
+
+						dir += ",Colony\Town\" + sNatTypeC;
+					}
+				}
+				else
+				{
+					dir += ",Colony\Town\" + sNatTypeC;
+
+					if (Whr_IsDay())
+						dir += "\Day";
+					else
+						dir += "\Night";
+
+					dir += ",Colony\Town\" + sNatTypeC;
+				}
+			}
+		break;
+
+		case "land":
+			dir = "&Land\Jungle";
+
+			if (Whr_IsDay())
+				dir += ",Land\Jungle\Day";
+			else
+				dir += ",Land\Jungle\Night";
+		break;
+
+		case "Estate": // музыка в имении
+			dir = "Land\Lighthouse";
+		break;
+
+		case "jungle":
+			dir = "&Land\Jungle";
+
+			if (Whr_IsDay())
+				dir += ",Land\Jungle\Day";
+			else
+				dir += ",Land\Jungle\Night";
+
+			if (CheckAttribute(loc, "id.label"))
+			{
+				switch (loc.id.label)
+				{
+					case "ExitTown":
+						tmp = "Land\Jungle\ExitTown\";
+						dir = "&" + tmp;
+
+						if (Whr_IsDay())
+							dir += "," + tmp + "Day";
+						else
+							dir += "," + tmp + "Night";
+
+						if (!KZ|MusicCheckDir(dir))
+						{
+							dir = "&Land\Jungle";
+
+							if (Whr_IsDay())
+								dir += ",Land\Jungle\Day";
+							else
+								dir += ",Land\Jungle\Night";
+						}
+					break;
+
+					case "Graveyard":
+						dir = "Land\Graveyard";
+
+						if (!KZ|MusicCheckDir(dir))
+						{
+							dir = "&Land\Jungle";
+
+							if (Whr_IsDay())
+								dir += ",Land\Jungle\Day";
+							else
+								dir += ",Land\Jungle\Night";
+						}
+					break;
+
+					case "Bucaneer_outpost":
+						if (CheckAttribute(&TEV, "YoHoMusic"))
+							dir = "Colony\Inside\Tavern\Pirate";
+					break;
+
+					case "DesMoines":
+						dir = "Special\DesMoines";
+
+						if (!KZ|MusicCheckDir(dir))
+						{
+							dir = "&Land\Jungle";
+
+							if (Whr_IsDay())
+								dir += ",Land\Jungle\Day";
+							else
+								dir += ",Land\Jungle\Night";
+						}
+					break;
+
+					case "Village":
+						dir = "Land\Village";
+					break;
+				}
+			}
+		break;
+
+		case "mayak":
+			dir = "Land\Lighthouse";
+		break;
+
+		case "seashore":
+			dir = "Land\Shore";
+		break;
+
+		case "cave":
+			dir = "&Land\Underground";
+
+			if (loc.id.label == "Grot")
+				dir += ",Land\Underground\Grotto";
+			else
+				dir += ",Land\Underground\Cave";
+		break;
+
+		case "dungeon":
+			tmp = "Land\Underground\";
+			dir = "&" + tmp + "," + tmp + "Dungeon";
+
+			if (loc.id.label == "Crypt")
+				dir = tmp + "Crypt," + tmp + "Dungeon," + tmp;
+			else
+			{
+				if (CheckAttrValue(loc, "Maltains", "1"))
+					dir = "Special\Malta," + tmp + "Dungeon," + tmp;
+			}
+		break;
+
+		case "mine":
+			dir = "Land\Mine";
+		break;
+
+		case "plantation":
+			dir = "&Land\Plantation";
+
+			if (Whr_IsDay())
+				dir += ",Land\Plantation\Day";
+			else
+				dir += ",Land\Plantation\Night";
+		break;
+
+		case "house": // TODO > убрать это месиво и раскидать все локи по типу
+			tmp = "Colony\Inside\";
+			dir = tmp + "House";
+
+			if (loc.id.label == "portoffice")
+				dir = tmp + "Portoffice," + dir;
+			else
+			{
+				if (CheckAttrValue(loc, "brothel", "1"))
+				{
+					tmp += "Brothel\";
+
+					if (HasAttrValue(&InterfaceStates, "ContinuousMusic.Brothel", "1"))
+					{
+						dir = "&" + tmp + "Hall," + tmp + "Madam," + tmp + "Room," + tmp;
+
+						if (!KZ|MusicCheckDir(dir))
+							dir = tmp + "House";
+					}
+					else
+					{
+						dir = tmp + "Hall," + tmp + ",Colony\Inside\House";
+
+						if (HasStr(loc.id, "SecBrRoom") && KZ|MusicCheckDir(tmp + "Madam"))
+							dir = tmp + "Madam," + tmp + "Hall," + tmp + ",Colony\Inside\House";
+					}
+				}
+				else
+				{
+					if (HasStr(loc.id.label, "Brothel Room"))
+					{
+						tmp += "Brothel\";
+
+						if (HasAttrValue(&InterfaceStates, "ContinuousMusic.Brothel", "1"))
+							dir = "&" + tmp + "Hall," + tmp + "Madam," + tmp + "Room," + tmp;
+						else
+							dir = tmp + "Room," + tmp + "," + dir;
+					}
+					else
+					{
+						if (HasStr(loc.id.label, "PackhouseOffice") || CheckAttrValue(loc, "packhouse", "1"))
+							dir = tmp + "Packhouse," + dir;
+						else
+						{
+							if (CheckAttrValue(loc, "HWIC", "1"))
+								dir = "Special\HWIC," + dir;
+						}
+					}
+				}
+			}
+
+			s = "Colony\Inside\House\Personal\";
+			tmp = "Colony\Inside\House";
+
+			if (loc.id.label == "Ascold House")
+				dir = s + "Ascold," + s + "," + tmp;
+			else
+			{
+				if (loc.id.label == "Morgan's House")
+					dir = s + "Morgan," + s + "," + tmp;
+				else
+				{
+					if (HasStrEx(loc.id.label, "Apteka,Farmacia,Drugstore", "|"))
+						dir = s + "Drugstore," + s + "," + tmp;
+				}
+			}
+		break;
+		
+		case "tavern":
+			dir = "&Colony\Inside\Tavern";
+
+			if (iColony >= 0)
+			{
+				if (bOwn)
+					dir = "Special\OwnColony\Inside\Tavern,Colony\Inside\Tavern\" + sNatTypeC + ",Colony\Inside\Tavern";
+				else
+					dir += ",Colony\Inside\Tavern\" + sNatTypeC;
+			}
+			else
+				dir += "\Pirate";
+		break;
+		
+		case "shop":
+			dir = "Colony\Inside\Store";
+
+			if (loc.id.label == "Usurer House")
+				dir = "Colony\Inside\Bank";
+		break;
+		
+		case "residence":
+			if (HasStrEx(loc.id.label, "cabine,Campus,Deck", "|") && loc.id.label != "cabinet")
+			{
+				if (HasAttrValue(&InterfaceStates, "ContinuousMusic.Ship", "1"))
+					dir = "&Sea\Ship,Sea\Ship\Cabin,Sea\Ship\Campus,Sea\Ship\Deck";
+				else
+				{
+					if (HasStr(loc.id.label, "cabine"))
+						dir = "&Sea\Ship\Cabin,Sea\Ship";
+					else
+					{
+						if (HasStr(loc.id.label, "Campus"))
+							dir = "&Sea\Ship\Campus,Sea\Ship";
+						else
+						{
+							if (HasStr(loc.id.label, "Deck"))
+								dir = "&Sea\Ship\Deck,Sea\Ship";
+						}
+					}
+				}
+			}
+			else
+			{
+				dir = "&Colony\Inside\Governor";
+
+				if (iColony >= 0)
+				{
+					if (bOwn)
+						dir = "Special\OwnColony\Inside\Governor,Colony\Inside\Governor\" + sNatTypeC + ",Colony\Inside\Governor";
+					else
+						dir += ",Colony\Inside\Governor\" + sNatTypeC;
+				}
+
+				if (!KZ|MusicCheckDir(dir))
+					dir = "Colony\Inside\House";
+			}
+		break;
+		
+		case "church":
+			dir = "&Colony\Inside\Church";
+
+			if (iColony >= 0)
+				dir += ",Colony\Inside\Church\" + sNatTypeC;
+		break;
+
+		case "shipyard":
+			dir = "Colony\Inside\Shipyard";
+
+			if (CheckAttrValue(loc, "packhouse", "1"))
+				dir = "Colony\Inside\Packhouse,Colony\Inside\Shipyard";
+		break;
+
+		case "fort_attack":
+			dir = "&Action\Boarding,Boarding";
+		break;
+
+		case "fort":
+			dir = "&Land\Fort";
+
+			if (iParent >= 0)
+				dir += ",Land\Fort\" + sNatTypeP;
+		break;
+
+		case "deck":
+			dir = "Sea\Ship\Deck,Sea\Ship";
+		break;
+
+		case "deck_fight":
+			dir = "Action\Boarding,Action";
+		break;
+
+		case "slave_deck":
+			dir = "Sea\Ship\Deck,Sea\Ship";
+		break;
+
+		case "boarding_cabine":
+			dir = "Action\Boarding,Action";
+		break;
+
+		case "sailing_cabine":
+			dir = "Sea\Ship\Cabin,Sea\Ship";
+		break;
+
+		case "incquisitio":
+			dir = "Special\Inquisition,Colony\Inside\Jail";
+		break;
+
+		case "jail":
+			dir = "Colony\Inside\Jail";
+		break;
+
+		case "ammo":
+			dir = "&Land\Fort\Armory";
+
+			if (iParent >= 0)
+			{
+				dir += ",Land\Fort\Armory\" + sNatTypeP;
+
+				if (!KZ|MusicCheckDir(dir))
+					dir = "&Land\Fort\" + sNatTypeP + ",Land\Fort";
+			}
+			else
+			{
+				if (!KZ|MusicCheckDir(dir))
+					dir = "Land\Fort";
+			}
+		break;
+
+		case "LostShipsCity":
+			dir = "Special\LSC";
+
+			if (CheckAttribute(&TEV, "FinalMusicLSC"))
+			{
+				tmp = "Special\LSC\Final";
+
+				if (KZ|MusicCheckDir(tmp))
+					dir = tmp + "," + dir;
+			}
+		break;
+
+		case "LSC_inside":
+			dir = "Special\LSC\Inside,Special\LSC";
+
+			if (CheckAttribute(loc, "id.label") && HasStrEx(loc.id.label, "EsmeraldaStoreBig,FleuronTavern,GloriaChurch,SanAugustineResidence,TartarusPrison", "|"))
+			{
+				tmp = FindStringBeforeSubStr(loc.id.label, " ");
+
+				switch (tmp)
+				{
+					case "GloriaChurch": tmp = "Church"; break;
+					case "TartarusPrison": tmp = "Prison"; break;
+					case "SanAugustineResidence": tmp = "Governor"; break;
+					case "EsmeraldaStoreBig": tmp = "Store"; break;
+					case "FleuronTavern": tmp = "Tavern"; break;
+				}
+
+				tmp = "Special\LSC\Inside\" + tmp;
+
+				if (KZ|MusicCheckDir(tmp))
+					dir = tmp + "," + dir;
+			}
+		break;
+
+		case "underwater":
+			dir = "Special\Underwater";
+		break;
+
+		case "teno":
+			dir = "Land\Teno";
+
+			if (loc.id.label == "Incas Temple")
+				dir = "Land\Pyramid," + dir;
+		break;
+
+		case "teno_inside":
+			dir = "Land\Teno\Inside,Land\Teno";
+
+			if (HasStrEx(loc.id.label, "Incas Temple,TempleTreasure", "|"))
+				dir = "Land\Pyramid\Inside,Land\Pyramid," + dir;
+		break;
+	}
+
+	return dir;
+}
+
+bool KZ|MusicSelect(string str)
 {
 	int iLoc = FindLoadedLocation();
 	int iColony = -1;
@@ -1126,11 +1772,18 @@ bool KZ|Select(string str)
 	string s, sNatShortC, sNatTypeC, sNatShortP, sNatTypeP, tmp, dir = "";
 	ref loc;
 
-	if (sti(InterfaceStates.Launched))
+	if (CheckAttribute(&TEV, "Music.ForcePlayTrack"))
+	{
+		KZ|MusicRandom(TEV.Music.ForcePlayTrack);
+		DeleteAttribute(&TEV, "Music.ForcePlayTrack");
+		return true;
+	}
+
+	if (InterfaceStates.Launched == "1")
 	{
 		if (CheckAttribute(&TEV, "MAINMENU") || CurrentInterface == INTERFACE_MAINMENU || CurrentInterface == INTERFACE_CHARACTER_SELECT)
 		{
-			KZ|Random("Menu");
+			KZ|MusicRandom("Menu");
 			return true;
 		}
 
@@ -1141,25 +1794,37 @@ bool KZ|Select(string str)
 			break;
 
 			case INTERFACE_RANSACK_MAIN:
-				KZ|Random("Action\Boarding\Plunder");
+				KZ|MusicRandom("Action\Boarding\Plunder");
 				return true;
 			break;
 		}
 	}
 
-	if (str != "")
+	// > бой только что кончился: победный трек звучит до конца, а не подменяется обычным морским
+	if (CheckAttribute(&TEV, "Music.SeaVictoryPending"))
+	{
+		if (bSeaActive && !bAbordageStarted && !IsEntity(&worldMap))
+		{
+			if (KZ|MusicVictory())
+				return true;
+		}
+
+		DeleteAttribute(&TEV, "Music.SeaVictoryPending"); // > трека нет или мы уже не в море - заявку снимаем
+	}
+
+/*	if (str != "") // TODO > if (HasStr(str, "dir")) KZ|MusicRandom(dir);
 	{
 		if (HasStr(str, "storm_end"))
 		{
-			KZ|Random("Sea\Storm\End");
+			KZ|MusicRandom("Sea\Storm\End");
 			return true;
 		}
 		else if (HasStr(str, "ship_victory"))
 		{
-			KZ|Random("Action\Battle\Victory");
+			KZ|MusicRandom("Action\Battle\Victory");
 			return true;
 		}
-	}
+	}*/
 
 	if (IsEntity(&worldMap))
 		dir = "Sea\Map";
@@ -1188,6 +1853,14 @@ bool KZ|Select(string str)
 				case SHIP_STORM:
 					if (Whr_IsStorm() && bStorm)
 						dir = "Sea\Storm";
+					else
+					{
+						// > шторм кончился, а режим ещё штормовой: пустая папка оставляла тишину и залипший Music.KeepPlaying
+						if (Whr_IsDay())
+							dir = "&Sea\Day,Sea";
+						else
+							dir = "&Sea\Night,Sea";
+					}
 				break;
 			}
 		}
@@ -1222,470 +1895,32 @@ bool KZ|Select(string str)
 					if (CheckAttribute(loc, "fastreload"))
 					{
 						iColony = FindColony(loc.fastreload);
-						sNatShortC = NationShortName(sti(Colonies[iColony].nation));
-						sNatTypeC = GetNationNameByType(sti(Colonies[iColony].nation));
-						bOwn = sti(colonies[iColony].HeroOwn) == true;
+						if (iColony >= 0)
+						{
+							sNatShortC = NationShortName(sti(Colonies[iColony].nation));
+							sNatTypeC = GetNationNameByType(sti(Colonies[iColony].nation));
+							bOwn = sti(colonies[iColony].HeroOwn) == true;
+						}
 					}
 
 					if (CheckAttribute(loc, "parent_colony"))
 					{
 						iParent = FindColony(loc.parent_colony);
-						sNatShortP = NationShortName(sti(Colonies[iParent].nation));
-						sNatTypeP = GetNationNameByType(sti(Colonies[iParent].nation));
+						if (iParent >= 0)
+						{
+							sNatShortP = NationShortName(sti(Colonies[iParent].nation));
+							sNatTypeP = GetNationNameByType(sti(Colonies[iParent].nation));
+						}
 					}
 
 					if (CheckAttribute(loc, "type"))
-					{
-						string sLocType = loc.type;
-
-						bOk = reload_location_index >= 0 && reload_cur_location_index >= 0 && CheckAttribute(&locations[reload_cur_location_index], "id.label") && CheckAttribute(&locations[reload_location_index], "id.label");
-
-						if (StrEndsWith(loc.id, "_tavern_upstairs") || and(sLocType == "clone", CheckAttribute(loc, "id.label") && HasStr(loc.id.label, "tavern")))
-							sLocType = "tavern";
-						else if (bOk && or(StrEndsWith(loc.id, "_store") && locations[reload_location_index].id.label == "Store", locations[reload_cur_location_index].id.label == "Store" && locations[reload_location_index].id.label == "Store"))
-							sLocType = "shop";
-						else if (loc.id == "Secret_Fort")
-							sLocType = "fort";
-						else if (loc.id == "Secret_Fort_ammo")
-							sLocType = "ammo";
-
-						switch (sLocType)
-						{
-							case "town":
-								tmp = "Colony\Town\";
-								dir = "&" + tmp;
-
-								if (Whr_IsDay())
-									dir += "," + tmp + "Day";
-								else
-									dir += "," + tmp + "Night";
-
-								if (iColony >= 0)
-								{
-									if (bOwn)
-									{
-										tmp = "Special\OwnColony\Town\";
-										dir = "&" + tmp;
-
-										if (Whr_IsDay())
-											dir += "," + tmp + "Day";
-										else
-											dir += "," + tmp + "Night";
-
-										if (!KZ|Check(dir))
-										{
-											tmp = "Colony\Town\";
-											dir = "&" + tmp;
-
-											if (Whr_IsDay())
-												dir += ",Colony\Town\Day";
-											else
-												dir += ",Colony\Town\Night";
-
-											dir += ",Colony\Town\" + sNatTypeC;
-
-											if (Whr_IsDay())
-												dir += "\Day";
-											else
-												dir += "\Night";
-
-											dir += ",Colony\Town\" + sNatTypeC;
-										}
-									}
-									else
-									{
-										dir += ",Colony\Town\" + sNatTypeC;
-
-										if (Whr_IsDay())
-											dir += "\Day";
-										else
-											dir += "\Night";
-
-										dir += ",Colony\Town\" + sNatTypeC;
-									}
-								}
-							break;
-
-							case "land":
-								dir = "&Land\Jungle";
-
-								if (Whr_IsDay())
-									dir += ",Land\Jungle\Day";
-								else
-									dir += ",Land\Jungle\Night";
-							break;
-
-							case "Estate": // музыка в имении
-								dir = "Land\Lighthouse";
-							break;
-
-							case "jungle":
-								dir = "&Land\Jungle";
-
-								if (Whr_IsDay())
-									dir += ",Land\Jungle\Day";
-								else
-									dir += ",Land\Jungle\Night";
-
-								if (CheckAttribute(loc, "id.label"))
-								{
-									switch (loc.id.label)
-									{
-										case "ExitTown":
-											tmp = "Land\Jungle\ExitTown\";
-											dir = "&" + tmp;
-
-											if (Whr_IsDay())
-												dir += "," + tmp + "Day";
-											else
-												dir += "," + tmp + "Night";
-
-											if (!KZ|Check(dir))
-											{
-												dir = "&Land\Jungle";
-
-												if (Whr_IsDay())
-													dir += ",Land\Jungle\Day";
-												else
-													dir += ",Land\Jungle\Night";
-											}
-										break;
-
-										case "Graveyard":
-											dir = "Land\Graveyard";
-
-											if (!KZ|Check(dir))
-											{
-												dir = "&Land\Jungle";
-
-												if (Whr_IsDay())
-													dir += ",Land\Jungle\Day";
-												else
-													dir += ",Land\Jungle\Night";
-											}
-										break;
-
-										case "DesMoines":
-											dir = "Special\DesMoines";
-
-											if (!KZ|Check(dir))
-											{
-												dir = "&Land\Jungle";
-
-												if (Whr_IsDay())
-													dir += ",Land\Jungle\Day";
-												else
-													dir += ",Land\Jungle\Night";
-											}
-										break;
-
-										case "Village":
-											dir = "Land\Village";
-										break;
-									}
-								}
-							break;
-
-							case "mayak":
-								dir = "Land\Lighthouse";
-							break;
-
-							case "seashore":
-								dir = "Land\Shore";
-							break;
-
-							case "cave":
-								dir = "&Land\Underground";
-
-								if (loc.id.label == "Grot")
-									dir += ",Land\Underground\Grotto";
-								else
-									dir += ",Land\Underground\Cave";
-							break;
-
-							case "dungeon":
-								tmp = "Land\Underground\";
-								dir = "&" + tmp + "," + tmp + "Dungeon";
-
-								if (loc.id.label == "Crypt")
-									dir = tmp + "Crypt," + tmp + "Dungeon," + tmp;
-								else
-								{
-									if (CheckAttribute(loc, "Maltains") && sti(loc.Maltains) == true)
-										dir = "Special\Malta," + tmp + "Dungeon," + tmp;
-								}
-							break;
-
-							case "mine":
-								dir = "Land\Mine";
-							break;
-
-							case "plantation":
-								dir = "&Land\Plantation";
-
-								if (Whr_IsDay())
-									dir += ",Land\Plantation\Day";
-								else
-									dir += ",Land\Plantation\Night";
-							break;
-
-							case "house": // TODO > убрать это месиво и раскидать все локи по типу
-								tmp = "Colony\Inside\";
-								dir = tmp + "House";
-
-								if (loc.id.label == "portoffice")
-									dir = tmp + "Portoffice," + dir;
-								else
-								{
-									if (CheckAttribute(loc, "brothel") && sti(loc.brothel) == true)
-									{
-										tmp += "Brothel\";
-
-										if (HasAttrValue(&InterfaceStates, "ContinuousMusic.Brothel", "1"))
-										{
-											dir = "&" + tmp + "Hall," + tmp + "Madam," + tmp + "Room," + tmp;
-
-											if (!KZ|Check(dir))
-												dir = tmp + "House";
-										}
-										else
-										{
-											dir = tmp + "Hall," + tmp + ",Colony\Inside\House";
-
-											if (HasStr(loc.id, "SecBrRoom") && KZ|Check(tmp + "Madam"))
-												dir = tmp + "Madam," + tmp + "Hall," + tmp + ",Colony\Inside\House";
-										}
-									}
-									else
-									{
-										if (HasStr(loc.id.label, "Brothel Room"))
-										{
-											tmp += "Brothel\";
-
-											if (HasAttrValue(&InterfaceStates, "ContinuousMusic.Brothel", "1"))
-												dir = "&" + tmp + "Hall," + tmp + "Madam," + tmp + "Room," + tmp;
-											else
-												dir = tmp + "Room," + tmp + "," + dir;
-										}
-										else
-										{
-											if (HasStr(loc.id.label, "PackhouseOffice") || and(CheckAttribute(loc, "packhouse") && sti(loc.packhouse) == 1, true))
-												dir = tmp + "Packhouse," + dir;
-											else
-											{
-												if (CheckAttribute(loc, "HWIC") && sti(loc.HWIC) == true)
-													dir = "Special\HWIC," + dir;
-											}
-										}
-									}
-								}
-
-								s = "Colony\Inside\House\Personal\";
-								tmp = "Colony\Inside\House";
-
-								if (loc.id.label == "Ascold House")
-									dir = s + "Ascold," + s + "," + tmp;
-								else
-								{
-									if (loc.id.label == "Morgan's House")
-										dir = s + "Morgan," + s + "," + tmp;
-									else
-									{
-										if (HasStrEx(loc.id.label, "Apteka,Farmacia,Drugstore", "|"))
-											dir = s + "Drugstore," + s + "," + tmp;
-									}
-								}
-							break;
-							
-							case "tavern":
-								dir = "&Colony\Inside\Tavern";
-
-								if (iColony >= 0)
-								{
-									if (bOwn)
-										dir = "Special\OwnColony\Inside\Tavern,Colony\Inside\Tavern\" + sNatTypeC + ",Colony\Inside\Tavern";
-									else
-										dir += ",Colony\Inside\Tavern\" + sNatTypeC;
-								}
-								else
-									dir += "\Pirate";
-							break;
-							
-							case "shop":
-								dir = "Colony\Inside\Store";
-
-								if (loc.id.label == "Usurer House")
-									dir = "Colony\Inside\Bank";
-							break;
-							
-							case "residence":
-								if (HasStrEx(loc.id.label, "cabine,Campus,Deck", "|") && loc.id.label != "cabinet")
-								{
-									if (HasAttrValue(&InterfaceStates, "ContinuousMusic.Ship", "1"))
-										dir = "&Sea\Ship,Sea\Ship\Cabin,Sea\Ship\Campus,Sea\Ship\Deck";
-									else
-									{
-										if (HasStr(loc.id.label, "cabine"))
-											dir = "&Sea\Ship\Cabin,Sea\Ship";
-										else
-										{
-											if (HasStr(loc.id.label, "Campus"))
-												dir = "&Sea\Ship\Campus,Sea\Ship";
-											else
-											{
-												if (HasStr(loc.id.label, "Deck"))
-													dir = "&Sea\Ship\Deck,Sea\Ship";
-											}
-										}
-									}
-								}
-								else
-								{
-									dir = "&Colony\Inside\Governor";
-
-									if (iColony >= 0)
-									{
-										if (bOwn)
-											dir = "Special\OwnColony\Inside\Governor,Colony\Inside\Governor\" + sNatTypeC + ",Colony\Inside\Governor";
-										else
-											dir += ",Colony\Inside\Governor\" + sNatTypeC;
-									}
-
-									if (!KZ|Check(dir))
-										dir = "Colony\Inside\House";
-								}
-							break;
-							
-							case "church":
-								dir = "&Colony\Inside\Church";
-
-								if (iColony >= 0)
-									dir += ",Colony\Inside\Church\" + sNatTypeC;
-							break;
-
-							case "shipyard":
-								dir = "Colony\Inside\Shipyard";
-
-								if (CheckAttribute(loc, "packhouse") && sti(loc.packhouse) == true)
-									dir = "Colony\Inside\Packhouse,Colony\Inside\Shipyard";
-							break;
-
-							case "fort_attack":
-								dir = "&Action\Boarding,Boarding";
-							break;
-
-							case "fort":
-								dir = "&Land\Fort";
-
-								if (iParent >= 0)
-									dir += ",Land\Fort\" + sNatTypeP;
-							break;
-
-							case "deck":
-								dir = "Sea\Ship\Deck,Sea\Ship";
-							break;
-
-							case "deck_fight":
-								dir = "Action\Boarding,Action";
-							break;
-
-							case "slave_deck":
-								dir = "Sea\Ship\Deck,Sea\Ship";
-							break;
-
-							case "boarding_cabine":
-								dir = "Action\Boarding,Action";
-							break;
-
-							case "sailing_cabine":
-								dir = "Sea\Ship\Cabin,Sea\Ship";
-							break;
-
-							case "incquisitio":
-								dir = "Special\Inquisition,Colony\Inside\Jail";
-							break;
-
-							case "jail":
-								dir = "Colony\Inside\Jail";
-							break;
-
-							case "ammo":
-								dir = "&Land\Fort\Armory";
-
-								if (iParent >= 0)
-								{
-									dir += ",Land\Fort\Armory\" + sNatTypeP;
-
-									if (!KZ|Check(dir))
-										dir = "&Land\Fort\" + sNatTypeP + ",Land\Fort";
-								}
-								else
-								{
-									if (!KZ|Check(dir))
-										dir = "Land\Fort";
-								}
-							break;
-
-							case "LostShipsCity":
-								dir = "Special\LSC";
-
-								if (CheckAttribute(&TEV, "FinalMusicLSC"))
-								{
-									tmp = "Special\LSC\Final";
-
-									if (KZ|Check(tmp))
-										dir = tmp + "," + dir;
-								}
-							break;
-
-							case "LSC_inside":
-								dir = "Special\LSC\Inside,Special\LSC";
-
-								if (CheckAttribute(loc, "id.label") && HasStrEx(loc.id.label, "EsmeraldaStoreBig,FleuronTavern,GloriaChurch,SanAugustineResidence,TartarusPrison", "|"))
-								{
-									tmp = FindStringBeforeSubStr(loc.id.label, " ");
-
-									switch (tmp)
-									{
-										case "GloriaChurch": tmp = "Church"; break;
-										case "TartarusPrison": tmp = "Prison"; break;
-										case "SanAugustineResidence": tmp = "Governor"; break;
-										case "EsmeraldaStoreBig": tmp = "Store"; break;
-										case "FleuronTavern": tmp = "Tavern"; break;
-									}
-
-									tmp = "Special\LSC\Inside\" + tmp;
-
-									if (KZ|Check(tmp))
-										dir = tmp + "," + dir;
-								}
-							break;
-
-							case "underwater":
-								dir = "Special\Underwater";
-							break;
-
-							case "teno":
-								dir = "Land\Teno";
-
-								if (loc.id.label == "Incas Temple")
-									dir = "Land\Pyramid," + dir;
-							break;
-
-							case "teno_inside":
-								dir = "Land\Teno\Inside,Land\Teno";
-
-								if (HasStrEx(loc.id.label, "Incas Temple,TempleTreasure", "|"))
-									dir = "Land\Pyramid\Inside,Land\Pyramid," + dir;
-							break;
-						}
-					}
+						dir = KZ|MusicResolveLocDir(loc, iColony, iParent, bOwn, sNatTypeC, sNatTypeP);
 				}
 			}
 		}
 	}
 
-	if (KZ|Random(dir) != "")
+	if (KZ|MusicRandom(dir) != "")
 		return true;
 
 	return false;
@@ -1716,25 +1951,25 @@ int KZ|Symbol(string str, string sym)
 	if (sym == "")
 		return 0;
 
-	int n, q = 0;
-	int len = strlen(str);
-	string tmp;
+	int len = strlen(&str);
+	int symLen = strlen(&sym);
 
-	if (len > 0)
+	if (len < symLen)
+		return 0;
+
+	int q = 0;
+	int n = findSubStr(&str, sym, 0);
+
+	while (n >= 0)
 	{
-		for (n = 0; n < len; n++)
-		{
-			tmp = GetSymbol(&str, n);
-
-			if (tmp == sym)
-				q++;
-		}
+		q++;
+		n = findSubStr(&str, sym, n + symLen);
 	}
 
 	return q;
 }
 
-void KZ|Folder()
+void KZ|MusicCreateFolders()
 {
 	int i = 0;
 	string s, dir = SOUND_DIR + "Music\\";

@@ -1,0 +1,1291 @@
+LeBasque_dialog_1 {
+¿En serio? Bueno, Etienne, ganaste. Tenías razón.
+}
+LeBasque_dialog_2 {
+¿Verdad? ¿De qué manera?
+}
+LeBasque_dialog_3 {
+Supongo que te refieres a una botella de Armagnac añejo, ¿verdad?
+}
+LeBasque_dialog_4 {
+No importa. Está claro que sabes lo que haces. Me gustaría observarte un poco más, pero creo que primero deberías saber quiénes somos. Seré breve.\nNuestro campamento en Tortuga existe desde hace mucho, oculto a las miradas indiscretas. Pero desde que expulsaron recientemente a los bucaneros de La Española, hemos decidido echar raíces más profundas en esta isla con nombre de tortuga. ¡Así que te doy la bienvenida! A partir de ahora puedes considerarte parte de nuestra humilde y bien avenida hermandad. Por tener un barco a tu mando, te corresponde una vivienda propia y un cofre donde guardar tus pertenencias. No temas: aquí no vemos con buenos ojos el robo, salvo que seas un español a bordo de un galeón, ¡ja, ja! Puedes quedarte con la casita de Montbar; de todos modos, no creo que vuelva... Se ha marchado otra vez a Aruba para rescatar a los pieles rojas de las garras de sus opresores españoles. Basta de charla, vamos a lo importante.\nSi quieres ganar otros diez mil, que así sea. Confiaré en el instinto de Etienne y te encomendaré un asunto urgente.
+}
+LeBasque_dialog_5 {
+Diez mil nunca es demasiado. ¿Qué necesitas de mí?
+}
+LeBasque_dialog_6 {
+¡Ja! Así que ese sinvergüenza ya se jactó de sus ganancias. Al parecer, de verdad cree en ti. Me gustaría observarte un poco más, pero creo que primero deberías saber quiénes somos. Seré breve.\nNuestro campamento en Tortuga existe desde hace mucho, oculto a las miradas indiscretas. Pero desde que expulsaron recientemente a los bucaneros de La Española, hemos decidido echar raíces más profundas en esta isla con nombre de tortuga. ¡Así que te doy la bienvenida! A partir de ahora puedes considerarte parte de nuestra humilde y bien avenida hermandad. Por tener un barco a tu mando, te corresponde una vivienda propia y un cofre donde guardar tus pertenencias. No temas: aquí no vemos con buenos ojos el robo, salvo que seas un español a bordo de un galeón, ¡ja, ja! Puedes quedarte con la casita de Montbar; de todos modos, no creo que vuelva... Se ha marchado otra vez a Aruba para rescatar a los pieles rojas de las garras de sus opresores españoles. Basta de charla, vamos a lo importante.\nSi quieres ganar otros diez mil, que así sea. Confiaré en el instinto de Etienne y te encomendaré un asunto urgente.
+}
+LeBasque_dialog_7 {
+La recompensa es bastante tentadora. ¿Qué hay que hacer?
+}
+LeBasque_dialog_8 {
+Encuentra a mi viejo camarada, Nicolas Rimalie, en La Española. Se retiró antes de que los bucaneros fueran expulsados ​​definitivamente de la isla, pero corre el rumor de que sigue cazando cerca de La Vega. Cuando lo encuentres, dile que Michel le Basque lo busca en Tortuga. ¡Date prisa!
+}
+LeBasque_dialog_9 {
+¿Cuál es la prisa? Necesito saber qué podría salir mal.
+}
+LeBasque_dialog_10 {
+Lo necesito. El viejo lleva años rondando entre nuestra gente y sabe mucho más de lo que debería saber un simple bucanero. Tarde o temprano, Vargas lo encontrará. Si logra capturarlo con vida, le sacará toda la información posible: nombres, campamentos, contactos. No pienso poner a prueba su resistencia. Encuentra a Rimalie antes que Vargas y entrégalo a Tortuga.
+}
+LeBasque_dialog_11 {
+¿Quién es este Vargas?
+}
+LeBasque_dialog_12 {
+Lo descubrirás cuando regreses aquí con Rimalie.
+}
+LeBasque_dialog_13 {
+¿Y si los españoles ya lo han alcanzado?
+}
+LeBasque_dialog_14 {
+Entonces tendrás que recuperarlo a cualquier precio. Lo necesito vivo. De lo contrario, olvídate de la recompensa. Etienne irá contigo. Sabe dónde desembarcar y a quién preguntar. También te vigilará.
+}
+LeBasque_dialog_15 {
+Si no hay más preguntas, es hora de volver al trabajo. Cada día perdido beneficia a Vargas.
+}
+LeBasque_dialog_16_m {
+Ah, @<GetFullName>. Marceau ya me lo contó todo. Aquí tienes tus diez mil. Y como muestra de mi agradecimiento personal, compartiré contigo nuestra receta especial de carne seca. Aprende a cazar y a despiezar las presas, y nunca morirás de hambre.\nDicen que Rimalier incluso ha aprendido a cocinar esas malditas gaviotas y los cormoranes, pero yo prefiero una buena carne en salazón. Toma, te lo has ganado.
+}
+LeBasque_dialog_16_f {
+Ah, @<GetFullName>. Marceau ya me lo contó todo. Aquí tienes tus diez mil. Y como muestra de mi agradecimiento personal, compartiré contigo nuestra receta especial de carne seca. Aprende a cazar y a despiezar las presas, y nunca morirás de hambre.\nDicen que Rimalier incluso ha aprendido a cocinar esas malditas gaviotas y los cormoranes, pero yo prefiero una buena carne en salazón. Toma, te lo has ganado.
+}
+LeBasque_dialog_17 {
+Gracias. Espero que ahora puedas decirme quién es ese Vargas. Ese desgraciado intentó matarme. Ahora tengo cuentas personales que saldar con él.
+}
+LeBasque_dialog_18 {
+Por supuesto. En su día sirvió en la Armada de Barlovento, escoltando flotas de plata. Hace unos diez años, le encomendaron un convoy que transportaba tesoros desde Portobelo. Cerca del estrecho de Yucatán, fue emboscado por corsarios franceses. Los hombres fueron masacrados y las bodegas saqueadas. Pero Vargas, por algún milagro, no solo sobrevivió, sino que además logró llegar a territorio español.
+}
+LeBasque_dialog_19 {
+Supongo que, evidentemente, no le esperaba ninguna recompensa por esto en su país de origen.
+}
+LeBasque_dialog_20 {
+Fue expulsado de la marina en desgracia. Para un hombre como él, eso es peor que la horca.
+}
+LeBasque_dialog_21 {
+Y sin embargo, no se pudrió en alguna cuneta. Tiene un barco de verdad.
+}
+LeBasque_dialog_22 {
+Como pueden ver, al parecer acudió al Consejo de Indias y negoció una segunda oportunidad. Lo readmitieron y juró dar caza a los de nuestra especie por todo el Caribe. Para Vargas, pirata y bucanero son lo mismo. Y considera que su misión en la vida es exterminarnos. Y lo demostró claramente unos meses antes en La Española.
+}
+LeBasque_dialog_23 {
+Además de luchar contra los ladrones, aspira a convertirse en gobernador de Maracaibo. Pero primero, debe demostrar su valía. Ya que tienes tantas ganas de vengarte, te daré esa oportunidad. Pero aún no podemos llegar hasta Vargas; es demasiado confiado. Primero, debemos quitarle los ojos, las manos y la cartera.
+}
+LeBasque_dialog_24 {
+¿Por dónde empezamos?
+}
+LeBasque_dialog_25 {
+Tiene a su hombre de confianza en La Habana: Esteban Molina. Secretario, tesorero, contable... llámenlo como quieran. Según mi gente, es un tipo sumamente escurridizo. Dinero, informes y gran parte de los negocios secretos de Vargas pasan por él.
+}
+LeBasque_dialog_26 {
+No creo que puedas cogerlo con las manos desnudas.
+}
+LeBasque_dialog_27 {
+Sobre todo teniendo en cuenta que lo necesito vivo.
+}
+LeBasque_dialog_28 {
+¿Vivo?
+}
+LeBasque_dialog_29 {
+Como bien sabemos, los muertos no cuentan historias. No cuentan ninguna historia en absoluto. Estoy seguro de que todas las notas están ingeniosamente encriptadas, y sin Molina, no entenderemos nada de ellas. Tengo gente que puede sonsacarle información a cualquiera. Con esta información, llegar hasta Vargas será mucho más fácil.
+}
+LeBasque_dialog_30 {
+Entender.
+}
+LeBasque_dialog_31_m {
+Mi hombre, Gaspard Leroux, ya ha averiguado algo sobre él. En La Habana, se hace pasar por un comerciante de vinos de Marsella y lleva dos semanas vigilando a Molina. Él nos dirá dónde encontrarlo y cómo contactar con él. Es demasiado pronto para hablar de recompensa, pero les aseguro que no se arrepentirán.
+}
+LeBasque_dialog_31_f {
+Mi hombre, Gaspard Leroux, ya ha averiguado algo sobre él. En La Habana, se hace pasar por un comerciante de vinos de Marsella y lleva dos semanas vigilando a Molina. Él nos dirá dónde encontrarlo y cómo contactar con él. Es demasiado pronto para hablar de recompensa, pero te aseguro que no te decepcionará.
+}
+LeBasque_dialog_32 {
+Considéralo ya en tus manos.
+}
+LeBasque_dialog_33 {
+Y una cosa más: no hagan ruido innecesariamente. Si Vargas se entera de que hemos contactado con su tesorero, enseguida intentará borrar sus huellas.
+}
+LeBasque_dialog_34 {
+En fin, lo intentaré. ¿Hay algo más que deba saber?
+}
+LeBasque_dialog_35 {
+Eso es todo. Vete. Y recuerda: necesito a Molina con vida.
+}
+LeBasque_dialog_36 {
+Se hará.
+}
+LeBasque_dialog_37 {
+Para que todo salga bien, obtén una licencia comercial. Tiene una validez de treinta días, así que no te demores.
+}
+LeBasque_dialog_38 {
+Gracias. Me marcho inmediatamente.
+}
+LeBasque_dialog_39 {
+¿Necesitas que te recuerden la esencia de la tarea?
+}
+LeBasque_dialog_40 {
+Gracias, no hace falta.
+}
+LeBasque_dialog_41 {
+Y aquí está @<GetFullName>. Y nada menos que con el mismísimo Gaspar Molina. Todo el puesto de avanzada estaba esperando tu llegada.
+}
+LeBasque_dialog_42 {
+Y, al final, valió la pena. Está a tu completa disposición.
+}
+LeBasque_dialog_43 {
+Excelente trabajo, capitán. Este gusano y yo tenemos que tener una conversación seria. Y más le vale no intentar evitarla...
+}
+LeBasque_dialog_44 {
+Guardaba esta caja consigo. Creo que definitivamente no contenía su correspondencia personal.
+}
+LeBasque_dialog_45 {
+(Al guardia) Llévenselo.
+}
+LeBasque_dialog_46_m {
+¿Dónde están Rimalie y Jaco? Pensé que estarían entre los primeros en ver al prisionero.
+}
+LeBasque_dialog_46_f {
+¿Dónde están Rimalie y Jaco? Pensé que serían de los primeros en querer ver al prisionero.
+}
+LeBasque_dialog_47 {
+Menos mal que te acordaste de ellos. Nicolas está recuperándose de una borrachera monumental. En cuanto a Jaco, le encargué una misión: lo mandé a la selva al amanecer. El curandero local necesitaba unas hierbas raras que solo crecen en la selva. Un asunto sencillo: ida y vuelta. Pero ha pasado mucho tiempo y el tipo aún no ha regresado.
+}
+LeBasque_dialog_48 {
+¿Tal vez se perdió?
+}
+LeBasque_dialog_49 {
+¿Jaco? Para nada. El chico es muy astuto. Miente con soltura y se fija en todo. Ya le he encargado pequeñas tareas: repartir periódicos, merodear por el puerto, escuchar conversaciones importantes. Y quedé muy satisfecho con él. No creo que se haya perdido sin más. Búscalo mientras yo le doy la lata a nuestro nuevo amigo. Me temo que Rimalie no está en condiciones de explorar la selva ahora mismo.
+}
+LeBasque_dialog_50 {
+¿Dónde fue visto por última vez?
+}
+LeBasque_dialog_51 {
+Más allá de las puertas de la ciudad. Más adelante, el sendero se adentra en la selva. Es mejor empezar por ahí.
+}
+LeBasque_dialog_52 {
+De acuerdo. Volveré pronto.
+}
+LeBasque_dialog_53 {
+Así que la manada de Don Diego se ha dispersado... ¡Mejor aún! Una manada solo es peligrosa cuando permanece unida, pero es mucho más fácil atrapar a estos perros individualmente. Además, nuestro querido Molina resultó ser inusualmente hablador. Estaba tan ansioso por terminar nuestra conversación que lo contó todo...
+}
+LeBasque_dialog_54 {
+¿Así que lo que?
+}
+LeBasque_dialog_55 {
+Diego tiene tres lugartenientes. El primero es Don Ignacio Vela, los ojos y oídos de Vargas. Dirige toda la oficina secreta de Vargas: espías, asesinos, etc. Es un intrigante experimentado y un zorro muy astuto, que solo confía en un contacto: uno al que no se puede sorprender. Lo mejor es eliminarlo discretamente, sin armar un escándalo, para que los españoles piensen que jugó sus sucios juegos hasta el final.
+}
+LeBasque_dialog_56 {
+Ignacio Vela - sin ruido. Siguiente.
+}
+LeBasque_dialog_57 {
+El segundo es Don Sebastian Rojas, el puño de Vargas. Un insolente singular, un espadachín temido y un condotiero de renombre. Actualmente se encuentra en Jamaica. Sospecho que su objetivo es conseguir el apoyo de los cimarrones. Ha reunido a un grupo de lansquenetes mercenarios y desertores, estableciendo un campamento provisional en lo profundo de la selva. Que prepare una incursión o una emboscada es irrelevante. Lo importante es que se ha rodeado de lanzallamas y mosquetes, y atacarlo de frente sin debilitarlo primero sería un suicidio.
+}
+LeBasque_dialog_58 {
+Sebastian Rojas - debilitarse y terminar. ¿Pasamos al tercero?
+}
+LeBasque_dialog_59 {
+Y por último, Don Martín Quesada, el guardaespaldas de Vargas. Quizás el más astuto de los tres. Ha escondido su barco entre los arrecifes de las Bermudas, cortando nuestras comunicaciones vitales con el asentamiento de Skullshores. Es un lugar infernal: antes de que te des cuenta, un barco puede estrellarse contra el tuyo desde detrás de esas malditas rocas. Quesada confía demasiado en ellas. Tendremos que sacarlo de allí antes de que Jackman nos muestre su descontento.
+}
+LeBasque_dialog_60 {
+Martín Quesada. Fumar y ahogarse.
+}
+LeBasque_dialog_61_m {
+La campaña no será fácil ni durará un solo día. Por eso no irás solo. Marceau irá contigo.\nY llévate a Jaco. Ya es hora de que gane experiencia. Marceau está cumpliendo otro encargo y mañana estará aquí. Incorporarás su barco a tu escuadra y saldrán de caza. Tres tenientes, capitán. Elimínalos y Vargas quedará completamente indefenso ante nosotros. En cuanto a la recompensa, te pagaré cincuenta mil en plata si consigues acabar con los tres. Y una cosa más.\nEn cuanto Rimalie supo que Jaco había desaparecido, se le pasó la borrachera y salió a buscarlo por la selva. Parece que se cruzaron sin verse. Encuéntralo y dile que el muchacho está bien.
+}
+LeBasque_dialog_61_f {
+La campaña no será fácil ni durará un solo día. Por eso no irás sola. Marceau irá contigo.\nY llévate a Jaco. Ya es hora de que gane experiencia. Marceau está cumpliendo otro encargo y mañana estará aquí. Incorporarás su barco a tu escuadra y saldrán de caza. Tres tenientes, capitán. Elimínalos y Vargas quedará completamente indefenso ante nosotros. En cuanto a la recompensa, te pagaré cincuenta mil en plata si consigues acabar con los tres. Y una cosa más.\nEn cuanto Rimalie supo que Jaco había desaparecido, se le pasó la borrachera y salió a buscarlo por la selva. Parece que se cruzaron sin verse. Encuéntralo y dile que el muchacho está bien.
+}
+LeBasque_dialog_62 {
+Así que vendré mañana, pero por ahora buscaré a Rimalie...
+}
+LeBasque_dialog_63 {
+Nos vemos mañana, Capitán @<pchar>.
+}
+LeBasque_dialog_64 {
+Nos vemos.
+}
+LeBasque_dialog_65 {
+¡Ah, ahí viene nuestra espada asesina! Jaco y Marceau ya me lo han contado todo con todo lujo de detalles. Y solo lamento una cosa: no haberlo visto con mis propios ojos.
+}
+LeBasque_dialog_66 {
+Vargas no debió haberme atacado entonces en Tobago. Pero esto no es el final. Por cierto, ¿tengo derecho a algo más que elogios?
+}
+LeBasque_dialog_67 {
+Por supuesto. Aquí tienes tu recompensa: cincuenta mil piastras.
+}
+LeBasque_dialog_68 {
+Eso ya es otro tema. A todo el mundo le encantan las piastras. Gracias. ¿Y qué hay del titiritero? ¿Alguna idea de cómo contactar con él?
+}
+LeBasque_dialog_69 {
+Por desgracia, aún no. Ese viejo zorro ha olido la sangre y se esconde. Mis hombres están registrando todo el archipiélago, interrogando a todos los espías e informantes. Pero sin sus lugartenientes y el almirante, no resistirá mucho tiempo.
+}
+LeBasque_dialog_70 {
+¿Entonces lo único que podemos hacer es esperar a que cometa un error y saque la cabeza?
+}
+LeBasque_dialog_71 {
+Exacto. Ya que estás en ello, pon el barco en orden y deja que tus hombres se relajen en las tabernas; se han ganado el mejor ron de Tortuga. Y luego, dentro de siete días, ven a verme. Seguro que para entonces tendré una nueva misión para ti.
+}
+LeBasque_dialog_72 {
+Una semana de descanso no vendría mal. Hasta pronto, Michel.
+}
+LeBasque_dialog_73 {
+Ah, @<pchar>, eres tú. Todavía no tengo nada para ti.
+}
+LeBasque_dialog_74_m {
+Entendido, pasaré más tarde.
+}
+LeBasque_dialog_74_f {
+Entendido, volveré más tarde.
+}
+LeBasque_dialog_75 {
+Saludos, Capitán. Me alegra ver que está bien. Pase. Esta vez, la conversación será larga.
+}
+LeBasque_dialog_76 {
+Hola, Michel. Hoy hay un silencio inusual por aquí.
+}
+LeBasque_dialog_77_m {
+Etienne está ocupado, y Jaco está con él. Y nadie debería interferir. Después de todo lo que has hecho, seguir ocultándote sería una tontería. Sobre todo teniendo en cuenta lo que encontramos en el cofre de Molina.
+}
+LeBasque_dialog_77_f {
+Etienne está ocupado, y Jaco está con él. Y nadie debería interferir. Después de todo lo que has hecho, seguir ocultándote sería una tontería. Sobre todo teniendo en cuenta lo que encontramos en la caja de Molina.
+}
+LeBasque_dialog_78 {
+Ella ya ha desempeñado un papel clave en la eliminación de los secuaces de Vargas. Supongo que su utilidad aún no se ha agotado, ¿no?
+}
+LeBasque_dialog_79 {
+Lejos de estar exhausto, Vargas buscaba a un pirata que aún no hubiera alcanzado el verdadero poder, pero que ya se hubiera labrado una reputación. Y ya sabes a quién encontró. Después, se propuso encontrar la manera de deshacerse de mí con las mínimas pérdidas posibles, pero de una forma que sin duda llamaría la atención en España.
+}
+LeBasque_dialog_80_m {
+¿Así que él mismo se estaba buscando problemas? Y yo que pensaba que había una vieja rencilla entre ustedes dos.
+}
+LeBasque_dialog_80_f {
+¿Así que él mismo se estaba buscando problemas? Y yo que pensaba que había una vieja rencilla entre ustedes dos.
+}
+LeBasque_dialog_81 {
+Nada de eso. Vargas nunca fue mi verdadero objetivo. Solo es un dolor de cabeza que me impide llevar a cabo un plan mucho más serio.
+}
+LeBasque_dialog_82 {
+¿Y qué planes tienes?
+}
+LeBasque_dialog_83 {
+Venganza. Por todo lo que esos perros españoles les hicieron a nuestros hermanos en La Española. Debemos demostrar de qué son capaces los bucaneros. Saquearemos Maracaibo.
+}
+LeBasque_dialog_84 {
+¿Maracaibo? ¿Una ciudad a orillas de un lago poco profundo, a la que se accede por un paso no más ancho que un cuello de botella? ¿Y este paso, además, está protegido por una fortaleza considerada inexpugnable por buena parte del archipiélago?
+}
+LeBasque_dialog_85 {
+Ninguna fortaleza es inexpugnable. Si nos preparamos y organizamos bien, derrotaremos a los españoles y nos llevaremos un botín inimaginable. Como dijo un amigo mío, basta ya de cazadores furtivos y ladrones de poca monta. Es hora de que los bucaneros de Tortuga se hagan notar en todo el Caribe.
+}
+LeBasque_dialog_86_m {
+Supongo que esto es precisamente lo que me trajo a su residencia en aquel momento, ¿no?
+}
+LeBasque_dialog_86_f {
+Supongo que esto es precisamente lo que me trajo a su residencia en aquel momento, ¿no?
+}
+LeBasque_dialog_87 {
+Exactamente. Pero no tengo intención de tomar ninguna medida activa mientras Vargas esté vivo y estorbando. Además, aún no he recibido información importante. Y tengo motivos para creer que nuestro «amigo» también ha estado involucrado aquí.
+}
+LeBasque_dialog_88 {
+Increíble. Le cortamos los dos brazos y aún así logra arruinar tus planes.
+}
+LeBasque_dialog_89 {
+Esto me irrita tanto como a ti. Pero necesitamos información y, sobre todo, aliados que nos permitan llegar hasta Vargas. Así que primero debemos resolver estos problemas.
+}
+LeBasque_dialog_90 {
+¿Tendré que probarme el papel de espía o de diplomático?
+}
+LeBasque_dialog_91 {
+No hace falta. La información ya debería estar recopilada. Solo necesito averiguar por qué no la recibí. \nAdemás, con respecto a los aliados, convencí a d'Ogeron de que el ataque de Vargas a nuestro puesto avanzado podría representar una seria amenaza para Tortuga. Así que inició negociaciones secretas con los Caballeros de Malta.
+}
+LeBasque_dialog_92 {
+¿Interviene la Orden en las guerras entre potencias cristianas?
+}
+LeBasque_dialog_93 {
+Muy rara vez. Sin embargo, d'Ogeron aparentemente cuenta seriamente con ellos. Y ahora también con nosotros: somos oficialmente una comuna libre en esta isla bajo la protección de la Corona francesa. d'Ogeron se beneficia de nuestros barcos y hombres, y nosotros nos beneficiamos de su confiable fuerte y guarnición. Pero ese no es el punto ahora. \nUrbain Bellefleur está negociando con los malteses. Tiene una sobrina, Marie Bellefleur. De su tío heredó inteligencia, educación y la capacidad de resolver casi cualquier enigma. Afortunadamente, Dios ha sido mucho más misericordioso con su apariencia; en este sentido, es completamente diferente a él.
+}
+LeBasque_dialog_94 {
+¿Qué escucho...? ¿Se ha enamorado Michel le Basque?
+}
+LeBasque_dialog_95 {
+Para nada. No me interrumpas y verás a dónde quiero llegar. Marie es una vieja conocida mía. Odia a los españoles casi más que nosotros, pues su noble Inquisición la acusó de brujería y casi la quema en la Colina de las Brujas. \nYo, sin embargo, no soy tan supersticioso, así que le pedí que me ayudara a conseguir un mapa de Maracaibo e información sobre las fortificaciones españolas. Para ello, tuvo que usar los contactos de su tío y acompañarlo a la base de la Orden en Martinica.
+}
+LeBasque_dialog_96 {
+¿Cómo pudo la Orden saberlo...?
+}
+LeBasque_dialog_97 {
+Créeme, la Orden conoce secretos mucho más terribles.\nDebían haber regresado ayer. Pero el filibote 'Rosa de los Vientos', en el que zarparon, nunca llegó a Tortuga. Y eso no me gusta nada. Si Vargas interceptó el barco, de un solo golpe retrasará las negociaciones de d'Ogeron con la Orden y me privará de la información sobre Maracaibo.
+}
+LeBasque_dialog_98 {
+¿Entonces necesito encontrar la rosa de los vientos?
+}
+LeBasque_dialog_99 {
+Sí. Primero, habla con d'Ogeron. Averigua si lo han visto cerca de la isla y qué medidas se han tomado hasta ahora. Yo no iré. Mi relación con el gobernador aún es frágil y buena siempre que no nos entrometamos demasiado en los asuntos del otro.
+}
+LeBasque_dialog_100 {
+¿Acaso me hablará de este barco? No tengo nada que ver con sus asuntos.
+}
+LeBasque_dialog_101 {
+D'Ogeron sabe muy bien que muchos bucaneros, incluyéndome a mí, consideramos Tortuga nuestro hogar. Creo que si le dices que vienes de mi parte, no rechazará tu ayuda en este asunto. En cuanto hayas resuelto este problema, regresa aquí. Marceau no te acompañará esta vez; lo envié a Martinica con los malteses. Si el camino os lleva al mismo lugar, reunidos cuando os encontréis.
+}
+LeBasque_dialog_102 {
+Todo despejado. Me dirijo a d'Ogeron.
+}
+LeBasque_dialog_103_m {
+¿Querías algo?
+}
+LeBasque_dialog_103_f {
+¿Querías algo?
+}
+LeBasque_dialog_104 {
+Aún no.
+}
+LeBasque_dialog_105 {
+Ah, capitán. Etienne ya me contó cómo terminó todo, pero no quiero que me dé detalles. Quiero saberlo todo de usted.
+}
+LeBasque_dialog_106 {
+Bueno, entonces sírveme un vaso de ron. Tengo una historia que contar.
+}
+LeBasque_dialog_107 {
+Así pues, Vargas, con un golpe certero, interrumpió las negociaciones con la Orden, capturó a Marie y abandonó nuestro puesto de avanzada sin refuerzos...
+}
+LeBasque_dialog_108 {
+Intentaron abandonar el puesto de avanzada sin refuerzos.
+}
+LeBasque_dialog_109_m {
+Sí, tienes razón. D'Ogeron, como muestra de gratitud, permitió que todos los colonos supervivientes se instalaran en nuestra comuna, si no les importaba.
+}
+LeBasque_dialog_109_f {
+Sí, tienes razón. Como muestra de gratitud, D'Ogeron permitió que todos los colonos supervivientes se instalaran en nuestra comuna, si no les importaba.
+}
+LeBasque_dialog_110 {
+Hay una cosa que no entiendo: ¿por qué necesitaba mantener a Marie Bellefleur como rehén?
+}
+LeBasque_dialog_111 {
+Parece que simplemente quería tener un as bajo la manga en forma de rehén. Sin embargo, eso no lo salvó.
+}
+LeBasque_dialog_112 {
+¿Cómo está ella? Vargas le ha aportado mucha salud.
+}
+LeBasque_dialog_113 {
+Está sobrellevando la situación lo mejor que puede. Entregó los documentos de la orden intactos, pero ahora está absorta en las notas de Vargas. Intenté que descansara, pero es Marie... No se la puede obligar a hacer nada que no quiera.
+}
+LeBasque_dialog_114 {
+Aquí te explicamos cómo...
+}
+LeBasque_dialog_115 {
+Pero no toleraré esa obstinación de tu parte. Aquí tienes los cincuenta mil en plata acordados. Descansa, no te ves muy bien. Te recomiendo que consultes a nuestro monje sanador recién llegado. Creo que te está agradecido por haberle salvado el alma y estará encantado de ayudarte a recuperarte. \nY mañana hay una celebración aquí en tu honor, entre otras cosas. No llegues tarde.
+}
+LeBasque_dialog_116 {
+¿Que me perdí la fiesta? ¿Estás bromeando? No podrías echarme aunque quisieras. ¡Ja, ja!
+}
+LeBasque_dialog_117 {
+No me gustan todas estas fiestas multitudinarias con alcohol, Michel... Vale, iré.
+}
+LeBasque_dialog_118 {
+Descansa hoy, capitán. Nos vemos mañana en la celebración.
+}
+LeBasque_dialog_119 {
+Nos vemos mañana, Michel.
+}
+LeBasque_dialog_120 {
+¡Oigan, valientes! Hoy hay algo que celebrar: Diego Vargas finalmente recibió su merecido y se fue directo al infierno. No solo nos libramos de esa criatura repugnante que España engendró, sino que también le dimos un buen escarmiento. Y para colmo, unas chicas guapas han llegado a nuestro asqueroso agujero y han decidido quedarse.
+}
+LeBasque_dialog_121 {
+Pero los conozco, cabrones. Así que entiendan esto bien: quien les ponga un dedo encima sin su consentimiento tendrá que vérselas conmigo. Personalmente. De ahora en adelante, esta es la ley de nuestra comuna, y no toleraré que se infrinja.
+}
+LeBasque_dialog_122 {
+Durante demasiado tiempo hemos vivido como bestias hambrientas, dispuestas a devorar hasta el más mínimo hueso. Pero ahora hemos mostrado nuestra verdadera garra: hemos contraatacado a un enemigo que se creía invulnerable. Hemos demostrado que los bucaneros son mucho más que una simple banda de criminales. Somos una fuerza a tener en cuenta, les guste o no.
+}
+LeBasque_dialog_123 {
+Y si ese es el caso, es hora de dejar atrás algunos de nuestros viejos hábitos y demostrar que somos algo más que un grupo de matones y verdugos.
+}
+LeBasque_dialog_124 {
+Hoy, brindemos también por nuestros hermanos caídos en batalla contra la chusma española. Por aquellos que tuvieron la suerte de sobrevivir. ¡Y por los dos que se convirtieron en la punta de lanza que se clavó directamente en el corazón del enemigo: el capitán @<GetFullName> y Etienne Marceau!
+}
+LeBasque_dialog_125 {
+¡Por nuestro hogar! ¡Por nuestro futuro! ¡Brindemos, hermanos y hermanas! ¡Pronto volveremos al trabajo!
+}
+LeBasque_dialog_126 {
+¡Por todos nosotros, Michel! ¡Y por el éxito en tus futuros proyectos!
+}
+LeBasque_dialog_127 {
+Francois, no has traído nada, solo carnada. Y para que se convierta en plata reluciente, todos tendremos que arriesgar nuestras vidas...
+}
+LeBasque_dialog_128 {
+¡La fiesta continúa, hermanos! ¡Beban y diviértanse!
+}
+LeBasque_dialog_129 {
+Y para todos los que están en este círculo, se acabó. Adentro de la casa. Ahora.
+}
+LeBasque_dialog_130 {
+Jaco se quedará aquí; lo necesitaré. Reuniremos una flota y esperaremos tus noticias en Puerto Príncipe. Desde allí, la costa sur de Cuba está a tiro de piedra, y nos mantendremos alejados de las principales rutas marítimas españolas.
+}
+LeBasque_dialog_131 {
+¿Y cómo les comunicaremos el lugar y la hora de la reunión? Llevar a un bulto a cuestas es demasiado peligroso.
+}
+LeBasque_dialog_132 {
+No necesitarás el barco de pesca. Ya lo tengo todo previsto. Antes de zarpar, espera a mi hombre. Un indígena llamado Atauco te acompañará. Conoce la costa cubana mejor que ningún español. Desembarcará donde considere necesario y luego seguirá su camino.
+}
+LeBasque_dialog_133 {
+¿Y cómo transmitirá información? No me digas que puede volar, ¿verdad?
+}
+LeBasque_dialog_134 {
+No te preocupes por él. Sabe lo que hace. Busca a Arellano y haz que te diga la hora y el lugar de la reunión. Atauco se encargará del resto.
+}
+LeBasque_dialog_135 {
+Luego esperamos a Atauco y salimos al mar.
+}
+LeBasque_dialog_136 {
+Espero no llegar demasiado tarde. No lograste llevarte toda la plata sin mí, ¿verdad?
+}
+LeBasque_dialog_137_m {
+Llegaste justo a tiempo. Empezaba a dudar de que Atauco pudiera transmitir el mensaje correctamente.
+}
+LeBasque_dialog_137_f {
+Llegaste justo a tiempo. Empezaba a dudar de que Atauco pudiera transmitir el mensaje correctamente.
+}
+LeBasque_dialog_138 {
+En vano. Como pueden ver, aquí estoy. Ahora solo queda esperar a los españoles.
+}
+LeBasque_dialog_139 {
+Y quítales la plata. Allí, al menos, l'l'Olonnaisnais podrá relajarse.
+}
+LeBasque_dialog_140 {
+Es insuficiente, pero no tenemos otra opción. Estoy dispuesto a correr el riesgo. Espero que tú también. Sin embargo, si llegan refuerzos antes o aparecen durante la batalla, nos marcharemos de inmediato. Etienne, ¿qué opinas?
+}
+LeBasque_dialog_141 {
+¿Es la primera vez que te ofrecen algo en lo que eres realmente bueno y sigues quejándote?
+}
+LeBasque_dialog_142 {
+No se dejen llevar por la emoción. No tenemos tiempo para una batalla prolongada. Si un solo barco pierde el control, la formación se romperá. Si intenta regresar, no se lo permitan.
+}
+LeBasque_dialog_143_m {
+Excelente. Solo cuando hayamos destruido todos los demás barcos, tú y yo, @<pchar>, abordaremos el Margarita. Juntos. Tan pronto como el Le Renard suelte sus garfios, debes hacer lo mismo desde el otro lado. ¡No vayas primero! Les he preparado algo. Les gustará.
+}
+LeBasque_dialog_143_f {
+Excelente. Solo cuando hayamos destruido todas las demás naves, tú y yo, @<pchar>, abordaremos la Margarita. Juntos. Tan pronto como Le Renard suelte sus ganchos de agarre, debes hacer lo mismo desde el otro lado. ¡No vayas primero! Les he preparado algo. Les gustará.
+}
+LeBasque_dialog_144 {
+Jaco permanecerá en Marte y vigilará el sur. Denle una campana y un banderín de señales.
+}
+LeBasque_dialog_145 {
+Marie, '@<pchar>' te está esperando de nuevo. Mis soldados estarán en la vanguardia; no quiero ponerte en riesgo.
+}
+LeBasque_dialog_146 {
+Etienne, acompáñala y asegúrate de que no se encuentre con ninguna espada enemiga. Necesitaremos su ingenio más de una vez.
+}
+LeBasque_dialog_147 {
+Ah, y por favor, no hundan la Margarita. Hay una montaña de plata en juego. Y ahora, eso es todo. Vuelvan a sus puestos.
+}
+LeBasque_dialog_148 {
+Esos españoles lucharon como demonios... Pero el capitán no estaba entre los muertos. Lo que significa que todavía está en el barco.
+}
+LeBasque_dialog_149 {
+Lo más probable es que se haya encerrado en la cabaña.
+}
+LeBasque_dialog_150 {
+Y ahora está quemando todo lo que no debería caer en nuestras manos. Tenemos que darnos prisa.
+}
+LeBasque_dialog_151 {
+Estos juegos de espías me están empezando a poner de los nervios. Vámonos.
+}
+LeBasque_dialog_152 {
+Don Alonso, estás intentando engañarnos, y lo estás haciendo fatal. ¿Cinco buques de guerra, armados hasta los dientes, transportando una carga por valor de un par de miles de piastras?
+}
+LeBasque_dialog_153 {
+La ruta está programada desde Veracruz directamente hasta nuestro punto de encuentro. No hay escala en La Habana.
+}
+LeBasque_dialog_154 {
+Te has complicado mucho la vida, almirante Torralba. No pretendía recurrir a medidas extremas, pero no soporto que me mientan. Quizás deberías inspeccionar la quilla del barco ahora mismo.
+}
+LeBasque_dialog_155 {
+Llévate a ese desgraciado. Prepara todo para su viaje bajo la quilla. Empezaremos cuando vuelva a cubierta.
+}
+LeBasque_dialog_156 {
+Menos mal que no le disparaste antes de que pudiera siquiera abrir la boca. Parece que hay algo escondido detrás de ese mamparo. @<pchar>, llama a los hombres con palancas y hachas. Veamos por qué este loco decidió quemarse vivo.
+}
+LeBasque_dialog_157 {
+Y esa es la razón de ese borrador. Sabes, @<pchar>, creo que he cambiado de opinión sobre arrastrar al almirante bajo la quilla. Déjalo vivir, el sinvergüenza. Solo mira esto...
+}
+LeBasque_dialog_158 {
+Bueno, ¿qué dices? No fue en vano que empezamos todo esto, ¿eh?
+}
+LeBasque_dialog_159_m {
+Maldita sea, estoy listo para perdonar a l'l'Olonnaisnais por todas sus payasadas...
+}
+LeBasque_dialog_159_f {
+Maldita sea, estoy listo para perdonar a l'l'Olonnaisnais por todas sus payasadas...
+}
+LeBasque_dialog_160 {
+Vale, ya lo hemos visto, basta. Remolquemos este cacharro y larguémonos de aquí. El escuadrón Cartagena podría aparecer en cualquier momento.
+}
+LeBasque_dialog_161 {
+Dame un par de minutos más, Michel. No todos los días se ve una fortuna frente a ti.
+}
+LeBasque_dialog_162 {
+Tienes razón. Es hora de irnos de aquí.
+}
+LeBasque_dialog_163 {
+El plan de Castilian era casi perfecto. Capitán, ordene a sus hombres que preparen inmediatamente los aparejos y comiencen a izar la carga a cubierta. Hemos realizado una maniobra endiabladamente audaz, pero ni siquiera nosotros podemos engañar a toda la flota de Cartagena para siempre. ¡Rápido! ¡Nos llevaremos todo, desde los lingotes de plata hasta el último rubí!
+}
+LeBasque_dialog_164 {
+Ya están bajando las redes de carga. Que los castellanos se queden con su preciada harina, pero todo lo demás se repondrá en la bodega hoy mismo. Ni una sola barra de oro permanecerá aquí más tiempo del necesario. Nos habremos marchado mucho antes de que aparezcan velas extranjeras en el horizonte.
+}
+LeBasque_dialog_165 {
+Llevo tres horas intentando reconstruir los registros del barco y las notas personales del almirante. Si sigo así, estos malditos números acabarán conmigo.
+}
+LeBasque_dialog_166_m {
+Así que tómate un respiro. Llevo tiempo queriendo preguntar: ya que salimos del lugar de la reunión a la hora prevista, ¿por qué tenemos que seguir arrastrando este recipiente con nosotros?
+}
+LeBasque_dialog_166_f {
+Así que tómate un respiro. Llevo tiempo queriendo preguntar: ya que salimos del lugar de la reunión a la hora prevista, ¿por qué tenemos que seguir arrastrando este recipiente con nosotros?
+}
+LeBasque_dialog_167 {
+Perderemos muchísimo tiempo si intentamos recargar en medio del mar ahora. Primero, necesitamos llegar a tierra y encontrar un puerto seguro donde nadie nos moleste. Los españoles se enfurecerán en cuanto se enteren de que su oro ha encontrado mejores dueños.
+}
+LeBasque_dialog_168 {
+Pero las tierras más cercanas les pertenecen, y llevar el Margarita hasta Tortuga es demasiado peligroso.
+}
+LeBasque_dialog_169 {
+Por eso iremos a la Bahía de Aguadilla.
+}
+LeBasque_dialog_170 {
+¿Justo delante de las narices de los españoles? Michel...
+}
+LeBasque_dialog_171_m {
+Lo sé, lo sé. Crees que estoy completamente loco. Pero piénsalo: ¿adónde irán primero los españoles? Revolverán todas las aguas hasta Tortuga, pero ni se les ocurrirá buscarnos en su propia puerta. Llevaremos la Margarita a Aguadilla, terminaremos el trasbordo y luego nos dispersaremos en todas direcciones. Sigue con lo tuyo y ven a Tortuga a recoger tu parte cuando te apetezca.
+}
+LeBasque_dialog_171_f {
+Lo sé, lo sé. Crees que estoy completamente loco. Pero piénsalo: ¿adónde irán primero los españoles? Revolverán todas las aguas hasta Tortuga, pero ni se les ocurrirá buscarnos en su puerta. Llevaremos la Margarita a Aguadilla, terminaremos el trasbordo y luego cada uno seguirá su camino. Ocúpate de tus asuntos y ven a Tortuga a recoger tu parte cuando te apetezca.
+}
+LeBasque_dialog_172_m {
+¿No te da miedo quedarte a solas con l'l'Olonnaisnais? Podría hacer cualquier cosa.
+}
+LeBasque_dialog_172_f {
+¿No te da miedo quedarte a solas con l'l'Olonnaisnais? Podría hacerte cualquier travesura.
+}
+LeBasque_dialog_173 {
+Tiene muchos menos hombres que yo. Y ahora no le quitaré los ojos de encima. Me mostró lo que pensaba en la bodega, así que ese cabrón ya no me pillará desprevenida.
+}
+LeBasque_dialog_174 {
+Bueno, entonces, es hora de que regrese a mi barco. En honor a nuestra victoria, mi cocinero ha preparado una cena magnífica para toda la tripulación. Si se cansan de la comida de su cocinero, pueden unirse a nosotros.
+}
+LeBasque_dialog_175 {
+@<pchar>! ¡Me alegra verte! ¡Diablos, me alegra ver cualquier cara, siempre y cuando no se parezca a la de l'l'Olonnaisnais!
+}
+LeBasque_dialog_176 {
+¡Ja, ja! ¿Al parecer sí contó cada piedra, como prometió?
+}
+LeBasque_dialog_177 {
+Por supuesto. Y aunque fue quien más ganó, seguía insatisfecho.
+}
+LeBasque_dialog_178 {
+¿Más que nadie? ¿Por qué méritos?
+}
+LeBasque_dialog_179 {
+Su equipo sufrió las mayores pérdidas, con un número especialmente elevado de heridos.
+}
+LeBasque_dialog_180_m {
+No me sorprendería que ese cabeza hueca hubiera dejado lisiados a la mitad de ellos él solo. Bueno, basta de hablar de l'Olonnais. Estoy cansado de fingir que no me interesa cuánto le hemos robado a Su Majestad Católica.
+}
+LeBasque_dialog_180_f {
+No me sorprendería que ese cabeza hueca hubiera dejado lisiados a la mitad de ellos él solo. Bueno, basta de hablar de l'Olonnais. Estoy cansado de fingir que no me interesa cuánto le hemos robado a Su Majestad Católica.
+}
+LeBasque_dialog_181 {
+El botín resultó ser insignificante... Unos míseros un millón doscientos mil piastras.
+}
+LeBasque_dialog_182_m {
+No, @<pchar>, has oído bien. l'l'Olonnaisnais robó trescientos mil. Repartí doscientos cincuenta entre mis hombres y los de Marceau. Quinientos cincuenta me quedarán; usaremos este dinero para preparar la marcha sobre Maracaibo. Y tú, por favor, quédate con cien mil.
+}
+LeBasque_dialog_182_f {
+No, @<pchar>, has oído bien. l'l'Olonnaisnais robó trescientos mil. Repartí doscientos cincuenta entre mis hombres y los de Marceau. Quinientos cincuenta me quedarán; usaremos este dinero para preparar la marcha sobre Maracaibo. Y tú, por favor, quédate con cien mil.
+}
+LeBasque_dialog_183_m {
+Me encanta hacer negocios contigo, Michel. Iría a Maracaibo ahora mismo.
+}
+LeBasque_dialog_183_f {
+Me encanta hacer negocios contigo, Michel. Iría a Maracaibo ahora mismo.
+}
+LeBasque_dialog_184 {
+Pero no hay prisa. Todavía tienes tiempo para acostumbrarte a la nueva embarcación.
+}
+LeBasque_dialog_185 {
+¿De qué estás hablando?
+}
+LeBasque_dialog_186 {
+Te doy la Margarita.
+}
+LeBasque_dialog_187 {
+¿Me estás dando el galeón?
+}
+LeBasque_dialog_188_m {
+Los carpinteros han reparado el casco, instalado los mástiles y nos aseguran que esta vaca española aún tiene mucho que ofrecer. El capitán está a bordo; depende de ti decidir si lo dejas al timón o lo mandas a tierra.
+}
+LeBasque_dialog_188_f {
+Los carpinteros han reparado el casco, instalado los mástiles y nos aseguran que esta vaca española aún tiene mucho que ofrecer. El capitán está a bordo; depende de ti decidir si lo dejas al timón o lo mandas a tierra.
+}
+LeBasque_dialog_189_m {
+Nunca me lo esperé... ¡Gracias! Pero pensé que te había gustado.
+}
+LeBasque_dialog_189_f {
+Nunca me lo esperé... ¡Gracias! Pero pensé que te había gustado.
+}
+LeBasque_dialog_190 {
+Me caía bien. Sin embargo, ahora la mitad de la flota española la estará buscando, y Marceau y yo no necesitamos llamar la atención en este momento. Que yo sepa, la atención nunca te ha molestado.
+}
+LeBasque_dialog_191 {
+¡Ja, ja! ¡Pues que intenten quitármelo!
+}
+LeBasque_dialog_192 {
+Ahora vete. Que te diviertas; te espero aquí de nuevo en dos semanas.
+}
+LeBasque_dialog_193 {
+Para el viaje a Maracaibo. No llegaré tarde, Michel. Adiós.
+}
+LeBasque_dialog_194 {
+Ah, aquí viene @<pchar> de Rimalie. Ven y únete a nosotros.
+}
+LeBasque_dialog_195 {
+Envié a Jaco a comprobar que los carpinteros hubieran calafateado bien nuestra lancha de desembarco. Su meticulosidad será mucho más útil allí ahora. \nAsí que, es hora de la tarea que dará que hablar en todas las tabernas desde Tortuga hasta Port Royal. Nos dirigimos a Maracaibo.
+}
+LeBasque_dialog_196 {
+Basta. Cálmense, los dos. Antes de hablar de la expedición, debemos sellar nuestra alianza con nuestras firmas. El reparto del botín debe determinarse de antemano.
+}
+LeBasque_dialog_197 {
+Si alguien tiene alguna objeción o sugerencia, la escucho.
+}
+LeBasque_dialog_198 {
+Bueno, ya que todos están contentos con todo, adelante, firmen. Luego Marie nos pondrá al día.
+}
+LeBasque_dialog_199 {
+Por eso iremos primero a Aruba y buscaremos allí a Daniel Montbars. Tiene cuentas personales pendientes con España. Y los españoles no le pusieron el apodo de «Exterminador» precisamente por su buen apetito.
+}
+LeBasque_dialog_200 {
+Excelente. Ahora tendremos dos l'l'Olonnaisnais.
+}
+LeBasque_dialog_201 {
+Te equivocas, @<pchar>. Daniel odia a los españoles con toda su alma, pero tiene mucho sentido común. Además de fuerza y ​​valentía. Por si fuera poco, es muy amigo de los indígenas, y ya hemos visto que son excelentes aliados.
+}
+LeBasque_dialog_202 {
+Y conocen las tierras costeras de Maracaibo como la palma de su mano. No podríamos haber encontrado mejores guías.
+}
+LeBasque_dialog_203 {
+En cuanto a ti, @<pchar>... Tienes que ir a Aruba lo antes posible.
+}
+LeBasque_dialog_204_m {
+¿Me ordenas que vaya allí sola?
+}
+LeBasque_dialog_204_f {
+¿Me ordenas que vaya allí sola?
+}
+LeBasque_dialog_205 {
+Marceau y yo necesitaremos unos tres días más para bajar la pólvora de asedio a las bodegas y reunir a nuestros borrachos. Encuentra a Montbars y convéncelo de que se una a nosotros. Marie y Nicolas irán contigo.
+}
+LeBasque_dialog_206 {
+Esta vez tuve mucha más suerte con la empresa.
+}
+LeBasque_dialog_207 {
+Ejem... No he terminado. l'Olonnais, Marceau y yo llevaremos nuestros barcos en cuanto acabemos los preparativos. Y procuren mantener la boca cerrada. Si los españoles se enteran de nuestros planes antes de tiempo, no encontraremos ni una sola piastra en la ciudad. Eso es todo. No retengo a nadie más. Cada uno tiene trabajo que hacer.
+}
+LeBasque_dialog_208 {
+Bueno... Nos vemos en Aruba entonces.
+}
+LeBasque_dialog_209_m {
+¡Oh, aquí viene Michel! ¡Y Marceau también! ¡Y l'l'Olonnaisnais! ¡Qué gusto verlos a todos! ¿Se unirán a nosotros?
+}
+LeBasque_dialog_209_f {
+¡Oh, aquí viene Michel! ¡Y Marceau también! ¡Y l'l'Olonnaisnais! ¡Me alegra mucho verlos a todos! ¿Se unirán a nosotros?
+}
+LeBasque_dialog_210 {
+Marie partió a explorar Aruba. Y Nicolas... jeje... no pudo negarse, así que se convirtió en su guía.
+}
+LeBasque_dialog_211 {
+Bueno, sírvenos un poco a nosotros también. Tengo la sensación de que esta va a ser una conversación larga.
+}
+LeBasque_dialog_212 {
+Bueno, ¿van a seguir confesándose su amor o deberíamos tomar algo?
+}
+LeBasque_dialog_213 {
+¿Por la caída de Maracaibo?
+}
+LeBasque_dialog_214 {
+¡Por el otoño de Maracaibo!
+}
+LeBasque_dialog_215 {
+¡Beban, hermanos! ¡Salud!
+}
+LeBasque_dialog_216_m {
+Y aquí está el héroe de anoche. No tienes muy buen aspecto. ¿Estuviste bebiendo anoche?
+}
+LeBasque_dialog_216_f {
+Y aquí está la heroína de anoche. No te ves muy bien. ¿Estuviste bebiendo anoche?
+}
+LeBasque_dialog_217_m {
+¿De qué estás hablando? Estoy fresca y alegre. No grites así, me duele la cabeza.
+}
+LeBasque_dialog_217_f {
+¿De qué estás hablando? Estoy fresca y alegre. No grites así, me duele la cabeza.
+}
+LeBasque_dialog_218 {
+¡Ja, ja! Eso es bueno. Eso significa que hay algo de qué preocuparse. Ahora, cálmate, porque necesitamos hablar sobre un plan de acción.
+}
+LeBasque_dialog_219_m {
+Ya está listo.
+}
+LeBasque_dialog_219_f {
+Ya estoy listo.
+}
+LeBasque_dialog_220_m {
+Dado que has pasado más tiempo con los exploradores de Yamai, liderarás el escuadrón. Avanzaremos en formación ordenada hasta la bahía del fuerte. Hay zonas de poca profundidad peligrosas en el lado de la ciudad; mantendremos la distancia necesaria y mediremos la profundidad.
+}
+LeBasque_dialog_220_f {
+Dado que pasaste más tiempo con los exploradores de Yamai, liderarás el escuadrón. Avanzaremos en formación ordenada hasta la bahía del fuerte. Hay zonas de poca profundidad peligrosas en el lado de la ciudad; mantendremos la distancia necesaria y mediremos la profundidad.
+}
+LeBasque_dialog_221 {
+No recuerdo si lo comentamos ayer, pero primero tenemos que ocuparnos del fuerte y las fortificaciones de la ciudad; según los dibujos de Marie, también hay cañones capaces de destruir nuestros barcos.
+}
+LeBasque_dialog_222 {
+Lo hemos comentado. Por eso atacaremos primero el fuerte. Si necesitamos asaltarlo por tierra, tenemos un excelente guía.
+}
+LeBasque_dialog_223 {
+Excelente. ¿Cuándo actuaremos?
+}
+LeBasque_dialog_224 {
+Ahora mismo. Pero primero, deshagámonos de los barcos sobrantes del escuadrón. Todavía tenemos cuatro barcos que acomodar, y los banderines adicionales solo estorbarán en el estrecho.
+}
+LeBasque_dialog_225 {
+Diablo. Los entregaré en el estacionamiento ahora mismo y volveré.
+}
+LeBasque_dialog_226 {
+Todavía hay barcos adicionales en tu escuadrón. Déjalos anclados por ahora.
+}
+LeBasque_dialog_227 {
+Sí, ya lo averiguaré.
+}
+LeBasque_dialog_228 {
+Ahora podemos actuar.
+}
+LeBasque_dialog_229 {
+Entonces es hora de subir a bordo, Almirante.
+}
+LeBasque_dialog_230 {
+Ahora mismo. Maracaibo está cerca. ¡Y pronto lo tomaremos!
+}
+LeBasque_dialog_231 {
+¿Entonces a qué esperamos? ¡A bordo!
+}
+LeBasque_dialog_232 {
+Aquí está: la fortaleza que los españoles consideran inexpugnable.
+}
+LeBasque_dialog_233 {
+Y una ciudad rica en oro, que pronto será nuestra. El explorador de Yamai nos mostró la ubicación de los peligrosos bajíos, y Marie nos enseñó las fortificaciones. Estamos listos para la batalla, Michel.
+}
+LeBasque_dialog_234 {
+Propongo entonces que procedamos con el asalto sin más dilación. Recuérdele al jefe de sección que vigile mis banderas de señales.
+}
+LeBasque_dialog_235 {
+Así se hará, Almirante.
+}
+LeBasque_dialog_236 {
+No hay ni un alma en la ciudad... Maldita sea, no me imaginaba nuestra llegada a Maracaibo de esta manera.
+}
+LeBasque_dialog_237 {
+Los soldados no están luchando por cada casa, los habitantes del pueblo no están huyendo presas del pánico... Aquí hay algo raro. 
+}
+LeBasque_dialog_238 {
+Llevamos demasiado tiempo trasteando con este maldito fuerte. El gobernador podría haberse llevado todo lo de valor de aquí...
+}
+LeBasque_dialog_239 {
+O lo esconderemos en algún lugar de aquí... Pondremos esta ciudad patas arriba, pero encontraremos oro; al menos lo sacaremos del subsuelo, si está aquí.
+}
+LeBasque_dialog_240 {
+Etienne ya está registrando los almacenes, l'l'Olonnaisnais se ha apoderado de la bóveda del banco local y Marie está en prisión. Quizás encuentren algo. Envié a Daniel y a sus hombres fuera de la ciudad para que nos cubrieran las espaldas. Llévate a Nicolas y rodéalos a todos. Averigua qué has descubierto. Si te encuentras con un solo lugareño, tráelo vivo ante mí. \nUna vez que los hayas rodeado a todos, ve a la residencia y echa un vistazo. Mientras tanto, pondré guardias. No me gusta nada todo esto; tengo el presentimiento de que algo raro está pasando.
+}
+LeBasque_dialog_241 {
+Estaremos alerta, Michel.
+}
+LeBasque_dialog_242 {
+Michel, hemos encontrado el paradero del botín. Los españoles quemaron los documentos de la residencia, pero se salvó un despacho. El tesoro, las joyas y los bienes fueron enviados por tierra a Gibraltar.
+}
+LeBasque_dialog_243 {
+Así que, al final lo sacaron... ¿Cuándo?
+}
+LeBasque_dialog_244 {
+Maldita sea. Por eso se aferraron. Y les dimos muchísimo tiempo.
+}
+LeBasque_dialog_245 {
+Daniel divisó más adelante las huellas de pesados ​​carros y una escolta a caballo. Los exploradores ya los seguían. Si nos dábamos prisa, aún podríamos alcanzar al convoy.
+}
+LeBasque_dialog_246 {
+Hoy no llegaremos muy lejos. La gente apenas se mantiene en pie tras el asalto y aún están extrayendo balas de los heridos. Necesitamos reunir a nuestras tropas, reabastecernos de pólvora y preparar nuestras armas.
+}
+LeBasque_dialog_247 {
+¿Cuánto tiempo necesitamos?
+}
+LeBasque_dialog_248 {
+Al menos un día. Démosles un respiro a los hombres. Durante ese tiempo, Daniel averiguará qué tan lejos ha llegado el convoy.
+}
+LeBasque_dialog_249 {
+¿Y si ya está en Gibraltar?
+}
+LeBasque_dialog_250 {
+Así que tomaremos Gibraltar. Pero primero, intentemos averiguar cuántos soldados hay allí y qué tan bien están defendidos los accesos.
+}
+LeBasque_dialog_251 {
+Los exploradores de Yamai no pudieron alcanzar el convoy; los españoles se habían alejado demasiado. Sin embargo, descubrieron una emboscada en la selva.
+}
+LeBasque_dialog_252 {
+¿Y qué vamos a hacer, Michel?
+}
+LeBasque_dialog_253 {
+Vamos a tomar Gibraltar. Pero primero, vamos a acabar con quienes se interponen en nuestro camino.
+}
+LeBasque_dialog_254 {
+¿Qué? ¿Vamos a entrar directamente en la boca del lobo?
+}
+LeBasque_dialog_255 {
+Vamos a armar un lío, y entonces sacaré mi as bajo la manga. Los españoles ni siquiera lo sospechan.
+}
+LeBasque_dialog_256 {
+¿Qué otra carta bajo la manga?
+}
+LeBasque_dialog_257 {
+Confía en mí, @<pchar>. Pronto lo verás todo.
+}
+LeBasque_dialog_258 {
+Mmm... Vale. ¿Entonces nos ponemos en marcha?
+}
+LeBasque_dialog_259 {
+Sí. Tú liderarás a nuestras tropas. Mis hombres y yo cubriremos la retaguardia. Mantente alerta. En cuanto suene el primer disparo, dispérense; no dejen que disparen contra la multitud.
+}
+LeBasque_dialog_260 {
+Como usted ordene, Almirante.
+}
+LeBasque_dialog_261 {
+¡Marceau está herido! Una bala le alcanzó en el hombro. ¡Recogeremos a los heridos y nos retiraremos al cabo!
+}
+LeBasque_dialog_262 {
+¿Nos estamos retirando? ¿Cuál es tu as bajo la manga?
+}
+LeBasque_dialog_263 {
+¡Esta es mi carta ganadora! ¡Retírense! ¡Inmediatamente!
+}
+LeBasque_dialog_264 {
+¡Sí, Almirante!
+}
+LeBasque_dialog_265 {
+Aquí tienes mi as bajo la manga. ¿Qué te parece?
+}
+LeBasque_dialog_266 {
+Michel, eso fue... ¡impresionante!
+}
+LeBasque_dialog_267 {
+No en vano te pedí que confiaras en mí. Sé lo que hago. El barco de Francois recibió órdenes incluso antes de que entráramos en la selva.
+}
+LeBasque_dialog_268 {
+¿Qué deberíamos hacer ahora? Los españoles supervivientes probablemente se retiraron a la ciudad y dieron la alarma allí.
+}
+LeBasque_dialog_269 {
+Que lo planteen. Todavía me queda un as bajo la manga.
+}
+LeBasque_dialog_270 {
+¿Nos enteraremos también de esto en el último momento?
+}
+LeBasque_dialog_271 {
+¿Por qué no? ¿Recuerdas los morteros del muelle de Maracaibo?
+}
+LeBasque_dialog_272 {
+Espera... ¿Quieres arrastrarlos por la jungla? ¡Pesan tanto como... una isla entera!
+}
+LeBasque_dialog_273 {
+Ya hemos cargado uno en el barco de Francois. Atacaremos la guarnición desde allí. A juzgar por los documentos de Marie, su alcance será más que suficiente.
+}
+LeBasque_dialog_274 {
+¡Esto es una locura! ¡Si se dispara, destruirá la mitad del barco!
+}
+LeBasque_dialog_275 {
+Pero su bomba sembrará el pánico entre esos sinvergüenzas. Francois está dispuesto a correr el riesgo; le duele mucho que hayan decidido dejarlo sin el botín.
+}
+LeBasque_dialog_276 {
+¡Excelente, Daniel! Mientras están ocupados con nosotros, ataca por el flanco. Marie se quedará aquí para atender a los heridos y curarle el hombro a Marceau. ¡El resto, avancemos! Ya casi llegamos. ¡Pronto el oro de Maracaibo sonará en nuestros bolsillos!
+}
+LeBasque_dialog_277 {
+¡No nos volverán a abandonar!
+}
+LeBasque_dialog_278 {
+¡Los hemos derrotado! Reúne a tus hombres, tenemos que asaltar la ciudad a costa de las tropas en retirada.
+}
+LeBasque_dialog_279 {
+Michel, recuérdame que nunca juegue a las cartas contigo.
+}
+LeBasque_dialog_280 {
+Te lo recordaré cuando tengas el dinero. Mientras tanto, nos espera otra dura batalla. Los españoles están acorralados y lucharán hasta la muerte.
+}
+LeBasque_dialog_281 {
+No les servirá de nada. Nuestra gente lucha como demonios.
+}
+LeBasque_dialog_282 {
+¡Entonces a la batalla!
+}
+LeBasque_dialog_283 {
+¡A la batalla!
+}
+LeBasque_dialog_284 {
+Eso es todo... La resistencia se ha roto. La ciudad está a nuestros pies.
+}
+LeBasque_dialog_285 {
+Pero ¿a qué precio, Michel...? Incluso a las puertas, la victoria me llenó de alegría. Y ahora... Mira todos esos cuerpos. Si aquí no hay oro, nuestra gente...
+}
+LeBasque_dialog_286 {
+Está aquí. Y en esa residencia hay un hombre que sabe dónde encontrarlo. Basta de lamentaciones. Vamos a buscar lo que vinimos a buscar.
+}
+LeBasque_dialog_287 {
+Tienes razón. Vamos.
+}
+LeBasque_dialog_288_m {
+@<pchar>, ¡qué gusto verte! ¿A qué vienes?
+}
+LeBasque_dialog_288_f {
+@<pchar>, ¡qué gusto verte! ¿A qué vienes?
+}
+LeBasque_dialog_289_m {
+Me gustaría decirte que te extraño, pero no me gusta mentir, ¡ja, ja! Prepárate para darme mi parte, Michel. Ya me la gasté en mi cabeza.
+}
+LeBasque_dialog_289_f {
+Me gustaría decirte que te extraño, pero no me gusta mentir, ¡ja, ja! Prepárate para darme mi parte, Michel. Ya me la gasté en mi cabeza.
+}
+LeBasque_dialog_290 {
+¿Tu parte? No tengo ni idea de qué estás hablando. ¡Sal de mi casa inmediatamente!
+}
+LeBasque_dialog_291 {
+¡¿Qué?! ¡¿Qué demonios?!
+}
+LeBasque_dialog_292 {
+¡Ja, ja, ja! ¡Qué cara tienes! Venga, llamemos a los demás y repartámoslo.
+}
+LeBasque_dialog_293_m {
+Muy graciosa, Michel. Casi me echo a reír.
+}
+LeBasque_dialog_293_f {
+Muy graciosa, Michel. Casi me echo a reír.
+}
+LeBasque_dialog_294 {
+¿Qué fue eso, Michel?
+}
+LeBasque_dialog_295 {
+¡Vaya, caballeros! ¡Hemos logrado lo imposible! Hemos tomado una de las fortalezas más fortificadas y nos hemos apoderado de un botín tan inmenso que resulta indecente mencionarlo en voz alta. Es hora de que cada uno reciba lo que le corresponde.
+}
+LeBasque_dialog_296 {
+Espera, Michel, ¿dónde está Marie? ¿No deberíamos esperarla?
+}
+LeBasque_dialog_297 {
+Me pidió que le guardara su parte. Tenía asuntos urgentes en La Española. Algo relacionado con su tío fallecido...
+}
+LeBasque_dialog_298 {
+Así que, @<pchar>, tu parte es de doscientos cincuenta mil piastras. Tu equipo recibirá los pagos a los heridos y a las familias de los fallecidos por separado, recaudados por el intendente.
+}
+LeBasque_dialog_299_m {
+Michel, ¿puedes repetirlo? No tuve la oportunidad de disfrutarlo la primera vez.
+}
+LeBasque_dialog_299_f {
+Michel, ¿puedes repetirlo? No pude disfrutarlo la primera vez.
+}
+LeBasque_dialog_300 {
+¡Ja, ja! ¡Saldrás adelante! Ahora puedes comprarte un burdel, y las chicas te susurrarán estas palabras al oído todo el día.
+}
+LeBasque_dialog_301 {
+Hasta luego, viejo.
+}
+LeBasque_dialog_302_m {
+Michel, no pensé que todo terminaría así: sin beber, cantar y pelear.
+}
+LeBasque_dialog_302_f {
+Michel, no pensé que todo terminaría así, sin beber, cantar y pelear.
+}
+LeBasque_dialog_303_m {
+l'l'Olonnaisnais tiene razón. Con semejante botín, no tiene sentido organizar una fiesta con alcohol. Alguien perderá dinero, culpará a su vecino... Y ya sabemos cómo acaba eso.
+}
+LeBasque_dialog_303_f {
+l'l'Olonnaisnais tiene razón. Con semejante botín, no tiene sentido organizar una fiesta con alcohol. Alguien perderá dinero, culpará a su vecino... Y ya sabemos cómo acaba eso.
+}
+LeBasque_dialog_304 {
+Tienes los bolsillos llenos de dinero, pero no puedes disfrutar de verdad...
+}
+LeBasque_dialog_305_m {
+Hay un momento y un lugar para todo. Antes de que te vayas... creo que ya lo sabes, pero te lo diré de todos modos: si alguna vez necesitas ayuda de verdad, pídemelo. Puedes contar conmigo. Y siempre serás bienvenido aquí.
+}
+LeBasque_dialog_305_f {
+Hay un momento y un lugar para todo. Antes de que te vayas... creo que ya lo sabes, pero te lo diré de todos modos: si alguna vez necesitas ayuda de verdad, pídemelo. Puedes contar conmigo. Y siempre serás bienvenido aquí.
+}
+LeBasque_dialog_306 {
+Gracias, Michel. Lo anotaré para no poder echarme atrás después. ¡Ja, ja! Bueno, adiós. Nos vemos luego.
+}
+LeBasque_dialog_307 {
+Hasta luego, capitán. Hasta luego.
+}
+LeBasque_dialog_308_m {
+@<pchar>! Me alegra verte. ¿Cuál es el motivo de tu visita?
+}
+LeBasque_dialog_308_f {
+@<pchar>! Me alegra verte. ¿Cuál es el motivo de tu visita?
+}
+LeBasque_dialog_309_m {
+Esta vez solo pasé a verte.
+}
+LeBasque_dialog_309_f {
+Esta vez solo pasé a verte.
+}
+LeBasque_dialog_310 {
+¿Me oyes, Michel? Ordena que traigan pólvora y pedernal. Empecemos por esta hermosa residencia.
+}
+LeBasque_dialog_311 {
+¿Alonso?
+}
+LeBasque_dialog_312 {
+El carpintero que Jaco me ayudó a encontrar mientras ustedes se divertían en Cuba. Vauban estudió durante un tiempo con el mismísimo maestro Alexus, hasta que tuvo la imprudencia de herir el orgullo del anciano.\nTuvo que buscar otro trabajo. Aquí su talento ha resultado de lo más útil: ahora cuida de nuestras presas y remienda barcos con una maestría con la que muchos chapuceros solo podrían soñar.\nNo puede mejorar una nave, pero repararla está perfectamente a su alcance.
+}
+LeBasque_dialog_313_m {
+Son buenas noticias, Michel. Aun así, pensé que la «Santa Margarita» capturada te había gustado.
+}
+LeBasque_dialog_313_f {
+Son buenas noticias, Michel. Aun así, pensé que la «Santa Margarita» capturada te había gustado.
+}
+
+
+LeBasque_Mishel_le_Bask_1 {
+François, que el diablo te lleve, Olone. ¿Qué haces aquí?
+}
+
+LeBasque_Mishel_le_Bask_2 {
+¿En serio? No creo que nos interese eso.
+}
+
+LeBasque_Mishel_le_Bask_3 {
+Supongo que ahora se arrepiente.
+}
+
+LeBasque_Mishel_le_Bask_4 {
+Ve al grano, François. No todos aquí quieren oír eso. ¿Qué lograste averiguar?
+}
+
+LeBasque_Mishel_le_Bask_5 {
+¿Frente a la costa de Cuba? Quizás no lo sepas, pero Cuba es una isla bastante grande. Si no conoces la ruta exacta, estás perdiendo el tiempo.
+}
+
+LeBasque_Mishel_le_Bask_6 {
+¿La bahía? ¿Por qué estás tan seguro de que no esperarán refuerzos allí mismo en La Habana?
+}
+
+LeBasque_Mishel_le_Bask_7 {
+Mmm... Supongo que sabrás dónde buscar a alguien que conozca este lugar, ¿no?
+}
+
+LeBasque_Mishel_le_Bask_8 {
+Y lo estás exponiendo todo delante de todos para que no pueda negarme. Eres astuto, Olone. Igual de codicioso y sanguinario. Jamás haría negocios contigo; solo que ahora mi gente no me deja discrepar.
+}
+
+LeBasque_Mishel_le_Bask_9 {
+Así que por eso estabas demorando las cosas, Don Alonso. Esperando a que tu hombre llegara a la pólvora.
+}
+
+LeBasque_Mishel_le_Bask_10 {
+¿Crees que nos invitaron a entrar y nos dieron de beber? Luchamos igual que vosotros, y luego arrebatamos ese oro de detrás del mamparo donde el almirante lo había escondido.
+}
+
+LeBasque_Mishel_le_Bask_11 {
+¿Qué dijiste? ¡Dilo otra vez!
+}
+
+LeBasque_Mishel_le_Bask_12 {
+¡Dios sabe que he aguantado tus payasadas demasiado tiempo! Saca tu tontería. Te voy a dar una última lección.
+}
+
+LeBasque_Mishel_le_Bask_13 {
+No recibirás ni una sola piastra por el nuevo barco, François. Ya hemos firmado el contrato.
+}
+
+LeBasque_Mishel_le_Bask_14 {
+En ese caso, intenta hacerlo lo más rápido posible.
+}
+
+LeBasque_Mishel_le_Bask_15 {
+Bueno, bueno. Veo que se han adaptado muy bien aquí, caballeros.
+}
+
+LeBasque_Mishel_le_Bask_16 {
+Bueno, ya que insistes...
+}
+
+LeBasque_Mishel_le_Bask_17 {
+Bebamos. Sin duda beberemos. ¿Y dónde están Marie y el viejo Rimaille?
+}
+
+LeBasque_Mishel_le_Bask_18 {
+Bueno, ¿van a seguir confesándose su amor o deberíamos tomar algo?
+}
+
+LeBasque_Mishel_le_Bask_19 {
+A mí tampoco me gusta. Pero no voy a llevar a hombres exhaustos directamente a una emboscada. ¿O acaso quieres abandonar a los heridos en el camino?
+}
+
+LeBasque_Mishel_le_Bask_20 {
+Excelente. El resto, preparen a sus hombres y suministros. Partiremos mañana al mediodía.
+}
+
+LeBasque_Mishel_le_Bask_21 {
+No hemos venido a hablar de nuestras vidas, sino del rescate. La cantidad que pagarán para evitar que estas dos hermosas ciudades queden reducidas a cenizas.
+}
+
+LeBasque_Mishel_le_Bask_22 {
+Pues bien. Entonces tendremos que torturar a todos los que encontremos. Tarde o temprano, alguien soltará la lengua y nos dirá dónde está escondido el tesoro. Lo tomaremos y nos marcharemos, dejando ruinas a nuestro paso.
+}
+
+LeBasque_Mishel_le_Bask_23 {
+Aunque tuviera otros deseos, es demasiado tarde. Tu huida ha enfurecido a mis hombres, Don @<sld.name>. Solo la presa puede detenerlos ahora.
+}
+
+LeBasque_Mishel_le_Bask_24 {
+El dinero es nuestro único objetivo. No necesitamos nada más.
+}
+
+LeBasque_Mishel_le_Bask_25 {
+No. Su muerte no es culpa suya, y no le culpo por este pecado.
+}
+
+LeBasque_Mishel_le_Bask_26 {
+Pero eso no significa que haya olvidado todo lo demás, Alonso.
+}
+
+LeBasque_Mishel_le_Bask_27 {
+Sí, Etienne.
+}
+
+LeBasque_Mishel_le_Bask_28 {
+Debería haberlo hecho. Lo admito.
+}
+
+LeBasque_Mishel_le_Bask_29 {
+Si se hubiera enterado de la muerte de Diego, habríamos tenido que matarlo en el acto.
+}
+
+LeBasque_Mishel_le_Bask_30 {
+No lo entiendes... Di mi palabra de que no lo mataría yo mismo y que no dejaría que mi gente lo hiciera.
+}
+
+LeBasque_Mishel_le_Bask_31 {
+Julie... La amaba, Etienne. ¿Lo entiendes? Se la robé a Alonso. Y un año después, le dio fiebre y se consumió ante mis ojos en cuestión de días.
+}
+
+LeBasque_Mishel_le_Bask_32 {
+¿Sabes lo que es el amor? Probablemente no. De lo contrario, no estarías husmeando en mi alma con tus preguntas. Entonces, ¿eres feliz? ¿O debería decirte otra cosa?
+}
+
+LeBasque_Mishel_le_Bask_33 {
+Ahora ya lo saben. Pongan guardias, asegúrense de que Alonso no haga nada. En cuanto carguemos el botín en los barcos, zarparemos. Cada uno seguirá su propio rumbo hacia Tortuga.
+}
+
+LeBasque_Mishel_le_Bask_34 {
+Y no me molestes hasta mañana. Estaré ocupado.
+}
+
+LeBasque_Mishel_le_Bask_35 {
+Creo que en Puerto Príncipe. No podría asegurarlo.
+}
+
+LeBasque_Mishel_le_Bask_36 {
+Ahora te toca a ti, François. He decidido pagar las reparaciones de tu barco con fondos públicos. Así que aquí tienes tu parte y aquí el dinero para las reparaciones.
+}
+
+LeBasque_Mishel_le_Bask_37 {
+¿Tienes prisa por ir a algún sitio?
+}
+
+LeBasque_Mishel_le_Bask_38 {
+Bueno, adiós, François.
+}
+
+LeBasque_Mishel_le_Bask_39 {
+Ahora te toca a ti, Daniel. Sin tus guías indios, las cosas serían difíciles. Aquí tienes tu parte, y dásela a Yamai.
+}
+
+LeBasque_Mishel_le_Bask_40 {
+¿Vas a Aruba?
+}
+
+LeBasque_Mishel_le_Bask_41 {
+Bueno, que tengas buen viento, Daniel.
+}
+
+LeBasque_Mishel_le_Bask_42 {
+Y tú, viejo zorro, por favor, recibe tu parte también.
+}
+
+LeBasque_Mishel_le_Bask_43 {
+¿Qué, Nicolás, estás pensando en echar el ancla en tierra firme otra vez?
+}
+
+LeBasque_Mishel_le_Bask_44 {
+Pasan los años, pero tus planes no cambian.
+}
+
+LeBasque_Mishel_le_Bask_45 {
+¡Ja, ja! Ni lo intentes. No encontrarás otro maestro como él en todo el archipiélago.
+}
+
+LeBasque_Mishel_le_Bask_46 {
+Solo queda saldar cuentas contigo, Etienne. Aquí tienes tu parte. Sabía que te encantaba el dinero, por supuesto, pero arriesgarte a que te fusilen por seiscientas piastras por una herida... ¿No te parece un poco exagerado?
+}
+
+LeBasque_Mishel_le_Bask_47 {
+Ya hemos hablado de todo.
+}
+
+LeBasque_Mishel_le_Bask_48 {
+Esa persona ya no está. Y tú sabes perfectamente por qué.
+}
+
+LeBasque_Mishel_le_Bask_49 {
+No vamos a hablar de esto ahora.
+}
+
+LeBasque_Mishel_le_Bask_50 {
+Vine solo por el oro. Y lo conseguiré.
+}
+
+LeBasque_Mishel_le_Bask_51 {
+¿Coincidencias?
+}
+
+LeBasque_Mishel_le_Bask_52 {
+¡No quiero hablar de eso! No tenemos tiempo para charlas ociosas.
+}
+
+LeBasque_Mishel_le_Bask_53 {
+Pero fracasaste. Por eso estás aquí sentado en lugar de dirigir el servicio de inteligencia de la Casa de Contratación. Ya lo sabemos.
+}
+
+LeBasque_Mishel_le_Bask_54 {
+Basta, Alonso. La única razón por la que no te he apuñalado todavía es porque vine por el oro. Si sigues así, puede que cambie de opinión.
+}
+
+LeBasque_Mishel_le_Bask_55 {
+No había nada que ocultar. Vinimos por el oro. Y lo conseguimos.
+}
+
+LeBasque_Mishel_le_Bask_56 {
+¡Hemos conseguido el oro, Etienne!
+}
+
+LeBasque_Mishel_le_Bask_57 {
+Porque él no está aquí. ¿De qué trabajo estás hablando?
+}
+
+LeBasque_Mishel_le_Bask_58 {
+Basta. Nos vamos.
+}
+
+LeBasque_Mishel_le_Bask_59 {
+Dije: ¡Vámonos!
+}
+
+LeBasque_Mishel_le_Bask_60 {
+El oro debe estar en nuestros barcos antes de mañana por la mañana. De lo contrario, ya saben lo que pasará.
+}

@@ -36,7 +36,6 @@ void wdmReset()
 //Storm
 void wdmStormGen(float dltTime, float playerShipX, float playerShipZ, float playerShipAY)
 {
-	bool encoff = false;
 	if(CheckAttribute(pchar,"worldmapencountersoff") == 1)
 	{
 		if(sti(pchar.worldmapencountersoff)) return;
@@ -76,7 +75,6 @@ void wdmShipEncounter(float dltTime, float playerShipX, float playerShipZ, float
 		wdmTimeOfLastFollow = wdmTimeOfLastFollow + dltTime*WDM_FOLLOW_RATE*1000.0*iEncountersRate;
 		wdmTimeOfLastSpecial = wdmTimeOfLastSpecial + dltTime*WDM_SPECIAL_RATE*1000.0*iEncountersRate;
 		//Вероятность от количества созданных
-		float nump = 1.0 - numShips*0.15;
 		//Выбираем
 		if(rand(1001) + 1 < wdmTimeOfLastMerchant)
 		{
@@ -220,8 +218,37 @@ void Map_TraderSucces()
 
 void Map_TraderSucces_quest(string sChar)
 {
+	if (GetCharacterIndex(sChar) < 0)
+		return;
+	
 	ref character = CharacterFromID(sChar);
 	
+	// Линейка ле Баска. Третий квест.
+if (sChar == "Esteban_Molina")
+{
+	if (!CheckAttribute(pchar, "questTemp.AoP.LaPalomaOutcome"))
+	{
+		ref sldLB;
+		pchar.questTemp.AoP.LaPalomaOutcome = "escaped";
+		pchar.quest.LaPaloma_ShipSink.over = "yes";
+		AddQuestRecord("Hunting_huntsman", "2");
+		CloseQuestHeader("Hunting_huntsman");
+		LocatorReloadEnterDisable("Bucaneer_Outpost", "reload6_back", true); // закрыть дом ле Баска
+		sldLB = characterFromId("Etien_Marso");
+		sldLB.lifeday = 0;
+		sldLB = characterFromId("Gaspar_Leru");
+		RemoveLandQuestmark_Main(sldLB, "Hunting_huntsman");
+		sldLB.lifeday = 0;
+		Map_ReleaseQuestEncounter("Esteban_Molina");
+		group_DeleteGroup("LaPaloma_Group");
+		RemoveMapQuestMark("Havana_town", "Hunting_huntsman"); // убрать метку острова
+		// снять квестовые локи с Рималье
+		DeleteAttribute(pchar, "questTemp.Brides_Tortuga.RimalierDismissLocked");
+		sldLB = characterFromId("Rimalier");
+		SetCharacterRemovable(sldLB, true);
+	}
+}
+
 	//пиратка, квест №7
 	if (sChar == "LeonCapitain")
 	{
@@ -296,13 +323,13 @@ void Map_TraderSucces_quest(string sChar)
 	}
 	
 	//розыск и отдача кэпу судового журнала
-	if (HasSubStr(sChar, "PortmansCap_") && characters[GetCharacterIndex(sChar)].quest == "InMap")
+	if (HasSubStr(sChar, "PortmansCap_") && character.quest == "InMap")
 	{
 		SetCapitainFromSeaToCity(sChar);
 		Log_TestInfo("Энканутер рассеянного кэпа " + sChar + " дошёл до места назначения.");
 	}
 	//поиски кэпа-вора
-	if (HasSubStr(sChar, "SeekCap_") && characters[GetCharacterIndex(sChar)].quest == "InMap")
+	if (HasSubStr(sChar, "SeekCap_") && character.quest == "InMap")
 	{
 		SetRobberFromMapToSea(sChar);
 		Log_TestInfo("Энканутер кэпа-вора " + sChar + " дошёл до места назначения.");
@@ -324,13 +351,13 @@ void Map_TraderSucces_quest(string sChar)
 		}
 	}
 	//поиски бригантины с мушкетом
-	if (sChar == "MushketCap" && characters[GetCharacterIndex(sChar)].quest == "InMap")
+	if (sChar == "MushketCap" && character.quest == "InMap")
 	{
 		SetMushketFromMapToSea();
 		Log_TestInfo("Энканутер кэпа с мушкетом дошёл до места назначения.");
 	}
 	//поиски брига Королева
-	if (sChar == "Danielle" && characters[GetCharacterIndex(sChar)].quest == "InMap")
+	if (sChar == "Danielle" && character.quest == "InMap")
 	{
 		SetDanielleFromMapToSea();
 		Log_TestInfo("Энканутер кэпа брига Queen дошёл до места назначения.");

@@ -94,3 +94,31 @@ Spójrzmy. Tego dnia port opuściły następujące statki: pinas "Adelaide", gal
 Villemstad_PortMan_29 {
 Dziękuję!
 }
+
+Villemstad_PortMan_30 {
+Czy może mi pan powiedzieć, jakie statki pod hiszpańską banderą odnotowano tutaj w ciągu ostatniego tygodnia?
+}
+Villemstad_PortMan_31 {
+Pod hiszpańską banderą, powiada pani? Nie było ich wiele.\nProszę spojrzeć. Galeon 'Hernal Diaz' kapitana Gabriela de Seguenza. Wczoraj z Porto Bello przybyły dwa handlowe fleuty; właścicielem obu jest Andres Fonseca. No i oczywiście pani '@<PChar>'.
+}
+Villemstad_PortMan_32 {
+A skąd przypłynął galeon?
+}
+Villemstad_PortMan_33 {
+Z Hawany. Ale to tylko informacja z moich dokumentów. Nikt nie miał obowiązku zdawać szczegółowej relacji ze swojej trasy.
+}
+Villemstad_PortMan_34 {
+Może wiadomo panu coś o pasażerach?
+}
+Villemstad_PortMan_35 {
+Obawiam się, że to wszystko.
+}
+Villemstad_PortMan_36 {
+Tak, szkoda.
+}
+Villemstad_PortMan_37 {
+Jeśli kogoś pani szuka, proszę popytać miejscowych robotników portowych. Rozmawiają z przybywającymi marynarzami. W dzień są zbyt zajęci na pogawędki, ale wieczorami często rozbijają obóz tutaj, na samym brzegu.
+}
+Villemstad_PortMan_38 {
+Dziękuję.
+}

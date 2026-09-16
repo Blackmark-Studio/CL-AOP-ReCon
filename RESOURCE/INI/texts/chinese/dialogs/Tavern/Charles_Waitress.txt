@@ -1,45 +1,45 @@
 Charles_Waitress_1 {
-有问题吗，@<GetAddress_Form>?
+有问题吗， @<GetAddress_Form>?
 }
 Charles_Waitress_2 {
-有什么事需要俺帮忙吗，@<GetAddress_Form>?
+有什么事需要我帮忙吗， @<GetAddress_Form>?
 }
 Charles_Waitress_3 {
 @<RandPhraseSimple>
 }
 Charles_Waitress_4_m {
-嗯，你这是在跟我调情吗，先生？
+嗯， 你这是在跟我调情吗， 先生？ 
 }
 Charles_Waitress_4_f {
-你又来这些奇怪的问题……你就这么喜欢烦我吗？
+你又来这些奇怪的问题…… 你就这么喜欢烦我吗？ 
 }
 Charles_Waitress_5_m {
-你今天已经第三次提起这事了……这是在表示你感兴趣吗？
+你今天已经第三次提起这事了…… 这是在表示你感兴趣吗？ 
 }
 Charles_Waitress_5_f {
-你今天已经第三次提这个问题了……你是在开玩笑吗？
+你今天已经第三次提这个问题了…… 你是在开玩笑吗？ 
 }
 Charles_Waitress_6 {
-你又要问问题了吗，@<GetAddress_Form>?
+你又要问问题了吗， @<GetAddress_Form>?
 }
 Charles_Waitress_7_m {
-我改主意了……
+我改主意了…… 
 }
 Charles_Waitress_7_f {
-我改变主意了……
+我改变主意了…… 
 }
 Charles_Waitress_8 {
-我现在没什么可说的。
+我现在没什么可说的。 
 }
 Charles_Waitress_9 {
 @<RandPhraseSimple>
 }
 Charles_Waitress_10 {
-不不不，哪有啊，美女……
+不不不， 哪有啊， 美女…… 
 }
 Charles_Waitress_11 {
-哪有啊，亲爱的，只是有点健忘……
+哪有啊， 亲爱的， 只是有点健忘…… 
 }
 Charles_Waitress_12 {
-没什么问题……
+没什么问题…… 
 }

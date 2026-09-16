@@ -1,527 +1,527 @@
 Residence_dialog_1 {
-守卫马上就要来了，到时候你可就死无全尸了！
+守卫马上就要来了， 到时候你可就死无全尸了！ 
 }
 Residence_dialog_2_m {
-卫兵！有罪犯在逃！
+卫兵！ 有罪犯在逃！ 
 }
 Residence_dialog_2_f {
-卫兵！有个女罪犯在外面逍遥！
+卫兵！ 有个女罪犯在外面逍遥！ 
 }
 Residence_dialog_3 {
 @<RandPhraseSimple>
 }
 Residence_dialog_4 {
-想活命就闭嘴吧……
+想活命就闭嘴吧…… 
 }
 Residence_dialog_5 {
-最好闭上你那张漂亮的小嘴，宝贝……
+最好闭上你那张漂亮的小嘴， 宝贝…… 
 }
 Residence_dialog_6 {
 @<RandPhraseSimple>
 }
 Residence_dialog_7_m {
-你最好赶紧走吧，@<GetAddress_Form>。像你这种人可不该在总督家里乱晃……
+你最好赶紧走吧， @<GetAddress_Form>。 像你这样的家伙， 可不适合待在市长府邸里…… 
 }
 Residence_dialog_7_f {
-你还是赶紧走吧，@<GetAddress_Form>。像你这样的家伙，可不适合待在总督府里……
+你还是赶紧走吧， @<GetAddress_Form>。 像你这样的家伙， 可不适合待在市长府邸里…… 
 }
 Residence_dialog_8_m {
-滚出去，混蛋！你怎么进来的？
+滚出去， 混蛋！ 你怎么进来的？ 
 }
 Residence_dialog_8_f {
-滚出去，你这家伙！你怎么混进来的？
+滚出去， 你这家伙！ 你怎么混进来的？ 
 }
 Residence_dialog_9 {
-现在这世道真是乱，什么阿猫阿狗都敢在总督府附近晃悠@<XI_ConvertString>！
+现在这世道真是乱， 什么阿猫阿狗都敢在官邸附近晃悠@<XI_ConvertString>！ 
 }
 Residence_dialog_10 {
 @<LinkRandPhrase>
 }
 Residence_dialog_11 {
-冷静点，傻瓜……
+冷静点， 傻瓜…… 
 }
 Residence_dialog_12 {
-注意点你的用词……
+注意点你的用词…… 
 }
 Residence_dialog_13 {
 @<RandPhraseSimple>
 }
 Residence_dialog_14 {
-你好。我是为总督效力的，我叫@<GetFullName>。
+你好。 我是为市长效力的， 我叫@<GetFullName>。 
 }
 Residence_dialog_15 {
-我正在打扫这个房间，@<GetAddress_Form>。
+我正在打扫这个房间， @<GetAddress_Form>。 
 }
 Residence_dialog_16 {
-你知道吗，@<GetAddress_Form>，我们这位总督人不错，给手下的薪水也挺高的……
+你知道吗， @<GetAddress_Form>， 我们这位市长人不错， 给手下的薪水也挺高的…… 
 }
 Residence_dialog_17 {
 @<LinkRandPhrase>
 }
 Residence_dialog_18 {
-好的。
+好的。 
 }
 Residence_dialog_19 {
-嗯，太棒了……
+嗯， 太棒了…… 
 }
 Residence_dialog_20 {
 @<RandPhraseSimple>
 }
 Residence_dialog_21 {
-求你了，饶了我吧，我还想活命！
+求你了， 饶了我吧， 我还想活命！ 
 }
 Residence_dialog_22_m {
-我又没惹你！求您放过我，先生！
+我又没惹你！ 求您放过我， 先生！ 
 }
 Residence_dialog_22_f {
-我又没惹你，求您饶了我，夫人！
+我又没惹你， 求您饶了我， 夫人！ 
 }
 Residence_dialog_23 {
 @<RandPhraseSimple>
 }
 Residence_dialog_24 {
-闭嘴，别碍事。
+闭嘴， 别碍事。 
 }
 Residence_dialog_25 {
-闭嘴，蠢货。
+闭嘴， 蠢货。 
 }
 Residence_dialog_26 {
 @<RandPhraseSimple>
 }
 Residence_dialog_27_m {
-很高兴见到您，@<pchar>先生。我叫@<GetFullName>，随时为您效劳。
+很高兴见到您， @<pchar>先生。 我叫@<GetFullName>， 随时为您效劳。 
 }
 Residence_dialog_27_f {
-很高兴见到您，@<pchar>女士。我叫@<GetFullName>，随时为您效劳。
+很高兴见到您， @<pchar>女士。 我叫@<GetFullName>， 随时为您效劳。 
 }
 Residence_dialog_28 {
-，咱们认识一下吧。
+， 咱们认识一下吧。 
 }
 Residence_dialog_29 {
-，很高兴认识你。
+， 很高兴认识你。 
 }
 Residence_dialog_30 {
-@<TimeGreeting>，@<NPChar>@<RandPhraseSimple>
+@<TimeGreeting>， @<NPChar>@<RandPhraseSimple>
 }
 Residence_dialog_31_m {
-总督，有什么需要我帮忙的吗？
+市长， 有什么需要我帮忙的吗？ 
 }
 Residence_dialog_31_f {
-请问有什么需要我效劳的吗，女总督？
+请问有什么需要我效劳的吗， 女市长？ 
 }
 Residence_dialog_32_m {
-我想回自己房间休息一下。
+我想回自己房间休息一下。 
 }
 Residence_dialog_32_f {
-我想回自己房间休息一下。
+我想回自己房间休息一下。 
 }
 Residence_dialog_33 {
-有个差事要交给你……
+有个差事要交给你…… 
 }
 Residence_dialog_34_m {
-别放心上，美女。
+别放心上， 美女。 
 }
 Residence_dialog_34_f {
-别放在心上。
+别放在心上。 
 }
 Residence_dialog_35 {
-谢谢，不过我现在不需要帮忙。
+谢谢， 不过我现在不需要帮忙。 
 }
 Residence_dialog_36 {
 @<RandPhraseSimple>
 }
 Residence_dialog_37 {
-别放心上。
+别放心上。 
 }
 Residence_dialog_38 {
-谢谢，不过我现在不需要帮忙。
+谢谢， 不过我现在不需要帮忙。 
 }
 Residence_dialog_39 {
 @<RandPhraseSimple>
 }
 Residence_dialog_40 {
-需要我在某个时间叫醒您吗？
+需要我在某个时间叫醒您吗？ 
 }
 Residence_dialog_41 {
-你需要有人帮你准时叫醒吗？
+你需要有人帮你准时叫醒吗？ 
 }
 Residence_dialog_42 {
 @<RandPhraseSimple>
 }
 Residence_dialog_43 {
-我早上还有事要处理。
+我早上还有事要处理。 
 }
 Residence_dialog_44 {
-我得先处理几件事。
+我得先处理几件事。 
 }
 Residence_dialog_45 {
-我得第二天早上醒来。
+我得第二天早上醒来。 
 }
 Residence_dialog_46_m {
-天黑前我得恢复过来。
+天黑前我得恢复过来。 
 }
 Residence_dialog_46_f {
-天黑前我得恢复过来。
+天黑前我得恢复过来。 
 }
 Residence_dialog_47 {
-还没呢，我还有些事没处理完。
+还没呢， 我还有些事没处理完。 
 }
 Residence_dialog_48 {
-好吧，@<GetAddress_Form>。明早我会给你送上一顿丰盛的早餐，还会帮你整理床铺。
+好吧， @<GetAddress_Form>。 明早我会给你送上一顿丰盛的早餐， 还会帮你整理床铺。 
 }
 Residence_dialog_49 {
-好，那俺该去休息了……
+好， 那我该去休息了…… 
 }
 Residence_dialog_50_m {
-等等，我改主意了。现在还太早。
+等等， 我改主意了。 现在还太早。 
 }
 Residence_dialog_50_f {
-等等，我改变主意了。现在还太早。
+等等， 我改变主意了。 现在还太早。 
 }
 Residence_dialog_51_m {
-听总督的安排。
+听市长的安排。 
 }
 Residence_dialog_51_f {
-如总督大人所愿。
+如市长大人所愿。 
 }
 Residence_dialog_52 {
-太好了。
+太好了。 
 }
 Residence_dialog_53_m {
-我刚在想，得去办点事。
+我刚在想， 得去办点事。 
 }
 Residence_dialog_53_f {
-我正好在想，得去办点事。
+我正好在想， 得去办点事。 
 }
 Residence_dialog_54 {
-我在认真听你说。
+我在认真听你说。 
 }
 Residence_dialog_55 {
-我洗耳恭听。
+我洗耳恭听。 
 }
 Residence_dialog_56 {
 @<RandPhraseSimple>
 }
 Residence_dialog_57 {
-宝贝，上床来，咱们乐一乐！
+宝贝， 上床来， 咱们乐一乐！ 
 }
 Residence_dialog_58 {
-我觉得现在正好可以在我的床上好好玩一玩。
+我觉得现在正好可以在我的床上好好玩一玩。 
 }
 Residence_dialog_59_m {
-算了，我改主意了。
+算了， 我改主意了。 
 }
 Residence_dialog_59_f {
-算了，我改主意了。
+算了， 我改主意了。 
 }
 Residence_dialog_60 {
-不过，现在我好像也没啥需要的。
+不过， 现在我好像也没什么需要的。 
 }
 Residence_dialog_61 {
 @<RandPhraseSimple>
 }
 Residence_dialog_62 {
-我不瞒你，先生，我挺喜欢你的。我会尽力不让你失望。
+我不瞒你， 先生， 我挺喜欢你的。 我会尽力不让你失望。 
 }
 Residence_dialog_63 {
-啊，我从没想过会遇到这么大胆又热情的男人……
+啊， 我从没想过会遇到这么大胆又热情的男人…… 
 }
 Residence_dialog_64 {
 @<RandPhraseSimple>
 }
 Residence_dialog_65 {
-早就听说过你的事迹，船长。能现在在你身边，真是太幸运了……
+早就听说过你的事迹， 船长。 能现在在你身边， 真是太幸运了…… 
 }
 Residence_dialog_66 {
-没想到你竟然看上了一个普通女仆！你交代的“差事”，我乐意效劳……
+没想到你竟然看上了一个普通女仆！ 你交代的“差事”， 我乐意效劳…… 
 }
 Residence_dialog_67 {
 @<RandPhraseSimple>
 }
 Residence_dialog_68 {
-咱们开始吧，宝贝！
+咱们开始吧， 宝贝！ 
 }
 Residence_dialog_69 {
-哦，没错！
+哦， 没错！ 
 }
 Residence_dialog_70 {
 @<RandPhraseSimple>
 }
 Residence_dialog_71 {
-来点乐子吧！
+来点乐子吧！ 
 }
 Residence_dialog_72 {
-真聪明，跟俺在一起可不会无聊！
+真聪明， 跟我在一起可不会无聊！ 
 }
 Residence_dialog_73 {
 @<RandPhraseSimple>
 }
 Residence_dialog_74 {
-先生，您这让我很为难啊……其实，我跟您的总督关系挺近的。@<UpperFirst> @<gover> 有时候会请我过去……一起玩得开心。我可不想惹他生气，丢了这份差事……
+先生， 您这让我很为难啊…… 其实， 我跟您的市长关系挺近的。 @<UpperFirst>@<gover>有时候会请我过去…… 一起玩得开心。 我可不想惹他生气， 丢了这份差事…… 
 }
 Residence_dialog_75 {
-哎呀，这种情况下我怕总督@<gover>会对我心生怨气。他最近老是对我表现出兴趣……要是他知道了一切，会不会把我赶出去……
+哎呀， 这种情况下我怕市长@<gover>会对我心生怨气。 他最近老是对我表现出兴趣…… 要是他知道了一切， 会不会把我赶出去…… 
 }
 Residence_dialog_76 {
 @<RandPhraseSimple>
 }
 Residence_dialog_77 {
-冷静点，亲爱的，这里谁干什么都是我说了算。@<gover>听我的，他来镇上是为了维持秩序，不是跟员工八卦闲聊。再说了，没人让你多嘴这事。
+冷静点， 亲爱的， 这里谁干什么都是我说了算。 @<gover>听我的， 他来镇上是为了维持秩序， 不是跟员工八卦闲聊。 再说了， 没人让你多嘴这事。 
 }
 Residence_dialog_78 {
-嗯，看来还是别从自己手下那儿抢姑娘比较好。希望他没拿公款在你身上乱花……
+嗯， 看来还是别从自己手下那儿抢姑娘比较好。 希望他没拿公款在你身上乱花…… 
 }
 Residence_dialog_79 {
-多谢您的青睐，Governor。但我只能婉拒，因为我已经结婚了。
+多谢您的青睐， 市长。 但我只能婉拒， 因为我已经结婚了。 
 }
 Residence_dialog_80 {
-说实话，像你这样有权势的人会对我感兴趣，确实让我受宠若惊，但我不能答应。我的心早已属于另一个男人了。
+说实话， 像你这样有权势的人会对我感兴趣， 确实让我受宠若惊， 但我不能答应。 我的心早已属于另一个男人了。 
 }
 Residence_dialog_81 {
 @<RandPhraseSimple>
 }
 Residence_dialog_82 {
-那又怎样？这城是老子的地盘，你敢跟你的主子作对？
+那又怎样？ 这城是我的地盘， 你敢跟你的主子作对？ 
 }
 Residence_dialog_83 {
-听着，别把事情搞复杂了。这点小事就咱们俩知道。
+听着， 别把事情搞复杂了。 这点小事就咱们俩知道。 
 }
 Residence_dialog_84 {
 @<RandPhraseSimple>
 }
 Residence_dialog_85 {
-行了，宝贝，别紧张，回去忙你的吧。
+行了， 宝贝， 别紧张， 回去忙你的吧。 
 }
 Residence_dialog_86 {
-对不起，先生，我实在干不了这种事……请让我继续打扫吧。
+对不起， 先生， 我实在干不了这种事…… 请让我继续打扫吧。 
 }
 Residence_dialog_87 {
-请你体谅下我的处境，我真的不想背叛家人！
+请你体谅下我的处境， 我真的不想背叛家人！ 
 }
 Residence_dialog_88 {
 @<RandPhraseSimple>
 }
 Residence_dialog_89 {
-照老子说的做，不然我把你扔出去！
+照我说的做， 不然我把你扔出去！ 
 }
 Residence_dialog_90 {
-看样子你还没搞清楚自己的处境。别逼我下狠手！
+看样子你还没搞清楚自己的处境。 别逼我下狠手！ 
 }
 Residence_dialog_91 {
 @<RandPhraseSimple>
 }
 Residence_dialog_92 {
-行吧，那这话题就到此为止。
+行吧， 那这话题就到此为止。 
 }
 Residence_dialog_93 {
-好的，Governor先生。不过这事儿就咱们俩知道就行……
+好的， 市长先生。 不过这事儿就咱们俩知道就行…… 
 }
 Residence_dialog_94 {
-听您的，先生。我会尽力不让您失望。
+听您的， 先生。 我会尽力不让您失望。 
 }
 Residence_dialog_95 {
 @<RandPhraseSimple>
 }
 Residence_dialog_96 {
-开工吧，宝贝！
+开工吧， 宝贝！ 
 }
 Residence_dialog_97 {
-哦，没错！
+哦， 没错！ 
 }
 Residence_dialog_98 {
 @<RandPhraseSimple>
 }
 Residence_dialog_99 {
-来点乐子吧！
+来点乐子吧！ 
 }
 Residence_dialog_100 {
-真聪明，跟俺在一起可不会无聊！
+真聪明， 跟我在一起可不会无聊！ 
 }
 Residence_dialog_101 {
 @<RandPhraseSimple>
 }
 Residence_dialog_102 {
-求你了，饶了我吧，我还想活着！
+求你了， 饶了我吧， 我还想活着！ 
 }
 Residence_dialog_103 {
-我又没惹你，饶了我吧，先生！
+我又没惹你， 饶了我吧， 先生！ 
 }
 Residence_dialog_104 {
 @<RandPhraseSimple>
 }
 Residence_dialog_105 {
-闭嘴，别碍事。
+闭嘴， 别碍事。 
 }
 Residence_dialog_106 {
-闭嘴，蠢货。
+闭嘴， 蠢货。 
 }
 Residence_dialog_107 {
 @<RandPhraseSimple>
 }
 Residence_dialog_108 {
-嗯，真是太棒了！
+嗯， 真是太棒了！ 
 }
 Residence_dialog_109 {
-@<pchar>，你是真正的海上好手。
+@<pchar>， 你是真正的海上好手。 
 }
 Residence_dialog_110 {
 @<RandPhraseSimple>
 }
 Residence_dialog_111 {
-你喜欢就好。
+你喜欢就好。 
 }
 Residence_dialog_112 {
-我还能做得更多……
+我还能做得更多…… 
 }
 Residence_dialog_113 {
 @<RandPhraseSimple>
 }
 Residence_dialog_114 {
-哎呀，这里发生什么事？！我这傻瓜还在这儿闲逛，什么都没发现……卫兵！！！
+哎呀， 这里发生什么事？ ！ 我这傻瓜还在这儿闲逛， 什么都没发现…… 卫兵！ ！ ！ 
 }
 Residence_dialog_115 {
-闭嘴，你个蠢货……
+闭嘴， 你个蠢货…… 
 }
 Residence_dialog_116_m {
-滚出去，你这个混蛋！
+滚出去， 你这个混蛋！ 
 }
 Residence_dialog_116_f {
-滚出去，你这个混蛋！
+滚出去， 你这个混蛋！ 
 }
 Residence_dialog_117_m {
-赶紧从总督府滚出去，混账！
+赶紧从市长府滚出去， 混账！ 
 }
 Residence_dialog_117_f {
-马上给老子滚出总督府，你这混账！
+马上给我滚出市长府， 你这混账！ 
 }
 Residence_dialog_118 {
-你去总督府@<XI_ConvertString>办什么事，老子不管。但劝你一句——赶紧滚！
+你去市长府@<XI_ConvertString>办什么事， 我不管。 但劝你一句——赶紧滚！ 
 }
 Residence_dialog_119 {
 @<LinkRandPhrase>
 }
 Residence_dialog_120 {
-别激动，伙计……
+别激动， 伙计…… 
 }
 Residence_dialog_121 {
-小心别被自己的话噎着了！
+小心别被自己的话噎着了！ 
 }
 Residence_dialog_122 {
 @<RandPhraseSimple>
 }
 Residence_dialog_123 {
-你好，我是总督的仆人。我叫@<GetFullName>。
+你好， 我是市长的仆人。 我叫@<GetFullName>。 
 }
 Residence_dialog_124 {
-这儿由我来维持秩序，@<GetAddress_Form>。
+这儿由我来维持秩序， @<GetAddress_Form>。 
 }
 Residence_dialog_125 {
-你知道吗，@<GetAddress_Form>，我们这位总督人不错，给仆人开的薪水也挺高的……
+你知道吗， @<GetAddress_Form>， 我们这位市长人不错， 给仆人开的薪水也挺高的…… 
 }
 Residence_dialog_126 {
 @<LinkRandPhrase>
 }
 Residence_dialog_127 {
-好的。
+好的。 
 }
 Residence_dialog_128 {
-嗯，太棒了……
+嗯， 太棒了…… 
 }
 Residence_dialog_129 {
 @<RandPhraseSimple>
 }
 Residence_dialog_130 {
-欢迎来到官邸，先生。我叫@<GetFullName>，这里由我负责维持秩序。
+欢迎来到官邸， 先生。 我叫@<GetFullName>， 这里由我负责维持秩序。 
 }
 Residence_dialog_131 {
-能为您效劳，是我的荣幸，先生！
+能为您效劳， 是我的荣幸， 先生！ 
 }
 Residence_dialog_132 {
 @<RandPhraseSimple>
 }
 Residence_dialog_133 {
-好的。
+好的。 
 }
 Residence_dialog_134 {
-嗯，太棒了……
+嗯， 太棒了…… 
 }
 Residence_dialog_135 {
 @<RandPhraseSimple>
 }
 Residence_dialog_136_m {
-你竟然敢抢劫总督？！来人，把这贼抓起来！
+你竟然敢抢劫市长？ ！ 来人， 把这贼抓起来！ 
 }
 Residence_dialog_136_f {
-你不会真想抢劫总督吧？！卫兵，抓住这个贼！
+你不会真想抢劫市长吧？ ！ 卫兵， 抓住这个贼！ 
 }
 Residence_dialog_137 {
-闭嘴……
+闭嘴…… 
 }
 Residence_dialog_138_m {
-你还是赶紧走吧，伙计……
+你还是赶紧走吧， 伙计…… 
 }
 Residence_dialog_138_f {
-姑娘，还是快走吧……
+姑娘， 还是快走吧…… 
 }
 Residence_dialog_139 {
-滚出去！
+滚出去！ 
 }
 Residence_dialog_140_m {
-你确定没走错门？这是Governor @<XI_ConvertString>的宅邸，最好赶紧离开！
+你确定没走错门吗？ 这里是@<XI_ConvertString>市长的宅邸。 你最好赶紧离开！ 
 }
 Residence_dialog_140_f {
-你确定没走错门吗？这里是总督的宅邸@<XI_ConvertString>。你最好赶紧离开！
+你确定没走错门吗？ 这里是@<XI_ConvertString>市长的宅邸。 你最好赶紧离开！ 
 }
 Residence_dialog_141 {
 @<LinkRandPhrase>
 }
 Residence_dialog_142 {
-老子想走就走！
+我想走就走！ 
 }
 Residence_dialog_143 {
-少管闲事……
+少管闲事…… 
 }
 Residence_dialog_144 {
 @<RandPhraseSimple>
 }
 Residence_dialog_145 {
-今天被安排去给总督当差，这差事还不错……
+今天被安排去给市长当差， 这差事还不错…… 
 }
 Residence_dialog_146 {
-我在守着总督的宅邸，@<GetAddress_Form>。
+我在守着市长的宅邸， @<GetAddress_Form>。 
 }
 Residence_dialog_147 {
-我的职责是守卫总督府。
+我的职责是守卫市长府。 
 }
 Residence_dialog_148 {
 @<LinkRandPhrase>
 }
 Residence_dialog_149 {
-哟，你好。
+哟， 你好。 
 }
 Residence_dialog_150 {
-嗯，我明白了……
+嗯， 我明白了…… 
 }
 Residence_dialog_151 {
 @<RandPhraseSimple>
 }
 Residence_dialog_152_m {
-我在守卫您的宅邸，Governor。
+我在守卫您的宅邸， 市长。 
 }
 Residence_dialog_152_f {
-我在守卫您的官邸，女总督。
+我在守卫您的官邸， 女市长。 
 }
 Residence_dialog_153 {
-能为您效劳，@<GetAddress_Form>，是我的荣幸！
+能为您效劳， @<GetAddress_Form>， 是我的荣幸！ 
 }
 Residence_dialog_154 {
 @<RandPhraseSimple>
 }
 Residence_dialog_155 {
-哟，你好。
+哟， 你好。 
 }
 Residence_dialog_156 {
-嗯，太棒了……
+嗯， 太棒了…… 
 }
 Residence_dialog_157 {
 @<RandPhraseSimple>

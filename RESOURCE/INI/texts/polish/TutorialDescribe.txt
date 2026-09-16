@@ -475,12 +475,12 @@ Wygląda na to, że Hiszpanie się wycofują. Nie są w stanie wytrzymać takiej
 ~
 Wycofaj się z walki, zwiększając dystans do okrętu wroga. Odległość do statku możesz sprawdzić przez lunetę.
 ~
-Aby użyć lunety, przejdź na pokład (domyślnie 'Tab') i przytrzymaj klawisz 'Ctrl' (domyślnie).
+Aby użyć lunety, przejdź na pokład (domyślnie 'Tab') i naciśnij klawisz 'Ctrl' (domyślnie).
 ~
 Gdy odległość do wroga osiągnie 1000, możesz bezpiecznie opuścić pole bitwy.
 }
 BloodPrologue_SeaEscape_controlsimg1 {Sea_CameraSwitch}
-BloodPrologue_SeaEscape_controlsimg2 {TelescopeIn}
+BloodPrologue_SeaEscape_controlsimg2 {TelescopeMode}
 BloodPrologue_EnterMap_title {Wejdź na mapę globalną}
 BloodPrologue_EnterMap_descr
 {

@@ -264,3 +264,82 @@ InfoMessages_247 {Il semble que c'est la maison qu'il me faut. Je devrais tout f
 InfoMessages_248 {Vous avez reçu de petites perles : @<iSmall> unités.}
 InfoMessages_249 {Vous avez reçu de grandes perles : @<iBig> unités.}
 InfoMessages_250 {Une heure s'est écoulée...}
+InfoMessages_251 {Pas assez d’argent (2500)}
+InfoMessages_252 {Le soir du lendemain...}
+InfoMessages_253 {Quelques heures plus tard...}
+InfoMessages_254 {La nuit est tombée...}
+InfoMessages_255 {Une arme de mêlée est nécessaire. Équipez-vous d’une lame.}
+InfoMessages_256 {Les cloches d’alarme ont retenti dans la ville et à bord du navire. Peter Blood et ses compagnons d’infortune n’ont pas vécu jusqu’à l’aube...}
+InfoMessages_257 {Vous avez reçu une carte au trésor}
+InfoMessages_258 {Quelques semaines se sont écoulées...}
+InfoMessages_259 {Requis}
+InfoMessages_260 {Échec du test : coffres d’or (4)}
+InfoMessages_261 {Secret découvert}
+InfoMessages_262 {Insuffisant}
+InfoMessages_263 {Actuellement}
+InfoMessages_264 {Le capitaine est sur le pont !}
+InfoMessages_265 {L'équipage est vaincu. Le capitaine est désormais seul !}
+InfoMessages_266 {L'équipage du navire a été massacré. Le capitaine est seul !}
+
+InfoMessages_267 {
+Jeté : @<sItemName> - @<iDropQuantity> unité(s).
+}
+
+InfoMessages_268 {Phare de Tortuga. Quelque temps plus tard...}
+
+InfoMessages_269 {Trente minutes passèrent...}
+
+InfoMessages_270 {Tu as pris la lettre de Raoul.}
+
+InfoMessages_271 {Vous pouvez quitter la table en utilisant la touche « Entrée ».}
+
+InfoMessages_272 {En même temps...}
+
+InfoMessages_273 {Quelque temps plus tard, non loin du village de La Vega...}
+
+InfoMessages_274 {40 minutes plus tard, chez Michel Le Basque...}
+
+InfoMessages_275 {Quelque temps plus tard...}
+
+InfoMessages_276 {La lettre a été déposée avec succès.}
+
+InfoMessages_277 {La nuit suivante, non loin du camp espagnol...}
+
+InfoMessages_278 {Quelque temps plus tard, près des îles Caïmans...}
+
+InfoMessages_279 {3 heures se sont écoulées...}
+
+InfoMessages_280 {Un certain temps s'est écoulé...}
+
+InfoMessages_281 {L'Indien Atauco embarqua à bord du navire en tant que passager.}
+
+InfoMessages_282 {Une frégate espagnole est à l'horizon ! Elle a mis le cap sur l'interception.}
+
+InfoMessages_283 {Quelque temps plus tard, le navire ennemi fut entièrement inspecté. Tout ce qui avait de la valeur tomba entre les mains des vainqueurs.}
+
+InfoMessages_284 {Deux jours passèrent. Des voiles apparurent à l'horizon...}
+
+InfoMessages_285 {Quelques heures plus tard...}
+
+InfoMessages_286 {La cabane de Michel Le Basque. Quelques heures plus tard…}
+
+InfoMessages_287 {Plusieurs jours passèrent. Les compagnons se séparèrent près de la baie d'Aguadilla...}
+
+InfoMessages_288 {Ce même soir...}
+
+InfoMessages_289 {Les prisonniers furent libérés et escortés jusqu'au camp indien. Plusieurs heures s'écoulèrent...}
+
+InfoMessages_290 {Deux jours se sont écoulés...}
+
+InfoMessages_291 {Ce même matin...}
+
+InfoMessages_292 {Le lendemain, à midi...}
+
+InfoMessages_293 {Une heure passa. Le cap des Espoirs Perdus...}
+
+InfoMessages_294 {30 minutes se sont écoulées...}
+
+InfoMessages_295 {Deux jours s'écoulèrent. Tous les objets de valeur furent chargés sur des navires alliés...}
+InfoMessages_296 {Les boucaniers désapprouvent}
+InfoMessages_297 {Les boucaniers approuvent}
+InfoMessages_298 {Le gouverneur ne pardonna pas à Peter Blood sa longue absence. Le jour même, le contremaître Kent le fit fouetter à mort.}

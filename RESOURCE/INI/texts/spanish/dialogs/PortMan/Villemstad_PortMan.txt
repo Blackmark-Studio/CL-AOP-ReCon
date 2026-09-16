@@ -94,3 +94,31 @@ Veamos. Ese día zarparon los siguientes barcos: la pinaza “Adelaide”, el ga
 Villemstad_PortMan_29 {
 ¡Gracias!
 }
+
+Villemstad_PortMan_30 {
+¿Podría decirme qué barcos bajo bandera española han quedado registrados aquí durante la última semana?
+}
+Villemstad_PortMan_31 {
+¿Bajo bandera española, dice? No han sido muchos.\nVeamos. El galeón 'Hernal Diaz', al mando del capitán Gabriel de Seguenza. Ayer llegaron de Porto Bello dos urcas mercantes; ambas figuran a nombre de Andres Fonseca. Y, por supuesto, su '@<PChar>'.
+}
+Villemstad_PortMan_32 {
+¿Y de dónde venía el galeón?
+}
+Villemstad_PortMan_33 {
+De La Habana. Pero eso es únicamente lo que consta en mis documentos. Nadie tenía obligación de informar con detalle de su ruta.
+}
+Villemstad_PortMan_34 {
+¿Sabe quizá algo sobre los pasajeros?
+}
+Villemstad_PortMan_35 {
+Lo lamento, eso es todo.
+}
+Villemstad_PortMan_36 {
+Sí, una lástima.
+}
+Villemstad_PortMan_37 {
+Si está buscando a alguien, pregunte a los jornaleros del puerto. Hablan con los marineros que llegan. Durante el día están demasiado ocupados para charlar, pero por las noches suelen acampar aquí mismo, en la orilla.
+}
+Villemstad_PortMan_38 {
+Gracias.
+}

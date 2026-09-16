@@ -523,3 +523,54 @@ Ah, Kapitän, Sie hatten das Pech, diesem Dämon zu begegnen, den die Seeleute d
 Common_rumours_175 {
 Wissen Sie, unsere Gemeinde braucht dringend Kirchenkerzen. Warum will denn niemand helfen? Wenigstens zur Rettung der eigenen Seele...
 }
+Common_rumours_176 {
+Stellt euch vor, @<pchar.GenQuest.EncGirl.name> wurde endlich gefasst! Schade natürlich, dass sie nur eine Diebin und keine Hexe ist. Es ist schon viel zu lange her, dass wir in unserer Stadt eine Vorstellung hatten, die wirklich sehenswert war, ha!
+}
+CapBloodLine_Rumour_1 {
+Ich habe gehört, dass die Sklaven auf Barbados einen Aufstand angezettelt haben! Und was für einen! Während die Spanier, die an jenem Tag über Bridgetown herfielen, in der Stadt wüteten, stahlen ihnen die Sklaven - man stelle sich das vor! - eine ganze Fregatte direkt unter der Nase weg! Geschieht den Hunden recht. Schade nur, dass man die Flüchtlinge gewiss einfangen und bis auf den letzten Mann hängen wird.
+}
+CapBloodLine_Rumour_2 {
+Habt Ihr gehört, dass eine Handvoll Sklaven sogar Oberst Bishop überlistet hat? Man stelle sich das vor! Erst flohen sie mit einem Schiff von der Insel, dann lockten sie den Oberst an Bord, zogen ihn splitternackt aus und warfen ihn wie einen räudigen Köter über Bord. Es würde mich nicht wundern, wenn der Alte nun jeden reich belohnt, der ihm ihre Köpfe auf einem silbernen Tablett bringt.
+}
+CapBloodLine_Rumour_3 {
+Habt Ihr denn noch nichts gehört? Die Spanier griffen Barbados an - und zogen mit eingekniffenem Schwanz wieder ab! Die Stadt haben sie zwar geplündert, aber dafür wurde ihnen das eigene Schiff gestohlen! Manche sagen, es seien die Sklaven gewesen, andere halten die Bürger für die Täter - wer soll das jetzt noch wissen? Eines ist sicher: Eine solche Demütigung haben die Spanier lange nicht erlebt.
+}
+CapBloodLine_Rumour_4 {
+Der ganze Archipel spricht nur noch vom spanischen Angriff auf Barbados. Ein ganzes Fort konnte einer einzigen Fregatte nicht standhalten! Doch eine Handvoll Sklaven bestrafte diese verfluchten Dons gründlicher als alle Soldaten zusammen: Sie nahmen ihnen ihr prächtiges Schiff samt der gesamten Beute ab - und verschwanden spurlos!
+}
+CapBloodLine_Rumour_5 {
+Man sagt, während die Spanier Barbados plünderten, habe ein Sklave namens Peter Blood einen Aufstand begonnen. Er scharte eine Handvoll mutiger Männer um sich, nahm den Angreifern eine gewaltige Fregatte ab und segelte damit wie ein erfahrener Kapitän aufs offene Meer hinaus! Was für ein Kerl, nicht wahr? Wartet einmal... wie war doch gleich Euer Name?
+}
+CapBloodLine_Rumour_6 {
+Oberst Bishop von Barbados ist außer sich vor Wut - so sehr, dass selbst den Teufeln davon übel wird! Erst zerstörten die Spanier sein Fort und plünderten sein geliebtes Bridgetown. Dann erwürgten die Sklaven von seiner eigenen Plantage - mit bloßen Händen, könnt Ihr Euch das vorstellen? - die Wachen auf einer spanischen Fregatte und nahmen das Schiff an sich. Zum Schluss lockten sie Bishop selbst an Bord, hielten ihn gefangen und warfen ihn wie einen Sack Spreu über Bord. So steht es, mein Freund.
+}
+CapBloodLine_BarbadosRumour_1 {
+Während sich die Pflanzer und Soldaten in den Kellern versteckten, war Peter Blood, unser Arzt - derselbe Mann, der die halbe Insel wieder auf die Beine gebracht hat - der Einzige, der nicht den Mut verlor! Er sammelte eine Handvoll Sklaven um sich und stahl den Spaniern direkt unter der Nase eine Fregatte weg. Ich kenne ihn persönlich - der Mann hat goldene Hände. Gott schütze ihn, wo immer er jetzt sein mag. Vielleicht war seine Flucht sogar das Beste: Bishop hätte ihn noch vor seiner Zeit ins Grab gebracht, merkt Euch meine Worte.
+}
+CapBloodLine_BarbadosRumour_2 {
+Nun hat der hochgelobte Doktor Blood also sein wahres Gesicht gezeigt! Wir haben eine Schlange an unserer Brust genährt, und bei der ersten Gelegenheit stahl er ein Schiff und floh! Und als wäre die Flucht nicht genug, lockte er Oberst Bishop an Bord und warf ihn wie Unrat über Bord! Nach all den Freiheiten, die der Oberst ihm gewährt hatte... Merkt Euch meine Worte: Für einen solchen Mann ist unter ehrlichen Leuten kein Platz!
+}
+CapBloodLine_SpanishRumour_1 {
+Dieser Teufel Blood - mögen er und seine Sippe bis ins siebte Glied verflucht sein! - hat Don Diego de Espinosa, den Kapitän der «Cinco Llagas», kaltblütig ermordet und es danach gewagt, sich dessen eigenes Schiff anzueignen! Es würde mich nicht wundern, wenn er seine Seele an Satan verkauft hätte - wie sonst hätte ein gewöhnlicher Sträfling alle täuschen können?
+}
+CapBloodLine_SpanishRumour_2 {
+Habt Ihr gehört, wie dieser Schurke Peter Blood Don Miguel de Espinosa höchstpersönlich betrogen hat? Er tischte ihm ein Märchen nach dem anderen auf und wiegte ihn in Sicherheit, dann ermordete er heimtückisch dessen Bruder und nahm sein Schiff an sich! Es ist eine Schande für ganz Spanien, dass ein solcher Halunke noch immer nicht am Galgen baumelt!
+}
+CapBloodLine_SpanishRumour_3 {
+Heilige Mutter Gottes, beschütze uns vor dieser Höllenkreatur namens Peter Blood! Er hat Don Diego kaltblütig abgeschlachtet und beinahe auch noch dessen Sohn erwischt! Ich schwöre, sollte die Heilige Jungfrau mir erlauben, ihm auch nur einmal zu begegnen, werde ich ihm eigenhändig ein Messer zwischen die Rippen stoßen. Merkt Euch meine Worte!
+}
+CapBloodLine_SpanishRumour_4 {
+Ihr habt Don Miguel de Espinosa nicht gesehen, oder? Nein? Man sagt, nachdem dieser Schurke Blood ihn wie den letzten Schiffsjungen zum Narren gehalten hatte und ungestraft entkommen war, sei Don Miguel in einer einzigen Nacht ergraut. Und wir hatten geglaubt, er sei kein Mann, den man so leicht hinters Licht führen könne...
+}
+CapBloodLine_SpanishBloodRumour_1 {
+Habt Ihr von diesem teuflischen Sträfling gehört, der Don Diego de Espinosa, den Kapitän der «Cinco Llagas», kaltblütig ermordet und obendrein dessen Bruder betrogen hat? Zu allem Überfluss eignete er sich auch noch Don Diegos Schiff, die «Cinco Llagas», an. Möge er bis ins siebte Glied verflucht sein! Es würde mich nicht wundern, wenn er seine Seele an Satan verkauft hätte - wie sonst hätte ein gewöhnlicher entflohener Sklave alle zum Narren halten können?
+}
+CapBloodLine_SpanishBloodRumour_2 {
+Man munkelt, irgendein entflohener Sklave habe Don Miguel de Espinosa höchstpersönlich überlistet. Er tischte ihm ein Märchen nach dem anderen auf und wiegte ihn in Sicherheit, dann ermordete er heimtückisch dessen Bruder und nahm sein Schiff an sich! Es ist eine Schande für ganz Spanien, dass ein solcher Halunke noch immer keinen Strick um den Hals trägt!
+}
+CapBloodLine_SpanishBloodRumour_3 {
+Heilige Mutter Gottes, beschütze uns vor dieser Höllenkreatur, die Don Diego abgeschlachtet und beinahe auch noch dessen Sohn erwischt hat! Ich schwöre, sollte er mir je über den Weg laufen, werde ich ihm eigenhändig ein Messer zwischen die Rippen stoßen. Merkt Euch meine Worte! Wisst Ihr, wie er heißt?
+}
+CapBloodLine_SpanishBloodRumour_4 {
+Habt Ihr von Don Miguel de Espinosa gehört? Man munkelt, irgendein entflohener Sklave habe ihn wie den letzten Schiffsjungen zum Narren gehalten, seinen Bruder ermordet und sei ungestraft entkommen. Don Miguel soll danach in einer einzigen Nacht ergraut sein. Und wir hatten geglaubt, er sei kein Mann, den man so leicht hinters Licht führen könne...
+}

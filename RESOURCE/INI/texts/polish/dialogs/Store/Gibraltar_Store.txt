@@ -1,0 +1,27 @@
+Gibraltar_Store_1 {
+Pytaj, czego chcesz?
+}
+Gibraltar_Store_2 {
+Właśnie o tym rozmawialiśmy. Najwyraźniej już pan/pani o tym zapomniał(a)...
+}
+Gibraltar_Store_3 {
+Dziś już po raz trzeci wspomina pan o jakiejś sprawie...
+}
+Gibraltar_Store_4 {
+Słuchaj, to jest sklep, ludzie tu coś kupują. Nie przeszkadzaj mi!
+}
+Gibraltar_Store_5 {
+Wiesz co, @<NPChar>, może innym razem.
+}
+Gibraltar_Store_6_m {
+Rzeczywiście, coś zapomniałem...
+}
+Gibraltar_Store_6_f {
+Rzeczywiście, coś zapomniałam...
+}
+Gibraltar_Store_7 {
+No tak, rzeczywiście już trzeci raz...
+}
+Gibraltar_Store_8 {
+Hm, nie będę...
+}

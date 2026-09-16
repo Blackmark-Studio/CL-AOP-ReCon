@@ -1,0 +1,49 @@
+Tip0 {La encantadora Isabel es muy celosa.}
+Tip1 {Recuerda: sacar la pistola siempre es más rápido que recargar el mosquete.}
+Tip2 {La maestría en armas cuerpo a cuerpo reduce el coste de energía de los ataques.}
+Tip3 {La sobrecarga y la embriaguez imponen penalizaciones a las habilidades.}
+Tip4 {Las pociones restauran la salud lentamente; no esperes aguantar a base de bloqueos.}
+Tip5 {Si te encuentras rodeado, la mejor forma de escapar es un impulso lateral.}
+Tip6 {Con el tiempo adecuado, puedes esquivar cualquier ataque moviéndote a los lados. Esto es especialmente efectivo contra armas de fuego.}
+Tip7 {Los mosqueteros causan un daño colosal. Acaba con ellos primero.}
+Tip8 {Un disparo rápido es más débil que uno apuntado. Ese es el precio de la velocidad.}
+Tip9 {Te mueves notablemente más lento hacia atrás y hacia los lados que hacia adelante, pero no pierdes de vista al enemigo.}
+Tip10 {Algunos enemigos pueden envenenarte en combate. Lleva siempre un antídoto contigo.}
+Tip11 {Con las velas de combate, el barco gira más rápido.}
+Tip12 {El oleaje, los giros y la velocidad del barco afectan enormemente a la precisión de los cañones.}
+Tip13 {Si fallas a menudo con los cañones, acorta la distancia.}
+Tip14 {Las habilidades de «Cañones» y «Puntería» influyen tanto en el disparo en tercera persona como en el modo de apuntar.}
+Tip15 {Un impacto preciso de cadena en el mástil puede derribarlo. Si las velas ya están dañadas, las probabilidades aumentan.}
+Tip16 {Con una gran superioridad numérica, el barco enemigo puede rendirse incluso al intentar el abordaje.}
+Tip17 {Al huir, los barcos pueden arrojar mercancía por la borda. Acércate para recoger la carga.}
+Tip18 {Los cañones se desgastan con el tiempo. Mantén algunos cañones de repuesto en reserva.}
+Tip19 {Los diferentes proyectiles tienen distintos alcances. Las balas redondas llegan más lejos y la metralla menos.}
+Tip20 {Las balas redondas son universales. Usa cadenas para velas y mástiles, metralla para la tripulación y bombas para el casco.}
+Tip21 {Lee atentamente los diálogos; a menudo contienen información única.}
+Tip22 {Si la colonia es sitiada con éxito, tus inversiones y barcos en la capitanía del puerto se perderán.}
+Tip23 {Pregunta a los ciudadanos y borrachos sobre los rumores; a menudo saben muchas cosas interesantes.}
+Tip24 {Buscar tesoros suele ser rentable. Busca al vendedor de mapas de tesoros en la taberna.}
+Tip25 {Los diplomáticos en las tabernas piratas pueden librarte de tu recompensa por tu cabeza.}
+Tip26 {Lleva armas de repuesto a bordo: cada marinero caído se lleva su arma a la tumba.}
+Tip27 {Antes de zarpar, asegúrate de que el ron, las medicinas y las provisiones basten para la travesía prevista.}
+Tip28 {Las ratas son la plaga de los marineros. Puedes deshacerte de ellas manteniendo una limpieza absoluta o con magia antigua.}
+Tip29 {Las mazmorras pueden ser muy confusas. Si te pierdes, quédate pegado a la pared derecha y síguela.}
+Tip30 {Los objetos se pueden guardar en el camarote del barco. A veces es útil deshacerse de los trastos pesados.}
+Tip31 {Los tesoros y alijos son buenas fuentes de ingredientes para la artesanía.}
+Tip32 {Los barcos se pueden dejar en la administración del puerto.}
+Tip33 {Puedes alquilar un almacén en el astillero para guardar de forma segura mercancías y cañones.}
+Tip34 {Si el fuerte de la colonia te queda grande, intenta atacar la ciudad por tierra. La guarnición es mucho más débil, pero el botín será menor.}
+Tip35 {En mar abierto se pueden encontrar barriles flotantes. Pueden contener objetos de valor o basura; siempre es una sorpresa.}
+Tip36 {Cualquier ataque puede ser parado. Si dominas bien esta técnica, podrás ganar cualquier duelo.}
+Tip37 {A veces las corrientes marinas traen regalos inesperados a quienes pasean por calas escondidas.}
+Tip38 {Las amatistas no curan la embriaguez. En serio.}
+Tip39 {En una situación de emergencia, se puede asignar a casi cualquier oficial como abordador.}
+Tip40 {A los gobernadores y capitanes también les gustan los juegos de azar, pero no esperes que jueguen con desconocidos.}
+Tip41 {En una situación crítica, puedes reclutar esclavos para la tripulación. Esto baja la moral, pero permite reponerla rápidamente.}
+Tip42 {Si la guardia te sorprende en un trato con contrabandistas, a veces es más fácil sobornarla.}
+Tip43 {Fabricar objetos consume tiempo de juego. A veces es más rentable crear cosas que dormir inútilmente en la taberna.}
+Tip44 {Las reparaciones del barco en el astillero consumen tiempo de juego. Tenlo en cuenta si tienes prisa.}
+Tip45 {Al llegar a cierta zona marítima, es más rápido salir al mapa local y viajar mediante «Navegar hacia».}
+Tip46 {Si los enemigos son demasiado difíciles, retírate y vuelve más tarde. La mayoría de misiones no exigen una solución inmediata.}
+Tip47 {Se puede dar órdenes a los abordadores en combate. Prueba a ordenarles usando accesos directos.}
+Tip48 {Algunas habilidades tienen efectos diferentes para el protagonista y para los oficiales.}

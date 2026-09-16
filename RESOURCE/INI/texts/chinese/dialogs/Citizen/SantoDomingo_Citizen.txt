@@ -1,44 +1,44 @@
 SantoDomingo_Citizen_1 {
-什么问题？
+有什么问题吗？ 
 }
 SantoDomingo_Citizen_2 {
-你想干什么？
+有什么需要帮忙的吗？  
 }
 SantoDomingo_Citizen_3 {
 @<RandPhraseSimple>
 }
 SantoDomingo_Citizen_4_m {
-我改主意了……
+我改主意了…… 
 }
 SantoDomingo_Citizen_4_f {
-我改变主意了……
+我改变主意了…… 
 }
 SantoDomingo_Citizen_5 {
-我现在没什么可说的。
+我现在没什么可说的。 
 }
 SantoDomingo_Citizen_6 {
 @<RandPhraseSimple>
 }
 SantoDomingo_Citizen_7_m {
-我在找一枚曾经属于……我一个熟人的戒指。那可是很值钱的戒指，就在这座城里。你有没有听说过？大颗蓝宝石，镶在金子上的。
+我在找一枚曾经属于…… 我一个熟人的戒指。 那可是很值钱的戒指， 就在这座城里。 你有没有听说过？ 大颗蓝宝石， 镶在金子上的。 
 }
 SantoDomingo_Citizen_7_f {
-我在找一枚戒指，之前属于……一个熟人。那戒指挺值钱的，就在这城里。你有没有听说过？大颗蓝宝石，镶在金子上的。
+我在找一枚戒指， 之前属于…… 一个熟人。 那戒指挺值钱的， 就在这城里。 你有没有听说过？ 大颗蓝宝石， 镶在金子上的。 
 }
 SantoDomingo_Citizen_8 {
-我这是在给@<NationNameGenitive>的秘密间谍组织打工吗？
+难道我是在给@<NationNameGenitive>的秘密间谍组织卖命吗？  
 }
 SantoDomingo_Citizen_9 {
-那行吧……回头见。
+那行吧…… 回头见。 
 }
 SantoDomingo_Citizen_10 {
-那我再问一个问题。
+那我再问一个问题。 
 }
 SantoDomingo_Citizen_11 {
-你当俺是谁，珠宝匠啊？这事可不归俺管。
+你当我是谁， 珠宝匠啊？ 这事可不归我管。 
 }
 SantoDomingo_Citizen_12 {
-抱歉。
+抱歉。 
 }
 SantoDomingo_Citizen_13 {
 带着红宝石
@@ -50,32 +50,32 @@ SantoDomingo_Citizen_15 {
 带着钻石
 }
 SantoDomingo_Citizen_16 {
-我有个戒指，不过现在在@<LinkRandPhrase>那儿。
+我有个戒指， 不过现在在@<LinkRandPhrase>那儿。 
 }
 SantoDomingo_Citizen_17_m {
-我真为你高兴。
+我真为你高兴。 
 }
 SantoDomingo_Citizen_17_f {
-我真为你高兴。
+我真为你高兴。 
 }
 SantoDomingo_Citizen_18 {
-我还有更重要的事，没空理会这种胡说八道。
+我还有更重要的事， 没空理会这种胡说八道。 
 }
 SantoDomingo_Citizen_19 {
-抱歉。
+抱歉。 
 }
 SantoDomingo_Citizen_20 {
-我没有戒指，抱歉。
+我没有戒指， 抱歉。 
 }
 SantoDomingo_Citizen_21 {
-行吧，我去问别人。
+行吧， 我去问别人。 
 }
 SantoDomingo_Citizen_22_m {
-嗯……你说是蓝宝石？对，我记得见过你说的那种戒指。有个姑娘戴着——说不定你还认识她，反正大多数水手都知道她。她叫Francesca。说实话，我还真没见过比她更无聊的姑娘。那戒指是几年前一个士兵送她的。也许那家伙比她还傻——毕竟那戒指值不少钱。嗯，估计你找的就是那枚戒指。
+嗯…… 你说是蓝宝石？ 对， 我记得见过你说的那种戒指。 有个姑娘戴着——说不定你还认识她， 反正大多数水手都知道她。 她叫弗朗西丝卡。 说实话， 我还真没见过比她更无聊的姑娘。 那戒指是几年前一个士兵送她的。 也许那家伙比她还傻——毕竟那戒指值不少钱。 嗯， 估计你找的就是那枚戒指。 
 }
 SantoDomingo_Citizen_22_f {
-嗯……你说是蓝宝石？对，我记得见过你说的那种戒指。那是个女孩的东西——也许你还认识她，反正大多数水手都挺熟的。她叫Francesca。说实话，我还真没见过比她更笨的姑娘。那戒指是几年前一个士兵送她的。也许那家伙比她还傻——毕竟那戒指挺值钱的。没错，我觉得你要找的应该就是那枚戒指。
+嗯…… 你说是蓝宝石？ 对， 我记得见过你说的那种戒指。 那是个女孩的东西——也许你还认识她， 反正大多数水手都挺熟的。 她叫弗朗西丝卡。 说实话， 我还真没见过比她更笨的姑娘。 那戒指是几年前一个士兵送她的。 也许那家伙比她还傻——毕竟那戒指挺值钱的。 没错， 我觉得你要找的应该就是那枚戒指。 
 }
 SantoDomingo_Citizen_23 {
-谢谢你，@<npchar>，你帮了我大忙。回头见。
+谢谢你， @<npchar>， 你帮了我大忙。 回头见。 
 }

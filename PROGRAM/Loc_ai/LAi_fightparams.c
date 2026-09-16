@@ -30,9 +30,16 @@ float LAi_CalcDamageForBlade(aref attack, aref enemy, string attackType, bool is
 
 	if (CheckAttribute(attack, "equip.blade"))
 	{
-		ref rBlade = &Items[FindItem(attack.equip.blade)];
-		min = stf(rBlade.dmg_min);
-		max = stf(rBlade.dmg_max);
+		int iBlade = FindItem(attack.equip.blade);
+
+		if (iBlade >= 0)
+		{
+			ref rBlade = &Items[iBlade];
+			min = stf(rBlade.dmg_min);
+			max = stf(rBlade.dmg_max);
+		}
+		else
+			trace("LAi_GetAttackDamage: у '" + attack.id + "' экипирован несуществующий клинок '" + attack.equip.blade + "'");
 	}
 
 	// evganat - пасха
@@ -323,7 +330,7 @@ float LAi_GunCalcDamage(aref attack, aref enemy, string sType, int nShots)
 	string sBullet = LAi_GetCharacterBulletType(attack, sType);
 	bool bBoom = or(sBullet == "grenade", sBullet == "petard" && enemy.chr_ai.group != LAI_GROUP_PLAYER);
 
-	if (StrHasStr(sBullet, "grenade,petard", 1))
+	if (StrHasStr(sBullet, "grenade,petard", true))
 		LaunchAmmoBlast(enemy, sBullet);
 
 	if (CheckAttributeMass(attack, "chr_ai." + sType, "DmgMin_C,DmgMax_C,DmgMin_NC,DmgMax_NC,EnergyP_C,EnergyP_NC", "&"))
@@ -464,7 +471,7 @@ float LAi_GunReloadSpeed(aref chr, string sType)
 		int iBonus = 0;
 		if (!ENCYCLOPEDIA_DISABLED)
 		{
-			if (IsMainCharacter(chr) || and(CheckAttribute(chr, "chr_ai.type" && chr.chr_ai.type == LAI_TYPE_OFFICER), true))
+			if (IsMainCharacter(chr) || CheckAttrValue(chr, "chr_ai.type", LAI_TYPE_OFFICER))
 				iBonus = GetParamPageBonus("GunProfessional_charge");
 		}
 		charge_dlt = charge_dlt * (1.25 + 0.01 * iBonus);
@@ -506,6 +513,9 @@ void LAi_ApplyCharacterAttackDamage(aref attack, aref enemy, string attackType, 
 			return;
 		}
 	}
+	// KZ > NoTarget: страховка от урона (ближний бой)
+	if (LAi_IsNoTargetProtected(enemy, attack, false))
+		return;
 	//Нарвалы и Касперы мирняку урон не причиняют
 	if (enemy.chr_ai.group == LAI_GROUP_TmpEnemy && or(attack.chr_ai.group == "LSC_NARVAL", attack.chr_ai.group == "LSC_CASPER"))
         return;
@@ -597,7 +607,10 @@ void LAi_ApplyCharacterAttackDamage(aref attack, aref enemy, string attackType, 
 		LAi_CheckKillCharacter(enemy);
 		//проверим на отравление
 		MakePoisonAttackCheckSex(enemy, attack);
-
+		if (CheckAttribute(attack, "equip.blade") && attack.equip.blade == "BladeBone" && rand(99) < 5)
+		{
+			MakePoisonAttack(attack, enemy);
+		}
 	}
 	//Есть ли оружие у цели
 	bool isSetBalde = (CheckAttribute(enemy, "equip.blade") == true);//(SendMessage(enemy, "ls", MSG_CHARACTER_EX_MSG, "IsSetBalde") != 0);
@@ -699,6 +712,10 @@ void LAi_SetResultOfDeath(ref attack, ref enemy, bool isSetBalde)
 		{
 			ChangeIndianRelation(-0.5);
 		}
+		if (CheckAttribute(enemy, "Buccaneer") && sti(enemy.Buccaneer) == 1)
+		{
+			ChangeBuccaneerRelation(-2.0);
+		}
 	}
 }
 // boal <--
@@ -714,6 +731,10 @@ void LAi_ApplyCharacterFireDamage(aref attack, aref enemy, float kDist, float fA
 			return;
 		}
 	}
+
+	// KZ > NoTarget: страховка от урона (огнестрел)
+	if (LAi_IsNoTargetProtected(enemy, attack, true))
+		return;
 
 	// Чем стреляли?
 	string sType;

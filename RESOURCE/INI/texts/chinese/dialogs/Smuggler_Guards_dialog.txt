@@ -1,93 +1,93 @@
 Smuggler_Guards_dialog_1 {
-看起来这里有点不对劲，像是在搞什么非法的勾当。
+看起来这里有点不对劲， 像是在搞什么非法的勾当。 
 }
 Smuggler_Guards_dialog_2 {
-奉@<NationKingsName>之名，立刻停止你们的违法行为！
+奉@<NationKingsName>之名， 立刻停止你们的违法行为！ 
 }
 Smuggler_Guards_dialog_3 {
 @<RandPhraseSimple>
 }
 Smuggler_Guards_dialog_4 {
-不不，长官，俺跟朋友们就在海边歇着呢。
+不不， 长官， 我跟朋友们就在海边歇着呢。 
 }
 Smuggler_Guards_dialog_5 {
-我在发金币，这也算犯法吗？
+我在发金币， 这也算犯法吗？ 
 }
 Smuggler_Guards_dialog_6 {
-滚开，士兵，这事儿跟你没关系！
+滚开， 士兵， 这事儿跟你没关系！ 
 }
 Smuggler_Guards_dialog_7 {
-别想糊弄我们，Captain @<Pchar>！谁能想到像你这样正直又受人尊敬的人也会去搞走私！
+别想糊弄我们， @<pchar>船长！ 谁能想到像你这样正直又受人尊敬的人也会去搞走私！ 
 }
 Smuggler_Guards_dialog_8 {
-唉，谁都会犯错。但我已经后悔了！
+唉， 谁都会犯错。 但我已经后悔了！ 
 }
 Smuggler_Guards_dialog_9 {
-现在老子要砍下你的脑袋！
+现在我要砍下你的脑袋！ 
 }
 Smuggler_Guards_dialog_10 {
-既然俺只听到你的好话，这次就放你一马。但这些家伙得跟俺们走！
+既然我只听到你的好话， 这次就放你一马。 但这些家伙得跟我们走！ 
 }
 Smuggler_Guards_dialog_11 {
-谢谢你，军官。祝你一切顺利！
+谢谢你， 军官。 祝你一切顺利！ 
 }
 Smuggler_Guards_dialog_12 {
-别想糊弄我！老子可不是瞎子！你被逮捕了，跟我们走，货物都要被没收！
+别想糊弄我！ 我可不是瞎子！ 你被逮捕了， 跟我们走， 货物都要被没收！ 
 }
 Smuggler_Guards_dialog_13 {
-老子宁愿剖了你！
+我宁愿剖了你！ 
 }
 Smuggler_Guards_dialog_14 {
-是吗？当然，这买卖完全合法……只要我们也能分一杯羹。当然了，你们打算分多少给我们？
+是吗？ 当然， 这买卖完全合法…… 只要我们也能分一杯羹。 当然了， 你们打算分多少给我们？ 
 }
 Smuggler_Guards_dialog_15 {
-我觉得@<FindMoneyString>应该够了。
+我觉得@<FindMoneyString>应该够了。 
 }
 Smuggler_Guards_dialog_16 {
-@<FindMoneyString>怎么样？
+@<FindMoneyString>怎么样？ 
 }
 Smuggler_Guards_dialog_17 {
-这@<FindMoneyString>，我愿意交给你，长官！
+这@<FindMoneyString>， 我愿意交给你， 长官！ 
 }
 Smuggler_Guards_dialog_18 {
-哟，想贿赂俺啊？没门！俺的名声可不是这点钱能买的！你得跟我们走一趟！
+哟， 想贿赂我啊？ 没门！ 我的名声可不是这点钱能买的！ 你得跟我们走一趟！ 
 }
 Smuggler_Guards_dialog_19 {
-该死！抱歉让你失望了，不过你现在恐怕哪儿也去不了！
+该死！ 抱歉让你失望了， 不过你现在恐怕哪儿也去不了！ 
 }
 Smuggler_Guards_dialog_20 {
-既然你这么慷慨，俺就乐意收下你的捐赠。
+既然你这么慷慨， 我就乐意收下你的捐赠。 
 }
 Smuggler_Guards_dialog_21 {
-随时为您效劳。
+随时为您效劳。 
 }
 Smuggler_Guards_dialog_22 {
-既然你这么慷慨，俺就乐意收下你的捐赠。
+既然你这么慷慨， 我就乐意收下你的捐赠。 
 }
 Smuggler_Guards_dialog_23 {
-随时为您效劳。
+随时为您效劳。 
 }
 Smuggler_Guards_dialog_24 {
-既然你这么慷慨，俺就乐意收下你的捐赠。
+既然你这么慷慨， 我就乐意收下你的捐赠。 
 }
 Smuggler_Guards_dialog_25 {
-随时为您效劳。
+随时为您效劳。 
 }
 Smuggler_Guards_dialog_26 {
-可是……该死……我本来应该逮捕你的！
+可是…… 该死…… 我本来应该逮捕你的！ 
 }
 Smuggler_Guards_dialog_27 {
-哎哟！你还在这儿？嫌命长啊？
+哎哟！ 你还在这儿？ 嫌命长啊？ 
 }
 Smuggler_Guards_dialog_28 {
-我……我要投诉！这事我可不会就这么算了……
+我…… 我要投诉！ 这事我可不会就这么算了…… 
 }
 Smuggler_Guards_dialog_29 {
-呸！
+呸！ 
 }
 Smuggler_Guards_dialog_30 {
-你这条臭狗！现在你跑不了了，今天就死在这岸上吧！
+你这条臭狗！ 现在你跑不了了， 今天就死在这岸上吧！ 
 }
 Smuggler_Guards_dialog_31 {
-有本事就把你的话变成行动啊，光说没用！
+有本事就把你的话变成行动啊， 光说没用！ 
 }

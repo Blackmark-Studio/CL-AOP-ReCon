@@ -19,6 +19,24 @@ int nShipStock = 3;
 bool bShipyardOnTop, bEmptySlot;
 bool bAllInclusive = false; // > флаг Юстино
 
+void AoP_NormalizeFreeShipStorage(ref NPChar)
+{
+	aref arShips, arShip;
+	int i, iNum;
+
+	if (!CheckAttribute(NPChar, "FreeShipStorage")) return;
+	if (CheckAttribute(NPChar, "ShipInDock.MoneyForShip")) NPChar.ShipInDock.MoneyForShip = 0;
+	if (!CheckAttribute(NPChar, "ShipInStockMan")) return;
+
+	makearef(arShips, NPChar.ShipInStockMan);
+	iNum = GetAttributesNum(arShips);
+	for (i = 0; i < iNum; i++)
+	{
+		arShip = GetAttributeN(arShips, i);
+		arShip.MoneyForShip = 0;
+	}
+}
+
 void InitInterface_R(string iniName, ref _portman)
 {
 	GameInterface.title = "titlePortman";
@@ -26,6 +44,7 @@ void InitInterface_R(string iniName, ref _portman)
 	xi_refCharacter = pchar;
 
 	refNPCPortman = _portman;
+	AoP_NormalizeFreeShipStorage(refNPCPortman);
 
 	bAllInclusive = CheckAttribute(refNPCPortman, "id") && refNPCPortman.id == "Secret_Fort_Commander";
 
@@ -38,6 +57,10 @@ void InitInterface_R(string iniName, ref _portman)
 		GameInterface.title = "UnknownFortName";
 		sFrom_sea = "Shore_ship2";
 		nShipStock = 5;
+	}
+	else if (CheckAttribute(refNPCPortman, "PortmanFromSea"))
+	{
+		sFrom_sea = refNPCPortman.PortmanFromSea;
 	}
 	else if (CheckAttribute(refNPCPortman, "City") && FindColony(refNPCPortman.City) >= 0)
 	{
@@ -224,7 +247,7 @@ void FillShipsScroll()
 	int iShipType, cn;
 	GameInterface.SHIPS_SCROLL.ImagesGroup.t0 = "BLANK_SHIP2";
 
-	FillShipList("SHIPS_SCROLL.ImagesGroup", xi_refCharacter);
+	FillShipListSquadronOnly("SHIPS_SCROLL.ImagesGroup", pchar);
 	GameInterface.SHIPS_SCROLL.BadTex1 = 0;
 	GameInterface.SHIPS_SCROLL.BadPic1 = "Not Used2";
 
@@ -256,7 +279,7 @@ void FillShipsScroll()
 				GameInterface.SHIPS_SCROLL.(attributeName).str1 = "#";
 				GameInterface.SHIPS_SCROLL.(attributeName).str2 = "NoneBoat";
 				GameInterface.SHIPS_SCROLL.(attributeName).img1 = "Not Used2";
-				GameInterface.SHIPS_SCROLL.(attributeName).tex1 = "BLANK_SHIP2";
+				GameInterface.SHIPS_SCROLL.(attributeName).tex1 = 0;
 				m++;
 			}
 		}
@@ -1499,9 +1522,24 @@ void SellGoods(ref chref)
 {
 	if (bAllInclusive) return;
 	aref refGoods;
-	ref Colony = GetColonyByIndex(FindColony(refNPCPortman.City));
-	ref trader = &stores[sti(Colony.StoreNum)];
+	ref Colony;
+	ref trader;
+	int iColony = FindColony(refNPCPortman.City);
 	int moneyback = 0;
+
+	if (iColony >= 0)
+	{
+		Colony = GetColonyByIndex(iColony);
+		trader = &stores[sti(Colony.StoreNum)];
+	}
+	else if (CheckAttribute(refNPCPortman, "StoreNum"))
+	{
+		trader = &stores[sti(refNPCPortman.StoreNum)];
+	}
+	else
+	{
+		return;
+	}
 	for (int iGoodIndex = 0; iGoodIndex < GOODS_QUANTITY; iGoodIndex++)
 	{
 		int ShipQ = GetCargoGoods(chref, iGoodIndex);
@@ -1521,7 +1559,7 @@ void SellGoods(ref chref)
 		SetStoreGoods(trader, iGoodIndex, iStoreQty + ShipQ);
 		moneyback += makeint(iStorePrice * ShipQ / iUnits + 0.5);
 	}
-	if (moneyback > 0) log_info(XI_ConvertString("PortmanMessageInfo_6"));
+	if (moneyback > 0) log_info(XI_ConvertString("PortmanMessageInfo_6") + " " + moneyback);
 	AddMoneyToCharacter(pchar, moneyback);
 
 	AddCharacterExpToSkill(pchar, "Commerce", moneyback / (2600.0 - sti(GetCharacterSPECIALSimple(pchar, SPECIAL_I)) * sti(GetCharacterSPECIALSimple(pchar, SPECIAL_C)) * 10));
@@ -1601,7 +1639,9 @@ void FireCrew(ref chref)
 {
 	if (bAllInclusive) return;
 	int crewn = GetCrewQuantity(chref);
-	ref refTown = GetColonyByIndex(FindColony(loadedLocation.fastreload));
+	int iTownIdx = FindColony(loadedLocation.fastreload);
+	if (iTownIdx < 0) return; // > локация не колония - городского пула экипажа нет
+	ref refTown = GetColonyByIndex(iTownIdx);
 	float fTemp3 = stf(GetCrewQuantity(refTown) + crewn);
 	refTown.Ship.Crew.Exp.Sailors = (stf(refTown.Ship.Crew.Exp.Sailors) * GetCrewQuantity(refTown) +
 			stf(chref.Ship.Crew.Exp.Sailors) * crewn) / fTemp3;
@@ -1805,7 +1845,9 @@ int SendCrewToShip(ref chref, ref chreff, int crewnum)
 void SendCrewToTavern(ref chref, int crewn)
 {
 	if (bAllInclusive) return;
-	ref refTown = GetColonyByIndex(FindColony(loadedLocation.fastreload));
+	int iTownIdx = FindColony(loadedLocation.fastreload);
+	if (iTownIdx < 0) return; // > локация не колония - городского пула экипажа нет
+	ref refTown = GetColonyByIndex(iTownIdx);
 	float fTemp3 = stf(GetCrewQuantity(refTown) + crewn);
 	refTown.Ship.Crew.Exp.Sailors = (stf(refTown.Ship.Crew.Exp.Sailors) * GetCrewQuantity(refTown) +
 			stf(chref.Ship.Crew.Exp.Sailors) * crewn) / fTemp3;

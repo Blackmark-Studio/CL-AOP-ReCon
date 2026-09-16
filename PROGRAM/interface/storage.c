@@ -16,6 +16,8 @@ int iShipQty, iStoreQty, iUnits;
 float fWeight;
 int iCurGoodsIdx;
 bool bAllInclusive = false; // > флаг Юстино
+int idGoodsDescr = -1;
+int iStorageUsedWeight = 0;
 
 void InitInterface_R(string iniName, ref pStore)
 {
@@ -23,10 +25,12 @@ void InitInterface_R(string iniName, ref pStore)
 
 	refStore = pStore;
 	refCharacter = pchar;
+	idGoodsDescr = LanguageOpenFile("GoodsDescribe.txt");
+	iStorageUsedWeight = GetStorageUsedWeight(pStore);
 
 	bAllInclusive = CheckAttribute(pchar, "location") && pchar.location == "Secret_Fort_Ammo";
 	
-	string sTitle = XI_ConvertString("titleStorage") + "-  " + XI_ConvertString("Colony" + refStore.Colony);
+	string sTitle = XI_ConvertString("titleStorage") + "-  " + GetStoreTitleName(refStore);
 	if (bAllInclusive) sTitle = XI_ConvertString("UnknownFortName");
 
 	GameInterface.TABLE_LIST.hr.td1.str = XI_ConvertString("In the hold");
@@ -105,6 +109,7 @@ void IDoExit(int exitCode)
 	DelEventHandler("ShowItemInfo", "ShowItemInfo");
 	DelEventHandler("TableSelectChange", "CS_TableSelectChange");
 	DelEventHandler("frame", "ProcessFrame");
+	DelEventHandler("frame", "RefreshTableByFrameEvent");
 	DelEventHandler("TransactionOK", "TransactionOK");
 	DelEventHandler("confirmChangeQTY_EDIT", "confirmChangeQTY_EDIT");
 	DelEventHandler("ADD_ALL_BUTTON", "ADD_ALL_BUTTON");
@@ -112,6 +117,12 @@ void IDoExit(int exitCode)
 	DelEventHandler("REMOVE_BUTTON", "REMOVE_BUTTON");
 	DelEventHandler("REMOVE_ALL_BUTTON", "REMOVE_ALL_BUTTON");
 	DelEventHandler("OnHeaderClick", "OnHeaderClick");
+
+	if (idGoodsDescr != -1)
+	{
+		LanguageCloseFile(idGoodsDescr);
+		idGoodsDescr = -1;
+	}
 
 	interfaceResultCommand = exitCode;
 	EndCancelInterface(true);
@@ -192,7 +203,10 @@ void DoPostExit()
 void CalculateInfoData()
 {
 	AddToTable();
-	ShowGoodsInfo(sti(GameInterface.TABLE_LIST.tr1.index));
+	if (CheckAttribute(&GameInterface, "TABLE_LIST.tr1.index"))
+	{
+		ShowGoodsInfo(sti(GameInterface.TABLE_LIST.tr1.index));
+	}
 }
 
 void AddToTable()
@@ -208,18 +222,18 @@ void AddToTable()
 	Table_Clear("TABLE_LIST", false, true, false);
 	for (i = 0; i < GOODS_QUANTITY; i++)
 	{
+		if (i == GOOD_SLAVES) continue; // рабов низзя !!
+
 		row = "tr" + n;
 		sGood = Goods[i].name;
-		makearef(refGoods, refStore.Storage.Goods.(sGood));
 
 		iShipQ = GetCargoGoods(refCharacter, i);
 		iStoreQ = GetStorageGoodsQuantity(refStore, i);
 
-		if (i == GOOD_SLAVES) continue; // рабов низзя !!
-
 		if (iStoreQ < 0)
 		{
 			iStoreQ = 0;
+			makearef(refGoods, refStore.Storage.Goods.(sGood));
 			refGoods.quantity = 0;
 		}
 		if (iStoreQ == 0 && iShipQ == 0) continue; // только не нули
@@ -326,6 +340,7 @@ void CS_TableSelectChange()
 	int iSelected = GetEventData();
 	TableSelect = iSelected;
 	string sRow = "tr" + (iSelected);
+	if (!CheckAttribute(&GameInterface, "TABLE_LIST." + sRow + ".index")) return;
 	SetShipWeight();
 	SetVariable();
 	ShowGoodsInfo(sti(GameInterface.TABLE_LIST.(sRow).index));
@@ -357,7 +372,7 @@ void SetVariable()
 
 	SetFormatedText("STORE_CAPACITY", XI_ConvertString("storage"));
 
-	sText = XI_ConvertString("WarehouseWorkload") + GetStorageUsedWeight(refStore) + " / " + iTotalSpace + " " + XI_ConvertString("cwt") + ".";
+	sText = XI_ConvertString("WarehouseWorkload") + iStorageUsedWeight + " / " + iTotalSpace + " " + XI_ConvertString("cwt") + ".";
 	SetFormatedText("STORAGE_INFO", sText);
 
 	if (CheckAttribute(refCharacter, "ship.name"))
@@ -453,26 +468,24 @@ void ShowGoodsInfo(int iGoodIndex)
 
 void ShowFoodInfo()
 {
-	if (iCurGoodsIdx == GOOD_FOOD)
+	int iPreview;
+	string sGoodName;
+
+	if (iCurGoodsIdx == GOOD_FOOD || iCurGoodsIdx == GOOD_RUM)
 	{
+		sGoodName = Goods[iCurGoodsIdx].name;
+		iPreview = iShipQty + BuyOrSell * sti(GameInterface.qty_edit.str);
+		if (iPreview < 0) iPreview = 0;
+
 		// чтоб прикинуть как оно будет, скинем на время колво на продажное
-		SetCharacterGoods(refCharacter, GOOD_FOOD, iShipQty + BuyOrSell * sti(GameInterface.qty_edit.str));
-		SetFoodShipInfo(refCharacter, "QTY_FOOD_INFO");
-		SetCharacterGoods(refCharacter, GOOD_FOOD, iShipQty);
+		refCharacter.Ship.Cargo.Goods.(sGoodName) = iPreview;
+		if (iCurGoodsIdx == GOOD_FOOD) SetFoodShipInfo(refCharacter, "QTY_FOOD_INFO");
+		else SetRumShipInfo(refCharacter, "QTY_FOOD_INFO"); // Warship 11.07.09 На сколько хватит рому
+		refCharacter.Ship.Cargo.Goods.(sGoodName) = iShipQty;
 	}
 	else
 	{
-		if (iCurGoodsIdx == GOOD_RUM) // Warship 11.07.09 На сколько хватит рому
-		{
-			// чтоб прикинуть как оно будет, скинем на время колво на продажное
-			SetCharacterGoods(refCharacter, GOOD_RUM, iShipQty + BuyOrSell * sti(GameInterface.qty_edit.str));
-			SetRumShipInfo(refCharacter, "QTY_FOOD_INFO");
-			SetCharacterGoods(refCharacter, GOOD_RUM, iShipQty);
-		}
-		else
-		{
-			SetFormatedText("QTY_FOOD_INFO", "");
-		}
+		SetFormatedText("QTY_FOOD_INFO", "");
 	}
 }
 
@@ -499,6 +512,7 @@ void TransactionOK()
 		SetStorageGoods(refStore, iCurGoodsIdx, iStoreQty + nTradeQuantity);
 		RemoveCharacterGoods(refCharacter, iCurGoodsIdx, nTradeQuantity);
 	}
+	iStorageUsedWeight = GetStorageUsedWeight(refStore); // > единственное место, где вес склада меняется
 
 	howMany = nTradeQuantity / sti(Goods[iCurGoodsIdx].Units);
 	if (howMany > 20)
@@ -694,7 +708,7 @@ void SortTradeList(int column, bool preserveState, string tableName)
 		case 2: datatype = "float"; break;
 		case 4: datatype = "float"; break;
 		case 5: datatype = "integer"; break;
+		case 6: datatype = "integer"; break;
 	}
-
 	QoLSortTable(tableName, column, datatype, preserveState, 0);
 }

@@ -1,39 +1,22 @@
 
 bool TestIntValue(int nValue, int nCompareValue, string sOperation)
 {
-	switch(sOperation)
+	switch (sOperation)
 	{
-	case ">=":
-			if(nValue >= nCompareValue) return true;
-			return false;
-	break;
-	case "<=":
-			if(nValue <= nCompareValue) return true;
-			return false;
-	break;
-	case "=":
-			if(nValue == nCompareValue) return true;
-			return false;
-	break;
-	case ">":
-			if(nValue > nCompareValue) return true;
-			return false;
-	break;
-	case "<":
-			if(nValue < nCompareValue) return true;
-			return false;	
-	break;
+		case ">=":  return nValue >= nCompareValue; break;
+		case "<=":  return nValue <= nCompareValue; break;
+		case  "=":  return nValue == nCompareValue; break;
+		case  ">":  return nValue  > nCompareValue; break;
+		case  "<":  return nValue  < nCompareValue; break;
 	}
-	trace("ERROR: invalid operation(" + sOperation + ")");
+	trace("ERROR TestIntValue: invalid operation(" + sOperation + ")");
 	return false;
 }
 
 bool ProcessCondition(aref condition)
 {
-	bool bTmp;
 	int i;
 	int iNation, iLocation;
-	ref tmpRef;
 	ref refCharacter;
 	string sConditionName;
 	string sTmpString;
@@ -155,34 +138,6 @@ bool ProcessCondition(aref condition)
 			}
 			return false;
 		break;
-		
-        // boal  260804 -->  TODO
-        /*
-        case "location_port": // любая портовая локация
-            if (IsEntity(loadedLocation))
-            {
-    			if (loadedLocation.type == "port") return !CharacterIsDead(refCharacter);
-    		}
-    		return false;
-    	break;
-
-    	case "location_seashore": // любая бухта
-            if (IsEntity(loadedLocation))
-            {
-    			if (loadedLocation.type == "seashore") return !CharacterIsDead(refCharacter);
-    		}
-    		return false;
-    	break;
-
-    	case "Location_Coast": // любая бухта или порт
-            if (IsEntity(loadedLocation) && CheckAttribute(loadedLocation, "type"))
-            {
-    			if (loadedLocation.type == "seashore" || loadedLocation.type == "port") return !CharacterIsDead(refCharacter);
-    		}
-    		return false;
-    	break;
-    	*/
-        // boal <--
 
         case "Goods":
     		return TestIntValue(GetCargoGoods(refCharacter,sti(condition.goods)),sti(condition.quantity),condition.operation);
@@ -319,8 +274,20 @@ bool ProcessCondition(aref condition)
 				}
 			}
 		break;
+
+        case "NOTlocation":
+       		if (CharacterIsDead(refCharacter)) return false;
+        	if (refCharacter.location == condition.CurLocation)
+        		return false;
+    		if (refCharacter.location != condition.location)
+			{
+				bLandEncountersGen = true;
+				return true;
+			}
+    		return false;
+    	break;
 	}
-	trace("ERROR: unidentified condition type()" + condition);
+	trace("ERROR ProcessCondition: unidentified condition type: " + condition);
 	return false;
 }
 
@@ -354,9 +321,9 @@ void QuestsCheck()
 
 		sQuestName = GetAttributeName(quest);
 
-		if(CheckAttribute(quest,"win_condition"))
+		if (CheckAttribute(quest,"win_condition"))
 		{
-			if(quest.win_condition == "no")
+			if (quest.win_condition == "no")
 			{
 				// quest with no win condition; completed on first check
 				OnQuestComplete(quest, sQuestName);
@@ -365,7 +332,7 @@ void QuestsCheck()
 			}
 			makearef(conditions,quest.win_condition);
 			nConditionsNum = GetAttributesNum(conditions);
-			if(nConditionsNum == 0)
+			if (nConditionsNum == 0)
 			{
 				// quest with no win condition; completed on first check
 				OnQuestComplete(quest, sQuestName);
@@ -373,16 +340,16 @@ void QuestsCheck()
 				continue;
 			}
 			bQuestCompleted = true;
-			for(m = 0; m < nConditionsNum; m++)
+			for (m = 0; m < nConditionsNum; m++)
 			{
 				condition = GetAttributeN(conditions,m);
-				if(!ProcessCondition(condition)) 
+				if(!ProcessCondition(condition))
 				{
 					bQuestCompleted = false;
 					break;
 				}
 			}
-			if(bQuestCompleted) 
+			if (bQuestCompleted)
 			{
 				OnQuestComplete(quest, sQuestName);
 				nQuestsNum = GetAttributesNum(quests);
@@ -419,8 +386,6 @@ void QuestsCheck()
 		}
 	}
 	bQuestCheckProcess = false;
-	
-	aref arFader;
 }
 
 void OnQuestComplete(aref quest, string sQuestname)
@@ -432,8 +397,8 @@ void OnQuestComplete(aref quest, string sQuestname)
             quest.over = "yes";
         }
 		QuestComplete(quest.win_condition, sQuestName);
-		//TODO: Это стартовая линейка Мишеля
-		//FranceLineQuestComplete(quest.win_condition, sQuestName);
+		LeBasqueQuestComplete(quest.win_condition, sQuestName);
+		FranceLineQuestComplete(quest.win_condition, sQuestName); //стартовая линейка Мишеля де Граммона
 	}
 }
 
@@ -443,8 +408,8 @@ void OnQuestFailed(aref quest, string sQuestName)
 	{
 		quest.over = "yes";
 		QuestComplete(quest.fail_condition, sQuestName);
-		//TODO: Это стартовая линейка Мишеля
-		//FranceLineQuestComplete(quest.fail_condition, sQuestName);
+		LeBasqueQuestComplete(quest.fail_condition, sQuestName);
+		FranceLineQuestComplete(quest.fail_condition, sQuestName); //Это стартовая линейка Мишеля де Граммона
 	}
 }
 

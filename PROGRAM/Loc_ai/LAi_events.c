@@ -22,8 +22,8 @@ void LAi_CharacterUpdate()
 {
 	//Параметры
 	aref chr = GetEventData();
+	if(LAi_IsDead(chr) || LAi_CheckCharacter(chr, "LAi_CharacterUpdate") == false) return;
 	float dltTime = GetEventData();
-	if(LAi_CheckCharacter(chr, "LAi_CharacterUpdate") == false) return;
 	//Процессируем соответствующий тип
 	string func = chr.chr_ai.type;
 	if(func != "")

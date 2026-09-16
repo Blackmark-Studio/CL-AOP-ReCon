@@ -1,0 +1,156 @@
+Arelano_dialog_1 {
+Come in, @<GetAddress_Form>. If Mateo told you I have healing seaweed, he exaggerated. It isn't healing at all.
+}
+Arelano_dialog_2_m {
+I didn't come for seaweed, Tomas. Santa Clara keeps her lights burning. We're from the 'San Jacinto'. Captain de Aragon ordered us to bring you aboard immediately. The frigate is waiting in Anna Maria Bay.
+}
+Arelano_dialog_2_f {
+I didn't come for seaweed, Tomas. Santa Clara keeps her lights burning. We're from the 'San Jacinto'. Captain de Aragon ordered us to bring you aboard immediately. The frigate is waiting in Anna Maria Bay.
+}
+Arelano_dialog_3 {
+I hope you didn't give yourselves away to the settlers. How many of you are there, and did you check the approaches to the bay before dropping anchor?
+}
+Arelano_dialog_4 {
+You seem to think you're the only man here who knows his trade. I assure you, you're mistaken. Pack your things. We have little time.
+}
+Arelano_dialog_5 {
+Why didn't Captain de Aragon come himself?
+}
+Arelano_dialog_6 {
+Ask him yourself. I don't discuss orders.
+}
+Arelano_dialog_7 {
+Very well, I'm ready. We can leave.
+}
+Arelano_dialog_8 {
+Excellent. Follow me.
+}
+Arelano_dialog_9 {
+At last... Where have you be... Wait. Who are you?
+}
+Arelano_dialog_10 {
+Take your hand off the hilt, Tomas. My men are outside, and you won't escape. But you'll remain alive if you don't resist.
+}
+Arelano_dialog_11 {
+First you'll tell me who you are and what you want from me.
+}
+Arelano_dialog_12 {
+My name would mean nothing to you. As for what we want, I think you understand perfectly. Put aside your pride: we'll get what we came for either way. The only question is how.
+}
+Arelano_dialog_13 {
+Damned ladrones... You have the advantage now. Very well, I'll go with you.
+}
+Arelano_dialog_14 {
+Walk ahead and don't do anything foolish. It'll only excite Monsieur l'Olonnais, and mercy isn't among his virtues even when he's in a good mood.
+}
+Arelano_dialog_15 {
+Before we board, I want to know who betrayed me. I sent twenty dispatches through different agents. Nineteen contained false information, and only three men knew my name and where to find me. Which of them betrayed me?
+}
+Arelano_dialog_16 {
+No one betrayed you. Your name was tortured out of one of them. If you prove stubborn, you'll soon learn exactly how.
+}
+Arelano_dialog_17 {
+We'll see about that... And there are the sails of a Santiago patrol. Soon you'll be swinging from their yards...
+}
+Arelano_dialog_18 {
+But where's the signal flag? Ah... I see... You thick-headed ladrones failed to learn about that...
+}
+Arelano_dialog_19 {
+Argh...
+}
+Arelano_dialog_20_m {
+That's not the 'San Jacinto'... And you... damned ladrón!
+}
+Arelano_dialog_20_f {
+That's not the 'San Jacinto'... And you... damned pirate!
+}
+Arelano_dialog_21 {
+Careful, friends. We have an exceptionally perceptive spy here.
+}
+Arelano_dialog_22 {
+You'll burn in hell, damned apostates!
+}
+Arelano_dialog_23 {
+You'll be the first one there. Unless, of course, you hand over the papers we can just as easily take from your corpse.
+}
+Arelano_dialog_24 {
+And there are the sails of a Santiago patrol. Soon you'll be swinging from their yards...
+}
+Arelano_dialog_25 {
+Cough... cough...
+}
+Arelano_dialog_26 {
+We'll have to search you, Senor Arellano. For your sake, I hope you're carrying information about the bay where the Veracruz and Cartagena squadrons are to rendezvous.
+}
+Arelano_dialog_27 {
+I have nothing on me... I told you: I've already sent everything necessary...
+}
+Arelano_dialog_28 {
+Then we'll have to drag everything you know out of you.
+}
+Arelano_dialog_29 {
+You won't get anything from me, filthy apostates... Cough... cough... I won't tell you a thing.
+}
+Arelano_dialog_30 {
+Don't play the holy man, Tomas. You're no fool. You heard the fighting, yet you didn't even try to flee. You were waiting for someone to come for you. And they weren't supposed to be Spanish soldiers...
+}
+Arelano_dialog_31 {
+I... want to offer you a bargain...
+}
+Arelano_dialog_32 {
+You want us to spare your life? I'm afraid...
+}
+Arelano_dialog_33 {
+Cough... cough...
+}
+Arelano_dialog_34 {
+We'll have to search you, Senor Arellano. For your sake, I hope you're carrying information about the bay where the Veracruz and Cartagena squadrons are to rendezvous.
+}
+Arelano_dialog_35 {
+I... cough... sent twenty dispatches through different agents. Only three knew my name, and only one had the true coordinates... Who betrayed me? Ramiro?
+}
+Arelano_dialog_36 {
+It doesn't matter anymore. Just give us the papers, and...
+}
+Arelano_dialog_37 {
+There are no papers... There weren't supposed to be. Everything necessary I already... sent. Cough... cough...
+}
+Arelano_dialog_38 {
+In that case I'll have to prolong your life for another couple of hours. I doubt you'll enjoy them. Senor l'Olonnais has been looking for an excuse to conduct a torture, and he's very good at his craft.
+}
+Arelano_dialog_39 {
+That's why I ran... I understood how it would end. I have... an offer.
+}
+Arelano_dialog_40 {
+An offer? You want to stay alive?
+}
+Arelano_dialog_41 {
+I'm already a dead man... Cough... cough... The bullet pierced my lung. I have a daughter... Anna Arellano. She has no one but me.
+}
+Arelano_dialog_42 {
+Give me your word... that within three months you'll deposit twenty thousand pesos in my daughter's name at the bank in Cumana... And tell her I give my blessing to her marriage with Sebastian... Then I'll tell you where the rendezvous will take place.
+}
+Arelano_dialog_43 {
+You have my word. And I'll keep it if you tell the truth.
+}
+Arelano_dialog_44 {
+The 'Margarita'... won't go to Cuba. I couldn't find... a suitable bay here.
+}
+Arelano_dialog_45 {
+Then where will the squadrons join?
+}
+Arelano_dialog_46 {
+At sea... Cough... cough... Draw two lines on the chart. One from Fort Orange to La Vega. The other... from Belize to San Juan. Where they cross... Tierra Firme will heave to and wait for reinforcements.
+}
+Arelano_dialog_47 {
+Tierra Firme, 'Margarita'... Are those ship names?
+}
+Arelano_dialog_48 {
+Tierra Firme is the squadron... 'Margarita' is the treasure galleon. All the silver will be in her holds.
+}
+Arelano_dialog_49 {
+Wait! You mean the 'Santa Margarita'?! When will she reach that point? Speak!
+}
+Arelano_dialog_50 {
+She... has already left Veracruz... She'll... n-need...
+}

@@ -176,9 +176,9 @@ void ProcessDialogEvent()
 		case "ArrestInHome_NotHave":
 			dialog.text = StringFromKey("BrigCaptain_35");
 			link.l1 = StringFromKey("BrigCaptain_36");
-			link.l1.go = "ArrestInHome_4";
+			link.l1.go = "ArrestInHome_5";
 		break;
-		case "ArrestInHome_4":
+		case "ArrestInHome_5":
 			dialog.text = StringFromKey("BrigCaptain_37");
 			link.l1 = StringFromKey("BrigCaptain_38");
 			link.l1.go = "FightInHouse";

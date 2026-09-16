@@ -1,9 +1,9 @@
 Curacao_Prison_1 {
-说吧，我听着。
+说吧， 我听着。 
 }
 Curacao_Prison_2_m {
-我搞错了。告辞。
+我搞错了。 告辞。 
 }
 Curacao_Prison_2_f {
-我搞错了。告辞。
+我搞错了。 告辞。 
 }

@@ -1,0 +1,29 @@
+EPL_4_DressmakerNobleLady_script_1 {M-m-m...}
+EPL_4_DressmakerNobleLady_script_2 {I've warned you a thousand times. I can't help you any more. Every last shilling of mine is already accounted for.}
+EPL_4_DressmakerNobleLady_script_3 {I want to talk about someone else. It doesn't matter what happens to me...}
+EPL_4_DressmakerNobleLady_script_4 {Then what is it about?}
+EPL_4_DressmakerNobleLady_script_5 {You know I was supposed to receive Frau Crowley's money. I served quite well in the regiment; my pay covered all my expenses. And you know why the inheritance slipped away from me, and who received it...}
+EPL_4_DressmakerNobleLady_script_6 {Keep your voice down. This is neither the time nor the place...}
+EPL_4_DressmakerNobleLady_script_7 {Damn it, where has everyone gone? No host, no servants... God sees, next time I'll bring a bottle of wine myself.}
+EPL_4_DressmakerNobleLady_script_8 {If Frau Sharp has secretly resolved to conquer that stout dandy, I don't think we have any right to condemn her for it. The task of catching husbands is usually entrusted by young ladies, with proper modesty, to their mothers; but remember that Frau Sharp has no loving parent, and if she does not find herself a husband, there is no one in the whole world who will do her that service.}
+EPL_4_DressmakerNobleLady_script_9 {I quite agree. Frau Pilar is another matter: she has brought her grown son here to be inspected. Poor boy, he is probably burning with shame.}
+EPL_4_DressmakerNobleLady_script_10 {The parents could have settled the matter without bringing their offspring. I doubt either sister will pay the young man the slightest attention.}
+EPL_4_DressmakerNobleLady_script_11 {I find him rather charming. What do you think, Mijnheer Andres?}
+EPL_4_DressmakerNobleLady_script_12 {The Ternera family does business with the West India Company. The young man has a great future; it would be imprudent to let him leave without a bride...}
+EPL_4_DressmakerNobleLady_script_13 {Do you feel uncomfortable in unfamiliar company?}
+EPL_4_DressmakerNobleLady_script_14 {You have no idea how much.}
+EPL_4_DressmakerNobleLady_script_15 {Oh, you're Spanish? What a pity we have only met now, when the evening is nearly over. I would have been delighted to invite you to dance.}
+EPL_4_DressmakerNobleLady_script_16 {Nothing would have come of it. I don't know how to dance waltzes.}
+EPL_4_DressmakerNobleLady_script_17 {A lady of your station could hardly have been left untaught in that art. I see—you are refusing even to let me hope...}
+EPL_4_DressmakerNobleLady_script_18 {To tell the truth, I am here without an invitation. I took advantage of all the guests wearing masks and counted on their courtesy, as though we had supposedly been introduced the day before. By the way, where is your mask?}
+EPL_4_DressmakerNobleLady_script_19 {It rubbed the bridge of my nose raw. Still, allow me to be discourteous.}
+EPL_4_DressmakerNobleLady_script_20 {Gabriel de Seguenza. I came to the Caribbean on behalf of the Spanish Crown to deal with piracy in Cuban waters. I was only recently sent here from the Old World, but I have already heard of the fort's unhappy fate. Why have you not told me a single word of truth until now? You are playing with me like a kitten.}
+EPL_4_DressmakerNobleLady_script_21 {Have you heard the saying that the best way to hide the truth is to tell it? And since you are now privy to my little secret, may I ask a small favor?}
+EPL_4_DressmakerNobleLady_script_22 {Very well. I accept the rules of your game.}
+EPL_4_DressmakerNobleLady_script_23 {On the night La Vega was sacked, the pirates separated me from my sister. She vanished, and I had already resigned myself to believing her dead, until I met a woman wearing a dress exactly like the one poor Becky wore the last time I saw her. Her face was hidden beneath an enormous hat; for a moment I even thought it truly was Rebecca, but the haughty woman refused even to speak with me.}
+EPL_4_DressmakerNobleLady_script_24 {So here I am, hiding behind a mask in the hope of finding her again and learning the story of her dress.}
+EPL_4_DressmakerNobleLady_script_25 {A foul temper and a broad hat—Señora Pilar Ternera. She is not attending the evening, but I ran into her son in the courtyard not long ago.}
+EPL_4_DressmakerNobleLady_script_26 {You would be doing me an invaluable service if you introduced us.}
+EPL_4_DressmakerNobleLady_script_27 {All right. I understand.}
+EPL_4_DressmakerNobleLady_script_28 {My name is @<pchar>, eldest daughter of the commandant of Fort La Vega.}
+EPL_4_DressmakerNobleLady_script_29 {I'll look for him and speak with him. @<pchar>, try not to attract unnecessary attention in the meantime; you can help me as well. See that señor sitting at the table? He commands the garrison. I think you'll find common ground. Tell him Gabriel asked you to keep him company, and after a while leave for the waterfront through the door behind the stage.}

@@ -502,6 +502,14 @@ void InitIslands()
 		Islands[n].reload.l4.radius = 600.0;
 		Islands[n].reload.l4.pic = 0;
 		Islands[n].reload.l4.tex = "t1";
+
+		Islands[n].reload.l5.label = "Shore66";
+		Islands[n].reload.l5.name = "reload_4";
+		Islands[n].reload.l5.go = "Shore66";
+		Islands[n].reload.l5.emerge = "sea";
+		Islands[n].reload.l5.radius = 600.0;
+		Islands[n].reload.l5.pic = 0;
+		Islands[n].reload.l5.tex = "t1";
 		
 		SendMessage(&locator,"le",LM_LOCATE_I,&Islands[n]);		
 
@@ -1398,6 +1406,15 @@ void InitIslands()
 		Islands[n].reload.l5.pic = 0;
 		Islands[n].reload.l5.tex = "t1";
 
+		Islands[n].reload.l6.label = "Gibraltar Port";
+		Islands[n].reload.l6.name = "reload_5";
+		Islands[n].reload.l6.go = "Gibraltar_town";
+		Islands[n].reload.l6.emerge = "reload1";
+		Islands[n].reload.l6.radius = 600.0;
+		Islands[n].reload.l6.pic = 0;
+		Islands[n].reload.l6.tex = "t1";
+		Islands[n].reload.l6.istown = true;
+
 		SendMessage(&locator,"le",LM_LOCATE_I,&Islands[n]);
 		
 	/////////////////////////////////////////////////////////////////////////
@@ -1734,7 +1751,45 @@ void InitIslands()
 		Islands[n].reload.l4.pic = 0;
 		Islands[n].reload.l4.tex = "t1";
 
-		SendMessage(&locator,"le",LM_LOCATE_I,&Islands[n]);	
+		SendMessage(&locator,"le",LM_LOCATE_I,&Islands[n]);
+
+	/////////////////////////////////////////////////////////////////////////
+	/// Aruba
+	/////////////////////////////////////////////////////////////////////////
+		n = n + 1;
+		Islands[n].id = "Aruba";
+		Islands[n].model = "Aruba";
+		Islands[n].filespath.models = "islands\Aruba";
+		Islands[n].refl_model = "Aruba_refl";
+		Islands[n].locators = "Aruba_locators";
+		Islands[n].visible = true;
+		Islands[n].type = "uninhabited";
+		Islands[n].colonyquantity = 0;
+		Islands[n].LoadGroup.g1 = "IslandShips1";
+		Islands[n].jungle.patch = "Aruba_jungles";
+		Islands[n].jungle.texture = "junglesprites";
+		Islands[n].jungle.scale = 10;
+		//Islands[n].ImmersionDistance = 4000;
+		//Islands[n].ImmersionDepth = 250;
+		Islands[n].TexturePath = "Aruba";
+
+		Islands[n].reload.l1.label = "Shore67";
+		Islands[n].reload.l1.name = "reload_2";
+		Islands[n].reload.l1.go = "Shore67";
+		Islands[n].reload.l1.emerge = "sea";
+		Islands[n].reload.l1.radius = 600.0;
+		Islands[n].reload.l1.pic = 0;
+		Islands[n].reload.l1.tex = "t1";
+
+		Islands[n].reload.l2.label = "Shore68";
+		Islands[n].reload.l2.name = "reload_1";
+		Islands[n].reload.l2.go = "Shore68";
+		Islands[n].reload.l2.emerge = "sea";
+		Islands[n].reload.l2.radius = 600.0;
+		Islands[n].reload.l2.pic = 0;
+		Islands[n].reload.l2.tex = "t1";
+
+		SendMessage(&locator,"le",LM_LOCATE_I,&Islands[n]);
 
 	/////////////////////////////////////////////////////////////////////////
 	/// ГПК

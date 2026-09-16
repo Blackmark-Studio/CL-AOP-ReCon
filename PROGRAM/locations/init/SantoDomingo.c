@@ -236,46 +236,46 @@ int LocationInitSantoDomingo(int n)
 	locations[n].reload.l34.label = "House";
 
 	locations[n].reload.l35.name = "houseK_5";
-	locations[n].reload.l35.go = "BigHouseKNS_SD";
+	locations[n].reload.l35.go = "SantoDomingo_BigHouseKNS";
 	locations[n].reload.l35.emerge = "reload1";
 	locations[n].reload.l35.autoreload = "0";
 	locations[n].reload.l35.label = "House";
 
 	locations[n].reload.l36.name = "houseK_6";
-	locations[n].reload.l36.go = "BigHouseKNS_SD";
+	locations[n].reload.l36.go = "SantoDomingo_BigHouseKNS";
 	locations[n].reload.l36.emerge = "reload2";
 	locations[n].reload.l36.autoreload = "0";
 	locations[n].reload.l36.label = "House";
 
 	locations[n].reload.l37.name = "houseK_7";
-	locations[n].reload.l37.go = "BigHouseKNS_SD";
+	locations[n].reload.l37.go = "SantoDomingo_BigHouseKNS";
 	locations[n].reload.l37.emerge = "reload3";
 	locations[n].reload.l37.autoreload = "0";
 	locations[n].reload.l37.label = "House";
         locations[n].reload.l37.disable = 1; // Закроем на совсем
 
 	locations[n].reload.l38.name = "houseS1";
-	locations[n].reload.l38.go = "Smallhome_K2";
+	locations[n].reload.l38.go = "SantoDomingo_Smallhome_K2";
 	locations[n].reload.l38.emerge = "reload1";
 	locations[n].reload.l38.autoreload = "0";
 	locations[n].reload.l38.label = "House";
         locations[n].reload.l38.disable = 1; // Закроем на совсем
 
 	locations[n].reload.l39.name = "houseS2";
-	locations[n].reload.l39.go = "Smallhome_K2";
+	locations[n].reload.l39.go = "SantoDomingo_Smallhome_K2";
 	locations[n].reload.l39.emerge = "reload1";
 	locations[n].reload.l39.autoreload = "0";
 	locations[n].reload.l39.label = "House";
         locations[n].reload.l39.disable = 1; // Закроем на совсем
 
 	locations[n].reload.l40.name = "houseK_4";
-	locations[n].reload.l40.go = "BigHouseKNS_SD";
+	locations[n].reload.l40.go = "SantoDomingo_BigHouseKNS";
 	locations[n].reload.l40.emerge = "reload3";
 	locations[n].reload.l40.autoreload = "0";
 	locations[n].reload.l40.label = "House";
 
 	locations[n].reload.l41.name = "houseH3";
-	locations[n].reload.l41.go = "Smallhome_K2";
+	locations[n].reload.l41.go = "SantoDomingo_Smallhome_K2";
 	locations[n].reload.l41.emerge = "reload1";
 	locations[n].reload.l41.autoreload = "0";
 	locations[n].reload.l41.label = "House";
@@ -982,7 +982,7 @@ int LocationInitSantoDomingo(int n)
 	// Адмиралтейство из КНС - левое крыло (NikK)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	locations[n].id = "SantoDomingo_Admiralty";
-	locations[n].id.label = "PortOffice";
+	locations[n].id.label = "Admiralty";
 	locations[n].image = "loading\inside\admiralteistvo.tga";
 	//Town sack
 	locations[n].townsack = "SantoDomingo";
@@ -991,6 +991,7 @@ int LocationInitSantoDomingo(int n)
 	locations[n].type = "house";
 	locations[n].fastreload = "SantoDomingo";
 	locations[n].islandId = "Hispaniola";
+	locations[n].Admiralty = true;
 	//Models
 	//Always
 	locations[n].filespath.models = "locations\inside\AdmiraltyKNS1";
@@ -1304,7 +1305,7 @@ int LocationInitSantoDomingo(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	//  Каменный дом с 3 дверьми (NikK)
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	locations[n].id = "BigHouseKNS_SD";
+	locations[n].id = "SantoDomingo_BigHouseKNS";
  	locations[n].id.label = "House";
 	locations[n].image = "loading\inside\BigHouse06.tga";
  	//Town sack
@@ -1357,7 +1358,7 @@ int LocationInitSantoDomingo(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	//Маленький дом из ПКМ
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	locations[n].id = "Smallhome_K2";
+	locations[n].id = "SantoDomingo_Smallhome_K2";
 	locations[n].filespath.models = "locations\inside\Smallhome";
 	locations[n].id.label = "House";
 	locations[n].image = "loading\inside\Smallhome.tga";
@@ -1410,27 +1411,25 @@ int LocationInitSantoDomingo(int n)
 	locations[n].islandId = "Hispaniola";
 	locations[n].islandIdAreal = "Hispaniola1";
 	//Models
+	locations[n].filespath.models = "Locations\Outside\JunglesN\TownExitN";
 	//Always
-	locations[n].filespath.models = "Locations\Outside\TownExitKSM";
-	Locations[n].models.always.townExit = "DuelField";
-	Locations[n].models.always.townWalls = "duelfield_gate";
-
-	Locations[n].models.always.locators = "duelfield_locators";
-
-	Locations[n].models.always.grassPatch = "duelfield_grass";
+	Locations[n].models.always.townExit = "TownExitN_BSP";
+	Locations[n].models.always.townWalls = "townExitN_stucco";
+	Locations[n].models.always.l1 = "TownExitN";
+	Locations[n].models.always.locators = "TownExitN_locators";
+	Locations[n].models.always.grassPatch = "townExitN_grass";
 	Locations[n].models.always.grassPatch.texture = "grass\grassshore.tga.tx";
-
-	Locations[n].models.always.l1 = "DuelField_plan";
-	Locations[n].models.always.l1.level = 9;
+	Locations[n].models.always.l2 = "plan1";
 	//Day
-	locations[n].models.day.charactersPatch = "duelfield_patch";
-	locations[n].models.day.fonars = "duelfield_fd";
+	locations[n].models.day.charactersPatch = "townExitN_patch";
+	locations[n].models.day.fonars = "townExitN_fd";
 	//Night
-	locations[n].models.night.charactersPatch = "duelfield_patch";
-	locations[n].models.night.fonars = "duelfield_fn";
+	locations[n].models.night.charactersPatch = "townExitN_patch";
+	locations[n].models.night.fonars = "townExitN_fn";
 	//Environment
 	locations[n].environment.weather = "true";
 	locations[n].environment.sea = "false";
+
 	//Reload map
 	locations[n].reload.l1.name = "reload1_back";
 	locations[n].reload.l1.go = "SantoDomingo_town";
@@ -1439,76 +1438,18 @@ int LocationInitSantoDomingo(int n)
 	locations[n].reload.l1.label = "SantoDomingo";
 
 	locations[n].reload.l2.name = "reload2_back";
-	locations[n].reload.l2.go = "Hispaniola_Jungle_03";
-	locations[n].reload.l2.emerge = "reload5";
-	locations[n].reload.l2.autoreload = "1";
-	locations[n].reload.l2.label = "Jungle";
-	locations[n].locators_radius.reload.reload2_back = 2.6;
-	n = n + 1;
-
-	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	// Джунгли
-	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	locations[n].id = "Hispaniola_Jungle_03";
-	locations[n].fastreload = "SantoDomingo";
-	locations[n].id.label = "ExitTown";
-	locations[n].image = "loading\outside\jungle.tga";
-	//Town sack
-	locations[n].townsack = "SantoDomingo";
-	//Sound
-	locations[n].type = "jungle";
-	locations[n].islandId = "Hispaniola";
-	locations[n].islandIdAreal = "Hispaniola1";
-	//Models
-	//Always
-	locations[n].filespath.models = "locations\Outside\Jungles\TownExitT";
-	Locations[n].models.always.townExit = "townExitT";
-
-	Locations[n].models.always.locators = "townExitT_KNS_locators";
-
-	Locations[n].models.always.grassPatch = "townExitT_grass";
-	Locations[n].models.always.grassPatch.texture = "grass\grassshore.tga.tx";
-
-	Locations[n].models.always.l1 = "plan1";
-	Locations[n].models.always.l1.level = 9;
-	Locations[n].models.always.l1.tech = "DLightModel";
-	Locations[n].models.always.l2 = "plan2";
-	Locations[n].models.always.l2.level = 8;
-	Locations[n].models.always.l2.tech = "DLightModel";
-	Locations[n].models.always.l3 = "plan3";
-	Locations[n].models.always.l3.level = 7;
-	Locations[n].models.always.l3.tech = "DLightModel";
-	locations[n].models.always.l4 = "plan_KNS";
-	//Day
-	locations[n].models.day.charactersPatch = "townExitT_KNS_patch";
-	locations[n].models.day.fonars = "townExitT_fd";
-	//Night
-	locations[n].models.night.charactersPatch = "townExitT_KNS_patch";
-	locations[n].models.night.fonars = "townExitT_fn";
-	//Environment
-	locations[n].environment.weather = "true";
-	locations[n].environment.sea = "false";
-	//Reload map
-	locations[n].reload.l1.name = "reload5_back";
-	locations[n].reload.l1.go = "SantoDomingo_ExitTown";
-	locations[n].reload.l1.emerge = "reload2";
-	locations[n].reload.l1.autoreload = "1";
-	locations[n].reload.l1.label = "ExitTown";
-	locations[n].locators_radius.reload.reload5_back = 3.0;
-
-	locations[n].reload.l2.name = "reload2_back";
 	locations[n].reload.l2.go = "Hispaniola_Jungle_01";
 	locations[n].reload.l2.emerge = "reload1";
 	locations[n].reload.l2.autoreload = "1";
 	locations[n].reload.l2.label = "Jungle";
-	locations[n].locators_radius.reload.reload2_back = 2.0;
+	locations[n].locators_radius.reload.reload2_back = 3.6;
 
-	locations[n].reload.l3.name = "reload1_back";
+	locations[n].reload.l3.name = "reload3_back";
 	locations[n].reload.l3.go = "SantoDomingo_fort";
 	locations[n].reload.l3.emerge = "reload1";
 	locations[n].reload.l3.autoreload = "1";
 	locations[n].reload.l3.label = "SantoDomingo Fort";
-	locations[n].locators_radius.reload.reload1_back = 2.0;
+	locations[n].locators_radius.reload.reload3_back = 4.0;
 	n = n + 1;
 
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -1546,7 +1487,7 @@ int LocationInitSantoDomingo(int n)
 	locations[n].environment.sea = "false";
 	//Reload map
 	locations[n].reload.l1.name = "reload1_back";
-	locations[n].reload.l1.go = "Hispaniola_Jungle_03";
+	locations[n].reload.l1.go = "SantoDomingo_ExitTown";
 	locations[n].reload.l1.emerge = "reload2";
 	locations[n].reload.l1.autoreload = "1";
 	locations[n].reload.l1.label = "Jungle";
@@ -1718,7 +1659,7 @@ int LocationInitSantoDomingo(int n)
 	//Always
 	locations[n].filespath.models = "locations\Outside\Jungles\Jungle6";
 	Locations[n].models.always.jungle = "jungle6";
-	Locations[n].models.always.locators = "jungle6_lSD02";
+	Locations[n].models.always.locators = "jungle6_locators";
 	Locations[n].models.always.grassPatch = "jungle6_grass";
 	Locations[n].models.always.grassPatch.texture = "grass\grassshore.tga.tx";
 	Locations[n].models.always.l1 = "plan1";

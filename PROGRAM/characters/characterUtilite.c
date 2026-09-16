@@ -146,10 +146,10 @@ bool IsFighter(ref chr)
 	for (int i = 1; i < 4; i++)
 	{
 		if (GetOfficersIndex(pchar, i) == sti(chr.index))
-			return 1;
+			return true;
 	}
 	
-	return 0;
+	return false;
 }
 
 // AlexBlade > Есть ли офицеры-абордажники у ГГ
@@ -158,10 +158,10 @@ bool CheckFighterOfficers()
 	for (int i = 1; i < 4; i++)
 	{
 		if (GetOfficersIndex(pchar, i) >= 0)
-			return 1;
+			return true;
 	}
 
-	return 0;
+	return false;
 }
 
 // Cargo utilites
@@ -340,12 +340,12 @@ int RemoveCharacterGoodsSelf(ref _refCharacter,int _Goods,int _Quantity)
 	{
 		_refCharacter.Ship.Cargo.Goods.(goodsName) = curQuantity - _Quantity;
 		RecalculateCargoLoad(_refCharacter);
-		return true;
+		return 1;
 	}
 	_refCharacter.Ship.Cargo.Goods.(goodsName) = 0;
 	//_Quantity = _Quantity - curQuantity;
 	RecalculateCargoLoad(_refCharacter);
-	return false;
+	return 0;
 }
 // доработал метод, теперь возвращает сколько взял
 int AddCharacterGoodsSimple(aref aCharacter, int iGood, int iQuantity)
@@ -382,7 +382,7 @@ int AddCharacterGoods(ref _refCharacter,int _Goods,int _Quantity)
 			{
 				Characters[cn].Ship.Cargo.Goods.(goodsName) = sti(Characters[cn].Ship.Cargo.Goods.(goodsName)) + _Quantity;
 				RecalculateCargoLoad(&Characters[cn]);
-				return true;
+				return 1;
 			}
 			Characters[cn].Ship.Cargo.Goods.(goodsName) = sti(Characters[cn].Ship.Cargo.Goods.(goodsName)) + freeQuantity;
 			_Quantity = _Quantity - freeQuantity;
@@ -390,7 +390,7 @@ int AddCharacterGoods(ref _refCharacter,int _Goods,int _Quantity)
 		}
 	}
 	Trace("Overup cargo space on "+_Quantity + " id = " + _refCharacter.id);
-	return false;
+	return 0;
 }
 
 int RemoveCharacterGoods(ref _refCharacter,int _Goods,int _Quantity)
@@ -411,7 +411,7 @@ int RemoveCharacterGoods(ref _refCharacter,int _Goods,int _Quantity)
     			{
     				Characters[cn].Ship.Cargo.Goods.(goodsName) = curQuantity - _Quantity;
     				RecalculateCargoLoad(&Characters[cn]);
-    				return true;
+    				return 1;
     			}
     			Characters[cn].Ship.Cargo.Goods.(goodsName) = 0;
     			_Quantity = _Quantity - curQuantity;
@@ -424,7 +424,7 @@ int RemoveCharacterGoods(ref _refCharacter,int _Goods,int _Quantity)
 		}
 	}
 	Trace("Overup cargo space on "+_Quantity);
-	return false;
+	return 0;
 }
 // Cannons utilite
 int GetCaracterShipCannonsType(ref _refCharacter)
@@ -556,11 +556,11 @@ int SetCrewQuantity(ref _refCharacter,int num)
 	{
 		Trace("Error!!! Overup maximum crew quantity (character=" + _refCharacter.index + ")");
 		_refCharacter.Ship.Crew.Quantity = maxCrew;
-		return false;
+		return 0;
 	}
 	if (num < 0) num = 0; // boal fix
 	_refCharacter.Ship.Crew.Quantity = num;
-	return true;
+	return 1;
 }
 
 // --> Eddy, пусть будет пока, а то неудобно в тестах.
@@ -575,7 +575,7 @@ int SetCrewQuantityOverMax(ref _refCharacter, int num)
 {
     if (num < 0) num = 0; // boal fix
     _refCharacter.Ship.Crew.Quantity = num;
-	return true;
+	return 1;
 }
 int AddCharacterCrew(ref _refCharacter,int num)
 {
@@ -633,6 +633,7 @@ int GetNotCaptivePassengersQuantity(ref _refCharacter)
 	if(!CheckAttribute(_refCharacter,"Fellows.Passengers.Quantity")) return 0;
 	for (int i=0; i <sti(_refCharacter.Fellows.Passengers.Quantity); i++)
 	{
+		idx = GetPassenger( _refCharacter,i);
 		if(sti(characters[idx].prisoned) != 1)
 		{
 			result = result+1;
@@ -1527,7 +1528,7 @@ void SetBaseFellows(object refCharacter)
 }
 
 // Items Utilite
-int GetChrItemQuantity(ref _refCharacter)
+int GetCharItemQuantity(ref _refCharacter)
 {
 	aref ar; makearef(ar,_refCharacter.items);
 	return GetAttributesNum(ar);
@@ -1598,6 +1599,45 @@ bool CheckCharacterItem(ref _refCharacter, string itemName)
 			}
 		}
 	}
+	return false;
+}
+
+bool CheckOfficerItem(ref _mainChr, string itemName) //HardCoffee найти заныканный в офицерах предмет
+{
+
+	int i, iTemp;
+	ref rChr;
+
+	if (CheckCharacterItem(_mainChr, itemName))
+	{
+		return true;
+	}
+
+	for (i = 0; i < GetPassengersQuantity(_mainChr); i++)
+	{
+		iTemp = GetPassenger(pchar,i);
+		if (iTemp < 0) continue;
+		rChr = &characters[iTemp];
+		if (CheckAttribute(rChr,"NonRemovable")) continue;
+		//if (CheckAttribute(rChr,"prisoned") && sti(rChr.prisoned) > 0) continue;
+		if (CheckCharacterItem(rChr, itemName))
+		{
+			return true;
+		}
+	}
+
+	for (i = 1; i<COMPANION_MAX; i++)
+	{
+		iTemp = GetCompanionIndex(_mainChr, i);
+		if (iTemp < 0) continue;
+		rChr = &characters[iTemp];
+  		if (!GetRemovable(rChr)) continue;
+		if (CheckCharacterItem(rChr, itemName))
+		{
+			return true;
+		}
+	}
+
 	return false;
 }
 
@@ -1696,40 +1736,48 @@ bool TakeNItemsNotification(ref _refCharacter, string itemName, int n, string sN
 
 	if (isQuestItem)
 	{
+		bool bItemNotify = false;
+
+		if (pchar.chr_ai.type == "player") bItemNotify = true;
+		if (pchar.chr_ai.type == "actor") bItemNotify = true;
+
 		if (n > 0)
 		{
-			if (pchar.chr_ai.type == "player" && !LAi_IsDead(pchar))
+			if (bItemNotify)
 			{
-				if (sNotification == "" || sNotification == "default")
+				if (!LAi_IsDead(pchar))
 				{
-					sNotification = XI_ConvertString("You take item")+": "+GetConvertStr(arItm.name, "ItemsDescribe.txt");
-					if (n > 1)
-						sNotification = sNotification +" (" +n +" " +XI_ConvertString("pcs") +")";
-				}
+					if (sNotification == "" || sNotification == "default")
+					{
+						sNotification = XI_ConvertString("You take item")+": "+GetConvertStr(arItm.name, "ItemsDescribe.txt");
+						if (n > 1) sNotification = sNotification +" (" +n +" " +XI_ConvertString("pcs") +")";
+					}
 
-				if (sIconName == "")
-					sIconName = "BoxPlus";
+					if (sIconName == "") sIconName = "BoxPlus";
+				}
 			}
 
 			AddMsgToCharacter(_refCharacter, MSGICON_GETITEM);
 		}
 		else if (n < 0)
 		{
-			if (dialogrun)
+			bItemNotify = false;
+			if (dialogrun) bItemNotify = true;
+			if (pchar.chr_ai.type == "actor") bItemNotify = true;
+
+			if (bItemNotify)
 			{
-				if (sNotification == ""|| sNotification == "default")
+				if (sNotification == "" || sNotification == "default")
 				{
 					sNotification = XI_ConvertString("You give item")+": "+GetConvertStr(arItm.name, "ItemsDescribe.txt");
-					if (n < -1)
-						sNotification = sNotification +" (" +abs(n) +" " +XI_ConvertString("pcs") +")";
+					if (n < -1) sNotification = sNotification +" (" +abs(n) +" " +XI_ConvertString("pcs") +")";
 				}
 
-				if (sIconName == "")
-					sIconName = "BoxMinus";
+				if (sIconName == "") sIconName = "BoxMinus";
 			}
 		}
-		if (sSound == "")
-			sSound = "interface\important_item.wav";
+
+		if (sSound == "") sSound = "interface\important_item.wav";
 	}
 	
 	q = GetCharacterItem(_refCharacter, itemName);
@@ -1740,7 +1788,7 @@ bool TakeNItemsNotification(ref _refCharacter, string itemName, int n, string sN
 	}
 	else
 	{
-		if(q <= 0 && GetChrItemQuantity(_refCharacter) >= MAX_ITEM_TAKE)
+		if(q <= 0 && GetCharItemQuantity(_refCharacter) >= MAX_ITEM_TAKE)
 		{
 			return false;
 		}
@@ -1759,19 +1807,34 @@ bool TakeNItemsNotification(ref _refCharacter, string itemName, int n, string sN
 int GetCharacterItemCabin(ref _refCharacter,string itemName,bool ignore, bool onlycabin)
 {
 	int qty = 0;
+
+	string sCabin = Get_My_Cabin();
+	string sItemAttr = "Items."+itemName;
+
 	if (!onlycabin)
 	{
-		if(CheckAttribute(_refCharacter,"Items."+itemName))	qty = qty + sti(_refCharacter.Items.(itemName));
-		if (Get_My_Cabin() == "" || or(!ignore, loadedLocation.id != Get_My_Cabin()) || !CheckAttribute(&locations[FindLocation(Get_My_Cabin())], "box1")) return qty;
+		if(CheckAttribute(_refCharacter, sItemAttr))
+			qty = qty + sti(_refCharacter.Items.(itemName));
+
+		if (sCabin == "" || or(!ignore, loadedLocation.id != sCabin))
+			return qty;
 	}
+
+	if (sCabin == "") return qty;
+	int iLoc = FindLocation(sCabin);
+	if (iLoc < 0) return qty;
+	ref rLoc = &locations[iLoc];
+
+	if (!onlycabin && !CheckAttribute(rLoc, "box1")) return qty;
+
 	aref chests;
-	int i, chestsnum = CheckCabinBoxes(&locations[FindLocation(Get_My_Cabin())]);
+	int i, chestsnum = CheckCabinBoxes(rLoc);
 	string sBox;
 	for(i = 1; i <= chestsnum; i++)
 	{
 		sBox = "box"+i;
-		makearef(chests,locations[FindLocation(Get_My_Cabin())].(sBox));
-		if(CheckAttribute(chests,"Items."+itemName))
+		makearef(chests,rLoc.(sBox));
+		if(CheckAttribute(chests, sItemAttr))
 		{
 			qty = qty + sti(chests.Items.(itemName));
 		}
@@ -1782,41 +1845,60 @@ int GetCharacterItemCabin(ref _refCharacter,string itemName,bool ignore, bool on
 void TakeNItemsCabin(ref _refCharacter,string itemName,int quant, bool onlycabin)
 {
 	int qty = quant;
-	if(!onlycabin && CheckAttribute(_refCharacter,"Items."+itemName) && sti(_refCharacter.Items.(itemName)) != 0)
+
+	string sItemAttr = "Items." + itemName;
+	int iHave;
+
+	if(!onlycabin && CheckAttribute(_refCharacter, sItemAttr))
 	{
-		if (sti(_refCharacter.Items.(itemName)) >= -qty) 
+		iHave = sti(_refCharacter.Items.(itemName));
+
+		if (iHave != 0)
 		{
-			TakeNItems(_refCharacter,itemName,qty);
-			return;
-		}
-		else 
-		{
-			qty += sti(_refCharacter.Items.(itemName));
-			TakeNItems(_refCharacter,itemName,-sti(_refCharacter.Items.(itemName)));
-			
-			
+			if (iHave >= -qty)
+			{
+				TakeNItems(_refCharacter, itemName, qty);
+				return;
+			}
+			else
+			{
+				qty += iHave;
+				TakeNItems(_refCharacter, itemName, -iHave);
+			}
 		}
 	}
+
+	string sCabin = Get_My_Cabin();
+	if (sCabin == "") return;
+	int iLoc = FindLocation(sCabin);
+	if (iLoc < 0) return;
+	ref rLoc = &locations[iLoc];
+
 	aref chests;
 	ref rItem;
-	int i, chestsnum = CheckCabinBoxes(&locations[FindLocation(Get_My_Cabin())]);
+	int i, iCur, chestsnum = CheckCabinBoxes(rLoc);
 	string sBox;
 	for(i = 1; i <= chestsnum; i++)
 	{
 		sBox = "box"+i;
-		makearef(chests,locations[FindLocation(Get_My_Cabin())].(sBox));
-		if(CheckAttribute(chests,"Items."+itemName) && sti(chests.Items.(itemName)) != 0)
+		makearef(chests,rLoc.(sBox));
+
+		if(CheckAttribute(chests, sItemAttr))
 		{
-			rItem = ItemsFromID(itemName);
-			if (sti(chests.Items.(itemName)) >= -qty)
+			iCur = sti(chests.Items.(itemName));
+			if (iCur != 0)
 			{
-				TakeNItems(chests,itemName,qty);
-				return;
-			}
-			else 
-			{
-				qty += sti(chests.Items.(itemName));
-				TakeNItems(chests,itemName,-sti(chests.Items.(itemName)));
+				rItem = ItemsFromID(itemName);
+				if (iCur >= -qty)
+				{
+					TakeNItems(chests, itemName, qty);
+					return;
+				}
+				else
+				{
+					qty += iCur;
+					TakeNItems(chests, itemName, -iCur);
+				}
 			}
 		}
 	}
@@ -2867,6 +2949,8 @@ void Set_My_Cabin()
     ref     rShip;
 
     int nShipType = GetCharacterShipType(pchar);
+    int iShipClass = 1;
+
 	if (nShipType == SHIP_NOTUSED)
 	{
         newCab = "My_Cabin";
@@ -2875,6 +2959,7 @@ void Set_My_Cabin()
 	{
 	    rShip = GetRealShip(nShipType);
 	    newCab = "My_" + rShip.CabinType;  // превратим из каюты типа корабля
+	    iShipClass = sti(rShip.Class);
 	}
 
     if (Pchar.SystemInfo.CabinType != newCab)
@@ -2886,80 +2971,101 @@ void Set_My_Cabin()
 			aref	arFromBox, curItem, al, boxTo;
 			string	attr, time, sat = "";
 
-			loc		= &locations[FindLocation(Pchar.SystemInfo.CabinType)];
-			locTo	= &locations[FindLocation(newCab)];
+			n = FindLocation(Pchar.SystemInfo.CabinType);
+			i = FindLocation(newCab);
 
-			if (IsDay())
-				time = "day";
+			if (n == -1 || i == -1)
+				trace("ERROR Set_My_Cabin: не найдена локация каюты, перенос сундуков пропущен: " + Pchar.SystemInfo.CabinType + " > " + newCab);
 			else
-				time = "night";
-
-			if (CheckAttribute(locTo, "models." + time + ".locators"))
-				sat = "models." + time + ".locators";
-			else if (CheckAttribute(locTo, "models.always.locators"))
-				sat = "models.always.locators";
-
-			if (sat != "")
 			{
-				CreateEntity(locTo, "location");
+				loc		= &locations[n];
+				locTo	= &locations[i];
 
-				if (CheckAttribute(locTo, "filespath.models"))
-					SendMessage(locTo, "ls", MSG_LOCATION_MODELSPATH, locTo.filespath.models);
+				if (IsDay())
+					time = "day";
+				else
+					time = "night";
 
-				LocLoadModel(locTo, sat, "");
-				SendMessage(locTo, "l", MSG_LOCATION_UPDATELOCATORS);
-			}
+				if (CheckAttribute(locTo, "models." + time + ".locators"))
+					sat = "models." + time + ".locators";
+				else if (CheckAttribute(locTo, "models.always.locators"))
+					sat = "models.always.locators";
 
-			// полная зачистка
-			for (n = 1; n <= 4; n++)
-			{
-				sTemp = "box" + n;
-				if (FindLocator(locTo.id, sTemp, &al, true))
+				if (sat != "")
 				{
-					DeleteAttribute(locTo, sTemp + ".items");
-					locTo.(sTemp).items = "";
-					locTo.(sTemp) = Items_MakeTime(0, 0, 1, 2003);
-					locTo.(sTemp).money = 0;
+					CreateEntity(locTo, "location");
+
+					if (CheckAttribute(locTo, "filespath.models"))
+						SendMessage(locTo, "ls", MSG_LOCATION_MODELSPATH, locTo.filespath.models);
+
+					if (!LocLoadModel(locTo, sat, ""))
+						trace("ERROR Set_My_Cabin: не загрузилась модель локаторов " + newCab + ", сундуки сольются в box1");
+
+					SendMessage(locTo, "l", MSG_LOCATION_UPDATELOCATORS);
 				}
-				else
-					DeleteAttribute(locTo, sTemp);
-			}
 
-			for (n = 1; n <= 4; n++)
-			{
-				sTemp = "box" + n;
-
-				if (FindLocator(locTo.id, sTemp, &al, true))
-					makearef(boxTo, locTo.(sTemp));
-				else
-					makearef(boxTo, locTo.box1);
-
-				if (CheckAttribute(loc, sTemp + ".money"))
-					boxTo.money = sti(boxTo.money) + sti(loc.(sTemp).money);
-
-				makearef(arFromBox, loc.(sTemp).items);
-				for (i = 0; i < GetAttributesNum(arFromBox); i++)
+				// полная зачистка
+				for (n = 1; n <= 4; n++)
 				{
-					curItem = GetAttributeN(arFromBox, i);
-					attr = GetAttributeName(curItem);
-
-					if (attr != "")
+					sTemp = "box" + n;
+					if (FindLocator(locTo.id, sTemp, &al, true))
 					{
-						if (!CheckAttribute(boxTo, "items." + attr))
-							boxTo.items.(attr) = 0;
-
-						boxTo.items.(attr) = makeint(sti(boxTo.items.(attr)) + makeint(GetAttributeValue(curItem)));
+						DeleteAttribute(locTo, sTemp + ".items");
+						locTo.(sTemp).items = "";
+						locTo.(sTemp) = Items_MakeTime(0, 0, 1, 2026);
+						locTo.(sTemp).money = 0;
 					}
+					else
+						DeleteAttribute(locTo, sTemp);
 				}
-				// del
-				DeleteAttribute(loc, sTemp + ".items");
-				loc.(sTemp).items = "";
-				loc.(sTemp) = Items_MakeTime(0, 0, 1, 2003);
-				loc.(sTemp).money = 0;
-			}
 
-			if (sat != "")
-				DeleteClass(locTo);
+				if (!CheckAttribute(locTo, "box1"))
+				{
+					locTo.box1 = Items_MakeTime(0, 0, 1, 2026);
+					locTo.box1.items = "";
+					locTo.box1.money = 0;
+				}
+
+				for (n = 1; n <= 4; n++)
+				{
+					sTemp = "box" + n;
+
+					// > нет такого сундука в старой каюте, пропускаем
+					if (!CheckAttribute(loc, sTemp))
+						continue;
+
+					if (FindLocator(locTo.id, sTemp, &al, true))
+						makearef(boxTo, locTo.(sTemp));
+					else
+						makearef(boxTo, locTo.box1);
+
+					if (CheckAttribute(loc, sTemp + ".money"))
+						boxTo.money = sti(boxTo.money) + sti(loc.(sTemp).money);
+
+					makearef(arFromBox, loc.(sTemp).items);
+					for (i = 0; i < GetAttributesNum(arFromBox); i++)
+					{
+						curItem = GetAttributeN(arFromBox, i);
+						attr = GetAttributeName(curItem);
+
+						if (attr != "")
+						{
+							if (!CheckAttribute(boxTo, "items." + attr))
+								boxTo.items.(attr) = 0;
+
+							boxTo.items.(attr) = makeint(sti(boxTo.items.(attr)) + makeint(GetAttributeValue(curItem)));
+						}
+					}
+					// del
+					DeleteAttribute(loc, sTemp + ".items");
+					loc.(sTemp).items = "";
+					loc.(sTemp) = Items_MakeTime(0, 0, 1, 2026);
+					loc.(sTemp).money = 0;
+				}
+
+				if (sat != "")
+					DeleteClass(locTo);
+			}
 		}
 
         Pchar.SystemInfo.CabinType = newCab;
@@ -2967,7 +3073,7 @@ void Set_My_Cabin()
         n = FindLocation("My_Deck");
         if (n != -1)
         {
-            if (sti(rShip.Class) > 4)
+            if (iShipClass > 4)
             {
                 Locations[n].reload.l1.go = Pchar.SystemInfo.CabinType;
                 Locations[n].reload.l1.emerge = "reload1";
@@ -2982,7 +3088,7 @@ void Set_My_Cabin()
         n = FindLocation(Pchar.SystemInfo.CabinType);
         if (n != -1)
         {
-            if (sti(rShip.Class) > 4)
+            if (iShipClass > 4)
             {
                 Locations[n].reload.l1.go = "My_Deck";
                 Locations[n].reload.l1.emerge = "reload1";
@@ -3681,6 +3787,37 @@ float ChangeIndianRelation(float _val) // Jason: репутация у инде�
    return stf(pchar.questTemp.Indian.relation);
 }
 
+float ChangeBuccaneerRelation(float _val)
+{
+    if (!CheckAttribute(pchar, "questTemp.Buccaneer.relation")) pchar.questTemp.Buccaneer.relation = 50.0;
+
+	float fRel = stf(pchar.questTemp.Buccaneer.relation);
+
+    fRel = fRel + _val;
+    if (fRel > 100.0) fRel = 100.0;
+    if (fRel < 0.0) fRel = 0.0;
+
+    if (_val < 0.0) notification(StringFromKey("InfoMessages_296") + " (" + FloatToString(fRel, 1) + ")", "Buccaneers");
+    else if (_val > 0.0) notification(StringFromKey("InfoMessages_297") + " (" + FloatToString(fRel, 1) + ")", "Buccaneers");
+
+	pchar.questTemp.Buccaneer.relation = fRel;
+
+    return fRel;
+}
+
+float GetPlayerBuccaneerRelation()
+{
+    return ChangeBuccaneerRelation(0.0);
+}
+
+int GetPlayerBuccaneerRelationType()
+{
+    float fRelation = GetPlayerBuccaneerRelation();
+    if (fRelation >= 60.0) return RELATION_FRIEND;
+    if (fRelation < 20.0) return RELATION_ENEMY;
+    return RELATION_NEUTRAL;
+}
+
 //Пользуется ли персонаж мушкетом в данный момент?
 bool CharUseMusket(ref rChar)
 {
@@ -3717,4 +3854,26 @@ void MakeOffMush(ref chr, string sMush, int iBullet, int iPowder)
 	SetCharacterToMushketer(chr, sMush);
     AddItems(chr, "bullet", iBullet);
 	AddItems(chr, "GunPowder", iPowder);
+}
+
+// KZ > отрезвить ГГ, офицеров, пассажиров и компаньонов
+void SoberParty()
+{
+	int i, cn, q = GetPassengersQuantity(pchar);
+
+	LAi_SetAlcoholNormal(pchar);
+
+	for (i = 0; i < q; i++)
+	{
+		cn = GetPassenger(pchar, i);
+		if (cn >= 0)
+			LAi_SetAlcoholNormal(GetCharacter(cn));
+	}
+
+	for (i = 1; i < COMPANION_MAX; i++)
+	{
+		cn = GetCompanionIndex(pchar, i);
+		if (cn >= 0)
+			LAi_SetAlcoholNormal(GetCharacter(cn));
+	}
 }

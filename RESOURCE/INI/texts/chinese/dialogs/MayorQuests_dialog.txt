@@ -1,640 +1,638 @@
 MayorQuests_dialog_1_m {
-钱先拿来，伙计！俺叫@<GetFullName>，别跟俺废话……
+钱先拿来， 伙计！ 我叫@<GetFullName>， 别跟我废话…… 
 }
 MayorQuests_dialog_1_f {
-钱先拿来，姑娘！俺叫@<GetFullName>，最烦有人顶嘴……
+钱先拿来， 姑娘！ 我叫@<GetFullName>， 最烦有人顶嘴…… 
 }
 MayorQuests_dialog_2_m {
-把你钱包里的东西拿出来，快点！老子叫@<GetFullName>，希望你听说过我……
+把你钱包里的东西拿出来， 快点！ 我叫@<GetFullName>， 希望你听说过我…… 
 }
 MayorQuests_dialog_2_f {
-姑娘，把你的钱袋拿出来，动作快点！老子叫@<GetFullName>，希望你听说过俺……
+姑娘， 把你的钱袋拿出来， 动作快点！ 我叫@<GetFullName>， 希望你听说过我…… 
 }
 MayorQuests_dialog_3 {
-把你身上值钱的东西全都交出来——老子要接管你的钱包。动作快点，俺，@<GetFullName>，可没什么耐心。不过，俺可非常非常嗜血！
+把你身上值钱的东西全都交出来——我要接管你的钱包。 动作快点， 我， @<GetFullName>， 可没什么耐心。 不过， 我可非常非常嗜血！ 
 }
 MayorQuests_dialog_4 {
 @<LinkRandPhrase>
 }
 MayorQuests_dialog_5 {
-呵，原来你就是那个让本地总督@<sTemp>老挂在嘴边的@<GetFullName>？
+呵， 原来你就是那个让本地市长@<sTemp>老挂在嘴边的@<GetFullName>？ 
 }
 MayorQuests_dialog_6 {
-哦，原来你就是那个被本地总督@<sTemp>通缉的臭名昭著的亡命之徒？！
+哦， 原来你就是那个被本地市长@<sTemp>通缉的臭名昭著的亡命之徒？ ！ 
 }
 MayorQuests_dialog_7_m {
-见到你真高兴，@<GetFullName>。本地总督@<sTemp>总是提起你……
+见到你真高兴， @<GetFullName>。 本地市长@<sTemp>总是提起你…… 
 }
 MayorQuests_dialog_7_f {
-很高兴见到你，@<GetFullName>。本地总督@<sTemp>总是提起你……
+很高兴见到你， @<GetFullName>。 本地市长@<sTemp>总是提起你…… 
 }
 MayorQuests_dialog_8 {
 @<LinkRandPhrase>
 }
 MayorQuests_dialog_9_m {
-嘿，俺在这片可是有名的，嘿嘿……等等，你不会也是被那位总督派来找茬的吧？
+嘿， 我在这片可是有名的， 嘿嘿…… 等等， 你不会也是被那位市长派来找茬的吧？ 
 }
 MayorQuests_dialog_9_f {
-哈哈，这一带都知道俺的名号……等等，你不会也是被总督派来找茬的狗腿子吧？
+嘿， 我在这片可是有名的， 嘿嘿…… 等等， 你不会也是被那位市长派来找茬的吧？ 
 }
 MayorQuests_dialog_10_m {
-总督啊？他可是俺的好朋友，这有啥好藏的！哈哈，难不成你也是他派来要俺脑袋的英雄？
+我跟市长可是好朋友， 这事儿没什么好藏的。 哈哈！ 你不会也是他派来要我命的英雄吧？ 
 }
 MayorQuests_dialog_10_f {
-我跟总督可是好朋友，这事儿没啥好藏的。哈哈！你不会也是他派来要俺命的女英雄吧？
+我跟市长可是好朋友， 这事儿没什么好藏的。 哈哈！ 你不会也是他派来要我命的女英雄吧？ 
 }
 MayorQuests_dialog_11 {
-总督对俺“友好”的态度，那可是事实，嘿嘿。可你怎么知道的？难不成他让你来找俺的？
+市长对我“友好”的态度， 那可是事实， 嘿嘿。 可你怎么知道的？ 难不成他让你来找我的？ 
 }
 MayorQuests_dialog_12 {
 @<LinkRandPhrase>
 }
 MayorQuests_dialog_13 {
-没错，混蛋。准备去死吧！
+没错， 混蛋。 准备去死吧！ 
 }
 MayorQuests_dialog_14 {
-哟，还挺聪明的嘛。不过，现在该送你上路了。废话少说……
+哟， 还挺聪明的嘛。 不过， 现在该送你上路了。 废话少说…… 
 }
 MayorQuests_dialog_15 {
-没错，就是老子。拔刀吧，伙计！让俺看看你血是什么颜色的。
+没错， 就是我。 拔刀吧， 伙计！ 让我看看你血是什么颜色的。 
 }
 MayorQuests_dialog_16 {
 @<LinkRandPhrase>
 }
 MayorQuests_dialog_17 {
-哎呀，别啊！俺可不想惹这种麻烦……
+哎呀， 别啊！ 我可不想惹这种麻烦…… 
 }
 MayorQuests_dialog_18 {
-不，这种活儿俺可不接，俺可不是啥英雄……
+不， 这种活儿我可不接， 我可不是什么英雄…… 
 }
 MayorQuests_dialog_19 {
-不不，绝对没有！俺可不想惹麻烦……
+不不， 绝对没有！ 我可不想惹麻烦…… 
 }
 MayorQuests_dialog_20 {
 @<LinkRandPhrase>
 }
 MayorQuests_dialog_21_m {
-这样就对了，伙计……现在给老子滚！
+这样就对了， 伙计…… 现在赶紧滚吧！ 
 }
 MayorQuests_dialog_21_f {
-这样就对了，姑娘……现在赶紧滚吧！
+这样就对了， 姑娘…… 现在赶紧滚吧！ 
 }
 MayorQuests_dialog_22_m {
-这才是明智的选择。你要是知道俺送了多少英雄上路……行了，别废话了，赶紧滚吧，你这坨屎！
+这才是明智的选择。 你要是知道我送了多少英雄上路…… 行了， 别废话了。 滚吧， 你这垃圾！ 
 }
 MayorQuests_dialog_22_f {
-这才是明智的选择。你要是知道俺送了多少英雄上路……行了，别废话了。滚吧，婊子！
+这才是明智的选择。 你要是知道我送了多少英雄上路…… 行了， 别废话了。 滚吧， 婊子！ 
 }
 MayorQuests_dialog_23_m {
-干得不错，值得表扬！懂得不多管闲事，这才聪明……行了，走吧，伙计。
+干得不错， 值得表扬！ 懂得不多管闲事， 这才聪明…… 行了， 走吧， 伙计。 
 }
 MayorQuests_dialog_23_f {
-干得不错，表扬你！知道不多管闲事，这才聪明……行了，姑娘，你走吧。
+干得不错， 值得表扬！ 懂得不多管闲事， 这才聪明…… 行了， 走吧， 姑娘。 
 }
 MayorQuests_dialog_24 {
 @<LinkRandPhrase>
 }
 MayorQuests_dialog_25 {
-告别了，保重身体……
+告别了， 保重身体…… 
 }
 MayorQuests_dialog_26 {
-你找俺啥事，@<GetAddress_Form>?
+你找我什么事， @<GetAddress_Form>?
 }
 MayorQuests_dialog_27 {
-我要知道你是谁。现在就说清楚——你是谁，来这儿干什么？
+我要知道你是谁。 现在就说清楚——你是谁， 来这儿干什么？ 
 }
 MayorQuests_dialog_28_m {
-你算哪根葱，凭啥让我回答你的问题？
+你算老几， 凭什么让我回答你的问题？ 
 }
 MayorQuests_dialog_28_f {
-你算什么，凭啥让我回答你的问题？
+你算老几， 凭什么让我回答你的问题？ 
 }
 MayorQuests_dialog_29 {
-我是奉总督的命令，正在找敌方间谍！
+我是奉市长的命令， 正在找敌方间谍！ 
 }
 MayorQuests_dialog_30 {
-这跟俺有啥关系？
+这跟我有什么关系？ 
 }
 MayorQuests_dialog_31 {
-也许没关系，不过咱们还是先去指挥官办公室吧，到了那儿再说……
+也许没关系， 不过咱们还是先去指挥官办公室吧， 到了那儿再说…… 
 }
 MayorQuests_dialog_32_m {
-不，我不会去指挥官办公室。间谍已经找到了。现在看看你能不能活着离开这儿！
+不， 我不会去指挥官办公室。 间谍已经找到了。 现在看看你能不能活着离开这儿！ 
 }
 MayorQuests_dialog_32_f {
-不，我不会去指挥官办公室。就当你是被抓到的间谍吧。现在有本事就活着离开这儿！
+不， 我不会去指挥官办公室。 就当你是被抓到的间谍吧。 现在有本事就活着离开这儿！ 
 }
 MayorQuests_dialog_33 {
-呵，行，俺总能想办法出去……
+呵， 行， 我总能想办法出去…… 
 }
 MayorQuests_dialog_34_m {
-啊，是你啊，@<GetFullName>，你这老家伙
+啊， 是你啊， @<GetFullName>， 你这老家伙
 }
 MayorQuests_dialog_34_f {
-啊，是你啊，@<GetFullName>，这位胆大的姑娘。
+啊， 是你啊， @<GetFullName>， 这位胆大的姑娘。 
 }
 MayorQuests_dialog_35_m {
-老朋友，见到你真高兴@<Pchar>
+老朋友， 见到你真高兴@<Pchar>
 }
 MayorQuests_dialog_35_f {
-见到你真高兴，美女@<Pchar>
+见到你真高兴， 美女@<Pchar>
 }
 MayorQuests_dialog_36_m {
-哟，这不是船长@<GetFullName>本人嘛。
+哟， 这不是@<GetFullName>船长本人嘛。 
 }
 MayorQuests_dialog_36_f {
-哟，这不是船长本人嘛，@<GetFullName>
+哟， 这不是船长本人嘛， @<GetFullName>
 }
 MayorQuests_dialog_37 {
-我还以为你早就不在人世了！
+我还以为你早就不在人世了！ 
 }
 MayorQuests_dialog_38_m {
-估计还是老样子，喝醉了。
+估计还是老样子， 喝醉了。 
 }
 MayorQuests_dialog_38_f {
-估计还是老样子，喝醉了。
+估计还是老样子， 喝醉了。 
 }
 MayorQuests_dialog_39 {
-看来你还自由着呢！
+看来你还自由着呢！ 
 }
 MayorQuests_dialog_40 {
-说吧，你到底想要啥？
+说吧， 你到底想要什么？ 
 }
 MayorQuests_dialog_41 {
-这回你又想干啥？
+这回你又想干什么？ 
 }
 MayorQuests_dialog_42 {
-你又没事来烦我？
+你又没事来烦我？ 
 }
 MayorQuests_dialog_43 {
-@<LinkRandPhrase>。@<LinkRandPhrase> @<LinkRandPhrase>
+@<LinkRandPhrase>。 @<LinkRandPhrase>@<LinkRandPhrase>
 }
 MayorQuests_dialog_44 {
-@<TimeGreeting>，船长
+@<TimeGreeting>， 船长
 }
 MayorQuests_dialog_45 {
-你好，@<GetAddress_Form>
+你好， @<GetAddress_Form>
 }
 MayorQuests_dialog_46 {
-你好，船长
+你好， 船长
 }
 MayorQuests_dialog_47_m {
-像您这样体面的人，能找俺有什么事？
+像您这样体面的人， 能找我有什么事呢？ 
 }
 MayorQuests_dialog_47_f {
-像你这么大胆的姑娘，找俺有啥事啊？
+像你这么大胆的姑娘， 能找我有什么事呢？ 
 }
 MayorQuests_dialog_48 {
-你来干什么？
+你来干什么？ 
 }
 MayorQuests_dialog_49 {
-这次你想打听啥？
+这次你想打听什么？ 
 }
 MayorQuests_dialog_50 {
-@<LinkRandPhrase> @<GetFullName>。@<LinkRandPhrase>
+@<LinkRandPhrase>@<GetFullName>。 @<LinkRandPhrase>
 }
 MayorQuests_dialog_51 {
-你好，船长
+你好， 船长
 }
 MayorQuests_dialog_52 {
-你好，啊，原来是你@<GetAddress_Form>
+你好， 啊， 原来是你@<GetAddress_Form>
 }
 MayorQuests_dialog_53 {
-哎，船长
+哎， 船长
 }
 MayorQuests_dialog_54_m {
-我还以为咱们不会再见了，
+我还以为咱们不会再见了， 
 }
 MayorQuests_dialog_54_f {
-我还以为咱们不会再见了，
+我还以为咱们不会再见了， 
 }
 MayorQuests_dialog_55_m {
-说不上见到你我有多高兴，不过
+说不上见到你我有多高兴， 不过
 }
 MayorQuests_dialog_55_f {
-说不上见到你我很高兴，不过
+说不上见到你我很高兴， 不过
 }
 MayorQuests_dialog_56 {
-看来你还活着，真让人遗憾。还有
+看来你还活着， 真让人遗憾。 还有
 }
 MayorQuests_dialog_57 {
-你想干啥？
+你想干什么？ 
 }
 MayorQuests_dialog_58 {
-你来干什么？
+你来干什么？ 
 }
 MayorQuests_dialog_59_m {
-有什么需要俺帮忙的吗？
+有什么需要我帮忙的吗？ 
 }
 MayorQuests_dialog_59_f {
-有什么需要帮忙的吗？
+有什么需要帮忙的吗？ 
 }
 MayorQuests_dialog_60 {
-@<LinkRandPhrase> @<GetFullName> @<LinkRandPhrase>@<LinkRandPhrase>
+@<LinkRandPhrase>@<GetFullName>@<LinkRandPhrase>@<LinkRandPhrase>
 }
 MayorQuests_dialog_61 {
-@<TimeGreeting>，@<GetFullName>船长，有什么需要帮忙的吗？
+@<TimeGreeting>， @<GetFullName>船长， 有什么需要帮忙的吗？ 
 }
 MayorQuests_dialog_62 {
-哟，这不是Captain @<GetFullName>本人嘛！这次想打听点啥？
+哟， 这不是@<GetFullName>船长本人嘛！ 这次想打听点什么？ 
 }
 MayorQuests_dialog_63 {
-你好，@<GetAddress_Form> @<Pchar>。你找俺有事吗？
+你好， @<PChar>@<GetAddress_Form>。 你找我有事吗？ 
 }
 MayorQuests_dialog_64 {
 @<LinkRandPhrase>
 }
 MayorQuests_dialog_65 {
-你听错了，俺走了。
+你听错了， 我走了。 
 }
 MayorQuests_dialog_66_m {
-没啥事——就是去酒馆。
+没什么事——就是去酒馆。 
 }
 MayorQuests_dialog_66_f {
-没事，我正好要去酒馆。
+没事， 我正好要去酒馆。 
 }
 MayorQuests_dialog_67 {
 @<RandPhraseSimple>
 }
 MayorQuests_dialog_68 {
-行吧，算了。祝你好运！
+行吧， 算了。 祝你好运！ 
 }
 MayorQuests_dialog_69 {
-就在镇上随便看看。再见。
+就在镇上随便看看。 再见。 
 }
 MayorQuests_dialog_70 {
 @<RandPhraseSimple>
 }
 MayorQuests_dialog_71 {
-我有个问题想问你。
+我有个问题想问你。 
 }
 MayorQuests_dialog_72 {
-我要点消息。
+我要点消息。 
 }
 MayorQuests_dialog_73 {
 @<RandPhraseSimple>
 }
 MayorQuests_dialog_74 {
-等等，别走！快告诉我你是谁！
+等等， 别走！ 快告诉我你是谁！ 
 }
 MayorQuests_dialog_75 {
-，等一下！
+， 等一下！ 
 }
 MayorQuests_dialog_76 {
-等等，先别走！咱们得谈谈！
+等等， 先别走！ 咱们得谈谈！ 
 }
 MayorQuests_dialog_77 {
-俺是奉总督命令来找敌方间谍的@<XI_ConvertString>！
+我是奉市长命令来找敌方间谍的@<XI_ConvertString>！ 
 }
 MayorQuests_dialog_78 {
-我是奉总督之命，为了@<XI_ConvertString>这座城市的利益行事。现在正在城里搜查敌方间谍。
+我是奉市长之命， 为了@<XI_ConvertString>这座城市的利益行事。 现在正在城里搜查敌方间谍。 
 }
 MayorQuests_dialog_79 {
-本地总督@<GetCharacterIndex>急着要找出城里的间谍……
+本地市长@<GetCharacterIndex>急着要找出城里的间谍…… 
 }
 MayorQuests_dialog_80_m {
-男人@<LinkRandPhrase> @<LinkRandPhrase>
+男人@<LinkRandPhrase>@<LinkRandPhrase>
 }
 MayorQuests_dialog_80_f {
-女人@<LinkRandPhrase> @<LinkRandPhrase>
+女人@<LinkRandPhrase>@<LinkRandPhrase>
 }
 MayorQuests_dialog_81_m {
-想问问关于这个定居点的事！
+想问问关于这个定居点的事！ 
 }
 MayorQuests_dialog_81_f {
-我想问问关于这个定居点的事！
+我想问问关于这个定居点的事！ 
 }
 MayorQuests_dialog_82_m {
-想问你几个关于这个城镇的事。
+想问你几个关于这个城镇的事。 
 }
 MayorQuests_dialog_82_f {
-我想问点关于这个城镇的事。
+我想问点关于这个城镇的事。 
 }
 MayorQuests_dialog_83_m {
-哈哈，见到你就像喝上一杯好酒一样高兴。想问啥就问吧。
+哈哈， 见到你就像喝上一杯好酒一样高兴。 想问什么就问吧。 
 }
 MayorQuests_dialog_83_f {
-哈哈，见到你就跟见到朗姆酒一样高兴——想问啥就问吧。
+哈哈， 见到你就跟见到朗姆酒一样高兴——想问什么就问吧。 
 }
 MayorQuests_dialog_84 {
-想聊天吗，captain？俺也喜欢……尤其是一边喝着朗姆酒。
+想聊天吗， 船长？ 我也喜欢…… 尤其是一边喝着朗姆酒。 
 }
 MayorQuests_dialog_85 {
-嗯，@<PChar>？
+嗯， @<PChar>？ 
 }
 MayorQuests_dialog_86 {
 @<LinkRandPhrase>
 }
 MayorQuests_dialog_87 {
-那你现在还想干嘛？
+那你现在还想干嘛？ 
 }
 MayorQuests_dialog_88_m {
-明白了，Captain @<PChar>，你现在想聊聊吗？
+明白了， @<pchar>船长， 你现在想聊聊吗？ 
 }
 MayorQuests_dialog_88_f {
-明白了，Captain @<PChar>，你这会儿想聊聊吗，女猎手？
+明白了， @<pchar>船长， 你这会儿想聊聊吗， 女猎手？ 
 }
 MayorQuests_dialog_89_m {
-老子都被你问烦了，船长，来点朗姆酒不是更好吗？
+我都被你问烦了， 船长， 来点朗姆酒不是更好吗？ 
 }
 MayorQuests_dialog_89_f {
-老子都被你问烦了，Captain。还不如请俺喝杯朗姆酒。
+我都被你问烦了， 船长。 还不如请我喝杯朗姆酒。 
 }
 MayorQuests_dialog_90 {
 @<LinkRandPhrase>
 }
 MayorQuests_dialog_91 {
-你想问啥@<GetAddress_Form>？
+你想问什么@<GetAddress_Form>？ 
 }
 MayorQuests_dialog_92 {
-我听着呢，Captain。
+我听着呢， 船长。 
 }
 MayorQuests_dialog_93 {
-我得走了，有啥快问吧，Captain。
+我得走了， 有什么快问吧， 船长。 
 }
 MayorQuests_dialog_94 {
 @<LinkRandPhrase>
 }
 MayorQuests_dialog_95_m {
-很高兴有你这样的好伙伴，@<GetAddress_Form>@<PChar>。请说吧。
+很高兴有你这样的好伙伴， @<PChar>@<GetAddress_Form>。 请说吧。 
 }
 MayorQuests_dialog_95_f {
-很高兴有你这样的好伙伴，@<GetAddress_Form> @<PChar>。请说吧。
+很高兴有你这样的好伙伴， @<PChar>@<GetAddress_Form>。 请说吧。 
 }
 MayorQuests_dialog_96 {
-嗯，@<GetAddress_Form>?
+嗯， @<GetAddress_Form>?
 }
 MayorQuests_dialog_97 {
-想聊天吗，船长？正好，俺也喜欢……
+想聊天吗， 船长？ 正好， 我也喜欢…… 
 }
 MayorQuests_dialog_98 {
 @<LinkRandPhrase>
 }
 MayorQuests_dialog_99 {
-这家酒馆最近都在传些什么故事？
+这家酒馆最近都在传些什么故事？ 
 }
 MayorQuests_dialog_100 {
-这附近最近有什么新鲜事吗？
+这附近最近有什么新鲜事吗？ 
 }
 MayorQuests_dialog_101 {
-最近陆地上的日子怎么样？
+最近陆地上的日子怎么样？ 
 }
 MayorQuests_dialog_102 {
 @<LinkRandPhrase>
 }
 MayorQuests_dialog_103 {
-你能给俺指个路吗？
+你能给我指个路吗？ 
 }
 MayorQuests_dialog_104 {
-我怎么都找不到路去那个地方……
+我怎么都找不到路去那个地方…… 
 }
 MayorQuests_dialog_105 {
-能不能给俺指个路……
+能不能给我指个路…… 
 }
 MayorQuests_dialog_106 {
 @<LinkRandPhrase>
 }
 MayorQuests_dialog_107 {
-跟我说说你的殖民地。
+跟我说说你的殖民地。 
 }
 MayorQuests_dialog_108 {
-有要紧的事！
+有要紧的事！ 
 }
 MayorQuests_dialog_109 {
-我有事找你。
+我有事找你。 
 }
 MayorQuests_dialog_110 {
 @<RandPhraseSimple>
 }
 MayorQuests_dialog_111 {
-你听错了，俺走了。
+你听错了， 我走了。 
 }
 MayorQuests_dialog_112_m {
-没事儿，俺就是去酒馆。
+没事儿， 我就是去酒馆。 
 }
 MayorQuests_dialog_112_f {
-没事，我正好要去酒馆。
+没事， 我正好要去酒馆。 
 }
 MayorQuests_dialog_113 {
 @<RandPhraseSimple>
 }
 MayorQuests_dialog_114 {
-行吧，没事，祝你好运！
+行吧， 没事， 祝你好运！ 
 }
 MayorQuests_dialog_115 {
-就是随便在镇上看看。再见。
+就是随便在镇上看看。 再见。 
 }
 MayorQuests_dialog_116 {
 @<RandPhraseSimple>
 }
 MayorQuests_dialog_117 {
-说实话，这方面我不太懂。不过有些事我还是能说说的。
+说实话， 这方面我不太懂。 不过有些事我还是能说说的。 
 }
 MayorQuests_dialog_118 {
-你来咱们殖民地有啥事？
+你来咱们殖民地有什么事？ 
 }
 MayorQuests_dialog_119 {
-随时欢迎。你想听点什么？
+随时欢迎。 你想听点什么？ 
 }
 MayorQuests_dialog_120 {
 @<LinkRandPhrase>
 }
 MayorQuests_dialog_121 {
-这是哪座城？
+这是哪座城？ 
 }
 MayorQuests_dialog_122 {
-你对守护这座城镇的要塞了解多少？
+你对守护这座城镇的要塞了解多少？ 
 }
 MayorQuests_dialog_123 {
-咱们聊点别的吧。
+咱们聊点别的吧。 
 }
 MayorQuests_dialog_124 {
-@<UpperFirst>，咱们的定居点叫@<XI_ConvertString>。
+@<UpperFirst>， 咱们的定居点叫@<XI_ConvertString>。 
 }
 MayorQuests_dialog_125 {
-谢谢你。
+谢谢你。 
 }
 MayorQuests_dialog_126 {
-这事儿我一无所知。
+这事儿我一无所知。 
 }
 MayorQuests_dialog_127 {
-可惜。
+可惜。 
 }
 MayorQuests_dialog_128 {
-那跟俺有啥关系？俺可是本地人！
+那跟我有什么关系？ 我可是本地人！ 
 }
 MayorQuests_dialog_129 {
-谁能为你这话作证？
+谁能为你这话作证？ 
 }
 MayorQuests_dialog_130 {
-大家都能作证，真的！
+大家都能作证， 真的！ 
 }
 MayorQuests_dialog_131 {
-所有人？到底是谁？@<XI_ConvertString>，你倒是说出一个镇上的人名啊！
+所有人？ 到底是谁？ @<XI_ConvertString>， 你倒是说出一个镇上的人名啊！ 
 }
 MayorQuests_dialog_132 {
-呃……等一下……嗯……
+呃…… 等一下…… 嗯…… 
 }
 MayorQuests_dialog_133 {
-行了，伙计，俺找的就是你！跟俺走，不然老子现在就宰了你，明白没？！
+行了， 伙计， 我找的就是你！ 跟我走， 不然我现在就宰了你， 明白没？ ！ 
 }
 MayorQuests_dialog_134 {
-该死！老子怎么这么蠢，竟然惹上这事……算了，老子还是跟着你吧，命还挺值钱的……
+该死！ 我怎么这么蠢， 竟然惹上这事…… 算了， 我还是跟着你吧， 命还挺值钱的…… 
 }
 MayorQuests_dialog_135 {
-那就好。我们正要去找总督——他想见你……
+那就好。 我们正要去找市长——他想见你…… 
 }
 MayorQuests_dialog_136_m {
-听说Governor @<sTemp>让一位叫@<GetMainCharacterNameGen>的船长去城里找敌方间谍。你猜怎么着？他真就在大街上把那家伙逮住了！
+听说市长@<sTemp>让一位叫@<GetMainCharacterNameGen>的船长去城里找敌方间谍。 你猜怎么着？ 他真就在大街上把那家伙逮住了！ 
 }
 MayorQuests_dialog_136_f {
-听说Governor @<sTemp>让某位Captain @<GetMainCharacterNameGen>去找城里的敌方间谍。你猜怎么着？她真就在大街上把那人逮住了！
+听说市长@<sTemp>让某位@<GetMainCharacterNameGen>船长去找城里的敌方间谍。 你猜怎么着？ 她真就在大街上把那人逮住了！ 
 }
 MayorQuests_dialog_137_m {
-我们总督让@<GetMainCharacterNameGen>船长去城里找敌方间谍，这位船长果然在市民中把那家伙揪了出来！
+我们市长让@<GetMainCharacterNameGen>船长去城里找敌方间谍， 这位船长果然在市民中把那家伙揪了出来！ 
 }
 MayorQuests_dialog_137_f {
-我们总督让@<GetMainCharacterNameGen>船长去城里找出敌方间谍。结果这位姑娘真把那间谍从市民中揪了出来！
+我们市长让@<GetMainCharacterNameGen>船长去城里找出敌方间谍。 结果这位姑娘真把那间谍从市民中揪了出来！ 
 }
 MayorQuests_dialog_138 {
 @<RandPhraseSimple>
 }
 MayorQuests_dialog_139_m {
-所以你还是决定回来了……
+所以你还是决定回来了…… 
 }
 MayorQuests_dialog_139_f {
-所以你还是决定回来了……
+所以你还是决定回来了…… 
 }
 MayorQuests_dialog_140_m {
-哦，对了，我忘了点事……
+哦， 对了， 我忘了点事…… 
 }
 MayorQuests_dialog_140_f {
-哦，我忘了点事……
+哦， 我忘了点事…… 
 }
 MayorQuests_dialog_141_m {
-你他妈是谁？！
+你他妈是谁？ ！ 
 }
 MayorQuests_dialog_141_f {
-你他妈是谁？！
+你他妈是谁？ ！ 
 }
 MayorQuests_dialog_142_m {
-老子是来取你项上人头的，伙计。总督@<XI_ConvertString>想把它钉在城门上。
+我是来取你人头的， 伙计。 @<XI_ConvertString>市长想把它钉在城门上。 
 }
 MayorQuests_dialog_142_f {
-老子是来取你项上人头的，伙计。总督@<XI_ConvertString>想把你的脑袋钉在城门上。
+我是来取你人头的， 伙计。 @<XI_ConvertString>市长想把它钉在城门上。 
 }
 MayorQuests_dialog_143 {
-见鬼，俺一开始小看你了。\n那咱们继续吧……
+见鬼， 我一开始小看你了。 \n那咱们继续吧…… 
 }
 MayorQuests_dialog_144 {
-咱们继续吧，伙计！
+咱们继续吧， 伙计！ 
 }
 MayorQuests_dialog_145 {
-呵，明白了……那我可不会让他得意！
+呵， 明白了…… 那我可不会让他得意！ 
 }
 MayorQuests_dialog_146 {
-尽力吧……
+尽力吧…… 
 }
 MayorQuests_dialog_147_m {
-欢迎你上俺的船，伙计。啥风把你吹来了？
+欢迎你上我的船， 伙计。 什么风把你吹来了？ 
 }
 MayorQuests_dialog_147_f {
-姑娘，欢迎上俺的船。啥风把你吹来了？
+姑娘， 欢迎上我的船。 什么风把你吹来了？ 
 }
 MayorQuests_dialog_148 {
-我是代表@<XI_ConvertString>总督行事，正在寻找最近在这片海域出没的海盗。
+我是代表@<XI_ConvertString>市长行事， 正在寻找最近在这片海域出没的海盗。 
 }
 MayorQuests_dialog_149 {
-这活儿可不太像是船长该干的……
+这活儿可不太像是船长该干的…… 
 }
 MayorQuests_dialog_150 {
-这是什么意思？！
+这是什么意思？ ！ 
 }
 MayorQuests_dialog_151 {
-俺现在跟你说的就是这个。去追捕那些自由的私掠者，最后还得让本地总督把咱们的尸体挂满全城——这种活儿，哪配得上船长干？
+我现在跟你说的就是这个。 去追捕那些自由的私掠者， 最后还得让本地市长把咱们的尸体挂满全城——这种活儿， 哪配得上船长干？ 
 }
 MayorQuests_dialog_152 {
-原来你们就是那帮臭名昭著的海盗……
+原来你们就是那帮臭名昭著的海盗…… 
 }
 MayorQuests_dialog_153_m {
-没错，就是那个总督的走狗。
-你现在可惨了，孤身一人，还在俺的船上……
+没错， 你就是那个给市长跑腿的？ \n你现在可惨了， 孤身一人， 还在我的船上…… 
 }
 MayorQuests_dialog_153_f {
-没错，就是那个给总督跑腿的。
-现在你可惨了，孤身一人，还在俺的船上……
+没错， 你就是那个给市长跑腿的？ \n现在你可惨了， 孤身一人， 还在我的船上…… 还是个女人！ 
 }
 MayorQuests_dialog_154 {
-那你接下来打算怎么办？
+那你接下来打算怎么办？ 
 }
 MayorQuests_dialog_155 {
-嗯，那接下来……俺离堡垒太近了，不想冒险，所以暂时把你留在这儿。你去跟你的人说，你会跟俺一起去个叫@<sTemp>的地方，让他们在@<XI_ConvertString>等你。照俺说的做，俺就饶你一命。要是不听话，老子就在甲板上剖了你肚子。\n现在觉得前途咋样？
+嗯， 那接下来…… 我离堡垒太近了， 不想冒险， 所以暂时把你留在这儿。 你去跟你的人说， 你会跟我一起去个叫@<sTemp>的地方， 让他们在@<XI_ConvertString>等你。 照我说的做， 我就饶你一命。 要是不听话， 我就在甲板上剖了你肚子。 \n现在觉得前途咋样？ 
 }
 MayorQuests_dialog_156 {
-我可不觉得这些条件有多诱人。等你离开了堡垒，我怎么知道你还会守信用？
+我可不觉得这些条件有多诱人。 等你离开了堡垒， 我怎么知道你还会守信用？ 
 }
 MayorQuests_dialog_157_m {
-算了，老子就放你一马，狗官的走狗。你得用钱来谢俺的好心。\n赶紧滚，趁老子心情还不错……
+算了， 我就放你一马， 狗官的走狗。 你得用钱来谢我的好心。 \n赶紧滚， 趁我心情还不错…… 
 }
 MayorQuests_dialog_157_f {
-算了，老子就放你一马吧，狗官的走狗。想走？先拿钱来谢老子的“好心”。
-赶紧滚，趁老子心情还不错……
+算了， 我就放你一马吧， 狗官的走狗。 想走？ 先拿钱来谢我的“好心”。 
+赶紧滚， 趁我心情还不错…… 
 }
 MayorQuests_dialog_158 {
-至少还是要谢谢你。再见……
+至少还是要谢谢你。 再见…… 
 }
 MayorQuests_dialog_159 {
-你知道吗，老子还是先割了你的喉咙，省得你那帮手下都跑过来……
+你知道吗， 我还是先割了你的喉咙， 省得你那帮手下都跑过来…… 
 }
 MayorQuests_dialog_160 {
-接下来你就告诉你的手下，你要跟俺一起去个叫@<sTemp>的地方，让他们在@<XI_ConvertString>等你。照俺说的做，老子就饶你一命。不然的话，你肚子现在就在甲板上开花。\n这前景，你觉得咋样？
+接下来你就告诉你的手下， 你要跟我一起去个叫@<sTemp>的地方， 让他们在@<XI_ConvertString>等你。 照我说的做， 我就饶你一命。 不然的话， 你肚子现在就在甲板上开花。 \n这前景， 你觉得咋样？ 
 }
 MayorQuests_dialog_161_m {
-说不上有多诱人。等我孤身一人时，怎么知道你会不会守信？
+说不上有多诱人。 等我孤身一人时， 怎么知道你会不会守信？ 
 }
 MayorQuests_dialog_161_f {
-我可不觉得这些条件有多诱人。等我一个人的时候，我怎么知道你会不会守信用？
+我可不觉得这些条件有多诱人。 等我一个人的时候， 我怎么知道你会不会守信用？ 
 }
 MayorQuests_dialog_162 {
-呵，你当然没法确定，但你有我的承诺。否则你现在就得死。老子觉得，这选择还不明摆着吗……
+呵， 你当然没法确定， 但你有我的承诺。 否则你现在就得死。 我觉得， 这选择还不明摆着吗…… 
 }
 MayorQuests_dialog_163_m {
-嗯，那好吧，我同意。希望你说到做到……
+嗯， 那好吧， 我同意。 希望你说到做到…… 
 }
 MayorQuests_dialog_163_f {
-嗯，那好吧，我答应你。希望你说到做到……
+嗯， 那好吧， 我答应你。 希望你说到做到…… 
 }
 MayorQuests_dialog_164 {
-在俺看来，就是这么回事。选择很简单——现在就打，别磨叽。都给老子拿起家伙！
+在我看来， 就是这么回事。 选择很简单——现在就打， 别磨叽。 都给我拿起家伙！ 
 }
 MayorQuests_dialog_165 {
-我来挡住他们，别担心。
+我来挡住他们， 别担心。 
 }
 MayorQuests_dialog_166_m {
-那我准备好了，咱们开始吧。
+那我准备好了， 咱们开始吧。 
 }
 MayorQuests_dialog_166_f {
-那我准备好了，咱们开始吧。
+那我准备好了， 咱们开始吧。 
 }
 MayorQuests_dialog_167 {
-下次再让我碰见你，你就等着上吊杆吧，记住了……
+下次再让我碰见你， 你就等着上吊杆吧， 记住了…… 
 }
 MayorQuests_dialog_168 {
-明白了……
+明白了…… 
 }
 MayorQuests_dialog_169 {
-你还在这儿？要是俺，早就走了……
+你还在这儿？ 要是我， 早就走了…… 
 }
 MayorQuests_dialog_170 {
-我走了。
+我走了。 
 }
 MayorQuests_dialog_171_m {
-哟，瞧你这胆量！老子还真佩服你的勇气——可惜得亲手送你上路了。
-喂，甲板上的，给我把这家伙收拾了，动作利索点，别闹出动静。我去准备船只迎战。
+哟， 瞧你这胆量！ 我还真佩服你的勇气——可惜得亲手送你上路了。 
+喂， 甲板上的， 给我把这家伙收拾了， 动作利索点， 别闹出动静。 我去准备船只迎战。 
 }
 MayorQuests_dialog_171_f {
-哟，姑娘还挺有胆色的！俺佩服你的勇气——可惜得亲手送你上路了。\n喂，甲板上的，给俺把这不知天高地厚的家伙收拾了，动作利索点，俺去准备船只迎战。别闹出动静！
+哟， 姑娘还挺有胆色的！ 我佩服你的勇气——可惜得亲手送你上路了。 \n喂， 甲板上的， 给我把这不知天高地厚的家伙收拾了， 动作利索点， 我去准备船只迎战。 别闹出动静！ 
 }
 MayorQuests_dialog_172 {
-真可惜你要离开我们……
+真可惜你要离开我们…… 
 }

@@ -1,0 +1,70 @@
+Bucaneer_man_1 {
+Hic... Ah, capitão! Venha para a fogueira! Que um raio me parta, hoje bebemos à sua saúde e à ruína de toda a Espanha!
+}
+Bucaneer_man_2 {
+Com prazer, rapazes. Vejo que o rum corre como água por aqui.
+}
+Bucaneer_man_3 {
+Maldito calor. A carne estraga mais depressa do que conseguimos defumá-la nas grelhas. Se não cair uma boa chuva nos próximos dias, teremos de entrar mais fundo na selva atrás de caça fresca.
+}
+Bucaneer_man_4 {
+A pólvora ficou úmida e o mosquete falha a cada dois tiros. Vou passar a noite limpando a pederneira e secando os suprimentos; caso contrário, se toparmos com uma patrulha espanhola, não vou servir para grande coisa.
+}
+Bucaneer_man_5 {
+Tédio mortal, capitão. Rastrear javalis durante semanas não é trabalho para os fracos. Por acaso não teria uns dois pesos sobrando? Queria jogar dados com os rapazes, mas meus bolsos estão vazios.
+}
+Bucaneer_man_6 {
+Esta selva ainda vai me mandar para a cova. Ontem alguma coisa me mordeu e agora meu braço está tão inchado que dói até segurar o sabre. Os locais dizem que passa sozinho. Espero que não estejam mentindo.
+}
+Bucaneer_man_7 {
+Ouvi dizer que os atravessadores de Tortuga perderam de vez a vergonha — compram nossas peles por uma ninharia. Acho que está na hora de largar essa caça e voltar ao ofício do mar. Lá ao menos o saque é dividido com mais justiça.
+}
+Bucaneer_man_8 {
+Essa é a sina dos bucaneiros. Até mais.
+}
+Bucaneer_man_9 {
+Boa sorte com seus negócios. Não vou tomar seu tempo.
+}
+Bucaneer_man_10 {
+Por todos os santos, capitão, hoje até nossa aguardente turva desce como o melhor Borgonha! Nós aqui, no meio da lama e da fuligem, só alimentamos mosquitos e abatemos porcos selvagens enquanto vocês faziam grandes feitos lá fora. Mas Deus é testemunha: quando vejo nossas mulheres rindo outra vez junto às fogueiras... diabo, Tortuga está em festa hoje! Beba conosco, capitão!
+}
+Bucaneer_man_11 {
+Que um raio me parta se eu não esvaziar sozinho um barrilzinho hoje! Não estivemos com vocês debaixo do fogo dos mosquetes, capitão, é a pura verdade. Mas arrancar aquelas pobres mulheres das garras do chacal castelhano Vargas — isso sim é uma façanha nobre, digna do próprio rei! Bebemos à sua saúde! Hic... diabo, alguém me traga mais rum!
+}
+Bucaneer_man_12 {
+Sabe, capitão... hic... dizem que milagres de verdade não existem. Mas olho para esta fogueira, escuto as moças cantarem e entendo — mentem descaradamente! Nós, bucaneiros, somos gente simples, não participamos de grandes cercos. Mas hoje os castelhanos se lavaram em sangue e a vida voltou a Tortuga. Que o almirante le Basque fique com toda a glória na Europa; aqui, porém, bebemos só por você! Estenda a caneca!
+}
+Bucaneer_man_13 {
+Bebam e divirtam-se, rapazes! Esta festa é de vocês por direito.
+}
+Bucaneer_man_14 {
+Uma noite realmente gloriosa. Não vou atrapalhar; esvaziem os barris até a última gota!
+}
+
+Bucaneer_man_15 {
+Maldito calor. A carne estraga mais depressa do que conseguimos defumá-la nas grelhas. Se não cair uma boa chuva nos próximos dias, teremos de entrar mais fundo na selva atrás de caça fresca.
+}
+
+Bucaneer_man_16 {
+A pólvora ficou úmida e o mosquete falha a cada dois tiros. Vou passar a noite limpando a pederneira e secando os suprimentos; caso contrário, se toparmos com uma patrulha espanhola, não vou servir para grande coisa.
+}
+
+Bucaneer_man_17 {
+Tédio mortal, capitão. Rastrear javalis durante semanas não é trabalho para os fracos. Por acaso não teria uns dois pesos sobrando? Queria jogar dados com os rapazes, mas meus bolsos estão vazios.
+}
+
+Bucaneer_man_18 {
+Esta selva ainda vai me mandar para a cova. Ontem alguma coisa me mordeu e agora meu braço está tão inchado que dói até segurar o sabre. Os locais dizem que passa sozinho. Espero que não estejam mentindo.
+}
+
+Bucaneer_man_19 {
+Ouvi dizer que os atravessadores de Tortuga perderam de vez a vergonha — compram nossas peles por uma ninharia. Acho que está na hora de largar essa caça e voltar ao ofício do mar. Lá ao menos o saque é dividido com mais justiça.
+}
+
+Bucaneer_man_20 {
+Essa é a sina dos bucaneiros. Até mais.
+}
+
+Bucaneer_man_21 {
+Boa sorte com seus negócios. Não vou tomar seu tempo.
+}

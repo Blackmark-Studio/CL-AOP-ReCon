@@ -46,3 +46,23 @@ Sí, a la tercera va la vencida... Perdón.
 Villemstad_Brothel_12 {
 Ahora no... Quizás en otro momento...
 }
+
+Villemstad_Brothel_13 {Tengo una propuesta un tanto inusual para usted. ¿No podría venderme el mejor vestido de su guardarropa?}
+Villemstad_Brothel_14 {He vuelto por lo del vestido.}
+Villemstad_Brothel_15 {Desde luego que es inusual. Me temo que un favor así le costará una pequeña fortuna.}
+Villemstad_Brothel_16 {¿Tal vez podría alquilarlo por una noche o dos?}
+Villemstad_Brothel_17 {Creo que podemos arreglarlo. Digamos 15000 piastras y la garantía de que será devuelto a tiempo, intacto y sin una sola mancha.}
+Villemstad_Brothel_18 {Ni una sola mancha... Y ya que hemos acordado el precio, quizá tenga también una máscara de carnaval apropiada, de esas que cubren todo el rostro.}
+Villemstad_Brothel_19 {Encontraremos algo. Cincuenta mil y será suya.}
+Villemstad_Brothel_20 {¿Qué?! ¿No se habrá equivocado con el precio?}
+Villemstad_Brothel_21 {Estoy segura de que entre nosotras ha habido un pequeño malentendido. Al parecer me ha tomado por una mujer necia, incapaz de comprender que pretende entrar de incógnito en la residencia local. Cincuenta mil por mi silencio, quince por el vestido para una noche y la máscara se la regalo. ¿Qué me dice?}
+Villemstad_Brothel_22 {Sabe usted hacer negocios. Parece que no tengo elección. Aquí tiene su dinero. Espero que el corte no me decepcione.}
+Villemstad_Brothel_23 {Muy bien, lo pensaré y quizá vuelva más tarde.}
+Villemstad_Brothel_24 {Entonces, ¿cerramos el trato? 65000 piastras.}
+Villemstad_Brothel_25 {Aquí tiene su dinero. Espero que el corte no me decepcione.}
+Villemstad_Brothel_26 {Todavía estoy pensando si su oferta merece la pena.}
+Villemstad_Brothel_27 {Te has puesto el traje de carnaval}
+Villemstad_Brothel_28 {Un poco más ajustado aquí y quedaré casi satisfecha con el resultado. Es una pena, Angelique, que no llevaras corsé de joven; te sentaría mucho mejor. Tu cintura todavía delata a la muchacha del pueblo.}
+Villemstad_Brothel_29 {Los soldados no se fijarán en eso, y después me las arreglaré sola.}
+Villemstad_Brothel_30 {No, al final no está nada mal, nada mal. Creo que incluso he cambiado de opinión. No hace falta que me devuelvas el atuendo; considéralo comprado.}
+Villemstad_Brothel_31 {Este trato me gusta mucho más. No voy a negarme. ¡Tengo que darme prisa o llegaré tarde!}

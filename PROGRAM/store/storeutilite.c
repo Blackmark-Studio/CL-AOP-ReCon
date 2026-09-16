@@ -227,6 +227,9 @@ void StoreDayUpdate()
 
 void UpdateStore(ref pStore)
 {
+	// KZ FreeStores > слот без ассортимента обновлять нечем
+	if (!CheckAttribute(pStore, "Goods")) return;
+
 	aref gref, curref;
 	makearef(gref, pStore.Goods);
 	int delta, oldQty;
@@ -238,6 +241,7 @@ void UpdateStore(ref pStore)
 		tmpstr = Goods[i].name;
 		if (!CheckAttribute(gref,tmpstr) ) continue;		
 		makearef(curref, gref.(tmpstr));
+		if (!CheckAttribute(curref, "Norm")) continue; // FreeStores > товар без нормы (магазин заведён, но не наполнен) тянуть некуда
         // пересмотр системы 24.01.08. Новая - "круги на воде"
         oldQty = sti(curref.Quantity);
         delta = makeint((oldQty - sti(curref.Norm))/7);
@@ -393,6 +397,7 @@ void FillShipStore(ref chr)
 
 int FindStore(string sColony)
 {
+	if (sColony == "") return -1; // FreeStores > пустой sColony = не магазин
 	for(int i = 0; i < STORE_QUANTITY; i++)
 	{
 		if (Stores[i].colony == sColony)
@@ -445,10 +450,11 @@ string GetGoodsNameAlt(int idx)
     return LowerFirst(GetConvertStr("seg_" + Goods[idx].Name, "SeaSection.txt"));
 }
 // запоминаем цены в ГГ
-//HardCoffee продавцы в магазинах не раскрывают цены на контрабанду
-void SetPriceListByStoreMan(ref rchar)   //rchar - это колония
+//HardCoffee продавцы в магазинах SetPriceList(, false) не раскрывают цены на контрабанду
+//А вот остальные челы SetPriceListByStoreMan и про контрабанду расскажут
+void SetPriceListByStoreMan(ref rColony)
 {
-	SetPriceList(rchar, true);
+	SetPriceList(rColony, true);
 }
 void SetPriceList(ref rchar, bool bContraband)
 {
@@ -545,6 +551,16 @@ void UpdateKnownPriceList()
 		
 		if (CheckAttribute(arPrices, rColony.id + ".AltDate"))
 			SetPriceListByStoreMan(rColony);
+	}
+
+	// FreeStores > свободные магазины в торговой книге разведка обновляет так же
+	int iSlotsNum = GetStoreSlotsNum();
+	for (int iSlot = FREE_STORE_FIRST; iSlot < iSlotsNum; iSlot++)
+	{
+		if (!CheckAttribute(&Stores[iSlot], "id")) continue;
+
+		if (CheckAttribute(arPrices, Stores[iSlot].id + ".AltDate"))
+			SetPriceListByStoreMan(&Stores[iSlot]);
 	}
 
 	LogSound_WithNotify(StringFromKey("InfoMessages_202"), "", "LogBook");
@@ -661,6 +677,7 @@ int GetStorageUsedWeight(object refStore)
 
 int GetStorage(string sColony)
 {
+	if (sColony == "") return -1; // FreeStores > пустой sColony = не магазин
 	for(int i = 0; i < STORE_QUANTITY; i++)
 	{
 		if (Stores[i].colony == sColony)
@@ -671,3 +688,152 @@ int GetStorage(string sColony)
 	return -1;
 }
 // <-- ugeen
+
+void FillStoreGoods(ref pRef)
+{
+	int i,j,nq,n,tt;
+	string goodName;
+	string goodType;
+	//int goodBasePrice;
+
+	aref arTypes, arCurType;
+
+	// FreeStores > ассортимент - данные самого магазина, колония ему для этого не нужна
+	string sStoreColony = "";
+	if (CheckAttribute(pRef, "Colony")) sStoreColony = pRef.Colony;
+
+	bool bApplyTrade = true;
+	int  iColony     = FindColony(sStoreColony); // город магазина
+
+	if (iColony != -1)
+	{
+		ref rColony = GetColonyByIndex(iColony);
+		if (FindIsland(rColony.island) == -1) // остров города
+		{
+			bApplyTrade = false;
+			if (!HasStr(rColony.island, "Panama"))
+				trace("Mistake island id into store:  id="+rColony.island);
+		}
+	}
+	else
+	{
+		if (sStoreColony != "none" && sStoreColony != "" && !IsFreeStore(pRef))
+			trace("Mistake Colony id into store:  id=" + sStoreColony);
+	}
+
+	if (!CheckAttribute(pRef, "StoreSize"))
+		pRef.StoreSize = "small";
+
+	if (bApplyTrade)
+	{
+		makearef(arTypes, pRef.Trade);
+		nq = GetAttributesNum(arTypes);
+
+		for(i=0;i<nq;i++)
+		{
+			arCurType = GetAttributeN(arTypes,i);
+			tt=TRADE_TYPE_NORMAL;
+			switch(GetAttributeName(arCurType))
+			{
+				case "Export":		tt=TRADE_TYPE_EXPORT;		break;
+				case "Import":		tt=TRADE_TYPE_IMPORT;		break;
+				case "Contraband":	tt=TRADE_TYPE_CONTRABAND;	break;
+			}
+			n = GetAttributesNum(arCurType);
+			for(j=0;j<n;j++)
+			{
+				goodName = Goods[sti(GetAttributeValue(GetAttributeN(arCurType,j)))].name;
+				pRef.Goods.(goodName).TradeType = tt;
+			}
+		}
+	}
+	
+	for (i = 0; i < GOODS_QUANTITY; i++)
+	{
+	   	goodName = Goods[i].Name;
+	   	// boal 22.01.2004 -->
+		switch(sti(pRef.Goods.(goodName).TradeType))
+		{
+			case TRADE_TYPE_NORMAL:
+			    pRef.Goods.(goodName).Quantity = sti(sti(Goods[i].Norm)*0.5 + rand(sti(sti(Goods[i].Norm)*0.2))); //200 + Rand(2500) + rand(500);
+				pRef.Goods.(goodName).RndPriceModify = frnd() * 0.15;//0.2
+				break;
+
+			case TRADE_TYPE_EXPORT:
+			    pRef.Goods.(goodName).Quantity = sti(sti(Goods[i].Norm)*0.9 + rand(sti(sti(Goods[i].Norm)*0.2))); //500 + Rand(4000)+ rand(6000);
+				pRef.Goods.(goodName).RndPriceModify = frnd() * 0.15; //0.2
+				break;
+
+			case TRADE_TYPE_IMPORT:
+			    pRef.Goods.(goodName).Quantity = sti(sti(Goods[i].Norm)*0.2 + rand(sti(sti(Goods[i].Norm)*0.15))); //60 + Rand(500) + rand(500);
+				pRef.Goods.(goodName).RndPriceModify = frnd() * 0.30; // 0.35
+				break;
+
+			case TRADE_TYPE_CONTRABAND:
+			    pRef.Goods.(goodName).Quantity = sti(sti(Goods[i].Norm)*0.1 + rand(sti(sti(Goods[i].Norm)*0.1))); //1+Rand(50)*sti(goods[i].Units);
+				pRef.Goods.(goodName).RndPriceModify = frnd() * 0.35; //0.5
+				break;
+
+			case TRADE_TYPE_AMMUNITION:  //делаю все тоже, что и для нормального товара, а тип нужен, чтоб на корабле не скупали лишнее.
+			    pRef.Goods.(goodName).Quantity = sti(sti(Goods[i].Norm)*0.5 + rand(sti(sti(Goods[i].Norm)*0.2))); //200 + Rand(2500) + rand(500);
+				pRef.Goods.(goodName).RndPriceModify = frnd() * 0.15;//0.2
+				break;
+
+			case TRADE_TYPE_CANNONS: 
+				pRef.Goods.(goodName).Quantity = sti(sti(Goods[i].Norm) * 0.6 + rand(sti(sti(Goods[i].Norm) * 0.6))); //20 + Rand(50) + rand(50);
+				pRef.Goods.(goodName).RndPriceModify = frnd() * 0.3; // 0.4
+				break;	
+		}
+		
+		// Размер имеет значение (TODO: можно ставить кастомный множитель при динамической экономике)
+		switch(pRef.StoreSize)
+		{
+			case "large":  n = 1;	break;
+			case "medium": n = 1.5;	break;
+			case "small":  n = 3;	break;
+		}
+		pRef.Goods.(goodName).Quantity = makeint(sti(pRef.Goods.(goodName).Quantity) / n);
+		
+		// 24/01/08
+		pRef.Goods.(goodName).Norm            = pRef.Goods.(goodName).Quantity; // колво в начале, это норма магазина на всегда
+		pRef.Goods.(goodName).NormPriceModify = pRef.Goods.(goodName).RndPriceModify; // начальная цена - тоже limit стремлений
+	}
+	//HardCoffee распределаем бабки по магазинам и контрабандистам
+	switch(pRef.StoreSize)
+	{
+		case "large":
+			pRef.money =			makeint(STORE_MIN_MONEY + frand(1.0)*STORE_RAND_MONEY);
+			pRef.smugglerMoney =	makeint(SMUGG_MIN_MONEY	+ frand(1.0)*SMUGG_RAND_MONEY);
+		break;
+		case "medium":
+			pRef.money =			makeint(STORE_MIN_MONEY/2 + frand(1.0)*STORE_RAND_MONEY/2);
+			pRef.smugglerMoney =	makeint(SMUGG_MIN_MONEY	+ frand(1.0)*SMUGG_RAND_MONEY);
+		break;
+		case "small":
+			pRef.money =			makeint(STORE_MIN_MONEY/2 + frand(1.0)*STORE_RAND_MONEY/2);
+			pRef.smugglerMoney =	makeint(SMUGG_MIN_MONEY	+ frand(1.0)*SMUGG_RAND_MONEY);
+		break;
+	}
+}
+
+void StoreVoidFill(ref pRef)
+{
+	string goodName;
+	//pRef.StoreSize = "large"; // "small"
+	pRef.Island = "";
+	for(int i=0; i<GOODS_QUANTITY; i++)
+	{
+		goodName = Goods[i].Name;
+		// boal fix -->
+		if (CheckAttribute(&Goods[i], "type"))
+		{
+		    pRef.Goods.(goodName).TradeType = Goods[i].type;
+		}
+		else
+		{ // boal fix <--
+			pRef.Goods.(goodName).TradeType = TRADE_TYPE_NORMAL;
+		}
+		pRef.Goods.(goodName).NotUsed = false;
+		pRef.Goods.(goodName).Quantity = 0;
+	}
+}

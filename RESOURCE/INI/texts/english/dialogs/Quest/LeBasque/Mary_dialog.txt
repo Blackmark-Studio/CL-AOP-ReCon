@@ -1,0 +1,243 @@
+Mary_dialog_1 {
+Captain... I don't believe I ever thanked you for saving me. I intend to correct that.
+}
+Mary_dialog_2 {
+Marie, there's no need. I only regret that I didn't intervene sooner. Before...
+}
+Mary_dialog_3 {
+My uncle died... Alas, nothing can bring him back. I've accepted that. Now there's only one thing left for me - revenge.
+}
+Mary_dialog_4 {
+But Vargas is dead.
+}
+Mary_dialog_5 {
+Vargas is. His Spain is not. It seems there was nothing he loved more than his country.
+}
+Mary_dialog_6 {
+And now you'll turn your anger against it... Very well. I'll help you however I can, Marie.
+}
+Mary_dialog_7 {
+Thank you, @<pchar>. You are a true friend.
+}
+Mary_dialog_8 {
+Enjoy the celebration, Captain. I still have Vargas's papers to sort through. There are plenty of maps and notes about Spanish possessions. Before we sail for Maracaibo, I want to know everything he knew.
+}
+Mary_dialog_9 {
+Then I won't distract you. I'm sure you'll find plenty of interest there.
+}
+Mary_dialog_10 {
+Exactly. My uncle's old archives mention the village of San Lazaro as a small fishing settlement lost in the Cuban wilderness. But the records contain neither an exact route to it nor any explanation of what Clara's name means.
+}
+Mary_dialog_11 {
+Then we'll find it ourselves.
+}
+Mary_dialog_12 {
+And I'll keep working on the cipher on the way there. Perhaps I can work out what those numbers mean.
+}
+Mary_dialog_13 {
+Captain, look. I think I've solved the numbers. They're tide times. The Spaniards wrote them as feet so the document would look like an ordinary sailing direction. 'Lazaro - nine,' 'Clara - eleven'... It's a timetable.
+}
+Mary_dialog_14 {
+A schedule for the Silver Fleet?
+}
+Mary_dialog_15 {
+More likely Arellano's own instructions. Heavy galleons won't enter an unfamiliar bay blindly - they need the exact time of high water and a sounded channel.
+}
+Mary_dialog_16 {
+I'm glad you came with us. Even so, I worry about you. After everything you've been through, it might have been wiser to remain on Tortuga - away from the fighting.
+}
+Mary_dialog_17 {
+I could never have stayed on Tortuga. I won't sleep peacefully while I believe I haven't done enough to avenge my uncle.
+}
+Mary_dialog_18 {
+I suppose I'd do the same in your place. But take care of yourself. Otherwise there'll be no revenge at all.
+}
+Mary_dialog_19 {
+Very well, Marie. Just try not to let this vengeance destroy you too.
+}
+Mary_dialog_20 {
+The best place to land is Cape Anna Maria. It's on the south-central coast of Cuba, far from Havana, Santiago, and their patrols.
+}
+Mary_dialog_21 {
+It's a long walk from that bay to the fishing village. But when we reach it, we'll recognize it by the sign of three fish beside the well. A local superstition - they believe the sign helps fill their nets.
+}
+Mary_dialog_22 {
+I think we'll know where we are even without the sign, Marie. Let's go.
+}
+Mary_dialog_23 {
+The shots could be heard half a league away. If Arellano hasn't already left by some miracle, he will if we delay.
+}
+Mary_dialog_24 {
+Then we won't delay.
+}
+Mary_dialog_25 {
+We fooled the patrol, but Arellano is made of sterner stuff. A man like that will suspect something if we hesitate for even a moment.
+}
+Mary_dialog_26 {
+Then we'll take him by storm. Give him no time to recover his wits and start asking questions.
+}
+Mary_dialog_27 {
+Three fish... This is the place, Captain. Arellano must be hiding somewhere among these huts.
+}
+Mary_dialog_28 {
+Come, Captain. We need to see what condition he's in.
+}
+Mary_dialog_29 {
+Let's go.
+}
+Mary_dialog_30 {
+Damn it! I wanted to question him about the cipher...
+}
+Mary_dialog_31 {
+I understand. But now we have something better. Can you mark that point on a chart, Marie?
+}
+Mary_dialog_32 {
+Easily, Captain. Even a blind man couldn't miss it. The intersection lies northeast of Jamaica and southwest of Hispaniola. The margin of error is no more than two or three miles, so we certainly won't overlook a squadron that size.
+}
+Mary_dialog_33 {
+It's no more than a week's sailing from Veracruz to that point, and the 'Margarita' and her escort are already at sea. We must send Michel the rendezvous point immediately and weigh anchor.
+}
+Mary_dialog_34 {
+We'll have only a few hours to spare. I imagine the Spaniards timed the passages so the 'Margarita' would remain without additional protection for as little time as possible.
+}
+Mary_dialog_35 {
+How curious...
+}
+Mary_dialog_36 {
+Your ship's draft says otherwise, Senor Liar. She's sitting two feet deeper than she should with the cargo you claim to carry.
+}
+Mary_dialog_37 {
+Damn... My ears are ringing. Argh... Good thing those fanatics are so fond of theatrics.
+}
+Mary_dialog_38 {
+Marie... You haven't been taking shooting lessons from l'Olonnais, have you?
+}
+Mary_dialog_39 {
+Ha-ha! What can I say? I'm a quick learner.
+}
+Mary_dialog_40 {
+That's why he was so desperate to burn the register! The Potosi stamp referred only to the silver - a miserable fraction of what's hidden here. If I hadn't taken those papers from him, we'd have sailed away with flour in our holds and never known we'd left a fortune behind the bulkhead.
+}
+Mary_dialog_41 {
+Remind me never to stop you rummaging through other people's papers again, Marie.
+}
+Mary_dialog_42 {
+I'm glad to see you again, Captain. You'll never guess what I found in the 'Margarita's' cabin... The admiral really did keep private correspondence. With his wife. Our fearsome Don Alonso turned out to be terribly sentimental. I almost felt embarrassed reading it. Almost.
+}
+Mary_dialog_43 {
+Nothing escapes you, Marie! We're very lucky you're on our side.
+}
+Mary_dialog_44 {
+The chasse-partie is ready, gentlemen. I tried to account for everyone's interests.
+}
+Mary_dialog_45 {
+Ahem... Yes. It is an agreement under which every share is known before the battle begins. The admiral receives the prescribed number of shares. Captains receive theirs strictly according to the agreement. The ship's carpenter and surgeon are paid before the common division. Whoever first enters the fort or tears down the Castilian colors receives an extra share. The loss of a right arm is worth six hundred pesos. A left arm or a leg, five hundred. An eye or a finger, one hundred.
+}
+Mary_dialog_46 {
+From the papers I obtained with the Order's help, we know the locations of Maracaibo's principal defenses. What I don't have is a map of the land trails by which one might approach the fort from ashore.
+}
+Mary_dialog_47 {
+Even if we smash the fort from the sea, unpleasant surprises may still await us on land.
+}
+Mary_dialog_48 {
+Here, take this. I always carry a few medicines with me.
+}
+Mary_dialog_49 {
+Did you need something, Cap'n?
+}
+Mary_dialog_50 {
+No. Let's go.
+}
+Mary_dialog_51 {
+Captain @<pchar>... I'm afraid I have bad news for all of us. The cells are empty. No guards, no prisoners...
+}
+Mary_dialog_52 {
+They took the prisoners too?
+}
+Mary_dialog_53 {
+Or released them. Unfortunately, there's no one here to ask what happened. But whoever commanded this place found time to take the papers with him. Which is strange in itself: men fleeing a city under cannon fire are hardly likely to worry about a prisoners' register.
+}
+Mary_dialog_54 {
+You think they were preparing to leave in advance?
+}
+Mary_dialog_55 {
+It looks that way. And I want to know why the Spaniards defended the fort so stubbornly, yet abandoned the city without a fight.
+}
+Mary_dialog_56_m {
+Michel asked Nicolas and me to inspect the governor's residence. I'd be glad if you joined us.
+}
+Mary_dialog_56_f {
+Michel asked Nicolas and me to inspect the governor's residence. I'd be glad if you joined us.
+}
+Mary_dialog_57 {
+I'll join you a little later. There's something else I need to check here first.
+}
+Mary_dialog_58 {
+Wait... Do you smell that? Burnt paper.
+}
+Mary_dialog_59 {
+Damn it! We're searching the whole city for clues while they're throwing them into the fire here! Upstairs! Quickly! Before they burn everything!
+}
+Mary_dialog_60 {
+Come on, upstairs!
+}
+Mary_dialog_61 {
+Captain... They tried to burn everything, but the fire didn't reach all the papers.
+}
+Mary_dialog_62 {
+Anything useful?
+}
+Mary_dialog_63 {
+An official dispatch. An evacuation order.
+}
+Mary_dialog_64 {
+Read it. Quickly.
+}
+Mary_dialog_65 {
+'...The fort garrison is to prepare to offer the enemy desperate resistance. The treasury, church silver, state registers, and all property of value are to be prepared for immediate removal under escort of all forces not engaged in the defense of the fort...'
+}
+Mary_dialog_66 {
+'...to Gibraltar.'
+}
+Mary_dialog_67 {
+First I'll gather everything that survived. These papers may still prove useful.
+}
+Mary_dialog_68 {
+I've gathered everything. Let's hurry to Michel. He needs to know about this dispatch.
+}
+
+LeBasque_Mary_Belfler_1 {
+I can't reconstruct the text completely. There are only fragments of cipher. Without the key, this document could point to any sandbank on the archipelago.
+}
+
+LeBasque_Mary_Belfler_2 {
+Etienne is right. I've sorted through the papers—without the key, this scribbling could mean anything, any sandbank from Havana to Santiago or Puerto Principe. We need him alive.
+}
+
+LeBasque_Mary_Belfler_3 {
+Do you ever think before you pull the trigger?! Because of your prank, we could lose all our loot!
+}
+
+LeBasque_Mary_Belfler_4 {
+And in the midst of the battle, you burned some trash that no one needed, I suppose?
+}
+
+LeBasque_Mary_Belfler_5 {
+Unfortunately, I have to disappoint you. Give me that sheet of paper. Immediately.
+}
+
+LeBasque_Mary_Belfler_6 {
+What happened to that poor guy?
+}
+
+LeBasque_Mary_Belfler_7 {
+What are the Spaniards doing here? I thought they weren't interested in this island.
+}
+
+LeBasque_Mary_Belfler_8 {
+The main garrison forces left with the convoy. The fort was left to cover the retreat.
+}
+
+LeBasque_Mary_Belfler_9 {
+I just need to find out the garrison's size. The fortifications and approaches are already described in the documents I brought from the Order. Give me half an hour—I'll find everything.
+}

@@ -183,7 +183,7 @@ Koris Gerritsz dice que Serras sirve bastante bien a la Compañía Holandesa de 
 
 PDM_Lesopilka.6
 {
-Hablé con mi amigo Serras. Me contó algo interesante. Un pesado galeón bajo bandera inglesa está anclado frente a la isla de Dominica. Su aparejo y casco están dañados. Si nadie se me adelanta, ¡podré apoderarme de sus tesoros!
+Hablé con mi amigo Serras. Me contó algo interesante. Un @<sShip> bajo bandera inglesa está anclado frente a la isla de Dominica. Su aparejo y casco están dañados. Si nadie se me adelanta, ¡podré apoderarme de sus tesoros!
 }
 
 PDM_Lesopilka.6.1
@@ -380,7 +380,7 @@ Andre_Abel_Quest {Escolta del fluyt "Orion"}
 Andre_Abel_Quest.1
 {
 En la taberna de Fort-de-France conocí a un hombre llamado Andre Abel. Es el capitán del fluyt "Orion". Andre me pidió escoltar su barco hasta Port-au-Prince y acepté.
-Andre me esperará en el puerto, y por ahora necesito terminar mis asuntos en la ciudad.
+Andre me esperará en la taberna, y por ahora necesito terminar mis asuntos en la ciudad.
 }
 Andre_Abel_Quest.2 {Me demoré demasiado ocupándome de mis propios asuntos. Está claro que Andre ya ha encontrado otra escolta.}
 Andre_Abel_Quest.3 {He terminado mis asuntos en la ciudad y ya he informado a André. ¡Zarpamos de inmediato!}
@@ -429,6 +429,7 @@ ChurchGenQuest1.7_2 {El viejo tonto @<sCapName> acumuló una deuda en la taberna
 ChurchGenQuest1.8 {Otra anotación en el libro de cuentas: saldé la deuda del viejo cachalote a nombre de @<sName> en la taberna, recuperé los manuscritos del Padre @<sColony> del posadero, ¡y ahora ha llegado el momento de entregar esos preciados manuscritos—y mi libro de cuentas—al buen Padre en persona!}
 ChurchGenQuest1.9 {Resulta que en este mundo existen taberneros desinteresados. Me apresuraré a @<sColony> para devolver los manuscritos teológicos, y también contaré la historia de cómo, en cumplimiento de un voto, un hombre me entregó estos libros tan valiosos sin pedir nada a cambio.}
 ChurchGenQuest1.10 {Uf... No esperaba que una tarea tan sencilla requiriera tanto tiempo y esfuerzo. Lo único positivo fue el capitán temeroso de Dios @<sCapName>, que me entregó los valiosos manuscritos sin dudar y prácticamente me echó de su barco. Es hora de regresar a @<sIsland>.}
+ChurchGenQuest1.11 {Ha corrido demasiada agua bajo el puente. Ya sea que los manuscritos hayan desaparecido sin dejar rastro o que el sacerdote se haya dado por vencido con ellos, mi encargo ha perdido todo sentido. En fin, no toda buena obra se lleva hasta el final.}
 ChurchGenQuest2 {Robo en la iglesia @<sCity>}
 ChurchGenQuest2.1 {¡Robar el tesoro de la iglesia! ¿A dónde va a parar este mundo? Mientras el padre @<sName> lanza maldiciones sobre las cabezas de los impíos, yo debería tomar medidas más efectivas. Si no es el Señor, al menos el padre seguro que me lo agradecerá... Dudo que hayan podido ir muy lejos...}
 ChurchGenQuest2.2 {Se rumorea en el pueblo que unos bandidos locales se hicieron con el dinero del Señor y han sabido esconderse bien. Debería visitar sus terrenos de caza.}
@@ -912,4 +913,9 @@ Para prepararla, tomad dos botellas de buen vino tinto y una porción de ron fue
 
 Ingredientes: Vino (2), Ron (1).
 Herramientas: Mortero y mazo.
+}
+
+PDM_Neputyovy_kaznachey.8
+{
+Por culpa del tesorero, Victor Bretier sufrió grandes pérdidas económicas, y decidí no involucrarme en su conflicto.
 }

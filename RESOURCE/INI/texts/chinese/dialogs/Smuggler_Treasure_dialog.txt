@@ -1,72 +1,72 @@
 Smuggler_Treasure_dialog_1 {
-等你有钱了，俺不管是用破布还是好手帕，都能给你包起来。
+等你有钱了， 我不管是用破布还是好手帕， 都能给你包起来。 
 }
 Smuggler_Treasure_dialog_2 {
-你就在这儿等着，我马上回来！
+你就在这儿等着， 我马上回来！ 
 }
 Smuggler_Treasure_dialog_3 {
-嘘……听着，俺有点东西给你……
+嘘…… 听着， 我有点东西给你…… 
 }
 Smuggler_Treasure_dialog_4 {
-你说啥呢？
+你说什么呢？ 
 }
 Smuggler_Treasure_dialog_5 {
-这是酒啊！！嗝……陪俺喝一杯！
+这是酒啊！ ！ 嗝…… 陪我喝一杯！ 
 }
 Smuggler_Treasure_dialog_6_m {
-得了吧，我还以为你是认真的呢。
+得了吧， 我还以为你是认真的呢。 
 }
 Smuggler_Treasure_dialog_6_f {
-算了吧，我还以为你是认真的呢。
+算了吧， 我还以为你是认真的呢。 
 }
 Smuggler_Treasure_dialog_7 {
-我这儿有点东西，专门留给你的，价格也特别优惠。
+我这儿有点东西， 专门留给你的， 价格也特别优惠。 
 }
 Smuggler_Treasure_dialog_8 {
-这是什么东西？
+这是什么东西？ 
 }
 Smuggler_Treasure_dialog_9 {
-别烦我，没空搭理你。
+别烦我， 没空搭理你。 
 }
 Smuggler_Treasure_dialog_10 {
-这可是张绝佳的地图，外面店里绝对买不到。上面清清楚楚标着宝藏埋在哪里！俺自己去不了，但这地图绝对是真的，俺发誓。
+这可是张绝佳的地图， 外面店里绝对买不到。 上面清清楚楚标着宝藏埋在哪里！ 我自己去不了， 但这地图绝对是真的， 我发誓。 
 }
 Smuggler_Treasure_dialog_11 {
-挺有意思的。你开价多少？
+挺有意思的。 你开价多少？ 
 }
 Smuggler_Treasure_dialog_12 {
-别烦我，没空搭理你。
+别烦我， 没空搭理你。 
 }
 Smuggler_Treasure_dialog_13 {
-只要@<FindMoneyString>。
+只要@<FindMoneyString>。 
 }
 Smuggler_Treasure_dialog_14 {
-行了，用漂亮的布包起来吧。
+行了， 用漂亮的布包起来吧。 
 }
 Smuggler_Treasure_dialog_15 {
-太贵了，不要。
+太贵了， 不要。 
 }
 Smuggler_Treasure_dialog_16 {
-拿去吧，这下你肯定能发财了！
+拿去吧， 这下你肯定能发财了！ 
 }
 Smuggler_Treasure_dialog_17 {
-谢谢！
+谢谢！ 
 }
 Smuggler_Treasure_dialog_18 {
-要不要喝一杯？嗝……这儿的朗姆不错！
+要不要喝一杯？ 嗝…… 这儿的朗姆不错！ 
 }
 Smuggler_Treasure_dialog_19 {
-没时间！
+没时间！ 
 }
 Smuggler_Treasure_dialog_20 {
-你卖给俺假货！！
+你卖给我假货！ ！ 
 }
 Smuggler_Treasure_dialog_21 {
-你谁啊？嗝……不认识你，也懒得认识。
+你谁啊？ 嗝…… 不认识你， 也懒得认识。 
 }
 Smuggler_Treasure_dialog_22 {
-行吧，随你！
+行吧， 随你！ 
 }
 Smuggler_Treasure_dialog_23 {
-你竟然把这假货卖给我！老子现在就让你看看……
+你竟然把这假货卖给我！ 我现在就让你看看…… 
 }

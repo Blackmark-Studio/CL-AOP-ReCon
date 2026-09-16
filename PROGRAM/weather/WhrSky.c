@@ -2,16 +2,24 @@
 
 object Sky;
 
-float fPrevCameraAX = 0;
+bool bWhrKeepSkyEntity = false;	// KZ > пересборка погоды на месте: сущность неба не сносим
+
+float fLastSkyRotateSpeed = -1.0;	// > последнее записанное в движок значение, -1.0 = "надо записать"
 
 void WhrDeleteSkyEnvironment()
 {
+	if(bWhrKeepSkyEntity)
+	{
+		return; // > Погода пересобирается на месте, а не сносится насовсем.
+	}
+
 	if(isEntity(&Sky))
 	{
 		DeleteClass(&Sky);
 	}
-	
+
 	DeleteAttribute(&Sky, "");
+	fLastSkyRotateSpeed = -1.0;
 }
 
 void WhrCreateSkyEnvironment()
@@ -39,12 +47,12 @@ void WhrCreateSkyEnvironment()
 
 	Sky.Color = Whr_GetColor(aSky, "Color");
 	Sky.RotateSpeed = Whr_GetFloat(aSky, "Rotate"); // Warship 02.06.09 - ротация неба ниже
+	fLastSkyRotateSpeed = -1.0; // > небо пересобрано, следующий кадр обязан переписать скорость
 	Sky.Angle = Whr_GetFloat(aSky, "Angle");
 	Sky.Size = Whr_GetFloat(aSky, "Size");
 	
 	  if(bSeaActive) 
 	{
-        Sky.Size = Whr_GetFloat(aSky, "Size");
         Sky.techSky = "Sky";
         Sky.techSkyBlend = "SkyBlend";
         Sky.techskyAlpha = "skyblend_alpha";
@@ -65,9 +73,11 @@ void WhrCreateSkyEnvironment()
 // Warship 02.06.09 - апдейт параметров неба (например, скорость ротации в зависимости от силы ветра)
 void UpdateSky()
 {
+	if (!IsEntity(&Sky)) { return; }	// > в меню и внутренних локациях сущности неба нет
+
 	float windSpeed = 5.0;
 	float timeScale = 1.0 + TimeScaleCounter * 0.25; // Текущее ускорение времени
-	
+
 	// Вычисление делителя для ускорения, чтоб на x8 бешенно не крутились
 	if(timeScale <= 2)
 	{
@@ -77,18 +87,24 @@ void UpdateSky()
 	{
 		timeScale /= 2;
 	}
-	
+
 	if(CheckAttribute(&Weather, "Wind.Speed"))
 	{
 		windSpeed = stf(Weather.Wind.Speed);
 	}
 
+	float fNewSpeed = 0.0;
 	if (CheckAttribute(&InterfaceStates, "SkyRotation") && sti(InterfaceStates.SkyRotation) == 1)
 	{
-		Sky.RotateSpeed = windSpeed / 10000 / timeScale;
+		fNewSpeed = windSpeed / 10000 / timeScale;
 	}
-	else
-		Sky.RotateSpeed = 0.0;
+
+	// > Пишем атрибут только при реальном изменении: раньше запись шла каждый кадр и каждый раз дёргала разбор атрибута в движке.
+	if (fNewSpeed != fLastSkyRotateSpeed)
+	{
+		Sky.RotateSpeed = fNewSpeed;
+		fLastSkyRotateSpeed = fNewSpeed;
+	}
 }
 
 void FillSkyDir(aref aSky)
@@ -118,7 +134,7 @@ void FillSkyDir(aref aSky)
 			if (CheckAttribute(&WeatherParams, "Rain.ThisDay") && sti(WeatherParams.Rain.ThisDay)) 
 			{
 				nStart = sti(WeatherParams.Rain.StartTime);
-				nDur = MakeInt(sti(WeatherParams.Rain.Duration)/60 + 0.5);
+				nDur = MakeInt(stf(WeatherParams.Rain.Duration)/60.0 + 0.5);
 				if (sti(Weathers[i].Hour.Min) >= nStart  && sti(Weathers[i].Hour.Max) <= (nStart + nDur))
 				{
 					sDir = "weather\skies\Storm01\";

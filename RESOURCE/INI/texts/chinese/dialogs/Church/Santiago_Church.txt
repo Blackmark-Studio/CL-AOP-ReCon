@@ -1,147 +1,147 @@
 Santiago_Church_1_m {
-孩子，你有什么烦心事吗？
+我的孩子， 你有什么烦恼吗？ 
 }
 Santiago_Church_1_f {
-怎么了，孩子？
+我的女儿， 你有什么烦脑吗？ 
 }
 Santiago_Church_2 {
-有啥想问的，俺听着呢……
+有什么想问的， 我听着呢…… 
 }
 Santiago_Church_3 {
 @<RandPhraseSimple>
 }
 Santiago_Church_4_m {
-我在听，说吧，孩子……
+我在听， 说吧， 孩子…… 
 }
 Santiago_Church_4_f {
-我听着呢，说吧，女儿……
+我听着呢， 说吧， 女儿…… 
 }
 Santiago_Church_5_m {
-我都跟你说第三遍了，儿子，有什么问题就问吧。
+我都跟你说第三遍了， 孩子， 有什么问题就问吧。 
 }
 Santiago_Church_5_f {
-我第三次跟你说了，女儿，问你的问题吧。
+我第三次跟你说了， 女儿， 问你的问题吧。 
 }
 Santiago_Church_6_m {
-身为神职人员已经够多事了，现在你也来烦我，孩子……
+身为神职人员已经够多事了， 现在你也来烦我， 孩子…… 
 }
 Santiago_Church_6_f {
-身为神职人员已经够忙了，现在连你也来烦我，孩子……
+身为神职人员已经够忙了， 现在连你也来烦我， 孩子…… 
 }
 Santiago_Church_7_m {
-我改主意了……
+我改主意了…… 
 }
 Santiago_Church_7_f {
-我改变主意了……
+我改变主意了…… 
 }
 Santiago_Church_8 {
-现在不行，神父……
+现在不行， 神父…… 
 }
 Santiago_Church_9 {
 @<RandPhraseSimple>
 }
 Santiago_Church_10 {
-嗯，现在也没啥好说的……
+嗯， 现在也没什么好说的…… 
 }
 Santiago_Church_11 {
-会的，会的……只是晚点……
+会的， 会的…… 只是晚点…… 
 }
 Santiago_Church_12 {
-请原谅我，神父……
+请原谅我， 神父…… 
 }
 Santiago_Church_13 {
-父亲，您能告诉我哪里能找到Señor Antonio de Souza吗？
+神父， 您能告诉我哪里能找到安东尼奥.德索萨先生吗？ 
 }
 Santiago_Church_14 {
-神父，您能告诉我这附近的宗教裁判所在哪儿吗？
+神父， 您能告诉我这附近的宗教裁判所在哪儿吗？ 
 }
 Santiago_Church_15_m {
-你知道吗，儿子，这是谁？
+你知道吗， 孩子， 这是谁？ 
 }
 Santiago_Church_15_f {
-你知道吗，女儿，这是谁？
+你知道吗， 女儿， 这是谁？ 
 }
 Santiago_Church_16_m {
-儿子，我已经全都跟你说过了。
+孩子， 我已经全都跟你说过了。 
 }
 Santiago_Church_16_f {
-女儿，我已经都跟你说过了。
+女儿， 我已经都跟你说过了。 
 }
 Santiago_Church_17 {
-你怎么又问同一个问题？我不是已经回答过你了吗……
+你怎么又问同一个问题？ 我不是已经回答过你了吗…… 
 }
 Santiago_Church_18 {
-又来？行吧，Inquisition的入口就在通往教堂的楼梯旁边……
+又来？ 行吧， 宗教裁判所的入口就在通往教堂的楼梯旁边…… 
 }
 Santiago_Church_19 {
-当然，他是高级审判官。
+当然， 他是高级审判官。 
 }
 Santiago_Church_20_m {
-抱歉，神父，我没太听明白……好吧……
+抱歉， 神父， 我没太听明白…… 好吧…… 
 }
 Santiago_Church_20_f {
-抱歉，神父，我没太听明白……好吧……
+抱歉， 神父， 我没太听明白…… 好吧…… 
 }
 Santiago_Church_21_m {
-是的，不过我没太明白……嗯，抱歉，神父……
+是的， 不过我没太明白…… 嗯， 抱歉， 神父…… 
 }
 Santiago_Church_21_f {
-是啊，不过我没明白……嗯，抱歉，神父……
+是啊， 不过我没明白…… 嗯， 抱歉， 神父…… 
 }
 Santiago_Church_22 {
-呼，谢了，神父……
+呼， 谢了， 神父…… 
 }
 Santiago_Church_23 {
-没错……那他就在自己的宅邸里。
+没错…… 那他就在自己的宅邸里。 
 }
 Santiago_Church_24 {
-打扰了，神父，请问宗教裁判所的驻地在哪儿？
+打扰了， 神父， 请问宗教裁判所的驻地在哪儿？ 
 }
 Santiago_Church_25 {
-就在教堂下面。
+就在教堂下面。 
 }
 Santiago_Church_26 {
 怎么回事?..
 }
 Santiago_Church_27_m {
-去吧……去吧，孩子，去吧。很少有人是自愿来找Holy Inquisition的……
+去吧…… 去吧， 孩子， 去吧。 很少有人是自愿来找宗教裁判所的…… 
 }
 Santiago_Church_27_f {
-好了好了……去吧，孩子，去吧。很少有人会自愿来Holy Inquisition……
+好了好了…… 去吧， 孩子， 去吧。 很少有人会自愿来宗教裁判所…… 
 }
 Santiago_Church_28 {
-啊，那行吧……
+啊， 那行吧…… 
 }
 Santiago_Church_29_m {
-就在教堂下面，孩子。
+就在教堂下面， 孩子。 
 }
 Santiago_Church_29_f {
-就在教堂下面，孩子。
+就在教堂下面， 孩子。 
 }
 Santiago_Church_30_m {
-就在我们教堂下面，孩子。入口在楼梯下。
+就在我们教堂下面， 孩子。 入口在楼梯下。 
 }
 Santiago_Church_30_f {
-就在我们教堂下面，孩子。入口在楼梯下。
+就在我们教堂下面， 孩子。 入口在楼梯下。 
 }
 Santiago_Church_31_m {
-你这小子耳朵真不灵啊。哎，得找人看看了……
+你这小子耳朵真不灵啊。 哎， 得找人看看了…… 
 }
 Santiago_Church_31_f {
-你这耳朵可真不灵啊，闺女。哎，得找人看看了……
+你这耳朵可真不灵啊， 闺女。 哎， 得找人看看了…… 
 }
 Santiago_Church_32 {
-谦卑……
+谦卑…… 
 }
 Santiago_Church_33 {
-谢谢你，Padre。
+谢谢你， Padre。 
 }
 Santiago_Church_34 {
-再次感谢您，神父。
+再次感谢您， 神父。 
 }
 Santiago_Church_35 {
-当然！
+当然！ 
 }
 Santiago_Church_36 {
-嗯？
+嗯？ 
 }

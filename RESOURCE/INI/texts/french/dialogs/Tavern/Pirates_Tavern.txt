@@ -184,3 +184,17 @@ Oui, il habite dans une maison à deux étages avec des murs en pierre. En sorta
 Pirates_Tavern_60 {
 Merci, tu m’as vraiment aidé!
 }
+Pirates_Tavern_61 {
+Nous cherchons une corvette espagnole. On raconte qu'elle est restée ici assez longtemps.
+}
+Pirates_Tavern_62 {
+Ah, don Martin ! Il s'est enfui. Il y a peu, une fameuse échauffourée a éclaté entre les pirates de Jackman et les Castillans. Il a eu une telle frousse qu'il a ordonné de couper le câble d'ancre et a filé toutes voiles dehors.
+}
+Pirates_Tavern_63 {
+Est-ce une impression, ou cela vous amuse ?
+}
+Pirates_Tavern_64 {Et comment ! Ce dindon de Castillan, tout gonflé d'orgueil, a décampé si vite qu'il en a oublié sa chaloupe à terre. Juste avant de partir, il avait envoyé un officier et deux matelots chez Jackman, déguisés en marchands, soi-disant pour acheter de la poix et des planches de réparation. Mais dès qu'ils ont flairé une proie facile, les autres ont vite compris : les Espagnols avaient l'argent sur eux, et personne ici n'avait la moindre intention de leur vendre quoi que ce soit. Alors ils ont taillé les acheteurs en lanières.
+Un officier a réussi à s'échapper. Mais notre île est petite : il ne pourra guère aller plus loin que la baie de l'Auge Brisée. Si Jackman ne lui met pas la main dessus, la faim et la soif s'en chargeront.}
+Pirates_Tavern_65 {
+On dirait que cet officier pourrait savoir où Quesada est parti. Merci.
+}

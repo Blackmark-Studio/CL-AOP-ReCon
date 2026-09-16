@@ -236,7 +236,7 @@ bool CheckMapEnterConditions() {
             if (MOD_SKILL_ENEMY_RATE > 2) { // халява и юнга - послабление
 	            if (i > 0 && GetMinCrewQuantity(chref) > GetCrewQuantity(chref)) {
 					if (pchar.DirSailFail != "underequipped") { // чтобы не было спама сообщениями каждый час
-						Log_SetStringToLog(StringFromKey("InfoMessages_86", UpperFirst(XI_ConvertString("musicmod_s")), chref.Ship.Name));
+						Log_SetStringToLog(StringFromKey("InfoMessages_86", UpperFirst(XI_ConvertString("Continuous music ship")), chref.Ship.Name));
 						pchar.DirSailFail = "underequipped";
 						bLog = true;
 					}
@@ -247,7 +247,7 @@ bool CheckMapEnterConditions() {
 			
             if (GetMaxCrewQuantity(chref) < GetCrewQuantity(chref)) {
 				if (pchar.DirSailFail != "overcrowded") { // чтобы не было спама сообщениями каждый час
-					Log_SetStringToLog(StringFromKey("InfoMessages_87", UpperFirst(XI_ConvertString("musicmod_s")), chref.Ship.Name));
+					Log_SetStringToLog(StringFromKey("InfoMessages_87", UpperFirst(XI_ConvertString("Continuous music ship")), chref.Ship.Name));
 					pchar.DirSailFail = "overcrowded";
 					bLog = true;
 				}

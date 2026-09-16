@@ -14,6 +14,10 @@ void InitBaseInterfaces()
 	if (!IsEntity(&LanguageObject))
 		CreateEntity(&LanguageObject,"obj_strservice");
 	InitLogInterface();
+
+	iCommandsFile = -1;
+	iControlsFile = -1;
+	iLocLablesFile = -1;
 	InitBattleLandInterface();
 	InterfaceStates.Launched = false;
 	if (storeDayUpdateCnt >= 0) // обновление магазина можно включить
@@ -30,6 +34,7 @@ ref GetQuestTextFileName()
 	questTextFileName[1] = "RESOURCE\INI\texts\" + LanguageGetLanguage() + "\QuestBook\QuestBook_Part2.txt";
 	questTextFileName[2] = "RESOURCE\INI\texts\" + LanguageGetLanguage() + "\QuestBook\QuestBook_New.txt"; // Warship. Это квестбук бмс
 	questTextFileName[3] = "RESOURCE\INI\texts\" + LanguageGetLanguage() + "\QuestBook\QuestBook_IP.txt"; // konstrush. Это квестбук ИП
+	questTextFileName[4] = "RESOURCE\INI\texts\" + LanguageGetLanguage() + "\QuestBook\LeBasque.txt"; // Ле Баск
 	return &questTextFileName;
 }
 
@@ -215,6 +220,10 @@ void InitInterfaceTables()
 	Interfaces[INTERFACE_REPAIR].SectionName = "interface\repair.c";
 	Interfaces[INTERFACE_REPAIR].IniFile = "RESOURCE\INI\INTERFACES\repair.ini";
 
+	// интерфейс ремонта кораблей в лагере буканьеров на Тортуге
+	Interfaces[INTERFACE_SHIP_REPAIR].SectionName = "interface\shiprepair.c";
+	Interfaces[INTERFACE_SHIP_REPAIR].IniFile = "RESOURCE\INI\INTERFACES\shiprepair.ini";
+
 	// интерфейс склада
 	Interfaces[INTERFACE_STORAGE].SectionName = "interface\storage.c";
 	Interfaces[INTERFACE_STORAGE].IniFile = "RESOURCE\INI\INTERFACES\storage.ini";
@@ -239,4 +248,8 @@ void InitInterfaceTables()
 	// Туториал
 	Interfaces[INTERFACE_TUTORIAL].SectionName = "interface\tutorial.c";
     Interfaces[INTERFACE_TUTORIAL].IniFile = "RESOURCE\INI\INTERFACES\tutorial.ini";
+
+	// отдельный интерфейс разговора НПС с НПС.
+	Interfaces[INTERFACE_NPC_DIALOG].SectionName = "interface\NPCDialog.c";
+	Interfaces[INTERFACE_NPC_DIALOG].IniFile = "RESOURCE\INI\INTERFACES\NPCDialog.ini";
 }

@@ -1,0 +1,56 @@
+EPL_2_DefenseOfSantoDomingo_dialog_1 {Veuillez signaler le bug au support technique.}
+EPL_2_DefenseOfSantoDomingo_dialog_2 {Mademoiselle, arrêtez ! Où allez-vous ?}
+EPL_2_DefenseOfSantoDomingo_dialog_3 {Je suis messagère du fort de La Vega et j'apporte une dépêche urgente au gouverneur.}
+EPL_2_DefenseOfSantoDomingo_dialog_4 {Je vois. Je vous laisserais passer, mais Son Excellence n'est pas ici. Señor @<GetFullName> est parti à l'Amirauté.}
+EPL_2_DefenseOfSantoDomingo_dialog_5 {Il n'est pas en ville ? Alors il me faut le commandant de la garnison locale, ou la personne que monsieur le gouverneur a laissée pour le remplacer.}
+EPL_2_DefenseOfSantoDomingo_dialog_6 {C'est votre première mission comme messagère ? L'Amirauté, c'est ce grand bâtiment gris que je suis condamné à contempler toute la journée. Passez sous l'arche et tournez à droite. Il y a aussi une banque, juste en face de la porte qu'il vous faut.}
+EPL_2_DefenseOfSantoDomingo_dialog_7 {Merci.}
+EPL_2_DefenseOfSantoDomingo_dialog_8 {Enfin, je vous ai trouvé.}
+EPL_2_DefenseOfSantoDomingo_dialog_9 {Pourquoi cette urgence, et qui vous a laissée entrer dans cet état ?}
+EPL_2_DefenseOfSantoDomingo_dialog_10 {Je suis l'une des rares survivantes de la colonie de La Vega. Des boucaniers nous ont attaqués : ils ont d'abord bombardé le fort depuis la mer, puis ont débarqué et massacré les gens sur place.}
+EPL_2_DefenseOfSantoDomingo_dialog_11 {Puis-je vous faire confiance ?}
+EPL_2_DefenseOfSantoDomingo_dialog_12 {Il y a sur mon navire des gens qui vous raconteront la même chose. Et lorsque je me suis présentée au secrétaire à l'entrée, il a confirmé qu'il connaissait mon beau-père.}
+EPL_2_DefenseOfSantoDomingo_dialog_13 {Vous ne vous êtes toujours pas présentée à moi, mais peu importe. L'un des survivants a-t-il parlé à ces pirates ? Qu'exigent-ils ?}
+EPL_2_DefenseOfSantoDomingo_dialog_14 {À ma connaissance, rien. Une partie de leur équipage est restée dans le port à bord des navires, tandis que l'autre est partie à travers la jungle. Ils viennent ici, et puisque nous parlons tranquillement et que la ville est encore calme, nous avons dû contourner l'île par mer avant eux.}
+EPL_2_DefenseOfSantoDomingo_dialog_15 {Combien peuvent-ils être ?}
+EPL_2_DefenseOfSantoDomingo_dialog_16 {Nous n'avons vu que deux navires, pouvant transporter en tout trois à quatre cents hommes. Nous n'en avons croisé aucun autre en chemin, il est donc peu probable qu'ils aient débarqué dans d'autres baies.}
+EPL_2_DefenseOfSantoDomingo_dialog_17 {Je ne peux pas retirer toute la garnison du fort pour renforcer la ville. Nous ignorons leur plan. Peut-être attaqueront-ils de plusieurs côtés, s'ils attaquent seulement.}
+EPL_2_DefenseOfSantoDomingo_dialog_18 {Je pense que deux détachements de mousquetaires suffiront. S'il y a des bâtiments de guerre en rade, envoyez-les au phare et au cap voisin pour surveiller les approches.}
+EPL_2_DefenseOfSantoDomingo_dialog_19 {J'ai une requête, Señor le Gouverneur. Je dois absolument être présente à l'endroit où l'attaque terrestre est attendue. Ma sœur est peut-être avec eux.}
+EPL_2_DefenseOfSantoDomingo_dialog_20 {Vous êtes une jeune femme, vous n'avez rien à faire là-bas. Je ne peux toutefois pas vous l'interdire, mais sachez que ce sera dangereux.}
+EPL_2_DefenseOfSantoDomingo_dialog_21 {Ne vous inquiétez pas pour moi. Je saurai me défendre.}
+EPL_2_DefenseOfSantoDomingo_dialog_22 {Attendez derrière les portes de la ville. La défense y sera organisée très prochainement. Le terrain et la jungle ne leur permettent pas d'approcher autrement.}
+EPL_2_DefenseOfSantoDomingo_dialog_23 {Merci.}
+EPL_2_DefenseOfSantoDomingo_dialog_24 {Puis-je disposer ?..}
+EPL_2_DefenseOfSantoDomingo_dialog_25 {Oui, vous pouvez y aller.}
+EPL_2_DefenseOfSantoDomingo_dialog_26 {Te voilà ! Je vois que tout est terminé. J'ai déjà couru à travers la moitié de la ville et, dès que j'ai entendu les coups de feu, j'ai su où te chercher.}
+EPL_2_DefenseOfSantoDomingo_dialog_27 {Rebecca n'est pas ici...}
+EPL_2_DefenseOfSantoDomingo_dialog_28 {Je suis désolé.}
+EPL_2_DefenseOfSantoDomingo_dialog_29 {Tu le savais, et moi aussi. Je voulais seulement voir la terreur et la confusion sur leurs faces lorsqu'ils crèveraient ici, sous les murs.}
+EPL_2_DefenseOfSantoDomingo_dialog_30 {Tout n'est pas encore perdu. Écoute, l'équipage a tenu conseil à bord. Ils se demandaient s'il fallait rester ici ou tenter notre chance en retournant à La Vega, et ils ont aussi proposé d'élire un capitaine au suffrage de tous.}
+EPL_2_DefenseOfSantoDomingo_dialog_31 {Hum... Et qu'ont-ils décidé ?}
+EPL_2_DefenseOfSantoDomingo_dialog_32 {L'équipage t'a choisie. Tu retournes au navire ?}
+EPL_2_DefenseOfSantoDomingo_dialog_33 {Bien sûr. Mais je dois d'abord passer voir le gouverneur. Après tout, grâce à nous l'attaque contre la ville n'a pas été une surprise. J'espère une récompense qui nous permettra de tenir quelque temps.}
+EPL_2_DefenseOfSantoDomingo_dialog_34 {Ce serait plus que juste. Quant à moi, je resterai ici, en ville.}
+EPL_2_DefenseOfSantoDomingo_dialog_35 {Attends, tu ne viens pas avec nous ?}
+EPL_2_DefenseOfSantoDomingo_dialog_36 {Après tout ce que nous avons vécu, je ne sais pas qui pourrait encore avoir envie de reprendre la mer. D'autant plus que l'usurier local garde quelques économies qui m'appartiennent. Je me remettrai vite sur pied.}
+EPL_2_DefenseOfSantoDomingo_dialog_37 {Saint-Domingue est une ville riche. Je pense que tu t'en sortiras.}
+EPL_2_DefenseOfSantoDomingo_dialog_38 {Au fait, j'ai réussi à te trouver quelque chose comme cadeau d'adieu. Tiens, essaie-le à l'occasion. Depuis quand voit-on un capitaine arpenter le pont en jupe ?}
+EPL_2_DefenseOfSantoDomingo_dialog_39 {Tourne-toi. Je vais me changer...}
+EPL_2_DefenseOfSantoDomingo_dialog_40 {Pas mal, pas mal. Ça fera l'affaire pour commencer. Merci pour tout, Gaston.}
+EPL_2_DefenseOfSantoDomingo_dialog_41 {Vous voilà. On m'a déjà rapporté que l'attaque avait été repoussée avec succès. J'ai peu de temps, allons donc droit au but.}
+EPL_2_DefenseOfSantoDomingo_dialog_42 {Bien sûr. J'ose espérer...}
+EPL_2_DefenseOfSantoDomingo_dialog_43 {...Une récompense pour le courage dont vous avez fait preuve et pour avoir accompli votre devoir envers la Couronne. Vos services ont été estimés à 15 000 piastres. Ce n'est que la moitié des fonds que vous allez recevoir immédiatement. On m'a également rapporté que le navire ayant amené les réfugiés appartenait à un certain José Carpio et qu'à compter d'aujourd'hui il se trouve sous votre commandement. Est-ce exact ?}
+EPL_2_DefenseOfSantoDomingo_dialog_44 {Il semble que oui. J'ai été élue capitaine par un vote général de l'équipage.}
+EPL_2_DefenseOfSantoDomingo_dialog_45 {Étonnant. Néanmoins, c'est précisément pour cette raison que la seconde partie des fonds vous est également remise personnellement. Servez-vous-en pour remettre le navire en état, compléter l'équipage et partez pour La Havane afin de rapporter les événements à Son Excellence Francisco Oregón y Gascón, gouverneur général des colonies espagnoles des Caraïbes. Personne ne saurait mieux le faire que ceux qui ont vécu ces événements. Remettez-lui également ce rapport de ma part. Le reste de l'argent constituera votre récompense.}
+EPL_2_DefenseOfSantoDomingo_dialog_46 {Avant de quitter la résidence, permettez-moi une question. Quel sort attend La Vega ? Est-il prévu de reprendre le contrôle de la colonie ?}
+EPL_2_DefenseOfSantoDomingo_dialog_47 {Vous pourrez poser cette question personnellement à Son Excellence. Je n'ai pas l'autorité nécessaire pour prendre des décisions d'une telle ampleur.}
+EPL_2_DefenseOfSantoDomingo_dialog_48 {Dans ce cas, j'ai moi aussi un intérêt personnel à atteindre La Havane au plus vite.}
+EPL_2_DefenseOfSantoDomingo_dialog_49 {Je suis heureux de l'entendre. Je ne vous retiens pas davantage.}
+EPL_2_DefenseOfSantoDomingo_dialog_50 {Je m’appelle @<pchar.name> @<FindPersonalName>. J’ai une dépêche urgente pour le gouverneur. On m’a dit qu’il se trouvait ici en ce moment.}
+EPL_2_DefenseOfSantoDomingo_dialog_51 {@<FindPersonalName> ? Êtes-vous parente de l’ancien administrateur de notre colonie de La Vega ?}
+EPL_2_DefenseOfSantoDomingo_dialog_52 {En effet. Alors, le gouverneur est ici ?}
+EPL_2_DefenseOfSantoDomingo_dialog_53 {Oui, bien sûr. Montez à l’étage.}
+EPL_2_DefenseOfSantoDomingo_dialog_54 {Si vous venez pour les transports commerciaux, les droits de douane ou l'embauche, vous devez vous rendre dans l'aile droite du bâtiment. Cette aile abrite l'Amirauté, qui s'occupe exclusivement des navires au service de Sa Majesté.}
+EPL_2_DefenseOfSantoDomingo_dialog_55 {Je vous salue, @<GetAddress_Form>. Puis-je vous aider ?}
+EPL_2_DefenseOfSantoDomingo_dialog_56 {Au revoir.}

@@ -208,3 +208,16 @@ Tichingitu entende tudo. Tichingitu vai se posicionar à distância indicada.
 Tichingitu_59 {
 Certo.
 }
+
+Tichingitu_60 {
+Capitão... Tichingitu triste. Atauco ir embora. Atauco — digno filho da selva. Bom caçador. Tichingitu considerar ele irmão.
+}
+Tichingitu_61 {
+Não pensei que vocês se tornariam amigos tão depressa. Durante toda a travessia mal trocaram uma dúzia de palavras.
+}
+Tichingitu_62 {
+Atauco olhar para selva com mesmos olhos de Tichingitu. Passar muitos dias na grande água, como Tichingitu. Mas voltar para floresta. Se espíritos permitirem — nós ainda nos encontrar.
+}
+Tichingitu_63 {
+Conhecendo a astúcia de le Basque, eu apostaria tranquilamente dois dobrões nisso. Enquanto isso, não nos faria mal aprender com vocês a olhar por onde pisamos.
+}

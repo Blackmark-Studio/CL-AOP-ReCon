@@ -2,6 +2,8 @@
 object objActivePerkShower;
 object objSeaPerkShower;
 
+int g_iSeaPerkRefreshTick = 0;
+
 #event_handler(EVENT_LOCATION_LOAD, "procLoadIntoNew");
 
 void InitActivePerkShower()
@@ -120,7 +122,6 @@ void LoadActivePerkShower_SetPerks(bool isSeaLoaded)
 			iTemp = sti(chr.perks.list.(perkName).delay);
 			if (CheckAttribute(chr, "perks.list."+perkName+".active"))
 			{
-				AddPerkToActiveList(perkName);
 				iTemp = sti(chr.perks.list.(perkName).active);
 				SetCooldownTextForActivePerkInList(perkName, iTemp, true);
 			}
@@ -177,6 +178,27 @@ bool IsPerkIntoList(string perkID)
 	return CheckAttribute(&objActivePerkShower,"PerkList.list."+perkID);
 }
 
+// KZ > есть ли у перка сегмент в морском HUD'е (Turn180/ImmediateReload/InstantRepair/LightRepair)
+bool SeaPerkShower_HasSegment(string perkId)
+{
+	if (!CheckAttribute(&objSeaPerkShower, "SegmentsInfo"))
+		return false;
+
+	aref arRoot, arSegment;
+	makearef(arRoot, objSeaPerkShower.SegmentsInfo);
+
+	int j, n = GetAttributesNum(arRoot);
+
+	for (j = 0; j < n; j++)
+	{
+		arSegment = GetAttributeN(arRoot, j);
+		if (GetAttributeValue(arSegment) == perkId)
+			return true;
+	}
+
+	return false;
+}
+
 void AddPerkToActiveList(string perkID)
 {
 	if( !IsEntity(&objActivePerkShower) ) return;
@@ -184,7 +206,7 @@ void AddPerkToActiveList(string perkID)
 
 	// seaPerkShower -->
 	bool isSeaLoaded = bSeaActive && !bAbordageStarted;
-	if (isSeaLoaded && perkID != "TimeSpeed")
+	if (isSeaLoaded && SeaPerkShower_HasSegment(perkID))
 	{
 	    if(!IsEntity(&objSeaPerkShower)) return;
 
@@ -207,7 +229,7 @@ void AddPerkToActiveListWithCooldown(string perkId, int cooldownInSeconds)
 {
 	// seaPerkShower -->
 	bool isSeaLoaded = bSeaActive && !bAbordageStarted;
-	if (isSeaLoaded && perkID != "TimeSpeed")
+	if (isSeaLoaded && SeaPerkShower_HasSegment(perkID))
 	{
 	    if(!IsEntity(&objSeaPerkShower)) return;
 
@@ -233,7 +255,7 @@ void SetCooldownTextForActivePerkInList(string perkId, int cooldownInSeconds, bo
 
 	// seaPerkShower -->
 	bool isSeaLoaded = bSeaActive && !bAbordageStarted;
-	if (isSeaLoaded)
+	if (isSeaLoaded && SeaPerkShower_HasSegment(perkID))
 	{
 	    if(!IsEntity(&objSeaPerkShower)) return;
 		SeaPerkShower_AddPerkWithCooldown(perkID, cooldownInSeconds, bActive);
@@ -388,12 +410,13 @@ int GetTextureIndex(string texName)
 
 void DelPerkFromActiveList(string perkID)
 {
+	if( !IsEntity(&objActivePerkShower) ) return;
 	aref arRoot,arCur;
 	makearef(arRoot,objActivePerkShower.PerkList.list);
 
 	// seaPerkShower -->
 	bool isSeaLoaded = bSeaActive && !bAbordageStarted;
-	if (isSeaLoaded && perkID != "TimeSpeed")
+	if (isSeaLoaded && SeaPerkShower_HasSegment(perkID))
 	{
 	    if(!IsEntity(&objSeaPerkShower)) return;
 		SeaPerkShower_RollbackPerk(perkId);
@@ -715,6 +738,11 @@ void SeaPerkShower_RollbackPerk(string perkId)
 
 void SeaPerkShower_RefreshPerkForUsing()
 {
+	// KZ > пересчёт отката/отсутствия перка ~7-8x раз в сек вместо в каждом кадре
+	g_iSeaPerkRefreshTick++;
+	if (g_iSeaPerkRefreshTick < 8) return;
+	g_iSeaPerkRefreshTick = 0;
+
 	if (!CheckAttribute(&objSeaPerkShower, "SegmentsInfo"))
 	return;
 

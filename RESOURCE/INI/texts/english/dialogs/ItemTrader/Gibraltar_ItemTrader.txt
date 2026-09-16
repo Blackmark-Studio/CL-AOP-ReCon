@@ -1,0 +1,36 @@
+Gibraltar_ItemTrader_1 {
+What questions?
+}
+Gibraltar_ItemTrader_2 {
+What can I do for you, @<GetAddress_Form>?
+}
+Gibraltar_ItemTrader_3 {
+@<RandPhraseSimple>
+}
+Gibraltar_ItemTrader_4 {
+More questions again, @<GetAddress_Form>...
+}
+Gibraltar_ItemTrader_5 {
+Questions, questions... Maybe we should do some trading, @<GetAddress_Form>?
+}
+Gibraltar_ItemTrader_6 {
+Listen, how much longer are we going to waste time on empty talk?
+}
+Gibraltar_ItemTrader_7 {
+No questions...
+}
+Gibraltar_ItemTrader_8 {
+I have nothing to say right now.
+}
+Gibraltar_ItemTrader_9 {
+@<RandPhraseSimple>
+}
+Gibraltar_ItemTrader_10 {
+Ah, not again...
+}
+Gibraltar_ItemTrader_11 {
+Yes, it really is better to bargain...
+}
+Gibraltar_ItemTrader_12 {
+Hm, sorry, merchant...
+}

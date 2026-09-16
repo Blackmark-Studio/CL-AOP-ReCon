@@ -99,6 +99,9 @@ void InitTravelMap()
 	// Providence
 	NullCharacter.TravelMap.Islands.Providence.Shore.t0		= "shore64";
 	NullCharacter.TravelMap.Islands.Providence.Shore.t1		= "shore65";
+	// Aruba
+	NullCharacter.TravelMap.Islands.Aruba.Shore.t0			= "shore67";
+	NullCharacter.TravelMap.Islands.Aruba.Shore.t1			= "shore68";
 
 
 	///////////////// клады //////////////////////////////////////////
@@ -137,6 +140,10 @@ void InitTravelMap()
 	NullCharacter.TravelMap.Islands.Hispaniola1.Treasure.Hispaniola_Cave.t0="box1";
 	NullCharacter.TravelMap.Islands.Hispaniola1.Treasure.Hispaniola_Cave.t1="box2";
 	NullCharacter.TravelMap.Islands.Hispaniola1.Treasure.Hispaniola_Cave.t2="box3";
+	NullCharacter.TravelMap.Islands.Hispaniola1.Treasure.SantoDomingo_TownCave.t0="box1";
+	NullCharacter.TravelMap.Islands.Hispaniola1.Treasure.SantoDomingo_TownCave.t1="box2";
+	NullCharacter.TravelMap.Islands.Hispaniola1.Treasure.SantoDomingo_TownCave.t2="box3";
+	NullCharacter.TravelMap.Islands.Hispaniola1.Treasure.SantoDomingo_TownCave.t3="box4";
 	NullCharacter.TravelMap.Islands.Jamaica.Treasure.Jamaica_Grot.t0="box1";
 	NullCharacter.TravelMap.Islands.Maracaibo.Treasure.Maracaibo_Cave.t0="box1";
 	NullCharacter.TravelMap.Islands.Maracaibo.Treasure.Maracaibo_Cave.t1="box2";
@@ -170,6 +177,7 @@ void InitTravelMap()
 	NullCharacter.TravelMap.Islands.Martinique.Treasure.FortFrance_Dungeon.t3="box4";
 	NullCharacter.TravelMap.Islands.Martinique.Treasure.FortFrance_Dungeon.t4="box5";
 	NullCharacter.TravelMap.Islands.Providence.Treasure.Providence_Cavern.t0="box1";
+	NullCharacter.TravelMap.Islands.Aruba.Treasure.Aruba_Grot.t0="box1";
 
 //////////////////////////////////////////////////////////////////////////////
 ///////////////////////////// TRINIDAD ///////////////////////////////////////
@@ -305,11 +313,16 @@ void InitTravelMap()
 	NullCharacter.TravelMap.PortSpein.t28.town = "FortOrange";
 	NullCharacter.TravelMap.PortSpein.t28.town.days.min = 8;
 	NullCharacter.TravelMap.PortSpein.t28.town.days.max = 13;
-	
+	//------------------------------------------------------------
 	NullCharacter.TravelMap.PortSpein.t29 = "Providence";
 	NullCharacter.TravelMap.PortSpein.t29.town = "Providencia";
 	NullCharacter.TravelMap.PortSpein.t29.town.days.min = 8;
 	NullCharacter.TravelMap.PortSpein.t29.town.days.max = 13;
+	//------------------------------------------------------------
+	NullCharacter.TravelMap.PortSpein.t31 = "Maracaibo";
+	NullCharacter.TravelMap.PortSpein.t31.town = "Gibraltar";
+	NullCharacter.TravelMap.PortSpein.t31.town.days.min = 5;
+	NullCharacter.TravelMap.PortSpein.t31.town.days.max = 6;
 	//------------------------------------------------------------
 	// Необитаемые
 	//------------------------------------------------------------
@@ -327,7 +340,11 @@ void InitTravelMap()
 	NullCharacter.TravelMap.PortSpein.t27.town = "";
 	NullCharacter.TravelMap.PortSpein.t27.town.days.min = 6;
 	NullCharacter.TravelMap.PortSpein.t27.town.days.max = 12;
-
+	//------------------------------------------------------------
+	NullCharacter.TravelMap.PortSpein.t30 = "Aruba";
+	NullCharacter.TravelMap.PortSpein.t30.town = "";
+	NullCharacter.TravelMap.PortSpein.t30.town.days.min = 5;
+	NullCharacter.TravelMap.PortSpein.t30.town.days.max = 7;
 
 //////////////////////////////////////////////////////////////////////////////
 ////////////////////////////// CUMANA ////////////////////////////////////////
@@ -469,6 +486,11 @@ void InitTravelMap()
 	NullCharacter.TravelMap.Cumana.t29.town.days.min = 7;
 	NullCharacter.TravelMap.Cumana.t29.town.days.max = 12;
 	//------------------------------------------------------------
+	NullCharacter.TravelMap.Cumana.t31 = "Maracaibo";
+	NullCharacter.TravelMap.Cumana.t31.town = "Gibraltar";
+	NullCharacter.TravelMap.Cumana.t31.town.days.min = 4;
+	NullCharacter.TravelMap.Cumana.t31.town.days.max = 5;
+	//------------------------------------------------------------
 	// Необитаемые
 	//------------------------------------------------------------
 	NullCharacter.TravelMap.Cumana.t25 = "Caiman";
@@ -485,6 +507,12 @@ void InitTravelMap()
 	NullCharacter.TravelMap.Cumana.t27.town = "";
 	NullCharacter.TravelMap.Cumana.t27.town.days.min = 5;
 	NullCharacter.TravelMap.Cumana.t27.town.days.max = 11;
+	//------------------------------------------------------------
+	NullCharacter.TravelMap.Cumana.t30 = "Aruba";
+	NullCharacter.TravelMap.Cumana.t30.town = "";
+	NullCharacter.TravelMap.Cumana.t30.town.days.min = 4;
+	NullCharacter.TravelMap.Cumana.t30.town.days.max = 6;
+
 
 //////////////////////////////////////////////////////////////////////////////
 ///////////////////////////// CARACAS ////////////////////////////////////////
@@ -626,6 +654,11 @@ void InitTravelMap()
 	NullCharacter.TravelMap.Caracas.t29.town.days.min = 5;
 	NullCharacter.TravelMap.Caracas.t29.town.days.max = 10;
 	//------------------------------------------------------------
+	NullCharacter.TravelMap.Caracas.t31 = "Maracaibo";
+	NullCharacter.TravelMap.Caracas.t31.town = "Gibraltar";
+	NullCharacter.TravelMap.Caracas.t31.town.days.min = 2;
+	NullCharacter.TravelMap.Caracas.t31.town.days.max = 3;
+	//------------------------------------------------------------
 	// Необитаемые
 	//------------------------------------------------------------
 	NullCharacter.TravelMap.Caracas.t25 = "Caiman";
@@ -642,6 +675,11 @@ void InitTravelMap()
 	NullCharacter.TravelMap.Caracas.t27.town = "";
 	NullCharacter.TravelMap.Caracas.t27.town.days.min = 8;
 	NullCharacter.TravelMap.Caracas.t27.town.days.max = 14;
+	//------------------------------------------------------------
+	NullCharacter.TravelMap.Caracas.t30 = "Aruba";
+	NullCharacter.TravelMap.Caracas.t30.town = "";
+	NullCharacter.TravelMap.Caracas.t30.town.days.min = 2;
+	NullCharacter.TravelMap.Caracas.t30.town.days.max = 3;
 
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////// MARACAIBO ///////////////////////////////////////
@@ -799,6 +837,11 @@ void InitTravelMap()
 	NullCharacter.TravelMap.Maracaibo.t27.town = "";
 	NullCharacter.TravelMap.Maracaibo.t27.town.days.min = 9;
 	NullCharacter.TravelMap.Maracaibo.t27.town.days.max = 14;
+	//------------------------------------------------------------
+	NullCharacter.TravelMap.Maracaibo.t30 = "Aruba";
+	NullCharacter.TravelMap.Maracaibo.t30.town = "";
+	NullCharacter.TravelMap.Maracaibo.t30.town.days.min = 2;
+	NullCharacter.TravelMap.Maracaibo.t30.town.days.max = 4;
 
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////// CARTAHENA ///////////////////////////////////////
@@ -940,6 +983,11 @@ void InitTravelMap()
 	NullCharacter.TravelMap.Cartahena.t29.town.days.min = 5;
 	NullCharacter.TravelMap.Cartahena.t29.town.days.max = 8;
 	//------------------------------------------------------------
+	NullCharacter.TravelMap.Cartahena.t31 = "Maracaibo";
+	NullCharacter.TravelMap.Cartahena.t31.town = "Gibraltar";
+	NullCharacter.TravelMap.Cartahena.t31.town.days.min = 3;
+	NullCharacter.TravelMap.Cartahena.t31.town.days.max = 5;
+	//------------------------------------------------------------
 	// Необитаемые
 	//------------------------------------------------------------
 	NullCharacter.TravelMap.Cartahena.t25 = "Caiman";
@@ -956,6 +1004,11 @@ void InitTravelMap()
 	NullCharacter.TravelMap.Cartahena.t27.town = "";
 	NullCharacter.TravelMap.Cartahena.t27.town.days.min = 8;
 	NullCharacter.TravelMap.Cartahena.t27.town.days.max = 13;
+	//------------------------------------------------------------
+	NullCharacter.TravelMap.Cartahena.t30 = "Aruba";
+	NullCharacter.TravelMap.Cartahena.t30.town = "";
+	NullCharacter.TravelMap.Cartahena.t30.town.days.min = 3;
+	NullCharacter.TravelMap.Cartahena.t30.town.days.max = 5;
 
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////// PORTOBELLO //////////////////////////////////////
@@ -1097,6 +1150,11 @@ void InitTravelMap()
 	NullCharacter.TravelMap.PortoBello.t29.town.days.min = 4;
 	NullCharacter.TravelMap.PortoBello.t29.town.days.max = 7;
 	//------------------------------------------------------------
+	NullCharacter.TravelMap.PortoBello.t31 = "Maracaibo";
+	NullCharacter.TravelMap.PortoBello.t31.town = "Gibraltar";
+	NullCharacter.TravelMap.PortoBello.t31.town.days.min = 6;
+	NullCharacter.TravelMap.PortoBello.t31.town.days.max = 10;
+	//------------------------------------------------------------
 	// Необитаемые
 	//------------------------------------------------------------
 	NullCharacter.TravelMap.PortoBello.t25 = "Caiman";
@@ -1113,6 +1171,11 @@ void InitTravelMap()
 	NullCharacter.TravelMap.PortoBello.t27.town = "";
 	NullCharacter.TravelMap.PortoBello.t27.town.days.min = 9;
 	NullCharacter.TravelMap.PortoBello.t27.town.days.max = 14;
+	//------------------------------------------------------------
+	NullCharacter.TravelMap.PortoBello.t30 = "Aruba";
+	NullCharacter.TravelMap.PortoBello.t30.town = "";
+	NullCharacter.TravelMap.PortoBello.t30.town.days.min = 4;
+	NullCharacter.TravelMap.PortoBello.t30.town.days.max = 8;
 
 //////////////////////////////////////////////////////////////////////////////
 /////////////////////////// SANTACATALINA ////////////////////////////////////
@@ -1254,6 +1317,11 @@ void InitTravelMap()
 	NullCharacter.TravelMap.SantaCatalina.t29.town.days.min = 4;
 	NullCharacter.TravelMap.SantaCatalina.t29.town.days.max = 6;
 	//------------------------------------------------------------
+	NullCharacter.TravelMap.SantaCatalina.t31 = "Maracaibo";
+	NullCharacter.TravelMap.SantaCatalina.t31.town = "Gibraltar";
+	NullCharacter.TravelMap.SantaCatalina.t31.town.days.min = 8;
+	NullCharacter.TravelMap.SantaCatalina.t31.town.days.max = 14;
+	//------------------------------------------------------------
 	// Необитаемые
 	//------------------------------------------------------------
 	NullCharacter.TravelMap.SantaCatalina.t25 = "Caiman";
@@ -1270,6 +1338,11 @@ void InitTravelMap()
 	NullCharacter.TravelMap.SantaCatalina.t27.town = "";
 	NullCharacter.TravelMap.SantaCatalina.t27.town.days.min = 8;
 	NullCharacter.TravelMap.SantaCatalina.t27.town.days.max = 14;
+	//------------------------------------------------------------
+	NullCharacter.TravelMap.SantaCatalina.t30 = "Aruba";
+	NullCharacter.TravelMap.SantaCatalina.t30.town = "";
+	NullCharacter.TravelMap.SantaCatalina.t30.town.days.min = 5;
+	NullCharacter.TravelMap.SantaCatalina.t30.town.days.max = 9;
 
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////// JAMAICA PORTROYAL ///////////////////////////////////
@@ -1406,6 +1479,11 @@ void InitTravelMap()
 	NullCharacter.TravelMap.PortRoyal.t28.town.days.min = 4;
 	NullCharacter.TravelMap.PortRoyal.t28.town.days.max = 7;
 	//------------------------------------------------------------
+	NullCharacter.TravelMap.PortRoyal.t30 = "Maracaibo";
+	NullCharacter.TravelMap.PortRoyal.t30.town = "Gibraltar";
+	NullCharacter.TravelMap.PortRoyal.t30.town.days.min = 6;
+	NullCharacter.TravelMap.PortRoyal.t30.town.days.max = 9;
+	//------------------------------------------------------------
 	// Необитаемые
 	//------------------------------------------------------------
 	NullCharacter.TravelMap.PortRoyal.t25 = "Caiman";
@@ -1422,6 +1500,12 @@ void InitTravelMap()
 	NullCharacter.TravelMap.PortRoyal.t27.town = "";
 	NullCharacter.TravelMap.PortRoyal.t27.town.days.min = 7;
 	NullCharacter.TravelMap.PortRoyal.t27.town.days.max = 12;
+	//------------------------------------------------------------
+	NullCharacter.TravelMap.PortRoyal.t29 = "Aruba";
+	NullCharacter.TravelMap.PortRoyal.t29.town = "";
+	NullCharacter.TravelMap.PortRoyal.t29.town.days.min = 5;
+	NullCharacter.TravelMap.PortRoyal.t29.town.days.max = 8;
+
 
 //////////////////////////////////////////////////////////////////////////////
 /////////////////////////////// CUBA /////////////////////////////////////////
@@ -1558,6 +1642,11 @@ void InitTravelMap()
 	NullCharacter.TravelMap.Santiago.t28.town.days.min = 7;
 	NullCharacter.TravelMap.Santiago.t28.town.days.max = 12;
 	//------------------------------------------------------------
+	NullCharacter.TravelMap.Santiago.t30 = "Maracaibo";
+	NullCharacter.TravelMap.Santiago.t30.town = "Gibraltar";
+	NullCharacter.TravelMap.Santiago.t30.town.days.min = 11;
+	NullCharacter.TravelMap.Santiago.t30.town.days.max = 19;
+	//------------------------------------------------------------
 	// Необитаемые
 	//------------------------------------------------------------
 	NullCharacter.TravelMap.Santiago.t24 = "Caiman";
@@ -1574,6 +1663,11 @@ void InitTravelMap()
 	NullCharacter.TravelMap.Santiago.t26.town = "";
 	NullCharacter.TravelMap.Santiago.t26.town.days.min = 7;
 	NullCharacter.TravelMap.Santiago.t26.town.days.max = 10;
+	//------------------------------------------------------------
+	NullCharacter.TravelMap.Santiago.t29 = "Aruba";
+	NullCharacter.TravelMap.Santiago.t29.town = "";
+	NullCharacter.TravelMap.Santiago.t29.town.days.min = 10;
+	NullCharacter.TravelMap.Santiago.t29.town.days.max = 14;
 
 //////////////////////////////////////////////////////////////////////////////
 /////////////////////////////// CUBA /////////////////////////////////////////
@@ -1710,6 +1804,11 @@ void InitTravelMap()
 	NullCharacter.TravelMap.Havana.t28.town.days.min = 8;
 	NullCharacter.TravelMap.Havana.t28.town.days.max = 13;
 	//------------------------------------------------------------
+	NullCharacter.TravelMap.Havana.t30 = "Maracaibo";
+	NullCharacter.TravelMap.Havana.t30.town = "Gibraltar";
+	NullCharacter.TravelMap.Havana.t30.town.days.min = 13;
+	NullCharacter.TravelMap.Havana.t30.town.days.max = 20;
+	//------------------------------------------------------------
 	// Необитаемые
 	//------------------------------------------------------------
 	NullCharacter.TravelMap.Havana.t24 = "Caiman";
@@ -1726,6 +1825,11 @@ void InitTravelMap()
 	NullCharacter.TravelMap.Havana.t26.town = "";
 	NullCharacter.TravelMap.Havana.t26.town.days.min = 8;
 	NullCharacter.TravelMap.Havana.t26.town.days.max = 12;
+	//------------------------------------------------------------
+	NullCharacter.TravelMap.Havana.t29 = "Aruba";
+	NullCharacter.TravelMap.Havana.t29.town = "";
+	NullCharacter.TravelMap.Havana.t29.town.days.min = 9;
+	NullCharacter.TravelMap.Havana.t29.town.days.max = 13;
 
 //////////////////////////////////////////////////////////////////////////////
 ////////////////////////////// BELIZ /////////////////////////////////////////
@@ -1867,6 +1971,11 @@ void InitTravelMap()
 	NullCharacter.TravelMap.Beliz.t29.town.days.min = 7;
 	NullCharacter.TravelMap.Beliz.t29.town.days.max = 8;
 	//------------------------------------------------------------
+	NullCharacter.TravelMap.Beliz.t31 = "Maracaibo";
+	NullCharacter.TravelMap.Beliz.t31.town = "Gibraltar";
+	NullCharacter.TravelMap.Beliz.t31.town.days.min = 11;
+	NullCharacter.TravelMap.Beliz.t31.town.days.max = 24;
+	//------------------------------------------------------------
 	// Необитаемые
 	//------------------------------------------------------------
 	NullCharacter.TravelMap.Beliz.t25 = "Caiman";
@@ -1883,6 +1992,11 @@ void InitTravelMap()
 	NullCharacter.TravelMap.Beliz.t27.town = "";
 	NullCharacter.TravelMap.Beliz.t27.town.days.min = 7;
 	NullCharacter.TravelMap.Beliz.t27.town.days.max = 12;
+	//------------------------------------------------------------
+	NullCharacter.TravelMap.Beliz.t30 = "Aruba";
+	NullCharacter.TravelMap.Beliz.t30.town = "";
+	NullCharacter.TravelMap.Beliz.t30.town.days.min = 7;
+	NullCharacter.TravelMap.Beliz.t30.town.days.max = 12;
 
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////// BERMUDES ////////////////////////////////////////
@@ -1899,8 +2013,8 @@ void InitTravelMap()
 	//------------------------------------------------------------
 	NullCharacter.TravelMap.Pirates.t2 = "Maracaibo";
 	NullCharacter.TravelMap.Pirates.t2.town = "Maracaibo";
-	NullCharacter.TravelMap.Pirates.t2.town.days.min = 9;
-	NullCharacter.TravelMap.Pirates.t2.town.days.max = 15;
+	NullCharacter.TravelMap.Pirates.t2.town.days.min = 10;
+	NullCharacter.TravelMap.Pirates.t2.town.days.max = 17;
 	//------------------------------------------------------------
 	NullCharacter.TravelMap.Pirates.t3 = "Cartahena";
 	NullCharacter.TravelMap.Pirates.t3.town = "Cartahena";
@@ -1964,7 +2078,7 @@ void InitTravelMap()
 	//------------------------------------------------------------
 	NullCharacter.TravelMap.Pirates.t15 = "Curacao";
 	NullCharacter.TravelMap.Pirates.t15.town = "Villemstad";
-	NullCharacter.TravelMap.Pirates.t15.town.days.min = 6;
+	NullCharacter.TravelMap.Pirates.t15.town.days.min = 8;
 	NullCharacter.TravelMap.Pirates.t15.town.days.max = 12;
 	//------------------------------------------------------------
 	NullCharacter.TravelMap.Pirates.t16 = "Martinique";
@@ -2022,7 +2136,12 @@ void InitTravelMap()
 	NullCharacter.TravelMap.Pirates.t29 = "Providence";
 	NullCharacter.TravelMap.Pirates.t29.town = "Providencia";
 	NullCharacter.TravelMap.Pirates.t29.town.days.min = 10;
-	NullCharacter.TravelMap.Pirates.t29.town.days.max = 14;	
+	NullCharacter.TravelMap.Pirates.t29.town.days.max = 14;
+	//------------------------------------------------------------
+	NullCharacter.TravelMap.Pirates.t31 = "Maracaibo";
+	NullCharacter.TravelMap.Pirates.t31.town = "Gibraltar";
+	NullCharacter.TravelMap.Pirates.t31.town.days.min = 10;
+	NullCharacter.TravelMap.Pirates.t31.town.days.max = 17;
 	//------------------------------------------------------------
 	// Необитаемые
 	//------------------------------------------------------------
@@ -2040,6 +2159,11 @@ void InitTravelMap()
 	NullCharacter.TravelMap.Pirates.t27.town = "";
 	NullCharacter.TravelMap.Pirates.t27.town.days.min = 1;
 	NullCharacter.TravelMap.Pirates.t27.town.days.max = 2;
+	//------------------------------------------------------------
+	NullCharacter.TravelMap.Pirates.t30 = "Aruba";
+	NullCharacter.TravelMap.Pirates.t30.town = "";
+	NullCharacter.TravelMap.Pirates.t30.town.days.min = 8;
+	NullCharacter.TravelMap.Pirates.t30.town.days.max = 12;
 
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////// SENTMARTIN //////////////////////////////////////
@@ -2181,6 +2305,11 @@ void InitTravelMap()
 	NullCharacter.TravelMap.Marigo.t29.town.days.min = 8;
 	NullCharacter.TravelMap.Marigo.t29.town.days.max = 12;
 	//------------------------------------------------------------
+	NullCharacter.TravelMap.Marigo.t31 = "Maracaibo";
+	NullCharacter.TravelMap.Marigo.t31.town = "Gibraltar";
+	NullCharacter.TravelMap.Marigo.t31.town.days.min = 8;
+	NullCharacter.TravelMap.Marigo.t31.town.days.max = 12;
+	//------------------------------------------------------------
 	// Необитаемые
 	//------------------------------------------------------------
 	NullCharacter.TravelMap.Marigo.t25 = "Caiman";
@@ -2197,6 +2326,11 @@ void InitTravelMap()
 	NullCharacter.TravelMap.Marigo.t27.town = "";
 	NullCharacter.TravelMap.Marigo.t27.town.days.min = 2;
 	NullCharacter.TravelMap.Marigo.t27.town.days.max = 5;
+	//------------------------------------------------------------
+	NullCharacter.TravelMap.Marigo.t30 = "Aruba";
+	NullCharacter.TravelMap.Marigo.t30.town = "";
+	NullCharacter.TravelMap.Marigo.t30.town.days.min = 7;
+	NullCharacter.TravelMap.Marigo.t30.town.days.max = 10;
 
 //////////////////////////////////////////////////////////////////////////////
 ////////////////////////////// NEVIS /////////////////////////////////////////
@@ -2278,7 +2412,7 @@ void InitTravelMap()
 	//------------------------------------------------------------
 	NullCharacter.TravelMap.Charles.t15 = "Curacao";
 	NullCharacter.TravelMap.Charles.t15.town = "Villemstad";
-	NullCharacter.TravelMap.Charles.t15.town.days.min = 4;
+	NullCharacter.TravelMap.Charles.t15.town.days.min = 5;
 	NullCharacter.TravelMap.Charles.t15.town.days.max = 7;
 	//------------------------------------------------------------
 	NullCharacter.TravelMap.Charles.t16 = "Martinique";
@@ -2338,6 +2472,11 @@ void InitTravelMap()
 	NullCharacter.TravelMap.Charles.t29.town.days.min = 7;
 	NullCharacter.TravelMap.Charles.t29.town.days.max = 10;
 	//------------------------------------------------------------
+	NullCharacter.TravelMap.Charles.t31 = "Maracaibo";
+	NullCharacter.TravelMap.Charles.t31.town = "Gibraltar";
+	NullCharacter.TravelMap.Charles.t31.town.days.min = 6;
+	NullCharacter.TravelMap.Charles.t31.town.days.max = 10;
+	//------------------------------------------------------------
 	// Необитаемые
 	//------------------------------------------------------------
 	NullCharacter.TravelMap.Charles.t25 = "Caiman";
@@ -2354,6 +2493,11 @@ void InitTravelMap()
 	NullCharacter.TravelMap.Charles.t27.town = "";
 	NullCharacter.TravelMap.Charles.t27.town.days.min = 3;
 	NullCharacter.TravelMap.Charles.t27.town.days.max = 6;
+	//------------------------------------------------------------
+	NullCharacter.TravelMap.Charles.t30 = "Aruba";
+	NullCharacter.TravelMap.Charles.t30.town = "";
+	NullCharacter.TravelMap.Charles.t30.town.days.min = 5;
+	NullCharacter.TravelMap.Charles.t30.town.days.max = 8;
 
 //////////////////////////////////////////////////////////////////////////////
 ///////////////////////////// ANTIGUA ////////////////////////////////////////
@@ -2495,6 +2639,11 @@ void InitTravelMap()
 	NullCharacter.TravelMap.SentJons.t29.town.days.min = 6;
 	NullCharacter.TravelMap.SentJons.t29.town.days.max = 10;
 	//------------------------------------------------------------
+	NullCharacter.TravelMap.SentJons.t31 = "Maracaibo";
+	NullCharacter.TravelMap.SentJons.t31.town = "Gibraltar";
+	NullCharacter.TravelMap.SentJons.t31.town.days.min = 7;
+	NullCharacter.TravelMap.SentJons.t31.town.days.max = 10;
+	//------------------------------------------------------------
 	// Необитаемые
 	//------------------------------------------------------------
 	NullCharacter.TravelMap.SentJons.t25 = "Caiman";
@@ -2511,6 +2660,11 @@ void InitTravelMap()
 	NullCharacter.TravelMap.SentJons.t27.town = "";
 	NullCharacter.TravelMap.SentJons.t27.town.days.min = 4;
 	NullCharacter.TravelMap.SentJons.t27.town.days.max = 8;
+	//------------------------------------------------------------
+	NullCharacter.TravelMap.SentJons.t30 = "Aruba";
+	NullCharacter.TravelMap.SentJons.t30.town = "";
+	NullCharacter.TravelMap.SentJons.t30.town.days.min = 5;
+	NullCharacter.TravelMap.SentJons.t30.town.days.max = 7;
 
 //////////////////////////////////////////////////////////////////////////////
 ///////////////////////////// BARBADOS ///////////////////////////////////////
@@ -2652,6 +2806,11 @@ void InitTravelMap()
 	NullCharacter.TravelMap.Bridgetown.t29.town.days.min = 11;
 	NullCharacter.TravelMap.Bridgetown.t29.town.days.max = 15;
 	//------------------------------------------------------------
+	NullCharacter.TravelMap.Bridgetown.t31 = "Maracaibo";
+	NullCharacter.TravelMap.Bridgetown.t31.town = "Gibraltar";
+	NullCharacter.TravelMap.Bridgetown.t31.town.days.min = 5;
+	NullCharacter.TravelMap.Bridgetown.t31.town.days.max = 8;
+	//------------------------------------------------------------
 	// Необитаемые
 	//------------------------------------------------------------
 	NullCharacter.TravelMap.Bridgetown.t25 = "Caiman";
@@ -2668,6 +2827,11 @@ void InitTravelMap()
 	NullCharacter.TravelMap.Bridgetown.t27.town = "";
 	NullCharacter.TravelMap.Bridgetown.t27.town.days.min = 6;
 	NullCharacter.TravelMap.Bridgetown.t27.town.days.max = 10;
+	//------------------------------------------------------------
+	NullCharacter.TravelMap.Bridgetown.t30 = "Aruba";
+	NullCharacter.TravelMap.Bridgetown.t30.town = "";
+	NullCharacter.TravelMap.Bridgetown.t30.town.days.min = 4;
+	NullCharacter.TravelMap.Bridgetown.t30.town.days.max = 6;
 
 //////////////////////////////////////////////////////////////////////////////
 ////////////////////////////// CURACAO ///////////////////////////////////////
@@ -2809,6 +2973,11 @@ void InitTravelMap()
 	NullCharacter.TravelMap.Villemstad.t29.town.days.min = 6;
 	NullCharacter.TravelMap.Villemstad.t29.town.days.max = 9;
 	//------------------------------------------------------------
+	NullCharacter.TravelMap.Villemstad.t31 = "Maracaibo";
+	NullCharacter.TravelMap.Villemstad.t31.town = "Gibraltar";
+	NullCharacter.TravelMap.Villemstad.t31.town.days.min = 1;
+	NullCharacter.TravelMap.Villemstad.t31.town.days.max = 3;
+	//------------------------------------------------------------
 	// Необитаемые
 	//------------------------------------------------------------
 	NullCharacter.TravelMap.Villemstad.t25 = "Caiman";
@@ -2825,6 +2994,11 @@ void InitTravelMap()
 	NullCharacter.TravelMap.Villemstad.t27.town = "";
 	NullCharacter.TravelMap.Villemstad.t27.town.days.min = 6;
 	NullCharacter.TravelMap.Villemstad.t27.town.days.max = 11;
+	//------------------------------------------------------------
+	NullCharacter.TravelMap.Villemstad.t30 = "Aruba";
+	NullCharacter.TravelMap.Villemstad.t30.town = "";
+	NullCharacter.TravelMap.Villemstad.t30.town.days.min = 2;
+	NullCharacter.TravelMap.Villemstad.t30.town.days.max = 3;
 
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////// MARTINIQUE //////////////////////////////////////
@@ -2961,6 +3135,11 @@ void InitTravelMap()
 	NullCharacter.TravelMap.FortFrance.t28.town.days.min = 7;
 	NullCharacter.TravelMap.FortFrance.t28.town.days.max = 11;
 	//------------------------------------------------------------
+	NullCharacter.TravelMap.FortFrance.t30 = "Maracaibo";
+	NullCharacter.TravelMap.FortFrance.t30.town = "Gibraltar";
+	NullCharacter.TravelMap.FortFrance.t30.town.days.min = 5;
+	NullCharacter.TravelMap.FortFrance.t30.town.days.max = 8;
+	//------------------------------------------------------------
 	// Необитаемые
 	//------------------------------------------------------------
 	NullCharacter.TravelMap.FortFrance.t24 = "Caiman";
@@ -2977,6 +3156,11 @@ void InitTravelMap()
 	NullCharacter.TravelMap.FortFrance.t26.town = "";
 	NullCharacter.TravelMap.FortFrance.t26.town.days.min = 9;
 	NullCharacter.TravelMap.FortFrance.t26.town.days.max = 14;
+	//------------------------------------------------------------
+	NullCharacter.TravelMap.FortFrance.t29 = "Aruba";
+	NullCharacter.TravelMap.FortFrance.t29.town = "";
+	NullCharacter.TravelMap.FortFrance.t29.town.days.min = 4;
+	NullCharacter.TravelMap.FortFrance.t29.town.days.max = 7;
 
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////// GUADELOUPE //////////////////////////////////////
@@ -3115,8 +3299,13 @@ void InitTravelMap()
 	//------------------------------------------------------------
 	NullCharacter.TravelMap.BasTer.t29 = "Providence";
 	NullCharacter.TravelMap.BasTer.t29.town = "Providencia";
-	NullCharacter.TravelMap.BasTer.t29.town.days.min = 5;
-	NullCharacter.TravelMap.BasTer.t29.town.days.max = 8;
+	NullCharacter.TravelMap.BasTer.t29.town.days.min = 7;
+	NullCharacter.TravelMap.BasTer.t29.town.days.max = 9;
+	//------------------------------------------------------------
+	NullCharacter.TravelMap.BasTer.t31 = "Maracaibo";
+	NullCharacter.TravelMap.BasTer.t31.town = "Gibraltar";
+	NullCharacter.TravelMap.BasTer.t31.town.days.min = 5;
+	NullCharacter.TravelMap.BasTer.t31.town.days.max = 7;
 	//------------------------------------------------------------
 	// Необитаемые
 	//------------------------------------------------------------
@@ -3134,6 +3323,11 @@ void InitTravelMap()
 	NullCharacter.TravelMap.BasTer.t27.town = "";
 	NullCharacter.TravelMap.BasTer.t27.town.days.min = 6;
 	NullCharacter.TravelMap.BasTer.t27.town.days.max = 9;
+	//------------------------------------------------------------
+	NullCharacter.TravelMap.BasTer.t30 = "Aruba";
+	NullCharacter.TravelMap.BasTer.t30.town = "";
+	NullCharacter.TravelMap.BasTer.t30.town.days.min = 5;
+	NullCharacter.TravelMap.BasTer.t30.town.days.max = 9;
 
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////// PUERTORICO //////////////////////////////////////
@@ -3215,8 +3409,8 @@ void InitTravelMap()
 	//------------------------------------------------------------
 	NullCharacter.TravelMap.SanJuan.t15 = "Curacao";
 	NullCharacter.TravelMap.SanJuan.t15.town = "Villemstad";
-	NullCharacter.TravelMap.SanJuan.t15.town.days.min = 5;
-	NullCharacter.TravelMap.SanJuan.t15.town.days.max = 9;
+	NullCharacter.TravelMap.SanJuan.t15.town.days.min = 6;
+	NullCharacter.TravelMap.SanJuan.t15.town.days.max = 10;
 	//------------------------------------------------------------
 	NullCharacter.TravelMap.SanJuan.t16 = "Martinique";
 	NullCharacter.TravelMap.SanJuan.t16.town = "FortFrance";
@@ -3275,6 +3469,11 @@ void InitTravelMap()
 	NullCharacter.TravelMap.SanJuan.t29.town.days.min = 7;
 	NullCharacter.TravelMap.SanJuan.t29.town.days.max = 9;
 	//------------------------------------------------------------
+	NullCharacter.TravelMap.SanJuan.t31 = "Maracaibo";
+	NullCharacter.TravelMap.SanJuan.t31.town = "Gibraltar";
+	NullCharacter.TravelMap.SanJuan.t31.town.days.min = 7;
+	NullCharacter.TravelMap.SanJuan.t31.town.days.max = 12;
+	//------------------------------------------------------------
 	// Необитаемые
 	//------------------------------------------------------------
 	NullCharacter.TravelMap.SanJuan.t25 = "Caiman";
@@ -3291,6 +3490,11 @@ void InitTravelMap()
 	NullCharacter.TravelMap.SanJuan.t27.town = "";
 	NullCharacter.TravelMap.SanJuan.t27.town.days.min = 3;
 	NullCharacter.TravelMap.SanJuan.t27.town.days.max = 5;
+	//------------------------------------------------------------
+	NullCharacter.TravelMap.SanJuan.t30 = "Aruba";
+	NullCharacter.TravelMap.SanJuan.t30.town = "";
+	NullCharacter.TravelMap.SanJuan.t30.town.days.min = 5;
+	NullCharacter.TravelMap.SanJuan.t30.town.days.max = 9;
 
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////// HISPANIOLA //////////////////////////////////////
@@ -3372,8 +3576,8 @@ void InitTravelMap()
 	//------------------------------------------------------------
 	NullCharacter.TravelMap.SantoDomingo.t15 = "Curacao";
 	NullCharacter.TravelMap.SantoDomingo.t15.town = "Villemstad";
-	NullCharacter.TravelMap.SantoDomingo.t15.town.days.min = 5;
-	NullCharacter.TravelMap.SantoDomingo.t15.town.days.max = 9;
+	NullCharacter.TravelMap.SantoDomingo.t15.town.days.min = 6;
+	NullCharacter.TravelMap.SantoDomingo.t15.town.days.max = 10;
 	//------------------------------------------------------------
 	NullCharacter.TravelMap.SantoDomingo.t16 = "Martinique";
 	NullCharacter.TravelMap.SantoDomingo.t16.town = "FortFrance";
@@ -3427,6 +3631,11 @@ void InitTravelMap()
 	NullCharacter.TravelMap.SantoDomingo.t28.town.days.min = 7;
 	NullCharacter.TravelMap.SantoDomingo.t28.town.days.max = 10;
 	//------------------------------------------------------------
+	NullCharacter.TravelMap.SantoDomingo.t30 = "Maracaibo";
+	NullCharacter.TravelMap.SantoDomingo.t30.town = "Gibraltar";
+	NullCharacter.TravelMap.SantoDomingo.t30.town.days.min = 7;
+	NullCharacter.TravelMap.SantoDomingo.t30.town.days.max = 12;
+	//------------------------------------------------------------
 	// Необитаемые
 	//------------------------------------------------------------
 	NullCharacter.TravelMap.SantoDomingo.t24 = "Caiman";
@@ -3443,6 +3652,11 @@ void InitTravelMap()
 	NullCharacter.TravelMap.SantoDomingo.t26.town = "";
 	NullCharacter.TravelMap.SantoDomingo.t26.town.days.min = 3;
 	NullCharacter.TravelMap.SantoDomingo.t26.town.days.max = 5;
+	//------------------------------------------------------------
+	NullCharacter.TravelMap.SantoDomingo.t29 = "Aruba";
+	NullCharacter.TravelMap.SantoDomingo.t29.town = "";
+	NullCharacter.TravelMap.SantoDomingo.t29.town.days.min = 4;
+	NullCharacter.TravelMap.SantoDomingo.t29.town.days.max = 8;
 
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////// HISPANIOLA //////////////////////////////////////
@@ -3524,7 +3738,7 @@ void InitTravelMap()
 	//------------------------------------------------------------
 	NullCharacter.TravelMap.PortPax.t15 = "Curacao";
 	NullCharacter.TravelMap.PortPax.t15.town = "Villemstad";
-	NullCharacter.TravelMap.PortPax.t15.town.days.min = 6;
+	NullCharacter.TravelMap.PortPax.t15.town.days.min = 7;
 	NullCharacter.TravelMap.PortPax.t15.town.days.max = 11;
 	//------------------------------------------------------------
 	NullCharacter.TravelMap.PortPax.t16 = "Martinique";
@@ -3579,6 +3793,11 @@ void InitTravelMap()
 	NullCharacter.TravelMap.PortPax.t28.town.days.min = 7;
 	NullCharacter.TravelMap.PortPax.t28.town.days.max = 10;
 	//------------------------------------------------------------
+	NullCharacter.TravelMap.PortPax.t30 = "Maracaibo";
+	NullCharacter.TravelMap.PortPax.t30.town = "Gibraltar";
+	NullCharacter.TravelMap.PortPax.t30.town.days.min = 8;
+	NullCharacter.TravelMap.PortPax.t30.town.days.max = 13;
+	//------------------------------------------------------------
 	// Необитаемые
 	//------------------------------------------------------------
 	NullCharacter.TravelMap.PortPax.t24 = "Caiman";
@@ -3595,6 +3814,11 @@ void InitTravelMap()
 	NullCharacter.TravelMap.PortPax.t26.town = "";
 	NullCharacter.TravelMap.PortPax.t26.town.days.min = 4;
 	NullCharacter.TravelMap.PortPax.t26.town.days.max = 6;
+	//------------------------------------------------------------
+	NullCharacter.TravelMap.PortPax.t29 = "Aruba";
+	NullCharacter.TravelMap.PortPax.t29.town = "";
+	NullCharacter.TravelMap.PortPax.t29.town.days.min = 6;
+	NullCharacter.TravelMap.PortPax.t29.town.days.max = 10;
 
 //////////////////////////////////////////////////////////////////////////////
 ///////////////////////////// TORTUGA ////////////////////////////////////////
@@ -3736,6 +3960,11 @@ void InitTravelMap()
 	NullCharacter.TravelMap.Tortuga.t29.town.days.min = 8;
 	NullCharacter.TravelMap.Tortuga.t29.town.days.max = 12;
 	//------------------------------------------------------------
+	NullCharacter.TravelMap.PortPax.t31 = "Maracaibo";
+	NullCharacter.TravelMap.PortPax.t31.town = "Gibraltar";
+	NullCharacter.TravelMap.PortPax.t31.town.days.min = 9;
+	NullCharacter.TravelMap.PortPax.t31.town.days.max = 14;
+	//------------------------------------------------------------
 	// Необитаемые
 	//------------------------------------------------------------
 	NullCharacter.TravelMap.Tortuga.t25 = "Caiman";
@@ -3752,6 +3981,11 @@ void InitTravelMap()
 	NullCharacter.TravelMap.Tortuga.t27.town = "";
 	NullCharacter.TravelMap.Tortuga.t27.town.days.min = 1;
 	NullCharacter.TravelMap.Tortuga.t27.town.days.max = 3;
+	//------------------------------------------------------------
+	NullCharacter.TravelMap.Tortuga.t30 = "Aruba";
+	NullCharacter.TravelMap.Tortuga.t30.town = "";
+	NullCharacter.TravelMap.Tortuga.t30.town.days.min = 6;
+	NullCharacter.TravelMap.Tortuga.t30.town.days.max = 10;
 
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////// HISPANIOLA LAVEGA ///////////////////////////////////
@@ -3888,6 +4122,11 @@ void InitTravelMap()
 	NullCharacter.TravelMap.LaVega.t28.town.days.min = 6;
 	NullCharacter.TravelMap.LaVega.t28.town.days.max = 10;
 	//------------------------------------------------------------
+	NullCharacter.TravelMap.LaVega.t30 = "Maracaibo";
+	NullCharacter.TravelMap.LaVega.t30.town = "Gibraltar";
+	NullCharacter.TravelMap.LaVega.t30.town.days.min = 7;
+	NullCharacter.TravelMap.LaVega.t30.town.days.max = 12;
+	//------------------------------------------------------------
 	// Необитаемые
 	//------------------------------------------------------------
 	NullCharacter.TravelMap.LaVega.t24 = "Caiman";
@@ -3904,6 +4143,11 @@ void InitTravelMap()
 	NullCharacter.TravelMap.LaVega.t26.town = "";
 	NullCharacter.TravelMap.LaVega.t26.town.days.min = 3;
 	NullCharacter.TravelMap.LaVega.t26.town.days.max = 5;
+	//------------------------------------------------------------
+	NullCharacter.TravelMap.LaVega.t29 = "Aruba";
+	NullCharacter.TravelMap.LaVega.t29.town = "";
+	NullCharacter.TravelMap.LaVega.t29.town.days.min = 5;
+	NullCharacter.TravelMap.LaVega.t29.town.days.max = 9;
 
 //////////////////////////////////////////////////////////////////////////////
 /////////////////////// MARTINIQUE LEFRANSUA /////////////////////////////////
@@ -3985,7 +4229,7 @@ void InitTravelMap()
 	//------------------------------------------------------------
 	NullCharacter.TravelMap.LeFransua.t15 = "Curacao";
 	NullCharacter.TravelMap.LeFransua.t15.town = "Villemstad";
-	NullCharacter.TravelMap.LeFransua.t15.town.days.min = 2;
+	NullCharacter.TravelMap.LeFransua.t15.town.days.min = 3;
 	NullCharacter.TravelMap.LeFransua.t15.town.days.max = 4;
 	//------------------------------------------------------------
 	NullCharacter.TravelMap.LeFransua.t16 = "Trinidad";
@@ -4040,6 +4284,11 @@ void InitTravelMap()
 	NullCharacter.TravelMap.LeFransua.t28.town.days.min = 6;
 	NullCharacter.TravelMap.LeFransua.t28.town.days.max = 10;
 	//------------------------------------------------------------
+	NullCharacter.TravelMap.LeFransua.t30 = "Maracaibo";
+	NullCharacter.TravelMap.LeFransua.t30.town = "Gibraltar";
+	NullCharacter.TravelMap.LeFransua.t30.town.days.min = 6;
+	NullCharacter.TravelMap.LeFransua.t30.town.days.max = 8;
+	//------------------------------------------------------------
 	// Необитаемые
 	//------------------------------------------------------------
 	NullCharacter.TravelMap.LeFransua.t24 = "Caiman";
@@ -4056,6 +4305,11 @@ void InitTravelMap()
 	NullCharacter.TravelMap.LeFransua.t26.town = "";
 	NullCharacter.TravelMap.LeFransua.t26.town.days.min = 5;
 	NullCharacter.TravelMap.LeFransua.t26.town.days.max = 8;
+	//------------------------------------------------------------
+	NullCharacter.TravelMap.LeFransua.t29 = "Aruba";
+	NullCharacter.TravelMap.LeFransua.t29.town = "";
+	NullCharacter.TravelMap.LeFransua.t29.town.days.min = 4;
+	NullCharacter.TravelMap.LeFransua.t29.town.days.max = 8;
 
 //////////////////////////////////////////////////////////////////////////////
 /////////////////////// CUBA PUERTOPRINCIPE //////////////////////////////////
@@ -4192,6 +4446,11 @@ void InitTravelMap()
 	NullCharacter.TravelMap.PuertoPrincipe.t28.town.days.min = 7;
 	NullCharacter.TravelMap.PuertoPrincipe.t28.town.days.max = 9;
 	//------------------------------------------------------------
+	NullCharacter.TravelMap.PuertoPrincipe.t30 = "Maracaibo";
+	NullCharacter.TravelMap.PuertoPrincipe.t30.town = "Gibraltar";
+	NullCharacter.TravelMap.PuertoPrincipe.t30.town.days.min = 10;
+	NullCharacter.TravelMap.PuertoPrincipe.t30.town.days.max = 19;
+	//------------------------------------------------------------
 	// Необитаемые
 	//------------------------------------------------------------
 	NullCharacter.TravelMap.PuertoPrincipe.t24 = "Caiman";
@@ -4208,6 +4467,11 @@ void InitTravelMap()
 	NullCharacter.TravelMap.PuertoPrincipe.t26.town = "";
 	NullCharacter.TravelMap.PuertoPrincipe.t26.town.days.min = 7;
 	NullCharacter.TravelMap.PuertoPrincipe.t26.town.days.max = 10;
+	//------------------------------------------------------------
+	NullCharacter.TravelMap.PuertoPrincipe.t29 = "Aruba";
+	NullCharacter.TravelMap.PuertoPrincipe.t29.town = "";
+	NullCharacter.TravelMap.PuertoPrincipe.t29.town.days.min = 9;
+	NullCharacter.TravelMap.PuertoPrincipe.t29.town.days.max = 12;
 
 //////////////////////////////////////////////////////////////////////////////
 ///////////////////////////// JAMAICA FORTORANGE /////////////////////////////
@@ -4344,6 +4608,11 @@ void InitTravelMap()
 	NullCharacter.TravelMap.FortOrange.t28.town.days.min = 3;
 	NullCharacter.TravelMap.FortOrange.t28.town.days.max = 5;
 	//------------------------------------------------------------
+	NullCharacter.TravelMap.FortOrange.t30 = "Maracaibo";
+	NullCharacter.TravelMap.FortOrange.t30.town = "Gibraltar";
+	NullCharacter.TravelMap.FortOrange.t30.town.days.min = 5;
+	NullCharacter.TravelMap.FortOrange.t30.town.days.max = 9;
+	//------------------------------------------------------------
 	// Необитаемые
 	//------------------------------------------------------------
 	NullCharacter.TravelMap.FortOrange.t25 = "Caiman";
@@ -4360,6 +4629,11 @@ void InitTravelMap()
 	NullCharacter.TravelMap.FortOrange.t27.town = "";
 	NullCharacter.TravelMap.FortOrange.t27.town.days.min = 7;
 	NullCharacter.TravelMap.FortOrange.t27.town.days.max = 12;
+	//------------------------------------------------------------
+	NullCharacter.TravelMap.FortOrange.t29 = "Aruba";
+	NullCharacter.TravelMap.FortOrange.t29.town = "";
+	NullCharacter.TravelMap.FortOrange.t29.town.days.min = 4;
+	NullCharacter.TravelMap.FortOrange.t29.town.days.max = 7;
 	
 //////////////////////////////////////////////////////////////////////////////
 ////////////////////// PROVIDENCE PROVIDENCIA ////////////////////////////////
@@ -4501,6 +4775,11 @@ void InitTravelMap()
 	NullCharacter.TravelMap.Providencia.t29.town.days.min = 3;
 	NullCharacter.TravelMap.Providencia.t29.town.days.max = 5;
 	//------------------------------------------------------------
+	NullCharacter.TravelMap.Providencia.t31 = "Maracaibo";
+	NullCharacter.TravelMap.Providencia.t31.town = "Gibraltar";
+	NullCharacter.TravelMap.Providencia.t31.town.days.min = 6;
+	NullCharacter.TravelMap.Providencia.t31.town.days.max = 9;
+	//------------------------------------------------------------
 	// Необитаемые
 	//------------------------------------------------------------
 	NullCharacter.TravelMap.Providencia.t25 = "Caiman";
@@ -4517,6 +4796,173 @@ void InitTravelMap()
 	NullCharacter.TravelMap.Providencia.t27.town = "";
 	NullCharacter.TravelMap.Providencia.t27.town.days.min = 9;
 	NullCharacter.TravelMap.Providencia.t27.town.days.max = 13;
+	//------------------------------------------------------------
+	NullCharacter.TravelMap.Providencia.t30 = "Aruba";
+	NullCharacter.TravelMap.Providencia.t30.town = "";
+	NullCharacter.TravelMap.Providencia.t30.town.days.min = 4;
+	NullCharacter.TravelMap.Providencia.t30.town.days.max = 7;
+
+//////////////////////////////////////////////////////////////////////////////
+//////////////////////////// MAIN GIBRALTAR //////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
+	NullCharacter.TravelMap.Gibraltar.t0 = "Cumana";
+	NullCharacter.TravelMap.Gibraltar.t0.town = "Cumana";
+	NullCharacter.TravelMap.Gibraltar.t0.town.days.min = 4;
+	NullCharacter.TravelMap.Gibraltar.t0.town.days.max = 5;
+	//------------------------------------------------------------
+	NullCharacter.TravelMap.Gibraltar.t1 = "Caracas";
+	NullCharacter.TravelMap.Gibraltar.t1.town = "Caracas";
+	NullCharacter.TravelMap.Gibraltar.t1.town.days.min = 2;
+	NullCharacter.TravelMap.Gibraltar.t1.town.days.max = 3;
+	//------------------------------------------------------------
+	NullCharacter.TravelMap.Gibraltar.t2 = "Trinidad";
+	NullCharacter.TravelMap.Gibraltar.t2.town = "PortSpein";
+	NullCharacter.TravelMap.Gibraltar.t2.town.days.min = 5;
+	NullCharacter.TravelMap.Gibraltar.t2.town.days.max = 7;
+	//------------------------------------------------------------
+	NullCharacter.TravelMap.Gibraltar.t3 = "Cartahena";
+	NullCharacter.TravelMap.Gibraltar.t3.town = "Cartahena";
+	NullCharacter.TravelMap.Gibraltar.t3.town.days.min = 2;
+	NullCharacter.TravelMap.Gibraltar.t3.town.days.max = 5;
+	//------------------------------------------------------------
+	NullCharacter.TravelMap.Gibraltar.t4 = "PortoBello";
+	NullCharacter.TravelMap.Gibraltar.t4.town = "PortoBello";
+	NullCharacter.TravelMap.Gibraltar.t4.town.days.min = 6;
+	NullCharacter.TravelMap.Gibraltar.t4.town.days.max = 10;
+	//------------------------------------------------------------
+	NullCharacter.TravelMap.Gibraltar.t5 = "SantaCatalina";
+	NullCharacter.TravelMap.Gibraltar.t5.town = "SantaCatalina";
+	NullCharacter.TravelMap.Gibraltar.t5.town.days.min = 8;
+	NullCharacter.TravelMap.Gibraltar.t5.town.days.max = 14;
+	//------------------------------------------------------------
+	NullCharacter.TravelMap.Gibraltar.t6 = "Jamaica";
+	NullCharacter.TravelMap.Gibraltar.t6.town = "PortRoyal";
+	NullCharacter.TravelMap.Gibraltar.t6.town.days.min = 5;
+	NullCharacter.TravelMap.Gibraltar.t6.town.days.max = 9;
+	//------------------------------------------------------------
+	NullCharacter.TravelMap.Gibraltar.t7 = "Cuba1";
+	NullCharacter.TravelMap.Gibraltar.t7.town = "Santiago";
+	NullCharacter.TravelMap.Gibraltar.t7.town.days.min = 10;
+	NullCharacter.TravelMap.Gibraltar.t7.town.days.max = 19;
+	//------------------------------------------------------------
+	NullCharacter.TravelMap.Gibraltar.t8 = "Cuba2";
+	NullCharacter.TravelMap.Gibraltar.t8.town = "Havana";
+	NullCharacter.TravelMap.Gibraltar.t8.town.days.min = 13;
+	NullCharacter.TravelMap.Gibraltar.t8.town.days.max = 20;
+	//------------------------------------------------------------
+	NullCharacter.TravelMap.Gibraltar.t9 = "Beliz";
+	NullCharacter.TravelMap.Gibraltar.t9.town = "Beliz";
+	NullCharacter.TravelMap.Gibraltar.t9.town.days.min = 10;
+	NullCharacter.TravelMap.Gibraltar.t9.town.days.max = 15;
+	//------------------------------------------------------------
+	NullCharacter.TravelMap.Gibraltar.t10 = "Bermudes";
+	NullCharacter.TravelMap.Gibraltar.t10.town = "Pirates";
+	NullCharacter.TravelMap.Gibraltar.t10.town.days.min = 9;
+	NullCharacter.TravelMap.Gibraltar.t10.town.days.max = 15;
+	//------------------------------------------------------------
+	NullCharacter.TravelMap.Gibraltar.t11 = "SentMartin";
+	NullCharacter.TravelMap.Gibraltar.t11.town = "Marigo";
+	NullCharacter.TravelMap.Gibraltar.t11.town.days.min = 8;
+	NullCharacter.TravelMap.Gibraltar.t11.town.days.max = 12;
+	//------------------------------------------------------------
+	NullCharacter.TravelMap.Gibraltar.t12 = "Nevis";
+	NullCharacter.TravelMap.Gibraltar.t12.town = "Charles";
+	NullCharacter.TravelMap.Gibraltar.t12.town.days.min = 5;
+	NullCharacter.TravelMap.Gibraltar.t12.town.days.max = 10;
+	//------------------------------------------------------------
+	NullCharacter.TravelMap.Gibraltar.t13 = "Antigua";
+	NullCharacter.TravelMap.Gibraltar.t13.town = "SentJons";
+	NullCharacter.TravelMap.Gibraltar.t13.town.days.min = 7;
+	NullCharacter.TravelMap.Gibraltar.t13.town.days.max = 10;
+	//------------------------------------------------------------
+	NullCharacter.TravelMap.Gibraltar.t14 = "Barbados";
+	NullCharacter.TravelMap.Gibraltar.t14.town = "Bridgetown";
+	NullCharacter.TravelMap.Gibraltar.t14.town.days.min = 5;
+	NullCharacter.TravelMap.Gibraltar.t14.town.days.max = 8;
+	//------------------------------------------------------------
+	NullCharacter.TravelMap.Gibraltar.t15 = "Curacao";
+	NullCharacter.TravelMap.Gibraltar.t15.town = "Villemstad";
+	NullCharacter.TravelMap.Gibraltar.t15.town.days.min = 1;
+	NullCharacter.TravelMap.Gibraltar.t15.town.days.max = 3;
+	//------------------------------------------------------------
+	NullCharacter.TravelMap.Gibraltar.t16 = "Martinique";
+	NullCharacter.TravelMap.Gibraltar.t16.town = "FortFrance";
+	NullCharacter.TravelMap.Gibraltar.t16.town.days.min = 5;
+	NullCharacter.TravelMap.Gibraltar.t16.town.days.max = 7;
+	//------------------------------------------------------------
+	NullCharacter.TravelMap.Gibraltar.t17 = "Guadeloupe";
+	NullCharacter.TravelMap.Gibraltar.t17.town = "BasTer";
+	NullCharacter.TravelMap.Gibraltar.t17.town.days.min = 5;
+	NullCharacter.TravelMap.Gibraltar.t17.town.days.max = 7;
+	//------------------------------------------------------------
+	NullCharacter.TravelMap.Gibraltar.t18 = "PuertoRico";
+	NullCharacter.TravelMap.Gibraltar.t18.town = "SanJuan";
+	NullCharacter.TravelMap.Gibraltar.t18.town.days.min = 7;
+	NullCharacter.TravelMap.Gibraltar.t18.town.days.max = 12;
+	//------------------------------------------------------------
+	NullCharacter.TravelMap.Gibraltar.t19 = "Hispaniola1";
+	NullCharacter.TravelMap.Gibraltar.t19.town = "SantoDomingo";
+	NullCharacter.TravelMap.Gibraltar.t19.town.days.min = 7;
+	NullCharacter.TravelMap.Gibraltar.t19.town.days.max = 12;
+	//------------------------------------------------------------
+	NullCharacter.TravelMap.Gibraltar.t20 = "Hispaniola2";
+	NullCharacter.TravelMap.Gibraltar.t20.town = "PortPax";
+	NullCharacter.TravelMap.Gibraltar.t20.town.days.min = 8;
+	NullCharacter.TravelMap.Gibraltar.t20.town.days.max = 13;
+	//------------------------------------------------------------
+	NullCharacter.TravelMap.Gibraltar.t21 = "Tortuga";
+	NullCharacter.TravelMap.Gibraltar.t21.town = "Tortuga";
+	NullCharacter.TravelMap.Gibraltar.t21.town.days.min = 9;
+	NullCharacter.TravelMap.Gibraltar.t21.town.days.max = 14;
+	//------------------------------------------------------------
+	// Сухопутные, пиратские
+	//------------------------------------------------------------
+	NullCharacter.TravelMap.Gibraltar.t22 = "Cuba1";
+	NullCharacter.TravelMap.Gibraltar.t22.town = "PuertoPrincipe";
+	NullCharacter.TravelMap.Gibraltar.t22.town.days.min = 10;
+	NullCharacter.TravelMap.Gibraltar.t22.town.days.max = 19;
+	//------------------------------------------------------------
+	NullCharacter.TravelMap.Gibraltar.t23 = "Hispaniola1";
+	NullCharacter.TravelMap.Gibraltar.t23.town = "LaVega";
+	NullCharacter.TravelMap.Gibraltar.t23.town.days.min = 7;
+	NullCharacter.TravelMap.Gibraltar.t23.town.days.max = 12;
+	//------------------------------------------------------------
+	NullCharacter.TravelMap.Gibraltar.t24 = "Martinique";
+	NullCharacter.TravelMap.Gibraltar.t24.town = "LeFransua";
+	NullCharacter.TravelMap.Gibraltar.t24.town.days.min = 5;
+	NullCharacter.TravelMap.Gibraltar.t24.town.days.max = 7;
+	//------------------------------------------------------------
+	NullCharacter.TravelMap.Gibraltar.t28 = "Jamaica";
+	NullCharacter.TravelMap.Gibraltar.t28.town = "FortOrange";
+	NullCharacter.TravelMap.Gibraltar.t28.town.days.min = 5;
+	NullCharacter.TravelMap.Gibraltar.t28.town.days.max = 9;
+	//------------------------------------------------------------
+	NullCharacter.TravelMap.Gibraltar.t29 = "Providence";
+	NullCharacter.TravelMap.Gibraltar.t29.town = "Providencia";
+	NullCharacter.TravelMap.Gibraltar.t29.town.days.min = 5;
+	NullCharacter.TravelMap.Gibraltar.t29.town.days.max = 9;
+	//------------------------------------------------------------
+	// Необитаемые
+	//------------------------------------------------------------
+	NullCharacter.TravelMap.Gibraltar.t25 = "Caiman";
+	NullCharacter.TravelMap.Gibraltar.t25.town = "";
+	NullCharacter.TravelMap.Gibraltar.t25.town.days.min = 10;
+	NullCharacter.TravelMap.Gibraltar.t25.town.days.max = 15;
+	//------------------------------------------------------------
+	NullCharacter.TravelMap.Gibraltar.t26 = "Dominica";
+	NullCharacter.TravelMap.Gibraltar.t26.town = "";
+	NullCharacter.TravelMap.Gibraltar.t26.town.days.min = 5;
+	NullCharacter.TravelMap.Gibraltar.t26.town.days.max = 8;
+	//------------------------------------------------------------
+	NullCharacter.TravelMap.Gibraltar.t27 = "Terks";
+	NullCharacter.TravelMap.Gibraltar.t27.town = "";
+	NullCharacter.TravelMap.Gibraltar.t27.town.days.min = 9;
+	NullCharacter.TravelMap.Gibraltar.t27.town.days.max = 14;
+	//------------------------------------------------------------
+	NullCharacter.TravelMap.Gibraltar.t30 = "Aruba";
+	NullCharacter.TravelMap.Gibraltar.t30.town = "";
+	NullCharacter.TravelMap.Gibraltar.t30.town.days.min = 2;
+	NullCharacter.TravelMap.Gibraltar.t30.town.days.max = 4;
 
 //////////////////////////////////////////////////////////////////////////////
 /////////////////////////////// PANAMA ///////////////////////////////////////
@@ -4781,6 +5227,7 @@ int GetCurrentLocationNation()
 int GetCityNation(string _sColony)
 {
     int iColony = FindColony(_sColony);
+	if (iColony < 0) return PIRATE; // > поселение без колонии (застава буканьеров) - считаем пиратским, как необитаемые
 	if (colonies[iColony].nation == "none")
 	{
 		return PIRATE;
@@ -4860,6 +5307,7 @@ string GetCityNameByAreal(string CurAreal)
 		case "Hispaniola2":		TargetLocation = "PortPax";			break;
 		case "Jamaica":			TargetLocation = "PortRoyal";		break;
 		case "Maracaibo":		TargetLocation = "Maracaibo";		break;
+		case "Gibraltar":		TargetLocation = "Gibraltar";		break;
 		case "Martinique":		TargetLocation = "FortFrance";		break;
 		case "SentMartin":		TargetLocation = "Marigo";			break;
 		case "Nevis":			TargetLocation = "Charles";			break;
@@ -4911,7 +5359,6 @@ string GetPortByCityName(string city)
 		case "Villemstad":		return "Villemstad_town";	break;
 		case "BasTer":			return "BasTer_town";		break;
 		case "LaVega":			return "LaVega_town";		break;
-		case "Bridgetown":		return "Bridgetown_town";	break;
 		case "SantoDomingo":	return "SantoDomingo_town";	break;
 		case "PortPax":			return "PortPax_town";		break;
 		case "Pirates":			return "Pirates_town";		break;
@@ -4931,6 +5378,7 @@ string GetPortByCityName(string city)
 		case "SantaCatalina":	return "SantaCatalina_town";break;
 		case "Beliz":			return "Beliz_town";		break;
 		case "Providencia":		return "Providencia_town";	break;
+		case "Gibraltar":		return "Gibraltar_town";	break;
 	}
 	return "";
 }
@@ -5056,6 +5504,7 @@ string GetIslandNameByCity(string city)
 		case "Panama":			return "Mein";			break;
 		case "Cartahena":		return "Mein";			break;
 		case "Maracaibo":		return "Mein";			break;
+		case "Gibraltar":		return "Mein";			break;
 		case "Caracas":			return "Mein";			break;
 		case "Cumana":			return "Mein";			break;
 		case "SantaCatalina":	return "Mein";			break;
@@ -5066,7 +5515,7 @@ string GetIslandNameByCity(string city)
 	return "";
 }
 
-// выбор куда идти  по острову даем город (главный город острова с портом)
+// выбор куда идти по острову даем город (главный город острова с портом)
 string GetCityNameByIsland(string CurIslandId)
 {
 	switch (CurIslandId)
@@ -5116,10 +5565,13 @@ int GetCharacterCurrentIsland(ref _refCharacter)
 string GetCharacterCurrentIslandId(ref _refCharacter)
 {
 	int curLocNum = FindLocation(_refCharacter.location);
-	if (curLocNum < 0) return -1;
+	if (curLocNum < 0) return "";
 	int CurIdx = GetIslandIdxByLocationIdx(curLocNum);
-	//TODO убрать после отлова возникновения причины ошибки islands.c(15): invalid index -1 [size:31] characters\TravelMap.c(5043): Using reference variable without initializing
-	if (CurIdx < 0) trace("ERROR: invalid index -1. _refCharacter.location = '" + _refCharacter.location + "'");
+	if (CurIdx < 0)
+	{
+		trace("ERROR: invalid index -1. _refCharacter.location = '" + _refCharacter.location + "'");
+		return "";
+	}
 	ref CurIsland = GetIslandByIndex(CurIdx);
 	return CurIsland.id;
 }
@@ -5203,12 +5655,14 @@ string GetArealByCityName(string sCity)
 		case "Panama":			return "Panama";		break;
 		case "Cartahena":		return "Cartahena";		break;
 		case "Maracaibo":		return "Maracaibo";		break;
+		case "Gibraltar":		return "Maracaibo";		break;
 		case "Caracas":			return "Caracas";		break;
 		case "Cumana":			return "Cumana";		break;
 		case "SantaCatalina":	return "SantaCatalina";	break;
 		case "Beliz":			return "Beliz";			break;
 		case "Providencia":		return "Providence";	break;
 		case "Tenotchitlan":	return "Tenotchitlan";	break;
+		case "BucaneerOutpost": return "Tortuga"; break;
 	}
 	
 	return "";
@@ -5242,12 +5696,14 @@ string GetIslandByCityName(string sCity) // имена острова по го�
 		case "Panama":			return "Mein";			break;
 		case "Cartahena":		return "Mein";			break;
 		case "Maracaibo":		return "Mein";			break;
+		case "Gibraltar":		return "Mein";			break;
 		case "Caracas":			return "Mein";			break;
 		case "Cumana":			return "Mein";			break;
 		case "SantaCatalina":	return "Mein";			break;
 		case "Beliz":			return "Mein";			break;
 		case "Providencia":		return "Providence";	break;
 		case "Tenotchitlan":	return "Mein";			break;
+		case "BucaneerOutpost": return "Tortuga"; break;
 	}
 	
 	return "";
@@ -5268,6 +5724,7 @@ string GetRealmByCityName(string city)
 		case "LeFransua":		return "LeFransua";		break;
 		case "LaVega":			return "LaVega";		break;
 		case "FortOrange":		return "FortOrange";	break;
+		case "BucaneerOutpost": return "BucaneerOutpost"; break;
 	}
 	return GetArealByCityName(city);
 }

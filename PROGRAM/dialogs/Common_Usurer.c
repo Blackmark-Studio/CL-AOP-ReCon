@@ -18,6 +18,9 @@ void ProcessDialogEvent()
 	iMonth = environment.date.month;
 	string lastspeak_date = iday + " " + iMonth;
 
+	string qST = pchar.questTemp.Slavetrader;
+	bool bST = CheckAttribute(pchar, "questTemp.Slavetrader.UsurerId") && pchar.questTemp.Slavetrader.UsurerId == npchar.id;
+
 	NPC_Area = Npchar.City;
 
 	// вызов диалога по городам -->
@@ -61,7 +64,7 @@ void ProcessDialogEvent()
 		case "First time":
 			if (LAi_group_GetPlayerAlarm() > 0)
 			{
-				if (pchar.questTemp.Slavetrader == "After_enterSoldiers" && pchar.questTemp.Slavetrader.UsurerId == npchar.id)
+				if (qST == "After_enterSoldiers" && bST)
 				{
 					dialog.text = StringFromKey("Common_Usurer_1", pchar.name);
 					link.l1 = StringFromKey("Common_Usurer_2");
@@ -141,7 +144,7 @@ void ProcessDialogEvent()
 			//<--пиратка, квест №5, заглушка на возврат бабла
 
 			//-->работорговец
-			if (pchar.questTemp.Slavetrader == "canTakeQuest" && pchar.questTemp.Slavetrader.UsurerId == npchar.id)
+			if (qST == "canTakeQuest" && bST)
 			{
 				dialog.Text = StringFromKey("Common_Usurer_31", pchar);
 				Link.l1 = StringFromKey("Common_Usurer_32");
@@ -150,21 +153,21 @@ void ProcessDialogEvent()
 				break;
 			}
 
-			if (pchar.questTemp.Slavetrader == "TakeShoreCap_end" && pchar.questTemp.Slavetrader.UsurerId == npchar.id)
+			if (qST == "TakeShoreCap_end" && bST)
 			{
 				dialog.Text = "...";
 				Link.l1 = StringFromKey("Common_Usurer_33", pchar);
 				Link.l1.go = "Slaveshore_5";
 				break;
 			}
-			if (pchar.questTemp.Slavetrader == "Win_HavanaFort" && pchar.questTemp.Slavetrader.UsurerId == npchar.id)
+			if (qST == "Win_HavanaFort" && bST)
 			{
 				dialog.Text = StringFromKey("Common_Usurer_34");
 				Link.l1 = StringFromKey("Common_Usurer_35", pchar);
 				Link.l1.go = "Win_Havana_Fort";
 				break;
 			}
-			if (pchar.questTemp.Slavetrader == "Havana_seekslaves" && pchar.questTemp.Slavetrader.UsurerId == npchar.id)
+			if (qST == "Havana_seekslaves" && bST)
 			{
 				dialog.Text = StringFromKey("Common_Usurer_36");
 				if (GetSquadronGoods(Pchar, GOOD_SLAVES) >= 5000)
@@ -180,7 +183,7 @@ void ProcessDialogEvent()
 				break;
 			}
 
-			if (pchar.questTemp.Slavetrader == "End_quest_bad" && pchar.questTemp.Slavetrader.UsurerId == npchar.id)
+			if (qST == "End_quest_bad" && bST)
 			{
 				// evganat - можно вставить отношение сюда
 				IncreaseUsurerDisposition(-20);
@@ -191,7 +194,7 @@ void ProcessDialogEvent()
 				break;
 			}
 
-			if (pchar.questTemp.Slavetrader == "wait_6" && GetQuestPastDayParam("pchar.questTemp.Slavetrader_wait_6") > 6 && pchar.questTemp.Slavetrader.UsurerId == npchar.id)
+			if (qST == "wait_6" && GetQuestPastDayParam("pchar.questTemp.Slavetrader_wait_6") > 6 && bST)
 			{
 				dialog.Text = StringFromKey("Common_Usurer_41", GetFullName(npchar));
 				link.l1 = StringFromKey("Common_Usurer_42");
@@ -202,7 +205,7 @@ void ProcessDialogEvent()
 
 			//-->> дача квеста найти потерянный драгоценный камень
 			//HardCoffee пример использования нового idRand. В качестве уникального идентификатора взят id персонажа, с дополнительной припиской "gem" - то есть, квест на поиск камня
-			if (idRand(npchar.id + "gem", 1) && pchar.questTemp.different == "free" && !CheckAttribute(npchar, "quest.usurersJewel") && GetNpcQuestPastDayWOInit(npchar, "usurersJewel") > 7 && !CheckAttribute(pchar, "questTemp.different.SeekUsurersJewel") && !CheckAttrValue(npchar, "City", "Charles") && !CheckAttribute(npchar, "quest.slave"))
+			if (idRand(npchar.id + "gem", 1) && pchar.questTemp.different == "free" && !CheckAttribute(npchar, "quest.usurersJewel") && GetNpcQuestPastDayWOInit(npchar, "usurersJewel") > 7 && !CheckAttribute(pchar, "questTemp.different.SeekUsurersJewel") && !CheckAttrValue(npchar, "City", "Charles") && !CheckAttrValue(npchar, "City", "LaVega") && !CheckAttribute(npchar, "quest.slave"))
 			{
 				dialog.text = StringFromKey("Common_Usurer_43");
 				link.l1 = StringFromKey("Common_Usurer_44");
@@ -322,7 +325,7 @@ void ProcessDialogEvent()
 				link.l6.go = "usurersJewel_R1";
 			}
 			//<<-- сдача квеста найти потерянный драгоценный камень
-			if (CheckAttribute(pchar, "GenQuest.EncGirl") && pchar.GenQuest.EncGirl == "toLoverFather" && pchar.GenQuest.EncGirl.LoverFather == "usurer_keeper")
+			if (CheckAttribute(pchar, "GenQuest.EncGirl") && pchar.GenQuest.EncGirl == "toLoverFather" && pchar.GenQuest.EncGirl.LoverFather == "usurer_keeper" && pchar.GenQuest.EncGirl.LoverCity == npchar.city)
 			{
 				link.l10 = StringFromKey("Common_Usurer_70", pchar);
 				link.l10.go = "EncGirl_4";
@@ -347,116 +350,116 @@ void ProcessDialogEvent()
 			//<-- семейная реликвия
 
 			//-->работорговец
-			if (pchar.questTemp.Slavetrader == "Seek_slaves" && pchar.questTemp.Slavetrader.UsurerId == npchar.id)
+			if (qST == "Seek_slaves" && bST)
 			{
 				link.l8 = StringFromKey("Common_Usurer_74");
 				link.l8.go = "Checkslaves";
 				break;
 			}
-			if (pchar.questTemp.Slavetrader == "goaway" && pchar.questTemp.Slavetrader.UsurerId == npchar.id)
+			if (qST == "goaway" && bST)
 			{
 				link.l8 = StringFromKey("Common_Usurer_75", NPChar.name);
 				link.l8.go = "Takeslaves_4_lose";
 				break;
 			}
-			if (pchar.questTemp.Slavetrader == "goaway_pinas" && pchar.questTemp.Slavetrader.UsurerId == npchar.id)
+			if (qST == "goaway_pinas" && bST)
 			{
 				link.l8 = StringFromKey("Common_Usurer_76", NPChar.name);
 				link.l8.go = "Pinas_lose";
 				break;
 			}
-			if (pchar.questTemp.Slavetrader == "died" && pchar.questTemp.Slavetrader.UsurerId == npchar.id)
+			if (qST == "died" && bST)
 			{
 				link.l8 = StringFromKey("Common_Usurer_77", NPChar.name);
 				link.l8.go = "Takeslaves_4_win";
 				break;
 			}
-			if (pchar.questTemp.Slavetrader == "wait" && GetQuestPastDayParam("pchar.questTemp.Slavetrader_wait") > 20 && pchar.questTemp.Slavetrader.UsurerId == npchar.id)
+			if (qST == "wait" && GetQuestPastDayParam("pchar.questTemp.Slavetrader_wait") > 20 && bST)
 			{
 				link.l8 = StringFromKey("Common_Usurer_78", pchar);
 				link.l8.go = "Takeslaves_3";
 				break;
 			}
-			if (pchar.questTemp.Slavetrader == "waitship" && pchar.questTemp.Slavetrader.UsurerId == npchar.id)
+			if (qST == "waitship" && bST)
 			{
 				link.l8 = StringFromKey("Common_Usurer_79", pchar);
 				link.l8.go = "Takeslaves_3";
 				break;
 			}
-			if (pchar.questTemp.Slavetrader == "wait_1" && GetQuestPastDayParam("pchar.questTemp.Slavetrader_wait_1") > 30 && pchar.questTemp.Slavetrader.UsurerId == npchar.id)
+			if (qST == "wait_1" && GetQuestPastDayParam("pchar.questTemp.Slavetrader_wait_1") > 30 && bST)
 			{
 				link.l8 = StringFromKey("Common_Usurer_80", npchar.name);
 				link.l8.go = "EscapeSlave";
 				break;
 			}
-			if (pchar.questTemp.Slavetrader == "escapeslave_win" && pchar.questTemp.Slavetrader.UsurerId == npchar.id)
+			if (qST == "escapeslave_win" && bST)
 			{
 				link.l8 = StringFromKey("Common_Usurer_81");
 				link.l8.go = "Escape_slaves_win";
 				break;
 			}
-			if (pchar.questTemp.Slavetrader == "wait_2" && GetQuestPastDayParam("pchar.questTemp.Slavetrader_wait_2") > 30 && pchar.questTemp.Slavetrader.UsurerId == npchar.id)
+			if (qST == "wait_2" && GetQuestPastDayParam("pchar.questTemp.Slavetrader_wait_2") > 30 && bST)
 			{
 				link.l8 = StringFromKey("Common_Usurer_82", pchar, npchar.name);
 				link.l8.go = "Slaveshore";
 				break;
 			}
 
-			if (pchar.questTemp.Slavetrader == "goodbye" && pchar.questTemp.Slavetrader.UsurerId == npchar.id)
+			if (qST == "goodbye" && bST)
 			{
 				link.l8 = StringFromKey("Common_Usurer_83", npchar.name);
 				link.l8.go = "Brig_lose";
 				break;
 			}
-			if (pchar.questTemp.Slavetrader == "goodbye_1" && pchar.questTemp.Slavetrader.UsurerId == npchar.id)
+			if (qST == "goodbye_1" && bST)
 			{
 				link.l8 = StringFromKey("Common_Usurer_84", pchar, npchar.name);
 				link.l8.go = "Letter_lose";
 				break;
 			}
-			if (pchar.questTemp.Slavetrader == "winbrig" && pchar.questTemp.Slavetrader.UsurerId == npchar.id)
+			if (qST == "winbrig" && bST)
 			{
 				link.l8 = StringFromKey("Common_Usurer_85", npchar.name);
 				link.l8.go = "Brig_win";
 				break;
 			}
-			if (pchar.questTemp.Slavetrader == "wait_3" && GetQuestPastDayParam("pchar.questTemp.Slavetrader_wait_3") > 30 && pchar.questTemp.Slavetrader.UsurerId == npchar.id)
+			if (qST == "wait_3" && GetQuestPastDayParam("pchar.questTemp.Slavetrader_wait_3") > 30 && bST)
 			{
 				link.l8 = StringFromKey("Common_Usurer_86", npchar.name);
 				link.l8.go = "SlaveGalleon";
 				break;
 			}
-			if (pchar.questTemp.Slavetrader == "wingalleon" && pchar.questTemp.Slavetrader.UsurerId == npchar.id)
+			if (qST == "wingalleon" && bST)
 			{
 				link.l8 = StringFromKey("Common_Usurer_87", npchar.name);
 				link.l8.go = "Wingalleon";
 				break;
 			}
-			if (pchar.questTemp.Slavetrader == "lostgalleon" && pchar.questTemp.Slavetrader.UsurerId == npchar.id)
+			if (qST == "lostgalleon" && bST)
 			{
 				link.l8 = StringFromKey("Common_Usurer_88", pchar, npchar.name);
 				link.l8.go = "Lostgalleon";
 				break;
 			}
-			if (pchar.questTemp.Slavetrader == "wait_4" && GetQuestPastDayParam("pchar.questTemp.Slavetrader_wait_4") > 4 && pchar.questTemp.Slavetrader.UsurerId == npchar.id)
+			if (qST == "wait_4" && GetQuestPastDayParam("pchar.questTemp.Slavetrader_wait_4") > 4 && bST)
 			{
 				link.l8 = StringFromKey("Common_Usurer_89", pchar, npchar.name);
 				link.l8.go = "FindRat";
 				break;
 			}
-			if (pchar.questTemp.Slavetrader == "wincorvette" && pchar.questTemp.Slavetrader.UsurerId == npchar.id)
+			if (qST == "wincorvette" && bST)
 			{
 				link.l8 = StringFromKey("Common_Usurer_90", npchar.name);
 				link.l8.go = "Wincorvette";
 				break;
 			}
-			if (pchar.questTemp.Slavetrader == "lostcorvette" && pchar.questTemp.Slavetrader.UsurerId == npchar.id)
+			if (qST == "lostcorvette" && bST)
 			{
 				link.l8 = StringFromKey("Common_Usurer_91", pchar, npchar.name);
 				link.l8.go = "lostcorvette";
 				break;
 			}
-			if (pchar.questTemp.Slavetrader == "wait_5" && GetQuestPastDayParam("pchar.questTemp.Slavetrader_wait_5") > 30 && pchar.questTemp.Slavetrader.UsurerId == npchar.id)
+			if (qST == "wait_5" && GetQuestPastDayParam("pchar.questTemp.Slavetrader_wait_5") > 30 && bST)
 			{
 				link.l8 = StringFromKey("Common_Usurer_92", npchar.name);
 				link.l8.go = "Havana_fort";
@@ -929,9 +932,10 @@ void ProcessDialogEvent()
 							pchar.GenQuest.LoanChest.TargetIdx = iNum;
 							pchar.GenQuest.LoanChest.Time = 20 + rand(15);
 							sTemp = "";
-							if (npchar.city != chr.city)
+							// FreeStores > остров цели: у колонии как было, у свободного магазина - с него самого
+							if (npchar.city != chr.city && GetTraderIslandName(chr) != "")
 							{
-								sTemp = StringFromKey("Common_Usurer_205", XI_ConvertString(GetIslandNameByCity(chr.city) + "Pre"));
+								sTemp = StringFromKey("Common_Usurer_205", XI_ConvertString(GetTraderIslandName(chr) + "Pre"));
 							}
 							dialog.text = StringFromKey("Common_Usurer_206", pchar.GenQuest.LoanChest.Chest, XI_ConvertString("Colony" + chr.city + "Acc"), sTemp, GetFullName(chr), GetWorkTypeOfMan(chr, ""), FindMoneyString(sti(pchar.GenQuest.LoanChest.Money)), FindDaysString(sti(pchar.GenQuest.LoanChest.Time)));
 							link.l1 = StringFromKey("Common_Usurer_207", pchar);
@@ -1120,9 +1124,10 @@ void ProcessDialogEvent()
 			TraderHunterOnMap();
 			chr = &Characters[sti(pchar.GenQuest.LoanChest.TargetIdx)];
 			sTemp = "";
-			if (npchar.city != chr.city)
+			// FreeStores > остров цели, как в брифинге
+			if (npchar.city != chr.city && GetTraderIslandName(chr) != "")
 			{
-				sTemp = StringFromKey("Common_Usurer_238", XI_ConvertString(GetIslandNameByCity(chr.city) + "Pre"));
+				sTemp = StringFromKey("Common_Usurer_238", XI_ConvertString(GetTraderIslandName(chr) + "Pre"));
 			}
 			ReOpenQuestHeader("Gen_LoanTakeChest");
 			AddQuestRecord("Gen_LoanTakeChest", "1");
@@ -1618,6 +1623,7 @@ void ProcessDialogEvent()
 			RemoveLandQuestmark_Main(npchar, "CapBloodLine");
 			AddLandQuestmark_Main(CharacterFromID("Ogl"), "CapBloodLine");
 			QuestPointerDelLocEx("Bridgetown_town", "reload", "reload8_back", "OglQuest");
+			QuestPointerToLoc("Bridgetown_plantation", "reload", "houseS2");
 		break;
 
 		case "CapBloodUsurer_4":
@@ -1644,7 +1650,7 @@ void ProcessDialogEvent()
 		case "CapBloodUsurer_6":
 			dialog.text = StringFromKey("Common_Usurer_360");
 			link.l1 = StringFromKey("Common_Usurer_361");
-			link.l1.go = "CapBloodUsurer_7";
+			link.l1.go = "CapBloodUsurer_6_1";
 			link.l2 = StringFromKey("Common_Usurer_362");
 			link.l2.go = "Exit";
 			NextDiag.TempNode = "First time";
@@ -1654,6 +1660,12 @@ void ProcessDialogEvent()
 			QuestPointerDelLoc("Bridgetown_town", "reload", "reload8_back");
 		break;
 
+		case "CapBloodUsurer_6_1":
+			dialog.text = StringFromKey("Common_Usurer_362_1");
+			link.l1 = StringFromKey("Common_Usurer_362_2");
+			link.l1.go = "CapBloodUsurer_7";
+		break;
+
 		case "CapBloodUsurer_7":
 			AddLandQuestmark_Main(characterFromID("Bridgetown_tavernkeeper"), "CapBloodLine");
 			QuestPointerToLocEx("Bridgetown_town", "reload", "reload4_back", "BloodLine_UsurerQuest");
@@ -1661,6 +1673,9 @@ void ProcessDialogEvent()
 			PChar.questTemp.CapBloodLine.QuestRaff = true;
 			NextDiag.CurrentNode = "CapBloodUsurer_8";
 			DialogExit();
+
+			pchar.quest.CapBloodLine_UsurerQuest_MapEnter.win_condition.l1 = "MapEnter";
+			pchar.quest.CapBloodLine_UsurerQuest_MapEnter.function = "CapBloodLine_UsurerQuest_MapEnter";
 		break;
 
 		case "CapBloodUsurer_8":
@@ -1675,6 +1690,7 @@ void ProcessDialogEvent()
 				CloseQuestHeader("UsurerQuest");
 				RemoveLandQuestmark_Main(npchar, "CapBloodLine");
 				QuestPointerDelLoc("Bridgetown_town", "reload", "reload8_back");
+				DeleteQuestCondition("CapBloodLine_UsurerQuest_MapEnter");
 
 				if (CapBloodLine_CheckMoneyForNettl())
 					QuestPointerToLocEx("Bridgetown_town", "reload", "reload4_back", "CapBloodLine_q2");
@@ -1726,6 +1742,7 @@ void ProcessDialogEvent()
 			DeleteAttribute(npchar, "quest.slave");
 			RemoveLandQuestmark_Main(npchar, "Slavetrader");
 			RemoveMapQuestMark(npchar.city + "_town", "Slavetrader");
+			Slavetrader_CleanupAll();
 		break;
 
 		case "GiveTaskSlave_2":
@@ -1836,6 +1853,7 @@ void ProcessDialogEvent()
 			pchar.questTemp.Slavetrader = "End_quest";//конец квеста, зачищать атрибут нельзя
 			RemoveLandQuestmark_Main(npchar, "Slavetrader");
 			RemoveMapQuestMark(npchar.city + "_town", "Slavetrader");
+			Slavetrader_CleanupAll();
 		break;
 
 		case "Takeslaves_6":
@@ -1888,6 +1906,7 @@ void ProcessDialogEvent()
 			pchar.questTemp.Slavetrader = "End_quest";
 			RemoveLandQuestmark_Main(npchar, "Slavetrader");
 			RemoveMapQuestMark(npchar.city + "_town", "Slavetrader");
+			Slavetrader_CleanupAll();
 		break;
 
 		case "Takeslaves_5_win":
@@ -1977,6 +1996,7 @@ void ProcessDialogEvent()
 			pchar.questTemp.Slavetrader = "End_quest";
 			RemoveLandQuestmark_Main(npchar, "Slavetrader");
 			RemoveMapQuestMark(npchar.city + "_town", "Slavetrader");
+			Slavetrader_CleanupAll();
 		break;
 
 		case "Takeslaves_6_win":
@@ -2098,6 +2118,7 @@ void ProcessDialogEvent()
 			pchar.questTemp.Slavetrader = "End_quest";
 			RemoveLandQuestmark_Main(npchar, "Slavetrader");
 			RemoveMapQuestMark(npchar.city + "_town", "Slavetrader");
+			Slavetrader_CleanupAll();
 		break;
 
 		case "EscapeSlave_yes":
@@ -2151,7 +2172,7 @@ void ProcessDialogEvent()
 				AddQuestUserData("Slavetrader", "sMoney", makeint(iSlaveMoney));
 				break;
 			}
-			if (amount >= 100 && amount < 600)
+			if (amount > 100 && amount < 600)
 			{
 				// evganat - можно вставить отношение сюда
 				IncreaseUsurerDisposition(3);
@@ -2305,6 +2326,7 @@ void ProcessDialogEvent()
 			pchar.questTemp.Slavetrader = "End_quest";
 			RemoveLandQuestmark_Main(npchar, "Slavetrader");
 			RemoveMapQuestMark(npchar.city + "_town", "Slavetrader");
+			Slavetrader_CleanupAll();
 		break;
 
 		case "Letter_lose":
@@ -2317,6 +2339,7 @@ void ProcessDialogEvent()
 			pchar.questTemp.Slavetrader = "End_quest";
 			RemoveLandQuestmark_Main(npchar, "Slavetrader");
 			RemoveMapQuestMark(npchar.city + "_town", "Slavetrader");
+			Slavetrader_CleanupAll();
 		break;
 
 		case "Brig_win":
@@ -2434,6 +2457,7 @@ void ProcessDialogEvent()
 			pchar.questTemp.Slavetrader = "End_quest";
 			RemoveLandQuestmark_Main(npchar, "Slavetrader");
 			RemoveMapQuestMark(npchar.city + "_town", "Slavetrader");
+			Slavetrader_CleanupAll();
 		break;
 
 		case "Wingalleon":
@@ -2462,6 +2486,7 @@ void ProcessDialogEvent()
 			pchar.questTemp.Slavetrader = "End_quest";
 			RemoveLandQuestmark_Main(npchar, "Slavetrader");
 			RemoveMapQuestMark(npchar.city + "_town", "Slavetrader");
+			Slavetrader_CleanupAll();
 			DialogExit();
 		break;
 
@@ -2487,6 +2512,7 @@ void ProcessDialogEvent()
 			pchar.questTemp.Slavetrader = "End_quest";
 			RemoveLandQuestmark_Main(npchar, "Slavetrader");
 			RemoveMapQuestMark(npchar.city + "_town", "Slavetrader");
+			Slavetrader_CleanupAll();
 		break;
 
 		case "Wingalleon_yes":
@@ -2726,6 +2752,7 @@ void ProcessDialogEvent()
 			pchar.questTemp.Slavetrader = "End_quest";
 			RemoveLandQuestmark_Main(npchar, "Slavetrader");
 			RemoveMapQuestMark(npchar.city + "_town", "Slavetrader");
+			Slavetrader_CleanupAll();
 		break;
 
 		case "Havana_fort_3":
@@ -2886,6 +2913,8 @@ void ProcessDialogEvent()
 			pchar.questTemp.Slavetrader = "wait1";
 			RemoveLandQuestmark_Main(npchar, "Slavetrader");
 			RemoveMapQuestMark(npchar.city + "_town", "Slavetrader");
+			pchar.quest.Slavetrader_UsurerEscape.over = "yes";
+			Slavetrader_CleanupAll();
 			Achievment_Set(ACH_Rabotorgovets);
 		break;
 
@@ -3313,6 +3342,8 @@ int findChestMan(ref NPChar)
 	int storeArray[TOTAL_CHARACTERS];
 	int howStore = 0;
 	string sTemp, sCity;
+	string sLastCity = "";
+	bool bColony = false;
 
 	for (n = 2; n < MAX_CHARACTERS; n++)
 	{
@@ -3320,6 +3351,14 @@ int findChestMan(ref NPChar)
 		sTemp = ch.id;
 		if (CheckAttribute(ch, "City") && ch.id != "Jackman") sCity = ch.City;
 		else continue;
+		// FreeStores > свободный NPC в цели годится только с атрибутом QuestsAvailable
+		if (sCity != sLastCity)
+		{
+			sLastCity = sCity;
+			bColony = FindColony(sCity) >= 0;
+		}
+		if (!bColony && !IsNPCQuestsAllowed(ch)) continue;
+		if (strlen(sTemp) < strlen(sCity) + 2) continue;
 		sTemp = strcut(sTemp, strlen(sCity) + 1, strlen(sTemp) - 1);
 		// магазины
 		if (sTemp == "trader")

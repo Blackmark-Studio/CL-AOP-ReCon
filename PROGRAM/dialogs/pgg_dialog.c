@@ -690,9 +690,12 @@ void ProcessDialogEvent()
 				PChar.GenQuest.PGG_Quest.Island = GetRandomIslandExcept("Panama,Pearl,Tenotchitlan");
 			}
 			PChar.GenQuest.PGG_Quest.Island.Shore = GetIslandRandomFreeShoreId(PChar.GenQuest.PGG_Quest.Island);
-			while(PChar.GenQuest.PGG_Quest.Island.Shore == "")
+			n = 0; // KZ > счётчик попыток: раньше цикл мог зависнуть навечно, а перебор не исключал текущий остров
+			while(PChar.GenQuest.PGG_Quest.Island.Shore == "" && n < 80)
 			{
+				n++;
 				PChar.GenQuest.PGG_Quest.Island = GetRandomIslandExcept("Panama,Pearl,Tenotchitlan");
+				if (PChar.GenQuest.PGG_Quest.Island == Islands[GetCharacterCurrentIsland(pchar)].id) continue;
 				PChar.GenQuest.PGG_Quest.Island.Shore = GetIslandRandomFreeShoreId(PChar.GenQuest.PGG_Quest.Island);
 				if (sti(PChar.GenQuest.PGG_Quest.Template))
 				{
@@ -702,6 +705,12 @@ void ProcessDialogEvent()
 				{
 					if (!isLocationFreeForQuests(PChar.GenQuest.PGG_Quest.Island.Shore)) PChar.GenQuest.PGG_Quest.Island.Shore = "";
 				}
+			}
+			if (PChar.GenQuest.PGG_Quest.Island.Shore == "")
+			{
+				// KZ > свободной бухты не нашли за все попытки - берём любую без проверки занятости
+				PChar.GenQuest.PGG_Quest.Island = GetRandomIslandExcept("Panama,Pearl,Tenotchitlan");
+				PChar.GenQuest.PGG_Quest.Island.Shore = GetIslandRandomFreeShoreId(PChar.GenQuest.PGG_Quest.Island);
 			}
 			//Rosarak. Город берём по ареалу бухты (может быть и "none")
 			PChar.GenQuest.PGG_Quest.Island.Town = GetCityNameByLocation(&locations[FindLocation(PChar.GenQuest.PGG_Quest.Island.Shore)]);
@@ -921,11 +930,11 @@ void ProcessDialogEvent()
 
 			if (sti(PChar.GenQuest.PGG_Quest.Template))
 			{
-				sTmp += StringFromKey("pgg_dialog_332", sLoc, GetConvertStr(PChar.GenQuest.PGG_Quest.Island.Shore, "LocLables.txt"));
+				sTmp += StringFromKey("pgg_dialog_332", sLoc, XI_ConvertString(PChar.GenQuest.PGG_Quest.Island.Shore + "Gen"));
 			}
 			else
 			{
-				sTmp += StringFromKey("pgg_dialog_333", sLoc, GetConvertStr(PChar.GenQuest.PGG_Quest.Island.Shore, "LocLables.txt"));
+				sTmp += StringFromKey("pgg_dialog_333", sLoc, XI_ConvertString(PChar.GenQuest.PGG_Quest.Island.Shore + "Gen"));
 			}
 
 			Dialog.Text = sTmp;
@@ -1371,8 +1380,12 @@ void ProcessDialogEvent()
 			//что б не били сопровождение.
 			for (i = 1; i < sti(PChar.GenQuest.PGG_Quest.GrpID.Qty); i++)
 			{
-				sld = CharacterFromID("pirate_" + i);
-				LAi_SetImmortal(sld, true);
+				// KZ > правильные id матросов ПГГ
+				if (GetCharacterIndex("PGGSailor_" + i) != -1)
+				{
+					sld = CharacterFromID("PGGSailor_" + i);
+					LAi_SetImmortal(sld, true);
+				}
 			}
 
 			NextDiag.CurrentNode = "Quest_1_Failed";
@@ -1422,7 +1435,6 @@ void ProcessDialogEvent()
 			Log_TestInfo("go to loc " + sTmp + " " + NPChar.location);
 			NPChar.location = PChar.location;
 			if (PChar.location != "Ship_Deck") sTmp = "reload1";
-			if (PChar.location != "Ship_Deck")sTmp = "reload1";
 
 			PChar.questTemp.Chr2Remove = NPChar.id;
 			LAi_ActorRunToLocator(NPChar, "reload", sTmp, "RemoveCharacterFromLocation", -1.0);
@@ -1471,8 +1483,12 @@ void ProcessDialogEvent()
 			//что б не били сопровождение.
 			for (i = 1; i < sti(PChar.GenQuest.PGG_Quest.GrpID.Qty); i++)
 			{
-				sld = CharacterFromID("pirate_" + i);
-				LAi_SetImmortal(sld, true);
+				// KZ > правильные id матросов ПГГ
+				if (GetCharacterIndex("PGGSailor_" + i) != -1)
+				{
+					sld = CharacterFromID("PGGSailor_" + i);
+					LAi_SetImmortal(sld, true);
+				}
 			}
 
 			LAi_SetImmortal(NPChar, true);

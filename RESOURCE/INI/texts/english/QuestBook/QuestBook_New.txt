@@ -183,7 +183,7 @@ Matthias Beck says that Lumbersaw serves the Dutch West India Company quite well
 
 PDM_Lesopilka.6
 {
-I spoke with my friend Lumbersaw. He told me something interesting. A heavy galleon under the English flag is anchored off the island of Dominica. Its rigging and hull are damaged. If no one beats me to it, I can seize its treasures!
+I spoke with my friend Lumbersaw. He told me something interesting. A @<sShip> under the English flag is anchored off the island of Dominica. Its rigging and hull are damaged. If no one beats me to it, I can seize its treasures!
 }
 
 PDM_Lesopilka.6.1
@@ -380,7 +380,7 @@ Andre_Abel_Quest {Escort of the fluyt "Orion"}
 Andre_Abel_Quest.1
 {
 In the tavern of Fort-de-France, I met a man named Andre Abel. He is the captain of the fluyt "Orion". Andre asked me to escort his ship to Port-au-Prince, and I agreed.
-Andre will be waiting in the port, and for now I need to finish my business in the city.
+Andre will be waiting in the tavern, and for now I need to finish my business in the city.
 }
 Andre_Abel_Quest.2
 {
@@ -419,7 +419,7 @@ Andre_Abel_Quest.22
 I gave Jackman the letter from Morgan. After reading it, Jackman said he would stop pursuing Andre because he had other matters to attend to.
 I can return to Abel for my reward.
 }
-Andre_Abel_Quest.23 {I informed Andre that I had completed the task. He thanked me and gave me a @<sNation> trade license.}
+Andre_Abel_Quest.23 {I informed Andre that I had completed the task. He thanked me and gave me a trade license for @<sNation>.}
 ChurchGenQuest1 {Return the Priest’s Manuscripts @<sCity>}
 ChurchGenQuest1.1 {Father @<sName> gave me a task: to bring back the precious theological manuscripts he lent for educational purposes (and by order of his superiors) to the priest in @<sOwnerCity>, which were not returned on time. I agreed to help resolve this delicate matter.}
 ChurchGenQuest1.2 {Grown men, servants of the Lord—and yet like children, honestly. Well, never mind, the important thing is I have the manuscripts! Now I need to take them back to @<sColony>.}
@@ -433,6 +433,7 @@ ChurchGenQuest1.7_2 {The old fool @<sCapName> ran up a tab at the tavern and gav
 ChurchGenQuest1.8 {Another entry in the ledger: settled the old whale’s debt under the name @<sName> at the tavern, redeemed Father @<sColony>’s manuscripts from the innkeeper, and now it’s high time to present those cherished manuscripts—and my ledger—to the good Father himself!}
 ChurchGenQuest1.9 {It turns out there are selfless tavern keepers in this world. I’ll hurry to @<sColony> to return the theological manuscripts, and I’ll also tell the story of how, in fulfillment of a vow, a man gave me these most precious books for free.}
 ChurchGenQuest1.10 {Uff... I didn’t expect such a simple task to take so much time and effort. The only bright spot was the god-fearing Captain @<sCapName>, who handed me the precious manuscripts without hesitation and practically kicked me off his tub. Time to head back to @<sIsland>.}
+ChurchGenQuest1.11 {Too much water has flowed under the bridge. Whether the manuscripts have already vanished without a trace, or the priest gave up on them, my errand has lost all meaning. Well, not every good deed gets seen through to the end.}
 ChurchGenQuest2 {Church Robbery @<sCity>}
 ChurchGenQuest2.1 {Steal the church treasury! What is this world coming to?! While Father @<sName> calls down curses on the heads of the godless, I should take more effective action. If not the Lord, then at least the padre will surely reward me for it... I doubt they could have gotten far...}
 ChurchGenQuest2.2 {Rumor has it in town that some local bandits got their hands on the Lord’s money, and they were smart enough to lay low. I should pay a visit to their hunting grounds.}
@@ -936,4 +937,8 @@ To prepare it, take two bottles of good red wine and one portion of strong rum. 
 
 Ingredients: Wine (2), Rum (1).
 Tools: Mortar and Pestle.
+}
+
+PDM_Neputyovy_kaznachey.8 {
+Because of the treasurer, Victor Bretier suffered heavy financial losses, and I decided not to get involved in their conflict.
 }

@@ -162,7 +162,7 @@ void extrnInitPerks()
 	InitPerk("MusketeerOnly",			"trait",	"",			0,			0,				0,			0,		"",			0,		0,		0,		0,			"self,static,spec");			// Убеждённый стрелок
 	InitPerk("WeaponBonding",			"trait",	"",			0,			0,				0,			0,		"",			0,		0,		0,		0,			"self,static,spec");			// Оружейная привязанность
 	InitPerk("DuglasSchool",			"trait",	"",			0,			0,				0,			0,		"",			0,		0,		0,		0,			"self,static,spec");			// Мушкетерская спецподготовка
-
+	InitPerk("legendGuideRead",			"trait",	"",			0,			0,				1,			0,		"",			0,		0,		0,		0,			"self,static,spec");			// Бонус за подписку в стиме
 
 	/// ЧЕРТЫ ХАРАКТЕРА
 	InitPerk("Honest",					"trait",	"",			0,			0,				0,			0,		"",			0,		0,		1,		0,			"self,static,temper");			// Порядочность > Метка для NPC с "good" alignment
@@ -187,10 +187,28 @@ void InitPerk(string sPerk, string sType, string sCond, int iDelay, int iDuratio
 	if (sCond != "")
 	{
 		q = KZ|Symbol(sCond, ",");
-		
+
+		int iCurLen = strlen(&sCond);
+		int iCurPos = 0;
+		int iCurEnd;
+
 		for (i = 0; i <= q; i++)
 		{
-			sTemp = GetSubStr(sCond, ",", i);
+			iCurEnd = findSubStr(&sCond, ",", iCurPos);
+
+			if (iCurEnd < 0)
+				iCurEnd = iCurLen;
+
+			sTemp = "";
+
+			if (iCurEnd > iCurPos)
+				sTemp = strcut(&sCond, iCurPos, iCurEnd - 1);
+
+			iCurPos = iCurEnd + 1;
+
+			if (sTemp == "")
+				continue;
+
 			ChrPerksList.list.(sPerk).condition.(sTemp) = true;
 		}
 	}

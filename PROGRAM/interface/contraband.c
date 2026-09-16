@@ -8,6 +8,7 @@ int iMaxGoodsStore = 50000;
 
 bool bShowChangeWin = false;
 int BuyOrSell = 0; // 1-buy -1 sell
+aref arTableList;
 ref refStore, refCharacter, refContraChar, refShipChar;
 int iShipQty, iStoreQty, iShipPrice, iStorePrice, iUnits;
 float fWeight;
@@ -20,30 +21,31 @@ void InitInterface_RR(string iniName, ref ContraTrader, ref pStore)
     refStore = pStore;
 	refCharacter = pchar;
 	refContraChar = ContraTrader;
-	
+
 	GameInterface.TABLE_LIST.hr.td1.str = XI_ConvertString("In the hold");
-	GameInterface.TABLE_LIST.hr.td1.scale = 0.87;
-	GameInterface.TABLE_LIST.hr.td2.str = XI_ConvertString("weight");
-	GameInterface.TABLE_LIST.hr.td2.scale = 0.87;
-	GameInterface.TABLE_LIST.hr.td3.str = XI_ConvertString("Price sell");
-	GameInterface.TABLE_LIST.hr.td3.scale = 0.87;
-	GameInterface.TABLE_LIST.hr.td4.str = XI_ConvertString("Good name");
-	GameInterface.TABLE_LIST.hr.td4.scale = 0.87;
-	GameInterface.TABLE_LIST.hr.td5.str = XI_ConvertString("Price buy");
-	GameInterface.TABLE_LIST.hr.td5.scale = 0.87;
-	GameInterface.TABLE_LIST.hr.td6.str = XI_ConvertString("Pack");
-	GameInterface.TABLE_LIST.hr.td6.scale = 0.87;
-	GameInterface.TABLE_LIST.hr.td7.str = XI_ConvertString("PackWeight");
-	GameInterface.TABLE_LIST.hr.td7.scale = 0.87;
+	makearef(arTableList, GameInterface.TABLE_LIST.hr);
+	arTableList.td1.scale = 0.87;
+	arTableList.td2.str = XI_ConvertString("weight");
+	arTableList.td2.scale = 0.87;
+	arTableList.td3.str = XI_ConvertString("Price sell");
+	arTableList.td3.scale = 0.87;
+	arTableList.td4.str = XI_ConvertString("Good name");
+	arTableList.td4.scale = 0.87;
+	arTableList.td5.str = XI_ConvertString("Price buy");
+	arTableList.td5.scale = 0.87;
+	arTableList.td6.str = XI_ConvertString("Pack");
+	arTableList.td6.scale = 0.87;
+	arTableList.td7.str = XI_ConvertString("PackWeight");
+	arTableList.td7.scale = 0.87;
 	
-	GameInterface.TABLE_LIST.hr.td8.str = XI_ConvertString("In the trader");
-	GameInterface.TABLE_LIST.hr.td8.scale = 0.85;
+	arTableList.td8.str = XI_ConvertString("In the trader");
+	arTableList.td8.scale = 0.85;
 	
     FillShipsScroll();
 
 	SendMessage(&GameInterface,"ls",MSG_INTERFACE_INIT,iniName);
 	
-	SetFormatedText("MAIN_CAPTION", XI_ConvertString("titleSmugglers") + "-  " + XI_ConvertString("Colony" + refStore.Colony));
+	SetFormatedText("MAIN_CAPTION", XI_ConvertString("titleSmugglers") + "-  " + GetStoreTitleName(refStore));
 	
 	SetControlsTabMode( 1 );
 
@@ -153,7 +155,15 @@ void IDoExit(int exitCode)
 	DelEventHandler("REMOVE_BUTTON", "REMOVE_BUTTON");
 	DelEventHandler("REMOVE_ALL_BUTTON", "REMOVE_ALL_BUTTON");
 
-	SetPriceListByContra(&Colonies[FindColony(refStore.Colony)]);
+	// KZ > колонии может не быть (свободный магазин)
+	int iStoreColony = -1;
+	if (IsFreeStore(refStore)) iStoreColony = GetStorePriceColony(refStore); // > свободный: колония только при полной приписке, как в store.c
+	else                       iStoreColony = FindColony(refStore.Colony);   // > городской и трюм: как в основе
+	if (iStoreColony >= 0) SetPriceListByContra(&Colonies[iStoreColony]);
+	else
+	{
+		if (CheckAttribute(refStore, "id")) SetPriceListByContra(refStore);
+	}
 
 	interfaceResultCommand = exitCode;
 	EndCancelInterface(true);
@@ -240,12 +250,13 @@ void CalculateInfoData()
 void AddToTable(int _mode)
 {
 	int n, i;
-	string row, sShipGroup;
+	string row;
 	ref rShip;
 	string sGood;
 	string sBuy, sSell, sStoreWeight;
 	int iColor, iShipQ, iStoreQ ;
 	aref refGoods;
+	bool bStoreSells, bStoreBuys;
 	string sTemp, sColony;
 	ref nulChr;
 	n = 1;
@@ -256,6 +267,11 @@ void AddToTable(int _mode)
 		sGood = Goods[i].name;
 
 		if (GetStoreGoodsType(refStore, i) != TRADE_TYPE_CONTRABAND_NAME) continue;
+
+		// > запрет торговли этим товаром в этом магазине
+		bStoreSells = StoreCanSellGood(refStore, i); // > ГГ может купить
+		bStoreBuys  = StoreCanBuyGood(refStore, i);  // > ГГ может продать
+		if (!bStoreSells && !bStoreBuys && IsStoreGoodHidden(refStore, i)) continue; // > строки нет ни у одной стороны
 
 		makearef(refGoods,refStore.Goods.(sGood));
 		iShipQ = GetCargoGoods(refCharacter, i);
@@ -268,28 +284,32 @@ void AddToTable(int _mode)
 		{
 	    	if (iShipQ == 0 && iStoreQ == 0) continue;
 			sTemp = "Gidx" + i;
-			sColony = refStore.Colony;
+			sColony = GetStorePriceKey(refStore);
 			nulChr = &NullCharacter;
-		    nulChr.PriceList.(sColony).(sTemp).Buy  = GetStoreGoodsPrice(refStore, i, PRICE_TYPE_BUY, pchar, 1);
-		    nulChr.PriceList.(sColony).(sTemp).Sell = GetStoreGoodsPrice(refStore, i, PRICE_TYPE_SELL, pchar, 1);
-		    nulChr.PriceList.(sColony).(sTemp).Qty  = GetStoreGoodsQuantity(refStore, i);
-		    nulChr.PriceList.(sColony).(sTemp).tradeType = TRADE_TYPE_CONTRABAND;
+			if (sColony != "")
+			{
+				nulChr.PriceList.(sColony).(sTemp).Buy  = GetStoreGoodsPrice(refStore, i, PRICE_TYPE_BUY, pchar, 1);
+				nulChr.PriceList.(sColony).(sTemp).Sell = GetStoreGoodsPrice(refStore, i, PRICE_TYPE_SELL, pchar, 1);
+				nulChr.PriceList.(sColony).(sTemp).Qty  = GetStoreGoodsQuantity(refStore, i);
+				nulChr.PriceList.(sColony).(sTemp).tradeType = TRADE_TYPE_CONTRABAND;
+			}
 		}
 
 		GameInterface.TABLE_LIST.(row).index = i;
-		GameInterface.TABLE_LIST.(row).td1.str = iShipQ;
-		GameInterface.TABLE_LIST.(row).td2.str = GetGoodWeightByType(i, iShipQ);
-		GameInterface.TABLE_LIST.(row).td6.str = Goods[i].Units;
-		GameInterface.TABLE_LIST.(row).td7.str = Goods[i].Weight;
+		makearef(arTableList, GameInterface.TABLE_LIST.(row));
+		arTableList.td1.str = iShipQ;
+		arTableList.td2.str = GetGoodWeightByType(i, iShipQ);
+		arTableList.td6.str = Goods[i].Units;
+		arTableList.td7.str = Goods[i].Weight;
 
-		GameInterface.TABLE_LIST.(row).td1.scale = 0.9;
-		GameInterface.TABLE_LIST.(row).td2.scale = 0.9;
-		GameInterface.TABLE_LIST.(row).td3.scale = 0.9;
-		GameInterface.TABLE_LIST.(row).td5.scale = 0.9;		
-		GameInterface.TABLE_LIST.(row).td6.scale = 0.9;		
-		GameInterface.TABLE_LIST.(row).td7.scale = 0.9;	
-		GameInterface.TABLE_LIST.(row).td8.scale = 0.9;	
-		GameInterface.TABLE_LIST.(row).td8.str = iStoreQ;
+		arTableList.td1.scale = 0.9;
+		arTableList.td2.scale = 0.9;
+		arTableList.td3.scale = 0.9;
+		arTableList.td5.scale = 0.9;		
+		arTableList.td6.scale = 0.9;		
+		arTableList.td7.scale = 0.9;	
+		arTableList.td8.scale = 0.9;	
+		arTableList.td8.str = iStoreQ;
 
 		if (GetStoreGoodsType(refStore, i) == TRADE_TYPE_CONTRABAND_NAME)
 		{
@@ -299,19 +319,22 @@ void AddToTable(int _mode)
 		{
 			iColor = argb(255,255,255,255);
 		}
+		if (!bStoreSells && !bStoreBuys) iColor = GetStoreGoodBanColor(refStore, i); // > товар вне торговли красим отдельно
 		
-        GameInterface.TABLE_LIST.(row).td4.icon.group = "GOODS";
-		GameInterface.TABLE_LIST.(row).td4.icon.image = sGood;
-		GameInterface.TABLE_LIST.(row).td4.icon.offset = "0, 0";
-		GameInterface.TABLE_LIST.(row).td4.icon.width = 29;
-		GameInterface.TABLE_LIST.(row).td4.icon.height = 29;
-		GameInterface.TABLE_LIST.(row).td4.textoffset = "25,0";
-		GameInterface.TABLE_LIST.(row).td4.scale = 0.9;
-		GameInterface.TABLE_LIST.(row).td4.str = XI_ConvertString(sGood);
-		GameInterface.TABLE_LIST.(row).td4.color = iColor;
+        arTableList.td4.icon.group = "GOODS";
+		arTableList.td4.icon.image = sGood;
+		arTableList.td4.icon.offset = "0, 0";
+		arTableList.td4.icon.width = 29;
+		arTableList.td4.icon.height = 29;
+		arTableList.td4.textoffset = "25,0";
+		arTableList.td4.scale = 0.9;
+		arTableList.td4.str = XI_ConvertString(sGood);
+		arTableList.td4.color = iColor;
 		
-		GameInterface.TABLE_LIST.(row).td5.str = GetStoreGoodsPrice(refStore, i, PRICE_TYPE_SELL, pchar, 1);
-		GameInterface.TABLE_LIST.(row).td3.str = GetStoreGoodsPrice(refStore, i, PRICE_TYPE_BUY, pchar, 1);
+		if (bStoreBuys)  arTableList.td5.str = GetStoreGoodsPrice(refStore, i, PRICE_TYPE_SELL, pchar, 1);
+		else             arTableList.td5.str = "-"; // > магазин этот товар не покупает
+		if (bStoreSells) arTableList.td3.str = GetStoreGoodsPrice(refStore, i, PRICE_TYPE_BUY, pchar, 1);
+		else             arTableList.td3.str = "-"; // > магазин этот товар не продаёт
 		
 		n++;
 	}
@@ -516,7 +539,7 @@ void SetVariable()
 
 	iTotalSpace = iMaxGoodsStore;
 	string sMaxGoodsStore;
-	if(refStore.Colony == "none")
+	if(IsSeaTradeStore(refStore))
 	{
 		iTotalSpace = sti(RealShips[sti(refShipChar.ship.type)].capacity);
 		sMaxGoodsStore = XI_ConvertString("Capacity") + "\n" + makeint(fStoreWeight) + " / " + iTotalSpace;
@@ -526,7 +549,7 @@ void SetVariable()
 	{
 		FaceMaker(refContraChar);
 		
-		if (CheckAttribute(refContraChar, "faceId") && sti(refContraChar.faceId) > 1 && FindFile("RESOURCE\\Textures\\interfaces\\PORTRAITS\\256\\", "face_" + sti(refContraChar.faceId) + ".tga.tx", "*.tx", true))
+		if (CheckAttribute(refContraChar, "faceId") && sti(refContraChar.faceId) > 1 && XI_CheckFolder("RESOURCE\Textures\interfaces\PORTRAITS\256\face_" + refContraChar.faceId + ".tga.tx"))
 		{
 			SetNewPicture("OTHER_PICTURE", "interfaces\portraits\256\face_" + sti(refContraChar.FaceId) + ".tga");
 			sMaxGoodsStore = UpperFirst(XI_ConvertString("WhoSmuggler"));
@@ -598,7 +621,7 @@ void SetShipWeight()
 	}
 	fShipWeight  = makeint(GetCargoLoad(refCharacter)+ 0.4);
 
-    if(refStore.Colony == "none")
+    if(IsSeaTradeStore(refStore))
 	{
 		fStoreWeight = makeint(GetCargoLoad(refShipChar)+ 0.4);
 	}
@@ -644,7 +667,7 @@ void ShowGoodsInfo(int iGoodIndex)
 
 	iShipQty = GetCargoGoods(refCharacter, iGoodIndex);
 
-	if (refStore.Colony != "none")
+	if (!IsSeaTradeStore(refStore))
 	{
 		iStoreQty = GetStoreGoodsQuantity(refStore, iGoodIndex);
 	}
@@ -656,13 +679,27 @@ void ShowGoodsInfo(int iGoodIndex)
 	SetFormatedText("QTY_INFO_STORE_QTY", its(iStoreQty));
 	SetFormatedText("QTY_INFO_SHIP_QTY", its(iShipQty));
 	
-	iStorePrice = GetStoreGoodsPrice(refStore, iGoodIndex, PRICE_TYPE_SELL, pchar, 1);
-	
-	SetFormatedText("QTY_INFO_STORE_PRICE",XI_ConvertString("Price buy") + NewStr() + its(iStorePrice));
-	SetFormatedText("QTY_INFO_SHIP_PRICE", XI_ConvertString("Price sell") + NewStr() + its(iShipPrice));
-	
-	iShipPrice = GetStoreGoodsPrice(refStore, iGoodIndex, PRICE_TYPE_BUY, pchar, 1);
-	SetFormatedText("QTY_INFO_SHIP_PRICE", XI_ConvertString("Price sell") + NewStr() + its(iShipPrice));
+	if (StoreCanBuyGood(refStore, iGoodIndex))
+	{
+		iStorePrice = GetStoreGoodsPrice(refStore, iGoodIndex, PRICE_TYPE_SELL, pchar, 1);
+		SetFormatedText("QTY_INFO_STORE_PRICE", XI_ConvertString("Price buy") + NewStr() + its(iStorePrice));
+	}
+	else
+	{
+		iStorePrice = 0; // > саму сделку глушит гейт в ChangeQTY_EDIT
+		SetFormatedText("QTY_INFO_STORE_PRICE", XI_ConvertString("Price buy") + NewStr() + "-");
+	}
+
+	if (StoreCanSellGood(refStore, iGoodIndex))
+	{
+		iShipPrice = GetStoreGoodsPrice(refStore, iGoodIndex, PRICE_TYPE_BUY, pchar, 1);
+		SetFormatedText("QTY_INFO_SHIP_PRICE", XI_ConvertString("Price sell") + NewStr() + its(iShipPrice));
+	}
+	else
+	{
+		iShipPrice = 0;
+		SetFormatedText("QTY_INFO_SHIP_PRICE", XI_ConvertString("Price sell") + NewStr() + "-");
+	}
 
 	ShowFoodInfo();
 }
@@ -775,8 +812,9 @@ void ChangeQTY_EDIT()
 		    	GameInterface.qty_edit.str = -sti(GameInterface.qty_edit.str);
 		    }
             BuyOrSell = -1;
+			if (!StoreCanBuyGood(refStore, iCurGoodsIdx)) GameInterface.qty_edit.str = 0; // > магазин этот товар не покупает
 		    // проверка на колво доступное -->
-			if (makeint(iStorePrice*stf(GameInterface.qty_edit.str) / iUnits + 0.5) > sti(refStore.smugglerMoney))
+			if (iStorePrice > 0 && makeint(iStorePrice*stf(GameInterface.qty_edit.str) / iUnits + 0.5) > sti(refStore.smugglerMoney))
 		    {
 		        GameInterface.qty_edit.str = makeint(sti(refStore.smugglerMoney)*iUnits / iStorePrice);
 		    }
@@ -798,6 +836,7 @@ void ChangeQTY_EDIT()
 		else
 		{	
 			BuyOrSell = 1;
+			if (!StoreCanSellGood(refStore, iCurGoodsIdx)) GameInterface.qty_edit.str = 0; // > магазин этот товар не продаёт
          	// проверка на колво доступное -->
 		    if (sti(GameInterface.qty_edit.str) > iStoreQty)
 		    {
@@ -812,7 +851,7 @@ void ChangeQTY_EDIT()
 		        iWeight = GetGoodWeightByType(iCurGoodsIdx, sti(GameInterface.qty_edit.str));
 		        GameInterface.qty_edit.str = makeint(iWeight / fWeight * iUnits ); // округдение
 		    }
-		    if (makeint(iShipPrice*stf(GameInterface.qty_edit.str) / iUnits + 0.5) > sti(pchar.money))
+		    if (iShipPrice > 0 && makeint(iShipPrice*stf(GameInterface.qty_edit.str) / iUnits + 0.5) > sti(pchar.money))
 		    {
 		        GameInterface.qty_edit.str = makeint(sti(pchar.money)*iUnits / iShipPrice);
 		        iWeight = GetGoodWeightByType(iCurGoodsIdx, sti(GameInterface.qty_edit.str));

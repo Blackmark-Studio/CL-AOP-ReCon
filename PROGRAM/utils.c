@@ -230,13 +230,6 @@ void RotateAroundY(ref rX, ref rZ, float fCos, float fSin)
 	rZ = zz;
 }
 
-int Tonnes2CWT(int iTonnes)
-{
-	int a = iTonnes * 10000 / 508;
-	a = 100 * ((a + 99) / 100);
-	return a;
-}
-
 int i_min(int a1, int a2)
 {
 	if (a1 < a2) { return a1; }

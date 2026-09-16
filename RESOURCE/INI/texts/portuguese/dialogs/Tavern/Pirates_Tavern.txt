@@ -184,3 +184,20 @@ Certo, ele mora em uma casa de dois andares com paredes de pedra. Ao sair da tav
 Pirates_Tavern_60 {
 Obrigado, você me ajudou muito!
 }
+
+Pirates_Tavern_61 {
+Estamos procurando uma corveta espanhola. Dizem que ficou aqui por bastante tempo.
+}
+Pirates_Tavern_62 {
+Ah, Don Martín! Fugiu. Houve uma bela confusão há pouco entre os piratas de Jackman e os castelhanos. No fim, ele se apavorou tanto que mandou cortar o cabo da âncora e partiu com todas as velas desfraldadas.
+}
+Pirates_Tavern_63 {
+Foi impressão minha ou isso o diverte?
+}
+Pirates_Tavern_64 {
+E como! Aquele peru castelhano empolado fugiu tão depressa que esqueceu a própria chalupa em terra. Pouco antes de partir, mandou um oficial e dois marinheiros até Jackman, disfarçados de mercadores, supostamente para comprar breu e tábuas para reparos. Mas quando os homens de Jackman viram presa tão fácil, logo entenderam: os espanhóis tinham dinheiro consigo e ninguém ali pretendia vender-lhes mercadoria alguma. Então cortaram os compradores em tiras.
+Um oficial conseguiu escapar. Só que nossa ilha é pequena — além da Baía do Cocho Quebrado ele não tem para onde ir. Se Jackman não o pegar, a fome e a sede farão o serviço.
+}
+Pirates_Tavern_65 {
+Parece que esse oficial pode saber para onde Quesada foi. Obrigado.
+}

@@ -1,0 +1,40 @@
+Tavernkeeper_dialog_1 {
+A więc to ty jesteś kapitan @<pchar>. Ledwie zdążyłem rzucić kości pod tym naciągniętym żaglem, a Nicolas Rimallet już zdążył opowiedzieć mi o twoich wyczynach. Z tym szalonym zawadiaką dzielimy chleb i proch od tak dawna, że, słowo honoru, nie pamiętam już, który z nas pierwszy uratował drugiemu życie w ogniu i kto do dziś nie oddał przeklętego karcianego długu.
+}
+Tavernkeeper_dialog_2 {
+Miło słyszeć, że słowo Rimalleta ma tu taką wagę. Witaj szczęśliwie na Tortudze, przyjacielu.
+}
+Tavernkeeper_dialog_3 {
+Witaj, kapitanie @<pchar>! Jak widzisz, nadal pełnię swoją wieczną wachtę przy tej przeklętej beczce rumu. Jeśli twojemu statkowi potrzeba ludzi o pewnym oku i ręce, która nie drgnie — tylko daj znać.
+}
+Tavernkeeper_dialog_4 {
+Kapitanie @<pchar>! O świcie z selwy wyszło kilku zaprawionych myśliwych — dzicy ludzie, ale prochem przesiąknięci na wskroś. Jeśli potrzebujesz wyborowych strzelców, chętnie szepnę za tobą dobre słowo.
+}
+Tavernkeeper_dialog_5 {
+Znowu ty, kapitanie @<pchar>. Dobry znak — znaczy morze jeszcze nie zdążyło pochłonąć twojego statku. Jeśli szukasz wiernych ludzi, akurat paru desperatów rozgląda się za godnym dowódcą.
+}
+Tavernkeeper_dialog_6 {
+@<LinkRandPhrase>
+}
+Tavernkeeper_dialog_7 {
+Właśnie po to przyszedłem. Masz dziś na oku jakichś wyborowych strzelców?
+}
+Tavernkeeper_dialog_8 {
+Mam pełny skład, dzięki. Podszedłem tylko zwilżyć gardło i zobaczyć, co u was.
+}
+Tavernkeeper_dialog_9 {
+Dziękuję, kapitanie. Dopiero zaczynam zapuszczać tu korzenie, ale poręczenie Nicolasa znaczy dla mnie ogromnie dużo. Wszelkiego motłochu na Tortudze jest pod dostatkiem, lecz prawdziwi weterani boucanu za nic nie podpiszą się do roli okrętowej pierwszego lepszego awanturnika. Ale wystarczy, że szepnę im, iż jesteś człowiekiem honoru, a rozmowa od razu potoczy się zupełnie inaczej.
+}
+Tavernkeeper_dialog_10 {
+Taka rekomendacja bardzo mi się przyda.
+}
+Tavernkeeper_dialog_11 {
+W takim razie uznaj, że dobiliśmy targu. Jeśli twojemu statkowi będą potrzebni pewni ludzie — zawsze znajdziesz mnie tutaj, przy tej beczce, czy to w palącym zenicie, czy pośród czarnej nocy.
+Bukanierzy mają zwyczaj wychodzić z selwy o najbardziej nieprzewidywalnych porach — wyczerpani, obdarci i źli jak diabli. Od razu potrzebują kubka piekącego rumu i człowieka, który wysłucha ich przechwałek, zanim poderżną sobie nawzajem gardła w sporze o łup. Dlatego ani na chwilę nie opuszczam posterunku. Zasięgnę języka i skontaktuję cię z tymi, których kule nie chybiają.
+}
+Tavernkeeper_dialog_12 {
+Godne podziwu oddanie rzemiosłu. Zobaczmy, kogo możesz mi zaoferować już teraz.
+}
+Tavernkeeper_dialog_13 {
+Umowa stoi. Na pewno zajrzę pod twój gościnny żagiel, gdy tylko będę potrzebował strzelców.
+}

@@ -1,20 +1,20 @@
 Plantation_dialog_1 {
-有问题都去找种植园经理。
+有问题都去找种植园经理。 
 }
 Plantation_dialog_2_m {
-别用你的废话耽误奴隶干活，伙计。
+别用你的废话耽误奴隶干活， 伙计。 
 }
 Plantation_dialog_2_f {
-姑娘，别用你的闲聊耽误了奴隶们干活。
+姑娘， 别用你的闲聊耽误了奴隶们干活。 
 }
 Plantation_dialog_3 {
 @<RandPhraseSimple>
 }
 Plantation_dialog_4 {
-我的活儿就是管住那些懒鬼。
+我的活儿就是管住那些懒鬼。 
 }
 Plantation_dialog_5 {
-今天真是热得要命……不过，好像天天都这样。
+今天真是热得要命…… 不过， 好像天天都这样。 
 }
 Plantation_dialog_6 {
 @<RandPhraseSimple>
@@ -23,179 +23,179 @@ Plantation_dialog_7 {
 @<RandPhraseSimple>
 }
 Plantation_dialog_8 {
-明白了……
+明白了…… 
 }
 Plantation_dialog_9 {
-明白……
+明白…… 
 }
 Plantation_dialog_10 {
 @<RandPhraseSimple>
 }
 Plantation_dialog_11_m {
-海盗闯进咱们的种植园？！真是见鬼了……快抓住他！
+海盗闯进咱们的种植园？ ！ 真是见鬼了…… 快抓住他！ 
 }
 Plantation_dialog_11_f {
-咱们种植园里竟然有海盗？！真是见鬼……快抓住她！
+咱们种植园里竟然有海盗？ ！ 真是见鬼…… 快抓住她！ 
 }
 Plantation_dialog_12_m {
-是海盗！！快抓住他！！！
+是海盗！ ！ 快抓住他！ ！ ！ 
 }
 Plantation_dialog_12_f {
-是海盗！！快抓住她！！！
+是海盗！ ！ 快抓住她！ ！ ！ 
 }
 Plantation_dialog_13 {
 @<RandPhraseSimple>
 }
 Plantation_dialog_14 {
-海盗又怎样？
+海盗又怎样？ 
 }
 Plantation_dialog_15 {
-哼，有本事就来抓俺啊。
+哼， 有本事就来抓我啊。 
 }
 Plantation_dialog_16 {
 @<RandPhraseSimple>
 }
 Plantation_dialog_17 {
-哟哟，你可是挂着@<NationNameGenitive>的旗帜啊！等我们把你交给指挥官，他肯定高兴坏了！
+哟哟， 你可是挂着@<NationNameGenitive>的旗帜啊！ 等我们把你交给指挥官， 他肯定高兴坏了！ 
 }
 Plantation_dialog_18_m {
-哟哟，这里怎么有股@<NationNameInstrumental>的臭味？你在这儿偷摸什么呢，混蛋？走，带你见见我们指挥官！
+哟哟， 这里怎么有股@<NationNameInstrumental>的臭味？ 你在这儿偷摸什么呢， 混蛋？ 走， 带你见见我们指挥官！ 
 }
 Plantation_dialog_18_f {
-哟哟，这里怎么有股@<NationNameInstrumental>的味儿？你在这儿偷看呢，臭丫头？走，带你见见我们指挥官！
+哟哟， 这里怎么有股@<NationNameInstrumental>的味儿？ 你在这儿偷看呢， 臭丫头？ 走， 带你见见我们指挥官！ 
 }
 Plantation_dialog_19 {
 @<RandPhraseSimple>
 }
 Plantation_dialog_20 {
-让你见识下俺的军刀。
+让你见识下我的军刀。 
 }
 Plantation_dialog_21 {
-我看还是先把你交给恶魔吧。
+我看还是先把你交给恶魔吧。 
 }
 Plantation_dialog_22 {
 @<RandPhraseSimple>
 }
 Plantation_dialog_23_m {
-海盗？！真是见鬼了……快抓住他！！
+海盗？ ！ 真是见鬼了…… 快抓住他！ ！ 
 }
 Plantation_dialog_23_f {
-海盗？！真是没想到……抓住她！！
+海盗？ ！ 真是没想到…… 抓住她！ ！ 
 }
 Plantation_dialog_24_m {
-是海盗！！快抓住他！！！
+是海盗！ ！ 快抓住他！ ！ ！ 
 }
 Plantation_dialog_24_f {
-是海盗！！快抓住她！！！
+是海盗！ ！ 快抓住她！ ！ ！ 
 }
 Plantation_dialog_25 {
 @<RandPhraseSimple>
 }
 Plantation_dialog_26 {
-是啊，俺就是海盗，咋了？
+是啊， 我就是海盗， 咋了？ 
 }
 Plantation_dialog_27 {
-哼，有本事来抓我啊……
+哼， 有本事来抓我啊…… 
 }
 Plantation_dialog_28 {
 @<RandPhraseSimple>
 }
 Plantation_dialog_29 {
-你是谁，来这儿想干嘛？
+你是谁， 来这儿想干嘛？ 
 }
 Plantation_dialog_30_m {
-站住！你在这儿干什么？
+站住！ 你在这儿干什么？ 
 }
 Plantation_dialog_30_f {
-站住！你这丫头在这儿干什么？
+站住！ 你这丫头在这儿干什么？ 
 }
 Plantation_dialog_31 {
 @<RandPhraseSimple>
 }
 Plantation_dialog_32 {
-我要见种植园经理，谈谈生意。我有贸易许可证。
+我要见种植园经理， 谈谈生意。 我有贸易许可证。 
 }
 Plantation_dialog_33 {
-我要见种植园经理，谈谈生意。
+我要见种植园经理， 谈谈生意。 
 }
 Plantation_dialog_34 {
-我要见种植园经理，谈谈生意。
+我要见种植园经理， 谈谈生意。 
 }
 Plantation_dialog_35 {
-你是谁，来这儿想干嘛？
+你是谁， 来这儿想干嘛？ 
 }
 Plantation_dialog_36_m {
-站住！你在这儿干什么？
+站住！ 你在这儿干什么？ 
 }
 Plantation_dialog_36_f {
-站住！你在这儿干什么，姑娘？
+站住！ 你在这儿干什么， 姑娘？ 
 }
 Plantation_dialog_37 {
 @<RandPhraseSimple>
 }
 Plantation_dialog_38 {
-我要去找种植园经理谈谈生意。
+我要去找种植园经理谈谈生意。 
 }
 Plantation_dialog_39 {
-@<GetAddress_Form>，你来这儿有什么事？
+@<GetAddress_Form>， 你来这儿有什么事？ 
 }
 Plantation_dialog_40 {
-@<TimeGreeting>，@<GetAddress_FormToNPC>。我有个生意想和你谈谈。我船舱里有@<FindQtyString>个奴隶，你有兴趣按公道价买下吗？
+@<TimeGreeting>， @<GetAddress_FormToNPC>。 我有个生意想和你谈谈。 我船舱里有@<FindQtyString>个奴隶， 你有兴趣按公道价买下吗？ 
 }
 Plantation_dialog_41 {
-你来这儿有什么事，@<GetAddress_Form>?
+你来这儿有什么事， @<GetAddress_Form>?
 }
 Plantation_dialog_42_m {
-刚在Maracaibo附近转转，顺便来你们种植园看看。我这就走了。
+刚在马拉开波附近转转， 顺便来你们种植园看看。 我这就走了。 
 }
 Plantation_dialog_42_f {
-刚在Maracaibo附近转转，顺便来你们种植园看看。我这就走了。
+刚在马拉开波附近转转， 顺便来你们种植园看看。 我这就走了。 
 }
 Plantation_dialog_43 {
-啊，又是你，@<GetAddress_Form>。最近怎么样？
+啊， 又是你， @<GetAddress_Form>。 最近怎么样？ 
 }
 Plantation_dialog_44 {
-谢谢，一切都挺好……
+谢谢， 一切都挺好…… 
 }
 Plantation_dialog_45 {
-很抱歉要让你失望了，@<GetAddress_Form>，我们现在的种植园暂时不需要奴隶。前阵子Captain Eduardo de Losada刚带来一批他在突袭时抓到的绞刑海盗。所以……
+很抱歉要让你失望了， @<GetAddress_Form>， 我们现在的种植园暂时不需要奴隶。 前阵子埃杜阿尔多.德.洛萨达船长刚带来一批他在突袭时抓到的绞刑海盗。 所以…… 
 }
 Plantation_dialog_46 {
-你的种植园上竟然让海盗干活？哎，@<GetAddress_FormToNPC>，你晚上怎么睡得着？
+你的种植园上竟然让海盗干活？ 哎， @<GetAddress_FormToNPC>， 你晚上怎么睡得着？ 
 }
 Plantation_dialog_47 {
-我们的守卫很可靠，根本不用担心会闹叛乱。不过你说得对，这帮家伙确实一点干活的心思都没有。要不是总督一再坚持要给Don de Losada面子，我自己是绝不会买他们的……再说那价格也确实挺低的。
+我们的守卫很可靠， 根本不用担心会闹叛乱。 不过你说得对， 这帮家伙确实一点干活的心思都没有。 要不是市长一再坚持要给德.洛萨达先生面子， 我自己是绝不会买他们的…… 再说那价格也确实挺低的。 
 }
 Plantation_dialog_48_m {
-明白了，看样子我得去Los Teques一趟……对了，@<GetAddress_FormToNPC>，你介意让我在你的种植园里转转，看看情况吗？说不定我会有兴趣买点你的货拿去转卖……
+明白了， 看样子我得去洛斯特克斯一趟…… 对了， @<GetAddress_FormToNPC>， 你介意让我在你的种植园里转转， 看看情况吗？ 说不定我会有兴趣买点你的货拿去转卖…… 
 }
 Plantation_dialog_48_f {
-明白了，看样子我得去Los Teques一趟……对了，@<GetAddress_FormToNPC>，你介意让我在你的种植园里转转，看看情况吗？说不定我会有兴趣买点你的货去卖……
+明白了， 看样子我得去洛斯特克斯一趟…… 对了， @<GetAddress_FormToNPC>， 你介意让我在你的种植园里转转， 看看情况吗？ 说不定我会有兴趣买点你的货去卖…… 
 }
 Plantation_dialog_49 {
-你是商人吗？
+你是商人吗？ 
 }
 Plantation_dialog_50 {
-嗯，算是吧。俺可不敢说自己是专业商人，不过有赚头的买卖，俺可从不拒绝。
+嗯， 算是吧。 我可不敢说自己是专业商人， 不过有赚头的买卖， 我可从不拒绝。 
 }
 Plantation_dialog_51 {
-挺有意思的。既然这样，你待在这儿我也不介意。随便看看，四处转转。有想法了再来找我，我们聊聊。
+挺有意思的。 既然这样， 你待在这儿我也不介意。 随便看看， 四处转转。 有想法了再来找我， 我们聊聊。 
 }
 Plantation_dialog_52 {
-谢谢你，@<GetAddress_FormToNPC>。我觉得咱们的谈话还没完呢。
+谢谢你， @<GetAddress_FormToNPC>。 我觉得咱们的谈话还没完呢。 
 }
 Plantation_dialog_53 {
-主人不在，这段时间由指挥官管理种植园。他每天早上七点到晚上九点都在岗位上。请在工作时间过来。
+主人不在， 这段时间由指挥官管理种植园。 他每天早上七点到晚上九点都在岗位上。 请在工作时间过来。 
 }
 Plantation_dialog_54 {
-行吧。
+行吧。 
 }
 Plantation_dialog_55 {
-他不在，出去找一个逃跑的奴隶了——好像是叫Blade还是Blood，我记不清了。他不在的时候，种植园由指挥官管理，所有事务都归他全权处理。\n你得上楼去办公室，进去吧。
+他不在， 出去找一个逃跑的奴隶了——好像是叫布莱德还是布拉德， 我记不清了。 他不在的时候， 种植园由指挥官管理， 所有事务都归他全权处理。 \n你得上楼去办公室， 进去吧。 
 }
 Plantation_dialog_56 {
-主人不在，这会儿是指挥官管着种植园。你得上楼去办公室，走吧。
+主人不在， 这会儿是指挥官管着种植园。 你得上楼去办公室， 走吧。 
 }
 Plantation_dialog_57 {
-谢谢，我这就去。
+谢谢， 我这就去。 
 }

@@ -1220,7 +1220,7 @@ spa_Governor_342 {
 All right, Don Francisco.
 }
 spa_Governor_343 {
-Captain, they say you managed to defend Maracaibo! Without exaggeration, that’s a true feat, señor@<GetAddress_Form>!
+Captain, they say you managed to defend Maracaibo! Without exaggeration, that’s a true feat, @<GetAddress_Form>!
 }
 spa_Governor_344 {
 Very well! Now, listen to your orders.\nAs part of the ongoing devolutionary war with France over Spanish possessions in Holland, our first and most important task is to raid Curaçao and Saint Martin. From an intercepted dispatch, we've learned that the Dutch are allocating vast sums for France's military needs.\nWe can't prove this for certain, as all correspondence is encrypted in a special way, and the meaning of the letter is entirely different. Nevertheless, we must put an end to this—Dutch trading power must be broken!\nYou are to storm and plunder the Dutch settlements of Willemstad on the island of Curaçao, and Marigot on the island of Saint Martin. All spoils captured in the operation are yours to keep.\nAre you ready to take on such a task?

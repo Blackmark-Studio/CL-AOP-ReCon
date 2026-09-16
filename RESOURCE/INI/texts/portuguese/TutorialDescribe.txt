@@ -475,12 +475,12 @@ Parece que os espanhóis estão recuando. Eles não aguentam tanto poder de fogo
 ~
 Afaste-se do combate aumentando a distância até o navio inimigo. Você pode ver a distância pelo uso do telescópio.
 ~
-Para usar o telescópio, vá até o convés ('Tab' por padrão) e segure a tecla 'Ctrl' (padrão).
+Para usar o telescópio, vá até o convés ('Tab' por padrão) e pressione a tecla 'Ctrl' (padrão).
 ~
 Quando a distância ao inimigo chegar a 1000, você poderá deixar o campo de batalha em segurança.
 }
 BloodPrologue_SeaEscape_controlsimg1 {Sea_CameraSwitch}
-BloodPrologue_SeaEscape_controlsimg2 {TelescopeIn}
+BloodPrologue_SeaEscape_controlsimg2 {TelescopeMode}
 BloodPrologue_EnterMap_title {Entrar no mapa global}
 BloodPrologue_EnterMap_descr
 {

@@ -1270,3 +1270,19 @@ Und bring die Soleil Royal in Schuss; sie muss vollständig kampfbereit sein.
 fra_Governor_313 {
 Sehr wohl, mein Herr.
 }
+fra_Governor_314_m {Eure Exzellenz, ich komme im Auftrag von Michel le Basque.}
+fra_Governor_314_f {Eure Exzellenz, ich komme im Auftrag von Michel le Basque.}
+fra_Governor_315 {So? Und was, darf ich fragen, hat Monsieur le Basque Ihnen aufgetragen?}
+fra_Governor_316 {Er sorgt sich um das Schicksal der Fleute „Windrose“. Soweit wir wissen, erwarteten Sie ihre Ankunft bereits gestern.}
+fra_Governor_317 {Kapitän, das ist ein Staatsgeheimnis, und ich beabsichtige nicht, es mit Ihnen zu erörtern. Ich bin bereit, darüber hinwegzusehen, dass Sie überhaupt über solche Informationen verfügen, aber mit mehr sollten Sie nicht rechnen.}
+fra_Governor_318 {Verstehen Sie meine Beharrlichkeit bitte nicht als Unhöflichkeit, aber ich muss Ihnen den Grund für Michels Sorge erklären. An Bord befindet sich jemand, an dessen Ankunft er persönlich interessiert ist. Außerdem bat er mich, Sie daran zu erinnern: Tortuga betrachtet er als seine Heimat, und er wird stets im Interesse des Schutzes der Insel handeln.}
+fra_Governor_319 {Dann weiß er also, welche Ladung sich an Bord befindet?}
+fra_Governor_320 {Davon hat er nichts gesagt. Er vermutet jedoch, dass Diego Vargas mit dem Verschwinden des Schiffes zu tun haben könnte.}
+fra_Governor_321 {Ich nehme an, wenn Sie schon hier sind, wollen Sie mir bei der Suche nach dem Schiff helfen?}
+fra_Governor_322 {Ganz genau, Herr Gouverneur.}
+fra_Governor_323 {Nun gut, ich nehme Ihre Hilfe an. Das Schiff sollte Kolonisten und Handwerker hierherbringen. Menschen, ohne die Ihr Außenposten ein Zufluchtsort für Wilderer und Piraten bleibt, statt zu einer zivilisierten französischen Gemeinde zu werden.}
+fra_Governor_324 {Darum ist selbst eine solche Verzögerung beunruhigend. Falls das Schiff tatsächlich gekapert wurde, sinken mit jeder Stunde die Chancen, die Siedler lebend zu finden.}
+fra_Governor_325 {Ich bin froh, dass Sie das verstehen. Die „Windrose“ sollte schon gestern vor der Nordküste auftauchen, doch das Schiff erschien nicht. Weder Notsignale noch Nachrichten über einen Sturm haben uns erreicht. Ich werde die Garnison nicht allein aufgrund eines Verdachts alarmieren und Panik säen. Und glauben Sie mir: Für diese Zurückhaltung habe ich gute Gründe.}
+fra_Governor_326 {Haben Sie eine Idee, wo wir mit der Suche anfangen sollen?}
+fra_Governor_327 {Sprechen Sie mit meinem Sekretär Henri Tessier. Er trägt die Berichte der Posten und Leuchttürme zusammen und verfügt über alle Informationen, die bis jetzt eingegangen sind.}
+fra_Governor_328 {Ich danke Ihnen, Eure Exzellenz.}

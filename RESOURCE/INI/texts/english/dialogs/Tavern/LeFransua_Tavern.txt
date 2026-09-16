@@ -365,7 +365,7 @@ LeFransua_Tavern_104 {
 Can you tell me anything about the whereabouts of this... Rat?
 }
 LeFransua_Tavern_105 {
-Unfortunately, not much. I can’t even say which ship he’s sailing on—Rat tends to switch vessels often, covering his tracks. All I can do is name the ports from which the last three missing ships departed, and which we believe Rat is connected to. Maybe it’s worth looking into the circumstances leading up to those unfortunate events in those places.\nThe cities are: Willemstad on Curaçao, Cartagena on the Main, and Port of Spain on the island of Trinidad and Tobago.
+Unfortunately, not much. I can’t even say which ship he’s sailing on—Rat tends to switch vessels often, covering his tracks. All I can do is name the ports from which the last three missing ships departed, and which we believe Rat is connected to. Maybe it’s worth looking into the circumstances leading up to those unfortunate events in those places.\nThe cities are: Willemstad on Curaçao, Cartagena on the Main, and Port of Spain on the island of Trinidad.
 }
 LeFransua_Tavern_106 {
 That's something! I think it's time I set out on my journey.

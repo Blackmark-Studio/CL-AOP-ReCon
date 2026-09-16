@@ -365,7 +365,7 @@ LeFransua_Tavern_104 {
 Czy możecie powiedzieć coś o miejscu pobytu tego... Szczura?
 }
 LeFransua_Tavern_105 {
-Niestety, niewiele. Nawet nie potrafię powiedzieć, na jakim statku pływa — Krysa często zmienia okręty, żeby zatrzeć ślady. Mogę jedynie podać porty, z których wypłynęły ostatnie trzy zaginione statki, a do ich zaginięcia, jak sądzimy, Krysa miał swój udział — może warto tam dowiedzieć się więcej o okolicznościach poprzedzających te smutne wydarzenia.\nTe miasta to: Willemstad na Curaçao, Cartagena na Mainie oraz Port of Spain na wyspie Trynidad i Tobago.
+Niestety, niewiele. Nawet nie potrafię powiedzieć, na jakim statku pływa — Krysa często zmienia okręty, żeby zatrzeć ślady. Mogę jedynie podać porty, z których wypłynęły ostatnie trzy zaginione statki, a do ich zaginięcia, jak sądzimy, Krysa miał swój udział — może warto tam dowiedzieć się więcej o okolicznościach poprzedzających te smutne wydarzenia.\nTe miasta to: Willemstad na Curaçao, Cartagena na Mainie oraz Port of Spain na wyspie Trynidad.
 }
 LeFransua_Tavern_106 {
 To już coś! Chyba czas ruszać w drogę.

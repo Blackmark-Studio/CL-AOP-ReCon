@@ -1,0 +1,39 @@
+Gibraltar_Mayor_1 {
+Что вы хотели? Спрашивайте.
+}
+Gibraltar_Mayor_2 {
+Я слушаю вас, что за вопрос?
+}
+Gibraltar_Mayor_3 {
+@<RandPhraseSimple>
+}
+Gibraltar_Mayor_4 {
+Второй раз за день вы пытаетесь задать вопрос...
+}
+Gibraltar_Mayor_5 {
+В третий раз за день вы опять пытаетесь задать вопрос...
+}
+Gibraltar_Mayor_6 {
+Да когда же это кончится?! У меня дел полно по управлению делами города, а ты всё вопросы пытаешься задать!
+}
+Gibraltar_Mayor_7_m {
+Я передумал...
+}
+Gibraltar_Mayor_7_f {
+Я передумала...
+}
+Gibraltar_Mayor_8 {
+Не сейчас, не место и не время...
+}
+Gibraltar_Mayor_9 {
+@<RandPhraseSimple>
+}
+Gibraltar_Mayor_10 {
+Да, верно... Но не сейчас, позже...
+}
+Gibraltar_Mayor_11 {
+Задам, задам... Только позже...
+}
+Gibraltar_Mayor_12 {
+Извините, @<GetAddress_FormToNPC>...
+}

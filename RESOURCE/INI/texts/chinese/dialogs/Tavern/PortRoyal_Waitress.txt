@@ -1,45 +1,45 @@
 PortRoyal_Waitress_1 {
-有问题吗，@<GetAddress_Form>?
+有问题吗， @<GetAddress_Form>?
 }
 PortRoyal_Waitress_2 {
-有什么事需要我帮忙，@<GetAddress_Form>?
+有什么事需要我帮忙， @<GetAddress_Form>?
 }
 PortRoyal_Waitress_3 {
 @<RandPhraseSimple>
 }
 PortRoyal_Waitress_4_m {
-嗯，你这是在跟我调情吗，先生？
+嗯， 你这是在跟我调情吗， 先生？ 
 }
 PortRoyal_Waitress_4_f {
-你又来了，老是问些奇怪的问题……你就这么喜欢烦我吗？
+你又来了， 老是问些奇怪的问题…… 你就这么喜欢烦我吗？ 
 }
 PortRoyal_Waitress_5_m {
-你今天已经第三次提这个问题了……这是在表示关心吗？
+你今天已经第三次提这个问题了…… 这是在表示关心吗？ 
 }
 PortRoyal_Waitress_5_f {
-你今天已经第三次提这事了……你是在开玩笑吗？
+你今天已经第三次提这事了…… 你是在开玩笑吗？ 
 }
 PortRoyal_Waitress_6 {
-你又要问问题了，@<GetAddress_Form>？
+你又要问问题了， @<GetAddress_Form>？ 
 }
 PortRoyal_Waitress_7_m {
-我改主意了……
+我改主意了…… 
 }
 PortRoyal_Waitress_7_f {
-我改变主意了……
+我改变主意了…… 
 }
 PortRoyal_Waitress_8 {
-我现在没什么可说的。
+我现在没什么可说的。 
 }
 PortRoyal_Waitress_9 {
 @<RandPhraseSimple>
 }
 PortRoyal_Waitress_10 {
-不不不，哪有啊，美女……
+不不不， 哪有啊， 美女…… 
 }
 PortRoyal_Waitress_11 {
-哪有啊，亲爱的，就是有点健忘……
+哪有啊， 亲爱的， 就是有点健忘…… 
 }
 PortRoyal_Waitress_12 {
-没事，没什么要问的……
+没事， 没什么要问的…… 
 }

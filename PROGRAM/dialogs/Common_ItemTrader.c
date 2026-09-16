@@ -93,6 +93,12 @@ void ProcessDialogEvent()
 			//<-- зачарованный город 
 
 			dialog.text = StringFromKey("Common_ItemTrader_22", npchar);
+			//--> Эммануэль Пардаль
+			if (CheckAttribute(pchar, "questTemp.EPL_Prologue"))
+			{
+   				dialog.text = NPCharSexPhrase(npchar, StringFromKey("Common_ItemTrader_100_m"), StringFromKey("Common_ItemTrader_100_f"));
+			}
+			//<-- Эммануэль Пардаль
 			if (GetGlobalTutor())
 			{
 				goto Common_ItemTrader_skipToExit_Common;

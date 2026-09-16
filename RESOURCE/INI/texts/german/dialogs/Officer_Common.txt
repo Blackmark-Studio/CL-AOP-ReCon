@@ -2416,3 +2416,9 @@ Wegen des Rezepts bin ich mir nicht sicher, aber wir haben bei ihm nichts gefund
 Officer_Common_656 {
 Schauen wir mal, was dort ist.
 }
+Officer_Common_657 {
+Käpt'n, bringen wir die Sache erst zu Ende. Danach gehe ich, wenn du es noch willst.
+}
+Officer_Common_658 {
+Gut. Zuerst beenden wir, was wir angefangen haben.
+}

@@ -1,0 +1,111 @@
+Monk_dialog_1 {
+¡Ah, capitán! Confieso que tenía la vaga esperanza de encontrarte por estas calles en un estado algo más decente. Michel me advirtió que nuestros caminos podrían cruzarse, pero jamás imaginé que la espada de Vargas te dejaría marcas tan feas.
+}
+Monk_dialog_2 {
+El almirante Le Basque mencionó que ahora usted ejerce como pastor aquí, Bertrand. Añadió que si alguien podía ayudarlo a retomar el buen camino, sería usted.
+}
+Monk_dialog_3 {
+Como pastor, se lo concedo. Pero como médico, solo por voluntad de un destino cruel. Antes de que yo llegara a este campamento, toda la medicina local se reducía a un cuartillo de ron fuerte, una hoja al rojo vivo y el amistoso consejo de no entregar el alma antes del amanecer. Tuve que ampliar un poco los límites de mi vocación.
+}
+Monk_dialog_4 {
+Me alegra ver que las lúgubres mazmorras no te han hecho perder el sentido del humor.
+}
+Monk_dialog_5 {
+Desde aquellas malditas catacumbas, Capitán, me siento inmensamente feliz cada día que puedo curar las heridas de otros en lugar de esperar a que los verdugos castellanos se dignen a degollarme. Y por haberme traído a mí y a esas desafortunadas damas de vuelta a la luz del día, le estaré eternamente agradecido. Así que, apóyese en este barril y déjeme ver qué recuerdo le dejó el difunto Don Alonso.
+}
+Monk_dialog_6 {
+Si tu arte es capaz de ayudarme a recuperarme, no me resistiré.
+}
+Monk_dialog_7 {
+Gracias, pero ahora no. Necesito recuperarme un poco.
+}
+Monk_dialog_8 {
+Creo que esta vez no será necesaria la cirugía. Pero recordaré su generosa oferta.
+}
+Monk_dialog_9 {
+Saludos, Capitán. ¿La necesidad de un médico experto lo ha traído de nuevo ante mí, o simplemente está aquí para pasar el rato conversando con el hombre al que tuvo la generosidad de rescatar del cautiverio castellano?
+}
+Monk_dialog_10 {
+La herida que te infligió Vargas aún persiste. ¿No quieres echarle un vistazo?
+}
+Monk_dialog_11 {
+¿Qué tal te va con tu nuevo ministerio entre estos bucaneros desesperados?
+}
+Monk_dialog_12 {
+No me atrevo a distraerte más de tus justas labores. Hasta entonces, Bertrand.
+}
+Monk_dialog_13 {
+¿Qué tal te va con tu nuevo ministerio entre estos bucaneros desesperados?
+}
+Monk_dialog_14 {
+Pasaba por allí y decidí presentar mis respetos. Hasta luego, Bertrand.
+}
+Monk_dialog_15 {
+¿Un nuevo ministerio? ¡Ja! Juzguen ustedes mismos: ayer, un blasfemo desesperado exigió que bendijeran su mosquete, otro suplicó que le extrajeran una bala castellana de un lugar muy delicado, y un tercero, tras dignarse a presentarse a confesarse, se quedó profundamente dormido justo antes de cometer su segundo pecado mortal. Como ven, no hay tiempo para aburrirse.
+}
+Monk_dialog_16 {
+¿Y aún no has huido de semejante bandada?
+}
+Monk_dialog_17 {
+¿Escapar? ¿Después de las mazmorras de las que me rescataste? ¡Ni hablar! Estos aventureros tienen unas nociones de piedad bastante peculiares y salvajes, pero no dejan que las mujeres se pudran en mazmorras húmedas ni venden la vida de otros a la Inquisición. Además, me necesitan aquí, y por ahora, eso me basta.
+}
+Monk_dialog_18 {
+Bueno, parece que finalmente has encontrado tu verdadera vocación.
+}
+Monk_dialog_19 {
+Quítese la chaqueta, capitán. Tenga cuidado... Maldita sea. Esto es mucho peor de lo que imaginaba. El acero de Toledo ha penetrado mucho más profundamente, y los bordes de la herida ya están empezando a cicatrizar mal. Un simple cambio de vendaje no va a solucionar el problema.
+}
+Monk_dialog_20 {
+No te andes con rodeos, Bertrand. ¿Qué tan grave es?
+}
+Monk_dialog_21 {
+La situación es tan grave que si pasaras un par de días más en el mar, ahogando tu dolor en ron en lugar de cuidarte, estarías buscando un sacerdote para tu última comunión. Tendré que drenar el absceso, enjuagarlo bien con vino y coserlo firmemente. Pero te juro por mi sotana que no te destriparé aquí mismo, en el polvo de la calle. Necesitamos una cama limpia, luz y agua hirviendo; de lo contrario, la fiebre terminará lo que Vargas empezó.
+}
+Monk_dialog_22 {
+Así no tendremos que buscar una habitación libre. Tengo mi propia casa aquí. Coge tus herramientas, Bertrand, y sígueme.
+}
+Monk_dialog_23 {
+Bueno, capitán, ya puede abrir los ojos. Debo admitir que su colchón de plumas era justo lo que necesitaba: permaneció allí tres horas completamente inconsciente mientras yo le curaba la herida. El absceso está limpio, los bordes están unidos y el vendaje es nuevo. Le recomiendo encarecidamente que, al menos por hoy, se quede aquí y no se crea un héroe inmortal.
+}
+Monk_dialog_24 {
+¿Tres horas? Resulta que el trabajo era mucho más serio de lo que dabas a entender. Gracias, Bertrand. Prometo solemnemente que mi espada no saldrá de su vaina hasta mañana por la mañana.
+}
+Monk_dialog_25 {
+¿De dónde sacas siempre tantas pociones y hierbas medicinales, Bertrand?
+}
+Monk_dialog_26 {
+Bertrand, sobre el cultivo de hierbas medicinales.
+}
+Monk_dialog_27 {
+Ah... He oído que los jóvenes de sangre caliente como nuestro Jaco se juegan la vida constantemente, internándose en selvas peligrosas por un par de raíces. Y pensé: ¿para qué tentar a la suerte si podemos cultivarlo todo aquí mismo? En mis tiempos de la abadía estaba a cargo del huerto medicinal y aún recuerdo muy bien el oficio.\nLa tierra de aquí es fértil: las plantas maduran rápido, en apenas 5–8 días. Pero recuerda: si antes de una nueva siembra no recoges la cosecha anterior, habrá que arrancar y tirar todas las plantas que hayan quedado. ¡Así que hay que cosechar a tiempo!
+}
+Monk_dialog_28 {
+Es una idea sensata, Bertrand. ¿Puedes plantar ciertas hierbas para mí?
+}
+Monk_dialog_29 {
+Tentador, padre, pero ahora no tengo tiempo para la herboristería.
+}
+Monk_dialog_30 {
+¡Pero las semillas ya están en la tierra! La paciencia es una gran virtud. Vuelve dentro de una semana aproximadamente; para entonces todo debería estar maduro.
+}
+Monk_dialog_31 {
+Ay, mi memoria ya no es la que era... Volveré más tarde.
+}
+Monk_dialog_32 {
+La tierra está lista para sembrar. ¿Qué vamos a plantar? Calcula la cosecha para dentro de una semana aproximadamente.
+}
+Monk_dialog_33 {
+Siembra toda la parcela de matricaria.
+}
+Monk_dialog_34 {
+Que crezca ginseng en la parcela.
+}
+Monk_dialog_35 {
+Cultivaremos raíz de jengibre.
+}
+Monk_dialog_36 {
+Divide la parcela: un poco de cada especie.
+}
+Monk_dialog_37 {
+Por ahora no necesito nada, Bertrand. Hablaremos después.
+}

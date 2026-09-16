@@ -1072,8 +1072,8 @@ int Whr_InitDayStorm(int n)
 	Weathers[n].skip = true;  //добавленная
 	Weathers[n].Tornado = false; //пока торнадо парит в воздухе и проходит сквозь НПС оно не нужно на сухопутных локациях
 	Weathers[n].Shark = false;
-	Weathers[n].Lights = 1;
-	Weathers[n].Night = true;
+	Weathers[n].Lights = false;
+	Weathers[n].Night = false;
 
 	Weathers[n].Shadow.Density.Head = argb(255,96,96,96);
 	Weathers[n].Shadow.Density.Foot = argb(255,96,96,64);

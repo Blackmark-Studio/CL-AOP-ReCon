@@ -1,0 +1,39 @@
+Gibraltar_Shipyard_1 {
+What questions?
+}
+Gibraltar_Shipyard_2 {
+What do you want?
+}
+Gibraltar_Shipyard_3 {
+@<RandPhraseSimple>
+}
+Gibraltar_Shipyard_4 {
+Not long ago, you tried to ask me a question...
+}
+Gibraltar_Shipyard_5 {
+In my own shipyard, and in the whole town for that matter, I’ve never seen anyone so uniformly curious.
+}
+Gibraltar_Shipyard_6 {
+What kind of questions are these? My job is to build ships, so let’s get to it.
+}
+Gibraltar_Shipyard_7_m {
+I’ve changed my mind...
+}
+Gibraltar_Shipyard_7_f {
+I’ve changed my mind...
+}
+Gibraltar_Shipyard_8 {
+I have nothing to say right now.
+}
+Gibraltar_Shipyard_9 {
+@<RandPhraseSimple>
+}
+Gibraltar_Shipyard_10 {
+Hmm, something’s happened to my memory...
+}
+Gibraltar_Shipyard_11 {
+Hmm, however...
+}
+Gibraltar_Shipyard_12 {
+Let’s...
+}

@@ -16,3 +16,16 @@ Czy zapłacisz?
 Officer info {Twoi oficerowie domagają się miesięcznego wynagrodzenia:}
 All info {Kwota netto:}
 Insert Disk Ok {Proszę włożyć pierwszą płytę gry.}
+
+BadSaveNoVersion
+{
+Nie udało się ustalić wersji gry dla wybranego zapisu
+}
+BadSaveVersion
+{
+Wersja gry dla wybranego zapisu
+}
+BadSaveInfo
+{
+Tę wersję można przywrócić w Steam.
+}

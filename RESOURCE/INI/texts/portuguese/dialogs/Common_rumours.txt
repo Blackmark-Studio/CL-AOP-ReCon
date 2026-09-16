@@ -523,3 +523,54 @@ Ah, capitão, você teve o azar de cruzar o caminho daquele demônio que os mari
 Common_rumours_175 {
 Sabe, nossa paróquia está precisando urgentemente de velas para a igreja. Por que ninguém quer ajudar? Pelo menos pela salvação da própria alma...
 }
+Common_rumours_176 {
+Imaginem só, @<pchar.GenQuest.EncGirl.name> finalmente foi capturada! É uma pena, claro, que seja apenas uma ladra e não uma bruxa. Já faz muito tempo que não temos nesta cidade um espetáculo que realmente valha a pena assistir, ha!
+}
+CapBloodLine_Rumour_1 {
+Ouvi dizer que os escravos de Barbados se revoltaram! E não foi uma revolta qualquer! Enquanto os espanhóis, que naquele dia caíram sobre Bridgetown, saqueavam a cidade, os escravos - imaginem só! - roubaram-lhes uma fragata inteira mesmo debaixo dos narizes! Bem feito para aqueles cães. É uma pena que os fugitivos acabem certamente capturados e enforcados até ao último homem.
+}
+CapBloodLine_Rumour_2 {
+Já ouviram dizer que um punhado de escravos enganou o próprio coronel Bishop? Imaginem só! Fugiram da ilha num navio e depois atraíram o coronel para bordo, despiram-no completamente e atiraram-no ao mar como um cachorro sarnento. Não me admiraria se o velho oferecesse agora uma fortuna a quem lhe trouxesse as cabeças deles numa bandeja.
+}
+CapBloodLine_Rumour_3 {
+Como assim, ainda não ouviram? Os espanhóis atacaram Barbados - e regressaram com o rabo entre as pernas! É verdade que saquearam a cidade, mas alguém lhes roubou o próprio navio! Uns dizem que foram os escravos, outros que os habitantes da cidade tiveram mão no caso - quem poderá saber agora? Uma coisa é certa: há muito que os espanhóis não sofriam tamanha humilhação.
+}
+CapBloodLine_Rumour_4 {
+Todo o Arquipélago só fala do ataque espanhol a Barbados. Um forte inteiro não conseguiu resistir a uma única fragata! Mas um punhado de escravos castigou aqueles malditos fidalgos melhor do que quaisquer soldados: levaram-lhes o belo navio com todo o saque a bordo - e desapareceram sem deixar rasto!
+}
+CapBloodLine_Rumour_5 {
+Dizem que, enquanto os espanhóis saqueavam Barbados, um escravo chamado Peter Blood iniciou uma revolta. Reuniu um punhado de homens corajosos, tomou aos invasores uma enorme fragata e fez-se ao mar como um verdadeiro capitão! Que homem, não acham? Esperem lá... como disseram que se chamavam?
+}
+CapBloodLine_Rumour_6 {
+O coronel Bishop de Barbados está furioso - tão furioso que até os diabos ficam enjoados! Primeiro, os espanhóis destruíram-lhe o forte e saquearam a sua querida Bridgetown. Depois, os escravos da própria plantação - de mãos nuas, conseguem imaginar? - estrangularam os guardas de uma fragata espanhola e tomaram o navio para si. Por fim, atraíram o próprio Bishop para bordo, mantiveram-no prisioneiro e atiraram-no ao mar como um saco de palha. Assim vão as coisas, meu amigo.
+}
+CapBloodLine_BarbadosRumour_1 {
+Enquanto os fazendeiros e os soldados se escondiam nas caves, Peter Blood, o nosso médico - o mesmo homem que pôs metade da ilha novamente de pé - foi o único que não perdeu a coragem! Reuniu um punhado de escravos e roubou uma fragata mesmo debaixo dos narizes dos espanhóis. Eu conheço-o pessoalmente - aquele homem tem mãos de ouro. Que Deus o proteja, onde quer que esteja agora. Talvez tenha sido melhor ter fugido: Bishop tê-lo-ia levado para a sepultura antes do tempo, lembrem-se das minhas palavras.
+}
+CapBloodLine_BarbadosRumour_2 {
+Foi assim que o tão elogiado doutor Blood mostrou a sua verdadeira face! Criámos uma serpente junto ao peito e, mal surgiu a oportunidade, ele roubou um navio e fugiu! E como se fugir não bastasse, atraiu o coronel Bishop para bordo e atirou-o ao mar como se fosse lixo! Depois de toda a liberdade que o coronel lhe concedeu... Lembrem-se das minhas palavras: um homem desses não tem lugar entre gente honesta!
+}
+CapBloodLine_SpanishRumour_1 {
+Aquele demónio do Blood - que ele e toda a sua linhagem sejam amaldiçoados até à sétima geração! - assassinou a sangue-frio don Diego de Espinosa, capitão do «Cinco Llagas», e depois ainda ousou apoderar-se do navio dele! Não me admiraria se tivesse vendido a alma a Satanás - como explicar de outro modo que um simples condenado tenha conseguido enganar toda a gente?
+}
+CapBloodLine_SpanishRumour_2 {
+Já ouviram como aquele canalha do Peter Blood enganou o próprio don Miguel de Espinosa? Encheu-lhe a cabeça de mentiras e adormeceu-lhe a desconfiança, depois assassinou traiçoeiramente o irmão dele e apoderou-se do navio! É uma vergonha para toda a Espanha que um patife desses ainda não esteja a balançar na forca!
+}
+CapBloodLine_SpanishRumour_3 {
+Santa Mãe de Deus, protegei-nos daquele monstro infernal chamado Peter Blood! Ele degolou don Diego a sangue-frio e por pouco não apanhou também o filho dele! Juro que, se a Santíssima Virgem me permitir encontrá-lo uma única vez, hei de cravar-lhe uma faca entre as costelas com as minhas próprias mãos. Lembrem-se das minhas palavras!
+}
+CapBloodLine_SpanishRumour_4 {
+Não encontraram don Miguel de Espinosa por acaso? Não? Dizem que, depois de aquele canalha do Blood o ter enganado como se fosse o mais tolo dos grumetes e escapado sem castigo, don Miguel ficou grisalho numa só noite. E nós pensávamos que ele não era homem para se deixar enganar com tanta facilidade...
+}
+CapBloodLine_SpanishBloodRumour_1 {
+Já ouviram falar daquele condenado demoníaco que assassinou a sangue-frio don Diego de Espinosa, capitão do «Cinco Llagas», e ainda por cima enganou o irmão dele? Para piorar tudo, apoderou-se do navio de don Diego, o «Cinco Llagas». Que seja amaldiçoado até à sétima geração! Não me admiraria se tivesse vendido a alma a Satanás - como explicar de outro modo que um simples escravo fugitivo tenha conseguido enganar toda a gente?
+}
+CapBloodLine_SpanishBloodRumour_2 {
+Dizem que um escravo fugitivo enganou o próprio don Miguel de Espinosa. Encheu-lhe a cabeça de mentiras e adormeceu-lhe a desconfiança, depois assassinou traiçoeiramente o irmão dele e apoderou-se do navio! É uma vergonha para toda a Espanha que um patife desses ainda não tenha ganho uma gravata de cânhamo!
+}
+CapBloodLine_SpanishBloodRumour_3 {
+Santa Mãe de Deus, protegei-nos daquele monstro infernal que degolou don Diego e por pouco não apanhou também o filho dele! Juro que, se algum dia se cruzar comigo, hei de cravar-lhe uma faca entre as costelas com as minhas próprias mãos. Lembrem-se das minhas palavras! Sabem como ele se chama?
+}
+CapBloodLine_SpanishBloodRumour_4 {
+Já ouviram falar de don Miguel de Espinosa? Dizem que um escravo fugitivo o enganou como se fosse o mais tolo dos grumetes, assassinou o irmão dele e escapou sem castigo. Dizem que don Miguel ficou grisalho numa só noite depois disso. E nós pensávamos que ele não era homem para se deixar enganar com tanta facilidade...
+}

@@ -241,3 +241,24 @@ Dijo que ahora va hacia los ingleses. Creo que mencionó @<XI_ConvertString>, pe
 Villemstad_Usurer_66 {
 Y dijiste que no tenías ni idea. ¡Pues muchas gracias!
 }
+Villemstad_Usurer_67 {
+Decidme, mynheer, ¿estáis casado?
+}
+Villemstad_Usurer_68 {
+Debo confesar que es una pregunta de lo más inesperada. A decir verdad, me habéis dejado un tanto perplejo.
+}
+Villemstad_Usurer_69 {
+Me gustaría comprar un vestido digno de la elevada posición de vuestra esposa.
+}
+Villemstad_Usurer_70 {
+¡Ah, conque se trata de eso! Estoy casado, pero veréis, mi esposa es una dama de formas generosas. Me temo que, aunque aceptara venderos algo de su guardarropa, necesitaríais más de un día para recortarlo y ajustarlo a vuestra talla.
+}
+Villemstad_Usurer_71 {
+Qué lástima. Precisamente no dispongo de tanto tiempo.
+}
+Villemstad_Usurer_72 {
+Será mejor que preguntéis a los tenderos de la ciudad. Quizá alguno tenga el vestido que necesitáis.
+}
+Villemstad_Usurer_73 {
+Gracias. Seguiré vuestro consejo. Adiós.
+}

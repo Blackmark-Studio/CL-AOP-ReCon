@@ -537,6 +537,11 @@ DuglasSchool             {Entraînement spécial de mousquetaire}
 perkDuglasSchool          {Le personnage a suivi une formation selon une méthodologie complexe et rare des écoles de tir d'élite de l'Ancien Monde.
 ~
 Seuls ceux qui maîtrisent parfaitement cette base classique rare sont capables d'utiliser des types de mousquets rares et expérimentaux.}
+legendGuideRead {Légende en devenir}
+perklegendGuideRead {Vous avez lu un petit carnet trouvé par hasard, rempli de conseils brefs mais précieux.
+~
+Augmente les valeurs de base de l’Énergie et de la Santé de 5 et 10 points respectivement.}
+
 Energaiser {Énergisant}
 perkEnergaiser {Le personnage est au sommet de ses capacités physiques, ce qui permet à l'énergie de se régénérer 1,5 fois plus vite.}
 LoyalOff {Loyauté}

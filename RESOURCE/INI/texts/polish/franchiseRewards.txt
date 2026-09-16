@@ -1,0 +1,27 @@
+condition_subscribeItem
+{
+Mały notatnik wypełniony krótkimi, ale ważnymi wskazówkami. Pewnego dnia po prostu znalazłeś go wśród swoich rzeczy i od tej pory się z nim nie rozstajesz.
+}
+condition_legendGuide
+{
+Ten przedmiot pojawi się w grze, jeśli obserwujesz stronę
+Caribbean Legend
+}
+condition_indian_officer
+{
+Ten oficer z zadania pojawi się w linii fabularnej Askolda (początek - „Poszukiwania proszku z mumii”), jeśli posiadasz
+Caribbean Legend lub zdobyłeś osiągnięcie „Twardszy niż żelazo” we wczesnych testach gry.
+}
+indian_officer_desc
+{
+Indianin Muskogee Tichingitu i jego rodowy muszkiet wesprą cię w trudnym korsarskim rzemiośle.
+~
+Ten niedościgniony strzelec jest gotów złożyć przysięgę wierności twardszą niż żelazo, jeśli tylko uwolnisz go z lochu, do którego trafił przez czysty przypadek.
+}
+noRewardYetMessage
+{
+Ta nagroda nie jest jeszcze dostępna,
+śledź aktualizacje!
+}
+steamButtonAlreadyGot {Odebrano}
+steamButtonGet {Odbierz}

@@ -1,0 +1,38 @@
+Tavernkeeper_dialog_1 {
+Alors c'est toi, le capitaine @<pchar>. J'avais à peine eu le temps de poser mes os sous cette toile tendue que Nicolas Rimalie me faisait déjà le récit de tes exploits. Cela fait si longtemps que ce bretteur enragé et moi partageons le pain et la poudre que, sur mon honneur, j'ai oublié lequel de nous a sauvé la vie de l'autre en premier, et lequel n'a toujours pas remboursé sa maudite dette de cartes.
+}
+Tavernkeeper_dialog_2 {
+Heureux d'entendre que la parole de Rimalie pèse autant ici. Bienvenue à la Tortue, l'ami.
+}
+Tavernkeeper_dialog_3 {
+Salut, capitaine @<pchar> ! Comme tu vois, je monte toujours la même garde devant ce maudit tonneau de rhum. Si ton navire a besoin d'hommes à l'œil sûr et à la main ferme, tu n'as qu'à le dire.
+}
+Tavernkeeper_dialog_4 {
+Capitaine @<pchar> ! À l'aube, quelques vieux chasseurs endurcis sont sortis de la jungle : des sauvages, certes, mais qui sentent la poudre jusqu'aux os. Si tu cherches des tireurs de premier ordre, je me ferai un plaisir de glisser un mot en ta faveur.
+}
+Tavernkeeper_dialog_5 {
+Encore toi, capitaine @<pchar>. C'est bon signe : la mer n'a donc pas encore avalé ton navire. Si tu cherches des hommes fidèles, deux ou trois casse-cou sont justement en quête d'un chef qui en vaille la peine.
+}
+Tavernkeeper_dialog_6 {
+@<LinkRandPhrase>
+}
+Tavernkeeper_dialog_7 {
+C'est précisément pour cela que je suis venu. Tu aurais aujourd'hui quelques tireurs d'élite sous la main ?
+}
+Tavernkeeper_dialog_8 {
+J'ai déjà tout mon monde, merci. Je suis seulement venu me mouiller le gosier et prendre de vos nouvelles.
+}
+Tavernkeeper_dialog_9 {
+Merci, capitaine. Je commence tout juste à prendre racine ici, mais la garantie de Nicolas vaut pour moi plus que de l'or. La Tortue regorge de canaille, mais les vrais vétérans du boucan ne signeront jamais le rôle d'équipage du premier aventurier venu. En revanche, si je leur souffle que tu es une personne d'honneur, la conversation prendra tout de suite une autre tournure.
+}
+Tavernkeeper_dialog_10 {
+Un tel appui ne sera pas de trop.
+}
+Tavernkeeper_dialog_11 {Dans ce cas, considère que l'affaire est conclue. Si ton navire a besoin d'hommes sûrs, tu me trouveras toujours ici, près de ce tonneau, que ce soit sous le soleil de midi ou au cœur de la nuit.
+Les boucaniers ont l'habitude de sortir de la jungle aux heures les plus imprévisibles : épuisés, en loques et mauvais comme des diables. Il leur faut aussitôt une chope de rhum brûlant et quelqu'un pour écouter leurs fanfaronnades avant qu'ils ne s'égorgent entre eux en se disputant le butin. Voilà pourquoi je ne quitte jamais mon poste. Je prendrai les renseignements qu'il faut et je te mettrai en relation avec ceux dont les balles ne manquent jamais leur cible.}
+Tavernkeeper_dialog_12 {
+Quelle admirable dévotion au métier. Voyons donc qui tu peux me proposer dès maintenant.
+}
+Tavernkeeper_dialog_13 {
+Entendu. Je passerai certainement sous ton toit hospitalier dès que j'aurai besoin de tireurs.
+}

@@ -1,76 +1,76 @@
-LSC_Q2Utilite_1 {夏普船长刚刚来过，我亲眼见到他。但现在他已经不在镇上了，我也不知道他去了哪里。}
-LSC_Q2Utilite_2 {夏普船长来过我们镇。我不知道他现在在哪儿，但他肯定不在这里。}
-LSC_Q2Utilite_3 {巴索洛缪·夏普船长就在几天前离开了这座城市……}
-LSC_Q2Utilite_4 {巴托洛缪·夏普船长曾来过我们镇上，一如既往地“留下了痕迹”……不过他现在已经不在这里了。听说他去了@<XI_ConvertString>。}
-LSC_Q2Utilite_5 {你知道吗，Sharp船长最近来过镇上。Bartholomew是个很开朗的海盗……不过，他离开我们城市也好。好像他去了@<XI_ConvertString>。}
-LSC_Q2Utilite_6 {你知道吗，前阵子Sharp船长来过我们这里。不过很遗憾，这次他没有带来新的加勒比笑话，真可惜……现在他也不在镇上，听说他去了@<XI_ConvertString>。也许他们会更幸运吧……}
-LSC_Q2Utilite_7 {你知道吗，Sharp船长刚刚乘他的双桅船离开了城里。如果你早到半小时，就能在港口见到他了。}
-LSC_Q2Utilite_8 {夏普船长……他可真是个厉害的船长。你知道吗，他刚刚离开了我们小镇。如果你快点，也许还能在附近海域追上他。}
-LSC_Q2Utilite_9 {巴索洛缪·夏普就在一个小时前刚刚离港出海。}
-LSC_Q2Utilite_10 {几分钟前，Captain Sharp和我正面相遇。他现在还在这附近的街上闲逛——奇怪，他竟然没在妓院……}
-LSC_Q2Utilite_11 {刚刚在街上碰巧和Captain Sharp聊了几句。这人挺有意思的，你知道吗……}
-LSC_Q2Utilite_12 {夏普船长现在正在街上闲逛。我们都在等着看他接下来又会搞什么名堂……}
-LSC_Q2Utilite_13 {你知道吗，本地商人@<GetFullName>又派自己的弗吕特船“@<pchar>”去旧世界采购货物了。那艘弗吕特船最近刚离港。}
-LSC_Q2Utilite_14 {嗯，我们本地的商人最近生意不错！@<GetFullName> 又派出了自己的弗吕特船“@<pchar>”去采购货物，这艘船刚刚离开了我们的港口。}
-LSC_Q2Utilite_15 {哎，@<GetFullName>真是越来越有钱了。昨天他的帆船还在港口卸货，今天港口就已经送走他了。那艘名为“@<pchar>”的弗吕特号又出海去运货了，就是这样！}
-LSC_Q2Utilite_16 {在战列舰“Tartarus”上，那是监狱所在}
-LSC_Q2Utilite_17 {在Carolina号护卫舰上}
-LSC_Q2Utilite_18 {在“Ceres Smiti”号弗吕特船上}
-LSC_Q2Utilite_19 {在“Esmeralda”号大帆船上，商店在哪里}
-LSC_Q2Utilite_20 {在“Fleuron”卡拉维尔号上，那里有酒馆}
-LSC_Q2Utilite_21 {在“Fury”快艇的船头}
-LSC_Q2Utilite_22 {在“Fury”帆船的船尾部分}
-LSC_Q2Utilite_23 {在“Gloria”号大帆船上，教堂在哪里}
-LSC_Q2Utilite_24 {在“Pluto”号长笛帆船上}
-LSC_Q2Utilite_25 {在“Protector”号护卫舰上}
-LSC_Q2Utilite_26 {在战舰“San Augustin”上，那里是海军上将的官邸}
-LSC_Q2Utilite_27 {在“San Gabriel”帆船的船首部分}
-LSC_Q2Utilite_28 {在“San Gabriel”帆船的船尾部分}
-LSC_Q2Utilite_29 {在“Santa Florentina”号双桅船上}
-LSC_Q2Utilite_30 {在“Eva”号大帆船上}
-LSC_Q2Utilite_31 {在维拉斯科号大帆船上}
-LSC_Q2Utilite_32 {在Phoenix平台}
-LSC_Q2Utilite_33 {在“Eva”号大型帆船上}
-LSC_Q2Utilite_34 {在“Carolina”号护卫舰上}
-LSC_Q2Utilite_35 {在“Ceres Smithy”号弗吕特船上}
-LSC_Q2Utilite_36 {在“Esmeralda”号大型帆船，在商店}
-LSC_Q2Utilite_37 {在Phoenix平台}
-LSC_Q2Utilite_38 {在“Fernando Diffindur”号弗吕特船上}
-LSC_Q2Utilite_39 {在“Fleuron”卡拉维尔号，在酒馆}
-LSC_Q2Utilite_40 {在“Fury”快艇上}
-LSC_Q2Utilite_41 {在“Gloria”号大型帆船，在教堂}
-LSC_Q2Utilite_42 {在舰队“Pluto”}
-LSC_Q2Utilite_43 {在“Protector”号护卫舰上}
-LSC_Q2Utilite_44 {在战舰“San Augustin”号上，海军上将官邸内}
-LSC_Q2Utilite_45 {在“San Gabriel”帆船上}
-LSC_Q2Utilite_46 {在“Santa Florentina”双桅船上}
-LSC_Q2Utilite_47 {在战列舰“Tartarus”的监狱里}
-LSC_Q2Utilite_48 {在“Velasco”号大帆船上}
-LSC_Q2Utilite_49 {@<GetStrSmallRegister>‘@<sld>’船长现在就在城里。我记得他叫@<GetFullName>。他现在应该在港口管理处。}
-LSC_Q2Utilite_50 {你知道吗，@<GetStrSmallRegister>“@<sld>”船长现在就在港口管理处。}
-LSC_Q2Utilite_51 {如果你想和@<GetStrSmallRegister>“@<sld>”船长谈话，就直接去找港口主管。@<GetFullName>现在就在那儿……}
+LSC_Q2Utilite_1 {夏普船长刚刚来过， 我亲眼见到他。 但现在他已经不在镇上了， 我也不知道他去了哪里。 }
+LSC_Q2Utilite_2 {夏普船长来过我们镇。 我不知道他现在在哪儿， 但他肯定不在这里。 }
+LSC_Q2Utilite_3 {巴塞洛缪.夏普船长就在几天前离开了这座城市…… }
+LSC_Q2Utilite_4 {巴塞洛缪.夏普船长曾来过我们镇上， 一如既往地“留下了痕迹”…… 不过他现在已经不在这里了。 听说他去了@<XI_ConvertString>。 }
+LSC_Q2Utilite_5 {你知道吗， 夏普船长最近来过镇上。 巴塞洛缪是个很开朗的海盗…… 不过， 他离开我们城市也好。 好像他去了@<XI_ConvertString>。 }
+LSC_Q2Utilite_6 {你知道吗， 前阵子夏普船长来过我们这里。 不过很遗憾， 这次他没有带来新的加勒比笑话， 真可惜…… 现在他也不在镇上， 听说他去了@<XI_ConvertString>。 也许他们会更幸运吧…… }
+LSC_Q2Utilite_7 {你知道吗， 夏普船长刚刚乘他的双桅船离开了城里。 如果你早到半小时， 就能在港口见到他了。 }
+LSC_Q2Utilite_8 {夏普船长…… 他可真是个厉害的船长。 你知道吗， 他刚刚离开了我们小镇。 如果你快点， 也许还能在附近海域追上他。 }
+LSC_Q2Utilite_9 {巴塞洛缪.夏普就在一个小时前刚刚离港出海。 }
+LSC_Q2Utilite_10 {几分钟前， 夏普船长和我正面相遇。 他现在还在这附近的街上闲逛——奇怪， 他竟然没在妓院…… }
+LSC_Q2Utilite_11 {刚刚在街上碰巧和夏普船长聊了几句。 这人挺有意思的， 你知道吗…… }
+LSC_Q2Utilite_12 {夏普船长现在正在街上闲逛。 我们都在等着看他接下来又会搞什么名堂…… }
+LSC_Q2Utilite_13 {你知道吗， 本地商人@<GetFullName>又派自己的福禄特帆船 “@<pchar>”去旧世界采购货物了。 那艘福禄特帆船最近刚离港。 }
+LSC_Q2Utilite_14 {嗯， 我们本地的商人最近生意不错！ @<GetFullName>又派出了自己的福禄特帆船 “@<pchar>”去采购货物， 这艘船刚刚离开了我们的港口。 }
+LSC_Q2Utilite_15 {哎， @<GetFullName>真是越来越有钱了。 昨天他的帆船还在港口卸货， 今天港口就已经送走他了。 那艘名为“@<pchar>”的福禄特帆船又出海去运货了， 就是这样！ }
+LSC_Q2Utilite_16 {在战列舰 “塔尔塔罗斯号” 上， 那里有监狱}
+LSC_Q2Utilite_17 {在护卫舰 “卡罗莱纳号” 上}
+LSC_Q2Utilite_18 {在福禄特帆船 “谷神星铁匠号” 上}
+LSC_Q2Utilite_19 {在盖伦帆船 “埃斯梅拉达号” 上， 那里有商店}
+LSC_Q2Utilite_20 {在卡拉维尔帆船 “弗莱龙号” 上， 那里有酒馆}
+LSC_Q2Utilite_21 {在皮纳斯帆船 “狂怒号” 的船头}
+LSC_Q2Utilite_22 {在皮纳斯帆船 “狂怒号” 的船尾部分}
+LSC_Q2Utilite_23 {在盖伦帆船 “荣耀号” 上， 那里有教堂}
+LSC_Q2Utilite_24 {福禄特帆船 “冥王星号” 上}
+LSC_Q2Utilite_25 {在轻型护卫舰 “守护者号” 上}
+LSC_Q2Utilite_26 {在战舰 “圣奥古斯丁号” 上， 那里是海军上将的官邸}
+LSC_Q2Utilite_27 {在三桅帆船 “圣加百列号” 的船首部分}
+LSC_Q2Utilite_28 {在三桅帆船 “圣加百列号” 的船尾部分}
+LSC_Q2Utilite_29 {在双桅横帆船 “圣弗洛伦蒂娜号” 上}
+LSC_Q2Utilite_30 {在盖伦帆船 “夏娃号” 上}
+LSC_Q2Utilite_31 {在盖伦帆船 “维拉斯科号” 上}
+LSC_Q2Utilite_32 {在 “凤凰号” 平台}
+LSC_Q2Utilite_33 {在盖伦帆船 “夏娃号” 上}
+LSC_Q2Utilite_34 {在护卫舰 “卡罗莱纳号” 上}
+LSC_Q2Utilite_35 {在福禄特帆船 “谷神星铁匠号” 上}
+LSC_Q2Utilite_36 {在盖伦帆船 “埃斯梅拉达号” 上， 在商店里}
+LSC_Q2Utilite_37 {在 “凤凰号” 平台}
+LSC_Q2Utilite_38 {在福禄特帆船 “费尔南达.迪芬杜尔号” 上}
+LSC_Q2Utilite_39 {在卡拉维尔帆船 “弗莱龙号” 上， 在酒馆里}
+LSC_Q2Utilite_40 {在皮纳斯帆船 “狂怒号” 上}
+LSC_Q2Utilite_41 {在盖伦帆船 “荣耀号” 上， 在教堂里}
+LSC_Q2Utilite_42 {在福禄特帆船 “冥王星号” 上}
+LSC_Q2Utilite_43 {在轻型护卫舰 “守护者号” 上}
+LSC_Q2Utilite_44 {在战舰 “圣奥古斯丁号” 上， 在海军上将官邸内}
+LSC_Q2Utilite_45 {在三桅帆船 “圣加百列号” 上}
+LSC_Q2Utilite_46 {在双桅横帆船 “圣弗洛伦蒂娜号” 上}
+LSC_Q2Utilite_47 {在战列舰 “塔尔塔罗斯号” 的监狱里}
+LSC_Q2Utilite_48 {在盖伦帆船 “维拉斯科号” 上}
+LSC_Q2Utilite_49 {@<GetStrSmallRegister>“@<sld>”船长现在就在城里。 我记得他叫@<GetFullName>。 他现在应该在港务局。 }
+LSC_Q2Utilite_50 {你知道吗， @<GetStrSmallRegister>“@<sld>”船长现在就在港务局。 }
+LSC_Q2Utilite_51 {如果你想和@<GetStrSmallRegister>“@<sld>”船长谈话， 就直接去找港务长。 @<GetFullName>现在就在那儿…… }
 LSC_Q2Utilite_52 {@<LinkRandPhrase>}
-LSC_Q2Utilite_53 {@<GetStrSmallRegister>“@<sld>”船长正停泊在港口锚地。我记得他叫@<GetFullName>。说实话，这人挺奇怪的——他从不踏上陆地。}
-LSC_Q2Utilite_54 {你知道吗，现在只有乘小船去港口才能见到@<GetStrSmallRegister>“@<sld>”船长。船停在外锚地，船长不进城，更喜欢待在船上。他怎么还没腻呢……}
-LSC_Q2Utilite_55 {如果你想和@<GetStrSmallRegister>“@<sld>”船长谈谈，就去港口吧。我记得他叫@<GetFullName>……总之，他的船已经在港口抛锚了，但他从不上岸。真是个地道的老水手，连甲板的摇晃都舍不得离开。}
+LSC_Q2Utilite_53 {@<GetStrSmallRegister>“@<sld>”船长正停泊在港口锚地。 我记得他叫@<GetFullName>。 说实话， 这人挺奇怪的——他从不踏上陆地。 }
+LSC_Q2Utilite_54 {你知道吗， 现在只有乘小船去港口才能见到@<GetStrSmallRegister>“@<sld>”船长。 船停在外锚地， 船长不进城， 更喜欢待在船上。 他怎么还没腻呢…… }
+LSC_Q2Utilite_55 {如果你想和@<GetStrSmallRegister>“@<sld>”船长谈谈， 就去港口吧。 我记得他叫@<GetFullName>…… 总之， 他的船已经在港口抛锚了， 但他从不上岸。 真是个地道的老水手， 连甲板的摇晃都舍不得离开。 }
 LSC_Q2Utilite_56 {@<LinkRandPhrase>}
-LSC_Q2Utilite_57 {船长@<GetStrSmallRegister>“@<sld>”在镇上。我想他叫@<GetFullName>。}
-LSC_Q2Utilite_58 {你知道吗，现在可以在城里找到@<GetStrSmallRegister>“@<sld>”船长。}
-LSC_Q2Utilite_59 {如果你想和@<GetStrSmallRegister>“@<sld>”船长谈谈，可以去街上找他。我记得他叫@<GetFullName>……}
+LSC_Q2Utilite_57 {船长@<GetStrSmallRegister>“@<sld>”在镇上。 我想他叫@<GetFullName>。 }
+LSC_Q2Utilite_58 {你知道吗， 现在可以在城里找到@<GetStrSmallRegister>“@<sld>”船长。 }
+LSC_Q2Utilite_59 {如果你想和@<GetStrSmallRegister>“@<sld>”船长谈谈， 可以去街上找他。 我记得他叫@<GetFullName>…… }
 LSC_Q2Utilite_60 {@<LinkRandPhrase>}
-LSC_Q2Utilite_61 {@<GetStrSmallRegister>“@<sld>”号的船长正停泊在港口。我想他叫@<GetFullName>。}
-LSC_Q2Utilite_62 {你知道吗，@<GetStrSmallRegister>“@<sld>”船长现在就在我们港口。他的船正停泊在锚地。}
-LSC_Q2Utilite_63 {如果你想找@<GetStrSmallRegister>“@<sld>”船长谈谈，可以去我们港口找他的船。我记得他叫@<GetFullName>……}
+LSC_Q2Utilite_61 {@<GetStrSmallRegister>“@<sld>”的船长正停泊在港口。 我想他叫@<GetFullName>。 }
+LSC_Q2Utilite_62 {你知道吗， @<GetStrSmallRegister>“@<sld>”船长现在就在我们港口。 他的船正停泊在锚地。 }
+LSC_Q2Utilite_63 {如果你想找@<GetStrSmallRegister>“@<sld>”船长谈谈， 可以去我们港口找他的船。 我记得他叫@<GetFullName>…… }
 LSC_Q2Utilite_64 {@<LinkRandPhrase>}
-LSC_Q2Utilite_65 {船长，有传言说一艘海盗双桅船目前停靠在@<XI_ConvertString>。当地人看到海盗上岸，并把什么东西装上了他们的船。}
-LSC_Q2Utilite_66 {你能想象吗？有个奴隶一瘸一拐地进了我们镇，浑身伤痕累累，还生着病。他说自己是在“Arrow”号海盗双桅船停靠在@<XI_ConvertString>时逃出来的。我的建议，船长：别去那儿，万一那艘双桅船还在呢？}
-LSC_Q2Utilite_67 {最近大家都在谈论那个修士@<sRumourName>。他很喜欢@<XI_ConvertString>的泉水，说那里的水是圣水！还说能立刻治好他所有的病痛。当然是胡说——我喝了那水，麦粒肿一点没好。\n总之……他上次从那里回来时，气得不行。说是有些恶魔——也许拿着弓，也许拿着弩——在那里作乱，亵渎一切。他拿起锤子去驱赶他们。已经三天了，他还没回来……}
+LSC_Q2Utilite_65 {船长， 有传言说一艘海盗双桅船目前停靠在@<XI_ConvertString>。 当地人看到海盗上岸， 并把什么东西装上了他们的船。 }
+LSC_Q2Utilite_66 {你能想象吗？ 有个奴隶一瘸一拐地进了我们镇， 浑身伤痕累累， 还生着病。 他说自己是在“长箭号”海盗双桅船停靠在@<XI_ConvertString>时逃出来的。 我的建议， 船长： 别去那儿， 万一那艘双桅船还在呢？ }
+LSC_Q2Utilite_67 {最近大家都在谈论那个修士@<sRumourName>。 他很喜欢@<XI_ConvertString>的泉水， 说那里的水是圣水！ 还说能立刻治好他所有的病痛。 当然是胡说——我喝了那水， 麦粒肿一点没好。 \n总之…… 他上次从那里回来时， 气得不行。 说是有些恶魔——也许拿着弓， 也许拿着弩——在那里作乱， 亵渎一切。 他拿起锤子去驱赶他们。 已经三天了， 他还没回来…… }
 LSC_Q2Utilite_68 {@<LinkRandPhrase>}
-LSC_Q2Utilite_69 {有位船长曾经跟我说过，他@<XI_ConvertString>偶然发现了一艘古老的废弃护卫舰。不过，当他试图上去查看时，却发现那艘船根本没有被遗弃：甲板上竟然有骷髅在游荡！有趣的故事，不是吗？常言道，出海喝酒容易让人神志不清。}
-LSC_Q2Utilite_70 {这个世界上什么事都有可能发生！比如说，昨天我的酒友给我讲了个有趣的故事。他在@<XI_ConvertString>钓鱼时，遇到了一艘看起来被遗弃的老护卫舰。不过，当他靠近那艘船时，听到了奇怪的声音，好像有人在甲板上走动。突然，几个水手从黑暗的船舱里走了出来——他们又活了过来——还随着幽灵般的音乐跳起了舞。结果他立刻就跑了……从那以后，他已经喝了一周了……}
-LSC_Q2Utilite_71 {有位熟人给我讲了个惊人的故事。他说@<XI_ConvertString>偶然发现了一艘古老的护卫舰。甲板上满是死去水手的骸骨。最奇特的是，这些骷髅竟然还会动，尽管早已死去，却依然在履行自己的职责。要是我也有那样的毅力就好了，船长！我肯定不会困在这个鬼地方……}
+LSC_Q2Utilite_69 {有位船长曾经跟我说过， 他@<XI_ConvertString>偶然发现了一艘古老的废弃护卫舰。 不过， 当他试图上去查看时， 却发现那艘船根本没有被遗弃： 甲板上竟然有骷髅在游荡！ 有趣的故事， 不是吗？ 常言道， 出海喝酒容易让人神志不清。 }
+LSC_Q2Utilite_70 {这个世界上什么事都有可能发生！ 比如说， 昨天我的酒友给我讲了个有趣的故事。 他在@<XI_ConvertString>钓鱼时， 遇到了一艘看起来被遗弃的老护卫舰。 不过， 当他靠近那艘船时， 听到了奇怪的声音， 好像有人在甲板上走动。 突然， 几个水手从黑暗的船舱里走了出来——他们又活了过来——还随着幽灵般的音乐跳起了舞。 结果他立刻就跑了…… 从那以后， 他已经喝了一周了…… }
+LSC_Q2Utilite_71 {有位熟人给我讲了个惊人的故事。 他说@<XI_ConvertString>偶然发现了一艘古老的护卫舰。 甲板上满是死去水手的骸骨。 最奇特的是， 这些骷髅竟然还会动， 尽管早已死去， 却依然在履行自己的职责。 要是我也有那样的毅力就好了， 船长！ 我肯定不会困在这个鬼地方…… }
 LSC_Q2Utilite_72 {@<LinkRandPhrase>}
-LSC_Q2Utilite_73 {你听说查德·卡珀丢了对他很重要的钥匙吗？现在他正满城跑着找呢……}
+LSC_Q2Utilite_73 {你听说查德.卡帕丢了对他很重要的钥匙吗？ 现在他正满城跑着找呢…… }
 LSC_Q2Utilite_74 {海军上将}
 LSC_Q2Utilite_75 {海军上将}
 LSC_Q2Utilite_76 {酒馆老板}

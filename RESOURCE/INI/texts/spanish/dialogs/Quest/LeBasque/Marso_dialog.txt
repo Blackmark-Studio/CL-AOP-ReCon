@@ -1,0 +1,1022 @@
+Marso_dialog_73_m {
+Escuché de qué hablabas con el posadero. ¿Estás buscando trabajo?
+}
+Marso_dialog_73_f {
+Escuché de qué hablabas con el posadero. ¿Estás buscando trabajo?
+}
+Marso_dialog_74 {
+Tal vez.
+}
+Marso_dialog_75 {
+¿"Posiblemente"? ¿Eres realmente un capitán o solo estás fingiendo serlo?
+}
+Marso_dialog_76 {
+Lo mejor de lo mejor. ¿Y tú quién eres?
+}
+Marso_dialog_77 {
+Etienne Marceau. Represento al hombre que reúne bajo su mando a los mejores capitanes de Tortuga. Mi trabajo consiste en decidir si hay un lugar para ti entre ellos.
+}
+Marso_dialog_78 {
+¿Y quién es este hombre?
+}
+Marso_dialog_79 {
+Ven a conocerlo en persona. Por ahora, no necesitas saber nada más.
+}
+Marso_dialog_80 {
+Excelente. Solo necesito determinar si su oferta me conviene. Eso dependerá de la generosidad de su pago.
+}
+Marso_dialog_81 {
+Nadie se ha quejado jamás de la tacañería de mi jefe. Sube en unos minutos; hablamos allí. Hay demasiada gente curiosa por aquí.
+}
+Marso_dialog_82_m {
+Como ya sabrás, tenemos trabajo y pagamos bien. Lo único que te pedimos son dos cosas: que te calles y que pienses antes de actuar.
+}
+Marso_dialog_82_f {
+Como ya sabrás, tenemos trabajo y pagamos bien. Lo único que te pedimos son dos cosas: mantén la boca cerrada y piensa antes de actuar.
+}
+Marso_dialog_83 {
+No tengo ningún problema con ninguno de los dos. ¿Qué es todo este lío que estás tramando?
+}
+Marso_dialog_84_m {
+Tranquilo, amigo. No creerás que voy a contarlo todo ahora mismo, ¿verdad? Primero veamos de qué estás hecho. Tengo una tarea más fácil para ti.
+}
+Marso_dialog_84_f {
+Tranquilo, amigo. No creerás que voy a contarlo todo ahora mismo, ¿verdad? Primero veamos de qué estás hecho. Tengo una tarea más fácil para ti.
+}
+Marso_dialog_85 {
+Mmm... Bueno, que así sea. ¿Qué hay que hacer y cuál es la recompensa?
+}
+Marso_dialog_86 {
+Aquí vive un tipo llamado Raoul Guillaume. Se gana la vida como intermediario: pasa cartas y pone en contacto a gente. Tiene una reunión esta noche después de medianoche, a las afueras de la ciudad.
+}
+Marso_dialog_87 {
+¿Debería acabar con él?
+}
+Marso_dialog_88 {
+Matar a Raoul es pan comido. Contrataría al primer imbécil que me encontrara. Necesito averiguar para quién trabaja. Por eso necesito a alguien sin ninguna relación con nosotros en Tortuga.
+}
+Marso_dialog_89_m {
+Esta noche, solo tú debes salir de la ciudad y averiguar todo lo que puedas: con quién se reunió, de qué hablaron, cualquier cosa que puedas conseguir. No te quedes mucho tiempo en la jungla cerca de las puertas de la ciudad; ahuyentarás a tu presa. Llega allí después de medianoche y busca un lugar donde esconderte. \nY recuerda: si te delatas, todos estaremos en serios problemas: Raoul, tú e incluso yo.
+}
+Marso_dialog_89_f {
+Esta noche, debes salir sola de la ciudad y averiguar todo lo que puedas: con quién se reunió, de qué hablaron, cualquier cosa que puedas conseguir. No te quedes mucho tiempo en la jungla cerca de las puertas de la ciudad; ahuyentarás a tu presa. Llega allí después de medianoche y busca un lugar donde esconderte. \nY recuerda: si te delatas, todos estaremos en serios problemas: Raoul, tú e incluso yo.
+}
+Marso_dialog_90 {
+Todavía no has dicho lo principal: ¿cuánto voy a obtener por esto?
+}
+Marso_dialog_91 {
+Diez mil piastras. Pero solo si regresas con algo útil. No pagaré ni una sola moneda por conjeturas vacías o invenciones.
+}
+Marso_dialog_92 {
+Tenemos un trato. Mañana por la mañana sabrás mucho más sobre él.
+}
+Marso_dialog_93 {
+¿Y bien? ¿Qué hay de nuevo?
+}
+Marso_dialog_94 {
+Raoul conoció a un español llamado Vargas. Le vendió información y a cambio recibió una carta y plata.
+}
+Marso_dialog_95 {
+¿Qué vendió exactamente?
+}
+Marso_dialog_96 {
+Información sobre las personas que un tal Le Basque está reclutando: capitanes, pilotos, gente que conoce las costas del Caribe. También hablaron de un anciano de La Española.
+}
+Marso_dialog_97 {
+El anciano de La Española... Eso sí que es interesante. ¿Mencionaron su nombre?
+}
+Marso_dialog_98 {
+No. Raoul pide el doble del precio.
+}
+Marso_dialog_99 {
+La codicia será su perdición. ¿Qué más?
+}
+Marso_dialog_100 {
+La próxima reunión será en el faro. Vargas enviará una carta con nuevas instrucciones. Se debe informar a Raoul de la hora por separado.
+}
+Marso_dialog_101 {
+Excelente. Tenemos a Guillaume acorralado. El informante está listo para revelar la verdad sobre nuestra señal. Y tu tarea será deshacerte de todos los que se presenten esta noche a esa fatídica reunión en el faro.
+}
+Marso_dialog_102 {
+¿De todos?
+}
+Marso_dialog_103 {
+Exacto. Quiero que Vargas crea que Raoul intentó engañarlo y que el trato terminó en un baño de sangre. Si presiente una trampa, se esconderá en un lugar inaccesible. Pero no saques tu arma demasiado pronto. Primero, escucha lo que tienen que decir. Y cuando todo termine, toma la carta.
+}
+Marso_dialog_104 {
+¿Y Le Basque? ¿O debería seguir fingiendo que no entiendo para quién trabajo?
+}
+Marso_dialog_105 {
+Cumplo mi palabra. Te reunirás con él, pero primero termina el trabajo.
+}
+Marso_dialog_106 {
+Bueno, entonces, comencemos ahora mismo.
+}
+Marso_dialog_107 {
+De acuerdo. Pero primero necesito prepararme.
+}
+Marso_dialog_108_m {
+Cuando estés listo, avísame. Raoul no se nos escapará.
+}
+Marso_dialog_108_f {
+Cuando estés listo, avísame. Raoul no se irá de aquí.
+}
+Marso_dialog_109 {
+Bien.
+}
+Marso_dialog_110_m {
+¿Estás listo?
+}
+Marso_dialog_110_f {
+¿Estás listo?
+}
+Marso_dialog_111 {
+Sí. Es hora de dar por terminado este asunto.
+}
+Marso_dialog_112 {
+No, todavía necesito tiempo.
+}
+Marso_dialog_113 {
+Entonces, no perdamos tiempo. Te dejaremos en el faro en secreto antes de medianoche. Envía tu barco a puerto para no llamar la atención. Regresa por tierra. Nos vemos en la taberna. Ya sabes el resto.
+}
+Marso_dialog_114 {
+Lo sé. Espérame con una carta.
+}
+Marso_dialog_115 {
+Tome asiento, capitán. Y trate de parecer despreocupado; no necesitamos llamar la atención.
+}
+Marso_dialog_116 {
+¿Cómo te fue?
+}
+Marso_dialog_117 {
+Raoul está muerto. Tres hombres de Vargas se presentaron en el faro. Tomaron la carta, dispararon a Raoul y lo arrojaron por el acantilado. Resulta que nunca se lo contaron a nadie. Tengo la carta conmigo.
+}
+Marso_dialog_118 {
+Resulta que Vargas decidió deshacerse él mismo de Raoul. ¡Mejor aún! Dame la carta.
+}
+Marso_dialog_119 {
+Primero, mi recompensa.
+}
+Marso_dialog_120 {
+Un acuerdo es un acuerdo. Aquí lo tienes. Y ahora, una carta.
+}
+Marso_dialog_121_m {
+Ahí lo tienes. Parece que te lo tomas más en serio de lo que pensaba, ya que estás jugando a juegos de espías.
+}
+Marso_dialog_121_f {
+Ahí lo tienes. Parece que te lo tomas más en serio de lo que pensaba, ya que estás jugando a juegos de espías.
+}
+Marso_dialog_122 {
+Ni te imaginas cuánto. Le daré esta carta a Michel le Basque. Búscame mañana por la mañana en la ciudad; te llevaré con él. Siempre evalúa personalmente a los nuevos capitanes. Si le gusta lo que oye, no te quedarás sin un trabajo bien remunerado.
+}
+Marso_dialog_123 {
+Bueno, nos vemos mañana entonces.
+}
+Marso_dialog_124 {
+Ah, aquí estás. Michel trajo una botella de Armagnac añejo. Estaba seguro de que te escaparías después del primer trabajo.
+}
+Marso_dialog_125 {
+Bueno, será aún más interesante ver su rostro.
+}
+Marso_dialog_126 {
+Antes de irnos, les daré un consejo: la calma y el buen carácter de Michel engañan a muchos. Prefiere resolver los problemas con la cabeza, pero cuando se trata de pelear, vale por cuatro hombres. Así que trátenlo con respeto, pero sin miedo; no tolera a los cobardes.
+}
+Marso_dialog_127 {
+Lo tendré en cuenta.
+}
+Marso_dialog_128 {
+Bueno, eso es bueno. Michel nos espera en nuestro puesto de avanzada al otro lado de la isla. Síganme.
+}
+Marso_dialog_129_m {
+Michel, te presento a @<GetFullName>. El mismo embaucador que desempeñó un papel clave en la interceptación de la carta de Vargas.
+}
+Marso_dialog_129_f {
+Michel, te presento a @<GetFullName>. El mismo embaucador que desempeñó un papel clave en la interceptación de la carta de Vargas.
+}
+Marso_dialog_130 {
+Lo que tú digas, Michel.
+}
+Marso_dialog_131 {
+Me quedaré aquí. Nos vemos en el muelle de Tortuga en una hora. Prepara el barco y la tripulación. Navegaremos a La Española en tu barco. No necesitamos una vela extra. Y no llegues tarde, capitán.
+}
+Marso_dialog_132 {
+Nos vemos en el muelle.
+}
+Marso_dialog_133 {
+Llegaste justo a tiempo. Bien. Desembarcaremos en La Vega. Rimalie vive en la soledad del bosque, pero hasta los ermitaños necesitan pólvora, plomo y ron. Probablemente vaya al pueblo a comprar provisiones. Y ese pueblo definitivamente no es Puerto Príncipe, y mucho menos Santo Domingo.
+}
+Marso_dialog_134 {
+Entonces no perdamos el tiempo.
+}
+Marso_dialog_135 {
+Aquí está La Vega. Empieza por la taberna y habla con el dueño. Esos sinvergüenzas siempre saben quién bebió con quién, de qué hablaban y adónde fueron después.
+}
+Marso_dialog_136 {
+¿No quieres venir conmigo?
+}
+Marso_dialog_137 {
+Necesito visitar a un borracho. Apenas recuerda su propio nombre, pero conoce a todo el mundo que aparece en La Vega. Si Rimalie estuvo aquí, lo sabrá. Nos vemos en la taberna.
+}
+Marso_dialog_138 {
+¿Qué dice, capitán? ¿Logró averiguar algo?
+}
+Marso_dialog_139 {
+Al amanecer, Rimalie partió hacia el viejo muelle. Y parecía que los españoles le pisaban los talones.
+}
+Marso_dialog_140 {
+Mal asunto. El antiguo muelle ahora se llama Cabo Isabela. Mi amigo me contó que Rimalie había estado viviendo allí últimamente, y que hace unos días buscaba un barco para ir a Tobago. Al parecer, el anciano fue al cabo a recoger sus cosas antes de zarpar. Si los españoles lo encuentran antes que nosotros, todo estará perdido.
+}
+Marso_dialog_141 {
+Entonces partimos inmediatamente.
+}
+Marso_dialog_142 {
+Espera. Nos separaremos: tú irás por mar, yo iré por tierra. Si tienen un barco, tenemos que interceptarlo.
+}
+Marso_dialog_143 {
+Me parece razonable. Encontrémonos en la orilla.
+}
+Marso_dialog_144 {
+Registré el refugio y examiné todo el sendero. Rimalie había estado aquí, pero se había marchado hacía poco, llevándose provisiones y todo lo que pudo cargar. Pero esos dos no habían llegado hasta aquí: ni rastros, ni ramas rotas. Parecía que el anciano había logrado escapar a Tobago antes de que lo alcanzaran.
+}
+Marso_dialog_145 {
+Así que aún podemos interceptarlo. Regresemos al barco y pongámonos rumbo a Tobago.
+}
+Marso_dialog_146 {
+¿Qué demonios haces aquí? Te dije que rodearas el cabo por mar.
+}
+Marso_dialog_147_m {
+Quería asegurarme de que no te emboscaran. Voy a volver por el barco.
+}
+Marso_dialog_147_f {
+Quería asegurarme de que no te emboscaran. Voy a volver por el barco.
+}
+Marso_dialog_148 {
+Pero el viejo zorro no ha perdido su astucia. Todavía borra sus huellas con maestría. ¿Ves ese hueco entre las rocas? Parece un callejón sin salida, ¿verdad? Una persona normal podría pensarlo, pero créeme, para mí no es así. Nicolas me enseñó esos trucos cuando era joven. \nEn cualquier caso, ten cuidado. Este es el lugar perfecto para una emboscada: un pelotón entero podría estar escondido en la espesura a ambos lados. Ten tu arma a mano. Ojalá Rimalie se acuerde de mí.
+}
+Marso_dialog_149 {
+Entonces tú vas primero.
+}
+Marso_dialog_150 {
+¿Quizás deberías bajar el arma, viejo zorro? No somos tus enemigos.
+}
+Marso_dialog_151 {
+¡Maldita sea!... ¿Viste eso?
+}
+Marso_dialog_152_m {
+Lo vi. Y ya me estaba preparando para ir al otro mundo.
+}
+Marso_dialog_152_f {
+Lo vi. Y ya me estaba preparando para ir al otro mundo.
+}
+Marso_dialog_153 {
+Y yo estaba dispuesto a jurar que fuiste tú quien disparó el mortero, Nicolas.
+}
+Marso_dialog_154 {
+Bien podría haber sido Vargas.
+}
+Marso_dialog_155 {
+Entonces, vayamos a la orilla. Pero cuidado: no tendremos tanta suerte una segunda vez.
+}
+Marso_dialog_156 {
+Parece que este es el barco de Vargas. Hmm...
+}
+Marso_dialog_157 {
+Queda por ver por qué está huyendo.
+}
+Marso_dialog_158 {
+Quizás no se atrevió a bajar a más gente del barco y dejarlo desprotegido. O tal vez nos está mostrando la popa deliberadamente, con la esperanza de atraernos. A Vargas le encantan esos trucos.
+}
+Marso_dialog_159 {
+Me da igual. Lo alcanzaremos y lo embarcaremos.
+}
+Marso_dialog_160 {
+Subestimas a Vargas. Es tan cauteloso y astuto como el mismísimo diablo. Si se retira a pesar de tener superioridad numérica, significa que trama algo. \nAdemás, por lo que veo, Vargas nunca ha tenido un barco de este calibre a su disposición. Todo es muy extraño.
+}
+Marso_dialog_161 {
+Hm...
+}
+Marso_dialog_162 {
+Eso es exactamente lo que estoy diciendo. Perseguirlo no es la mejor idea.
+}
+Marso_dialog_163 {
+La decisión es correcta. Pero la estrategia anterior ya no funcionará. Pensaremos en un nuevo plan sobre la marcha. Regresemos a La Española.
+}
+Marso_dialog_164 {
+Aquí estamos. Rimalie y Jaco no atracaron con nosotros y, en cambio, partieron en sus botes hacia la bahía más cercana. Acordamos encontrarnos en la selva, justo afuera de la puerta.
+}
+Marso_dialog_165 {
+Entonces, vámonos.
+}
+Marso_dialog_166 {
+Aquí estás. Esperemos a los demás.
+}
+Marso_dialog_167 {
+Rimalie dijo que estaban esperando en la selva a las afueras de la ciudad.
+}
+Marso_dialog_168 {
+Mucho mejor. Adelante. Lo discutiremos todo allí.
+}
+Marso_dialog_169 {
+El plan es el siguiente: nuestra baza principal es Jaco. Lo recuerdan bien de la cárcel tras el fallido intento de fugar a Duval. Así que entraremos sin llamar la atención y traeremos a Jaco atado, como si hubiéramos capturado a un fugitivo y estuviéramos aquí para entregarlo. Los guardias se lo creerán más que otra historia sobre una patrulla.
+}
+Marso_dialog_170 {
+Iremos juntos, en convoy. Jaco irá en el medio, atado y desarmado. Tendrá que guardar silencio y mirar al suelo. Yo hablaré. Tú, @<pchar>, quédate cerca y finge que ya esperas tu recompensa. Rimalie nos seguirá. Si nos descubren, tendremos que abrirnos paso a la fuerza para salir de la ciudad.
+}
+Marso_dialog_171 {
+Una vez dentro, iremos directamente al comandante. Le diré que capturamos a Jaco en el camino y que queremos cobrar la recompensa, y luego intentaremos rescatar a Duval. Si no tenemos suerte, lo tomaremos por la fuerza. Ese es todo el plan. ¿Qué te parece?
+}
+Marso_dialog_172 {
+Es una locura, y por eso mismo podría funcionar. Si nadie tiene un plan mejor, me apunto.
+}
+Marso_dialog_173 {
+Me gusta. Lo principal es no soltar una carcajada en el momento equivocado.
+}
+Marso_dialog_174 {
+Para volver al lugar del que apenas escapé... ¡y encima atado!... ¡Y todavía me acusas de imprudencia, ja, ja! Pero si todos están de acuerdo, yo también.
+}
+Marso_dialog_175 {
+¡Genial! Ya que todos están de acuerdo, partiremos ahora mismo.
+}
+Marso_dialog_176 {
+Entonces, tal como habíamos acordado, entramos tranquilamente en la ciudad y llevamos a Jaco directamente a la cárcel.
+}
+Marso_dialog_177 {
+Vamos.
+}
+Marso_dialog_178 {
+Aquí están las puertas. Hacerme pasar por uno de ellos no funcionará; me conocen demasiado bien aquí. Tendré que esperar a que oscurezca y colarme en la prisión, evitando las patrullas.
+}
+Marso_dialog_179 {
+Eso es lo que haremos.
+}
+Marso_dialog_180 {
+Hoy, la mismísima Fortuna está de nuestro lado. Pero yo tenía en mente una conversación completamente diferente para el comandante.
+}
+Marso_dialog_181 {
+Por lo visto, lo conoces desde hace varios años.
+}
+Marso_dialog_182 {
+Hace unos años hicimos negocios en Santiago. Era un simple oficial y no tenía reparos en codearse con contrabandistas. Hicimos una buena fortuna así. Si no fuera por... Bueno, da igual.
+}
+Marso_dialog_183 {
+Lo acorralaste hábilmente con esas cartas. Pero, ¿quién se suponía que debía entregárselas al gobernador? No pudiste haberlo organizado tú; después de todo, estuviste con nosotros todo el tiempo.
+}
+Marso_dialog_184 {
+Nadie. Las cartas desaparecieron hace mucho tiempo; las quemé cuando dejé el contrabando. Así que...
+}
+Marso_dialog_185 {
+Espera, ¿quién es este?...
+}
+Marso_dialog_186 {
+Menos mal que todo transcurrió sin una masacre. Rimalie y yo llevaremos a Jaco y Duval a Mansfield y, espero, lo solucionaremos todo. Mientras tanto, descansa. Nos vemos mañana a la misma hora en el puerto de La Vega.
+}
+Marso_dialog_187 {
+Bueno, nos vemos mañana entonces.
+}
+Marso_dialog_188 {
+Ahora, junto con las buenas noticias, Mansfield tendrá que afrontar las malas. Rimalie y yo llevaremos a Jaco y a Duval ante él, les explicaremos por qué sus hombres no regresan e intentaremos solucionar todo. Mientras tanto, descansa. A Mansfield no le gusta que la gente acuda a él en masa, sobre todo después de noticias como esta. Nos vemos mañana a la misma hora en el puerto de La Vega.
+}
+Marso_dialog_189 {
+Bueno, nos vemos mañana entonces.
+}
+Marso_dialog_190 {
+Todo está resuelto. Duval ha regresado a Mansfield, así que dejará de perseguir a Jaco. Pero olvídate del trato anterior: tras el fracaso en Santo Domingo, Mansfield cree que el chico le ha costado demasiado. Jaco no recibirá la información prometida. Estaba enfadado, pero logró controlar sus emociones. Le prometí ayudarlo cuando se presentara la oportunidad.
+}
+Marso_dialog_191 {
+¿Y Rimalie?
+}
+Marso_dialog_192 {
+Ya estamos a bordo, junto con Jaco. El trabajo está hecho: podemos levar anclas.
+}
+Marso_dialog_193 {
+Entonces, bienvenido a bordo.
+}
+Marso_dialog_194 {
+Bueno, @<pchar>, ya está hecho. Yo mismo llevaré a Rimalie a Le Basque, le informaré de todo y se lo presentaré a Jaco. Y tú, pásate mañana por su casa; recibirás tu recompensa.
+}
+Marso_dialog_195 {
+Trabajamos bien juntos, ¿no crees? Me costaría mucho no estar contigo.
+}
+Marso_dialog_196 {
+Creo que estoy de acuerdo. Y, la verdad, me enorgullece haber sido yo quien te trajo a Le Basque. Bueno, ya basta de halagos. Hasta luego.
+}
+Marso_dialog_197 {
+Un hombre sin nada que perder, pero con todo por ganar. La bestia más peligrosa. No puedes intimidarlo ni esconderte de él. Solo puedes matarlo.
+}
+Marso_dialog_198 {
+No pierdas el tiempo, capitán.
+}
+Marso_dialog_199 {
+Ya estoy corriendo.
+}
+Marso_dialog_200 {
+Parece que volveremos a trabajar juntos, @<pchar>. Michel ya me ha puesto al tanto de la situación. Son tres objetivos, y hay que eliminarlos a todos sin que las autoridades españolas nos echen encima.
+}
+Marso_dialog_201 {
+Si alguien va a encargarse de este tipo de trabajo, somos tú y yo. Parece que nos hemos vuelto bastante buenos en ello. ¡Ja, ja!
+}
+Marso_dialog_202_m {
+Exactamente, amigo. Mi nave está lista para zarpar. Por cierto, ¿dónde está Jaco?
+}
+Marso_dialog_202_f {
+Exactamente, amigo. Mi nave está lista para zarpar. Por cierto, ¿dónde está Jaco?
+}
+Marso_dialog_203 {
+Ya está a bordo. Este temerario está deseando volver a meterse en líos. Pero nosotros también somos muy buenos, ¿verdad? Así que sigamos el ritmo.
+}
+Marso_dialog_204 {
+Extraño. El mar está tan vacío como la cartera de un marinero después de una noche en un burdel; la corbeta de Quesada no se ve por ningún lado. Parece que ese astuto canalla finalmente se ha marchado.
+}
+Marso_dialog_205 {
+¿Tal vez Vargas esté tramando algo?
+}
+Marso_dialog_206 {
+Es muy posible. Quesada no habría abandonado su guarida sin motivo. Desembarcaremos e interrogaremos a los lugareños. Su presencia aquí probablemente no era del agrado de todos.
+}
+Marso_dialog_207 {
+De acuerdo. Empecemos por la taberna.
+}
+Marso_dialog_208 {
+Será mejor así. No necesitamos testigos, ¿recuerdas? Vamos, @<pchar>. Ahora sabemos dónde buscar a Quesada.
+}
+Marso_dialog_209 {
+Deberías haberme avisado. Quizás aún lo necesitaba con vida.
+}
+Marso_dialog_210 {
+El Diablo ya lo está esperando. Y tenemos que ir a buscar a Quesada; que le haga compañía a su oficial en el infierno. Tendrán mucho de qué hablar.
+}
+Marso_dialog_211 {
+De acuerdo. Me precipité. Lo tendré en cuenta la próxima vez.
+}
+Marso_dialog_212 {
+Vamos. Es hora de que visitemos a los turcos.
+}
+Marso_dialog_213 {
+San Juan está cada vez más cerca. ¿Deberíamos ir directamente al puerto?
+}
+Marso_dialog_214 {
+Eso sería demasiado temerario. Vela está obsesionado con su seguridad. Si ve velas desconocidas en el puerto, se esconderá inmediatamente en su escondite. Echaremos el ancla frente a la playa de Fajardo; el pueblo está a tiro de piedra y los guardias del puerto no nos verán.
+}
+Marso_dialog_215 {
+¿Y cuál es el plan?
+}
+Marso_dialog_216 {
+¿Y cuál es el plan? Supongo que no nos llevaremos al viejo Rimalie con nosotros, ¿verdad?
+}
+Marso_dialog_217 {
+Solo confía en un contacto. Te reemplazaremos. Jaco, en cuanto desembarquemos, tu tarea es encontrar a esta chica en la ciudad y envolverla discretamente. Por los papeles de nuestro querido tesorero, sabemos que se llama Sergio Álvarez y que pasa todo su tiempo libre con la hija de un comerciante local. Molina está bastante disgustada con esto. Al parecer, con razón: el amor hace vulnerable a la persona. Entonces, ¿puedes con esto?
+}
+Marso_dialog_218_m {
+Exacto. Que se quede a bordo. Para este trabajo, necesitamos silencio y discreción. El plan es este... Vela solo confía en un contacto. Así que debes suplantar su identidad. Jaco, en cuanto desembarquemos, tu tarea es localizar a este tipo en la ciudad y envolverlo discretamente. Por los papeles de nuestro querido tesorero, sabemos que se llama Sergio Álvarez y que pasa todo su tiempo libre con la hija de un comerciante local. Molina está bastante disgustada con esto. Al parecer, no sin razón: el amor hace vulnerable a la persona. Entonces, ¿puedes con esto?
+}
+Marso_dialog_218_f {
+Exacto. Que se quede a bordo. Para este trabajo, necesitamos silencio y discreción. El plan es este... Vela solo confía en un contacto. Así que debes suplantar su identidad. Jaco, en cuanto desembarquemos, tu tarea es localizar a este tipo en la ciudad y envolverlo discretamente. Por los papeles de nuestro querido tesorero, sabemos que se llama Sergio Álvarez y que pasa todo su tiempo libre con la hija de un comerciante local. Molina está bastante disgustada con esto. Al parecer, no sin razón: el amor hace vulnerable a la persona. Entonces, ¿puedes con esto?
+}
+Marso_dialog_219 {
+Excelente. Aprendes rápido. Pero para nosotros, @<pchar>, es un asunto más delicado. Falsificaré una carta que demuestre la traición de Vela. Pero para asegurarme de que la falsificación no se note a simple vista, necesito un membrete oficial castellano con marcas de agua de la oficina del puerto de San Juan.
+}
+Marso_dialog_220 {
+Supongo que ya sabes cómo conseguirlo, ¿verdad?
+}
+Marso_dialog_221 {
+Un antiguo deudor mío suele ir a tomar algo a la taberna del pueblo... un ex empleado llamado Bartolomeo. Seguro que tiene una llave de repuesto. Dale mis más cordiales saludos y un par de miles de piastras. Por esa cantidad, te abrirá la puerta esta noche. En cuanto tengas el formulario, nos vemos en la taberna. Diríjanse a Fajardo, caballeros.
+}
+Marso_dialog_222 {
+La fortuna está de nuestro lado.
+}
+Marso_dialog_223 {
+Tome asiento, capitán.
+}
+Marso_dialog_224 {
+A juzgar por tu cara de satisfacción, ¿tu visita a la oficina del puerto fue un éxito?
+}
+Marso_dialog_225 {
+Realmente no tengo nada que ocultarte. Todo salió según lo planeado. Aquí tienes el documento con todas las marcas de agua.
+}
+Marso_dialog_226 {
+Excelente. Dame un par de minutos... Ahí lo tienes... Una frase perfecta. Y aquí parece que ha llegado nuestro joven amigo.
+}
+Marso_dialog_227 {
+Veamos qué noticias tiene.
+}
+Marso_dialog_228 {
+Cincuenta matones detrás de una empalizada de madera y escombros del bosque... Seguiremos adelante sin desviarnos; dejaremos a la mitad de la gente para que sirva de alimento a los mosquitos en la maleza, y aún se desconoce si llegaremos a Rojas.
+}
+Marso_dialog_229 {
+Jamaica no es una isla pequeña. ¿Cómo podemos saber con exactitud dónde se esconde en la selva?
+}
+Marso_dialog_230 {
+Me sorprendes. Del cofre de Molina, por supuesto. El secretario de Vargas es un hombre meticuloso. Además de la plata, también había instrucciones del mensajero con puntos de referencia precisos que indicaban dónde ese idiota de Rojas espera su tesoro. Conocemos el camino seguro a su campamento. Pero, como ya dije, asaltar estas fortificaciones de campaña sin preparación previa es una imprudencia absoluta. Tengo dos ideas...
+}
+Marso_dialog_231 {
+Soy todo oídos.
+}
+Marso_dialog_232 {
+Primero. La guarnición inglesa en Port Royal está irritada por el campamento español junto al Fuerte Orange holandés. He hecho averiguaciones: un tal Comandante Hollis busca a los soldados restantes. Sueña con arrasar este nido, pero le faltan las coordenadas exactas. Se las daremos. Si le ofrecemos un trato, a nuestras tropas se unirá una compañía inglesa de casacas rojas, expertos en la guerra forestal.
+}
+Marso_dialog_233 {
+¿Y la segunda?
+}
+Marso_dialog_234 {
+Y la segunda es la más dulce. ¿Cómo mantiene Rojas a sus hombres? No con amor. Con plata. Plata española, que le llegó gracias a nuestro buen amigo Molina. Y Molina está de visita con Michel, y tenemos la caja de dinero. Así que, el próximo día de paga para sus matones... no llegará. Jamás. Todavía no lo saben.
+}
+Marso_dialog_235 {
+¿Quieren que los mercenarios abandonen a Rojas en el peor momento posible? Inteligente.
+}
+Marso_dialog_236 {
+No solo abandonados. Quiero que se vuelvan contra él. Sus leales lansquenetes difícilmente se rebelarán, pero los mercenarios comunes sí podrían. \nJaco se infiltrará en el campamento disfrazado de desertor de La Paloma y les dará la "buena noticia": no habrá más plata, y Don Rojas ha llenado sus arcas y planea huir, dejándolos morir en esta jungla a manos de los cimarrones. Esa noticia cala hondo en los hombres que no cobran. Y cuando ataquemos desde afuera, y los ingleses por el flanco, sus propios hombres atacarán desde adentro. Rojas ni siquiera tendrá tiempo de recuperarse.
+}
+Marso_dialog_237_m {
+Etienne, eres un verdadero diablo. Me alegra que estemos del mismo lado.
+}
+Marso_dialog_237_f {
+Etienne, eres un verdadero diablo. Me alegra que estemos del mismo lado.
+}
+Marso_dialog_238 {
+Pero es demasiado pronto para halagarme. No echaremos el ancla en el puerto de Port Royal; no necesitamos llamar la atención. Anclaremos en la bahía de Portland. Es un lugar apartado y hay un sendero conveniente que sale de la costa. El comandante Hollis es un oficial muy ocupado; aunque odia a los españoles, a menudo pasa demasiado tiempo en la oficina del comandante del fuerte. Ve directamente allí. Dile que tienes el campamento español en bandeja de plata y te recibirá. Aquí están los papeles con las coordenadas de la caja de Molina, tómalos.
+}
+Marso_dialog_239_m {
+Bueno, me voy. Y tú prepara a Jaco.
+}
+Marso_dialog_239_f {
+Bueno, me voy. Y tú prepara a Jaco.
+}
+Marso_dialog_240 {
+Pero es demasiado pronto para halagarme. Echar el ancla en el puerto de Port Royal es peligroso... Las baterías nos destrozarán. Anclaremos en la bahía de Portland. Es un lugar remoto. No puedes entrar en el fuerte; los guardias abrirán fuego sin previo aviso. Así que le pedí un favor a uno de los hombres de Morgan: ayúdame a contactar con el comandante inglés. Hollis te estará esperando en el camino, justo antes del fuerte. Ve allí y ofrécele un trato. Aquí tienes los papeles con las coordenadas de la caja de Molina, tómalos. Solo no hagas movimientos bruscos... Sus fusileros probablemente estarán escondidos entre los arbustos.
+}
+Marso_dialog_241_m {
+Astutamente. Me voy. Y tú prepara a Jaco.
+}
+Marso_dialog_241_f {
+Qué listo. Yo voy. Y tú prepara a Jaco.
+}
+Marso_dialog_242 {
+Y aquí estás. Entonces, ¿lograste llegar a un acuerdo con Hollis?
+}
+Marso_dialog_243 {
+Funcionó. Los mosqueteros de Hollis nos esperarán mañana por la noche en los accesos al campamento. Repartiremos el botín, pero los estandartes y el tesoro irán a parar a la Corona de Inglaterra.
+}
+Marso_dialog_244 {
+El tesoro... Que se atraganten con él, la plata de Molina sigue siendo nuestra. Lo importante son sus mosquetes. Jaco se fue a la selva justo después de ti. Seguro que ahora mismo está sentado junto al fuego con los mercenarios de Rojas, bebiendo ron y contando historias sobre la avaricia de su comandante. Mañana por la noche, el campamento estará a punto de estallar desde dentro.
+}
+Marso_dialog_245 {
+Espero que esté bien. Rimalie no nos lo perdonaría si le pasara algo.
+}
+Marso_dialog_246 {
+Este sinvergüenza tiene una lengua afilada. No fallará ni un tiro. Deja descansar a tus hombres, revisa la pólvora. Mañana por la noche nos dirigimos al paso. Lo importante es no llegar tarde y evitar que Hollis empiece la fiesta sin nosotros.
+}
+Marso_dialog_247 {
+Mis hombres y yo ya estamos listos. Preparémonos y partamos.
+}
+Marso_dialog_248 {
+Necesito tiempo para prepararme.
+}
+Marso_dialog_249_m {
+Bueno, capitán, ¿estás listo?
+}
+Marso_dialog_249_f {
+Bueno, capitán, ¿estás listo?
+}
+Marso_dialog_250 {
+Sí. Nos reunimos y actuamos.
+}
+Marso_dialog_251 {
+Aún no.
+}
+Marso_dialog_252 {
+¡Enhorabuena a @<pchar>! Fue una pelea espectacular.
+}
+Marso_dialog_253 {
+Hoy tuvimos suerte. Vargas perdió a su perro guardián más leal.
+}
+Marso_dialog_254 {
+La pérdida de un teniente así sería un duro golpe para las ambiciones de Vargas. Daría lo que fuera por ver su cara cuando se entere.
+}
+Marso_dialog_255 {
+Ja, ja. ¿Así que perdonaste al correcto? Ja, ja. Iré a hablar con Hollis y luego volvamos a la nave.
+}
+Marso_dialog_256 {
+Un ataque quirúrgico, capitán. Solo puedo imaginar con auténtico placer la furia ciega que debe estar sintiendo Vargas ahora, privado de todos sus perros de confianza a la vez.
+}
+Marso_dialog_257 {
+Déjenlo desahogar su ira. Lo dejamos ciego y desdentado.
+}
+Marso_dialog_258_m {
+No pensaste que te dejaría solo aquí, ¿verdad, amigo? ¡Prepara tu palillo de dientes! ¡Otro grupo de esos bastardos se acerca desde la jungla! ¡Una verdadera masacre está a punto de comenzar!
+}
+Marso_dialog_258_f {
+No pensaste que te dejaría solo aquí, ¿verdad, amigo? ¡Prepara tu palillo de dientes: otra horda de esos canallas se acerca desde la selva! ¡Una verdadera masacre está a punto de comenzar!
+}
+Marso_dialog_259_m {
+Parece que estos fueron los últimos... ¿Qué queremos decir con eso? ¿Querían organizar una fiesta aquí sin nosotros?
+}
+Marso_dialog_259_f {
+Parece que estos fueron los últimos... ¿Qué queremos decir con eso? ¿Querían organizar una fiesta aquí sin nosotros?
+}
+Marso_dialog_260_m {
+Etienne, no te imaginas lo feliz que estoy de verte... ¿y a tus... nuevos amigos? Pero, ¿cómo acabaste aquí? Parece que Michel te envió a una misión en un lugar completamente diferente.
+}
+Marso_dialog_260_f {
+Etienne, no te imaginas lo feliz que estoy de verte... ¿y a tus... nuevos amigos? Pero, ¿cómo acabaste aquí? Parece que Michel te envió a una misión en un lugar completamente diferente.
+}
+Marso_dialog_261 {
+Y así fue. Pero a mitad de camino de Martinica, resultó que el mástil principal se había agrietado durante la última batalla. Tuvimos que reemplazarlo en alta mar. Y mientras lo reparábamos, apareció en el horizonte nada menos que nuestro querido Don Diego en su inconfundible galeón. Y decidí seguirlo.
+}
+Marso_dialog_262_m {
+Corvette... ¡Así que eras tú! Ya olvidé lo que dijo ese capitán. ¿Así que lo perseguiste, pero Vargas logró desembarcar?
+}
+Marso_dialog_262_f {
+Corvette... ¡Así que eras tú! Ya olvidé lo que dijo ese capitán. ¿Así que lo perseguiste, pero Vargas logró desembarcar?
+}
+Marso_dialog_263 {
+Exactamente. Antes de seguirlos, necesitaba asegurar nuestra huida. Engañé al galeón para que abandonara estas costas.
+}
+Marso_dialog_264 {
+Y entonces llegaste tú aquí. Gracias, Etienne. Si no fuera por ti...
+}
+Marso_dialog_265_m {
+Ahora no, amigo mío. Necesitamos encontrar a Marie lo antes posible.
+}
+Marso_dialog_265_f {
+Ahora no, amigo mío. Necesitamos encontrar a Marie lo antes posible.
+}
+Marso_dialog_266 {
+Debe haber un pozo por aquí cerca. Ese oficial dijo que Vargas está allí con una chica ahora mismo. Ese desgraciado tiene una verdadera obsesión por mantener a las chicas bajo tierra.
+}
+Marso_dialog_267 {
+Parece que tendrás mucho que contarme. Pero no ahora. Te cubriré la retaguardia con mis hombres. Quién sabe cuántas tropas más tiene escondidas en la selva. Y tú ve a buscar a Marie. Y recuerda: la necesitamos viva. Igual que a ti.
+}
+Marso_dialog_268 {
+Volveré pronto.
+}
+Marso_dialog_269 {
+Capitán...
+}
+Marso_dialog_270 {
+Etienne, parece que no estás disfrutando nada de las vacaciones.
+}
+Marso_dialog_271 {
+Un día festivo es un día festivo, pero no debemos bajar la guardia.
+}
+Marso_dialog_272 {
+Vamos, a veces tú también necesitas descansar. Vargas ha muerto, ¿acaso no es motivo suficiente para tomarse un respiro al menos una noche?
+}
+Marso_dialog_273 {
+La ocasión es buena, sin duda. Pero alguien tiene que mantener la calma mientras los demás se divierten. Ya descansaré en otra ocasión.
+}
+Marso_dialog_274 {
+Como quieras. Pero si decides beber, ni se te ocurra hacerlo sin mí, ja, ja.
+}
+Marso_dialog_275 {
+Mientras los demás bebían, logré aprender más sobre nuestra gente que en los últimos seis meses.
+}
+Marso_dialog_276 {
+Je. ¡Así que eso es lo que estás haciendo aquí! Y yo que pensaba que nos estabas protegiendo.
+}
+Marso_dialog_277 {
+Al parecer, no hay forma de llegar a este pueblo desde el mar. Tendremos que abrirnos paso a través de la selva.
+}
+Marso_dialog_278 {
+No tenemos otra opción.
+}
+Marso_dialog_279 {
+Recuerda, @<pchar>, que lo mejor para nosotros es actuar de forma encubierta.
+}
+Marso_dialog_280 {
+No hace falta que me lo recuerdes. ¿Ya has olvidado cómo tratamos a Vela en San Juan?
+}
+Marso_dialog_281 {
+El barco es nuestro. Lo hemos registrado minuciosamente, desde la bodega hasta las velas mayores. Encontramos el tesoro en el camarote del capitán; los muchachos ya se han repartido el botín. Tu parte son quince mil piastras.
+}
+Marso_dialog_282 {
+De acuerdo. Pero me preocupa otra cosa: ¿era una patrulla cualquiera o un explorador?
+}
+Marso_dialog_283 {
+Capturamos al intendente con vida. Está sangrando profusamente; si queremos averiguar algo, tenemos que darnos prisa.
+}
+Marso_dialog_284 {
+Ordena que le pongan vendas y lo bajen. Bajaré en cuanto desenganchemos los ganchos. Y no dejes que l'l'Olonnaisnais se le acerque. Si no, morirá antes de poder decir una palabra.
+}
+Marso_dialog_285 {
+Apenas podrá expulsar más. Llamaré a un médico.
+}
+Marso_dialog_286 {
+Y le proporciono protección. Y ordeno que se desplieguen todas las velas. Ahora tenemos todo lo necesario para llegar a Arellano.
+}
+Marso_dialog_287 {
+Tenemos que estar atentos, @<pchar>. Si realmente hay patrullas aquí, puede que no esperen a que les demos la contraseña.
+}
+Marso_dialog_288 {
+(apenas audible) Al ver la cara de l'l'Olonnaisnais, me lo creo sin dudarlo. Estemos alerta.
+}
+Marso_dialog_289 {
+Siete soldados con mosquetes en medio de la densa selva. Los españoles están vigilando Arellano con más ahínco de lo que pensábamos.
+}
+Marso_dialog_290 {
+No creo que esto lo salve. Arellano pronto estará en nuestras manos.
+}
+Marso_dialog_291 {
+Tuvimos suerte de no haber hundido esa maldita fragata.
+}
+Marso_dialog_292 {
+Vamos. Antes de que se nos acabe la suerte, tenemos que ocuparnos de Arellano.
+}
+Marso_dialog_293 {
+Los pescadores nos vigilan, pero no tienen prisa por acercarse. Sin embargo, no dejan de mirar al español de la chaqueta marrón con mangas a rayas. Parece ser el que manda aquí.
+}
+Marso_dialog_294 {
+Así que, comencemos con él.
+}
+Marso_dialog_295 {
+Michel lo consiguió todo con mucha astucia, ¿verdad?
+}
+Marso_dialog_296 {
+Sí, no hay nada que discutir con eso... Si Atauco hace todo bien, tendremos tiempo de encargarnos de la escolta y tomar el Margarita antes de que lleguen los refuerzos de Cartagena. ¿No crees que el nombre del barco...
+}
+Marso_dialog_297 {
+Sí, parece que Vargas, incluso desde el otro mundo, nos recuerda a sí mismo. \nEn cualquier caso, no te preocupes. Este indio no nos defraudará. Tenemos que irnos.
+}
+Marso_dialog_298 {
+Entonces, caballeros, carguen sus preciados cadáveres en el bote. Nos vamos de caza.
+}
+Marso_dialog_299 {
+Creo que hay que agitar a la escolta del Margarita como a un enjambre de abejas. Hay que atraer al menos a un barco fuera de la formación y obligar al resto a romperla.
+}
+Marso_dialog_300 {
+Creo que conozco a un tipo un poco loco que sería perfecto para este papel.
+}
+Marso_dialog_301 {
+Este botín nos costó muy caro, @<pchar>. Y sin embargo, l'l'Olonnaisnais perdió muchos más hombres que nosotros...
+}
+Marso_dialog_302 {
+¿Cuánto cuesta?
+}
+Marso_dialog_303 {
+¿Apruebas esta idea de Puerto Rico?
+}
+Marso_dialog_304 {
+¿Qué opinas del comportamiento de l'l'Olonnaisnais?
+}
+Marso_dialog_305 {
+Descansa un poco, Etienne. Te lo mereces.
+}
+Marso_dialog_306 {
+Veintinueve muertos y casi cincuenta heridos. El médico dice que no todos sobrevivirán para llegar a Tortuga: tras semejante matanza, la fiebre y la gangrena están haciendo estragos entre los que se salvaron de las balas y los cuchillos. Me temo que no sabremos el número final hasta dentro de un tiempo.
+}
+Marso_dialog_307_m {
+Hmm... Hay algo más que quería preguntar.
+}
+Marso_dialog_307_f {
+Mmm... Esa es otra cosa que quería preguntar.
+}
+Marso_dialog_308 {
+Si a cualquier otra persona se le hubiera ocurrido esta idea, la habría tachado de loca. Pero confío en Michel. Nunca nos ha metido en una trampa de la que no pudiéramos escapar.
+}
+Marso_dialog_309_m {
+Hmm... Hay algo más que quería preguntar.
+}
+Marso_dialog_309_f {
+Mmm... Esa es otra cosa que quería preguntar.
+}
+Marso_dialog_310_m {
+¿Qué hay que pensar? Ya lo viste. Este asesino es capaz de cualquier atrocidad que su mente enferma pueda concebir. Así que, hasta que lleguemos a Tortuga, tendremos que dormir con las pistolas en la mano.
+}
+Marso_dialog_310_f {
+¿Qué hay que pensar? Ya lo viste. Este asesino es capaz de cualquier atrocidad que su mente enferma pueda concebir. Así que, hasta que lleguemos a Tortuga, tendremos que dormir con las pistolas en la mano.
+}
+Marso_dialog_311_m {
+Hmm... Hay algo más que quería preguntar.
+}
+Marso_dialog_311_f {
+Mmm... Esa es otra cosa que quería preguntar.
+}
+Marso_dialog_312 {
+Es una lástima que no estuvieras aquí ayer, capitán. Francois vino a reclamar su parte, contó cada cofre tres veces y acusó a Michel de hacer trampa otras tantas. Luego cargó el oro, reunió a los hombres y se marchó sin decir una palabra de despedida. Nadie siquiera desenvainó una espada. Para estos dos, la despedida fue casi amistosa.
+}
+Marso_dialog_313 {
+Después de lo ocurrido en la bodega, este es un resultado realmente sorprendente. Quizás nos convenga a todos que l'l'Olonnaisnais se mantenga alejado de Tortuga.
+}
+Marso_dialog_314 {
+¡Para todos nosotros!
+}
+Marso_dialog_315 {
+Oh, créame, capitán, sin este pergamino, saben perfectamente cuánto oro desean obtener. Para eso sirve el tratado: para moderar esos nobles impulsos.
+}
+Marso_dialog_316_m {
+@<pchar>, si buscas botín, puedes llevarte ese barril de resina. Aquí no hay nada más de valor, solo polvo y excremento de rata. Ni madera valiosa, ni café, ni medicinas; incluso el lienzo fue robado. ¡Que los hagan pedazos!
+}
+Marso_dialog_316_f {
+@<pchar>, si buscas botín, puedes llevarte ese barril de resina. Aquí no hay nada más de valor, solo polvo y excremento de rata. Ni madera valiosa, ni café, ni medicinas; incluso se llevaron el lienzo. ¡Que los hagan pedazos!
+}
+Marso_dialog_317 {
+¿Y consiguieron llevarse todas las mercancías mientras tomábamos el fuerte?
+}
+Marso_dialog_318 {
+Mucho antes. Aquí están los registros de inventario: comenzaron a vaciar los almacenes mucho antes de que llegáramos. Sin prisas: contaron todo, lo anotaron y no olvidaron nada valioso.
+}
+Marso_dialog_319 {
+Así que nos estaban esperando. Y los soldados se quedaron en el fuerte para cubrir la retirada. ¿Decían los documentos adónde habían enviado todas sus pertenencias?
+}
+Marso_dialog_320 {
+Todavía no lo he encontrado. Revisaré el resto; tal vez haya algo que nos ayude.
+}
+Marso_dialog_321 {
+Michel nos ha encargado a Nicolas y a mí que inspeccionemos la residencia del gobernador. Vengan cuando terminen.
+}
+Marso_dialog_322 {
+No hay nadie abajo. Pero se oyen voces arriba. Parece que no todos lograron escapar.
+}
+Marso_dialog_323 {
+¿Cuántos hay?
+}
+Marso_dialog_324 {
+No logro entenderlo. ¿Oyes eso? Están sacudiendo los muebles. Parece que están intentando atrincherarse.
+}
+Marso_dialog_325 {
+Si seguimos entreteniéndonos, los secretos del gobernador quedarán reducidos a cenizas. ¡Vamos!
+}
+Marso_dialog_326 {
+Gibraltar... Está muy lejos. Si se fueron hace poco, aún podemos alcanzarlos.
+}
+Marso_dialog_327 {
+Los exploradores nativos americanos ya han emprendido su camino. Parece que no deberíamos esperar a que regresen.
+}
+Marso_dialog_328 {
+Necesitamos encontrar a Michel inmediatamente.
+}
+Marso_dialog_329_m {
+Estoy de acuerdo. Cuanto antes partamos, menor será su ventaja.
+}
+Marso_dialog_329_f {
+Estoy de acuerdo. Cuanto antes partamos, menor será su ventaja.
+}
+Marso_dialog_330 {
+¿A qué esperamos? ¡Los españoles se van con nuestro oro!
+}
+Marso_dialog_331 {
+Espera. Estoy contigo.
+}
+Marso_dialog_332 {
+¿Étienne? Tienes que cuidar tu hombro ahora mismo. ¿Cómo estás?
+}
+Marso_dialog_333 {
+Marie se sacó la bala y se vendó la herida. El brazo aún le será útil.
+}
+Marso_dialog_334 {
+¿Y ella te dejó ir?
+}
+Marso_dialog_335 {
+Huí cuando ella atendió a otro hombre herido. No podía abandonarte a tu suerte.
+}
+Marso_dialog_336 {
+Bueno, entonces, démonos prisa. Antes de que Marie venga y te arrastre de vuelta a la fuerza.
+}
+Marso_dialog_337 {
+Me siento como un completo idiota, @<pchar>.
+}
+Marso_dialog_338 {
+Parece que hemos tocado un tema que había estado ocultando a todo el mundo durante mucho tiempo.
+}
+Marso_dialog_339 {
+¡Pero era inevitable! Sabía que asaltando Maracaibo llegaríamos hasta Alonso...
+}
+Marso_dialog_340 {
+Ya no importa. Lo que pasó no se puede cambiar. Yo lo arreglaré todo aquí, y tú ve con Marie para que te cure. Y una cosa más... ¿Entiendes que esta conversación debe quedar entre nosotros?
+}
+Marso_dialog_341 {
+Entender...
+}
+Marso_dialog_342 {
+¡Ja, ja! Nunca se tiene demasiado dinero, ya lo sabes.
+}
+Marso_dialog_343 {
+¿Qué vas a hacer ahora, Etienne?
+}
+Marso_dialog_344 {
+¿Ahora mismo? Voy a enterrar mi fortuna, ganada con tanto esfuerzo, en un lugar apartado. Así que ni se te ocurra seguirme, ¡ja, ja! Y en cuanto al futuro, mejor pregúntale a Michel. No puedo escapar de él.
+}
+Marso_dialog_345 {
+Bueno, adiós, amigo. Gracias por protegerme las espaldas todo este tiempo.
+}
+Marso_dialog_346_m {
+Y gracias por lo mismo. Hasta la próxima, amigo. ¡Buena suerte!
+}
+Marso_dialog_346_f {
+Y gracias por lo mismo. Hasta la próxima, amigo. ¡Buena suerte!
+}
+
+LeBasque_Etien_Marso_1 {
+Qué suerte... Mis respetos, Señor Comandante.
+}
+
+LeBasque_Etien_Marso_2 {
+Si le parece bien. Pero en ese caso, tendrá que trasladarse a la celda contigua, en cuanto el gobernador se entere de nuestros tratos pasados.
+}
+
+LeBasque_Etien_Marso_3 {
+Para tu gran pesar, he guardado todas las cartas escritas por ti. Si no regreso al lugar acordado antes del amanecer, las llevarán a la residencia. Necesito al señor Duval. He oído que está pasando frío en estas mazmorras. Entrégalo y nos marcharemos. Y quemaré las cartas.
+}
+
+LeBasque_Etien_Marso_4 {
+Y un hombre de palabra.
+}
+
+LeBasque_Etien_Marso_5 {
+Gracias, Comandante.
+}
+
+LeBasque_Etien_Marso_6 {
+Maldita sea... ¿Torturaste hasta la muerte al único hombre que podía guiarnos a esta flota dorada?
+}
+
+LeBasque_Etien_Marso_7 {
+François, lo único que sabes hacer es cortar y quemar. Apenas está vivo. Aprende a pensar con la cabeza de una vez.
+}
+
+LeBasque_Etien_Marso_8 {
+¡Maldita sea, François! ¡Pudiste haberlo matado! ¡Lo necesitamos vivo!
+}
+
+LeBasque_Etien_Marso_9 {
+Mucho antes de la batalla, encontré los registros de los almacenes: los habían vaciado sin prisa. Para cuando tomamos el fuerte, ya no quedaba nada que se pudiera aprovechar.
+}
+
+LeBasque_Etien_Marso_10 {
+Y mientras tanto, ¿nos entregarán los españoles nuestro oro con tranquilidad?
+}
+
+LeBasque_Etien_Marso_11 {
+¿Y nuestro noble Don también tiene la culpa de esto?
+}
+
+LeBasque_Etien_Marso_12 {
+Por eso señalaste con el dedo a Maracaibo.
+}
+
+LeBasque_Etien_Marso_13 {
+¡Maldita sea! ¡Eso es exactamente lo que deberías habernos dicho desde el principio!
+}
+
+LeBasque_Etien_Marso_14 {
+Ha transcurrido menos de un año.
+}
+
+LeBasque_Etien_Marso_15 {
+Con mucho gusto. Ya he tenido suficiente de la familia Vargas.
+}
+
+LeBasque_Etien_Marso_16 {
+¡¿Qué demonios fue eso?! No nos dijiste nada sobre el verdadero propósito de la expedición. ¡Y no dejaste que @<GetFullName> le borrara esa sonrisa maliciosa de la cara a Alonso con la noticia de la muerte de su hermano!
+}
+
+LeBasque_Etien_Marso_17 {
+¿Y qué? ¡Podrían haber encontrado el tesoro de otra manera!
+}
+
+LeBasque_Etien_Marso_18 {
+¿A quién le diste tu palabra? ¿De qué estás hablando?
+}
+
+LeBasque_Etien_Marso_19 {
+Lo siento... Lo siento, Michelle. No lo sabía.
+}
+
+LeBasque_Etien_Marso_20 {
+¿Así que... se conocen?
+}
+
+LeBasque_Etien_Marso_21 {
+¿Qué demonios se suponía que debía decir?
+}
+
+LeBasque_Etien_Marso_22 {
+¡Por supuesto que sí! ¡Me dispararon en esa batalla! ¡Y quiero saber de qué está hablando!
+}
+
+LeBasque_Etien_Marso_23 {
+¡¿Qué?!
+}
+
+LeBasque_Etien_Marso_24 {
+¿Tú... le robaste a su novia?
+}
+
+LeBasque_Etien_Marso_25 {
+Continuar.
+}
+
+LeBasque_Etien_Marso_26 {
+Michel... ¿Me has estado ocultando esto todo este tiempo?
+}
+
+LeBasque_Etien_Marso_27 {
+Al mismo tiempo, vengarse de tu enemigo de sangre...
+}
+
+LeBasque_Etien_Marso_28 {
+¡Maldita sea, Michel! ¡Me ocultaste el verdadero motivo de esta expedición! ¡Te consideraba... mi hermano!
+}
+
+LeBasque_Etien_Marso_29 {
+De ninguna manera, Michelle...
+}

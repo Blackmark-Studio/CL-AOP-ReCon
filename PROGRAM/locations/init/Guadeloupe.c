@@ -1305,7 +1305,7 @@ int LocationInitGuadeloupe(int n)
 	locations[n].locators_radius.item.button02 = 2.0;
 	
 	locations[n].reload.l2.name = "reload2";
-	locations[n].reload.l2.go = "Guadeloupe_jungle_add";
+	locations[n].reload.l2.go = "MarieGalante_jungle_add";
 	locations[n].reload.l2.emerge = "reloadW";
 	locations[n].reload.l2.autoreload = "0";
 	locations[n].reload.l2.label = "Jungle";
@@ -1362,7 +1362,7 @@ int LocationInitGuadeloupe(int n)
 	locations[n].worldmap = "Shore30";
 	//Sound
 	locations[n].type = "seashore";
-	locations[n].islandId = "Guadeloupe";
+	locations[n].islandId = "MarieGalante";
 	locations[n].deadlocked = true;
 	//Models
 	//Always
@@ -1393,7 +1393,7 @@ int LocationInitGuadeloupe(int n)
 	locations[n].environment.sea = "true";
 	//Reload map
 	locations[n].reload.l1.name = "reload1_back";
-	locations[n].reload.l1.go = "Guadeloupe_jungle_add";
+	locations[n].reload.l1.go = "MarieGalante_jungle_add";
 	locations[n].reload.l1.emerge = "reload2";
 	locations[n].reload.l1.autoreload = "1";
 	locations[n].reload.l1.label = "Jungle";
@@ -1410,19 +1410,19 @@ int LocationInitGuadeloupe(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	// Джунгли
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	locations[n].id = "Guadeloupe_jungle_add";
+	locations[n].id = "MarieGalante_jungle_add";
 	locations[n].id.label = "Jungle";
 	locations[n].image = "loading\outside\jungle.tga";
 	//Sound
 	locations[n].type = "jungle";
-	locations[n].islandId = "Guadeloupe";
+	locations[n].islandId = "MarieGalante";
 	locations[n].DisableEncounters = true;
 	locations[n].onUninhabitedIsland = true;
 	//Models
 	//Always
 	locations[n].filespath.models = "locations\Outside\Jungles\Jungle6";
 	Locations[n].models.always.jungle = "jungle6";	
-	Locations[n].models.always.locators = "jungle6_lSD02";		
+	Locations[n].models.always.locators = "jungle6_locators";
 	Locations[n].models.always.grassPatch = "jungle6_grass";
 	Locations[n].models.always.grassPatch.texture = "grass\grassshore.tga.tx";	
 	Locations[n].models.always.l1 = "plan1";
@@ -1469,7 +1469,7 @@ int LocationInitGuadeloupe(int n)
 	locations[n].locators_radius.reload.reloadW_back = 2.3;
 	
 	locations[n].reload.l3.name = "reload3_back";
-	locations[n].reload.l3.go = "Guadeloupe_deadlock";
+	locations[n].reload.l3.go = "MarieGalante_deadlock";
 	locations[n].reload.l3.emerge = "reload1";
 	locations[n].reload.l3.autoreload = "1";
 	locations[n].reload.l3.label = "Jungle";
@@ -1479,12 +1479,12 @@ int LocationInitGuadeloupe(int n)
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	// Джунгли тупиковые
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	locations[n].id = "Guadeloupe_deadlock";
+	locations[n].id = "MarieGalante_deadlock";
 	locations[n].id.label = "Jungle";
 	locations[n].image = "loading\outside\jungle.tga";
 	//Sound
 	locations[n].type = "jungle";
-	locations[n].islandId = "Guadeloupe";
+	locations[n].islandId = "MarieGalante";
 	//Models
 	//Always
 	locations[n].filespath.models = "locations\Outside\Jungles\jungle9\";
@@ -1516,14 +1516,14 @@ int LocationInitGuadeloupe(int n)
 	locations[n].environment.sea = "false";
 	//Reload map
 	locations[n].reload.l1.name = "reload1_back";
-	locations[n].reload.l1.go = "Guadeloupe_jungle_add";
+	locations[n].reload.l1.go = "MarieGalante_jungle_add";
 	locations[n].reload.l1.emerge = "reload3";
 	locations[n].reload.l1.autoreload = "1";
 	locations[n].reload.l1.label = "Jungle";
 	locations[n].locators_radius.reload.reload1_back = 2.2;
 
 	locations[n].reload.l2.name = "reload2_back";
-	locations[n].reload.l2.go = "Guadeloupe_CaveS";
+	locations[n].reload.l2.go = "MarieGalante_SatanistsEntrance";
 	locations[n].reload.l2.emerge = "reload2";
 	locations[n].reload.l2.autoreload = "1";
 	locations[n].reload.l2.label = "Jungle";
@@ -1531,14 +1531,14 @@ int LocationInitGuadeloupe(int n)
 	n = n + 1;
 
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	// Вход в пещеру логова сатанистов
+	// Вход в пещеру логова культистов
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	locations[n].id = "Guadeloupe_CaveS";
+	locations[n].id = "MarieGalante_SatanistsEntrance";
 	locations[n].id.label = "Cave entrance";
 	locations[n].image = "loading\outside\Entcave.tga";
 	//Sound
 	locations[n].type = "jungle";
-	locations[n].islandId = "Guadeloupe";
+	locations[n].islandId = "MarieGalante";
 	//Models
 	//Always
 	locations[n].filespath.models = "locations\Outside\Jungles\CaveEnt2";
@@ -1567,14 +1567,14 @@ int LocationInitGuadeloupe(int n)
 	locations[n].environment.sea = "false";
 	//Reload map
 	locations[n].reload.l1.name = "reload1_back";
-	locations[n].reload.l1.go = "Cave_Satanists";
+	locations[n].reload.l1.go = "MarieGalante_Satanists";
 	locations[n].reload.l1.emerge = "reload1";
 	locations[n].reload.l1.autoreload = "0";
 	locations[n].reload.l1.label = "Cave";
 	locations[n].locators_radius.reload.reload1_back = 1.3;
 
 	locations[n].reload.l2.name = "reload2_back";
-	locations[n].reload.l2.go = "Guadeloupe_deadlock";
+	locations[n].reload.l2.go = "MarieGalante_deadlock";
 	locations[n].reload.l2.emerge = "reload2";
 	locations[n].reload.l2.autoreload = "1";
 	locations[n].reload.l2.label = "Jungle";
@@ -1582,14 +1582,14 @@ int LocationInitGuadeloupe(int n)
 	n = n + 1;
 
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	// Логово сатанистов
+	// Логово культистов
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	locations[n].id = "Cave_Satanists";
+	locations[n].id = "MarieGalante_Satanists";
 	locations[n].image = "loading\inside\Occultists.tga";
 	locations[n].id.label = "Cave";
 	//Sound
 	locations[n].type = "cave";
-	locations[n].islandId = "Guadeloupe";
+	locations[n].islandId = "MarieGalante";
 	//Models
 	//Always
 	locations[n].filespath.models = "locations\inside\ANIMISTS_Cave";
@@ -1608,7 +1608,7 @@ int LocationInitGuadeloupe(int n)
 	locations[n].environment.weather.rain = false;
  	//Reload map
 	locations[n].reload.l1.name = "reload1_back";
-	locations[n].reload.l1.go = "Guadeloupe_CaveS";
+	locations[n].reload.l1.go = "MarieGalante_SatanistsEntrance";
 	locations[n].reload.l1.emerge = "reload1";
 	locations[n].reload.l1.autoreload = "1";
 	locations[n].locators_radius.item.button02 = 2.4;
@@ -1623,7 +1623,7 @@ int LocationInitGuadeloupe(int n)
 	locations[n].worldmap = "Shore31";
 	//Sound
 	locations[n].type = "seashore";
-	locations[n].islandId = "Guadeloupe";
+	locations[n].islandId = "MarieGalante";
 	locations[n].deadlocked = true;
 	//Models
 	//Always
@@ -1654,7 +1654,7 @@ int LocationInitGuadeloupe(int n)
 	locations[n].environment.sea = "true";
 	//Reload map
 	locations[n].reload.l1.name = "reload1_back";
-	locations[n].reload.l1.go = "Guadeloupe_jungle_add";
+	locations[n].reload.l1.go = "MarieGalante_jungle_add";
 	locations[n].reload.l1.emerge = "reload1";
 	locations[n].reload.l1.autoreload = "1";
 	locations[n].reload.l1.label = "Jungle";

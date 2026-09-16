@@ -171,8 +171,9 @@ int GetSalaryForCrew(ref chref, int crewQuantity)
 }
 
 //Получение зп по матросам c уменьшением суммы в заимости для в месяце. В начале месяца выплата меньше, в конце полная.
-int GetSalaryForCrewMonthlyPay(ref chref, int crewQuantity) {
-	return GetSalaryForCrew(chref, crewQuantity) * sti(Environment.date.day)/30;
+int GetSalaryForCrewMonthlyPay(ref chref, int crewQuantity)
+{
+	return GetSalaryForCrew(chref, crewQuantity) * GetDataDay() / GetMonthDays(GetDataMonth(), GetDataYear());
 }
 
 //Расчет коэффициента зп

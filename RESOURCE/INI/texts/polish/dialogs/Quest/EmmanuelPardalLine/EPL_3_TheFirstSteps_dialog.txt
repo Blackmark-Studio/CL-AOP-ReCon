@@ -1,0 +1,44 @@
+EPL_3_TheFirstSteps_dialog_1 {Proszę zgłosić błąd do pomocy technicznej.}
+EPL_3_TheFirstSteps_dialog_2 {Miałaś dość odwagi, kobieto, żeby się tutaj pojawić, czy to głupota nie pozwoliła ci dostrzec zmian wokół?}
+EPL_3_TheFirstSteps_dialog_3 {Nazywam się @<GetFullName> i jestem tutaj właśnie dlatego, że wokół zaszły pewne zmiany.}
+EPL_3_TheFirstSteps_dialog_4 {Tak? Mów.}
+EPL_3_TheFirstSteps_dialog_5 {Na szczęście byłam w Santo Domingo, kiedy twoi ludzie podjęli nieudaną próbę szturmu. Po mieście rozeszły się pogłoski, że Hiszpania wyznaczyła nagrodę za dwie młode damy - córki komendanta tego fortu - i zamierzam je odnaleźć.}
+EPL_3_TheFirstSteps_dialog_6 {Sądzisz, że gdybym je miał, oddałbym ci je?}
+EPL_3_TheFirstSteps_dialog_7 {Uważam, że potrzebujesz pośrednika do negocjacji. Hiszpanie nie dopuszczą cię do żadnej ze swoich osad na odległość strzału z działa.}
+EPL_3_TheFirstSteps_dialog_8 {Nie mają do tego powodów. To nie moi ludzie zaatakowali kolonię. Po prostu wykorzystałem okazję i zająłem opuszczone umocnienie. Dogodne miejsce, dodam; głupotą byłoby je zignorować. Angielskie i francuskie konwoje kręcą się tuż obok, a przy dobrej pogodzie widać nawet brzegi Tortugi.}
+EPL_3_TheFirstSteps_dialog_9 {A jednak, co z siostrami?}
+EPL_3_TheFirstSteps_dialog_10 {Możesz zabrać swoich ludzi i przeczesać całą wyspę, ale gotów jestem się założyć, że jeśli żyją, same się pojawią. Albo możesz rozdać łopaty i kazać sprawdzić cmentarz za miastem. U mnie ich nie znajdziesz.}
+EPL_3_TheFirstSteps_dialog_11 {Za martwych nikt nie wyznaczałby nagrody.}
+EPL_3_TheFirstSteps_dialog_12 {W takim razie nie mogę ci w niczym pomóc.}
+EPL_3_TheFirstSteps_dialog_13 {Jeszcze tu zajrzę przy okazji.}
+EPL_3_TheFirstSteps_dialog_14 {Przybyłam z polecenia gubernatora Santo Domingo z raportem o niedawnych wydarzeniach na Hispanioli.}
+EPL_3_TheFirstSteps_dialog_15 {Mam już informacje o tym, co się wydarzyło. Plotki, wie pani, rozchodzą się w tych stronach szybciej niż wiatr, ale oficjalny raport oczywiście przeczytam. Proszę przyjąć to jako zapłatę za dostarczenie go na czas.}
+EPL_3_TheFirstSteps_dialog_16 {Señor @<GetFullName> wypłacił mi już nagrodę z góry.}
+EPL_3_TheFirstSteps_dialog_17 {Proszę potraktować to jako pokrycie dodatkowych wydatków.}
+EPL_3_TheFirstSteps_dialog_18 {Nie będę się sprzeciwiać, bo obecnie znajduję się w trudnym położeniu. W związku z tym mam pytanie, bardziej osobiste niż państwowe. Jaki los czeka kolonię utraconą przez Hiszpanię? Przez długi czas była moim domem.}
+EPL_3_TheFirstSteps_dialog_19 {W tej sprawie nie wolno podejmować pochopnych decyzji. Ale jedno mogę powiedzieć na pewno: Hiszpania nie puści płazem krwawego rozboju dokonanego przez piratów. Prędzej czy później nad La Vegą znów zawiśnie hiszpańska flaga, a sprawiedliwość zatriumfuje! A teraz proszę mnie zostawić, muszę pracować.}
+EPL_3_TheFirstSteps_dialog_20 {Dziękuję, Wasza Ekscelencjo!}
+EPL_3_TheFirstSteps_dialog_21 {
+Gratuluję, @<GetFullName>. Zostałaś bohaterką Hispanioli. Twój ojciec byłby z ciebie dumny.
+}
+EPL_3_TheFirstSteps_dialog_22 {
+Mój ojciec by... Chwileczkę, jak mnie nazwałeś?!
+}
+EPL_3_TheFirstSteps_dialog_23 {
+@<GetFullName>. Czy może myślałaś, że będę nazywał cię Remidos?
+}
+EPL_3_TheFirstSteps_dialog_24 {
+Najwyraźniej wiesz więcej, niż mogłabym przypuszczać, Sandro. Wyjaśnij się.
+}
+EPL_3_TheFirstSteps_dialog_25 {
+Nigdy nie wydawało ci się dziwne, że twoje imię trochę wyróżnia się na tle innych hiszpańskich imion?
+}
+EPL_3_TheFirstSteps_dialog_26 {
+Matka nadała mi to imię, bo była Francuzką z drugiej części wyspy - Haiti. I co z tego?
+}
+EPL_3_TheFirstSteps_dialog_27 {
+Rzecz w tym, że twój ojciec - Manuel Pardal - to słynny portugalski korsarz służący hiszpańskiej Koronie. Właśnie na jego cześć nadano ci imię Emmanuel. Ale życie z takim nazwiskiem może być bardzo niebezpieczne, dlatego ukryto cię z dala od wszelkich zagrożeń.\nDlatego przekazuję ci wiadomość od twojego ojca: „Życzę ci losu o wiele lepszego niż mój, córko”. Teraz ja wypełniłem swój obowiązek, a ty wypełnisz swój.\nNa twoim okręcie zostawiam mojego przyjaciela i lekarza, Hopkinsa. Wciąż jest zbyt słaby, by ruszyć ze mną tam, dokąd zmierzam... Krótko mówiąc, jeszcze nie jest w stanie. Proszę, zaopiekuj się nim przez jakiś czas, a później po niego wrócę. Znajdę cię, nie martw się, @<GetFullName>.
+}
+EPL_3_TheFirstSteps_dialog_28 {
+Dobrze, Sandro. Naprawdę... Muszę to wszystko przemyśleć. Dziękuję.
+}

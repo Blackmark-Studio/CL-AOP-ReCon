@@ -1,102 +1,102 @@
 PuertoPrincipe_Waitress_1 {
-有问题吗，@<GetAddress_Form>?
+有问题吗， @<GetAddress_Form>?
 }
 PuertoPrincipe_Waitress_2 {
-@<GetAddress_Form>，您找俺有啥事？
+@<GetAddress_Form>， 您找我有什么事？ 
 }
 PuertoPrincipe_Waitress_3 {
 @<RandPhraseSimple>
 }
 PuertoPrincipe_Waitress_4 {
-嗯，你这是在跟俺调情吗，@<GetAddress_Form>？又来这些奇怪的问题……
+嗯， 你这是在跟我调情吗， @<GetAddress_Form>？ 又来这些奇怪的问题…… 
 }
 PuertoPrincipe_Waitress_5 {
-你今天已经第三次提这事了……这是在表示关心吗？
+你今天已经第三次提这事了…… 这是在表示关心吗？ 
 }
 PuertoPrincipe_Waitress_6 {
-你又要问问题了吗，@<GetAddress_Form>?
+你又要问问题了吗， @<GetAddress_Form>?
 }
 PuertoPrincipe_Waitress_7 {
-我改主意了……
+我改主意了…… 
 }
 PuertoPrincipe_Waitress_8 {
-我现在没什么可说的。
+我现在没什么可说的。 
 }
 PuertoPrincipe_Waitress_9 {
 @<RandPhraseSimple>
 }
 PuertoPrincipe_Waitress_10 {
-不不，哪能啊，美女……
+不不， 哪能啊， 美女…… 
 }
 PuertoPrincipe_Waitress_11 {
-哪有啊，亲爱的，只是有点健忘……
+哪有啊， 亲爱的， 只是有点健忘…… 
 }
 PuertoPrincipe_Waitress_12 {
-没事，没什么要问的……
+没事， 没什么要问的…… 
 }
 PuertoPrincipe_Waitress_13_m {
-听着，美女，我得知道Soukins在搞什么。这事儿很重要……
+听着， 美女， 我得知道索金斯在搞什么。 这事儿很重要…… 
 }
 PuertoPrincipe_Waitress_13_f {
-听着，宝贝，我得知道Soukins在搞什么。真的很重要……
+听着， 宝贝， 我得知道索金斯在搞什么。 真的很重要…… 
 }
 PuertoPrincipe_Waitress_14_m {
-你要的东西我带来了。你的戒指在这儿。
+你要的东西我带来了。 你的戒指在这儿。 
 }
 PuertoPrincipe_Waitress_14_f {
-你要的东西我带来了。你的戒指在这儿。
+你要的东西我带来了。 你的戒指在这儿。 
 }
 PuertoPrincipe_Waitress_15 {
-给我拿一个镶有祖母绿的戒指和一个镶有红宝石的戒指来。也许那样我就能帮你……
+给我拿一个镶有祖母绿的戒指和一个镶有红宝石的戒指来。 也许那样我就能帮你…… 
 }
 PuertoPrincipe_Waitress_16 {
-我没有……
+我没有…… 
 }
 PuertoPrincipe_Waitress_17 {
-给你戒指，亲爱的……
+给你戒指， 亲爱的…… 
 }
 PuertoPrincipe_Waitress_18 {
-很抱歉，但这是我的绝对条件。
+很抱歉， 但这是我的绝对条件。 
 }
 PuertoPrincipe_Waitress_19 {
-明白了……
+明白了…… 
 }
 PuertoPrincipe_Waitress_20_m {
-嗯，真漂亮！谢谢你。你想问啥？
+嗯， 真漂亮！ 谢谢你。 你想问什么？ 
 }
 PuertoPrincipe_Waitress_20_f {
-嗯，真漂亮！谢谢你。你想问啥？
+嗯， 真漂亮！ 谢谢你。 你想问什么？ 
 }
 PuertoPrincipe_Waitress_21 {
-我得知道Richard Sowkins在搞什么，你知道点什么吗？
+我得知道理查德.索金斯在搞什么， 你知道点什么吗？ 
 }
 PuertoPrincipe_Waitress_22 {
-不行。
+不行。 
 }
 PuertoPrincipe_Waitress_23 {
-那你到底为什么来惹我？！
+那你到底为什么来惹我？ ！ 
 }
 PuertoPrincipe_Waitress_24 {
-我跟你说，俺知道怎么查出来。你听好了，Richard这人特别仔细，啥都记在他船上的航海日志里。你只要把那本日志弄到手就行了。
+我跟你说， 我知道怎么查出来。 你听好了， 理查德这人特别仔细， 什么都记在他船上的航海日志里。 你只要把那本日志弄到手就行了。 
 }
 PuertoPrincipe_Waitress_25 {
-哈！要不要你顺便教教俺怎么做啊？
+哈！ 要不要你顺便教教我怎么做啊？ 
 }
 PuertoPrincipe_Waitress_26 {
-给你个建议。去他住处把航海日志拿出来。白天他一直待在那儿，你要是这时候动手，肯定活不着出来。可要是晚上……
+给你个建议。 去他住处把航海日志拿出来。 白天他一直待在那儿， 你要是这时候动手， 肯定活不着出来。 可要是晚上…… 
 }
 PuertoPrincipe_Waitress_27 {
-可晚上都关门了！
+可晚上都关门了！ 
 }
 PuertoPrincipe_Waitress_28 {
-从房子后面的窗户爬进去，你得用梯子才能上去。
+从房子后面的窗户爬进去， 你得用梯子才能上去。 
 }
 PuertoPrincipe_Waitress_29 {
-那我要去哪儿弄到？
+那我要去哪儿弄到？ 
 }
 PuertoPrincipe_Waitress_30 {
-我也不知道……
+我也不知道…… 
 }
 PuertoPrincipe_Waitress_31 {
-嗯，那也谢谢你了。
+嗯， 那也谢谢你了。 
 }

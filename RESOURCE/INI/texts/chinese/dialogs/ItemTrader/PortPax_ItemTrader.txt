@@ -1,81 +1,81 @@
 PortPax_ItemTrader_1 {
-什么问题？
+什么问题？ 
 }
 PortPax_ItemTrader_2 {
-有什么事需要俺帮忙吗，@<GetAddress_Form>?
+有什么事需要我帮忙吗， @<GetAddress_Form>?
 }
 PortPax_ItemTrader_3 {
 @<RandPhraseSimple>
 }
 PortPax_ItemTrader_4 {
-又有问题啊，@<GetAddress_Form>……
+又有问题啊， @<GetAddress_Form>…… 
 }
 PortPax_ItemTrader_5 {
-问题倒是一堆……要不要来做点生意，@<GetAddress_Form>?
+问题倒是一堆…… 要不要来做点生意， @<GetAddress_Form>?
 }
 PortPax_ItemTrader_6 {
-听着，咱们还要浪费多少时间在这些废话上？
+听着， 咱们还要浪费多少时间在这些废话上？ 
 }
 PortPax_ItemTrader_7 {
-没问题……
+没问题…… 
 }
 PortPax_ItemTrader_8 {
-我现在没什么可说的。
+我现在没什么可说的。 
 }
 PortPax_ItemTrader_9 {
 @<RandPhraseSimple>
 }
 PortPax_ItemTrader_10 {
-唉，又来了……
+唉， 又来了…… 
 }
 PortPax_ItemTrader_11 {
-是啊，讨价还价确实更好……
+是啊， 讨价还价确实更好…… 
 }
 PortPax_ItemTrader_12 {
-嗯，抱歉啊，商人……
+嗯， 抱歉啊， 商人…… 
 }
 PortPax_ItemTrader_13 {
-跟我说说那个丢了戒指的奇怪女人，你认识她吗？
+跟我说说那个丢了戒指的奇怪女人， 你认识她吗？ 
 }
 PortPax_ItemTrader_14 {
-她就是个疯子，别理她。
+她就是个疯子， 别理她。 
 }
 PortPax_ItemTrader_15 {
-行吧。
+行吧。 
 }
 PortPax_ItemTrader_16 {
-你干嘛非得要那个疯女人？还不如在俺这买点啥。
+你干嘛非得要那个疯女人？ 还不如在我这买点什么。 
 }
 PortPax_ItemTrader_17 {
-对不起。
+对不起。 
 }
 PortPax_ItemTrader_18_m {
-我是做生意的，不是专门传闲话的。
+我是做生意的， 不是专门传闲话的。 
 }
 PortPax_ItemTrader_18_f {
-我是做生意的，不是专门传闲话的。
+我是做生意的， 不是专门传闲话的。 
 }
 PortPax_ItemTrader_19 {
-对不起。
+对不起。 
 }
 PortPax_ItemTrader_20 {
-不好意思，我不认识她。
+不好意思， 我不认识她。 
 }
 PortPax_ItemTrader_21 {
-行吧，我去问别人。
+行吧， 我去问别人。 
 }
 PortPax_ItemTrader_22 {
-她失去的不只是那枚戒指。这是个让人心碎的故事，每次说起来我都难受。她叫Josephine Lodet。她在儿子第一次出海前一天，把一枚漂亮的戒指送给了他，说是为了带来好运。可他在进攻Santo Domingo时，第一场战斗就丧命了。等他死讯传到我们这里，可怜的Josephine……你有眼睛，也看见她变成什么样了。
+她失去的不只是那枚戒指。 这是个让人心碎的故事， 每次说起来我都难受。 她叫约瑟芬.洛德。 她在儿子第一次出海前一天， 把一枚漂亮的戒指送给了他， 说是为了带来好运。 可他在进攻圣多明各时， 第一场战斗就丧命了。 等他死讯传到我们这里， 可怜的约瑟芬…… 你有眼睛， 也看见她变成什么样了。 
 }
 PortPax_ItemTrader_23 {
-那是什么戒指？
+那是什么戒指？ 
 }
 PortPax_ItemTrader_24_m {
-非常漂亮，也非常昂贵的首饰。我这辈子见过最惊艳的蓝宝石，镶嵌在金子里。她祖父从欧洲带来的。我不是珠宝商，但这东西可能值一万……甚至两万？唉，真是个糟糕的故事！好吧，祝你好运！
+非常漂亮， 也非常昂贵的首饰。 我这辈子见过最惊艳的蓝宝石， 镶嵌在金子里。 她祖父从欧洲带来的。 我不是珠宝商， 但这东西可能值一万…… 甚至两万？ 唉， 真是个糟糕的故事！ 好吧， 祝你好运！ 
 }
 PortPax_ItemTrader_24_f {
-非常漂亮，也非常昂贵的首饰。我这辈子见过最惊艳的蓝宝石，镶嵌在金子里。她祖父从欧洲带来的。我不是珠宝商，但这东西可能值一万……也许两万？唉，真是个糟糕的故事！好吧，祝你好运！
+非常漂亮， 也非常昂贵的首饰。 我这辈子见过最惊艳的蓝宝石， 镶嵌在金子里。 她祖父从欧洲带来的。 我不是珠宝商， 但这东西可能值一万…… 也许两万？ 唉， 真是个糟糕的故事！ 好吧， 祝你好运！ 
 }
 PortPax_ItemTrader_25 {
-谢谢你，@<npchar>。你帮了我大忙。再见。
+谢谢你， @<npchar>。 你帮了我大忙。 再见。 
 }

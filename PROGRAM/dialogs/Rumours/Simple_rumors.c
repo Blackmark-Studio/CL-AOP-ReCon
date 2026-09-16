@@ -137,7 +137,7 @@ void ProcessCommonDialogRumors(ref NPChar, aref Link, aref NextDiag)
 
 		/////////////////////////////////////////////////---слухи темных личностей---///////////////////////////////////
 		case "rumours_marginal":
-			if (!CheckAttribute(NPChar, "quest.repeat.rumours_marginal") || NPChar.quest.repeat.rumours_marginal != 2)
+			if (!CheckAttribute(NPChar, "quest.repeat.rumours_marginal") || sti(NPChar.quest.repeat.rumours_marginal) < 2)
 				srum = SelectRumourEx("citizen", NPChar, &iNum); //SelectRumourEx("marginal", NPChar);
 			else srum = NoRumourText(rand(SIMPLE_RUMOUR_NUM - 1));
 			if (RumourHasInformation(srum))
@@ -292,7 +292,7 @@ void ProcessCommonDialogRumors(ref NPChar, aref Link, aref NextDiag)
 
 		/////////////////////////////////////////////////---слухи матросов---////////////////////////////////////////////
 		case "rumours_sailor":
-			if (!CheckAttribute(NPChar, "quest.repeat.rumours_sailor") || NPChar.quest.repeat.rumours_sailor != 2) srum = SelectRumourEx("sailor", NPChar, &iNum);
+			if (!CheckAttribute(NPChar, "quest.repeat.rumours_sailor") || sti(NPChar.quest.repeat.rumours_sailor) < 2) srum = SelectRumourEx("sailor", NPChar, &iNum);
 			else srum = NoRumourText(rand(SIMPLE_RUMOUR_NUM - 1)); // fix
 			if (RumourHasInformation(srum))
 			{
@@ -406,14 +406,11 @@ void ProcessCommonDialogRumors(ref NPChar, aref Link, aref NextDiag)
 			//<--работорговец
 
 			//ОЗГ, Крыса
-			if (CheckAttribute(pchar, "questTemp.Headhunter"))
+			if (CheckAttrValue(pchar, "questTemp.Headhunter", "Rat_Tavern") && npchar.location == pchar.questTemp.Headhunter.Ratrumcity + "_tavern")
 			{
-				if (pchar.questTemp.Headhunter == "Rat_Tavern" && npchar.location == pchar.questTemp.Headhunter.Ratrumcity + "_tavern")
-				{
-					dialog.text = StringFromKey("Simple_rumors_179", pchar);
-					link.l1 = StringFromKey("Simple_rumors_180");
-					link.l1.go = "Rat_Tavern_1";
-				}
+				dialog.text = StringFromKey("Simple_rumors_179", pchar);
+				link.l1 = StringFromKey("Simple_rumors_180");
+				link.l1.go = "Rat_Tavern_1";
 			}
 			//<--ОЗГ, Крыса
 
@@ -591,12 +588,12 @@ void ProcessCommonDialogRumors(ref NPChar, aref Link, aref NextDiag)
 				break;
 			}
 			//ОЗГ, Крыса на Тортуге
-			if (CheckAttribute(pchar, "questTemp.Headhunter") && pchar.questTemp.Headhunter == "Rat_tortuga" && npchar.location == "Tortuga_tavern")
+			if (CheckAttrValue(pchar, "questTemp.Headhunter", "Rat_tortuga") && npchar.location == "Tortuga_tavern")
 			{
 				Dialog.Text = StringFromKey("Simple_rumors_260");
 				link.l1 = StringFromKey("Simple_rumors_261");
 				link.l1.go = "rumours_tavern";
-				pchar.quest.Headhunter_PinasseTortugaOver.over = "yes";
+				pchar.quest.Headhunter_PinasseOver.over = "yes";
 				AddQuestRecord("Headhunt", "17");
 				pchar.questTemp.Headhunter = "Rat_officer";
 				if (!IsEntity(&Characters[GetCharacterIndex("RatOfficer")]))
@@ -983,7 +980,7 @@ void ProcessCommonDialogRumors(ref NPChar, aref Link, aref NextDiag)
 					Dialog.Text = StringFromKey("Simple_rumors_383", pchar.GenQuest.LoanChest.Money.Discount);
 					link.l1 = StringFromKey("Simple_rumors_384");
 					link.l1.go = "exit";
-					AddMoneyToCharacter(pchar, sti(pchar.GenQuest.LoanChest.Money) / 100 * sti(pchar.GenQuest.LoanChest.Money.Discount));
+					AddMoneyToCharacter(pchar, sti(pchar.GenQuest.LoanChest.Money) / 100 * (100 - sti(pchar.GenQuest.LoanChest.Money.Discount)));
 				}
 				else
 				{
@@ -1306,7 +1303,7 @@ void ProcessCommonDialogRumors(ref NPChar, aref Link, aref NextDiag)
 			dialog.text = StringFromKey("Simple_rumors_469");
 			link.l1 = StringFromKey("Simple_rumors_470");
 			link.l1.go = "exit";
-			pchar.questTemp.BlueBird = "over";
+			BlueBird_CleanupAll();
 		break;
 		case "RBlueBirdWon":
 			dialog.text = StringFromKey("Simple_rumors_471");
@@ -1347,7 +1344,7 @@ void ProcessCommonDialogRumors(ref NPChar, aref Link, aref NextDiag)
 			link.l1 = StringFromKey("Simple_rumors_482");
 			link.l1.go = "exit";
 			CloseQuestHeader("Xebeca_BlueBird");
-			pchar.questTemp.BlueBird = "over";
+			BlueBird_CleanupAll();
 			RemoveLandQuestMark_Main(npchar, "Xebeca_BlueBird");
 			Achievment_Set(ACH_Prizraki_proshlogo);
 		break;
@@ -1383,7 +1380,7 @@ void ProcessCommonDialogRumors(ref NPChar, aref Link, aref NextDiag)
 			link.l1 = StringFromKey("Simple_rumors_492");
 			link.l1.go = "exit";
 			CloseQuestHeader("Xebeca_BlueBird");
-			pchar.questTemp.BlueBird = "over";
+			BlueBird_CleanupAll();
 			RemoveLandQuestMark_Main(npchar, "Xebeca_BlueBird");
 			Achievment_Set(ACH_Prizraki_proshlogo);
 		break;
@@ -1443,8 +1440,7 @@ void ProcessCommonDialogRumors(ref NPChar, aref Link, aref NextDiag)
 			dialog.text = StringFromKey("Simple_rumors_513");
 			link.l1 = StringFromKey("Simple_rumors_514");
 			link.l1.go = "exit";
-			DeleteAttribute(pchar, "questTemp.BlueBird");
-			pchar.questTemp.BlueBird = "over"; //закрываем квест
+			BlueBird_CleanupAll(); //закрываем квест
 			AddItemLog(pchar, "chest", "14", StringFromKey("InfoMessages_134"), "Important_item");
 			AddQuestRecord("Xebeca_BlueBird", "15");
 			AddQuestUserData("Xebeca_BlueBird", "sSex", GetSexPhrase("", "а"));
@@ -1957,50 +1953,22 @@ string sRumourAboutOwners_CityRumour(string sCity, string sOwnerType) // Зде�
 
 string sRumourAboutOwners_Init(string sOwnerType, int iRumourNum) // База слухов жителей. Можно менять без новой игры
 {
+	// > раньше строились все 4 массива по 7 элементов ради вывода одной строки в StringFromKey, а по итогу в sKey мог оказаться мусор
+	// > Ключи блочно-последовательные: Mayor 572+n, TavernKeeper 579+n, ShipYarder 586+n, Trader 593+n
 
-	string STR_MAYOR[MAX_RUMOURS_ABOUT_OWNERS]; // Губернаторы
-	STR_MAYOR[0] = StringFromKey("Simple_rumors_572");
-	STR_MAYOR[1] = StringFromKey("Simple_rumors_573");
-	STR_MAYOR[2] = StringFromKey("Simple_rumors_574");
-	STR_MAYOR[3] = StringFromKey("Simple_rumors_575");
-	STR_MAYOR[4] = StringFromKey("Simple_rumors_576");
-	STR_MAYOR[5] = StringFromKey("Simple_rumors_577");
-	STR_MAYOR[6] = StringFromKey("Simple_rumors_578");
+	int iBase = -1;
 
-	string STR_TAVERNKEEPER[MAX_RUMOURS_ABOUT_OWNERS]; // Тавернщики
-	STR_TAVERNKEEPER[0] = StringFromKey("Simple_rumors_579");
-	STR_TAVERNKEEPER[1] = StringFromKey("Simple_rumors_580");
-	STR_TAVERNKEEPER[2] = StringFromKey("Simple_rumors_581");
-	STR_TAVERNKEEPER[3] = StringFromKey("Simple_rumors_582");
-	STR_TAVERNKEEPER[4] = StringFromKey("Simple_rumors_583");
-	STR_TAVERNKEEPER[5] = StringFromKey("Simple_rumors_584");
-	STR_TAVERNKEEPER[6] = StringFromKey("Simple_rumors_585");
+	switch (sOwnerType)
+	{
+		case "Mayor":        iBase = 572; break; // Губернаторы > Simple_rumors_572..578
+		case "TavernKeeper": iBase = 579; break; // Тавернщики > Simple_rumors_579..585
+		case "ShipYarder":   iBase = 586; break; // Верфисты > Simple_rumors_586..592
+		case "Trader":       iBase = 593; break; // Магазинщики > Simple_rumors_593..599
+	}
 
-	string STR_SHIPYARDER[MAX_RUMOURS_ABOUT_OWNERS]; // Верфисты
-	STR_SHIPYARDER[0] = StringFromKey("Simple_rumors_586");
-	STR_SHIPYARDER[1] = StringFromKey("Simple_rumors_587");
-	STR_SHIPYARDER[2] = StringFromKey("Simple_rumors_588");
-	STR_SHIPYARDER[3] = StringFromKey("Simple_rumors_589");
-	STR_SHIPYARDER[4] = StringFromKey("Simple_rumors_590");
-	STR_SHIPYARDER[5] = StringFromKey("Simple_rumors_591");
-	STR_SHIPYARDER[6] = StringFromKey("Simple_rumors_592");
+	if (iBase == -1) return "";
+	if (iRumourNum < 0 || iRumourNum >= MAX_RUMOURS_ABOUT_OWNERS) return "";
 
-	string STR_TRADER[MAX_RUMOURS_ABOUT_OWNERS]; // Магазинщики
-	STR_TRADER[0] = StringFromKey("Simple_rumors_593");
-	STR_TRADER[1] = StringFromKey("Simple_rumors_594");
-	STR_TRADER[2] = StringFromKey("Simple_rumors_595");
-	STR_TRADER[3] = StringFromKey("Simple_rumors_596");
-	STR_TRADER[4] = StringFromKey("Simple_rumors_597");
-	STR_TRADER[5] = StringFromKey("Simple_rumors_598");
-	STR_TRADER[6] = StringFromKey("Simple_rumors_599");
-
-	string sTempMayor = STR_MAYOR[iRumourNum];
-	string sTempTavernkeper = STR_TAVERNKEEPER[iRumourNum];
-	string sTempShipyarder = STR_SHIPYARDER[iRumourNum];
-	string sTempTrader = STR_TRADER[iRumourNum];
-
-	if (sOwnerType == "Mayor") return sTempMayor;
-	if (sOwnerType == "TavernKeeper") return sTempTavernkeper;
-	if (sOwnerType == "ShipYarder") return sTempShipyarder;
-	if (sOwnerType == "Trader") return sTempTrader;
+	string sKey = "Simple_rumors_" + (iBase + iRumourNum);
+	return StringFromKey(sKey);
 }

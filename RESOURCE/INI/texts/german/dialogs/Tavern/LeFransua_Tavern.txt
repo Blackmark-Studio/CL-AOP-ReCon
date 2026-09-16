@@ -365,7 +365,7 @@ LeFransua_Tavern_104 {
 Können Sie mir etwas über den Aufenthaltsort dieser... Ratte sagen?
 }
 LeFransua_Tavern_105 {
-Leider nicht viel. Ich kann nicht einmal sagen, auf welchem Schiff er unterwegs ist – Rat wechselt oft das Schiff und verwischt seine Spuren. Alles, was ich tun kann, ist die Häfen zu nennen, von denen die letzten drei verschwundenen Schiffe ausgelaufen sind und mit denen wir glauben, dass Rat in Verbindung steht. Vielleicht lohnt es sich, die Umstände zu untersuchen, die zu diesen unglücklichen Ereignissen an diesen Orten geführt haben.\nDie Städte sind: Willemstad auf Curaçao, Cartagena am Festland und Port of Spain auf der Insel Trinidad und Tobago.
+Leider nicht viel. Ich kann nicht einmal sagen, auf welchem Schiff er unterwegs ist – Rat wechselt oft das Schiff und verwischt seine Spuren. Alles, was ich tun kann, ist die Häfen zu nennen, von denen die letzten drei verschwundenen Schiffe ausgelaufen sind und mit denen wir glauben, dass Rat in Verbindung steht. Vielleicht lohnt es sich, die Umstände zu untersuchen, die zu diesen unglücklichen Ereignissen an diesen Orten geführt haben.\nDie Städte sind: Willemstad auf Curaçao, Cartagena am Festland und Port of Spain auf der Insel Trinidad.
 }
 LeFransua_Tavern_106 {
 Das ist ja was! Ich denke, es ist Zeit, dass ich mich auf meine Reise begebe.

@@ -1,0 +1,1121 @@
+Other_dialog_11 {
+Da ist es. Es war unter dem Futter, direkt am Herzen — genau wie Vargas gesagt hat. Werft die Leiche von der Klippe.
+}
+Other_dialog_12 {
+Das wäre erledigt. Raul Guillaume hat sich betrunken, ist an der Klippe ausgerutscht und ins Meer gefallen. Welch ein Unglück... Wir haben den Brief. Zurück zu Vargas.
+}
+Other_dialog_13 {
+Wo wollt ihr denn hin?
+}
+Other_dialog_14_m {
+Sieh an... Die ganze Zeit saß also eine Ratte mit gewaltigen Ohren direkt neben uns. Hättest besser in deinem Loch bleiben sollen. Dann hättest du vielleicht den Morgen erlebt.
+}
+Other_dialog_14_f {
+Sieh an... Die ganze Zeit saß also eine Ratte mit gewaltigen Ohren direkt neben uns. Hättest besser in deinem Loch bleiben sollen. Dann hättest du vielleicht den Morgen erlebt.
+}
+Other_dialog_15 {
+Versuch, den Brief nicht mit Blut zu beschmieren. Ich brauche ihn noch.
+}
+Other_dialog_16 {
+Señor Vargas! Kein Hinterhalt. Le Basque ist entgegen Ihrer Erwartung nicht persönlich erschienen. Sollen wir die Mörser zurückrollen?
+}
+Other_dialog_17 {
+Nur weil Sie niemanden gesehen haben, heißt das nicht, dass es keinen Hinterhalt gibt. Ist er allein?
+}
+Other_dialog_18 {
+Nein. Ein paar Männer — offenbar Leute von le Basque. Und irgendein junger Bursche.
+}
+Other_dialog_19 {
+Hat Rimalie sich im Alter einen Welpen zugelegt? Nun, dann hat er dem Jungen selbst das Todesurteil unterschrieben. Einen Mörser auf die Hütte abfeuern. Den zweiten bereithalten. Le Basque ist gerissen; er könnte ein Dutzend seiner Halsabschneider in der Nähe versteckt haben.
+}
+Other_dialog_20 {
+Jawohl! Ein Schuss auf die Hütte!
+}
+Other_dialog_21 {
+Und übertreiben Sie es nicht. Rimalie wird lebend gebraucht — er weiß zu viel. Die übrigen umlegen. Verstanden?
+}
+Other_dialog_22 {
+Vollkommen, Señor.
+}
+Other_dialog_23 {
+Vergessen Sie nicht: Falls etwas schiefgeht, rettet Sie niemand. Ich riskiere mit der „Margarita“ schon genug, indem ich mich in den Grenzgewässern bei Port of Spain aufhalte. Hier eine Seeschlacht anzuzetteln wäre der sicherste Weg, die nächsten Küstenpatrouillen anzulocken. Sie dürfen keinen Fehler machen.
+}
+Other_dialog_24 {
+Feuer!
+}
+Other_dialog_25 {
+Da ist ja Jaco. Lange genug haben wir nach dieser kleinen Ratte gesucht. Mansfield braucht ihn lebend, also nehmen wir ihn mit. Ihr könnt weiterziehen, wohin ihr wolltet.
+}
+Other_dialog_26 {
+Zu Mansfield wollten wir ohnehin. Jaco hat seinen Auftrag erfüllt: Duval lebt und steht dort drüben. Wir bringen beide selbst hin. Also aus dem Weg.
+}
+Other_dialog_27_m {
+Duval... Tatsächlich. Dann hat die kleine Ratte ihre Schuld doch beglichen. Gut, bring sie selbst hin — Mansfield wird entscheiden. Aber wir behalten euch im Auge.
+}
+Other_dialog_27_f {
+Duval... Tatsächlich. Dann hat die kleine Ratte ihre Schuld doch beglichen. Gut, bring sie selbst hin — Mansfield wird entscheiden. Aber wir behalten euch im Auge.
+}
+Other_dialog_28 {
+Wie ihr wollt.
+}
+Other_dialog_29 {
+Ist mir scheißegal. Auf diesen Hungerleider ist eine Belohnung ausgesetzt, und die hole ich mir. Gib ihn freiwillig heraus, dann lassen wir dich ausnahmsweise am Leben.
+}
+Other_dialog_30 {
+Du bist reichlich selbstsicher. Offenbar muss ich dir Manieren beibringen.
+}
+Other_dialog_31 {
+Was wollen Sie, Señor? Wenn Sie wegen Wein kommen, lassen Sie mich wenigstens erst aufessen.
+}
+Other_dialog_32 {
+Ich ziehe kräftigen Rum dem provenzalischen Wein vor. Genau wie ein gemeinsamer Bekannter von uns.
+}
+Other_dialog_33 {
+Ah, schön Sie zu sehen. Ehrlich gesagt habe ich früher mit Ihnen gerechnet. Ich fürchte, unser Fisch ist vom Haken gegangen.
+}
+Other_dialog_34 {
+Molina ist geflohen?
+}
+Other_dialog_35 {
+Entweder war ich zu neugierig, oder seine Nerven haben versagt. Gestern ging unser Herr Schatzmeister an Bord seiner Brigg und verließ Havanna überstürzt mit Kurs auf Santa Catalina. Allerdings floh er nicht mit leeren Händen... Er hat eine Reiseschatulle bei sich, für deren Verlust Don Diego ihm ohne Zögern beide Hände abhacken würde. Holt ihn ein, und ihr ganzes Netz liegt in eurer Hand.
+}
+Other_dialog_36 {
+Bei günstigem Wind kann er einen ordentlichen Vorsprung haben...
+}
+Other_dialog_37 {
+Richtig. Sie sollten sich beeilen. Wenn Molina bereits begriffen hat, dass ihm der Boden unter den Füßen brennt, taucht er unter, und dann wird es äußerst schwer, ihn wiederzufinden.
+}
+Other_dialog_38 {
+Dann dürfen wir keine Minute verlieren. Leben Sie wohl, Leroux.
+}
+Other_dialog_39 {
+Beeilen Sie sich, Kapitän!
+}
+Other_dialog_40 {
+Verfluchte Ladrones! Wisst ihr überhaupt, wen ihr angegriffen habt? Ich bin Untertan der spanischen Krone! Der Gouverneur von Havanna persönlich wird für mich eintreten!
+}
+Other_dialog_41 {
+Vargas' Schatzmeister, nehme ich an.
+}
+Other_dialog_42 {
+Argh...
+}
+Other_dialog_43 {
+Ja, ja, ich weiß sehr gut, wer du bist. Genau deshalb lebst du noch. Diese hübsche Schatulle nehme ich allerdings an mich. Dir empfehle ich, dich auf ein ausführliches Gespräch mit einem nicht besonders geduldigen Mann vorzubereiten.
+}
+Other_dialog_44 {
+Wer... wer ist dieser Mann?
+}
+Other_dialog_45 {
+Ich glaube, du kannst es dir denken. Aber ich gebe dir einen Hinweis: Es ist der Mann, den euer geliebter Don Diego so eifrig jagt.
+}
+Other_dialog_46 {
+Le Basque... Dann hatte Quesada recht...
+}
+Other_dialog_47 {
+Bis wir Tortuga erreichen, hast du genug Zeit, darüber nachzudenken. Einstweilen: Willkommen im Laderaum. Und keine Dummheiten.
+}
+Other_dialog_48 {
+Le Basque, ich...
+}
+Other_dialog_49 {
+Na, wen haben wir denn da? Noch ein Köter von le Basque? Nur herein. Für dich haben wir auch glühendes Eisen.
+}
+Other_dialog_50 {
+So bekämpft Vargas also die Piraterie — indem er Kinder in Höhlen foltert. Umso erfreulicher wird es sein, ihn zur Hölle zu schicken.
+}
+Other_dialog_51 {
+Was wollt ihr noch von mir, verfluchte Hunde? Ich habe nichts. Nicht einmal eine Waffe.
+}
+Other_dialog_52 {
+Sie beleidigen mich, Señor. Sehe ich etwa aus wie einer der hiesigen Piraten, der wegen ein paar Piastern über jeden herfällt?
+}
+Other_dialog_53 {
+Oh... Oh, @<GetAddress_Form>, verzeihen Sie. Ich... wissen Sie...
+}
+Other_dialog_54 {
+Ihr Kapitän hat Sie hier zurückgelassen. Das weiß ich.
+}
+Other_dialog_55 {
+Dann kennen Sie Quesada? Diesen feigen Bastard? Zehn Jahre habe ich ihm gedient. Zehn Jahre!
+}
+Other_dialog_56 {
+Persönlich bin ich ihm noch nicht begegnet. Aber ich hoffe, das ändert sich bald. Mit Ihrer Hilfe. Sie möchten doch, dass wir ihm einen tödlichen Gruß von Ihnen ausrichten?
+}
+Other_dialog_57 {
+Und ob! Nichts wünsche ich mir mehr! Aber... wer sind Sie?
+}
+Other_dialog_58 {
+Ihre Freunde. Und Feinde von Martin Quesada. Reicht das nicht?
+}
+Other_dialog_59 {
+Natürlich. Ich meine... natürlich reicht das. Er ist nach Turks gefahren. Dort soll er Vargas' Versorgungsgeschwader treffen. Sie bringen Pulver, Kanonen und Material für Reparaturen. Mit den Einheimischen ist er nie richtig ins Geschäft gekommen.
+}
+Other_dialog_60 {
+Vielen Dank. Sie haben uns sehr geholfen. Leben Sie wohl.
+}
+Other_dialog_61 {
+Sie können mich doch nicht hierlassen! Ich habe Ihnen geholfen!
+}
+Other_dialog_62 {
+Piratenabschaum... Ihr habt mich besiegt, aber weit kommt ihr nicht. Spanien vergisst so etwas nicht. Vargas erst recht nicht.
+}
+Other_dialog_63 {
+Vargas? Sind Sie sicher, dass er Sie nicht genauso fallen lässt wie Sie Ihren Offizier auf Bermuda?
+}
+Other_dialog_64 {
+Er hat euch also nach Turks geführt?.. Elender Feigling. Verdammter Verräter!
+}
+Other_dialog_65 {
+Er hat nur seine Schuld beglichen. Und jetzt verteidigen Sie sich.
+}
+Other_dialog_66 {
+Bartolomeo? Etienne Marceau lässt dich grüßen.
+}
+Other_dialog_67 {
+Leiser, Señor! Den Namen dieses Franzosen spricht man hier besser nicht laut aus. Was will er diesmal? Ich bin seit Jahren aus dem Geschäft!
+}
+Other_dialog_68 {
+Eine Kleinigkeit. Die Diensttür der Hafenverwaltung soll heute Nacht rein zufällig offenstehen.
+}
+Other_dialog_69 {
+Sind Sie wahnsinnig? Wenn der Kommandant davon erfährt...
+}
+Other_dialog_70 {
+Der Kommandant erfährt nichts, wenn du den Mund hältst. Hier sind zweitausend Piaster. Für so eine Kleinigkeit reicht das wohl.
+}
+Other_dialog_71 {
+Der Kommandant erfährt nichts. Und wenn die Tür verschlossen ist, zieht Etienne Marceau dir persönlich die Haut ab. Das willst du doch nicht, oder?
+}
+Other_dialog_72 {
+Dieser verfluchte Marceau... Also gut... Kommen Sie morgen nach Mitternacht. Das Schloss an der Tür wird kaputt sein. Aber ich gehe nicht mit hinein!
+}
+Other_dialog_73 {
+Das ist nicht nötig. Danke.
+}
+Other_dialog_74 {
+Argh... Schon gut. Kommen Sie morgen nach Mitternacht, die Tür wird offen sein. Aber ich flehe Sie an: Ziehen Sie mich nie wieder in Ihre Geschäfte hinein!
+}
+Other_dialog_75 {
+Das entscheidet Marceau.
+}
+Other_dialog_76_m {
+Fahr zur Hölle, verfluchter Ladron... Deinem Welpen habe ich schon gesagt... Ihr bekommt nichts aus mir heraus.
+}
+Other_dialog_76_f {
+Fahr zur Hölle, verfluchte Räuberin... Deinem Welpen habe ich schon gesagt... Ihr bekommt nichts aus mir heraus.
+}
+Other_dialog_77 {
+Jaco ist jung und hitzköpfig; ihm fehlt die Geduld. Ich dagegen bin Kapitän. Und anders als er weiß ich, wie man Zungen löst. Wo ist der venezianische Zecchino?
+}
+Other_dialog_78 {
+Ihr seid alle tot! Wenn Don Diego erfährt, was ihr mir angetan habt, hängt er euch an den Rahen auf!
+}
+Other_dialog_79 {
+Diego Vargas sitzt jetzt gemütlich in einem weichen Sessel und raucht vielleicht eine Pfeife. Du dagegen liegst gefesselt an einem wilden Strand. Er wird deine Schreie nicht hören, wenn ich anfange, dich in Riemen zu schneiden. Die Krabben kommen schon vom Blutgeruch angelaufen. Entscheide selbst, wem du treuer bist — Vargas oder deiner eigenen Haut.
+}
+Other_dialog_80 {
+Gut... gut! Du hast gewonnen. Der Zecchino ist im Futter meines linken Stiefels eingenäht. Nimm ihn!
+}
+Other_dialog_81 {
+Ausgezeichnet. Siehst du, wie nützlich es ist, manchmal den Kopf zu gebrauchen? Und jetzt die Parole für Ignacio Vela in der Kirche.
+}
+Other_dialog_82 {
+„Die Vögel fliegen nach Süden.“ Das ist alles! Ich habe alles gesagt, was ich wusste. Jetzt bind mich los!
+}
+Other_dialog_83 {
+Nichts da. Du bleibst hier, bis ich zurückkomme. Mit etwas Glück ertränkt dich die Flut nicht.
+}
+Other_dialog_84 {
+Und jetzt hör mir zu, Piratenschwein! Don Diego nimmt nicht jeden beliebigen Mann als Verbindungsmann. Die Knoten habe ich schon vor fünf Minuten gelockert!
+}
+Other_dialog_85 {
+Argh...
+}
+Other_dialog_86 {
+He... hierher. Steh nicht so offen herum.
+}
+Other_dialog_87 {
+Du kommst also von Don Diego?
+}
+Other_dialog_88 {
+Richtig. Ich bin jetzt sein Verbindungsmann. Der vorige hat sich zu sehr mit Herzensangelegenheiten beschäftigt. Die Vögel fliegen nach Süden.
+}
+Other_dialog_89 {
+Endlich. Ich verliere schon die Geduld. Längst hätte ich die Insel verlassen und Leute sammeln sollen. Der Patron wollte Anweisungen schicken. Wo sind die Papiere?
+}
+Other_dialog_90 {
+Wo du jetzt hingehst, brauchst du sie nicht mehr.
+}
+Other_dialog_91_m {
+Kch... Verfluchte Ketzer... So endet es also? Im Dreck dieses verlausten jamaikanischen Dschungels? Kch-kch... Dein Welpe hat seine schmutzige Arbeit getan, verdammter Ladron.
+}
+Other_dialog_91_f {
+Kch... Verfluchte Ketzer... So endet es also? Im Dreck dieses verlausten jamaikanischen Dschungels? Kch-kch... Dein Welpe hat seine schmutzige Arbeit getan, verdammte Räuberin.
+}
+Other_dialog_92 {
+Gier, Rojas. Deine Männer waren schon bereit, einander die Kehlen aufzuschlitzen, bevor Jaco überhaupt den Mund aufmachte. Wir haben ihnen nur gezeigt, bei wem sie anfangen sollten. Es ist vorbei. Deine Truppe ist tot.
+}
+Other_dialog_93 {
+Vorbei ist es erst, wenn ich nicht mehr atme! Meine Söldner waren gierige Narren, aber es waren MEINE Männer. Und du wirst für jeden von ihnen bezahlen.
+}
+Other_dialog_94 {
+Du stehst allein zwischen den Leichen deiner eigenen Männer. Wirf den Säbel weg, Sebastian. Niemand wird dich dafür verurteilen, dass du nicht aus bloßem Starrsinn stirbst.
+}
+Other_dialog_95 {
+Ladrones wissen nicht, was Ehre bedeutet... Ich habe für Spanien Blut vergossen und werde sterben, ohne es zu verraten. Du willst mich lebend, um später mit deinem Sieg zu prahlen... Solange ich eine Klinge halten kann, nimmst du mich nicht gefangen. Komm. Beende, was du begonnen hast — wenn du den Mut dazu hast.
+}
+Other_dialog_96 {
+Wie du willst. Verteidige dich!
+}
+Other_dialog_97 {
+Du... hast gewonnen... Kch... Der Herr... öffnet mir schon die Tore...
+}
+Other_dialog_98 {
+Monsieur Tessier? Monsieur d'Ogeron hat mich zu Ihnen geschickt. Ich brauche sämtliche Informationen über die „Windrose“.
+}
+Other_dialog_99 {
+Ja, Kapitän... natürlich. Ich fürchte nur, gute Nachrichten habe ich keine. Überhaupt keine.
+}
+Other_dialog_100_m {
+Das habe ich Ihrem Gesicht bereits angesehen. Aber jede Information kann nützlich sein.
+}
+Other_dialog_100_f {
+Das habe ich Ihrem Gesicht bereits angesehen. Aber jede Information kann nützlich sein.
+}
+Other_dialog_101 {
+Sie wissen vermutlich schon, dass die Fleute gestern noch vor Sonnenuntergang an der Nordküste erscheinen sollte. Die letzte sichere Nachricht erhielten wir, bevor sie unsere Gewässer erreichte. Sie folgte einer Kurierlugger, doch diese setzte sich etwas nördlich der Samana-Bucht von ihr ab. Danach schien die „Windrose“ vom Meer verschluckt. Keine Signallichter, keine Kanonenschüsse, keine Wrackteile am Ufer.
+}
+Other_dialog_102 {
+Dann wurde sie irgendwo in der Nähe abgefangen,\n\t\t\toder sie hat den Kurs geändert... Hat jemand die Einheimischen befragt? Vielleicht hat vom Ufer aus jemand etwas gesehen?
+}
+Other_dialog_103 {
+Natürlich. Der Gouverneur ließ Nachforschungen anstellen, doch ohne klares Ergebnis. Nur ein Mann, Loren... verhielt sich seltsam. Mir kam er verdächtig vor, aber für eine Festnahme gab es keinen Grund. Er lebt am nächsten Leuchtturm und kommt häufig zum Kai, um Fisch und Krabben zu verkaufen. Er kennt jedes Segel, das an Tortuga vorbeizieht, und jeden Menschen, der in der Stadt auftaucht.
+}
+Other_dialog_104 {
+Glauben Sie, dass er mit dem Verschwinden des Schiffes zu tun haben könnte?
+}
+Other_dialog_105 {
+Loren? Nein. Ganz sicher nicht. Er kann die Inselbehörden schlicht nicht leiden, Soldaten schon gar nicht. Aber wenn irgendjemand an der Küste etwas Auffälliges gesehen hat, weiß Loren mit größter Wahrscheinlichkeit davon.
+}
+Other_dialog_106 {
+Vielen Dank. Dann fange ich wohl bei ihm an.
+}
+Other_dialog_107 {
+Noch etwas, Monsieur?
+}
+Other_dialog_108 {
+Nein, ich gehe schon.
+}
+Other_dialog_109 {
+Henri Tessier? Was zum Teufel? Wozu diese Maskerade und die Nachricht?
+}
+Other_dialog_110 {
+Kapitän, bitte sprechen Sie leiser! Wenn Vargas' Leute erfahren, dass ich hier bin... ziehen sie mir die Haut ab!
+}
+Other_dialog_111 {
+Beruhigen Sie sich. Woher sollten sie wissen, wo Sie sind? Warum sollten sie Sie überhaupt beobachten? Stecken Sie mit ihnen unter einer Decke?
+}
+Other_dialog_112 {
+Nein! Natürlich nicht! Aber Vargas' Leute sitzen sogar in der Residenz des Gouverneurs. Die Spanier zahlen gut — Vargas hat fast die Hälfte unserer Wache gekauft. Erst nachdem Sie gegangen waren, hörte ich zufällig den Wachkommandanten reden... Er hat die „Windrose“ nicht wegen der Siedler abgefangen. Er wollte nur eine einzige Mademoiselle.
+}
+Other_dialog_113 {
+Marie Bellefleur?
+}
+Other_dialog_114 {
+Ja, genau sie! Vargas würde halb Tortuga abschlachten, um an sie heranzukommen. Die Fleute wurde tatsächlich zum Strand Fischauge abgedrängt, aber jetzt ist sie völlig leer. Die bestochenen Wachen brachten die Siedler heimlich zurück in die Stadt. Die Spanier wollen Sabotage verüben und unter den Siedlern ihre eigenen Leute einschleusen. Damit es glaubwürdig aussieht, ließen sie nur einen Teil der Passagiere am Leben — Frauen und Priester. Die lassen sich am leichtesten einschüchtern...
+}
+Other_dialog_115 {
+Verdammt! Und das sagen Sie mir erst jetzt...
+}
+Other_dialog_116 {
+Barmherziger Gott! Sie haben uns aufgespürt!
+}
+Other_dialog_117 {
+Wer?
+}
+Other_dialog_118 {
+Heilige Jungfrau... Dann wissen sie also doch, dass ich sie belauscht habe. Sie sind gekommen, um mich zu töten...
+}
+Other_dialog_119 {
+Bedanken Sie sich bei Nicolas. Sonst lägen Sie jetzt neben ihnen. Sie sagten, die Siedler seien in der Stadt versteckt. Wie ist das möglich?
+}
+Other_dialog_120 {
+Nicht in der Stadt selbst, sondern in den Katakomben darunter. Bewacht werden sie von genau jenen bestochenen französischen Wachen, die dieser Schurke gekauft hat!
+}
+Other_dialog_121 {
+Dann ist Mademoiselle Bellefleur bei ihnen?
+}
+Other_dialog_122 {
+Ich... ich weiß es nicht genau! Sie sagten, Vargas habe das Mädchen mitgenommen und sei mit seinen treuesten Leuten fortgegangen.
+}
+Other_dialog_123 {
+Verdammt... Und der Wachkommandant? Bewacht er die Gefangenen zusammen mit den anderen?
+}
+Other_dialog_124 {
+Ja! Aber was soll jetzt aus mir werden? Vargas wird Jagd auf mich machen! Ich bin nicht sofort zum Gouverneur gegangen, weil... er mir vielleicht nicht geglaubt hätte. Kapitän, nehmen Sie mich von dieser Insel mit, ich bitte Sie.
+}
+Other_dialog_125 {
+Seien Sie kein Narr, Tessier. D'Ogeron weiß alles. Mehr noch: Offenbar hat er sich schon lange darauf vorbereitet, die Garnison von Verrätern zu säubern. Vermutlich suchte er deshalb Unterstützung beim Malteserorden — damit dessen Leute die Stadt vorübergehend sichern, während er seine Verluste ersetzt.
+}
+Other_dialog_126 {
+Der Gouverneur hat also... all das vorausgesehen?
+}
+Other_dialog_127 {
+Nicht alles. Sonst wären wir nicht hier. Gehen Sie zurück in die Residenz, Henri. Schließen Sie sich in Ihrem Arbeitszimmer ein und warten Sie, bis alles vorbei ist. Ich kümmere mich um Vargas' Leute.
+}
+Other_dialog_128 {
+Kapitän! He, Kapitän!
+}
+Other_dialog_129 {
+Was willst du, Junge?
+}
+Other_dialog_130 {
+Hier, das ist für Euch. Ach, und noch was... Lest es schnell. Man sagte, es sei sehr dringend!
+}
+Other_dialog_131 {
+Von wem ist das?
+}
+Other_dialog_132 {
+Nach dem Namen habe ich nicht gefragt. Man hat mich bezahlt, also habe ich es gebracht.
+}
+Other_dialog_133 {
+Wer hat bezahlt? Wie sah er aus?
+}
+Other_dialog_134 {
+Ein kleiner Herr, vielleicht dreißig. Oder vierzig. Er trug eine reich mit Gold bestickte Weste, ein schwarzes Hemd und eine saubere Stoffkappe.
+}
+Other_dialog_135 {
+Und das ist alles?
+}
+Other_dialog_136 {
+Alles. Ich muss los. Man wartet schon auf mich.
+}
+Other_dialog_137 {
+Geh.
+}
+Other_dialog_138_m {
+Verfluchter Bastard... Wer hat dich geschickt? Du wirst für jeden meiner Männer bezahlen.
+}
+Other_dialog_138_f {
+Verfluchtes Miststück... Wer hat dich geschickt? Du wirst für jeden meiner Männer bezahlen.
+}
+Other_dialog_139_m {
+Deine Männer? Das waren deine Leute? Dann muss ein schrecklicher Irrtum passiert sein. Ich dachte doch tatsächlich, das seien Verräter, die unschuldige Menschen gefangen halten.
+}
+Other_dialog_139_f {
+Deine Männer? Das waren deine Leute? Dann muss ein schrecklicher Irrtum passiert sein. Ich dachte doch tatsächlich, das seien Verräter, die unschuldige Menschen gefangen halten.
+}
+Other_dialog_140_m {
+Wie ich sehe, vergeht dir selbst vor dem Tod das Spotten nicht.
+}
+Other_dialog_140_f {
+Wie ich sehe, vergeht dir selbst vor dem Tod das Spotten nicht.
+}
+Other_dialog_141 {
+Irgendwie musste ich das Gespräch ja anfangen. Da dir mein Scherz nicht gefällt, kommen wir zur Sache. Wo sind Vargas und Marie Bellefleur?
+}
+Other_dialog_142 {
+Glaubst du wirklich, ich sage dir auch nur irgendetwas?
+}
+Other_dialog_143 {
+Warum nicht? Du hast deinen Staat und d'Ogeron verraten. Was hindert dich daran, vor deinem Tod auch Vargas zu verraten?
+}
+Other_dialog_144 {
+Halt dein Maul, Schwein! Und fahr zur Hölle!
+}
+Other_dialog_145 {
+Hol mich der Teufel, Kapitän! Wir dachten schon, wir kämen aus diesem Loch nicht lebend heraus. Schickt d'Ogeron Euch?
+}
+Other_dialog_146 {
+Donnerwetter, so redet ein Geistlicher... Sagen wir, ungefähr. Mich interessiert Marie Bellefleur. Wohin haben die Spanier sie gebracht?
+}
+Other_dialog_147 {
+Sie haben sie fast sofort fortgeschafft. Das Mädchen hat sich gewehrt, aber was sollte sie tun... Es waren zu viele. Dafür habe ich gehört, wie der Spanier mit Delacroix sprach.
+}
+Other_dialog_148 {
+Und was hast du gehört?
+}
+Other_dialog_149 {
+Sein Schiff liegt am Strand Fischauge. Er wollte die Ebbe abwarten und Tortuga verlassen. Von hier, aus den Höhlen, führt ein Gang direkt ans Ufer. Auf diesem Weg haben sie uns hergebracht.
+}
+Other_dialog_150 {
+Dann kann ich ihn noch abfangen.
+}
+Other_dialog_151 {
+Mönch, sammle die Mädchen ein und bring sie zu d'Ogeron. Sie sollen ihm alles erzählen, was hier geschehen ist. Ich gehe zum Strand. Wenn ihr Schiff noch dort liegt, holen wir Marie zurück.
+}
+Other_dialog_152 {
+Natürlich, Kapitän, natürlich. Ich bringe alle hin, keine Seele geht verloren. Und Euch danke ich — noch ein wenig länger, und ich hätte eine Totenmesse lesen müssen.
+}
+Other_dialog_153 {
+Geht. Je schneller d'Ogeron alles erfährt, desto besser.
+}
+Other_dialog_154 {
+Seid ihr gekommen, um mir den Rest zu geben? Kch-kch... Dann tut euer schmutziges Werk. Lange habe ich ohnehin nicht mehr.
+}
+Other_dialog_155 {
+Wer dieses Gemetzel angerichtet hat — wir gehören nicht zu ihnen. Was ist hier passiert?
+}
+Other_dialog_156 {
+Sie haben uns benutzt und dann abgeschrieben... wie Vieh. Das ist passiert...
+}
+Other_dialog_157 {
+Vargas' Werk?
+}
+Other_dialog_158 {
+Dieser Bastard hat uns angeheuert. Wir sollten vor Fischauge ankern und bis zum Morgen warten. Unsere Aufgabe war es, die Verfolger wegzulocken. Aber offenbar hatte er einen ganz anderen Plan...
+}
+Other_dialog_159 {
+Teufel... Marie Bellefleur war nie auf diesem Schiff?
+}
+Other_dialog_160 {
+Den Namen höre ich zum ersten Mal...
+}
+Other_dialog_161 {
+Wissen Sie, wo Vargas jetzt ist?
+}
+Other_dialog_162 {
+Kch-kch... Teufel... Das tut weh...
+}
+Other_dialog_163 {
+Vargas. Wo ist er?
+}
+Other_dialog_164 {
+Kurz bevor das Gemetzel begann... argh... fragte er, ob jemand die Gegend um die Bucht von Chetumal kenne. Nur unser Steuermann meldete sich. Vargas nahm ihn mit.
+}
+Other_dialog_165 {
+Was will er dort? Ach, unwichtig. Ist das alles?
+}
+Other_dialog_166 {
+Seine Galeone... kch-kch... lag hinter dem Kap, vom Ufer aus nicht zu sehen. Ich sah, wie sie davonlief. Und eine Korvette hängte sich an sie... verda...
+}
+Other_dialog_167 {
+Sieh an... Und wo ist euer gepriesener le Basque? Hatte er Angst, sich Don Diegos Kopf persönlich zu holen?
+}
+Other_dialog_168 {
+Dann ist das also wirklich eine Falle... Und wo ist Vargas selbst? Vielleicht versucht er gerade, sein eigenes Zittern zu verbergen?
+}
+Other_dialog_169_m {
+Er hat Wichtigeres zu tun, als der Hinrichtung gottlosen Abschaums wie le Basque und seiner Hunde zuzusehen. Er ist unten im Brunnen. Beschäftigt mit eurem Mädchen. Aber keine Sorge: Sobald wir hier fertig sind, schicken wir sie hinter euch her — direkt in die Hölle. Und jetzt sei so freundlich und streck die Brust heraus, damit meine Männer leichter zielen können.
+}
+Other_dialog_169_f {
+Er hat Wichtigeres zu tun, als der Hinrichtung gottlosen Abschaums wie le Basque und seiner Hunde zuzusehen. Er ist unten im Brunnen. Beschäftigt mit eurem Mädchen. Aber keine Sorge: Sobald wir hier fertig sind, schicken wir sie hinter euch her — direkt in die Hölle. Und jetzt sei so freundlich und streck die Brust heraus, damit meine Männer leichter zielen können.
+}
+Other_dialog_170 {
+Also, meine Herren. Ihr habt es selbst gesehen: Unsere Leute haben das spanische Silber in Gedanken längst ausgegeben. Was wir bisher wissen: Das Silber verlässt Veracruz und wartet irgendwo vor Kubas Küste auf Verstärkung aus Cartagena. Am vernünftigsten wäre es, das Geschwader aus Veracruz vor dem Zusammentreffen zu schlagen. Nur wissen wir noch nicht, wo der Treffpunkt liegt.
+}
+Other_dialog_171 {
+Wir dürfen nicht zögern. Wenn dieser Arellano die richtige Bucht schon gefunden hat, verlässt er Kuba wahrscheinlich bald.
+}
+Other_dialog_172 {
+Das ist noch nicht alles. Der Schurke hat zwar fast alles verbrannt — aber einiges ist nicht vollständig zu Asche geworden.
+}
+Other_dialog_173 {
+Lasst sehen... Aha. Lazarus und Clara. Daneben stehen Zahlen... Sie sind notiert, als wären es Wassertiefen, passen aber zu keiner bekannten Karte. Ich vermute, es sind Chiffren für einzelne Abschnitte einer Route.
+}
+Other_dialog_174 {
+Lazarus kennen wir bereits — so heißt Arellanos Dorf. Dann ist Clara ein weiterer Punkt auf der Route. Und diese Zahlen haben wohl gar nichts mit Tiefen zu tun.
+}
+Other_dialog_175 {
+Warum raten? Fragen wir den Gauner selbst. Gebt mir Männer, und wir drehen den Süden Kubas auf links, aber wir finden ihn, ganz gleich, wo er sich versteckt.
+}
+Other_dialog_176 {
+Und dabei die gesamte spanische Flotte des Archipels alarmieren? Nein, François. Du hast uns eine Spur geliefert, aber diese Jagd führst nicht du.
+}
+Other_dialog_177 {
+Ich habe die Beute aus dem Schlamm gezogen, und teilen wollt ihr sie ohne mich? Das könnt ihr vergessen.
+}
+Other_dialog_178 {
+Welche Beute? Du hast nur einen Teil der Informationen gebracht. Den Rest müssen wir erst beschaffen. Und verzeih, aber mit deinen Methoden geht das hier nicht. Kapitän @<pchar> übernimmt. @<pchar> hat bereits Erfahrung mit Aufgaben, bei denen Vorsicht gefragt ist. Marceau sorgt für Unterstützung, und Mademoiselle Marie entschlüsselt alles, was ihr findet, falls nötig.
+}
+Other_dialog_179 {
+Ich habe nur einen Kapitän — mich selbst.
+}
+Other_dialog_180 {
+Du... steh auf.
+}
+Other_dialog_181 {
+Hör genau zu. Mein Arzt kann dich zusammenflicken. Aber das musst du dir verdienen. Du beantwortest meine Fragen. Was war der Auftrag der „San Jacinto“ in diesen Gewässern?
+}
+Other_dialog_182 {
+Ihr könnt mich... gleich hier aufschneiden! Aus mir bekommt ihr... nichts heraus!
+}
+Other_dialog_183 {
+Warum sollten wir dich aufschneiden? Im Gegenteil: Wir können deine Wunden mit glühendem Eisen ausbrennen. Und danach übergeben wir dich François Olonnais. Du hast sicher von ihm gehört. Und vermutlich auch davon, was er mit dir vorhat. Also hast du noch eine Minute zum Nachdenken.
+}
+Other_dialog_184 {
+G-gut... Was wollen Sie... kch-kch... wissen?
+}
+Other_dialog_185 {
+Was hatte Ihre Fregatte in diesen Gewässern zu suchen?
+}
+Other_dialog_186 {
+Wir sollten einen Mann aus einer Fischer... siedlung abholen.
+}
+Other_dialog_187 {
+Tomas de Arellano?
+}
+Other_dialog_188 {
+Woher wissen Sie...
+}
+Other_dialog_189 {
+Das spielt jetzt keine Rolle. Sollten Sie ihn nur abholen?
+}
+Other_dialog_190 {
+Er sollte... Post bei sich haben... kch-kch... Wir sollten dafür sorgen... dass sie nicht in fremde Hände fällt...
+}
+Other_dialog_191 {
+Was noch? Was müssen wir unbedingt wissen? Rede, oder ich halte Olonnais nicht länger zurück.
+}
+Other_dialog_192 {
+Ich... verliere gleich das Bewusstsein...
+}
+Other_dialog_193 {
+Wenn du willst, dass wir dich behandeln, sagst du alles. Verstanden?
+}
+Other_dialog_194 {
+Vor der Siedlung fragen sie... nach einem Kennwort... „Santa Clara löscht die Lichter nicht“...
+}
+Other_dialog_195 {
+Halt! Im Namen Seiner Katholischen Majestät! Keine hastigen Bewegungen, oder bei Christi Blut, wir feuern! Wer seid ihr und was tut ihr hier?
+}
+Other_dialog_196 {
+Lassen Sie sofort die Waffen senken, Offizier. Wir kommen von der Fregatte „San Jacinto“. Unser Befehl lautet, Don Tomas de Arellano zu finden und unverzüglich an Bord zu bringen.
+}
+Other_dialog_197 {
+Wir kommen von der Fregatte, die heute Morgen Korsaren vor der Küste geschlagen hat. Ein paar Bastarde konnten in einem Boot entkommen, und der Kapitän hat uns geschickt, die Küste abzusuchen.
+}
+Other_dialog_198 {
+Warum seid ihr dann wie Ladrones gekleidet? Und was macht diese Señorita hier?
+}
+Other_dialog_199 {
+Wie sollen Männer deiner Meinung nach aussehen, die losgeschickt wurden, um... Das geht dich nichts an. Das Mädchen ist unsere Dolmetscherin, falls wir mit den hiesigen Wilden zu tun bekommen. Also verschwende nicht unsere Zeit.
+}
+Other_dialog_200 {
+Tomas erwartet tatsächlich eine Eskorte. Seine Exzellenz hat jedoch einen klaren Befehl gegeben: niemandem und nichts zu trauen, nicht einmal Papieren mit Wachssiegeln. Nennen Sie das Kennwort.
+}
+Other_dialog_201 {
+Drei Fische schwimmen gegen die Strömung.
+}
+Other_dialog_202 {
+Der heilige Lazarus schweigt.
+}
+Other_dialog_203 {
+Santa Clara löscht die Lichter nicht.
+}
+Other_dialog_204 {
+Die Ladung aus Veracruz ist im Anmarsch.
+}
+Other_dialog_205 {
+Richtig. Waffen runter! Verzeihen Sie, @<GetAddress_Form>. Befehl ist Befehl.
+}
+Other_dialog_206 {
+Lobenswert, Soldat, dass Sie auf diesem gottverlassenen Flecken Ihre Pflicht gegenüber der Krone so ernst nehmen. Wo finde ich Don Arellano?
+}
+Other_dialog_207 {
+In der Siedlung. Folgen Sie einfach dem Pfad und biegen Sie nirgends ab. Er wartet bereits auf Sie.
+}
+Other_dialog_208 {
+Wenn nach uns jemand auftaucht, sofort erschießen. Keine Fragen. Das ist ein Befehl.
+}
+Other_dialog_209_m {
+Falsch! Du hast nicht geraten, Bastard! Das sind Spione! Feuer!
+}
+Other_dialog_209_f {
+Falsch! Du hast nicht geraten, Miststück! Das sind Spione! Feuer!
+}
+Other_dialog_210 {
+Argh... Zu den Waffen!
+}
+Other_dialog_211 {
+Ach ja? Und wie heißt Ihre Fregatte?
+}
+Other_dialog_212 {
+Was spielt der Name für eine Rolle? Lasst uns durch und das Dorf durchsuchen, bevor sie hier alle abschlachten.
+}
+Other_dialog_213 {
+Natürlich spielt er eine Rolle, @<GetAddress_Form>. Ich kenne den Namen dieser Fregatte sehr genau. Nennen Sie ihn.
+}
+Other_dialog_214 {
+Sieht nicht so aus, als könnten wir uns einigen.
+}
+Other_dialog_215 {
+Das dachte ich mir. Spione! Feuer!
+}
+Other_dialog_216 {
+Argh... Zu den Waffen!
+}
+Other_dialog_217 {
+Guten Tag, Señores. Kommt ihr geschäftlich oder wegen Fisch? Fisch haben wir, heute erst eingesalzen. Wenn ihr mehr braucht, machen wir mehr fertig — sagt nur, wie viel.
+}
+Other_dialog_218 {
+Guten Tag. Ich suche Tomas de Arellano. Wir sind gekommen, um ihn abzuholen.
+}
+Other_dialog_219 {
+Don Tomas? Dann reist er also ab. Schade, ein guter Mann. Manchmal setzte er sich zu uns bei den Booten und redete über alles Mögliche, als hätte er sein Leben lang hier gewohnt — und nicht nur über die Algen, nach denen er hier sucht.
+}
+Other_dialog_220 {
+Hm. Euren Gesichtern nach freut ihr euch nicht gerade über Gäste.
+}
+Other_dialog_221 {
+Verzeiht uns, @<GetAddress_Form>. Gäste sind uns willkommen, nur streifen hier seit einiger Zeit Tag und Nacht Patrouillen umher. Die Leute fürchten, dass etwas Schlimmes passiert.
+}
+Other_dialog_222 {
+Vielleicht sind wieder Sklaven von den Plantagen geflohen und man sucht nach ihnen. Kein Grund zur Sorge. Also, wo finde ich Tomas?
+}
+Other_dialog_223 {
+Dort drüben, das Haus mit dem Strohdach. Daneben liegt ein Boot kieloben, Ihr könnt es nicht verfehlen. Seit heute Morgen ist er nicht herausgekommen, also dürfte er noch dort sein.
+}
+Other_dialog_224_m {
+Danke, Señor. Nun muss ich mich verabschieden — wir haben es etwas eilig.
+}
+Other_dialog_224_f {
+Danke, Señor. Nun muss ich mich verabschieden — wir haben es etwas eilig.
+}
+Other_dialog_225 {
+Atauco Schüsse hören. Kapitän hat Nachricht für Michel?
+}
+Other_dialog_226 {
+Ja. Aber wir haben wenig Zeit. Selbst wenn du ohne Pause läufst, dauert der Weg nach Puerto Principe zu lange.
+}
+Other_dialog_227 {
+Atauco nicht laufen. Indianer Rauch von Feuern benutzen, um Worte weiterzugeben.
+}
+Other_dialog_228 {
+Ihr könnt euch mit Rauchzeichen verständigen?
+}
+Other_dialog_229 {
+Gu-gu! Krieg mit Spanier uns zwingen, das zu erfinden. Früher Indianer viele. Jetzt wenige. Aber Indianer immer noch mit Rauch sprechen können.
+}
+Other_dialog_230 {
+Kannst du mitteilen, dass der Treffpunkt auf offener See liegt? Um ihn zu finden, muss man Linien zwischen...
+}
+Other_dialog_231 {
+Atauco euch folgen und alles hören. Indianer Worte Buchstabe für Buchstabe weitergeben. Sie Michel erreichen.
+}
+Other_dialog_232 {
+Das ist... beeindruckend, Atauco. Geh und beeil dich. Für uns zählt jede Minute.
+}
+Other_dialog_233 {
+Einen Augenblick, Señores. Erlaubt mir, eine letzte Sache auf meinem Schiff zu erledigen.
+}
+Other_dialog_234 {
+Es ist nicht mehr Ihr Schiff, Kapitän. Weg vom Feuer.
+}
+Other_dialog_235 {
+Don Alonso de Torralba, Admiral Seiner Katholischen Majestät. Ich nehme an, ich bin jetzt Ihr Gefangener.
+}
+Other_dialog_236 {
+Ganz recht. Wie viel Silber ist an Bord?
+}
+Other_dialog_237 {
+Silber? Wir transportieren Häute, Kakao und dreihundert Fässer kastilisches Mehl. Das Silber wurde vor drei Tagen in Havanna gelöscht. Sie kommen zu spät, Señores. Mein Beileid.
+}
+Other_dialog_238 {
+Sie können dieses Schiff tausendmal durchsuchen und werden nichts finden. Wie gesagt: Das Silber wurde in Havanna ausgeladen.
+}
+Other_dialog_239 {
+Das Spiel ist aus. Man bringt Sie jetzt an Deck, Kapitän. Hände auf den Rücken und umdrehen.
+}
+Other_dialog_240 {
+Kapitän! Admiral! Im Laderaum ist ein verwundeter Spanier mit einer Fackel! Er hat die Pulverfässer geöffnet und droht, sie anzuzünden, wenn sich jemand nähert!
+}
+Other_dialog_241 {
+Da unten sitzt noch ein Spanier im Laderaum! Er hat sich verbarrikadiert und steht mit brennender Fackel direkt über offenen Pulverfässern! Brüllt wie ein Besessener, fuchtelt mit dem Feuer herum und lässt keinen von uns heran. Er droht, uns alle samt dem Silber in den Himmel zu jagen!
+}
+Other_dialog_242 {
+Wir werden sehen, wer zuerst dorthin geht. Hör meinen Befehl, Matrose. Bind Don Alonso so fest, dass ihm die Knochen knacken. Schlepp ihn an Deck und übergib ihn persönlich Etienne Marceau.
+}
+Other_dialog_243 {
+Wird gemacht, Kapitän!
+}
+Other_dialog_244 {
+Und sag Etienne: Falls wir gleich in die Luft fliegen, soll er dafür sorgen, dass der Kastilier hinterherfliegt — allerdings in Einzelteilen. Michel, Marie — mitkommen. Löschen wir dieses Feuer, bevor es die königliche Schatzkammer auf den Meeresgrund schickt.
+}
+Other_dialog_245 {
+Keinen Schritt weiter, elende Ketzer! Noch einen Schritt, und ich werfe die Fackel!
+}
+Other_dialog_246 {
+Kommen Sie zur Vernunft, Leutnant. Lohnt es sich wirklich, wegen Häuten und ein paar Fässern kastilischen Mehls lebendig zu verbrennen?
+}
+Other_dialog_247 {
+Mehl?! Ha-ha-ha! Ihr würdet erblinden, wenn ihr sähet, was hinter dieser Schottwand verborgen ist. Aber ihr bekommt es nicht. Jetzt bekommt es niemand mehr!
+}
+Other_dialog_248 {
+Ich sehe, du meinst es ernst. Nur atmet euer Admiral gerade frische Seeluft an Deck, während ausgerechnet du für die ihm anvertraute Ladung sterben sollst.
+}
+Other_dialog_249 {
+Wenn Don Alonso den König verraten hat, wird er sich vor Gott verantworten! Ich aber erfülle meine Pflicht! Heilige Jungfrau, nimm meine Seele auf! Für Spanien! Für die Kro...
+}
+Other_dialog_250 {
+Fertig, Kapitän! Das Pulver ist auf unser Schiff geschafft, die Schottwand aufgebrochen. Möge ich ewig Deck schrubben — die Spanier haben sie verdammt solide gebaut, kein Spalt. Aber was dahinter steckt... Kapitän, das solltet Ihr Euch selbst ansehen!
+}
+Other_dialog_251 {
+Spann mich nicht auf die Folter. Was ist dort?
+}
+Other_dialog_252 {
+Silber! Und Kisten randvoll mit Goldbarren! In den Truhen Becher, Leuchter, goldenes Geschirr... Und Edelsteine... Bei Gott, Kapitän, daraus könnte man ein ganzes Haus bauen! Ha-ha! Der Blitz soll mich treffen, wir könnten das ganze verdammte Tortuga kaufen! Und sämtliche Huren dazu!
+}
+Other_dialog_253 {
+Halt! Noch einen Schritt, und wir durchsieben euch mit Blei. Wer seid ihr und was wollt ihr hier?
+}
+Other_dialog_254 {
+Meine Herren, genau dieselbe Frage könnte ich Ihnen stellen.
+}
+Other_dialog_255 {
+Nicht du hältst uns im Visier, sondern wir dich. Also antworte, und zwar schnell.
+}
+Other_dialog_256 {
+Ich bin Kapitän @<GetFullName>. Ich muss Daniel Montbar sprechen.
+}
+Other_dialog_257 {
+@<GetFullName>... Kommt mir bekannt vor... Ha! Jetzt weiß ich es! Du hast doch zusammen mit Olonnais und le Basque den Spaniern ein Vermögen abgenommen! Die verdammten Kastilier würden für deinen Kopf teuer bezahlen!
+}
+Other_dialog_258 {
+Für Montbars Kopf vermutlich ebenso.
+}
+Other_dialog_259 {
+Das stimmt. Wartet hier. Ich schicke jemanden ins Lager.
+}
+Other_dialog_260 {
+Ist der Indianer zu sich gekommen? Hat er etwas gesagt?
+}
+Other_dialog_261 {
+Er redet nur im Fieber. Wiederholt den Namen Yamai und zeigt ständig in Richtung seines Dorfes.
+}
+Other_dialog_262 {
+Yamai... Dorf... soldados...
+}
+Other_dialog_263 {
+Verstehst du, was er sagt?
+}
+Other_dialog_264 {
+Höchstens jedes zweite Wort. Ich kenne vielleicht zehn Sätze in ihrer Sprache, und er auf Spanisch noch weniger.
+}
+Other_dialog_265 {
+Dann müssen wir ihn zuerst wieder zu Bewusstsein bringen. Sonst erfahren wir nichts.
+}
+Other_dialog_266 {
+Hier. Trink das. Dann geht es dir besser.
+}
+Other_dialog_267 {
+Er kommt zu sich. He! Hörst du mich? Was ist im Dorf passiert?
+}
+Other_dialog_268 {
+Cabrera... seine Hunde... weggeführt... Salz...
+}
+Other_dialog_269 {
+Wen haben sie weggeführt?
+}
+Other_dialog_270 {
+Männer... Frauen... Anacaona...
+}
+Other_dialog_271 {
+Jetzt versteht ihr, warum Daniel hier Wachen aufstellen musste. Cabreras Leute durchkämmen die ganze Insel.
+}
+Other_dialog_272 {
+Montbar erwartet Euch. @<sld> zeigt Euch den Weg ins Lager. Folgt ihm.
+}
+Other_dialog_273 {
+Da wären wir. Montbar sitzt dort am Feuer — im prächtigen Wams und mit einer Feder am Hut. Ihr werdet ihn nicht verwechseln.
+}
+Other_dialog_274 {
+Danke.
+}
+Other_dialog_275 {
+Alarm! Piraten bei der Mine! Zu den Waffen!..
+}
+Other_dialog_276 {
+Keinen Schritt weiter! Noch eine Bewegung, und meine Männer durchsieben euch mit Blei.
+}
+Other_dialog_277 {
+Das können sie natürlich versuchen. Nur kommt ihr trotzdem nicht mehr hier heraus. Der Höhlenausgang ist von unseren Leuten umstellt.
+}
+Other_dialog_278 {
+...Ihr habt die Abteilung an der Paarden-Bucht abgefangen?
+}
+Other_dialog_279 {
+Eure gesamte Strafexpedition verfault jetzt im Dschungel. Besonders malerisch wurde die Gegend in dem Augenblick, als dort die kastilischen Musketen endgültig verstummten.
+}
+Other_dialog_280 {
+Dann war mein Sergeant ein blinder Narr. Und ich habe mir den Luxus erlaubt, auf seinen Bericht zu warten, während ihr meine Leute methodisch abgeschlachtet habt. Ich gestehe: sauber gespielt.
+}
+Other_dialog_281 {
+Die Partie ist verloren, Cabrera. Lassen Sie die Indianer frei, geben Sie Yamais Tochter heraus und werfen Sie den Säbel weg. Tun Sie das, und die wenigen Ihrer Männer, die noch atmen, verlassen diese Höhlen lebend.
+}
+Other_dialog_282 {
+Glauben Sie wirklich, Kapitän, ein Offizier Seiner Katholischen Majestät würde sich Räubern auf Gnade und Ungnade ergeben? Diese Minen gehören der spanischen Krone. Und die Tochter des Alten ist die Garantie dafür, dass ihr Stamm dieser Krone treu dienen wird.
+}
+Other_dialog_283_m {
+Ich habe mein Ehrenwort gegeben, Anacaona an ihren Herd zurückzubringen. Und ich lege, wissen Sie, außerordentlichen Wert auf meinen Ruf als Mann, der seine Versprechen hält.
+}
+Other_dialog_283_f {
+Ich habe mein Ehrenwort gegeben, Anacaona an ihren Herd zurückzubringen. Und ich lege, wissen Sie, außerordentlichen Wert auf meinen Ruf als jemand, der seine Versprechen hält.
+}
+Other_dialog_284 {
+Nun gut. Sie wollten mich treffen — jetzt haben Sie es geschafft. Aber bei Santiago: Diese Mine wird Ihr Grab, und Ihre indianischen Freunde werden hier verfaulen, während sie Salz für den König brechen.
+}
+Other_dialog_285 {
+Solche Schwüre haben wir bereits von Ihren Wachen am Eingang gehört. Und wo sind sie jetzt?
+}
+Other_dialog_286 {
+Dann genug der höflichen Unterhaltung! Zu den Waffen! Für Spanien und den König!
+}
+Other_dialog_287 {
+Zum Kampf!
+}
+Other_dialog_288 {
+Kapitän? Michel hat befohlen, Ihre überzähligen Schiffe hier auf Reede zu nehmen. Auf den Feldzug gehen sie ohnehin nicht mit.
+}
+Other_dialog_289 {
+Nehmt alle außer meinem Flaggschiff. Und passt gut auf sie auf.
+}
+Other_dialog_290 {
+Kapitän? Michel hat befohlen, hier überzählige Schiffe aufzunehmen, aber Sie haben nur Ihr Flaggschiff dabei.
+}
+Other_dialog_291 {
+Dann erspare ich Ihnen heute die Arbeit.
+}
+Other_dialog_292 {
+Keine Sorge. Wir bringen sie in eine geschützte Bucht. Wenn Sie zurückkommen, erhalten Sie alles im selben Zustand wieder.
+}
+Other_dialog_293 {
+Abgemacht. Dann gehe ich zu Michel.
+}
+Other_dialog_294 {
+Von mir aus.
+}
+Other_dialog_295 {
+Kapitän? Ich fürchte, ich habe Ihnen nichts mehr zurückzugeben. Alle Schiffe, die meiner Obhut anvertraut waren, sind bereits zurückgegeben worden.
+}
+Other_dialog_296 {
+Dann alles Gute.
+}
+Other_dialog_297 {
+Kapitän! Ich fragte mich schon, wann Sie sich endlich an Ihre Schiffe erinnern. Keine Sorge: Alle Schiffe, die Sie vor dem Feldzug nach Maracaibo hiergelassen haben, sind unversehrt. Die Mannschaften sind an Bord, Laderäume und Bewaffnung wurden nicht angerührt.
+}
+Other_dialog_298 {
+Ausgezeichnet. Geben Sie sie wieder unter mein Kommando.
+}
+Other_dialog_299 {
+Offenbar ist in meinem Geschwader im Augenblick nicht genug Platz für sie.
+}
+Other_dialog_300 {
+Genau, Kapitän. Für jedes hier abgestellte Schiff brauche ich einen freien Platz in Ihrem Geschwader. Schaffen Sie die nötige Zahl freier Wimpel und kommen Sie wieder. Ihre Schiffe laufen nicht davon.
+}
+Other_dialog_301 {
+Gut. Ich komme wieder.
+}
+Other_dialog_302 {
+Erledigt, Kapitän. Ihre Kapitäne haben ihre Befehle erhalten, die Mannschaften gehen wieder an Bord. Von jetzt an stehen alle Schiffe wieder unmittelbar unter Ihrem Kommando. Nun... damit dürfte meine Arbeit getan sein.
+}
+Other_dialog_303 {
+Sie haben meine Schiffe unversehrt bewahrt. Danke.
+}
+Other_dialog_304 {
+Ich habe getan, was ich konnte, Kapitän. Nun erlauben Sie mir, mich zu verabschieden. Nach allem, was Sie und die Herren Korsaren auf dem Spanischen Main angerichtet haben, möchte ich außerordentlich gern so weit wie möglich von hier fort.
+}
+Other_dialog_305 {
+Gehen Sie. Und guten Wind.
+}
+Other_dialog_306 {
+Mit welchem Recht greift ihr Untertanen Seiner Majestät, des Königs von Spanien, an, elende Piraten? Das wird euch nicht ungestraft bleiben!
+}
+Other_dialog_307 {
+Treten Sie sofort vom Kamin zurück und legen Sie die Waffen nieder.
+}
+Other_dialog_308 {
+Hier findet ihr nichts außer eurem eigenen Tod, elende Hunde!
+}
+Other_dialog_309 {
+Nun gut. Zweimal sage ich es nicht.
+}
+
+LeBasque_Alone_Bucaneer_1 {
+Er geriet in einen spanischen Hinterhalt. Er wurde schwer verletzt: Eine Kugel traf ihn in die Seite, eine andere in die Schulter.
+}
+
+LeBasque_Alone_Bucaneer_2 {
+Ich war nicht interessiert. Bis vor Kurzem. Jetzt taucht dieser Mistkerl Cabrera mit seinen Lakaien immer öfter hier auf. Aber frag nicht warum. Frag Montbar, ob er dich sehen will.
+}
+
+LeBasque_Blaze_1 {
+Danke, Yamai. Es war mir eine Ehre, dich vor den Spaniern zu beschützen.
+}
+
+LeBasque_Hispan_Man_1_1 {
+Hör auf mit dem Schwanzwedeln, Bengel! Wo ist Leroux? Was hat er in Havanna aufgespürt? Vargas muss alles wissen. Sprich endlich, du verdammter Frosch, oder ich wickle dir die Gedärme um die Faust!
+}
+
+LeBasque_Inigo_Cabrera_1 {
+Daniel Montbard! Welch ein Glück! Du bist von selbst zu mir gekommen. Jetzt muss ich nicht mehr die ganze verdammte Insel nach deinem kostbaren Kopf absuchen.
+}
+
+LeBasque_Inigo_Cabrera_2 {
+Bist du verrückt? Im Gegenteil. Zwei meiner Trupps kehren gleich zurück. Es ist also nicht ich, der hier mit dir gefangen ist, sondern du mit mir. Leg jetzt deine Waffen nieder – und vielleicht lasse ich dich schnell sterben.
+}
+
+LeBasque_Inigo_Cabrera_3 {
+Argh... Aber... wie?..
+}
+
+LeBasque_Maracaibo_Mayor_1 {
+Ihr seid in das Gebiet der spanischen Krone eingedrungen! Das werdet ihr nicht ungestraft davonkommen! Ihr werdet alle am Galgen auf dem Maracaibo-Platz hängen!
+}
+
+LeBasque_Maracaibo_Mayor_2 {
+Macht, was ihr wollt, ihr verdammten Abtrünnigen! Ihr werdet keinen einzigen Cent bekommen!
+}
+
+LeBasque_Maracaibo_Mayor_3 {
+Ihr abscheulichen Mörder... Seid ihr wirklich dazu fähig?
+}
+
+LeBasque_Maracaibo_Mayor_4 {
+Wenn Sie das Lösegeld erhalten... werden Sie die Bevölkerung von Maracaibo und Gibraltar in Ruhe lassen?
+}
+
+LeBasque_Maracaibo_Mayor_5 {
+Gott sei Dank, wenigstens in diesem Punkt haben Sie die Überreste des gesunden Menschenverstands bewahrt.
+}
+
+LeBasque_Maracaibo_Mayor_6 {
+Geh raus. Wir sehen uns bestimmt wieder.
+}
+
+LeBasque_Maracaibo_Mayor_7 {
+Nun gut … Du hast gewonnen. Ich kümmere mich um das Geld. Und jetzt, da der offizielle Teil erledigt ist, möchte ich mit dir sprechen, Le Basque.
+}
+
+LeBasque_Maracaibo_Mayor_8 {
+Und dennoch... Sind Sie nun also bereit, Unschuldige für Gold zu foltern? Der Mann, den sie auserwählt hat, würde so etwas niemals tun.
+}
+
+LeBasque_Maracaibo_Mayor_9 {
+Hat er euch denn gar nichts gesagt? Euch, die ihr euer Blut für ihn vergossen habt?
+}
+
+LeBasque_Maracaibo_Mayor_10 {
+Ich würde Ihnen gern alles erzählen. Für mich liegt das alles schon lange zurück. Aber Ihr Admiral scheint immer noch eine Rechnung mit mir offen zu haben.
+}
+
+LeBasque_Maracaibo_Mayor_11 {
+Dann lassen Sie mich fortfahren. Ich war einst im Geheimdienst tätig und hatte allen Grund, eine hohe Position zu erwarten. Ich war mit der Vorbereitung der Invasion von Port-au-Prince beauftragt.
+}
+
+LeBasque_Maracaibo_Mayor_12 {
+Ich bestach Leute unter den Freibeutern von Hispaniola und organisierte die Informationsbeschaffung. Doch Michel verriet meine Informanten durch reinen Zufall.
+}
+
+LeBasque_Maracaibo_Mayor_13 {
+Okay, ich gebe es zu. Du wusstest genau, was du tust. Meine Mühe war umsonst, und mit ihr meine Hoffnung auf eine Beförderung.
+}
+
+LeBasque_Maracaibo_Mayor_14 {
+Ich hatte mich kaum von diesem Schlag erholt, als der Mann, der nun als Le Basque bekannt war, mir einen zweiten versetzte. Er stahl mir meine Braut fast direkt vor dem Altar.
+}
+
+LeBasque_Maracaibo_Mayor_15 {
+Du hast richtig gehört. Von da an wurde er zum Todfeind meiner Familie.
+}
+
+LeBasque_Maracaibo_Mayor_16 {
+Komm schon, Michel. Wir haben es nicht mehr eilig. Lass deine Leute herausfinden, warum du Maracaibo wirklich angegriffen hast.
+}
+
+LeBasque_Maracaibo_Mayor_17 {
+Ich habe ihn jahrelang gejagt. Und ich habe ihn nie gefasst. Er war mir immer einen Schritt voraus. Schließlich gab ich auf und konzentrierte mich auf meinen Dienst.
+}
+
+LeBasque_Maracaibo_Mayor_18 {
+Ich bekam eine zweite Chance – Silber heimlich von Porto Bello nach Spanien zu schmuggeln. Wäre mir das gelungen, hätte ich die Stelle bekommen, auf die ich so viele Jahre gewartet hatte.
+}
+
+LeBasque_Maracaibo_Mayor_19 {
+Du hast das Wichtigste noch nicht gehört. Mein Bruder Diego kommandierte das Geschwader. Er kam nicht in Cádiz an. Piraten griffen ihn an und stahlen das Silber. Ich wurde unehrenhaft aus dem Geheimdienst entlassen. Er wurde aus der Marine ausgeschlossen.
+}
+
+LeBasque_Maracaibo_Mayor_20 {
+Ich habe diesen Schlag auch einstecken müssen. Ich wurde einfache Sekretärin des Gouverneurs von Cartagena. Aber Diego... er glaubte, er hätte uns beide ruiniert.
+}
+
+LeBasque_Maracaibo_Mayor_21 {
+Er beschloss, den Namen seiner Familie reinzuwaschen und meine Vergebung um jeden Preis zu erlangen. Und er begann mit meinem Erzfeind.
+}
+
+LeBasque_Maracaibo_Mayor_22 {
+Na los, du Baske! Hast du denn nicht gemerkt, dass ich Maracaibo schon lange vor deiner Ankunft verlassen habe? Diego hat mich vor deinen Plänen gewarnt. Und während du meine Städte überfallen hast, ist mein Bruder nach Tortuga gegangen.
+}
+
+LeBasque_Mayak_Bandit_1_1 {
+Er hat viel zu tun – er wird nicht kommen. Geben Sie uns den Brief.
+}
+
+LeBasque_Mayak_Bandit_1_2 {
+Señor Vargas entschied, dass seine Anwesenheit nicht erforderlich sei.
+}
+
+LeBasque_Mayak_Bandit_1_3 {
+Ich habe es versprochen.
+}
+
+LeBasque_Mayak_Bandit_1_4 {
+Du bist ein sehr kluger Kerl, Guillaume. Es tut mir sogar leid, dich getötet zu haben.
+}
+
+LeBasque_Raul_Giom_1 {
+Bist du es, Vargas? Lass uns das Geschäft schnell abschließen. Hier lungert ständig allerlei Gesindel herum. Hast du das Silber dabei?
+}
+
+LeBasque_Raul_Giom_2 {
+Ich habe es noch nicht herausgefunden. Aber ich weiß, dass er Kapitäne, Lotsen und Leute sucht, die sich an den Küsten der spanischen Hauptinsel auskennen.
+}
+
+LeBasque_Raul_Giom_3 {
+Er braucht außerdem noch einen alten Seeräuber aus Hispaniola.
+}
+
+LeBasque_Raul_Giom_4 {
+Ich kenne seinen Namen noch nicht. Aber ich werde ihn kriegen. Und es wird dich doppelt so viel kosten.
+}
+
+LeBasque_Raul_Giom_5 {
+Marceau ist bereits misstrauisch. Wenn er mich erst einmal in die Finger bekommt, nützt mir kein Silber der Welt mehr. Ich brauche Geld, Schutz und einen Platz auf dem Schiff, das mich von Tortuga wegbringt.
+}
+
+LeBasque_Raul_Giom_6 {
+Hör zu, Vargas... Die Lage hier wird immer unruhiger, besonders nachdem du die letzten Freibeuter von Hispaniola vertrieben hast. D'Ogeron hat sie gerne aufgenommen, und gemeinsam werden sie immer stärker! Ich kann nicht...
+}
+
+LeBasque_Raul_Giom_7 {
+Hoffentlich werde ich bis dahin nicht erwischt...
+}
+
+LeBasque_Raul_Giom_8 {
+Wo ist Vargas?
+}
+
+LeBasque_Raul_Giom_9 {
+Nein. Wir haben immer persönlich mit ihm kommuniziert. Wo ist er?
+}
+
+LeBasque_Raul_Giom_10 {
+Und das Silber? Ein Platz auf dem Schiff? Er hat versprochen, mich von hier wegzubringen.
+}
+
+LeBasque_Raul_Giom_11 {
+Es ist also eine Falle...
+}
+
+LeBasque_Royal_Margarita_Cap_1 {
+Oh, das hier? Das ist meine private Korrespondenz. Ich wollte nicht, dass da jemand drin herumwühlt.
+}
+
+LeBasque_Royal_Margarita_Cap_2 {
+Wie Sie wünschen, Señorita.
+}
+
+LeBasque_Royal_Margarita_Cap_3 {
+Ich habe getan, was ich tun musste. Und ich würde es wieder tun, egal was es kostet.
+}

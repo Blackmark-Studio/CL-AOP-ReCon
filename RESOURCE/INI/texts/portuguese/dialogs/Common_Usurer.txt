@@ -1223,13 +1223,19 @@ Common_Usurer_359 {
 Você quer que eu encontre essa pessoa? Por que acha que ela ainda está na cidade?
 }
 Common_Usurer_360 {
-Ele está na cidade, eu garanto. Nenhum navio partiu hoje. E como recompensa, você receberá 10%%, ou seja, 3.000 piastres. O que me diz?
+Ele está na cidade, eu lhe garanto. Nenhum navio partiu hoje. E como recompensa, você receberá 10%%, ou seja, 3.000 piastras. Considerando a sua situação... estou disposto a lhe dar até amanhã à noite. Depois disso, vou contratar caçadores de recompensas. O que me diz?
 }
 Common_Usurer_361 {
 Sabe, acho que vou te ajudar.
 }
 Common_Usurer_362 {
 Não conte comigo.
+}
+Common_Usurer_362_1 {
+Excelente. Considerando a sua situação, estou disposto a esperar até amanhã à noite. Mas, doutor, por favor, não tente me enganar: basta uma palavra minha ao coronel...
+}
+Common_Usurer_362_2 {
+Chega. Perdi minha liberdade, mas não minha consciência.
 }
 Common_Usurer_363 {
 Então, conseguiu?

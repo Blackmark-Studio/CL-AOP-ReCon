@@ -463,3 +463,18 @@ Compris. J'arrive. Merci!
 Villemstad_Tavern_137_f {
 Compris. J’arrive. Merci!
 }
+Villemstad_Tavern_138 {
+Il y a des Espagnols parmi tes clients. Tu sais d’où ils viennent, ou sur quel navire ils sont arrivés ?
+}
+Villemstad_Tavern_139 {
+Je n’ai pas le temps de bavarder avec tous les clients. Espagnols, Portugais... il ne manque plus que le diable des mers aujourd’hui.
+}
+Villemstad_Tavern_140 {
+Alors, les affaires marchent ?
+}
+Villemstad_Tavern_141 {
+Je n’ai pas à me plaindre. Presque chaque soir, le gouverneur donne à la résidence des réceptions pour célébrer la majorité de ses filles. Un jour c’est un ambassadeur, le lendemain quelque autre personnage, et tous arrivent par mer. Les matelots remplissent la salle, je n’ai même plus le temps de poser les plateaux. Tu ferais mieux de passer au bureau du port : tous les capitaines doivent s’y faire enregistrer. Ah ! Mais pourquoi est-ce que je te raconte ça ?
+}
+Villemstad_Tavern_142 {
+Oui, je crois que c’est ce que je vais faire.
+}

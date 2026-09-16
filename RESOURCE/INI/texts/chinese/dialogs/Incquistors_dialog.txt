@@ -1,291 +1,291 @@
 Incquistors_dialog_1 {
-你竟敢闯进我们的圣地？！胆子不小啊……
+你竟敢闯进我们的圣地？ ！ 胆子不小啊…… 
 }
 Incquistors_dialog_2 {
-那些懒兵怎么能让敌人闯进我们的圣地？！真是难以理解……
+那些懒兵怎么能让敌人闯进我们的圣地？ ！ 真是难以理解…… 
 }
 Incquistors_dialog_3_m {
-看来这城市的守卫也就那样，随便个闲人都能在宗教裁判所的圣殿里乱窜……
+看来这城市的守卫也就那样， 随便个闲人都能在宗教裁判所的圣殿里乱窜…… 
 }
 Incquistors_dialog_3_f {
-哼，要是连个闲人都能在宗教裁判所的圣地里乱跑，这城里的守卫也真是白搭了……
+哼， 要是连个闲人都能在宗教裁判所的圣地里乱跑， 这城里的守卫也真是白搭了…… 
 }
 Incquistors_dialog_4 {
 @<LinkRandPhrase>
 }
 Incquistors_dialog_5_m {
-你想干什么，混蛋？！你这肮脏的海盗，休想活着从我们手里逃走！
+你想干什么， 混蛋？ ！ 你这肮脏的海盗， 休想活着从我们手里逃走！ 
 }
 Incquistors_dialog_5_f {
-你想干嘛，臭不要脸的？！你休想活着从俺们手里逃出去！
+你想干嘛， 臭不要脸的？ ！ 你休想活着从我们手里逃出去！ 
 }
 Incquistors_dialog_6_m {
-肮脏的杀人犯，老子现在就要送你去死！
+肮脏的杀人犯， 我现在就要送你去死！ 
 }
 Incquistors_dialog_6_f {
-臭女人，杀人犯，老子现在就要你死！
+臭女人， 杀人犯， 我现在就要你死！ 
 }
 Incquistors_dialog_7_m {
-老子才不怕你这混蛋！很快你就得在堡垒里上绞刑架，跑不了多远的……
+我才不怕你这混蛋！ 很快你就得在堡垒里上绞刑架， 跑不了多远的…… 
 }
 Incquistors_dialog_7_f {
-老子才不怕你，臭娘们！你很快就会在要塞被吊死，跑不了多远的……
+我才不怕你， 臭娘们！ 你很快就会在要塞被吊死， 跑不了多远的…… 
 }
 Incquistors_dialog_8 {
 @<LinkRandPhrase>
 }
 Incquistors_dialog_9 {
-这些士兵也没啥用……
+这些士兵也没什么用…… 
 }
 Incquistors_dialog_10 {
-他们绝对抓不到我。
+他们绝对抓不到我。 
 }
 Incquistors_dialog_11 {
 @<RandPhraseSimple>
 }
 Incquistors_dialog_12 {
-闭上你那臭嘴，不然老子撕烂你的烂舌头！
+闭上你那臭嘴， 不然我撕烂你的烂舌头！ 
 }
 Incquistors_dialog_13 {
-听俺一句，伙计：别惹事，命就保得住……
+听我一句， 伙计： 别惹事， 命就保得住…… 
 }
 Incquistors_dialog_14 {
 @<RandPhraseSimple>
 }
 Incquistors_dialog_15 {
-兄弟们，咱们的敌人就是宗教裁判所！
+兄弟们， 咱们的敌人就是宗教裁判所！ 
 }
 Incquistors_dialog_16 {
-快拉响警报，兄弟们！！！
+快拉响警报， 兄弟们！ ！ ！ 
 }
 Incquistors_dialog_17 {
 @<RandPhraseSimple>
 }
 Incquistors_dialog_18 {
-是啊，异端裁判所的敌人可从不休息……
+是啊， 异端裁判所的敌人可从不休息…… 
 }
 Incquistors_dialog_19 {
-你来圣裁所干什么？
+你来圣裁所干什么？ 
 }
 Incquistors_dialog_20_m {
-神父，我有事想和您谈谈。您不会拒绝一个虔诚的天主教徒片刻的关注吧。
+神父， 我有事想和您谈谈。 您不会拒绝一个虔诚的天主教徒片刻的关注吧。 
 }
 Incquistors_dialog_20_f {
-神父，我有件事想和您谈谈。您不会拒绝一个虔诚的天主教女人片刻的关注吧。
+神父， 我有件事想和您谈谈。 您不会拒绝一个虔诚的天主教女人片刻的关注吧。 
 }
 Incquistors_dialog_21_m {
-你好，儿子。你怎么来了？
+你好， 儿子。 你怎么来了？ 
 }
 Incquistors_dialog_21_f {
-你好，女儿。你怎么来了？
+你好， 女儿。 你怎么来了？ 
 }
 Incquistors_dialog_22_m {
-很高兴在我们的圣殿见到你，孩子。你来这里有什么事？
+很高兴在我们的圣殿见到你， 孩子。 你来这里有什么事？ 
 }
 Incquistors_dialog_22_f {
-很高兴在我们的圣殿见到你，孩子。你来这里有什么事吗？
+很高兴在我们的圣殿见到你， 孩子。 你来这里有什么事吗？ 
 }
 Incquistors_dialog_23 {
 @<RandPhraseSimple>
 }
 Incquistors_dialog_24_m {
-儿子，咱们今天已经聊过了。你还有什么事吗？
+儿子， 咱们今天已经聊过了。 你还有什么事吗？ 
 }
 Incquistors_dialog_24_f {
-女儿，咱们今天已经聊过了，你还有什么事吗？
+女儿， 咱们今天已经聊过了， 你还有什么事吗？ 
 }
 Incquistors_dialog_25_m {
-孩子，咱们这帮新手可没什么耐心。我再问一遍，你找我有事吗？
+孩子， 咱们这帮新手可没什么耐心。 我再问一遍， 你找我有事吗？ 
 }
 Incquistors_dialog_25_f {
-孩子，咱们修会的新人可没什么耐心。我再问一遍：你需要什么吗？
+孩子， 咱们修会的新人可没什么耐心。 我再问一遍： 你需要什么吗？ 
 }
 Incquistors_dialog_26 {
-自己偷懒还影响别人干活，可不是什么好事。我不再多说了……
+自己偷懒还影响别人干活， 可不是什么好事。 我不再多说了…… 
 }
 Incquistors_dialog_27_m {
-儿子，老子不想废话，没什么好跟你说的了。
+儿子， 我不想废话， 没什么好跟你说的了。 
 }
 Incquistors_dialog_27_f {
-女儿，老子不想跟你废话一句，接下来一句话都不会再说了。
+女儿， 我不想跟你废话一句， 接下来一句话都不会再说了。 
 }
 Incquistors_dialog_28 {
 @<RandPhraseSimple>
 }
 Incquistors_dialog_29_m {
-哦，就是来办点事，神父……
+哦， 就是来办点事， 神父…… 
 }
 Incquistors_dialog_29_f {
-哦，就是来办点事，神父……
+哦， 就是来办点事， 神父…… 
 }
 Incquistors_dialog_30_m {
-一切都挺正常，神父。我一直忙得像只蜜蜂……
+一切都挺正常， 神父。 我一直忙得像只蜜蜂…… 
 }
 Incquistors_dialog_30_f {
-一切都照规矩来，神父。我一直很忙，忙得团团转……
+一切都照规矩来， 神父。 我一直很忙， 忙得团团转…… 
 }
 Incquistors_dialog_31 {
 @<RandPhraseSimple>
 }
 Incquistors_dialog_32 {
-不，不是的，神父……
+不， 不是的， 神父…… 
 }
 Incquistors_dialog_33_m {
-不，神父，我就是想聊聊……
+不， 神父， 我就是想聊聊…… 
 }
 Incquistors_dialog_33_f {
-不，神父，我就是想聊聊……
+不， 神父， 我就是想聊聊…… 
 }
 Incquistors_dialog_34 {
-嗯……
+嗯…… 
 }
 Incquistors_dialog_35 {
-那就随你吧，神父……
+那就随你吧， 神父…… 
 }
 Incquistors_dialog_36 {
 @<RandPhraseSimple>
 }
 Incquistors_dialog_37 {
-该死，是个间谍！快抓住他！
+该死， 是个间谍！ 快抓住他！ 
 }
 Incquistors_dialog_38 {
-见鬼！
+见鬼！ 
 }
 Incquistors_dialog_39 {
-这里是保险库，严禁入内！！
+这个牢房是禁区， 严禁入内！ ！ 
 }
 Incquistors_dialog_40 {
-别想进来——擅闯者死。
+别想进来——擅闯者死。 
 }
 Incquistors_dialog_41 {
-你敢踏进这牢房一步，就死定了……
+你敢踏进这牢房一步， 就死定了…… 
 }
 Incquistors_dialog_42 {
 @<LinkRandPhrase>
 }
 Incquistors_dialog_43 {
-明白了，士兵。
+明白了， 士兵。 
 }
 Incquistors_dialog_44 {
-明白了……
+明白了…… 
 }
 Incquistors_dialog_45 {
 @<RandPhraseSimple>
 }
 Incquistors_dialog_46 {
-哈哈，看着这些“圣人”直接下地狱，真是太有意思了！
+哈哈， 看着这些“圣人”直接下地狱， 真是太有意思了！ 
 }
 Incquistors_dialog_47 {
-天啊，终于有人敢向他们挑战了吗？！
+天啊， 终于有人敢向他们挑战了吗？ ！ 
 }
 Incquistors_dialog_48_m {
-我活不了多久了，这折磨……不过你让我在临死前还能感受到一点快乐。谢谢你……
+我活不了多久了， 这折磨…… 不过你让我在临死前还能感受到一点快乐。 谢谢你…… 
 }
 Incquistors_dialog_48_f {
-我活不了多久了，这折磨……不过你让我在临死前还能感受到一点快乐。谢谢你……
+我活不了多久了， 这折磨…… 不过你让我在临死前还能感受到一点快乐。 谢谢你…… 
 }
 Incquistors_dialog_49 {
 @<LinkRandPhrase>
 }
 Incquistors_dialog_50 {
-嘿！
+嘿！ 
 }
 Incquistors_dialog_51 {
-唉……
+唉…… 
 }
 Incquistors_dialog_52 {
 @<RandPhraseSimple>
 }
 Incquistors_dialog_53 {
-喂，你知道这附近有个人叫Rock the Brazilian吗？
+喂， 你知道这附近有个人叫巴西人洛克吗？ 
 }
 Incquistors_dialog_54 {
-那些“圣人”身上可没一点人性。记住我的话——他们迟早会因为让咱们受的苦下地狱的……
+那些“圣人”身上可没一点人性。 记住我的话——他们迟早会因为让咱们受的苦下地狱的…… 
 }
 Incquistors_dialog_55 {
-天天受折磨、遭酷刑！可我在上帝面前是清白的！
+天天受折磨、 遭酷刑！ 可我在上帝面前是清白的！ 
 }
 Incquistors_dialog_56 {
-昨天我的狱友死了，他们折磨了他两天……我还能撑多久呢？
+昨天我的狱友死了， 他们折磨了他两天…… 我还能撑多久呢？ 
 }
 Incquistors_dialog_57 {
 @<LinkRandPhrase>
 }
 Incquistors_dialog_58 {
-嗯……这个嘛，我也说不好……
+嗯…… 这个嘛， 我也说不好…… 
 }
 Incquistors_dialog_59 {
-好吧，我明白了……
+好吧， 我明白了…… 
 }
 Incquistors_dialog_60 {
 @<RandPhraseSimple>
 }
 Incquistors_dialog_61 {
-喂，你知道这附近有个人叫Rock the Brazilian吗？
+喂， 你知道这附近有个人叫巴西人洛克吗？ 
 }
 Incquistors_dialog_62 {
-我知道，他被关在最里面的牢房，就在那边那个士兵看守着。那可是个特别的地方……
+我知道， 他被关在最里面的牢房， 就在那边那个士兵看守着。 那可是个特别的地方…… 
 }
 Incquistors_dialog_63 {
-谢谢你！
+谢谢你！ 
 }
 Incquistors_dialog_64_m {
-就在入口右侧最里面的牢房，原本那个守卫站着的地方……
+就在入口右侧最里面的牢房， 原本那个守卫站着的地方…… 
 }
 Incquistors_dialog_64_f {
-就在入口右侧最里面的牢房，原本那个守卫站着的地方……
+就在入口右侧最里面的牢房， 原本那个守卫站着的地方…… 
 }
 Incquistors_dialog_65 {
-哦，明白了……谢谢。
+哦， 明白了…… 谢谢。 
 }
 Incquistors_dialog_66_m {
-我听着呢，孩子。
+我听着呢， 孩子。 
 }
 Incquistors_dialog_66_f {
-我听着呢，女儿。
+我听着呢， 女儿。 
 }
 Incquistors_dialog_67 {
-我想跟你说说一个邪门的地方，晚上那些怪物都会出来游荡！
+我想跟你说说一个邪门的地方， 晚上那些怪物都会出来游荡！ 
 }
 Incquistors_dialog_68 {
-说吧。
+说吧。 
 }
 Incquistors_dialog_69 {
-这是Des Moines镇，就在Maracaibo泻湖里。咱们得赶紧把那儿全烧成灰！
+这是得梅因镇， 就在马拉开波泻湖里。 咱们得赶紧把那儿全烧成灰！ 
 }
 Incquistors_dialog_70_m {
-嗯……这事就交给我们吧，孩子。主会感谢你对教会的忠诚。
+嗯…… 这事就交给我们吧， 孩子。 主会感谢你对教会的忠诚。 
 }
 Incquistors_dialog_70_f {
-嗯……这事就交给我们吧，孩子。主会感谢你对教会的忠诚。
+嗯…… 这事就交给我们吧， 孩子。 主会感谢你对教会的忠诚。 
 }
 Incquistors_dialog_71_m {
-很高兴帮上忙！
+很高兴帮上忙！ 
 }
 Incquistors_dialog_71_f {
-很高兴帮上忙！
+很高兴帮上忙！ 
 }
 Incquistors_dialog_72_m {
-为了让你继续努力，这里有一份奖励：一万皮阿斯特。
+为了让你以后也能继续努力， 这里有一万比索奖励你。 
 }
 Incquistors_dialog_72_f {
-为了让你以后也能继续努力，这里有一万皮阿斯特奖励你。
+为了让你以后也能继续努力， 这里有一万比索奖励你。 
 }
 Incquistors_dialog_73_m {
-多谢，您的圣洁！
+非常感谢， 您的圣洁！ 
 }
 Incquistors_dialog_73_f {
-非常感谢，您的圣洁！
+非常感谢， 您的圣洁！ 
 }
 Incquistors_dialog_74 {
-圣父，我奉伯利兹总督之命正在追踪一名女巫。我知道在圣地亚哥的酒馆里，有一个名叫卡拉的魔女在干活，她以前是个港口妓女。她用黑暗巫术已经害死了两个人——米格尔·昆达船长和善良的乡绅巴塞洛缪，后者还没来得及忏悔就死去了。他是伯利兹总督的仆人。我祈求上帝，让神圣的宗教裁判所惩罚她的罪恶行径。
+圣父， 我奉伯利兹市长之命正在追踪一名女巫。 我知道在圣地亚哥的酒馆里， 有一个名叫卡拉的魔女在干活， 她以前是个港口妓女。 她用黑暗巫术已经害死了两个人——米格尔.昆达船长和善良的乡绅巴塞洛缪， 后者还没来得及忏悔就死去了。 他是伯利兹市长的仆人。 我祈求上帝， 让神圣的宗教裁判所惩罚她的罪恶行径。 
 }
 Incquistors_dialog_75_m {
-啊，我儿，愿你的灵魂因你的正义之举而永享福报。我们会除掉这个女巫。你的热忱将获得我个人的赐福。\n此外，我儿，你将亲眼目睹这个女巫余孽在宗教裁判所的神圣烈火中化为灰烬。
+啊， 孩子， 愿你的灵魂因你的正义之举而永享福报。 我们会除掉这个女巫。 你的热忱将获得我个人的赐福。 \n此外， 孩子， 你将亲眼目睹这个女巫余孽在宗教裁判所的神圣烈火中化为灰烬。 
 }
 Incquistors_dialog_75_f {
-啊，女儿，愿你的灵魂因你的正义之举而永享福报。我们会除掉这个女巫。你的热忱将获得我个人的赐福。\n此外，女儿，你将亲眼目睹这个女巫余孽在宗教裁判所的神圣烈火中化为灰烬。
+啊， 女儿， 愿你的灵魂因你的正义之举而永享福报。 我们会除掉这个女巫。 你的热忱将获得我个人的赐福。 \n此外， 女儿， 你将亲眼目睹这个女巫余孽在宗教裁判所的神圣烈火中化为灰烬。 
 }
 Incquistors_dialog_76 {
-这是我的荣幸，圣父。
+这是我的荣幸， 圣父。 
 }

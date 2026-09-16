@@ -13,19 +13,21 @@ Address_Form_FraWoman {mademoiselle}
 Address_Form_EngWoman {miss}
 Address_Form_HolWoman {mefrau}
 Address_Form_PirWoman {miss}
+Address_Form_PorWoman {senhorita}
 
 Address_Form_SpaWoman2 {senora}
 Address_Form_FraWoman2 {madam}
 Address_Form_EngWoman2 {missis}
 Address_Form_HolWoman2 {frau}
 Address_Form_PirWoman2 {missis}
+Address_Form_PorWoman2 {senhora}
 
 BaronTitle {baron}
 BaronWomanTitle {baroness}
 
-Officer Attack {Officers attack!}
-Officer Follow {Officers follow me!}
-Officer Stay {Officers hold position!}
+Officer_Attack {Officers attack!}
+Officer_Follow {Officers follow me!}
+Officer_Stay {Officers hold position!}
 
 Potion_Not_Found {Potion not found!}
 Used_Antidote {Antidote used}

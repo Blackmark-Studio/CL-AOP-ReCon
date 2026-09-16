@@ -1471,3 +1471,9 @@ Viajas mucho. Escucha, si por casualidad llegas a encontrar polvo de momia egipc
 Common_Store_433 {
 De acuerdo.
 }
+Common_Store_434 {
+¡Buenos días, señorita! ¿Desea comprar algo?
+}
+Common_Store_435 {
+No, gracias. Quizá en otra ocasión.
+}

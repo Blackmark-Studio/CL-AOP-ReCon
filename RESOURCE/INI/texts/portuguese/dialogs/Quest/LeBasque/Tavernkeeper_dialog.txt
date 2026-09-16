@@ -1,0 +1,40 @@
+Tavernkeeper_dialog_1 {
+Então é você, capitão @<pchar>. Mal tive tempo de lançar os dados sob esta vela estendida e Nicolas Rimalie já me contou suas façanhas em todos os detalhes. Eu e aquele espadachim desesperado dividimos pão e pólvora há tanto tempo que, por minha honra, já nem lembro qual de nós salvou primeiro a vida do outro no meio do inferno e qual ainda não pagou aquela maldita dívida de cartas.
+}
+Tavernkeeper_dialog_2 {
+É bom saber que a palavra de Rimalie tem tanto peso por aqui. Bem-vindo a Tortuga, amigo.
+}
+Tavernkeeper_dialog_3 {
+Saudações, capitão @<pchar>! Como vê, continuo montando minha guarda eterna ao lado deste maldito barril de rum. Se seu navio precisar de homens de boa mira e mão firme, basta dizer.
+}
+Tavernkeeper_dialog_4 {
+Capitão @<pchar>! Ao amanhecer saíram da selva alguns caçadores veteranos — gente bruta, mas impregnada de pólvora dos pés à cabeça. Se precisa de atiradores de primeira, terei prazer em recomendar você.
+}
+Tavernkeeper_dialog_5 {
+Você de novo, capitão @<pchar>. Bom sinal — quer dizer que o mar ainda não engoliu seu navio. Se veio atrás de homens de confiança, há dois ou três temerários justamente à procura de um comandante digno.
+}
+Tavernkeeper_dialog_6 {
+@<LinkRandPhrase>
+}
+Tavernkeeper_dialog_7 {
+Foi exatamente por isso que vim. Há bons atiradores disponíveis hoje?
+}
+Tavernkeeper_dialog_8 {
+Minha tripulação está completa, obrigado. Só vim molhar a garganta e ver como você está.
+}
+Tavernkeeper_dialog_9 {
+Obrigado, capitão. Mal comecei a criar raízes por aqui, mas o aval de Nicolas vale para mim mais do que ouro. Em Tortuga há canalha aos montes, mas veteranos de verdade do boucan jamais põem sua cruz no rol de um navio comandado pelo primeiro aventureiro que aparece. Porém basta eu lhes sussurrar que você é uma pessoa de honra, e a conversa toma outro rumo.
+}
+Tavernkeeper_dialog_10 {
+Esse tipo de recomendação virá muito a calhar.
+}
+Tavernkeeper_dialog_11 {
+Nesse caso, considere o acordo fechado. Se seu navio precisar de homens de confiança, sempre vai me encontrar aqui mesmo, junto a este barril, seja sob o sol a pino, seja na mais completa escuridão.
+Os bucaneiros têm o hábito de sair da selva nas horas mais imprevisíveis — exaustos, esfarrapados e furiosos como demônios. Precisam imediatamente de uma caneca de rum ardente e de alguém capaz de ouvir suas histórias de bravata antes que cortem as gargantas uns dos outros discutindo o saque. Por isso não abandono meu posto nem por um instante. Vou fazer as perguntas certas e colocá-lo em contato com homens cujas balas não conhecem o erro.
+}
+Tavernkeeper_dialog_12 {
+Uma dedicação impressionante ao ofício. Vamos ver quem você pode me oferecer agora mesmo.
+}
+Tavernkeeper_dialog_13 {
+Combinado. Passarei sob seu hospitaleiro toldo assim que precisar de atiradores.
+}

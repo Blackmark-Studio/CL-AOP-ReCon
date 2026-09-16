@@ -1,107 +1,107 @@
 Common_Store_1 {
-城里已经戒备森严，到处都在找你！要是俺，早就溜了。
+城里已经戒备森严， 到处都在找你！ 要是我， 早就溜了。 
 }
 Common_Store_2 {
-整个城市的守卫都在满街找你呢。老子可不傻，才不会跟你说话！
+整个城市的守卫都在满街找你呢。 我可不傻， 才不会跟你说话！ 
 }
 Common_Store_3_m {
-快跑，伙计，别等士兵把你打成筛子……
+快跑， 伙计， 别等士兵把你打成筛子…… 
 }
 Common_Store_3_f {
-快跑，姑娘，别等士兵把你打成筛子……
+快跑， 姑娘， 别等士兵把你打成筛子…… 
 }
 Common_Store_4 {
 @<LinkRandPhrase>
 }
 Common_Store_5_m {
-你想干嘛，混蛋？！城里的守卫已经盯上你了，帅哥，你跑不了多远。走，咱们上楼！
+你想干嘛， 混蛋？ ！ 城里的守卫已经盯上你了， 帅哥， 你跑不了多远。 走， 咱们上楼！ 
 }
 Common_Store_5_f {
-你还想干嘛，臭不要脸的？！城里的守卫已经盯上你了，像你这种下三滥跑不了多远！
+你还想干嘛， 臭不要脸的？ ！ 城里的守卫已经盯上你了， 像你这种下三滥跑不了多远！ 
 }
 Common_Store_6_m {
-肮脏的杀人犯，滚出我家！来人！
+肮脏的杀人犯， 滚出我家！ 来人！ 
 }
 Common_Store_6_f {
-肮脏的杀人犯，滚出我家！来人啊！
+肮脏的杀人犯， 滚出我家！ 来人啊！ 
 }
 Common_Store_7_m {
-老子才不怕你这混蛋！很快你就会在我们要塞上吊，跑不了多远的……
+我才不怕你这混蛋！ 很快你就会在我们要塞上吊， 跑不了多远的…… 
 }
 Common_Store_7_f {
-老子才不怕你，臭娘们！很快你就会在咱们堡垒的绞刑架上吊死，跑不了多远的……
+我才不怕你， 臭娘们！ 很快你就会在咱们堡垒的绞刑架上吊死， 跑不了多远的…… 
 }
 Common_Store_8 {
 @<LinkRandPhrase>
 }
 Common_Store_9 {
-哼，警报对俺来说不算啥……
+哼， 警报对我来说不算什么…… 
 }
 Common_Store_10 {
-他们绝对抓不到我。
+他们绝对抓不到我。 
 }
 Common_Store_11 {
 @<RandPhraseSimple>
 }
 Common_Store_12 {
-闭嘴，@<GetWorkTypeOfMan>，再多说一句老子就撕烂你的臭舌头！
+闭嘴， @<GetWorkTypeOfMan>， 再多说一句我就撕烂你的臭舌头！ 
 }
 Common_Store_13 {
-嘿，@<GetWorkTypeOfMan>，还在追着海盗跑啊！听老子一句，低调点，命还能保住……
+嘿， @<GetWorkTypeOfMan>， 还在追着海盗跑啊！ 听我一句， 低调点， 命还能保住…… 
 }
 Common_Store_14 {
 @<RandPhraseSimple>
 }
 Common_Store_15 {
-嘿，Doctor Blood！@<TimeGreeting>。
+嘿， 布拉德医生！ @<TimeGreeting>。 
 }
 Common_Store_16 {
-很高兴见到你，Peter Blood。
+很高兴见到你， 彼得.布拉德。 
 }
 Common_Store_17 {
-@<GetFullName>，你能来真好。Colonel Bishop最近怎么样？
+@<GetFullName>， 你能来真好。 毕晓普上校最近怎么样？ 
 }
 Common_Store_18 {
 @<LinkRandPhrase>
 }
 Common_Store_19 {
-唉，俺已经要走了，@<NPChar>。咱们下次再见。
+唉， 我已经要走了， @<NPChar>。 咱们下次再见。 
 }
 Common_Store_20 {
-船长，感谢你救了我。
+船长， 感谢你救了我。 
 }
 Common_Store_21 {
-不用谢。
+不用谢。 
 }
 Common_Store_22 {
-钱没有味道。
+钱没有味道。 
 }
 Common_Store_23 {
-钱可没什么臭味。
+钱可没什么臭味。 
 }
 Common_Store_24 {
-光靠美德可填不饱肚子！
+光靠美德可填不饱肚子！ 
 }
 Common_Store_25 {
-新客户就意味着新金子。@<LinkRandPhrase> @<GetFullName> 为您效劳！
+新客户就意味着新金子。 @<LinkRandPhrase>@<GetFullName>为您效劳！ 
 }
 Common_Store_26 {
-很高兴认识新客户，
+很高兴认识新客户， 
 }
 Common_Store_27 {
-很高兴有新客人，
+很高兴有新客人， 
 }
 Common_Store_28 {
-欢迎，
+欢迎， 
 }
 Common_Store_29 {
-我的店随时为您效劳。
+我的店随时为您效劳。 
 }
 Common_Store_30 {
-我完全听您安排。
+我完全听您安排。 
 }
 Common_Store_31 {
-@<LinkRandPhrase> @<GetAddress_Form>。我叫@<GetFullName>，@<RandPhraseSimple>
+@<LinkRandPhrase>@<GetAddress_Form>。 我叫@<GetFullName>， @<RandPhraseSimple>
 }
 Common_Store_32 {
 我叫
@@ -110,109 +110,109 @@ Common_Store_33 {
 我是
 }
 Common_Store_34 {
-请允许我自我介绍。@<RandPhraseSimple>，我是船长@<GetFullName>。
+请允许我自我介绍。 @<RandPhraseSimple>， @<GetFullName>船长。 
 }
 Common_Store_35 {
-城里戒备森严，到处都在找你！要是我，早就溜了。
+城里戒备森严， 到处都在找你！ 要是我， 早就溜了。 
 }
 Common_Store_36 {
-整个城市的守卫都在满街找你呢。老子可不傻，才不会跟你说话！
+整个城市的守卫都在满街找你呢。 我可不傻， 才不会跟你说话！ 
 }
 Common_Store_37_m {
-快跑，伙计，别等士兵把你打成筛子……
+快跑， 伙计， 别等士兵把你打成筛子…… 
 }
 Common_Store_37_f {
-快跑，姑娘，别等士兵把你打成筛子……
+快跑， 姑娘， 别等士兵把你打成筛子…… 
 }
 Common_Store_38 {
 @<LinkRandPhrase>
 }
 Common_Store_39_m {
-你想干嘛，混蛋？！城里的守卫已经盯上你了，帅哥，你跑不了多远。走，咱们上楼去！
+你想干嘛， 混蛋？ ！ 城里的守卫已经盯上你了， 帅哥， 你跑不了多远。 走， 咱们上楼去！ 
 }
 Common_Store_39_f {
-你还想干嘛，臭不要脸的？！城里的守卫已经盯上你了，你跑不了多远的，卑鄙的家伙！
+你还想干嘛， 臭不要脸的？ ！ 城里的守卫已经盯上你了， 你跑不了多远的， 卑鄙的家伙！ 
 }
 Common_Store_40_m {
-肮脏的杀人犯，滚出我家！来人！
+肮脏的杀人犯， 滚出我家！ 来人！ 
 }
 Common_Store_40_f {
-肮脏的杀人犯，滚出我家！来人！
+肮脏的杀人犯， 滚出我家！ 来人！ 
 }
 Common_Store_41_m {
-老子才不怕你这混蛋！很快你就会被吊死在咱们堡垒的绞刑架上，跑不了多远的……
+我才不怕你这混蛋！ 很快你就会被吊死在咱们堡垒的绞刑架上， 跑不了多远的…… 
 }
 Common_Store_41_f {
-老子才不怕你，臭娘们！很快你就会在咱们堡垒的绞刑架上吊死，跑不了多远的……
+我才不怕你， 臭娘们！ 很快你就会在咱们堡垒的绞刑架上吊死， 跑不了多远的…… 
 }
 Common_Store_42 {
 @<LinkRandPhrase>
 }
 Common_Store_43 {
-哼，警报对俺来说不算啥……
+哼， 警报对我来说不算什么…… 
 }
 Common_Store_44 {
-他们绝对抓不到我。
+他们绝对抓不到我。 
 }
 Common_Store_45 {
 @<RandPhraseSimple>
 }
 Common_Store_46 {
-闭上你的臭嘴，@<GetWorkTypeOfMan>，不然老子撕烂你的烂舌头！
+闭上你的臭嘴， @<GetWorkTypeOfMan>， 不然我撕烂你的烂舌头！ 
 }
 Common_Store_47 {
-嘿，@<GetWorkTypeOfMan>，还在追着海盗跑啊！听俺一句，兄弟：低调点，命还能保住……
+嘿， @<GetWorkTypeOfMan>， 还在追着海盗跑啊！ 听我一句， 兄弟： 低调点， 命还能保住…… 
 }
 Common_Store_48 {
 @<RandPhraseSimple>
 }
 Common_Store_49 {
-船长，谢谢你救了我。
+船长， 谢谢你救了我。 
 }
 Common_Store_50 {
-不用谢。
+不用谢。 
 }
 Common_Store_51 {
 船长
 }
 Common_Store_52_m {
-对，就是他本人
+对， 就是他本人
 }
 Common_Store_52_f {
-没错，就是她本人
+没错， 就是她本人
 }
 Common_Store_53 {
-这不是……
+这不是…… 
 }
 Common_Store_54 {
-你还没被吊到桅杆上啊？哈哈！
+你还没被吊到桅杆上啊？ 哈哈！ 
 }
 Common_Store_55_m {
-听说你去见了海魔！
+听说你去见了海魔！ 
 }
 Common_Store_55_f {
-听说你去见过海魔了！
+听说你去见过海魔了！ 
 }
 Common_Store_56 {
-可我听说你在Port Royal被吊死了。
+可我听说你在皇家港被吊死了。 
 }
 Common_Store_57 {
-见到你真高兴！
+见到你真高兴！ 
 }
 Common_Store_58 {
-欢迎！
+欢迎！ 
 }
 Common_Store_59 {
-@<LinkRandPhrase> @<GetFullName>！@<LinkRandPhrase> @<RandPhraseSimple>
+@<LinkRandPhrase>@<GetFullName>！ @<LinkRandPhrase>@<RandPhraseSimple>
 }
 Common_Store_60 {
-你好，
+你好， 
 }
 Common_Store_61 {
-欢迎，
+欢迎， 
 }
 Common_Store_62 {
-您好，
+您好， 
 }
 Common_Store_63 {
 你喜欢这个吗
@@ -221,61 +221,61 @@ Common_Store_64 {
 你喜欢这个吗
 }
 Common_Store_65 {
-岛？
+岛？ 
 }
 Common_Store_66 {
-小镇？
+小镇？ 
 }
 Common_Store_67 {
-这里其实挺不错的，
+这里其实挺不错的， 
 }
 Common_Store_68 {
-好地方，
+好地方， 
 }
 Common_Store_69_m {
-这儿有漂亮姑娘，
+这儿有漂亮姑娘， 
 }
 Common_Store_69_f {
-我们这儿的人都很热情，
+我们这儿的人都很热情， 
 }
 Common_Store_70 {
-不是吗？
+不是吗？ 
 }
 Common_Store_71 {
-不是吗？
+不是吗？ 
 }
 Common_Store_72 {
-@<LinkRandPhrase> 船长。@<RandPhraseSimple>咱们@<RandPhraseSimple>@<LinkRandPhrase>@<RandPhraseSimple>
+@<LinkRandPhrase>船长。 @<RandPhraseSimple>咱们@<RandPhraseSimple>@<LinkRandPhrase>@<RandPhraseSimple>
 }
 Common_Store_73 {
 船长
 }
 Common_Store_74 {
-啊，又是你啊，
+啊， 又是你啊， 
 }
 Common_Store_75 {
-你吓了我一跳，
+你吓了我一跳， 
 }
 Common_Store_76 {
-现在母亲们都拿你的名字吓唬不听话的孩子了！
+现在母亲们都拿你的名字吓唬不听话的孩子了！ 
 }
 Common_Store_77 {
-我希望你没跟官府闹过什么矛盾吧？
+我希望你没跟官府闹过什么矛盾吧？ 
 }
 Common_Store_78 {
-你的名声可不怎么样。
+你的名声可不怎么样。 
 }
 Common_Store_79 {
-不知阁下今日来访，有何贵干？
+不知阁下今日来访， 有何贵干？ 
 }
 Common_Store_80 {
-你想干什么？
+你想干什么？ 
 }
 Common_Store_81 {
-你来干什么？
+你来干什么？ 
 }
 Common_Store_82 {
-@<LinkRandPhrase> @<GetFullName>。@<LinkRandPhrase> @<LinkRandPhrase>
+@<LinkRandPhrase>@<GetFullName>。 @<LinkRandPhrase>@<LinkRandPhrase>
 }
 Common_Store_83 {
 今天有点风浪
@@ -287,61 +287,61 @@ Common_Store_85 {
 风越来越大了
 }
 Common_Store_86 {
-欢迎，@<GetFullName>船长！@<LinkRandPhrase>，是不是？
+欢迎， @<GetFullName>船长！ @<LinkRandPhrase>， 是不是？ 
 }
 Common_Store_87 {
-你还活着，
+你还活着， 
 }
 Common_Store_88_m {
-我也很高兴见到你，
+我也很高兴见到你， 
 }
 Common_Store_88_f {
-我也很高兴见到你，
+我也很高兴见到你， 
 }
 Common_Store_89 {
-咱们以前的日子可比现在强多了，
+咱们以前的日子可比现在强多了， 
 }
 Common_Store_90 {
-混蛋！
+混蛋！ 
 }
 Common_Store_91 {
-伙计！
+伙计！ 
 }
 Common_Store_92 {
-老水手！
+老水手！ 
 }
 Common_Store_93 {
-你老婆早就拿啤酒把你数落够了！
+你老婆早就拿啤酒把你数落够了！ 
 }
 Common_Store_94 {
-你被白蚁吃了！
+你被白蚁吃了！ 
 }
 Common_Store_95 {
-你那老婆把你逼得快进棺材了！
+你那老婆把你逼得快进棺材了！ 
 }
 Common_Store_96_m {
-@<LinkRandPhrase> @<LinkRandPhrase> 我还以为，@<LinkRandPhrase>
+@<LinkRandPhrase>@<LinkRandPhrase>我还以为， @<LinkRandPhrase>
 }
 Common_Store_96_f {
-@<LinkRandPhrase> @<LinkRandPhrase> 我还以为，@<LinkRandPhrase>
+@<LinkRandPhrase>@<LinkRandPhrase>我还以为， @<LinkRandPhrase>
 }
 Common_Store_97 {
-您好，
+您好， 
 }
 Common_Store_98 {
-祝你安康，
+祝你安康， 
 }
 Common_Store_99 {
-你好，
+你好， 
 }
 Common_Store_100 {
-你说得对，
+你说得对， 
 }
 Common_Store_101_m {
-完全同意，
+完全同意， 
 }
 Common_Store_101_f {
-完全同意，
+完全同意， 
 }
 Common_Store_102_m {
 这儿的混血姑娘真是迷人
@@ -359,88 +359,88 @@ Common_Store_104_f {
 这里的城里人确实挺友善的
 }
 Common_Store_105 {
-@<LinkRandPhrase> @<GetAddress_FormToNPC> @<GetFullName>。@<RandPhraseSimple> @<LinkRandPhrase>。
+@<LinkRandPhrase>@<GetFullName>@<GetAddress_FormToNPC>。 @<RandPhraseSimple>@<LinkRandPhrase>。 
 }
 Common_Store_106 {
-这种话见鬼去吧，
+这种话见鬼去吧， 
 }
 Common_Store_107 {
 转到另一侧迎风
 }
 Common_Store_108 {
-你跟鹦鹉似的叽叽喳喳！
+你跟鹦鹉似的叽叽喳喳！ 
 }
 Common_Store_109 {
-别耍我！
+别耍我！ 
 }
 Common_Store_110 {
-你说的话一文不值！
+你说的话一文不值！ 
 }
 Common_Store_111_m {
-我到店里来了！
+我到店里来了！ 
 }
 Common_Store_111_f {
-我到店里来了！
+我到店里来了！ 
 }
 Common_Store_112 {
-你怎么坐在这儿？
+你怎么坐在这儿？ 
 }
 Common_Store_113 {
-@<RandPhraseSimple> @<GetFullName>！@<LinkRandPhrase> @<RandPhraseSimple>
+@<RandPhraseSimple>@<GetFullName>！ @<LinkRandPhrase>@<RandPhraseSimple>
 }
 Common_Store_114 {
-一片死寂。
+一片死寂。 
 }
 Common_Store_115 {
-天气好得很。
+天气好得很。 
 }
 Common_Store_116 {
-一点风都没有。
+一点风都没有。 
 }
 Common_Store_117 {
-你好，@<GetAddress_FormToNPC>！是啊，不过昨天@<LinkRandPhrase>
+你好， @<GetAddress_FormToNPC>！ 是啊， 不过昨天@<LinkRandPhrase>
 }
 Common_Store_118 {
-全员上甲板！
+全员上甲板！ 
 }
 Common_Store_119 {
-检查船舱！
+检查船舱！ 
 }
 Common_Store_120_m {
-嘿嘿，哪阵风把这位幸运绅士吹到俺这店里来了？
+嘿嘿， 哪阵风把这位幸运绅士吹到我这店里来了？ 
 }
 Common_Store_120_f {
-哪阵风把这位绅士——哦，抱歉，是这位幸运的女士带到俺这店里来了，嘿嘿？
+哪阵风把这位绅士——哦， 抱歉， 是这位幸运的女士带到我这店里来了， 嘿嘿？ 
 }
 Common_Store_121 {
-对俺这个可怜的老商人来说，真是个惊喜啊！嘿嘿！
+对我这个可怜的老商人来说， 真是个惊喜啊！ 嘿嘿！ 
 }
 Common_Store_122 {
-什么风把你吹到我店里来了？
+什么风把你吹到我店里来了？ 
 }
 Common_Store_123 {
-@<RandPhraseSimple> @<LinkRandPhrase>
+@<RandPhraseSimple>@<LinkRandPhrase>
 }
 Common_Store_124 {
-打开港口！
+打开港口！ 
 }
 Common_Store_125 {
-抓钩准备，靠舷！
+抓钩准备， 靠舷！ 
 }
 Common_Store_126 {
-稳住航向！
+稳住航向！ 
 }
 Common_Store_127 {
-跟着俺，你能找到
+跟着我， 你能找到
 }
 Common_Store_128 {
 在我店里
 }
 Common_Store_129 {
-岛上最划算的价格。
+岛上最划算的价格。 
 }
 Common_Store_130 {
-货品选择真不错。
+货品选择真不错。 
 }
 Common_Store_131 {
 顶级品质的货物
@@ -452,16 +452,16 @@ Common_Store_133 {
 您想要什么都行
 }
 Common_Store_134 {
-@<LinkRandPhrase>@<RandPhraseSimple>@<LinkRandPhrase>@<RandPhraseSimple>，船长！
+@<LinkRandPhrase>@<RandPhraseSimple>@<LinkRandPhrase>@<RandPhraseSimple>， 船长！ 
 }
 Common_Store_135_m {
-啥都有，专为发财的爷们儿准备！嘿嘿！不过，等你被吊在太阳底下晒的时候，可就用不上了！
+什么都有， 专为发财的爷们儿准备！ 嘿嘿！ 不过， 等你被吊在太阳底下晒的时候， 可就用不上了！ 
 }
 Common_Store_135_f {
-什么货都有，专供各位幸运的绅士和女士！嘿嘿！只要你们还没被吊在太阳底下晒干！
+什么货都有， 专供各位幸运的绅士和女士！ 嘿嘿！ 只要你们还没被吊在太阳底下晒干！ 
 }
 Common_Store_136 {
-风吹得港口里的吊死人晃来晃去，还带来铁链的响声。但金子可没臭味，对吧？！
+风吹得港口里的吊死人晃来晃去， 还带来铁链的响声。 但金子可没臭味， 对吧？ ！ 
 }
 Common_Store_137 {
 @<RandPhraseSimple>
@@ -476,10 +476,10 @@ Common_Store_140 {
 拿到一份赚钱的合同
 }
 Common_Store_141 {
-我全听您的吩咐！
+我全听您的吩咐！ 
 }
 Common_Store_142 {
-我的店随时为您效劳！
+我的店随时为您效劳！ 
 }
 Common_Store_143 {
 很高兴见到你
@@ -488,757 +488,757 @@ Common_Store_144 {
 请随意
 }
 Common_Store_145 {
-想要@<LinkRandPhrase>吗？@<RandPhraseSimple> @<RandPhraseSimple>，船长！
+想要@<LinkRandPhrase>吗？ @<RandPhraseSimple>@<RandPhraseSimple>， 船长！ 
 }
 Common_Store_146 {
-俺劝你一句，船长：霰弹可别省，死人才好搜刮！
+我劝你一句， 船长： 葡萄弹可别省， 死人才好搜刮！ 
 }
 Common_Store_147_m {
-不过现在我看出来，你还真是个英雄。
+不过现在我看出来， 你还真是个英雄。 
 }
 Common_Store_147_f {
-现在我看出来了，你还挺大胆的。
+现在我看出来了， 你还挺大胆的。 
 }
 Common_Store_148 {
-你脑子挺灵光的。
+你脑子挺灵光的。 
 }
 Common_Store_149 {
-你可不是那么容易被骗的。
+你可不是那么容易被骗的。 
 }
 Common_Store_150_m {
-你还年轻，不过@<RandPhraseSimple>
+你还年轻， 不过@<RandPhraseSimple>
 }
 Common_Store_150_f {
-你还年轻，不过@<RandPhraseSimple>
+你还年轻， 不过@<RandPhraseSimple>
 }
 Common_Store_151_m {
-一眼就看出来你是个聪明人。@<RandPhraseSimple>
+一眼就看出来你是个聪明人。 @<RandPhraseSimple>
 }
 Common_Store_151_f {
-一眼就看出来你是个机灵的姑娘。@<RandPhraseSimple>
+一眼就看出来你是个机灵的姑娘。 @<RandPhraseSimple>
 }
 Common_Store_152 {
-你从缴获的战利品里拿到的货物，我全都收。想买黄金还是白银？这些一直抢手！
+你从缴获的战利品里拿到的货物， 我全都收。 想买黄金还是白银？ 这些一直抢手！ 
 }
 Common_Store_153 {
-做商船生意挺赚钱的吧，@<GetFullName>船长？
+做商船生意挺赚钱的吧， @<GetFullName>船长？ 
 }
 Common_Store_154 {
-七十五个人全都没能回家！他们都葬身大海了！
+七十五个人全都没能回家！ 他们都葬身大海了！ 
 }
 Common_Store_155 {
-十五个人围着死人的箱子！
+十五个人围着死人的箱子！ 
 }
 Common_Store_156 {
-喝吧，老天都保不住你，只有魔鬼陪你到底！
+喝吧， 老天都保不住你， 只有魔鬼陪你到底！ 
 }
 Common_Store_157 {
-哟呵呵！再来一瓶朗姆酒。
+哟呵呵！ 再来一瓶朗姆酒。 
 }
 Common_Store_158 {
-你找俺啥事，船长？
+你找我什么事， 船长？ 
 }
 Common_Store_159 {
-船长，您想买点什么？
+船长， 您想买点什么？ 
 }
 Common_Store_160 {
-@<RandPhraseSimple> @<RandPhraseSimple>
+@<RandPhraseSimple>@<RandPhraseSimple>
 }
 Common_Store_161 {
-@<GetFullName>船长，您真会讨价还价。作为老主顾，我给您个特别优惠！
+@<GetFullName>船长， 您真会讨价还价。 作为老主顾， 我给您个特别优惠！ 
 }
 Common_Store_162 {
-好吧，Captain @<GetFullName>，看在你的面子上，俺再便宜点！你想要啥？
+好吧， @<GetFullName>船长， 看在你的面子上， 我再便宜点！ 你想要什么？ 
 }
 Common_Store_163 {
-买两三个花生吧，猪可喜欢这个了。
+买两三个花生吧， 猪可喜欢这个了。 
 }
 Common_Store_164 {
-你还指望他们在这儿用朗姆酒给你擦靴子吗？
+你还指望他们在这儿用朗姆酒给你擦靴子吗？ 
 }
 Common_Store_165 {
-我知道你们这号人。喝起朗姆酒来没个够，最后都得上绞刑架。
+我知道你们这号人。 喝起朗姆酒来没个够， 最后都得上绞刑架。 
 }
 Common_Store_166_m {
-你妈怎么舍得让你下海啊？下海啊！！！你还不如去当个裁缝……
+你妈怎么舍得让你下海啊？ 下海啊！ ！ ！ 你还不如去当个裁缝…… 
 }
 Common_Store_166_f {
-你妈怎么舍得让你下海啊！下海啊！！！还不如去当个裁缝……
+你妈怎么舍得让你下海啊！ 下海啊！ ！ ！ 还不如去当个裁缝…… 
 }
 Common_Store_167 {
-老子跟你说话都觉得恶心。@<LinkRandPhrase>
+我跟你说话都觉得恶心。 @<LinkRandPhrase>
 }
 Common_Store_168 {
-我以为，
+我以为， 
 }
 Common_Store_169 {
-我本来还抱点希望，
+我本来还抱点希望， 
 }
 Common_Store_170 {
-你离开了我们的岛。
+你离开了我们的岛。 
 }
 Common_Store_171 {
-再也见不到你了。
+再也见不到你了。 
 }
 Common_Store_172 {
-死者像磨盘一样挂在你脖子上……
+死者像磨盘一样挂在你脖子上…… 
 }
 Common_Store_173 {
-你已经让多少水手葬身珊瑚丛中了？！
+你已经让多少水手葬身珊瑚丛中了？ ！ 
 }
 Common_Store_174 {
-@<RandPhraseSimple> @<RandPhraseSimple> @<RandPhraseSimple>
+@<RandPhraseSimple>@<RandPhraseSimple>@<RandPhraseSimple>
 }
 Common_Store_175 {
-出发前还要再买点什么吗？
+出发前还要再买点什么吗？ 
 }
 Common_Store_176 {
-你想买点特别的东西吗？
+你想买点特别的东西吗？ 
 }
 Common_Store_177 {
-@<GetFullName>船长，您对生意的热情真是超乎我的想象！@<RandPhraseSimple>
+@<GetFullName>船长， 您对生意的热情真是超乎我的想象！ @<RandPhraseSimple>
 }
 Common_Store_178 {
-来吧，让俺看看你有啥本事，老海盗！
+来吧， 让我看看你有什么本事， 老海盗！ 
 }
 Common_Store_179 {
-我只是想看看你的货，先生。
+我只是想看看你的货， 先生。 
 }
 Common_Store_180 {
-老子发誓，@<GetFullName>，别想耍我！赶紧把你的货拿出来！
+我发誓， @<GetFullName>， 别想耍我！ 赶紧把你的货拿出来！ 
 }
 Common_Store_181 {
-让我看看你都卖些什么，@<GetAddress_FormToNPC>。
+让我看看你都卖些什么， @<GetAddress_FormToNPC>。 
 }
 Common_Store_182 {
-那可不假！死人可咬不了人！说吧，你货舱里都装了啥？
+那可不假！ 死人可咬不了人！ 说吧， 你货舱里都装了什么？ 
 }
 Common_Store_183 {
-你还是管好你自己的事吧，亲爱的。你这儿都卖些什么？
+你还是管好你自己的事吧， 亲爱的。 你这儿都卖些什么？ 
 }
 Common_Store_184 {
-哪天你也会成了俺的战利品，嘿嘿。开个玩笑。把你的货拿出来看看。
+哪天你也会成了我的战利品， 嘿嘿。 开个玩笑。 把你的货拿出来看看。 
 }
 Common_Store_185 {
-咱们谈谈生意吧，@<GetAddress_FormToNPC> @<GetFullName>
+咱们谈谈生意吧， @<GetFullName>@<GetAddress_FormToNPC>
 }
 Common_Store_186 {
-我来干嘛？当然是来买东西的！
+我来干嘛？ 当然是来买东西的！ 
 }
 Common_Store_187 {
-喝酒迟早要害了你，@<GetFullName>。让我看看你都卖些什么。
+喝酒迟早要害了你， @<GetFullName>。 让我看看你都卖些什么。 
 }
 Common_Store_188 {
-你那点折扣我还不知道？两磅可可按三磅算！快点，把你的货拿出来让我看看。
+你那点折扣我还不知道？ 两磅可可按三磅算！ 快点， 把你的货拿出来让我看看。 
 }
 Common_Store_189 {
-很高兴为你服务，来做点生意吧。
+很高兴为你服务， 来做点生意吧。 
 }
 Common_Store_190 {
-把货拿出来，少废话，老子赶时间。
+把货拿出来， 少废话， 我赶时间。 
 }
 Common_Store_191_m {
-哎，老子现在就想砍个人！行了，咱们说正事吧。
+哎， 我现在就想砍个人！ 行了， 咱们说正事吧。 
 }
 Common_Store_191_f {
-哎，老子现在就想砍个人！行了，咱们说正事吧。
+哎， 我现在就想砍个人！ 行了， 咱们说正事吧。 
 }
 Common_Store_192 {
-咱们说点别的吧，亲爱的。
+咱们说点别的吧， 亲爱的。 
 }
 Common_Store_193 {
-卡兰巴！俺是来办别的事的！
+卡兰巴！ 我是来办别的事的！ 
 }
 Common_Store_194 {
-我有点正事要和你谈谈，@<GetAddress_FormToNPC>@<GetFullName>。
+我有点正事要和你谈谈， @<GetFullName>@<GetAddress_FormToNPC>。 
 }
 Common_Store_195 {
-老海盗，俺有事找你！
+老海盗， 我有事找你！ 
 }
 Common_Store_196 {
-咱们说正事吧，亲爱的！
+咱们说正事吧， 亲爱的！ 
 }
 Common_Store_197 {
-见鬼，别想骗老子，混蛋！老子还有别的事！
+见鬼， 别想骗我， 混蛋！ 我还有别的事！ 
 }
 Common_Store_198_m {
-我完全同意，@<GetAddress_FormToNPC>@<GetFullName>，不过我还想和你谈点别的事。
+我完全同意， @<GetFullName>@<GetAddress_FormToNPC>， 不过我还想和你谈点别的事。 
 }
 Common_Store_198_f {
-我完全同意，@<GetAddress_FormToNPC>@<GetFullName>，不过我还想和你谈点别的事。
+我完全同意， @<GetFullName>@<GetAddress_FormToNPC>， 不过我还想和你谈点别的事。 
 }
 Common_Store_199 {
-这么快就喝醉了，伙计？！我有事找你。
+这么快就喝醉了， 伙计？ ！ 我有事找你。 
 }
 Common_Store_200_m {
-我不是来做买卖的，伙计。我有别的事。
+我不是来做买卖的， 伙计。 我有别的事。 
 }
 Common_Store_200_f {
-我不是来做买卖的，亲爱的。我有别的事。
+我不是来做买卖的， 亲爱的。 我有别的事。 
 }
 Common_Store_201 {
-你这家伙，价格也太黑了吧！老子有事找你。
+你这家伙， 价格也太黑了吧！ 我有事找你。 
 }
 Common_Store_202 {
-折扣当然不错，@<GetAddress_FormToNPC> @<GetFullName>，不过我今天是有别的事。
+折扣当然不错， @<GetFullName>@<GetAddress_FormToNPC>， 不过我今天是有别的事。 
 }
 Common_Store_203 {
-闭嘴，老酒鬼，老子有事找你。
+闭嘴， 老酒鬼， 我有事找你。 
 }
 Common_Store_204 {
-你喝朗姆酒会难受吧。其实我也不怎么喜欢你。咱们还是说正事吧。
+你喝朗姆酒会难受吧。 其实我也不怎么喜欢你。 咱们还是说正事吧。 
 }
 Common_Store_205 {
-你都把老子榨干了，混蛋！老子有事找你。
+你都把我榨干了， 混蛋！ 我有事找你。 
 }
 Common_Store_206 {
-你这讽刺可没用，我找你是另有要事。
+你这讽刺可没用， 我找你是另有要事。 
 }
 Common_Store_207 {
-先办正事，玩乐以后再说。我有点事想问你。
+先办正事， 玩乐以后再说。 我有点事想问你。 
 }
 Common_Store_208 {
-现在不行，我得先弄清楚情况。
+现在不行， 我得先弄清楚情况。 
 }
 Common_Store_209 {
-去他妈的价钱！先把我想知道的都说清楚。
+去他妈的价钱！ 先把我想知道的都说清楚。 
 }
 Common_Store_210 {
-很乐意。我有点事想问你。
+很乐意。 我有点事想问你。 
 }
 Common_Store_211 {
-多谢提醒，老杀手。我得去打听点事。
+多谢提醒， 老杀手。 我得去打听点事。 
 }
 Common_Store_212 {
-我有个具体的问题。
+我有个具体的问题。 
 }
 Common_Store_213 {
-金子先放一边，我有件事想问。
+金子先放一边， 我有件事想问。 
 }
 Common_Store_214_m {
-嗯，我同意。我有件事想问你。
+嗯， 我同意。 我有件事想问你。 
 }
 Common_Store_214_f {
-嗯，我同意。我有件事想问你。
+嗯， 我同意。 我有件事想问你。 
 }
 Common_Store_215 {
-我想你知道我要问什么。
+我想你知道我要问什么。 
 }
 Common_Store_216 {
-希望你能回答我的问题。
+希望你能回答我的问题。 
 }
 Common_Store_217 {
-你脑子里除了价格标签还有别的吗？我就想问这个。
+你脑子里除了价格标签还有别的吗？ 我就想问这个。 
 }
 Common_Store_218 {
-不是这个问题。俺需要点消息。
+不是这个问题。 我需要点消息。 
 }
 Common_Store_219 {
-别激动啊，老朋友！我就是想问你点事。
+别激动啊， 老朋友！ 我就是想问你点事。 
 }
 Common_Store_220 {
-别那么紧张，小心把自己吓出病来。回答我的问题，我马上就走。
+别那么紧张， 小心把自己吓出病来。 回答我的问题， 我马上就走。 
 }
 Common_Store_221 {
-我可没指望你能说出什么聪明话——你那脑子也就跟蟑螂差不多。不过你还真懂点东西。
+我可没指望你能说出什么聪明话——你那脑子也就跟蟑螂差不多。 不过你还真懂点东西。 
 }
 Common_Store_222 {
-我不会耽误你太久，只问一个问题。
+我不会耽误你太久， 只问一个问题。 
 }
 Common_Store_223_m {
-你好，我是应你儿子的邀请来的。
+你好， 我是应你儿子的邀请来的。 
 }
 Common_Store_223_f {
-你好，我是应你儿子的邀请来的。
+你好， 我是应你儿子的邀请来的。 
 }
 Common_Store_224 {
-我是来找你女儿的……
+我是来谈谈你女儿的事的……
 }
 Common_Store_225 {
-再见，老酒鬼。
+再见， 老酒鬼。 
 }
 Common_Store_226 {
-祝你一切顺利，@<GetAddress_FormToNPC> @<GetFullName>。
+祝你一切顺利， @<GetFullName>@<GetAddress_FormToNPC>。 
 }
 Common_Store_227 {
-Caramba！别走开，俺马上回来。
+哎呀！ 别走开， 我马上回来。 
 }
 Common_Store_228 {
-很高兴见到你，@<GetAddress_FormToNPC>@<GetFullName>！再见！
+很高兴见到你， @<GetFullName>@<GetAddress_FormToNPC>！ 再见！ 
 }
 Common_Store_229 {
-解开缆绳！
+解开缆绳！ 
 }
 Common_Store_230 {
-再见，亲爱的。
+再见， 亲爱的。 
 }
 Common_Store_231 {
-哎！你那儿藏着啥？朗姆酒？没有？那行，老子去润润嗓子。
+哎！ 你那儿藏着什么？ 朗姆酒？ 没有？ 那行， 我去润润嗓子。 
 }
 Common_Store_232 {
-不好意思，我在城里有急事要处理。
+不好意思， 我在城里有急事要处理。 
 }
 Common_Store_233 {
-哼！咱们还会再见的！
+哼！ 咱们还会再见的！ 
 }
 Common_Store_234 {
-我得走了。告辞，@<GetAddress_FormToNPC>@<GetFullName>！
+我得走了。 告辞， @<GetFullName>@<GetAddress_FormToNPC>！ 
 }
 Common_Store_235 {
-别跟老子顶嘴！老子可没工夫在这儿跟你废话！
+别跟我顶嘴！ 我可没工夫在这儿跟你废话！ 
 }
 Common_Store_236 {
-我得去看看船上的情况了。告辞，@<GetAddress_FormToNPC> @<GetFullName>！
+我得去看看船上的情况了。 告辞， @<GetFullName>@<GetAddress_FormToNPC>！ 
 }
 Common_Store_237 {
-你怎么了，老伙计？是我——@<GetFullName>！你先休息会儿，我待会儿再来。
+你怎么了， 老伙计？ 是我——@<GetFullName>！ 你先休息会儿， 我待会儿再来。 
 }
 Common_Store_238 {
-恐怕等我下次再来，你的肝就撑不住了。
+恐怕等我下次再来， 你的肝就撑不住了。 
 }
 Common_Store_239 {
-数好你的银币，混蛋！老子还会回来的。
+数好你的银币， 混蛋！ 我还会回来的。 
 }
 Common_Store_240_m {
-很高兴见到你，@<GetAddress_FormToNPC> @<GetFullName>！
+很高兴见到你， @<GetFullName>@<GetAddress_FormToNPC>！ 
 }
 Common_Store_240_f {
-很高兴见到你，@<GetAddress_FormToNPC> @<GetFullName>！
+很高兴见到你， @<GetFullName>@<GetAddress_FormToNPC>！ 
 }
 Common_Store_241_m {
-不好意思，我现在正忙着呢。@<GetAddress_FormToNPC> @<GetFullName>刚带来一大批货！明天再来吧。
+不好意思， 我现在正忙着呢。 @<GetFullName>@<GetAddress_FormToNPC>刚带来一大批货！ 明天再来吧。 
 }
 Common_Store_241_f {
-不好意思，我现在正忙着呢。@<GetAddress_FormToNPC> @<GetFullName>带来了一大批货！明天再来吧。
+不好意思， 我现在正忙着呢。 @<GetFullName>@<GetAddress_FormToNPC>带来了一大批货！ 明天再来吧。 
 }
 Common_Store_242 {
-哦，是吗！行，那我待会儿再来。
+哦， 是吗！ 行， 那我待会儿再来。 
 }
 Common_Store_243 {
-俺这儿有军刀、手枪、炮弹、好木头，还有其他货！你想要点啥？
+我这儿有军刀、 手枪、 炮弹、 好木头， 还有其他货！ 你想要点什么？ 
 }
 Common_Store_244 {
-想买点金子或银子？还是说你想要把好刀？
+想买点金子或银子？ 还是说你想要把好刀？ 
 }
 Common_Store_245 {
 @<RandPhraseSimple>
 }
 Common_Store_246 {
-俺的货舱都快被战利品塞满了！金子可没啥臭味，对吧？
+我的货舱都快被战利品塞满了！ 金子可没什么臭味， 对吧？ 
 }
 Common_Store_247 {
-俺得把战利品都清出去，好装满你的金子。哈哈！
+我得把战利品都清出去， 好装满你的金子。 哈哈！ 
 }
 Common_Store_248 {
-为了满袋的金币，你连亲妈都能卖！不过俺只是来补补货。
+为了满袋的金币， 你连亲妈都能卖！ 不过我只是来补补货。 
 }
 Common_Store_249 {
 @<LinkRandPhrase>
 }
 Common_Store_250 {
-我要卖掉货物，顺便补充点补给。
+我要卖掉货物， 顺便补充点补给。 
 }
 Common_Store_251 {
-我想买点货拿去转卖。
+我想买点货拿去转卖。 
 }
 Common_Store_252 {
-把你的炮弹、炸弹，还有其他货物都拿出来让我看看。
+把你的实心弹、 炸弹， 还有其他货物都拿出来让我看看。 
 }
 Common_Store_253 {
 @<LinkRandPhrase>
 }
 Common_Store_254 {
-把你的军刀、手枪，还有其他的东西都拿出来让我看看。
+把你的军刀、 手枪， 还有其他的东西都拿出来让我看看。 
 }
 Common_Store_255 {
-俺正好缺两把新手枪、点子弹，还有个漂亮戒指。
+我正好缺两把新手枪、 点子弹， 还有个漂亮戒指。 
 }
 Common_Store_256 {
-宝石、异域神像——这才是俺想要的。
+宝石、 异域神像——这才是我想要的。 
 }
 Common_Store_257 {
 @<LinkRandPhrase>
 }
 Common_Store_258 {
-老子不做买卖了，开船走人！再见！
+我不做买卖了， 开船走人！ 再见！ 
 }
 Common_Store_259 {
-俺去润润嗓子，你别乱跑。
+我去润润嗓子， 你别乱跑。 
 }
 Common_Store_260 {
 @<RandPhraseSimple>
 }
 Common_Store_261 {
-不，俺现在没心情买东西。告辞了。
+不， 我现在没心情买东西。 告辞了。 
 }
 Common_Store_262 {
-不好意思，我有急事，先告辞了！
+不好意思， 我有急事， 先告辞了！ 
 }
 Common_Store_263 {
 @<RandPhraseSimple>
 }
 Common_Store_264 {
-我在认真听。
+我在认真听。 
 }
 Common_Store_265_m {
-我把你的逃跑者带来了。
+我把你的逃跑者带回来了。 
 }
 Common_Store_265_f {
-我把你的逃跑者带来了。
+我把你的逃跑者带回来了。 
 }
 Common_Store_266 {
-哎呀，Captain，真是太感谢你了！她怎么样？没事吧，没受伤吧？都快一天了，她这小丫头就这么跑了。你说我会害她吗？我只是想给她找个好人家……新郎有钱，又年轻，长得一般又怎么了，外貌又不是最重要的。可她偏不听，倔得跟她妈一个样，真是气人。\n不过说起来，要不是她妈当年也跟个有本事的小子私奔，她哪有机会出生……唉，说这些也没用……年轻人就是天真、傻气……还挺狠心的。
+哎呀， 船长， 真是太感谢你了！ 她怎么样？ 没事吧， 没受伤吧？ 都快一天了， 她这小丫头就这么跑了。 你说我会害她吗？ 我只是想给她找个好人家…… 新郎有钱， 又年轻， 长得一般又怎么了， 外貌又不是最重要的。 可她偏不听， 倔得跟她妈一个样， 真是气人。 \n不过说起来， 要不是她妈当年也跟个有本事的小子私奔， 她哪有机会出生…… 唉， 说这些也没用…… 年轻人就是天真、 傻气…… 还挺狠心的。 
 }
 Common_Store_267_m {
-当然，您是父亲，这事儿您做主，不过我觉得结婚还是别太急……
+当然， 您是父亲， 这事儿您做主， 不过我觉得结婚还是别太急…… 
 }
 Common_Store_267_f {
-当然，您是父亲，决定权在您，但我觉得结婚这事还是别太急……
+当然， 您是父亲， 决定权在您， 但我觉得结婚这事还是别太急…… 
 }
 Common_Store_268 {
-你又懂什么呢？你自己有孩子吗？没有？等你有了再来跟俺说吧。\n是啊……俺答应过谁把她带回来就给奖励——请收下。
+你又懂什么呢？ 你自己有孩子吗？ 没有？ 等你有了再来跟我说吧。 \n是啊…… 我答应过谁把她带回来就给奖励——请收下。 
 }
 Common_Store_269 {
-谢谢你。可得把她看紧点，俺总觉得她不会就此罢休。
+谢谢你。 可得把她看紧点， 我总觉得她不会就此罢休。 
 }
 Common_Store_270_m {
-啊，原来你就是把我那不省心的儿子和他的新娘带回来的船长？
+啊， 原来你就是把我那不省心的儿子和他的新娘带回来的船长？ 
 }
 Common_Store_270_f {
-啊，原来你就是把我那不省心的儿子和他的新娘一起带回来的姑娘？
+啊， 原来你就是把我那不省心的儿子和他的新娘一起带回来的姑娘？ 
 }
 Common_Store_271_m {
-没错，是我帮他们逃走的。
+没错， 是我帮他们逃走的。 
 }
 Common_Store_271_f {
-没错，帮他们逃走的人就是我。
+没错， 帮他们逃走的人就是我。 
 }
 Common_Store_272_m {
-哟，原来是你啊，我的恩人。是不是等着要奖励呢？
+哟， 原来是你啊， 我的恩人。 是不是等着要奖励呢？ 
 }
 Common_Store_272_f {
-哟，原来是我的恩人来了。是不是想要点报酬啊？
+哟， 原来是我的恩人来了。 是不是想要点报酬啊？ 
 }
 Common_Store_273 {
-其实我也不是非要奖励，不过一句感谢的话总没坏处吧。
+其实我也不是非要奖励， 不过一句感谢的话总没坏处吧。 
 }
 Common_Store_274 {
-非常感谢你在我孩子遇到困难时没有抛下他，还帮他体面地解决了这件棘手的事。请允许我尽我所能表达谢意。请收下这点小钱和我个人的一份心意。
+非常感谢你在我孩子遇到困难时没有抛下他， 还帮他体面地解决了这件棘手的事。 请允许我尽我所能表达谢意。 请收下这点小钱和我个人的一份心意。 
 }
 Common_Store_275 {
-谢谢你，我很高兴能帮到这些年轻人。
+谢谢你， 我很高兴能帮到这些年轻人。 
 }
 Common_Store_276 {
-感激？感激什么？！他到底做了啥值得感激的？！那小子都闲了半年没正经事干了，现在倒有空去勾搭姑娘！老子他那年纪的时候，早就自己做生意了。可他呢，倒挺来劲！人家总督的女儿都等着出嫁，他倒好，带回来个没名没姓的女人——老天见谅——现在还来求父母的祝福！
+感激？ 感激什么？ ！ 他到底做了什么值得感激的？ ！ 那小子都闲了半年没正经事干了， 现在倒有空去勾搭姑娘！ 我他那年纪的时候， 早就自己做生意了。 可他呢， 倒挺来劲！ 人家市长的女儿都等着出嫁， 他倒好， 带回来个没名没姓的女人——老天见谅——现在还来求父母的祝福！ 
 }
 Common_Store_277 {
-嗯，所以你不相信真感情吗？
+嗯， 所以你不相信真感情吗？ 
 }
 Common_Store_278 {
-什么感情？！你说什么感情？你都这么大个人了，还说这些……感情！你真该感到羞耻，居然纵容年轻人，还当起媒人来。你把那姑娘从家里带走，把我儿子的生活也毁了。别指望我会感激你。告辞。
+什么感情？ ！ 你说什么感情？ 你都这么大个人了， 还说这些…… 感情！ 你真该感到羞耻， 居然纵容年轻人， 还当起媒人来。 你把那姑娘从家里带走， 把我儿子的生活也毁了。 别指望我会感激你。 告辞。 
 }
 Common_Store_279 {
-那你自己多保重……
+那你自己多保重…… 
 }
 Common_Store_280 {
-你耍我呢？那你船呢？码头上可没见着！
+你耍我呢？ 那你船呢？ 码头上可没见着！ 
 }
 Common_Store_281 {
-见鬼，别想骗老子！你的船根本没停在码头！
+见鬼， 别想骗我！ 你的船根本没停在码头！ 
 }
 Common_Store_282 {
-我在港口没看到你的船，@<GetFullName>船长。希望不是那艘“Flying Dutchman”吧？
+我在港口没看到你的船， @<GetFullName>船长。 希望不是那艘“飞翔的荷兰人”吧？ 
 }
 Common_Store_283 {
-船长，从码头装货更方便。把船靠岸，然后过来吧。
+船长， 从码头装货更方便。 把船靠岸， 然后过来吧。 
 }
 Common_Store_284 {
-@<RandSwear> 真倒霉！！！行啊，老狐狸，咱们还会再见的！
+@<RandSwear>真倒霉！ ！ ！ 行啊， 老狐狸， 咱们还会再见的！ 
 }
 Common_Store_285_m {
-@<GetFullName>，我没想骗你。船就在岛的另一边。
+@<GetFullName>， 我没想骗你。 船就在岛的另一边。 
 }
 Common_Store_285_f {
-@<GetFullName>，我不是故意骗你的。船就在岛的另一边。
+@<GetFullName>， 我不是故意骗你的。 船就在岛的另一边。 
 }
 Common_Store_286 {
-不是。俺的船叫Black Pearl。怎么脸都白了？哈哈，逗你玩儿的！
+不是。 我的船叫黑珍珠号。 怎么脸都白了？ 哈哈， 逗你玩儿的！ 
 }
 Common_Store_287 {
-多谢你的建议，我一定会用上的。
+多谢你的建议， 我一定会用上的。 
 }
 Common_Store_288 {
-你还欠着@<FindMoneyString>的房租。
+你还欠着@<FindMoneyString>的房租。 
 }
 Common_Store_289 {
-行，俺这就付房租。
+行， 我这就付房租。 
 }
 Common_Store_290 {
-我待会儿再来。
+我待会儿再来。 
 }
 Common_Store_291 {
-请进。
+请进。 
 }
 Common_Store_292 {
-谢谢。
+谢谢。 
 }
 Common_Store_293_m {
-不，我改主意了。
+不， 我改主意了。 
 }
 Common_Store_293_f {
-不，我改主意了。
+不， 我改主意了。 
 }
 Common_Store_294_m {
-没有，先生，还在那儿等您呢。我就知道您不会错过这个机会。
+没有， 先生， 还在那儿等您呢。 我就知道您不会错过这个机会。 
 }
 Common_Store_294_f {
-没有，女士，还在那儿等您呢。我就知道您不会放过这个机会。
+没有， 女士， 还在那儿等您呢。 我就知道您不会放过这个机会。 
 }
 Common_Store_295 {
-不错，我租了。
+不错， 我租了。 
 }
 Common_Store_296_m {
-没，就是突然想起来了，说不定哪天用得上……
+没， 就是突然想起来了， 说不定哪天用得上…… 
 }
 Common_Store_296_f {
-没，就是突然想起来了，说不定哪天能用上……
+没， 就是突然想起来了， 说不定哪天能用上…… 
 }
 Common_Store_297 {
-你还记得吧，得提前一个月付钱。
+你还记得吧， 得提前一个月付钱。 
 }
 Common_Store_298 {
-我记得——给你。
+我记得——给你。 
 }
 Common_Store_299 {
-该死，我这就把钱拿来。
+该死， 我这就把钱拿来。 
 }
 Common_Store_300 {
-你真要放俺走？啧啧，这地方可真不错，条件也这么好。俺跟你说，整个加勒比都找不到这样的服务。
+你真要搬走？  啧啧， 这地方可真不错， 条件也这么好。 我跟你说， 整个加勒比都找不到这样的服务。 
 }
 Common_Store_301_m {
-我都说了，我要搬走。难道你还想让我为空气付钱？你另找租客吧。
+我都说了， 我要搬走。 难道你还想让我为空气付钱？ 你另找租客吧。 
 }
 Common_Store_301_f {
-我都说了，我马上搬走。难道你还想让我付钱存空气？你去找别人租吧。
+我都说了， 我马上搬走。 难道你还想让我付钱存空气？ 你去找别人租吧。 
 }
 Common_Store_302_m {
-你说别处都没人出价？行吧，那我先留着。不过得说一句……这租金，可真不便宜。
+你说别处都没人出价？ 行吧， 那我先留着。 不过得说一句…… 这租金， 可真不便宜。 
 }
 Common_Store_302_f {
-你说别处都没人出价？行吧，那我就先自己留着。不过租金嘛，说实话……可不便宜。
+你说别处都没人出价？ 行吧， 那我就先自己留着。 不过租金嘛， 说实话…… 可不便宜。 
 }
 Common_Store_303 {
-你还欠着@<FindMoneyString>的房租。
+你还欠着@<FindMoneyString>的房租。 
 }
 Common_Store_304 {
-行。
+行。 
 }
 Common_Store_305 {
-把你的货拿走，我就关仓库。
+把你的货拿走， 我就关仓库。 
 }
 Common_Store_306 {
-行。
+行。 
 }
 Common_Store_307 {
-船长，求你帮帮我们！
+船长， 求你帮帮我们！ 
 }
 Common_Store_308 {
-船长，我代表所有商人请求您的帮助！
+船长， 我代表所有商人请求您的帮助！ 
 }
 Common_Store_309 {
 @<RandPhraseSimple>
 }
 Common_Store_310 {
-怎么了？我能帮你什么忙？
+怎么了？ 我能帮你什么忙？ 
 }
 Common_Store_311 {
-本来有个活儿等着我，结果@<GetFullName>已经替我接下了。
+本来有个活儿等着我， 结果@<GetFullName>已经替我接下了。 
 }
 Common_Store_312 {
-哦，是吗！行，那我待会儿过来。
+哦， 是吗！ 行， 那我待会儿过来。 
 }
 Common_Store_313 {
-生意？快说，怎么回事，从头讲清楚！
+生意？ 快说， 怎么回事， 从头讲清楚！ 
 }
 Common_Store_314 {
-我听着呢。你说的是什么事？
+我听着呢。 你说的是什么事？ 
 }
 Common_Store_315 {
-俺船舱里有给你店铺的货。
+我船舱里有给你店铺的货。 
 }
 Common_Store_316 {
-我的船被雇来给你们店送货。货物现在正在卸下。
+我的船被雇来给你们店送货。 货物现在正在卸下。 
 }
 Common_Store_317 {
 @<RandPhraseSimple>
 }
 Common_Store_318_m {
-很遗憾，我不得不撤回之前的承诺。现在的政治局势让我无法送达货物。
+很遗憾， 我不得不撤回之前的承诺。 现在的政治局势让我无法送达货物。 
 }
 Common_Store_318_f {
-很遗憾，我不得不撤回之前的承诺。现在的政治局势让我无法送达货物。
+很遗憾， 我不得不撤回之前的承诺。 现在的政治局势让我无法送达货物。 
 }
 Common_Store_319 {
-我想把我的船租给你运货。
+我想把我的船租给你运货。 
 }
 Common_Store_320 {
-俺有一艘好船，想运什么货去哪儿都行。
+我有一艘好船， 想运什么货去哪儿都行。 
 }
 Common_Store_321 {
 @<RandPhraseSimple>
 }
 Common_Store_322 {
-@<GetAddress_FormToNPC>，想包艘船吗？俺这有结实的船和老练的水手。
+@<GetAddress_FormToNPC>， 想包艘船吗？ 我这有结实的船和老练的水手。 
 }
 Common_Store_323_m {
-唉，俺在海上都快累趴了……听着，伙计，现在手头真紧。
+唉， 我在海上都快累趴了…… 听着， 伙计， 现在手头真紧。 
 }
 Common_Store_323_f {
-唉，俺在海上都快累趴了……听着，伙计，现在手头真紧。
+唉， 我在海上都快累趴了…… 听着， 伙计， 现在手头真紧。 
 }
 Common_Store_324 {
-那行吧，老家伙，咱们聊聊正事——说白了就是钱的事。
+那行吧， 老家伙， 咱们聊聊正事——说白了就是钱的事。 
 }
 Common_Store_325 {
 @<RandPhraseSimple>
 }
 Common_Store_326_m {
-我想和你谈谈钱的事。
+我想和你谈谈钱的事。 
 }
 Common_Store_326_f {
-我想跟你谈谈钱的事。
+我想跟你谈谈钱的事。 
 }
 Common_Store_327 {
-咱们聊聊钱的事吧，这方面有不少要说的。
+咱们聊聊钱的事吧， 这方面有不少要说的。 
 }
 Common_Store_328 {
 @<RandPhraseSimple>
 }
 Common_Store_329 {
-我是受人委托来的，他叫Governor @<GetFullName>。
+我是受人所托来的。 他是@<GetFullName>市长。 
 }
 Common_Store_330_m {
-@<GetFullName>让我来找你。我来取点东西……
+@<GetFullName>让我来找你。 我来取点东西…… 
 }
 Common_Store_330_f {
-@<GetFullName>让我来找你。我来取点东西……
+@<GetFullName>让我来找你。 我来取点东西…… 
 }
 Common_Store_331 {
 @<RandPhraseSimple>
 }
 Common_Store_332_m {
-我来通知你，你交代的事我已经办妥了。那艘名叫“Blue Bird”的xebec再也不会骚扰商船了。我是来拿约定好的报酬的。
+我来通知你， 你交代的事我已经办妥了。 那艘名叫“蓝鸟号”的谢贝克帆船再也不会骚扰商船了。 我是来拿约定好的报酬的。 
 }
 Common_Store_332_f {
-我来通知您，您的委托我已经完成了。xebec 'Blue Bird' 以后不会再骚扰商人了。我是来领取约定好的报酬的。
+我来通知您， 您的委托我已经完成了。 “蓝鸟号”谢贝克帆船以后不会再骚扰商人了。 我是来领取约定好的报酬的。 
 }
 Common_Store_333_m {
-我得告诉你，俺没能把‘Blue Bird’那艘xebec给击沉。我已经尽力了……
+我得告诉你， 我没能把“蓝鸟号”那艘谢贝克帆船给击沉。 我已经尽力了…… 
 }
 Common_Store_333_f {
-我得告诉你，俺没能把“Blue Bird”那艘xebec击沉。我已经尽力了……
+我得告诉你， 我没能把“蓝鸟号”那艘谢贝克帆船击沉。 我已经尽力了…… 
 }
 Common_Store_334 {
-你同事们的fluyt还好吗？一切都顺利吧？
+你同事们的福禄特帆船还好吗？ 一切都顺利吧？ 
 }
 Common_Store_335 {
-你还没想明白吗？不打算把我辛苦挣来的钱还给我？
+你还没想明白吗？ 不打算把我辛苦挣来的钱还给我？ 
 }
 Common_Store_336 {
-能跟俺说说最近的八卦吗？反正你整天都待在这儿。
+能跟我说说最近的八卦吗？ 反正你整天都待在这儿。 
 }
 Common_Store_337 {
-别磨叽了，老家伙，快说说现在陆地上的日子咋样？
+别磨叽了， 老家伙， 快说说现在陆地上的日子咋样？ 
 }
 Common_Store_338 {
 @<RandPhraseSimple>
 }
 Common_Store_339_m {
-感觉俺在海上漂了半辈子，这边有啥新鲜事没？
+感觉我在海上漂了半辈子， 这边有什么新鲜事没？ 
 }
 Common_Store_339_f {
-感觉自己在海上漂了半辈子。这边有什么新鲜事吗？
+感觉自己在海上漂了半辈子。 这边有什么新鲜事吗？ 
 }
 Common_Store_340 {
-你应该知道最近的消息吧？有什么大事发生了吗？
+你应该知道最近的消息吧？ 有什么大事发生了吗？ 
 }
 Common_Store_341 {
 @<RandPhraseSimple>
 }
 Common_Store_342 {
-带我去仓库，我想看看我的货物情况。
+带我去仓库， 我想看看我的货物情况。 
 }
 Common_Store_343_m {
-我决定把仓库清空，已经用不上了。
+我决定把仓库清空， 已经用不上了。 
 }
 Common_Store_343_f {
-我决定把仓库清空，已经用不上了。
+我决定把仓库清空， 已经用不上了。 
 }
 Common_Store_344 {
-我记得你之前提过有个仓库，那地方现在还空着吗？
+我记得你之前提过有个仓库， 那地方现在还空着吗？ 
 }
 Common_Store_345 {
-总之，现在不是说话的时候。
+总之， 现在不是说话的时候。 
 }
 Common_Store_346_m {
-@<RandSwear> 俺把船停在岛的另一边了，待会儿再过来！
+@<RandSwear>我把船停在岛的另一边了， 待会儿再过来！ 
 }
 Common_Store_346_f {
-@<RandSwear> 俺把船停在岛的另一边了，待会儿再过来！
+@<RandSwear>我把船停在岛的另一边了， 待会儿再过来！ 
 }
 Common_Store_347 {
-请原谅我，@<GetFullName>，我晚点再来。我的船还没靠岸。
+请原谅我， @<GetFullName>， 我晚点再来。 我的船还没靠岸。 
 }
 Common_Store_348 {
-该死！那帮懒鬼还没把船开过来装货！老子待会儿再来！
+该死！ 那帮懒鬼还没把船开过来装货！ 我待会儿再来！ 
 }
 Common_Store_349_m {
-抱歉，我必须命令你把船靠到码头边！
+抱歉， 我必须命令你把船靠到码头边！ 
 }
 Common_Store_349_f {
-抱歉，我得让你把船停靠在码头！
+抱歉， 我得让你把船停靠在码头！ 
 }
 Common_Store_350_m {
-唉，俺在海上都快累趴了……听着，伙计，现在手头真紧。
+唉， 我在海上都快累趴了…… 听着， 伙计， 现在手头真紧。 
 }
 Common_Store_350_f {
-唉，老子在海上都快累趴了……听着，兄弟，现在手头真紧。
+唉， 我在海上都快累趴了…… 听着， 兄弟， 现在手头真紧。 
 }
 Common_Store_351 {
-那咱们就聊聊正事——说说钱的事吧，老家伙。
+那咱们就聊聊正事——说说钱的事吧， 老家伙。 
 }
 Common_Store_352 {
 @<RandPhraseSimple>
 }
 Common_Store_353_m {
-我想和你谈谈钱的事。
+我想和你谈谈钱的事。 
 }
 Common_Store_353_f {
-我想和你谈谈钱的事。
+我想和你谈谈钱的事。 
 }
 Common_Store_354 {
-咱们聊聊钱的事吧，这方面有不少要谈的。
+咱们聊聊钱的事吧， 这方面有不少要谈的。 
 }
 Common_Store_355 {
 @<RandPhraseSimple>
 }
 Common_Store_356 {
-我是受人委托来的，他叫Governor @<GetFullName>。
+我是受人所托来的。 他是@<GetFullName>市长。 
 }
 Common_Store_357_m {
-@<GetFullName>让我来找你，我是来取点东西的……
+@<GetFullName>让我来找你， 我是来取点东西的…… 
 }
 Common_Store_357_f {
-@<GetFullName>让我来找你。我是来取点东西的……
+@<GetFullName>让我来找你。 我是来取点东西的…… 
 }
 Common_Store_358 {
 @<RandPhraseSimple>
 }
 Common_Store_359 {
-不用！至少你和@<NationNameInstrumental>还在交战时，暂时不用。
+不用！ 至少你和@<NationNameInstrumental>还在交战时， 暂时不用。 
 }
 Common_Store_360 {
-那就告辞了。
+那就告辞了。 
 }
 Common_Store_361 {
 可怕的传闻正在流传
@@ -1247,227 +1247,233 @@ Common_Store_362 {
 他们说得不太好
 }
 Common_Store_363 {
-@<RandSwear>你就是@<GetFullName>吧？关于你我@<RandPhraseSimple>，老子可不想跟你扯上关系。
+@<RandSwear>你就是@<GetFullName>吧？ 关于你我@<RandPhraseSimple>， 我可不想跟你扯上关系。 
 }
 Common_Store_364 {
-唉……只要你犯一次错，大家就开始对你指指点点。
+唉…… 只要你犯一次错， 大家就开始对你指指点点。 
 }
 Common_Store_365 {
-@<RandSwear> 得了吧，海上还有更刺激的事呢，@<GetFullName>。
+@<RandSwear>得了吧， 海上还有更刺激的事呢， @<GetFullName>。 
 }
 Common_Store_366 {
 @<RandPhraseSimple>
 }
 Common_Store_367 {
-，在@<XI_ConvertString>
+@<XI_ConvertString>
 }
 Common_Store_368 {
-唉，@<GetAddress_Form>，今天没活儿，明天再来吧。
+唉， @<GetAddress_Form>， 今天没活儿， 明天再来吧。 
 }
 Common_Store_369 {
-明天再来吧，可能会有个不错的机会给你。
+明天再来吧， 可能会有个不错的机会给你。 
 }
 Common_Store_370 {
-行，那我明天过来。
+行， 那我明天过来。 
 }
 Common_Store_371 {
-你那破船装不下这些货，今天没法做生意。
+你那破船装不下这些货， 今天没法做生意。 
 }
 Common_Store_372 {
-很遗憾，Captain @<GetFullName>，我要运货得用比你的船更能装的船。
+很遗憾， @<GetFullName>船长， 我要运货得用比你的船更能装的船。 
 }
 Common_Store_373 {
-我的船不错，不过我明白你的意思。告辞。
+我的船不错， 不过我明白你的意思。 告辞。 
 }
 Common_Store_374 {
-我明白，生意为先。告辞了。
+我明白， 生意为先。 告辞了。 
 }
 Common_Store_375 {
-哎呀！我正想请你帮我送点货呢！来，看看具体细节……
+哎呀！ 我正想请你帮我送点货呢！ 来， 看看具体细节…… 
 }
 Common_Store_376 {
-只要@<FindMoneyString>，俺就把@<GetGoodsNameAlt>，数量@<FindQtyString>，送到@<XI_ConvertString>@<arFracht>，限@<FindDaysString>天内搞定。
+订单： 运送往@<arFracht>-@<XI_ConvertString>； 货物： @<FindQtyString>的 “@<GetGoodsNameAlt>”； 限时： @<FindDaysString>； 报酬： @<FindMoneyString>。
 }
 Common_Store_377 {
-我觉得这不太适合我。
+我觉得这不太适合我。 
 }
 Common_Store_378 {
-群岛现在的局势让我没法做生意。@<XI_ConvertString>跟谁都闹翻了，就剩我一家店还开着。
+群岛现在的局势让我没法做生意。 @<XI_ConvertString>跟谁都闹翻了， 就剩我一家店还开着。 
 }
 Common_Store_379 {
-哦！抱歉。祝你一切顺利。
+噢！！ 抱歉。 祝你一切顺利。 
 }
 Common_Store_380 {
-哎，@<GetAddress_Form>，今天没活儿，明儿再来吧。
+哎， @<GetAddress_Form>， 今天没活儿， 明儿再来吧。 
 }
 Common_Store_381 {
-明天再来吧，可能会有个不错的机会给你。
+明天再来吧， 可能会有个不错的机会给你。 
 }
 Common_Store_382 {
-行，那我明天过来。
+行， 那我明天过来。 
 }
 Common_Store_383 {
-你那破船装不下这些货，今天没法做生意。
+你那破船装不下这些货， 今天没法做生意。 
 }
 Common_Store_384 {
-很遗憾，Captain @<GetFullName>，我要运这些货，需要比你的船更大的货舱。
+很遗憾， @<GetFullName>船长， 我要运这些货， 需要比你的船更大的货舱。 
 }
 Common_Store_385 {
-俺的船不错，不过你说得也有道理。告辞了。
+我的船不错， 不过你说得也有道理。 告辞了。 
 }
 Common_Store_386 {
-我明白你，生意为重。再见。
+我明白你， 生意为重。 再见。 
 }
 Common_Store_387 {
-，在@<XI_ConvertString>
+@<XI_ConvertString>
 }
 Common_Store_388 {
-哦！正好俺也想请你帮个忙。俺需要你尽快把@<FindQtyString>单位的@<GetGoodsNameAlt>送到@<sNation>@<sTemp>。要是你能在@<FindDaysString>内搞定，到了地方就能拿到@<FindMoneyString>奖励。怎么样？
+噢！ 我正打算请你帮个忙。 是这样的， 我有一批共@<FindQtyString>的“@<GetGoodsNameAlt>”， 需要尽快运往@<sTemp>-@<sNation>。 如果你能在@<FindDaysString>内送达， 抵达后你将获得@<FindMoneyString>的酬金。 怎么样？
 }
 Common_Store_389_m {
-我觉得我同意。
+我觉得我同意。 
 }
 Common_Store_389_f {
-我觉得我同意。
+我觉得我同意。 
 }
 Common_Store_390 {
-我觉得这不太适合我。
+我觉得这不太适合我。 
 }
 Common_Store_391 {
-群岛现在的局势让我没法做生意。@<XI_ConvertString>跟所有人都闹翻了，就剩我还有家店。
+群岛现在的局势让我没法做生意。 @<XI_ConvertString>跟所有人都闹翻了， 就剩我还有家店。 
 }
 Common_Store_392 {
-哦！抱歉。祝你一切顺利。
+噢！ 抱歉。 祝你一切顺利。 
 }
 Common_Store_393 {
-滚开，老子没空跟你废话！
+滚开， 我没空跟你废话！ 
 }
 Common_Store_394 {
-我今天已经跟你说过了，没什么可给你的。
+我今天已经跟你说过了， 没什么可给你的。 
 }
 Common_Store_395 {
-最好注意点你的态度，不然老子亲自教你怎么做人！
+最好注意点你的态度， 不然我亲自教你怎么做人！ 
 }
 Common_Store_396 {
-哦，抱歉。
+哦， 抱歉。 
 }
 Common_Store_397 {
-@<RandSwear> 你是不是想得太晚了点？老子都自己重新订货了。告辞。
+@<RandSwear>你是不是想得太晚了点？ 我都自己重新订货了。 告辞。 
 }
 Common_Store_398_m {
-请原谅，我刚才太着急了。如果我赔偿你的损失，或许能挽回我的商誉？
+请原谅， 我刚才太着急了。 如果我赔偿你的损失， 或许能挽回我的商誉？ 
 }
 Common_Store_398_f {
-请原谅，我刚才太着急了。也许我赔偿你的损失，能挽回我的商誉？
+请原谅， 我刚才太着急了。 也许我赔偿你的损失， 能挽回我的商誉？ 
 }
 Common_Store_399 {
-祝你一切顺利。
+祝你一切顺利。 
 }
 Common_Store_400 {
-没错！俺等这东西很久了。你得把@<FindQtyString>的@<GetGoodsNameAlt>送来，俺就给你@<FindMoneyString>。
+没错！ 我等这批货很久了。 你得把@<FindQtyString>的@<GetGoodsNameAlt>送来， 我会付给你@<FindMoneyString>。 
 }
 Common_Store_401 {
-没错。
+没错。 
 }
 Common_Store_402 {
-现在遇到点麻烦，付不起你的报酬
+现在遇到点麻烦， 付不起你的报酬
 }
 Common_Store_403 {
-这批货俺已经在别处用更低的价拿下了
+这批货我已经在别处用更低的价拿下了
 }
 Common_Store_404 {
-@<RandSwear> 俺得跟你道个歉，@<GetAddress_Form>。其实吧，俺是@<RandPhraseSimple>。你这趟的运费，就用你送来的所有货来抵了。
+@<RandSwear>我得跟你道个歉， @<GetAddress_Form>。 其实吧， 我是@<RandPhraseSimple>。 你这趟的运费， 就用你送来的所有货来抵了。 
 }
 Common_Store_405_m {
-俺可是把那该死的货护得死死的！光是为了它，老子就杀了两百只老鼠！
+我可是把那该死的货护得死死的！ 光是为了它， 我就杀了两百只老鼠！ 
 }
 Common_Store_405_f {
-俺可是把那该死的货都护得死死的！为了它，老子杀了两百只老鼠！
+我可是把那该死的货都护得死死的！ 为了它， 我杀了两百只老鼠！ 
 }
 Common_Store_406 {
-你让我别无选择，只能同意了。
+你让我别无选择， 只能同意了。 
 }
 Common_Store_407 {
-@<RandSwear> @<RandPhraseSimple>
+@<RandSwear>@<RandPhraseSimple>
 }
 Common_Store_408 {
-你还没把货全交齐！按合同，还有@<FindQtyString>货物没到。
+你还没把货全交齐！ 按合同， 还有@<FindQtyString>货物没到。 
 }
 Common_Store_409 {
-没错，确实得补上缺的。我还会再来的。
+没错， 确实得补上缺的。 我还会再来的。 
 }
 Common_Store_410 {
-@<RandSwear> 该死的老鼠把货都毁了。老子会补上损失，再回来一趟。
+@<RandSwear>该死的老鼠把货都毁了。 我会补上损失， 再回来一趟。 
 }
 Common_Store_411 {
 @<RandPhraseSimple>
 }
 Common_Store_412 {
-太好了！这是你的奖励，Captain @<GetFullName>。
+太好了！ 这是你的奖励， @<GetFullName>船长。 
 }
 Common_Store_413 {
-和你合作很愉快。
+和你合作很愉快。 
 }
 Common_Store_414 {
-好吧……@<FindMoneyString>这点钱正好能弥补你延误交货让我亏的损失。
+好吧…… @<FindMoneyString>这点钱正好能弥补你延误交货让我亏的损失。 
 }
 Common_Store_415 {
-哎呦！算了吧！老子再也不想拉这些该死的货了！海上已经够多了！
+哎呦！ 算了吧！ 我再也不想拉这些该死的货了！ 海上已经够多了！ 
 }
 Common_Store_416 {
 这是你要的数
 }
 Common_Store_417 {
-太好了。现在我可以跟同事说，咱们确实能和你合作了。
+太好了。 现在我可以跟同事说， 咱们确实能和你合作了。 
 }
 Common_Store_418 {
-谢谢！下次我一定不会让你失望。
+谢谢！ 下次我一定不会让你失望。 
 }
 Common_Store_419 {
-哼，我听说你上一个合同的义务还没履行，就又来要新的了。你本该把@<GetGoodsNameAlt>货物送到@<XI_ConvertString>。
+哼， 我听说你上一个合同的义务还没履行， 就又来要新的了。 你本该把@<GetGoodsNameAlt>货物送到@<XI_ConvertString>。 
 }
 Common_Store_420 {
-没错！你说得对！
+没错！ 你说得对！ 
 }
 Common_Store_421 {
-@<RandSwear> @<GetAddress_Form>，你让我很失望啊！！！能不能想办法把这烂摊子收拾一下？
+@<RandSwear>@<GetAddress_Form>， 你让我很失望啊！ ！ ！ 能不能想办法把这烂摊子收拾一下？ 
 }
 Common_Store_422 {
-好吧，我会尽力把货送到。
+好吧， 我会尽力把货送到。 
 }
 Common_Store_423 {
-不行，我做不到，抱歉。
+不行， 我做不到， 抱歉。 
 }
 Common_Store_424 {
-等等！船上没那么多货！你还差@<FindQtyString>货物。
+等等！ 船上没那么多货！ 你还差@<FindQtyString>货物。 
 }
 Common_Store_425 {
-没错，得想办法补上缺口。
+没错， 得想办法补上缺口。 
 }
 Common_Store_426 {
-@<RandSwear> 船上的老鼠把货都糟蹋了。俺再去补点货，下次再来。
+@<RandSwear>船上的老鼠把货都糟蹋了。 我再去补点货， 下次再来。 
 }
 Common_Store_427 {
 @<RandPhraseSimple>
 }
 Common_Store_428 {
-好吧，我明白了……我把货收回去。
+好吧， 我明白了…… 我把货收回去。 
 }
 Common_Store_429 {
-谢谢你。下次我不会让你失望的！
+谢谢你。 下次我不会让你失望的！ 
 }
 Common_Store_430 {
-现在我用不着你的服务。
+现在我用不着你的服务。 
 }
 Common_Store_431 {
-那真可惜。那咱们聊点别的吧。
+那真可惜。 那咱们聊点别的吧。 
 }
 Common_Store_432_m {
-你经常到处跑。听着，要是你哪天碰到埃及木乃伊粉，帮个忙带点给我。我有个大客户正好需要这个。
+你经常到处跑。 听着， 要是你哪天碰到埃及木乃伊粉， 帮个忙带点给我。 我有个大客户正好需要这个。 
 }
 Common_Store_432_f {
-你经常到处跑。听着，要是你哪天碰巧遇到埃及木乃伊粉，麻烦帮我带点回来。我有个大客户很感兴趣。
+你经常到处跑。 听着， 要是你哪天碰巧遇到埃及木乃伊粉， 麻烦帮我带点回来。 我有个大客户很感兴趣。 
 }
 Common_Store_433 {
-行。
+行。 
+}
+Common_Store_434 {
+您好，小姐！想买点什么吗？
+}
+Common_Store_435 {
+不了，谢谢。也许改天吧。
 }

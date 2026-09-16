@@ -131,6 +131,15 @@ void ProcessDialogEvent()
 						dialog.text = StringFromKey("Habitue_dialog_26", pchar);
 						link.l1 = StringFromKey("Habitue_dialog_27", pchar);
 						link.l1.go = "exit";
+						//--> Эммануэль Пардаль
+						if (CheckAttribute(pchar, "questTemp.EPL_Prologue"))
+						{
+							dialog.text = StringFromKey("Habitue_dialog_296");
+							link.l1 = StringFromKey("Habitue_dialog_297");
+							link.l1.go = "exit";
+							break;
+						}
+						//<-- Эммануэль Пардаль
 
 						if (makeint(pchar.money) >= 100 && ok)
 						{
@@ -176,6 +185,13 @@ void ProcessDialogEvent()
 										link.l2.go = "Cards_Rule";
 										link.l3 = StringFromKey("Habitue_dialog_39");
 										link.l3.go = "exit";
+										//--> Эммануэль Пардаль
+										if (CheckAttribute(pchar, "questTemp.EPL_Prologue"))
+										{
+											DeleteAttribute(link, "l1");
+											DeleteAttribute(link, "l2");
+										}
+										//<-- Эммануэль Пардаль
 									}
 									else
 									{
@@ -200,6 +216,13 @@ void ProcessDialogEvent()
 										link.l2.go = "Dice_Rule";
 										link.l3 = StringFromKey("Habitue_dialog_47");
 										link.l3.go = "exit";
+										//--> Эммануэль Пардаль
+										if (CheckAttribute(pchar, "questTemp.EPL_Prologue"))
+										{
+											DeleteAttribute(link, "l1");
+											DeleteAttribute(link, "l2");
+										}
+										//<-- Эммануэль Пардаль
 									}
 									else
 									{
@@ -231,6 +254,12 @@ void ProcessDialogEvent()
 										StringFromKey("Habitue_dialog_57"),
 										StringFromKey("Habitue_dialog_58")));
 							link.l2.go = "tavern_keeper";
+							//--> Эммануэль Пардаль
+							if (CheckAttribute(pchar, "questTemp.EPL_Prologue"))
+							{
+								DeleteAttribute(link, "l2");
+							}
+							//<-- Эммануэль Пардаль
 						}
 					break;
 				}
@@ -268,8 +297,6 @@ void ProcessDialogEvent()
 			link.l1 = "100";
 			Link.l1.edit = 1;
 			link.l1.go = "Cards_Node_2";
-			//	link.l2 = "Давай по 500 золотых";
-			//	link.l2.go = "Cards_Node_500";
 			link.l3 = StringFromKey("Habitue_dialog_65");
 			link.l3.go = "exit_sit";
 		break;
@@ -346,54 +373,8 @@ void ProcessDialogEvent()
 			DialogExit();
 			LaunchCardsGame();
 		break;
-
-		/*	case "Cards_Node_500":
-				if (!CheckCardsGameSmallRate())
-				{
-					dialog.text = "О тебе ходит слава непревзойдённого шулера. Я не буду с тобой играть в карты вообще.";
-					link.l1 = "Все врут! Ну и не нужно.";
-					link.l1.go = "exit_sit";
-					break;
-				}
-				if (!CheckCardsGameBigRate())
-				{
-					dialog.text = "Я слышал, что ты очень хорошо играешь. Я не буду играть с тобой по таким большим ставкам.";
-					link.l1 = "Давай по более низким?";
-					link.l1.go = "Cards_Node_100";
-					link.l2 = "Ну и не нужно.";
-					link.l2.go = "exit_sit";
-					break;
-				}
-
-				if (sti(pchar.Money) < 1500)
-				{
-					dialog.text = "Да ты, "+ GetSexPhrase("дружок","дорогуша") +", на мели. Приходи, когда разбогатеешь.";
-					link.l1 = "Ладно.";
-					link.l1.go = "exit_sit";
-					break;
-				}
-				if (sti(npchar.Money) < 1500)
-				{
-					dialog.text = "Я уже проигрался для таких больших ставок, явно не мой день.";
-					link.l1 = "Жаль.";
-					link.l1.go = "exit_sit";
-					break;
-				}
-				dialog.text = "Хорошо, играем по 500 монет.";
-				link.l1 = "Сдавай!";
-				link.l1.go = "Cards_begin_go";
-				pchar.GenQuest.Cards.npcharIdx = npchar.index;
-				pchar.GenQuest.Cards.iRate     = 500;
-				pchar.GenQuest.Cards.SitType   = true;
-			break;*/
-
-		case "Cards_begin_go":
-		// анлим игры в день SetNPCQuestDate(npchar, "Card_date_begin");
-			Diag.CurrentNode = Diag.TempNode;
-			DialogExit();
-			LaunchCardsGame();
-		break;
 		// карты <--
+
 		// КОСТИ -->
 		case "Dice_Rule":
 			dialog.text = GlobalStringConvert("DICE_RULE");

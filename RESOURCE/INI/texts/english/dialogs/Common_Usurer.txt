@@ -1223,13 +1223,19 @@ Common_Usurer_359 {
 You want me to find this person? Why do you think they're still in town?
 }
 Common_Usurer_360 {
-He’s in town, I assure you. No ships have sailed today. And as a reward, you’ll get 10%%, that is—3,000 piastres. What do you say?
+He’s in town, I assure you. No ships have sailed today. And as a reward, you’ll get 10%%, that is—3,000 piastres. Considering your situation... I’m willing to give you until tomorrow evening. After that, I’ll hire bounty hunters. What do you say?
 }
 Common_Usurer_361 {
 You know, I think I'll help you.
 }
 Common_Usurer_362 {
 Don’t count on me.
+}
+Common_Usurer_362_1 {
+Excellent. Given your situation, I’m willing to wait until tomorrow evening. But Doctor, please don’t try to deceive me: one word to the Colonel will be enough...
+}
+Common_Usurer_362_2 {
+Enough. I may have lost my freedom, but not my conscience.
 }
 Common_Usurer_363 {
 So, did you manage it?

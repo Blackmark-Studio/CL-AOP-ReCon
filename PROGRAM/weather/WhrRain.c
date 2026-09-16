@@ -46,7 +46,7 @@ void FillRainData(int nw1, int nw2)
 	aref aRain1; makearef(aRain1, Weathers[nw1].Rain);
 	aref aRainbow1; makearef(aRainbow1, Weathers[nw1].Rainbow);
 
-	Rain.Clear = "";
+	Rain.Clear = ""; // > сигнал движку удалить частицы дождя
 	DeleteAttribute(&Rain,"");
 
 	if( nw2 < 0 )
@@ -165,12 +165,10 @@ void Whr_RainGenerator()
 			WeatherParams.Rain.StartTime = 2 + rand(19) + rand(59)/60.0;	// время старта с минутами
 			WeatherParams.Rain.Duration  = 60 + rand(120); 					// короткий дождь
 		}
+		// > Не даём дождю уйти за полночь, иначе он застревает до суточной регенерации
+		float fRainEnd = stf(WeatherParams.Rain.StartTime) + stf(WeatherParams.Rain.Duration)/60.0;
+		if (fRainEnd > 24.0) WeatherParams.Rain.Duration = makeint((24.0 - stf(WeatherParams.Rain.StartTime)) * 60.0);
 		WeatherParams.Rain.ThisDay 		= true;								// дождь сегодня будет
-		WeatherParams.Rain.sDay			= rand(8);
-		WeatherParams.Rain.sMorning		= rand(5);
-		WeatherParams.Rain.sEvening		= rand(7);
-		WeatherParams.Rain.sNight		= rand(6);
-		WeatherParams.Rain.sTwilight 	= sti(WeatherParams.Rain.sNight);
 		WeatherParams.Rain.Type			= rand(1);							// тип дождя
 		WeatherParams.Rain.year 		= GetDataYear();
 		WeatherParams.Rain.month 		= GetDataMonth();
@@ -204,7 +202,6 @@ void Whr_SetRainExt1(int iCurWeatherNum, int iBlendWeatherNum, bool bRain)
 {
 	float 	fTime = GetTime();
 	float 	fTmp, fDuration;
-	int 	iHour = MakeInt(GetHour());
 	int 	iTmp;
 
 	if(!CheckAttribute(&WeatherParams, "Rain.StartTime")) return;
@@ -214,7 +211,7 @@ void Whr_SetRainExt1(int iCurWeatherNum, int iBlendWeatherNum, bool bRain)
 
 	if(bRain)
 	{
-		iTmp = 0;
+		iTmp = 3; // > дождь кончался на ~80%, теперь идёт на убыль до реального конца
 		if(fTime >= fTmp)														// 0 стадия - заканчиваем дождь
 		{
 			iTmp 					= 0;
@@ -322,7 +319,6 @@ void Whr_SetRainExt2(int iCurWeatherNum, int iBlendWeatherNum, bool bRain)
 {
 	float 	fTime = GetTime();
 	float 	fTmp, fDuration;
-	int 	iHour = MakeInt(GetHour());
 	int 	iTmp;
 
 	if(!CheckAttribute(&WeatherParams, "Rain.StartTime")) return;
@@ -332,7 +328,7 @@ void Whr_SetRainExt2(int iCurWeatherNum, int iBlendWeatherNum, bool bRain)
 
 	if (bRain)
 	{
-		iTmp = 4;	//по-умолчанию пятая стадия
+		iTmp = 3; // > дождь кончался на ~71%; теперь идёт на убыль до реального конца
 		if(fTime >= fTmp)														// 5 стадия - заканчиваем дождь
 		{
 			iTmp 					= 4;
@@ -448,6 +444,15 @@ void Whr_SetRainExt2(int iCurWeatherNum, int iBlendWeatherNum, bool bRain)
 //общие настройки погоды в дождь
 void Whr_SetRainBlendWeather(int iBlendWeatherNum, bool bRain)
 {
+	if (iBlendWeatherNum < 0) return;
+
+	// > Реконструкция бэкапа пресета после дождя (дождь меняет LightingLm/InsideBack, вызывая косяки с освещением),
+	if (!CheckAttribute(&Weathers[iBlendWeatherNum], "Bak"))
+	{
+		Weathers[iBlendWeatherNum].Bak.LightingLm = Weathers[iBlendWeatherNum].LightingLm;
+		Weathers[iBlendWeatherNum].Bak.InsideBack = Weathers[iBlendWeatherNum].InsideBack;
+	}
+
 	if(bRain)	//идёт лёгкий дождь?
 	{
 		Weathers[iBlendWeatherNum].Rain.NumDrops 	= 500 + rand(500);

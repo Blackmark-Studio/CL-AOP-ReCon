@@ -1,78 +1,78 @@
 SanJuan_Mayor_1 {
-你找俺有啥事？有话就问吧。
+你找我有什么事？ 有话就问吧。 
 }
 SanJuan_Mayor_2 {
-我听着呢，你想问啥？
+我听着呢， 你想问什么？ 
 }
 SanJuan_Mayor_3 {
 @<RandPhraseSimple>
 }
 SanJuan_Mayor_4 {
-你今天已经是第二次想问问题了……
+你今天已经是第二次想问问题了…… 
 }
 SanJuan_Mayor_5 {
-今天都第三次了，你又想问问题……
+今天都第三次了， 你又想问问题…… 
 }
 SanJuan_Mayor_6 {
-这到底什么时候才结束啊？！我还得管城市，还有一堆事要忙，你就一直问个不停！
+这到底什么时候才结束啊？ ！ 我还得管城市， 还有一堆事要忙， 你就一直问个不停！ 
 }
 SanJuan_Mayor_7_m {
-我改变主意了……
+我改变主意了…… 
 }
 SanJuan_Mayor_7_f {
-我改变主意了……
+我改变主意了…… 
 }
 SanJuan_Mayor_8 {
-现在不是时候，也不是地方……
+现在不是时候， 也不是地方…… 
 }
 SanJuan_Mayor_9 {
 @<RandPhraseSimple>
 }
 SanJuan_Mayor_10 {
-没错……不过现在不行，等会儿吧……
+没错…… 不过现在不行， 等会儿吧…… 
 }
 SanJuan_Mayor_11 {
-会的，会的……只是晚点……
+会的， 会的…… 只是晚点…… 
 }
 SanJuan_Mayor_12 {
-抱歉，@<GetAddress_FormToNPC>……
+抱歉， @<GetAddress_FormToNPC>…… 
 }
 SanJuan_Mayor_13 {
-@<UpperFirst>总督，我是@<GetFullName>船长。就是我在城里的教堂和寡妇Isabella Olivares（娘家姓de Valdes）结了婚。
+市长@<UpperFirst>， 我是@<GetFullName>船长。 就是我在城里的教堂和寡妇伊莎贝拉.奥利瓦雷斯（娘家姓德.瓦尔德斯）结了婚。 
 }
 SanJuan_Mayor_14 {
-你来得正是时候，Captain！我刚让指挥官去找你。既然你来了，拜托你告诉我——你到底为什么要在我们教堂里闹出那么大的血案？
+你来得正是时候， 船长！ 我刚让指挥官去找你。 既然你来了， 拜托你告诉我——你到底为什么要在我们教堂里闹出那么大的血案？ 
 }
 SanJuan_Mayor_15 {
-@<UpperFirst> @<npchar>，俺只是在保命，守住俺的尊严，还有Isabella——俺的妻子……
+@<UpperFirst>先生， 我只是在保命， 守住我的尊严， 还有伊莎贝拉——我的妻子…… 
 }
 SanJuan_Mayor_16 {
-听起来不错，船长。不过我还等着听，到底是什么事让整个城里都沸腾了！
+听起来不错， 船长。 不过我还等着听， 到底是什么事让整个城里都沸腾了！ 
 }
 SanJuan_Mayor_17 {
-@<UpperFirst> 总督，Isabella的已故丈夫——Salvador Olevares——可真不是个好东西。他留下了一堆恶行，其中还包括不少杀人案……
+市长@<UpperFirst>， 伊莎贝拉的已故丈夫——萨尔瓦多.奥利瓦雷斯——可真不是个好东西。 他留下了一堆恶行， 其中还包括不少杀人案…… 
 }
 SanJuan_Mayor_18 {
-这事我知道。Isabella从Belize回来后，来找过我，把一切都告诉我了——她是从她表哥Fernandez那儿听说的。原来救她的人就是你？
+这事我知道。 伊莎贝拉从伯利兹回来后， 来找过我， 把一切都告诉我了——她是从她表哥费尔南德斯那儿听说的。 原来救她的人就是你？ 
 }
 SanJuan_Mayor_19 {
-是的，@<GetAddress_FormToNPC>总督。我想我和Isabella一决定能结婚就立刻结了，这也不奇怪。不过那家伙Salvatore，在死之前就已经从整个加勒比海找来一帮恶棍，要把我们置于死地。
+是的， 市长@<GetAddress_FormToNPC>。 我想我和伊莎贝拉一决定能结婚就立刻结了， 这也不奇怪。 不过那家伙萨尔瓦多， 在死之前就已经从整个加勒比海找来一帮恶棍， 要把我们置于死地。 
 }
 SanJuan_Mayor_20 {
-那些雇佣兵也在教堂里？
+那些雇佣兵也在教堂里？ 
 }
 SanJuan_Mayor_21 {
-正是如此，@<GetAddress_FormToNPC>总督。我相信这次一下子消灭了这么多强盗，算是为整个地区立了大功……
+正是如此， 市长@<GetAddress_FormToNPC>。 我相信这次一下子消灭了这么多强盗， 算是为整个地区立了大功…… 
 }
 SanJuan_Mayor_22 {
-没错，Captain，情况就是这样。那现在我全明白了。看来教堂的祝圣仪式就用公款来办吧。
+没错， 船长， 情况就是这样。 那现在我全明白了。 看来教堂的祝圣仪式就用公款来办吧。 
 }
 SanJuan_Mayor_23 {
-总督，非常感谢您能理解当前的局势……
+先生， 非常感谢您能理解当前的局势…… 
 }
 SanJuan_Mayor_24 {
-处理这种事是我的职责，Captain！那就祝你和你妻子幸福，恭喜你。
+处理这种事是我的职责， 船长！ 那就祝你和你妻子幸福， 恭喜你。 
 }
 SanJuan_Mayor_25 {
-谢谢你，@<GetAddress_FormToNPC>总督！
+谢谢你， 市长@<GetAddress_FormToNPC>！ 
 }

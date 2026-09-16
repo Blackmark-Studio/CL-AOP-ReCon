@@ -183,7 +183,7 @@ Koris Gerritsz mówi, że Tartara całkiem nieźle służy Holenderskiej Kompani
 
 PDM_Lesopilka.6
 {
-Rozmawiałem z moim przyjacielem Tartarą. Opowiedział mi ciekawą rzecz. Ciężki galeon pod angielską banderą stoi na kotwicy w pobliżu wyspy Dominika. Jego takielunek i kadłub są uszkodzone. Jeśli nikt mnie nie ubiegnie, będę mógł zawładnąć jego skarbami!
+Rozmawiałem z moim przyjacielem Tartarą. Opowiedział mi ciekawą rzecz. @<sShip> pod angielską banderą stoi na kotwicy w pobliżu wyspy Dominika. Jego takielunek i kadłub są uszkodzone. Jeśli nikt mnie nie ubiegnie, będę mógł zawładnąć jego skarbami!
 }
 
 PDM_Lesopilka.6.1
@@ -380,7 +380,7 @@ Andre_Abel_Quest {Eskorta fluyta "Orion"}
 Andre_Abel_Quest.1
 {
 W tawernie w Fort-de-France spotkałem człowieka o imieniu Andre Abel. Jest kapitanem fluyta "Orion". Andre poprosił mnie, abym eskortował jego statek do Port-au-Prince, a ja się zgodziłem.
-Andre będzie czekał w porcie, a ja muszę jeszcze dokończyć swoje sprawy w mieście.
+Andre będzie czekał w tawernie, a ja muszę jeszcze dokończyć swoje sprawy w mieście.
 }
 Andre_Abel_Quest.2 {Za długo zajmowałem się własnymi sprawami. Andre najwyraźniej już znalazł sobie inną eskortę.}
 Andre_Abel_Quest.3 {Skończyłem swoje sprawy w mieście i poinformowałem André. Wypływamy natychmiast!}
@@ -429,6 +429,7 @@ ChurchGenQuest1.7_2 {Stary głupiec @<sCapName> narobił długów w tawernie i z
 ChurchGenQuest1.8 {Kolejny wpis w księdze rachunkowej: spłaciłem dług starego kaszalota na nazwisko @<sName> w tawernie, wykupiłem manuskrypty Ojca @<sColony> od karczmarza, a teraz najwyższy czas przekazać te cenne rękopisy—i moją księgę rachunkową—samemu Ojcu!}
 ChurchGenQuest1.9 {Okazuje się, że na świecie są bezinteresowni karczmarze. Pospieszę do @<sColony>, by zwrócić teologiczne rękopisy, a przy okazji opowiem historię o tym, jak pewien człowiek, spełniając ślubowanie, oddał mi te najcenniejsze księgi za darmo.}
 ChurchGenQuest1.10 {Uff... Nie spodziewałem się, że tak proste zadanie pochłonie tyle czasu i wysiłku. Jedynym jasnym punktem był bogobojny kapitan @<sCapName>, który bez wahania wręczył mi cenne manuskrypty i niemal wyrzucił mnie ze swojego gruchota. Czas wracać na @<sIsland>.}
+ChurchGenQuest1.11 {Upłynęło zbyt wiele wody. Czy to rękopisy przepadły już bez śladu, czy też ksiądz machnął na nie ręką, moje zadanie straciło jakikolwiek sens. Cóż, nie każdy dobry uczynek zostaje doprowadzony do końca.}
 ChurchGenQuest2 {Rabunek kościoła @<sCity>}
 ChurchGenQuest2.1 {Ukradli skarbiec kościelny! Do czego to doszło?! Podczas gdy ojciec @<sName> rzuca klątwy na głowy bezbożników, ja powinienem podjąć skuteczniejsze działania. Jeśli nie Pan, to przynajmniej padre na pewno mi się za to odwdzięczy... Wątpię, by mogli zajść daleko...}
 ChurchGenQuest2.2 {Mówi się w mieście, że miejscowi bandyci dorwali się do pieniędzy Pana i mieli dość rozumu, by się ukryć. Powinienem odwiedzić ich tereny łowieckie.}
@@ -912,4 +913,9 @@ Do przygotowania weź dwie butelki dobrego czerwonego wina i jedną porcję mocn
 
 Składniki: Wino (2), Rum (1).
 Narzędzia: Moździerz i tłuczek.
+}
+
+PDM_Neputyovy_kaznachey.8
+{
+Przez kasjera Victor Bretier poniósł poważne straty finansowe, a ja postanowiłem nie mieszać się w ich konflikt.
 }

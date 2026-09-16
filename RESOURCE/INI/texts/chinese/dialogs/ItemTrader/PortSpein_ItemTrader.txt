@@ -1,36 +1,36 @@
 PortSpein_ItemTrader_1 {
-什么问题？
+什么问题？ 
 }
 PortSpein_ItemTrader_2 {
-有什么事需要我帮忙，@<GetAddress_Form>?
+有什么事需要我帮忙， @<GetAddress_Form>?
 }
 PortSpein_ItemTrader_3 {
 @<RandPhraseSimple>
 }
 PortSpein_ItemTrader_4 {
-又有问题啊，@<GetAddress_Form>……
+又有问题啊， @<GetAddress_Form>…… 
 }
 PortSpein_ItemTrader_5 {
-问题真多啊……要不要来做点生意，@<GetAddress_Form>?
+问题真多啊…… 要不要来做点生意， @<GetAddress_Form>?
 }
 PortSpein_ItemTrader_6 {
-听着，咱们还要在这废话上浪费多久？
+听着， 咱们还要在这废话上浪费多久？ 
 }
 PortSpein_ItemTrader_7 {
-没问题……
+没问题…… 
 }
 PortSpein_ItemTrader_8 {
-我现在没什么可说的。
+我现在没什么可说的。 
 }
 PortSpein_ItemTrader_9 {
 @<RandPhraseSimple>
 }
 PortSpein_ItemTrader_10 {
-唉，又来了……
+唉， 又来了…… 
 }
 PortSpein_ItemTrader_11 {
-是啊，讨价还价确实更好……
+是啊， 讨价还价确实更好…… 
 }
 PortSpein_ItemTrader_12 {
-嗯，抱歉啊，商人……
+嗯， 抱歉啊， 商人…… 
 }

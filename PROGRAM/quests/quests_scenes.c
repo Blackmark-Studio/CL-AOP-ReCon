@@ -472,9 +472,9 @@ bool PerformLoopAnimation(ref chr,string action)
 {
 	switch(action)
 	{
-	case "stay":	LAi_ActorAnimation(chr, GetStayAniName(), QuestNameForChr(chr), SCENES_TIMEOUT);	return;	break;
-	case "fightStand":	LAi_ActorAnimation(chr, "fight stand_"+(rand(3)+1), QuestNameForChr(chr), SCENES_TIMEOUT);	return; break;
-	case "sit":	LAi_ActorAnimation(chr, GetSitAniName(), QuestNameForChr(chr), SCENES_TIMEOUT);	return; break;
+		case "stay":		LAi_ActorAnimation(chr, GetStayAniName(), QuestNameForChr(chr), SCENES_TIMEOUT);				return true; break;
+		case "fightStand":	LAi_ActorAnimation(chr, "fight stand_" + (rand(3) + 1), QuestNameForChr(chr), SCENES_TIMEOUT);	return true; break;
+		case "sit":			LAi_ActorAnimation(chr, GetSitAniName(), QuestNameForChr(chr), SCENES_TIMEOUT);					return true; break;
 	}
 	return LAi_ActorAnimation(chr, action, QuestNameForChr(chr), SCENES_TIMEOUT);
 }

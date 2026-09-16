@@ -76,7 +76,7 @@ bool LoadMainCharacterInFirstLocation(string location_id, string emerge_locator,
 	ReloadProgressUpdate();
 	LoadLocation(&Locations[lindex]);
 	//Fader
-	PostEvent("LoadSceneSound", 100);
+	LoadSceneSound();
 	return true;
 }
 
@@ -101,7 +101,7 @@ bool LoadMainCharacterInFirstLocationGroup(string location_id, string sGroup, st
 	ReloadProgressUpdate();
 	LoadLocation(&Locations[lindex]);
 	//Fader
-	PostEvent("LoadSceneSound", 100);
+	LoadSceneSound();
 	return true;
 }
 
@@ -122,7 +122,6 @@ int Reload(aref reload_group, string locator_name, string current_location)
 {		
 	SetTimeScale(1.0); // Фикс ломающегося фейдера при смене локации на ускоренном времени 
 	//EmptySelectedTutorials();
-	SetReloadNextTipsImage();
 	dialogDisable = true;
 	reload_xaddress.active = "false";
 	//Trace("locator_name = " + locator_name + " lockedReloadLocator = " + lockedReloadLocator);
@@ -295,94 +294,8 @@ int Reload(aref reload_group, string locator_name, string current_location)
 
 void ReloadStartFade()
 {
-	bool bResetSound = true; // > в локах одинакового типа звук можно не сбрасывать
-	DeleteAttribute(&TEV, "Music.KeepPlaying");
-
-	if (HasAttrValue(&InterfaceStates, "ContinuousMusic", "1"))
-	{
-		if (CheckAttribute(&TEV, "Music.ForceKeepPlaying"))
-			TEV.Music.KeepPlaying = "";
-		else
-		{
-			bool bOk = LAi_grp_alarmactive && !LAi_boarding_process && !CheckAttribute(pchar, "GenQuestFort.StartAttack");
-
-			// KZ > идея непрерывной музыки реквизирована из ЧМ для КС от Cheatsurfer
-			if (!bOk && reload_location_index >= 0 && reload_cur_location_index >= 0)
-			{
-				ref rLocIn = &locations[reload_location_index];
-				ref rLocOut = &locations[reload_cur_location_index];
-
-				if (CheckAttribute(&TEV, "Music.CurrentTrack") && CheckAttributeEx(rLocOut, "type,id.label", "&") && CheckAttributeEx(rLocIn, "type,id.label", "&"))
-				{
-					if (bSeaActive)
-					{
-						if (HasAttrValue(&InterfaceStates, "ContinuousMusic.Ship", "1") && rLocIn.type == rLocOut.type && !HasStr(rLocOut.id.label, "Boarding deck"))
-						{
-							bResetSound = false;
-							TEV.Music.KeepPlaying = "";	// > на корабле
-						}
-					}
-					else
-					{
-						if (reload_cur_location_index == reload_location_index)
-						{
-							if (or(CheckAttribute(rLocOut, "lockWeather") && rLocOut.lockWeather == "Inside", CheckAttribute(rLocOut, "QuestlockWeather") && rLocOut.QuestlockWeather == "23 Hour"))
-							{
-								bResetSound = false;
-								TEV.Music.KeepPlaying = "";	// > перезагрузка локации
-							}
-						}
-						else if (HasAttrValue(&InterfaceStates, "ContinuousMusic.Jungle", "1") && rLocOut.type == "jungle")
-						{
-							if (rLocIn.type == rLocOut.type && !HasStrEx(rLocIn.id.label, "Graveyard,Village", "|") && !HasStrEx(rLocOut.id.label, "Graveyard,Village", "|"))
-							{
-								bResetSound = false;
-								TEV.Music.KeepPlaying = "";	// > джунгли
-							}
-						}
-						else if (StrStartsWith(rLocOut.id.label, "Tavern") && StrStartsWith(rLocIn.id.label, "Tavern"))
-							TEV.Music.KeepPlaying = "";		// > таверна и комната отдыха // TODO KZ > добавить комнатам при тавернах амбиент приглушённых звуков из зала
-						else if (or(rLocOut.id.label == "Store" && !HasStrEx(rLocIn.id.label, "portoffice,tavern", "|"), rLocIn.id.label == "Store" && !HasStrEx(rLocOut.id.label, "portoffice,tavern", "|")))
-						{
-							if (or(rLocOut.type == "Shop" && rLocIn.type == "House" && !CheckAttribute(rLocIn, "brothel") && !HasStr(rLocOut.id.label, "Brothel"), rLocOut.type == "House" && rLocIn.type == "Shop") && !CheckAttribute(rLocOut, "brothel") && !HasStr(rLocIn.id.label, "Brothel"))
-								TEV.Music.KeepPlaying = "";	// > магазин, склад магазина
-						}
-						else if (rLocOut.id.label == "portoffice" && rLocIn.id.label == "portoffice")
-						{
-							bResetSound = false;
-							TEV.Music.KeepPlaying = "";		// > портовое управление Санто-Доминго
-						}
-						else if (HasAttrValue(&InterfaceStates, "ContinuousMusic.House", "1") && HasStrEx(rLocOut.type, "Ascold,house", "|") && HasStrEx(rLocIn.type, "Ascold,house", "|") && !HasStrEx(rLocIn.id, "PortOffice,brothel,Brothel_room,SecBrRoom", "|") && !HasStrEx(rLocOut.id, "PortOffice,brothel,Brothel_room,SecBrRoom", "|"))
-						{
-							bResetSound = false;
-							TEV.Music.KeepPlaying = "";		// > дома и комнаты в них
-						}
-						else if (rLocOut.type == "residence" && rLocIn.type == "residence")
-						{
-							bResetSound = false;
-							TEV.Music.KeepPlaying = "";		// > резиденция Виллемстада
-						}
-						else if (StrStartsWith(rLocOut.id.label, "Packhouse") && StrStartsWith(rLocIn.id.label, "Packhouse"))
-							TEV.Music.KeepPlaying = "";		// > пакгаус, офис пакгауса
-						else if (HasStr(rLocOut.id, "_Bank") && HasStr(rLocIn.id, "_Bank"))
-						{
-							bResetSound = false;
-							TEV.Music.KeepPlaying = "";		// > банк, хранилище банка
-						}
-						else if (HasAttrValue(&InterfaceStates, "ContinuousMusic.Brothel", "1") && HasStrEx(rLocOut.id, "brothel,Brothel_room,SecBrRoom", "|") && HasStrEx(rLocIn.id, "brothel,Brothel_room,SecBrRoom", "|"))
-							TEV.Music.KeepPlaying = "";		// > бордель
-						else if (HasAttrValue(&InterfaceStates, "ContinuousMusic.LSC", "1") && HasStrEx(rLocOut.type, "LostShipsCity,LSC_inside", "|") && !HasStr(rLocIn.type, "underwater") && !HasStr(rLocOut.type, "underwater"))
-							TEV.Music.KeepPlaying = "";		// > улица и помещения ГПК
-						else if (or(rLocOut.id == "Secret_Fort", rLocIn.id == "Secret_Fort") && or(rLocOut.id == "Secret_Fort_ammo", rLocIn.id == "Secret_Fort_ammo"))
-							TEV.Music.KeepPlaying = "";		// > форт в джунглях и старый арсенал
-					}
-				}
-			}
-		}
-	}
-
-	//if (bResetSound) // KZ > TODO > галочку в опции
-		ResetSound();
+	KZ|MusicKeepOnReload();
+	ResetSound();
 
 	DelEventHandler("FaderEvent_StartFade", "ReloadStartFade");
 	//Trace("ReloadStartFade");
@@ -421,11 +334,13 @@ void ReloadStartFade()
 
 void ReloadEndFade()
 {
+	ReloadProgressStart();
     EmptyAllFantomCharacter(); // fix место тут!!!! а не выше, вот вам и баги по квестам, блин boal
+	ReloadProgressUpdate();
     PGG_DailyUpdate();
     Siege_DailyUpdate();//homo осады 05/11/06
+	ReloadProgressUpdate();
 	dialogDisable = false;
-	ReloadProgressStart();
 	DelEventHandler("FaderEvent_EndFade", "ReloadEndFade");
 	//Trace("ReloadEndFade");
 	ReloadProgressUpdate();
@@ -441,6 +356,7 @@ void ReloadEndFade()
 		else
 		{
 			//To sea
+			ResetPartyPerksOnTransition(true);
 			ReloadToSea(reload_island_index, reload_locator_ref);
 		}
 	}
@@ -458,10 +374,18 @@ void ReloadEndFade()
 			ReloadToSea(reload_island_index, reload_locator_ref);
 		}
 	}
+	ReloadProgressUpdate();
+	LoadSceneSound();
+	SetEventHandler("FaderEvent_EndFadeIn", "ReloadEndFadeIn", 0);
 	SendMessage(&reload_fader, "lfl", FADER_IN, RELOAD_TIME_FADE_IN, true);
-	PostEvent("LoadSceneSound", 100);
 	ReloadProgressUpdate();
 	ReloadProgressEnd();
+}
+
+void ReloadEndFadeIn()
+{
+	DelEventHandler("FaderEvent_EndFadeIn", "ReloadEndFadeIn");
+	PostEvent("ReloadEndFadeIn_OnEnd", 0);
 }
 
 string FindEmergeLocator(ref rObject, string emerge_str)
@@ -786,9 +710,10 @@ int GetLoadingPicsNum(string sImage)
 string GetRandomLoadingPic(string sImage)
 {
 	string res = sImage;
-	if(GetLoadingPicsNum(res) > 1)
+	int iImagesQty = GetLoadingPicsNum(res);
+	if(iImagesQty > 1)
 	{
-		res = strcut(res, 0, strlen(res)-5) + "_" + rand(GetLoadingPicsNum(res) - 1) + ".tga";
+		res = strcut(res, 0, strlen(res)-5) + "_" + rand(iImagesQty - 1) + ".tga";
 	}
 	return res;
 }

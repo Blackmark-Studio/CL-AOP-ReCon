@@ -714,21 +714,21 @@ void CalculateInfoDataF1()
 	Statistic_AddValue(PChar, "Cheats.F1", 1);
 }
 
-string descF2 = "CustomButton";
+string descF2 = "Получить текущие корды";
 void CalculateInfoDataF2()
 {
-	totalInfo = descF2;
+    totalInfo = descF2;
 
+    float x, y, z;
+    GetCharacterPos(pchar, &x, &y, &z);
 
+    Log_Info("POS: " + pchar.location + " | x=" + x + " y=" + y + " z=" + z);
+    trace("POS: " + pchar.location + " | x=" + x + " y=" + y + " z=" + z);
 
-
-
-    totalInfo = totalInfo + NewStr() + NewStr() +
-                "Команда отработала успешно!";
-    SetFormatedText("DEBUGER_INFO",totalInfo);
+    LAi_SetPlayerType(pchar);
 
     ProcessCancelExit();
-    
+
     // Статистика по читам
     Statistic_AddValue(PChar, "Cheats.F2", 1);
 }
@@ -771,23 +771,31 @@ void CalculateInfoDataF3()
   		{
 			GetCharacterPos(GetMainCharacter(), &locx, &locy, &locz);
 			totalInfo = totalInfo + "id = " + mc.location + NewStr() + " (x,y,z)= "+locx + ", " +locy + ", "+locz;
+			trace(" (x,y,z)= "+locx + ", " +locy + ", "+locz);
+			trace("id = " + mc.location);
 			totalInfo = totalInfo + NewStr() + "filespath.models = " + loadedLocation.filespath.models;
+			trace("filespath.models = " + loadedLocation.filespath.models);
 			totalInfo = totalInfo + NewStr() + "image = " + loadedLocation.image;
+			trace("image = " + loadedLocation.image);
 			totalInfo = totalInfo + NewStr() + "models.locators = " + loadedLocation.models.always.locators;
+			trace("models.locators = " + loadedLocation.models.always.locators);
 			
 			if(CheckAttribute(LoadedLocation, "islandId"))
 			{
 				totalInfo = totalInfo + NewStr() + "Остров (islandId): " + LoadedLocation.islandId;
+				trace("Остров (islandId): " + LoadedLocation.islandId);
 			}
 			
 			if(CheckAttribute(LoadedLocation, "islandIdAreal"))
 			{
 				totalInfo = totalInfo + NewStr() + "Ареал (islandIdAreal): " + LoadedLocation.islandIdAreal + NewStr() + "Город: " + GetCityNameByLocation(LoadedLocation);
+				trace("Ареал (islandIdAreal): " + LoadedLocation.islandIdAreal);
 			}
 			
 			if(CheckAttribute(LoadedLocation, "townsack"))
 			{
 				totalInfo = totalInfo + NewStr() + "townsack = " + LoadedLocation.townsack;
+				trace("townsack = " + LoadedLocation.townsack);
 			}
 		}
 	}
@@ -1423,28 +1431,58 @@ void CalculateInfoDataF18()
 	Statistic_AddValue(PChar, "Cheats.F18", 1);
 }
 
-string descF19 = "Офицеру-шкиперу +1 ранг (35 очков скилов)";
+string descF19 = "Заспавнить случайного NPC рядом с ГГ";
+
 void CalculateInfoDataF19()
 {
+    ref sld;
+    float x, y, z;
+    string model, id;
     totalInfo = descF19;
-	// -->
-    if (sti(pchar.Fellows.Passengers.navigator) != -1)
-	{
-	    ref chr = GetCharacter(sti(pchar.Fellows.Passengers.navigator));
-
-    	chr.Skill.FreeSkill  = sti(chr.Skill.FreeSkill) + 35;
-    }
-    else
+    GetCharacterPos(pchar, &x, &y, &z);
+    switch (rand(7))
     {
-        totalInfo = "Нет офицера";
+        case 0: model = "citiz_1"; break;
+        case 1: model = "citiz_2"; break;
+        case 2: model = "citiz_3"; break;
+        case 3: model = "citiz_4"; break;
+        case 4: model = "citiz_5"; break;
+        case 5: model = "citiz_6"; break;
+        case 6: model = "citiz_7"; break;
+        case 7: model = "citiz_8"; break;
     }
-    // <--
+    id = "AoP_TesT_" + rand(999999);
+    sld = GetCharacter(NPC_GenerateCharacter(id, model, "man", "man", 10, PIRATE, 0, true));
+    sld.name = "Случайный";
+    sld.lastname = "моряк";
+    LAi_SetWarriorType(sld);
+    LAi_group_MoveCharacter(sld, LAI_GROUP_PLAYER);
+    ChangeCharacterAddressGroup(sld, pchar.location, "goto", "goto1");
+    TeleportCharacterToPos(sld, x + 1.5, y, z + 1.5);
     totalInfo = totalInfo + NewStr() + NewStr() +
+                "NPC создан: " + id + NewStr() +
+                "Модель: " + model + NewStr() +
+                "Локация: " + pchar.location + NewStr() +
+                "Координаты ГГ: x=" + x + " y=" + y + " z=" + z + NewStr() + NewStr() +
                 "Команда отработала успешно!";
-    SetFormatedText("DEBUGER_INFO",totalInfo);
-    
-	// Статистика по читам
-	Statistic_AddValue(PChar, "Cheats.F19", 1);
+    SetFormatedText("DEBUGER_INFO", totalInfo);
+    Log_Info("Заспавнен НПС: " + id);
+    trace("Заспавнен НПС: " + id + " loc=" + pchar.location + " x=" + x + " y=" + y + " z=" + z);
+	/* //Офицеру-шкиперу +1 ранг (35 очков скилов) -->
+	if (sti(pchar.Fellows.Passengers.navigator) != -1)
+	{
+		ref chr = GetCharacter(sti(pchar.Fellows.Passengers.navigator));
+
+		chr.Skill.FreeSkill  = sti(chr.Skill.FreeSkill) + 35;
+	}
+	else
+	{
+		totalInfo = "Нет офицера";
+	}
+	*/
+	// <--
+    // Статистика по читам
+    Statistic_AddValue(PChar, "Cheats.F19", 1);
 }
 
 string descF20 = "Обновление света на маяках";
@@ -2285,9 +2323,10 @@ void GetRealCoordsObjects()
 	trace("Shore_ship1 (бухта Разбитого Корыта) : " + Map_GetRealCoordX(968.947) + " " + Map_GetRealCoordZ(923.636));		
 	trace("---------");
 	trace("Maracaibo (areal) 					: " + Map_GetRealCoordX(178.51) + " " + Map_GetRealCoordZ(-870.37));		
-	trace("Маракайбо 							: " + Map_GetRealCoordX(134.82) + " " + Map_GetRealCoordZ(-939.65));		
-	trace("Shore37 (бухта Гуахира)				: " + Map_GetRealCoordX(140.753) + " " + Map_GetRealCoordZ(-828.99));		
-	trace("Shore_ship3 (мыс Несбывшихся Надежд)	: " + Map_GetRealCoordX(198.162) + " " + Map_GetRealCoordZ(-994.035));		
+	trace("Маракайбо 							: " + Map_GetRealCoordX(134.82) + " " + Map_GetRealCoordZ(-939.65));
+	trace("Shore37 (бухта Гуахира)				: " + Map_GetRealCoordX(140.753) + " " + Map_GetRealCoordZ(-828.99));
+	trace("Гибралтар 							: " + Map_GetRealCoordX(209.471) + " " + Map_GetRealCoordZ(-982.445));
+	trace("Shore_ship3 (мыс Несбывшихся Надежд)	: " + Map_GetRealCoordX(226.384) + " " + Map_GetRealCoordZ(-852.491));
 	trace("---------");
 	trace("Beliz (areal) 						: " + Map_GetRealCoordX(-896.084) + " " + Map_GetRealCoordZ(230.227));		
 	trace("Shore_ship2 (залив Гибели)			: " + Map_GetRealCoordX(-1022.94) + " " + Map_GetRealCoordZ(629.355));		
@@ -2402,4 +2441,8 @@ void GetRealCoordsObjects()
 	trace("Shore61 (Тепейакак) 					: " + Map_GetRealCoordX(-955.553) + " " + Map_GetRealCoordZ(-281.197));
 	trace("Shore62 (Истапалапу)					: " + Map_GetRealCoordX(-935.811) + " " + Map_GetRealCoordZ(-316.162));
 	trace("---------");	
+	trace("Аруба 								: " + Map_GetRealCoordX(578.37) + " " + Map_GetRealCoordZ(-166.772));
+	trace("Shore67 (бухта Бока Принс)			: " + Map_GetRealCoordX(582.122) + " " + Map_GetRealCoordZ(-188.992));
+	trace("Shore68 (залив Паарден)				: " + Map_GetRealCoordX(590.987) + " " + Map_GetRealCoordZ(-149.774));
+	trace("---------");
 }

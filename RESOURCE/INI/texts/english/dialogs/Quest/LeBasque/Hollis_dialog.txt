@@ -1,0 +1,96 @@
+Hollis_dialog_1 {
+Captain @<pchar>. My sergeants report that you requested an urgent audience on a matter of exceptional importance to the security of Port Royal. I'm listening.
+}
+Hollis_dialog_2 {
+It concerns the Spaniards, Commander Hollis. Look at these papers. Intercepted instructions from a high-ranking don. They give the exact coordinates of Sebastian Rojas's camp. Fifty mercenaries are digging in in your jungle as we speak.
+}
+Hollis_dialog_3 {
+Remarkable... Two miles from the pass. Excellent work, Captain! My scouts have worn themselves out looking for that nest. But you brought these coordinates to me rather than the Governor-General. I assume you have a specific proposal?
+}
+Hollis_dialog_4 {
+Exactly. I have my own score to settle with Rojas, and I want his head. But charging a fortified camp with one boarding company would simply bury my men. I need support from your musketeers. We strike together.
+}
+Hollis_dialog_5 {
+A joint military operation. That sounds... eminently sensible. My marksmen will provide covering fire and pin down the Spaniards while your, ahem... soldiers storm the camp. The Crown's priority right now is to rid the island of this infection.
+}
+Hollis_dialog_6_m {
+Glad we understand each other. If it suits you, we move out tomorrow evening.
+}
+Hollis_dialog_6_f {
+Glad we understand each other. If it suits you, we move out tomorrow evening.
+}
+Hollis_dialog_7 {
+One condition, Captain. All captured ammunition, treasury funds, and colors go to the garrison; personal trophies are divided fairly. And I expect iron discipline from your crew. We are a regular army, not a rabble waving bits of iron.
+}
+Hollis_dialog_8 {
+My men know their business, Commander Hollis. No looting beyond the agreement. We're fighting the same fight.
+}
+Hollis_dialog_9 {
+Then we have a deal. My men will wait for you on the approaches to the coordinates marked in those papers. Prepare your crew.
+}
+Hollis_dialog_10 {
+See you on the battlefield.
+}
+Hollis_dialog_11_m {
+My sergeants tell me some captain is demanding to see me and promising to hand me a Spanish camp on a platter. You have one minute, sir, to prove you're not wasting my time. Where are they?
+}
+Hollis_dialog_11_f {
+My sergeants tell me some captain is demanding to see me and promising to hand me a Spanish camp on a platter. You have one minute, madam, to prove you're not wasting my time. Where are they?
+}
+Hollis_dialog_12 {
+Look at these papers, Commander Hollis. Intercepted instructions taken from the strongbox of a high-ranking Spaniard. They give the exact coordinates of Don Sebastian Rojas's camp. Fifty mercenaries are digging in in your jungle as we speak.
+}
+Hollis_dialog_13 {
+Damn it... Two miles from the pass. How did they even haul equipment in there?! Fifty bayonets... And I assume, Captain, you didn't come to me out of love for the English Crown. Why do you need the garrison?
+}
+Hollis_dialog_14 {
+Because I don't want to carpet those jungles with my men's corpses in a frontal assault. Your soldiers won't like that camp either, especially if those mercenaries join forces with the Dutch from Fort Orange. I want Rojas's head. We strike together... Your famous redcoats provide the firepower, my men storm the camp.
+}
+Hollis_dialog_15 {
+Spanish mercenaries. In my jungle. And you're proposing an alliance with a free captain to smoke them out... You know what? To hell with politics. An infection is an infection. I'll bring you a company of soldiers and my best trackers as reinforcement.
+}
+Hollis_dialog_16 {
+A sensible decision. We move out tomorrow evening.
+}
+Hollis_dialog_17 {
+But understand this... All captured ammunition, treasury funds, and colors go to the garrison; personal trophies are divided fairly. And if even one of your lads puts his hand into the King of England's pocket, I'll personally hang him from the nearest palm beside the Spaniards.
+}
+Hollis_dialog_18 {
+Agreed, Commander Hollis. For the moment we're both on the side of the angels. Strange feeling, isn't it?
+}
+Hollis_dialog_19 {
+Don't get used to it, Captain. It'll pass by dawn the day after tomorrow. My men will wait for you on the approaches to the coordinates marked in those papers. Don't be late. Go.
+}
+Hollis_dialog_20 {
+See you on the battlefield.
+}
+Hollis_dialog_21 {
+This damned Jamaican rain... If it doesn't stop within half an hour, the powder in the priming pans will be soaked through and my soldiers will have to beat the Spaniards to death with their musket stocks. Where is your man, Captain? My scouts report it's still quiet behind the palisade.
+}
+Hollis_dialog_22 {
+Jaco is already inside, Commander Hollis. Patience. Silver is every mercenary's weak spot. Give them time to realize Don Rojas means to leave them empty-handed.
+}
+Hollis_dialog_23 {
+I hope your man knows how to sell the story. The success of the operation depends on him. My men are in position. Better yet, we managed to bring a couple of mortar crews from the arsenal. As soon as discord breaks out inside, we'll cover them with lead and fire. If the plan fails...
+}
+Hollis_dialog_24 {
+It won't. Just keep your muskets dry and wait for my signal.
+}
+Hollis_dialog_25 {
+Hear that? I think it's started!
+}
+Hollis_dialog_26 {
+Jaco kicked the hornet's nest! Now, Hollis. Have your men cover us with fire. Attack!
+}
+Hollis_dialog_27 {
+Captain, accept my congratulations. The operation was executed brilliantly. Your men fought like demons!
+}
+Hollis_dialog_28 {
+Your men matched mine in courage and skill, Commander Hollis. What do you intend to do with the camp?
+}
+Hollis_dialog_29 {
+I'll order my men to put this vultures' nest to the torch. We'll burn it to the ground so no one ever thinks of settling here again.
+}
+Hollis_dialog_30 {
+Very well, get to it. We have to leave you now - other business. Farewell, Commander.
+}

@@ -982,3 +982,9 @@ Ah, vejo que você não está sozinho! Muito bem — terá companhia no inferno!
 Habitue_dialog_295 {
 @<RandPhraseSimple>
 }
+Habitue_dialog_296 {
+Garota, traga-me mais uma bebida.
+}
+Habitue_dialog_297 {
+Vai ficar sem.
+}

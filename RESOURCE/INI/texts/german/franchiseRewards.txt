@@ -1,0 +1,27 @@
+condition_subscribeItem
+{
+Ein kleines Notizbuch voller kurzer, aber wichtiger Tipps. Eines Tages hast du es einfach zwischen deinen Sachen gefunden, und seitdem trennst du dich nicht mehr davon.
+}
+condition_legendGuide
+{
+Dieser Gegenstand wird im Spiel erscheinen, wenn du der Seite folgst:
+Caribbean Legend
+}
+condition_indian_officer
+{
+Dieser Quest-Offizier erscheint in Askolds Questreihe (Start: „Suche nach dem Mumienpulver“), wenn du Folgendes besitzt:
+Caribbean Legend oder in frühen Spieltests den Erfolg „Härter als Eisen“ erhalten hast.
+}
+indian_officer_desc
+{
+Der Muskogee-Indianer Tichingitu und seine Ahnenmuskete werden dich in dem harten Korsarenhandwerk unterstützen.
+~
+Dieser unübertroffene Meisterschütze ist bereit, einen Treueschwur abzulegen, der härter als Eisen ist, sobald du ihn aus dem Kerker befreist, in den er durch reinen Zufall geraten ist.
+}
+noRewardYetMessage
+{
+Diese Belohnung gibt es noch nicht,
+bleib dran für Updates!
+}
+steamButtonAlreadyGot {Erhalten}
+steamButtonGet {Einlösen}

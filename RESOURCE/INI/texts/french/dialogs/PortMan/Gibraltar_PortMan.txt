@@ -1,0 +1,39 @@
+Gibraltar_PortMan_1 {
+Quelles questions?
+}
+Gibraltar_PortMan_2 {
+Que puis-je faire pour vous, @<GetAddress_Form>?
+}
+Gibraltar_PortMan_3 {
+@<RandPhraseSimple>
+}
+Gibraltar_PortMan_4 {
+Il n’y a pas longtemps, tu as essayé de me poser une question @<GetAddress_Form>...
+}
+Gibraltar_PortMan_5 {
+C’est la troisième fois aujourd’hui que tu parles de ce sujet…
+}
+Gibraltar_PortMan_6 {
+Écoutez, si vous n’êtes pas ici pour des affaires du port, il vaut mieux ne pas me déranger avec vos questions.
+}
+Gibraltar_PortMan_7_m {
+J’ai changé d’avis...
+}
+Gibraltar_PortMan_7_f {
+J’ai changé d’avis...
+}
+Gibraltar_PortMan_8 {
+Je n'ai rien à dire pour l'instant.
+}
+Gibraltar_PortMan_9 {
+@<RandPhraseSimple>
+}
+Gibraltar_PortMan_10 {
+Hmm, il s’est passé quelque chose avec ma mémoire...
+}
+Gibraltar_PortMan_11 {
+Oui, vraiment, pour la troisième fois...
+}
+Gibraltar_PortMan_12 {
+Désolé, mais les affaires du port ne m’intéressent pas pour le moment.
+}

@@ -6,6 +6,8 @@ void CreateCitizens(aref loc)
 {
 	if (loc.type != "town" && loc.type != "church" && loc.type != "residence") return; //городской генератор не должен отрабатывать везде
 	if (LAi_IsCapturedLocation) return; // fix нефиг грузить, когда город трупов или боевка
+	// ле Баск, шестой квест.
+	if (CheckAttribute(loc, "AoP.KeysLagoonEmpty")) return;
 	
 	int iColony = -1;
 	int iNation = -1;
@@ -27,10 +29,12 @@ void CreateCitizens(aref loc)
 	int iSailorQty, iContraQty, iCommonerQty, iCitizQty, iNobleQty, iGipsyQty, iMonkQty;
 	ref chr;
 	int iChar, i, iSex;
+	int iRandQuest;
 	bool bOk;
 	bool pirate_town = iNation == PIRATE && !sti(Colonies[iColony].HeroOwn);
 	string slai_group, locatorName, sType;
     slai_group = GetNationNameByType(iNation) + "_citizens";
+	string sModel, sSex, sAnimation, sGr;
 
 	// нищие -->
 	if (loc.type == "town")
@@ -355,9 +359,8 @@ void CreateCitizens(aref loc)
 	}
 	// грузчики <--
 	//--> возможная генерация квестодателя на розыск капитанов
-	if (GetCharacterIndex(colonies[iColony].id + "_Priest") && CheckAttribute(loc, "questSeekCap") && GetCharacterIndex("QuestCitiz_" + loc.fastreload) == -1)
+	if (GetCharacterIndex(colonies[iColony].id + "_Priest") >= 0 && CheckAttribute(loc, "questSeekCap") && GetCharacterIndex("QuestCitiz_" + loc.fastreload) == -1)
 	{
-		string sModel, sSex, sAnimation, sGr;	
 		if (rand(1))
 		{
 			sModel = "citiz_"+(rand(9)+11);
@@ -372,57 +375,12 @@ void CreateCitizens(aref loc)
 			sAnimation = "towngirl";
 			sGr = "Gr_Woman_Citizen";
 		}
-		// evganat - генераторы
-		Log_TestInfo("Зашли на генерацию, пол "+sSex);
-		int iQuest = 7; // = 111
-		int iRandQuest = rand(2); // fix - если свич в iQuest не отработает
-		string sQuest;
-		if(CheckAttribute(pchar, "questTemp.SeekCap"))
-		{
-			aref arQSeekCap, arSeekCap;
-			makearef(arQSeekCap, pchar.questTemp.SeekCap);
-			int n = GetAttributesNum(arQSeekCap);
-			Log_TestInfo("Зашли в иф, количество квестов "+n+", iQuest "+iQuest);
-			for(i=0; i < n; i++)
-			{
-				arSeekCap = GetAttributeN(arQSeekCap, i);
-				sQuest = GetAttributeValue(arSeekCap);
-				if(sSex == "man")
-				{
-					switch(sQuest)
-					{
-						case "slave":		iQuest = and(iQuest,3);	break; // &= 011
-						case "rapewife":	iQuest = and(iQuest,5);	break; // &= 101
-						case "friend":		iQuest = and(iQuest,6);	break; // &= 110
-					}
-				}
-				else
-				{
-					switch(sQuest)
-					{
-						case "husband":		iQuest = and(iQuest,3);	break;
-						case "revenge":		iQuest = and(iQuest,5);	break;
-						case "pirates":		iQuest = and(iQuest,6);	break;
-					}
-				}
-				Log_TestInfo("Проход номер "+i+", обнаружен квест "+sQuest+" теперь iQuest "+iQuest);
-			}
-			switch(iQuest)
-			{
-				case 7:	iRandQuest = rand(2);	break;
-				case 6:	iRandQuest = rand(1);	break;
-				case 5:	iRandQuest = rand(1)*2;	break;
-				case 3:	iRandQuest = rand(1)+1;	break;
-				case 2:	iRandQuest = 1;			break;
-				case 1:	iRandQuest = 2;			break;
-				case 4:	iRandQuest = 0;			break;
-			}
-			Log_TestInfo("Расчёт окончен, итоговый iRandQuest "+iRandQuest);
-		}
-		if(iQuest > 0)
+
+		iRandQuest = GetSeekCapRandomQuest_Citizen(sSex);
+		if(iRandQuest != -1)
 		{
 			Log_TestInfo("Выдаём квест");
-			chr = GetCharacter(NPC_GenerateCharacter("QuestCitiz_"+loc.fastreload, sModel, sSex, sAnimation, 10, iNation, -1, false));
+			chr = GetCharacter(NPC_GenerateCharacter("QuestCitiz_"+loc.fastreload, sModel, sSex, sAnimation, 10, iNation, 2, false));
 			chr.city = loc.fastreload;
 			chr.dialog.filename   = "Quest\ForAll_dialog.c";
 			chr.dialog.currentnode = "SCQ_" + sSex;
@@ -553,11 +511,15 @@ void CreateCitizens(aref loc)
 						chr.greeting = "noble_male";
 						if (GetCharacterIndex(chr.city + "_Priest") >= 0 && rand(11) > 9 && GetCharacterIndex("QuestCitiz_" + loc.fastreload) == -1)
 						{	//поисковый генератор
-							chr.id = "QuestCitiz_" + loc.fastreload;
-							chr.dialog.filename = "Quest\ForAll_dialog.c";
-							chr.dialog.currentnode = "SCQ_Nobleman";
-							chr.talker = rand(3);
-							chr.quest.SeekCap.numQuest = rand(1);
+							iRandQuest = GetSeekCapRandomQuest_Nobleman();
+							if(iRandQuest != -1)
+							{
+								chr.id = "QuestCitiz_" + loc.fastreload;
+								chr.dialog.filename = "Quest\ForAll_dialog.c";
+								chr.dialog.currentnode = "SCQ_Nobleman";
+								chr.talker = rand(3);
+								chr.quest.SeekCap.numQuest = iRandQuest;
+							}
 						}
 						if (rand(11) < 2) //пассажирский генератор
 						{
@@ -736,6 +698,58 @@ void CreateCitizens(aref loc)
 			}
 		}
 	}
+	// пьяницы, сидящие на земле -->
+	if (CheckAttribute(loc, "locators.drinkersit"))
+	{
+		makearef(st, loc.locators.drinkersit);
+		iSailorQty = GetAttributesNum(st);
+		for (i = 1; i <= iSailorQty; i++)
+		{
+			iChar = NPC_GeneratePhantomCharacter("drinker", iNation, MAN, 2);
+			if (iChar == -1) continue;
+			chr = &characters[iChar];
+			SetNPCModelUniq(chr, "drinker", MAN);
+			chr.City = Colonies[iColony].id;
+			RemoveAllCharacterItems(chr, true);
+			chr.CityType = "citizen";
+			chr.chr_ai.hp_max = 1;
+			chr.chr_ai.hp = 1;
+			MakeUnpushable(chr, true);
+			LAi_SetLoginTime(chr, 18.29, 23.99);
+			LAi_SetDrinkerSitTypeNoGroup(chr);
+			ChangeCharacterAddressGroup(chr, loc.id, "drinkersit", "drinkersit" + i);
+			if (sti(Colonies[iColony].HeroOwn)) LAi_group_MoveCharacter(chr, LAI_GROUP_PLAYER_OWN);
+			else LAi_group_MoveCharacter(chr, slai_group);
+		}
+	}
+	// пьяницы, сидящие на земле <--
+
+	// пьяницы стоячие -->
+	if (CheckAttribute(loc, "locators.drinkerstay"))
+	{
+		makearef(st, loc.locators.drinkerstay);
+		iSailorQty = GetAttributesNum(st);
+		for (i = 1; i <= iSailorQty; i++)
+		{
+			iChar = NPC_GeneratePhantomCharacter("drinker", iNation, MAN, 2);
+			if (iChar == -1) continue;
+			chr = &characters[iChar];
+			SetNPCModelUniq(chr, "drinker", MAN);
+			chr.City = Colonies[iColony].id;
+			RemoveAllCharacterItems(chr, true);
+			chr.CityType = "citizen";
+			chr.chr_ai.hp_max = 1;
+			chr.chr_ai.hp = 1;
+			MakeUnpushable(chr, true);
+			LAi_SetLoginTime(chr, 18.29, 23.99);
+			LAi_SetDrinkerStayTypeNoGroup(chr);
+			ChangeCharacterAddressGroup(chr, loc.id, "drinkerstay", "drinkerstay" + i);
+			if (sti(Colonies[iColony].HeroOwn)) LAi_group_MoveCharacter(chr, LAI_GROUP_PLAYER_OWN);
+			else LAi_group_MoveCharacter(chr, slai_group);
+		}
+	}
+	// пьяницы стоячие <--
+
 	// горожане <--
 }
 
@@ -1199,6 +1213,43 @@ void CreateIncquisitio(aref loc)
 		}
 	}
 }
+// заполнение адмиралтейства
+void CreateAdmiralty(aref loc)
+{	
+	if (GetCityNation("SantoDomingo") != SPAIN) return; 
+	
+	if (CheckAttribute(loc, "Admiralty"))
+	{
+		ref sld;
+		string LocatorGroup, LocatorName;
+		int i, nSit;
+		//====> накидаем солдат.
+		if (CheckNPCQuestDate(loc, "Admiralty_date"))
+		{
+			SetNPCQuestDate(loc, "Admiralty_date");
+			arrayNPCModelHow = 0;
+			for (i=1; i<=2; i++)
+			{
+				sld = GetCharacter(NPC_GenerateCharacter("AdmiraltyGuard_"+i, "elite_spa_"+(rand(2)+1), "man", "man", 35, SPAIN, 1, true));
+				SetNPCModelUniq(sld, "elite_spa", MAN);
+				sld.City = "SantoDomingo";
+				sld.CityType = "soldier";
+				LAi_LoginInCaptureTown(sld, true);
+				FantomMakeCoolFighter(sld, sti(pchar.rank)+MOD_SKILL_ENEMY_RATE+15, 100, 90, BLADE_LONG, "pistol3", 200); //спецназ
+				LAi_SetLoginTime(sld, 0.0, 24.0);
+				LAi_SetGuardianType(sld);
+				LAi_group_MoveCharacter(sld, "SPAIN_CITIZENS");	
+				locatorName = PlaceCharacter(sld, "soldiers", "random");
+				if (locatorName == "soldier1")
+				{
+					sld.protector.CheckAlways = true; //проверять всегда
+				}
+				sld.Dialog.Filename = "Common_Soldier.c";
+				sld.greeting = "soldier";
+			}
+		}
+	}
+}
 
 //Маяк Порт-Ройал
 void CreateMayak(aref loc)
@@ -1298,6 +1349,10 @@ void CreateMayak(aref loc)
 	}
 }
 
+#define HORSE_SIT_GROUP			"HorseSit"
+#define HORSE_SIT_QTY			1
+#define HORSE_MODEL_ANIMATION	"towngirl"
+
 void CreateBrothels(aref loc)
 {
 	if (CheckAttribute(loc, "brothel"))
@@ -1314,7 +1369,7 @@ void CreateBrothels(aref loc)
 		if (!CheckAttribute(location, "Brothel_date") || GetNpcQuestPastDayParam(location, "Brothel_date") > 100)
 		{
 			ref sld;
-			int iColony, iNation, qtyAll;
+			int iColony, iNation, qty, qtyAll, qtyStay, qtySit, iSitLocatorNum;
 			SaveCurrentNpcQuestDateParam(location, "Brothel_date");
 			if(CheckAttribute(location, "fastreload"))
 			{
@@ -1323,12 +1378,17 @@ void CreateBrothels(aref loc)
 			else return;
 			iNation = GetCityNation(location.fastreload);
 			string slai_group = GetNationNameByType(iNation)  + "_citizens";
-			qtyAll = rand(2) + 4;
+
+			qtyStay = rand(1) + 3;			// 3-4 стоячих
+			qtySit  = HORSE_SIT_QTY;		// сидячие
+			qtyAll  = qtyStay + qtySit;
+			iSitLocatorNum = 1;
+
 			arrayNPCModelHow = 0;
-			for(int i = 1; i < qtyAll; i++)
+			for(qty = 1; qty <= qtyAll; qty++)
 			{
-				sld = GetCharacter(NPC_GenerateCharacter("HorseGen_"+location.index +"_"+ i, "horse0"+(rand(7)+1), "woman", "towngirl", 3, iNation, 100, false));
-				SetNPCModelUniq(sld, "whore", WOMAN);
+				sld = GetCharacter(NPC_GenerateCharacter("HorseGen_"+location.index +"_"+ qty, "horse0"+(rand(7)+1), "woman", HORSE_MODEL_ANIMATION, 3, iNation, 100, false));
+				SetNPCModelUniq(sld, "horse", WOMAN);
 				sld.City = location.fastreload;
 				sld.CityType = "horse";
 				sld.dialog.filename = "Common_Brothel.c";
@@ -1347,10 +1407,21 @@ void CreateBrothels(aref loc)
 					case "Charles":		 sld.quest.price = 300*(rand(4)+5); break;
 					case "SantoDomingo": sld.quest.price = 200*(rand(4)+5); break;
 				}
-				LAi_SetCitizenType(sld);
-				LAi_group_MoveCharacter(sld, slai_group);
-				ChangeCharacterAddressGroup(sld, location.id, "goto", "goto"+i);
-				SetLandQuestMarksToFantom(sld, "Horse"); // фантом будет с квест-метками
+
+				if (qty <= qtyStay)
+				{
+					LAi_SetHorseStayType(sld);
+					LAi_group_MoveCharacter(sld, slai_group);
+					ChangeCharacterAddressGroup(sld, location.id, "goto", "goto"+qty);
+					SetLandQuestMarksToFantom(sld, "Horse"); 
+				}
+				else
+				{
+					LAi_SetHorseSitType(sld);
+					LAi_group_MoveCharacter(sld, slai_group);
+					ChangeCharacterAddressGroup(sld, location.id, HORSE_SIT_GROUP, HORSE_SIT_GROUP + iSitLocatorNum);
+					iSitLocatorNum++;
+				}
 			}
 		}
 	}
@@ -1539,6 +1610,529 @@ void CreatePearlVillage(aref loc)
 		LAi_group_SetLookRadius("PearlGroup_"+iPrefix, 16);
 		LAi_group_SetHearRadius("PearlGroup_"+iPrefix, 10);
 	}
+}
+
+// Ле Баск (начало). Заселение пиратского поселения на тортуге
+string POutpost_RandWeapon()
+{
+    int tdm_r;
+    tdm_r = rand(8);
+    if (tdm_r == 0) return "kocherg";
+    if (tdm_r == 1) return "spear1";
+    if (tdm_r == 2) return "spear2";
+    if (tdm_r == 3) return "topor3";
+    if (tdm_r == 4) return "topor5";
+    if (tdm_r == 5) return "vikingAxe";
+    if (tdm_r == 6) return "topor1";
+    if (tdm_r == 7) return "topor2";
+    if (tdm_r == 8) return "topor4";
+    return "maquahuitl";
+}
+
+string POutpost_RandPirateOrWorker()
+{
+    int hah_r;
+    hah_r = rand(19);
+    if (hah_r < 16) return "pirate_" + (hah_r + 1);
+    return "worker_" + (hah_r - 15);
+}
+
+string POutpost_RandModel()
+{
+    int CBleik_r;
+    CBleik_r = rand(45); 
+    if (CBleik_r < 17) return "mush_ctz_" + (CBleik_r + 1);
+    if (CBleik_r < 25) return "pir_mush_" + (CBleik_r - 16);
+    return POutpost_RandPirateOrWorker();
+}
+
+void CreateBucaneerOutpostCitizens(aref loc)
+{
+    if (loc.id != "Bucaneer_outpost" || LAi_IsCapturedLocation) return;
+	if (CheckAttribute(pchar, "questTemp.Lebasque.OutpostEmpty")) return;
+    ref CBleik_chr;
+    int AoP_i, CB_n, CL_charIdx, remAoP_sit, tdm_all, CabB_qLoc, hah_gSit, heh_mNum;
+    string AoPirates_mdl, CB_wpn, AoP_defG, tdm_loc;
+    bool CBleik_upd;
+
+    AoP_defG = "BucaneerOutpost_Defenders";
+    remAoP_sit = 2 + rand(3);
+    tdm_all = 8 + rand(7);
+    CabB_qLoc = 1; 
+    CBleik_upd = false;
+
+    if (!CheckAttribute(loc, "PopDate") || GetNpcQuestPastTimeParam(loc, "PopDate") >= 6) CBleik_upd = true;
+
+    if (!CBleik_upd)
+    {
+        for(CB_n = 0; CB_n < MAX_CHARACTERS; CB_n++)
+        {
+            if (CheckAttribute(&characters[CB_n], "CityType") && characters[CB_n].location == loc.id) return; 
+        }
+    }
+    else
+    {
+        for(CB_n = 0; CB_n < MAX_CHARACTERS; CB_n++)
+        {
+            if (CheckAttribute(&characters[CB_n], "CityType") && characters[CB_n].location == loc.id)
+            {
+                ChangeCharacterAddressGroup(&characters[CB_n], "none", "", "");
+                characters[CB_n].LifeDay = 0; 
+            }
+        }
+        SaveCurrentNpcQuestDateParam(loc, "PopDate");
+    }
+
+    LAi_group_Register(AoP_defG);
+
+    // основа
+    for (AoP_i = 0; AoP_i < tdm_all; AoP_i++)
+    {
+        if (AoP_i < remAoP_sit) AoPirates_mdl = POutpost_RandPirateOrWorker();
+        else AoPirates_mdl = POutpost_RandModel();
+
+        CL_charIdx = NPC_GeneratePhantomCharacter("citizen", PIRATE, MAN, 2);
+        CBleik_chr   = &characters[CL_charIdx];
+        CBleik_chr.model = AoPirates_mdl;
+        CBleik_chr.CityType = "citizen";
+		CBleik_chr.Buccaneer = true;
+        FaceMaker(CBleik_chr);
+
+        if (HasSubStr(AoPirates_mdl, "mush_ctz") || HasSubStr(AoPirates_mdl, "pir_mush"))
+        {
+            CBleik_chr.model.animation = "mushketer";
+            GiveItem2Character(CBleik_chr, "mushket");
+            EquipCharacterbyItem(CBleik_chr, "mushket");
+        }
+        else
+        {
+            CB_wpn = POutpost_RandWeapon();
+            GiveItem2Character(CBleik_chr, CB_wpn);
+            EquipCharacterbyItem(CBleik_chr, CB_wpn);
+        }
+        LAi_group_MoveCharacter(CBleik_chr, AoP_defG);
+
+        CBleik_chr.dialog.filename    = "Quest\Lebasque\Bucaneer_man.c";
+        CBleik_chr.dialog.currentnode = "Buccaneer_Random_Start";
+        
+        LAi_SetLoginTime(CBleik_chr, 6.0, 21.99);
+
+        if (rand(1)) CBleik_chr.greeting = "pirat_common";
+        else CBleik_chr.greeting = "cit_common";
+
+        if (AoP_i < remAoP_sit)
+        {
+            PlaceCharacter(CBleik_chr, "sit", "random_free");
+            LAi_SetSitType(CBleik_chr);
+            CBleik_chr.standUp = true;
+        }
+        else
+        {
+            hah_gSit = 0;
+            if (CBleik_chr.model.animation != "mushketer" && CabB_qLoc <= 3 && rand(100) < 35)
+            {
+                tdm_loc = "quest" + CabB_qLoc;
+                if (LAi_CheckLocatorFree("quest", tdm_loc))
+                {
+                    ChangeCharacterAddressGroup(CBleik_chr, loc.id, "quest", tdm_loc);
+                    LAi_SetGroundSitType(CBleik_chr);
+                    CBleik_chr.standUp = true;
+                    hah_gSit = 1;
+                    CabB_qLoc++;
+                }
+            }
+
+            if (hah_gSit == 0)
+            {
+                PlaceCharacter(CBleik_chr, "goto", "random_free");
+                LAi_SetWarriorType(CBleik_chr);
+                LAi_warrior_DialogEnable(CBleik_chr, true);
+            }
+        }
+    }
+    
+    // ходят ночью 3 челика
+    for (AoP_i = 0; AoP_i < 3; AoP_i++)
+    {
+        CL_charIdx = NPC_GeneratePhantomCharacter("pirate", PIRATE, MAN, 2);
+        CBleik_chr   = &characters[CL_charIdx];
+        CBleik_chr.model = POutpost_RandPirateOrWorker();
+        CBleik_chr.CityType = "soldier";
+		CBleik_chr.Buccaneer = true;
+        FaceMaker(CBleik_chr);
+        
+        CB_wpn = POutpost_RandWeapon();
+        GiveItem2Character(CBleik_chr, CB_wpn);
+        EquipCharacterbyItem(CBleik_chr, CB_wpn);
+
+        CBleik_chr.dialog.filename    = "Quest\Lebasque\Bucaneer_man.c";
+        CBleik_chr.dialog.currentnode = "Buccaneer_Random_Start";
+        
+        LAi_SetLoginTime(CBleik_chr, 22.0, 5.99);
+        CBleik_chr.greeting = "Gr_Guard";
+
+        PlaceCharacter(CBleik_chr, "goto", "random_free");
+        LAi_SetCitizenType(CBleik_chr);
+        LAi_group_MoveCharacter(CBleik_chr, AoP_defG);
+    }
+    
+    // солдиеры постоянно 
+    for (AoP_i = 0; AoP_i < 5; AoP_i++)
+    {
+        CL_charIdx = NPC_GeneratePhantomCharacter("soldier", PIRATE, MAN, 2);
+        CBleik_chr   = &characters[CL_charIdx];
+        
+        heh_mNum = (AoP_i / 2) + 1;
+        if (AoP_i % 2 == 0) CBleik_chr.model = "pir_mush_" + heh_mNum;
+        else CBleik_chr.model = "mush_ctz_" + heh_mNum;
+
+        CBleik_chr.model.animation = "mushketer";
+        CBleik_chr.CityType = "guardian";
+		CBleik_chr.Buccaneer = true;
+        FaceMaker(CBleik_chr);
+
+        GiveItem2Character(CBleik_chr, "mushket");
+        EquipCharacterbyItem(CBleik_chr, "mushket");
+
+        CBleik_chr.dialog.filename    = "Quest\Lebasque\Bucaneer_man.c";
+        CBleik_chr.dialog.currentnode = "Buccaneer_Random_Start";
+        
+        CBleik_chr.greeting = "Gr_Guard";
+
+        ChangeCharacterAddressGroup(CBleik_chr, loc.id, "soldiers", "soldier" + (AoP_i + 1));
+        LAi_SetGuardianTypeNoGroup(CBleik_chr); 
+        LAi_group_MoveCharacter(CBleik_chr, AoP_defG);
+    }
+
+    LAi_group_SetRelation(AoP_defG, LAI_GROUP_PLAYER, LAI_GROUP_NEITRAL);
+}
+
+#define ARUBA_OUT_GUARDS		3	
+#define ARUBA_OUT_NIGHT_WALK	2	
+#define ARUBA_OUT_FIRE_MAX		5	
+#define ARUBA_OUT_SIT_MAX		16	
+#define ARUBA_OUT_TOTAL_MIN		12		
+#define ARUBA_OUT_TOTAL_RAND	6		
+
+void CreateArubaOutpostCitizens(aref loc)
+{
+    if (loc.id != "Aruba_Outpost" || LAi_IsCapturedLocation) return;
+    if (CheckAttribute(pchar, "questTemp.Lebasque.ArubaOutpostEmpty")) return;
+
+    ref ArOut_chr;
+    int ArOut_i, ArOut_n, ArOut_charIdx;
+    int ArOut_all, ArOut_sit, ArOut_fire, ArOut_qLoc, ArOut_placed;
+    string ArOut_mdl, ArOut_wpn, ArOut_defG, ArOut_loc;
+    bool ArOut_upd;
+
+    ArOut_defG = "ArubaOutpost_Defenders";
+    ArOut_all  = ARUBA_OUT_TOTAL_MIN + rand(ARUBA_OUT_TOTAL_RAND);
+    ArOut_fire = rand(ARUBA_OUT_FIRE_MAX);   
+    ArOut_sit  = 5 + rand(4);                
+
+    if (ArOut_fire > ARUBA_OUT_FIRE_MAX) ArOut_fire = ARUBA_OUT_FIRE_MAX;
+    if (ArOut_sit  > ARUBA_OUT_SIT_MAX)  ArOut_sit  = ARUBA_OUT_SIT_MAX;
+
+    if (ArOut_fire + ArOut_sit >= ArOut_all)
+    {
+        ArOut_sit = ArOut_all - ArOut_fire - 1;
+        if (ArOut_sit < 0)
+        {
+            ArOut_sit  = 0;
+            ArOut_fire = ArOut_all - 1;
+        }
+    }
+
+    ArOut_qLoc  = 1;
+    ArOut_upd   = false;
+
+    if (!CheckAttribute(loc, "ArubaPopDate") || GetNpcQuestPastTimeParam(loc, "ArubaPopDate") >= 6) ArOut_upd = true;
+
+    if (!ArOut_upd)
+    {
+        for (ArOut_n = 0; ArOut_n < MAX_CHARACTERS; ArOut_n++)
+        {
+            if (CheckAttribute(&characters[ArOut_n], "CityType") && characters[ArOut_n].location == loc.id) return;
+        }
+    }
+    else
+    {
+        for (ArOut_n = 0; ArOut_n < MAX_CHARACTERS; ArOut_n++)
+        {
+            if (CheckAttribute(&characters[ArOut_n], "CityType") && characters[ArOut_n].location == loc.id)
+            {
+                ChangeCharacterAddressGroup(&characters[ArOut_n], "none", "", "");
+                characters[ArOut_n].LifeDay = 0;
+            }
+        }
+        SaveCurrentNpcQuestDateParam(loc, "ArubaPopDate");
+    }
+
+    LAi_group_Register(ArOut_defG);
+    for (ArOut_i = 0; ArOut_i < ArOut_all; ArOut_i++)
+    {
+        if (ArOut_i < ArOut_fire + ArOut_sit) ArOut_mdl = POutpost_RandPirateOrWorker();
+        else ArOut_mdl = POutpost_RandModel();
+
+        ArOut_charIdx = NPC_GeneratePhantomCharacter("citizen", PIRATE, MAN, 2);
+        ArOut_chr = &characters[ArOut_charIdx];
+        ArOut_chr.model = ArOut_mdl;
+        ArOut_chr.CityType = "citizen";
+		ArOut_chr.Buccaneer = true;
+        FaceMaker(ArOut_chr);
+
+        if (HasSubStr(ArOut_mdl, "mush_ctz") || HasSubStr(ArOut_mdl, "pir_mush"))
+        {
+            ArOut_chr.model.animation = "mushketer";
+            GiveItem2Character(ArOut_chr, "mushket");
+            EquipCharacterbyItem(ArOut_chr, "mushket");
+        }
+        else
+        {
+            ArOut_wpn = POutpost_RandWeapon();
+            GiveItem2Character(ArOut_chr, ArOut_wpn);
+            EquipCharacterbyItem(ArOut_chr, ArOut_wpn);
+        }
+
+        LAi_group_MoveCharacter(ArOut_chr, ArOut_defG);
+
+        ArOut_chr.dialog.filename    = "Quest\Lebasque\Bucaneer_man.c";
+        ArOut_chr.dialog.currentnode = "Buccaneer_Random_Start";
+
+        LAi_SetLoginTime(ArOut_chr, 6.0, 21.99);
+
+        if (rand(1)) ArOut_chr.greeting = "pirat_common";
+        else ArOut_chr.greeting = "cit_common";
+
+        ArOut_placed = 0;
+        if (ArOut_i < ArOut_fire && ArOut_qLoc <= ARUBA_OUT_FIRE_MAX)
+        {
+            ArOut_loc = "quest" + ArOut_qLoc;
+            if (LAi_CheckLocatorFree("quest", ArOut_loc))
+            {
+                ChangeCharacterAddressGroup(ArOut_chr, loc.id, "quest", ArOut_loc);
+                LAi_SetGroundSitType(ArOut_chr);
+                ArOut_chr.standUp = true;
+                ArOut_qLoc++;
+                ArOut_placed = 1;
+            }
+        }
+
+        if (ArOut_placed == 0 && ArOut_i < ArOut_fire + ArOut_sit)
+        {
+            PlaceCharacter(ArOut_chr, "sit", "random_free");
+            LAi_SetSitType(ArOut_chr);
+            ArOut_chr.standUp = true;
+            ArOut_placed = 1;
+        }
+
+        if (ArOut_placed == 0)
+        {
+            PlaceCharacter(ArOut_chr, "goto", "random_free");
+            LAi_SetWarriorType(ArOut_chr);
+            LAi_warrior_DialogEnable(ArOut_chr, true);
+        }
+    }
+
+    for (ArOut_i = 0; ArOut_i < ARUBA_OUT_NIGHT_WALK; ArOut_i++)
+    {
+        ArOut_charIdx = NPC_GeneratePhantomCharacter("pirate", PIRATE, MAN, 2);
+        ArOut_chr = &characters[ArOut_charIdx];
+        ArOut_chr.model = POutpost_RandPirateOrWorker();
+        ArOut_chr.CityType = "soldier";
+		ArOut_chr.Buccaneer = true;
+        FaceMaker(ArOut_chr);
+
+        ArOut_wpn = POutpost_RandWeapon();
+        GiveItem2Character(ArOut_chr, ArOut_wpn);
+        EquipCharacterbyItem(ArOut_chr, ArOut_wpn);
+
+        ArOut_chr.dialog.filename    = "Quest\Lebasque\Bucaneer_man.c";
+        ArOut_chr.dialog.currentnode = "Buccaneer_Random_Start";
+        ArOut_chr.greeting = "Gr_Guard";
+
+        LAi_SetLoginTime(ArOut_chr, 22.0, 5.99);
+
+        PlaceCharacter(ArOut_chr, "goto", "random_free");
+        LAi_SetCitizenType(ArOut_chr);
+        LAi_group_MoveCharacter(ArOut_chr, ArOut_defG);
+    }
+    for (ArOut_i = 0; ArOut_i < ARUBA_OUT_GUARDS; ArOut_i++)
+    {
+        ArOut_charIdx = NPC_GeneratePhantomCharacter("soldier", PIRATE, MAN, 2);
+        ArOut_chr = &characters[ArOut_charIdx];
+
+        if (ArOut_i % 2 == 0) ArOut_chr.model = "pir_mush_" + (ArOut_i + 1);
+        else ArOut_chr.model = "mush_ctz_" + (ArOut_i + 1);
+
+        ArOut_chr.model.animation = "mushketer";
+        ArOut_chr.CityType = "guardian";
+		ArOut_chr.Buccaneer = true;
+        FaceMaker(ArOut_chr);
+
+        GiveItem2Character(ArOut_chr, "mushket");
+        EquipCharacterbyItem(ArOut_chr, "mushket");
+
+        ArOut_chr.dialog.filename    = "Quest\Lebasque\Bucaneer_man.c";
+        ArOut_chr.dialog.currentnode = "Buccaneer_Random_Start";
+        ArOut_chr.greeting = "Gr_Guard";
+
+        LAi_SetLoginTime(ArOut_chr, 0.0, 24.0);
+
+        ChangeCharacterAddressGroup(ArOut_chr, loc.id, "soldiers", "soldier" + (ArOut_i + 1));
+        LAi_SetGuardianTypeNoGroup(ArOut_chr);
+        LAi_group_MoveCharacter(ArOut_chr, ArOut_defG);
+    }
+
+    LAi_group_SetRelation(ArOut_defG, LAI_GROUP_PLAYER, LAI_GROUP_NEITRAL);
+}
+
+// дефффчонки
+void CreateBucaneerOutpostGirls(aref loc)
+{
+	ref sld;
+	int i;
+	int iGirl;
+	int iCount;
+	int iStart;
+	int iGirlIndex;
+	if (loc.id != "Bucaneer_outpost") return;
+	if (CheckAttribute(pchar, "questTemp.Lebasque.OutpostEmpty")) return;
+	for (i = 1; i <= 6; i++)
+	{
+		iGirlIndex = GetCharacterIndex("Bucaneer_Girl_" + i);
+
+		if (iGirlIndex >= 0)
+		{
+			sld = &characters[iGirlIndex];
+			if (sld.location == loc.id)
+			{
+				ChangeCharacterAddressGroup(sld, "none", "", "");
+			}
+		}
+	}
+
+	if (!CheckAttribute(pchar, "questTemp.AoP.BucaneerGirlsSettled")) return;
+
+
+	if (GetTime() < 6.0 || GetTime() >= 22.0) return;
+	if (!CheckAttribute(loc, "AoP.BucaneerGirls.Count") ||
+		!CheckAttribute(loc, "AoP.BucaneerGirls.Start") ||
+		!CheckAttribute(loc, "AoP.BucaneerGirls.PopDate") ||
+		GetNpcQuestPastTimeParam(loc, "AoP.BucaneerGirls.PopDate") >= 6.0)
+	{
+		loc.AoP.BucaneerGirls.Count = 1 + rand(5);
+		loc.AoP.BucaneerGirls.Start = 1 + rand(5);
+
+		SaveCurrentNpcQuestDateParam(loc, "AoP.BucaneerGirls.PopDate");
+	}
+	iCount = sti(loc.AoP.BucaneerGirls.Count);
+	iStart = sti(loc.AoP.BucaneerGirls.Start);
+	for (i = 0; i < iCount; i++)
+	{
+		iGirl = ((iStart - 1 + i) % 6) + 1;
+		iGirlIndex = GetCharacterIndex("Bucaneer_Girl_" + iGirl);
+
+		if (iGirlIndex < 0) continue;
+
+		sld = &characters[iGirlIndex];
+
+		if (sld.location != "none" && sld.location != loc.id) continue;
+
+		LAi_SetImmortal(sld, true);
+		LAi_SetLoginTime(sld, 6.0, 21.99);
+		LAi_SetCitizenType(sld);
+		sld.dialog.filename = "Quest\Lebasque\Bucaneer_woman.c";
+		sld.Dialog.CurrentNode = "Girls_Holiday";
+		sld.greeting = "Gr_Woman_Citizen";
+		PlaceCharacter(sld, "goto", "random_free");
+	}
+}
+// Ле Баск (конец)
+
+// индейцы Арубы
+void CreateArubaIndianVillage(aref loc)
+{
+	if (loc.id != "Aruba_IndianVillage") return;
+	if (!CheckAttribute(loc, "indianVillage")) return;
+	if (!CheckNPCQuestDate(loc, "ArubaMiskitoDate")) return;
+	SetNPCQuestDate(loc, "ArubaMiskitoDate");
+
+	ref chr;
+	int i;
+	int iRank = sti(pchar.rank) + MOD_SKILL_ENEMY_RATE + 5;
+	int iCount = 6 + rand(2);
+	string sWeapon;
+
+	for (i=0; i<iCount; i++)
+	{
+		chr = GetCharacter(NPC_GenerateCharacter("Aruba_Miskito_"+i, "miskito_"+(rand(5)+1), "man", "man", iRank, PIRATE, 1, true));
+		SetFantomParamFromRank(chr, iRank, true);
+		chr.indian = "1";
+		chr.name = GetIndianName(MAN);
+		chr.lastname = "";
+		chr.CityType = "citizen";
+		chr.dialog.Filename = "ArubaIndian_dialog.c";
+		chr.dialog.currentnode = "IndianMan";
+		chr.greeting = "indiano";
+		LAi_SetLoginTime(chr, 6.0, 21.99);
+
+		RemoveAllCharacterItems(chr, true);
+		sWeapon = LinkRandPhrase("spear1", "topor4", "topor5");
+		GiveItem2Character(chr, sWeapon);
+		EquipCharacterByItem(chr, sWeapon);
+
+		PlaceCharacter(chr, "goto", "random_free");
+		LAi_SetWarriorType(chr);
+		LAi_group_MoveCharacter(chr, "ArubaMiskitoGroup");
+	}
+
+	if (rand(1) == 1)
+	{
+		for (i=1; i<=2; i++)
+		{
+			chr = GetCharacter(NPC_GenerateCharacter("Aruba_MiskitoSit_"+i, "miskito_"+(rand(5)+1), "man", "man", iRank, PIRATE, 1, true));
+			SetFantomParamFromRank(chr, iRank, true);
+			chr.indian = "1";
+			chr.name = GetIndianName(MAN);
+			chr.lastname = "";
+			chr.CityType = "citizen";
+			chr.dialog.Filename = "ArubaIndian_dialog.c";
+			chr.dialog.currentnode = "IndianMan";
+			chr.greeting = "indiano";
+			LAi_SetLoginTime(chr, 6.0, 21.99);
+
+			RemoveAllCharacterItems(chr, true);
+			sWeapon = LinkRandPhrase("spear1", "topor4", "topor5");
+			GiveItem2Character(chr, sWeapon);
+			EquipCharacterByItem(chr, sWeapon);
+
+			ChangeCharacterAddressGroup(chr, loc.id, "sit", "ground"+i);
+			LAi_SetGroundSitType(chr);
+			LAi_group_MoveCharacter(chr, "ArubaMiskitoGroup");
+		}
+	}
+
+	for (i=1; i<=3; i++)
+	{
+		chr = GetCharacter(NPC_GenerateCharacter("Aruba_MiskitoWoman_"+i, "squaw_"+i, "woman", "woman_B", 10, PIRATE, 1, false));
+		SetFantomParamFromRank(chr, 10, false);
+		chr.indian = "1";
+		chr.name = GetIndianName(WOMAN);
+		chr.lastname = "";
+		chr.CityType = "citizen";
+		chr.dialog.Filename = "ArubaIndian_dialog.c";
+		chr.dialog.currentnode = "IndianWoman";
+		LAi_SetLoginTime(chr, 6.0, 21.99);
+		RemoveAllCharacterItems(chr, true);
+		PlaceCharacter(chr, "goto", "random_free");
+		LAi_SetCitizenType(chr);
+		LAi_group_MoveCharacter(chr, "ArubaMiskitoGroup");
+	}
+
+	LAi_group_SetRelation("ArubaMiskitoGroup", LAI_GROUP_PLAYER, LAI_GROUP_NEITRAL);
+	LAi_group_SetLookRadius("ArubaMiskitoGroup", 20);
+	LAi_group_SetHearRadius("ArubaMiskitoGroup", 15);
 }
 
 void CreateInsideHouseEncounters(aref loc)
@@ -2574,6 +3168,17 @@ void ReSitCharacterOnFree(ref chr, string _locId, string sTemp)
 	}
 }
 
+// > Запись модели в журнал занятых в локации моделей
+// > Журнал не резиновый: переполнили - модель просто не записываем, за границу массива не лезем
+void AddNPCModelUniq(string sModel)
+{
+	if (arrayNPCModelHow < 0) arrayNPCModelHow = 0;
+	if (arrayNPCModelHow >= GetArraySize(&arrayNPCModel)) return;
+
+	arrayNPCModel[arrayNPCModelHow] = sModel;
+	arrayNPCModelHow++;
+}
+
 bool CheckNPCModelUniq(ref chr)
 {
 	int   i, n;
@@ -2581,7 +3186,9 @@ bool CheckNPCModelUniq(ref chr)
 	string sModel = chr.model;
 	
     bOk = true;
-	for (i=0; i<arrayNPCModelHow; i++)
+	n = arrayNPCModelHow;
+	if (n > GetArraySize(&arrayNPCModel)) n = GetArraySize(&arrayNPCModel);
+	for (i=0; i<n; i++)
 	{
 	    if (arrayNPCModel[i] == sModel)
 	    {
@@ -2602,8 +3209,7 @@ void SetNPCModelUniq(ref chr, string sType, int iSex)
 	    i++;
 	    CreateModel(sti(chr.index), sType, iSex);
 	}
-	arrayNPCModel[arrayNPCModelHow] = chr.model;
-	arrayNPCModelHow++;
+	AddNPCModelUniq(chr.model);
 }
 
 bool CanGenerateAffairOfHonor(aref loc, int iColony)
@@ -2644,4 +3250,105 @@ bool CanGenerateAffairOfHonor(aref loc, int iColony)
 	}
 
 	return true;
+}
+
+int GetSeekCapRandomQuest_Citizen(string sSex)
+{
+	int iQuest, iRandQuest, i, n;
+	string sQuest;
+	aref arQSeekCap, arSeekCap;
+
+	// evganat - генераторы
+	Log_TestInfo("Зашли на генерацию, пол "+sSex);
+	iQuest = 7; // = 111
+	iRandQuest = rand(2); // fix - если свич в iQuest не отработает
+	if(CheckAttribute(pchar, "questTemp.SeekCap"))
+	{
+		makearef(arQSeekCap, pchar.questTemp.SeekCap);
+		n = GetAttributesNum(arQSeekCap);
+		Log_TestInfo("Зашли в иф, количество квестов "+n+", iQuest "+iQuest);
+		for(i=0; i < n; i++)
+		{
+			arSeekCap = GetAttributeN(arQSeekCap, i);
+			sQuest = GetAttributeValue(arSeekCap);
+			if(sSex == "man")
+			{
+				switch(sQuest)
+				{
+					case "slave":		iQuest = and(iQuest,3);	break; // &= 011
+					case "rapewife":	iQuest = and(iQuest,5);	break; // &= 101
+					case "friend":		iQuest = and(iQuest,6);	break; // &= 110
+				}
+			}
+			else
+			{
+				switch(sQuest)
+				{
+					case "husband":		iQuest = and(iQuest,3);	break;
+					case "revenge":		iQuest = and(iQuest,5);	break;
+					case "pirates":		iQuest = and(iQuest,6);	break;
+				}
+			}
+			Log_TestInfo("Проход номер "+i+", обнаружен квест "+sQuest+" теперь iQuest "+iQuest);
+		}
+		switch(iQuest)
+		{
+			case 7:	iRandQuest = rand(2);	break;
+			case 6:	iRandQuest = rand(1);	break;
+			case 5:	iRandQuest = rand(1)*2;	break;
+			case 3:	iRandQuest = rand(1)+1;	break;
+			case 2:	iRandQuest = 1;			break;
+			case 1:	iRandQuest = 2;			break;
+			case 4:	iRandQuest = 0;			break;
+		}
+		Log_TestInfo("Расчёт окончен, итоговый iRandQuest "+iRandQuest);
+	}
+
+	if(iQuest > 0)
+	{
+		return iRandQuest;
+	}
+	return -1;
+}
+
+int GetSeekCapRandomQuest_Nobleman()
+{
+	int iQuest, iRandQuest, i, n;
+	string sQuest;
+	aref arQSeekCap, arSeekCap;
+
+	Log_TestInfo("Зашли на генерацию, SeekCap - дворянин");
+	iQuest = 3; // = 11
+	iRandQuest = rand(1);
+	if(CheckAttribute(pchar, "questTemp.SeekCap"))
+	{
+		makearef(arQSeekCap, pchar.questTemp.SeekCap);
+		n = GetAttributesNum(arQSeekCap);
+		Log_TestInfo("Зашли в иф, количество квестов "+n+", iQuest "+iQuest);
+		for(i=0; i < n; i++)
+		{
+			arSeekCap = GetAttributeN(arQSeekCap, i);
+			sQuest = GetAttributeValue(arSeekCap);
+			switch(sQuest)
+			{
+				case "NM_battle":		iQuest = and(iQuest,1);	break; // &= 01
+				case "NM_prisoner":		iQuest = and(iQuest,1);	break; // &= 01
+				case "NM_peace":		iQuest = and(iQuest,2);	break; // &= 10
+			}
+			Log_TestInfo("Проход номер "+i+", обнаружен квест "+sQuest+" теперь iQuest "+iQuest);
+		}
+		switch(iQuest)
+		{
+			case 3:	iRandQuest = rand(1);	break;
+			case 1:	iRandQuest = 1;			break;
+			case 2:	iRandQuest = 0;			break;
+		}
+		Log_TestInfo("Расчёт окончен, итоговый iRandQuest "+iRandQuest);
+	}
+
+	if(iQuest > 0)
+	{
+		return iRandQuest;
+	}
+	return -1;
 }

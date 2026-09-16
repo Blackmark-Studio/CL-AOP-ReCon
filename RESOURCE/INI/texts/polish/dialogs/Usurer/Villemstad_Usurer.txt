@@ -241,3 +241,24 @@ Powiedział, że teraz zamierza udać się do Anglików. Chyba chodziło o @<XI_
 Villemstad_Usurer_66 {
 A mówiłeś, że nie masz pojęcia. No, dzięki ci!
 }
+Villemstad_Usurer_67 {
+Powiedzcie, mynheer, jesteście żonaci?
+}
+Villemstad_Usurer_68 {
+Muszę przyznać, że to nader niespodziewane pytanie. Doprawdy, wprawiliście mnie w pewne zakłopotanie.
+}
+Villemstad_Usurer_69 {
+Chciałabym odkupić suknię godną wysokiego statusu waszej małżonki.
+}
+Villemstad_Usurer_70 {
+Ach, więc o to chodzi! Jestem żonaty, lecz widzicie, moja małżonka to dama o dość obfitych kształtach. Obawiam się, że nawet gdyby zgodziła się sprzedać wam coś ze swojej garderoby, przeróbki i dopasowanie zajęłyby wam więcej niż jeden dzień.
+}
+Villemstad_Usurer_71 {
+Wielka szkoda. Właśnie tyle czasu nie mam.
+}
+Villemstad_Usurer_72 {
+Lepiej popytajcie miejscowych sklepikarzy w mieście. Może któryś z nich ma suknię, jakiej potrzebujecie.
+}
+Villemstad_Usurer_73 {
+Dziękuję, skorzystam z waszej rady. Do widzenia.
+}

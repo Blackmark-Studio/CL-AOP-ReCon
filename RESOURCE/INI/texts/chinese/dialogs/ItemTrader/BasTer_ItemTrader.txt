@@ -1,36 +1,36 @@
 BasTer_ItemTrader_1 {
-什么问题？
+什么问题？ 
 }
 BasTer_ItemTrader_2 {
-有什么需要帮忙的吗，@<GetAddress_Form>?
+有什么需要帮忙的吗， @<GetAddress_Form>?
 }
 BasTer_ItemTrader_3 {
 @<RandPhraseSimple>
 }
 BasTer_ItemTrader_4 {
-又有问题啊，@<GetAddress_Form>……
+又有问题啊， @<GetAddress_Form>…… 
 }
 BasTer_ItemTrader_5 {
-问题一堆……要不要来做点生意，@<GetAddress_Form>?
+问题一堆…… 要不要来做点生意， @<GetAddress_Form>?
 }
 BasTer_ItemTrader_6 {
-听着，咱们还要在这废话上浪费多久？
+听着， 咱们还要在这废话上浪费多久？ 
 }
 BasTer_ItemTrader_7 {
-没问题……
+没问题…… 
 }
 BasTer_ItemTrader_8 {
-我现在没什么可说的。
+我现在没什么可说的。 
 }
 BasTer_ItemTrader_9 {
 @<RandPhraseSimple>
 }
 BasTer_ItemTrader_10 {
-唉，又来……
+唉， 又来…… 
 }
 BasTer_ItemTrader_11 {
-是啊，讨价还价确实更好……
+是啊， 讨价还价确实更好…… 
 }
 BasTer_ItemTrader_12 {
-嗯，抱歉啊，商人……
+嗯， 抱歉啊， 商人…… 
 }

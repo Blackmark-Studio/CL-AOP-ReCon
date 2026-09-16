@@ -1,26 +1,26 @@
 Marigo_PortMan_1 {
-什么问题？
+什么问题？ 
 }
 Marigo_PortMan_2 {
-@<GetAddress_Form>，您找俺有啥事？
+@<GetAddress_Form>， 您找我有什么事？ 
 }
 Marigo_PortMan_3 {
 @<RandPhraseSimple>
 }
 Marigo_PortMan_4 {
-前不久你试图问我一个问题@<GetAddress_Form>……
+前不久你试图问我一个问题@<GetAddress_Form>…… 
 }
 Marigo_PortMan_5 {
-你今天已经第三次提这事了……
+你今天已经第三次提这事了…… 
 }
 Marigo_PortMan_6 {
-听着，要是你不是来办港口的事儿，最好别来烦我问东问西。
+听着， 要是你不是来办港口的事儿， 最好别来烦我问东问西。
 }
 Marigo_PortMan_7_m {
-我改主意了……
+我改主意了…… 
 }
 Marigo_PortMan_7_f {
-我改变主意了……
+我改变主意了…… 
 }
 Marigo_PortMan_8 {
 我现在没什么好说的。
@@ -29,11 +29,11 @@ Marigo_PortMan_9 {
 @<RandPhraseSimple>
 }
 Marigo_PortMan_10 {
-嗯，我的记忆好像出了点问题……
+嗯， 我的记忆好像出了点问题…… 
 }
 Marigo_PortMan_11 {
-是啊，真的，已经第三次了……
+是啊， 真的， 已经第三次了…… 
 }
 Marigo_PortMan_12 {
-不好意思，俺现在对港口的事儿没兴趣。
+不好意思， 我现在对港口的事儿没兴趣。
 }

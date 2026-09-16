@@ -1,39 +1,70 @@
 Cumana_Usurer_1 {
-什么问题？
+什么问题？ 
 }
 Cumana_Usurer_2 {
-你想干嘛？
+你想干嘛？ 
 }
 Cumana_Usurer_3 {
 @<RandPhraseSimple>
 }
 Cumana_Usurer_4 {
-前阵子你试图问我个问题……
+前阵子你试图问我个问题…… 
 }
 Cumana_Usurer_5 {
-嗯，让我猜猜……又没什么重要的事吧？
+嗯， 让我猜猜…… 又没什么重要的事吧？ 
 }
 Cumana_Usurer_6 {
-听着，俺管钱，不负责回答问题……
+听着， 我管钱， 不负责回答问题…… 
 }
 Cumana_Usurer_7_m {
-我改主意了……
+我改主意了…… 
 }
 Cumana_Usurer_7_f {
-我改主意了……
+我改主意了…… 
 }
 Cumana_Usurer_8 {
-我现在没什么可说的。
+我现在没什么可说的。 
 }
 Cumana_Usurer_9 {
 @<RandPhraseSimple>
 }
 Cumana_Usurer_10 {
-嗯，我的记忆好像出了点问题……
+嗯， 我的记忆好像出了点问题…… 
 }
 Cumana_Usurer_11 {
-你猜对了，抱歉……
+你猜对了， 抱歉…… 
 }
 Cumana_Usurer_12 {
-我明白……
+我明白…… 
+}
+
+Cumana_Usurer_13 {
+我听着呢，船长。什么事把您带到我这里来？
+}
+Cumana_Usurer_14 {
+我想给安娜.阿雷利亚诺留下两万比索，再替她父亲转告几句话。
+}
+Cumana_Usurer_15 {
+没什么急事。以后再谈吧。
+}
+Cumana_Usurer_16 {
+安娜.阿雷利亚诺？是的，我认识她。不过她父亲已经很久没回库马纳了。您究竟要我转告什么？
+}
+Cumana_Usurer_17 {
+告诉她，这笔钱是托马斯.德.阿雷利亚诺留下的。还要告诉她，他祝福她和塞巴斯蒂安的婚姻。不必提我的名字。
+}
+Cumana_Usurer_18 {
+明白。如果钱就在您身上，我马上以她的名义开一笔存款。
+}
+Cumana_Usurer_19 {
+钱在这里。替她开好存款，也务必把她父亲的话带到。
+}
+Cumana_Usurer_20 {
+我现在还没凑齐。等我攒够两万再回来。
+}
+Cumana_Usurer_21 {
+您尽管放心。我的账簿上只会写托马斯.德.阿雷利亚诺的名字，安娜也会收到他的话。
+}
+Cumana_Usurer_22 {
+谢谢。这就是我要您做的全部。
 }

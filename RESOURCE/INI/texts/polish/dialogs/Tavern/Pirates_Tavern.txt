@@ -184,3 +184,20 @@ Tak, mieszka w dwupiętrowym domu z kamienną elewacją. Gdy wyjdziesz z tawerny
 Pirates_Tavern_60 {
 Dzięki, bardzo mi pomogłeś!
 }
+
+Pirates_Tavern_61 {
+Szukamy pewnej hiszpańskiej korwety. Podobno stała tu dość długo.
+}
+Pirates_Tavern_62 {
+Ach, don Martín! Uciekł. Niedawno wybuchła tu niezła jatka między piratami Jackmana a Kastylijczykami. Tak się przestraszył, że kazał odciąć linę kotwiczną i odszedł pod pełnymi żaglami.
+}
+Pirates_Tavern_63 {
+Zdawało mi się, czy to pana bawi?
+}
+Pirates_Tavern_64 {
+I to jak! Ten nadęty kastylijski indor wiał tak szybko, że zostawił na brzegu własną szalupę. Tuż przed odpłynięciem wysłał oficera z parą marynarzy do Jackmana, udając kupców — niby po smołę i deski do naprawy. A tamci, gdy zobaczyli łatwy łup, szybko pojęli: Hiszpanie mają pieniądze przy sobie, a towaru i tak nikt nie zamierzał im tu sprzedawać. No i pocięli kupujących na paski.
+Jednemu oficerowi udało się uciec. Tylko że wyspa jest mała — dalej niż do Zatoki Rozbitego Koryta nie zajdzie. Więc jeśli Jackman go nie dopadnie, głód i pragnienie zrobią swoje.
+}
+Pirates_Tavern_65 {
+Wygląda na to, że ten oficer może wiedzieć, dokąd odpłynął Quesada. Dzięki.
+}

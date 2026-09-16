@@ -14,7 +14,7 @@ int iScriptItemCount=0;
 
 float SPAWN_TIME = 168.0; //hours = 168.0
 
-int iHerbItemModelsCount = 0;
+bool bHawkEyeShow = false;
 
 void Items_LoadModel(ref _itemModel, ref _item)
 {
@@ -23,7 +23,7 @@ void Items_LoadModel(ref _itemModel, ref _item)
 		string itemFolder = "items";
 		CreateEntity(&_itemModel, "MODELR");
 
-		if (CheckAttribute(_item, "folder") && FindFile("RESOURCE\MODELS\\" + _item.folder, _item.id, "*.gm", 0))
+		if (CheckAttribute(_item, "folder") && XI_CheckFolder("RESOURCE\MODELS\" + _item.folder + "\" + _item.id + ".gm"))
 			itemFolder = _item.folder;
 
 		SendMessage(&_itemModel, "ls", MSG_MODEL_SET_DIRPATH, itemFolder+"\");
@@ -64,8 +64,6 @@ void Item_OnLoadLocation(string currentLocation)
 		useLocatorsCount++;
 	}
 
-	iHerbItemModelsCount = 0;
-
 	// load buttons & items
 	Items_ShowButtons(currentLocation);
 	RandItems_OnLoadLocation(activeLocation);
@@ -75,7 +73,7 @@ void Item_OnLoadLocation(string currentLocation)
 	aref itemShow;
 	makearef(itemShow, activeLocation.itemShow);
 	int numAttrs = GetAttributesNum(itemShow);
-	for (i = 0; i < numAttrs; i++)
+	for (i = numAttrs - 1; i >= 0; i--)
 	{
 		aloc = GetAttributeN(itemShow, i);
 		Items_ShowItemNew(GetAttributeName(aloc), FindItem(GetAttributeValue(aloc)));
@@ -83,20 +81,59 @@ void Item_OnLoadLocation(string currentLocation)
 
 	for (i = 0; i < ITEMS_QUANTITY; i++)
 	{
-		if (!CheckAttribute(&Items[i], "startLocator"))
+		if (Items[i].shown != "1")
 			continue;
-		if (!CheckAttribute(&Items[i], "startLocation"))
+		if (Items[i].startLocation != currentLocation)
 			continue;
-		if (!CheckAttribute(&Items[i], "shown"))
-			continue;
-		if (Items[i].shown == "1")
-		{
-			if (Items[i].startLocation == currentLocation)
-			{
-				Items_ShowItem(i);
-			}
-		}
+		Items_FixItemLocator(activeLocation, i);
+		Items_ShowItem(i);
 	}
+}
+
+// > предмет положен на локатор "item", которого в модели локации нет - пересаживаем на свободный существующий
+void Items_FixItemLocator(aref _location, int _itemN)
+{
+	aref al, aGroup;
+	string sLocId = _location.id;
+	string sLocator = Items[_itemN].startLocator;
+	string sName, sBusy = ",";
+	int i, q;
+
+	if (!Items_IsNumberedItemLocator(sLocator)) return;
+	if (CheckAttribute(_location, "locators.item." + sLocator)) return;
+	if (FindLocator(sLocId, sLocator, &al, true)) return; // > локатор есть в другой группе
+	if (!CheckAttribute(_location, "locators.item")) return;
+
+	// > локаторы, занятые другими показанными предметами этой локации
+	for (i = 0; i < ITEMS_QUANTITY; i++)
+	{
+		if (i == _itemN || Items[i].shown != "1" || Items[i].startLocation != sLocId) continue;
+		sBusy = sBusy + Items[i].startLocator + ",";
+	}
+
+	makearef(aGroup, _location.locators.item);
+	q = GetAttributesNum(aGroup);
+
+	for (i = 0; i < q; i++)
+	{
+		sName = GetAttributeName(GetAttributeN(aGroup, i));
+		if (!Items_IsNumberedItemLocator(sName)) continue;
+		if (HasStr(sBusy, "," + sName + ",")) continue;
+		trace("Items_FixItemLocator: " + Items[_itemN].id + " in " + sLocId + ": " + sLocator + " -> " + sName);
+		Items[_itemN].startLocator = sName;
+		return;
+	}
+
+	trace("Items_FixItemLocator: no free item locator for " + Items[_itemN].id + " in " + sLocId);
+}
+
+// > локатор вида item<N>
+bool Items_IsNumberedItemLocator(string sName)
+{
+	int iLen = strlen(sName);
+	if (iLen < 5 || !StrStartsWith(sName, "item")) return false;
+	string sCheck = "item" + sti(strcut(sName, 4, iLen - 1));
+	return sCheck == sName;
 }
 
 void Item_OnUnLoadLocation()
@@ -106,7 +143,10 @@ void Item_OnUnLoadLocation()
 	for (i = 0; i < ITEMS_QUANTITY; i++)
 	{
 		if (IsEntity(&itemModels[i]))
+		{
 			DeleteClass(&itemModels[i]);
+			DeleteAttribute(&Items[i], "particleId");
+		}
 	}
 
 	for (i = 0; i < MAX_LOADED_HERBS; i++)
@@ -137,7 +177,7 @@ void Item_OnEnterLocator(aref _location, string _locator)
 
 	if (HasSubStr(_locator, "button"))
 	{ // use item
-        for (itemN = ItemsForLocators_start; itemN < ItemsForLocators_end; itemN++)
+        for (itemN = ITEMS_QUEST_LOCATORS; itemN < ITEMS_MAPS; itemN++)
 		{
 			if (!CheckAttribute(&Items[itemN], "useLocator"))
 				continue;
@@ -174,9 +214,10 @@ void Item_OnEnterLocator(aref _location, string _locator)
 	else
 	{
 		int n = FindItem("pistol7");
-		for (itemN = ItemsForLocators_start; itemN <= ItemsForLocators_end; itemN++)
+		if (n < 0) n = ITEMS_MAPS;
+		for (itemN = ITEMS_QUEST_LOCATORS; itemN <= ITEMS_MAPS; itemN++)
 		{
-			if (itemN == ItemsForLocators_end)
+			if (itemN == ITEMS_MAPS)
 				itemN = n;
 
 			if (!CheckAttribute(&Items[itemN], "startLocator"))
@@ -226,6 +267,7 @@ void Item_OnPickItem()
 	makearef(activeLocation, Locations[sti(pchar.itemLocationIndex)]);
 
 	ref rItemModel;
+	bool bItemModel = true;
 	int langFile = LanguageOpenFile("ItemsDescribe.txt");
 	int iActiveItem = sti(pchar.activeItem);
 	string sItemId, sItemName, sMsg = LanguageConvertString(langFile, "youve_got");
@@ -247,11 +289,16 @@ void Item_OnPickItem()
 	{
 		string locator = pchar.activeLocator;
 
-		if (CheckAttribute(activeLocation, "itemShow." + locator + ".modelIndex"))
+		if (CheckAttribute(activeLocation, "itemShow." + locator))
 		{
 			sMsg = LanguageConvertString(langFile, "herb_find");
 			sIcon = "Alchemy";
-			rItemModel = &JungleHerbs[sti(activeLocation.itemShow.(locator).modelIndex)];
+
+			// > запись без modelIndex (показ не прошёл) снимаем всё равно, иначе локатор отдавал бы предмет без конца
+			if (CheckAttribute(activeLocation, "itemShow." + locator + ".modelIndex"))
+				rItemModel = &JungleHerbs[sti(activeLocation.itemShow.(locator).modelIndex)];
+			else
+				bItemModel = false;
 
 			if (CheckAttribute(activeLocation, "itemShow." + locator + ".particleId"))
 				DeleteParticleSystem(activeLocation.itemShow.(locator).particleId); //очистка подсветки локатора после взятия предмета
@@ -268,6 +315,7 @@ void Item_OnPickItem()
 		if (CheckAttribute(&Items[iActiveItem], "particleId"))
 		{
 			DeleteParticleSystem(Items[iActiveItem].particleId); //очистка подсветки предмета после взятия
+			DeleteAttribute(&Items[iActiveItem], "particleId");
 		}
 
 		sItemId = Items[iActiveItem].id;
@@ -298,7 +346,9 @@ void Item_OnPickItem()
 		QuestCheckTakeItem(activeLocation, Items[iActiveItem].id);
 		// <===
 	}
-	SendMessage(rItemModel, "lslff", MSG_MODEL_BLEND, "blenditemlit", 1000, 1.0, 0.0);
+	if (bItemModel)
+		SendMessage(rItemModel, "lslff", MSG_MODEL_BLEND, "blenditemlit", 1000, 1.0, 0.0);
+
 	TakeNItemsNotification(pchar, GetGeneratedItem(sItemId), 1, sMsg + " " + sItemName + "!", sIcon, sSnd);
 	DeleteAttribute(pchar, "activeItem");
 	LanguageCloseFile(langFile);
@@ -344,11 +394,13 @@ void Item_OnUseItem()
 		SendMessage(&itemModels[activeItem], "lslff", MSG_MODEL_BLEND, "blenditem", 1000, 0.0, 1.0);
 	}
 
+	DelEventHandler("frame", "Item_OnUseFrame");
 	SetEventHandler("frame", "Item_OnUseFrame", 0);
 	TakeItemFromCharacter(pchar, Items[activeItem].id);
 	Items[activeItem].startLocator = "";
 	al.active = true;
 	al.timePassed = 0;
+	al.itemInd = activeItem; // KZ > кэш для Item_OnUseFrame для точечного поиска, а не скана всех Items
 
 	int langFile = LanguageOpenFile("ItemsDescribe.txt");
 	string displayItemName, youvegotString;
@@ -372,10 +424,13 @@ void Item_OnUseFrame()
     bool usedOnFrame=false;
     if (CheckAttribute(pchar, "itemLocationIndex") && sti(pchar.itemLocationIndex) > 0) // boal fix 230804
     {
-    	makearef(activeLocation, Locations[sti(pchar.itemLocationIndex)]);
+		int i, j, timePassed;
+		float timeK, deltaY;
 
+    	makearef(activeLocation, Locations[sti(pchar.itemLocationIndex)]);
     	makearef (aloc, activeLocation.items);
-    	for (int i=0; i<useLocatorsCount; i++)
+
+    	for (i = 0; i < useLocatorsCount; i++)
     	{
     		an = useAttrs[i];
     		al = useLocators[i];
@@ -383,26 +438,40 @@ void Item_OnUseFrame()
     			continue;
     		if (al.active != "1")
     			continue;
-    		int timePassed = sti(al.timePassed) + GetDeltaTime();
+    		timePassed = sti(al.timePassed) + GetDeltaTime();
     		al.timePassed = timePassed;
     		if (timePassed > BUTTON_ACTIVATION_TIME)
     		{
     			al.active = false;
+    			DeleteAttribute(al, "itemInd"); // KZ > кэш нам больше не нужен, не тащим в сейв
     			continue;
     		}
 
     		usedOnFrame = true;
-    		float timeK = makefloat(timePassed) / makefloat(BUTTON_ACTIVATION_TIME);
-    		float deltaY = makefloat(an.deltaY) * timeK;
+    		timeK = makefloat(timePassed) / makefloat(BUTTON_ACTIVATION_TIME);
+    		deltaY = makefloat(an.deltaY) * timeK;
 
     		SendMessage(&buttonModels[i], "lffffffffffff", MSG_MODEL_SET_POSITION, makeFloat(al.x), makeFloat(al.y)+deltaY, makeFloat(al.z), makeFloat(al.vx.x), makeFloat(al.vx.y), -makeFloat(al.vx.z), makeFloat(al.vy.x), makeFloat(al.vy.y), -makeFloat(al.vy.z), makeFloat(al.vz.x), makeFloat(al.vz.y), -makeFloat(al.vz.z));
 
-    		for (int j=0; j<ITEMS_QUANTITY; j++)
+    		// KZ > теперь индекс предмета закэширован в Item_OnUseItem, скан всех Items не нужен
+    		if (CheckAttribute(al, "itemInd"))
     		{
-    			if (Items[j].useLocator == an.locator)
+    			j = sti(al.itemInd);
+    			if (j >= 0 && j < ITEMS_QUANTITY)
     			{
     				SendMessage(&itemModels[j], "lffffffffffff", MSG_MODEL_SET_POSITION, makeFloat(al.x), makeFloat(al.y)+makeFloat(an.itemDeltaY)+deltaY, makeFloat(al.z), makeFloat(al.vx.x), makeFloat(al.vx.y), -makeFloat(al.vx.z), makeFloat(al.vy.x), makeFloat(al.vy.y), -makeFloat(al.vy.z), makeFloat(al.vz.x), makeFloat(al.vz.y), -makeFloat(al.vz.z));
-    				break;
+    			}
+    		}
+    		else
+    		{
+    			// > пока оставим для сейва старой версии (TODO del > на релизе удалить этот кусок)
+    			for (j = 0; j < ITEMS_QUANTITY; j++)
+    			{
+    				if (Items[j].useLocator == an.locator)
+    				{
+    					SendMessage(&itemModels[j], "lffffffffffff", MSG_MODEL_SET_POSITION, makeFloat(al.x), makeFloat(al.y)+makeFloat(an.itemDeltaY)+deltaY, makeFloat(al.z), makeFloat(al.vx.x), makeFloat(al.vx.y), -makeFloat(al.vx.z), makeFloat(al.vy.x), makeFloat(al.vy.y), -makeFloat(al.vy.z), makeFloat(al.vz.x), makeFloat(al.vz.y), -makeFloat(al.vz.z));
+    					break;
+    				}
     			}
     		}
     	}
@@ -434,7 +503,10 @@ void Items_ShowItem(int _itemN)
 {
 	aref al;
 	aref activeLocation;
+	float x, y, z, fUp, fTemp;
 	makearef(activeLocation, Locations[sti(pchar.itemLocationIndex)]);
+
+	DeleteAttribute(&Items[_itemN], "particleId");
 
 	if (Items[_itemN].model == "")
 	{
@@ -457,6 +529,25 @@ void Items_ShowItem(int _itemN)
 				Trace("Items_ShowItem: showing item at "+al.x+", "+al.y+", "+al.z);
 
 			SendMessage(&itemModels[_itemN], "lffffffffffff", MSG_MODEL_SET_POSITION, makeFloat(al.x), makeFloat(al.y), makeFloat(al.z), makeFloat(al.vx.x), makeFloat(al.vx.y), -makeFloat(al.vx.z), makeFloat(al.vy.x), makeFloat(al.vy.y), -makeFloat(al.vy.z), makeFloat(al.vz.x), makeFloat(al.vz.y), -makeFloat(al.vz.z));
+
+			// > подсветка перком "Глаз алмаз"
+			if (bHawkEyeShow && !StrHasStr(Items[_itemN].startLocator, "fire,button", true))
+			{
+				fUp = 0.2;
+				// > камень ростовщика и кольцо "красавицы" поднимаем на высоту травы
+				if (CheckAttribute(&InterfaceStates, "HerbDetails.Height") && StrHasStr(Items[_itemN].id, "UsurersJew,WeddingRing", true))
+				{
+					fTemp = stf(InterfaceStates.HerbDetails.Height);
+					if (fTemp > 0.65) fUp = 0.6;
+					else if (fTemp < 0.17) fUp = 0.25;
+					else if (fTemp < 0.25) fUp = fTemp * 1.5;
+					else fUp = fTemp * 1.75;
+				}
+				x = makeFloat(al.x);
+				y = makeFloat(al.y) + fUp;
+				z = makeFloat(al.z);
+				Items[_itemN].particleId = CreateParticleSystemX("HawkEye", x, y, z, x, y, z, 0);
+			}
 		}
 	}
 	else
@@ -471,7 +562,7 @@ void Items_ShowItem(int _itemN)
 			al = useLocators[i];
 			if (useAttrs[i].locator == Items[_itemN].useLocator)
 			{
-				SendMessage(&itemModels[i], "lffffffffffff", MSG_MODEL_SET_POSITION, makeFloat(al.x), makeFloat(al.y)+makeFloat(useAttrs[i].itemDeltaY)+makeFloat(useAttrs[i].deltaY), makeFloat(al.z), makeFloat(al.vx.x), makeFloat(al.vx.y), -makeFloat(al.vx.z), makeFloat(al.vy.x), makeFloat(al.vy.y), -makeFloat(al.vy.z), makeFloat(al.vz.x), makeFloat(al.vz.y), -makeFloat(al.vz.z));
+				SendMessage(&itemModels[_itemN], "lffffffffffff", MSG_MODEL_SET_POSITION, makeFloat(al.x), makeFloat(al.y)+makeFloat(useAttrs[i].itemDeltaY)+makeFloat(useAttrs[i].deltaY), makeFloat(al.z), makeFloat(al.vx.x), makeFloat(al.vx.y), -makeFloat(al.vx.z), makeFloat(al.vy.x), makeFloat(al.vy.y), -makeFloat(al.vy.z), makeFloat(al.vz.x), makeFloat(al.vz.y), -makeFloat(al.vz.z));
 				return;
 			}
 		}
@@ -484,18 +575,13 @@ void Items_ShowItemNew(string locator, int _itemN)
 	aref activeLocation;
 	makearef(activeLocation, Locations[sti(pchar.itemLocationIndex)]);
 
-	int modelIndex = iHerbItemModelsCount;
-
-	if (modelIndex >= GetArraySize(&JungleHerbs))
-	{
-		trace("Items_ShowItemNew: >= " + GetArraySize(&JungleHerbs) + " items!");
-		return;
-	}
-
-	iHerbItemModelsCount++;
+	DeleteAttribute(activeLocation, "itemShow." + locator + ".particleId");
 
 	if (_itemN < 0)
+	{
 		trace("Items_ShowItemNew: item not found!!!");
+		return;
+	}
 
 	if (Items[_itemN].model == "")
 	{
@@ -505,6 +591,14 @@ void Items_ShowItemNew(string locator, int _itemN)
 
 	if (StrStartsWith(Items[_itemN].id, "herb_") && GetBan("HerbHarvest"))
 		return;
+
+	int modelIndex = Items_GetHerbModelSlot(activeLocation, locator);
+
+	if (modelIndex < 0)
+	{
+		trace("Items_ShowItemNew: >= " + MAX_LOADED_HERBS + " items!");
+		return;
+	}
 
 	activeLocation.itemShow.(locator).modelIndex = modelIndex;
 	Items_LoadModel(&JungleHerbs[modelIndex], &Items[_itemN]);
@@ -547,6 +641,43 @@ void Items_ShowItemNew(string locator, int _itemN)
 
 		SendMessage(&JungleHerbs[modelIndex], "lffffffffffff", MSG_MODEL_SET_POSITION, makeFloat(al.x), makeFloat(al.y), makeFloat(al.z), makeFloat(al.vx.x), makeFloat(al.vx.y), -makeFloat(al.vx.z), makeFloat(al.vy.x), makeFloat(al.vy.y), -makeFloat(al.vy.z), makeFloat(al.vz.x), makeFloat(al.vz.y), -makeFloat(al.vz.z));
 	}
+}
+
+// > слот JungleHerbs под модель: первый, на который не ссылается modelIndex другой записи itemShow; остаток в слоте удаляется
+int Items_GetHerbModelSlot(aref _location, string _locator)
+{
+	aref arShow, arItem;
+	int i, n, q;
+	string sBusy = ",";
+
+	if (CheckAttribute(_location, "itemShow"))
+	{
+		makearef(arShow, _location.itemShow);
+		q = GetAttributesNum(arShow);
+
+		for (n = 0; n < q; n++)
+		{
+			arItem = GetAttributeN(arShow, n);
+
+			if (GetAttributeName(arItem) == _locator || !CheckAttribute(arItem, "modelIndex"))
+				continue;
+
+			sBusy = sBusy + arItem.modelIndex + ",";
+		}
+	}
+
+	for (i = 0; i < MAX_LOADED_HERBS; i++)
+	{
+		if (HasStr(sBusy, "," + i + ","))
+			continue;
+
+		if (IsEntity(&JungleHerbs[i]))
+			DeleteClass(&JungleHerbs[i]);
+
+		return i;
+	}
+
+	return -1;
 }
 
 void Items_HideItem(int itemN)
@@ -888,15 +1019,43 @@ void OpenBoxProcedure()
 {
 	if (!CheckAttribute(pchar, "boxname") || GetBan("Looting")) return;
 	int locidx = FindLoadedLocation();
-	if(locidx<0) return;
+	if (locidx < 0) return;
+
 	string atrName = pchar.boxname;
 	aref ar;
 	makearef(ar,Locations[locidx].(atrName));
-	if(GetAttributesNum(ar)==0)
+
+	if (GetAttributesNum(ar) == 0)
 	{
 		Locations[locidx].(atrName).Money = 0;
 		makearef(ar, Locations[locidx].(atrName));
 	}
+
+	if (CheckAttrValue(pchar, "location", "Bucaneer_outpost_house_2") && atrName == "box1")
+	{
+		if (GetCharacterIndex("Buccaneer_trader_1") >= 0)
+		{
+			ref rChar = CharacterFromID("Buccaneer_trader_1");
+			locidx = FindFreeStore("Bucaneer_outpost_store");
+
+			if (locidx >= 0 && !CheckAttribute(rChar, "StorageOpen"))
+			{
+				rChar.StorageOpen = "Opened";
+				rChar.StoragePrice = 0;
+			}
+
+			SaveCurrentNpcQuestDateParam(rChar, "Storage.Date");
+			LaunchItemsStorage(&Stores[locidx]);
+		}
+		else
+			OpenBoxProcedureFunc(&ar);
+	}
+	else
+		OpenBoxProcedureFunc(&ar);
+}
+
+void OpenBoxProcedureFunc(ref rBox)
+{
 	// God_hit_us  это такой прикол - задействовать в ловушки для сундуков(boal)
 	// токо сундуки и дома
 	if (sti(pchar.GenQuest.God_hit_us) == 1 && rand(100) >= (85 + GetCharacterSkillToOld(pchar, SKILL_FORTUNE)))
@@ -907,7 +1066,7 @@ void OpenBoxProcedure()
 	}
 	else
 	{
-		LaunchItemsBox(&ar);
+		LaunchItemsBox(&rBox);
 	}
 }
 
@@ -1127,93 +1286,140 @@ bool SpawnItem(ref _chr, ref _id, bool isAbordageBox, float luck)
 	return true;
 }
 
-// KZ > автоматическая посадка травы; авторы в ККС: Jason, mitrokosta
+// KZ > пул свободных локаторов flower* под посадку травы
+void HerbGetLocatorPool(ref rLoc, ref sPool)
+{
+	if (!CheckAttribute(rLoc, "locators.item")) return;
+
+	int i;
+	string sLocator;
+
+	for (i = 0; i < MAX_LOADED_HERBS; i++)
+	{
+		sLocator = "flower" + (i + 1);
+
+		if (!CheckAttribute(rLoc, "locators.item." + sLocator))
+			continue;
+
+		if (CheckAttribute(rLoc, "itemShow." + sLocator))
+			continue;
+
+		ArrayAddValue(&sPool, sLocator);
+	}
+}
+
+// > автоматическая посадка травы; авторы в ККС: Jason, mitrokosta
 bool HarvestHerbAuto(ref rLoc)
 {
+	// > отложенная ручная посадка
+	if (CheckAttribute(rLoc, "HarvestHerbPending"))
+		HarvestHerbCustom(rLoc.id, rLoc.HarvestHerbPending);
+
 	if (GetBan("HerbHarvest") || CheckAttribute(rLoc, "HarvestHerbCustom")) return false;
 	if (!CheckAttribute(rLoc, "id") || !CheckAttribute(rLoc, "type")) return false;
 	if (rLoc.type != "jungle" && rLoc.type != "mayak") return false;
-	if (CheckAttribute(rLoc, "fastreload") && CheckAttribute(rLoc, "id.label") && rLoc.id.label != "exittown") return false;
-	if (!CheckAttribute(rLoc, "locators.item") || rLoc.id.label == "Cave entrance" || rLoc.type == "seashore" || rLoc.type == "cave") return false;
+	if (rLoc.id == "Bucaneer_outpost") return false;
+	if (!CheckAttribute(rLoc, "locators.item")) return false;
+
+	string sLabel = "";
+	if (CheckAttribute(rLoc, "id.label")) sLabel = rLoc.id.label;
+
+	if (sLabel == "Cave entrance") return false;
+	if (CheckAttribute(rLoc, "fastreload") && sLabel != "exittown") return false;
 
 	int iPerk = CheckCharacterPerk(pchar, "Naturalcure");
 
-	if (CheckAttribute(rLoc, "HarvestHerbAuto") && GetNpcQuestPastDayParam(rLoc, "HarvestHerbAuto") > (9 - iPerk))
+	if (CheckAttribute(rLoc, "HarvestHerbAuto"))
 	{
-		// > травы вырастают вновь каждые 9-10 дней (если у rLoc нет атрибута ручной посадки HarvestHerbCustom)
+		// > травы вырастают вновь каждые 9-10 дней (с перком "Лечение травами" - на день раньше)
+		if (GetNpcQuestPastDayParam(rLoc, "HarvestHerbAuto") <= (9 - iPerk)) return false;
 		HarvestHerbClear(rLoc.id, 0);
 	}
 
-	if (!CheckAttribute(rLoc, "HarvestHerbAuto"))
+	int i, n = 1 + iPerk; // > сколько растений садить в джунглях и на маяках (1, а при наличии перка "Лечение травами" - 2)
+	string sItem, sLocator, sTemp[2];
+
+	if (sLabel == "exittown")
+		n += 1; // > сразу за городскими воротами растёт ещё на 1 растение больше
+
+	HerbGetLocatorPool(rLoc, &sTemp);
+
+	for (i = 0; i < n; i++)
 	{
-		int i, n = 1 + iPerk; // > сколько растений садить в джунглях и на маяках (1, а при наличии перка "Лечение травами" - 2)
-		string sItem, sLocator, sTemp[2];
+		sLocator = ArrayCutRandomValue(&sTemp);
+		if (sLocator == "") break; // > свободных flower-локаторов в локации меньше, чем n
 
-		if (rLoc.id.label == "exittown")
-			n += 1; // > сразу за городскими воротами растёт ещё на 1 растение больше
+		sItem = "" + Items[ITEMS_HERBS + rand((ITEMS_RECIPIES - ITEMS_HERBS) - 1)].id;
+		SetItemInLocation(sItem, rLoc.id, sLocator);
 
-		for (i = 0; i < MAX_LOADED_HERBS; i++)
-		{
-			ArrayAddValue(&sTemp, "flower" + (i + 1));
-		}
-
-		for (i = 0; i < n; i++)
-		{
-			sLocator = ArrayGetRandomValue(&sTemp);
-			ArrayRemoveValue(&sTemp, sLocator);
-
-			if (!CheckAttribute(rLoc, "locators.item." + sLocator))
-				continue;
-
-			sItem = "" + Items[Ingredients_start + rand((Ingredients_end - Ingredients_start) - 1)].id;
-			SetItemInLocation(sItem, rLoc.id, sLocator);
-
-			rLoc.HarvestHerbAuto.(sLocator) = true;
-//			Logs("Травка " + GetItemName(sItem) + " выросла в " + sLocator);
-		}
-
-		SaveCurrentNpcQuestDateParam(rLoc, "HarvestHerbAuto");
-		return true;
+		rLoc.HarvestHerbAuto.(sLocator) = true;
+//		Logs("Травка " + GetItemName(sItem) + " выросла в " + sLocator);
 	}
 
-	return false;
+	SaveCurrentNpcQuestDateParam(rLoc, "HarvestHerbAuto");
+	return true;
 }
 
-// KZ > ручная посадка травы в случайный локатор flower*
+// > ручная посадка травы в случайные локаторы flower*
 bool HarvestHerbCustom(string _sLocation, string _sHerbs)
 {
 	if (FindLocation(_sLocation) < 0)
 		return false;
 
 	ref rLoc = &locations[FindLocation(_sLocation)];
+
+	if (!CheckAttribute(rLoc, "locators"))
+	{
+		rLoc.HarvestHerbPending = _sHerbs;
+		return true;
+	}
+
+	DeleteAttribute(rLoc, "HarvestHerbPending");
 	HarvestHerbClear(_sLocation, 1);
 
-	int i, n, h = KZ|Symbol(_sHerbs, ",");
-	int q = 0;
+	int i, q, n, h = KZ|Symbol(_sHerbs, ",");
 	string sHerb, sLocator, sTemp[2];
 
-	for (i = 0; i < MAX_LOADED_HERBS; i++)
-	{
-		ArrayAddValue(&sTemp, "flower" + (i + 1));
-	}
+	HerbGetLocatorPool(rLoc, &sTemp);
+
+	int iCurLen = strlen(&_sHerbs);
+	int iCurPos = 0;
+	int iCurEnd, iColon, iHerbLen;
 
 	for (n = 0; n <= h; n++)
 	{
-		sHerb = stripblank(GetSubStr(_sHerbs, ",", n));
+		iCurEnd = findSubStr(&_sHerbs, ",", iCurPos);
 
-		if (KZ|Symbol(sHerb, ":") > 0)
+		if (iCurEnd < 0)
+			iCurEnd = iCurLen;
+
+		sHerb = "";
+
+		if (iCurEnd > iCurPos)
+			sHerb = stripblank(strcut(&_sHerbs, iCurPos, iCurEnd - 1));
+
+		iCurPos = iCurEnd + 1;
+
+		q = 1; // > количество по умолчанию
+		iColon = findSubStr(&sHerb, ":", 0);
+
+		if (iColon > 0)
 		{
-			q = sti(FindStringAfterChar(sHerb, ":"));
-			sHerb = FindStringBeforeChar(sHerb, ":");
+			iHerbLen = strlen(&sHerb);
+
+			if (iColon + 1 < iHerbLen)
+				q = sti(strcut(&sHerb, iColon + 1, iHerbLen - 1));
+
+			sHerb = strcut(&sHerb, 0, iColon - 1);
 		}
 
-		if (FindItem(sHerb) < 0)
+		if (q < 1 || sHerb == "" || FindItem(sHerb) < 0)
 			continue;
 
 		for (i = 0; i < q; i++)
 		{
-			sLocator = ArrayGetRandomValue(&sTemp);
-			ArrayRemoveValue(&sTemp, sLocator);
+			sLocator = ArrayCutRandomValue(&sTemp);
+			if (sLocator == "") return true; // > свободные локаторы кончились - лишнее не сажаем
 
 			SetItemInLocation(sHerb, _sLocation, sLocator);
 			rLoc.HarvestHerbCustom.(sLocator) = true;
@@ -1223,7 +1429,7 @@ bool HarvestHerbCustom(string _sLocation, string _sHerbs)
 	return true;
 }
 
-// KZ > удалить в локации _sLocation все травы; !bAll - удалить только те, что посажены автоматически, bAll - и те, что вручную тоже
+// > удалить в локации _sLocation травы; !bAll - только посаженные автоматически, bAll - и ручные тоже
 bool HarvestHerbClear(string _sLocation, bool bAll)
 {
 	if (FindLocation(_sLocation) < 0)
@@ -1239,20 +1445,30 @@ bool HarvestHerbClear(string _sLocation, bool bAll)
 		if (i > 0)
 			sHerbType = "HarvestHerbCustom";
 
+		if (!CheckAttribute(rLoc, sHerbType))
+			continue;
+
 		makearef(arHerbs, rLoc.(sHerbType));
 		q = GetAttributesNum(arHerbs);
 
-		if (q > 0)
+		for (n = 0; n < q; n++)
 		{
-			for (n = 0; n < q; n++)
-			{
-				string flowerLocator = GetAttributeName(GetAttributeN(arHerbs, n));
-				RemoveItemFromLocation(rLoc.id, flowerLocator);
-			}
+			RemoveItemFromLocation(rLoc.id, GetAttributeName(GetAttributeN(arHerbs, n)));
+		}
+
+		DeleteAttribute(rLoc, sHerbType);
+	}
+
+	if (bAll)
+	{
+		DeleteAttribute(rLoc, "HarvestHerbPending");
+
+		for (n = 0; n < MAX_LOADED_HERBS; n++)
+		{
+			RemoveItemFromLocation(rLoc.id, "flower" + (n + 1));
 		}
 	}
 
-	DeleteAttributeEx(rLoc, "HarvestHerbAuto,HarvestHerbCustom");
 	return true;
 }
 
@@ -1264,6 +1480,10 @@ void SetItemInLocation(string itemID, string location, string locator) {
 	}
 	
 	locations[index].itemShow.(locator) = itemID;
+
+	// > в показанной локации модель ставим сразу, иначе её расставит Item_OnLoadLocation
+	if (Items_IsLocationShown(index))
+		Items_ShowItemNew(locator, FindItem(itemID));
 }
 
 // mitrokosta убрать предмет из локации
@@ -1272,8 +1492,29 @@ void RemoveItemFromLocation(string location, string locator) {
 	if (index < 0) {
 		return;
 	}
-	
+
+	// > модель и подсветка есть только у показанных предметов текущей локации
+	if (Items_IsLocationShown(index))
+	{
+		if (CheckAttribute(&locations[index], "itemShow." + locator + ".modelIndex"))
+		{
+			int iModel = sti(locations[index].itemShow.(locator).modelIndex);
+
+			if (iModel >= 0 && iModel < MAX_LOADED_HERBS && IsEntity(&JungleHerbs[iModel]))
+				DeleteClass(&JungleHerbs[iModel]);
+		}
+
+		if (CheckAttribute(&locations[index], "itemShow." + locator + ".particleId"))
+			DeleteParticleSystem(locations[index].itemShow.(locator).particleId);
+	}
+
 	DeleteAttribute(&locations[index], "itemShow." + locator);
+}
+
+// > предметы локации показаны (между Item_OnLoadLocation и Item_OnUnLoadLocation)
+bool Items_IsLocationShown(int _locIndex)
+{
+	return CheckAttribute(pchar, "itemLocationIndex") && sti(pchar.itemLocationIndex) == _locIndex;
 }
 
 object g_TmpModelVariable; // код от к3, в скриптах нет вообще, есть проверка в ядре

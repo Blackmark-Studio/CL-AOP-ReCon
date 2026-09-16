@@ -1,0 +1,212 @@
+Olone_dialog_1 {
+And what do those priceless dispatches conceal, Monsieur l'Olonnais? What was worth interrupting our toast for?
+}
+Olone_dialog_2 {
+A combined squadron. A true golden fleet, gentlemen. The royal treasury from Veracruz, the fortunes of prominent merchants, church silver... If that Spaniard's oaths are to be believed, the cargo is worth more than a million pesos. I must give him credit... He became remarkably forthcoming just before he finally ceased to be of any use to me.
+}
+Olone_dialog_3 {
+In that case, you can go after the Spanish silver alone. Ruin the operation with your impatience and you'll lose even the hope of a share in the prize.
+}
+Olone_dialog_4 {
+Damn you... You think I'll stand by while you take all the silver for yourselves? Not a chance. I'm coming with you. I'll leave my ship here - no reason to draw the coastal patrols' attention by parading around as an entire squadron.
+}
+Olone_dialog_5 {
+I see le Basque has recruited philosophers and spies. I hate hiding and skulking about like a coward. It puts me in a foul mood.
+}
+Olone_dialog_6 {
+Then you can go to Veracruz and ask them directly when and where the Silver Fleet is sailing.
+}
+Olone_dialog_7 {
+Ha! If that made even a grain of sense, I'd do exactly that. But with a prize this rich, I suppose I'll have to play by your rules.
+}
+Olone_dialog_8 {
+Then try to keep your blade sheathed until it's actually needed.
+}
+Olone_dialog_9 {
+How long are we going to stand here counting gulls? My bones are aching to question that pup.
+}
+Olone_dialog_10 {
+Hold your horses, l'Olonnais. First we have to find him and catch him.
+}
+Olone_dialog_11 {
+No extreme measures for now, Francois.
+}
+Olone_dialog_12 {
+Well? How much longer are we going to stand here staring at each other? Shall we finally go after that damned Arellano?
+}
+Olone_dialog_13 {
+Patience isn't your strong suit, is it? Fine. Let's go.
+}
+Olone_dialog_14 {
+We only wasted time. We should've killed those dogs at once instead of playing spy games with them.
+}
+Olone_dialog_15 {
+I'm not even going to try explaining it to you.
+}
+Olone_dialog_16 {
+@<pchar>, maybe you're the one not using your head? You want to leave those dogs behind us? We need to cut them down! Every last one!
+}
+Olone_dialog_17 {
+l'Olonnais, we've told you already - this was supposed to be a covert operation. Have some patience.
+}
+Olone_dialog_18 {
+So what do we do next?
+}
+Olone_dialog_19 {
+I'll speak to the man in the doublet. You spread out through the village and look around. Just don't make any noise.
+}
+Olone_dialog_20 {
+I see how it is. Need someone frightened - look, l'Olonnais is with us. Need someone to crawl straight into hell - l'Olonnais again. Meanwhile your own knees are probably shaking, only you haven't the courage to admit it.
+}
+Olone_dialog_21 {
+Complaining? Like hell! I'll show those dogs how a battle is fought!
+}
+Olone_dialog_22 {
+Unlike you, I'm not in the habit of wasting time on courtesies before cutting someone's throat.
+}
+Olone_dialog_23 {
+Well, well. The Cartagena squadron is about to find us battered and exhausted, and you want to start a bloodbath between our own crews?
+}
+Olone_dialog_24 {
+I trust you no more than I trust them! Don't even try...
+}
+Olone_dialog_25 {
+Shut up and listen: we take this ship in tow and get out of here before the men from Cartagena string us all from their yards. And you, they'll deliver straight to the Inquisition's cellars, make no mistake. If you like, you can sit right on top of the gold until we reach Tortuga and divide the prize according to the laws of the Brethren of the Coast.
+}
+Olone_dialog_26 {
+Argh... To hell with you. But once we're ashore, I'll weigh every ingot myself and count every damned stone. And if even one peso is missing - I swear on my life - you'll answer for it.
+}
+Olone_dialog_27 {
+I certainly hope so. Or you'll have to divide those half a million pesos you've hidden away among the rest of us.
+}
+Olone_dialog_28 {
+So that's why you're here? You can't stop thinking about the money Michel set aside for preparing the expedition?
+}
+Olone_dialog_29 {
+Are you implying something, you bastard?
+}
+Olone_dialog_30 {
+Are you really going to argue that Mademoiselle Bellefleur's company is far more pleasant than your eternally sour face?
+}
+Olone_dialog_31 {
+It's empty! Nothing but a handful of trinkets and coppers. The bastards took everything, down to the last peso.
+}
+Olone_dialog_32 {
+Maybe they simply hid it well?
+}
+Olone_dialog_33 {
+I have a nose for gold, @<pchar>, and it has never failed me. I've torn this place apart. Checked every crack in the floor and walls. No, those swine moved the treasury. Just let me get my hands on the bastard who arranged it - I swear I'll pull his soul out with pincers.
+}
+Olone_dialog_34 {
+No documents? Nothing showing where the gold went?
+}
+Olone_dialog_35 {
+Nothing, damn it. Not a single scrap of paper. Cursed Castilian pigs...
+}
+Olone_dialog_36 {
+If you find anything, tell Michel. I need to get back to other business.
+}
+Olone_dialog_37 {
+I'll give you credit, Michel. The damned Castilians would remember a trick like that for a long time. Assuming any of them survived it.
+}
+Olone_dialog_38 {
+I want to see their faces when my little present comes down on their heads... I'll repair the ship.
+}
+Olone_dialog_39 {
+Give it here. Well then, farewell, gentlemen of fortune. Time for me to go.
+}
+Olone_dialog_40 {
+Of course. I'm sailing at once. And if you want my advice - don't turn the settlement into one enormous drinking bout. It won't end well.
+}
+
+LeBasque_Fransua_Olone_1 {
+Don't rush to fill your throats, gentlemen buccaneers. First, listen to me – and the rum will seem sweeter than honey.
+}
+
+LeBasque_Fransua_Olone_2 {
+What do you mean? I've missed you all. And while I'm at it, I thought I'd suggest a little something that will make you all itchy.
+}
+
+LeBasque_Fransua_Olone_3 {
+It's not up to you to decide, but them. A small messenger boat fell into my clutches off Puerto Rico. A royal spy was on board. The bastard managed to burn almost all the papers he was carrying and even tried to put a bullet in his head. We didn't let him die that easy.
+}
+
+LeBasque_Fransua_Olone_4 {
+Of course. He was a tough bastard, I must admit. But I'm no stranger to loosening the tongues of the stubborn. They laid him on the hot sand, poured water on him, and left him to dry in the sun. They repeated this until his ribs began to crackle.
+}
+
+LeBasque_Fransua_Olone_5 {
+The squadron, its holds full of silver, will soon leave Veracruz. It will meet reinforcements from Cartagena off the coast of Cuba. Then it will sail for the Old World—if we allow them to, of course.
+}
+
+LeBasque_Fransua_Olone_6 {
+He didn't know the route. Otherwise, he would have laid it out like a good boy. But he knew the one who was scouting the bay for the squadrons' rendezvous.
+}
+
+LeBasque_Fransua_Olone_7 {
+Because that convoy was chock-full of silver. Ships were strictly forbidden from entering ports. They were afraid the sailors would tell the first drunk they met about such riches.
+}
+
+LeBasque_Fransua_Olone_8 {
+His name is Tomás de Arellano. He's an agent of the Casa de Contratación. And he's currently chilling out in the village of San Lazaro in Cuba.
+}
+
+LeBasque_Fransua_Olone_9 {
+Think what you want, Michel. But think better of how to assemble a stronger fleet and take back the Spaniards' silver before it slips out from under our noses. Unless, of course, you plan to die in this hole in poverty.
+}
+
+LeBasque_Fransua_Olone_10 {
+I've squeezed everything he knew out of him, Etienne. Our only clue is the surviving encrypted document, the name Arellano and the village of San Lazaro. All that remains is to read the paper.
+}
+
+LeBasque_Fransua_Olone_11 {
+So, we'll have to visit Señor Arellano in the village of San Lazaro and politely ask for this key. Michel, you were looking for a worthy target. Consider this parchment my entry fee.
+}
+
+LeBasque_Fransua_Olone_12 {
+Your doctor is wasting his medicine. Now I'll press a couple of hot coals to his heels, and that little bird will start singing like crazy.
+}
+
+LeBasque_Fransua_Olone_13 {
+How pampered you all are... A couple of drops of boiling oil on your fingers - and he will lay it all out himself, beauty.
+}
+
+LeBasque_Fransua_Olone_14 {
+Don't tear your throat out, Etienne. As you can see, he didn't kill me. He'll tell you everything you need to. And if you were so eager to run after him, tell him—I'll ask him to get up.
+}
+
+LeBasque_Fransua_Olone_15 {
+You're starting to get on my nerves, girl. Enough of this chatter, my dear! Let's go search him. We might not need his lies after all.
+}
+
+LeBasque_Fransua_Olone_16 {
+I hope my leg dies... While I'm dragging the wounded and counting the dead, are you staring at gold?
+}
+
+LeBasque_Fransua_Olone_17 {
+You think I don't know what you're up to? I'm not going to leave you alone with our gold! I know you, Le Basque!
+}
+
+LeBasque_Fransua_Olone_18 {
+That's what I said! You're a dishonest bastard, and I won't trust you with such a mountain of gold and stones!
+}
+
+LeBasque_Fransua_Olone_19 {
+Chasse-partie... Perhaps you'd like to pick up your fan and bow to us? Be clear, my dear. We're not in a royal palace.
+}
+
+LeBasque_Fransua_Olone_20 {
+This is all well and good, but my Fleo is rotten through and through. I won't lead men into battle on a vessel that leaks even at anchor.
+}
+
+LeBasque_Fransua_Olone_21 {
+I didn't ask you for anything. I just said I needed time to get a new vessel.
+}
+
+LeBasque_Fransua_Olone_22 {
+Come here. Well, good-bye, gentlemen of fortune. I have to go.
+}
+
+LeBasque_Fransua_Olone_23 {
+Of course. I'm sailing right now. And if you want my advice, don't throw a big drinking party in the settlement. It won't end well.
+}

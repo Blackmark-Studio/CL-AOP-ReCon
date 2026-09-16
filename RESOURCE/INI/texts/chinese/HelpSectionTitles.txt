@@ -1,9 +1,9 @@
-sea_minimap {导航小地图。}
-ship_commands {用于控制你的船只和同伴船只的指令。}
-fast_commands {当前快捷栏指令。}
-sea_aim {舰炮射击瞄准器。}
-alarm_indicator {警报指示器。}
-land_commands {陆地行动指令。}
-WorldMap_Date_Clock {地图上的日期和时间指示器。}
-WorldMap_Compas {地图上的指南针。}
-Dialog_window {对话窗口。}
+sea_minimap {导航小地图。 }
+ship_commands {用于控制你的船只和同伴船只的指令。 }
+fast_commands {当前快捷栏指令。 }
+sea_aim {舰炮射击瞄准器。 }
+alarm_indicator {警报指示器。 }
+land_commands {陆地行动指令。 }
+WorldMap_Date_Clock {地图上的日期和时间指示器。 }
+WorldMap_Compas {地图上的指南针。 }
+Dialog_window {对话窗口。 }

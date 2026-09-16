@@ -18,3 +18,13 @@ Officer info {Your officers demand their monthly wage:}
 All info {Net amount: }
 
 Insert Disk Ok {Please insert the first game disc.}
+
+BadSaveNoVersion {
+Could not determine the game version of the selected save.
+}
+BadSaveVersion {
+Game version of the selected save
+}
+BadSaveInfo {
+This version can be restored in Steam.
+}

@@ -94,3 +94,31 @@ Vamos ver. Naquele dia, os seguintes navios deixaram o porto: a chalupa “Adela
 Villemstad_PortMan_29 {
 Obrigado!
 }
+
+Villemstad_PortMan_30 {
+Poderia me dizer quais navios sob bandeira espanhola foram registrados aqui durante a última semana?
+}
+Villemstad_PortMan_31 {
+Sob bandeira espanhola, é? Não foram muitos.\nVejamos. O galeão 'Hernal Diaz', do capitão Gabriel de Seguenza. Dois fluyts mercantes chegaram ontem de Porto Bello; ambos estão registrados em nome de Andres Fonseca. E, naturalmente, o seu '@<PChar>'.
+}
+Villemstad_PortMan_32 {
+E de onde veio o galeão?
+}
+Villemstad_PortMan_33 {
+De Havana. Mas isso é apenas o que consta nos meus registros. Ninguém era obrigado a informar os detalhes de sua rota.
+}
+Villemstad_PortMan_34 {
+Por acaso sabe alguma coisa sobre os passageiros?
+}
+Villemstad_PortMan_35 {
+Receio que seja tudo.
+}
+Villemstad_PortMan_36 {
+Sim, uma pena.
+}
+Villemstad_PortMan_37 {
+Se está procurando alguém, pergunte aos trabalhadores do porto. Eles conversam com os marinheiros que chegam. Durante o dia não têm tempo para conversa, mas à noite costumam montar acampamento aqui mesmo, na praia.
+}
+Villemstad_PortMan_38 {
+Obrigado.
+}

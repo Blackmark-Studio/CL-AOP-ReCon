@@ -142,3 +142,9 @@ Nous sommes en route, Capitaine! Je rassemble l’équipage et nous embarquons t
 Sailor_42 {
 Allez, dépêche-toi, je n’ai pas l’intention de rester ici longtemps.
 }
+Sailor_43 {
+Bonjour, madame ! Que pouvez-vous bien vouloir à un simple matelot ?
+}
+Sailor_44 {
+Oh, rien, je ne faisais que passer.
+}

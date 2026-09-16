@@ -1,5 +1,12 @@
+#include "interface\utils\popup_error.c"
+#include "interface\utils\menu_volume.c"
+#include "interface\mainmenu_location.c"
+
 int iCanMoveChanges = 1;
-float fMus, fSnd;
+
+string currentRewardId = "";
+
+object rewardsInfo;
 
 void InitInterface(string iniName)
 {
@@ -7,15 +14,6 @@ void InitInterface(string iniName)
 	Event("DoInfoShower", "sl", "MainMenuLaunch", false);
 
 	string tmp;
-	float fS, fM, fD;
-	GetMasterVolume(&fS, &fM, &fD);
-
-	if (CheckAttribute(&TEV, "MENUVOLUME.MUS"))
-		fMus = stf(TEV.MENUVOLUME.MUS);
-	else
-		fMus = fM;
-
-	fSnd = fS;
 
 	aref arScrShoter;
 	if (!GetEntity(&arScrShoter, "scrshoter"))
@@ -45,7 +43,10 @@ void InitInterface(string iniName)
 	SetEventHandler("ShowDiscordQRCodeWindow", "ShowDiscordQRCodeWindow", 0);
 	SetEventHandler("ShowVKQRCodeWindow", "ShowVKQRCodeWindow", 0);
 	SetEventHandler("HideQRCodeWindow", "HideQRCodeWindow", 0);
-	SetEventHandler("VolumeFader", "VolumeFadeIn", 0);
+
+	SetEventHandler("CuratorCheckResult","MM_ProcessCuratorCheckResult",0);
+	SetEventHandler("MM_ShowReward", "MM_ShowReward", 0);
+	SetEventHandler("PopupIsShown","PopupIsShown",0);
 
 	// evganat - двигаем
 	SetEventHandler("MoveFinished", "MoveFinished", 0);
@@ -71,8 +72,13 @@ void InitInterface(string iniName)
 	// <---
 	// кнопка "продолжить игру" --->
 	string saveName = GetLastSavePathFromCurrentProfile();
-	string saveData;
-	if (saveName != "") SendMessage(&GameInterface, "lse", MSG_INTERFACE_GET_SAVE_DATA, saveName, &saveData);
+	string saveData = "";
+
+	if (saveName != "" && XI_CheckFolder(saveName))
+		SendMessage(&GameInterface, "lse", MSG_INTERFACE_GET_SAVE_DATA, saveName, &saveData);
+	else
+		saveName = "";
+
 	if (saveName == "" || saveData == "" || !HasSubStr(saveData, "SaveVer=" + VERSION_NUM_PRE))
 	{
 		SetSelectable("BTN_RESUMEGAME", false);
@@ -98,7 +104,7 @@ void InitInterface(string iniName)
 	SetNodeUsing("BTN_DLC_URL", true);
 
 	if (!MusicIsPlaying())
-		KZ|Random("Menu");
+		KZ|MusicRandom("Menu");
 
 	if (Whr_IsNight())
 		tmp = "night";
@@ -111,33 +117,162 @@ void InitInterface(string iniName)
 	ResetSoundScheme();
 	SetSoundScheme("mainmenu_" + tmp);
 
-	if (fMus < 0.333) fMus = 0.333;
-	if (CheckAttribute(&TEV, "MENUVOLUME.RTM"))
-	{
-		KZ|Volume(fMus, fSnd);
+	MenuVolume_FadeIn(); // > музыка и схема звука уже заведены, теперь громкость
 
-		if (sti(TEV.MENUVOLUME.RTM) == 1)
-			PostEvent("VolumeFader", 1);
-		else
-			DelEventHandler("VolumeFader", "VolumeFadeIn");
-	}
+	// Награды за франшизу
+	MM_InitFranchiseRewards();
 }
 
-void VolumeFadeIn()
+void MM_InitFranchiseRewards()
 {
-	DeleteAttribute(&TEV, "MENUVOLUME.RTM");
-	fMus += 0.01;
-	fSnd += 0.01;
-
-	if (fMus >= 1.0)
+	bool hasReward = false;
+	// Тичингиту
+	if (!CheckAttribute(&rewardsInfo, "indian_officer"))
 	{
-		KZ|Volume(1, 1);
-		DelEventHandler("VolumeFader", "VolumeFadeIn");
-		return;
+		rewardsInfo.indian_officer = or(HasPlaytestRewardNative(), BIsSubscribedApp(CL_STEAMID));
+		SetNewPicture("REWARD_ITEM_1", "interfaces\portraits\128\face_" + 2013 + ".tga");
+		hasReward = rewardsInfo.indian_officer == "1";
+		SetNodeUsing("REWARD_AVAILABLE_1", hasReward);
+		if (!hasReward)
+		{
+		    Picture_SetColor("REWARD_ITEM_1", argb(220,50,50,50));
+		}
 	}
 
-	KZ|Volume(fMus, fSnd);
-	PostEvent("VolumeFader", 55);
+	if (!CheckAttribute(&rewardsInfo, "legendGuide"))
+	{
+		SetNewGroupPicture("REWARD_ITEM_2","ITEMS_33", "itm15");
+		SetNodeUsing("REWARD_AVAILABLE_2", false);
+		int status = -1;
+		if (GetSteamEnabled())
+		{
+		    status = BeginCuratorCheckAsync(CL_CURATOR, 10);
+		}
+		if (status == 0) Log_Info("Error while checking your Steam subscription. Please try restarting the game");
+	}
+
+	SetNewGroupPicture("REWARD_ITEM_3","ITEMS_EMPTY", "empty");
+	Picture_SetColor("REWARD_ITEM_3", argb(220,50,50,50));
+	SetNodeUsing("REWARD_AVAILABLE_3", false);
+}
+
+void MM_ShowReward()
+{
+	string comName = GetEventData();
+	string nodName = GetEventData();
+
+	ref item;
+	bool bOk = false;
+	object mockItem;
+
+	switch (nodName)
+	{
+		// Тичингиту
+		case "REWARD_ITEM_1":
+			mockItem.isMock = true;
+			mockItem.id = "indian_officer";
+			mockItem.picTexture = "interfaces\portraits\256\face_" + 2013 + ".tga";
+			mockItem.name = FindPersonalName("Tichingitu_name");
+			mockItem.describe = GetConvertStr("indian_officer_desc", "franchiseRewards.txt");
+
+			item = &mockItem;
+			bOk = true;
+		break;
+		// Предмет за подписку
+		case "REWARD_ITEM_2":
+			item = ItemsFromID("legendGuide");
+			DumpAttributes(item);
+			bOk = true;
+	 	break;
+		case "REWARD_CLOSE_BUTTON":
+		{
+			MM_HideReward();
+			return;
+		}
+		break;
+	}
+
+	if (!bOk) MM_ShowEmptyReward();
+	else MM_ShowRewardItem(item);
+}
+
+void MM_ShowEmptyReward()
+{
+	ShowError(GetConvertStr("noRewardYetMessage", "franchiseRewards.txt"));
+	XI_WindowDisable("REWARD_WINDOW", true);
+	XI_WindowShow("REWARD_WINDOW", false);
+}
+
+void MM_ShowRewardItem(ref item)
+{
+	if (!CheckAttribute(item, "id"))
+	{
+		Trace("MM_ShowRewardItem - item has no Id");
+	    return;
+	}
+	SetFormatedText("REWARD_CONDITIONS", GetConvertStr("condition_" + item.id, "franchiseRewards.txt"));
+	if (MM_ToggleReward(currentRewardId != item.id)) return;
+
+	currentRewardId = item.id;
+	if (CheckAttribute(item, "isMock"))
+	{
+		SetNewPicture("REWARD_PICTURE", item.picTexture);
+		SetFormatedText("REWARD_NAME", item.name);
+		SetFormatedText("REWARD_DESCRIPTION", item.describe);
+	}
+	else
+	{
+		SetNewGroupPicture("REWARD_PICTURE", item.picTexture, "itm" + item.picIndex);
+		SetFormatedText("REWARD_NAME", GetItemName(item.id));
+		SetFormatedText("REWARD_DESCRIPTION", GetItemDescribe(sti(item.index), GetMainCharacter()));
+	}
+	SetVAligmentFormatedText("REWARD_NAME");
+
+//	FillUpDescriptors(item, !XI_IsWindowEnable("REWARD_WINDOW"));
+//	FillUpStats(item, &NullCharacter);
+
+	string steamButtonText = GetConvertStr("steamButtonGet", "franchiseRewards.txt");
+	bool alreadyGot = false;
+	string sAttr = item.id;
+
+	if (CheckAttribute(&rewardsInfo, sAttr) && rewardsInfo.(sAttr) == "1")
+	{
+		alreadyGot = true;
+	}
+
+	SetSelectable("GET_REWARD_BUTTON", !alreadyGot);
+	if (alreadyGot) steamButtonText = GetConvertStr("steamButtonAlreadyGot", "franchiseRewards.txt");
+	SendMessage(&GameInterface,"lsls",MSG_INTERFACE_MSG_TO_NODE,"GET_REWARD_BUTTON",0, "#"+steamButtonText);
+}
+
+bool MM_ToggleReward(bool forceShow)
+{
+	bool isShowed = XI_IsWindowEnable("REWARD_WINDOW");
+	if (forceShow) isShowed = false;
+
+	if (!isShowed) MM_InitFranchiseRewards();
+	XI_WindowDisable("REWARD_WINDOW", isShowed);
+	XI_WindowShow("REWARD_WINDOW", !isShowed);
+	SetCurrentNode("REWARD_CLOSE_BUTTON");
+	return isShowed;
+}
+
+void MM_HideReward()
+{
+	XI_WindowDisable("REWARD_WINDOW", true);
+	XI_WindowShow("REWARD_WINDOW", false);
+}
+
+void PopupIsShown()
+{
+	XI_WindowDisable("CHANGES_WINDOW", true);
+	XI_WindowDisable("QR_WINDOW", true);
+}
+
+void PopupIsClosed()
+{
+	XI_WindowDisable("CHANGES_WINDOW", false);
+	XI_WindowDisable("QR_WINDOW", false);
 }
 
 void NewGamePress()
@@ -186,7 +321,11 @@ void IDoExit(int exitCode, bool bClear)
 	DelEventHandler("ShowDiscordQRCodeWindow", "ShowDiscordQRCodeWindow");
 	DelEventHandler("ShowVKQRCodeWindow", "ShowVKQRCodeWindow");
 	DelEventHandler("HideQRCodeWindow", "HideQRCodeWindow");
-	DelEventHandler("VolumeFader", "VolumeFadeIn");
+	MenuVolume_Stop();
+
+	DelEventHandler("CuratorCheckResult","MM_ProcessCuratorCheckResult");
+	DelEventHandler("MM_ShowReward", "MM_ShowReward");
+	DelEventHandler("PopupIsShown","PopupIsShown");
 
 	// evganat - двигаем
 	DelEventHandler("MoveFinished", "MoveFinished");
@@ -278,7 +417,6 @@ void HideQRCodeWindow()
 	XI_WindowDisable("QR_WINDOW", true);
 }
 
-int iChar;
 void MainMenu_CreateBackEnvironment()
 {
 	LayerFreeze(EXECUTE, false);
@@ -286,17 +424,36 @@ void MainMenu_CreateBackEnvironment()
 
 	if (CheckAttribute(&InterfaceStates, "BackEnvironmentIsCreated") && InterfaceStates.BackEnvironmentIsCreated == "1") return;
 
+	// KZ > сцены нет, значит прошлую уже снесли вместе с сущностями - выбор локации пора обновить
+	MainMenuLoc_Forget();
+
 	Render.BackColor = 0;
 	Render.SeaEffect = false;
 	Sea.UnderWater = false;
 	bMainCharacterInFire = false;
 	bMainMenu = true;
 
-	ICreateWeather();
+	int iMenuLoc = MainMenuLoc_Choose();
+
+	ICreateWeather(iMenuLoc);
 
 	CreateEntity(&InterfaceBackScene, "InterfaceBackScene");
 	LayerAddObject(EXECUTE, &InterfaceBackScene, -1);
 	LayerAddObject(REALIZE, &InterfaceBackScene, 1000);
+
+	// > фон из обычной локации: свет, фонари, техники и погода приезжают вместе с ней
+	if (iMenuLoc >= 0)
+	{
+		if (MainMenuLoc_Load(iMenuLoc))
+		{
+			bMainMenu = false;
+			return;
+		}
+		Trace("MainMenuLoc: локация " + MainMenuLoc_Id(iMenuLoc) + " не загрузилась, показываю штатную сцену меню");
+		MainMenuLoc_Forget();
+		// > локация могла оказаться сухопутной и море не завести - штатной сцене оно нужно
+		MainMenu_CreateSea("MainMenu");
+	}
 
 	SendMessage(&InterfaceBackScene, "ls", 0, "MainMenu\MainMenu"); // set model
 	SendMessage(&InterfaceBackScene, "ls", 1, "camera"); // set camera
@@ -345,7 +502,6 @@ void MainMenu_DeleteBackEnvironment()
 	LayerDelObject(REALIZE, &InterfaceBackScene);
 
 	MainMenu_DeleteAnimals();
-	DeleteClass(GetCharacter(iChar));
 	DeleteShipEnvironment();
 	DeleteWeather();
 	DeleteSea();
@@ -374,7 +530,24 @@ void MainMenu_DeleteAnimals()
 }
 // Hokkins: <--
 
-void ICreateWeather()
+// > море и пена сцены меню. У локации они берутся из её environment, у штатной сцены - как раньше
+bool bMainMenuSeaCreated = false;
+void MainMenu_CreateSea(string sFoamID)
+{
+	if (!bMainMenuSeaCreated)
+	{
+		CreateSea(EXECUTE, REALIZE);
+		Sea.MaxSeaHeight = 1.0;
+		Sea.isDone = "";
+		bMainMenuSeaCreated = true;
+	}
+
+	// > пену переставляем всегда: на откате в кадре должен быть прибой штатной сцены, а не чужой
+	if (IsEntity(&CoastFoam)) DeleteCoastFoamEnvironment();
+	if (sFoamID != "") CreateCoastFoamEnvironment(sFoamID, EXECUTE, REALIZE);
+}
+
+void ICreateWeather(int iMenuLoc)
 {
 	int n = 0;
 
@@ -401,6 +574,25 @@ void ICreateWeather()
 		}
 	}
 
+	// > у локации-фона запечённый свет бывает только под одну погоду, и тогда при любой другой нужный *.col не найдётся, а движок проглотит это молча и отрисует сцену плоско
+	if (iMenuLoc >= 0)
+	{
+		string sLocWeather = MainMenuLoc_Weather(iMenuLoc);
+		int iLocIdx = MainMenuLoc_LocIndex(iMenuLoc);
+		if (sLocWeather == "" && iLocIdx >= 0)
+		{
+			// > у локации с залоченной квестовой погодой свет запечён только под неё
+			if (CheckAttribute(&Locations[iLocIdx], "QuestlockWeather")) sLocWeather = Locations[iLocIdx].QuestlockWeather;
+		}
+
+		if (sLocWeather != "")
+		{
+			int iLocWeather = FindWeather(sLocWeather);
+			if (iLocWeather >= 0) n = iLocWeather;
+			else Trace("MainMenuLoc: погода " + sLocWeather + " локации " + MainMenuLoc_Id(iMenuLoc) + " не найдена");
+		}
+	}
+
 	if (n < 0 || n >= iTotalNumWeathers) n = 0;
 	SetNextWeather(Weathers[n].id);
 	iBlendWeatherNum = -1; // залоченная погода
@@ -409,13 +601,22 @@ void ICreateWeather()
 	InterfaceBackScene.current_weather = n;
 	InterfaceStates.mainmenuweather = n;
 
-	CreateSea(EXECUTE, REALIZE);
+	bMainMenuSeaCreated = false;
+	if (MainMenuLoc_NeedSea(iMenuLoc))
+	{
+		CreateSea(EXECUTE, REALIZE);
+		bMainMenuSeaCreated = true;
+	}
 	CreateWeather(EXECUTE, REALIZE);
 	CreateShipEnvironment();
 	Sea.MaxSeaHeight = 1.0;
 	Sea.isDone = "";
 
-	CreateCoastFoamEnvironment("MainMenu", EXECUTE, REALIZE);
+	if (bMainMenuSeaCreated)
+	{
+		string sFoamID = MainMenuLoc_FoamID(iMenuLoc);
+		if (sFoamID != "") CreateCoastFoamEnvironment(sFoamID, EXECUTE, REALIZE);
+	}
 
 	iBlendWeatherNum = -1; // залоченная погода
 }
@@ -425,4 +626,30 @@ void LoadLastSave()
 	SetEventHandler("evntLoad", "LoadGame", 0);
 	PostEvent("evntLoad", 0, "s", GetLastSavePathFromCurrentProfile());
 	IDoExit(-1, false);
+}
+
+void MM_ProcessCuratorCheckResult()
+{
+	string sResult = GetEventData();
+	if (sResult == "success")
+	{
+		rewardsInfo.legendGuide = true;
+		if (currentRewardId != "" && currentRewardId == "legendGuide")
+		{
+			SetSelectable("GET_REWARD_BUTTON", false);
+			SendMessage(&GameInterface,"lsls",MSG_INTERFACE_MSG_TO_NODE,"GET_REWARD_BUTTON",0, "#"+GetConvertStr("steamButtonAlreadyGot", "franchiseRewards.txt"));
+		}
+		SetNodeUsing("REWARD_AVAILABLE_2", true);
+		return;
+	}
+
+	SetNodeUsing("REWARD_AVAILABLE_2", false);
+	if (sResult == "notsubscribedfailure")
+	{
+		Trace("ProcessCuratorCheckResult: NotSubscribedFailure! ;-(");
+	}
+	else
+	{
+		Trace("ProcessCuratorCheckResult: Unknown sResult=" + sResult);
+	}
 }

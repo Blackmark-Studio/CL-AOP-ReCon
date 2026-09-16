@@ -1723,11 +1723,69 @@ int LocationInitTortuga(int n)
 	locations[n].locators_radius.reload.reload2_back = 2;
 
 	locations[n].reload.l3.name = "reload3_back";
-	locations[n].reload.l3.go = "Tortuga_CaveEntrance";
+	locations[n].reload.l3.go = "Tortuga_jungle_02";
 	locations[n].reload.l3.emerge = "reload2";
 	locations[n].reload.l3.autoreload = "1";
 	locations[n].reload.l3.label = "Jungle";
 	locations[n].locators_radius.reload.reload3_back = 2;
+	n = n + 1;
+
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	// Джунгли шахты
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	locations[n].id = "Tortuga_jungle_02";
+	locations[n].id.label = "Jungle";
+	locations[n].image = "loading\outside\jungle.tga";
+	//Sound
+	locations[n].type = "jungle";
+	locations[n].islandId = "Tortuga";
+	//Models
+	//Always
+	locations[n].filespath.models = "locations\Outside\Jungles\Jungle3";
+	Locations[n].models.always.jungle = "jungle3";
+	Locations[n].models.always.locators = "Jungle3_mine_locators";
+	Locations[n].models.always.grassPatch = "jungle3_grass";
+	Locations[n].models.always.grassPatch.texture = "grass\grassshore.tga.tx";
+	Locations[n].models.always.l1 = "plan1";
+	Locations[n].models.always.l1.level = 9;
+	Locations[n].models.always.l1.tech = "LocationModelBlend";
+	Locations[n].models.always.l2 = "plan2";
+	Locations[n].models.always.l2.level = 8;
+	Locations[n].models.always.l2.tech = "LocationModelBlend";
+	Locations[n].models.always.l3 = "plan3";
+	Locations[n].models.always.l3.level = 7;
+	Locations[n].models.always.l3.tech = "LocationModelBlend";
+	Locations[n].models.always.l4 = "Jungle3_wall";
+	locations[n].models.always.l4.tech = "DLightModel";
+	//Day
+	locations[n].models.day.charactersPatch = "jungle3_patch";
+	//Night
+	locations[n].models.night.charactersPatch = "jungle3_patch";
+	//Environment
+	locations[n].environment.weather = "true";
+	locations[n].environment.sea = "false";
+
+	//Reload map
+	locations[n].reload.l1.name = "reload1_back";
+	locations[n].reload.l1.go = "Tortuga_CaveEntrance";
+	locations[n].reload.l1.emerge = "reload2";
+	locations[n].reload.l1.autoreload = "1";
+	locations[n].reload.l1.label = "Jungle";
+	locations[n].locators_radius.reload.reload1_back = 2.0;
+
+	locations[n].reload.l2.name = "reload2_back";
+	locations[n].reload.l2.go = "Tortuga_jungle_01";
+	locations[n].reload.l2.emerge = "reload3_back";
+	locations[n].reload.l2.autoreload = "1";
+	locations[n].reload.l2.label = "Jungle";
+	locations[n].locators_radius.reload.reload2_back = 2.0;
+
+	locations[n].reload.l3.name = "reload3_back";
+	locations[n].reload.l3.go = "Bucaneer_outpost";
+	locations[n].reload.l3.emerge = "reload1_back";
+	locations[n].reload.l3.autoreload = "0";
+	locations[n].reload.l3.label = "Village";
+	locations[n].locators_radius.reload.reload3_back = 1.8;
 	n = n + 1;
 
 	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -1774,8 +1832,8 @@ int LocationInitTortuga(int n)
 	locations[n].locators_radius.reload.reload1_back = 1.3;
 
 	locations[n].reload.l2.name = "reload2_back";
-	locations[n].reload.l2.go = "Tortuga_jungle_01";
-	locations[n].reload.l2.emerge = "reload3";
+	locations[n].reload.l2.go = "Tortuga_jungle_02";
+	locations[n].reload.l2.emerge = "reload1";
 	locations[n].reload.l2.autoreload = "1";
 	locations[n].reload.l2.label = "Jungle";
 	locations[n].locators_radius.reload.reload2_back = 2.0;
@@ -1884,6 +1942,489 @@ int LocationInitTortuga(int n)
 	locations[n].reload.l3.label = "Sea";
 	locations[n].locators_radius.reload.boat = 9.0;
 	n = n + 1;
+
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	// Пиратское поселение
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	Locations[n].id = "Bucaneer_outpost";
+	locations[n].id.label = "Bucaneer_outpost";
+	Locations[n].image = "loading\towns\pearl.tga";
+	//Sound
+	locations[n].townsack = "BucaneerOutpost";
+	locations[n].fastreload = "BucaneerOutpost";
+	locations[n].type = "jungle";
+	locations[n].islandId = "Tortuga";
+	//Models
+	Locations[n].filespath.models = "locations\Outside\Bucaneer_Town";
+	//Always
+	Locations[n].models.always.models.tech = "LocationModelBlend";
+	Locations[n].models.always.smugglerLairExit = "smugglerLairExit";	
+	Locations[n].models.always.locators = "smugglerLairExit_locators";		
+	Locations[n].models.always.grassPatch = "smugglerLairExit_grass";
+	Locations[n].models.always.grassPatch.texture = "grass\grassshore.tga.tx";
+	Locations[n].models.always.l1 = "plan1";
+	Locations[n].models.always.l1.level = 9;
+	Locations[n].models.always.l1.tech = "LocationModelBlend";
+	Locations[n].models.always.l2 = "plan2";
+	Locations[n].models.always.l2.level = 8;
+	Locations[n].models.always.l2.tech = "LocationModelBlend";
+	Locations[n].models.always.l3 = "plan3";
+	Locations[n].models.always.l3.level = 7;
+	Locations[n].models.always.l3.tech = "LocationModelBlend";	
+	//Day
+	locations[n].models.day.charactersPatch = "smugglerLairExit_patch";
+	locations[n].models.day.fonars = "smugglerLairExit_fd";
+	//Night
+	locations[n].models.night.charactersPatch = "smugglerLairExit_patch";
+	locations[n].models.night.fonars = "smugglerLairExit_fn";	
+	//Environment
+	locations[n].environment.weather = "true";
+	locations[n].environment.sea = "false";
 	
+	//Reload map	
+	Locations[n].reload.l1.name = "reload1_back";
+	Locations[n].reload.l1.go = "Tortuga_jungle_02";
+	Locations[n].reload.l1.emerge = "reload3_back";
+	Locations[n].reload.l1.label = "Jungle";
+	Locations[n].reload.l1.autoreload = 1;
+	Locations[n].locators_radius.reload.reload1_back = 2;
+	
+	Locations[n].reload.l2.name = "reload6_back";
+	Locations[n].reload.l2.go = "Bucaneer_outpost_townhall";
+	Locations[n].reload.l2.emerge = "reload1";
+	Locations[n].reload.l2.label = "house";
+	Locations[n].reload.l2.autoreload = "0";
+	locations[n].reload.l2.disable = true; // закрыто до поры
+	
+	Locations[n].reload.l3.name = "reload4_back";
+	Locations[n].reload.l3.go = "Bucaneer_outpost_house_1";
+	Locations[n].reload.l3.emerge = "reload1";
+	Locations[n].reload.l3.label = "house";
+	Locations[n].reload.l3.autoreload = "0";
+	
+	Locations[n].reload.l4.name = "reload9_back";
+	Locations[n].reload.l4.go = "Bucaneer_outpost_house_2";
+	Locations[n].reload.l4.emerge = "reload1";
+	Locations[n].reload.l4.label = "house";
+	Locations[n].reload.l4.autoreload = "0";
+
+	Locations[n].reload.l5.name = "reload5_back";
+	Locations[n].reload.l5.go = "Bucaneer_outpost_house_3";
+	Locations[n].reload.l5.emerge = "reload1";
+	Locations[n].reload.l5.label = "house";
+	Locations[n].reload.l5.autoreload = "0";
+
+	Locations[n].reload.l6.name = "reload8_back";
+	Locations[n].reload.l6.go = "Bucaneer_outpost_house_4";
+	Locations[n].reload.l6.emerge = "reload1";
+	Locations[n].reload.l6.label = "house";
+	Locations[n].reload.l6.autoreload = "0";
+
+	Locations[n].reload.l7.name = "reload3_back";
+	Locations[n].reload.l7.go = "Bucaneer_outpost_house_5";
+	Locations[n].reload.l7.emerge = "reload1";
+	Locations[n].reload.l7.label = "house";
+	Locations[n].reload.l7.autoreload = "0";
+
+	Locations[n].reload.l8.name = "reload7_back";
+	Locations[n].reload.l8.go = "Bucaneer_outpost_house_6";
+	Locations[n].reload.l8.emerge = "reload1";
+	Locations[n].reload.l8.label = "house";
+	Locations[n].reload.l8.autoreload = "0";
+
+	Locations[n].reload.l9.name = "reload2_back";
+	Locations[n].reload.l9.go = "Shore66";
+	Locations[n].reload.l9.emerge = "reload1";
+	Locations[n].reload.l9.label = "Shore66";
+	Locations[n].reload.l9.autoreload = "0";
+	locations[n].locators_radius.reload.reload2_back = 1.5;
+
+	n = n + 1;
+
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	// Дом ле Баска
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	locations[n].id = "Bucaneer_outpost_townhall";
+	locations[n].id.label = "LeBasque_House";
+	locations[n].image = "loading\inside\smallresidence.tga";
+	//Town sack
+	locations[n].townsack = "BucaneerOutpost";
+	locations[n].fastreload = "BucaneerOutpost";
+	locations[n].lockWeather = "Inside";
+	locations[n].islandId = "Tortuga";
+	//Sound
+	locations[n].type = "residence";
+	//Models
+	//Always
+	locations[n].filespath.models = "locations\inside\Residence_LeBasque";
+	locations[n].models.always.locators = "SmallResidence_locators";
+	locations[n].models.always.house = "SmallResidence";
+	locations[n].models.always.house.level = 65538;
+	locations[n].models.always.window = "SmallResidence_windows";
+	locations[n].models.always.window.tech = "LocationWindows";
+	locations[n].models.always.window.level = 65539;
+
+	locations[n].models.always.back = "..\inside_back";
+	locations[n].models.always.back.level = 65529;
+	//Day
+	locations[n].models.day.charactersPatch = "SmallResidence_patch";
+	//Night
+	locations[n].models.night.charactersPatch = "SmallResidence_patch";
+	//Environment
+	locations[n].environment.weather = "true";
+	locations[n].environment.sea = "false";
+	//Reload map
+	locations[n].reload.l1.name = "reload1";
+	locations[n].reload.l1.go = "Bucaneer_outpost";
+	locations[n].reload.l1.emerge = "reload6_back";
+	locations[n].reload.l1.autoreload = "0";
+	locations[n].reload.l1.label = "Steet";
+
+	locations[n].reload.l2.name = "reload2";
+	locations[n].reload.l2.go = "Bucaneer_outpost_townhall_room";
+	locations[n].reload.l2.emerge = "reload1";
+	locations[n].reload.l2.autoreload = "0";
+	locations[n].reload.l2.label = "LeBasque_room";
+
+	locations[n].box1.key = "key3";
+	locations[n].box2.key = "key3";
+	n = n + 1;
+
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	// Комната в доме ле Баска
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	locations[n].id = "Bucaneer_outpost_townhall_room";
+	locations[n].id.label = "LeBasque_room";
+	locations[n].image = "loading\inside\largehouse02.tga";
+	//Town sack
+	locations[n].townsack = "Tortuga";
+	locations[n].lockWeather = "Inside";
+	//Sound
+	locations[n].type = "house";
+ 	locations[n].islandId = "Tortuga";
+	//Models
+	locations[n].filespath.models = "locations\inside\largehouse02";
+	//Always
+	locations[n].models.always.largehouse02 = "largehouse02";
+	locations[n].models.always.largehouse02.level = 65538;
+	locations[n].models.always.locators = "largehouse02_locators";
+
+	Locations[n].models.always.largehouse02windows = "largehouse02_windows";
+	Locations[n].models.always.largehouse02windows.tech = "LocationWindows";
+	locations[n].models.always.largehouse02windows.level = 65539;
+
+	locations[n].models.always.back = "..\inside_back";
+	locations[n].models.always.back.level = 65529;
+	//Day
+	Locations[n].models.always.largehouse02rand= "largehouse02_rand";
+	locations[n].models.day.charactersPatch = "largehouse02_patch";
+	//Night
+	locations[n].models.night.charactersPatch = "largehouse02_patch";
+	//Environment
+	locations[n].environment.weather = "true";
+	locations[n].environment.sea = "false";
+	//Environment
+	locations[n].environment.weather = "true";
+	locations[n].environment.sea = "false";
+	//Reload map
+	locations[n].reload.l1.name = "reload1";
+	locations[n].reload.l1.go = "Bucaneer_outpost_townhall";
+	locations[n].reload.l1.emerge = "reload2";
+	locations[n].reload.l1.autoreload = "0";
+	locations[n].reload.l1.label = "Street";
+	n = n + 1;
+
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	//дом 1
+	/////////////////////////////////////////////////////////////////////////////////////////////
+	locations[n].id = "Bucaneer_outpost_house_1";
+	locations[n].id.label = "house";
+	locations[n].image = "loading\inside\SmallHouse_inside.tga";
+	//Town sack
+	locations[n].townsack = "BucaneerOutpost";
+	locations[n].lockWeather = "Inside";
+	//Sound
+	locations[n].type = "house";
+	locations[n].islandId = "Tortuga";
+	//Models
+	//Always
+	locations[n].filespath.models = "locations\inside\SmallHouse_inside\";
+	locations[n].models.always.SmallHouse = "SmallHouse_inside";
+	//locations[n].models.always.SmallHouse.level = 65538;
+	Locations[n].models.always.windows = "SmallHouse_inside_windows";
+	Locations[n].models.always.windows.tech = "LocationWindows";
+	locations[n].models.always.windows.level = 65539;
+	locations[n].models.always.back = "..\inside_back2";
+	//Day
+	locations[n].models.day.charactersPatch = "SmallHouse_inside_patch";
+	locations[n].models.day.locators = "SmallHouse_inside_ld";
+	//Night
+	locations[n].models.night.charactersPatch = "SmallHouse_inside_patch";
+	locations[n].models.night.locators = "SmallHouse_inside_ln";
+	//Environment
+	locations[n].environment.weather = "true";
+	locations[n].environment.sea = "false";
+	//Reload map
+	locations[n].reload.l1.name = "reload1";
+	locations[n].reload.l1.go = "Bucaneer_outpost";
+	locations[n].reload.l1.emerge = "reload4_back";
+	locations[n].reload.l1.autoreload = "0";
+	locations[n].reload.l1.label = "street";
+	n = n + 1;
+
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	//Маленький дом из ПКМ, дом 2
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	locations[n].id = "Bucaneer_outpost_house_2";
+	locations[n].filespath.models = "locations\inside\Smallhome";
+	locations[n].id.label = "House";
+	locations[n].image = "loading\inside\Smallhome.tga";
+	locations[n].MustSetReloadBack = true;
+ 	//Town sack
+	locations[n].townsack = "BucaneerOutpost";
+	locations[n].lockWeather = "Inside";
+	//Sound
+	locations[n].type = "house";
+	locations[n].islandId = "Tortuga";
+	//Models
+	//Always
+	locations[n].models.always.locators = "SH_l";
+	locations[n].models.always.tavern = "SH";
+	locations[n].models.always.tavern.level = 65538;
+	locations[n].models.always.window = "SH_w";
+	locations[n].models.always.window.tech = "LocationWindows";
+	locations[n].models.always.window.level = 65539;
+
+	locations[n].models.always.back = "..\inside_back";
+	locations[n].models.always.back.level = 65529;
+	//Day
+	locations[n].models.day.charactersPatch = "SH_p";
+	//Night
+	locations[n].models.night.charactersPatch = "SH_p";
+	//Environment
+	locations[n].environment.weather = "true";
+	locations[n].environment.sea = "false";
+	//Reload map
+	locations[n].reload.l1.name = "reload1";
+	locations[n].reload.l1.go = "Bucaneer_Outpost";
+	locations[n].reload.l1.emerge = "reload9_back";
+	locations[n].reload.l1.autoreload = "0";
+	locations[n].reload.l1.label = "Street";
+	n = n + 1;
+
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	// Маленький дом из ПКМ, дом 3
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	locations[n].id = "Bucaneer_outpost_house_3";
+	locations[n].id.label = "House";
+	locations[n].image = "loading\inside\Smallhome.tga";
+ 	//Town sack
+	locations[n].townsack = "BucaneerOutpost";
+	locations[n].lockWeather = "Inside";
+	//Sound
+	locations[n].type = "house";
+	locations[n].islandId = "Tortuga";
+	//Models
+	locations[n].filespath.models = "locations\inside\Smallhome02";
+	//Always
+	locations[n].models.always.Smallhome02 = "SH";
+	locations[n].models.always.Smallhome02.level = 65538;
+	locations[n].models.always.locators = "SH_l";
+	locations[n].models.always.window = "SH_w";
+	locations[n].models.always.window.tech = "LocationWindows";
+	locations[n].models.always.window.level = 65539;
+
+	locations[n].models.always.back = "..\inside_back";
+	locations[n].models.always.back.level = 65529;
+	//Day
+	locations[n].models.day.charactersPatch = "SH_p";
+	//Night
+	locations[n].models.night.charactersPatch = "SH_p";
+	//Environment
+	locations[n].environment.weather = "true";
+	locations[n].environment.sea = "false";
+	//Reload map
+	locations[n].reload.l1.name = "reload1";
+	locations[n].reload.l1.go = "Bucaneer_Outpost";
+	locations[n].reload.l1.emerge = "reload5_back";
+	locations[n].reload.l1.autoreload = "0";
+	locations[n].reload.l1.label = "Street";
+	n = n + 1;
+
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	// Средний дом из ПКМ, дом 4
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	locations[n].id = "Bucaneer_outpost_house_4";
+	locations[n].id.label = "House";
+	locations[n].image = "loading\inside\mediumhouse13.tga";
+	//Town sack
+	locations[n].townsack = "BucaneerOutpost";
+	locations[n].lockWeather = "Inside";
+	//Sound
+	locations[n].type = "house";
+	locations[n].islandId = "Tortuga";
+	//Models
+	locations[n].filespath.models = "locations\inside\mediumhouse12";
+	//Always
+	locations[n].models.always.house = "mediumhouse12";
+	Locations[n].models.always.house.tech = "DLightModel";
+	locations[n].models.always.house.level = 65538;
+	locations[n].models.day.locators = "mediumhouse12_locators";
+	locations[n].models.night.locators = "mediumhouse12_Nlocators";
+
+	Locations[n].models.always.mediumhouse10windows = "mediumhouse12_windows";
+	Locations[n].models.always.mediumhouse10windows.tech = "LocationWindows";
+	locations[n].models.always.mediumhouse10windows.level = 65539;
+
+	locations[n].models.always.back = "..\inside_back";
+	locations[n].models.always.back.level = 65529;
+	//Day
+	//Locations[n].models.day.mediumhouse10rand= "mediumhouse12_rand";
+	locations[n].models.day.charactersPatch = "mediumhouse12_patch";
+	//Night
+	locations[n].models.night.charactersPatch = "mediumhouse12_patch";
+	//Environment
+	locations[n].environment.weather = "true";
+	locations[n].environment.sea = "false";
+	//Reload map
+	locations[n].reload.l1.name = "reload1";
+	locations[n].reload.l1.go = "Bucaneer_outpost";
+	locations[n].reload.l1.emerge = "reload8_back";
+	locations[n].reload.l1.autoreload = "0";
+	locations[n].reload.l1.label = "Street";
+	n = n + 1;
+
+	////////////////////////// дом 5 ////////////////////////// 
+	locations[n].id = "Bucaneer_outpost_house_5";
+	locations[n].id.label = "House";
+	locations[n].image = "loading\inside\largehouse02.tga";
+	//Town sack
+	locations[n].townsack = "BucaneerOutpost";
+	locations[n].lockWeather = "Inside";
+	//Sound
+	locations[n].type = "house";
+ 	locations[n].islandId = "Tortuga";
+	//Models
+	locations[n].filespath.models = "locations\inside\largehouse02";
+	//Always
+	locations[n].models.always.largehouse02 = "largehouse02";
+	locations[n].models.always.largehouse02.level = 65538;
+	locations[n].models.always.locators = "largehouse02_locators";
+
+	Locations[n].models.always.largehouse02windows = "largehouse02_windows";
+	Locations[n].models.always.largehouse02windows.tech = "LocationWindows";
+	locations[n].models.always.largehouse02windows.level = 65539;
+
+	locations[n].models.always.back = "..\inside_back";
+	locations[n].models.always.back.level = 65529;
+	//Day
+	Locations[n].models.always.largehouse02rand= "largehouse02_rand";
+	locations[n].models.day.charactersPatch = "largehouse02_patch";
+	//Night
+	locations[n].models.night.charactersPatch = "largehouse02_patch";
+	//Environment
+	locations[n].environment.weather = "true";
+	locations[n].environment.sea = "false";
+	//Environment
+	locations[n].environment.weather = "true";
+	locations[n].environment.sea = "false";
+	//Reload map
+	locations[n].reload.l1.name = "reload1";
+	locations[n].reload.l1.go = "Bucaneer_outpost";
+	locations[n].reload.l1.emerge = "reload3_back";
+	locations[n].reload.l1.autoreload = "0";
+	locations[n].reload.l1.label = "Street";
+	n = n + 1;
+
+	///////////////////////// дом 6 /////////////////////////
+    locations[n].id = "Bucaneer_outpost_house_6";
+    locations[n].filespath.models = "locations\inside\Hut2_KNS";
+    locations[n].id.label = "House";
+    locations[n].image = "loading\inside\Hut2.tga";
+    //Town sack
+    locations[n].townsack = "BucaneerOutpost";
+	locations[n].islandId = "Tortuga";
+    //Sound
+    locations[n].type = "house";
+    //Models
+    //Always
+    locations[n].models.always.locators = "Hut2_locators";
+    locations[n].models.always.tavern = "Hut2";
+    locations[n].models.always.tavern.level = 65538;
+
+    locations[n].models.always.back = "..\inside_back2";
+    locations[n].models.always.back.level = 65529;
+    //Day
+    locations[n].models.day.charactersPatch = "Hut2_patch";
+    //Night
+    locations[n].models.night.charactersPatch = "Hut2_patch";
+    //Environment
+    locations[n].environment.weather = "true";
+    Locations[n].lockWeather = "Inside";
+    locations[n].environment.sea = "false";
+    //Reload map
+    locations[n].reload.l1.name = "reload1";
+    locations[n].reload.l1.go = "Bucaneer_outpost";
+    locations[n].reload.l1.emerge = "reload7_back";
+    locations[n].reload.l1.autoreload = "0";
+    locations[n].reload.l1.label = "street";
+    n = n + 1;
+
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	// Бухта Бычий рог
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	locations[n].id = "Shore66";
+	locations[n].id.label = "Shore66";
+	locations[n].image = "loading\outside\harbor.tga";
+	locations[n].worldmap = "Shore66";
+	//Town sack
+	locations[n].townsack = "BucaneerOutpost";
+	locations[n].fastreload = "BucaneerOutpost";
+	//Sound
+	locations[n].type = "seashore";
+	locations[n].islandId = "Tortuga";
+	//Models
+	//Always
+	locations[n].filespath.models = "locations\Outside\Shores\Shore01";
+	Locations[n].models.always.shore01 = "shore01";
+	locations[n].models.always.shore01.sea_reflection = 1;
+	Locations[n].models.always.shore01seabed = "shore01_sb";
+	Locations[n].models.always.locators = "shore01_locators";
+
+	Locations[n].models.always.grassPatch = "shore01_grass";
+	Locations[n].models.always.grassPatch.texture = "grass\grassshore.tga.tx";
+	
+	Locations[n].models.always.l1 = "plan1";
+	Locations[n].models.always.l1.level = 9;
+	Locations[n].models.always.l1.tech = "LocationModelBlend";
+	Locations[n].models.always.l2 = "plan2";
+	Locations[n].models.always.l2.level = 8;
+	Locations[n].models.always.l2.tech = "LocationModelBlend";
+	Locations[n].models.always.l3 = "plan3";
+	Locations[n].models.always.l3.level = 7;
+	Locations[n].models.always.l3.tech = "LocationModelBlend";	
+	//Day
+	locations[n].models.day.charactersPatch = "shore01_patch";
+	//Night
+	locations[n].models.night.charactersPatch = "shore01_patch";	
+	//Environment
+	locations[n].environment.weather = "true";
+	locations[n].environment.sea = "true";
+	//Reload map
+	locations[n].reload.l1.name = "reload1_back";
+	locations[n].reload.l1.go = "Bucaneer_outpost";
+	locations[n].reload.l1.emerge = "reload2_back";
+	locations[n].reload.l1.autoreload = "1";
+	locations[n].reload.l1.label = "BucaneerOutpost";
+	locations[n].locators_radius.reload.reload1_back = 2;
+
+	locations[n].reload.l2.name = "boat";
+	locations[n].reload.l2.go = "Tortuga";
+	locations[n].reload.l2.emerge = "Reload_4";
+	locations[n].reload.l2.autoreload = "0";
+	locations[n].reload.l2.label = "Sea";
+    locations[n].locators_radius.reload.boat = 9.0;
+	n = n + 1;
+
 	return n;
 }

@@ -370,3 +370,9 @@ Alright, here’s your money.
 Common_ItemTrader_99 {
 I don’t have that much on me right now. As soon as I gather the sum, I’ll come see you.
 }
+Common_ItemTrader_100_m {
+Come closer, take your pick, señorita. Everything is of the finest quality!
+}
+Common_ItemTrader_100_f {
+Oh, señorita, I just knew you would come to me!.. Do not be shy, take your pick!
+}

@@ -40,6 +40,12 @@ void ProcessDialogEvent()
 			AddDialogExitQuest("MainHeroFightModeOn");
 		break;
 
+		// Линейка ле Баска. Второй квест.
+		case "Old_campfire_Jail_exit":
+			AddDialogExitQuest("Old_campfire_73");
+			dialogexit();
+		break;
+
 		case "NoMoreTalkExit":
 			LAi_CharacterDisableDialog(npchar);
 			DialogExit();
@@ -1210,7 +1216,6 @@ void ProcessDialogEvent()
 
 		// "Правосудие на продажу" (Warship, Rosarak)
 		case "JusticeOnSale_1":
-			DeleteAttribute(PChar, "GenQuest.JusticeOnSale.PrisonWait");
 			dialog.text = StringFromKey("Common_Prison_258", GetAddress_Form(NPChar));
 			link.l1 = StringFromKey("Common_Prison_259");
 			link.l1.go = "JusticeOnSale_3";
@@ -1264,7 +1269,7 @@ void ProcessDialogEvent()
 		case "JusticeOnSale_5":
 		//			iTemp = GetCharacterSPECIAL(pchar, "Luck") + GetCharacterSPECIAL(pchar, "Charisma");
 		//			if(iTemp > idRand(npchar.id + "JusticeOnSale", 15) && !isBadReputation(pchar, 25))
-			if (PlayerRPGCheck_SPECIAL_Sum("Luck,Charisma", idRand(npchar.id + "JusticeOnSale_WithoutMoney", 15)) && !PlayerRPGCheck_BadReputation(25, false))
+			if (PlayerRPGCheck_SPECIAL_Sum("Luck,Charisma", idRand(npchar.id + "JusticeOnSale", 15)) && !PlayerRPGCheck_BadReputation(25, false))
 			{
 				AddMoneyToCharacter(PChar, -5000);
 				PChar.GenQuest.JusticeOnSale.Persuade = true;
@@ -1285,6 +1290,7 @@ void ProcessDialogEvent()
 		case "JusticeOnSale_6":
 			pchar.questTemp.jailCanMove = true;
 			DeleteAttribute(PChar, "GenQuest.JusticeOnSale.MayorWait");
+			DeleteAttribute(PChar, "GenQuest.JusticeOnSale.PrisonWait");
 			DialogExit();
 		break;
 	}

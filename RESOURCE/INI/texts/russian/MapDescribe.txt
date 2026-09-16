@@ -51,6 +51,7 @@ SentJons_TownCave 		{в подземелье города Сент-Джонс}
 SentJons_TownCave_box1 	{под досками в тупике}
 SentJons_TownCave_box2 	{в тупике шахты}
 SentJons_TownCave_box3 	{у завала}
+SentJons_TownCave_box4 	{у завала с факелом}
  
 Barbados_Cave			{в пещере недалеко от Бриджтауна}		
 Barbados_Cave_box1		{под досками в тупике}
@@ -91,7 +92,7 @@ Cumana_Cave_box1		{сундук рядом с каменным мостиком}
 Cumana_Cave_box2		{сундук на большом камне}
 Cumana_Cave_box3		{сундук рядом с верёвкой, свисающей с потолка}
 
-Curacao_Cave			{в пещере справа от берега лагуны Бланка}
+Curacao_Cave			{в пещере слева от выхода из Виллемстада}
 Curacao_Cave_box1		{сундук под факелом}
 Curacao_Cave_box2		{сундук в тупике}
 Curacao_Cave_box3		{сундук рядом с факелом}
@@ -111,9 +112,6 @@ Hispaniola_Cave_box3	{сундук рядом с верёвкой, свисаю�
 
 Jamaica_Grot			{в пещере справа от маяка Порт-Ройал}
 Jamaica_Grot_box1		{сундук над большим камнем}
-
-Orange_mines			{в подземной кладовой Форт Оранжа}
-Orange_mines_box1		{маленький бочонок под большими бочками}
 
 Maracaibo_Cave			{в пещере напротив выхода из Маракайбо}
 Maracaibo_Cave_box1		{сундук под факелом}
@@ -166,7 +164,7 @@ Tortuga_Grot_box1		{сундук на берегу}
 Tortuga_Cave			{в подземелье города Тортуга}
 Tortuga_Cave_box1		{сундук за запертой дверью}
 
-Trinidad_Grot			{в пещере напротив маяка Тринидада и Тобаго}
+Trinidad_Grot			{в пещере напротив маяка Тринидада}
 Trinidad_Grot_box1		{сундук на берегу}
 
 FortFrance_Dungeon		{в подземелье города Фор-де-Франс}
@@ -176,5 +174,17 @@ FortFrance_Dungeon_box3	{сундук недалеко от подъёмника
 FortFrance_Dungeon_box4	{сундук за открытой дверью на нижнем ярусе}
 FortFrance_Dungeon_box5	{под деревянными ящиками}
 
+SantoDomingo_TownCave 		{в подземелье города Санто-Доминго}
+SantoDomingo_TownCave_box1 	{под досками в тупике}
+SantoDomingo_TownCave_box2 	{в тупике шахты}
+SantoDomingo_TownCave_box3 	{у завала}
+SantoDomingo_TownCave_box4 	{у завала с факелом}
+
 Providence_Cavern		{в пещере, соединяющей мыс Моргана с островом Олд Провиденс}
 Providence_Cavern_box1 	{сундук за сталагмитами в тупике}
+
+Aruba_Grot				{в пещере в глубине острова, неподалёку от деревни карибов}
+Aruba_Grot_box1			{сундук над большим камнем}
+
+Orange_mines {в подземном хранилище форта Оранж}
+Orange_mines_box1 {маленькая бочка под большими}

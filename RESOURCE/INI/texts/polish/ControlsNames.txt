@@ -24,9 +24,7 @@ Sea_CameraSwitch {Przełącz widok kamery: „statek” / „pokład”}
 Sea_CameraSwitchShort {Przełącz kamerę}
 Sea_CameraShip {widok statku}
 Sea_CameraDeck {widok pokładu}
-Telescope {Włącz lunetę}
-TelescopeIn {Przybliż lunetę}
-TelescopeOut {Wyjdź z widoku lunety}
+TelescopeMode {Włącz lunetę}
 TelescopeZoom {Przybliż/oddal}
 Interface {Menu postaci}
 CharacterShipMenu {Menu statku postaci}
@@ -51,6 +49,13 @@ Ship_Select {Wybór okrętu}
 Order_Select {Wybierz rozkaz}
 FireZoneKey {Pokaż zasięg ostrzału}
 FireZoneKeyHide {Ukryj zasięg ostrzału}
+QuickSave {Szybki zapis}
+QuickLoad {Szybkie wczytanie}
+FireCamera_Set {Widok celowniczy}
+FireMode_Direct {Kolejność ognia - Od dziobu do rufy}
+FireMode_Random {Kolejność ognia - Dowolna}
+FireMode_Reverse {Kolejność ognia - Od rufy do dziobu}
+hk_FireMode {Zmień tryb strzału}
 ChrCamTurnV {Pionowy ruch kamery za postacią}
 ChrCamTurnH {Poziomy ruch kamery za postacią}
 ChrCamCameraSwitch {Przełącz kamerę pierwszoosobową/trzecioosobową}
@@ -70,6 +75,7 @@ OfficersFollow {Rozkaz dla oficerów: Podążać}
 Say {Zakup towarów}
 AlchemyKey {Alchemia}
 MapView {Atlas map}
+LI_CabinExit {Wyjście na morze (na okręcie bohatera)}
 AltModificator {Naciśnij przycisk, aby otworzyć menu szybkiej podróży}
 AltModificatorOff {Zwolnij przycisk, aby otworzyć menu Szybkiej Podróży}
 Fast_store {Szybka podróż: Sklep}
@@ -133,15 +139,20 @@ TimeScale {Przyspieszenie/spowolnienie czasu}
 TimeScaleFasterBA {Przyspieszenie czasu}
 TimeScaleSlowerBA {Spowolnienie czasu}
 Help {Pomoc gry}
-BICommandsActivate {Menu dowodzenia}
-LICommandsActivate {Menu dowodzenia}
-BICommandsActivateAdd {Menu dowodzenia (alternatywne)}
+BICommands {Menu dowodzenia}
+BICommandsActivate {Otwórz menu dowodzenia}
+LICommandsActivate {Otwórz menu dowodzenia}
+BICommandsActivateAdd {Otwórz menu dowodzenia (alternatywne)}
 BICommandsConfirm {Potwierdź polecenie}
 BICommandsCancel {Anuluj polecenie}
 BICommandsConfirmAdd {Potwierdź polecenie (alternatywne)}
 BICommandsCancelAdd {Anuluj polecenie (alternatywne)}
-BICommandsLeft {Menu akcji – nawiguj w lewo}
-BICommandsRight {Menu akcji – przejdź w prawo}
+BICommandsLeft {Menu dowodzenia - nawigacja w lewo}
+BICommandsLeftW {Menu dowodzenia - nawigacja w lewo (alt.)}
+BICommandsRight {Menu dowodzenia - nawigacja w prawo}
+BICommandsRightW {Menu dowodzenia - nawigacja w prawo (alt.)}
+BICommandsUp {Menu dowodzenia - nawigacja w górę}
+BICommandsDown {Menu dowodzenia - nawigacja w dół}
 HelpChooser_Cancel {Wyjdź z pomocy}
 HelpChooser_Action {Pokaż pomoc dla bieżącego elementu}
 HelpChooser_Next {Następny element pomocy}
@@ -158,3 +169,4 @@ DlgScrollUp {Przewiń dialog w dół}
 DlgScrollDown {Przewiń dialog w górę}
 hk_Cure {Użyj mikstury leczenia}
 hk_Rush {Użyj umiejętności „Furia”}
+KZ_NextMusicTrack {Następny utwór muzyczny}

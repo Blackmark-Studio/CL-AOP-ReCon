@@ -20,11 +20,13 @@ Address_Form_FraWoman {mademoiselle}
 Address_Form_EngWoman {errar}
 Address_Form_HolWoman {mefrau}
 Address_Form_PirWoman {errar}
+Address_Form_PorWoman {senhorita}
 Address_Form_SpaWoman2 {senhora}
 Address_Form_FraWoman2 {madame}
 Address_Form_EngWoman2 {senhora}
 Address_Form_HolWoman2 {frau}
 Address_Form_PirWoman2 {senhora}
+Address_Form_PorWoman2 {senhora}
 BaronTitle {barão}
 BaronWomanTitle {baronesa}
 Officer_Attack {Oficiais, ataquem!}

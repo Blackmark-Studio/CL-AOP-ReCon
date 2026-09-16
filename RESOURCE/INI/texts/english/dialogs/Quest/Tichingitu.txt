@@ -208,3 +208,15 @@ Tichingitu understands everything. Tichingitu will take position at the specifie
 Tichingitu_59 {
 Alright.
 }
+Tichingitu_60 {
+Captain... Tichingitu sad. Atauco leave. Atauco worthy son of jungle. Good hunter. Tichingitu think him brother.
+}
+Tichingitu_61 {
+I didn't think you'd become friends so quickly. You barely exchanged a dozen words during the whole voyage.
+}
+Tichingitu_62 {
+Atauco look at jungle with same eyes as Tichingitu. Many days be on great water, like Tichingitu. But return to forest. If spirits allow, we meet again.
+}
+Tichingitu_63 {
+Knowing le Basque's cunning, I'd gladly wager a couple of doubloons on that. For now, we ourselves could stand to learn from you how to watch where we step.
+}

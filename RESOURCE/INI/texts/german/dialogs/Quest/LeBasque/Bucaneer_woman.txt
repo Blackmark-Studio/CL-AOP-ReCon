@@ -1,0 +1,42 @@
+Bucaneer_woman_1 {
+Ah, Sie sind es, Kapitän! Setzen Sie sich zu uns!
+}
+Bucaneer_woman_2 {
+Sehr gern.
+}
+Bucaneer_woman_3 {
+Kapitän! Schön, Sie wohlauf zu sehen. Möge die Heilige Jungfrau Ihr Schiff vor Riffen und spanischen Patrouillen bewahren. Sind Sie gekommen, um zu sehen, wie wir uns hier eingerichtet haben?
+}
+Bucaneer_woman_4 {
+Genau. Wie ich sehe, gewöhnen Sie sich allmählich an die freie Luft von Tortuga. Wie gefällt Ihnen das Leben hier?
+}
+Bucaneer_woman_5 {
+Hören Sie, wie sie singen, Kapitän? Ich sehe diese Feuer, das Fleisch über der Glut, trinke diesen brennenden Wein und kann noch immer nicht glauben, dass wir nicht mehr in dieser verfluchten Mine sind. Tortuga ist laut und rau, diese Jäger grölen ihre Lieder über die ganze Insel, aber für mich ist das inzwischen der schönste Klang der Welt. Nach der Stille in Vargas' Verliesen... bringt mich dieser Trubel wieder ins Leben zurück.
+}
+Bucaneer_woman_6 {
+Als wir dort im Dunkeln saßen und auf unser Schicksal warteten, bat ich den Herrn nur um einen schnellen Tod. Und nun sehen Sie sich um! Diese Männer von Monsieur le Basque... mit ihren rußverschmierten Gesichtern und wilden Tänzen mögen sie wie Barbaren wirken, doch sie haben Herzen aus Gold. Dieses Fest heute ist nicht bloß Rum und Vergnügen - wir feiern unsere Freiheit. Wir werden nie vergessen, was Sie für uns getan haben.
+}
+Bucaneer_woman_7 {
+Kapitän! Trinken Sie mit uns! Ein Nein gilt nicht. Wissen Sie, früher hatte ich Angst vor dieser Insel. Tortuga erschien mir immer als Brutstätte der Sünde und Zuflucht für Galgenvögel. Aber nachdem wir Vargas' Klauen entkommen waren... begriff ich, dass die wahren Ungeheuer kostbare Wämser tragen und Intrigen spinnen, während man hier unter Bukanieren den aufrichtigsten Schutz finden kann.
+}
+Bucaneer_woman_8 {
+Trinken Sie, feiern Sie und vergessen Sie Vargas. Dieser Tag gehört Ihnen.
+}
+Bucaneer_woman_9 {
+Tortuga versteht es zu feiern. Genießen Sie Ihre Freiheit, Madame.
+}
+Bucaneer_woman_10 {
+Ach, Kapitän. Schon wieder diese verfluchten Musketen putzen. Mein Mann kam gestern von der Jagd auf Wildrinder zurück und schleppte einen ganzen Berg Fleisch zum Räuchern an. Der Geruch des Boucan steckt inzwischen in jedem Kleid, man wird ihn nicht mehr los. Aber wir klagen nicht - solange die Räucherstellen voll sind, hungert auf Tortuga niemand.
+}
+Bucaneer_woman_11 {
+Das Meer ist heute unruhig. Jedes Mal, wenn die Männer zu den Küsten der Spanier aufbrechen, finde ich keine Ruhe. Man sagt, die Patrouillen seien in letzter Zeit völlig tollwütig geworden. Ich bete zur Heiligen Jungfrau, dass unser Schiff alle Riffe sicher passiert und mit reicher Beute in den Hafen zurückkehrt.
+}
+Bucaneer_woman_12 {
+Das Leben hier ist gewiss nichts für Zartbesaitete. Gestern habe ich Segeltuch geflickt, heute stehe ich den ganzen Tag am Kessel und wasche Pulverschmauch aus den Hemden. Dafür sind wir hier frei. Keine Aufseher, keine Steuern an die Krone. Solange wir Pulver und feste Mauern haben, bleibt Tortuga dem gesamten spanischen Reich ein Knochen im Hals.
+}
+Bucaneer_woman_13 {
+Nur Geduld. Das Leben auf Tortuga war schon immer hart.
+}
+Bucaneer_woman_14 {
+Machen Sie sich keine Sorgen, Ihre Männer verstehen ihr Handwerk.
+}

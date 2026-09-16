@@ -142,3 +142,9 @@ Wir sind unterwegs, Captain! Ich hole die Mannschaft, und wir gehen sofort an Bo
 Sailor_42 {
 Komm schon, beeil dich, ich habe nicht vor, hier lange zu bleiben.
 }
+Sailor_43 {
+Seid gegrüßt, gnädige Frau! Was könnt Ihr von einem einfachen Matrosen wollen?
+}
+Sailor_44 {
+Ach, nichts. Ich kam nur gerade vorbei.
+}

@@ -95,7 +95,7 @@ void InitBattleInterfacesParameters()
 
 void CreateILogAndActions(int loadType)
 {
-	DeleteAttribute(&IBoardingStatus,"ActiveActions");
+	DeleteAttribute(&ILogAndActions,"ActiveActions");
 	if (loadType == LOG_FOR_SEA)
 	{
 		CreateSeaActionsEnvironment();
@@ -178,8 +178,16 @@ void Log_SetActiveAction_SetText(string sControlName, string sActionText)
 	else
 	{
 //		sActionText = ILogAndActions.ActiveActions.(actionName).Text;
-		sTextFont	= ILogAndActions.ActiveActions.text2.font;
-		fFontScale	= ILogAndActions.ActiveActions.text2.scale;
+		if (CheckAttribute(&ILogAndActions,"ActiveActions.text2.font"))
+			sTextFont = ILogAndActions.ActiveActions.text2.font;
+		else
+			sTextFont = "interface_normal";
+
+		if (CheckAttribute(&ILogAndActions,"ActiveActions.text2.scale"))
+			fFontScale = ILogAndActions.ActiveActions.text2.scale;
+		else
+			fFontScale = 1.3 * fHtRatio;
+
 		iTextWidth	= GetStringWidth(sActionText, sTextFont, fFontScale);
 		iKeyWidth = makeint(35 * fHtRatio);
 		iTextOffset = makeint(9 * fHtRatio);
@@ -334,6 +342,7 @@ void Notification(string strLog, string ability)
 		case "Discovery": IconIndex = 203; break;
 		case "Indians": IconIndex = 204; break;
 		case "Smugglers": IconIndex = 205; break;
+		case "Buccaneers": IconIndex = 201; break;
 		case "FstTravel": IconIndex = 206; break;
 		case "Rats": IconIndex = 207; break;
 		case "Personal abilities": IconIndex = 4; break;
@@ -1238,37 +1247,16 @@ string FindControlFromActionName(string _actionName)
 		case "BoardingReload": control = "ChrAction"; break;
 		case "BoardingEnd": control = "ChrAction"; break;
 		case "Talk":
-		    // AlexBlade - раскладка старая, альтернативу пока отключим
-//			if(iControlsMode == 0) control = "ChrAction";
 			control = "ChrAction";
 		break;
 		case "Reload":
-		    // AlexBlade - раскладка старая, альтернативу пока отключим
-//			if(iControlsMode == 0)
-//			{
-//				if(ILogAndActions.type == "sea") control = "IAction";
-//				else control = "ChrAction";
-//			}
             if(ILogAndActions.type == "sea") control = "BIFastCommand";
             else control = "ChrAction";
 		break;
 		case "ToSea":
-		    // AlexBlade - раскладка старая, альтернативу пока отключим
-//			if(iControlsMode == 0) control = "ChrAction";
 			control = "ChrAction";
 		break;
 	}
 
 	return control;
 }
-// AlexBlade - хз зачем, пока отключим
-/*
-#event_handler("Event_ErrorLog","Event_ErrorLog");
-void Event_ErrorLog()
-{
-	string string1 = GetEventData();
-	string string2 = GetEventData();
-	if(MOD_BETTATESTMODE != "off")
-		log_info(string1 + string2);
-}
-*/

@@ -1,17 +1,17 @@
 FortOrange_Church_1 {
-什么问题？
+什么问题？ 
 }
 FortOrange_Church_2 {
-你想干什么？
+你想干什么？ 
 }
 FortOrange_Church_3 {
 @<RandPhraseSimple>
 }
 FortOrange_Church_4 {
-我改变主意了……
+我改变主意了…… 
 }
 FortOrange_Church_5 {
-我现在没什么可说的。
+我现在没什么可说的。 
 }
 FortOrange_Church_6 {
 @<RandPhraseSimple>

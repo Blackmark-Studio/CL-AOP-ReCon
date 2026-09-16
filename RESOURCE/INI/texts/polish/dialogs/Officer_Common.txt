@@ -2416,3 +2416,10 @@ Nie jestem pewien co do przepisu, ale nie znaleźliśmy przy nim nic poza tym ka
 Officer_Common_656 {
 Zobaczmy, co tam jest.
 }
+
+Officer_Common_657 {
+Kapitanie, najpierw doprowadźmy sprawę do końca. Potem odejdę, jeśli będziesz chciał.
+}
+Officer_Common_658 {
+Dobrze. Najpierw skończmy to, co zaczęliśmy.
+}

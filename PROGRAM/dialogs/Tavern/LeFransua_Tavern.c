@@ -33,74 +33,87 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 				link.l3.go = "FL2_3";
 			}
 			// Эдвард Лоу
-			if (CheckAttribute(pchar, "questTemp.piratesLine") && pchar.questTemp.piratesLine == "BlackLabel_toLaVega")
-			{
-				link.l2 = StringFromKey("LeFransua_Tavern_15");
-				link.l2.go = "PL_Q2_1";
-			}
+			string sPL = "";
+			if (CheckAttribute(pchar, "questTemp.piratesLine"))
+				sPL = pchar.questTemp.piratesLine;
 
-			if (CheckAttribute(pchar, "questTemp.piratesLine") && pchar.questTemp.piratesLine == "KillLoy_toSeek")
+			if (sPL != "")
 			{
-				link.l2 = StringFromKey("LeFransua_Tavern_16");
-				link.l2.go = "PL_Q3_1";
+				if (sPL == "BlackLabel_toLaVega")
+				{
+					link.l2 = StringFromKey("LeFransua_Tavern_15");
+					link.l2.go = "PL_Q2_1";
+				}
+				else if (sPL == "KillLoy_toSeek")
+				{
+					link.l2 = StringFromKey("LeFransua_Tavern_16");
+					link.l2.go = "PL_Q3_1";
+				}
 			}
 
 			//-->ОЗГ Кондотьер BMS
-			if (CheckAttribute(pchar, "questTemp.Headhunter") && pchar.questTemp.Headhunter == "vector_barmen") // && Pchar.BaseNation == PIRATE теперь все могут брать. Konstrush
-			{
-				link.l1 = StringFromKey("LeFransua_Tavern_17");
-				link.l1.go = "Barmen_check";
-			}
+			string sHH = "";
+			if (CheckAttribute(pchar, "questTemp.Headhunter"))
+				sHH = pchar.questTemp.Headhunter;
 
-			if (npchar.city == "LeFransua" && CheckAttribute(pchar, "questTemp.Headhunter") && pchar.questTemp.Headhunter == "barmen_wait")    // && Pchar.BaseNation == PIRATE теперь все могут брать Konstrush
+			if (sHH != "")
 			{
-				link.l1 = StringFromKey("LeFransua_Tavern_18", npchar.name);
-				link.l1.go = "Barmen_check";
-			}
-			if (CheckAttribute(pchar, "questTemp.Headhunter") && pchar.questTemp.Headhunter == "hunt_carlos_yes")
-			{
-				link.l1 = StringFromKey("LeFransua_Tavern_19", npchar.name);
-				link.l1.go = "Endtaskhunt_1";
-			}
-			if (CheckAttribute(pchar, "questTemp.Headhunter") && pchar.questTemp.Headhunter == "next_task_2" && GetQuestPastDayParam("pchar.questTemp.Headhunter_next_task_2") > 9)
-			{
-				link.l1 = StringFromKey("LeFransua_Tavern_20", pchar, npchar.name);
-				link.l1.go = "Givetaskhunt_2";
-			}
-			if (CheckAttribute(pchar, "questTemp.Headhunter") && pchar.questTemp.Headhunter == "hunt_houm_yes")
-			{
-				link.l1 = StringFromKey("LeFransua_Tavern_21", npchar.name);
-				link.l1.go = "Endtaskhunt_2";
-			}
-			if (CheckAttribute(pchar, "questTemp.Headhunter") && pchar.questTemp.Headhunter == "next_task_3" && GetQuestPastDayParam("pchar.questTemp.Headhunter_next_task_3") > 14)
-			{
-				link.l1 = StringFromKey("LeFransua_Tavern_22", npchar.name);
-				link.l1.go = "Givetaskhunt_3";
-			}
-			if (CheckAttribute(pchar, "questTemp.Headhunter") && pchar.questTemp.Headhunter == "hunt_rat_yes1")
-			{
-				link.l1 = StringFromKey("LeFransua_Tavern_23", pchar, npchar.name);
-				link.l1.go = "Endtaskhunt_3";
-			}
-			if (CheckAttribute(pchar, "questTemp.Headhunter") && pchar.questTemp.Headhunter == "hunt_rat_yes2")
-			{
-				link.l1 = StringFromKey("LeFransua_Tavern_24", pchar, npchar.name);
-				link.l1.go = "Endtaskhunt_3";
-			}
-			if (CheckAttribute(pchar, "questTemp.Headhunter") && pchar.questTemp.Headhunter == "next_task_4" && GetQuestPastDayParam("pchar.questTemp.Headhunter_next_task_4") > 17)
-			{
-				link.l1 = StringFromKey("LeFransua_Tavern_25", npchar.name);
-				link.l1.go = "Givetaskhunt_4";
-			}
-			if (CheckAttribute(pchar, "questTemp.Headhunter") && pchar.questTemp.Headhunter == "hunt_halen_yes")
-			{
-				link.l1 = StringFromKey("LeFransua_Tavern_26", npchar.name);
-				link.l1.go = "Endtaskhunt_4";
-			}
-			if (CheckAttribute(pchar, "questTemp.Headhunter") && pchar.questTemp.Headhunter == "hunt_ja_yes")
-			{
-				link.l1 = StringFromKey("LeFransua_Tavern_27", npchar.name);
-				link.l1.go = "Endtaskhunt_5";
+				if (sHH == "vector_barmen") // && Pchar.BaseNation == PIRATE теперь все могут брать. Konstrush
+				{
+					link.l1 = StringFromKey("LeFransua_Tavern_17");
+					link.l1.go = "Barmen_check";
+				}
+
+				if (npchar.city == "LeFransua" && sHH == "barmen_wait")    // && Pchar.BaseNation == PIRATE теперь все могут брать Konstrush
+				{
+					link.l1 = StringFromKey("LeFransua_Tavern_18", npchar.name);
+					link.l1.go = "Barmen_check";
+				}
+				if (sHH == "hunt_carlos_yes")
+				{
+					link.l1 = StringFromKey("LeFransua_Tavern_19", npchar.name);
+					link.l1.go = "Endtaskhunt_1";
+				}
+				if (sHH == "next_task_2" && GetQuestPastDayParam("pchar.questTemp.Headhunter_next_task_2") > 9)
+				{
+					link.l1 = StringFromKey("LeFransua_Tavern_20", pchar, npchar.name);
+					link.l1.go = "Givetaskhunt_2";
+				}
+				if (sHH == "hunt_houm_yes")
+				{
+					link.l1 = StringFromKey("LeFransua_Tavern_21", npchar.name);
+					link.l1.go = "Endtaskhunt_2";
+				}
+				if (sHH == "next_task_3" && GetQuestPastDayParam("pchar.questTemp.Headhunter_next_task_3") > 14)
+				{
+					link.l1 = StringFromKey("LeFransua_Tavern_22", npchar.name);
+					link.l1.go = "Givetaskhunt_3";
+				}
+				if (sHH == "hunt_rat_yes1")
+				{
+					link.l1 = StringFromKey("LeFransua_Tavern_23", pchar, npchar.name);
+					link.l1.go = "Endtaskhunt_3";
+				}
+				if (sHH == "hunt_rat_yes2")
+				{
+					link.l1 = StringFromKey("LeFransua_Tavern_24", pchar, npchar.name);
+					link.l1.go = "Endtaskhunt_3";
+				}
+				if (sHH == "next_task_4" && GetQuestPastDayParam("pchar.questTemp.Headhunter_next_task_4") > 17)
+				{
+					link.l1 = StringFromKey("LeFransua_Tavern_25", npchar.name);
+					link.l1.go = "Givetaskhunt_4";
+				}
+				if (sHH == "hunt_halen_yes")
+				{
+					link.l1 = StringFromKey("LeFransua_Tavern_26", npchar.name);
+					link.l1.go = "Endtaskhunt_4";
+				}
+				if (sHH == "hunt_ja_yes")
+				{
+					link.l1 = StringFromKey("LeFransua_Tavern_27", npchar.name);
+					link.l1.go = "Endtaskhunt_5";
+				}
 			}
 		break;
 
@@ -193,13 +206,13 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 		break;
 
 		case "Barmen_check":
-			if (CheckCharacterItem(Pchar, "patent_eng") || CheckCharacterItem(Pchar, "patent_fra") || CheckCharacterItem(Pchar, "patent_spa") || CheckCharacterItem(Pchar, "patent_hol"))
+			if (CheckPatents(pchar))
 			{
 				dialog.text = StringFromKey("LeFransua_Tavern_60");
 				link.l1 = StringFromKey("LeFransua_Tavern_61");
 				link.l1.go = "exit";
 				CloseQuestHeader("Headhunt");
-				pchar.questTemp.Headhunter = "end_quest";
+				Headhunter_CleanupAll("end_quest");
 				RemoveLandQuestMark_Main(npchar, "Headhunt");
 				RemoveMapQuestMark("LeFransua_town", "Headhunt");
 				break;
@@ -217,7 +230,8 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 				dialog.text = StringFromKey("LeFransua_Tavern_64");
 				link.l1 = StringFromKey("LeFransua_Tavern_65");
 				link.l1.go = "exit";
-				pchar.questTemp.Headhunter = "end_quest";
+				CloseQuestHeader("Headhunt");
+				Headhunter_CleanupAll("end_quest");
 				RemoveLandQuestMark_Main(npchar, "Headhunt");
 				RemoveMapQuestMark("LeFransua_town", "Headhunt");
 				break;
@@ -263,7 +277,7 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 			dialog.text = StringFromKey("LeFransua_Tavern_79");
 			link.l1 = StringFromKey("LeFransua_Tavern_80");
 			link.l1.go = "exit";
-			pchar.questTemp.Headhunter = "end_quest";
+			Headhunter_CleanupAll("end_quest");
 			CloseQuestHeader("Headhunt");
 			RemoveLandQuestMark_Main(npchar, "Headhunt");
 			RemoveMapQuestMark("LeFransua_town", "Headhunt");
@@ -320,13 +334,13 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 		break;
 
 		case "Givetaskhunt_2":
-			if (CheckCharacterItem(Pchar, "patent_eng") || CheckCharacterItem(Pchar, "patent_fra") || CheckCharacterItem(Pchar, "patent_spa") || CheckCharacterItem(Pchar, "patent_hol"))
+			if (CheckPatents(pchar))
 			{
 				dialog.text = StringFromKey("LeFransua_Tavern_93");
 				link.l1 = StringFromKey("LeFransua_Tavern_94");
 				link.l1.go = "exit";
 				CloseQuestHeader("Headhunt");
-				pchar.questTemp.Headhunter = "end_quest";
+				Headhunter_CleanupAll("end_quest");
 				RemoveLandQuestMark_Main(npchar, "Headhunt");
 				break;
 			}
@@ -365,13 +379,13 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 		break;
 
 		case "Givetaskhunt_3_1":
-			if (CheckCharacterItem(Pchar, "patent_eng") || CheckCharacterItem(Pchar, "patent_fra") || CheckCharacterItem(Pchar, "patent_spa") || CheckCharacterItem(Pchar, "patent_hol"))
+			if (CheckPatents(pchar))
 			{
 				dialog.text = StringFromKey("LeFransua_Tavern_101");
 				link.l1 = StringFromKey("LeFransua_Tavern_102");
 				link.l1.go = "exit";
 				CloseQuestHeader("Headhunt");
-				pchar.questTemp.Headhunter = "end_quest";
+				Headhunter_CleanupAll("end_quest");
 				RemoveLandQuestMark_Main(npchar, "Headhunt");
 				break;
 			}
@@ -418,13 +432,13 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 		break;
 
 		case "Givetaskhunt_4":
-			if (CheckCharacterItem(Pchar, "patent_eng") || CheckCharacterItem(Pchar, "patent_fra") || CheckCharacterItem(Pchar, "patent_spa") || CheckCharacterItem(Pchar, "patent_hol"))
+			if (CheckPatents(pchar))
 			{
 				dialog.text = StringFromKey("LeFransua_Tavern_111");
 				link.l1 = StringFromKey("LeFransua_Tavern_112");
 				link.l1.go = "exit";
 				CloseQuestHeader("Headhunt");
-				pchar.questTemp.Headhunter = "end_quest";
+				Headhunter_CleanupAll("end_quest");
 				RemoveLandQuestMark_Main(npchar, "Headhunt");
 				break;
 			}
@@ -448,9 +462,13 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 			dialog.text = StringFromKey("LeFransua_Tavern_117", pchar.name);
 			link.l1 = StringFromKey("LeFransua_Tavern_118", npchar.name);
 			link.l1.go = "Endtaskhunt_4_1";
-			AddMoneyToCharacter(pchar, 25000);
-			string sTotem1 = "Totem_" + (rand(9) + 1);
-			AddItemLog(pchar, "chest," + sTotem1, "2,1", StringFromKey("InfoMessages_134") + " " + XI_ConvertString("NationLegendText_4") + " " + GetItemName(sTotem1), "Important_item");
+			if (!CheckAttribute(pchar, "questTemp.Headhunter.paid4"))
+			{
+				pchar.questTemp.Headhunter.paid4 = true;
+				AddMoneyToCharacter(pchar, 25000);
+				string sTotem1 = "Totem_" + (rand(9) + 1);
+				AddItemLog(pchar, "chest," + sTotem1, "2,1", StringFromKey("InfoMessages_134") + " " + XI_ConvertString("NationLegendText_4") + " " + GetItemName(sTotem1), "Important_item");
+			}
 		break;
 
 		case "Endtaskhunt_4_1":
@@ -492,8 +510,12 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 			dialog.text = StringFromKey("LeFransua_Tavern_129", pchar.name);
 			link.l1 = StringFromKey("LeFransua_Tavern_130", pchar, npchar.name);
 			link.l1.go = "Endtaskhunt_5_1";
-			AddMoneyToCharacter(pchar, 100000);
-			AddItemLog(pchar, "blade28,mushket,spyglass5,cirass3,indian11", "1", StringFromKey("InfoMessages_172"), "Important_item");
+			if (!CheckAttribute(pchar, "questTemp.Headhunter.paid5"))
+			{
+				pchar.questTemp.Headhunter.paid5 = true;
+				AddMoneyToCharacter(pchar, 100000);
+				AddItemLog(pchar, "blade28,mushket,spyglass5,cirass3,indian11", "1", StringFromKey("InfoMessages_172"), "Important_item");
+			}
 		break;
 
 		case "Endtaskhunt_5_1":
@@ -503,7 +525,7 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 			AddQuestRecord("Headhunt", "39");
 			AddQuestUserData("Headhunt", "sSex", GetSexPhrase("", "а"));
 			CloseQuestHeader("Headhunt");
-			pchar.questTemp.Headhunter = "end_quest_full";
+			Headhunter_CleanupAll("end_quest_full");
 			RemoveLandQuestMark_Main(npchar, "Headhunt");
 			Achievment_Set(ACH_Nayomnik);
 		break;

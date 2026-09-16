@@ -205,3 +205,12 @@ a close relative of the port authority chief
 Marginal_65 {
 with his relative, the head of the port authority
 }
+Marginal_66 {
+@<TimeGreeting>, @<pchar>. Very glad to see you.
+}
+Marginal_67 {
+@<TimeGreeting>, @<pchar>. Very glad to see you.
+}
+Marginal_68 {
+@<TimeGreeting>, @<npchar>. I have to go.
+}

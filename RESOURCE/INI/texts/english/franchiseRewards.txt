@@ -1,0 +1,27 @@
+condition_subscribeItem
+{
+A small notebook filled with short but important tips. One day you just found it among your belongings, and you haven't parted with it since.
+}
+condition_legendGuide
+{
+This item will appear in the game if you follow the page
+Caribbean Legend
+}
+condition_indian_officer
+{
+This quest officer will appear in Askold's questline (starts with "Search for Mummy Powder") if you own
+Caribbean Legend or earned the "Harder Than Iron" achievement in early playtests.
+}
+indian_officer_desc
+{
+The Muskogee Indian Tichingitu and his ancestral musket will support you in the hard corsair trade.
+~
+This unsurpassed marksman is ready to swear an oath of loyalty harder than iron, if only you free him from the dungeon into which he fell by pure chance.
+}
+noRewardYetMessage
+{
+This reward is not available yet,
+stay tuned for updates!
+}
+steamButtonAlreadyGot {Claimed}
+steamButtonGet {Claim}

@@ -1,0 +1,366 @@
+; ККС анимация мужских персонажей на базе скелета К:ГПК. Размер моделей оригинальный.
+; edition by Metazot 10.09.10
+; анимации для рыбаков
+
+animation = fisher.an
+
+data = "Turn speed", "5.5"
+
+;===========================================================================
+;======================================================== МИРНЫЕ АНИМАЦИИ 
+;===========================================================================
+
+;  IDLES - ДЕЙСТВИЯ СТОЯ ====================================================
+
+; Просто стоит
+[idle_1]
+	start_time = 724
+	end_time = 784
+	speed = 1.3
+	type = normal
+	loop = true
+	data = "Blend time", "0.2"		; sec
+	data = "Probability", "0.2"
+	
+; Тоже просто стоит
+[idle_2]
+	start_time = 967
+	end_time = 1027
+	speed = 1.3
+	type = normal
+	loop = true
+	data = "Blend time", "0.2"		; sec
+	data = "Probability", "0.2"
+	
+; Топчется на месте
+[idle_3]
+	start_time = 785
+	end_time = 853
+	speed = 1.3
+	type = normal
+	loop = true
+	data = "Blend time", "0.2"		; sec
+	data = "Probability", "0.1"
+
+; Достает удочку, осматривает наживку, закидывает удочку обратно
+[idle_4]
+	start_time = 500
+	end_time = 674
+	speed = 1.3
+	type = normal
+	loop = true
+	data = "Blend time", "0.2"		; sec
+	data = "Probability", "0.1"
+
+; Вытирает лоб
+[idle_5]
+	start_time = 674
+	end_time = 724
+	speed = 1.3
+	type = normal
+	loop = true
+	data = "Blend time", "0.2"		; sec
+	data = "Probability", "0.1"
+
+; Смотрит по сторонам
+[idle_6]
+	start_time = 854
+	end_time = 919
+	speed = 1.3
+	type = normal
+	loop = true
+	data = "Blend time", "0.2"		; sec
+	data = "Probability", "0.1"
+
+; Чешет бок
+[idle_7]
+	start_time = 920
+	end_time = 966
+	speed = 1.3
+	type = normal
+	loop = true
+	data = "Blend time", "0.2"		; sec
+	data = "Probability", "0.1"
+	
+; Просто стоит дубль idle_1
+[idle_8]
+	start_time = 724
+	end_time = 784
+	speed = 1.3
+	type = normal
+	loop = true
+	data = "Blend time", "0.2"		; sec
+	data = "Probability", "0.2"
+	
+; Тоже просто стоит дубль idle_2
+[idle_9]
+	start_time = 967
+	end_time = 1027
+	speed = 1.3
+	type = normal
+	loop = true
+	data = "Blend time", "0.2"		; sec
+	data = "Probability", "0.2"
+	
+; Просто стоит дубль idle_1
+[idle_10]
+	start_time = 724
+	end_time = 784
+	speed = 1.3
+	type = normal
+	loop = true
+	data = "Blend time", "0.2"		; sec
+	data = "Probability", "0.2"
+	
+; Тоже просто стоит дубль idle_2
+[idle_11]
+	start_time = 967
+	end_time = 1027
+	speed = 1.3
+	type = normal
+	loop = true
+	data = "Blend time", "0.2"		; sec
+	data = "Probability", "0.2"
+	
+
+ ; толчок правой рукой (открывание двери)
+[open_door]
+	speed = 1.0
+	loop = false
+	type = normal
+	start_time = 1
+	end_time = 2
+	data = "Blend time", "0.4"		; sec
+	;data = "Probability", "0.1"
+
+ ; поклон
+[bow]
+	speed = 1.0
+	loop = false
+	type = normal
+	start_time = 1
+	end_time = 2
+	data = "Blend time", "0.4"		; sec
+
+; Смерть стоячего рыбака
+[death_citizen_1]
+	start_time = 1028
+	end_time = 1086
+	speed = 1.0
+	loop = false
+	data = "Blend time", "0.3"		; sec
+	data = "Probability", "1.0"
+	data = "Angle", "340.0"
+	event = "LStep", 1052, normal
+	event = "SndAlliace_citizen_death1", 1065, normal
+
+; Смерть стоячего рыбака дубль death_citizen_1
+[death_citizen_2]
+	start_time = 1028
+	end_time = 1086
+	speed = 1.0
+	loop = false
+	data = "Blend time", "0.3"		; sec
+	data = "Probability", "1.0"
+	data = "Angle", "340.0"
+	event = "LStep", 1052, normal
+	event = "SndAlliace_citizen_death1", 1065, normal
+
+;===============================================================================
+;============================================================ АНИМАЦИИ СИДЕНИЯ
+;===============================================================================
+; Рыбачит смотрит вправо
+[Sit_Look_Right]
+	start_time = 352
+	end_time = 402
+	speed = 1.5
+	type = normal
+	loop = true
+	data = "Blend time", "0.2"		; sec
+	data = "Probability", "0.1"
+
+; Рыбачит смотрит по сторонам
+[Sit_Look_Around]
+	start_time = 252
+	end_time = 352
+	speed = 1.5
+	type = normal
+	loop = true
+	data = "Blend time", "0.2"		; sec
+	data = "Probability", "0.1"
+
+; Рыбачит сидя 1
+[Sit_Fishing_Idle01]
+	start_time = 2
+	end_time = 252
+	speed = 1.5
+	type = normal
+	loop = true
+	data = "Blend time", "0.2"		; sec
+	data = "Probability", "0.2"
+
+; Рыбачит чешет бок
+[Sit_Scratches]
+	start_time = 402
+	end_time = 453
+	speed = 1.4
+	type = normal
+	loop = true
+	data = "Blend time", "0.2"        ; sec
+	data = "Probability", "0.1"
+
+[Sit_Fishing_Death]
+	speed = 1.3
+	type = normal
+	start_time = 454
+	end_time = 498
+	data = "Blend time", "0.3"		; sec
+	data = "Probability", "1.0"
+	data = "Angle", "340.0"
+	loop = false
+	event = "SndAlliace_Sitdeath", 455, normal
+	
+; ЛЕЖИТ неподвижно лицом вниз --------------------------------------------------------------------------------------------------------
+[lay_1]
+	speed = 2.
+	type = normal
+	start_time = 498
+	end_time = 499
+	loop = true
+	data = "Blend time", "0.8"		; sec
+	data = "Probability", "1.0"
+	
+[lay_2]
+	speed = 2.
+	type = normal
+	start_time = 498
+	end_time = 499
+	loop = true
+	data = "Blend time", "0.8"		; sec
+	data = "Probability", "1.0"
+	
+;\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+	
+; РЕАКЦИЯ НА ПОРАЖЕНИЕ нет такой анимации
+
+[HitNoFight]
+	type = normal
+	start_time = 1
+	end_time = 2
+	speed = 1.4
+	loop = false	
+	data = "Blend time", "0.3"		; sec
+	event = "SndAlliace_hitnofight", 2057, normal	
+	
+	
+[Ground_HitNoFight]
+	type = pingpong
+	start_time = 1
+	end_time = 2
+	speed = 1.0
+	loop = false	
+	data = "Blend time", "0.3"		; sec
+	event = "SndAlliace_hitnofight", 6515, normal
+		
+
+[HitNoFightSit]
+	type = pingpong
+	start_time = 1
+	end_time = 2
+	speed = 0.1
+	loop = false	
+	data = "Blend time", "0.3"		; sec
+	event = "SndAlliace_hitnofight", 2952, normal
+	
+;Смерть
+[Ground_Death]
+	type = normal
+	start_time = 454
+	end_time = 498
+	speed = 1.3
+	data = "Blend time", "0.2"		; sec
+	loop = false
+	event = "Death sound", 455, normal
+
+;Смерть1
+[Ground_Death1]
+	type = normal
+	start_time = 454
+	end_time = 498
+	speed = 1.3
+	data = "Blend time", "0.2"		; sec
+	loop = false
+	event = "Death sound", 455, normal
+	
+[Sit_Bench_Idle01]
+	start_time = 3410
+	end_time = 3496
+	speed = 1.3
+	type = normal
+	loop = true
+	data = "Blend time", "0.2"		; sec
+	data = "Probability", "0.1"
+	
+[Sit_Bench_Idle02]
+	start_time = 3496
+	end_time = 3601
+	speed = 1.3
+	type = normal
+	loop = true
+	data = "Blend time", "0.2"		; sec
+	data = "Probability", "0.1"
+
+[Sit_Bench_Idle03]
+	start_time = 3601
+	end_time = 3658
+	speed = 1.3
+	type = normal
+	loop = true
+	data = "Blend time", "0.2"		; sec
+	data = "Probability", "0.1"
+	
+[Sit_Bench_Idle04]
+	start_time = 3658
+	end_time = 3708
+	speed = 1.3
+	type = normal
+	loop = true
+	data = "Blend time", "0.2"		; sec
+	data = "Probability", "0.1"
+	
+[Sit_Bench_Idle05]
+	start_time = 3708
+	end_time = 3836
+	speed = 1.3
+	type = normal
+	loop = true
+	data = "Blend time", "0.2"		; sec
+	data = "Probability", "0.1"
+	
+[Sit_Bench_Idle06]
+	start_time = 3836
+	end_time = 3936
+	speed = 1.3
+	type = normal
+	loop = true
+	data = "Blend time", "0.2"		; sec
+	data = "Probability", "0.1"
+	
+[Sit_Bench_Death]
+	start_time = 3936
+	end_time = 3950
+	speed = 1.3
+	type = normal
+	loop = false
+	data = "Blend time", "0.3"		; sec
+	data = "Probability", "1.0"
+	
+[Sit_Bench_Death1]
+	start_time = 3936
+	end_time = 3950
+	speed = 1.3
+	type = normal
+	loop = false
+	data = "Blend time", "0.3"		; sec
+	data = "Probability", "1.0"
+	

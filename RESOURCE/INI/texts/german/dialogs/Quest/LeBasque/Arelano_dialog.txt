@@ -1,0 +1,156 @@
+Arelano_dialog_1 {
+Treten Sie ein, @<GetAddress_Form>. Falls Mateo Ihnen erzählt hat, ich hätte heilende Algen, hat er übertrieben. Heilend sind sie keineswegs.
+}
+Arelano_dialog_2_m {
+Ich bin nicht wegen der Algen hier, Thomas. Santa Clara löscht seine Lichter nicht. Wir kommen von der 'San Jacinto'. Kapitän de Aragón hat befohlen, Sie unverzüglich an Bord zu bringen. Die Fregatte wartet in der Bucht Anna Maria.
+}
+Arelano_dialog_2_f {
+Ich bin nicht wegen der Algen hier, Thomas. Santa Clara löscht seine Lichter nicht. Wir kommen von der 'San Jacinto'. Kapitän de Aragón hat befohlen, Sie unverzüglich an Bord zu bringen. Die Fregatte wartet in der Bucht Anna Maria.
+}
+Arelano_dialog_3 {
+Ich hoffe, Sie haben sich den Siedlern gegenüber nicht verraten? Wie viele seid ihr, und habt ihr die Zugänge zur Bucht überprüft, bevor ihr vor Anker gegangen seid?
+}
+Arelano_dialog_4 {
+Sie glauben wohl, nur Sie verstünden hier Ihr Handwerk? Ich darf Ihnen versichern: Sie irren sich. Packen Sie Ihre Sachen, wir haben wenig Zeit.
+}
+Arelano_dialog_5 {
+Warum ist Kapitän de Aragón nicht persönlich gekommen?
+}
+Arelano_dialog_6 {
+Fragen Sie ihn selbst. Ich diskutiere keine Befehle.
+}
+Arelano_dialog_7 {
+Nun gut, ich habe alles bereit. Wir können aufbrechen.
+}
+Arelano_dialog_8 {
+Ausgezeichnet. Folgen Sie mir.
+}
+Arelano_dialog_9 {
+Endlich... Wo zum Teufel habt ihr... Halt. Wer sind Sie?
+}
+Arelano_dialog_10 {
+Nehmen Sie die Hand vom Degen, Thomas. Draußen stehen meine Leute, und Sie kommen hier nicht weg. Aber Sie bleiben am Leben, wenn Sie keinen Widerstand leisten.
+}
+Arelano_dialog_11 {
+Zuerst sagen Sie mir, wer Sie sind und was Sie von mir wollen.
+}
+Arelano_dialog_12 {
+Mein Name würde Ihnen nichts sagen. Und was wir von Ihnen wollen, wissen Sie, denke ich, sehr genau. Sparen Sie sich Ihren Stolz: Wir bekommen ohnehin, was wir wollen. Die einzige Frage ist, auf welche Weise.
+}
+Arelano_dialog_13 {
+Verfluchte Ladrones... Im Augenblick habt ihr die Oberhand. Gut, ich komme mit.
+}
+Arelano_dialog_14 {
+Gehen Sie voran und machen Sie keine Dummheiten. Das würde Monsieur Olonais nur anstacheln, und selbst bei bester Laune ist er nicht für seine Gnade bekannt.
+}
+Arelano_dialog_15 {
+Bevor wir an Bord gehen, will ich wissen, wer mich verraten hat. Ich habe zwanzig Depeschen über verschiedene Agenten verschickt. Neunzehn enthielten falsche Angaben, und nur drei Männer kannten meinen Namen und wussten, wo ich zu finden war. Wer von ihnen hat mich verraten?
+}
+Arelano_dialog_16 {
+Niemand hat Sie verraten. Man hat Ihren Namen unter Folter aus einem von ihnen herausgeholt. Wenn Sie sich stur stellen, erfahren Sie bald, wie genau.
+}
+Arelano_dialog_17 {
+Das werden wir noch sehen... Dort sind die Segel der Patrouille aus Santiago. Bald werdet ihr an ihren Rahen baumeln...
+}
+Arelano_dialog_18 {
+Und wo ist die Signalflagge? Ah... Ich verstehe... Ihr dumpfköpfigen Ladrones habt davon nichts erfahren...
+}
+Arelano_dialog_19 {
+Argh...
+}
+Arelano_dialog_20_m {
+Das ist nicht die 'San Jacinto'... Und du... verfluchter Ladron!
+}
+Arelano_dialog_20_f {
+Das ist nicht die 'San Jacinto'... Und du... verfluchte Räuberin!
+}
+Arelano_dialog_21 {
+Vorsicht, Freunde, wir haben hier einen außerordentlich scharfsinnigen Kundschafter.
+}
+Arelano_dialog_22 {
+Ihr werdet in der Hölle brennen, verfluchte Abtrünnige!
+}
+Arelano_dialog_23 {
+Nur wirst du zuerst dorthin fahren. Es sei denn, du gibst uns die Papiere, die wir ebenso gut von deiner Leiche nehmen können.
+}
+Arelano_dialog_24 {
+Dort sind die Segel der Patrouille aus Santiago. Bald werdet ihr an ihren Rahen baumeln...
+}
+Arelano_dialog_25 {
+Kha-kha...
+}
+Arelano_dialog_26 {
+Wir werden Sie durchsuchen müssen, Señor Arellano. Und in Ihrem eigenen Interesse hoffe ich, dass Sie die Angaben über die Bucht bei sich tragen, in der sich die Geschwader aus Veracruz und Cartagena treffen sollen.
+}
+Arelano_dialog_27 {
+Ich habe nichts bei mir... Ich sagte es doch: Alles Notwendige habe ich bereits verschickt...
+}
+Arelano_dialog_28 {
+Dann müssen wir eben alles, was Sie wissen, aus Ihnen herausholen.
+}
+Arelano_dialog_29 {
+Das wird euch nicht gelingen, elende Abtrünnige... Kha-kha... Ich werde euch nichts sagen.
+}
+Arelano_dialog_30 {
+Spielen Sie nicht den Heiligen, Thomas. Sie sind kein Narr. Sie haben den Kampf gehört und trotzdem nicht einmal versucht zu fliehen. Sie haben darauf gewartet, dass jemand Sie abholt. Und es sollten keine spanischen Soldaten sein...
+}
+Arelano_dialog_31 {
+Ich... möchte Ihnen einen Handel vorschlagen...
+}
+Arelano_dialog_32 {
+Sie wollen, dass wir Sie am Leben lassen? Ich fürchte...
+}
+Arelano_dialog_33 {
+Kha-kha...
+}
+Arelano_dialog_34 {
+Wir werden Sie durchsuchen müssen, Señor Arellano. Und in Ihrem eigenen Interesse hoffe ich, dass Sie die Angaben über die Bucht bei sich tragen, in der sich die Geschwader aus Veracruz und Cartagena treffen sollen.
+}
+Arelano_dialog_35 {
+Ich... kha-kha... habe zwanzig Depeschen durch verschiedene Agenten verschickt. Nur drei kannten meinen Namen, und nur einer die richtigen Koordinaten... Wer hat mich verraten? Ramiro?
+}
+Arelano_dialog_36 {
+Das spielt keine Rolle mehr. Geben Sie uns einfach die Papiere, und...
+}
+Arelano_dialog_37 {
+Es gibt keine Papiere... Und es sollte auch keine geben. Alles Nötige habe ich bereits... abgeschickt. Kha-kha...
+}
+Arelano_dialog_38 {
+Dann muss ich Ihr Leben wohl noch um ein paar Stunden verlängern. Nur werden Sie sich darüber kaum freuen. Señor Olonais sucht schon lange nach einem Anlass für eine Folter, und er versteht sein Handwerk ausgezeichnet.
+}
+Arelano_dialog_39 {
+Darum bin ich geflohen... Ich wusste, wie es enden würde. Ich habe... einen Vorschlag.
+}
+Arelano_dialog_40 {
+Einen Vorschlag? Sie wollen am Leben bleiben?
+}
+Arelano_dialog_41 {
+Für mich ist es ohnehin vorbei... Kha-kha... Die Kugel hat die Lunge durchschlagen. Ich habe eine Tochter... Anna Arellano. Außer mir hat sie niemanden.
+}
+Arelano_dialog_42 {
+Gebt mir Euer Wort... dass Ihr innerhalb von drei Monaten zwanzigtausend Piaster auf den Namen meiner Tochter bei der Bank von Cumaná einzahlt... Und sagt ihr, dass ich ihre Ehe mit Sebastián segne... Dann sage ich Euch, wo das Treffen stattfindet.
+}
+Arelano_dialog_43 {
+Ich gebe Ihnen mein Wort. Und ich werde es halten, wenn Sie die Wahrheit sagen.
+}
+Arelano_dialog_44 {
+Die 'Margarita'... wird nicht nach Kuba fahren. Ich habe hier... keine geeignete Bucht gefunden.
+}
+Arelano_dialog_45 {
+Wo also findet das Zusammentreffen statt?
+}
+Arelano_dialog_46 {
+Auf offener See... Kha-kha... Ziehen Sie auf der Karte zwei Linien. Eine von Fort Oranje nach La Vega. Die zweite... von Belize nach San Juan. Dort, wo sie sich kreuzen... wird Tierra Firme beigedreht liegen und auf Verstärkung warten.
+}
+Arelano_dialog_47 {
+Tierra Firme, 'Margarita'... Sind das Schiffsnamen?
+}
+Arelano_dialog_48 {
+Tierra Firme ist das Geschwader... die 'Margarita' der Schatzgaleone. In ihren Laderäumen wird das gesamte Silber liegen.
+}
+Arelano_dialog_49 {
+Warten Sie! Sie meinen die 'Santa Margarita'?! Wann wird sie diesen Punkt erreichen? Reden Sie!
+}
+Arelano_dialog_50 {
+Sie... ist bereits aus Veracruz ausgelaufen... Sie... b-braucht...
+}

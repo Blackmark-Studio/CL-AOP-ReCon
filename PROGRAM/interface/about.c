@@ -1,5 +1,8 @@
 // Авторы, форма про нас
 // boal ролики делать не умею, зато умею кодить на скриптах, титры на них
+
+#include "interface\utils\menu_volume.c"
+
 float fNewPos;
 float factor = 0;
 
@@ -17,8 +20,6 @@ string StrTextInit()
 	return text;
 }
 
-float fMus, fSnd;
-
 void InitInterface(string iniName)
 {
 	EngineLayersOffOn(true);
@@ -26,15 +27,9 @@ void InitInterface(string iniName)
 	
 	SendMessage(&GameInterface, "ls", MSG_INTERFACE_INIT,iniName);
 	
-	float fM, fS, fD;
-	GetMasterVolume(&fS, &fM, &fD);
-	fSnd = fS;
-	fMus = fM;
-
 	SetEventHandler("InterfaceBreak", "ProcessCancelExit", 0);
 	SetEventHandler("exitCancel", "ProcessCancelExit", 0);
 	SetEventHandler("My_MoveText", "MoveText", 0);
-	SetEventHandler("VolumeFader", "VolumeFadeOut", 0);
 	SetEventHandler("ievnt_command", "ProcCommand", 0);
 
 	// debug управление
@@ -86,7 +81,7 @@ void InitInterface(string iniName)
 //	}
 
 	PostEvent("My_MoveText", 600);
-	PostEvent("VolumeFader", 55);
+	MenuVolume_FadeOut(false); // > схему звука не трогаем, её глушит нулевая громкость звуков
 	fNewPos = 0;
 }
 
@@ -94,6 +89,7 @@ void ProcessCancelExit()
 {
 	if(CheckAttribute(&InterfaceStates, "showGameMenuOnExit") && sti(InterfaceStates.showGameMenuOnExit) == true)
 	{
+		MenuVolume_Restore(); // > назад в игровое меню
 		IDoExit(RC_INTERFACE_LAUNCH_GAMEMENU);
 		return;
 	}
@@ -101,7 +97,6 @@ void ProcessCancelExit()
 	IDoExit(RC_INTERFACE_OPTIONSCREEN_EXIT);
 	if(!CheckAttribute(&InterfaceStates, "InstantExit") || sti(InterfaceStates.InstantExit) == false)
 	{
-		TEV.MENUVOLUME.RTM = "1";
 		ReturnToMainMenu();
 	}
 }
@@ -111,7 +106,7 @@ void IDoExit(int exitCode)
  	DelEventHandler("InterfaceBreak","ProcessCancelExit");
 	DelEventHandler("exitCancel","ProcessCancelExit");
 	DelEventHandler("My_MoveText","MoveText");
-	DelEventHandler("VolumeFader","VolumeFadeOut");
+	MenuVolume_Stop();
 	DelEventHandler("ievnt_command", "ProcCommand");
     
 	interfaceResultCommand = exitCode;
@@ -141,23 +136,6 @@ void MoveText()
 		PostEvent("My_MoveText", 20);
 		fNewPos = fNewPos + 0.0001;
 	}
-}
-
-void VolumeFadeOut()
-{
-	fMus -= 0.01;
-	fSnd -= 0.01;
-	
-	if (fMus < 0.333)
-	{
-		fMus = 0.333;
-		KZ|Volume(fMus, 0);
-		DelEventHandler("VolumeFader", "VolumeFadeOut");
-		return;
-	}
-	
-	KZ|Volume(fMus, fSnd);
-	PostEvent("VolumeFader", 55);
 }
 
 void ProcCommand()

@@ -173,7 +173,7 @@ void GiveItemToTrader(aref ch)
 			itm = ItemsFromID(itemID);
 			irand = rand(2) + 1;
 			
-			if (StrHasStr(itemID, "fire,gold", 1) || itm.name == "") // > "забаненные" для торговли предметы
+			if (itemID == "fire" || itemID == "gold" || itm.name == "") // > "забаненные" для торговли предметы
 				continue;
 			
 			// Warship переделка
@@ -610,9 +610,9 @@ void GiveItemToTrader(aref ch)
 string PlaceCharacter(aref ch, string group, string location) //boal change
 {  // location = "random"  "random_free"  и "random_must_be" - должен быть, даже если все занято  random_must_be_near - рядом
 	float locx, locy, locz;
-	string homelocator;
 	bool ok;
-	
+	string homelocator = "";
+
 	GetCharacterPos(GetMainCharacter(), &locx, &locy, &locz);
 	if (location == "random_free") location = "random"; // совместимость с пред. правкой
 	
@@ -719,8 +719,8 @@ int GenerateShipForPort(aref chr, int isLock, int iEncType)
 			iShipType = sti(ArrayGetRandomValue(&sWarShips));
 
 			// вояка не должен быть на корабле ниже 6 класса
-			if (iShipType < SHIP_LUGGER)
-				iShipType = SHIP_LUGGER + rand(iMaxShipsType - SHIP_LUGGER);
+			if (iShipType < SHIP_CLASS_6)
+				iShipType = SHIP_CLASS_6 + rand(iMaxShipsType - SHIP_CLASS_6);
 		break;
 
 		// торговец в порту
@@ -796,15 +796,37 @@ void RemoveGeometryFromLocation(string LocationID, string ModelName)
 	}
 }	
 
-//функция заполнения массива arrayNPCModel из строки с моделями
-void FillArrayNPCModel(string modelList)
+//пул моделей носильщиков; раньше он жил в arrayNPCModel и затирал там список моделей, уже занятых в локации (SetNPCModelUniq)
+string arrayCarrierModel[2];
+string arrayCarrierType; //под какой тип носильщика набран пул
+
+//функция заполнения пула моделей носильщиков из строки с моделями
+void FillArrayCarrierModel(string modelList)
 {
 	string value;
 	int iCount = KZ|Symbol(modelList, ",");
+
+	SetArraySize(&arrayCarrierModel, iCount + 1); //размер ровно под список, хвост от прежнего более длинного не остаётся
+
+	int iCurLen = strlen(&modelList);
+	int iCurPos = 0;
+	int iCurEnd;
+
 	for (int i = 0; i <= iCount; i++)
 	{
-		value = GetSubStr(modelList, ",", i);
-		arrayNPCModel[i] = value;
+		iCurEnd = findSubStr(&modelList, ",", iCurPos);
+
+		if (iCurEnd < 0)
+			iCurEnd = iCurLen;
+
+		value = "";
+
+		if (iCurEnd > iCurPos)
+			value = strcut(&modelList, iCurPos, iCurEnd - 1);
+
+		iCurPos = iCurEnd + 1;
+
+		arrayCarrierModel[i] = value;
 	}
 }
 
@@ -812,8 +834,6 @@ void FillArrayNPCModel(string modelList)
 string GetUniqCarrierModel(string sType)
 {
 	string modelList;
-	int index = -1;
-	string result = "";
 
 	switch (sType)
 	{
@@ -827,16 +847,16 @@ string GetUniqCarrierModel(string sType)
 			modelList = "SlaveGenresBag1,SlaveGenresBag2,SlaveGenresBag3,SlaveGenresBag4,SlaveGenresBag5,SlaveGenresBarrel1,SlaveGenresBarrel2,SlaveGenresBarrelTop1,SlaveGenresBarrelTop2,SlaveGenresCane1,SlaveGenresCane2,SlaveGenresCane3,SlaveGenresCane4,SlaveGenresCane5,SlaveGenresCane6,SlaveGenresChest1,SlaveGenresChest2";
 		break;
 	}
-	index = ArrayFindRandomIndex(&arrayNPCModel, modelList);
-	if (index == -1)
-	{
-		FillArrayNPCModel(modelList);
-		index = ArrayFindRandomIndex(&arrayNPCModel, modelList);
-	}
-	result = arrayNPCModel[index];
-	arrayNPCModel[index] = "";
+	if (modelList == "") return ""; //неизвестный тип носильщика
 
-	return result;
+	//пул набираем заново при смене типа и когда он опустел; по типу - потому что списки пересекаются по подстроке
+	if (arrayCarrierType != sType || ArrayIsEmpty(&arrayCarrierModel))
+	{
+		FillArrayCarrierModel(modelList);
+		arrayCarrierType = sType;
+	}
+
+	return ArrayCutRandomValue(&arrayCarrierModel);
 }
 
 void CreateModel(int iChar, string sType, int iSex)
@@ -1011,6 +1031,18 @@ void CreateModel(int iChar, string sType, int iSex)
 			sBody = "horse0";
 			sPrefix = "";
 			iNumber = rand(7)+1;
+		break;
+		
+		case "horse": // Девушки борделя
+			sBody = "horse0";
+			sPrefix = "";
+			iNumber = rand(7)+1;
+		break;
+
+		case "drinker": // Пьяницы
+			sBody = "drinker";
+			sPrefix = "_";
+			iNumber = rand(15)+1;
 		break;
 		
 		case "skel": // Скелеты
@@ -1353,11 +1385,13 @@ string SelectQuestShoreLocation()
 			}
 			if (!isLocationFreeForQuests(TargetLocation)) 
 			{
-				TargetLocation = ""; i++;
+				TargetLocation = "";
+				i++;
 			}	
 		}		
+		// KZ > запасной выбор без проверки занятости делаем только когда остров нашёлся.
+		if (TargetLocation == "") TargetLocation = GetIslandRandomShoreId(CurIsland.id);
     }
-	if(TargetLocation == "") TargetLocation = GetIslandRandomShoreId(CurIsland.id);
 	Log_QuestInfo("TargetLocation = " + TargetLocation);
     return TargetLocation;
 }
@@ -1585,7 +1619,6 @@ int GetRandomNationForMapEncounter(string sIslandID, bool bMerchant)
 
 	return PIRATE;
 }
-
 
 string CheckingTranslate(int idLngFile, string idString)
 {

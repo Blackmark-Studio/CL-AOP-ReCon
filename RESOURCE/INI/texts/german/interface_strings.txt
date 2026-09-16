@@ -16,3 +16,16 @@ Wirst du ihn auszahlen?
 Officer info {Ihre Offiziere fordern ihren Monatslohn:}
 All info {Nettobetrag:}
 Insert Disk Ok {Bitte legen Sie die erste Spiel-CD ein.}
+
+BadSaveNoVersion
+{
+Die Spielversion des ausgewählten Spielstands konnte nicht ermittelt werden.
+}
+BadSaveVersion
+{
+Spielversion des ausgewählten Spielstands
+}
+BadSaveInfo
+{
+Diese Version kann über Steam wiederhergestellt werden.
+}

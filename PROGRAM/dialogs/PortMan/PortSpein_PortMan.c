@@ -20,7 +20,7 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 						StringFromKey("PortSpein_PortMan_12"), npchar, Dialog.CurrentNode);
 			link.l1.go = "exit";
 			//ОЗГ, Крыса
-			if (pchar.questTemp.Headhunter == "Rat" && pchar.questTemp.Headhunter.countP == 0)
+			if (CheckAttrValue(pchar, "questTemp.Headhunter", "Rat") && pchar.questTemp.Headhunter.countP == 0)
 			{
 				link.l1 = StringFromKey("PortSpein_PortMan_13");
 				link.l1.go = "Rat_portmanP";

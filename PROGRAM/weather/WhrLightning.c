@@ -22,7 +22,7 @@ void WhrCreateLightningEnvironment()
 	DeleteAttribute(&Lightning,"");
 	Lightning.Clear = "";
     Lightning.Enable = false;
-	DelEventHandler(WHR_LIGHTNING_DOIT,"Lightning_DoIt");
+	WhrStopLightning();
 
 	if (!isEntity(&Lightning))
 	{
@@ -110,7 +110,7 @@ void Lightning_DoIt()
 	float fDist = 1000.0 + frnd() * 2000.0;
 	if (rand(30) == 15) { fDist = 20.0 + frnd() * 200.0; }	// nearest lightning
 	float fAngle = frnd() * PIm2;
-	int iTimeSound = fDist / 333.0;
+	int iTimeSound = fDist / 333.0 * 1000.0; // > раньше звук грома был почти мгновенно после вспышки
 
 	float fTime = frnd() * 0.1 + 0.1;
 	float x = cx + fDist * sin(fAngle);
@@ -119,7 +119,9 @@ void Lightning_DoIt()
 
 	int iFlickerTime = Whr_GetLong(aCurWeather, "Lightning.FlickerTime");
 
-	int iSubTexture = rand(sti(Lightning.SubTexX) * sti(Lightning.SubTexY) - 1);
+	int iTexCount = sti(Lightning.SubTexX) * sti(Lightning.SubTexY);
+	int iSubTexture = 0;
+	if (iTexCount > 1) iSubTexture = rand(iTexCount - 1);
 
 	float fFlashSize = 1500.0;
 	float fLightningSize = 600.0;
@@ -155,11 +157,17 @@ void Lightning_Sound()
 //молния которая бьет точно в указанный корабль. Перед использованием необходимо проинициализировать молнии.
 void Lightning_HitIt(float x, float z)
 {
+    if (!isEntity(&Lightning))
+    {
+    	Log_TestInfo("Lightning_HitIt: no entity");
+    	return;
+    }
+
     aref aCurWeather = GetCurrentWeather();
     int iSubTexture = 3;
     float fTime = 0.2;
     float fDist = 75.0;
-    int iTimeSound = fDist / 333.0;
+    int iTimeSound = fDist / 333.0 * 1000.0;
     int iFlickerTime = Whr_GetLong(aCurWeather, "Lightning.FlickerTime");
     float fFlashSize = 1500.0;
     float fLightningSize = 600.0 * fDist / 1000.0;

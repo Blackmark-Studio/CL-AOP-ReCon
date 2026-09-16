@@ -7,7 +7,7 @@ Task6 {Nommer le trésorier}
 Task7 {Nommer le charpentier}
 Task8 {Combat naval}
 Task9 {Utilisation de boulets ou de bombes}
-Task10 {Coulez le lougre endommagé}
+Task10 {Coulez les lougres ennemis}
 Task11 {Désengager}
 Task12 {Éloignez-vous suffisamment de l’ennemi}
 Task13 {Nouveau navire}
@@ -25,3 +25,11 @@ Task24 {Nouveau navire}
 Task25 {Allez à la taverne}
 Task26 {Embaucher tout l’équipage disponible}
 Task27 {Quitter la taverne}
+Task28 {Quittez la Barbade}
+Task29 {Éloignez-vous du fort de 500 yards}
+Task30 {Rapprochez-vous de l’« Encarnación » et envoyez-lui une chaloupe}
+Task31 {Explorez Maracaibo}
+Task32 {Inspectez le magasin}
+Task33 {Inspectez la prison}
+Task34 {Inspectez l’entrepôt}
+Task35 {Inspectez la jungle}

@@ -18,12 +18,37 @@ bool bShipyardOnTop, bEmptySlot;
 //HardCoffee для окна ремонта -->
 int repairScrollNum, iTCost, iTTime;
 object objSail;
+
+bool bMastBatch = false;
 // для окна ремонта <--
+
+int idShipsDescr = -1;
+
+string sTxCondition, sTxLimits, sTxRepairCost, sTxRepairTime;
+string sTxNeedMoney, sTxNeedHull, sTxNeedMast;
+string sTxCostTotal, sTxTimeTotal;
+
+void RepairCacheStrings()
+{
+	sTxCondition  = XI_ConvertString("Condition");
+	sTxLimits     = " " + XI_ConvertString("Limits");
+	sTxRepairCost = XI_ConvertString("RepairCost");
+	sTxRepairTime = XI_ConvertString("RepairTime");
+	sTxNeedMoney  = "(" + XI_ConvertString("NeedMoney") + ")";
+	sTxNeedHull   = "(" + XI_ConvertString("NeedHull") + ")";
+	sTxNeedMast   = "(" + XI_ConvertString("NeedMast") + ")";
+	sTxCostTotal  = XI_ConvertString("RepairCostT");
+	sTxTimeTotal  = XI_ConvertString("RepairTimeT");
+}
+
 void InitInterface_R(string iniName, ref _shipyarder)
 {
 	GameInterface.title = "titleShipyard";
 
 	xi_refCharacter = pchar;
+	idShipsDescr = LanguageOpenFile("ShipsDescribe.txt");
+	RepairCacheStrings();
+	shipIndex = -1;
 
 	refNPCShipyard = _shipyarder;
 	SetShipyardStore(refNPCShipyard);
@@ -120,6 +145,14 @@ void IDoExit(int exitCode)
 	DelEventHandler("ExitRepairMenu", "ExitRepairMenu");
 	DelEventHandler("BuyShipEvent", "BuyShipEvent");
 	DelEventHandler("OnHeaderClick", "OnHeaderClick");
+	DelEventHandler("RehostDone", "RepairCalcSail");
+	DelEventHandler("DamageSailOnBrokenMast", "DoSailDamageForRepair");
+
+	if (idShipsDescr != -1)
+	{
+		LanguageCloseFile(idShipsDescr);
+		idShipsDescr = -1;
+	}
 
 	interfaceResultCommand = exitCode;
 	if (CheckAttribute(&InterfaceStates, "ReloadMenuExit"))
@@ -215,12 +248,12 @@ void FillShipsScroll()
 	for (int i = 0; i < COMPANION_MAX; i++)
 	{
 		cn = GetCompanionIndex(pchar, i);
+		attributeName = "pic" + (m + 1);
 		if (cn != -1)
 		{
 			iShipType = sti(characters[cn].ship.type);
 			if (iShipType != SHIP_NOTUSED)
 			{
-				attributeName = "pic" + (m + 1);
 				iShipType = sti(RealShips[iShipType].basetype);
 				shipName = ShipsTypes[iShipType].Name;
 
@@ -234,7 +267,6 @@ void FillShipsScroll()
 			}
 			else
 			{
-				attributeName = "pic" + (m + 1);
 				GameInterface.SHIPS_SCROLL.(attributeName).character = cn;
 				GameInterface.SHIPS_SCROLL.(attributeName).str1 = "#";
 				GameInterface.SHIPS_SCROLL.(attributeName).str2 = "NoneBoat";
@@ -245,7 +277,6 @@ void FillShipsScroll()
 		}
 		else
 		{
-			attributeName = "pic" + (m + 1);
 			GameInterface.SHIPS_SCROLL.(attributeName).character = -1;
 			GameInterface.SHIPS_SCROLL.(attributeName).str1 = "#";
 			GameInterface.SHIPS_SCROLL.(attributeName).str2 = "";
@@ -261,7 +292,7 @@ void FillShipsScroll()
 
 void ProcessFrame()
 {
-	string attributeName, sTemp;
+	string attributeName;
 	int iCharacter;
 
 	string sNode = GetCurrentNode();
@@ -300,13 +331,7 @@ void ProcessFrame()
 				{
 					shipIndex = -1;
 				}
-				// boal оптимизация скилов -->
-				DelBakSkillAttr(xi_refCharacter);
-				ClearCharacterExpRate(xi_refCharacter);
-				RefreshCharacterSkillExpRate(xi_refCharacter);
 
-				SetEnergyToCharacter(xi_refCharacter);
-				// boal оптимизация скилов <--
 				OnShipScrollChange();
 			}
 			else
@@ -319,13 +344,14 @@ void ProcessFrame()
 	}
 	else if (sNode == "REPAIR_SHIPS_SCROLL") //HardCoffee
 	{
-		sTemp = xi_refCharacter.index;
-		repairScrollNum = sti(GameInterface.REPAIR_SHIPS_SCROLL.current);
+		// KZ > пока скрол не дёргали, не строчим и не ищем по атрибутам каждый кадр
+		int iCurScroll = sti(GameInterface.REPAIR_SHIPS_SCROLL.current);
+		if (iCurScroll == repairScrollNum) return;
+		repairScrollNum = iCurScroll;
 		//Переключить персонажа
-		attributeName = "pic" + its(repairScrollNum + 1);
+		attributeName = "pic" + (iCurScroll + 1);
 		if (!CheckAttribute(&GameInterface, "REPAIR_SHIPS_SCROLL." + attributeName)) return;
 		xi_refCharacter = &characters[sti(GameInterface.REPAIR_SHIPS_SCROLL.(attributeName).companionIndex)];
-		if (xi_refCharacter.index == sTemp) return; //чтобы не вызывать в каждом кадре
 		SetRepairDescription(GetPreCost()); //посчитать предварительную стоимость, обновить имена и портреты
 		RepairGetTotal(); //Для кнопок
 	}
@@ -408,7 +434,8 @@ void ShowInfoWindow()
 	sPicture = "-1";
 	string sAttributeName;
 	int nChooseNum = -1;
-	int iShip;
+	int iShip, iCanType;
+	string sID;
 	ref refBaseShip;
 
 	bool bShowHint = true;
@@ -467,39 +494,41 @@ void ShowInfoWindow()
 		break;
 
 		case "TABLE_OTHER":
-			sHeader = XI_ConvertString(GameInterface.(CurTable).(CurRow).UserData.ID);
-			sText1 = GetConvertStr(GameInterface.(CurTable).(CurRow).UserData.ID, "ShipsDescribe.txt");
-			if (GameInterface.(CurTable).(CurRow).UserData.ID == "CannonType" && sti(rChr.Ship.Cannons.Type) != CANNON_TYPE_NONECANNON)
+			sID = GameInterface.(CurTable).(CurRow).UserData.ID;
+			sHeader = XI_ConvertString(sID);
+			sText1 = GetConvertStr(sID, "ShipsDescribe.txt");
+			iCanType = sti(rChr.Ship.Cannons.Type);
+			if (sID == "CannonType" && iCanType != CANNON_TYPE_NONECANNON)
 			{
-				ref Cannon = GetCannonByType(sti(xi_refCharacter.Ship.Cannons.Type));
-				sText2 = XI_ConvertString("Name") + ": " + XI_ConvertString(GetCannonType(sti(xi_refCharacter.Ship.Cannons.Type)));
-				sText2 = sText2 + NewStr() + XI_ConvertString("Caliber") + ": " + XI_ConvertString("caliber" + GetCannonCaliber(sti(xi_refCharacter.Ship.Cannons.Type)));
+				ref Cannon = GetCannonByType(iCanType);
+				sText2 = XI_ConvertString("Name") + ": " + XI_ConvertString(GetCannonType(iCanType));
+				sText2 = sText2 + NewStr() + XI_ConvertString("Caliber") + ": " + XI_ConvertString("caliber" + GetCannonCaliber(iCanType));
 				sText2 = sText2 + NewStr() + XI_ConvertString("Fire range2") + ": " + sti(Cannon.FireRange);
 				sText2 = sText2 + NewStr() + XI_ConvertString("Damage") + ": x" + FloatToString(stf(Cannon.DamageMultiply), 1);
 				sText2 = sText2 + NewStr() + XI_ConvertString("Reload time") + ": " + sti(GetCannonReloadTime(Cannon)) + " " + XI_ConvertString("sec");
 				sText2 = sText2 + NewStr() + XI_ConvertString("weight") + ": " + sti(Cannon.Weight) + " " + XI_ConvertString("cwt") + ".";
 
 				sGroup = "GOODS";
-				sGroupPicture = GetCannonType(sti(rChr.Ship.Cannons.Type)) + "_" + GetCannonCaliber(sti(rChr.Ship.Cannons.Type));
+				sGroupPicture = GetCannonType(iCanType) + "_" + GetCannonCaliber(iCanType);
 
 				sText3 = XI_ConvertString("Caliber_text1");
 			}
-			if (GameInterface.(CurTable).(CurRow).UserData.ID == "Crew" && sti(rChr.ship.type) != SHIP_NOTUSED)
+			if (sID == "Crew" && sti(rChr.ship.type) != SHIP_NOTUSED)
 			{
 				sText2 = XI_ConvertString("Max_crew_text1");
 				sText2 = sText2 + NewStr() + XI_ConvertString("Max_crew_text2") + " " + GetMaxCrewQuantity(rChr);
 			}
 			// процент ремонта
-			if (GameInterface.(CurTable).(CurRow).UserData.ID == "Hull" && sti(rChr.ship.type) != SHIP_NOTUSED)
+			if (sID == "Hull" && sti(rChr.ship.type) != SHIP_NOTUSED)
 			{
 				sText3 = xiStr("Hull") + ": " + FloatToString(GetHullPercent(rChr), 1) + " %";
 			}
-			if (GameInterface.(CurTable).(CurRow).UserData.ID == "Sails" && sti(rChr.ship.type) != SHIP_NOTUSED)
+			if (sID == "Sails" && sti(rChr.ship.type) != SHIP_NOTUSED)
 			{
 				sText3 = xiStr("Sails") + ": " + FloatToString(GetSailPercent(rChr), 1) + " %";
 			}
 			// трюм
-			if (GameInterface.(CurTable).(CurRow).UserData.ID == "Capacity" && sti(rChr.ship.type) != SHIP_NOTUSED)
+			if (sID == "Capacity" && sti(rChr.ship.type) != SHIP_NOTUSED)
 			{
 				sText3 = XI_ConvertString("Occupied") + ": " + FloatToString((stf(GetCargoLoad(rChr)) / stf(GetCargoMaxSpace(rChr))) * 100.0, 1) + " %";
 			}
@@ -554,6 +583,11 @@ void ExitRPGHint()
 
 void ShowRPGHint()
 {
+	DelBakSkillAttr(xi_refCharacter);
+	ClearCharacterExpRate(xi_refCharacter);
+	RefreshCharacterSkillExpRate(xi_refCharacter);
+	SetEnergyToCharacter(xi_refCharacter);
+
 	SetSPECIALMiniTable("RPG_TABLE_SMALLSKILL", xi_refCharacter);
 	SetOTHERMiniTable("RPG_TABLE_SMALLOTHER", xi_refCharacter);
 	SetFormatedText("RPG_OFFICER_NAME", GetFullNameTitulForm(xi_refCharacter));
@@ -666,7 +700,8 @@ void SetCannonsToBort(ref chr, string sBort, int iQty)
 	delta = iQty - curQty;
 	if (delta > 0)
 	{
-		if (GetCargoGoods(chr, idx) < delta) iQty = curQty + GetCargoGoods(chr, idx);
+		int iCargo = GetCargoGoods(chr, idx);
+		if (iCargo < delta) iQty = curQty + iCargo;
 	}
 	if (iQty > curQty)
 	{
@@ -809,6 +844,10 @@ void FillShipyardTable()
 	string sShip;
 	string row;
 
+	int iCapacity;
+	float fPackerBonus = 1.0;
+	if (CheckOfficersPerk(refNPCShipyard, "Packer")) fPackerBonus = 1.1;
+
 	makearef(arDest, refNPCShipyard.shipyard);
 	iNum = GetAttributesNum(arDest);
 	for (i = 0; i < iNum; i++)
@@ -818,11 +857,16 @@ void FillShipyardTable()
 		arImt = GetAttributeN(arDest, i);
 		//Log_Info(GetAttributeName(arImt));
 		sAttr = GetAttributeName(arImt);
-		FillShipyardShip(refNPCShipyard, sAttr); // скинуть в стандарт корабль из ШипХХ
 
-		iShip = sti(refNPCShipyard.Ship.Type);
+		iShip = sti(arImt.Type);
 		refBaseShip = GetRealShip(iShip);
 		sShip = refBaseShip.BaseName;
+
+		iCapacity = 0;
+		if (iShip != SHIP_NOTUSED && iShip >= 0 && iShip < REAL_SHIPS_QUANTITY)
+		{
+			iCapacity = makeint(fPackerBonus * sti(RealShips[iShip].Capacity));
+		}
 		//
 		GameInterface.TABLE_SHIPYARD.(row).sShipId = sAttr;
 		GameInterface.TABLE_SHIPYARD.(row).td1.icon.texture = "interfaces\ships\" + sShip + ".tga";
@@ -831,15 +875,17 @@ void FillShipyardTable()
 		GameInterface.TABLE_SHIPYARD.(row).td1.icon.height = 46;
 		GameInterface.TABLE_SHIPYARD.(row).td1.icon.offset = "0, 1";
 		GameInterface.TABLE_SHIPYARD.(row).td1.textoffset = "53,0";
-		GameInterface.TABLE_SHIPYARD.(row).td1.str = XI_Convertstring(sShip) + "\n\n" + refNPCShipyard.ship.name;
+		GameInterface.TABLE_SHIPYARD.(row).td1.str = XI_Convertstring(sShip) + "\n\n" + arImt.Name;
 		GameInterface.TABLE_SHIPYARD.(row).td1.align = "left";
 		GameInterface.TABLE_SHIPYARD.(row).td1.scale = 0.82;
 		GameInterface.TABLE_SHIPYARD.(row).td2.str = refBaseShip.Class;
 		GameInterface.TABLE_SHIPYARD.(row).td3.str = sti(refBaseShip.CannonsQuantity);
-		GameInterface.TABLE_SHIPYARD.(row).td4.str = GetCargoMaxSpace(refNPCShipyard);
+		GameInterface.TABLE_SHIPYARD.(row).td4.str = iCapacity;
 		GameInterface.TABLE_SHIPYARD.(row).td5.str = GetShipBuyPrice(iShip, refNPCShipyard);
 		GameInterface.TABLE_SHIPYARD.(row).td5.color = argb(255, 255, 228, 80);
 	}
+
+	if (iNum > 0) FillShipyardShip(refNPCShipyard, sAttr);
 
 	Table_UpdateWindow("TABLE_SHIPYARD");
 }
@@ -965,7 +1011,7 @@ void AcceptAddOfficer()
 	string attributeName2 = "pic" + (nCurScrollOfficerNum + 1);
 	ref sld;
 
-	if (checkAttribute(GameInterface, "PASSENGERSLIST." + attributeName2 + ".character"))
+	if (checkAttribute(&GameInterface, "PASSENGERSLIST." + attributeName2 + ".character"))
 	{
 		int iChar = sti(GameInterface.PASSENGERSLIST.(attributeName2).character);
 		// назначение нового кэпа, возможно, если там уже не наш, те или враг или снят
@@ -1332,7 +1378,7 @@ void SetRepairData()
 	iTTime = 0; //глобальные
 	iTCost = 0;
 	//Установим атрибуты - они нужны для сохранения выбранных значений ремонта при переключении компаньонов в интерфейсе
-	for (int i = 0; i < locNumShips; i++)
+	for (int i = 0; i < repairNumShips; i++)
 	{
 		rChr = GetCharacter(sti(repairShips[i].chrIndex));
 		rChr.repair.class = GetCharacterShipClass(rChr);
@@ -1375,7 +1421,7 @@ int GetPreCost() //Подсчёт предварительной стоимос�
 	int iPre = 0;
 	ref rChr;
 	int iShip, iHull, iMast, iSail;
-	for (int i = 0; i < locNumShips; i++)
+	for (int i = 0; i < repairNumShips; i++)
 	{
 		rChr = GetCharacter(sti(repairShips[i].chrIndex));
 		iShip = sti(rChr.repair.type);
@@ -1429,16 +1475,33 @@ void RepairGetTotal() //Общее время и стоимость ремонт
 	iTTime = 0; //глобальные
 	iTCost = 0;
 
-	for (int i = 0; i < locNumShips; i++)
+	// > суммы и лимиты разведены на два прохода, иначе лимиты для всех кораблей, кроме последнего, считались по неполной сумме затрат
+	int i;
+	bool bCurrDone = false;
+
+	for (i = 0; i < repairNumShips; i++) // > проход 1: полные суммы
 	{
 		rChr = GetCharacter(sti(repairShips[i].chrIndex));
 		iTTime = iTTime + sti(rChr.repair.hull_time) + sti(rChr.repair.mast_time) + sti(rChr.repair.sail_time);
 		iTCost = iTCost + sti(rChr.repair.hull_cost) + sti(rChr.repair.mast_cost) + sti(rChr.repair.sail_cost);
-		RepairGetLimit(rChr); //для кнопок
-		if (rChr.repair.calcThis == "1" && rChr.id != xi_refCharacter.id) bCalcAll = true;
 	}
 
-	RepairGetLimit(xi_refCharacter); //для обновления надписей после отработки предыдущего RepairGetLimit()
+	for (i = 0; i < repairNumShips; i++) // > проход 2: лимиты уже по полной сумме
+	{
+		rChr = GetCharacter(sti(repairShips[i].chrIndex));
+		RepairGetLimit(rChr); //для кнопок
+		if (rChr.id == xi_refCharacter.id)
+		{
+			bCurrDone = true; // > надписи обновлены здесь же, повторный вызов не нужен
+		}
+		else
+		{
+			if (rChr.repair.calcThis == "1") bCalcAll = true;
+		}
+	}
+
+	if (!bCurrDone) RepairGetLimit(xi_refCharacter);
+
 	if (iTTime > 0 || iTCost > 0)
 	{
 		SetSelectable("REPAIR_DISCARD_ALL", true);
@@ -1473,7 +1536,7 @@ void RepairGetLimit(ref rChr) //расчёт значений и надписе�
 	iTempLim = makeint(iTempLim / GetHullRepairCost(iShip, 1, refNPCShipyard));
 	iHullLim = iHullCur + iTempLim;
 	if (iHullLim > 100) iHullLim = 100;
-	else if (bCurr) sHullLim = "(" + XI_ConvertString("NeedMoney") + ")";
+	else if (bCurr) sHullLim = sTxNeedMoney;
 
 	rChr.repair.HullLim = iHullLim;
 
@@ -1483,7 +1546,7 @@ void RepairGetLimit(ref rChr) //расчёт значений и надписе�
 	iMastLim = makeint(iMastMax * (iHullCur + sti(rChr.repair.hull)) / 90); // 90 - это минимальное сотояние корпуса для всех мачт
 	if (iMastLim > iMastMax) iMastLim = iMastMax;
 	else if (iMastLim < iMastCur) iMastLim = iMastCur;
-	if (bCurr && iMastLim < iMastMax) sMastLim = "(" + XI_ConvertString("NeedHull") + ")";
+	if (bCurr && iMastLim < iMastMax) sMastLim = sTxNeedHull;
 	//Затем считаем бабки
 	iTempLim = iMoney - iTCost + sti(rChr.repair.mast_cost);
 	iTempLim = makeint(iTempLim / GetMastRepairCost(iShip, rChr, refNPCShipyard));
@@ -1491,7 +1554,7 @@ void RepairGetLimit(ref rChr) //расчёт значений и надписе�
 	if (iTempLim + iMastCur <= iMastLim)
 	{
 		iMastLim = iTempLim + iMastCur;
-		if (bCurr && iMastLim != iMastMax) sMastLim = "(" + XI_ConvertString("NeedMoney") + ")";
+		if (bCurr && iMastLim != iMastMax) sMastLim = sTxNeedMoney;
 	}
 
 	rChr.repair.MastLim = iMastLim;
@@ -1501,14 +1564,14 @@ void RepairGetLimit(ref rChr) //расчёт значений и надписе�
 	iSailLim = sti(rChr.ship.SailQuantity);
 	if (iSailLim < iSailCur) iSailLim = iSailCur;
 	if (iSailLim > 100) iSailLim = 100;
-	else if (bCurr) sSailLim = "(" + XI_ConvertString("NeedMast") + ")";
+	else if (bCurr) sSailLim = sTxNeedMast;
 
 	//считаем бабки
 	iTempLim = iMoney - iTCost + sti(rChr.repair.sail_cost);
 	iTempLim = makeint(iTempLim / GetSailRepairCost(iShip, 1, refNPCShipyard));
 	iTempLim = iSailCur + iTempLim;
 	//сравним с лимитом по мачтам для правильного отображения надписи
-	if (bCurr && iTempLim <= iSailLim) sSailLim = "(" + XI_ConvertString("NeedMoney") + ")";
+	if (bCurr && iTempLim <= iSailLim) sSailLim = sTxNeedMoney;
 	if (iTempLim < iSailLim) iSailLim = iTempLim;
 	rChr.repair.SailLim = iSailLim;
 
@@ -1534,6 +1597,7 @@ void RepairGetLimit(ref rChr) //расчёт значений и надписе�
 void RepairStatShow(string sHullLim, string sMastLim, string sSailLim)
 {
 	int iRepair, iCurr, iTempLim;
+	bool bLimit; // > предел восстановления достигнут
 
 	//HULL ************
 	//в sHullLim уже записано чего не хватает
@@ -1541,22 +1605,23 @@ void RepairStatShow(string sHullLim, string sMastLim, string sSailLim)
 	iCurr = MakeInt(GetHullPercent(xi_refCharacter));
 	iRepair = iCurr + sti(xi_refCharacter.repair.hull);
 
+	bLimit = false;
 	//Слева
-	SetFormatedText("REPAIR_HULL_L_STR", XI_ConvertString("Condition") + its(iCurr) + "%");
+	SetFormatedText("REPAIR_HULL_L_STR", sTxCondition + its(iCurr) + "%");
 
 	if (iTempLim < 100)
 	{
 		if (iTempLim == iRepair) //если нельзя восстановить, красим в красный цвет
 		{
 			sHullLim = ColorText(xi_refCharacter.repair.HullLim + "%", "contra") + "\n" + ColorText(sHullLim, "contra");
-			SendMessage(&GameInterface, "lslll", MSG_INTERFACE_MSG_TO_NODE, "REPAIR_QTY_H", 8, 0, argb(255, 255, 196, 196));
+			bLimit = true;
 		}
 		else sHullLim = xi_refCharacter.repair.HullLim + "%" + "\n" + sHullLim;
 	}
 	else sHullLim = ColorText(xi_refCharacter.repair.HullLim + "%", "lightblue");
 
 	//Убрать инфу о пределах, если полностью починено
-	if (100 != iCurr) AddLineToFormatedText("REPAIR_HULL_L_STR", " " + XI_ConvertString("Limits") + sHullLim);
+	if (100 != iCurr) AddLineToFormatedText("REPAIR_HULL_L_STR", sTxLimits + sHullLim);
 
 	SendMessage(&GameInterface, "lsl", MSG_INTERFACE_MSG_TO_NODE, "REPAIR_HULL_L_STR", 5);
 
@@ -1564,10 +1629,12 @@ void RepairStatShow(string sHullLim, string sMastLim, string sSailLim)
 	SetFormatedText("REPAIR_QTY_H", its(iRepair) + "%");
 	if (iRepair == 100)
 		SendMessage(&GameInterface, "lslll", MSG_INTERFACE_MSG_TO_NODE, "REPAIR_QTY_H", 8, 0, argb(255, 128, 255, 255));
+	else if (bLimit)
+		SendMessage(&GameInterface, "lslll", MSG_INTERFACE_MSG_TO_NODE, "REPAIR_QTY_H", 8, 0, argb(255, 255, 196, 196));
 
 	//Справа
-	SetFormatedText("REPAIR_HULL_R_STR", XI_ConvertString("RepairCost") + "\n" + FindMoneyString(sti(xi_refCharacter.repair.hull_cost))
-		+ "\n" + XI_ConvertString("RepairTime") + "\n" + RepairWindowGetTime(sti(xi_refCharacter.repair.hull_time), false));
+	SetFormatedText("REPAIR_HULL_R_STR", sTxRepairCost + "\n" + FindMoneyString(sti(xi_refCharacter.repair.hull_cost))
+		+ "\n" + sTxRepairTime + "\n" + RepairWindowGetTime(sti(xi_refCharacter.repair.hull_time), false));
 	SendMessage(&GameInterface, "lsl", MSG_INTERFACE_MSG_TO_NODE, "REPAIR_HULL_R_STR", 5);
 
 	//MAST ************
@@ -1576,19 +1643,20 @@ void RepairStatShow(string sHullLim, string sMastLim, string sSailLim)
 	iCurr = sti(xi_refCharacter.repair.mast_cur);
 	int iMastMax = sti(xi_refCharacter.repair.mast_max);
 
+	bLimit = false;
 	//Слева
-	SetFormatedText("REPAIR_MAST_L_STR", XI_ConvertString("Condition") + xi_refCharacter.repair.mast_cur + "/" + xi_refCharacter.repair.mast_max);
+	SetFormatedText("REPAIR_MAST_L_STR", sTxCondition + xi_refCharacter.repair.mast_cur + "/" + xi_refCharacter.repair.mast_max);
 	if (iTempLim == iRepair && iTempLim != iMastMax)
 	{
 		//Красим в красный
 		sMastLim = ColorText(xi_refCharacter.repair.MastLim + "/" + xi_refCharacter.repair.mast_max, "contra") + "\n" + ColorText(sMastLim, "contra");
-		SendMessage(&GameInterface, "lslll", MSG_INTERFACE_MSG_TO_NODE, "REPAIR_QTY_M", 8, 0, argb(255, 255, 196, 196));
+		bLimit = true;
 	}
 	else if (iTempLim == iMastMax) sMastLim = ColorText(xi_refCharacter.repair.MastLim + "/" + xi_refCharacter.repair.mast_max, "lightblue");
 	else sMastLim = xi_refCharacter.repair.MastLim + "/" + xi_refCharacter.repair.mast_max + "\n" + sMastLim;
 
 	if (iCurr != iMastMax) //убрать инфу о пределах
-		AddLineToFormatedText("REPAIR_MAST_L_STR", " " + XI_ConvertString("Limits") + sMastLim);
+		AddLineToFormatedText("REPAIR_MAST_L_STR", sTxLimits + sMastLim);
 
 	SendMessage(&GameInterface, "lsl", MSG_INTERFACE_MSG_TO_NODE, "REPAIR_MAST_L_STR", 5);
 
@@ -1596,10 +1664,12 @@ void RepairStatShow(string sHullLim, string sMastLim, string sSailLim)
 	SetFormatedText("REPAIR_QTY_M", its(iRepair) + "/" + xi_refCharacter.repair.mast_max);
 	if (iRepair == iMastMax)
 		SendMessage(&GameInterface, "lslll", MSG_INTERFACE_MSG_TO_NODE, "REPAIR_QTY_M", 8, 0, argb(255, 128, 255, 255));
+	else if (bLimit)
+		SendMessage(&GameInterface, "lslll", MSG_INTERFACE_MSG_TO_NODE, "REPAIR_QTY_M", 8, 0, argb(255, 255, 196, 196));
 
 	//Справа
-	SetFormatedText("REPAIR_MAST_R_STR", XI_ConvertString("RepairCost") + "\n" + FindMoneyString(sti(xi_refCharacter.repair.mast_cost))
-		+ "\n" + XI_ConvertString("RepairTime") + "\n" + RepairWindowGetTime(sti(xi_refCharacter.repair.mast_time), false));
+	SetFormatedText("REPAIR_MAST_R_STR", sTxRepairCost + "\n" + FindMoneyString(sti(xi_refCharacter.repair.mast_cost))
+		+ "\n" + sTxRepairTime + "\n" + RepairWindowGetTime(sti(xi_refCharacter.repair.mast_time), false));
 	SendMessage(&GameInterface, "lsl", MSG_INTERFACE_MSG_TO_NODE, "REPAIR_MAST_R_STR", 5);
 
 	//SAIL ************
@@ -1607,36 +1677,39 @@ void RepairStatShow(string sHullLim, string sMastLim, string sSailLim)
 	iCurr = makeint(GetSailPercent(xi_refCharacter));
 	iRepair = iCurr + sti(xi_refCharacter.repair.sail);
 
+	bLimit = false;
 	//Слева
-	SetFormatedText("REPAIR_SAIL_L_STR", XI_ConvertString("Condition") + its(iCurr) + "%");
+	SetFormatedText("REPAIR_SAIL_L_STR", sTxCondition + its(iCurr) + "%");
 
 	if (iTempLim < 100)
 	{
 		if (iTempLim == iRepair)
 		{
 			sSailLim = ColorText(xi_refCharacter.repair.SailLim + "%", "contra") + "\n" + ColorText(sSailLim, "contra");
-			SendMessage(&GameInterface, "lslll", MSG_INTERFACE_MSG_TO_NODE, "REPAIR_QTY_S", 8, 0, argb(255, 255, 196, 196));
+			bLimit = true;
 		}
 		else sSailLim = xi_refCharacter.repair.SailLim + "%" + "\n" + sSailLim;
 	}
 	else sSailLim = ColorText(xi_refCharacter.repair.SailLim + "%", "lightblue");
 
-	if (100 != iCurr) AddLineToFormatedText("REPAIR_SAIL_L_STR", " " + XI_ConvertString("Limits") + sSailLim);
+	if (100 != iCurr) AddLineToFormatedText("REPAIR_SAIL_L_STR", sTxLimits + sSailLim);
 	SendMessage(&GameInterface, "lsl", MSG_INTERFACE_MSG_TO_NODE, "REPAIR_SAIL_L_STR", 5);
 
 	//Центр
 	SetFormatedText("REPAIR_QTY_S", its(iRepair) + "%");
 	if (iRepair == 100)
 		SendMessage(&GameInterface, "lslll", MSG_INTERFACE_MSG_TO_NODE, "REPAIR_QTY_S", 8, 0, argb(255, 128, 255, 255));
+	else if (bLimit)
+		SendMessage(&GameInterface, "lslll", MSG_INTERFACE_MSG_TO_NODE, "REPAIR_QTY_S", 8, 0, argb(255, 255, 196, 196));
 
 	//Справа
-	SetFormatedText("REPAIR_SAIL_R_STR", XI_ConvertString("RepairCost") + "\n" + FindMoneyString(sti(xi_refCharacter.repair.sail_cost))
-		+ "\n" + XI_ConvertString("RepairTime") + "\n" + RepairWindowGetTime(sti(xi_refCharacter.repair.sail_time), false));
+	SetFormatedText("REPAIR_SAIL_R_STR", sTxRepairCost + "\n" + FindMoneyString(sti(xi_refCharacter.repair.sail_cost))
+		+ "\n" + sTxRepairTime + "\n" + RepairWindowGetTime(sti(xi_refCharacter.repair.sail_time), false));
 	SendMessage(&GameInterface, "lsl", MSG_INTERFACE_MSG_TO_NODE, "REPAIR_SAIL_R_STR", 5);
 
 	//total info
-	SetFormatedText("REPAIR_COST_T_TEXT", XI_ConvertString("RepairCostT") + FindMoneyString(iTCost));
-	SetFormatedText("REPAIR_TIME_T_TEXT", XI_ConvertString("RepairTimeT") + RepairWindowGetTime(iTTime, false));
+	SetFormatedText("REPAIR_COST_T_TEXT", sTxCostTotal + FindMoneyString(iTCost));
+	SetFormatedText("REPAIR_TIME_T_TEXT", sTxTimeTotal + RepairWindowGetTime(iTTime, false));
 }
 
 //клики по стрелкам -->
@@ -1680,9 +1753,9 @@ void ClickRepairMastArror(int add, ref rChr)
 		if (add == 0) return;
 		if (iMastTemp + add <= iMastLim)
 		{
-			LocUnLoadShips();
+			if (!bMastBatch) LocUnLoadShips();
 			RepairTempRepairMast(rChr, add);
-			LocLoadRepairShips(loadedLocation);
+			if (!bMastBatch) LocLoadRepairShips(loadedLocation);
 			iMastRep += add;
 		}
 	}
@@ -1694,9 +1767,9 @@ void ClickRepairMastArror(int add, ref rChr)
 		if (add == 0) return;
 		if (iMastMax + add >= iMastCur)
 		{
-			LocUnLoadShips();
+			if (!bMastBatch) LocUnLoadShips();
 			RepairTempBrokeMast(rChr, add);
-			LocLoadRepairShips(loadedLocation);
+			if (!bMastBatch) LocLoadRepairShips(loadedLocation);
 			iMastRep += add;
 		}
 	}
@@ -1705,7 +1778,8 @@ void ClickRepairMastArror(int add, ref rChr)
 	if (iMastMax < 1) rChr.repair.mast_time = 0;
 	else rChr.repair.mast_time = makeint((MAST_REPAIR_YARD_TIME * 0.5 / makefloat(sti(rChr.repair.class) + 5)) * makefloat(iMastRep));
 	EnableFailedSails(rChr); //Изменили мачты - удалим атрибуты с парусов, которые нельзя было поставить
-	PostEvent("RehostDone", REHOST_TIME, "l"); //по этому ивенту понимаем, что можно пересчитать паруса
+	// > шлём один раз в конце
+	if (!bMastBatch) PostEvent("RehostDone", REHOST_TIME, "l"); //по этому ивенту понимаем, что можно пересчитать паруса
 	// RepairGetLimit считать после ивента
 }
 
@@ -1753,10 +1827,30 @@ void RepairCalcThis(ref rChr, bool bIncrease) //Кнопка посчитать 
 void RepairCalcAll(bool bIncrease) //Кнопка посчитать все корабли
 {
 	ref rChr;
-	for (int i = 0; i < locNumShips; i++)
+	int i;
+	int iClicks = -100;
+	if (bIncrease) iClicks = abs(iClicks);
+	if (repairNumShips <= 0) return;
+
+	bMastBatch = true;
+	for (i = 0; i < repairNumShips; i++)
 	{
 		rChr = GetCharacter(sti(repairShips[i].chrIndex));
-		RepairCalcThis(rChr, bIncrease);
+		RepairGetLimit(rChr);
+		ClickRepairHullArror(iClicks, rChr);
+		ClickRepairMastArror(iClicks, rChr);
+	}
+	bMastBatch = false;
+
+	// > один респавн на всю пачку вместо одного на корабль
+	LocUnLoadShips();
+	LocLoadRepairShips(loadedLocation);
+	PostEvent("RehostDone", REHOST_TIME, "l");
+
+	RepairCalcSail();
+	for (i = 0; i < repairNumShips; i++)
+	{
+		ClickRepairSailArror(iClicks, GetCharacter(sti(repairShips[i].chrIndex)));
 	}
 }
 
@@ -1766,7 +1860,7 @@ void RepairBegin() //Начинаем ремонт по кнопке Ремон�
 	int i, iHullRep, iMastRep, iSailRep, iCurr;
 	int iShClass;
 	//Идём по всем кораблям так как заранее не известно какие корабли накликали
-	for (i = 0; i < locNumShips; i++)
+	for (i = 0; i < repairNumShips; i++)
 	{
 		rChr = GetCharacter(sti(repairShips[i].chrIndex));
 
@@ -1791,11 +1885,11 @@ void RepairBegin() //Начинаем ремонт по кнопке Ремон�
 		if (iSailRep > 0)
 		{
 			AddCharacterExpToSkill(pchar, "Repair", (iSailRep * (7 - iShClass) / 3.5));
-			iCurr = GetSailPercent(rChr);
+			iCurr = makeint(GetSailPercent(rChr));
 			ProcessSailRepair(rChr, makefloat(iSailRep));
 			//костыль так так ProcessSailRepair прибавляет к дамагу парусов дамаг верёвок -->
 			SendMessage(&objSail, "l", MSG_SAIL_CALC);
-			iSailRep = iCurr + iSailRep - GetSailPercent(rChr);
+			iSailRep = iCurr + iSailRep - makeint(GetSailPercent(rChr));
 			ProcessSailRepair(rChr, makefloat(iSailRep));
 			//<--
 		}
@@ -1815,7 +1909,7 @@ void RepairBegin() //Начинаем ремонт по кнопке Ремон�
 		bIsRepairingProcess = false;
 		//bQuestCheckProcessFreeze = false;
 
-		Log_info(XI_ConvertString("RepairTimeT") + RepairWindowGetTime(iTTime, false));
+		Log_info(sTxTimeTotal + RepairWindowGetTime(iTTime, false));
 		//notification(sTemp, "Repair");
 	}
 
@@ -1839,7 +1933,7 @@ void ExitRepairMenu() //Кнопка Отмена
 	sMessageMode = "";
 	ref rChr;
 	bool bOk = false;
-	for (int i = 0; i < locNumShips; i++)
+	for (int i = 0; i < repairNumShips; i++)
 	{
 		rChr = GetCharacter(sti(repairShips[i].chrIndex));
 		RepairTempBrokeMast(rChr, -100); //Сломаем накликаные мачты заодно удалим атрибут brokenMast с парусов
@@ -1858,7 +1952,11 @@ void ExitRepairMenu() //Кнопка Отмена
 	SendMessage(&GameInterface, "lsl", MSG_INTERFACE_SCROLL_CHANGE, "SHIPS_SCROLL", -1);
 
 	if (bOk)
-		LocUnloadShips();
+	{
+		LocRestoreShipsAfterRepair(loadedLocation);
+		if (!SendMessage(pchar, "las", MSG_SHIP_SET_CHARACTER_EID, pchar, pchar.model.entity))
+			trace("ERROR: shipyard MSG_SHIP_SET_CHARACTER_EID has returned false");
+	}
 }
 //окно ремонта <--
 

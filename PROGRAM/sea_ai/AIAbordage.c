@@ -84,11 +84,11 @@ void Return2SeaAfterAbordage()
 	bAbordageStarted = false;
 	Sea.AbordageMode = false;
 
+	SetSchemeForSea();
+
 	InitBattleInterface();
 	StartBattleInterface();
 	RefreshBattleInterface();
-
-	SetSchemeForSea();
 
     SendMessage(&Particles,"l", PS_CLEAR_CAPTURED); // boal
 	PauseParticles(false);
@@ -156,6 +156,11 @@ void Abordage_ReloadEndFade()
 
 void Sea_AbordageLoad(int _iAbordageMode, bool _bMCAbordageInitiator)
 {
+	if (_iAbordageMode == SHIP_ABORDAGE && iAbordageShipEnemyCharacter >= 0)
+	{
+		if (characters[iAbordageShipEnemyCharacter].id == "Royal_Margarita_Cap" && !CheckAttribute(pchar, "questTemp.AoP.RoyalJackpot.MargaritaUnlocked")) return;
+	}
+
 	if(LAi_IsDead(&characters[iAbordageShipEnemyCharacter]) == true && _iAbordageMode != FORT_ABORDAGE)
 	{
 		return;
@@ -171,24 +176,19 @@ void Sea_AbordageLoad(int _iAbordageMode, bool _bMCAbordageInitiator)
 				pchar.boarding_info.mode = _iAbordageMode;
 				pchar.boarding_info.indicator = _bMCAbordageInitiator;
 
-				if(CheckAttribute(&InterfaceStates,"EnabledAutoSaveMode") )
+				if (GetMaxAutoSaves("BeforeBoarding") != 0)
 				{
-					if(sti(InterfaceStates.EnabledAutoSaveMode) != 0)
-					{
-						//MakeAutoSaveAndGoOnAbord(); //eddy. чтобы глюков не було.
-						MakeAutoSave();
-						SetEventHandler("evntSave","Continue_Sea_AbordageLoadPre", 0);
-					}
-					else
-					{
-						Continue_Sea_AbordageLoad();
-					}
+					bAutoSaveStarted = false;
+					PostEvent("Event_NewAutoSave", 1, "s", "BeforeBoarding");
+					SetAfterSaveFunction("Continue_Sea_AbordageLoad");
 				}
 				else
 				{
 					Continue_Sea_AbordageLoad();
 				}
-			} else {
+			}
+			else
+			{
 				Log_SetStringToLog(XI_ConvertString("The Repeated boarding the ship is impossible"));
 			}
 		}
@@ -214,11 +214,12 @@ void Sea_AbordageLoad_ActiveCount()
 	}
 }
 
-void Continue_Sea_AbordageLoadPre()
-{
-	DelEventHandler("evntSave","Continue_Sea_AbordageLoadPre");
-	SetEventHandler("frame","Continue_Sea_AbordageLoad",1);
-}
+// TODO - Не используется
+//void Continue_Sea_AbordageLoadPre()
+//{
+//	DelEventHandler("evntSave","Continue_Sea_AbordageLoadPre");
+//	SetEventHandler("frame","Continue_Sea_AbordageLoad",1);
+//}
 
 void Continue_Sea_AbordageLoad()
 {
@@ -237,7 +238,16 @@ void Continue_Sea_AbordageLoad()
 	{ 
 		_iAbordageCharacter = iAbordageFortEnemyCharacter;
 	}
-	
+
+	if (_iAbordageMode == SHIP_ABORDAGE && characters[_iAbordageCharacter].id == "Royal_Margarita_Cap")
+	{
+		DelEventHandler("frame", "Sea_AbordageLoad_ActiveCount");
+		DeleteAttribute(pchar, "boarding_info");
+		DeleteAttribute(pchar, "abordage_active_count");
+		AoP_RoyalStartMargaritaQuestBoarding("");
+		return;
+	}
+
 	if (!CheckAttribute(&characters[_iAbordageCharacter], "abordage_twice") || _iAbordageMode == FORT_ABORDAGE)
 	{
 		Sea_AbordageStartNow(_iAbordageMode, _iAbordageCharacter, false, _bMCAbordageInitiator);
@@ -288,10 +298,11 @@ void Sea_AbordageStartNow(int _iAbordageMode, int _iAbordageCharacter, bool _bPl
 	}
 }
 
-void MakeAutoSaveAndGoOnAbord()
-{
-    MakeAutoSave();
-	//eddy. задержка вызова абордажа
-	pchar.GenQuest.CallFunctionParam = "Continue_Sea_AbordageLoadPre";
-	DoQuestCheckDelay("CallFunctionParam", 2.0);
-}
+// TODO - Не используется
+//void MakeAutoSaveAndGoOnAbord()
+//{
+//    MakeAutoSave();
+//	//eddy. задержка вызова абордажа
+//	pchar.GenQuest.CallFunctionParam = "Continue_Sea_AbordageLoadPre";
+//	DoQuestCheckDelay("CallFunctionParam", 2.0);
+//}

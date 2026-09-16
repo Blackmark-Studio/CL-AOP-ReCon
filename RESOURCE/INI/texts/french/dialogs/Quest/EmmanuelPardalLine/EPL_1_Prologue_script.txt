@@ -1,0 +1,12 @@
+EPL_1_Prologue_script_1 {Señorita, je ne peux pas vendre à crédit. Vous n'êtes pas d'ici. Et si demain vous montiez à bord d'un navire de passage pour disparaître sans laisser de trace ?}
+EPL_1_Prologue_script_2 {Mais je ne vous demande pas de crédit. Je paierai les deux tiers du prix tout de suite, et je peux travailler pour rembourser le reste - vous aider, vous ou votre épouse.}
+EPL_1_Prologue_script_3 {Ce n'est pas comme si j'avais beaucoup de travail. Je me débrouille parfaitement seul, et je ne suis pas marié. Je peux vous proposer les deux tiers de la marchandise...}
+EPL_1_Prologue_script_4 {Gasten Fox, vous ne voyez donc pas que le malheur se lit sur le visage de la señorita malgré son jeune âge ? Ayez un peu de compassion.}
+EPL_1_Prologue_script_5 {Et que savez-vous donc des gens, chère @<pchar>, vous qui n'avez pas su voir le scélérat qu'était votre propre beau-père, paix à son âme.}
+EPL_1_Prologue_script_6 {Doucement, Fox. Vous savez que je peux m'emporter pour un rien.}
+EPL_1_Prologue_script_7 {Troquez donc votre jupe contre des chausses avant de commencer à proférer des menaces. Le commandant n'est plus derrière vous pour couvrir chacune de vos frasques. C'est un conseil d'ami, alors ne le prenez pas pour une insulte.}
+EPL_1_Prologue_script_8 {J'ai aussi quelque chose sous ma jupe. Cela s'appelle une carzoletta. Laissez-moi vous montrer à quel point je sais me défendre, et vous donner à mon tour un conseil d'ami : défendez-vous !}
+EPL_1_Prologue_script_9 {Ne soyez pas idiote.}
+EPL_1_Prologue_script_10 {Défendez-vous, ou troquez vos chausses contre une jupe !}
+EPL_1_Prologue_script_11 {Des pirates se sont emparés de la colonie espagnole de La Vega et ont même tenté d'attaquer Saint-Domingue. Ils ont toutefois échoué : ils ont tous été massacrés au pied des murs de la ville.}
+EPL_1_Prologue_script_12 {Terribles nouvelles : des pirates ont massacré notre colonie de La Vega et, dit-on, n'ont épargné personne. Dieu merci, le châtiment les a déjà rattrapés : tous ces scélérats sont tombés sous les murs de Saint-Domingue en tentant vainement de prendre la ville par la terre.}

@@ -38,6 +38,12 @@ SentJons_TownCave {dans le donjon de Saint John's}
 SentJons_TownCave_box1 {sous les planches, dans une impasse}
 SentJons_TownCave_box2 {dans une impasse de la mine}
 SentJons_TownCave_box3 {près de l’éboulement}
+SentJons_TownCave_box4 {près de l’éboulement avec une torche}
+SantoDomingo_TownCave {dans le donjon de Saint-Domingue}
+SantoDomingo_TownCave_box1 {sous les planches, dans une impasse}
+SantoDomingo_TownCave_box2 {dans une impasse de la mine}
+SantoDomingo_TownCave_box3 {près de l’éboulement}
+SantoDomingo_TownCave_box4 {près de l’éboulement avec une torche}
 Barbados_Cave {dans une grotte non loin de Bridgetown}
 Barbados_Cave_box1 {sous les planches dans une impasse}
 Beliz_Cave {dans une grotte à droite de la sortie de Belize}
@@ -123,7 +129,7 @@ Tortuga_Grot {dans une grotte en face de Fisheye Beach}
 Tortuga_Grot_box1 {un coffre sur la rive}
 Tortuga_Cave {dans un cachot de Tortuga}
 Tortuga_Cave_box1 {un coffre derrière une porte fermée}
-Trinidad_Grot {dans une grotte en face du phare de Trinidad et Tobago}
+Trinidad_Grot {dans une grotte en face du phare de Trinidad}
 Trinidad_Grot_box1 {un coffre sur la rive}
 FortFrance_Dungeon {dans un cachot de Fort-de-France}
 FortFrance_Dungeon_box1 {un coffre sur la hauteur}
@@ -133,3 +139,5 @@ FortFrance_Dungeon_box4 {un coffre derrière une porte ouverte à l’étage inf
 FortFrance_Dungeon_box5 {sous les caisses en bois}
 Providence_Cavern {dans la grotte traversante reliant Morgan's Head à Old Providence Island}
 Providence_Cavern_box1 {un coffre derrière des stalagmites dans une impasse}
+Aruba_Grot           {dans une grotte au cœur de l'île, près du village caraïbe}
+Aruba_Grot_box1       {coffre au-dessus de la grande pierre}

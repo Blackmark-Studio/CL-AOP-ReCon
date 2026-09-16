@@ -37,3 +37,33 @@ You guessed right, sorry...
 Cumana_Usurer_12 {
 I understand...
 }
+Cumana_Usurer_13 {
+I'm listening, Captain. What business brings you to me?
+}
+Cumana_Usurer_14 {
+I want to leave twenty thousand pesos for Anna Arellano. And pass on a few words from her father.
+}
+Cumana_Usurer_15 {
+Nothing urgent. We'll return to this another time.
+}
+Cumana_Usurer_16 {
+Anna Arellano? Yes, I know her. But her father hasn't been seen in Cumana for a long time. What exactly am I to tell her?
+}
+Cumana_Usurer_17 {
+Tell her the money was left by Tomas de Arellano. And that he gave his blessing to her marriage with Sebastian. There's no need to mention my name.
+}
+Cumana_Usurer_18 {
+I understand. If you have the money with you, I'll open a deposit in her name immediately.
+}
+Cumana_Usurer_19 {
+Here is the money. Open the account, and be sure to give her her father's message.
+}
+Cumana_Usurer_20 {
+I don't have the full sum right now. I'll return when I've gathered twenty thousand.
+}
+Cumana_Usurer_21 {
+Rest assured. My books will list only Tomas de Arellano's name, and Anna will receive his words.
+}
+Cumana_Usurer_22 {
+Thank you. That's all I require of you.
+}

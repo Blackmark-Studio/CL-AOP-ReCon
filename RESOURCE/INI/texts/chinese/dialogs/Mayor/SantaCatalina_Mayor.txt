@@ -1,81 +1,81 @@
 SantaCatalina_Mayor_1 {
-你找俺有啥事？有啥就问吧。
+你找我有什么事？ 有什么就问吧。 
 }
 SantaCatalina_Mayor_2 {
-我听着，你想问啥？
+我听着， 你想问什么？ 
 }
 SantaCatalina_Mayor_3 {
 @<RandPhraseSimple>
 }
 SantaCatalina_Mayor_4 {
-你今天已经是第二次想问问题了……
+你今天已经是第二次想问问题了…… 
 }
 SantaCatalina_Mayor_5 {
-今天都第三次了，你还想再问一遍……
+今天都第三次了， 你还想再问一遍…… 
 }
 SantaCatalina_Mayor_6 {
-这到底什么时候才是个头啊？！老子还得管着一座城，一堆事等着处理，你就一直问个不停！
+这到底什么时候才是个头啊？ ！ 我还得管着一座城， 一堆事等着处理， 你就一直问个不停！ 
 }
 SantaCatalina_Mayor_7_m {
-我改主意了……
+我改主意了…… 
 }
 SantaCatalina_Mayor_7_f {
-我改变主意了……
+我改变主意了…… 
 }
 SantaCatalina_Mayor_8 {
-现在不是时候，也不是地方……
+现在不是时候， 也不是地方…… 
 }
 SantaCatalina_Mayor_9 {
 @<RandPhraseSimple>
 }
 SantaCatalina_Mayor_10 {
-对，没错……不过现在不行，等会儿吧……
+对， 没错…… 不过现在不行， 等会儿吧…… 
 }
 SantaCatalina_Mayor_11 {
-会的，会的……只是晚点……
+会的， 会的…… 只是晚点…… 
 }
 SantaCatalina_Mayor_12 {
-抱歉，@<GetAddress_FormToNPC>……
+抱歉， @<GetAddress_FormToNPC>…… 
 }
 SantaCatalina_Mayor_13 {
-你都拿光了，还想要啥？
+你都拿光了， 还想要什么？ 
 }
 SantaCatalina_Mayor_14 {
-你还有什么没抢到手的吗？
+你还有什么没抢到手的吗？ 
 }
 SantaCatalina_Mayor_15 {
 @<RandPhraseSimple>
 }
 SantaCatalina_Mayor_16 {
-最后再环顾一圈……
+最后再环顾一圈…… 
 }
 SantaCatalina_Mayor_17_m {
-看看有没有什么东西落下了……
+看看有没有什么东西落下了…… 
 }
 SantaCatalina_Mayor_17_f {
-看看自己是不是还有什么东西忘了拿……
+看看自己是不是还有什么东西忘了拿…… 
 }
 SantaCatalina_Mayor_18 {
 @<RandPhraseSimple>
 }
 SantaCatalina_Mayor_19 {
-这是最近的第二次袭击了！法国人这么做，很可能会彻底激怒Escorial。
+这是最近的第二次袭击了！ 法国人这么做， 很可能会彻底激怒埃斯科里亚尔。 
 }
 SantaCatalina_Mayor_20 {
-嘿，瞧瞧这事儿！让那位女王老妈怎么生气都行——咱们现在可是打仗呢，兄弟。
+嘿， 瞧瞧这事儿！ 让那位女王老妈怎么生气都行——咱们现在可是打仗呢， 兄弟。 
 }
 SantaCatalina_Mayor_21 {
-那你打算接下来怎么办？
+那你打算接下来怎么办？ 
 }
 SantaCatalina_Mayor_22_m {
-接下来，我打算把你赶下台，让城里的人向路易十四效忠，然后把这座城市交给法国人管理。你没意见吧？
+接下来， 我打算把你赶下台， 让城里的人向路易十四效忠， 然后把这座城市交给法国人管理。 你没意见吧？ 
 }
 SantaCatalina_Mayor_22_f {
-接下来，我打算把你赶下台，让城里的人向Louis XIV效忠，然后把这座城市交给法国人管理。你没意见吧？
+接下来， 我打算把你赶下台， 让城里的人向路易十四效忠， 然后把这座城市交给法国人管理。 你没意见吧？ 
 }
 SantaCatalina_Mayor_23 {
-行吧，@<GetAddress_Form>，你赢了，想怎么嘲讽都行。但在加勒比，这一切可都变了……
+行吧， @<GetAddress_Form>， 你赢了， 想怎么嘲讽都行。 但在加勒比， 这一切可都变了…… 
 }
 SantaCatalina_Mayor_24 {
-我会尽全力让这些变革对France有利，先生。好了，事情办妥了……
+我会尽全力让这些变革对法兰西有利， 先生。 好了， 事情办妥了…… 
 }

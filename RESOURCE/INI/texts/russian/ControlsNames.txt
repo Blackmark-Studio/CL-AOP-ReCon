@@ -31,9 +31,7 @@ Sea_CameraSwitch {Переключить камеру 'за кораблём' / 
 Sea_CameraSwitchShort {Переключить камеру}
 Sea_CameraShip {за кораблём}
 Sea_CameraDeck {на палубе}
-Telescope {Использовать подзорную трубу}
-TelescopeIn {Включить / приблизить подзорную трубу}
-TelescopeOut {Выключить / отдалить подзорную трубу}
+TelescopeMode {Использовать подзорную трубу}
 TelescopeZoom {Приблизить / отдалить}
 Interface {Меню персонажа}
 CharacterShipMenu {Меню корабля персонажа}
@@ -58,6 +56,13 @@ Ship_Select {Выбор корабля}
 Order_Select {Выбор приказа}
 FireZoneKey {Отобразить зоны стрельбы орудий}
 FireZoneKeyHide {Скрыть зоны стрельбы орудий}
+QuickSave {Быстрое сохранение}
+QuickLoad {Быстрая загрузка}
+FireCamera_Set {Режим прицеливания}
+FireMode_Direct {Режим стрельбы - от носа к корме}
+FireMode_Random {Режим стрельбы - свободный}
+FireMode_Reverse {Режим стрельбы - от кормы к носу}
+hk_FireMode {Изменить режим стрельбы}
 
 ;<==========================[ Управление на земле ]===========================>
 
@@ -80,9 +85,10 @@ OfficersFollow {Приказ офицерам : Следовать}
 Say {Закупка товаров}
 AlchemyKey {Алхимия}
 MapView {Атлас карт}
+LI_CabinExit {Выйти в море (на корабле героя)}
 
-AltModificator {Нажмите кнопку для включения общего модификатора}
-AltModificatorOff {Отпустите кнопку для отключения общего модификатора}
+AltModificator {Нажмите кнопку для включения меню Быстрого перехода}
+AltModificatorOff {Отпустите кнопку для отключения меню Быстрого перехода}
 Fast_store {Быстрый переход: Магазин (модификатор)}
 Fast_Shipyard {Быстрый переход: Верфь (модификатор)}
 Fast_tavern {Быстрый переход: Таверна (модификатор)}
@@ -176,17 +182,20 @@ TimeScaleSlowerBA {Замедление времени}
 
 Help {Вызов справки по игре}
 
-
-BICommandsActivate {Командное меню}
-LICommandsActivate {Командное меню}
-BICommandsActivateAdd {Командное меню (альтернативная)}
-BICommandsConfirm {Выбрать команду}
+BICommands {Командное меню}
+BICommandsActivate {Открыть командное меню}
+LICommandsActivate {Открыть командное меню}
+BICommandsActivateAdd {Открыть командное меню (альтернативная)}
+BICommandsConfirm {Подтвердить команду}
 BICommandsCancel {Отменить команду}
-BICommandsConfirmAdd {Выбрать команду (альтернативная)}
+BICommandsConfirmAdd {Подтвердить команду (альтернативная)}
 BICommandsCancelAdd {Отменить команду (альтернативная)}
-BICommandsLeft {Движение по командному меню влево}
-BICommandsRight {Движение по командному меню вправо}
-
+BICommandsLeft {Командное меню влево}
+BICommandsLeftW {Командное меню влево (альтернативная)}
+BICommandsRight {Командное меню вправо}
+BICommandsRightW {Командное меню вправо (альтернативная)}
+BICommandsUp {Командное меню вверх}
+BICommandsDown {Командное меню вниз}
 
 HelpChooser_Cancel {Выход из справки}
 HelpChooser_Action {Показать справку по текущему элементу}
@@ -205,6 +214,8 @@ DlgScrollDown {Пролистать строки диалога вверх}
 
 hk_Cure {Использовать микстуру лечения}
 hk_Rush {Использовать способность 'Ярость'}
+
+KZ_NextMusicTrack {Следующий музыкальный трек}
 
 ;hk_ImmediateReload {Включить ускоренную перезарядку}
 ;hk_LightRepair {Включить лёгкую починку}

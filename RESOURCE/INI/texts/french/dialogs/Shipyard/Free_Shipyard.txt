@@ -1,0 +1,39 @@
+Free_Shipyard_1 {
+Quelles questions?
+}
+Free_Shipyard_2 {
+Qu’est-ce que tu veux?
+}
+Free_Shipyard_3 {
+@<RandPhraseSimple>
+}
+Free_Shipyard_4 {
+Tu viens d’essayer de me demander quelque chose...
+}
+Free_Shipyard_5 {
+Troisième fois aujourd’hui, la même conversation. Ce n’est pas l’usage dans mon chantier.
+}
+Free_Shipyard_6 {
+Assez de questions. Mon affaire, ce sont les navires, alors occupons-nous-en.
+}
+Free_Shipyard_7_m {
+J’ai changé d’avis...
+}
+Free_Shipyard_7_f {
+J’ai changé d’avis...
+}
+Free_Shipyard_8 {
+Je n'ai rien à dire pour l'instant.
+}
+Free_Shipyard_9 {
+@<RandPhraseSimple>
+}
+Free_Shipyard_10 {
+Hmm, il s’est passé quelque chose avec ma mémoire...
+}
+Free_Shipyard_11 {
+Hmm, cependant...
+}
+Free_Shipyard_12 {
+Allons...
+}

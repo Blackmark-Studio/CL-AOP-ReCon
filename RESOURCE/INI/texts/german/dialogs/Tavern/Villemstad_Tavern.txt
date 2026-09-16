@@ -463,3 +463,18 @@ Verstanden. Ich bin unterwegs. Danke!
 Villemstad_Tavern_137_f {
 Verstanden. Ich bin unterwegs. Danke!
 }
+Villemstad_Tavern_138 {
+Unter deinen Gästen sind Spanier. Weißt du, woher sie kommen oder mit welchem Schiff sie angekommen sind?
+}
+Villemstad_Tavern_139 {
+Ich habe gerade keine Zeit, mit den Gästen zu plaudern. Spanier, Portugiesen... nur der Meerteufel selbst hat heute noch nicht hereingeschaut.
+}
+Villemstad_Tavern_140 {
+Dann laufen die Geschäfte also gut?
+}
+Villemstad_Tavern_141 {
+Ich kann mich nicht beklagen. Fast jeden Abend gibt der Gouverneur in der Residenz Empfänge, um die Volljährigkeit seiner Töchter zu feiern. Mal kommt ein Gesandter, mal irgendein anderer Herr, und alle reisen mit einem Schiff an. Die Matrosen drängen sich hier so dicht, dass wir kaum mit den Tabletts hinterherkommen. Geh besser zur Hafenverwaltung; dort muss sich jeder Kapitän melden. Ach! Was erzähle ich dir das überhaupt?
+}
+Villemstad_Tavern_142 {
+Ja, das werde ich wohl tun.
+}

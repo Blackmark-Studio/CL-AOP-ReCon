@@ -1,0 +1,42 @@
+Bucaneer_woman_1 {
+Ach, to wy, kapitanie! Dołączcie do nas!
+}
+Bucaneer_woman_2 {
+Z przyjemnością.
+}
+Bucaneer_woman_3 {
+Kapitanie! Miło widzieć pana w dobrym zdrowiu. Niech Najświętsza Panna strzeże pańskiego statku przed rafami i hiszpańskimi patrolami. Wpadł pan sprawdzić, jak się urządziliśmy?
+}
+Bucaneer_woman_4 {
+Właśnie tak. Widzę, że powoli przywykacie do wolnego powietrza Tortugi. Jak podobają się wam tutejsze zwyczaje?
+}
+Bucaneer_woman_5 {
+Słyszy pan, jak śpiewają, kapitanie? Patrzę na te ogniska, na piekące się mięso, piję to palące wino i wciąż nie mogę uwierzyć, że nie jesteśmy w tej przeklętej kopalni. Na Tortudze jest głośno, rubasznie, ci myśliwi drą się na cały głos, ale dla mnie to teraz najpiękniejszy dźwięk na świecie. Po ciszy podziemi Vargasa... ten zgiełk przywraca mnie do życia.
+}
+Bucaneer_woman_6 {
+Kiedy siedziałyśmy w ciemności i czekałyśmy na swój los, prosiłam Boga tylko o szybką śmierć. A teraz proszę się rozejrzeć! Ci ludzie monsieur le Basque’a... mogą wyglądać jak dzikusy z twarzami umazanymi sadzą i tymi dzikimi tańcami, ale mają złote serca. Dzisiejsze święto to nie tylko rum i zabawa — to święto naszej wolności. Nigdy nie zapomnimy tego, co pan dla nas zrobił.
+}
+Bucaneer_woman_7 {
+Kapitanie! Niech się pan z nami napije! Odmowy nie przyjmujemy. Wie pan, kiedyś bałam się tej wyspy. Tortuga zawsze wydawała mi się siedliskiem grzechu i przystanią wisielców. Ale kiedy wyrwałyśmy się z rąk Vargasa... zrozumiałam, że prawdziwe potwory noszą drogie kaftany i knują intrygi, a tutaj, wśród bukanierów, można znaleźć najszczerszą ochronę.
+}
+Bucaneer_woman_8 {
+Pijcie, bawcie się i zapomnijcie o Vargasie. Ten dzień należy do was.
+}
+Bucaneer_woman_9 {
+Tortuga umie świętować. Proszę cieszyć się wolnością, madame.
+}
+Bucaneer_woman_10 {
+Ach, kapitanie. Znowu trzeba czyścić te przeklęte muszkiety. Mój wczoraj wrócił z polowania na dzikie bydło i przywlókł całą górę mięsa do wędzenia. Zapach boucanu wżarł się już we wszystkie suknie, nie da się od niego uciec. Ale nie narzekamy — dopóki wędzarnie są pełne, na Tortudze nikt nie głoduje.
+}
+Bucaneer_woman_11 {
+Morze jest dziś niespokojne. Za każdym razem, gdy chłopcy ruszają na wypad ku brzegom Hiszpanów, nie mogę znaleźć sobie miejsca. Mówią, że ostatnio patrole całkiem zdziczały. Modlę się do Najświętszej Panny, żeby nasz statek szczęśliwie ominął wszystkie rafy i wrócił do portu z bogatym łupem.
+}
+Bucaneer_woman_12 {
+Tutejsze życie nie jest dla delikatnych panienek, to pewne. Wczoraj łatałam płótno żaglowe, dziś cały dzień stoję nad kotłem i spieram prochową sadzę z koszul. Ale za to jesteśmy wolni. Żadnych nadzorców, żadnych podatków dla korony. Dopóki mamy proch i mocne mury, Tortuga będzie solą w oku całego imperium hiszpańskiego.
+}
+Bucaneer_woman_13 {
+Cierpliwości. Życie na Tortudze zawsze było surowe.
+}
+Bucaneer_woman_14 {
+Proszę się nie martwić, wasi mężczyźni znają się na rzeczy.
+}

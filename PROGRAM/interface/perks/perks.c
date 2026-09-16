@@ -3,6 +3,57 @@
 
 object ChrPerksList;
 
+// KZ > сброс у перса всех активных таймеров перков
+void ResetOnePerkTimers(ref chr)
+{
+	if (!CheckAttribute(chr, "perks.list")) return;
+
+	aref arRoot, arPerk; makearef(arRoot, chr.perks.list);
+
+	int j, n = GetAttributesNum(arRoot);
+	bool bAny = false;
+	string sPerk;
+
+	for (j = 0; j < n; j++)
+	{
+		arPerk = GetAttributeN(arRoot, j);
+		if (!CheckAttribute(arPerk, "delay") && !CheckAttribute(arPerk, "active")) continue;
+		sPerk = GetAttributeName(arPerk);
+		DelPerkFromActiveList(sPerk);
+		DeleteAttributeEx(arPerk, "delay,active");
+		bAny = true;
+	}
+
+	if (bAny)
+		PostEvent("evntPerkAgainUsable", 1);
+}
+
+// KZ > сброс таймеров у активных перков пати ГГ (+ при выходе в море отрезвляет офицеров)
+void ResetPartyPerksOnTransition(bool _bSoberParty)
+{
+	ResetOnePerkTimers(pchar);
+
+	int i, cn, q = GetPassengersQuantity(pchar);
+
+	for (i = 0; i < q; i++)
+	{
+		cn = GetPassenger(pchar, i);
+		if (cn >= 0)
+			ResetOnePerkTimers(GetCharacter(cn));
+	}
+
+	for (i = 1; i < COMPANION_MAX; i++)
+	{
+		cn = GetCompanionIndex(pchar, i);
+		if (cn >= 0)
+			ResetOnePerkTimers(GetCharacter(cn));
+	}
+
+	// > отрезвить ГГ, офицеров, пассажиров и компаньонов
+	if (_bSoberParty)
+		SoberParty();
+}
+
 extern void extrnInitPerks();
 
 void InitPerks()
@@ -56,6 +107,7 @@ bool SetCharacterPerk(ref chref, string perkName)
 	bool bOk = IsEntity(&worldMap) || IsEntity(pchar); //отключение при входе в игру
 	if(bOk && ChrPerksList.list.(perkName).BaseType == "trait")
 	{
+		string sBasePerk = perkName; // > perkName ниже мутируется в +"Fem" только для подписи в логе
 		if(CheckAttribute(&ChrPerksList, "list." + perkName + ".FemName") && chref.sex == "woman") perkName += "Fem";
 		if(IsMainCharacter(chref))
 			Log_SetStringToLog(XI_ConvertString("Got_the_perk") + GetConvertStr(perkName, "AbilityDescribe.txt"));
@@ -67,7 +119,7 @@ bool SetCharacterPerk(ref chref, string perkName)
 		
 		if(IsMainCharacter(chref) || IsCompanion(chref) || isOfficerInShip(chref, true))
 		{
-			if (CheckAttribute(&ChrPerksList, "list." + perkName) && !HasSubStr(ChrPerksList.list.(perkName).Parameters, "negative") && perkName != "GhostsGift")
+			if (CheckAttribute(&ChrPerksList, "list." + sBasePerk) && !HasSubStr(ChrPerksList.list.(sBasePerk).Parameters, "negative") && sBasePerk != "GhostsGift")
 				 PlayStereoSound("interface\new_level.wav"); //TODO: отдельный другой звук!
 			else PlayStereoSound("interface\sobitie_na_karte_001.wav");
 		}
@@ -77,8 +129,9 @@ bool SetCharacterPerk(ref chref, string perkName)
 	//Если всё набрано и доступных перков больше нет, то выдаём атрибут для интерфейса
 	if(ChrPerksList.list.(perkName).BaseType != "trait")
 	{
-		if(HaveAllPerks(chref, "self")) chref.AllSelf = "";
-		if(HaveAllPerks(chref, "ship")) chref.AllShip = "";
+		// > не пересчитывать HaveAllPerks, если флаг уже стоит
+		if(!CheckAttribute(chref, "AllSelf")) { if(HaveAllPerks(chref, "self")) chref.AllSelf = ""; }
+		if(!CheckAttribute(chref, "AllShip")) { if(HaveAllPerks(chref, "ship")) chref.AllShip = ""; }
 	}
 	return bRefresh;
 }
@@ -144,10 +197,9 @@ void ActivateCharacterPerk(ref chref, string perkName)
 
 void AddPerkEffect(ref chr, string sPerk)
 {
-	aref arRoot, arBase;
-	makearef(arRoot, chr.perks.list);
-	if (!CheckAttribute(arRoot, sPerk)) return false;
-	makearef(arBase, ChrPerksList.list.(sPerk));
+	aref arRoot; makearef(arRoot, chr.perks.list);
+	if (!CheckAttribute(arRoot, sPerk)) return;
+//	aref arBase; makearef(arBase, ChrPerksList.list.(sPerk));
 	
 	float fTemp;
 	
@@ -155,7 +207,7 @@ void AddPerkEffect(ref chr, string sPerk)
 	{
 		case "SecondWind":	// "Второе дыхание"
 			fTemp = makefloat(GetCharEnergy(chr, 0) - GetCharEnergy(chr, 1)) * 0.5;	// > потраченная энергия / 2
-			LAi_UseCustomBottle(chr, "energy", fTemp, "8.0", "");
+			LAi_UseCustomBottle(chr, "energy", fts(fTemp, 2), "8.0", "");
 		break;
 	}
 }
@@ -322,14 +374,14 @@ void procChrPerkDelay()
 	
 	bool isOfficerPerk = false;
 	bool isMainCharPerk = false;
-	if (CheckAttribute(ChrPerksList, "list."+perkName+".OfficerType"))
+	if (CheckAttribute(&ChrPerksList, "list."+perkName+".OfficerType"))
 	{
 		string sOfficerType = ChrPerksList.list.(perkName).OfficerType;
 		isOfficerPerk = sti(pchar.Fellows.Passengers.(sOfficerType)) == chrIdx;
 	}
 	isMainCharPerk = sti(Characters[chrIdx].index) == nMainCharacterIndex || isOfficerPerk;
 
-	if( CheckAttribute(arPerk,"active") )
+	if (and(CheckAttribute(arPerk,"active"), ok || perkName == "Rush" || perkName == "SecondWind"))
 	{
 		int iActive = sti(arPerk.active)-1;
 		if( iActive>0 )	{arPerk.active = iActive;}
@@ -351,7 +403,7 @@ void procChrPerkDelay()
 	}
 	else
 	{
-		Characters[chrIdx].perks.list.(perkName).delay = delay;
+		arPerk.delay = delay;
 		PostEvent("evntChrPerkDelay",1000,"sl",perkName,chrIdx);
 		if (isMainCharPerk)
 		{
@@ -455,27 +507,10 @@ void ClearActiveChrPerks(ref chref)
 // > AlexBlade - Относится ли перк к 'морским' активным
 bool IsSeaActivePerk(string perkName)
 {
-	aref arPerksRoot, arPerk;
-	int i,n;
-	
-	makearef(arPerksRoot, ChrPerksList.list);
-		
-	n = GetAttributesNum(arPerksRoot);
-	for (i=0; i<n; i++)
-	{
-		arPerk = GetAttributeN(arPerksRoot,i);
-		if (GetAttributeName(arPerk) != perkName)
-			continue;
-
-		if (CheckAttribute(arPerk,"TimeDelay") && CheckAttribute(arPerk,"BaseType") && arPerk.BaseType == "ship")
-        {
-			return true;
-		}
-		
-		return false;
-	}
-	
-	return false;
+	// KZ > убран линейный скан
+	if (!CheckAttribute(&ChrPerksList, "list." + perkName + ".TimeDelay")) return false;
+	if (!CheckAttribute(&ChrPerksList, "list." + perkName + ".BaseType"))  return false;
+	return ChrPerksList.list.(perkName).BaseType == "ship";
 }
 
 // > AlexBlade - Относится ли перк к 'наземным' активным
@@ -485,12 +520,6 @@ bool IsLandActivePerk(string perkName) {
 
 void ClearActivePerks(ref offic)
 {
-	if (CheckAttribute(&TEV, "RefreshActiveSeaPerks"))
-	{
-		RefreshActiveSeaPerks(false);
-		DeleteAttribute(&TEV, "RefreshActiveSeaPerks");
-	}
-
 	aref arPerksRoot, arPerk;
 	makearef(arPerksRoot, offic.perks.list);
 	
@@ -550,46 +579,9 @@ void AcceptWindCatcherPerk(ref refCharacter)
 // EvgAnat - переключение опции быстрого нахождения предметов -->
 void SetHawkEye(ref loc)
 {
-	ref itm;
-	int i, iOff;
-	bool enableHE = false;
-	float fTemp, x, y, z, up;
-	string sGroup, sLocator;
+	bHawkEyeShow = false;
 	if (CheckAttribute(loc, "id") && loc.id == "Temple_round") return;
-	if (GetOfficersPerkUsing(pchar, "HawkEye", true))
-	{
-		enableHE = true;
-	}
-	if (!enableHE) return;
-    for (i = 0; i < ITEMS_QUANTITY; i++)
-    {
-        makeref(itm, Items[i]);
-        if (CheckAttribute(itm, "shown") && itm.shown == true
-            && CheckAttribute(itm, "startLocation") && CheckAttribute(itm, "startLocator")
-            && itm.startLocation == pchar.location)
-        {
-            if (StrHasStr(itm.startLocator, "fire,button", 1)) continue;
-            sGroup = "item";
-            sLocator = itm.startLocator;
-            if (!CheckAttribute(loc, "locators.item." + sLocator) || !CheckFreeItemLocator(pchar.location, sLocator) || !CheckAttributeMass(loc, "locators.item." + sLocator, "x,y,z", "|")) continue;
-            x = stf(loc.locators.(sGroup).(sLocator).x);
-            y = stf(loc.locators.(sGroup).(sLocator).y);
-            z = stf(loc.locators.(sGroup).(sLocator).z);
-            up = 0.2;
-
-            //если камень ростовщика или кольцо "красавицы", то подсветку поднимаем на высоту травы
-            if (CheckAttribute(&InterfaceStates, "HerbDetails.Height") && StrHasStr(itm.id, "UsurersJew,WeddingRing", 1))
-            {
-                fTemp = stf(InterfaceStates.HerbDetails.Height);
-                if (fTemp > 0.65) up = 0.6;
-                else if (fTemp < 0.17) up = 0.25;
-                else if (fTemp < 0.25) up = fTemp * 1.5;
-                else up = fTemp * 1.75;
-            }
-
-            itm.particleId = CreateParticleSystemX("HawkEye", x, y+up, z, x, y+up, z, 0); //подсветка предмета
-        }
-    }
+	bHawkEyeShow = GetOfficersPerkUsing(pchar, "HawkEye", true);
 }
 // EvgAnat - переключение опции быстрого нахождения предметов <--
 
@@ -667,6 +659,8 @@ void SetWildCaribbean()
 	SetSphereToLocation(n, "grotto2");
 	n = FindLocation("Providence_Cavern");
 	SetSphereToLocation(n, "cavernLow1");
+	n = FindLocation("Aruba_Grot");
+	SetSphereToLocation(n, "grotto1");
 }
 // EvgAnat - дикие Карибы, возвращение сфер в конкретную локацию
 void SetSphereToLocation(int n, string sLoc)
@@ -691,29 +685,32 @@ void SetSphereToLocation(int n, string sLoc)
 bool HaveAllPerks(ref sld, string type)
 {
 	string perkName;
-	aref arPerksRoot;
+	aref arPerksRoot, arPerk;
 	makearef(arPerksRoot,ChrPerksList.list);
 	int perksQ = GetAttributesNum(arPerksRoot);
+	bool bIsPlayer     = sld.id == pchar.id;
+	bool bAllowedPosts = CheckAttribute(sld, "AllowedPosts");
+	bool bCompanionDis = CheckAttribute(sld, "CompanionDisable");
 	for(int i = 0; i < perksQ; i++)
 	{
 		//Эти скипаются в интерфейсе
-		perkName = GetAttributeName(GetAttributeN(arPerksRoot,i));
-		if (ChrPerksList.list.(perkName).BaseType != type || perkName == "WildCaribbean")	continue;
-		if (CheckAttribute(sld, "CompanionDisable") && perkName == "ShipEscape")			continue;
-		if (sld.id == pchar.id && CheckAttribute(arPerksRoot, perkName + ".NPCOnly"))		continue;
-		if (sld.id != pchar.id && CheckAttribute(arPerksRoot, perkName + ".PlayerOnly"))	continue;
-		if (CheckAttribute(arPerksRoot, perkName + ".Hidden") && !ShowHiddenPerks(sld, perkName)) continue;
-		if (CheckAttribute(sld, "AllowedPosts"))
+		arPerk = GetAttributeN(arPerksRoot,i);
+		perkName = GetAttributeName(arPerk);
+		if (arPerk.BaseType != type || perkName == "WildCaribbean")			continue;
+		if (bCompanionDis && perkName == "ShipEscape")						continue;
+		if (bIsPlayer  && CheckAttribute(arPerk, "NPCOnly"))				continue;
+		if (!bIsPlayer && CheckAttribute(arPerk, "PlayerOnly"))				continue;
+		if (CheckAttribute(arPerk, "Hidden") && !ShowHiddenPerks(sld, perkName)) continue;
+		if (bAllowedPosts)
 		{
 			if(perkName == "ByWorker"  && GetCountSubString(sld.AllowedPosts) < 2)	continue;
 			if(perkName == "ByWorker2" && GetCountSubString(sld.AllowedPosts) < 3)	continue;
 		}
-		if (CheckAttribute(arPerksRoot, perkName + ".OfficerType"))
+		if (CheckAttribute(arPerk, "OfficerType"))
 		{
-			if(arPerksRoot.(perkName).OfficerType == "capellan" && !CheckAttribute(sld, "Capellan"))
+			if(arPerk.OfficerType == "capellan" && !CheckAttribute(sld, "Capellan"))
 				continue;
-			if(CheckAttribute(sld, "AllowedPosts") && !HasSubStr(sld.AllowedPosts, arPerksRoot.(perkName).OfficerType)
-			&& CheckAttribute(sld, "CompanionDisable"))
+			if(bAllowedPosts && !HasSubStr(sld.AllowedPosts, arPerk.OfficerType) && bCompanionDis)
 				continue;
 		}
 		//Проверяем теперь отображаемый
@@ -728,11 +725,11 @@ bool ShowHiddenPerks(ref rChar, string sPerkName)
 	switch (sPerkName)
 	{
 		case "ByWorker":			// > перк "Совместитель" доступен только этим персам
-			if (CheckAttribute(rChar, "PGGAi") || StrHasStr(rChar.id, "Angellica,DanielleOff,Dieke,Hugtorp,Jafarry,James_Callow,Martin_Bleker,Pitt,YokoDias,Volverston", 1))
+			if (CheckAttribute(rChar, "PGGAi") || StrHasStr(rChar.id, "Angellica,DanielleOff,Dieke,Hugtorp,Jafarry,James_Callow,Martin_Bleker,Pitt,YokoDias,Volverston", true))
 				return true;
 		break;
 		case "ByWorker2":			// > перк "Совместитель-универсал" доступен только этим персам
-			if (StrHasStr(rChar.id, "DanielleOff,Martin_Bleker", 1))
+			if (StrHasStr(rChar.id, "DanielleOff,Martin_Bleker", true))
 				return true;
 		break;
 		case "MusketsTraining":		// > перк "Мушкетёрская подготовка" доступен только этим персам
@@ -775,70 +772,4 @@ bool IsOfficersPerkAcquired(ref chref, string perkName)
 		if (CheckAttribute(offc, "perks.list."+perkName)) ok = true;
 	}
 	return ok;
-}
-
-// KZ > обновить / удалить активные морские перки у офицеров и компаньонов ГГ
-void RefreshActiveSeaPerks(bool bRestart)
-{
-	if (sti(InterfaceStates.Launched) == 1) return;
-
-	int i, iComp, q = GetPassengersQuantity(pchar);
-	ref rChar;
-
-	if (q > 0)
-	{
-		for (i = 0; i < q; i++)
-		{
-			rChar = &Characters[GetPassenger(pchar, i)];
-
-			if (IsOfficerRemovable(rChar))
-				RefreshActiveSeaPerksFunc(rChar, bRestart);
-		}
-	}
-
-	q = GetCompanionQuantity(pchar);
-
-	if (q > 1)
-	{
-		for (i = 1; i <= q; i++)
-		{
-			iComp = GetCompanionIndex(pchar, i);
-
-			if (iComp >= 0)
-			{
-				rChar = GetCharacter(iComp);
-
-				if (GetShipRemovable(rChar) && GetRemovable(rChar))
-					RefreshActiveSeaPerksFunc(rChar, bRestart);
-			}
-		}
-	}
-}
-
-void RefreshActiveSeaPerksFunc(ref _rChar, bool _bRestart)
-{
-	int j, iPerks;
-	aref arPerksRoot, arPerk;
-	string sPerk;
-
-	makearef(arPerksRoot, _rChar.perks.list);
-	iPerks = GetAttributesNum(arPerksRoot);
-
-	for (j = 0; j < iPerks; j++)
-	{
-		arPerk = GetAttributeN(arPerksRoot, j);
-		sPerk = GetAttributeName(arPerk);
-
-		if (IsSeaActivePerk(sPerk))
-		{
-			if (_bRestart)
-			{
-				DelPerkFromActiveList(sPerk);
-				DeleteAttributeEx(arPerk, "active,delay");
-				PostEvent("evntPerkAgainUsable", 1);							
-			}
-			else
-				PostEvent("evntChrPerkDelay", 50, "sl", sPerk, sti(_rChar.index));
-		}
-	}
 }

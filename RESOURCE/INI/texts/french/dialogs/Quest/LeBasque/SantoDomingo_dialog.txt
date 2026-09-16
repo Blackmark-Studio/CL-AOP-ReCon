@@ -1,0 +1,80 @@
+SantoDomingo_dialog_1 {
+Señor officier, tout est calme aux portes. Depuis l'affaire Jaco, la garde ouvre l'œil.
+}
+SantoDomingo_dialog_2 {
+Et c'est ainsi que cela doit être.
+}
+SantoDomingo_dialog_3 {
+Señor, si vous revenez de patrouille, allez directement chez le commandant. Il a ordonné qu'on lui signale tous les prisonniers.
+}
+SantoDomingo_dialog_4 {
+Je connais l'ordre.
+}
+SantoDomingo_dialog_5 {
+Señor officier, la patrouille est en place aux portes. Nous ne laissons entrer aucun individu suspect, et les fugitifs ne sont remis qu'au commandant.
+}
+SantoDomingo_dialog_6 {
+Poursuivez votre service.
+}
+SantoDomingo_dialog_7 {
+Señor, la ville est agitée aujourd'hui. Le commandant attend des nouvelles de ce salaud qui a tenté d'atteindre Duval.
+}
+SantoDomingo_dialog_8 {
+Il les aura bientôt.
+}
+SantoDomingo_dialog_9 {
+Señor officier, la garde est prévenue. Si le prisonnier est dangereux, conduisez-le droit chez le commandant, sans vous arrêter.
+}
+SantoDomingo_dialog_10 {
+C'est ce que nous ferons.
+}
+SantoDomingo_dialog_11 {
+Hé, soldat, ne traîne pas. Si vous avez un prisonnier, amenez-le au commandant.
+}
+SantoDomingo_dialog_12 {
+Nous y allons.
+}
+SantoDomingo_dialog_13 {
+De retour de patrouille ? Tu as une mine à avoir traversé l'enfer lui-même.
+}
+SantoDomingo_dialog_14 {
+La route n'a pas été facile.
+}
+SantoDomingo_dialog_15 {
+Si c'est bien ce Jaco, tiens-le serré. Le commandant veut lui parler depuis longtemps.
+}
+SantoDomingo_dialog_16 {
+Il ne s'échappera pas.
+}
+SantoDomingo_dialog_17 {
+Pas de bavardage avec le prisonnier. Faites-le entrer et remettez-le conformément aux ordres.
+}
+SantoDomingo_dialog_18 {
+Compris.
+}
+SantoDomingo_dialog_19 {
+Une patrouille de retour ? Alors dépêchez-vous. Le commandant est de mauvaise humeur aujourd'hui ; mieux vaut ne pas le faire attendre.
+}
+SantoDomingo_dialog_20 {
+Qu'il se prépare à recevoir sa prise.
+}
+
+LeBasque_SantoDomingoJailOff_1 {
+Marceau ? Que diable faites-vous ici ? Sortez immédiatement, ou je serai obligé de vous arrêter.
+}
+
+LeBasque_SantoDomingoJailOff_2 {
+De nombreuses années ont passé. Personne ne vous croira.
+}
+
+LeBasque_SantoDomingoJailOff_3 {
+Tu as toujours été un sacré salaud prudent, Marceau...
+}
+
+LeBasque_SantoDomingoJailOff_4 {
+Bon sang... Sergent ! Amenez Duval !
+}
+
+LeBasque_SantoDomingoJailOff_5 {
+Emmenez-le et quittez ma ville immédiatement.
+}

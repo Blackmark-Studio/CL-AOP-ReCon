@@ -1,69 +1,69 @@
 Tortuga_Store_1 {
-什么问题？
+什么问题？ 
 }
 Tortuga_Store_2 {
-你想干什么？
+你想干什么？ 
 }
 Tortuga_Store_3 {
 @<RandPhraseSimple>
 }
 Tortuga_Store_4 {
-前阵子你还想问我个问题……
+前阵子你还想问我个问题…… 
 }
 Tortuga_Store_5 {
-Tortuga的店里好久没人问过这样的问题了……
+托尔图加的店里好久没人问过这样的问题了…… 
 }
 Tortuga_Store_6 {
-问题，问题，总是有问不完的问题……
+问题， 问题， 总是有问不完的问题…… 
 }
 Tortuga_Store_7 {
-我改主意了……
+我改主意了…… 
 }
 Tortuga_Store_8 {
-我现在没什么可说的。
+我现在没什么可说的。 
 }
 Tortuga_Store_9 {
 @<RandPhraseSimple>
 }
 Tortuga_Store_10 {
-嗯，我的记忆好像出了点问题……
+嗯， 我的记忆好像出了点问题…… 
 }
 Tortuga_Store_11 {
-那没有就是没有呗。
+那没有就是没有呗。 
 }
 Tortuga_Store_12 {
-问——题，是吧……
+问——题， 是吧…… 
 }
 Tortuga_Store_13 {
-听着，Pierre the Picard来过你店里吗？有人说他往这边来了。
+听着， 皮卡德.皮埃尔来过你店里吗？ 有人说他往这边来了。 
 }
 Tortuga_Store_14 {
-他大概两小时前来过，买了又一批花哨的小玩意儿，然后又去继续挥霍他的日子了。
+他大概两小时前来过， 买了又一批花哨的小玩意儿， 然后又去继续挥霍他的日子了。 
 }
 Tortuga_Store_15 {
-@<UpperFirst>，咱们直接做生意吧，老问这些有啥用？
+@<UpperFirst>， 咱们直接做生意吧， 老问这些有什么用？ 
 }
 Tortuga_Store_16 {
-你已经问过我关于Pierre的事了……
+你已经问过我关于皮埃尔的事了…… 
 }
 Tortuga_Store_17 {
-听着，要不你去别的地方打听Pierre吧？
+听着， 要不你去别的地方打听皮埃尔吧？ 
 }
 Tortuga_Store_18 {
-是啊，Pierre现在日子过得挺滋润的……他经常找你办这种事吗？
+是啊， 皮埃尔现在日子过得挺滋润的…… 他经常找你办这种事吗？ 
 }
 Tortuga_Store_19 {
-我们聊过吗？嗯，大概是聊过吧……
+我们聊过吗？ 嗯， 大概是聊过吧…… 
 }
 Tortuga_Store_20 {
-咱们可以做点生意……
+咱们可以做点生意…… 
 }
 Tortuga_Store_21 {
-行吧，那我去别处打听打听。
+行吧， 那我去别处打听打听。 
 }
 Tortuga_Store_22 {
-几乎每天都会发生，偶尔才有例外。
+几乎每天都会发生， 偶尔才有例外。 
 }
 Tortuga_Store_23 {
-唉，有些人就是这么走运！算了，我再去找找他。多谢你啊。
+唉， 有些人就是这么走运！ 算了， 我再去找找他。 多谢你啊。 
 }

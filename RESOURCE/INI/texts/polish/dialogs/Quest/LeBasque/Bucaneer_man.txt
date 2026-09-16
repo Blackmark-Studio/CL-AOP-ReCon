@@ -1,0 +1,70 @@
+Bucaneer_man_1 {
+Hyk... O, kapitanie! Chodź do ogniska! Niech mnie piorun trzaśnie, dziś pijemy za twoje zdrowie i za zgubę całej Hiszpanii!
+}
+Bucaneer_man_2 {
+Z przyjemnością się przyłączę, chłopcy. Widzę, że rum leje się u was strumieniami.
+}
+Bucaneer_man_3 {
+Przeklęty upał. Mięso psuje się szybciej, niż zdążymy je uwędzić na rusztach. Jeśli w najbliższych dniach nie lunie porządny deszcz, trzeba będzie zapuścić się głębiej w selwę po świeżą zwierzynę.
+}
+Bucaneer_man_4 {
+Proch zawilgł, muszkiet wypala raz na dwa. Cały wieczór będę czyścił zamek i suszył zapasy, bo inaczej przy spotkaniu z hiszpańskim patrolem niewiele ze mnie będzie pożytku.
+}
+Bucaneer_man_5 {
+Nuda jak cholera, kapitanie. Tygodniami tropić dziki — to nie zajęcie dla ludzi o słabych nerwach. Nie masz przypadkiem paru zbędnych peso? Chciałem zagrać z chłopakami w kości, ale kieszenie mam puste.
+}
+Bucaneer_man_6 {
+Te dżungle kiedyś wpędzą mnie do grobu. Wczoraj ugryzło mnie jakieś paskudztwo i teraz ręka spuchła tak, że aż boli trzymać szablę. Miejscowi mówią, że samo przejdzie. Mam nadzieję, że nie kłamią.
+}
+Bucaneer_man_7 {
+Słyszałem, że na Tortudze pośrednicy całkiem zatracili sumienie — skupują nasze skóry za bezcen. Chyba pora rzucić to polowanie i wrócić do morskiego fachu. Tam przynajmniej łup dzieli się uczciwiej.
+}
+Bucaneer_man_8 {
+Taki już wasz los, bukanierzy. Trzymajcie się.
+}
+Bucaneer_man_9 {
+Powodzenia w interesach, nie będę zatrzymywać.
+}
+Bucaneer_man_10 {
+Na wszystkich świętych, kapitanie, dzisiaj nawet nasza mętna berbelucha smakuje jak najlepsze burgundzkie! Myśmy tu, w błocie i sadzy, tylko karmili komary i tłukli dzikie świnie, kiedy wy dokonywaliście wielkich rzeczy. Ale Bóg mi świadkiem, gdy patrzę, jak nasze kobiety znowu śmieją się przy ogniskach... do diabła, Tortuga dziś świętuje! Napij się z nami, kapitanie!
+}
+Bucaneer_man_11 {
+Niech mnie piorun trzaśnie, jeśli dzisiaj sam nie osuszę beczułki! Nie staliśmy z wami pod ogniem muszkietów, kapitanie, to szczera prawda. Ale wyrwać te nieszczęsne kobiety z pazurów kastylijskiego szakala Vargasa — to naprawdę szlachetny czyn, godny samego króla! Pijemy za wasze zdrowie! Hyk... diabli, niech mi ktoś poda jeszcze rumu!
+}
+Bucaneer_man_12 {
+Wiecie, kapitanie... hyk... mówią, że prawdziwych cudów nie ma. A ja patrzę na to ognisko, słucham śpiewu dziewczyn i wiem, że łżą bezczelnie! My, bukanierzy, prosty lud, nie bierzemy udziału w wielkich oblężeniach. Ale dziś Kastylijczycy napili się własnej krwi, a na Tortugę wróciło życie. Niech le Basque zgarnie całą sławę w Europie, ale tutaj pijemy tylko za was! Nadstawiajcie kubek!
+}
+Bucaneer_man_13 {
+Pijcie i bawcie się, chłopcy! To święto należy się wam jak nikomu.
+}
+Bucaneer_man_14 {
+Naprawdę wspaniały wieczór. Nie będę wam przeszkadzał — osuszajcie beczki do dna!
+}
+
+Bucaneer_man_15 {
+Przeklęty upał. Mięso psuje się szybciej, niż zdążymy je uwędzić na rusztach. Jeśli w najbliższych dniach nie lunie porządny deszcz, trzeba będzie zapuścić się głębiej w selwę po świeżą zwierzynę.
+}
+
+Bucaneer_man_16 {
+Proch zawilgł, muszkiet wypala raz na dwa. Cały wieczór będę czyścił zamek i suszył zapasy, bo inaczej przy spotkaniu z hiszpańskim patrolem niewiele ze mnie będzie pożytku.
+}
+
+Bucaneer_man_17 {
+Nuda jak cholera, kapitanie. Tygodniami tropić dziki — to nie zajęcie dla ludzi o słabych nerwach. Nie masz przypadkiem paru zbędnych peso? Chciałem zagrać z chłopakami w kości, ale kieszenie mam puste.
+}
+
+Bucaneer_man_18 {
+Te dżungle kiedyś wpędzą mnie do grobu. Wczoraj ugryzło mnie jakieś paskudztwo i teraz ręka spuchła tak, że aż boli trzymać szablę. Miejscowi mówią, że samo przejdzie. Mam nadzieję, że nie kłamią.
+}
+
+Bucaneer_man_19 {
+Słyszałem, że na Tortudze pośrednicy całkiem zatracili sumienie — skupują nasze skóry za bezcen. Chyba pora rzucić to polowanie i wrócić do morskiego fachu. Tam przynajmniej łup dzieli się uczciwiej.
+}
+
+Bucaneer_man_20 {
+Taki już wasz los, bukanierzy. Trzymajcie się.
+}
+
+Bucaneer_man_21 {
+Powodzenia w interesach, nie będę zatrzymywać.
+}

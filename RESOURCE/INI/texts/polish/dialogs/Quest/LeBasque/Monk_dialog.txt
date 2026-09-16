@@ -1,0 +1,111 @@
+Monk_dialog_1 {
+Ach, kapitanie! Przyznam, że żywiłem nikłą nadzieję spotkać pana na tych ulicach w nieco bardziej przyzwoitym stanie. Michel ostrzegał, że nasze drogi mogą się przeciąć, ale nie przypuszczałem, że ostrze Vargasa zostawi na panu tak paskudne pamiątki.
+}
+Monk_dialog_2 {
+Le Basque wspomniał, że pełni teraz pan tutaj posługę duszpasterską, Bertrandzie. I dodał, że jeśli ktoś potrafi postawić mnie na nogi, to tylko pan.
+}
+Monk_dialog_3 {
+Co do duszpasterza — proszę bardzo. Ale lekarza zrobił ze mnie wyłącznie złośliwy los. Zanim pojawiłem się w tym obozie, cała miejscowa medycyna sprowadzała się do kwarty piekącego rumu, rozgrzanego ostrza i przyjacielskiej rady, by nie wyzionąć ducha przed świtem. Musiałem nieco poszerzyć ramy swojego powołania.
+}
+Monk_dialog_4 {
+Miło widzieć, że ponure kazamaty nie odebrały panu poczucia humoru.
+}
+Monk_dialog_5 {
+Po tych przeklętych katakumbach, kapitanie, bezgranicznie cieszę się każdym dniem, w którym wolno mi leczyć cudze rany, zamiast czekać, aż kastylijscy kaci raczą poderżnąć mi gardło. A za to, że wyciągnął pan mnie i te nieszczęsne damy na światło dzienne, jestem panu bezgranicznie dłużny. Proszę więc oprzeć się o tę beczkę i pozwolić mi obejrzeć, jaką dokładnie pamiątkę zostawił panu nieboszczyk don Alonso.
+}
+Monk_dialog_6 {
+Jeśli pańska sztuka potrafi postawić mnie na nogi — nie będę się sprzeciwiać.
+}
+Monk_dialog_7 {
+Dziękuję, ale nie teraz. Muszę trochę dojść do siebie.
+}
+Monk_dialog_8 {
+Sądzę, że tym razem obejdzie się bez chirurgii. Ale zapamiętam pańską wielkoduszną ofertę.
+}
+Monk_dialog_9 {
+Witam, kapitanie. Znów sprowadziła pana potrzeba zręcznego medyka, czy po prostu postanowił pan skrócić sobie czas rozmową z człowiekiem, którego miał pan szlachetność wyrwać z kastylijskiej niewoli?
+}
+Monk_dialog_10 {
+Rana zadana przez Vargasa wciąż daje o sobie znać. Zerknie pan?
+}
+Monk_dialog_11 {
+Jak podoba się panu nowa posługa wśród tych zdesperowanych bukanierów?
+}
+Monk_dialog_12 {
+Nie śmiem dłużej odrywać pana od zbożnych trudów. Do zobaczenia, Bertrandzie.
+}
+Monk_dialog_13 {
+Jak podoba się panu nowa posługa wśród tych zdesperowanych bukanierów?
+}
+Monk_dialog_14 {
+Przechodziłem obok i postanowiłem złożyć wyrazy szacunku. Do zobaczenia, Bertrandzie.
+}
+Monk_dialog_15 {
+Nowa posługa? Ha! Proszę samemu ocenić: wczoraj jeden zatwardziały bluźnierca żądał, żebym pobłogosławił jego muszkiet, drugi błagał o wyjęcie kastylijskiej kuli z nader delikatnego miejsca, a trzeci, raczywszy przyjść do spowiedzi, zasnął jak zabity, ledwie doszedł do drugiego grzechu śmiertelnego. Jak pan widzi, nudy tu nie ma.
+}
+Monk_dialog_16 {
+I wciąż pan nie uciekł od takiego stada?
+}
+Monk_dialog_17 {
+Uciec? Po lochach, z których pan mnie wyciągnął? Proszę wybaczyć. Ci rębajłowie mają bardzo osobliwe, dzikie pojęcie o pobożności, ale nie trzymają kobiet w wilgotnych podziemiach i nie handlują cudzym życiem dla kaprysu inkwizycji. Poza tym tutaj naprawdę jestem potrzebny i na razie to mi całkowicie wystarcza.
+}
+Monk_dialog_18 {
+Cóż, wygląda na to, że wreszcie odnalazł pan swoje prawdziwe powołanie.
+}
+Monk_dialog_19 {
+Proszę zdjąć kaftan, kapitanie. Ostrożnie... Do diabła. Jest znacznie gorzej, niż sądziłem. Toledańska stal weszła dużo głębiej, a brzegi rany już zaczęły źle się zabliźniać. Sama zmiana opatrunków na pewno nie wystarczy.
+}
+Monk_dialog_20 {
+Nie owijaj w bawełnę, Bertrandzie. Jak źle jest?
+}
+Monk_dialog_21 {
+Na tyle źle, że gdyby spędził pan jeszcze parę dni na morzu, zalewając ból rumem zamiast należycie opatrywać ranę, trzeba by było szukać księdza do ostatniego namaszczenia. Będę musiał ponownie otworzyć ropienie, dokładnie przemyć wszystko spirytusem winnym i założyć ciasne szwy. Ale przysięgam na swój habit, nie będę pana pruł tutaj, w ulicznym kurzu. Potrzebujemy czystego łóżka, światła i wrzątku, inaczej gorączka dokończy to, co zaczął Vargas.
+}
+Monk_dialog_22 {
+W takim razie nie musimy szukać wolnego pokoju. Mam tu własny dom. Proszę zabrać narzędzia, Bertrandzie, i iść za mną.
+}
+Monk_dialog_23 {
+No już, kapitanie, może pan otworzyć oczy. Muszę przyznać, że pańska pierzyna bardzo się przydała — dobre trzy godziny leżał pan na niej w głębokiej nieświadomości, kiedy doprowadzałem tę ranę do porządku. Ropę usunięto, brzegi ściągnięto, opatrunek jest świeży. I stanowczo zalecam przynajmniej dzisiaj nie opuszczać tych ścian i nie odgrywać nieśmiertelnego bohatera.
+}
+Monk_dialog_24 {
+Trzy godziny?.. Czyli sprawa naprawdę była znacznie poważniejsza, niż próbował pan pokazać. Przyjmijcie moje podziękowania, Bertrandzie. Uroczyście obiecuję, że do jutra rano moja szpada nie opuści pochwy.
+}
+Monk_dialog_25 {
+Skąd ty zawsze masz przy sobie tyle leczniczych mikstur i ziół, Bertrandzie?
+}
+Monk_dialog_26 {
+Bertrandzie, chciałem porozmawiać o uprawie ziół leczniczych.
+}
+Monk_dialog_27 {
+Ech... Słyszałem, jak młode, gorące głowy pokroju naszego Jaco wciąż ryzykują życiem, włócząc się po niebezpiecznej dżungli dla paru korzonków. Pomyślałem więc: po co kusić los, skoro wszystko możemy wyhodować tuż pod bokiem? W opactwie zajmowałem się kiedyś ogrodem zielarskim i dobrze pamiętam to rzemiosło.\nTutejsza ziemia jest żyzna - rośliny dojrzewają szybko, w zaledwie 5–8 dni. Ale zapamiętaj: jeśli przed nowym siewem nie zbierzesz starego plonu, wszystkie niezerwane rośliny trzeba będzie po prostu wyrwać i wyrzucić. Zbiory trzeba więc robić na czas!
+}
+Monk_dialog_28 {
+Rozsądne podejście, Bertrandzie. Możesz zasadzić dla mnie konkretne rośliny?
+}
+Monk_dialog_29 {
+Kuszące, ojcze, ale teraz nie mam głowy do zielarstwa.
+}
+Monk_dialog_30 {
+Przecież nasiona są już w ziemi! Cierpliwość to wielka cnota. Przyjdź mniej więcej za tydzień, do tego czasu wszystko powinno dojrzeć.
+}
+Monk_dialog_31 {
+Ech, moja pamięć naprawdę już nie ta... Wpadnę później.
+}
+Monk_dialog_32 {
+Ziemia jest gotowa do siewu. Co dokładnie posiejemy? Zbiory zaplanujmy mniej więcej za tydzień.
+}
+Monk_dialog_33 {
+Obsiej cały zagon maruną.
+}
+Monk_dialog_34 {
+Niech na grządce rośnie żeń-szeń.
+}
+Monk_dialog_35 {
+Będziemy uprawiać korzeń imbiru.
+}
+Monk_dialog_36 {
+Podziel grządkę - niech rośnie po trochu każdego gatunku.
+}
+Monk_dialog_37 {
+Na razie niczego nie potrzebuję, Bertrandzie. Porozmawiamy później.
+}

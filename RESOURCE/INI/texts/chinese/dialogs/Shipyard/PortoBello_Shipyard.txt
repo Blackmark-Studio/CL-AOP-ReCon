@@ -1,57 +1,57 @@
 PortoBello_Shipyard_1 {
-什么问题？
+什么问题？ 
 }
 PortoBello_Shipyard_2 {
-你想干什么？
+你想干什么？ 
 }
 PortoBello_Shipyard_3 {
 @<RandPhraseSimple>
 }
 PortoBello_Shipyard_4 {
-前阵子你试图问我个问题……
+前阵子你试图问我个问题…… 
 }
 PortoBello_Shipyard_5 {
-在我自己的船厂，甚至整个城里，我还真没见过像你这么专注好奇的人。
+在我自己的船坞， 甚至整个城里， 我还真没见过像你这么专注好奇的人。 
 }
 PortoBello_Shipyard_6 {
-问这么多干嘛？俺就是造船的，赶紧干活吧。
+问这么多干嘛？ 我就是造船的， 赶紧干活吧。 
 }
 PortoBello_Shipyard_7_m {
-我改主意了……
+我改主意了…… 
 }
 PortoBello_Shipyard_7_f {
-我改变主意了……
+我改变主意了…… 
 }
 PortoBello_Shipyard_8 {
-我现在没什么可说的。
+我现在没什么可说的。 
 }
 PortoBello_Shipyard_9 {
 @<RandPhraseSimple>
 }
 PortoBello_Shipyard_10 {
-嗯，我的记忆好像出了点问题……
+嗯， 我的记忆好像出了点问题…… 
 }
 PortoBello_Shipyard_11 {
-嗯，不过……
+嗯， 不过…… 
 }
 PortoBello_Shipyard_12 {
-咱们……
+咱们…… 
 }
 PortoBello_Shipyard_13 {
-听着，有个叫François Gontier的私掠船长来找过你吗？他最近还在Portobelo，我敢肯定。
+听着， 有个叫弗朗索瓦.贡蒂尔的私掠船长来找过你吗？ 他最近还在贝洛港， 我敢肯定。 
 }
 PortoBello_Shipyard_14 {
-他来过，买了俺一艘corvette，没多久就出海了。
+他来过， 买了我一艘巡航舰， 没多久就出海了。 
 }
 PortoBello_Shipyard_15 {
-谢谢！你知道他去哪了吗？
+谢谢！ 你知道他去哪了吗？ 
 }
 PortoBello_Shipyard_16_m {
-不，伙计，俺一点都不知道。俺就是修船卖船的，哪管别人去哪儿，跟俺没关系。
+不， 伙计， 我一点都不知道。 我就是修船卖船的， 哪管别人去哪儿， 跟我没关系。 
 }
 PortoBello_Shipyard_16_f {
-不，朋友，俺一点都不知道。俺只修船卖船，谁去哪儿跟俺没关系，不归俺管。
+不， 姑娘， 我一点都不知道。 我就是修船卖船的， 哪管别人去哪儿， 跟我没关系。 
 }
 PortoBello_Shipyard_17 {
-那咱们就来看看吧……
+那咱们就来看看吧…… 
 }

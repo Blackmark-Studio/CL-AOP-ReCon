@@ -224,6 +224,7 @@ void ProcessDialogEvent()
 			pchar.quest.Slavetrader_DieHard.over = "yes";
 			pchar.quest.Slavetrader_AfterBattle.over = "yes";
 			pchar.quest.Slavetrader_ShoreShipsOver.over = "yes";
+			Group_DeleteGroup("Shore_Attack");
 			Island_SetReloadEnableGlobal(pchar.questTemp.Slavetrader.Island, true);
 			LAi_SetCurHPMax(NPChar);
 			LAi_GetCharacterMaxEnergy(NPChar);
@@ -274,10 +275,10 @@ void ProcessDialogEvent()
 		case "Node_rat_3":
 			LAi_SetPlayerType(pchar);
 			LAi_SetWarriorType(npchar);
-			LAi_group_MoveCharacter(npchar, "EnemyFight");
-			LAi_group_SetRelation("EnemyFight", LAI_GROUP_PLAYER, LAI_GROUP_ENEMY);
-			LAi_group_FightGroups("EnemyFight", LAI_GROUP_PLAYER, true);
-			LAi_group_SetCheck("EnemyFight", "Slavetrader_findTortugaRat1");
+			LAi_group_MoveCharacter(npchar, "ST_TortugaRatGroup");
+			LAi_group_SetRelation("ST_TortugaRatGroup", LAI_GROUP_PLAYER, LAI_GROUP_ENEMY);
+			LAi_group_FightGroups("ST_TortugaRatGroup", LAI_GROUP_PLAYER, true);
+			LAi_group_SetCheck("ST_TortugaRatGroup", "Slavetrader_findTortugaRat1");
 			DialogExit();
 			AddDialogExitQuest("MainHeroFightModeOn");
 		break;
@@ -313,7 +314,7 @@ void ProcessDialogEvent()
 			RemoveLandQuestmark_Main(CharacterFromID("Tortuga_tavernkeeper"), "Slavetrader");
 			RemoveLandQuestmark_Main(CharacterFromID("Tortuga_PortMan"), "Slavetrader");
 			SetBan("Looting,Exchange", 0);
-			LAi_group_Delete("EnemyFight");
+			LAi_group_Delete("ST_TortugaRatGroup");
 			DialogExit();
 		break;
 		//<--работорговец крыса в доме
@@ -374,10 +375,10 @@ void ProcessDialogEvent()
 		case "Carlos_6":
 			LAi_SetPlayerType(pchar);
 			LAi_SetWarriorType(npchar);
-			LAi_group_MoveCharacter(npchar, "EnemyFight");
-			LAi_group_SetRelation("EnemyFight", LAI_GROUP_PLAYER, LAI_GROUP_ENEMY);
-			LAi_group_FightGroups("EnemyFight", LAI_GROUP_PLAYER, false);
-			LAi_group_SetCheck("EnemyFight", "CarlosDie");
+			LAi_group_MoveCharacter(npchar, "HH_CarlosGroup");
+			LAi_group_SetRelation("HH_CarlosGroup", LAI_GROUP_PLAYER, LAI_GROUP_ENEMY);
+			LAi_group_FightGroups("HH_CarlosGroup", LAI_GROUP_PLAYER, false);
+			LAi_group_SetCheck("HH_CarlosGroup", "CarlosDie");
 			DialogExit();
 			AddDialogExitQuest("MainHeroFightModeOn");
 			RemoveLandQuestMark_Main(npchar, "Headhunt");
@@ -457,11 +458,11 @@ void ProcessDialogEvent()
 		break;
 
 		case "RatOfficer":
-			int iGoods1 = 400 - GetSquadronGoods(Pchar, GOOD_EBONY);
-			int iGoods2 = 500 - GetSquadronGoods(Pchar, GOOD_MAHOGANY);
-			int iGoods3 = 670 - GetSquadronGoods(Pchar, GOOD_SANDAL);
-			if (pchar.questTemp.Headhunter == "Rat_officer" && GetCompanionQuantity(pchar) == 1 && 3 - sti(RealShips[sti(pchar.ship.type)].Class) <= 0)
+			if (CheckAttrValue(pchar, "questTemp.Headhunter", "Rat_officer") && GetCompanionQuantity(pchar) == 1 && 3 - sti(RealShips[sti(pchar.ship.type)].Class) <= 0)
 			{
+				int iGoods1 = 400 - GetSquadronGoods(Pchar, GOOD_EBONY);
+				int iGoods2 = 500 - GetSquadronGoods(Pchar, GOOD_MAHOGANY);
+				int iGoods3 = 670 - GetSquadronGoods(Pchar, GOOD_SANDAL);
 
 				if (iGoods1 < 1 || iGoods2 < 1 || iGoods3 < 1)
 				{
@@ -491,6 +492,7 @@ void ProcessDialogEvent()
 		break;
 
 		case "RatOfficer_1_sit":
+			bDisableLandEncounters = true;
 			NextDiag.CurrentNode = "RatOfficer_2";
 			LAi_SetActorType(npchar);
 			LAi_ActorSetSitMode(npchar);
@@ -551,8 +553,7 @@ void ProcessDialogEvent()
 			pchar.quest.Headhunter_RatOfficerOver.over = "yes";
 			LAI_SetPlayerType(pchar);
 			LAI_SetSitType(npchar);
-			DoQuestReloadToLocation("Tortuga_tavern", "goto", "goto2", "");
-			AddQuestRecord("Headhunt", "18");
+			DoQuestReloadToLocation("Tortuga_tavern", "goto", "goto4", "RatHunters_TalkInTavernEnd");
 			pchar.questTemp.Headhunter = "Rat_gulf";
 			NextDiag.CurrentNode = "RatOfficer_10";
 			npchar.lifeDay = 0;
@@ -609,9 +610,9 @@ void ProcessDialogEvent()
 		case "RatHunters_2":
 			LAi_SetFightMode(pchar, true);
 			LAi_LockFightMode(pchar, false);
-			LAi_group_SetRelation("EnemyFight", LAI_GROUP_PLAYER, LAI_GROUP_ENEMY);
-			LAi_group_FightGroups("EnemyFight", LAI_GROUP_PLAYER, true);
-			LAi_group_SetCheck("EnemyFight", "RatHunters_Dead");
+			LAi_group_SetRelation("HH_RatHuntersGroup", LAI_GROUP_PLAYER, LAI_GROUP_ENEMY);
+			LAi_group_FightGroups("HH_RatHuntersGroup", LAI_GROUP_PLAYER, true);
+			LAi_group_SetCheck("HH_RatHuntersGroup", "RatHunters_Dead");
 			DialogExit();
 			AddDialogExitQuest("MainHeroFightModeOn");
 		break;
@@ -645,6 +646,9 @@ void ProcessDialogEvent()
 			DialogExit();
 			AddDialogExitQuest("MainHeroFightModeOn");
 			RemoveLandQuestMark_Main(npchar, "Headhunt");
+			pchar.quest.Headhunter_Halen_fight.win_condition.l1 = "NPC_Death";
+			pchar.quest.Headhunter_Halen_fight.win_condition.l1.character = "Halen";
+			pchar.quest.Headhunter_Halen_fight.win_condition = "Headhunter_HalenDeadInTown";
 		break;
 
 		case "Halen_3":
@@ -738,9 +742,9 @@ void ProcessDialogEvent()
 			pchar.quest.Headhunter_Find_Ja.win_condition.l1 = "location";
 			pchar.quest.Headhunter_Find_Ja.win_condition.l1.location = "SantaCatalina";
 			pchar.quest.Headhunter_Find_Ja.function = "Create_Ja";
-			LAi_group_SetRelation("EnemyFight", LAI_GROUP_PLAYER, LAI_GROUP_ENEMY);
-			LAi_group_FightGroups("EnemyFight", LAI_GROUP_PLAYER, true);
-			LAi_group_SetCheck("EnemyFight", "FindJa");
+			LAi_group_SetRelation("HH_JaHuntersGroup", LAI_GROUP_PLAYER, LAI_GROUP_ENEMY);
+			LAi_group_FightGroups("HH_JaHuntersGroup", LAI_GROUP_PLAYER, true);
+			LAi_group_SetCheck("HH_JaHuntersGroup", "FindJa");
 			DialogExit();
 			AddDialogExitQuest("MainHeroFightModeOn");
 		break;
@@ -799,9 +803,9 @@ void ProcessDialogEvent()
 		case "Ja_hired":
 			bQuestDisableMapEnter = false;
 			characters[GetCharacterIndex("Jafar")].lifeDay = 0;
-			pchar.questTemp.Headhunter = "end_quest_full";
 			AddQuestRecord("Headhunt", "38");
 			CloseQuestHeader("Headhunt");
+			Headhunter_CleanupAll("end_quest_full");
 			ref sld = GetCharacter(NPC_GenerateCharacter("Jafarry", "Jafar_Preston", "man", "man", 30, PIRATE, -1, true));
 			FantomMakeCoolFighter(sld, 30, 70, 70, "blade14", "pistol6", 100);
 			sld.name = FindPersonalName("Jafar_name");

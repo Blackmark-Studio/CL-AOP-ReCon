@@ -370,3 +370,9 @@ In Ordnung, hier ist dein Geld.
 Common_ItemTrader_99 {
 So viel habe ich im Moment nicht bei mir. Sobald ich den Betrag zusammenhabe, komme ich zu dir.
 }
+Common_ItemTrader_100_m {
+Kommen Sie näher, suchen Sie sich etwas aus, Señorita. Alles ist von höchster Qualität!
+}
+Common_ItemTrader_100_f {
+Oh, Señorita, ich wusste doch, dass Sie gerade zu mir kommen würden!.. Nur keine Scheu, suchen Sie sich etwas aus!
+}

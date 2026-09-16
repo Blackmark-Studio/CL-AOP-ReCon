@@ -1,8 +1,8 @@
 void ProcessDialogEvent()
 {
-	ref NPChar, sld;
+	ref NPChar;
 	aref Link, Diag;
-	int i, iRnd;
+	int i, iRnd, iChr;
 	string sTemp;
 
 	DeleteAttribute(&Dialog, "Links");
@@ -42,9 +42,9 @@ void ProcessDialogEvent()
 			LAi_RemoveCheckMinHP(npchar);
 			for (i = 1; i <= 3; i++)
 			{
-				if (GetCharacterIndex("GangMan_" + i) == -1) continue;
-				sld = CharacterFromID("GangMan_" + i);
-				LAi_type_actor_Reset(sld);
+				iChr = GetCharacterIndex("GangMan_" + i);
+				if (iChr < 0) continue;
+				LAi_type_actor_Reset(&characters[iChr]);
 			}
 			dialog.text = StringFromKey("RapersGirl_3", RandPhraseSimple(
 						StringFromKey("RapersGirl_1", pchar),
@@ -62,9 +62,9 @@ void ProcessDialogEvent()
 			LAi_RemoveCheckMinHP(NPChar);
 			for (i = 1; i <= 3; i++)
 			{
-				if (GetCharacterIndex("GangMan_" + i) == -1) continue;
-				sld = CharacterFromID("GangMan_" + i);
-				LAi_type_actor_Reset(sld);
+				iChr = GetCharacterIndex("GangMan_" + i);
+				if (iChr < 0) continue;
+				LAi_type_actor_Reset(&characters[iChr]);
 			}
 			dialog.text = StringFromKey("RapersGirl_12", RandPhraseSimple(
 						StringFromKey("RapersGirl_10", pchar),
@@ -82,9 +82,9 @@ void ProcessDialogEvent()
 			LAi_RemoveCheckMinHP(NPChar);
 			for (i = 1; i <= 3; i++)
 			{
-				if (GetCharacterIndex("GangMan_" + i) == -1) continue;
-				sld = CharacterFromID("GangMan_" + i);
-				LAi_type_actor_Reset(sld);
+				iChr = GetCharacterIndex("GangMan_" + i);
+				if (iChr < 0) continue;
+				LAi_type_actor_Reset(&characters[iChr]);
 			}
 			dialog.text = StringFromKey("RapersGirl_19", pchar);
 			link.l1 = StringFromKey("RapersGirl_25", LinkRandPhrase(
@@ -122,9 +122,9 @@ void ProcessDialogEvent()
 			LAi_RemoveCheckMinHP(npchar);
 			for (i = 1; i <= 3; i++)
 			{
-				if (GetCharacterIndex("GangMan_" + i) == -1) continue;
-				sld = CharacterFromID("GangMan_" + i);
-				LAi_type_actor_Reset(sld);
+				iChr = GetCharacterIndex("GangMan_" + i);
+				if (iChr < 0) continue;
+				LAi_type_actor_Reset(&characters[iChr]);
 			}
 			dialog.text = StringFromKey("RapersGirl_39", LinkRandPhrase(
 						StringFromKey("RapersGirl_36"),
@@ -465,6 +465,7 @@ void ProcessDialogEvent()
 		break;
 
 		case "Node_132_11":
+			DeleteAttribute(pchar, "quest.LandEnc_RapersBadExit"); // > девица уходит с ГГ, выход из локации больше не провал
 			ReOpenQuestHeader("JungleGirl");
 			AddQuestRecord("JungleGirl", "4");
 			AddQuestUserData("JungleGirl", "sName", pchar.GenQuest.EncGirl.name);
@@ -781,6 +782,7 @@ void ProcessDialogEvent()
 		break;
 
 		case "Node_205":
+			DeleteAttribute(pchar, "quest.LandEnc_RapersBadExit"); // > девица уходит с ГГ, выход из локации больше не провал
 			Diag.TempNode = "Node_206";
 			EncGirl_GenerateChest(npchar);
 			Diag.CurrentNode = Diag.TempNode;
@@ -853,6 +855,7 @@ void ProcessDialogEvent()
 			ChangeCharacterReputation(pchar, -2);
 			EncGiglFleeAway(npchar, true);
 			DeleteAttribute(pchar, "GenQuest.EncGirl");
+			DeleteAttribute(pchar, "quest.LandEnc_RapersBadExit"); // > иначе на выходе прилетит слух про брошенную девицу
 			DialogExit();
 		break;
 
@@ -863,6 +866,7 @@ void ProcessDialogEvent()
 		break;
 
 		case "Node_223":
+			DeleteAttribute(pchar, "quest.LandEnc_RapersBadExit"); // > девица уходит с ГГ, выход из локации больше не провал
 			Diag.TempNode = "Node_224";
 			pchar.GenQuest.EncGirl = "HorseToTavern";
 			pchar.quest.EncGirl_DeliveBack.win_condition.l1 = "location";
@@ -1112,6 +1116,8 @@ void ProcessDialogEvent()
 		case "Node_244":
 			EncGiglFleeAway(npchar, true);
 			AddQuestRecord("JungleGirl", "23");
+			AddQuestUserData("JungleGirl", "sSex", GetSexPhrase("", "ла"));
+			AddQuestUserData("JungleGirl", "sSex1", GetSexPhrase("", "а"));
 			AddQuestUserData("JungleGirl", "sName", pchar.GenQuest.EncGirl.name);
 			CloseQuestHeader("JungleGirl");
 			ChangeCharacterReputation(pchar, -5);
@@ -1129,8 +1135,6 @@ void ProcessDialogEvent()
 			dialog.text = StringFromKey("RapersGirl_245");
 			link.l1 = StringFromKey("RapersGirl_246");
 			link.l1.go = "Node_247";
-		//			link.l2 = "Ты действительно думаешь, что это необходимо?";
-		//			link.l2.go = "Node_248"
 		break;
 
 		case "Node_247":
@@ -1144,9 +1148,6 @@ void ProcessDialogEvent()
 			npchar.lifeDay = 0;
 			DeleteAttribute(pchar, "GenQuest.EncGirl");
 			DialogExit();
-		break;
-
-		case "Node_248":
 		break;
 
 		case "Node_237":

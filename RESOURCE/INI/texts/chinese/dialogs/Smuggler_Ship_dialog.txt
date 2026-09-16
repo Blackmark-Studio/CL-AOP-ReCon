@@ -1,18 +1,18 @@
 Smuggler_Ship_dialog_1 {
-哎呀……
+哎呀…… 
 }
 Smuggler_Ship_dialog_2 {
-我们在想，要不把你卖去矿场？反正多点钱也不错。
+我们在想， 要不把你卖去矿场？ 反正多点钱也不错。 
 }
 Smuggler_Ship_dialog_3 {
-你说啥？
+你说什么？ 
 }
 Smuggler_Ship_dialog_4 {
-到了，告辞。
+到了， 告辞。 
 }
 Smuggler_Ship_dialog_5 {
-再见。
+再见。 
 }
 Smuggler_Ship_dialog_6 {
-俺想了想，挺喜欢你的船。打算自己留着了。
+我想了想， 挺喜欢你的船。 打算自己留着了。 
 }

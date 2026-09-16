@@ -34,3 +34,36 @@ Yes, it really is better to bargain...
 Villemstad_ItemTrader_12 {
 Hm, sorry, merchant...
 }
+Villemstad_ItemTrader_13 {
+Could you tell me where I might buy a dress fit for appearing in society?
+}
+Villemstad_ItemTrader_14 {
+I need a dress no worse than the one worn by the local banker's wife.
+}
+Villemstad_ItemTrader_15 {
+Where could I get a dress, but not an ordinary one - something I could wear without shame even to a reception held by the King of France himself.
+}
+Villemstad_ItemTrader_16 {
+You're unlikely to find anything like that at the market. You need a good dressmaker. Unfortunately, I can't recommend anyone...
+}
+Villemstad_ItemTrader_17 {
+It's a pity...
+}
+Villemstad_ItemTrader_18 {
+No, madam, I have nothing like that for sale.
+}
+Villemstad_ItemTrader_19 {
+All right...
+}
+Villemstad_ItemTrader_20 {
+From the King of France's tailor, where else? We are simple folk here, unlike those wealthy gentlemen who frequent the local brothel.
+}
+Villemstad_ItemTrader_21 {
+How interesting. Do those gentlemen enjoy some special status there? Surely they don't go running after common dockside girls?
+}
+Villemstad_ItemTrader_22 {
+Forgive me, but I make it a rule not to spread gossip. Go and ask there yourself; perhaps they'll offer you something special as well. But leave me out of it, and don't say I told you. The madam is a prominent lady. She buys wine from my cousin - he's an excellent vintner - and I've no wish to speak ill of her.
+}
+Villemstad_ItemTrader_23 {
+I understand. Very well, I'll keep that in mind, and I'll be sure to buy some of your wine one day.
+}

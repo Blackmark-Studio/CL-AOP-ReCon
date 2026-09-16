@@ -1,0 +1,49 @@
+Tip0 {Die reizende Isabel ist sehr eifersüchtig.}
+Tip1 {Denk daran: Eine Pistole zu ziehen ist immer schneller als eine Muskete nachzuladen.}
+Tip2 {Nahkampfwaffen-Beherrschung verringert den Ausdauerverbrauch bei Angriffen.}
+Tip3 {Überladung und Trunkenheit bewirken Abzüge auf Fertigkeiten.}
+Tip4 {Tränke stellen die Gesundheit langsam wieder her – verlasse dich nicht darauf, im Block abzuwarten.}
+Tip5 {Wenn du umzingelt bist, ist ein Ausfallschritt zur Seite der beste Weg, um auszubrechen.}
+Tip6 {Mit dem richtigen Timing kannst du jedem Angriff durch Seitwärtsrollen ausweichen. Das ist besonders effektiv gegen Schusswaffen.}
+Tip7 {Musketiere richten enormen Schaden an. Erledige sie zuerst.}
+Tip8 {Ein Schnellschuss ist schwächer als ein gezielter Schuss. Das ist der Preis für die Geschwindigkeit.}
+Tip9 {Du bewegst dich nach hinten und zur Seite deutlich langsamer als nach vorn, verlierst dabei aber den Feind nicht aus den Augen.}
+Tip10 {Einige Gegner können im Kampf vergiften. Trage immer ein Gegengift bei dir.}
+Tip11 {Unter Kampfsegeln dreht das Schiff am schnellsten.}
+Tip12 {Seegang, Wendemanöver und Schiffsgeschwindigkeit beeinflussen die Genauigkeit des Geschützfeuers stark.}
+Tip13 {Wenn du mit den Kanonenschüssen oft danebenzielst, verkürze die Distanz.}
+Tip14 {Die Fertigkeiten „Kanonen“ und „Treffsicherheit“ beeinflussen sowohl das Schießen aus der Third-Person-Perspektive als auch den Zielmodus.}
+Tip15 {Ein präziser Kettenkugeltreffer in den Mast kann diesen entwurzeln. Wenn die Segel bereits beschädigt sind, stehen die Chancen besser.}
+Tip16 {Bei großer zahlenmäßiger Überlegenheit kann ein feindliches Schiff bereits beim Kaperversuch kapitulieren.}
+Tip17 {Auf der Flucht werfen Schiffe manchmal Fracht über Bord. Segle heran, um die Ladung einzusammeln.}
+Tip18 {Kanonen nutzen sich mit der Zeit ab. Halte ein paar Geschütze als Reserve bereit.}
+Tip19 {Verschiedene Munitionsarten haben unterschiedliche Reichweiten. Kugeln haben die größte, Kartätschen die kleinste.}
+Tip20 {Vollkugeln sind universell. Nimm Kettenkugeln für Segel und Masten, Kartätschen für die Besatzung und Bomben für den Rumpf.}
+Tip21 {Lies die Dialoge aufmerksam – sie enthalten oft einzigartige Informationen.}
+Tip22 {Wird die Kolonie erfolgreich belagert, gehen deine Investitionen und Schiffe im Hafenamt verloren.}
+Tip23 {Frage Bürger und Trinker nach Gerüchten – sie wissen oft viel Interessantes.}
+Tip24 {Schatzsuche ist oft lohnend. Den Schatzkartenverkäufer findest du in der Taverne.}
+Tip25 {Diplomaten in Piratentavernen können dich von einem Kopfgeld befreien.}
+Tip26 {Habe an Bord immer Ersatzwaffen auf Lager: Jeder gefallene Matrose nimmt seine Waffe mit ins Grab.}
+Tip27 {Vergewissere dich vor dem Verlassen des Hafens, dass Rum, Medikamente und Proviant für die geplante Überfahrt reichen.}
+Tip28 {Ratten sind die Geißel der Seefahrer. Du kannst sie durch absolute Sauberkeit oder mit Hilfe alter Magie loswerden.}
+Tip29 {Dungeons können sehr unübersichtlich sein. Wenn du dich verläufst, halte dich an die rechte Seite und folge ihr.}
+Tip30 {Gegenstände können in der Schiffskajüte gelagert werden. Manchmal ist es nützlich, schweren Ballast loszuwerden.}
+Tip31 {Schätze und Verstecke sind gute Quellen für Handwerkszutaten.}
+Tip32 {Schiffe können im Hafenamt zurückgelassen werden.}
+Tip33 {Im Werftgebäude kannst du ein Lagerhaus anmieten, um Waren und Schiffsgeschütze sicher aufzubewahren.}
+Tip34 {Wenn das Kolonialfort zu stark für dich ist, versuche die Stadt vom Land aus anzugreifen. Die Garnison ist deutlich schwächer, aber die Beute geringer.}
+Tip35 {Auf hoher See kann man treibende Fässer finden. Darin können Wertsachen oder Schrott sein – es ist immer eine Überraschung.}
+Tip36 {Jeder Angriff kann pariert werden. Wenn du diesen Trick beherrschst, kannst du jedes Duell gewinnen.}
+Tip37 {Manchmal bringen Meeresströmungen unerwartete Geschenke für diejenigen, die einsame Buchten besuchen.}
+Tip38 {Amethyste helfen nicht gegen Trunkenheit. Im Ernst.}
+Tip39 {In einer Notsituation kann fast jeder Offizier als Enterer eingesetzt werden.}
+Tip40 {Gouverneure und Kapitäne spielen ebenfalls gerne Glücksspiele, aber erwarte nicht, dass sie mit Fremden spielen.}
+Tip41 {In einer kritischen Situation kannst du Sklaven in die Mannschaft aufnehmen. Das senkt die Moral, erlaubt aber eine schnelle Auffüllung.}
+Tip42 {Wenn die Wache dich bei einem Schmuggeldeal erwischt, ist es oft einfacher, sie einfach zu bestechen.}
+Tip43 {Das Herstellen von Gegenständen kostet Spielzeit. Manchmal ist es lohnender zu craften, als sinnlos in der Taverne zu schlafen.}
+Tip44 {Schiffsreparaturen in der Werft kosten Spielzeit. Berücksichtige das, wenn du es eilig hast.}
+Tip45 {Erreichst du ein bestimmtes Meeresgebiet, ist es schneller, auf die Regionalkarte zu wechseln und über „Hinsegeln“ zu reisen.}
+Tip46 {Wenn Gegner zu schwer für dich sind, ziehe dich zurück und komme später wieder. Die meisten Quests verlangen keine sofortige Lösung.}
+Tip47 {Du kannst Entertrupps im Kampf kommandieren. Versuche, ihnen über Hotkeys Befehle zu erteilen.}
+Tip48 {Einige Fertigkeiten haben unterschiedliche Effekte für den Protagonisten und die Offiziere.}

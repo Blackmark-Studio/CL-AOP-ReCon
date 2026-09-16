@@ -31,7 +31,6 @@ float	fWeatherDelta = 0.0;
 float	fWeatherAngle, fWeatherSpeed;
 float	fFogDensity;
 int		iShadowDensity[2];
-int		iPrevWeather = -1;
 int		sunIsShine = true;
 bool	bWeatherLoaded = false;
 bool	bWeatherIsNight = false;
@@ -70,9 +69,16 @@ void SetNextWeather(string sWeatherID)
 	}
 }
 
+void Whr_ResetShadowDensity()
+{
+	iShadowDensity[0] = argb(255,96,96,96);
+	iShadowDensity[1] = argb(255,96,96,64);
+}
+
 void WeatherInit()
 {
 	//DeleteAttribute(&WeatherParams,"");
+	Whr_ResetShadowDensity();
 
 	if (LoadSegment("weather\WhrInit.c"))
 	{
@@ -103,6 +109,7 @@ void DeleteWeatherEnvironment()
 	DelEventHandler(WEATHER_CALC_FOG_COLOR,"Whr_OnCalcFogColor");
 	DelEventHandler("frame","Whr_OnWindChange");
 
+	Whr_ResetShadowDensity();
 	bWeatherLoaded = false;
 }
 
@@ -147,7 +154,6 @@ void CreateWeatherEnvironment()
 
 	if (iNextWeatherNum != -1)
 	{
-		if (iPrevWeather == -1) { iPrevWeather = iCurWeatherNum; }
 		iCurWeatherHour = iHour;
 		iCurWeatherNum = iNextWeatherNum;
 		iNextWeatherNum = -1;
@@ -167,15 +173,9 @@ void CreateWeatherEnvironment()
 			}
 			if (CheckAttribute(&WeatherParams, "Rain.ThisDay") && !sti(WeatherParams.Rain.ThisDay) && CheckAttribute(&Weathers[i], "Bak")) 
 			{
-				Weathers[i].Fog.Color		= Weathers[i].Bak.Fog.Color;
-				Weathers[i].Fog.Height		= Weathers[i].Bak.Fog.Height;
-				Weathers[i].Fog.Density		= Weathers[i].Bak.Fog.Density;
-				Weathers[i].Fog.SeaDensity	= Weathers[i].Bak.Fog.SeaDensity;
-				Weathers[i].Fog.IslandDensity	= Weathers[i].Bak.Fog.IslandDensity;
-
-				Weathers[i].Sun.Glow.Enable		= Weathers[i].Bak.Sun.Glow.Enable;
-				Weathers[i].Sun.Overflow.Enable	= Weathers[i].Bak.Sun.Overflow.Enable;
-
+				// > Восстанавливаем оригинал после дождя. Реально дождь портит только LightingLm/InsideBack
+				Weathers[i].LightingLm	= Weathers[i].Bak.LightingLm;
+				Weathers[i].InsideBack	= Weathers[i].Bak.InsideBack;
 				DeleteAttribute(&Weathers[i], "Bak");
 			}
 			if (!bRain) Weathers[i].Rainbow.Enable = false;
@@ -203,6 +203,35 @@ void CreateWeatherEnvironment()
 			if (bWhrTornado == true && bWhrTornado != bCanTornado && reload_location_index == -1) { continue; } //сухопутки без торнадо
 			iWeatherFound[iNumWeatherFound] = i;
 			iNumWeatherFound++;
+		}
+
+		// > Если по фильтру торнадо не нашлось ни одного пресета, повторяем поиск без него:
+		// > иначе запасной вариант ниже ставит Weathers[0] (полночь) в любое время суток.
+		if (iNumWeatherFound == 0 && bWhrTornado)
+		{
+			for (int iw=0;iw<MAX_WEATHERS;iw++)
+			{
+				if (!CheckAttribute(&Weathers[iw], "hour")) { continue; }
+				if (CheckAttribute(&Weathers[iw], "skip"))
+				{
+					if (sti(Weathers[iw].skip)) { continue; }
+				}
+				int iMinT = sti(Weathers[iw].Hour.Min);
+				int iMaxT = sti(Weathers[iw].Hour.Max);
+				if (iMinT == iMaxT && iMinT != iHour) { continue; }
+				if (iMinT > iMaxT)
+				{
+					if (iHour < iMinT && iHour > iMaxT) { continue; }
+				}
+				if (iMinT < iMaxT)
+				{
+					if (iHour < iMinT || iHour > iMaxT) { continue; }
+				}
+				if (bWhrStorm != sti(Weathers[iw].Storm)) { continue; }
+				iWeatherFound[iNumWeatherFound] = iw;
+				iNumWeatherFound++;
+			}
+			if (iNumWeatherFound > 0) Trace("Weather: tornado filter found nothing, fallback by hour = " + iHour);
 		}
 
 		iCurWeatherHour = iHour;
@@ -245,7 +274,7 @@ void CreateWeatherEnvironment()
 				if (GetTime() >= 6.0 && GetTime() < 10.0) locations[iCurLocation].QuestlockWeather = "Storm01_add";
 				if (GetTime() >= 10.0 && GetTime() < 18.0) locations[iCurLocation].QuestlockWeather = "Storm02_add";
 				if (GetTime() >= 18.0 && GetTime() < 22.0) locations[iCurLocation].QuestlockWeather = "Storm03_add";
-				if (GetTime() >= 22.0 && GetTime() <= 23.0) locations[iCurLocation].QuestlockWeather = "Storm04_add";
+				if (GetTime() >= 22.0 && GetTime() < 24.0) locations[iCurLocation].QuestlockWeather = "Storm04_add";
 				if (GetTime() >= 0 && GetTime() < 6.0) locations[iCurLocation].QuestlockWeather = "Storm04_add";
 				if (CheckAttribute(&locations[iCurLocation], "alwaysStorm.WaveHeigh")) locations[iCurLocation].MaxWaveHeigh = 1.7; //установим уровень воды
 				bWhrStorm = 1;
@@ -256,7 +285,7 @@ void CreateWeatherEnvironment()
 				if (GetTime() >= 6.0 && GetTime() < 10.0) locations[iCurLocation].QuestlockWeather = "Storm01";
 				if (GetTime() >= 10.0 && GetTime() < 18.0) locations[iCurLocation].QuestlockWeather = "Storm02";
 				if (GetTime() >= 18.0 && GetTime() < 22.0) locations[iCurLocation].QuestlockWeather = "Storm03";
-				if (GetTime() >= 22.0 && GetTime() <= 23.0) locations[iCurLocation].QuestlockWeather = "Storm04";
+				if (GetTime() >= 22.0 && GetTime() < 24.0) locations[iCurLocation].QuestlockWeather = "Storm04";
 				if (GetTime() >= 0 && GetTime() < 6.0) locations[iCurLocation].QuestlockWeather = "Storm04";
 				if (CheckAttribute(&locations[iCurLocation], "alwaysStorm_2.WaveHeigh")) locations[iCurLocation].MaxWaveHeigh = 1.7; //установим уровень воды
 				bWhrStorm = 1;
@@ -293,7 +322,7 @@ void CreateWeatherEnvironment()
 					if (GetTime() >= 6.0 && GetTime() < 10.0) Islands[iCurLocation].QuestlockWeather = "Storm01";
 					if (GetTime() >= 10.0 && GetTime() < 18.0) Islands[iCurLocation].QuestlockWeather = "Storm02";
 					if (GetTime() >= 18.0 && GetTime() < 22.0) Islands[iCurLocation].QuestlockWeather = "Storm03";
-					if (GetTime() >= 22.0 && GetTime() <= 23.0) Islands[iCurLocation].QuestlockWeather = "Storm04";
+					if (GetTime() >= 22.0 && GetTime() < 24.0) Islands[iCurLocation].QuestlockWeather = "Storm04";
 					if (GetTime() >= 0 && GetTime() < 6.0) Islands[iCurLocation].QuestlockWeather = "Storm04";
 					bWhrStorm = 1;
 				}
@@ -569,7 +598,12 @@ void Whr_UpdateWeather()
 	if (!isEntity(&Weather)) { return; }
 
 	if (!bSeaActive || and(bAbordageStarted, !isShipInside(pchar.location)))
+	{
+		// KZ > Небо из сноса исключаем.
+		bWhrKeepSkyEntity = true;
 		DeleteWeather();
+		bWhrKeepSkyEntity = false;
+	}
 	CreateWeatherEnvironment();
 	// MoveWeatherToLayers(sNewExecuteLayer, sNewRealizeLayer);
 	if (bSeaActive && !bAbordageStarted)
@@ -680,8 +714,8 @@ int Whr_BlendLong(float fBlend, int i1, int i2)
 
 int Whr_BlendColor(float fBlend, int col1, int col2)
 {
-	int a1 = shr(and(col1,4278190080), 24); // get alpha 1
-	int a2 = shr(and(col2,4278190080), 24); // get alpha 2
+//	int a1 = shr(and(col1,4278190080), 24); // get alpha 1
+//	int a2 = shr(and(col2,4278190080), 24); // get alpha 2
 	int r1 = shr(and(col1,16711680), 16); // get red color 1
 	int r2 = shr(and(col2,16711680), 16); // get red color 2
 
@@ -694,7 +728,7 @@ int Whr_BlendColor(float fBlend, int col1, int col2)
 	int r = r1 + MakeInt(fBlend * (r2-r1));
 	int g = g1 + MakeInt(fBlend * (g2-g1));
 	int b = b1 + MakeInt(fBlend * (b2-b1));
-	int a = a1 + MakeInt(fBlend * (a2-a1));
+//	int a = a1 + MakeInt(fBlend * (a2-a1));
 
 	return argb(0,r,g,b);
 }
@@ -981,6 +1015,13 @@ void FillWeatherData(int nw1, int nw2)
 	{
 		Whr_SetMisteryMists();
 	}
+
+	// > Плотность тумана для теней раньше снималась один раз при создании погоды и потом устаревала.
+	fFogDensity = stf(Weather.Fog.Density);
+	// > Плотность теней считалась заново на каждую тень в кадре (событие от модуля теней);
+	// > меняется она только вместе с погодой, поэтому считаем здесь.
+	iShadowDensity[0] = Whr_GetColor(&Weathers[nw1], "Shadow.Density.Head");
+	iShadowDensity[1] = Whr_GetColor(&Weathers[nw1], "Shadow.Density.Foot");
 }
 
 int FindWeatherByHour(int nHour)
@@ -1058,17 +1099,8 @@ float Whr_GetWindSpeed()
 
 ref Whr_GetShadowDensity()
 {
-	aref	aCurWeather = GetCurrentWeather();
-
-	iShadowDensity[0] = argb(255,96,96,96);
-	iShadowDensity[1] = argb(255,96,96,64);
-
-	if (bWeatherLoaded)
-	{
-		iShadowDensity[0] = Whr_GetColor(aCurWeather,"Shadow.Density.Head");
-		iShadowDensity[1] = Whr_GetColor(aCurWeather,"Shadow.Density.Foot");
-	}
-	
+	// > Значения обновляются в FillWeatherData (и сбрасываются в дефолт в DeleteWeatherEnvironment),
+	// > поэтому здесь больше не нужен обход дерева атрибутов на каждую тень каждого кадра.
 	return &iShadowDensity;
 }
 

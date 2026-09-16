@@ -1,0 +1,12 @@
+EPL_1_Prologue_script_1 {Señorita, ich kann nichts auf Kredit verkaufen. Sie sind nicht von hier. Was, wenn Sie morgen das nächste vorbeikommende Schiff besteigen und spurlos verschwinden?}
+EPL_1_Prologue_script_2 {Aber ich bitte doch gar nicht um Kredit. Ich zahle sofort zwei Drittel des Preises und kann den Rest abarbeiten - Ihnen oder Ihrer Frau helfen.}
+EPL_1_Prologue_script_3 {Es ist ja nicht so, als hätte ich besonders viel Arbeit. Ich komme allein bestens zurecht und bin nicht verheiratet. Ich kann Ihnen zwei Drittel der Ware anbieten...}
+EPL_1_Prologue_script_4 {Gasten Fox, sehen Sie denn nicht, dass der Señorita trotz ihrer Jugend das Unglück ins Gesicht geschrieben steht? Zeigen Sie etwas Mitgefühl.}
+EPL_1_Prologue_script_5 {Und was verstehen Sie schon von Menschen, liebe @<pchar>, wenn Sie nicht einmal in Ihrem eigenen Stiefvater den Schurken erkannt haben, möge er in Frieden ruhen.}
+EPL_1_Prologue_script_6 {Vorsicht, Fox. Sie wissen, dass ich mich wegen jeder Kleinigkeit aufregen kann.}
+EPL_1_Prologue_script_7 {Tauschen Sie erst Ihren Rock gegen Hosen, bevor Sie anfangen, Drohungen auszustoßen. Der Kommandant steht nicht mehr hinter Ihnen, um jede Ihrer Eskapaden zu decken. Das ist ein freundschaftlicher Rat, also fassen Sie ihn nicht als Beleidigung auf.}
+EPL_1_Prologue_script_8 {Ich habe auch etwas unter meinem Rock. Es nennt sich Carzoletta. Lassen Sie mich Ihnen zeigen, wie gut ich auf mich selbst aufpassen kann, und Ihnen einen freundschaftlichen Rat zurückgeben: Verteidigen Sie sich!}
+EPL_1_Prologue_script_9 {Seien Sie nicht töricht.}
+EPL_1_Prologue_script_10 {Verteidigen Sie sich, oder tauschen Sie Ihre Hosen gegen einen Rock!}
+EPL_1_Prologue_script_11 {Piraten haben die spanische Kolonie La Vega erobert und sogar versucht, Santo Domingo anzugreifen. Es ist ihnen jedoch nicht gelungen; sie wurden alle vor den Mauern der Stadt niedergemacht.}
+EPL_1_Prologue_script_12 {Schreckliche Nachrichten: Piraten haben in unserer Kolonie La Vega ein Blutbad angerichtet und angeblich niemanden verschont. Gott sei Dank hat die Vergeltung sie bereits ereilt - alle diese Schurken fielen vor den Mauern von Santo Domingo bei dem gescheiterten Versuch, die Stadt von der Landseite einzunehmen.}

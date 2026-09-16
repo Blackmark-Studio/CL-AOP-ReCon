@@ -1,0 +1,42 @@
+Bucaneer_woman_1 {
+¡Ah, eres tú, capitán! ¡Únete a nosotros!
+}
+Bucaneer_woman_2 {
+Con mucho gusto.
+}
+Bucaneer_woman_3 {
+¡Capitán! Me alegra ver que está bien. Que la Santísima Virgen proteja su barco de los arrecifes y las patrullas españolas. ¿Pasó a ver cómo estábamos?
+}
+Bucaneer_woman_4 {
+Exacto. Veo que te estás acostumbrando al aire libre de Tortuga. ¿Qué te parecen las costumbres locales?
+}
+Bucaneer_woman_5 {
+¿Los oyes cantar, capitán? Miro estas hogueras, la carne asándose, bebo este vino hirviendo, y aún no puedo creer que no estemos en esa maldita mina. Tortuga es ruidosa, áspera, estos cazadores gritan sus canciones por toda la isla, pero para mí, ahora es el sonido más hermoso del mundo. Después del silencio de las mazmorras de Vargas... este bullicio me devuelve a la vida.
+}
+Bucaneer_woman_6 {
+Mientras permanecíamos sentados en la oscuridad, aguardando nuestro destino, solo le rogué a Dios una muerte rápida. ¡Y ahora miren a su alrededor! Esta gente, Monsieur le Basque… pueden parecer salvajes con sus rostros manchados de hollín y sus danzas desenfrenadas, pero tienen un corazón de oro. La fiesta de hoy no es solo ron y jolgorio, es una celebración de nuestra libertad. Jamás olvidaremos lo que han hecho por nosotros.
+}
+Bucaneer_woman_7 {
+¡Capitán! ¡Tómate una copa con nosotros! No se admiten negativas. Sabes, antes le tenía miedo a esta isla. Tortuga siempre me pareció un foco de pecado y un refugio para ahorcados. Pero cuando escapamos de las garras de Vargas... me di cuenta de que los verdaderos monstruos visten jubones caros y urden intrigas, mientras que aquí, entre los bucaneros, se encuentra la protección más sincera.
+}
+Bucaneer_woman_8 {
+Bebe, diviértete y olvídate de Vargas. Este día es tuyo.
+}
+Bucaneer_woman_9 {
+Tortuga sabe cómo divertirse. Disfrute de su libertad, señora.
+}
+Bucaneer_woman_10 {
+Ah, capitán. Otra vez limpiando esos malditos mosquetes. El mío regresó ayer de cazar toros salvajes, trayendo consigo una montaña de carne para ahumar. El olor a humo ya impregna toda nuestra ropa; es imposible evitarlo. Pero no nos quejamos: mientras los ahumaderos estén llenos, nadie en Tortuga pasa hambre.
+}
+Bucaneer_woman_11 {
+Hoy el mar está agitado. Cada vez que los muchachos salen de incursión hacia la costa española, no puedo evitar preocuparme. Dicen que las patrullas se han vuelto bastante agresivas últimamente. Le ruego a la Virgen María que nuestro barco pase sin peligro todos los arrecifes y regrese a puerto con un rico botín.
+}
+Bucaneer_woman_12 {
+La vida aquí no es para los débiles de corazón, eso seguro. Ayer remendaba lonas, hoy he estado todo el día junto a la caldera, quitando manchas de pólvora de mis camisas. Pero aquí somos libres. Sin supervisores, sin impuestos a la corona. Mientras tengamos pólvora y murallas fuertes, Tortuga será una espina clavada en el costado de todo el Imperio Español.
+}
+Bucaneer_woman_13 {
+Ten paciencia. La vida en Tortuga siempre ha sido dura.
+}
+Bucaneer_woman_14 {
+No te preocupes, tus hombres saben lo que hacen.
+}

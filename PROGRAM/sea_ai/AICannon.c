@@ -1,5 +1,9 @@
 #define MAX_CANNON_DAMAGE_DISTANCE				3.0
 
+#define FIRE_MODE_RANDOM "random"
+#define FIRE_MODE_DIRECT "direct"
+#define FIRE_MODE_REVERSE "reverse"
+
 void DeleteCannonsEnvironment()
 {
 	DelEventHandler(CANNON_GET_RECHARGE_TIME, "Cannon_GetRechargeTime");
@@ -29,6 +33,8 @@ void CreateCannonsEnvironment()
 bool Cannon_LoadBall()
 {
 	aref	aCharacter = GetEventData();
+
+	if (CheckAttribute(aCharacter, "AoP_NoShipFire")) return false;
 
 	int iBallType = sti(aCharacter.Ship.Cannons.Charge.Type);
 	int iNumBalls = GetCargoGoods(aCharacter, iBallType);
@@ -119,6 +125,8 @@ float Cannon_GetRechargeTime()
 {
 	aref	aCharacter = GetEventData();
 
+	if (CheckAttribute(aCharacter, "AoP_NoShipFire")) return 1000000.0;
+
 	float	fCannonSkill = 1.0 - stf(aCharacter.TmpSkill.Cannons) / 3.0;
 
 	ref		rCannon = GetCannonByType(sti(aCharacter.Ship.Cannons.Type));
@@ -179,17 +187,57 @@ float Cannon_GetRechargeTime()
 // calculate delay before fire
 float Cannon_GetFireTime()
 {
-	//aref aCharacter = GetEventData();
 	aref aCharacter = GetEventData();
-	ref refBaseShip = GetRealShip(sti(aCharacter.ship.Type));
+	string sBort = GetEventData();
+	bool isRandom = GetEventData();		// true для случайной задержки в момент реального выстрела, false для расчёта упреждения по среднему числу
+	int cannonIndex = GetEventData();	// индекс орудия (от носа к корме) от 0 до количества пушек
 
+	if (CheckAttribute(aCharacter, "AoP_NoShipFire")) return 1000000.0;
+
+	ref refBaseShip = GetRealShip(sti(aCharacter.ship.Type));
 	// make 10 seconds random delay between fire from fort cannons
 	if (refBaseShip.Name == ShipsTypes[SHIP_FORT].Name) { return frnd() * 20.0; }   // иначе пулеметный залп
 
+	// количество пушек и навык орудий
+	int nCannons = GetBortCannonsQty(aCharacter, sBort);
+
 	float fCannonSkill = stf(aCharacter.TmpSkill.Cannons);
 	float fFireTime = 1.3 - fCannonSkill;
-	//fFireTime = fFireTime * Bring2RangeNoCheck(3.0, 1.0, 0.0, 1.0, stf(aCharacter.Ship.Crew.MinRatio));
-	fFireTime = frnd() * fFireTime * 6.0;
+//	fFireTime = frnd() * fFireTime * 6.0;
+
+//	// режим стрельбы
+	bool bRipple = isRandom;
+	if(bRipple)
+	{
+		if (!CheckAttribute(aCharacter, "firemode") || aCharacter.firemode == FIRE_MODE_RANDOM)
+			bRipple = false;
+		if (cannonIndex <= -1)
+			bRipple = false;
+		if (sBort != "cannonr" && sBort != "cannonl")
+			bRipple = false;
+	}
+
+//	// рандом
+	float rMin = 0.35;
+	float rMax = 4.85;
+	float fRandom = 1.0;
+	if (bRipple)
+	{
+		float rAverage = (rMin + rMax) * 0.5;
+		rMin = (rMin + rAverage) * 0.5;
+		rMax = (rAverage + rMax) * 0.5;
+		if(nCannons < 2)
+			fRandom = rAverage;
+		else if(aCharacter.firemode == FIRE_MODE_DIRECT)
+			fRandom = rMin + (rMax - rMin) * cannonIndex / makefloat(nCannons - 1);	// прямой порядок - от носа к корме
+		else
+			fRandom = rMax - (rMax - rMin) * cannonIndex / makefloat(nCannons - 1); // обратный порядок - от кормы к носу
+	}
+	else if (isRandom)
+		fRandom = rMin + frand(rMax - rMin);
+	else
+		fRandom = (rMax + rMin) * 0.5;
+
 	if (iArcadeSails) { fFireTime = fFireTime * 0.5; }
 				   
 	float crewQ   = GetCrewQuantity(aCharacter);
@@ -206,7 +254,7 @@ float Cannon_GetFireTime()
 	fFireTime = fFireTime * (2.0 - fExp);
 	fFireTime = fFireTime * (1 + (1 - fCrewMorale/MORALE_NORMAL)/5.0);
 	
-	return fFireTime;
+	return fFireTime * fRandom;
 }
 
 void Cannon_FireCannon()
@@ -226,8 +274,12 @@ void Cannon_FireCannon()
 	fCannonDirAng = GetEventData();
 	fMaxFireDistance = GetEventData();
 	fAngle = GetEventData();
+	bool bMode = sti(GetEventData());
+	string bort = GetEventData();
 
-	Ball_AddBall(aCharacter, fX, fY, fZ, fSpeedV0, fFireDirection, fFireHeightAngle, fCannonDirAng, fMaxFireDistance, fAngle);
+	if (CheckAttribute(aCharacter, "AoP_NoShipFire")) return;
+
+	Ball_AddBall(aCharacter, fX, fY, fZ, fSpeedV0, fFireDirection, fFireHeightAngle, fCannonDirAng, fMaxFireDistance, bMode, bort);
 }
 
 // Damage 2 cannon from balls

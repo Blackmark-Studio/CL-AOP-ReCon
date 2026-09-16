@@ -184,3 +184,19 @@ Sí, vive en una casa de dos pisos con paredes de piedra. Al salir de la taberna
 Pirates_Tavern_60 {
 ¡Gracias, de verdad me ayudaste!
 }
+
+Pirates_Tavern_61 {
+Buscamos una corbeta española. Dicen que estuvo fondeada aquí bastante tiempo.
+}
+Pirates_Tavern_62 {
+¡Ah, don Martín! Huyó. Hace poco hubo aquí una buena refriega entre los piratas de Jackman y los castellanos. Al final se asustó tanto que mandó cortar el cable del ancla y se largó a toda vela.
+}
+Pirates_Tavern_63 {
+¿Me lo parece, o esto le divierte?
+}
+Pirates_Tavern_64 {
+¡Y tanto! Ese engreído pavo castellano salió huyendo con tanta prisa que se dejó la chalupa en tierra. Justo antes de zarpar envió a un oficial con un par de marineros a ver a Jackman, haciéndose pasar por comerciantes, supuestamente para comprar brea y tablones para las reparaciones. Pero en cuanto aquellos vieron una presa fácil, lo entendieron enseguida: los españoles llevaban el dinero encima y aquí nadie pensaba venderles mercancía alguna. Así que hicieron correas con los compradores.\nUno de los oficiales consiguió escapar. Pero nuestra isla es pequeña; no podrá ir más allá de la bahía del Abrevadero Roto. Así que, si Jackman no lo alcanza, el hambre y la sed harán el resto.
+}
+Pirates_Tavern_65 {
+Parece que ese oficial puede saber adónde se dirigió Quesada. Gracias.
+}

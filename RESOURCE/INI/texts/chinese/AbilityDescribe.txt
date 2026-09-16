@@ -1,554 +1,720 @@
+
+							;个人技能
+							;个人防御
+
 NachoPuncher {徒手搏斗}
 PerkNachoPuncher
 {
-允许角色徒手格斗，无需装备武器。
+允许角色徒手格斗， 无需装备武器。 
 ~
-要进行徒手战斗，需卸下刀剑装备。此后切换到攻击模式时，角色将以拳头作战。空手无法格挡，也无法对抗刀剑进行佯攻。
+要进行徒手战斗， 需卸下刀剑装备。 此后切换到攻击模式时， 角色将以拳头作战。 空手无法格挡， 也无法对抗刀剑进行佯攻。 
 }
 DrunkenMaster {醉拳大师}
-PerkDrunkenMaster {人人都喜欢功夫格斗……}
-BasicDefense {基础防御技艺}
-perkBasicDefense {角色受到的伤害降低10%。}
-AdvancedDefense {防御专家}
-perkAdvancedDefense {角色受到的伤害降低20%。}
+PerkDrunkenMaster {人人都喜欢功夫格斗…… }
+
+BasicDefense {基础防御}
+perkBasicDefense {角色受到的伤害降低10%。 }
+
+AdvancedDefense {高级防御}
+perkAdvancedDefense {角色受到的伤害降低20%。 }
+
 Ciras {胸甲}
-perkCiras {该特质允许角色使用胸甲。}
-BasicAttack {基础攻击技}
-perkBasicAttack {角色的近战伤害提高5%。}
-HardHitter {重手}
-perkHardHitter {角色攻击力道极大，能让敌人失去战斗能量。}
+perkCiras {该特质允许角色穿戴胸甲。 }
+
+							;个人剑术
+
+BasicAttack {基础剑术}
+perkBasicAttack {角色的近战伤害提高5%。 }
+
+AdvancedAttack {高级剑术}
+perkAdvancedAttack {角色的近战伤害提高10%。 }
+
 CriticalHit {暴击}
-perkCriticalHit {角色使用近战武器攻击时，有5%几率对敌人造成致命伤害。}
-AdvancedAttack {攻击大师}
-perkAdvancedAttack {角色的近战伤害提高10%。}
-BladeDancer {刀锋之舞}
-perkBladeDancer {角色习得强化的群体攻击技巧。旋转攻击伤害加成提升30#sBladeDancer#%。}
-Sliding {不可抗拒打击}
-perkSliding {攻击额外有20#sSliding#%几率破防。}
-Rush {狂怒}
+perkCriticalHit {角色使用近战武器攻击时， 有5%几率对敌人造成致命伤害。 }
+
+HardHitter {沉重一击}
+perkHardHitter {角色施加如此力量的重击， 以至于它们使对手昏头转向， 迫使其失去战斗能量。 }
+
+Sliding {势不可挡}
+perkSliding {攻击额外有20#sSliding#%几率破防。 }
+
+Rush {狂暴}
 perkRush
 {
-一项主动技能，在10#sRush#秒内将角色的攻击力提升至1.5倍。
+一项主动技能， 在10#sRush#秒内将角色的攻击力提升至1.5倍。 
 ~
-技能冷却时间：60秒。
+技能冷却时间： 60秒。 
 ~
-仅主角可用。
+仅主角可用。 
 }
-SwordplayProfessional {职业击剑手}
-perkSwordplayProfessional {造成暴击的概率提升至15#sSwordplayProfessional_critical#%。角色受到的伤害减少30#sSwordplayProfessional_defence#%。}
+
+BladeDancer {刀剑之舞}
+perkBladeDancer {角色习得强化的旋风斩技巧。 旋风斩伤害提升30#sBladeDancer#%。 }
+
+SwordplayProfessional {剑术大师}
+perkSwordplayProfessional {造成暴击的概率提升至15#sSwordplayProfessional_critical#%。 角色受到的伤害减少30#sSwordplayProfessional_defence#%。 }
+
+							;个人能量
+
 Tireless {不知疲倦}
-perkTireless {角色学会了更有效地抵抗疲劳。能量恢复速度提升15#sTireless#%。}
+perkTireless {角色学会了更有效地抵抗疲劳。 能量恢复速度提升15#sTireless#%。 }
+
+EnergyPlus {能量成长}
+perkEnergyPlus
+{
+该技能使角色每升一级， 最大能量值额外增加1点。 
+~
+该技能具有追溯效果： 即便后期习得， 也会自动补偿从创建角色起至当前等级所缺失的所有额外点数。 
+}
+
 SecondWind {再生之息}
 perkSecondWind
 {
-一项主动技能，可让精疲力竭的角色在战斗中重振精神，逐步恢复消耗能量的一半。
+一项主动技能， 可让精疲力竭的角色在战斗中重振精神， 逐步恢复消耗能量的一半。 
 ~
-技能冷却时间：60秒。
+技能冷却时间： 60秒。 
 ~
-仅主角可用。
+仅主角可用。 
 }
+
+							;个人射击
+
 Gunman {基础射击}
 perkGunman
 {
-角色更擅长使用手枪：装填速度提升10%，精准度提升10%。
+角色更擅长使用手枪： 装填速度提升10%， 精准度提升10%。 
 ~
-可以使用霰弹手枪。
+可以使用喇叭手枪。 
 }
+
 StunningShot {震慑射击}
-perkStunningShot {每次命中都会使目标震荡，造成额外能量伤害。}
-GunAdvanced {射击专家}
+perkStunningShot {每一次成功射击都会震慑敌人， 使其失去部分能量。 }
+
+GunAdvanced {高级射击}
 perkGunAdvanced
 {
-角色更擅长使用特殊手枪：装填速度提升15%，精准度提升15%。
+角色更擅长使用特殊手枪： 装填速度提升15%， 精准度提升15%。 
 ~
-可以使用双管手枪。
+可以使用双管手枪。 
 }
+
 Shoottech {射击技巧}
-perkShoottech {长期练习射击鲨鱼并非徒劳。角色使用任意火器射击时，伤害提升10%。}
+perkShoottech {长期练习射击鲨鱼并非徒劳。 角色使用任意火器射击时， 伤害提升10%。 }
+
 MusketsTraining {火枪手训练}
 perkMusketsTraining
 {
-角色精通火枪使用：装填速度提升20%，精准度提升20%。
+角色精通火枪使用： 装填速度提升20%， 精准度提升20%。 
 ~
-主角及特定随从可装备单管火枪、火绳枪和手持迫击炮。
+主角及特定随从可装备单管滑膛枪、 火绳枪和手持迫击炮。 
 }
-GunProfessional {专业射击}
+
+GunProfessional {射击大师}
 perkGunProfessional
 {
-火器的装填速度提升25#sGunProfessional_charge#%，精准度提升25#sGunProfessional_accuracy#%。
+火器的装填速度提升25#sGunProfessional_charge#%， 精准度提升25#sGunProfessional_accuracy#%。 
 ~
-可以使用多管和连发火器。
+可以使用多管和连发火器。 
 }
-DevilsEye {魔鬼之眼}
-perkDevilsEye {经过长期训练和对弹道学的深入理解，角色学会了瞄准敌人的要害部位。使用任何火器射击时，有10%几率对敌人造成致命伤害。}
-Grus {负重者}
-perkGrus {该能力可额外携带30#sGrus#磅。}
-SharedExperience {交流经验}
-perkSharedExperience
-{
-主角获得的技能经验以两倍的比例共享给乘客、军官和同伴，分别为10%、50%和33%。
 
-#sSharedExperience#
-~
-解锁在登船战斗中与军官交换物品的能力。
-~
-仅主角可用。
-}
-Medic {极佳健康}
+DevilsEye {恶魔之眼}
+perkDevilsEye {经过长期训练和对弹道学的深入理解， 角色学会了瞄准敌人的要害部位。 使用任何火器射击时， 有10%几率对敌人造成致命伤害。 }
+
+							;个人其他技能
+
+Grus {驮骡}
+perkGrus {该技能可使角色增加30#sGrus#磅负重。 }
+
+Medic {卓越健康}
 perkMedic
 {
-如果当天没有受到严重伤害，生命恢复速度加快。若角色受伤，生命值减少幅度降低。航行时同样有效，但恢复速度较慢。
+如果当天没有受到严重伤害， 生命恢复速度加快。 若角色受伤， 生命值减少幅度降低。 航行时同样有效， 但恢复速度较慢。 
 ~
-仅主角可用。
+仅主角可用。 
 }
-HPPlus {生命成长}
-perkHPPlus
-{
-该能力使角色每升一级，最大生命值额外增加1点。
-~
-溯及既往——升级时，效果视为从冒险开始时就已拥有此能力。
-}
-EnergyPlus {增长能量}
-perkEnergyPlus
-{
-每升一级，英雄的最大能量点数增加1点。
-~
-升级时会追溯计算，效果等同于冒险开始时就拥有此能力。
-}
-HawkEye {钻石之眼}
-perkHawkEye
-{
-该能力让角色在神秘力量的帮助下，更容易找到特定物品。
-~
-例如：宝石、任务戒指和钥匙。
-~
-高幸运时，还能在世界地图的木桶中发现水晶骷髅、藏宝图等稀有物品。
-}
-ByWorker {兼职}
-perkByWorker {该角色可同时担任海军军官和先锋职位。}
-ByWorker2 {多面手}
-perkByWorker2
-{
-该角色可以同时担任两种海军军官和战斗员的职位，但会有一定的惩罚。
-~
-这些海军职位的关键技能将受到-25%的惩罚。
-~
-每有25点领导力，惩罚减少5%，最高可完全消除。
-}
-Trustworthy {欺骗的艺术}
-perkTrustworthy
-{
-负面角色声望不再影响大多数雇主的雇佣决定，因为魅力让他们产生误判。
-~
-~
-解锁在敌方定居点进行潜行移动的额外机会。
-}
-ShipEscape {救生艇救援}
-perkShipEscape
-{
-主角从沉没的船只乘小艇转移到自己舰队的其他船只上。
-~
-该能力允许你在战斗中，当船体低于15%时，通过货舱菜单交换或转移到舰队的另一艘船上。
-~
-如果同伴拥有此能力，他会从沉没的船只或火船上获救，乘小艇返回主角的船只，成为乘客。
-}
-WildCaribbean {狂野加勒比}
-perkWildCaribbean {让加勒比的一些“普通”随机遭遇变得奇异而不可思议！如果你不想让自己的冒险变得有些疯狂，请不要选择此特性。}
+
 Alchemy {炼金术}
 perkAlchemy
 {
-允许在没有特殊工具（如炼金术士箱）的情况下制作物品。
+允许在没有特殊工具（如炼金术士箱）的情况下制作物品。 
 ~
 
-仅主角可用。
+仅主角可用。 
 }
+
+SharedExperience {经验共享}
+perkSharedExperience
+{
+主角获得的技能经验以两倍的比例共享给乘客、 军官和同伴， 分别为10%、 50%和33%。 
+
+#sSharedExperience#
+~
+解锁在接舷战中与军官交换物品的能力。 
+~
+仅主角可用。 
+}
+
+ShipEscape {转舰求生}
+perkShipEscape
+{
+主角从沉没的船只乘小艇转移到自己舰队的其他船只上。 
+~
+该技能允许你在战斗中， 当船体低于15%时， 通过货舱菜单交换或转移到舰队的另一艘船上。 
+~
+如果同伴拥有此能力， 他会从沉没的船只或火船上获救， 乘小艇返回主角的船只， 成为乘客。 
+}
+
+Trustworthy {道貌岸然}
+perkTrustworthy
+{
+角色的负面声誉不再影响大多数雇主的雇佣决定， 因为自身的魅力让他们产生误判。 
+~
+~
+解锁在敌方定居点进行潜行移动的额外可能性。 
+}
+
+HawkEye {钻石之眼}
+perkHawkEye
+{
+该技能让角色在神秘力量的帮助下， 更容易找到特定物品。 
+~
+例如： 宝石、 任务戒指和钥匙。 
+~
+高幸运时， 还能在世界地图的木桶中发现水晶头骨、 藏宝图等稀有物品。 
+}
+
+WildCaribbean {狂野加勒比}
+perkWildCaribbean {让加勒比的一些“普通”随机遭遇变得奇异而不可思议！ 如果你不想让自己的冒险变得有些疯狂， 请不要选择此特性。 }
+
+HPPlus {生命成长}
+perkHPPlus
+{
+该技能使角色每升一级， 最大生命值额外增加1点。 
+~
+该技能具有追溯效果： 即便后期习得， 也会自动补偿从创建角色起至当前等级所缺失的所有额外点数。 
+}
+
+ByWorker {兼职}
+perkByWorker {该角色可同时担任海军军官和先锋职位。 }
+ByWorker2 {万事通}
+perkByWorker2
+{
+该角色可以同时担任两种海军军官和先锋的职位， 但会有一定的惩罚。 
+~
+这些海军职位的关键技能将受到-25%的惩罚。 
+~
+每有25点领导力， 惩罚减少5%， 最高可完全消除。 
+}
+
+
+							;海军技能
+							
+							;火炮技能
+
 FastReload {快速装填}
-perkFastReload {火炮装填速度提高10#sFastReload#%。}
-ImmediateReload {预装填}
+perkFastReload {火炮装填速度提高10#sFastReload#%。 }
+
+ImmediateReload {预备装填}
 perkImmediateReload
 {
-激活该技能后，武器在60#sImmediateReload#秒内的装填速度提升30%。
+激活该技能后， 武器在60#sImmediateReload#秒内的装填速度提升30%。 
 ~
-技能冷却时间：5分钟。
+技能冷却时间： 5分钟。 
 }
+
 HullDamageUp {增加船体伤害}
-perkHullDamageUp {对敌舰船体造成的伤害提高15%。}
-SailsDamageUp {帆受损增加}
-perkSailsDamageUp {对敌舰帆的伤害提高15%。}
+perkHullDamageUp {对敌舰船体造成的伤害提高15%。 }
+
+SailsDamageUp {增加帆布伤害}
+perkSailsDamageUp {对敌舰帆的伤害提高15%。 }
+
 CrewDamageUp {增加船员伤害}
-perkCrewDamageUp {对敌舰船员造成的伤害提高15%。}
+perkCrewDamageUp {对敌舰船员造成的伤害提高15%。 }
+
 CriticalShoot {致命射击}
-perkCriticalShoot {改进瞄准使对敌舰齐射时的暴击几率提高5%。}
-LongRangeShoot {射程提升}
-perkLongRangeShoot {舰炮射程提升15#sLongRangeShoot#%。}
-CannonProfessional {专业炮手}
-perkCannonProfessional {对敌方船只任何部位造成的伤害提高30#sCannonProfessional_damage#%。造成暴击的概率为15#sCannonProfessional_critical#%。}
+perkCriticalShoot {改进瞄准使对敌舰齐射时的暴击几率提高5%。 }
+
+LongRangeShoot {远程射击}
+perkLongRangeShoot {舰炮射程提升15#sLongRangeShoot#%。 }
+
+CannonProfessional {炮术大师}
+perkCannonProfessional {对敌方船只任何部位造成的伤害提高30#sCannonProfessional_damage#%。 造成暴击的概率为15#sCannonProfessional_critical#%。 }
+
+							;接舷技能
+
 LongRangeGrappling {远程钩索}
-perkLongRangeGrappling {登船距离提高15%。}
+perkLongRangeGrappling {登船的抛钩距离提高15%。 }
+
 IronWill {钢铁意志}
 perkIronWill
 {
-因拖欠工资和饥饿导致船上发生叛变的概率降低。
+因拖欠工资和饥饿导致船上发生叛变的概率降低。 
 ~
-对主角和水手长有效。
+对主角和水手长有效。 
 }
-Brander {火船}
-perkBrander {解锁一项战术，可指挥友方舰船在敌舰附近自爆，造成巨额伤害。}
+
+Brander {自爆火船}
+perkBrander {解锁一项战术， 可指挥友方舰船在敌舰附近自爆， 造成巨额伤害。 }
+
 Troopers {联合登陆}
-perkTroopers {可将舰队所有船只的船员联合起来，作为一支队伍进攻要塞。}
-LootCollection {快速拾取}
+perkTroopers {可将舰队所有船只的船员联合起来， 作为一支队伍进攻要塞。 }
+
+LootCollection {自动搜刮}
 perkLootCollection
 {
-允许你的船员在登船后自动从箱子和尸体中搜集物品。
+允许你的船员在接舷战后自动从箱子和尸体中搜刮物品。 
 ~
-要激活此功能，你需要与水手长对话。
+要激活此功能， 你需要与水手长对话。 
 ~
-该能力取决于水手长“登船”技能的等级，仅在登船和袭击殖民地时可用。
+该技能取决于水手长“接舷”能力的等级， 仅在接舷战和袭击殖民地时可用。 
 }
 Mentor {船员训练}
-perkMentor {角色获得进行各种船上演习的能力，从而提升船员在特定领域的经验。
+perkMentor {角色获得进行各种船上演习的能力， 从而提升船员在特定领域的经验。 
 ~
-该能力的成效取决于训练者的技能等级，并具有冷却时间。}
+该技能的成效取决于训练者的技能等级， 并具有冷却时间。 }
 MusketsShoot {火枪齐射}
 perkMusketsShoot
 {
-在登船前会进行一次火枪齐射，可消灭最多75%的敌方船员，但不超过射击人数。
+在接舷前会进行一次火枪齐射， 可消灭最多75%的敌方船员， 但不超过射击人数。 
 ~
-火枪齐射的基础伤害为随机值，范围为武装船员人数的15#sMusketsShoot#%至100%。
+火枪齐射的基础伤害为随机值， 范围为武装船员人数的15#sMusketsShoot#%至100%。 
 ~
-敌方伤亡人数取决于船只大小和现有先锋的数量。
+敌方伤亡人数取决于船只大小和现有先锋的数量。 
 }
-GrapplingProfessional {专业缠斗}
-perkGrapplingProfessional {登船距离提升25#sGrapplingProfessional#%。现在可在任意角度和船速下进行登船。}
-ShipSpeedUp {提升船只速度}
-perkShipSpeedUp {船只最大速度提升15%。}
-ShipTurnRateUp {提升船只机动性}
-perkShipTurnRateUp {船只机动性提高15%。}
-WindCatcher {提升船只动态}
-perkWindCatcher {角色能够感知风向的细微变化，并能有效利用。船只加速提升10#sWindCatcher#%。}
-SailsMan {疾速帆}
-perkSailsMan {所有帆操作速度提升10#sSailsMan#%。}
+GrapplingProfessional {钩索专家}
+perkGrapplingProfessional {抛钩距离提升25#sGrapplingProfessional#%。 现在可在任意角度和船速下进行抛钩。 }
+
+							;航海技能
+
+ShipSpeedUp {提升船速}
+perkShipSpeedUp {船只最大速度提升15%。 }
+
+ShipTurnRateUp {提升机动性}
+perkShipTurnRateUp {船只机动性提高15%。 }
+
 StormProfessional {风暴航行}
-perkStormProfessional {风暴造成的伤害降低30#sStormProfessional#%。}
+perkStormProfessional {风暴造成的伤害降低30#sStormProfessional#%。 }
+
+WindCatcher {提升动力}
+perkWindCatcher {角色能够感知风向的细微变化， 并能有效利用。 船只加速提升10#sWindCatcher#%。 }
+
+SailsMan {快速帆装}
+perkSailsMan {所有帆操作速度提升10#sSailsMan#%。 }
+
 Turn180 {快速转向}
 perkTurn180
 {
-船只机动性提升至4倍，持续1分钟。
+船只机动性提升至4倍， 持续1分钟。 
 ~
-技能冷却时间：3分钟。
+技能冷却时间： 3分钟。 
 }
-SailingProfessional {专业航海}
+
+SailingProfessional {航海大师}
 perkSailingProfessional
 {
-使船只速度提升20#sSailingProfessional_speed#%，机动性提升20#sSailingProfessional_turnrate#%。
+使船只速度提升20#sSailingProfessional_speed#%， 机动性提升20#sSailingProfessional_turnrate#%。 
+在世界地图上有75%的概率可以避开普通船只。 
 }
-SeaDogProfessional {海上霸主}
+
+SeaDogProfessional {海洋霸主}
 perkSeaDogProfessional
 {
-看到这面长旗，即使是最臭名昭著的冒险家和强盗也不敢挑战命运。这项终极能力会让某些分舰队无视你的舰队，大幅提高敌舰投降的几率，并开启一系列独特的机会。
+看到这面长旗， 即使是最臭名昭著的冒险家和强盗也不敢挑战命运。 这项终极能力会让某些分舰队无视你的舰队， 大幅提高敌舰投降的几率， 并开启一系列独特的机会。
 ~
-如果舰队中有低级别船只，该能力将失效。
+如果舰队中有低级别船只， 该技能将失效。 
 ~
-仅主角可用。
+仅主角可用。 
 }
-BasicCommerce {贸易基础}
-perkBasicCommerce {在市场上逗留了几天，角色学会了一些商人的小窍门。所有交易享受额外10%折扣。}
+
+							;贸易技能
+
+BasicCommerce {基础贸易}
+perkBasicCommerce {在市场上逗留了几天， 角色学会了一些商人的小窍门。 所有货物的购买可享受10%折扣。 }
+
 QuickCalculation {快速计算}
-perkQuickCalculation {计算速度提升50%，让角色能达成更多交易，节省宝贵时间。}
-ArtOfDeals {交易艺术}
+perkQuickCalculation {计算速度提升， 减少50%因购买货物而损失的时间。 }
+
+ArtOfDeals {贸易艺术}
 perkArtOfDeals
 {
-凭借建立信任关系的能力，角色总能发现更多有利可图的交易机会。
+凭借建立信任关系的能力， 角色总能发现更多有利可图的交易机会。 
 ~
-可从三种商人货运任务中选择，而非只有一种。
+可从三种商人货运任务中选择， 而非只有一种。 
 ~
-有机会在护送/乘客任务中获得第二次机会。
+有机会在护送/乘客任务中获得第二次机会。 
 }
-AdvancedCommerce {专家贸易}
-perkAdvancedCommerce {长时间与商人打交道，角色掌握了一些实用技巧。所有交易可额外获得10%售出加成。}
+
+AdvancedCommerce {高级贸易}
+perkAdvancedCommerce {长时间与商人打交道， 角色掌握了一些实用技巧。 所有货物的出售可享受10%折扣。 }
+
 Packer {货物包装}
-perkPacker {对优化船上空间的热情让角色能合理安排货物在货舱中。船只容量额外提升10%。}
+perkPacker {对优化船上空间的热情让角色能合理安排货物在货舱中。 船只货舱容量提升10%。 }
+
 PriceRecon {价格情报}
-perkPriceRecon {凭借在商界的人脉，角色能够预测价格变动。每月可在任意商店获取已访问殖民地的最新价格信息。}
+perkPriceRecon {凭借在商界的人脉， 角色能够预测价格变动。 每月可在任意商店获取已访问殖民地的最新价格信息。 }
+
 Investor {投资大师}
-perkInvestor {掌握金融机制可使角色将银行存款利率提高1%，获得额外收益。}
-ProfessionalCommerce {专业贸易}
-perkProfessionalCommerce {所有交易享受额外-15#sProfessionalCommerce#%折扣，并获得+15%售出加成。}
+perkInvestor {掌握金融机制可使角色将存款利率提高1%， 从而提供额外收入。 }
+
+ProfessionalCommerce {贸易专家}
+perkProfessionalCommerce {所有货物的购买与出售均可享受15%折扣。 }
+
 CrewSalaryOptimization		{全面审计}
-perkCrewSalaryOptimization	{角色以铁腕手段整顿船舶财务。通过对船员份额的巧妙调整和杜绝任何不必要的开支，舰队中船员的工资成本降低了40%，且不会降低纪律性。
+perkCrewSalaryOptimization	{角色以铁腕手段整顿船舶财务。 通过对船员份额的巧妙调整和杜绝任何不必要的开支， 舰队中船员的工资成本降低了40%， 且不会降低纪律性。
 ~
 仅主角可用。}
-Carpenter {基础修理}
+
+							;维修技能
+
+Carpenter {基础维修}
 perkCarpenter
 {
-提升自主修理速度。现有桅杆的船体损伤和帆索将恢复10#sCarpenter#%。 
+提升自主维修速度。 现有桅杆的船体损伤和帆索将恢复10#sCarpenter#%。 
 ~
-在陆地冒险和世界地图旅行中生效。
+在陆地冒险和世界地图旅行中生效。 
 ~
-修理船体需木板，修复帆需帆布。
+维修船体需木板， 修复帆需帆布。 
 }
-Builder {专家修理}
-perkBuilder {任何修理消耗的木板和帆布减少10#sBuilder#%。}
-LightRepair {修补破洞}
+
+Builder {高级维修}
+perkBuilder {任何维修消耗的木板和帆布减少10#sBuilder#%。 }
+
+Shipbuilder {维修专家}
+perkShipbuilder {任何维修消耗的木板和帆布减少25%。 自主维修速度提升一倍。 }
+
+Caulking {填缝}
+perkCaulking {角色掌握了先进的填缝技术， 当船体完整度低于10%时， 可防止船只缓慢下沉。 }
+
+LightRepair {修补漏洞}
 perkLightRepair
 {
-能够在一分钟内无需额外资源快速抽水并封堵船体漏水。最多可恢复船只10%的可用耐久度。
+能够在一分钟内无需额外资源快速抽水并封堵船体漏水。 最多可恢复船只10%的可用耐久度。 
 ~
-技能冷却时间：3分钟。
+技能冷却时间： 3分钟。 
 }
-InstantRepair {紧急修理}
+
+InstantRepair {紧急维修}
 perkInstantRepair
 {
-快速修理，即使在激烈战斗中也能进行，但需要大量木板和帆布。无法修复倒塌的桅杆，也不能补充船员。
+快速维修， 即使在激烈战斗中也能进行， 但需要大量木板和帆布。 无法修复倒塌的桅杆， 也不能补充船员。 
 船体最多可恢复65#sInstantRepair#%。 
 ~
-技能冷却时间：90秒。
+技能冷却时间： 90秒。 
 }
-Shipbuilder {专业修理}
-perkShipbuilder {任何修理消耗的木板和帆布减少25%。自主修理速度提升一倍。}
-SelfRepair {自我修复}
+
+SelfRepair {全面维修}
 perkSelfRepair
 {
-允许在任何方便的岸边由船员全力修理船只。需要木板和帆布。可完全修复船体、帆和桅杆。
-只能在沿海陆地地点进行修理。
+允许在任何方便的岸边由船员全力维修船只。 需要木板和帆布。 可完全修复船体、 帆和桅杆。 
+只能在沿海陆地地点进行维修。 
 }
-BasicBattleState {基础船只防御}
-perkBasicBattleState {对船只造成的总体伤害降低15%。}
-Caulking {填缝}
-perkCaulking {角色掌握了先进的填缝技术，当船体完整度低于10%时，可防止船只缓慢下沉。}
-AdvancedBattleState {专家级船只防御}
-perkAdvancedBattleState {对船只造成的总体伤害降低25%。}
-ShipDefenseProfessional {专业船只防御}
+
+BasicBattleState {基础船只加固}
+perkBasicBattleState {使船只受到的伤害降低15%。 }
+
+AdvancedBattleState {高级船只加固}
+perkAdvancedBattleState {使船只受到的伤害降低25%。 }
+
+ShipDefenseProfessional {船只加固专家}
 perkShipDefenseProfessional
 {
-对船只造成的总体伤害降低35#sShipDefenseProfessional_damage#%。  
-船只受到致命伤害的概率降低70#sShipDefenseProfessional_critical#%。
+使船只受到的伤害降低35#sShipDefenseProfessional_damage#%。  
+使船只受到暴击的概率降低70#sShipDefenseProfessional_critical#%。 
 }
+
 MasterOverload {超载大师}
 perkMasterOverload
 {
-角色将最新技术应用于船只的下层甲板设计，扩展并优化船员生活区的容量。移除因船员超载导致士气下降的惩罚。
+角色将最新技术应用于船只的下层甲板设计， 扩展并优化船员生活区的容量。 移除因船员超载导致士气下降的惩罚。 
 ~
-仅主角可用。
+仅主角可用。 
 }
+
+							;医生技能
+
 Naturalcure {草药治疗}
 perkNaturalcure
 {
-角色在旅途中能够发现并收集治疗物质，被动增加药品储备。
-还可以使用草药和天然疗法进行治疗，使药品消耗减少15%。
+角色在旅途中能够发现并收集治疗物质， 被动增加药品储备。 
+还可以使用草药和天然疗法进行治疗， 使药品消耗减少15%。 
 }
+
 Doctor1 {急救}
-perkDoctor1 {提升战斗环境下的急救效果，使船员在海战中因伤和弹药造成的损失减少10%。}
+perkDoctor1 {提升战斗环境下的急救效果， 使船员在海战中因伤和弹药造成的损失减少10%。 }
+
+Doctor2 {外科医生}
+perkDoctor2 {提高复杂手术和重伤治疗的成功率。 使船员在海战中因伤和弹药造成的损失减少15%。 }
+
 LifeSupport {生命维持}
-perkLifeSupport {该角色无需药物即可提供基础医疗护理，使奴隶的死亡率降低60%。}
+perkLifeSupport {该角色无需药物即可提供基础医疗护理， 使奴隶的死亡率降低60%。 }
+
 Aptekar {药剂}
-perkAptekar {角色学会了在治疗病人时使用最佳药物组合和精确剂量，从而使治疗时药品消耗减少30%。}
-Doctor2 {外科专家}
-perkDoctor2 {提高复杂手术和重伤治疗的成功率。海战中因伤和弹药造成的船员损失减少15%。}
+perkAptekar {角色学会了在治疗病人时使用最佳药物组合和精确剂量， 从而使医疗物资的消耗减少30%。 }
+
 Prevention {预防}
-perkPrevention {角色注重疾病预防和船员体能维护，使登船部队在战斗中整体生命值提升10%。}
-PainResistance {抗痛能力}
-perkPainResistance {在危急情况下激活，为船员提供10秒的伤害保护。在此期间，参与者可以无惧损失地战斗，但所有受到的伤害会累计，并在技能结束后一次结算。}
+perkPrevention {角色注重疾病预防和船员体能维护， 使接舷部队在战斗中整体生命值提升10%。 }
+
 PersonalCare {个人护理}
 perkPersonalCare
 {
-所有军官先锋的最大生命值提高20%。
+所有军官先锋的最大生命值提高20%。 
 ~
-此外，当拥有该能力的角色被任命为医生时，为主角激活个人能力“卓越健康”。
+此外， 当拥有该技能的角色被任命为医生时， 为主角激活个人能力“卓越健康”。 
 }
-Doctor3 {专业医疗}
-perkDoctor3 {该角色具备全面的医疗经验，能够有效应对各类患者的危急情况。海战中因伤和弹药造成的船员损失减少20#sDoctor2#%。}
+
+Doctor3 {外科专家}
+perkDoctor3 {该角色具备全面的医疗经验， 能够有效应对各类患者的危急情况。 使船员在海战中因伤和弹药造成的损失减少20#sDoctor2#%。 }
+
+PainResistance {抗痛能力}
+perkPainResistance {在危急情况下激活， 为船员提供10秒的伤害保护。 在此期间， 参与者可以无惧损失地战斗， 但所有受到的伤害会累计， 并在技能结束后一次结算。 }
+
+
 Sanitary {绝对卫生}
 perkSanitary
 {
-该角色积极向船员普及卫生标准的重要性，并教导水手正确的清洁方法。彻底消除船员感染和疾病的可能性，使船队在世界地图航行时无需携带药品。
+该角色积极向船员普及卫生标准的重要性， 并教导水手正确的清洁方法。 彻底消除船员感染和疾病的可能性， 使船队在世界地图航行时无需携带药品。 
 ~
-仅主角可用。
+该效果适用于舰队中的所有舰船。 
 ~
-尚未开放。
+仅主角可用。 
 }
+
 SeaSavior {海洋的救星}
 perkSeaSavior
 {
-角色在全球地图航行时获得营救遇难船员的能力，可定期被动增加船员人数。成功营救需要消耗船上药品。
+角色在全球地图航行时获得营救遇难船员的能力， 可定期被动增加船员人数。 成功营救需要消耗船上药品。 
 ~
-仅主角可用。
+仅主角可用。 
 ~
-尚未开放。
+尚未开放。 
 }
+
 Feldsher {医务员}
 perkFeldsher
 {
-将船上疫情持续时间减少50%。
+将船上疫情持续时间减少50%。 
 ~
-尚未开放。
+尚未开放。 
 }
+
 Sanitar {个人卫生}
 perkSanitar
 {
-将感染疾病的风险降低一半。
+将感染疾病的风险降低一半。 
 ~
-尚未开放。
+尚未开放。 
 }
-FlagPir {海盗旗}
+
+							;个人技能
+
+FlagPir {海盗旗帜}
 perkFlagPir
 {
-可以将你的旗帜更换为骷髅旗。
+可以将你的旗帜更换为骷髅旗帜。 
 ~
-仅主角可用。
+仅主角可用。 
 }
+
 FlagEng {英格兰旗帜}
 perkFlagEng
 {
-可以将你的旗帜更换为英格兰旗帜。伪装是否成功取决于潜行、舰队中舰船的数量和类型，以及敌方舰船数量和悬赏金额。
+可以将你的旗帜更换为英格兰旗帜。 伪装是否成功取决于潜行、 舰队中舰船的数量和类型， 及敌方舰船数量和悬赏金额。 
 ~
-仅主角可用。
+仅主角可用。 
 }
-FlagFra {法国国旗}
+
+FlagFra {法国旗帜}
 perkFlagFra
 {
-可以将你的旗帜更换为法国国旗。伪装是否成功取决于潜行、舰队中船只的数量和类型，以及敌方船只数量和悬赏金额。
+可以将你的旗帜更换为法国旗帜。 伪装是否成功取决于潜行、 舰队中舰船的数量和类型， 及敌方舰船数量和悬赏金额。 
 ~
-仅主角可用。
+仅主角可用。 
 }
-FlagSpa {西班牙国旗}
+
+FlagSpa {西班牙旗帜}
 perkFlagSpa
 {
-可以将你的旗帜更换为西班牙旗帜。伪装是否成功取决于你的潜行、舰队中船只的数量和类型，以及敌方船只数量和悬赏金额。
+可以将你的旗帜更换为西班牙旗帜。 伪装是否成功取决于潜行、 舰队中舰船的数量和类型， 及敌方舰船数量和悬赏金额。 
 ~
-
-仅主角可用。
+仅主角可用。 
 }
-FlagHol {荷兰国旗}
+
+FlagHol {荷兰旗帜}
 perkFlagHol
 {
-可以将你的旗帜更换为荷兰国旗。伪装是否成功取决于你的潜行能力、舰队中船只的数量和等级，以及敌方船只数量和悬赏金额。
+可以将你的旗帜更换为荷兰旗帜。 伪装是否成功取决于潜行、 舰队中舰船的数量和类型， 及敌方舰船数量和悬赏金额。 
 ~
-仅主角可用。
+仅主角可用。 
 }
+
+							;牧师技能
+
 Capellan1 {布道}
 perkCapellan1
 {
-牧师定期布道，每天逐步提升船员士气。
+牧师定期布道， 每天逐步提升船员士气。 
 ~
-仅牧师可用。
+仅牧师可用。 
 }
+
 Capellan2 {圣礼}
 perkCapellan2
 {
-牧师在战斗前举行神圣仪式，增强船员士气。登船战斗中的伤亡减少一半。
+牧师在战斗前举行神圣仪式， 增强船员士气。 接舷战中的伤亡减少一半。 
 ~
-仅牧师可用。
+仅牧师可用。 
 }
-InstantBoarding {瞬间登船}
+
+							;作弊技能
+
+InstantBoarding {瞬间接舷}
+
+							;特性
+
+							;额外能力
+
 MapMaker {制图师}
 perkMapMaker
 {
-收集完整地图集后，角色成为了制图大师，规划航线变得轻而易举。
+收集完整地图集后， 角色成为了制图大师， 规划航线变得轻而易举。 
 ~
-世界地图上的船只速度提升5%。
+世界地图上的船只速度提升5%。 
 }
+
 GhostsGift {幽灵赠礼}
 perkGhostsGift
 {
-在辉煌击败可怕的“飞翔的荷兰人”后，角色感受到被诅咒船长的强大魔法。
+在击败可怕的“飞翔的荷兰人”后， 角色感受到被诅咒船长的强大魔法。 
 ~
-操控任意船只时，速度+6%、机动性+6%、紧顶风+6%。
+操控任意船只时， 速度+6%、 机动性+6%、 紧顶风+6%。 
 }
+
 Merman {水禽}
 perkMerman
 {
-在诅咒之岛无尽的水上考验中，角色永久提升了游泳技巧。
+在诅咒之岛无尽的水上考验中， 角色永久提升了游泳技巧。 
 ~
-角色的游泳速度翻倍。
+角色的游泳速度翻倍。 
 }
+
 SlaveTraderTrait {奴隶之主}
 perkSlaveTraderTrait
 {
-在你的船舱里运送了成千上万的奴隶后，你已将镇压一切反抗的手段磨练得炉火纯青。即便是最绝望的叛乱者，也不敢挑战你的铁血纪律。
+在你的船舱里运送了成千上万的奴隶后， 你已将镇压一切反抗的手段磨练得炉火纯青。 即便是最绝望的叛乱者， 也不敢挑战你的铁血纪律。 
 ~
-赋予50%额外豁免检定，可压制潜在的奴隶暴动。
+赋予50%额外豁免检定， 可压制潜在的奴隶暴动。 
 }
+
 Duelist {著名决斗者}
 DuelistFem {著名决斗者}
-perkDuelist {与单一敌人近战时，造成伤害+5%，受到伤害-5%，无论有无队友。}
-InquisitionBlessing         {审判庭的祝福}
-perkInquisitionBlessing     {从首席审判官安东尼奥·德·索萨那里获得的宗教审判所特别庇护。
-~
-内心坚定不移的信念以神圣之力充盈角色的每一次打击，对怪物、亡灵和印第安人的伤害提高20%。}
+perkDuelist {与单一敌人近战时， 造成伤害+5%， 受到伤害-5%， 无论有无队友。 }
 
-WitchCharm                  {巫术馈赠}
-perkWitchCharm              {从卡拉那里获得的特殊魔法礼物，作为将她从审判庭火刑柱上救下的奖励。
+InquisitionBlessing {裁判所的祝福}
+perkInquisitionBlessing 
+{
+从首席审判官安东尼奥.德.索萨那里获得的宗教审判所特别庇护。
 ~
-白巫女的明亮魔法如同一面无形的盾牌覆在角色身上，抵御恶意，使受到的来自怪物、亡灵和印第安人的伤害降低20%。}
+内心坚定不移的信念以神圣之力充盈角色的每一次打击， 对怪物、 亡灵和印第安人的伤害提高20%。
+}
+
+WitchCharm {巫术馈赠}
+perkWitchCharm 
+{
+从卡拉那里获得的特殊魔法礼物， 作为将她从裁判所火刑柱上救下的奖励。
+~
+白巫女的明亮魔法如同一面无形的盾牌覆在角色身上， 抵御恶意， 使受到的来自怪物、 亡灵和印第安人的伤害降低20%。
+}
+
+							;人物特质
+
 HighwaySmuggler {老练的走私者}
-perkHighwaySmuggler {此人熟知许多秘密航线，多次走私，屡次瞒过官府和执法者。}
+perkHighwaySmuggler {此人熟知许多秘密航线， 多次走私， 屡次瞒过官府和执法者。 }
 Schemer {算计者}
-perkSchemer {（完成“Malcolm's tobacco”任务并获得好结局后）可用舰队和三等舰进行走私。}
+perkSchemer {（完成“马尔科姆的烟草”任务并获得好结局后）可用舰队和三星船进行走私。 }
 BasePirate {走私中介}
-perkBasePirate {即使在商店也能购买走私品。}
+perkBasePirate {即使在商店也能购买走私品。 }
 Monk {教会侍者}
-perkMonk {在船上的教士，为船员提供道德支持和精神指引。他在船上的职责是侍奉上帝。}
-SweetBaby {不可抗拒的美丽}
+perkMonk {在船上的教士， 为船员提供道德支持和精神指引。 他在船上的职责是侍奉上帝。 }
+SweetBaby {倾国倾城}
 perkSweetBaby
 {
-拥有迷人魅力，能够俘获人心，吸引周围所有人的目光。
+角色拥有迷人的魅力， 能够俘获人心并吸引周围所有人的目光。
 ~
-可成为主角异性的浪漫对象。
+可成为主角异性的浪漫对象。 
 }
 PGGTrait {自由船长}
-perkPGGTrait {一位以大胆计划和英勇行动闻名的著名船长，总是追求新的发现与冒险。}
+perkPGGTrait {一位以大胆计划和英勇行动闻名的著名船长， 总是追求新的发现与冒险。 }
 Nobleman {贵族}
-NoblemanFem {贵妇}
-perkNobleman {该角色擅长与贵族交流，能够避免冲突，并在权势人物中找到盟友。}
+NoblemanFem {贵族}
+perkNobleman {该角色擅长与贵族交流， 能够避免冲突， 并在权势人物中找到盟友。 }
 OneLegMan {独腿}
-perkOneLegMan {角色失去了一条腿，但并未丧失战斗技巧。}
+perkOneLegMan {角色失去了一条腿， 但并未丧失战斗技巧。 }
 SaveLoadAbuser {骗子}
-perkSaveLoadAbuser {一位臭名昭著的赌徒，尽管在欺诈上屡屡得手，却因不被他人信任，成为赌坛中的孤独者。}
-Monomania                {偏执狂}
-perkMonomania             {该角色对自己的手艺有着狂热的奉献精神，但在其狭隘兴趣之外的任何事情上都显得无能为力。
+perkSaveLoadAbuser {一位臭名昭著的赌徒， 尽管在欺诈上屡屡得手， 却因不被他人信任， 成为赌坛中的孤独者。 }
+Monomania {偏执狂}
+perkMonomania  
+{
+该角色对自己的手艺有着狂热的奉献精神， 但在其狭隘兴趣之外的任何事情上都显得无能为力。 
 ~
-在某一特定职业中的独特天赋赋予其显著的基础加成，但在其他活动领域，该角色几乎变得毫无用处。}
+在某一特定职业中的独特天赋赋予其显著的基础加成， 但在其他活动领域， 该角色几乎变得毫无用处。 
+}
 
-Stuttering               {口吃}
-perkStuttering            {一种言语障碍，导致角色很难清晰且迅速地表达自己的想法。
+Stuttering {口吃}
+perkStuttering 
+{一种言语障碍， 导致角色很难清晰且迅速地表达自己的想法。 
 ~
-降低魅力的基础值，并对商业和领导力造成惩罚。}
+降低魅力的基础值， 并对商业和领导力造成惩罚。 
+}
 
-Redskin                  {原住民}
-perkRedskin               {该角色在丛林深处长大，完全不知道欧洲船只上的生活是如何运作的。
+Redskin {原住民}
+perkRedskin {
+该角色在丛林深处长大， 完全不知道欧洲船只上的生活是如何运作的。 
 ~
-由于完全缺乏航海知识，无法将其任命为与船只管理相关的军官职务。然而，作为一名忠诚的接舷战人员，他将是不可或缺的。}
+由于完全缺乏航海知识， 无法将其任命为与船只管理相关的军官职务。 然而， 作为一名忠诚的陆战人员， 他将是不可或缺的。 
+}
 
-NoCaptain                {随从}
-perkNoCaptain             {该角色完全缺乏领导才能，对整艘船及其船员的责任会让其陷入恐慌。
+NoCaptain {随从}
+perkNoCaptain  {该角色完全缺乏领导才能， 对整艘船及其船员的责任会让其陷入恐慌。 
 ~
-无法将其任命为舰队中的同伴（独立船只的船长）。同时，他仍然可以在你的指挥下有效地担任普通军官。}
+无法将其任命为僚舰的船长。 但是， 他仍然可以在你的指挥下有效地担任普通军官。 }
 
-MusketeerOnly            {坚定射手}
-perkMusketeerOnly         {该角色只承认火药和铅弹的力量，完全不会（或原则上拒绝）手持任何冷兵器。在战斗中，他只能使用火枪。}
+MusketeerOnly {坚定射手}
+perkMusketeerOnly {该角色只承认火药和铅弹的力量， 完全不会（或原则上拒绝）手持任何冷兵器。 在战斗中， 他只能使用火枪。 }
 
-WeaponBonding             {武器羁绊}
-perkWeaponBonding         {该角色对自己的独特武器有着深厚的精神依恋。
+WeaponBonding  {武器羁绊}
+perkWeaponBonding {
+该角色对自己的独特武器有着深厚的精神依恋。 
 ~
-这种性格特征使该角色无法使用任何其他武器，但在使用其专属武器时，无人能敌。}
+这种性格特征使该角色无法使用任何其他武器， 但在使用其专属武器时， 无人能敌。 
+}
 
-DuglasSchool             {火枪手特训}
-perkDuglasSchool          {该角色接受过旧世界精英射击学校复杂且罕见的教学法培训。
+DuglasSchool  {火枪手特训}
+perkDuglasSchool  
+{
+该角色接受过旧世界精英射击学校复杂且罕见的教学法培训。 
 ~
-只有那些完美掌握了这一罕见经典基础的人，才能使用罕见和实验性的火枪品种。}
-Energaiser {精力充沛}
-perkEnergaiser {角色正处于体能巅峰，体力恢复速度提升至1.5倍。}
+只有那些完美掌握了这一罕见经典基础的人， 才能使用罕见和实验性的火枪品种。 
+}
+legendGuideRead {初露锋芒的传奇}
+perklegendGuideRead {你读了一本偶然发现的小笔记本， 里面记满了简短却重要的建议。 
+~
+基础体力和生命值分别提高5点和10点。 }
+
+
+							;人物特质
+
+Energaiser {不知疲倦}
+perkEnergaiser {角色正处于体能巅峰， 体力恢复速度提升至1.5倍。 }
 LoyalOff {忠诚}
 LoyalOffFem {忠诚}
-perkLoyalOff {忠诚的军官绝不会质疑船长的权威和命令。}
+perkLoyalOff {忠诚的军官绝不会质疑船长的权威和命令。 }
 Honest {正直}
 HonestFem {正直}
-perkHonest {该角色恪守严格的道德准则，总是将正义和保护无辜置于个人利益之上。}
-Rebel {不诚实}
-RebelFem {不诚实}
-perkRebel {该角色只为自身利益行事，为达目的不惜使用欺骗和操控，完全无视道德准则和自身行为的后果。}
+perkHonest {该角色恪守严格的道德准则， 总是将正义和保护无辜置于个人利益之上。 }
+Rebel {虚伪}
+RebelFem {虚伪}
+perkRebel {该角色只为自身利益行事， 为达目的不惜使用欺骗和操控， 完全无视道德准则和自身行为的后果。 }
 Bully {自负}
-perkBully {一个顽固的惹事者，哪怕是最微不足道的理由也会决斗。酒馆的客人会在大约两个月内害怕与该角色同饮。}
+perkBully {一个顽固的惹事者， 哪怕是最微不足道的理由也会决斗。 酒馆的客人会在大约两个月内害怕与该角色同饮。 }
 Dignity {尊严}
-perkDignity {只有失去荣誉和尊严的平民和醉汉才会挥拳。真正有价值的人更倾向于用可靠的利刃解决问题。}
+perkDignity {只有失去荣誉和尊严的平民和醉汉才会挥拳。 真正有价值的人更倾向于用可靠的利刃解决问题。 }

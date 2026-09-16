@@ -94,3 +94,31 @@ Mal sehen. An diesem Tag liefen folgende Schiffe aus dem Hafen aus: die Pinasse 
 Villemstad_PortMan_29 {
 Danke!
 }
+
+Villemstad_PortMan_30 {
+Könnt Ihr mir sagen, welche Schiffe unter spanischer Flagge in der vergangenen Woche hier verzeichnet wurden?
+}
+Villemstad_PortMan_31 {
+Unter spanischer Flagge, sagt Ihr? Davon gab es nicht viele.\nSehen wir nach. Die Galeone 'Hernal Diaz' unter Kapitän Gabriel de Seguenza. Gestern kamen zwei Handelsfleuten aus Porto Bello an; als Eigentümer beider ist Andres Fonseca eingetragen. Und natürlich Eure '@<PChar>'.
+}
+Villemstad_PortMan_32 {
+Woher kam die Galeone?
+}
+Villemstad_PortMan_33 {
+Aus Havanna. Aber das ist nur das, was in meinen Unterlagen steht. Niemand musste über die Einzelheiten seiner Route Rechenschaft ablegen.
+}
+Villemstad_PortMan_34 {
+Wisst Ihr vielleicht etwas über die Passagiere?
+}
+Villemstad_PortMan_35 {
+Bedauerlicherweise ist das alles.
+}
+Villemstad_PortMan_36 {
+Ja, schade.
+}
+Villemstad_PortMan_37 {
+Wenn Ihr jemanden sucht, solltet Ihr die Tagelöhner hier im Hafen fragen. Sie reden mit den ankommenden Seeleuten. Tagsüber haben sie keine Zeit zum Schwatzen, aber abends schlagen sie oft direkt hier am Ufer ihr Lager auf.
+}
+Villemstad_PortMan_38 {
+Ich danke Euch.
+}

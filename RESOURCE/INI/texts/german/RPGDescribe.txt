@@ -274,6 +274,17 @@ Piraten. Diese Männer segeln unter keiner Flagge und leben nach dem Piratencode
 ~
 Für jede Marinepatrouille ist der Anblick einer Piratenflagge am Horizont wie ein Festmahl für einen ausgehungerten Wolf. Für die meisten Piraten gibt es nur zwei Enden – den Galgen oder die Schlinge des Henkers.
 }
+Pirate_bonuses_descr
+{
+Zusätzliche Charaktereigenschaft — "Schmuggleragent".
+Möglichkeit, Schmuggelware sogar in Geschäften zu kaufen.
+~
+Zusätzliche Startfähigkeiten: "Grundlegende Schießkunst" und "Selbstreparatur".
+~
+Bei Wahl der Klasse "Korsar", zusätzliche Gegenstände: Schatzkartenfragment, 2500 Piaster.
+~
+Startschiff — "Sloop".
+}
 Hunter_hint
 {
 Die Einstellung einer Nation, ihrer Bürger und Soldaten dir gegenüber. Gute Taten zugunsten des Landes verbessern deinen Ruf; schlechte können sogar dazu führen, dass ein Kopfgeld auf dich ausgesetzt wird. Das bedeutet ständige Verfolgung zu Land und zu Wasser.

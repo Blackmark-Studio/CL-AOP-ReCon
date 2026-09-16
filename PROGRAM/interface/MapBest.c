@@ -130,23 +130,14 @@ void InitInterface(string iniName)
 		if(sColony == "Tenotchitlan") continue;
 		if(sColony == "Dominica") continue;
 		if(sColony == "Terks") continue;
+		if(sColony == "Aruba") continue;
 		if(sColony == "Caiman") continue;
 		if(sColony == "LostShipsCity") continue;
-		if(sColony == "KhaelRoa") continue;
 		if(sColony == "Minentown") continue;
-		if(sColony == "Ksochitam") continue;
-		if(sColony == "RockIsland") continue;
-		if(sColony == "SantaQuiteria") continue;
-		if(sColony == "IslaDeVieques") continue;
-		if(sColony == "Is") continue;
-		if(sColony == "IslaMona" && !CheckAttribute(CharacterFromID("Islamona_carpenter"), "Storage.Activate")) continue;
 
-		if(sColony == "IslaMona")
-			sPic = "Smuggler";
-		else
-			sPic = GetNationNameByType(sti(rColony.nation));
+		sPic = GetNationNameByType(sti(rColony.nation));
 
-		if(sColony != "FortOrange" && sColony != "LaVega" && sColony != "IslaMona")
+		if(sColony != "FortOrange" && sColony != "LaVega")
 		{
 			X = makefloat(worldMap.islands.(sColonyIslandID).(sColonyTown).position.x)+1000;
 			Y = -makefloat(worldMap.islands.(sColonyIslandID).(sColonyTown).position.z)+1000;
@@ -164,17 +155,12 @@ void InitInterface(string iniName)
 			Y = 350;
 		}
 
-		if(sColony == "IslaMona")
-		{
-			X = 1000;
-			Y = 829;
-		}
 		/*if(sColony == "Providence") 
 		{
 			X = 658;
 			Y = 780;
 		}*/
-		//это фикс без НИ, можно удалить впоследствии - пусть берёт из инита глобалки
+		//TODO это фикс без НИ, можно удалить впоследствии - пусть берёт из инита глобалки
 		//Draw colony on the map
 		AddImageToImageList(sColony, "NATIONS_SMALL", sPic, X, Y, 16, 16);
 
@@ -195,8 +181,7 @@ void InitInterface(string iniName)
 			//Draw ships
     		if (CheckAttribute(chref, "ShipInStockMan"))
     		{
-				bool bIslaMonaShip = (sColony == "IslaMona") && (chref.ShipInStockMan == "Islamona_carpenter"); //stupid compiler >:|
-                if (chref.ShipInStockMan == (sColony + "_PortMan") || bIslaMonaShip)
+                if (chref.ShipInStockMan == (sColony + "_PortMan"))
 				{
 					AddImageToImageList(sColony + "_shipinstock", "ICONS_SPEC", "ship button", X - 35, Y, 24, 24);
 				}
@@ -247,6 +232,11 @@ void InitInterface(string iniName)
 			}
 		}
 	}
+
+	// > Метка Арубы
+	X = makefloat(worldMap.islands.Aruba.position.x) + 600;
+	Y = -makefloat(worldMap.islands.Aruba.position.z) + 1400;
+	AddImageToImageList("Aruba_flag", "NATIONS_SMALL", "Pirate", X, Y, 16, 16);
 
 	//Draw our ship
 	GetCorrectShipCoords(&X, &Y);
@@ -383,7 +373,7 @@ void FillTable()
 					{
 						if(fMouseY <= stf(GameInterface.MAP.imagelist.(sColony).y) + 60.0)	// 50
 						{
-							if(sColony != "Panama" && sColony != "IslaMona" && sColony != "KhaelRoa" && sColony != "Caiman")
+							if(sColony != "Panama" && sColony != "Caiman")
 							{
 								colonyindex = i;
 								XI_WindowShow("TP_WINDOW", true);
@@ -441,6 +431,12 @@ void FillTable()
 			setWDMPointXZ("Shore56");
 			ssColony = "Terks";
 		}
+		if (fMouseX >= 1150.0 && fMouseX <= 1290.0 && fMouseY >= 1540.0 && fMouseY <= 1690.0)
+		{
+			setCharacterShipLocation(pchar, "Shore67");
+			setWDMPointXZ("Shore67");
+			ssColony = "Aruba";
+		}
 		if (fMouseX >= 2.0 && fMouseX <= 77.0 && fMouseY >= 1051.0 && fMouseY <= 1194.0)
 		{
 			setCharacterShipLocation(pchar, "Shore9");
@@ -485,17 +481,23 @@ void FillTable()
 			setWDMPointXZ("DeckWithReefs");
 			ssColony = "Reefs";
 		}
-		if (fMouseX >= 1811.0 && fMouseX <= 1883.0 && fMouseY >= 714.0 && fMouseY <= 780.0)
-		{
-			setCharacterShipLocation(pchar, "KhaelRoa_port");
-			setWDMPointXZ("KhaelRoa_port");
-			ssColony = "KhaelRoa";
-		}
 		if (fMouseX >= 47.0 && fMouseX <= 207.0 && fMouseY >= 19.0 && fMouseY <= 197.0)
 		{
 			setCharacterShipLocation(pchar, "LostShipsCity_town");
 			setWDMPointXZ("LostShipsCity_town");
 			ssColony = "LostShipsCity";
+		}
+		if (fMouseX >= 1568.0 && fMouseX <= 1642.0 && fMouseY >= 1074.0 && fMouseY <= 1170.0)
+		{
+			setCharacterShipLocation(pchar, "Shore31");
+			setWDMPointXZ("Shore31");
+			ssColony = "MarieGalante";
+		}
+		if (fMouseX >= 1916.0 && fMouseX <= 1996.0 && fMouseY >= 1715.0 && fMouseY <= 1812.0)
+		{
+			setCharacterShipLocation(pchar, "Shore59");
+			setWDMPointXZ("Shore59");
+			ssColony = "Tobago";
 		}
 		/*if (fMouseX >= 640.0 && fMouseX <= 690.0 && fMouseY >= -55.0 && fMouseY <= 15.0)
 		{
@@ -567,7 +569,7 @@ void SelectRColony()
 					{
 						if(fMouseY <= stf(GameInterface.MAP.imagelist.(sColony).y) + 60.0)	// 50
 						{
-							if(sColony != "Panama" && sColony != "IslaMona")
+							if(sColony != "Panama")
 							{
 								XI_WindowDisable("MAIN_WINDOW", true);
 								XI_WindowDisable("INFO_WINDOW", false);
@@ -603,6 +605,12 @@ void SelectRColony()
 			setCharacterShipLocation(pchar, "Shore56");
 			setWDMPointXZ("Shore56");
 			DoQuestReloadToLocation("Shore56", "reload", "reload1", "");
+		}
+		if (fMouseX >= 1150.0 && fMouseX <= 1290.0 && fMouseY >= 1540.0 && fMouseY <= 1690.0)
+		{
+			setCharacterShipLocation(pchar, "Shore67");
+			setWDMPointXZ("Shore67");
+			DoQuestReloadToLocation("Shore67", "reload", "reload1", "");
 		}
 		if (fMouseX >= 2.0 && fMouseX <= 77.0 && fMouseY >= 1051.0 && fMouseY <= 1194.0)
 		{
@@ -649,12 +657,6 @@ void SelectRColony()
 			setWDMPointXZ("DeckWithReefs");
 			DoQuestReloadToLocation("DeckWithReefs", "reload", "reload1", "");
 		}
-		if (fMouseX >= 1811.0 && fMouseX <= 1883.0 && fMouseY >= 714.0 && fMouseY <= 780.0)
-		{
-			setCharacterShipLocation(pchar, "KhaelRoa_port");
-			setWDMPointXZ("KhaelRoa_port");
-			DoQuestReloadToLocation("KhaelRoa_port", "reload", "reload1", "");
-		}
 		if (fMouseX >= 47.0 && fMouseX <= 207.0 && fMouseY >= 19.0 && fMouseY <= 197.0)
 		{
 			setCharacterShipLocation(pchar, "LostShipsCity_town");
@@ -666,6 +668,18 @@ void SelectRColony()
 			setCharacterShipLocation(pchar, "Shore35");
 			setWDMPointXZ("Shore35"); //TODO: отображение иконки в мапбест
 			DoQuestReloadToLocation("Shore35", "reload", "sea", "");
+		}
+		if (fMouseX >= 1568.0 && fMouseX <= 1642.0 && fMouseY >= 1074.0 && fMouseY <= 1170.0)
+		{
+			setCharacterShipLocation(pchar, "Shore31");
+			setWDMPointXZ("Shore31");
+			DoQuestReloadToLocation("Shore31", "reload", "reload1", "");
+		}
+		if (fMouseX >= 1916.0 && fMouseX <= 1996.0 && fMouseY >= 1715.0 && fMouseY <= 1812.0)
+		{
+			setCharacterShipLocation(pchar, "Shore59");
+			setWDMPointXZ("Shore59");
+			DoQuestReloadToLocation("Shore59", "reload", "reload1", "");
 		}
 		/*if (fMouseX >= 680.0 && fMouseX <= 718.0 && fMouseY >= -48.0 && fMouseY <= 14.0)
 		{640.1107788/1136.06
@@ -869,11 +883,28 @@ void ShowColonyInfo(int iColony)
 
 	ref refStore, refStore2;
 	aref arefStore2, refGoods;
+	// KZ > без флага "нашли" промах оставлял refStore на последнем слоте массива
+	bool bColonyStore = false;
 	for(i = 0; i < STORE_QUANTITY; i++)
 	{
 		makeref(refStore, Stores[i]);
 		if (refStore.colony == sColony)
+		{
+			bColonyStore = true;
 			break;
+		}
+	}
+	if (!bColonyStore)
+	{
+		// > своего магазина нет, а запись в книге есть: дату актуальности показываем, товары - нечем
+		if (bFound)
+		{
+			sText = "Актуальность данных о товарах";
+			AddLineToFormatedText("COLONY_INFO_TEXT", sText);
+			sText =  NullCharacter.PriceList.(sColony).AltDate;
+			AddLineToFormatedText("COLONY_INFO_TEXT2", sText);
+		}
+		bFound = false; // > панель товаров не рисуем
 	}
 
 	for(iType=0; iType<GOODS_QUANTITY; iType++)
@@ -944,7 +975,7 @@ void ShowColonyInfo(int iColony)
 		}
 		if(sti(refStore.Goods.(sGood).TradeType) == 6 && i4 > 0)
 			SetFormatedText("AGGRESSIVE_CAPTION", GetLangStr("AGGRESSIVE"));
-		sText = "Aктуальность данных о товарах";
+		sText = "Актуальность данных о товарах";
 		AddLineToFormatedText("COLONY_INFO_TEXT", sText);
 		sText =  NullCharacter.PriceList.(sColony).AltDate;
 		AddLineToFormatedText("COLONY_INFO_TEXT2", sText);
@@ -974,11 +1005,18 @@ void ShowColonyInfo(int iColony)
 	}
 
 	//Find our store
+	// KZ > перебор шёл без флага "нашли"
+	bool bOurStore = false;
+	bool bTargetStore = true; // > в режиме 0 цель это прайс-лист, его наличие уже проверено выше
+
 	for(i = 0; i < STORE_QUANTITY; i++)
 	{
 		makeref(refStore, Stores[i]);
 		if (refStore.colony == sTown)
+		{
+			bOurStore = true;
 			break;
+		}
 	}
 	//Find target store
 	if(TRADEASSISTANT_MODE == 0)
@@ -987,12 +1025,22 @@ void ShowColonyInfo(int iColony)
 	}
 	else
 	{
+		bTargetStore = false;
 		for(i = 0; i < STORE_QUANTITY; i++)
 		{
 			makeref(refStore2, Stores[i]);
 			if (refStore2.colony == sColony)
-					break;
+			{
+				bTargetStore = true;
+				break;
+			}
 		}
+	}
+
+	if(!bOurStore || !bTargetStore)
+	{
+		SetFormatedText("TRADEASSISTANT_SPECIAL", GetLangStr("No_price"));
+		return;
 	}
 
 	float a_fMax[TRADEASSISTANT_MAXGOODS];

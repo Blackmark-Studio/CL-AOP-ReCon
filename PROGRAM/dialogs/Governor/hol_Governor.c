@@ -596,13 +596,13 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 				link.l1.go = "exit";
 				AddQuestRecord("Hol_Line_2_TakeFoodCuracao", "3");
 				if (CheckAttribute(pchar, "questTemp.EbonyQtyElseNeed")) AddQuestUserData("Hol_Line_2_TakeFoodCuracao", "EbonyQtyElseNeed", pchar.questTemp.EbonyQtyElseNeed);
-				else AddQuestUserData("Hol_Line_2_TakeFoodCuracao", "EbonyQtyElseNeed", "выполнено");
+				else AddQuestUserData("Hol_Line_2_TakeFoodCuracao", "EbonyQtyElseNeed", StringFromKey("hol_Governor_366"));
 				if (CheckAttribute(pchar, "questTemp.CoffeeQtyElseNeed")) AddQuestUserData("Hol_Line_2_TakeFoodCuracao", "CoffeeQtyElseNeed", pchar.questTemp.CoffeeQtyElseNeed);
-				else AddQuestUserData("Hol_Line_2_TakeFoodCuracao", "CoffeeQtyElseNeed", "выполнено");
+				else AddQuestUserData("Hol_Line_2_TakeFoodCuracao", "CoffeeQtyElseNeed", StringFromKey("hol_Governor_366"));
 				if (CheckAttribute(pchar, "questTemp.MahoganyQtyElseNeed")) AddQuestUserData("Hol_Line_2_TakeFoodCuracao", "MahoganyQtyElseNeed", pchar.questTemp.MahoganyQtyElseNeed);
-				else AddQuestUserData("Hol_Line_2_TakeFoodCuracao", "MahoganyQtyElseNeed", "выполнено");
+				else AddQuestUserData("Hol_Line_2_TakeFoodCuracao", "MahoganyQtyElseNeed", StringFromKey("hol_Governor_366"));
 				if (CheckAttribute(pchar, "questTemp.SandalQtyElseNeed")) AddQuestUserData("Hol_Line_2_TakeFoodCuracao", "SandalQtyElseNeed", pchar.questTemp.SandalQtyElseNeed);
-				else AddQuestUserData("Hol_Line_2_TakeFoodCuracao", "SandalQtyElseNeed", "выполнено");
+				else AddQuestUserData("Hol_Line_2_TakeFoodCuracao", "SandalQtyElseNeed", StringFromKey("hol_Governor_366"));
 			}
 		break;
 		case "Step_2_8":

@@ -1,0 +1,70 @@
+Bucaneer_man_1 {
+Hicks... Oh, Kapitän! Komm ans Feuer! Hol mich der Donner, heute trinken wir auf deine Gesundheit und auf den Untergang ganz Spaniens!
+}
+Bucaneer_man_2 {
+Gern, Männer. Wie ich sehe, fließt der Rum bei euch in Strömen.
+}
+Bucaneer_man_3 {
+Verfluchte Hitze. Das Fleisch verdirbt schneller, als wir es auf den Rosten räuchern können. Wenn es in den nächsten Tagen nicht ordentlich regnet, müssen wir tiefer in den Dschungel, um frisches Wild zu finden.
+}
+Bucaneer_man_4 {
+Das Pulver ist feucht, die Muskete versagt bei jedem zweiten Schuss. Ich werde den ganzen Abend das Schloss reinigen und die Vorräte trocknen müssen, sonst tauge ich bei der nächsten Begegnung mit einer spanischen Patrouille zu nichts.
+}
+Bucaneer_man_5 {
+Todlangweilig hier, Kapitän. Wochenlang Wildschweine zu verfolgen ist nichts für schwache Nerven. Hast du zufällig ein paar Pesos übrig? Ich wollte mit den Jungs würfeln, aber meine Taschen sind leer.
+}
+Bucaneer_man_6 {
+Dieser Dschungel bringt mich noch ins Grab. Gestern hat mich irgendein Vieh gebissen, und jetzt ist mein Arm so angeschwollen, dass es weh tut, den Säbel zu halten. Die Einheimischen sagen, es gehe von selbst vorbei. Hoffentlich lügen sie nicht.
+}
+Bucaneer_man_7 {
+Ich habe gehört, die Aufkäufer auf Tortuga hätten endgültig jedes Gewissen verloren - sie nehmen unsere Häute für einen Hungerlohn. Vielleicht sollte ich die Jagd aufgeben und wieder zur See fahren. Dort wird die Beute wenigstens ehrlicher geteilt.
+}
+Bucaneer_man_8 {
+So ist nun einmal das Los der Bukanier. Lebt wohl.
+}
+Bucaneer_man_9 {
+Viel Glück bei euren Geschäften, ich halte euch nicht länger auf.
+}
+Bucaneer_man_10 {
+Bei allen Heiligen, Kapitän, heute schmeckt sogar unser trüber Fusel wie der beste Burgunder! Wir haben hier nur im Dreck und Rauch gesessen, Moskitos gefüttert und Wildschweine erschlagen, während ihr da draußen große Taten vollbracht habt. Aber Gott ist mein Zeuge: Wenn ich sehe, wie unsere Frauen wieder an den Feuern lachen... zum Teufel, heute feiert ganz Tortuga! Trink mit uns, Kapitän!
+}
+Bucaneer_man_11 {
+Hol mich der Donner, wenn ich heute nicht allein ein Fässchen leere! Wir standen nicht mit euch im Musketenfeuer, Kapitän, das ist die reine Wahrheit. Aber diese armen Frauen aus den Klauen des kastilischen Schakals Vargas zu reißen - das ist wahrhaft eine edle Tat, eines Königs würdig! Auf eure Gesundheit! Hicks... Teufel, bringt mir noch Rum!
+}
+Bucaneer_man_12 {
+Wissen Sie, Kapitän... hicks... man sagt, echte Wunder gäbe es nicht. Aber ich sehe dieses Feuer, höre die Mädchen singen und weiß: frech gelogen! Wir Bukanier sind einfache Leute, bei großen Belagerungen machen wir nicht mit. Aber heute haben die Kastilier Blut geschluckt und Tortuga lebt wieder. Soll le Basque in Europa allen Ruhm einstreichen - hier trinken wir nur auf Sie! Her mit dem Becher!
+}
+Bucaneer_man_13 {
+Trinkt und feiert, Männer! Dieses Fest gehört euch von Rechts wegen.
+}
+Bucaneer_man_14 {
+Wahrlich ein herrlicher Abend. Ich störe euch nicht länger - leert die Fässer bis auf den Grund!
+}
+
+Bucaneer_man_15 {
+Verfluchte Hitze. Das Fleisch verdirbt schneller, als wir es auf den Rosten räuchern können. Wenn es in den nächsten Tagen nicht ordentlich regnet, müssen wir tiefer in den Dschungel, um frisches Wild zu finden.
+}
+
+Bucaneer_man_16 {
+Das Pulver ist feucht, die Muskete versagt bei jedem zweiten Schuss. Ich werde den ganzen Abend das Schloss reinigen und die Vorräte trocknen müssen, sonst tauge ich bei der nächsten Begegnung mit einer spanischen Patrouille zu nichts.
+}
+
+Bucaneer_man_17 {
+Todlangweilig hier, Kapitän. Wochenlang Wildschweine zu verfolgen ist nichts für schwache Nerven. Hast du zufällig ein paar Pesos übrig? Ich wollte mit den Jungs würfeln, aber meine Taschen sind leer.
+}
+
+Bucaneer_man_18 {
+Dieser Dschungel bringt mich noch ins Grab. Gestern hat mich irgendein Vieh gebissen, und jetzt ist mein Arm so angeschwollen, dass es weh tut, den Säbel zu halten. Die Einheimischen sagen, es gehe von selbst vorbei. Hoffentlich lügen sie nicht.
+}
+
+Bucaneer_man_19 {
+Ich habe gehört, die Aufkäufer auf Tortuga hätten endgültig jedes Gewissen verloren - sie nehmen unsere Häute für einen Hungerlohn. Vielleicht sollte ich die Jagd aufgeben und wieder zur See fahren. Dort wird die Beute wenigstens ehrlicher geteilt.
+}
+
+Bucaneer_man_20 {
+So ist nun einmal das Los der Bukanier. Lebt wohl.
+}
+
+Bucaneer_man_21 {
+Viel Glück bei euren Geschäften, ich halte euch nicht länger auf.
+}

@@ -316,3 +316,18 @@ Na, du hast ja gefragt! Das hier ist eine Hafenstadt, kein Dorf. Fremde tauchen 
 Tortuga_Tavern_91 {
 Hm... Nun gut, ich verstehe. Danke, @<npchar>.
 }
+Tortuga_Tavern_92 {Man sagt, du kennst einen Mann, der Kapitäne sucht. Kannst du mir sagen, wie ich ihn finde?}
+Tortuga_Tavern_93 {Hier sucht jeder Dritte nach Kapitänen...}
+Tortuga_Tavern_94_m {Soweit ich gehört habe, bietet dieser Mann ungewöhnliche Arbeit an.}
+Tortuga_Tavern_94_f {Soweit ich gehört habe, bietet dieser Mann ungewöhnliche Arbeit an.}
+Tortuga_Tavern_95 {Oh, Kapitän, jede Arbeit ist auf ihre Weise ungewöhnlich. Es kommt darauf an, was Sie schon erlebt haben.}
+Tortuga_Tavern_96 {Du weißt doch genau, wen ich meine.}
+Tortuga_Tavern_97 {Ich weiß nur eines... Sie verschwenden meine Zeit mit leerem Gerede!}
+Tortuga_Tavern_98 {Na bitte. Jetzt hat er selbst beschlossen, dass Sie ein Gespräch wert sind.}
+Tortuga_Tavern_99 {Lässt er die Leute immer erst nach ihm fragen und kommt dann selbst herüber?}
+Tortuga_Tavern_100 {Marceau sieht sich einen Menschen gern erst an. Man sagt, er habe einen guten Blick für Leute. Wenn er zu Ihnen heruntergekommen ist, hat er offenbar etwas Brauchbares in Ihnen erkannt.}
+Tortuga_Tavern_101 {Dann werde ich mit ihm reden.}
+Tortuga_Tavern_102 {Ich höre, Kapitän.}
+Tortuga_Tavern_103 {Ich suche Marceau. Ist er noch oben?}
+Tortuga_Tavern_104 {Leute wie er sitzen selten lange an einem Ort. Wenn Sie Neuigkeiten für ihn haben, suchen Sie ihn im Hafen auf der „Schwarzen Möwe“.}
+Tortuga_Tavern_105 {Danke.}

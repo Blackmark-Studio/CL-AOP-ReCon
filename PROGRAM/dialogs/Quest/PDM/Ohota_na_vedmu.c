@@ -156,7 +156,7 @@ void ProcessDialogEvent()
 			dialog.text = StringFromKey("Ohota_na_vedmu_18");
 			link.l1 = "...";
 			link.l1.go = "DialogWithHuber_4";
-			sld = &characters[GetCharacterIndex("PDM_secretary")];
+			sld = CharacterFromID("PDM_secretary");
 			sld.location = "none";
 		break;
 
@@ -213,6 +213,9 @@ void ProcessDialogEvent()
 			AddDialogExitQuestFunction("PDM_ONV_FreeMove");
 			
 			CloseQuestHeader("PDM_Ohota_na_vedmu");
+			RemoveMapQuestMark("Beliz_town", "PDM_Ohota_na_vedmu"); // > метка Белиза висела на отказе
+			if (GetCharacterIndex("PDM_secretary") != -1)
+				CharacterFromID("PDM_secretary").lifeday = 0;
 		break;
 
 		case "DialogWithHuber_Agree":
@@ -239,10 +242,6 @@ void ProcessDialogEvent()
 			dialog.text = StringFromKey("Ohota_na_vedmu_32", pchar);
 			link.l1 = StringFromKey("Ohota_na_vedmu_33", pchar);
 			link.l1.go = "DialogWithSilino_2";
-			PlayVoice("Kopcapkz\Voices\PDM\Gavrila Dubinin.wav");
-			DeleteAttribute(pchar, "questTemp.PDM_ONV_PortoBello");
-			DeleteAttribute(pchar, "questTemp.PDM_ONV_SanJuan");
-			DeleteAttribute(pchar, "questTemp.PDM_ONV_Maracaibo");
 			RemoveLandQuestmark_Main(npchar, "PDM_Ohota_na_vedmu");
 		break;
 
@@ -361,7 +360,9 @@ void ProcessDialogEvent()
 			SetCharacterPerk(pchar, "WitchCharm");
 			ChangeCharacterReputation(pchar, 3);
 			AddCharacterExpToSkill(pchar, "Fortune", 300);
-			RemoveMapQuestMark("Beliz_town", "PDM_Ohota_na_vedmu");
+			RemoveMapQuestMark("Santiago_town", "PDM_Ohota_na_vedmu");
+			if (GetCharacterIndex("PDM_secretary") != -1)
+				CharacterFromID("PDM_secretary").lifeday = 0;
 			pchar.questTemp.PDM_ONW_Completed = "Witch";
 			Achievment_Set(ACH_Ohota_na_vedmu);
 		break;

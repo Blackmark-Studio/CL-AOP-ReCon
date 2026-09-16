@@ -1,29 +1,22 @@
-
 void ProcessDialogEvent()
 {
 	ref NPChar, sld;
 	aref Link, NextDiag;
 
-	DeleteAttribute(&Dialog,"Links");
+	DeleteAttribute(&Dialog, "Links");
 
-	makeref(NPChar,CharacterRef);
+	makeref(NPChar, CharacterRef);
 	makearef(Link, Dialog.Links);
 	makearef(NextDiag, NPChar.Dialog);
 
-	int Rank = sti(pchar.rank) - 4 + MOD_SKILL_ENEMY_RATE*3;
-	if (Rank < 1) Rank = 1;
-	int Sila = 70 + MOD_SKILL_ENEMY_RATE*3 * 3;
-	int DopHP = 60 + MOD_SKILL_ENEMY_RATE*3 * 12;
-	int Bonus = sti(pchar.rank);
+	float Bonus = sti(pchar.rank);
 	if (Bonus <= 6) Bonus = 1;
 	if (Bonus >= 7 && Bonus <= 12) Bonus = 1.2;
 	if (Bonus >= 13) Bonus = 1.5;
 	int Plata1 = 20000 + 2000 * sti(pchar.rank) * Bonus;
 	int Plata2 = 10000 + 1500 * sti(pchar.rank) * Bonus;
-	pchar.PDM_NK_Plata1.Money = 20000 + 2000 * sti(pchar.rank) * Bonus;
-	pchar.PDM_NK_Plata2.Money = 10000 + 1500 * sti(pchar.rank) * Bonus;
 
-	switch(Dialog.CurrentNode)
+	switch (Dialog.CurrentNode)
 	{
 		case "Exit":
 			NextDiag.CurrentNode = NextDiag.TempNode;
@@ -36,7 +29,6 @@ void ProcessDialogEvent()
 			link.l1.go = "Octavio_1_1";
 			link.l2 = StringFromKey("Clan_Lambrini_3");
 			link.l2.go = "exit";
-			// PlayVoice("Kopcapkz\Voices\PDM\Octavio Lambrini.wav");
 		break;
 
 		case "Octavio_1_1":
@@ -76,20 +68,20 @@ void ProcessDialogEvent()
 				link.l1 = StringFromKey("Clan_Lambrini_11", pchar, GetFullName(pchar));
 				link.l1.go = "Octavio_1_2";
 			}
-			else if (sti(pchar.reputation) > 80) //человек чести
-			{
-				link.l2 = StringFromKey("Clan_Lambrini_12", GetFullName(pchar));
-				link.l2.go = "Octavio_1_2";
-			}
 			else if (sti(pchar.reputation) < 20) //кровавый убийца
 			{
 				link.l2 = StringFromKey("Clan_Lambrini_13", GetFullName(pchar));
 				link.l2.go = "Octavio_1_2";
 			}
+			else // > все остальные, иначе ГГ с другим FaceId (мод, например) и репутацией <80 не сможет взять квест
+			{
+				link.l2 = StringFromKey("Clan_Lambrini_12", GetFullName(pchar));
+				link.l2.go = "Octavio_1_2";
+			}
 			link.l9 = StringFromKey("Clan_Lambrini_14", pchar, pchar.name);
 			link.l9.go = "Octavio_proval";
 		break;
-		
+
 		case "Octavio_1_2":
 			if (pchar.FaceId == "1001") // Питер Блад
 			{
@@ -123,7 +115,7 @@ void ProcessDialogEvent()
 			{
 				dialog.text = StringFromKey("Clan_Lambrini_22");
 			}
-			else if (sti(pchar.reputation) > 80 || sti(pchar.reputation) < 20)
+			else// if (sti(pchar.reputation) > 80 || sti(pchar.reputation) < 20)
 			{
 				dialog.text = StringFromKey("Clan_Lambrini_23", GetFullName(pchar));
 			}
@@ -181,12 +173,12 @@ void ProcessDialogEvent()
 			link.l1.go = "exit";
 			NextDiag.TempNode = "Octavio_1_10_EsheRaz";
 			RemoveLandQuestmark_Main(npchar, "PDM_Clan_Lambrini");
-			
+
 			PDM_CL_OdliSpawn();
 
 			SetQuestHeader("PDM_Clan_Lambrini");
 			AddQuestRecord("PDM_Clan_Lambrini", "1");
-			AddQuestUserData("PDM_Clan_Lambrini", "sSex", GetSexPhrase("","а"));
+			AddQuestUserData("PDM_Clan_Lambrini", "sSex", GetSexPhrase("", "а"));
 		break;
 
 		case "Octavio_1_10_EsheRaz":
@@ -236,20 +228,24 @@ void ProcessDialogEvent()
 			dialog.text = StringFromKey("Clan_Lambrini_56", pchar);
 			// Проверяем, какой путь был выбран
 			if (CheckAttribute(pchar, "questTemp.PDM_CL_ChoiceOdli"))
-			{   // Выбрали сторону Одли (убедили) - нужна проверка харизмы
+			{
+				// Выбрали сторону Одли (убедили) - нужна проверка харизмы
 				if (GetCharacterSkill(pchar, "Sneak") >= 25 || GetCharacterSPECIAL(pchar, "Charisma") >= 5)
-				{   // Харизма успешна
+				{
+					// Харизма успешна
 					link.l1 = StringFromKey("Clan_Lambrini_57");
 					link.l1.go = "Octavio_2_2";
 				}
 				else
-				{   // Харизмы не хватило - Октавио не верит
+				{
+					// Харизмы не хватило - Октавио не верит
 					link.l1 = StringFromKey("Clan_Lambrini_58");
 					link.l1.go = "Octavio_2_2_fail";
 				}
 			}
 			else
-			{   // Убили Томаса (сторона Ламбрини) - проверка не нужна
+			{
+				// Убили Томаса (сторона Ламбрини) - проверка не нужна
 				link.l2 = StringFromKey("Clan_Lambrini_59");
 				link.l2.go = "Octavio_2_2";
 			}
@@ -259,7 +255,8 @@ void ProcessDialogEvent()
 			dialog.text = StringFromKey("Clan_Lambrini_60", pchar, Plata1);
 			link.l1 = StringFromKey("Clan_Lambrini_61");
 			if (CheckAttribute(pchar, "questTemp.PDM_CL_ChoiceOdli"))
-			{	// Выбрали сторону Одли
+			{
+				// Выбрали сторону Одли
 				AddMoneyToCharacter(pchar, sti(Plata1));
 				ChangeCharacterReputation(pchar, 5);
 				ChangeCharacterNationReputation(pchar, ENGLAND, 5);
@@ -269,7 +266,7 @@ void ProcessDialogEvent()
 
 				AddQuestRecord("PDM_Clan_Lambrini", "4");
 				RemoveLandQuestmark_Main(npchar, "PDM_Clan_Lambrini");
-				
+
 				PChar.quest.PDM_CL_Ubrat_Lodku.win_condition.l1 = "ExitFromLocation";
 				PChar.quest.PDM_CL_Ubrat_Lodku.win_condition.l1.location = PChar.location;
 				PChar.quest.PDM_CL_Ubrat_Lodku.function = "PDM_CL_Ubrat_Lodku";
@@ -278,7 +275,8 @@ void ProcessDialogEvent()
 				NextDiag.TempNode = "Octavio_2_3_EsheRaz";
 			}
 			else
-			{	// Выбрали сторону Ламбрини
+			{
+				// Выбрали сторону Ламбрини
 				npchar.lifeday = 0;
 				AddMoneyToCharacter(pchar, sti(Plata1));
 				ChangeCharacterReputation(pchar, -10);
@@ -290,7 +288,7 @@ void ProcessDialogEvent()
 				AddCharacterExpToSkill(pchar, "Cannons", 150);
 				AddCharacterExpToSkill(pchar, "Grappling", 150);
 				ChangeContrabandRelation(pchar, 25);
-				
+
 				CloseQuestHeader("PDM_Clan_Lambrini");
 				RemoveLandQuestmark_Main(npchar, "PDM_Clan_Lambrini");
 				RemoveMapQuestMark("PortSpein_town", "PDM_Clan_Lambrini");
@@ -462,13 +460,13 @@ void ProcessDialogEvent()
 		case "Antonio_1_11":
 			sld = CharacterFromID("PDM_Odli");
 			sld.AlwaysFriend = true;
-			sld.ShipEnemyDisable  = true;
+			sld.ShipEnemyDisable = true;
 			sld.Abordage.Enable = false;
 			LAi_SetImmortal(sld, true);
-			
+
 			sld = CharacterFromID("PDM_Octavio_Lambrini");
 			sld.Dialog.Filename = "Quest\PDM\Clan_Lambrini.c";
-			sld.dialog.currentnode   = "Octavio_2_1";
+			sld.dialog.currentnode = "Octavio_2_1";
 			AddLandQuestMark_Main(sld, "PDM_Clan_Lambrini");
 			DeleteQuestCondition("PDM_CL_Odli_Ubit");
 			pchar.questTemp.PDM_CL_ChoiceOdli = true;
@@ -500,7 +498,7 @@ void ProcessDialogEvent()
 			FreeSitLocator("PortSpein_tavern", "sit_base1");
 			FreeSitLocator("PortSpein_tavern", "sit_base2");
 			FreeSitLocator("PortSpein_tavern", "sit_front2");
-			
+
 			RemoveLandQuestmark_Main(npchar, "PDM_Clan_Lambrini");
 			sld = CharacterFromID("PDM_Octavio_Lambrini");
 			ChangeCharacterAddressGroup(sld, "PortSpein_tavern", "sit", "sit_front2");
@@ -558,7 +556,7 @@ void ProcessDialogEvent()
 			link.l2.go = "exit";
 			NextDiag.TempNode = "Antonio_5_again";
 		break;
-		
+
 		case "Antonio_5_again":
 			dialog.text = StringFromKey("Clan_Lambrini_123");
 			link.l1 = StringFromKey("Clan_Lambrini_124");

@@ -142,3 +142,9 @@ Sailor_41 {
 Sailor_42 {
 Vamos, date prisa, no pienso quedarme aquí mucho tiempo.
 }
+Sailor_43 {
+¡Saludos, señora! ¿Qué puede querer de un simple marinero?
+}
+Sailor_44 {
+Nada, solo pasaba por aquí.
+}

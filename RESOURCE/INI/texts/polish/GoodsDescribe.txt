@@ -122,7 +122,7 @@ Sandal_descr {Cenny gatunek drewna jest ciężki, żółtawy i drobnoziarnisty, 
 Leather {Skóra}
 Leather_descr
 {
-Wyprawione skóry bydła to uniwersalny towar, zawsze poszukiwany w Europie. To właśnie w ten sposób pierwsi bukaniarze zarabiali na życie, sprzedając skóry i mięso dzikiego bydła na Hispanioli.
+Wyprawione skóry bydła to uniwersalny towar, zawsze poszukiwany w Europie.
 Choć niewielu kupców załadowałoby swoje statki wyłącznie skórą, świetnie nadaje się ona do wypełnienia pustej ładowni, bo jest bardzo wytrzymała i znosi wszelkie warunki transportu.
 }
 Oil {Olej}
@@ -163,8 +163,6 @@ Silver_descr
 Lite srebra oznaczone przez Skarb Hiszpanii.
 Pożądana zdobycz, bo srebro ma sporą wartość i jest drugim wyborem hiszpańskiego skarbca do przechowywania i przewożenia bogactwa. Większość wydobywa się w miejscu zwanym „Srebrną Górą”, niedaleko Potosí.
 }
-Pinctada {Perłopławy}
-Pinctada_descr {Cenny łup poławiaczy pereł – karaibskie małże (Pinctada longisquamosa) zbierane na płytkich ławicach. Ich opalizujące muszle mogą skrywać skarby... albo puste nadzieje. Najzręczniejsi potrafią otworzyć je tak, by nie uszkodzić warstwy macicy perłowej...}
 Brick {Cegły}
 Brick_descr
 {
@@ -176,6 +174,25 @@ Medicament_descr
 {
 Zestaw leków i narzędzi przeznaczony do leczenia najczęstszych chorób oraz udzielania pierwszej pomocy rannym i poszkodowanym. Słoiki, proszki, bandaże, fiolki, lecznicze okłady – wszystko, co może uratować życie.
 Posiadanie leków na pokładzie pozwala ratować rannych, zmniejszać straty podczas abordażu i leczyć chorych w trakcie rejsu.
+}
+Pinctada {Perłopławy}
+Pinctada_descr {Cenny łup poławiaczy pereł – karaibskie małże (Pinctada longisquamosa) zbierane na płytkich ławicach. Ich opalizujące muszle mogą skrywać skarby... albo puste nadzieje. Najzręczniejsi potrafią otworzyć je tak, by nie uszkodzić warstwy macicy perłowej...}
+Salt {Sól}
+Salt_descr
+{
+Niezbędny produkt w epoce długich ekspedycji morskich. Wydobywana ze słonych jezior lub w kopalniach archipelagu, sól służy do konserwacji prowiantu, chroniąc go przed gniciem w wilgotnym, tropikalnym klimacie. Dla wielu kolonistów to „białe złoto” stanowi stabilne źródło dochodu, ponieważ żaden rozsądny kapitan nie zaryzykuje wypłynięcia na otwarte morze bez solidnych zapasów solonego mięsa.
+}
+Meat {Mięso}
+Meat_descr
+{
+Suszone i hojnie nasolone mięso, przygotowywane na drewnianych rusztach zgodnie z tradycją karaibskich myśliwych-bukanierów. Doskonały towar handlowy, który zawsze można z zyskiem sprzedać w każdej kolonii.
+~
+Uwaga: towar przeznaczony wyłącznie na sprzedaż. Do wyżywienia załogi podczas rejsu należy kupować prowiant okrętowy.
+}
+Hide {Skóry}
+Hide_descr
+{
+Niewyprawione skóry dzików i zdziczałych krów, obficie wędrujących po lasach Hispanioli i innych wysp. W przeciwieństwie do już wyprawionej skóry, ładunek ten jest surowcem, za który hojnie płaci się w europejskich manufakturach. Polowanie i handel surowymi skórami to trudny i niebezpieczny fach, od którego wielu legendarnych bukanierów rozpoczęło swoją drogę do bogactwa.
 }
 Cannon_3 {Falkonety}
 Cannon_3_descr

@@ -9,6 +9,9 @@ bool CheckItemsInBox(string loc, string chest, string itemList)
 	int i, j, n, itm, boxQty, sym = KZ|Symbol(itemList, ",");
 	int result = -1;
 	string sItemBox, sItemCheck, sBox;
+
+	int iCurLen = strlen(&itemList);
+	int iCurPos, iCurEnd;
 	
 	for (i = 1; i <= 4; i++)
 	{
@@ -39,9 +42,21 @@ bool CheckItemsInBox(string loc, string chest, string itemList)
 						
 						if (sItemBox != "")
 						{
+							iCurPos = 0;
+
 							for (j = 0; j <= sym; j++)
 							{
-								sItemCheck = GetSubStr(itemList, ",", j);
+								iCurEnd = findSubStr(&itemList, ",", iCurPos);
+
+								if (iCurEnd < 0)
+									iCurEnd = iCurLen;
+
+								sItemCheck = "";
+
+								if (iCurEnd > iCurPos)
+									sItemCheck = strcut(&itemList, iCurPos, iCurEnd - 1);
+
+								iCurPos = iCurEnd + 1;
 								
 								if (HasStr(sItemBox, sItemCheck))
 									result++;
@@ -214,46 +229,48 @@ int CheckItemMyBox(string _Box, string _itemID)
 int GetItemMyBox(string _Box, string _itemID, int _qty)
 {
 	int     i;	
-	int		Qty = 0; 
-	int 	rQty = 0;	
+	int		iQty = 0; 
+	int 	iResult = 0;	
     ref     loc;
 	aref    arBox;
     aref    curItem;
 	string  attr;
-	
-	int nShipType = GetCharacterShipType(pchar);
-	if (nShipType == SHIP_NOTUSED)	return;
+
+	if (!CheckShip(pchar))
+		return 0;
+
 	if (Pchar.SystemInfo.CabinType != "")
 	{
 		loc = &locations[FindLocation(Pchar.SystemInfo.CabinType)]; 			
 		makearef(arBox, loc.(_Box).items);
-		for(i=0; i<GetAttributesNum(arBox); i++)
+
+		for (i=0; i<GetAttributesNum(arBox); i++)
 		{
 			curItem = GetAttributeN(arBox, i);
 			attr = GetAttributeName(curItem);
 			if (attr == _itemID)
 			{
-				Qty = makeint(GetAttributeValue(curItem));
-				if(Qty > 0)
+				iQty = makeint(GetAttributeValue(curItem));
+				if (iQty > 0)
 				{
-					if(Qty > _qty) 
+					if(iQty > _qty) 
 					{
 						loc.(_Box).items.(attr) = makeint(sti(loc.(_Box).items.(attr)) - _qty);
-						rQty += Qty;
-						return rQty;
+						iResult += iQty;
+						return iResult;
 					}
 					else
 					{
 						DeleteAttribute(loc, _Box + ".items." + attr);
-						_qty -= Qty;
-						rQty += Qty;
+						_qty -= iQty;
+						iResult += iQty;
 					}		
 				}
 			}
 		}
-		
 	}
-	return rQty;
+
+	return iResult;
 }
 
 // заполнить сундук каюты во время абордажа //перенесено из QuestsUtilite.c проверено, работает
@@ -658,22 +675,23 @@ void FillAboardCabinBox(ref _location, ref _npchar)
 void FillCabinBoxMap(ref _location, int _probability)
 {
 	int 	i;
-	string  itemID, groupID;
-    ref     itm;
+	string  itemID;
+	ref     itm;
 
-	for (i=0; i<ITEMS_QUANTITY; i++)
+	for (i = ITEMS_MAPS; i < ITEMS_MAPS_TREASURE; i++)
 	{
-		makeref(itm,Items[i]);
-		if(CheckAttribute(itm, "ID") && CheckAttribute(itm, "groupID"))
+		makeref(itm, Items[i]);
+
+		if (CheckAttribute(itm, "ID") && CheckAttribute(itm, "groupID"))
 		{
 			itemID = itm.id;
-			groupID = itm.groupID;
-			if(groupID == MAPS_ITEM_TYPE && !CheckAttribute(itm, "mapSpecial") && (itemID != "Map_Best") && (itemID != "Map_LSC"))
+
+			if (itm.groupID == MAPS_ITEM_TYPE && !CheckAttribute(itm, "mapSpecial") && itemID != "Map_Best" && itemID != "Map_LSC")
 			{
-				if(rand(_probability) == 1)
+				if (rand(_probability) == 1)
 				{
 					_location.box1.items.(itemID) = 1;
-					return;
+					break;
 				}
 			}
 		}
@@ -964,7 +982,7 @@ bool FillSecretBox(ref location, string boxName)
 void FillShorechestBox(string loc, int n, int i)
 {
 	pchar.GenQuestBox.(loc) = true;
-	string boxx = "box"+n;
+	string sItem, boxx = "box" + n;
 
 	// evganat - энциклопедия
 	if(CheckRandomPage("shorechest", loc, -1))
@@ -994,8 +1012,16 @@ void FillShorechestBox(string loc, int n, int i)
 	    break;
 	    case 2: // bad
 			if (rand(1) == 1)   pchar.GenQuestBox.(loc).(boxx).money = drand(1000);
-	        if (rand(2) == 1)   pchar.GenQuestBox.(loc).(boxx).items.blade_05 = drand(4);
-	        if (rand(2) == 1)   pchar.GenQuestBox.(loc).(boxx).items.blade_07 = 1;
+	        if (rand(2) == 1)
+			{
+				sItem = GetGeneratedItem("blade5");
+				pchar.GenQuestBox.(loc).(boxx).items.(sItem) = drand(4);
+			}
+	        if (rand(2) == 1)
+			{
+				sItem = GetGeneratedItem("blade7");
+				pchar.GenQuestBox.(loc).(boxx).items.(sItem) = 1;
+			}
             if (rand(2) == 1)   pchar.GenQuestBox.(loc).(boxx).items.potion5 = 6+drand(5);
 	        if (rand(2) == 1)   pchar.GenQuestBox.(loc).(boxx).items.jewelry5 = 6+drand(5);
 	        if (rand(2) == 1)   pchar.GenQuestBox.(loc).(boxx).items.jewelry4 = 6+drand(5);

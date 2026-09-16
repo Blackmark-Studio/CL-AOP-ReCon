@@ -6,6 +6,7 @@
 #define BLADE_NORMAL			"blade10"
 #define BLADE_LONG				"blade16"
 #define GUN_COMMON				"pistol1"
+#define MUSKET_COMMON			"mushket_poor"
 #define CHEAP_SPYGLASS			"spyglass1"
 #define COMMON_SPYGLASS			"spyglass2"
 #define GOOD_SPYGLASS			"spyglass3"
@@ -28,8 +29,8 @@
 
 // indexes for items` array
 // evganat - энциклопедия, прибавил по два
-#define TOTAL_ITEMS				1182 		// Warship 08.05.09 - Новая система предметов
-#define ITEMS_QUANTITY			583  		// не забываем менять номер
+#define TOTAL_ITEMS				1191 		// Warship 08.05.09 - Новая система предметов
+#define ITEMS_QUANTITY			596  		// не забываем менять номер
 #define MAX_BUTTONS				64
 #define RANDITEMS_QUANTITY		45
 #define BUTTON_ACTIVATION_TIME	1000
@@ -40,6 +41,10 @@
 #define MAX_SECRET_CHESTS		4 			// HardCoffee количество тайников на одной локации
 #define ITEM_PROBABILITY		0.5
 #define OBJECTS_IN_BOX			9
+#define CHEST_CAPACITY_DEFAULT	10000		// вместимость сундуков по умолчанию
+#define CHEST_CAPACITY_MIN		1000		// вместимость сундуков *_DEFAULT /10
+#define CHEST_CAPACITY_BIG		100000		// вместимость сундуков *_DEFAULT х10
+#define CHEST_CAPACITY_MAX		999999		// вместимость сундуков *_DEFAULT х100
 #define MAPS_IN_ATLAS			26 			// ugeen 21.06.09  -не забываем увеличивать при появлении новых карт
 
 //группы типов холодного оружия
@@ -56,6 +61,13 @@
 #define ORDINARY_GUN		"common" 			// группа серо-белых пушек
 #define OFFICER_GUN			"officer" 			// группа бело-синих пушек
 #define COOL_GUN			"cool" 				// группа сине-красных пушек
+
+// KZ > отслеживание изменений в initItems.c
+#define ITEMS_SCHEMA_VERSION	1
+int iItemsSchemaVersion = 0;
+
+// > отпечаток файла initItems.c на момент, когда были собраны массивы предметов
+string sItemsStamp = "";
 
 object Items[TOTAL_ITEMS];
 object RandItems[RANDITEMS_QUANTITY];

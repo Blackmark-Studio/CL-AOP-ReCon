@@ -1,93 +1,93 @@
 FortFrance_Brothel_1_m {
-有啥问题吗，小伙子？
+有什么问题吗， 小伙子？ 
 }
 FortFrance_Brothel_1_f {
-还有什么问题吗，小姑娘？
+还有什么问题吗， 小姑娘？ 
 }
 FortFrance_Brothel_2_m {
-你想干嘛，帅哥？有啥问题尽管问……
+你想干嘛， 帅哥？ 有什么问题尽管问…… 
 }
 FortFrance_Brothel_2_f {
-你想干嘛，美女？有啥问题尽管问……
+你想干嘛， 美女？ 有什么问题尽管问…… 
 }
 FortFrance_Brothel_3 {
 @<RandPhraseSimple>
 }
 FortFrance_Brothel_4 {
-又有问题？
+又来问问题了？ 
 }
 FortFrance_Brothel_5 {
-呵呵，今天都第三次了，还问这些老问题……
+呵呵， 今天都第三次了， 还问这些老问题…… 
 }
 FortFrance_Brothel_6_m {
-哼，咋样，挑个漂亮的自己带走呗？不然俺可要对你有点看法了……
+嗯…… 也许你该给自己挑个美女？ 不然的话， 我可就要对你形成某种“特别的看法”了
 }
 FortFrance_Brothel_6_f {
-嗯，也许你会挑个漂亮姑娘吧？我们可不留男孩，呵呵……
+嗯， 也许你会挑个漂亮姑娘？ 我们这可没有男孩， 呵呵…… 
 }
 FortFrance_Brothel_7_m {
-我改主意了……
+我改变主意了…… 
 }
 FortFrance_Brothel_7_f {
-我改变主意了……
+我改变主意了…… 
 }
 FortFrance_Brothel_8 {
-嗯，没事……
+嗯， 没事…… 
 }
 FortFrance_Brothel_9 {
 @<RandPhraseSimple>
 }
 FortFrance_Brothel_10 {
-我不行……没问题……
+我不行…… 没问题…… 
 }
 FortFrance_Brothel_11 {
-是啊，真的是第三次了……抱歉。
+好吧， 确实是第三次了…… 抱歉。 
 }
 FortFrance_Brothel_12 {
-现在不行……改天吧……
+现在不行…… 也许下次吧…… 
 }
 FortFrance_Brothel_13 {
-听着，前阵子Jackman和一帮海盗在这儿待过……
+听着， 前阵子杰克曼和一帮海盗在这儿待过…… 
 }
 FortFrance_Brothel_14_m {
-小伙子，人家是来陪姑娘的，不是来找男人的！说话注意点……
+年轻人， 他们是在和我们这些姑娘一起消遣， 而不是彼此之间！ 说话注意点…… 
 }
 FortFrance_Brothel_14_f {
-小姑娘，这里的人喜欢跟女人作伴，可不是彼此！说话注意点……
+小姑娘， 他们是喜欢跟女人作伴， 可不是彼此！ 说话注意点…… 
 }
 FortFrance_Brothel_15 {
-好吧，他们当时是一大帮人在一起放松……
+好吧， 他们当时是一大帮人在一起放松…… 
 }
 FortFrance_Brothel_16 {
-那场面确实挺大的，人也特别多。俺估计很久都忘不了他们那次聚会……
+那场面确实挺大的， 人也特别多。 我估计很久都忘不了他们那次聚会…… 
 }
 FortFrance_Brothel_17 {
-能问下为什么吗？
+能问下为什么吗？ 
 }
 FortFrance_Brothel_18 {
-因为那天晚上我整个店都在给他们干活，简直噩梦一样！
+因为那天晚上我整个店都在给他们干活， 简直噩梦一样！ 
 }
 FortFrance_Brothel_19 {
-明白了……你听说过这事吗：有人想卖一本书，好像是本圣经……
+明白了…… 你听说过这事吗： 有人想卖一本书， 好像是本圣经…… 
 }
 FortFrance_Brothel_20 {
-没听说过。
+没听说过。 
 }
 FortFrance_Brothel_21 {
-或者你那些姑娘能给俺点提示？
+或者你那些姑娘能给我点提示？ 
 }
 FortFrance_Brothel_22_m {
-也许他们会告诉你。不过这事儿跟俺没关系，你自己去问吧。
+也许他们会告诉你。 不过这事儿跟我没关系， 你自己去问吧。 
 }
 FortFrance_Brothel_22_f {
-也许他们会告诉你。不过这事儿跟俺没关系，你自己去问吧。
+也许他们会告诉你。 不过这事儿跟我没关系， 你自己去问吧。 
 }
 FortFrance_Brothel_23 {
-那是谁？那天晚上和他们在一起的是谁？
+那是谁？ 那天晚上和他们在一起的是谁？ 
 }
 FortFrance_Brothel_24 {
-全都在场！一个不落！你随便问谁，或许真有人记得……
+全都在场！ 一个不落！ 你随便问谁， 或许真有人记得…… 
 }
 FortFrance_Brothel_25 {
-谢谢你，我这就去问……
+谢谢你， 我这就去问…… 
 }

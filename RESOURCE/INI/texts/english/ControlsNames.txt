@@ -31,9 +31,7 @@ Sea_CameraSwitch {Toggle camera 'ship view'/'deck view'}
 Sea_CameraSwitchShort {Toggle camera}
 Sea_CameraShip {ship view}
 Sea_CameraDeck {deck view}
-Telescope {Toggle Spyglass}
-TelescopeIn {Spyglass zoom in}
-TelescopeOut {Exit spyglass view}
+TelescopeMode {Toggle Spyglass}
 TelescopeZoom {Zoom in/out}
 Interface {Character menu}
 CharacterShipMenu {Character Ship Menu}
@@ -58,6 +56,13 @@ Ship_Select {Ship select}
 Order_Select {Order select}
 FireZoneKey {Show firing range}
 FireZoneKeyHide {Hide firing range}
+QuickSave {Quick Save}
+QuickLoad {Quick Load}
+FireCamera_Set {Aiming view}
+FireMode_Direct {Firing order - Bow to stern}
+FireMode_Random {Firing order - Free}
+FireMode_Reverse {Firing order - Stern to bow}
+hk_FireMode {Change firing order}
 
 ;<==========================[ Ground control ]===========================>
 
@@ -80,6 +85,7 @@ OfficersFollow {Order for officers : Follow}
 Say {Purchase of goods}
 AlchemyKey {Alchemy}
 MapView {Map Atlas}
+LI_CabinExit {Exit to sea (on hero ship)}
 
 AltModificator {Press button for Fast Travel menu}
 AltModificatorOff {Release button for Fast Travel menu}
@@ -158,15 +164,21 @@ TimeScaleSlowerBA {Time slow down}
 
 Help {Game help}
 
-BICommandsActivate {Command menu}
-LICommandsActivate {Command menu}
-BICommandsActivateAdd {Command menu (alternative)}
+BICommands {Action menu}
+BICommandsActivate {Open action menu}
+LICommandsActivate {Open action menu}
+BICommandsActivateAdd {Open action menu (alt.)}
 BICommandsConfirm {Confirm a command}
 BICommandsCancel {Cancel a command}
-BICommandsConfirmAdd {Confirm a command (alternative)}
-BICommandsCancelAdd {Cancel a command (alternative)}
+BICommandsConfirmAdd {Confirm a command (alt.)}
+BICommandsCancelAdd {Cancel a command (alt.)}
 BICommandsLeft {Action menu - navigate left}
+BICommandsLeftW {Action menu - navigate left (alt.)}
 BICommandsRight {Action menu - navigate right}
+BICommandsRightW {Action menu - navigate right (alt.)}
+BICommandsUp {Action menu - navigate up}
+BICommandsDown {Action menu - navigate down}
+
 
 HelpChooser_Cancel {Exit help}
 HelpChooser_Action {Show help for the current element}
@@ -185,6 +197,8 @@ DlgScrollDown {Scroll dialog up}
 
 hk_Cure {Use healing mixture}
 hk_Rush {Use 'Fury' ability}
+
+KZ_NextMusicTrack {Next music track}
 
 ;hk_ImmediateReload {Preliminary Reloading}
 ;hk_LightRepair {Patching Holes}

@@ -186,7 +186,7 @@ int CreateCartahenaCharacters(int n)
 	makeref(ch,Characters[n]);			//Смотритель маяка
 	ch.id		= "Cartahena_Lightman";
 	ch.model	= "keeper_1";
-	ch.model.animation = "man_B";
+	ch.model.animation = "man";
 	ch.sex = "man";
 	ch.name 	= FindPersonalName("Cartahena_Lightman_name");
     ch.lastname = FindPersonalName("Cartahena_Lightman_lastname");

@@ -76,6 +76,7 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 						StringFromKey("PortRoyal_PortMan_28"),
 						StringFromKey("PortRoyal_PortMan_29", pchar),
 						StringFromKey("PortRoyal_PortMan_30", npchar.name), npchar, Dialog.CurrentNode);
+			link.l1.go = "exit";
 			RemoveLandQuestmark_Main(npchar, "Slavetrader");
 		break;
 	}

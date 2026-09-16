@@ -365,7 +365,7 @@ LeFransua_Tavern_104 {
 ¿Puedes decirme algo sobre el paradero de esa... Rata?
 }
 LeFransua_Tavern_105 {
-Lamentablemente, no mucho. Ni siquiera puedo decir en qué barco navega; Rat suele cambiar de embarcación con frecuencia para borrar su rastro. Lo único que puedo hacer es nombrar los puertos de donde zarparon los tres últimos barcos desaparecidos, y con los que creemos que Rat está relacionado. Tal vez valga la pena investigar las circunstancias que llevaron a esos desafortunados sucesos en esos lugares.\nLas ciudades son: Willemstad en Curaçao, Cartagena en el continente, y Port of Spain en la isla de Trinidad y Tobago.
+Lamentablemente, no mucho. Ni siquiera puedo decir en qué barco navega; Rat suele cambiar de embarcación con frecuencia para borrar su rastro. Lo único que puedo hacer es nombrar los puertos de donde zarparon los tres últimos barcos desaparecidos, y con los que creemos que Rat está relacionado. Tal vez valga la pena investigar las circunstancias que llevaron a esos desafortunados sucesos en esos lugares.\nLas ciudades son: Willemstad en Curaçao, Cartagena en el continente, y Port of Spain en la isla de Trinidad.
 }
 LeFransua_Tavern_106 {
 ¡Eso sí que es algo! Creo que ha llegado el momento de comenzar mi viaje.

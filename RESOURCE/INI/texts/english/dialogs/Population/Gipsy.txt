@@ -262,3 +262,12 @@ An ill omen will cross your path—beware the evil eye, and keep your loyal crew
 Gipsy_68 {
 Good fortune is waiting for you just behind your back. Seek what comes to you easily, and don’t chase after the impossible.
 }
+Gipsy_69 {
+@<TimeGreeting>, @<pchar>. Very glad to see you.
+}
+Gipsy_70 {
+@<TimeGreeting>, @<pchar>. Very glad to see you.
+}
+Gipsy_71 {
+@<TimeGreeting>, @<npchar>. I have to go.
+}

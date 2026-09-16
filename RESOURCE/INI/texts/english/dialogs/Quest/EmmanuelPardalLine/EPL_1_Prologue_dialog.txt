@@ -1,0 +1,127 @@
+EPL_1_Prologue_dialog_1 {Please report the bug to technical support.}
+EPL_1_Prologue_dialog_2 {All right.}
+EPL_1_Prologue_dialog_ellipsis {...}
+EPL_1_Prologue_dialog_3 {Becky, this room will soon look like a monk's cell.}
+EPL_1_Prologue_dialog_4 {Don't start. I already know how this conversation will end again.}
+EPL_1_Prologue_dialog_5 {I was at the port. There's a ship from Havana there. A warship... The new commandant has arrived, appointed to take our father's place. I managed to speak with him and explain, quite frankly, the difficult situation we've found ourselves in.}
+EPL_1_Prologue_dialog_6 {I don't think that was very tactful of you. You should have invited him to dinner first. After all, this house will soon be his. We could have shown him the rooms and settled the matter of the furniture and a few other things.}
+EPL_1_Prologue_dialog_7 {We still have time! The commandant was kind enough to grant us a full four months' grace. Four damned months to find you a suitable match, and then I can stop worrying about your future, little sister.}
+EPL_1_Prologue_dialog_8 {There you are. This time your preamble was shorter than ever before you got to the point.}
+EPL_1_Prologue_dialog_9 {There are plenty of candidates aboard that ship. Well-born young officers, and all dressed up for parade! A couple of those who came ashore in the first boat were rather handsome. Come on, let's make our presence known before they hide in their barracks from the midday heat.}
+EPL_1_Prologue_dialog_10 {You should pick someone out for yourself as well...}
+EPL_1_Prologue_dialog_11 {No, thank you. I intend to get out of this hole at last, as soon as I place you in reliable hands. Why do you think I've spent the last few years learning navigation and how to read charts? I'll hire on as a navigator and go off in search of adventure. Ha-ha! I have a better chance of becoming a navigator than those half-literate aristocratic brats who get seasick at the mere sight of a deck.}
+EPL_1_Prologue_dialog_12 {@<pchar>, one of those half-literate aristocratic brats may well become my future husband, if I understand you correctly. And you're more likely to go off in search of death than adventure. You're a woman, and...}
+EPL_1_Prologue_dialog_13 {H-hey! @<pchar>'s blood runs in my veins, not @<FindPersonalName>'s! Don't forget who my real father is.}
+EPL_1_Prologue_dialog_14 {Of course I remember. My stepmother, the mermaid who traded her legs for a voice, has told me more than once how the two of you spent nearly a year without setting foot on solid ground, racing all over the archipelago in search of plunder.}
+EPL_1_Prologue_dialog_15 {Very amusing. If you tell that little family legend to your future suitor in those same words, I'm sure he'll appreciate not only your beauty, but your sharp wit as well.}
+EPL_1_Prologue_dialog_16 {You started this conversation.}
+EPL_1_Prologue_dialog_17 {And I'll finish it. Catch up.}
+EPL_1_Prologue_dialog_18 {Señorita @<FindPersonalName>? We've discussed everything already. My decision stands. You have nothing to worry about.}
+EPL_1_Prologue_dialog_19 {My sister insisted that I invite you to a family dinner.}
+EPL_1_Prologue_dialog_20 {Hm, thank you. I expect to be very busy over the next few days, but I will certainly accept your invitation.}
+EPL_1_Prologue_dialog_21 {Wonderful. I won't keep you any longer.}
+EPL_1_Prologue_dialog_22 {You again?}
+EPL_1_Prologue_dialog_23 {I'm leaving already.}
+EPL_1_Prologue_dialog_24 {Señorita, I cannot sell on credit. You're not from around here. What if you board the next passing ship tomorrow and vanish without a trace?}
+EPL_1_Prologue_dialog_25 {But I'm not asking for credit. I'll pay two thirds of the price right now, and I can work off the rest - help you or your wife.}
+EPL_1_Prologue_dialog_26 {It's not as though I have much work to do. I manage perfectly well on my own, and I'm not married. I can offer you two thirds of the goods...}
+EPL_1_Prologue_dialog_27 {Gaston Fox, can't you see that hardship is written all over the señorita's face, despite her youth? Show some compassion.}
+EPL_1_Prologue_dialog_28 {And what would you know about people, dear @<pchar>, when you couldn't see the scoundrel in your own stepfather, may he rest in peace.}
+EPL_1_Prologue_dialog_29 {Careful, Fox. You know I can lose my temper over the slightest thing.}
+EPL_1_Prologue_dialog_30 {Change your skirt for breeches before you start making threats. The commandant is no longer standing behind you, ready to cover for every one of your antics. That's friendly advice, so don't take it as an insult.}
+EPL_1_Prologue_dialog_31 {I've got something under my skirt too. It's called a carzoletta. Let me show you how well I can take care of myself, and give you some friendly advice in return: defend yourself!}
+EPL_1_Prologue_dialog_32 {Don't be a fool.}
+EPL_1_Prologue_dialog_33 {Defend yourself, or trade your breeches for a skirt!}
+EPL_1_Prologue_dialog_34 {What are you planning?}
+EPL_1_Prologue_dialog_35 {I'm going to teach you a lesson!}
+EPL_1_Prologue_dialog_36 {Stop! You nearly killed him!}
+EPL_1_Prologue_dialog_37 {I merely showed our friend what a tongue is worth when it's longer than a sword.}
+EPL_1_Prologue_dialog_38 {Well done. Now help bandage him up and think of an excuse, unless you want to be arrested.}
+EPL_1_Prologue_dialog_39 {Don't worry, it'll blow over. When that rogue bolted for the jungle, the soldiers nearly split their sides laughing, and that scratch will close up in a couple of hours. I'm more interested in that girl - who she is and where she came from. I'll go and look for her.}
+EPL_1_Prologue_dialog_40 {Excuse me, señorita. May I keep you company?}
+EPL_1_Prologue_dialog_41 {Of course... My name is Sofia. Sofia de la Piedad, until recently. Though you really needn't have treated that gentleman quite so harshly.}
+EPL_1_Prologue_dialog_42 {That gentleman has long deserved such treatment. But to hell with him. I've been @<pchar> @<FindPersonalName> for quite some time now. The adopted daughter of the former commandant of this colony forsaken by every Christian saint.}
+EPL_1_Prologue_dialog_43 {And now? Is your stepfather being transferred to another post?}
+EPL_1_Prologue_dialog_44 {He died a little over a month ago, rather absurdly. He quarreled with one of his subordinates. My stepsister and I have no other family left here, so we've been left to fend for ourselves.}
+EPL_1_Prologue_dialog_45 {I'm sorry. It seems you and I have suffered a similar misfortune.}
+EPL_1_Prologue_dialog_46 {That was my first thought. I assume you came ashore from the warship that arrived this morning, but apparently without a father or husband to accompany you.}
+EPL_1_Prologue_dialog_47 {Yes. I was married to a military officer only recently. The wedding was arranged in haste at my parents' insistence, since my husband had been posted here, to the New World. He left Europe for Havana by way of Sierra Leone, and two weeks later I was put aboard a merchantman sailing directly to these waters.\nI actually reached Havana before he did. When I finally received word, I learned that shortly after they left the African coast, fever swept through the ship, and my husband was among those who did not survive.}
+EPL_1_Prologue_dialog_48 {Your parents arranged the marriage? So it was a marriage of convenience?}
+EPL_1_Prologue_dialog_49 {I didn't even know whether to grieve or be relieved. I never wanted to marry that man and barely knew him, but now I have no one left, and worse, no means to support myself. The captain kindly agreed to take me back to Europe on the condition that my parents pay for my passage when we arrive, but what am I supposed to live on until then?\nBesides, before we return we still have to remain here for a couple of days and call at Porto Bello, or so he said.}
+EPL_1_Prologue_dialog_50 {My childhood and youth were hardly peaceful, so I would probably have taken something like this as an adventure. But for you, torn from a quiet life and thrown into such a whirlpool of troubles, it must be difficult. Still, it seems fortune has smiled on you after all. We may be able to help each other.}
+EPL_1_Prologue_dialog_51 {You needn't. Talking to you has already made me feel better...}
+EPL_1_Prologue_dialog_52 {No objections. I've got a few things hidden nearby in a grotto. I can't sell or trade them, but they'll certainly be useful to you.}
+EPL_1_Prologue_dialog_53 {What's wrong with them? Are they cursed?}
+EPL_1_Prologue_dialog_54 {Ha-ha! Of course not. Though I'd wager their former owner had more than his fair share of curses thrown at him. Wait here, I'll be back soon. And don't say a word to anyone.}
+EPL_1_Prologue_dialog_55 {Oh, @<pchar>!}
+EPL_1_Prologue_dialog_56 {Becky? What are you doing here?}
+EPL_1_Prologue_dialog_57 {Trying to find out what you're doing here. You've been acting strangely lately - picking fights with everyone, always running off either into the forest or down here to the coast.}
+EPL_1_Prologue_dialog_58 {So you do keep an eye on me from time to time. Listen, I can't follow your example and sit shut indoors all day, and I'm sick to death of our fort. I'm tired of catching the local soldiers staring at me and listening to their crude compliments and jokes.}
+EPL_1_Prologue_dialog_59 {I understand. But that's not all, is it? Look.\nThese seem to be Arcadio's things. The soldier who barged into our house demanding my hand. And the ring - the very one he tried to give me before you threw him out.}
+EPL_1_Prologue_dialog_60 {Looks like it. Yes.}
+EPL_1_Prologue_dialog_61 {When I heard he'd been found dead on the shore, I thanked the Holy Mother for delivering us from that vile man. And you were hiding his things here? How did they come into your possession? You killed him!}
+EPL_1_Prologue_dialog_62 {No! Of course not... Um... Yes, I was taking my usual walk outside the town and came across some people. Pirates, or smugglers, I don't know. They definitely weren't locals, and Arcadio was with them. Naturally I got out of there before they noticed me. Later, when I came back, I found him dead. I searched his pockets and ran.}
+EPL_1_Prologue_dialog_63 {And you hid these things here so no one would recognize them and think you'd run him through?}
+EPL_1_Prologue_dialog_64 {Exactly.}
+EPL_1_Prologue_dialog_65 {Oh, I wish I could believe you, but after today... Señor Cotes - if your blade had struck him a little farther to the right, who knows...}
+EPL_1_Prologue_dialog_66 {It's a carzoletta, not a sword.}
+EPL_1_Prologue_dialog_67 {Gunfire? The fort is firing.}
+EPL_1_Prologue_dialog_68 {No. I'd recognize the fort's guns. I think it's coming from the sea. Come on, quickly!}
+EPL_1_Prologue_dialog_69 {Have you lost your mind? What if the town is under attack? Let's stay here. We'll be safe.}
+EPL_1_Prologue_dialog_70 {Now that's the fort firing. Damn it, Rebecca, we couldn't have picked a better time to be out here.}
+EPL_1_Prologue_dialog_71 {I hope our men hold them off, whoever is attacking.}
+EPL_1_Prologue_dialog_72 {Evening fell...}
+EPL_1_Prologue_dialog_73 {Oh-ho, and who's hiding here? Lucky us, getting separated from the others.}
+EPL_1_Prologue_dialog_74 {How did you get here?.. Stop! Don't come any closer! I won't let you!}
+EPL_1_Prologue_dialog_75 {Well, look at that. The little mouse is cornered. Go on then, attack. Let's see if what they say is true...}
+EPL_1_Prologue_dialog_76 {Becky, run!}
+EPL_1_Prologue_dialog_77 {@<pchar>! You won't believe it, but I'm damned glad to see you alive and well.}
+EPL_1_Prologue_dialog_78 {Who attacked us? Did we drive them off? Where are the survivors?}
+EPL_1_Prologue_dialog_79 {Pirates. The whole garrison was crushed. Some managed to flee into the jungle or, like me, hide until it was over, but there's no one left here now. The last survivors crossed over to that barque.}
+EPL_1_Prologue_dialog_80 {Why would they want our fort? There's nothing here worth taking.}
+EPL_1_Prologue_dialog_81 {Looks like they intend to use it as a staging post. Their crews landed and headed inland. I heard Santo Domingo mentioned. It has a powerful fortress, nothing like ours, but if they manage to attack the town from the landward side, the fort's garrison won't even have time to come to its aid before the town is plundered.}
+EPL_1_Prologue_dialog_82 {They could have landed in any of the coves.}
+EPL_1_Prologue_dialog_83 {I don't know their reasons, but listen - you know marine navigation, don't you? There are a few sailors left aboard the barque. They can certainly take her along the coast, but the captain and navigator were in town, and neither was spared. We need the best possible route to avoid reefs and shoals. We have to reach Santo Domingo before the pirates.}
+EPL_1_Prologue_dialog_84 {My stepfather hired tutors for me, but I've never actually handled a ship myself, and... Where's Rebecca? Did she go aboard the barque too?}
+EPL_1_Prologue_dialog_85 {I haven't seen her since the siege, since she bandaged my shoulder.}
+EPL_1_Prologue_dialog_86 {She didn't return to town? Becky should have got here only a few minutes before me. Oh no, I can't sail now. I have to find her.}
+EPL_1_Prologue_dialog_87 {We can't wait either. It isn't only about warning the governor of the attack. There are enemy ships right off our shore, and men still aboard them who could land here at any moment.}
+EPL_1_Prologue_dialog_88 {No. I still can't.}
+EPL_1_Prologue_dialog_89 {Listen. If Rebecca ran into the pirates, they most likely took her with them as a hostage. If she managed to hide in the forest, she'll inevitably return here. Either way, we have to reach Santo Domingo as quickly as possible. Then we may find your sister outside the town walls, or the local governor-general may send a force to retake our fort, and she'll be able to return safely.\nIf you stay here, you won't help anyone. You'll only give that pack of killers some amusement before they murder you.}
+EPL_1_Prologue_dialog_90 {Damn it... She should have stayed with me...}
+EPL_1_Prologue_dialog_91 {Wait! I heard voices coming from the fort. Could they be surviving townsfolk?}
+EPL_1_Prologue_dialog_92 {Rebecca might be there! I'll go and check.}
+EPL_1_Prologue_dialog_93 {I'll wait for you at the pier by the boat.}
+EPL_1_Prologue_dialog_94 {All right. I'll be back soon.}
+EPL_1_Prologue_dialog_95 {Everyone into the boat. I'll board last.}
+EPL_1_Prologue_dialog_96 {All right.}
+EPL_1_Prologue_dialog_97 {
+Argh, damn it... It hurts so much... Help...
+}
+EPL_1_Prologue_dialog_98 {
+What, your accomplices left you here to die? Huh? I’ll help you once and for all, pirate!
+}
+EPL_1_Prologue_dialog_99 {
+Calm down, señorita. We are not your enemies, and we are certainly not pirates. At least, not the ones who sacked this town.
+}
+EPL_1_Prologue_dialog_100 {
+Then who are you? Answer me!
+}
+EPL_1_Prologue_dialog_101 {
+I am a free captain — Sandro Thorn, and this is my ship’s doctor, Jim Hopkins. We came to the settlement to deliver a message to a young lady.
+}
+EPL_1_Prologue_dialog_102 {
+My name is Emmanuelle Remidos. As you can see, you are too late, Sandro Thorn. Who exactly were you looking for?
+}
+EPL_1_Prologue_dialog_103 {
+That no longer matters. My friend needs help, and we need to get out of here at once, señorita. As quickly as possible.\nThe pirates stole my ship, but that vessel at the pier will do.
+}
+EPL_1_Prologue_dialog_104 {
+Why should I help you? How do I know you will not lead us into a trap?
+}
+EPL_1_Prologue_dialog_105 {
+And why would I? If I were in league with them, dealing with you would be no trouble at all. You will not get out of La Vega Bay without a fight, and your crew clearly is no royal guard.\nSo you simply have no choice, @<GetAddress_Form>. Understand that. We need you, and you need us. Besides, I know the special pirate signals. That will buy us some time, but we must keep strictly with the wind and avoid any naval engagements.
+}
+EPL_1_Prologue_dialog_106 {
+All right, there truly is no other way. Go to the boat. I hope your plan works, Sandro.
+}

@@ -1,69 +1,75 @@
 type_full_0
 {
-这里是#sMapIslName#。藏宝的位置就在这里——#sMaplocName#。一位著名的海盗曾在此藏下宝藏。
-从那些褐色的血迹来看，这张地图确实是真品——也说明它曾多次易主。
+这里是#sMapIslName#。 藏宝的位置就在这里——#sMaplocName#。 一位著名的海盗曾在此藏下宝藏。 
+从那些褐色的血迹来看， 这张地图确实是真品——也说明它曾多次易主。 
 }
-type_full_0_isl {岛}
+type_full_0_isl {岛屿}
 type_full_0_mein {大陆}
 type_full_1
 {
-在#sMapIslName#的地图上。宝藏位于#sMaplocName#。但只有亲自前往，才能确定它是否还在那里。
-这张地图相当古老，其真实性毋庸置疑。
+在#sMapIslName#的地图上。 宝藏位于#sMaplocName#。 但只有亲自前往， 才能确定它是否还在那里。 
+这张地图相当古老， 其真实性毋庸置疑。 
 }
-type_full_1_isl {岛}
+type_full_1_isl {岛屿}
 type_full_1_mein {大陆}
-type_full_2 {这是一张全新的地图——纸张还没有泛黄。如果图例没错，宝藏就藏在#sMaplocName#，位于#sMapIslName#。真的在那里吗？值得一探！}
-type_full_2_isl {岛}
+type_full_2 {这是一张全新的地图——纸张还没有泛黄。 如果图例没错， 宝藏就藏在#sMaplocName#， 位于#sMapIslName#。 真的在那里吗？ 值得一探！ }
+type_full_2_isl {岛屿}
 type_full_2_mein {大陆}
 type_quest_0
 {
-这里是#sMapIslName#。藏宝的具体位置就在这里——#sMaplocName#。#sMapOwner#把宝藏藏在了那里。
-从那些褐色的血迹来看，这张地图是真的——也说明它曾多次易主。
+这里是#sMapIslName#。 藏宝的具体位置就在这里——#sMaplocName#。 #sMapOwner#把宝藏藏在了那里。 
+从那些褐色的血迹来看， 这张地图是真的——也说明它曾多次易主。 
 }
-type_quest_0_isl {岛}
+type_quest_0_isl {岛屿}
 type_quest_0_mein {大陆}
 type_part
 {
-这是藏宝图的一部分，显然指向宝藏的位置。仅凭这一块信息太少，无法确定宝藏的具体地点。只能希望有朝一日能找到地图的另一部分，它应该还藏在某个地方。
-到那时，一切就会明朗！
+这是藏宝图的一部分， 显然指向宝藏的位置。 仅凭这一块信息太少， 无法确定宝藏的具体地点。 只能希望有朝一日能找到地图的另一部分， 它应该还藏在某个地方。 
+到那时， 一切就会明朗！ 
 }
 type_fake
 {
-这张地图标示了宝藏的位置。当然，你可以去查查那里有没有宝藏，但十有八九这只是个赝品。
-你还是把这张纸扔了吧。
+这张地图标示了宝藏的位置。 当然， 你可以去查查那里有没有宝藏， 但十有八九这只是个赝品。 
+你还是把这张纸扔了吧。 
 }
-Antigua_Grot {在Willoughby Bay右侧的洞穴里}
+Antigua_Grot {在威洛比湾右侧的岩洞里}
 Antigua_Grot_box1 {大石头上的箱子}
 SentJons_TownCave {在圣约翰的地牢里}
 SentJons_TownCave_box1 {在死胡同的木板下}
 SentJons_TownCave_box2 {在矿井的死胡同里}
 SentJons_TownCave_box3 {在堵塞处}
-Barbados_Cave {在离Bridgetown不远的洞穴里}
-Barbados_Cave_box1 {死胡同里的木板下}
+SentJons_TownCave_box4 {在有火把的堵塞处}
+SantoDomingo_TownCave {在圣多明各的地牢里}
+SantoDomingo_TownCave_box1 {在死胡同的木板下}
+SantoDomingo_TownCave_box2 {在矿井的死胡同里}
+SantoDomingo_TownCave_box3 {在堵塞处}
+SantoDomingo_TownCave_box4 {在有火把的堵塞处}
+Barbados_Cave {在离布里奇敦不远的蛇形矿洞里}
+Barbados_Cave_box1 {在死胡同里的木板下}
 Beliz_Cave {在伯利兹出口右侧的洞穴里}
 Beliz_Cave_box1 {石桥旁的箱子}
 Beliz_Cave_box2 {大石头上的箱子}
 Beliz_Cave_box3 {天花板上垂下的绳子旁边的箱子}
-Beliz_Cave_2 {在贝里兹出口对面的洞穴里}
-Beliz_Cave_2_box1 {死胡同的木板下}
-Bermudes_Dungeon {在Scullshores船厂下方的地牢里}
+Beliz_Cave_2 {在伯利兹出口对面的蛇形矿洞里}
+Beliz_Cave_2_box1 {在死胡同的木板下}
+Bermudes_Dungeon {在海盗营地船坞下方的地牢里}
 Bermudes_Dungeon_box1 {一扇锁门后的箱子}
 Bermudes_Dungeon_box2 {一扇开着的门后面的箱子}
 Bermudes_Dungeon_box3 {死胡同里的箱子}
 Bermudes_Dungeon_box4 {桶后面的箱子}
-Caracas_Grot {在加拉加斯出口右侧的洞穴里}
+Caracas_Grot {在加拉加斯出口右侧的岩洞里}
 Caracas_Grot_box1 {大石头上的箱子}
 Cartahena_Cave {在卡塔赫纳出口对面的洞穴里}
 Cartahena_Cave_box1 {火把下的箱子}
 Cartahena_Cave_box2 {死胡同里的箱子}
 Cartahena_Cave_box3 {火把旁的箱子}
-Caiman_Grot {在沙漠海岸右侧的洞穴里}
+Caiman_Grot {在荒漠海岸右侧的岩洞里}
 Caiman_Grot_box1 {大石上的箱子}
-Charles_Grot {在白色海湾右侧的洞穴里}
-Charles_Grot_box1 {岸边的箱子}
-Cuba_Grot {在卡马圭角右侧的洞穴里}
-Cuba_Grot_box1 {岸边的箱子}
-Cumana_Cave {在Carupano Cove右侧的洞穴里}
+Charles_Grot {在白沙湾右侧的岩洞里}
+Charles_Grot_box1 {水边的箱子}
+Cuba_Grot {在卡马圭角右侧的岩洞里}
+Cuba_Grot_box1 {水边的箱子}
+Cumana_Cave {在卡鲁帕诺湾右侧的洞穴里}
 Cumana_Cave_box1 {石桥旁的箱子}
 Cumana_Cave_box2 {大石头上的箱子}
 Cumana_Cave_box3 {天花板上垂下的绳子旁边的箱子}
@@ -71,19 +77,19 @@ Curacao_Cave {在布兰卡泻湖右侧的洞穴里}
 Curacao_Cave_box1 {火把下的箱子}
 Curacao_Cave_box2 {死胡同里的箱子}
 Curacao_Cave_box3 {火把旁的箱子}
-Dominica_Grot {在Castle Bruce Beach右侧的洞穴里}
-Dominica_Grot_box1 {岸边的箱子}
+Dominica_Grot {在布鲁斯堡海滩右侧的岩洞里}
+Dominica_Grot_box1 {水边的箱子}
 Guadeloupe_Cave {在瓜德罗普灯塔左侧的洞穴里}
 Guadeloupe_Cave_box1 {火把后壁龛里的箱子}
 Guadeloupe_Cave_box2 {柱子后壁龛里的箱子}
 Guadeloupe_Cave_box3 {墙边石头后面的箱子}
-Hispaniola_Cave {在离Port-au-Prince镇不远的洞穴里}
+Hispaniola_Cave {在离太子港镇不远的洞穴里}
 Hispaniola_Cave_box1 {石桥附近的箱子}
 Hispaniola_Cave_box2 {大石头上的箱子}
 Hispaniola_Cave_box3 {天花板上垂下绳索旁的箱子}
-Jamaica_Grot {在Port Royal灯塔右侧的洞穴里}
+Jamaica_Grot {在皇家港灯塔右侧的岩洞里}
 Jamaica_Grot_box1 {大石头上的箱子}
-Orange_mines {在Fort Orange的地下储藏室}
+Orange_mines {在奥兰治堡的地下储藏室}
 Orange_mines_box1 {大桶下面的小桶}
 Maracaibo_Cave {在马拉开波出口对面的洞穴里}
 Maracaibo_Cave_box1 {火把下的箱子}
@@ -93,43 +99,45 @@ Marigo_Cave {在马里戈出口对面的洞穴里}
 Marigo_Cave_box1 {火把下的箱子}
 Marigo_Cave_box2 {死胡同里的箱子}
 Marigo_Cave_box3 {火把旁的箱子}
-Panama_Cave {在Portobelo出口左侧的洞穴里}
-Panama_Cave_box1 {死胡同的木板下}
-Pearl_Grot {在伯利兹和圣卡塔琳娜之间西海岸附近的一个洞穴里}
+Panama_Cave {在贝洛港出口左侧的蛇形矿洞里}
+Panama_Cave_box1 {在死胡同的木板下}
+Pearl_Grot {在伯利兹和圣卡塔利娜之间西海岸附近的一个岩洞里}
 Pearl_Grot_box1 {大石上的箱子}
-PortoBello_Cave {在Mosquitoes Bay右侧的洞穴里}
+PortoBello_Cave {在蚊子湾右侧的蛇形矿洞里}
 PortoBello_Cave_box1 {在死胡同的木板下}
-SanJuan_Cave {在距离San Juan不远的洞穴里}
+SanJuan_Cave {在距离圣胡安不远的洞穴里}
 SanJuan_Cave_box1 {石桥旁的箱子}
 SanJuan_Cave_box2 {大石头上的箱子}
 SanJuan_Cave_box3 {天花板上垂下的绳子旁边的箱子}
-SantaCatalina_Cave {在Perlas角右侧的洞穴里}
+SantaCatalina_Cave {在圣卡塔利娜右侧的洞穴里}
 SantaCatalina_Cave_box1 {火把下的箱子}
 SantaCatalina_Cave_box2 {死胡同里的箱子}
 SantaCatalina_Cave_box3 {火把旁的箱子}
-SantaCatalina_Grot {在圣胡安德尔诺特湾右侧的洞穴里}
-SantaCatalina_Grot_box1 {岸边的箱子}
-SantaCatalina_PearlCave {在San Juan del Norte湾左侧的一个洞穴里}
+SantaCatalina_Grot {在北圣胡安湾右侧的岩洞里}
+SantaCatalina_Grot_box1 {水边的箱子}
+SantaCatalina_PearlCave {在北圣胡安湾左侧的洞穴里}
 SantaCatalina_PearlCave_box1 {石桥旁的箱子}
 SantaCatalina_PearlCave_box2 {大石头上的箱子}
 SantaCatalina_PearlCave_box3 {天花板上垂下的绳子旁边的箱子}
-Tenotchitlan_Cave {在阿兹特克神庙以北的洞穴里}
+Tenotchitlan_Cave {在阿马蒂克湾的印加神殿以北的洞穴里}
 Tenotchitlan_Cave_box1 {石桥旁的箱子}
 Tenotchitlan_Cave_box2 {大石头上的箱子}
 Tenotchitlan_Cave_box3 {天花板上垂下的绳子旁边的箱子}
-Terks_Grot {在北湾右侧的洞穴里}
+Terks_Grot {在特克斯北湾右侧的岩洞里}
 Terks_Grot_box1 {大石头上的箱子}
-Tortuga_Grot {在Fisheye Beach对面的洞穴里}
-Tortuga_Grot_box1 {岸边的箱子}
+Tortuga_Grot {在托尔图加的岩洞里}
+Tortuga_Grot_box1 {水边的箱子}
 Tortuga_Cave {在托尔图加的地牢里}
 Tortuga_Cave_box1 {一扇关着的门后面的箱子}
-Trinidad_Grot {在特立尼达和多巴哥灯塔对面的洞穴里}
-Trinidad_Grot_box1 {岸边的箱子}
-FortFrance_Dungeon {在Fort-de-France的地牢里}
+Trinidad_Grot {在特立尼达灯塔对面的岩洞里}
+Trinidad_Grot_box1 {水边的箱子}
+FortFrance_Dungeon {在法兰西堡的地牢里}
 FortFrance_Dungeon_box1 {高地上的箱子}
 FortFrance_Dungeon_box2 {上层一个开着门后面的箱子}
 FortFrance_Dungeon_box3 {升降机附近的箱子}
 FortFrance_Dungeon_box4 {下层台阶开着门后面的箱子}
 FortFrance_Dungeon_box5 {在木箱下面}
-Providence_Cavern {在连接摩根角和奥尔德普罗维登斯岛的穿洞洞穴内}
+Providence_Cavern {在连接摩根角和普罗维登斯岛的洞穴内}
 Providence_Cavern_box1 {死胡同里石笋后的箱子}
+Aruba_Grot           {在岛屿深处的洞穴中，加勒比村庄附近}
+Aruba_Grot_box1       {大石头上方的宝箱}

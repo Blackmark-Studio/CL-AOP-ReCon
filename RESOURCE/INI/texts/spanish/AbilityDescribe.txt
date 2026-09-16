@@ -536,6 +536,11 @@ DuglasSchool             {Instrucción especial de mosquetero}
 perkDuglasSchool          {El personaje ha recibido formación según una metodología compleja y poco común de las escuelas de tiro de élite del Viejo Mundo.
 ~
 Solo aquellos que dominen a la perfección esta base clásica tan poco común serán capaces de utilizar tipos de mosquetes raros y experimentales.}
+legendGuideRead {Leyenda en ciernes}
+perklegendGuideRead {Has leído un pequeño cuaderno encontrado por casualidad, lleno de consejos breves pero valiosos.
+~
+Aumenta los valores básicos de Energía y Salud en 5 y 10 puntos, respectivamente.}
+
 Energaiser {Energizante}
 perkEnergaiser {El personaje está en el máximo de sus capacidades físicas, por lo que la energía se recupera 1,5 veces más rápido.}
 LoyalOff {Lealtad}

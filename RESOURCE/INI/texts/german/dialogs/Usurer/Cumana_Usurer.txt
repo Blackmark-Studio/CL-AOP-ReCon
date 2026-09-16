@@ -37,3 +37,13 @@ Du hast richtig geraten, tut mir leid...
 Cumana_Usurer_12 {
 Ich verstehe...
 }
+Cumana_Usurer_13 {Ich höre, Kapitän. Was führt Sie zu mir?}
+Cumana_Usurer_14 {Ich möchte zwanzigtausend Pesos für Anna Arellano hinterlegen und ihr einige Worte ihres Vaters ausrichten lassen.}
+Cumana_Usurer_15 {Nichts Dringendes. Wir kommen ein andermal darauf zurück.}
+Cumana_Usurer_16 {Anna Arellano? Ja, ich kenne sie. Ihr Vater war allerdings seit langer Zeit nicht mehr in Cumana. Was genau soll ich ihr ausrichten?}
+Cumana_Usurer_17 {Sagen Sie ihr, Tomas de Arellano habe dieses Geld hinterlassen. Und dass er ihre Ehe mit Sebastian segnet. Meinen Namen brauchen Sie nicht zu erwähnen.}
+Cumana_Usurer_18 {Verstehe. Wenn Sie das Geld bei sich haben, eröffne ich sofort ein Guthaben auf ihren Namen.}
+Cumana_Usurer_19 {Hier ist das Geld. Eröffnen Sie das Guthaben und richten Sie ihr unbedingt die Worte ihres Vaters aus.}
+Cumana_Usurer_20 {Im Augenblick habe ich nicht die ganze Summe. Ich komme wieder, sobald ich zwanzigtausend zusammenhabe.}
+Cumana_Usurer_21 {Darauf können Sie sich verlassen. In meinen Büchern wird nur der Name Tomas de Arellano stehen, und Anna erhält seine Nachricht.}
+Cumana_Usurer_22 {Danke. Mehr verlange ich nicht.}

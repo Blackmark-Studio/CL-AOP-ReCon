@@ -51,8 +51,8 @@ void WhrFillSunGlowData(int nw1, int nw2)
 				SunGlow.Glow.Size = Whr_GetFloat(aGlow1,"Size") * 8.542;
 				SunGlow.Glow.Texture = Whr_GetString(aGlow1,"Texture");
 				SunGlow.Glow.Color = Whr_GetColor(aGlow1,"Color");
-				SunGlow.Glow.RotateSpeed = Whr_GetColor(aGlow1,"RotateSpeed");
-				SunGlow.Glow.DecayTime = Whr_GetColor(aGlow1,"DecayTime");
+				SunGlow.Glow.RotateSpeed = Whr_GetFloat(aGlow1,"RotateSpeed");
+				SunGlow.Glow.DecayTime = Whr_GetFloat(aGlow1,"DecayTime");
 				SunGlow.Glow.TechniqueZ = Whr_GetString(aGlow1,"TechniqueZ");
 				SunGlow.Glow.TechniqueNoZ = Whr_GetString(aGlow1,"TechniqueNoZ");
 			}
@@ -105,8 +105,8 @@ void WhrFillSunGlowData(int nw1, int nw2)
 			SunGlow.Glow.Size = Whr_GetFloat(aGlow1,"Size") * 8.542;
 			SunGlow.Glow.Texture = Whr_GetString(aGlow1,"Texture");
 			SunGlow.Glow.Color = Whr_GetColor(aGlow1,"Color");
-			SunGlow.Glow.RotateSpeed = Whr_GetColor(aGlow1,"RotateSpeed");
-			SunGlow.Glow.DecayTime = Whr_GetColor(aGlow1,"DecayTime");
+			SunGlow.Glow.RotateSpeed = Whr_GetFloat(aGlow1,"RotateSpeed");
+			SunGlow.Glow.DecayTime = Whr_GetFloat(aGlow1,"DecayTime");
 			SunGlow.Glow.TechniqueZ = Whr_GetString(aGlow1,"TechniqueZ");
 			SunGlow.Glow.TechniqueNoZ = Whr_GetString(aGlow1,"TechniqueNoZ");
 		}
@@ -159,7 +159,7 @@ void WhrFillSunGlowData(int nw1, int nw2)
 		SunGlow.Moon = false;
 	}
 
-	if( nw2 >= 0)
+	if (nw2 >= 0 || sunIsShine)
 	{
 		SunGlow.Glow.SunTexture = "weather\sun\glow\sun.tga";
 		SunGlow.Glow.MoonTexture = "weather\sun\glow\moon.tga";
@@ -205,127 +205,25 @@ void WhrFillSunGlowData(int nw1, int nw2)
 		if (Whr_CheckStorm()) SunGlow.Glow.Size = 0;
 		if (Whr_CheckStorm()) SunGlow.Reflection.Size = 0;
 		if (FindLocation(sLocation) != -1) SunGlow.Glow.SunSize = 250;
-		if (stf(Environment.date.day) == 1) SunGlow.Glow.MoonTexture = "weather\sun\glow\moon\moon01.tga";
-		if (stf(Environment.date.day) == 2) SunGlow.Glow.MoonTexture = "weather\sun\glow\moon\moon02.tga";
-		if (stf(Environment.date.day) == 3) SunGlow.Glow.MoonTexture = "weather\sun\glow\moon\moon03.tga";		
-		if (stf(Environment.date.day) == 4) SunGlow.Glow.MoonTexture = "weather\sun\glow\moon\moon04.tga";		
-		if (stf(Environment.date.day) == 5) SunGlow.Glow.MoonTexture = "weather\sun\glow\moon\moon05.tga";
-		if (stf(Environment.date.day) == 6) SunGlow.Glow.MoonTexture = "weather\sun\glow\moon\moon06.tga";
-		if (stf(Environment.date.day) == 7) SunGlow.Glow.MoonTexture = "weather\sun\glow\moon\moon07.tga";
-		if (stf(Environment.date.day) == 8) SunGlow.Glow.MoonTexture = "weather\sun\glow\moon\moon08.tga";
-		if (stf(Environment.date.day) == 9) SunGlow.Glow.MoonTexture = "weather\sun\glow\moon\moon09.tga";
-		if (stf(Environment.date.day) == 10) SunGlow.Glow.MoonTexture = "weather\sun\glow\moon\moon10.tga";
-		if (stf(Environment.date.day) == 11) SunGlow.Glow.MoonTexture = "weather\sun\glow\moon\moon11.tga";
-		if (stf(Environment.date.day) == 12) SunGlow.Glow.MoonTexture = "weather\sun\glow\moon\moon12.tga";
-		if (stf(Environment.date.day) == 13) SunGlow.Glow.MoonTexture = "weather\sun\glow\moon\moon13.tga";
-		if (stf(Environment.date.day) == 14) SunGlow.Glow.MoonTexture = "weather\sun\glow\moon\moon14.tga";
-		if (stf(Environment.date.day) == 15) SunGlow.Glow.MoonTexture = "weather\sun\glow\moon\moon15.tga";
-		if (stf(Environment.date.day) == 16) SunGlow.Glow.MoonTexture = "weather\sun\glow\moon\moon16.tga";
-		if (stf(Environment.date.day) == 17) SunGlow.Glow.MoonTexture = "weather\sun\glow\moon\moon17.tga";
-		if (stf(Environment.date.day) == 18) SunGlow.Glow.MoonTexture = "weather\sun\glow\moon\moon18.tga";
-		if (stf(Environment.date.day) == 19) SunGlow.Glow.MoonTexture = "weather\sun\glow\moon\moon19.tga";
-		if (stf(Environment.date.day) == 20) SunGlow.Glow.MoonTexture = "weather\sun\glow\moon\moon20.tga";
-		if (stf(Environment.date.day) == 21) SunGlow.Glow.MoonTexture = "weather\sun\glow\moon\moon21.tga";
-		if (stf(Environment.date.day) == 22) SunGlow.Glow.MoonTexture = "weather\sun\glow\moon\moon22.tga";
-		if (stf(Environment.date.day) == 23) SunGlow.Glow.MoonTexture = "weather\sun\glow\moon\moon23.tga";
-		if (stf(Environment.date.day) == 24) SunGlow.Glow.MoonTexture = "weather\sun\glow\moon\moon24.tga";
-		if (stf(Environment.date.day) == 25) SunGlow.Glow.MoonTexture = "weather\sun\glow\moon\moon25.tga";
-		if (stf(Environment.date.day) == 26) SunGlow.Glow.MoonTexture = "weather\sun\glow\moon\moon26.tga";
-		if (stf(Environment.date.day) == 27) SunGlow.Glow.MoonTexture = "weather\sun\glow\moon\moon27.tga";
-		if (stf(Environment.date.day) == 28) SunGlow.Glow.MoonTexture = "weather\sun\glow\moon\moon28.tga";
-		if (stf(Environment.date.day) == 29) SunGlow.Glow.MoonTexture = "weather\sun\glow\moon\moon29.tga";
-		if (stf(Environment.date.day) == 30) SunGlow.Glow.MoonTexture = "weather\sun\glow\moon\moon30.tga";
-		if (stf(Environment.date.day) == 31) SunGlow.Glow.MoonTexture = "weather\sun\glow\moon\moon31.tga";
+
+		i = sti(Environment.date.day);
+		Restrictor(&i, 1, 31);
+
+		if (i <= 9)
+			sTemp = "0" + i;
+		else
+			sTemp = "" + i;
+
+		SunGlow.Glow.MoonTexture = "weather\sun\glow\moon\moon" + sTemp + ".tga";
 		SunGlow.Glow.MoonSize = 300;
-		SunGlow.Glow.Color = argb(0,255,255,255);
-		SunGlow.Reflection.Color = argb(0,255,255,255);
-	}
-	else
-	{
-		if (sunIsShine)
-		{
-			SunGlow.Glow.SunTexture = "weather\sun\glow\sun.tga";
-			SunGlow.Glow.MoonTexture = "weather\sun\glow\moon.tga";
-			SunGlow.Glow.GlowTexture = "weather\sun\glow\sunglow.tga";
-			if (GetTime() >= 5.0 && GetTime() < 9.0) {
-				SunGlow.Glow.SunSize = 300;
-				SunGlow.Glow.Size =850;
-				SunGlow.Glow.SunTexture = "weather\sun\glow\sun1.tga";
-				SunGlow.Reflection.Size = 850;
-				SunGlow.Reflection.Texture = "weather\sun\reflection\refl_morning.tga";
-			} else {
-			if( GetTime() >= 9.0 && GetTime() < 20.0 ) {
-				SunGlow.Glow.SunSize = 300;
-				SunGlow.Glow.Size =850;
-				SunGlow.Glow.SunTexture = "weather\sun\glow\sun1.tga";
-				SunGlow.Glow.GlowTexture = "weather\sun\glow\sunglow1.tga";
-				SunGlow.Reflection.Size = 850;
-				SunGlow.Reflection.Texture = "weather\sun\reflection\refl_day.tga";
-			} else {
-			if( GetTime() >= 20.0 && GetTime() < 21.0 ) {
-				SunGlow.Glow.SunSize = 300;
-				SunGlow.Glow.Size =850;
-				SunGlow.Glow.GlowTexture = "weather\sun\glow\sunglow1.tga";
-				SunGlow.Reflection.Size = 850;
-				SunGlow.Reflection.Texture = "weather\sun\reflection\refl_morning.tga";
-			} else {
-			if( GetTime() >= 21.0 && GetTime() < 21.5 ) {
-				SunGlow.Glow.SunSize = 300;
-				SunGlow.Glow.Size =850;
-				SunGlow.Glow.SunTexture = "weather\sun\glow\sun1.tga";
-				SunGlow.Reflection.Size = 850;
-				SunGlow.Reflection.Texture = "weather\sun\reflection\refl_evening.tga";
-			} else {
-			if( GetTime() >= 21.5 && GetTime() < 22.5 ) {
-				SunGlow.Glow.SunSize = 300;
-				SunGlow.Glow.Size =850;
-				SunGlow.Glow.SunTexture = "weather\sun\glow\sun2.tga";
-				SunGlow.Reflection.Size = 950;
-				SunGlow.Reflection.Texture = "weather\sun\reflection\refl_evening.tga";
-			}}}}}
-			if (GetTime() >= 22.0 && GetTime() < 23.0) SunGlow.Glow.Size = 0;	
-			if (GetTime() >= 22.0 && GetTime() < 23.0) SunGlow.Reflection.Size = 0;
-			if (Whr_CheckStorm()) SunGlow.Glow.Size = 0;
-			if (Whr_CheckStorm()) SunGlow.Reflection.Size = 0;
-			if (FindLocation(sLocation) != -1) SunGlow.Glow.SunSize = 250;
-			if (stf(Environment.date.day) == 1) SunGlow.Glow.MoonTexture = "weather\sun\glow\moon\moon01.tga";
-			if (stf(Environment.date.day) == 2) SunGlow.Glow.MoonTexture = "weather\sun\glow\moon\moon02.tga";
-			if (stf(Environment.date.day) == 3) SunGlow.Glow.MoonTexture = "weather\sun\glow\moon\moon03.tga";		
-			if (stf(Environment.date.day) == 4) SunGlow.Glow.MoonTexture = "weather\sun\glow\moon\moon04.tga";		
-			if (stf(Environment.date.day) == 5) SunGlow.Glow.MoonTexture = "weather\sun\glow\moon\moon05.tga";
-			if (stf(Environment.date.day) == 6) SunGlow.Glow.MoonTexture = "weather\sun\glow\moon\moon06.tga";
-			if (stf(Environment.date.day) == 7) SunGlow.Glow.MoonTexture = "weather\sun\glow\moon\moon07.tga";
-			if (stf(Environment.date.day) == 8) SunGlow.Glow.MoonTexture = "weather\sun\glow\moon\moon08.tga";
-			if (stf(Environment.date.day) == 9) SunGlow.Glow.MoonTexture = "weather\sun\glow\moon\moon09.tga";
-			if (stf(Environment.date.day) == 10) SunGlow.Glow.MoonTexture = "weather\sun\glow\moon\moon10.tga";
-			if (stf(Environment.date.day) == 11) SunGlow.Glow.MoonTexture = "weather\sun\glow\moon\moon11.tga";
-			if (stf(Environment.date.day) == 12) SunGlow.Glow.MoonTexture = "weather\sun\glow\moon\moon12.tga";
-			if (stf(Environment.date.day) == 13) SunGlow.Glow.MoonTexture = "weather\sun\glow\moon\moon13.tga";
-			if (stf(Environment.date.day) == 14) SunGlow.Glow.MoonTexture = "weather\sun\glow\moon\moon14.tga";
-			if (stf(Environment.date.day) == 15) SunGlow.Glow.MoonTexture = "weather\sun\glow\moon\moon15.tga";
-			if (stf(Environment.date.day) == 16) SunGlow.Glow.MoonTexture = "weather\sun\glow\moon\moon16.tga";
-			if (stf(Environment.date.day) == 17) SunGlow.Glow.MoonTexture = "weather\sun\glow\moon\moon17.tga";
-			if (stf(Environment.date.day) == 18) SunGlow.Glow.MoonTexture = "weather\sun\glow\moon\moon18.tga";
-			if (stf(Environment.date.day) == 19) SunGlow.Glow.MoonTexture = "weather\sun\glow\moon\moon19.tga";
-			if (stf(Environment.date.day) == 20) SunGlow.Glow.MoonTexture = "weather\sun\glow\moon\moon20.tga";
-			if (stf(Environment.date.day) == 21) SunGlow.Glow.MoonTexture = "weather\sun\glow\moon\moon21.tga";
-			if (stf(Environment.date.day) == 22) SunGlow.Glow.MoonTexture = "weather\sun\glow\moon\moon22.tga";
-			if (stf(Environment.date.day) == 23) SunGlow.Glow.MoonTexture = "weather\sun\glow\moon\moon23.tga";
-			if (stf(Environment.date.day) == 24) SunGlow.Glow.MoonTexture = "weather\sun\glow\moon\moon24.tga";
-			if (stf(Environment.date.day) == 25) SunGlow.Glow.MoonTexture = "weather\sun\glow\moon\moon25.tga";
-			if (stf(Environment.date.day) == 26) SunGlow.Glow.MoonTexture = "weather\sun\glow\moon\moon26.tga";
-			if (stf(Environment.date.day) == 27) SunGlow.Glow.MoonTexture = "weather\sun\glow\moon\moon27.tga";
-			if (stf(Environment.date.day) == 28) SunGlow.Glow.MoonTexture = "weather\sun\glow\moon\moon28.tga";
-			if (stf(Environment.date.day) == 29) SunGlow.Glow.MoonTexture = "weather\sun\glow\moon\moon29.tga";
-			if (stf(Environment.date.day) == 30) SunGlow.Glow.MoonTexture = "weather\sun\glow\moon\moon30.tga";
-			if (stf(Environment.date.day) == 31) SunGlow.Glow.MoonTexture = "weather\sun\glow\moon\moon31.tga";
-			SunGlow.Glow.MoonSize = 300;
-			SunGlow.Glow.Color = argb(0,255,255,255);
-		}
+		//SunGlow.Glow.Color = argb(0,255,255,255) // > перекрывал по-погодный оттенок Glow.Color из пресета - теперь оттенок пресета сохраняется
+
+		if (nw2 >= 0)
+			SunGlow.Reflection.Color = argb(0,255,255,255);
 	}
 }
 
-void MoveSunGlowToLayers(string sExecuteLayer, string sRealizeLayer)
+void MoveSunGlowToLayers(int sExecuteLayer, int sRealizeLayer)
 {
 	LayerDelObject(EXECUTE,&SunGlow);
 	LayerDelObject(REALIZE,&SunGlow);

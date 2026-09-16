@@ -1,72 +1,72 @@
 Villemstad_Mayor_1 {
-你找俺啥事？有话就问吧。
+你找我什么事？ 有话就问吧。 
 }
 Villemstad_Mayor_2 {
-我听着呢，你想问啥？
+我听着呢， 你想问什么？ 
 }
 Villemstad_Mayor_3 {
 @<RandPhraseSimple>
 }
 Villemstad_Mayor_4 {
-你今天已经是第二次想问问题了……
+你今天已经是第二次想问问题了…… 
 }
 Villemstad_Mayor_5 {
-今天你已经是第三次想问问题了……
+今天你已经是第三次想问问题了…… 
 }
 Villemstad_Mayor_6 {
-这到底什么时候才是个头？！老子还得管城市，一堆事等着，结果你还一直来烦我问东问西！
+这到底什么时候才是个头？ ！ 我还得管城市， 一堆事等着， 结果你还一直来烦我问东问西！ 
 }
 Villemstad_Mayor_7_m {
-我改主意了……
+我改主意了…… 
 }
 Villemstad_Mayor_7_f {
-我改主意了……
+我改主意了…… 
 }
 Villemstad_Mayor_8 {
-现在不是时候，也不是地方……
+现在不是时候， 也不是地方…… 
 }
 Villemstad_Mayor_9 {
 @<RandPhraseSimple>
 }
 Villemstad_Mayor_10 {
-没错……不过不是现在，等会儿吧……
+没错…… 不过不是现在， 等会儿吧…… 
 }
 Villemstad_Mayor_11 {
-会的，会的……只是晚点……
+会的， 会的…… 只是晚点…… 
 }
 Villemstad_Mayor_12 {
-抱歉，@<GetAddress_FormToNPC>……
+抱歉， @<GetAddress_FormToNPC>…… 
 }
 Villemstad_Mayor_13 {
-你都拿光了，还想要啥？
+你都拿光了， 还想要什么？ 
 }
 Villemstad_Mayor_14 {
-你还有什么没抢到手的吗？
+你还有什么没抢到手的吗？ 
 }
 Villemstad_Mayor_15 {
 @<RandPhraseSimple>
 }
 Villemstad_Mayor_16 {
-最后再环顾一圈……
+最后再环顾一圈…… 
 }
 Villemstad_Mayor_17_m {
-看看有没有什么东西落下了……
+看看有没有什么东西落下了…… 
 }
 Villemstad_Mayor_17_f {
-看看自己是不是有啥东西忘拿了……
+看看自己是不是有什么东西忘拿了…… 
 }
 Villemstad_Mayor_18 {
 @<RandPhraseSimple>
 }
 Villemstad_Mayor_19 {
-该死的，你们这些该死的西班牙佬！！把这座城市毁了！
+该死的， 你们这些该死的西班牙佬！ ！ 你们把整座城市都给毁了！ 
 }
 Villemstad_Mayor_20 {
-这是惩罚。
+这是你们应得的惩罚。 
 }
 Villemstad_Mayor_21 {
-为啥要惩罚我？
+惩罚？ ！ 我们究竟犯了什么罪？ ！ 
 }
 Villemstad_Mayor_22 {
-因暗中参与了Devolution War，站在法国人一边。希望你能记住这个教训……
+惩罚你们暗中倒向法国， 参加了这场遗产战争。 这就是给你们的教训…… 
 }

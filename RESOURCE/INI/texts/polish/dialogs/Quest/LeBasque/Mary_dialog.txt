@@ -1,0 +1,243 @@
+Mary_dialog_1 {
+Kapitanie... Chyba nie zdążyłam jeszcze podziękować za ratunek. Zamierzam to naprawić.
+}
+Mary_dialog_2 {
+Ależ Marie, nie trzeba. Żałuję tylko, że nie zdołałem wkroczyć wcześniej. Zanim...
+}
+Mary_dialog_3 {
+Zginął mój wuj... Niestety, nie da się go już przywrócić do życia. Pogodziłam się z tym. Zostało mi tylko jedno — zemsta.
+}
+Mary_dialog_4 {
+Ale Vargas nie żyje.
+}
+Mary_dialog_5 {
+Vargas — tak. Ale nie jego Hiszpania. Zdaje się, że nic nie było mu droższe od własnego kraju.
+}
+Mary_dialog_6 {
+I teraz to na nią spadnie pani gniew... Dobrze więc, pomogę pani we wszystkim, w czym będę mógł, Marie.
+}
+Mary_dialog_7 {
+Dziękuję, @<pchar>. Jesteś prawdziwym przyjacielem.
+}
+Mary_dialog_8 {
+Niech pan świętuje, kapitanie. Ja muszę jeszcze przejrzeć papiery Vargasa. Jest tam sporo map i zapisków o hiszpańskich posiadłościach. Przed wyprawą na Maracaibo chcę wiedzieć wszystko, co wiedział on.
+}
+Mary_dialog_9 {
+W takim razie nie będę przeszkadzał. Jestem pewien, że znajdzie pani tam wiele ciekawych rzeczy.
+}
+Mary_dialog_10 {
+Dokładnie. W starych archiwach mojego wuja wieś Świętego Łazarza jest wspomniana jako mała osada rybacka zagubiona w głębi Kuby. Ale w zapiskach nie ma ani dokładnej drogi do niej, ani wyjaśnienia, co oznacza imię Clara.
+}
+Mary_dialog_11 {
+Dobrze, w takim razie znajdziemy ją sami.
+}
+Mary_dialog_12 {
+A nad szyfrem popracuję jeszcze po drodze. Może uda się zrozumieć, co znaczą te liczby.
+}
+Mary_dialog_13 {
+Kapitanie, proszę spojrzeć. Chyba rozgryzłam te liczby. To godziny przypływu. Hiszpanie zapisali je jako stopy, żeby dokument wyglądał jak zwykła locja. „Łazarz — dziewięć”, „Clara — jedenaście”... To rozkład.
+}
+Mary_dialog_14 {
+Rozkład dla Srebrnej Floty?
+}
+Mary_dialog_15 {
+Raczej wskazówki samego Arellano. Ciężkie galeony nie wejdą na ślepo do nieznanej zatoki — potrzebują dokładnej godziny przypływu i zmierzonego toru wodnego.
+}
+Mary_dialog_16 {
+Cieszę się, że wyruszyła pani z nami. A jednak martwię się o panią. Po wszystkim, co musiała pani przeżyć, rozsądniej byłoby zostać na Tortudze — z dala od walk.
+}
+Mary_dialog_17 {
+Za nic nie zostałabym na Tortudze. Nie zaznam spokoju, dopóki będę myśleć, że nie zrobiłam dość, by pomścić wuja.
+}
+Mary_dialog_18 {
+Na pani miejscu chyba zrobiłbym to samo. Ale proszę na siebie uważać. Inaczej do zemsty nie dojdzie.
+}
+Mary_dialog_19 {
+Dobrze, Marie. W takim razie proszę nie pozwolić, żeby ta zemsta zgubiła również panią.
+}
+Mary_dialog_20 {
+Najlepiej wysadzić się przy przylądku Anna Maria. To południowa część środkowej Kuby, z dala od Hawany, Santiago i ich patroli.
+}
+Mary_dialog_21 {
+Od tej zatoki do rybackiej osady jest dość daleko. Ale kiedy dotrzemy na miejsce, poznamy je po znaku trzech ryb przy studni. To miejscowy przesąd — wierzą, że taki znak pomaga napełniać sieci rybami.
+}
+Mary_dialog_22 {
+Myślę, że i bez tego znaku zrozumiemy, dokąd trafiliśmy, Marie. Chodźmy.
+}
+Mary_dialog_23 {
+Strzały było słychać z pół ligi stąd. Jeśli Arellano jakimś cudem jeszcze nie uciekł, zrobi to, jeśli będziemy zwlekać.
+}
+Mary_dialog_24 {
+W takim razie nie będziemy zwlekać.
+}
+Mary_dialog_25 {
+Patrol oszukaliśmy, ale Arellano jest ulepiony z innej gliny. Taki człowiek na pewno coś podejrzewa, jeśli zawahamy się choćby na chwilę.
+}
+Mary_dialog_26 {
+Więc weźmiemy go z marszu. Nie damy mu czasu ochłonąć ani zacząć zadawać pytań.
+}
+Mary_dialog_27 {
+Trzy ryby... Jesteśmy na miejscu, kapitanie. Arellano musi ukrywać się gdzieś tutaj, wśród tych chałup.
+}
+Mary_dialog_28 {
+Chodźmy, kapitanie. Trzeba sprawdzić, w jakim jest stanie.
+}
+Mary_dialog_29 {
+Idziemy.
+}
+Mary_dialog_30 {
+Do diabła! Chciałam wypytać go o szyfr...
+}
+Mary_dialog_31 {
+Rozumiem. Ale teraz mamy coś więcej. Potrafisz wskazać ten punkt na mapie, Marie?
+}
+Mary_dialog_32 {
+Bez trudu, kapitanie. Tutaj nawet ślepiec się nie pomyli. Punkt przecięcia leży na północny wschód od Jamajki i na południowy zachód od Hispanioli. Błąd wyniesie najwyżej dwie-trzy mile, więc takiej eskadry na pewno nie stracimy z oczu.
+}
+Mary_dialog_33 {
+Z Veracruz do tego punktu jest nie więcej niż tydzień drogi, a „Margarita” z eskortą już wyszła w morze. Trzeba natychmiast przekazać Michelowi miejsce spotkania i podnieść kotwicę.
+}
+Mary_dialog_34 {
+Na wszystko będziemy mieć zaledwie kilka godzin. Sądzę, że Hiszpanie wyliczyli przejścia tak, by „Margarita” pozostawała bez dodatkowej ochrony jak najkrócej.
+}
+Mary_dialog_35 {
+Jakie to ciekawe...
+}
+Mary_dialog_36 {
+A zanurzenie pańskiego statku mówi coś wręcz przeciwnego, señor kłamco. Jest o dwie stopy większe, niż powinno przy takim ładunku.
+}
+Mary_dialog_37 {
+Do diabła... Dzwoni mi w uszach. Argh... Dobrze, że ci fanatycy tak lubią dramatyzować.
+}
+Mary_dialog_38 {
+Marie... Czy przypadkiem nie pobierała pani lekcji strzelania u L’Olonnais?
+}
+Mary_dialog_39 {
+Ha-ha! Cóż mogę poradzić? Szybko się uczę.
+}
+Mary_dialog_40 {
+Dlatego tak bardzo chciał spalić rejestr! Znak Potosí wskazywał tylko na srebro — żałosną część tego, co tu ukryto. Gdybym nie odebrała mu tych papierów, odpłynęlibyśmy z mąką w ładowniach i nawet nie wiedzieli, że za grodzią zostawiliśmy cały majątek.
+}
+Mary_dialog_41 {
+Proszę mi odtąd zawsze przypominać, żebym nigdy nie przeszkadzał pani grzebać w cudzych papierach, Marie.
+}
+Mary_dialog_42 {
+Cieszę się, że znów pana widzę, kapitanie. Nie zgadnie pan, co znalazłam w kajucie „Margarity”... Admirał naprawdę trzymał prywatną korespondencję. Z żoną. Nasz groźny don Alonso okazał się straszliwie sentymentalny. Aż trochę głupio było mi czytać. Tylko trochę.
+}
+Mary_dialog_43 {
+Przed panią, Marie, niczego nie da się ukryć! Mamy ogromne szczęście, że jest pani po naszej stronie.
+}
+Mary_dialog_44 {
+Chasse-partie gotowe, panowie. Starałam się uwzględnić interesy każdego z nas.
+}
+Mary_dialog_45 {
+Ekhm... Tak. To umowa, według której wszystkie udziały są znane jeszcze przed walką. Admirał otrzymuje należną liczbę udziałów. Kapitanowie — ściśle zgodnie z umową. Cieśli okrętowemu i chirurgowi wypłaca się żołd przed rozpoczęciem wspólnego podziału. Ten, kto pierwszy wedrze się do fortu albo zerwie kastylijski sztandar, otrzymuje dodatkowy udział. Za utratę prawej ręki wypłaca się sześćset peso. Za lewą rękę lub nogę — pięćset. Utracone oko albo palec wycenia się na sto.
+}
+Mary_dialog_46 {
+Z papierów, które udało mi się zdobyć dzięki Zakonowi, znamy rozmieszczenie głównych umocnień Maracaibo. Nie mam jednak mapy lądowych ścieżek, którymi można podejść do fortu od strony lądu.
+}
+Mary_dialog_47 {
+Nawet jeśli rozbijemy fort od strony morza, na lądzie mogą nas czekać nieprzyjemne niespodzianki.
+}
+Mary_dialog_48 {
+Proszę, weź to. Zawsze noszę przy sobie kilka mikstur.
+}
+Mary_dialog_49 {
+Chciałeś czegoś, kapitanie?
+}
+Mary_dialog_50 {
+Nie, idziemy.
+}
+Mary_dialog_51 {
+Kapitanie @<pchar>... Obawiam się, że mam dla nas wszystkich złe wieści. Cele są puste, nie ma tu ani straży, ani więźniów...
+}
+Mary_dialog_52 {
+Więźniów też zabrali?
+}
+Mary_dialog_53 {
+Albo wypuścili. Niestety, nie mamy kogo spytać, co się tutaj wydarzyło. Ale ten, kto tu dowodził, znalazł czas, żeby zabrać papiery. To samo w sobie dziwne: ludzie uciekający z miasta przy huku dział raczej nie martwiliby się rejestrem więźniów.
+}
+Mary_dialog_54 {
+Myśli pani, że przygotowywali się do odwrotu wcześniej?
+}
+Mary_dialog_55 {
+Na to wygląda. I chcę wiedzieć, dlaczego Hiszpanie tak zaciekle bronili fortu, a miasto oddali bez walki.
+}
+Mary_dialog_56_m {
+Michel polecił mnie i Nicolasowi obejrzeć rezydencję gubernatora. Będę rad, jeśli nam pan pomoże.
+}
+Mary_dialog_56_f {
+Michel polecił mnie i Nicolasowi obejrzeć rezydencję gubernatora. Będę rada, jeśli nam pani pomoże.
+}
+Mary_dialog_57 {
+Dołączę do was trochę później. Muszę jeszcze coś tutaj sprawdzić.
+}
+Mary_dialog_58 {
+Chwileczkę... Czujecie? Pachnie spalonym papierem.
+}
+Mary_dialog_59 {
+Do diabła! Szukamy tropów po całym mieście, a tutaj wrzuca się je do ognia! Na górę! Szybko! Zanim spalą wszystko!
+}
+Mary_dialog_60 {
+No już, chodźmy na górę!
+}
+Mary_dialog_61 {
+Kapitanie... Próbowali spalić wszystko, ale ogień nie zdążył dobrać się do wszystkich papierów.
+}
+Mary_dialog_62 {
+Jest coś wartościowego?
+}
+Mary_dialog_63 {
+Oficjalna depesza. Rozkaz ewakuacji.
+}
+Mary_dialog_64 {
+Czytajcie. Szybko.
+}
+Mary_dialog_65 {
+„...Garnizon fortu ma przygotować się do stawienia wrogowi rozpaczliwego oporu. Skarbiec, srebro kościelne, rejestry państwowe i wszelki wartościowy majątek przygotować do natychmiastowego wysłania pod eskortą wszystkich sił niezaangażowanych w obronę fortu...”
+}
+Mary_dialog_66 {
+„...do Gibraltaru”.
+}
+Mary_dialog_67 {
+Ale najpierw zbiorę wszystko, co ocalało. Te papiery jeszcze nam się przydadzą.
+}
+Mary_dialog_68 {
+Zebrałam wszystko. Spieszmy do Michela. Musi wiedzieć o tej depeszy.
+}
+
+LeBasque_Mary_Belfler_1 {
+Nie mogę odtworzyć tekstu w całości. Istnieją tylko fragmenty szyfru. Bez klucza ten dokument mógłby wskazywać na dowolną ławicę piasku na archipelagu.
+}
+
+LeBasque_Mary_Belfler_2 {
+Etienne ma rację. Przejrzałem papiery – bez klucza ten bazgroł mógłby oznaczać cokolwiek, każdą mieliznę od Hawany po Santiago czy Puerto Principe. Potrzebujemy go żywego.
+}
+
+LeBasque_Mary_Belfler_3 {
+Czy ty kiedykolwiek myślisz, zanim naciśniesz spust?! Przez twój żart możemy stracić cały nasz łup!
+}
+
+LeBasque_Mary_Belfler_4 {
+A w trakcie bitwy spaliłeś jakieś śmieci, których nikt nie potrzebował, prawda?
+}
+
+LeBasque_Mary_Belfler_5 {
+Niestety, muszę cię rozczarować. Daj mi tę kartkę. Natychmiast.
+}
+
+LeBasque_Mary_Belfler_6 {
+Co się stało z tym biedakiem?
+}
+
+LeBasque_Mary_Belfler_7 {
+Co Hiszpanie tu robią? Myślałem, że nie interesują się tą wyspą.
+}
+
+LeBasque_Mary_Belfler_8 {
+Główne siły garnizonu odpłynęły wraz z konwojem. Fort pozostał, aby osłonić odwrót.
+}
+
+LeBasque_Mary_Belfler_9 {
+Muszę tylko ustalić liczebność garnizonu. Umocnienia i dojścia są już opisane w dokumentach, które przywiozłem z Zakonu. Daj mi pół godziny – znajdę wszystko.
+}

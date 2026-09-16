@@ -21,6 +21,15 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 						StringFromKey("Villemstad_Usurer_11"),
 						StringFromKey("Villemstad_Usurer_12"), npchar, Dialog.CurrentNode);
 			link.l1.go = "exit";
+			// ==> Эммануэль Пардаль: Портниха знатной дамы
+			if(CheckAttribute(pchar, "questTemp.EPL_PZD_Rostovshik"))
+			{
+				DeleteAttribute(pchar, "questTemp.EPL_PZD_Rostovshik");
+				link.l1 = StringFromKey("Villemstad_Usurer_67");
+				link.l1.go = "EPL_PZD_Rost_1";
+				break;
+			}
+			// <== Эммануэль Пардаль: Портниха знатной дамы
 			// ==> англ.линейка квест №4 Разведмиссию в Кюрасао
 			if (pchar.questTemp.State == "Intelligence_Curacao_toYozef")
 			{
@@ -273,6 +282,25 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 			AddLandQuestmark_Main(CharacterFromID(pchar.questTemp.piratesLine.Q5.city_1 + "_usurer"), "Pir_Line");
 			AddLandQuestMarkToFantoms_Main("habitue", "Pir_Line", "PL5Hunter_toFirst_Habitues_QuestMarkCondition");
 		break;
+		
+		// ==> Эммануэль Пардаль: Портниха знатной дамы
+		case "EPL_PZD_Rost_1":
+    		dialog.text = StringFromKey("Villemstad_Usurer_68");
+    		link.l1 = StringFromKey("Villemstad_Usurer_69");
+    		link.l1.go = "EPL_PZD_Rost_2";
+			RemoveLandQuestmark_Main(CharacterFromID("Villemstad_usurer"), "EPL_PZD");
+ 		break;
+		case "EPL_PZD_Rost_2":
+    		dialog.text = StringFromKey("Villemstad_Usurer_70");
+    		link.l1 = StringFromKey("Villemstad_Usurer_71");
+    		link.l1.go = "EPL_PZD_Rost_3";
+ 		break;
+		case "EPL_PZD_Rost_3":
+    		dialog.text = StringFromKey("Villemstad_Usurer_72");
+    		link.l1 = StringFromKey("Villemstad_Usurer_73");
+    		link.l1.go = "exit";
+ 		break;
+		// <== Эммануэль Пардаль: Портниха знатной дамы
 	}
 	UnloadSegment(NPChar.FileDialog2);  // если где-то выход внутри switch  по return не забыть сделать анлод
 }

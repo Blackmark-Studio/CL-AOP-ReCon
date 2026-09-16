@@ -1,170 +1,170 @@
-SeaQuestions_1 {什么叫做穿过前桅横帆孔洞，并通过支索上专用滑轮的一组绳索？}
-SeaQuestions_2 {缆绳}
-SeaQuestions_3 {在海上很难保持食物新鲜，但只要保持干燥，这种饼干可以保存多年。}
-SeaQuestions_4 {硬饼}
-SeaQuestions_5 {用于清理炮管火药残渣的、装在木杆上的圆柱形刷子叫什么？}
-SeaQuestions_6 {清洁杆}
-SeaQuestions_7 {船体水线以上的加固外板条叫什么名字？}
-SeaQuestions_8 {护舷条}
-SeaQuestions_9 {你知道用来把桁杆或斜桁固定在主桅或上桅上的那段包皮绳叫什么吗？}
-SeaQuestions_10 {Parral}
-SeaQuestions_11 {用细绳或引缆把两根绳索绑在一起，这叫什么？}
-SeaQuestions_12 {缆绳绑扎}
-SeaQuestions_13 {帆船船首的横向舱壁叫什么？}
-SeaQuestions_14 {艏楼}
-SeaQuestions_15 {你知道船上用于支撑甲板、连接两侧肋骨、并赋予船体横向强度的横梁叫什么吗？}
+SeaQuestions_1 {穿过船艏上帆， 并与支索间互相连接的帆索叫做什么？ }
+SeaQuestions_2 {折帆索}
+SeaQuestions_3 {在海上很难保持食物新鲜， 但只要保持干燥， 哪种饼干可以保存多年。 }
+SeaQuestions_4 {硬饼干}
+SeaQuestions_5 {用于清理炮管火药残渣的、 装在木杆上的圆柱形刷子叫什么？ }
+SeaQuestions_6 {通条}
+SeaQuestions_7 {在船体外部吃水线上方， 用于保护外部船体的加固木条叫做什么？ }
+SeaQuestions_8 {护舷木}
+SeaQuestions_9 {你知道用来把桁杆或斜桁固定在主桅或上桅上的那段包皮绳叫什么吗？ }
+SeaQuestions_10 {桁索}
+SeaQuestions_11 {用细绳或引缆把两根绳索绑在一起， 这叫什么？ }
+SeaQuestions_12 {缠扎}
+SeaQuestions_13 {帆船艏部的外侧由防水壁组成的凸起物叫什么？ }
+SeaQuestions_14 {撞角}
+SeaQuestions_15 {你知道船上用于支撑甲板、 连接两侧肋骨、 并赋予船体横向强度的横梁叫什么吗？ }
 SeaQuestions_16 {横梁}
-SeaQuestions_17 {那种有两排桨的古代桨帆战船叫什么名字？}
-SeaQuestions_18 {双桨战船}
-SeaQuestions_19 {船甲板上用来固定绳索的木制柱叫什么？}
-SeaQuestions_20 {系缆柱}
-SeaQuestions_21 {船首斜桅上安装横帆的小桅叫什么？}
-SeaQuestions_22 {前桅中桅}
-SeaQuestions_23 {请说出固定在艏斜桅下方的帆的名称。}
-SeaQuestions_24 {盲帆}
-SeaQuestions_25 {你知道那种只在一端固定的横向桅杆叫什么吗？我给你个提示：它们用来把帆伸到船舷外、分开索具、还可以悬挂小艇。}
-SeaQuestions_26 {舷炮}
-SeaQuestions_27 {告诉我，顶桅上延伸出去的那根桅杆叫什么？}
-SeaQuestions_28 {上桅}
-SeaQuestions_29 {你称用于在水平面上转动桅杆的活动索具叫什么？}
-SeaQuestions_30 {斜桁}
-SeaQuestions_31 {请问，用来起锚和吊货的那个带有水平轴的装置叫什么？}
-SeaQuestions_32 {绞盘}
-SeaQuestions_33 {当你发射舰炮时，会有很大的后坐力。用来缓冲后坐的那根粗绳叫什么？}
-SeaQuestions_34 {炮闩}
-SeaQuestions_35 {请说出直接系在主帆上的附加帆的名称。}
-SeaQuestions_36 {Bonnet}
-SeaQuestions_37 {当船只顶风航行时，用来拉住方帆后缘朝向船头的那根绳索叫什么？}
-SeaQuestions_38 {缭绳}
-SeaQuestions_39 {告诉我，你们怎么称呼从下往上数第三块横帆——就是升挂在中桅顶帆桁和上桅横帆桁之间的那块？}
-SeaQuestions_40 {上桅帆}
-SeaQuestions_41 {标准索具中那些加固桅杆、固定在两侧的粗绳叫什么？}
-SeaQuestions_42 {横桅索}
-SeaQuestions_43 {告诉我，固定艏斜桅与船首的那根缆绳叫什么？}
-SeaQuestions_44 {支索}
-SeaQuestions_45 {你知道把船从浅滩拖出来用的那个辅助锚叫什么吗？}
-SeaQuestions_46 {系锚}
-SeaQuestions_47 {你知道炮尾端那个圆形凸起叫什么吗？}
-SeaQuestions_48 {炮尾球}
-SeaQuestions_49 {你称那些系在支索上的小绳子，用来攀爬到桅杆和上桅杆的叫什么？}
-SeaQuestions_50 {横桅索}
-SeaQuestions_51 {告诉我，用来吊起小船、货物和其他许多东西的绳子末端固定的金属挂钩叫什么名字。}
-SeaQuestions_52 {吊钩}
-SeaQuestions_53 {你知道船尾平坦部分挂着船尾灯的地方叫什么吗？}
-SeaQuestions_54 {艉楼}
-SeaQuestions_55 {告诉我，用来将帆角拉向船头的活动绳索叫什么名字。}
-SeaQuestions_56 {横帆转向}
-SeaQuestions_57 {你知道支撑三角帆顶端的倾斜桅杆叫什么吗？}
-SeaQuestions_58 {横帆}
-SeaQuestions_59 {等于十分之一海里的是哪种长度单位？}
-SeaQuestions_60 {缆绳}
-SeaQuestions_61 {装有火药的小布袋叫什么？}
+SeaQuestions_17 {那种有两排桨的古代桨帆战船叫什么名字？ }
+SeaQuestions_18 {双排桨战船}
+SeaQuestions_19 {船甲板上用来固定绳索的木制柱叫什么？ }
+SeaQuestions_20 {缆柱}
+SeaQuestions_21 {船首斜桅上承载横帆横桁的小型桅杆叫什么？ }
+SeaQuestions_22 {首斜顶桅}
+SeaQuestions_23 {船艏斜桁下的船帆叫做什么？ }
+SeaQuestions_24 {下斜桅帆}
+SeaQuestions_25 {你知道那种只在一端固定的横向桅杆叫什么吗？ 我给你个提示： 它们用来把帆伸到船舷外、 分开索具、 还可以悬挂小艇。 }
+SeaQuestions_26 {吊杆}
+SeaQuestions_27 {告诉我， 顶桅上延伸出去的那根桅杆叫什么？ }
+SeaQuestions_28 {顶上桅}
+SeaQuestions_29 {你称用于在水平面上转动桅杆的活动索具叫什么？ }
+SeaQuestions_30 {转桁索}
+SeaQuestions_31 {通过水平轴向转动吊起船锚和货物的机械叫做什么？ }
+SeaQuestions_32 {起锚绞盘}
+SeaQuestions_33 {当你发射舰炮时， 会有很大的后坐力。 用来缓冲后坐的那根粗绳叫什么？ }
+SeaQuestions_34 {炮索}
+SeaQuestions_35 {请说出直接系在主帆上的附加帆的名称。 }
+SeaQuestions_36 {罩帆}
+SeaQuestions_37 {帆船顺风航行时， 将横帆向船艏拉紧的缆索叫做什么？ }
+SeaQuestions_38 {船艏缆}
+SeaQuestions_39 {位于顶桅横衍和顶上桅横衍之间， 从甲板向上数第三块桅帆叫什么？ }
+SeaQuestions_40 {顶上桅帆}
+SeaQuestions_41 {在标准缆具中， 将桅杆与船舷连接的粗缆叫做什么？ }
+SeaQuestions_42 {支索}
+SeaQuestions_43 {告诉我， 固定艏斜桅与船首的那根缆绳叫什么？ }
+SeaQuestions_44 {艏桁索}
+SeaQuestions_45 {你知道把船从浅滩拖出来用的那个辅助锚叫什么吗？ }
+SeaQuestions_46 {小锚}
+SeaQuestions_47 {你知道炮尾端那个圆形凸起叫什么吗？ }
+SeaQuestions_48 {尾钮}
+SeaQuestions_49 {拴紧并穿过支索， 可以用于攀爬上桅和顶桅的细缆叫什么？ }
+SeaQuestions_50 {桅索梯}
+SeaQuestions_51 {告诉我， 用来吊起小船、 货物和其他许多东西的绳子末端固定的金属挂钩叫什么名字。 }
+SeaQuestions_52 {铁钩}
+SeaQuestions_53 {你知道船尾平坦部分挂着船尾灯的地方叫什么吗？ }
+SeaQuestions_54 {船艉栏杆}
+SeaQuestions_55 {告诉我， 用来将帆角拉向船头的活动绳索叫什么名字。 }
+SeaQuestions_56 {定位索}
+SeaQuestions_57 {你知道支撑三角帆顶端的倾斜桅杆叫什么吗？ }
+SeaQuestions_58 {斜桁}
+SeaQuestions_59 {相当于十分之一海里的长度计量单位叫做什么？ }
+SeaQuestions_60 {链}
+SeaQuestions_61 {装有火药的小布袋叫什么？ }
 SeaQuestions_62 {火药袋}
-SeaQuestions_63 {你知道船尾上层甲板上凸起的部分叫什么吗？}
+SeaQuestions_63 {你知道船尾上层甲板上凸起的部分叫什么吗？ }
 SeaQuestions_64 {后甲板}
-SeaQuestions_65 {请告诉我，那个插入结中防止其收紧的圆锥形硬木块叫什么名字？}
-SeaQuestions_66 {切换}
-SeaQuestions_67 {你知道从桅杆到艏斜桅之间系着的三角帆叫什么吗？}
-SeaQuestions_68 {Jib}
-SeaQuestions_69 {你知道船舷上用于锚链通过的开口叫什么吗？小心点……}
-SeaQuestions_70 {缆孔}
-SeaQuestions_71 {你知道后桅的方顶帆叫什么吗？}
-SeaQuestions_72 {后桅顶帆}
-SeaQuestions_73 {你知道方帆外缘上那块梯形附加帆叫什么吗？}
-SeaQuestions_74 {加帆}
-SeaQuestions_75 {缝补帆边用的那种柔软绳子叫什么？}
-SeaQuestions_76 {包边绳}
-SeaQuestions_77 {用来测量水深的那个重物叫什么？}
-SeaQuestions_78 {舵柄}
-SeaQuestions_79 {你知道用铅坠测量海底、绘制海岸线的人叫什么吗？}
-SeaQuestions_80 {前桅三角帆}
-SeaQuestions_81 {你知道帆上那个圆形加固的孔叫什么吗？}
-SeaQuestions_82 {锚孔}
-SeaQuestions_83 {那你告诉我，桅杆上从下数第二块方帆叫什么？就是夹在帆头和帆脚之间的那块。}
-SeaQuestions_84 {方形顶帆}
-SeaQuestions_85 {你知道什么叫木钉吗？}
+SeaQuestions_65 {请告诉我， 那个插入结中防止其收紧的圆锥形硬木块叫什么名字？ }
+SeaQuestions_66 {木扣}
+SeaQuestions_67 {你知道从桅杆到艏斜桅之间系着的三角帆叫什么吗？ }
+SeaQuestions_68 {艏三角帆}
+SeaQuestions_69 {你知道船舷上用于锚链通过的开口叫什么吗？ 小心点…… }
+SeaQuestions_70 {锚孔}
+SeaQuestions_71 {你知道后桅的方顶帆叫什么吗？ }
+SeaQuestions_72 {后顶桅帆}
+SeaQuestions_73 {你知道方帆外缘上那块梯形附加帆叫什么吗？ }
+SeaQuestions_74 {辅助帆}
+SeaQuestions_75 {缝补帆边用的那种柔软绳子叫什么？ }
+SeaQuestions_76 {帆缘索}
+SeaQuestions_77 {用来测量水深的那个重物叫什么？ }
+SeaQuestions_78 {铅锤}
+SeaQuestions_79 {你知道用铅坠测量海底、 绘制海岸线的人叫什么吗？ }
+SeaQuestions_80 {舵手}
+SeaQuestions_81 {你知道帆上那个圆形加固的孔叫什么吗？ }
+SeaQuestions_82 {帆索环}
+SeaQuestions_83 {那你告诉我， 桅杆上从下数第二块方帆叫什么？ 就是夹在帆头和帆脚之间的那块。 }
+SeaQuestions_84 {顶桅横帆}
+SeaQuestions_85 {木制钉子叫做什么？ }
 SeaQuestions_86 {木钉}
-SeaQuestions_87 {你知道那个用来放指南针、灯和沙漏的木箱叫什么吗？}
+SeaQuestions_87 {你知道那个用来放指南针、 灯和沙漏的木箱叫什么吗？ }
 SeaQuestions_88 {罗经箱}
-SeaQuestions_89 {水手在桅杆横杆上作业时踩的绳索叫什么？}
-SeaQuestions_90 {脚索}
-SeaQuestions_91 {在有甲板的船上，舷墙最上面的木材叫什么？}
-SeaQuestions_92 {舷侧}
-SeaQuestions_93 {有时候帆上会有一条横向的系绳，用来缩小帆的面积。这个叫什么？}
-SeaQuestions_94 {暗礁}
-SeaQuestions_95 {锚尾端那个用来系绳子的环叫什么来着？}
-SeaQuestions_96 {领航员}
-SeaQuestions_97 {你称连接桅杆各段的结构叫什么？}
-SeaQuestions_98 {桅顶横桁}
-SeaQuestions_99 {那你告诉我，桅杆底部固定的位置叫什么？}
-SeaQuestions_100 {横帆}
-SeaQuestions_101 {你知道下桅杆延伸出来的那根桅杆叫什么吗？}
-SeaQuestions_102 {上桅}
-SeaQuestions_103 {告诉我那个三角形或有时是梯形、挂在支索上的纵帆叫什么名字。}
-SeaQuestions_104 {前帆}
-SeaQuestions_105 {你用什么来涂抹船底，以防止船蛆侵蚀？}
-SeaQuestions_106 {焦油}
-SeaQuestions_107 {有一面帆，前后纵帆，呈梯形。上边系在斜桁上，下边沿着帆杆展开。这叫什么？}
-SeaQuestions_108 {三角帆}
-SeaQuestions_109 {那艘古希腊战舰叫什么名字？它有三层桨座，用冲角作武器。}
-SeaQuestions_110 {舷缘}
-SeaQuestions_111 {你知道那种有三排桨的古罗马战舰叫什么吗？}
-SeaQuestions_112 {三列桨座战船}
-SeaQuestions_113 {你知道从艏斜桅延伸出去的那根桅杆叫什么吗？}
-SeaQuestions_114 {艏斜桅}
-SeaQuestions_115 {提醒我一下，用来升起东西的那根绳子叫什么？比如升起桅杆、帆、信号旗……}
-SeaQuestions_116 {升帆索}
-SeaQuestions_117 {当船舷在开放的上层甲板上方继续延伸时，这种结构叫什么？}
+SeaQuestions_89 {水手在桅杆横杆上作业时踩的绳索叫什么？ }
+SeaQuestions_90 {握索}
+SeaQuestions_91 {在有甲板的船上， 舷墙最上面的木材叫什么？ }
+SeaQuestions_92 {舷边}
+SeaQuestions_93 {有时候帆上会有一条横向的系绳， 用来缩小帆的面积。 这个叫什么？ }
+SeaQuestions_94 {缩帆带}
+SeaQuestions_95 {锚尾端那个用来系绳子的环叫什么来着？ }
+SeaQuestions_96 {锚眼}
+SeaQuestions_97 {你称连接桅杆各段的结构叫什么？ }
+SeaQuestions_98 {横桁}
+SeaQuestions_99 {那你告诉我， 桅杆底部固定的位置叫什么？ }
+SeaQuestions_100 {踏脚}
+SeaQuestions_101 {你知道下桅杆延伸出来的那根桅杆叫什么吗？ }
+SeaQuestions_102 {顶桅}
+SeaQuestions_103 {告诉我那个三角形或有时是梯形、 挂在支索上的纵帆叫什么名字。 }
+SeaQuestions_104 {支索帆}
+SeaQuestions_105 {你用什么来涂抹船底， 以防止船蛆侵蚀？ }
+SeaQuestions_106 {柏油}
+SeaQuestions_107 {上部与斜桁相连， 下部沿吊杆延伸的梯形纵帆叫做什么？ }
+SeaQuestions_108 {艏斜帆衍}
+SeaQuestions_109 {那艘古希腊战舰叫什么名字？ 它有三层桨座， 用冲角作武器。 }
+SeaQuestions_110 {三排浆战船}
+SeaQuestions_111 {你知道那种有三排桨的古罗马战舰叫什么吗？ }
+SeaQuestions_112 {三列桨战船}
+SeaQuestions_113 {你知道从艏斜桅延伸出去的那根桅杆叫什么吗？ }
+SeaQuestions_114 {第二斜桅}
+SeaQuestions_115 {提醒我一下， 用来升起东西的那根绳子叫什么？ 比如升起桅杆、 帆、 信号旗…… }
+SeaQuestions_116 {吊索}
+SeaQuestions_117 {当船舷在开放的上层甲板上方继续延伸时， 这种结构叫什么？ }
 SeaQuestions_118 {舷墙}
-SeaQuestions_119 {你们把用来调整火炮垂直方向的圆柱形凸起叫什么？}
+SeaQuestions_119 {你们把用来调整火炮垂直方向的圆柱形凸起叫什么？ }
 SeaQuestions_120 {耳轴}
-SeaQuestions_121 {你知道帆船尾部的上层甲板叫什么吗？就是值班军官站立、放置罗盘的地方。}
+SeaQuestions_121 {你知道帆船尾部的上层甲板叫什么吗？ 就是值班军官站立、 放置罗盘的地方。 }
 SeaQuestions_122 {后甲板}
-SeaQuestions_123 {你们怎么称呼沿着船舷横向铺设、从艏楼通往后甲板用来行走的宽木板？}
-SeaQuestions_124 {中桅支索}
-SeaQuestions_125 {你知道把帆的下角拉向船尾、并固定帆的位置的那根绳子叫什么吗？}
-SeaQuestions_126 {前帆}
-SeaQuestions_127 {你知道船体肋骨状横梁叫什么吗？}
-SeaQuestions_128 {靶场}
-SeaQuestions_129 {你把绳子绕在物体上形成一个圈，这叫什么？}
-SeaQuestions_130 {回转}
-SeaQuestions_131 {你说的那个用来卸下火炮的又大又圆柱形的勺子叫什么？就是用来把弹丸和火药包拉出来的那个。}
-SeaQuestions_132 {灯笼}
-SeaQuestions_133 {你知道那种有两个孔、用于连接桅杆各部分的木质连接环叫什么吗？}
-SeaQuestions_134 {桅顶}
-SeaQuestions_135 {告诉我，你们怎么称呼那种没有滑轮的圆形木块？它们有三个通孔，用来拉紧支索和侧支索。}
-SeaQuestions_136 {死眼}
-SeaQuestions_137 {在本世纪中叶，加勒比地区的主要出口是什么？}
-SeaQuestions_138 {糖}
-SeaQuestions_139 {本世纪初中期，加勒比地区的主要进口是什么？}
+SeaQuestions_123 {你们怎么称呼沿着船舷横向铺设、 从艏楼通往后甲板用来行走的宽木板？ }
+SeaQuestions_124 {舯部}
+SeaQuestions_125 {你知道把帆的下角拉向船尾、 并固定帆的位置的那根绳子叫什么吗？ }
+SeaQuestions_126 {缭绳}
+SeaQuestions_127 {你知道船体肋骨状横梁叫什么吗？ }
+SeaQuestions_128 {肋骨}
+SeaQuestions_129 {你把绳子绕在物体上形成一个圈， 这叫什么？ }
+SeaQuestions_130 {绕}
+SeaQuestions_131 {你说的那个用来卸下火炮的又大又圆柱形的勺子叫什么？ 就是用来把弹丸和火药包拉出来的那个。 }
+SeaQuestions_132 {渣罐}
+SeaQuestions_133 {你知道那种有两个孔、 用于连接桅杆各部分的木质连接环叫什么吗？ }
+SeaQuestions_134 {桅箍}
+SeaQuestions_135 {告诉我， 你们怎么称呼那种没有滑轮的圆形木块？ 它们有三个通孔， 用来拉紧支索和侧支索。 }
+SeaQuestions_136 {三眼木饼}
+SeaQuestions_137 {在本世纪中叶， 加勒比地区的主要出口货物是什么？ }
+SeaQuestions_138 {蔗糖}
+SeaQuestions_139 {本世纪初中期， 加勒比地区的主要进口货物是什么？ }
 SeaQuestions_140 {奴隶}
-SeaQuestions_141 {第一位环绕地球航行的荷兰航海家是谁？}
-SeaQuestions_142 {Olivier van Noort}
-SeaQuestions_143 {那么荷兰东印度公司于1626年建立了第一座贸易站。它叫什么名字？}
+SeaQuestions_141 {第一位环绕地球航行的荷兰航海家是谁？ }
+SeaQuestions_142 {奥利弗.范努特}
+SeaQuestions_143 {那么荷兰东印度公司于1626年建立了第一座贸易站。 它叫什么名字？ }
 SeaQuestions_144 {新阿姆斯特丹}
-SeaQuestions_145 {那我们来玩个游戏吧。我是英国诗人、海盗和海军上将，曾经殖民弗吉尼亚，还深受伊丽莎白一世女王的宠爱。1618年我被斩首。你猜我是谁？}
-SeaQuestions_146 {沃尔特·雷利爵士}
-SeaQuestions_147 {第一个升起骷髅旗的海盗是谁？}
-SeaQuestions_148 {Emanuel Wynne}
-SeaQuestions_149 {安装在船尾柱上，用于操纵船只方向的沉重平板木或金属部件叫什么？}
+SeaQuestions_145 {那我们来玩个游戏吧。 我是英国诗人、 海盗和海军上将， 曾经殖民弗吉尼亚， 还深受伊丽莎白一世女王的宠爱。 1618年我被斩首。 你猜我是谁？ }
+SeaQuestions_146 {沃尔特.雷利爵士}
+SeaQuestions_147 {第一个升起骷髅旗的海盗是谁？ }
+SeaQuestions_148 {艾曼纽.韦恩}
+SeaQuestions_149 {安装在舵柱上， 用于操纵船只方向的沉重而平整的木板或金属板叫什么？ }
 SeaQuestions_150 {舵}
-SeaQuestions_151 {将船只转向，使风吹到帆的另一侧，这个过程叫什么？}
-SeaQuestions_152 {换舵}
-SeaQuestions_153 {当你面向船头时，船的左侧叫什么？}
+SeaQuestions_151 {使船只转动， 让风从另一侧吹向帆面的过程叫什么？ }
+SeaQuestions_152 {换向}
+SeaQuestions_153 {当你面向船头时， 船的左侧叫什么？ }
 SeaQuestions_154 {左舷}
-SeaQuestions_155 {大型船只中最低且主要的甲板，通常是火炮安装的位置，这叫什么名字？}
+SeaQuestions_155 {大型船只中最低且主要的甲板， 通常是火炮安装的位置， 这叫什么名字？ }
 SeaQuestions_156 {炮甲板}
-SeaQuestions_157 {你知道那种在地中海常见、既有纵帆又有横帆的小型快速帆船叫什么吗？}
-SeaQuestions_158 {谢贝克}
-SeaQuestions_159 {船首短而高起的甲板叫什么名字？}
+SeaQuestions_157 {你知道那种在地中海常见、 既有纵帆又有横帆的小型快速帆船叫什么吗？ }
+SeaQuestions_158 {谢贝克帆船}
+SeaQuestions_159 {船首短而高起的甲板叫什么名字？ }
 SeaQuestions_160 {前甲板}
-SeaQuestions_161 {你知道船头前部那个通常用来固定斜桅杆的竖直桅杆叫什么吗？}
-SeaQuestions_162 {前支索}
-SeaQuestions_163 {船上的厨房叫什么？}
-SeaQuestions_164 {肋骨}
-SeaQuestions_165 {用来判断船只在水中是否垂直的重物线叫什么？}
+SeaQuestions_161 {你知道船头前部那个通常用来固定斜桅杆的竖直桅杆叫什么吗？ }
+SeaQuestions_162 {首柱}
+SeaQuestions_163 {船上的厨房叫什么？ }
+SeaQuestions_164 {船用厨房}
+SeaQuestions_165 {用来判断船只在水中是否垂直的重物线叫什么？ }
 SeaQuestions_166 {铅垂线}
-SeaQuestions_167 {安装在桅杆上的水平圆形平台，用作瞭望哨的叫什么？}
-SeaQuestions_168 {瞭望台}
-SeaQuestions_169 {在浓雾中用来发出低沉共鸣声以标示船只位置的那种大型通常为青铜制的物件叫什么名字？}
+SeaQuestions_167 {安装在桅杆上的水平圆形平台， 用作瞭望哨的叫什么？ }
+SeaQuestions_168 {桅楼}
+SeaQuestions_169 {在浓雾中用来发出低沉共鸣声以标示船只位置的那种大型通常为青铜制的物件叫什么名字？ }
 SeaQuestions_170 {雾钟}

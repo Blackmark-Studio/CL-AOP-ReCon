@@ -1,0 +1,63 @@
+Bucaneer_man_1 {
+Hic... Oh, capitaine ! Viens près du feu ! Que le tonnerre m'emporte, ce soir on boit à ta santé et à la perte de toute l'Espagne !
+}
+Bucaneer_man_2 {
+Je me joins volontiers à vous, les gars. Je vois que le rhum coule à flots.
+}
+Bucaneer_man_3 {
+Maudite chaleur. La viande tourne plus vite qu'on ne peut la boucaner sur les claies. S'il ne tombe pas une bonne pluie dans les prochains jours, il faudra s'enfoncer plus profondément dans la jungle pour trouver du gibier frais.
+}
+Bucaneer_man_4 {
+La poudre a pris l'humidité, mon mousquet rate un coup sur deux. Je vais passer toute la soirée à nettoyer la platine et à sécher mes réserves ; sinon, si je tombe sur une patrouille espagnole, je ne servirai pas à grand-chose.
+}
+Bucaneer_man_5 {
+On crève d'ennui, capitaine. Pister des sangliers pendant des semaines, ce n'est pas pour les nerfs fragiles. Tu n'aurais pas deux pesos qui traînent ? Je voulais jouer aux dés avec les gars, mais mes poches sont vides.
+}
+Bucaneer_man_6 {
+Cette jungle finira par me mettre au tombeau. Une saleté de bestiole m'a mordu hier, et maintenant mon bras est tellement gonflé que tenir un sabre me fait mal. Les gens d'ici disent que ça passera tout seul. J'espère qu'ils ne mentent pas.
+}
+Bucaneer_man_7 {
+J'ai entendu dire qu'à la Tortue, les revendeurs n'ont plus aucune honte : ils nous rachètent les peaux pour une bouchée de pain. Je crois qu'il est temps d'abandonner la chasse et de reprendre la mer. Au moins, là-bas, le butin se partage plus honnêtement.
+}
+Bucaneer_man_8 {
+C'est la vie des boucaniers. Portez-vous bien.
+}
+Bucaneer_man_9 {
+Bonne chance dans vos affaires. Je ne vous retiens pas.
+}
+Bucaneer_man_10 {
+Par tous les saints, capitaine, aujourd'hui même notre tord-boyaux trouble se boit comme le meilleur bourgogne ! Nous, pendant ce temps, on pataugeait ici dans la boue et la suie, à nourrir les moustiques et assommer les cochons sauvages, tandis que vous accomplissiez de grandes choses. Mais Dieu m'en est témoin, quand je vois nos femmes rire de nouveau autour des feux... diable, toute la Tortue est en fête ce soir ! Bois avec nous, capitaine !
+}
+Bucaneer_man_11 {
+Que le tonnerre m'emporte si je ne vide pas un tonnelet à moi tout seul ce soir ! Nous n'étions pas avec vous sous le feu des mousquets, capitaine, c'est la pure vérité. Mais arracher ces malheureuses femmes aux griffes du chacal castillan Vargas, voilà une œuvre vraiment noble, digne du roi lui-même ! À votre santé ! Hic... diable, quelqu'un, encore du rhum !
+}
+Bucaneer_man_12 {
+Vous savez, capitaine... hic... on dit que les vrais miracles n'existent pas. Moi, je regarde ce feu, j'écoute les filles chanter, et je comprends qu'on nous ment effrontément ! Nous autres boucaniers sommes des gens simples, on ne prend pas part aux grands sièges. Mais aujourd'hui, les Castillans ont payé de leur sang, et la vie est revenue à la Tortue. Que le Basque garde toute la gloire en Europe ; ici, c'est à vous seuls que nous buvons ! Tendez votre chope !
+}
+Bucaneer_man_13 {
+Buvez et faites la fête, les gars ! Cette fête est à vous de plein droit.
+}
+Bucaneer_man_14 {
+Voilà une soirée digne de ce nom. Je ne vais pas vous déranger : videz les tonnelets jusqu'à la dernière goutte !
+}
+Bucaneer_man_15 {
+Maudite chaleur. La viande tourne plus vite qu'on ne peut la boucaner sur les claies. S'il ne tombe pas une bonne pluie dans les prochains jours, il faudra s'enfoncer plus profondément dans la jungle pour trouver du gibier frais.
+}
+Bucaneer_man_16 {
+La poudre a pris l'humidité, mon mousquet rate un coup sur deux. Je vais passer toute la soirée à nettoyer la platine et à sécher mes réserves ; sinon, si je tombe sur une patrouille espagnole, je ne servirai pas à grand-chose.
+}
+Bucaneer_man_17 {
+On crève d'ennui, capitaine. Pister des sangliers pendant des semaines, ce n'est pas pour les nerfs fragiles. Tu n'aurais pas deux pesos qui traînent ? Je voulais jouer aux dés avec les gars, mais mes poches sont vides.
+}
+Bucaneer_man_18 {
+Cette jungle finira par me mettre au tombeau. Une saleté de bestiole m'a mordu hier, et maintenant mon bras est tellement gonflé que tenir un sabre me fait mal. Les gens d'ici disent que ça passera tout seul. J'espère qu'ils ne mentent pas.
+}
+Bucaneer_man_19 {
+J'ai entendu dire qu'à la Tortue, les revendeurs n'ont plus aucune honte : ils nous rachètent les peaux pour une bouchée de pain. Je crois qu'il est temps d'abandonner la chasse et de reprendre la mer. Au moins, là-bas, le butin se partage plus honnêtement.
+}
+Bucaneer_man_20 {
+C'est la vie des boucaniers. Portez-vous bien.
+}
+Bucaneer_man_21 {
+Bonne chance dans vos affaires. Je ne vous retiens pas.
+}

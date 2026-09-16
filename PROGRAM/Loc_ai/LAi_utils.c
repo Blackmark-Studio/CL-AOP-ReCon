@@ -346,7 +346,7 @@ void LAi_PlaceCharInTavern(ref chr)
 
 string LAi_FindSitLocatorNear()
 {
-	float x, float y, float z;
+	float x, y, z;
 	GetCharacterPos(Pchar, &x, &y, &z);
 	if(IsEntity(loadedLocation) != true) return "";
 	string at = "locators.sit";
@@ -633,6 +633,11 @@ void LAi_CheckKillCharacter(aref chr)
 			}
 		}
 		LAi_Character_Dead_Process(chr);
+		//Не обыскивается
+		if (CheckAttribute(chr, "CantLoot"))
+		{
+			Dead_DelLoginedCharacter(chr);
+		}
 	}
 }
 
@@ -1038,7 +1043,7 @@ void LAi_FadeEx(float f_start, float f_duration, float f_end, string questFadeOu
 
 void LAi_FadeEx_end(string qName)
 {
-	float f_end = pchar.FadeEx.End;
+	float f_end = stf(pchar.FadeEx.End);
 	SendMessage(&LAi_QuestFader, "lfl", FADER_IN, f_end, true);
 }
 
@@ -1160,7 +1165,7 @@ void Dead_AddLoginedCharacter(aref chr)
 	aref	arToChar;
 	float	nLuck   = GetCharacterSkillToOld(GetMainCharacter(), SKILL_FORTUNE);
 	string	itemID;
-	int		value, count;
+	int		q, value, count;
 	aref	typeRef;
     string  sBullet, sGunPowder;
 	//trace("Dead_AddLoginedCharacter nLuck = " + nLuck);
@@ -1178,6 +1183,10 @@ void Dead_AddLoginedCharacter(aref chr)
 		chref = &Dead_Characters[Dead_Char_num];
 		DeleteAttribute(chref, "items");
 		DeleteAttribute(chref, "Money");
+		if (CheckAttribute(chr, "animal") && CheckAttribute(chr, "model") && chr.model == "koata1")
+		{
+			AddItems(chref, "raw_meat", 1 + rand(1));
+		}
 		if (IsOfficer(chr) || CheckAttribute(chr, "SaveItemsForDead") || CheckAttribute(chr, "SaveQuestItemsForDead") || CheckAttribute(chr, "KeepItems"))// для офицеров и НПС сохраняем все вещи
 		{
 			if (CheckAttribute(chr, "SaveQuestItemsForDead"))
@@ -1200,16 +1209,18 @@ void Dead_AddLoginedCharacter(aref chr)
 	        DelBakSkillAttr(pchar); // boal оптимизация скилов
 	        ClearCharacterExpRate(pchar);
 	        DeleteAttribute(chr, "SaveItemsForDead");// убрать чтоб не было случайно потом
-	
+
+			q = GetAttributesNum(arFromChar);
 			// Генерим предметы
-			for(value = 0; value < ITEMS_QUANTITY; value++)
+			for (value = 0; value < q; value++)
 			{
-				itemID = Items[value].ID;
-				
-				if(IsGenerableItem(itemID) && CheckCharacterItem(chr, itemID))
+				itemID = GetAttributeName(GetAttributeN(arFromChar, value));
+				rItem = ItemsFromID(itemID);
+
+				if (IsGenerableItem(itemID))
 				{
 					count = GetCharacterItem(chr, itemID);
-					RemoveItems(chr, itemID, count); // Забираетм обычные
+					RemoveItems(chr, itemID, count); // Забираем обычные
 					GenerateAndAddItems(chr, itemID, count); // Даем сгенеренные
 				}
 			}
@@ -1329,13 +1340,13 @@ void Dead_AddLoginedCharacter(aref chr)
 				
 				// ItemDeadStartCount для небольшой оптимизации, чтобы не смотреть на предметы,
 				// не использующиеся в InitItemsRarity()
-                for (j = ItemDeadStartCount; j < ITEMS_QUANTITY; j++) 
+                for (j = ItemDeadStartCount; j < ITEMS_QUANTITY; j++)
     			{
 					if (howI >= (11 - MOD_SKILL_ENEMY_RATE))
 					{
 					   break;
 					}
-					makeref(itm,Items[j]);
+					makeref(itm, Items[j]);
 					if (CheckAttribute(itm, name))
 					{
 						makearef(typeRef, itm.(name));
@@ -1351,7 +1362,7 @@ void Dead_AddLoginedCharacter(aref chr)
 								continue;
 						}
 
-                        if (rand(1000) < (((stf(typeRef.rare) + stf(typeRef.rare)*nLuck / 20.0) / makefloat(MOD_SKILL_ENEMY_RATE))*930.0))
+                        if (rand(1000) < (((stf(typeRef.rare) + stf(typeRef.rare) * nLuck / 20.0) / makefloat(MOD_SKILL_ENEMY_RATE)) * 930.0))
                         {
                             value = sti(typeRef.min);
                             value = value+rand(sti(typeRef.max) - value);
@@ -1468,7 +1479,12 @@ void Dead_OpenBoxProcedure()
     if (dchr_index == -1) return;
     
 	deadCh = &Dead_Characters[dchr_index];
-
+	if (CheckAttribute(deadCh, "AoP_ArubaCorpse") && !CheckAttribute(deadCh, "AoP_ArubaSearched")) // ле Баск, шестой квест
+	{
+		deadCh.AoP_ArubaSearched = true;
+		pchar.questTemp.AoP.ArubaLastSearchedCorpse = deadCh.AoP_ArubaLocator;
+		DoQuestCheckDelay("Keys_lagoon_55_1", 0.1);
+	}
     if (isEmpty)
     {
         // Дубль квестовых триггеров из интерфейса:

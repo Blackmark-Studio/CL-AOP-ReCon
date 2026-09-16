@@ -250,6 +250,23 @@ GivePrisonFree.4 {Wygląda na to, że @<sName> po prostu mnie oszukał. Nie znal
 GivePrisonFree.5 {Zgodziłem się pomóc więźniowi w więzieniu @<sCity> o imieniu @<sName>. Muszę porozmawiać z naczelnikiem więzienia; może da się to jakoś rozwiązać.}
 GivePrisonFree.6 {Minęły dwa dni, które mi przydzielono, a wciąż nie udało mi się rozwiązać sprawy uwolnienia więźnia o imieniu @<sName>. Szkoda, ale będzie musiał pozostać w więzieniu.}
 GivePrisonFree.7 {Nie udało mi się uwolnić więźnia o imieniu @<sName>. Trudno, poradzę sobie bez jego skarbu.}
+
+Tutorial_Eng
+{
+Informacja: Co dzieje się w Anglii?
+}
+
+Tutorial_Eng.1
+{
+Anglia od niemal stu lat przeżywa ciężkie czasy. Król Anglii Henryk VIII nie mógł rozwieść się ze swoją pierwszą żoną, Katarzyną Aragońską, ponieważ papież nie wyrażał na to zgody. Wtedy do sprawy włączył się angielski arcybiskup Cranmer i zaproponował Henrykowi, aby sam udzielił sobie rozwodu, skoro jest „pomazańcem bożym”. W 1534 roku Henryk VIII na mocy ustawy parlamentu ogłosił się więc „głową Kościoła”, odrywając tym samym Kościół angielski od władzy Rzymu. Jeden rozwód nie wystarczył Henrykowi VIII: miał w sumie sześć żon, z których dwie — Annę Boleyn i jej kuzynkę Katarzynę Howard — bez wyrzutów sumienia posłał na szafot. Od tamtej pory ziemia angielska nie zaznała spokoju. Maria Tudor próbowała ponownie podporządkować Kościół papieżowi, lecz Jan Kalwin odmienił Anglię i kraj stał się purytański.
+    Wojna domowa Karola I z Oliverem Cromwellem zakończyła się egzekucją króla Anglii. Republika independentów (1649–1660) nie przyniosła Anglii pokoju; dziesięć lat rządów purytanów wyczerpało wszystkich Anglików w Starym Świecie. Wiosną 1660 roku przywrócili więc tron angielski Karolowi II Stuartowi, synowi straconego Karola I.
+    Doprawdy, nie wolno powierzać losu państwa religijnym fanatykom! Czy warto było przelewać rzeki krwi, pozbawiać króla władzy i głowy, aby po dziesięciu latach oddać tron jego synowi?
+    Niedawna wojna Anglii z Hiszpanią w 1655 roku dała się we znaki obu mocarstwom, ale bardziej Hiszpanom, którzy utracili nawet Jamajkę. Hiszpania i Anglia pozostają więc obecnie w pokoju, a wydane przez Anglików listy kaperskie zostały unieważnione. Tyle że wszystko to bzdury: Hiszpanów rabowano dawniej i rabuje się ich nadal — zbyt wiele niewinnej krwi mają na rękach.
+    Od 1664 roku wszystkim rządzi tutaj gubernator Jamajki, sir Thomas Modyford. Po przybyciu do Port Royal otrzymał od Karola II jasne rozkazy: ukrócić piractwo i utrzymywać dobre stosunki handlowe z Hiszpanią. Nie zamierza jednak wykonywać rozkazu króla Anglii, choć stwarza takie pozory.
+    Wcześniej sir Thomas Modyford był gubernatorem Barbadosu. Gdy Cromwell doszedł do władzy, Barbados za sprawą Modyforda odmówił uznania nowych władz brytyjskich. Zachciało mu się niezależności. Cromwell nie był jednak takim Oliverem, który wybacza podobne wybryki, i wysłał eskadrę, by przywołać wyspę do porządku. Modyford dla pozoru stawił opór, lecz szybko porozumiał się z purytanami i przywrócił Barbados pod władzę metropolii. Po koronacji Karola II na brytyjski tron sir Thomas Modyford został mianowany gubernatorem Jamajki, podobno dzięki wpływowym krewnym z otoczenia Karola.
+    A zatem sir Thomas Modyford, gubernator Jamajki, jest wielkim miłośnikiem żółtego diabła. Jego ulubieńcem jest przywódca bukanierów Edward Mansfield, Holender z Curaçao, ale Henry Morgan także nie może narzekać na brak uwagi. Któż odmówi gór hiszpańskiego złota, które Henry przywozi z każdej wyprawy na hiszpańskie osady?
+}
+
 Tutorial_Fra {Informacja: Co się dzieje we Francji?}
 Tutorial_Fra.1
 {
@@ -269,6 +286,28 @@ Ogólnie rzecz biorąc, Francja zachowywała się dość ostrożnie na Karaibach
 
 Wyspa Tortuga miała ogromne znaczenie strategiczne, zwłaszcza dla Hiszpanów. Walka o tę wyspę trwała przez kilka dekad, a Tortuga przechodziła z rąk francuskich do hiszpańskich i z powrotem. W 1654 roku Hiszpanie ponownie zajęli wyspę, ale już w 1659 roku Bractwo Wybrzeża odbiło ją pod dowództwem Jérémy’ego du Rousset, który zmusił mieszkańców do złożenia mu osobistej przysięgi wierności. W 1662 roku tymczasowo przekazał władzę swojemu siostrzeńcowi Frédéricowi Deschamps de la Place i udał się do Europy, by sprzedać Tortugę. Po dwóch latach spędzonych w Bastylii za tę próbę, ostatecznie sprzedał Tortugę za śmieszną sumę piętnastu tysięcy franków Francuskiej Kompanii Zachodnio
 }
+
+Tutorial_Spa
+{
+Informacja: Co dzieje się w Hiszpanii?
+}
+
+Tutorial_Spa.1
+{
+Po śmierci Filipa IV, ostatniego wielkiego monarchy Hiszpanii, kraj wszedł w okres długotrwałej regencji. Nowy król, Karol II Habsburg, ma cztery lata, jest tak słaby i cierpi na tyle chorób, że trudno pojąć, jak w ogóle utrzymuje się przy życiu. Nic dziwnego: jego ojciec Filip IV był już stary, gdy poślubił Marię Annę Austriaczkę, a według pogłosek sam cierpiał na „różne choroby”. Mariana — tak w Hiszpanii nazywano Annę Austriaczkę — została więc regentką swojego syna. Jakie niebezpieczeństwo mogło się z tym wiązać, pokazały niedawne wydarzenia we Francji — wystąpienia Frondy przeciwko Mazarinowi w 1650 roku. Filip IV przygotował więc regencję zawczasu: do pomocy królowej powołał starannie dobraną Juntę Rządową złożoną z przedstawicieli władz politycznych, kościelnych i publicznych.
+    Mimo istnienia junty Mariana, która nie była już w stanie sama dźwigać ciężaru obowiązków, powróciła do instytucji faworytów, aby zapewnić wsparcie regencji światowego mocarstwa. Jej wybór padł na austriackiego spowiednika, jezuitę Johanna Eberharda Nitharda. Pomimo ostrzeżeń królowa początkowo nadała mu jedynie nominalną władzę, mianując go Wielkim Inkwizytorem Hiszpanii, dzięki czemu automatycznie został członkiem Junty Rządowej. Jego obce pochodzenie i działalność polityczna wywołały poważną niechęć wobec niego zarówno w rządzie, jak i w szerokich warstwach społeczeństwa. Niechęć ta jeszcze się pogłębiła z powodu sposobu, w jaki Mariana i Nithard traktowali doświadczonego i szanowanego przyrodniego brata króla Karola II, Don Juana. Don Juan jest jedną z najciekawszych postaci Hiszpanii. Jest mecenasem uczonych takich jak De la Faille, Caramuel y Lobkowitz czy Juanini, właścicielem ogromnej biblioteki i jednym z twórców hiszpańskiej nauki reformistycznej. Ponadto jako dzielny generał i doświadczony gubernator odegrał decydującą rolę w tłumieniu powstań w Neapolu i Barcelonie. Jego dowodzenie we Flandrii i Portugalii w latach 1656–1663 było natomiast znacznie mniej udane.
+    Biedna Hiszpania budzi pewną litość, gdy w chwili słabości jest atakowana ze wszystkich stron. Istnieje jednak powód, dla którego Hiszpanów nienawidzą wszyscy.
+    Na Puerto Rico i pobliskich wysepkach spokojnie żyli bukanierzy — zwykli hodowcy i łowcy bydła, głównie Francuzi — nikomu nie przeszkadzając. Nagle Hiszpanie, nie zważając nawet na to, że działalność bukanierów była korzystna także dla nich samych, postanowili wypędzić ich wszystkich z wyspy San Domingo lub, jeśli to możliwe, całkowicie ich wytępić.
+    Początek realizacji tego okrutnego, a zgubnego także dla samych Hiszpanów zamiaru był bardzo łatwy. Stosując metodę, która tak dobrze sprawdziła im się przeciwko rdzennym mieszkańcom Ameryki, niespodziewanie napadli na rozproszonych, niczego niepodejrzewających i niewinnych bukanierów, część zabili, a pozostałych uprowadzili w niewolę. Od tej chwili łowcy stali się ostrożniejsi, zawsze poruszali się małymi grupami gotowymi do oporu, a jeśli mimo to ich atakowano, walczyli tak zaciekle, że niemal zawsze pokonywali Hiszpanów mimo ich przewagi liczebnej i zmuszali ich do ucieczki.
+    Wtedy Hiszpanie zmienili sposób prowadzenia wojny. Indywidualne polowania na bukanierów, które kosztowały życie niejednego prawowiernego Hiszpana, ustały. Zamiast tego Hiszpanie zaczęli napadać na bukanierów nocą w ich boucanach, zabijali panów i sługi, nie oszczędzając nawet psów. Te okrucieństwa doprowadziły bukanierów do furii. Zjednoczyli się i sami rozpoczęli wojnę ofensywną, nie oszczędzając żadnego wroga. To poskutkowało. Hiszpanie pozornie zaprzestali wszelkich wrogich działań, a bukanierzy zaczęli łudzić się nadzieją, że wreszcie zostaną pozostawieni w spokoju. Ich przeciwnicy czekali jednak tylko na posiłki. Gdy tylko nadeszły one z hiszpańskich kolonii, wojna rozgorzała na nowo. Bukanierzy również otrzymali posiłki: dołączyli do nich Francuzi z Tortugi i innych wysp oraz wielu innych poszukiwaczy przygód i łupów. Wrogowie walczyli bezustannie, a krew lała się na całej wyspie. Do dziś wiele miejsc na San Domingo nosi nazwę „pól mordu”. Wszystko to działo się w latach 1660–1665.
+
+    Nie ma bardziej krwiożerczych diabłów niż Hiszpanie i Portugalczycy. Tylko w latach 1535–1660 wywieziono z Ameryki do Hiszpanii tyle metali szlachetnych, że wszystkie kopalnie Starego Świata razem wzięte prawdopodobnie nie wydobyły do tego czasu nawet połowy tej ilości przez cały okres swego istnienia. Połowa rdzennej ludności Nowego Świata — według najbardziej ostrożnych szacunków pięć lub sześć milionów Indian — zginęła już w ciągu pierwszego półtora wieku hiszpańskiego panowania, znaczna część w kopalniach Meksyku i Peru.
+    W Bractwie Wybrzeża jest flibustier zwany Montbarsem Niszczycielem. Nigdy nie bierze łupu ze zdobytych statków. Uzbrojeni Hiszpanie, złoto, towary — wszystko leci za burtę, a jego załoga składa się z Indian, których uwolnił z hiszpańskiej niewoli.
+    Bezlitośnie grabiąc własne zamorskie kolonie, Hiszpania ustanowiła jednocześnie wyjątkowo surowy monopol na handel z Nowym Światem. Od początku XVI wieku Sewilla była jedynym hiszpańskim portem uprawnionym do handlu ze wszystkimi terytoriami zamorskimi. To właśnie tutaj trafiały zrabowane bogactwa kontynentu amerykańskiego, wysyłane przez port Veracruz w Meksyku, najpierw przez Nombre de Dios, a później przez Puerto Bello na atlantyckim wybrzeżu Przesmyku Panamskiego.
+    Od 1537 roku żaden hiszpański statek handlowy nie przeprawiał się przez Atlantyk samotnie — tę niezwykle surową zasadę dyktowały interesy monopolu. Ponadto od samego początku XVI wieku dostęp do wód oblewających zamorskie posiadłości Korony Hiszpańskiej był zamknięty dla statków innych państw. Początkowo system ten działał bez zarzutu, ponieważ Hiszpania i Portugalia znacznie wcześniej niż pozostałe mocarstwa europejskie wytyczyły sobie drogi do Indii i Nowego Świata. W 1493 roku papież Aleksander VI podzielił cały świat pod niebem między tych dwóch „sąsiadów”, a rok później zawarli oni układ o rozgraniczeniu sfer przyszłych podbojów. W ten sposób do hiszpańskiej „połowy” globu przypadła cała Ameryka z wyjątkiem Brazylii, a do portugalskiej — Brazylia, Afryka i Azja.
+    Nadeszła jednak godzina zapłaty. Hiszpańska krew i hiszpańskie złoto — za krew milionów Indian, dziesiątek tysięcy francuskich bukanierów i angielskich osadników.
+}
+
 Tutorial_Hol {Informacje: Co się dzieje w Holandii?}
 Tutorial_Hol.1
 {
@@ -418,6 +457,30 @@ Rytuały religijne Azteków są również bardzo interesujące. Najważniejszą 
 
 Czasami sami Aztekowie dobrowolnie składali się w ofierze bogom, by osiągnąć „błogość w życiu pozagrobowym”. Osoby wybrane przez kapłanów na ofiarę otaczano wielkim szacunkiem, zwłaszcza tych przeznaczonych na ofiarę dla Tezcatlipoki. Na rok przed ofiarą spośród jeńców wojennych wybierano najprzystojniejszego i najbardziej szlachetnego, a przez cały rok ośmiu kapłanów uczyło go władczych i majestatycznych manier władcy. Wszyscy wokół oddawali mu boską cześć. W towarzystwie kapłanów przechadzał się po Tenochtitlánie, grając na flecie, a ludzie witali go z szacunkiem. Miesiąc przed ofiarą wybierano dla niego cztery najpiękniejsze dziewczyny, które musiały spełniać każde jego życzenie. Potem nadchodził dzień śmierci
 }
+
+Tutorial_Sharp
+{
+Informacja: Kim był kapitan Sharp?
+}
+
+Tutorial_Sharp.1
+{
+Jedną z najbardziej barwnych postaci epopei flibustierskiej był kapitan Sharp, który zasłynął nie tyle jako jeden z organizatorów przeprawy przez Przesmyk Panamski, ile jako bohater kilku anegdotycznych i wręcz niedorzecznych historii.
+    5 kwietnia 1680 roku oddział piratów liczący około czterystu ludzi ruszył przez dżunglę na zachód. Przeprawa ta była w znacznej mierze możliwa dzięki wsparciu miejscowych Indian, którzy mieli z Hiszpanami własne rachunki do wyrównania.
+    Niewielkie miasto Santa María piraci zdobyli szturmem bez większych strat. Łup okazał się jednak skromny — złoto wydobyte w pobliskich kopalniach wysłano do Panamy trzy dni przed atakiem. Piraci postanowili powtórzyć wyczyn Morgana i zdobyć Panamę szturmem, natomiast niewielki łup z Santa Maríi odesłali pod strażą z powrotem przez przesmyk.
+
+    Mieszkańcy Panamy zostali jednak ostrzeżeni o zbliżaniu się flibustierów, dlatego zamiar szturmu na miasto trzeba było porzucić. Zamiast tego piraci starli się z trzema hiszpańskimi galeonami, które wielokrotnie przewyższały ich zarówno uzbrojeniem, jak i liczebnością załóg. Dzięki odwadze i umiejętnościom flibustierom udało się wedrzeć na pokłady hiszpańskich okrętów i je zdobyć.
+    Jedynym człowiekiem, który nie uczestniczył w tej historycznej bitwie, był kapitan Bartholomew Sharp, zajęty w tym czasie plądrowaniem połowiska pereł. Co więcej, na małej wyspie jego towarzysze znaleźli wino, a sam Sharp — piękną Hiszpankę, nie spieszył się więc do walki.
+    Rankiem po zwycięstwie piraci rozdzielili się. Siedemdziesięciu ludzi pod wodzą admirała Coxona odeszło, a pozostałych objął dowództwem admirał Sawkins. Po pewnym czasie piraci zdobyli statek wiozący żołd do Panamy i każdemu przypadło po dwieście czterdzieści siedem monet. Ośmielony sukcesem Sawkins spróbował zdobyć szturmem niewielkie Pueblo Nuevo, lecz atak zakończył się niepowodzeniem, a sam admirał zginął. Dowództwo przejął Sharp, obiecując, że każdy pirat wróci z wyprawy z tysiącem funtów szterlingów łupu.
+    Mimo to po jego wyborze kolejnych siedemdziesięciu piratów odłączyło się i odpłynęło z obozu na zdobycznym statku. Dalsze wydarzenia pokazały, że na swój sposób mieli rację: Sharp okazał się beznadziejnym dowódcą i zamiast zdobywać statki oraz miasta, wciągnął piratów w bezowocne poszukiwania skarbu Drake’a. Dwa miesiące później piraci odsunęli go od dowództwa i wybrali admirałem Johna Watlinga. Stało się to na wyspie Juan Fernández, gdzie odpływający w pośpiechu piraci zapomnieli Indianina Williama. Żył on samotnie przez kilka lat, dopóki nie odnalazły go statki Davisa i Swana.
+    Watling postanowił zdobyć szturmem miasto Arica, lecz dysponując zaledwie stu czterdziestoma ludźmi poniósł druzgocącą klęskę i zginął podczas ataku. W ten sposób Sharp po raz drugi został admirałem.
+    Przez kilka następnych tygodni krążył u wybrzeży Ameryki Południowej na galeonie „Trinity”. Udało mu się zdobyć bogaty statek „Saint Peter”, a następnie kolejny — „Saint Rosario”. Historia związana z tym drugim uczyniła Sharpa pośmiewiskiem wszystkich piratów Morza Karaibskiego. Po zabraniu wina i skrzyń ze srebrnymi monetami ludzie Sharpa znaleźli w ładowni sztaby jakiegoś białego metalu, który wzięli za cynę. Flibustierzy już zamierzali przenieść je na własny statek, gdy admirał zauważył na zdobytym okręcie piękną Hiszpankę. Kobieta uprosiła go, by wypuścił statek bez dalszego rabunku — jaka była cena tej przysługi, nietrudno się domyślić; ten jegomość był wyjątkowo kochliwy! Sharp postanowił zadowolić się skrzyniami monet i zabrał tylko jedną sztabę, aby odlewać z niej kule.
+    Pierwszy człowiek, który zobaczył sztabę na Antigui, od razu zrozumiał, jak bardzo Sharp dał się oszukać: w ładowniach „Saint Rosario” znajdował się... największy ładunek srebra, jaki kiedykolwiek wpadł w ręce piratów. Mówiono także, że piękna dama otrzymała od właścicieli srebra sowitą nagrodę.
+    Podróż Sharpa trwała jeszcze kilka miesięcy. Poprowadził galeon wokół Przylądka Horn i dotarł do Indii Zachodnich. Tam, obawiając się Morgana polującego na swoich dawnych towarzyszy, piraci porzucili statek i na innych jednostkach dotarli do Anglii. Na żądanie hiszpańskiego ambasadora wszyscy zostali tam aresztowani. Sharp zatrudnił jednak prawników, którym udało się dowieść, że ich działania były jedynie obroną przed hiszpańskimi napaściami, i piratów uniewinniono. Dalsze losy Sharpa są nieznane, lecz wszystko wskazuje na to, że żył spokojnie w Anglii za zrabowane hiszpańskie złoto.
+
+    I dlaczego w grze „Corsairs 1” zrobiono z tego człowieka przedmiot kultu jednostki? Czy to miał być żart? Choć, sądząc po wszystkim, kapitan Sharp naprawdę miał po całym archipelagu niezliczoną liczbę dzieci.
+}
+
 Tutorial_Dictonary {Pomoc: Słownik terminów}
 Tutorial_Dictonary.1
 {
@@ -457,6 +520,54 @@ PÓŁWIATR – kurs żaglowca, przy którym jego oś podłużna jest prostopadł
 *
 GAFFEL – ukośny drąg przymocowany dolnym końcem do górnej części masztu. Służy do podnoszenia flag i sygnałów; na żaglowcach do gaff
 }
+
+Tutorial_Fight_Info
+{
+Informacja: System walki w grze
+}
+
+Tutorial_Fight_Info.1
+{
+SYSTEM WALKI W GRZE
+*
+Mistrzowskie posługiwanie się klingą i pistoletem pozwoli ci wyjść cało z każdej opresji. System walki oddaje do twojej dyspozycji trzy rodzaje ciosów ofensywnych, dwa rodzaje parowania, blok, jeden cios obrotowy służący zarówno do obrony, jak i ataku, możliwość strzału z pistoletu oraz odskoki do tyłu i na boki.
+*
+ŻYCIE
+Życie postaci określa ilość obrażeń, które może ona wytrzymać. Życie zwiększa się z każdym nowym poziomem, a także może zostać zwiększone dzięki dodatkowym zdolnościom.
+Podczas walki twoje Życie jest wyświetlane jako czerwony pasek w lewym górnym rogu, po lewej stronie portretu postaci. Życie można uzupełniać w trakcie walki, używając buteleczek eliksirów („mikstur leczniczych”) poprzez menu Enter/Użyj lub za pomocą klawisza skrótu.
+*
+ZDROWIE
+Zdrowie jest wskaźnikiem ogólnego stanu fizycznego bohatera. Im gorsze zdrowie, tym gorsze stają się parametry bohatera w grze. Zdrowie pogarsza się, gdy bohater odnosi wiele ran, i poprawia, gdy przez dłuższy czas nie uczestniczy w walce wręcz. Jeśli spadnie poniżej poziomu Doskonałe, bohater zaczyna otrzymywać kary do cech, a te z kolei powodują kary do umiejętności. Zdrowie regeneruje się samo, dość wolno, ale jednak. Najszybciej wtedy, gdy bohater nic nie robi, na przykład śpi w tawernie; podczas żeglugi statkiem regeneruje się dwa razy wolniej. Zdolność „Doskonałe zdrowie” dwukrotnie przyspiesza regenerację. Złote tło wskaźnika zdrowia oznacza, że zdrowie wróciło do aktualnego maksimum. Samo maksimum zdrowia może jednak zmniejszyć się wskutek poważnych obrażeń — blizn i okaleczeń, które dają o sobie znać w walce nawet po całkowitym wyleczeniu. Kapłani w kościołach mogą przywracać maksymalny poziom zdrowia, ale robią to rzadko, w niewielkim stopniu i za duże pieniądze. Czasem trzeba odwiedzić dwóch lub trzech kapłanów, aby „Dobre, złote” zdrowie stało się „Dobrym, białym” — a nawet wtedy trzeba jeszcze poczekać, aż samo wróci do poziomu „Doskonałe, złote”.
+*
+ENERGIA
+Człowiek nie może walczyć bez przerwy; w końcu dopadnie go zmęczenie. Ilość Energii zależy od cechy „Reakcja” bohatera: im wyższa jej wartość, tym więcej postać jest w stanie zrobić. Każdy cios zużywa określoną ilość Energii, dlatego w walce trzeba bardzo rozważnie gospodarować siłami. Energia jest wyświetlana jako niebieski pasek po prawej stronie portretu postaci. Jeśli Energii będzie za mało, nie zdołasz zadać ciosu. Podczas walki Energia stopniowo się odnawia. Jeśli widzisz, że zostało jej bardzo niewiele i nie wystarcza już na ataki, próbuj blokować lub parować ciosy przeciwników do czasu, aż Energia się odnowi. Dodatkowe zdolności pomogą oszczędniej zużywać Energię podczas ataków i szybciej ją odzyskiwać.
+*
+ENERGIA I ŻYCIE WROGÓW
+Podczas walki nad głowami przeciwników widoczne będą paski ich Życia i Energii. Kiedy ty lub twoi sojusznicy traficie przeciwnika, nad jego głową pojawi się liczba pokazująca ilość zadanych obrażeń.
+***
+RODZAJE CIOSÓW
+Cięcie — cios sieczny wykonywany z zamachem. Zadaje średnie obrażenia i wymaga niewielkiej ilości Energii.
+*
+Pchnięcie — szybki atak zadający niewielkie obrażenia. Zużywa więcej Energii niż cięcie, ale dzięki szybkości pozwala przerwać zamach przeciwnika.
+*
+Cios przebijający — wymaga dużej ilości Energii i wykonywany jest powoli, z szerokim zamachem, ale zadaje bardzo duże obrażenia i zawsze przebija blok.
+*
+Cios obrotowy — wymaga średniej ilości Energii i zadaje niewielkie obrażenia wszystkim postaciom stojącym wokół bohatera. Postać trafiona ciosem obrotowym cofa się lekko, dając bohaterowi miejsce do manewru i chwilę wytchnienia przed kontratakiem.
+*
+Parowanie — pozwala odbić cios przez odprowadzenie szabli przeciwnika na bok. Nie zużywa Energii i chroni przed ciosem przebijającym. Udane parowanie wybija przeciwnika z rytmu i odbiera mu większość Energii.
+*
+Zwód — wygląda tak samo jak cios przebijający. Jeśli wykonujesz zwód, a przeciwnik rozpoczyna dowolny atak, twoja postać przechwyci jego szablę i wyprowadzi kontratak. Sam zwód nie zużywa Energii, a udany zwód zakończony zadaniem obrażeń zużywa jej bardzo niewiele. Zwód pozwala przechwycić również cios przebijający.
+*
+Blok — pozwala zablokować wszystkie ataki poza ciosem przebijającym. Nie zużywa Energii. Możesz przejść do bloku w dowolnym momencie, przerywając własny atak, jeśli od razu widzisz, że okaże się nieskuteczny. Zwykłe ciosy mogą czasem przebić blok, jeśli przeciwnik posiada odpowiednie zdolności.
+*
+Strzał z pistoletu — zadaje przeciwnikowi obrażenia i zmusza go do cofnięcia się o krok. Pistolety występują w różnych odmianach i mogą być jedno-, dwu- lub czterostrzałowe. Do strzału potrzebne są kule. Możliwość przeładowania pistoletu podczas walki zależy od ustawienia gry; w zależności od niego przeładowanie odbywa się wyłącznie przy schowanej szabli albo nie jest możliwe wcale.
+*
+Odskok — pozwala odskoczyć o dwa kroki do tyłu lub na bok, wyprowadzając bohatera spod ciosu albo z samego środka walki.
+*
+USTAWIENIE KLAWISZY ATAKU
+Dla ułatwienia sterowania w grze znajduje się przycisk trybu ataku; jego przytrzymanie nadaje innemu przyciskowi drugi tryb działania. Domyślnie pchnięcie i cios obrotowy znajdują się pod jednym przyciskiem — lewym przyciskiem myszy; cios przebijający i zwód — pod środkowym przyciskiem myszy; cięcie i parowanie — pod prawym przyciskiem myszy. Blok, strzał oraz odskoki mają osobne przyciski.
+}
+
 Tutorial_Seafight_Info {Pomoc: Bitwy morskie na okrętach}
 Tutorial_Seafight_Info.1
 {
@@ -1122,6 +1233,43 @@ Askold zlecił mi odnalezienie jakiegoś grobowca nie wiadomo kogo na wyspie Gua
 Uważam, że nie ma sensu zapisywać w dzienniku pokładowym szczegółów moich spraw z Askoldem, więc przestanę marnować papier bez potrzeby.
 }
 Ascold.14 {Hiszpanie przy piramidzie zostali wyeliminowani.}
+
+ContractWithHell
+{
+Tekst kontraktu z Departamentem Piekła do spraw ewidencji ludzi
+}
+
+ContractWithHell.1
+{
+Kontrakt.
+
+Morze Karaibskie.
+
+Departament Piekła do spraw ewidencji ludzi, reprezentowany przez demona Azzy’ego, działającego na podstawie Regulaminu statusu demonów w świecie ludzi, zwany dalej Wykonawcą, z jednej strony, oraz @<Conrtragent>, działający zgodnie z własnymi pragnieniami i z własnej nieprzymuszonej woli, zwany dalej Klientem, z drugiej strony, zawarli niniejszy kontrakt o następującej treści:
+
+Przedmiot kontraktu:
+
+1. Przedmiotem niniejszego kontraktu jest zapewnienie przez Wykonawcę niewrażliwości ciała Klienta.
+
+2. Wykonawca zobowiązuje się podjąć wszelkie niezbędne działania w celu zapewnienia całkowitej odporności ciała Klienta na wszelkie oddziaływania fizyczne, takie jak: działanie broni białej, działanie broni palnej, upadek ciała Klienta z dużej wysokości, upadek różnych przedmiotów na ciało Klienta oraz inne oddziaływania fizyczne. W ramach niniejszego kontraktu Wykonawca zobowiązuje się także do ochrony statku Klienta przed uszkodzeniami mechanicznymi.
+
+3. Klient zobowiązuje się terminowo dostarczać ilość energii niezbędną Wykonawcy do wykonywania jego obowiązków. Wymagana ilość energii wynosi trzy osoby lub jednostki nieczystych istot w jaskiniach i katakumbach Morza Karaibskiego dziennie.
+
+4. Każdego dnia o godzinie dwunastej w nocy Wykonawca dokonuje pobrania energii zgodnie z warunkami niniejszego kontraktu. Wykonawca zobowiązuje się codziennie informować Klienta o stanie rozliczeń, przekazując mu aktualne saldo bieżące kontraktu.
+
+5. W przypadku niewykonania lub nienależytego wykonania przez Klienta punktu trzeciego niniejszego kontraktu Wykonawca, w celu realizacji obowiązków określonych w punkcie pierwszym, uzupełnia wymagany dzienny limit energii kosztem Klienta, czyli z jego sił życiowych.
+
+6. Klient ma prawo dostarczać Wykonawcy energię na zapas. Oznacza to, że wszystkie osoby lub nieczyste istoty zabite przez Klienta ponad ustalony limit zostają zaliczone na poczet przyszłych pobrań energii przez Wykonawcę.
+
+7. Stronom zabrania się angażowania osób trzecich do wykonywania obowiązków wynikających z niniejszego kontraktu.
+
+8. Wykonawca ma prawo jednostronnie zmieniać dzienne normy dostarczania energii przez Klienta, zależnie od własnych potrzeb i bez uprzedniego powiadamiania Klienta.
+
+9. Niniejszy kontrakt wchodzi w życie z chwilą jego ustnego zatwierdzenia i obowiązuje bezterminowo. Strony mogą za obopólną zgodą rozwiązać niniejszy kontrakt bez nakładania kar. Procedura rozwiązania wymaga osobistego spotkania Klienta i Wykonawcy.
+
+Dane prawne i ustne zatwierdzenia Stron.
+}
+
 Azzy_HellSign {Aktualna wiadomość rozesłana do subskrybentów Kancelarii Piekła}
 Azzy_HellSign.1
 {

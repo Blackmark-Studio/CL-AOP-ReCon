@@ -1,0 +1,164 @@
+EPL_Prologue
+{
+Le début de quelque chose de nouveau
+}
+
+EPL_Prologue.1
+{
+Après une petite dispute avec Rebecca, j'ai enfin réussi à la convaincre de prendre l'air et de me tenir compagnie. Aujourd'hui est justement une bonne occasion de faire de nouvelles connaissances, chose qu'il serait imprudent de négliger dans notre situation peu enviable.
+}
+
+EPL_Prologue.2
+{
+Pendant que nous nous préparions, le marchand et avare du coin, Gaston Cotes, avait déjà accueilli l'une des nouvelles colons à sa manière, en lui offrant toute l'« hospitalité » locale. Il a même osé me parler grossièrement.
+Il est temps de lui donner une leçon. Après lui !
+}
+
+EPL_Prologue.3
+{
+Gaston a eu ce qu'il méritait. Je devrais retourner en ville et chercher l'inconnue. On dirait qu'elle aussi a quelques ennuis.
+}
+
+EPL_Prologue.4
+{
+Cette matinée a été riche en événements. L'arrivée d'un navire du Vieux Monde, probablement le premier depuis deux mois, la rencontre avec le nouveau commandant, et j'ai même participé à quelque chose qui ressemblait à un duel. Pas l'adversaire le plus redoutable, mais à un moment son attaque m'a réellement effrayée. Je ne m'attendais pas à une telle vivacité de la part de Gaston. J'espère qu'il n'a pas remarqué mes mains tremblantes, sinon ce bavard ternira ma réputation de casse-cou.
+Et puis il y a cette jeune fille au destin difficile. Une bonne occasion de me débarrasser des affaires de ce misérable Arcadio. Je dois aller au cap Isabela et les récupérer dans la grotte.
+}
+
+EPL_Prologue.5
+{
+Me voilà sur place. La grotte est bien cachée ; un passant ne la trouvera guère par hasard, mais mieux vaut tout de même rester sur mes gardes.
+}
+
+EPL_Prologue.6
+{
+Quelqu'un a attaqué notre fort. Rebecca et moi avons attendu la fin de l'assaut dans la grotte hors de la ville, même si deux assaillants nous y ont découvertes. Il semble que tout se soit bien terminé. Les bruits du combat se sont tus ; je dois aller voir ce qui se passe. Becky y a probablement déjà couru.
+}
+
+EPL_Prologue.7
+{
+C'est affreux. Le fort est détruit, la seule personne qui me soit proche a disparu, et je suis contrainte de fuir avec les quelques survivants. Gaston a raison : le gouverneur de Saint-Domingue est mon seul espoir, mais à chaque minute il devient plus évident que je ne reverrai peut-être jamais Becky. C'est la fin de toute mon ancienne vie.
+}
+
+EPL_Prologue.8
+{
+Me voilà enfin sur le pont d'un navire. Il y a à bord beaucoup de civils qui ont perdu leur foyer. Les marins commencent justement à lever l'ancre et notre bâtiment se met en mouvement. En route !
+}
+
+EPL_Prologue.9
+{
+Deux navires pirates ayant participé au pillage de La Vega viennent droit sur nous. Les affronter n'a aucun sens. Nous devons les distancer au plus vite. Les civils ne doivent pas souffrir.
+}
+
+EPL_Prologue.10
+{
+Notre navire a réussi à semer les pirates. Ai-je rêvé, ou nous ont-ils délibérément laissés partir ? Étrange. Quoi qu'il en soit, je dois maintenant mettre le cap sur Saint-Domingue et raconter au gouverneur tout ce qui s'est passé.
+}
+
+EPL_Prologue.11
+{
+Trop de temps s'est écoulé. Il ne sert plus à rien de faire voile vers Saint-Domingue, car les pirates ont très probablement déjà attaqué la ville. Il ne reste qu'à espérer que les Espagnols aient repoussé l'assaut : Saint-Domingue possède de hauts remparts et des canons à longue portée. Et moi ? Je peux désormais faire ce que je veux ; il suffit de choisir un cap. En avant !
+}
+
+EPL_Prologue.12
+{
+Les pirates préparent une attaque terrestre contre Saint-Domingue. Ma sœur peut être avec eux. Je dois assister à cette bataille, qui commencera au-delà des portes de la ville.
+}
+
+EPL_Prologue.13
+{
+Les pirates ont été vaincus, mais ma sœur n'était pas parmi eux. Je devrais faire mon rapport au gouverneur, qui doit se trouver à sa résidence.
+}
+
+
+
+EPL_TheFirstSteps
+{
+Premiers pas
+}
+
+EPL_TheFirstSteps.1
+{
+Je n'arrive pas à croire ce qui vient d'arriver : ce dont je ne pouvais que rêver est devenu réalité en un instant. Je suis capitaine.
+Et pourtant j'ai peur. C'est terrible et injuste. On dirait que mes prières ont été entendues, mais non par notre Père céleste : par Méphistophélès. Il a exaucé mon vœu comme il sait si bien le faire, de la manière la plus perfide et la plus ignoble, échangeant mon rêve contre toute ma vie passée et contre la vie de Becky.
+Non, je n'ai pas encore l'intention d'abandonner. Avant de partir pour Cuba, je dois trouver la force de retourner à La Vega. Si les boucaniers ont décidé de s'y installer, je devrais parler à leur chef. D'ici là, je réfléchirai à l'allure et aux paroles qui me donneront une chance d'en ressortir vivante.
+Et puis il y a cette barque. Elle flotte et a même le droit d'être appelée navire, mais peut-être devrais-je employer plus judicieusement l'argent reçu ?
+}
+
+EPL_TheFirstSteps.2
+{
+Je savais bien que Sandro Thorn ne se trouvait pas à La Vega par hasard. Son message m'était destiné. Et surtout, c'était mon père qui l'avait envoyé - Manuel Ribeiro Pardal. J'avais souvent entendu le nom de ce célèbre corsaire, mais jamais je n'aurais imaginé être sa fille... Comment dois-je désormais me présenter en société ? Capitaine @<sEmma> @<sRemedios>, ou plutôt @<sPardal> ? Mieux vaut sans doute tenir compte de la personne à qui je m'adresse. Pour le reste, seul le temps remettra tout à sa place.
+}
+
+EPL_TheFirstSteps.3
+{
+C'était la dernière paille à laquelle j'essayais de me raccrocher, mais ce type ne sait vraiment rien. Sinon, il m'aurait démasquée.
+Quel diable ! Il s'est donné un mal fou pour faire croire qu'il n'était pas surpris d'entendre un nom de famille que l'on craint à des centaines de milles marins à la ronde. Je ne sais pas jusqu'à quel point il m'a crue ni s'il a pris mes paroles au sérieux, mais il semble avoir décidé de ne pas courir de risque inutile, comme si mon père se souciait un tant soit peu de moi. Eh bien, je peux en faire un atout dans ma manche.
+Ma visite à La Vega n'a pas donné les résultats espérés, mais elle m'a appris quelque chose.
+}
+
+EPL_TheFirstSteps.4
+{
+La lettre contenant mon rapport a été remise, et j'ai reçu la réponse à ma question : il a été décidé de tout laisser en l'état. Je ne suis plus liée par aucune obligation et je peux faire ce que je veux ; il suffit de choisir un cap. En avant !
+}
+
+
+
+EPL_PZD
+{
+La couturière de la grande dame
+}
+
+EPL_PZD.1
+{
+Quelle garce de grande dame, qui a jugé ma compagnie indigne d'elle ! J'ai plus de sang noble dans les veines que l'épouse du gouverneur local. Non, je refuse de croire à une simple coïncidence : Becky avait elle-même imaginé une robe de cette coupe, et il n'en existe pas une seconde pareille dans toutes les Caraïbes.
+Je dois remettre mes idées en ordre. La dame est sans aucun doute espagnole, donc elle n'est pas d'ici. Je peux essayer d'en apprendre davantage sur les navires qui ont récemment jeté l'ancre dans le port.
+}
+
+EPL_PZD.2
+{
+Une fois calmée, j'ai tout de même décidé de ne pas poursuivre mes recherches. Je crois avoir simplement pris mes désirs pour la réalité. La robe ressemble réellement beaucoup à celle de Rebecca, mais elle avait probablement déjà vu une coupe semblable quelque part.
+}
+
+EPL_PZD.3
+{
+Je n'ai obtenu que peu d'informations. On dirait que je devrais vraiment me promener sur le quai après le coucher du soleil et parler aux travailleurs du port.
+}
+
+EPL_PZD.4
+{
+Il s'avère que cette femme loge chez le gouverneur local, qui organise des soirées costumées si importantes à ses yeux qu'il a abandonné toutes les affaires de l'État et ne reçoit personne.
+Coûte que coûte, je dois y entrer avant que cette arrogante ne quitte l'île.
+Où pourrais-je trouver une tenue convenant à l'occasion ? Si les invités portent vraiment des masques, je peux en profiter.
+Je devrais interroger le prêteur sur gages ou les marchands ambulants.
+}
+
+EPL_PZD.5
+{
+Je suis à l'intérieur. Cela s'est révélé étonnamment simple. Il sera bien plus difficile de retrouver une femme que je n'ai vue qu'une fois. De plus, elle portera un masque et sera probablement déguisée. Il faudra aussi trouver un moyen d'engager la conversation et de mentionner sa couturière.
+}
+
+EPL_PZD.6
+{
+Deux personnes dans le hall bavardent tranquillement de leurs voix claires. Aucune ne semble être celle que je cherche.
+}
+
+EPL_PZD.7
+{
+Cette jeune fille est trop jeune ; c'est probablement l'une des filles du gouverneur. Ce n'est certainement pas celle que je cherche.
+}
+
+EPL_PZD.8
+{
+Une rencontre très heureuse avec un officier espagnol qui s'est présenté comme Gabriel de Seguenza. C'est donc bien le capitaine du galion 'Hernal Diaz'. Il a promis de régler mon problème en échange d'un service : tenir compagnie à l'homme assis à la table en bas.
+}
+
+EPL_PZD.9
+{
+En jouant aux dés, je n'ai même pas remarqué le temps passer. Il est temps de sortir par la porte derrière la scène et de gagner le quai. Gabriel m'y attend.
+}
+
+EPL_PZD.10
+{
+Il s'est avéré que la robe avait été confectionnée par Sofia de la Piedad, la jeune fille que j'avais rencontrée la veille de l'attaque des boucaniers contre La Vega. Je devrais être heureuse pour elle, mais je ne ressens que de la colère. C'est Rebecca qui aurait dû être à la place de Sofia.
+}

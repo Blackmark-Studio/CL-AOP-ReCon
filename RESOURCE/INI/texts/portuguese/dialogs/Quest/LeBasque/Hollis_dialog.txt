@@ -1,0 +1,96 @@
+Hollis_dialog_1 {
+Capitão @<pchar>. Meus sargentos informaram que pediu uma audiência urgente sobre um assunto de importância excepcional para a segurança de Port Royal. Estou ouvindo.
+}
+Hollis_dialog_2 {
+O assunto diz respeito aos espanhóis, comandante Hollis. Dê uma olhada nestes papéis. São instruções interceptadas de um espanhol de alta patente. Contêm as coordenadas exatas do acampamento de Sebastian Rojas. Cinquenta mercenários estão neste exato momento se entrincheirando em suas selvas.
+}
+Hollis_dialog_3 {
+Extraordinário... A duas milhas da passagem. Excelente trabalho, capitão! Meus batedores já gastaram as pernas procurando esse ninho. Mas você trouxe estas coordenadas a mim, e não ao governador-geral. Presumo que tenha uma proposta concreta?
+}
+Hollis_dialog_4 {
+Exatamente. Tenho minhas próprias contas a acertar com Rojas e quero a cabeça dele. Mas atacar um acampamento fortificado com apenas uma companhia de abordagem é mandar meus homens direto para a cova. Preciso do apoio de seus mosqueteiros. Atacaremos juntos.
+}
+Hollis_dialog_5 {
+Uma operação militar conjunta. Isso soa... extremamente sensato. Meus atiradores darão cobertura de fogo e manterão os espanhóis ocupados, enquanto seus... cof... soldados partirão para o assalto. Para a Coroa, o principal agora é livrar a ilha dessa infestação.
+}
+Hollis_dialog_6_m {
+Fico contente que nos entendamos. Se estiver de acordo, partiremos amanhã ao anoitecer.
+}
+Hollis_dialog_6_f {
+Fico contente que nos entendamos. Se estiver de acordo, partiremos amanhã ao anoitecer.
+}
+Hollis_dialog_7 {
+Uma condição, capitão. Toda a munição, a caixa militar e os estandartes capturados ficam com a guarnição; os troféus pessoais serão divididos com justiça. E espero disciplina de ferro de sua tripulação. Somos um exército regular, não uma ralé armada com pedaços de ferro.
+}
+Hollis_dialog_8 {
+Meus homens sabem o que fazem, comandante Hollis. Nada de saques além do acordado. Estamos do mesmo lado desta vez.
+}
+Hollis_dialog_9 {
+Então temos um acordo. Meus homens esperarão por você nas proximidades das coordenadas indicadas nos papéis. Prepare sua gente.
+}
+Hollis_dialog_10 {
+Nos vemos no campo de batalha.
+}
+Hollis_dialog_11_m {
+Meus sargentos disseram que um capitão está quase arrombando minha porta e promete me entregar um acampamento espanhol numa bandeja. Tem um minuto, senhor, para provar que não está desperdiçando meu tempo. Onde estão eles?
+}
+Hollis_dialog_11_f {
+Meus sargentos disseram que uma capitã está quase arrombando minha porta e promete me entregar um acampamento espanhol numa bandeja. Tem um minuto, senhora, para provar que não está desperdiçando meu tempo. Onde estão eles?
+}
+Hollis_dialog_12 {
+Dê uma olhada nestes papéis, comandante Hollis. São instruções interceptadas do cofre de um espanhol de alta patente. Contêm as coordenadas exatas do acampamento de Don Sebastian Rojas. Cinquenta mercenários estão neste exato momento se entrincheirando em suas selvas.
+}
+Hollis_dialog_13 {
+Maldição... A duas milhas da passagem. Como diabos levaram equipamento até lá?! Cinquenta baionetas... E você, capitão, não veio até mim por amor à Coroa inglesa, imagino. Para que precisa da guarnição?
+}
+Hollis_dialog_14 {
+Porque não pretendo cobrir esta selva com os cadáveres dos meus homens num ataque frontal. Esse acampamento certamente não agradará a seus soldados, principalmente se eles se unirem aos holandeses de Fort Orange. Quero a cabeça de Rojas. Atacaremos juntos... Seus famosos casacas-vermelhas fornecerão o poder de fogo, e meus homens irão ao assalto.
+}
+Hollis_dialog_15 {
+Mercenários espanhóis. Na minha selva. E você me propõe uma aliança com um capitão livre para expulsá-los... Sabe de uma coisa? Ao diabo com a política. Uma infestação é uma infestação. Levarei uma companhia de soldados e meus melhores rastreadores para reforçá-lo.
+}
+Hollis_dialog_16 {
+Decisão sensata. Partiremos amanhã ao anoitecer.
+}
+Hollis_dialog_17 {
+Mas preste atenção... Toda a munição, a caixa militar e os estandartes capturados ficam com a guarnição; os troféus pessoais serão divididos com justiça. E se um único de seus rapazes meter a mão no bolso do rei da Inglaterra, eu mesmo o enforcarei na palmeira mais próxima, ao lado dos espanhóis.
+}
+Hollis_dialog_18 {
+Fechado, comandante Hollis. Neste momento, nós dois estamos do lado dos anjos. Sensação curiosa, não acha?
+}
+Hollis_dialog_19 {
+Não se acostume, capitão. Até o amanhecer de depois de amanhã passa. Meus homens esperarão por você nas proximidades das coordenadas indicadas nos papéis. Não se atrase. Pode ir.
+}
+Hollis_dialog_20 {
+Nos vemos no campo de batalha.
+}
+Hollis_dialog_21 {
+Esta maldita chuva jamaicana... Se não parar nos próximos trinta minutos, a pólvora nas caçoletas ficará completamente encharcada e meus soldados terão de espancar os espanhóis com as coronhas. Onde está seu homem, capitão? Meus batedores dizem que atrás da paliçada ainda está tudo quieto.
+}
+Hollis_dialog_22 {
+Jaco já está lá dentro, comandante Hollis. Paciência. Prata é o ponto fraco de qualquer mercenário. Dê-lhes tempo para perceber que Don Rojas pretende deixá-los de mãos vazias.
+}
+Hollis_dialog_23 {
+Espero que seu homem saiba como apresentar a história. O sucesso da operação depende dele. Meus homens estão em posição. Além disso, conseguimos trazer do arsenal duas equipes de morteiro. Assim que começar a discórdia lá dentro, vamos cobri-los de chumbo e fogo. Se o plano falhar...
+}
+Hollis_dialog_24 {
+Não vai falhar. Apenas mantenha os mosquetes secos e espere meu sinal.
+}
+Hollis_dialog_25 {
+Está ouvindo? Parece que começou!
+}
+Hollis_dialog_26 {
+Jaco cutucou o vespeiro! É hora, Hollis. Mande seus rapazes nos cobrir com fogo. Ao ataque!
+}
+Hollis_dialog_27 {
+Capitão, aceite meus parabéns. A operação foi conduzida de forma brilhante. Seus homens lutaram como possuídos!
+}
+Hollis_dialog_28 {
+Seus homens não ficaram atrás dos meus nem em coragem nem em habilidade, comandante Hollis. O que pretende fazer com o acampamento?
+}
+Hollis_dialog_29 {
+Vou mandar meus homens pôr fogo neste ninho de abutres. Vamos queimá-lo até o chão, para que ninguém pense em se instalar aqui outra vez.
+}
+Hollis_dialog_30 {
+Pois bem, então mãos à obra. Nós, porém, precisamos deixá-lo — há assuntos a tratar. Adeus, comandante.
+}

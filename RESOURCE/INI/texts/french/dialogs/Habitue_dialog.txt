@@ -982,3 +982,9 @@ Ah, tu n’es pas seul, à ce que je vois! Eh bien, tu auras de la compagnie en 
 Habitue_dialog_295 {
 @<RandPhraseSimple>
 }
+Habitue_dialog_296 {
+Fillette, apporte-moi encore à boire.
+}
+Habitue_dialog_297 {
+Tu t’en passeras.
+}

@@ -205,3 +205,12 @@ um parente próximo do chefe da autoridade portuária
 Marginal_65 {
 com seu parente, o chefe da autoridade portuária
 }
+Marginal_66 {
+@<TimeGreeting>, @<pchar>. Muito feliz em vê-la.
+}
+Marginal_67 {
+@<TimeGreeting>, @<pchar>. Muito feliz em vê-la.
+}
+Marginal_68 {
+@<TimeGreeting>, @<npchar>. Preciso ir.
+}

@@ -148,3 +148,42 @@ Votre tâche ici est donc terminée ; je ne vais pas vous retenir plus longtemps
 Maracaibo_Mayor_44 {
 Bien sûr, señor. Adieu.
 }
+Maracaibo_Mayor_45 {
+Combien voulez-vous ?
+}
+Maracaibo_Mayor_46 {
+Un million de piastres pour Maracaibo. Et un autre million pour Gibraltar.
+}
+Maracaibo_Mayor_47 {
+Absurde ! Nous n'avons pas une telle somme ! Nous ne l'avons jamais eue !
+}
+Maracaibo_Mayor_48 {
+Vos menaces n'y changeront rien ! Nous n'avons réellement pas une telle somme !
+}
+Maracaibo_Mayor_49 {
+Alors trouvez-la ! À cause de vous, nous avons perdu bien trop d'hommes. Il n'y aura pas de marchandage. Si vous ne payez pas, nous réduirons les deux villes en cendres. Et vous, nous vous attacherons à un tonneau de poudre, ici même. Vos administrés pourront ramasser leur gouverneur aux quatre coins de la place !
+}
+Maracaibo_Mayor_50 {
+Cette histoire me paraît étrangement familière...
+}
+Maracaibo_Mayor_51 {
+Ah oui. J'ai oublié de me présenter. Alonso de Vargas. J'utilisais le nom de @<GetFullName> lorsque je servais dans les renseignements. Après ma démission, je l'ai conservé : à l'époque, j'espérais encore reprendre du service.
+}
+Maracaibo_Mayor_52 {
+C'est impossible...
+}
+Maracaibo_Mayor_53 {
+Si seulement Diego pouvait voir cela. Il serait satisfait de son œuvre.
+}
+Maracaibo_Mayor_54 {
+Mais il ne le verra jamais...
+}
+Maracaibo_Mayor_55 {
+À la Tortue ?...
+}
+Maracaibo_Mayor_56 {
+Précisément. Vous m'avez joué. Soit, prenez votre butin. Seulement, à l'heure qu'il est, le pavillon espagnol flotte très probablement déjà sur la Tortue.
+}
+Maracaibo_Mayor_57 {
+J'en doute fort. Ton frère...
+}

@@ -1,0 +1,36 @@
+Loren_dialog_1 {
+Kapitän @<pchar>. Lust auf frischen Fisch?
+}
+Loren_dialog_2 {
+Kennen wir uns?
+}
+Loren_dialog_3 {
+Kommt darauf an, was Sie unter Bekanntschaft verstehen. Von Ihnen gehört habe ich jedenfalls genug.
+}
+Loren_dialog_4_m {
+Umso besser. Ich bin nicht wegen des Fisches hier. Ich warte auf einen... Freund. Er hätte schon gestern hier vor Anker gehen sollen. Mit der Fleute 'Windrose'.
+}
+Loren_dialog_4_f {
+Umso besser. Ich bin nicht wegen des Fisches hier. Ich warte auf einen... Freund. Er hätte schon gestern hier vor Anker gehen sollen. Mit der Fleute 'Windrose'.
+}
+Loren_dialog_5 {
+Eine Fleute... Eines von diesen dickbäuchigen, schwerfälligen Schiffen, die man in Europa so liebt. Ja, hier war eine. Letzte Nacht.
+}
+Loren_dialog_6 {
+Und die Wachen am Leuchtturm haben sie nicht bemerkt?
+}
+Loren_dialog_7 {
+Die Wachen achten auf Signallichter und Flaggen. Aber dieser Kahn lief in völliger Dunkelheit: keine Laterne am Heck, kein Wimpel am Mast. Schlich an der Küste entlang wie ein Spion an einer Patrouille vorbei und fing den Wind nur mit den Marssegeln. Im Dunkeln wäre er beinahe mit Schmugglern zusammengestoßen - die fuhren ebenfalls ohne Licht. Ihnen sei Dank, sie haben mir wenigstens nicht das nächtliche Angeln verdorben.
+}
+Loren_dialog_8 {
+Wohin fuhr sie? Zur spanischen Küste?
+}
+Loren_dialog_9 {
+Wohl kaum. Meine Freunde legten am Leuchtturm an, und die Fleute hielt nach Osten. Ich schätze, sie wollte die Insel umrunden und irgendwo beim Strand Fischauge vor Anker gehen. Oder sie ist zu Michel le Basque abgedreht, um nach seinen Bukanieren zu sehen.
+}
+Loren_dialog_10 {
+Das bezweifle ich. Danke, Loren.
+}
+Loren_dialog_11 {
+Lebt wohl, Kapitän.
+}

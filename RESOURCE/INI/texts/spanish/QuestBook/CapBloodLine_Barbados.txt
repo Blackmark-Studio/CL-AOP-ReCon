@@ -1,0 +1,120 @@
+CapBloodLine_q1 {Deber médico}
+CapBloodLine_q1.1 {El gobernador Steed vuelve a necesitarme. Lo más probable es que se trate de su gota o de otra migraña de su querida esposa. Debo ir de inmediato a la residencia.}
+CapBloodLine_q1.2 {El gobernador Steed me dijo que su esposa sufre otro ataque de migraña y no logra calmarse. Creo que debería examinarla. Está en el dormitorio a la derecha, en el segundo piso.}
+CapBloodLine_q1.3 {Debo apresurarme al puerto y visitar al señor Dan, el boticario. Creo que mencionó que su casa está cerca de la residencia del gobernador.}
+CapBloodLine_q1.4 {El gobernador ha asignado fondos para comprar medicinas. He recibido @<iMoney>.}
+CapBloodLine_q1.5 {El gobernador me entregó 2.500 piastras en mano para comprar medicinas para su esposa, pero exigió que rindiera cuentas a mi regreso...}
+CapBloodLine_q1.6 {El señor Dan no estaba en casa, así que tuve que buscar la medicina por mi cuenta. Ahora debo darme prisa y volver a la hacienda...}
+CapBloodLine_q1.7 {Esperé al señor Dan, y él compartió conmigo su remedio para la migraña con gusto. Ahora debo darme prisa y volver a la hacienda...}
+CapBloodLine_q1.8 {Al salir de la casa, me crucé con el boticario y lo engañé para que me diera otro remedio para la migraña.}
+CapBloodLine_q1.9 {Todo está bien; logré ayudar a la esposa del gobernador. Como ya es tarde y las puertas de esa maldita plantación Bishop llevan tiempo cerradas, me permitieron quedarme en la ciudad y me dieron una habitación en la taberna. Qué bien se siente, aunque sea por una noche, volver a sentirse una persona y no un esclavo...}
+CapBloodLine_q1.10 {La mayoría de los españoles vuelve a estar en pie y ya no necesita mis cuidados. Es hora de informar al gobernador Steed... y regresar a la plantación.}
+CapBloodLine_q1.11 {Creo que pospondré por ahora mi informe al gobernador.}
+CapBloodLine_q1.12 {Esta vez mis suposiciones estaban muy lejos de la verdad. Me han ordenado atender a los españoles capturados, alojados en el astillero. Su propietario deberá proporcionarme todo lo necesario para su tratamiento.}
+CapBloodLine_q1.13 {La señora Steed vuelve a encontrarse mal: otra migraña o quizá otra inflamación de su mal carácter congénito. En cualquier caso, mi deber como médico exige que regrese a la residencia del gobernador.}
+CapBloodLine_q2 {Oferta de Wacker}
+CapBloodLine_q2.1 {En la botica conocí al Doctor Wacker, quien quiere hablar conmigo lejos de miradas y oídos indiscretos. Mañana, cuando tenga un momento libre, debería pasar por la taberna.}
+CapBloodLine_q2.2
+{
+Ya ha amanecido. Ahora Bishop me encontrará y seguro que me mandará a algún sitio para todo el día. Por ejemplo, a curar a unos pobres esclavos inocentes que probablemente maltrató y castigó anoche por alguna tontería, solo por fastidiar porque no volví antes de que cerraran las puertas...
+Pero tengo que averiguar qué quiere Wacker de mí. No hay tiempo que perder.
+}
+CapBloodLine_q2.3 {Fui a la taberna, pero Vaker no está aquí. ¡Maldición! Tengo que encontrarlo... Le preguntaré al tabernero.}
+CapBloodLine_q2.4 {Parece que realmente soy un obstáculo importante para los estimados Wacker y Bronson, ya que la posibilidad de mi fuga se ha convertido en el tema de nuestra nada amistosa conversación. No cabe duda de que el doctor Bronson está al tanto de todo, y Wacker coordina todas sus acciones con él. Aun así, ¿quién soy yo para quejarme? ¡Esta es mi única oportunidad! Debería buscar a Jeremy Pitt.}
+CapBloodLine_q2.5 {He logrado convencer a Pitt para unirse a esta empresa. Ahora lo principal es reclutar gente, preparar todo lo necesario y conseguir mañana el dinero para el balandro de Wacker. Solo cuatro de los esclavos saben algo de navegación: Hagthorpe, Ogle, Wolverstone y Nicholas Dyke. Debo hablar con cada uno de ellos.}
+CapBloodLine_q2.6 {Creo que Wacker ya me está esperando en la taberna. Es hora de ir a verlo.}
+CapBloodLine_q2.7 {El doctor Wacker solo consiguió 18.000 piastras. Faltan unas 7.000 más para comprar el balandro. Bueno... Siempre hay trabajo en el puerto para quien lo busca, ya sea descargando en la tienda, haciendo recados para tipos dudosos o tareas ocasionales para los vecinos. En el peor de los casos, puedes acudir al prestamista local...}
+CapBloodLine_q2.15 {Los hombres están preparados y las armas aseguradas. Debo decirle a Jeremy que todo está listo.}
+WeaponsForEscape {Armas para la fuga}
+WeaponsForEscape.1 {Todo debería estar tranquilo, pero nunca está de más tener algunas armas a mano. Es poco probable que alguien en la ciudad me las venda, y no puedo recurrir al robo en un momento tan crucial... Tendré que encontrar otra manera de resolver este problema.}
+WeaponsForEscape.2 {El posadero me aconsejó hablar con el señor Griffin sobre armas; es un viejo armero que vive cerca de la mansión del gobernador.}
+WeaponsForEscape.3 {El armero Griffin fue asaltado con descaro: un matón español se llevó sus muestras, con el nombre del maestro grabado en las hojas, y fue a la casa del pescador Hells. Si lo atrapan o lo ven con armas de Mr. Griffin, ambos serán ahorcados al amanecer. Debo ir tras el ladrón de inmediato y desarmarlo, luego devolver todo lo robado a su legítimo dueño. Si lo logro, Mr. Griffin tendrá listo el pedido de sables de abordaje y pistolas sin marcas para esta noche por @<iMoney>.}
+WeaponsForEscape.4 {No logré entenderme con el armero. No diría que me molesta demasiado; hacer negocios con ese viejo arrogante no habría terminado bien de todos modos. Buscaré otra forma de conseguir armas.}
+WeaponsForEscape.5 {No tuve opción: el pescador se interpuso en mi camino, algo que jamás habría imaginado. Aun así, en cierto modo debería estarle agradecido, ya que me evitó tener que enfrentarme al español. Hells llevaba encima 2.000 piastras, parte de las cuales seguro que eran del matón. Además, encontré en el español un paquete con las muestras de Griffin; es hora de volver con el armero.}
+WeaponsForEscape.5_1 {Tuve suerte: el pescador Hells estaba bastante alterado tras la pelea, pero logré tranquilizarlo. Tras una breve negociación, me permitió tomar muestras de armas del cadáver del español. Dejé el dinero que encontré en el muerto a Hells; era lo justo, como compensación por el ataque. Ahora puedo regresar al armero con el paquete de muestras.}
+WeaponsForEscape.6 {En una hora debo ir con el señor Griffin por mi pedido.}
+WeaponsForEscape.7 {En la calle me encontré con un hombre que parecía español. No sé cómo llegó aquí, pero está claro que no tiene buenas intenciones. Quiere algo de Mr. Griffin, el armero.}
+WeaponsForEscape.8 {Han pasado más de diez minutos y aún no hay noticias. Está claro que no me queda otra opción que volver allí.}
+WeaponsForEscape.9 {El señor Griffin me dio todo lo que necesitaba en agradecimiento por salvarle la vida.}
+WeaponsForEscape.10 {El vendedor de la plaza del mercado, cuyo hijo tuve la suerte de salvar de un destino desafortunado, me entregó un fardo con todo lo esencial para situaciones imprevistas. La suerte está de mi lado: conseguir un arma en mi situación actual es sumamente difícil. Diría incluso que es casi imposible. Pero tengo otros problemas también...}
+WeaponsForEscape.11 {En la taberna, tuve el placer de hablar con un contrabandista que me pareció bastante extraño. No solo tiene las armas que necesito en la cantidad adecuada, sino que, en vez de pedir un cargamento de esclavos a cambio, como cabría esperar, quiere un anillo de la mansión del gobernador. ¿Cómo pudo enterarse del anillo? ¿Y por qué le interesa tanto que está dispuesto a intercambiar armas por él? Bueno, mi tarea ahora es encontrar ese anillo.}
+WeaponsForEscape.12 {No pude llegar hasta el gobernador. A menos que él dé la orden adecuada, los guardias no me dejarán pasar. Y no dará esa orden mientras él y su esposa estén a salvo. Así que necesito un pretexto externo...}
+WeaponsForEscape.13 {Gracias a la ingenuidad del señor Dan, ahora tengo la oportunidad de entrar en la residencia. No voy a perder tiempo.}
+WeaponsForEscape.14 {Increíblemente, el mismísimo anillo del que habló el contrabandista está a la vista, sobre la mesa. La señora Steed realmente no lo lleva puesto.}
+WeaponsForEscape.15
+{
+Por suerte, el asunto se resolvió con un pequeño engaño, sin necesidad de recurrir al robo. La señora Steed me entregó el anillo ella misma, diciendo que lo encontró junto a su cama esta mañana.
+El anillo en sí parece completamente común-de oro, sin piedras preciosas-pero es increíblemente pesado para su tipo y tamaño.
+¿Cómo se enteró el contrabandista del anillo? ¿Y para qué lo quiere? Aunque pensándolo bien, ¿es realmente asunto mío? Debería volver a la taberna y cobrar mi recompensa.
+}
+WeaponsForEscape.16 {El contrabandista consiguió su anillo, y yo obtuve el arma y el dinero. Por supuesto, el objeto era bastante intrigante, pero simplemente no tengo tiempo para estudiarlo. En cualquier caso, la tarea está cumplida: tengo el arma.}
+HugtorpTrouble {El problema de Hagthorpe}
+HugtorpTrouble.1 {En Bridgetown hay un hombre llamado Stuart Winterwood. Todo lo que necesita Hagthorpe para unirse a mí es la muerte del inglés que le arrebató todo y lo envió a la esclavitud. No sé exactamente cómo ocurrió, pero no tengo opción: debo matar a Winterwood. Se le puede encontrar en la taberna o en el burdel.}
+HugtorpTrouble.2 {Hagthorpe no quería navegar conmigo. Su enemigo jurado, Stuart Winterwood, está en la ciudad. En su día, este caballero deshonró al viejo lobo de mar, arrebatándole todo: su buen nombre, su familia, su libertad. Por su culpa, Hagthorpe acabó encadenado. Pero logré convencerlo de abandonar su temerario plan de venganza, y aceptó zarpar conmigo, posponiendo por ahora la ejecución del canalla.}
+HugtorpTrouble.3 {He conseguido enfurecer a Stuart Winterwood y lo he retado a un duelo. Nos veremos cara a cara, dentro de una hora, fuera de las puertas de la ciudad; no creo que deba llegar tarde.}
+HugtorpTrouble.4 {Fue difícil, pero maté a Winterwood. No creo que Stuart necesite ya los mil piastras que llevaba encima. Debería regresar con Hagthorpe.}
+HugtorpTrouble.5 {Al enterarse de la muerte de Winterwood, Hagthorpe aceptó unirse a mí.}
+DiekeQuest {Oficial subalterno Nicholas Dyke}
+DiekeQuest.1 {El coronel Bishop ha elegido el peor momento posible para vender a Nicholas Dyke, quien alguna vez fue un oficial subalterno. Nicholas está convencido de que ya no hay nada que hacer, pero... debo hacer lo que sea necesario para impedir este trato.}
+DiekeQuest.2 {El comprador es alguien llamado Weston. Debería averiguar quién es y dónde encontrarlo lo antes posible.}
+DiekeQuest.3 {Un comerciante jamaicano llegó hace poco a la ciudad con algún tipo de cargamento. Es un viejo amigo de Bishop. Lo más probable es que sea Weston. Debo encontrar su casa y ver qué se puede hacer.}
+DiekeQuest.4 {Al parecer, Charlie Weston planeaba conseguir a Dyke a precio de ganga. Tiene reservados unos miles de piastras y un curioso ídolo para Bishop. Creo que me quedaré con todo eso; podría serme útil. Bishop ya se da suficientes gustos por sí solo.}
+DiekeQuest.5 {¡Excelente! Nicholas se unirá a nosotros durante la huida.}
+OglQuest {Artillero tuerto}
+OglQuest.1 {El único artillero-cañonero que tengo disponible pidió un préstamo de 5.000 piastras al prestamista. No puedo zarpar sin Ogle: el riesgo es demasiado grande. Debo conseguir el dinero y saldar la deuda del viejo.}
+OglQuest.2 {He pagado la deuda de Ogla. Espero que esto resuelva su decisión de unirse a nosotros.}
+OglQuest.3 {¡Excelente! Ogle viene con nosotros.}
+FishermanQuest {Zona de pesca}
+FishermanQuest.1 {El pescador Hells me dio un trabajo: debo averiguar qué lugar de pesca ha descubierto otro pescador, Arnold Summerlight. Hells me prometió 2,000 piastras por el encargo.}
+FishermanQuest.2 {He logrado averiguar dónde está pescando Summerlight. Ahora solo tengo que decírselo a Hells y cobrar mi dinero.}
+UsurerQuest {Deudor sin nombre}
+UsurerQuest.1 {El prestamista me encargó un trabajo por 3.000 piastras: encontrar en la ciudad a un impostor que pidió un préstamo a nombre de Raphael Guinness aprovechando la confusión de la mañana. Esperará mi regreso hasta mañana por la noche; después informará de todo a Bishop. Ni siquiera sé por dónde empezar. El tabernero, como siempre, exigirá plata a cambio de información... Pero ¿quién más podría ayudarme?}
+UsurerQuest.2 {Tuve que darle quinientos al tabernero por información sobre ese Guinness. Me contó que Raphael consiguió dinero para un barco y fue a cerrar el trato. Parece que el tabernero no lo conoce muy bien, ya que al parecer toma al impostor por el verdadero Guinness. Debería pasar por el astillero.}
+UsurerQuest.3 {Logré interpretar mi papel bastante bien... ¿Por qué habré entrado al servicio y no al teatro? Asustado, el impostor-cuyo verdadero nombre es Alex Winner-me entregó todos sus ahorros: 55.000 piastras. Sospecho que parte de ese dinero pertenece al prestamista.}
+UsurerQuest.4 {Temiendo la justicia, Raphael-Alex me dio el préstamo. Ahora tengo que devolver el dinero al prestamista y recibir mi parte, ¿o...?}
+UsurerQuest.5 {No logré recuperar el dinero del prestamista: el estafador no confesó, empezó a protestar y se apresuró a perderse por las calles de la ciudad, donde ya no puedo encontrarlo...}
+UsurerQuest.6 {Decidí no devolver el dinero del prestamista: ahora mismo nosotros lo necesitamos mucho más. Aun así, los prestamistas no son de los que olvidan estas cosas. No me sorprendería que pronto pusieran precio a mi cabeza.}
+PirateQuest {Pirata caído}
+PirateQuest.1 {En la tienda conocí a un pirata simpático llamado Jacques Nightingale... Capitán Jacques Nightingale. Un personaje interesante... Pero, en cualquier caso, la oportunidad de ganar 1.500 piastras también es un buen motivo para hacer su amistad. Conseguiré ese dinero si encuentro un capitán dispuesto a llevar a mi nuevo amigo a Port Royal por tres mil.}
+PirateQuest.2 {El jefe de la autoridad portuaria mencionó al capitán Miner, que acaba de registrarse para zarpar hacia Port Royal. Sin mencionar el nombre de Solovey, logré obtener la información. Ahora solo necesito encontrar a ese John Miner en algún lugar de la ciudad.}
+PirateQuest.3 {Tras averiguar la identidad del pasajero, el jefe de la autoridad portuaria me contó la historia de la caída de este pirata. Al entregar el mapa del tesoro a su primer oficial, Solovey nunca imaginó que la tripulación podría decidir usarlo para liar tabaco y fumárselo. Cuando se les pasó la borrachera, los piratas culparon de todo a Jacques, lo abandonaron en una isla y lo dejaron allí para morir. Por algún milagro, Jacques Solovey logró escapar, pero ahora está en una situación difícil: no solo debe recuperar su barco, sino también vengarse del nuevo capitán. En fin, le deseo suerte, pero por ahora debo hablar con el capitán John Miner, quien ha informado a la autoridad portuaria que se dirige a Port Royal y zarpará pronto.}
+PirateQuest.4 {John Miner, capitán del 'Floating Briton', ha aceptado llevar a Jacques Nightingale a Port Royal por tres mil. Solo queda encontrar a este pirata e informarle, y luego cobrar el dinero.}
+PirateQuest.5 {Recibí mi dinero de Jacques el Ruiseñor, aunque claramente no tenía prisa por soltarlo. Un tipo bastante divertido.}
+PirateQuest.6 {No pude encontrar un barco que llevara al pirata caído. Supongo que se las arreglará solo de alguna manera...}
+EscapeFormBarbados {Huida}
+EscapeFormBarbados.1 {Nuestro plan de escape está a punto de desmoronarse. El coronel Bishop localizó a Jeremy Pitt mientras hacía los preparativos finales para la partida. He decidido intentar liberar a nuestro navegante en cuanto oscurezca. Por cierto, Jeremy escondió algunas armas en un cofre entre las tablas del suelo, en el borde de la plantación; sería bueno llegar hasta allí. Mientras tanto, los demás se colarán en la ciudad y nos esperarán allí, ocultos en el astillero.}
+EscapeFormBarbados.2 {Logré rescatar a Pitt de los hombres de Bishop, pero me dijo que Nuttall escapó en nuestro balandro. Debo advertir a Hagthorpe, Dyke, Ogle, Wolverstone y a los demás antes de que los capturen a todos.}
+EscapeFormBarbados.3 {
+Según la muchacha a la que tuve que sacar de un apuro, el fuerte mostró una hospitalidad admirable: dejó que los españoles, bajo bandera inglesa, se acercaran casi a quemarropa y les permitió generosamente disparar primero. Después de eso, no es de extrañar que la fortaleza resistiera apenas medio día.
+Ahora los españoles están saqueando la ciudad. Y su barco, imagino, está en la bahía con poco más que una guardia borracha a bordo. Si nos atrevemos... quizá podamos apoderarnos de ese navío.
+}
+EscapeFormBarbados.4 {Reunidos con los demás, decidimos intentar apoderarnos de un barco español bajo la cobertura de la noche.}
+EscapeFormBarbados.5 {Conseguimos capturar el barco español, pero aún es demasiado pronto para celebrar. Mientras quede un solo cañón intacto en el fuerte y nuestra tripulación sea tan reducida, quizá no logremos salir de esta bahía. Tendremos que actuar con la máxima cautela, sin permitirnos ni prisas innecesarias ni un exceso de confianza. Por ahora, debería hablar con la tripulación y atender a Jeremy.}
+EscapeFormBarbados.6 {El balandro está listo para zarpar. Es hora de volver a la plantación y avisar a Pitt para que prepare nuestra escala de cuerda para superar la empalizada. A medianoche abandonaremos esta isla.}
+EscapeFormBarbados.7 {El gobernador no quiere ni oír hablar de que vuelva a la plantación. Mientras esa maldita gota no afloje, no me permitirá abandonar la residencia. Estábamos a un paso de la libertad...}
+EscapeFormBarbados.8 {Con el pretexto de visitar al boticario, conseguí salir de la residencia. Debo encontrar a Nettall y hablar con él.}
+EscapeFormBarbados.9 {Encontré a Nettall en un estado lamentable: estaba convencido de que nuestro plan había sido descubierto y de que vendrían a por él en cualquier momento. Por suerte, logré hacer entrar en razón al pobre hombre: esta noche abandonaremos la isla. Ahora debo regresar a la residencia. El gobernador está hoy de muy mal humor, y poner a prueba su paciencia sería muy imprudente.}
+EscapeFormBarbados.10 {El gobernador por fin se ha dignado dejarme marchar. Debo encontrar a Pitt cuanto antes; el pobre hombre probablemente se haya consumido de tanto esperar.}
+EscapeFormBarbados.11 {Era justo lo que faltaba... Bishop ha elegido precisamente este momento para acordarse de mí.}
+EscapeFormBarbados.12 {Mientras hablaba con Arabella, su maldito tío consiguió convertir la espalda de Jeremy Pitt en una masa ensangrentada... Yo habría compartido su suerte si la ciudad no hubiera sido atacada una hora después. No sé si esto es nuestra salvación o solo un aplazamiento de lo inevitable, pero pronto lo sabré. Primero debo entrar en la ciudad y averiguar qué está ocurriendo.}
+EscapeFormBarbados.13 {Nos ocupamos de los luggers, y los habitantes y soldados remataron a quienes buscaron refugio en tierra. El coronel Bishop llegó a bordo del “Cinco Llagas” plenamente convencido de que el oro volvería al tesoro y de que la flota de Su Majestad ganaría esta magnífica fragata; incluso estaba dispuesto a mostrar una generosidad sin precedentes... Pero, como verdadero caballero, no podía permitir que me superara en nobleza y magnanimidad. A pesar de las protestas de la tripulación, pienso dejarle la vida. En cuanto estemos a una distancia segura del fuerte, abandonará nuestro barco.}
+EscapeFormBarbados.14 {
+El coronel Bishop ha abandonado el “Cinco Llagas” y nada hacia la costa. Estoy seguro de que el ejercicio le hará bien. Por mucha sed de venganza que tuviera la tripulación, no podía actuar de otro modo...
+Ahora que Barbados ha quedado atrás, debemos poner rumbo a Curaçao. Pero sin navegante estamos condenados a vagar a ciegas y, tarde o temprano, caer en manos inglesas o españolas. Por poco que me agrade la idea, tendré que recurrir al antiguo capitán de este barco y hacerle una oferta que difícilmente podrá rechazar.
+}
+EscapeFormBarbados.15 {Cometí un error terrible al confiar en la palabra de Diego de Espinosa. Aprovechando que Pitt no podía mantenerse en pie y que ninguno de nosotros sabía trazar un rumbo, pretendía llevar el barco directamente a una colonia española. Si lo hubiera conseguido, la esclavitud en las plantaciones de Bishop nos habría parecido una misericordia inaudita...}
+CBL_SonsRespect {Devoción filial}
+CBL_SonsRespect.1 {Diego de Espinosa nos atrajo a una trampa... La “Encarnación” se acerca desde el nordeste, el navío de Don Miguel de Espinosa, hermano de Don Diego; en combate abierto no tenemos ninguna posibilidad contra ella. Tendremos que confiar no en los cañones, sino en la astucia. Si la devoción filial del joven Esteban es lo bastante fuerte, quizá podamos convencer al Espinosa mayor de que todo va bien a bordo del “Cinco Llagas” y de que su capitán simplemente se encuentra algo indispuesto.}
+CBL_SonsRespect.2 {
+Esteban hizo todo lo que se le exigió. Para salvar a su padre engañó a su propio tío y, con ello, nos salvó a todos de la muerte. Ahora que Don Diego ha muerto, el muchacho nos lanza amenazas, y no puedo culparlo por ello.
+Wolverstone tiene razón: al dejarlo marchar, nos pongo en peligro. Pero ejecutar a un muchacho desarmado simplemente porque amaba a su padre y se niega a perdonar su muerte sería miserable. Si mi compasión resulta ser un error, responderé por ella.
+}
+CBL_Tortuga {Tortuga}
+CBL_Tortuga.1 {Qué ironía: después de escapar de una plantación inglesa y librarnos del lazo español, nos vemos obligados a buscar refugio entre los franceses. Mientras Pitt siga postrado en cama, sencillamente no tenemos otro rumbo posible. No sé qué recibimiento nos espera allí ni qué será de nosotros después. Solo nos queda confiar en la suerte y en la Providencia. Rumbo a Tortuga.}
+Arabella {Arabella Bishop}
+Arabella.1 {Qué espectáculo tan repugnante... Su precio es de ochenta piastras, señor Blood. No sé qué me desanima más: mi nueva situación o la idea de que esa joven de ojos castaños, tan cautivadora, participe en este vil espectáculo.}
+Arabella.2 {Quizá me equivoqué con Arabella Bishop. Me pareció mucho más humana que su tío. Aun así, no debería sacar conclusiones precipitadas: difícilmente puede estar completamente libre de los vicios con los que el coronel está tan generosamente dotado.}
+Arabella.3 {No, realmente no entiendo a la gente. ¿Quién habría imaginado que la familia que produjo a un monstruo como el coronel Bishop también pudiera criar a un ejemplo de misericordia como Arabella?}
+Arabella.4 {¿Es Arabella Bishop la que está allí en el muelle? Creo que debería hablar con ella.}
+Arabella.5 {¿Pero qué demonios es esto?! ¡O ella es una arpía o yo soy un necio! Tal vez las dos cosas...}
+Arabella.6 {Junto a Arabella olvidé todo lo demás... Unos pocos instantes en su compañía bastaron para que los trabajos forzados, Bishop y todo nuestro alocado plan desaparecieran por un momento de mi mente... Pero no debo engañarme. Soy un esclavo. Un condenado. No puedo olvidar ni eso ni que está en juego algo más que mi propio destino. Esta noche debemos llevar hasta el final lo que empezamos.}

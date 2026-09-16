@@ -1,0 +1,64 @@
+EPL_4_DressmakerNobleLady_dialog_1 {Сообщите в техподдержку о баге.}
+EPL_4_DressmakerNobleLady_dialog_2 {Ребекка?}
+EPL_4_DressmakerNobleLady_dialog_3 {Прошу прощения?}
+EPL_4_DressmakerNobleLady_dialog_4 {Как... Кажется, я ошиблась. Перепутала вас с одной своей знакомой.}
+EPL_4_DressmakerNobleLady_dialog_5 {И я это уже прекрасно поняла. Теперь, прошу, отойдите от меня.}
+EPL_4_DressmakerNobleLady_dialog_6 {Конечно, конечно. Но мне бы только хотелось узнать, кто вам сшил платье? Из-за него мне и показалось, что вы та самая девушка.}
+EPL_4_DressmakerNobleLady_dialog_7 {Чепуха.}
+EPL_4_DressmakerNobleLady_dialog_8 {Гарберд, для чего вы здесь стоите?}
+EPL_4_DressmakerNobleLady_dialog_9 {@<UpperFirst>, я вынужден настоять.}
+EPL_4_DressmakerNobleLady_dialog_10 {Не утруждайте себя!}
+EPL_4_DressmakerNobleLady_dialog_11 {...(не замечая нас)... А я ему и говорю, что он наивный дурак, раз верит в эти слухи, что якобы я обнимался с чёрным медведем... Да не было такого\nА тебе чего надо?}
+EPL_4_DressmakerNobleLady_dialog_12 {Отдыхаете, работники? Есть разговор.}
+EPL_4_DressmakerNobleLady_dialog_13 {Вы это, барышня, верно подметили. Отдыхаем\nЕсли хотите предложить работу, приходите завтра... Или нет, лучше через 2 дня. На завтра у нас уже есть наниматель, или предлагайте большую цену.}
+EPL_4_DressmakerNobleLady_dialog_14 {Мне нужно прямо сейчас. 2000 монет за простой разговор, идёт?}
+EPL_4_DressmakerNobleLady_dialog_15 {По рукам. Выкладывайте, только деньги вперёд, а мы уж подскажем, что знаем.}
+EPL_4_DressmakerNobleLady_dialog_16 {Держи.}
+EPL_4_DressmakerNobleLady_dialog_17 {Я кошелёк в каюте оставила, скоро вернусь.}
+EPL_4_DressmakerNobleLady_dialog_18 {Ну что, барышня, принесла 2000 монет?}
+EPL_4_DressmakerNobleLady_dialog_19 {Держи.}
+EPL_4_DressmakerNobleLady_dialog_20 {Ещё нет, скоро вернусь.}
+EPL_4_DressmakerNobleLady_dialog_21 {Отлично, так что ты хотела узнать?}
+EPL_4_DressmakerNobleLady_dialog_22 {Меня интересует женщина аристократка, которая сошла с одного из испанских кораблей. Прогуливалась недавно по набережной в сопровождении солдат, на ней была широкополая шляпа, сложно не заметить.}
+EPL_4_DressmakerNobleLady_dialog_23 {Её светлость, поди, по мостовой изволила гулять, а мы от зари до заката в порту пашем. К губернатору тебе, морячка, нужно с такими вопросами, только он таких как ты не принимает.}
+EPL_4_DressmakerNobleLady_dialog_24 {Я капитан собственного судна, примет по долгу службы.}
+EPL_4_DressmakerNobleLady_dialog_25 {То-то и оно. У них там балы-маскарады каждый вечер, не до государственных дел. Гости к нему знатные съезжаются, а больше никого не пускают.}
+EPL_4_DressmakerNobleLady_dialog_26 {Прямо маскарады?}
+EPL_4_DressmakerNobleLady_dialog_27 {Как есть. Вот вчера иду мимо резиденции, смотрю, пугало такое в саду носатое, я аж перекрестился, а это какой-то дон маску напялил и стоит, статую разглядывает. Ох меня и смех разобрал тогда.}
+EPL_4_DressmakerNobleLady_dialog_28 {Что ж, хоть какая-то зацепка. Как бы ещё мне попасть на этот приём?}
+EPL_4_DressmakerNobleLady_dialog_29 {Это ты, морячка, опять не тем людям вопросы задаёшь.}
+EPL_4_DressmakerNobleLady_dialog_30 {Знаю, и на том спасибо.}
+EPL_4_DressmakerNobleLady_dialog_31 {И куда запропал хозяин вечера? Он обещал мне партию в покер.}
+EPL_4_DressmakerNobleLady_dialog_32 {В саду его нет.}
+EPL_4_DressmakerNobleLady_dialog_33 {Будьте любезны, если встретите, передайте, что я его жду здесь.}
+EPL_4_DressmakerNobleLady_dialog_34 {Так и сделаю.}
+EPL_4_DressmakerNobleLady_dialog_35 {Пригласите даму за стол?}
+EPL_4_DressmakerNobleLady_dialog_36 {Не хотел бы показаться бестактным, я жду партнёра для игры в кости.}
+EPL_4_DressmakerNobleLady_dialog_37 {Давайте мои кубики.}
+EPL_4_DressmakerNobleLady_dialog_38 {Правила очень просты, по очереди мы выбрасываем кости...}
+EPL_4_DressmakerNobleLady_dialog_39 {Кубики!}
+EPL_4_DressmakerNobleLady_dialog_40 {Видит бог, поставил бы свой наградной пистоль, если хоть одна женщина сможет меня обыграть. К своему стыду, я заложил его на прошлой неделе.}
+EPL_4_DressmakerNobleLady_dialog_41 {Играем на интерес, мне просто нужно убить немного времени.}
+EPL_4_DressmakerNobleLady_dialog_42 {Удалось найти парня?}
+EPL_4_DressmakerNobleLady_dialog_43 {Да вон он на балюстраде. Юнец не настроен на долгие разговоры, по крайней мере не в моём обществе\nА всё же прекрасный вечер, не находите?}
+EPL_4_DressmakerNobleLady_dialog_44 {Не могу согласиться, мои мысли сейчас заняты другим.}
+EPL_4_DressmakerNobleLady_dialog_45 {Мне удалось узнать где квартирует мисс Пилар. С ней самой лучше дел не иметь, но поговорите с её прислугой, кто знает, возможно она привезла и свою портниху. Позвольте, я провожу вас.}
+EPL_4_DressmakerNobleLady_dialog_46 {Конечно, идём.}
+EPL_4_DressmakerNobleLady_dialog_47 {Здесь. По лестнице наверх.}
+EPL_4_DressmakerNobleLady_dialog_48 {Поднимитесь со мной?}
+EPL_4_DressmakerNobleLady_dialog_49 {Мне пора возвращаться в Гавану. Его милость, Оригон-и-Гаскон уже заждался моих отчётов. Удачи вам, @<pchar>.}
+EPL_4_DressmakerNobleLady_dialog_50 {Берегите себя. Охота на пиратов очень опасное занятие.}
+EPL_4_DressmakerNobleLady_dialog_51 {Вы?! Так это ваша работа?}
+EPL_4_DressmakerNobleLady_dialog_52 {Боже! @<UpperFirst>, я не услышала как вы вошли. Хозяева остановились внизу, эти комнаты сейчас отданы прислуге. Только боюсь, они ещё...}
+EPL_4_DressmakerNobleLady_dialog_53 {София, не узнаёте меня? Ла-Вега, день перед осадой.}
+EPL_4_DressmakerNobleLady_dialog_54 {Ой... Вы та девушка на рынке, которая хотела чем-то мне помочь?\nЗнаете, мне так неловко, я тогда была охвачена навалившимся проблемами, к тому же меня увлёк необычный крой наряда вашей спутницы, поэтому совершенно не запомнила вашего лица.}
+EPL_4_DressmakerNobleLady_dialog_55 {Как вам удалось тогда спастись?}
+EPL_4_DressmakerNobleLady_dialog_56 {Говорили, что пираты до того как начали стрелять по городу, проникли на наш корабль и выбросили все бочки пороха в море. Офицеры отправились к ним на переговоры, а когда вернулись, капитан приказал всем пассажирам сесть в шлюпки, и мы уплыли.}
+EPL_4_DressmakerNobleLady_dialog_57 {Они просто бросили нас!}
+EPL_4_DressmakerNobleLady_dialog_58 {Это так ужасно, я только недавно узнала, что там произошло.}
+EPL_4_DressmakerNobleLady_dialog_59 {А почему вы не вернулись в Европу?}
+EPL_4_DressmakerNobleLady_dialog_60 {Корабль не стал возвращаться, мне пришлось искать работу. На счастье, мисс Пилар была так великодушна, и знаете, я не хочу обратно в отцовское имение. А я уже говорила? Её здесь нет.}
+EPL_4_DressmakerNobleLady_dialog_61 {Что ж, я зайду в другой раз. Рада, что вы справились со своими трудностями.}
+EPL_4_DressmakerNobleLady_dialog_62 {Благодарю, @<GetAddress_Form>.}
+EPL_4_DressmakerNobleLady_dialog_63 {Удачи, София.}
+EPL_4_DressmakerNobleLady_dialog_64 {Вы сняли карнавальную маску}

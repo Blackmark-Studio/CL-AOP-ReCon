@@ -1,0 +1,27 @@
+Start_dialog_9 {
+Greetings, colleague. Fine ship you've got, strong hull, good crew - plain to see.
+}
+Start_dialog_10 {
+Time is money, friend. Say what you want, quickly.
+}
+Start_dialog_11 {
+Not long ago a moneybags showed up here. He's putting together a flotilla for some big and damned profitable venture. And he's looking for experienced captains with fine ships. Like yours.
+}
+Start_dialog_12 {
+Well, well. And?
+}
+Start_dialog_13 {
+Lady Fortune turned her backside on me! My schooner took a hard beating in the last scrap with the Spaniards: half the guns might as well go overboard, and what's left of the crew wouldn't frighten a crow. The moment that fellow saw my ship, he wore straight around. Says he wants sea wolves, not beaten dogs.
+}
+Start_dialog_14 {
+You didn't stop me just to complain about your luck, did you?
+}
+Start_dialog_15 {
+True enough. Your ship's sound, your crew ready - he won't turn you away. If you want to make some gold, go straight to the tavern keeper. He's the fat purse's go-between: personally selects the captains and knows all the details.
+}
+Start_dialog_16 {
+And you decided to share such a valuable lead with me purely out of the goodness of your heart?
+}
+Start_dialog_17 {
+Believe me or don't, I'm not the jealous sort. But if we meet again, you'll owe me one.
+}

@@ -114,7 +114,13 @@ void ProcessDialogEvent()
 					if ("1" == pchar.GenQuest.EncGirl.MeetSoldiers)
 					{
 						dialog.text = StringFromKey("Common_Soldier_78", pchar.GenQuest.EncGirl.name);
+
+						//HardCoffee пример изменения заголовка диалогового окна, когда нпс разговаривает с нпс
+						//эту функцйию надо писать перед каждой фразой нпс с нпс
+						//Иначе после клика игрока заголовок сбросится на имя первого нас это сделано специально
+						SetNpcToNpcDialogTitle(NPChar, GetCharacterFromID("CangGirl"));
 						link.l1 = StringFromKey("Common_Soldier_79", pchar);
+
 						link.l1.go = "GirlEnc_1";
 						DeleteAttribute(pchar, "GenQuest.EncGirl.MeetSoldiers");
 						break;
@@ -122,7 +128,10 @@ void ProcessDialogEvent()
 					if ("2" == pchar.GenQuest.EncGirl.MeetSoldiers)
 					{
 						dialog.text = StringFromKey("Common_Soldier_80");
+
+						SetNpcToNpcDialogTitle(NPChar, GetCharacterFromID("CangGirl"));
 						link.l1 = StringFromKey("Common_Soldier_81");
+
 						link.l1.go = "GirlEnc_2";
 						DeleteAttribute(pchar, "GenQuest.EncGirl.MeetSoldiers");
 						break;

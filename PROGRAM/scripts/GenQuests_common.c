@@ -345,6 +345,13 @@ void PiratesOnUninhabited_SetCapToMap()
 	PChar.Quest.PiratesOnUninhabited_ShipSink.win_condition.l1 = "Character_sink";
 	PChar.Quest.PiratesOnUninhabited_ShipSink.win_condition.l1.character = "PiratesOnUninhabited_BadPirate";
 	PChar.Quest.PiratesOnUninhabited_ShipSink.function = "PiratesOnUninhabited_ShipSink";
+
+	// KZ > дедлайн (60 дней) на перехват корабля - иначе он вечно роумит по глобалке, а квест не закрывается
+	PChar.Quest.PiratesOnUninhabited_ShipDeadline.win_condition.l1 = "Timer";
+	PChar.Quest.PiratesOnUninhabited_ShipDeadline.win_condition.l1.date.day = GetAddingDataDay(0, 0, 60);
+	PChar.Quest.PiratesOnUninhabited_ShipDeadline.win_condition.l1.date.month = GetAddingDataMonth(0, 0, 60);
+	PChar.Quest.PiratesOnUninhabited_ShipDeadline.win_condition.l1.date.year = GetAddingDataYear(0, 0, 60);
+	PChar.Quest.PiratesOnUninhabited_ShipDeadline.function = "PiratesOnUninhabited_ShipDeadline";
 	
 	Log_TestInfo("Пираты на необитайке: кэп вышел из " + character.fromCity + " и направился в: " + character.toShore);
 }

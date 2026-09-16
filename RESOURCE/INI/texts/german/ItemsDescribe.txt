@@ -11,6 +11,10 @@ drunk {Rausch}
 weapon blade parameters {Waffe: Schaden min/max #ddmg_min#/#ddmg_max#}
 weapon blade type {Typ: #sFencingTypeName#}
 weapon gun parameters {Waffe: Schaden min/max #ddmg_min#/#ddmg_max#, Nachladezeit: #dchargespeed# Sek., Genauigkeit: #daccuracy#%}
+weapon gun parameter damage {Schaden min/max: #ddmg_min#/#ddmg_max#,}
+weapon gun parameter charge speed {Nachladezeit:}
+weapon gun parameter accuracy {Genauigkeit:}
+
 youve_got {Gegenstand gefunden –}
 used_item {Gegenstand verwendet –}
 lucky_find {Glücksfund!}
@@ -63,6 +67,13 @@ itmname_Azzy_bottle {Lampe}
 itmdescr_Azzy_bottle {Eine uralte orientalische Lampe, rundum sicher versiegelt. Unbekannte Hieroglyphen sind in das Zinn eingelassen. Ein seltsames Artefakt, ungewöhnlich leicht für einen Gegenstand aus Metall.}
 itmname_Malyava {Zettel}
 itmdescr_Malyava {Eine Nachricht eines Häftlings an seine Kumpane.}
+itmname_HelenNote {Eine abgegriffene Notiz aus einer an Land gespülten Truhe}
+itmdescr_HelenNote
+{
+(unleserlich) wie konntest du nur dieses rothaarige Flittchen wählen?
+Ich bin es leid, ständig auf Dinge zu stoßen, die mich jedes Mal an dich erinnern. Es ist Zeit, damit Schluss zu machen - soll das Meer alles holen, was du je berührt hast.
+Leb wohl, (unleserlich)
+}
 itmname_Term_arm {Metallarm}
 itmdescr_Term_arm {Ein seltsamer und rätselhafter Gegenstand, von den Wellen an Land gespült. Er ähnelt einer skelettierten Hand, besteht jedoch aus Metall. Der Arm ragte aus einem Stück Schiffsrumpf, völlig mit Seetang bedeckt. Offenbar wurde er lange Zeit von den Wellen umhergeworfen. Bei genauerem Hinsehen ist eine Gravur zu erkennen: DT2022. Was das bedeutet und welcher Handwerker so etwas gefertigt haben könnte, bleibt ein Rätsel...}
 itmname_BlackLabel {Schwarzer Fleck}
@@ -193,7 +204,7 @@ itmname_map_dominica {Karte von Dominica}
 itmdescr_map_dominica {Karte der unbewohnten Insel Dominica.}
 itmname_map_martiniqua {Karte von Martinique}
 itmdescr_map_martiniqua {Eine Karte von Martinique, damit du dich nicht verläufst.}
-itmname_map_trinidad {Karte von Trinidad und Tobago}
+itmname_map_trinidad {Karte von Trinidad}
 itmdescr_map_trinidad {Eine Karte der beiden Inseln Trinidad und Tobago, mit der du dich bei der Navigation nicht verirren wirst.}
 itmname_map_nevis {Karte von Nevis}
 itmdescr_map_nevis {Eine Karte mit den umliegenden Gebieten und Routen der Insel Nevis.}
@@ -1102,4 +1113,136 @@ itmname_LesopilkaDoc    {Vertrag der Niederländischen Westindien-Kompanie}
 itmdescr_LesopilkaDoc
 {
 Ein Dokument, das für die Eintragung in das Kapitänsregister der Niederländischen Westindien-Kompanie erforderlich ist.
+}
+
+itmname_MedicalSupplies {Medizinische Ausrüstung}
+itmdescr_MedicalSupplies {Eine hastig gepackte Arzttasche. Sie enthält Verbandszeug, Fläschchen mit Weingeist, Salben, chirurgische Instrumente und andere notwendige Dinge, ohne die die medizinische Versorgung in den Kolonien schnell zum Bestattungsdienst wird.}
+itmname_EPL_TFS_letter	{Brief}
+itmdescr_EPL_TFS_letter
+{
+Bericht des Gouverneurs von Santo Domingo über den Vorfall auf Hispaniola.
+}
+
+itmname_legendGuide {Leitfaden für angehende Legenden}
+itmdescr_legendGuide
+{
+Ein kleines Notizbuch voller kurzer, aber wichtiger Ratschläge. Eines Tages hast du es einfach zwischen deinen Sachen gefunden.
+}
+
+itmname_casket
+{
+Gaspar Molinas Schatulle
+}
+itmdescr_casket
+{
+Die persönliche Schatulle von Sekretär Molina. Darin befinden sich Vargas' Korrespondenz, Agentenlisten und Rechnungsbücher. Genau auf diese Fracht wartet Michel le Basque auf Tortuga so ungeduldig.
+}
+itmname_jako_hat
+{
+Jacos Hut
+}
+itmdescr_jako_hat
+{
+Er sieht ziemlich mitgenommen aus, schützt den Kopf aber zuverlässig vor der sengenden karibischen Sonne.
+}
+itmname_blank
+{
+Blankoformular
+}
+itmdescr_blank
+{
+Ein unbeschriebenes Formular mit amtlichem Siegel.
+}
+itmname_venezi_cehin
+{
+Venezianischer Zecchino
+}
+itmdescr_venezi_cehin
+{
+Eine alte Goldmünze, auf deren Vorderseite der Doge kniend vor dem heiligen Markus dargestellt ist. Eben diese Münze dient als Erkennungszeichen für ein Treffen mit Diego Vargas' Vertrauensmann.
+}
+itmname_letter_forged
+{
+Gefälschter Brief
+}
+itmdescr_letter_forged
+{
+Eine meisterhafte Fälschung aus der Feder Etienne Marceaus. Ein amtliches kastilisches Formular wurde mit „unwiderlegbaren Beweisen“ dafür gefüllt, dass Don Ignacio Vela Diego Vargas' Geheimnisse verkauft. Nun muss dieses Todesurteil nur noch dem richtigen Empfänger untergeschoben werden.
+}
+itmname_spa_lager
+{
+Molinas Anweisungen
+}
+itmdescr_spa_lager
+{
+Kurieranweisungen mit genauen Wegmarken zum spanischen Lager auf Jamaika.
+}
+itmname_letter_Aruba
+{
+Befehl mit dem Siegel Don Inigo de Cabreras
+}
+itmdescr_letter_Aruba
+{
+Cabreras Befehl, gefunden beim toten Kommandanten der Patrouille.
+}
+itmname_letter_bask
+{
+Rauls versiegelter Brief
+}
+itmdescr_letter_bask
+{
+Der Brief ist versiegelt. Sein Inhalt dürfte Marceau zweifellos interessieren.
+}
+itmname_BladeBone
+{
+Fangzahn
+}
+itmdescr_BladeBone
+{
+Eine unheilvoll wirkende Klinge. Ihre Schneide ist mit Gift bestrichen, das bei einem gut gesetzten Treffer bisweilen in die Wunde gelangt.
+
+Besonderheit: 5 % Chance, den Gegner bei einem erfolgreichen Treffer zu vergiften.
+}
+itmname_raw_meat
+{
+Rohes Fleisch
+}
+itmdescr_raw_meat
+{
+Ein Stück frisch zerlegtes rohes Fleisch. An seinem Aussehen lässt sich kaum erkennen, von welchem Tier es stammt. Vom rohen Verzehr wird dringend abgeraten. Ohne richtige Zubereitung sollte man besser die Finger davon lassen.
+~
+(Universelle Kochzutat)
+}
+itmname_dried_meat
+{
+Trockenfleisch
+}
+itmdescr_dried_meat
+{
+Wildfleisch, nach einem besonderen Rezept der Bukanier von Tortuga getrocknet. Von Rauch und Gewürzen durchzogen, verleiht es im Kampf bemerkenswerte Ausdauer.
+}
+itmname_recipe_rimalye
+{
+Rezept des Bukaniers Rimalie
+}
+itmdescr_recipe_rimalye
+{
+Ein vergilbtes Blatt, vollgekritzelt mit Rimalies Handschrift. Der alte Trunkenbold hat eine raffinierte Methode ersonnen, fast jedes Aas noch zu verwerten: Einen toten Kormoran darf man nicht nur rupfen, sondern muss ihn gründlich in Rum einlegen, um ihn von Bakterien und Leichengift zu reinigen.
+}
+itmname_recipe_dried_meat    {Rezept für Trockenfleisch}
+itmdescr_recipe_dried_meat
+{
+Ein Zettel mit Notizen alter Jäger aus Tortuga. Das Geheimnis der Zubereitung von echtem Bukanier-Trockenfleisch liegt in einer richtigen Marinade aus gereiftem Wein, pikanter Ingwerwurzel und reichlich Salz. Dadurch hält sich das Fleisch lange im Laderaum und verleiht einen kolossalen Kraftschub.
+}
+itmname_strange_note
+{
+Die seltsame Notiz
+}
+itmdescr_strange_note
+{
+Ein Stück Pergament. Etwas steht darauf geschrieben.
+}
+itmtext_strange_note
+{
+Sucht das Schiff nicht auf See. Sucht nach denen, die es lebend verlassen haben. Mitternacht. Der alte Friedhof.
 }

@@ -1,5 +1,5 @@
 Andre_Abel_Dialog_1 {
-O, то wy, kapitanie?!
+O, to wy, kapitanie?!
 }
 Andre_Abel_Dialog_2 {
 Miło pana/panią widzieć, kapitanie/kapitanko.
@@ -315,4 +315,10 @@ Andre_Abel_Dialog_94 {
 }
 Andre_Abel_Dialog_95 {
 Powodzenia!.. I uważaj, żeby znów nie dać się złapać.
+}
+Andre_Abel_Dialog_96 {
+Tak, sprawy się przeciągnęły. I co teraz?
+}
+Andre_Abel_Dialog_97 {
+W mojej eskadrze nie ma ani jednego wolnego miejsca.
 }

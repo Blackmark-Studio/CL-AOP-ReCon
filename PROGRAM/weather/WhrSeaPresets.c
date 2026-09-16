@@ -8,8 +8,7 @@ int SM_WaveType = 1;
 
 string WhrGetSeaPresetFromWind(float fWind)
 {
-	ref mchr = GetMainCharacter();
-	string sLocation = mchr.location;
+	string sLocation = pchar.location;
 	string sLocalPreset = "calm";
     if (bSeaActive && !bAbordageStarted)
     {
@@ -63,13 +62,17 @@ string WhrGetSeaPresetFromWind(float fWind)
 void WhrSetSeaPreset(int iCurWeatherNum, float fWind)
 {
     if (isShipInside(pchar.location)) return;
+
     ref Whr = &Weathers[iCurWeatherNum];
     Whr.Sea2.SkyColor = argb(0,255,255,255);
 
     float SeaAmp = 0.0;
-    ref mchr = GetMainCharacter();
-    string sLocation = mchr.location;
+
+    string sLocation = pchar.location;
+
+    int iLoc = FindLocation(sLocation);
     ref loc;
+    if (iLoc >= 0) makeref(loc, Locations[iLoc]);
 
     switch(sPreset)
     {
@@ -323,7 +326,7 @@ void WhrSetSeaPreset(int iCurWeatherNum, float fWind)
             Whr.Sea2.Reflection = 0.6;
             Whr.Sea2.Transparency = 0.6;
             Whr.Sea2.SkyColor = argb(0,180,220,240);
-            loc = &Locations[FindLocation(sLocation)];
+            
 			if (loc.type == "town")
 			{
 				if (loc.id == "Villemstad_town" || loc.id == "BasTer_town" || loc.id == "PortPax_town" || loc.id == "Maracaibo_town")
@@ -365,7 +368,7 @@ void WhrSetSeaPreset(int iCurWeatherNum, float fWind)
             Whr.Sea2.FoamTexDisturb = 0.5;
             Whr.Sea2.Frenel = 0.3;
             Whr.Sea2.Attenuation = 0.2;
-            loc = &Locations[FindLocation(sLocation)];
+
 			if (loc.type == "town")
 			{
 				if (loc.id == "Villemstad_town")
@@ -438,7 +441,6 @@ void WhrSetSeaPreset(int iCurWeatherNum, float fWind)
             Whr.Sea2.Frenel = 0.5;
             Whr.Sea2.Attenuation = 0.1;
 
-            loc = &Locations[FindLocation(sLocation)];
             if (loc.type == "town")
             {
                 if (loc.id == "Villemstad_town")
@@ -526,7 +528,7 @@ void WhrSetSeaPreset(int iCurWeatherNum, float fWind)
             Whr.Sea2.Transparency = 0.1;
             Whr.Sea2.Frenel = 0.6;
             Whr.Sea2.Attenuation = 0.2;
-            if (CheckAttribute(pchar, "type"))
+            if (CheckAttribute(loc, "type"))
             {
                 if (loc.type == "fort")
                 {
@@ -540,10 +542,7 @@ void WhrSetSeaPreset(int iCurWeatherNum, float fWind)
                     Whr.Sea2.FoamK = 0.2;
                 }
             }
-            Whr.Tornado = false; //скажем нет торнадо на суше!
             Whr.Sea2.SkyColor = argb(0,60,70,80);
-            Sea.Fog.SeaDensity = 0.02;
-            Sea.Sea2.Reflection = 0.03;
         break;
 
         case "stock_land": //стоячая вода
@@ -621,8 +620,8 @@ void Whr_ColorizeSeaWater()
         float fBlend = distanceToIsland / 1800;
         if (Whr_CheckStorm()) Sea.MaxSeaHeight = 200.0;
         else if (distanceToIsland < 800.0) Sea.MaxSeaHeight = 6.0;
-        else if (distanceToIsland < 1300.0) Sea.MaxSeaHeight = Whr_BlendFloat(fBlend, 50.0, 6.0);
-        else if (distanceToIsland < 1800.0) Sea.MaxSeaHeight = Whr_BlendFloat(fBlend, 200.0, 50.0);
+        else if (distanceToIsland < 1300.0) Sea.MaxSeaHeight = Whr_BlendFloat((distanceToIsland - 800.0) / 500.0, 6.0, 50.0);
+        else if (distanceToIsland < 1800.0) Sea.MaxSeaHeight = Whr_BlendFloat((distanceToIsland - 1300.0) / 500.0, 50.0, 200.0);
         else Sea.MaxSeaHeight = 200.0;
         //<-- фикс затопления городов при переходе из открытого моря
 
@@ -653,6 +652,17 @@ void Whr_ColorizeSeaWater()
                 Sea.Sea2.WaterColor = argb(0,0,40,70);
             }
         }
+        //вода в шторм
+        else if (Whr_CheckStorm())
+        {
+            Sea.Sea2.WaterColor = argb(0,4,45,65);
+            if (GetTime() < 6.0 || GetTime() >= 20.0) {
+                Sea.Sea2.FoamK = 0.02;
+                Sea.Sea2.Reflection = 0.3;
+                Sea.Sea2.Transparency = 0.1;
+                Sea.Sea2.WaterColor = argb(0,5,15,22);
+            }
+        }
         //ночная вода
         else if (GetTime() < 6.0 || GetTime() >= 21.0)
         {
@@ -667,17 +677,6 @@ void Whr_ColorizeSeaWater()
             Sea.Sea2.Reflection = 0.3;
             Sea.Sea2.Transparency = 0.1;
             Sea.Sea2.WaterColor = argb(0,10,25,40);
-        }
-        //вода в шторм
-        else if (Whr_CheckStorm())
-        {
-            Sea.Sea2.WaterColor = argb(0,4,45,65);
-            if (GetTime() < 6.0 || GetTime() >= 20.0) {
-                Sea.Sea2.FoamK = 0.02;
-                Sea.Sea2.Reflection = 0.3;
-                Sea.Sea2.Transparency = 0.1;
-                Sea.Sea2.WaterColor = argb(0,5,15,22);
-            }
         }
         //цвет морской воды по умолчанию
         else
@@ -705,7 +704,7 @@ void Whr_ColorizeSeaWater()
 
         //вначале выставляем общие цвета моря на время суток
         if (GetTime() >= 23.0 || GetTime() < 7.0)       Sea.Sea2.WaterColor = argb(0,0,30,40);
-        else if (GetTime() >= 7.0 && GetTime() < 9.0)   Sea.Sea2.WaterColor = argb(0,5,30,60);
+        else if (GetTime() >= 7.0 && GetTime() < 10.0)  Sea.Sea2.WaterColor = argb(0,5,30,60);
         else if (GetTime() >= 10.0 && GetTime() < 11.0) Sea.Sea2.WaterColor = argb(0,84,162,175);
         else if (GetTime() >= 11.0 && GetTime() < 18.0) Sea.Sea2.WaterColor = argb(0,0,170,150);
         else if (GetTime() >= 18.0 && GetTime() < 21.0) Sea.Sea2.WaterColor = argb(0,0,55,90);
@@ -776,10 +775,6 @@ void Whr_ColorizeSeaWater()
                 if (sPreset == "strong_breeze_land") Sea.MaxSeaHeight = 0.23;
                 else if (sPreset == "breeze_land") Sea.MaxSeaHeight = 0.25;
             }
-            else if (loc.id == "Beliz_town") //в Белизе даже берег топит к хренам
-            {
-                Sea.MaxSeaHeight = 0.1;
-            }
 
             Sea.Sea2.Reflection = 0.6;
             Sea.Sea2.Transparency = 0.3;
@@ -831,12 +826,12 @@ void SM_ModifyLightness()
 	g = makeint(g * lightIntencity);
 	b = makeint(b * lightIntencity);
 	
-	aref weather = GetCurrentWeather();
-	
-	weather.Sky.Color = argb(0, r, g, b);
-	Weather.Sky.Color = weather.Sky.Color;
-	
-	weather.Sun.Reflection.Size = 100 + 500 * lightIntencity;
+	aref arCurWeather = GetCurrentWeather();
+
+	arCurWeather.Sky.Color = argb(0, r, g, b);
+	Weather.Sky.Color = arCurWeather.Sky.Color;
+
+	arCurWeather.Sun.Reflection.Size = 100 + 500 * lightIntencity;
 	
 //Log_TestInfo("SM_ModifyLightness: выбрано значение " + lightIntencity);
 }
@@ -874,17 +869,19 @@ float Whr_GetNearestDistanceToIsland()
             aref rl;
             makearef(rl, Islands[li].reload);
             int num = GetAttributesNum(rl);
-            bool bFound = false;
             for(int i = 0; i< num; i++)
             {
                 string tempattrname = GetAttributeName(GetAttributeN(rl,i));
-                if (CheckAttribute(rl, tempattrname+".x"))
+                aref e; makearef(e, rl.(tempattrname));
+                if (CheckAttribute(e, "x"))
                 {
-                    float ix = stf(rl.(tempattrname).x);
-                    float iz = stf(rl.(tempattrname).z);
+                    float ix = stf(e.x);
+                    float iz = stf(e.z);
 
                     float dist = GetDistance2D(psX, psZ, ix, iz);
-                    string sType = Locations[FindLocation(rl.(tempattrname).go)].type;
+                    int iGo = FindLocation(e.go);
+                    string sType = "";
+                    if (iGo >= 0) sType = Locations[iGo].type;
                     if(sType == "seashore" || sType == "town" || sType == "mayak")
                     {
                         if(dist < isR)

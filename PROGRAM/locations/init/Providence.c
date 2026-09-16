@@ -1274,13 +1274,6 @@ int LocationInitProvidence(int n)
 	locations[n].reload.l1.autoreload = "1";
 	locations[n].reload.l1.label = "Jungle";
 	locations[n].locators_radius.reload.reload1_back = 2.2;
-
-	/*locations[n].reload.l2.name = "reload2_back";
-	locations[n].reload.l2.go = "Shore66";
-	locations[n].reload.l2.emerge = "reload1";
-	locations[n].reload.l2.autoreload = "1";
-	locations[n].reload.l2.label = "Jungle";
-	locations[n].locators_radius.reload.reload2_back = 2.0;*/
 	n = n + 1;
 
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

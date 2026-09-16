@@ -1,57 +1,57 @@
 Cartahena_PortMan_1 {
-什么问题？
+什么问题？ 
 }
 Cartahena_PortMan_2 {
-有什么需要帮忙的，@<GetAddress_Form>?
+有什么需要帮忙的， @<GetAddress_Form>?
 }
 Cartahena_PortMan_3 {
 @<RandPhraseSimple>
 }
 Cartahena_PortMan_4 {
-前不久你还想问我个问题@<GetAddress_Form>……
+前不久你还想问我个问题@<GetAddress_Form>…… 
 }
 Cartahena_PortMan_5 {
-你今天已经第三次提这事了……
+你今天已经第三次提这事了…… 
 }
 Cartahena_PortMan_6 {
-听着，要是你不是来办港口的事，就别拿问题来烦我。
+听着， 要是你不是来办港口的事， 就别拿问题来烦我。 
 }
 Cartahena_PortMan_7_m {
-我改主意了……
+我改主意了…… 
 }
 Cartahena_PortMan_7_f {
-我改变主意了……
+我改变主意了…… 
 }
 Cartahena_PortMan_8 {
-我现在没什么可说的。
+我现在没什么可说的。 
 }
 Cartahena_PortMan_9 {
 @<RandPhraseSimple>
 }
 Cartahena_PortMan_10 {
-嗯，我的记忆好像出了点问题……
+嗯， 我的记忆好像出了点问题…… 
 }
 Cartahena_PortMan_11 {
-看来第三次总算成了吧……
+看来第三次总算成了吧…… 
 }
 Cartahena_PortMan_12 {
-不好意思，俺现在对港口的事儿没兴趣。
+不好意思， 我现在对港口的事儿没兴趣。 
 }
 Cartahena_PortMan_13_m {
-听说前不久有艘商船从你们港口出海后失踪了，你能跟我说说具体情况吗？
+听说前不久有艘商船从你们港口出海后失踪了， 你能跟我说说具体情况吗？ 
 }
 Cartahena_PortMan_13_f {
-听说前不久有艘商船离开你们港口后失踪了，你能跟我说说具体情况吗？
+听说前不久有艘商船离开你们港口后失踪了， 你能跟我说说具体情况吗？ 
 }
 Cartahena_PortMan_14 {
-没啥好说的。那艘叫“Happy Bride”的flute在我们仓库装满了檀香，出海后就再也没到目的地。我干这行见过太多这种事，早就习惯了。
+没什么好说的。 那艘叫“快乐新娘号”的福禄特帆船在我们仓库装满了白檀木， 出海后就再也没到目的地。 我干这行见过太多这种事， 早就习惯了。 
 }
 Cartahena_PortMan_15 {
-你能不能告诉我，除了“Lucky Bride”之外，还有哪些船是同时离开港口的？
+你能不能告诉我， 除了“快乐新娘号”之外， 还有哪些船是同时离开港口的？ 
 }
 Cartahena_PortMan_16 {
-当然，我来帮你。让我查查记录……那艘‘San Juan Nepomasedo’号大帆船，还有‘Adelaide’号小帆船。
+当然， 我来帮你。 让我查查记录…… 那艘“圣胡安.纳波塞诺号”盖伦帆船， 还有“阿德莱德号”皮纳斯帆船。 
 }
 Cartahena_PortMan_17 {
-谢谢！
+谢谢！ 
 }

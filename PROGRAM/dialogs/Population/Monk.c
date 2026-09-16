@@ -106,6 +106,20 @@ void ProcessDialogEvent()
 							StringFromKey("Monk_28")));
 				link.l10.go = "exit";
 				npchar.quest.meeting = "1";
+				//--> Эммануэль Пардаль
+				if (CheckAttribute(pchar, "questTemp.EPL_Prologue"))
+				{
+					dialog.text = NPCharSexPhrase(NPChar, StringFromKey("Gipsy_69", TimeGreeting(), pchar.name), StringFromKey("Gipsy_70", TimeGreeting(), pchar.name));
+					link.l10 = StringFromKey("Monk_134", TimeGreeting());
+					link.l10.go = "exit";
+					DeleteAttribute(link, "l1");
+					DeleteAttribute(link, "l2");
+					DeleteAttribute(link, "l3");
+					DeleteAttribute(link, "l4");
+					npchar.quest.meeting = "0";
+					break;
+				}
+				//<-- Эммануэль Пардаль
 			}
 			else
 			{

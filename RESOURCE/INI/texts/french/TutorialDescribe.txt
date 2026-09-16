@@ -475,12 +475,12 @@ On dirait que les Espagnols battent en retraite. Ils ne peuvent pas résister à
 ~
 Rompez le combat en augmentant la distance avec le navire ennemi. Vous pouvez voir la distance au navire avec la longue-vue.
 ~
-Pour utiliser la longue-vue, allez sur le pont ('Tab' par défaut) et maintenez la touche 'Ctrl' (par défaut).
+Pour utiliser la longue-vue, allez sur le pont ('Tab' par défaut) et appuyez sur la touche 'Ctrl' (par défaut).
 ~
 Lorsque la distance avec l’ennemi atteint 1000, vous pouvez quitter le champ de bataille en toute sécurité.
 }
 BloodPrologue_SeaEscape_controlsimg1 {Sea_CameraSwitch}
-BloodPrologue_SeaEscape_controlsimg2 {TelescopeIn}
+BloodPrologue_SeaEscape_controlsimg2 {TelescopeMode}
 BloodPrologue_EnterMap_title {Entrer sur la carte globale}
 BloodPrologue_EnterMap_descr
 {

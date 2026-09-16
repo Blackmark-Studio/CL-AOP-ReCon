@@ -64,21 +64,12 @@ void ActiveF7Control()
 void ActiveF10Control()
 {
 	aref arFader;
-	string s = "MusicUpdateSea";
-	
+
 	if (!sti(InterfaceStates.Launched) && !GetEntity(arFader, "fader"))
 	{
 		DeleteAttributeEx(&TEV, "Music.KeepPlaying,Music.ForceKeepPlaying");
-		StopSound(musicID, 500);
-		
-		if (and(bSeaActive, !bAbordageStarted) || IsEntity(&worldMap))
-		{
-			DelEventHandler(s, "KZ|" + s);
-			SetEventHandler(s, "KZ|" + s, 1);
-			PostEvent(s, 750);
-		}
-		else
-			LAi_MethodDelay("KZ|MusicUpdateLoc", 0.75);
+		StopMusic(250);
+		KZ|MusicSelect("");
 	}
 }
 

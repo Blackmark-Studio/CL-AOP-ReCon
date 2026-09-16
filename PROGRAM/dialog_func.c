@@ -550,13 +550,15 @@ float GetDeceptionChance(int sneakVal)
 // Обертка для текста, приписываем вероятность обмана
 string DeceptionChance_TextWrapper(string linkText)
 {
+	string sRes = linkText;
+
     if (CheckAttribute(&TEV, "TempGuardDeceptionChance"))
     {
-        return StringFromKey("InfoMessages_228", TEV.TempGuardDeceptionChance) + " " + linkText;
+        sRes = StringFromKey("InfoMessages_228", TEV.TempGuardDeceptionChance) + " " + linkText;
         DeleteAttribute(&TEV, "TempGuardDeceptionChance");
     }
 
-    return linkText;
+    return sRes;
 }
 
 string GetInfoPhrase(ref rWho, string info, string str1, string str2)
@@ -651,7 +653,7 @@ string FindDestinationCity(ref NPChar, int iDelta, string sExcludeColony)
 		//if (GetNationRelation(sti(npchar.nation), sti(colonies[n].nation)) == RELATION_ENEMY) continue;
 		if (sti(colonies[n].nation) == PIRATE) continue;
 		if (GetIslandNameByCity(npchar.city) == colonies[n].islandLable) continue;
-		if (StrHasStr(colonies[n].id, sExcludeColony, 1)) continue;
+		if (StrHasStr(colonies[n].id, sExcludeColony, true)) continue;
 		//если добраться нельзя, то не добавляем
 		if (GetMaxDaysFromColony2Colony(npchar.city, colonies[n].id) == -1) continue;
 		storeArray[howStore] = n;

@@ -1,22 +1,22 @@
-NoLootCorpse0 {这小子的口袋比幽灵船还空。}
-NoLootCorpse1 {看起来他身上没有什么值钱的东西。}
-NoLootCorpse2 {这个人兜里什么都没有。}
-NoLootCorpse3 {我是不是漏了什么？不，确实什么都没有。}
-NoLootCorpse4 {又一个身无分文的死人。}
-NoLootCorpse5 {看来他一直靠借钱度日。}
-NoLootCorpse6 {这具尸体连摆渡人的钱都付不起。}
-NoLootCorpse7 {没有多余的弹丸，也没有火药。白白浪费了时间。}
-NoLootCorpse8 {他口袋里和衣服里都分文不剩。}
-NoLootCorpse9 {他一贫如洗，连一枚硬币都没有。}
-NoLootCorpse10 {我这是图什么？这个是空的。}
-NoLootCorpse11 {他的口袋里空空如也。}
-NoLootCorpse12 {这里什么都没有。也许有暗袋？}
-NoLootCorpse13 {没有钱，没有钥匙，没有遗嘱。}
-NoLootCorpse14 {两手空空地去了另一个世界。}
-NoLootCorpse15 {他显然并不富有——口袋空空。}
-NoLootCorpse16 {这可怜的人显然是轻装上阵。}
-NoLootCorpse17 {他用最后的几枚钱武装了自己。}
-NoLootCorpse18 {尸体就是尸体，什么都没有。}
-NoLootCorpse19 {他一定把所有的宝藏都留在箱子里了。}
-NoLootCorpse20 {看来他在战斗中把所有贵重物品都丢了。}
-EasterText {科尔特斯是个混蛋！}
+NoLootCorpse0 {这小子的口袋比幽灵船还空。 }
+NoLootCorpse1 {看起来他身上没有什么值钱的东西。 }
+NoLootCorpse2 {这个人兜里什么都没有。 }
+NoLootCorpse3 {我是不是漏了什么？ 不， 确实什么都没有。 }
+NoLootCorpse4 {又一个身无分文的死人。 }
+NoLootCorpse5 {看来他一直靠借钱度日。 }
+NoLootCorpse6 {这具尸体连摆渡人的钱都付不起。 }
+NoLootCorpse7 {没有多余的弹丸， 也没有火药。 白白浪费了时间。 }
+NoLootCorpse8 {他口袋里和衣服里都分文不剩。 }
+NoLootCorpse9 {他一贫如洗， 连一枚硬币都没有。 }
+NoLootCorpse10 {我这是图什么？ 这个是空的。 }
+NoLootCorpse11 {他的口袋里空空如也。 }
+NoLootCorpse12 {这里什么都没有。 也许有暗袋？ }
+NoLootCorpse13 {没有钱， 没有钥匙， 没有遗嘱。 }
+NoLootCorpse14 {两手空空地去了另一个世界。 }
+NoLootCorpse15 {他显然并不富有——口袋空空。 }
+NoLootCorpse16 {这可怜的人显然是轻装上阵。 }
+NoLootCorpse17 {他用最后的几枚钱武装了自己。 }
+NoLootCorpse18 {尸体就是尸体， 什么都没有。 }
+NoLootCorpse19 {他一定把所有的宝藏都留在箱子里了。 }
+NoLootCorpse20 {看来他在战斗中把所有贵重物品都丢了。 }
+EasterText {科尔特斯是个混蛋！ }

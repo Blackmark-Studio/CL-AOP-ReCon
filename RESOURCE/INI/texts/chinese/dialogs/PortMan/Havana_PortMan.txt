@@ -1,26 +1,26 @@
 Havana_PortMan_1 {
-什么问题？
+什么问题？ 
 }
 Havana_PortMan_2 {
-有什么事需要俺帮忙吗，@<GetAddress_Form>?
+有什么事需要我帮忙吗， @<GetAddress_Form>?
 }
 Havana_PortMan_3 {
 @<RandPhraseSimple>
 }
 Havana_PortMan_4 {
-前不久你还想问我个问题@<GetAddress_Form>……
+前不久你还想问我个问题@<GetAddress_Form>…… 
 }
 Havana_PortMan_5 {
-你今天已经第三次提这事了……
+你今天已经第三次提这事了…… 
 }
 Havana_PortMan_6 {
-听着，要是你不是来办港口的事，别拿问题来烦我。
+听着， 要是你不是来办港口的事， 别拿问题来烦我。
 }
 Havana_PortMan_7_m {
-我改主意了……
+我改主意了…… 
 }
 Havana_PortMan_7_f {
-我改变主意了……
+我改变主意了…… 
 }
 Havana_PortMan_8 {
 我现在没什么可说的。
@@ -29,44 +29,44 @@ Havana_PortMan_9 {
 @<RandPhraseSimple>
 }
 Havana_PortMan_10 {
-嗯，我的记忆好像出了点问题……
+嗯， 我的记忆好像出了点问题…… 
 }
 Havana_PortMan_11 {
-看来第三次总算成了啊……
+看来第三次总算成了啊…… 
 }
 Havana_PortMan_12 {
-不好意思，俺现在对港口的事儿没兴趣。
+不好意思， 我现在对港口的事儿没兴趣。
 }
 Havana_PortMan_13_m {
-你好，我想问一下，指挥官是François Gonthier的那艘“@<pchar>”号护卫舰，有没有停靠过你们港口？
+你好， 我想问一下， 弗朗索瓦.贡蒂尔指挥的那艘“@<pchar>”护卫舰有没有在你们港口停靠过？ 
 }
 Havana_PortMan_13_f {
-你好，我想问一下，François Gontier指挥的那艘“@<pchar>”号护卫舰有没有在你们港口停靠过？
+你好， 我想问一下， 弗朗索瓦.贡蒂尔指挥的那艘“@<pchar>”护卫舰有没有在你们港口停靠过？ 
 }
 Havana_PortMan_14 {
-是的，他来过这里，不过已经离开了。你可以问问我们的旅店老板，那位corvette的船长在酒馆租过房间。
+是的， 他来过这里， 不过已经离开了。 你可以问问我们的旅店老板， 那位巡航舰的船长在酒馆租过房间。
 }
 Havana_PortMan_15 {
-你刚才已经问过这个问题了，我也回答过你了。
+你刚才已经问过这个问题了， 我也回答过你了。
 }
 Havana_PortMan_16 {
-我都跟你说了，你已经问过Gontier这个问题了。
+我都跟你说了， 你已经问过贡蒂尔这个问题了。
 }
 Havana_PortMan_17 {
-请别打扰我工作！
+请别打扰我工作！ 
 }
 Havana_PortMan_18 {
-谢谢！我这就去办。
+谢谢！ 我这就去办。
 }
 Havana_PortMan_19 {
-嗯，是啊……
+嗯， 是啊…… 
 }
 Havana_PortMan_20_m {
-对，没错，是你问的……
+对， 没错， 是你问的…… 
 }
 Havana_PortMan_20_f {
-对，没错，她确实问过……
+对， 没错， 她确实问过…… 
 }
 Havana_PortMan_21 {
-抱歉，@<npchar>...
+抱歉， @<npchar>...
 }

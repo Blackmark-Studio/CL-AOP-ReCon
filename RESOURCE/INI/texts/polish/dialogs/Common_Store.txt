@@ -1471,3 +1471,9 @@ Dużo podróżujesz. Słuchaj, jeśli gdzieś natkniesz się na proszek z egipsk
 Common_Store_433 {
 Dobrze.
 }
+Common_Store_434 {
+Dzień dobry, señorita! Czy chciałaby pani coś kupić?
+}
+Common_Store_435 {
+Nie, dziękuję. Może innym razem.
+}

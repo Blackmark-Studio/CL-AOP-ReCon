@@ -1,78 +1,78 @@
 Cumana_Tavern_1 {
-@<GetCityName>的所有小道消息都在这儿，您想打听点啥？
+@<GetCityName>的所有小道消息都在这儿， 您想打听点什么？ 
 }
 Cumana_Tavern_2 {
-我们刚才还在说这个呢，你肯定忘了吧……
+我们刚才还在说这个呢， 你肯定忘了吧…… 
 }
 Cumana_Tavern_3 {
-你今天已经第三次提这事了……
+你今天已经第三次提这事了…… 
 }
 Cumana_Tavern_4_m {
-你怎么老是像鹦鹉一样重复同一句话……
+你怎么老是像鹦鹉一样重复同一句话…… 
 }
 Cumana_Tavern_4_f {
-你怎么老是像鹦鹉一样重复同一句话……
+你怎么老是像鹦鹉一样重复同一句话…… 
 }
 Cumana_Tavern_5 {
-你知道吗，@<NPChar>，改天吧。
+你知道吗， @<NPChar>， 改天吧。 
 }
 Cumana_Tavern_6_m {
-对了，我忘了点什么……
+对了， 我忘了点什么…… 
 }
 Cumana_Tavern_6_f {
-对了，我忘了点什么……
+对了， 我忘了点什么…… 
 }
 Cumana_Tavern_7 {
-看来第三次终于成了啊……
+看来第三次终于成了啊…… 
 }
 Cumana_Tavern_8 {
-得了吧……
+得了吧…… 
 }
 Cumana_Tavern_9 {
-你知道去哪儿能找到‘Five Wounds of Christ’号那艘双桅船的船长吗？
+你知道去哪儿能找到那艘“基督五伤号”双桅船的船长吗？ 
 }
 Cumana_Tavern_10 {
-我在哪儿能找到那艘“五 Wounds of Christ”号的船长？有人说他就在这儿。
+我在哪儿能找到那艘“基督五伤号”的船长？ 有人说他就在这儿。 
 }
 Cumana_Tavern_11 {
-有个叫Edward Low的双桅船船长来找过你吗？
+有个叫爱德华.洛的双桅船船长来找过你吗？ 
 }
 Cumana_Tavern_12 {
-是啊，那位船长这几天一直在这修他的船，不过现在不在。你去镇上找找吧。
+是啊， 那位船长这几天一直在这修他的船， 不过现在不在。 你去镇上找找吧。 
 }
 Cumana_Tavern_13 {
-谢谢！
+谢谢！ 
 }
 Cumana_Tavern_14 {
-他在楼下喝闷酒呢。
+他在楼下喝闷酒呢。 
 }
 Cumana_Tavern_15 {
-谢谢！
+谢谢！ 
 }
 Cumana_Tavern_16 {
-没有，这名字俺头一次听说。
+没有， 这名字我头一次听说。 
 }
 Cumana_Tavern_17 {
-这个问题俺已经回答过了。
+这个问题我已经回答过了。 
 }
 Cumana_Tavern_18 {
-这事咱们已经说过了，Lowe……
+这事咱们已经说过了， 洛…… 
 }
 Cumana_Tavern_19 {
-我最后再说一遍，俺真没听说过Edward Low的事！
+我最后再说一遍， 我真没听说过爱德华.洛的事！ 
 }
 Cumana_Tavern_20 {
-谢了，伙计。
+谢了， 伙计。 
 }
 Cumana_Tavern_21 {
-行行行，我记得……
+行行行， 我记得…… 
 }
 Cumana_Tavern_22 {
-当然可以……
+当然可以…… 
 }
 Cumana_Tavern_23_m {
-明白。
+明白。 
 }
 Cumana_Tavern_23_f {
-明白了。
+明白了。 
 }

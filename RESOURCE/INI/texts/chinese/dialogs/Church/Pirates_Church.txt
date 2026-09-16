@@ -1,17 +1,17 @@
 Pirates_Church_1 {
-什么问题？
+什么问题？ 
 }
 Pirates_Church_2 {
-你想干什么？
+你想干什么？ 
 }
 Pirates_Church_3 {
 @<RandPhraseSimple>
 }
 Pirates_Church_4 {
-我改主意了……
+我改主意了…… 
 }
 Pirates_Church_5 {
-我现在没什么好说的。
+我现在没什么好说的。 
 }
 Pirates_Church_6 {
 @<RandPhraseSimple>

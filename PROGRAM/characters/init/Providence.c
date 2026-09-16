@@ -82,7 +82,7 @@ int CreateProvidenceCharacters(int n)
 	ch.name		= FindPersonalName("Providencia_trader_name");
 	ch.lastname = FindPersonalName("Providencia_trader_lastname");
 	ch.model	= "trader_2";
-	ch.greeting = "tra_commo";
+	ch.greeting = "tra_common";
 	ch.sex = "man";
 	ch.City = "Providencia";
 	ch.location	= "Providencia_Store";

@@ -5,6 +5,18 @@
 
 string sPrevChar = "";
 string sPrevNode = "";
+string sInfoBackNode = "TABLE_ITEMS";
+
+int iRows = 0;
+
+int nLastFillMode = 1;
+string sGunFilterNode = "";
+int idItemsDescrFile = -1;
+
+int iItemDropItemIndex = -1;
+int iItemDropFreeQty = 0;
+bool bItemDropQuestItem = false;
+bool bItemDropWindowOpen = false;
 
 void InitInterface(string iniName)
 {
@@ -12,9 +24,22 @@ void InitInterface(string iniName)
 
 	xi_refCharacter = pchar;
 
+	idItemsDescrFile = LanguageOpenFile("ItemsDescribe.txt");
+
 	FillCharactersScroll();
 
 	SendMessage(&GameInterface,"ls",MSG_INTERFACE_INIT,iniName);
+
+	aref arTableItemsHR;
+	makearef(arTableItemsHR, GameInterface.TABLE_ITEMS.hr);
+	arTableItemsHR.td1.str = XI_ConvertString("ItemsColonTitle");
+	arTableItemsHR.td1.scale = 0.8;
+	arTableItemsHR.td2.str = XI_ConvertString("weight") + " " + XI_ConvertString("pcs");
+	arTableItemsHR.td2.scale = 0.8;
+	arTableItemsHR.td3.str = XI_ConvertString("QuantityShort");
+	arTableItemsHR.td3.scale = 0.8;
+	arTableItemsHR.td4.str = XI_ConvertString("weight");
+	arTableItemsHR.td4.scale = 0.8;
 
 	SetEventHandler("InterfaceBreak","ProcessExitCancel",0);
 	SetEventHandler("exitCancel","ProcessExitCancel",0);
@@ -35,8 +60,18 @@ void InitInterface(string iniName)
 	SetEventHandler("ClickToAmmo", "ClickToAmmo", 0);
 	SetEventHandler("OnHeaderClick", "OnHeaderClick", 0);
 	SetEventHandler("ExitMsgMenu", "ExitMsgMenu", 0);
+	SetEventHandler("Event_UnselectNode", "ProcessInfoUnselect", 0);
+	SetEventHandler("ChooseItem", "ShowItemDrop", 0);
+	SetEventHandler("ItemDropCancel", "ItemDropCancel", 0);
+	SetEventHandler("ItemDropConfirm", "ItemDropConfirm", 0);
+	SetEventHandler("ItemDropEditConfirm", "ItemDropEditConfirm", 0);
+	SetEventHandler("ItemDropLess", "ItemDropLess", 0);
+	SetEventHandler("ItemDropMore", "ItemDropMore", 0);
+	SetEventHandler("ItemDropZero", "ItemDropZero", 0);
+	SetEventHandler("ItemDropMax", "ItemDropMax", 0);
+	SetEventHandler("ItemDropWarningHide", "ItemDropWarningHide", 0);
 
-	XI_RegistryExitKey("IExit_F4");
+	XI_RegistryExitKey("ItemsMenu");
     SetVariable();
     SetNewGroupPicture("Weight_PIC", "ICONS_CHAR", "weight");
     SetNewGroupPicture("Money_PIC", "ICONS_CHAR", "Money");
@@ -54,6 +89,11 @@ void InitInterface(string iniName)
 
 void ProcessExitCancel()
 {
+	if (bItemDropWindowOpen)
+	{
+		ItemDropCancel();
+		return;
+	}
 	IDoExit(RC_INTERFACE_ANY_EXIT);
 }
 
@@ -78,6 +118,22 @@ void IDoExit(int exitCode)
 	DelEventHandler("ClickToAmmo", "ClickToAmmo");
 	DelEventHandler("OnHeaderClick", "OnHeaderClick");
 	DelEventHandler("ExitMsgMenu", "ExitMsgMenu");
+	DelEventHandler("Event_UnselectNode", "ProcessInfoUnselect");
+	DelEventHandler("ChooseItem", "ShowItemDrop");
+	DelEventHandler("ItemDropCancel", "ItemDropCancel");
+	DelEventHandler("ItemDropConfirm", "ItemDropConfirm");
+	DelEventHandler("ItemDropEditConfirm", "ItemDropEditConfirm");
+	DelEventHandler("ItemDropLess", "ItemDropLess");
+	DelEventHandler("ItemDropMore", "ItemDropMore");
+	DelEventHandler("ItemDropZero", "ItemDropZero");
+	DelEventHandler("ItemDropMax", "ItemDropMax");
+	DelEventHandler("ItemDropWarningHide", "ItemDropWarningHide");
+
+	if (idItemsDescrFile != -1)
+	{
+		LanguageCloseFile(idItemsDescrFile);
+		idItemsDescrFile = -1;
+	}
 
 	interfaceResultCommand = exitCode;
 	if( CheckAttribute(&InterfaceStates,"ReloadMenuExit"))
@@ -169,12 +225,36 @@ void ProcessCommandExecute()
 
 void ProcessFrame()
 {
-	if (sti(GameInterface.CHARACTERS_SCROLL.current) != nCurScrollNum && GetCurrentNode() == "CHARACTERS_SCROLL")
+	string sCurNode = GetCurrentNode();
+
+	// > пока мышь не над описанием - помним текущую ноду, чтобы вернуть ей фокус
+	if (sCurNode != "" && sCurNode != "INFO_TEXT" && sCurNode != "INFO_PIC")
+		sInfoBackNode = sCurNode;
+
+	if (sInfoBackNode == "CHARACTERS_SCROLL" && sti(GameInterface.CHARACTERS_SCROLL.current) != nCurScrollNum)
 	{
 		nCurScrollNum = sti(GameInterface.CHARACTERS_SCROLL.current);
 		SetButtonsState();
 		return;
 	}
+}
+
+// > мышь ушла с описания: движок сбросил текущую ноду, возвращаем фокус на место
+void ProcessInfoUnselect()
+{
+	string sNode = GetEventData();
+
+	if (sNode != "INFO_TEXT" && sNode != "INFO_PIC") return;
+
+	ReturnInfoFocus();
+}
+
+// > фокус не должен оставаться на описании: колесо и стрелки уйдут в никуда
+void ReturnInfoFocus()
+{
+	if (sInfoBackNode == "") sInfoBackNode = "TABLE_ITEMS";
+
+	SetCurrentNode(sInfoBackNode);
 }
 
 void SetButtonsState()
@@ -185,7 +265,7 @@ void SetButtonsState()
 	if (GameInterface.CHARACTERS_SCROLL.(attributeName).character != "0")
 	{
 		xi_refCharacter = &characters[sti(GameInterface.CHARACTERS_SCROLL.(attributeName).character)];
-		FillItemsTable(1);
+		//FillItemsTable(1) // KZ > убрано, ибо двойная работа: ниже при смене персонажа всё равно сортирует и заполняет
 	}
 	else
 		xi_refCharacter = pchar;
@@ -212,14 +292,18 @@ void SetVariable()
 
 void FillItemsTable(int _mode)
 {
-	int n, i;
-	string row, sGood, groupID, itemType, sCurNode = GetCurrentNode();
+	int i, iItemQty, q, n = 1;
+	float fItemWeight;
+	string row, sGood, groupID, itemType;
 	bool ok1, ok2, ok3, ok4, ok5;
-	aref rootItems, arItem;
-	aref curItem;
+	aref rootItems, arItem, curItem;
+	aref arTableItems;
+	aref arTableItemsTD, arTableItemsROW;
+
+	nLastFillMode = _mode; // > запоминаем фильтр для RefreshItemsTable
 
     string sGun, sMus, sBulletGun, sBulletMus;
-    ref rGun, rMus; 
+    ref rGun, rMus;
     sGun = GetCharacterEquipByGroup(xi_refCharacter, GUN_ITEM_TYPE);
     sBulletGun = LAi_GetCharacterBulletType(xi_refCharacter, GUN_ITEM_TYPE);
     if (sGun != "") rGun = ItemsFromID(sGun);
@@ -227,28 +311,33 @@ void FillItemsTable(int _mode)
     sBulletMus = LAi_GetCharacterBulletType(xi_refCharacter, MUSKET_ITEM_TYPE);
     if (sMus != "") rMus = ItemsFromID(sMus);
 
-	GameInterface.TABLE_ITEMS.hr.td1.str = XI_ConvertString("ItemsColonTitle");
-	GameInterface.TABLE_ITEMS.hr.td1.scale = 0.8;
-	GameInterface.TABLE_ITEMS.hr.td2.str = XI_ConvertString("weight") + " " + XI_ConvertString("pcs");
-	GameInterface.TABLE_ITEMS.hr.td2.scale = 0.8;
-	GameInterface.TABLE_ITEMS.hr.td3.str = XI_ConvertString("QuantityShort");
-	GameInterface.TABLE_ITEMS.hr.td3.scale = 0.8;
-	GameInterface.TABLE_ITEMS.hr.td4.str = XI_ConvertString("weight");
-	GameInterface.TABLE_ITEMS.hr.td4.scale = 0.8;
-	GameInterface.TABLE_ITEMS.select = 0;
-	GameInterface.TABLE_ITEMS.top = 0;
-	n = 1;
+    string sPowderGun = "";
+	string sPowderMus = "";
+    if (sGun != "" && sBulletGun != "") sPowderGun = GetGunAmmoAttr(rGun, sBulletGun, "gunpowder");
+    if (sMus != "" && sBulletMus != "") sPowderMus = GetGunAmmoAttr(rMus, sBulletMus, "gunpowder");
+
+	makearef(arTableItems, GameInterface.TABLE_ITEMS);
+	arTableItems.select = 0;
+	arTableItems.top = 0;
 	Table_Clear("TABLE_ITEMS", false, true, false);
 
 	// Заполним вещами от нас
 	makearef(rootItems, xi_refCharacter.Items);
-    for (i=0; i < GetAttributesNum(rootItems); i++)
+	q = GetAttributesNum(rootItems);
+
+	// KZ > файл описаний открываем один раз, раньше в цикле открывался-читался-закрывался с диска на каждый предмет
+	int idItemsDescr = LanguageOpenFile("ItemsDescribe.txt");
+	int iItemIdx;
+
+    for (i = 0; i < q; i++)
     {
 		curItem = GetAttributeN(rootItems, i);
 		groupID = "";
 		itemType = "";
 
-		if (Items_FindItem(GetAttributeName(curItem), &arItem) >= 0)
+		iItemIdx = Items_FindItem(GetAttributeName(curItem), &arItem);
+
+		if (iItemIdx >= 0)
 		{
 			row = "tr" + n;
 			sGood = arItem.id;
@@ -281,7 +370,7 @@ void FillItemsTable(int _mode)
 			// Важное -->
 			else if ((groupID == PATENT_ITEM_TYPE) ||	// патенты
 					(itemType == "QUESTITEMS")	||		// квестовые предметы
-					CheckAttribute(&arItem, "mapType"))	// карты сокровищ
+					CheckAttribute(arItem, "mapType"))	// карты сокровищ
 			{
 				ok3 = true;
 			}
@@ -299,8 +388,8 @@ void FillItemsTable(int _mode)
 
 			if(_mode == -2)
 			{
-				if (sCurNode == "SLOT_GUN" && groupID != GUN_ITEM_TYPE) continue;
-				if (sCurNode == "SLOT_MUSKET" && groupID != MUSKET_ITEM_TYPE) continue;
+				if (sGunFilterNode == "SLOT_GUN" && groupID != GUN_ITEM_TYPE) continue;
+				if (sGunFilterNode == "SLOT_MUSKET" && groupID != MUSKET_ITEM_TYPE) continue;
 			}
 
 			if(_mode == -3 && groupID != SPYGLASS_ITEM_TYPE) continue;
@@ -312,20 +401,23 @@ void FillItemsTable(int _mode)
 			if(_mode == 4 && !ok3) continue;
 			if(_mode == 5 && !ok4) continue;
 
-			if (GetCharacterItem(xi_refCharacter, sGood) > 0)
+			iItemQty = sti(GetAttributeValue(curItem));
+
+			if (iItemQty > 0)
 			{
-				GameInterface.TABLE_ITEMS.(row).index = FindItem(arItem.id);
+				fItemWeight = stf(arItem.Weight);
+				GameInterface.TABLE_ITEMS.(row).index = iItemIdx;
 
-				GameInterface.TABLE_ITEMS.(row).td1.icon.group = arItem.picTexture;
-				GameInterface.TABLE_ITEMS.(row).td1.icon.image = "itm" + arItem.picIndex;
-				GameInterface.TABLE_ITEMS.(row).td1.icon.offset = "0, 1";
-				GameInterface.TABLE_ITEMS.(row).td1.icon.width = 31;
-				GameInterface.TABLE_ITEMS.(row).td1.icon.height = 31;
-				GameInterface.TABLE_ITEMS.(row).td1.textoffset = "31,0";
-				GameInterface.TABLE_ITEMS.(row).td1.str = GetConvertStr(arItem.name, "ItemsDescribe.txt");
-				GameInterface.TABLE_ITEMS.(row).td1.scale = 0.85;
-
-				GameInterface.TABLE_ITEMS.(row).td1.color = argb(255, 255, 255, 255);
+				makearef(arTableItemsTD, GameInterface.TABLE_ITEMS.(row).td1);
+				arTableItemsTD.icon.group = arItem.picTexture;
+				arTableItemsTD.icon.image = "itm" + arItem.picIndex;
+				arTableItemsTD.icon.offset = "0, 1";
+				arTableItemsTD.icon.width = 31;
+				arTableItemsTD.icon.height = 31;
+				arTableItemsTD.textoffset = "31,0";
+				arTableItemsTD.str = LanguageConvertString(idItemsDescr, arItem.name);
+				arTableItemsTD.scale = 0.85;
+				arTableItemsTD.color = argb(255, 255, 255, 255);
 
 				if (IsEquipCharacterByItem(xi_refCharacter, sGood))
 					ok5 = true;
@@ -333,31 +425,33 @@ void FillItemsTable(int _mode)
 				{
 					if (sGun != "" && sBulletGun != "")
 					{
-                        if (sGood == sBulletGun || sGood == GetGunAmmoAttr(rGun, sBulletGun, "gunpowder"))
+                        if (sGood == sBulletGun || sGood == sPowderGun)
                             ok5 = true; // Пуля или пороховые приблуды пистолета
                     }
                     if (!ok5 && sMus != "" && sBulletMus != "")
                     {
                         // Если не пуля/приблуда пистолета, то мб мушкета?
-                        if (sGood == sBulletMus || sGood == GetGunAmmoAttr(rMus, sBulletMus, "gunpowder"))
+                        if (sGood == sBulletMus || sGood == sPowderMus)
                             ok5 = true;
                     }
 				}
 
 				if (ok5)
-					GameInterface.TABLE_ITEMS.(row).td1.color = argb(255, 245, 230, 191);
+					arTableItemsTD.color = argb(255, 245, 230, 191);
 
-				GameInterface.TABLE_ITEMS.(row).td2.str   = FloatToString(stf(arItem.Weight), 1);
-				GameInterface.TABLE_ITEMS.(row).td2.scale = 0.9;
-				GameInterface.TABLE_ITEMS.(row).td3.str   = GetCharacterItem(xi_refCharacter, sGood);
-				GameInterface.TABLE_ITEMS.(row).td3.scale = 0.9;
-				GameInterface.TABLE_ITEMS.(row).td4.str   = FloatToString(stf(arItem.Weight) * sti(GameInterface.TABLE_ITEMS.(row).td3.str), 1);
-				GameInterface.TABLE_ITEMS.(row).td4.scale = 0.9;
+				makearef(arTableItemsROW, GameInterface.TABLE_ITEMS.(row));
+				arTableItemsROW.td2.str   = FloatToString(fItemWeight, 1);
+				arTableItemsROW.td2.scale = 0.9;
+				arTableItemsROW.td3.str   = iItemQty;
+				arTableItemsROW.td3.scale = 0.9;
+				arTableItemsROW.td4.str   = FloatToString(fItemWeight * iItemQty, 1);
+				arTableItemsROW.td4.scale = 0.9;
 				n++;
 			}
 		}
     }
-    
+    iRows = n;
+	LanguageCloseFile(idItemsDescr);
 	Table_UpdateWindow("TABLE_ITEMS");
 	if (_mode == 1)
 	{
@@ -366,8 +460,8 @@ void FillItemsTable(int _mode)
 }
 
 void ClickToBlade()     {FillItemsTable(-1); ClickToItem(BLADE_ITEM_TYPE);}
-void ClickToGun()       {FillItemsTable(-2); ClickToItem(GUN_ITEM_TYPE);}
-void ClickToMusket()    {FillItemsTable(-2); ClickToItem(MUSKET_ITEM_TYPE);}
+void ClickToGun()       {sGunFilterNode = "SLOT_GUN";    FillItemsTable(-2); ClickToItem(GUN_ITEM_TYPE);}
+void ClickToMusket()    {sGunFilterNode = "SLOT_MUSKET"; FillItemsTable(-2); ClickToItem(MUSKET_ITEM_TYPE);}
 void ClickToSpyGlass()  {FillItemsTable(-3); ClickToItem(SPYGLASS_ITEM_TYPE);}
 void ClickToCirass()    {FillItemsTable(-4); ClickToItem(CIRASS_ITEM_TYPE);}
 void ClickToAmmo()      {FillItemsTable(-5); ClickToItem(AMMO_ITEM_TYPE);}
@@ -375,6 +469,8 @@ void ClickToAmmo()      {FillItemsTable(-5); ClickToItem(AMMO_ITEM_TYPE);}
 void ClickToItem(string sEquipType)
 {
 	sPrevNode = GetCurrentNode();
+	// > наведённое описание не должно подменять слот, с которого пришли
+	if (sPrevNode == "INFO_TEXT" || sPrevNode == "INFO_PIC") sPrevNode = sInfoBackNode;
 
 	if (!CheckAttribute(xi_refCharacter, "equip." + sEquipType) || xi_refCharacter.equip.(sEquipType) == "")
 	{
@@ -382,18 +478,20 @@ void ClickToItem(string sEquipType)
 		return;
 	}
 
-	string sTemp, row, sCurItem = GetCharacterEquipByGroup(xi_refCharacter, sEquipType);
+	string row, sCurItem = GetCharacterEquipByGroup(xi_refCharacter, sEquipType);
     if (sCurItem == "unarmed")
     {
 		HideItemInfo();
 		return;
     }
-	for (int q = 1; q < 1000; q++)
+
+	int q, iCurItemIdx = FindItem(sCurItem);
+
+	for (q = 1; q < iRows; q++)
 	{
 		row = "tr" + q;
-		if (!CheckAttribute(&GameInterface, "TABLE_ITEMS." + row)) break; // Кончились строки таблицы, конец цикла
 
-		if (FindItem(sCurItem) == sti(GameInterface.TABLE_ITEMS.(row).index))
+		if (iCurItemIdx == sti(GameInterface.TABLE_ITEMS.(row).index))
 		{
 			Event("TableSelectChange", "sll", "TABLE_ITEMS", q, 1); // Выбираем в таблице предмет снаряжения
 			GameInterface.TABLE_ITEMS.select = q;
@@ -403,6 +501,23 @@ void ClickToItem(string sEquipType)
 			SetCurrentNode("TABLE_ITEMS");
 			break;
 		}
+	}
+}
+
+// KZ > перезаполнить таблицу текущим фильтром, сохранив выбор и прокрутку после экипировки/снятия (+ теперь подсветка экипированных вещей обновляется на лету)
+void RefreshItemsTable()
+{
+	int iSelSave = sti(GameInterface.TABLE_ITEMS.select);
+	int iTopSave = sti(GameInterface.TABLE_ITEMS.top);
+
+	FillItemsTable(nLastFillMode);
+
+	if (iSelSave > iRows - 1) iSelSave = iRows - 1;
+	if (iSelSave > 0)
+	{
+		GameInterface.TABLE_ITEMS.select = iSelSave;
+		GameInterface.TABLE_ITEMS.top = iTopSave;
+		Table_UpdateWindow("TABLE_ITEMS");
 	}
 }
 
@@ -423,6 +538,11 @@ void FillItemsSelected()
 	SetNewPicture("SLOT_POWDER_GUN", sTemp);
 	SetNewPicture("SLOT_AMMO_MUSKET", sTemp);
 	SetNewPicture("SLOT_POWDER_MUSKET", sTemp);
+
+	SetAmmoBlink("SLOT_AMMO_GUN", false);
+	SetAmmoBlink("SLOT_POWDER_GUN", false);
+	SetAmmoBlink("SLOT_AMMO_MUSKET", false);
+	SetAmmoBlink("SLOT_POWDER_MUSKET", false);
 
 	for (i = 0; i < q; i++)
 	{
@@ -465,42 +585,54 @@ void FillItemsSelected()
 
 void SetGunNode(string sGunType, ref rItem)
 {
+    ref rAmmo, rPowder;
+    string sBullet, sPowder;
+    int iAmmoQty, iPowderQty;
+    bool bNoAmmo, bNoPowder;
+
     SetNewGroupPicture("SLOT_" + sGunType, rItem.picTexture, "itm" + rItem.picIndex);
     SetNodeUsing("SLOT_" + sGunType, true);
-    string sBullet = LAi_GetCharacterBulletType(xi_refCharacter, sGunType);
-    if (sBullet != "")
-    {
-        ref rAmmo = ItemsFromID(sBullet);
-        SendMessage(&GameInterface, "lsll", MSG_INTERFACE_MSG_TO_NODE, "SLOT_AMMO_" + sGunType, 5, GetCharacterItem(xi_refCharacter, rAmmo.id) < 1);
-        SetNewGroupPicture("SLOT_AMMO_" + sGunType, rAmmo.picTexture, "itm" + rAmmo.picIndex);
 
-        string sTemp = GetGunAmmoAttr(rItem, sBullet, "gunpowder");
-        if (sTemp != "")
-        {
-            rAmmo = ItemsFromID(sTemp);
-            SendMessage(&GameInterface, "lsll", MSG_INTERFACE_MSG_TO_NODE, "SLOT_POWDER_" + sGunType, 5, GetCharacterItem(xi_refCharacter, rAmmo.id) < 1);
-            SetNewGroupPicture("SLOT_POWDER_" + sGunType, rAmmo.picTexture, "itm" + rAmmo.picIndex);
-        }
+    sBullet = LAi_GetCharacterBulletType(xi_refCharacter, sGunType);
+
+    if (sBullet == "" || FindItem(sBullet) < 0)
+    {
+        // > боеприпас не выбран - мигать нечему
+        SetAmmoBlink("SLOT_AMMO_" + sGunType, false);
+        SetAmmoBlink("SLOT_POWDER_" + sGunType, false);
+        return;
     }
+
+    rAmmo = ItemsFromID(sBullet);
+    iAmmoQty = GetCharacterItem(xi_refCharacter, rAmmo.id);
+    bNoAmmo = iAmmoQty < 1; // > пуль нет - слот мигает красным
+    SetAmmoBlink("SLOT_AMMO_" + sGunType, bNoAmmo);
+    SetNewGroupPicture("SLOT_AMMO_" + sGunType, rAmmo.picTexture, "itm" + rAmmo.picIndex);
+
+    sPowder = GetGunAmmoAttr(rItem, sBullet, "gunpowder");
+
+    if (sPowder == "" || FindItem(sPowder) < 0)
+    {
+        // > этому боеприпасу порох\капсюли не требуются
+        SetAmmoBlink("SLOT_POWDER_" + sGunType, false);
+        return;
+    }
+
+    rPowder = ItemsFromID(sPowder);
+    iPowderQty = GetCharacterItem(xi_refCharacter, rPowder.id);
+    bNoPowder = iPowderQty < 1; // > пороха нет - слот мигает красным
+    SetAmmoBlink("SLOT_POWDER_" + sGunType, bNoPowder);
+    SetNewGroupPicture("SLOT_POWDER_" + sGunType, rPowder.picTexture, "itm" + rPowder.picIndex);
 }
 
 void ShowInfoWindow()
 {
 	string sCurrentNode = GetCurrentNode();
-	string sHeader, sText1, sText2, sText3, sPicture;
+	string sHeader, sText1, sText2, sText3, sPicture = "-1";
 	string sGroup, sGroupPicture;
-	int iItem;
 
-	sPicture = "-1";
-	string sAttributeName;
-	int nChooseNum = -1;
 	switch (sCurrentNode)
 	{
-		/*case "CHARACTER_NATION_PICTURE":
-		    sHeader = XI_ConvertString("Nation");
-			sText1 = GetRPGText("Nation_hint");
-		break;   */
-
 		case "WEIGHT":
 			sHeader = XI_ConvertString("Weight");
 			sText1 = GetRPGText("Weight_hint");
@@ -511,8 +643,12 @@ void ShowInfoWindow()
 			sText1 = GetRPGText("Money_hint");
 		break;
 	}
-	sHeader = XI_ConvertString("buttonItems");
-	sText1  = XI_ConvertString("ItemsHelper_1") + XI_ConvertString("ItemsHelper_2") + XI_ConvertString("ItemsHelper_3");
+	if (sHeader == "")
+		sHeader = XI_ConvertString("buttonItems");
+
+	if (sText1 == "")
+		sText1 = XI_ConvertString("ItemsHelper_1") + XI_ConvertString("ItemsHelper_2") + XI_ConvertString("ItemsHelper_3");
+
 	CreateTooltip("#" + sHeader, sText1, argb(255,255,255,255), sText2, argb(255,255,192,192), sText3, argb(255,192,255,192), "", argb(255,255,255,255), sPicture, sGroup, sGroupPicture, 64, 64);
 
 }
@@ -535,10 +671,21 @@ void TableSelectChange()
 
 void SetItemInfo()
 {
-	int iGoodIndex = sti(GameInterface.(CurTable).(CurRow).index);
+	if (CurTable == "" || !CheckAttribute(&GameInterface, CurTable + "." + CurRow + ".index"))
+		return;
+
+	iItemDropItemIndex = sti(GameInterface.(CurTable).(CurRow).index);
+	int iGoodIndex = iItemDropItemIndex;
+
+	if (iGoodIndex < 0)
+		return;
+
+	iItemDropFreeQty = GetItemDropFreeQty(&Items[iGoodIndex]);
+	bItemDropQuestItem = IsQuestItemForDrop(&Items[iGoodIndex]);
+
 	string sID = "";
 	if (bBettaTestMode) sID = "  ID: " +Items[iGoodIndex].id;
-	SetFormatedText("INFO_TEXT", GetItemDescribe(iGoodIndex) +sID);
+	SetFormatedText("INFO_TEXT", GetItemDescribe(iGoodIndex, xi_refCharacter) +sID);
 
 	// evganat - пасха
 	if(CheckAttribute(xi_refCharacter, "easter.damage"))
@@ -564,10 +711,214 @@ void SetItemInfo()
 	SetSelectable("EQUIP_BUTTON",ThisItemCanBeEquip(&Items[iGoodIndex]));
 }
 
-void HideItemInfo()
+bool IsQuestItemForDrop(ref rItem)
 {
+	if (IsQuestUsedItem(rItem.id)) return true;
+	if (CheckAttribute(rItem, "ItemType") && rItem.ItemType == "QUESTITEMS") return true;
+	return false;
+}
+
+int GetItemDropFreeQty(ref rItem)
+{
+	if (CheckAttribute(rItem, "groupID") && rItem.groupID == READING_ITEM_TYPE) return GetCharacterItem(xi_refCharacter, rItem.id);
+	return GetCharacterFreeItem(xi_refCharacter, rItem.id);
+}
+
+int GetItemDropQty()
+{
+	if (CheckAttribute(&GameInterface, "item_drop_edit.str")) return sti(GameInterface.item_drop_edit.str);
+	if (CheckAttribute(&GameInterface, "ITEM_DROP_EDIT.str")) return sti(GameInterface.ITEM_DROP_EDIT.str);
+	if (CheckAttribute(&GameInterface, "qty_edit.str")) return sti(GameInterface.qty_edit.str);
+	return 0;
+}
+
+void SetItemDropQty(int iQty)
+{
+	GameInterface.item_drop_edit.str = iQty;
+	GameInterface.ITEM_DROP_EDIT.str = iQty;
+	GameInterface.qty_edit.str = iQty;
+}
+
+void ShowItemDrop()
+{
+	if (bItemDropWindowOpen) return;
+	if (CurTable == "" || !CheckAttribute(&GameInterface, CurTable + "." + CurRow + ".index")) return;
+
+	iItemDropItemIndex = sti(GameInterface.(CurTable).(CurRow).index);
+	if (iItemDropItemIndex < 0) return;
+
+	ref rItem = &Items[iItemDropItemIndex];
+	iItemDropFreeQty = GetItemDropFreeQty(rItem);
+	bItemDropQuestItem = IsQuestItemForDrop(rItem);
+
+	if (bItemDropQuestItem || iItemDropFreeQty <= 0)
+	{
+		if (bItemDropQuestItem) SetFormatedText("ITEM_DROP_WARNING_TEXT", XI_ConvertString("Drop Errorq"));
+		else SetFormatedText("ITEM_DROP_WARNING_TEXT", XI_ConvertString("Drop Errore"));
+		XI_WindowDisable("ITEM_DROP_WARNING_WINDOW", false);
+		XI_WindowShow("ITEM_DROP_WARNING_WINDOW", true);
+		PostEvent("ItemDropWarningHide", 1200);
+		return;
+	}
+
+	bItemDropWindowOpen = true;
+	XI_WindowDisable("MAIN_WINDOW", true);
 	SetNodeUsing("INFO_TEXT", false);
 	SetNodeUsing("INFO_PIC", false);
+
+	SetFormatedText("ITEM_DROP_TITLE", XI_ConvertString("ItemDrop_Title"));
+	SetFormatedText("ITEM_DROP_NAME", GetItemName(rItem.id));
+	SetFormatedText("ITEM_DROP_DESC", GetItemDescribe(iItemDropItemIndex, xi_refCharacter));
+	SetFormatedText("ITEM_DROP_HAVE", "" + iItemDropFreeQty);
+	SetNewGroupPicture("ITEM_DROP_ICON", rItem.picTexture, "itm" + rItem.picIndex);
+
+	if (iItemDropFreeQty < 2) SetItemDropQty(1);
+	else SetItemDropQty(0);
+
+	XI_WindowDisable("ITEM_DROP_WINDOW", false);
+	XI_WindowShow("ITEM_DROP_WINDOW", true);
+	ItemDropChangeQty();
+	SetEventHandler("frame", "ItemDropDelaySelect", 0);
+}
+
+void ItemDropDelaySelect()
+{
+	DelEventHandler("frame", "ItemDropDelaySelect");
+	SetCurrentNode("ITEM_DROP_EDIT");
+}
+
+void ItemDropDelaySelectSingle()
+{
+	DelEventHandler("frame", "ItemDropDelaySelectSingle");
+	SetCurrentNode("ITEM_DROP_OK_S");
+}
+
+void ItemDropWarningHide()
+{
+	XI_WindowDisable("ITEM_DROP_WARNING_WINDOW", true);
+	XI_WindowShow("ITEM_DROP_WARNING_WINDOW", false);
+}
+
+void ItemDropCancel()
+{
+	if (!bItemDropWindowOpen) return;
+
+	XI_WindowDisable("ITEM_DROP_WINDOW", true);
+	XI_WindowShow("ITEM_DROP_WINDOW", false);
+	XI_WindowDisable("MAIN_WINDOW", false);
+	bItemDropWindowOpen = false;
+
+	SetFormatedText("WEIGHT", FloatToString(GetItemsWeight(xi_refCharacter), 1) + " / " + GetMaxItemsWeight(xi_refCharacter));
+	SetFormatedText("Weight_TEXT", XI_ConvertString("weight") + ": " + FloatToString(GetItemsWeight(xi_refCharacter), 1) + " / " + GetMaxItemsWeight(xi_refCharacter));
+	if (CurTable != "" && CheckAttribute(&GameInterface, CurTable + "." + CurRow + ".index")) SetItemInfo();
+	else HideItemInfo();
+	SetCurrentNode("TABLE_ITEMS");
+}
+
+void ItemDropConfirm()
+{
+	if (!bItemDropWindowOpen || iItemDropItemIndex < 0) return;
+
+	ref rItem = &Items[iItemDropItemIndex];
+	if (IsQuestItemForDrop(rItem))
+	{
+		ItemDropCancel();
+		return;
+	}
+
+	int iDropQuantity = GetItemDropQty();
+	int iFreeQty = GetItemDropFreeQty(rItem);
+	if (iDropQuantity > iFreeQty) iDropQuantity = iFreeQty;
+	if (iDropQuantity <= 0) return;
+
+	string sItemID = rItem.id;
+	string sItemName = GetItemName(sItemID);
+	RemoveItems(xi_refCharacter, sItemID, iDropQuantity);
+
+	ItemDropCancel();
+	RefreshItemsTable();
+	FillItemsSelected();
+	SetFormatedText("WEIGHT", FloatToString(GetItemsWeight(xi_refCharacter), 1) + " / " + GetMaxItemsWeight(xi_refCharacter));
+	SetFormatedText("Weight_TEXT", XI_ConvertString("weight") + ": " + FloatToString(GetItemsWeight(xi_refCharacter), 1) + " / " + GetMaxItemsWeight(xi_refCharacter));
+
+	if (CurTable != "" && CheckAttribute(&GameInterface, CurTable + "." + CurRow + ".index")) SetItemInfo();
+	else HideItemInfo();
+
+	Log_Info(StringFromKey("InfoMessages_267", sItemName, iDropQuantity));
+}
+
+void ItemDropEditConfirm()
+{
+	ItemDropChangeQty();
+	if (GetSelectable("ITEM_DROP_OK")) SetCurrentNode("ITEM_DROP_OK");
+	else SetCurrentNode("ITEM_DROP_CANCEL");
+}
+
+void ItemDropChangeQty()
+{
+	if (iItemDropItemIndex < 0) return;
+
+	ref rItem = &Items[iItemDropItemIndex];
+	iItemDropFreeQty = GetItemDropFreeQty(rItem);
+	int iQty = GetItemDropQty();
+	if (iQty < 0) iQty = 0;
+	if (iQty > iItemDropFreeQty) iQty = iItemDropFreeQty;
+	SetItemDropQty(iQty);
+
+	SetSelectable("ITEM_DROP_OK", iQty > 0);
+	SetSelectable("ITEM_DROP_LESS_ALL", iQty > 0);
+	SetSelectable("ITEM_DROP_LESS", iQty > 0);
+	SetSelectable("ITEM_DROP_MORE", iQty < iItemDropFreeQty);
+	SetSelectable("ITEM_DROP_MORE_ALL", iQty < iItemDropFreeQty);
+
+	float fWeight = GetItemsWeight(xi_refCharacter) - stf(rItem.Weight) * iQty;
+	if (fWeight < 0.0) fWeight = 0.0;
+	string sWeightAfter = FloatToString(fWeight, 1) + " / " + GetMaxItemsWeight(xi_refCharacter);
+
+	SetFormatedText("ITEM_DROP_HAVE", "" + iItemDropFreeQty);
+	SetFormatedText("ITEM_DROP_WEIGHT", sWeightAfter);
+	SetFormatedText("WEIGHT", sWeightAfter);
+	SetFormatedText("Weight_TEXT", XI_ConvertString("weight") + ": " + sWeightAfter);
+}
+
+void ItemDropLess()
+{
+	if (!bItemDropWindowOpen) return;
+	SetItemDropQty(GetItemDropQty() - 1);
+	ItemDropChangeQty();
+}
+
+void ItemDropMore()
+{
+	if (!bItemDropWindowOpen) return;
+	SetItemDropQty(GetItemDropQty() + 1);
+	ItemDropChangeQty();
+}
+
+void ItemDropZero()
+{
+	if (!bItemDropWindowOpen) return;
+	SetItemDropQty(0);
+	ItemDropChangeQty();
+}
+
+void ItemDropMax()
+{
+	if (!bItemDropWindowOpen) return;
+	SetItemDropQty(iItemDropFreeQty);
+	ItemDropChangeQty();
+}
+
+void HideItemInfo()
+{
+	string sCurNode = GetCurrentNode();
+
+	SetNodeUsing("INFO_TEXT", false);
+	SetNodeUsing("INFO_PIC", false);
+
+	// > прячем ноду, на которой стоит фокус - мышь могла не сдвинуться и события ухода не будет
+	if (sCurNode == "INFO_TEXT" || sCurNode == "INFO_PIC") ReturnInfoFocus();
+
 	SendMessage(&GameInterface,"lsls",MSG_INTERFACE_MSG_TO_NODE,"EQUIP_BUTTON",0, "#"+XI_ConvertString("Equip that"));
 	SetSelectable("EQUIP_BUTTON",false);
 }
@@ -578,15 +929,7 @@ void procTabChange()
 	string sNodName = GetEventData();
 	SetCurrentNode("TABLE_ITEMS");
 	HideItemInfo();
-	switch (sNodName)
-	{
-		case "TABBTN_1": SetControlsTabMode(1);	break;
-		case "TABBTN_2": SetControlsTabMode(2);	break;
-		case "TABBTN_3": SetControlsTabMode(3);	break;
-		case "TABBTN_4": SetControlsTabMode(4);	break;
-		case "TABBTN_5": SetControlsTabMode(5);	break;
-	}
-	return;
+	SetControlsTabMode(sti(strcut(sNodName, 7, 7)));
 }
 
 void SetControlsTabMode(int nMode)
@@ -691,6 +1034,15 @@ bool ThisItemCanBeEquip(aref arItem)
 	{
 		return true;
 	}
+	if (arItem.id == "legendGuide")
+	{
+		SendMessage(&GameInterface,"lsls",MSG_INTERFACE_MSG_TO_NODE,"EQUIP_BUTTON",0, "#"+XI_ConvertString("Read it"));
+		if (CheckCharacterPerk(pchar, "legendGuideRead"))
+		{
+			return false;
+		}
+		return true;
+	}
 	if (!CheckAttribute(arItem,"groupID"))
 	{
 		return false;
@@ -738,7 +1090,7 @@ bool ThisItemCanBeEquip(aref arItem)
 	}
 	else if (groupID == READING_ITEM_TYPE)
 	{
-		if (and(StrStartsWith(arItem.id, "recipe_"), CheckAttribute(&arItem, "result") && isMultiObjectKnown(arItem.result)) || and(CheckAttribute(arItem, "blockRead") && arItem.blockRead == "1", true)) //если прочитано, то читать больше не даем
+		if (and(StrStartsWith(arItem.id, "recipe_"), CheckAttribute(arItem, "result") && isMultiObjectKnown(arItem.result)) || and(CheckAttribute(arItem, "blockRead") && arItem.blockRead == "1", true)) //если прочитано, то читать больше не даем
 		{
 			SendMessage(&GameInterface,"lsls",MSG_INTERFACE_MSG_TO_NODE,"EQUIP_BUTTON",0, "#"+XI_ConvertString("Already read"));
 			return false;
@@ -788,9 +1140,10 @@ bool ThisItemCanBeEquip(aref arItem)
 	}
 	else
 	{
-		if (groupID == CIRASS_ITEM_TYPE && !IsCharacterPerkOn(xi_refCharacter,"Ciras") && arItem.Clothes == false)
+		if (groupID == CIRASS_ITEM_TYPE && !IsCharacterPerkOn(xi_refCharacter,"Ciras"))
 	    {
-		    return false;
+		    if (!CheckAttribute(arItem, "Clothes")) return false;
+		    if (arItem.Clothes == false) return false;
 	    }
 		if (IsEquipCharacterByItem(xi_refCharacter, "underwater")) // Логика в скафандре
 		{
@@ -806,8 +1159,14 @@ bool ThisItemCanBeEquip(aref arItem)
 
 void EquipPress()
 {
-	sPrevChar = "";
+	if (CurTable == "" || !CheckAttribute(&GameInterface, CurTable + "." + CurRow + ".index"))
+		return;
+
 	int  iGoodIndex = sti(GameInterface.(CurTable).(CurRow).index);
+	if (iGoodIndex < 0)
+		return;
+
+	sPrevChar = "";
 	ref itmRef = &Items[iGoodIndex];
 	string totalInfo;
 	int  i = -1;
@@ -838,6 +1197,7 @@ void EquipPress()
 		}
 		if (TEV.gotNabobRevard == "revardTaken")
 		{
+			//Передать офицеру эту хрень низя так как IsQuestUsedItem чекает цену
 			TakeNItems(PChar, "recon_potion", -sti(PChar.Items.recon_potion));
 			AddCharacterSkillDontClearExp(pchar, SKILL_F_LIGHT, 5);
 			AddCharacterSkillDontClearExp(pchar, SKILL_FENCING, 5);
@@ -861,6 +1221,16 @@ void EquipPress()
 		    Log_Info("There's kinda mistake...");
 		}
 
+		return;
+	}
+	if (itmRef.id == "legendGuide")
+	{
+		TakeNItems(PChar, "legendGuide", -sti(PChar.Items.legendGuide));
+		SetCharacterPerk(pchar, "legendGuideRead");
+		SetEnergyToCharacter(pchar);
+		LAi_SetCurHP(pchar,LAi_GetCharacterMaxHP(pchar));
+		PlaySound("Interface\important_item.wav");
+		SetVariable();
 		return;
 	}
 
@@ -889,7 +1259,7 @@ void EquipPress()
             //если возвращаем не тру, то обновляем описание и блочим кнопку на "Прочитанно"
             if (CheckLetterForQuest(itmRef)) ShowReadWindow();
             else itmRef.blockRead = true;
-            SetFormatedText("INFO_TEXT", GetItemDescribe(iGoodIndex));
+            SetFormatedText("INFO_TEXT", GetItemDescribe(iGoodIndex, xi_refCharacter));
             SetVAligmentFormatedText("INFO_TEXT");
         }
         // Dolphin чтение писем <--
@@ -922,17 +1292,14 @@ void EquipPress()
 				SetVAligmentFormatedText("MAP_TEXT");
 				ShowMapWindow();
 				return;
-			}	
-            //pchar.I_MAP_SHOW = true;
-            //pchar.I_MAP_SHOW_ITEM = itmRef.id;
-            //PostEvent("InterfaceBreak", 400);
+			}
             if (itmRef.id == "map_full" || itmRef.id == "map_part1" || itmRef.id == "map_part2")
             {// клады
             	SetNewPicture("MAP_PICTURE", "interfaces\Maps\treasure map.tga");
             	if (GetCharacterItem(pchar, "map_part1")>0  && GetCharacterItem(pchar, "map_part2")>0)
 			    {
-			        TakeNItems(xi_refCharacter, "map_part1", -1);
-			        TakeNItems(xi_refCharacter, "map_part2", -1);
+			        TakeNItems(pchar, "map_part1", -1);
+			        TakeNItems(pchar, "map_part2", -1);
 			        TakeNItems(pchar, "map_full", 1);
 					itmRef = ItemsFromID("map_full");
 			        // здесь генерация назначение и типа клада
@@ -1061,6 +1428,7 @@ void EquipPress()
                     EquipCharacterByItem(xi_refCharacter, itmRef.id);
             }
 
+			RefreshItemsTable();
 			FillItemsSelected();
 			SendMessage(&GameInterface, "lsls", MSG_INTERFACE_MSG_TO_NODE, "EQUIP_BUTTON", 0, "#" + XI_ConvertString("Equip that"));
 			SetSelectable("EQUIP_BUTTON", ThisItemCanBeEquip(&Items[iGoodIndex]));
@@ -1117,10 +1485,23 @@ void SetReadScrollerPos()
 
 void SetAmmoBlank(string sType)
 {
-	SendMessage(&GameInterface, "lsll", MSG_INTERFACE_MSG_TO_NODE, "SLOT_AMMO_" + sType, 4, argb(255, 128, 128, 128));
-	SendMessage(&GameInterface, "lsll", MSG_INTERFACE_MSG_TO_NODE, "SLOT_POWDER_" + sType, 4, argb(255, 128, 128, 128));
+	SetAmmoBlink("SLOT_AMMO_" + sType, false);
+	SetAmmoBlink("SLOT_POWDER_" + sType, false);
 	SetNewGroupPicture("SLOT_AMMO_" + sType, "BLANK", "BLANK");
 	SetNewGroupPicture("SLOT_POWDER_" + sType, "BLANK", "BLANK");
+}
+
+// > Индикация слота боеприпаса: при отсутствии заряда слот мигает красным
+void SetAmmoBlink(string sNode, bool bBlink)
+{
+	int iBlink = 0;
+	if (bBlink) iBlink = 1;
+
+	SendMessage(&GameInterface, "lsll", MSG_INTERFACE_MSG_TO_NODE, sNode, 5, iBlink);
+
+	// > движок при выключении мигания оставляет слоту blindMinColor (красный), поэтому нейтральный цвет нужно вернуть ручками
+	if (iBlink == 0)
+		SendMessage(&GameInterface, "lsll", MSG_INTERFACE_MSG_TO_NODE, sNode, 4, argb(255, 128, 128, 128));
 }
 
 // обработка нажатия клавы
@@ -1136,29 +1517,25 @@ void ProcessInterfaceControls()
 	{
 		IDoExit(INTERFACE_NATIONRELATION);
 	}
-	if (controlName == "IExit_F2")
+	if (controlName == "CharacterShipMenu")
 	{
 		IDoExit(RC_INTERFACE_TO_SHIP);
 	}
-	if (controlName == "IExit_F3")
+	if (controlName == "LogbookMenu")
 	{
 		IDoExit(RC_INTERFACE_TO_LOGBOOK);
 	}
-	if (controlName == "IExit_F5")
+	if (controlName == "NationsMenu")
 	{
 		IDoExit(INTERFACE_NATIONRELATION);
 	}
-	if (controlName == "IExit_K")
+	if (controlName == "AlchemyKey")
 	{
 		IDoExit(RC_INTERFACE_TO_ALCHEMY);
 	}
-	if (controlName == "IExit_F1")
+	if (controlName == "Interface")
 	{
 		IDoExit(INTERFACE_CHARACTER_ALL);
-	}
-	if (controlName == "IExit_F1")
-	{
-		IDoExit(RC_INTERFACE_LAUNCH_GAMEMENU);
 	}
 }
 

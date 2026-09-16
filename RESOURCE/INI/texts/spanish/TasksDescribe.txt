@@ -7,7 +7,7 @@ Task6 {Asignar tesorero}
 Task7 {Asignar carpintero}
 Task8 {Combate naval}
 Task9 {Usando balas de cañón o bombas}
-Task10 {Hundid el lugre dañado}
+Task10 {Hunde los lugres enemigos}
 Task11 {Retirarse}
 Task12 {Aléjate lo suficiente del enemigo}
 Task13 {Nuevo barco}
@@ -25,3 +25,11 @@ Task24 {Nuevo barco}
 Task25 {Ve a la taberna}
 Task26 {Contratar toda la tripulación disponible}
 Task27 {Salir de la taberna}
+Task28 {Abandona Barbados}
+Task29 {Aléjate 500 yardas del fuerte}
+Task30 {Acércate a la «Encarnación» y envíale un bote}
+Task31 {Explora Maracaibo}
+Task32 {Revisa la tienda}
+Task33 {Revisa la prisión}
+Task34 {Revisa el almacén}
+Task35 {Revisa la jungla}

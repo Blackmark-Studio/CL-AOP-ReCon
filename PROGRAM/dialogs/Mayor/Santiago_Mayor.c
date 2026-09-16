@@ -144,7 +144,6 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 			sld.Default.BoardLocation = "LaVega_town";
 			SetLocationCapturedState("Lavega_town", true);
 			//огонь и пламень
-			locations[FindLocation("LaVega_town")].models.always.town = "LaVega_quest";
 			locations[FindLocation("LaVega_town")].models.always.locatorsl2 = "LaVega_1_quest";
 			locations[FindLocation("LaVega_town")].models.always.locatorsl3 = "LaVega_locators_quest";
 			locations[FindLocation("LaVega_town")].models.day.charactersPatch = "LaVega_patch_day_quest";

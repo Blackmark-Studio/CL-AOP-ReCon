@@ -17,9 +17,10 @@ void OSL_ReadGameOption()
 
 void PrepareDefaultOption(ref optref)
 {
-	optref.volume.music = 0.25;
+//HardCoffee global volume options
+/*	optref.volume.music = 0.25;
 	optref.volume.sound = 0.25;
-	optref.volume.dialog = 0.25;
+	optref.volume.dialog = 0.25;*/
 	optref.cameramode.follow_on = true;
 	optref.alwaysrun = true;
 	optref.video.grassquantity = 0;
@@ -44,7 +45,8 @@ void PrepareDefaultOption(ref optref)
 
 void GetRealOptions(ref optref)
 {
-	float ftmp1, ftmp2, ftmp3;
+//HardCoffee global volume options
+/*	float ftmp1, ftmp2, ftmp3;
 
 	ftmp1 = stf(optref.volume.sound);
 	ftmp2 = stf(optref.volume.music);
@@ -52,7 +54,7 @@ void GetRealOptions(ref optref)
 	GetMasterVolume(&ftmp1, &ftmp2, &ftmp3);
 	optref.volume.sound = ftmp1;
 	optref.volume.music = ftmp2;
-	optref.volume.dialog = ftmp3;
+	optref.volume.dialog = ftmp3;*/
 
 	optref.cameramode.follow_on = !locCameraEnableSpecialMode;
 
@@ -115,12 +117,6 @@ void GetRealOptions(ref optref)
         optref.cameramode.ShowTutorial = true;
     }
 
-	if( CheckAttribute(&InterfaceStates,"EnabledAutoSaveMode") ) {
-		optref.cameramode.EnabledAutoSaveMode = sti(InterfaceStates.EnabledAutoSaveMode);
-	} else {
-		optref.cameramode.EnabledAutoSaveMode = true;
-	}
-
 	if( CheckAttribute(&InterfaceStates,"ShowControlTips") ) {
 		optref.cameramode.ShowControlTips = InterfaceStates.ShowControlTips;
 	} else {
@@ -169,6 +165,20 @@ void GetRealOptions(ref optref)
 		optref.cameramode.SkyRotation = true;
 	}
 
+	// KZ NewFovCalculation > Смена вертикального FOV на лету
+	if( CheckAttribute(&InterfaceStates,"NewFovCalculation") ) {
+		optref.cameramode.NewFovCalculation = sti(InterfaceStates.NewFovCalculation);
+	} else {
+		optref.cameramode.NewFovCalculation = GetNewFovCalculationDefault();
+	}
+
+	// KZ HudAutoFit > Подгон HUD под разрешение экрана после загрузки сейва
+	if( CheckAttribute(&InterfaceStates,"HudAutoFit") ) {
+		optref.HudAutoFit = sti(InterfaceStates.HudAutoFit);
+	} else {
+		optref.HudAutoFit = false;
+	}
+
 	if( CheckAttribute(&InterfaceStates,"TimeSpeedAccel") ) {
 		optref.TimeSpeedAccel = sti(InterfaceStates.TimeSpeedAccel);
 	} else {
@@ -178,6 +188,18 @@ void GetRealOptions(ref optref)
 	// > Continuous music
 	SetContinuousMusic(&InterfaceStates, optref);
 	// < Continuous music
+
+	// автосейвы
+	string sAutoSave;
+	for(int i = 0; i < AUTO_SAVE_TYPE_MAX; i++)
+	{
+		sAutoSave = "AutoSave_" + GetAutoSaveType(i);
+		if(CheckAttribute(&InterfaceStates, sAutoSave))
+			optref.(sAutoSave) = sti(InterfaceStates.(sAutoSave));
+		else
+			optref.(sAutoSave) = 10;
+	}
+	// <--
 
 	GetControlsOptions(optref);
 
@@ -256,7 +278,9 @@ void GetRealOptions(ref optref)
 
 void SetCurentOptions(ref optref)
 {
-	SendMessage(&sound,"lfff", MSG_SOUND_SET_MASTER_VOLUME, stf(optref.volume.sound),	stf(optref.volume.music),	stf(optref.volume.dialog));
+	//HardCoffee global volume options //они уже записываются по мере дёргания ползунков
+	//SendMessage(&sound,"lfff", MSG_SOUND_SET_MASTER_VOLUME, stf(optref.volume.sound),	stf(optref.volume.music),	stf(optref.volume.dialog));
+
 	locCameraEnableSpecialMode = !sti(optref.cameramode.follow_on);
 	
 	if( CheckAttribute(optref,"cameramode.SimpleSeaMode") ) {
@@ -305,12 +329,6 @@ void SetCurentOptions(ref optref)
 		InterfaceStates.EnabledShipMarks = optref.cameramode.EnabledShipMarks;
 	} else {
 		InterfaceStates.EnabledShipMarks = true;
-	}
-
-	if( CheckAttribute(optref,"cameramode.EnabledAutoSaveMode") ) {
-		InterfaceStates.EnabledAutoSaveMode = optref.cameramode.EnabledAutoSaveMode;
-	} else {
-		InterfaceStates.EnabledAutoSaveMode = true;
 	}
 
 	if( CheckAttribute(optref,"cameramode.ShowControlTips") ) {
@@ -362,6 +380,20 @@ void SetCurentOptions(ref optref)
 		InterfaceStates.SkyRotation = true;
 	}
 
+	// > NewFovCalculation
+	if( CheckAttribute(optref,"cameramode.NewFovCalculation") ) {
+		InterfaceStates.NewFovCalculation = optref.cameramode.NewFovCalculation;
+	} else {
+		InterfaceStates.NewFovCalculation = GetNewFovCalculationDefault();
+	}
+
+	// > HudAutoFit
+	if( CheckAttribute(optref,"HudAutoFit") ) {
+		InterfaceStates.HudAutoFit = optref.HudAutoFit;
+	} else {
+		InterfaceStates.HudAutoFit = false;
+	}
+
 	if( CheckAttribute(optref,"TimeSpeedAccel") ) {
 		InterfaceStates.TimeSpeedAccel = optref.TimeSpeedAccel;
 	} else {
@@ -371,6 +403,18 @@ void SetCurentOptions(ref optref)
 	// > Continuous music
 	SetContinuousMusic(optref, &InterfaceStates);
 	// < Continuous music
+
+	// автосейвы
+	string sAutoSave;
+	for(int i = 0; i < AUTO_SAVE_TYPE_MAX; i++)
+	{
+		sAutoSave = "AutoSave_" + GetAutoSaveType(i);
+		if(CheckAttribute(optref, sAutoSave))
+			InterfaceStates.(sAutoSave) = sti(optref.(sAutoSave));
+		else
+			InterfaceStates.(sAutoSave) = 10;
+	}
+	// <--
 
 	// mouse
 	if( CheckAttribute(optref,"cameramode.InvertCameras") ) {
@@ -436,7 +480,13 @@ void SetCurentOptions(ref optref)
 	}
 	
 	SetGlowParams(1.0, sti(InterfaceStates.GlowEffect), 2);
-	
+
+	// > NewFovCalculation
+	SetNewFovCalculation(sti(InterfaceStates.NewFovCalculation));
+
+	// > HudAutoFit
+	SetHudAutoFitOnLoad(sti(InterfaceStates.HudAutoFit));
+
 	if( CheckAttribute(optref,"video.grassquantity") ) {
 		iGrassQuality = sti(optref.video.grassquantity);
 	}

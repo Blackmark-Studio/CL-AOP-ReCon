@@ -1,648 +1,648 @@
 Smuggler_Agent_dialog_1 {
-城里戒备森严，到处都在找你！要是我，早就溜了。
+城里戒备森严， 到处都在找你！ 要是我， 早就溜了。 
 }
 Smuggler_Agent_dialog_2 {
-整个城市的守卫都在满城找你呢。老子可不傻，才不会跟你说话！
+整个城市的守卫都在满城找你呢。 我可不傻， 才不会跟你说话！ 
 }
 Smuggler_Agent_dialog_3_m {
-快跑，伙计，别等士兵把你打成筛子……
+快跑， 伙计， 别等士兵把你打成筛子…… 
 }
 Smuggler_Agent_dialog_3_f {
-快跑，姑娘，别等士兵把你打成筛子……
+快跑， 姑娘， 别等士兵把你打成筛子…… 
 }
 Smuggler_Agent_dialog_4 {
 @<LinkRandPhrase>
 }
 Smuggler_Agent_dialog_5_m {
-你想干嘛，混蛋？！城里的守卫已经盯上你了，肮脏的海盗，跑不了多远的！
+你想干嘛， 混蛋？ ！ 城里的守卫已经盯上你了， 肮脏的海盗， 跑不了多远的！ 
 }
 Smuggler_Agent_dialog_5_f {
-你还想干嘛，臭不要脸的？！城里的守卫已经盯上你了，你跑不了多远。
+你还想干嘛， 臭不要脸的？ ！ 城里的守卫已经盯上你了， 你跑不了多远。 
 }
 Smuggler_Agent_dialog_6_m {
-肮脏的杀人犯，滚出去！来人！
+肮脏的杀人犯， 滚出去！ 来人！ 
 }
 Smuggler_Agent_dialog_6_f {
-肮脏的杀人犯，滚出去！来人！
+肮脏的杀人犯， 滚出去！ 来人！ 
 }
 Smuggler_Agent_dialog_7_m {
-老子才不怕你呢，混蛋！你很快就得上绞刑架了，跑不了多远……
+我才不怕你呢， 混蛋！ 你很快就得上绞刑架了， 跑不了多远…… 
 }
 Smuggler_Agent_dialog_7_f {
-老子才不怕你，臭娘们！你很快就得上绞刑架了，跑不了多远……
+我才不怕你， 臭娘们！ 你很快就得上绞刑架了， 跑不了多远…… 
 }
 Smuggler_Agent_dialog_8 {
 @<LinkRandPhrase>
 }
 Smuggler_Agent_dialog_9 {
-呵，小小的警报吓不倒我……
+呵， 小小的警报吓不倒我…… 
 }
 Smuggler_Agent_dialog_10 {
-他们绝对抓不到我。
+他们绝对抓不到我。 
 }
 Smuggler_Agent_dialog_11 {
 @<RandPhraseSimple>
 }
 Smuggler_Agent_dialog_12 {
-闭上你那臭嘴，@<GetWorkTypeOfMan>，不然老子撕烂你的烂舌头！
+闭上你那臭嘴， @<GetWorkTypeOfMan>， 不然我撕烂你的烂舌头！ 
 }
 Smuggler_Agent_dialog_13 {
-嘿，@<GetWorkTypeOfMan>，还在追着海盗跑啊！听俺一句，兄弟：低调点，才能活得久……
+嘿， @<GetWorkTypeOfMan>， 还在追着海盗跑啊！ 听我一句， 兄弟： 低调点， 才能活得久…… 
 }
 Smuggler_Agent_dialog_14 {
 @<RandPhraseSimple>
 }
 Smuggler_Agent_dialog_15_m {
-船长，我有件事想跟你谈谈。我看你刚到Archipelago，在Brethren of the Coast里还没什么名气……也许你正是我们需要的人。
+船长， 我有件事想跟你谈谈。 我看你刚到群岛， 在海岸同盟里还没什么名气…… 也许你正是我们需要的人。 
 }
 Smuggler_Agent_dialog_15_f {
-船长，我有件事想跟你谈谈。我看你刚到Archipelago，在Brethren of the Coast里还没什么名气……也许你正是我们需要的人。
+船长， 我有件事想跟你谈谈。 我看你刚到群岛， 在海岸同盟里还没什么名气…… 也许你正是我们需要的人。 
 }
 Smuggler_Agent_dialog_16 {
-嗯……有意思。继续说，你找俺有啥事？
+嗯…… 有意思。 继续说， 你找我有什么事？ 
 }
 Smuggler_Agent_dialog_17 {
-你找俺啥事，captain？俺不认识你，也不能告诉你俺的名字。
+你找我什么事， 船长？ 我不认识你， 也不能告诉你我的名字。 
 }
 Smuggler_Agent_dialog_18 {
-我是@<GetFullName>，船长。
+我是@<GetFullName>， 船长。 
 }
 Smuggler_Agent_dialog_19 {
-今天没法做生意了。每个海湾都布满了巡逻队——总督正在找一批货，据说是巡逻船的船长@<GetStrSmallRegister> @<pchar>从某个海盗手里缴获后藏起来的。
+今天没法做生意了。 每个海湾都布满了巡逻队——市长正在找一批货， 据说是巡逻船的船长@<GetStrSmallRegister>@<pchar>从某个海盗手里缴获后藏起来的。 
 }
 Smuggler_Agent_dialog_20 {
-那@<pchar>船长本人呢？
+那@<pchar>船长本人呢？ 
 }
 Smuggler_Agent_dialog_21 {
-今天没得谈。
+今天没得谈。 
 }
 Smuggler_Agent_dialog_22 {
-明白了。
+明白了。 
 }
 Smuggler_Agent_dialog_23 {
-今天没得谈。
+今天没得谈。 
 }
 Smuggler_Agent_dialog_24 {
-明白了。
+明白了。 
 }
 Smuggler_Agent_dialog_25 {
-这次你带了什么来，船长？
+这次你带了什么来， 船长？ 
 }
 Smuggler_Agent_dialog_26_m {
-快说，伙计，你想干啥？你知道现在有人在追你吧！
+快说， 伙计， 你想干什么？ 你知道现在有人在追你吧！ 
 }
 Smuggler_Agent_dialog_26_f {
-快说，姑娘，你想干啥？你后面可有人追着呢！
+快说， 姑娘， 你想干什么？ 你后面可有人追着呢！ 
 }
 Smuggler_Agent_dialog_27 {
-别磨叽，赶紧说重点！你后面还有士兵追着呢，现在可不是聊天的时候……
+别磨叽， 赶紧说重点！ 你后面还有士兵追着呢， 现在可不是聊天的时候…… 
 }
 Smuggler_Agent_dialog_28 {
 @<RandPhraseSimple>
 }
 Smuggler_Agent_dialog_29_m {
-我带了些货来卖。
+我带了些货来卖。 
 }
 Smuggler_Agent_dialog_29_f {
-我带了些货来卖。
+我带了些货来卖。 
 }
 Smuggler_Agent_dialog_30 {
-关于这趟行程……
+关于这趟行程…… 
 }
 Smuggler_Agent_dialog_31 {
-我要去个地方。
+我要去个地方。 
 }
 Smuggler_Agent_dialog_32 {
-我这儿有点“特别”的货，你肯定感兴趣，来看看吧！
+我这儿有点“特别”的货， 你肯定感兴趣， 来看看吧！ 
 }
 Smuggler_Agent_dialog_33 {
-我得查点事，伙计。
+我得查点事， 伙计。 
 }
 Smuggler_Agent_dialog_34 {
-你那位来自@<XI_ConvertString>的同事，也是俺的老朋友，说你知道一件事。
+你那位来自@<XI_ConvertString>的同事， 也是我的老朋友， 说你知道一件事。 
 }
 Smuggler_Agent_dialog_35 {
-听着，俺现在急需一两百个奴隶，实在不知道还能找谁了。
+听着， 我现在急需一两百个奴隶， 实在不知道还能找谁了。 
 }
 Smuggler_Agent_dialog_36 {
-我有五千皮阿斯特，说说你那“活货”吧。
+我有五千比索， 说说你那“活货”吧。 
 }
 Smuggler_Agent_dialog_37 {
-没事，回头见。
+没事， 回头见。 
 }
 Smuggler_Agent_dialog_38 {
-听着，你知道哪儿能把“活货”卖个好价钱吗？
+听着， 你知道哪儿能把“活货”卖个好价钱吗？ 
 }
 Smuggler_Agent_dialog_39 {
-他就在堡垒的地窖里，还能去哪儿？要是船长随时把货藏的地方交给官府，我们可就什么都没了。所以在这阵风波没过去之前，别想着做什么交易。
+他就在堡垒的地窖里， 还能去哪儿？ 要是船长随时把货藏的地方交给官府， 我们可就什么都没了。 所以在这阵风波没过去之前， 别想着做什么交易。 
 }
 Smuggler_Agent_dialog_40 {
-喂，你这岛上的每块石头都认得，别跟俺说你没听过Captain @<pchar>的藏匿点？
+喂， 你这岛上的每块石头都认得， 别跟我说你没听过@<pchar>船长的藏匿点？ 
 }
 Smuggler_Agent_dialog_41 {
-大概在天堂吧。他和船员最近刚被处决了。判决书里可没说那船是海盗船。
+大概在天堂吧。 他和船员最近刚被处决了。 判决书里可没说那船是海盗船。 
 }
 Smuggler_Agent_dialog_42 {
-你怎么这么肯定那船是海盗的？
+你怎么这么肯定那船是海盗的？ 
 }
 Smuggler_Agent_dialog_43 {
-俺们一直在悬崖上看着那场战斗，直到天黑。用望远镜能清楚看到@<GetStrSmallRegister>挂着Black Roger的旗帜。大约五个小时后，黑暗中只看到一道闪光，像是火药库爆炸了。那段时间，足够把货物运上岸了。
+我们一直在悬崖上看着那场战斗， 直到天黑。 用望远镜能清楚看到@<GetStrSmallRegister>挂着黑色准男的旗帜。 大约五个小时后， 黑暗中只看到一道闪光， 像是火药库爆炸了。 那段时间， 足够把货物运上岸了。 
 }
 Smuggler_Agent_dialog_44 {
-你不知道Captain @<pchar>的藏匿点在哪儿吗？你不是对这岛上的每块石头都门儿清吗？
+你不知道@<pchar>船长的藏匿点在哪儿吗？ 你不是对这岛上的每块石头都门儿清吗？ 
 }
 Smuggler_Agent_dialog_45 {
-不。我们也在找他，不过可不是为了让总督高兴……
+不。 我们也在找他， 不过可不是为了让市长高兴…… 
 }
 Smuggler_Agent_dialog_46 {
-明白了……那你保重。
+明白了…… 那你保重。 
 }
 Smuggler_Agent_dialog_47 {
-不。俺们也在找他，不过可不是为了让总督高兴，嘿嘿……
+不。 我们也在找他， 不过可不是为了让市长高兴， 嘿嘿…… 
 }
 Smuggler_Agent_dialog_48 {
-明白了……那你自己多保重。
+明白了…… 那你自己多保重。 
 }
 Smuggler_Agent_dialog_49_m {
-你怎么会这么想？俺可是正经跑船的，去找别人买吧。
+你怎么会这么想？ 我可是正经跑船的， 去找别人买吧。 
 }
 Smuggler_Agent_dialog_49_f {
-你怎么会这么想？俺可是正经跑船的，去找别人买吧。
+你怎么会这么想？ 我可是正经跑船的， 去找别人买吧。 
 }
 Smuggler_Agent_dialog_50 {
-至少还是要谢谢你……
+至少还是要谢谢你…… 
 }
 Smuggler_Agent_dialog_51 {
-怎么说呢？也许你的“货”还真有点用处。拿着@<FindMoneyString>，这事儿就算了。
+怎么说呢？ 也许你的“货”还真有点用处。 拿着@<FindMoneyString>， 这事儿就算了。 
 }
 Smuggler_Agent_dialog_52 {
-大概不会吧。
+大概不会吧。 
 }
 Smuggler_Agent_dialog_53 {
-没错，你猜对了，俺已经开始忘了！
+没错， 你猜对了， 我已经开始忘了！ 
 }
 Smuggler_Agent_dialog_54 {
-没错！现在我可不只是好奇了。我想啊，要是我给你@<FindMoneyString>，你大概就对那些文件里的内容一点兴趣都没了。
+没错！ 现在我可不只是好奇了。 我想啊， 要是我给你@<FindMoneyString>， 你大概就对那些文件里的内容一点兴趣都没了。 
 }
 Smuggler_Agent_dialog_55 {
-大概不是吧。
+大概不是吧。 
 }
 Smuggler_Agent_dialog_56 {
-没错，你猜对了，我都开始忘了！
+没错， 你猜对了， 我都开始忘了！ 
 }
 Smuggler_Agent_dialog_57_m {
-这可是抓住那家伙现行的好机会！真是太有意思了。这样吧：我给你@<FindMoneyString>，你就装作把文件落在桌上了，怎么样？
+这可是抓住那家伙现行的好机会！ 真是太有意思了。 这样吧： 我给你@<FindMoneyString>， 你就装作把文件落在桌上了， 怎么样？ 
 }
 Smuggler_Agent_dialog_57_f {
-这可是个抓住那家伙的好机会！真是太有意思了。这样吧：我给你@<FindMoneyString>，你就装作把文件落在桌上，怎么样？
+这可是个抓住那家伙的好机会！ 真是太有意思了。 这样吧： 我给你@<FindMoneyString>， 你就装作把文件落在桌上， 怎么样？ 
 }
 Smuggler_Agent_dialog_58 {
-大概不会。
+大概不会。 
 }
 Smuggler_Agent_dialog_59 {
-没错，你猜对了，俺已经开始忘了！
+没错， 你猜对了， 我已经开始忘了！ 
 }
 Smuggler_Agent_dialog_60 {
-小心别惹上什么敌人。
+小心别惹上什么敌人。 
 }
 Smuggler_Agent_dialog_61 {
-别忘了留意身后！
+别忘了留意身后！ 
 }
 Smuggler_Agent_dialog_62 {
-今天没法做生意。每个小港湾都布满了巡逻队——总督正在找据说是Captain @<GetStrSmallRegister> @<pchar>从某个海盗手里夺来的货物，还藏了起来。
+今天没法做生意。 每个小港湾都布满了巡逻队——市长正在找据说是船长@<GetStrSmallRegister>@<pchar>从某个海盗手里夺来的货物， 还藏了起来。 
 }
 Smuggler_Agent_dialog_63 {
-那@<pchar>船长本人呢？
+那@<pchar>船长本人呢？ 
 }
 Smuggler_Agent_dialog_64 {
-今天没得谈。
+今天没得谈。 
 }
 Smuggler_Agent_dialog_65 {
-明白了。
+明白了。 
 }
 Smuggler_Agent_dialog_66 {
-今天没得谈。
+今天没得谈。 
 }
 Smuggler_Agent_dialog_67 {
-明白了。
+明白了。 
 }
 Smuggler_Agent_dialog_68 {
-船长，有什么需要俺帮忙的吗？
+船长， 有什么需要我帮忙的吗？ 
 }
 Smuggler_Agent_dialog_69 {
-我有东西要卖。
+我有东西要卖。 
 }
 Smuggler_Agent_dialog_70 {
-我要去个地方。
+我要去个地方。 
 }
 Smuggler_Agent_dialog_71 {
-我得弄明白点事，伙计。
+我得弄明白点事， 伙计。 
 }
 Smuggler_Agent_dialog_72 {
-你那位来自@<XI_ConvertString>的同事，也是我的老朋友，说你知道一件事。
+你那位来自@<XI_ConvertString>的同事， 也是我的老朋友， 说你知道一件事。 
 }
 Smuggler_Agent_dialog_73 {
-听着，俺现在急需一百，甚至两百个奴隶，实在不知道还能找谁了。
+听着， 我现在急需一百， 甚至两百个奴隶， 实在不知道还能找谁了。 
 }
 Smuggler_Agent_dialog_74 {
-没什么，祝你好运！
+没什么， 祝你好运！ 
 }
 Smuggler_Agent_dialog_75 {
-最近奴隶挺抢手的。一般这种买卖，大家都是直接找贸易公司，或者去一些特定的地方……
+最近奴隶挺抢手的。 一般这种买卖， 大家都是直接找贸易公司， 或者去一些特定的地方…… 
 }
 Smuggler_Agent_dialog_76 {
-那儿没有奴隶，我还有急事，时间不多了。
+那儿没有奴隶， 我还有急事， 时间不多了。 
 }
 Smuggler_Agent_dialog_77 {
-先把你开始的事做完，咱们再聊这个。
+先把你开始的事做完， 咱们再聊这个。 
 }
 Smuggler_Agent_dialog_78 {
-明白了。
+明白了。 
 }
 Smuggler_Agent_dialog_79 {
-要是俺不知道你那客户是谁，俺就不是人！哼，那家伙要敢耍俺，等着花高价拿货吧。
+要是我不知道你那客户是谁， 我就不是人！ 哼， 那家伙要敢耍我， 等着花高价拿货吧。 
 }
 Smuggler_Agent_dialog_80 {
-我不知道你说的是谁。我的买家在另一个岛上，所以趁着顺风，俺得赶紧走。
+我不知道你说的是谁。 我的买家在另一个岛上， 所以趁着顺风， 我得赶紧走。 
 }
 Smuggler_Agent_dialog_81 {
-你到底需要多少奴隶？
+你到底需要多少奴隶？ 
 }
 Smuggler_Agent_dialog_82 {
-我要一百个奴隶，价钱好说！
+我要一百个奴隶， 价钱好说！ 
 }
 Smuggler_Agent_dialog_83 {
-这得花你三万皮阿斯特，每个奴隶三百。你有这么多钱吗？
+这得花你三万比索， 每个奴隶三百。 你有这么多钱吗？ 
 }
 Smuggler_Agent_dialog_84 {
-成交。
+成交。 
 }
 Smuggler_Agent_dialog_85 {
-行，把钱带到叫@<XI_ConvertString>的地方，咱们到那儿再谈……
+行， 把钱带到叫@<XI_ConvertString>的地方， 咱们到那儿再谈…… 
 }
 Smuggler_Agent_dialog_86 {
-行，我答应你。不过别想耍我——老子可没空陪你玩这些把戏。
+行， 我答应你。 不过别想耍我——我可没空陪你玩这些把戏。 
 }
 Smuggler_Agent_dialog_87 {
-俺可不是你朋友。想打听点事儿，代价可不小。
+我可不是你朋友。 想打听点事儿， 代价可不小。 
 }
 Smuggler_Agent_dialog_88 {
-嗯，我得找点价值不超过@<FindMoneyString>的东西。
+嗯， 我得找点价值不超过@<FindMoneyString>的东西。 
 }
 Smuggler_Agent_dialog_89 {
-把钱拿来。不过你得知道，这点钱可问不出多少东西。
+把钱拿来。 不过你得知道， 这点钱可问不出多少东西。 
 }
 Smuggler_Agent_dialog_90_m {
-我也没啥大要求。你看，我跟朋友们在这儿走散了。我迟到了，他们也没等我……
+其实我也没什么特别需要的。 你看， 我跟朋友们在这儿走散了。 我迟到了， 他们也没等我…… 
 }
 Smuggler_Agent_dialog_90_f {
-其实我也没啥特别需要的。你看，我跟朋友们在这儿走散了。我迟到了，他们也没等我……
+其实我也没什么特别需要的。 你看， 我跟朋友们在这儿走散了。 我迟到了， 他们也没等我…… 
 }
 Smuggler_Agent_dialog_91 {
-呵，你身上连钱都没有！等你有钱了再来吧……
+呵， 你身上连钱都没有！ 等你有钱了再来吧…… 
 }
 Smuggler_Agent_dialog_92 {
-没错。
+没错。 
 }
 Smuggler_Agent_dialog_93 {
-这跟俺有什么关系？
+这跟我有什么关系？ 
 }
 Smuggler_Agent_dialog_94_m {
-他们现在不在城里，也没有自己的船。所以我在想，会不会是你哪个生意伙伴帮了他们一把……
+他们现在不在城里， 也没有自己的船。 所以我在想， 会不会是你的哪个生意伙伴帮了他们一把…… 
 }
 Smuggler_Agent_dialog_94_f {
-他们现在不在城里，也没有自己的船。所以我在想，会不会是你的哪个生意伙伴帮了他们一把……
+他们现在不在城里， 也没有自己的船。 所以我在想， 会不会是你的哪个生意伙伴帮了他们一把…… 
 }
 Smuggler_Agent_dialog_95 {
-原来是这样……确实有这么回事。有人过来，说要马上出海，去哪儿都无所谓。只要给钱，俺们可不多问。正好俺们要去@<XI_ConvertString>，就在@<XI_ConvertString>那边，他们就上了船。你要是也想去，只要价钱谈得拢，咱们也能带你一程。
+原来是这样…… 确实有这么回事。 有人过来， 说要马上出海， 去哪儿都无所谓。 只要给钱， 我们可不多问。 正好我们要去@<XI_ConvertString>， 就在@<XI_ConvertString>那边， 他们就上了船。 你要是也想去， 只要价钱谈得拢， 咱们也能带你一程。 
 }
 Smuggler_Agent_dialog_96 {
-谢谢，我有自己的旗帜。
+谢谢， 我有自己的船。 
 }
 Smuggler_Agent_dialog_97 {
-我还没跟你打过交道。
+我还没跟你打过交道。 
 }
 Smuggler_Agent_dialog_98_m {
-这只是时间问题。前不久，你把我那几个走散的朋友带来了这里。
+这只是时间问题。 前不久， 你把我那几个走散的朋友带来了这里。 
 }
 Smuggler_Agent_dialog_98_f {
-这只是时间问题。前不久，你把我那几个走散的朋友带来了这里。
+这只是时间问题。 前不久， 你把我那几个走散的朋友带来了这里。 
 }
 Smuggler_Agent_dialog_99 {
-嗯，我们把他们送到@<XI_ConvertString>了……你知道吧，我真希望他们真的是你朋友，不然我可不建议你去招惹他们。
+嗯， 我们把他们送到@<XI_ConvertString>了…… 你知道吧， 我真希望他们真的是你朋友， 不然我可不建议你去招惹他们。 
 }
 Smuggler_Agent_dialog_100_m {
-多谢关心，不过俺有武器，还挺有魅力的。
+谢谢你的关心， 但我已做好应对准备， 而且魅力十足。
 }
 Smuggler_Agent_dialog_100_f {
-谢谢你的关心，不过我有武器，而且还挺有魅力的。
+谢谢你的关心， 但我已做好应对准备， 而且魅力十足。
 }
 Smuggler_Agent_dialog_101 {
-嗯……这跟俺有什么关系？你肯定走错地方了，Captain。去商店吧，他们肯定乐意收你带来的东西。
+嗯…… 这跟我有什么关系？ 你肯定走错地方了， 船长。 去商店吧， 他们肯定乐意收你带来的东西。 
 }
 Smuggler_Agent_dialog_102 {
-恐怕我找的就是你。
+恐怕我找的就是你。 
 }
 Smuggler_Agent_dialog_103 {
-谢谢你的建议，祝你一切顺利。
+谢谢你的建议， 祝你一切顺利。 
 }
 Smuggler_Agent_dialog_104 {
-为啥？
+为什么？ 
 }
 Smuggler_Agent_dialog_105 {
-我想卖点这岛上没有商人愿意收的东西。
+我想卖点这岛上没有商人愿意收的东西。 
 }
 Smuggler_Agent_dialog_106 {
-首先，把你的舰队撤了，太显眼了，我们不能冒这个险。只带一艘船来，别比brig或galleon大。
+首先， 把你的舰队撤了， 太显眼了， 我们不能冒这个险。 只带一艘船来， 别比双桅横帆船或盖伦帆船大。 
 }
 Smuggler_Agent_dialog_107 {
-我说得还不够明白吗？再说一遍——没有舰队！
+我说得还不够明白吗？ 再说一遍——没有舰队！ 
 }
 Smuggler_Agent_dialog_108_m {
-你是不是脑子进水了？老子说了——就一艘船！不是两艘，也不是三艘，就一艘！明白没？
+你是不是脑子进水了？ 我说了——就一艘船！ 不是两艘， 也不是三艘， 就一艘！ 明白没？ 
 }
 Smuggler_Agent_dialog_108_f {
-你是不是傻啊？老子说了，一艘船！不是两艘，不是三艘，就一艘！明白没？
+你是不是傻啊？ 我说了， 一艘船！ 不是两艘， 不是三艘， 就一艘！ 明白没？ 
 }
 Smuggler_Agent_dialog_109_m {
-哎，这世上怎么还有这么蠢的人……
+哎， 这世上怎么还有这么蠢的人…… 
 }
 Smuggler_Agent_dialog_109_f {
-唉，这世上怎么会有这么蠢的人……
+唉， 这世上怎么会有这么蠢的人…… 
 }
 Smuggler_Agent_dialog_110_m {
-行，我明白了。单挑就单挑。
+行， 我明白了。 单挑就单挑。 
 }
 Smuggler_Agent_dialog_110_f {
-行，我明白了。就你一个人。
+行， 我明白了。 就你一个人。 
 }
 Smuggler_Agent_dialog_111_m {
-明白了，我只是想确认一下。
+明白了， 我只是想确认一下。 
 }
 Smuggler_Agent_dialog_111_f {
-明白了，我只是想确认一下。
+明白了， 我只是想确认一下。 
 }
 Smuggler_Agent_dialog_112_m {
-不，倒不是傻，就是太贪了。他以为也许情况变了，能直接带一整支舰队过来……
+不， 倒不是傻， 就是太贪了。 他以为也许情况变了， 能直接带一整支舰队过来…… 
 }
 Smuggler_Agent_dialog_112_f {
-不，倒不是傻，就是太贪了。她以为情况变了，能直接带一整支舰队来……
+不， 倒不是傻， 就是太贪了。 她以为情况变了， 能直接带一整支舰队来…… 
 }
 Smuggler_Agent_dialog_113 {
-你自己看吧，这走路怪怪的……
+你自己看吧， 这走路怪怪的…… 
 }
 Smuggler_Agent_dialog_114_m {
-你还不如直接开着皇家战舰来呢。你的船在堡垒那边老远就能被发现。我们可不想拿命去冒险。换艘小点的船来，而且只能带一艘。
+你还不如直接开着皇家战舰来呢。 你的船在堡垒那边老远就能被发现。 我们可不想拿命去冒险。 换艘小点的船来， 而且只能带一艘。 
 }
 Smuggler_Agent_dialog_114_f {
-你还不如直接开着皇家战舰过来呢。你的船在堡垒那边老远就能被发现。我们可不想拿命去冒险。换艘小点的船来，而且只能带一艘。
+你还不如直接开着皇家战舰过来呢。 你的船在堡垒那边老远就能被发现。 我们可不想拿命去冒险。 换艘小点的船来， 而且只能带一艘。 
 }
 Smuggler_Agent_dialog_115 {
-我说得还不够明白吗？先去找艘小点的船，再回来。
+我说得还不够明白吗？ 先去找艘小点的船， 再回来。 
 }
 Smuggler_Agent_dialog_116 {
-你是傻还是装傻？我都说了，去弄艘schooner，实在不行brig也行，不然这买卖就黄了。
+你是傻还是装傻？ 我都说了， 去弄艘双桅纵帆船， 实在不行双桅横帆船也行， 不然这买卖就黄了。 
 }
 Smuggler_Agent_dialog_117_m {
-唉，这世上怎么会有这么蠢的人……
+唉， 这世上怎么会有这么蠢的人…… 
 }
 Smuggler_Agent_dialog_117_f {
-唉，这世上怎么会有这么蠢的人……
+唉， 这世上怎么会有这么蠢的人…… 
 }
 Smuggler_Agent_dialog_118_m {
-行，明白了。我换完船再过来。
+行， 明白了。 我换完船再过来。 
 }
 Smuggler_Agent_dialog_118_f {
-行，明白了。我换完船再过来。
+行， 明白了。 我换完船再过来。 
 }
 Smuggler_Agent_dialog_119_m {
-行，我明白，就是想确认一下。
+行， 我明白， 就是想确认一下。 
 }
 Smuggler_Agent_dialog_119_f {
-都明白了，我只是想再确认一下。
+都明白了， 我只是想再确认一下。 
 }
 Smuggler_Agent_dialog_120_m {
-不，俺不是傻子，就是贪心。以为也许有点变化。要是能多带两艘pinnace就好了……
+不， 我不是傻子， 就是贪心。 以为也许有点变化。 要是能多带两艘皮纳斯帆船就好了…… 
 }
 Smuggler_Agent_dialog_120_f {
-不是傻子，只是太贪了。还以为情况变了呢。要是能带走，我肯定再抢两艘pinnace……
+不是傻子， 只是太贪了。 还以为情况变了呢。 要是能带走， 我肯定再抢两艘皮纳斯帆船…… 
 }
 Smuggler_Agent_dialog_121 {
-你自己也看得出来吧——就这么飘来飘去的……
+你自己也看得出来吧——就这么飘来飘去的…… 
 }
 Smuggler_Agent_dialog_122_m {
-不好意思，小子，俺们现在有事要忙。过几天再来吧。
+不好意思， 小子， 我们现在有事要忙。 过几天再来吧。 
 }
 Smuggler_Agent_dialog_122_f {
-不好意思，姑娘，俺们现在有事要忙。过几天再来吧。
+不好意思， 姑娘， 我们现在有事要忙。 过几天再来吧。 
 }
 Smuggler_Agent_dialog_123 {
-可惜……
+可惜…… 
 }
 Smuggler_Agent_dialog_124 {
-你是不是该先把一件事做完，再去干别的？
+你是不是该先把一件事做完， 再去干别的？ 
 }
 Smuggler_Agent_dialog_125 {
-也许你说得对。
+也许你说得对。 
 }
 Smuggler_Agent_dialog_126 {
-我知道你是可以合作的人。我们会在一个叫@<GetConvertStr>的地方等你。
+我知道你是可以合作的人。 我们会在一个叫@<GetConvertStr>的地方等你。 
 }
 Smuggler_Agent_dialog_127 {
-嗯……也许真有人愿意买。我们会在叫做@<GetConvertStr>的地方等你。
+嗯…… 也许真有人愿意买。 我们会在叫做@<GetConvertStr>的地方等你。 
 }
 Smuggler_Agent_dialog_128 {
-行，那回头见。
+行， 那回头见。 
 }
 Smuggler_Agent_dialog_129 {
-今天不做生意了，明天再来吧。
+今天不做生意了， 明天再来吧。 
 }
 Smuggler_Agent_dialog_130 {
-行。
+行。 
 }
 Smuggler_Agent_dialog_131 {
-你做了这些事，还觉得有人愿意跟你合作？你该庆幸我们还没派人取你性命。滚吧！
+你做了这些事， 还觉得有人愿意跟你合作？ 你该庆幸我们还没派人取你性命。 滚吧！ 
 }
 Smuggler_Agent_dialog_132 {
-唉……看来老子注定当不了走私贩了。
+唉…… 看来我注定当不了走私贩了。 
 }
 Smuggler_Agent_dialog_133 {
-今天没别的交易了，明天再来吧。
+今天没别的交易了， 明天再来吧。 
 }
 Smuggler_Agent_dialog_134 {
-行。
+行。 
 }
 Smuggler_Agent_dialog_135_m {
-不好意思，小子，俺们现在有事要忙。过几天再来吧。
+不好意思， 小子， 我们现在有事要忙。 过几天再来吧。 
 }
 Smuggler_Agent_dialog_135_f {
-不好意思，姑娘，俺们现在有事要忙。过几天再来吧。
+不好意思， 姑娘， 我们现在有事要忙。 过几天再来吧。 
 }
 Smuggler_Agent_dialog_136 {
-可惜……
+可惜…… 
 }
 Smuggler_Agent_dialog_137 {
-咱们不是已经说好了吗？
+咱们不是已经说好了吗？ 
 }
 Smuggler_Agent_dialog_138 {
-对，没错！
+对， 没错！ 
 }
 Smuggler_Agent_dialog_139_m {
-钱带来了没？
+钱带来了没？ 
 }
 Smuggler_Agent_dialog_139_f {
-钱带来了没？
+钱带来了没？ 
 }
 Smuggler_Agent_dialog_140 {
-是。
+是。 
 }
 Smuggler_Agent_dialog_141_m {
-我改主意了……
+我改主意了…… 
 }
 Smuggler_Agent_dialog_141_f {
-我改主意了……
+我改主意了…… 
 }
 Smuggler_Agent_dialog_142 {
-还没有。
+还没有。 
 }
 Smuggler_Agent_dialog_143 {
-我已经把该说的都说了。
+我已经把该说的都说了。 
 }
 Smuggler_Agent_dialog_144 {
-没错。
+没错。 
 }
 Smuggler_Agent_dialog_145_m {
-我改主意了……
+我改主意了…… 
 }
 Smuggler_Agent_dialog_145_f {
-我改主意了……
+我改主意了…… 
 }
 Smuggler_Agent_dialog_146 {
-今天帮不了你。过几天再来吧，到时候也许会有点什么。
+今天帮不了你。 过几天再来吧， 到时候也许会有点什么。 
 }
 Smuggler_Agent_dialog_147 {
-可惜。
+可惜。 
 }
 Smuggler_Agent_dialog_148 {
-那行，俺们可以把你送到@<GetConvertStr>，就在@<XI_ConvertString>附近，费用是@<FindMoneyString>。@<FindDaysString>内把钱带来。船只会在叫做@<GetConvertStr>的地方等你一天。
+那行， 我们可以把你送到@<GetConvertStr>， 就在@<XI_ConvertString>附近， 费用是@<FindMoneyString>。 @<FindDaysString>内把钱带来。 船只会在叫做@<GetConvertStr>的地方等你一天。 
 }
 Smuggler_Agent_dialog_149 {
-行，这样可以。
+行， 这样可以。 
 }
 Smuggler_Agent_dialog_150 {
-不用，谢谢。
+不用， 谢谢。 
 }
 Smuggler_Agent_dialog_151 {
-今天帮不了你。过几天再来吧，说不定有新消息。
+今天帮不了你。 过几天再来吧， 说不定有新消息。 
 }
 Smuggler_Agent_dialog_152 {
-可惜。
+可惜。 
 }
 Smuggler_Agent_dialog_153 {
-你干了这些事，还觉得有人愿意跟你合作？你该庆幸我们还没派人取你性命。现在，滚！
+你干了这些事， 还觉得有人愿意跟你合作？ 你该庆幸我们还没派人取你性命。 现在， 滚！ 
 }
 Smuggler_Agent_dialog_154 {
-唉……看来是没这个缘分。
+唉…… 看来是没这个缘分。 
 }
 Smuggler_Agent_dialog_155 {
-不行，咱们只带一个人。
+不行， 咱们只带一个人。 
 }
 Smuggler_Agent_dialog_156 {
-@<RandSwear> 用不着！
+@<RandSwear>用不着！ 
 }
 Smuggler_Agent_dialog_157 {
-你要自己的船干嘛？不，这事我们可不管。
+你要自己的船干嘛？ 不， 这事我们可不管。 
 }
 Smuggler_Agent_dialog_158 {
-看来是没这个命了……
+看来是没这个命了…… 
 }
 Smuggler_Agent_dialog_159 {
-那你随意吧……
+那你随意吧…… 
 }
 Smuggler_Agent_dialog_160 {
-很高兴和你合作。船已经等着了，别迟到。
+很高兴和你合作。 船已经等着了， 别迟到。 
 }
 Smuggler_Agent_dialog_161 {
-我尽量。
+我尽量。 
 }
 Smuggler_Agent_dialog_162 {
-看起来你手头有点紧啊。
+看起来你手头有点紧啊。 
 }
 Smuggler_Agent_dialog_163 {
-可惜，我晚点再来。
+可惜， 我晚点再来。 
 }
 Smuggler_Agent_dialog_164 {
-我的老朋友Snakeman Young，曾经是个海盗，现在在Martinique的Le François开了一家酒馆。他正在找一个在Brethren of the Coast中不太出名的海盗船长，有点事想托付。我答应帮他找这样的人。所以我建议你去Martinique，和我的朋友聊聊。以我对他的了解，你肯定不会白跑一趟。
+我的老朋友“蛇人”扬， 曾经是个海盗， 现在在马提尼克的勒弗朗索瓦开了一家酒馆。 他正在找一个在海岸同盟中不太出名的海盗船长， 有点事想托付。 我答应帮他找这样的人。 所以我建议你去马提尼克， 和我的朋友聊聊。 以我对他的了解， 你肯定不会白跑一趟。 
 }
 Smuggler_Agent_dialog_165 {
-他想让你干什么活？你知道点什么吗？
+他想让你干什么活？ 你知道点什么吗？ 
 }
 Smuggler_Agent_dialog_166 {
-不知道。我只知道这活儿得找没有政府私掠许可证的自由船长……你应该明白为什么。\nSnakeman最近变得很神秘，你去找他聊聊，他会跟你详细说清楚。
+不知道。 我只知道这活儿得找没有政府私掠许可证的自由船长…… 你应该明白为什么。 \n“蛇人”最近变得很神秘， 你去找他聊聊， 他会跟你详细说清楚。 
 }
 Smuggler_Agent_dialog_167 {
-行，俺一定会去找他。
+行， 我一定会去找他。 
 }
 Smuggler_Agent_dialog_168_m {
-嗯……你知道吗，老子自己的麻烦都够多了，没空再管别人的事。连你朋友到底想让我干啥都不知道，就让我去Martinique？抱歉，这事我不干。
+嗯…… 你知道吗， 我自己的麻烦都够多了， 没空再管别人的事。 连你朋友到底想让我干什么都不知道， 就让我去马提尼克？ 抱歉， 这事我不干。 
 }
 Smuggler_Agent_dialog_168_f {
-嗯……你知道吗，老子自己麻烦都够多了，没空再管别人的事。连你朋友到底想让我干啥都不知道，就让我去Martinique？抱歉，这事儿我不干。
+嗯…… 你知道吗， 我自己麻烦都够多了， 没空再管别人的事。 连你朋友到底想让我干什么都不知道， 就让我去马提尼克？ 抱歉， 这事儿我不干。 
 }
 Smuggler_Agent_dialog_169 {
-可别拖太久来找我，Captain。
+可别拖太久来找我， 船长。 
 }
 Smuggler_Agent_dialog_170 {
-当然，你的提议让我很感兴趣。祝你一切顺利，好运！
+当然， 你的提议让我很感兴趣。 祝你一切顺利， 好运！ 
 }
 Smuggler_Agent_dialog_171 {
-那咱们就把这话当没说过吧。告辞了。
+那咱们就把这话当没说过吧。 告辞了。 
 }
 Smuggler_Agent_dialog_172 {
-一切顺利。
+一切顺利。 
 }
 Smuggler_Agent_dialog_173 {
-你还真行啊……要是有利可图，那就直接送到目的地。
+你还真行啊…… 要是有利可图， 那就直接送到目的地。 
 }
 Smuggler_Agent_dialog_174 {
-去商店？
+去商店？ 
 }
 Smuggler_Agent_dialog_175 {
-去坐牢？
+去坐牢？ 
 }
 Smuggler_Agent_dialog_176 {
-你？
+你？ 
 }
 Smuggler_Agent_dialog_177 {
-去给Davy Jones卖命？
+去给戴维.琼斯卖命？ 
 }
 Smuggler_Agent_dialog_178 {
-这个嘛……简单说吧，你去找各个工坊的头头聊聊，他们总是缺人手，嘿嘿。
+这个嘛…… 简单说吧， 你去找各个工坊的头头聊聊， 他们总是缺人手， 嘿嘿。 
 }
 Smuggler_Agent_dialog_179 {
-那你推荐哪个？
+那你推荐哪个？ 
 }
 Smuggler_Agent_dialog_180_m {
-哎，别想了……免费的建议到此为止，朋友。该掏钱了……不赊账。
+哎， 别想了…… 免费的建议到此为止， 朋友。 该掏钱了…… 不赊账。 
 }
 Smuggler_Agent_dialog_180_f {
-哎，别想了，姑娘。免费的建议到此为止，拿钱来……这儿不赊账。
+哎， 别想了， 姑娘。 免费的建议到此为止， 拿钱来…… 这儿不赊账。 
 }
 Smuggler_Agent_dialog_181 {
-我没那么多钱，但我会再来的。
+我没那么多钱， 但我会再来的。 
 }
 Smuggler_Agent_dialog_182 {
-没你也行，咱们自己能搞定。
+没你也行， 咱们自己能搞定。 
 }
 Smuggler_Agent_dialog_183 {
-给你这五千皮阿斯特——希望它们值这个价。
+给你这5,000比索——希望它们值这个价。 
 }
 Smuggler_Agent_dialog_184 {
-听说最近有一群奴隶从Barbados种植园逃出来了。不过，Orange Lavas那地方你还是别去，省得惹麻烦。
+听说最近有一群奴隶从巴巴多斯种植园逃出来了。 不过， 奥兰治-火山岩矿那地方你还是别去， 省得惹麻烦。 
 }
 Smuggler_Agent_dialog_185 {
-那儿不是矿井塌了，活儿干不下去，就是苦力们累死成片。你只能不断往里送新命。真是个要命的鬼地方，见鬼去吧。
+那儿不是矿井塌了， 活儿干不下去， 就是苦力们累死成片。 你只能不断往里送新命。 真是个要命的鬼地方， 见鬼去吧。 
 }
 Smuggler_Agent_dialog_186 {
-这地方正合我意……谢谢！
+这地方正合我意…… 谢谢！ 
 }

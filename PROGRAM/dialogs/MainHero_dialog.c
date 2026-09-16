@@ -113,6 +113,127 @@ void ProcessDialogEvent()
 			DoReloadCharacterToLocation("SanGabrielMechanic", "reload", "reload1");
 		break;
 
+		// ле Баск
+		case "Shadow_of_a_big_deal_1":
+			dialog.text = StringFromKey("LeBasque_1");
+			link.l1 = StringFromKey("LeBasque_2");
+			link.l1.go = "Shadow_of_a_big_deal_2";
+		break;
+
+		case "Shadow_of_a_big_deal_2":
+			dialog.text = StringFromKey("LeBasque_3");
+			link.l1 = StringFromKey("LeBasque_4");
+			link.l1.go = "Shadow_of_a_big_deal_2_exit";
+		break;
+
+		case "Shadow_of_a_big_deal_2_exit":
+			AddDialogExitQuest("Shadow_of_a_big_deal_10");
+			NextDiag.CurrentNode = NextDiag.TempNode;
+			DialogExit_Self();
+		break;
+
+		case "Shadow_of_a_big_deal_3":
+			dialog.text = StringFromKey("LeBasque_5");
+			link.l1 = StringFromKey("LeBasque_6");
+			link.l1.go = "Shadow_of_a_big_deal_3_exit";
+		break;
+
+		case "Shadow_of_a_big_deal_3_exit":
+			AddDialogExitQuest("Shadow_of_a_big_deal_23");
+			NextDiag.CurrentNode = NextDiag.TempNode;
+			DialogExit_Self();
+		break;
+
+		case "Shadow_of_a_big_deal_4":
+			dialog.text = StringFromKey("LeBasque_7");
+			link.l1 = StringFromKey("LeBasque_8");
+			link.l1.go = "Shadow_of_a_big_deal_4_exit";
+		break;
+
+		case "Shadow_of_a_big_deal_4_exit":
+			AddDialogExitQuest("Shadow_of_a_big_deal_30");
+			NextDiag.CurrentNode = NextDiag.TempNode;
+			DialogExit_Self();
+		break;
+
+		case "Shadow_of_a_big_deal_5":
+			dialog.text = StringFromKey("LeBasque_9");
+			link.l1 = StringFromKey("LeBasque_10");
+			link.l1.go = "Shadow_of_a_big_deal_5_exit";
+		break;
+
+		case "Shadow_of_a_big_deal_5_exit":
+			AddDialogExitQuest("Shadow_of_a_big_deal_32");
+			NextDiag.CurrentNode = NextDiag.TempNode;
+			DialogExit_Self();
+		break;
+
+		// Ле Баск. Третий квест.
+		case "Hunting_huntsman_1":
+			dialog.text = "...";
+			link.l1 = StringFromKey("MainHero_dialog_143");
+			link.l1.go = "Hunting_huntsman_1_exit";
+		break;
+
+		case "Hunting_huntsman_1_exit":
+			AddDialogExitQuest("Hunting_huntsman_8");
+			NextDiag.CurrentNode = NextDiag.TempNode;
+			DialogExit_Self();
+		break;
+
+		case "Hunting_huntsman_2":
+			dialog.text = "...";
+			link.l1 = StringFromKey("MainHero_dialog_144");
+			link.l1.go = "Hunting_huntsman_2_exit";
+		break;
+		
+		case "Hunting_huntsman_2_exit":
+			AddDialogExitQuest("Hunting_huntsman_61");
+			NextDiag.CurrentNode = NextDiag.TempNode;
+			DialogExit_Self();
+		break;
+
+		case "Hunting_huntsman_3":
+dialog.text = "...";
+link.l1 = StringFromKey("MainHero_dialog_145");
+link.l1.go = "Hunting_huntsman_3_exit";
+break;
+
+case "Hunting_huntsman_3_exit":
+StartBattleLandInterface(); // вкл интерфейс
+InterfaceStates.Buttons.Save.enable = 0; // нельзя сохраняться
+LAi_SetPlayerType(pchar);
+AddDialogExitQuest("Hunting_huntsman_70");
+			NextDiag.CurrentNode = NextDiag.TempNode;
+			DialogExit_Self();
+break;
+
+// Ле Баск. Четвертый квест.
+		case "Brides_Tortuga_1":
+			dialog.text = "...";
+			link.l1 = StringFromKey("MainHero_dialog_146");
+			link.l1.go = "Brides_Tortuga_1_exit";
+		break;
+
+		case "Brides_Tortuga_1_exit":
+			AddDialogExitQuest("Brides_Tortuga_69");
+			NextDiag.CurrentNode = NextDiag.TempNode;
+			DialogExit_Self();
+		break;
+
+		case "Brides_Tortuga_2":
+		PlaySound("Quest\LeBask\Bask7.mp3");
+			dialog.text = StringFromKey("MainHero_dialog_147");
+			link.l1 = StringFromKey("MainHero_dialog_148");
+			link.l1.go = "Brides_Tortuga_2_exit";
+		break;
+
+		case "Brides_Tortuga_2_exit":
+			AddDialogExitQuest("Brides_Tortuga_77");
+			NextDiag.CurrentNode = NextDiag.TempNode;
+			DialogExit_Self();
+		break;
+
 		//==================================================================================================================
 		//	Французский сюжет
 		//==================================================================================================================
@@ -214,7 +335,7 @@ void ProcessDialogEvent()
 				AddDialogExitQuest("FL1_s49c");
 			}
 			//===> Квест Кондотьера
-			if (CheckAttribute(pchar, "questTemp.Headhunter") && pchar.questTemp.Headhunter == "halen_room")
+			if (CheckAttrValue(pchar, "questTemp.Headhunter", "halen_room"))
 			{
 				dialog.text = StringFromKey("MainHero_dialog_25");
 				link.l1 = "...";
@@ -441,8 +562,8 @@ void ProcessDialogEvent()
 				{
 					chr = GetCharacter(sti(pchar.Fellows.Passengers.boatswain));
 					if (or(CheckCharacterPerk(pchar, "LootCollection") || CheckCharacterPerk(chr, "LootCollection"),
-					 	CheckCharacterPerk(pchar, "Mentor") || CheckCharacterPerk(chr, "Mentor")) &&
-					 	 chr.location != pchar.location && pchar.location != Get_My_Cabin())
+					CheckCharacterPerk(pchar, "Mentor") || CheckCharacterPerk(chr, "Mentor")) &&
+					chr.location != pchar.location && pchar.location != Get_My_Cabin())
 					{
 						Link.l9 = StringFromKey("MainHero_dialog_63", GetFullName(chr));
 						Link.l9.go = "TalkSelf_Looting_BoatswainCall";
@@ -503,12 +624,23 @@ void ProcessDialogEvent()
 			sType = rItm.chargetype;
 			iTemp = KZ|Symbol(sType, ",");
 
+			int iCurLen = strlen(&sType);
+			int iCurPos = 0;
+			int iCurEnd;
+
 			for (i = 0; i <= iTemp; i++)
 			{
-				sAttr = sType;
+				iCurEnd = findSubStr(&sType, ",", iCurPos);
 
-				if (iTemp > 0)
-					sAttr = GetSubStr(sType, ",", i);
+				if (iCurEnd < 0)
+					iCurEnd = iCurLen;
+
+				sAttr = "";
+
+				if (iCurEnd > iCurPos)
+					sAttr = strcut(&sType, iCurPos, iCurEnd - 1);
+
+				iCurPos = iCurEnd + 1;
 
 				if (sAttr != "")
 				{
@@ -548,7 +680,7 @@ void ProcessDialogEvent()
 			TEV.CT.TEMP0 = GetConvertStr(rItm.name, "ItemsDescribe.txt");
 			sAttr = rItm.chargetype;
 
-			if (KZ|Symbol(sAttr, ",") > 0)
+			if (findSubStr(&sAttr, ",", 0) >= 0)
 				sAttr = GetSubStr(rItm.chargetype, ",", sti(TEV.CT.SetGunBullets));
 
 			TEV.CT.TEMP1 = rItm.type.(sAttr).bullet;
@@ -920,6 +1052,18 @@ void ProcessDialogEvent()
 				LogSound_WithNotify(StringFromKey("InfoMessages_142", (sti(pchar.money) - iTemp)), "Took_item", "Money");
 
 			DialogExit_Self();
+		break;
+
+		case "CBL_TalkWithDiedDiego":
+			dialog.text = "...";
+			Link.l1 = StringFromKey("Bishop_1088");
+			link.l1.go = "CBL_TalkWithDiedDiego_1";
+		break;
+
+		case "CBL_TalkWithDiedDiego_1":
+			AddDialogExitQuestFunction("CapBloodLine_SonsTrable_10");
+			DialogExit_Self();
+			locCameraResetState();
 		break;
 
 		case "callCompanionToCabin":    //HardCoffee приглашения в каюту

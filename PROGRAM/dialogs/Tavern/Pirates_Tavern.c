@@ -19,6 +19,12 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 						StringFromKey("Pirates_Tavern_11"),
 						StringFromKey("Pirates_Tavern_12"), npchar, Dialog.CurrentNode);
 			link.l1.go = "exit";
+			// Линейка Ле Баска. Третий квест.
+			if (pchar.quest.Hunting_huntsman == "Talk_Tavern")
+			{
+                link.l3 = StringFromKey("Pirates_Tavern_61");
+                link.l3.go = "Hunting_huntsman_1";
+            }
 			// ==> Проверяем поле состояния квестов.
 			if (pchar.questTemp.State == "SeekBible_toBermudes")
 			{
@@ -60,6 +66,26 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 			}
 		// <== Проверяем поле состояния квестов.
 		break;
+
+		// Ле Баск. Третий квест.
+		case "Hunting_huntsman_1":
+			dialog.text = StringFromKey("Pirates_Tavern_62");
+			link.l1 = StringFromKey("Pirates_Tavern_63");
+			link.l1.go = "Hunting_huntsman_2";
+		break;
+
+		case "Hunting_huntsman_2":
+			dialog.text = StringFromKey("Pirates_Tavern_64");
+			link.l1 = StringFromKey("Pirates_Tavern_65");
+			link.l1.go = "Hunting_huntsman_2_exit";
+		break;
+
+		case "Hunting_huntsman_2_exit":
+			RemoveLandQuestmark_Main(npchar, "Hunting_huntsman");
+			AddDialogExitQuest("Hunting_huntsman_26");
+			dialogexit();
+		break;
+
 		//шебека Синяя Птица
 		case "BlueBird_1":
 			dialog.text = NPCStringReactionRepeat(

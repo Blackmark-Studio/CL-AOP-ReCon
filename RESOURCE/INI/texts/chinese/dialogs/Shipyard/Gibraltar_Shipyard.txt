@@ -1,0 +1,39 @@
+Gibraltar_Shipyard_1 {
+什么问题？ 
+}
+Gibraltar_Shipyard_2 {
+你想干什么？ 
+}
+Gibraltar_Shipyard_3 {
+@<RandPhraseSimple>
+}
+Gibraltar_Shipyard_4 {
+前阵子你试图问我个问题…… 
+}
+Gibraltar_Shipyard_5 {
+在我自己的船坞， 甚至整个城里， 我还真没见过这么一致好奇的人。 
+}
+Gibraltar_Shipyard_6 {
+这都什么问题啊？ 我的活儿就是造船， 赶紧干正事吧。 
+}
+Gibraltar_Shipyard_7_m {
+我改主意了…… 
+}
+Gibraltar_Shipyard_7_f {
+我改变主意了…… 
+}
+Gibraltar_Shipyard_8 {
+我现在没什么可说的。 
+}
+Gibraltar_Shipyard_9 {
+@<RandPhraseSimple>
+}
+Gibraltar_Shipyard_10 {
+嗯， 我的记忆好像出了点问题…… 
+}
+Gibraltar_Shipyard_11 {
+嗯， 不过…… 
+}
+Gibraltar_Shipyard_12 {
+咱们…… 
+}

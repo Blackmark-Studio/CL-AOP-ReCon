@@ -411,7 +411,10 @@ string GenerateMerchant()
     ref CurTpl;
     string reztext, tresult, sdirect;
     string HomeColony = All_GetColony();
-    int iNation = sti(Colonies[FindColony(HomeColony)].nation);
+    // KZ > FreeStores
+    int iHomeColony = FindColony(HomeColony);
+    if (iHomeColony < 0 || Colonies[iHomeColony].nation == "none") return NoRumourText(rand(SIMPLE_RUMOUR_NUM - 1));
+    int iNation = sti(Colonies[iHomeColony].nation);
     if ( MerchantPrepare(iNation) )
     {
 

@@ -262,3 +262,12 @@ na twojej drodze pojawi się zły znak, strzeż się złego oka i trzymaj blisko
 Gipsy_68 {
 Szczęśliwy traf czeka na ciebie niemal tuż za plecami. Szukaj tego, co samo wpada w ręce, i nie gódź się na pogoń za niemożliwym.
 }
+Gipsy_69 {
+@<TimeGreeting>, @<pchar>. Bardzo się cieszę, że cię widzę.
+}
+Gipsy_70 {
+@<TimeGreeting>, @<pchar>. Bardzo się cieszę, że cię widzę.
+}
+Gipsy_71 {
+@<TimeGreeting>, @<npchar>. Muszę już iść.
+}

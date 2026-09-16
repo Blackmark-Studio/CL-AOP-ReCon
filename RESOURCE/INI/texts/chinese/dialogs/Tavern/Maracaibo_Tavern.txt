@@ -1,63 +1,63 @@
 Maracaibo_Tavern_1 {
-什么问题？
+什么问题？ 
 }
 Maracaibo_Tavern_2 {
-有什么事需要俺帮忙吗，@<GetAddress_Form>?
+有什么事需要我帮忙吗， @<GetAddress_Form>?
 }
 Maracaibo_Tavern_3 {
 @<RandPhraseSimple>
 }
 Maracaibo_Tavern_4 {
-前不久你还想问我个问题，@<GetAddress_Form>……
+前不久你还想问我个问题， @<GetAddress_Form>…… 
 }
 Maracaibo_Tavern_5 {
-你今天已经第三次提这事了……
+你今天已经第三次提这事了…… 
 }
 Maracaibo_Tavern_6 {
-咱们又要问问题了？
+咱们又要问问题了？ 
 }
 Maracaibo_Tavern_7_m {
-我改变主意了……
+我改变主意了…… 
 }
 Maracaibo_Tavern_7_f {
-我改变主意了……
+我改变主意了…… 
 }
 Maracaibo_Tavern_8 {
-我现在没什么好说的。
+我现在没什么好说的。 
 }
 Maracaibo_Tavern_9 {
 @<RandPhraseSimple>
 }
 Maracaibo_Tavern_10 {
-嗯，我的记忆好像出了点问题……
+嗯， 我的记忆好像出了点问题…… 
 }
 Maracaibo_Tavern_11 {
-看来第三次总算成了吧……
+看来第三次总算成了吧…… 
 }
 Maracaibo_Tavern_12 {
-没事，没什么要问的……
+没事， 没什么要问的…… 
 }
 Maracaibo_Tavern_13_m {
-我想问你点事。
+我想问你点事。 
 }
 Maracaibo_Tavern_13_f {
-我想问你点事。
+我想问你点事。 
 }
 Maracaibo_Tavern_14 {
-你具体想了解什么？
+你具体想了解什么？ 
 }
 Maracaibo_Tavern_15 {
-听说Maracaibo被什么诅咒缠上了，这里到底发生了什么？
+听说马拉开波被什么诅咒缠上了， 这里到底发生了什么？ 
 }
 Maracaibo_Tavern_16 {
-Maracaibo？你看这儿一切都挺好。还有个Des Moines，不过那地方太偏了，啥事都没发生过。倒是有点奇怪——平时总有两三个从那儿来的渔民在我酒馆里晃悠，可最近一个都没见着。
+马拉开波？ 你看这儿一切都挺好。 还有个得梅因， 不过那地方太偏了， 什么事都没发生过。 倒是有点奇怪——平时总有两三个从那儿来的渔民在我酒馆里晃悠， 可最近一个都没见着。 
 }
 Maracaibo_Tavern_17 {
-这Des Moines是啥？
+这得梅因是什么？ 
 }
 Maracaibo_Tavern_18 {
-我们海湾里的一个渔村，从Cape of Delusive Hopes那边过去就能到。
+我们海湾里的一个渔村， 从失望角那边过去就能到。 
 }
 Maracaibo_Tavern_19 {
-虽然消息不多，但还是谢谢你。
+虽然消息不多， 但还是谢谢你。 
 }

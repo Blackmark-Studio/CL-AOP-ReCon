@@ -1,0 +1,27 @@
+Start_dialog_9 {
+Witaj, kolego. Masz dobry statek, solidny, a załogę też rozsądną — od razu widać. 
+}
+Start_dialog_10 {
+Czas to pieniądz, przyjacielu. Mów szybko, czego chcesz.
+}
+Start_dialog_11 {
+Niedawno pojawił się tu pewien worek pieniędzy. Zbiera flotyllę do jakiegoś wielkiego i diabelnie dochodowego przedsięwzięcia. I szuka doświadczonych kapitanów na porządnych okrętach. Takich jak twój.
+}
+Start_dialog_12 {
+No proszę. I co z tego?
+}
+Start_dialog_13 {
+Pani Fortuna wypięła się na mnie tyłkiem! Moją szkunę nieźle poturbowali Hiszpanie w ostatniej potyczce: połowę dział można od razu wyrzucić za burtę, a z załogi zostały strzępy. Ledwie ten typ spojrzał na mój statek — od razu zrobił zwrot przez sztag. Jemu, widzisz, potrzeba wilków morskich, a nie pobitych kundli.
+}
+Start_dialog_14 {
+Chyba nie zatrzymałeś mnie tylko po to, żeby narzekać na los?
+}
+Start_dialog_15 {
+To prawda. Twój statek jest w pełnej gotowości, załoga też — ciebie raczej nie odrzuci. Chcesz zarobić trochę złota — idź prosto do tawerny, do karczmarza. Jest łącznikiem tego bogacza: sam wybiera kapitanów i zna wszystkie szczegóły.
+}
+Start_dialog_16 {
+A ty, rozumiem, postanowiłeś podzielić się ze mną taką okazją wyłącznie z dobroci serca?
+}
+Start_dialog_17 {
+Wierz albo nie, ale nie jestem zawistny. Tylko jeśli jeszcze się spotkamy — będziesz mi coś winien.
+}

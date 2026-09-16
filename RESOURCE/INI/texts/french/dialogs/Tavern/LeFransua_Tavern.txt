@@ -365,7 +365,7 @@ LeFransua_Tavern_104 {
 Pouvez-vous me dire quelque chose sur l’endroit où se trouve ce... Rat?
 }
 LeFransua_Tavern_105 {
-Malheureusement, pas grand-chose. Je ne peux même pas dire sur quel navire il navigue—Rat a l’habitude de changer souvent de bâtiment pour brouiller les pistes. Tout ce que je peux faire, c’est donner les ports d’où sont partis les trois derniers navires disparus, et auxquels nous pensons que Rat est lié. Peut-être vaudrait-il la peine d’examiner les circonstances qui ont précédé ces événements malheureux dans ces endroits.\nLes villes sont : Willemstad sur Curaçao, Cartagena sur le Main, et Port of Spain sur l’île de Trinidad et Tobago.
+Malheureusement, pas grand-chose. Je ne peux même pas dire sur quel navire il navigue—Rat a l’habitude de changer souvent de bâtiment pour brouiller les pistes. Tout ce que je peux faire, c’est donner les ports d’où sont partis les trois derniers navires disparus, et auxquels nous pensons que Rat est lié. Peut-être vaudrait-il la peine d’examiner les circonstances qui ont précédé ces événements malheureux dans ces endroits.\nLes villes sont : Willemstad sur Curaçao, Cartagena sur le Main, et Port of Spain sur l’île de Trinidad.
 }
 LeFransua_Tavern_106 {
 Ça, c’est quelque chose! Je crois qu’il est temps que je parte pour mon voyage.

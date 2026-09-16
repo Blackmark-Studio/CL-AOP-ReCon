@@ -20,6 +20,12 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 				link.l1 = StringFromKey("Tortuga_Tavern_9");
 				link.l1.go = "Tortuga_ratT_1";
 			}
+			// Линейка Ле Баска. Начало.
+			if (CheckAttrValue(pchar, "quest.Shadow_of_a_big_deal", "Talk_Tavern"))
+			{
+                link.l3 = StringFromKey("Tortuga_Tavern_92");
+                link.l3.go = "Shadow_of_a_big_deal_1";
+            }
 			// ==> Проверяем поле состояния квестов.
 			switch (pchar.questTemp.State)
 			{
@@ -58,6 +64,72 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 			}
 		// <== Проверяем поле состояния квестов.
 		break;
+
+		// Ле Баск. Начало.
+		case "Shadow_of_a_big_deal_1":
+			dialog.text = StringFromKey("Tortuga_Tavern_93");
+			link.l1 = StringFromKey("Tortuga_Tavern_94", pchar);
+			link.l1.go = "Shadow_of_a_big_deal_2";
+		break;
+
+		case "Shadow_of_a_big_deal_2":
+			dialog.text = StringFromKey("Tortuga_Tavern_95");
+			link.l1 = StringFromKey("Tortuga_Tavern_96");
+			link.l1.go = "Shadow_of_a_big_deal_3";
+		break;
+
+		case "Shadow_of_a_big_deal_3":
+			dialog.text = StringFromKey("Tortuga_Tavern_97");
+			link.l1 = "...";
+			link.l1.go = "Shadow_of_a_big_deal_3_exit";
+		break;
+
+		case "Shadow_of_a_big_deal_3_exit":
+			AddDialogExitQuest("Shadow_of_a_big_deal_2");
+			dialogexit();
+		break;
+
+		case "Shadow_of_a_big_deal_4":
+			dialog.text = StringFromKey("Tortuga_Tavern_98");
+			link.l1 = StringFromKey("Tortuga_Tavern_99");
+			link.l1.go = "Shadow_of_a_big_deal_5";
+		break;
+
+		case "Shadow_of_a_big_deal_5":
+			dialog.text = StringFromKey("Tortuga_Tavern_100");
+			link.l1 = StringFromKey("Tortuga_Tavern_101");
+			link.l1.go = "Shadow_of_a_big_deal_6_exit";
+		break;
+
+		case "Shadow_of_a_big_deal_6_exit":
+			AddDialogExitQuest("Shadow_of_a_big_deal_6");
+			dialogexit();
+		break;
+
+		case "Shadow_of_a_big_deal_7":
+			dialog.text = StringFromKey("Tortuga_Tavern_102");
+			link.l1 = StringFromKey("Tortuga_Tavern_103");
+			link.l1.go = "Shadow_of_a_big_deal_8";
+		break;
+
+		case "Shadow_of_a_big_deal_8":
+			dialog.text = StringFromKey("Tortuga_Tavern_104");
+			link.l1 = StringFromKey("Tortuga_Tavern_105");
+			link.l1.go = "Shadow_of_a_big_deal_10_exit";
+		break;
+
+		case "Shadow_of_a_big_deal_10_exit":
+			AddDialogExitQuest("Shadow_of_a_big_deal_24");
+			dialogexit();
+		break;
+
+case "":
+dialog.text = "";
+link.l1 = "";
+link.l1.go = "";
+break;
+
+
 		//===================================== Голл. линейка, квест №3 =========================================
 		case "Step_H3_1":
 			dialog.text = NPCStringReactionRepeat(
@@ -259,7 +331,7 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 			link.l1 = StringFromKey("Tortuga_Tavern_91", npchar.name);
 			link.l1.go = "exit";
 			AddQuestRecord("Slavetrader", "21_8");
-			pchar.questTemp.Slavetrader = "wait1";//затычка
+			//pchar.questTemp.Slavetrader = "wait1";//затычка // < Затирает FindRatTortuga и херит подсказку Tortuga_PortMan
 
 			RemoveLandQuestmark_Main(npchar, "Slavetrader");
 		break;

@@ -152,7 +152,7 @@ bool LAi_CreateShoreChest(ref location)
 		{
 			string sModel = "chest_" + (idRand(location.id + "sModel", 2) + 1);
 
-			if (!FindFile("RESOURCE/MODELS/" + location.filespath.models, sModel + ".gm", "*.gm", true))
+			if (!XI_CheckFolder("RESOURCE/MODELS/" + location.filespath.models + "/" + sModel + ".gm"))
 			{
 				trace("LAi_CreateShoreChest > Can't find geometry file " + sModel + " in RESOURCE\MODELS\" + location.filespath.models);
 				return false;
@@ -562,13 +562,14 @@ bool LAi_CreateEncounters(ref location)
 			if (num < 2) return false;
 			if (CheckAttribute(pchar, "GenQuest.EncGirl")) return false;
 			if (!CheckAttribute(location, "locators.reload.reloadW_back"))
-			{			
+			{
 				// Генерим ранг
 				if (sti(pchar.rank) > 6)
 				{
 					if (sti(pchar.rank) > 20) iRank = sti(pchar.rank) + sti(MOD_SKILL_ENEMY_RATE*2.5/num);
 					else iRank = sti(pchar.rank) + sti(MOD_SKILL_ENEMY_RATE*1.6/num);
 				}
+				else iRank = sti(pchar.rank);
 				
 				LAi_group_Delete("EnemyFight");
 				LAi_group_Delete("LandEncGroup");
@@ -713,6 +714,10 @@ bool LAi_CreateEncounters(ref location)
 				pchar.quest.Enc_FriendGirl_after.win_condition.l1 = "NPC_Death";
 				pchar.quest.Enc_FriendGirl_after.win_condition.l1.character = "FriendGirl";
 				pchar.quest.Enc_FriendGirl_after.win_condition = "Enc_FriendGirl_after";
+				// > ушли из локации, не полезли в колодец - убираем за собой
+				pchar.quest.Enc_FriendGirl_afterGang.win_condition.l1 = "ExitFromLocation";
+				pchar.quest.Enc_FriendGirl_afterGang.win_condition.l1.location = pchar.location;
+				pchar.quest.Enc_FriendGirl_afterGang.win_condition = "Enc_FriendGirl_afterGang";
 			}
 		break;
 		
@@ -790,6 +795,15 @@ bool LAi_CreateEncounters(ref location)
 			if(rand(10) > 6) return false;
 			if(CheckAttribute(PChar, "GenQuest.JusticeOnSale")) return false;
 			if(location.type == "seashore" || location.type == "mayak") return false;
+			// KZ > бухта нужна квесту целиком: по ней ставится корабль контрабандистов и её называют мэр и капитан в тюрьме.
+			// > Выбираем до генерации фантомов - иначе отказ оставил бы их в локации.
+			if (sCity != "Panama") str = SelectQuestShoreLocation();
+			else
+			{
+				if (rand(1)) str = "Shore47";
+				else str = "Shore48";
+			}
+			if (str == "") return false; // > на острове нет ни одной бухты, отбой
 			num = GetAttributesNum(grp) - rand(2); //кол-во контриков
 			if(num <= 0) num = 1; //если локаторов меньше четырех
 
@@ -823,8 +837,9 @@ bool LAi_CreateEncounters(ref location)
                 LAi_group_MoveCharacter(chr, "JusticeOnSaleGroup_" + location.index);
 			}
 			//--> Rosarak. Корабль контры фиксируется сразу, а не на ходу
+			i = PiratesOnUninhabited_GenerateShipType();
 			PChar.GenQuest.JusticeOnSale.ShipName = GenerateRandomNameToShip(PIRATE);
-			PChar.GenQuest.JusticeOnSale.ShipType = PiratesOnUninhabited_GenerateShipType();
+			PChar.GenQuest.JusticeOnSale.ShipType = i;
 			PChar.GenQuest.JusticeOnSale.CapModel = "citiz_"+(rand(9)+21);
 			PChar.GenQuest.JusticeOnSale.CapName  = GenerateRandomName_Generator(PIRATE, "man");
 			//<-- Корабль контры
@@ -832,12 +847,7 @@ bool LAi_CreateEncounters(ref location)
 			PChar.GenQuest.JusticeOnSale.EncQty = num;
 			PChar.GenQuest.JusticeOnSale.CityId = sCity;
 			PChar.GenQuest.JusticeOnSale.Nation = iNation;
-			if (sCity != "Panama") PChar.GenQuest.JusticeOnSale.ShoreId = SelectQuestShoreLocation();
-			else
-			{
-                if (rand(1)) PChar.GenQuest.JusticeOnSale.ShoreId = "Shore47";
-                else PChar.GenQuest.JusticeOnSale.ShoreId = "Shore48";
-            }
+			PChar.GenQuest.JusticeOnSale.ShoreId = str;
 			PChar.GenQuest.JusticeOnSale.SmugglerName  = GenerateRandomName_Generator(PIRATE, "man");
 			PChar.GenQuest.JusticeOnSale.SmugglerModel = "officer_"+(rand(19)+1);
 			PChar.Quest.JusticeOnSale_LocationExit.win_condition.l1 = "ExitFromLocation";
@@ -953,7 +963,7 @@ bool LAi_CreateEncounters(ref location)
 //функция для генерации в локацию "монстров" с которыми можно взаимодействовать. Пока только обезьяны
 void LAi_CreateMonsters(ref location)
 {
-    if (CheckAttribute(location, "type") && StrHasStr(location.type, "Dungeon,cave", 1)) return;
+    if (CheckAttribute(location, "type") && StrHasStr(location.type, "Dungeon,cave", true)) return;
 	//Не всегда генерим
 	if (rand(99) <= 94) return;
 

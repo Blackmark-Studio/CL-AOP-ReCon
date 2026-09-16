@@ -205,3 +205,12 @@ Marginal_64 {
 Marginal_65 {
 у его родственника, начальника портового управления
 }
+Marginal_66 {
+@<TimeGreeting>, @<pchar>. Очень рад вас видеть.
+}
+Marginal_67 {
+@<TimeGreeting>, @<pchar>. Очень рада вас видеть.
+}
+Marginal_68 {
+@<TimeGreeting>, @<npchar>. Мне нужно идти.
+}

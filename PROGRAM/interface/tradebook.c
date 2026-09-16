@@ -22,7 +22,7 @@ void InitInterface(string iniName)
 	SetFormatedText("CURRENT_DATE_CAPTION", GetDateString() + " "+ GetTimeString());
 	// <--
     
-    XI_RegistryExitKey("IExit_F2");
+//    XI_RegistryExitKey("IExit_F2");
     FillPriceListTown("TABLE_CITY");
 	SetAlertMarks(pchar);
 }
@@ -120,6 +120,8 @@ void FillPriceListTown(string _tabName)
     aref    rootItems;
     aref    curItem;
     ref     rCity;
+    int     iFreeStore;                          // KZ FreeStores > свободный магазин
+    string  sTownName, sIslandName, sNationPic;
     
     // шапка -->
     GameInterface.(_tabName).select = 0;
@@ -141,21 +143,41 @@ void FillPriceListTown(string _tabName)
         row = "tr" + n;
 		curItem = GetAttributeN(rootItems, i);
 		cityId = GetAttributeName(curItem);
+		// FreeStores > ветка прайса может принадлежать не колонии, а свободному магазину - показываем и его
 		cn = FindColony(cityId);
-		if (cn != -1)
+		iFreeStore = -1;
+		if (cn == -1) iFreeStore = FindFreeStore(cityId);
+
+		if (cn != -1 || iFreeStore >= 0)
 		{
-			rCity = GetColonyByIndex(cn);
+			if (cn != -1)
+			{
+				rCity       = GetColonyByIndex(cn);
+				sNationPic  = Nations[sti(rCity.nation)].Name;
+				sTownName   = GetConvertStr(cityId + " Town", "LocLables.txt");
+				sIslandName = GetConvertStr(rCity.islandLable, "LocLables.txt");
+			}
+			else
+			{
+				sNationPic  = Nations[PIRATE].Name;
+				sIslandName = "";
+				sTownName   = GetStoreTitleName(&Stores[iFreeStore]);
+				if (CheckAttribute(&Stores[iFreeStore], "Island") && Stores[iFreeStore].Island != "")
+					sIslandName = GetConvertStr(Stores[iFreeStore].Island, "LocLables.txt");
+				if (sTownName == "") sTownName = cityId;
+			}
+
 			if (n == 1) firstId = cityId;
 			GameInterface.(_tabName).(row).UserData.CityID  = cityId;
 			GameInterface.(_tabName).(row).UserData.CityIDX = cn;
 			GameInterface.(_tabName).(row).td1.icon.group  = "NATIONS";
-			GameInterface.(_tabName).(row).td1.icon.image  = Nations[sti(rCity.nation)].Name;
+			GameInterface.(_tabName).(row).td1.icon.image  = sNationPic;
 			GameInterface.(_tabName).(row).td1.icon.width  = 26;
 		    GameInterface.(_tabName).(row).td1.icon.height = 26;
 		    GameInterface.(_tabName).(row).td1.icon.offset = "3, 3";
-			GameInterface.(_tabName).(row).td2.str = GetConvertStr(cityId + " Town", "LocLables.txt");
+			GameInterface.(_tabName).(row).td2.str = sTownName;
 			GameInterface.(_tabName).(row).td2.scale = 0.85;
-			GameInterface.(_tabName).(row).td3.str = GetConvertStr(rCity.islandLable, "LocLables.txt");
+			GameInterface.(_tabName).(row).td3.str = sIslandName;
 			GameInterface.(_tabName).(row).td3.scale = 0.8;
 			GameInterface.(_tabName).(row).td4.scale = 0.75;
 			if (CheckAttribute(nulChr, "PriceList." + cityId + ".AltDate"))

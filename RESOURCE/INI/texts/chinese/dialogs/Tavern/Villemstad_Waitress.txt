@@ -1,102 +1,102 @@
 Villemstad_Waitress_1 {
-有问题吗，@<GetAddress_Form>?
+有问题吗， @<GetAddress_Form>?
 }
 Villemstad_Waitress_2 {
-有什么需要帮忙的吗，@<GetAddress_Form>?
+有什么需要帮忙的吗， @<GetAddress_Form>?
 }
 Villemstad_Waitress_3 {
 @<RandPhraseSimple>
 }
 Villemstad_Waitress_4_m {
-嗯，你这是在跟我调情吗，先生？
+嗯， 你这是在跟我调情吗， 先生？ 
 }
 Villemstad_Waitress_4_f {
-你又来了，老是问些奇怪的问题……你就这么喜欢烦我吗？
+你又来了， 老是问些奇怪的问题…… 你就这么喜欢烦我吗？ 
 }
 Villemstad_Waitress_5_m {
-今天你已经第三次提这事了……这是在表示关心吗？
+今天你已经第三次提这事了…… 这是在表示关心吗？ 
 }
 Villemstad_Waitress_5_f {
-你今天已经第三次提这个问题了……你是在开玩笑吗？
+你今天已经第三次提这个问题了…… 你是在开玩笑吗？ 
 }
 Villemstad_Waitress_6 {
-你又要问问题了吗，@<GetAddress_Form>?
+你又要问问题了吗， @<GetAddress_Form>?
 }
 Villemstad_Waitress_7_m {
-我改主意了……
+我改主意了…… 
 }
 Villemstad_Waitress_7_f {
-我改变主意了……
+我改变主意了…… 
 }
 Villemstad_Waitress_8 {
-我现在没什么可说的。
+我现在没什么可说的。 
 }
 Villemstad_Waitress_9 {
 @<RandPhraseSimple>
 }
 Villemstad_Waitress_10 {
-不不不，哪有啊，美女……
+不不不， 哪有啊， 美女…… 
 }
 Villemstad_Waitress_11 {
-哪有啊，亲爱的，只是有点健忘……
+哪有啊， 亲爱的， 只是有点健忘…… 
 }
 Villemstad_Waitress_12 {
-没事，没什么要问的……
+没事， 没什么要问的…… 
 }
 Villemstad_Waitress_13 {
-你有啥想跟俺说的吗？
+你有什么想跟我说的吗？ 
 }
 Villemstad_Waitress_14_m {
-嗯，我是说，你真的很美，哪怕眼里还带着泪。
+嗯， 我是说， 你真的很美， 哪怕眼里还带着泪。 
 }
 Villemstad_Waitress_14_f {
-怎么这么不开心啊，小家伙？我是不是看到你在掉眼泪？
+怎么这么不开心啊， 小家伙？ 我是不是看到你在掉眼泪？ 
 }
 Villemstad_Waitress_15 {
-哦……
+哦…… 
 }
 Villemstad_Waitress_16 {
-哎，这事咱们不是已经说过了吗……
+哎， 这事咱们不是已经说过了吗…… 
 }
 Villemstad_Waitress_17 {
-听着，我们已经谈过了，就这样……
+听着， 我们已经谈过了， 就这样…… 
 }
 Villemstad_Waitress_18_m {
-你干嘛来烦我这个可怜的姑娘？以为我倒霉了，你就能趁机来安慰我吗？
+你干嘛来烦我这个可怜的姑娘？ 以为我倒霉了， 你就能趁机来安慰我吗？ 
 }
 Villemstad_Waitress_18_f {
-你干嘛来烦我这个可怜的姑娘？
+你干嘛来烦我这个可怜的姑娘？ 
 }
 Villemstad_Waitress_19 {
-那他是谁，得罪你的人？说不定我能帮上忙？
+那他是谁， 得罪你的人？ 说不定我能帮上忙？ 
 }
 Villemstad_Waitress_20 {
-没错。
+没错。 
 }
 Villemstad_Waitress_21 {
-行了，行了……
+行了， 行了…… 
 }
 Villemstad_Waitress_22_m {
-俺啥都没想啊，美女。一切都好……
+我什么都没想啊， 美女。 一切都好…… 
 }
 Villemstad_Waitress_22_f {
-好吧……
+好吧…… 
 }
 Villemstad_Waitress_23 {
-那是放债人的儿子——Jansen！他……他……
+那是放贷人的儿子——杨森！ 他…… 他…… 
 }
 Villemstad_Waitress_24 {
-（真走运！）我也正好在找这个人。他对你做了什么？我去哪儿能找到他？
+（真走运！ ）我也正好在找这个人。 他对你做了什么？ 我去哪儿能找到他？ 
 }
 Villemstad_Waitress_25 {
-他骗了我。说得天花乱坠，还发誓要娶我，结果一转身就溜了！昨天跟那些海盗一起坐小船跑去Fort Orange了！
+他骗了我。 说得天花乱坠， 还发誓要娶我， 结果一转身就溜了！ 昨天跟那些海盗一起坐小船跑去奥兰治堡了！ 
 }
 Villemstad_Waitress_26 {
-真是个混蛋！让我逮到他，老子就剖了他。
+真是个混蛋！ 让我逮到他， 我就剖了他。 
 }
 Villemstad_Waitress_27 {
-要是他真死了怎么办？你最好让他别来酒馆，不然我就把他眼睛挖出来！
+要是他真死了怎么办？ 你最好让他别来酒馆， 不然我就把他眼睛挖出来！ 
 }
 Villemstad_Waitress_28 {
-行，我会转达的。
+行， 我会转达的。 
 }

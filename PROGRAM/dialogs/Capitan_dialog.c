@@ -21,7 +21,10 @@ void ProcessDialogEvent()
 	{
 		sCap = NationShortName(sti(aData.nation)) + "SiegeCap_";
 		sGroup = "Sea_" + sCap + "1";
+	}
 
+	if (sGroup != "" && Group_FindGroup(sGroup) != -1)
+	{
 		// string myships  = GetCompanionQuantity(PChar);
 		// string escships = Group_GetCharactersNum(sGroup);
 
@@ -36,7 +39,6 @@ void ProcessDialogEvent()
 		ifortPower = sti(colonies[FindColony(aData.colony)].FortValue);
 		fortDamage = CheckFortInjuri();
 		SquadronDamage = CheckSquadronInjuri();
-
 	}
 
 	int iMoney;
@@ -394,7 +396,7 @@ void ProcessDialogEvent()
 					sld = &Characters[iMoney];
 					pchar.PriceList.ShipStoreIdx = iMoney;
 
-					Dialog.Text = StringFromKey("Capitan_dialog_90", GetCityName(sld.City));
+					Dialog.Text = StringFromKey("Capitan_dialog_90", GetTraderCityName(sld)); // KZ FreeStores > у свободного магазина имя с него самого
 					Link.l1 = StringFromKey("Capitan_dialog_91");
 					Link.l1.go = "price_2";
 					Link.l9 = StringFromKey("Capitan_dialog_92");
@@ -411,11 +413,12 @@ void ProcessDialogEvent()
 
 		case "price_2":
 			sld = &Characters[sti(pchar.PriceList.ShipStoreIdx)];
-			SetPriceListByStoreMan(&Colonies[FindColony(sld.City)]);
+			// FreeStores > Прайс пишем от колонии или от самого магазина
+			SetPriceListByTrader(sld);
 			Dialog.Text = StringFromKey("Capitan_dialog_95");
 			Link.l1 = StringFromKey("Capitan_dialog_96");
 			Link.l1.go = "exit";
-			LogSound_WithNotify(StringFromKey("InfoMessages_116", GetCityName(sld.City)), "Notebook_2", "LogBook");
+			LogSound_WithNotify(StringFromKey("InfoMessages_116", GetTraderCityName(sld)), "Notebook_2", "LogBook"); // FreeStores > у свободного магазина имя с него самого
 		break;
 
 		case "Talk_board":
@@ -691,6 +694,7 @@ void ProcessDialogEvent()
 		case "Talk_Capture_City":
 			AfterTownBattle();  // все, все свободны
 			LAi_LoginInCaptureTown(NPChar, false);
+			LAi_SetImmortal(NPChar, false);
 			aData.win = 1;
 			EndOfTheSiege("End");
 			NPChar.location = "";
@@ -792,6 +796,8 @@ int findPriceStoreMan(ref NPChar)
 		{
 			//if (sti(ch.nation) !=  sti(NPChar.nation)) continue;
 			if (ch.location == "none") continue; // фикс для новых, невидимых до поры островов
+			// FreeStores > о ценах магазина вне колонии рассказывают только при QuestsAvailable у торговца
+			if (!IsNPCQuestsAllowed(ch)) continue;
 			storeArray[howStore] = n;
 			howStore++;
 

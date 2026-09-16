@@ -455,7 +455,7 @@ Villemstad_cemetery_146 {
 Wiesz, dokąd go zabrali? Powiedzieli coś ważnego?
 }
 Villemstad_cemetery_147 {
-Powiedzieli z ironicznym uśmiechem przed odejściem: „Posiedzisz ty sobie z dala od ludzkich oczu, za to bliżej celu. A tam, w międzyczasie, będziesz odprawiał modлы za dusze katorżników”.
+Powiedzieli z ironicznym uśmiechem przed odejściem: „Posiedzisz ty sobie z dala od ludzkich oczu, za to bliżej celu. A tam, w międzyczasie, będziesz odprawiał modły za dusze katorżników”.
 }
 Villemstad_cemetery_148 {
 Hm... No cóż, twoja historia nie należy do najprostszych. Nie przypuszczałem, że za zwykłym dozorca kryje się taka tajemnica. I co teraz zamierzasz zrobić?

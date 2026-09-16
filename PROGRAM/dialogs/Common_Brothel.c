@@ -1484,7 +1484,7 @@ ref GetFreeHorseRef(string City)
 	for (int n = 0; n < MAX_CHARACTERS; n++)
 	{
 		makeref(rCharacter, Characters[n]);
-		if (rCharacter.location == City + "_Brothel" && CheckAttribute(rCharacter, "CityType") && rCharacter.CityType == "horse")
+		if (rCharacter.location == City + "_Brothel" && CheckAttribute(rCharacter, "CityType") && rCharacter.CityType == "horse" && rCharacter.horse == "HorseStay")
 		{
 			storeArray[howStore] = n;
 			howStore++;

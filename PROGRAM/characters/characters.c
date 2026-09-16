@@ -79,6 +79,8 @@ void CharactersInit()
 	
 	LoadSegment(sPath + "init\Providence.c");			ReloadProgressUpdate();
 
+	LoadSegment(sPath + "init\Gibraltar.c");			ReloadProgressUpdate();
+
 	LoadSegment(sPath + "init\StoryCharacters.c");		ReloadProgressUpdate();
 	
 	LoadSegment(sPath + "init\Other.c");				ReloadProgressUpdate();
@@ -118,6 +120,7 @@ void CharactersInit()
 	UnloadSegment(sPath + "init\Beliz.c");
 	UnloadSegment(sPath + "init\SantaCatalina.c");
 	UnloadSegment(sPath + "init\Providence.c");
+	UnloadSegment(sPath + "init\Gibraltar.c");
 	UnloadSegment(sPath + "init\StoryCharacters.c");
 	UnloadSegment(sPath + "init\Other.c");
 
@@ -197,9 +200,47 @@ bool TeleportCharacterToPosAy(ref character, float x, float y, float z, float ay
 	return SendMessage(character, "lffff", MSG_CHARACTER_TELEPORT_AY, x, y, z, ay);
 }
 
+
+bool TeleportCharacterToPosAySavePos(ref character, float x, float y, float z, float ay)
+{
+	//Не забыть написать DeleteAttribute(rChr, "SavedTeleportPos");
+	//когда телепортировать больше ненадо
+	if (SendMessage(character, "lffff", MSG_CHARACTER_TELEPORT_AY, x, y, z, ay))
+	{
+		character.SavedTeleportPos.x = x;
+		character.SavedTeleportPos.y = y;
+		character.SavedTeleportPos.z = z;
+		character.SavedTeleportPos.ay = ay;
+		return true;
+	}
+	return false;
+}
+
 bool TeleportCharacterToLocator(ref character, string group, string locator)
 {
 	return SendMessage(character, "lss", MSG_CHARACTER_TELEPORT_TO_LOCATOR, group, locator);
+}
+
+bool CheckCharacterPosAndTeleport(ref rChr, float x, float y, float z, float ay, float radius)
+{
+	float cx, cy, cz;
+	float dx, dy, dz;
+
+	if (!CheckAttribute(rChr, "id")) return false;
+	if (!CheckAttribute(rChr, "location")) return false;
+	if (rChr.location == "none") return false;
+	if (rChr.location != pchar.location) return false;
+
+	if (GetCharacterPos(rChr, &cx, &cy, &cz))
+	{
+		dx = cx - x;
+		dy = cy - y;
+		dz = cz - z;
+
+		if ((dx * dx + dy * dy + dz * dz) <= (radius * radius)) return true;
+	}
+
+	return SendMessage(rChr, "lffff", MSG_CHARACTER_TELEPORT_AY, x, y, z, ay);
 }
 
 bool CheckLocationPosition(ref location, float x, float y, float z)
@@ -993,5 +1034,13 @@ void SetOverloadFight(ref character, string tag)
 	   character.actions.fightbackrun = "fight back walk" + tag;
     }
 	*/
+}
+
+void SetCharacterActionAnimation(ref chr, string sAction, string sAnimation)
+{
+	BeginChangeCharacterActions(chr);
+	chr.actions.(sAction) = sAnimation;
+	chr.actions.(sAction).d1 = sAnimation;
+	EndChangeCharacterActions(chr);
 }
 

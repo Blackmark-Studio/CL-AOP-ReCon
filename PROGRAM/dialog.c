@@ -13,6 +13,7 @@ bool dialogDisable = false;
 object	Dialog;
 ref		CharacterRef = &NullCharacter;
 bool	dialogRun = false;
+bool	bCharacterRefValid = false;
 
 bool	dialogSelf = false;
 
@@ -29,6 +30,7 @@ void ProcessCommonDialog(ref NPChar, aref Link, aref NextDiag)
 //Инициализация
 void DialogsInit()
 {
+	bCharacterRefValid = false;
 	//Quest_Init();				//Инициализация начального состояния слухов и информации об NPC ------- Ренат
 	Set_inDialog_Attributes(); // boal
 }
@@ -74,7 +76,8 @@ bool DialogMain(ref Character, bool bPlayerInit)
 	if(!LAi_Character_CanDialog(Character, mainChr)) return false;
 	//Сохраняем ссылку на того, с кем говорим
 	CharacterRef = Character;
-	
+	bCharacterRefValid = true;
+
 	// Попытка загрузить текст дилога
 	if( !LoadDialogFiles(Character.Dialog.Filename) ) {
 		// имеем ошибочный диалог
@@ -204,6 +207,7 @@ void SelfDialog(ref Character)
 	}
 	//Сохраняем ссыклу на того с кем говорим
 	CharacterRef = Character;
+	bCharacterRefValid = true;
 	// Попытка загрузить текст дилога
 	if( !LoadDialogFiles(Character.Dialog.Filename) ) {
 		// имеем ошибочный диалог
@@ -211,10 +215,11 @@ void SelfDialog(ref Character)
 			return false;
 		}
 	}
+	SendMessage(pchar, "l", MSG_CHARACTER_STOPSTRAFE);
 	//Если персонаж не готов говорить выходим
 	LAi_Character_CanDialog(Character, Character);
 	//Можем начинать диалог
-	SendMessage(pchar, "l", MSG_CHARACTER_STOPSTRAFE);
+	TimeScaleCounter = 0;
 	DelPerkFromActiveList("TimeSpeed");
 	dialogRun = true;
 	dialogSelf = true;
@@ -268,18 +273,22 @@ void DialogExit()
 	DeleteAttribute(&TEV, "CT"); // > кейс локальных временных диалоговых атрибутов
 	ModifyTextHide();
 
-	if (CheckAttribute(CharacterRef, "Dialog.Base_Filename"))
-	{	//HardCoffee резервная подключалка оригинального диалогового файла, если гдето забыли его вернуть
-		CharacterRef.Dialog.CurrentNode = CharacterRef.Dialog.TempNode;
-		CharacterRef.Dialog.Filename = CharacterRef.Dialog.Base_Filename;
-		DeleteAttribute(CharacterRef, "Dialog.Base_Filename");
+	// > Работаем с CharacterRef только если он привязан к персонажу
+	if (bCharacterRefValid)
+	{
+		if (CheckAttribute(CharacterRef, "Dialog.Base_Filename"))
+		{	//HardCoffee резервная подключалка оригинального диалогового файла, если гдето забыли его вернуть
+			CharacterRef.Dialog.CurrentNode = CharacterRef.Dialog.TempNode;
+			CharacterRef.Dialog.Filename = CharacterRef.Dialog.Base_Filename;
+			DeleteAttribute(CharacterRef, "Dialog.Base_Filename");
+		}
+		if (CheckAttribute(CharacterRef, "greeting_base"))
+		{	//HardCoffee этот атрибут присваивается когда патрульный или гвард сам обращается к гг по поводу оружия или проверки на шпиона
+			CharacterRef.greeting = CharacterRef.greeting_base;
+			DeleteAttribute(CharacterRef, "greeting_base");
+		}
+		if (CharacterRef.id == pchar.id) locCameraSleep(false); //HardCoffee если выход из селф-диалога произошёл с ошибкой
 	}
-	if (CheckAttribute(CharacterRef, "greeting_base"))
-	{	//HardCoffee этот атрибут присваивается когда патрульный или гвард сам обращается к гг по поводу оружия или проверки на шпиона
-		CharacterRef.greeting = CharacterRef.greeting_base;
-		DeleteAttribute(CharacterRef, "greeting_base");
-	}
-	if (CharacterRef.id == pchar.id) locCameraSleep(false); //HardCoffee если выход из селф-диалога произошёл с ошибкой
 	//Если диалога уже не ведётся, выйдем
 	if(!dialogRun) return;
 	DelEventHandler("frame", "DialogPlayGreeting");
@@ -491,3 +500,42 @@ void AddDialogMeta() {
 	}
 }
 
+//HardCoffee изменение заголовка диалогового окна при разговоре НПС с НПС
+//эту функцию необходимо ставить в файле диалога перед каждой фразой НПС с НПС
+//так как при каждом клике игрока движок будет ставить дефолтное имя нпс с которым начали диалог
+void SetNpcToNpcDialogTitle(ref firstNPC, ref secondNPC)
+{
+	string sFirstName = "";
+	if (CheckAttribute(firstNPC, "name"))
+	{
+		sFirstName = sFirstName + firstNPC.name;
+	}
+	if (CheckAttribute(firstNPC, "lastName"))
+	{
+		sFirstName = sFirstName + firstNPC.lastName;
+	}
+	if (sFirstName == "" && CheckAttribute(firstNPC, "nation"))
+	{
+		sFirstName = sFirstName + NationNameMan(sti(firstNPC.nation));
+	}
+	if (sFirstName != "")
+	{
+		sFirstName = sFirstName +" " +XI_ConvertString("NationLegendText_4") +" ";
+	}
+
+	string sSecondName = "";
+	if (CheckAttribute(secondNPC, "name"))
+	{
+		sSecondName = sSecondName + secondNPC.name;
+	}
+	if (CheckAttribute(secondNPC, "lastName"))
+	{
+		sSecondName = sSecondName + secondNPC.lastName;
+	}
+	if (sFirstName == "" && CheckAttribute(secondNPC, "nation"))
+	{
+		sSecondName = sSecondName + NationNameMan(sti(secondNPC.nation));
+	}
+
+	SendMessage(&Dialog, "ls", 2, sFirstName + sSecondName);
+}

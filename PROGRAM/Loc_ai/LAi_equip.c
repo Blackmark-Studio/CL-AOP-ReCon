@@ -132,11 +132,11 @@ string GetWeaponByNpcType(string wType, string weaponType, string sDefault)
 	string result = sDefault;
 	string filteredWeapons[2]; //если создать массив [1] то оно считается просто стрингой, а не массивом.
 	//фильтруем список предметов в filteredWeapons
-	for (int i = 0; i < TOTAL_ITEMS; i++)
+	for (int i = 0; i < iScriptItemStartNum; i++)
 	{
 		makeref(rItem, Items[i]);
 		//нам подходит только не сгенерированное оружие
-		if (CheckAttribute(rItem, "groupID") && rItem.groupID == weaponType && !CheckAttribute(rItem, "generated"))
+		if (CheckAttribute(rItem, "groupID") && rItem.groupID == weaponType)
 		{
 			if (CheckAttribute(rItem, "wType") && HasStrEx(wType, rItem.wType, "|"))
 			{

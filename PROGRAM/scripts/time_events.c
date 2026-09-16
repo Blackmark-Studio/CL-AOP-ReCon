@@ -68,7 +68,7 @@ void WorldSituationsUpdate()
 	switch(iStep)
 	{
 		case 0:
-			g_sDayRand = Rand(32768); //TODO: избавиться от dRandEx
+			g_iDayRand = Rand(32768); //TODO: избавиться от dRandEx
 			//HardCoffee перевод dRandEx на idRand
 			string sTemp;
 			TEV.dRandEx.last = "0";

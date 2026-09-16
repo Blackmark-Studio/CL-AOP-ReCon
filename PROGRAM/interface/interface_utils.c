@@ -2,6 +2,23 @@
 //---------------------------------------------------------------------------------------------------
 // scrollimage
 //---------------------------------------------------------------------------------------------------
+// KZ > локальный аналог общего FillShipList: в ImagesGroup кладём только корабли эскадры, а не все SHIP_TYPES_QUANTITY (< интефейс корабля долго грузился в основном из-за этого)
+void FillShipListSquadronOnly(string strAccess, ref chref)
+{
+	int n, cn, iShipType;
+
+	for (n = 0; n < COMPANION_MAX; n++)
+	{
+		cn = GetCompanionIndex(chref, n);
+		if (cn == -1) continue;
+		iShipType = sti(characters[cn].ship.type);
+		if (iShipType == SHIP_NOTUSED) continue;
+		iShipType = sti(RealShips[iShipType].basetype);
+		if (iShipType == SHIP_NOTUSED) continue;
+		AddFaceGroup(strAccess, "SHIPS_" + ShipsTypes[iShipType].Name);
+	}
+}
+
 void FillScrollImageWithCompanionShips(string sNodeName, int iNotUsed)
 {
 
@@ -12,7 +29,7 @@ void FillScrollImageWithCompanionShips(string sNodeName, int iNotUsed)
 	GameInterface.(sNodeName).BadTex1 = 0;
 	GameInterface.(sNodeName).BadPic1 = "Not Used2";
 
-	FillShipList(sNodeName + ".ImagesGroup", pchar);
+	FillShipListSquadronOnly(sNodeName + ".ImagesGroup", pchar);
 
 	string attributeName, shipName;
 	int iShipType, cn;
@@ -170,12 +187,11 @@ void StartAboveForm(bool _pauseTime)
     if (_pauseTime)
 	{
 		SetTimeScale(0.0);
-		SetEventHandler("frame", "KZ|PlayMusicInterfaceFrame", 0);
+		if (!MusicIsPlaying()) KZ|MusicSelect(""); // > старт музыки, если тишина
 	}
 	else
 	{
 		SendMessage(pchar, "l", MSG_CHARACTER_STOPSTRAFE);
-		DelEventHandler("frame", "KZ|PlayMusicInterfaceFrame");
 	}
 	
 	locCameraSleep(true);
@@ -624,7 +640,7 @@ void SetShipOTHERTable(string _tabName, ref _chr)
     int     i;
 	string  row;
 
-    int iShip = sti(_chr.ship.type);
+    int iCrewQ, iShip = sti(_chr.ship.type);
 	ref refBaseShip = GetRealShip(iShip);
 	
 	GameInterface.(_tabName).select = 0;
@@ -812,8 +828,12 @@ void SetShipOTHERTable(string _tabName, ref _chr)
 		GameInterface.(_tabName).tr7.td2.icon.image = "";
 	}
 	
+	iCrewQ = sti(refBaseShip.OptCrew);
 	GameInterface.(_tabName).tr7.td2.str = XI_ConvertString("Crew");
-	GameInterface.(_tabName).tr7.td3.str = GetCrewQuantity(_chr) + " : "+ sti(refBaseShip.MinCrew) +" / " + sti(refBaseShip.OptCrew);	
+	GameInterface.(_tabName).tr7.td3.str = GetCrewQuantity(_chr) + " : "+ sti(refBaseShip.MinCrew) +" / " + iCrewQ;
+	if (iCrewQ > 999)
+		GameInterface.(_tabName).tr7.td3.scale = 0.82; // > значения 1000+ не влезают
+
 	if (!CheckAttribute(&RealShips[iShip], "Tuning.MaxCrew")) 
 	{
 		GameInterface.(_tabName).tr7.td3.color = argb(255,255,255,255);
@@ -1141,6 +1161,30 @@ string GetColorChar(string color)
 	}
 	return sPrefix;
 }
+
+// > Удаляет управляющие символы покраски, чтобы strlen() и GetStringWidth() мерили только видимый текст
+// > При добавлении нового цвета в GetColorChar добавлять его символ и сюда
+string StripColorTags(string sText)
+{
+	sText = StrReplaceAll(sText, "‼", "");	// > white
+	sText = StrReplaceAll(sText, "⁇", "");	// > gold
+	sText = StrReplaceAll(sText, "⁈", "");	// > khaki
+	sText = StrReplaceAll(sText, "⁉", "");	// > darkgray
+	sText = StrReplaceAll(sText, "ʖ", "");	// > contra
+	sText = StrReplaceAll(sText, "ʔ", "");	// > export
+	sText = StrReplaceAll(sText, "ʕ", "");	// > import
+	sText = StrReplaceAll(sText, "ʞ", "");	// > lightblue
+	sText = StrReplaceAll(sText, "ʘ", "");	// > goldenrod
+	sText = StrReplaceAll(sText, "␍", "");	// > colorend
+
+	return sText;
+}
+
+// > Длина видимого текста без символов покраски
+int strlenVisible(string sText)
+{
+	return strlen(StripColorTags(sText));
+}
 // evganat - окрашивание текста <--
 
 int GetColorInt(string sClolor)
@@ -1188,16 +1232,15 @@ int GetColorArgb(string sClolor, int iAlpha)
 //HardCoffee перенёс из QuestsUtilite.c вызывается в interface\items.c
 void SortItems(ref NPChar)
 {// отсортировать предметы в кармане, сундуке
-    aref   arToChar;
-    aref   arFromChar;
+    // KZ > оптимизация: идём только по предметам самого персонажа
+    aref   arToChar, arFromChar;
     object objChar;
-    int    i;
+    int    i, j, iSortIndex, iTmpl, iKey, n, aiKey[260];
     aref   curItem;
-	string attr;
-	ref    itm;
-	ref    rObj;
-	int    iSortIndex;
-	bool   ok;
+    string attr;
+    ref    itm, rObj;
+    bool   ok;
+    string asItm[260];
 
     objChar.Items = "";
     rObj = &objChar;
@@ -1218,10 +1261,52 @@ void SortItems(ref NPChar)
         attr = GetAttributeValue(curItem);
         if (attr != "") //патенты клинит
         {
-        	NPChar.Items.(attr) = sti(rObj.Items.(attr));
+            if (CheckAttribute(rObj, "Items."+attr))
+                NPChar.Items.(attr) = sti(rObj.Items.(attr));
+            else
+                NPChar.Items.(attr) = 0;
         }
     }
-    // неоптимальная сортировка по индексу itm.SortIndex
+
+    int q = GetAttributesNum(arToChar);
+    // > KZ > быстрый алгоритм сортировки (если в инвентаре перса менее 257 разновидностей предметов)
+    if (q <= 256)
+    {
+        n = 0;
+        for (i = 0; i < q; i++)
+        {
+            curItem = GetAttributeN(arToChar, i);
+            attr = GetAttributeName(curItem);
+            iTmpl = FindItem(attr);
+            if (iTmpl < 0)
+            	continue;
+            iKey = 3;
+            if (CheckAttribute(&Items[iTmpl], "SortIndex"))
+            	iKey = sti(Items[iTmpl].SortIndex);
+            iKey = iKey * 4096 + iTmpl;
+
+            for (j = n; j > 0; j--)
+            {
+                if (aiKey[j-1] <= iKey) break;
+                aiKey[j] = aiKey[j-1];
+                asItm[j] = asItm[j-1];
+            }
+
+            aiKey[j] = iKey;
+            asItm[j] = attr;
+            n++;
+        }
+
+        for (i=0; i<n; i++)
+        {
+            attr = asItm[i];
+            NPChar.Items.(attr) = sti(rObj.Items.(attr));
+        }
+
+        return;
+    }
+
+	// KZ > legacy алгоритм неоптимальной сортировки по индексу itm.SortIndex (если разновидностей предметов 257 и более)
 	// размерность индекса определяется автоматом - длжен быть непрерывен!!, начинается с 1 - целое число
 	ok = true;
 	iSortIndex = 1;

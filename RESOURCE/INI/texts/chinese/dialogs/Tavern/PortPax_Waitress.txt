@@ -1,45 +1,45 @@
 PortPax_Waitress_1 {
-有问题吗，@<GetAddress_Form>?
+有问题吗， @<GetAddress_Form>?
 }
 PortPax_Waitress_2 {
-有什么事需要俺帮忙吗，@<GetAddress_Form>?
+有什么事需要我帮忙吗， @<GetAddress_Form>?
 }
 PortPax_Waitress_3 {
 @<RandPhraseSimple>
 }
 PortPax_Waitress_4_m {
-嗯，你这是在跟我调情吗，先生？
+嗯， 你这是在跟我调情吗， 先生？ 
 }
 PortPax_Waitress_4_f {
-你又来了，老是问些奇怪的问题……你就这么喜欢烦我吗？
+你又来了， 老是问些奇怪的问题…… 你就这么喜欢烦我吗？ 
 }
 PortPax_Waitress_5_m {
-你今天已经第三次提起这事了……这是在表示关心吗？
+你今天已经第三次提起这事了…… 这是在表示关心吗？ 
 }
 PortPax_Waitress_5_f {
-今天你已经第三次提到什么问题了……这是在开奇怪的玩笑吗？
+今天你已经第三次提到什么问题了…… 这是在开奇怪的玩笑吗？ 
 }
 PortPax_Waitress_6 {
-你又要问问题了，@<GetAddress_Form>？
+你又要问问题了， @<GetAddress_Form>？ 
 }
 PortPax_Waitress_7_m {
-我改主意了……
+我改主意了…… 
 }
 PortPax_Waitress_7_f {
-我改变主意了……
+我改变主意了…… 
 }
 PortPax_Waitress_8 {
-我现在没什么好说的。
+我现在没什么好说的。 
 }
 PortPax_Waitress_9 {
 @<RandPhraseSimple>
 }
 PortPax_Waitress_10 {
-不不不，哪有啊，美女……
+不不不， 哪有啊， 美女…… 
 }
 PortPax_Waitress_11 {
-没门，亲爱的，老糊涂了……
+没门， 亲爱的， 老糊涂了…… 
 }
 PortPax_Waitress_12 {
-没事，没什么要问的……
+没事， 没什么要问的…… 
 }

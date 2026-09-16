@@ -1,27 +1,35 @@
 Task1 {分配军官}
 Task2 {打开角色菜单}
-Task3 {指派Jeremy Pitt为领航员}
-Task4 {指派Ned Ogle为炮手}
+Task3 {指派杰里米.皮特为领航员}
+Task4 {指派内德.奥格尔为炮手}
 Task5 {指派水手长}
-Task6 {指派财务官}
+Task6 {指派司库}
 Task7 {指派木工}
 Task8 {海战}
-Task9 {使用炮弹或炸弹}
-Task10 {击沉受损的卢格帆船}
+Task9 {使用实心弹或炸弹}
+Task10 {击沉敌方斜桁纵帆船}
 Task11 {脱离战斗}
 Task12 {远离敌人足够远}
 Task13 {新船}
-Task14 {前往船厂}
+Task14 {前往船坞}
 Task15 {再买一艘船}
 Task16 {新船}
-Task17 {将“Swift Boar”号收归麾下}
-Task18 {转移“Cinco Llagas”上的所有货物和船员}
+Task17 {将“迅猪号”收归麾下}
+Task18 {转移“圣五伤号”上的所有货物和船员}
 Task19 {前往城镇}
 Task20 {新船}
-Task21 {前往港口管理处}
-Task22 {让“Cinco Llagas”停靠在港口}
-Task23 {离开港口管理处}
+Task21 {前往港务局}
+Task22 {将“圣五伤号”停靠在港口}
+Task23 {离开港务局}
 Task24 {新船}
 Task25 {前往酒馆}
 Task26 {雇佣所有可用船员}
 Task27 {离开酒馆}
+Task28 {离开巴巴多斯}
+Task29 {离堡垒500码远}
+Task30 {靠近“恩卡纳西翁号”，并派一艘小艇过去}
+Task31 {搜查马拉开波}
+Task32 {检查商店}
+Task33 {检查监狱}
+Task34 {检查仓库}
+Task35 {检查丛林}

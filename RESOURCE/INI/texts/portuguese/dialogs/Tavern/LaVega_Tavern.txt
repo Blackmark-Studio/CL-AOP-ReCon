@@ -37,3 +37,86 @@ Ele estava. Ele e o amigo costumavam passar muito tempo aqui. Ele esteve aqui an
 LaVega_Tavern_11 {
 Obrigado!
 }
+
+LaVega_Tavern_12 {
+Voltei por causa de Nicolas Rimalie.
+}
+LaVega_Tavern_13 {
+Estou procurando um homem chamado Nicolas Rimalie. Conhece?
+}
+LaVega_Tavern_14 {
+Rimalie? Claro que conheço. Ele não aparece muito por aqui, mas é respeitado. Por que está procurando por ele?
+}
+LaVega_Tavern_15 {
+Um velho amigo dele, Michel, está à sua procura. Diga-me, quando Nicolas esteve aqui pela última vez?
+}
+LaVega_Tavern_16 {
+Ontem. Passou a noite no quarto de cima. Jantou sozinho e saiu ao amanhecer.
+}
+LaVega_Tavern_17 {
+Para onde ele foi?
+}
+LaVega_Tavern_18 {
+Mil pesos, capitão, e eu conto tudo o que sei.
+}
+LaVega_Tavern_19 {
+Aqui está. Agora desembucha.
+}
+LaVega_Tavern_20 {
+Não tenho esse dinheiro agora.
+}
+LaVega_Tavern_21 {
+Passo sem a sua ajuda.
+}
+LaVega_Tavern_22 {
+Rimalie alugou um quarto, jantou sozinho e partiu ao amanhecer.
+}
+LaVega_Tavern_23 {
+Para onde ele foi?
+}
+LaVega_Tavern_24 {
+Então volte quando tiver. Aqui até o silêncio tem seu preço.
+}
+LaVega_Tavern_25 {
+Ainda volto por aqui.
+}
+LaVega_Tavern_26 {
+Como quiser...
+}
+LaVega_Tavern_27 {
+Os rumores ruins a seu respeito diminuíram. Na verdade, ultimamente só tenho ouvido coisas boas. Acho que podemos dispensar o pagamento. Rimalie alugou um quarto, jantou sozinho e partiu ao amanhecer.
+}
+LaVega_Tavern_28 {
+Para onde ele foi?
+}
+LaVega_Tavern_29 {
+Então, capitão, desta vez tem mil piastras para mim?
+}
+LaVega_Tavern_30 {
+Tenho. Tome.
+}
+LaVega_Tavern_31 {
+Ainda não.
+}
+LaVega_Tavern_32 {
+Passo.
+}
+LaVega_Tavern_33 {
+Ele disse que ia ao antigo cais além do povoado. Não perguntei mais nada.
+}
+LaVega_Tavern_34 {
+Mais alguém estava procurando por ele?
+}
+LaVega_Tavern_35 {
+Dois forasteiros. Um falava com sotaque espanhol; o outro ficou calado quase o tempo todo.
+}
+LaVega_Tavern_36 {
+Você disse a eles para onde Rimalie tinha ido?
+}
+LaVega_Tavern_37 {
+Eu, não. Mas encontraram alguém mais disposto a falar e logo partiram atrás dele.
+E tem mais... Ultimamente Rimalie passou a beber o dobro do que costumava.
+}
+LaVega_Tavern_38 {
+Hum... Muito bem, obrigado.
+}

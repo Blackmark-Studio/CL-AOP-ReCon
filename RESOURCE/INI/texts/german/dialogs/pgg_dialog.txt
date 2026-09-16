@@ -1193,10 +1193,10 @@ pgg_dialog_331 {
 Sklaven
 }
 pgg_dialog_332 {
-, hielt unweit von @<sLoc> an der Bucht von @<GetConvertStr>, um Vorräte aufzufüllen.
+, hielt unweit von @<sLoc> an der Bucht von @<XI_ConvertString>, um Vorräte aufzufüllen.
 }
 pgg_dialog_333 {
-, geriet bei @<sLoc> in einen Sturm und sank. Aber sie konnten einen Teil der Ladung retten und sind in der Bucht bei @<GetConvertStr> gelandet. Jetzt warten sie auf das Eintreffen ihres Geschwaders.
+, geriet bei @<sLoc> in einen Sturm und sank. Aber sie konnten einen Teil der Ladung retten und sind in der Bucht bei @<XI_ConvertString> gelandet. Jetzt warten sie auf das Eintreffen ihres Geschwaders.
 }
 pgg_dialog_334 {
 Nicht trödeln, raus damit – schnell!

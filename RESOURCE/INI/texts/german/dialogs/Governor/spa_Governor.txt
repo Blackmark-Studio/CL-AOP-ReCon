@@ -1220,7 +1220,7 @@ spa_Governor_342 {
 In Ordnung, Don Francisco.
 }
 spa_Governor_343 {
-Kapitän, man sagt, Sie haben Maracaibo verteidigt! Ohne Übertreibung, das ist wirklich eine Heldentat, Señor@<GetAddress_Form>!
+Kapitän, man sagt, Sie haben Maracaibo verteidigt! Ohne Übertreibung, das ist wirklich eine Heldentat, @<GetAddress_Form>!
 }
 spa_Governor_344 {
 Sehr gut! Jetzt hör dir deine Befehle an.\nIm Rahmen des andauernden Devolutionskriegs mit Frankreich um spanische Besitzungen in Holland besteht unsere erste und wichtigste Aufgabe darin, Curaçao und Saint Martin zu überfallen. Aus einer abgefangenen Depesche haben wir erfahren, dass die Niederländer enorme Summen für Frankreichs militärische Zwecke bereitstellen.\nWir können das zwar nicht mit Sicherheit beweisen, da die gesamte Korrespondenz auf besondere Weise verschlüsselt ist und der eigentliche Inhalt des Schreibens ein ganz anderer ist. Dennoch müssen wir dem ein Ende setzen – die niederländische Handelsmacht muss gebrochen werden!\nDu sollst die niederländischen Siedlungen Willemstad auf der Insel Curaçao und Marigot auf der Insel Saint Martin stürmen und plündern. Alle Beute, die du bei dieser Operation machst, gehört dir.\nBist du bereit, eine solche Aufgabe zu übernehmen?

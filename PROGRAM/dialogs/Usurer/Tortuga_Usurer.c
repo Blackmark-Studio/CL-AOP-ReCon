@@ -41,6 +41,8 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 			dialog.text = StringFromKey("Tortuga_Usurer_15", UpperFirst(GetAddress_Form(NPChar)), pchar.name);
 			link.l1 = StringFromKey("Tortuga_Usurer_16");
 			link.l1.go = "PDM_PI_Rostov_3";
+			RemoveLandQuestmark_Main(npchar, "PDM_Cursed_Idol");
+			RemoveMapQuestMark("Tortuga_town", "PDM_Cursed_Idol");
 		break;
 		case "PDM_PI_Rostov_3":
 			dialog.text = StringFromKey("Tortuga_Usurer_17", GetAddress_Form(NPChar), pchar.name);
@@ -57,7 +59,6 @@ void ProcessCommonDialogEvent(ref NPChar, aref Link, aref NextDiag)
 		//DeleteAttribute(pchar, "questTemp.PDM_PI_Skelety_v_more");
 		break;
 		case "Rostovshik_5":
-			DelLandQuestMark(npchar);
 			DialogExit();
 			int iPhrase = 1;
 			if (CheckCharacterPerk(pchar, "WildCaribbean")) iPhrase++;

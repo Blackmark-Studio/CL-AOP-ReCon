@@ -11,6 +11,10 @@ drunk {Ivresse}
 weapon blade parameters {Arme : dégâts min/max #ddmg_min#/#ddmg_max#}
 weapon blade type {Type : #sFencingTypeName#}
 weapon gun parameters {Arme : dégâts min/max #ddmg_min#/#ddmg_max#, temps de rechargement : #dchargespeed# s, précision : #daccuracy#%}
+weapon gun parameter damage {Dégâts min/max: #ddmg_min#/#ddmg_max#,}
+weapon gun parameter charge speed {temps de rechargement:}
+weapon gun parameter accuracy {précision:}
+
 youve_got {Objet trouvé -}
 used_item {Objet utilisé -}
 lucky_find {Bonne pioche !}
@@ -63,6 +67,13 @@ itmname_Azzy_bottle {Lampe}
 itmdescr_Azzy_bottle {Une ancienne lampe orientale, soigneusement scellée de tous côtés. Des hiéroglyphes inconnus sont gravés sur la soudure d’étain. Un étrange artefact, étonnamment léger pour un objet en métal.}
 itmname_Malyava {Boule de papier}
 itmdescr_Malyava {Message d’un détenu à ses compagnons.}
+itmname_HelenNote {Une note usée provenant d'un coffre rejeté sur le rivage}
+itmdescr_HelenNote
+{
+(illisible) comment as-tu pu choisir cette rouquine aguicheuse ?
+J'en ai assez de tomber sans cesse sur des choses qui me rappellent toi. Il est temps d'en finir - que la mer emporte tout ce que tu as touché.
+Adieu, (illisible)
+}
 itmname_Term_arm {Bras métallique}
 itmdescr_Term_arm {Un objet étrange et énigmatique rejeté par les vagues sur la plage. Il ressemble à une main squelettique, mais il est fait de métal. Le bras a été trouvé dépassant d’un fragment de coque de navire, entièrement recouvert d’algues. Il est évident qu’il a longtemps dérivé au gré des flots. En l’examinant de plus près, on distingue une gravure : DT2022. Ce que cela signifie et quel artisan aurait pu forger une telle chose demeure un mystère…}
 itmname_BlackLabel {Tache noire}
@@ -193,7 +204,7 @@ itmname_map_dominica {Carte de la Dominique}
 itmdescr_map_dominica {Carte de l’île inhabitée de la Dominique.}
 itmname_map_martiniqua {Carte de la Martinique}
 itmdescr_map_martiniqua {Une carte de la Martinique, pour ne pas vous perdre.}
-itmname_map_trinidad {Carte de Trinidad et Tobago}
+itmname_map_trinidad {Carte de Trinidad}
 itmdescr_map_trinidad {Une carte des deux îles de Trinidad et Tobago, qui vous évitera toute erreur de navigation.}
 itmname_map_nevis {Carte de Nevis}
 itmdescr_map_nevis {Une carte indiquant les environs et les routes de l’île de Nevis.}
@@ -1103,4 +1114,109 @@ itmname_LesopilkaDoc    {Contrat de la Compagnie néerlandaise des Indes occiden
 itmdescr_LesopilkaDoc
 {
 Document nécessaire pour l'inscription au registre des capitaines de la Compagnie néerlandaise des Indes occidentales.
+}
+
+itmname_MedicalSupplies {Fournitures médicales}
+itmdescr_MedicalSupplies {Une sacoche médicale préparée à la hâte. Elle contient des bandages, des fioles d'alcool, des onguents, des instruments chirurgicaux et d'autres fournitures indispensables, sans lesquelles la médecine dans les colonies se transforme rapidement en service funéraire.}
+itmname_EPL_TFS_letter	{Lettre}
+itmdescr_EPL_TFS_letter
+{
+Rapport du gouverneur de Saint-Domingue sur l’incident survenu à Hispaniola.
+}
+
+itmname_legendGuide {Guide du débutant pour les légendes}
+itmdescr_legendGuide
+{
+Un petit carnet rempli de conseils brefs mais importants. Un jour, vous l’avez tout simplement trouvé parmi vos affaires.
+}
+
+itmname_casket {
+Coffret de Gaspar Molina
+}
+itmdescr_casket {
+Le coffret personnel du secrétaire Molina. Il contient la correspondance de Vargas, des listes d’agents et des livres de comptes. C’est précisément ce chargement que Michel le Basque attend avec tant d’impatience à la Tortue.
+}
+itmname_jako_hat {
+Chapeau de Jaco
+}
+itmdescr_jako_hat {
+Il n’a rien de très présentable, mais protège efficacement la tête du soleil brûlant des Caraïbes.
+}
+itmname_blank {
+Formulaire vierge
+}
+itmdescr_blank {
+Un formulaire vierge portant un sceau officiel.
+}
+itmname_venezi_cehin {
+Sequin vénitien
+}
+itmdescr_venezi_cehin {
+Une ancienne pièce d’or dont l’avers représente le doge agenouillé devant saint Marc. C’est précisément cette pièce qui sert de laissez-passer pour une rencontre avec l’homme de confiance de Diego Vargas.
+}
+itmname_letter_forged {
+Lettre falsifiée
+}
+itmdescr_letter_forged {
+Une habile contrefaçon de la main d’Étienne Marceau. Un formulaire officiel castillan a été rempli de « preuves irréfutables » selon lesquelles don Ignacio Vela vend les secrets de Diego Vargas. Il ne reste plus qu’à glisser cette condamnation à mort au bon destinataire.
+}
+itmname_spa_lager {
+Instructions de Molina
+}
+itmdescr_spa_lager {
+Des instructions destinées à un courrier, indiquant avec précision les points de repère menant au camp espagnol en Jamaïque.
+}
+itmname_letter_Aruba {
+Ordres portant le sceau de don Íñigo de Cabrera
+}
+itmdescr_letter_Aruba {
+Les ordres de Cabrera, trouvés sur le commandant de la patrouille abattu.
+}
+itmname_letter_bask {
+Lettre scellée de Raul
+}
+itmdescr_letter_bask {
+La lettre est scellée. Son contenu intéressera certainement Marceau.
+}
+itmname_BladeBone {
+Croc
+}
+itmdescr_BladeBone {
+Une lame à l’aspect sinistre. Son tranchant est enduit d’un poison qui peut parfois pénétrer dans la plaie lors d’un coup bien porté.
+
+Particularité : 5 % de chances d’empoisonner l’ennemi lors d’un coup réussi.
+}
+itmname_raw_meat {
+Viande crue
+}
+itmdescr_raw_meat {
+Un morceau de viande fraîchement découpée. À le regarder, impossible de dire de quelle créature il provient. Il est fortement déconseillé de le manger cru. Sans préparation adéquate, mieux vaut même ne pas y toucher.
+~
+(Ingrédient universel pour la cuisine)
+}
+itmname_dried_meat {
+Viande séchée
+}
+itmdescr_dried_meat {
+De la viande de gibier séchée selon une recette particulière des chasseurs-boucaniers de la Tortue. Imprégnée de fumée et d’épices, elle confère une endurance remarquable au combat.
+}
+itmname_recipe_rimalye {
+Recette du boucanier Rimalie
+}
+itmdescr_recipe_rimalye {
+Une feuille jaunie couverte des gribouillis du boucanier Rimalie. Le vieil ivrogne a trouvé un moyen ingénieux d’accommoder presque n’importe quelle charogne : il ne suffit pas de plumer un cormoran crevé, il faut encore le faire généreusement macérer dans le rhum afin de le débarrasser des bactéries et du poison cadavérique.
+}
+itmname_recipe_dried_meat    {Recette de la viande séchée}
+itmdescr_recipe_dried_meat
+{
+Un morceau de papier contenant des notes de vieux chasseurs de Tortuga. Le secret de la préparation de la véritable viande séchée de boucanier réside dans une bonne marinade à base de vin vieux, de racine de gingembre piquante et d'un salage abondant, permettant à la viande de se conserver longtemps dans la cale tout en procurant un élan de force colossal.
+}
+itmname_strange_note {
+Le mot étrange
+}
+itmdescr_strange_note {
+Un morceau de parchemin. Quelque chose y est écrit.
+}
+itmtext_strange_note {
+Ne cherchez pas le navire en mer. Cherchez ceux qui l’ont quitté vivants. Minuit. Le vieux cimetière.
 }

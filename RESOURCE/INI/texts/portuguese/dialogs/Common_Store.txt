@@ -1471,3 +1471,9 @@ Você viaja bastante. Olha, se por acaso encontrar algum pó de múmia egípcia 
 Common_Store_433 {
 Certo.
 }
+Common_Store_434 {
+Bom dia, senhorita! Gostaria de comprar alguma coisa?
+}
+Common_Store_435 {
+Não, obrigada. Talvez outra hora.
+}

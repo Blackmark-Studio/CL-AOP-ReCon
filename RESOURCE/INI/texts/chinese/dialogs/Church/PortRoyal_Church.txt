@@ -1,66 +1,66 @@
 PortRoyal_Church_1_m {
-孩子，你有什么烦恼吗？
+我的孩子， 你有什么烦恼吗？ 
 }
 PortRoyal_Church_1_f {
-孩子，你有什么烦心事吗？
+我的女儿， 你有什么烦脑吗？ 
 }
 PortRoyal_Church_2 {
-有啥想问的，俺听着呢……
+有什么想问的， 我听着呢…… 
 }
 PortRoyal_Church_3 {
 @<RandPhraseSimple>
 }
 PortRoyal_Church_4_m {
-我在听，你说吧，孩子……
+我在听， 你说吧， 孩子…… 
 }
 PortRoyal_Church_4_f {
-我在听，你说吧，女儿……
+我在听， 你说吧， 女儿…… 
 }
 PortRoyal_Church_5_m {
-我第三次跟你说了，儿子，有什么问题就问吧。
+我第三次跟你说了， 孩子， 有什么问题就问吧。 
 }
 PortRoyal_Church_5_f {
-我第三次跟你说了，女儿，问你的问题吧。
+我第三次跟你说了， 女儿， 问你的问题吧。 
 }
 PortRoyal_Church_6_m {
-身为神职人员，事情已经够多了，现在你也来烦我，孩子……
+身为神职人员， 事情已经够多了， 现在你也来烦我， 孩子…… 
 }
 PortRoyal_Church_6_f {
-教会的事已经够多了，现在你也来烦我，孩子……
+教会的事已经够多了， 现在你也来烦我， 孩子…… 
 }
 PortRoyal_Church_7_m {
-我改主意了……
+我改主意了…… 
 }
 PortRoyal_Church_7_f {
-我改变主意了……
+我改变主意了…… 
 }
 PortRoyal_Church_8 {
-现在不行，神父……
+现在不行， 神父…… 
 }
 PortRoyal_Church_9 {
 @<RandPhraseSimple>
 }
 PortRoyal_Church_10 {
-嗯，现在也没啥好说的……
+嗯， 现在也没什么好说的…… 
 }
 PortRoyal_Church_11 {
-会的，会的……只是晚点……
+会的， 会的…… 只是晚点…… 
 }
 PortRoyal_Church_12 {
-请原谅我，神父……
+请原谅我， 神父…… 
 }
 PortRoyal_Church_13 {
-神父，请问本地的放债人是您的教友吗？
+神父， 请问本地的放贷人是您的教友吗？ 
 }
 PortRoyal_Church_14 {
-是的，他会去教堂，但很少去。
+是的， 他会去教堂， 但很少去。 
 }
 PortRoyal_Church_15 {
-他是个什么样的人？
+他是个什么样的人？ 
 }
 PortRoyal_Church_16 {
-我不太好说别人坏话。\n我建议你去找我们的一位教友，Jillian Etterberry。我知道她和那个人正好有很大的麻烦。说不定你还能帮上她什么忙。\nJillian 是个很虔诚的教友，基本上每天上午十一点左右会来教堂，祷告两三个小时。\n不过你在镇上也能遇到她。
+我不太好说别人坏话\n我建议你去找我们的一位教友， 吉莉安.阿特伯里。 我知道她和那个人正好有很大的麻烦。 说不定你还能帮上她什么忙\n吉莉安是个很虔诚的教友， 基本上每天上午十一点左右会来教堂， 祷告两三个小时\n不过你在镇上也能遇到她。 
 }
 PortRoyal_Church_17 {
-谢谢您，神父。
+谢谢您， 神父。 
 }

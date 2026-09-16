@@ -253,6 +253,23 @@ GivePrisonFree.4 {Looks like @<sName> simply tricked me. We didn’t find any tr
 GivePrisonFree.5 {I agreed to help a prisoner in the @<sCity> prison named @<sName>. I need to speak with the prison warden; maybe there’s a way to resolve this.}
 GivePrisonFree.6 {The two days I was given have passed, and I still haven’t managed to resolve the matter of freeing the prisoner named @<sName>. It’s a pity, but he’ll have to remain in jail.}
 GivePrisonFree.7 {I failed to free the prisoner named @<sName>. Oh well, I’ll manage without his treasure.}
+
+Tutorial_Eng
+{
+Reference: What is happening in England?
+}
+
+Tutorial_Eng.1
+{
+England has been going through hard times for almost a hundred years. King Henry VIII of England could not obtain a divorce from his first wife, Catherine of Aragon, because the Pope would not allow it. Then the English archbishop Cranmer stepped in and suggested that Henry grant himself a divorce, since he was “God’s anointed.” In 1534 Henry VIII proclaimed himself “Head of the Church” by an Act of Parliament, thereby separating the English Church from the authority of Rome. One divorce did not satisfy Henry VIII: he had six wives in all, two of whom, Anne Boleyn and her cousin Catherine Howard, he sent to the scaffold without a qualm. Since then there has been no peace in England. Mary Tudor tried to restore the Church to papal authority, but John Calvin changed England, and it became Puritan.
+    The civil war between Charles I and Oliver Cromwell ended with the execution of the King of England. The Independent republic (1649–1660) brought England no peace; ten years of Puritan rule exhausted all Englishmen in the Old World. And in the spring of 1660 they restored the English throne to Charles II Stuart, son of the executed Charles I.
+    Truly, the fate of a state must not be entrusted to religious fanatics! Was it worth spilling rivers of blood, depriving the king of both power and his head, only to return the throne to his son ten years later?
+    England’s recent war with Spain in 1655 battered both powers, though Spain suffered more heavily and even lost Jamaica. So Spain and England are now at peace, and the letters of marque issued by the English have been annulled. But all of that is nonsense: the Spaniards were robbed before and they are still being robbed now; there is simply too much innocent blood on their hands.
+    Since 1664 everything here has been run by the governor of Jamaica, Sir Thomas Modyford. Upon arriving in Port Royal, he had clear instructions from Charles II to curb piracy and maintain good trading relations with Spain. But he has no intention of carrying out the King of England’s order, although he pretends otherwise.
+    Sir Thomas Modyford had previously been governor of Barbados. When Cromwell came to power, Barbados, through Modyford’s efforts, refused to recognize the new British authority. He fancied independence, you see. But Cromwell was not the sort of Oliver to forgive such tricks, and he sent a squadron to bring the island to heel. Modyford made a show of resistance, but quickly came to terms with the Puritans and returned Barbados to the fold of the mother country. After Charles II was crowned king of Britain, Sir Thomas Modyford was appointed governor of Jamaica, reportedly thanks to influential relatives in Charles’s circle.
+    And so Sir Thomas Modyford, governor of Jamaica, is a great lover of the yellow devil. His favorite is the buccaneer leader Edward Mansfield, a Dutchman from Curaçao, though Henry Morgan is hardly neglected either. Who would refuse mountains of Spanish gold, which Henry brings back from every raid on Spanish settlements?
+}
+
 Tutorial_Fra {Reference: What’s happening in France?}
 Tutorial_Fra.1
 {
@@ -274,6 +291,28 @@ The island of Tortuga was of great strategic importance, especially for the Span
 
 In 1664, Louis XIV officially granted Western Hispaniola (another name for Tortuga) to the French West India Company and appointed Bertrand d’Ogeron, a former buccaneer, as governor of the territory. The Brethren of the Coast had no complaints under previous governors of Tortuga, but now Tortuga was a paradise for buccaneers. Governor d’Ogeron ordered women to be brought from Europe to his island!!! A paradise for the buccaneer!
 }
+
+Tutorial_Spa
+{
+Reference: What is happening in Spain?
+}
+
+Tutorial_Spa.1
+{
+With the death of Philip IV, the last great Spanish monarch, the country entered a period of prolonged regency. The new king, Charles II of Habsburg, is four years old, so weak and afflicted with so many illnesses that it is difficult to imagine how he is alive at all. And no wonder: his father Philip IV was already old when he married Mariana of Austria and, rumor has it, suffered from “various ailments” himself. Thus Mariana (as Anna of Austria was called in Spain) became regent for her son. The danger this could entail had been shown by recent events in France—the Fronde uprisings against Mazarin in 1650. Philip IV therefore prepared the regency in advance: to assist the queen, he appointed a carefully selected Government Junta made up of representatives of the political, ecclesiastical, and public authorities.
+    Despite this junta, Mariana, unable to cope with the burden of her duties, returned to the institution of favorites in order to secure support for the regency of a world power. Her choice fell on her Austrian confessor, the Jesuit father Johann Eberhard Nithard. Despite warnings, the queen at first granted him only nominal authority by appointing him Grand Inquisitor of Spain, which automatically made him a member of the Government Junta. His foreign origin and political propaganda aroused serious hostility toward him among the government and broad sections of the population, made still worse by the way Mariana and Nithard treated the experienced and respected half-brother of King Charles II, Don Juan. Don Juan is one of the most interesting men in Spain. He is a patron of scholars such as De la Faille, Caramuel y Lobkowitz, and Juanini, owner of an enormous library, and founder of Spanish reformist science. Moreover, as a brave general and seasoned governor, he played a decisive role in suppressing the uprisings in Naples and Barcelona. By contrast, his command in Flanders and Portugal between 1656 and 1663 was far less successful.
+    Poor Spain inspires a certain pity, attacked from every side at a moment of weakness. But there is a reason why everyone hates the Spaniards.
+    Buccaneers—ordinary cattle hunters, mostly French—had lived peacefully on Puerto Rico and the neighboring islets, bothering no one, when the Spaniards suddenly decided, despite the fact that the buccaneers’ trade was profitable for them as well, to drive them all from the island of San Domingo or, if possible, destroy them completely.
+    The beginning of this cruel design, disastrous even for the Spaniards themselves, was very easy. Following the method they had used so successfully against the natives of America, they suddenly attacked the scattered, unsuspecting, innocent buccaneers, killed some of them, and carried others off into slavery. From that moment the hunters became more cautious, always moved in small groups ready to resist, and when they were attacked despite this, they fought so desperately that they almost always defeated the Spaniards, even though the latter had superior numbers, and forced them to flee for safety.
+    The Spaniards then changed their method of warfare. The individual hunting down of buccaneers, which had cost more than one true-believing Spaniard his life, ceased. Instead, the Spaniards began attacking the buccaneers at night at their boucans, killing masters and servants alike and sparing not even the dogs. These atrocities drove the buccaneers into a fury. They united and in turn began an offensive war, sparing no enemy. It worked. The Spaniards apparently ceased all hostile action, and the buccaneers began to flatter themselves with the hope that they would finally be left in peace. But their enemies had only been waiting for reinforcements. As soon as these arrived from the Spanish colonies, the war flared up again. The buccaneers, however, also received reinforcements: Frenchmen from Tortuga and other islands, as well as many other seekers of adventure and booty, joined them. The enemies fought incessantly, and blood flowed across the whole island. To this day many places on San Domingo retain the name “fields of murder.” All of this took place between 1660 and 1665.
+
+    There are no more bloodthirsty devils than the Spaniards and Portuguese. Between 1535 and 1660 alone, so much precious metal was carried from America to Spain that all the mines of the Old World combined had probably not produced half as much over their entire existence by that time. Half the indigenous population of the New World—by the most conservative estimates, five or six million Indians—perished in the first century and a half of Spanish rule, a substantial part of them in the mines of Mexico and Peru.
+    There is a filibuster in the Brethren of the Coast named Montbars the Exterminator. He never takes a prize from captured ships. Armed Spaniards, gold, goods—everything goes overboard, and his crew is made up of Indians whom he freed from Spanish slavery.
+    While mercilessly plundering its overseas colonies, Spain established the harshest monopoly on trade with the New World. From the beginning of the sixteenth century, Seville became the only Spanish port permitted to trade with all overseas territories. It was here that the plundered wealth of the American continent arrived, shipped through Veracruz in Mexico, first through Nombre de Dios and later through Puerto Bello on the Atlantic coast of the Isthmus of Panama.
+    From 1537 onward, not a single Spanish merchant ship crossed the Atlantic alone—this strict rule was dictated by the interests of the monopoly. Moreover, from the very beginning of the sixteenth century, the waters washing the Spanish Crown’s overseas possessions were closed to ships of other countries. At first this system worked flawlessly: Spain and Portugal had opened routes to India and the New World much earlier than the other European powers. In 1493 Pope Alexander VI divided the whole world under heaven between these two “neighbors,” and a year later they concluded an agreement demarcating the spheres of their future conquests, so that Spain’s “half” of the globe included all of America except Brazil, while Portugal’s included Brazil, Africa, and Asia.
+    But the hour of reckoning has come. Spanish blood and Spanish gold—for the blood of millions of Indians, tens of thousands of French buccaneers, and English settlers.
+}
+
 Tutorial_Hol {Reference: What’s happening in Holland?}
 Tutorial_Hol.1
 {
@@ -462,6 +501,30 @@ Children and women were sacrificed less often. Women were sacrificed in honor of
 
 The Aztecs also honored their gods with singing, dancing,
 }
+
+Tutorial_Sharp
+{
+Reference: Who was Captain Sharp?
+}
+
+Tutorial_Sharp.1
+{
+One of the most colorful figures of the filibustering epic was Captain Sharp, who became famous not so much as one of the organizers of the crossing of the Isthmus of Panama, but as the hero of several anecdotal and absurd stories.
+    On April 5, 1680, a pirate detachment numbering about four hundred men set out westward through the jungle. The crossing was made possible to a large extent by the support of local Indians, who had their own scores to settle with the Spaniards.
+    The pirates stormed the small town of Santa María without serious losses. The booty, however, was meager—the gold mined in the nearby workings had been sent to Panama three days before the attack. The pirates decided to repeat Morgan’s feat and storm Panama, while the modest booty captured in Santa María was sent back across the isthmus under guard.
+
+    The inhabitants of Panama, however, had been warned of the filibusters’ approach, so the idea of storming the city had to be abandoned. Instead, the pirates fought three Spanish galleons that greatly outmatched them in both armament and manpower. Thanks to their courage and skill, the filibusters managed to board and capture the Spanish vessels.
+    The only man who did not take part in that historic battle was Captain Bartholomew Sharp, who was busy plundering a pearl fishery at the time. In addition, his companions had found wine on a small island, while Sharp himself had found a beautiful Spanish woman, and so he was in no hurry to join the battle.
+    The morning after the victory, the pirates split up. Seventy men led by Admiral Coxon left, while the rest came under the command of Admiral Sawkins. Some time later the pirates captured a vessel carrying wages to Panama, and each man received two hundred and forty-seven coins. Encouraged by the success, Sawkins attempted to storm the small town of Pueblo Nuevo, but the attempt failed and the admiral himself was killed. Sharp took command in his place, promising that every pirate would return from the expedition with a thousand pounds sterling in booty.
+    Even so, another seventy pirates broke away after his election and, boarding a captured vessel, left the camp. Subsequent events showed that in their own way they had been right: Sharp proved a hopeless commander and, instead of capturing ships and towns, dragged the pirates into a fruitless search for Drake’s treasure. Two months later the pirates deposed him and elected John Watling admiral. This happened on Juan Fernández Island, where the pirates, sailing away in haste, forgot an Indian named William, who lived alone there for several years until the ships of Davis and Swan found him.
+    Watling decided to storm the town of Arica, but with only one hundred and forty men at his disposal he suffered a crushing defeat and was killed in the assault. Thus Sharp became admiral for the second time.
+    For several weeks afterward he cruised off the coast of South America aboard the galleon “Trinity.” He managed to capture the rich ship “Saint Peter,” and then another one, “Saint Rosario.” The story connected with the latter made Sharp the laughingstock of all the pirates of the Caribbean. After taking wine and chests of silver coins from the ship, Sharp’s men found ingots of some white metal in the hold, which they took for tin. The filibusters were already preparing to load it aboard their own ship when the admiral noticed a Spanish lady on the captured vessel. She persuaded him to let the ship go without further plunder—the price of the favor, I think, is obvious; the fellow was exceedingly amorous! Sharp decided to content himself with the chests of coin and took only one ingot, intending to cast bullets from it.
+    The first man to see the ingot on Antigua immediately understood how badly Sharp had been fooled: the holds of the “Saint Rosario” had contained... the largest cargo of silver ever to fall into pirate hands. It was also said that the beautiful lady received a handsome reward from the owners of the silver.
+    Sharp’s voyage continued for several more months. He took his galleon around Cape Horn and reached the West Indies, where, fearing Morgan, who was hunting his former companions, the pirates abandoned the ship and reached England aboard other vessels. There, at the demand of the Spanish ambassador, they were all arrested. Sharp, however, hired lawyers who managed to prove that their actions had been self-defense against Spanish attacks, and the pirates were acquitted. Sharp’s later fate is unknown, but apparently he lived comfortably in England on plundered Spanish gold.
+
+    And why did the game “Corsairs 1” turn this fellow into the object of a personality cult? Was that supposed to be a joke? Though, judging by everything, Captain Sharp really did have an enormous number of children scattered across the archipelago.
+}
+
 Tutorial_Dictonary {Help: Glossary of Terms}
 Tutorial_Dictonary.1
 {
@@ -513,6 +576,54 @@ PRIVATEERING (from Dutch kaper – sea robber) – attacks by armed private merc
 *
 QUARTERDECK (English quarter-deck, quarter – quarter, deck – deck) – a raised part of the upper deck at the stern of a ship
 }
+
+Tutorial_Fight_Info
+{
+Reference: The game’s combat system
+}
+
+Tutorial_Fight_Info.1
+{
+THE GAME’S COMBAT SYSTEM
+*
+Mastery of blade and pistol will let you come out alive from any scrape. The combat system gives you three types of offensive strikes, two types of parries, a block, one sweeping circular attack for both defense and offense, the ability to fire a pistol, and dodges backward and to the sides.
+*
+LIFE
+A character’s Life is the amount of damage he can withstand. Life increases with every new level and can also be increased by additional abilities.
+During combat, your Life is shown as a red bar in the upper-left corner, to the left of the character portrait. Life can be restored during combat by using bottles of elixirs (“healing potions”) through the Enter/Use menu or with a hotkey.
+*
+HEALTH
+Health is an indicator of the hero’s overall physical condition. The worse the hero’s health, the worse his parameters become in the game. Health deteriorates if the hero receives many wounds and recovers if he stays out of hand-to-hand combat for a long time. If it falls below Excellent, the hero begins to receive penalties to characteristics, which in turn impose penalties on skills. Health recovers on its own, rather slowly, but it does recover. It recovers fastest when the hero does nothing (sleeps in a tavern), and twice as slowly while sailing on a ship. The “Excellent Health” ability doubles the rate of health recovery. A golden background on the health indicator means that health has recovered to its current maximum. However, the maximum health itself can also decrease after serious injuries (scars and maiming that make themselves felt in battle even after complete healing). Priests in churches can restore maximum health, but not often, not by much, and for a great deal of money. Sometimes it takes visits to two or three priests for “Good, golden” health to become “Good, white” health—and even then you must wait until health restores itself to “Excellent, golden.”
+*
+ENERGY
+A person cannot fight without stopping; sooner or later fatigue will overcome him. The amount of Energy depends on the hero’s “Reaction” characteristic: the higher the value, the more the character is capable of. Every strike consumes a certain amount of Energy, so you must spend your strength very carefully in battle. Energy is displayed as a blue bar to the right of the character portrait. If you do not have enough Energy, you will not be able to strike. Energy gradually recovers during combat. If you see that very little remains and there is not enough for attacks, try blocking or parrying enemy blows until your Energy recovers. Additional abilities will help you spend less Energy on attacks and restore it faster.
+*
+ENEMY ENERGY AND LIFE
+During combat, bars showing your enemies’ Life and Energy will hang above their heads. When you or your allies strike an enemy, a number will fly off his head showing the amount of damage dealt.
+***
+TYPES OF ATTACKS
+Slash — a cutting blow delivered with a swing. It deals medium damage and requires little Energy.
+*
+Thrust — a quick attack that deals minor damage. It requires more Energy than a slash, but its speed allows you to interrupt an opponent’s wind-up.
+*
+Power attack — requires a great deal of Energy and is delivered with a large, slow swing, but deals very heavy damage and always breaks through a block.
+*
+Circular attack — requires a medium amount of Energy and deals minor damage to all characters standing around you. A character hit by a circular attack staggers slightly backward, giving the hero room to maneuver and a respite for a counterattack.
+*
+Parry — allows you to deflect an attack by knocking the opponent’s saber aside. It requires no Energy and protects against a power attack. A successful parry breaks the opponent’s rhythm and drains most of his Energy.
+*
+Feint — looks the same as a power attack. If you perform a feint and the opponent makes any attack, your character will catch his saber and deliver a counterblow. Performing a feint costs no Energy, while a successfully executed feint that deals damage consumes only a little. A feint can intercept a power attack.
+*
+Block — allows you to stop all attacks except a power attack. It consumes no Energy. You can enter a block at any moment, interrupting your own attack if you can immediately see that it will fail. Ordinary attacks can sometimes break through a block if the opponent has the appropriate abilities.
+*
+Pistol shot — deals damage to the enemy and forces him to step back. Pistols come in different kinds and can hold one, two, or four charges. Bullets are required to fire. Whether pistols can be reloaded in combat depends on the game setting; reloading is performed only with the saber sheathed, or not at all.
+*
+Dodge — allows you to leap two steps backward or to the side, taking the hero out of the path of an attack or out of the thick of battle.
+*
+SETTING THE ATTACK KEYS
+To make control easier, the game has an attack-mode button; holding it gives a second mode to a button. By default, thrust and circular attack share one button—the left mouse button; power attack and feint share the middle mouse button; slash and parry share the right mouse button. Block, pistol shot, and dodges each have their own button.
+}
+
 Tutorial_Seafight_Info {Help: Naval Battles on Ships}
 Tutorial_Seafight_Info.1
 {
@@ -1186,6 +1297,43 @@ Askold has tasked me with finding some tomb of God-knows-who on the island of Gu
 I consider it pointless to fill the ship’s log with entries about my dealings with Askold, so I’ll stop wasting paper for no reason.
 }
 Ascold.14 {The Spaniards at the pyramid have been eliminated.}
+
+ContractWithHell
+{
+Text of the contract with the Department of Hell for Human Accounting
+}
+
+ContractWithHell.1
+{
+Contract.
+
+Caribbean Sea.
+
+The Department of Hell for Human Accounting, represented by the demon Azzy, acting pursuant to the Regulations on the Status of Demons in the Human World, hereinafter referred to as the Contractor, on the one part, and @<Conrtragent>, acting according to his own wishes and of his own free will, hereinafter referred to as the Client, on the other part, have entered into the present contract as follows:
+
+Subject of the contract:
+
+1. The subject of this contract is the Contractor’s provision of invulnerability of the Client’s body.
+
+2. The Contractor shall take all necessary measures to ensure the absolute immunity of the Client’s body to any physical effects, including: attacks with edged weapons, attacks with firearms, the Client’s body falling from a great height, various objects falling onto the Client’s body, and other physical effects. Under this contract, the Contractor also undertakes to protect the Client’s ship from mechanical damage.
+
+3. The Client shall provide, in a timely manner, the amount of energy necessary for the Contractor to fulfill his obligations. The required amount of energy is established at three persons or units of unclean creatures in the caves and catacombs of the Caribbean Sea per day.
+
+4. Every day at twelve o’clock at night, the Contractor shall withdraw energy in accordance with the terms of this contract. The Contractor shall inform the Client daily of the current state of affairs by providing the Client with the current running balance under the contract.
+
+5. If the Client fails to perform, or improperly performs, clause three of this contract, the Contractor, in order to fulfill his obligations under clause one of this contract, shall make up the required daily energy quota at the Client’s expense—that is, from the Client’s life force.
+
+6. The Client has the right to provide the Contractor with energy in advance. That is, all persons or unclean creatures killed by the Client in excess of the prescribed quota shall be credited toward future energy withdrawals by the Contractor.
+
+7. The Parties are prohibited from involving third parties in the performance of their obligations under this contract.
+
+8. The Contractor has the right to unilaterally alter the Client’s daily energy-supply quotas according to the Contractor’s needs and without prior notice to the Client.
+
+9. This contract enters into force from the moment of its oral approval and remains in effect indefinitely. By mutual agreement, the Parties may terminate this contract without penalties. The termination procedure requires a personal meeting between the Client and the Contractor.
+
+Legal particulars and oral approvals of the Parties.
+}
+
 Azzy_HellSign {Current message broadcast to the Office of Hell subscribers}
 Azzy_HellSign.1
 {

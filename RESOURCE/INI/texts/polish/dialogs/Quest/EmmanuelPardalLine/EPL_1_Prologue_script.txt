@@ -1,0 +1,12 @@
+EPL_1_Prologue_script_1 {Señorita, nie mogę sprzedawać na kredyt. Nie jest pani stąd. A jeśli jutro wsiądzie pani na pierwszy przepływający statek i zniknie bez śladu?}
+EPL_1_Prologue_script_2 {Ale ja nie proszę o kredyt. Zapłacę od razu dwie trzecie ceny, a resztę mogę odpracować - pomóc panu albo pańskiej żonie.}
+EPL_1_Prologue_script_3 {Nie mam aż tyle pracy. Sam doskonale sobie radzę, a żony nie mam. Mogę dać pani dwie trzecie towaru...}
+EPL_1_Prologue_script_4 {Gasten Fox, nie widzi pan, że mimo młodego wieku nieszczęście wypisane jest na twarzy señority? Proszę okazać trochę współczucia.}
+EPL_1_Prologue_script_5 {A co pani może wiedzieć o ludziach, droga @<pchar>, skoro nawet we własnym ojczymie nie dostrzegła pani łotra, niech spoczywa w pokoju.}
+EPL_1_Prologue_script_6 {Ostrożnie, Fox. Wie pan, że potrafię stracić panowanie nad sobą z byle powodu.}
+EPL_1_Prologue_script_7 {Najpierw zamień spódnicę na spodnie, zanim zaczniesz grozić. Komendant nie stoi już za tobą, gotów tuszować każdy twój wybryk. To przyjacielska rada, więc nie bierz jej za zniewagę.}
+EPL_1_Prologue_script_8 {Pod spódnicą też coś mam. To karzoletta. Pozwól, że pokażę ci, jak dobrze potrafię o siebie zadbać, i odwzajemnię się przyjacielską radą: broń się!}
+EPL_1_Prologue_script_9 {Nie bądź głupia.}
+EPL_1_Prologue_script_10 {Broń się albo zamień spodnie na spódnicę!}
+EPL_1_Prologue_script_11 {Piraci zdobyli hiszpańską kolonię La Vega, a przy okazji próbowali zaatakować Santo Domingo. Nie udało im się jednak; wszyscy zginęli pod murami miasta.}
+EPL_1_Prologue_script_12 {Straszne wieści: piraci urządzili rzeź w naszej kolonii La Vega i podobno nikogo nie oszczędzili. Dzięki Bogu kara już ich dosięgła - wszyscy ci łajdacy polegli pod murami Santo Domingo podczas nieudanej próby zdobycia miasta od strony lądu.}

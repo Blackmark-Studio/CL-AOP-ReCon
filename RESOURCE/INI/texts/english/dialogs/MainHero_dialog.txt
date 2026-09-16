@@ -436,3 +436,52 @@ Put the parrot away.
 MainHero_dialog_142 {
 Show the parrot up.
 }
+
+LeBasque_1 {
+...
+}
+LeBasque_2 {
+Beyond the gates, nothing remains of merry Tortuga. No songs, no curses, no drunken laughter...
+}
+LeBasque_3 {
+...
+}
+LeBasque_4 {
+Raul should appear any minute now. The main thing is not to give myself away and not to miss anything.
+}
+LeBasque_5 {
+...
+}
+LeBasque_6 {
+Raul sold the Spaniard information and received money and new instructions in return. Everything seems to revolve around someone called le Basque. I know enough now; time to return to Marceau.
+}
+LeBasque_7 {
+...
+}
+LeBasque_8 {
+The meeting should begin soon... Sea to the left, lighthouse ahead, palms and rocks to the right. There could hardly be a better place for an ambush. I need to find a spot with a clear view.
+}
+LeBasque_9 {
+...
+}
+LeBasque_10 {
+They will not see me here, while I can see everything. All that remains is to wait.
+}
+MainHero_dialog_143 {
+Hmm... Jacquot's hat. He'd never part with it willingly... And here are the tracks. Three men were dragging one. They lead to the cave. I need to hurry.
+}
+MainHero_dialog_144 {
+It's midnight already. Time to place the sequin on the wooden stand with the book...
+}
+MainHero_dialog_145 {
+Everything went perfectly. All that's left is to leave the letter on the corpse and return to the ship.
+}
+MainHero_dialog_146 {
+Her breathing is steady - she'll come to soon...
+}
+MainHero_dialog_147 {
+Time to die...
+}
+MainHero_dialog_148 {
+Damn it... Again...
+}

@@ -1,28 +1,28 @@
-QuestsUtilite_1 {来自地狱的讯息：你的生命力已被完全收取，作为我们服务的报酬。欢迎来到地狱。}
-QuestsUtilite_2 {地狱般的罚款通知，请查收！}
+QuestsUtilite_1 {来自地狱的讯息： 你的生命力已被完全收取， 作为我们服务的报酬。 欢迎来到地狱。 }
+QuestsUtilite_2 {来自地狱的罚款通知： 请查收！ }
 QuestsUtilite_3 {正在设置箱子}
-QuestsUtilite_4 {这个船长的箱子里会有摩根的钥匙！}
-QuestsUtilite_5 {我不想一遍又一遍地重复自己。}
-QuestsUtilite_6 {我们已经谈过这件事了。}
-QuestsUtilite_7 {这个话题我们已经讨论过了。}
-QuestsUtilite_8 {我再说一遍：我可不想一件事说十遍！}
-QuestsUtilite_9 {我再说一遍，这事我们已经谈过了！}
-QuestsUtilite_10 {我都说过了，这事我们已经谈过了。你记性不好吗？}
+QuestsUtilite_4 {这个船长的箱子里会有摩根的钥匙！ }
+QuestsUtilite_5 {我不想一遍又一遍地重复自己。 }
+QuestsUtilite_6 {我们已经谈过这件事了。 }
+QuestsUtilite_7 {这个话题我们已经讨论过了。 }
+QuestsUtilite_8 {我再说一遍： 我可不想一件事说十遍！ }
+QuestsUtilite_9 {我再说一遍， 这事我们已经谈过了！ }
+QuestsUtilite_10 {我都说过了， 这事我们已经谈过了。 你记性不好吗？ }
 QuestsUtilite_11_m {你真的惹怒我了}
 QuestsUtilite_11_f {你真的惹怒我了}
-QuestsUtilite_12 {我无意再和你多说一句。}
-QuestsUtilite_13 {我不想再跟你说话了！}
-QuestsUtilite_14 {嗯，不太对……}
-QuestsUtilite_15 {好的，伙计。}
-QuestsUtilite_16 {如你所愿。}
-QuestsUtilite_17 {好了好了，别生气。}
-QuestsUtilite_18 {听你的，不过别大声嚷嚷。}
-QuestsUtilite_19 {抱歉，我今天状态不太好……从早上开始头就一直疼……}
-QuestsUtilite_20 {如你所愿。}
-QuestsUtilite_21 {真可惜……}
-QuestsUtilite_22 {没什么大不了的。}
-QuestsUtilite_23 {看起来这就是宝藏。}
+QuestsUtilite_12 {我无意再和你多说一句。 }
+QuestsUtilite_13 {我不想再跟你说话了！ }
+QuestsUtilite_14 {嗯， 不太对…… }
+QuestsUtilite_15 {好的， 伙计。 }
+QuestsUtilite_16 {如你所愿。 }
+QuestsUtilite_17 {好了好了， 别生气。 }
+QuestsUtilite_18 {听你的， 不过别大声嚷嚷。 }
+QuestsUtilite_19 {抱歉， 我今天状态不太好…… 从早上开始头就一直疼…… }
+QuestsUtilite_20 {如你所愿。 }
+QuestsUtilite_21 {真可惜…… }
+QuestsUtilite_22 {没什么大不了的。 }
+QuestsUtilite_23 {看起来这就是宝藏。 }
 QuestsUtilite_24 {妻子的态度}
-QuestsUtilite_25 {当前妻子的态度：}
-QuestsUtilite_26 {，不再有任何联系。}
-QuestsUtilite_27 {，对不起……}
+QuestsUtilite_25 {当前妻子的态度： }
+QuestsUtilite_26 {， 不再有任何联系。 }
+QuestsUtilite_27 {， 对不起…… }

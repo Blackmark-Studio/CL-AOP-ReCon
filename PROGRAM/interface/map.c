@@ -314,26 +314,26 @@ void CalculateInfoData()
 	{
 		isSkipable = true;
 	}
-	SetCurrentNode("BTN_OK");
+	SetCurrentNode("B_OK");
 		
-    SetSelectable("BTN_CANCEL",true);
+    SetSelectable("B_CANCEL",true);
 
-    if (!isSkipable && !bBettaTestMode)
+    if (MOD_SKILL_ENEMY_RATE >= 10 && !isSkipable && !bBettaTestMode)
     {
         if (CheckOfficersPerk(pchar, "SailingProfessional"))
         {
-		    if (rand(100) > 75) SetSelectable("BTN_CANCEL",false);
+		    if (rand(100) > 75) SetSelectable("B_CANCEL",false);
         }
 		else
 		{
-			if (rand(100) > 25) SetSelectable("BTN_CANCEL",false);
+			if (rand(100) > 25) SetSelectable("B_CANCEL",false);
         }
 	}
 	if (pchar.space_press == "1") bEncType = false;
 	
 	if (bEncType && !bBettaTestMode) // спец тип не пропустить
 	{
-        SetSelectable("BTN_CANCEL",false);
+        SetSelectable("B_CANCEL",false);
 	}
 	pchar.space_press = 0;
 }

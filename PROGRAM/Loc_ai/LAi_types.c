@@ -47,6 +47,14 @@
 #include "Loc_ai\types\LAi_injure.c"
 //Обезьяны
 #include "Loc_ai\types\LAi_monkey.c"
+//Девушки борделя 
+#include "Loc_ai\types\LAi_horse.c"
+//Пьяницы
+#include "Loc_ai\types\LAi_drinker.c"
+// Музыканты
+#include "Loc_ai\types\LAi_musician.c"
+// Рыбаки
+#include "Loc_ai\types\LAi_fisher.c"
 
 //------------------------------------------------------------------------------------------
 //Player
@@ -231,6 +239,147 @@ void LAi_SetSitTypeNoGroup(aref chr)
 	LAi_type_sit_Init(chr);
 }
 
+//пьяницы
+//Пьяница, сидящий на земле
+void LAi_SetDrinkerSitType(aref chr)
+{
+	chr.chr_ai.type = LAI_DEFAULT_TYPE;
+	chr.drinkersit = true;
+	LAi_type_drinker_Init(chr);
+	LAi_SetDrinkerSitAnimation(chr);
+	LAi_group_MoveCharacter(chr, LAI_GROUP_CITIZEN);
+}
+
+void LAi_SetDrinkerSitTypeNoGroup(aref chr)
+{
+	chr.chr_ai.type = LAI_DEFAULT_TYPE;
+	chr.drinkersit = true;
+	LAi_type_drinker_Init(chr);
+	LAi_SetDrinkerSitAnimation(chr);
+}
+
+//Пьяница стоячий
+void LAi_SetDrinkerStayType(aref chr)
+{
+	chr.chr_ai.type = LAI_DEFAULT_TYPE;
+	DeleteAttribute(chr, "drinkersit");
+	DeleteAttribute(chr, "drinkersitbench");
+	LAi_type_drinker_Init(chr);
+	LAi_group_MoveCharacter(chr, LAI_GROUP_CITIZEN);
+}
+
+void LAi_SetDrinkerStayTypeNoGroup(aref chr)
+{
+	chr.chr_ai.type = LAI_DEFAULT_TYPE;
+	DeleteAttribute(chr, "drinkersit");
+	DeleteAttribute(chr, "drinkersitbench");
+	LAi_type_drinker_Init(chr);
+}
+
+//Пьяница на лавке
+void LAi_SetDrinkerSitBenchType(aref chr)
+{
+	chr.chr_ai.type = LAI_DEFAULT_TYPE;
+	chr.drinkersitbench = true;
+	LAi_type_drinker_Init(chr);
+	LAi_SetDrinkerSitBenchAnimation(chr);
+	LAi_group_MoveCharacter(chr, LAI_GROUP_CITIZEN);
+}
+
+void LAi_SetDrinkerSitBenchTypeNoGroup(aref chr)
+{
+	chr.chr_ai.type = LAI_DEFAULT_TYPE;
+	chr.drinkersitbench = true;
+	LAi_type_drinker_Init(chr);
+	LAi_SetDrinkerSitBenchAnimation(chr);
+}
+
+//Установить персонажу тип стоячего скрипача
+void LAi_SetViolinistStayType(ref chr)
+{
+	chr.chr_ai.type = LAI_DEFAULT_TYPE;
+	chr.musician = "ViolinistStay";
+	LAi_type_Musician_Init(chr);
+	LAi_group_MoveCharacter(chr, LAI_GROUP_CITIZEN);
+}
+
+//Установить персонажу тип стоячего скрипача, без перемещения в группу
+void LAi_SetViolinistStayTypeNoGroup(ref chr)
+{
+	chr.chr_ai.type = LAI_DEFAULT_TYPE;
+	chr.musician = "ViolinistStay";
+	LAi_type_Musician_Init(chr);
+}
+
+//Установить персонажу тип стоячего флейтиста
+void LAi_SetFlutistStayType(ref chr)
+{
+	chr.chr_ai.type = LAI_DEFAULT_TYPE;
+	chr.musician = "FlutistStay";
+	LAi_type_Musician_Init(chr);
+	LAi_group_MoveCharacter(chr, LAI_GROUP_CITIZEN);
+}
+
+//Установить персонажу тип стоячего флейтиста, без перемещения в группу
+void LAi_SetFlutistStayTypeNoGroup(ref chr)
+{
+	chr.chr_ai.type = LAI_DEFAULT_TYPE;
+	chr.musician = "FlutistStay";
+	LAi_type_Musician_Init(chr);
+}
+
+//Установить персонажу тип сидящего флейтиста
+void LAi_SetFlutistSitType(ref chr)
+{
+	chr.chr_ai.type = LAI_DEFAULT_TYPE;
+	chr.musician = "FlutistSit";
+	LAi_type_Musician_Init(chr);
+	LAi_group_MoveCharacter(chr, LAI_GROUP_CITIZEN);
+}
+
+//Установить персонажу тип сидящего флейтиста, без перемещения в группу
+void LAi_SetFlutistSitTypeNoGroup(ref chr)
+{
+	chr.chr_ai.type = LAI_DEFAULT_TYPE;
+	chr.musician = "FlutistSit";
+	LAi_type_Musician_Init(chr);
+}
+
+//Установить персонажу тип стоящего рыбака
+void LAi_SetFisherStayType(ref chr)
+{
+	chr.chr_ai.type = LAI_DEFAULT_TYPE;
+	LAi_type_fisher_Init(chr);
+	LAi_group_MoveCharacter(chr, LAI_GROUP_CITIZEN);
+}
+
+//Установить персонажу тип стоящего рыбака, без перемещения в группу
+void LAi_SetFisherStayTypeNoGroup(ref chr)
+{
+	chr.chr_ai.type = LAI_DEFAULT_TYPE;
+	LAi_type_fisher_Init(chr);
+}
+
+//Установить персонажу тип сидящего рыбака
+void LAi_SetFisherSitType(ref chr)
+{
+	chr.chr_ai.type = LAI_DEFAULT_TYPE;
+	chr.fishersit = true;
+	LAi_type_fisher_Init(chr);
+	//Установим сидячую анимацию персонажу
+	LAi_SetFisherSitAnimation(chr);
+	LAi_group_MoveCharacter(chr, LAI_GROUP_CITIZEN);
+}
+
+//Установить персонажу тип сидящего рыбака, без перемещения в группу
+void LAi_SetFisherSitTypeNoGroup(ref chr)
+{
+	chr.chr_ai.type = LAI_DEFAULT_TYPE;
+	chr.fishersit = true;
+	LAi_type_fisher_Init(chr);
+	//Установим сидячую анимацию персонажу
+	LAi_SetFisherSitAnimation(chr);
+}
 //------------------------------------------------------------------------------------------
 //Barmen
 //------------------------------------------------------------------------------------------
@@ -444,6 +593,44 @@ void LAi_SetGroundSitTypeNoGroup(aref chr)
 {
 	chr.chr_ai.type = LAI_DEFAULT_TYPE;
 	LAI_type_GroundSit_Init(chr);
+}
+
+//------------------------------------------------------------------------------------------
+//Horse (девушки борделя)
+//------------------------------------------------------------------------------------------
+
+//Установить персонажу тип стоячей девушки борделя
+void LAi_SetHorseStayType(aref chr)
+{
+	chr.chr_ai.type = LAI_DEFAULT_TYPE;
+	chr.horse = "HorseStay";
+	LAi_type_horse_Init(chr);
+	LAi_group_MoveCharacter(chr, LAI_DEFAULT_GROUP);
+}
+
+//То же, но без перемещения в группу
+void LAi_SetHorseStayTypeNoGroup(aref chr)
+{
+	chr.chr_ai.type = LAI_DEFAULT_TYPE;
+	chr.horse = "HorseStay";
+	LAi_type_horse_Init(chr);
+}
+
+//Установить персонажу тип сидящей девушки борделя
+void LAi_SetHorseSitType(aref chr)
+{
+	chr.chr_ai.type = LAI_DEFAULT_TYPE;
+	chr.horse = "HorseSit";
+	LAi_type_horse_Init(chr);
+	LAi_group_MoveCharacter(chr, LAI_DEFAULT_GROUP);
+}
+
+//То же, но без перемещения в группу
+void LAi_SetHorseSitTypeNoGroup(aref chr)
+{
+	chr.chr_ai.type = LAI_DEFAULT_TYPE;
+	chr.horse = "HorseSit";
+	LAi_type_horse_Init(chr);
 }
 
 //------------------------------------------------------------------------------------------

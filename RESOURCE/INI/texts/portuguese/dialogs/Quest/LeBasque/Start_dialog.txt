@@ -1,0 +1,27 @@
+Start_dialog_9 {
+Saudações, colega. Belo navio você tem: sólido, e a tripulação parece competente — dá para ver de longe. 
+}
+Start_dialog_10 {
+Tempo é dinheiro, amigo. Diga logo o que quer.
+}
+Start_dialog_11 {
+Há pouco apareceu por aqui um sujeito cheio de dinheiro. Está reunindo uma flotilha para algum empreendimento grande e diabolicamente lucrativo. E procura capitães experientes em bons navios. Como o seu.
+}
+Start_dialog_12 {
+Ora, ora. E daí?
+}
+Start_dialog_13 {
+A Senhora Fortuna virou o traseiro para mim! Minha escuna levou uma surra na última briga com os espanhóis: metade dos canhões pode ir direto para o fundo, e da tripulação sobrou um bando de corvos. Bastou aquele sujeito olhar para o meu navio e já virou de bordo. Ele quer lobos-do-mar, veja só, não cães espancados.
+}
+Start_dialog_14 {
+Você não me parou só para reclamar da sorte, parou?
+}
+Start_dialog_15 {
+É verdade. Seu navio está em ordem, a tripulação pronta — dificilmente ele vai rejeitar você. Se quer encher os bolsos de ouro, vá direto à taverna e fale com o taverneiro. Ele serve de contato para esse ricaço: escolhe pessoalmente os capitães e sabe de todos os detalhes.
+}
+Start_dialog_16 {
+E você resolveu dividir comigo uma pista dessas apenas por pura nobreza, é isso?
+}
+Start_dialog_17 {
+Acredite se quiser, não sou invejoso. Mas, se nos encontrarmos de novo, você fica me devendo uma.
+}

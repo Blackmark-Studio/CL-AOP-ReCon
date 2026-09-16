@@ -382,8 +382,8 @@ void FillSailsColorTable() {
 	GameInterface.(_tableName).select = selectRowIdx;
 	GameInterface.(_tableName).(_trAttr).td1.icon2.group = "usedflag";
 	GameInterface.(_tableName).(_trAttr).td1.icon2.image = "usedflag";
-	GameInterface.(_tableName).(_trAttr).td1.icon2.height = 16;
-	GameInterface.(_tableName).(_trAttr).td1.icon2.height = 16;
+	GameInterface.(_tableName).(_trAttr).td1.icon2.width = 60;
+	GameInterface.(_tableName).(_trAttr).td1.icon2.height = 60;
 	GameInterface.(_tableName).(_trAttr).td1.icon2.offset = "-12,-12";
 	GameInterface.(_tableName).(_trAttr).td2.str = XI_ConvertString("SC_Current");
 
@@ -477,8 +477,8 @@ void FillSailsGeraldTable() {
 	GameInterface.(_tableName).(sAttrRow).(sAttrCol).str = XI_ConvertString("SC_Current");
 	GameInterface.(_tableName).(sAttrRow).(sAttrCol).icon2.group = "usedflag";
 	GameInterface.(_tableName).(sAttrRow).(sAttrCol).icon2.image = "usedflag";
-	GameInterface.(_tableName).(sAttrRow).(sAttrCol).icon2.height = 16;
-	GameInterface.(_tableName).(sAttrRow).(sAttrCol).icon2.height = 16;
+	GameInterface.(_tableName).(sAttrRow).(sAttrCol).icon2.width = 60;
+	GameInterface.(_tableName).(sAttrRow).(sAttrCol).icon2.height = 60;
 	GameInterface.(_tableName).(sAttrRow).(sAttrCol).icon2.offset = "-6,-6";
 	
 	Table_UpdateWindow(_tableName);
@@ -503,8 +503,8 @@ void FillSailsMaterialTable() {
 		GameInterface.(_tableName).(_trAttr).td1.icon1.height = 52;
 		GameInterface.(_tableName).(_trAttr).td1.icon1.offset = "-3,0";
 		
-		GameInterface.(_tableName).(_trAttr).td1.icon2.height = 16;
-		GameInterface.(_tableName).(_trAttr).td1.icon2.height = 16;
+		GameInterface.(_tableName).(_trAttr).td1.icon2.width = 60;
+		GameInterface.(_tableName).(_trAttr).td1.icon2.height = 60;
 		GameInterface.(_tableName).(_trAttr).td1.icon2.offset = "-12,-8";
 		
 		GameInterface.(_tableName).(_trAttr).td2.textoffset = "0,-3";
@@ -621,8 +621,8 @@ void FillHullColorTable() {
 	GameInterface.(_tableName).select = selectRowIdx;
 	GameInterface.(_tableName).(_trAttr).td1.icon2.group = "usedflag";
 	GameInterface.(_tableName).(_trAttr).td1.icon2.image = "usedflag";
-	GameInterface.(_tableName).(_trAttr).td1.icon2.height = 16;
-	GameInterface.(_tableName).(_trAttr).td1.icon2.height = 16;
+	GameInterface.(_tableName).(_trAttr).td1.icon2.width = 60;
+	GameInterface.(_tableName).(_trAttr).td1.icon2.height = 60;
 	GameInterface.(_tableName).(_trAttr).td1.icon2.offset = "-12,-12";
 	
 	GameInterface.(_tableName).(_trAttr).td2.str = XI_ConvertString("SC_Current");
@@ -745,8 +745,8 @@ void procTableClick() {
 			_trAttr = "tr" + (iRowIndex + 1);
 			GameInterface.(_tableName).(_trAttr).td1.icon2.group = "usedflag";
 			GameInterface.(_tableName).(_trAttr).td1.icon2.image = "usedflag";
-			GameInterface.(_tableName).(_trAttr).td1.icon2.height = 16;
-			GameInterface.(_tableName).(_trAttr).td1.icon2.height = 16;
+			GameInterface.(_tableName).(_trAttr).td1.icon2.width = 60;
+			GameInterface.(_tableName).(_trAttr).td1.icon2.height = 60;
 			GameInterface.(_tableName).(_trAttr).td1.icon2.offset = "-12,-12";
 			Table_UpdateWindow(_tableName);
 			
@@ -772,8 +772,8 @@ void procTableClick() {
 			_trAttr = "tr" + (iRowIndex + 1);
 			GameInterface.(_tableName).(_trAttr).td1.icon2.group = "usedflag";
 			GameInterface.(_tableName).(_trAttr).td1.icon2.image = "usedflag";
-			GameInterface.(_tableName).(_trAttr).td1.icon2.height = 16;
-			GameInterface.(_tableName).(_trAttr).td1.icon2.height = 16;
+			GameInterface.(_tableName).(_trAttr).td1.icon2.width = 60;
+			GameInterface.(_tableName).(_trAttr).td1.icon2.height = 60;
 			GameInterface.(_tableName).(_trAttr).td1.icon2.offset = "-12,-8";
 			Table_UpdateWindow(_tableName);
 			
@@ -793,8 +793,8 @@ void procTableClick() {
 			_tdAttr = "td" + iColIndex;
 			GameInterface.(_tableName).(_trAttr).(_tdAttr).icon2.group = "usedflag";
 			GameInterface.(_tableName).(_trAttr).(_tdAttr).icon2.image = "usedflag";
-			GameInterface.(_tableName).(_trAttr).(_tdAttr).icon2.height = 16;
-			GameInterface.(_tableName).(_trAttr).(_tdAttr).icon2.height = 16;
+			GameInterface.(_tableName).(_trAttr).(_tdAttr).icon2.width = 60;
+			GameInterface.(_tableName).(_trAttr).(_tdAttr).icon2.height = 60;
 			GameInterface.(_tableName).(_trAttr).(_tdAttr).icon2.offset = "-6,-6";
 			Table_UpdateWindow(_tableName);
 			
@@ -807,8 +807,8 @@ void procTableClick() {
 			_trAttr = "tr" + (iRowIndex + 1);
 			GameInterface.(_tableName).(_trAttr).td1.icon2.group = "usedflag";
 			GameInterface.(_tableName).(_trAttr).td1.icon2.image = "usedflag";
-			GameInterface.(_tableName).(_trAttr).td1.icon2.height = 16;
-			GameInterface.(_tableName).(_trAttr).td1.icon2.height = 16;
+			GameInterface.(_tableName).(_trAttr).td1.icon2.width = 60;
+			GameInterface.(_tableName).(_trAttr).td1.icon2.height = 60;
 			GameInterface.(_tableName).(_trAttr).td1.icon2.offset = "-12,-12";
 			Table_UpdateWindow(_tableName);
 		
@@ -1367,6 +1367,29 @@ void UpdateModelViewerShip() {
 	resolveModelViewerShip(_real_ship, sti(SC_State.Current.HullIdx));
 }
 
+// > Смена окраса корпуса меняет только текстуры, геометрия модели же остаётся прежней, поэтому не перезагружаем весь корабль, а лишь обновляем его текстуры.
+void UpdateModelViewerShipHullTexture() {
+	if (!IsEntity(&real_ship_model)) {
+		// > модель ещё не создана, грузим всё полностью
+		UpdateModelViewerShip();
+		return;
+	}
+
+	SetTextureForShip(_real_ship, chref);
+	SendMessage(&real_ship_model, "l", MSG_MODEL_RELOAD_TEXTURES);
+}
+
+// > То же самое и для смены цвета/материала парусов и герба - при изменении обновляем только текстуры.
+void UpdateModelViewerShipSailTexture() {
+	if (!IsEntity(&fake_sail) || !IsEntity(&fake_ship)) {
+		// > паруса ещё не созданы, грузим всё полностью
+		UpdateModelViewerShip();
+		return;
+	}
+
+	SendMessage(&fake_sail, "li", MSG_SAIL_RELOAD_TEXTURES, &fake_ship);
+}
+
 string GetHullTypesDesc(int hullTypeIdx) {
 	return XI_ConvertString("SC_HullDesc" + hullTypeIdx);
 }
@@ -1388,8 +1411,9 @@ void SetHullColor(int nIdx) {
 	} else {
 		AddHullColorPriceToChanges();
 	}
-	
-	UpdateModelViewerShip();
+
+	// > обновляем только текстуры
+	UpdateModelViewerShipHullTexture();
 }
 
 void SetSailColor(int nIdx)
@@ -1410,8 +1434,9 @@ void SetSailColor(int nIdx)
 	
 	_real_ship.ShipSails.SailsColor = SailsColors[curColor].color;
 	_real_ship.SailsColorIdx = curColor;
-	
-	UpdateModelViewerShip();
+
+	// > обновляем только текстуры
+	UpdateModelViewerShipSailTexture();
 }
 
 void SetSailMaterialTextureForTableSailsColor(int materialIdx) {
@@ -1456,8 +1481,9 @@ void SetSailMaterial(int materialIdx) {
 	} else {
 		AddSailMaterialPriceToChanges();
 	}
-	
-	UpdateModelViewerShip();
+
+	// > обновляем только текстуры
+	UpdateModelViewerShipSailTexture();
 }
 
 string GetSailTextureFilenameFromIdx(int materialIdx) {
@@ -1484,8 +1510,9 @@ void SetSailGerald(int geraldIdx) {
 		RemoveSailGeraldPriceToChanges();
 	else
 		AddSailGeraldPriceToChanges();
-	
-	UpdateModelViewerShip();
+
+	// > обновляем только текстуры
+	UpdateModelViewerShipSailTexture();
 }
 
 string GetGeraldTextureFilenameFromIdx(int geraldIdx) {

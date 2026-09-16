@@ -422,7 +422,6 @@ void LAi_tmpl_dialog_StartDialog(aref chr, aref by, float dlgTime)
 	//Заполняем поля
 	chr.chr_ai.tmpl.dialog = by.index;
 	chr.chr_ai.tmpl.state = "wait";
-	chr.chr_ai.tmpl.dtime = "0";
 	chr.chr_ai.tmpl.dlgtime = dlgTime;
 	//Запускаем диалог
 	int idx = sti(chr.chr_ai.tmpl.dialog);

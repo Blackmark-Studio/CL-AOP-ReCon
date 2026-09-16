@@ -1,96 +1,96 @@
 PortRoyal_Usurer_1 {
-什么问题？
+什么问题？ 
 }
 PortRoyal_Usurer_2 {
-你想干什么？
+你想干什么？ 
 }
 PortRoyal_Usurer_3 {
 @<RandPhraseSimple>
 }
 PortRoyal_Usurer_4 {
-前阵子你还想问我个问题……
+前阵子你还想问我个问题…… 
 }
 PortRoyal_Usurer_5 {
-嗯，让我猜猜……又没什么重要的事吧？
+嗯， 让我猜猜…… 又没什么重要的事吧？ 
 }
 PortRoyal_Usurer_6 {
-听着，俺管钱，不管答疑……
+听着， 我管钱， 不管答疑…… 
 }
 PortRoyal_Usurer_7_m {
-我改主意了……
+我改主意了…… 
 }
 PortRoyal_Usurer_7_f {
-我改变主意了……
+我改变主意了…… 
 }
 PortRoyal_Usurer_8 {
-我现在没什么可说的。
+我现在没什么可说的。 
 }
 PortRoyal_Usurer_9 {
 @<RandPhraseSimple>
 }
 PortRoyal_Usurer_10 {
-嗯，我的记忆好像出了点问题……
+嗯， 我的记忆好像出了点问题…… 
 }
 PortRoyal_Usurer_11 {
-你猜对了，抱歉……
+你猜对了， 抱歉…… 
 }
 PortRoyal_Usurer_12 {
-我明白……
+我明白…… 
 }
 PortRoyal_Usurer_13 {
-我有事要跟你谈谈Morris Williams。
+我有事要跟你谈谈莫里斯.威廉姆斯。 
 }
 PortRoyal_Usurer_14 {
-你再也见不到你的伙伴了。
+你再也见不到你的伙伴了。 
 }
 PortRoyal_Usurer_15 {
-Morris Williams出什么事了？
+莫里斯.威廉姆斯出什么事了？ 
 }
 PortRoyal_Usurer_16 {
-你不知道他在坐牢吗？！
+你不知道他在坐牢吗？ ！ 
 }
 PortRoyal_Usurer_17 {
-当然知道。怎么了，他死了？
+当然知道。 怎么了， 他死了？ 
 }
 PortRoyal_Usurer_18 {
-没，他还没死，不过现在可惨得很。你应该知道，他最近真是倒了大霉，不然早就把欠你的钱还清了。
+没， 他还没死， 不过现在可惨得很。 你应该知道， 他最近真是倒了大霉， 不然早就把欠你的钱还清了。 
 }
 PortRoyal_Usurer_19 {
-可还没付钱呢！
+可还没付钱呢！ 
 }
 PortRoyal_Usurer_20 {
-所以，你就不在乎一个私掠船长烂在牢里吗？！
+所以， 你就不在乎一个私掠船长烂在牢里吗？ ！ 
 }
 PortRoyal_Usurer_21 {
-老子只关心自己的命，其他的都懒得理，@<GetAddress_Form>。这事儿我不想再说了。
+我只关心自己的命， 其他的都懒得理， @<GetAddress_Form>。 这事儿我不想再说了。 
 }
 PortRoyal_Usurer_22 {
-这事儿老子可不会就这么算了。咱们还会再见的……
+这事儿我可不会就这么算了。 咱们还会再见的…… 
 }
 PortRoyal_Usurer_23 {
-你说的是谁？
+你说的是谁？ 
 }
 PortRoyal_Usurer_24_m {
-我说的是你在打交道的那些走私贼，老子已经让他们见血了。
+我说的是你在打交道的那些走私贩子， 我已经让他们见血了。 
 }
 PortRoyal_Usurer_24_f {
-我说的是你合作的那些走私犯。我已经让他们见血了。
+我说的是你合作的那些走私犯。 我已经让他们见血了。 
 }
 PortRoyal_Usurer_25 {
-嗯……你到底想要什么？
+嗯…… 你到底想要什么？ 
 }
 PortRoyal_Usurer_26 {
-先从Morris Williams的借条开始。Etterberry家就别再为难了，他们一年前借钱只是个错误。
+先从莫里斯.威廉姆斯的借条开始。 阿特伯里家就别再为难了， 他们一年前借钱只是个错误。 
 }
 PortRoyal_Usurer_27 {
-这话居然是从一个海盗嘴里说出来的？！好吧，Williams会立刻被释放。
+这话居然是从一个海盗嘴里说出来的？ ！ 好吧， 威廉姆斯会立刻被释放。 
 }
 PortRoyal_Usurer_28 {
-这还没完。为了让俺闭嘴不揭你们走私的事，每个月你得给俺……一万块。
+这还没完。 为了让我闭嘴不揭你们走私的事， 每个月你得给我…… 一万块。 
 }
 PortRoyal_Usurer_29 {
-哈哈！不，我不会的。\n你现在已经拿不出我走私的证据了——就是你说你的，我说我的。\n不过我可不想闹出丑闻，所以在Williams的事上我会让步。别指望我再多做什么。告辞。
+哈哈！ 不， 我不会的。 \n你现在已经拿不出我走私的证据了——就是你说你的， 我说我的。 \n不过我可不想闹出丑闻， 所以在威廉姆斯的事上我会让步。 别指望我再多做什么。 告辞。 
 }
 PortRoyal_Usurer_30 {
-再见，别忘了你答应我的事。
+再见， 别忘了你答应我的事。 
 }

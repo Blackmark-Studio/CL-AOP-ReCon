@@ -206,6 +206,15 @@ void CreateParticles(ref Location)
 		}
 	}
 
+	if (CheckAttribute(Location, "AoP_HuntingFire4") && sti(Location.AoP_HuntingFire4))
+	{
+   		CreateLocationParticlesLoopedSound("shipfire", "goto", "fire4", 0.0, 0.0, 0.0, "fortfire");
+	}
+
+	if (CheckAttribute(Location, "AoP_HuntingFire9") && sti(Location.AoP_HuntingFire9))
+	{
+ 		CreateLocationParticlesLoopedSound("shipfire", "goto", "fire9", 0.0, 0.0, 0.0, "fortfire");
+	}
 	if(CheckAttribute(Location, "locators.rain"))
 	{
 		if(!CheckAttribute(Location, "rain_disable"))
@@ -665,6 +674,19 @@ bool CreateFireParticles(string sGroup, string sLocator)
 //  smoke - дым
 //  ShipExplode - взрыв
 bool CreateLocationParticles(string sParticle, string sGroup, string sLocator, float up, float ax, float az, string sSound)
+{
+	ref rLoc = &locations[FindLocation(PChar.location)];
+	
+	float x = stf(rLoc.locators.(sGroup).(sLocator).x);
+	float y = stf(rLoc.locators.(sGroup).(sLocator).y);
+	float z = stf(rLoc.locators.(sGroup).(sLocator).z);
+	
+	CreateParticleSystemX(sParticle, x, y+up, z, x+ax, y+up, z+az, 0);
+	Play3DSound(sSound, x, y, z);
+	return true;
+}
+
+bool CreateLocationParticlesXZ(string sParticle, string sGroup, string sLocator, float up, float ax, float az, string sSound)
 {
 	ref rLoc = &locations[FindLocation(PChar.location)];
 

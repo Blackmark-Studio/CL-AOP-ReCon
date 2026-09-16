@@ -1,0 +1,39 @@
+Gibraltar_Tavern_1 {
+什么问题？ 
+}
+Gibraltar_Tavern_2 {
+有什么需要帮忙的吗， @<GetAddress_Form>?
+}
+Gibraltar_Tavern_3 {
+@<RandPhraseSimple>
+}
+Gibraltar_Tavern_4 {
+前阵子你还想问我个问题， @<GetAddress_Form>…… 
+}
+Gibraltar_Tavern_5 {
+你今天已经第三次提这事了…… 
+}
+Gibraltar_Tavern_6 {
+咱们又要开始问问题了？ 
+}
+Gibraltar_Tavern_7_m {
+我改主意了…… 
+}
+Gibraltar_Tavern_7_f {
+我改变主意了…… 
+}
+Gibraltar_Tavern_8 {
+我现在没什么好说的。 
+}
+Gibraltar_Tavern_9 {
+@<RandPhraseSimple>
+}
+Gibraltar_Tavern_10 {
+嗯， 我的记忆好像出了点问题…… 
+}
+Gibraltar_Tavern_11 {
+看来第三次总算成了吧…… 
+}
+Gibraltar_Tavern_12 {
+没事， 没什么要问的…… 
+}

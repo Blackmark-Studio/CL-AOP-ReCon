@@ -119,29 +119,6 @@ void SetSpyGlassData()
 	
    	if (CheckAttribute(arScopeItm,"scope.show.crew") && sti(arScopeItm.scope.show.crew) > 0)
 		shipCrew = GetCrewQuantity(chref);
-	
-    if (CheckAttribute(arScopeItm,"scope.show.charge") && sti(arScopeItm.scope.show.charge) > 0)
-    {
-    	switch(sti(chref.Ship.Cannons.Charge.Type))
-    	{
-    		case GOOD_GRAPES:
-    			shipCharge = 0;
-    			chargeType = XI_convertString("Grapes");
-    		break;
-    		case GOOD_BALLS:
-    			shipCharge = 1;
-    			chargeType = XI_convertString("Balls");
-			break;
-    		case GOOD_BOMBS:
-    			shipCharge = 2;
-    			chargeType = XI_convertString("Bombs");
-    		break;
-    		case GOOD_KNIPPELS:
-    			shipCharge = 3;
-    			chargeType = XI_convertString("Knippels");
-    		break;
-    	}
-   	}
 
 	if (CheckAttribute(arScopeItm,"scope.show.cannontype") && sti(arScopeItm.scope.show.cannontype) > 0)
 	{
@@ -236,8 +213,38 @@ void SetSpyGlassData()
 		// Показываем всегда иконку полных парусов, без этого - прыгает
 		if (CheckAttribute(chref, "CanDropSails") && !sti(chref.CanDropSails)) nSailState = 0;
 	}
-	if (shipCannons > 0 && shipMaxCannons > 0)
-		cannonsQty = shipCannons +"/" +shipMaxCannons;
+
+	if (CheckAttribute(arScopeItm,"scope.show.charge") && sti(arScopeItm.scope.show.charge) > 0)
+	{
+		if (shipCannons > 0)
+		{
+			switch(sti(chref.Ship.Cannons.Charge.Type))
+			{
+				case GOOD_GRAPES:
+					shipCharge = 0;
+					chargeType = XI_convertString("Grapes");
+				break;
+				case GOOD_BALLS:
+					shipCharge = 1;
+					chargeType = XI_convertString("Balls");
+				break;
+				case GOOD_BOMBS:
+					shipCharge = 2;
+					chargeType = XI_convertString("Bombs");
+				break;
+				case GOOD_KNIPPELS:
+					shipCharge = 3;
+					chargeType = XI_convertString("Knippels");
+				break;
+			}
+
+			cannonsQty = shipCannons +"/" +shipMaxCannons;
+		}
+		else
+		{
+			cannonsType = XI_ConvertString("NoneCannons");
+		}
+	}
 	//ship or fort <--
 	
 	//captain -->
@@ -274,6 +281,7 @@ void SetSpyGlassData()
 		nBoardingSkill = GetCharacterSkill(chref,SKILL_GRAPPLING);
 	}
     // captain <--
+
 	SendMessage(&objISpyGlass,"llssslllffsssllllllllssls", MSG_ISG_UPDATE, isFort, shipName, shipType, shipMode, shipHull, shipSail,
 		shipCrew, shipSpeed, fDistance, cannonsType, cannonsQty, chargeType, shipCharge, shipNation, nSailState,
 		nDefenceSkill, nCannonSkill, nAccuracySkill, nNavigationSkill, nBoardingSkill, sCaptainName, sBangBang, shipClass, sHold);
@@ -462,12 +470,22 @@ void FillISpyGlassParameters()
 	objISpyGlass.text.distance.color = iTextColor;
 	objISpyGlass.text.distance.scale = fHtRatio * fIconsFontScale;
 
+	//Hold
+	objISpyGlass.info.hold.texture = sIconTexture;
+	objISpyGlass.info.hold.showNumber = "2,0";
+	objISpyGlass.info.hold.uv = "0.75,0.0,1.0,0.25";
+
+	objISpyGlass.text.hold.font = sTextFont;
+	objISpyGlass.text.hold.align = sAlign;
+	objISpyGlass.text.hold.color = iTextColor;
+	objISpyGlass.text.hold.scale = fHtRatio * fIconsFontScale;
+
 	//Cannons
 	//так как у картинки орудий возможны две надписи - эта штука орпределяет растояние между ними
 	objISpyGlass.iconTextVoffset = RecalculateVIconScaled(11, fHtRatio);
 
 	objISpyGlass.info.cannon.texture = sIconTexture;
-	objISpyGlass.info.cannon.showNumber = "2,1";
+	objISpyGlass.info.cannon.showNumber = "3,1";
 	objISpyGlass.info.cannon.uv = "0.5,0.5,0.75,0.75";
 
 	objISpyGlass.text.cannonsType.font = sTextFont;
@@ -479,16 +497,6 @@ void FillISpyGlassParameters()
 	objISpyGlass.text.cannonsQty.align = sAlign;
 	objISpyGlass.text.cannonsQty.color = iTextColor;
 	objISpyGlass.text.cannonsQty.scale = fHtRatio * fIconsFontScale;
-
-	//Hold
-	objISpyGlass.info.hold.texture = sIconTexture;
-	objISpyGlass.info.hold.showNumber = "3,0";
-	objISpyGlass.info.hold.uv = "0.75,0.0,1.0,0.25";
-
-	objISpyGlass.text.hold.font = sTextFont;
-	objISpyGlass.text.hold.align = sAlign;
-	objISpyGlass.text.hold.color = iTextColor;
-	objISpyGlass.text.hold.scale = fHtRatio * fIconsFontScale;
 
 	//Charge
 	objISpyGlass.info.charge.texture = sIconTexture;

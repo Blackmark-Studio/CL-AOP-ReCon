@@ -1,567 +1,567 @@
 RodgerWoyler_1 {
-尽管风暴还在肆虐，还是请收下我的祝贺，船长。
+尽管风暴还在肆虐， 还是请收下我的祝贺， 船长。 
 }
 RodgerWoyler_2 {
-恭喜？
+祝贺？ 
 }
 RodgerWoyler_3 {
-恭喜你，船长。
+恭喜你， 船长。 
 }
 RodgerWoyler_4 {
-恭喜？
+恭喜？ 
 }
 RodgerWoyler_5 {
-你找俺有啥事，@<GetAddress_Form>?
+你找我有什么事， @<GetAddress_Form>?
 }
 RodgerWoyler_6 {
-听着，我在找个人。你知道他现在在哪吗？
+听着， 我在找个人。 你知道他现在在哪吗？ 
 }
 RodgerWoyler_7 {
-我想问你个问题。
+我想问你个问题。 
 }
 RodgerWoyler_8 {
-有啥有趣的事儿能跟俺说说吗？
+有什么有趣的事儿能跟我说说吗？ 
 }
 RodgerWoyler_9 {
-镇上有什么新鲜事？
+镇上有什么新鲜事？ 
 }
 RodgerWoyler_10_m {
-唉，真想听听最近有什么八卦……
+唉， 真想听听最近有什么八卦…… 
 }
 RodgerWoyler_10_f {
-唉，我可想听听最近有什么八卦……
+唉， 我可想听听最近有什么八卦…… 
 }
 RodgerWoyler_11 {
 @<LinkRandPhrase>
 }
 RodgerWoyler_12 {
-听着，我在找点货。
+听着， 我在找点货。 
 }
 RodgerWoyler_13 {
-啊，我们City的勇士！带来了什么消息？
+啊， 我们城市的勇士！ 带来了什么消息？ 
 }
 RodgerWoyler_14 {
-你知道吗，我正在组建一支船员队伍，准备离开这里。
+你知道吗， 我正在组建一支船员队伍， 准备离开这里。 
 }
 RodgerWoyler_15 {
-没什么……
+没什么…… 
 }
 RodgerWoyler_16 {
-当然啦！你都能在船难中活下来，还漂到这儿，总比无影无踪强吧，这不是该庆祝一下吗？再说，风暴明天傍晚就过去了，现在也威胁不到你了。
+当然啦！ 你都能在船难中活下来， 还漂到这儿， 总比消失得无影无踪强吧， 这不是该庆祝一下吗？ 再说了， 风暴明天傍晚就过去了， 现在也威胁不到你了。 
 }
 RodgerWoyler_17_m {
-同意……
+同意…… 
 }
 RodgerWoyler_17_f {
-同意……
+同意…… 
 }
 RodgerWoyler_18 {
-当然啦！你可是从沉船里活下来，还能来到这儿，总比就此消失强吧？这难道不值得庆祝一下吗？
+当然啦！ 你可是从沉船里活下来， 还能来到这儿， 总比就此消失强吧？ 这难道不值得庆祝一下吗？ 
 }
 RodgerWoyler_19 {
-您说了算，先生……
+您说了算， 先生…… 
 }
 RodgerWoyler_20_m {
-很高兴认识你，Roger。我叫Captain @<GetFullName>。
+很高兴认识你， 罗杰。 我叫@<GetFullName>船长。 
 }
 RodgerWoyler_20_f {
-很高兴认识你，Roger。我是船长@<GetFullName>。
+很高兴认识你， 罗杰。 我是@<GetFullName>船长。 
 }
 RodgerWoyler_21 {
-我也是，Captain。有啥需要帮忙的吗？
+我也是， 船长。 有什么需要帮忙的吗？ 
 }
 RodgerWoyler_22 {
-你在城里待了很久了吗？
+你在城里待了很久了吗？ 
 }
 RodgerWoyler_23_m {
-很久以前了，亲爱的船长。我不敢说我是待得最久的那个，不过……
+很久了， 亲爱的。 倒不是说我在这儿是最久的那个， 不过…… 
 }
 RodgerWoyler_23_f {
-很久了，亲爱的。倒不是说我在这儿最久的那个，不过……
+很久了， 亲爱的。 倒不是说我在这儿是最久的那个， 不过…… 
 }
 RodgerWoyler_24 {
-你在Kapper来之前就在这儿了吗？
+你在卡帕来之前就在这儿了吗？ 
 }
 RodgerWoyler_25 {
-我……咳，这有啥关系？
+我…… 咳， 这有什么关系？ 
 }
 RodgerWoyler_26 {
-为什么没人能离开这座城？
+为什么没人能离开这座城？ 
 }
 RodgerWoyler_27 {
-这里面有特别的原因，Captain。我劝你别掺和这事。
+这里面有特别的原因， 船长。 我劝你别掺和这事。 
 }
 RodgerWoyler_28 {
-为什么？
+为什么？ 
 }
 RodgerWoyler_29_m {
-那样的话，我的祝贺可就得收回了——你可就不再是……幸存者了。
+那样的话， 我的祝贺可就得收回了——你可就不再是…… 幸存者了。 
 }
 RodgerWoyler_29_f {
-因为那样的话，我就得收回我的祝贺了——你可就不再是……幸存者了。
+因为那样的话， 我就得收回我的祝贺了——你可就不再是…… 幸存者了。 
 }
 RodgerWoyler_30 {
-就这样吗？
+就这样吗？ 
 }
 RodgerWoyler_31 {
-恕我直言，Captain，我这辈子见过不少勇士，但在这城里遇到的那些，早就去见Sea Devil了。
+恕我直言， 船长， 我这辈子见过不少勇士， 但在这城里遇到的那些， 早就去见海之恶魔了。 
 }
 RodgerWoyler_32 {
-也许见见他对我也没坏处……不过，Capper身边有朋友、得力助手或者帮手吗？
+也许见见他对我也没坏处…… 不过， 卡帕身边有朋友、 得力助手或者帮手吗？ 
 }
 RodgerWoyler_33 {
-他手下有一整支得力亲信！Fore和Workman在其中最为突出……但我还是得坚持，Captain，千万别让自己陷入危险。我已经对太多人说过同样的话……太多人像你现在这样站在我面前……我都在他们眼里看到过那份勇气……可他们现在全都死了。
+他手下有一整支得力亲信！ 福尔和沃克曼在其中最为突出…… 但我还是得坚持， 船长， 千万别让自己陷入危险。 我已经对太多人说过同样的话…… 太多人像你现在这样站在我面前…… 我都在他们眼里看到过那份勇气…… 可他们现在全都死了。 
 }
 RodgerWoyler_34 {
-那家伙又不是不死之身，对吧？
+那家伙又不是不死之身， 对吧？ 
 }
 RodgerWoyler_35 {
-谁知道呢，谁知道……
+谁知道呢， 谁知道…… 
 }
 RodgerWoyler_36 {
-那就谢谢你的关心。
+那就谢谢你的关心。 
 }
 RodgerWoyler_37 {
-保重，Captain。
+保重， 船长。 
 }
 RodgerWoyler_38 {
-当然。
+当然。 
 }
 RodgerWoyler_39_m {
-你是个贼！违反了城市法令！
+你是个贼！ 违反了沉船之城法律！ 
 }
 RodgerWoyler_39_f {
-你是个贼！违反了城市法令！
+你是个贼！ 违反了沉船之城法律！ 
 }
 RodgerWoyler_40_m {
-哟，你看看！我才一眨眼，你就直接钻进箱子里了！他可是破坏了规矩！
+哟， 你看看！ 我才一眨眼， 你就直接钻进箱子里了！ 他可是破坏了规矩！ 
 }
 RodgerWoyler_40_f {
-哎哟，瞧瞧这事儿！我才一眨眼，你就直接扎进箱子里了！她可是破坏了规矩！
+哎哟， 瞧瞧这事儿！ 我才一眨眼， 你就直接扎进箱子里了！ 她可是破坏了规矩！ 
 }
 RodgerWoyler_41_m {
-警察！抢劫啊！！！快抓住他，他犯法了！
+卫兵！ 抢劫啊！ ！ ！ 快抓住他， 他犯法了！ 
 }
 RodgerWoyler_41_f {
-卫兵！抢劫啊！！！快拦住她，她犯法了！
+卫兵！ 抢劫啊！ ！ ！ 快拦住她， 她犯法了！ 
 }
 RodgerWoyler_42 {
 @<LinkRandPhrase>
 }
 RodgerWoyler_43 {
-啊——该死！
+啊——该死！ 
 }
 RodgerWoyler_44 {
-哦，原来是这样？！你还敢翻箱倒柜啊？！现在城里人和守卫非把你撕成碎片不可！
+哦， 原来是这样？ ！ 你还敢翻箱倒柜啊？ ！ 现在城里人和守卫非把你撕成碎片不可！ 
 }
 RodgerWoyler_45 {
-真是个傻瓜！
+真是个傻瓜！ 
 }
 RodgerWoyler_46_m {
-嘿，能不能把武器收起来？你这样让我有点紧张……
+嘿， 能不能把武器收起来？ 你这样让我有点紧张…… 
 }
 RodgerWoyler_46_f {
-喂，你要不要把武器收起来？你这样让我有点紧张……
+喂， 你要不要把武器收起来？ 你这样让我有点紧张…… 
 }
 RodgerWoyler_47 {
-你知道吧，这里可没人随便挥舞武器。把你的家伙收起来。
+你知道吧， 这里可没人随便挥舞武器。 把你的家伙收起来。 
 }
 RodgerWoyler_48_m {
-喂，你干嘛学d’Artagnan到处挥剑？把武器收起来，这样可不像个正经男人……
+喂， 你干嘛学达达尼昂一样到处挥剑？ 把武器收起来， 这可不像个正经男人的样子…… 
 }
 RodgerWoyler_48_f {
-喂，你干嘛像个 d'Artagnan 一样到处挥剑？把武器收起来，这可不像个小姐的样子……
+喂， 你干嘛学达达尼昂一样到处挥剑？ 把武器收起来， 这可不像个小姐的样子…… 
 }
 RodgerWoyler_49 {
 @<LinkRandPhrase>
 }
 RodgerWoyler_50 {
-行。
+行。 
 }
 RodgerWoyler_51 {
-行。
+行。 
 }
 RodgerWoyler_52 {
-听你的……
+听你的…… 
 }
 RodgerWoyler_53 {
 @<LinkRandPhrase>
 }
 RodgerWoyler_54_m {
-听着，作为本地人，我劝你别在这儿拔着刀走来走去。
+听着， 作为本地人， 我劝你别在这儿拔着刀走来走去。 
 }
 RodgerWoyler_54_f {
-你知道吧，作为这个城的居民，我请你别在这里拔刀走来走去。
+你知道吧， 作为这个城的居民， 我劝你别在这里拔刀走来走去。 
 }
 RodgerWoyler_55 {
-行。
+行。 
 }
 RodgerWoyler_56 {
-行吧。
+行吧。 
 }
 RodgerWoyler_57 {
-如你所愿……
+如你所愿…… 
 }
 RodgerWoyler_58 {
 @<LinkRandPhrase>
 }
 RodgerWoyler_59_m {
-拿着武器跑的时候，拐弯小心点。别让俺紧张起来……
+拿着武器跑的时候， 拐弯小心点。 别让我紧张起来…… 
 }
 RodgerWoyler_59_f {
-我不喜欢有人在我面前拿着武器晃来晃去，这让我害怕……
+我不喜欢有人在我面前拿着武器晃来晃去， 这让我害怕…… 
 }
 RodgerWoyler_60_m {
-明白了。
+明白了。 
 }
 RodgerWoyler_60_f {
-明白了。
+明白了。 
 }
 RodgerWoyler_61 {
-收起来。
+收起来。 
 }
 RodgerWoyler_62 {
 @<RandPhraseSimple>
 }
 RodgerWoyler_63 {
-你在找谁？
+你在找谁？ 
 }
 RodgerWoyler_64 {
-我不明白你说的是谁。我要知道这个人的名字和姓氏。
+我不明白你说的是谁。 我要知道这个人的名字和姓氏。 
 }
 RodgerWoyler_65 {
-明白了。我再试着取个名字。
+明白了。 我再试着取个名字。 
 }
 RodgerWoyler_66_m {
-谢谢，我还是自己找吧。
+谢谢， 我还是自己找吧。 
 }
 RodgerWoyler_66_f {
-谢谢，我还是自己找吧。
+谢谢， 我还是自己找吧。 
 }
 RodgerWoyler_67 {
-那不就是我吗！
+那不就是我吗！ 
 }
 RodgerWoyler_68_m {
-哟，没想到还真让我找到你了！
+哟， 没想到还真让我找到你了！ 
 }
 RodgerWoyler_68_f {
-哟，没想到还真让我找到你了！
+哟， 没想到还真让我找到你了！ 
 }
 RodgerWoyler_69 {
-@<GetFullName>，你说的是他吗？
+@<GetFullName>， 你说的是他吗？ 
 }
 RodgerWoyler_70 {
-对对，就是他。
+对对， 就是他。 
 }
 RodgerWoyler_71 {
-不，不是说他。让我再试一次。
+不， 不是说他。 让我再试一次。 
 }
 RodgerWoyler_72 {
-@<GetFullName>，你说的是她吗？
+@<GetFullName>， 你说的是她吗？ 
 }
 RodgerWoyler_73 {
-对，就是那一个。
+对， 就是那一个。 
 }
 RodgerWoyler_74 {
-不是，不是说她。听我说，让我再试着叫一次。
+不是， 不是说她。 听我说， 让我再试着叫一次。 
 }
 RodgerWoyler_75 {
-你知道吗，我不想再问别人了。再见。
+你知道吗， 我不想再问别人了。 再见。 
 }
 RodgerWoyler_76 {
-那请再说一遍你的名字和姓氏。
+那请再说一遍你的名字和姓氏。 
 }
 RodgerWoyler_77 {
-我不知道，挺久没见到他了。
+我不知道， 挺久没见到他了。 
 }
 RodgerWoyler_78 {
-鬼知道他在哪……
+鬼知道他在哪…… 
 }
 RodgerWoyler_79 {
-好久没见他了，我也不清楚。
+好久没见他了， 我也不清楚。 
 }
 RodgerWoyler_80 {
 @<LinkRandPhrase>
 }
 RodgerWoyler_81 {
-明白了。
+明白了。 
 }
 RodgerWoyler_82 {
-可惜……
+可惜…… 
 }
 RodgerWoyler_83 {
 @<RandPhraseSimple>
 }
 RodgerWoyler_84 {
-我已经有段时间没见到她了，挺遗憾的。
+我已经有段时间没见到她了， 挺遗憾的。 
 }
 RodgerWoyler_85 {
-我现在完全不知道她在哪儿。
+我现在完全不知道她在哪儿。 
 }
 RodgerWoyler_86 {
-嗯，我现在也不知道她在哪儿。
+嗯， 我现在也不知道她在哪儿。 
 }
 RodgerWoyler_87 {
 @<LinkRandPhrase>
 }
 RodgerWoyler_88 {
-明白了。
+明白了。 
 }
 RodgerWoyler_89 {
-可惜……
+可惜…… 
 }
 RodgerWoyler_90 {
 @<RandPhraseSimple>
 }
 RodgerWoyler_91 {
-他就在这艘船上，仔细搜一搜。
+他就在这艘船上， 仔细搜一搜。 
 }
 RodgerWoyler_92 {
-哈，原来他就在这艘船上！
+哈， 原来他就在这艘船上！ 
 }
 RodgerWoyler_93 {
-他就在这艘船上——奇怪，你怎么还没见过他。
+他就在这艘船上——奇怪， 你怎么还没见过他。 
 }
 RodgerWoyler_94 {
 @<LinkRandPhrase>
 }
 RodgerWoyler_95 {
-我刚见过他，@<npchar>。
+我刚见过他， @<npchar>。 
 }
 RodgerWoyler_96 {
-我前不久在@<npchar>碰到他了，你去那儿找找吧。
+我前不久在@<npchar>碰到他了， 你去那儿找找吧。 
 }
 RodgerWoyler_97 {
-据我所知，他现在就在@<npchar>。
+据我所知， 他现在就在@<npchar>。 
 }
 RodgerWoyler_98 {
 @<LinkRandPhrase>
 }
 RodgerWoyler_99 {
-他就在这儿，@<npchar>。仔细看看。
+他就在这儿， @<npchar>。 仔细看看。 
 }
 RodgerWoyler_100 {
-可他就在我们中间！
+可他就在我们中间！ 
 }
 RodgerWoyler_101 {
-你看哪儿呢？他就在这附近晃悠。
+你看哪儿呢？ 他就在这附近晃悠。 
 }
 RodgerWoyler_102 {
 @<LinkRandPhrase>
 }
 RodgerWoyler_103 {
-我刚见过他@<npchar>。
+我刚见过他@<npchar>。 
 }
 RodgerWoyler_104 {
-我前不久在@<npchar>碰到他了，你去那儿找找吧。
+我前不久在@<npchar>碰到他了， 你去那儿找找吧。 
 }
 RodgerWoyler_105 {
-据我所知，他现在就在@<npchar>。
+据我所知， 他现在就在@<npchar>。 
 }
 RodgerWoyler_106 {
 @<LinkRandPhrase>
 }
 RodgerWoyler_107 {
-哦，明白了。谢谢。
+哦， 明白了。 谢谢。 
 }
 RodgerWoyler_108 {
-谢谢你！
+谢谢你！ 
 }
 RodgerWoyler_109 {
 @<RandPhraseSimple>
 }
 RodgerWoyler_110 {
-她就在这艘船上，仔细找找。
+她就在这艘船上， 仔细找找。 
 }
 RodgerWoyler_111 {
-哈，原来她就在这艘船上！
+哈， 原来她就在这艘船上！ 
 }
 RodgerWoyler_112 {
-她就在这艘船上——奇怪，你怎么还没见过她。
+她就在这艘船上——奇怪， 你怎么还没见过她。 
 }
 RodgerWoyler_113 {
 @<LinkRandPhrase>
 }
 RodgerWoyler_114 {
-我最近才见过她@<npchar>。
+我最近才见过她@<npchar>。 
 }
 RodgerWoyler_115 {
-我最近见过她，@<npchar>。我们还聊了几句。
+我最近见过她， @<npchar>。 我们还聊了几句。 
 }
 RodgerWoyler_116 {
-据我所知，她现在在@<npchar>。
+据我所知， 她现在在@<npchar>。 
 }
 RodgerWoyler_117 {
 @<LinkRandPhrase>
 }
 RodgerWoyler_118 {
-她就在这儿，@<npchar>。你仔细看看。
+她就在这儿， @<npchar>。 你仔细看看。 
 }
 RodgerWoyler_119 {
-可她就在我们中间啊！
+可她就在我们中间啊！ 
 }
 RodgerWoyler_120 {
-你们看哪儿呢？她就在这附近啊。
+你们看哪儿呢？ 她就在这附近啊。 
 }
 RodgerWoyler_121 {
 @<LinkRandPhrase>
 }
 RodgerWoyler_122 {
-我最近才见过她，@<npchar>。
+我最近才见过她， @<npchar>。 
 }
 RodgerWoyler_123 {
-我最近见过她，@<npchar>。我们还聊了几句。
+我最近见过她， @<npchar>。 我们还聊了几句。 
 }
 RodgerWoyler_124 {
-据我所知，她现在在@<npchar>。
+据我所知， 她现在在@<npchar>。 
 }
 RodgerWoyler_125 {
 @<LinkRandPhrase>
 }
 RodgerWoyler_126 {
-明白了，谢谢你，@<GetAddress_FormToNPC>。
+明白了， 谢谢你， @<GetAddress_FormToNPC>。 
 }
 RodgerWoyler_127 {
-谢谢你！
+谢谢你！ 
 }
 RodgerWoyler_128 {
 @<RandPhraseSimple>
 }
 RodgerWoyler_129_m {
-我洗耳恭听，伙计。
+我洗耳恭听， 伙计。 
 }
 RodgerWoyler_129_f {
-我在认真听您说，女士。
+我在认真听您说， 女士。 
 }
 RodgerWoyler_130 {
-这边的风暴一般会持续多久？
+这边的风暴一般会持续多久？ 
 }
 RodgerWoyler_131 {
-这地方有点让人不安，你不觉得吗？
+这地方有点让人不安， 你不觉得吗？ 
 }
 RodgerWoyler_132 {
-商店的货是从哪儿来的？这里和外界还有联系吗？
+商店的货是从哪儿来的？ 这里和外界还有联系吗？ 
 }
 RodgerWoyler_133 {
-你在这儿住很久了吗？
+你在这儿住很久了吗？ 
 }
 RodgerWoyler_134 {
-没问题，抱歉……
+没问题， 抱歉…… 
 }
 RodgerWoyler_135 {
-情况不一。上一次持续了一周，还挺猛烈的。说实话，每当海浪开始拍打City的船只时，心里真是发慌……
+看情况吧。 上一次持续了一周， 还挺猛烈的。 说实话， 每当海浪开始拍打城市的船只时， 心里真是发慌…… 
 }
 RodgerWoyler_136 {
-真有这种事？
+真有这种事？ 
 }
 RodgerWoyler_137 {
-当然会有这种事！不过既然城里还好好的，咱也没啥可担心的。我是这么想的……
+当然会有这种事！ 不过既然城里还好好的， 咱也没什么可担心的。 我是这么想的…… 
 }
 RodgerWoyler_138_m {
-好吧，我同意。
+好吧， 我同意。 
 }
 RodgerWoyler_138_f {
-好吧，我同意。
+好吧， 我同意。 
 }
 RodgerWoyler_139 {
-这儿当然不舒服！这地方不比别的地方好，也不差，但你在这儿绝对找不到安宁。
+这儿当然不舒服！ 这地方不比别的地方好， 也不差， 但你在这儿绝对找不到安宁。 
 }
 RodgerWoyler_140 {
-哼，俺根本没在找。
+嗯…… 我根本没在找。 
 }
 RodgerWoyler_141 {
-我们干嘛还需要联系？这儿常有船来，来了就不走……货舱满满的，金子、给新世界殖民地的补给，啥都有，够我们用的了。
+我们干嘛还需要联系？ 这儿常有船来， 来了就不走…… 货舱满满的， 金子、 给新世界殖民地的补给， 什么都有， 够我们用的了。 
 }
 RodgerWoyler_142 {
-有意思。
+有意思。 
 }
 RodgerWoyler_143 {
-是啊，挺久以前了。
+是啊， 挺久以前了。 
 }
 RodgerWoyler_144 {
-多少钱？
+多少钱？ 
 }
 RodgerWoyler_145 {
-大概两年。
+大概两年。 
 }
 RodgerWoyler_146 {
-明白了。也就是说你来的时候，Hill Brynner已经在这儿了。
+明白了。 也就是说你来的时候， 希尔.布伦纳已经在这儿了。 
 }
 RodgerWoyler_147 {
-没错，就是这样。
+没错， 就是这样。 
 }
 RodgerWoyler_148 {
-明白了，谢谢。
+明白了， 谢谢。 
 }
 RodgerWoyler_149 {
-什么货？
+什么货？ 
 }
 RodgerWoyler_150 {
-你刚才已经问过了。
+你刚才已经问过了。 
 }
 RodgerWoyler_151 {
-已经问过了……
+已经问过了…… 
 }
 RodgerWoyler_152 {
-你刚才已经问过我这些货了，我啥都不知道！
+你刚才已经问过我这些货了， 我什么都不知道！ 
 }
 RodgerWoyler_153 {
-俺要找炮弹、链弹、炸弹、霰弹、补给、药品、火药、武器……
+我要找实心弹、 链弹、 炸弹、 葡萄弹、 补给、 药品、 火药、 武器…… 
 }
 RodgerWoyler_154_m {
-啊……抱歉，我给忘了。
+啊…… 抱歉， 我给忘了。 
 }
 RodgerWoyler_154_f {
-嗯……不好意思，我忘了。
+嗯…… 不好意思， 我忘了。 
 }
 RodgerWoyler_155 {
-啊，对了。
+啊， 对了。 
 }
 RodgerWoyler_156_m {
-知道了，知道了……
+知道了， 知道了…… 
 }
 RodgerWoyler_156_f {
-知道了，知道了……
+知道了， 知道了…… 
 }
 RodgerWoyler_157 {
-行了行了，别问了，我真啥都不知道。
+行了行了， 别问了， 我真什么都不知道。 
 }
 RodgerWoyler_158 {
-啥都没有？
+什么都没有？ 
 }
 RodgerWoyler_159 {
-当然，祝一切顺利。
+当然， 祝一切顺利。 
 }
 RodgerWoyler_160 {
-好吧，再见……
+好吧， 再见…… 
 }
 RodgerWoyler_161 {
-哪支船员？
+哪支船员？ 
 }
 RodgerWoyler_162 {
-俺的船要招人了，给你个当水手的机会，咱们很快就要出发。
+我的船要招人了， 给你个当水手的机会， 咱们很快就要出发。 
 }
 RodgerWoyler_163 {
-你在开玩笑吧？！
+你在开玩笑吧？ ！ 
 }
 RodgerWoyler_164 {
-不是开玩笑，俺的确有一艘Corvette停在海上，随时能出发。就等你决定了。
+不是开玩笑， 我的确有一艘巡航舰停在海上， 随时能出发。 就等你决定了。 
 }
 RodgerWoyler_165 {
-妈的，老子干了！这地方老子早就受够了。
+妈的， 我干了！ 这地方我早就受够了。 
 }
 RodgerWoyler_166 {
-太好了！那你立刻去“San Gabriel”吧。Malcolm Fawn会把你送到我的护卫舰上。
+太好了！ 那你立刻去“圣加百列号”吧。 马尔科姆.福恩会把你送到我的护卫舰上。 
 }
 RodgerWoyler_167 {
-好，俺这就照办。收拾下行李，很快就能出发了。
+好， 我这就照办。 收拾下行李， 很快就能出发了。 
 }
 RodgerWoyler_168 {
-别磨蹭。
+别磨蹭。 
 }
 RodgerWoyler_169 {
-我到现在还不敢相信……你竟然打败了Capper。这么多年，多少人试过都死了……结果是你……做到了。不过现在还不能松懈，对吧？我们还得闯过外圈……要是在出去之前被风暴追上，这一切可就白费了。就连Chad一个人也不可能从这里活着出去。
+我到现在还不敢相信…… 你竟然打败了卡帕。 这么多年， 多少人尝试过最后都死了…… 结果是你…… 做到了。 不过现在还不能松懈， 对吧？ 我们还得闯过外圈…… 要是在出去之前被风暴追上， 这一切可就白费了。 就连查德一个人也不可能从这里活着出去。 
 }
 RodgerWoyler_170 {
-没错……咱们不是孤军奋战，Roger。咱们有船员，有船，还有不能错过的机会。快去找Malcolm吧——路已经通了。
+没错…… 咱们不是孤军奋战。 咱们有船员， 有船， 还有不能错过的机会。 快去找马尔科姆吧——路已经通了。 
 }

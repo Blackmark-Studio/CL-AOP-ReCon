@@ -65,10 +65,10 @@
 
 
 //Приоритеты групп
-#define LAI_GROUP_PDEFAULT		10					//Значение преоритета по умолчанию
-#define LAI_GROUP_PPLAYER		100					//Значение преоритета для игрока
-#define LAI_GROUP_PGUARDS		1000				//Значение преоритета для охраников
-#define LAI_GROUP_PCITIZENS		10000				//Значение преоритета для горожан и им подобных
+#define LAI_GROUP_PDEFAULT		10					//Значение приоритета по умолчанию
+#define LAI_GROUP_PPLAYER		100					//Значение приоритета для игрока
+#define LAI_GROUP_PGUARDS		1000				//Значение приоритета для охраников
+#define LAI_GROUP_PCITIZENS		10000				//Значение приоритета для горожан и им подобных
 
 
 
@@ -80,3 +80,5 @@
 #define MAX_AIMING_TIME			1.0
 // Интервал обновления состояния персонажей - 1 секунда по умолчанию
 #define LAI_UPDATE_INTERVAL		1.0
+// Частота опроса состояния тревоги (раз в <LAI_ALARM_UPDATE> сек., ранее было в каждом кадре)
+#define LAI_ALARM_UPDATE		0.25

@@ -1229,6 +1229,19 @@ void SetQuestAboardCabinDialog(ref refChar)
 			refChar.Dialog.FileName = "Quest\FranceLine\BlackTwister_capitan.c";
 			refChar.Dialog.CurrentNode = "BlackTwister_capitan"; //даем абордажную ноду		
 		}
+		// Ле Баск. Третий квест.
+		if (refChar.CaptanId == "Esteban_Molina")
+		{
+		    LAi_SetCheckMinHP(refChar, 10, true, "QuestAboardCabinDialog");  // сколько НР мин
+			refChar.Dialog.FileName = "Quest\Lebasque\Other_dialog.c";
+			refChar.Dialog.CurrentNode = "Molina_1"; //даем абордажную ноду		
+		}
+		if (refChar.CaptanId == "Martin_Kesada")
+		{
+		    LAi_SetCheckMinHP(refChar, 10, true, "QuestAboardCabinDialog");  // сколько НР мин
+			refChar.Dialog.FileName = "Quest\Lebasque\Other_dialog.c";
+			refChar.Dialog.CurrentNode = "Martin_Kesada_cap_1"; //даем абордажную ноду		
+		}
 		// квест Шарпа, дуэль - битва с кэпом после убийства информатора
 		if(refChar.CaptanId == "Sharp" && CheckAttribute(pchar,"questTemp.Sharp") && pchar.questTemp.Sharp == "sharpRevengeToFight")
 		{
@@ -1943,7 +1956,7 @@ void OfficerMushketerInit()
 	sld.dialog.currentnode = "Lostpirate";
 	TakeNItems(sld,"potion2", Rand(2)+2);
     sld.Payment = true;
-	sld.location	= "Shore59";
+	sld.location	= "none";
 	sld.location.group = "goto";
 	sld.location.locator = "goto3";
 	sld.money = 0;
@@ -2021,6 +2034,7 @@ void VikingDoorInit()
 	LAi_SetImmortal(sld, true);
 	LAi_SetActorType(sld);
 	MakeUnpushable(sld, true);
+	LAi_SetNoTarget(sld, 1, 1, false);
 }
 
 //===>>> постановка прерываний на жемчужный генератор
@@ -2084,6 +2098,7 @@ void SetSkeletonsToLocation(aref _location)
 	int iRank;
 	ref sld;
 	bMonstersGen = true; //флаг генерации монстров
+	LAi_group_Delete("DestroyGhostGroup");
 
 	// генерим ранг 
 	iRank =	GetCoffDiff(sti(pchar.rank)+3, 1000);
@@ -2093,12 +2108,14 @@ void SetSkeletonsToLocation(aref _location)
 	int num = GetAttributesNum(grp);
 	int rNum = drand(num);
 
+	bool bQuest = CheckAttribute(_location, "DestroyGhost");
+
 	for(int i = 0; i < num; i++)
 	{
 		sld = GetCharacter(NPC_GenerateCharacter("Skelet"+_location.index+"_"+i, "Skel"+(rand(3)+1), "skeleton", "man", iRank, PIRATE, 1, true));
 		sld.skeleton = "1";
 		//если квест по зачистке от нечисти - скелетов делаем круче
-		if (CheckAttribute(_location, "DestroyGhost"))
+		if (bQuest)
 		{
 		    //один кулфайтер, типо босс. остальные послабже, но не лохи
 			if (i == 0)
@@ -2126,17 +2143,21 @@ void SetSkeletonsToLocation(aref _location)
 		}
 		LAi_SetWarriorType(sld);
 		LAi_warrior_SetStay(sld, true);
-		LAi_group_MoveCharacter(sld, LAI_GROUP_MONSTERS);
+		if (bQuest)
+			LAi_group_MoveCharacter(sld, "DestroyGhostGroup");
+		else
+			LAi_group_MoveCharacter(sld, LAI_GROUP_MONSTERS);
 		ChangeCharacterAddressGroup(sld, _location.id, "monsters", GetAttributeName(GetAttributeN(grp, i)));
 	}
 	//проверяем, есть ли на локацию квест по очистке от нечисти
-	if (CheckAttribute(_location, "DestroyGhost"))
+	if (bQuest)
 	{	
 		chrDisableReloadToLocation = true;
 		characters[sti(_location.DestroyGhost)].quest.DestroyGhost = "GoodResult";
 		DeleteAttribute(_location, "DestroyGhost");
 		LAi_LocationDisableMonGenTimer(_location.id, 3); //монстров не генерить 3 дня
-		LAi_group_SetCheck(LAI_GROUP_MONSTERS, "Church_ClearGhost");
+		LAi_group_SetRelation("DestroyGhostGroup", LAI_GROUP_PLAYER, LAI_GROUP_ENEMY);
+		LAi_group_SetCheck("DestroyGhostGroup", "Church_ClearGhost");
 		AddQuestRecordEx(pchar.questTemp.GhostType.title + "Church_DestroyGhost", "Church_DestroyGhost", "2");
 	}
 	else
@@ -2277,12 +2298,16 @@ void SetOpenDoorCommonLoc(string City, string locationId)
 {
 	aref arRld, arDis, arRld2, arDis2;
 	string LocId;
-	makearef(arRld, locations[FindLocation(City + "_town")].reload);
-    int Qty2, n, i;
+    int Qty2, n, i, iLoc;
+	// > без города открывать нечего
+	iLoc = FindLocation(City + "_town");
+	if (iLoc < 0) return;
+	makearef(arRld, locations[iLoc].reload);
 	int Qty = GetAttributesNum(arRld);
 	for (i=0; i<Qty; i++)
     {
     	arDis = GetAttributeN(arRld, i);
+		if (!CheckAttribute(arDis, "go")) continue;
 		LocId = arDis.go;
     	if (LocId == locationId)
     	{
@@ -2290,24 +2315,27 @@ void SetOpenDoorCommonLoc(string City, string locationId)
 			arDis.canEnter = true;
 			return;
     	}
-		if (arDis.label != "Sea" && !CheckAttribute(arDis, "questDisable"))
-		{	
-			makearef(arRld2, Locations[FindLocation(LocId)].reload);
-			Qty2 = GetAttributesNum(arRld2);
-			for (n=0; n<Qty2; n++)
-			{
-    			arDis2 = GetAttributeN(arRld2, n);
-				LocId = arDis2.go;
-				if (LocId == locationId)
-    			{
-    			    //открываем сам дом
-                    arDis.disable = false;
-                    arDis.canEnter = true;
-                    //открываем комнату с энкаунтером
-					arDis2.disable = false;
-					arDis2.canEnter = true;
-					return;					
-				}
+		if (CheckAttribute(arDis, "label") && arDis.label == "Sea") continue;
+		if (CheckAttribute(arDis, "questDisable")) continue;
+		// > в переход проваливаемся только если там действительно есть локация и она доступна к посещению
+		iLoc = FindLocation(LocId);
+		if (iLoc < 0) continue;
+		makearef(arRld2, Locations[iLoc].reload);
+		Qty2 = GetAttributesNum(arRld2);
+		for (n=0; n<Qty2; n++)
+		{
+   			arDis2 = GetAttributeN(arRld2, n);
+			if (!CheckAttribute(arDis2, "go")) continue;
+			LocId = arDis2.go;
+			if (LocId == locationId)
+   			{
+   			    //открываем сам дом
+                arDis.disable = false;
+                arDis.canEnter = true;
+                //открываем комнату с энкаунтером
+				arDis2.disable = false;
+				arDis2.canEnter = true;
+				return;
 			}
 		}
     }
@@ -2599,6 +2627,20 @@ bool CheckLetterForQuest(ref itmRef)
 		return true;
 	}
 
+	// Ле Баск
+	if (itmRef.id == "strange_note")
+{
+	if (!CheckAttribute(itmRef, "read"))
+	{
+		itmRef.read = true;
+
+		DoQuestCheckDelay("Brides_Tortuga_6", 0.1);
+	}
+
+	SetFormatedItemText("strange_note");
+	return true;
+}
+
 	/*if (itmRef.id == "FQ_letter3")
 	{
 		if (!CheckAttribute(itmRef, "read"))
@@ -2751,12 +2793,21 @@ bool CheckCaribGuns() // Jason: есть ли пистоли для продаж
 
 // ugeen -->
 //--> расчёт аренды склада
-int GetStoragePrice(int cof)
+int GetStoragePrice(ref rChar, int cof)
 {
 	float fLeadership = 1.5 - GetSummonSkillFromName(pchar, SKILL_LEADERSHIP)/120.0; // учитываем лидерство
 	float fCommerce = 1.5 - GetSummonSkillFromName(pchar, SKILL_COMMERCE)/120.0; // учитываем торговлю
 
 	int price = makeint(cof * MOD_SKILL_ENEMY_RATE * fLeadership * fCommerce);
+
+	if (CheckAttribute(rChar, "Discount.Storage") && price > 0)
+	{
+		float fDiscount = stf(rChar.Discount.Storage);
+		Restrictor(&fDiscount, 1.0, 2.0); // > 0-100%
+		price = price / fDiscount;
+	}
+
+	if (price < 0) price = 0;
 
 	return price;
 }
@@ -2764,8 +2815,8 @@ int GetStoragePrice(int cof)
 // --> перемещаем остатки груза со склада на корабль ГГ с перегрузом, пусть сам разбирается что делать со всем этим барахлом
 void SetStorageGoodsToShip(ref pStorage)
 {
-	int iStoreQ;
-	for (int i = 0; i< GOODS_QUANTITY; i++)
+	int i, iStoreQ;
+	for (i = 0; i< GOODS_QUANTITY; i++)
 	{
 		iStoreQ = GetStorageGoodsQuantity(pStorage, i);
 		if (iStoreQ == 0) continue;
@@ -2774,6 +2825,19 @@ void SetStorageGoodsToShip(ref pStorage)
 	}
 }
 // <-- ugeen
+
+bool CheckPatents(ref _rChar)
+{
+	int i = 0;
+
+	for (; i <= 3; i++)
+	{
+		if (CheckCharacterItem(_rChar, "patent_" + NationShortName(sti(_rChar.nation))))
+			return true;
+	}
+
+	return false;
+}
 
 // KZ > ref вопрошаек
 void SeaQuestionsInit()
@@ -2793,6 +2857,119 @@ void SeaQuestionsInit()
 		NullCharacter.SeaQuestions.(q) = StringFromKey("SeaQuestions_" + n);
 		n++;
 		NullCharacter.SeaQuestions.(a) = StringFromKey("SeaQuestions_" + n);
+	}
+}
+
+// AlexBlade > Очищает других квестодателей по поиску кэпов, чтобы избежать дублирования квестов
+void SeekCap_ClearIrrelevantQuestCharacters()
+{
+	int i, j, idx, iQuest;
+	ref sld;
+	bool bOk = false;
+	object arQuestList[2];
+	arQuestList[0].idx = -1;
+	arQuestList[0].quest = -1;
+	arQuestList[0].type = "";
+	arQuestList[1].idx = -1;
+	arQuestList[1].quest = -1;
+	arQuestList[1].type = "";
+
+	if(CheckAttribute(pchar, "questTemp.SeekCap"))
+	{
+		aref arQSeekCap, arSeekCap;
+		makearef(arQSeekCap, pchar.questTemp.SeekCap);
+		int n = GetAttributesNum(arQSeekCap);
+		SetArraySize(&arQuestList, n);
+		Log_TestInfo("Зашли в if, количество квестов SeekCap "+n);
+		for(i=0; i < n; i++)
+		{
+			arSeekCap = GetAttributeN(arQSeekCap, i);
+			string sQuest = GetAttributeValue(arSeekCap);
+			idx = sti(GetAttributeName(arSeekCap));
+			if (idx < 0)
+			{
+				continue;
+			}
+			sld = &Characters[idx];
+			iQuest = -1;
+			switch(sQuest)
+			{
+				case "slave":		iQuest = 0;	break;
+				case "rapewife":	iQuest = 1;	break;
+				case "friend":		iQuest = 2;	break;
+
+				case "husband":		iQuest = 0;	break;
+				case "revenge":		iQuest = 1;	break;
+				case "pirates":		iQuest = 2;	break;
+
+				case "NM_battle":	iQuest = 0;	break;
+				case "NM_prisoner":	iQuest = 0;	break;
+				case "NM_peace":	iQuest = 1;	break;
+			}
+
+			arQuestList[i].idx = idx;
+			arQuestList[i].quest = iQuest;
+			arQuestList[i].type = "citizen";
+			if (CheckCharacterPerk(sld, "Nobleman"))
+			{
+			    arQuestList[i].type = "nobleman";
+			}
+
+			Log_TestInfo("Итерация "+i+", обнаружен квест "+sQuest);
+		}
+	}
+
+	for (i=0; i < MAX_COLONIES; i++)
+	{
+		idx = GetCharacterIndex("QuestCitiz_" + Colonies[i].id);
+		bOk = false;
+		if (idx < 0)
+		{
+		    continue;
+		}
+		sld = &Characters[idx];
+		if (!CheckAttribute(sld, "quest.SeekCap.numQuest") || sld.quest.SeekCap != "")
+		{
+			continue;
+		}
+
+		iQuest = sti(sld.quest.SeekCap.numQuest);
+		for (j=0; j < GetArraySize(&arQuestList); j++)
+		{
+			idx = sti(arQuestList[j].idx);
+			if (idx < 0)
+			{
+				continue;
+			}
+			if (sti(arQuestList[j].quest) == iQuest)
+			{
+				if (CheckCharacterPerk(sld, "Nobleman"))
+				{
+					if (arQuestList[j].type == "nobleman")
+					{
+						bOk = true;
+					}
+				}
+				else
+				{
+					if (arQuestList[j].type == "citizen" && sld.sex == Characters[idx].sex)
+					{
+						bOk = true;
+					}
+				}
+				if (sti(sld.index) == idx)
+				{
+					bOk = false;
+					break;
+				}
+			}
+		}
+		if (bOk)
+		{
+			sld.lifeday = 0;
+			ChangeCharacterAddressGroup(sld, "none", "", "");
+			Log_TestInfo("Удаляем перса-дубликата: id = "+sld.id);
+		}
 	}
 }
 
@@ -2825,6 +3002,17 @@ void MainQuestMarks_Init()
 	AddLandQuestmarkToFantoms_Main("AmmoOff", "zpq", "zpq_Begin_AmmoOff_QuestMarkCondition");
 }
 
+// Мишель Ле Баск
+void LeBasque_line()
+{
+	if (!GetDlcEnabled(BUCCANEERS)) return;
+    if (CheckAttribute(pchar, "questTemp.LeBasque.Started")) return;
+    pchar.quest.LeBasque_Start.win_condition.l1 = "Rank";
+    pchar.quest.LeBasque_Start.win_condition.l1.value = 5;
+    pchar.quest.LeBasque_Start.win_condition.l1.operation = ">=";
+    pchar.quest.LeBasque_Start.win_condition = "Shadow_of_a_big_deal";
+	SetBuccaneerService(0);
+}
 
 // Глобальный туториал
 // В этом режиме метки и указатели всегда показываются
